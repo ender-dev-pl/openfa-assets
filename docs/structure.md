@@ -2,25 +2,26 @@
 
 | Path | Purpose |
 | --- | --- |
-| `sources/tools/blender/` | Procedural modelling, wear, rigging, exporting, reference analysis, native/imported verification and evidence checks |
-| `sources/tools/hq-sprite-authoring/` | Existing offline directional sprite and raster upscaling tools |
-| `sources/tools/` | Bootstrap UI artwork generation, loading artwork preparation, missile artwork processing and Blender installation |
-| `sources/docs/assets/bootstrap-3d/` | Early editable rigs, first building catalogue and existing refined Terran variants; no standalone rendered images |
-| `sources/docs/assets/reconstruction/` | Later editable building, ship, hardpoint, missile, scaffold and effect studies, exports and evidence metadata |
-| `sources/docs/reconstruction/models/` | Historical research, cultural/function descriptions, inventories, review ledger and source-bound reports |
-| `sources/ui/quick-menu/` | Three named PNG inputs used to generate quick-menu UI chrome and icons |
-| `sources/content/` | Pinned game-owned input fixtures read by the authoring tools; not a second game implementation |
-| `gallery/media/` | Preserved renders, animations, comparisons, reference media and original 2D authoring inputs, retaining their original relative paths |
-| `gallery/sheets/` | Newly composed contact sheets of existing renders |
-| `gallery/catalogue.json` | Every registered definition/stage and source/export/preview link |
-| `tools/` | Current project entry points and gallery generation |
-| `migration/` | Exact path/hash manifest and old/new issue crosswalk |
-| `.workspace/` | Ignored assembled historical layout used for execution; contains copies, never hardlinks to source files |
+| `sources/tools/blender/` | Reusable modelling, material, rigging, export, reference and verification tools |
+| `sources/tools/hq-sprite-authoring/` | Offline directional sprite and raster upscaling tools |
+| `sources/tools/` | UI, loading-artwork and missile image generators, local decoder fixtures, Blender installer |
+| `sources/materials/` | 698 independently authored colour/roughness PNG inputs, grouped by object |
+| `sources/artwork/` | Original 2D authoring images/animations, bootstrap prompts and palette |
+| `sources/ui/quick-menu/` | Three source PNG inputs for menu chrome and icons |
+| `sources/docs/assets/` | Native models, GLB exports and source-bound metadata in their retained historical hierarchy |
+| `sources/docs/reconstruction/models/` | Functional/cultural research, inventories, review ledger and technical evidence |
+| `sources/content/` | Only the three catalogue/presentation JSON snapshots actually consumed by asset tools |
+| `gallery/media/` | Existing finished renders, animations, comparisons and reference imagery |
+| `gallery/sheets/` | Contact sheets assembled from existing previews |
+| `gallery/catalogue.json` | Current registered study/source/export/preview links |
+| `project/layout.json` | Current canonical destinations, input roles and logical workspace paths; no frozen content hashes |
+| `archive/repairs/` | Five immutable one-time repair/proposal scripts, retained as evidence |
+| `migration/` | Frozen import hashes, one-time import recipe and original/new issue crosswalk |
+| `tools/` | Current preparation, validation and gallery entry points |
+| `.workspace/` | Ignored disposable execution layout, synchronized without overwriting edited files |
 
-The extra historical path levels preserve existing script assumptions and hash-bound evidence. Scripts are not patched just to change a directory spelling. No finished standalone raster, video or rendered HTML file lives under `sources/`. Packed authored textures inside Blend/GLB remain part of the model source.
+Native Blend/GLB files retain packed authored textures. Source textures and 2D image inputs are explicitly registered with `material-texture` or `source-input` roles. Finished raster/video/HTML output is rejected under `sources/`; a bitmap extension alone does not make an authoring input a render.
 
-The original game's decoded pixels are references, not authored replacement textures. Gallery references and independent model output keep their historical separation and provenance. Original game archives, recordings, decompilation and ignored experiments are not relocated by this import.
+The original logical paths are recreated in the workspace. Relocation changes neither model bytes nor archived script/report hashes. Four unused game snapshots (factions, personnel, research and Terran construction) were retired; their original hashes remain in the import record and their authoritative copies stay game-owned.
 
-C# game code and the Ghidra naming script are **not stored in asset sources**. Eleven external evidence inputs are listed in `migration/files.json`. Preparation links `.workspace/src` to the sibling game repository and uses a disposable naming-script fixture only inside the ignored workspace. The durable decompilation remains in the game repository. These dependencies are used by historical semantic audits, not by ordinary modelling, exporting or gallery browsing.
-
-Source PNGs in `sources/ui/quick-menu/` are explicitly registered as `source-input` in the manifest. They are authoring inputs, not finished renders. The workspace maps them back to `content/standard/images/` for the historical generator. Other image/video output remains outside `sources/`.
+C# and Ghidra code are not versioned here. Ordinary preparation does not inspect or link the game checkout or a legacy installation. The explicit `evidence`/`references` commands enable old semantic-audit inputs. Existing local links/caches are not deleted when switching back to ordinary preparation; use a fresh custom workspace to demonstrate independence.

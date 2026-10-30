@@ -10,15 +10,12 @@ The gallery uses existing renders only. It shows each registered iteration with 
 
 ## Quick start
 
-Requires Python 3.10+; install `requirements.txt`. Model operations require Blender 4.5 LTS. Legacy evidence checks additionally require a local original-game installation in the sibling `legacy` directory and its decoding tools; these files are not bundled here.
+Requires Python 3.10+; install `requirements.txt`. Model operations require Blender 4.5 LTS. Optional legacy evidence checks use `requirements-evidence.txt` and additionally require a local original-game installation in the sibling `legacy` directory and its decoding tools; these files are not bundled here.
 
 ```powershell
 python -m pip install -r requirements.txt
 python tools/asset_workspace.py verify
 python tools/asset_workspace.py prepare
-python tools/asset_workspace.py references
-python tools/asset_workspace.py python -- tools/blender/audit_first_source_coverage.py --check
-python tools/asset_workspace.py python -- tools/blender/verify_reconstruction_inventory.py
 ```
 
 Open `gallery/index.html` locally for combined search, race and asset-type filters. Its expandable index links to filter combinations; the Markdown gallery provides the same race/type table on GitHub. To rebuild thumbnails and indexes from the preserved renders:
@@ -27,10 +24,12 @@ Open `gallery/index.html` locally for combined search, race and asset-type filte
 python tools/build_gallery.py
 ```
 
-Run Blender scripts through the assembled workspace; see [the workflow](docs/workflow.md). Sources and finished images are deliberately stored separately. Outputs produced during authoring remain in the ignored `.workspace/` until reviewed and explicitly published to the corresponding source or gallery destination.
+Preparation works without a game checkout or original installation. Enable `evidence`/`references` only for legacy semantic checks. Run Blender scripts through the assembled workspace; see [the workflow](docs/workflow.md). Sources and finished images are deliberately stored separately. Outputs produced during authoring remain in the ignored `.workspace/` until reviewed and explicitly published to the corresponding source or gallery destination.
 
 ## Current scope
 
 Preserve completed reconstructions and existing refinements. New artistic refining and scaffolding work remain deferred. Obvious technical defects may be repaired with focused verification. New objects receive function-appropriate wear; existing models are not retrofitted merely because they are regenerated.
 
 The migration preserves exact imported bytes and historical evidence identifiers. [Migration manifests](migration/README.md) map every original path, checksum and transferred issue. Historical documentation is retained under `sources/docs/reconstruction/models/`; its paths refer to the assembled workspace and its bare issue numbers use the original game-repository numbering.
+
+Current paths and roles live in [project/layout.json](project/layout.json). Material maps belong under `sources/materials/`, original image/animation inputs under `sources/artwork/` or `sources/ui/`, and finished renders under `gallery/`. Historical import/repair evidence remains separate in `migration/` and `archive/repairs/`. Use `audit-import` only to compare with the original revision; normal authoring accepts reviewed source edits.

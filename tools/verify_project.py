@@ -1,4 +1,4 @@
-"""Check import integrity, source/media boundaries, catalogue coverage and gallery links."""
+"""Check current source layout, catalogue coverage and gallery links."""
 import ast
 from html.parser import HTMLParser
 import json
@@ -40,7 +40,8 @@ def main():
             assert study['glb'] and (ROOT / study['glb']).is_file(), row['id']
             count += 1
     LocalLinks().feed((ROOT / 'gallery/index.html').read_text(encoding='utf-8'))
-    scripts = list((ROOT / 'sources').rglob('*.py')) + list((ROOT / 'tools').glob('*.py'))
+    scripts = (list((ROOT / 'sources').rglob('*.py')) + list((ROOT / 'tools').glob('*.py'))
+               + list((ROOT / 'archive').rglob('*.py')))
     for path in scripts:
         ast.parse(path.read_text(encoding='utf-8-sig'), filename=str(path))
     print('PROJECT_VERIFIED', len(gallery), 'definitions', count, 'study entries', len(scripts), 'Python sources')
