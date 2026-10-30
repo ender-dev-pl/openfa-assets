@@ -45,4 +45,13 @@ See `archive/repairs/README.md`. `prepare --include-history` restores archived s
 
 ## Game integration
 
+Game workflows can call `ender-dev-pl/openfa-assets/.github/actions/provide-models@<commit-sha>`
+to use the organization Actions access grant. GitHub downloads the action repository;
+the action exports its root as `OpenFaAssetSourceRoot` through `GITHUB_ENV` for later
+MSBuild steps. It validates the catalogue/layout paths and does not perform another
+checkout, persist credentials or copy authoring files into the game's workspace.
+Pin the action to a published commit containing both the action and intended model
+inputs. No cross-repository PAT secret is required. The runner needs PowerShell 7.
+Run `pwsh -File tools/Test-ProvideModels.ps1` for the export contract checks.
+
 Package-ready sprites are deliberate generated deliverables. Publish them to the game repository in an explicit integration change. The client does not load this sibling source repository at startup. The three remaining catalogue/presentation snapshots are pinned input contracts; synchronize them deliberately when the game contract changes and rerun affected semantic evidence.
