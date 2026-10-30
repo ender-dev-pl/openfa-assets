@@ -1,0 +1,74 @@
+{
+  "global_type": 82,
+  "building_id": "openfa:building/legacy/082",
+  "name": "Turret",
+  "culture": "braccatian",
+  "footprint": [
+    2,
+    2
+  ],
+  "preview": "BR20",
+  "assembly_family": "turret",
+  "observed_features": "Copper weapon mound with paired dark blue muzzles",
+  "mesh_objects": 7,
+  "bounds_min": [
+    -0.9800000190734863,
+    -1.061503529548645,
+    0.0
+  ],
+  "bounds_max": [
+    0.9800000190734863,
+    0.9800000190734863,
+    1.4742990732192993
+  ],
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "top"
+  ],
+  "resolution": 512,
+  "samples": 32,
+  "blender": "4.5.15 LTS",
+  "renderer": "Cycles CPU",
+  "transparent": true,
+  "imported_geometry_or_textures": [],
+  "recipe_sha256": "34721080286539174c61eab9880874e63d28126c6e08a20bd3382839b4400a8b",
+  "code_sha256": "db2af3cfcc2f2b9837d172046c83fa4bbc631ee3784de0057444f281ac28b19d",
+  "rotation_rig": {
+    "generator_sha256": "aedc63862df1426e28921b9eac64c28e207b3051e295e634688d6ab011d0e857",
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "kind": "weapon head",
+    "pivot": [
+      0.0,
+      0.0,
+      1.0299999713897705
+    ],
+    "axis": "+Z",
+    "zero_forward": "-Y",
+    "positive": "counterclockwise",
+    "moving_meshes": [
+      "Weapon barrel",
+      "Weapon barrel.001",
+      "Weapon dark bore",
+      "Weapon dark bore.001",
+      "Weapon pivot"
+    ],
+    "static_meshes": [
+      "Inset service window",
+      "Turret armoured pedestal"
+    ],
+    "animation": "HeadingPreview_360",
+    "frame_start": 1,
+    "frame_end": 17,
+    "direction_count": 16,
+    "direction_step_degrees": 22.5,
+    "camera_location": [
+      9.118621826171875,
+      -13.677932739257812,
+      12.129013061523438
+    ],
+    "ortho_scale": 3.3431782722473145,
+    "runtime_heading_registration": "separate integration step; exported indices are model-local angles"
+  }
+}

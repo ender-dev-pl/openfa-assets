@@ -1,0 +1,139 @@
+{
+  "id": "openfa:fleet-battleship",
+  "issue": 998,
+  "revision": 1,
+  "name": "Fleet Battleship",
+  "culture": "terran",
+  "mesh_objects": 35,
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "front",
+    "side",
+    "top",
+    "underside"
+  ],
+  "resolution": 900,
+  "blend_sha256": "a33d42f592fabcc1fb3734dd87c10c8a1088045b45d678a959624970fd9cd9a0",
+  "glb_sha256": "7a4fcf6ed2cbae1487bed20b51acae8b35e2f6301835e2cbc64effc0709e68d4",
+  "generator_sha256": "5e86fa04972462d672f12e8a901adf7cb9997a3a222e8a91ba8332c7037b4a38",
+  "parts_sha256": "d4239620beaf2aadc2417411a186ee75d37849462126ef1793dd561d41d87e21",
+  "authored_wear_sha256": "322b9fb5b3295b89678745363d186cab42226ead23dd0c12fe9183c9b17e20b7",
+  "reference_sha256": "c9fdcf76c312ca75b26b2d6be056e7c89bda681865554f89a9fd9e928ced9e21",
+  "functional_source_sha256": "fcadf5ea6dc8d0e96180ff9922cef07bd32f264f52e0a684bf87dc4680a0b663",
+  "helper_sha256": {
+    "manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+    "terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+    "build_assault_fighter.py": "29a42d278f1f682af97146a6b4a5d3d00f28a9bae5974b228c2817984088e4b8",
+    "destructor_parts.py": "6d3c899188bdb2b9576a44eac47d32e7581dcb146f29938d4bb264c332529ba2"
+  },
+  "blender": "4.5.15 LTS",
+  "observed": [
+    "Broad arched transverse wing and long narrow forward spine",
+    "Red wing markings, tip projections and large underside/aft engine; PS06.VID and paletted PS6C sprites"
+  ],
+  "inferred": [
+    "Hidden hull cross-sections, wear, small maintenance detail and engine throat construction",
+    "Six hardpoint sockets are authored guesses; 2D designer mount coordinates do not establish 3D transforms"
+  ],
+  "sockets": {
+    "Hardpoint bow": {
+      "position": [
+        0,
+        -1.55,
+        0.26
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Hardpoint dorsal": {
+      "position": [
+        0,
+        0.28,
+        0.6
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Hardpoint port outer": {
+      "position": [
+        -2.1,
+        -0.35,
+        0.4
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Hardpoint port inner": {
+      "position": [
+        -0.9,
+        0.2,
+        0.55
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Hardpoint starboard inner": {
+      "position": [
+        0.9,
+        0.2,
+        0.55
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Hardpoint starboard outer": {
+      "position": [
+        2.1,
+        -0.35,
+        0.4
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Engine central": {
+      "position": [
+        0,
+        1.39,
+        -0.18
+      ],
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "imported_geometry_or_textures": [],
+  "unresolved": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Damage/operational variants; no mechanisms/timing established"
+  ],
+  "acceptance": "First authored iteration; artistic refining deferred"
+}

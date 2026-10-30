@@ -1,0 +1,307 @@
+{
+  "issue": 1115,
+  "id": "openfa:spy-satellite",
+  "category": "ships",
+  "culture": "terran",
+  "blend": "docs/assets/reconstruction/ships/terran/spy-satellite/model.blend",
+  "source_files_sha256": {
+    "authored-bronze-colour.png": "aff19a30ca3812044850cdfd47e14d8fe6e525c4d2fbdde0499300781728db79",
+    "authored-bronze-roughness.png": "e2dcd202d0b5f881ff8e0b1a4f8ef9b1f3c9bf94e3a3b78cdaae803efb20b418",
+    "authored-hull-colour.png": "e21ba6b2b899f35c7405789af21b584c9dd4fc56667ab366d20dfd5009bf9234",
+    "authored-hull-roughness.png": "e2dcd202d0b5f881ff8e0b1a4f8ef9b1f3c9bf94e3a3b78cdaae803efb20b418",
+    "authored-wear.json": "5ca95daa613d26ef4ddad4bd58a0faae040f812169a79efe8175383e114694a2",
+    "front-quarter.png": "8c9ba4f5b14e8ad14ed566d4fc8ce5686916f5183068e055db01e842bb76aed8",
+    "front.png": "bec11536e3d0aad69c385753f55313916ae81ecb123837fca15a32f6cadab022",
+    "gallery.png": "ec7f69da956473130773d471e3f2fd0e2ffa6e166835a3cb8f227fd088207ebe",
+    "imported-glb-front-quarter.png": "ae4a4809b579623247a1be1a44048d48ad216c6ff2050dbdde1f3a9d6ac7c2db",
+    "imported-glb-sensor-detail.png": "53a1d2fe0ff50ef7578ac3ee65cc6ce1e5748c6532a9fa40a3f6415a9717721e",
+    "model.blend": "c8c7cf5cfc751dccf872daa8b468e46edb09ea9e3c91fe0a96218c9635f01e53",
+    "model.glb": "716bc7417a73efa01f2f88f87e76c00f5522570352ca61695fd82145be4c1a12",
+    "model.json": "cf09130e1e3f589aafd8f211c7c43dc502df8737accb034c507e927001e687a7",
+    "rear-quarter.png": "1026c8c69ec4ff9a9094b66d92578c098be0186a2becab97c66ca6e71230ec54",
+    "render-review.json": "68d4d6fe80ea4cbe4f4042850c5ab27c222f9dcb7158c377ff3df348f04d12aa",
+    "sensor-detail.png": "3317f0a2f441daf68bd2c30afa8634d50567bae7d69a31a42d741d04fac9c160",
+    "side.png": "48c8ee49d1403027172f89ee81f3d514d76905b9973ac5071d40587dcd340751",
+    "technical-review.json": "a21812e2b23de74d88c0363814092d57243883f6fd832f9d46e4c60e94a6bec2",
+    "top.png": "f60eca96985ff8645ebb7da053014f74fb18b52e82c1fb67c6dbaf338e728cb8",
+    "underside.png": "3671241cd671cf70c01b57ee935247782e44975a27a7cad24224e3c74119f2fe"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "hardpointSlots": 0,
+    "defaultHardpointIds": []
+  },
+  "declared_sockets": {
+    "SensorAxis": {
+      "position": [
+        0,
+        -0.405,
+        -0.9
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Damage/operational variants; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 31,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:spy-satellite",
+          "forward_axis": "local +Z"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "SensorAxis": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -0.4050000011920929
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              -0.8999999761581421
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -0.4050000011920929,
+            -0.8999999761581421
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 31,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:spy-satellite",
+          "forward_axis": "local +Z"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "SensorAxis": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -0.4050000011920929
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              -0.8999999761581421
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -0.4050000011920929,
+            -0.8999999761581421
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "SensorAxis": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "SensorAxis",
+      "declaration": {
+        "position": [
+          0,
+          -0.405,
+          -0.9
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.384185793236071e-08,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "SensorAxis",
+      "declaration": {
+        "position": [
+          0,
+          -0.405,
+          -0.9
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.384185793236071e-08,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

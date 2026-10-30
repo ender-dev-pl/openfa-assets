@@ -1,0 +1,344 @@
+{
+  "issue": 991,
+  "verifier_sha256": "5533301ff8df36a64a0fa8b55cbdd8ac3039896963eddf299626f7af92dfffe2",
+  "revision": 1,
+  "blend_sha256": "d9bebfbe6946b5841b3b4b0fcce2990b4014a128829e47e64e4a2f4f2f9acd3b",
+  "glb_sha256": "57c922562fa26bea70551e3fccf793442f21bbc5e823fb96ddc9c87b7ab1155e",
+  "mesh_objects": 12,
+  "materials": {
+    "RI19 | weathered green armour": [
+      [
+        0.3803921937942505,
+        0.5764706134796143,
+        0.4862745404243469,
+        1.0
+      ],
+      0.6499999761581421,
+      0.5098039507865906
+    ],
+    "RI19 | green planar caps": [
+      [
+        0.3607843220233917,
+        0.5411764979362488,
+        0.458823561668396,
+        1.0
+      ],
+      0.6499999761581421,
+      0.572549045085907
+    ],
+    "RI19 | bearing alloy": [
+      [
+        0.25,
+        0.3400000035762787,
+        0.3199999928474426,
+        1.0
+      ],
+      0.7799999713897705,
+      0.47999998927116394
+    ],
+    "RI19 | aged bronze fittings": [
+      [
+        0.3100000023841858,
+        0.20000000298023224,
+        0.06499999761581421,
+        1.0
+      ],
+      0.7400000095367432,
+      0.5400000214576721
+    ],
+    "RI19 | recessed joint steel": [
+      [
+        0.020999999716877937,
+        0.03200000151991844,
+        0.03400000184774399,
+        1.0
+      ],
+      0.550000011920929,
+      0.6700000166893005
+    ]
+  },
+  "bounds": [
+    -0.49000000953674316,
+    -0.5004440546035767,
+    0.0,
+    0.7299233675003052,
+    0.49000000953674316,
+    1.7632193565368652
+  ],
+  "texture_pixels": {
+    "materials": {
+      "RI19 | weathered green armour": {
+        "colour": "338c91f4aa49dece120db5064e5041b852c348ff07c44d6a00ea176b9790ad30",
+        "roughness": "10f55ed284d1b97c5f1105b1f1930d90ee43dad727e5c97a6f5f9cc26682973f"
+      },
+      "RI19 | green planar caps": {
+        "colour": "f6323f6d0bdeadca50f204fdecd42b76ac705c551b2a2f474bc1b73272f06939",
+        "roughness": "4370f140aa2d5e52e9182b14550e9c2c64ea57a689af1c933bb7bc35a5cc28fd"
+      }
+    },
+    "planar_cap_surfaces": 6
+  },
+  "contact_diagnostics": {
+    "native": {
+      "contact_samples": {
+        "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+        "tolerance": 0.0001,
+        "links": [
+          [
+            "RI19 fixed green pedestal",
+            "RI19 rotating green head"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 static yaw bearing"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 bronze front strip"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 lower base inset 0"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 lower base inset 1"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 lower base inset 2"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 base fitting bezel"
+          ],
+          [
+            "RI19 rotating green head",
+            "RI19 tapered thermal lance"
+          ],
+          [
+            "RI19 rotating green head",
+            "RI19 static yaw bearing"
+          ],
+          [
+            "RI19 rotating green head",
+            "RI19 head fitting bezel"
+          ],
+          [
+            "RI19 base fitting bezel",
+            "RI19 bronze base fitting"
+          ],
+          [
+            "RI19 head fitting bezel",
+            "RI19 bronze head fitting"
+          ]
+        ],
+        "components": [
+          [
+            "RI19 base fitting bezel",
+            "RI19 bronze base fitting",
+            "RI19 bronze front strip",
+            "RI19 bronze head fitting",
+            "RI19 fixed green pedestal",
+            "RI19 head fitting bezel",
+            "RI19 lower base inset 0",
+            "RI19 lower base inset 1",
+            "RI19 lower base inset 2",
+            "RI19 rotating green head",
+            "RI19 static yaw bearing",
+            "RI19 tapered thermal lance"
+          ]
+        ],
+        "isolated": []
+      },
+      "rigid_yaw": [
+        {
+          "yaw_degrees": 0,
+          "socket": [
+            0.7220966219902039,
+            0.17370319366455078,
+            1.7538666725158691
+          ],
+          "forward": [
+            0.757885217666626,
+            0.1818922907114029,
+            0.6265183091163635
+          ]
+        },
+        {
+          "yaw_degrees": 90,
+          "socket": [
+            -0.1737031638622284,
+            0.7220966219902039,
+            1.7538666725158691
+          ],
+          "forward": [
+            -0.1818922609090805,
+            0.757885217666626,
+            0.6265183091163635
+          ]
+        },
+        {
+          "yaw_degrees": 180,
+          "socket": [
+            -0.7220966219902039,
+            -0.173703134059906,
+            1.7538666725158691
+          ],
+          "forward": [
+            -0.757885217666626,
+            -0.18189223110675812,
+            0.6265183091163635
+          ]
+        },
+        {
+          "yaw_degrees": 270,
+          "socket": [
+            0.17370322346687317,
+            -0.7220966219902039,
+            1.7538666725158691
+          ],
+          "forward": [
+            0.18189232051372528,
+            -0.757885217666626,
+            0.6265183091163635
+          ]
+        }
+      ]
+    },
+    "glb": {
+      "contact_samples": {
+        "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+        "tolerance": 0.0001,
+        "links": [
+          [
+            "RI19 base fitting bezel",
+            "RI19 bronze base fitting"
+          ],
+          [
+            "RI19 base fitting bezel",
+            "RI19 fixed green pedestal"
+          ],
+          [
+            "RI19 bronze front strip",
+            "RI19 fixed green pedestal"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 lower base inset 0"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 lower base inset 1"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 lower base inset 2"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 static yaw bearing"
+          ],
+          [
+            "RI19 fixed green pedestal",
+            "RI19 rotating green head"
+          ],
+          [
+            "RI19 static yaw bearing",
+            "RI19 rotating green head"
+          ],
+          [
+            "RI19 bronze head fitting",
+            "RI19 head fitting bezel"
+          ],
+          [
+            "RI19 head fitting bezel",
+            "RI19 rotating green head"
+          ],
+          [
+            "RI19 rotating green head",
+            "RI19 tapered thermal lance"
+          ]
+        ],
+        "components": [
+          [
+            "RI19 base fitting bezel",
+            "RI19 bronze base fitting",
+            "RI19 bronze front strip",
+            "RI19 bronze head fitting",
+            "RI19 fixed green pedestal",
+            "RI19 head fitting bezel",
+            "RI19 lower base inset 0",
+            "RI19 lower base inset 1",
+            "RI19 lower base inset 2",
+            "RI19 rotating green head",
+            "RI19 static yaw bearing",
+            "RI19 tapered thermal lance"
+          ]
+        ],
+        "isolated": []
+      },
+      "rigid_yaw": [
+        {
+          "yaw_degrees": 0,
+          "socket": [
+            0.7220966219902039,
+            0.17370319366455078,
+            1.7538666725158691
+          ],
+          "forward": [
+            0.7578852772712708,
+            0.1818922758102417,
+            0.6265183091163635
+          ]
+        },
+        {
+          "yaw_degrees": 90,
+          "socket": [
+            -0.1737031638622284,
+            0.7220966219902039,
+            1.7538666725158691
+          ],
+          "forward": [
+            -0.1818922460079193,
+            0.7578852772712708,
+            0.6265183091163635
+          ]
+        },
+        {
+          "yaw_degrees": 180,
+          "socket": [
+            -0.7220966219902039,
+            -0.173703134059906,
+            1.7538666725158691
+          ],
+          "forward": [
+            -0.7578852772712708,
+            -0.18189221620559692,
+            0.6265183091163635
+          ]
+        },
+        {
+          "yaw_degrees": 270,
+          "socket": [
+            0.17370322346687317,
+            -0.7220966219902039,
+            1.7538666725158691
+          ],
+          "forward": [
+            0.1818923056125641,
+            -0.7578852772712708,
+            0.6265183091163635
+          ]
+        }
+      ]
+    }
+  },
+  "checks": [
+    "Native/GLB topology, material values, bounds and identity placement",
+    "Fixed base, yaw bearing/head/lance contacts, fitted base strips and 64 fitting-root samples",
+    "Three geometric dents; yaw hierarchy and tip socket at four orientations in native and imported assets",
+    "Packed authored images, matching colour/roughness pixels and mapped UVs"
+  ],
+  "final_visual_acceptance": false
+}

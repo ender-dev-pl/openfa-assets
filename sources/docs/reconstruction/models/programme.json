@@ -1,0 +1,959 @@
+{
+  "schema_version": 1,
+  "umbrella_issue": 946,
+  "inventory_issue": 947,
+  "workstreams": {
+    "buildings": {
+      "issue": 948,
+      "depends_on": [
+        947
+      ]
+    },
+    "ships": {
+      "issue": 949,
+      "depends_on": [
+        947
+      ]
+    },
+    "hardpoints": {
+      "issue": 950,
+      "depends_on": [
+        947
+      ]
+    },
+    "missiles": {
+      "issue": 951,
+      "depends_on": [
+        947
+      ]
+    }
+  },
+  "additional_studies": [
+    {
+      "category": "ships",
+      "id": "openfa:assault-fighter",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/ships/terran/assault-fighter/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:combat-eagle",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/ships/terran/combat-eagle/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:scoutship",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/ships/terran/scoutship/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:shield-x10",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/hardpoints/shield-x10/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:shield-x20",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/hardpoints/shield-x20/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:shield-x30",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/hardpoints/shield-x30/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:shield-x40",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/hardpoints/shield-x40/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:shield-x50",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/hardpoints/shield-x50/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:photon-cannon",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/hardpoints/photon-cannon/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:plasma-cannon",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/hardpoints/plasma-cannon/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:explosive",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/explosive/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:area-explosive",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/area-explosive/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:napalm",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/napalm/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:hellfire",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/hellfire/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:scatter",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/scatter/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:vortex",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/vortex/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:nuclear",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/nuclear/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:virus",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/virus/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:anti-virus",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/anti-virus/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:mega",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/mega/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:stasis",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/stasis/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/terran/bug-hunter",
+      "stage": "low-resolution-interpretation-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/bug-hunter/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/terran/meat-eater",
+      "stage": "low-resolution-interpretation-study",
+      "blend": "docs/assets/reconstruction/missiles/terran/meat-eater/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/040",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/central-unit/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/041",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/042",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/043",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/community/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/044",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/health-unit/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/045",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/046",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/science-labs/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/047",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/databanks/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/048",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/construction-unit/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/049",
+      "stage": "animated-mechanism-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/ground-deck/model.blend",
+      "state_exports": {
+        "index": "docs/assets/reconstruction/buildings/rigellian/ground-deck/states/state-exports.json",
+        "sha256": "2f0235b14debbe6b29b2b6fc705e7489f9a0f57c1d4dca2a03371a00dbc6f9f9",
+        "generator": "tools/blender/export_rigellian_ground_deck_states.py",
+        "reviewer": "tools/blender/review_rigellian_ground_deck_states.py"
+      }
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/050",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/probe-launch/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/051",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/deep-space-probes/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/052",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/gravitic-converter/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/053",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/energy-gatherer/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/054",
+      "stage": "reference-refined-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/energy-globe/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/055",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/shield-generator/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/056",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/arms-unit/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/057",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/missile-launcher/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/058",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/thermal-lance/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/059",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/extractor/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/060",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/storage-racks/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/061",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/ex-fang/model.blend"
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/062",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/buildings/rigellian/ultrathermal-lance/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:destructor",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/terran/destructor/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:terminator",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/terran/terminator/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:fleet-battleship",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/terran/fleet-battleship/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:space-dock",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/terran/space-dock/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:command-cruiser",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/terran/command-cruiser/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:spy-satellite",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/terran/spy-satellite/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/rigellian/lazzaro-research",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/rigellian/lazzaro-research/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/rigellian/delphini-assault",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/rigellian/delphini-assault/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/rigellian/messier-lukannon",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/rigellian/messier-lukannon/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/rigellian/transportation",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/rigellian/transportation/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/rigellian/observatory",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/rigellian/observatory/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/braccatian/rattlesnake",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/braccatian/rattlesnake/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/braccatian/widowmaker",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/braccatian/widowmaker/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/braccatian/heartsblood",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/braccatian/heartsblood/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/braccatian/morning-glory",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/braccatian/morning-glory/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/braccatian/skymech",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/braccatian/skymech/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mikotaj/hiero",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mikotaj/hiero/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mikotaj/ylikt-shan",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mikotaj/ylikt-shan/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mikotaj/falari-lourn",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mikotaj/falari-lourn/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mikotaj/ruth-strivakh",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mikotaj/ruth-strivakh/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mikotaj/na-xanth",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mikotaj/na-xanth/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/artemian/gerla-kans-explorer",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/artemian/gerla-kans-explorer/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/artemian/all-purpose-assault",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/artemian/all-purpose-assault/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/artemian/shielded-multi-assault",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/artemian/shielded-multi-assault/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/artemian/ultimate-mk-ii",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/artemian/ultimate-mk-ii/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/artemian/hardcore",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/artemian/hardcore/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/artemian/geostationary-construction",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/artemian/geostationary-construction/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mauna/surveillance-craft-type-5",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mauna/surveillance-craft-type-5/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mauna/combat-craft-type-1-5",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mauna/combat-craft-type-1-5/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mauna/max-combat-craft-type-6",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mauna/max-combat-craft-type-6/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mauna/elite-command-craft",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mauna/elite-command-craft/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mauna/transportation-craft-type-3",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mauna/transportation-craft-type-3/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/mauna/orbital-construction-area",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/mauna/orbital-construction-area/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/achaean/hunter-prospector",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/achaean/hunter-prospector/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/achaean/dedicated-fighter",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/achaean/dedicated-fighter/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/achaean/dedicated-ore-transporter",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/achaean/dedicated-ore-transporter/model.blend"
+    },
+    {
+      "category": "ships",
+      "id": "openfa:ship/achaean/orbital-shipyard",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/ships/achaean/orbital-shipyard/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:ion-cannon",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/hardpoints/ion-cannon/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:disruptor",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/hardpoints/disruptor/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:napalm-orb",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/hardpoints/napalm-orb/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:chaos-bomb",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/hardpoints/chaos-bomb/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:vortex-mine",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/hardpoints/vortex-mine/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:laser",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/hardpoints/laser/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:static-inducer",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/hardpoints/static-inducer/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:warp-generator",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/hardpoints/warp-generator/model.blend"
+    },
+    {
+      "category": "hardpoints",
+      "id": "openfa:deflector",
+      "stage": "initial-reference-study",
+      "blend": "docs/assets/reconstruction/hardpoints/deflector/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/rigellian/detonator",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/rigellian/detonator/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/rigellian/multi-det",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/rigellian/multi-det/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/rigellian/flamejell",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/rigellian/flamejell/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/rigellian/maxi-det",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/rigellian/maxi-det/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/rigellian/flare",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/rigellian/flare/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/rigellian/viral-repair",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/rigellian/viral-repair/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/rigellian/temporal-stasis",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/rigellian/temporal-stasis/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/braccatian/mega-blast",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/braccatian/mega-blast/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/braccatian/flaming-ruin",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/braccatian/flaming-ruin/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/braccatian/volcano",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/braccatian/volcano/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/braccatian/multi-blast",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/braccatian/multi-blast/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/braccatian/dancing-bolt",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/braccatian/dancing-bolt/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/braccatian/hotbomb",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/braccatian/hotbomb/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/braccatian/outbreak",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/braccatian/outbreak/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/braccatian/anti-outbreak",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/braccatian/anti-outbreak/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/braccatian/midwinter",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/braccatian/midwinter/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/braccatian/comms-killer",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/braccatian/comms-killer/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mikotaj/shri-merl",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mikotaj/shri-merl/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mikotaj/shri-jaar",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mikotaj/shri-jaar/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mikotaj/greek-fire",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mikotaj/greek-fire/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mikotaj/shri-sharir",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mikotaj/shri-sharir/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mikotaj/bruj-mahal",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mikotaj/bruj-mahal/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mikotaj/convulsion",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mikotaj/convulsion/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mikotaj/stabiliser",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mikotaj/stabiliser/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mikotaj/kal-na-xanth",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mikotaj/kal-na-xanth/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mikotaj/bruj-garor",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mikotaj/bruj-garor/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/standard-warhead",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/standard-warhead/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/advanced-warhead",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/advanced-warhead/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/liquid-flame",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/liquid-flame/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/coagulant-flame",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/coagulant-flame/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/multiple-warhead",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/multiple-warhead/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/spiral",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/spiral/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/nova",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/nova/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/demon",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/demon/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/saviour",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/saviour/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/star-shatterer",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/star-shatterer/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/freezer",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/freezer/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/artemian/space-hunger",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/artemian/space-hunger/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mauna/minor-hurt-unit",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mauna/minor-hurt-unit/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mauna/major-hurt-unit",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mauna/major-hurt-unit/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mauna/burns-unit",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mauna/burns-unit/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mauna/multiple-burns-unit",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mauna/multiple-burns-unit/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mauna/multiple-hurt-unit",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mauna/multiple-hurt-unit/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mauna/lightning-destruction-unit",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mauna/lightning-destruction-unit/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mauna/radiation-sickness-unit",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mauna/radiation-sickness-unit/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mauna/ground-breaking-unit",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mauna/ground-breaking-unit/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mauna/anti-ground-breaking-unit",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mauna/anti-ground-breaking-unit/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/mauna/ore-dissolver",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/mauna/ore-dissolver/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/achaean/frighteners",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/achaean/frighteners/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/achaean/harmers",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/achaean/harmers/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/achaean/dripfire",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/achaean/dripfire/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/achaean/seizure",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/achaean/seizure/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/achaean/ground-breaker",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/achaean/ground-breaker/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/achaean/ground-maker",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/achaean/ground-maker/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/achaean/hold-it-there",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/achaean/hold-it-there/model.blend"
+    },
+    {
+      "category": "missiles",
+      "id": "openfa:missile/achaean/thief-in-the-night",
+      "stage": "initial-low-resolution-interpretation",
+      "blend": "docs/assets/reconstruction/missiles/achaean/thief-in-the-night/model.blend"
+    }
+  ],
+  "functional_text_index": "docs/reconstruction/models/functional-text-index.json",
+  "shared_construction_index": "docs/reconstruction/models/shared-construction-references.json",
+  "scaffold_studies": [
+    {
+      "family": "RIS2",
+      "stage": "modular-prototype",
+      "manifest": "docs/assets/reconstruction/scaffolds/rigellian/size-2/model.json",
+      "generator": "tools/blender/build_rigellian_scaffold.py",
+      "verifier": "tools/blender/verify_rigellian_scaffold.py",
+      "reviewer": "tools/blender/review_rigellian_scaffold.py"
+    }
+  ],
+  "scaffold_stage_limits": "docs/reconstruction/models/scaffold-stage-limits.json",
+  "scaffold_body_order_evidence": "docs/reconstruction/models/scaffold-composition-evidence.json",
+  "deferred_topics": [
+    {
+      "topic": "construction-scaffolding",
+      "issue": 983,
+      "status": "deferred-by-user",
+      "reason": "User requested prioritising the main complete-model catalogue because further scaffolding work has low overall benefit relative to complexity.",
+      "resume": "Resume this topic only on explicit user direction; general goal continuation prioritises buildings, ships, hardpoints and missiles."
+    }
+  ],
+  "current_pass": {
+    "mode": "first-iteration-only",
+    "requested_by": "user",
+    "scope": "Generate first authored versions for missing catalogue models; preserve existing reconstructions and refined versions.",
+    "deferred": "Further artistic refining and quality iterations belong to a later pass.",
+    "verification": "Retain correctness checks for native/GLB geometry, materials, UVs, placement and export; technical validity is separate from final artistic acceptance.",
+    "style_guidance": "Read the original CDB Architecture guidance through cultural_style_index for new models; distinguish direct architectural evidence from vehicle extrapolation, preserve sprite silhouette evidence and do not retrofit existing models."
+  },
+  "cultural_style_index": "docs/reconstruction/models/cultural-architecture-index.json"
+}

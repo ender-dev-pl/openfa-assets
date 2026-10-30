@@ -1,0 +1,308 @@
+{
+  "issue": 1115,
+  "id": "openfa:deflector",
+  "category": "hardpoints",
+  "culture": "shared",
+  "blend": "docs/assets/reconstruction/hardpoints/deflector/model.blend",
+  "source_files_sha256": {
+    "authored-copper-colour.png": "bbe0ee3417123b067571ad78e0c04edeaf42615f4ba28171e2b339e26b587772",
+    "authored-copper-roughness.png": "bfbff2fcbb50ca44c04902db2e10c3b345dc578fc8d3116140a2293bc0de3d81",
+    "authored-hull-colour.png": "2d8ced0c6757b1fe59b258c356d1e3782faccfa8140442ebe2f9909fa0a89bf5",
+    "authored-hull-roughness.png": "bfbff2fcbb50ca44c04902db2e10c3b345dc578fc8d3116140a2293bc0de3d81",
+    "authored-red-colour.png": "f471259ba2beb698dd62c81be48a5558eea1630f65f1a0b7cc17b9dc833fed01",
+    "authored-red-roughness.png": "bfbff2fcbb50ca44c04902db2e10c3b345dc578fc8d3116140a2293bc0de3d81",
+    "authored-wear.json": "96b5dc0dd3649a4f75d74cbc152a0c7f9cf2aa6ebd3488645a5e5889849778eb",
+    "front-quarter.png": "49f0a8e477ed56158b92ed58cb53677e62f6d17c28bca6d1b34ec002214e87e6",
+    "front.png": "c00f752c808c13f10d9586370c7ee880551182a16236c1e6dab124f4e3721f1f",
+    "gallery.png": "d7db7f4f74554396f101dee5f704b2f86dc27b4afeebb9d6012d7ed5143c07f0",
+    "hull-detail.png": "e3346081406f61cc6c6285148513aec1a5c6518d62b0eca8e0e121f2631d568a",
+    "imported-glb-front-quarter.png": "14a2b6bc7bb85963cb28b3f92e03f230a3e08d6b0b10bafa26947d356be0c2c9",
+    "imported-glb-hull-detail.png": "a0e678ec06412f4398c11e7766cfefac87238a4da4b837a4a5df5664078063ff",
+    "model.blend": "5340b13618a55e10ecdd5685248403c11a62d170248f30af83037d5ec3872176",
+    "model.glb": "3b3a2eaa947d35d07c6d1e6f3762403cfb140033d721d8a485999efc4e932758",
+    "model.json": "e5fba7bf6faff6b67858d8a276db7e5f0d78443f593923cd55829d0ad9410d09",
+    "rear-quarter.png": "d9d7ad96a212e2c30fae93f207e8e080c1d9f6a34c90c72333107556a50337fe",
+    "render-review.json": "659a0c3c3cf20e43cd6283aeecb16062392b269a2321f6a05a427548667edf94",
+    "side.png": "c6231c948c90b29f0a0c0c4066f5a99005bc99c1b4efb64dea96290bf1384911",
+    "technical-review.json": "f360ffd897aceddaedb24e6274b23f8b5ffb178d701f795265daf7cfead55051",
+    "top.png": "019bf16a30b31e39cac69ebcf5512de2c47f803dee36ec806303bb0ecfdbdc5d",
+    "underside.png": "4bf6afa23d41229f3639e880ff210284d401ed890f8b0d0041d307e898954952"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "role": "Special"
+  },
+  "declared_sockets": {
+    "AlignmentForward": {
+      "position": [
+        0,
+        -1.16,
+        0
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Cultural variants and aiming/recoil/mount calibration; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 35,
+    "helpers": {
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -1.159999966621399
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.159999966621399,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:deflector",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 35,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:deflector",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -1.159999966621399
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.159999966621399,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentForward": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.16,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 3.337860099428269e-08,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.16,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 3.337860099428269e-08,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

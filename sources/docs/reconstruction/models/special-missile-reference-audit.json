@@ -1,0 +1,91 @@
+{
+  "issue": 968,
+  "scope": "Bound catalogue references, PM filename entries in _MA/_M, standalone PM11/PM12 sprite/video files; unidentified images not exhaustively searched",
+  "reference_index_sha256": "32e981be8493a7f6baab7b8109fb979d009bf0de2da52e59dc0a01c032ce11a5",
+  "archives": [
+    {
+      "path": "../legacy/_MA/_MA",
+      "sha256": "f4401a73021d982f02c509979b9cce3ecd0f3b54db2b6dea28b092db12f10d91",
+      "entry_count": 91,
+      "pm_entries": [
+        "PM00.256",
+        "PM01.256",
+        "PM02.256",
+        "PM03.256",
+        "PM04.256",
+        "PM05.256",
+        "PM06.256",
+        "PM07.256",
+        "PM08.256",
+        "PM09.256",
+        "PM10.256"
+      ]
+    },
+    {
+      "path": "../legacy/_M/_M",
+      "sha256": "322ab4352008bc7d84728e4275d507c573b7066f4d5998c84af8ef39b192a8d1",
+      "entry_count": 69,
+      "pm_entries": [
+        "PM00.256",
+        "PM01.256",
+        "PM02.256",
+        "PM03.256",
+        "PM04.256",
+        "PM05.256",
+        "PM06.256",
+        "PM07.256",
+        "PM08.256",
+        "PM09.256",
+        "PM10.256",
+        "PM11.256",
+        "PM12.256"
+      ]
+    }
+  ],
+  "filename_matched_standalone_files": [],
+  "definitions": [
+    {
+      "id": "openfa:missile/terran/bug-hunter",
+      "global_type": 11,
+      "management_preview": null,
+      "source_directory": "_M",
+      "source_entry": "PM11.256",
+      "source_sha256": "92256d2a5d5d068794b7735daf9386d389aede361f953961ba1fe3593c9b1a85",
+      "frame_count": 14,
+      "canonical_reference_frame": 9,
+      "flight_reference_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "openfa:missile/terran/meat-eater",
+      "global_type": 12,
+      "management_preview": null,
+      "source_directory": "_M",
+      "source_entry": "PM12.256",
+      "source_sha256": "6359fd5827629aa1f716eba3e1aa6eb5fc2d1239577486e36326ad467540afd9",
+      "frame_count": 14,
+      "canonical_reference_frame": 9,
+      "flight_reference_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "conclusions": [
+    "Current _MA contains PM00..PM10 only; PM11/PM12 exist in _M",
+    "Neither catalogue definition has a bound management preview",
+    "High-detail geometry is an authored interpretation, not proven high-resolution reconstruction"
+  ]
+}

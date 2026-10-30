@@ -1,0 +1,306 @@
+{
+  "issue": 1115,
+  "id": "openfa:vortex-mine",
+  "category": "hardpoints",
+  "culture": "shared",
+  "blend": "docs/assets/reconstruction/hardpoints/vortex-mine/model.blend",
+  "source_files_sha256": {
+    "authored-hull-colour.png": "eec4485f8480bb2e1382a3a75cf15b7ce615a70321a3cc5c02f456ddbbd27c02",
+    "authored-hull-roughness.png": "81dd195f7c0006013838b02fcd5286f151e4021eb08a568c44fc9b93611cf34b",
+    "authored-red-colour.png": "3f66cdc70988212b24588e09cc7d6562fc26780037caa3395443e8d90d95a6dc",
+    "authored-red-roughness.png": "81dd195f7c0006013838b02fcd5286f151e4021eb08a568c44fc9b93611cf34b",
+    "authored-wear.json": "996b1abd6454b8efebe7a603f1d9af7d1b4159ec108edeae42026816566806ad",
+    "front-quarter.png": "17e86d03fe89ba8b5680b113b2c20f988fdb8e9fb1e74648c1fa5e6f1e3116a3",
+    "front.png": "07471784ee617f82d77236deb2e4424beeebf29b75ae47cb8f5292dd4e763973",
+    "gallery.png": "c3ce6d098f24c29ec92adf8f0e12d53106e96b4c50b83dd856a90b35fb951a58",
+    "hull-detail.png": "2a234ddf42d5b6de49732ebbf42fd3cee88c36db3ddaded015e3378ebc8920fe",
+    "imported-glb-front-quarter.png": "9ba3208a35ced8c03635a8bddf7dd87e577f88ede8bf84faea78b04a44a7b52c",
+    "imported-glb-hull-detail.png": "1cf6440a2c279c1ba23be64cad93e065730179260dd1cf13ec5635169e2feb74",
+    "model.blend": "9cac0866e2520b467445774c111db561a5f5b91eb4d5c929bf70304aa016eee2",
+    "model.glb": "89bacf5a2352ff1a0046f2b9aa5ce1de6afdaecfd5e95221d04eeb2528c4eab9",
+    "model.json": "3b8cb63ccb9ac66307fb2ac9135602475057de4ce00837891eee319a41daf6ef",
+    "rear-quarter.png": "266b917abbd40fe218f143af605bea378897b103cd2fba84460389bbbe1c5202",
+    "render-review.json": "2b86c299b99654fb57e2abd360e81b2d6390cdc20e6cf8930b9572e745f2ccad",
+    "side.png": "cf7fdbc56493aee421d841bdb33f77c51dcdfc60263095c44320df4b033d5f32",
+    "technical-review.json": "8fa38cd8e09686aa6bdbac404d55160043a9ab5553e92e52f032e1bb8b0f6278",
+    "top.png": "ba845cc4f71230b7bf6056f7b81ee207406f0e85fa4f08f471e80ddd186f6a80",
+    "underside.png": "62a0f09e92be07032ce48a6556e620757e617d36e330d49351e650a158297c9d"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "role": "SurfaceWeapon"
+  },
+  "declared_sockets": {
+    "AlignmentForward": {
+      "position": [
+        0,
+        -1.3,
+        0
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Cultural variants and aiming/recoil/mount calibration; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 40,
+    "helpers": {
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -1.2999999523162842
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.2999999523162842,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:vortex-mine",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 40,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:vortex-mine",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -1.2999999523162842
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.2999999523162842,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentForward": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.3,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-08,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.3,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-08,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

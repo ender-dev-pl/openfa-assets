@@ -1,0 +1,2171 @@
+{
+  "issue": 1104,
+  "id": "openfa:building/legacy/027",
+  "blender": "4.5.15 LTS",
+  "auditor_sha256": "e724031cd47bf5786da33f44d777b0e6a3dfdd5d987d7836b83d0f7a652c5744",
+  "snapshot_helper_sha256": "7984d9afaa275b92deff7f6ce79141e95cb23a078fd0ada7a25245858e293ffa",
+  "sources": {
+    "model.blend": "404fb161a324c35ee45e85051615e6111b3e324b11471b82413abb65db6829c0",
+    "model.glb": "3ae7c969365fc1c220f670d7b0873014aa857f4f8103390495f28baf16542d94",
+    "model.json": "d7d10cff9fcd28a92b457ba982ee3bad154ab13a484f557d831c4ff0e8830091"
+  },
+  "native": {
+    "Turret armoured pedestal": {
+      "bounds": [
+        -0.9800000190734863,
+        -0.9800000190734863,
+        0.0,
+        0.9800000190734863,
+        0.9800000190734863,
+        0.8999999761581421
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "47828e7ec18dc9860d9ef6f96d93ddd473bcaed7d35878534aae037c923d36ca",
+      "evaluated_vertices": 192,
+      "evaluated_faces": 66,
+      "materials": [
+        "terran | cap"
+      ],
+      "animated": false
+    },
+    "Weapon pivot": {
+      "bounds": [
+        -0.44999974966049194,
+        -0.4299998879432678,
+        0.6799999475479126,
+        0.4499998986721039,
+        0.4300000071525574,
+        1.3799999952316284
+      ],
+      "geometric_positions": 266,
+      "positions_sha256": "e2e0a5e352cfc82914f7e69d93da4bacbfc05c17413e164aef8f4f49b97b61a2",
+      "evaluated_vertices": 266,
+      "evaluated_faces": 288,
+      "materials": [
+        "terran | body"
+      ],
+      "animated": false
+    },
+    "Weapon barrel": {
+      "bounds": [
+        -0.09659121930599213,
+        -1.3692317008972168,
+        0.9903774261474609,
+        0.09659121930599213,
+        -0.1307683289051056,
+        1.4696226119995117
+      ],
+      "geometric_positions": 160,
+      "positions_sha256": "5b38c1cdd781d693f827009893a04f1ec2f6cc372aab50282d86f93326627a6d",
+      "evaluated_vertices": 160,
+      "evaluated_faces": 154,
+      "materials": [
+        "terran | cap"
+      ],
+      "animated": false
+    },
+    "Weapon dark bore": {
+      "bounds": [
+        -0.06800000369548798,
+        -1.4092044830322266,
+        1.3227797746658325,
+        0.06800000369548798,
+        -1.3557953834533691,
+        1.4522203207015991
+      ],
+      "geometric_positions": 84,
+      "positions_sha256": "df3c017ee6826460e549654026c3799079dcad13c0b2233d4729ef5b5a3be5c7",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "terran | dark"
+      ],
+      "animated": false
+    },
+    "Armoured pedestal sectors": {
+      "bounds": [
+        -1.0029833316802979,
+        -1.0029833316802979,
+        0.024000000208616257,
+        1.0029833316802979,
+        1.0029833316802979,
+        0.8859999775886536
+      ],
+      "geometric_positions": 768,
+      "positions_sha256": "09e00ba5f2098378fa8fe5bb4d37e7fa3875e4aec9350291ac2d253a01c30968",
+      "evaluated_vertices": 768,
+      "evaluated_faces": 576,
+      "materials": [
+        "Armoured pedestal sectors | plate tone 0.94",
+        "Armoured pedestal sectors | plate tone 1.0",
+        "Armoured pedestal sectors | plate tone 1.05"
+      ],
+      "animated": false
+    },
+    "Pedestal foundation joint": {
+      "bounds": [
+        -1.00600004196167,
+        -1.00600004196167,
+        0.09399999678134918,
+        1.00600004196167,
+        1.00600004196167,
+        0.1459999978542328
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "4998d5df26b31c3466552ecf1613eb4a1d516df6cc9f3731073f8c79032cb7cd",
+      "evaluated_vertices": 512,
+      "evaluated_faces": 512,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Azimuth race flange": {
+      "bounds": [
+        -0.527999997138977,
+        -0.527999997138977,
+        0.862000048160553,
+        0.527999997138977,
+        0.527999997138977,
+        0.9580000042915344
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "3c840ef3ffdbea230a5252b8beaab424035ca6c60d8b49bb40216e08e6ca7155",
+      "evaluated_vertices": 512,
+      "evaluated_faces": 512,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener": {
+      "bounds": [
+        0.4519999921321869,
+        -0.017999999225139618,
+        0.9509999752044678,
+        0.4880000054836273,
+        0.017999999225139618,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "5ee296adbc1c5ba15b01c7fafab060e35037792dc91cc5d86bc5b8e15a0cf2fa",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.001": {
+      "bounds": [
+        0.4162233769893646,
+        0.16186121106147766,
+        0.9509999752044678,
+        0.45222339034080505,
+        0.1978612244129181,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "5107772b4fdbd0cd98d294a5283ac747e0abfed4dab2dc09543f5282a73cb91d",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.002": {
+      "bounds": [
+        0.31434017419815063,
+        0.31434017419815063,
+        0.9509999752044678,
+        0.35034018754959106,
+        0.35034018754959106,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "2c5e2156b90ef405865be25ab3b7e745acb75eeb2ba75e184c401113cc0a8afe",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.003": {
+      "bounds": [
+        0.16186121106147766,
+        0.4162233769893646,
+        0.9509999752044678,
+        0.1978612244129181,
+        0.45222339034080505,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "8e516f9510e901942147673ba868ab45d4ed3f3fba0dab60d2d452c0a46e57b6",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.004": {
+      "bounds": [
+        -0.017999999225139618,
+        0.4519999921321869,
+        0.9509999752044678,
+        0.017999999225139618,
+        0.4880000054836273,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "b293a271dd5b90ef7a51bb084f075518d6ed29d9978c644d4bd4af16466aa53d",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.005": {
+      "bounds": [
+        -0.1978612244129181,
+        0.4162233769893646,
+        0.9509999752044678,
+        -0.16186121106147766,
+        0.45222339034080505,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "b61dcdb3275849a8b31097ea4caace773b9b06ce017b2a66332d04577024b202",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.006": {
+      "bounds": [
+        -0.35034018754959106,
+        0.31434017419815063,
+        0.9509999752044678,
+        -0.31434017419815063,
+        0.35034018754959106,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "041e569be05b918a25c2a8034ef3edc672d0900ae7fee10e2832409178166182",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.007": {
+      "bounds": [
+        -0.45222339034080505,
+        0.16186121106147766,
+        0.9509999752044678,
+        -0.4162233769893646,
+        0.1978612244129181,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "0bad7b1834cb113b6499a1e97b635471845f9b7d6bf0c905954b5c396cdd84a2",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.008": {
+      "bounds": [
+        -0.4880000054836273,
+        -0.017999999225139618,
+        0.9509999752044678,
+        -0.4519999921321869,
+        0.017999999225139618,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "48fd83fc3546433d8ccc57652e38ae5f563d001829c8fa7e542da852920336b4",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.009": {
+      "bounds": [
+        -0.45222339034080505,
+        -0.1978612244129181,
+        0.9509999752044678,
+        -0.4162233769893646,
+        -0.16186121106147766,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "9cf6ba2a14fc38904933dc88949ba4222208fd15828202242b7d342443cf2ee2",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.010": {
+      "bounds": [
+        -0.35034018754959106,
+        -0.35034018754959106,
+        0.9509999752044678,
+        -0.31434017419815063,
+        -0.31434017419815063,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "abb0ff37232bca9994fb65febe59645e249fbaeab65474ac3a8f0577b8cb6fff",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.011": {
+      "bounds": [
+        -0.1978612244129181,
+        -0.45222339034080505,
+        0.9509999752044678,
+        -0.16186121106147766,
+        -0.4162233769893646,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "c033537c36b684b666c5ee029d26289756e3c575bd1d35eab0a7afa1dd497cd8",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.012": {
+      "bounds": [
+        -0.017999999225139618,
+        -0.4880000054836273,
+        0.9509999752044678,
+        0.017999999225139618,
+        -0.4519999921321869,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "05a4f96828d9796da4f2a5f225fe852781bbf8a1896b30929e76d2de8fdea020",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.013": {
+      "bounds": [
+        0.16186121106147766,
+        -0.45222339034080505,
+        0.9509999752044678,
+        0.1978612244129181,
+        -0.4162233769893646,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "e3bdc70fff8e5e063583d4c16e9f7f442e55815a1202f23509844a4379f3e1a9",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.014": {
+      "bounds": [
+        0.31434017419815063,
+        -0.35034018754959106,
+        0.9509999752044678,
+        0.35034018754959106,
+        -0.31434017419815063,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "0374142b7d142fdd8a52cb80c858a20addf2c3639b7bc0b3874840f1da42f1d3",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.015": {
+      "bounds": [
+        0.4162233769893646,
+        -0.1978612244129181,
+        0.9509999752044678,
+        0.45222339034080505,
+        -0.16186121106147766,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "5ceb9f1b5360e4746d3045ba3ea93f5a400517240cfe914cce1463aba8893bf5",
+      "evaluated_vertices": 224,
+      "evaluated_faces": 222,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Pedestal systems hatch dark gasket": {
+      "bounds": [
+        0.3792390823364258,
+        -0.9097351431846619,
+        0.26289063692092896,
+        0.6807608604431152,
+        -0.690264880657196,
+        0.5971093773841858
+      ],
+      "geometric_positions": 84,
+      "positions_sha256": "e2a27c483374d02698ea3cd1841f101b923bcf434a6bed3480c2278bb580d6d1",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Pedestal systems hatch lid": {
+      "bounds": [
+        0.4140588045120239,
+        -0.9150480628013611,
+        0.2961987257003784,
+        0.6709411144256592,
+        -0.7249519228935242,
+        0.5788012742996216
+      ],
+      "geometric_positions": 136,
+      "positions_sha256": "fe833dbfa4923767908953dbfcbec14c2587a9466b86e2d21c37de75ae78e4cc",
+      "evaluated_vertices": 160,
+      "evaluated_faces": 154,
+      "materials": [
+        "Refined | red"
+      ],
+      "animated": false
+    },
+    "Pedestal systems hatch rim": {
+      "bounds": [
+        0.41193535923957825,
+        -0.9369349479675293,
+        0.28941789269447327,
+        0.6940646171569824,
+        -0.7366651296615601,
+        0.5981821417808533
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "1d957daddaa38f37d54c97297b9da3166a289e4edbdf7897a4956e602f419ab0",
+      "evaluated_vertices": 512,
+      "evaluated_faces": 512,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Pedestal systems hatch locking handle": {
+      "bounds": [
+        0.530267059803009,
+        -0.878000020980835,
+        0.4060242474079132,
+        0.6047329306602478,
+        -0.8420000076293945,
+        0.4989757835865021
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "035235ac630dfbbde5a969c2834f72477e3e70bdf7f0f23b0aa59b6ffa0d30da",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake recessed housing": {
+      "bounds": [
+        -0.5284936428070068,
+        -0.7716641426086426,
+        0.2849999964237213,
+        -0.31150633096694946,
+        -0.6283358335494995,
+        0.4749999940395355
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "297228bf29bfbda5c0f25ff03d977bd513943af874640dcf94496a02757e5ea5",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 98,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake louvre": {
+      "bounds": [
+        -0.5266035795211792,
+        -0.7843561172485352,
+        0.29679998755455017,
+        -0.3440796136856079,
+        -0.671809196472168,
+        0.3188000023365021
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "b6074d0824c57bddc61cb6690516c196c8b8e3d5954bb939277dd9cdc68e503d",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake louvre.001": {
+      "bounds": [
+        -0.5266035795211792,
+        -0.7843561172485352,
+        0.3328999876976013,
+        -0.3440796136856079,
+        -0.671809196472168,
+        0.3549000024795532
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "75e0e80c6f3177e57a568abe256dc8b92a372be033e64c23ffa6c05edd2a4ec3",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake louvre.002": {
+      "bounds": [
+        -0.5266035795211792,
+        -0.7843561172485352,
+        0.36899998784065247,
+        -0.3440796136856079,
+        -0.671809196472168,
+        0.39100000262260437
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "396b2fcd0f9fef4db810d526b56def08b35faf80532cf96d3da18dc363622506",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake louvre.003": {
+      "bounds": [
+        -0.5266035795211792,
+        -0.7843561172485352,
+        0.4050999879837036,
+        -0.3440796136856079,
+        -0.671809196472168,
+        0.4271000027656555
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "56874653c9f2d067a937d5d456ce8225957e8f48ee049e3431c726b951066350",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake louvre.004": {
+      "bounds": [
+        -0.5266035795211792,
+        -0.7843561172485352,
+        0.44119998812675476,
+        -0.3440796136856079,
+        -0.671809196472168,
+        0.46320000290870667
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "d63c79e4498639ff627c1b18545556235e69d67727c132f6d447a586850e913e",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Rotating joint flexible seal": {
+      "bounds": [
+        -0.37599998712539673,
+        -0.37599998712539673,
+        0.9639999866485596,
+        0.37599998712539673,
+        0.37599998712539673,
+        1.0160000324249268
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "f2ec63dd1cccaa5bbc0969a6abe84d2b336b0d3fba37bafcc17e9743698fea80",
+      "evaluated_vertices": 512,
+      "evaluated_faces": 512,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Trunnion left": {
+      "bounds": [
+        -0.4625000059604645,
+        -0.14000000059604645,
+        0.9300000667572021,
+        -0.39750000834465027,
+        0.14000000059604645,
+        1.2100000381469727
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "f55b50ba4793491a18630641952fa7279576afbf0f54d519070d2b6334f37139",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | bronze"
+      ],
+      "animated": false
+    },
+    "Trunnion right": {
+      "bounds": [
+        0.39750000834465027,
+        -0.14000000059604645,
+        0.9300000667572021,
+        0.4625000059604645,
+        0.14000000059604645,
+        1.2100000381469727
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "91ac3d7353c5dc8e06d53ad032226384e5992a299200f8e630d87047268c45d4",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | bronze"
+      ],
+      "animated": false
+    },
+    "Barrel heat-sink collar": {
+      "bounds": [
+        -0.13300000131130219,
+        -0.49535414576530457,
+        1.0259711742401123,
+        0.13300000131130219,
+        -0.4046458899974823,
+        1.2840290069580078
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "e4c97da8a1e070d94f8a6c1b8b828824c6879ad368e6ec86bb041ef07c71b345",
+      "evaluated_vertices": 512,
+      "evaluated_faces": 512,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Barrel heat-sink collar.001": {
+      "bounds": [
+        -0.13300000131130219,
+        -0.71135413646698,
+        1.0799710750579834,
+        0.13300000131130219,
+        -0.6206458806991577,
+        1.338028907775879
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "5dc3bc7343f85c1fd1f2cd4b6a3c661cfb20888a71e98cd487e83947757f8230",
+      "evaluated_vertices": 512,
+      "evaluated_faces": 512,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Barrel heat-sink collar.002": {
+      "bounds": [
+        -0.13300000131130219,
+        -0.9273541569709778,
+        1.133971095085144,
+        0.13300000131130219,
+        -0.8366459012031555,
+        1.3920289278030396
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "62c5472f5e92d1fd255ea46f52cf57854ce67d8637a4e2a80257acb525b14952",
+      "evaluated_vertices": 512,
+      "evaluated_faces": 512,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Barrel heat-sink collar.003": {
+      "bounds": [
+        -0.13300000131130219,
+        -1.1433541774749756,
+        1.1879711151123047,
+        0.13300000131130219,
+        -1.0526459217071533,
+        1.4460289478302002
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "5b769e6199500eb80c1ff94e99f979fe9124647bd2d8777e918872d63913563b",
+      "evaluated_vertices": 512,
+      "evaluated_faces": 512,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Muzzle locking ring": {
+      "bounds": [
+        -0.12700000405311584,
+        -1.3968093395233154,
+        1.2567919492721558,
+        0.12700000405311584,
+        -1.3031907081604004,
+        1.503208041191101
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "0556e506bbb2a5a6ebd07fdf34faf02f9889ba89359e5f0836691d11176985f4",
+      "evaluated_vertices": 512,
+      "evaluated_faces": 512,
+      "materials": [
+        "Refined | bronze"
+      ],
+      "animated": false
+    },
+    "Elevation actuator body": {
+      "bounds": [
+        -0.34200000762939453,
+        -0.48819631338119507,
+        0.956230640411377,
+        -0.23799999058246613,
+        -0.08180366456508636,
+        1.2137694358825684
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "4147e562ff9aa4b412b4dc65a71f25ec9596de5bed86e9ba11ba63f047bebf10",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Elevation actuator piston": {
+      "bounds": [
+        -0.31599998474121094,
+        -0.63234943151474,
+        1.1404091119766235,
+        -0.2639999985694885,
+        -0.427650511264801,
+        1.2995909452438354
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "d5f12cc760c72a6de50e3cef49a6c5d472834fab73c16a442a17bef49c1122b5",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Elevation actuator body.001": {
+      "bounds": [
+        0.23799999058246613,
+        -0.48819631338119507,
+        0.956230640411377,
+        0.34200000762939453,
+        -0.08180366456508636,
+        1.2137694358825684
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "9a35bc004320e4f4803053e55395a809a26a10ca031bfefe9b0991388f4fa589",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Elevation actuator piston.001": {
+      "bounds": [
+        0.2639999985694885,
+        -0.63234943151474,
+        1.1404091119766235,
+        0.31599998474121094,
+        -0.427650511264801,
+        1.2995909452438354
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "bae5ba0d3aa4a8ad180de6279c88f284bd40cec9841943ae6c15f53286325fd8",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 86,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Head rangefinder": {
+      "bounds": [
+        0.20000000298023224,
+        -0.32499998807907104,
+        1.3050000667572021,
+        0.36000001430511475,
+        -0.13500000536441803,
+        1.3949999809265137
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "f79a76425cbf7e509e02916bdbb601cf4a37c6f4a2a64a9dad9a35c136e51d21",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 98,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Rangefinder lens": {
+      "bounds": [
+        0.2432953417301178,
+        -0.3474999964237213,
+        1.3132953643798828,
+        0.316704660654068,
+        -0.3225000202655792,
+        1.386704683303833
+      ],
+      "geometric_positions": 160,
+      "positions_sha256": "5b30206ad896dcd9977e7d9a5cdc57c26fe346c3a01dfaf44f9c215944e902f0",
+      "evaluated_vertices": 160,
+      "evaluated_faces": 154,
+      "materials": [
+        "Refined | glass"
+      ],
+      "animated": false
+    },
+    "Laser focusing module": {
+      "bounds": [
+        -0.11999999731779099,
+        -0.4300000071525574,
+        1.1999999284744263,
+        0.11999999731779099,
+        -0.08999998867511749,
+        1.399999976158142
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "1cbba9278ccfb7a2110c98278c24827e1f3c43679e9644742b189f2f5036ebe8",
+      "evaluated_vertices": 96,
+      "evaluated_faces": 98,
+      "materials": [
+        "Refined | bronze"
+      ],
+      "animated": false
+    }
+  },
+  "imported": {
+    "Barrel heat-sink collar": {
+      "bounds": [
+        -0.13300000131130219,
+        -0.4953541159629822,
+        1.0259711742401123,
+        0.13300000131130219,
+        -0.4046459197998047,
+        1.2840290069580078
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "e4c97da8a1e070d94f8a6c1b8b828824c6879ad368e6ec86bb041ef07c71b345",
+      "evaluated_vertices": 585,
+      "evaluated_faces": 1024,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Barrel heat-sink collar.001": {
+      "bounds": [
+        -0.13300000131130219,
+        -0.71135413646698,
+        1.0799710750579834,
+        0.13300000131130219,
+        -0.6206458806991577,
+        1.338028907775879
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "5dc3bc7343f85c1fd1f2cd4b6a3c661cfb20888a71e98cd487e83947757f8230",
+      "evaluated_vertices": 585,
+      "evaluated_faces": 1024,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Barrel heat-sink collar.002": {
+      "bounds": [
+        -0.13300000131130219,
+        -0.9273541569709778,
+        1.1339709758758545,
+        0.13300000131130219,
+        -0.8366459012031555,
+        1.392029047012329
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "62c5472f5e92d1fd255ea46f52cf57854ce67d8637a4e2a80257acb525b14952",
+      "evaluated_vertices": 585,
+      "evaluated_faces": 1024,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Barrel heat-sink collar.003": {
+      "bounds": [
+        -0.13300000131130219,
+        -1.1433541774749756,
+        1.1879711151123047,
+        0.13300000131130219,
+        -1.0526459217071533,
+        1.4460289478302002
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "5b769e6199500eb80c1ff94e99f979fe9124647bd2d8777e918872d63913563b",
+      "evaluated_vertices": 585,
+      "evaluated_faces": 1024,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Elevation actuator body": {
+      "bounds": [
+        -0.34200000762939453,
+        -0.48819637298583984,
+        0.9562307000160217,
+        -0.23799999058246613,
+        -0.08180361986160278,
+        1.2137694358825684
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "4147e562ff9aa4b412b4dc65a71f25ec9596de5bed86e9ba11ba63f047bebf10",
+      "evaluated_vertices": 248,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Elevation actuator body.001": {
+      "bounds": [
+        0.23799999058246613,
+        -0.48819637298583984,
+        0.9562307000160217,
+        0.34200000762939453,
+        -0.08180361986160278,
+        1.2137694358825684
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "9a35bc004320e4f4803053e55395a809a26a10ca031bfefe9b0991388f4fa589",
+      "evaluated_vertices": 248,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Elevation actuator piston": {
+      "bounds": [
+        -0.31599998474121094,
+        -0.63234943151474,
+        1.1404091119766235,
+        -0.2639999985694885,
+        -0.427650511264801,
+        1.2995909452438354
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "d5f12cc760c72a6de50e3cef49a6c5d472834fab73c16a442a17bef49c1122b5",
+      "evaluated_vertices": 248,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Elevation actuator piston.001": {
+      "bounds": [
+        0.2639999985694885,
+        -0.63234943151474,
+        1.1404091119766235,
+        0.31599998474121094,
+        -0.427650511264801,
+        1.2995909452438354
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "bae5ba0d3aa4a8ad180de6279c88f284bd40cec9841943ae6c15f53286325fd8",
+      "evaluated_vertices": 248,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Head rangefinder": {
+      "bounds": [
+        0.20000000298023224,
+        -0.32499998807907104,
+        1.3050000667572021,
+        0.36000001430511475,
+        -0.13500000536441803,
+        1.3949999809265137
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "f79a76425cbf7e509e02916bdbb601cf4a37c6f4a2a64a9dad9a35c136e51d21",
+      "evaluated_vertices": 259,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Laser focusing module": {
+      "bounds": [
+        -0.11999999731779099,
+        -0.4300000071525574,
+        1.1999999284744263,
+        0.11999999731779099,
+        -0.08999998867511749,
+        1.399999976158142
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "1cbba9278ccfb7a2110c98278c24827e1f3c43679e9644742b189f2f5036ebe8",
+      "evaluated_vertices": 253,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | bronze"
+      ],
+      "animated": false
+    },
+    "Muzzle locking ring": {
+      "bounds": [
+        -0.12700000405311584,
+        -1.3968093395233154,
+        1.2567918300628662,
+        0.12700000405311584,
+        -1.3031907081604004,
+        1.5032081604003906
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "0556e506bbb2a5a6ebd07fdf34faf02f9889ba89359e5f0836691d11176985f4",
+      "evaluated_vertices": 585,
+      "evaluated_faces": 1024,
+      "materials": [
+        "Refined | bronze"
+      ],
+      "animated": false
+    },
+    "Rangefinder lens": {
+      "bounds": [
+        0.2432953417301178,
+        -0.3474999964237213,
+        1.3132953643798828,
+        0.316704660654068,
+        -0.3225000202655792,
+        1.386704683303833
+      ],
+      "geometric_positions": 160,
+      "positions_sha256": "5b30206ad896dcd9977e7d9a5cdc57c26fe346c3a01dfaf44f9c215944e902f0",
+      "evaluated_vertices": 399,
+      "evaluated_faces": 316,
+      "materials": [
+        "Refined | glass"
+      ],
+      "animated": false
+    },
+    "Rotating joint flexible seal": {
+      "bounds": [
+        -0.37599998712539673,
+        -0.37599998712539673,
+        0.9639999866485596,
+        0.37599998712539673,
+        0.37599998712539673,
+        1.0160000324249268
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "f2ec63dd1cccaa5bbc0969a6abe84d2b336b0d3fba37bafcc17e9743698fea80",
+      "evaluated_vertices": 585,
+      "evaluated_faces": 1024,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Trunnion left": {
+      "bounds": [
+        -0.4625000059604645,
+        -0.14000000059604645,
+        0.9300000667572021,
+        -0.39750000834465027,
+        0.14000000059604645,
+        1.2100000381469727
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "a2955c9742c95e866af01f5f62c08a1e06728dad2702f75fe2e700162cc60c59",
+      "evaluated_vertices": 244,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | bronze"
+      ],
+      "animated": false
+    },
+    "Trunnion right": {
+      "bounds": [
+        0.39750000834465027,
+        -0.14000000059604645,
+        0.9300000667572021,
+        0.4625000059604645,
+        0.14000000059604645,
+        1.2100000381469727
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "bcde1de7b6a5dc598fb6db4a83118bb1f40ff6ecf5c0e2d0599a00dc41c1e29f",
+      "evaluated_vertices": 244,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | bronze"
+      ],
+      "animated": false
+    },
+    "Weapon barrel": {
+      "bounds": [
+        -0.09659121930599213,
+        -1.3692318201065063,
+        0.9903775453567505,
+        0.09659121930599213,
+        -0.13076822459697723,
+        1.4696224927902222
+      ],
+      "geometric_positions": 160,
+      "positions_sha256": "5b38c1cdd781d693f827009893a04f1ec2f6cc372aab50282d86f93326627a6d",
+      "evaluated_vertices": 396,
+      "evaluated_faces": 316,
+      "materials": [
+        "terran | cap"
+      ],
+      "animated": false
+    },
+    "Weapon dark bore": {
+      "bounds": [
+        -0.06800000369548798,
+        -1.4092044830322266,
+        1.3227797746658325,
+        0.06800000369548798,
+        -1.3557953834533691,
+        1.4522203207015991
+      ],
+      "geometric_positions": 84,
+      "positions_sha256": "df3c017ee6826460e549654026c3799079dcad13c0b2233d4729ef5b5a3be5c7",
+      "evaluated_vertices": 234,
+      "evaluated_faces": 188,
+      "materials": [
+        "terran | dark"
+      ],
+      "animated": false
+    },
+    "Weapon pivot": {
+      "bounds": [
+        -0.44999974966049194,
+        -0.4299998879432678,
+        0.6799999475479126,
+        0.4499998986721039,
+        0.4300000071525574,
+        1.3799999952316284
+      ],
+      "geometric_positions": 266,
+      "positions_sha256": "e2e0a5e352cfc82914f7e69d93da4bacbfc05c17413e164aef8f4f49b97b61a2",
+      "evaluated_vertices": 323,
+      "evaluated_faces": 528,
+      "materials": [
+        "terran | body"
+      ],
+      "animated": false
+    },
+    "Armoured pedestal sectors": {
+      "bounds": [
+        -1.0029833316802979,
+        -1.0029833316802979,
+        0.024000000208616257,
+        1.0029833316802979,
+        1.0029833316802979,
+        0.8859999775886536
+      ],
+      "geometric_positions": 768,
+      "positions_sha256": "09e00ba5f2098378fa8fe5bb4d37e7fa3875e4aec9350291ac2d253a01c30968",
+      "evaluated_vertices": 2304,
+      "evaluated_faces": 1152,
+      "materials": [
+        "Armoured pedestal sectors | plate tone 0.94",
+        "Armoured pedestal sectors | plate tone 1.0",
+        "Armoured pedestal sectors | plate tone 1.05"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener": {
+      "bounds": [
+        0.4519999921321869,
+        -0.017999999225139618,
+        0.9509999752044678,
+        0.4880000054836273,
+        0.017999999225139618,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "5ee296adbc1c5ba15b01c7fafab060e35037792dc91cc5d86bc5b8e15a0cf2fa",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.001": {
+      "bounds": [
+        0.4162233769893646,
+        0.16186121106147766,
+        0.9509999752044678,
+        0.45222339034080505,
+        0.1978612244129181,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "5107772b4fdbd0cd98d294a5283ac747e0abfed4dab2dc09543f5282a73cb91d",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.002": {
+      "bounds": [
+        0.31434017419815063,
+        0.31434017419815063,
+        0.9509999752044678,
+        0.35034018754959106,
+        0.35034018754959106,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "2c5e2156b90ef405865be25ab3b7e745acb75eeb2ba75e184c401113cc0a8afe",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.003": {
+      "bounds": [
+        0.16186121106147766,
+        0.4162233769893646,
+        0.9509999752044678,
+        0.1978612244129181,
+        0.45222339034080505,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "8e516f9510e901942147673ba868ab45d4ed3f3fba0dab60d2d452c0a46e57b6",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.004": {
+      "bounds": [
+        -0.017999999225139618,
+        0.4519999921321869,
+        0.9509999752044678,
+        0.017999999225139618,
+        0.4880000054836273,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "b293a271dd5b90ef7a51bb084f075518d6ed29d9978c644d4bd4af16466aa53d",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.005": {
+      "bounds": [
+        -0.1978612244129181,
+        0.4162233769893646,
+        0.9509999752044678,
+        -0.16186121106147766,
+        0.45222339034080505,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "b61dcdb3275849a8b31097ea4caace773b9b06ce017b2a66332d04577024b202",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.006": {
+      "bounds": [
+        -0.35034018754959106,
+        0.31434017419815063,
+        0.9509999752044678,
+        -0.31434017419815063,
+        0.35034018754959106,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "041e569be05b918a25c2a8034ef3edc672d0900ae7fee10e2832409178166182",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.007": {
+      "bounds": [
+        -0.45222339034080505,
+        0.16186121106147766,
+        0.9509999752044678,
+        -0.4162233769893646,
+        0.1978612244129181,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "0bad7b1834cb113b6499a1e97b635471845f9b7d6bf0c905954b5c396cdd84a2",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.008": {
+      "bounds": [
+        -0.4880000054836273,
+        -0.017999999225139618,
+        0.9509999752044678,
+        -0.4519999921321869,
+        0.017999999225139618,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "48fd83fc3546433d8ccc57652e38ae5f563d001829c8fa7e542da852920336b4",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.009": {
+      "bounds": [
+        -0.45222339034080505,
+        -0.1978612244129181,
+        0.9509999752044678,
+        -0.4162233769893646,
+        -0.16186121106147766,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "9cf6ba2a14fc38904933dc88949ba4222208fd15828202242b7d342443cf2ee2",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.010": {
+      "bounds": [
+        -0.35034018754959106,
+        -0.35034018754959106,
+        0.9509999752044678,
+        -0.31434017419815063,
+        -0.31434017419815063,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "abb0ff37232bca9994fb65febe59645e249fbaeab65474ac3a8f0577b8cb6fff",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.011": {
+      "bounds": [
+        -0.1978612244129181,
+        -0.45222339034080505,
+        0.9509999752044678,
+        -0.16186121106147766,
+        -0.4162233769893646,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "c033537c36b684b666c5ee029d26289756e3c575bd1d35eab0a7afa1dd497cd8",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.012": {
+      "bounds": [
+        -0.017999999225139618,
+        -0.4880000054836273,
+        0.9509999752044678,
+        0.017999999225139618,
+        -0.4519999921321869,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "05a4f96828d9796da4f2a5f225fe852781bbf8a1896b30929e76d2de8fdea020",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.013": {
+      "bounds": [
+        0.16186121106147766,
+        -0.45222339034080505,
+        0.9509999752044678,
+        0.1978612244129181,
+        -0.4162233769893646,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "e3bdc70fff8e5e063583d4c16e9f7f442e55815a1202f23509844a4379f3e1a9",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.014": {
+      "bounds": [
+        0.31434017419815063,
+        -0.35034018754959106,
+        0.9509999752044678,
+        0.35034018754959106,
+        -0.31434017419815063,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "0374142b7d142fdd8a52cb80c858a20addf2c3639b7bc0b3874840f1da42f1d3",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race fastener.015": {
+      "bounds": [
+        0.4162233769893646,
+        -0.1978612244129181,
+        0.9509999752044678,
+        0.45222339034080505,
+        -0.16186121106147766,
+        0.968999981880188
+      ],
+      "geometric_positions": 224,
+      "positions_sha256": "5ceb9f1b5360e4746d3045ba3ea93f5a400517240cfe914cce1463aba8893bf5",
+      "evaluated_vertices": 546,
+      "evaluated_faces": 444,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Azimuth race flange": {
+      "bounds": [
+        -0.527999997138977,
+        -0.527999997138977,
+        0.862000048160553,
+        0.527999997138977,
+        0.527999997138977,
+        0.9580000042915344
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "3c840ef3ffdbea230a5252b8beaab424035ca6c60d8b49bb40216e08e6ca7155",
+      "evaluated_vertices": 585,
+      "evaluated_faces": 1024,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Pedestal foundation joint": {
+      "bounds": [
+        -1.00600004196167,
+        -1.00600004196167,
+        0.09399999678134918,
+        1.00600004196167,
+        1.00600004196167,
+        0.1459999978542328
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "4998d5df26b31c3466552ecf1613eb4a1d516df6cc9f3731073f8c79032cb7cd",
+      "evaluated_vertices": 585,
+      "evaluated_faces": 1024,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Pedestal systems hatch dark gasket": {
+      "bounds": [
+        0.3792390823364258,
+        -0.9097351431846619,
+        0.26289063692092896,
+        0.6807608604431152,
+        -0.690264880657196,
+        0.5971093773841858
+      ],
+      "geometric_positions": 84,
+      "positions_sha256": "e2a27c483374d02698ea3cd1841f101b923bcf434a6bed3480c2278bb580d6d1",
+      "evaluated_vertices": 242,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Pedestal systems hatch lid": {
+      "bounds": [
+        0.4140588045120239,
+        -0.9150480628013611,
+        0.2961987257003784,
+        0.6709411144256592,
+        -0.7249519228935242,
+        0.5788012742996216
+      ],
+      "geometric_positions": 136,
+      "positions_sha256": "fe833dbfa4923767908953dbfcbec14c2587a9466b86e2d21c37de75ae78e4cc",
+      "evaluated_vertices": 429,
+      "evaluated_faces": 316,
+      "materials": [
+        "Refined | red"
+      ],
+      "animated": false
+    },
+    "Pedestal systems hatch locking handle": {
+      "bounds": [
+        0.530267059803009,
+        -0.878000020980835,
+        0.4060242474079132,
+        0.6047329306602478,
+        -0.8420000076293945,
+        0.4989757835865021
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "035235ac630dfbbde5a969c2834f72477e3e70bdf7f0f23b0aa59b6ffa0d30da",
+      "evaluated_vertices": 256,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    },
+    "Pedestal systems hatch rim": {
+      "bounds": [
+        0.41193535923957825,
+        -0.9369349479675293,
+        0.28941789269447327,
+        0.6940646171569824,
+        -0.7366651296615601,
+        0.5981821417808533
+      ],
+      "geometric_positions": 512,
+      "positions_sha256": "1d957daddaa38f37d54c97297b9da3166a289e4edbdf7897a4956e602f419ab0",
+      "evaluated_vertices": 585,
+      "evaluated_faces": 1024,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Turret armoured pedestal": {
+      "bounds": [
+        -0.9800000190734863,
+        -0.9800000190734863,
+        0.0,
+        0.9800000190734863,
+        0.9800000190734863,
+        0.8999999761581421
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "47828e7ec18dc9860d9ef6f96d93ddd473bcaed7d35878534aae037c923d36ca",
+      "evaluated_vertices": 192,
+      "evaluated_faces": 188,
+      "materials": [
+        "terran | cap"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake louvre": {
+      "bounds": [
+        -0.5266035795211792,
+        -0.7843561172485352,
+        0.29679998755455017,
+        -0.3440796136856079,
+        -0.671809196472168,
+        0.3188000023365021
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "b6074d0824c57bddc61cb6690516c196c8b8e3d5954bb939277dd9cdc68e503d",
+      "evaluated_vertices": 286,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake louvre.001": {
+      "bounds": [
+        -0.5266035795211792,
+        -0.7843561172485352,
+        0.3328999876976013,
+        -0.3440796136856079,
+        -0.671809196472168,
+        0.3549000024795532
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "75e0e80c6f3177e57a568abe256dc8b92a372be033e64c23ffa6c05edd2a4ec3",
+      "evaluated_vertices": 286,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake louvre.002": {
+      "bounds": [
+        -0.5266035795211792,
+        -0.7843561172485352,
+        0.36899998784065247,
+        -0.3440796136856079,
+        -0.671809196472168,
+        0.39100000262260437
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "396b2fcd0f9fef4db810d526b56def08b35faf80532cf96d3da18dc363622506",
+      "evaluated_vertices": 286,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake louvre.003": {
+      "bounds": [
+        -0.5266035795211792,
+        -0.7843561172485352,
+        0.4050999879837036,
+        -0.3440796136856079,
+        -0.671809196472168,
+        0.4271000027656555
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "56874653c9f2d067a937d5d456ce8225957e8f48ee049e3431c726b951066350",
+      "evaluated_vertices": 286,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake louvre.004": {
+      "bounds": [
+        -0.5266035795211792,
+        -0.7843561172485352,
+        0.44119998812675476,
+        -0.3440796136856079,
+        -0.671809196472168,
+        0.46320000290870667
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "d63c79e4498639ff627c1b18545556235e69d67727c132f6d447a586850e913e",
+      "evaluated_vertices": 286,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | edge"
+      ],
+      "animated": false
+    },
+    "Turret cooling intake recessed housing": {
+      "bounds": [
+        -0.5284936428070068,
+        -0.7716641426086426,
+        0.2849999964237213,
+        -0.31150633096694946,
+        -0.6283358335494995,
+        0.4749999940395355
+      ],
+      "geometric_positions": 96,
+      "positions_sha256": "297228bf29bfbda5c0f25ff03d977bd513943af874640dcf94496a02757e5ea5",
+      "evaluated_vertices": 278,
+      "evaluated_faces": 188,
+      "materials": [
+        "Refined | dark"
+      ],
+      "animated": false
+    }
+  },
+  "comparisons": {
+    "Turret armoured pedestal": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Weapon pivot": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Weapon barrel": {
+      "maximum_bidirectional_position_error": 2.7354894882591907e-07,
+      "maximum_bounds_error": 1.1920928955078125e-07
+    },
+    "Weapon dark bore": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Armoured pedestal sectors": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Pedestal foundation joint": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race flange": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.001": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.002": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.003": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.004": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.005": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.006": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.007": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.008": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.009": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.010": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.011": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.012": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.013": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.014": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Azimuth race fastener.015": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Pedestal systems hatch dark gasket": {
+      "maximum_bidirectional_position_error": 6.664001972467304e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Pedestal systems hatch lid": {
+      "maximum_bidirectional_position_error": 8.429369557916289e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Pedestal systems hatch rim": {
+      "maximum_bidirectional_position_error": 8.429369557916289e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Pedestal systems hatch locking handle": {
+      "maximum_bidirectional_position_error": 5.960464477539063e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Turret cooling intake recessed housing": {
+      "maximum_bidirectional_position_error": 5.960464477539063e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Turret cooling intake louvre": {
+      "maximum_bidirectional_position_error": 5.960464477539063e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Turret cooling intake louvre.001": {
+      "maximum_bidirectional_position_error": 5.960464477539063e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Turret cooling intake louvre.002": {
+      "maximum_bidirectional_position_error": 5.960464477539063e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Turret cooling intake louvre.003": {
+      "maximum_bidirectional_position_error": 5.960464477539063e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Turret cooling intake louvre.004": {
+      "maximum_bidirectional_position_error": 5.960464477539063e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Rotating joint flexible seal": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Trunnion left": {
+      "maximum_bidirectional_position_error": 1.1920928955078125e-07,
+      "maximum_bounds_error": 0.0
+    },
+    "Trunnion right": {
+      "maximum_bidirectional_position_error": 1.1920928955078125e-07,
+      "maximum_bounds_error": 0.0
+    },
+    "Barrel heat-sink collar": {
+      "maximum_bidirectional_position_error": 1.2287812012345967e-07,
+      "maximum_bounds_error": 2.9802322387695312e-08
+    },
+    "Barrel heat-sink collar.001": {
+      "maximum_bidirectional_position_error": 1.3328003944934608e-07,
+      "maximum_bounds_error": 0.0
+    },
+    "Barrel heat-sink collar.002": {
+      "maximum_bidirectional_position_error": 1.3328003944934608e-07,
+      "maximum_bounds_error": 1.1920928955078125e-07
+    },
+    "Barrel heat-sink collar.003": {
+      "maximum_bidirectional_position_error": 1.6858739115832577e-07,
+      "maximum_bounds_error": 0.0
+    },
+    "Muzzle locking ring": {
+      "maximum_bidirectional_position_error": 1.6858739115832577e-07,
+      "maximum_bounds_error": 1.1920928955078125e-07
+    },
+    "Elevation actuator body": {
+      "maximum_bidirectional_position_error": 1.2287812012345967e-07,
+      "maximum_bounds_error": 5.960464477539063e-08
+    },
+    "Elevation actuator piston": {
+      "maximum_bidirectional_position_error": 5.960464477539063e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Elevation actuator body.001": {
+      "maximum_bidirectional_position_error": 1.2287812012345967e-07,
+      "maximum_bounds_error": 5.960464477539063e-08
+    },
+    "Elevation actuator piston.001": {
+      "maximum_bidirectional_position_error": 5.960464477539063e-08,
+      "maximum_bounds_error": 0.0
+    },
+    "Head rangefinder": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    },
+    "Rangefinder lens": {
+      "maximum_bidirectional_position_error": 1.1920928955078125e-07,
+      "maximum_bounds_error": 0.0
+    },
+    "Laser focusing module": {
+      "maximum_bidirectional_position_error": 0.0,
+      "maximum_bounds_error": 0.0
+    }
+  },
+  "native_materials": {
+    "terran | cap": [
+      [
+        0.3822000026702881,
+        0.259799987077713,
+        0.12300000339746475,
+        1.0
+      ],
+      0.6299999952316284,
+      0.38999998569488525
+    ],
+    "terran | body": [
+      [
+        0.1589999943971634,
+        0.2093999981880188,
+        0.18060000240802765,
+        1.0
+      ],
+      0.6299999952316284,
+      0.38999998569488525
+    ],
+    "terran | dark": [
+      [
+        0.013439999893307686,
+        0.01703999936580658,
+        0.019920000806450844,
+        1.0
+      ],
+      0.6299999952316284,
+      0.38999998569488525
+    ],
+    "Armoured pedestal sectors | plate tone 0.94": [
+      [
+        0.31960001587867737,
+        0.21620000898838043,
+        0.09869999438524246,
+        1.0
+      ],
+      0.7200000286102295,
+      0.38999998569488525
+    ],
+    "Armoured pedestal sectors | plate tone 1.0": [
+      [
+        0.3400000035762787,
+        0.23000000417232513,
+        0.10499999672174454,
+        1.0
+      ],
+      0.7200000286102295,
+      0.38999998569488525
+    ],
+    "Armoured pedestal sectors | plate tone 1.05": [
+      [
+        0.3569999933242798,
+        0.24150000512599945,
+        0.11024999618530273,
+        1.0
+      ],
+      0.7200000286102295,
+      0.38999998569488525
+    ],
+    "Refined | dark": [
+      [
+        0.02500000037252903,
+        0.03500000014901161,
+        0.03400000184774399,
+        1.0
+      ],
+      0.4000000059604645,
+      0.5400000214576721
+    ],
+    "Refined | edge": [
+      [
+        0.3400000035762787,
+        0.38999998569488525,
+        0.3700000047683716,
+        1.0
+      ],
+      0.7200000286102295,
+      0.3199999928474426
+    ],
+    "Refined | red": [
+      [
+        0.3400000035762787,
+        0.06499999761581421,
+        0.04500000178813934,
+        1.0
+      ],
+      0.41999998688697815,
+      0.4399999976158142
+    ],
+    "Refined | bronze": [
+      [
+        0.3400000035762787,
+        0.23000000417232513,
+        0.10499999672174454,
+        1.0
+      ],
+      0.7200000286102295,
+      0.38999998569488525
+    ],
+    "Refined | glass": [
+      [
+        0.054999999701976776,
+        0.1599999964237213,
+        0.17000000178813934,
+        1.0
+      ],
+      0.44999998807907104,
+      0.23000000417232513
+    ]
+  },
+  "imported_materials": {
+    "Refined | dark": [
+      [
+        0.02500000037252903,
+        0.03500000014901161,
+        0.03400000184774399,
+        1.0
+      ],
+      0.4000000059604645,
+      0.5400000214576721
+    ],
+    "Refined | edge": [
+      [
+        0.3400000035762787,
+        0.38999998569488525,
+        0.3700000047683716,
+        1.0
+      ],
+      0.7200000286102295,
+      0.3199999928474426
+    ],
+    "Refined | bronze": [
+      [
+        0.3400000035762787,
+        0.23000000417232513,
+        0.10499999672174454,
+        1.0
+      ],
+      0.7200000286102295,
+      0.38999998569488525
+    ],
+    "Refined | glass": [
+      [
+        0.054999999701976776,
+        0.1599999964237213,
+        0.17000000178813934,
+        1.0
+      ],
+      0.44999998807907104,
+      0.23000000417232513
+    ],
+    "terran | cap": [
+      [
+        0.3822000026702881,
+        0.259799987077713,
+        0.12300000339746475,
+        1.0
+      ],
+      0.6299999952316284,
+      0.38999998569488525
+    ],
+    "terran | dark": [
+      [
+        0.013439999893307686,
+        0.01703999936580658,
+        0.019920000806450844,
+        1.0
+      ],
+      0.6299999952316284,
+      0.38999998569488525
+    ],
+    "terran | body": [
+      [
+        0.1589999943971634,
+        0.2093999981880188,
+        0.18060000240802765,
+        1.0
+      ],
+      0.6299999952316284,
+      0.38999998569488525
+    ],
+    "Armoured pedestal sectors | plate tone 0.94": [
+      [
+        0.31960001587867737,
+        0.21620000898838043,
+        0.09869999438524246,
+        1.0
+      ],
+      0.7200000286102295,
+      0.38999998569488525
+    ],
+    "Armoured pedestal sectors | plate tone 1.0": [
+      [
+        0.3400000035762787,
+        0.23000000417232513,
+        0.10499999672174454,
+        1.0
+      ],
+      0.7200000286102295,
+      0.38999998569488525
+    ],
+    "Armoured pedestal sectors | plate tone 1.05": [
+      [
+        0.3569999933242798,
+        0.24150000512599945,
+        0.11024999618530273,
+        1.0
+      ],
+      0.7200000286102295,
+      0.38999998569488525
+    ],
+    "Refined | red": [
+      [
+        0.3400000035762787,
+        0.06499999761581421,
+        0.04500000178813934,
+        1.0
+      ],
+      0.41999998688697815,
+      0.4399999976158142
+    ]
+  },
+  "maximum_material_value_error": 0.0,
+  "render_sha256": {},
+  "source_assets_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Evaluated geometry/material and actual matched-render evidence only; no final art, UV/state/mount or game integration acceptance."
+}

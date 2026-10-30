@@ -1,0 +1,307 @@
+{
+  "issue": 1115,
+  "id": "openfa:ship/artemian/shielded-multi-assault",
+  "category": "ships",
+  "culture": "artemian",
+  "blend": "docs/assets/reconstruction/ships/artemian/shielded-multi-assault/model.blend",
+  "source_files_sha256": {
+    "authored-gold-colour.png": "c0d426025881212e26070e1080e23ddcbebb58a3dfd4d124d75d232502e66f6d",
+    "authored-gold-roughness.png": "cafef9f2000a8484a38e0b072c8b8a4d8b8229dc11bff47a170f32976875f3c7",
+    "authored-hull-colour.png": "57f92af67f52ced242013496e31c18396872eef1d027f914fc6f81ab17426efc",
+    "authored-hull-roughness.png": "cafef9f2000a8484a38e0b072c8b8a4d8b8229dc11bff47a170f32976875f3c7",
+    "authored-wear.json": "037179c0d7b389bf0265797329d272ecb8efaa228a73def75582bd1cd9eba3f8",
+    "front-quarter.png": "a82f4b6d42c698057047a1c12911bbae99f693ccea896d5acf1be292ce84067a",
+    "front.png": "4434aa79dc05d7ece712af9bd919363e30da571968cd8afb6fc13c1914d5222f",
+    "gallery.png": "e2735b442e383c13981d92d238343b30a756fb5546f72a917f252e5b276a3e67",
+    "hull-detail.png": "fdd7534dc28764f252cc7e4bbbd5030e36ef6fa53d3e78b879280db0f3f906bc",
+    "imported-glb-front-quarter.png": "421aed937a5c4cb98a20702a6c6bc61e2b15917fce53296db508ee999398a9db",
+    "imported-glb-hull-detail.png": "eac233f90de488dd149badf8ad99556e83a037a674252b6516889b514a6d58d4",
+    "model.blend": "e297e4b7c076b46513e5ea5d7083b80903f5e729ec67ee278b40d08f5eb1a5d3",
+    "model.glb": "3affb733b26846e059db007ff80752a5bcc155896bb9f6c84893390b0914fb28",
+    "model.json": "ee38b6189ca866dcb0aee43de753f8eb888a4fbb4316444ce5630118e3230353",
+    "rear-quarter.png": "6e3476755ba2fff295fbe92be1391749d78b299265a3992ecb269b906906b0cb",
+    "render-review.json": "bd80a4569d3419212f52c385a0253820e715ff1b8e55a0783447916226f9f28c",
+    "side.png": "9da6b8b1a72a4de6d3cdc2e77ea8b0f842ed8f84ce3603f7d8c0d5ae43411a8c",
+    "technical-review.json": "4bb096ad55cc95675bdd2fb2c5fbb6ddc6b06b4fb84b0ede34ee4533c4afd039",
+    "top.png": "7a0a3ded1a747e75718fcefae583a9ea65ef934954d701137907b3b18de9a37c",
+    "underside.png": "31ebbbf3d6b25206d55310064d9acfad66a5e28839b46d7ae763ca3ec9fc975b"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "hardpointSlots": 4,
+    "defaultHardpointIds": []
+  },
+  "declared_sockets": {
+    "AlignmentForward": {
+      "position": [
+        0,
+        -2.22,
+        -0.04
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Damage/operational variants; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 46,
+    "helpers": {
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -2.2200000286102295
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              -0.03999999910593033
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -2.2200000286102295,
+            -0.03999999910593033
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/artemian/shielded-multi-assault",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 46,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/artemian/shielded-multi-assault",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -2.2200000286102295
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              -0.03999999910593033
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -2.2200000286102295,
+            -0.03999999910593033
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentForward": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -2.22,
+          -0.04
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.8610229296788248e-08,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -2.22,
+          -0.04
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.8610229296788248e-08,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

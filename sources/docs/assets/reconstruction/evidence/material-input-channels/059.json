@@ -1,0 +1,1776 @@
+{
+  "issue": 1116,
+  "id": "openfa:building/legacy/059",
+  "category": "buildings",
+  "blend": "docs/assets/reconstruction/buildings/rigellian/extractor/model.blend",
+  "blend_sha256": "04102684fb99f0ace4c696e37853f4dd3f93619e67b83f7bd5bb9958661d859f",
+  "glb_sha256": "f4b66820258f552effe070acfc3ec32f0d74caade8f5398f543fe552f1817375",
+  "native": {
+    "bindings": {
+      "RI20 bronze main housing": [
+        "RI20 | bronze planar caps",
+        "RI20 | weathered bronze casing"
+      ],
+      "RI20 lower stepped drum": [
+        "RI20 | bronze planar caps",
+        "RI20 | weathered bronze casing"
+      ],
+      "RI20 bronze side module": [
+        "RI20 | bronze planar caps",
+        "RI20 | weathered bronze casing"
+      ],
+      "RI20 green lower fitting": [
+        "RI20 | aged green lower alloy",
+        "RI20 | green planar caps"
+      ],
+      "RI20 lower dark inset 0": [
+        "RI20 | recessed dark insets"
+      ],
+      "RI20 lower dark inset 1": [
+        "RI20 | recessed dark insets"
+      ],
+      "RI20 upper dark inset 0": [
+        "RI20 | recessed dark insets"
+      ],
+      "RI20 upper dark inset 1": [
+        "RI20 | recessed dark insets"
+      ],
+      "RI20 side round detail 0": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 side round detail 1": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 front round detail 0": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 front round detail 1": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 lower service contact 0": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 lower service contact 1": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 lower service contact 2": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 upper round fitting bezel": [
+        "RI20 | dark bronze retaining alloy"
+      ],
+      "RI20 upper round fitting face": [
+        "RI20 | worn brass fittings"
+      ]
+    },
+    "materials": {
+      "RI20 | aged green lower alloy": {
+        "Base Color": {
+          "source": {
+            "image": "authored-green-shell-colour.png",
+            "size": [
+              1024,
+              1024
+            ],
+            "colour_space": "sRGB",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            1024,
+            1024,
+            3
+          ],
+          "decoded_sha256": "2729d99ee40081d21ae95580543c82e7617a6b1f28e9e68ad4595d5251bd1531",
+          "minimum": [
+            80,
+            124,
+            103
+          ],
+          "maximum": [
+            122,
+            154,
+            139
+          ],
+          "uniform": null
+        },
+        "Roughness": {
+          "source": {
+            "image": "authored-green-shell-roughness.png",
+            "size": [
+              1024,
+              1024
+            ],
+            "colour_space": "Non-Color",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            1024,
+            1024,
+            1
+          ],
+          "decoded_sha256": "751a396953dba83da0f2882f58537b659616d1d7fc9a0ab27bb17f77423f4259",
+          "minimum": [
+            113
+          ],
+          "maximum": [
+            180
+          ],
+          "uniform": null
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.6499999761581421
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "fe1dcd3abfcd6b1655a026e60a05d03a7f71e4b6070f36e6c7e9c4b6f3d3bf1b",
+          "minimum": [
+            166
+          ],
+          "maximum": [
+            166
+          ],
+          "uniform": [
+            166
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | bronze planar caps": {
+        "Base Color": {
+          "source": {
+            "image": "authored-bronze-cap-colour.png",
+            "size": [
+              512,
+              512
+            ],
+            "colour_space": "sRGB",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            512,
+            512,
+            3
+          ],
+          "decoded_sha256": "853f8e3029ae69436dcedfeb0d10a9beccd5033e5ba6a25c0bbdd5cfd80a091e",
+          "minimum": [
+            130,
+            112,
+            69
+          ],
+          "maximum": [
+            149,
+            139,
+            110
+          ],
+          "uniform": null
+        },
+        "Roughness": {
+          "source": {
+            "image": "authored-bronze-cap-roughness.png",
+            "size": [
+              512,
+              512
+            ],
+            "colour_space": "Non-Color",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            512,
+            512,
+            1
+          ],
+          "decoded_sha256": "e91d2e1184c757e5ccf25b7e71ebcef228b4648001da55aafd0b160cf38368b7",
+          "minimum": [
+            114
+          ],
+          "maximum": [
+            161
+          ],
+          "uniform": null
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.7300000190734863
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "281c93990bac2c69cf372c9a3b66c406c86cca826d6407b68e644da22eef8186",
+          "minimum": [
+            186
+          ],
+          "maximum": [
+            186
+          ],
+          "uniform": [
+            186
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | dark bronze retaining alloy": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.15000000596046448,
+              0.11999999731779099,
+              0.04800000041723251
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "d71d4ca3a8cdd5024b708572d71d018ac9009a9063e732fba1f3b83fbb3a0d7e",
+          "minimum": [
+            38,
+            31,
+            12
+          ],
+          "maximum": [
+            38,
+            31,
+            12
+          ],
+          "uniform": [
+            38,
+            31,
+            12
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.5400000214576721
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "2d3193691934124461809fb9bc7e671215099fc7d961bfbe31943d40d477c890",
+          "minimum": [
+            138
+          ],
+          "maximum": [
+            138
+          ],
+          "uniform": [
+            138
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.75
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "b12dc850a3b0a3b79fc2255e175241ce20489fe45df93ff35c42c6c348df4fbf",
+          "minimum": [
+            191
+          ],
+          "maximum": [
+            191
+          ],
+          "uniform": [
+            191
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | green planar caps": {
+        "Base Color": {
+          "source": {
+            "image": "authored-green-cap-colour.png",
+            "size": [
+              512,
+              512
+            ],
+            "colour_space": "sRGB",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            512,
+            512,
+            3
+          ],
+          "decoded_sha256": "e1331d3b2e19216431dcd3b1193904e1ea8dadb570294b499855bf5d0ad3bc15",
+          "minimum": [
+            87,
+            134,
+            112
+          ],
+          "maximum": [
+            120,
+            153,
+            139
+          ],
+          "uniform": null
+        },
+        "Roughness": {
+          "source": {
+            "image": "authored-green-cap-roughness.png",
+            "size": [
+              512,
+              512
+            ],
+            "colour_space": "Non-Color",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            512,
+            512,
+            1
+          ],
+          "decoded_sha256": "e91d2e1184c757e5ccf25b7e71ebcef228b4648001da55aafd0b160cf38368b7",
+          "minimum": [
+            114
+          ],
+          "maximum": [
+            161
+          ],
+          "uniform": null
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.6499999761581421
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "fe1dcd3abfcd6b1655a026e60a05d03a7f71e4b6070f36e6c7e9c4b6f3d3bf1b",
+          "minimum": [
+            166
+          ],
+          "maximum": [
+            166
+          ],
+          "uniform": [
+            166
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | recessed dark insets": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.04800000041723251,
+              0.03500000014901161,
+              0.01600000075995922
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "7fdfa57f1bc5cf169bdeb0c412aa8e7fee9c20a2f8376b9ada2441197dd1a6dc",
+          "minimum": [
+            12,
+            9,
+            4
+          ],
+          "maximum": [
+            12,
+            9,
+            4
+          ],
+          "uniform": [
+            12,
+            9,
+            4
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.6800000071525574
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "22adaf058a2cb668b15cb4c1f30e7cc720bbe38c146544169db35fbf630389c4",
+          "minimum": [
+            173
+          ],
+          "maximum": [
+            173
+          ],
+          "uniform": [
+            173
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.550000011920929
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "9defb0a9e163278be0e05aa01b312ec78cfa3726869503385e76e3a4b7950648",
+          "minimum": [
+            140
+          ],
+          "maximum": [
+            140
+          ],
+          "uniform": [
+            140
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | weathered bronze casing": {
+        "Base Color": {
+          "source": {
+            "image": "authored-bronze-shell-colour.png",
+            "size": [
+              1024,
+              1024
+            ],
+            "colour_space": "sRGB",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            1024,
+            1024,
+            3
+          ],
+          "decoded_sha256": "8bac638c8a5d05fa10a92f35538eef8338ee6f6f69d32d11ff44e9cb5f4bb59e",
+          "minimum": [
+            86,
+            96,
+            66
+          ],
+          "maximum": [
+            149,
+            139,
+            111
+          ],
+          "uniform": null
+        },
+        "Roughness": {
+          "source": {
+            "image": "authored-bronze-shell-roughness.png",
+            "size": [
+              1024,
+              1024
+            ],
+            "colour_space": "Non-Color",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            1024,
+            1024,
+            1
+          ],
+          "decoded_sha256": "773f6a0ffdc59950d004ef56ddc922b83299946497068f7c71b00b0068c1ef14",
+          "minimum": [
+            113
+          ],
+          "maximum": [
+            214
+          ],
+          "uniform": null
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.7300000190734863
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "281c93990bac2c69cf372c9a3b66c406c86cca826d6407b68e644da22eef8186",
+          "minimum": [
+            186
+          ],
+          "maximum": [
+            186
+          ],
+          "uniform": [
+            186
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | worn brass fittings": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.41999998688697815,
+              0.28999999165534973,
+              0.08500000089406967
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "a46057eba72f2e1dfa7e84c1a62495953fef1b1bfa2dd06c58b40646895a1cc1",
+          "minimum": [
+            107,
+            74,
+            22
+          ],
+          "maximum": [
+            107,
+            74,
+            22
+          ],
+          "uniform": [
+            107,
+            74,
+            22
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.49000000953674316
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "d10b36aa74a59bcf4a88185837f658afaf3646eff2bb16c3928d0e9335e945d2",
+          "minimum": [
+            125
+          ],
+          "maximum": [
+            125
+          ],
+          "uniform": [
+            125
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.7799999713897705
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "3340883aad3038dd993b3c94d2d32c3b20e07859969aca411f7f93ab8847c746",
+          "minimum": [
+            199
+          ],
+          "maximum": [
+            199
+          ],
+          "uniform": [
+            199
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      }
+    },
+    "decoded_image_datablocks": 8
+  },
+  "imported": {
+    "bindings": {
+      "RI20 bronze main housing": [
+        "RI20 | bronze planar caps",
+        "RI20 | weathered bronze casing"
+      ],
+      "RI20 bronze side module": [
+        "RI20 | bronze planar caps",
+        "RI20 | weathered bronze casing"
+      ],
+      "RI20 front round detail 0": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 front round detail 1": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 green lower fitting": [
+        "RI20 | aged green lower alloy",
+        "RI20 | green planar caps"
+      ],
+      "RI20 lower dark inset 0": [
+        "RI20 | recessed dark insets"
+      ],
+      "RI20 lower dark inset 1": [
+        "RI20 | recessed dark insets"
+      ],
+      "RI20 lower service contact 0": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 lower service contact 1": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 lower service contact 2": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 lower stepped drum": [
+        "RI20 | bronze planar caps",
+        "RI20 | weathered bronze casing"
+      ],
+      "RI20 side round detail 0": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 side round detail 1": [
+        "RI20 | worn brass fittings"
+      ],
+      "RI20 upper dark inset 0": [
+        "RI20 | recessed dark insets"
+      ],
+      "RI20 upper dark inset 1": [
+        "RI20 | recessed dark insets"
+      ],
+      "RI20 upper round fitting bezel": [
+        "RI20 | dark bronze retaining alloy"
+      ],
+      "RI20 upper round fitting face": [
+        "RI20 | worn brass fittings"
+      ]
+    },
+    "materials": {
+      "RI20 | aged green lower alloy": {
+        "Base Color": {
+          "source": {
+            "image": "authored-green-shell-colour",
+            "size": [
+              1024,
+              1024
+            ],
+            "colour_space": "sRGB",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            1024,
+            1024,
+            3
+          ],
+          "decoded_sha256": "2729d99ee40081d21ae95580543c82e7617a6b1f28e9e68ad4595d5251bd1531",
+          "minimum": [
+            80,
+            124,
+            103
+          ],
+          "maximum": [
+            122,
+            154,
+            139
+          ],
+          "uniform": null
+        },
+        "Roughness": {
+          "source": {
+            "image": "authored-green-shell-roughness",
+            "size": [
+              1024,
+              1024
+            ],
+            "colour_space": "Non-Color",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT",
+            "selected_channel": 1
+          },
+          "shape": [
+            1024,
+            1024,
+            1
+          ],
+          "decoded_sha256": "751a396953dba83da0f2882f58537b659616d1d7fc9a0ab27bb17f77423f4259",
+          "minimum": [
+            113
+          ],
+          "maximum": [
+            180
+          ],
+          "uniform": null
+        },
+        "Metallic": {
+          "source": {
+            "operation": "MULTIPLY",
+            "inputs": [
+              {
+                "image": "authored-green-shell-roughness",
+                "size": [
+                  1024,
+                  1024
+                ],
+                "colour_space": "Non-Color",
+                "output": "Color",
+                "interpolation": "Linear",
+                "extension": "REPEAT",
+                "selected_channel": 2
+              },
+              {
+                "constant": 0.6499999761581421
+              }
+            ],
+            "clamp": false
+          },
+          "shape": [
+            1024,
+            1024,
+            1
+          ],
+          "decoded_sha256": "3ca82961ff58a6cf3dd78315755e63ce638baba69892cb5a0cc784a2b4735001",
+          "minimum": [
+            166
+          ],
+          "maximum": [
+            166
+          ],
+          "uniform": [
+            166
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | bronze planar caps": {
+        "Base Color": {
+          "source": {
+            "image": "authored-bronze-cap-colour",
+            "size": [
+              512,
+              512
+            ],
+            "colour_space": "sRGB",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            512,
+            512,
+            3
+          ],
+          "decoded_sha256": "853f8e3029ae69436dcedfeb0d10a9beccd5033e5ba6a25c0bbdd5cfd80a091e",
+          "minimum": [
+            130,
+            112,
+            69
+          ],
+          "maximum": [
+            149,
+            139,
+            110
+          ],
+          "uniform": null
+        },
+        "Roughness": {
+          "source": {
+            "image": "authored-bronze-cap-roughness",
+            "size": [
+              512,
+              512
+            ],
+            "colour_space": "Non-Color",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT",
+            "selected_channel": 1
+          },
+          "shape": [
+            512,
+            512,
+            1
+          ],
+          "decoded_sha256": "e91d2e1184c757e5ccf25b7e71ebcef228b4648001da55aafd0b160cf38368b7",
+          "minimum": [
+            114
+          ],
+          "maximum": [
+            161
+          ],
+          "uniform": null
+        },
+        "Metallic": {
+          "source": {
+            "operation": "MULTIPLY",
+            "inputs": [
+              {
+                "image": "authored-bronze-cap-roughness",
+                "size": [
+                  512,
+                  512
+                ],
+                "colour_space": "Non-Color",
+                "output": "Color",
+                "interpolation": "Linear",
+                "extension": "REPEAT",
+                "selected_channel": 2
+              },
+              {
+                "constant": 0.7300000190734863
+              }
+            ],
+            "clamp": false
+          },
+          "shape": [
+            512,
+            512,
+            1
+          ],
+          "decoded_sha256": "a9d8170aaf482752e8119c800ff0fc136b95be8467277f1b5d666f2d97482739",
+          "minimum": [
+            186
+          ],
+          "maximum": [
+            186
+          ],
+          "uniform": [
+            186
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | dark bronze retaining alloy": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.15000000596046448,
+              0.11999999731779099,
+              0.04800000041723251
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "d71d4ca3a8cdd5024b708572d71d018ac9009a9063e732fba1f3b83fbb3a0d7e",
+          "minimum": [
+            38,
+            31,
+            12
+          ],
+          "maximum": [
+            38,
+            31,
+            12
+          ],
+          "uniform": [
+            38,
+            31,
+            12
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.5400000214576721
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "2d3193691934124461809fb9bc7e671215099fc7d961bfbe31943d40d477c890",
+          "minimum": [
+            138
+          ],
+          "maximum": [
+            138
+          ],
+          "uniform": [
+            138
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.75
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "b12dc850a3b0a3b79fc2255e175241ce20489fe45df93ff35c42c6c348df4fbf",
+          "minimum": [
+            191
+          ],
+          "maximum": [
+            191
+          ],
+          "uniform": [
+            191
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | green planar caps": {
+        "Base Color": {
+          "source": {
+            "image": "authored-green-cap-colour",
+            "size": [
+              512,
+              512
+            ],
+            "colour_space": "sRGB",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            512,
+            512,
+            3
+          ],
+          "decoded_sha256": "e1331d3b2e19216431dcd3b1193904e1ea8dadb570294b499855bf5d0ad3bc15",
+          "minimum": [
+            87,
+            134,
+            112
+          ],
+          "maximum": [
+            120,
+            153,
+            139
+          ],
+          "uniform": null
+        },
+        "Roughness": {
+          "source": {
+            "image": "authored-green-cap-roughness",
+            "size": [
+              512,
+              512
+            ],
+            "colour_space": "Non-Color",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT",
+            "selected_channel": 1
+          },
+          "shape": [
+            512,
+            512,
+            1
+          ],
+          "decoded_sha256": "e91d2e1184c757e5ccf25b7e71ebcef228b4648001da55aafd0b160cf38368b7",
+          "minimum": [
+            114
+          ],
+          "maximum": [
+            161
+          ],
+          "uniform": null
+        },
+        "Metallic": {
+          "source": {
+            "operation": "MULTIPLY",
+            "inputs": [
+              {
+                "image": "authored-green-cap-roughness",
+                "size": [
+                  512,
+                  512
+                ],
+                "colour_space": "Non-Color",
+                "output": "Color",
+                "interpolation": "Linear",
+                "extension": "REPEAT",
+                "selected_channel": 2
+              },
+              {
+                "constant": 0.6499999761581421
+              }
+            ],
+            "clamp": false
+          },
+          "shape": [
+            512,
+            512,
+            1
+          ],
+          "decoded_sha256": "53d42de2b9496859763f801f5c66c68e7fe8fe25f0ec51631bcbc4fc09cbfe5e",
+          "minimum": [
+            166
+          ],
+          "maximum": [
+            166
+          ],
+          "uniform": [
+            166
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | recessed dark insets": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.04800000041723251,
+              0.03500000014901161,
+              0.01600000075995922
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "7fdfa57f1bc5cf169bdeb0c412aa8e7fee9c20a2f8376b9ada2441197dd1a6dc",
+          "minimum": [
+            12,
+            9,
+            4
+          ],
+          "maximum": [
+            12,
+            9,
+            4
+          ],
+          "uniform": [
+            12,
+            9,
+            4
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.6800000071525574
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "22adaf058a2cb668b15cb4c1f30e7cc720bbe38c146544169db35fbf630389c4",
+          "minimum": [
+            173
+          ],
+          "maximum": [
+            173
+          ],
+          "uniform": [
+            173
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.550000011920929
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "9defb0a9e163278be0e05aa01b312ec78cfa3726869503385e76e3a4b7950648",
+          "minimum": [
+            140
+          ],
+          "maximum": [
+            140
+          ],
+          "uniform": [
+            140
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | weathered bronze casing": {
+        "Base Color": {
+          "source": {
+            "image": "authored-bronze-shell-colour",
+            "size": [
+              1024,
+              1024
+            ],
+            "colour_space": "sRGB",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT"
+          },
+          "shape": [
+            1024,
+            1024,
+            3
+          ],
+          "decoded_sha256": "8bac638c8a5d05fa10a92f35538eef8338ee6f6f69d32d11ff44e9cb5f4bb59e",
+          "minimum": [
+            86,
+            96,
+            66
+          ],
+          "maximum": [
+            149,
+            139,
+            111
+          ],
+          "uniform": null
+        },
+        "Roughness": {
+          "source": {
+            "image": "authored-bronze-shell-roughness",
+            "size": [
+              1024,
+              1024
+            ],
+            "colour_space": "Non-Color",
+            "output": "Color",
+            "interpolation": "Linear",
+            "extension": "REPEAT",
+            "selected_channel": 1
+          },
+          "shape": [
+            1024,
+            1024,
+            1
+          ],
+          "decoded_sha256": "773f6a0ffdc59950d004ef56ddc922b83299946497068f7c71b00b0068c1ef14",
+          "minimum": [
+            113
+          ],
+          "maximum": [
+            214
+          ],
+          "uniform": null
+        },
+        "Metallic": {
+          "source": {
+            "operation": "MULTIPLY",
+            "inputs": [
+              {
+                "image": "authored-bronze-shell-roughness",
+                "size": [
+                  1024,
+                  1024
+                ],
+                "colour_space": "Non-Color",
+                "output": "Color",
+                "interpolation": "Linear",
+                "extension": "REPEAT",
+                "selected_channel": 2
+              },
+              {
+                "constant": 0.7300000190734863
+              }
+            ],
+            "clamp": false
+          },
+          "shape": [
+            1024,
+            1024,
+            1
+          ],
+          "decoded_sha256": "4dc848d29acb15f615b4db27c3be1cc912abb6ebc6abc3f2e1841368fef69983",
+          "minimum": [
+            186
+          ],
+          "maximum": [
+            186
+          ],
+          "uniform": [
+            186
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "RI20 | worn brass fittings": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.41999998688697815,
+              0.28999999165534973,
+              0.08500000089406967
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "a46057eba72f2e1dfa7e84c1a62495953fef1b1bfa2dd06c58b40646895a1cc1",
+          "minimum": [
+            107,
+            74,
+            22
+          ],
+          "maximum": [
+            107,
+            74,
+            22
+          ],
+          "uniform": [
+            107,
+            74,
+            22
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.49000000953674316
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "d10b36aa74a59bcf4a88185837f658afaf3646eff2bb16c3928d0e9335e945d2",
+          "minimum": [
+            125
+          ],
+          "maximum": [
+            125
+          ],
+          "uniform": [
+            125
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.7799999713897705
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "3340883aad3038dd993b3c94d2d32c3b20e07859969aca411f7f93ab8847c746",
+          "minimum": [
+            199
+          ],
+          "maximum": [
+            199
+          ],
+          "uniform": [
+            199
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      }
+    },
+    "decoded_image_datablocks": 8
+  },
+  "comparisons": {
+    "RI20 | aged green lower alloy": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    },
+    "RI20 | bronze planar caps": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    },
+    "RI20 | dark bronze retaining alloy": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    },
+    "RI20 | green planar caps": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    },
+    "RI20 | recessed dark insets": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    },
+    "RI20 | weathered bronze casing": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    },
+    "RI20 | worn brass fittings": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    }
+  },
+  "missing_materials": [],
+  "extra_materials": [],
+  "material_bindings_equal": true,
+  "glb_material_names": [
+    "RI20 | weathered bronze casing",
+    "RI20 | bronze planar caps",
+    "RI20 | worn brass fittings",
+    "RI20 | aged green lower alloy",
+    "RI20 | green planar caps",
+    "RI20 | recessed dark insets",
+    "RI20 | dark bronze retaining alloy"
+  ],
+  "verified_four_input_aliases": {},
+  "material_bindings_equal_under_verified_four_input_aliases": true,
+  "source_assets_unchanged": true,
+  "final_visual_acceptance": false
+}

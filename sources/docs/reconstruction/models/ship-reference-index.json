@@ -1,0 +1,2299 @@
+{
+  "schema_version": 1,
+  "issue": 952,
+  "definition_count": 41,
+  "cultures": {
+    "terran": 10,
+    "rigellian": 5,
+    "braccatian": 5,
+    "mikotaj": 5,
+    "artemian": 6,
+    "mauna": 6,
+    "achaean": 4
+  },
+  "reference_images": "Original pixels remain only in ignored artifacts and the legacy installation.",
+  "ship_animation_rules": {
+    "activeModeMask": 240,
+    "minimumVisibleAltitude": -25,
+    "evenSurfaceFrameShipIds": [
+      "openfa:transporter",
+      "openfa:command-cruiser",
+      "openfa:ship/rigellian/transportation",
+      "openfa:ship/braccatian/heartsblood",
+      "openfa:ship/mikotaj/ruth-strivakh",
+      "openfa:ship/artemian/hardcore",
+      "openfa:ship/mauna/transportation-craft-type-3",
+      "openfa:ship/achaean/dedicated-ore-transporter"
+    ],
+    "fixedScaleShipIds": [
+      "openfa:space-dock",
+      "openfa:ship/rigellian/observatory",
+      "openfa:ship/braccatian/skymech",
+      "openfa:ship/mikotaj/na-xanth",
+      "openfa:ship/artemian/geostationary-construction",
+      "openfa:ship/mauna/orbital-construction-area",
+      "openfa:ship/achaean/orbital-shipyard"
+    ],
+    "surfaceHeadingOffset": 4,
+    "evenSurfaceHeadingOffset": 8,
+    "launchHeadingOffset": 8,
+    "headingShift": 3,
+    "headingMask": 31,
+    "evenHeadingMask": 30,
+    "evenLaunchFrameShipIds": [
+      "openfa:transporter",
+      "openfa:command-cruiser"
+    ],
+    "fixedScale256": 256,
+    "directionFrameMask": 31,
+    "directionFrameCount": 32
+  },
+  "ships": [
+    {
+      "id": "openfa:assault-fighter",
+      "global_type": 0,
+      "name": "Assault Fighter",
+      "culture": "terran",
+      "source_entry": "PS0A.256",
+      "source_sha256": "6807bc063ac70acf48cc812a2b9a0d69a251ed5d0113463e6678275b08b5f220",
+      "decoded_metadata_sha256": "fd0dc2f494f41efcf1c32611b148d4755af839febd21809289c21fce9a826c5d",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "PS0A/000.png",
+          "png_sha256": "66953cdd8c3685277cc51e97519f7593a858fc4c5dc936c69069a4ee96a04075",
+          "pixel_width": 18,
+          "pixel_height": 11
+        },
+        {
+          "index": 8,
+          "png": "PS0A/008.png",
+          "png_sha256": "724a730852f2ff08d76bf3bf1a38abb19c45536d2113d96e7486c2edf7f72d25",
+          "pixel_width": 18,
+          "pixel_height": 11
+        },
+        {
+          "index": 16,
+          "png": "PS0A/016.png",
+          "png_sha256": "8db091bee3d73a6b8323e1e0ac3c9517cd11d24000c330840bb000f9503bcff6",
+          "pixel_width": 17,
+          "pixel_height": 11
+        },
+        {
+          "index": 24,
+          "png": "PS0A/024.png",
+          "png_sha256": "b44ba868c79e24cada90bf9d63b0d155773046bbe19bbe7973e3ba3235854d86",
+          "pixel_width": 17,
+          "pixel_height": 11
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [
+        {
+          "source_directory": "_MA",
+          "source_entry": "PS00.VID",
+          "source_sha256": "fe9ac1dc1cec1f0f9c6ceb365026151f174be65b6f445c95acd3c66592f3b6a8",
+          "decoded": true,
+          "frame_count": 60,
+          "frames": [
+            {
+              "index": 0,
+              "png": "artifacts/ship-reference-study/references/videos/PS00/fe9ac1dc1cec/frames/000.png",
+              "png_sha256": "e38f03e5fc19f1442d697d48e1d72f6006bde8bb0f11d4b37efb1be44d1ec358"
+            },
+            {
+              "index": 15,
+              "png": "artifacts/ship-reference-study/references/videos/PS00/fe9ac1dc1cec/frames/015.png",
+              "png_sha256": "2f1f50d633cf01478a3ea9d976be9e20a1027b5224754d14eefc7471ffa9be82"
+            },
+            {
+              "index": 30,
+              "png": "artifacts/ship-reference-study/references/videos/PS00/fe9ac1dc1cec/frames/030.png",
+              "png_sha256": "5b9e30efcbf38174a95d680eed23e67247c6c6f776b59a239fc1309e95254483"
+            },
+            {
+              "index": 45,
+              "png": "artifacts/ship-reference-study/references/videos/PS00/fe9ac1dc1cec/frames/045.png",
+              "png_sha256": "1d74189adfc7aa26af1fd8c7eb6ed66183efd1e19ec31e3fb65d54d7b13143c7"
+            },
+            {
+              "index": 59,
+              "png": "artifacts/ship-reference-study/references/videos/PS00/fe9ac1dc1cec/frames/059.png",
+              "png_sha256": "7c95dd03d209f840745b3465b1e2ece639b85c0be7408310f344044485df3425"
+            }
+          ]
+        }
+      ],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:combat-eagle",
+      "global_type": 1,
+      "name": "Combat Eagle",
+      "culture": "terran",
+      "source_entry": "PS1A.256",
+      "source_sha256": "2a43ec61b99cffdd70a8d1e3c055075e1454356612a124d3c8648a3e22b8308e",
+      "decoded_metadata_sha256": "6c0dc29431d26bf59d57812ad9549aba6ad0c376f1dcbd05406b690468b23ee6",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "PS1A/000.png",
+          "png_sha256": "e641d75f2ba63728b4e09155a5fc73e74c9ea86fed85195fe89a3585582a7d54",
+          "pixel_width": 17,
+          "pixel_height": 11
+        },
+        {
+          "index": 8,
+          "png": "PS1A/008.png",
+          "png_sha256": "2af22f9ad2787d97b3545be9cd4257a504ef7956e143f386b5d311edbe0fbfd3",
+          "pixel_width": 17,
+          "pixel_height": 10
+        },
+        {
+          "index": 16,
+          "png": "PS1A/016.png",
+          "png_sha256": "8cb1e101fa8dd62300737f4adcbc8f5d0aa27f67ae364d2c2a53676c283c4f5b",
+          "pixel_width": 17,
+          "pixel_height": 10
+        },
+        {
+          "index": 24,
+          "png": "PS1A/024.png",
+          "png_sha256": "c56fbb1e245a6336d9d79ca0713977e10e10ca93fd0acf48824e9c23c7a76719",
+          "pixel_width": 17,
+          "pixel_height": 11
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [
+        {
+          "source_directory": "_MA",
+          "source_entry": "PS01.VID",
+          "source_sha256": "d8ef606442e58eeacb923e7ab8a3c70f9ee2ff2004de4169e6f830dd05ed254c",
+          "decoded": true,
+          "frame_count": 60,
+          "frames": [
+            {
+              "index": 0,
+              "png": "artifacts/ship-reference-study/references/videos/PS01/d8ef606442e5/frames/000.png",
+              "png_sha256": "4c663065a6f791963fd3e3e06536d59f92a91e4fcd1d218260a99d810c89aa90"
+            },
+            {
+              "index": 15,
+              "png": "artifacts/ship-reference-study/references/videos/PS01/d8ef606442e5/frames/015.png",
+              "png_sha256": "b6c9f570fe1c635138817bf55fc4dfcdf746ac8a972c4864fd7943eec45e8759"
+            },
+            {
+              "index": 30,
+              "png": "artifacts/ship-reference-study/references/videos/PS01/d8ef606442e5/frames/030.png",
+              "png_sha256": "755c278aae2d722ef5b50f002e3d4e19f3549f2b5ca32d4a3bf8bcf8d15fdeb6"
+            },
+            {
+              "index": 45,
+              "png": "artifacts/ship-reference-study/references/videos/PS01/d8ef606442e5/frames/045.png",
+              "png_sha256": "72df0c9e82f99e4a0192538d7bbdf62d3f253a5d852cf19d86d54a278c985297"
+            },
+            {
+              "index": 59,
+              "png": "artifacts/ship-reference-study/references/videos/PS01/d8ef606442e5/frames/059.png",
+              "png_sha256": "2a09be30cf57ffe25fed19e338a0df2a595b715e0184e23bfa1e7be298048d3e"
+            }
+          ]
+        }
+      ],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:scoutship",
+      "global_type": 2,
+      "name": "Scoutship",
+      "culture": "terran",
+      "source_entry": "PS2A.256",
+      "source_sha256": "e38d9b24c70cffdb7945e80bf9127634807ec68a496f49992f83777f50bb69b9",
+      "decoded_metadata_sha256": "fafe4131d2dab8f446539761450e74215c3f4a32b7119d3874558fc855f4c5c1",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "PS2A/000.png",
+          "png_sha256": "3183823fc6373e1d22252c0274dccd0876bc1cb3d2c7a827692180d609199fdd",
+          "pixel_width": 17,
+          "pixel_height": 12
+        },
+        {
+          "index": 8,
+          "png": "PS2A/008.png",
+          "png_sha256": "f2d322adea84667117353c957009aa64c3a382704c9d938bdd6199491c56e2fa",
+          "pixel_width": 18,
+          "pixel_height": 12
+        },
+        {
+          "index": 16,
+          "png": "PS2A/016.png",
+          "png_sha256": "7a1db76fb1817654f71f9a5ccac1ac535bf5b50cafaf47bb6d57a13d95170d0e",
+          "pixel_width": 18,
+          "pixel_height": 12
+        },
+        {
+          "index": 24,
+          "png": "PS2A/024.png",
+          "png_sha256": "7da2d27adc85eb7e4df600810ce6e0c077bdf42f03c607e19b0622b617798f69",
+          "pixel_width": 18,
+          "pixel_height": 12
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [
+        {
+          "source_directory": "_MA",
+          "source_entry": "PS02.VID",
+          "source_sha256": "e41bee5972aac468153cddc602dffaf5802c38ef9c668869451d6fa6c8fb4dc8",
+          "decoded": true,
+          "frame_count": 60,
+          "frames": [
+            {
+              "index": 0,
+              "png": "artifacts/ship-reference-study/references/videos/PS02/e41bee5972aa/frames/000.png",
+              "png_sha256": "9c7aba425dd6a034c06210544dc6d4cefd9efc04d75cce57c5aab0e2a4586db1"
+            },
+            {
+              "index": 15,
+              "png": "artifacts/ship-reference-study/references/videos/PS02/e41bee5972aa/frames/015.png",
+              "png_sha256": "a387b06b7742a6c709174a6f05f4a2d92182314c2556e34fe2a3f6054f5672c5"
+            },
+            {
+              "index": 30,
+              "png": "artifacts/ship-reference-study/references/videos/PS02/e41bee5972aa/frames/030.png",
+              "png_sha256": "d64e24319b46e00e4eb5d9484b5ed0ca83d7febeb9a737f0eff8c40fd655cedd"
+            },
+            {
+              "index": 45,
+              "png": "artifacts/ship-reference-study/references/videos/PS02/e41bee5972aa/frames/045.png",
+              "png_sha256": "5dd4907924e0b3d9c4026df436e06ad4b0c57d8e34ab848a50dc54242be9f4db"
+            },
+            {
+              "index": 59,
+              "png": "artifacts/ship-reference-study/references/videos/PS02/e41bee5972aa/frames/059.png",
+              "png_sha256": "fbee425f91315b69fff01ebd0e483fe08c48e5f6ff348cdce2001f78f4242ac6"
+            }
+          ]
+        }
+      ],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:destructor",
+      "global_type": 3,
+      "name": "Destructor",
+      "culture": "terran",
+      "source_entry": "PS3C.256",
+      "source_sha256": "4728f5f1bc1babef43a127a776d70cdb0c6f87c2b8827ff83ec92264556b0b3d",
+      "decoded_metadata_sha256": "54b1eb3aa7ebd3c559b79f4fe5796f6a42dd10584866e8c80c2c1ba841e38e5a",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "PS3C/000.png",
+          "png_sha256": "728c088e3c9ee99d94c2924bbd14a4932db44217e78cd1943b651c943dbed253",
+          "pixel_width": 31,
+          "pixel_height": 11
+        },
+        {
+          "index": 8,
+          "png": "PS3C/008.png",
+          "png_sha256": "d9bafafa9eb2376bd098eda14d97d76998748e9156b5b74bdc6822d5ae8228db",
+          "pixel_width": 32,
+          "pixel_height": 14
+        },
+        {
+          "index": 16,
+          "png": "PS3C/016.png",
+          "png_sha256": "58bc5b84afffe86ecc2e75d947d3b2256a388568600249f80631af16eacdb9d7",
+          "pixel_width": 31,
+          "pixel_height": 14
+        },
+        {
+          "index": 24,
+          "png": "PS3C/024.png",
+          "png_sha256": "148377f83b99046eaa24a7fe704876432fbad747ec092fea59db36f0050adbb1",
+          "pixel_width": 33,
+          "pixel_height": 11
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [
+        {
+          "source_directory": "_MA",
+          "source_entry": "PS03.VID",
+          "source_sha256": "8424d386882ffe2561b29310aa7abe533967d8d471738f190e9c1dd00da72c39",
+          "decoded": true,
+          "frame_count": 60,
+          "frames": [
+            {
+              "index": 0,
+              "png": "artifacts/ship-reference-study/references/videos/PS03/8424d386882f/frames/000.png",
+              "png_sha256": "45f9ab815fe0a8e8ae0d02f80bd11bc9833e0d74d6a0c34a4f683fed062bd933"
+            },
+            {
+              "index": 15,
+              "png": "artifacts/ship-reference-study/references/videos/PS03/8424d386882f/frames/015.png",
+              "png_sha256": "4aa6e42b6f14a3bbddbbe04e63cef90c703398c7d3a41258e6d53af32eb49e24"
+            },
+            {
+              "index": 30,
+              "png": "artifacts/ship-reference-study/references/videos/PS03/8424d386882f/frames/030.png",
+              "png_sha256": "1a002f532ee8e976f7bb047208e598f1e92be0a9d2b221b40ca52de943929c49"
+            },
+            {
+              "index": 45,
+              "png": "artifacts/ship-reference-study/references/videos/PS03/8424d386882f/frames/045.png",
+              "png_sha256": "6d209151d71f2c93698822694d8a6d0780d1cf4b49d83d2ef39da5379d5e59e7"
+            },
+            {
+              "index": 59,
+              "png": "artifacts/ship-reference-study/references/videos/PS03/8424d386882f/frames/059.png",
+              "png_sha256": "faac9da17e67575d731790c2c6d13a76d5251d946f127c6bc644a04351fd1c53"
+            }
+          ]
+        }
+      ],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:terminator",
+      "global_type": 4,
+      "name": "Terminator",
+      "culture": "terran",
+      "source_entry": "PS4C.256",
+      "source_sha256": "0b59fedc9cbc9f65cc74b5a7efc21378d7fc90df860cb390573304e218740e52",
+      "decoded_metadata_sha256": "f6b75e056e939259b299a5a14b5674542d07ee264bd42d8e16effc0f0b7e4200",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "PS4C/000.png",
+          "png_sha256": "96413dd6ee5f89b479a9d224f354cf68fe674b6814259a9fc8c9f8800b908c06",
+          "pixel_width": 61,
+          "pixel_height": 20
+        },
+        {
+          "index": 8,
+          "png": "PS4C/008.png",
+          "png_sha256": "f5d39b462002ef5ff11b579c8f6609b6d35f989ffa5df6c55dba24e204bbb101",
+          "pixel_width": 61,
+          "pixel_height": 18
+        },
+        {
+          "index": 16,
+          "png": "PS4C/016.png",
+          "png_sha256": "9dd8bdecdfa800a97b1fd4fc7e2f47f7c4cf43a5d37ffdd8a533469ce0b6f426",
+          "pixel_width": 61,
+          "pixel_height": 18
+        },
+        {
+          "index": 24,
+          "png": "PS4C/024.png",
+          "png_sha256": "996ee14a147961ce7e073ec0938bac15adce4cdd8a366f86f6161656451c25b9",
+          "pixel_width": 61,
+          "pixel_height": 20
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [
+        {
+          "source_directory": "_MA",
+          "source_entry": "PS04.VID",
+          "source_sha256": "57e0da537a001ef23fcade7f02c4b63a23fb0ed96c4d23d6ad959b4d5b9dae9b",
+          "decoded": true,
+          "frame_count": 60,
+          "frames": [
+            {
+              "index": 0,
+              "png": "artifacts/ship-reference-study/references/videos/PS04/57e0da537a00/frames/000.png",
+              "png_sha256": "0d1ef0787e285b6ba4607c268e63006adba9768f0e36f6de6883c2d418d4e9b4"
+            },
+            {
+              "index": 15,
+              "png": "artifacts/ship-reference-study/references/videos/PS04/57e0da537a00/frames/015.png",
+              "png_sha256": "2640e65a08bf9a98d7ae602c2f00599b25e809c98b21e84abef8642af4b41a17"
+            },
+            {
+              "index": 30,
+              "png": "artifacts/ship-reference-study/references/videos/PS04/57e0da537a00/frames/030.png",
+              "png_sha256": "6278277c2fb5c003c8c1b047c0951c316c72e27d1dc6c175fdf5084fd428b38e"
+            },
+            {
+              "index": 45,
+              "png": "artifacts/ship-reference-study/references/videos/PS04/57e0da537a00/frames/045.png",
+              "png_sha256": "c009f47f62303ecb7f1d104b9a23c7df7513954b88037d348303483ac2302bc8"
+            },
+            {
+              "index": 59,
+              "png": "artifacts/ship-reference-study/references/videos/PS04/57e0da537a00/frames/059.png",
+              "png_sha256": "c4fd675d244bc664f2e2371fa77126e289bb1c6b3d2b9232b35c1d0c1e3e0007"
+            }
+          ]
+        }
+      ],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:transporter",
+      "global_type": 5,
+      "name": "Transporter",
+      "culture": "terran",
+      "source_entry": "PS5C.256",
+      "source_sha256": "97ac0a9cb9e567bef18ae40d940124a5bfb2a8a3a0f7bcd906e37acb95695449",
+      "decoded_metadata_sha256": "6e9021cbb38089bb8d8818f2b44dd6c0c1b0d5d557b3f1adbc813cdde1a97981",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "PS5C/000.png",
+          "png_sha256": "138f9d84571eb6cd53e300f703c93c6f37211911e949d9999fd2277fca6a3f5d",
+          "pixel_width": 95,
+          "pixel_height": 32
+        },
+        {
+          "index": 8,
+          "png": "PS5C/008.png",
+          "png_sha256": "f5102c34c8cae0d24ca5ee298e0dfcba279b3ba5145c2e840062d270e1257161",
+          "pixel_width": 94,
+          "pixel_height": 38
+        },
+        {
+          "index": 16,
+          "png": "PS5C/016.png",
+          "png_sha256": "9881987b737d2b68881b44d5a7c45040112527bf13d72f7fb67a5a68143cd825",
+          "pixel_width": 95,
+          "pixel_height": 39
+        },
+        {
+          "index": 24,
+          "png": "PS5C/024.png",
+          "png_sha256": "986b5d3831c72b087b3f5f94f5a28fd1550c433cda5f389e550067e8e4e350d8",
+          "pixel_width": 94,
+          "pixel_height": 32
+        }
+      ],
+      "runtime_even_heading_only": true,
+      "runtime_fixed_scale": false,
+      "videos": [
+        {
+          "source_directory": "_MA",
+          "source_entry": "PS05.VID",
+          "source_sha256": "310ab9c2267bba0d69a1b5eafecb3cfdb5d2b14d28aee60038d9e1c85fcfa32a",
+          "decoded": true,
+          "frame_count": 60,
+          "frames": [
+            {
+              "index": 0,
+              "png": "artifacts/ship-reference-study/references/videos/PS05/310ab9c2267b/frames/000.png",
+              "png_sha256": "891570bcc6499088d7f0e4a31bbb5751d2f5f3605e0a87eb9f4e5f50f4e1eb6b"
+            },
+            {
+              "index": 15,
+              "png": "artifacts/ship-reference-study/references/videos/PS05/310ab9c2267b/frames/015.png",
+              "png_sha256": "b0df901babaca0d1cc9c676cb87bb65884a4b0a486d075d9d8ef2201eeeff457"
+            },
+            {
+              "index": 30,
+              "png": "artifacts/ship-reference-study/references/videos/PS05/310ab9c2267b/frames/030.png",
+              "png_sha256": "5bc53a2b086d37189f7e9e2fa1e57cd5ffa40ed31a1c17a1d3cdd0c78792416a"
+            },
+            {
+              "index": 45,
+              "png": "artifacts/ship-reference-study/references/videos/PS05/310ab9c2267b/frames/045.png",
+              "png_sha256": "b08ceb168c54e98b08d6d175d31e7829b256cfc46ae7a5f4b68d4b9e788bfa65"
+            },
+            {
+              "index": 59,
+              "png": "artifacts/ship-reference-study/references/videos/PS05/310ab9c2267b/frames/059.png",
+              "png_sha256": "a5273601af7995a5207d6adc976f0572276415ce1a65c4f146ae0b57edab8f5a"
+            }
+          ]
+        }
+      ],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:fleet-battleship",
+      "global_type": 6,
+      "name": "Fleet Battleship",
+      "culture": "terran",
+      "source_entry": "PS6C.256",
+      "source_sha256": "3b5122fd617e03e0be71f1b47100d6c968bb1a97de785a13a18e69a0c69c2694",
+      "decoded_metadata_sha256": "061c82b5b8733adc7007a95c38738eb9a35861042f2df32ff58fe040c5fdb4f1",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "PS6C/000.png",
+          "png_sha256": "ceb31a1c7cde379eaf2b7cfbc189d585db030ad8588fa560db32e755c3790aff",
+          "pixel_width": 77,
+          "pixel_height": 22
+        },
+        {
+          "index": 8,
+          "png": "PS6C/008.png",
+          "png_sha256": "2576da05944687a42fdb0d4503935fb7b57c78d3796812981d3c7fa8cac50ba5",
+          "pixel_width": 78,
+          "pixel_height": 22
+        },
+        {
+          "index": 16,
+          "png": "PS6C/016.png",
+          "png_sha256": "9b618394ffcee223ccff6aff01014d6dbf3e922deaebd46de2f9c9f80a8124b3",
+          "pixel_width": 77,
+          "pixel_height": 22
+        },
+        {
+          "index": 24,
+          "png": "PS6C/024.png",
+          "png_sha256": "1d29913dd4d4400882200f45890cdbaa366f67b9738d5946802751ffc63d0156",
+          "pixel_width": 77,
+          "pixel_height": 22
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [
+        {
+          "source_directory": "_MA",
+          "source_entry": "PS06.VID",
+          "source_sha256": "35fd484a999b6a14f1e929b65c391349fb9a03703e580ae36018783c698d395a",
+          "decoded": true,
+          "frame_count": 60,
+          "frames": [
+            {
+              "index": 0,
+              "png": "artifacts/ship-reference-study/references/videos/PS06/35fd484a999b/frames/000.png",
+              "png_sha256": "612ee140aa9f15d5cf3706597f7875e4d42f6fc3cf9fb3f5003e184985f72816"
+            },
+            {
+              "index": 15,
+              "png": "artifacts/ship-reference-study/references/videos/PS06/35fd484a999b/frames/015.png",
+              "png_sha256": "101669e8e49d359677cc8dba2ebe6678de005a4d0d4e52c174c7c852a7c0cd6e"
+            },
+            {
+              "index": 30,
+              "png": "artifacts/ship-reference-study/references/videos/PS06/35fd484a999b/frames/030.png",
+              "png_sha256": "77eb1f0983ec179541ee68b672faa2299e2182f2667132d7843f83b49616d974"
+            },
+            {
+              "index": 45,
+              "png": "artifacts/ship-reference-study/references/videos/PS06/35fd484a999b/frames/045.png",
+              "png_sha256": "a6d5468dc96e70de660db775ec7c1efe30ddca39dd7d2a362d54cf1cbc840cfe"
+            },
+            {
+              "index": 59,
+              "png": "artifacts/ship-reference-study/references/videos/PS06/35fd484a999b/frames/059.png",
+              "png_sha256": "92379d7e9c95ec849f1b7a877fb0ff65790e35a9041673237cc0e242ba45af40"
+            }
+          ]
+        }
+      ],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:space-dock",
+      "global_type": 7,
+      "name": "Space Dock",
+      "culture": "terran",
+      "source_entry": "PS7C.256",
+      "source_sha256": "8053c54b51572404be2a8a87178bc67253ef68b8d2f2030863099f6d40ee3a7a",
+      "decoded_metadata_sha256": "3bc65cb4814c5224b0a885f3146e7cc98af58fff6a9bbeb88de95cacd302d3af",
+      "frame_count": 2,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "fixed-state-samples; not four spatial views",
+      "frames": [
+        {
+          "index": 0,
+          "png": "PS7C/000.png",
+          "png_sha256": "4157f2a6edde2927e21410676159b9902b16ce4962a74cfc7d78db26fe975d4e",
+          "pixel_width": 113,
+          "pixel_height": 178
+        },
+        {
+          "index": 1,
+          "png": "PS7C/001.png",
+          "png_sha256": "eed312c827271633cea570b3793745a86eb46b37530342ec7c98bf490c1a364a",
+          "pixel_width": 117,
+          "pixel_height": 162
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": true,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:command-cruiser",
+      "global_type": 8,
+      "name": "Command Cruiser",
+      "culture": "terran",
+      "source_entry": "PS8C.256",
+      "source_sha256": "d06a24e9ecb5f379d1922e337d3431d3147e7490fb33fd3ef3ee3413bcc3148b",
+      "decoded_metadata_sha256": "126dcc7a793c656ca95d28f95e94a55c43a7317dd32ad77ceaf5653b62d4395c",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "PS8C/000.png",
+          "png_sha256": "3d45610d3c558b6507dba77786852d69a3614cc1322036608befdad23af4988f",
+          "pixel_width": 128,
+          "pixel_height": 38
+        },
+        {
+          "index": 8,
+          "png": "PS8C/008.png",
+          "png_sha256": "4b7ea29a4918c3dfa432571d300a4abc1e51ccc95229af69b308c43c46f2ff6b",
+          "pixel_width": 127,
+          "pixel_height": 42
+        },
+        {
+          "index": 16,
+          "png": "PS8C/016.png",
+          "png_sha256": "f6a22f3528bb83f5d0849ca0bc9cd2e2ef7ee45cf8adf4abf3d7c20e2170d915",
+          "pixel_width": 128,
+          "pixel_height": 44
+        },
+        {
+          "index": 24,
+          "png": "PS8C/024.png",
+          "png_sha256": "57178528afa2b42d096df117589b7eba0914deada37a8a095760a49c6bc48577",
+          "pixel_width": 126,
+          "pixel_height": 38
+        }
+      ],
+      "runtime_even_heading_only": true,
+      "runtime_fixed_scale": false,
+      "videos": [
+        {
+          "source_directory": "_MA",
+          "source_entry": "PS08.VID",
+          "source_sha256": "cd4609e826cddf1d285b6c28eb3653b94d83ccf5df117598325b48b34f8b1d7b",
+          "decoded": true,
+          "frame_count": 60,
+          "frames": [
+            {
+              "index": 0,
+              "png": "artifacts/ship-reference-study/references/videos/PS08/cd4609e826cd/frames/000.png",
+              "png_sha256": "dcc2895a6ed36b58889883c0b9f6191cb31477a626b72ab3182b8004c06445e1"
+            },
+            {
+              "index": 15,
+              "png": "artifacts/ship-reference-study/references/videos/PS08/cd4609e826cd/frames/015.png",
+              "png_sha256": "c1a00c3e9795ad43bce4675c5106553d67394b43e4dfe9b16fa09a68e666861a"
+            },
+            {
+              "index": 30,
+              "png": "artifacts/ship-reference-study/references/videos/PS08/cd4609e826cd/frames/030.png",
+              "png_sha256": "2a1dd70694cf9af27a516cab5849ddeca5a20332e62aaca508d6d70ae6ccb691"
+            },
+            {
+              "index": 45,
+              "png": "artifacts/ship-reference-study/references/videos/PS08/cd4609e826cd/frames/045.png",
+              "png_sha256": "d54222f233faeb07049cb3ca7b295df21c5cc72f68730e0b195796776508930f"
+            },
+            {
+              "index": 59,
+              "png": "artifacts/ship-reference-study/references/videos/PS08/cd4609e826cd/frames/059.png",
+              "png_sha256": "614b0fa2aca42fdeff833e359e6ff372f25b65b70d87f48dff57bb0eba5d0f26"
+            }
+          ]
+        }
+      ],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:spy-satellite",
+      "global_type": 9,
+      "name": "Spy Satellite",
+      "culture": "terran",
+      "source_entry": "PS9C.256",
+      "source_sha256": "ff9cdc05ed508d44aced07c81ddb347cc414e5b3c87466c01c87a35b9140574a",
+      "decoded_metadata_sha256": "68ec47feb30915c0721eefedf96a944e860e0904b4c61e39c0a0ddd59c9e1345",
+      "frame_count": 1,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "fixed-state-samples; not four spatial views",
+      "frames": [
+        {
+          "index": 0,
+          "png": "PS9C/000.png",
+          "png_sha256": "896b0c802504bcccd0a01c98334692720af64d95fdb27687182bb4c22e8b8d1b",
+          "pixel_width": 15,
+          "pixel_height": 13
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [
+        {
+          "source_directory": "_MA",
+          "source_entry": "PS09.VID",
+          "source_sha256": "2aaf5b62fa908d7d71aae7d403d8d72ad838e51fe462d80754380cba5f27df99",
+          "decoded": true,
+          "frame_count": 60,
+          "frames": [
+            {
+              "index": 0,
+              "png": "artifacts/ship-reference-study/references/videos/PS09/2aaf5b62fa90/frames/000.png",
+              "png_sha256": "6cca5a5826bc5e6a3c209b3dfeba13188a688bf90bc788911cf54836d6e31b1d"
+            },
+            {
+              "index": 15,
+              "png": "artifacts/ship-reference-study/references/videos/PS09/2aaf5b62fa90/frames/015.png",
+              "png_sha256": "e43675deabbb7bb5b71c33bf596e78a60e31ca4e3f997fd164f8970e4e093e74"
+            },
+            {
+              "index": 30,
+              "png": "artifacts/ship-reference-study/references/videos/PS09/2aaf5b62fa90/frames/030.png",
+              "png_sha256": "dc5243dca04766fa9c1e35ca17daa4415bb621c382781216c56ecc49c545e7d3"
+            },
+            {
+              "index": 45,
+              "png": "artifacts/ship-reference-study/references/videos/PS09/2aaf5b62fa90/frames/045.png",
+              "png_sha256": "1278ee95f63ceaf14aae3d1076a9e2428918e2d2a2f12ca23e349d3d684b8d00"
+            },
+            {
+              "index": 59,
+              "png": "artifacts/ship-reference-study/references/videos/PS09/2aaf5b62fa90/frames/059.png",
+              "png_sha256": "9f6b2df3161fc64f95bd1f69f7c4abea8f8867f7ea3b2a13253c522bcf732e67"
+            }
+          ]
+        }
+      ],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/rigellian/lazzaro-research",
+      "global_type": 10,
+      "name": "Lazzaro Research",
+      "culture": "rigellian",
+      "source_entry": "RI0A.256",
+      "source_sha256": "76c5978ea3f1b57d17a65bbcceb955fc931ae60f888f25110aabf322cd98dc39",
+      "decoded_metadata_sha256": "8821014f82b4984d5c96c6ce748843a1eb9d2cae0a84deedc93438c951148ed5",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "RI0A/000.png",
+          "png_sha256": "651b64a86b14d669168431b5820c4e5dda2087bc16a5d92f90e03ead30322c56",
+          "pixel_width": 14,
+          "pixel_height": 9
+        },
+        {
+          "index": 8,
+          "png": "RI0A/008.png",
+          "png_sha256": "479763530b086875bd71430ada87d64d1f956b13ec27cab9bc7d167be01d129e",
+          "pixel_width": 14,
+          "pixel_height": 9
+        },
+        {
+          "index": 16,
+          "png": "RI0A/016.png",
+          "png_sha256": "f5ed0fa418ace38333ecaa710f79ba2b0aff39c60ead52a12fb06436d6c0153c",
+          "pixel_width": 14,
+          "pixel_height": 9
+        },
+        {
+          "index": 24,
+          "png": "RI0A/024.png",
+          "png_sha256": "e7ea155992d76d71e37ec3933c58f3018b9a61ca68e8c5af5d85cc03f4d2ba73",
+          "pixel_width": 14,
+          "pixel_height": 9
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/rigellian/delphini-assault",
+      "global_type": 11,
+      "name": "Delphini Assault",
+      "culture": "rigellian",
+      "source_entry": "RI1C.256",
+      "source_sha256": "b669740561e506e75e184af1d5c30a1a08908d22c5de213d75ba1a3b32398d1b",
+      "decoded_metadata_sha256": "bb0933e19d9375a8f16f8503eab0a580404239468135727802a1142721da0735",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "RI1C/000.png",
+          "png_sha256": "1bd9921f6ce3103a8f9a9e378f43e2acd9655a6987ec0021a99ba22df1baa016",
+          "pixel_width": 31,
+          "pixel_height": 15
+        },
+        {
+          "index": 8,
+          "png": "RI1C/008.png",
+          "png_sha256": "78daf3fc6a9c4aaa2354541d8f7a4c6e2b34265729f22101924c458c5a65da16",
+          "pixel_width": 32,
+          "pixel_height": 14
+        },
+        {
+          "index": 16,
+          "png": "RI1C/016.png",
+          "png_sha256": "fc84746fa4d92051cc2365252f68ef18fe541cfd56eadfc03de1dc2919bc67ed",
+          "pixel_width": 33,
+          "pixel_height": 14
+        },
+        {
+          "index": 24,
+          "png": "RI1C/024.png",
+          "png_sha256": "03f4fa07a4896c3d6292b32df34144a0239dc1df318751753fc63b11d5a4dc11",
+          "pixel_width": 31,
+          "pixel_height": 15
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/rigellian/messier-lukannon",
+      "global_type": 12,
+      "name": "Messier-Lukannon",
+      "culture": "rigellian",
+      "source_entry": "RI2C.256",
+      "source_sha256": "c568719331f1686f30f9be191b09dab0146d29b6501971f888049d031e27426a",
+      "decoded_metadata_sha256": "ff85d076dc7015ca7720b6bcbf84d54f00bff9bc63e9753f403de54340ebe9df",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "RI2C/000.png",
+          "png_sha256": "ca395f812ac699115d4cf05bca0e84fe207d6f6173efc4a2b45d7b7f8cd92359",
+          "pixel_width": 60,
+          "pixel_height": 23
+        },
+        {
+          "index": 8,
+          "png": "RI2C/008.png",
+          "png_sha256": "63288d67de3a7264b542fa58e32540fa25d32d341bebf1efe2c9f27b0f237153",
+          "pixel_width": 60,
+          "pixel_height": 27
+        },
+        {
+          "index": 16,
+          "png": "RI2C/016.png",
+          "png_sha256": "1b99bdee7c0d850f0041ac574febeef9b26515fb581763a90bf2b5dbaf65f138",
+          "pixel_width": 60,
+          "pixel_height": 27
+        },
+        {
+          "index": 24,
+          "png": "RI2C/024.png",
+          "png_sha256": "fabadaa8da46ac7aaec6f571af832a828261055b4c85c07c166a6d3214d83283",
+          "pixel_width": 60,
+          "pixel_height": 23
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/rigellian/transportation",
+      "global_type": 13,
+      "name": "Transportation",
+      "culture": "rigellian",
+      "source_entry": "RI3C.256",
+      "source_sha256": "7bffcea7e9af1d5592e8652998ebb11401a252c9e715725008fc942c024dfe7b",
+      "decoded_metadata_sha256": "d012e6c7e3cf0e92dd6b6fa65bc61ad7a4d039943fa315cc0347a4489db718f8",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "RI3C/000.png",
+          "png_sha256": "15b98eacfda50bbf424d2d6421eb76650b4b16e554ff2dc87e552ab16b73393c",
+          "pixel_width": 90,
+          "pixel_height": 26
+        },
+        {
+          "index": 8,
+          "png": "RI3C/008.png",
+          "png_sha256": "5a5808dd99ba54bdd1729d86a2b025d4528b15bc9a9b3d889438acf93b7a645c",
+          "pixel_width": 89,
+          "pixel_height": 26
+        },
+        {
+          "index": 16,
+          "png": "RI3C/016.png",
+          "png_sha256": "3baeddbf26c3d50b1954924524890d1712871d5ea4a81460ca619f2d37871fb5",
+          "pixel_width": 90,
+          "pixel_height": 26
+        },
+        {
+          "index": 24,
+          "png": "RI3C/024.png",
+          "png_sha256": "7f3af2d47c4d233a71af127d55ad6105487a384731d3b5aae0effe5da0bf7f2a",
+          "pixel_width": 90,
+          "pixel_height": 27
+        }
+      ],
+      "runtime_even_heading_only": true,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/rigellian/observatory",
+      "global_type": 14,
+      "name": "Observatory",
+      "culture": "rigellian",
+      "source_entry": "RI4C.256",
+      "source_sha256": "b570c8b9c08a310fc4cf80a8cee039fb7e8729f4f214f2c8dc845af658c9fd03",
+      "decoded_metadata_sha256": "8f74e0c43fe9b20a57e153eadb193e85f78a6c0419d08e44aa4f2f7708945285",
+      "frame_count": 2,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "fixed-state-samples; not four spatial views",
+      "frames": [
+        {
+          "index": 0,
+          "png": "RI4C/000.png",
+          "png_sha256": "2cd6d2db00d60198be8561f7080ba818f8c70ff35a003e7804540810eb57a374",
+          "pixel_width": 94,
+          "pixel_height": 126
+        },
+        {
+          "index": 1,
+          "png": "RI4C/001.png",
+          "png_sha256": "200ef8a2703d40cee08431feb987f1e52c5a67b5558b7781b06cab01b40cc6dd",
+          "pixel_width": 153,
+          "pixel_height": 136
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": true,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/braccatian/rattlesnake",
+      "global_type": 15,
+      "name": "Rattlesnake",
+      "culture": "braccatian",
+      "source_entry": "BR0A.256",
+      "source_sha256": "73b2442446f0d1534b42cf44634aea41926f9a5014d8af495583c93e33d57597",
+      "decoded_metadata_sha256": "24872ffa7ab84ba816ed289f639befe82a4e35aa653ff244bddccf1d6ddea12f",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "BR0A/000.png",
+          "png_sha256": "a342a3690e70206dc84e3b5d48cf51fb275faa0e00e9902920a23f60de504d6b",
+          "pixel_width": 15,
+          "pixel_height": 10
+        },
+        {
+          "index": 8,
+          "png": "BR0A/008.png",
+          "png_sha256": "862db764029b6d375421e4f35f4631a44742c907a1f6ec713db8bf3055acca27",
+          "pixel_width": 15,
+          "pixel_height": 12
+        },
+        {
+          "index": 16,
+          "png": "BR0A/016.png",
+          "png_sha256": "00bc6b4539a18b1d90f55a71e36fd9614f3a27a7e79afefda88358b34eefdf9a",
+          "pixel_width": 14,
+          "pixel_height": 12
+        },
+        {
+          "index": 24,
+          "png": "BR0A/024.png",
+          "png_sha256": "c4363bbef3eccb70a4d8bf158611442f22481ad0594ea94abdedcfdc89744d83",
+          "pixel_width": 14,
+          "pixel_height": 10
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/braccatian/widowmaker",
+      "global_type": 16,
+      "name": "WidowMaker",
+      "culture": "braccatian",
+      "source_entry": "BR1C.256",
+      "source_sha256": "f0ae3e64a4564abe3a85e95553cd7aba1d8e0e3212b2fa322dd878a5d7b8ab84",
+      "decoded_metadata_sha256": "016fe1481218622d93ecfe1f588bb51bcea056ee418ae57626f462dba26203da",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "BR1C/000.png",
+          "png_sha256": "34430583b9202e0eadf80131a896957f780dcfaa2a7961a8818bef574a693db5",
+          "pixel_width": 66,
+          "pixel_height": 38
+        },
+        {
+          "index": 8,
+          "png": "BR1C/008.png",
+          "png_sha256": "75207d42e6c727d18d5ee1ca85f771907d77d78eee5678efcf00df52d1dd3d13",
+          "pixel_width": 66,
+          "pixel_height": 37
+        },
+        {
+          "index": 16,
+          "png": "BR1C/016.png",
+          "png_sha256": "72515718589fcc5b2a49cfa8662fa04b84d4c8a86a2c268ee11a52a366797352",
+          "pixel_width": 66,
+          "pixel_height": 37
+        },
+        {
+          "index": 24,
+          "png": "BR1C/024.png",
+          "png_sha256": "1061097169543c305ec9e001ed5fa652e2b7d34f45a8bf65ea40687e7eb19ac2",
+          "pixel_width": 66,
+          "pixel_height": 38
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/braccatian/heartsblood",
+      "global_type": 17,
+      "name": "HeartsBlood",
+      "culture": "braccatian",
+      "source_entry": "BR2C.256",
+      "source_sha256": "0125a9b47826ac0a4a029993817d6d7e1254c7599a535cc183a63e270390eae9",
+      "decoded_metadata_sha256": "becacb82a728c0a881705248022efb34c94f94ed6a934579e009055d198f5902",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "BR2C/000.png",
+          "png_sha256": "b8ac71703b53b7d2b911c57ba61f0fb7c7336c99d14443b7948c975004abd3fe",
+          "pixel_width": 68,
+          "pixel_height": 42
+        },
+        {
+          "index": 8,
+          "png": "BR2C/008.png",
+          "png_sha256": "e41db747a05fb36edd213b97b6c2c42adfd91ef034d296eca29d6bd8fc03d36f",
+          "pixel_width": 68,
+          "pixel_height": 41
+        },
+        {
+          "index": 16,
+          "png": "BR2C/016.png",
+          "png_sha256": "aab5e05300f8b5462d6beaacf180f8e19da27f768e028f101b3ba007b72a2ec0",
+          "pixel_width": 68,
+          "pixel_height": 41
+        },
+        {
+          "index": 24,
+          "png": "BR2C/024.png",
+          "png_sha256": "16b52ee52d49e5f3e1a81a787834f9cf6da26743b2fa8f45429b099a48a56806",
+          "pixel_width": 68,
+          "pixel_height": 42
+        }
+      ],
+      "runtime_even_heading_only": true,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/braccatian/morning-glory",
+      "global_type": 18,
+      "name": "Morning Glory",
+      "culture": "braccatian",
+      "source_entry": "BR3A.256",
+      "source_sha256": "bb95fc46d5af8249ebb6fa093a028a83e25322c3c8ebfd8d7125a6ee78a0cdde",
+      "decoded_metadata_sha256": "feae4dd483ecde2dbb568633eca875d3900665990dcc8e4c8cb14cdb58116703",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "BR3A/000.png",
+          "png_sha256": "a2fb1b3fe3d3513f238d80dcd517b7aa139ab5f17fee5726ed11e763f54b95ea",
+          "pixel_width": 13,
+          "pixel_height": 10
+        },
+        {
+          "index": 8,
+          "png": "BR3A/008.png",
+          "png_sha256": "c922cd9a6dea444f7e66bc38c377f0c6c2970293babf25714e84c075961ee4fd",
+          "pixel_width": 14,
+          "pixel_height": 9
+        },
+        {
+          "index": 16,
+          "png": "BR3A/016.png",
+          "png_sha256": "685e969275a29ec02d0c2ab7ae1ada4bb2c13f677c41057bb9359313d6690f48",
+          "pixel_width": 14,
+          "pixel_height": 10
+        },
+        {
+          "index": 24,
+          "png": "BR3A/024.png",
+          "png_sha256": "f13cb992d96d20ec5f835f84f487dc22264e282e33d5dfdafc96b72c152fb4c8",
+          "pixel_width": 14,
+          "pixel_height": 10
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/braccatian/skymech",
+      "global_type": 19,
+      "name": "SkyMech",
+      "culture": "braccatian",
+      "source_entry": "BR4C.256",
+      "source_sha256": "0287f4e7761e2668f2f4853c74d4efaea2327e09ac454be643c1d6e63c125d93",
+      "decoded_metadata_sha256": "b2d50e459d7dda43c4c67b33245f2f362cb7ca9b4de40418b7ebcab2d9ee45d0",
+      "frame_count": 2,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "fixed-state-samples; not four spatial views",
+      "frames": [
+        {
+          "index": 0,
+          "png": "BR4C/000.png",
+          "png_sha256": "2ba53c034a02e6a0bf2a33ca68a49e0d58a245f74c6ce0f8c118ce3235cc068c",
+          "pixel_width": 91,
+          "pixel_height": 96
+        },
+        {
+          "index": 1,
+          "png": "BR4C/001.png",
+          "png_sha256": "0f1770c9e93599bdcfc7cc1cfa647b48d7df0f6ea20536168fe3df5ee98173dd",
+          "pixel_width": 107,
+          "pixel_height": 131
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": true,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mikotaj/hiero",
+      "global_type": 20,
+      "name": "Hiero",
+      "culture": "mikotaj",
+      "source_entry": "MK0A.256",
+      "source_sha256": "2282a49bcbd3afca617bc41b695cb36be02776fef1e9e5eda8a00f06ac66c5cb",
+      "decoded_metadata_sha256": "e4b00a7c510b38705d3043956927586b35ad67649dedf0a571cac58274238304",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MK0A/000.png",
+          "png_sha256": "292f249a048fdb218df2292f4dbd7bc9eb3da621fb7adf376cdbdfb83bfab4f7",
+          "pixel_width": 18,
+          "pixel_height": 13
+        },
+        {
+          "index": 8,
+          "png": "MK0A/008.png",
+          "png_sha256": "6e4bbf4f6006880f76580ffd1650f52d17bac2c3844d504a3f483c7911a6e700",
+          "pixel_width": 17,
+          "pixel_height": 13
+        },
+        {
+          "index": 16,
+          "png": "MK0A/016.png",
+          "png_sha256": "fd356b00218a56cba79d0cdf0b6e998b7bd66b5c513a1d9748df74869f188e99",
+          "pixel_width": 17,
+          "pixel_height": 13
+        },
+        {
+          "index": 24,
+          "png": "MK0A/024.png",
+          "png_sha256": "b16fe385587a88c4efa402e32748e2afcc856b91974e35193fb6bdd8ef652cc4",
+          "pixel_width": 18,
+          "pixel_height": 13
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mikotaj/ylikt-shan",
+      "global_type": 21,
+      "name": "Ylikt-shan",
+      "culture": "mikotaj",
+      "source_entry": "MK1A.256",
+      "source_sha256": "9cd607f96661e7dc295dcd3ce9e3ab5309956bbe6bf3a6ac3a4c571c330d5e7e",
+      "decoded_metadata_sha256": "32aa7dd29e2664be8e0e0bad2ab437b95c23ebf7029d396847f8697ba1da0858",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MK1A/000.png",
+          "png_sha256": "31b9304418109bc332f74f8e5d56c20eba83ec22c4b5873bffa0823796f19c25",
+          "pixel_width": 18,
+          "pixel_height": 11
+        },
+        {
+          "index": 8,
+          "png": "MK1A/008.png",
+          "png_sha256": "530fc6a5eb0d30f41225d616c4e85149288b19458f2c921fd02803a2c4373a91",
+          "pixel_width": 18,
+          "pixel_height": 11
+        },
+        {
+          "index": 16,
+          "png": "MK1A/016.png",
+          "png_sha256": "86c966414fbad7fa39ca128ecaffcf6409c5745b0b1eaeac6a26268bd174374d",
+          "pixel_width": 18,
+          "pixel_height": 11
+        },
+        {
+          "index": 24,
+          "png": "MK1A/024.png",
+          "png_sha256": "2b363057ead6ae83fd298b9cb2c7df790b4ef1df460f20ffcd2da03549e79d93",
+          "pixel_width": 18,
+          "pixel_height": 11
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mikotaj/falari-lourn",
+      "global_type": 22,
+      "name": "Falari-Lourn",
+      "culture": "mikotaj",
+      "source_entry": "MK2C.256",
+      "source_sha256": "2c641c22c822991004906cf881f508acd6df1e871816005a344ce31c6bf3b6a1",
+      "decoded_metadata_sha256": "3991b534164f73be2055e4d82330b17a10a53e4ab054d9120c05467bf2b53779",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MK2C/000.png",
+          "png_sha256": "75f18b11ce9d95110dec082326a8506cd936f4e7258aa315562b447d27359c9a",
+          "pixel_width": 59,
+          "pixel_height": 15
+        },
+        {
+          "index": 8,
+          "png": "MK2C/008.png",
+          "png_sha256": "cd26107db3de2f91893a9537b37398e826bd0462d30be9d9c215919af88075d2",
+          "pixel_width": 59,
+          "pixel_height": 15
+        },
+        {
+          "index": 16,
+          "png": "MK2C/016.png",
+          "png_sha256": "fb3a4d9cfb8d4e3c6201a7db0a4691b49cdd3f664671c5417b670dc1a10e217e",
+          "pixel_width": 59,
+          "pixel_height": 15
+        },
+        {
+          "index": 24,
+          "png": "MK2C/024.png",
+          "png_sha256": "82ca61f5f5b4855bc5491d1097ee6f6f1aade249cabef53395a2efcb94831937",
+          "pixel_width": 59,
+          "pixel_height": 15
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mikotaj/ruth-strivakh",
+      "global_type": 23,
+      "name": "Ruth-Strivakh",
+      "culture": "mikotaj",
+      "source_entry": "MK3C.256",
+      "source_sha256": "35f67108faa90818816d5876fa4ab45ec2a39de7e5bc5062f89d16ba0c901590",
+      "decoded_metadata_sha256": "aeb6d57bdc85b54701497aa1b7cab0448bf87e02ea3c3fffc4c22805a1246186",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MK3C/000.png",
+          "png_sha256": "f46cf0d42c537f5d56a6e38db8585c8d4583c4e7ddedf4dbac9c48f7ca169558",
+          "pixel_width": 90,
+          "pixel_height": 24
+        },
+        {
+          "index": 8,
+          "png": "MK3C/008.png",
+          "png_sha256": "30e0ddd7d66c90e45ca8860e42ff7a84b22989bef0a2a8238e4272684a6159f6",
+          "pixel_width": 90,
+          "pixel_height": 24
+        },
+        {
+          "index": 16,
+          "png": "MK3C/016.png",
+          "png_sha256": "7b404db43cd1013edc6dd51ded6d44e964f0b687c0180b422bf6fb2781aa22df",
+          "pixel_width": 89,
+          "pixel_height": 25
+        },
+        {
+          "index": 24,
+          "png": "MK3C/024.png",
+          "png_sha256": "f1d7c44723f40b0eaedced66cf733617d4313c40ae5183bc0487615ab3080244",
+          "pixel_width": 90,
+          "pixel_height": 24
+        }
+      ],
+      "runtime_even_heading_only": true,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mikotaj/na-xanth",
+      "global_type": 24,
+      "name": "Na-Xanth",
+      "culture": "mikotaj",
+      "source_entry": "MK4C.256",
+      "source_sha256": "1aa210e5fe1415e427e8909857a245d09bceede956574a355175c86e838670ea",
+      "decoded_metadata_sha256": "7f87549ab0849609e96333165d22e8e95b0408ecbeea83ae1ce3da40696ded5c",
+      "frame_count": 2,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "fixed-state-samples; not four spatial views",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MK4C/000.png",
+          "png_sha256": "a3526bf01580ed3b15c954a25107ad74f93e93a71bc74951da25a5980687f94f",
+          "pixel_width": 159,
+          "pixel_height": 65
+        },
+        {
+          "index": 1,
+          "png": "MK4C/001.png",
+          "png_sha256": "31866ab5add475cd6811763e3e09660236d868f488522ad16a6c906578263e6a",
+          "pixel_width": 174,
+          "pixel_height": 82
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": true,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/artemian/gerla-kans-explorer",
+      "global_type": 25,
+      "name": "Gerla-Kans Explorer",
+      "culture": "artemian",
+      "source_entry": "AR0A.256",
+      "source_sha256": "9f89970cc695243b05174e4c4ea6ffa0dcdb3cda69f2665d146e4f8789006704",
+      "decoded_metadata_sha256": "e40b3c2436b0e2753f1eb9ec5e434b908f0af64f11f8a22d4d7886006d8c0c25",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "AR0A/000.png",
+          "png_sha256": "8ab7f37296cce32920ae4bd563026c9ab2dd0b17620c4840a8f4ef2b7b176646",
+          "pixel_width": 15,
+          "pixel_height": 9
+        },
+        {
+          "index": 8,
+          "png": "AR0A/008.png",
+          "png_sha256": "1794575e7c1dca95dc7b0c2a4d9d04acaf5f626cf6473e2825e46d3c3c826072",
+          "pixel_width": 15,
+          "pixel_height": 10
+        },
+        {
+          "index": 16,
+          "png": "AR0A/016.png",
+          "png_sha256": "4e150071471928d71504aca97fa9e8a7730af0fc1d8579c011df100a8ac4ee3b",
+          "pixel_width": 15,
+          "pixel_height": 10
+        },
+        {
+          "index": 24,
+          "png": "AR0A/024.png",
+          "png_sha256": "a76ddeb3747185bc5c6d469d21b27ab947598f3149be5f28e0bb06514e36a871",
+          "pixel_width": 15,
+          "pixel_height": 10
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/artemian/all-purpose-assault",
+      "global_type": 26,
+      "name": "All-Purpose Assault",
+      "culture": "artemian",
+      "source_entry": "AR1A.256",
+      "source_sha256": "d69ca7ed6d46fdb2e772d4f81fa37ec039b45ff3a050d1cca4166524ee29f8d7",
+      "decoded_metadata_sha256": "61643b4fb99f7214792b0396ef8ae4dd3bad2d037f8519cbac5c1f85ced2bc26",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "AR1A/000.png",
+          "png_sha256": "5954e4c310c72a630dd1779ddf32b51202436d984a55b230afd651651ae3bb1b",
+          "pixel_width": 15,
+          "pixel_height": 9
+        },
+        {
+          "index": 8,
+          "png": "AR1A/008.png",
+          "png_sha256": "e66089dfd8ebb84b2838928e987464e4115747c715cbb9d0b85557691a490572",
+          "pixel_width": 15,
+          "pixel_height": 9
+        },
+        {
+          "index": 16,
+          "png": "AR1A/016.png",
+          "png_sha256": "f427cb7e854de5290c1e253b3fb804e4f6d0ef4ecf4f1d9b785c2975918d9f44",
+          "pixel_width": 15,
+          "pixel_height": 9
+        },
+        {
+          "index": 24,
+          "png": "AR1A/024.png",
+          "png_sha256": "88c8ffefcef6bed9fb40f7e7035a8abc900fc0d815ea5844f7fe0979332cd094",
+          "pixel_width": 15,
+          "pixel_height": 9
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/artemian/shielded-multi-assault",
+      "global_type": 27,
+      "name": "Shielded Multi-Assault",
+      "culture": "artemian",
+      "source_entry": "AR2C.256",
+      "source_sha256": "446c3902a42cd3d96184a13479ad06d26bad778352cbc603e2382ed91155b0db",
+      "decoded_metadata_sha256": "f45405c57371c0722b4ca6745ea12883c4182a6e85fb0ef699d1329c93958321",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "AR2C/000.png",
+          "png_sha256": "8f26990492ff8daf9db24b6aadd29de819dab38cb92f5587268c67bdda4fd5b6",
+          "pixel_width": 30,
+          "pixel_height": 10
+        },
+        {
+          "index": 8,
+          "png": "AR2C/008.png",
+          "png_sha256": "9d36996c73740a213fd9bc9a5a02e580af4e4808f906a31dab0e137c02ec3289",
+          "pixel_width": 30,
+          "pixel_height": 10
+        },
+        {
+          "index": 16,
+          "png": "AR2C/016.png",
+          "png_sha256": "3ff0626de455ef8752c6db9e03d00531847be6c26b24942ca73bb97825f927d6",
+          "pixel_width": 30,
+          "pixel_height": 10
+        },
+        {
+          "index": 24,
+          "png": "AR2C/024.png",
+          "png_sha256": "401fda0e83a18194aae9be7991a6ca38ab285472eafdc9706dbfa9cce57da631",
+          "pixel_width": 30,
+          "pixel_height": 10
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/artemian/ultimate-mk-ii",
+      "global_type": 28,
+      "name": "Ultimate Mk II",
+      "culture": "artemian",
+      "source_entry": "AR3C.256",
+      "source_sha256": "51f6ee65f9b243ca6f694dcda42fe0eb4a62f5936ac45e011ecefd9b1f901301",
+      "decoded_metadata_sha256": "07cdf7edf55d9749584363a9a4d4595c9c58c7e420bc2250e4ee4a30f0d58ff5",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "AR3C/000.png",
+          "png_sha256": "ffa4d635fcd466f619bf214b45ae7ffbf3c4fa45c6e4a8860ec723dd48cc46fc",
+          "pixel_width": 66,
+          "pixel_height": 23
+        },
+        {
+          "index": 8,
+          "png": "AR3C/008.png",
+          "png_sha256": "b6a868f3ac7f14456e7d843367b7b6c405be4058956690ff0aaff3dd9ef3f314",
+          "pixel_width": 65,
+          "pixel_height": 22
+        },
+        {
+          "index": 16,
+          "png": "AR3C/016.png",
+          "png_sha256": "33d652bfbf5805aac19dfb68340f326007406c5d5ba9809d43c3d4f74aa3f7cb",
+          "pixel_width": 66,
+          "pixel_height": 22
+        },
+        {
+          "index": 24,
+          "png": "AR3C/024.png",
+          "png_sha256": "6eed6d2137526fba3eade488d5238392426ac639c38d6c2239bccf0b555d591d",
+          "pixel_width": 66,
+          "pixel_height": 22
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/artemian/hardcore",
+      "global_type": 29,
+      "name": "Hardcore",
+      "culture": "artemian",
+      "source_entry": "AR4C.256",
+      "source_sha256": "de1e9027a8bac6634ff12f957a15ca12264693da3be40fb99709639649f93307",
+      "decoded_metadata_sha256": "8a6670b201811f6a1a7f6d72934161e647800a773eafdf023ad2a6d5e50993f5",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "AR4C/000.png",
+          "png_sha256": "f18d4445d4ccbee90ab1878d4b4a8929b2c3e5dd238ab41cfc90398a92779f02",
+          "pixel_width": 93,
+          "pixel_height": 27
+        },
+        {
+          "index": 8,
+          "png": "AR4C/008.png",
+          "png_sha256": "6f78827fd3be433eba8f1843ddcc563ed062e396f1a780e945579acac34d410b",
+          "pixel_width": 93,
+          "pixel_height": 27
+        },
+        {
+          "index": 16,
+          "png": "AR4C/016.png",
+          "png_sha256": "897c4e4f97596b4811fcdc48e27b330378a8154841bc0b38633b91165057836d",
+          "pixel_width": 93,
+          "pixel_height": 27
+        },
+        {
+          "index": 24,
+          "png": "AR4C/024.png",
+          "png_sha256": "32246d245c6fcc1af0245f02884e1f2d15c5b12beaf953b76ce41be3a7886a9a",
+          "pixel_width": 93,
+          "pixel_height": 27
+        }
+      ],
+      "runtime_even_heading_only": true,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/artemian/geostationary-construction",
+      "global_type": 30,
+      "name": "Geostationary Construction",
+      "culture": "artemian",
+      "source_entry": "AR5C.256",
+      "source_sha256": "f9432a0c12e00ee0a094d53829e61d307520b7e5be5bb4b9a188903e85b96ac8",
+      "decoded_metadata_sha256": "6585c21f7a5381c65f0d3c159ddc271aed606dac3bcd11b0d9f76132ff39407f",
+      "frame_count": 2,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "fixed-state-samples; not four spatial views",
+      "frames": [
+        {
+          "index": 0,
+          "png": "AR5C/000.png",
+          "png_sha256": "252784c2fbcaeafd755ca0e25975c9b17e29e75e45d73ec073276c2be398bbcd",
+          "pixel_width": 135,
+          "pixel_height": 74
+        },
+        {
+          "index": 1,
+          "png": "AR5C/001.png",
+          "png_sha256": "3592988254174115097b60bdd1eb1b49142724f5a50e9a475d21610e9fea39b3",
+          "pixel_width": 141,
+          "pixel_height": 81
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": true,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mauna/surveillance-craft-type-5",
+      "global_type": 31,
+      "name": "Surveillance Craft Type 5",
+      "culture": "mauna",
+      "source_entry": "MN0A.256",
+      "source_sha256": "6b59aa3fd81efeca970ba070de2e13ac187ac318fb7c4217b19b5858c8b63697",
+      "decoded_metadata_sha256": "024e972a1541d6b7b443cca4550bd532f5f694c5a4e314e39478aad5e5b22336",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MN0A/000.png",
+          "png_sha256": "07e80c62c8fef8b73d3928d64f8a50d08d38e8028f21887524a1a6d6d8fef4a2",
+          "pixel_width": 20,
+          "pixel_height": 22
+        },
+        {
+          "index": 8,
+          "png": "MN0A/008.png",
+          "png_sha256": "2c3ead412559c85b4f19f91960a3174b6dcb1b4eb8326a068fcbcae42cde90ef",
+          "pixel_width": 21,
+          "pixel_height": 22
+        },
+        {
+          "index": 16,
+          "png": "MN0A/016.png",
+          "png_sha256": "7bd75e0c5fbe29d42789e235800bfa5912616b2a5e376135eeb0e65d3346f7f3",
+          "pixel_width": 20,
+          "pixel_height": 22
+        },
+        {
+          "index": 24,
+          "png": "MN0A/024.png",
+          "png_sha256": "ec53077d455a3dfe33af655618d7ebd240c91b2ba319c35c801414440a3593fc",
+          "pixel_width": 20,
+          "pixel_height": 21
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mauna/combat-craft-type-1-5",
+      "global_type": 32,
+      "name": "Combat Craft Type 1.5",
+      "culture": "mauna",
+      "source_entry": "MN1A.256",
+      "source_sha256": "6822dda1785b122dd2822c6ffab017463cba2fe5951829b80871f9803ce9f3e8",
+      "decoded_metadata_sha256": "67681a5e5fbe2f429b7a22ff348624d7eabdf1605b10228b98ee8dd329825a8c",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MN1A/000.png",
+          "png_sha256": "b9ef0c9d2ab5b82b2260cb1524ed5bc2ca1a6a36e4c83a7fd39b2b441c936c83",
+          "pixel_width": 16,
+          "pixel_height": 11
+        },
+        {
+          "index": 8,
+          "png": "MN1A/008.png",
+          "png_sha256": "c63230b2f73f1d9e56ccaf43100d8428f0218ebcd9518df2dbcdea142b038e30",
+          "pixel_width": 16,
+          "pixel_height": 12
+        },
+        {
+          "index": 16,
+          "png": "MN1A/016.png",
+          "png_sha256": "110800b80cf94db085f09dbda154a220626e5f3e967ad5b3df2ee882c5c4f946",
+          "pixel_width": 16,
+          "pixel_height": 12
+        },
+        {
+          "index": 24,
+          "png": "MN1A/024.png",
+          "png_sha256": "e281d298d2f08e0000d4350ab563dc1faf8db355467788d2558450abbcec5cd4",
+          "pixel_width": 16,
+          "pixel_height": 11
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mauna/max-combat-craft-type-6",
+      "global_type": 33,
+      "name": "Max Combat Craft Type 6",
+      "culture": "mauna",
+      "source_entry": "MN2C.256",
+      "source_sha256": "93cedc64ca3bf51fefbbdff5fc90c031b249ab24a074ece016fce97a4544833e",
+      "decoded_metadata_sha256": "b5c19b0decd269e2252ef7aedece4d27bc15bf5ecf7fa5d4a569dc1992644140",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MN2C/000.png",
+          "png_sha256": "de83f013f7310ba53c7d39600b6981f8cd767dd3df5cd1de4db982e4a52d3aa7",
+          "pixel_width": 56,
+          "pixel_height": 21
+        },
+        {
+          "index": 8,
+          "png": "MN2C/008.png",
+          "png_sha256": "e9682b1e6b41466fc20f69adb0290653fcea586f73ac1e934310e9b395b8f6eb",
+          "pixel_width": 56,
+          "pixel_height": 25
+        },
+        {
+          "index": 16,
+          "png": "MN2C/016.png",
+          "png_sha256": "e4cd10ada0bf873b3832f21cbd5e87855bcf009493af76c6fd96ec97e16eb95e",
+          "pixel_width": 56,
+          "pixel_height": 26
+        },
+        {
+          "index": 24,
+          "png": "MN2C/024.png",
+          "png_sha256": "3c6dd6cd1f371d0aef1d857ba6aa086f9d72698e1cc87fa448a3dd3068ea5a04",
+          "pixel_width": 57,
+          "pixel_height": 22
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mauna/elite-command-craft",
+      "global_type": 34,
+      "name": "Elite Command Craft",
+      "culture": "mauna",
+      "source_entry": "MN3C.256",
+      "source_sha256": "3e34547722972b65edfae8d00cce0823d327352dcd660cfff1f104504b60f3b2",
+      "decoded_metadata_sha256": "1b68e612f85df211045b5584fb5ef77c7b372dda5da66b3fd6c151757c6e059f",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MN3C/000.png",
+          "png_sha256": "8fec5fde165854ea69b5a63f8a72b856048bd9c9a0e0e1b74ffd823e63f5777b",
+          "pixel_width": 59,
+          "pixel_height": 21
+        },
+        {
+          "index": 8,
+          "png": "MN3C/008.png",
+          "png_sha256": "e84bf76c2b157b4ab08bea25ee3cbc0bf074ee123d4ebfab34281b44a816d07c",
+          "pixel_width": 58,
+          "pixel_height": 22
+        },
+        {
+          "index": 16,
+          "png": "MN3C/016.png",
+          "png_sha256": "87117bcbf6e6374a3e2b99240cc053f642e52f0ad0c1f24e44d257b3d0a21c06",
+          "pixel_width": 59,
+          "pixel_height": 22
+        },
+        {
+          "index": 24,
+          "png": "MN3C/024.png",
+          "png_sha256": "89f69cee381bdfd71a8a45c3076f7e3dfd078490022428d674f2a5c756747090",
+          "pixel_width": 59,
+          "pixel_height": 21
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mauna/transportation-craft-type-3",
+      "global_type": 35,
+      "name": "Transportation Craft Type 3",
+      "culture": "mauna",
+      "source_entry": "MN4C.256",
+      "source_sha256": "8af11d81090386afe93a01770df9ad92126d98f40a91f622015c08608c2a0e7f",
+      "decoded_metadata_sha256": "c5d6b93b2c34c3e884222afe259870f2687cd7dd40314be2457e3db54f72cbc0",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MN4C/000.png",
+          "png_sha256": "04c3f307083330849923e455f1d4f72cd2fea886bdc9660aa414957d6b167d0a",
+          "pixel_width": 70,
+          "pixel_height": 73
+        },
+        {
+          "index": 8,
+          "png": "MN4C/008.png",
+          "png_sha256": "6b40064b2dd03119999b1f8ae84da6c54f13c0edc1e9006c72cf662bedcd2f93",
+          "pixel_width": 69,
+          "pixel_height": 69
+        },
+        {
+          "index": 16,
+          "png": "MN4C/016.png",
+          "png_sha256": "6176647dc6d0fce161dd0e024efc71ad934a19792d6276a1423c95168d87aaa1",
+          "pixel_width": 69,
+          "pixel_height": 70
+        },
+        {
+          "index": 24,
+          "png": "MN4C/024.png",
+          "png_sha256": "7f540cde5f66bedf6d8729be0355751d6d33633e6b217f35e675f03bf443b535",
+          "pixel_width": 69,
+          "pixel_height": 72
+        }
+      ],
+      "runtime_even_heading_only": true,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/mauna/orbital-construction-area",
+      "global_type": 36,
+      "name": "Orbital Construction Area",
+      "culture": "mauna",
+      "source_entry": "MN5C.256",
+      "source_sha256": "d439488c9445c36a3201bec246cb3df4a152b8f1682f2f364ab626ef018a8527",
+      "decoded_metadata_sha256": "9de936697df5f39799cf2f72b715de919f04f1ac3e57a3ba71981ce8e6b60dfd",
+      "frame_count": 2,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "fixed-state-samples; not four spatial views",
+      "frames": [
+        {
+          "index": 0,
+          "png": "MN5C/000.png",
+          "png_sha256": "d6dc12d0f4624a802ee023ecad3e01a150ad143248d5c7599fc996087e78ca01",
+          "pixel_width": 153,
+          "pixel_height": 104
+        },
+        {
+          "index": 1,
+          "png": "MN5C/001.png",
+          "png_sha256": "56ea386efcade5ac9cbbe88ef1db4b08de1aac12bbf0e29e958a99561df2c96c",
+          "pixel_width": 179,
+          "pixel_height": 109
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": true,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/achaean/hunter-prospector",
+      "global_type": 37,
+      "name": "Hunter/Prospector",
+      "culture": "achaean",
+      "source_entry": "AC0A.256",
+      "source_sha256": "1204d8820003b7032a148b753d5806c98667760f2846efef62212b0af0eb34dd",
+      "decoded_metadata_sha256": "211de6a5edbcafcb39657cf87300e28ab12d740ef0006669fa86ab42c1f0aa9a",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "AC0A/000.png",
+          "png_sha256": "34539bbd612ddf745c7a230c7a6f8c2fc34b6b3ef13b16813e460134a92c8a08",
+          "pixel_width": 17,
+          "pixel_height": 13
+        },
+        {
+          "index": 8,
+          "png": "AC0A/008.png",
+          "png_sha256": "553ed963bae478aec589db5636635f32a4c528c29243306c7a5eb15b073c095a",
+          "pixel_width": 17,
+          "pixel_height": 12
+        },
+        {
+          "index": 16,
+          "png": "AC0A/016.png",
+          "png_sha256": "1c3e58c2e8dba231faae2a6ca2e77f40ef990d03a9966162d982500a011f09a6",
+          "pixel_width": 17,
+          "pixel_height": 12
+        },
+        {
+          "index": 24,
+          "png": "AC0A/024.png",
+          "png_sha256": "0bb50e91b4925998f039b29fbc593535877e6fa1d7ce0ab8eb2e22641925d6ae",
+          "pixel_width": 17,
+          "pixel_height": 12
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/achaean/dedicated-fighter",
+      "global_type": 38,
+      "name": "Dedicated Fighter",
+      "culture": "achaean",
+      "source_entry": "AC1C.256",
+      "source_sha256": "7a9bda31581aab2ce32ddf69b57df46ecb27b0d489b3b6150024ac418ee10cb7",
+      "decoded_metadata_sha256": "5e0a5706e79a656e1b3f1f637efca5471762226716826e77e4119a7578f87b9c",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "AC1C/000.png",
+          "png_sha256": "0beb7027b6a04c7cbe6ab477a5d617f202ebcb8fa497f60583775a0ee6818ef3",
+          "pixel_width": 47,
+          "pixel_height": 26
+        },
+        {
+          "index": 8,
+          "png": "AC1C/008.png",
+          "png_sha256": "8afe75a3381a619885dd204a498f21d6b0f3e4891242e903e5809ad388da7c34",
+          "pixel_width": 47,
+          "pixel_height": 26
+        },
+        {
+          "index": 16,
+          "png": "AC1C/016.png",
+          "png_sha256": "0a0360349a5f2e793459c9c6689a12c2c069264321d3b5006af43389b343896d",
+          "pixel_width": 47,
+          "pixel_height": 26
+        },
+        {
+          "index": 24,
+          "png": "AC1C/024.png",
+          "png_sha256": "8ab4aace222460bbc6ed42876c2b518d4e9750ecc5b2f6bc5e10be8f54cf5ecd",
+          "pixel_width": 47,
+          "pixel_height": 26
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/achaean/dedicated-ore-transporter",
+      "global_type": 39,
+      "name": "Dedicated Ore Transporter",
+      "culture": "achaean",
+      "source_entry": "AC2C.256",
+      "source_sha256": "ca12ed4a7cfb8aa9ff9834c5f18c9877f7f8bb19976b867ec7bf94e10148cd1a",
+      "decoded_metadata_sha256": "4f2ca648b85ea82de032aebb8164b9a94dabb7f2f322c341b9696f79bdd34bbe",
+      "frame_count": 32,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "directional-heading-samples",
+      "frames": [
+        {
+          "index": 0,
+          "png": "AC2C/000.png",
+          "png_sha256": "fefd7407b166a48a7d76f209405d89c8a4a97d2d7152fc3f3bc67622d838f5c3",
+          "pixel_width": 80,
+          "pixel_height": 27
+        },
+        {
+          "index": 8,
+          "png": "AC2C/008.png",
+          "png_sha256": "8e63b2e26d9f5ad1fad1c2d5129f512785315c44c867e3bed380bbb80f379d2f",
+          "pixel_width": 79,
+          "pixel_height": 26
+        },
+        {
+          "index": 16,
+          "png": "AC2C/016.png",
+          "png_sha256": "ea626f2703a83e5fe3514403785d8e8a70eebb8a2bf652e0253cad594a638fce",
+          "pixel_width": 79,
+          "pixel_height": 26
+        },
+        {
+          "index": 24,
+          "png": "AC2C/024.png",
+          "png_sha256": "6e4bc3a569706703b416bf8b941b4d8d35fb9012cb0f9e4617c3365c1bfbf277",
+          "pixel_width": 79,
+          "pixel_height": 27
+        }
+      ],
+      "runtime_even_heading_only": true,
+      "runtime_fixed_scale": false,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    },
+    {
+      "id": "openfa:ship/achaean/orbital-shipyard",
+      "global_type": 40,
+      "name": "Orbital Shipyard",
+      "culture": "achaean",
+      "source_entry": "AC3C.256",
+      "source_sha256": "4723ed641a0fcc7d88e54616b9f6c308d6e873e2c203536e107031ba58a57aa0",
+      "decoded_metadata_sha256": "0306149e4a1154ceb9bf14a837b5bf6448e04048a6c79d15e9a973bfefa8bce4",
+      "frame_count": 2,
+      "palette": "embedded original VGA palette",
+      "selection_mode": "fixed-state-samples; not four spatial views",
+      "frames": [
+        {
+          "index": 0,
+          "png": "AC3C/000.png",
+          "png_sha256": "7ea7d4c42fd9caefa5dc47ac13ebf47996a51ab05928cb24819f06d5e55ec751",
+          "pixel_width": 202,
+          "pixel_height": 50
+        },
+        {
+          "index": 1,
+          "png": "AC3C/001.png",
+          "png_sha256": "1ceefb7104cf25568b3b4d13f7091163103edf21e280da8db77ae92d403ca36e",
+          "pixel_width": 219,
+          "pixel_height": 62
+        }
+      ],
+      "runtime_even_heading_only": false,
+      "runtime_fixed_scale": true,
+      "videos": [],
+      "inferences_not_resolved": [
+        "Hidden hull surfaces and exact dimensions",
+        "Three-dimensional hardpoint/socket transforms",
+        "Materials and mechanical detail below source pixel resolution"
+      ]
+    }
+  ]
+}

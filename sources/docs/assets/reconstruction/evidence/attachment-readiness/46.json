@@ -1,0 +1,308 @@
+{
+  "issue": 1115,
+  "id": "openfa:laser",
+  "category": "hardpoints",
+  "culture": "shared",
+  "blend": "docs/assets/reconstruction/hardpoints/laser/model.blend",
+  "source_files_sha256": {
+    "authored-copper-colour.png": "853bd06fe9a943f991516d40f3ebe2ed9534947dabf50251f10efcbda29b13cc",
+    "authored-copper-roughness.png": "9b2da5c8fc8d2f15edf0d7109a9d3699f2d65cb9185a74c73717377a11f69220",
+    "authored-hull-colour.png": "47daafdf6e2fe65c10ddc0ad4aabdb68eac0fc4fd432de1e2b590c8619ed7e92",
+    "authored-hull-roughness.png": "9b2da5c8fc8d2f15edf0d7109a9d3699f2d65cb9185a74c73717377a11f69220",
+    "authored-red-colour.png": "2383d69b908f27e4d28bf853a6f84024d0e3e01bb2b448c8aa8123298471a30d",
+    "authored-red-roughness.png": "9b2da5c8fc8d2f15edf0d7109a9d3699f2d65cb9185a74c73717377a11f69220",
+    "authored-wear.json": "331f7bb7f71b8dae3f94defd8e84c913a24a75bf02a5ff0cfa5f61b6b6476f91",
+    "front-quarter.png": "332bba934f600f82c7671cf2b0be92b7c0bbb475bea62473e1b4e37dfbdec5cb",
+    "front.png": "7273a8042b81c2f57cb1709da5ed94acc963d8d6f61e5e6411071b2043490bc1",
+    "gallery.png": "bda218bd8020dcac8454acdbcc772383b110d78a9e74a0f667903062cf6540f0",
+    "hull-detail.png": "7c96a7396b8cee3baaa5a64264e2b598e6f34cb2dae7a398b76119bfb65adbf6",
+    "imported-glb-front-quarter.png": "bd5c3cde8d884684855fd70f012b33ba4033dbee85ed33868ce6706d78ffc4e8",
+    "imported-glb-hull-detail.png": "64ed8a05f0d97566fef4e2e6b1038056c0b9bd0eb3a9504dc00d35b32861d55c",
+    "model.blend": "52dcdd84e883f3fd0a26bb510e277d0a5e65fa69f7c3498ce3aa243e11f86084",
+    "model.glb": "ef00440d28813dc4525615ceef654cfaae3e012c48c77157bd7e83d86a4c6e7f",
+    "model.json": "d0cd53f678529483d3acb91be74510000df6165b0100c094499a5de11cd64b31",
+    "rear-quarter.png": "a8da29316ebf58b5a1af9c2ea13d6ac2cbe1cdda4e7068f86f3727f429381d78",
+    "render-review.json": "fcb7fcb659a98017d758b2494430dcce7a3f0f153586750958a50fd6d3602547",
+    "side.png": "d9029afd43cd3bc025cfd313514e9173858c0455c7d1d7d6698fe75df35aebb8",
+    "technical-review.json": "06e86c0ef80609057980415f3721c9874ccaee38073d5e72827113ed92239089",
+    "top.png": "6ae46bcc37801915a2b04e2c69ceebe7690344a02b6bb9751d7900d8a0e56728",
+    "underside.png": "bd2deb5891541075baf2d336cb67d7152276e9b604f0261a41e83b927b3f424a"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "role": "OrbitalWeapon"
+  },
+  "declared_sockets": {
+    "AlignmentForward": {
+      "position": [
+        0,
+        -1.6,
+        0
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Cultural variants and aiming/recoil/mount calibration; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 35,
+    "helpers": {
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -1.600000023841858
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.600000023841858,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:laser",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 35,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:laser",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -1.600000023841858
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.600000023841858,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentForward": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.6,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.3841857821338408e-08,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.6,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.3841857821338408e-08,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

@@ -1,0 +1,309 @@
+{
+  "issue": 1115,
+  "id": "openfa:ship/rigellian/observatory",
+  "category": "ships",
+  "culture": "rigellian",
+  "blend": "docs/assets/reconstruction/ships/rigellian/observatory/model.blend",
+  "source_files_sha256": {
+    "authored-aft-colour.png": "9a72ce1b3eefdf50dd549a23512050fefd5941adb8877efb8fc71ccd377ec362",
+    "authored-aft-roughness.png": "690d0ee7da8be922ee2d140f094d46e36b4eae0f449442a10ed2c497247f9ef8",
+    "authored-bronze-colour.png": "fd83c6acbf2db9803e4727f396d97a1d81279369ee81610653b5413c4cc79fe9",
+    "authored-bronze-roughness.png": "690d0ee7da8be922ee2d140f094d46e36b4eae0f449442a10ed2c497247f9ef8",
+    "authored-hull-colour.png": "ee0145db361372de31f47dc4b1cb76272e2b850e8cda6c02a87ffd19d9d8ca14",
+    "authored-hull-roughness.png": "690d0ee7da8be922ee2d140f094d46e36b4eae0f449442a10ed2c497247f9ef8",
+    "authored-wear.json": "737f9a03604bf1d48ab93199943ada5b9cb5c9b61819496417b06045f0fd16cb",
+    "front-quarter.png": "2ff3bbfd803ed79ed344585a9c5906600299f595a85b5ee5b7d241c984478e8b",
+    "front.png": "e7ea3d548f5aee38c9c70993ea654999e8689789a339b84d6b6a36ab6ba781ae",
+    "gallery.png": "fc660c32880b2bf8a8a1b7a29742c329402f2b7dde3d4bf832226c131976a94d",
+    "hull-detail.png": "dd64ed7a89d3d044fa71f80606a8810af0add590ed8f69a776bb68c115d8073a",
+    "imported-glb-front-quarter.png": "26fba28a02fedc1c28e2a7f1edcc8174b085fd055b46d9e1e86d8a0bdbd6061b",
+    "imported-glb-hull-detail.png": "eac78c650c08ce9ad6320ac3f098bff06899bdb43c811c2cd3cddd39dd778763",
+    "model.blend": "2db1191db8e8b2b0f036bbcc76e410019c61bd2d596ad3cd2cc385b66e5dd611",
+    "model.glb": "cee67ad9853c31f328b9b3afd3cb8da1b56a4b263ac9ac909a13960b5fdbb865",
+    "model.json": "17780f64001ee26138ff69bdda241b2b29de8c79d956cbaad035f5f7c459d168",
+    "rear-quarter.png": "34d7393fcd456598ab5b1e85c8037a67f75ebbe4c596eb86e9a408f083999f52",
+    "render-review.json": "7411f039c22298fc9cc70cb609ced654346efbbf4ce08931d94cba65cec792d6",
+    "side.png": "fd1aa85d7883a7f64523814b65f299ec9fe816d394c98263bb2594782b2549fd",
+    "technical-review.json": "287c5d5ac5e68aad43d86eee24fbdf949b6ee5702f3024542de5c19ce0bf5a32",
+    "top.png": "e2954fe6687f0377fc921fe9af01254d4f4bf0dbc9f3664d0dacc9e7db6b2805",
+    "underside.png": "646e3d70d001517884d50da6eaf40c444ded6695a9633ed167c1b5474ca5c827"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "hardpointSlots": 4,
+    "defaultHardpointIds": []
+  },
+  "declared_sockets": {
+    "AlignmentAxis": {
+      "position": [
+        0,
+        0,
+        2.88
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Damage/operational variants; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 63,
+    "helpers": {
+      "AlignmentAxis": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.0,
+              1.5099580252808664e-07,
+              0.0,
+              0.0
+            ],
+            [
+              -1.5099580252808664e-07,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              2.880000114440918
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            2.880000114440918
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/rigellian/observatory",
+          "forward_axis": "local +Z"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 63,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/rigellian/observatory",
+          "forward_axis": "local +Z"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "AlignmentAxis": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.0,
+              1.5099580252808664e-07,
+              0.0,
+              0.0
+            ],
+            [
+              -1.5099580252808664e-07,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              2.880000114440918
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            2.880000114440918
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentAxis": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentAxis",
+      "declaration": {
+        "position": [
+          0,
+          0,
+          2.88
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 1.1444091807533141e-07,
+      "forward_error": 0.0
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentAxis",
+      "declaration": {
+        "position": [
+          0,
+          0,
+          2.88
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 1.1444091807533141e-07,
+      "forward_error": 0.0
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

@@ -1,0 +1,728 @@
+{
+  "issue": 1111,
+  "id": "openfa:building/legacy/062",
+  "source_revision": 1,
+  "changes": [
+    {
+      "object": "RI23 bronze front strip",
+      "method": "Local dominant-face box projection, normalized to existing bounds",
+      "loops": 392
+    },
+    {
+      "object": "RI23 bronze base fitting",
+      "method": "Exact copy of existing UVMap",
+      "loops": 384
+    }
+  ],
+  "source_files_sha256": {
+    "authored-bronze-cap-colour.png": "9efef421cd2ea8d810e751a8e3b67b063d9a525afbad6a14d380a10fe0c57340",
+    "authored-bronze-cap-roughness.png": "9a0cc0703e9438b6bb2d0da2966675abd432b717eb49da19c8d4fe4404d95247",
+    "authored-bronze-shell-colour.png": "5f184ff7bb7011e47ec8a4d6314cab76df1cca9c38688c374637a5e417487401",
+    "authored-bronze-shell-roughness.png": "cebf0cdeefaf48302379dddc94b610b4b66be95578fa5886f70e6e8b6cf88fec",
+    "authored-green-cap-colour.png": "db5384cf40137f8378b5581118137c01f4c1ae55856ec1e91b8d4f69c68a7015",
+    "authored-green-cap-roughness.png": "9a0cc0703e9438b6bb2d0da2966675abd432b717eb49da19c8d4fe4404d95247",
+    "authored-green-shell-colour.png": "0420c7b890108360b9dd04d8f394745498776daa692aa715ede2631709bc63a4",
+    "authored-green-shell-roughness.png": "cebf0cdeefaf48302379dddc94b610b4b66be95578fa5886f70e6e8b6cf88fec",
+    "authored-wear.json": "973edeb96949b1dee4b8c95e84a4d51e0368cfa60a5628851c355d51269b721d",
+    "base-detail.png": "b64692bceaeb6fab76ec9c3968ce181dca0f43db902a94a431a4e37af7ad9e27",
+    "front-quarter.png": "15e9de2d81f3852eb00412b7a6ee620b4d1657af7341a06edbb48d57a58c3381",
+    "front.png": "13b0c0194a80641b7e9ea24ef4944b926a1ec4f91e80767d4a03d4a502b74e39",
+    "gallery.png": "618cddc61db666c081676ec2043488f90bc74d523a22ae827d00821d8ea11f77",
+    "imported-glb-base-detail.png": "fc9cc9c045184b5833d97c0cf66ebf58f7c7e7e9ae470044aac47ae055e4cd7b",
+    "imported-glb-front-quarter.png": "642df7056fe6ea74898f48347767506fbb569265d5036b7c068c9e1474a38a9d",
+    "imported-glb-turret-detail.png": "ba11c764bc6ef1b613e3f1816c5e4fa295ca971d64a868bb21246411fe8271c4",
+    "model.blend": "1f95bfe83f0d1cad5701b78b6e3bc0cc0d93e5a26353cb2368f4007f85b7a3ff",
+    "model.glb": "339d4f6834ad1f1a0c1d42860e0bcf3c4544e8d08a12b0fb8117d46bc5716ee0",
+    "model.json": "5fa732d47021d923d29f64ec71a641c8c2f9aca90884e3458e0b5d4f36b8b8b9",
+    "rear-quarter.png": "1b3ac35d90ae0acae8236567d80ae2958ed7d9ee21a3c5782a4387a70261789b",
+    "render-review.json": "afb825f5281adf01c72496975b5d269661429d1fc8510d6e77661c09c3ce09ed",
+    "side.png": "3621cefdacc73c28c8ec60c992dc8782e54ae7ab5cddaef0deff7a2e45b77041",
+    "technical-review.json": "5952d79e7b64e299f8b6d10852fbca66f2714bc53ea8154b301ad7d78b31962b",
+    "top.png": "988464e44f215f3525b15b25ed179bbc7729df538d7d8670a8be8e42b11b69c5",
+    "turret-detail.png": "9c66fd7cf32c8f60cee544fccc7a3b2981c96db7d5fa1055fbc56fadc2092308",
+    "underside.png": "09295cf76409af4920ac881925b080522977120a03b516a643712ebf1d10fb64"
+  },
+  "proposal_script_sha256": "f509b0ba3a5b612d0e7fd19849adfd9e5a3331434614968f9317193282441f42",
+  "helper_sha256": "95c696f52d39f04254cae68e1c136af630550e81abb9c3342fbe28c6157aa0bf",
+  "exact_native_geometry_before_and_after": {
+    "OpenFA orthographic 30 degree camera": {
+      "type": "CAMERA",
+      "parent": null,
+      "matrix": [
+        [
+          0.9079594016075134,
+          -0.20440344512462616,
+          0.36582639813423157,
+          7.410280227661133
+        ],
+        [
+          0.4190581440925598,
+          0.44287416338920593,
+          -0.7926239371299744,
+          -15.915163040161133
+        ],
+        [
+          8.96673668648873e-09,
+          0.8729729056358337,
+          0.48776867985725403,
+          10.649297714233398
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Soft key": {
+      "type": "LIGHT",
+      "parent": null,
+      "matrix": [
+        [
+          0.8574929237365723,
+          0.395312637090683,
+          -0.32929283380508423,
+          -3.0
+        ],
+        [
+          -0.5144957304000854,
+          0.6588544845581055,
+          -0.5488213896751404,
+          -5.0
+        ],
+        [
+          4.690163279974513e-08,
+          0.6400302052497864,
+          0.7683497667312622,
+          8.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Cool fill": {
+      "type": "LIGHT",
+      "parent": null,
+      "matrix": [
+        [
+          0.19611598551273346,
+          -0.605227530002594,
+          0.7715167999267578,
+          5.0
+        ],
+        [
+          0.9805806875228882,
+          0.12104541063308716,
+          -0.15430322289466858,
+          -1.0
+        ],
+        [
+          -4.579728152265261e-09,
+          0.7867957949638367,
+          0.6172133684158325,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Copper rim": {
+      "type": "LIGHT",
+      "parent": null,
+      "matrix": [
+        [
+          -0.9805806875228882,
+          -0.13730864226818085,
+          0.1400279998779297,
+          1.0
+        ],
+        [
+          0.19611606001853943,
+          -0.6865437626838684,
+          0.700140118598938,
+          5.0
+        ],
+        [
+          6.253754492036023e-08,
+          0.7140055894851685,
+          0.7001399993896484,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "RI23 fixed bronze skirt": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "223299ba874a6761e2f660a597ecf27c4fe30e7dafa82b1f4ed65001cd40fa31",
+      "evaluated": "223299ba874a6761e2f660a597ecf27c4fe30e7dafa82b1f4ed65001cd40fa31"
+    },
+    "RI23 fixed green pedestal": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "1a3e621d70358caa26756c1936b66e5c8c20cc0241581ddfb940c93a4ae5407b",
+      "evaluated": "1a3e621d70358caa26756c1936b66e5c8c20cc0241581ddfb940c93a4ae5407b"
+    },
+    "RI23 rotating green head": {
+      "type": "MESH",
+      "parent": "YawPivot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "23bdb41ff382cf98dcc304beb576b9eb73534a331e47ca1a960032a9252ad580",
+      "evaluated": "23bdb41ff382cf98dcc304beb576b9eb73534a331e47ca1a960032a9252ad580"
+    },
+    "RI23 bronze lance -1": {
+      "type": "MESH",
+      "parent": "YawPivot",
+      "matrix": [
+        [
+          -0.18428866565227509,
+          -0.7463860511779785,
+          0.6394885182380676,
+          0.0
+        ],
+        [
+          0.9828721880912781,
+          -0.1399475783109665,
+          0.11990407854318619,
+          -0.18000000715255737
+        ],
+        [
+          1.3652200436808926e-07,
+          0.6506324410438538,
+          0.7593927979469299,
+          1.1699999570846558
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "bddf024b9656bad96c8ac28282cd1813ad7548a05aee6df48fd0ddf222bda423",
+      "evaluated": "bddf024b9656bad96c8ac28282cd1813ad7548a05aee6df48fd0ddf222bda423"
+    },
+    "RI23 bronze lance 1": {
+      "type": "MESH",
+      "parent": "YawPivot",
+      "matrix": [
+        [
+          -0.18428866565227509,
+          -0.7463860511779785,
+          0.6394885182380676,
+          0.0
+        ],
+        [
+          0.9828721880912781,
+          -0.1399475783109665,
+          0.11990407854318619,
+          0.18000000715255737
+        ],
+        [
+          1.3652200436808926e-07,
+          0.6506324410438538,
+          0.7593927979469299,
+          1.1699999570846558
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "b2d7adde966987e4eb46aa13f7c7846fab54fea34df93f37af643af1baf3f34d",
+      "evaluated": "b2d7adde966987e4eb46aa13f7c7846fab54fea34df93f37af643af1baf3f34d"
+    },
+    "RI23 static yaw bearing": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.9950000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "4372062d97516e484db04689d80eb7b8edd780e7c055240baa7f2b482c1ba1c8",
+      "evaluated": "d9af72c16decb9a09d822fb59fadb4e5a4cf56592a938d270ad4eb8387c511ff"
+    },
+    "RI23 bronze front strip": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "046f33e9be74adb27fe831ffa173cd51545d506e48af05d5c0e1b2667f88308f",
+      "evaluated": "046f33e9be74adb27fe831ffa173cd51545d506e48af05d5c0e1b2667f88308f"
+    },
+    "RI23 lower base inset 0": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "c4b0feaa11950cf8e1e57a9cc69be3899dccab318e3b33272cb9a1dac777fdf5",
+      "evaluated": "c4b0feaa11950cf8e1e57a9cc69be3899dccab318e3b33272cb9a1dac777fdf5"
+    },
+    "RI23 lower base inset 1": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "776d20b36ba8a6441968974c13d987020d5088a8a4b949c91341367219d8a373",
+      "evaluated": "776d20b36ba8a6441968974c13d987020d5088a8a4b949c91341367219d8a373"
+    },
+    "RI23 lower base inset 2": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "3ebf54fa07aa87db42a4bf1ca943ca47511c9d72669ff8319546a80bc414bb3e",
+      "evaluated": "3ebf54fa07aa87db42a4bf1ca943ca47511c9d72669ff8319546a80bc414bb3e"
+    },
+    "RI23 base fitting bezel": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "981e87c0f6f24be80b21d207b7df6f0ac23928b9c4ba37604400f57011de0416",
+      "evaluated": "dbafd76e72faf06612407154c9430b63aa3c9e91fe91c4ed464a513df0e0d443"
+    },
+    "RI23 bronze base fitting": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          0.9063077569007874,
+          0.209281787276268,
+          -0.36716127395629883,
+          -0.21024149656295776
+        ],
+        [
+          -0.4226183593273163,
+          0.44880616664886475,
+          -0.7873796820640564,
+          -0.45086434483528137
+        ],
+        [
+          7.125260381712906e-09,
+          0.8687773942947388,
+          0.49520280957221985,
+          0.5162457823753357
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "c5eebc76aa81b32ac842da998d8cf37f58be831ac3a72b27ca25cf07749dff80",
+      "evaluated": "46f29b69f578970957516fa2f17cd24e26bacec4a331c8a9e8eee0b91e051ffb"
+    },
+    "RI23 fixed green spur": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -0.12403474003076553,
+          -0.4410124719142914,
+          0.8888888359069824,
+          0.28999999165534973
+        ],
+        [
+          0.9922778606414795,
+          -0.055126532912254333,
+          0.1111111268401146,
+          0.09000000357627869
+        ],
+        [
+          -3.414618277020054e-08,
+          0.8958063721656799,
+          0.44444453716278076,
+          0.8300000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "82f0dd0a059d05781615fbfa906291e5c4f00f8a3f7c8f15ecbc6955e9b61c06",
+      "evaluated": "7161ae3cb497eb4d6ad1064a2ce59db9aa04b25a34124b0c7f768d15027308f1"
+    },
+    "PlacementRoot": {
+      "type": "EMPTY",
+      "parent": null,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "YawPivot": {
+      "type": "EMPTY",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "LanceTipSocket -1": {
+      "type": "EMPTY",
+      "parent": "YawPivot",
+      "matrix": [
+        [
+          -0.18428866565227509,
+          -0.7463859915733337,
+          0.6394885778427124,
+          0.6075142025947571
+        ],
+        [
+          0.9828721880912781,
+          -0.1399475336074829,
+          0.11990412324666977,
+          -0.06609109789133072
+        ],
+        [
+          9.051160532180802e-08,
+          0.6506325006484985,
+          0.7593927383422852,
+          1.891422986984253
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "LanceTipSocket 1": {
+      "type": "EMPTY",
+      "parent": "YawPivot",
+      "matrix": [
+        [
+          -0.18428866565227509,
+          -0.7463859915733337,
+          0.6394885778427124,
+          0.6075142025947571
+        ],
+        [
+          0.9828721880912781,
+          -0.1399475336074829,
+          0.11990412324666977,
+          0.2939089238643646
+        ],
+        [
+          9.051160532180802e-08,
+          0.6506325006484985,
+          0.7593927383422852,
+          1.891422986984253
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "packed_images_before_and_after": {
+    "authored-bronze-cap-colour.png": "9efef421cd2ea8d810e751a8e3b67b063d9a525afbad6a14d380a10fe0c57340",
+    "authored-bronze-cap-roughness.png": "9a0cc0703e9438b6bb2d0da2966675abd432b717eb49da19c8d4fe4404d95247",
+    "authored-bronze-shell-colour.png": "5f184ff7bb7011e47ec8a4d6314cab76df1cca9c38688c374637a5e417487401",
+    "authored-bronze-shell-roughness.png": "cebf0cdeefaf48302379dddc94b610b4b66be95578fa5886f70e6e8b6cf88fec",
+    "authored-green-cap-colour.png": "db5384cf40137f8378b5581118137c01f4c1ae55856ec1e91b8d4f69c68a7015",
+    "authored-green-cap-roughness.png": "9a0cc0703e9438b6bb2d0da2966675abd432b717eb49da19c8d4fe4404d95247",
+    "authored-green-shell-colour.png": "0420c7b890108360b9dd04d8f394745498776daa692aa715ede2631709bc63a4",
+    "authored-green-shell-roughness.png": "cebf0cdeefaf48302379dddc94b610b4b66be95578fa5886f70e6e8b6cf88fec"
+  },
+  "idempotent": true,
+  "uv_checks": {
+    "RI23 bronze front strip": "Finite shader-selected UVs with nonzero face areas",
+    "RI23 bronze base fitting": "Finite shader-selected UVs with nonzero face areas"
+  },
+  "saved_source_files_unchanged": true,
+  "exported_or_saved_model": false,
+  "final_visual_acceptance": false,
+  "preview_files": {
+    "docs/assets/reconstruction/evidence/detail-uv-proposal/previews/ultrathermal-lance-before.png": "7ff775c06cd8b4d9ed85f8bdee1e83423fc88a91fac235013c1ee40064995dc4",
+    "docs/assets/reconstruction/evidence/detail-uv-proposal/previews/ultrathermal-lance-proposed.png": "3b3ce025b4d63e2f99bd34690e0779aeeaa6bd26a610d0f190ae0595cd9d5cb7"
+  },
+  "scope": "In-memory UV proposal only; no repaired export or final art acceptance"
+}

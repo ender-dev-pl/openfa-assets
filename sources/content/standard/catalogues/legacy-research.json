@@ -1,0 +1,552 @@
+{
+  "categories": [
+    {
+      "id": "openfa:research-category/defence",
+      "nameLocalizationKey": "openfa:text/gameplay/sci-tek-category/defence",
+      "displayOrder": 0,
+      "legacy": { "category": "Defence" }
+    },
+    {
+      "id": "openfa:research-category/ships-hardpoints",
+      "nameLocalizationKey": "openfa:text/gameplay/sci-tek-category/ships-hardpoints",
+      "displayOrder": 1,
+      "legacy": { "category": "ShipsAndHardpoints" }
+    },
+    {
+      "id": "openfa:research-category/missiles",
+      "nameLocalizationKey": "openfa:text/gameplay/sci-tek-category/missiles",
+      "displayOrder": 2,
+      "legacy": { "category": "Missiles" }
+    },
+    {
+      "id": "openfa:research-category/mining",
+      "nameLocalizationKey": "openfa:text/gameplay/sci-tek-category/mining",
+      "displayOrder": 3,
+      "legacy": { "category": "Mining" }
+    },
+    {
+      "id": "openfa:research-category/power",
+      "nameLocalizationKey": "openfa:text/gameplay/sci-tek-category/power",
+      "displayOrder": 4,
+      "legacy": { "category": "Power" }
+    },
+    {
+      "id": "openfa:research-category/miscellaneous",
+      "nameLocalizationKey": "openfa:text/gameplay/sci-tek-category/miscellaneous",
+      "displayOrder": 5,
+      "legacy": { "category": "Miscellaneous" }
+    }
+  ],
+  "research": [
+    {
+      "id": "scitek:mk2-mine",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/Mk2Mine",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/Mk2Mine",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/Mk2Mine",
+      "category": "openfa:research-category/mining",
+      "categoryOrder": 1,
+      "cost": 75000,
+      "modifiers": {
+        "mining.common.period": 2
+      },
+      "legacy": {
+        "blueprintIndex": 0
+      }
+    },
+    {
+      "id": "scitek:mk2-deep-bore-mine",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/Mk2DeepBoreMine",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/Mk2DeepBoreMine",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/Mk2DeepBoreMine",
+      "category": "openfa:research-category/mining",
+      "categoryOrder": 2,
+      "cost": 95000,
+      "modifiers": {
+        "mining.deep-bore.period": 8
+      },
+      "legacy": {
+        "blueprintIndex": 1
+      }
+    },
+    {
+      "id": "scitek:anti-missile-pod",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/AntiMissilePod",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/AntiMissilePod",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/AntiMissilePod",
+      "category": "openfa:research-category/defence",
+      "categoryOrder": 0,
+      "cost": 250000,
+      "legacy": {
+        "blueprintIndex": 2
+      }
+    },
+    {
+      "id": "scitek:anti-virus-missile",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/AntiVirusMissile",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/AntiVirusMissile",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/AntiVirusMissile",
+      "category": "openfa:research-category/missiles",
+      "categoryOrder": 4,
+      "cost": 90000,
+      "legacy": {
+        "blueprintIndex": 3
+      }
+    },
+    {
+      "id": "scitek:asteroid-engines",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/AsteroidEngines",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/AsteroidEngines",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/AsteroidEngines",
+      "category": "openfa:research-category/miscellaneous",
+      "categoryOrder": 1,
+      "cost": 190000,
+      "legacy": {
+        "blueprintIndex": 4
+      }
+    },
+    {
+      "id": "scitek:asteroid-tracker",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/AsteroidTracker",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/AsteroidTracker",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/AsteroidTracker",
+      "category": "openfa:research-category/miscellaneous",
+      "categoryOrder": 3,
+      "cost": 40000,
+      "modifiers": {
+        "strategic-map.asteroid-drift-telemetry-enabled": 1
+      },
+      "legacy": {
+        "blueprintIndex": 5
+      }
+    },
+    {
+      "id": "scitek:building-armour",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/BuildingArmour",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/BuildingArmour",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/BuildingArmour",
+      "category": "openfa:research-category/defence",
+      "categoryOrder": 4,
+      "cost": 110000,
+      "modifiers": {
+        "building.armour.bonus": 10
+      },
+      "legacy": {
+        "blueprintIndex": 6
+      }
+    },
+    {
+      "id": "scitek:construction-droids",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/ConstructionDroids",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/ConstructionDroids",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/ConstructionDroids",
+      "category": "openfa:research-category/miscellaneous",
+      "categoryOrder": 4,
+      "cost": 80000,
+      "modifiers": {
+        "ship.construction.queue-capacity": 6,
+        "ship.construction.reduction-divisor": 4
+      },
+      "legacy": {
+        "blueprintIndex": 7
+      }
+    },
+    {
+      "id": "scitek:deflector",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/Deflector",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/Deflector",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/Deflector",
+      "category": "openfa:research-category/ships-hardpoints",
+      "categoryOrder": 3,
+      "cost": 115000,
+      "legacy": {
+        "blueprintIndex": 8
+      }
+    },
+    {
+      "id": "scitek:fleet-battleship",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/FleetBattleship",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/FleetBattleship",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/FleetBattleship",
+      "category": "openfa:research-category/ships-hardpoints",
+      "categoryOrder": 1,
+      "cost": 150000,
+      "legacy": {
+        "blueprintIndex": 9
+      }
+    },
+    {
+      "id": "scitek:gravity-nullifier",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/GravityNullifier",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/GravityNullifier",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/GravityNullifier",
+      "category": "openfa:research-category/miscellaneous",
+      "categoryOrder": 0,
+      "cost": 70000,
+      "legacy": {
+        "blueprintIndex": 10
+      }
+    },
+    {
+      "id": "scitek:hi-energy-power-stores",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/HiEnergyPowerStores",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/HiEnergyPowerStores",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/HiEnergyPowerStores",
+      "category": "openfa:research-category/power",
+      "categoryOrder": 0,
+      "cost": 30000,
+      "modifiers": {
+        "power.storage.capacity": 400,
+        "power.storage.multiplier": 2
+      },
+      "legacy": {
+        "blueprintIndex": 11
+      }
+    },
+    {
+      "id": "scitek:improved-sensors",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/ImprovedSensors",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/ImprovedSensors",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/ImprovedSensors",
+      "category": "openfa:research-category/miscellaneous",
+      "categoryOrder": 2,
+      "cost": 44000,
+      "modifiers": {
+        "sensor.range": 60
+      },
+      "legacy": {
+        "blueprintIndex": 12
+      }
+    },
+    {
+      "id": "scitek:mega-missile",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/MegaMissile",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/MegaMissile",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/MegaMissile",
+      "category": "openfa:research-category/missiles",
+      "categoryOrder": 0,
+      "cost": 500000,
+      "legacy": {
+        "blueprintIndex": 13
+      }
+    },
+    {
+      "id": "scitek:missile-bay-extension",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/MissileBayExtension",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/MissileBayExtension",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/MissileBayExtension",
+      "category": "openfa:research-category/missiles",
+      "categoryOrder": 5,
+      "cost": 60000,
+      "modifiers": {
+        "missile.storage.capacity": 20
+      },
+      "legacy": {
+        "blueprintIndex": 14
+      }
+    },
+    {
+      "id": "scitek:missile-guidance-system",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/MissileGuidanceSystem",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/MissileGuidanceSystem",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/MissileGuidanceSystem",
+      "category": "openfa:research-category/missiles",
+      "categoryOrder": 6,
+      "cost": 80000,
+      "modifiers": {
+        "missile.accuracy.full-range": 64
+      },
+      "legacy": {
+        "blueprintIndex": 15
+      }
+    },
+    {
+      "id": "scitek:nuclear-missile",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/NuclearMissile",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/NuclearMissile",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/NuclearMissile",
+      "category": "openfa:research-category/missiles",
+      "categoryOrder": 1,
+      "cost": 300000,
+      "legacy": {
+        "blueprintIndex": 16
+      }
+    },
+    {
+      "id": "scitek:ore-teleporter",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/OreTeleporter",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/OreTeleporter",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/OreTeleporter",
+      "category": "openfa:research-category/mining",
+      "categoryOrder": 3,
+      "cost": 150000,
+      "legacy": {
+        "blueprintIndex": 17
+      }
+    },
+    {
+      "id": "scitek:photon-turret",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/PhotonTurret",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/PhotonTurret",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/PhotonTurret",
+      "category": "openfa:research-category/defence",
+      "categoryOrder": 1,
+      "cost": 100000,
+      "legacy": {
+        "blueprintIndex": 18
+      }
+    },
+    {
+      "id": "scitek:plasma-turret",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/PlasmaTurret",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/PlasmaTurret",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/PlasmaTurret",
+      "category": "openfa:research-category/defence",
+      "categoryOrder": 2,
+      "cost": 40000,
+      "legacy": {
+        "blueprintIndex": 19
+      }
+    },
+    {
+      "id": "scitek:power-amplifier",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/PowerAmplifier",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/PowerAmplifier",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/PowerAmplifier",
+      "category": "openfa:research-category/power",
+      "categoryOrder": 3,
+      "cost": 100000,
+      "modifiers": {
+        "power.solar.multiplier": 2
+      },
+      "legacy": {
+        "blueprintIndex": 20
+      }
+    },
+    {
+      "id": "scitek:powerplant",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/Powerplant",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/Powerplant",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/Powerplant",
+      "category": "openfa:research-category/power",
+      "categoryOrder": 1,
+      "cost": 40000,
+      "legacy": {
+        "blueprintIndex": 21
+      }
+    },
+    {
+      "id": "scitek:repair-facility",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/RepairFacility",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/RepairFacility",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/RepairFacility",
+      "category": "openfa:research-category/miscellaneous",
+      "categoryOrder": 5,
+      "cost": 150000,
+      "legacy": {
+        "blueprintIndex": 22
+      }
+    },
+    {
+      "id": "scitek:screen-generator",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/ScreenGenerator",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/ScreenGenerator",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/ScreenGenerator",
+      "category": "openfa:research-category/defence",
+      "categoryOrder": 5,
+      "cost": 125000,
+      "legacy": {
+        "blueprintIndex": 23
+      }
+    },
+    {
+      "id": "scitek:seismic-penetrator",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/SeismicPenetrator",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/SeismicPenetrator",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/SeismicPenetrator",
+      "category": "openfa:research-category/mining",
+      "categoryOrder": 0,
+      "cost": 120000,
+      "legacy": {
+        "blueprintIndex": 24
+      }
+    },
+    {
+      "id": "scitek:shield-x40",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/ShieldX40",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/ShieldX40",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/ShieldX40",
+      "category": "openfa:research-category/ships-hardpoints",
+      "categoryOrder": 5,
+      "cost": 15000,
+      "legacy": {
+        "blueprintIndex": 25
+      }
+    },
+    {
+      "id": "scitek:shield-x50",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/ShieldX50",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/ShieldX50",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/ShieldX50",
+      "category": "openfa:research-category/ships-hardpoints",
+      "categoryOrder": 6,
+      "cost": 60000,
+      "legacy": {
+        "blueprintIndex": 26
+      }
+    },
+    {
+      "id": "scitek:solar-matrix",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/SolarMatrix",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/SolarMatrix",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/SolarMatrix",
+      "category": "openfa:research-category/power",
+      "categoryOrder": 2,
+      "cost": 50000,
+      "legacy": {
+        "blueprintIndex": 27
+      }
+    },
+    {
+      "id": "scitek:static-inducer",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/StaticInducer",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/StaticInducer",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/StaticInducer",
+      "category": "openfa:research-category/ships-hardpoints",
+      "categoryOrder": 7,
+      "cost": 80000,
+      "legacy": {
+        "blueprintIndex": 28
+      }
+    },
+    {
+      "id": "scitek:stasis-missile",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/StasisMissile",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/StasisMissile",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/StasisMissile",
+      "category": "openfa:research-category/missiles",
+      "categoryOrder": 2,
+      "cost": 150000,
+      "legacy": {
+        "blueprintIndex": 29
+      }
+    },
+    {
+      "id": "scitek:terminator",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/Terminator",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/Terminator",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/Terminator",
+      "category": "openfa:research-category/ships-hardpoints",
+      "categoryOrder": 0,
+      "cost": 90000,
+      "legacy": {
+        "blueprintIndex": 30
+      }
+    },
+    {
+      "id": "scitek:turret-optimiser",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/TurretOptimiser",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/TurretOptimiser",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/TurretOptimiser",
+      "category": "openfa:research-category/defence",
+      "categoryOrder": 3,
+      "cost": 240000,
+      "modifiers": {
+        "combat.turret.damage-multiplier": 2
+      },
+      "legacy": {
+        "blueprintIndex": 31
+      }
+    },
+    {
+      "id": "scitek:virus-missile",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/VirusMissile",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/VirusMissile",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/VirusMissile",
+      "category": "openfa:research-category/missiles",
+      "categoryOrder": 3,
+      "cost": 350000,
+      "legacy": {
+        "blueprintIndex": 32
+      }
+    },
+    {
+      "id": "scitek:warp-generator",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/WarpGenerator",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/WarpGenerator",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/WarpGenerator",
+      "category": "openfa:research-category/ships-hardpoints",
+      "categoryOrder": 4,
+      "cost": 75000,
+      "legacy": {
+        "blueprintIndex": 33
+      }
+    },
+    {
+      "id": "scitek:long-range-transmitter",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/LongRangeTransmitter",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/LongRangeTransmitter",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/LongRangeTransmitter",
+      "category": "openfa:research-category/miscellaneous",
+      "categoryOrder": 6,
+      "cost": 35000,
+      "modifiers": {
+        "ship.survey.remote-delivery": 1
+      },
+      "legacy": {
+        "blueprintIndex": 34
+      }
+    },
+    {
+      "id": "scitek:command-cruiser",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/CommandCruiser",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/CommandCruiser",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/CommandCruiser",
+      "category": "openfa:research-category/ships-hardpoints",
+      "categoryOrder": 2,
+      "cost": 250000,
+      "legacy": {
+        "blueprintIndex": 35
+      }
+    },
+    {
+      "id": "scitek:scrambler",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/Scrambler",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/Scrambler",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/Scrambler",
+      "legacy": {
+        "blueprintIndex": 36
+      }
+    },
+    {
+      "id": "scitek:double-speed-engines",
+      "nameLocalizationKey": "openfa:text/content/sci-tek/DoubleSpeedEngines",
+      "descriptionLocalizationKey": "openfa:text/content/sci-tek-description/DoubleSpeedEngines",
+      "informationDescriptionLocalizationKey": "openfa:text/content/sci-tek-information/DoubleSpeedEngines",
+      "legacy": {
+        "blueprintIndex": 37
+      }
+    }
+  ],
+  "baseModifiers": {
+    "mining.common.period": 4,
+    "strategic-map.asteroid-drift-telemetry-enabled": 0,
+    "building.armour.bonus": 0,
+    "mining.deep-bore.period": 16,
+    "missile.accuracy.full-range": 32,
+    "missile.storage.capacity": 10,
+    "power.storage.capacity": 200,
+    "power.storage.multiplier": 1,
+    "sensor.range": 30,
+    "ship.construction.queue-capacity": 3,
+    "ship.construction.reduction-divisor": 0,
+    "ship.survey.remote-delivery": 0,
+    "ship.discovery.report-lifetime-days": 60,
+    "ship.survey.report-lifetime-days": 365,
+    "power.solar.multiplier": 1,
+    "combat.turret.damage-multiplier": 1
+  },
+  "openFa": {
+    "engineContractVersion": 4,
+    "writtenByVersion": "0.323.4-dev"
+  }
+}

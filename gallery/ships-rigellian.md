@@ -1,0 +1,53 @@
+# Ships / Rigellian
+
+[All groups](README.md)
+
+## Lazzaro Research
+
+`openfa:ship/rigellian/lazzaro-research`
+
+**First available iteration — initial-reference-study**
+
+![Lazzaro Research](../gallery/media/docs/assets/reconstruction/ships/rigellian/lazzaro-research/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/ships/rigellian/lazzaro-research/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/lazzaro-research/model.glb)
+
+## Delphini Assault
+
+`openfa:ship/rigellian/delphini-assault`
+
+**First available iteration — initial-reference-study**
+
+![Delphini Assault](../gallery/media/docs/assets/reconstruction/ships/rigellian/delphini-assault/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/ships/rigellian/delphini-assault/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/delphini-assault/model.glb)
+
+## Messier-Lukannon
+
+`openfa:ship/rigellian/messier-lukannon`
+
+**First available iteration — initial-reference-study**
+
+![Messier-Lukannon](../gallery/media/docs/assets/reconstruction/ships/rigellian/messier-lukannon/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/ships/rigellian/messier-lukannon/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/messier-lukannon/model.glb)
+
+## Transportation
+
+`openfa:ship/rigellian/transportation`
+
+**First available iteration — initial-reference-study**
+
+![Transportation](../gallery/media/docs/assets/reconstruction/ships/rigellian/transportation/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/ships/rigellian/transportation/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/transportation/model.glb)
+
+## Observatory
+
+`openfa:ship/rigellian/observatory`
+
+**First available iteration — initial-reference-study**
+
+![Observatory](../gallery/media/docs/assets/reconstruction/ships/rigellian/observatory/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/ships/rigellian/observatory/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/observatory/model.glb)

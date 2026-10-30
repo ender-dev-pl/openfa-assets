@@ -1,0 +1,309 @@
+{
+  "issue": 1115,
+  "id": "openfa:ship/rigellian/transportation",
+  "category": "ships",
+  "culture": "rigellian",
+  "blend": "docs/assets/reconstruction/ships/rigellian/transportation/model.blend",
+  "source_files_sha256": {
+    "authored-aft-colour.png": "b2e9577b1c1e37e7218c80f1f7af8744b63b63a60cf6321c8370ce244dfa7cd6",
+    "authored-aft-roughness.png": "d9fdb4f6b4a481c2866f502e1d9b5648e24367fc3ff95a7b456676a3fad0dd37",
+    "authored-bronze-colour.png": "75e6fb1b0ccf6bfec057e48ae04de2c78ddc31b7af2fe4b1c92bff7716b977c0",
+    "authored-bronze-roughness.png": "d9fdb4f6b4a481c2866f502e1d9b5648e24367fc3ff95a7b456676a3fad0dd37",
+    "authored-hull-colour.png": "223c322e008f232979f156bcd6a4f0d0cd5cbdedea1b2654644a9958baa78898",
+    "authored-hull-roughness.png": "d9fdb4f6b4a481c2866f502e1d9b5648e24367fc3ff95a7b456676a3fad0dd37",
+    "authored-wear.json": "2c5448ae5043406532b7058c68a5b2990d74a7704624db42222c9b3a9cfaeb89",
+    "front-quarter.png": "bf32d47c4a20fb8bb0a353f26de0632ad532c03db0f30319da47003b7a1cfee1",
+    "front.png": "2465368833a1921aa169a62982712769a24cce7fa1257887fc463ad084fd07d0",
+    "gallery.png": "dce6f53d51f5e868d6be9838b6330d8db10868e15c7c128ace665360078cfeb5",
+    "hull-detail.png": "700a3916290113d823abc2c9d5cd2d42f877824a38022dbcc0925c3777ec5680",
+    "imported-glb-front-quarter.png": "73dd3467d6ea07c13c9114cfab57bcef90486a7162d5d7c235255941d7c46d2d",
+    "imported-glb-hull-detail.png": "0e24b1f95b433c5c78b33e81eadbe24547d46b1fadbf30f33b6c9b22b6353928",
+    "model.blend": "693f2b0327d10757a1c03c2d8143e95d9e0bf006d7015dd18f5729adfb7ff571",
+    "model.glb": "381b29ac474431b80745a63255bac459b1bcabfd0478bdffb8a61529b7654e0d",
+    "model.json": "a60562d7a7d0532e12e1d8e890c7d3f2ee47af1621d0ce081bf664089648b107",
+    "rear-quarter.png": "21a5b6800cf3aa5ec36ea10e258e08b02c08b500b0c91d8616aa5db14ea72219",
+    "render-review.json": "fde9a6f43259c1c055e6d78b307b295509c2272bcaa3bcc79123ff1b80bb244f",
+    "side.png": "1984f62fa1d6aeb90fd292753d5acfd9986e47fde8e9b24381db1bbd59a055cf",
+    "technical-review.json": "68772de9e499d08e69b264d6674f1d00a58d499521994732f62e4253d76d9b20",
+    "top.png": "64d9a9c520d79a83a398c7ca9e92b72c526dfa3f4d1c423a5871a776955cf937",
+    "underside.png": "a944f00afb1cfa092bdc71f3d13f082f7dec81e471615b0d7606ab586fb1bb39"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "hardpointSlots": 2,
+    "defaultHardpointIds": []
+  },
+  "declared_sockets": {
+    "AlignmentForward": {
+      "position": [
+        0,
+        -2.24,
+        0.02
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Damage/operational variants; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 19,
+    "helpers": {
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -2.240000009536743
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              0.019999999552965164
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -2.240000009536743,
+            0.019999999552965164
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/rigellian/transportation",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 19,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/rigellian/transportation",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -2.240000009536743
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              0.019999999552965164
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -2.240000009536743,
+            0.019999999552965164
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentForward": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -2.24,
+          0.02
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 9.53674295089968e-09,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -2.24,
+          0.02
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 9.53674295089968e-09,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

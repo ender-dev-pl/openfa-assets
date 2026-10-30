@@ -1,0 +1,951 @@
+{
+  "issue": 1116,
+  "id": "openfa:building/legacy/121",
+  "category": "buildings",
+  "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar15/model.blend",
+  "blend_sha256": "45c7325e8ce4d78c45a7147e3f42c94e3cbc77d5376518a4c16b3746f31f1c32",
+  "glb_sha256": "0b94c27166bf25f716c5ec44b1d76b6d15e276169f7913ca20644c4fb056c75d",
+  "native": {
+    "bindings": {
+      "Turret armoured pedestal": [
+        "artemian | body"
+      ],
+      "Weapon pivot": [
+        "artemian | body"
+      ],
+      "Weapon barrel": [
+        "artemian | cap"
+      ],
+      "Weapon dark bore": [
+        "artemian | dark"
+      ],
+      "Weapon barrel.001": [
+        "artemian | cap"
+      ],
+      "Weapon dark bore.001": [
+        "artemian | dark"
+      ],
+      "Inset service window": [
+        "artemian | red"
+      ]
+    },
+    "materials": {
+      "artemian | body": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.10000000149011612,
+              0.27000001072883606,
+              0.1899999976158142
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "61c31aab355e584df2a2cdf42aaeaddb89527ff23bc69bdb113d4ee8e11f80d4",
+          "minimum": [
+            26,
+            69,
+            48
+          ],
+          "maximum": [
+            26,
+            69,
+            48
+          ],
+          "uniform": [
+            26,
+            69,
+            48
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.4300000071525574
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9",
+          "minimum": [
+            110
+          ],
+          "maximum": [
+            110
+          ],
+          "uniform": [
+            110
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.44999998807907104
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "043a718774c572bd8a25adbeb1bfcd5c0256ae11cecf9f9c3f925d0e52beaf89",
+          "minimum": [
+            115
+          ],
+          "maximum": [
+            115
+          ],
+          "uniform": [
+            115
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "artemian | cap": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.3799999952316284,
+              0.23999999463558197,
+              0.10000000149011612
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "8acc9a60e7d36514f38d27ac81a9e237dddc9ab11ba97d874630c526f179e971",
+          "minimum": [
+            97,
+            61,
+            26
+          ],
+          "maximum": [
+            97,
+            61,
+            26
+          ],
+          "uniform": [
+            97,
+            61,
+            26
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.4300000071525574
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9",
+          "minimum": [
+            110
+          ],
+          "maximum": [
+            110
+          ],
+          "uniform": [
+            110
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.44999998807907104
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "043a718774c572bd8a25adbeb1bfcd5c0256ae11cecf9f9c3f925d0e52beaf89",
+          "minimum": [
+            115
+          ],
+          "maximum": [
+            115
+          ],
+          "uniform": [
+            115
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "artemian | dark": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.014000000432133675,
+              0.01899999938905239,
+              0.023000000044703484
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "787c798e39a5bc1910355bae6d0cd87a36b2e10fd0202a83e3bb6b005da83472",
+          "minimum": [
+            4,
+            5,
+            6
+          ],
+          "maximum": [
+            4,
+            5,
+            6
+          ],
+          "uniform": [
+            4,
+            5,
+            6
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.4300000071525574
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9",
+          "minimum": [
+            110
+          ],
+          "maximum": [
+            110
+          ],
+          "uniform": [
+            110
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.44999998807907104
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "043a718774c572bd8a25adbeb1bfcd5c0256ae11cecf9f9c3f925d0e52beaf89",
+          "minimum": [
+            115
+          ],
+          "maximum": [
+            115
+          ],
+          "uniform": [
+            115
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "artemian | red": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.5799999833106995,
+              0.02500000037252903,
+              0.014999999664723873
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "078256be771df323cee82ea3d716731b9177458be132c0dfd3b81a656bcd1a99",
+          "minimum": [
+            148,
+            6,
+            4
+          ],
+          "maximum": [
+            148,
+            6,
+            4
+          ],
+          "uniform": [
+            148,
+            6,
+            4
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.4300000071525574
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9",
+          "minimum": [
+            110
+          ],
+          "maximum": [
+            110
+          ],
+          "uniform": [
+            110
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.44999998807907104
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "043a718774c572bd8a25adbeb1bfcd5c0256ae11cecf9f9c3f925d0e52beaf89",
+          "minimum": [
+            115
+          ],
+          "maximum": [
+            115
+          ],
+          "uniform": [
+            115
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      }
+    },
+    "decoded_image_datablocks": 0
+  },
+  "imported": {
+    "bindings": {
+      "Weapon barrel": [
+        "artemian | cap"
+      ],
+      "Weapon barrel.001": [
+        "artemian | cap"
+      ],
+      "Weapon dark bore": [
+        "artemian | dark"
+      ],
+      "Weapon dark bore.001": [
+        "artemian | dark"
+      ],
+      "Weapon pivot": [
+        "artemian | body"
+      ],
+      "Inset service window": [
+        "artemian | red"
+      ],
+      "Turret armoured pedestal": [
+        "artemian | body"
+      ]
+    },
+    "materials": {
+      "artemian | body": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.10000000149011612,
+              0.27000001072883606,
+              0.1899999976158142
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "61c31aab355e584df2a2cdf42aaeaddb89527ff23bc69bdb113d4ee8e11f80d4",
+          "minimum": [
+            26,
+            69,
+            48
+          ],
+          "maximum": [
+            26,
+            69,
+            48
+          ],
+          "uniform": [
+            26,
+            69,
+            48
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.4300000071525574
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9",
+          "minimum": [
+            110
+          ],
+          "maximum": [
+            110
+          ],
+          "uniform": [
+            110
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.44999998807907104
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "043a718774c572bd8a25adbeb1bfcd5c0256ae11cecf9f9c3f925d0e52beaf89",
+          "minimum": [
+            115
+          ],
+          "maximum": [
+            115
+          ],
+          "uniform": [
+            115
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "artemian | cap": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.3799999952316284,
+              0.23999999463558197,
+              0.10000000149011612
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "8acc9a60e7d36514f38d27ac81a9e237dddc9ab11ba97d874630c526f179e971",
+          "minimum": [
+            97,
+            61,
+            26
+          ],
+          "maximum": [
+            97,
+            61,
+            26
+          ],
+          "uniform": [
+            97,
+            61,
+            26
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.4300000071525574
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9",
+          "minimum": [
+            110
+          ],
+          "maximum": [
+            110
+          ],
+          "uniform": [
+            110
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.44999998807907104
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "043a718774c572bd8a25adbeb1bfcd5c0256ae11cecf9f9c3f925d0e52beaf89",
+          "minimum": [
+            115
+          ],
+          "maximum": [
+            115
+          ],
+          "uniform": [
+            115
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "artemian | dark": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.014000000432133675,
+              0.01899999938905239,
+              0.023000000044703484
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "787c798e39a5bc1910355bae6d0cd87a36b2e10fd0202a83e3bb6b005da83472",
+          "minimum": [
+            4,
+            5,
+            6
+          ],
+          "maximum": [
+            4,
+            5,
+            6
+          ],
+          "uniform": [
+            4,
+            5,
+            6
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.4300000071525574
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9",
+          "minimum": [
+            110
+          ],
+          "maximum": [
+            110
+          ],
+          "uniform": [
+            110
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.44999998807907104
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "043a718774c572bd8a25adbeb1bfcd5c0256ae11cecf9f9c3f925d0e52beaf89",
+          "minimum": [
+            115
+          ],
+          "maximum": [
+            115
+          ],
+          "uniform": [
+            115
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      },
+      "artemian | red": {
+        "Base Color": {
+          "source": {
+            "constant": [
+              0.5799999833106995,
+              0.02500000037252903,
+              0.014999999664723873
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "decoded_sha256": "078256be771df323cee82ea3d716731b9177458be132c0dfd3b81a656bcd1a99",
+          "minimum": [
+            148,
+            6,
+            4
+          ],
+          "maximum": [
+            148,
+            6,
+            4
+          ],
+          "uniform": [
+            148,
+            6,
+            4
+          ]
+        },
+        "Roughness": {
+          "source": {
+            "constant": [
+              0.4300000071525574
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9",
+          "minimum": [
+            110
+          ],
+          "maximum": [
+            110
+          ],
+          "uniform": [
+            110
+          ]
+        },
+        "Metallic": {
+          "source": {
+            "constant": [
+              0.44999998807907104
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "043a718774c572bd8a25adbeb1bfcd5c0256ae11cecf9f9c3f925d0e52beaf89",
+          "minimum": [
+            115
+          ],
+          "maximum": [
+            115
+          ],
+          "uniform": [
+            115
+          ]
+        },
+        "Alpha": {
+          "source": {
+            "constant": [
+              1.0
+            ]
+          },
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "decoded_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+          "minimum": [
+            255
+          ],
+          "maximum": [
+            255
+          ],
+          "uniform": [
+            255
+          ]
+        }
+      }
+    },
+    "decoded_image_datablocks": 0
+  },
+  "comparisons": {
+    "artemian | body": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    },
+    "artemian | cap": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    },
+    "artemian | dark": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    },
+    "artemian | red": {
+      "Base Color": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Roughness": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Metallic": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      },
+      "Alpha": {
+        "status": "equal-at-8-bit-readback",
+        "maximum_channel_difference": 0,
+        "differing_components": 0
+      }
+    }
+  },
+  "missing_materials": [],
+  "extra_materials": [],
+  "material_bindings_equal": true,
+  "glb_material_names": [
+    "artemian | cap",
+    "artemian | dark",
+    "artemian | body",
+    "artemian | red"
+  ],
+  "verified_four_input_aliases": {},
+  "material_bindings_equal_under_verified_four_input_aliases": true,
+  "source_assets_unchanged": true,
+  "final_visual_acceptance": false
+}

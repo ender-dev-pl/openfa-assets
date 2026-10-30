@@ -1,0 +1,90 @@
+{
+  "issue": 1111,
+  "checker_sha256": "db9bb25e3e9b08976e13e967191380659dfe37ffa1750b1a59da53ea57e01a61",
+  "records": [
+    {
+      "id": "openfa:building/legacy/045",
+      "revision": 3,
+      "report": "strategic-bunker.json",
+      "report_sha256": "5d6834a6b2ec1ac2eec79db1fbe7fe466bdac51367f0c3f88c774c4006fed46c",
+      "model_json_sha256": "2489db4e234eed9790082d9d072548184c1c59f200536c61a0eab4bf897ce830",
+      "technical_report_sha256": "98dd802fbcdc3ccb7673f9e55961c58cb465607d7a6e03367e9ee402b62e4ebb",
+      "render_report_sha256": "1c2a3b3aa98ad3bb410382b9755472f9b86a4a2eb3fe5f2b13eeca8456f49b2f",
+      "comparison": "strategic-bunker-comparison.png",
+      "comparison_sha256": "30b5a3d283bd3e97f8ff85f41ba07f1e8590c3a8ce33d918fa42c66830b8ea09",
+      "native_binary_silhouette_unchanged": true,
+      "native_before_after_foreground_mean_rgba_difference": [
+        0.0040569389410995485,
+        0.00460836753503541,
+        0.004104204249151194,
+        0.0
+      ],
+      "native_imported_render_difference": [
+        0.24226621397004955,
+        0.18770629337576708,
+        0.18947086487636183,
+        0.0
+      ],
+      "detail_roundtrip_report_sha256": "33281910b4ed7eded4f11c5044c39d900d238aeabe14dd8200bd70b4d961648b",
+      "isolated_detail_render_measurement": {
+        "foreground_mean_rgba_difference": [
+          1.7439200950010574,
+          1.4659606656580937,
+          1.4748426138304622,
+          0.005400745042539001
+        ],
+        "alpha_different_pixels": 85,
+        "maximum_alpha_difference": 4,
+        "threshold128_silhouette_different_pixels": 1,
+        "scope": "Diagnostic measurements of isolated detail shading, not a full shader/artistic equivalence claim"
+      },
+      "repaired_details": [
+        "RI06 upper mast neck retaining collar"
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/062",
+      "revision": 2,
+      "report": "ultrathermal-lance.json",
+      "report_sha256": "aa492c4b751ba690a13baa9ca376b6c927a2d75fc4983ac7cb5a4728692ff03e",
+      "model_json_sha256": "35d34c13ed4b5e1dc49a4305220283a7fe19666a6b6a4f492a563597683178cb",
+      "technical_report_sha256": "3e3a952642a6fe23bbb9af6fba8464a078c3392fd527cb07f3d7d10a9077faeb",
+      "render_report_sha256": "13d248c866fd490b994c9cc57cdf0ece51dbb409ea3021e1f4aa01b8e69ba47c",
+      "comparison": "ultrathermal-lance-comparison.png",
+      "comparison_sha256": "95ff700cf6596c061396269204a3eeef92f498c420d5f54c643d5f2751443bc6",
+      "native_binary_silhouette_unchanged": true,
+      "native_before_after_foreground_mean_rgba_difference": [
+        0.038878551230018606,
+        0.03555991853599215,
+        0.03147206634335028,
+        0.0
+      ],
+      "native_imported_render_difference": [
+        0.005853394089463891,
+        0.005618965289885863,
+        0.005311277490439701,
+        0.0
+      ],
+      "detail_roundtrip_report_sha256": "6808dd5c0ad5409f59e1912e4ca3efa363088663d72f40d7776318ecc9f530c3",
+      "isolated_detail_render_measurement": {
+        "foreground_mean_rgba_difference": [
+          0.005183183449253533,
+          0.004754943221252529,
+          0.004415304419734491,
+          0.0
+        ],
+        "alpha_different_pixels": 0,
+        "maximum_alpha_difference": 0,
+        "threshold128_silhouette_different_pixels": 0,
+        "scope": "Diagnostic measurements of isolated detail shading, not a full shader/artistic equivalence claim"
+      },
+      "repaired_details": [
+        "RI23 bronze front strip",
+        "RI23 bronze base fitting"
+      ]
+    }
+  ],
+  "applied": true,
+  "final_visual_acceptance": false,
+  "scope": "UV-only technical repair with actual native/GLB checks. No artistic refining, new wear, state or game integration acceptance."
+}

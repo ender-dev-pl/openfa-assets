@@ -1,0 +1,307 @@
+{
+  "issue": 1115,
+  "id": "openfa:ship/artemian/geostationary-construction",
+  "category": "ships",
+  "culture": "artemian",
+  "blend": "docs/assets/reconstruction/ships/artemian/geostationary-construction/model.blend",
+  "source_files_sha256": {
+    "authored-copper-colour.png": "cdd0692bf134699c7cf88da06824f0ce1e61c45f6b9a11379bbd06b87c5cf23f",
+    "authored-copper-roughness.png": "7dced44bd48fe9231d98f441274ac478e35de8f575d62efd9747542540a40799",
+    "authored-green-colour.png": "b56377b63134eb3a69934708b75ebaf505cbd113115e63084f00084394dcee59",
+    "authored-green-roughness.png": "7dced44bd48fe9231d98f441274ac478e35de8f575d62efd9747542540a40799",
+    "authored-wear.json": "158128813810e43b2cb89724a73846ec2de4143a2608c26bd61f6b4cfc9d27d2",
+    "front-quarter.png": "b4d7182b538e5c4b2c344d3ee468ac28d39145050b8c5d40abef4f585e786f4e",
+    "front.png": "86ad1a139ad9495d43c537ed595c1402f57d1150146fb5b4f57106021e945246",
+    "gallery.png": "dbe165e230998480d5b8fa32a8755b3f77839690d6cfc8c542d6108e188a18ca",
+    "hull-detail.png": "8de4948c78c54bacb706f40ca9227aa04351575cedf1cae12136991ea6bc849b",
+    "imported-glb-front-quarter.png": "91f225475c3b2115cc9247566129fb7fed6619f2b05d8bf1cb45011e151e0a24",
+    "imported-glb-hull-detail.png": "efd5b0d51580b1844f8f5d33803d973b9e2ce3054faa3d626e858fbe6a8f82b0",
+    "model.blend": "f17016cb0ce9e76888e5fd327fcbfe95c6e9bd98899555b87884d6a0b947e38b",
+    "model.glb": "0504e79198b475ce35abee2af307c8c5c5fccc7d7725cf9caf15613f60f27591",
+    "model.json": "3d8943b111719d0017ca321eb9439676fb565b2c7805593c5cadfcafbd5b6342",
+    "rear-quarter.png": "88fd70fa04bd62ea851aec3bdf408b403a75b0be80dcff0f2473e226ef16b452",
+    "render-review.json": "445840b141538613fe8806ace28ca256a70e702481d1c0b78ad9ab105d5fce13",
+    "side.png": "33e1a10e7edaf0184ae2ac4a1492b1eb448677f28259f25da31f2d81fbf85f2a",
+    "technical-review.json": "446fbd6658f48cd6696f44c479caf59ec8e8164a77e630b8b5311283778eadeb",
+    "top.png": "68341931061c4e173c17836a1206b69fd4597cbe29eac0e215d21124f618b98b",
+    "underside.png": "9ca5f6dddc4dbca247ccff7ea2a86d0ab21d0e5c1934bc9553b6b1431a4e8177"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "hardpointSlots": 5,
+    "defaultHardpointIds": []
+  },
+  "declared_sockets": {
+    "AlignmentAxis": {
+      "position": [
+        0,
+        0,
+        1.42
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Second fixed-state presentation and damage/operational variants; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 65,
+    "helpers": {
+      "AlignmentAxis": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.0,
+              1.5099580252808664e-07,
+              0.0,
+              0.0
+            ],
+            [
+              -1.5099580252808664e-07,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.4199999570846558
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            1.4199999570846558
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/artemian/geostationary-construction",
+          "forward_axis": "local +Z"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 65,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/artemian/geostationary-construction",
+          "forward_axis": "local +Z"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "AlignmentAxis": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.0,
+              1.5099580252808664e-07,
+              0.0,
+              0.0
+            ],
+            [
+              -1.5099580252808664e-07,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.4199999570846558
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            1.4199999570846558
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentAxis": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentAxis",
+      "declaration": {
+        "position": [
+          0,
+          0,
+          1.42
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.2915344167226976e-08,
+      "forward_error": 0.0
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentAxis",
+      "declaration": {
+        "position": [
+          0,
+          0,
+          1.42
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.2915344167226976e-08,
+      "forward_error": 0.0
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

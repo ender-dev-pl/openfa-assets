@@ -1,0 +1,309 @@
+{
+  "issue": 1115,
+  "id": "openfa:ship/achaean/dedicated-fighter",
+  "category": "ships",
+  "culture": "achaean",
+  "blend": "docs/assets/reconstruction/ships/achaean/dedicated-fighter/model.blend",
+  "source_files_sha256": {
+    "authored-bronze-colour.png": "83cce75bdce170913e0ec5e115176d7910ed64a9251e63d9bf3f0cdf8059c25d",
+    "authored-bronze-roughness.png": "68941cf43d879f5421786141141d1e2778ad17543769754d57179609a2c73178",
+    "authored-hull-colour.png": "9df1c6dc22dc79155c5b0046140bb834ffebf37ec8002374dbf78ba6add5a0cb",
+    "authored-hull-roughness.png": "68941cf43d879f5421786141141d1e2778ad17543769754d57179609a2c73178",
+    "authored-red-colour.png": "dcbb46b4e553f2d0c90c2a107b1dde55d4da0fcd36fc7d33ab4ad07d10624f4e",
+    "authored-red-roughness.png": "68941cf43d879f5421786141141d1e2778ad17543769754d57179609a2c73178",
+    "authored-wear.json": "5a268a62c9e971a8268f4d147ad659a3ba7e66441f3813ede4b6e0d453f62ecb",
+    "front-quarter.png": "5be9aca409439861057e0fc4b13d083ef7801c028032e06f80b6930d24d2426d",
+    "front.png": "2e5f2a24ea53f126b261b5bb03d34ed652eb1e65bdaa19761fa7ab1c8e35cd91",
+    "gallery.png": "f89a237d1584963f8c259dcd2fdb81c9a7a48295c24af3b410f581770f012ef4",
+    "hull-detail.png": "7d37ed23f75f33b59552d7ab1e86712cfdd9e12333759d87fff79bf16385f45d",
+    "imported-glb-front-quarter.png": "ce922b8ea5b672ac0b57b0c8a9c7d828c928bf81d17fd032b13b2748ad8890cf",
+    "imported-glb-hull-detail.png": "75c9ff06be5955d6f931b9ac85e5a047e75e3a1bff437161fc8005838d506fb6",
+    "model.blend": "21685d8b76a6ec399c8a938b571c1c1d53c7c1be938b9fcbc1e0567886eaf06f",
+    "model.glb": "0d2e845bc1066d04acd23f566352ca9bcd986b6faecd2365caba58aa9320b586",
+    "model.json": "652d14ec3b8c55c9120ef5227447d0423fe72db12f31bce634f95ea3f4f179ad",
+    "rear-quarter.png": "75b47c6846fd774f65d020bb7ec41950dadd6c6c78ac009ab166f7d212868686",
+    "render-review.json": "6cc7538e996dce4f066caaa5d41f331c678e26ffe9d5f0a1eb8e84b0925595fc",
+    "side.png": "b932b3b7b874ee4a93e4f058e11e55dfa0d658379b6ed5a354983dcc827dff11",
+    "technical-review.json": "7e8169dae981ab4054e31b475560c24e667c9c3f72df911c88add0e7a9f232ef",
+    "top.png": "f05cca0174d34af2a2e169b704c3464973657895b5e5e827563f4649ac67957e",
+    "underside.png": "142ead16d403bdda619bd017edcbb96206efbeaa525d525112e0427c26f3d813"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "hardpointSlots": 4,
+    "defaultHardpointIds": []
+  },
+  "declared_sockets": {
+    "AlignmentForward": {
+      "position": [
+        0,
+        -1.55,
+        0
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Damage/operational variants; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 30,
+    "helpers": {
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -1.5499999523162842
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.5499999523162842,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/achaean/dedicated-fighter",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 30,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/achaean/dedicated-fighter",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -1.5499999523162842
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.5499999523162842,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentForward": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.55,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-08,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.55,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-08,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

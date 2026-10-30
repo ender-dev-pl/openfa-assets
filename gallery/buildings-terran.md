@@ -1,0 +1,643 @@
+# Buildings / Terran
+
+[All groups](README.md)
+
+## Living Quarters
+
+`terran:living-quarters`
+
+**First available iteration — silhouette-study**
+
+![Living Quarters](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb00/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb00/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb00/model.glb)
+
+**Additional iteration — refined-study**
+
+![Living Quarters](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb00/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb00/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb00/model.glb)
+
+## Power Store
+
+`terran:power-store`
+
+**First available iteration — silhouette-study**
+
+![Power Store](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb01/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb01/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb01/model.glb)
+
+**Additional iteration — refined-study**
+
+![Power Store](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb01/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb01/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb01/model.glb)
+
+## Storage Facility
+
+`terran:storage-facility`
+
+**First available iteration — silhouette-study**
+
+![Storage Facility](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb02/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb02/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb02/model.glb)
+
+**Additional iteration — refined-study**
+
+![Storage Facility](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb02/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb02/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb02/model.glb)
+
+## Anti-Missile Pod
+
+`terran:anti-missile-pod`
+
+**First available iteration — silhouette-study**
+
+![Anti-Missile Pod](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb03/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb03/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb03/model.glb)
+
+**Additional iteration — refined-study**
+
+![Anti-Missile Pod](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb03/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb03/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb03/model.glb)
+
+## Solar Panel
+
+`terran:solar-panel`
+
+**First available iteration — silhouette-study**
+
+![Solar Panel](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb04/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb04/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb04/model.glb)
+
+**Additional iteration — refined-study**
+
+![Solar Panel](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb04/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb04/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb04/model.glb)
+
+## Radiation Filter
+
+`terran:radiation-filter`
+
+**First available iteration — silhouette-study**
+
+![Radiation Filter](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb05/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb05/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb05/model.glb)
+
+**Additional iteration — refined-study**
+
+![Radiation Filter](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb05/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb05/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb05/model.glb)
+
+## Solar Generator
+
+`terran:solar-generator`
+
+**First available iteration — silhouette-study**
+
+![Solar Generator](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb06/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb06/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb06/model.glb)
+
+**Additional iteration — refined-study**
+
+![Solar Generator](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb06/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb06/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb06/model.glb)
+
+## Weapons Factory
+
+`terran:weapons-factory`
+
+**First available iteration — silhouette-study**
+
+![Weapons Factory](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb07/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb07/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb07/model.glb)
+
+**Additional iteration — refined-study**
+
+![Weapons Factory](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb07/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb07/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb07/model.glb)
+
+## Mine
+
+`terran:mine`
+
+**First available iteration — silhouette-study**
+
+![Mine](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb08/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb08/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb08/model.glb)
+
+**Additional iteration — refined-study**
+
+![Mine](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb08/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb08/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb08/model.glb)
+
+## Satellite Silo
+
+`terran:satellite-silo`
+
+**First available iteration — silhouette-study**
+
+![Satellite Silo](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb09/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb09/model.glb)
+
+**Additional iteration — refined-study**
+
+![Satellite Silo](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb09/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb09/model.glb)
+
+## Screen Generator
+
+`terran:screen-generator`
+
+**First available iteration — silhouette-study**
+
+![Screen Generator](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb10/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb10/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb10/model.glb)
+
+**Additional iteration — refined-study**
+
+![Screen Generator](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb10/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb10/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb10/model.glb)
+
+## Ore Teleporter
+
+`terran:ore-teleporter`
+
+**First available iteration — silhouette-study**
+
+![Ore Teleporter](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb11/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb11/model.glb)
+
+**Additional iteration — refined-study**
+
+![Ore Teleporter](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb11/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb11/model.glb)
+
+## Gravity Nullifier
+
+`terran:gravity-nullifier`
+
+**First available iteration — silhouette-study**
+
+![Gravity Nullifier](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb12/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb12/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb12/model.glb)
+
+**Additional iteration — refined-study**
+
+![Gravity Nullifier](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb12/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb12/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb12/model.glb)
+
+## Deep Bore Mine
+
+`terran:deep-bore-mine`
+
+**First available iteration — silhouette-study**
+
+![Deep Bore Mine](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb13/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb13/model.glb)
+
+**Additional iteration — refined-study**
+
+![Deep Bore Mine](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb13/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb13/model.glb)
+
+## Missile Silo
+
+`terran:missile-silo`
+
+**First available iteration — silhouette-study**
+
+![Missile Silo](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb14/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb14/model.glb)
+
+**Additional iteration — refined-study**
+
+![Missile Silo](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.glb)
+
+## Repair Facility
+
+`terran:repair-facility`
+
+**First available iteration — silhouette-study**
+
+![Repair Facility](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb15/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb15/model.glb)
+
+**Additional iteration — refined-study**
+
+![Repair Facility](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb15/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb15/model.glb)
+
+## Sensor Array
+
+`terran:sensor-array`
+
+**First available iteration — silhouette-study**
+
+![Sensor Array](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb16/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb16/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb16/model.glb)
+
+**Additional iteration — refined-study**
+
+![Sensor Array](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb16/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb16/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb16/model.glb)
+
+## Plasma Turret
+
+`terran:plasma-turret`
+
+**First available iteration — silhouette-study**
+
+![Plasma Turret](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb17/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb17/model.glb)
+
+**Additional iteration — refined-study**
+
+![Plasma Turret](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb17/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb17/model.glb)
+
+## Photon Turret
+
+`terran:photon-turret`
+
+**First available iteration — silhouette-study**
+
+![Photon Turret](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb18/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb18/model.glb)
+
+**Additional iteration — refined-study**
+
+![Photon Turret](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb18/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb18/model.glb)
+
+## Air Processor
+
+`terran:air-processor`
+
+**First available iteration — silhouette-study**
+
+![Air Processor](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb19/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb19/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb19/model.glb)
+
+**Additional iteration — refined-study**
+
+![Air Processor](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb19/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb19/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb19/model.glb)
+
+## C.P.U.
+
+`terran:cpu`
+
+**First available iteration — silhouette-study**
+
+![C.P.U.](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb20/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb20/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb20/model.glb)
+
+**Additional iteration — refined-study**
+
+![C.P.U.](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb20/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb20/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb20/model.glb)
+
+## Seismic Penetrator
+
+`terran:seismic-penetrator`
+
+**First available iteration — silhouette-study**
+
+![Seismic Penetrator](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb21/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb21/model.glb)
+
+**Additional iteration — refined-study**
+
+![Seismic Penetrator](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb21/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb21/model.glb)
+
+## Asteroid Engine
+
+`terran:asteroid-engine`
+
+**First available iteration — silhouette-study**
+
+![Asteroid Engine](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb22/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb22/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb22/model.glb)
+
+**Additional iteration — refined-study**
+
+![Asteroid Engine](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb22/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb22/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb22/model.glb)
+
+## Powerplant
+
+`terran:powerplant`
+
+**First available iteration — silhouette-study**
+
+![Powerplant](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb23/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb23/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb23/model.glb)
+
+**Additional iteration — refined-study**
+
+![Powerplant](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb23/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb23/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb23/model.glb)
+
+## Command Centre
+
+`terran:command-centre`
+
+**First available iteration — silhouette-study**
+
+![Command Centre](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb24/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb24/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb24/model.glb)
+
+**Additional iteration — refined-study**
+
+![Command Centre](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb24/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb24/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb24/model.glb)
+
+## Ship Yard
+
+`terran:ship-yard`
+
+**First available iteration — silhouette-study**
+
+![Ship Yard](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb25/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb25/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb25/model.glb)
+
+**Additional iteration — refined-study**
+
+![Ship Yard](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb25/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb25/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb25/model.glb)
+
+## Landing Pad
+
+`terran:landing-pad`
+
+**First available iteration — silhouette-study**
+
+![Landing Pad](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb26/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb26/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb26/model.glb)
+
+**Additional iteration — refined-study**
+
+![Landing Pad](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb26/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb26/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb26/model.glb)
+
+## Laser Turret
+
+`terran:laser-turret`
+
+**First available iteration — silhouette-study**
+
+![Laser Turret](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb27/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb27/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb27/model.glb)
+
+**Additional iteration — refined-study**
+
+![Laser Turret](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb27/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb27/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb27/model.glb)
+
+## Solar Matrix
+
+`terran:solar-matrix`
+
+**First available iteration — silhouette-study**
+
+![Solar Matrix](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb28/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb28/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb28/model.glb)
+
+**Additional iteration — refined-study**
+
+![Solar Matrix](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb28/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb28/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb28/model.glb)
+
+## Resiblock
+
+`terran:resiblock`
+
+**First available iteration — silhouette-study**
+
+![Resiblock](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb29/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb29/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb29/model.glb)
+
+**Additional iteration — refined-study**
+
+![Resiblock](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb29/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb29/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb29/model.glb)
+
+## Storage Tower
+
+`terran:storage-tower`
+
+**First available iteration — silhouette-study**
+
+![Storage Tower](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb30/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb30/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb30/model.glb)
+
+**Additional iteration — refined-study**
+
+![Storage Tower](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb30/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb30/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb30/model.glb)
+
+## P. Solar Matrix
+
+`terran:protected-solar-matrix`
+
+**First available iteration — silhouette-study**
+
+![P. Solar Matrix](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb31/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb31/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb31/model.glb)
+
+**Additional iteration — refined-study**
+
+![P. Solar Matrix](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb31/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb31/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb31/model.glb)
+
+## Refuelling Depot
+
+`terran:refuelling-depot`
+
+**First available iteration — silhouette-study**
+
+![Refuelling Depot](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb32/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb32/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb32/model.glb)
+
+**Additional iteration — refined-study**
+
+![Refuelling Depot](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb32/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb32/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb32/model.glb)
+
+## P. Storage Tower
+
+`terran:protected-storage-tower`
+
+**First available iteration — silhouette-study**
+
+![P. Storage Tower](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb33/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb33/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb33/model.glb)
+
+**Additional iteration — refined-study**
+
+![P. Storage Tower](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb33/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb33/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb33/model.glb)
+
+## Medical Centre
+
+`terran:medical-centre`
+
+**First available iteration — silhouette-study**
+
+![Medical Centre](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb34/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb34/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb34/model.glb)
+
+**Additional iteration — refined-study**
+
+![Medical Centre](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb34/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb34/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb34/model.glb)
+
+## Environment Control
+
+`terran:environment-control`
+
+**First available iteration — silhouette-study**
+
+![Environment Control](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb35/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb35/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb35/model.glb)
+
+**Additional iteration — refined-study**
+
+![Environment Control](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb35/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb35/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb35/model.glb)
+
+## Pleasure Dome
+
+`terran:pleasure-dome`
+
+**First available iteration — silhouette-study**
+
+![Pleasure Dome](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb36/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb36/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb36/model.glb)
+
+**Additional iteration — refined-study**
+
+![Pleasure Dome](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb36/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb36/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb36/model.glb)
+
+## Hydroponics Plant
+
+`terran:hydroponics-plant`
+
+**First available iteration — silhouette-study**
+
+![Hydroponics Plant](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb37/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb37/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb37/model.glb)
+
+**Additional iteration — refined-study**
+
+![Hydroponics Plant](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb37/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb37/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb37/model.glb)
+
+## Hydration Plant
+
+`terran:hydration-plant`
+
+**First available iteration — silhouette-study**
+
+![Hydration Plant](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb38/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb38/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb38/model.glb)
+
+**Additional iteration — refined-study**
+
+![Hydration Plant](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb38/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb38/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb38/model.glb)
+
+## Security Centre
+
+`terran:security-centre`
+
+**First available iteration — silhouette-study**
+
+![Security Centre](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb39/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb39/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb39/model.glb)
+
+**Additional iteration — refined-study**
+
+![Security Centre](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb39/front-quarter.png)
+
+[Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb39/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb39/model.glb)
