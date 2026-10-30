@@ -29,3 +29,5 @@ Historical one-time migrations and historical baseline probes are not normal reb
 ## Game integration
 
 Package-ready sprites remain generated deliverables. Export them into the game repository only through an explicit package-integration task. This migration changes ownership of authoring material; it does not switch the game client to 3D models or replace packaged resources. Catalogue JSON files under `sources/` are pinned fixtures; synchronize them deliberately when the game contract changes and rerun affected evidence.
+
+Quick-menu UI inputs live in `sources/ui/quick-menu/`. Preparation maps them to the historical `content/standard/images/` workspace paths used by `tools/Generate-QuickMenuChrome.py`; the generator produces its outputs only in the ignored workspace until reviewed.

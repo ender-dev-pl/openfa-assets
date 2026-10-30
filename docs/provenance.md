@@ -9,3 +9,5 @@ The imported collection includes independent generated artwork and separate hist
 This migration covers versioned canonical authoring files. Ignored `.asset-lab` research environments, temporary working copies in `artifacts/`, original installations, protected recordings and the durable decompilation stay in their existing locations. They are neither deleted nor silently represented as canonical completed models. Historical game commits remain available in the origin repository; this new repository begins with a provenance-preserving import, not rewritten game history.
 
 The 11 game-code/naming inputs are recorded separately as `external_inputs`, with their original hashes. No C# or Java game-analysis source is versioned in this repository. Semantic audits require the matching game checkout.
+
+The three quick-menu source PNGs have been reclassified from gallery media into `sources/ui/quick-menu/`. Their original paths, byte lengths, SHA-256 values and fixture ownership are unchanged in the import manifest; only their canonical destinations and roles changed.

@@ -31,7 +31,15 @@ def verify():
         assert dest.stat().st_size == item['bytes'], item['destination']
         assert sha(dest) == item['sha256'], item['destination']
     forbidden = {'.png', '.jpg', '.jpeg', '.gif', '.mp4', '.webp', '.html'}
-    assert not [p for p in (ROOT / 'sources').rglob('*') if p.suffix.lower() in forbidden]
+    source_inputs = set()
+    for item in data['files']:
+        if item['role'] == 'source-input':
+            path = (ROOT / item['destination']).resolve()
+            assert path.is_relative_to(ROOT / 'sources/ui') and path.suffix.lower() == '.png', item['destination']
+            source_inputs.add(path)
+    misplaced = [p for p in (ROOT / 'sources').rglob('*')
+                 if p.suffix.lower() in forbidden and p.resolve() not in source_inputs]
+    assert not misplaced, f'Unregistered source images or finished media in sources: {misplaced}'
     assert not list((ROOT / 'sources').rglob('*.cs')), 'Game C# files must not be copied into asset sources'
     print('MIGRATION_HASHES_OK', len(seen), flush=True)
 
