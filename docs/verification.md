@@ -22,3 +22,5 @@ Run native/imported tests through the Blender command documented in the workflow
 Baseline immutability and current asset validation are separate. After an intentional future source edit, the import comparison will correctly report a changed file; retain the original manifest as provenance and verify the changed asset with current evidence. Dependencies for archived GPU upscaling research are documented separately in `sources/tools/hq-sprite-authoring/README.md` and are not required for gallery browsing or Blender modelling.
 
 The game repository's required `tools/Verify-ChangedCodeQuality.ps1` is run against the pre-migration game commit before completion. No application code is copied here as an executable game, and no new client runtime is invented for this asset-only project.
+
+Gallery interaction logic can be checked with Node.js (no extra packages): `node tools/test_gallery_filters.cjs`. It executes the generated page script against a DOM/event facade for all 45 race/type combinations, text search, empty/reset states and index/deep links. This test does not replace a visual browser check.

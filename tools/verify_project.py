@@ -14,6 +14,8 @@ class LocalLinks(HTMLParser):
     def handle_starttag(self, tag, attrs):
         for key, value in attrs:
             if key in ['src', 'href'] and value and not urlsplit(value).scheme:
+                if not urlsplit(value).path:
+                    continue  # In-page index links carry catalogue filter state.
                 path = (ROOT / 'gallery' / unquote(urlsplit(value).path)).resolve()
                 assert path.is_relative_to(ROOT) and path.is_file(), value
 

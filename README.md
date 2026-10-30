@@ -21,7 +21,7 @@ python tools/asset_workspace.py python -- tools/blender/audit_first_source_cover
 python tools/asset_workspace.py python -- tools/blender/verify_reconstruction_inventory.py
 ```
 
-Open `gallery/index.html` locally for search/filtering, or use the Markdown gallery on GitHub. To rebuild thumbnails and indexes from the preserved renders:
+Open `gallery/index.html` locally for combined search, race and asset-type filters. Its expandable index links to filter combinations; the Markdown gallery provides the same race/type table on GitHub. To rebuild thumbnails and indexes from the preserved renders:
 
 ```powershell
 python tools/build_gallery.py

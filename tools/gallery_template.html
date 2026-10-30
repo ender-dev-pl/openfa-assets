@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpenFA asset catalogue</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#101722;color:#e7eff7;font:16px system-ui}header{padding:24px;background:#162334}h1{margin:0 0 8px}.intro{max-width:900px}p,figcaption,caption{color:#b3c7dc}a{color:#80ccff}.toolbar{position:sticky;top:0;background:#162334;z-index:1;padding:16px 24px;box-shadow:0 5px 14px #0004}.filters{display:flex;flex-wrap:wrap;gap:12px;align-items:end}label{display:flex;flex-direction:column;gap:6px;font-size:14px}.query{flex:1;min-width:200px}input,select,button{padding:10px;border:1px solid #5d7794;border-radius:6px;background:#101c2c;color:inherit;font:inherit;min-height:44px}button{cursor:pointer;background:#26455f}input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #f3bd68;outline-offset:3px}.status{margin:12px 0 0}details{margin:16px 24px;background:#192637;padding:16px;border-radius:10px}summary{cursor:pointer;font-weight:600}.table-scroll{overflow:auto}table{width:100%;max-width:900px;border-collapse:collapse;margin-top:12px}caption{text-align:left;margin-bottom:10px}th,td{text-align:left;padding:10px;border-bottom:1px solid #35475b}th a,td a{display:inline-block;padding:4px}main{padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:20px}article{background:#192637;border-radius:12px;padding:20px}h2{margin:0 0 8px;font-size:21px}.variants{display:flex;flex-wrap:wrap;gap:12px}figure{margin:0;flex:1;min-width:180px}img{display:block;width:100%;height:260px;object-fit:contain;background:#101722}figcaption{padding:8px 0}.empty{padding:32px 24px;text-align:center}[hidden]{display:none!important}@media(max-width:600px){header{padding:20px}.toolbar{position:static;padding:12px 20px}.filters label{flex:1;min-width:130px}.filters .query{flex-basis:100%}details{margin:16px 20px}main{padding:16px}}
+</style>
+<header><h1>OpenFA asset catalogue</h1><p class="intro">{{COUNT}} definitions · existing first-run and refined studies. These are authored studies; final artistic acceptance remains separate.</p><a href="README.md">Markdown gallery and contact sheets</a></header>
+<section class="toolbar" aria-label="Catalogue filters">
+  <div class="filters">
+    <label class="query" for="search">Search<input id="search" type="search" placeholder="Name, ID or study stage" autocomplete="off"></label>
+    <label for="race">Race<select id="race"><option value="">All races</option>{{RACES}}</select></label>
+    <label for="type">Asset type<select id="type"><option value="">All types</option>{{TYPES}}</select></label>
+    <button id="reset" type="button">Clear filters</button>
+  </div>
+  <p class="status" id="count" role="status" aria-live="polite">{{COUNT}} assets</p>
+</section>
+<details id="catalogue-index"><summary>Index by race and asset type</summary><div class="table-scroll">{{INDEX}}</div></details>
+<p id="empty" class="empty" hidden>No assets match these filters. Choose another race/type or clear the filters.</p>
+<main id="assets" aria-label="Asset gallery">{{CARDS}}</main>
+<noscript><p class="empty">Enable JavaScript to filter this catalogue. All assets and the Markdown gallery remain available.</p></noscript>
+<script>
+class GalleryModel {
+  constructor(records) {
+    this.records = records;
+    this.races = new Set(records.map(record => record.race));
+    this.types = new Set(records.map(record => record.type));
+    this.filters = {q: '', race: '', type: ''};
+  }
+  setFilters(filters) {
+    this.filters = {q: filters.q || '', race: this.races.has(filters.race) ? filters.race : '', type: this.types.has(filters.type) ? filters.type : ''};
+  }
+  matches() {
+    const {q, race, type} = this.filters;
+    const terms = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    return this.records.filter(record => (!race || record.race === race) && (!type || record.type === type) && terms.every(term => record.search.includes(term)));
+  }
+}
+class GalleryView {
+  constructor() {
+    this.cards = [...document.querySelectorAll('article[data-race]')];
+    this.search = document.querySelector('#search');
+    this.race = document.querySelector('#race');
+    this.type = document.querySelector('#type');
+    this.reset = document.querySelector('#reset');
+    this.count = document.querySelector('#count');
+    this.empty = document.querySelector('#empty');
+  }
+  readFilters() { return {q: this.search.value, race: this.race.value, type: this.type.value}; }
+  render(filters, matches) {
+    const visible = new Set(matches.map(record => record.card));
+    for (const card of this.cards) card.hidden = !visible.has(card);
+    this.search.value = filters.q;
+    this.race.value = filters.race;
+    this.type.value = filters.type;
+    this.count.textContent = `${matches.length} of ${this.cards.length} assets`;
+    this.empty.hidden = matches.length !== 0;
+  }
+}
+class GalleryPresenter {
+  constructor(model, view) {
+    this.model = model;
+    this.view = view;
+    view.search.addEventListener('input', () => this.change(view.readFilters()));
+    view.race.addEventListener('change', () => this.change(view.readFilters()));
+    view.type.addEventListener('change', () => this.change(view.readFilters()));
+    view.reset.addEventListener('click', () => { this.change({}); view.search.focus(); });
+    window.addEventListener('hashchange', () => this.readLocation());
+    this.readLocation();
+  }
+  readLocation() {
+    const params = new URLSearchParams(location.hash.slice(1));
+    this.model.setFilters({q: params.get('q'), race: params.get('race'), type: params.get('type')});
+    this.view.render(this.model.filters, this.model.matches());
+  }
+  change(filters) {
+    this.model.setFilters(filters);
+    const params = new URLSearchParams(Object.entries(this.model.filters).filter(([,value]) => value));
+    history.replaceState(null, '', location.pathname + location.search + (params.size ? '#' + params.toString() : ''));
+    this.view.render(this.model.filters, this.model.matches());
+  }
+}
+const galleryView = new GalleryView();
+new GalleryPresenter(new GalleryModel(galleryView.cards.map(card => ({card, race: card.dataset.race, type: card.dataset.type, search: card.dataset.search}))), galleryView);
+</script>
+</html>
