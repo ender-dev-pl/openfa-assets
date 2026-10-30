@@ -15,6 +15,10 @@ use the correctly paletted Legacy FA side of the game's
 
 ![Independent GLB geometry and base-material import](media/ui/blender-kit/imported-contact.png)
 
+The frontend console includes a machined navigation globe and raised OPENFA plate.
+
+![Blender frontend console](media/ui/blender-kit/frontend-edge.png)
+
 The GLB proof preserves evaluated geometry and constant base material parameters.
 Procedural wear remains in the editable Blend and the delivered Cycles PNGs;
 the GLB is a geometry/base-material verification export, not the game UI payload.

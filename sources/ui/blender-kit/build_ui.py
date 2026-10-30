@@ -18,6 +18,7 @@ parser.add_argument('--output', required=True, type=Path)
 parser.add_argument('--source', type=Path, default=Path(__file__).resolve().parent)
 parser.add_argument('--samples', type=int, default=24)
 parser.add_argument('--proof-only', action='store_true', help='Refresh sources and GLB proof without rerendering PNG deliverables')
+parser.add_argument('--only', help='Refresh one named structural render and the source/import proofs')
 args = parser.parse_args(sys.argv[sys.argv.index('--') + 1:])
 out = args.output.resolve()
 out.mkdir(parents=True, exist_ok=True)
@@ -354,6 +355,45 @@ for name,w,h in [('panel',192,144),('gameplay-edge',531,60),('gameplay-menu-edge
     plate(0,0,wunit-.28,hunit-.28,.13,.12,black if 'screen' in name else dark,.045)
     for x in [-wunit/2+.18,wunit/2-.18]:
         for y in [-hunit/2+.18,hunit/2-.18]:disc(x,y,.045,silver,.24)
+    if name=='frontend-edge':
+        bpy.ops.mesh.primitive_uv_sphere_add(segments=64,ring_count=32,radius=4.6,location=(0,1.8,.7))
+        obj=bpy.context.object
+        bpy.ops.object.shade_smooth()
+        finish(obj,blue,'Machined navigation globe')
+        ring(0,1.8,5.2,silver,width=.12,z=.5)
+        for longitude in [-1.1,-.55,0,.55,1.1]:
+            points=[]
+            for i in range(65):
+                latitude=-math.pi/2+math.pi*i/64
+                points.append((4.65*math.cos(latitude)*math.sin(longitude),
+                               1.8+4.65*math.sin(latitude),
+                               .7+4.65*math.cos(latitude)*math.cos(longitude)))
+            curve=bpy.data.curves.new('Globe meridian','CURVE')
+            curve.dimensions='3D';curve.bevel_depth=.035;curve.bevel_resolution=2
+            spline=curve.splines.new('POLY');spline.points.add(len(points)-1)
+            for p,xyz in zip(spline.points,points):p.co=(*xyz,1)
+            obj=bpy.data.objects.new('Globe meridian',curve);scene.collection.objects.link(obj)
+            finish(obj,ivory,'Raised globe meridian')
+        for latitude in [-2.7,-1.35,0,1.35,2.7]:
+            radius=math.sqrt(4.65**2-latitude**2)
+            curve=bpy.data.curves.new('Globe latitude','CURVE')
+            curve.dimensions='3D';curve.bevel_depth=.035;curve.bevel_resolution=2
+            spline=curve.splines.new('POLY');spline.points.add(64)
+            for i,p in enumerate(spline.points):
+                angle=math.pi*i/64
+                p.co=(radius*math.cos(angle),1.8+latitude,.7+radius*math.sin(angle),1)
+            obj=bpy.data.objects.new('Globe latitude',curve);scene.collection.objects.link(obj)
+            finish(obj,ivory,'Raised globe latitude')
+        disc(2.3,3.5,.24,amber,4.9)
+        plate(0,-5.5,10.8,2.0,.22,.18,silver)
+        curve=bpy.data.curves.new('OPENFA raised lettering','FONT')
+        curve.body='OPENFA';curve.align_x='CENTER';curve.align_y='CENTER'
+        curve.size=1.45;curve.extrude=.025;curve.bevel_depth=.008
+        obj=bpy.data.objects.new('OPENFA console plate',curve);scene.collection.objects.link(obj)
+        obj.location=(0,-5.5,.36);finish(obj,dark,'OPENFA console plate')
+        for x in [-3.5,0,3.5]:
+            plate(x,-8,2.7,.7,.15,.15,silver)
+            disc(x-.85,-8,.10,amber,.28)
     panel_specs[name]=(w,h)
 
 
@@ -429,8 +469,10 @@ def render(name, selected, width, height, scale, centre):
 
 render('source-contact',icons,1024,1024,22,(0,0))
 if not args.proof_only:
-    for i,r in enumerate(icons):render(f'icon-{i:02}',[r],192,192,2.2,r.location)
+    if not args.only:
+        for i,r in enumerate(icons):render(f'icon-{i:02}',[r],192,192,2.2,r.location)
     for name,(w,h) in panel_specs.items():
+        if args.only and name!=args.only:continue
         r=next(r for r in roots if r.name==name)
         render(name,[r],w*4,h*4,max(w,h)/20,r.location)
 
