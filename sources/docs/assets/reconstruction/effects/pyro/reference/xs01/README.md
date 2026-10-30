@@ -1,10 +1,12 @@
+Original reference images are deliberately excluded from this repository. Decode them locally from a licensed installation when needed.
+
 # XS01 airborne / ship-explosion reference
 
 Follow-up evidence for [#1035](https://github.com/ender-dev-pl/ed-openfa-game/issues/1035).
 The installed files are named **XS00–XS02**, rather than SX.
 
-Inspect the [animated preview](legacy-preview.gif) or
-[all 26 phases](legacy-contact.png). Original unscaled canvas PNGs and
+Inspect the animated preview (local extraction only) or
+all 26 phases (local extraction only). Original unscaled canvas PNGs and
 `reference.json` retain registration, palette provenance and coverage data.
 
 ## Confirmed observations

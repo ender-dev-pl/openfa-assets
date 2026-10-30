@@ -3,7 +3,7 @@
 Authored for [#1035](https://github.com/ender-dev-pl/ed-openfa-game/issues/1035)
 using the [XS01 reference study](../reference/xs01/README.md).
 
-[Animation](explosion.mp4) · [Legacy / 3D / alpha comparison](comparison.mp4) ·
+[Animation](explosion.mp4) · Legacy comparison (local evidence only; not distributed) ·
 [Phase contact sheet](contact.png) · [Editable Blender source](explosion.blend)
 
 The effect starts with a white/cyan incandescent flash, separates into warm

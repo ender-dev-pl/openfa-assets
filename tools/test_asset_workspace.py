@@ -48,6 +48,16 @@ class WorkspaceTests(unittest.TestCase):
         (folder / 'layout.json').write_text(json.dumps(dict(files=self.files,
             retired_imports=[dict(original='content/unused.json', reason='No consumer')])) )
 
+    def test_original_game_media_is_rejected(self):
+        name = 'gallery/media/legacy.png'
+        (self.root / 'project/excluded-media.json').write_text(json.dumps(dict(paths=[name])))
+        work.verify()
+        path = self.root / name
+        path.parent.mkdir(parents=True)
+        path.write_bytes(b'original pixels')
+        with self.assertRaisesRegex(ValueError, 'Original-game media'):
+            work.verify()
+
     def test_prepare_does_not_require_external_game_or_legacy(self):
         with patch.object(work, 'junction', side_effect=AssertionError('Unexpected external link')):
             workspace = work.prepare()

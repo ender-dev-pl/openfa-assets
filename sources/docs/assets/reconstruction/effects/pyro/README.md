@@ -67,7 +67,7 @@ Pillow and NumPy to verify PNG coverage and create review videos.
 
 ## Legacy evidence and interpretation
 
-`reference/xb00`, `reference/xb01` and `reference/xb02` contain the original
+Local-only `reference/xb00`, `reference/xb01` and `reference/xb02` can contain the original
 16-, 20- and 19-phase sequences decoded by `tools/fragile256.py`. Their manifests
 record original file hashes and embedded palette hashes. Reference extraction
 requires an existing licensed installation and fails if the expected embedded
@@ -98,3 +98,5 @@ additional evidence for an airborne variant without changing these XB-inspired
 models. The separate [airborne 3D effect](airborne/README.md) implements that
 family with a white/cyan flash, radial fragments and a dissolving spatial shell
 at 300×300, 30 fps and approximately 1.33 seconds.
+
+Original reference PNGs, GIFs and mixed legacy/authored comparison videos are not distributed. Extract references locally before running comparison packaging tools.

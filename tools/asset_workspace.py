@@ -41,6 +41,12 @@ def canonical(item):
 
 def verify():
     """Validate the current layout/boundaries, not imported content equality."""
+    policy = ROOT / 'project/excluded-media.json'
+    if policy.is_file():
+        excluded = json.loads(policy.read_text(encoding='utf-8'))['paths']
+        for name in excluded:
+            if (ROOT / relative_path(name)).exists():
+                raise ValueError(f'Original-game media must remain outside the repository: {name}')
     data = layout()
     originals, destinations, inputs = set(), set(), set()
     for item in data['files']:
