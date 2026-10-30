@@ -10,6 +10,9 @@ The gallery uses existing renders only. It shows each registered iteration with 
 
 ## Quick start
 
+The [Blender UI kit](gallery/ui.md) contains editable interface geometry, button
+states and semantic icons alongside the [model gallery](gallery/README.md).
+
 Requires Python 3.10+; install `requirements.txt`. Model operations require Blender 4.5 LTS. Optional legacy evidence checks use `requirements-evidence.txt` and additionally require a local original-game installation in the sibling `legacy` directory and its decoding tools; these files are not bundled here.
 
 ```powershell
