@@ -366,6 +366,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/extractor/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/extractor/model.glb)
 
+**Additional iteration — structural-detail-refinement**
+
+![Extractor](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri20/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri20/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri20/model.glb)
+
 ## Storage racks
 
 `openfa:building/legacy/060`

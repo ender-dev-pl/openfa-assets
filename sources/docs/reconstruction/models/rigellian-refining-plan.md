@@ -6,6 +6,14 @@ Rigellian definitions: 23 buildings, five ships and seven missiles. Earlier
 studies remain available. New studies require source-bound native Blender and
 independent GLB verification and actual rendered inspection before registration.
 
+User clarification: prioritize missing visible components and a general increase
+in detail/fidelity, not imperceptible micro-details. Evaluate additions at normal
+gallery/game presentation sizes: recognizable mechanisms, ribs, body divisions,
+covers, fittings and coherent structural assemblies take priority over tiny
+scratches, fasteners or numerically detectable surface defects. Materials,
+shapes and design choices must also respect the complete relevant Colony
+Database culture entry, not just a generic science-fiction style.
+
 ## Evidence and review limits
 
 `tools/prepare_rigellian_refining_references.py` checks archived payload hashes
