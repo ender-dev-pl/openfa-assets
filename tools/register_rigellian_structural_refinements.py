@@ -11,6 +11,8 @@ SCRIPTS = {
     'ri03': ('refine_rigellian_nourishment.py', 'verify_refined_rigellian_nourishment.py'),
     'observatory': ('refine_rigellian_observatory.py', 'verify_refined_rigellian_observatory.py'),
 }
+MISSILES = ['detonator', 'multi-det', 'flamejell', 'maxi-det', 'flare', 'viral-repair', 'temporal-stasis']
+SCRIPTS.update({key: ('refine_rigellian_missiles.py', 'verify_refined_rigellian_missiles.py') for key in MISSILES})
 
 
 def sha(path):
@@ -26,7 +28,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--model', choices=SCRIPTS, required=True)
     args = parser.parse_args()
-    rel = Path('docs/assets/reconstruction/rigellian-refined')/args.model
+    rel = Path('docs/assets/reconstruction/rigellian-refined')
+    if args.model in MISSILES:
+        rel /= 'missiles'
+    rel /= args.model
     source, media = ROOT/'sources'/rel, ROOT/'gallery/media'/rel
     meta = json.loads((source/'model.json').read_text())
     report = json.loads((media/'validation.json').read_text())
@@ -61,6 +66,8 @@ def main():
     paths += [ROOT/'sources/tools/blender'/name for name in [generator, verifier]]
     paths += [ROOT/'sources/docs/reconstruction/models'/name for name in
               ['rigellian-lore-evidence.json', 'rigellian-structural-refinement.md']]
+    if args.model in MISSILES:
+        paths.append(ROOT/'sources/docs/reconstruction/models/rigellian-missile-refinement.md')
     layout_path = ROOT/'project/layout.json'
     layout = json.loads(layout_path.read_bytes())
     destinations = {entry['destination'] for entry in layout['files']}
