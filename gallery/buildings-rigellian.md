@@ -18,6 +18,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/central-unit/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/central-unit/model.glb)
 
+**Additional iteration — crown-refinement-study**
+
+![Central Unit](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri01/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri01/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri01/model.glb)
+
 ## Filtration Plant
 
 `openfa:building/legacy/041`
@@ -66,6 +72,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/community/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/community/model.glb)
 
+**Additional iteration — crown-refinement-study**
+
+![Community](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri04/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri04/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri04/model.glb)
+
 ## Health Unit
 
 `openfa:building/legacy/044`
@@ -82,6 +94,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/health-unit/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/health-unit/model.glb)
 
+**Additional iteration — crown-refinement-study**
+
+![Health Unit](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri05/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri05/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri05/model.glb)
+
 ## Strategic Bunker
 
 `openfa:building/legacy/045`
@@ -97,6 +115,12 @@
 ![Strategic Bunker](../gallery/media/docs/assets/reconstruction/buildings/rigellian/strategic-bunker/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.glb)
+
+**Additional iteration — crown-refinement-study**
+
+![Strategic Bunker](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri06/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri06/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri06/model.glb)
 
 ## Science Labs
 
@@ -275,6 +299,12 @@
 ![Arms Unit](../gallery/media/docs/assets/reconstruction/buildings/rigellian/arms-unit/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/arms-unit/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/arms-unit/model.glb)
+
+**Additional iteration — crown-refinement-study**
+
+![Arms Unit](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri17/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri17/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri17/model.glb)
 
 ## Missile Launcher
 
