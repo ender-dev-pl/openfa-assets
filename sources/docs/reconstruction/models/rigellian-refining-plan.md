@@ -19,7 +19,8 @@ Database culture entry, not just a generic science-fiction style.
 `tools/prepare_rigellian_refining_references.py` checks archived payload hashes
 against the existing reference indices, decodes the embedded building/ship VGA
 palettes and binds missiles to the actual BUTTONS palette. It decodes all 943
-building catalogue frames and all building surface descriptors, 130 ship frames
+building catalogue frames and all building surface descriptors, 130 ship descriptors
+(114 nonempty frames; RI3C's sixteen odd descriptors are empty)
 and 98 missile frames. Original pixels and comparisons stay in ignored
 `artifacts/issue-185/references/`; they are not deliverables or textures.
 

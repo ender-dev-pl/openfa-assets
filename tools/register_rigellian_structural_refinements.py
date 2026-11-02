@@ -12,6 +12,7 @@ SCRIPTS = {
     'observatory': ('refine_rigellian_observatory.py', 'verify_refined_rigellian_observatory.py'),
     'transportation': ('refine_rigellian_transport.py', 'verify_refined_rigellian_transport.py'),
     'lazzaro-research': ('refine_lazzaro_visible_forms.py', 'verify_refined_lazzaro_forms.py'),
+    'delphini-assault': ('refine_delphini_visible_sections.py', 'verify_refined_delphini_sections.py'),
 }
 MISSILES = ['detonator', 'multi-det', 'flamejell', 'maxi-det', 'flare', 'viral-repair', 'temporal-stasis']
 SCRIPTS.update({key: ('refine_rigellian_missiles.py', 'verify_refined_rigellian_missiles.py') for key in MISSILES})

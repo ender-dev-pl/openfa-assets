@@ -245,5 +245,45 @@ silhouettes have IoU 1.0 and the largest RGB mean difference is below
 the 32 original headings. Final artistic acceptance, exact
 hidden forms and game calibration remain open.
 
+## RI1C Delphini Assault
+
+All 32 nonempty directional frames were inspected with the embedded palette.
+They show a green upper body, an elongated gold region on each flank, a dark
+slate lower casing and separate copper/brown lower masses. The earlier pair of
+small square upper patches and uniformly green lower skin understated these
+large source subdivisions. The reference does not establish engines, weapons,
+the exact lower attachment or a particular metal alloy.
+
+The new study rounds the main body profile transitions, replaces the square
+patches with longer curved side fields, adds a thin physical lower slate
+casing, and rebuilds both copper lower masses with densely sampled curved
+sections. The copper tail receives the same lower-casing finish. Existing
+service covers follow the revised upper skin. Six speculative tiny lower-pod
+fittings are omitted; adding such microdetails is not the purpose of this pass.
+The narrow fore projection and dorsal crest keep their original geometry and
+material binding. AlignmentForward remains unchanged and uncalibrated.
+
+Three authored colour maps retain inherited grime/wear variation and packed
+roughness while distinguishing green, gold, slate and copper source regions.
+No original pixel becomes a mesh or texture input. CDB sophistication and
+ergonomic elegance guide integrated equipment, but architectural descriptions
+do not resolve hidden ship sections or propulsion functions. The old editable
+study remains unchanged and selectable. No speculative operational loop is
+introduced.
+
+Native reopen and independent GLB verification cover closed positive
+consistently wound surfaces, actual body sections, elongated side-field bounds,
+multiple solid field/body contacts, both copper/body roots, lower-skin contacts
+and fore/tail/crest roots. All seventeen components pass; the two retained
+components have zero position drift. Native/imported compared positions have
+zero difference, all three render silhouettes have IoU 1.0 and the largest RGB
+mean difference is below 0.0019/255. Final native/imported views and before/after
+renders were inspected against the original headings. The complete marked
+source collection, material and
+hierarchy bindings, authored textures and the preserved components/helper are
+checked alongside actual front-quarter, side and underside paired renders.
+Final artistic acceptance, hidden attachment geometry, exact projection and
+game calibration remain open.
+
 The full Rigellian pass remains active. This document records structural
 milestone, not completion of all 35 models or all review-ledger gates.

@@ -28,6 +28,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/ships/rigellian/delphini-assault/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/delphini-assault/model.glb)
 
+**Additional iteration — visible-section-refinement**
+
+![Delphini Assault](../gallery/media/docs/assets/reconstruction/rigellian-refined/delphini-assault/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb)
+
 ## Messier-Lukannon
 
 `openfa:ship/rigellian/messier-lukannon`
