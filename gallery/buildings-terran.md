@@ -360,6 +360,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb21/model.glb)
 
+**Additional iteration — legacy-reference-refinement**
+
+![Seismic Penetrator](../gallery/media/docs/assets/reconstruction/seismic-penetrator/pb21/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/seismic-penetrator/pb21/model.blend) · [GLB](../sources/docs/assets/reconstruction/seismic-penetrator/pb21/model.glb)
+
 ## Asteroid Engine
 
 `terran:asteroid-engine`
