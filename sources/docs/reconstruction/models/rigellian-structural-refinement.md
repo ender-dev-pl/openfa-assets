@@ -108,5 +108,68 @@ Whole, front and service-detail renders are generated independently in both
 formats and compared for framing, silhouette and colour. The local
 original/previous/new comparison was inspected; original pixels remain ignored.
 
+## Observatory / RI4C
+
+The 94×126 solid fixed-state sprite provides clear equipment evidence: a
+substantial equatorial belt with blue and amber side regions, pale features in
+the central oval, readable front regions on the green axial chambers, a forked
+upper copper terminal and separated lower copper ends. The first source's thin
+rim, three tiny oval markers and single upper wire understate those major
+features. No large catalogue video is bound to this ship. Its second fixed
+wireframe-like image is retained as unresolved state evidence, not proof of a
+deployment loop.
+
+The new separate study restores a 0.32-high layered equipment belt, four curved
+equipment bays (two visible fronts and an inferred repeated rear treatment),
+five bright insets per bay, six pale central insets, green chamber faces with
+three pale bars each, copper chamber cheeks and a three-prong upper terminal.
+Two lower side terminals supplement the original central lower aerial. Inset
+colours follow the visible blue/amber/pale source regions; precise emitted
+brightness, bay sections, internal function and hidden rear equipment remain
+authored interpretation. Equipment bays are not calibrated weapon mounts.
+
+The eight existing pointed fins retain their geometry and materials but are
+rotated diagonally around the station axis. The original frontal reference
+leaves green chamber faces visible; the previous front radial fin occluded
+their centre in the matching view. Actual geometry rays check that the new
+forward chamber faces remain clear. Exact hidden fin count/radial layout is
+still inferred. The existing local hull/chamber meshes, collars and other
+retained components keep their editable geometry and materials. The complete
+station receives an explicit 1.18 radial planform fit after frontal comparison
+showed the earlier station too narrow relative to its height. Verification
+compares forty-two unrotated retained components against this declared fit;
+eight fins are separately tracked as rotated. No zero world-position drift is
+claimed for a deliberate proportion change. The authored alignment helper
+remains unchanged.
+
+The alpha-bounded frontal render aspect is compared with the 94/126 source
+aspect. This is an authored visible-shape fit, not recovered original camera
+calibration; actual projection and hidden station depth remain unresolved.
+The final frontal render ratio is 0.74654 versus 0.74603 in the fixed source.
+The declared planform transform is grouped under one explicit source node to
+preserve rotated part shapes without per-object shear/decomposition errors.
+
+Rigellian CDB's sophistication, research emphasis and ergonomic elegance guide
+integrated, readable equipment. Architecture is contextual guidance for this
+station, not proof of a particular alloy, optical device or recovered socket.
+The catalogue's four equipment slots still lack recovered 3D mount transforms;
+the authored AlignmentAxis helper remains unchanged and uncalibrated.
+
+The complete editable source is grouped into one marked asset collection,
+including every mesh, PlacementRoot and AlignmentAxis. An added preview-only
+lower fill light makes the lower hemisphere inspectable; lights are excluded
+from the GLB model export. Blend, GLB and metadata are under
+`sources/docs/assets/reconstruction/rigellian-refined/observatory/`, with native
+and imported previews/reports under the corresponding `gallery/media/` path.
+
+Native reopen and independent GLB import verify all 118 closed positive meshes,
+identity root/hierarchy, declared planform fit, retained components, material bindings, belt thickness,
+bay/central/chamber features, terminals, clear forward chamber faces and the
+unchanged alignment helper. Redundant new UV layers were removed so existing
+packed-material mappings use the same UV set index as the retained components,
+avoiding unnecessary exported material variants. Whole, frontal and belt detail
+views are actually rendered in both formats and compared. Original pixels and
+the before/after comparison remain local ignored reference material.
+
 The full Rigellian pass remains active. This document records structural
 milestone, not completion of all 35 models or all review-ledger gates.

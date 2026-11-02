@@ -51,3 +51,9 @@
 ![Observatory](../gallery/media/docs/assets/reconstruction/ships/rigellian/observatory/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/ships/rigellian/observatory/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/observatory/model.glb)
+
+**Additional iteration — structural-detail-refinement**
+
+![Observatory](../gallery/media/docs/assets/reconstruction/rigellian-refined/observatory/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/observatory/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/observatory/model.glb)

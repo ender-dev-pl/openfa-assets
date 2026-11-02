@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = {
     'ri20': ('refine_rigellian_extractor.py', 'verify_refined_rigellian_extractor.py'),
     'ri03': ('refine_rigellian_nourishment.py', 'verify_refined_rigellian_nourishment.py'),
+    'observatory': ('refine_rigellian_observatory.py', 'verify_refined_rigellian_observatory.py'),
 }
 
 
