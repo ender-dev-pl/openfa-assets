@@ -162,6 +162,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Missile Launcher](../gallery/media/docs/assets/reconstruction/launch-facilities/artemian/ar16/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/artemian/ar16/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/artemian/ar16/model.glb)
+
 ## Auto-deterrent
 
 `openfa:building/legacy/123`

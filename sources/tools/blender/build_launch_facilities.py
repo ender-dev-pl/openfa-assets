@@ -40,6 +40,28 @@ def mesh_object(name, vertices, faces, mat):
     return obj
 
 
+
+def box(name, low, high, mat):
+    return mesh_object(name,[(x,y,z) for x,y,z in [(low[0],low[1],low[2]),(high[0],low[1],low[2]),(high[0],high[1],low[2]),(low[0],high[1],low[2]),(low[0],low[1],high[2]),(high[0],low[1],high[2]),(high[0],high[1],high[2]),(low[0],high[1],high[2])]],
+        [(0,3,2,1),(4,5,6,7),(0,1,5,4),(1,2,6,5),(2,3,7,6),(3,0,4,7)],mat)
+
+
+def hemisphere_lid(radius, top, mats):
+    count=96; rings=20
+    rows=[]
+    for inner in [False,True]:
+        r=radius-(.026 if inner else 0)
+        angles=[i*math.pi/2/(rings-1) for i in range(rings)]
+        if inner:angles.reverse()
+        rows += [(top+r*math.sin(angle),max(.0001,r*math.cos(angle))) for angle in angles]
+    points=[(r*math.cos(i*math.tau/count),r*math.sin(i*math.tau/count),z) for z,r in rows for i in range(count)]
+    faces=[(row*count+i,row*count+(i+1)%count,(row+1)*count+(i+1)%count,(row+1)*count+i) for row in range(len(rows)-1) for i in range(count)]
+    for i in range(count):faces.append((i,(len(rows)-1)*count+i,(len(rows)-1)*count+(i+1)%count,(i+1)%count))
+    lid=mesh_object('Hemispherical hinged dome',points,faces,mats['body'])
+    for polygon in lid.data.polygons:polygon.use_smooth=True
+    return lid
+
+
 def cylinder(name, radius, bottom, top, mat, inner=0):
     count = 64
     vertices = []
@@ -158,8 +180,8 @@ def slices(objects, radius, mats, axis=0):
         remove(obj)
 
 
-def bore(radius, mats, moving, floor=.05):
-    cutter = cylinder('Temporary bore cutter', radius, min(.045,floor-.01), 8, mats['dark'])
+def bore(radius, mats, moving, floor=.05, square=False):
+    cutter = box('Temporary bore cutter',(-radius,-radius,min(.045,floor-.01)),(radius,radius,8),mats['dark']) if square else cylinder('Temporary bore cutter', radius, min(.045,floor-.01), 8, mats['dark'])
     for obj in list(bpy.context.scene.objects):
         if obj.type!='MESH' or obj==cutter or obj in moving or any(p.name.startswith('LaunchLeaf') for p in parents(obj)):
             continue
@@ -173,7 +195,8 @@ def bore(radius, mats, moving, floor=.05):
         if not obj.data.polygons:
             remove(obj)
     remove(cutter)
-    cylinder('Recessed launch well floor', radius*.995, floor-.004, floor, mats['dark'])
+    if square:box('Recessed launch well floor',(-radius,-radius,floor-.004),(radius,radius,floor),mats['dark'])
+    else:cylinder('Recessed launch well floor', radius*.995, floor-.004, floor, mats['dark'])
 
 
 def parents(obj):
@@ -191,11 +214,47 @@ def crown(radius, top, mats):
 
 
 
-def energy_spiral(radius, top, mats):
-    energy=material('MK12 | yellow energetic ribbon',(.75,.55,.005),0)
+
+
+def lathe_profile(name, rows, mat):
+    count=96
+    points=[(r*math.cos(i*math.tau/count),r*math.sin(i*math.tau/count),z) for z,r in rows for i in range(count)]
+    faces=[(row*count+i,row*count+(i+1)%count,(row+1)*count+(i+1)%count,(row+1)*count+i)
+           for row in range(len(rows)-1) for i in range(count)]
+    faces += [tuple(reversed(range(count))),tuple(range((len(rows)-1)*count,len(rows)*count))]
+    obj=mesh_object(name,points,faces,mat)
+    for polygon in obj.data.polygons:polygon.use_smooth=True
+    return obj
+
+
+def mushroom_lid(radius, top, mats):
+    count=96
+    rings=[(radius*.99,top),(radius*1.04,top+.025),(radius,top+.06),
+           (radius*.88,top+.10),(radius*.72,top+.15),(radius*.50,top+.205),
+           (radius*.25,top+.24),(.002,top+.25)]
+    points=[(r*math.cos(i*math.tau/count),r*math.sin(i*math.tau/count),z) for r,z in rings for i in range(count)]
+    faces=[(row*count+i,row*count+(i+1)%count,(row+1)*count+(i+1)%count,(row+1)*count+i)
+           for row in range(len(rings)-1) for i in range(count)]
+    faces += [tuple(reversed(range(count))),tuple(range((len(rings)-1)*count,len(rings)*count))]
+    lid=mesh_object('Mushroom cap shutter',points,faces,mats['cap'])
+    # Spiral rib follows the hat surface and moves with the entire one-piece cap.
+    curve=bpy.data.curves.new('Mushroom spiral relief','CURVE');curve.dimensions='3D';curve.bevel_depth=.006;curve.bevel_resolution=2
+    line=curve.splines.new('POLY');line.points.add(240)
+    for i,point in enumerate(line.points):
+        t=i/240;r=radius*(.08+.87*t);angle=math.tau*3.2*t
+        z=top+.25*(1-(r/radius)**1.5)+.012
+        point.co=(r*math.cos(angle),r*math.sin(angle),z,1)
+    rib=bpy.data.objects.new('Mushroom spiral raised rib',curve);bpy.context.scene.collection.objects.link(rib);rib.data.materials.append(mats['trim'])
+    bpy.ops.object.select_all(action='DESELECT');rib.select_set(True);bpy.context.view_layer.objects.active=rib;bpy.ops.object.convert(target='MESH')
+    rib=bpy.context.object;rib.parent=lid
+    return lid
+
+
+def energy_spiral(radius, top, mats, upward=False):
+    energy=material('MK11 | upward spiral ribbon' if upward else 'MK12 | yellow energetic ribbon',(.75,.55,.005),.25 if upward else 0)
     shader=energy.node_tree.nodes.get('Principled BSDF')
     shader.inputs['Emission Color'].default_value=(.75,.65,0,1)
-    shader.inputs['Emission Strength'].default_value=.8
+    shader.inputs['Emission Strength'].default_value=.15 if upward else .8
     def position(t):
         r=.025+(radius-.025)*min(t,1)+.035*max(0,t-1)
         angle=math.tau*3.5*t
@@ -209,14 +268,19 @@ def energy_spiral(radius, top, mats):
         bpy.context.scene.collection.objects.link(control);obj.parent=control;control.rotation_mode='QUATERNION'
         for frame in range(1,62):
             fraction=(frame-1)/30 if frame<=31 else (61-frame)/30
-            a=position(i/160+fraction);b=position((i+1)/160+fraction)
-            tangent=(b-a).normalized();radial=Vector(((a.x+b.x)/2,(a.y+b.y)/2,0)).normalized()
+            t=i/160-fraction*1.02 if upward else i/160+fraction
+            hidden=upward and t<0
+            a=position(max(t,0));b=position(max(t+1/160,0))
+            tangent=(b-a).normalized() if (b-a).length>.000001 else Vector((1,0,0))
+            radial=Vector(((a.x+b.x)/2,(a.y+b.y)/2,0)).normalized()
             normal=tangent.cross(radial).normalized()
             if normal.z<0:normal=-normal
             side=normal.cross(tangent).normalized()
             rotation=Matrix(((tangent.x,side.x,normal.x),(tangent.y,side.y,normal.y),(tangent.z,side.z,normal.z)))
             control.location=(a+b)/2;control.rotation_quaternion=rotation.to_quaternion()
-            control.scale=((b-a).length*1.03,.110,.009)
+            control.scale=((b-a).length*1.03,.210 if upward else .110,.009)
+            if hidden:
+                control.location=(0,0,.01);control.scale=(.00001,.00001,.00001);control.rotation_quaternion=(1,0,0,0)
             for path in ['location','rotation_quaternion','scale']:control.keyframe_insert(data_path=path,frame=frame)
         action=control.animation_data.action
         for curve in action.fcurves:
@@ -237,11 +301,11 @@ def prepare(record, spec, mats):
         if obj.animation_data:
             obj.animation_data_clear()
     mode=spec['mode']; top=spec['top']; radius=spec.get('radius',spec['mouth'])
-    if mode in ['roof','open-roof','open-emitter']:
+    if mode in ['roof','fold-down','open-roof','open-emitter']:
         for obj in scene.objects:
             if obj.type=='MESH' and obj.name.startswith('Aerial'):
                 obj.location.x-=.72; obj.location.y+=.72
-    if mode in ['roof','open-roof']:
+    if mode in ['roof','fold-down','open-roof']:
         for obj in list(scene.objects):
             if obj.type=='MESH' and obj.name.startswith(('Roof recessed opening','Weapon pivot','Weapon barrel','Weapon dark bore')):
                 remove(obj)
@@ -275,7 +339,7 @@ def prepare(record, spec, mats):
         remove(original)
     elif mode=='single-lid':
         obj=bpy.data.objects[spec['targets'][0]]
-        lid=clipped(obj,'Rear hinged launch lid',2,top,None)
+        lid=hemisphere_lid(radius*.98,top,mats)
         base=clipped(obj,'Hollow tower casing',2,None,top)
         remove(obj)
         hinge=cylinder('Rear lid hinge axle',.055,-.16,.16,mats['trim'])
@@ -283,9 +347,25 @@ def prepare(record, spec, mats):
         wear(hinge,mats)
         wear(lid,mats)
         move_control(lid,'LaunchLeaf rear hinge',origin=(0,radius,top),rotation=(-math.radians(110),0,0))
+    elif mode=='fold-down':
+        roof=bpy.data.objects['Block roof ledge']
+        centre=clipped(roof,'Temporary central roof',0,-spec['mouth'],spec['mouth'])
+        inner=clipped(centre,'Temporary central hatch',1,-spec['mouth'],spec['mouth']);remove(centre)
+        for sign in [-1,1]:
+            leaf=clipped(inner,'Down-folding red hatch '+str(sign),0,0 if sign>0 else None,0 if sign<0 else None)
+            leaf.data.materials.clear();leaf.data.materials.append(mats['accent']);wear(leaf,mats)
+            move_control(leaf,'LaunchLeaf inward hinge '+str(sign),origin=(sign*spec['mouth'],0,top),rotation=(0,-sign*math.radians(92),0))
+        remove(inner)
     elif mode=='roof':
         slices([bpy.data.objects['Block roof ledge']],radius,mats)
-    elif mode in ['crown','tower-crown','energy-spiral']:
+    elif mode=='organic-upward-spiral':
+        for obj in list(scene.objects):
+            if obj.type=='MESH':remove(obj)
+        cylinder('MK11 circular organic footing',.95,0,.12,mats['body'])
+        lathe_profile('MK11 organic hemisphere and hollow trunk',[(.10,.77),(.16,.82),(.30,.78),(.46,.66),(.60,.43),(.68,.39),(.88,.35),(1.08,.40),(1.19,.51),(1.25,.75)],mats['body'])
+        cylinder('MK11 upper organic ring',.82,1.18,1.27,mats['body'],inner=spec['mouth']+.025)
+        energy_spiral(radius,top,mats,upward=True)
+    elif mode in ['crown','tower-crown','energy-spiral','mushroom-retract']:
         if mode=='crown':
             obj=bpy.data.objects['Flared spindle column']
             base=clipped(obj,'Hollow spindle support',2,None,spec['trim_above']); remove(obj)
@@ -296,15 +376,25 @@ def prepare(record, spec, mats):
                 z=.12+i*(spec['height']-.12)/11
                 cylinder('Tower exterior band',.50,z,z+.028,mats['trim'],inner=.475)
         cylinder('Crown fixed support rim',radius*1.13,top-.07,top,mats['body'],inner=spec['mouth']+.02)
-        if mode=='energy-spiral': energy_spiral(radius,top,mats)
+        if mode=='mushroom-retract':
+            for obj in list(scene.objects):
+                if obj.type=='MESH' and obj.name.startswith(('Faceted crystal tower','Crystal radial strut','Crystal luminous node')): remove(obj)
+            for x in [-.67,.67]:
+                bpy.ops.mesh.primitive_uv_sphere_add(segments=48,ring_count=24,radius=1,location=(x,0,.48))
+                lobe=bpy.context.object;lobe.name='Rounded side chamber';lobe.scale=(.55,.53,.48)
+                bpy.ops.object.transform_apply(location=False,rotation=False,scale=True);lobe.data.materials.append(mats['body'])
+                for polygon in lobe.data.polygons: polygon.use_smooth=True
+            lid=mushroom_lid(radius,top,mats)
+            wear(lid,mats)
+            move_control(lid,'LaunchLeaf rear-stowing mushroom cap',translation=(0,radius*2.15,.035))
+        elif mode=='energy-spiral': energy_spiral(radius,top,mats)
         else: slices(crown(radius,top,mats),radius,mats)
     elif mode=='strip-cover':
         plate=cylinder('Transverse green cover',radius,top,top+.025,mats['body'])
-        for polygon in plate.data.polygons:
-            if polygon.normal.z>.5 and polygon.index%3==0:
-                if len(plate.data.materials)<2: plate.data.materials.append(mats['accent'])
-                polygon.material_index=1
-        slices([plate],radius,mats,axis=1)
+        targets=[plate]
+        for x in [-.32,0,.32]:
+            targets.append(box('Red transverse cover marking',(x-.06,-.55,top+.026),(x+.06,.55,top+.028),mats['accent']))
+        slices(targets,radius,mats,axis=0)
     elif mode=='pyramid':
         for obj in list(scene.objects):
             if obj.type=='MESH' and obj.name.startswith(('Landing pad','Landing deck')):
@@ -335,7 +425,7 @@ def prepare(record, spec, mats):
         raise ValueError(mode)
     bpy.context.view_layer.update()
     movers=[obj for obj in scene.objects if obj.type=='MESH' and any(p.name.startswith('LaunchLeaf') for p in parents(obj))]
-    bore(spec['mouth'],mats,movers,spec.get('floor',.05))
+    bore(spec['mouth'],mats,movers,spec.get('floor',.05),spec.get('square',False))
     if mode=='pyramid':
         cylinder('Vertical hangar shaft walls',spec['mouth']+.025,spec['floor'],top,mats['dark'],inner=spec['mouth'])
     if mode=='crown':

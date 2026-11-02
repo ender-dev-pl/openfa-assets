@@ -112,6 +112,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk11/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Volition](../gallery/media/docs/assets/reconstruction/launch-facilities/mikotaj/mk11/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk11/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk11/model.glb)
+
 ## Visibility
 
 `openfa:building/legacy/097`
@@ -177,6 +183,12 @@
 ![Shrekn](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk17/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk17/model.glb)
+
+**Additional iteration — verified-launch-mechanism**
+
+![Shrekn](../gallery/media/docs/assets/reconstruction/launch-facilities/mikotaj/mk17/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk17/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk17/model.glb)
 
 ## Ruth-feror
 

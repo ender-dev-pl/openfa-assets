@@ -122,6 +122,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Landing Pad](../gallery/media/docs/assets/reconstruction/launch-facilities/achaean/ac12/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac12/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac12/model.glb)
+
 ## Missile Launcher
 
 `openfa:building/legacy/163`

@@ -92,6 +92,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn09/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Launch Area](../gallery/media/docs/assets/reconstruction/launch-facilities/mauna/mn09/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn09/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn09/model.glb)
+
 ## Satellite Pad
 
 `openfa:building/legacy/139`
