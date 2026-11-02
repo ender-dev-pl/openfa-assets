@@ -2,7 +2,7 @@
 
 Editable artwork, procedural generators and verification tools for the alternative OpenFA visual presentation. This repository owns asset authoring; [ed-openfa-game](https://github.com/ender-dev-pl/ed-openfa-game) owns gameplay, runtime rendering and packaged resources.
 
-**[Browse the model gallery](gallery/README.md)** · **[Interactive catalogue](gallery/index.html)** · [Workflow](docs/workflow.md) · [Project structure](docs/structure.md) · [Verification](docs/verification.md) · [Provenance](docs/provenance.md)
+**[Browse the model gallery](gallery/README.md)** · **[Interactive catalogue](gallery/index.html)** · **[Construction videos](gallery/construction-animations.html)** · [Workflow](docs/workflow.md) · [Project structure](docs/structure.md) · [Verification](docs/verification.md) · [Provenance](docs/provenance.md)
 
 The imported inventory covers **303 definitions**: 177 buildings, 41 ships/vehicles, 16 hardpoints and 69 missiles across seven cultures. It registers **366 existing study entries**, including available refined studies. The source archive contains **396 Blend files and 405 GLB files**, including earlier variants, reusable rigs and effects. Definition counts, file counts and unique geometry counts are different measures.
 

@@ -78,7 +78,8 @@ def main():
     lines = ['# Model gallery', '', 'Existing authored studies only. First run and available refined stages are shown separately. '
              'A technical study is not final artistic acceptance.', '',
              '[Interactive catalogue](index.html) · [Machine-readable index](catalogue.json) · '
-             '[RIS2 scaffold refinement](scaffolds-ris2.md) · [Culture scaffold kits](scaffolds-cultures.md)', '']
+               '[RIS2 scaffold refinement](scaffolds-ris2.md) · [Culture scaffold kits](scaffolds-cultures.md) · '
+               '[Game-rendered construction videos](construction-animations.html)', '']
     categories = [c for c in CATEGORY_LABELS if any(key[0] == c for key in sheets)]
     cultures = sorted({r['culture'] for r in rows}, key=lambda c:(c == 'shared', c))
     lines += index_table(sheets, cultures, categories)
