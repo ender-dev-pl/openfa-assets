@@ -264,6 +264,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/energy-gatherer/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/energy-gatherer/model.glb)
 
+**Additional iteration — visible-casing-refinement**
+
+![Energy Gatherer](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri14/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri14/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri14/model.glb)
+
 ## Energy Globe
 
 `openfa:building/legacy/054`

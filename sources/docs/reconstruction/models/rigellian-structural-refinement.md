@@ -360,5 +360,42 @@ below 0.031/255. Final paired and before/after renders were inspected alongside
 the source. Final artistic acceptance, exact equipment internals and gameplay
 calibration remain open.
 
+## RI14 Energy Gatherer
+
+The paletted surface and all 41 catalogue phases were inspected. The lower
+bronze assembly has distinct broad divisions: horizontal bands on the upper
+chamber and more vertical sections on the lower chamber, alongside the long
+pale front conduit. The old study's two small repeated service panels and
+individual tiny fasteners understated this readable difference.
+
+The new separate study replaces those eighteen small panel/frame/inset/fastener
+meshes with two body-following casing backings, three broad upper horizontal
+ribs and three long lower vertical ribs. Exact counts, sections and hidden
+construction remain authored interpretation. The casings stop to the left of
+the existing conduit rather than burying it. Eighteen other components retain
+their geometry/material/hierarchy with zero position drift: original chambers,
+connector, upper vessel, conduit/shoes, open crown/floor, probe and upright
+castings. Supported overall proportions and the bowl shape are preserved;
+exact hidden upright arrangement remains inferred. Earlier studies stay intact.
+
+One independently authored recessed-bronze colour map preserves inherited wear
+variation and packed roughness. Source pixels remain evidence only. The legacy
+function text explicitly leaves the power-generation method undisclosed, so
+no reactor interior, exhaust, glowing process or idle mechanism is invented.
+CDB elegance/ergonomics support coherent casing divisions without identifying
+a specific alloy or overriding that deliberate uncertainty.
+
+Native reopen and independent GLB checks cover all twenty-six closed positive
+consistently wound components, backing/body and rib/backing contacts, actual
+horizontal/vertical extents, front rays proving the conduit stays clear of all
+new casing parts, and the preserved open bowl above its floor. Marked grouping,
+root/footprint, retained components, material/hierarchy, authored texture hashes
+and static-state policy accompany actual whole/front and intentional casing
+detail render pairs. Compared positions have zero difference, all three paired
+silhouettes have IoU 1.0 and the largest foreground RGB mean difference is below
+0.403/255 (detail below 0.0038/255). Final paired and before/after renders were
+inspected against the original. Final artistic acceptance, hidden equipment and
+gameplay calibration remain open.
+
 The full Rigellian pass remains active. This document records structural
 milestone, not completion of all 35 models or all review-ledger gates.
