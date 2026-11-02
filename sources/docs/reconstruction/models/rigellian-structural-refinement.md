@@ -285,5 +285,45 @@ checked alongside actual front-quarter, side and underside paired renders.
 Final artistic acceptance, hidden attachment geometry, exact projection and
 game calibration remain open.
 
+## RI2C Messier-Lukannon
+
+All 32 nonempty paletted RI2C headings were inspected. In particular, headings
+24 through 30 distinguish a copper rim around a dark central terminal region;
+the earlier pointed solid copper cap omitted that subdivision. The new separate
+study gives it a broader annular mouth and a recessed opaque backing. A physical
+recess is an authored interpretation of that dark region, not proof of a gun,
+engine or recovered cavity depth. The exact terminal orientation and game
+alignment remain uncalibrated; AlignmentForward is unchanged.
+
+The flattened slate hull receives curved section transitions. Two broad fitted
+green aft fields restore readable source colour regions; their exact boundaries
+and small physical thickness are authored interpretation. The source colour
+does not establish particular alloys or a mechanical hatch. A new authored
+colour map retains inherited wear/roughness; original reference pixels are
+never used as a texture. Side bosses, their faces and upper service/gold
+fittings follow the revised hull. The 32-heading review supports keeping the
+swept lower projections, so both ventral wings and their pads retain their
+geometry, materials and hierarchy. Hidden projection thickness remains inferred.
+CDB sophistication/ergonomics guide coherent construction without overriding
+actual silhouettes or inventing a propulsion mechanism.
+
+Native reopen and independent GLB checks exercise the physical mouth: a clear
+central ray through the copper ring, front annulus and recessed-face hits,
+inward-facing mouth wall, backing/ring contact and terminal/body root contact.
+They also check closed positive consistently wound components, measured body
+sections, green skin contacts, both retained wing roots, 32 side-boss root
+witnesses, four face/bezel overlaps and dorsal fitting roots. Complete marked
+source grouping, material/hierarchy bindings, authored texture hashes and the
+unchanged helper accompany actual whole/top and intentionally cropped terminal
+detail render pairs. Earlier studies remain unchanged and selectable. Final
+artistic acceptance, exact hidden sections and calibrated gameplay integration
+remain open.
+
+All twenty-nine native/imported components pass; the four retained wing/pad
+components have zero position drift. Compared native/imported positions have
+zero difference, the three paired silhouettes have IoU 1.0 and the largest
+foreground RGB mean difference is below 0.0047/255. Final whole/top/detail and
+before/after renders were inspected against the original directional evidence.
+
 The full Rigellian pass remains active. This document records structural
 milestone, not completion of all 35 models or all review-ledger gates.

@@ -44,6 +44,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/ships/rigellian/messier-lukannon/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/messier-lukannon/model.glb)
 
+**Additional iteration — visible-section-refinement**
+
+![Messier-Lukannon](../gallery/media/docs/assets/reconstruction/rigellian-refined/messier-lukannon/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/messier-lukannon/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/messier-lukannon/model.glb)
+
 ## Transportation
 
 `openfa:ship/rigellian/transportation`
