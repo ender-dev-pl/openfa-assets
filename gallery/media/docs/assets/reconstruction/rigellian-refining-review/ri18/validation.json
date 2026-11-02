@@ -1,0 +1,51 @@
+{
+  "issue": 185,
+  "key": "RI18",
+  "id": "openfa:building/legacy/057",
+  "name": "Missile Launcher",
+  "study": "sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.blend",
+  "blend_sha256": "0c0de3b5550d8cdd450e2162e42a4dc6d520f98116544caab455185b8ba571a1",
+  "glb_sha256": "1c6ec870dafb3b661b704f3a804dfc7a11407e1d01a9d4ae46a5af2d0a75bab8",
+  "runner_sha256": "bed2815edabd52cf38136f1f8cf0e3125afd6744e72d4c4386a9d65f3055f933",
+  "verifier": "verify_launch_facilities.py",
+  "verifier_sha256": "b452dde7d0b7599adac55822213cbb2928358831582b430b2f93520f470687e3",
+  "original_assertions_unchanged": true,
+  "canonical_inputs_unchanged": true,
+  "retained_generation_provenance": {
+    "recorded_generator_sha256": "4763ec0c949f4d0f7f930f4d67d3ddaceed41094576cae8c1fa31ac10c4cb29b",
+    "current_generator_sha256": "37c443e3138d9a00652dd3097605909e8c2854d7c0dac0a620f11d5b3d6d6025",
+    "recorded_recipe_sha256": "c42fa01a20ec1a273546a725e865fca5bc948b173e928463374e1a5581837599",
+    "current_recipe_sha256": "364952b026b37b94566e7244bee8621bd4f6e2bd690491345454024fb3150f47",
+    "generator_executed": false
+  },
+  "canonical_inputs": {
+    "sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.blend": "0c0de3b5550d8cdd450e2162e42a4dc6d520f98116544caab455185b8ba571a1",
+    "sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.glb": "1c6ec870dafb3b661b704f3a804dfc7a11407e1d01a9d4ae46a5af2d0a75bab8",
+    "sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.json": "ecb126ce203b0028050937f42b9a29a734e0b29e5f082e08d12347b5d8064ff0"
+  },
+  "actual_runtime_report_sha256": "64aa1518a3d4a6aa5fc5b666c05dd621479478704dce9a0844a3c12f58762909",
+  "working_copy": "artifacts/issue-185/retention-runtime/ri18/working",
+  "blender": "4.5.15 LTS",
+  "state_renders": {
+    "imported-closed.png": "9ce852515d4c5b35879740d29a42f37a60a474f866aebaadb20f4d79e84f0887",
+    "imported-half-open.png": "f66ee2c797f02baa4927304c8f93e706a6b8e46ef1ad599151e4e92a86755588",
+    "imported-open.png": "c7b7607bb1b5ee2089def50b068e3b77352ef00d8238550562f332c8d3eabb77",
+    "native-closed.png": "f5dd703cc1fd8d6ad5549e0039acbb986b71f1963cf5fa1087aa298f1820034f",
+    "native-half-open.png": "513b5010a9d7b12147178efae5d5b1b24c76131ff44a6b38dacdcb432f8d0222",
+    "native-open.png": "f2a813e2ab9a6e0348bae990016f9cac7f9e2518306377cabb7f25a93e17c4eb"
+  },
+  "passed": true,
+  "visual_decision": "retain-existing-study",
+  "decision_reason": "Retain the stepped green shell, segmented bronze foundation, front rungs, side rod and sideways opening dome halves. Original base/cover layers were composed at descriptor offsets; fresh native/import closed/half/open renders and aperture tests support retaining the previous launch animation.",
+  "visual_acceptance": "Review decision only; final artistic acceptance and gameplay calibration remain separate",
+  "evidence_scope": "All 41 correctly paletted catalogue phases; source surface parts and current native/independent GLB views",
+  "published_renders": {
+    "imported-closed.png": "9ce852515d4c5b35879740d29a42f37a60a474f866aebaadb20f4d79e84f0887",
+    "imported-half-open.png": "f66ee2c797f02baa4927304c8f93e706a6b8e46ef1ad599151e4e92a86755588",
+    "imported-open.png": "c7b7607bb1b5ee2089def50b068e3b77352ef00d8238550562f332c8d3eabb77",
+    "native-closed.png": "f5dd703cc1fd8d6ad5549e0039acbb986b71f1963cf5fa1087aa298f1820034f",
+    "native-half-open.png": "513b5010a9d7b12147178efae5d5b1b24c76131ff44a6b38dacdcb432f8d0222",
+    "native-open.png": "f2a813e2ab9a6e0348bae990016f9cac7f9e2518306377cabb7f25a93e17c4eb"
+  },
+  "actual_runtime_report": "actual-runtime-report.json"
+}
