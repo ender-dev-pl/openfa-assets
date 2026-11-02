@@ -1,6 +1,6 @@
 # Model gallery
 
-Existing authored studies only. First run and available refined stages are shown separately. A technical study is not final artistic acceptance. No new refinement was generated.
+Existing authored studies only. First run and available refined stages are shown separately. A technical study is not final artistic acceptance.
 
 [Interactive catalogue](index.html) · [Machine-readable index](catalogue.json)
 
