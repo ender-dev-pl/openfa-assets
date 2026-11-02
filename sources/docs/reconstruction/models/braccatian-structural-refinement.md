@@ -148,3 +148,41 @@ packed colour/roughness arrays. Maximum position difference is 1.014e-6.
 Nine native/imported whole/front/detail pairs have silhouette IoU 1.0 and
 maximum foreground RGB mean difference below 0.0031/255; actual paired renders
 were inspected. These are three more studies in the ongoing full-race pass.
+
+## BR06 Longhouse: joined dwellings and open entrances
+
+The original 36x46 paletted building body, separate 46x29 shadow and all 41
+catalogue phases were inspected. The film is a fixed-view reveal/highlight
+presentation; it does not establish operating or spatial turntable motion.
+The functional narrative (English text record 929, offset 72990, 167 bytes)
+identifies numerous extended-family living quarters. Broad cultural decoration
+therefore does not justify invented ceremonial machinery or clan emblems.
+
+The earlier three isolated generic cones omitted the entire lower complex.
+This study restores three joined gold chambers with broad rose terraces,
+three extruded rose arched entrances, substantial gold jamb fittings and side
+face divisions. Three descending square terraced towers rise from that joined
+assembly. Their broad gold/rose planes, stepped shoulders, red upper collars,
+single gold tips and visible front fittings follow the legacy silhouette and
+colour regions. The entrance openings are actual empty geometry with recessed
+space behind them, rather than dark patches applied to solid boxes.
+
+The exact depths, hidden rear lintel, tower sections, division/fitting counts
+and arrangement on the original 3x3 footprint remain authored. The source does
+not establish a universal bronze alloy or opening entrance animation. Wear is
+independently authored in colour/roughness maps; shallow front-casting dents
+preserve the tower silhouette. The earlier source remains unchanged/selectable.
+
+Actual Blender reopen and independent GLB import passed for all 61 closed,
+positive, consistently wound meshes. A geometric intersection graph with 113
+sampled contacts confirms every part belongs to the connected hall assembly.
+Ray tests confirm all three entrances remain clear for 0.56 units from the
+front test origin at three heights, while separate rays hit the jambs/crowns.
+Independent radial sections require the broad-foot tower taper; red collar
+materials, original footprint, root hierarchy, complete marked collection and
+eight effective colour/roughness map arrays are checked in both formats.
+Three paired whole/front/entrance-detail renders have silhouette IoU 1.0,
+zero measured position drift and maximum foreground RGB mean difference below
+0.0029/255. Native/imported images and source/before/after comparison were
+inspected. Entrance-detail deliberately crops upper towers; whole views check
+full framing. No operating clip is claimed. Full-race completion remains open.
