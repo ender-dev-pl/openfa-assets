@@ -397,5 +397,44 @@ silhouettes have IoU 1.0 and the largest foreground RGB mean difference is below
 inspected against the original. Final artistic acceptance, hidden equipment and
 gameplay calibration remain open.
 
+## RI23 Ultrathermal Lance
+
+The fixed-base sprite, all sixteen upper directional overlays and all 41
+catalogue phases were inspected. Each overlay was actually composed over the
+base using the original descriptor offsets, rather than judged as a separate
+floating head. The source shows a tapered segmented bronze lower bowl under
+the green pedestal, not the old study's almost cylindrical plain skirt.
+
+The new separate study reshapes that skirt into a more strongly tapered lower
+bowl and adds twelve curved cast segments with horizontal relief divisions.
+Exact segment/groove counts, underside curve and hidden construction are
+authored interpretations. Three old small inset strips are omitted. Nine other
+components retain geometry/material/hierarchy with zero position drift,
+including both lances, green head/pedestal, fixed bearing, asymmetric spur and
+front fitting/strip. A new authored recessed-bronze finish preserves inherited
+wear/roughness; source pixels remain reference-only. CDB guidance does not
+establish a recovered alloy or firing mechanism.
+
+The quarter-view camera now exposes the two emitters together. This is a
+presentation choice, not recovered sprite-camera calibration or a change of
+emitter spacing/elevation. YawPivot and both lance-tip sockets retain their
+original transforms and hierarchy. Native and imported runtime tests exercise
+0/90/180/270-degree yaw: actual lance endpoint planes and socket directions
+follow the shared head, while every fixed component remains stationary. A
+runtime yaw rig is not converted into an unsupported idle/firing clip; there
+is no newly invented pitch or firing timing.
+
+Native reopen and independent GLB checks cover all twenty-two closed positive
+consistently wound components, actual foot taper (bottom/upper radius ratio
+about 0.5435), thirty-six segment/root contacts, horizontal relief and skirt,
+pedestal, bearing, head and lance root connections. Complete marked grouping,
+root/footprint, helper preservation, material/hierarchy and authored texture
+hashes accompany actual whole/front and intentional skirt detail render pairs.
+Compared position difference is below 1.073e-6; all three paired silhouettes
+have IoU 1.0 and the largest foreground RGB mean difference is below
+0.0056/255. Final paired and before/after views were inspected against the
+assembled source. Earlier studies remain unchanged and selectable. Final
+artistic acceptance, hidden sections and game-direction calibration remain open.
+
 The full Rigellian pass remains active. This document records structural
 milestone, not completion of all 35 models or all review-ledger gates.

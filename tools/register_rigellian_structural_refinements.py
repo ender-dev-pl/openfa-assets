@@ -11,6 +11,7 @@ SCRIPTS = {
     'ri03': ('refine_rigellian_nourishment.py', 'verify_refined_rigellian_nourishment.py'),
     'ri08': ('refine_rigellian_databanks.py', 'verify_refined_rigellian_databanks.py'),
     'ri14': ('refine_rigellian_energy_casings.py', 'verify_refined_rigellian_energy_casings.py'),
+    'ri23': ('refine_rigellian_lance_base.py', 'verify_refined_rigellian_lance_base.py'),
     'observatory': ('refine_rigellian_observatory.py', 'verify_refined_rigellian_observatory.py'),
     'transportation': ('refine_rigellian_transport.py', 'verify_refined_rigellian_transport.py'),
     'lazzaro-research': ('refine_lazzaro_visible_forms.py', 'verify_refined_lazzaro_forms.py'),

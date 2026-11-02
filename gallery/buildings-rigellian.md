@@ -441,3 +441,9 @@
 ![Ultrathermal Lance](../gallery/media/docs/assets/reconstruction/buildings/rigellian/ultrathermal-lance/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/ultrathermal-lance/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/ultrathermal-lance/model.glb)
+
+**Additional iteration — visible-base-refinement**
+
+![Ultrathermal Lance](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri23/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri23/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri23/model.glb)
