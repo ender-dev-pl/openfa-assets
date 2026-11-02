@@ -366,6 +366,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/seismic-penetrator/pb21/model.blend) · [GLB](../sources/docs/assets/reconstruction/seismic-penetrator/pb21/model.glb)
 
+**Additional iteration — curved-nose-refinement**
+
+![Seismic Penetrator](../gallery/media/docs/assets/reconstruction/seismic-penetrator/pb21-curved-nose/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/seismic-penetrator/pb21-curved-nose/model.blend) · [GLB](../sources/docs/assets/reconstruction/seismic-penetrator/pb21-curved-nose/model.glb)
+
 ## Asteroid Engine
 
 `terran:asteroid-engine`

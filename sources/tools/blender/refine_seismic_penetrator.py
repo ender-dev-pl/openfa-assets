@@ -10,11 +10,12 @@ from mathutils import Vector
 from mathutils.noise import noise
 
 ROOT = Path(__file__).resolve().parents[3]
-REL = Path('docs/assets/reconstruction/seismic-penetrator/pb21')
+REL = Path('docs/assets/reconstruction/seismic-penetrator/pb21-curved-nose')
 SOURCE = ROOT/'sources/docs/assets/bootstrap-3d/terran-refined/pb21/model.blend'
 OUTPUT = ROOT/'sources'/REL
 MEDIA = ROOT/'gallery/media'/REL
 TEXTURES = ROOT/'sources/materials/reconstruction/seismic-penetrator/pb21'
+DRILL_AXIS = (0, -1.35)
 
 
 def sha(path):
@@ -92,7 +93,12 @@ def lathe(name,profile,mat,centre=(0,0),start=0,span=math.tau,count=96):
 
 
 def roof_z(x,y):
-    return 1.09+min(0,y+.22)*.31+.018*(1-(x/1.1)**2)
+    # ST24's longitudinal surface lines roll over a convex nose. A circular
+    # section joins the rear deck tangentially; a rounded outline alone is not
+    # sufficient. The radius is authored to match the observed rise/endpoints.
+    radius=2.30
+    forward=max(0,-.22-y)
+    return 1.09+math.sqrt(max(0,radius*radius-forward*forward))-radius+.018*(1-(x/1.1)**2)
 
 
 def roof_width(y):
@@ -100,8 +106,13 @@ def roof_width(y):
 
 
 def roof_surface(name,x0,x1,y0,y1,mat,lift=.004):
-    vertices=[(x,y,roof_z(x,y)+lift) for x,y in [(x0,y0),(x1,y0),(x1,y1),(x0,y1)]]
-    return mesh(name,vertices,[(0,1,2,3)],mat)
+    # Roof paint/abrasions must conform to the curved skin. A long quad would
+    # cut a chord through the nose and disappear under its middle.
+    rows=max(1,math.ceil(abs(y1-y0)/.025))
+    vertices=[(x,y0+(y1-y0)*i/rows,roof_z(x,y0+(y1-y0)*i/rows)+lift) for i in range(rows+1) for x in [x0,x1]]
+    obj=mesh(name,vertices,[(2*i,2*i+1,2*i+3,2*i+2) for i in range(rows)],mat)
+    for polygon in obj.data.polygons:polygon.use_smooth=True
+    return obj
 
 
 def lattice(name,a,b,mat):
@@ -124,24 +135,25 @@ def construct(m):
     # Wireframe shows a rounded machine bell within the shell, and a slotted
     # lower ring. Red in ST24 is an annotation colour, not red material.
     centre=(0,-.40)
+    slot_angle=math.atan2(DRILL_AXIS[1]-centre[1],DRILL_AXIS[0]-centre[0])
     profile=[(.025,.76),(.055,.91),(.13,1.00),(.31,1.00),(.41,.96),(.46,.86)]
-    lathe('Exposed grey violet drilling drum',profile,m['drum'],centre,start=-math.pi/2+.09,span=math.tau-.18,count=128)
-    lathe('Lower drum dark belt',[(.16,1.002),(.225,1.002)],m['dark'],centre,start=-math.pi/2+.09,span=math.tau-.18,count=128)
+    lathe('Exposed grey violet drilling drum',profile,m['drum'],centre,start=slot_angle+.09,span=math.tau-.18,count=128)
+    lathe('Lower drum dark belt',[(.16,1.002),(.225,1.002)],m['dark'],centre,start=slot_angle+.09,span=math.tau-.18,count=128)
     bell=lathe('Rounded internal survey machine bell',[(.34,.89),(.50,.89),(.69,.82),(.86,.68),(.98,.50),(1.01,.16)],m['drum'],centre)
     for vertex in bell.data.vertices:
         vertex.co.z=min(vertex.co.z,roof_z(vertex.co.x,vertex.co.y)-.16)
     # An actual inset sector, following the drum profile, forms the service gap.
-    lathe('Front lower drum recessed radial slot',[(z,r-.085) for z,r in profile],m['dark'],centre,start=-math.pi/2-.09,span=.18,count=8)
-    for x in [-.54,.54]:
-        y=-1.30;rod('Nose shell standoff',(x,y,.38),(x,y,roof_z(x,y)-.085),.026,m['steel'])
+    lathe('Front lower drum recessed radial slot',[(z,r-.085) for z,r in profile],m['dark'],centre,start=slot_angle-.09,span=.18,count=8)
+    # The visible member beneath the nose is the same drill shaft as the fork
+    # above it. Separate nose standoffs would introduce a false offset axis.
     for x in [-1.02,1.02]:
         lathe('Rear cylindrical foundation pier',[(.015,.145),(.055,.16),(.83,.16),(.90,.14)],m['hull'],(x,.84),count=48)
         lathe('Pier foot wear band',[(.02,.161),(.10,.161)],m['dark'],(x,.84),count=48)
     lattice('Rear open bracing',(-1.02,.94,0),(1.02,.94,0),m['lattice'])
     for sign in [-1,1]:
         lattice('Side open bracing '+str(sign),(sign*1.055,-.18,0),(sign*1.055,.84,0),m['lattice'])
-    # Main roof is a compound sloped shell with a semicircular nose, not a box.
-    rows=[-1.549+i*(2.499/44) for i in range(45)]+[-.45,-.22]
+    # Sample the real convex profile, including its tangent join to the deck.
+    rows=[-1.549+i*(2.499/100) for i in range(101)]+[-.45,-.22]
     rows=sorted(set(rows));n=48;verts=[]
     for y in rows:
         w=roof_width(y)
@@ -152,6 +164,7 @@ def construct(m):
             verts.append((x,y,z))
     faces=[(i*(n+1)+j,i*(n+1)+j+1,(i+1)*(n+1)+j+1,(i+1)*(n+1)+j) for i in range(len(rows)-1) for j in range(n)]
     shell=mesh('Rounded compound roof and nose',verts,faces,m['hull'])
+    for polygon in shell.data.polygons:polygon.use_smooth=True
     solid=shell.modifiers.new('Shell plate thickness','SOLIDIFY');solid.thickness=.065
     bpy.context.view_layer.objects.active=shell;bpy.ops.object.modifier_apply(modifier=solid.name)
     bevel(shell,.009)
@@ -161,7 +174,9 @@ def construct(m):
     edges += [(-1.1,.95)]
     for i,(p,q) in enumerate(zip(edges,edges[1:])):
         low=lambda v:.58 if v[1]>=-.22 else roof_z(*v)-.15
-        v=[(*p,low(p)),(*q,low(q)),(*q,roof_z(*q)-.055),(*p,roof_z(*p)-.055)]
+        # Overlap the plate's underside so the bent edge remains closed after
+        # solidifying along its changing normal.
+        v=[(*p,low(p)),(*q,low(q)),(*q,roof_z(*q)-.015),(*p,roof_z(*p)-.015)]
         mesh('Upper shell edge skirt '+str(i),v,[(0,1,2,3)],m['hull'])
     # Rear deck hatches are visibly unequal, silver-violet and shallow.
     for index,(x,y,r) in enumerate([(-.40,.47,.175),(.39,.47,.235)]):
@@ -174,12 +189,18 @@ def construct(m):
         for dx,h in [(-.035,.25),(.035,.32)]:
             rod('Short rear survey aerial',(x+dx,y,.90),(x+dx,y,1.09+h),.006,m['dark'],6)
     # ST24 cutaway identifies this nose fork as the head of a long probe shaft.
-    px,py=-.46,-1.21;z=roof_z(px,py)
+    before=set(bpy.context.scene.objects)
+    px,py=DRILL_AXIS;z=roof_z(px,py)
     rod('Front geophysical probe shaft',(px,py,.065),(px,py,z+.12),.022,m['steel'],16)
     lathe('Probe guide collar',[(z-.025,.065),(z+.025,.065)],m['steel'],(px,py),count=24)
     for dx in [-.045,.045]:rod('Pale probe fork tine',(px+dx,py,z+.07),(px+dx,py,z+.19),.013,m['pale'],10)
     rod('Probe fork bridge',(px-.045,py,z+.07),(px+.045,py,z+.07),.013,m['pale'],10)
     lathe('Internal precision drill head',[(.04,0),(.11,.075),(.20,.033),(.30,.033)],m['steel'],(px,py),count=24)
+    axis=bpy.data.objects.new('Shared drill axis',None);bpy.context.scene.collection.objects.link(axis)
+    axis.location=(px,py,0);axis['role']='drill-axis';axis['axis_direction']=[0,0,1]
+    bpy.context.view_layer.update()
+    for obj in set(bpy.context.scene.objects)-before-{axis}:
+        world=obj.matrix_world.copy();obj.parent=axis;obj.matrix_world=world
     # Confirmed roof paint follows the sloped plate rather than floating above it.
     for row in range(3):
         for col in range(2):
@@ -213,7 +234,7 @@ def configure_camera(direction):
     camera.data.ortho_scale=max(max(p.x for p in local)-min(p.x for p in local),max(p.y for p in local)-min(p.y for p in local))*1.17
 
 
-VIEWS={'front-quarter':(6,-10,7),'rear-quarter':(-6,10,6),'front':(0,-10,4),'side':(10,0,3),'top':(0,-.001,12)}
+VIEWS={'front-quarter':(6,-10,7),'rear-quarter':(-6,10,6),'front':(0,-10,4),'side':(10,0,3),'nose-profile':(10,0,.001),'top':(0,-.001,12)}
 
 
 def main():
@@ -234,7 +255,7 @@ def main():
     root=bpy.data.objects.new('PlacementRoot',None);scene.collection.objects.link(root)
     root['catalogue_id']='terran:seismic-penetrator';root['footprint_width']=root['footprint_height']=3
     for obj in scene.objects:
-        if obj.type=='MESH':obj.parent=root
+        if obj!=root and obj.type in ['MESH','EMPTY'] and obj.parent is None:obj.parent=root
     scene.render.resolution_x=scene.render.resolution_y=768;scene.render.resolution_percentage=100
     if scene.render.engine=='CYCLES':scene.cycles.samples=48
     scene.frame_start=scene.frame_end=1;scene.frame_set(1)
@@ -252,7 +273,10 @@ def main():
         source_study=str(SOURCE.relative_to(ROOT)),source_blend_sha256=sha(SOURCE),
         blend_sha256=sha(OUTPUT/'model.blend'),glb_sha256=sha(OUTPUT/'model.glb'),generator_sha256=sha(Path(__file__)),
         reference='sources/docs/reconstruction/models/seismic-penetrator-reference.json',
-        features=['Compound curved nose shell','Exposed slotted grey-violet drum and internal machine bell','Open diamond rear/side bracing and cylindrical corner piers','Unequal shallow roof hatches','Short aerials and fork-topped geophysical probe continuing to an internal drill head','Sloped roof paint, worn edges, mottled casing, scratches and small dents'],
+        supersedes_study='sources/docs/assets/reconstruction/seismic-penetrator/pb21/model.blend',
+        nose_surface=dict(type='Convex circular longitudinal section, tangent to rear deck',radius=2.30,deck_join_y=-.22,interpretation='Continuous curvature confirmed by PB21/ST24; exact radius is an authored fit'),
+        drill_assembly=dict(axis_origin=[*DRILL_AXIS,0],axis_direction=[0,0,1],parent='Shared drill axis',components='Fork, guide collar, continuous shaft and drill head share the lower drum slot centreline'),
+        features=['Convex cylinder-section nose shell with tangent rear deck join','Exposed slotted grey-violet drum and internal machine bell','Open diamond rear/side bracing and cylindrical corner piers','Unequal shallow roof hatches','Short aerials and fork-topped geophysical probe continuing to an internal drill head','Curvature-conforming roof paint, worn edges, mottled casing, scratches and small dents'],
         animation='Static building study. ST24 technical camera/highlighting sequence is reference evidence, not an invented gameplay loop.',
         material_policy='Packed original authored wear textures embedded in GLB; legacy images used only as shape/colour references, never mapped onto the model',
         inferred=['Absolute dimensions and unseen internal connections','Use-related wear positions and intensity'],

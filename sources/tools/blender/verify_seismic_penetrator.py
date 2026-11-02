@@ -7,6 +7,7 @@ from pathlib import Path
 import bpy
 from mathutils import Vector
 from mathutils.kdtree import KDTree
+from mathutils.bvhtree import BVHTree
 
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from refine_seismic_penetrator import ROOT, OUTPUT, MEDIA, VIEWS, configure_camera, roof_z
@@ -37,7 +38,53 @@ def verify_form(state):
     bounds=[min(p[i] for p in all_points) for i in range(3)]+[max(p[i] for p in all_points) for i in range(3)]
     assert bounds[2]>=-.001 and bounds[5]<1.43, ('Unexpected tall silhouette',bounds)
     assert bounds[4]-bounds[1]>bounds[3]-bounds[0], 'Rounded fore/aft footprint lost'
-    return dict(bounds=bounds,diamond_braces=len(braces),hatch_diameter_ratio=(large[3]-large[0])/(small[3]-small[0]),bell_below_roof=True)
+    # Test the evaluated skin itself. Three collinear longitudinal samples on
+    # the former flat ramp would have almost zero deviation from their chord.
+    roof=bpy.data.objects['Rounded compound roof and nose']
+    evaluated=roof.evaluated_get(bpy.context.evaluated_depsgraph_get());data=evaluated.to_mesh()
+    tree=BVHTree.FromPolygons([evaluated.matrix_world@v.co for v in data.vertices],[list(p.vertices) for p in data.polygons],all_triangles=False)
+    sections=[]
+    for x in [-.50,0,.50]:
+        heights=[]
+        for y in [-.30,-.80,-1.30]:
+            hit,_,_,_=tree.ray_cast(Vector((x,y,3)),Vector((0,0,-1)),5)
+            assert hit is not None,('Missing nose skin',x,y)
+            heights.append(hit.z)
+        deviation=heights[1]-(heights[0]+heights[2])/2
+        assert deviation>.055,('Nose has regressed to a planar slope',x,heights,deviation)
+        sections.append(dict(x=x,ys=[-.30,-.80,-1.30],surface_heights=heights,chord_deviation=deviation))
+    evaluated.to_mesh_clear()
+    axis=bpy.data.objects.get('Shared drill axis')
+    assert axis is not None,'Missing common drill assembly axis'
+    assert not any(name.startswith('Nose shell standoff') for name in state),'Separate nose supports create a false offset drill axis'
+    origin=axis.matrix_world.translation
+    parts=['Front geophysical probe shaft','Probe guide collar','Internal precision drill head','Probe fork bridge']
+    errors=[]
+    for name in parts:
+        bound=state[name]['bounds'];centre=Vector(((bound[0]+bound[3])/2,(bound[1]+bound[4])/2,0))
+        errors.append((centre-Vector((origin.x,origin.y,0))).length)
+        assert bpy.data.objects[name].parent==axis,(name,'Detached from the common drill axis')
+    tines=[name for name in state if name.startswith('Pale probe fork tine')]
+    assert len(tines)==2 and all(bpy.data.objects[name].parent==axis for name in tines)
+    tine_centres=[Vector(((state[name]['bounds'][0]+state[name]['bounds'][3])/2,(state[name]['bounds'][1]+state[name]['bounds'][4])/2,0)) for name in tines]
+    errors.append(((tine_centres[0]+tine_centres[1])/2-Vector((origin.x,origin.y,0))).length)
+    assert max(errors)<.0001,('Drill parts do not share a centreline',errors)
+    shaft=state['Front geophysical probe shaft']['bounds'];collar=state['Probe guide collar']['bounds'];head=state['Internal precision drill head']['bounds']
+    assert shaft[2]<head[5] and shaft[5]>collar[5], 'Drill shaft is not continuous from head through the roof collar'
+    # Probe the actual lower drum's front wall: the centreline must pass through
+    # its open sector, with solid material immediately beside that opening.
+    drum=bpy.data.objects['Exposed grey violet drilling drum']
+    evaluated=drum.evaluated_get(bpy.context.evaluated_depsgraph_get());data=evaluated.to_mesh()
+    tree=BVHTree.FromPolygons([evaluated.matrix_world@v.co for v in data.vertices],[list(p.vertices) for p in data.polygons],all_triangles=False)
+    front_hits=[]
+    for offset in [-.20,0,.20]:
+        hit,_,_,_=tree.ray_cast(Vector((origin.x+offset,-3,.26)),Vector((0,1,0)),5)
+        assert hit is not None,('Missing lower drum surface',offset)
+        front_hits.append(hit.y)
+    evaluated.to_mesh_clear()
+    assert front_hits[1]>max(front_hits[0],front_hits[2])+.5,('Drill axis does not align with drum opening',front_hits)
+    return dict(bounds=bounds,diamond_braces=len(braces),hatch_diameter_ratio=(large[3]-large[0])/(small[3]-small[0]),bell_below_roof=True,convex_nose_sections=sections,
+        common_drill_axis=dict(origin=list(origin),maximum_part_centre_error=max(errors),drum_front_ray_hits=front_hits,shared_parent=True,continuous_shaft=True,no_separate_nose_supports=True))
 
 
 def main():
@@ -69,7 +116,7 @@ def main():
             error=max(error,max(tree.find(p)[2] for p in source))
         assert a['materials']==b['materials'],(name,'Material binding changed',a['materials'],b['materials'])
     assert error<.0001,('GLB geometry drift',error)
-    for name,direction in [('imported-front-quarter',VIEWS['front-quarter']),('imported-rear-quarter',VIEWS['rear-quarter'])]:
+    for name,direction in [('imported-front-quarter',VIEWS['front-quarter']),('imported-rear-quarter',VIEWS['rear-quarter']),('imported-nose-profile',VIEWS['nose-profile'])]:
         configure_camera(direction);scene.render.filepath=str(MEDIA/(name+'.png'));bpy.ops.render.render(write_still=True)
     # A separate technical cutaway shows the probe and machine bell, not a
     # gameplay destruction state. The normal exported source remains complete.

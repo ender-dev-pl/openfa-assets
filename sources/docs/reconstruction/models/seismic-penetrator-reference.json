@@ -83,7 +83,9 @@
     "Short fine aerials, a small pale fork on the nose, red rectangular roof markings and a pale streak near one front edge",
     "ST24 wireframe reveals the rounded internal machine bell beneath the compound roof",
     "The small nose fork continues as a long vertical probe/drill shaft into the lower machinery",
-    "Rear shell and cylindrical side supports frame an open diamond bracing structure, not solid wall panels"
+    "Rear shell and cylindrical side supports frame an open diamond bracing structure, not solid wall panels",
+    "PB21 rotation and ST24 longitudinal wireframe show convex roll-over of the nose surface, not a flat ramp bounded by a rounded outline",
+    "User confirms the upper fork and the visible member beneath the nose are one common drill axis; separate offset shell standoffs were an incorrect interpretation"
   ],
   "current_model_defects": [
     "Straight rectangular wedge instead of rounded compound nose",
@@ -96,12 +98,40 @@
     "Absolute dimensions, unseen drilling/processing interior, exact engineering of lattices and hatch locks",
     "Surface wear distribution and small construction details; material palette and placement follow visible legacy form"
   ],
-  "scope": "New third static study preserves previous PB21 studies. The complete ST24 technical sequence, including holds, camera motion, highlights and cutaways, is reviewed as structure evidence. No gameplay cycle or timing is inferred from it.",
+  "scope": "Fourth static study adds convex nose and a single visible drill assembly. Earlier sources remain preserved. ST24 is structure evidence; no gameplay cycle is inferred.",
   "references": [
     "artifacts/issue-181/references/legacy-rotation.png",
     "artifacts/issue-181/references/legacy-catalogue.png",
     "artifacts/issue-181/references/legacy-blueprint-contact.png",
     "artifacts/issue-181/references/legacy-blueprint.gif"
   ],
-  "reference_distribution": "Original-game pixels and composites remain local/untracked in artifacts, per docs/provenance.md. Only source identifiers, hashes and independently authored output are versioned."
+  "reference_distribution": "Original-game pixels and composites remain local/untracked in artifacts, per docs/provenance.md. Only source identifiers, hashes and independently authored output are versioned.",
+  "nose_axis_followup": {
+    "previous_study": "sources/docs/assets/reconstruction/seismic-penetrator/pb21/model.blend",
+    "previous_blend_sha256": "51bb2321150116ce0933593ce16fdc774a36901d9f6465e8d1d6bfb8435b9012",
+    "reviewed_rotation_frames": [
+      11,
+      21,
+      38,
+      48
+    ],
+    "reviewed_blueprint_updates": [
+      0,
+      20,
+      40,
+      60,
+      78,
+      96,
+      116,
+      168
+    ],
+    "fitted_surface": "Convex circular longitudinal section, tangent to rear hatch deck; exact radius 2.30 is authored rather than a recovered original parameter",
+    "changes": [
+      "Preserve prior study and add separate fourth version",
+      "Subdivide paint/abrasions to follow curved skin rather than chords",
+      "Align fork, guide, continuous shaft and head to the lower-drum opening",
+      "Remove both speculative nose standoffs which created a visually separate offset shaft"
+    ],
+    "verification": "Actual evaluated skin rays at three cross-sections; rejected previous flat-ramp control; source/imported GLB common axis, continuity, assembly parenting and drum opening rays; inspect matching side profiles"
+  }
 }
