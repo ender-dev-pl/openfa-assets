@@ -162,6 +162,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb09/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Satellite Silo](../gallery/media/docs/assets/reconstruction/launch-facilities/terran/pb09/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/terran/pb09/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/terran/pb09/model.glb)
+
 ## Screen Generator
 
 `terran:screen-generator`

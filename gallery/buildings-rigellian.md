@@ -290,6 +290,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/missile-launcher/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/missile-launcher/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Missile Launcher](../gallery/media/docs/assets/reconstruction/launch-facilities/rigellian/ri18/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.glb)
+
 ## Thermal Lance
 
 `openfa:building/legacy/058`

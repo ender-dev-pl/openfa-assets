@@ -112,6 +112,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br11/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Launch Site](../gallery/media/docs/assets/reconstruction/launch-facilities/braccatian/br11/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br11/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br11/model.glb)
+
 ## Eyes-in-the-Sky
 
 `openfa:building/legacy/074`
