@@ -108,6 +108,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn10/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn10/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Satellite Pad](../gallery/media/docs/assets/reconstruction/launch-facilities/mauna/mn10/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn10/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn10/model.glb)
+
 ## Fast Breeder Reactor
 
 `openfa:building/legacy/140`
@@ -147,6 +153,12 @@
 ![Attack Pods](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/model.glb)
+
+**Additional iteration — verified-launch-mechanism**
+
+![Attack Pods](../gallery/media/docs/assets/reconstruction/launch-facilities/mauna/mn14/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn14/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn14/model.glb)
 
 ## Pulse Tower
 

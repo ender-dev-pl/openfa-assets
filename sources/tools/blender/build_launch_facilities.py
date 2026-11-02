@@ -304,7 +304,12 @@ def prepare(record, spec, mats):
     if mode in ['roof','fold-down','open-roof','open-emitter']:
         for obj in scene.objects:
             if obj.type=='MESH' and obj.name.startswith('Aerial'):
-                obj.location.x-=.72; obj.location.y+=.72
+                if mode=='open-emitter':
+                    obj.location.x-=.28; obj.location.y+=.28
+                    obj.location.z+=top+.02-min(v.co.z for v in obj.data.vertices)
+                else:
+                    obj.location.x-=.72; obj.location.y+=.72
+                    obj.location.z+=top-.02-min(v.co.z for v in obj.data.vertices)
     if mode in ['roof','fold-down','open-roof']:
         for obj in list(scene.objects):
             if obj.type=='MESH' and obj.name.startswith(('Roof recessed opening','Weapon pivot','Weapon barrel','Weapon dark bore')):

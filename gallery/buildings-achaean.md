@@ -138,6 +138,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac13/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Missile Launcher](../gallery/media/docs/assets/reconstruction/launch-facilities/achaean/ac13/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac13/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac13/model.glb)
+
 ## Data Gatherer
 
 `openfa:building/legacy/164`
@@ -147,6 +153,12 @@
 ![Data Gatherer](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac14/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac14/model.glb)
+
+**Additional iteration — verified-launch-mechanism**
+
+![Data Gatherer](../gallery/media/docs/assets/reconstruction/launch-facilities/achaean/ac14/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac14/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac14/model.glb)
 
 ## Listening Device
 
