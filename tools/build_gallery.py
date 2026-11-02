@@ -6,6 +6,7 @@ from io import BytesIO
 from pathlib import Path
 from urllib.parse import quote
 from PIL import Image, ImageDraw, ImageOps
+from gallery_animation_assets import animation_previews
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORY_LABELS = {'buildings': 'Buildings', 'ships': 'Ships / vehicles',
@@ -62,9 +63,10 @@ def main():
             glb = ROOT / 'sources' / blend.with_suffix('.glb')
             if not glb.is_file():
                 glb = ROOT / 'sources/docs/assets/bootstrap-3d/exports' / (blend.stem+'.glb')
+            previews=animation_previews('sources/'+study['blend'],glb.relative_to(ROOT).as_posix(),folder)
             studies.append(dict(stage=study['stage'], blend='sources/'+study['blend'],
                 glb=glb.relative_to(ROOT).as_posix() if glb.is_file() else None,
-                image=image.relative_to(ROOT).as_posix(), sha256=study['sha256']))
+                image=image.relative_to(ROOT).as_posix(), sha256=study['sha256'],animations=previews))
         assert studies, record['id']
         row = dict(id=record['id'], name=record['name'], category=record['category'],
                    culture=record['culture'], studies=studies)
@@ -91,6 +93,8 @@ def main():
                 page += ['**'+label+'**', '', '!['+row['name']+']('+img+')', '',
                          '[Blend](../'+quote(study['blend'])+')'+
                          (' · [GLB](../'+quote(study['glb'])+')' if study['glb'] else ''), '']
+                for clip in study['animations']:
+                    page += ['[Play animation: '+clip['name']+'](../'+quote(clip['video'])+')', '']
                 cell = Image.new('RGB', (256, 288), '#161f2b')
                 source = Image.open(ROOT / study['image']).convert('RGBA')
                 source.thumbnail((240, 232))
@@ -117,7 +121,16 @@ def main():
         images = []
         for n, study in enumerate(row['studies']):
             label = ('First available' if n == 0 else 'Additional')+' / '+study['stage']
-            images.append('<figure><img loading="lazy" src="../'+quote(study['image'])+'" alt="'+html.escape(row['name'])+'"><figcaption>'+html.escape(label)+
+            if study['animations']:
+                clips=study['animations']
+                preview='<video controls loop muted playsinline preload="none" poster="../'+quote(study['image'])+'" aria-label="'+html.escape(row['name']+' — '+study['stage']+' animation',quote=True)+'"><source src="../'+quote(clips[0]['video'])+'" type="video/webm">Your browser does not support WebM video.</video>'
+                if len(clips)>1:
+                    options=''.join('<option value="../'+quote(c['video'])+'">'+html.escape(c['name'])+'</option>' for c in clips)
+                    preview+='<label>Animation clip<select class="animation-clip">'+options+'</select></label>'
+                preview+='<p class="animation-label">Animated model · '+str(len(clips))+' clip'+('s' if len(clips)!=1 else '')+'</p>'
+            else:
+                preview='<img loading="lazy" src="../'+quote(study['image'])+'" alt="'+html.escape(row['name'])+'">'
+            images.append('<figure>'+preview+'<figcaption>'+html.escape(label)+
                 '<br><a href="../'+quote(study['blend'])+'">Blend</a>'+
                 (' · <a href="../'+quote(study['glb'])+'">GLB</a>' if study['glb'] else '')+'</figcaption></figure>')
         search = ' '.join([row['name'],row['id'],row['category'],row['culture']]+[s['stage'] for s in row['studies']]).lower()

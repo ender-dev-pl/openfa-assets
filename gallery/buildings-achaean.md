@@ -128,6 +128,8 @@
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac12/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac12/model.glb)
 
+[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/achaean/ac12/animation-00.webm)
+
 ## Missile Launcher
 
 `openfa:building/legacy/163`
@@ -220,6 +222,8 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/animation-00.webm)
+
 ## Commonbore
 
 `openfa:building/legacy/171`
@@ -270,6 +274,8 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/animation-00.webm)
+
 ## Power Tower
 
 `openfa:building/legacy/176`
@@ -279,3 +285,5 @@
 ![Power Tower](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/animation-00.webm)
