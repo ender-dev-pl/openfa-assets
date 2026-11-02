@@ -206,5 +206,44 @@ legacy headings. Private contact sheets remain under ignored
 `artifacts/issue-185/`; the previous study remains selectable in the gallery.
 Final artistic acceptance, exact projection and game calibration remain open.
 
+## RI0A Lazzaro Research
+
+All 32 nonempty embedded-palette RI0A headings were inspected. Their tiny
+14-by-9-scale presentation supports a green central body, broad gold centre,
+gray lateral lobes and brown extremities. It does not resolve a lobe mechanism,
+its hidden thickness, exact four-lobe separation, braces or individual bolts.
+The previous model's four thin rectangular plates overstated a flat-panel
+interpretation of these pixels.
+
+The new separate study rounds the green body transitions and rebuilds the
+gold central region with densely sampled curved sections and 1.25 times the
+previous width. Four fuller rounded lateral shells replace the rectangular
+plates; their brown outer regions belong to the same physical shells. Old
+speculative braces, individual lobe fasteners and separate flat tip plates are
+omitted from this study. Existing shoulder service assemblies are fitted to the
+new body. Exact lateral-shell thickness and curvature remain authored
+interpretation, with no engine, weapon or sensor function asserted.
+
+Two independently authored colour maps reuse the original wear variation and
+retain packed roughness: gray side shells and a gold central finish. Original
+reference pixels never become textures. CDB sophistication and ergonomics
+guide coherent integrated forms; no particular alloy is established by the
+architecture article. The old editable study remains unchanged and available.
+
+Native reopen and independent GLB verification cover the actual closed positive
+consistently wound surfaces, four solid lobe/body root contacts, substantial
+lobe thickness, brown outer material regions, open intervals between lateral
+lobes, broadened gold width, sampled curved crown/body sections and the solid
+crown/body contact. The marked collection contains the complete model and
+unchanged uncalibrated AlignmentForward. Material/hierarchy and source-bound
+texture checks accompany actual whole/top/detail paired rendering. All body
+parts in this study are tracked as modified; zero retained-part drift is not
+presented as evidence of an unchanged model. All fourteen native/imported
+components pass; compared positions have zero difference, all three render
+silhouettes have IoU 1.0 and the largest RGB mean difference is below
+0.0013/255. Actual final renders and before/after views were inspected alongside
+the 32 original headings. Final artistic acceptance, exact
+hidden forms and game calibration remain open.
+
 The full Rigellian pass remains active. This document records structural
 milestone, not completion of all 35 models or all review-ledger gates.

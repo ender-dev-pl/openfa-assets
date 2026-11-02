@@ -12,6 +12,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/ships/rigellian/lazzaro-research/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/lazzaro-research/model.glb)
 
+**Additional iteration — visible-form-refinement**
+
+![Lazzaro Research](../gallery/media/docs/assets/reconstruction/rigellian-refined/lazzaro-research/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.glb)
+
 ## Delphini Assault
 
 `openfa:ship/rigellian/delphini-assault`
