@@ -1,0 +1,4020 @@
+{
+  "issue": 179,
+  "source_archive": "_B/_B",
+  "definition_classes": {
+    "9": "satellite launch",
+    "14": "missile launch",
+    "26": "hangar access"
+  },
+  "functions": {
+    "hangar": "UpdateLandingPadActivitySpriteFrame 0x44BE0",
+    "missile": "UpdateMissileSiloLaunchSpriteFrame 0x44C70",
+    "satellite": "UpdateSatelliteSiloLaunchSpriteFrame 0x44CF0"
+  },
+  "palette_policy": "Embedded VGA palette, flag bits masked; index 0 transparent; base 1 plus activity overlay. Descriptor 17 may contain lower structure and mixed shadow, not a new lid pose.",
+  "records": [
+    {
+      "id": "terran:satellite-silo",
+      "name": "Satellite Silo",
+      "culture": "terran",
+      "definition_class": 9,
+      "global_type": 9,
+      "key": "PB09",
+      "source": "sources/docs/assets/bootstrap-3d/terran-refined/pb09/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "79247649e8747ac2cd0088bcb9c6debb9b2e86a13a630e5da23fca160fe72ca3",
+      "legacy_sprite_sha256": "dbd4a6164cebe58a3094a56ebcf98919b90253a93b81956eba59c2e536f39968",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            41,
+            24
+          ],
+          "offset": [
+            138,
+            89
+          ],
+          "indexed_sha256": "c9fc54796effd78693347337f8b03a239050975f958a2b47ccd85be10dbf520f"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            32,
+            22
+          ],
+          "offset": [
+            144,
+            88
+          ],
+          "indexed_sha256": "6963712b15e9143d792b2722cd064ee8c67f9dc9f130ba9b17c48a3b8afefc8e"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            30,
+            17
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "39a00448e80344944ca76c1cf1abd31de8303ba36657ce075005700968295023"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            30,
+            17
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "eb9f23054d1e1204d2994550e457c8f72d6dfcdc9293f15f4d1a295b4756d4e1"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            30,
+            17
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "2db00b4f97b783bf8c3b7187e77502d01205a607f1560250278b3bc823966c4e"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            30,
+            17
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "654e2725d53f09aa519324fec57b6a8abcab5327e8c4d6270b7e88609b370956"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "7ea46f4df2911b9e6ff836defc56824c2cb3c2d0cd53e7bfb3c59762199dda16"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "0689a923e0843eff681036299cfc431a4af7fd437e2864a87effcb0ce1ee50de"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "605ae8c90afd7f3fe7843ae6566976165fad8ad6d95e8500f6896189b0f5b742"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "5fd733f57c111553e7d70026f8e289a92937dd5bdc0df289431564694e619c40"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "5a6d28e68f54ea5acf9834efdebde32ae5d6753672f909752a5515925e6874e7"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "f9a1d06e3c55ee6b3ea1a3ffa8a6b9b3476f44976130bccd9275e59fde658767"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "f231bee44988d9bd60f97032a5ab2bed480df8c5e1fae3cde6c8e2773afb6240"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "780978b7bdee7d51d593dc23c5a526291a7a53e444934fcd1322e0ec8c674b92"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "eb739101d4d1dea42e6c7eb0fb392e1dc513c1b66affdb77b6cbc0e37f345a02"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "ad535683ccf731103f1d9554b234c56ec8e4e738e647d2f114f101b62cc76576"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            30,
+            16
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "f75dc8f4332471442574c8bd607a0534ea600af15397d202d75a63d81c5bfc3f"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            23,
+            17
+          ],
+          "offset": [
+            149,
+            96
+          ],
+          "indexed_sha256": "6aae5cb1b7e5695136f3599cdd3ebd991edc9c279a6aa294c3c45c4104109046"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Paired lateral lid halves retract to expose the well.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "terran:missile-silo",
+      "name": "Missile Silo",
+      "culture": "terran",
+      "definition_class": 14,
+      "global_type": 14,
+      "key": "PB14",
+      "source": "sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "6a1c3692b9f5d7d58ddf58ecbbd01152ff7234f1c9dd6a506a28dc305ac1a62d",
+      "legacy_sprite_sha256": "6f801223b05827f691e858de423b2a10fca37769e8ae20bbba0fc582e7c67898",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            41,
+            24
+          ],
+          "offset": [
+            138,
+            88
+          ],
+          "indexed_sha256": "273367141c0d6113195a0fe5c66250a2715d7cec1f27d678eaf9899c1e1b45de"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            32,
+            20
+          ],
+          "offset": [
+            144,
+            89
+          ],
+          "indexed_sha256": "40c98169989388b240477b4535ba5bb50b3957b7cd64668acf86cd204e34ab03"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "51797e2ec7d56b7f7a627f57fd304b4144c2a9a4ccace98c7cf5c2e637a13d52"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "38142c23a8f1eb01e7df3d19084e41cc6525e197e8fe539a3e8c34109ff5343b"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "c7c094561c9cfe66fcf1bed935332b09bf2ba3ce351335b4f3d036f61a889587"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "eefc691c4a6eb0b0dde73c8bc85923e57624b805060a750a3c5d25a497c1b597"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "c19aebec3c2ea1dd7c4779a471ce46b2daf5647abcde49d8927907d1528dc693"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "df75d57525ce430095c372144aad48a606253198b24677fa501fa9baf3fa9da5"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "acee13da6605112e95ab112564c287323289eee55cee607180eb5040d974a262"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "918ac907a64d85413db38e24424f73afa1f31d99c3206c261420b6ae11258977"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "81de1d0eb203b0558a51430a9b36728ba0e83bb46ce69230de9916965377ab56"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "b06aa52133c22630b03715603c88ad835b7bb512fd40c94c8410a73a370f84d5"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            21,
+            11
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "e499cf43875a1de37f443099ea2dacd33256b0a074970c969cef6156a101ad0d"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            21,
+            11
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "ca82826e2fd2b3bf50cc5778192e752bae9f84929b3992da934f6f1a5dd33f86"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            15,
+            8
+          ],
+          "offset": [
+            149,
+            90
+          ],
+          "indexed_sha256": "7a3c86313bf4e9c923832e2f5a071d578607601da558a45696a6987d2aed68c5"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            21,
+            15
+          ],
+          "offset": [
+            149,
+            98
+          ],
+          "indexed_sha256": "d35001e0518bc19c2bd80ab956331c959cce8e79ee61d3e9c0700daa6c7dc3e8"
+        }
+      ],
+      "source_actions": [
+        "IrisLeaf_01_OpenClose",
+        "IrisLeaf_02_OpenClose",
+        "IrisLeaf_03_OpenClose",
+        "IrisLeaf_04_OpenClose",
+        "IrisLeaf_05_OpenClose",
+        "IrisLeaf_06_OpenClose",
+        "IrisLeaf_07_OpenClose",
+        "IrisLeaf_08_OpenClose"
+      ],
+      "observed": "Existing authored iris; retain and validate.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "terran:landing-pad",
+      "name": "Landing Pad",
+      "culture": "terran",
+      "definition_class": 26,
+      "global_type": 26,
+      "key": "PB26",
+      "source": "sources/docs/assets/reconstruction/buildings/terran/landing-pad/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "d4f0ee6d61647772accf7d493891ac7e440ccfcb794c7b0359e3613fcd4c3601",
+      "legacy_sprite_sha256": "f357ec6f9b093ed158d5647626a367c1ed2077862c8fbabf64b3e33adb851c2a",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            53,
+            33
+          ],
+          "offset": [
+            134,
+            84
+          ],
+          "indexed_sha256": "2f3943a61f3dfe8c5fd4a8fcf92dec2e2625fd44857cefc4064f0785263c551f"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            42,
+            26
+          ],
+          "offset": [
+            140,
+            87
+          ],
+          "indexed_sha256": "71cb411cc2dbb16d1621e8f6b12efc006e209e7293905dc1aab2902290feaf84"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            42,
+            26
+          ],
+          "offset": [
+            140,
+            87
+          ],
+          "indexed_sha256": "4186d3631183765f8f46d36a8f9b465cd3839faba6a78a5d20a2d677962c85c5"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            42,
+            26
+          ],
+          "offset": [
+            140,
+            87
+          ],
+          "indexed_sha256": "d4b78254b3f6a8865ebafe78a5dc0257b32a675911fedc1ab1529b0b65fc8393"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            42,
+            26
+          ],
+          "offset": [
+            140,
+            87
+          ],
+          "indexed_sha256": "6d9f5e1523896a3ea067a071b2a152d4f136ded5a48b6d401692cd8d2e57737e"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            42,
+            26
+          ],
+          "offset": [
+            140,
+            87
+          ],
+          "indexed_sha256": "3211b46002422ba160ad0ec56b49f8b1052d2c0147b7efbdae2148447921fc18"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            42,
+            26
+          ],
+          "offset": [
+            140,
+            87
+          ],
+          "indexed_sha256": "8003916aa4ed7ec90f86ed73503b518ce71fe3355c562ed75b3b86342d2dc688"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            42,
+            26
+          ],
+          "offset": [
+            140,
+            87
+          ],
+          "indexed_sha256": "08bc462f8e62b1ba78b3a2f793565aaf0c78e53ea51dd9ffc3327a48b9be63ba"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            42,
+            26
+          ],
+          "offset": [
+            140,
+            87
+          ],
+          "indexed_sha256": "5f434390bdf2eed8ca8be58f3f0eff4ddfdf97ff62fcfb4316a2a8ad6a50ab9e"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            25,
+            16
+          ],
+          "offset": [
+            140,
+            87
+          ],
+          "indexed_sha256": "46e25bf8176e32c6316a6e959aa4c771aa501f40454770c654e3de4bcf2ee72e"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            53,
+            17
+          ],
+          "offset": [
+            134,
+            100
+          ],
+          "indexed_sha256": "80411b552166cc588243580c5b6be3e7ee8ed9d63170bb51f6ae7b70c2075630"
+        }
+      ],
+      "source_actions": [
+        "Left leaf 0 retraction",
+        "Left leaf 1 retraction",
+        "Left leaf 2 retraction",
+        "Left leaf 3 retraction",
+        "Left leaf 4 retraction",
+        "Left leaf 5 retraction",
+        "Right leaf 0 retraction",
+        "Right leaf 1 retraction",
+        "Right leaf 2 retraction",
+        "Right leaf 3 retraction",
+        "Right leaf 4 retraction",
+        "Right leaf 5 retraction"
+      ],
+      "observed": "Previously repaired telescopic covers; retain and validate.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/049",
+      "name": "Ground Deck",
+      "culture": "rigellian",
+      "definition_class": 26,
+      "global_type": 49,
+      "key": "RI10",
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/ground-deck/model.blend",
+      "footprint": [
+        3,
+        3
+      ],
+      "source_blend_sha256": "0ca7308c64e56d7aae76832b897912d035ee37a097a5e13a6d439b906be245ee",
+      "legacy_sprite_sha256": "ecc20c5c56da2219fa10cc3ad1fb5fd6cc7b47c818855aa13d8705f84a2fddb9",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            51,
+            24
+          ],
+          "offset": [
+            134,
+            88
+          ],
+          "indexed_sha256": "d3d5f1441d0d04377448fbfe250f7604c81bd35ff17a64683e03ffc59b78c176"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            44,
+            29
+          ],
+          "offset": [
+            139,
+            81
+          ],
+          "indexed_sha256": "2222eb9e191aba7ef145fa049d241e280e934c7a385ca009cf1c9dafb0fed27c"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            28,
+            11
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "5507dcfab6d8fcb489cf2c77d47ca3d1d736bff5b471b3b2669494a8cc6c612f"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            28,
+            11
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "f4a90dca937480f7f8cc6e797cbbcd2ccadfbf5d076cc0184ec8456fbfda1741"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            28,
+            11
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "9daf618ec830b1302a7f1bb21aa1e7e90bf6626b0adb43e525dfd4b6371bcb31"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            28,
+            11
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "b0660bfa4127ecf7adc17399e37e618a2f1040c3acd770ae3e5d053316010e3a"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            28,
+            11
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "95843d392d06cf25e730bf8d6a804b9bc61044f6caa8b1276124c7f2de4a85d3"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            28,
+            11
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "aa0a8057f4a9378d45d5b83f3c8082350f2cb714d2da7d9616b3c5a8f4a547b0"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            28,
+            11
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "9eed078f2d6e79e396a041781596bd5ad53976d8fddab04595334e5e3de603a7"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            28,
+            11
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "e4333892475f443746f6bad1390c7843d6ff95253ef6a4cc5f25983eba4ca156"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            28,
+            11
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "f9b7d7e40d85743e1480e78f8dfd976b8a86bd4fc9fa356dbb9408999fac04c3"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            28,
+            11
+          ],
+          "offset": [
+            146,
+            87
+          ],
+          "indexed_sha256": "9cc62ffc54cddf7e8261eb7a3cae47221830799aabd5acf85637dae11599b9ca"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            28,
+            10
+          ],
+          "offset": [
+            146,
+            88
+          ],
+          "indexed_sha256": "ac030a079cabaceb1de2dae33d929304259bae24f0123aa51056dd82093ff381"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            28,
+            8
+          ],
+          "offset": [
+            146,
+            89
+          ],
+          "indexed_sha256": "ccaacab6c570ee6726834a3129d8c1b7d3dd7166315c0a9edc58101a07c7acb5"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            28,
+            5
+          ],
+          "offset": [
+            146,
+            91
+          ],
+          "indexed_sha256": "6dc9bf16952fa0634801f956accca0826f3373f9cca64bdc90d75e7d62ad894a"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            25,
+            15
+          ],
+          "offset": [
+            148,
+            97
+          ],
+          "indexed_sha256": "2829b532e821c6ac0b37c7b3b76fe1ba7c5a31a433ba35337cfd353a2f2c8c35"
+        }
+      ],
+      "source_actions": [
+        "CoverLeft authored telescopic motion",
+        "CoverLeftInner authored telescopic motion",
+        "CoverLeftOuter authored telescopic motion",
+        "CoverRight authored telescopic motion",
+        "CoverRightInner authored telescopic motion",
+        "CoverRightOuter authored telescopic motion"
+      ],
+      "observed": "Existing authored paired telescopic covers; retain and validate.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/050",
+      "name": "Probe Launch",
+      "culture": "rigellian",
+      "definition_class": 9,
+      "global_type": 50,
+      "key": "RI11",
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "991be069b42daffdad6dc444648caf4303e32cd5a3f1cc13980ecbf4d11c7930",
+      "legacy_sprite_sha256": "3742a26657a9726189de2a035f10204772b1bf41d0a82abb14392d4ad5683728",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            41,
+            24
+          ],
+          "offset": [
+            137,
+            87
+          ],
+          "indexed_sha256": "3a558872b06ee944bb047a848c11b4a4dbf3bb0504b664a9023ee0d88cbc7015"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            28,
+            18
+          ],
+          "offset": [
+            146,
+            89
+          ],
+          "indexed_sha256": "47f6efa9ed9d3a9ec3c3043dcc94e9edb99901ea4392e3feb77d7f5fea34d3d0"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Only shadow and permanent open-port base; no lid descriptors.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/057",
+      "name": "Missile Launcher",
+      "culture": "rigellian",
+      "definition_class": 14,
+      "global_type": 57,
+      "key": "RI18",
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/missile-launcher/model.blend",
+      "footprint": [
+        3,
+        3
+      ],
+      "source_blend_sha256": "6af838edcda6d66cf69fc5220c17250b85be8c881164b594cee6c880ef1c4023",
+      "legacy_sprite_sha256": "21439b6702fa216e77183028c8b125b1954e1f8fe5dfccdf00f31c3720edd0a4",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            44,
+            21
+          ],
+          "offset": [
+            135,
+            93
+          ],
+          "indexed_sha256": "3e6a6a40e6207f674fa20e3ed6a1448c5a6b80932ffba08697f31f8c7dfcccd1"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            34,
+            41
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "c94d3a958d97ee1a0a55709fc53274f2512f96594c6038ebccc67ec1cd31129e"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            14,
+            10
+          ],
+          "offset": [
+            152,
+            67
+          ],
+          "indexed_sha256": "5d0613e19f9558a17856728d2bb6b625cfcc492249a9282588ec8aa570501285"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            15,
+            10
+          ],
+          "offset": [
+            152,
+            67
+          ],
+          "indexed_sha256": "d7dab3c5dda1dc99b91b42d38a933e6cadafad5ee3c1d9bf2d01a34972541138"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            15,
+            9
+          ],
+          "offset": [
+            152,
+            68
+          ],
+          "indexed_sha256": "3a20964145f5fa8da7e397f6ee9902e131138d39b63d9492d482a48fda84f994"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            15,
+            9
+          ],
+          "offset": [
+            152,
+            68
+          ],
+          "indexed_sha256": "002c87fa207c5de92b1a62ec35c4731a269e1d7e3c0b8f1d8d41cbf5e37a049d"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            15,
+            9
+          ],
+          "offset": [
+            152,
+            68
+          ],
+          "indexed_sha256": "a6e45b52abce00f7f269a6f80c60da33849a04877044e77aa1f206d0a2073ff9"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            15,
+            9
+          ],
+          "offset": [
+            152,
+            68
+          ],
+          "indexed_sha256": "13e007a1e346f04db278fab00f3562392f5784c14b3967d4749b3cbdb74c72a3"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            15,
+            8
+          ],
+          "offset": [
+            152,
+            69
+          ],
+          "indexed_sha256": "ed68c01982454f8260de85ba04bed86cc9e32c2038acd55995f7da193629d073"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            15,
+            8
+          ],
+          "offset": [
+            152,
+            69
+          ],
+          "indexed_sha256": "97d61e5788e7075601b073b3211f66812b50edb86696bf4546f686dccca4319b"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            15,
+            8
+          ],
+          "offset": [
+            152,
+            69
+          ],
+          "indexed_sha256": "bf69f73bd682d9e30fb3dd9d0ca17832f9408f483c8f83cf284b491127d6854a"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            15,
+            7
+          ],
+          "offset": [
+            152,
+            70
+          ],
+          "indexed_sha256": "dc41f3f394b00c044a7fc764dbeb7df6050fefa60757ebe3ebb6d16e3c7b7ae6"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            15,
+            7
+          ],
+          "offset": [
+            152,
+            70
+          ],
+          "indexed_sha256": "c434d9ea2b70b509bbbfd3a360c5447a45c89042099675f748dcefcaaf29cc7f"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            15,
+            7
+          ],
+          "offset": [
+            152,
+            70
+          ],
+          "indexed_sha256": "eb8b34446f0be958040cb3065ed4c8a01f16e809c1c040694d8dcce6eea8b941"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            15,
+            6
+          ],
+          "offset": [
+            152,
+            71
+          ],
+          "indexed_sha256": "07dc47753604571efa72cb3725e05ee0fe094359e1a280c0e9234278d4c3e46a"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            15,
+            6
+          ],
+          "offset": [
+            152,
+            71
+          ],
+          "indexed_sha256": "a118c234a5bc551e7decad2c79d759dcfb45fdb575a7ed3406adf86e38b494df"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            15,
+            5
+          ],
+          "offset": [
+            152,
+            72
+          ],
+          "indexed_sha256": "42987be7b4cf7e9c666392021ff761c5ff7dda597cab915d9ef46f8747377522"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            17,
+            39
+          ],
+          "offset": [
+            151,
+            75
+          ],
+          "indexed_sha256": "b80263aabe2161b3f7545c5435dc47e39ba0153830034ab6df7330a8c9fd8518"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Split pointed cap opens at the crown.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/073",
+      "name": "Launch Site",
+      "culture": "braccatian",
+      "definition_class": 26,
+      "global_type": 73,
+      "key": "BR11",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br11/model.blend",
+      "footprint": [
+        3,
+        3
+      ],
+      "source_blend_sha256": "eded345fc60d54473bb77dc3659ea637629f32a2de4ae22e7e38a69dda498099",
+      "legacy_sprite_sha256": "11a4113f3c3b51c88d187fae35bbfa8a2d65df731ab94b2b9a98ae5acbf28340",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            59,
+            35
+          ],
+          "offset": [
+            128,
+            81
+          ],
+          "indexed_sha256": "b7c1d90e38b2d6e9b9890252ced2c1f1db3c1333da7edbfe1be9fcd7a507b4fe"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            51,
+            30
+          ],
+          "offset": [
+            134,
+            83
+          ],
+          "indexed_sha256": "947d9a8878605d34e19aa91058c1d5451681a4bee05bd12ded7e36751d3f9958"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            51,
+            30
+          ],
+          "offset": [
+            134,
+            83
+          ],
+          "indexed_sha256": "6520d2b6f1663072bf64b6f27a9800e35597f85156005d76d6bb02809daf446f"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            50,
+            28
+          ],
+          "offset": [
+            134,
+            84
+          ],
+          "indexed_sha256": "0dc3278e7f0cf7293849342ce31927a5e918ded4cbe4432f7490fd81616a325e"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            49,
+            28
+          ],
+          "offset": [
+            134,
+            84
+          ],
+          "indexed_sha256": "a8e16918277e6dc631619ebb53488eb186d5bc667abf6526a63c04c5da1ebeba"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            47,
+            26
+          ],
+          "offset": [
+            136,
+            85
+          ],
+          "indexed_sha256": "fc94c87b32b4018f6a5d08edc93cd0126d4ddc8faa7e71d592a7772d3c3e477c"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            45,
+            24
+          ],
+          "offset": [
+            136,
+            86
+          ],
+          "indexed_sha256": "6a2a8476e41494133a32217f95710ec24bd36fd3a7ee70c1b181aa2ffbc44bf4"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            44,
+            14
+          ],
+          "offset": [
+            137,
+            96
+          ],
+          "indexed_sha256": "6e4a4e4938739265c01b0864881fc731c8921474013615eb67b28ca1ee35c25b"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            41,
+            12
+          ],
+          "offset": [
+            139,
+            97
+          ],
+          "indexed_sha256": "1f849a7868c2470809a43a50a9fb800b142ba42b31db0cef2c241b14f01502e9"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            41,
+            11
+          ],
+          "offset": [
+            139,
+            98
+          ],
+          "indexed_sha256": "77eb0debbe8dcf92fa778bc9023b5b34924f7c6ffa667cc282110dca21f6cf32"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            36,
+            9
+          ],
+          "offset": [
+            142,
+            99
+          ],
+          "indexed_sha256": "6f1f34056c2c5103ed51c2e552d3425ca391a6c8bbfc192774ab1409b551ed25"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            36,
+            7
+          ],
+          "offset": [
+            142,
+            100
+          ],
+          "indexed_sha256": "176e1b2d80bcd55bf6ccfb57949ae69aec68928a186cd4f8abbaf6df178df516"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            33,
+            6
+          ],
+          "offset": [
+            143,
+            101
+          ],
+          "indexed_sha256": "fdf0210cbbc67a0d6de8879749eda82a7067fcb47b7e423403235a488ceb0aae"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            33,
+            4
+          ],
+          "offset": [
+            143,
+            102
+          ],
+          "indexed_sha256": "39c405534d197d5c5a8ab274382b7a63389a201e6a7d1c070e455fb95b43b397"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            31,
+            3
+          ],
+          "offset": [
+            144,
+            103
+          ],
+          "indexed_sha256": "ee752cf7df7470f009b9d9506625c549e2cca6738d07bf1f96e0172b8fb87d30"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            30,
+            1
+          ],
+          "offset": [
+            144,
+            104
+          ],
+          "indexed_sha256": "56f338054c4cd68a42633ee89254cbf3fe14435c1728dcb33f5d4f7717045178"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            30,
+            11
+          ],
+          "offset": [
+            144,
+            105
+          ],
+          "indexed_sha256": "a6618d023080d57612d5c4abd7b94745730596d7db2c1e798ef36f4877425b2a"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Closed pyramidal shell opens into green inner-facing leaves.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/074",
+      "name": "Eyes-in-the-Sky",
+      "culture": "braccatian",
+      "definition_class": 9,
+      "global_type": 74,
+      "key": "BR12",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br12/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "6e5be1497fea39ebebc42cd482869a3ab51d6a05829e1e04c8fd22a47f6b8a89",
+      "legacy_sprite_sha256": "7841877a62c257dc285c1085a251357bb7096191e98d1a6ed4260247ef22e2ac",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            39,
+            25
+          ],
+          "offset": [
+            139,
+            89
+          ],
+          "indexed_sha256": "845724cedd8190f36c8375d413769161a398a4dd3a23d17a8794424e270d76b7"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            27,
+            22
+          ],
+          "offset": [
+            147,
+            86
+          ],
+          "indexed_sha256": "9dd304b34e5ed4f39dcdbd438a38d0b49b87a7bfc7e778f26d52220bc414fb83"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            13,
+            25
+          ],
+          "offset": [
+            154,
+            89
+          ],
+          "indexed_sha256": "3c7fba2e74354f20538107243c13b67f1a9c7b84831b66ff9f58cbc4d4cd1928"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Open throat throughout; overlay mainly changes status pixels.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/081",
+      "name": "Battery",
+      "culture": "braccatian",
+      "definition_class": 14,
+      "global_type": 81,
+      "key": "BR19",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br19/model.blend",
+      "footprint": [
+        3,
+        3
+      ],
+      "source_blend_sha256": "cb47129c6f6298b5e0c8ad1102cfba07bc56022f362be4847fb22fc98e1da601",
+      "legacy_sprite_sha256": "0f6824078e0ac8ffcb7cec97b51cb4b220acec26517b026ac4781863536023b6",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            57,
+            36
+          ],
+          "offset": [
+            128,
+            85
+          ],
+          "indexed_sha256": "32a830ed93f150dce1b406deedbd140b13bc942f1fe64913f14bb927bdf2d5a4"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            51,
+            33
+          ],
+          "offset": [
+            133,
+            85
+          ],
+          "indexed_sha256": "cf6c909806b5a56b8211d1772c20ed6aa3f66cc689daf726e26082a810a4a931"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            20,
+            31
+          ],
+          "offset": [
+            150,
+            90
+          ],
+          "indexed_sha256": "9e984c3b5f90b54ba0849db4b4a8627c01909ad6bd94209f62d30a2b00688f7f"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Open throat throughout; overlay mainly changes status pixels.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/096",
+      "name": "Volition",
+      "culture": "mikotaj",
+      "definition_class": 26,
+      "global_type": 96,
+      "key": "MK11",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk11/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "414f906163d2e04a53de6f8850c4875d93e7564ee01467c8f14db4e80e325693",
+      "legacy_sprite_sha256": "61cb87f68480a59663385116311fb08ab1ef7e98bf3aa735864faa90246793eb",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            36,
+            20
+          ],
+          "offset": [
+            140,
+            92
+          ],
+          "indexed_sha256": "3760acbf64bac70214a589efbef91247a9b540e6cd5a01e4ef624a80dccc03b5"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            32,
+            35
+          ],
+          "offset": [
+            144,
+            73
+          ],
+          "indexed_sha256": "505c5d34c3427c41e42eacf56c9872625cd5aa17e47b17bdf2de9d54ae7f5dcb"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "8f6bdc0275089cf0734584c971d76612488e43207d7945226723ad09be4c40fe"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "40f6278e45a2f01204c2f7fe1f82244b8b15ff846ceec757f37cd750275cce58"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "43f2fe98b6aa6e39b9802c97c9b933aa3a992434776c994d5bb27114b5ca44e1"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "45d7d884f2ebe4ae2b5ff55efd74bdca6201d5987a31ee26e813d297085b3380"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "16ff48db23e1f63b674223dd4a1c69bf037c1a69fd9b791fa84f59fa375ddaee"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "342380f66c959f661ec4ffb3dd069f6d84b2ae512c07482e283bff6749ef3c98"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "e4a2b7dd9389063d917514584e5cefda2086981b42e47a7a425a24339e3e6c05"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "ab1cd59c915e9f53f853c5be74ef690e6bf02125106cd59ff0ac6ff2b453cce0"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "fda5c9fa6d00bf095458604f37c2b00f17594d3afd8dce3c3d677b3fe5d68c0f"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "5729aab3ef7aeca4b1464f0244eef09c1aa0bc1ac12e205631a167cd06468349"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "0771c83b62af45c6f55261b7204b214fac2c9f5080608d69348b0d162e7aff93"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "c4c644424a116a2b00058a3d38fe76a703e623672cc46e659c3d8c5fd73b98a2"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "606eae4b32be10cdcd81b54abd94d302c1bded654b115615e2549eaac6e4e318"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "656e61686ae3a5f901b1d1d2c7cb14f2c7b4491a38ca45c4a3c1bbb9271ea7cc"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            32,
+            32
+          ],
+          "offset": [
+            144,
+            68
+          ],
+          "indexed_sha256": "4bac3d9819eb3a840a6845965f4910487255abadcca5428468a370f9d7efa352"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            19,
+            32
+          ],
+          "offset": [
+            149,
+            80
+          ],
+          "indexed_sha256": "a4ce0741a09179a6dea509e45e6673b60567c45ebcf4f42104fca58c52e353f7"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Stacked golden shutters retract from a broad upper opening.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/097",
+      "name": "Visibility",
+      "culture": "mikotaj",
+      "definition_class": 9,
+      "global_type": 97,
+      "key": "MK12",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk12/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "0aef5cb7404c31838d893d05b7112b1dbbb0f4a515e2377eb596ae94b07d1730",
+      "legacy_sprite_sha256": "7f2d28d6a33a422a10bb5b7a5284ccf20e678147a448c39aa2e2d48f04a7f491",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            36,
+            26
+          ],
+          "offset": [
+            139,
+            85
+          ],
+          "indexed_sha256": "f229fb0f4c007b05da6f88cdefc69e70bfc0c9c74c54971000d69771091a3bc1"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            29,
+            45
+          ],
+          "offset": [
+            145,
+            64
+          ],
+          "indexed_sha256": "ce5ef0947700340b4301ae48d36cf03a2d814eff430fb469d3a37455e7b9f7bd"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "8110be1eeff8acfbb1a980b2b8711b4d57037adfbef4aae09d23953659f733b2"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "8110be1eeff8acfbb1a980b2b8711b4d57037adfbef4aae09d23953659f733b2"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "df0613932eb1d8632a6962a186609023df344e88f3864ad0bfd4bbf414936088"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "c4ff583fb919c8414161cfb13a7622e86151646c998072d6f65f063e0edcba67"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "62d5e7467e5137f4f814aa9b49319593ddda28f418f452dafbe90b01b60ceb06"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "c488c7f9453a5e64440667964a60d55e6889397aaf756926429534d9405c2844"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "f52d337b6b12a94e30e36f6671799488faef90a1772d614be61225d13a57af9c"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "f51c85cb4f314d5d57df593e60d95adb688825f3eccb64eeb8d9ad2e021b7fb2"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "387eeb458d5b1df15b28f22215f57ff98c22cd495bf4cfda1e060b2a69bf1a97"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "de93b1b9075fe8533314aa2b56f3e9047f6af9617a33c7645108c5f6f43d6316"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "67213cbc9c66df7c7bc0c021305510d8393a081f6e41731514dd7182622a7730"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "ed58b977daa12f07b315e8c5961df307c38ceb2a09a97d873ab9fb170d1a034c"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "d23ce0ef38e3f632dc3b4b63774e3f40a954e76022054d4142dee634be401d05"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            29,
+            35
+          ],
+          "offset": [
+            145,
+            62
+          ],
+          "indexed_sha256": "bd66f909a8a12fd3a8f8e2553de61788d046c02953f3a6b8a55fe8bad8589601"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            29,
+            34
+          ],
+          "offset": [
+            145,
+            63
+          ],
+          "indexed_sha256": "a41b3ea6fcc259c29f309bfb7369d2567db219dd5ea0d39659ec17d36863927c"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            36,
+            40
+          ],
+          "offset": [
+            139,
+            71
+          ],
+          "indexed_sha256": "f94138c18e604d3e803a5dd89f676df908347ffd7f30dfc28d987b8c38f8bbfc"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Golden crown shutters expose a tower bore.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/102",
+      "name": "Shrekn",
+      "culture": "mikotaj",
+      "definition_class": 14,
+      "global_type": 102,
+      "key": "MK17",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk17/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "89eea77534572751da1079063fdebd16ee3205c11e7a065e13cad9023b3eb25f",
+      "legacy_sprite_sha256": "a06c6ac46eff011520445917fee18c9b67cfddafda91be82a3a5c06c481d3f12",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            39,
+            25
+          ],
+          "offset": [
+            138,
+            86
+          ],
+          "indexed_sha256": "0c68510ca8b9aaae436b70105034cac99881917044d96addb33b45d3527bc53b"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            31,
+            36
+          ],
+          "offset": [
+            144,
+            72
+          ],
+          "indexed_sha256": "db2d1e85d50a6e1d8fb5bd93df83b3cd793e40b8716663f1592a07eb6b8e3afa"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "27ce054fe5710722906fcba48c0df8490c0b31fe71b40acf684d999428983be6"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "2cb6f16a39ada1d4ce3203432c60d4ac210c801c2a424848a65b0bb6e5d3cb0c"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "04cb9decccfcb47aac79f5581779fd34bff7a32aa9c7a84bc2811476ab20c31a"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "e07eb94665ed7b732a794ea0a0a2e57e459107186cc76fcc6fb10609068aa864"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "407f9c8747aa49ec5d99e5946891c4a55ec7471068863e46c36ffaaaaaaedc3d"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "344c7ae29ce49abff0b9fa1b6b81b8b6ee29a7a800518b3c15031f4ad129c79b"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "c72a49c6cf2311e862216308c919062d9e70ef92c08aff40430aef57e80748c0"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "4f67f53d33978d17e45b23e3c308f95291e1b63cdf8d8f8ca41c74e05ef52cff"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "3e31add6d5a53291fbf99ae0175343c3f2d07965cb5a304704b3cc45b9d6e1c5"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "3ec0e2a488bcd8b8dfc00926872a94aa1dcfd137fff4568aab619d2a94db4cdd"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "9365f66b1375edf6989676cfda06578d6f9a08883ae3f9e9b5a0807d6736fc4f"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "b2282ae6fa34d713a5778bd1e6876b82847afa66faf882f1d482d51267c806e9"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "039a143a1163b033fb5be86d37035edd6a49a1f2e0ee7fa6bb296b246d42d178"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "70a1a73788767855db8f8f5194cd7f21e8a7939dcacb382d5b400642da7740a6"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            26,
+            32
+          ],
+          "offset": [
+            144,
+            70
+          ],
+          "indexed_sha256": "1364a84d36a59be95dd5dd3ab28e308e1b50491b758fbfa3d671534d0bedb935"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            39,
+            39
+          ],
+          "offset": [
+            138,
+            72
+          ],
+          "indexed_sha256": "25955d8d096d7f220bb9b21980fe4fba4ea186ebf852c10e4bf303d19fcf2af7"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Pale crown shutters expose a tower bore.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/115",
+      "name": "Launch Pads",
+      "culture": "artemian",
+      "definition_class": 26,
+      "global_type": 115,
+      "key": "AR09",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar09/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "ee07dab8dd65e421b36097863e6aa9172ce8704d4f783e424dc91bb03399c127",
+      "legacy_sprite_sha256": "03d8ed19f76d7e3f7abccc07a5dcb1eadc90d2de18b29965276fed63de9d4d03",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            44,
+            19
+          ],
+          "offset": [
+            136,
+            92
+          ],
+          "indexed_sha256": "06fc408df76c291e4fd7fd682903e76029ee1f2ea0e4d74b6111a0209a0ef2c4"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            37,
+            29
+          ],
+          "offset": [
+            141,
+            78
+          ],
+          "indexed_sha256": "10bc79f9c85239a0d9d5b48bb13a757436fe5f44a5d54eff643a9742bd9e80bb"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Only shadow and permanently open launch bay; no lid descriptors.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/122",
+      "name": "Missile Launcher",
+      "culture": "artemian",
+      "definition_class": 14,
+      "global_type": 122,
+      "key": "AR16",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "cf416ea342aa3c9cb513ae7d8babd28ad7a95568d2aa8f6b9b99a8a05c7d51ca",
+      "legacy_sprite_sha256": "4f1c1c8abcfed8e39f135fd60c13695808b98a533d8848cdb1a6a709ee046407",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            39,
+            24
+          ],
+          "offset": [
+            138,
+            89
+          ],
+          "indexed_sha256": "b43ca9491ed200371d4a5d5b113a8b30300749fa99901030b4933f16c37e5181"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            30,
+            30
+          ],
+          "offset": [
+            145,
+            78
+          ],
+          "indexed_sha256": "dc9a9045701c6aa9df371ec3d25fa92cddbff5cb3d72a8deb04a956ee38f761a"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            21,
+            10
+          ],
+          "offset": [
+            149,
+            69
+          ],
+          "indexed_sha256": "060b7497cec788e96262864520d01a245b274ae66b71356e9fc8794cfb9cc60c"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            21,
+            11
+          ],
+          "offset": [
+            149,
+            68
+          ],
+          "indexed_sha256": "84f1079c3d4f2a7bb4c8d3c7ef84a60664c82274d766d60d5695c51596e26493"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            20,
+            12
+          ],
+          "offset": [
+            149,
+            67
+          ],
+          "indexed_sha256": "eaf0105561cc5d2e72915b1e5a904f57ed94d4bc5445f2b88aebe9ea7000e531"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            21,
+            13
+          ],
+          "offset": [
+            148,
+            66
+          ],
+          "indexed_sha256": "6223a74065332b47a8934a347beb942d4216834e930b50951ad4b749526e64d1"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            20,
+            13
+          ],
+          "offset": [
+            148,
+            66
+          ],
+          "indexed_sha256": "33a269f4315569fc97cd2a5c293639445ed473ea722c33d162be80b053686557"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            20,
+            14
+          ],
+          "offset": [
+            148,
+            65
+          ],
+          "indexed_sha256": "d5e34556cca2b47279c2721abab938e0cbfcd27b8db1d2b9e03261ad477a6495"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            20,
+            15
+          ],
+          "offset": [
+            148,
+            64
+          ],
+          "indexed_sha256": "0d684365472c4efd91e137f532c65ba3e5cd825cc9641f7fdb5fe2e3c6c1fbf5"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            20,
+            16
+          ],
+          "offset": [
+            148,
+            63
+          ],
+          "indexed_sha256": "347b49fa9edc7a189ce8efe46724e1be3750098c556d5a6cd37a52148414b474"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            20,
+            17
+          ],
+          "offset": [
+            148,
+            62
+          ],
+          "indexed_sha256": "a566f0781a4c722a29fd981eec79ccdd629305323a40e34199b66a596412633e"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            21,
+            18
+          ],
+          "offset": [
+            147,
+            61
+          ],
+          "indexed_sha256": "f578ecd7014a25466913c6d4e8fc98ce94ad58387399304cc63025c2d8c7ecb6"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            21,
+            19
+          ],
+          "offset": [
+            147,
+            60
+          ],
+          "indexed_sha256": "4b8d607b8299c2192886f79defc87d7dbf7255d13a0ce96f5e7b7d116b3efcd3"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            21,
+            20
+          ],
+          "offset": [
+            147,
+            59
+          ],
+          "indexed_sha256": "e25cfe141cd4020ec560d20b43072ed1667fd46c99de387e4e77288b94a2f6f9"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            22,
+            21
+          ],
+          "offset": [
+            146,
+            58
+          ],
+          "indexed_sha256": "cd60f91d75b4cd20de91fbed6baeac9e45849eb224c0d11c609dbc579ecb3567"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            22,
+            22
+          ],
+          "offset": [
+            146,
+            57
+          ],
+          "indexed_sha256": "ff0bd20dc39e6b76d958a85862eee37ff601730d8c1082633ae6c5d387c44084"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            22,
+            23
+          ],
+          "offset": [
+            146,
+            56
+          ],
+          "indexed_sha256": "4439127d75f0265b728682c88b4b44749ff7cb1021c2496b991bb93811887c43"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            39,
+            57
+          ],
+          "offset": [
+            138,
+            56
+          ],
+          "indexed_sha256": "41a1f6792933f0d76d42c9639d59f506e3fcb74c6546c2e5e590943d9d6f532c"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Single circular lid hinges upward about a rear pivot.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/138",
+      "name": "Launch Area",
+      "culture": "mauna",
+      "definition_class": 26,
+      "global_type": 138,
+      "key": "MN09",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn09/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "9919882d70945d4010f821b14413f33cb57ba4cd6f861b5cc6a3b4e50b2c54e1",
+      "legacy_sprite_sha256": "670cdddc964a50a704c23fad3b02528043ac895a742e3234a96d24c8d55b5f86",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            57,
+            36
+          ],
+          "offset": [
+            129,
+            80
+          ],
+          "indexed_sha256": "cdb1b691bc1e019a1c42658c3a5175599f23498748cbcbff4d7d53e8bf5411d1"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            45,
+            56
+          ],
+          "offset": [
+            138,
+            56
+          ],
+          "indexed_sha256": "037788a117317810681e0d41e82aa917b1949d925b38916a672a9aaf0e3e8b8a"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            23,
+            12
+          ],
+          "offset": [
+            149,
+            81
+          ],
+          "indexed_sha256": "2d050248a33dc162f3d23e5157d512cc63799c81c320f844c09cae31112c9d6c"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            22,
+            12
+          ],
+          "offset": [
+            149,
+            81
+          ],
+          "indexed_sha256": "a5b83859d737f3b241d31178644f432adef3cfe8f4082fae3c8001aa6a429053"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            81
+          ],
+          "indexed_sha256": "c270bdf485ce2fdbec254d806be14804758c5a26253a97ef5c00d7de49b0bb3e"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            21,
+            12
+          ],
+          "offset": [
+            149,
+            81
+          ],
+          "indexed_sha256": "a622c6664b33e7e5bdc4891ae3142b438db21b289245d41f1e118c90be11da52"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            38,
+            30
+          ],
+          "offset": [
+            141,
+            86
+          ],
+          "indexed_sha256": "a62541fe4ead1a4550b5890b2279a111d89c07435373ef0b84f736386e6d7756"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Paired top covers retract, exposing a red-lined shaft.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/139",
+      "name": "Satellite Pad",
+      "culture": "mauna",
+      "definition_class": 9,
+      "global_type": 139,
+      "key": "MN10",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn10/model.blend",
+      "footprint": [
+        3,
+        3
+      ],
+      "source_blend_sha256": "5cbfa1e37c70b012224b475d78f1172f81ea24000ae9b3e947ad3b4d69d9855f",
+      "legacy_sprite_sha256": "1c0d4fe8c65ede08faa2b0cb33cff6bc01717b3c63a64c3f43f79a9e6856b25e",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            57,
+            36
+          ],
+          "offset": [
+            129,
+            80
+          ],
+          "indexed_sha256": "02a237c473c07c0ab626d12718bd62c6e5df801f21fb1be388b36260cf1479af"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            45,
+            53
+          ],
+          "offset": [
+            138,
+            59
+          ],
+          "indexed_sha256": "e7b187459b4d505de2315376e8b524f63ea50e40022bd05a939498f7712cdc20"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            29,
+            30
+          ],
+          "offset": [
+            146,
+            86
+          ],
+          "indexed_sha256": "9f08612d287d07d71ecdb5c12e9e8069e9e5d9ee38756a6dd73066a670a4ee41"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Open top well throughout; no closing roof observed.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/143",
+      "name": "Attack Pods",
+      "culture": "mauna",
+      "definition_class": 14,
+      "global_type": 143,
+      "key": "MN14",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "f57818337bca3db5fc5338bd298d99a0f8f86d60287c2399bbebcdd312f1f794",
+      "legacy_sprite_sha256": "c1b9ee4b930c5f8f6e27f2f1f6197d31c7cba8880c57c2fe05c235c55df84fd0",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            44,
+            29
+          ],
+          "offset": [
+            137,
+            82
+          ],
+          "indexed_sha256": "06203c1382fcaf61dda2a493753ad52974fbf592dada33c9fdcf5b87c63a3c92"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            36,
+            42
+          ],
+          "offset": [
+            144,
+            66
+          ],
+          "indexed_sha256": "23a10472d6881de726a72604686eb18370778c22d732cb6bead6d1a6083657c3"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            19,
+            27
+          ],
+          "offset": [
+            151,
+            84
+          ],
+          "indexed_sha256": "5969789dc47fe07aeee2ac3a4382fa6e72e81930bc3403c774b4ed3b1ecdea8b"
+        }
+      ],
+      "source_actions": [
+        "HeadingPreview_360"
+      ],
+      "observed": "Open top emitter throughout; remove unrelated heading-preview turret interpretation.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/162",
+      "name": "Landing Pad",
+      "culture": "achaean",
+      "definition_class": 26,
+      "global_type": 162,
+      "key": "AC12",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "f254096b73aeb808c0a1771a42e675c3c44a00213480a73126cabcb34d7b0522",
+      "legacy_sprite_sha256": "48cd9e46618541b9df51ba99a7a2b8e685532f3629138559ecf21c5fa4267d91",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            39,
+            25
+          ],
+          "offset": [
+            140,
+            91
+          ],
+          "indexed_sha256": "8ee617ed7f261ca8757bfd57721b3850440875610f72f8e7bd13ef746c1327f1"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            30,
+            34
+          ],
+          "offset": [
+            146,
+            76
+          ],
+          "indexed_sha256": "ff9666da66429bb3a6398f474364155b57ee93189bc1d61aec56420e2af5b4a0"
+        },
+        {
+          "descriptor": 2,
+          "size": [
+            20,
+            9
+          ],
+          "offset": [
+            151,
+            93
+          ],
+          "indexed_sha256": "d07406989857c948beb88490c2f0db101ba6a711e7987eb6f5d04b3ec611c5ee"
+        },
+        {
+          "descriptor": 3,
+          "size": [
+            18,
+            9
+          ],
+          "offset": [
+            152,
+            93
+          ],
+          "indexed_sha256": "6dcf380bd16efce0535a9af922b5facf1f4bf7c933cf2cdd6829bfaeffa3f139"
+        },
+        {
+          "descriptor": 4,
+          "size": [
+            16,
+            9
+          ],
+          "offset": [
+            153,
+            93
+          ],
+          "indexed_sha256": "95022d420965e669d2805fc69cdc94ff6b6b2b043b45f09a285c28c14ed5ac6e"
+        },
+        {
+          "descriptor": 5,
+          "size": [
+            12,
+            9
+          ],
+          "offset": [
+            155,
+            93
+          ],
+          "indexed_sha256": "ae8891982f23b67892d6cc8e6061e21674c5842ea61d57fa319219a47fbaa19e"
+        },
+        {
+          "descriptor": 6,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 7,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 8,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 9,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 10,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 11,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 12,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 13,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 14,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 15,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 16,
+          "size": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "indexed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "descriptor": 17,
+          "size": [
+            22,
+            18
+          ],
+          "offset": [
+            150,
+            98
+          ],
+          "indexed_sha256": "7730a3530b591a29b31b34820f6e2e6e118546b1f414846ccc7ed24538ff2c94"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Paired green/red transverse cover strips retract to expose oval opening.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/163",
+      "name": "Missile Launcher",
+      "culture": "achaean",
+      "definition_class": 14,
+      "global_type": 163,
+      "key": "AC13",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac13/model.blend",
+      "footprint": [
+        2,
+        2
+      ],
+      "source_blend_sha256": "33e76a1700d34834b0dee3a44a01ac9a346d20c26fc3789ea6489954e4b71ff6",
+      "legacy_sprite_sha256": "c29f628828cd63d04717e444fec91b004b8a379d1c9797bf2357fa9b0962dddc",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            41,
+            17
+          ],
+          "offset": [
+            138,
+            96
+          ],
+          "indexed_sha256": "4a7437e169686cc0cff82bd651eb2078c6f66259ccf7c833adbc735d50e2359e"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            32,
+            36
+          ],
+          "offset": [
+            144,
+            73
+          ],
+          "indexed_sha256": "15d4bfaca33e21dccf53495af71a5b48774b7732f1e68466a56bef66482fa7cd"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Only shadow and permanent emitter/base; no lid descriptors.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    },
+    {
+      "id": "openfa:building/legacy/164",
+      "name": "Data Gatherer",
+      "culture": "achaean",
+      "definition_class": 9,
+      "global_type": 164,
+      "key": "AC14",
+      "source": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac14/model.blend",
+      "footprint": [
+        3,
+        3
+      ],
+      "source_blend_sha256": "c1d736e7563dac499f64b8b7a7ecc2ad6f8b24cf23584e0f17044a342d504e20",
+      "legacy_sprite_sha256": "2eaf64d5c93c3265b49ca9aca28d24da1e26f87a5eaa06314a0ee1d6f620577d",
+      "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+      "descriptors": [
+        {
+          "descriptor": 0,
+          "size": [
+            45,
+            26
+          ],
+          "offset": [
+            136,
+            91
+          ],
+          "indexed_sha256": "a29b6cb0547dc6ca7490005f35f3de4e5fa06d9bc7ebdd780aa10dba73873451"
+        },
+        {
+          "descriptor": 1,
+          "size": [
+            38,
+            60
+          ],
+          "offset": [
+            140,
+            52
+          ],
+          "indexed_sha256": "a0faac115021fea6eaed99dbd8d89e76dadc651b5be85a81b1784a100f3b1d03"
+        }
+      ],
+      "source_actions": [],
+      "observed": "Only shadow and permanent emitter/base; no lid descriptors.",
+      "interpretation": "Hidden hinge/stow engineering, shaft depth and continuous timing require authored interpretation. Static open facilities must not receive invented closing lids."
+    }
+  ]
+}
