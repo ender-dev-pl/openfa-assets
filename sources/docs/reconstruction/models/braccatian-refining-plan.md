@@ -43,7 +43,7 @@ count. Exact hidden sections and dimensions remain inferred.
 | --- | --- |
 | BR01 First Step | Replace generic towers with joined pyramidal bodies, broad gold/rose divisions, actual entrances and blue collars. |
 | BR02 Clan Heart | Recover stepped central tower, rings, gold open crown and distinct peripheral pyramids instead of copying BR01. |
-| BR03 Radiation Shield | Replace cylinders with broad low gold pedestals, neck housings, red faces and slender gold/blue masts. |
+| BR03 Radiation Shield | User identifies three handbells: recover continuous outward-flaring gold bell casings, broad hems, red/pale faces and slender gold/blue banded handles. Avoid marshmallow cylinders or separate globe-and-plate stacks; do not invent clappers. |
 | BR04 Source | Recover slender lower cylinder, rounded upper vessel, neck, blue collar and front equipment; remove unsupported trident. |
 | BR05 Aesir's Hall | Recover stepped central neck/spire, gold open crown, three low satellites and distinct red/blue fittings; no ceremonial machinery. |
 | BR06 Longhouse | Recover three connected terraced buildings, lower entrance arches, rose roofs and red upper collars. |

@@ -32,6 +32,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br03/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br03/model.glb)
 
+**Additional iteration — visible-mast-facility-refinement**
+
+![Radiation Shield](../gallery/media/docs/assets/reconstruction/braccatian-refined/br03/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br03/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br03/model.glb)
+
 ## Source
 
 `openfa:building/legacy/066`
@@ -152,6 +158,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br13/model.glb)
 
+**Additional iteration — visible-mast-facility-refinement**
+
+![Eyes-and-Ears](../gallery/media/docs/assets/reconstruction/braccatian-refined/br13/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br13/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br13/model.glb)
+
 ## Anchor
 
 `openfa:building/legacy/076`
@@ -193,6 +205,12 @@
 ![Aegis](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br16/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br16/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br16/model.glb)
+
+**Additional iteration — visible-mast-facility-refinement**
+
+![Aegis](../gallery/media/docs/assets/reconstruction/braccatian-refined/br16/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br16/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br16/model.glb)
 
 ## Forge
 

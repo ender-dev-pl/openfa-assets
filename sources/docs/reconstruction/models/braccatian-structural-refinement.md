@@ -104,3 +104,47 @@ New source folders are `sources/docs/assets/reconstruction/braccatian-refined/br
 `gallery/media/docs/assets/reconstruction/braccatian-refined/`. Earlier sources
 remain unchanged and selectable. These are three static-body refinements in
 the active full-38 programme, not completion of the full race.
+
+## BR03 Radiation Shield, BR13 Eyes-and-Ears and BR16 Aegis
+
+All surface parts and all 41 catalogue phases were inspected for each case.
+The full-width BR03 phase sheet preserves all three units; the earlier narrow
+crop was insufficient for that review. The user's clarification establishes
+three handbell-shaped units with handles. BR03 therefore uses three continuous
+outward-flaring gold casings with slender banded handles, narrow rose hem trim,
+red front fields and pale side fittings. Separate globular heads/discs and the
+old rounded-cylinder placeholders do not represent this construction. No
+acoustic clapper, exposed internals or ringing animation is inferred from the
+bell-like shape: CDB describes radiation protection for carbon-based life.
+
+BR13 has a tall tapered rose body, gold capsule, blue collar and single mast,
+plus a shorter gold cylinder/orb with a blue cap and a visible angular link.
+Front pale equipment faces and lower service fields replace the old generic
+mast cluster. The lore describes efficient surveillance that is socially
+downplayed; the visible link's exact function remains unknown.
+
+BR16 has a broad rose domed foot, gold column with red vertical fields, lobed
+gold orb, broad foot fitting and two straight upright side masts joined by low
+crossarms. The Aegis screen protects key clan buildings and is described as
+weaker than its Terran counterpart. This does not establish an exposed screen
+animation. The old kite-shaped loops are absent; the space alongside the orb
+is open. Repeated lobe count and exact profiles are authored interpretations.
+
+All three use independently authored colour/roughness wear, shallow main-shell
+dents and positive closed geometry. The original models remain separately
+selectable and unchanged. Hidden surfaces, exact alloys and dimensional
+calibration remain uncertain. The earlier BR03 internal prototype was replaced
+before gallery registration in response to the handbell clarification.
+
+Actual native reopen and independent GLB import passed: BR03 has 24 meshes and
+21 sampled contacts; BR13 has 25/24 and BR16 22/21. Every part participates in
+contact checks. Tests measure BR03's outward-flaring radial sections, single
+continuous casing and grounded independent units; BR13's two bodies/link and
+BR16's straight masts/open side clearance. Connectivity diagnostics weld only
+coincident UV/normal export seams before counting physical components.
+Native and imported sources both retain closed positive consistently wound
+geometry, original catalogue footprints, full root grouping and effective
+packed colour/roughness arrays. Maximum position difference is 1.014e-6.
+Nine native/imported whole/front/detail pairs have silhouette IoU 1.0 and
+maximum foreground RGB mean difference below 0.0031/255; actual paired renders
+were inspected. These are three more studies in the ongoing full-race pass.

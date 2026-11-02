@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 CASES={'br22':('refine_braccatian_pithoi.py','verify_refined_braccatian_pithoi.py')}
 CASES.update({key:('refine_braccatian_vessels.py','verify_refined_braccatian_vessels.py') for key in ['br04','br14','br15']})
+CASES.update({key:('refine_braccatian_mast_facilities.py','verify_refined_braccatian_mast_facilities.py') for key in ['br03','br13','br16']})
 
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
