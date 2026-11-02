@@ -98,5 +98,5 @@ inspection, not a claim that every image of every film was viewed.
 Original decoded images and private comparison sheets remain in ignored
 `artifacts/`. No original pixels were added to source textures or gallery media.
 Client integration, construction scaffolds, damage states and final artistic
-acceptance remain separate. A final all-35 source/gallery audit is required
-before closing the overall pass.
+acceptance remain separate. The subsequent all-35 source/gallery audit and
+overall pass result are recorded in `rigellian-refining-completion.md`.

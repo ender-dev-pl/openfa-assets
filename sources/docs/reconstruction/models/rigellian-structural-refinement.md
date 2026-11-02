@@ -436,5 +436,5 @@ have IoU 1.0 and the largest foreground RGB mean difference is below
 assembled source. Earlier studies remain unchanged and selectable. Final
 artistic acceptance, hidden sections and game-direction calibration remain open.
 
-The full Rigellian pass remains active. This document records structural
-milestone, not completion of all 35 models or all review-ledger gates.
+These sections record individual structural milestones. The completed all-35
+scope review and final evidence audit are in `rigellian-refining-completion.md`.

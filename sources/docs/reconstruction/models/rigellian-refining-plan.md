@@ -1,5 +1,8 @@
 # Rigellian refining programme
 
+Completed scope review: see `rigellian-refining-completion.md` and its all-35
+source-bound audit. The target table below preserves the original review plan.
+
 Tracked in [asset issue #185](https://github.com/ender-dev-pl/openfa-assets/issues/185).
 Baseline: `9ed4dfd6bcabd6b367443ac3225dd501645ee7a4`. Scope is all 35 registered
 Rigellian definitions: 23 buildings, five ships and seven missiles. Earlier
