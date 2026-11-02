@@ -33,7 +33,7 @@ Preparation works without a game checkout or original installation. Enable `evid
 
 ## Current scope
 
-Preserve completed reconstructions and existing refinements. The user-requested [RIS2 scaffold refinement](gallery/scaffolds-ris2.md) is available separately from the preserved prototype. Other artistic refining and scaffolding work remain deferred. Obvious technical defects may be repaired with focused verification. New objects receive function-appropriate wear; existing models are not retrofitted merely because they are regenerated.
+Preserve completed reconstructions and existing refinements. The user-requested [RIS2 scaffold refinement](gallery/scaffolds-ris2.md) is available separately from the preserved prototype. The [culture scaffold kits](gallery/scaffolds-cultures.md) extend this construction/reveal approach to all remaining used families, respecting CDB material lore. Other artistic refining remains deferred. Obvious technical defects may be repaired with focused verification. New objects receive function-appropriate wear; existing models are not retrofitted merely because they are regenerated.
 
 The migration preserves exact imported bytes and historical evidence identifiers. [Migration manifests](migration/README.md) map every original path, checksum and transferred issue. Historical documentation is retained under `sources/docs/reconstruction/models/`; its paths refer to the assembled workspace and its bare issue numbers use the original game-repository numbering.
 

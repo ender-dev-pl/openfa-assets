@@ -1,0 +1,121 @@
+{
+  "issue": 188,
+  "family": "PBS4",
+  "model_manifest_sha256": "ee9cd8ae0791edf379e57834b295feff626471763c92c3cdc4310bab5fa96c59",
+  "verifier_sha256": "6c97b20e65521e3b94258e0c3f726122c53d9574ddb0f8ea678fde20e1bf01f8",
+  "checks": [
+    "All native and independently imported states",
+    "Positive mesh topology; shared meshes; local geometry/UV correspondence",
+    "Parent and world matrices; node role/reveal extras",
+    "Material values and packed pixels",
+    "Source ranges; phase/definition sequences",
+    "Single foundations; all post endpoints; sockets and sleeve overlap",
+    "Imported render using saved native camera"
+  ],
+  "cases": [
+    {
+      "stage": 1,
+      "nodes": 176,
+      "mesh_objects": 172,
+      "unique_meshes": 12,
+      "bounds": [
+        -1.875,
+        -1.875,
+        0.0,
+        1.875,
+        1.875,
+        0.2571291923522949
+      ],
+      "geometry_uv_pairs": 12,
+      "material_pixels": {
+        "terran scaffold main": [
+          "007cbb2f8348383bf9d8584dc013605e3b8ef54b2eeb1e4981b5f6bafed4bc58",
+          "bfe4b37eaf39a519af0de01c783f8cb0a506a59114757d5ef32cda97eda2dbd9"
+        ],
+        "terran scaffold trim": [
+          "05946e956b3d2c2859595f8ce72e071f6de8bc79ba53c3d16c6930639c6f4d0a",
+          "82db4dfa59bdf26cc1224c700198975a588dd749e4d0159268a1fc32b803dafc"
+        ]
+      }
+    },
+    {
+      "stage": 2,
+      "nodes": 304,
+      "mesh_objects": 300,
+      "unique_meshes": 12,
+      "bounds": [
+        -1.875,
+        -1.875,
+        0.0,
+        1.875,
+        1.875,
+        0.5142583847045898
+      ],
+      "geometry_uv_pairs": 12,
+      "material_pixels": {
+        "terran scaffold main": [
+          "007cbb2f8348383bf9d8584dc013605e3b8ef54b2eeb1e4981b5f6bafed4bc58",
+          "bfe4b37eaf39a519af0de01c783f8cb0a506a59114757d5ef32cda97eda2dbd9"
+        ],
+        "terran scaffold trim": [
+          "05946e956b3d2c2859595f8ce72e071f6de8bc79ba53c3d16c6930639c6f4d0a",
+          "82db4dfa59bdf26cc1224c700198975a588dd749e4d0159268a1fc32b803dafc"
+        ]
+      }
+    },
+    {
+      "stage": 3,
+      "nodes": 499,
+      "mesh_objects": 492,
+      "unique_meshes": 14,
+      "bounds": [
+        -1.875,
+        -1.875,
+        0.0,
+        1.875,
+        1.875,
+        0.7713875770568848
+      ],
+      "geometry_uv_pairs": 14,
+      "material_pixels": {
+        "terran scaffold main": [
+          "007cbb2f8348383bf9d8584dc013605e3b8ef54b2eeb1e4981b5f6bafed4bc58",
+          "bfe4b37eaf39a519af0de01c783f8cb0a506a59114757d5ef32cda97eda2dbd9"
+        ],
+        "terran scaffold trim": [
+          "05946e956b3d2c2859595f8ce72e071f6de8bc79ba53c3d16c6930639c6f4d0a",
+          "82db4dfa59bdf26cc1224c700198975a588dd749e4d0159268a1fc32b803dafc"
+        ]
+      }
+    },
+    {
+      "stage": 4,
+      "nodes": 627,
+      "mesh_objects": 620,
+      "unique_meshes": 13,
+      "bounds": [
+        -1.875,
+        -1.875,
+        0.0,
+        1.875,
+        1.875,
+        1.0285167694091797
+      ],
+      "geometry_uv_pairs": 13,
+      "material_pixels": {
+        "terran scaffold main": [
+          "007cbb2f8348383bf9d8584dc013605e3b8ef54b2eeb1e4981b5f6bafed4bc58",
+          "bfe4b37eaf39a519af0de01c783f8cb0a506a59114757d5ef32cda97eda2dbd9"
+        ],
+        "terran scaffold trim": [
+          "05946e956b3d2c2859595f8ce72e071f6de8bc79ba53c3d16c6930639c6f4d0a",
+          "82db4dfa59bdf26cc1224c700198975a588dd749e4d0159268a1fc32b803dafc"
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Conservative transformed mesh-box footprint checks, not exhaustive collision proof",
+    "World-height calibration and game integration remain open"
+  ]
+}

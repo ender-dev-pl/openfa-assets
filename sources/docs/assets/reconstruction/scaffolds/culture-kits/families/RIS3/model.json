@@ -1,0 +1,699 @@
+{
+  "issue": 188,
+  "family": "RIS3",
+  "culture": "rigellian",
+  "footprint": 3,
+  "capacity": 2,
+  "pitch": 0.6034241523143186,
+  "pitch_status": "Provisional source-repeat projection; not calibrated game-world height",
+  "pitch_derivation": "2*4/62*(3*.9*sqrt(2))/sqrt(2/3)",
+  "required_max_stage": 20,
+  "required_max_tiers": 10,
+  "style": {
+    "main": [
+      0.065,
+      0.18,
+      0.12
+    ],
+    "trim": [
+      0.23,
+      0.105,
+      0.045
+    ],
+    "kind": "green precision frame",
+    "technique": "Indexed copper rail clamps"
+  },
+  "cdb_evidence": {
+    "culture": "rigellian",
+    "heading": "Rigellians",
+    "section": "Architecture",
+    "record": 18,
+    "offset": 2417,
+    "offset_hex": "0x971",
+    "byte_length": 769,
+    "sha256": "144235c9ef0e13ed80fb2cdab93f439b63956adb508dd4cbe496e73c357dbde7",
+    "source_summary": [
+      "Ergonomic and elegant construction, including practical mining facilities.",
+      "Comfortable and carefully composed, with less ostentation than Artemian luxury.",
+      "Research facilities are important to ordinary colony life."
+    ],
+    "authoring_interpretation": [
+      "Use coherent proportions and readable, carefully integrated interfaces.",
+      "Do not infer a universal material, colour or mandatory curved form from elegance alone."
+    ],
+    "scope": "Direct evidence for architecture; vehicle/ship application is contextual extrapolation, never recovered geometry."
+  },
+  "authored_interpretation": "OpenFA3D removable perimeter kit; mechanisms, joints, hidden structure and materials are authored interpretations, not recovered CDB technology",
+  "source_reference": "RIS3",
+  "reference_descriptor_sha256": [
+    "0952b18f821ace83324b1d096a68f1968791a87b200800d7cdfdc1496d840023",
+    "b7b32777bfa122b227e44ea7be3bfd6e1e41923b17c2d1077f912d3bd88550fb",
+    "5cf7cd6f4865b806a3fe5798066727c75819386103e1c8d0a3b8b6a6264a6450"
+  ],
+  "clear_volume": {
+    "half_extent_xy": 1.25,
+    "temporary_crown_removed_on_reveal": true,
+    "interior_shoring": false
+  },
+  "phases": [
+    {
+      "id": "erection",
+      "building_visible": false
+    },
+    {
+      "id": "reveal",
+      "building_visible": true
+    },
+    {
+      "id": "dismantling",
+      "building_visible": true
+    },
+    {
+      "id": "complete",
+      "building_visible": true,
+      "scaffold_visible": false
+    }
+  ],
+  "sequence_provenance": "User requirement: full height, insert building, reverse dismantling revealing from top; not a newly recovered legacy timing rule",
+  "definitions": [
+    {
+      "id": "openfa:building/legacy/040",
+      "name": "Central Unit",
+      "ceiling": 15,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "dismantling_stages": [
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/045",
+      "name": "Strategic Bunker",
+      "ceiling": 17,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "dismantling_stages": [
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/046",
+      "name": "Science Labs",
+      "ceiling": 20,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "dismantling_stages": [
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/049",
+      "name": "Ground Deck",
+      "ceiling": 4,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "dismantling_stages": [
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/056",
+      "name": "Arms Unit",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/057",
+      "name": "Missile Launcher",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/058",
+      "name": "Thermal Lance",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/060",
+      "name": "Storage racks",
+      "ceiling": 10,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "dismantling_stages": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/062",
+      "name": "Ultrathermal Lance",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "stage": 1,
+      "frames": [
+        1
+      ],
+      "mesh_objects": 108,
+      "unique_meshes": 8,
+      "blend_sha256": "152956fba1f31c6537f64986eb9aa066c8e9c5d24a4d3ae731c7cc3749b7ba7a",
+      "glb_sha256": "e762c0f91c7c05323bf050802ecc6bc421e9f9504db98dcc047c094ad4c739ce",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 2,
+      "frames": [
+        2
+      ],
+      "mesh_objects": 180,
+      "unique_meshes": 8,
+      "blend_sha256": "23a8d54250ab7a950c23a867c5330ec6bd635364961fbfc9224eff47ae146637",
+      "glb_sha256": "21219535e74195ab262ec72f73f4006a066021d81403efc838a93dcc4e017706",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 3,
+      "frames": [
+        2,
+        1
+      ],
+      "mesh_objects": 300,
+      "unique_meshes": 10,
+      "blend_sha256": "8c11fc489efb85c4a92472cbb94f47dc64d2c640d84bf6e108d812a7b8e4585b",
+      "glb_sha256": "90bad1acd577aac1a9f524d40775e7a9160c5c79ed21c080af81bf6932d56892",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 4,
+      "frames": [
+        2,
+        2
+      ],
+      "mesh_objects": 372,
+      "unique_meshes": 9,
+      "blend_sha256": "909db1318c532f7b501a78f817ec3f391d56181fd7220cafb8c9249ef7419331",
+      "glb_sha256": "868d00b79d182d8db06668069bb32c0a124a7d0cc362a4ca70ca5f7f0df205c0",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 5,
+      "frames": [
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 492,
+      "unique_meshes": 10,
+      "blend_sha256": "4cd707bec875d29f9ad0954afc973a27b00289d2e5ecf22dd3afa97e446345ab",
+      "glb_sha256": "c37c554dc62a71cd09159a5d052279af894fb7606805de20b3dd8a2b9121678b",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 6,
+      "frames": [
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 564,
+      "unique_meshes": 9,
+      "blend_sha256": "a1127d2734b3beb8f25ae6630e4e1d2ccefb5271710ae4b68e1b84f8a0bccca4",
+      "glb_sha256": "e22ef8d31180f21f1f1f3d8c720f537385d3c1db2d33fa70aa6dcb2e27bf3367",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 7,
+      "frames": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 684,
+      "unique_meshes": 10,
+      "blend_sha256": "7e24eb381513715fd829c544e77dba63b491c7fc4d2761acde2772ee02310ee1",
+      "glb_sha256": "def60ea971599608dc6a824680c0e73fe17868156c584be09001bea5510d0652",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 8,
+      "frames": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 756,
+      "unique_meshes": 9,
+      "blend_sha256": "87b68f4f9cde40960d55e772f11dc9ca7a80e7ddbbf454ff8d78595840def005",
+      "glb_sha256": "b8707c1c3ce91ebd072a9439f232870c7253cd8aebd1106f2fef7b2ee5cb69a1",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 9,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 876,
+      "unique_meshes": 10,
+      "blend_sha256": "e56fe3e42140fed325f70b86556cb5b0fa84b0d1a8b64502e4ce7eb695d8b69c",
+      "glb_sha256": "80b907db1a67293322dd9ebddcb57158373550184ba72d00d1936e1f2316e485",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 10,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 948,
+      "unique_meshes": 9,
+      "blend_sha256": "057ae078ae1e71a8ea52a7e35979e5a4286ef28360734ceccc80bfc506a36a1c",
+      "glb_sha256": "94d04258ce88057a8daafcaf54030536df68f937d337d8f239a289a4efa894f1",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 11,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1068,
+      "unique_meshes": 10,
+      "blend_sha256": "17786be1f4b7aeacb16919154a0dbf57245849de715e726cb14b348f0d570281",
+      "glb_sha256": "12798b8cacb1d4743db87c652c14320d692aaf4d9a088026c68476f34d80633c",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 12,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1140,
+      "unique_meshes": 9,
+      "blend_sha256": "ecec17376400021d6e69e998015dbe282660d64127c7d3236b134e665bf11f35",
+      "glb_sha256": "79dc090530b0ad3dce13d3689d53ab77cb41d1be9e233672213f6c6cad36ab6e",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 13,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1260,
+      "unique_meshes": 10,
+      "blend_sha256": "e6af99f66930842bc5c563ad50b537cb2bf1eade83c5e24a42f1f4c6ad1eb578",
+      "glb_sha256": "4712f812e1ffcabd66d0035e4dcc755e148e94c29dccfb1f1b761ff46f603b0f",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 14,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1332,
+      "unique_meshes": 9,
+      "blend_sha256": "2fba000595161bb60408798f594255bf33d0b373604d8e19d582ad25930f44e5",
+      "glb_sha256": "5c184efa51c7ef04af843804c2fc11caa4e1bb03a8a28a78e9debea9fecb0118",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 15,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1452,
+      "unique_meshes": 10,
+      "blend_sha256": "e146e9ab40dfbf2abe16cc3976c49ee1a7f50b59b2eb8d7f1778d571cdf7415c",
+      "glb_sha256": "7234e1476a180a9cf55a27eeebdfad297a804793fa0d3d79eb993ce7882d93d3",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 16,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1524,
+      "unique_meshes": 9,
+      "blend_sha256": "158a674d672bddaea901fd38fafefadbedd0377e5a455b1fd4592bc25a1c37b9",
+      "glb_sha256": "6923506e00a151918f956a58f142fefeaed30b276da128ab858005c6dbe1fa9d",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 17,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1644,
+      "unique_meshes": 10,
+      "blend_sha256": "bd949c7ad1ee68e0c1fd6f1920ab2adb8806a7d7ed137fcdba31605aa3631625",
+      "glb_sha256": "3ca8a16a497f6549ecda15c73ecfc980689fe3817d0e104c8cd2672d71d6101d",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 18,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1716,
+      "unique_meshes": 9,
+      "blend_sha256": "f2ea8368df5c108bce90e5cc7ab437abe9b0604a8a39122ade420f3da327e798",
+      "glb_sha256": "c3b54f683fc951a0aa367cc1ec36301a494b8d2279e060b06a6a880b7af9bddd",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 19,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1836,
+      "unique_meshes": 10,
+      "blend_sha256": "e75042b7cb2fe04ad7ba69e064d95cb230922d70d3d8940a2fc65211e47074c4",
+      "glb_sha256": "a59ed577f4b96e3e75e23d60cf45e54f25b53ebb1e98a000f24a4487df4bbb70",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 20,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1908,
+      "unique_meshes": 9,
+      "blend_sha256": "e5dd76b515c85d05bfc2a619686a180a55308d363db96984d25aff6e929ea9fd",
+      "glb_sha256": "42b9f908f5b0bb538e5057227ba7228d6a2428219e4b97dc6022667f19d57cd2",
+      "rear_view": true,
+      "hide_on_reveal": []
+    }
+  ],
+  "inputs": {
+    "docs/reconstruction/models/scaffold-stage-limits.json": "5a0fcc956670550a11dff3ea7e0258de745258397eac58f2b0739074746bd7d3",
+    "docs/reconstruction/models/shared-construction-references.json": "be5bbc948f86b0548bda10b6f63dba4e3b131a5175cdfa35f1e146890581d7a6",
+    "docs/reconstruction/models/cultural-architecture-index.json": "3ae667c89e1f2dc54fb27be717b75eb50e1ea14800a1ef02a1609adb7d78765e",
+    "docs/assets/reconstruction/scaffolds/culture-kits/authored-wear.json": "f1175ab496acaf5bec413ba92f1c3fec291ead980cba27816064b2c809521f52",
+    "tools/blender/build_culture_scaffolds.py": "171628100bc5a27d57ef4511888904e8e418b439553b4e510db28af8978249f5",
+    "tools/blender/culture_scaffold_parts.py": "f4bd5d31a159355277693218ff12f7514779aee634a2d9a703a875d42f45b36d",
+    "tools/blender/culture_scaffold_contract.py": "c71d3453ec38e1326c1bede0541ccc111b3f28507aea9ed150e73b69cd3be5d9"
+  },
+  "preview_only": false,
+  "exact_legacy_fidelity_accepted": false,
+  "game_integration_verified": false
+}

@@ -2,7 +2,7 @@
 
 Existing authored studies only. First run and available refined stages are shown separately. A technical study is not final artistic acceptance.
 
-[Interactive catalogue](index.html) · [Machine-readable index](catalogue.json)
+[Interactive catalogue](index.html) · [Machine-readable index](catalogue.json) · [RIS2 scaffold refinement](scaffolds-ris2.md) · [Culture scaffold kits](scaffolds-cultures.md)
 
 ## Index by race and asset type
 
