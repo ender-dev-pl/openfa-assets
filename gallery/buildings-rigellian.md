@@ -56,6 +56,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.glb)
 
+**Additional iteration — structural-detail-refinement**
+
+![Nourishment Bank](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri03/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri03/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri03/model.glb)
+
 ## Community
 
 `openfa:building/legacy/043`

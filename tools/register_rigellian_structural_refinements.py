@@ -3,9 +3,13 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPTS = {'ri20': ('refine_rigellian_extractor.py', 'verify_refined_rigellian_extractor.py')}
+SCRIPTS = {
+    'ri20': ('refine_rigellian_extractor.py', 'verify_refined_rigellian_extractor.py'),
+    'ri03': ('refine_rigellian_nourishment.py', 'verify_refined_rigellian_nourishment.py'),
+}
 
 
 def sha(path):
@@ -43,7 +47,12 @@ def main():
     study = dict(stage=meta['stage'], blend=(rel/'model.blend').as_posix(), present=True,
                  sha256=meta['blend_sha256'], final_visual_acceptance='not-established')
     prior = [s for s in record['available_studies'] if s['blend'] == study['blend']]
-    assert not prior or prior == [study], 'Preserve completed studies; use a new study path for further changes'
+    if prior and prior != [study]:
+        tracked = subprocess.run(['git', 'cat-file', '-e', 'HEAD:sources/'+study['blend']],
+                                 cwd=ROOT, capture_output=True, check=False).returncode == 0
+        assert not tracked, 'Preserve committed studies; use a new study path for further changes'
+        record['available_studies'].remove(prior[0])
+        prior = []
     if not prior:
         record['available_studies'].append(study)
     paths = list(source.iterdir())+list(media.iterdir())

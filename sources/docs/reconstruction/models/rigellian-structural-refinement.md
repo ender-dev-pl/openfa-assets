@@ -65,5 +65,48 @@ framing, silhouette and colour. Inspect the validation JSON for exact render
 hashes and measured errors. Technical validity does not establish final artistic
 acceptance or calibrated gameplay placement.
 
-The full Rigellian pass remains active. This document records a structural
+## RI03 Nourishment Bank
+
+Focused inspection of the surface body, readable catalogue phase and highlighted
+phase 40 shows a broad pale vertical equipment region and repeated upright front
+features. The previous study's thin rod and small grille pockets understate
+those areas. The new separate study adds three broad body-following alloy
+frames, enlarged actual recesses, upright inset equipment and a continuous flat
+equipment spine with interstage support bridges. Exact housings and the role of
+their internal equipment remain authored interpretations; horizontal cooling
+louvres were not established by the original and are not carried into this pass.
+
+The stack's established proportions are retained. Native mesh measurements give
+0.98-wide, 0.90-high process segments and a foundation/rim about 1.4 wide. The
+segment/foot width ratio is close to the roughly 14/20 ratio in the 20×60 source
+body. The visible equipment coverage needed improvement; there was insufficient
+evidence to arbitrarily shrink the vessels. This preserves the three jade
+sections, gold interstages, flared mounting foot and low gold fitting.
+
+Frames are 0.40 wide, versus approximately 0.20 overall for the old small
+retaining returns. The spine is now a 0.095-wide flat member, not a thin round
+rod. These differences remain visible in whole-model renders. Original packed
+authored body colour/roughness maps and planar cap mapping are retained.
+Rigellian CDB's elegant ergonomic construction and the original narrative's
+nutritional production support a coherent integrated installation; they do not
+prove a particular fluid, pipe layout, alloy or process animation.
+
+The new Blend/GLB study is under
+`sources/docs/assets/reconstruction/rigellian-refined/ri03/`; matching previews
+and validation are under `gallery/media/`. It contains 43 meshes; lower mesh
+count than the earlier 47-mesh study is not a loss of visible fidelity. The
+smaller inferred louvres were replaced with larger readable assemblies.
+Twenty-one retained foundation/interstage/rear/foot components have zero actual
+position drift and unchanged material bindings/hierarchy. All three process
+profiles retain their established width and height. Native/imported verification
+checks every closed positive surface, frame coverage, actual carved recesses,
+backing root overlap, recessed inserts, continuous spine and three bridges.
+Conformal sampling keeps the full pale rim in front of the curved casing;
+surface rays confirm approximately 0.032 clearance at its upper, lower and side
+spans. This prevents the body from visibly cutting holes through a flat frame.
+Whole, front and service-detail renders are generated independently in both
+formats and compared for framing, silhouette and colour. The local
+original/previous/new comparison was inspected; original pixels remain ignored.
+
+The full Rigellian pass remains active. This document records structural
 milestone, not completion of all 35 models or all review-ledger gates.
