@@ -74,6 +74,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br06/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br06/model.glb)
 
+**Additional iteration — joined-terraced-longhouse-refinement**
+
+![Longhouse](../gallery/media/docs/assets/reconstruction/braccatian-refined/br06/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br06/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br06/model.glb)
+
 ## Sports Hall
 
 `openfa:building/legacy/069`
