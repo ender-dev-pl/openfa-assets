@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = {
     'ri20': ('refine_rigellian_extractor.py', 'verify_refined_rigellian_extractor.py'),
     'ri03': ('refine_rigellian_nourishment.py', 'verify_refined_rigellian_nourishment.py'),
+    'ri08': ('refine_rigellian_databanks.py', 'verify_refined_rigellian_databanks.py'),
     'observatory': ('refine_rigellian_observatory.py', 'verify_refined_rigellian_observatory.py'),
     'transportation': ('refine_rigellian_transport.py', 'verify_refined_rigellian_transport.py'),
     'lazzaro-research': ('refine_lazzaro_visible_forms.py', 'verify_refined_lazzaro_forms.py'),

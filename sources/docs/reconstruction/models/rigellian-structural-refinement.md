@@ -325,5 +325,40 @@ zero difference, the three paired silhouettes have IoU 1.0 and the largest
 foreground RGB mean difference is below 0.0047/255. Final whole/top/detail and
 before/after renders were inspected against the original directional evidence.
 
+## RI08 Databanks
+
+The paletted surface body and all 41 catalogue phases were inspected. Phases
+20 onward show the readable object and then red component highlights; the
+earlier blurred reveal is not a turntable or a mechanical opening sequence.
+The upper body has a substantial pale patterned region with dark square
+features, rather than the first study's four tiny dark fasteners. Its original
+function text identifies stored research and communication with colleagues;
+neither that narrative nor the CDB entry establishes internal equipment or
+an exact material. Knowledge/research emphasis and ergonomic construction
+remain cultural context, not permission to invent disk racks or screens.
+
+The new separate study adds a curved pale equipment casing and eight genuine
+blind recesses with dark backings through that casing into the upper head.
+Two rows of four are an authored readable interpretation of the source pattern;
+exact counts, hidden equipment purpose and recess depth are unresolved. Four
+old tiny fasteners are omitted. The original upper head is modified physically;
+forty other components, including twin supports, side module, silver fork,
+flared middle housing and lower drum/intakes, retain their geometry, material
+bindings and hierarchy with zero position drift. Supported body proportions
+are kept. Previous editable studies remain unchanged and selectable.
+
+A pale finish map is independently authored from existing wear variation and
+retains packed roughness; original source pixels are never texture inputs.
+Native reopen and independent GLB checks cover all fifty closed positive
+consistently wound meshes, all eight actual cavity floors, open casing holes,
+backing/floor overlaps, casing/body root contacts, complete marked collection,
+root/footprint, retained components and static-state policy. The two whole
+views and intentionally cropped upper-equipment detail are actually rendered
+from each format. All three silhouette pairs have IoU 1.0; maximum compared
+position difference is below 1.392e-6 and maximum foreground RGB mean difference
+below 0.031/255. Final paired and before/after renders were inspected alongside
+the source. Final artistic acceptance, exact equipment internals and gameplay
+calibration remain open.
+
 The full Rigellian pass remains active. This document records structural
 milestone, not completion of all 35 models or all review-ledger gates.

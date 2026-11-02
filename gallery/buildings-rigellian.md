@@ -160,6 +160,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/databanks/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/databanks/model.glb)
 
+**Additional iteration — visible-equipment-refinement**
+
+![Databanks](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri08/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri08/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri08/model.glb)
+
 ## Construction Unit
 
 `openfa:building/legacy/048`
