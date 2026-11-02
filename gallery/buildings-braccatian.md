@@ -12,6 +12,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br01/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br01/model.glb)
 
+**Additional iteration — joined-clan-complex-refinement**
+
+![First Step](../gallery/media/docs/assets/reconstruction/braccatian-refined/br01/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br01/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br01/model.glb)
+
 ## Clan Heart
 
 `openfa:building/legacy/064`
@@ -21,6 +27,12 @@
 ![Clan Heart](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br02/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br02/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br02/model.glb)
+
+**Additional iteration — joined-clan-complex-refinement**
+
+![Clan Heart](../gallery/media/docs/assets/reconstruction/braccatian-refined/br02/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br02/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br02/model.glb)
 
 ## Radiation Shield
 
@@ -63,6 +75,12 @@
 ![Aesir's Hall](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br05/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br05/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br05/model.glb)
+
+**Additional iteration — joined-clan-complex-refinement**
+
+![Aesir's Hall](../gallery/media/docs/assets/reconstruction/braccatian-refined/br05/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br05/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br05/model.glb)
 
 ## Longhouse
 
