@@ -42,6 +42,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/ships/rigellian/transportation/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/transportation/model.glb)
 
+**Additional iteration — body-section-refinement**
+
+![Transportation](../gallery/media/docs/assets/reconstruction/rigellian-refined/transportation/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/transportation/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/transportation/model.glb)
+
 ## Observatory
 
 `openfa:ship/rigellian/observatory`

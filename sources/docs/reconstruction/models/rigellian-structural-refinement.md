@@ -171,5 +171,40 @@ avoiding unnecessary exported material variants. Whole, frontal and belt detail
 views are actually rendered in both formats and compared. Original pixels and
 the before/after comparison remain local ignored reference material.
 
+## RI3C Transportation
+
+All sixteen nonempty directional frames were inspected; the sixteen odd
+descriptors are empty, not additional views. The original embedded palette and
+RI3C payload hash remain bound by `ship-reference-index.json`. These views show
+two rounded inline bodies, a narrow waist, a broad gold forward region, a pale
+aft upper field and substantial bronze lateral regions. The earlier study's
+piecewise-linear hull sections produced a visibly polygonal planform and sharp
+longitudinal shoulders even at normal gallery size.
+
+The new separate study uses shape-preserving cubic interpolation between the
+established body stations, retaining their endpoint extents and maximum widths.
+It enlarges the gold forward patch, replaces the thin aft trim with broad
+conformal sections, adds the pale aft upper region and two rounded bronze
+shoulder masses, and fits the existing small service assemblies onto the new
+skin. The exact hidden pod sections and cubic curves are authored interpretation;
+their material names do not establish a recovered alloy or propulsion function.
+CDB elegance/ergonomics remain contextual guidance, not a source for unseen
+ship mechanisms. Packed authored wear materials are retained. There is no
+unverified flight/deployment animation.
+
+The terminal and ventral saddle retain their geometry/material/hierarchy with
+zero position drift; AlignmentForward also remains unchanged and uncalibrated.
+Native and independently imported GLB checks cover all 22 closed, positive,
+consistently wound physical meshes, actual cross-sections, reduced slope jumps
+at old profile corners, solid body/terminal/saddle contacts, gold patch width
+and conformal field/pod attachments. The complete marked collection contains
+every mesh and helper. Source-specific native/imported geometry comparison
+finds zero position difference; all three whole/top/detail render pairs have
+silhouette IoU 1.0 and foreground RGB mean difference below 0.0022/255.
+Actual before/after and directional renders were inspected alongside the
+legacy headings. Private contact sheets remain under ignored
+`artifacts/issue-185/`; the previous study remains selectable in the gallery.
+Final artistic acceptance, exact projection and game calibration remain open.
+
 The full Rigellian pass remains active. This document records structural
 milestone, not completion of all 35 models or all review-ledger gates.
