@@ -186,3 +186,74 @@ zero measured position drift and maximum foreground RGB mean difference below
 0.0029/255. Native/imported images and source/before/after comparison were
 inspected. Entrance-detail deliberately crops upper towers; whole views check
 full framing. No operating clip is claimed. Full-race completion remains open.
+
+## BR07 Sports Hall, BR09 Glasshouse and BR10 TechMech
+
+All 41 catalogue phases and both surface descriptors (body and shadow) were
+inspected for each case, with enlarged correctly paletted body pixels. Original
+functional payloads were read and their exact byte ranges/hashes checked
+against the existing functional index. No film establishes operating motion.
+
+Sports Hall is described as a ceremonial gym for communal exercise and male
+bonding. Its broad domed body, four front face wells, upper fitting/terminal,
+two substantial front pillars with gold globe heads and red/pale lower fields
+replace the placeholder's central tower and four generic satellite pods. A low
+rear support and connecting front lintel join the assembly; the central lower
+entrance interval remains empty. Broad gold divisions follow the dome rather
+than introducing invented clan emblems. Render review removed gold strips that
+crossed and obscured the face wells. Hidden support construction and exact
+relief/placement remain authored; the narrative does not establish a visible
+ritual mechanism or animation.
+
+Glasshouse is the security-block counterpart, but its honour-culture narrative
+explicitly says security is practically non-existent. The source's slotted
+upper cylinder is rebuilt as separate rose uprights between annular castings,
+with an inner gold cylinder, rounded rose cap and small tip. This is an
+interpretation of visible structural slots, not invented prison machinery.
+Three grounded tapering pyramidal supports, lower neck fields and blue/gold
+face fittings replace the unsupported generic two-cylinder placeholder. Eight
+uprights and the exact internal depth/hidden rear support are authored counts
+and dimensions, not quantities established by the tiny sprite.
+
+TechMech is explicitly an extensive and severely practical ship construction
+yard, with some heavy-metal-type decoration. It now has a layered cylindrical
+body, gold shoulder bands, two side pyramidal modules, three real rising access
+steps, three front gold fittings/red fields, waist uprights, upper service faces,
+louvers and a circular red fitting. The previous ringed cylinder omitted those
+large lower assemblies. Render review separated blue inserts from dark backing
+and annular rims to avoid coplanar faces, and placed the waist uprights outside
+the upper shell while seating their roots in the broader lower shoulder.
+Hidden shipyard internals, exact repeated counts and material identity remain
+unknown. No exposed ship assembly process or operating loop is invented.
+
+Each study is a separate complete editable assembly with original catalogue
+footprint. Gold/rose/pale/coloured regions are based on the paletted source;
+exact alloys remain unknown. Independently authored colour/roughness maps,
+shallow main-shell dents and readable wear are included. Prior source files
+remain unchanged and selectable; none of their geometry is claimed as retained
+inside these new assemblies.
+
+Actual native Blender reopen and independent GLB import passed: 37 Sports Hall
+meshes / 62 geometric contacts, 29 Glasshouse meshes / 49 contacts and 37 TechMech
+meshes / 76 contacts. All are closed, positive, consistently wound solids; an
+intersection graph connects every part in each assembly. Marked collection
+membership, root/catalogue footprints, hierarchy and ten effective packed
+colour/roughness arrays per case are checked in both formats. Verification
+caught and corrected helper-created meshes outside the marked collection;
+complete sources were regenerated and independently verified after the fix.
+
+Sports Hall tests measure its broad domed sections, two front pillars/globes,
+clear entrance interval and four unobscured face-well centres. Glasshouse tests
+cast rays through eight actual upper slots and into a real upright, measure the
+three grounded tapered supports and require visible blue fitting centres.
+TechMech tests measure the three rising/receding access steps, side modules,
+front fittings and unobscured blue/red faces. These geometry checks supplement
+counts; counts alone are not evidence of fidelity.
+
+All nine native/imported whole/front/equipment pairs have silhouette IoU 1.0.
+Maximum position difference is below 1.392e-6 and maximum foreground RGB mean
+difference below 0.0026/255. Current paired views and paletted source/before/after
+comparisons were inspected. Details frame the body/equipment rather than the
+long TechMech terminal; whole views check complete framing. No new operating
+clips are claimed. These three studies bring the current full-race programme
+to eleven refined definitions; the remaining 27 decisions remain required.
