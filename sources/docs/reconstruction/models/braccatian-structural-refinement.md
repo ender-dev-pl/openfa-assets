@@ -46,3 +46,61 @@ Sources: `sources/docs/assets/reconstruction/braccatian-refined/br22/`.
 Maps: `sources/materials/reconstruction/braccatian-refined/br22/`.
 Actual renders and source-bound report:
 `gallery/media/docs/assets/reconstruction/braccatian-refined/br22/`.
+
+## BR04 Source, BR14 Anchor and BR15 Heart-of-the-Sun
+
+For each building, the original surface parts and all 41 catalogue
+reveal/highlight phases were inspected. Their separate silhouettes and face
+equipment qualify the shared cultural design language; one generic organic
+tower cannot represent all three. New assemblies are separate studies and do
+not claim geometric retention of the earlier placeholders.
+
+Source now has a slender lower gold cylinder with cast ribs/service rails,
+rounded upper vessel, narrow connecting neck, broad rose bands, lower circular
+fitting, pale equipment faces, blue collar and a single gold terminal. The old
+trident and oversized generic foot are omitted. Its nutrition/ceremonial role
+does not establish an exposed ritual mechanism or clan symbol.
+
+Anchor now has a compact ribbed gold cylinder, two broad rose shoulders,
+rounded closed dome, large circular upper fitting, middle dark fields and a
+lower red/pale service column. It has no separate mast or terminal globe.
+Rendered review caught a flat cap left by omitting the old neck; the authored
+profile was corrected to a rounded dome. The gravity-nullifier function does
+not establish exposed internals or an operating effect.
+
+Heart-of-the-Sun now has two rounded rose chambers joined by a narrow gold
+waist, a broad upper face grille, lower circular fitting, separate front upright
+fittings, blue collar and a stepped single terminal. The placeholder's side
+pods and trident are omitted. The functional text explicitly states fusion
+power, but does not describe a visible reactor, animated core or operating loop.
+
+The shared helper infrastructure does not force a common shape: the profiles,
+face equipment, material regions and side/front assemblies are case-specific.
+Exact profiles, fitting depths, repeated casing counts, hidden surfaces and
+alloy identities remain authored. Independent colour/roughness wear and shallow
+main-casting dents preserve readable broad construction. No original pixels are
+texture inputs and no unsupported idle animation is introduced.
+
+Actual native reopen and independent GLB validation passed for all three:
+28 Source meshes, 30 Anchor meshes and 20 Heart-of-the-Sun meshes. Closed
+positive consistently wound geometry, complete marked collections, original
+2x2 footprints, root/hierarchy and packed effective colour/roughness arrays are
+checked in both formats. Source has 41 sampled part contacts, Anchor 51 and
+Heart-of-the-Sun 19; every new part participates in an actual contact test.
+Radial ray tests check Source's slender cylinder/narrow neck/upper vessel,
+Anchor's two shoulders/waist and rounded dome, and the plant's two chambers.
+Anchor's actual port centres remain exposed through annular rims.
+
+All nine whole/front/equipment-detail native/import render pairs have silhouette
+IoU 1.0. Maximum position difference is below 1.391e-6 and maximum foreground
+RGB mean difference below 0.0019/255. Current paired views and source/before/after
+comparisons were inspected. Equipment details intentionally crop terminals;
+whole views separately check complete framing. Maps and physical dents are
+independently authored, not copies of legacy pixels. Exact hidden construction,
+material identity and final artistic acceptance remain open.
+
+New source folders are `sources/docs/assets/reconstruction/braccatian-refined/br04`,
+`br14` and `br15`; corresponding actual render/validation reports are under
+`gallery/media/docs/assets/reconstruction/braccatian-refined/`. Earlier sources
+remain unchanged and selectable. These are three static-body refinements in
+the active full-38 programme, not completion of the full race.
