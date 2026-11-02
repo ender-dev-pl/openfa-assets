@@ -42,6 +42,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br04/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br04/model.glb)
 
+**Additional iteration — visible-vessel-refinement**
+
+![Source](../gallery/media/docs/assets/reconstruction/braccatian-refined/br04/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br04/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br04/model.glb)
+
 ## Aesir's Hall
 
 `openfa:building/legacy/067`
@@ -156,6 +162,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br14/model.glb)
 
+**Additional iteration — visible-vessel-refinement**
+
+![Anchor](../gallery/media/docs/assets/reconstruction/braccatian-refined/br14/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br14/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br14/model.glb)
+
 ## Heart-of-the-Sun
 
 `openfa:building/legacy/077`
@@ -165,6 +177,12 @@
 ![Heart-of-the-Sun](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br15/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br15/model.glb)
+
+**Additional iteration — visible-vessel-refinement**
+
+![Heart-of-the-Sun](../gallery/media/docs/assets/reconstruction/braccatian-refined/br15/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br15/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br15/model.glb)
 
 ## Aegis
 
