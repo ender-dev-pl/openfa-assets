@@ -257,3 +257,72 @@ comparisons were inspected. Details frame the body/equipment rather than the
 long TechMech terminal; whole views check complete framing. No new operating
 clips are claimed. These three studies bring the current full-race programme
 to eleven refined definitions; the remaining 27 decisions remain required.
+
+## BR01 First Step, BR02 Clan Heart and BR05 Aesir's Hall
+
+The full CDB Braccatian records 33-61 were reread with exact byte/hash checks,
+including the complete architecture, physical/societal and religious context.
+Functional payloads for First Step (record 924, offset 72156), Clan Heart (925,
+72273) and Aesir's Hall (928, 72754) were read and checked against the mapped
+hashes. The source describes a CPU counterpart, the command centre/Council of
+Elders seat with high security, and an air-circulation building explicitly
+without ceremonial aspect. Display-oriented architecture does not establish
+new clan emblems, anatomical motifs, universal bronze alloy or operating effects.
+
+All 41 paletted catalogue phases and body/shadow layers were inspected for each
+case. First Step has four joined broad-foot pyramids, gold/rose planar regions,
+blue upper collars/single gold tips, front equipment fields and two bright
+triangular portals. The new source restores those joined square-sided bodies
+rather than four separate generic cones. The portals have actual shallow
+Boolean-cut recesses, dark backing, raised gold frames and pale grille divisions.
+Their construction/depth is authored interpretation of the source-visible
+bright entrance regions, not a recovered interior or opening animation.
+
+Clan Heart has a tall cylindrical core with shoulder bands and pale vertical
+faces, a steep square roof, open gold upper crown and three distinct peripheral
+pyramids with blue collars and side face fittings. This recovers the source's
+vertical core/roof distinction instead of a single central cone. The high
+security narrative does not justify adding weapons or new defensive machinery.
+Attachment verification caught an actual gap between the peripheral pyramid
+tips and blue collars; their seating was corrected and all sources regenerated
+before final acceptance checks.
+
+Aesir's Hall has a low stepped cylindrical body with rose collars/service fields,
+a narrow rose neck, broad-foot upper spire, open gold crown and three low
+satellites. Red/blue face fittings and plain gold satellite tips follow the
+source; unsupported blue upper collars are absent. The visible ornate form is
+retained without converting the air system into a ceremonial device. The new
+assembly restores the stepped neck and lower construction omitted by the old
+four-cone placeholder.
+
+The crown is interpreted as two closed, thick loop castings around a single
+mast with a rose seat, leaving actual open intervals. Exact loop counts/depths,
+profiles, repeated fitting counts, hidden rear construction and alloys remain
+authored. Prior studies remain unchanged/selectable. New wear uses independent
+colour/roughness maps and shallow main-casting dents. No original pixels are
+texture inputs and no unsupported operating clips are introduced.
+
+Actual Blender reopen and independent GLB import passed for 74 First Step
+meshes, 47 Clan Heart meshes and 37 Aesir's Hall meshes. Every mesh is closed,
+positive and consistently wound; geometric intersection graphs connect all
+parts through 168, 105 and 87 sampled contacts respectively. Complete marked
+collections, original 3x3/3x3/2x2 footprints, root hierarchy and ten effective
+packed colour/roughness arrays per case are checked in both formats.
+
+First Step tests measure four grounded tapering pyramid sections, four blue
+collars, unobscured portal grilles and actual recess depths (~0.114/0.115 units).
+Clan Heart tests measure the constant-radius central cylinder (~0.29 units at
+two heights), three peripheral pyramids/collars and exposed upper pale faces.
+Aesir's Hall tests require the distinct narrow neck (~0.105) and broad upper
+spire foot (~0.282), three low satellites and exposed red/blue fittings. Crown
+rays pass through actual off-axis openings while separate rays hit the loop
+castings. Counts alone are not treated as evidence of reconstruction fidelity.
+
+All eleven current native/imported whole/front/equipment/crown pairs have
+silhouette IoU 1.0; maximum position difference is below 1.014e-6 and foreground
+RGB mean difference below 0.0032/255. Paired views and source/before/after
+comparisons were inspected. Equipment-detail views intentionally crop crowns;
+whole views check complete framing and crown-detail views inspect the openings.
+These are three additional studies in the full 38-model programme. Fourteen
+new refined definitions are now covered; 24 remaining decisions and the final
+all-model preservation/animation/gallery audit remain required.
