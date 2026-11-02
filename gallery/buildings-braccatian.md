@@ -246,6 +246,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br22/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br22/model.glb)
 
+**Additional iteration — visible-jar-refinement**
+
+![Pithoi](../gallery/media/docs/assets/reconstruction/braccatian-refined/br22/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br22/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br22/model.glb)
+
 ## Fire Power
 
 `openfa:building/legacy/085`
