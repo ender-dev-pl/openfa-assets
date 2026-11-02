@@ -90,6 +90,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br07/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br07/model.glb)
 
+**Additional iteration — public-facility-structural-refinement**
+
+![Sports Hall](../gallery/media/docs/assets/reconstruction/braccatian-refined/br07/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br07/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br07/model.glb)
+
 ## Field Hospital
 
 `openfa:building/legacy/070`
@@ -110,6 +116,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br09/model.glb)
 
+**Additional iteration — public-facility-structural-refinement**
+
+![Glasshouse](../gallery/media/docs/assets/reconstruction/braccatian-refined/br09/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br09/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br09/model.glb)
+
 ## TechMech
 
 `openfa:building/legacy/072`
@@ -119,6 +131,12 @@
 ![TechMech](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br10/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br10/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br10/model.glb)
+
+**Additional iteration — public-facility-structural-refinement**
+
+![TechMech](../gallery/media/docs/assets/reconstruction/braccatian-refined/br10/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br10/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br10/model.glb)
 
 ## Launch Site
 
