@@ -35,7 +35,27 @@
       "key": "PS7C",
       "name": "Space Dock",
       "culture": "terran",
-      "status": "pending-source-review-and-runtime-verification"
+      "status": "runtime-verified",
+      "finished": {
+        "legacy_sprite_frame": 0,
+        "blend": "sources/docs/assets/reconstruction/orbital-station-refined/terran/space-dock/model.blend",
+        "glb": "sources/docs/assets/reconstruction/orbital-station-refined/terran/space-dock/model.glb",
+        "blend_sha256": "bc7e7552c45b1acd8cdb516a2c568bacac9e9ba3be75ef0a83c415d99ef7e708",
+        "glb_sha256": "3c28df7c5a445912a5ed6cb355e86a3c3c6b2b0d9649a6c4e803c8b77beece92",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-refined/terran/space-dock/validation.json"
+      },
+      "construction": {
+        "legacy_sprite_frame": 1,
+        "blend": "sources/docs/assets/reconstruction/orbital-station-construction/terran/space-dock/model.blend",
+        "glb": "sources/docs/assets/reconstruction/orbital-station-construction/terran/space-dock/model.glb",
+        "blend_sha256": "018487e04c4a9d829481a009a5444b8bb14e68ad35133863dda7165c006e7e12",
+        "glb_sha256": "0f70fac069d53bf3f5372ceb24295c1a0b91c957e32be77528b34e83997b1d96",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-construction/terran/space-dock/validation.json",
+        "animation": "ConstructionActivity"
+      },
+      "generator": "sources/tools/blender/refine_space_dock_states.py",
+      "verifier": "sources/tools/blender/verify_space_dock_states.py",
+      "evidence": "sources/docs/reconstruction/models/space-dock-refining-evidence.json"
     },
     {
       "id": "openfa:ship/rigellian/observatory",
