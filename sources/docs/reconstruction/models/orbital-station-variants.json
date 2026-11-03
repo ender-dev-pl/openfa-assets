@@ -148,7 +148,28 @@
       "key": "MN5C",
       "name": "Orbital Construction Area",
       "culture": "mauna",
-      "status": "pending-source-review-and-runtime-verification"
+      "status": "runtime-verified",
+      "finished": {
+        "legacy_sprite_frame": 0,
+        "blend": "sources/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/model.blend",
+        "glb": "sources/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/model.glb",
+        "blend_sha256": "453a5190b007a0fb8152da690f59a87180de2e231d14980b7053e47ae8355f7e",
+        "glb_sha256": "a86a921208288dae759b435cf5526f773e73fdc1e9d5d58ca567c6d670f0c795",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/validation.json"
+      },
+      "construction": {
+        "legacy_sprite_frame": 1,
+        "blend": "sources/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/model.blend",
+        "glb": "sources/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/model.glb",
+        "blend_sha256": "1119beef90f619155bd37a775bc1651e5bb23788e7dbb31227949297ebbbb3eb",
+        "glb_sha256": "48b776d6ebb5267e6fa651f2085dd09b9c64a6c4f733d81834f8bf9583b6fce4",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/validation.json",
+        "animation": "ConstructionActivity"
+      },
+      "generator": "sources/tools/blender/refine_mauna_station_states.py",
+      "verifier": "sources/tools/blender/verify_mauna_station_states.py",
+      "evidence": "sources/docs/reconstruction/models/mauna-station-evidence.json",
+      "state_policy": "Descriptor 1 is the tapered grey construction cage; original central mast and lower stem remain exposed. Preserve the finished world geometry and common finished normalization for both states."
     },
     {
       "id": "openfa:ship/achaean/orbital-shipyard",
