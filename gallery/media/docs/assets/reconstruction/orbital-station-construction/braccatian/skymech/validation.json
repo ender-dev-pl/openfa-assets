@@ -1,0 +1,1601 @@
+{
+  "issue": 192,
+  "id": "openfa:ship/braccatian/skymech",
+  "variant": "construction",
+  "legacy_sprite_frame": 1,
+  "blender": "4.5.15 LTS",
+  "source_blend_sha256": "02ec8e3abd639e84a42f4fea7b91f64be8ee301aac9a44843220a66d9c4a4942",
+  "blend_sha256": "fdc609c0c0e9adc95a61d6f44f59626ecb0db3c85fa2fd8e4c07f705026dbdcf",
+  "glb_sha256": "f7cee670a9402e71130d3023c3ab329327c6c60d5c2b269a155f3fb769c7a171",
+  "generator_sha256": "f18fbd96dad5c3280b3ef4231c91cf36692f070ea538da1a165bc476223f9b7a",
+  "verifier_sha256": "c2bf72b96e97925a17dc1829cf3b731e682e271ef68e8d764291a73de6f056f5",
+  "verifier_dependencies_sha256": {
+    "verify_refined_braccatian_pithoi.py": "5876dfe420fb17f6f809c211ba864468627440b5e10df2c541379975c67d06a1",
+    "verify_refined_braccatian_ships.py": "3e8ceab43794cf80bfaa0197e94b0280e4e43e93b3eef2ce78cdebd507f5ecbc",
+    "verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+  },
+  "native_mesh_count": 138,
+  "imported_mesh_count": 138,
+  "native_structure": {
+    "positive_closed_meshes": 138,
+    "closed_positive_components": 975,
+    "components_per_mesh": {
+      "Construction outer horizontal scaffold hoops": 33,
+      "Construction outer longitudinal scaffold ribs": 24,
+      "Construction alternating diagonal lattice": 768,
+      "Construction body anchored support stays": 16,
+      "Construction temporary shield panel 0": 1,
+      "Construction temporary shield panel 1": 1,
+      "Construction temporary shield panel 2": 1,
+      "Construction temporary shield panel 3": 1,
+      "Construction temporary shield panel 4": 1,
+      "Construction temporary shield panel 5": 1,
+      "Construction temporary shield panel 6": 1,
+      "Construction temporary shield panel 7": 1,
+      "Construction temporary shield panel 8": 1,
+      "Construction temporary shield panel 9": 1,
+      "Construction temporary shield panel 10": 1,
+      "Construction temporary shield panel 11": 1,
+      "Construction temporary waist cover 0": 1,
+      "Construction temporary waist cover 1": 1,
+      "Construction temporary waist cover 2": 1,
+      "Construction temporary waist cover 3": 1,
+      "SkyMech upper gold dome": 1,
+      "SkyMech lower gold cone": 1,
+      "SkyMech upper rose rim": 1,
+      "SkyMech lower rose rim": 1,
+      "SkyMech rose radial module 0": 1,
+      "SkyMech gold module face 0": 1,
+      "SkyMech module gold rim 0": 1,
+      "SkyMech module face fitting 0": 1,
+      "SkyMech radial arm 0": 1,
+      "SkyMech rose radial module 1": 1,
+      "SkyMech gold module face 1": 1,
+      "SkyMech module gold rim 1": 1,
+      "SkyMech module face fitting 1": 1,
+      "SkyMech radial arm 1": 1,
+      "SkyMech rose radial module 2": 1,
+      "SkyMech gold module face 2": 1,
+      "SkyMech module gold rim 2": 1,
+      "SkyMech module face fitting 2": 1,
+      "SkyMech radial arm 2": 1,
+      "SkyMech rose radial module 3": 1,
+      "SkyMech gold module face 3": 1,
+      "SkyMech module gold rim 3": 1,
+      "SkyMech module face fitting 3": 1,
+      "SkyMech radial arm 3": 1,
+      "SkyMech upper aerial": 1,
+      "SkyMech lower aerial": 1,
+      "SkyMech crown hatch": 1,
+      "SkyMech expanded axial pressure core": 1,
+      "SkyMech broad upper casing rail 0": 1,
+      "SkyMech broad upper casing rail 1": 1,
+      "SkyMech broad upper casing rail 2": 1,
+      "SkyMech broad upper casing rail 3": 1,
+      "SkyMech broad upper casing rail 4": 1,
+      "SkyMech broad upper casing rail 5": 1,
+      "SkyMech broad upper casing rail 6": 1,
+      "SkyMech broad upper casing rail 7": 1,
+      "SkyMech broad lower casing rail 0": 1,
+      "SkyMech broad lower casing rail 1": 1,
+      "SkyMech broad lower casing rail 2": 1,
+      "SkyMech broad lower casing rail 3": 1,
+      "SkyMech broad lower casing rail 4": 1,
+      "SkyMech broad lower casing rail 5": 1,
+      "SkyMech broad lower casing rail 6": 1,
+      "SkyMech broad lower casing rail 7": 1,
+      "SkyMech expanded core gold band 0": 1,
+      "SkyMech expanded core gold band 1": 1,
+      "SkyMech expanded core gold band 2": 1,
+      "SkyMech expanded equatorial collar": 1,
+      "SkyMech broad radial service casing 0": 1,
+      "SkyMech broad radial service casing 0 dark face": 1,
+      "SkyMech broad radial service casing 0 amber field 0": 1,
+      "SkyMech broad radial service casing 0 amber field 1": 1,
+      "SkyMech broad radial service casing 0 amber field 2": 1,
+      "SkyMech broad radial service casing 1": 1,
+      "SkyMech broad radial service casing 1 dark face": 1,
+      "SkyMech broad radial service casing 1 amber field 0": 1,
+      "SkyMech broad radial service casing 1 amber field 1": 1,
+      "SkyMech broad radial service casing 1 amber field 2": 1,
+      "SkyMech broad radial service casing 2": 1,
+      "SkyMech broad radial service casing 2 dark face": 1,
+      "SkyMech broad radial service casing 2 amber field 0": 1,
+      "SkyMech broad radial service casing 2 amber field 1": 1,
+      "SkyMech broad radial service casing 2 amber field 2": 1,
+      "SkyMech broad radial service casing 3": 1,
+      "SkyMech broad radial service casing 3 dark face": 1,
+      "SkyMech broad radial service casing 3 amber field 0": 1,
+      "SkyMech broad radial service casing 3 amber field 1": 1,
+      "SkyMech broad radial service casing 3 amber field 2": 1,
+      "SkyMech new axial housing upper 0": 1,
+      "SkyMech new axial housing upper 0 rose collar 0": 1,
+      "SkyMech new axial housing upper 0 rose collar 1": 1,
+      "SkyMech new axial housing upper 0 red service face": 1,
+      "SkyMech new axial housing upper 1": 1,
+      "SkyMech new axial housing upper 1 rose collar 0": 1,
+      "SkyMech new axial housing upper 1 rose collar 1": 1,
+      "SkyMech new axial housing upper 1 red service face": 1,
+      "SkyMech new axial housing upper 2": 1,
+      "SkyMech new axial housing upper 2 rose collar 0": 1,
+      "SkyMech new axial housing upper 2 rose collar 1": 1,
+      "SkyMech new axial housing upper 2 red service face": 1,
+      "SkyMech new axial housing upper 3": 1,
+      "SkyMech new axial housing upper 3 rose collar 0": 1,
+      "SkyMech new axial housing upper 3 rose collar 1": 1,
+      "SkyMech new axial housing upper 3 red service face": 1,
+      "SkyMech new axial housing lower 0": 1,
+      "SkyMech new axial housing lower 0 rose collar 0": 1,
+      "SkyMech new axial housing lower 0 rose collar 1": 1,
+      "SkyMech new axial housing lower 0 red service face": 1,
+      "SkyMech new axial housing lower 1": 1,
+      "SkyMech new axial housing lower 1 rose collar 0": 1,
+      "SkyMech new axial housing lower 1 rose collar 1": 1,
+      "SkyMech new axial housing lower 1 red service face": 1,
+      "SkyMech new axial housing lower 2": 1,
+      "SkyMech new axial housing lower 2 rose collar 0": 1,
+      "SkyMech new axial housing lower 2 rose collar 1": 1,
+      "SkyMech new axial housing lower 2 red service face": 1,
+      "SkyMech new axial housing lower 3": 1,
+      "SkyMech new axial housing lower 3 rose collar 0": 1,
+      "SkyMech new axial housing lower 3 rose collar 1": 1,
+      "SkyMech new axial housing lower 3 red service face": 1,
+      "SkyMech new broad upper window": 1,
+      "SkyMech new upper window field 0": 1,
+      "SkyMech new upper window field 1": 1,
+      "SkyMech new upper window field 2": 1,
+      "SkyMech new upper round casting 0": 1,
+      "SkyMech new upper round casting 0 rose centre": 1,
+      "SkyMech new upper round casting 1": 1,
+      "SkyMech new upper round casting 1 rose centre": 1,
+      "SkyMech new module concentric rim 0": 1,
+      "SkyMech new module concentric rim 1": 1,
+      "SkyMech new module concentric rim 2": 1,
+      "SkyMech new module concentric rim 3": 1,
+      "Construction temporary annular work deck 0": 1,
+      "Construction temporary annular work deck 1": 1,
+      "Construction temporary annular work deck 2": 1,
+      "Construction carriage rail clamp": 1,
+      "Construction carriage service case": 1,
+      "Construction carriage amber marker": 1
+    },
+    "volumes": {
+      "Construction outer horizontal scaffold hoops": 0.10018743678580204,
+      "Construction outer longitudinal scaffold ribs": 0.10316398985358016,
+      "Construction alternating diagonal lattice": 0.07258679987981115,
+      "Construction body anchored support stays": 0.017717487571644597,
+      "Construction temporary shield panel 0": 0.016527159698114465,
+      "Construction temporary shield panel 1": 0.016526598799982157,
+      "Construction temporary shield panel 2": 0.01652728235766484,
+      "Construction temporary shield panel 3": 0.016527292596051804,
+      "Construction temporary shield panel 4": 0.01652784399069299,
+      "Construction temporary shield panel 5": 0.016527169936501423,
+      "Construction temporary shield panel 6": 0.01652715969811446,
+      "Construction temporary shield panel 7": 0.01652659879998216,
+      "Construction temporary shield panel 8": 0.016527282357664815,
+      "Construction temporary shield panel 9": 0.016527292596051797,
+      "Construction temporary shield panel 10": 0.016527843990692993,
+      "Construction temporary shield panel 11": 0.016527169936501423,
+      "Construction temporary waist cover 0": 0.009571410571612477,
+      "Construction temporary waist cover 1": 0.009571410571612468,
+      "Construction temporary waist cover 2": 0.009571410571612472,
+      "Construction temporary waist cover 3": 0.009571410571612487,
+      "SkyMech upper gold dome": 1.110701190966814,
+      "SkyMech lower gold cone": 0.7939711314135781,
+      "SkyMech upper rose rim": 0.017481123441636243,
+      "SkyMech lower rose rim": 0.02642325034927734,
+      "SkyMech rose radial module 0": 0.20354064144836356,
+      "SkyMech gold module face 0": 0.02948476609259386,
+      "SkyMech module gold rim 0": 0.005893422039392243,
+      "SkyMech module face fitting 0": 0.00030666483610088254,
+      "SkyMech radial arm 0": 0.019187737271484828,
+      "SkyMech rose radial module 1": 0.2035406414483633,
+      "SkyMech gold module face 1": 0.02948476609259387,
+      "SkyMech module gold rim 1": 0.005893422039392243,
+      "SkyMech module face fitting 1": 0.0003066648361008824,
+      "SkyMech radial arm 1": 0.019187737271484834,
+      "SkyMech rose radial module 2": 0.20354064144836295,
+      "SkyMech gold module face 2": 0.029484766092593827,
+      "SkyMech module gold rim 2": 0.005893422039392259,
+      "SkyMech module face fitting 2": 0.0003066648361008826,
+      "SkyMech radial arm 2": 0.01918773727148483,
+      "SkyMech rose radial module 3": 0.20354064144836348,
+      "SkyMech gold module face 3": 0.029484766092593834,
+      "SkyMech module gold rim 3": 0.005893422039392247,
+      "SkyMech module face fitting 3": 0.0003066648361008832,
+      "SkyMech radial arm 3": 0.019187737271484838,
+      "SkyMech upper aerial": 0.00020568430067700546,
+      "SkyMech lower aerial": 0.00011988207262447757,
+      "SkyMech crown hatch": 0.0015820329603679832,
+      "SkyMech expanded axial pressure core": 5.331540901851777,
+      "SkyMech broad upper casing rail 0": 0.005564915401505428,
+      "SkyMech broad upper casing rail 1": 0.005564941523432749,
+      "SkyMech broad upper casing rail 2": 0.005564915401505437,
+      "SkyMech broad upper casing rail 3": 0.00556494152343278,
+      "SkyMech broad upper casing rail 4": 0.00556491540150543,
+      "SkyMech broad upper casing rail 5": 0.005564941523432736,
+      "SkyMech broad upper casing rail 6": 0.005564915401505429,
+      "SkyMech broad upper casing rail 7": 0.0055649415234327905,
+      "SkyMech broad lower casing rail 0": 0.006133471523165522,
+      "SkyMech broad lower casing rail 1": 0.006133390846370776,
+      "SkyMech broad lower casing rail 2": 0.0061334715231655314,
+      "SkyMech broad lower casing rail 3": 0.006133390846370782,
+      "SkyMech broad lower casing rail 4": 0.006133471523165532,
+      "SkyMech broad lower casing rail 5": 0.006133390846370756,
+      "SkyMech broad lower casing rail 6": 0.006133471523165536,
+      "SkyMech broad lower casing rail 7": 0.006133390846370753,
+      "SkyMech expanded core gold band 0": 0.019948993233082333,
+      "SkyMech expanded core gold band 1": 0.019102799618109526,
+      "SkyMech expanded core gold band 2": 0.021983685598814445,
+      "SkyMech expanded equatorial collar": 0.2381627200437986,
+      "SkyMech broad radial service casing 0": 0.0813341915448594,
+      "SkyMech broad radial service casing 0 dark face": 0.003242980743894046,
+      "SkyMech broad radial service casing 0 amber field 0": 0.0005236936419308336,
+      "SkyMech broad radial service casing 0 amber field 1": 0.0005236936419308341,
+      "SkyMech broad radial service casing 0 amber field 2": 0.000523693641930834,
+      "SkyMech broad radial service casing 1": 0.0813341915448594,
+      "SkyMech broad radial service casing 1 dark face": 0.0032429807438940465,
+      "SkyMech broad radial service casing 1 amber field 0": 0.0005236936419308335,
+      "SkyMech broad radial service casing 1 amber field 1": 0.0005236936419308341,
+      "SkyMech broad radial service casing 1 amber field 2": 0.0005236936419308339,
+      "SkyMech broad radial service casing 2": 0.0813341915448594,
+      "SkyMech broad radial service casing 2 dark face": 0.003242980743894047,
+      "SkyMech broad radial service casing 2 amber field 0": 0.0005236936419308335,
+      "SkyMech broad radial service casing 2 amber field 1": 0.0005236936419308341,
+      "SkyMech broad radial service casing 2 amber field 2": 0.0005236936419308338,
+      "SkyMech broad radial service casing 3": 0.08133419154485941,
+      "SkyMech broad radial service casing 3 dark face": 0.003242980743894047,
+      "SkyMech broad radial service casing 3 amber field 0": 0.0005236936419308341,
+      "SkyMech broad radial service casing 3 amber field 1": 0.000523693641930834,
+      "SkyMech broad radial service casing 3 amber field 2": 0.0005236936419308337,
+      "SkyMech new axial housing upper 0": 0.043128475065346464,
+      "SkyMech new axial housing upper 0 rose collar 0": 0.002164948440065942,
+      "SkyMech new axial housing upper 0 rose collar 1": 0.002164952936321162,
+      "SkyMech new axial housing upper 0 red service face": 0.0017938184341422473,
+      "SkyMech new axial housing upper 1": 0.04312847506534674,
+      "SkyMech new axial housing upper 1 rose collar 0": 0.0021649484400659454,
+      "SkyMech new axial housing upper 1 rose collar 1": 0.002164952936321157,
+      "SkyMech new axial housing upper 1 red service face": 0.0017938184341422477,
+      "SkyMech new axial housing upper 2": 0.04312847506534666,
+      "SkyMech new axial housing upper 2 rose collar 0": 0.0021649484400659467,
+      "SkyMech new axial housing upper 2 rose collar 1": 0.0021649529363211564,
+      "SkyMech new axial housing upper 2 red service face": 0.0017938184341422408,
+      "SkyMech new axial housing upper 3": 0.04312847506534676,
+      "SkyMech new axial housing upper 3 rose collar 0": 0.002164948440065945,
+      "SkyMech new axial housing upper 3 rose collar 1": 0.0021649529363211573,
+      "SkyMech new axial housing upper 3 red service face": 0.0017938184341422477,
+      "SkyMech new axial housing lower 0": 0.05482304572584708,
+      "SkyMech new axial housing lower 0 rose collar 0": 0.0021650435165080782,
+      "SkyMech new axial housing lower 0 rose collar 1": 0.0021649925989611503,
+      "SkyMech new axial housing lower 0 red service face": 0.00256842558860626,
+      "SkyMech new axial housing lower 1": 0.05482304572584635,
+      "SkyMech new axial housing lower 1 rose collar 0": 0.002165043516508068,
+      "SkyMech new axial housing lower 1 rose collar 1": 0.0021649925989611555,
+      "SkyMech new axial housing lower 1 red service face": 0.002568425588606261,
+      "SkyMech new axial housing lower 2": 0.05482304572584718,
+      "SkyMech new axial housing lower 2 rose collar 0": 0.0021650435165080635,
+      "SkyMech new axial housing lower 2 rose collar 1": 0.0021649925989611547,
+      "SkyMech new axial housing lower 2 red service face": 0.0025684255886062545,
+      "SkyMech new axial housing lower 3": 0.054823045725846606,
+      "SkyMech new axial housing lower 3 rose collar 0": 0.0021650435165080618,
+      "SkyMech new axial housing lower 3 rose collar 1": 0.002164992598961156,
+      "SkyMech new axial housing lower 3 red service face": 0.002568425588606266,
+      "SkyMech new broad upper window": 0.0022411069342322585,
+      "SkyMech new upper window field 0": 0.0001304823873195345,
+      "SkyMech new upper window field 1": 0.00013049588671767054,
+      "SkyMech new upper window field 2": 0.00013050882436615993,
+      "SkyMech new upper round casting 0": 0.0019477419494551267,
+      "SkyMech new upper round casting 0 rose centre": 0.00019600430210795598,
+      "SkyMech new upper round casting 1": 0.001947818854625951,
+      "SkyMech new upper round casting 1 rose centre": 0.000196004306521478,
+      "SkyMech new module concentric rim 0": 0.006616680727904634,
+      "SkyMech new module concentric rim 1": 0.006616680727904634,
+      "SkyMech new module concentric rim 2": 0.0066166807279046235,
+      "SkyMech new module concentric rim 3": 0.006616680727904617,
+      "Construction temporary annular work deck 0": 0.08486059613253344,
+      "Construction temporary annular work deck 1": 0.11401361133072668,
+      "Construction temporary annular work deck 2": 0.08486006685221753,
+      "Construction carriage rail clamp": 0.0014343489893897197,
+      "Construction carriage service case": 0.003352749030720285,
+      "Construction carriage amber marker": 8.644096026403733e-05
+    },
+    "bounds": [
+      -2.055000066757202,
+      -2.055000066757202,
+      -3.3058507442474365,
+      2.055000066757202,
+      2.055000066757202,
+      3.3058507442474365
+    ],
+    "body_to_framework_supports": [
+      {
+        "body": [
+          0.7477818131446838,
+          0.0,
+          -0.962399959564209
+        ],
+        "framework": [
+          1.5103999376296997,
+          0.0,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          0.528761625289917,
+          0.528761625289917,
+          -0.962399959564209
+        ],
+        "framework": [
+          1.0680140256881714,
+          1.0680140256881714,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          4.578843060664014e-17,
+          0.7477818131446838,
+          -0.962399959564209
+        ],
+        "framework": [
+          9.248533051899011e-17,
+          1.5103999376296997,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          -0.528761625289917,
+          0.528761625289917,
+          -0.962399959564209
+        ],
+        "framework": [
+          -1.0680140256881714,
+          1.0680140256881714,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          -0.7477818131446838,
+          9.157686121328027e-17,
+          -0.962399959564209
+        ],
+        "framework": [
+          -1.5103999376296997,
+          1.8497066103798023e-16,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          -0.528761625289917,
+          -0.528761625289917,
+          -0.962399959564209
+        ],
+        "framework": [
+          -1.0680140256881714,
+          -1.0680140256881714,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          -1.373652918199204e-16,
+          -0.7477818131446838,
+          -0.962399959564209
+        ],
+        "framework": [
+          -2.7745596508719074e-16,
+          -1.5103999376296997,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          0.528761625289917,
+          -0.528761625289917,
+          -0.962399959564209
+        ],
+        "framework": [
+          1.0680140256881714,
+          -1.0680140256881714,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          0.7477818131446838,
+          0.0,
+          1.0019999742507935
+        ],
+        "framework": [
+          1.5103999376296997,
+          0.0,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          0.528761625289917,
+          0.528761625289917,
+          1.0019999742507935
+        ],
+        "framework": [
+          1.0680140256881714,
+          1.0680140256881714,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          4.578843060664014e-17,
+          0.7477818131446838,
+          1.0019999742507935
+        ],
+        "framework": [
+          9.248533051899011e-17,
+          1.5103999376296997,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          -0.528761625289917,
+          0.528761625289917,
+          1.0019999742507935
+        ],
+        "framework": [
+          -1.0680140256881714,
+          1.0680140256881714,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          -0.7477818131446838,
+          9.157686121328027e-17,
+          1.0019999742507935
+        ],
+        "framework": [
+          -1.5103999376296997,
+          1.8497066103798023e-16,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          -0.528761625289917,
+          -0.528761625289917,
+          1.0019999742507935
+        ],
+        "framework": [
+          -1.0680140256881714,
+          -1.0680140256881714,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          -1.373652918199204e-16,
+          -0.7477818131446838,
+          1.0019999742507935
+        ],
+        "framework": [
+          -2.7745596508719074e-16,
+          -1.5103999376296997,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          0.528761625289917,
+          -0.528761625289917,
+          1.0019999742507935
+        ],
+        "framework": [
+          1.0680140256881714,
+          -1.0680140256881714,
+          1.1980000734329224
+        ]
+      }
+    ],
+    "temporary_cover_roots": [
+      {
+        "name": "Construction temporary shield panel 0",
+        "point": [
+          1.9277081489562988,
+          0.0019277087412774563,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 1",
+        "point": [
+          1.282629370689392,
+          0.7422375679016113,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 2",
+        "point": [
+          0.9621846079826355,
+          1.670408010482788,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 3",
+        "point": [
+          -0.0014819088391959667,
+          1.4819083213806152,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 4",
+        "point": [
+          -0.9655234813690186,
+          1.668480396270752,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 5",
+        "point": [
+          -1.2841112613677979,
+          0.7396708130836487,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 6",
+        "point": [
+          -1.9277081489562988,
+          -0.0019277087412774563,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 7",
+        "point": [
+          -1.282629370689392,
+          -0.7422375679016113,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 8",
+        "point": [
+          -0.9621846079826355,
+          -1.670408010482788,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 9",
+        "point": [
+          0.0014819088391959667,
+          -1.4819083213806152,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 10",
+        "point": [
+          0.9655234813690186,
+          -1.668480396270752,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 11",
+        "point": [
+          1.2841112613677979,
+          -0.7396708130836487,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary waist cover 0",
+        "point": [
+          1.9070333242416382,
+          0.5130325555801392,
+          -0.2070000022649765
+        ]
+      },
+      {
+        "name": "Construction temporary waist cover 1",
+        "point": [
+          -0.5130325555801392,
+          1.9070333242416382,
+          -0.2070000022649765
+        ]
+      },
+      {
+        "name": "Construction temporary waist cover 2",
+        "point": [
+          -1.9070333242416382,
+          -0.5130325555801392,
+          -0.2070000022649765
+        ]
+      },
+      {
+        "name": "Construction temporary waist cover 3",
+        "point": [
+          0.5130325555801392,
+          -1.9070333242416382,
+          -0.2070000022649765
+        ]
+      }
+    ],
+    "physical_scaffold_members": {
+      "Construction outer horizontal scaffold hoops": 33,
+      "Construction outer longitudinal scaffold ribs": 24,
+      "Construction alternating diagonal lattice": 768,
+      "Construction body anchored support stays": 16
+    }
+  },
+  "imported_structure": {
+    "positive_closed_meshes": 138,
+    "closed_positive_components": 975,
+    "components_per_mesh": {
+      "Construction alternating diagonal lattice": 768,
+      "Construction body anchored support stays": 16,
+      "Construction outer horizontal scaffold hoops": 33,
+      "Construction outer longitudinal scaffold ribs": 24,
+      "Construction temporary annular work deck 0": 1,
+      "Construction temporary annular work deck 1": 1,
+      "Construction temporary annular work deck 2": 1,
+      "Construction temporary shield panel 0": 1,
+      "Construction temporary shield panel 1": 1,
+      "Construction temporary shield panel 10": 1,
+      "Construction temporary shield panel 11": 1,
+      "Construction temporary shield panel 2": 1,
+      "Construction temporary shield panel 3": 1,
+      "Construction temporary shield panel 4": 1,
+      "Construction temporary shield panel 5": 1,
+      "Construction temporary shield panel 6": 1,
+      "Construction temporary shield panel 7": 1,
+      "Construction temporary shield panel 8": 1,
+      "Construction temporary shield panel 9": 1,
+      "Construction temporary waist cover 0": 1,
+      "Construction temporary waist cover 1": 1,
+      "Construction temporary waist cover 2": 1,
+      "Construction temporary waist cover 3": 1,
+      "Construction carriage amber marker": 1,
+      "Construction carriage rail clamp": 1,
+      "Construction carriage service case": 1,
+      "SkyMech broad lower casing rail 0": 1,
+      "SkyMech broad lower casing rail 1": 1,
+      "SkyMech broad lower casing rail 2": 1,
+      "SkyMech broad lower casing rail 3": 1,
+      "SkyMech broad lower casing rail 4": 1,
+      "SkyMech broad lower casing rail 5": 1,
+      "SkyMech broad lower casing rail 6": 1,
+      "SkyMech broad lower casing rail 7": 1,
+      "SkyMech broad radial service casing 0": 1,
+      "SkyMech broad radial service casing 0 amber field 0": 1,
+      "SkyMech broad radial service casing 0 amber field 1": 1,
+      "SkyMech broad radial service casing 0 amber field 2": 1,
+      "SkyMech broad radial service casing 0 dark face": 1,
+      "SkyMech broad radial service casing 1": 1,
+      "SkyMech broad radial service casing 1 amber field 0": 1,
+      "SkyMech broad radial service casing 1 amber field 1": 1,
+      "SkyMech broad radial service casing 1 amber field 2": 1,
+      "SkyMech broad radial service casing 1 dark face": 1,
+      "SkyMech broad radial service casing 2": 1,
+      "SkyMech broad radial service casing 2 amber field 0": 1,
+      "SkyMech broad radial service casing 2 amber field 1": 1,
+      "SkyMech broad radial service casing 2 amber field 2": 1,
+      "SkyMech broad radial service casing 2 dark face": 1,
+      "SkyMech broad radial service casing 3": 1,
+      "SkyMech broad radial service casing 3 amber field 0": 1,
+      "SkyMech broad radial service casing 3 amber field 1": 1,
+      "SkyMech broad radial service casing 3 amber field 2": 1,
+      "SkyMech broad radial service casing 3 dark face": 1,
+      "SkyMech broad upper casing rail 0": 1,
+      "SkyMech broad upper casing rail 1": 1,
+      "SkyMech broad upper casing rail 2": 1,
+      "SkyMech broad upper casing rail 3": 1,
+      "SkyMech broad upper casing rail 4": 1,
+      "SkyMech broad upper casing rail 5": 1,
+      "SkyMech broad upper casing rail 6": 1,
+      "SkyMech broad upper casing rail 7": 1,
+      "SkyMech crown hatch": 1,
+      "SkyMech expanded axial pressure core": 1,
+      "SkyMech expanded core gold band 0": 1,
+      "SkyMech expanded core gold band 1": 1,
+      "SkyMech expanded core gold band 2": 1,
+      "SkyMech expanded equatorial collar": 1,
+      "SkyMech gold module face 0": 1,
+      "SkyMech gold module face 1": 1,
+      "SkyMech gold module face 2": 1,
+      "SkyMech gold module face 3": 1,
+      "SkyMech lower aerial": 1,
+      "SkyMech lower gold cone": 1,
+      "SkyMech lower rose rim": 1,
+      "SkyMech module face fitting 0": 1,
+      "SkyMech module face fitting 1": 1,
+      "SkyMech module face fitting 2": 1,
+      "SkyMech module face fitting 3": 1,
+      "SkyMech module gold rim 0": 1,
+      "SkyMech module gold rim 1": 1,
+      "SkyMech module gold rim 2": 1,
+      "SkyMech module gold rim 3": 1,
+      "SkyMech new axial housing lower 0": 1,
+      "SkyMech new axial housing lower 0 red service face": 1,
+      "SkyMech new axial housing lower 0 rose collar 0": 1,
+      "SkyMech new axial housing lower 0 rose collar 1": 1,
+      "SkyMech new axial housing lower 1": 1,
+      "SkyMech new axial housing lower 1 red service face": 1,
+      "SkyMech new axial housing lower 1 rose collar 0": 1,
+      "SkyMech new axial housing lower 1 rose collar 1": 1,
+      "SkyMech new axial housing lower 2": 1,
+      "SkyMech new axial housing lower 2 red service face": 1,
+      "SkyMech new axial housing lower 2 rose collar 0": 1,
+      "SkyMech new axial housing lower 2 rose collar 1": 1,
+      "SkyMech new axial housing lower 3": 1,
+      "SkyMech new axial housing lower 3 red service face": 1,
+      "SkyMech new axial housing lower 3 rose collar 0": 1,
+      "SkyMech new axial housing lower 3 rose collar 1": 1,
+      "SkyMech new axial housing upper 0": 1,
+      "SkyMech new axial housing upper 0 red service face": 1,
+      "SkyMech new axial housing upper 0 rose collar 0": 1,
+      "SkyMech new axial housing upper 0 rose collar 1": 1,
+      "SkyMech new axial housing upper 1": 1,
+      "SkyMech new axial housing upper 1 red service face": 1,
+      "SkyMech new axial housing upper 1 rose collar 0": 1,
+      "SkyMech new axial housing upper 1 rose collar 1": 1,
+      "SkyMech new axial housing upper 2": 1,
+      "SkyMech new axial housing upper 2 red service face": 1,
+      "SkyMech new axial housing upper 2 rose collar 0": 1,
+      "SkyMech new axial housing upper 2 rose collar 1": 1,
+      "SkyMech new axial housing upper 3": 1,
+      "SkyMech new axial housing upper 3 red service face": 1,
+      "SkyMech new axial housing upper 3 rose collar 0": 1,
+      "SkyMech new axial housing upper 3 rose collar 1": 1,
+      "SkyMech new broad upper window": 1,
+      "SkyMech new module concentric rim 0": 1,
+      "SkyMech new module concentric rim 1": 1,
+      "SkyMech new module concentric rim 2": 1,
+      "SkyMech new module concentric rim 3": 1,
+      "SkyMech new upper round casting 0": 1,
+      "SkyMech new upper round casting 0 rose centre": 1,
+      "SkyMech new upper round casting 1": 1,
+      "SkyMech new upper round casting 1 rose centre": 1,
+      "SkyMech new upper window field 0": 1,
+      "SkyMech new upper window field 1": 1,
+      "SkyMech new upper window field 2": 1,
+      "SkyMech radial arm 0": 1,
+      "SkyMech radial arm 1": 1,
+      "SkyMech radial arm 2": 1,
+      "SkyMech radial arm 3": 1,
+      "SkyMech rose radial module 0": 1,
+      "SkyMech rose radial module 1": 1,
+      "SkyMech rose radial module 2": 1,
+      "SkyMech rose radial module 3": 1,
+      "SkyMech upper aerial": 1,
+      "SkyMech upper gold dome": 1,
+      "SkyMech upper rose rim": 1
+    },
+    "volumes": {
+      "Construction alternating diagonal lattice": 0.07258679987981102,
+      "Construction body anchored support stays": 0.01771748757164459,
+      "Construction outer horizontal scaffold hoops": 0.10018743678580208,
+      "Construction outer longitudinal scaffold ribs": 0.1031639898535802,
+      "Construction temporary annular work deck 0": 0.08486059613253359,
+      "Construction temporary annular work deck 1": 0.11401361133072624,
+      "Construction temporary annular work deck 2": 0.08486006685221689,
+      "Construction temporary shield panel 0": 0.01652715969811445,
+      "Construction temporary shield panel 1": 0.016526598799982167,
+      "Construction temporary shield panel 10": 0.016527843990692983,
+      "Construction temporary shield panel 11": 0.016527169936501412,
+      "Construction temporary shield panel 2": 0.016527282357664864,
+      "Construction temporary shield panel 3": 0.016527292596051818,
+      "Construction temporary shield panel 4": 0.016527843990692986,
+      "Construction temporary shield panel 5": 0.01652716993650143,
+      "Construction temporary shield panel 6": 0.01652715969811447,
+      "Construction temporary shield panel 7": 0.01652659879998215,
+      "Construction temporary shield panel 8": 0.01652728235766484,
+      "Construction temporary shield panel 9": 0.01652729259605179,
+      "Construction temporary waist cover 0": 0.00957141057161247,
+      "Construction temporary waist cover 1": 0.009571410571612477,
+      "Construction temporary waist cover 2": 0.00957141057161247,
+      "Construction temporary waist cover 3": 0.009571410571612479,
+      "Construction carriage amber marker": 8.64409602640374e-05,
+      "Construction carriage rail clamp": 0.0014343489893897212,
+      "Construction carriage service case": 0.0033527490307202843,
+      "SkyMech broad lower casing rail 0": 0.006133471523165536,
+      "SkyMech broad lower casing rail 1": 0.006133390846370764,
+      "SkyMech broad lower casing rail 2": 0.00613347152316553,
+      "SkyMech broad lower casing rail 3": 0.006133390846370769,
+      "SkyMech broad lower casing rail 4": 0.006133471523165542,
+      "SkyMech broad lower casing rail 5": 0.006133390846370747,
+      "SkyMech broad lower casing rail 6": 0.006133471523165534,
+      "SkyMech broad lower casing rail 7": 0.006133390846370772,
+      "SkyMech broad radial service casing 0": 0.0813341915448594,
+      "SkyMech broad radial service casing 0 amber field 0": 0.000523693641930834,
+      "SkyMech broad radial service casing 0 amber field 1": 0.0005236936419308338,
+      "SkyMech broad radial service casing 0 amber field 2": 0.0005236936419308335,
+      "SkyMech broad radial service casing 0 dark face": 0.003242980743894047,
+      "SkyMech broad radial service casing 1": 0.0813341915448594,
+      "SkyMech broad radial service casing 1 amber field 0": 0.0005236936419308339,
+      "SkyMech broad radial service casing 1 amber field 1": 0.0005236936419308337,
+      "SkyMech broad radial service casing 1 amber field 2": 0.0005236936419308335,
+      "SkyMech broad radial service casing 1 dark face": 0.003242980743894049,
+      "SkyMech broad radial service casing 2": 0.08133419154485938,
+      "SkyMech broad radial service casing 2 amber field 0": 0.0005236936419308337,
+      "SkyMech broad radial service casing 2 amber field 1": 0.0005236936419308336,
+      "SkyMech broad radial service casing 2 amber field 2": 0.0005236936419308335,
+      "SkyMech broad radial service casing 2 dark face": 0.003242980743894048,
+      "SkyMech broad radial service casing 3": 0.0813341915448594,
+      "SkyMech broad radial service casing 3 amber field 0": 0.0005236936419308335,
+      "SkyMech broad radial service casing 3 amber field 1": 0.0005236936419308336,
+      "SkyMech broad radial service casing 3 amber field 2": 0.0005236936419308341,
+      "SkyMech broad radial service casing 3 dark face": 0.0032429807438940474,
+      "SkyMech broad upper casing rail 0": 0.005564915401505429,
+      "SkyMech broad upper casing rail 1": 0.005564941523432744,
+      "SkyMech broad upper casing rail 2": 0.005564915401505452,
+      "SkyMech broad upper casing rail 3": 0.005564941523432789,
+      "SkyMech broad upper casing rail 4": 0.0055649154015054375,
+      "SkyMech broad upper casing rail 5": 0.0055649415234327575,
+      "SkyMech broad upper casing rail 6": 0.00556491540150542,
+      "SkyMech broad upper casing rail 7": 0.005564941523432747,
+      "SkyMech crown hatch": 0.0015820329456479054,
+      "SkyMech expanded axial pressure core": 5.331540901851847,
+      "SkyMech expanded core gold band 0": 0.01994899323308231,
+      "SkyMech expanded core gold band 1": 0.01910279961810959,
+      "SkyMech expanded core gold band 2": 0.021983685598814466,
+      "SkyMech expanded equatorial collar": 0.23816272004379851,
+      "SkyMech gold module face 0": 0.02948476629416072,
+      "SkyMech gold module face 1": 0.029484766294160632,
+      "SkyMech gold module face 2": 0.029484766294160605,
+      "SkyMech gold module face 3": 0.029484766294160598,
+      "SkyMech lower aerial": 0.00011988207186656537,
+      "SkyMech lower gold cone": 0.7939711719931971,
+      "SkyMech lower rose rim": 0.026423250349277203,
+      "SkyMech module face fitting 0": 0.00030666483305781723,
+      "SkyMech module face fitting 1": 0.0003066648330578172,
+      "SkyMech module face fitting 2": 0.00030666483305781723,
+      "SkyMech module face fitting 3": 0.0003066648330578179,
+      "SkyMech module gold rim 0": 0.005893422039392267,
+      "SkyMech module gold rim 1": 0.005893422039392264,
+      "SkyMech module gold rim 2": 0.0058934220393922505,
+      "SkyMech module gold rim 3": 0.005893422039392253,
+      "SkyMech new axial housing lower 0": 0.054823045725846335,
+      "SkyMech new axial housing lower 0 red service face": 0.0025684255886062614,
+      "SkyMech new axial housing lower 0 rose collar 0": 0.0021650435165080687,
+      "SkyMech new axial housing lower 0 rose collar 1": 0.0021649925989611516,
+      "SkyMech new axial housing lower 1": 0.05482304572584678,
+      "SkyMech new axial housing lower 1 red service face": 0.0025684255886062606,
+      "SkyMech new axial housing lower 1 rose collar 0": 0.0021650435165080756,
+      "SkyMech new axial housing lower 1 rose collar 1": 0.002164992598961154,
+      "SkyMech new axial housing lower 2": 0.054823045725846155,
+      "SkyMech new axial housing lower 2 red service face": 0.002568425588606265,
+      "SkyMech new axial housing lower 2 rose collar 0": 0.00216504351650807,
+      "SkyMech new axial housing lower 2 rose collar 1": 0.0021649925989611555,
+      "SkyMech new axial housing lower 3": 0.054823045725846314,
+      "SkyMech new axial housing lower 3 red service face": 0.0025684255886062627,
+      "SkyMech new axial housing lower 3 rose collar 0": 0.0021650435165080735,
+      "SkyMech new axial housing lower 3 rose collar 1": 0.0021649925989611586,
+      "SkyMech new axial housing upper 0": 0.04312847506534694,
+      "SkyMech new axial housing upper 0 red service face": 0.0017938184341422473,
+      "SkyMech new axial housing upper 0 rose collar 0": 0.002164948440065942,
+      "SkyMech new axial housing upper 0 rose collar 1": 0.0021649529363211633,
+      "SkyMech new axial housing upper 1": 0.04312847506534685,
+      "SkyMech new axial housing upper 1 red service face": 0.0017938184341422456,
+      "SkyMech new axial housing upper 1 rose collar 0": 0.0021649484400659462,
+      "SkyMech new axial housing upper 1 rose collar 1": 0.002164952936321169,
+      "SkyMech new axial housing upper 2": 0.04312847506534668,
+      "SkyMech new axial housing upper 2 red service face": 0.0017938184341422404,
+      "SkyMech new axial housing upper 2 rose collar 0": 0.002164948440065948,
+      "SkyMech new axial housing upper 2 rose collar 1": 0.0021649529363211586,
+      "SkyMech new axial housing upper 3": 0.04312847506534685,
+      "SkyMech new axial housing upper 3 red service face": 0.0017938184341422414,
+      "SkyMech new axial housing upper 3 rose collar 0": 0.002164948440065949,
+      "SkyMech new axial housing upper 3 rose collar 1": 0.0021649529363211664,
+      "SkyMech new broad upper window": 0.002241106934232259,
+      "SkyMech new module concentric rim 0": 0.0066166807279046365,
+      "SkyMech new module concentric rim 1": 0.006616680727904621,
+      "SkyMech new module concentric rim 2": 0.006616680727904647,
+      "SkyMech new module concentric rim 3": 0.006616680727904622,
+      "SkyMech new upper round casting 0": 0.0019477419494551295,
+      "SkyMech new upper round casting 0 rose centre": 0.00019600430210795603,
+      "SkyMech new upper round casting 1": 0.0019478188546259464,
+      "SkyMech new upper round casting 1 rose centre": 0.00019600430652147785,
+      "SkyMech new upper window field 0": 0.00013048238731953434,
+      "SkyMech new upper window field 1": 0.00013049588671766945,
+      "SkyMech new upper window field 2": 0.00013050882436615947,
+      "SkyMech radial arm 0": 0.019187737309408388,
+      "SkyMech radial arm 1": 0.01918773730940839,
+      "SkyMech radial arm 2": 0.01918773730940839,
+      "SkyMech radial arm 3": 0.019187737309408398,
+      "SkyMech rose radial module 0": 0.20354064152921958,
+      "SkyMech rose radial module 1": 0.2035406415292206,
+      "SkyMech rose radial module 2": 0.2035406415292204,
+      "SkyMech rose radial module 3": 0.20354064152921963,
+      "SkyMech upper aerial": 0.0002056843002222581,
+      "SkyMech upper gold dome": 1.1107012027678096,
+      "SkyMech upper rose rim": 0.01748112344163627
+    },
+    "bounds": [
+      -2.055000066757202,
+      -2.055000066757202,
+      -3.3058507442474365,
+      2.055000066757202,
+      2.055000066757202,
+      3.3058507442474365
+    ],
+    "body_to_framework_supports": [
+      {
+        "body": [
+          0.7477818131446838,
+          0.0,
+          -0.962399959564209
+        ],
+        "framework": [
+          1.5103999376296997,
+          0.0,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          0.528761625289917,
+          0.528761625289917,
+          -0.962399959564209
+        ],
+        "framework": [
+          1.0680140256881714,
+          1.0680140256881714,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          4.578843060664014e-17,
+          0.7477818131446838,
+          -0.962399959564209
+        ],
+        "framework": [
+          9.248533051899011e-17,
+          1.5103999376296997,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          -0.528761625289917,
+          0.528761625289917,
+          -0.962399959564209
+        ],
+        "framework": [
+          -1.0680140256881714,
+          1.0680140256881714,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          -0.7477818131446838,
+          9.157686121328027e-17,
+          -0.962399959564209
+        ],
+        "framework": [
+          -1.5103999376296997,
+          1.8497066103798023e-16,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          -0.528761625289917,
+          -0.528761625289917,
+          -0.962399959564209
+        ],
+        "framework": [
+          -1.0680140256881714,
+          -1.0680140256881714,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          -1.373652918199204e-16,
+          -0.7477818131446838,
+          -0.962399959564209
+        ],
+        "framework": [
+          -2.7745596508719074e-16,
+          -1.5103999376296997,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          0.528761625289917,
+          -0.528761625289917,
+          -0.962399959564209
+        ],
+        "framework": [
+          1.0680140256881714,
+          -1.0680140256881714,
+          -1.19760000705719
+        ]
+      },
+      {
+        "body": [
+          0.7477818131446838,
+          0.0,
+          1.0019999742507935
+        ],
+        "framework": [
+          1.5103999376296997,
+          0.0,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          0.528761625289917,
+          0.528761625289917,
+          1.0019999742507935
+        ],
+        "framework": [
+          1.0680140256881714,
+          1.0680140256881714,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          4.578843060664014e-17,
+          0.7477818131446838,
+          1.0019999742507935
+        ],
+        "framework": [
+          9.248533051899011e-17,
+          1.5103999376296997,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          -0.528761625289917,
+          0.528761625289917,
+          1.0019999742507935
+        ],
+        "framework": [
+          -1.0680140256881714,
+          1.0680140256881714,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          -0.7477818131446838,
+          9.157686121328027e-17,
+          1.0019999742507935
+        ],
+        "framework": [
+          -1.5103999376296997,
+          1.8497066103798023e-16,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          -0.528761625289917,
+          -0.528761625289917,
+          1.0019999742507935
+        ],
+        "framework": [
+          -1.0680140256881714,
+          -1.0680140256881714,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          -1.373652918199204e-16,
+          -0.7477818131446838,
+          1.0019999742507935
+        ],
+        "framework": [
+          -2.7745596508719074e-16,
+          -1.5103999376296997,
+          1.1980000734329224
+        ]
+      },
+      {
+        "body": [
+          0.528761625289917,
+          -0.528761625289917,
+          1.0019999742507935
+        ],
+        "framework": [
+          1.0680140256881714,
+          -1.0680140256881714,
+          1.1980000734329224
+        ]
+      }
+    ],
+    "temporary_cover_roots": [
+      {
+        "name": "Construction temporary shield panel 0",
+        "point": [
+          1.9277081489562988,
+          0.0019277087412774563,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 1",
+        "point": [
+          1.282629370689392,
+          0.7422375679016113,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 2",
+        "point": [
+          0.9621846079826355,
+          1.670408010482788,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 3",
+        "point": [
+          -0.0014819088391959667,
+          1.4819083213806152,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 4",
+        "point": [
+          -0.9655234813690186,
+          1.668480396270752,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 5",
+        "point": [
+          -1.2841112613677979,
+          0.7396708130836487,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 6",
+        "point": [
+          -1.9277081489562988,
+          -0.0019277087412774563,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 7",
+        "point": [
+          -1.282629370689392,
+          -0.7422375679016113,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 8",
+        "point": [
+          -0.9621846079826355,
+          -1.670408010482788,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 9",
+        "point": [
+          0.0014819088391959667,
+          -1.4819083213806152,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 10",
+        "point": [
+          0.9655234813690186,
+          -1.668480396270752,
+          0.4230000078678131
+        ]
+      },
+      {
+        "name": "Construction temporary shield panel 11",
+        "point": [
+          1.2841112613677979,
+          -0.7396708130836487,
+          -1.2569999694824219
+        ]
+      },
+      {
+        "name": "Construction temporary waist cover 0",
+        "point": [
+          1.9070333242416382,
+          0.5130325555801392,
+          -0.2070000022649765
+        ]
+      },
+      {
+        "name": "Construction temporary waist cover 1",
+        "point": [
+          -0.5130325555801392,
+          1.9070333242416382,
+          -0.2070000022649765
+        ]
+      },
+      {
+        "name": "Construction temporary waist cover 2",
+        "point": [
+          -1.9070333242416382,
+          -0.5130325555801392,
+          -0.2070000022649765
+        ]
+      },
+      {
+        "name": "Construction temporary waist cover 3",
+        "point": [
+          0.5130325555801392,
+          -1.9070333242416382,
+          -0.2070000022649765
+        ]
+      }
+    ],
+    "physical_scaffold_members": {
+      "Construction outer horizontal scaffold hoops": 33,
+      "Construction outer longitudinal scaffold ribs": 24,
+      "Construction alternating diagonal lattice": 768,
+      "Construction body anchored support stays": 16
+    }
+  },
+  "maximum_native_imported_position_error": 1.4757416693100822e-06,
+  "finished_body_geometry_uv_normals_preserved": true,
+  "finished_helpers_preserved": true,
+  "sampled_frames": [
+    1,
+    16,
+    31,
+    46,
+    61,
+    76,
+    91,
+    106,
+    121,
+    136,
+    151,
+    166,
+    181
+  ],
+  "static_mesh_names": [
+    "Construction alternating diagonal lattice",
+    "Construction body anchored support stays",
+    "Construction outer horizontal scaffold hoops",
+    "Construction outer longitudinal scaffold ribs",
+    "Construction temporary annular work deck 0",
+    "Construction temporary annular work deck 1",
+    "Construction temporary annular work deck 2",
+    "Construction temporary shield panel 0",
+    "Construction temporary shield panel 1",
+    "Construction temporary shield panel 10",
+    "Construction temporary shield panel 11",
+    "Construction temporary shield panel 2",
+    "Construction temporary shield panel 3",
+    "Construction temporary shield panel 4",
+    "Construction temporary shield panel 5",
+    "Construction temporary shield panel 6",
+    "Construction temporary shield panel 7",
+    "Construction temporary shield panel 8",
+    "Construction temporary shield panel 9",
+    "Construction temporary waist cover 0",
+    "Construction temporary waist cover 1",
+    "Construction temporary waist cover 2",
+    "Construction temporary waist cover 3",
+    "SkyMech broad lower casing rail 0",
+    "SkyMech broad lower casing rail 1",
+    "SkyMech broad lower casing rail 2",
+    "SkyMech broad lower casing rail 3",
+    "SkyMech broad lower casing rail 4",
+    "SkyMech broad lower casing rail 5",
+    "SkyMech broad lower casing rail 6",
+    "SkyMech broad lower casing rail 7",
+    "SkyMech broad radial service casing 0",
+    "SkyMech broad radial service casing 0 amber field 0",
+    "SkyMech broad radial service casing 0 amber field 1",
+    "SkyMech broad radial service casing 0 amber field 2",
+    "SkyMech broad radial service casing 0 dark face",
+    "SkyMech broad radial service casing 1",
+    "SkyMech broad radial service casing 1 amber field 0",
+    "SkyMech broad radial service casing 1 amber field 1",
+    "SkyMech broad radial service casing 1 amber field 2",
+    "SkyMech broad radial service casing 1 dark face",
+    "SkyMech broad radial service casing 2",
+    "SkyMech broad radial service casing 2 amber field 0",
+    "SkyMech broad radial service casing 2 amber field 1",
+    "SkyMech broad radial service casing 2 amber field 2",
+    "SkyMech broad radial service casing 2 dark face",
+    "SkyMech broad radial service casing 3",
+    "SkyMech broad radial service casing 3 amber field 0",
+    "SkyMech broad radial service casing 3 amber field 1",
+    "SkyMech broad radial service casing 3 amber field 2",
+    "SkyMech broad radial service casing 3 dark face",
+    "SkyMech broad upper casing rail 0",
+    "SkyMech broad upper casing rail 1",
+    "SkyMech broad upper casing rail 2",
+    "SkyMech broad upper casing rail 3",
+    "SkyMech broad upper casing rail 4",
+    "SkyMech broad upper casing rail 5",
+    "SkyMech broad upper casing rail 6",
+    "SkyMech broad upper casing rail 7",
+    "SkyMech crown hatch",
+    "SkyMech expanded axial pressure core",
+    "SkyMech expanded core gold band 0",
+    "SkyMech expanded core gold band 1",
+    "SkyMech expanded core gold band 2",
+    "SkyMech expanded equatorial collar",
+    "SkyMech gold module face 0",
+    "SkyMech gold module face 1",
+    "SkyMech gold module face 2",
+    "SkyMech gold module face 3",
+    "SkyMech lower aerial",
+    "SkyMech lower gold cone",
+    "SkyMech lower rose rim",
+    "SkyMech module face fitting 0",
+    "SkyMech module face fitting 1",
+    "SkyMech module face fitting 2",
+    "SkyMech module face fitting 3",
+    "SkyMech module gold rim 0",
+    "SkyMech module gold rim 1",
+    "SkyMech module gold rim 2",
+    "SkyMech module gold rim 3",
+    "SkyMech new axial housing lower 0",
+    "SkyMech new axial housing lower 0 red service face",
+    "SkyMech new axial housing lower 0 rose collar 0",
+    "SkyMech new axial housing lower 0 rose collar 1",
+    "SkyMech new axial housing lower 1",
+    "SkyMech new axial housing lower 1 red service face",
+    "SkyMech new axial housing lower 1 rose collar 0",
+    "SkyMech new axial housing lower 1 rose collar 1",
+    "SkyMech new axial housing lower 2",
+    "SkyMech new axial housing lower 2 red service face",
+    "SkyMech new axial housing lower 2 rose collar 0",
+    "SkyMech new axial housing lower 2 rose collar 1",
+    "SkyMech new axial housing lower 3",
+    "SkyMech new axial housing lower 3 red service face",
+    "SkyMech new axial housing lower 3 rose collar 0",
+    "SkyMech new axial housing lower 3 rose collar 1",
+    "SkyMech new axial housing upper 0",
+    "SkyMech new axial housing upper 0 red service face",
+    "SkyMech new axial housing upper 0 rose collar 0",
+    "SkyMech new axial housing upper 0 rose collar 1",
+    "SkyMech new axial housing upper 1",
+    "SkyMech new axial housing upper 1 red service face",
+    "SkyMech new axial housing upper 1 rose collar 0",
+    "SkyMech new axial housing upper 1 rose collar 1",
+    "SkyMech new axial housing upper 2",
+    "SkyMech new axial housing upper 2 red service face",
+    "SkyMech new axial housing upper 2 rose collar 0",
+    "SkyMech new axial housing upper 2 rose collar 1",
+    "SkyMech new axial housing upper 3",
+    "SkyMech new axial housing upper 3 red service face",
+    "SkyMech new axial housing upper 3 rose collar 0",
+    "SkyMech new axial housing upper 3 rose collar 1",
+    "SkyMech new broad upper window",
+    "SkyMech new module concentric rim 0",
+    "SkyMech new module concentric rim 1",
+    "SkyMech new module concentric rim 2",
+    "SkyMech new module concentric rim 3",
+    "SkyMech new upper round casting 0",
+    "SkyMech new upper round casting 0 rose centre",
+    "SkyMech new upper round casting 1",
+    "SkyMech new upper round casting 1 rose centre",
+    "SkyMech new upper window field 0",
+    "SkyMech new upper window field 1",
+    "SkyMech new upper window field 2",
+    "SkyMech radial arm 0",
+    "SkyMech radial arm 1",
+    "SkyMech radial arm 2",
+    "SkyMech radial arm 3",
+    "SkyMech rose radial module 0",
+    "SkyMech rose radial module 1",
+    "SkyMech rose radial module 2",
+    "SkyMech rose radial module 3",
+    "SkyMech upper aerial",
+    "SkyMech upper gold dome",
+    "SkyMech upper rose rim"
+  ],
+  "moving_mesh_names": [
+    "Construction carriage amber marker",
+    "Construction carriage rail clamp",
+    "Construction carriage service case"
+  ],
+  "native_carriage_positions": {
+    "1": [
+      0.0,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "16": [
+      0.02812500111758709,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "31": [
+      0.09000000357627869,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "46": [
+      0.15187500417232513,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "61": [
+      0.18000000715255737,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "76": [
+      0.13312500715255737,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "91": [
+      0.030000001192092896,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "106": [
+      -0.07312500476837158,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "121": [
+      -0.11999999731779099,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "136": [
+      -0.10124999284744263,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "151": [
+      -0.05999999865889549,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "166": [
+      -0.018750004470348358,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "181": [
+      0.0,
+      -1.9283636808395386,
+      0.41999998688697815
+    ]
+  },
+  "imported_carriage_positions": {
+    "1": [
+      0.0,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "16": [
+      0.02812500111758709,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "31": [
+      0.09000000357627869,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "46": [
+      0.15187500417232513,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "61": [
+      0.18000000715255737,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "76": [
+      0.13312500715255737,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "91": [
+      0.030000001192092896,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "106": [
+      -0.07312500476837158,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "121": [
+      -0.11999999731779099,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "136": [
+      -0.10124999284744263,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "151": [
+      -0.05999999865889549,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "166": [
+      -0.018750004470348358,
+      -1.9283636808395386,
+      0.41999998688697815
+    ],
+    "181": [
+      0.0,
+      -1.9283636808395386,
+      0.41999998688697815
+    ]
+  },
+  "authored_clips": [
+    {
+      "index": 0,
+      "name": "ConstructionActivity",
+      "start": 0.03333333333333333,
+      "end": 6.033333333333333,
+      "duration": 6.0
+    }
+  ],
+  "renders": {
+    "front-quarter": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.009250862440239871,
+      "native_sha256": "8230176dec1b3877a116775ff6a7aef6015182dc62ad9867ea4308423894ddd6",
+      "imported_sha256": "cefac10ff60dd3c215ebdb8cf743a396eb3564914082a2c74b5016a8e37e482c"
+    },
+    "front": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.013858776655979455,
+      "native_sha256": "765d903bcba9a76a26324987af79e6e053c1fdd39c7e1bf5f12ce149c40afa89",
+      "imported_sha256": "0246eeb82b22371ded1aaf2b932c2f01e5a6e1281ee7b078c371955b42cb90b2"
+    },
+    "rear-quarter": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.009776069218787597,
+      "native_sha256": "695bd3973ad6c7677f34ff1aff0aff2fb54abe1c92e3021ab817851a1111760d",
+      "imported_sha256": "9102c4e319bff7d7d996070db777e5bde2299a3cd9d1168eb0738086b1f080f8"
+    },
+    "work-detail": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.004585255983329262,
+      "native_sha256": "9c0acb6b4e6ca3ad0780fee155de51ef3377c894d33503b2fba939b7ac5cc323",
+      "imported_sha256": "7f5fca0af2856cd885a2bb757493692bbc77560b49d36be32279ab88dfb17eac"
+    },
+    "work-detail-moved": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.004737963072329876,
+      "native_sha256": "661b59c33d5db3e6c86bf5cff95f0ea0a83a1976c9d33dcf8fb720e4d6f375be",
+      "imported_sha256": "dafc08a3a775080d1ee639aaab55054ef79872d32658cafb7874b4015692370c"
+    }
+  },
+  "timing_provenance": "Six-second subtle service movement authored for construction variant; not recovered legacy timing",
+  "acceptance": "Actual native/imported construction and activity checks; final game calibration open"
+}

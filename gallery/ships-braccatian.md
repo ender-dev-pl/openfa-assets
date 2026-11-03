@@ -69,3 +69,11 @@
 ![SkyMech](../gallery/media/docs/assets/reconstruction/braccatian-refined/ships/skymech/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.glb)
+
+**Additional iteration — orbital-station-construction-refinement**
+
+![SkyMech](../gallery/media/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/model.glb)
+
+[Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/animation-00.webm)
