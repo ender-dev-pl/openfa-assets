@@ -176,7 +176,28 @@
       "key": "AC3C",
       "name": "Orbital Shipyard",
       "culture": "achaean",
-      "status": "pending-source-review-and-runtime-verification"
+      "status": "runtime-verified",
+      "finished": {
+        "legacy_sprite_frame": 0,
+        "blend": "sources/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/model.blend",
+        "glb": "sources/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/model.glb",
+        "blend_sha256": "18f41ee51f560682f52e1b00033d8159f14216fab514e1f741c0c81d257f163d",
+        "glb_sha256": "57343821f059721ba7ba93b0ced7a9807a5edb91206da2aeda71100d0b2a0bde",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/validation.json"
+      },
+      "construction": {
+        "legacy_sprite_frame": 1,
+        "blend": "sources/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/model.blend",
+        "glb": "sources/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/model.glb",
+        "blend_sha256": "5b412c564eb22d174e6adef2042c7f0601c091095380fb1e2ee4fe804c93d562",
+        "glb_sha256": "74fdbefdf594a0575f1b8dda06242c1e5a4daaa6b61d519715237f1772d6d895",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/validation.json",
+        "animation": "ConstructionActivity"
+      },
+      "generator": "sources/tools/blender/refine_achaean_station_states.py",
+      "verifier": "sources/tools/blender/verify_achaean_station_states.py",
+      "evidence": "sources/docs/reconstruction/models/achaean-station-evidence.json",
+      "state_policy": "Descriptor 1 is the warm tapered construction sleeve. Preserve original +X convention/alignment and use common finished normalization; the 1.18 authored vertical fit is already embedded in both states."
     }
   ],
   "shared_scale_reference": "finished",
