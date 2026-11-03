@@ -1,0 +1,545 @@
+{
+  "issue": 190,
+  "id": "openfa:ship/braccatian/skymech",
+  "key": "BR4C",
+  "name": "SkyMech",
+  "culture": "braccatian",
+  "stage": "ship-visible-equipment-refinement",
+  "source_study": "sources/docs/assets/reconstruction/ships/braccatian/skymech/model.blend",
+  "source_blend_sha256": "c59306041f31bdfd905899ab3cadb7b04f79db4f15f95d298ccd0fb7a249cf58",
+  "blend_sha256": "02ec8e3abd639e84a42f4fea7b91f64be8ee301aac9a44843220a66d9c4a4942",
+  "glb_sha256": "d3ef64b31c6759b547df3725b08ab3a7ba60132caf1ff7d9dec185afa08cb5c0",
+  "generator_sha256": "39252af4d6053a67a78e8e931706cca76d5fe87214993a8d855db931d29510cc",
+  "dependency_sha256": {
+    "refine_braccatian_pithoi.py": "3a1d91dd5c2be046be73a54b96517f88a00e64397e47ceff9bf4a1190a4f0861",
+    "braccatian_widowmaker_parts.py": "9f1b04a535b8765ee98af91857f2685202e1309e5d2f2dc9551c3cc7495f397a",
+    "braccatian_skymech_parts.py": "cf60d660ffef16a4772859ab3dbac7a3b3782c5c952d6af67ffc5a1c94806c9f",
+    "manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+    "manufactured_surface_mounts.py": "dd05a5c80253bd6afcaeb4aa75f9d71e50ffaf54ef3c83221a59bd84b748346d",
+    "build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "refine_rigellian_missiles.py": "93b0bd4881160f8d931f41b9ed26cb47bff1d457ccbd0754992ecd9567d31f67"
+  },
+  "texture_sha256": {
+    "sources/materials/reconstruction/braccatian-refined/ships/skymech/amber-field-colour.png": "154982597a13d35df1114428a00d214ffe452175167848600ae365b7db23a140",
+    "sources/materials/reconstruction/braccatian-refined/ships/skymech/amber-field-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/braccatian-refined/ships/skymech/gold-fitting-colour.png": "6ecaf9081fc6275cf56feeea2b50df76c7544edd5f0e5c7a1d1f76ac29099f53",
+    "sources/materials/reconstruction/braccatian-refined/ships/skymech/gold-fitting-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/braccatian-refined/ships/skymech/recess-colour.png": "7a50918e789fe75cd42e63dd98cb15b67e1f47b1451488364221e0ad10594e79",
+    "sources/materials/reconstruction/braccatian-refined/ships/skymech/recess-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/braccatian-refined/ships/skymech/rose-field-colour.png": "d0965e4c458ea4542a903629fdb2e144ff56cc55cfe9fd2a1649c7a1cb7e4de4",
+    "sources/materials/reconstruction/braccatian-refined/ships/skymech/rose-field-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/braccatian-refined/ships/skymech/rose-fitting-colour.png": "fcfb01b4f8be4eb3fdf2e0f3c93b08b8377e33f5030feb876fe82dcd774ec1e4",
+    "sources/materials/reconstruction/braccatian-refined/ships/skymech/rose-fitting-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37"
+  },
+  "lore_sha256": "fa1f16371e6bccb2f6c5b5412a6bbb70af76e1319809c9bc606dcc7fec012aca",
+  "reference_sha256": "3c6a5fb3329fb063496edf2708322312c1e3869eb4c9abb4a88a278b96f88885",
+  "functional_sha256": "fcadf5ea6dc8d0e96180ff9922cef07bd32f264f52e0a684bf87dc4680a0b663",
+  "mesh_objects": 112,
+  "removed_objects": [
+    "SkyMech upper dark panel",
+    "SkyMech upper amber tile 0",
+    "SkyMech upper amber tile 1",
+    "SkyMech upper amber tile 2",
+    "SkyMech upper amber tile 3",
+    "SkyMech upper amber tile 4",
+    "SkyMech dark axial core",
+    "SkyMech rose equatorial collar",
+    "SkyMech upper column rib 0",
+    "SkyMech upper column rib 1",
+    "SkyMech upper column rib 2",
+    "SkyMech upper column rib 3",
+    "SkyMech upper column rib 4",
+    "SkyMech upper column rib 5",
+    "SkyMech upper column rib 6",
+    "SkyMech upper column rib 7",
+    "SkyMech lower column rib 0",
+    "SkyMech lower column rib 1",
+    "SkyMech lower column rib 2",
+    "SkyMech lower column rib 3",
+    "SkyMech lower column rib 4",
+    "SkyMech lower column rib 5",
+    "SkyMech lower column rib 6",
+    "SkyMech lower column rib 7",
+    "SkyMech core gold band 0",
+    "SkyMech core gold band 1",
+    "SkyMech core gold band 2",
+    "SkyMech arm service housing 0",
+    "SkyMech arm dark inset 0",
+    "SkyMech arm amber tile 0 0",
+    "SkyMech arm amber tile 0 1",
+    "SkyMech arm amber tile 0 2",
+    "SkyMech arm service housing 1",
+    "SkyMech arm dark inset 1",
+    "SkyMech arm amber tile 1 0",
+    "SkyMech arm amber tile 1 1",
+    "SkyMech arm amber tile 1 2",
+    "SkyMech arm service housing 2",
+    "SkyMech arm dark inset 2",
+    "SkyMech arm amber tile 2 0",
+    "SkyMech arm amber tile 2 1",
+    "SkyMech arm amber tile 2 2",
+    "SkyMech arm service housing 3",
+    "SkyMech arm dark inset 3",
+    "SkyMech arm amber tile 3 0",
+    "SkyMech arm amber tile 3 1",
+    "SkyMech arm amber tile 3 2"
+  ],
+  "added_objects": [
+    "SkyMech expanded axial pressure core",
+    "SkyMech broad upper casing rail 0",
+    "SkyMech broad upper casing rail 1",
+    "SkyMech broad upper casing rail 2",
+    "SkyMech broad upper casing rail 3",
+    "SkyMech broad upper casing rail 4",
+    "SkyMech broad upper casing rail 5",
+    "SkyMech broad upper casing rail 6",
+    "SkyMech broad upper casing rail 7",
+    "SkyMech broad lower casing rail 0",
+    "SkyMech broad lower casing rail 1",
+    "SkyMech broad lower casing rail 2",
+    "SkyMech broad lower casing rail 3",
+    "SkyMech broad lower casing rail 4",
+    "SkyMech broad lower casing rail 5",
+    "SkyMech broad lower casing rail 6",
+    "SkyMech broad lower casing rail 7",
+    "SkyMech expanded core gold band 0",
+    "SkyMech expanded core gold band 1",
+    "SkyMech expanded core gold band 2",
+    "SkyMech expanded equatorial collar",
+    "SkyMech broad radial service casing 0",
+    "SkyMech broad radial service casing 0 dark face",
+    "SkyMech broad radial service casing 0 amber field 0",
+    "SkyMech broad radial service casing 0 amber field 1",
+    "SkyMech broad radial service casing 0 amber field 2",
+    "SkyMech broad radial service casing 1",
+    "SkyMech broad radial service casing 1 dark face",
+    "SkyMech broad radial service casing 1 amber field 0",
+    "SkyMech broad radial service casing 1 amber field 1",
+    "SkyMech broad radial service casing 1 amber field 2",
+    "SkyMech broad radial service casing 2",
+    "SkyMech broad radial service casing 2 dark face",
+    "SkyMech broad radial service casing 2 amber field 0",
+    "SkyMech broad radial service casing 2 amber field 1",
+    "SkyMech broad radial service casing 2 amber field 2",
+    "SkyMech broad radial service casing 3",
+    "SkyMech broad radial service casing 3 dark face",
+    "SkyMech broad radial service casing 3 amber field 0",
+    "SkyMech broad radial service casing 3 amber field 1",
+    "SkyMech broad radial service casing 3 amber field 2",
+    "SkyMech new axial housing upper 0",
+    "SkyMech new axial housing upper 0 rose collar 0",
+    "SkyMech new axial housing upper 0 rose collar 1",
+    "SkyMech new axial housing upper 0 red service face",
+    "SkyMech new axial housing upper 1",
+    "SkyMech new axial housing upper 1 rose collar 0",
+    "SkyMech new axial housing upper 1 rose collar 1",
+    "SkyMech new axial housing upper 1 red service face",
+    "SkyMech new axial housing upper 2",
+    "SkyMech new axial housing upper 2 rose collar 0",
+    "SkyMech new axial housing upper 2 rose collar 1",
+    "SkyMech new axial housing upper 2 red service face",
+    "SkyMech new axial housing upper 3",
+    "SkyMech new axial housing upper 3 rose collar 0",
+    "SkyMech new axial housing upper 3 rose collar 1",
+    "SkyMech new axial housing upper 3 red service face",
+    "SkyMech new axial housing lower 0",
+    "SkyMech new axial housing lower 0 rose collar 0",
+    "SkyMech new axial housing lower 0 rose collar 1",
+    "SkyMech new axial housing lower 0 red service face",
+    "SkyMech new axial housing lower 1",
+    "SkyMech new axial housing lower 1 rose collar 0",
+    "SkyMech new axial housing lower 1 rose collar 1",
+    "SkyMech new axial housing lower 1 red service face",
+    "SkyMech new axial housing lower 2",
+    "SkyMech new axial housing lower 2 rose collar 0",
+    "SkyMech new axial housing lower 2 rose collar 1",
+    "SkyMech new axial housing lower 2 red service face",
+    "SkyMech new axial housing lower 3",
+    "SkyMech new axial housing lower 3 rose collar 0",
+    "SkyMech new axial housing lower 3 rose collar 1",
+    "SkyMech new axial housing lower 3 red service face",
+    "SkyMech new broad upper window",
+    "SkyMech new upper window field 0",
+    "SkyMech new upper window field 1",
+    "SkyMech new upper window field 2",
+    "SkyMech new upper round casting 0",
+    "SkyMech new upper round casting 0 rose centre",
+    "SkyMech new upper round casting 1",
+    "SkyMech new upper round casting 1 rose centre",
+    "SkyMech new module concentric rim 0",
+    "SkyMech new module concentric rim 1",
+    "SkyMech new module concentric rim 2",
+    "SkyMech new module concentric rim 3"
+  ],
+  "attachments": [
+    {
+      "name": "SkyMech expanded axial pressure core",
+      "owner": "SkyMech upper gold dome"
+    },
+    {
+      "name": "SkyMech broad upper casing rail 0",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad upper casing rail 1",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad upper casing rail 2",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad upper casing rail 3",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad upper casing rail 4",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad upper casing rail 5",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad upper casing rail 6",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad upper casing rail 7",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad lower casing rail 0",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad lower casing rail 1",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad lower casing rail 2",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad lower casing rail 3",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad lower casing rail 4",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad lower casing rail 5",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad lower casing rail 6",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad lower casing rail 7",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech expanded core gold band 0",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech expanded core gold band 1",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech expanded core gold band 2",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech expanded equatorial collar",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech broad radial service casing 0",
+      "owner": "SkyMech radial arm 0"
+    },
+    {
+      "name": "SkyMech broad radial service casing 0 dark face",
+      "owner": "SkyMech broad radial service casing 0"
+    },
+    {
+      "name": "SkyMech broad radial service casing 0 amber field 0",
+      "owner": "SkyMech broad radial service casing 0 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 0 amber field 1",
+      "owner": "SkyMech broad radial service casing 0 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 0 amber field 2",
+      "owner": "SkyMech broad radial service casing 0 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 1",
+      "owner": "SkyMech radial arm 1"
+    },
+    {
+      "name": "SkyMech broad radial service casing 1 dark face",
+      "owner": "SkyMech broad radial service casing 1"
+    },
+    {
+      "name": "SkyMech broad radial service casing 1 amber field 0",
+      "owner": "SkyMech broad radial service casing 1 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 1 amber field 1",
+      "owner": "SkyMech broad radial service casing 1 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 1 amber field 2",
+      "owner": "SkyMech broad radial service casing 1 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 2",
+      "owner": "SkyMech radial arm 2"
+    },
+    {
+      "name": "SkyMech broad radial service casing 2 dark face",
+      "owner": "SkyMech broad radial service casing 2"
+    },
+    {
+      "name": "SkyMech broad radial service casing 2 amber field 0",
+      "owner": "SkyMech broad radial service casing 2 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 2 amber field 1",
+      "owner": "SkyMech broad radial service casing 2 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 2 amber field 2",
+      "owner": "SkyMech broad radial service casing 2 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 3",
+      "owner": "SkyMech radial arm 3"
+    },
+    {
+      "name": "SkyMech broad radial service casing 3 dark face",
+      "owner": "SkyMech broad radial service casing 3"
+    },
+    {
+      "name": "SkyMech broad radial service casing 3 amber field 0",
+      "owner": "SkyMech broad radial service casing 3 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 3 amber field 1",
+      "owner": "SkyMech broad radial service casing 3 dark face"
+    },
+    {
+      "name": "SkyMech broad radial service casing 3 amber field 2",
+      "owner": "SkyMech broad radial service casing 3 dark face"
+    },
+    {
+      "name": "SkyMech new axial housing upper 0",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech new axial housing upper 0 rose collar 0",
+      "owner": "SkyMech new axial housing upper 0"
+    },
+    {
+      "name": "SkyMech new axial housing upper 0 rose collar 1",
+      "owner": "SkyMech new axial housing upper 0"
+    },
+    {
+      "name": "SkyMech new axial housing upper 0 red service face",
+      "owner": "SkyMech new axial housing upper 0"
+    },
+    {
+      "name": "SkyMech new axial housing upper 1",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech new axial housing upper 1 rose collar 0",
+      "owner": "SkyMech new axial housing upper 1"
+    },
+    {
+      "name": "SkyMech new axial housing upper 1 rose collar 1",
+      "owner": "SkyMech new axial housing upper 1"
+    },
+    {
+      "name": "SkyMech new axial housing upper 1 red service face",
+      "owner": "SkyMech new axial housing upper 1"
+    },
+    {
+      "name": "SkyMech new axial housing upper 2",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech new axial housing upper 2 rose collar 0",
+      "owner": "SkyMech new axial housing upper 2"
+    },
+    {
+      "name": "SkyMech new axial housing upper 2 rose collar 1",
+      "owner": "SkyMech new axial housing upper 2"
+    },
+    {
+      "name": "SkyMech new axial housing upper 2 red service face",
+      "owner": "SkyMech new axial housing upper 2"
+    },
+    {
+      "name": "SkyMech new axial housing upper 3",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech new axial housing upper 3 rose collar 0",
+      "owner": "SkyMech new axial housing upper 3"
+    },
+    {
+      "name": "SkyMech new axial housing upper 3 rose collar 1",
+      "owner": "SkyMech new axial housing upper 3"
+    },
+    {
+      "name": "SkyMech new axial housing upper 3 red service face",
+      "owner": "SkyMech new axial housing upper 3"
+    },
+    {
+      "name": "SkyMech new axial housing lower 0",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech new axial housing lower 0 rose collar 0",
+      "owner": "SkyMech new axial housing lower 0"
+    },
+    {
+      "name": "SkyMech new axial housing lower 0 rose collar 1",
+      "owner": "SkyMech new axial housing lower 0"
+    },
+    {
+      "name": "SkyMech new axial housing lower 0 red service face",
+      "owner": "SkyMech new axial housing lower 0"
+    },
+    {
+      "name": "SkyMech new axial housing lower 1",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech new axial housing lower 1 rose collar 0",
+      "owner": "SkyMech new axial housing lower 1"
+    },
+    {
+      "name": "SkyMech new axial housing lower 1 rose collar 1",
+      "owner": "SkyMech new axial housing lower 1"
+    },
+    {
+      "name": "SkyMech new axial housing lower 1 red service face",
+      "owner": "SkyMech new axial housing lower 1"
+    },
+    {
+      "name": "SkyMech new axial housing lower 2",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech new axial housing lower 2 rose collar 0",
+      "owner": "SkyMech new axial housing lower 2"
+    },
+    {
+      "name": "SkyMech new axial housing lower 2 rose collar 1",
+      "owner": "SkyMech new axial housing lower 2"
+    },
+    {
+      "name": "SkyMech new axial housing lower 2 red service face",
+      "owner": "SkyMech new axial housing lower 2"
+    },
+    {
+      "name": "SkyMech new axial housing lower 3",
+      "owner": "SkyMech expanded axial pressure core"
+    },
+    {
+      "name": "SkyMech new axial housing lower 3 rose collar 0",
+      "owner": "SkyMech new axial housing lower 3"
+    },
+    {
+      "name": "SkyMech new axial housing lower 3 rose collar 1",
+      "owner": "SkyMech new axial housing lower 3"
+    },
+    {
+      "name": "SkyMech new axial housing lower 3 red service face",
+      "owner": "SkyMech new axial housing lower 3"
+    },
+    {
+      "name": "SkyMech new broad upper window",
+      "owner": "SkyMech upper gold dome"
+    },
+    {
+      "name": "SkyMech new upper window field 0",
+      "owner": "SkyMech new broad upper window"
+    },
+    {
+      "name": "SkyMech new upper window field 1",
+      "owner": "SkyMech new broad upper window"
+    },
+    {
+      "name": "SkyMech new upper window field 2",
+      "owner": "SkyMech new broad upper window"
+    },
+    {
+      "name": "SkyMech new upper round casting 0",
+      "owner": "SkyMech upper gold dome"
+    },
+    {
+      "name": "SkyMech new upper round casting 0 rose centre",
+      "owner": "SkyMech new upper round casting 0"
+    },
+    {
+      "name": "SkyMech new upper round casting 1",
+      "owner": "SkyMech upper gold dome"
+    },
+    {
+      "name": "SkyMech new upper round casting 1 rose centre",
+      "owner": "SkyMech new upper round casting 1"
+    },
+    {
+      "name": "SkyMech new module concentric rim 0",
+      "owner": "SkyMech gold module face 0"
+    },
+    {
+      "name": "SkyMech new module concentric rim 1",
+      "owner": "SkyMech gold module face 1"
+    },
+    {
+      "name": "SkyMech new module concentric rim 2",
+      "owner": "SkyMech gold module face 2"
+    },
+    {
+      "name": "SkyMech new module concentric rim 3",
+      "owner": "SkyMech gold module face 3"
+    }
+  ],
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "front",
+    "side",
+    "top",
+    "underside",
+    "equipment-detail"
+  ],
+  "equipment_slots": {
+    "declared": 5,
+    "calibrated_3d_mounts": 0
+  },
+  "blender": "4.5.15 LTS",
+  "observed": [
+    "All available paletted states/headings reviewed: 32 WidowMaker, 16 populated HeartsBlood and empty odds, 2 fixed SkyMech states",
+    "Craft forward rose fields are broader than the earlier hairline accents; user identifies SkyMech as an orbital station with a much broader detail-filled core reaching nearly to peripheral hemispheres",
+    "SkyMech replaces the thin core/ribs/service casings with a broad two-chamber body, substantial axial equipment and radial casings, plus dome fittings/window and concentric module faces",
+    "Functional text binds ship names only; exact equipment mechanisms and alloys remain unconfirmed"
+  ],
+  "inferred": [
+    "Field widths, hidden repetitions, service module identities and exact casting depths; inherited fine construction remains authored",
+    "SkyMech wireframe-like state is not evidence of deployment motion; no operating clip added"
+  ],
+  "geometry_policy": "Retain all original meshes/materials except explicitly named replaced fields or station core/ribs/casings/window; preserve alignment helpers and prior files",
+  "acceptance": "Source-led refinement; final artistic/game calibration open"
+}

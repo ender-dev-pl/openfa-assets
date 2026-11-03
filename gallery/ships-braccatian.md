@@ -22,6 +22,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/ships/braccatian/widowmaker/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/braccatian/widowmaker/model.glb)
 
+**Additional iteration — ship-visible-equipment-refinement**
+
+![WidowMaker](../gallery/media/docs/assets/reconstruction/braccatian-refined/ships/widowmaker/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/ships/widowmaker/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/ships/widowmaker/model.glb)
+
 ## HeartsBlood
 
 `openfa:ship/braccatian/heartsblood`
@@ -31,6 +37,12 @@
 ![HeartsBlood](../gallery/media/docs/assets/reconstruction/ships/braccatian/heartsblood/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/ships/braccatian/heartsblood/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/braccatian/heartsblood/model.glb)
+
+**Additional iteration — ship-visible-equipment-refinement**
+
+![HeartsBlood](../gallery/media/docs/assets/reconstruction/braccatian-refined/ships/heartsblood/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/ships/heartsblood/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/ships/heartsblood/model.glb)
 
 ## Morning Glory
 
@@ -51,3 +63,9 @@
 ![SkyMech](../gallery/media/docs/assets/reconstruction/ships/braccatian/skymech/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/ships/braccatian/skymech/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/braccatian/skymech/model.glb)
+
+**Additional iteration — ship-visible-equipment-refinement**
+
+![SkyMech](../gallery/media/docs/assets/reconstruction/braccatian-refined/ships/skymech/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.glb)
