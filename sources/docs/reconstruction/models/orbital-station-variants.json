@@ -62,7 +62,30 @@
       "key": "RI4C",
       "name": "Observatory",
       "culture": "rigellian",
-      "status": "pending-source-review-and-runtime-verification"
+      "status": "runtime-verified",
+      "finished": {
+        "legacy_sprite_frame": 0,
+        "blend": "sources/docs/assets/reconstruction/rigellian-refined/observatory/model.blend",
+        "glb": "sources/docs/assets/reconstruction/rigellian-refined/observatory/model.glb",
+        "blend_sha256": "07d3100fa793cb9d5eb92a82c3ed98cd5d104c0685dfca116dbc41895dffb165",
+        "glb_sha256": "e5d8b9530f36d5a12e4877264b6df8a8d36674c2daf34f0387cec7f9e56f40c2",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/finished-review/validation.json",
+        "decision": "retained-refined-after-focused-review",
+        "reason": "Existing refined belt, chambers, equipment and fork already recover source-visible major construction; fresh native/GLB/material/emission/helper/render checks pass."
+      },
+      "construction": {
+        "legacy_sprite_frame": 1,
+        "blend": "sources/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/model.blend",
+        "glb": "sources/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/model.glb",
+        "blend_sha256": "9c7d0c9a34df9321e30db2e5ec83c5a13ded681f70e212790337973cbfd71847",
+        "glb_sha256": "f57eab711e2b4539999ed58b0375748dce011a58679ecb39efad259a05a0cc38",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/validation.json",
+        "animation": "ConstructionActivity"
+      },
+      "generator": "sources/tools/blender/build_observatory_construction.py",
+      "verifier": "sources/tools/blender/verify_observatory_station_pair.py",
+      "evidence": "sources/docs/reconstruction/models/observatory-construction-evidence.json",
+      "state_policy": "Second descriptor is construction, superseding the unresolved second-state note in historical finished metadata."
     },
     {
       "id": "openfa:ship/mikotaj/na-xanth",
@@ -92,5 +115,8 @@
       "culture": "achaean",
       "status": "pending-source-review-and-runtime-verification"
     }
-  ]
+  ],
+  "shared_scale_reference": "finished",
+  "shared_placement_root": "PlacementRoot",
+  "placement_policy": "Use the finished placement/normalization for both states; construction bounds include scaffold and outboard work equipment."
 }
