@@ -12,6 +12,7 @@ CASES['br06']=('refine_braccatian_longhouse.py','verify_refined_braccatian_longh
 CASES.update({key:('refine_braccatian_public_facilities.py','verify_refined_braccatian_public_facilities.py') for key in ['br07','br09','br10']})
 CASES.update({key:('refine_braccatian_clan_complexes.py','verify_refined_braccatian_clan_complexes.py') for key in ['br01','br02','br05']})
 CASES.update({key:('refine_braccatian_work_facilities.py','verify_refined_braccatian_work_facilities.py') for key in ['br08','br17','br21']})
+CASES.update({key:('refine_braccatian_launch_facilities.py','verify_refined_braccatian_launch_facilities.py') for key in ['br11','br12','br19']})
 
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()

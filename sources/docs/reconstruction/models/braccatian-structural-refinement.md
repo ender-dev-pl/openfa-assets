@@ -396,3 +396,66 @@ full terminal framing; whole views check complete silhouettes. Earlier studies
 and all authored clips remain preserved. Seventeen new refined definitions are
 now covered in the full programme; the remaining 21 decisions and final audit
 are still required.
+
+## BR11 Launch Site, BR12 Eyes-in-the-Sky and BR19 Battery
+
+All 41 paletted catalogue phases and all surface descriptors were inspected per
+case. BR11 descriptor 1 is a separate green state; descriptors 2-15 show the
+pink opening structure and its large gold face fitting. Descriptor 0/17 shadows
+are not architectural surfaces. The catalogue is a reveal/highlight film; it
+does not recover exact launch timing or hidden hinge engineering. Functional
+payloads 934/73895, 935/74041 and 942/75297 were read with exact byte/hash checks:
+Launch Site has little security, Eyes-in-the-Sky is a satellite silo with an
+ambivalent surveillance role, and Battery is the useful but culturally
+ambivalent missile silo. No extra defensive or symbolic equipment is invented.
+
+BR11 retains the four historical hatch solids, their controls, vertical shaft
+walls and recessed floor. A large conformal gold rim/dark backing/central fitting
+is parented to its actual +X moving hatch leaf; it moves with the surface rather
+than remaining over the bore. A rose square surround and independent worn
+colour/roughness finish replace the pale generic presentation and old flat scuff
+overlays. The earlier model and its preview remain unchanged/selectable. Exact
+fitting details, inner finish and dimensions remain authored. The previously
+authored 112-degree hinge engineering and two-second cycle are retained as
+inferences, not newly claimed as recovered original motion.
+
+BR12 and BR19 replace the generic broad torus and unrelated small front pod
+with tapered rose shells, hollow foundations and large gold face fittings.
+BR12 has clipped foundation corners and a straighter conical shell. BR19 has
+the source-visible broad square base, rounded lower shoulder and low extended
+front connection/fitting. Its base is visibly wider relative to the body,
+consistent with its original larger footprint. Original floor geometry and aperture radii
+remain unchanged. Inner liners retain the clear radius; pale/red throat pixels
+are interpreted as material regions on the wall, not added solid objects in
+the launch path. Exact component identity is unknown. Static-open source states
+remain static: no opening mechanism or idle loop is introduced. New shells have
+shallow casting dents and independently authored readable colour/roughness wear.
+
+Actual native reopen and independent GLB import passed for 10/7/9 closed,
+positive, consistently wound model meshes. Preview-only holdout terrain is
+excluded from the GLB and structural tests; it masks the underground BR11 shaft
+only in presentation. Complete marked collections, original roots/footprints,
+parenting and 6/8/8 effective packed material arrays were checked. Closed-pose
+casing/fitting graphs have 16/8/12 contacts. The historical floor has a tiny
+radial seating gap: its geometry is verified against the source rather than
+inventing unseen supports simply to satisfy a connectivity check.
+
+Nine pose samples (1/8/16/24/31/38/46/54/61) preserve the named original geometry
+with zero measured position difference. Native NLA strips and complete keyframe
+coordinates/handles/interpolation are equal to the original. Independent GLB
+pose drift is below 1.476e-6; clip identities/start/end/duration equal the previous
+GLBs exactly. BR11 has four retained moving leaves and three new moving fitting
+parts. Both fixed-open studies have no moving meshes/clips. Each open bore was
+ray-tested at 49 positions through 95% of its radius in both formats: maximum
+hits are the retained floors (~-1.15 for BR11 and ~0.05 for BR12/19).
+
+Ten paired whole/front/equipment/open renders have silhouette IoU 1.0 and maximum
+foreground RGB mean difference below 0.0012/255. Actual paired views and paletted
+source/before/after comparisons were inspected. The actual new BR11 GLB clip was
+rendered through the existing gallery renderer into 48 VP9 WebM frames at 24 fps,
+with 25 distinct poses and unchanged two-second timing. The encoded video was
+decoded back to all 48 frames and its opening/closing timeline inspected. Its
+manifest binds the real GLB, Blend, renderer and encoded video hashes. This adds
+one playable refined study while preserving all earlier animation previews.
+Twenty refined definitions are now covered; three directional weapon buildings,
+five ships, ten missiles and the final all-model audit/handoff remain required.

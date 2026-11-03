@@ -180,6 +180,14 @@
 
 [Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/braccatian/br11/animation-00.webm)
 
+**Additional iteration — launch-casing-refinement**
+
+![Launch Site](../gallery/media/docs/assets/reconstruction/braccatian-refined/br11/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br11/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br11/model.glb)
+
+[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/braccatian-refined/br11/animation-00.webm)
+
 ## Eyes-in-the-Sky
 
 `openfa:building/legacy/074`
@@ -195,6 +203,12 @@
 ![Eyes-in-the-Sky](../gallery/media/docs/assets/reconstruction/launch-facilities/braccatian/br12/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br12/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br12/model.glb)
+
+**Additional iteration — launch-casing-refinement**
+
+![Eyes-in-the-Sky](../gallery/media/docs/assets/reconstruction/braccatian-refined/br12/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br12/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br12/model.glb)
 
 ## Eyes-and-Ears
 
@@ -303,6 +317,12 @@
 ![Battery](../gallery/media/docs/assets/reconstruction/launch-facilities/braccatian/br19/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br19/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br19/model.glb)
+
+**Additional iteration — launch-casing-refinement**
+
+![Battery](../gallery/media/docs/assets/reconstruction/braccatian-refined/br19/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br19/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br19/model.glb)
 
 ## Turret
 

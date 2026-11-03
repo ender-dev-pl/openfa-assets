@@ -1,0 +1,94 @@
+{
+  "issue": 190,
+  "id": "openfa:building/legacy/081",
+  "key": "BR19",
+  "name": "Battery",
+  "culture": "braccatian",
+  "stage": "launch-casing-refinement",
+  "source_study": "sources/docs/assets/reconstruction/launch-facilities/braccatian/br19/model.blend",
+  "source_blend_sha256": "92dbcd80e11ea6ec05d78f1f291c37934bcb15a6c4e6617dc2b61efecd91a84b",
+  "blend_sha256": "905a8b3c612298985522047c4a7b4d63ed873c2a09fe30f9a2f35913e5723756",
+  "glb_sha256": "d6cf86406ce0d5cfd57f0df20fed8381c3137426b3e8cc2964b65fa7ce90bbc8",
+  "generator_sha256": "03ea5dafde7f56c1b946906a733d845d6732f17349ca1eef2a4951e66fe69465",
+  "dependency_sha256": {
+    "refine_braccatian_pithoi.py": "3a1d91dd5c2be046be73a54b96517f88a00e64397e47ceff9bf4a1190a4f0861",
+    "refine_braccatian_vessels.py": "07f48bac479ce3c944fb227e74f28b358457faa90ba24e4c23f4a37a08d07cea",
+    "refine_braccatian_public_facilities.py": "20b58058daf9152e8aa809b8f0e55c3c087cdcd5c3aa3a6680f0c87c93502035",
+    "build_launch_facilities.py": "37c443e3138d9a00652dd3097605909e8c2854d7c0dac0a620f11d5b3d6d6025",
+    "launch_facility_recipes.py": "364952b026b37b94566e7244bee8621bd4f6e2bd690491345454024fb3150f47",
+    "build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+    "refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "refine_rigellian_missiles.py": "93b0bd4881160f8d931f41b9ed26cb47bff1d457ccbd0754992ecd9567d31f67"
+  },
+  "texture_sha256": {
+    "sources/materials/reconstruction/braccatian-refined/br19/gold-casting-colour.png": "8d3efc86edcc4d5fc69fc7a1a97953721b8057ccc4e61211446166350f296349",
+    "sources/materials/reconstruction/braccatian-refined/br19/gold-casting-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/braccatian-refined/br19/recess-colour.png": "ab5c323bc05d887b73380500ab4448fa89ea40e74048a95a79fc974d6c6fc362",
+    "sources/materials/reconstruction/braccatian-refined/br19/recess-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/braccatian-refined/br19/red-field-colour.png": "2dd3cb5b0c0503d69ed1c080aec113f2f69199e5b80ef1b74a63074d283cff81",
+    "sources/materials/reconstruction/braccatian-refined/br19/red-field-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/braccatian-refined/br19/rose-casing-colour.png": "3b92c8222b773f2622687c14f0e3f4e60a6bac717b8b2b819c75a77fd9fa71ff",
+    "sources/materials/reconstruction/braccatian-refined/br19/rose-casing-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37"
+  },
+  "lore_sha256": "fa1f16371e6bccb2f6c5b5412a6bbb70af76e1319809c9bc606dcc7fec012aca",
+  "reference_sha256": "3c6a5fb3329fb063496edf2708322312c1e3869eb4c9abb4a88a278b96f88885",
+  "functional_sha256": "fcadf5ea6dc8d0e96180ff9922cef07bd32f264f52e0a684bf87dc4680a0b663",
+  "retained_mesh_names": [
+    "Recessed launch well floor"
+  ],
+  "removed_placeholder_or_old_scuff_names": [
+    "Permanently exposed silo throat",
+    "Permanently exposed silo throat edge scuff",
+    "Permanently exposed silo throat edge scuff.001",
+    "Permanently exposed silo throat edge scuff.002",
+    "Recessed launch well floor edge scuff",
+    "Recessed launch well floor edge scuff.001",
+    "Silo flared bunker",
+    "Silo lid seam",
+    "Bulb shaped chamber",
+    "Tower crown",
+    "Inset service window",
+    "Inset service window.001",
+    "Inset service window.002",
+    "Inset service window.003",
+    "Inset service window.004",
+    "Inset service window.005"
+  ],
+  "footprint": [
+    3,
+    3
+  ],
+  "aperture_radius": 0.61,
+  "floor_height": 0.05,
+  "terrain_cutout_fraction": 0,
+  "fixed_open": true,
+  "launch_animation": {
+    "kind": "iris",
+    "clip": null,
+    "closed_frame": 1,
+    "open_frame": 31,
+    "end_frame": 61
+  },
+  "observed": [
+    "All 41 paletted catalogue phases and all surface descriptors inspected; BR11 descriptors 2-15 show pink opening structure, descriptor 1 is a different green state",
+    "BR11 pink pyramid with large gold face fitting; BR12 tapered casing/front fitting; BR19 rounded tapered casing/square base/front foundation connection",
+    "Original functional payloads read/hash checked; no invented extra security or symbolic machinery"
+  ],
+  "inferred": [
+    "Exact casing profiles, face fitting details, hidden supports and alloy identities; existing authored hinge engineering/timing remains inferred"
+  ],
+  "geometry_policy": "Retain named floor/shaft/leaves and prior studies; replace generic outer casing/old flat scuff overlays and author new source-visible fittings",
+  "mesh_objects": 9,
+  "views": [
+    "front-quarter",
+    "front",
+    "side",
+    "rear-quarter",
+    "equipment-detail"
+  ],
+  "blender": "4.5.15 LTS",
+  "acceptance": "Actual source-led refinement; final artistic/game calibration open"
+}
