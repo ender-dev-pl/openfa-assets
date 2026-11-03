@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "issue": 192,
+  "selection": "Explicit finished/construction state; never latest-study default",
+  "construction_state_provenance": "User identifies second fixed sprite descriptor as station under construction",
+  "records": [
+    {
+      "id": "openfa:ship/braccatian/skymech",
+      "key": "BR4C",
+      "name": "SkyMech",
+      "culture": "braccatian",
+      "status": "runtime-verified",
+      "finished": {
+        "legacy_sprite_frame": 0,
+        "blend": "sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.blend",
+        "glb": "sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.glb",
+        "blend_sha256": "02ec8e3abd639e84a42f4fea7b91f64be8ee301aac9a44843220a66d9c4a4942",
+        "glb_sha256": "d3ef64b31c6759b547df3725b08ab3a7ba60132caf1ff7d9dec185afa08cb5c0",
+        "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/ships/skymech/validation.json"
+      },
+      "construction": {
+        "legacy_sprite_frame": 1,
+        "blend": "sources/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/model.blend",
+        "glb": "sources/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/model.glb",
+        "blend_sha256": "fdc609c0c0e9adc95a61d6f44f59626ecb0db3c85fa2fd8e4c07f705026dbdcf",
+        "glb_sha256": "f7cee670a9402e71130d3023c3ab329327c6c60d5c2b269a155f3fb769c7a171",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/validation.json",
+        "animation": "ConstructionActivity"
+      },
+      "generator": "sources/tools/blender/build_skymech_construction.py",
+      "verifier": "sources/tools/blender/verify_skymech_construction.py"
+    },
+    {
+      "id": "openfa:space-dock",
+      "key": "PS7C",
+      "name": "Space Dock",
+      "culture": "terran",
+      "status": "pending-source-review-and-runtime-verification"
+    },
+    {
+      "id": "openfa:ship/rigellian/observatory",
+      "key": "RI4C",
+      "name": "Observatory",
+      "culture": "rigellian",
+      "status": "pending-source-review-and-runtime-verification"
+    },
+    {
+      "id": "openfa:ship/mikotaj/na-xanth",
+      "key": "MK4C",
+      "name": "Na-Xanth",
+      "culture": "mikotaj",
+      "status": "pending-source-review-and-runtime-verification"
+    },
+    {
+      "id": "openfa:ship/artemian/geostationary-construction",
+      "key": "AR5C",
+      "name": "Geostationary Construction",
+      "culture": "artemian",
+      "status": "pending-source-review-and-runtime-verification"
+    },
+    {
+      "id": "openfa:ship/mauna/orbital-construction-area",
+      "key": "MN5C",
+      "name": "Orbital Construction Area",
+      "culture": "mauna",
+      "status": "pending-source-review-and-runtime-verification"
+    },
+    {
+      "id": "openfa:ship/achaean/orbital-shipyard",
+      "key": "AC3C",
+      "name": "Orbital Shipyard",
+      "culture": "achaean",
+      "status": "pending-source-review-and-runtime-verification"
+    }
+  ]
+}
