@@ -41,3 +41,17 @@
 ![Orbital Shipyard](../gallery/media/docs/assets/reconstruction/ships/achaean/orbital-shipyard/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/ships/achaean/orbital-shipyard/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/achaean/orbital-shipyard/model.glb)
+
+**Additional iteration — orbital-station-structural-refinement**
+
+![Orbital Shipyard](../gallery/media/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/model.glb)
+
+**Additional iteration — orbital-station-construction-refinement**
+
+![Orbital Shipyard](../gallery/media/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/model.glb)
+
+[Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/animation-00.webm)
