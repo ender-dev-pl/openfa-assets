@@ -459,3 +459,67 @@ manifest binds the real GLB, Blend, renderer and encoded video hashes. This adds
 one playable refined study while preserving all earlier animation previews.
 Twenty refined definitions are now covered; three directional weapon buildings,
 five ships, ten missiles and the final all-model audit/handoff remain required.
+
+## BR18 Anti-Battery, BR20 Turret and BR23 Fire Power
+
+All eighteen paletted surface descriptors and all 41 full catalogue phases were
+inspected per case. The sixteen head layers were also composed over base layer
+one using their stored descriptor offsets; shadow layer zero was excluded from
+the architectural comparison. A first cropped catalogue contact sheet omitted
+parts of the bodies and was replaced by a full-frame sheet before review.
+Catalogue phases reveal/highlight the same object; they do not establish a
+firing sequence. The established directional convention is a stationary base
+plus descriptors 2-17. The retained model-local zero angle remains -Y; exact
+original heading registration is a separate game-integration concern.
+
+Exact functional payloads at offsets 75182, 75552 and 76103 were reread and their
+hashes checked: Anti-Battery is an anti-missile pod, Turret targets enemy ships,
+and Fire Power is an accurate plasma turret equivalent. Culture context does
+not establish an alloy or justify adding symbolic machinery. The Sci-Tek audit
+binds related anti-missile/photon/plasma subjects to PB examples, not BR-specific
+construction or firing motion.
+
+The generic blue foundations, globular pivots and conventional gold tubes are
+replaced in separate studies by rose domed bodies/narrow necks, external gold
+feet and shaped directional casings. BR18 has a single tapered rose emitter.
+BR20 has three separated tapered fingers, visible together in the more frontal
+source headings, plus blue foot caps. BR23 has one long gold emitter and red
+foot caps; the old two-barrel geometry was unsupported by the source. Exact
+cross-sections, hidden rear surfaces and four/six repeated radial foot counts
+remain authored. Shallow casing dents and independent colour/roughness wear
+retain the readability of the large forms. No bore internals or firing effects
+are invented from ambiguous tip pixels.
+
+The original StaticBase and DirectionalHead controls and native heading action
+are retained while all old geometry remains unchanged in the earlier study.
+An identity PlacementRoot adds the original catalogue footprint to the complete
+new collection. The authored heading-preview action is a directional demo, not
+a claimed idle loop; its exported clip name is the historical generic Animation.
+Actual native reopen and independent GLB import pass for 10/17/10 positive,
+closed, consistently wound meshes. Complete marked collections and original
+footprints are checked. All 13/22/13 sampled physical contacts form connected
+assemblies; actual radial rays check the broad dome/narrow neck, and both gaps
+between BR20's three distal fingers are ray-tested. Each head stays seated in
+its bearing at all sixteen headings. Four/six/four radial feet and their exposed
+colour regions are checked without claiming those hidden counts are recovered.
+
+The complete original native heading action (including handles/interpolation),
+controller position and rotation mode are equal. Independent imported geometry,
+parents and materials match at all seventeen frames (sixteen headings plus wrap).
+Static-base geometry remains static; every head part moves. Exported clip names,
+start/end and one-second duration equal the earlier GLBs. Maximum imported
+position error is below 1.433e-6. Four/six/six effective packed material arrays
+match in both formats and retain independent colour/roughness variation.
+
+Twelve actual native/imported whole/front/equipment/opposite-heading render pairs
+have silhouette IoU 1.0 and foreground RGB mean difference below 0.0029/255.
+Actual pairs, all sixteen refined views and paletted source/before/after
+comparisons were inspected. Each actual exported clip was rendered into 24 VP9
+frames, decoded back to all 24 images and its motion timeline inspected; each
+has 23 distinct poses and preserved one-second timing. Manifests bind actual
+GLB, native file, stable renderer and encoded video hashes. The earlier clips
+remain intact; this adds three selectable animated studies, not firing loops.
+
+All 23 building definitions now have separate verified refinements. The full
+38-definition goal still requires five ship decisions, ten missile decisions
+and the final all-model audit/handoff.
