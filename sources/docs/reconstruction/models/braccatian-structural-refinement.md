@@ -520,6 +520,6 @@ has 23 distinct poses and preserved one-second timing. Manifests bind actual
 GLB, native file, stable renderer and encoded video hashes. The earlier clips
 remain intact; this adds three selectable animated studies, not firing loops.
 
-All 23 building definitions now have separate verified refinements. The full
-38-definition goal still requires five ship decisions, ten missile decisions
-and the final all-model audit/handoff.
+All 23 building definitions have separate verified refinements. The five ship
+and ten missile decisions are now complete; see braccatian-refining-completion.md
+and its full 38-model source/runtime/preservation audit.

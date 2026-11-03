@@ -25,7 +25,7 @@ def save(path,data):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--model',choices=CASES,required=True);key=parser.parse_args().model
-    code,name,modified=CASES[key];relative=Path('docs/assets/reconstruction/braccatian-refined/ships')/key
+    code,display_name,modified=CASES[key];relative=Path('docs/assets/reconstruction/braccatian-refined/ships')/key
     source=ROOT/'sources'/relative if modified else ROOT/'sources/docs/assets/reconstruction/ships/braccatian'/key
     media=ROOT/'gallery/media'/relative if modified else ROOT/'gallery/media/docs/assets/reconstruction/braccatian-refined/ship-retention'/key
     meta=json.loads((source/'model.json').read_text());report=json.loads((media/'validation.json').read_text());model_id='openfa:ship/braccatian/'+key
@@ -51,7 +51,7 @@ def main():
     evidence={name:sha(ROOT/'sources/docs/reconstruction/models'/name) for name in ['braccatian-refining-baseline.json','braccatian-lore-evidence.json','functional-text-index.json','braccatian-scitek-evidence.json']}
     ledger=json.loads(ledger_path.read_text()) if ledger_path.exists() else dict(issue=190,culture='braccatian',scope='All five ships, including unchanged models',evidence_sha256=evidence,records=[])
     assert ledger['evidence_sha256']==evidence,'Review evidence changed'
-    entry=dict(id=model_id,key=code,name=name,decision=report['decision'],reason=REASONS[key],model=(source/'model.blend').relative_to(ROOT).as_posix(),
+    entry=dict(id=model_id,key=code,name=display_name,decision=report['decision'],reason=REASONS[key],model=(source/'model.blend').relative_to(ROOT).as_posix(),
       blend_sha256=report['blend_sha256'],glb_sha256=report['glb_sha256'],validation=(media/'validation.json').relative_to(ROOT).as_posix(),validation_sha256=sha(media/'validation.json'))
     existing=[r for r in ledger['records'] if r['id']==model_id];assert not existing or existing==[entry],'Accepted decision changed; publish a separate reviewed revision'
     if not existing:ledger['records'].append(entry)

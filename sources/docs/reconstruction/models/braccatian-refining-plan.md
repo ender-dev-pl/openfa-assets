@@ -95,3 +95,7 @@ SHA. Final audit must cover all 38 decisions, earlier model preservation and
 gallery clip integrity. Notify the authorized game-integration chat with exact
 committed paths. Final artistic acceptance, hidden construction and gameplay
 calibration remain separate; do not edit the active game/scaffold checkout.
+
+## Completed asset programme
+
+The full 38-definition programme and seven-culture station extension are complete. Current decisions, exact delivery paths, source/runtime proof, preserved studies and remaining authored/integration limits are in `braccatian-refining-completion.md` and `braccatian-refining-completion.json`. Initial targets and baseline elsewhere in this plan remain historical evidence.

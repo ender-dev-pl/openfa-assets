@@ -100,3 +100,7 @@ native/GLB/animation/gallery validation and be handed to the authorized main
 integration chat when ready. The original Braccatian programme still requires
 ten missile decisions and the final all-model audit; its ship-state requirement
 also remains open until the BR4C construction model is verified.
+
+## Completed follow-up
+
+All seven station pairs, including the expanded BR4C construction model, were subsequently delivered and audited in #192. All ten Braccatian missile decisions are complete. `braccatian-refining-completion.md` and its JSON provide the final full-scope proof; the follow-up requirements above describe this earlier ship milestone. Canonical ship display names are repaired without changing any model or runtime report.
