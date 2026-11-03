@@ -1,5 +1,7 @@
 # Blender UI kit
 
+[Complete legacy-referenced icon and oval-button set](../sources/ui/legacy-icon-set/README.md) — 111 records, including every original HUD icon.
+
 Tracking: [#176](https://github.com/ender-dev-pl/openfa-assets/issues/176),
 integrated by [game #1124](https://github.com/ender-dev-pl/ed-openfa-game/issues/1124).
 
@@ -59,3 +61,24 @@ and the Sci-Tek oval badge. They preserve the existing kit and remain an uninteg
 visual study. [Source, reference mapping and verification](../sources/ui/legacy-icon-study/README.md).
 
 ![New legacy-referenced controls](media/ui/legacy-icon-study/authored-contact.png)
+
+
+## Complete legacy-referenced icon set
+
+111 authored records cover every original ICONS.256 HUD frame, all auxiliary
+control/scroll motifs, player-colour markers and the Sci-Tek badge. Each has
+transparent standalone icons and complete oval buttons, five interaction states
+and native/8x resolutions. Blank oval chrome and an explicit original-frame map
+are included. The earlier five-control study is preserved.
+
+![All standalone HUD icons](media/ui/legacy-icon-set/gameplay-icons.png)
+
+![All oval HUD buttons](media/ui/legacy-icon-set/gameplay-buttons.png)
+
+[Native-size preview](media/ui/legacy-icon-set/native-contact.png) ·
+[Interaction states](media/ui/legacy-icon-set/interaction-states.png) ·
+[Sources, reference mapping and verification](../sources/ui/legacy-icon-set/README.md).
+
+Blender source and independent GLB renders match all 121 group silhouettes at
+IoU 1.0. A separate saved-Blend runtime check also passes. This is a complete
+asset delivery, with game package integration still separate.
