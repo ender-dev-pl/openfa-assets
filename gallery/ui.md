@@ -49,3 +49,13 @@ native/imported silhouette IoU is 1.0 (125,550 occupied pixels on each side);
 The game publishes reviewed renders through `tools/Import-BlenderUi.py`, preserving
 its resource IDs, dimensions, states and native/tiled view contracts. Runtime
 requires no Blender installation or sibling asset checkout.
+
+
+## Legacy-referenced HUD study
+
+Five new samples reproduce the motifs from original ICONS.256/BUTTONS.256 files:
+missile with arrow, two-ship fleet, coin with accounting bars, wrench with diamond,
+and the Sci-Tek oval badge. They preserve the existing kit and remain an unintegrated
+visual study. [Source, reference mapping and verification](../sources/ui/legacy-icon-study/README.md).
+
+![New legacy-referenced controls](media/ui/legacy-icon-study/authored-contact.png)
