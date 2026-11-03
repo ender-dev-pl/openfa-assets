@@ -82,6 +82,20 @@
 
 [Blend](../sources/docs/assets/reconstruction/ships/terran/space-dock/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/space-dock/model.glb)
 
+**Additional iteration — orbital-station-structural-refinement**
+
+![Space Dock](../gallery/media/docs/assets/reconstruction/orbital-station-refined/terran/space-dock/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/terran/space-dock/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/terran/space-dock/model.glb)
+
+**Additional iteration — orbital-station-construction-refinement**
+
+![Space Dock](../gallery/media/docs/assets/reconstruction/orbital-station-construction/terran/space-dock/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/terran/space-dock/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/terran/space-dock/model.glb)
+
+[Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/terran/space-dock/animation-00.webm)
+
 ## Command Cruiser
 
 `openfa:command-cruiser`

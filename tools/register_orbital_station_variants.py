@@ -39,6 +39,27 @@ def main():
                 assert state[kind+'_sha256'] == meta[kind+'_sha256'] == report[kind+'_sha256'] == sha(source.with_suffix('.'+kind))
             assert report['maximum_native_imported_position_error'] < .0001
             if variant == 'finished':
+                previous = [s for s in row['available_studies'] if s['blend'] == state['blend'].removeprefix('sources/')]
+                if not previous:
+                    assert report['retained_geometry_uv_normals_preserved'] and report['finished_helpers_preserved']
+                    assert report['verifier_sha256'] == sha(ROOT/pair['verifier'])
+                    assert report['generator_sha256'] == meta['generator_sha256'] == sha(ROOT/pair['generator'])
+                    for name, digest in report['verifier_dependencies_sha256'].items():
+                        assert sha(ROOT/'sources/tools/blender'/name) == digest
+                    for name, digest in meta['dependency_sha256'].items():
+                        assert sha(ROOT/'sources/tools/blender'/name) == digest
+                    for name, digest in meta['texture_sha256'].items():
+                        assert sha(ROOT/name) == digest
+                    for side in ['native', 'imported']:
+                        assert report[side+'_structure']['positive_closed_meshes'] == report[side+'_mesh_count']
+                    for view, result in report['renders'].items():
+                        assert result['native_sha256'] == sha(report_path.parent/(view+'.png'))
+                        assert result['imported_sha256'] == sha(report_path.parent/('imported-'+view+'.png'))
+                    assert not animation_previews(state['blend'], state['glb'], report_path.parent)
+                    row['available_studies'].append(dict(stage=meta['stage'], blend=state['blend'].removeprefix('sources/'), present=True,
+                                                        sha256=meta['blend_sha256'], final_visual_acceptance='not-established'))
+                else:
+                    assert len(previous)==1 and previous[0]['sha256']==state['blend_sha256']
                 continue
             assert report['finished_body_geometry_uv_normals_preserved'] and report['finished_helpers_preserved']
             for side in ['native', 'imported']:
@@ -74,10 +95,13 @@ def main():
         if pair['status'] != 'runtime-verified':
             continue
         paths += [ROOT/pair['generator'], ROOT/pair['verifier']]
-        paths += list((ROOT/pair['construction']['blend']).parent.iterdir())
-        paths += list((ROOT/pair['construction']['validation']).parent.rglob('*'))
-        meta = json.loads((ROOT/pair['construction']['blend']).with_suffix('.json').read_text())
-        paths += [ROOT/p for p in meta['texture_sha256']]
+        if pair.get('evidence'):
+            paths.append(ROOT/pair['evidence'])
+        for variant in ['finished','construction']:
+            paths += list((ROOT/pair[variant]['blend']).parent.iterdir())
+            paths += list((ROOT/pair[variant]['validation']).parent.rglob('*'))
+            meta = json.loads((ROOT/pair[variant]['blend']).with_suffix('.json').read_text())
+            paths += [ROOT/p for p in meta['texture_sha256']]
     for path in sorted(set(paths)):
         if not path.is_file():
             continue
