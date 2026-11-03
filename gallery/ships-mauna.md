@@ -61,3 +61,17 @@
 ![Orbital Construction Area](../gallery/media/docs/assets/reconstruction/ships/mauna/orbital-construction-area/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/ships/mauna/orbital-construction-area/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mauna/orbital-construction-area/model.glb)
+
+**Additional iteration — orbital-station-structural-refinement**
+
+![Orbital Construction Area](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/model.glb)
+
+**Additional iteration — orbital-station-construction-refinement**
+
+![Orbital Construction Area](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/model.glb)
+
+[Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/animation-00.webm)
