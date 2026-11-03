@@ -51,3 +51,17 @@
 ![Na-Xanth](../gallery/media/docs/assets/reconstruction/ships/mikotaj/na-xanth/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/ships/mikotaj/na-xanth/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mikotaj/na-xanth/model.glb)
+
+**Additional iteration — orbital-station-structural-refinement**
+
+![Na-Xanth](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/model.glb)
+
+**Additional iteration — orbital-station-construction-refinement**
+
+![Na-Xanth](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/model.glb)
+
+[Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/animation-00.webm)

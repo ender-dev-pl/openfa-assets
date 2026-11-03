@@ -1,0 +1,418 @@
+{
+  "issue": 192,
+  "id": "openfa:ship/mikotaj/na-xanth",
+  "name": "Na-Xanth",
+  "culture": "mikotaj",
+  "variant": "finished",
+  "legacy_sprite_frame": 0,
+  "stage": "orbital-station-structural-refinement",
+  "source_study": "sources/docs/assets/reconstruction/ships/mikotaj/na-xanth/model.blend",
+  "source_blend_sha256": "c2b1949e711d4ceeea8875e0b2456cdb97337d384be34d8cb99207ecbafdd3d7",
+  "source_glb_sha256": "09c7abcaee8ade03ca0f0e0d08ab6e3359791c9164c8000bb12f887c94ca43c2",
+  "blend_sha256": "9d600ed2190ba00f4b981fba7c92bcef36515ea482cb4fa7f5c7771584f2e43a",
+  "glb_sha256": "0a5a3d9b9476f1245723500491079b4214f788050c6ded58c3f4a3e2c6f0fcb2",
+  "generator_sha256": "8f4d60c413db5db05251964898a6a0498c8f24b11698def9ae42e0cf55f2ec08",
+  "dependency_sha256": {
+    "build_skymech_construction.py": "f18fbd96dad5c3280b3ef4231c91cf36692f070ea538da1a165bc476223f9b7a",
+    "refine_braccatian_pithoi.py": "3a1d91dd5c2be046be73a54b96517f88a00e64397e47ceff9bf4a1190a4f0861",
+    "mikotaj_na_xanth_parts.py": "967f68b567f29255b8bca46ba976e87ec2409140d86dc8d732091e23fd0c92cc",
+    "build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+    "refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "refine_rigellian_missiles.py": "93b0bd4881160f8d931f41b9ed26cb47bff1d457ccbd0754992ecd9567d31f67"
+  },
+  "texture_sha256": {
+    "sources/materials/reconstruction/orbital-station-refined/mikotaj/na-xanth/amber-colour.png": "fbec16b6a7419fba4800a90aaedbaa8480a7bf8365a2cbaf467c78c062618f74",
+    "sources/materials/reconstruction/orbital-station-refined/mikotaj/na-xanth/amber-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/orbital-station-refined/mikotaj/na-xanth/brace-colour.png": "1d819ff38c2f7232ddb03e4c9fa7d19b226cb2af5e029bfddb868b1fef977c98",
+    "sources/materials/reconstruction/orbital-station-refined/mikotaj/na-xanth/brace-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/orbital-station-refined/mikotaj/na-xanth/copper-colour.png": "ad1386ee41a1e79f33abe971afdeb6317b54c27640e3546fd05161be828961f7",
+    "sources/materials/reconstruction/orbital-station-refined/mikotaj/na-xanth/copper-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/orbital-station-refined/mikotaj/na-xanth/recess-colour.png": "39004dabf4a8e3b8e19b259aeb90572b97b4f575930cafb9d9d2677e83579cc7",
+    "sources/materials/reconstruction/orbital-station-refined/mikotaj/na-xanth/recess-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37"
+  },
+  "evidence_sha256": "a0ac9c6276575e10e7fd813b6b3cbd8bc9b9964914e9336a41180a73d55e5fea",
+  "preserved_mesh_names": [
+    "Na-Xanth axial disc 0 -1",
+    "Na-Xanth axial disc 0 1",
+    "Na-Xanth axial disc 1 -1",
+    "Na-Xanth axial disc 1 1",
+    "Na-Xanth axial disc 2 -1",
+    "Na-Xanth axial disc 2 1",
+    "Na-Xanth axial stem 0 -1",
+    "Na-Xanth axial stem 0 1",
+    "Na-Xanth axial stem 1 -1",
+    "Na-Xanth axial stem 1 1",
+    "Na-Xanth axial stem 2 -1",
+    "Na-Xanth axial stem 2 1",
+    "Na-Xanth green chamber 0",
+    "Na-Xanth green chamber 1",
+    "Na-Xanth green chamber 2",
+    "Na-Xanth panel fastener 0 0 0",
+    "Na-Xanth panel fastener 0 0 1",
+    "Na-Xanth panel fastener 0 1 0",
+    "Na-Xanth panel fastener 0 1 1",
+    "Na-Xanth panel fastener 1 0 0",
+    "Na-Xanth panel fastener 1 0 1",
+    "Na-Xanth panel fastener 1 1 0",
+    "Na-Xanth panel fastener 1 1 1",
+    "Na-Xanth panel fastener 2 0 0",
+    "Na-Xanth panel fastener 2 0 1",
+    "Na-Xanth panel fastener 2 1 0",
+    "Na-Xanth panel fastener 2 1 1",
+    "Na-Xanth perimeter disc 0 0",
+    "Na-Xanth perimeter disc 0 1",
+    "Na-Xanth perimeter disc 0 2",
+    "Na-Xanth perimeter disc 0 3",
+    "Na-Xanth perimeter disc 0 4",
+    "Na-Xanth perimeter disc 0 5",
+    "Na-Xanth perimeter disc 0 6",
+    "Na-Xanth perimeter disc 0 7",
+    "Na-Xanth perimeter disc 1 0",
+    "Na-Xanth perimeter disc 1 1",
+    "Na-Xanth perimeter disc 1 2",
+    "Na-Xanth perimeter disc 1 3",
+    "Na-Xanth perimeter disc 1 4",
+    "Na-Xanth perimeter disc 1 5",
+    "Na-Xanth perimeter disc 1 6",
+    "Na-Xanth perimeter disc 1 7",
+    "Na-Xanth perimeter disc 2 0",
+    "Na-Xanth perimeter disc 2 1",
+    "Na-Xanth perimeter disc 2 2",
+    "Na-Xanth perimeter disc 2 3",
+    "Na-Xanth perimeter disc 2 4",
+    "Na-Xanth perimeter disc 2 5",
+    "Na-Xanth perimeter disc 2 6",
+    "Na-Xanth perimeter disc 2 7",
+    "Na-Xanth perimeter stem 0 0",
+    "Na-Xanth perimeter stem 0 1",
+    "Na-Xanth perimeter stem 0 2",
+    "Na-Xanth perimeter stem 0 3",
+    "Na-Xanth perimeter stem 0 4",
+    "Na-Xanth perimeter stem 0 5",
+    "Na-Xanth perimeter stem 0 6",
+    "Na-Xanth perimeter stem 0 7",
+    "Na-Xanth perimeter stem 1 0",
+    "Na-Xanth perimeter stem 1 1",
+    "Na-Xanth perimeter stem 1 2",
+    "Na-Xanth perimeter stem 1 3",
+    "Na-Xanth perimeter stem 1 4",
+    "Na-Xanth perimeter stem 1 5",
+    "Na-Xanth perimeter stem 1 6",
+    "Na-Xanth perimeter stem 1 7",
+    "Na-Xanth perimeter stem 2 0",
+    "Na-Xanth perimeter stem 2 1",
+    "Na-Xanth perimeter stem 2 2",
+    "Na-Xanth perimeter stem 2 3",
+    "Na-Xanth perimeter stem 2 4",
+    "Na-Xanth perimeter stem 2 5",
+    "Na-Xanth perimeter stem 2 6",
+    "Na-Xanth perimeter stem 2 7",
+    "Na-Xanth slate chamber 0",
+    "Na-Xanth slate chamber 1",
+    "Na-Xanth slate chamber 2",
+    "Na-Xanth structural neck -1",
+    "Na-Xanth structural neck 1",
+    "Na-Xanth upper amber tile 0 0",
+    "Na-Xanth upper amber tile 0 1",
+    "Na-Xanth upper amber tile 0 2",
+    "Na-Xanth upper amber tile 0 3",
+    "Na-Xanth upper amber tile 1 0",
+    "Na-Xanth upper amber tile 1 1",
+    "Na-Xanth upper amber tile 1 2",
+    "Na-Xanth upper amber tile 1 3",
+    "Na-Xanth upper amber tile 2 0",
+    "Na-Xanth upper amber tile 2 1",
+    "Na-Xanth upper amber tile 2 2",
+    "Na-Xanth upper amber tile 2 3",
+    "Na-Xanth upper dark panel 0",
+    "Na-Xanth upper dark panel 1",
+    "Na-Xanth upper dark panel 2"
+  ],
+  "removed_mesh_names": [
+    "Na-Xanth body bezel 0",
+    "Na-Xanth forward coupler 0",
+    "Na-Xanth dark coupler face 0",
+    "Na-Xanth face amber tile 0 0",
+    "Na-Xanth face amber tile 0 1",
+    "Na-Xanth face amber tile 0 2",
+    "Na-Xanth body bezel 1",
+    "Na-Xanth forward coupler 1",
+    "Na-Xanth dark coupler face 1",
+    "Na-Xanth face amber tile 1 0",
+    "Na-Xanth face amber tile 1 1",
+    "Na-Xanth face amber tile 1 2",
+    "Na-Xanth body bezel 2",
+    "Na-Xanth forward coupler 2",
+    "Na-Xanth dark coupler face 2",
+    "Na-Xanth face amber tile 2 0",
+    "Na-Xanth face amber tile 2 1",
+    "Na-Xanth face amber tile 2 2"
+  ],
+  "added_mesh_names": [
+    "Na-Xanth flattened copper interface 0",
+    "Na-Xanth copper interface transverse band 0 0",
+    "Na-Xanth copper interface transverse band 0 1",
+    "Na-Xanth copper interface transverse band 0 2",
+    "Na-Xanth copper interface transverse band 0 3",
+    "Na-Xanth flattened interface dark field 0",
+    "Na-Xanth flattened interface amber field 0 0",
+    "Na-Xanth flattened interface amber field 0 1",
+    "Na-Xanth flattened interface amber field 0 2",
+    "Na-Xanth broad green chamber brace 0 0",
+    "Na-Xanth broad slate chamber brace 0 0",
+    "Na-Xanth broad green chamber brace 0 1",
+    "Na-Xanth broad slate chamber brace 0 1",
+    "Na-Xanth broad green chamber brace 0 2",
+    "Na-Xanth broad slate chamber brace 0 2",
+    "Na-Xanth broad green chamber brace 0 3",
+    "Na-Xanth broad slate chamber brace 0 3",
+    "Na-Xanth flattened copper interface 1",
+    "Na-Xanth copper interface transverse band 1 0",
+    "Na-Xanth copper interface transverse band 1 1",
+    "Na-Xanth copper interface transverse band 1 2",
+    "Na-Xanth copper interface transverse band 1 3",
+    "Na-Xanth flattened interface dark field 1",
+    "Na-Xanth flattened interface amber field 1 0",
+    "Na-Xanth flattened interface amber field 1 1",
+    "Na-Xanth flattened interface amber field 1 2",
+    "Na-Xanth broad green chamber brace 1 0",
+    "Na-Xanth broad slate chamber brace 1 0",
+    "Na-Xanth broad green chamber brace 1 1",
+    "Na-Xanth broad slate chamber brace 1 1",
+    "Na-Xanth broad green chamber brace 1 2",
+    "Na-Xanth broad slate chamber brace 1 2",
+    "Na-Xanth broad green chamber brace 1 3",
+    "Na-Xanth broad slate chamber brace 1 3",
+    "Na-Xanth flattened copper interface 2",
+    "Na-Xanth copper interface transverse band 2 0",
+    "Na-Xanth copper interface transverse band 2 1",
+    "Na-Xanth copper interface transverse band 2 2",
+    "Na-Xanth copper interface transverse band 2 3",
+    "Na-Xanth flattened interface dark field 2",
+    "Na-Xanth flattened interface amber field 2 0",
+    "Na-Xanth flattened interface amber field 2 1",
+    "Na-Xanth flattened interface amber field 2 2",
+    "Na-Xanth broad green chamber brace 2 0",
+    "Na-Xanth broad slate chamber brace 2 0",
+    "Na-Xanth broad green chamber brace 2 1",
+    "Na-Xanth broad slate chamber brace 2 1",
+    "Na-Xanth broad green chamber brace 2 2",
+    "Na-Xanth broad slate chamber brace 2 2",
+    "Na-Xanth broad green chamber brace 2 3",
+    "Na-Xanth broad slate chamber brace 2 3"
+  ],
+  "attachments": [
+    {
+      "name": "Na-Xanth flattened copper interface 0",
+      "owner": "Na-Xanth green chamber 0"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 0 0",
+      "owner": "Na-Xanth flattened copper interface 0"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 0 1",
+      "owner": "Na-Xanth flattened copper interface 0"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 0 2",
+      "owner": "Na-Xanth flattened copper interface 0"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 0 3",
+      "owner": "Na-Xanth flattened copper interface 0"
+    },
+    {
+      "name": "Na-Xanth flattened interface dark field 0",
+      "owner": "Na-Xanth flattened copper interface 0"
+    },
+    {
+      "name": "Na-Xanth flattened interface amber field 0 0",
+      "owner": "Na-Xanth flattened interface dark field 0"
+    },
+    {
+      "name": "Na-Xanth flattened interface amber field 0 1",
+      "owner": "Na-Xanth flattened interface dark field 0"
+    },
+    {
+      "name": "Na-Xanth flattened interface amber field 0 2",
+      "owner": "Na-Xanth flattened interface dark field 0"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 0 0",
+      "owner": "Na-Xanth green chamber 0"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 0 0",
+      "owner": "Na-Xanth slate chamber 0"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 0 1",
+      "owner": "Na-Xanth green chamber 0"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 0 1",
+      "owner": "Na-Xanth slate chamber 0"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 0 2",
+      "owner": "Na-Xanth green chamber 0"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 0 2",
+      "owner": "Na-Xanth slate chamber 0"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 0 3",
+      "owner": "Na-Xanth green chamber 0"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 0 3",
+      "owner": "Na-Xanth slate chamber 0"
+    },
+    {
+      "name": "Na-Xanth flattened copper interface 1",
+      "owner": "Na-Xanth green chamber 1"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 1 0",
+      "owner": "Na-Xanth flattened copper interface 1"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 1 1",
+      "owner": "Na-Xanth flattened copper interface 1"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 1 2",
+      "owner": "Na-Xanth flattened copper interface 1"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 1 3",
+      "owner": "Na-Xanth flattened copper interface 1"
+    },
+    {
+      "name": "Na-Xanth flattened interface dark field 1",
+      "owner": "Na-Xanth flattened copper interface 1"
+    },
+    {
+      "name": "Na-Xanth flattened interface amber field 1 0",
+      "owner": "Na-Xanth flattened interface dark field 1"
+    },
+    {
+      "name": "Na-Xanth flattened interface amber field 1 1",
+      "owner": "Na-Xanth flattened interface dark field 1"
+    },
+    {
+      "name": "Na-Xanth flattened interface amber field 1 2",
+      "owner": "Na-Xanth flattened interface dark field 1"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 1 0",
+      "owner": "Na-Xanth green chamber 1"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 1 0",
+      "owner": "Na-Xanth slate chamber 1"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 1 1",
+      "owner": "Na-Xanth green chamber 1"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 1 1",
+      "owner": "Na-Xanth slate chamber 1"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 1 2",
+      "owner": "Na-Xanth green chamber 1"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 1 2",
+      "owner": "Na-Xanth slate chamber 1"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 1 3",
+      "owner": "Na-Xanth green chamber 1"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 1 3",
+      "owner": "Na-Xanth slate chamber 1"
+    },
+    {
+      "name": "Na-Xanth flattened copper interface 2",
+      "owner": "Na-Xanth green chamber 2"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 2 0",
+      "owner": "Na-Xanth flattened copper interface 2"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 2 1",
+      "owner": "Na-Xanth flattened copper interface 2"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 2 2",
+      "owner": "Na-Xanth flattened copper interface 2"
+    },
+    {
+      "name": "Na-Xanth copper interface transverse band 2 3",
+      "owner": "Na-Xanth flattened copper interface 2"
+    },
+    {
+      "name": "Na-Xanth flattened interface dark field 2",
+      "owner": "Na-Xanth flattened copper interface 2"
+    },
+    {
+      "name": "Na-Xanth flattened interface amber field 2 0",
+      "owner": "Na-Xanth flattened interface dark field 2"
+    },
+    {
+      "name": "Na-Xanth flattened interface amber field 2 1",
+      "owner": "Na-Xanth flattened interface dark field 2"
+    },
+    {
+      "name": "Na-Xanth flattened interface amber field 2 2",
+      "owner": "Na-Xanth flattened interface dark field 2"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 2 0",
+      "owner": "Na-Xanth green chamber 2"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 2 0",
+      "owner": "Na-Xanth slate chamber 2"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 2 1",
+      "owner": "Na-Xanth green chamber 2"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 2 1",
+      "owner": "Na-Xanth slate chamber 2"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 2 2",
+      "owner": "Na-Xanth green chamber 2"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 2 2",
+      "owner": "Na-Xanth slate chamber 2"
+    },
+    {
+      "name": "Na-Xanth broad green chamber brace 2 3",
+      "owner": "Na-Xanth green chamber 2"
+    },
+    {
+      "name": "Na-Xanth broad slate chamber brace 2 3",
+      "owner": "Na-Xanth slate chamber 2"
+    }
+  ],
+  "authored_planform_scale": 1.18,
+  "mesh_objects": 146,
+  "blender": "4.5.15 LTS",
+  "authored": "Exact copper profiles, brace count, hidden layout, 1.18 radial planform fit and six-second service loop; no named alloy or recovered timing claimed",
+  "acceptance": "Actual native/independent GLB render verification pending; final game calibration open"
+}
