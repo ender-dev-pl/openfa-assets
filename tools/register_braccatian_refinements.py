@@ -13,6 +13,7 @@ CASES.update({key:('refine_braccatian_public_facilities.py','verify_refined_brac
 CASES.update({key:('refine_braccatian_clan_complexes.py','verify_refined_braccatian_clan_complexes.py') for key in ['br01','br02','br05']})
 CASES.update({key:('refine_braccatian_work_facilities.py','verify_refined_braccatian_work_facilities.py') for key in ['br08','br17','br21']})
 CASES.update({key:('refine_braccatian_launch_facilities.py','verify_refined_braccatian_launch_facilities.py') for key in ['br11','br12','br19']})
+CASES.update({key:('refine_braccatian_weapons.py','verify_refined_braccatian_weapons.py') for key in ['br18','br20','br23']})
 
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -55,7 +56,7 @@ def main():
     layout_path=ROOT/'project/layout.json'
     layout=json.loads(layout_path.read_text())
     destinations={r['destination'] for r in layout['files']}
-    paths=list(source.iterdir())+list(media.iterdir())+list((ROOT/'sources/materials/reconstruction/braccatian-refined'/key).glob('*.png'))
+    paths=list(source.iterdir())+[p for p in media.rglob('*') if p.is_file()]+list((ROOT/'sources/materials/reconstruction/braccatian-refined'/key).glob('*.png'))
     paths += [ROOT/'sources/tools/blender'/n for n in [generator,verifier]]
     paths += [ROOT/'sources/docs/reconstruction/models/braccatian-structural-refinement.md']
     for path in sorted(paths):

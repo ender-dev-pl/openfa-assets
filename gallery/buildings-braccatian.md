@@ -302,6 +302,14 @@
 
 [Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br18/animation-00.webm)
 
+**Additional iteration — directional-weapon-refinement**
+
+![Anti-Battery](../gallery/media/docs/assets/reconstruction/braccatian-refined/br18/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br18/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br18/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/reconstruction/braccatian-refined/br18/animation-00.webm)
+
 ## Battery
 
 `openfa:building/legacy/081`
@@ -335,6 +343,14 @@
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br20/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br20/model.glb)
 
 [Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br20/animation-00.webm)
+
+**Additional iteration — directional-weapon-refinement**
+
+![Turret](../gallery/media/docs/assets/reconstruction/braccatian-refined/br20/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br20/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br20/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/reconstruction/braccatian-refined/br20/animation-00.webm)
 
 ## Subterranean Extractor
 
@@ -379,3 +395,11 @@
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br23/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br23/model.glb)
 
 [Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br23/animation-00.webm)
+
+**Additional iteration — directional-weapon-refinement**
+
+![Fire Power](../gallery/media/docs/assets/reconstruction/braccatian-refined/br23/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br23/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br23/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/reconstruction/braccatian-refined/br23/animation-00.webm)
