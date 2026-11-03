@@ -124,6 +124,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br08/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br08/model.glb)
 
+**Additional iteration — work-facility-structural-refinement**
+
+![Field Hospital](../gallery/media/docs/assets/reconstruction/braccatian-refined/br08/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br08/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br08/model.glb)
+
 ## Glasshouse
 
 `openfa:building/legacy/071`
@@ -264,6 +270,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br17/model.glb)
 
+**Additional iteration — work-facility-structural-refinement**
+
+![Forge](../gallery/media/docs/assets/reconstruction/braccatian-refined/br17/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br17/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br17/model.glb)
+
 ## Anti-Battery
 
 `openfa:building/legacy/080`
@@ -313,6 +325,12 @@
 ![Subterranean Extractor](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br21/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br21/model.glb)
+
+**Additional iteration — work-facility-structural-refinement**
+
+![Subterranean Extractor](../gallery/media/docs/assets/reconstruction/braccatian-refined/br21/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/br21/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/br21/model.glb)
 
 ## Pithoi
 
