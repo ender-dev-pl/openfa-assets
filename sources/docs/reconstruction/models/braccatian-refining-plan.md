@@ -48,7 +48,7 @@ count. Exact hidden sections and dimensions remain inferred.
 | BR05 Aesir's Hall | Recover stepped central neck/spire, gold open crown, three low satellites and distinct red/blue fittings; no ceremonial machinery. |
 | BR06 Longhouse | Recover three connected terraced buildings, lower entrance arches, rose roofs and red upper collars. |
 | BR07 Sports Hall | Recover domed main hall with visible face divisions and substantial front entrance/column assemblies. |
-| BR08 Field Hospital | Recover joined lower entrance buildings and five slim towers with blue upper collars, instead of isolated generic cones. |
+| BR08 Field Hospital | Focused source review corrects the initial five-tower assumption: recover joined lower entrance buildings and six slim towers/blue collars visible in the paletted body and catalogue phases. |
 | BR09 Glasshouse | Recover upper open-frame/slotted cylinder and three pyramidal feet with separate blue/gold fittings. |
 | BR10 TechMech | Recover practical cylindrical core, layered shoulder/waist, side pyramidal modules, access steps and service fields. |
 | BR11 Launch Site | Preserve opening pyramid/shaft; recover source rose/gold surface divisions and large circular face fitting. |

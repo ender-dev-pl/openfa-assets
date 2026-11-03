@@ -326,3 +326,73 @@ whole views check complete framing and crown-detail views inspect the openings.
 These are three additional studies in the full 38-model programme. Fourteen
 new refined definitions are now covered; 24 remaining decisions and the final
 all-model preservation/animation/gallery audit remain required.
+
+## BR08 Field Hospital, BR17 Forge and BR21 Subterranean Extractor
+
+All 41 correctly paletted catalogue phases and body/shadow descriptors were
+inspected for each case. Functional payloads were checked against their exact
+byte ranges/hashes and read: Field Hospital record 931/offset 73379, Forge
+940/75037, Subterranean Extractor 944/75619. The full CDB context remains bound
+by the immutable Braccatian lore ledger; material identities are not inferred
+from the Bronze Age cultural analogy.
+
+Focused BR08 review corrects the plan's initial five-tower assumption. The body
+and detailed catalogue phases show **six** blue-collared towers; the old study
+has five. The new assembly restores all six slim gold/rose square-sided towers,
+three joined low wards, open entrance arches, terraces and repeated jamb/edge
+faces. The narrative explicitly calls the hospital basic; no invented medical
+crosses, ceremonial apparatus or unsupported equipment is added. Tower heights,
+spatial layout, repeated face counts and hidden rear structure remain authored.
+Render review removed overlapping coplanar ward terraces/insets and reseated
+the side faces on the narrower chambers; the rear lintel joins the wards.
+
+Forge now has a tall cylindrical core with long front slots, a broad upper rim,
+paired small tips and rounded gold/rose upper fittings. A separate red-equipped
+left cylinder, external gold fitting/link, low three-shoulder side hall and tall
+gold service globe restore the source's branched silhouette. The functional
+text describes a weapons factory only slightly smaller than TechMech and calls
+it a temple to warfare. This supports the display-oriented structure seen in
+the sprite, without establishing new clan emblems, weapon props or a visible
+manufacturing loop. Exact depths, repeated fields and hidden connections remain
+authored; the generator does not copy four generic spires.
+
+Subterranean Extractor now has a tiered cylindrical machine, broad shoulder,
+flat upper rim/inset plate, gold vertical fittings, lower red service fields and
+a sloping side/rear housing with three equipment slots. This recovers the large
+silhouette/functional divisions omitted by the old ringed cylinder. The original
+narrative combines the three Terran mine functions into an efficient but
+power-hungry necessity, without a ceremonial association. Sci-Tek ST24 binds
+PB21, not BR21; the Terran exposed drill/shaft construction is not copied here.
+No visible underground mechanism or operating motion is invented. Exact cap
+construction, housing depth, repeated counts and alloy identities remain open.
+Visibility tests caught a slot centre hidden behind the broad shoulder; slots
+were moved onto its exposed sloping face before the final source/GLB checks.
+
+All three are separate complete assemblies; previous models remain unchanged
+and selectable. Independently authored colour/roughness wear and shallow body
+dents retain readable broad construction. Original pixels remain private
+reference evidence and are not texture inputs.
+
+Actual native Blender reopen and independent GLB import passed for 67 Field
+Hospital meshes, 29 Forge meshes and 20 Extractor meshes. All are closed,
+positive and consistently wound; geometric graphs connect every part through
+149, 42 and 26 sampled contacts respectively. Complete marked collections,
+original 3x3/3x3/2x2 footprints, root hierarchy and eight effective packed
+colour/roughness arrays per case are checked in both formats.
+
+Hospital tests require six actual blue collars, measured slim-tower taper and
+three clear entrance intervals with separate rays hitting the jambs/crowns.
+Forge tests measure the cylindrical core and three-shoulder low hall, and
+require visible long dark slots/red fields, paired tips and an actual service
+globe. Extractor tests measure both cylindrical sections and the broad shoulder,
+flat upper plate/rim heights, exposed sloping slot centres and lower red fields.
+These tests check geometric contracts in addition to counts.
+
+All nine current native/imported whole/front/equipment render pairs have
+silhouette IoU 1.0 and zero measured position drift; maximum foreground RGB mean
+difference is below 0.0034/255. Actual paired views and paletted source/before/after
+comparisons were inspected. Equipment views frame the body rather than requiring
+full terminal framing; whole views check complete silhouettes. Earlier studies
+and all authored clips remain preserved. Seventeen new refined definitions are
+now covered in the full programme; the remaining 21 decisions and final audit
+are still required.
