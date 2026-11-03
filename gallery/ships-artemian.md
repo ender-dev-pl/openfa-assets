@@ -61,3 +61,17 @@
 ![Geostationary Construction](../gallery/media/docs/assets/reconstruction/ships/artemian/geostationary-construction/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/ships/artemian/geostationary-construction/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/artemian/geostationary-construction/model.glb)
+
+**Additional iteration — orbital-station-structural-refinement**
+
+![Geostationary Construction](../gallery/media/docs/assets/reconstruction/orbital-station-refined/artemian/geostationary-construction/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/artemian/geostationary-construction/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/artemian/geostationary-construction/model.glb)
+
+**Additional iteration — orbital-station-construction-refinement**
+
+![Geostationary Construction](../gallery/media/docs/assets/reconstruction/orbital-station-construction/artemian/geostationary-construction/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/artemian/geostationary-construction/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/artemian/geostationary-construction/model.glb)
+
+[Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/artemian/geostationary-construction/animation-00.webm)

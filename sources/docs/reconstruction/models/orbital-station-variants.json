@@ -120,7 +120,28 @@
       "key": "AR5C",
       "name": "Geostationary Construction",
       "culture": "artemian",
-      "status": "pending-source-review-and-runtime-verification"
+      "status": "runtime-verified",
+      "finished": {
+        "legacy_sprite_frame": 0,
+        "blend": "sources/docs/assets/reconstruction/orbital-station-refined/artemian/geostationary-construction/model.blend",
+        "glb": "sources/docs/assets/reconstruction/orbital-station-refined/artemian/geostationary-construction/model.glb",
+        "blend_sha256": "d2878fe42ae513ca113e17b591ed9ffc640b8f1014d097b6b3d3e04b28274802",
+        "glb_sha256": "ea7e30dae55004aac85f59a143bc0ee1de41ab6dadb3a5e77c11847fe75158fa",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-refined/artemian/geostationary-construction/validation.json"
+      },
+      "construction": {
+        "legacy_sprite_frame": 1,
+        "blend": "sources/docs/assets/reconstruction/orbital-station-construction/artemian/geostationary-construction/model.blend",
+        "glb": "sources/docs/assets/reconstruction/orbital-station-construction/artemian/geostationary-construction/model.glb",
+        "blend_sha256": "949d86c8774aeff2d57499b151620980bdf7761e8ffc425308f564c9a52ec3c6",
+        "glb_sha256": "1698cf9b58b9aa6f642e61e91a519290cc1411fa9bdfa282dd6d1688c16c3a6a",
+        "validation": "gallery/media/docs/assets/reconstruction/orbital-station-construction/artemian/geostationary-construction/validation.json",
+        "animation": "ConstructionActivity"
+      },
+      "generator": "sources/tools/blender/refine_geostationary_states.py",
+      "verifier": "sources/tools/blender/verify_geostationary_states.py",
+      "evidence": "sources/docs/reconstruction/models/geostationary-station-evidence.json",
+      "state_policy": "Descriptor 1 is a tapered construction sleeve with the secondary dish/feed exposed. Canonical +Z file axis and original alignment helper are retained; source-side previews use camera roll and neutral preview fill. Shared finished placement/normalization applies to both states."
     },
     {
       "id": "openfa:ship/mauna/orbital-construction-area",
