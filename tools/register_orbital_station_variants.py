@@ -101,7 +101,7 @@ def main():
             paths += list((ROOT/pair[variant]['blend']).parent.iterdir())
             paths += list((ROOT/pair[variant]['validation']).parent.rglob('*'))
             meta = json.loads((ROOT/pair[variant]['blend']).with_suffix('.json').read_text())
-            paths += [ROOT/p for p in meta['texture_sha256']]
+            paths += [ROOT/p for p in meta.get('texture_sha256',{})]
     for path in sorted(set(paths)):
         if not path.is_file():
             continue

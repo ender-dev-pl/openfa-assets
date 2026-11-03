@@ -81,3 +81,11 @@
 ![Observatory](../gallery/media/docs/assets/reconstruction/rigellian-refined/observatory/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/rigellian-refined/observatory/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/observatory/model.glb)
+
+**Additional iteration — orbital-station-construction-refinement**
+
+![Observatory](../gallery/media/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/model.glb)
+
+[Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/animation-00.webm)
