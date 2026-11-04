@@ -1,0 +1,18 @@
+const fs=require('node:fs'),assert=require('node:assert/strict'),vm=require('node:vm');
+const root=require('node:path').resolve(__dirname,'..')+'/';
+const page=fs.readFileSync(root+'gallery/index.html','utf8');
+const model=page.slice(page.indexOf('class GalleryModel'),page.indexOf('class GalleryView'));
+const context={};vm.createContext(context);vm.runInContext(model+';this.Model=GalleryModel',context);
+const records=[...page.matchAll(/<article data-search="([^"]*)" data-race="([^"]*)" data-type="([^"]*)"/g)].map(m=>({search:m[1],race:m[2],type:m[3]}));
+const extras=JSON.parse(fs.readFileSync(root+'gallery/supplemental-catalogue.json','utf8'));
+const m=new context.Model(records);
+assert.equal(records.length,303+extras.length);
+m.setFilters({type:'ui'});assert.equal(m.matches().length,118);
+m.setFilters({type:'scaffolds'});assert.equal(m.matches().length,19);
+m.setFilters({type:'scaffolds',race:'rigellian'});assert.equal(m.matches().length,3);
+m.setFilters({type:'scaffolds',q:'RIS2 stage-17'});assert.equal(m.matches().length,1);
+m.setFilters({type:'ui',q:'sphere illuminated'});assert.equal(m.matches().length,1);
+m.setFilters({});assert.equal(m.matches().length,440);
+assert.equal(extras.filter(r=>r.category==='scaffolds').reduce((n,r)=>n+r.views.length,0),281);
+assert(page.includes('sphere-spin.webm'));
+console.log('CATALOGUE_FILTERS_OK',records.length,'entries, 118 UI, 19 scaffold families, 281 stages');

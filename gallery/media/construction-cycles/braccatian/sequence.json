@@ -1,0 +1,251 @@
+{
+  "issue": 189,
+  "culture": "braccatian",
+  "definition_id": "openfa:building/legacy/074",
+  "building_name": "Eyes-in-the-Sky",
+  "family": "BRS2",
+  "ceiling": 4,
+  "archive": "models.zip",
+  "resolution": 640,
+  "camera_matrix": [
+    [
+      0.8320503234863281,
+      -0.2773500084877014,
+      0.4803844690322876,
+      8.0
+    ],
+    [
+      0.5547001361846924,
+      0.41602516174316406,
+      -0.7205767035484314,
+      -12.0
+    ],
+    [
+      -6.922478235082963e-08,
+      0.866025447845459,
+      0.4999999701976776,
+      9.326663970947266
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "ortho_scale": 3.5137550830841064,
+  "frames": [
+    {
+      "id": "braccatian/empty",
+      "key": "empty",
+      "stage": 0,
+      "building_visible": false,
+      "image": "000.png",
+      "glb": "000.glb",
+      "sha256": "1207f9b5668d903a41f7639f3393afcc23b5c8e2dfff3bd13ddd1a415a3be360",
+      "scaffold_meshes": 0,
+      "building_meshes": 0
+    },
+    {
+      "id": "braccatian/erection-01",
+      "key": "erection-01",
+      "stage": 1,
+      "building_visible": false,
+      "image": "001.png",
+      "glb": "001.glb",
+      "sha256": "1cdcf0db100a0b58e0aed6a4b8d27bb220d9293fb838b2a3083746070193e055",
+      "scaffold_meshes": 140,
+      "building_meshes": 0
+    },
+    {
+      "id": "braccatian/erection-02",
+      "key": "erection-02",
+      "stage": 2,
+      "building_visible": false,
+      "image": "002.png",
+      "glb": "002.glb",
+      "sha256": "5b29c53a2e2a1ed7cc9a6f90848351c3305df4646cb26ab6533fa7805a81a106",
+      "scaffold_meshes": 252,
+      "building_meshes": 0
+    },
+    {
+      "id": "braccatian/erection-03",
+      "key": "erection-03",
+      "stage": 3,
+      "building_visible": false,
+      "image": "003.png",
+      "glb": "003.glb",
+      "sha256": "cf69a82dc71118f6c354801072b6e25f8aa760a4b0f52abe2e04ad4e25bddcf4",
+      "scaffold_meshes": 396,
+      "building_meshes": 0
+    },
+    {
+      "id": "braccatian/erection-04",
+      "key": "erection-04",
+      "stage": 4,
+      "building_visible": false,
+      "image": "004.png",
+      "glb": "004.glb",
+      "sha256": "1246ddcffb06a46a1844c00c2c9da7cb2fe4c164a3eeed704d84d28a8d3eace6",
+      "scaffold_meshes": 508,
+      "building_meshes": 0
+    },
+    {
+      "id": "braccatian/reveal-04",
+      "key": "reveal-04",
+      "stage": 4,
+      "building_visible": true,
+      "image": "005.png",
+      "glb": "005.glb",
+      "sha256": "821a85fa6dd430b288a1c0298eeab6aee7e34a1d26212b0327a8cc149f6cc0ec",
+      "scaffold_meshes": 508,
+      "building_meshes": 13
+    },
+    {
+      "id": "braccatian/reveal-03",
+      "key": "reveal-03",
+      "stage": 3,
+      "building_visible": true,
+      "image": "006.png",
+      "glb": "006.glb",
+      "sha256": "670dfdfb6b7dfc6d5115ed407feb8375537698a385dc13d753883b8b5936ccf9",
+      "scaffold_meshes": 396,
+      "building_meshes": 13
+    },
+    {
+      "id": "braccatian/reveal-02",
+      "key": "reveal-02",
+      "stage": 2,
+      "building_visible": true,
+      "image": "007.png",
+      "glb": "007.glb",
+      "sha256": "a6a4da85d125fa0957c1e1db792eef15ec042e2613c5d4127f09c89d15e78794",
+      "scaffold_meshes": 252,
+      "building_meshes": 13
+    },
+    {
+      "id": "braccatian/reveal-01",
+      "key": "reveal-01",
+      "stage": 1,
+      "building_visible": true,
+      "image": "008.png",
+      "glb": "008.glb",
+      "sha256": "d81bea27762cac5a41d9b75799bea643b3a8f05ba284f07bd9a68cdd13c206b1",
+      "scaffold_meshes": 140,
+      "building_meshes": 13
+    },
+    {
+      "id": "braccatian/complete",
+      "key": "complete",
+      "stage": 0,
+      "building_visible": true,
+      "image": "009.png",
+      "glb": "009.glb",
+      "sha256": "117cd8e057e22888ca31911fcff8e1a3af77786d97a257f796a013960d5b27ff",
+      "scaffold_meshes": 0,
+      "building_meshes": 13
+    }
+  ],
+  "timeline": [
+    {
+      "key": "empty",
+      "phase": "ready",
+      "stage": 0,
+      "duration": 0.8,
+      "image": "000.png"
+    },
+    {
+      "key": "erection-01",
+      "phase": "erection",
+      "stage": 1,
+      "duration": 1.25,
+      "image": "001.png"
+    },
+    {
+      "key": "erection-02",
+      "phase": "erection",
+      "stage": 2,
+      "duration": 1.25,
+      "image": "002.png"
+    },
+    {
+      "key": "erection-03",
+      "phase": "erection",
+      "stage": 3,
+      "duration": 1.25,
+      "image": "003.png"
+    },
+    {
+      "key": "erection-04",
+      "phase": "erection",
+      "stage": 4,
+      "duration": 1.25,
+      "image": "004.png"
+    },
+    {
+      "key": "reveal-04",
+      "phase": "reveal",
+      "stage": 4,
+      "duration": 1.2,
+      "image": "005.png"
+    },
+    {
+      "key": "reveal-04",
+      "phase": "dismantling",
+      "stage": 4,
+      "duration": 1.25,
+      "image": "005.png"
+    },
+    {
+      "key": "reveal-03",
+      "phase": "dismantling",
+      "stage": 3,
+      "duration": 1.25,
+      "image": "006.png"
+    },
+    {
+      "key": "reveal-02",
+      "phase": "dismantling",
+      "stage": 2,
+      "duration": 1.25,
+      "image": "007.png"
+    },
+    {
+      "key": "reveal-01",
+      "phase": "dismantling",
+      "stage": 1,
+      "duration": 1.25,
+      "image": "008.png"
+    },
+    {
+      "key": "complete",
+      "phase": "complete",
+      "stage": 0,
+      "duration": 3,
+      "image": "009.png"
+    }
+  ],
+  "sources": {
+    "sources/docs/assets/reconstruction/launch-facilities/braccatian/br12/model.glb": "9bae49b06b9f0b6e5d7d103cc960757e87da787c9efec47be776b1d6a4b1066d",
+    "sources/docs/assets/reconstruction/scaffolds/culture-kits/families/BRS2/stage-01/model.glb": "70c683806f71b6ec1477b7abe044b96aafcb2fa2e8a0757be4801d36d397909d",
+    "sources/docs/assets/reconstruction/scaffolds/culture-kits/families/BRS2/stage-02/model.glb": "e6c28f17cb3497ce3027920a93d08acad1c7d8bb62292c98d6966fbfaf7404eb",
+    "sources/docs/assets/reconstruction/scaffolds/culture-kits/families/BRS2/stage-03/model.glb": "57f0d773411abd4e74a2b2b1aa127d7a0e67f5615cca03a7c4b914f69974f125",
+    "sources/docs/assets/reconstruction/scaffolds/culture-kits/families/BRS2/stage-04/model.glb": "f9adea73b7563eba8acb20ffdd1b06950c5ec40e6f010f75f193a8ae7ca68981"
+  },
+  "source_integration_sha256": "9b00e6af374df71257d0ce9c82a55bdf330ee6ce9f0e60418276d7f7b428494f",
+  "generator_sha256": "e0b2f071a171643671827f471a5bce8ccbb4389422740ac1c4aceb382e9766ab",
+  "scope": "Authored asset studio cycle using actual OpenFA engine; not live simulation or gameplay integration",
+  "calibration": {
+    "building_uniform_scale": 0.6427350663104244,
+    "building_original_bounds": [
+      -1.1699999570846558,
+      -1.1699999570846558,
+      0.0,
+      1.1699999570846558,
+      1.1699999570846558,
+      0.6950000524520874
+    ],
+    "scaffold_vertical_scale": 0.4215995815884341,
+    "reason": "Preview-only footprint and target-height calibration; original source assets are unchanged"
+  }
+}

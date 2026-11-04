@@ -1,0 +1,162 @@
+{
+  "issue": 188,
+  "family": "PBS4",
+  "culture": "terran",
+  "footprint": 4,
+  "capacity": 2,
+  "pitch": 0.5142583841029245,
+  "pitch_status": "Provisional source-repeat projection; not calibrated game-world height",
+  "pitch_derivation": "2*4/97*(4*.9*sqrt(2))/sqrt(2/3)",
+  "required_max_stage": 4,
+  "required_max_tiers": 2,
+  "style": {
+    "main": [
+      0.22,
+      0.28,
+      0.32
+    ],
+    "trim": [
+      0.58,
+      0.36,
+      0.055
+    ],
+    "kind": "braced steel access gantry",
+    "technique": "Bolted trusses and removable service decks"
+  },
+  "cdb_evidence": {
+    "culture": "terran",
+    "reason": "No Terran Architecture heading exists in this located CDB; use actual object references rather than inventing a matching cultural article."
+  },
+  "authored_interpretation": "OpenFA3D removable perimeter kit; mechanisms, joints, hidden structure and materials are authored interpretations, not recovered CDB technology",
+  "source_reference": "PBS4",
+  "reference_descriptor_sha256": [
+    "f3bf213f4c1a2765eafd1143dfe379c0f71cbb5a6061b282a8454eeafe7706bf",
+    "50c43453aa81ff4d32a92f1bc30f6988bcb4e38c07148b732aa5cf18fb4146b8",
+    "78db85c00be2f59768d9be31eea76b16437e4fc33d5756065849e0d45e80ff73"
+  ],
+  "clear_volume": {
+    "half_extent_xy": 1.7,
+    "temporary_crown_removed_on_reveal": true,
+    "interior_shoring": false
+  },
+  "phases": [
+    {
+      "id": "erection",
+      "building_visible": false
+    },
+    {
+      "id": "reveal",
+      "building_visible": true
+    },
+    {
+      "id": "dismantling",
+      "building_visible": true
+    },
+    {
+      "id": "complete",
+      "building_visible": true,
+      "scaffold_visible": false
+    }
+  ],
+  "sequence_provenance": "User requirement: full height, insert building, reverse dismantling revealing from top; not a newly recovered legacy timing rule",
+  "definitions": [
+    {
+      "id": "terran:weapons-factory",
+      "name": "Weapons Factory",
+      "ceiling": 4,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "dismantling_stages": [
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:cpu",
+      "name": "C.P.U.",
+      "ceiling": 4,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "dismantling_stages": [
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "stage": 1,
+      "frames": [
+        1
+      ],
+      "mesh_objects": 172,
+      "unique_meshes": 12,
+      "blend_sha256": "97f331f2e0b21f982a0fcd0a7d3e4b4aae7d8ebfd5f946adcbd61c0a534c0381",
+      "glb_sha256": "b88fe9df4491484b42b54abb16c162330926b230e17d2164d74451c2fd3e50f6",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 2,
+      "frames": [
+        2
+      ],
+      "mesh_objects": 300,
+      "unique_meshes": 12,
+      "blend_sha256": "881ab4275170b0799e570e02eaf4d94b770094beca428034fe4d45e932d344fc",
+      "glb_sha256": "9afabcdf476a202ffdc4375c0d7bf183cc68e23e8de049968aa21edcfb1de789",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 3,
+      "frames": [
+        2,
+        1
+      ],
+      "mesh_objects": 492,
+      "unique_meshes": 14,
+      "blend_sha256": "9e0f90760899ceaa6ef2590249956032b0faca081bb022d6396eb2915d11c19a",
+      "glb_sha256": "e8af03ed7ff28b18a7ec0a75836695923e186ca628d16c92283eb0681aca3e1d",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 4,
+      "frames": [
+        2,
+        2
+      ],
+      "mesh_objects": 620,
+      "unique_meshes": 13,
+      "blend_sha256": "57c5028e29e6b2742bff8d10d772852c49a68def8689cf5751afde59a50bc0f7",
+      "glb_sha256": "91707b29241f22c3b217fae0da13b49a9cc9708f09cd10d9a3df8ab4491abb2c",
+      "rear_view": true,
+      "hide_on_reveal": []
+    }
+  ],
+  "inputs": {
+    "docs/reconstruction/models/scaffold-stage-limits.json": "5a0fcc956670550a11dff3ea7e0258de745258397eac58f2b0739074746bd7d3",
+    "docs/reconstruction/models/shared-construction-references.json": "be5bbc948f86b0548bda10b6f63dba4e3b131a5175cdfa35f1e146890581d7a6",
+    "docs/reconstruction/models/cultural-architecture-index.json": "3ae667c89e1f2dc54fb27be717b75eb50e1ea14800a1ef02a1609adb7d78765e",
+    "docs/assets/reconstruction/scaffolds/culture-kits/authored-wear.json": "f1175ab496acaf5bec413ba92f1c3fec291ead980cba27816064b2c809521f52",
+    "tools/blender/build_culture_scaffolds.py": "171628100bc5a27d57ef4511888904e8e418b439553b4e510db28af8978249f5",
+    "tools/blender/culture_scaffold_parts.py": "f4bd5d31a159355277693218ff12f7514779aee634a2d9a703a875d42f45b36d",
+    "tools/blender/culture_scaffold_contract.py": "c71d3453ec38e1326c1bede0541ccc111b3f28507aea9ed150e73b69cd3be5d9"
+  },
+  "preview_only": false,
+  "exact_legacy_fidelity_accepted": false,
+  "game_integration_verified": false
+}

@@ -1,0 +1,1173 @@
+{
+  "issue": 188,
+  "family": "ACS2",
+  "culture": "achaean",
+  "footprint": 2,
+  "capacity": 2,
+  "pitch": 0.5542562584220408,
+  "pitch_status": "Provisional source-repeat projection; not calibrated game-world height",
+  "pitch_derivation": "2*4/45*(2*.9*sqrt(2))/sqrt(2/3)",
+  "required_max_stage": 18,
+  "required_max_tiers": 9,
+  "style": {
+    "main": [
+      0.4,
+      0.31,
+      0.12
+    ],
+    "trim": [
+      0.13,
+      0.075,
+      0.028
+    ],
+    "kind": "bamboo-like lashed framework",
+    "technique": "Reusable composite canes and fibre lashings; user material interpretation"
+  },
+  "cdb_evidence": {
+    "culture": "achaean",
+    "heading": "Achaeans",
+    "section": "Architecture",
+    "record": 166,
+    "offset": 40293,
+    "offset_hex": "0x9d65",
+    "byte_length": 339,
+    "sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "source_summary": [
+      "External forms favour curves, onion domes and occasional slender tower elements.",
+      "Interiors are highly decorated and crowded, with low barrel vaults and textile furnishings.",
+      "Comfort matters even where Terran observers dislike the visual excess."
+    ],
+    "authoring_interpretation": [
+      "Use curved silhouettes, supported dome profiles and inhabited complexity when relevant to the reference.",
+      "Do not add domes, towers or interior furnishings indiscriminately to small vehicles."
+    ],
+    "scope": "Direct evidence for architecture; vehicle/ship application is contextual extrapolation, never recovered geometry."
+  },
+  "authored_interpretation": "OpenFA3D removable perimeter kit; mechanisms, joints, hidden structure and materials are authored interpretations, not recovered CDB technology",
+  "source_reference": "ACS2",
+  "reference_descriptor_sha256": [
+    "f6d0699de1c4ba5c059073c55fcf51572e6fbc8c7da0a36bca3233e1019db26b",
+    "fd54e3bfab2437cc65b28f2797b2fc0430df95ef4cd26bf50aa3456760f7ff87",
+    "9f3441a2eefc60cc23136d7c9d275b140f48efd4b41b2a99aea04008d028ab76"
+  ],
+  "clear_volume": {
+    "half_extent_xy": 0.8,
+    "temporary_crown_removed_on_reveal": true,
+    "interior_shoring": false
+  },
+  "phases": [
+    {
+      "id": "erection",
+      "building_visible": false
+    },
+    {
+      "id": "reveal",
+      "building_visible": true
+    },
+    {
+      "id": "dismantling",
+      "building_visible": true
+    },
+    {
+      "id": "complete",
+      "building_visible": true,
+      "scaffold_visible": false
+    }
+  ],
+  "sequence_provenance": "User requirement: full height, insert building, reverse dismantling revealing from top; not a newly recovered legacy timing rule",
+  "definitions": [
+    {
+      "id": "openfa:building/legacy/152",
+      "name": "Anti-Rad Screen",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/153",
+      "name": "Environmental Control",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/154",
+      "name": "Filtration Vats",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/155",
+      "name": "Nutrient Vats",
+      "ceiling": 9,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dismantling_stages": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/156",
+      "name": "Habitat",
+      "ceiling": 6,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dismantling_stages": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/162",
+      "name": "Landing Pad",
+      "ceiling": 6,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dismantling_stages": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/163",
+      "name": "Missile Launcher",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/165",
+      "name": "Listening Device",
+      "ceiling": 18,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "dismantling_stages": [
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/166",
+      "name": "Manoeuvring Device",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/167",
+      "name": "Destination Beam",
+      "ceiling": 12,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "dismantling_stages": [
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/168",
+      "name": "Reactor Cores",
+      "ceiling": 18,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "dismantling_stages": [
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/169",
+      "name": "Asteroid Shield",
+      "ceiling": 14,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "dismantling_stages": [
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/170",
+      "name": "Defence Battery",
+      "ceiling": 10,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "dismantling_stages": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/173",
+      "name": "Ore Yard",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/174",
+      "name": "Goods Yard",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/175",
+      "name": "Stun Tower",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/176",
+      "name": "Power Tower",
+      "ceiling": 11,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "dismantling_stages": [
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "stage": 1,
+      "frames": [
+        1
+      ],
+      "mesh_objects": 316,
+      "unique_meshes": 28,
+      "blend_sha256": "ad8a819758bee37e7828e1102a324ff2c575fbe409000e02b0c85e068ce107aa",
+      "glb_sha256": "ebdf3b267be9e6543589915cc820b31ffcb9718e094b4e784668bf3bb009077b",
+      "rear_view": true,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 2,
+      "frames": [
+        2
+      ],
+      "mesh_objects": 588,
+      "unique_meshes": 41,
+      "blend_sha256": "b5f490674bc5e667dc959e10aa1ba79f7140d03fed05d231fc6aaac3aabaf881",
+      "glb_sha256": "40ae4b43b53273d79ff466d7efba7bf899a245b0744276642295be0969591201",
+      "rear_view": true,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 3,
+      "frames": [
+        2,
+        1
+      ],
+      "mesh_objects": 892,
+      "unique_meshes": 43,
+      "blend_sha256": "b3cfadc59388146d9c0a3216c225d78661de17572241835b5232572d582571f7",
+      "glb_sha256": "6952fd3f475c8b7884d777b90d8aab65f398f280c9cc60ee88524e0dd57748b2",
+      "rear_view": true,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 4,
+      "frames": [
+        2,
+        2
+      ],
+      "mesh_objects": 1164,
+      "unique_meshes": 42,
+      "blend_sha256": "4f87feab10416275b2b071b96ca6119e06585e6a3c7e193031aec8d6b14db2de",
+      "glb_sha256": "fbd2cd79e7bafc16e2b73535e250c5d9244561ac643fe60875052fc26abe2db8",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 5,
+      "frames": [
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1468,
+      "unique_meshes": 43,
+      "blend_sha256": "01bc8de4429c49a80ba7a07bb95cbdff98fa3aa7ce5f63e6cac9a7eff392c185",
+      "glb_sha256": "c5e2b7f1bfd103e9d801357dbce38be4b72324ab166152a6b61185b9bf229637",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 6,
+      "frames": [
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1740,
+      "unique_meshes": 42,
+      "blend_sha256": "b744c65a4c7187501c66b0b175b59bda1d600b0237f43ed5f9c86c04722c7c81",
+      "glb_sha256": "48ec4ef30d0d29e47d87af4b02b1d91628c01d1751d30ea41fa77632a32db7a6",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 7,
+      "frames": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 2044,
+      "unique_meshes": 43,
+      "blend_sha256": "8a3d4537b398e532f4113c4bcf7f88e051f1049056eb25d90f1c800fbc136fbd",
+      "glb_sha256": "4f43f15ca2ba68ecb44b88dbd4ff26d8d2ac8128f556018d5f649c63fb096645",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 8,
+      "frames": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 2316,
+      "unique_meshes": 42,
+      "blend_sha256": "0a5062626b57324b1b8daefb58e57f3494a97f2ec9f01c9033ecdf14146a4b89",
+      "glb_sha256": "a603905a7454ee2ef0c67db7c6e33c9d0fb88dd88ebaabf229f8a667a532a031",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 9,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 2620,
+      "unique_meshes": 43,
+      "blend_sha256": "c30104d30e70caf419d3d62db0d808d96dc342562a9bd3045c615855c8144eff",
+      "glb_sha256": "303ccc0aee26c321c8ec0de2cf5254869cd48691e2397d03392b52b6c6b770e4",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 10,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 2892,
+      "unique_meshes": 42,
+      "blend_sha256": "93065c2c75c7cff1bca7942c75f40aff6318bf64f848710de5faa025c34c1695",
+      "glb_sha256": "01b543b8cf15ed5146491ce0dd207acde038ce4316d0045305fec16f55ada973",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 11,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 3196,
+      "unique_meshes": 43,
+      "blend_sha256": "0d270fea2698340a017aeaccb1d185486b11f2ef5b3ae3c1d83751ddcff2483b",
+      "glb_sha256": "d405f8681ce4cbd9559e3f52160bd42b8a7168fe8299fc1d408f8d5cd7667175",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 12,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 3468,
+      "unique_meshes": 42,
+      "blend_sha256": "248e6e5ab61a5987ee4ab9a231f42ff325fcab3f3c40eb1f27c2a66eb1b6113e",
+      "glb_sha256": "0617b50b3957262412ed566824556f94edaff717c63283a85c7214377f47507e",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 13,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 3772,
+      "unique_meshes": 43,
+      "blend_sha256": "84922e05eaede3a89f02c39f350bb9ce047cae78c2b6d16241f7ff7242b7d9de",
+      "glb_sha256": "182b9322862d3bee5ed814d0db6d34b0c10cba4baedf941b6a4aba123063314c",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 14,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 4044,
+      "unique_meshes": 42,
+      "blend_sha256": "f82a2c2e9fb7ea0ac4b75c18f6aaa07163c573c4ae1815f9c70d0ae23d1d309a",
+      "glb_sha256": "1b7ace75d5b99017431b09f6a059e1556edf14b742ec70667a2c2297adc759b8",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 15,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 4348,
+      "unique_meshes": 43,
+      "blend_sha256": "64e9d3004792ed02deb50510718e09345fddc966df1b75b1fba7fe23a3929b18",
+      "glb_sha256": "035d35c3f48c5a86f5b0c0a4fc1ba76dff56a2030dce945596aeb2f9af5b564c",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 16,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 4620,
+      "unique_meshes": 42,
+      "blend_sha256": "34fe57bda1f6cda1e4cc089c032553f6ea923b3903d77efeac1c68662ff34f37",
+      "glb_sha256": "8db9e2ee7d37d413e919c63a48d83f20a1321ff616bdbc2fcfe615e718d32375",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 17,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 4924,
+      "unique_meshes": 43,
+      "blend_sha256": "0b7bf83b3462432d7f96deb8f0ed68c6044e92139cc4c02faf10143260d76cff",
+      "glb_sha256": "43dbc7347c8125bccdfc761f1fd53d62360324a684caac3c80843b1ca413bfa6",
+      "rear_view": true,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    },
+    {
+      "stage": 18,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 5196,
+      "unique_meshes": 42,
+      "blend_sha256": "1861593fe09e5234cef9e709870d4c70ce35a68058fc23fceb9bbd7e8dc84988",
+      "glb_sha256": "eec5d1805f95f20a656dffdf524f4c9a57336db5c53f739e2a619cae03ba796e",
+      "rear_view": true,
+      "hide_on_reveal": [
+        "Crown petal 0-0",
+        "Crown petal 0-1",
+        "Crown petal 0-2",
+        "Crown petal 0-3",
+        "Crown petal 1-0",
+        "Crown petal 1-1",
+        "Crown petal 1-2",
+        "Crown petal 1-3",
+        "Crown petal 2-0",
+        "Crown petal 2-1",
+        "Crown petal 2-2",
+        "Crown petal 2-3",
+        "Crown petal 3-0",
+        "Crown petal 3-1",
+        "Crown petal 3-2",
+        "Crown petal 3-3"
+      ]
+    }
+  ],
+  "inputs": {
+    "docs/reconstruction/models/scaffold-stage-limits.json": "5a0fcc956670550a11dff3ea7e0258de745258397eac58f2b0739074746bd7d3",
+    "docs/reconstruction/models/shared-construction-references.json": "be5bbc948f86b0548bda10b6f63dba4e3b131a5175cdfa35f1e146890581d7a6",
+    "docs/reconstruction/models/cultural-architecture-index.json": "3ae667c89e1f2dc54fb27be717b75eb50e1ea14800a1ef02a1609adb7d78765e",
+    "docs/assets/reconstruction/scaffolds/culture-kits/authored-wear.json": "f1175ab496acaf5bec413ba92f1c3fec291ead980cba27816064b2c809521f52",
+    "tools/blender/build_culture_scaffolds.py": "171628100bc5a27d57ef4511888904e8e418b439553b4e510db28af8978249f5",
+    "tools/blender/culture_scaffold_parts.py": "f4bd5d31a159355277693218ff12f7514779aee634a2d9a703a875d42f45b36d",
+    "tools/blender/culture_scaffold_contract.py": "c71d3453ec38e1326c1bede0541ccc111b3f28507aea9ed150e73b69cd3be5d9",
+    "tools/blender/finalize_culture_scaffold_normals.py": "a8c568080b230dd7cc1777558fc7c29a746e7058ea56fa0b796fb26ee7b9b352"
+  },
+  "preview_only": false,
+  "exact_legacy_fidelity_accepted": false,
+  "game_integration_verified": false,
+  "normal_finalization": "Explicit original split normals on smooth faces, matching glTF representation; geometry, UVs and material design unchanged"
+}
