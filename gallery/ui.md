@@ -148,3 +148,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Refined legacy proportions](media/ui/scitek/asteroid-tracker-refined/solid.png)
 
 [Current source](../sources/ui/scitek/asteroid-tracker-refined/README.md) · [Corrected information sequence](media/ui/scitek/asteroid-tracker-refined/information.webm). Earlier iterations remain preserved.
+
+### Improved Sensors
+
+![Authored integrated sensor enhancement](media/ui/scitek/improved-sensors/solid.png)
+
+[Full technical animation](media/ui/scitek/improved-sensors/information.webm) · [Source and integration contract](../sources/ui/scitek/improved-sensors/README.md).
