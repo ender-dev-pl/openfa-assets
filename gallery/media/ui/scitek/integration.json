@@ -41,6 +41,13 @@
       "readme": "sources/ui/scitek/asteroid-tracker/README.md",
       "gallery_views": [
         {
+          "label": "Full technical information sequence \u2014 564 frames, four component zooms",
+          "image": "gallery/media/ui/scitek/asteroid-tracker/information-087.png",
+          "video": "gallery/media/ui/scitek/asteroid-tracker/information.webm",
+          "blend": "sources/ui/scitek/asteroid-tracker/asteroid-tracker-information.blend",
+          "glb": "sources/ui/scitek/asteroid-tracker/asteroid-tracker-information.glb"
+        },
+        {
           "label": "Solid tile/detail; preview turntable",
           "image": "gallery/media/ui/scitek/asteroid-tracker/solid.png",
           "blend": "sources/ui/scitek/asteroid-tracker/asteroid-tracker.blend",
@@ -148,7 +155,17 @@
           "ortho_scale": 1.149999976158142
         }
       ],
-      "status": "model, preview animation, static wireframe/highlight/zoom assets verified; complete information-motion sequence pending; game integration pending"
+      "status": "model, solid preview, wireframe, red-component variants and full authored information animation verified; game integration pending",
+      "information_animation": {
+        "blend": "sources/ui/scitek/asteroid-tracker/asteroid-tracker-information.blend",
+        "glb": "sources/ui/scitek/asteroid-tracker/asteroid-tracker-information.glb",
+        "timeline": "sources/ui/scitek/asteroid-tracker/information-timeline.json",
+        "fps": 15,
+        "frame_count": 564,
+        "root": "TrackerRotor",
+        "material_contract": "Set highlight_component red and every other technical component green; apply explicit camera transform and ortho_scale from the timeline. GLB animation alone is insufficient for portable material/camera-scale presentation.",
+        "camera_fidelity": "Authored from reviewed source views; not source-exact recovered transforms."
+      }
     }
   ]
 }

@@ -24,7 +24,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 2 | scitek:anti-missile-pod | terran:anti-missile-pod | Pending |
 | 3 | scitek:anti-virus-missile | openfa:anti-virus | Pending |
 | 4 | scitek:asteroid-engines | terran:asteroid-engine | Pending |
-| 5 | scitek:asteroid-tracker | Dedicated model added | Model, solid preview animation and static wire/highlight/zoom variants delivered; full information sequence pending |
+| 5 | scitek:asteroid-tracker | Dedicated model added | Model, solid preview and full authored wire/highlight/zoom information sequence delivered; game check pending |
 | 6 | scitek:building-armour | **Missing** | Pending |
 | 7 | scitek:construction-droids | **Missing** | Pending |
 | 8 | scitek:deflector | openfa:deflector | Pending |
