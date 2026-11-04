@@ -122,3 +122,11 @@ Full spherical rotor, mirrored continuous rear emblem and independent emissive p
 [Model contract](../sources/ui/interactive-menu-sphere/README.md).
 
 [Play sphere rotation and illumination](media/ui/interactive-menu-sphere/sphere-spin.webm) · 37 Blender-rendered frames at 30 fps.
+
+## Sci-Tek menu assets (#208)
+
+Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime palette. Separate from the HUD badge.
+
+![Sci-Tek screen logo](media/ui/scitek/screen-logo/logo-4x.png)
+
+[Source and integration contract](../sources/ui/scitek/screen-logo/README.md).

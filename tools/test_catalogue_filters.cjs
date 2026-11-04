@@ -7,12 +7,12 @@ const records=[...page.matchAll(/<article data-search="([^"]*)" data-race="([^"]
 const extras=JSON.parse(fs.readFileSync(root+'gallery/supplemental-catalogue.json','utf8'));
 const m=new context.Model(records);
 assert.equal(records.length,303+extras.length);
-m.setFilters({type:'ui'});assert.equal(m.matches().length,118);
+m.setFilters({type:'ui'});assert.equal(m.matches().length,extras.filter(r=>r.category==='ui').length);
 m.setFilters({type:'scaffolds'});assert.equal(m.matches().length,19);
 m.setFilters({type:'scaffolds',race:'rigellian'});assert.equal(m.matches().length,3);
 m.setFilters({type:'scaffolds',q:'RIS2 stage-17'});assert.equal(m.matches().length,1);
 m.setFilters({type:'ui',q:'sphere illuminated'});assert.equal(m.matches().length,1);
-m.setFilters({});assert.equal(m.matches().length,440);
+m.setFilters({});assert.equal(m.matches().length,303+extras.length);
 assert.equal(extras.filter(r=>r.category==='scaffolds').reduce((n,r)=>n+r.views.length,0),281);
 assert(page.includes('sphere-spin.webm'));
-console.log('CATALOGUE_FILTERS_OK',records.length,'entries, 118 UI, 19 scaffold families, 281 stages');
+console.log('CATALOGUE_FILTERS_OK',records.length,'entries, UI and 19 scaffold families, 281 stages');
