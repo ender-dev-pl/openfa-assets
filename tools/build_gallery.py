@@ -44,7 +44,7 @@ def index_table(groups, cultures, categories, interactive=False):
 
 
 def main():
-    inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text())
+    inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text(encoding='utf-8'))
     rows = []
     sheets = collections.defaultdict(list)
     for record in inventory['records']:
@@ -142,6 +142,8 @@ def main():
     type_options = ''.join('<option value="'+c+'">'+html.escape(CATEGORY_LABELS[c])+'</option>' for c in categories)
     page = template.replace('{{CARDS}}', ''.join(cards)).replace('{{RACES}}', race_options).replace('{{TYPES}}', type_options).replace('{{INDEX}}', index_table(sheets,cultures,categories,interactive=True)).replace('{{COUNT}}',str(len(rows)))
     (out / 'index.html').write_text(page, encoding='utf-8')
+    from build_ui_gallery import build
+    build()
     print('GALLERY_OK', len(rows), sum(len(r['studies']) for r in rows), len(sheets))
 
 

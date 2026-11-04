@@ -1,5 +1,7 @@
 # Blender UI kit
 
+[Browse current UI assets](ui.html) · Icons, registered menu panels and double-sided sphere.
+
 [Complete legacy-referenced icon and oval-button set](../sources/ui/legacy-icon-set/README.md) — 111 records, including every original HUD icon.
 
 Tracking: [#176](https://github.com/ender-dev-pl/openfa-assets/issues/176),

@@ -41,7 +41,7 @@ def main():
             assert study['glb'] and (ROOT / study['glb']).is_file(), row['id']
             assert study['animations']==animation_previews(study['blend'],study['glb'],(ROOT/study['image']).parent)
             count += 1
-    for page in ['index.html', 'construction-animations.html']:
+    for page in ['index.html', 'ui.html', 'construction-animations.html']:
         LocalLinks().feed((ROOT / 'gallery' / page).read_text(encoding='utf-8'))
     scripts = (list((ROOT / 'sources').rglob('*.py')) + list((ROOT / 'tools').glob('*.py'))
                + list((ROOT / 'archive').rglob('*.py')))
