@@ -1,0 +1,87 @@
+{
+  "issue": 190,
+  "id": "openfa:building/legacy/085",
+  "key": "BR23",
+  "name": "Fire Power",
+  "culture": "braccatian",
+  "stage": "directional-weapon-refinement",
+  "source_study": "sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br23/model.blend",
+  "source_blend_sha256": "71a6113168a16224eceab97a461a1b8097aa036dbedc44bcea3cab1960a2995e",
+  "blend_sha256": "ea2cab0af9f05375f0be6f875b005105001945f66ffba0cb18416f55f2bca009",
+  "glb_sha256": "d0c088b62cc34929a2014e672f3f5c4621a35daa7b40260a6aedbe87d66d5708",
+  "generator_sha256": "13c55a8311544f04fcdfa676064d767de6203022eb87c8e3ed0c215e37fe04c4",
+  "dependency_sha256": {
+    "refine_braccatian_pithoi.py": "3a1d91dd5c2be046be73a54b96517f88a00e64397e47ceff9bf4a1190a4f0861",
+    "manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "refine_rigellian_missiles.py": "93b0bd4881160f8d931f41b9ed26cb47bff1d457ccbd0754992ecd9567d31f67"
+  },
+  "texture_sha256": {
+    "sources/materials/reconstruction/braccatian-refined/br23/gold-casting-colour.png": "8d3efc86edcc4d5fc69fc7a1a97953721b8057ccc4e61211446166350f296349",
+    "sources/materials/reconstruction/braccatian-refined/br23/gold-casting-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/braccatian-refined/br23/red-cap-colour.png": "2dd3cb5b0c0503d69ed1c080aec113f2f69199e5b80ef1b74a63074d283cff81",
+    "sources/materials/reconstruction/braccatian-refined/br23/red-cap-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37",
+    "sources/materials/reconstruction/braccatian-refined/br23/rose-casing-colour.png": "3b92c8222b773f2622687c14f0e3f4e60a6bac717b8b2b819c75a77fd9fa71ff",
+    "sources/materials/reconstruction/braccatian-refined/br23/rose-casing-roughness.png": "088f1c98b58ea9687e6aebca42b3b78f57e563565e03a08c4e3ee4307636be37"
+  },
+  "lore_sha256": "fa1f16371e6bccb2f6c5b5412a6bbb70af76e1319809c9bc606dcc7fec012aca",
+  "reference_sha256": "3c6a5fb3329fb063496edf2708322312c1e3869eb4c9abb4a88a278b96f88885",
+  "functional_sha256": "fcadf5ea6dc8d0e96180ff9922cef07bd32f264f52e0a684bf87dc4680a0b663",
+  "mesh_objects": 10,
+  "removed_placeholder_names": [
+    "Turret armoured pedestal",
+    "Weapon pivot",
+    "Weapon barrel",
+    "Weapon dark bore",
+    "Weapon barrel.001",
+    "Weapon dark bore.001",
+    "Inset service window"
+  ],
+  "footprint": [
+    2,
+    2
+  ],
+  "views": [
+    "front-quarter",
+    "front",
+    "side",
+    "rear-quarter",
+    "equipment-detail"
+  ],
+  "blender": "4.5.15 LTS",
+  "rotation_rig": {
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "moving_meshes": [
+      "BR23 single gold plasma emitter"
+    ],
+    "static_meshes": [
+      "BR23 rose domed pedestal and narrow neck",
+      "BR23 gold radial foot 0",
+      "BR23 foot upper cap 0",
+      "BR23 gold radial foot 1",
+      "BR23 foot upper cap 1",
+      "BR23 gold radial foot 2",
+      "BR23 foot upper cap 2",
+      "BR23 gold radial foot 3",
+      "BR23 foot upper cap 3"
+    ],
+    "direction_count": 16,
+    "axis": "+Z",
+    "zero_forward": "-Y",
+    "animation": "HeadingPreview_360"
+  },
+  "observed": [
+    "All surface descriptors, sixteen base/head composites using original offsets, and all 41 full catalogue phases inspected",
+    "Rose domed base with gold radial feet; blue caps BR20, red caps BR23; BR18 single rose emitter, BR20 three separate prongs, BR23 single gold emitter",
+    "Full culture/functional evidence reviewed; Sci-Tek audit has no direct BR-specific animation"
+  ],
+  "inferred": [
+    "Exact shaped casing profiles, emitter cross-sections, hidden back surfaces and four/six repeated foot counts",
+    "Heading preview remains an authored directional demonstration, not a recovered idle or firing cycle; runtime heading registration remains separate"
+  ],
+  "geometry_policy": "Replace entire generic placeholder geometry in a separate study; retain exact directional controller and action",
+  "acceptance": "Source-led refinement; final artistic/game calibration open"
+}

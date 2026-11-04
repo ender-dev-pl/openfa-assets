@@ -1,0 +1,419 @@
+{
+  "issue": 190,
+  "id": "openfa:missile/braccatian/comms-killer",
+  "key": "BRM10",
+  "name": "Comms Killer",
+  "decision": "retained-after-focused-review",
+  "model": "sources/docs/assets/reconstruction/missiles/braccatian/comms-killer/model.blend",
+  "blend_sha256": "129b13eebb9fa493dc75292ed1bced1dcf3aefb2b0c465b38e9eceedfa0fa25f",
+  "glb_sha256": "657645c305a51bf36d6dc8a84ff22d802bf33f319d0484cd97095fef6e912c76",
+  "generator_sha256": "c5306169f7ea13599452d5053ebff585bde5842be9c848e216d3478d932ad8ac",
+  "verifier_sha256": "ad8c5f1c91dcdbf457c125c346b6c932119ebd952135dd9965aa5b1a4a066fe0",
+  "verifier_dependencies_sha256": {
+    "verify_refined_braccatian_ships.py": "3e8ceab43794cf80bfaa0197e94b0280e4e43e93b3eef2ce78cdebd507f5ecbc",
+    "verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "mesh_component_volumes.py": "7bd58b679a1a3c91fef923bd7c1655007a4a318f3bdb6dae81f16151e82a7fae",
+    "verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+    "verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+    "verify_braccatian_comms_killer.py": "515370088e2d97cf3f527f22f980f829962ee708c2f3669ddc80e85f35bbf255"
+  },
+  "evidence_sha256": "b2521d6179a2d01d13f01aceb4ff6c929e3b16956df2f5de38d55b1b8649efd8",
+  "blender": "4.5.15 LTS",
+  "native_mesh_count": 23,
+  "imported_mesh_count": 23,
+  "native_contract": {
+    "construction": {
+      "bounds": [
+        -0.14800000190734863,
+        -1.0,
+        -0.15600000321865082,
+        0.14800000190734863,
+        0.96875,
+        0.14000000059604645
+      ],
+      "dent_depths": [
+        0.0018942803144454956,
+        0.0028444350755307823,
+        0.002884820947656408,
+        0.0019472017884254456,
+        0.001999981701374054
+      ],
+      "sockets": {
+        "AlignmentForward": {
+          "position": [
+            0,
+            -1.1,
+            0
+          ],
+          "forward": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      "seam_vertices_welded": {
+        "Braccatian Comms Killer gold central shaft": 0,
+        "Braccatian Comms Killer gold forward barrel": 0,
+        "Braccatian Comms Killer gold rear barrel": 0,
+        "Braccatian Comms Killer red forward terminal": 0,
+        "Braccatian Comms Killer red rear terminal": 0,
+        "Braccatian Comms Killer gold longitudinal casting 0 0": 0,
+        "Braccatian Comms Killer gold longitudinal casting 0 1": 0,
+        "Braccatian Comms Killer gold longitudinal casting 1 0": 0,
+        "Braccatian Comms Killer gold longitudinal casting 1 1": 0,
+        "Braccatian Comms Killer service cover 0": 0,
+        "Braccatian Comms Killer service slot 0 0": 0,
+        "Braccatian Comms Killer service slot 0 1": 0,
+        "Braccatian Comms Killer fastener 0 0 0": 0,
+        "Braccatian Comms Killer fastener 0 0 1": 0,
+        "Braccatian Comms Killer fastener 0 1 0": 0,
+        "Braccatian Comms Killer fastener 0 1 1": 0,
+        "Braccatian Comms Killer service cover 1": 0,
+        "Braccatian Comms Killer service slot 1 0": 0,
+        "Braccatian Comms Killer service slot 1 1": 0,
+        "Braccatian Comms Killer fastener 1 0 0": 0,
+        "Braccatian Comms Killer fastener 1 0 1": 0,
+        "Braccatian Comms Killer fastener 1 1 0": 0,
+        "Braccatian Comms Killer fastener 1 1 1": 0
+      },
+      "geometric_vertices": {
+        "Braccatian Comms Killer gold central shaft": 7680,
+        "Braccatian Comms Killer gold forward barrel": 2688,
+        "Braccatian Comms Killer gold rear barrel": 3072,
+        "Braccatian Comms Killer red forward terminal": 1024,
+        "Braccatian Comms Killer red rear terminal": 1280,
+        "Braccatian Comms Killer gold longitudinal casting 0 0": 612,
+        "Braccatian Comms Killer gold longitudinal casting 0 1": 612,
+        "Braccatian Comms Killer gold longitudinal casting 1 0": 714,
+        "Braccatian Comms Killer gold longitudinal casting 1 1": 714,
+        "Braccatian Comms Killer service cover 0": 408,
+        "Braccatian Comms Killer service slot 0 0": 306,
+        "Braccatian Comms Killer service slot 0 1": 306,
+        "Braccatian Comms Killer fastener 0 0 0": 128,
+        "Braccatian Comms Killer fastener 0 0 1": 128,
+        "Braccatian Comms Killer fastener 0 1 0": 128,
+        "Braccatian Comms Killer fastener 0 1 1": 128,
+        "Braccatian Comms Killer service cover 1": 442,
+        "Braccatian Comms Killer service slot 1 0": 306,
+        "Braccatian Comms Killer service slot 1 1": 306,
+        "Braccatian Comms Killer fastener 1 0 0": 128,
+        "Braccatian Comms Killer fastener 1 0 1": 128,
+        "Braccatian Comms Killer fastener 1 1 0": 128,
+        "Braccatian Comms Killer fastener 1 1 1": 128
+      },
+      "closure_weld_tolerance": 0,
+      "assembly_contacts": 12,
+      "fitted_patch_samples": 90,
+      "service_fasteners": 8,
+      "narrow_join_clearance_samples": 12,
+      "occupied_body_samples": 3,
+      "exposed_casting_samples": 4,
+      "faceted_section_samples": 12
+    },
+    "textures": {
+      "materials": {
+        "Braccatian Comms Killer | worn copper body alloy": {
+          "colour": "1f0f35fa23f9e1e19ef27913e15084dc78a3d27bca80b38e7bc3bf727e8e0a53",
+          "roughness": "62d656ced4a649cfa8c62a6d008e6172a1f5c3bc86cf903b15fe1e89865558cf"
+        },
+        "Braccatian Comms Killer | worn gold body alloy": {
+          "colour": "0361127bc3fbeb40f59532ce80ef3391770056992c1371a70068282f38cbd033",
+          "roughness": "62d656ced4a649cfa8c62a6d008e6172a1f5c3bc86cf903b15fe1e89865558cf"
+        },
+        "Braccatian Comms Killer | worn gold highlight alloy": {
+          "colour": "f1d2b1fee99e5fb167fe10266544ffee2541cfe7b2b495a3aba9cf62512960da",
+          "roughness": "62d656ced4a649cfa8c62a6d008e6172a1f5c3bc86cf903b15fe1e89865558cf"
+        }
+      },
+      "mapped_meshes": 11
+    },
+    "closed_positive_meshes": 23,
+    "component_volumes": {
+      "Braccatian Comms Killer gold central shaft": [
+        0.011127199538992596
+      ],
+      "Braccatian Comms Killer gold forward barrel": [
+        0.02944514478591602
+      ],
+      "Braccatian Comms Killer gold rear barrel": [
+        0.03314097857921696
+      ],
+      "Braccatian Comms Killer red forward terminal": [
+        0.0024451293489299985
+      ],
+      "Braccatian Comms Killer red rear terminal": [
+        0.002757680627311032
+      ],
+      "Braccatian Comms Killer gold longitudinal casting 0 0": [
+        0.0002981671442352089
+      ],
+      "Braccatian Comms Killer gold longitudinal casting 0 1": [
+        0.00029816711380173215
+      ],
+      "Braccatian Comms Killer gold longitudinal casting 1 0": [
+        0.0003384595896431144
+      ],
+      "Braccatian Comms Killer gold longitudinal casting 1 1": [
+        0.0003384597231493555
+      ],
+      "Braccatian Comms Killer service cover 0": [
+        0.00032535465455415147
+      ],
+      "Braccatian Comms Killer service slot 0 0": [
+        3.954345316969938e-06
+      ],
+      "Braccatian Comms Killer service slot 0 1": [
+        3.954253315896475e-06
+      ],
+      "Braccatian Comms Killer fastener 0 0 0": [
+        6.02906394288211e-07
+      ],
+      "Braccatian Comms Killer fastener 0 0 1": [
+        6.029063942882109e-07
+      ],
+      "Braccatian Comms Killer fastener 0 1 0": [
+        6.02906394288211e-07
+      ],
+      "Braccatian Comms Killer fastener 0 1 1": [
+        6.029063942882111e-07
+      ],
+      "Braccatian Comms Killer service cover 1": [
+        0.00033891078050866464
+      ],
+      "Braccatian Comms Killer service slot 1 0": [
+        3.9538506039586245e-06
+      ],
+      "Braccatian Comms Killer service slot 1 1": [
+        3.953816280007534e-06
+      ],
+      "Braccatian Comms Killer fastener 1 0 0": [
+        6.029063942882109e-07
+      ],
+      "Braccatian Comms Killer fastener 1 0 1": [
+        6.029063942882111e-07
+      ],
+      "Braccatian Comms Killer fastener 1 1 0": [
+        6.02906394288211e-07
+      ],
+      "Braccatian Comms Killer fastener 1 1 1": [
+        6.029063942882109e-07
+      ]
+    }
+  },
+  "imported_contract": {
+    "construction": {
+      "bounds": [
+        -0.14800000190734863,
+        -1.0,
+        -0.15600000321865082,
+        0.14800000190734863,
+        0.96875,
+        0.14000000059604645
+      ],
+      "dent_depths": [
+        0.0018942803144454956,
+        0.0028444350755307823,
+        0.002884820947656408,
+        0.0019472017884254456,
+        0.001999981701374054
+      ],
+      "sockets": {
+        "AlignmentForward": {
+          "position": [
+            0,
+            -1.1,
+            0
+          ],
+          "forward": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      "seam_vertices_welded": {
+        "Braccatian Comms Killer fastener 0 0 0": 36,
+        "Braccatian Comms Killer fastener 0 0 1": 36,
+        "Braccatian Comms Killer fastener 0 1 0": 36,
+        "Braccatian Comms Killer fastener 0 1 1": 36,
+        "Braccatian Comms Killer fastener 1 0 0": 36,
+        "Braccatian Comms Killer fastener 1 0 1": 36,
+        "Braccatian Comms Killer fastener 1 1 0": 36,
+        "Braccatian Comms Killer fastener 1 1 1": 36,
+        "Braccatian Comms Killer gold central shaft": 322,
+        "Braccatian Comms Killer gold forward barrel": 830,
+        "Braccatian Comms Killer gold longitudinal casting 0 0": 140,
+        "Braccatian Comms Killer gold longitudinal casting 0 1": 140,
+        "Braccatian Comms Killer gold longitudinal casting 1 0": 152,
+        "Braccatian Comms Killer gold longitudinal casting 1 1": 152,
+        "Braccatian Comms Killer gold rear barrel": 872,
+        "Braccatian Comms Killer red forward terminal": 266,
+        "Braccatian Comms Killer red rear terminal": 268,
+        "Braccatian Comms Killer service cover 0": 116,
+        "Braccatian Comms Killer service cover 1": 120,
+        "Braccatian Comms Killer service slot 0 0": 104,
+        "Braccatian Comms Killer service slot 0 1": 104,
+        "Braccatian Comms Killer service slot 1 0": 104,
+        "Braccatian Comms Killer service slot 1 1": 104
+      },
+      "geometric_vertices": {
+        "Braccatian Comms Killer fastener 0 0 0": 128,
+        "Braccatian Comms Killer fastener 0 0 1": 128,
+        "Braccatian Comms Killer fastener 0 1 0": 128,
+        "Braccatian Comms Killer fastener 0 1 1": 128,
+        "Braccatian Comms Killer fastener 1 0 0": 128,
+        "Braccatian Comms Killer fastener 1 0 1": 128,
+        "Braccatian Comms Killer fastener 1 1 0": 128,
+        "Braccatian Comms Killer fastener 1 1 1": 128,
+        "Braccatian Comms Killer gold central shaft": 7680,
+        "Braccatian Comms Killer gold forward barrel": 2688,
+        "Braccatian Comms Killer gold longitudinal casting 0 0": 612,
+        "Braccatian Comms Killer gold longitudinal casting 0 1": 612,
+        "Braccatian Comms Killer gold longitudinal casting 1 0": 714,
+        "Braccatian Comms Killer gold longitudinal casting 1 1": 714,
+        "Braccatian Comms Killer gold rear barrel": 3072,
+        "Braccatian Comms Killer red forward terminal": 1024,
+        "Braccatian Comms Killer red rear terminal": 1280,
+        "Braccatian Comms Killer service cover 0": 408,
+        "Braccatian Comms Killer service cover 1": 442,
+        "Braccatian Comms Killer service slot 0 0": 306,
+        "Braccatian Comms Killer service slot 0 1": 306,
+        "Braccatian Comms Killer service slot 1 0": 306,
+        "Braccatian Comms Killer service slot 1 1": 306
+      },
+      "closure_weld_tolerance": 1e-06,
+      "assembly_contacts": 12,
+      "fitted_patch_samples": 90,
+      "service_fasteners": 8,
+      "narrow_join_clearance_samples": 12,
+      "occupied_body_samples": 3,
+      "exposed_casting_samples": 4,
+      "faceted_section_samples": 12
+    },
+    "textures": {
+      "materials": {
+        "Braccatian Comms Killer | worn copper body alloy": {
+          "colour": "1f0f35fa23f9e1e19ef27913e15084dc78a3d27bca80b38e7bc3bf727e8e0a53",
+          "roughness": "62d656ced4a649cfa8c62a6d008e6172a1f5c3bc86cf903b15fe1e89865558cf"
+        },
+        "Braccatian Comms Killer | worn gold body alloy": {
+          "colour": "0361127bc3fbeb40f59532ce80ef3391770056992c1371a70068282f38cbd033",
+          "roughness": "62d656ced4a649cfa8c62a6d008e6172a1f5c3bc86cf903b15fe1e89865558cf"
+        },
+        "Braccatian Comms Killer | worn gold highlight alloy": {
+          "colour": "f1d2b1fee99e5fb167fe10266544ffee2541cfe7b2b495a3aba9cf62512960da",
+          "roughness": "62d656ced4a649cfa8c62a6d008e6172a1f5c3bc86cf903b15fe1e89865558cf"
+        }
+      },
+      "mapped_meshes": 11
+    },
+    "closed_positive_meshes": 23,
+    "component_volumes": {
+      "Braccatian Comms Killer fastener 0 0 0": [
+        6.02906393293702e-07
+      ],
+      "Braccatian Comms Killer fastener 0 0 1": [
+        6.029063932937036e-07
+      ],
+      "Braccatian Comms Killer fastener 0 1 0": [
+        6.029063932937028e-07
+      ],
+      "Braccatian Comms Killer fastener 0 1 1": [
+        6.029063932937026e-07
+      ],
+      "Braccatian Comms Killer fastener 1 0 0": [
+        6.029063932937021e-07
+      ],
+      "Braccatian Comms Killer fastener 1 0 1": [
+        6.029063932937019e-07
+      ],
+      "Braccatian Comms Killer fastener 1 1 0": [
+        6.029063932937033e-07
+      ],
+      "Braccatian Comms Killer fastener 1 1 1": [
+        6.029063932937028e-07
+      ],
+      "Braccatian Comms Killer gold central shaft": [
+        0.011127199538992577
+      ],
+      "Braccatian Comms Killer gold forward barrel": [
+        0.029445144785916047
+      ],
+      "Braccatian Comms Killer gold longitudinal casting 0 0": [
+        0.0002981671442352092
+      ],
+      "Braccatian Comms Killer gold longitudinal casting 0 1": [
+        0.00029816711380173264
+      ],
+      "Braccatian Comms Killer gold longitudinal casting 1 0": [
+        0.00033845958964311433
+      ],
+      "Braccatian Comms Killer gold longitudinal casting 1 1": [
+        0.0003384597231493552
+      ],
+      "Braccatian Comms Killer gold rear barrel": [
+        0.03314097857921692
+      ],
+      "Braccatian Comms Killer red forward terminal": [
+        0.002445129348929985
+      ],
+      "Braccatian Comms Killer red rear terminal": [
+        0.002757680627311055
+      ],
+      "Braccatian Comms Killer service cover 0": [
+        0.000325354654554152
+      ],
+      "Braccatian Comms Killer service cover 1": [
+        0.0003389107805086647
+      ],
+      "Braccatian Comms Killer service slot 0 0": [
+        3.9543453169699705e-06
+      ],
+      "Braccatian Comms Killer service slot 0 1": [
+        3.954253315896516e-06
+      ],
+      "Braccatian Comms Killer service slot 1 0": [
+        3.953850603958626e-06
+      ],
+      "Braccatian Comms Killer service slot 1 1": [
+        3.95381628000754e-06
+      ]
+    }
+  },
+  "maximum_native_imported_position_error": 1.000240445137024e-06,
+  "maximum_imported_helper_matrix_error": 1.400255769112846e-07,
+  "maximum_corner_normal_error": 0.00047939666617980163,
+  "retained_native_geometry_uv_normals_preserved": true,
+  "alignment_helpers_preserved": true,
+  "effective_pbr_channels_preserved": true,
+  "legacy_descriptors_reviewed": 14,
+  "authored_clips": [],
+  "renders": {
+    "front-quarter": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.0006316231019809493,
+      "native_sha256": "3c3d98ef2ceb726ddafee37dfc2cf27d385111107665a8a3c2897716a601d000",
+      "imported_sha256": "34522de8e335bf2c2d593b807ca7c15207f21c7931515bc9ebab6f6d06675473"
+    },
+    "rear-quarter": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.00022095736653682252,
+      "native_sha256": "4b9a4ec4fe8012073f2757e3d356ea06e1697935d84b2058549cdeea90dec17f",
+      "imported_sha256": "71290915cfed599c9bf292b2f29aea8b4c9bf67e5f6640e53a362a9cb4fd2e7c"
+    },
+    "plan": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.0003910747761892708,
+      "native_sha256": "a344319e3818fb19e09db0a9429c5184ba29e1b2db01d00d00c7c90b5e32fbee",
+      "imported_sha256": "f444332a81dbb099e77556727ba899520c6e652c107264cf8a970e59cc5df4f5"
+    },
+    "equipment-detail": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.0005654766391671728,
+      "native_sha256": "3bc4e93991ef07dfa97c125e8a9baba63def766ea99a4a33c5a3d1f40bc9f3f2",
+      "imported_sha256": "c30236d975c7553d02ea0b9bfb1dfa784484413bd4764b26f2222bed620e5090"
+    }
+  },
+  "acceptance": "Fresh actual runtime review; source silhouette comparison and reasoned final retention decision remain separate; hidden sections/alloys and game calibration remain authored/open"
+}
