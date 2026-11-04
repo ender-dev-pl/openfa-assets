@@ -136,3 +136,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Tracker](media/ui/scitek/asteroid-tracker/solid.png)
 
 [Turntable](media/ui/scitek/asteroid-tracker/preview.webm) · [Wireframe](media/ui/scitek/asteroid-tracker/wireframe.png) · [Source and integration contract](../sources/ui/scitek/asteroid-tracker/README.md). [Full technical information animation](media/ui/scitek/asteroid-tracker/information.webm) follows the 564-frame clock and four caption phases; camera motion is authored.
+
+### Hi-Energy Power Stores
+
+![Authored power-store enhancement](media/ui/scitek/hi-energy-power-stores/solid.png)
+
+[Full technical animation](media/ui/scitek/hi-energy-power-stores/information.webm) · [Source and integration contract](../sources/ui/scitek/hi-energy-power-stores/README.md).

@@ -166,6 +166,134 @@
         "material_contract": "Set highlight_component red and every other technical component green; apply explicit camera transform and ortho_scale from the timeline. GLB animation alone is insufficient for portable material/camera-scale presentation.",
         "camera_fidelity": "Authored from reviewed source views; not source-exact recovered transforms."
       }
+    },
+    {
+      "id": "scitek:hi-energy-power-stores",
+      "name": "Sci-Tek Hi-Energy Power Stores",
+      "binding": "openfa:presentation/profile/research/11",
+      "legacy_index": 11,
+      "native": "gallery/media/ui/scitek/hi-energy-power-stores/tile-native.png",
+      "disabled": "gallery/media/ui/scitek/hi-energy-power-stores/tile-disabled.png",
+      "tile_registration": {
+        "canvas": [
+          144,
+          160
+        ],
+        "legacy_drawn_box": [
+          36,
+          8,
+          112,
+          153
+        ],
+        "fit": "contain; preserve model proportions"
+      },
+      "hires": "gallery/media/ui/scitek/hi-energy-power-stores/solid.png",
+      "blend": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores.blend",
+      "glb": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores.glb",
+      "readme": "sources/ui/scitek/hi-energy-power-stores/README.md",
+      "gallery_views": [
+        {
+          "label": "Full technical information animation \u2014 423 frames and three component zooms",
+          "image": "gallery/media/ui/scitek/hi-energy-power-stores/information-087.png",
+          "video": "gallery/media/ui/scitek/hi-energy-power-stores/information.webm",
+          "blend": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores-information.blend",
+          "glb": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores-information.glb"
+        },
+        {
+          "label": "Solid tile/detail and preview rotation",
+          "image": "gallery/media/ui/scitek/hi-energy-power-stores/solid.png",
+          "video": "gallery/media/ui/scitek/hi-energy-power-stores/preview.webm",
+          "blend": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores.blend",
+          "glb": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores.glb"
+        },
+        {
+          "label": "Green technical wireframe",
+          "image": "gallery/media/ui/scitek/hi-energy-power-stores/wireframe.png",
+          "blend": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores.blend",
+          "glb": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores-wireframe.glb"
+        },
+        {
+          "label": "Wireframe closeup: cooling-cylinders",
+          "image": "gallery/media/ui/scitek/hi-energy-power-stores/highlight-cooling-cylinders.png",
+          "blend": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores.blend",
+          "glb": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores-highlight-cooling-cylinders.glb"
+        },
+        {
+          "label": "Wireframe closeup: probe-input-arms",
+          "image": "gallery/media/ui/scitek/hi-energy-power-stores/highlight-probe-input-arms.png",
+          "blend": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores.blend",
+          "glb": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores-highlight-probe-input-arms.glb"
+        },
+        {
+          "label": "Wireframe closeup: power-terminals",
+          "image": "gallery/media/ui/scitek/hi-energy-power-stores/highlight-power-terminals.png",
+          "blend": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores.blend",
+          "glb": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores-highlight-power-terminals.glb"
+        }
+      ],
+      "information_phases": [
+        {
+          "component": "cooling-cylinders",
+          "first_legacy_frame": 29,
+          "last_legacy_frame": 139,
+          "highlight_glb": "hi-energy-power-stores-highlight-cooling-cylinders.glb",
+          "closeup_camera": [
+            2.936770648886977e-08,
+            -12.0,
+            1.5483347177505493
+          ],
+          "target": [
+            2.936770648886977e-08,
+            0.6049999594688416,
+            1.3983347415924072
+          ],
+          "ortho_scale": 1.600000023841858
+        },
+        {
+          "component": "probe-input-arms",
+          "first_legacy_frame": 170,
+          "last_legacy_frame": 280,
+          "highlight_glb": "hi-energy-power-stores-highlight-probe-input-arms.glb",
+          "closeup_camera": [
+            0.8366663455963135,
+            -12.0,
+            0.9578432440757751
+          ],
+          "target": [
+            0.8366663455963135,
+            -0.09117647260427475,
+            0.8078432679176331
+          ],
+          "ortho_scale": 1.600000023841858
+        },
+        {
+          "component": "power-terminals",
+          "first_legacy_frame": 311,
+          "last_legacy_frame": 421,
+          "highlight_glb": "hi-energy-power-stores-highlight-power-terminals.glb",
+          "closeup_camera": [
+            2.156011724707696e-08,
+            -12.0,
+            0.3649999797344208
+          ],
+          "target": [
+            2.156011724707696e-08,
+            4.190951752303107e-10,
+            0.2149999886751175
+          ],
+          "ortho_scale": 1.600000023841858
+        }
+      ],
+      "information_animation": {
+        "blend": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores-information.blend",
+        "glb": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores-information.glb",
+        "timeline": "sources/ui/scitek/hi-energy-power-stores/information-timeline.json",
+        "fps": 15,
+        "frame_count": 423,
+        "root": "PowerStoreRotor",
+        "material_contract": "Apply explicit timeline material selection and orthographic scale in addition to node rotation."
+      },
+      "status": "Model, preview, wire/highlight variants and complete authored information animation verified; game integration pending"
     }
   ]
 }

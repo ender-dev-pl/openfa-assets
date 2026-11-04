@@ -30,7 +30,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 8 | scitek:deflector | openfa:deflector | Pending |
 | 9 | scitek:fleet-battleship | openfa:fleet-battleship | Pending |
 | 10 | scitek:gravity-nullifier | terran:gravity-nullifier | Pending |
-| 11 | scitek:hi-energy-power-stores | **Missing** | Pending |
+| 11 | scitek:hi-energy-power-stores | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 12 | scitek:improved-sensors | **Missing** | Pending |
 | 13 | scitek:mega-missile | openfa:mega | Pending |
 | 14 | scitek:missile-bay-extension | **Missing** | Pending |
