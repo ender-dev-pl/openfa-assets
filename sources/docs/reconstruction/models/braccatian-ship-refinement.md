@@ -103,4 +103,4 @@ also remains open until the BR4C construction model is verified.
 
 ## Completed follow-up
 
-All seven station pairs, including the expanded BR4C construction model, were subsequently delivered and audited in #192. All ten Braccatian missile decisions are complete. `braccatian-refining-completion.md` and its JSON provide the final full-scope proof; the follow-up requirements above describe this earlier ship milestone. Canonical ship display names are repaired without changing any model or runtime report.
+All seven station pairs, including the expanded BR4C construction model, belong to the dependent #192 branch. All ten Braccatian missile decisions are complete. `braccatian-refining-completion.md` and its JSON provide the final full-scope proof; the follow-up requirements above describe this earlier ship milestone. Canonical ship display names are repaired without changing any model or runtime report.

@@ -12,7 +12,7 @@ from mathutils import Vector
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from verify_refined_braccatian_ships import mesh_geometry,materials,compare_materials,helpers
 from verify_rigellian_crowns import snapshot,drift,compare_render
-from verify_skymech_construction import component_volumes
+from mesh_component_volumes import component_volumes
 from verify_assault_fighter import check_meshes
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'tools'))
@@ -75,7 +75,7 @@ def run(row):
     for view in VIEWS:
         frame_view(view);p=output/('imported-'+view+'.png');scene.render.filepath=str(p);bpy.ops.render.render(write_still=True);renders[view]=compare_render(output/(view+'.png'),p,view!='equipment-detail')
     for ext in ['blend','glb']:assert sha(source.with_suffix('.'+ext))==row[ext+'_sha256'],'Accepted missile source was modified'
-    names=['verify_refined_braccatian_ships.py','verify_rigellian_crowns.py','verify_skymech_construction.py','verify_assault_fighter.py','verify_rigellian_filtration.py','verify_braccatian_'+slug.replace('-','_')+'.py']
+    names=['verify_refined_braccatian_ships.py','verify_rigellian_crowns.py','mesh_component_volumes.py','verify_assault_fighter.py','verify_rigellian_filtration.py','verify_braccatian_'+slug.replace('-','_')+'.py']
     report=dict(issue=190,id=row['id'],key=row['key'],name=row['name'],decision='retained-after-focused-review',model=row['model'],blend_sha256=row['blend_sha256'],glb_sha256=row['glb_sha256'],generator_sha256=meta['generator_sha256'],verifier_sha256=sha(Path(__file__)),verifier_dependencies_sha256={n:sha(Path(__file__).with_name(n)) for n in names},evidence_sha256=sha(EVIDENCE),blender=bpy.app.version_string,native_mesh_count=len(native),imported_mesh_count=len(imported),native_contract=native_contract,imported_contract=imported_contract,maximum_native_imported_position_error=position_error,maximum_imported_helper_matrix_error=helper_error,maximum_corner_normal_error=normal_error,retained_native_geometry_uv_normals_preserved=True,alignment_helpers_preserved=True,effective_pbr_channels_preserved=True,legacy_descriptors_reviewed=len(row['decoded_frames']),authored_clips=[],renders=renders,acceptance='Fresh actual runtime review; source silhouette comparison and reasoned final retention decision remain separate; hidden sections/alloys and game calibration remain authored/open')
     (output/'validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print('BRACCATIAN_MISSILE_RETENTION_VERIFIED',slug,len(native),position_error,normal_error,flush=True)
 

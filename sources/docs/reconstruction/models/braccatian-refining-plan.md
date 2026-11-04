@@ -9,7 +9,7 @@ The complete baseline pairs and private reference identities are recorded in
 
 ## Evidence and priorities
 
-The complete Braccatian CDB entry (records 33–61) and cross-culture mentions
+The complete Braccatian CDB entry (records 33â€“61) and cross-culture mentions
 were read. `braccatian-lore-evidence.json` records exact offsets and hashes.
 All 38 functional catalogue/name mappings were checked, with full building
 narratives read. The broad architecture describes large, richly decorated
@@ -98,4 +98,4 @@ calibration remain separate; do not edit the active game/scaffold checkout.
 
 ## Completed asset programme
 
-The full 38-definition programme and seven-culture station extension are complete. Current decisions, exact delivery paths, source/runtime proof, preserved studies and remaining authored/integration limits are in `braccatian-refining-completion.md` and `braccatian-refining-completion.json`. Initial targets and baseline elsewhere in this plan remain historical evidence.
+The full 38-definition Braccatian programme is complete. The seven-culture station extension is separate in #192. Current decisions, exact delivery paths, source/runtime proof, preserved studies and remaining authored/integration limits are in `braccatian-refining-completion.md` and `braccatian-refining-completion.json`. Initial targets and baseline elsewhere in this plan remain historical evidence.
