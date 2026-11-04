@@ -112,6 +112,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br11/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Launch Site](../gallery/media/docs/assets/reconstruction/launch-facilities/braccatian/br11/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br11/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br11/model.glb)
+
 ## Eyes-in-the-Sky
 
 `openfa:building/legacy/074`
@@ -121,6 +127,12 @@
 ![Eyes-in-the-Sky](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br12/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br12/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br12/model.glb)
+
+**Additional iteration — verified-launch-mechanism**
+
+![Eyes-in-the-Sky](../gallery/media/docs/assets/reconstruction/launch-facilities/braccatian/br12/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br12/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br12/model.glb)
 
 ## Eyes-and-Ears
 
@@ -191,6 +203,12 @@
 ![Battery](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br19/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br19/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br19/model.glb)
+
+**Additional iteration — verified-launch-mechanism**
+
+![Battery](../gallery/media/docs/assets/reconstruction/launch-facilities/braccatian/br19/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br19/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br19/model.glb)
 
 ## Turret
 

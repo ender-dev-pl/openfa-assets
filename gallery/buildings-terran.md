@@ -162,6 +162,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb09/model.glb)
 
+**Additional iteration — verified-launch-mechanism**
+
+![Satellite Silo](../gallery/media/docs/assets/reconstruction/launch-facilities/terran/pb09/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/launch-facilities/terran/pb09/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/terran/pb09/model.glb)
+
 ## Screen Generator
 
 `terran:screen-generator`
@@ -353,6 +359,18 @@
 ![Seismic Penetrator](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb21/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb21/model.glb)
+
+**Additional iteration — legacy-reference-refinement**
+
+![Seismic Penetrator](../gallery/media/docs/assets/reconstruction/seismic-penetrator/pb21/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/seismic-penetrator/pb21/model.blend) · [GLB](../sources/docs/assets/reconstruction/seismic-penetrator/pb21/model.glb)
+
+**Additional iteration — curved-nose-refinement**
+
+![Seismic Penetrator](../gallery/media/docs/assets/reconstruction/seismic-penetrator/pb21-curved-nose/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/seismic-penetrator/pb21-curved-nose/model.blend) · [GLB](../sources/docs/assets/reconstruction/seismic-penetrator/pb21-curved-nose/model.glb)
 
 ## Asteroid Engine
 
