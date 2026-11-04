@@ -27,6 +27,8 @@ Open `gallery/index.html` locally for combined search, race and asset-type filte
 python tools/build_gallery.py
 ```
 
+Animated GLB studies include local WebM previews with play/pause, a timeline and looping; downloads are deferred until playback. Static studies retain their still render. To regenerate previews after changing an animated source, run `sources/tools/blender/render_gallery_animations.py` in Blender before rebuilding the gallery. The index rejects previews whose GLB, native lighting/framing source or renderer hashes are stale.
+
 Preparation works without a game checkout or original installation. Enable `evidence`/`references` only for legacy semantic checks. Run Blender scripts through the assembled workspace; see [the workflow](docs/workflow.md). Sources and finished images are deliberately stored separately. Outputs produced during authoring remain in the ignored `.workspace/` until reviewed and explicitly published to the corresponding source or gallery destination.
 
 ## Current scope

@@ -60,11 +60,15 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb03/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb03/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb03/animation-00.webm)
+
 **Additional iteration — refined-study**
 
 ![Anti-Missile Pod](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb03/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb03/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb03/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb03/animation-00.webm)
 
 ## Solar Panel
 
@@ -168,6 +172,8 @@
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/terran/pb09/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/terran/pb09/model.glb)
 
+[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/terran/pb09/animation-00.webm)
+
 ## Screen Generator
 
 `terran:screen-generator`
@@ -248,6 +254,8 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/animation-00.webm)
+
 ## Repair Facility
 
 `terran:repair-facility`
@@ -290,11 +298,15 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb17/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb17/animation-00.webm)
+
 **Additional iteration — refined-study**
 
 ![Plasma Turret](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb17/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb17/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb17/animation-00.webm)
 
 ## Photon Turret
 
@@ -306,11 +318,15 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb18/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb18/animation-00.webm)
+
 **Additional iteration — refined-study**
 
 ![Photon Turret](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb18/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb18/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb18/animation-00.webm)
 
 ## Air Processor
 
@@ -458,6 +474,8 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/terran/landing-pad/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/terran/landing-pad/model.glb)
 
+[Play animation: GroundDeckCoverCycle](../gallery/media/docs/assets/reconstruction/buildings/terran/landing-pad/animation-00.webm)
+
 ## Laser Turret
 
 `terran:laser-turret`
@@ -468,11 +486,15 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb27/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb27/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb27/animation-00.webm)
+
 **Additional iteration — refined-study**
 
 ![Laser Turret](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb27/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb27/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb27/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb27/animation-00.webm)
 
 ## Solar Matrix
 
@@ -532,11 +554,15 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb31/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb31/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb31/animation-00.webm)
+
 **Additional iteration — refined-study**
 
 ![P. Solar Matrix](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb31/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb31/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb31/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb31/animation-00.webm)
 
 ## Refuelling Depot
 
@@ -564,11 +590,15 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb33/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb33/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb33/animation-00.webm)
+
 **Additional iteration — refined-study**
 
 ![P. Storage Tower](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb33/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb33/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb33/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb33/animation-00.webm)
 
 ## Medical Centre
 

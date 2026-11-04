@@ -15,22 +15,28 @@ const records = [...page.matchAll(/<article\s+([^>]+)>/g)].map(match => {
 assert.equal(records.length, inventory.length);
 const script = page.match(/<script>([\s\S]*?)<\/script>/)[1];
 function start(hash = '') {
-  const cards = records.map(record => ({dataset: {...record.dataset}, hidden: false}));
+  const cards = records.map(record => {
+    const video = {pauseCount: 0, pause() { this.pauseCount++; }};
+    return {dataset: {...record.dataset}, hidden: false, video, querySelectorAll: selector => selector === 'video' ? [video] : []};
+  });
   const fields = Object.fromEntries(['search', 'race', 'type', 'reset', 'count', 'empty'].map(id => [id, {
     value: '', hidden: false, textContent: '', listeners: {},
     addEventListener(event, listener) { this.listeners[event] = listener; },
     focus() { this.focused = true; }
   }]));
   const events = {};
+  const clipVideo = {pauseCount: 0, loadCount: 0, pause() { this.pauseCount++; }, load() { this.loadCount++; }};
+  const clipSelect = {value: '../second.webm', listeners: {}, addEventListener(event, listener) { this.listeners[event] = listener; },
+    closest() { return {querySelector: () => clipVideo}; }};
   const location = {pathname: '/gallery/index.html', search: '', hash};
   const sandbox = {
-    document: {querySelectorAll: () => cards, querySelector: selector => fields[selector.slice(1)]},
+    document: {querySelectorAll: selector => selector === 'article[data-race]' ? cards : selector === '.animation-clip' ? [clipSelect] : [], querySelector: selector => fields[selector.slice(1)]},
     window: {addEventListener: (event, listener) => { events[event] = listener; }},
     history: {replaceState: (_, __, url) => { location.hash = url.includes('#') ? url.slice(url.indexOf('#')) : ''; }},
     location, URLSearchParams
   };
   vm.runInNewContext(script, sandbox, {filename: 'generated-gallery.js'});
-  return {cards, fields, location,
+  return {cards, fields, location, clipSelect, clipVideo,
     visible: () => cards.filter(card => !card.hidden),
     change(race, type, q = '') {
       Object.assign(fields.race, {value: race}); Object.assign(fields.type, {value: type}); Object.assign(fields.search, {value: q});
@@ -40,6 +46,10 @@ function start(hash = '') {
   };
 }
 const app = start();
+app.clipSelect.listeners.change();
+assert.equal(app.clipVideo.src, '../second.webm');
+assert.equal(app.clipVideo.pauseCount, 1);
+assert.equal(app.clipVideo.loadCount, 1);
 assert.equal(app.visible().length, 303);
 let combinations = 0;
 for (const race of ['', ...new Set(inventory.map(row => row.culture))]) {
@@ -56,6 +66,7 @@ app.change('terran', 'ships', '  combat   eagle  ');
 assert.equal(app.visible().length, 1);
 assert.match(app.visible()[0].dataset.search, /combat eagle/);
 assert.match(app.location.hash, /race=terran/);
+assert.ok(app.cards.filter(card => card.hidden).every(card => card.video.pauseCount > 0), 'Hidden animations must pause');
 app.change('terran', 'hardpoints');
 assert.equal(app.visible().length, 0);
 app.change('shared', 'hardpoints');
@@ -79,3 +90,13 @@ for (const match of page.matchAll(/href="#([^"]*)"/g)) {
   assert.equal(linked.visible().length, expected.length, match[1]);
 }
 console.log(`GALLERY_FILTER_RUNTIME_OK ${combinations} race/type combinations; search, empty/reset, deep links, invalid values and index links`);
+const animatedStudies = inventory.flatMap(row => row.studies).filter(study => study.animations.length);
+assert.equal([...page.matchAll(/<video controls loop muted playsinline preload="none"/g)].length, animatedStudies.length);
+for (const study of animatedStudies) {
+  for (const clip of study.animations) {
+    assert.ok(page.includes(clip.video), `Missing playable clip ${clip.video}`);
+    assert.ok(fs.existsSync(path.join(root, clip.video)));
+    assert.ok(clip.distinct_pose_count > 1);
+  }
+}
+console.log(`GALLERY_PLAYABLE_PREVIEWS_OK ${animatedStudies.length} animated studies; controls, local clips, lazy preload and hidden-video pause`);

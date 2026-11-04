@@ -162,6 +162,8 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/ground-deck/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/ground-deck/model.glb)
 
+[Play animation: GroundDeckCoverCycle](../gallery/media/docs/assets/reconstruction/buildings/rigellian/ground-deck/animation-00.webm)
+
 ## Probe Launch
 
 `openfa:building/legacy/050`
@@ -284,6 +286,8 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/animation-00.webm)
+
 **Additional iteration — initial-reference-study**
 
 ![Missile Launcher](../gallery/media/docs/assets/reconstruction/buildings/rigellian/missile-launcher/front-quarter.png)
@@ -296,6 +300,8 @@
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.glb)
 
+[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/rigellian/ri18/animation-00.webm)
+
 ## Thermal Lance
 
 `openfa:building/legacy/058`
@@ -305,6 +311,8 @@
 ![Thermal Lance](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri19/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri19/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri19/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri19/animation-00.webm)
 
 **Additional iteration — initial-reference-study**
 
@@ -354,6 +362,8 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri22/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri22/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri22/animation-00.webm)
+
 **Additional iteration — initial-reference-study**
 
 ![Ex-Fang](../gallery/media/docs/assets/reconstruction/buildings/rigellian/ex-fang/front-quarter.png)
@@ -369,6 +379,8 @@
 ![Ultrathermal Lance](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri23/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri23/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri23/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri23/animation-00.webm)
 
 **Additional iteration — initial-reference-study**
 

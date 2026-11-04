@@ -118,6 +118,8 @@
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br11/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/braccatian/br11/model.glb)
 
+[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/braccatian/br11/animation-00.webm)
+
 ## Eyes-in-the-Sky
 
 `openfa:building/legacy/074`
@@ -194,6 +196,8 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br18/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br18/animation-00.webm)
+
 ## Battery
 
 `openfa:building/legacy/081`
@@ -219,6 +223,8 @@
 ![Turret](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br20/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br20/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br20/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br20/animation-00.webm)
 
 ## Subterranean Extractor
 
@@ -249,3 +255,5 @@
 ![Fire Power](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br23/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br23/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/braccatian/br23/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/braccatian/br23/animation-00.webm)

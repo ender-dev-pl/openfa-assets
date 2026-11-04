@@ -152,6 +152,8 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar15/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar15/animation-00.webm)
+
 ## Missile Launcher
 
 `openfa:building/legacy/122`
@@ -168,6 +170,8 @@
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/artemian/ar16/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/artemian/ar16/model.glb)
 
+[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/artemian/ar16/animation-00.webm)
+
 ## Auto-deterrent
 
 `openfa:building/legacy/123`
@@ -178,6 +182,8 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar17/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar17/animation-00.webm)
+
 ## Super-deterrent
 
 `openfa:building/legacy/124`
@@ -187,6 +193,8 @@
 ![Super-deterrent](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar18/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar18/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar18/animation-00.webm)
 
 ## Force Fields
 

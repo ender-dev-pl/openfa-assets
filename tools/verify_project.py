@@ -8,12 +8,13 @@ from urllib.parse import unquote, urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from asset_workspace import ROOT, sha, verify
+from gallery_animation_assets import animation_previews
 
 
 class LocalLinks(HTMLParser):
     def handle_starttag(self, tag, attrs):
         for key, value in attrs:
-            if key in ['src', 'href'] and value and not urlsplit(value).scheme:
+            if key in ['src', 'href', 'poster'] and value and not urlsplit(value).scheme:
                 if not urlsplit(value).path:
                     continue  # In-page index links carry catalogue filter state.
                 path = (ROOT / 'gallery' / unquote(urlsplit(value).path)).resolve()
@@ -38,6 +39,7 @@ def main():
             assert sha(ROOT / study['blend']) == study['sha256'] == original['sha256']
             assert (ROOT / study['image']).is_file() and study['image'].startswith('gallery/media/')
             assert study['glb'] and (ROOT / study['glb']).is_file(), row['id']
+            assert study['animations']==animation_previews(study['blend'],study['glb'],(ROOT/study['image']).parent)
             count += 1
     LocalLinks().feed((ROOT / 'gallery/index.html').read_text(encoding='utf-8'))
     scripts = (list((ROOT / 'sources').rglob('*.py')) + list((ROOT / 'tools').glob('*.py'))

@@ -118,6 +118,8 @@
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk11/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk11/model.glb)
 
+[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/mikotaj/mk11/animation-00.webm)
+
 ## Visibility
 
 `openfa:building/legacy/097`
@@ -133,6 +135,8 @@
 ![Visibility](../gallery/media/docs/assets/reconstruction/launch-facilities/mikotaj/mk12/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk12/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk12/model.glb)
+
+[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/mikotaj/mk12/animation-00.webm)
 
 ## Perception
 
@@ -190,6 +194,8 @@
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk17/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk17/model.glb)
 
+[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/mikotaj/mk17/animation-00.webm)
+
 ## Ruth-feror
 
 `openfa:building/legacy/103`
@@ -220,6 +226,8 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/animation-00.webm)
+
 ## Na-Shrekn
 
 `openfa:building/legacy/106`
@@ -229,3 +237,5 @@
 ![Na-Shrekn](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk21/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk21/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk21/animation-00.webm)

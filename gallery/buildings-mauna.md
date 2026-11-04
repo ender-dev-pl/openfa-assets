@@ -98,6 +98,8 @@
 
 [Blend](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn09/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn09/model.glb)
 
+[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/mauna/mn09/animation-00.webm)
+
 ## Satellite Pad
 
 `openfa:building/legacy/139`
@@ -144,6 +146,8 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn13/model.glb)
 
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn13/animation-00.webm)
+
 ## Attack Pods
 
 `openfa:building/legacy/143`
@@ -153,6 +157,8 @@
 ![Attack Pods](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/animation-00.webm)
 
 **Additional iteration — verified-launch-mechanism**
 
@@ -169,6 +175,8 @@
 ![Pulse Tower](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/animation-00.webm)
 
 ## Screening Pods
 
@@ -229,3 +237,5 @@
 ![Laser Boost](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/model.glb)
+
+[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/animation-00.webm)
