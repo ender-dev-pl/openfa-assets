@@ -28,6 +28,127 @@
       "glb": "sources/ui/scitek/screen-logo/scitek-screen-logo.glb",
       "readme": "sources/ui/scitek/screen-logo/README.md",
       "status": "asset runtime verified; game integration pending"
+    },
+    {
+      "id": "scitek:asteroid-tracker",
+      "name": "Sci-Tek Asteroid Tracker",
+      "binding": "openfa:presentation/profile/research/05",
+      "legacy_index": 5,
+      "native": "gallery/media/ui/scitek/asteroid-tracker/tile-native.png",
+      "hires": "gallery/media/ui/scitek/asteroid-tracker/solid.png",
+      "blend": "sources/ui/scitek/asteroid-tracker/asteroid-tracker.blend",
+      "glb": "sources/ui/scitek/asteroid-tracker/asteroid-tracker.glb",
+      "readme": "sources/ui/scitek/asteroid-tracker/README.md",
+      "gallery_views": [
+        {
+          "label": "Solid tile/detail; preview turntable",
+          "image": "gallery/media/ui/scitek/asteroid-tracker/solid.png",
+          "blend": "sources/ui/scitek/asteroid-tracker/asteroid-tracker.blend",
+          "glb": "sources/ui/scitek/asteroid-tracker/asteroid-tracker.glb",
+          "video": "gallery/media/ui/scitek/asteroid-tracker/preview.webm"
+        },
+        {
+          "label": "Green technical wireframe",
+          "image": "gallery/media/ui/scitek/asteroid-tracker/wireframe.png",
+          "blend": "sources/ui/scitek/asteroid-tracker/asteroid-tracker.blend",
+          "glb": "sources/ui/scitek/asteroid-tracker/asteroid-tracker-wireframe.glb"
+        },
+        {
+          "label": "Wireframe close-up: user-interface",
+          "image": "gallery/media/ui/scitek/asteroid-tracker/highlight-user-interface.png",
+          "blend": "sources/ui/scitek/asteroid-tracker/asteroid-tracker.blend",
+          "glb": "sources/ui/scitek/asteroid-tracker/asteroid-tracker-highlight-user-interface.glb"
+        },
+        {
+          "label": "Wireframe close-up: cooling-fans",
+          "image": "gallery/media/ui/scitek/asteroid-tracker/highlight-cooling-fans.png",
+          "blend": "sources/ui/scitek/asteroid-tracker/asteroid-tracker.blend",
+          "glb": "sources/ui/scitek/asteroid-tracker/asteroid-tracker-highlight-cooling-fans.glb"
+        },
+        {
+          "label": "Wireframe close-up: data-storage",
+          "image": "gallery/media/ui/scitek/asteroid-tracker/highlight-data-storage.png",
+          "blend": "sources/ui/scitek/asteroid-tracker/asteroid-tracker.blend",
+          "glb": "sources/ui/scitek/asteroid-tracker/asteroid-tracker-highlight-data-storage.glb"
+        },
+        {
+          "label": "Wireframe close-up: calibration-device",
+          "image": "gallery/media/ui/scitek/asteroid-tracker/highlight-calibration-device.png",
+          "blend": "sources/ui/scitek/asteroid-tracker/asteroid-tracker.blend",
+          "glb": "sources/ui/scitek/asteroid-tracker/asteroid-tracker-highlight-calibration-device.glb"
+        }
+      ],
+      "information_phases": [
+        {
+          "component": "user-interface",
+          "first_legacy_frame": 29,
+          "last_legacy_frame": 139,
+          "highlight_glb": "asteroid-tracker-highlight-user-interface.glb",
+          "closeup_camera": [
+            1.0264290571212769,
+            -12.0,
+            2.51285719871521
+          ],
+          "target": [
+            1.0264290571212769,
+            -0.4171426594257355,
+            2.3628571033477783
+          ],
+          "ortho_scale": 1.600000023841858
+        },
+        {
+          "component": "cooling-fans",
+          "first_legacy_frame": 170,
+          "last_legacy_frame": 280,
+          "highlight_glb": "asteroid-tracker-highlight-cooling-fans.glb",
+          "closeup_camera": [
+            0.3600003123283386,
+            -12.0,
+            1.5299991369247437
+          ],
+          "target": [
+            0.3600003123283386,
+            -0.6409397125244141,
+            1.3799991607666016
+          ],
+          "ortho_scale": 1.600000023841858
+        },
+        {
+          "component": "data-storage",
+          "first_legacy_frame": 311,
+          "last_legacy_frame": 421,
+          "highlight_glb": "asteroid-tracker-highlight-data-storage.glb",
+          "closeup_camera": [
+            0.0820000097155571,
+            -12.0,
+            2.2220001220703125
+          ],
+          "target": [
+            0.0820000097155571,
+            -0.5884000658988953,
+            2.072000026702881
+          ],
+          "ortho_scale": 1.600000023841858
+        },
+        {
+          "component": "calibration-device",
+          "first_legacy_frame": 452,
+          "last_legacy_frame": 562,
+          "highlight_glb": "asteroid-tracker-highlight-calibration-device.glb",
+          "closeup_camera": [
+            -0.534473180770874,
+            -12.0,
+            0.5232465863227844
+          ],
+          "target": [
+            -0.534473180770874,
+            -0.15922768414020538,
+            0.37324658036231995
+          ],
+          "ortho_scale": 1.149999976158142
+        }
+      ],
+      "status": "model, preview animation, static wireframe/highlight/zoom assets verified; complete information-motion sequence pending; game integration pending"
     }
   ]
 }

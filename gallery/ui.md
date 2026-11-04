@@ -130,3 +130,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Sci-Tek screen logo](media/ui/scitek/screen-logo/logo-4x.png)
 
 [Source and integration contract](../sources/ui/scitek/screen-logo/README.md).
+
+### Asteroid Tracker
+
+![Authored Tracker](media/ui/scitek/asteroid-tracker/solid.png)
+
+[Turntable](media/ui/scitek/asteroid-tracker/preview.webm) · [Wireframe](media/ui/scitek/asteroid-tracker/wireframe.png) · [Source and integration contract](../sources/ui/scitek/asteroid-tracker/README.md). Full information-motion sequence remains pending.

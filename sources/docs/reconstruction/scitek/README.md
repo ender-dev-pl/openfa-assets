@@ -1,6 +1,6 @@
 # Sci-Tek menu asset programme — #208
 
-All 36 actual research bindings, 36 colour preview sprites, six category frames and the main logo were located. All information-video containers and 7,282 cached original-codec image updates were checked against current source/executable/decoder hashes. Eighteen spaced phases per information film were visually reviewed; this is not exhaustive frame-by-frame motion acceptance. Preview-video containers are checked; their visual review remains pending.
+All 36 actual research bindings, 36 colour preview sprites, six category frames and the main logo were located. All information-video containers and 7,282 cached original-codec image updates were checked against current source/executable/decoder hashes. Eighteen spaced phases per information film were visually reviewed; this is not exhaustive frame-by-frame motion acceptance. All 36 colour preview films were freshly decoded with the original executable codec; eighteen spaced phases per film were inspected. This is not exhaustive frame-by-frame acceptance.
 
 23 subjects map to existing authored definitions. Thirteen dedicated upgrade/device subjects need models. Hardpoints and ships use semantic identities because their research ST/PH presentation source differs from the ordinary model sprite family; reuse is conditional on visual comparison. Existing models are preserved.
 
@@ -24,7 +24,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 2 | scitek:anti-missile-pod | terran:anti-missile-pod | Pending |
 | 3 | scitek:anti-virus-missile | openfa:anti-virus | Pending |
 | 4 | scitek:asteroid-engines | terran:asteroid-engine | Pending |
-| 5 | scitek:asteroid-tracker | **Missing** | Pending |
+| 5 | scitek:asteroid-tracker | Dedicated model added | Model, solid preview animation and static wire/highlight/zoom variants delivered; full information sequence pending |
 | 6 | scitek:building-armour | **Missing** | Pending |
 | 7 | scitek:construction-droids | **Missing** | Pending |
 | 8 | scitek:deflector | openfa:deflector | Pending |

@@ -27,7 +27,7 @@ def supplemental_records():
     scitek = ROOT/'gallery/media/ui/scitek/integration.json'
     if scitek.is_file():
         for item in json.loads(scitek.read_text())['records']:
-            rows.append(dict(id=item['id'],name=item['name'],category='ui',culture='shared',views=[dict(label='Sci-Tek menu asset',image=item['hires'],blend=item['blend'],glb=item['glb'])],detail=item['readme']))
+            rows.append(dict(id=item['id'],name=item['name'],category='ui',culture='shared',views=item.get('gallery_views') or [dict(label='Sci-Tek menu asset',image=item['hires'],blend=item['blend'],glb=item['glb'])],detail=item['readme']))
     assert sum(r['category']=='scaffolds' for r in rows)==19
     assert len({r['id'] for r in rows})==len(rows)
     for row in rows:
