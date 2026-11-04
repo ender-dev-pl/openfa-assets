@@ -1,0 +1,105 @@
+{
+  "issue": 185,
+  "id": "openfa:missile/rigellian/detonator",
+  "culture": "rigellian",
+  "name": "detonator",
+  "stage": "visible-section-refinement",
+  "source_study": "sources/docs/assets/reconstruction/missiles/rigellian/detonator/model.blend",
+  "source_blend_sha256": "6a5b134186b1bbafd97171239ff1d50dff435df250aa047a2a7a3f9f85f2dce9",
+  "blend_sha256": "6ce41184e30df542d48c261bcd6ae5a5702987cd6adcb210922936b5bd405e5e",
+  "glb_sha256": "f61c85dca5784a2999d547cc74b7abb21f008a59c38caeaad085406efe3c31db",
+  "generator_sha256": "93b0bd4881160f8d931f41b9ed26cb47bff1d457ccbd0754992ecd9567d31f67",
+  "parts_module": "rigellian_detonator_parts",
+  "parts_sha256": "d99898db3b23b471a1684a5984553369d84262c0ec06c1c4968b0974388de8ac",
+  "dependency_sha256": {
+    "refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde"
+  },
+  "removed_objects": [
+    "Rigellian Detonator rear prong 0",
+    "Rigellian Detonator rear prong 1",
+    "Rigellian Detonator centre recess surround",
+    "Rigellian Detonator blue grey centre"
+  ],
+  "added_objects": [
+    "Rigellian Detonator rear prong 0",
+    "Rigellian Detonator rear prong 1",
+    "Rigellian Detonator centre recess surround",
+    "Rigellian Detonator blue grey centre",
+    "Rigellian Detonator purple forward collar"
+  ],
+  "modified_objects": [
+    "Rigellian Detonator gold forward fitting"
+  ],
+  "preserved_objects": [
+    "Rigellian Detonator fastener 0 0 0",
+    "Rigellian Detonator fastener 0 0 1",
+    "Rigellian Detonator fastener 0 1 0",
+    "Rigellian Detonator fastener 0 1 1",
+    "Rigellian Detonator fastener 1 0 0",
+    "Rigellian Detonator fastener 1 0 1",
+    "Rigellian Detonator fastener 1 1 0",
+    "Rigellian Detonator fastener 1 1 1",
+    "Rigellian Detonator forward neck",
+    "Rigellian Detonator green core",
+    "Rigellian Detonator red forward band",
+    "Rigellian Detonator service cover 0",
+    "Rigellian Detonator service cover 1",
+    "Rigellian Detonator service slot 0 0",
+    "Rigellian Detonator service slot 0 1",
+    "Rigellian Detonator service slot 1 0",
+    "Rigellian Detonator service slot 1 1"
+  ],
+  "broad_panels": [
+    {
+      "name": "Rigellian Detonator centre recess surround",
+      "owner": "Rigellian Detonator green core",
+      "z0": -0.18,
+      "z1": 0.4,
+      "phi": -1.5707963267948966,
+      "width": 0.66,
+      "top": 0.002,
+      "back": -0.018,
+      "support": "Rigellian Detonator green core"
+    },
+    {
+      "name": "Rigellian Detonator blue grey centre",
+      "owner": "Rigellian Detonator green core",
+      "z0": -0.16,
+      "z1": 0.38,
+      "phi": -1.5707963267948966,
+      "width": 0.44000000000000006,
+      "top": 0.009,
+      "back": -0.01,
+      "support": "Rigellian Detonator centre recess surround"
+    }
+  ],
+  "fitted_collars": [],
+  "fork": {
+    "low": 0.10000000149011612,
+    "high": 1.25,
+    "outer_radius": 0.2199999988079071,
+    "half_depth": 0.06499999761581421,
+    "gold_outer_edges": false
+  },
+  "lore_sha256": "ad184af579460822a9ff224f350265e1a224dccb34c79f7c7fc1fdbf0e40284c",
+  "reference_sha256": "32e981be8493a7f6baab7b8109fb979d009bf0de2da52e59dc0a01c032ce11a5",
+  "observed": [
+    "Open green fork, distinct central colour fields and forward colour subdivisions",
+    "Gold fork edges on Flare/Temporal Stasis; Detonator purple forward region"
+  ],
+  "inferred": [
+    "Faceted fork sections, exact panel/collar dimensions and hidden surfaces",
+    "Colour regions do not establish a cockpit, propulsion mechanism or missile articulation"
+  ],
+  "state_policy": "Static solid-body study; exhaust/effects excluded; alignment helper remains uncalibrated",
+  "views": [
+    "front-quarter",
+    "top",
+    "side",
+    "rear-quarter",
+    "body-detail"
+  ],
+  "blender": "4.5.15 LTS",
+  "acceptance": "Visible section refinement; final artistic acceptance and calibrated gameplay mounting open"
+}

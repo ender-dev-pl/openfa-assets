@@ -18,6 +18,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/central-unit/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/central-unit/model.glb)
 
+**Additional iteration — crown-refinement-study**
+
+![Central Unit](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri01/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri01/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri01/model.glb)
+
 ## Filtration Plant
 
 `openfa:building/legacy/041`
@@ -50,6 +56,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.glb)
 
+**Additional iteration — structural-detail-refinement**
+
+![Nourishment Bank](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri03/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri03/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri03/model.glb)
+
 ## Community
 
 `openfa:building/legacy/043`
@@ -65,6 +77,12 @@
 ![Community](../gallery/media/docs/assets/reconstruction/buildings/rigellian/community/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/community/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/community/model.glb)
+
+**Additional iteration — crown-refinement-study**
+
+![Community](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri04/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri04/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri04/model.glb)
 
 ## Health Unit
 
@@ -82,6 +100,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/health-unit/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/health-unit/model.glb)
 
+**Additional iteration — crown-refinement-study**
+
+![Health Unit](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri05/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri05/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri05/model.glb)
+
 ## Strategic Bunker
 
 `openfa:building/legacy/045`
@@ -97,6 +121,12 @@
 ![Strategic Bunker](../gallery/media/docs/assets/reconstruction/buildings/rigellian/strategic-bunker/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.glb)
+
+**Additional iteration — crown-refinement-study**
+
+![Strategic Bunker](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri06/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri06/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri06/model.glb)
 
 ## Science Labs
 
@@ -129,6 +159,12 @@
 ![Databanks](../gallery/media/docs/assets/reconstruction/buildings/rigellian/databanks/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/databanks/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/databanks/model.glb)
+
+**Additional iteration — visible-equipment-refinement**
+
+![Databanks](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri08/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri08/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri08/model.glb)
 
 ## Construction Unit
 
@@ -228,6 +264,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/energy-gatherer/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/energy-gatherer/model.glb)
 
+**Additional iteration — visible-casing-refinement**
+
+![Energy Gatherer](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri14/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri14/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri14/model.glb)
+
 ## Energy Globe
 
 `openfa:building/legacy/054`
@@ -275,6 +317,12 @@
 ![Arms Unit](../gallery/media/docs/assets/reconstruction/buildings/rigellian/arms-unit/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/arms-unit/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/arms-unit/model.glb)
+
+**Additional iteration — crown-refinement-study**
+
+![Arms Unit](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri17/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri17/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri17/model.glb)
 
 ## Missile Launcher
 
@@ -336,6 +384,12 @@
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/extractor/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/extractor/model.glb)
 
+**Additional iteration — structural-detail-refinement**
+
+![Extractor](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri20/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri20/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri20/model.glb)
+
 ## Storage racks
 
 `openfa:building/legacy/060`
@@ -387,3 +441,9 @@
 ![Ultrathermal Lance](../gallery/media/docs/assets/reconstruction/buildings/rigellian/ultrathermal-lance/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/buildings/rigellian/ultrathermal-lance/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/ultrathermal-lance/model.glb)
+
+**Additional iteration — visible-base-refinement**
+
+![Ultrathermal Lance](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri23/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri23/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri23/model.glb)

@@ -1,0 +1,39 @@
+{
+  "issue": 185,
+  "key": "RI02",
+  "id": "openfa:building/legacy/041",
+  "name": "Filtration Plant",
+  "study": "sources/docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.blend",
+  "blend_sha256": "e3a0336eaa60bb3a054953c23c8569286394ce2985fce28d596e07b2b34a10f7",
+  "glb_sha256": "5b57c727ac681f2122d48c50fb81c0904e3124bf258b01985d1c3e14dc6658fb",
+  "verifier": "verify_rigellian_filtration.py",
+  "verifier_sha256": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+  "runner_sha256": "a7ab7fa84212289ed53689e113b1dffabb0bb7977aae9f031c282187ef1a7e9b",
+  "original_assertions_unchanged": true,
+  "canonical_inputs_unchanged": true,
+  "canonical_inputs": {
+    "sources/materials/buildings/rigellian/filtration-plant/authored-shell-colour.png": "ca2ca6e19463754d5d584ef75ce8bce60827fbb481d64e3c39b71810ec5de92b",
+    "sources/materials/buildings/rigellian/filtration-plant/authored-shell-roughness.png": "cf9e75b3d1f71c6c941eba3d4ecfb27c5ee680799884ee3abce8672a79875426",
+    "sources/docs/assets/reconstruction/buildings/rigellian/filtration-plant/authored-wear.json": "73bf5ab7863c10853a6c3649f1cc48d13d263ddfd916fa19bf26d1d1d57c7ece",
+    "sources/docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.blend": "e3a0336eaa60bb3a054953c23c8569286394ce2985fce28d596e07b2b34a10f7",
+    "sources/docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.glb": "5b57c727ac681f2122d48c50fb81c0904e3124bf258b01985d1c3e14dc6658fb",
+    "sources/docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.json": "59242e2eb90989d62130c6de7dfe176ebaf95722054ba404403e1e41b6f9e967",
+    "sources/docs/assets/reconstruction/buildings/rigellian/filtration-plant/render-review.json": "1756913859221978479c4a6613b4469b57d2db6f384efd0abeb5b3fb9d4d4f78",
+    "sources/docs/assets/reconstruction/buildings/rigellian/filtration-plant/technical-review.json": "4d491a2999dfb1e1ce480f864a059eec3024097368f2f4eb3923a9a0846a1e40"
+  },
+  "actual_runtime_report_sha256": "4d491a2999dfb1e1ce480f864a059eec3024097368f2f4eb3923a9a0846a1e40",
+  "native_overview_sha256": "2349c28f51ed8109a82b4c9d2dd6862e020e7e32ea0e2a8b5bc25d7f89557e41",
+  "imported_overview_sha256": "2494efee5d294b3e4ff7dda007aa11518d8df62132a924a53254cb43306ad948",
+  "working_copy": "artifacts/issue-185/retention-runtime/ri02/working",
+  "blender": "4.5.15 LTS",
+  "passed": true,
+  "visual_decision": "retain-existing-study",
+  "decision_reason": "Retain six gold ports, actual lower slots, stepped shoulder and tall side channel. Focused highlighted phases and current native/import views do not establish another missing major assembly or a different collar/port arrangement.",
+  "visual_acceptance": "Review decision only; final artistic acceptance and gameplay calibration remain separate",
+  "evidence_scope": "All 41 correctly paletted catalogue phases; source surface parts and current native/independent GLB views",
+  "published_renders": {
+    "imported-glb-front-quarter.png": "2494efee5d294b3e4ff7dda007aa11518d8df62132a924a53254cb43306ad948",
+    "native-current-front-quarter.png": "2349c28f51ed8109a82b4c9d2dd6862e020e7e32ea0e2a8b5bc25d7f89557e41"
+  },
+  "actual_runtime_report": "actual-runtime-report.json"
+}

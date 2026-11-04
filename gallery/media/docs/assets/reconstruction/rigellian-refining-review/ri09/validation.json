@@ -1,0 +1,41 @@
+{
+  "issue": 185,
+  "key": "RI09",
+  "id": "openfa:building/legacy/048",
+  "name": "Construction Unit",
+  "study": "sources/docs/assets/reconstruction/buildings/rigellian/construction-unit/model.blend",
+  "blend_sha256": "d3f6a2e207ed5742a86f2ead9ba16853c4462d4e4d27265ba64cba1f4be4507c",
+  "glb_sha256": "e460d293e51bfe2c974d544ccd51e57b07d3fa47aa90998084ae295b1e48f485",
+  "verifier": "verify_rigellian_construction.py",
+  "verifier_sha256": "ccdd8288f3ed97b6832b371c85ab112afbe9c93cfa94068ea79c808c878170e8",
+  "runner_sha256": "a7ab7fa84212289ed53689e113b1dffabb0bb7977aae9f031c282187ef1a7e9b",
+  "original_assertions_unchanged": true,
+  "canonical_inputs_unchanged": true,
+  "canonical_inputs": {
+    "sources/materials/buildings/rigellian/construction-unit/authored-cap-colour.png": "28f1538aadf1932bae649e53a0d2fadbd2c44bc759802a1a165a7b5c65a8337e",
+    "sources/materials/buildings/rigellian/construction-unit/authored-cap-roughness.png": "3d1c4e2f90f378af0d0c2d9c191dfbc97c9e03fca0cb442e6b3d0ff6ba41c1fc",
+    "sources/materials/buildings/rigellian/construction-unit/authored-shell-colour.png": "5e23b9a15d076aa7bf7d77ec501c3334515dca6c39fee3f93b631195efaf971c",
+    "sources/materials/buildings/rigellian/construction-unit/authored-shell-roughness.png": "89374aa7089030b999be7a7e6cd0adf08f9ccc3d5a169d445f00288f7d69acc8",
+    "sources/docs/assets/reconstruction/buildings/rigellian/construction-unit/authored-wear.json": "5a17f18aa152d3ae8b554546aedc15dabab975f216e7b374416fe92ed91f8837",
+    "sources/docs/assets/reconstruction/buildings/rigellian/construction-unit/model.blend": "d3f6a2e207ed5742a86f2ead9ba16853c4462d4e4d27265ba64cba1f4be4507c",
+    "sources/docs/assets/reconstruction/buildings/rigellian/construction-unit/model.glb": "e460d293e51bfe2c974d544ccd51e57b07d3fa47aa90998084ae295b1e48f485",
+    "sources/docs/assets/reconstruction/buildings/rigellian/construction-unit/model.json": "e49931786762f2c3fea392045a238ee859295fcf258dbbc7e09fd50b34e6903c",
+    "sources/docs/assets/reconstruction/buildings/rigellian/construction-unit/render-review.json": "df5a2ad37e7f3ce64b47aa6884829518ef968ef9e2c288f975dc14855fd5b6b8",
+    "sources/docs/assets/reconstruction/buildings/rigellian/construction-unit/technical-review.json": "597d9cf1d790ab3dd36d238bed3e21776f232444e683c54a4b58dbe7cff34703"
+  },
+  "actual_runtime_report_sha256": "597d9cf1d790ab3dd36d238bed3e21776f232444e683c54a4b58dbe7cff34703",
+  "native_overview_sha256": "c7242a99b452e674ca176314d3f295217993ce55fd83f9400cb8f6c2fc4c2c76",
+  "imported_overview_sha256": "bca9feabb7bb7f2b84478ba4638a88fdca22b71417480dbc15aae93367f85f20",
+  "working_copy": "artifacts/issue-185/retention-runtime/ri09/working",
+  "blender": "4.5.15 LTS",
+  "passed": true,
+  "visual_decision": "retain-existing-study",
+  "decision_reason": "Retain paired open wells, pale uprights, lower rim slots and raised upper well. Current contacts and body divisions reproduce the visible construction; catalogue highlighting does not establish door motion.",
+  "visual_acceptance": "Review decision only; final artistic acceptance and gameplay calibration remain separate",
+  "evidence_scope": "All 41 correctly paletted catalogue phases; source surface parts and current native/independent GLB views",
+  "published_renders": {
+    "imported-glb-front-quarter.png": "bca9feabb7bb7f2b84478ba4638a88fdca22b71417480dbc15aae93367f85f20",
+    "native-current-front-quarter.png": "c7242a99b452e674ca176314d3f295217993ce55fd83f9400cb8f6c2fc4c2c76"
+  },
+  "actual_runtime_report": "actual-runtime-report.json"
+}
