@@ -98,3 +98,15 @@ are independent; complete sphere and row composites are also supplied.
 [Source, evidence boundaries and verification](../sources/ui/legacy-main-menu/README.md).
 Only idle/bright pressed are confirmed legacy states; additional lighting is an
 OpenFA extension. These are asset previews, not integrated game-runtime captures.
+
+
+## Registered menu refinement (#193)
+
+Shared-scene panel exports have identical overlap pixels and zero gaps. The
+smooth recessed neon follows screen context; the red sphere remains invariant.
+The logo is one welded manifold mesh, with smooth joined terminals.
+
+![Orange main-menu neon](media/ui/legacy-main-menu-refined/composition-amber.png)
+![Green preset neon](media/ui/legacy-main-menu-refined/composition-green.png)
+
+[Source, registration contracts and verification](../sources/ui/legacy-main-menu-refined/README.md).
