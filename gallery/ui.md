@@ -110,3 +110,11 @@ The logo is one welded manifold mesh, with smooth joined terminals.
 ![Green preset neon](media/ui/legacy-main-menu-refined/composition-green.png)
 
 [Source, registration contracts and verification](../sources/ui/legacy-main-menu-refined/README.md).
+
+## Interactive menu sphere (#193)
+
+Full spherical rotor, mirrored continuous rear emblem and independent emissive pulse. Assets only.
+
+![Spin phase](media/ui/interactive-menu-sphere/spin-37.png)
+
+[Model contract](../sources/ui/interactive-menu-sphere/README.md).
