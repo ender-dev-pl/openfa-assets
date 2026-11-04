@@ -2,7 +2,7 @@
 
 Editable artwork, procedural generators and verification tools for the alternative OpenFA visual presentation. This repository owns asset authoring; [ed-openfa-game](https://github.com/ender-dev-pl/ed-openfa-game) owns gameplay, runtime rendering and packaged resources.
 
-**[Browse the model gallery](gallery/README.md)** · **[Interactive catalogue](gallery/index.html)** · [Workflow](docs/workflow.md) · [Project structure](docs/structure.md) · [Verification](docs/verification.md) · [Provenance](docs/provenance.md)
+**[Browse the model gallery](gallery/README.md)** · **[Interactive catalogue](gallery/index.html)** · **[Construction videos](gallery/construction-animations.html)** · [Workflow](docs/workflow.md) · [Project structure](docs/structure.md) · [Verification](docs/verification.md) · [Provenance](docs/provenance.md)
 
 The imported inventory covers **303 definitions**: 177 buildings, 41 ships/vehicles, 16 hardpoints and 69 missiles across seven cultures. It registers **366 existing study entries**, including available refined studies. The source archive contains **396 Blend files and 405 GLB files**, including earlier variants, reusable rigs and effects. Definition counts, file counts and unique geometry counts are different measures.
 
@@ -10,7 +10,7 @@ The gallery uses existing renders only. It shows each registered iteration with 
 
 ## Quick start
 
-The [Blender UI kit](gallery/ui.md) contains editable interface geometry, button
+The [HUD and menu gallery](gallery/ui.html) contains editable interface geometry, button
 states and semantic icons alongside the [model gallery](gallery/README.md).
 
 Requires Python 3.10+; install `requirements.txt`. Model operations require Blender 4.5 LTS. Optional legacy evidence checks use `requirements-evidence.txt` and additionally require a local original-game installation in the sibling `legacy` directory and its decoding tools; these files are not bundled here.

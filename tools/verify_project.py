@@ -28,6 +28,8 @@ def main():
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
     assert len(gallery) == len(inventory['records']) == 303
     assert len({r['id'] for r in gallery}) == len(gallery)
+    from gallery_supplemental import supplemental_records
+    assert json.loads((ROOT / 'gallery/supplemental-catalogue.json').read_text()) == supplemental_records()
     count = 0
     for row, definition in zip(gallery, inventory['records']):
         assert (row['id'], row['category'], row['culture']) == (definition['id'], definition['category'], definition['culture'])
@@ -41,7 +43,8 @@ def main():
             assert study['glb'] and (ROOT / study['glb']).is_file(), row['id']
             assert study['animations']==animation_previews(study['blend'],study['glb'],(ROOT/study['image']).parent)
             count += 1
-    LocalLinks().feed((ROOT / 'gallery/index.html').read_text(encoding='utf-8'))
+    for page in ['index.html', 'ui.html', 'construction-animations.html']:
+        LocalLinks().feed((ROOT / 'gallery' / page).read_text(encoding='utf-8'))
     scripts = (list((ROOT / 'sources').rglob('*.py')) + list((ROOT / 'tools').glob('*.py'))
                + list((ROOT / 'archive').rglob('*.py')))
     for path in scripts:

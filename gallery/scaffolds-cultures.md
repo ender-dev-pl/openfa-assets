@@ -1,5 +1,7 @@
 # Culture-specific construction scaffolds
 
+[Watch seven construction cycles rendered by the OpenFA engine](construction-animations.html). Each culture has a separate playable example; these are asset-studio demonstrations, with live gameplay integration tracked separately. [Reproduction and provenance](../docs/construction-previews.md).
+
 Six additional cultures plus Rigellian size-3/4: 18 new families, 264 new stage sources/exports. Together with the [preserved RIS2 refinement](scaffolds-ris2.md), 19 used families cover all 177 building definitions.
 
 [Evidence, lore precedence and integration contract](../sources/docs/reconstruction/models/culture-scaffold-study.md).
