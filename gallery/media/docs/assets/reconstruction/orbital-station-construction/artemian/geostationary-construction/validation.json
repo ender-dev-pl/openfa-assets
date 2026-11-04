@@ -1,0 +1,1604 @@
+{
+  "issue": 192,
+  "id": "openfa:ship/artemian/geostationary-construction",
+  "variant": "construction",
+  "legacy_sprite_frame": 1,
+  "blender": "4.5.15 LTS",
+  "source_blend_sha256": "c6f08b80fff0ea0685bc263ad115ebf37f6f09dbffb9e19b05f36f6581e10cb0",
+  "blend_sha256": "c9512034c94057e5ab2291948ce8bcd0c6e43684d33a1c1c5a6cb9e96667d13b",
+  "glb_sha256": "1698cf9b58b9aa6f642e61e91a519290cc1411fa9bdfa282dd6d1688c16c3a6a",
+  "generator_sha256": "255d02c33b5b3b007eb1f8be1533e71f0a008bfa52f49e8645c0c023922d69f9",
+  "verifier_sha256": "6d26d3202317cd98a87e207521f334a56a5e8c8ea285fb877673d79cd2a30708",
+  "verifier_dependencies_sha256": {
+    "refine_geostationary_states.py": "255d02c33b5b3b007eb1f8be1533e71f0a008bfa52f49e8645c0c023922d69f9",
+    "verify_artemian_geostationary_construction.py": "cd65250b3c316ab5478d7178f5900c37d3e38374c8f131e1a3a75106640050ab",
+    "verify_skymech_construction.py": "c2bf72b96e97925a17dc1829cf3b731e682e271ef68e8d764291a73de6f056f5",
+    "verify_refined_braccatian_ships.py": "3e8ceab43794cf80bfaa0197e94b0280e4e43e93b3eef2ce78cdebd507f5ecbc",
+    "verify_refined_braccatian_pithoi.py": "5876dfe420fb17f6f809c211ba864468627440b5e10df2c541379975c67d06a1",
+    "verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+  },
+  "native_mesh_count": 151,
+  "imported_mesh_count": 151,
+  "native_structure": {
+    "positive_closed_meshes": 151,
+    "closed_positive_components": 963,
+    "components_per_mesh": {
+      "AR5C construction circumferential hoops": 32,
+      "AR5C construction axial ribs": 24,
+      "AR5C construction diagonal lattice": 744,
+      "AR5C construction body support stays": 16,
+      "AR5C temporary green shield 0": 1,
+      "AR5C temporary green shield 1": 1,
+      "AR5C temporary green shield 2": 1,
+      "AR5C temporary green shield 3": 1,
+      "AR5C temporary green shield 4": 1,
+      "AR5C temporary green shield 5": 1,
+      "AR5C temporary green shield 6": 1,
+      "AR5C temporary green shield 7": 1,
+      "AR5C temporary green shield 8": 1,
+      "AR5C temporary green shield 9": 1,
+      "AR5C temporary green shield 10": 1,
+      "AR5C temporary green shield 11": 1,
+      "AR5C oblique aft shell trim": 1,
+      "Geostationary green axial body": 1,
+      "Geostationary copper aft shell": 1,
+      "Geostationary green central boss": 1,
+      "Geostationary front module 0": 1,
+      "Geostationary front module 1": 1,
+      "Geostationary front module 2": 1,
+      "Geostationary front module 3": 1,
+      "Geostationary front module 4": 1,
+      "Geostationary front module 5": 1,
+      "Geostationary dark backing face": 1,
+      "Geostationary copper face rim": 1,
+      "Geostationary module copper collar 0": 1,
+      "Geostationary module copper collar 1": 1,
+      "Geostationary module copper collar 2": 1,
+      "Geostationary module copper collar 3": 1,
+      "Geostationary module copper collar 4": 1,
+      "Geostationary module copper collar 5": 1,
+      "Geostationary aft axial stem": 1,
+      "Geostationary aft amber tip": 1,
+      "Geostationary fore axial stem": 1,
+      "Geostationary fore amber tip": 1,
+      "Geostationary side dish": 1,
+      "Geostationary side dish mast": 1,
+      "Geostationary side dish feed": 1,
+      "Geostationary side amber feed": 1,
+      "Geostationary service cover 0": 1,
+      "Geostationary service slot 0 0": 1,
+      "Geostationary service slot 0 1": 1,
+      "Geostationary fastener 0 0 0": 1,
+      "Geostationary fastener 0 0 1": 1,
+      "Geostationary fastener 0 1 0": 1,
+      "Geostationary fastener 0 1 1": 1,
+      "Geostationary service cover 1": 1,
+      "Geostationary service slot 1 0": 1,
+      "Geostationary service slot 1 1": 1,
+      "Geostationary fastener 1 0 0": 1,
+      "Geostationary fastener 1 0 1": 1,
+      "Geostationary fastener 1 1 0": 1,
+      "Geostationary fastener 1 1 1": 1,
+      "Geostationary service cover 2": 1,
+      "Geostationary service slot 2 0": 1,
+      "Geostationary service slot 2 1": 1,
+      "Geostationary fastener 2 0 0": 1,
+      "Geostationary fastener 2 0 1": 1,
+      "Geostationary fastener 2 1 0": 1,
+      "Geostationary fastener 2 1 1": 1,
+      "Geostationary service cover 3": 1,
+      "Geostationary service slot 3 0": 1,
+      "Geostationary service slot 3 1": 1,
+      "Geostationary fastener 3 0 0": 1,
+      "Geostationary fastener 3 0 1": 1,
+      "Geostationary fastener 3 1 0": 1,
+      "Geostationary fastener 3 1 1": 1,
+      "AR5C broad blue face field 0": 1,
+      "AR5C broad blue face field 1": 1,
+      "AR5C broad blue face field 2": 1,
+      "AR5C broad blue face field 3": 1,
+      "AR5C broad blue face field 4": 1,
+      "AR5C broad blue face field 5": 1,
+      "AR5C broad blue face field 6": 1,
+      "AR5C broad blue face field 7": 1,
+      "AR5C broad blue face field 8": 1,
+      "AR5C broad blue face field 9": 1,
+      "AR5C broad blue face field 10": 1,
+      "AR5C broad blue face field 11": 1,
+      "AR5C green rim equipment casing 0": 1,
+      "AR5C pale rim equipment face 0": 1,
+      "AR5C module equipment field 0": 1,
+      "AR5C pale module bar 0 0": 1,
+      "AR5C pale module bar 0 1": 1,
+      "AR5C green rim equipment casing 1": 1,
+      "AR5C pale rim equipment face 1": 1,
+      "AR5C module equipment field 1": 1,
+      "AR5C pale module bar 1 0": 1,
+      "AR5C pale module bar 1 1": 1,
+      "AR5C green rim equipment casing 2": 1,
+      "AR5C pale rim equipment face 2": 1,
+      "AR5C module equipment field 2": 1,
+      "AR5C pale module bar 2 0": 1,
+      "AR5C pale module bar 2 1": 1,
+      "AR5C green rim equipment casing 3": 1,
+      "AR5C pale rim equipment face 3": 1,
+      "AR5C module equipment field 3": 1,
+      "AR5C pale module bar 3 0": 1,
+      "AR5C pale module bar 3 1": 1,
+      "AR5C green rim equipment casing 4": 1,
+      "AR5C pale rim equipment face 4": 1,
+      "AR5C module equipment field 4": 1,
+      "AR5C pale module bar 4 0": 1,
+      "AR5C pale module bar 4 1": 1,
+      "AR5C green rim equipment casing 5": 1,
+      "AR5C pale rim equipment face 5": 1,
+      "AR5C module equipment field 5": 1,
+      "AR5C pale module bar 5 0": 1,
+      "AR5C pale module bar 5 1": 1,
+      "AR5C broad neck equipment shell 0": 1,
+      "AR5C neck equipment field 0": 1,
+      "AR5C neck pale equipment bar 0 0": 1,
+      "AR5C neck pale equipment bar 0 1": 1,
+      "AR5C neck pale equipment bar 0 2": 1,
+      "AR5C broad neck equipment shell 1": 1,
+      "AR5C neck equipment field 1": 1,
+      "AR5C neck pale equipment bar 1 0": 1,
+      "AR5C neck pale equipment bar 1 1": 1,
+      "AR5C neck pale equipment bar 1 2": 1,
+      "AR5C broad neck equipment shell 2": 1,
+      "AR5C neck equipment field 2": 1,
+      "AR5C neck pale equipment bar 2 0": 1,
+      "AR5C neck pale equipment bar 2 1": 1,
+      "AR5C neck pale equipment bar 2 2": 1,
+      "AR5C broad neck equipment shell 3": 1,
+      "AR5C neck equipment field 3": 1,
+      "AR5C neck pale equipment bar 3 0": 1,
+      "AR5C neck pale equipment bar 3 1": 1,
+      "AR5C neck pale equipment bar 3 2": 1,
+      "AR5C broad axial armour field 0": 1,
+      "AR5C broad axial armour field 1": 1,
+      "AR5C broad axial armour field 2": 1,
+      "AR5C broad axial armour field 3": 1,
+      "AR5C broad axial armour field 4": 1,
+      "AR5C broad axial armour field 5": 1,
+      "AR5C broad axial armour field 6": 1,
+      "AR5C broad axial armour field 7": 1,
+      "AR5C central boss equipment field": 1,
+      "AR5C central pale equipment bar 0": 1,
+      "AR5C central pale equipment bar 1": 1,
+      "AR5C central pale equipment bar 2": 1,
+      "AR5C broad aft green field 0": 1,
+      "AR5C broad aft green field 1": 1,
+      "AR5C broad aft green field 2": 1,
+      "AR5C broad aft green field 3": 1,
+      "AR5C construction carriage rail clamp": 1,
+      "AR5C construction carriage service case": 1,
+      "AR5C construction carriage amber marker": 1
+    },
+    "volumes": {
+      "AR5C construction circumferential hoops": 0.08221724898385001,
+      "AR5C construction axial ribs": 0.09595929945967636,
+      "AR5C construction diagonal lattice": 0.0601946360743752,
+      "AR5C construction body support stays": 0.02906295030334149,
+      "AR5C temporary green shield 0": 0.03030909132119221,
+      "AR5C temporary green shield 1": 0.029181004938711445,
+      "AR5C temporary green shield 2": 0.03030906720442122,
+      "AR5C temporary green shield 3": 0.02918062244123314,
+      "AR5C temporary green shield 4": 0.030309504164116464,
+      "AR5C temporary green shield 5": 0.0291806091274262,
+      "AR5C temporary green shield 6": 0.030309091321192243,
+      "AR5C temporary green shield 7": 0.0291810049387114,
+      "AR5C temporary green shield 8": 0.03030906720442121,
+      "AR5C temporary green shield 9": 0.029180622441233168,
+      "AR5C temporary green shield 10": 0.030309504164116468,
+      "AR5C temporary green shield 11": 0.029180609127426194,
+      "AR5C oblique aft shell trim": 0.006719823416042977,
+      "Geostationary green axial body": 1.1749270483671304,
+      "Geostationary copper aft shell": 0.844210755204055,
+      "Geostationary green central boss": 0.12530664815038492,
+      "Geostationary front module 0": 0.03621623082855288,
+      "Geostationary front module 1": 0.036216152568045,
+      "Geostationary front module 2": 0.036216216868410846,
+      "Geostationary front module 3": 0.036216197857532065,
+      "Geostationary front module 4": 0.0362161302226696,
+      "Geostationary front module 5": 0.036216232377569234,
+      "Geostationary dark backing face": 0.5875443277445751,
+      "Geostationary copper face rim": 0.3083217912074663,
+      "Geostationary module copper collar 0": 0.00178503175163769,
+      "Geostationary module copper collar 1": 0.0017849930592414407,
+      "Geostationary module copper collar 2": 0.001785036917501277,
+      "Geostationary module copper collar 3": 0.0017850317516376981,
+      "Geostationary module copper collar 4": 0.001784993059241439,
+      "Geostationary module copper collar 5": 0.0017850369175012757,
+      "Geostationary aft axial stem": 0.0008030562849702011,
+      "Geostationary aft amber tip": 0.00010915066109012639,
+      "Geostationary fore axial stem": 0.00043835184809874284,
+      "Geostationary fore amber tip": 0.00010915066109012631,
+      "Geostationary side dish": 0.005300764726284651,
+      "Geostationary side dish mast": 0.001084857339037625,
+      "Geostationary side dish feed": 1.2842753251178659e-05,
+      "Geostationary side amber feed": 1.71554583508185e-05,
+      "Geostationary service cover 0": 0.0007923536366435752,
+      "Geostationary service slot 0 0": 1.941888413840395e-05,
+      "Geostationary service slot 0 1": 1.8957586636928903e-05,
+      "Geostationary fastener 0 0 0": 1.3528676212161067e-06,
+      "Geostationary fastener 0 0 1": 1.3528675004986935e-06,
+      "Geostationary fastener 0 1 0": 1.3528673546287307e-06,
+      "Geostationary fastener 0 1 1": 1.352867616074571e-06,
+      "Geostationary service cover 1": 0.0007923517788486031,
+      "Geostationary service slot 1 0": 1.9420870513912426e-05,
+      "Geostationary service slot 1 1": 1.895652269788092e-05,
+      "Geostationary fastener 1 0 0": 1.352867499875313e-06,
+      "Geostationary fastener 1 0 1": 1.3528672817297485e-06,
+      "Geostationary fastener 1 1 0": 1.352867033983084e-06,
+      "Geostationary fastener 1 1 1": 1.3528676459321986e-06,
+      "Geostationary service cover 2": 0.0012137903405040628,
+      "Geostationary service slot 2 0": 3.113164460918006e-05,
+      "Geostationary service slot 2 1": 3.138908057446538e-05,
+      "Geostationary fastener 2 0 0": 1.3528674484178344e-06,
+      "Geostationary fastener 2 0 1": 1.3528676066006385e-06,
+      "Geostationary fastener 2 1 0": 1.3528674662449932e-06,
+      "Geostationary fastener 2 1 1": 1.3528674722380063e-06,
+      "Geostationary service cover 3": 0.001214007067029381,
+      "Geostationary service slot 3 0": 3.110405734396688e-05,
+      "Geostationary service slot 3 1": 3.169204472423379e-05,
+      "Geostationary fastener 3 0 0": 1.3528676071866875e-06,
+      "Geostationary fastener 3 0 1": 1.3528675081699282e-06,
+      "Geostationary fastener 3 1 0": 1.3528671234816139e-06,
+      "Geostationary fastener 3 1 1": 1.352867479083838e-06,
+      "AR5C broad blue face field 0": 0.00017078560844647334,
+      "AR5C broad blue face field 1": 0.0001707856084464734,
+      "AR5C broad blue face field 2": 0.00017078560844647358,
+      "AR5C broad blue face field 3": 0.00017078560844647356,
+      "AR5C broad blue face field 4": 0.00017078560844647328,
+      "AR5C broad blue face field 5": 0.0001707856084464734,
+      "AR5C broad blue face field 6": 0.00017078560844647342,
+      "AR5C broad blue face field 7": 0.00017078560844647353,
+      "AR5C broad blue face field 8": 0.0001707856084464732,
+      "AR5C broad blue face field 9": 0.0001707856084464733,
+      "AR5C broad blue face field 10": 0.0001707856084464734,
+      "AR5C broad blue face field 11": 0.00017078560844647358,
+      "AR5C green rim equipment casing 0": 0.005442234607875443,
+      "AR5C pale rim equipment face 0": 9.249533975127642e-05,
+      "AR5C module equipment field 0": 0.0005626657139525071,
+      "AR5C pale module bar 0 0": 5.405734081402146e-05,
+      "AR5C pale module bar 0 1": 5.133155538790904e-05,
+      "AR5C green rim equipment casing 1": 0.0054423650821415,
+      "AR5C pale rim equipment face 1": 9.24953397512764e-05,
+      "AR5C module equipment field 1": 0.0005626834984771758,
+      "AR5C pale module bar 1 0": 5.414450093773234e-05,
+      "AR5C pale module bar 1 1": 5.1378145792331924e-05,
+      "AR5C green rim equipment casing 2": 0.0054421338437956905,
+      "AR5C pale rim equipment face 2": 9.249533975127635e-05,
+      "AR5C module equipment field 2": 0.0005626736161262377,
+      "AR5C pale module bar 2 0": 5.4109641066890605e-05,
+      "AR5C pale module bar 2 1": 5.131639959069853e-05,
+      "AR5C green rim equipment casing 3": 0.005442234607875444,
+      "AR5C pale rim equipment face 3": 9.249533975127639e-05,
+      "AR5C module equipment field 3": 0.0005626657139525076,
+      "AR5C pale module bar 3 0": 5.405734081402148e-05,
+      "AR5C pale module bar 3 1": 5.1331555387909125e-05,
+      "AR5C green rim equipment casing 4": 0.005442355279001272,
+      "AR5C pale rim equipment face 4": 9.249533975127639e-05,
+      "AR5C module equipment field 4": 0.000562413688991607,
+      "AR5C pale module bar 4 0": 5.4096134615822e-05,
+      "AR5C pale module bar 4 1": 5.137382084185995e-05,
+      "AR5C green rim equipment casing 5": 0.0054421520385403745,
+      "AR5C pale rim equipment face 5": 9.249533975127636e-05,
+      "AR5C module equipment field 5": 0.0005624150267736393,
+      "AR5C pale module bar 5 0": 5.4092116316647195e-05,
+      "AR5C pale module bar 5 1": 5.130331317459995e-05,
+      "AR5C broad neck equipment shell 0": 0.18536020981618387,
+      "AR5C neck equipment field 0": 0.002740552828591092,
+      "AR5C neck pale equipment bar 0 0": 0.00012037730962906756,
+      "AR5C neck pale equipment bar 0 1": 0.00012760253302701582,
+      "AR5C neck pale equipment bar 0 2": 0.00012636517173329292,
+      "AR5C broad neck equipment shell 1": 0.18536021019453403,
+      "AR5C neck equipment field 1": 0.0027405528285910927,
+      "AR5C neck pale equipment bar 1 0": 0.00012037730962906784,
+      "AR5C neck pale equipment bar 1 1": 0.0001276025330270159,
+      "AR5C neck pale equipment bar 1 2": 0.00012636517173329282,
+      "AR5C broad neck equipment shell 2": 0.18536020981618428,
+      "AR5C neck equipment field 2": 0.0027405528285910927,
+      "AR5C neck pale equipment bar 2 0": 0.0001203773096290677,
+      "AR5C neck pale equipment bar 2 1": 0.00012760253302701582,
+      "AR5C neck pale equipment bar 2 2": 0.00012636517173329287,
+      "AR5C broad neck equipment shell 3": 0.1853602101072229,
+      "AR5C neck equipment field 3": 0.002740552828591094,
+      "AR5C neck pale equipment bar 3 0": 0.00012037730962906715,
+      "AR5C neck pale equipment bar 3 1": 0.00012760253302701588,
+      "AR5C neck pale equipment bar 3 2": 0.00012636517173329268,
+      "AR5C broad axial armour field 0": 0.0068439149057534605,
+      "AR5C broad axial armour field 1": 0.00684395492711927,
+      "AR5C broad axial armour field 2": 0.006843914905753457,
+      "AR5C broad axial armour field 3": 0.006843954927119251,
+      "AR5C broad axial armour field 4": 0.006843914905753469,
+      "AR5C broad axial armour field 5": 0.0068439549271192375,
+      "AR5C broad axial armour field 6": 0.006840865598285901,
+      "AR5C broad axial armour field 7": 0.006843954927119261,
+      "AR5C central boss equipment field": 0.0017788660563163809,
+      "AR5C central pale equipment bar 0": 7.381950017657387e-05,
+      "AR5C central pale equipment bar 1": 6.792811734377774e-05,
+      "AR5C central pale equipment bar 2": 6.196999165095069e-05,
+      "AR5C broad aft green field 0": 0.004658019993176533,
+      "AR5C broad aft green field 1": 0.004658019993176537,
+      "AR5C broad aft green field 2": 0.004658019993176535,
+      "AR5C broad aft green field 3": 0.004654036259149318,
+      "AR5C construction carriage rail clamp": 0.0012545090608193743,
+      "AR5C construction carriage service case": 0.002919068971233778,
+      "AR5C construction carriage amber marker": 5.452096170414458e-05
+    },
+    "contacts": [
+      {
+        "body": [
+          0.20601874589920044,
+          0.0,
+          -0.550000011920929
+        ],
+        "frame": [
+          1.4013423919677734,
+          0.0,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          0.14567725360393524,
+          0.14567725360393524,
+          -0.550000011920929
+        ],
+        "frame": [
+          0.9908987879753113,
+          0.9908987879753113,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          1.2615009748787942e-17,
+          0.20601874589920044,
+          -0.550000011920929
+        ],
+        "frame": [
+          8.580748158151482e-17,
+          1.4013423919677734,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.14567725360393524,
+          0.14567725360393524,
+          -0.550000011920929
+        ],
+        "frame": [
+          -0.9908987879753113,
+          0.9908987879753113,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.20601874589920044,
+          2.5230019497575884e-17,
+          -0.550000011920929
+        ],
+        "frame": [
+          -1.4013423919677734,
+          1.7161496316302964e-16,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.14567725360393524,
+          -0.14567725360393524,
+          -0.550000011920929
+        ],
+        "frame": [
+          -0.9908987879753113,
+          -0.9908987879753113,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -3.7845031727905663e-17,
+          -0.20601874589920044,
+          -0.550000011920929
+        ],
+        "frame": [
+          -2.5742247121432406e-16,
+          -1.4013423919677734,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          0.14567725360393524,
+          -0.14567725360393524,
+          -0.550000011920929
+        ],
+        "frame": [
+          0.9908987879753113,
+          -0.9908987879753113,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          0.20724999904632568,
+          0.0,
+          0.550000011920929
+        ],
+        "frame": [
+          1.6470999717712402,
+          0.0,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          0.14654788374900818,
+          0.14654788374900818,
+          0.550000011920929
+        ],
+        "frame": [
+          1.1646757125854492,
+          1.1646757125854492,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          1.2690402298538475e-17,
+          0.20724999904632568,
+          0.550000011920929
+        ],
+        "frame": [
+          1.0085578951309591e-16,
+          1.6470999717712402,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.14654788374900818,
+          0.14654788374900818,
+          0.550000011920929
+        ],
+        "frame": [
+          -1.1646757125854492,
+          1.1646757125854492,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.20724999904632568,
+          2.538080459707695e-17,
+          0.550000011920929
+        ],
+        "frame": [
+          -1.6470999717712402,
+          2.0171157902619183e-16,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.14654788374900818,
+          -0.14654788374900818,
+          0.550000011920929
+        ],
+        "frame": [
+          -1.1646757125854492,
+          -1.1646757125854492,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -3.807120606843481e-17,
+          -0.20724999904632568,
+          0.550000011920929
+        ],
+        "frame": [
+          -3.0256736853928774e-16,
+          -1.6470999717712402,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          0.14654788374900818,
+          -0.14654788374900818,
+          0.550000011920929
+        ],
+        "frame": [
+          1.1646757125854492,
+          -1.1646757125854492,
+          0.550000011920929
+        ]
+      },
+      {
+        "external_secondary_fixture_parts": [
+          "Geostationary side amber feed",
+          "Geostationary side dish",
+          "Geostationary side dish feed",
+          "Geostationary side dish mast"
+        ],
+        "dish_radial_projection_beyond_scaffold": 0.35380003452301056
+      }
+    ],
+    "bounds": [
+      -1.6639206409454346,
+      -1.7589999437332153,
+      -3.720978021621704,
+      1.6639206409454346,
+      1.6639206409454346,
+      2.652306079864502
+    ]
+  },
+  "imported_structure": {
+    "positive_closed_meshes": 151,
+    "closed_positive_components": 963,
+    "components_per_mesh": {
+      "AR5C construction axial ribs": 24,
+      "AR5C construction body support stays": 16,
+      "AR5C construction circumferential hoops": 32,
+      "AR5C construction diagonal lattice": 744,
+      "AR5C temporary green shield 0": 1,
+      "AR5C temporary green shield 1": 1,
+      "AR5C temporary green shield 10": 1,
+      "AR5C temporary green shield 11": 1,
+      "AR5C temporary green shield 2": 1,
+      "AR5C temporary green shield 3": 1,
+      "AR5C temporary green shield 4": 1,
+      "AR5C temporary green shield 5": 1,
+      "AR5C temporary green shield 6": 1,
+      "AR5C temporary green shield 7": 1,
+      "AR5C temporary green shield 8": 1,
+      "AR5C temporary green shield 9": 1,
+      "AR5C broad aft green field 0": 1,
+      "AR5C broad aft green field 1": 1,
+      "AR5C broad aft green field 2": 1,
+      "AR5C broad aft green field 3": 1,
+      "AR5C broad axial armour field 0": 1,
+      "AR5C broad axial armour field 1": 1,
+      "AR5C broad axial armour field 2": 1,
+      "AR5C broad axial armour field 3": 1,
+      "AR5C broad axial armour field 4": 1,
+      "AR5C broad axial armour field 5": 1,
+      "AR5C broad axial armour field 6": 1,
+      "AR5C broad axial armour field 7": 1,
+      "AR5C broad blue face field 0": 1,
+      "AR5C broad blue face field 1": 1,
+      "AR5C broad blue face field 10": 1,
+      "AR5C broad blue face field 11": 1,
+      "AR5C broad blue face field 2": 1,
+      "AR5C broad blue face field 3": 1,
+      "AR5C broad blue face field 4": 1,
+      "AR5C broad blue face field 5": 1,
+      "AR5C broad blue face field 6": 1,
+      "AR5C broad blue face field 7": 1,
+      "AR5C broad blue face field 8": 1,
+      "AR5C broad blue face field 9": 1,
+      "AR5C broad neck equipment shell 0": 1,
+      "AR5C broad neck equipment shell 1": 1,
+      "AR5C broad neck equipment shell 2": 1,
+      "AR5C broad neck equipment shell 3": 1,
+      "AR5C central boss equipment field": 1,
+      "AR5C central pale equipment bar 0": 1,
+      "AR5C central pale equipment bar 1": 1,
+      "AR5C central pale equipment bar 2": 1,
+      "AR5C green rim equipment casing 0": 1,
+      "AR5C green rim equipment casing 1": 1,
+      "AR5C green rim equipment casing 2": 1,
+      "AR5C green rim equipment casing 3": 1,
+      "AR5C green rim equipment casing 4": 1,
+      "AR5C green rim equipment casing 5": 1,
+      "AR5C module equipment field 0": 1,
+      "AR5C module equipment field 1": 1,
+      "AR5C module equipment field 2": 1,
+      "AR5C module equipment field 3": 1,
+      "AR5C module equipment field 4": 1,
+      "AR5C module equipment field 5": 1,
+      "AR5C neck equipment field 0": 1,
+      "AR5C neck equipment field 1": 1,
+      "AR5C neck equipment field 2": 1,
+      "AR5C neck equipment field 3": 1,
+      "AR5C neck pale equipment bar 0 0": 1,
+      "AR5C neck pale equipment bar 0 1": 1,
+      "AR5C neck pale equipment bar 0 2": 1,
+      "AR5C neck pale equipment bar 1 0": 1,
+      "AR5C neck pale equipment bar 1 1": 1,
+      "AR5C neck pale equipment bar 1 2": 1,
+      "AR5C neck pale equipment bar 2 0": 1,
+      "AR5C neck pale equipment bar 2 1": 1,
+      "AR5C neck pale equipment bar 2 2": 1,
+      "AR5C neck pale equipment bar 3 0": 1,
+      "AR5C neck pale equipment bar 3 1": 1,
+      "AR5C neck pale equipment bar 3 2": 1,
+      "AR5C oblique aft shell trim": 1,
+      "AR5C pale module bar 0 0": 1,
+      "AR5C pale module bar 0 1": 1,
+      "AR5C pale module bar 1 0": 1,
+      "AR5C pale module bar 1 1": 1,
+      "AR5C pale module bar 2 0": 1,
+      "AR5C pale module bar 2 1": 1,
+      "AR5C pale module bar 3 0": 1,
+      "AR5C pale module bar 3 1": 1,
+      "AR5C pale module bar 4 0": 1,
+      "AR5C pale module bar 4 1": 1,
+      "AR5C pale module bar 5 0": 1,
+      "AR5C pale module bar 5 1": 1,
+      "AR5C pale rim equipment face 0": 1,
+      "AR5C pale rim equipment face 1": 1,
+      "AR5C pale rim equipment face 2": 1,
+      "AR5C pale rim equipment face 3": 1,
+      "AR5C pale rim equipment face 4": 1,
+      "AR5C pale rim equipment face 5": 1,
+      "Geostationary aft amber tip": 1,
+      "Geostationary aft axial stem": 1,
+      "Geostationary copper aft shell": 1,
+      "Geostationary copper face rim": 1,
+      "Geostationary dark backing face": 1,
+      "Geostationary fastener 0 0 0": 1,
+      "Geostationary fastener 0 0 1": 1,
+      "Geostationary fastener 0 1 0": 1,
+      "Geostationary fastener 0 1 1": 1,
+      "Geostationary fastener 1 0 0": 1,
+      "Geostationary fastener 1 0 1": 1,
+      "Geostationary fastener 1 1 0": 1,
+      "Geostationary fastener 1 1 1": 1,
+      "Geostationary fastener 2 0 0": 1,
+      "Geostationary fastener 2 0 1": 1,
+      "Geostationary fastener 2 1 0": 1,
+      "Geostationary fastener 2 1 1": 1,
+      "Geostationary fastener 3 0 0": 1,
+      "Geostationary fastener 3 0 1": 1,
+      "Geostationary fastener 3 1 0": 1,
+      "Geostationary fastener 3 1 1": 1,
+      "Geostationary fore amber tip": 1,
+      "Geostationary fore axial stem": 1,
+      "Geostationary front module 0": 1,
+      "Geostationary front module 1": 1,
+      "Geostationary front module 2": 1,
+      "Geostationary front module 3": 1,
+      "Geostationary front module 4": 1,
+      "Geostationary front module 5": 1,
+      "Geostationary green axial body": 1,
+      "Geostationary green central boss": 1,
+      "Geostationary module copper collar 0": 1,
+      "Geostationary module copper collar 1": 1,
+      "Geostationary module copper collar 2": 1,
+      "Geostationary module copper collar 3": 1,
+      "Geostationary module copper collar 4": 1,
+      "Geostationary module copper collar 5": 1,
+      "Geostationary service cover 0": 1,
+      "Geostationary service cover 1": 1,
+      "Geostationary service cover 2": 1,
+      "Geostationary service cover 3": 1,
+      "Geostationary service slot 0 0": 1,
+      "Geostationary service slot 0 1": 1,
+      "Geostationary service slot 1 0": 1,
+      "Geostationary service slot 1 1": 1,
+      "Geostationary service slot 2 0": 1,
+      "Geostationary service slot 2 1": 1,
+      "Geostationary service slot 3 0": 1,
+      "Geostationary service slot 3 1": 1,
+      "Geostationary side amber feed": 1,
+      "Geostationary side dish": 1,
+      "Geostationary side dish feed": 1,
+      "Geostationary side dish mast": 1,
+      "AR5C construction carriage amber marker": 1,
+      "AR5C construction carriage rail clamp": 1,
+      "AR5C construction carriage service case": 1
+    },
+    "volumes": {
+      "AR5C construction axial ribs": 0.0959592994596764,
+      "AR5C construction body support stays": 0.02906295030334148,
+      "AR5C construction circumferential hoops": 0.08221724898385004,
+      "AR5C construction diagonal lattice": 0.060194636074375155,
+      "AR5C temporary green shield 0": 0.030309091321192236,
+      "AR5C temporary green shield 1": 0.029181004938711428,
+      "AR5C temporary green shield 10": 0.03030950416411648,
+      "AR5C temporary green shield 11": 0.029180609127426205,
+      "AR5C temporary green shield 2": 0.030309067204421225,
+      "AR5C temporary green shield 3": 0.02918062244123313,
+      "AR5C temporary green shield 4": 0.030309504164116454,
+      "AR5C temporary green shield 5": 0.029180609127426208,
+      "AR5C temporary green shield 6": 0.030309091321192246,
+      "AR5C temporary green shield 7": 0.029181004938711428,
+      "AR5C temporary green shield 8": 0.030309067204421208,
+      "AR5C temporary green shield 9": 0.029180622441233144,
+      "AR5C broad aft green field 0": 0.004658019993176531,
+      "AR5C broad aft green field 1": 0.00465801999317653,
+      "AR5C broad aft green field 2": 0.004658019993176546,
+      "AR5C broad aft green field 3": 0.004654036259149322,
+      "AR5C broad axial armour field 0": 0.006843914905753453,
+      "AR5C broad axial armour field 1": 0.006843954927119268,
+      "AR5C broad axial armour field 2": 0.0068439149057534605,
+      "AR5C broad axial armour field 3": 0.006843954927119255,
+      "AR5C broad axial armour field 4": 0.006843914905753459,
+      "AR5C broad axial armour field 5": 0.006843954927119254,
+      "AR5C broad axial armour field 6": 0.006840865598285901,
+      "AR5C broad axial armour field 7": 0.006843954927119252,
+      "AR5C broad blue face field 0": 0.00017078560844647328,
+      "AR5C broad blue face field 1": 0.00017078560844647337,
+      "AR5C broad blue face field 10": 0.00017078560844647345,
+      "AR5C broad blue face field 11": 0.00017078560844647353,
+      "AR5C broad blue face field 2": 0.0001707856084464732,
+      "AR5C broad blue face field 3": 0.00017078560844647334,
+      "AR5C broad blue face field 4": 0.00017078560844647342,
+      "AR5C broad blue face field 5": 0.00017078560844647358,
+      "AR5C broad blue face field 6": 0.00017078560844647356,
+      "AR5C broad blue face field 7": 0.0001707856084464733,
+      "AR5C broad blue face field 8": 0.0001707856084464734,
+      "AR5C broad blue face field 9": 0.00017078560844647358,
+      "AR5C broad neck equipment shell 0": 0.18536020981618415,
+      "AR5C broad neck equipment shell 1": 0.18536021019453375,
+      "AR5C broad neck equipment shell 2": 0.18536020981618373,
+      "AR5C broad neck equipment shell 3": 0.18536021010722237,
+      "AR5C central boss equipment field": 0.0017788660563163802,
+      "AR5C central pale equipment bar 0": 7.381950017657424e-05,
+      "AR5C central pale equipment bar 1": 6.792811734377762e-05,
+      "AR5C central pale equipment bar 2": 6.19699916509507e-05,
+      "AR5C green rim equipment casing 0": 0.005442234607875442,
+      "AR5C green rim equipment casing 1": 0.005442365082141504,
+      "AR5C green rim equipment casing 2": 0.005442133843795683,
+      "AR5C green rim equipment casing 3": 0.0054422346078754425,
+      "AR5C green rim equipment casing 4": 0.005442355279001282,
+      "AR5C green rim equipment casing 5": 0.0054421520385403675,
+      "AR5C module equipment field 0": 0.000562665713952507,
+      "AR5C module equipment field 1": 0.0005626834984771754,
+      "AR5C module equipment field 2": 0.0005626736161262373,
+      "AR5C module equipment field 3": 0.0005626657139525075,
+      "AR5C module equipment field 4": 0.0005624136889916074,
+      "AR5C module equipment field 5": 0.0005624150267736403,
+      "AR5C neck equipment field 0": 0.0027405528285910897,
+      "AR5C neck equipment field 1": 0.002740552828591093,
+      "AR5C neck equipment field 2": 0.002740552828591092,
+      "AR5C neck equipment field 3": 0.002740552828591092,
+      "AR5C neck pale equipment bar 0 0": 0.00012037730962906755,
+      "AR5C neck pale equipment bar 0 1": 0.00012760253302701582,
+      "AR5C neck pale equipment bar 0 2": 0.0001263651717332929,
+      "AR5C neck pale equipment bar 1 0": 0.00012037730962906803,
+      "AR5C neck pale equipment bar 1 1": 0.00012760253302701585,
+      "AR5C neck pale equipment bar 1 2": 0.00012636517173329284,
+      "AR5C neck pale equipment bar 2 0": 0.00012037730962906833,
+      "AR5C neck pale equipment bar 2 1": 0.00012760253302701582,
+      "AR5C neck pale equipment bar 2 2": 0.00012636517173329287,
+      "AR5C neck pale equipment bar 3 0": 0.00012037730962906756,
+      "AR5C neck pale equipment bar 3 1": 0.00012760253302701566,
+      "AR5C neck pale equipment bar 3 2": 0.00012636517173329273,
+      "AR5C oblique aft shell trim": 0.006719823416042972,
+      "AR5C pale module bar 0 0": 5.405734081402154e-05,
+      "AR5C pale module bar 0 1": 5.133155538790904e-05,
+      "AR5C pale module bar 1 0": 5.41445009377323e-05,
+      "AR5C pale module bar 1 1": 5.1378145792332276e-05,
+      "AR5C pale module bar 2 0": 5.4109641066890605e-05,
+      "AR5C pale module bar 2 1": 5.131639959069945e-05,
+      "AR5C pale module bar 3 0": 5.405734081402129e-05,
+      "AR5C pale module bar 3 1": 5.1331555387908664e-05,
+      "AR5C pale module bar 4 0": 5.409613461582185e-05,
+      "AR5C pale module bar 4 1": 5.137382084186026e-05,
+      "AR5C pale module bar 5 0": 5.40921163166474e-05,
+      "AR5C pale module bar 5 1": 5.13033131746e-05,
+      "AR5C pale rim equipment face 0": 9.249533975127642e-05,
+      "AR5C pale rim equipment face 1": 9.249533975127639e-05,
+      "AR5C pale rim equipment face 2": 9.249533975127646e-05,
+      "AR5C pale rim equipment face 3": 9.249533975127642e-05,
+      "AR5C pale rim equipment face 4": 9.249533975127642e-05,
+      "AR5C pale rim equipment face 5": 9.24953397512764e-05,
+      "Geostationary aft amber tip": 0.00010915066085683144,
+      "Geostationary aft axial stem": 0.0008030562859554867,
+      "Geostationary copper aft shell": 0.8442107538473917,
+      "Geostationary copper face rim": 0.3083217912074665,
+      "Geostationary dark backing face": 0.5875443087200735,
+      "Geostationary fastener 0 0 0": 1.3528676248357495e-06,
+      "Geostationary fastener 0 0 1": 1.3528675106920283e-06,
+      "Geostationary fastener 0 1 0": 1.3528673625157429e-06,
+      "Geostationary fastener 0 1 1": 1.3528676180747395e-06,
+      "Geostationary fastener 1 0 0": 1.3528675106193303e-06,
+      "Geostationary fastener 1 0 1": 1.3528672823144183e-06,
+      "Geostationary fastener 1 1 0": 1.3528670327843121e-06,
+      "Geostationary fastener 1 1 1": 1.3528676486819146e-06,
+      "Geostationary fastener 2 0 0": 1.352867453791348e-06,
+      "Geostationary fastener 2 0 1": 1.3528676100733222e-06,
+      "Geostationary fastener 2 1 0": 1.352867468039601e-06,
+      "Geostationary fastener 2 1 1": 1.3528674728775748e-06,
+      "Geostationary fastener 3 0 0": 1.3528676160440483e-06,
+      "Geostationary fastener 3 0 1": 1.352867518835852e-06,
+      "Geostationary fastener 3 1 0": 1.3528671206392826e-06,
+      "Geostationary fastener 3 1 1": 1.3528674836608973e-06,
+      "Geostationary fore amber tip": 0.00010915066085683145,
+      "Geostationary fore axial stem": 0.00043835184775768216,
+      "Geostationary front module 0": 0.03621622539942839,
+      "Geostationary front module 1": 0.03621614200145958,
+      "Geostationary front module 2": 0.03621624010588672,
+      "Geostationary front module 3": 0.03621619707458036,
+      "Geostationary front module 4": 0.0362161132274347,
+      "Geostationary front module 5": 0.03621624059023056,
+      "Geostationary green axial body": 1.1749270487486212,
+      "Geostationary green central boss": 0.12530664635759567,
+      "Geostationary module copper collar 0": 0.001785031751637686,
+      "Geostationary module copper collar 1": 0.0017849930592414372,
+      "Geostationary module copper collar 2": 0.001785036917501278,
+      "Geostationary module copper collar 3": 0.0017850317516376886,
+      "Geostationary module copper collar 4": 0.0017849930592414326,
+      "Geostationary module copper collar 5": 0.0017850369175012818,
+      "Geostationary service cover 0": 0.0007923536366435754,
+      "Geostationary service cover 1": 0.0007923517788486024,
+      "Geostationary service cover 2": 0.0012137903405040602,
+      "Geostationary service cover 3": 0.0012140070670293803,
+      "Geostationary service slot 0 0": 1.9418884138403907e-05,
+      "Geostationary service slot 0 1": 1.895758663692877e-05,
+      "Geostationary service slot 1 0": 1.9420870513912467e-05,
+      "Geostationary service slot 1 1": 1.8956522697880888e-05,
+      "Geostationary service slot 2 0": 3.1131644609179996e-05,
+      "Geostationary service slot 2 1": 3.1389080574466296e-05,
+      "Geostationary service slot 3 0": 3.110405734396656e-05,
+      "Geostationary service slot 3 1": 3.169204472423279e-05,
+      "Geostationary side amber feed": 1.7155458215593328e-05,
+      "Geostationary side dish": 0.005300764726284657,
+      "Geostationary side dish feed": 1.2842753222756953e-05,
+      "Geostationary side dish mast": 0.0010848573347175263,
+      "AR5C construction carriage amber marker": 5.452096170414457e-05,
+      "AR5C construction carriage rail clamp": 0.0012545090608193756,
+      "AR5C construction carriage service case": 0.002919068971233779
+    },
+    "contacts": [
+      {
+        "body": [
+          0.20601874589920044,
+          0.0,
+          -0.550000011920929
+        ],
+        "frame": [
+          1.4013423919677734,
+          0.0,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          0.14567725360393524,
+          0.14567725360393524,
+          -0.550000011920929
+        ],
+        "frame": [
+          0.9908987879753113,
+          0.9908987879753113,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          1.2615009748787942e-17,
+          0.20601874589920044,
+          -0.550000011920929
+        ],
+        "frame": [
+          8.580748158151482e-17,
+          1.4013423919677734,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.14567725360393524,
+          0.14567725360393524,
+          -0.550000011920929
+        ],
+        "frame": [
+          -0.9908987879753113,
+          0.9908987879753113,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.20601874589920044,
+          2.5230019497575884e-17,
+          -0.550000011920929
+        ],
+        "frame": [
+          -1.4013423919677734,
+          1.7161496316302964e-16,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.14567725360393524,
+          -0.14567725360393524,
+          -0.550000011920929
+        ],
+        "frame": [
+          -0.9908987879753113,
+          -0.9908987879753113,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -3.7845031727905663e-17,
+          -0.20601874589920044,
+          -0.550000011920929
+        ],
+        "frame": [
+          -2.5742247121432406e-16,
+          -1.4013423919677734,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          0.14567725360393524,
+          -0.14567725360393524,
+          -0.550000011920929
+        ],
+        "frame": [
+          0.9908987879753113,
+          -0.9908987879753113,
+          -0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          0.20724999904632568,
+          0.0,
+          0.550000011920929
+        ],
+        "frame": [
+          1.6470999717712402,
+          0.0,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          0.14654788374900818,
+          0.14654788374900818,
+          0.550000011920929
+        ],
+        "frame": [
+          1.1646757125854492,
+          1.1646757125854492,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          1.2690402298538475e-17,
+          0.20724999904632568,
+          0.550000011920929
+        ],
+        "frame": [
+          1.0085578951309591e-16,
+          1.6470999717712402,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.14654788374900818,
+          0.14654788374900818,
+          0.550000011920929
+        ],
+        "frame": [
+          -1.1646757125854492,
+          1.1646757125854492,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.20724999904632568,
+          2.538080459707695e-17,
+          0.550000011920929
+        ],
+        "frame": [
+          -1.6470999717712402,
+          2.0171157902619183e-16,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -0.14654788374900818,
+          -0.14654788374900818,
+          0.550000011920929
+        ],
+        "frame": [
+          -1.1646757125854492,
+          -1.1646757125854492,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          -3.807120606843481e-17,
+          -0.20724999904632568,
+          0.550000011920929
+        ],
+        "frame": [
+          -3.0256736853928774e-16,
+          -1.6470999717712402,
+          0.550000011920929
+        ]
+      },
+      {
+        "body": [
+          0.14654788374900818,
+          -0.14654788374900818,
+          0.550000011920929
+        ],
+        "frame": [
+          1.1646757125854492,
+          -1.1646757125854492,
+          0.550000011920929
+        ]
+      },
+      {
+        "external_secondary_fixture_parts": [
+          "Geostationary side amber feed",
+          "Geostationary side dish",
+          "Geostationary side dish feed",
+          "Geostationary side dish mast"
+        ],
+        "dish_radial_projection_beyond_scaffold": 0.35380003452301056
+      }
+    ],
+    "bounds": [
+      -1.6639206409454346,
+      -1.7589999437332153,
+      -3.720978021621704,
+      1.6639206409454346,
+      1.6639206409454346,
+      2.652306079864502
+    ]
+  },
+  "baseline_construction_contract": {
+    "bounds": [
+      -1.5225000381469727,
+      -1.4500000476837158,
+      -2.119999885559082,
+      1.4500000476837158,
+      1.4500000476837158,
+      1.4199999570846558
+    ],
+    "dent_depths": [
+      0.004999995231628418,
+      0.005755245685577393,
+      0.003959000110626221,
+      0.0029054582118988037,
+      0.0029054582118988037,
+      0.0029054582118988037,
+      0.0029054582118988037,
+      0.002905428409576416,
+      0.002905428409576416
+    ],
+    "sockets": {
+      "AlignmentAxis": {
+        "position": [
+          0,
+          0,
+          1.42
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "seam_vertices_welded": {
+      "Geostationary green axial body": 0,
+      "Geostationary copper aft shell": 0,
+      "Geostationary green central boss": 0,
+      "Geostationary front module 0": 0,
+      "Geostationary front module 1": 0,
+      "Geostationary front module 2": 0,
+      "Geostationary front module 3": 0,
+      "Geostationary front module 4": 0,
+      "Geostationary front module 5": 0,
+      "Geostationary dark backing face": 0,
+      "Geostationary copper face rim": 0,
+      "Geostationary module copper collar 0": 0,
+      "Geostationary module copper collar 1": 0,
+      "Geostationary module copper collar 2": 0,
+      "Geostationary module copper collar 3": 0,
+      "Geostationary module copper collar 4": 0,
+      "Geostationary module copper collar 5": 0,
+      "Geostationary blue face insert 0": 0,
+      "Geostationary blue face insert 1": 0,
+      "Geostationary blue face insert 2": 0,
+      "Geostationary blue face insert 3": 0,
+      "Geostationary blue face insert 4": 0,
+      "Geostationary blue face insert 5": 0,
+      "Geostationary blue face insert 6": 0,
+      "Geostationary blue face insert 7": 0,
+      "Geostationary blue face insert 8": 0,
+      "Geostationary blue face insert 9": 0,
+      "Geostationary blue face insert 10": 0,
+      "Geostationary blue face insert 11": 0,
+      "Geostationary aft axial stem": 0,
+      "Geostationary aft amber tip": 0,
+      "Geostationary fore axial stem": 0,
+      "Geostationary fore amber tip": 0,
+      "Geostationary side dish": 0,
+      "Geostationary side dish mast": 0,
+      "Geostationary side dish feed": 0,
+      "Geostationary side amber feed": 0,
+      "Geostationary service cover 0": 0,
+      "Geostationary service slot 0 0": 0,
+      "Geostationary service slot 0 1": 0,
+      "Geostationary fastener 0 0 0": 0,
+      "Geostationary fastener 0 0 1": 0,
+      "Geostationary fastener 0 1 0": 0,
+      "Geostationary fastener 0 1 1": 0,
+      "Geostationary service cover 1": 0,
+      "Geostationary service slot 1 0": 0,
+      "Geostationary service slot 1 1": 0,
+      "Geostationary fastener 1 0 0": 0,
+      "Geostationary fastener 1 0 1": 0,
+      "Geostationary fastener 1 1 0": 0,
+      "Geostationary fastener 1 1 1": 0,
+      "Geostationary service cover 2": 0,
+      "Geostationary service slot 2 0": 0,
+      "Geostationary service slot 2 1": 0,
+      "Geostationary fastener 2 0 0": 0,
+      "Geostationary fastener 2 0 1": 0,
+      "Geostationary fastener 2 1 0": 0,
+      "Geostationary fastener 2 1 1": 0,
+      "Geostationary service cover 3": 0,
+      "Geostationary service slot 3 0": 0,
+      "Geostationary service slot 3 1": 0,
+      "Geostationary fastener 3 0 0": 0,
+      "Geostationary fastener 3 0 1": 0,
+      "Geostationary fastener 3 1 0": 0,
+      "Geostationary fastener 3 1 1": 0
+    },
+    "geometric_vertices": {
+      "Geostationary green axial body": 8064,
+      "Geostationary copper aft shell": 2688,
+      "Geostationary green central boss": 2432,
+      "Geostationary front module 0": 1792,
+      "Geostationary front module 1": 1792,
+      "Geostationary front module 2": 1792,
+      "Geostationary front module 3": 1792,
+      "Geostationary front module 4": 1792,
+      "Geostationary front module 5": 1792,
+      "Geostationary dark backing face": 1024,
+      "Geostationary copper face rim": 2304,
+      "Geostationary module copper collar 0": 1024,
+      "Geostationary module copper collar 1": 1024,
+      "Geostationary module copper collar 2": 1024,
+      "Geostationary module copper collar 3": 1024,
+      "Geostationary module copper collar 4": 1024,
+      "Geostationary module copper collar 5": 1024,
+      "Geostationary blue face insert 0": 96,
+      "Geostationary blue face insert 1": 96,
+      "Geostationary blue face insert 2": 96,
+      "Geostationary blue face insert 3": 96,
+      "Geostationary blue face insert 4": 96,
+      "Geostationary blue face insert 5": 96,
+      "Geostationary blue face insert 6": 96,
+      "Geostationary blue face insert 7": 96,
+      "Geostationary blue face insert 8": 96,
+      "Geostationary blue face insert 9": 96,
+      "Geostationary blue face insert 10": 96,
+      "Geostationary blue face insert 11": 96,
+      "Geostationary aft axial stem": 96,
+      "Geostationary aft amber tip": 256,
+      "Geostationary fore axial stem": 96,
+      "Geostationary fore amber tip": 256,
+      "Geostationary side dish": 1026,
+      "Geostationary side dish mast": 96,
+      "Geostationary side dish feed": 160,
+      "Geostationary side amber feed": 256,
+      "Geostationary service cover 0": 306,
+      "Geostationary service slot 0 0": 306,
+      "Geostationary service slot 0 1": 306,
+      "Geostationary fastener 0 0 0": 128,
+      "Geostationary fastener 0 0 1": 128,
+      "Geostationary fastener 0 1 0": 128,
+      "Geostationary fastener 0 1 1": 128,
+      "Geostationary service cover 1": 306,
+      "Geostationary service slot 1 0": 306,
+      "Geostationary service slot 1 1": 306,
+      "Geostationary fastener 1 0 0": 128,
+      "Geostationary fastener 1 0 1": 128,
+      "Geostationary fastener 1 1 0": 128,
+      "Geostationary fastener 1 1 1": 128,
+      "Geostationary service cover 2": 340,
+      "Geostationary service slot 2 0": 306,
+      "Geostationary service slot 2 1": 306,
+      "Geostationary fastener 2 0 0": 128,
+      "Geostationary fastener 2 0 1": 128,
+      "Geostationary fastener 2 1 0": 128,
+      "Geostationary fastener 2 1 1": 128,
+      "Geostationary service cover 3": 340,
+      "Geostationary service slot 3 0": 306,
+      "Geostationary service slot 3 1": 306,
+      "Geostationary fastener 3 0 0": 128,
+      "Geostationary fastener 3 0 1": 128,
+      "Geostationary fastener 3 1 0": 128,
+      "Geostationary fastener 3 1 1": 128
+    },
+    "closure_weld_tolerance": 0,
+    "cap_core_samples": 4,
+    "core_plate_samples": 3,
+    "rim_plate_samples": 16,
+    "front_module_plate_samples": 7,
+    "module_collar_samples": 48,
+    "annular_void_witnesses": 7,
+    "blue_insert_samples": 12,
+    "axial_stem_tip_joins": 4,
+    "side_dish_feed_mast_joins": 4,
+    "concave_dish_wall_samples": 8,
+    "dish_axis_clear": true,
+    "fitted_patch_samples": 108,
+    "service_fasteners": 16
+  },
+  "maximum_native_imported_position_error": 1.1920928955078125e-06,
+  "maximum_imported_helper_matrix_error": 0,
+  "maximum_expected_axial_fit_error": 0,
+  "authored_axial_scale": 1.65,
+  "retained_geometry_uv_normals_preserved": true,
+  "finished_body_geometry_uv_normals_preserved": true,
+  "finished_helpers_preserved": true,
+  "frontal_render_aspect": 1.8136986301369864,
+  "source_fixed_state_aspect": 1.7407407407407407,
+  "sampled_frames": [
+    1,
+    16,
+    31,
+    46,
+    61,
+    76,
+    91,
+    106,
+    121,
+    136,
+    151,
+    166,
+    181
+  ],
+  "static_mesh_names": [
+    "AR5C broad aft green field 0",
+    "AR5C broad aft green field 1",
+    "AR5C broad aft green field 2",
+    "AR5C broad aft green field 3",
+    "AR5C broad axial armour field 0",
+    "AR5C broad axial armour field 1",
+    "AR5C broad axial armour field 2",
+    "AR5C broad axial armour field 3",
+    "AR5C broad axial armour field 4",
+    "AR5C broad axial armour field 5",
+    "AR5C broad axial armour field 6",
+    "AR5C broad axial armour field 7",
+    "AR5C broad blue face field 0",
+    "AR5C broad blue face field 1",
+    "AR5C broad blue face field 10",
+    "AR5C broad blue face field 11",
+    "AR5C broad blue face field 2",
+    "AR5C broad blue face field 3",
+    "AR5C broad blue face field 4",
+    "AR5C broad blue face field 5",
+    "AR5C broad blue face field 6",
+    "AR5C broad blue face field 7",
+    "AR5C broad blue face field 8",
+    "AR5C broad blue face field 9",
+    "AR5C broad neck equipment shell 0",
+    "AR5C broad neck equipment shell 1",
+    "AR5C broad neck equipment shell 2",
+    "AR5C broad neck equipment shell 3",
+    "AR5C central boss equipment field",
+    "AR5C central pale equipment bar 0",
+    "AR5C central pale equipment bar 1",
+    "AR5C central pale equipment bar 2",
+    "AR5C construction axial ribs",
+    "AR5C construction body support stays",
+    "AR5C construction circumferential hoops",
+    "AR5C construction diagonal lattice",
+    "AR5C green rim equipment casing 0",
+    "AR5C green rim equipment casing 1",
+    "AR5C green rim equipment casing 2",
+    "AR5C green rim equipment casing 3",
+    "AR5C green rim equipment casing 4",
+    "AR5C green rim equipment casing 5",
+    "AR5C module equipment field 0",
+    "AR5C module equipment field 1",
+    "AR5C module equipment field 2",
+    "AR5C module equipment field 3",
+    "AR5C module equipment field 4",
+    "AR5C module equipment field 5",
+    "AR5C neck equipment field 0",
+    "AR5C neck equipment field 1",
+    "AR5C neck equipment field 2",
+    "AR5C neck equipment field 3",
+    "AR5C neck pale equipment bar 0 0",
+    "AR5C neck pale equipment bar 0 1",
+    "AR5C neck pale equipment bar 0 2",
+    "AR5C neck pale equipment bar 1 0",
+    "AR5C neck pale equipment bar 1 1",
+    "AR5C neck pale equipment bar 1 2",
+    "AR5C neck pale equipment bar 2 0",
+    "AR5C neck pale equipment bar 2 1",
+    "AR5C neck pale equipment bar 2 2",
+    "AR5C neck pale equipment bar 3 0",
+    "AR5C neck pale equipment bar 3 1",
+    "AR5C neck pale equipment bar 3 2",
+    "AR5C oblique aft shell trim",
+    "AR5C pale module bar 0 0",
+    "AR5C pale module bar 0 1",
+    "AR5C pale module bar 1 0",
+    "AR5C pale module bar 1 1",
+    "AR5C pale module bar 2 0",
+    "AR5C pale module bar 2 1",
+    "AR5C pale module bar 3 0",
+    "AR5C pale module bar 3 1",
+    "AR5C pale module bar 4 0",
+    "AR5C pale module bar 4 1",
+    "AR5C pale module bar 5 0",
+    "AR5C pale module bar 5 1",
+    "AR5C pale rim equipment face 0",
+    "AR5C pale rim equipment face 1",
+    "AR5C pale rim equipment face 2",
+    "AR5C pale rim equipment face 3",
+    "AR5C pale rim equipment face 4",
+    "AR5C pale rim equipment face 5",
+    "AR5C temporary green shield 0",
+    "AR5C temporary green shield 1",
+    "AR5C temporary green shield 10",
+    "AR5C temporary green shield 11",
+    "AR5C temporary green shield 2",
+    "AR5C temporary green shield 3",
+    "AR5C temporary green shield 4",
+    "AR5C temporary green shield 5",
+    "AR5C temporary green shield 6",
+    "AR5C temporary green shield 7",
+    "AR5C temporary green shield 8",
+    "AR5C temporary green shield 9",
+    "Geostationary aft amber tip",
+    "Geostationary aft axial stem",
+    "Geostationary copper aft shell",
+    "Geostationary copper face rim",
+    "Geostationary dark backing face",
+    "Geostationary fastener 0 0 0",
+    "Geostationary fastener 0 0 1",
+    "Geostationary fastener 0 1 0",
+    "Geostationary fastener 0 1 1",
+    "Geostationary fastener 1 0 0",
+    "Geostationary fastener 1 0 1",
+    "Geostationary fastener 1 1 0",
+    "Geostationary fastener 1 1 1",
+    "Geostationary fastener 2 0 0",
+    "Geostationary fastener 2 0 1",
+    "Geostationary fastener 2 1 0",
+    "Geostationary fastener 2 1 1",
+    "Geostationary fastener 3 0 0",
+    "Geostationary fastener 3 0 1",
+    "Geostationary fastener 3 1 0",
+    "Geostationary fastener 3 1 1",
+    "Geostationary fore amber tip",
+    "Geostationary fore axial stem",
+    "Geostationary front module 0",
+    "Geostationary front module 1",
+    "Geostationary front module 2",
+    "Geostationary front module 3",
+    "Geostationary front module 4",
+    "Geostationary front module 5",
+    "Geostationary green axial body",
+    "Geostationary green central boss",
+    "Geostationary module copper collar 0",
+    "Geostationary module copper collar 1",
+    "Geostationary module copper collar 2",
+    "Geostationary module copper collar 3",
+    "Geostationary module copper collar 4",
+    "Geostationary module copper collar 5",
+    "Geostationary service cover 0",
+    "Geostationary service cover 1",
+    "Geostationary service cover 2",
+    "Geostationary service cover 3",
+    "Geostationary service slot 0 0",
+    "Geostationary service slot 0 1",
+    "Geostationary service slot 1 0",
+    "Geostationary service slot 1 1",
+    "Geostationary service slot 2 0",
+    "Geostationary service slot 2 1",
+    "Geostationary service slot 3 0",
+    "Geostationary service slot 3 1",
+    "Geostationary side amber feed",
+    "Geostationary side dish",
+    "Geostationary side dish feed",
+    "Geostationary side dish mast"
+  ],
+  "moving_mesh_names": [
+    "AR5C construction carriage amber marker",
+    "AR5C construction carriage rail clamp",
+    "AR5C construction carriage service case"
+  ],
+  "native_carriage_positions": {
+    "1": [
+      1.010333620295539e-16,
+      -1.649999976158142,
+      0.550000011920929
+    ],
+    "16": [
+      0.020603006705641747,
+      -1.6491754055023193,
+      0.550000011920929
+    ],
+    "31": [
+      0.06592962145805359,
+      -1.647361397743225,
+      0.550000011920929
+    ],
+    "46": [
+      0.11125623434782028,
+      -1.6455473899841309,
+      0.550000011920929
+    ],
+    "61": [
+      0.13185924291610718,
+      -1.644722819328308,
+      0.550000011920929
+    ],
+    "76": [
+      0.09065322577953339,
+      -1.644722819328308,
+      0.550000011920929
+    ],
+    "91": [
+      0.0,
+      -1.644722819328308,
+      0.550000011920929
+    ],
+    "106": [
+      -0.09065322577953339,
+      -1.644722819328308,
+      0.550000011920929
+    ],
+    "121": [
+      -0.13185924291610718,
+      -1.644722819328308,
+      0.550000011920929
+    ],
+    "136": [
+      -0.11125624179840088,
+      -1.6455473899841309,
+      0.550000011920929
+    ],
+    "151": [
+      -0.06592962145805359,
+      -1.647361397743225,
+      0.550000011920929
+    ],
+    "166": [
+      -0.020603008568286896,
+      -1.6491754055023193,
+      0.550000011920929
+    ],
+    "181": [
+      1.010333620295539e-16,
+      -1.649999976158142,
+      0.550000011920929
+    ]
+  },
+  "imported_carriage_positions": {
+    "1": [
+      1.010333620295539e-16,
+      -1.649999976158142,
+      0.550000011920929
+    ],
+    "16": [
+      0.020603006705641747,
+      -1.6491754055023193,
+      0.550000011920929
+    ],
+    "31": [
+      0.06592962145805359,
+      -1.647361397743225,
+      0.550000011920929
+    ],
+    "46": [
+      0.11125623434782028,
+      -1.6455473899841309,
+      0.550000011920929
+    ],
+    "61": [
+      0.13185924291610718,
+      -1.644722819328308,
+      0.550000011920929
+    ],
+    "76": [
+      0.09065322577953339,
+      -1.644722819328308,
+      0.550000011920929
+    ],
+    "91": [
+      0.0,
+      -1.644722819328308,
+      0.550000011920929
+    ],
+    "106": [
+      -0.09065322577953339,
+      -1.644722819328308,
+      0.550000011920929
+    ],
+    "121": [
+      -0.13185924291610718,
+      -1.644722819328308,
+      0.550000011920929
+    ],
+    "136": [
+      -0.11125624179840088,
+      -1.6455473899841309,
+      0.550000011920929
+    ],
+    "151": [
+      -0.06592962145805359,
+      -1.647361397743225,
+      0.550000011920929
+    ],
+    "166": [
+      -0.020603008568286896,
+      -1.6491754055023193,
+      0.550000011920929
+    ],
+    "181": [
+      1.010333620295539e-16,
+      -1.649999976158142,
+      0.550000011920929
+    ]
+  },
+  "authored_clips": [
+    {
+      "index": 0,
+      "name": "ConstructionActivity",
+      "start": 0.03333333333333333,
+      "end": 6.033333333333333,
+      "duration": 6.0
+    }
+  ],
+  "renders": {
+    "front-quarter": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.010879804231080925,
+      "native_sha256": "53ce92f8dfed1400d430b0212bfdfe080158f1c94bff6e1fc9acdc892a2e12a0",
+      "imported_sha256": "b30e08a298130aba143537b14048ba2d45428f0ebc64484724e0fcdfb0084d90"
+    },
+    "front": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.01002350125418161,
+      "native_sha256": "288ff452eace01f672a1075d5d01e25d819cc55ca0e1453bdffce54e7cec8184",
+      "imported_sha256": "4ce78eef16bc4b0298df0f21deaef0ebdcb0adfce75a619bb7198a451583d3c1"
+    },
+    "rear-quarter": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.01803419039788423,
+      "native_sha256": "cf830fda49a2bd89495fc328d73bc193d5e77e68061775732bd14d71eec9ad57",
+      "imported_sha256": "ef278c8534d3feafa4f57664e7b70f99b345132a36e7955dc7ad1e85950feeea"
+    },
+    "work-detail": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.0055998780771915335,
+      "native_sha256": "c46abacc78b0613bbde64addad6a68393a407fb24e0f3ff5981dd364db0e97b7",
+      "imported_sha256": "667788a2d6287c9b311657e2cd1f6f70fb6eac452dd01091db19ae8cb63120e7"
+    },
+    "work-detail-moved": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.005940971932432149,
+      "native_sha256": "e46db4599a62ec22f79cee0d90f968697061c02165c4e037f71ccdcc6dc11918",
+      "imported_sha256": "85452629f2119180e354f5f3eb1047e9ea6cb057e7713c71dc3e35b7c1ae54e2"
+    }
+  },
+  "evidence_sha256": "ef6b823c368dfe8b731e3378c49c63a90d660f8fd3029895287b9391346baf5d",
+  "acceptance": "Actual native/independent GLB verification; hidden construction and final game calibration remain authored/open"
+}

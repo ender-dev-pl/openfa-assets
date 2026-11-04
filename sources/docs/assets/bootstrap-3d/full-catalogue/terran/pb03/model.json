@@ -1,0 +1,72 @@
+{
+  "global_type": 3,
+  "building_id": "terran:anti-missile-pod",
+  "name": "Anti-Missile Pod",
+  "culture": "terran",
+  "footprint": [
+    2,
+    2
+  ],
+  "preview": "PB03",
+  "assembly_family": "turret",
+  "observed_features": "Low flared pedestal and short broad anti-missile barrel",
+  "mesh_objects": 5,
+  "bounds_min": [
+    -0.9800000190734863,
+    -0.9800000190734863,
+    0.0
+  ],
+  "bounds_max": [
+    0.9800000190734863,
+    0.9800000190734863,
+    1.5409969091415405
+  ],
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "top"
+  ],
+  "resolution": 512,
+  "samples": 32,
+  "blender": "4.5.15 LTS",
+  "renderer": "Cycles CPU",
+  "transparent": true,
+  "imported_geometry_or_textures": [],
+  "recipe_sha256": "29e101bfda4d98c7a02f66b909002e43547c129381ec86006967c8b196b368d4",
+  "code_sha256": "db2af3cfcc2f2b9837d172046c83fa4bbc631ee3784de0057444f281ac28b19d",
+  "rotation_rig": {
+    "generator_sha256": "aedc63862df1426e28921b9eac64c28e207b3051e295e634688d6ab011d0e857",
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "kind": "weapon head",
+    "pivot": [
+      0.0,
+      0.0,
+      1.0299999713897705
+    ],
+    "axis": "+Z",
+    "zero_forward": "-Y",
+    "positive": "counterclockwise",
+    "moving_meshes": [
+      "Weapon barrel",
+      "Weapon dark bore",
+      "Weapon pivot"
+    ],
+    "static_meshes": [
+      "Inset service window",
+      "Turret armoured pedestal"
+    ],
+    "animation": "HeadingPreview_360",
+    "frame_start": 1,
+    "frame_end": 17,
+    "direction_count": 16,
+    "direction_step_degrees": 22.5,
+    "camera_location": [
+      9.146385192871094,
+      -13.719578742980957,
+      12.09089183807373
+    ],
+    "ortho_scale": 3.3431782722473145,
+    "runtime_heading_registration": "separate integration step; exported indices are model-local angles"
+  }
+}

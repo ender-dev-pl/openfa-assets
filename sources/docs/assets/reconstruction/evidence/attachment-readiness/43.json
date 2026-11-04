@@ -1,0 +1,306 @@
+{
+  "issue": 1115,
+  "id": "openfa:napalm-orb",
+  "category": "hardpoints",
+  "culture": "shared",
+  "blend": "docs/assets/reconstruction/hardpoints/napalm-orb/model.blend",
+  "source_files_sha256": {
+    "authored-bronze-colour.png": "641ebbb1b9e4663d715b32541aa71bc542bc93f6594de569e12a850841e67cb2",
+    "authored-bronze-roughness.png": "976db372113913cb209d83037739c72e60b5abe2da5b8da6b1bbfa9a2408d604",
+    "authored-hull-colour.png": "53af79f25d6828048a19983043bb448a8bd2ff7d958f711de9db3ce350d544c4",
+    "authored-hull-roughness.png": "976db372113913cb209d83037739c72e60b5abe2da5b8da6b1bbfa9a2408d604",
+    "authored-wear.json": "e6093154749b25bd0b33b0c7d5510f46e1c5728096da7250676cad4e2bd6db8d",
+    "front-quarter.png": "7af571b0918e16e36e605506011f440a3418d5923045fb007378b5a6846065c5",
+    "front.png": "24c57808ac20d5fb49455c5203ef3cebd456211767dbb26e7e9223a14d781d58",
+    "gallery.png": "65760aef22ff8e53e0b826ee1cd4f7863ce7daa6a4bef705ec47fbfc1d6aafa8",
+    "hull-detail.png": "45bb42bae9703a1cd30b5caa2db39ccadd89212529cf6b2cdce567829c9b3221",
+    "imported-glb-front-quarter.png": "cec9b0fdb0e5a06bbcf05af762f190c95e080166077ef4a0aac0f86e670b308e",
+    "imported-glb-hull-detail.png": "7d44789b3d3cbe8c8b58c6240b815a76b06271a8f79afad238046cc7d868fc38",
+    "model.blend": "d915483f7ad1e676ca44bd0fccb28e274503aec70112e0ef4b210f69824f02cf",
+    "model.glb": "72d04c3ebabc74f6cc6564059d8c5d9a491eaedf93a1d9236f467d4de15b7468",
+    "model.json": "2ed983df807dc39a12252c02e934a187897dc294ebb8912fa6007519abca7593",
+    "rear-quarter.png": "2c26f78f7eeac034a48504868a2b90a47268d143bb2e2ae15d74638c2c6d8951",
+    "render-review.json": "58e0fa42dbe21af8d78717cc16f6143f6c80ee5e3f1081732373facdec9af29b",
+    "side.png": "760ea01e54179cfc94ac6ec0a77533d26f08efd5bc3eae5c78116f44570caa05",
+    "technical-review.json": "dec8172f1316d508b7a5553fd35dcae2ce068aa627a032e5371d23edd12aaee9",
+    "top.png": "4c6bc88d31f0a291aa807ff59ae7efc8d69c866312c8a4bd10c7df5bc0a0b857",
+    "underside.png": "8d1cbd890f369a0e259f8cd4fb055aad85633ab81e7e1a2d0b7392939c61eab9"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "role": "SurfaceWeapon"
+  },
+  "declared_sockets": {
+    "AlignmentForward": {
+      "position": [
+        0,
+        -1.45,
+        0
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Cultural variants and aiming/recoil/mount calibration; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 29,
+    "helpers": {
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -1.4500000476837158
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.4500000476837158,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:napalm-orb",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 29,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:napalm-orb",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -1.4500000476837158
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.4500000476837158,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentForward": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.45,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-08,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.45,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-08,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "models only; client click handling remains to implement",
+  "rotor": "SphereRotor",
+  "stationary": "SphereBezel",
+  "pivot": [
+    0,
+    0,
+    0
+  ],
+  "radius": 1.24,
+  "front_normal": [
+    0,
+    0,
+    1
+  ],
+  "rear": "mirrored same continuous logo, reflected through XY plane with reversed winding",
+  "preview_axis": [
+    0.6205898523330688,
+    0.7607230544090271,
+    0.19018076360225677
+  ],
+  "duration_seconds": 1.2,
+  "rotation": "quaternion(normalize(random_axis), 2*pi*smoothstep(progress))",
+  "light": "emblem emission strength = 0.331 + 3*sin(pi*progress)^2; glTF material animation is not portable, drive intensity in client",
+  "logo_meshes": 2,
+  "logo_nonmanifold_edges": 0,
+  "runtime_verified": "Blender source reopen and independent GLB import render"
+}

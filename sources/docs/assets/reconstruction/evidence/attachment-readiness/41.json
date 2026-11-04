@@ -1,0 +1,306 @@
+{
+  "issue": 1115,
+  "id": "openfa:ion-cannon",
+  "category": "hardpoints",
+  "culture": "shared",
+  "blend": "docs/assets/reconstruction/hardpoints/ion-cannon/model.blend",
+  "source_files_sha256": {
+    "authored-hull-colour.png": "24c0c4b7d93cdb01912219c173c78d9da1fe1fc282ab2098ffe1efb792779116",
+    "authored-hull-roughness.png": "318526554f9623945d30ba624b21411b11c96a7de0fb1a2718ebbfc1df3fe1b8",
+    "authored-red-colour.png": "b84c3b0289b2f421a421528776e7dbe13625d9f5c3e4a8f6e9775dda343119ac",
+    "authored-red-roughness.png": "318526554f9623945d30ba624b21411b11c96a7de0fb1a2718ebbfc1df3fe1b8",
+    "authored-wear.json": "012614a9f7d11c8c6729cb47980636b8e763dc0e338fd05de129cd17fe0ed84d",
+    "front-quarter.png": "1f550f2ef5ae1ff7a7bfe58ae3ad327698912c864854146ae8069dfd919e9f2c",
+    "front.png": "32dc41666d842bdab553eb76e9d89091b893669a7f77f3a281154e2f82d4f90b",
+    "gallery.png": "a2d4db239c95657c7aacbb8e77be9c2765e6864a24e8e7d0ee9b1bfb157f9bf5",
+    "hull-detail.png": "632b67fa2cd9c6ccb820801429d25dc6fd6a899bbee6120c604093bc64d7585b",
+    "imported-glb-front-quarter.png": "e8500cfe2927cdd4d53e3b19f220ffef1ff2fdf7222ec49d9a68583507b63093",
+    "imported-glb-hull-detail.png": "7aa5ddd802730aa0561444ec17fd91eb447007f1a22d23a4000a1c77e89896df",
+    "model.blend": "009182bc54aee35e07df1994afe8464d4c8986d66cf936d2667b03eaf19c8dd6",
+    "model.glb": "7785da3f2e18d0ac9372d2669fdf2c0e215f5a4a51220cfa5c1f9a29a873f720",
+    "model.json": "1fa789e99fca3c801a854abb2610e3807d4d17085f49d6b101a6df191bf97293",
+    "rear-quarter.png": "6c3970cf472f5b6ed3188dccff99a3a0bc9825bd6cc33bae2f7196303146d1e5",
+    "render-review.json": "4bc8cb64f5a05f0b872cf4098f8c8e1a79e66c5229534e0c38fc5c210d2e753c",
+    "side.png": "0849473b0fa0120135c6d82a9ddd2ed6f506b9fd209a2674f73871b0fa08dea3",
+    "technical-review.json": "1803e673e377cddf68aab7e906c813cdfe8eb09e102a4f4d2b19566932e25569",
+    "top.png": "4b9ff21610f4d2254296cae507c748b3e30401fc6b9ff7a215e1d8a1a320a959",
+    "underside.png": "b53ad91c69d4f946db9079fc2623467a4c582768ee0007be2715d8e5de1d0aac"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "role": "SurfaceWeapon"
+  },
+  "declared_sockets": {
+    "AlignmentForward": {
+      "position": [
+        0,
+        -1.7,
+        0
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Cultural variants and aiming/recoil/mount calibration; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 40,
+    "helpers": {
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -1.7000000476837158
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.7000000476837158,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ion-cannon",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 40,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ion-cannon",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -1.7000000476837158
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -1.7000000476837158,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentForward": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.7,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-08,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -1.7,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-08,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

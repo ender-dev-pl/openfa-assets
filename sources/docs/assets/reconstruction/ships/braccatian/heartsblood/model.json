@@ -1,0 +1,113 @@
+{
+  "id": "openfa:ship/braccatian/heartsblood",
+  "issue": 1009,
+  "revision": 1,
+  "name": "HeartsBlood",
+  "culture": "braccatian",
+  "mesh_objects": 56,
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "front",
+    "side",
+    "top",
+    "underside"
+  ],
+  "resolution": 900,
+  "blend_sha256": "3bf654da6569ecee2f8511e6887320cb56a6a05a773b1edae1554362dbff649d",
+  "glb_sha256": "60f268342823731552975668126dca7cc8cf90f86537eb76605a36bfef4ac421",
+  "generator_sha256": "0fa3056aba31a6987a64a7646c7f5d9080430b8ad334d129cd4f224d54510c84",
+  "parts_sha256": "adf978166c3b5a92960fa3c186bbb2aad73ad564cbd1293fb50402d905222b68",
+  "authored_wear_sha256": "bba43ea1802d580ae7e44bc4224514314bfcc999dfa63c2a768ec9387b6d67b8",
+  "reference_sha256": "c9fdcf76c312ca75b26b2d6be056e7c89bda681865554f89a9fd9e928ced9e21",
+  "functional_source_sha256": "fcadf5ea6dc8d0e96180ff9922cef07bd32f264f52e0a684bf87dc4680a0b663",
+  "cultural_style_sha256": "3ae667c89e1f2dc54fb27be717b75eb50e1ea14800a1ef02a1609adb7d78765e",
+  "cultural_style_reference": {
+    "culture": "braccatian",
+    "record": 47,
+    "offset_hex": "0x2142",
+    "scope": "Architectural evidence; decorated ship surfaces are contextual authoring, not recovered geometry"
+  },
+  "catalogue_sha256": "f66106b01ceb0d0e9ef56e1ee0cfa60900c0322b4e27f565b93ca69186615676",
+  "equipment_slots": {
+    "declared": 6,
+    "calibrated_3d_mounts": 0
+  },
+  "reused_source_blend_sha256": "7f29a9565811e7b739efec0e3ce44b39842889b60409dbeb9cbd9e21add9bad8",
+  "reused_source_metadata_sha256": "fa68d146c181c3a2f6f77490436bae8fcd3b5865d59fccdb0144cdfe02232fd6",
+  "reused_source_blend": "docs/assets/reconstruction/ships/braccatian/widowmaker/model.blend",
+  "reused_source_objects": [
+    "WidowMaker gold pressure hull",
+    "WidowMaker rose nose",
+    "WidowMaker central nose bezel",
+    "WidowMaker central nose face",
+    "WidowMaker aft duct housing 0",
+    "WidowMaker recessed duct floor 0",
+    "WidowMaker gold nose stud 0",
+    "WidowMaker aft duct housing 1",
+    "WidowMaker recessed duct floor 1",
+    "WidowMaker gold nose stud 1",
+    "WidowMaker aft duct housing 2",
+    "WidowMaker recessed duct floor 2",
+    "WidowMaker gold nose stud 2",
+    "WidowMaker aft duct housing 3",
+    "WidowMaker recessed duct floor 3",
+    "WidowMaker gold nose stud 3",
+    "WidowMaker rose neck accent 0 -1",
+    "WidowMaker rose neck accent 0 1",
+    "WidowMaker rose neck accent 1 -1",
+    "WidowMaker rose neck accent 1 1",
+    "WidowMaker rose neck accent 2 -1",
+    "WidowMaker rose neck accent 2 1",
+    "WidowMaker rose neck accent 3 -1",
+    "WidowMaker rose neck accent 3 1"
+  ],
+  "function": "Catalogue transporter/ore-transporter/missile-transporter/combat-direct-approach tags / role class 5; no mapped narrative",
+  "helper_sha256": {
+    "terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+    "build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+    "catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+    "manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+    "manufactured_surface_mounts.py": "dd05a5c80253bd6afcaeb4aa75f9d71e50ffaf54ef3c83221a59bd84b748346d",
+    "manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "braccatian_widowmaker_parts.py": "9f1b04a535b8765ee98af91857f2685202e1309e5d2f2dc9551c3cc7495f397a"
+  },
+  "blender": "4.5.15 LTS",
+  "observed": [
+    "Gold/rose main forms and four dark round aft openings resemble BR1C; BR2C adds four longitudinal rose radial pods with three gold bands each",
+    "16 populated even headings and 16 empty odd entries; runtime uses even headings; no catalogue video located"
+  ],
+  "inferred": [
+    "Common proportions reuse independent OpenFA WidowMaker primary geometry; new pod profiles, terminal details, cradle joints and weathering are authored",
+    "Alignment helper is not an equipment mount; six declared slots lack mount coordinates"
+  ],
+  "sockets": {
+    "AlignmentForward": {
+      "position": [
+        0,
+        -2.14,
+        0
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "imported_geometry_or_textures": [
+    {
+      "source": "Independent OpenFA WidowMaker Blend",
+      "geometry_objects": 24,
+      "policy": "Append authored geometry unchanged; independently author new-model maps; no legacy pixels imported"
+    }
+  ],
+  "unresolved": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Damage/operational variants; no mechanisms/timing established"
+  ],
+  "acceptance": "First authored iteration; artistic refining deferred"
+}

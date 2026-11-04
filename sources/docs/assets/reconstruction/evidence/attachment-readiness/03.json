@@ -1,0 +1,909 @@
+{
+  "issue": 1115,
+  "id": "openfa:destructor",
+  "category": "ships",
+  "culture": "terran",
+  "blend": "docs/assets/reconstruction/ships/terran/destructor/model.blend",
+  "source_files_sha256": {
+    "authored-hull-colour.png": "78f3ed763d69968a5b61a498ccd061d3dfc44253b0eae367d632f95d1c43bdc1",
+    "authored-hull-roughness.png": "ad36f80faecd7be850e3d070af0b39ac35cd4ece758a6a3b91dcc952983a209b",
+    "authored-red-colour.png": "be77bd75a237d24de5bc1238e2e57213d14e82facb742d3332bfaf628285806c",
+    "authored-red-roughness.png": "ad36f80faecd7be850e3d070af0b39ac35cd4ece758a6a3b91dcc952983a209b",
+    "authored-wear.json": "8650ed8fa2e4a660a07d10aa4923b7bd0cad79ec47374c22eafd424300dc1952",
+    "engine-detail.png": "8205cfa1bfc47c56d840036e6d14871c106ab30f7a6c605a471e996003b24304",
+    "front-quarter.png": "1854e6860bc4bdf00c7092064c02d972110f2eae0581c2366c2c4cc4345cbf4f",
+    "front.png": "506981c343173249b5f5b1f016077efe988cf8e784a75108e9ec763f66009384",
+    "gallery.png": "26cd46b36117a19940b440bdc7e0c7aa91992d603ba595ae5dd3fe7c5db2b35c",
+    "imported-glb-engine-detail.png": "58d4b54e5ff95b3f84d28aa9be0c348d66bee6e45c32f6e9143427b3e894180e",
+    "imported-glb-front-quarter.png": "c5d4e40615ca6013586f67bd836f7d57df8d075991f465559907423e000d1ff6",
+    "model.blend": "55409a2c0fb93eb0bf886fb4b116d24a5c5f05f336cbd5a68a0a3a7c6d53bbe9",
+    "model.glb": "72b507f43409883797fc4ace51032b064fc54f590ba87ba8719488b8d709f847",
+    "model.json": "914e98cc9abda2f41afdf3b6ccbe77212e6ffbcf1bfc0db48d267252341b5de9",
+    "rear-quarter.png": "8daa36ab5da0d199d333b77caa91c7d664215ddabb91329501bea6ab2072e530",
+    "render-review.json": "0c852bb4a73b1eae6db535a7ca38edd96df391383165825e15d602b3db70a80b",
+    "side.png": "a17d62f6cd3b8ba314ce3bac0a02b2dedc176080350d097a59fe590af42049bb",
+    "technical-review.json": "13ba23bc1afefb57bac71b9c902dbe09a9d1e8e14211759141c86088009b3770",
+    "top.png": "fe75d3f921d4ce913bf21fc8daaa38fd971aa8c332115eb8d1e928e5840df33b",
+    "underside.png": "97bdf7344976cc6441fd969e06bf5269dbc0b2aa336a656f652572e3ec2d7445"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "hardpointSlots": 3,
+    "hardpointMounts": [
+      {
+        "x": 64,
+        "y": 45
+      },
+      {
+        "x": 47,
+        "y": 120
+      },
+      {
+        "x": 80,
+        "y": 120
+      }
+    ],
+    "defaultHardpointIds": [
+      "openfa:napalm-orb",
+      "openfa:photon-cannon",
+      "openfa:shield-x20"
+    ]
+  },
+  "declared_sockets": {
+    "Hardpoint dorsal": {
+      "position": [
+        0,
+        0.12,
+        0.425
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Hardpoint port": {
+      "position": [
+        -1.38,
+        0.84,
+        0.1
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Hardpoint starboard": {
+      "position": [
+        1.38,
+        0.84,
+        0.1
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Engine port": {
+      "position": [
+        -0.72,
+        1.9,
+        0.02
+      ],
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Engine starboard": {
+      "position": [
+        0.72,
+        1.9,
+        0.02
+      ],
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Damage/operational variants; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 57,
+    "helpers": {
+      "Engine port": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.0,
+              1.5099580252808664e-07,
+              -1.1399865765455465e-14,
+              -0.7200000286102295
+            ],
+            [
+              0.0,
+              7.549790126404332e-08,
+              1.0,
+              1.899999976158142
+            ],
+            [
+              1.5099580252808664e-07,
+              1.0,
+              -7.549790126404332e-08,
+              0.019999999552965164
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            -0.7200000286102295,
+            1.899999976158142,
+            0.019999999552965164
+          ],
+          "forward": [
+            -1.1399865765455465e-14,
+            1.0,
+            -7.549790126404332e-08
+          ]
+        }
+      },
+      "Engine starboard": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.0,
+              1.5099580252808664e-07,
+              -1.1399865765455465e-14,
+              0.7200000286102295
+            ],
+            [
+              0.0,
+              7.549790126404332e-08,
+              1.0,
+              1.899999976158142
+            ],
+            [
+              1.5099580252808664e-07,
+              1.0,
+              -7.549790126404332e-08,
+              0.019999999552965164
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.7200000286102295,
+            1.899999976158142,
+            0.019999999552965164
+          ],
+          "forward": [
+            -1.1399865765455465e-14,
+            1.0,
+            -7.549790126404332e-08
+          ]
+        }
+      },
+      "Hardpoint dorsal": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.0,
+              1.5099580252808664e-07,
+              0.0,
+              0.0
+            ],
+            [
+              -1.5099580252808664e-07,
+              -1.0,
+              0.0,
+              0.11999999731779099
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.42500001192092896
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.11999999731779099,
+            0.42500001192092896
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "Hardpoint port": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -1.3799999952316284
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              0.8399999737739563
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              0.10000000149011612
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            -1.3799999952316284,
+            0.8399999737739563,
+            0.10000000149011612
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "Hardpoint starboard": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              1.3799999952316284
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              0.8399999737739563
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              0.10000000149011612
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            1.3799999952316284,
+            0.8399999737739563,
+            0.10000000149011612
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:destructor",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 57,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:destructor",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "Engine port": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.000000238418579,
+              7.54979225803254e-08,
+              -7.54979225803254e-08,
+              -0.7200000286102295
+            ],
+            [
+              -7.54979225803254e-08,
+              -1.3435885648505064e-07,
+              1.0000001192092896,
+              1.899999976158142
+            ],
+            [
+              7.54979225803254e-08,
+              1.0000001192092896,
+              -1.3435885648505064e-07,
+              0.019999999552965164
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            -0.7200000286102295,
+            1.899999976158142,
+            0.019999999552965164
+          ],
+          "forward": [
+            -7.549791547489804e-08,
+            1.0,
+            -1.3435884227419592e-07
+          ]
+        }
+      },
+      "Engine starboard": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.000000238418579,
+              7.54979225803254e-08,
+              -7.54979225803254e-08,
+              0.7200000286102295
+            ],
+            [
+              -7.54979225803254e-08,
+              -1.3435885648505064e-07,
+              1.0000001192092896,
+              1.899999976158142
+            ],
+            [
+              7.54979225803254e-08,
+              1.0000001192092896,
+              -1.3435885648505064e-07,
+              0.019999999552965164
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.7200000286102295,
+            1.899999976158142,
+            0.019999999552965164
+          ],
+          "forward": [
+            -7.549791547489804e-08,
+            1.0,
+            -1.3435884227419592e-07
+          ]
+        }
+      },
+      "Hardpoint dorsal": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.0,
+              1.5099580252808664e-07,
+              0.0,
+              0.0
+            ],
+            [
+              -1.5099580252808664e-07,
+              -1.0,
+              0.0,
+              0.11999999731779099
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.42500001192092896
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.11999999731779099,
+            0.42500001192092896
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "Hardpoint port": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -1.3799999952316284
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              0.8399999737739563
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              0.10000000149011612
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            -1.3799999952316284,
+            0.8399999737739563,
+            0.10000000149011612
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      },
+      "Hardpoint starboard": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              1.3799999952316284
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              0.8399999737739563
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              0.10000000149011612
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            1.3799999952316284,
+            0.8399999737739563,
+            0.10000000149011612
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "Engine port": {
+        "matrix_error": 2.384185791015625e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "Engine starboard": {
+        "matrix_error": 2.384185791015625e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "Hardpoint dorsal": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "Hardpoint port": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "Hardpoint starboard": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "Hardpoint dorsal",
+      "declaration": {
+        "position": [
+          0,
+          0.12,
+          0.425
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 1.1920928966180355e-08,
+      "forward_error": 0.0
+    },
+    {
+      "name": "Hardpoint port",
+      "declaration": {
+        "position": [
+          -1.38,
+          0.84,
+          0.1
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.622604367008563e-08,
+      "forward_error": 1.6292068494294654e-07
+    },
+    {
+      "name": "Hardpoint starboard",
+      "declaration": {
+        "position": [
+          1.38,
+          0.84,
+          0.1
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.622604367008563e-08,
+      "forward_error": 1.6292068494294654e-07
+    },
+    {
+      "name": "Engine port",
+      "declaration": {
+        "position": [
+          -0.72,
+          1.9,
+          0.02
+        ],
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.8610229518832853e-08,
+      "forward_error": 7.549790126404332e-08
+    },
+    {
+      "name": "Engine starboard",
+      "declaration": {
+        "position": [
+          0.72,
+          1.9,
+          0.02
+        ],
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.8610229518832853e-08,
+      "forward_error": 7.549790126404332e-08
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "Hardpoint dorsal",
+      "declaration": {
+        "position": [
+          0,
+          0.12,
+          0.425
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 1.1920928966180355e-08,
+      "forward_error": 0.0
+    },
+    {
+      "name": "Hardpoint port",
+      "declaration": {
+        "position": [
+          -1.38,
+          0.84,
+          0.1
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.622604367008563e-08,
+      "forward_error": 3.0294629027594056e-07
+    },
+    {
+      "name": "Hardpoint starboard",
+      "declaration": {
+        "position": [
+          1.38,
+          0.84,
+          0.1
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.622604367008563e-08,
+      "forward_error": 3.0294629027594056e-07
+    },
+    {
+      "name": "Engine port",
+      "declaration": {
+        "position": [
+          -0.72,
+          1.9,
+          0.02
+        ],
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.8610229518832853e-08,
+      "forward_error": 1.3435884227419592e-07
+    },
+    {
+      "name": "Engine starboard",
+      "declaration": {
+        "position": [
+          0.72,
+          1.9,
+          0.02
+        ],
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 2.8610229518832853e-08,
+      "forward_error": 1.3435884227419592e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

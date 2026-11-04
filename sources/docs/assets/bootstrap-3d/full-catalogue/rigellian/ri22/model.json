@@ -1,0 +1,80 @@
+{
+  "global_type": 61,
+  "building_id": "openfa:building/legacy/061",
+  "name": "Ex-Fang",
+  "culture": "rigellian",
+  "footprint": [
+    4,
+    4
+  ],
+  "preview": "RI22",
+  "assembly_family": "rotor",
+  "observed_features": "Green pedestal with long support and broad two-blade head",
+  "mesh_objects": 13,
+  "bounds_min": [
+    -1.2367500066757202,
+    -0.625,
+    0.0
+  ],
+  "bounds_max": [
+    1.2367500066757202,
+    0.625,
+    2.3499999046325684
+  ],
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "top"
+  ],
+  "resolution": 512,
+  "samples": 32,
+  "blender": "4.5.15 LTS",
+  "renderer": "Cycles CPU",
+  "transparent": true,
+  "imported_geometry_or_textures": [],
+  "recipe_sha256": "c9be6f49aea4a7c50eedb0a166cd94aefba2bf924a405daf34f037929eb6d7cb",
+  "code_sha256": "db2af3cfcc2f2b9837d172046c83fa4bbc631ee3784de0057444f281ac28b19d",
+  "rotation_rig": {
+    "generator_sha256": "aedc63862df1426e28921b9eac64c28e207b3051e295e634688d6ab011d0e857",
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "kind": "rotor",
+    "pivot": [
+      0.0,
+      0.0,
+      2.200000047683716
+    ],
+    "axis": "+Z",
+    "zero_forward": "-Y",
+    "positive": "counterclockwise",
+    "moving_meshes": [
+      "Radial collector panel",
+      "Radial collector panel.001",
+      "Rotor pivot"
+    ],
+    "static_meshes": [
+      "Cylindrical tower",
+      "Inset service window",
+      "Inset service window.001",
+      "Inset service window.002",
+      "Inset service window.003",
+      "Inset service window.004",
+      "Inset service window.005",
+      "Rotor inclined support",
+      "Tower crown",
+      "Tower seam"
+    ],
+    "animation": "HeadingPreview_360",
+    "frame_start": 1,
+    "frame_end": 17,
+    "direction_count": 16,
+    "direction_step_degrees": 22.5,
+    "camera_location": [
+      9.062661170959473,
+      -13.593992233276367,
+      12.710921287536621
+    ],
+    "ortho_scale": 3.7318203449249268,
+    "runtime_heading_registration": "separate integration step; exported indices are model-local angles"
+  }
+}

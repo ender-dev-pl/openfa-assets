@@ -1,0 +1,69 @@
+{
+  "id": "openfa:building/legacy/045",
+  "issue": 975,
+  "revision": 3,
+  "culture": "rigellian",
+  "name": "Strategic Bunker",
+  "global_type": 45,
+  "footprint": [
+    3,
+    3
+  ],
+  "placement_root": "PlacementRoot",
+  "origin": "Nominal footprint centre, ground Z=0; runtime calibration pending",
+  "blend_sha256": "db1e1e64c60ecbc3921c6855ce2feee578d2821083e0e3bf4157dcf62abeae70",
+  "glb_sha256": "b339bee4a097216d625e06882f3dc525b4936752b90a5028e8edcc7e5da54e59",
+  "blender": "4.5.15 LTS",
+  "generator_sha256": "b5eafba0931390ea774b7e8c53d934cb011475223200ba2187db5c3451deeb89",
+  "parts_sha256": "a05627aee83cc361a7c9661399938d42255a9cd33154da503b0c918658156753",
+  "reference_sha256": "91765973f6f1ceb7bf00dc31984e2cedef3aab5090f86c9e5b5a676601c2acb8",
+  "authored_wear_sha256": "5a8640ea8aacded731fbbb12a90e9907a4ee059c4a1bed21e282877bec827eea",
+  "mesh_objects": 53,
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "front",
+    "side",
+    "top",
+    "underside"
+  ],
+  "resolution": 900,
+  "helper_sha256": {
+    "manufactured_frames.py": "5df4381a72ee6080766e508ac6e665dd053cbd5fa3b3b691760411afc4a389b7",
+    "manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "repair_detail_uvs.py": "4242a0a815cd5208fdf0e81204a5fdeab67a9d0c3e95be6934d4f64c8672b9c7"
+  },
+  "observed": [
+    "Three broad stacked saucer levels and central structural column",
+    "Dark roof wells and small rim fittings",
+    "Tall green mast, exposed gold/pale neck and compact fork"
+  ],
+  "inferred": [
+    "Well interiors, structural connections, exact fitting counts and crown engineering",
+    "Dimensions, materials, wear and small dents"
+  ],
+  "imported_geometry_or_textures": [],
+  "unresolved": [
+    "Final artistic acceptance",
+    "Construction/damage states",
+    "Runtime scale/orientation/placement"
+  ],
+  "acceptance": "Reference-refined study, not final acceptance",
+  "technical_uv_repair": {
+    "issue": 1111,
+    "previous": {
+      "blend_sha256": "f922ba0009be906aaedff20963a2ace0d3494c185efeeef33fd2fdc90debc971",
+      "glb_sha256": "99e04490a7ad0ffe84254d70bfe8b6a6b444ba5d991a3aac7eb6c78704801d34"
+    },
+    "script": "tools/blender/apply_detail_uv_repair.py",
+    "script_sha256": "4ac41fdfb5d9762fa349a325f01e0c6305951a9a76676fcb5684a161ac18b77a",
+    "changes": [
+      {
+        "object": "RI06 upper mast neck retaining collar",
+        "method": "Local dominant-face box projection, normalized to existing bounds",
+        "loops": 2048
+      }
+    ],
+    "geometry_material_assignments_and_textures_unchanged": true
+  }
+}

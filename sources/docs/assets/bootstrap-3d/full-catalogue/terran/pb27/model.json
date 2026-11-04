@@ -1,0 +1,72 @@
+{
+  "global_type": 27,
+  "building_id": "terran:laser-turret",
+  "name": "Laser Turret",
+  "culture": "terran",
+  "footprint": [
+    2,
+    2
+  ],
+  "preview": "PB27",
+  "assembly_family": "turret",
+  "observed_features": "Low bronze laser shell with long narrow barrel",
+  "mesh_objects": 5,
+  "bounds_min": [
+    -0.9800000190734863,
+    -1.4115034341812134,
+    0.0
+  ],
+  "bounds_max": [
+    0.9800000190734863,
+    0.9800000190734863,
+    1.4737070798873901
+  ],
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "top"
+  ],
+  "resolution": 512,
+  "samples": 32,
+  "blender": "4.5.15 LTS",
+  "renderer": "Cycles CPU",
+  "transparent": true,
+  "imported_geometry_or_textures": [],
+  "recipe_sha256": "1be0d685965986d2886defa34066fbe2781f4b76e82d0dc0f4508d85c83f27a2",
+  "code_sha256": "db2af3cfcc2f2b9837d172046c83fa4bbc631ee3784de0057444f281ac28b19d",
+  "rotation_rig": {
+    "generator_sha256": "aedc63862df1426e28921b9eac64c28e207b3051e295e634688d6ab011d0e857",
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "kind": "weapon head",
+    "pivot": [
+      0.0,
+      0.0,
+      1.0299999713897705
+    ],
+    "axis": "+Z",
+    "zero_forward": "-Y",
+    "positive": "counterclockwise",
+    "moving_meshes": [
+      "Weapon barrel",
+      "Weapon dark bore",
+      "Weapon pivot"
+    ],
+    "static_meshes": [
+      "Inset service window",
+      "Turret armoured pedestal"
+    ],
+    "animation": "HeadingPreview_360",
+    "frame_start": 1,
+    "frame_end": 17,
+    "direction_count": 16,
+    "direction_step_degrees": 22.5,
+    "camera_location": [
+      9.090048789978027,
+      -13.635072708129883,
+      12.20227336883545
+    ],
+    "ortho_scale": 3.438749313354492,
+    "runtime_heading_registration": "separate integration step; exported indices are model-local angles"
+  }
+}

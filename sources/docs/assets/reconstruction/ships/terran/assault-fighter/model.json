@@ -1,0 +1,53 @@
+{
+  "id": "openfa:assault-fighter",
+  "issue": 953,
+  "revision": 4,
+  "blender": "4.5.15 LTS",
+  "generator": "tools/blender/build_assault_fighter.py",
+  "generator_sha256": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+  "blend_sha256": "5fb2090ea98835f9ad2905df04c8a9417e0863e945e8dfe1ae5204224687adf4",
+  "glb_sha256": "953befdb5b40b6b1741d64f7ae3899df34989e73554561124fbeac54d667b2cd",
+  "mesh_objects": 150,
+  "faces": 5739,
+  "forward": "-Y",
+  "up": "+Z",
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "top",
+    "side",
+    "rear",
+    "belly"
+  ],
+  "resolution": 768,
+  "imported_geometry_or_textures": [],
+  "reference_only": [
+    "PS00.VID frames 0,15,30,45,59",
+    "PS0A.256 frames 0,8,16,24"
+  ],
+  "inferred": [
+    "Belly maintenance covers",
+    "Nozzle internal baffles and ribs",
+    "Panel segmentation and fasteners"
+  ],
+  "unresolved": [
+    "Exact physical dimensions",
+    "3D hardpoint sockets",
+    "Gameplay scale and registration"
+  ],
+  "acceptance": "study; visual review and refinement required",
+  "helper_sha256": {
+    "fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110"
+  },
+  "technical_armour_repair": {
+    "issue": 1108,
+    "previous": {
+      "blend_sha256": "70398a5a806d82e8fcabe09346a9e33e19c3bb2220d8a6aa5ad766d86c635749",
+      "glb_sha256": "80417a3e80e6959dd01586ebcd2c564752e05c9eb7261fffbc103c81ecc18dca"
+    },
+    "script": "tools/blender/apply_fighter_armour_repair.py",
+    "script_sha256": "760b2a5fa846ae90ac886a152b4817a4613d473ec4afcebf4e98a1e436f4f29c",
+    "original_vertices_and_other_meshes_unchanged": true,
+    "new_wear_or_textures": false
+  }
+}

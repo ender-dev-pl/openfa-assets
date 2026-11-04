@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>OpenFA.ModelRenderProof</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <OpenFaRuntimeRoot Condition="'$(OpenFaRuntimeRoot)' == ''">../../../openFA-game/src/OpenFA.Client/bin/Debug/net8.0</OpenFaRuntimeRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenFA.Client"><HintPath>$(OpenFaRuntimeRoot)/OpenFA.Client.dll</HintPath></Reference>
+    <Reference Include="OpenFA.Core"><HintPath>$(OpenFaRuntimeRoot)/OpenFA.Core.dll</HintPath></Reference>
+    <Reference Include="OpenFA.Assets"><HintPath>$(OpenFaRuntimeRoot)/OpenFA.Assets.dll</HintPath></Reference>
+    <Reference Include="OpenFA.AssetFormats"><HintPath>$(OpenFaRuntimeRoot)/OpenFA.AssetFormats.dll</HintPath></Reference>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.5.1" />
+    <PackageReference Include="SharpGLTF.Core" Version="1.0.6" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.30" />
+  </ItemGroup>
+</Project>
