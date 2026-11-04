@@ -28,6 +28,8 @@ def main():
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
     assert len(gallery) == len(inventory['records']) == 303
     assert len({r['id'] for r in gallery}) == len(gallery)
+    from gallery_supplemental import supplemental_records
+    assert json.loads((ROOT / 'gallery/supplemental-catalogue.json').read_text()) == supplemental_records()
     count = 0
     for row, definition in zip(gallery, inventory['records']):
         assert (row['id'], row['category'], row['culture']) == (definition['id'], definition['category'], definition['culture'])

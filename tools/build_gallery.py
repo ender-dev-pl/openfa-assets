@@ -10,7 +10,8 @@ from gallery_animation_assets import animation_previews
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORY_LABELS = {'buildings': 'Buildings', 'ships': 'Ships / vehicles',
-                   'hardpoints': 'Hardpoints', 'missiles': 'Missiles / rockets'}
+                   'hardpoints': 'Hardpoints', 'missiles': 'Missiles / rockets',
+                   'ui': 'UI / HUD / menu', 'scaffolds': 'Scaffolds'}
 
 
 def culture_label(value):
@@ -137,10 +138,19 @@ def main():
                 (' · <a href="../'+quote(study['glb'])+'">GLB</a>' if study['glb'] else '')+'</figcaption></figure>')
         search = ' '.join([row['name'],row['id'],row['category'],row['culture']]+[s['stage'] for s in row['studies']]).lower()
         cards.append('<article data-search="'+html.escape(search, quote=True)+'" data-race="'+html.escape(row['culture'],quote=True)+'" data-type="'+html.escape(row['category'],quote=True)+'"><h2>'+html.escape(row['name'])+'</h2><p>'+html.escape(CATEGORY_LABELS[row['category']]+' / '+culture_label(row['culture'])+' / '+row['id'])+'</p><div class="variants">'+''.join(images)+'</div></article>')
+    from gallery_supplemental import supplemental_records, supplemental_cards
+    extra = supplemental_records()
+    (out / 'supplemental-catalogue.json').write_text(json.dumps(extra, indent=2)+'\n', encoding='utf-8')
+    cards += supplemental_cards(extra)
+    index_groups = collections.defaultdict(list, {k:list(v) for k,v in sheets.items()})
+    for row in extra:
+        index_groups[(row['category'], row['culture'])].append(row)
+    categories += ['ui', 'scaffolds']
+    cultures = sorted(set(cultures) | {row['culture'] for row in extra}, key=lambda c:(c == 'shared', c))
     template = Path(__file__).with_name('gallery_template.html').read_text(encoding='utf-8')
     race_options = ''.join('<option value="'+c+'">'+html.escape(culture_label(c))+'</option>' for c in cultures)
     type_options = ''.join('<option value="'+c+'">'+html.escape(CATEGORY_LABELS[c])+'</option>' for c in categories)
-    page = template.replace('{{CARDS}}', ''.join(cards)).replace('{{RACES}}', race_options).replace('{{TYPES}}', type_options).replace('{{INDEX}}', index_table(sheets,cultures,categories,interactive=True)).replace('{{COUNT}}',str(len(rows)))
+    page = template.replace('{{CARDS}}', ''.join(cards)).replace('{{RACES}}', race_options).replace('{{TYPES}}', type_options).replace('{{INDEX}}', index_table(index_groups,cultures,categories,interactive=True)).replace('{{COUNT}}',str(len(rows)+len(extra)))
     (out / 'index.html').write_text(page, encoding='utf-8')
     from build_ui_gallery import build
     build()
