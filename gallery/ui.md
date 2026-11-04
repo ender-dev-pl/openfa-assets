@@ -120,3 +120,5 @@ Full spherical rotor, mirrored continuous rear emblem and independent emissive p
 ![Spin phase](media/ui/interactive-menu-sphere/spin-37.png)
 
 [Model contract](../sources/ui/interactive-menu-sphere/README.md).
+
+[Play sphere rotation and illumination](media/ui/interactive-menu-sphere/sphere-spin.webm) · 37 Blender-rendered frames at 30 fps.

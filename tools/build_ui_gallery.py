@@ -26,8 +26,16 @@ def build():
                 target='sources/ui/'+source+'/'+stem+'.'+ext
                 assert (ROOT/target).is_file()
                 links+=' · <a href="../'+target+'">'+ext.upper()+'</a>'
-        body.append('<article><h2>'+escape(title)+'</h2><img loading="lazy" src="media/ui/'+image+'" alt="'+escape(title)+'"><p>'+escape(description)+'</p><p>'+links+'</p></article>')
-    page='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OpenFA UI assets</title><style>body{margin:0;background:#101722;color:#e7eff7;font:16px system-ui}header{padding:24px;background:#162334}a{color:#80ccff}main{padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:20px}article{background:#192637;border-radius:12px;padding:20px}img{width:100%;height:360px;object-fit:contain;background:#101722}p{line-height:1.5;color:#b3c7dc}h2{font-size:21px}</style><header><h1>OpenFA UI assets</h1><p>Current legacy-referenced HUD and menu deliveries. Asset previews and Blender runtime proofs; game integration remains separate. Earlier iterations remain available in the Markdown archive.</p><a href="index.html">Model catalogue</a> · <a href="ui.md">UI history and evidence</a></header><main>'+''.join(body)+'</main></html>'
+        preview='<img loading="lazy" src="media/ui/'+image+'" alt="'+escape(title)+'">'
+        if image == 'interactive-menu-sphere/spin-37.png':
+            import hashlib, json
+            folder=ROOT/'gallery/media/ui/interactive-menu-sphere'
+            proof=json.loads((folder/'animation-proof.json').read_text())
+            assert proof['source_sha256']==hashlib.sha256((ROOT/'sources/ui/interactive-menu-sphere/interactive-sphere.blend').read_bytes()).hexdigest()
+            assert proof['video_sha256']==hashlib.sha256((folder/'sphere-spin.webm').read_bytes()).hexdigest()
+            preview='<video controls loop muted playsinline preload="none" poster="media/ui/'+image+'" aria-label="Sphere rotation and illumination"><source src="media/ui/interactive-menu-sphere/sphere-spin.webm" type="video/webm">Your browser does not support WebM.</video>'
+        body.append('<article><h2>'+escape(title)+'</h2>'+preview+'<p>'+escape(description)+'</p><p>'+links+'</p></article>')
+    page='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OpenFA UI assets</title><style>body{margin:0;background:#101722;color:#e7eff7;font:16px system-ui}header{padding:24px;background:#162334}a{color:#80ccff}main{padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:20px}article{background:#192637;border-radius:12px;padding:20px}img,video{width:100%;height:360px;object-fit:contain;background:#101722}p{line-height:1.5;color:#b3c7dc}h2{font-size:21px}</style><header><h1>OpenFA UI assets</h1><p>Current legacy-referenced HUD and menu deliveries. Asset previews and Blender runtime proofs; game integration remains separate. Earlier iterations remain available in the Markdown archive.</p><a href="index.html">Model catalogue</a> · <a href="ui.md">UI history and evidence</a></header><main>'+''.join(body)+'</main></html>'
     (ROOT/'gallery/ui.html').write_text(page,encoding='utf-8')
     print('UI_GALLERY_OK',len(cards))
 
