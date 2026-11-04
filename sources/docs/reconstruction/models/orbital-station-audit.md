@@ -34,4 +34,4 @@ The JSON binds the manifest, gallery, overview, audit source, all fourteen runti
 
 Profiles, hidden construction, repeated fitting counts and six-second service timing are authored, not recovered legacy animation. Final game scale/orientation and equipment mount calibration remain integration work. Mikotaj radial 1.18, Artemian longitudinal 1.65 and Achaean vertical 1.18 fits are already embedded in both states. Never reapply them or fit construction bounds independently. The active game checkout was not edited.
 
-This completes station-pair issue #192 only. The separate all-38 Braccatian goal still requires its ten missile decisions and final scope audit; this report does not claim that goal complete.
+This completes station-pair issue #192 only. The prerequisite all-38 Braccatian work (#190) was independently verified and merged via PR #202 (main 6796ae3425e54ddd4a1559c188b2d13f79d97ce6) before this branch was created. Its finished SkyMech is used unchanged.
