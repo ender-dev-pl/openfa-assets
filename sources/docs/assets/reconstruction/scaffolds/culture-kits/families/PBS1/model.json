@@ -1,0 +1,374 @@
+{
+  "issue": 188,
+  "family": "PBS1",
+  "culture": "terran",
+  "footprint": 1,
+  "capacity": 16,
+  "pitch": 4.9883063257983675,
+  "pitch_status": "Provisional source-repeat projection; not calibrated game-world height",
+  "pitch_derivation": "16*4/20*(1*.9*sqrt(2))/sqrt(2/3)",
+  "required_max_stage": 18,
+  "required_max_tiers": 2,
+  "style": {
+    "main": [
+      0.22,
+      0.28,
+      0.32
+    ],
+    "trim": [
+      0.58,
+      0.36,
+      0.055
+    ],
+    "kind": "braced steel access gantry",
+    "technique": "Bolted trusses and removable service decks"
+  },
+  "cdb_evidence": {
+    "culture": "terran",
+    "reason": "No Terran Architecture heading exists in this located CDB; use actual object references rather than inventing a matching cultural article."
+  },
+  "authored_interpretation": "OpenFA3D removable perimeter kit; mechanisms, joints, hidden structure and materials are authored interpretations, not recovered CDB technology",
+  "source_reference": "PBS1",
+  "reference_descriptor_sha256": [
+    "efe669c6ca95761f7ef08f1b437ee9755baa160ba475b3e163de940b02afbd2c",
+    "78b49b0b9b81281dc82c70905fca403f09a8a94a3064136a32df184603af6fb3",
+    "8bfde562f53a6deedb7b0132db70a9fc4af7e3f7c6e4b121cd71416dd0140356",
+    "e25be1e0abe236d5fd5ad6230f4f3841452d128890db9a01bf8efe3db5b6818b",
+    "ecd4cbfb09a1d0e91a6ef31b485f91f938a3606ee6410115cfca3cb064d33e6e",
+    "bc3d4ef6c48e37545ac9d376ab1031454415cf0db3ba218704bfd8645c2a47ff",
+    "58b24903b71eae8aaae4c4ba48a9a59a4ba61fbc0969148b9b75695d1f4e9183",
+    "09d7ca0a65d50bab72e2da9ab39d6d3a62a26b28b67da5937908c75c946679cf",
+    "32d35662541a221dd4e8c0381d29384e687c601870626dd3628347e20f4a6211",
+    "0a680d1eff6093e593808264faf4befd22ec3501d087a5e9284f73fc7fe9b170",
+    "2f3a5452479187b8c0ae6d9ab3fd5d7548036a324dba08044c30e49b141b1548",
+    "9eeeb1a2d4b06cc6b5fdb1e0fb3a3d92f196942cc99731adea9a0074afc1c94b",
+    "4fb34aa7a2b25378ace61e74de6ad72253dd86ad4dbb7a385f7157002b85b3cc",
+    "23b051cd94f3b5416652fc7509224480e7ae0388e0867fba2a7133b491a37d1c",
+    "5cbb950cb0eec84e2853a742939dc1eff5da46f75d9dc61a875ea141a41408e9",
+    "39a6b88b7d3ba94fc1e63a8955b3de5affa2b11c898ecf6a4410a32409e886cb",
+    "d50513a505310c41d8d22af9468df67923b05f79e5495eef367ea3f33f7f7da0"
+  ],
+  "clear_volume": {
+    "half_extent_xy": 0.35,
+    "temporary_crown_removed_on_reveal": true,
+    "interior_shoring": false
+  },
+  "phases": [
+    {
+      "id": "erection",
+      "building_visible": false
+    },
+    {
+      "id": "reveal",
+      "building_visible": true
+    },
+    {
+      "id": "dismantling",
+      "building_visible": true
+    },
+    {
+      "id": "complete",
+      "building_visible": true,
+      "scaffold_visible": false
+    }
+  ],
+  "sequence_provenance": "User requirement: full height, insert building, reverse dismantling revealing from top; not a newly recovered legacy timing rule",
+  "definitions": [
+    {
+      "id": "terran:solar-panel",
+      "name": "Solar Panel",
+      "ceiling": 5,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "dismantling_stages": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:sensor-array",
+      "name": "Sensor Array",
+      "ceiling": 18,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "dismantling_stages": [
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "stage": 1,
+      "frames": [
+        1
+      ],
+      "mesh_objects": 52,
+      "unique_meshes": 7,
+      "blend_sha256": "d0cc2d36e79a944c0e04195a5d63bc944a8a86fd8d34cd9121ef1656dfad20b8",
+      "glb_sha256": "506edfcc8e9b3089993743ef5ae440d65fec1317fe449d37a8c59aeb6b5ee0e4",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 2,
+      "frames": [
+        2
+      ],
+      "mesh_objects": 84,
+      "unique_meshes": 7,
+      "blend_sha256": "a766e1fce80cb520a4ec8fa55ab188004973709855bd788876995d31e4aff8e6",
+      "glb_sha256": "00206f570fc95ae5a6ef3fecfe9d07febab4a351ce3edab710f1ed552869863a",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 3,
+      "frames": [
+        3
+      ],
+      "mesh_objects": 116,
+      "unique_meshes": 7,
+      "blend_sha256": "942557666cf5136100b8b9274a2e6d7687aa16fc81979b8c1ce15a3a4a35562d",
+      "glb_sha256": "b62c67f1abe29c8421045cd4f07d7efd826b4ae4485d366bb58abf50f7fd65d9",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 4,
+      "frames": [
+        4
+      ],
+      "mesh_objects": 148,
+      "unique_meshes": 8,
+      "blend_sha256": "e6774bf42fd86262f06fab8ee1bd3c948bb393023c5092eb5e54468dfa904c2a",
+      "glb_sha256": "1b5a48631b858b181b01ddf0af15d14e9d03e5f0f205a620f2123ce094e1cc70",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 5,
+      "frames": [
+        5
+      ],
+      "mesh_objects": 180,
+      "unique_meshes": 9,
+      "blend_sha256": "1e78d16c4a82cf036e73c7271f9d7802983521390005ce0fe969bb86d963b7b0",
+      "glb_sha256": "17f31929d2a4a2e28207b23b8369b84f53506cb0b5ce6e75252c49ebd001a508",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 6,
+      "frames": [
+        6
+      ],
+      "mesh_objects": 212,
+      "unique_meshes": 9,
+      "blend_sha256": "9ca89aa934b4ff7be2ec059a568f03040d893790d41136f943054e4a9eb86445",
+      "glb_sha256": "6448c8ec8fd7741faac58a4f51ab1f3f17c9715cc1afc2c484385ed113c05437",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 7,
+      "frames": [
+        7
+      ],
+      "mesh_objects": 244,
+      "unique_meshes": 9,
+      "blend_sha256": "e944d5d5825ffa1d06bf812d61106747a47a96d09e2af9aeab45d5480f388403",
+      "glb_sha256": "53d7bd2e160adb93746d1f15c637ec5fcf391f1c365390b1be7ac6d8944cd909",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 8,
+      "frames": [
+        8
+      ],
+      "mesh_objects": 276,
+      "unique_meshes": 9,
+      "blend_sha256": "356533469fc9cd870330da4d70307ee01ee8ad2bb3dc459b5cdab0d70ba4ce28",
+      "glb_sha256": "d03c7ac70b8de441ba558adb16998fdc92d36c470b134e9feb8a8476eab14555",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 9,
+      "frames": [
+        9
+      ],
+      "mesh_objects": 308,
+      "unique_meshes": 10,
+      "blend_sha256": "c42383c8aa6bc197376dcec2468d818ca37762d8cb29051bed632b435efe6bdc",
+      "glb_sha256": "aba135a804f200cfb5e4031ae160471dc6878d8ffabddeeec3e4b3d44e220ae5",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 10,
+      "frames": [
+        10
+      ],
+      "mesh_objects": 340,
+      "unique_meshes": 10,
+      "blend_sha256": "053ae723bf13c1ae76c8be439398afd158324b2e36c3d9138522cda95c96dd71",
+      "glb_sha256": "44d7a60fd4e55c6d59a9ceb0329f61917abdef667da4d7e9aa3855c9ead489b8",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 11,
+      "frames": [
+        11
+      ],
+      "mesh_objects": 372,
+      "unique_meshes": 10,
+      "blend_sha256": "51426369a4318607d074d60f8a67505685fa485e0d542acaf8db8ba953c3d219",
+      "glb_sha256": "33f128367b4f7dde5eee3ab6317c974bad505c5bebf7edf33d5c6ff34f1c949a",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 12,
+      "frames": [
+        12
+      ],
+      "mesh_objects": 404,
+      "unique_meshes": 10,
+      "blend_sha256": "e97e1ca2710fa0862a6a66e104a3b904dbbeb408694ed2d8476cc25262c71fac",
+      "glb_sha256": "b940748b1f0e77ae331596b42c24e490b4035a5b62066d5a4c51ff3c4fd0cf7d",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 13,
+      "frames": [
+        13
+      ],
+      "mesh_objects": 436,
+      "unique_meshes": 10,
+      "blend_sha256": "cb2368f8e3f0a330690145a6902081a04816d34a834261e47294a23f417763b2",
+      "glb_sha256": "4691340842b2877b54024736640dc394839192cc825d6483e36a7840c37a7509",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 14,
+      "frames": [
+        14
+      ],
+      "mesh_objects": 468,
+      "unique_meshes": 11,
+      "blend_sha256": "71db93ad2c458897beb0d8f67c0673ae11c3eb1eb1472a20c0d2cd07891447e2",
+      "glb_sha256": "d0279a375fcae78f8eb0a5fb11fc3c3f362a2cd4e0d697e3f683231470c20f97",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 15,
+      "frames": [
+        15
+      ],
+      "mesh_objects": 500,
+      "unique_meshes": 11,
+      "blend_sha256": "09cc47398ba0558e2f28189f7715ce0f946f0afb8d22278bac33afa137b4eed7",
+      "glb_sha256": "d4f226c12661f3509b24f6a048a5b26d0e04b045499890998b6bbcc23f12377e",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 16,
+      "frames": [
+        16
+      ],
+      "mesh_objects": 532,
+      "unique_meshes": 11,
+      "blend_sha256": "7e428691ee4f303bb578e3cd195b6d59a3d118bc5f9c515c7528b329d6a700fa",
+      "glb_sha256": "dbdeb402ef1a2301ef838d6e327838a403a13c68865e15b5691b44af307419d0",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 17,
+      "frames": [
+        16,
+        1
+      ],
+      "mesh_objects": 580,
+      "unique_meshes": 13,
+      "blend_sha256": "2a0f97442d5f683307b4b7e13fba26edcbb364291b3847fb2fcad479bca2ffd0",
+      "glb_sha256": "968cdb60ed7f4e258efac44511773f6ecba435eb6a26292c15ebf9ab1ec651c9",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 18,
+      "frames": [
+        16,
+        2
+      ],
+      "mesh_objects": 612,
+      "unique_meshes": 13,
+      "blend_sha256": "f291b6ccf1c141f4dc270e7a3e845fb70d8e601ddbcd1d63c570d309d82f3214",
+      "glb_sha256": "acb67b848ce3a29dd199b5d3bd65e18a18f85dbf7ac94734909539ba3a2c70db",
+      "rear_view": true,
+      "hide_on_reveal": []
+    }
+  ],
+  "inputs": {
+    "docs/reconstruction/models/scaffold-stage-limits.json": "5a0fcc956670550a11dff3ea7e0258de745258397eac58f2b0739074746bd7d3",
+    "docs/reconstruction/models/shared-construction-references.json": "be5bbc948f86b0548bda10b6f63dba4e3b131a5175cdfa35f1e146890581d7a6",
+    "docs/reconstruction/models/cultural-architecture-index.json": "3ae667c89e1f2dc54fb27be717b75eb50e1ea14800a1ef02a1609adb7d78765e",
+    "docs/assets/reconstruction/scaffolds/culture-kits/authored-wear.json": "f1175ab496acaf5bec413ba92f1c3fec291ead980cba27816064b2c809521f52",
+    "tools/blender/build_culture_scaffolds.py": "171628100bc5a27d57ef4511888904e8e418b439553b4e510db28af8978249f5",
+    "tools/blender/culture_scaffold_parts.py": "f4bd5d31a159355277693218ff12f7514779aee634a2d9a703a875d42f45b36d",
+    "tools/blender/culture_scaffold_contract.py": "c71d3453ec38e1326c1bede0541ccc111b3f28507aea9ed150e73b69cd3be5d9"
+  },
+  "preview_only": false,
+  "exact_legacy_fidelity_accepted": false,
+  "game_integration_verified": false
+}
