@@ -82,3 +82,19 @@ are included. The earlier five-control study is preserved.
 Blender source and independent GLB renders match all 121 group silhouettes at
 IoU 1.0. A separate saved-Blend runtime check also passes. This is a complete
 asset delivery, with game package integration still separate.
+
+
+## Main-menu sphere and neon kit
+
+Legacy FE_DOME-inspired convex glass emblem, metal console, separate ornament,
+neon rails, label rows and optional OPENFA lettering. Five hues have six lighting
+states and eight halo pulse frames each. Native and larger transparent PNG layers
+are independent; complete sphere and row composites are also supplied.
+
+![Main-menu sphere variants](media/ui/legacy-main-menu/sphere-states.png)
+
+![Illustrative main-menu composition](media/ui/legacy-main-menu/composition-ruby.png)
+
+[Source, evidence boundaries and verification](../sources/ui/legacy-main-menu/README.md).
+Only idle/bright pressed are confirmed legacy states; additional lighting is an
+OpenFA extension. These are asset previews, not integrated game-runtime captures.
