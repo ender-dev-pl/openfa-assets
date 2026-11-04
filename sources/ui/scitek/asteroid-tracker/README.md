@@ -1,5 +1,7 @@
 # Asteroid Tracker — Sci-Tek #208, legacy index 05
 
+> Superseded by [the refined Tracker](../asteroid-tracker-refined/README.md): this preserved first study has an elongated cabinet and approximate data-bank/calibration assignments. Use the refined integration manifest.
+
 New dedicated research-display model, not a colony building. References: actual `_MA/ST05.256`, complete fresh original-codec ST05 preview decode, and `_SCITEK/ST05.VID` information phases. Beige equipment stack, overhanging upper case, side-mounted CRT, two fan inlets, storage slots and calibration controls follow the inspected original. Original pixels are not used as textures. Original text identifies this as a computer that reports the position, speed and direction of known asteroids; it does not establish a moving antenna or radar dish.
 
 `asteroid-tracker.blend` retains authored wear, named components, solid geometry, hidden wire objects and a sixty-frame turntable (15 fps, four seconds). `asteroid-tracker.glb` exports the solid hierarchy and node rotation. Separate wireframe and four component-highlight GLBs are provided. The master Blend stores editable wire curves alongside the solid geometry. Hide the solid objects and show the `* technical wire` objects to edit their presentation.

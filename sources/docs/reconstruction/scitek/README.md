@@ -57,3 +57,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 35 | scitek:command-cruiser | openfa:command-cruiser | Pending |
 
 Private original pixels and decoded films remain in ignored local evidence directories. Published outputs must be authored assets, not copies of the reference pixels. Full issue completion requires every delivery gate; this initial audit is only a baseline.
+
+### Tracker refinement and exact caption anchors
+
+The current Tracker corrects its cabinet aspect, tile placement, left upper data-bank assignment and isolated screw detail. [Current source](../../../ui/scitek/asteroid-tracker-refined/README.md). The original cabinet mounting position of the screw remains unresolved; no external mounting is invented. The caption-phase map binds all112 source descriptions to their actual start/mid/end displayed image updates, including Same holds. Anchor sheets are reviewed explicitly per subject, not inferred from the existence of the map.

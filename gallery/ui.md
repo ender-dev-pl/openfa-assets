@@ -142,3 +142,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored power-store enhancement](media/ui/scitek/hi-energy-power-stores/solid.png)
 
 [Full technical animation](media/ui/scitek/hi-energy-power-stores/information.webm) · [Source and integration contract](../sources/ui/scitek/hi-energy-power-stores/README.md).
+
+### Refined Asteroid Tracker
+
+![Refined legacy proportions](media/ui/scitek/asteroid-tracker-refined/solid.png)
+
+[Current source](../sources/ui/scitek/asteroid-tracker-refined/README.md) · [Corrected information sequence](media/ui/scitek/asteroid-tracker-refined/information.webm). Earlier iterations remain preserved.
