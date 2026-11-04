@@ -434,6 +434,12 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb26/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb26/model.glb)
 
+**Additional iteration — animated-covers**
+
+![Landing Pad](../gallery/media/docs/assets/reconstruction/buildings/terran/landing-pad/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/buildings/terran/landing-pad/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/terran/landing-pad/model.glb)
+
 ## Laser Turret
 
 `terran:laser-turret`

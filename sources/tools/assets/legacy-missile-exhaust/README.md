@@ -1,3 +1,5 @@
+The four reference PNGs described below are local-only inputs and are deliberately excluded from Git. Supply them outside this repository with `create_missile_assets.py --exhaust-directory <local-directory>` when performing legacy comparisons. Do not publish outputs containing those pixels.
+
 # Legacy missile exhaust references
 
 `exhaust-10.png` through `exhaust-13.png` contain rows 18 onward of frames 10–13 of `_M/PM00.256`, decoded from the original `_M/_M` archive with the palette from `_MS/BUTTONS.256`. Pixel index 0 is transparent. The dimensions are 5 × 11, 5 × 12, 5 × 13 and 5 × 12, respectively.

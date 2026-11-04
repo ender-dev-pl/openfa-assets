@@ -45,12 +45,22 @@ fixtures.update({'content/standard/images/quick-chrome-metal-tile.png',
 external = {x for x in fixtures if x.startswith('src/') or x.endswith('.java')}
 fixtures -= external
 media = {'.png', '.jpg', '.jpeg', '.gif', '.mp4', '.webp', '.html'}
+ui_inputs = {'content/standard/images/' + name for name in [
+    'quick-asteroid-icon.png', 'quick-chrome-metal-tile.png', 'quick-visual-menu-icon-v2.png']}
+# Apply the publication boundary even when replaying this historical recipe.
+policy = Path(__file__).resolve().parents[1] / 'project/excluded-media.json'
+excluded = set(json.loads(policy.read_text(encoding='utf-8'))['paths'])
+owned = {name for name in owned if 'gallery/media/' + name not in excluded}
+fixtures = {name for name in fixtures if 'gallery/media/' + name not in excluded}
 rows = []
 for name in sorted(owned | fixtures):
     role = 'fixture' if name in fixtures else 'source'
     if Path(name).suffix.lower() in media:
         role = 'media'
     dest = ('gallery/media/' if role == 'media' else 'sources/') + name
+    if name in ui_inputs:
+        role = 'source-input'
+        dest = 'sources/ui/quick-menu/' + Path(name).name
     source = game / name
     output = target / dest
     output.parent.mkdir(parents=True, exist_ok=True)

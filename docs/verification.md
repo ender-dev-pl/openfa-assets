@@ -1,11 +1,30 @@
 # Verification
 
-The migration verifier checks every imported file against its exact byte length and SHA-256. It rejects misplaced finished image/video output under `sources/`. The gallery is generated from the authoritative existing inventory; all 303 definitions must have an available study and a preserved preview.
+Current validation and historical import comparison are separate operations:
 
 ```powershell
 python tools/verify_project.py
-python tools/build_gallery.py
+python tools/test_asset_workspace.py
+node tools/test_gallery_filters.cjs
+python tools/asset_workspace.py audit-import
+```
+
+`verify_project.py` checks current layout boundaries, registered native study hashes, catalogue coverage, source/export/preview links and Python syntax. It does not require code/scripts to equal their first imported revision. Model changes still require the appropriate current inventory/review evidence; editable authoring does not mean accepting stale model reports.
+
+`test_asset_workspace.py` exercises source updates without baseline rewrites, preservation of edited/unmanaged workspaces, preflight conflicts, optional external evidence, explicit history, source-image boundaries and path containment. The gallery test runs actual generated JavaScript with a DOM/event facade for all 45 race/type combinations, search, reset, empty states and index/deep links; visual browser acceptance remains separate.
+
+`audit-import` is optional provenance checking. It resolves current destinations through the layout and compares them with the frozen import hashes. The present reorganization preserves 8,451 imported files exactly and explicitly retires four unused snapshots. Later legitimate source edits can fail this comparison without blocking preparation. Their current verification belongs to current asset reports.
+
+## Runtime checks
+
+```powershell
 python tools/asset_workspace.py prepare
+python tools/asset_workspace.py blender --blender C:/tools/blender/blender-4.5.15-windows-x64/blender.exe -- tools/blender/verify_assault_fighter.py
+```
+
+This checks actual native and independent GLB operation in Blender without game/legacy dependencies. For full historical catalogue/semantic evidence, first explicitly enable optional evidence and local caches:
+
+```powershell
 python tools/asset_workspace.py references
 python tools/asset_workspace.py python -- tools/blender/verify_reconstruction_inventory.py
 python tools/asset_workspace.py python -- tools/blender/audit_first_source_coverage.py --check
@@ -17,8 +36,4 @@ python tools/asset_workspace.py python -- tools/blender/check_boundary_coverage_
 python tools/asset_workspace.py python -- tools/blender/check_attachment_readiness.py
 ```
 
-Run native/imported tests through the Blender command documented in the workflow. Reports generated in `.workspace/` must be reviewed before publication. The existing ten scoped native/imported runtime gates remain unchanged; no artistic, state completeness, attachment calibration or game integration gate is promoted by this migration.
-
-Baseline immutability and current asset validation are separate. After an intentional future source edit, the import comparison will correctly report a changed file; retain the original manifest as provenance and verify the changed asset with current evidence. Dependencies for archived GPU upscaling research are documented separately in `sources/tools/hq-sprite-authoring/README.md` and are not required for gallery browsing or Blender modelling.
-
-The game repository's required `tools/Verify-ChangedCodeQuality.ps1` is run against the pre-migration game commit before completion. No application code is copied here as an executable game, and no new client runtime is invented for this asset-only project.
+All existing acceptance gates keep their original scope. No artistic, animation/state, attachment calibration or gameplay integration acceptance is inferred from this organization change. The game repository's `Verify-ChangedCodeQuality.ps1` is also run for this maintenance milestone; no game runtime code is modified.

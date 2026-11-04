@@ -1,4 +1,4 @@
-"""Check import integrity, source/media boundaries, catalogue coverage and gallery links."""
+"""Check current source layout, catalogue coverage and gallery links."""
 import ast
 from html.parser import HTMLParser
 import json
@@ -14,6 +14,8 @@ class LocalLinks(HTMLParser):
     def handle_starttag(self, tag, attrs):
         for key, value in attrs:
             if key in ['src', 'href'] and value and not urlsplit(value).scheme:
+                if not urlsplit(value).path:
+                    continue  # In-page index links carry catalogue filter state.
                 path = (ROOT / 'gallery' / unquote(urlsplit(value).path)).resolve()
                 assert path.is_relative_to(ROOT) and path.is_file(), value
 
@@ -38,7 +40,8 @@ def main():
             assert study['glb'] and (ROOT / study['glb']).is_file(), row['id']
             count += 1
     LocalLinks().feed((ROOT / 'gallery/index.html').read_text(encoding='utf-8'))
-    scripts = list((ROOT / 'sources').rglob('*.py')) + list((ROOT / 'tools').glob('*.py'))
+    scripts = (list((ROOT / 'sources').rglob('*.py')) + list((ROOT / 'tools').glob('*.py'))
+               + list((ROOT / 'archive').rglob('*.py')))
     for path in scripts:
         ast.parse(path.read_text(encoding='utf-8-sig'), filename=str(path))
     print('PROJECT_VERIFIED', len(gallery), 'definitions', count, 'study entries', len(scripts), 'Python sources')

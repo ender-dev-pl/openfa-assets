@@ -2,11 +2,44 @@
 import collections
 import html
 import json
+from io import BytesIO
 from pathlib import Path
 from urllib.parse import quote
 from PIL import Image, ImageDraw, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
+CATEGORY_LABELS = {'buildings': 'Buildings', 'ships': 'Ships / vehicles',
+                   'hardpoints': 'Hardpoints', 'missiles': 'Missiles / rockets'}
+
+
+def culture_label(value):
+    return 'Shared / all races' if value == 'shared' else value.title()
+
+
+def index_table(groups, cultures, categories, interactive=False):
+    if not interactive:
+        lines = ['## Index by race and asset type', '',
+                 '| Race | '+' | '.join(CATEGORY_LABELS[c] for c in categories)+' |',
+                 '| --- | '+' | '.join('---:' for _ in categories)+' |']
+        for culture in cultures:
+            cells = []
+            for category in categories:
+                count = len(groups.get((category, culture), []))
+                cells.append(f'[{count}]({category}-{culture}.md)' if count else '—')
+            lines.append('| '+culture_label(culture)+' | '+' | '.join(cells)+' |')
+        return lines+['']
+    def link(text, culture='', category=''):
+        from urllib.parse import urlencode
+        return '<a href="#'+html.escape(urlencode({k:v for k,v in [('race',culture),('type',category)] if v}), quote=True)+'">'+html.escape(text)+'</a>'
+    headings = '<th scope="col">Race</th>'+''.join('<th scope="col">'+link(CATEGORY_LABELS[c],category=c)+'</th>' for c in categories)
+    body = []
+    for culture in cultures:
+        cells = []
+        for category in categories:
+            count = len(groups.get((category, culture), []))
+            cells.append('<td>'+link(str(count),culture,category)+'</td>' if count else '<td>—</td>')
+        body.append('<tr><th scope="row">'+link(culture_label(culture),culture=culture)+'</th>'+''.join(cells)+'</tr>')
+    return '<table><caption>Choose a race, asset type or a count to filter the catalogue.</caption><thead><tr>'+headings+'</tr></thead><tbody>'+''.join(body)+'</tbody></table>'
 
 
 def main():
@@ -43,6 +76,9 @@ def main():
     lines = ['# Model gallery', '', 'Existing authored studies only. First run and available refined stages are shown separately. '
              'A technical study is not final artistic acceptance. No new refinement was generated.', '',
              '[Interactive catalogue](index.html) · [Machine-readable index](catalogue.json)', '']
+    categories = [c for c in CATEGORY_LABELS if any(key[0] == c for key in sheets)]
+    cultures = sorted({r['culture'] for r in rows}, key=lambda c:(c == 'shared', c))
+    lines += index_table(sheets, cultures, categories)
     for (category, culture), group in sorted(sheets.items()):
         slug = category+'-'+culture
         page = ['# '+category.title()+' / '+culture.title(), '', '[All groups](README.md)', '']
@@ -66,7 +102,11 @@ def main():
         sheet = Image.new('RGB', (256*5, 288*((len(cells)+4)//5)), '#101722')
         for n, cell in enumerate(cells):
             sheet.paste(cell, ((n%5)*256, (n//5)*288))
-        sheet.save(out / 'sheets' / (slug+'.jpg'), quality=88)
+        encoded = BytesIO()
+        sheet.save(encoded, format='JPEG', quality=88)
+        target = out / 'sheets' / (slug+'.jpg')
+        if not target.exists() or target.read_bytes() != encoded.getvalue():
+            target.write_bytes(encoded.getvalue())
         (out / (slug+'.md')).write_text('\n'.join(page).rstrip()+'\n', encoding='utf-8')
         lines += ['## '+category.title()+' / '+culture.title(), '',
                   '[Browse '+str(len(group))+' definitions]('+slug+'.md)', '',
@@ -81,11 +121,11 @@ def main():
                 '<br><a href="../'+quote(study['blend'])+'">Blend</a>'+
                 (' · <a href="../'+quote(study['glb'])+'">GLB</a>' if study['glb'] else '')+'</figcaption></figure>')
         search = ' '.join([row['name'],row['id'],row['category'],row['culture']]+[s['stage'] for s in row['studies']]).lower()
-        cards.append('<article data-search="'+html.escape(search, quote=True)+'"><h2>'+html.escape(row['name'])+'</h2><p>'+html.escape(row['category']+' / '+row['culture']+' / '+row['id'])+'</p><div class="variants">'+''.join(images)+'</div></article>')
-    page = '''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OpenFA asset catalogue</title><style>
-body{margin:0;background:#101722;color:#e7eff7;font:16px system-ui}header{padding:24px;position:sticky;top:0;background:#162334;z-index:1}h1{margin:0 0 8px}input{padding:12px;width:min(90%,640px);font:inherit}main{padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:20px}article{background:#192637;border-radius:12px;padding:20px}h2{margin:0 0 8px;font-size:21px}p,figcaption{color:#b3c7dc}.variants{display:flex;flex-wrap:wrap;gap:12px}figure{margin:0;flex:1;min-width:180px}img{display:block;width:100%;height:260px;object-fit:contain;background:#101722}figcaption{padding:8px 0}a{color:#80ccff}[hidden]{display:none!important}</style>
-<header><h1>OpenFA asset catalogue</h1><p>303 definitions · existing first-run and refined studies · no final artistic acceptance implied</p><input id="search" type="search" placeholder="Filter by name, culture, category or stage" aria-label="Filter catalogue"><span id="count"></span></header><main>'''+''.join(cards)+'''</main><script>
-const cards=[...document.querySelectorAll('article')],input=document.querySelector('#search'),count=document.querySelector('#count');function filter(){let n=0;for(const c of cards){c.hidden=!c.dataset.search.includes(input.value.toLowerCase());if(!c.hidden)n++}count.textContent=' '+n+' definitions'}input.addEventListener('input',filter);filter();</script></html>'''
+        cards.append('<article data-search="'+html.escape(search, quote=True)+'" data-race="'+html.escape(row['culture'],quote=True)+'" data-type="'+html.escape(row['category'],quote=True)+'"><h2>'+html.escape(row['name'])+'</h2><p>'+html.escape(CATEGORY_LABELS[row['category']]+' / '+culture_label(row['culture'])+' / '+row['id'])+'</p><div class="variants">'+''.join(images)+'</div></article>')
+    template = Path(__file__).with_name('gallery_template.html').read_text(encoding='utf-8')
+    race_options = ''.join('<option value="'+c+'">'+html.escape(culture_label(c))+'</option>' for c in cultures)
+    type_options = ''.join('<option value="'+c+'">'+html.escape(CATEGORY_LABELS[c])+'</option>' for c in categories)
+    page = template.replace('{{CARDS}}', ''.join(cards)).replace('{{RACES}}', race_options).replace('{{TYPES}}', type_options).replace('{{INDEX}}', index_table(sheets,cultures,categories,interactive=True)).replace('{{COUNT}}',str(len(rows)))
     (out / 'index.html').write_text(page, encoding='utf-8')
     print('GALLERY_OK', len(rows), sum(len(r['studies']) for r in rows), len(sheets))
 

@@ -1,0 +1,9 @@
+name: Provide model sources
+description: Expose model build inputs through the organization Actions access grant
+runs:
+  using: composite
+  steps:
+    - shell: pwsh
+      env:
+        ACTION_PATH: ${{ github.action_path }}
+      run: '& "$env:ACTION_PATH/Provide-Models.ps1"'
