@@ -154,3 +154,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored integrated sensor enhancement](media/ui/scitek/improved-sensors/solid.png)
 
 [Full technical animation](media/ui/scitek/improved-sensors/information.webm) · [Source and integration contract](../sources/ui/scitek/improved-sensors/README.md).
+
+### Mk2 Mine
+
+![Authored Mk2 Mine research assembly](media/ui/scitek/mk2-mine/solid.png)
+
+[Full technical animation](media/ui/scitek/mk2-mine/information.webm) · [Source and integration contract](../sources/ui/scitek/mk2-mine/README.md).

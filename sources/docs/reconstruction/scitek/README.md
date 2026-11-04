@@ -19,7 +19,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 
 | Index | Research | Existing subject | Delivery |
 | --- | --- | --- | --- |
-| 0 | scitek:mk2-mine | **Missing** | Pending |
+| 0 | scitek:mk2-mine | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 1 | scitek:mk2-deep-bore-mine | **Missing** | Pending |
 | 2 | scitek:anti-missile-pod | terran:anti-missile-pod | Pending |
 | 3 | scitek:anti-virus-missile | openfa:anti-virus | Pending |
