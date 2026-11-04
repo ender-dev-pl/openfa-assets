@@ -55,20 +55,46 @@ blender --background --factory-startup --disable-autoexec --python-exit-code 1 -
 
 ## GitHub Pages
 
-Use Settings > Pages > GitHub Actions after publishing this clean repository.
-`public-pages.yml` verifies pull requests and pushes to `main`. Deployment requires
-an explicit workflow dispatch with the `deploy` input enabled; a history push alone
-does not publish the site. Its deployment job alone receives Pages/OIDC write
-permissions. It uploads only `_site`, never
-the checkout, raw logs, migration evidence, Blender files or private workspace files.
+The prepared site lives on the dedicated `gh-pages` branch, at its root. This
+branch contains only generated HTML, metadata-free WebP previews, `.nojekyll`,
+referenced animation media and the build manifest. It has its own publication
+history; authoring files, logs and private working directories are not copied.
 
-`build_public_pages.py` produces three HTML entry pages, metadata-free WebP previews
-and only referenced animation media. Full images and editable model downloads link
-to public repository files; source/evidence links open their GitHub pages. A local
-link check and a 900 MiB artifact budget run before upload. The full gallery source
-is larger than the [1 GB Pages site limit](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
+The current GitHub plan does not support Pages while this repository is private.
+Content can be prepared and pushed beforehand, without changing visibility or
+requesting a Pages build. After making the repository public:
 
-When publishing under another repository name, pass `--repository owner/name`.
-The workflow supplies this automatically. Before first publication, also review
-the existing repository's issues, attachments, releases and Actions artifacts;
-those are not part of a Git snapshot and remain after replacing branch history.
+1. Open Settings > Pages.
+2. Set Source to **Deploy from a branch**.
+3. Select **gh-pages** and **/(root)**, then Save.
+4. Wait for GitHub's Pages deployment. The expected address is
+   `https://ender-dev-pl.github.io/openfa-assets/`.
+
+`public-pages.yml` verifies pull requests and pushes to main without uploading
+Actions artifacts. This avoids the organization's exhausted artifact-storage
+quota during verification. For later content updates, manually run the workflow
+with `deploy` enabled. Only that job gets contents/Pages write permissions. It
+rebuilds the site, replaces gh-pages with a clean content commit using an exact
+SHA lease, and explicitly requests the native Pages build. Pages must already be
+configured to the gh-pages branch; no token with administration privileges and no
+extra repository secret are required for routine updates.
+
+For local preparation, choose a new output directory and use authenticated Git:
+
+```sh
+python tools/build_public_pages.py --output artifacts/public-pages-content --repository ender-dev-pl/openfa-assets --ref main
+python tools/publish_public_pages.py --site artifacts/public-pages-content --repository ender-dev-pl/openfa-assets
+```
+
+The second command updates only gh-pages. It does not change repository visibility,
+configure Pages, or request a build unless `--request-build` is explicitly supplied.
+The publisher checks allowed file types, all local page links and private metadata
+before creating a content-only root commit; it refuses source directories,
+symlinks and previously initialized output repositories.
+
+The builder keeps a 900 MiB output budget. Full images and editable source/model
+links point to the public source repository rather than embedding the authoring
+archive. The full gallery source exceeds the
+[1 GB Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
+The native Pages deployment is managed by GitHub; this repository's workflow does
+not upload build artifacts or delete existing organization artifacts.
