@@ -54,14 +54,14 @@
 | 49 | Seaweed | coloured_model_verified |
 | 50 | Krill | coloured_model_verified |
 | 51 | Water | coloured_model_verified |
-| 52 | Ortok's Mansions | planned |
-| 53 | Shades of Brutos | planned |
-| 54 | Huskar Cigars | planned |
-| 55 | Maunik's Cube | planned |
-| 56 | Gong of Death Song | planned |
-| 57 | Holostar globes | planned |
-| 58 | Besthelda's Apothecary | planned |
-| 59 | Photoplasmic Cocoon | planned |
+| 52 | Ortok's Mansions | coloured_model_verified |
+| 53 | Shades of Brutos | coloured_model_verified |
+| 54 | Huskar Cigars | coloured_model_verified |
+| 55 | Maunik's Cube | coloured_model_verified |
+| 56 | Gong of Death Song | coloured_model_verified |
+| 57 | Holostar globes | coloured_model_verified |
+| 58 | Besthelda's Apothecary | coloured_model_verified |
+| 59 | Photoplasmic Cocoon | coloured_model_verified |
 | 60 | Steam Racers | planned |
 | 61 | KKZ Quad | planned |
 | 62 | Kraagil Oil | planned |

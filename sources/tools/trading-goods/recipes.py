@@ -273,3 +273,58 @@ def storage(n):
   M.cube('cargo instruction plate',(1.25,0,1.0),(.035,.65,.4),metal,p)
   for y in [-.4,0,.4]:M.cube('yellow cargo pictogram',(1.29,y,1.0),(.015,.1,.13),yellow,p)
 BUILDERS.update({i:storage for i in range(49,53)})
+
+def collectibles(n):
+ gold=M.mat('antiqued artifact brass',(.48,.29,.055),.8,.4);dark=M.mat('aged black base',(.022,.018,.012),.25,.8);wood=M.mat('antique warm wood',(.22,.085,.025),rough=.8);blue=M.mat('blue enamel',(.025,.30,.38),.2,.35);ivory=M.mat('ivory small pieces',(.65,.55,.36),rough=.7)
+ if n==53:
+  p=M.root('multi-level Ortok game');M.lathe('oval game table base',[(1.5,0),(1.6,.10),(1.5,.18)],wood,p).scale.y=.65
+  for x in [-1.2,1.2]:
+   for y in [-.5,.5]:M.rod('turned table leg',(x,y,-.6),(x,y,0),.08,wood,p)
+  for j in range(6):
+   z=.2+j*.45;o=M.cylinder('separate oval board',(0,0,z),1.5,.045,blue,p);o.scale.y=.65
+   for x,y in [(-1.1,-.45),(-.4,-.65),(.4,-.65),(1.1,-.45)]:
+    M.cube('miniature mansion',(x,y,z+.12),(.09,.075,.12),ivory,p);M.cube('mansion doorway',(x,y-.078,z+.10),(.025,.008,.06),dark,p)
+   for a in [0,math.pi/2,math.pi,math.pi*1.5]:M.rod('board support column',(1.5*math.cos(a),.9*math.sin(a),.2),(1.5*math.cos(a),.9*math.sin(a),2.6),.025,gold,p)
+ elif n==54:
+  bronze=M.mat('worn goggle bronze',(.30,.18,.07),.5,.5);black=M.mat('black lens',(.003,.004,.005),.1,.15);red=M.mat('small red sensor',(.6,.005,.001),emit=.3);p=M.root('Brutos goggles');band('broad head strap',1.15,.16,.22,bronze,p,start=.15,end=math.tau-.15)
+  for x in [-.50,.50]:
+   M.ball('rounded goggle housing',(x,-1,.18),(.49,.25,.38),bronze,p);M.ball('black oval lens',(x,-1.23,.18),(.37,.025,.28),black,p);M.ball('red lens glint',(x-.05,-1.26,.22),(.035,.012,.035),red,p)
+  M.rod('nose bridge',(-.1,-1,.2),(.1,-1,.2),.09,bronze,p)
+ elif n==55:
+  red=M.mat('red lacquered cigar box',(.42,.012,.012),.1,.45);brown=M.mat('rolled Huskar leaf',(.20,.11,.025),rough=.9);p=open_case('Huskar cigar box',red,gold,angle=.1)
+  for j,y in enumerate([-.4,0,.4]):
+   M.rod('individual cigar',(-.9,y,.8),(1.4,y+.3,.8),.09,brown,p);M.rod('gold cigar band',(-.2,y+.09,.8),(-.05,y+.11,.8),.096,gold,p)
+  M.ball('box decorative gold seal',(-.4,-.2,.69),(.3,.22,.01),gold,p)
+ elif n==56:
+  metal=M.mat('oily Maunid puzzle metal',(.22,.21,.18),.75,.6);p=M.root('Maunik puzzle cube');p.rotation_euler=(.12,.1,.2)
+  for x in range(3):
+   for y in range(3):
+    for z in range(3):
+     xx,yy,zz=(x-1)*.51,(y-1)*.51,z*.51;M.cube('independent puzzle cubie',(xx,yy,zz),(.245,.245,.245),metal,p)
+     if y==0:
+      for k in [-1,1]:M.rod('abstract incised cubie motif',(xx-.1,yy-.25,zz+k*.1),(xx+.1,yy-.25,zz-k*.08),.012,dark,p)
+ elif n==57:
+  p=M.root('Gong of DeathSong and frame');M.cube('gong display footing',(0,0,.05),(1.2,.55,.05),wood,p)
+  for x in [-1.1,1.1]:M.cube('ornate frame upright',(x,0,1.25),(.1,.13,1.25),gold,p)
+  M.cube('frame top crossbar',(0,0,2.5),(1.2,.13,.12),gold,p);M.cylinder('black gong rim',(0,0,1.25),1.0,.10,dark,p).rotation_euler.x=math.pi/2;M.cylinder('gold sounding disc',(0,-.11,1.25),.74,.035,gold,p).rotation_euler.x=math.pi/2
+  for j in range(50):a=j*2.4;r=.10+(j%8)*.075;M.ball('gong patterned dimple',(r*math.cos(a),-.15,1.25+r*math.sin(a)),(.018,.012,.018),dark,p,1)
+  M.rod('suspension',(-.3,0,2.5),(-.3,0,2.0),.025,gold,p);M.rod('suspension',(.3,0,2.5),(.3,0,2.0),.025,gold,p)
+ elif n==58:
+  violet=M.mat('violet holographic globe',(.09,.025,.35),.12,.18,.35);p=M.root('Rigellian star globe stand');M.lathe('gold stand foot',[(.95,0),(1.05,.12),(.95,.22)],gold,p)
+  for j in range(4):
+   a=j*math.pi/2;x,y=.7*math.cos(a),.7*math.sin(a);M.rod('turned stand pillar',(x,y,.2),(x,y,1.2),.045,gold,p)
+   for z in [.3,.45,.6,.75,.9]:M.ring('pillar spiral collar',(x,y,z),.075,.025,gold,p)
+  M.ring('equatorial stand',(0,0,1.2),1.0,.05,gold,p);M.ball('separate globe',(0,0,1.4),(.85,.85,.95),violet,p,3)
+  for z,r in [(.8,.6),(1.2,.8),(1.6,.83),(2.0,.6)]:M.ring('holographic latitude',(0,0,z),r,.012,blue,p)
+  st=M.mat('holographic star nodes',(.25,.42,.9),emit=1)
+  for j in range(20):a=j*2.4;z=.65+(j%7)*.22;r=math.sqrt(max(.01,.85**2-(z-1.4)**2));M.ball('star map node',(r*math.cos(a),r*math.sin(a),z),(.025,)*3,st,p,1)
+ elif n==59:
+  green=M.mat('green apothecary case',(.16,.40,.025),.1,.45);bottle=M.mat('pale remedy glass',(.55,.65,.47),rough=.22,glass=.18);p=open_case('Besthelda apothecary',green,ivory)
+  for j in range(2):
+   for i in range(11):
+    q=M.bottle('individual remedy vial',( -.95+i*.19,-.32+j*.58,.23),bottle,gold,height=.35,r=.065);q.parent=p
+ elif n==60:
+  glass=M.mat('yellow-green photoplasmic shell',(.48,.57,.12),rough=.18,glass=.45);light=M.mat('photoplasm core',(.65,.4,.05),emit=.5);p=M.root('photoplasmic cocoon');M.lathe('stepped circular cocoon plinth',[(.8,0),(.9,.1),(.8,.2),(.65,.26)],gold,p);M.ball('elliptical clear cocoon',(0,0,1.4),(.62,.48,1.2),glass,p,3)
+  for z in [.7,1.4,2.0]:M.ball('internal therapeutic light',(0,0,z),(.16,.13,.16),light,p)
+  for side in [-1,1]:M.rod('internal suspension rod',(side*.23,0,.3),(side*.23,0,2.3),.035,gold,p)
+BUILDERS.update({i:collectibles for i in range(53,61)})
