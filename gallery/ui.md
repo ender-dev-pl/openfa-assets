@@ -172,3 +172,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Building Armour research assembly](media/ui/scitek/building-armour/solid.png)
 
 [Full technical animation](media/ui/scitek/building-armour/information.webm) · [Source and integration contract](../sources/ui/scitek/building-armour/README.md).
+
+### Construction Droids
+
+![Authored Construction Droids research assembly](media/ui/scitek/construction-droids/solid.png)
+
+[Full technical animation](media/ui/scitek/construction-droids/information.webm) · [Source and integration contract](../sources/ui/scitek/construction-droids/README.md).
