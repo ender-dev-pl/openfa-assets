@@ -310,3 +310,9 @@ Construction Droids and Improved Sensors in the original80x64 logical compositio
 ![Power category](media/ui/scitek/category-power/category-4x.png)
 
 Hi-Energy Power Stores and shared refined Powerplant in the original80x64 composition. [Source and binding](../sources/ui/scitek/category-collages/power/README.md).
+
+### Repair Facility
+
+![Repair Facility](media/ui/scitek/repair-facility/solid.png)
+
+[Technical animation](media/ui/scitek/repair-facility/information.webm) - [Shared source and integration](../sources/ui/scitek/repair-facility/README.md).

@@ -272,6 +272,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb15/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Repair Facility](../gallery/media/objects/terran/repair-facility/refined/render.png)
+
+[Blend](../sources/objects/terran/repair-facility/refined/model.blend) · [GLB](../sources/objects/terran/repair-facility/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/repair-facility/refined/animation-00.webm)
+
 ## Sensor Array
 
 `terran:sensor-array`
