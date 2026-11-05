@@ -11,3 +11,5 @@ Integration must retain the24 shared physical source contracts and use one dedic
 Outstanding work: independently audit technical/physical geometry correspondence for these twelve presentations, including any intentionally reduced technical LOD and isolated auxiliary details. Classification alone must not be used to mark that requirement complete. Actual client/GPU acceptance is handled by the integration thread.
 
 The first independent source geometry audit is now recorded in [upgrade-geometry-audit.md](upgrade-geometry-audit.md). It identifies the specific ST14 projectile-pose discrepancy and the11 Improved Sensors display-grid lines; it does not mark final geometry acceptance.
+
+Current source-geometry follow-ups are resolved; see [DELIVERY.md](DELIVERY.md), the updated geometry audit and Improved Sensors surface proof. Historical outstanding-work notes above describe earlier stages. Actual client integration remains separate.

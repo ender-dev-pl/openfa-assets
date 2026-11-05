@@ -1,5 +1,7 @@
 # Sci-Tek menu asset programme Ă˘â‚¬â€ť #208
 
+Current source-delivery status: **complete at the requested approximate80% target**. See [final evidence and limits](DELIVERY.md). Client integration remains separate; historical progress notes below are superseded by the current audit.
+
 All 36 actual research bindings, 36 colour preview sprites, six category frames and the main logo were located. All information-video containers and 7,282 cached original-codec image updates were checked against current source/executable/decoder hashes. Eighteen spaced phases per information film were visually reviewed; this is not exhaustive frame-by-frame motion acceptance. All 36 colour preview films were freshly decoded with the original executable codec; eighteen spaced phases per film were inspected. This is not exhaustive frame-by-frame acceptance.
 
 The initial audit mapped 23 subjects to existing authored definitions and identified thirteen subjects without a mapped model; current deliveries are tracked below. Hardpoints and ships use semantic identities because their research ST/PH presentation source differs from the ordinary model sprite family; reuse is conditional on visual comparison. Existing models are preserved.
