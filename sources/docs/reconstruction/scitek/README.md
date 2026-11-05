@@ -4,6 +4,8 @@ All 36 actual research bindings, 36 colour preview sprites, six category frames 
 
 The initial audit mapped 23 subjects to existing authored definitions and identified thirteen subjects without a mapped model; current deliveries are tracked below. Hardpoints and ships use semantic identities because their research ST/PH presentation source differs from the ordinary model sprite family; reuse is conditional on visual comparison. Existing models are preserved.
 
+Current physical relationships:24 shared object contracts and12 dedicated upgrade-device presentations. See [the relationship audit](model-relationships.md) and its hash-bound evidence. The twelve devices modify existing objects or player capabilities rather than replacing whole buildings, ships or projectiles. Technical/physical geometry audits for those twelve remain outstanding; classification is not final visual acceptance.
+
 Legacy information films use green wireframe objects, red highlighted subassemblies, changing camera/rotation and close-ups. A generic whole-object turntable alone will not reproduce them. Category art is a grayscale collage of three defence subjects, three ship/equipment subjects, three missile/missile-bay subjects, three mining subjects, two power subjects and two miscellaneous subjects. Main logo is a separate 320Ä‚â€”160 logical sprite with a 234Ä‚â€”115 drawn plaque, not the HUD oval badge. SCITEKC and SCITEK references require the runtime BUTTONS palette; a directory-neighbour palette fallback is invalid.
 
 ## Delivery gates

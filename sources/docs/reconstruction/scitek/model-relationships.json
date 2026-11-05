@@ -1,0 +1,369 @@
+{
+  "issue": 208,
+  "scope": "Classification of the twelve previously unestablished physical counterparts, not final visual acceptance.",
+  "method": "Actual legacy colour-media identities and dedicated subject anatomy, checked against current runtime modifier definitions. Absence of an inventory candidate alone was not used.",
+  "evidence": [
+    {
+      "repository": "openFA-game",
+      "path": "content/standard/catalogues/legacy-research.json",
+      "sha256": "4ee79d326c4e10fadd38f9a13e1d269f3987446c10c63057805a9b95b35aedb1"
+    },
+    {
+      "repository": "openFA-game",
+      "path": "content/standard/catalogues/legacy-buildings.json",
+      "sha256": "a1dc323c0798e4ac5a863f21b4ba13fad821f5b6836cf60f32c728e75225b519"
+    },
+    {
+      "repository": "openFA-game",
+      "path": "docs/legacy/scitek-blueprints.md",
+      "sha256": "d3c7e27ded4e253903ef8a52ce8e76ee0e9fab876a71711cbb4ee1532901e4a5"
+    },
+    {
+      "repository": "openFA-game",
+      "path": "src/OpenFA.Core/Modding/ResearchCatalog.cs",
+      "sha256": "d179247ddfad9668f251e5d55d045c2a34beaefec5306062ce8fad4ba66411a6"
+    },
+    {
+      "repository": "openFA-game",
+      "path": "src/OpenFA.Tests/Modding/ResearchCatalogTests.cs",
+      "sha256": "ccf5692d63ce905d2ac30d9066a884c834dc6b5788b13d72619777ce33d4396a"
+    },
+    {
+      "repository": "openFA-game",
+      "path": "artifacts/fragile-le-decompilation/FRAGILE.LE.decompiled.c",
+      "sha256": "e263025117180a1e63e3d534cbdeae24acf3f3990732521440f08e4bf80617e2"
+    }
+  ],
+  "legacy_code_anchors": [
+    "RefreshSelectedPurchaseCatalogueItem 0x55440: product-media descriptors; game decompile line57121 indexes PTR_s___MA_st00_vid_000e4f9c by research ID*3.",
+    "Long Range Transmitter: recovered CreateActiveShipAtAsteroid 0x2B4C0 and CompleteShipProspectingOrder 0x2CC00, documented in game docs/legacy/scitek-blueprints.md."
+  ],
+  "confirmed_current_runtime_contract": "All twelve definitions have explicit numeric modifiers and no unlockContentIds. Related whole buildings/ships/projectiles keep their own catalogue identities.",
+  "interpretation": "These distinct legacy ST devices represent internal upgrades or supporting equipment. They are not geometric alternatives to the complete objects whose statistics they improve. Future physical in-world detail uses should reuse the same presentation source, not invent duplicate models.",
+  "counts": {
+    "shared_physical_contracts": 24,
+    "classified_upgrade_devices": 12,
+    "unclassified": 0
+  },
+  "records": [
+    {
+      "index": 0,
+      "research_id": "scitek:mk2-mine",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "existing common mines",
+        "reason": "Internal drill/slurry/coolant assembly; not the external colony mine building.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "mining.common.period": 2
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST00.VID"
+      },
+      "legacy_colour_sha256": "86f46c2b6a3ac9dd7828e2f09851d057c679a3b747b176e3294aa95dd3f040a5",
+      "presentation_blend": "sources/ui/scitek/mk2-mine/mk2-mine.blend",
+      "presentation_glb": "sources/ui/scitek/mk2-mine/mk2-mine.glb",
+      "source_readme": "sources/ui/scitek/mk2-mine/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 1,
+      "research_id": "scitek:mk2-deep-bore-mine",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "existing deep-bore mines",
+        "reason": "Internal drill/probe/coolant assembly; not the external deep-bore building.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "mining.deep-bore.period": 8
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST01.VID"
+      },
+      "legacy_colour_sha256": "9a68497194e99ca55788925c7fd12b9d50f01922297f23dc6cf5abd0d70b5886",
+      "presentation_blend": "sources/ui/scitek/mk2-deep-bore-mine/mk2-deep-bore-mine.blend",
+      "presentation_glb": "sources/ui/scitek/mk2-deep-bore-mine/mk2-deep-bore-mine.glb",
+      "source_readme": "sources/ui/scitek/mk2-deep-bore-mine/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 5,
+      "research_id": "scitek:asteroid-tracker",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "strategic-map telemetry",
+        "reason": "Console for drift telemetry; not a surface radar building.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "strategic-map.asteroid-drift-telemetry-enabled": 1
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST05.VID"
+      },
+      "legacy_colour_sha256": "614d05c6c450586d694149601a42bc54bfe15d087d6c339ef42a6fe62a5779f5",
+      "presentation_blend": "sources/ui/scitek/asteroid-tracker-refined/asteroid-tracker.blend",
+      "presentation_glb": "sources/ui/scitek/asteroid-tracker-refined/asteroid-tracker.glb",
+      "source_readme": "sources/ui/scitek/asteroid-tracker-refined/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 6,
+      "research_id": "scitek:building-armour",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "building durability and repair limits",
+        "reason": "Armour-field device; not a replacement building shell.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "building.armour.bonus": 10
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST06.VID"
+      },
+      "legacy_colour_sha256": "252be60548e2036878ba68270826e4af08be6d6ae06cd5a3752cfd9de0e54929",
+      "presentation_blend": "sources/ui/scitek/building-armour/building-armour.blend",
+      "presentation_glb": "sources/ui/scitek/building-armour/building-armour.glb",
+      "source_readme": "sources/ui/scitek/building-armour/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 7,
+      "research_id": "scitek:construction-droids",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "ship construction queues and work rate",
+        "reason": "Tool-equipped construction droid; not a replacement Ship Yard or new independently simulated vehicle.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "ship.construction.queue-capacity": 6,
+        "ship.construction.reduction-divisor": 4
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST07.VID"
+      },
+      "legacy_colour_sha256": "cb7a0ccad59bee40acb3a643511b00c89ab381e18d7d4e4184148767f645905c",
+      "presentation_blend": "sources/ui/scitek/construction-droids/construction-droids.blend",
+      "presentation_glb": "sources/ui/scitek/construction-droids/construction-droids.glb",
+      "source_readme": "sources/ui/scitek/construction-droids/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 11,
+      "research_id": "scitek:hi-energy-power-stores",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "colony power storage capacity",
+        "reason": "Capacitance device; not the exterior power-store building.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "power.storage.capacity": 400,
+        "power.storage.multiplier": 2
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST11.VID"
+      },
+      "legacy_colour_sha256": "faf8bf4938cc408c4a7c992fb9caffcabdc2638713feaae26636b981a6b6cf6c",
+      "presentation_blend": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores.blend",
+      "presentation_glb": "sources/ui/scitek/hi-energy-power-stores/hi-energy-power-stores.glb",
+      "source_readme": "sources/ui/scitek/hi-energy-power-stores/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 12,
+      "research_id": "scitek:improved-sensors",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "colony sensor range",
+        "reason": "Integrated sensor device; not a replacement Sensor Array building.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "sensor.range": 60
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST12.VID"
+      },
+      "legacy_colour_sha256": "48557406e0d8fdb161bc458404de6847500354a0dd85354276bee51f2a7694a1",
+      "presentation_blend": "sources/ui/scitek/improved-sensors/improved-sensors.blend",
+      "presentation_glb": "sources/ui/scitek/improved-sensors/improved-sensors.glb",
+      "source_readme": "sources/ui/scitek/improved-sensors/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 14,
+      "research_id": "scitek:missile-bay-extension",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "missile storage capacity",
+        "reason": "Internal magazine/feed mechanism; not a replacement colony missile-factory exterior.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "missile.storage.capacity": 20
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST14.VID"
+      },
+      "legacy_colour_sha256": "8d03b876a9fb8a9528a615fc07c9484827eb2b72b4af34e30ba664c3ee92dab6",
+      "presentation_blend": "sources/ui/scitek/missile-bay-extension/missile-bay-extension.blend",
+      "presentation_glb": "sources/ui/scitek/missile-bay-extension/missile-bay-extension.glb",
+      "source_readme": "sources/ui/scitek/missile-bay-extension/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 15,
+      "research_id": "scitek:missile-guidance-system",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "missile accuracy",
+        "reason": "Guidance/computer device; not a complete missile projectile.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "missile.accuracy.full-range": 64
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST15.VID"
+      },
+      "legacy_colour_sha256": "a0bafc33afb11f3709d477d305410dff519185158b738ea6c57089de7a339800",
+      "presentation_blend": "sources/ui/scitek/missile-guidance-system/missile-guidance-system.blend",
+      "presentation_glb": "sources/ui/scitek/missile-guidance-system/missile-guidance-system.glb",
+      "source_readme": "sources/ui/scitek/missile-guidance-system/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 20,
+      "research_id": "scitek:power-amplifier",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "solar power output",
+        "reason": "Amplifier device; not a replacement solar panel, generator or matrix.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "power.solar.multiplier": 2
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST20.VID"
+      },
+      "legacy_colour_sha256": "05805698a703705cd54c22549107ef1da83a41487913d096e40785cb50e9c78f",
+      "presentation_blend": "sources/ui/scitek/power-amplifier/power-amplifier.blend",
+      "presentation_glb": "sources/ui/scitek/power-amplifier/power-amplifier.glb",
+      "source_readme": "sources/ui/scitek/power-amplifier/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 31,
+      "research_id": "scitek:turret-optimiser",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "building turret shot damage",
+        "reason": "Optimiser subassembly; not a complete weapon turret.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "combat.turret.damage-multiplier": 2
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST31.VID"
+      },
+      "legacy_colour_sha256": "6c7329f6a4ee8f5247eabb5397d6b3c3b23fd22491242dd5f9dae655b4fcbae8",
+      "presentation_blend": "sources/ui/scitek/turret-optimiser/turret-optimiser.blend",
+      "presentation_glb": "sources/ui/scitek/turret-optimiser/turret-optimiser.glb",
+      "source_readme": "sources/ui/scitek/turret-optimiser/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    },
+    {
+      "index": 34,
+      "research_id": "scitek:long-range-transmitter",
+      "classification": {
+        "kind": "upgrade-device-presentation",
+        "affected_scope": "remote ship survey delivery",
+        "reason": "Communications console; not a selectable hardpoint or complete ship.",
+        "physical_replacement": false,
+        "shared_counterpart_required": false,
+        "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
+        "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
+      },
+      "modifiers": {
+        "ship.survey.remote-delivery": 1
+      },
+      "legacy_colour_source": {
+        "type": "legacy-video",
+        "directoryName": "_MA",
+        "fileName": "ST34.VID"
+      },
+      "legacy_colour_sha256": "cad001f056384df188703a079cc28c6cf71a1d141fd7750c9a45ef5736111b99",
+      "presentation_blend": "sources/ui/scitek/long-range-transmitter/long-range-transmitter.blend",
+      "presentation_glb": "sources/ui/scitek/long-range-transmitter/long-range-transmitter.glb",
+      "source_readme": "sources/ui/scitek/long-range-transmitter/README.md",
+      "remaining_verification": "Independently audit physical/technical geometry correspondence; classification alone does not establish geometry fidelity."
+    }
+  ],
+  "limitations": [
+    "The game catalogue proves current runtime semantics; it does not independently recover every original legacy effect implementation.",
+    "Colour-media naming alone is insufficient; the shape/part role and semantic difference from complete physical objects are included per record.",
+    "This classification does not close outstanding technical/physical geometric correspondence audits or claim client/GPU acceptance."
+  ]
+}
