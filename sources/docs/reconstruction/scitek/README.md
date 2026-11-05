@@ -1,10 +1,10 @@
-# Sci-Tek menu asset programme — #208
+# Sci-Tek menu asset programme â€” #208
 
 All 36 actual research bindings, 36 colour preview sprites, six category frames and the main logo were located. All information-video containers and 7,282 cached original-codec image updates were checked against current source/executable/decoder hashes. Eighteen spaced phases per information film were visually reviewed; this is not exhaustive frame-by-frame motion acceptance. All 36 colour preview films were freshly decoded with the original executable codec; eighteen spaced phases per film were inspected. This is not exhaustive frame-by-frame acceptance.
 
 The initial audit mapped 23 subjects to existing authored definitions and identified thirteen subjects without a mapped model; current deliveries are tracked below. Hardpoints and ships use semantic identities because their research ST/PH presentation source differs from the ordinary model sprite family; reuse is conditional on visual comparison. Existing models are preserved.
 
-Legacy information films use green wireframe objects, red highlighted subassemblies, changing camera/rotation and close-ups. A generic whole-object turntable alone will not reproduce them. Category art is a grayscale collage of three defence subjects, three ship/equipment subjects, three missile/missile-bay subjects, three mining subjects, two power subjects and two miscellaneous subjects. Main logo is a separate 320×160 logical sprite with a 234×115 drawn plaque, not the HUD oval badge. SCITEKC and SCITEK references require the runtime BUTTONS palette; a directory-neighbour palette fallback is invalid.
+Legacy information films use green wireframe objects, red highlighted subassemblies, changing camera/rotation and close-ups. A generic whole-object turntable alone will not reproduce them. Category art is a grayscale collage of three defence subjects, three ship/equipment subjects, three missile/missile-bay subjects, three mining subjects, two power subjects and two miscellaneous subjects. Main logo is a separate 320Ă—160 logical sprite with a 234Ă—115 drawn plaque, not the HUD oval badge. SCITEKC and SCITEK references require the runtime BUTTONS palette; a directory-neighbour palette fallback is invalid.
 
 ## Delivery gates
 
@@ -78,3 +78,16 @@ Reproduce the optional analysis using `sources/tools/evidence/audit_scitek_mater
 ### Colour video source bindings
 
 The supplied installation has fifteen _MA/ST*.VID colour films. All fifteen map to research records and their source SHA256 values, existing decode provenance and cached frame counts were checked: 1080 decoded updates. _MA/ST07.VID has120 action frames and _MA/ST14.VID has180 transfer frames; their delivered local animations remain separate from generic whole-object turns. Other research records reuse PB/PM/PH colour films. Nuclear research16 uses _MA/PM06.VID; _MA/ST16.VID is absent here. _SCITEK/ST16.VID is technical wireframe content. See colour-video-bindings.json; this check does not claim a new original-codec decode or coverage of other editions.
+
+### Category collage deliveries
+
+| Frame | Category | Delivery |
+| --- | --- | --- |
+| 0 | Defence | Plasma Turret, Screen Generator and Photon Turret; native/4x PNG and153-mesh neutral assembly delivered; game check pending |
+| 1 | Ships and hardpoints | Pending |
+| 2 | Missiles | Pending |
+| 3 | Mining | Pending |
+| 4 | Power | Pending |
+| 5 | Miscellaneous | Pending |
+
+See sources/ui/scitek/category-collages for source manifests and runtime proofs. Category defence depends on Screen Generator delivery7253a765. All six original frames were freshly decoded with BUTTONS palette and checked against private reference caches. This proves input integrity, not completion of the five pending reconstructions.

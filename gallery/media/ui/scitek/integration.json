@@ -5792,6 +5792,54 @@
         "emission_timeline": "sources/ui/scitek/screen-generator/emission-timeline.json",
         "material_contract": "Apply explicit emission strengths independently of GLB transform animation."
       }
+    },
+    {
+      "id": "scitek:category-defence",
+      "name": "Sci-Tek defence category",
+      "binding": "openfa:presentation/profile/research-category/defence",
+      "research_category_id": "openfa:research-category/defence",
+      "legacy": {
+        "directory": "_MS",
+        "entry": "SCITEKC.256",
+        "frame": 0,
+        "palette": "_MS/BUTTONS.256"
+      },
+      "canvas": [
+        80,
+        64
+      ],
+      "drawn_rectangle": [
+        10,
+        8,
+        66,
+        59
+      ],
+      "native": "gallery/media/ui/scitek/category-defence/category-native.png",
+      "hires": "gallery/media/ui/scitek/category-defence/category-4x.png",
+      "studio_render": "gallery/media/ui/scitek/category-defence/native.png",
+      "blend": "sources/ui/scitek/category-collages/defence/category-defence.blend",
+      "glb": "sources/ui/scitek/category-collages/defence/category-defence.glb",
+      "readme": "sources/ui/scitek/category-collages/defence/README.md",
+      "source_subjects": [
+        "scitek:plasma-turret",
+        "scitek:screen-generator",
+        "scitek:photon-turret"
+      ],
+      "monochrome": true,
+      "animation": false,
+      "gallery_views": [
+        {
+          "label": "Authored category at4x",
+          "image": "gallery/media/ui/scitek/category-defence/category-4x.png"
+        },
+        {
+          "label": "Independent neutral GLB import",
+          "image": "gallery/media/ui/scitek/category-defence/imported.png",
+          "glb": "sources/ui/scitek/category-collages/defence/category-defence.glb",
+          "blend": "sources/ui/scitek/category-collages/defence/category-defence.blend"
+        }
+      ],
+      "status": "Category frame0 authored and Blender/import verified; other five category frames pending; game check pending"
     }
   ]
 }
