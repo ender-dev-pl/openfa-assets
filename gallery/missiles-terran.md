@@ -82,6 +82,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/missiles/terran/virus/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/terran/virus/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Virus Missile](../gallery/media/objects/terran/virus-missile/refined/render.png)
+
+[Blend](../sources/objects/terran/virus-missile/refined/model.blend) · [GLB](../sources/objects/terran/virus-missile/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/virus-missile/refined/animation-00.webm)
+
 ## Anti-Virus Missile
 
 `openfa:anti-virus`

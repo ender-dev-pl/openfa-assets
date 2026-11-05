@@ -34459,6 +34459,13 @@
           "present": true,
           "sha256": "00f6936fdc5d739c9d74c70f982cf33838ffc6dcf1ac39600ffb8170a81d9f37",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/virus-missile/refined/model.blend",
+          "present": true,
+          "sha256": "4118ac510d3d386bede4ede616376dadae86822d7bfe0d775661480d1c90bd7b",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -34474,7 +34481,23 @@
       "open_evidence_questions": [
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "flight_frame_count": 14
+      "flight_frame_count": 14,
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/virus-missile/refined/model.blend",
+        "glb": "sources/objects/terran/virus-missile/refined/model.glb",
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/32",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "package_contract": "One shared physical solid; alias consumers. Preserve Root unit scale; gameplay frame1 without presentation rotation."
+      }
     },
     {
       "category": "missiles",

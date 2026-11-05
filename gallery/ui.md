@@ -354,3 +354,9 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Stasis Missile](media/ui/scitek/stasis-missile/solid.png)
 
 [Shared model and technical presentation](../sources/ui/scitek/stasis-missile/README.md).
+
+### Virus Missile
+
+![Virus Missile](media/ui/scitek/virus-missile/solid.png)
+
+[Shared model and technical presentation](../sources/ui/scitek/virus-missile/README.md).
