@@ -15,5 +15,5 @@
 
 - Branch `feat/trading-goods-reconstruction` tracks reconstruction of all trading-good assets; see origin issue #214 and `docs/trading-goods/README.md`.
 - The user-authorized coloured-model phase is complete: TI001–TI101 have editable natives, coloured static GLBs, inspected technical previews and runtime reports. Read `coverage.json` and `COMPLETION.md` before new work; do not restart completed items.
-- Latest user scope authorizes colour PNG rendering and integration of all trading goods into the asset gallery. The existing 101 model sources must be preserved. Exact legacy-size monochrome/detail UI outputs are separate from these gallery renders.
+- Latest user scope authorizes a material-refinement pass for all 101 goods, including transparency, reflections and surface irregularities, followed by high-quality PNGs and a gallery update. Preserve all first-pass sources and PNGs; see docs/trading-goods/REFINEMENT.md. Exact legacy-size monochrome/detail UI outputs are separate from these gallery renders.
 - Related native models and construction families may be reused, preserving each completed source and recording lineage. Artistic refining and game integration require their own scope; retain original reference and cultural/description evidence locally.

@@ -2,7 +2,7 @@
 
 # Trading goods — persistent coloured-model reconstruction
 
-User objective: reconstruct **all coloured editable trading-good models**, one after another, reusing related finished models/construction families where useful. **Final image generation is deferred.** This supersedes the initial image-first plan. Tracking: [issue #214](https://github.com/ender-dev-pl/openfa-assets/issues/214). Branch: `feat/trading-goods-reconstruction`, based on `origin/main`; cinematic work is separate.
+User objective: reconstruct **all coloured editable trading-good models**, one after another, reusing related finished models/construction families where useful. **The first model pass and 101 colour gallery PNGs are complete. The authorized second pass refines materials and surfaces, then updates the gallery with another iteration.** Tracking: [issue #214](https://github.com/ender-dev-pl/openfa-assets/issues/214). Branch: `feat/trading-goods-reconstruction`, based on `origin/main`; cinematic work is separate.
 
 [coverage.json](coverage.json) is the machine-readable ledger; [ITEMS.md](ITEMS.md) lists model progress. Track model completion independently from compact/detail image targets. The catalogue has 101 identities: 68 ordinary goods, five treatments, four anti-personnel-virus containers, ten ores, thirteen Terran missiles and one information bundle. Identities 0–100 map to `_TRADE/TI001`–`TI101`.
 
@@ -24,6 +24,10 @@ Continue from the earliest item whose `model_status` is not `coloured_model_veri
 
 Run `build_model.py --item N --out /path/to/ignored/work/TIxxx` in Blender 4.5 LTS. The generator saves a native and static GLB. `verify_model.py --native NATIVE --glb GLB --report REPORT --preview INSPECTION_PNG` reopens the native, renders a technical inspection, independently imports GLB, compares evaluated geometry bounds and object coverage, and verifies used Principled base colours survive the round trip. Procedural wear remains in native shader graphs; GLB material baking and game integration are not claimed.
 
-Inspect actual model previews against source evidence. Only then mark the coloured model verified, record source/reference hashes, update coverage and register authored assets/tools in `project/layout.json`. Production images stay deferred; native/GLB checks alone do not establish final visual likeness. Commit and push each verified major milestone with issue #214. Continue through the entire catalogue, retaining finished versions and deferring refining unless requested.
+Inspect actual model previews against source evidence. Only then mark the coloured model verified, record source/reference hashes, update coverage and register authored assets/tools in `project/layout.json`. Legacy-size production UI images stay deferred; native/GLB checks alone do not establish final visual likeness. Commit and push each verified major milestone with issue #214. The user has now requested refining for the entire catalogue; follow [REFINEMENT.md](REFINEMENT.md) and preserve finished versions.
 
 No original installation or decoded reference cache is required to open/render published model sources. Original media, decoded references and technical inspection sheets stay local under ignored `artifacts/`.
+
+## Second material pass
+
+See [REFINEMENT.md](REFINEMENT.md) for physical material roles, geometry refinements, source preservation, reproducible build/render commands and publication checks. Transparent glass and gems, reflective metals, woven cloth, leather pores and natural surface irregularities are explicitly in scope.
