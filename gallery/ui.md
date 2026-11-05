@@ -238,3 +238,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Deflector](media/ui/scitek/deflector/solid.png)
 
 [Full technical animation](media/ui/scitek/deflector/information.webm) - [Source and integration](../sources/ui/scitek/deflector/README.md).
+
+### Fleet Battleship
+
+![Fleet Battleship](media/ui/scitek/fleet-battleship/solid.png)
+
+[Full technical animation](media/ui/scitek/fleet-battleship/information.webm) - [Source and integration](../sources/ui/scitek/fleet-battleship/README.md).

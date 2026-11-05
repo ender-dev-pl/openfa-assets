@@ -28,7 +28,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 6 | scitek:building-armour | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 7 | scitek:construction-droids | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 8 | scitek:deflector | Existing PH10 Deflector meshes, UVs and wear preserved | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
-| 9 | scitek:fleet-battleship | openfa:fleet-battleship | Pending |
+| 9 | scitek:fleet-battleship | Existing 35 ship meshes preserved; research probe and wingtip housings added | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 10 | scitek:gravity-nullifier | terran:gravity-nullifier | Pending |
 | 11 | scitek:hi-energy-power-stores | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 12 | scitek:improved-sensors | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
