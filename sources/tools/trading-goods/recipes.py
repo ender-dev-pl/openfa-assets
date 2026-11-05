@@ -492,3 +492,22 @@ def inherited_missile(n):
  assert before==local_geometry_hash()
  s.name=M.ID+' / coloured inherited missile';s.render.engine='CYCLES';s.cycles.samples=8;s.cycles.use_denoising=True;s.render.resolution_x=480;s.render.resolution_y=360;s.render.resolution_percentage=100;s.render.image_settings.file_format='PNG';s.render.film_transparent=False;s.view_settings.view_transform='AgX';s.view_settings.look='AgX - Medium High Contrast';s.world.color=(.12,.12,.12);M.bpy.context.preferences.filepaths.save_version=0;s['inherited_native_sha256']=source_hash;s['inherited_source']=f'sources/docs/assets/reconstruction/missiles/terran/{slug}/model.blend';s['inherited_local_geometry_hash']=before;s['geometry_preserved_during_reuse']=True;s['view_change']='Assembly rotated from +Z nose to +X; original local geometry and shader graphs retained.'
 BUILDERS.update({i:inherited_missile for i in range(88,101)})
+
+def information(n):
+ leather=M.mat('brown folio cover',(.20,.16,.025),rough=.8);page=M.mat('aged yellow-green paper',(.65,.66,.39),rough=.95);blue=M.mat('blue cloth spine',(.025,.055,.28),rough=.8);metal=M.mat('folio metal corners',(.35,.38,.35),.7,.6);ink=M.mat('nonsemantic printed strokes',(.16,.20,.075),rough=.95);p=M.root('open information folio');M.cube('lower leather cover',(.73,0,.04),(.78,.87,.04),leather,p)
+ for layer in range(12):
+  verts=[]
+  for i in range(21):
+   x=i*1.45/20;z=.10+layer*.012+.10*math.exp(-x*5);verts.extend([(x,-.79,z),(x,.79,z)])
+  o=M.mesh('separate curved paper leaf '+str(layer),verts,[(i*2,i*2+2,i*2+3,i*2+1) for i in range(20)],page,p);q=o.modifiers.new('Paper thickness','SOLIDIFY');q.thickness=.004
+ lid=M.root('raised left leather cover',(0,0,.13));lid.parent=p;lid.rotation_euler.y=1.15;M.cube('separate folio front cover',(-.73,0,0),(.75,.87,.04),leather,lid)
+ for x in [-1.42,-.06]:
+  for y in [-.80,.80]:M.cube('corner protector',(x,y,.05),(.065,.065,.012),metal,lid)
+ M.rod('blue cloth binding',(0,-.85,.14),(0,.85,.14),.045,blue,p)
+ for row in range(18):
+  y=-.70+row*.075
+  for col in range(2):
+   for word in range(4):
+    x=.15+col*.62+word*.12;z=.10+11*.012+.10*math.exp(-x*5)+.005;M.cube('authored unreadable page stroke',(x,y,z),(.045,.006,.002),ink,p,bevel=0)
+ p.rotation_euler.z=-.2
+BUILDERS[101]=information

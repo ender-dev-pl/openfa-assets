@@ -102,4 +102,4 @@
 | 97 | Stasis Missile | coloured_model_verified |
 | 98 | Bug Hunter Missile | coloured_model_verified |
 | 99 | Meat-Eater Missile | coloured_model_verified |
-| 100 | Information | planned |
+| 100 | Information | coloured_model_verified |
