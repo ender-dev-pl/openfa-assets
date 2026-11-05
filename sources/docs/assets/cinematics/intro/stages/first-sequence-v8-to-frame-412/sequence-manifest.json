@@ -1,0 +1,69 @@
+{
+  "fps": 24,
+  "frames": 826,
+  "duration_seconds": 34.416666666666664,
+  "source_range_inclusive": [
+    0,
+    412
+  ],
+  "scenes": [
+    {
+      "name": "A \u2014 Ship and galaxy",
+      "start": 1,
+      "end": 329,
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "B \u2014 Independent asteroid field",
+      "start": 289,
+      "end": 429,
+      "resolution": [
+        640,
+        262
+      ]
+    },
+    {
+      "name": "C \u2014 Surface flight and mechanical footprint",
+      "start": 397,
+      "end": 777,
+      "resolution": [
+        640,
+        262
+      ]
+    },
+    {
+      "name": "D \u2014 Tetra Corp copper outline and fade",
+      "start": 737,
+      "end": 826,
+      "resolution": [
+        640,
+        262
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "start": 289,
+      "end": 329,
+      "outgoing": "A \u2014 Ship and galaxy",
+      "incoming": "B \u2014 Independent asteroid field"
+    },
+    {
+      "start": 397,
+      "end": 429,
+      "outgoing": "B \u2014 Independent asteroid field",
+      "incoming": "C \u2014 Surface flight and mechanical footprint"
+    },
+    {
+      "start": 737,
+      "end": 777,
+      "outgoing": "C \u2014 Surface flight and mechanical footprint",
+      "incoming": "D \u2014 Tetra Corp copper outline and fade"
+    }
+  ],
+  "master_view_transform": "AgX",
+  "master_look": "AgX - Medium High Contrast"
+}

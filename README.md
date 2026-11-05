@@ -40,3 +40,8 @@ Preserve completed reconstructions and existing refinements. The user-requested 
 The migration preserves exact imported bytes and historical evidence identifiers. [Migration manifests](migration/README.md) map every original path, checksum and transferred issue. Historical documentation is retained under `sources/docs/reconstruction/models/`; its paths refer to the assembled workspace and its bare issue numbers use the original game-repository numbering.
 
 Current paths and roles live in [project/layout.json](project/layout.json). Material maps belong under `sources/materials/`, original image/animation inputs under `sources/artwork/` or `sources/ui/`, and finished renders under `gallery/`. Historical import/repair evidence remains separate in `migration/` and `archive/repairs/`. Use `audit-import` only to compare with the original revision; normal authoring accepts reviewed source edits.
+
+## Intro cinematic source checkpoint
+
+[Editable intro reconstruction and recovery instructions](docs/cinematics/intro-reconstruction.md)
+are preserved separately from the historical model inventory counts.
