@@ -1,5 +1,7 @@
 # Editable intro reconstruction
 
+Latest [asteroid/base/footprint refining pass](refinements/asteroids-base-footprint-v1/README.md): [full editable project](refinements/asteroids-base-footprint-v1/full-intro-refined.blend). The completed opening ship and later shots are preserved.
+
 The complete film now has a [basic editable assembly](remaining-basic/README.md), covering original frames **0–1873**: 24 scene strips, **3748 frames at 24 fps** (156.1667 seconds). [Open the full project](remaining-basic/full-intro-basic.blend). The remaining twenty shots establish geometry, framing and coarse motion; refining is deferred.
 
 Preserved first-sequence checkpoint through original zero-based frame **412**, inclusive: **826 frames at 24 fps**, **34.4167 seconds**, **640×480 letterbox**.

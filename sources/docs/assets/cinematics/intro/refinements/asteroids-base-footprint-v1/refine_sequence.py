@@ -46,8 +46,8 @@ else:
  activate(C)
  terrain=next(o for o in C.objects if o.name.startswith('Actual displaced basalt'))
  for v in terrain.data.vertices:
-  x,y=v.co.x,v.co.y;r=math.hypot(x,y);co=Vector((x*.11,y*.11,3.8));f=fractal(co,.78,2.0,4);ridge=2.4*math.exp(-((y-14-2*math.sin(x*.22))/3)**2);rim=2.2*math.exp(-((r-7.5)/1.6)**2);basin=-1.2*math.exp(-(r/5.5)**4);basecut=math.exp(-(((x-5.7)/2.5)**2+((y-10.3)/2.8)**2));flat=math.exp(-(r/3.6)**8);h=1.3*f+ridge+rim+basin;h=h*(1-basecut)+.2*basecut;v.co.z=h*(1-flat)-1.12*flat
- m=terrain.active_material;n=m.node_tree.nodes;l=m.node_tree.links;bs=n.get('Principled BSDF');geom=next(x for x in n if x.type=='NEW_GEOMETRY');tex=n.new('ShaderNodeTexNoise');tex.inputs['Scale'].default_value=3;tex.inputs['Detail'].default_value=4;mapping=n.new('ShaderNodeVectorMath');mapping.operation='MULTIPLY';mapping.inputs[1].default_value=(2,.7,.35);l.new(geom.outputs['Position'],mapping.inputs[0]);l.new(mapping.outputs[0],tex.inputs['Vector']);ramp=n.new('ShaderNodeValToRGB');ramp.color_ramp.elements[0].position=.34;ramp.color_ramp.elements[0].color=(.015,.027,.032,1);ramp.color_ramp.elements[1].position=.72;ramp.color_ramp.elements[1].color=(.25,.34,.36,1);l.new(tex.outputs['Fac'],ramp.inputs[0]);l.new(ramp.outputs[0],bs.inputs['Base Color'])
+  x,y=v.co.x,v.co.y;r=math.hypot(x,y);co=Vector((x*.11,y*.11,3.8));f=fractal(co,.78,2.0,4);ridge=2.8*math.exp(-((x+3)/8)**8-((y-16)/3)**8);rim=1.6*(math.tanh((abs(x-1.5*math.sin(y*.15))-5)*1.8)+1);basin=-1.2*math.exp(-(r/5.5)**4);basecut=math.exp(-(((x-5.7)/3)**8+((y-10.3)/3)**8));flat=math.exp(-(r/3.6)**8);h=1.3*f+.38*fractal(co*4,.75,2,3)+ridge+rim+basin;h=h*(1-basecut)+4.4*basecut;v.co.z=h*(1-flat)-1.12*flat
+ m=terrain.active_material;n=m.node_tree.nodes;l=m.node_tree.links;bs=n.get('Principled BSDF');geom=next(x for x in n if x.type=='NEW_GEOMETRY');tex=n.new('ShaderNodeTexNoise');tex.inputs['Scale'].default_value=1.7;tex.inputs['Detail'].default_value=4;mapping=n.new('ShaderNodeVectorMath');mapping.operation='MULTIPLY';mapping.inputs[1].default_value=(1,1,1);l.new(geom.outputs['Position'],mapping.inputs[0]);l.new(mapping.outputs[0],tex.inputs['Vector']);ramp=n.new('ShaderNodeValToRGB');ramp.color_ramp.elements[0].position=.46;ramp.color_ramp.elements[0].color=(.015,.027,.032,1);ramp.color_ramp.elements[1].position=.56;ramp.color_ramp.elements[1].color=(.38,.49,.52,1);l.new(tex.outputs['Fac'],ramp.inputs[0]);l.new(ramp.outputs[0],bs.inputs['Base Color'])
  for node in n:
   if node.type=='BUMP':node.inputs['Strength'].default_value=.3;node.inputs['Distance'].default_value=.035
  # Model the warm industrial landmark as three separate finned towers on a landing slab.
@@ -57,13 +57,19 @@ else:
  cube('Base / inset landing apron',(5.7,10.3,.1),(2.6,2.1,.15),pad)
  for i in range(3):
   root=bpy.data.objects.new('Base / tower '+str(i),None);C.collection.objects.link(root);root.location=(4.8+i*.85,10.3,.2);root.rotation_euler.y=-.13
-  cube('Base / tower housing',(0,0,1.4),(.30,.38,1.4),rust,root)
+  cylinder('Base / cylindrical tower housing',(0,0,1.4),.34,2.8,rust,root)
   for side in [-1,1]:
    for z in [.5,.85,1.2,1.55,1.9]:cube('Base / radiator fin',(side*.34,0,z),(.10,.47,.035),steel,root)
    for z in [.55,1.35,2.25]:cube('Base / recessed service panel',(side*.15,-.39,z),(.09,.012,.21),steel,root)
   cube('Base / cap light',(0,-.02,2.83),(.24,.28,.04),window,root)
   for z in [1.2,2.4]:cube('Base / indicator',(0,-.405,z),(.075,.012,.055),window,root)
  for i in range(2):line('Base / overhead connecting pipe',(4.8+i*.85,10.5,1.8),(5.65+i*.85,10.5,1.8),.09,steel)
+ # Place the distant complex on a small elevated shelf and keep its screen scale restrained.
+ for o in list(C.objects):
+  if o.name.startswith('Base /') and o.parent is None:
+   v=o.location.copy();o.location=(5.7+(v.x-5.7)*.65,10.3+(v.y-10.3)*.65,4.3+v.z*.65);o.scale*=.65
+ for n,loc,target in [(198,(0,-65,22),(0,0,17)),(212,(0,-45,14),(0,0,11)),(228,(0,-32,10),(0,2,8)),(250,(0,-20,9),(0,16,6)),(275,(0,-13,7),(0,12,4)),(290,(0,-9,6),(0,8,2.8))]:
+  cam=C.camera;cam.location=loc;cam.rotation_euler=(Vector(target)-cam.location).to_track_quat('-Z','Y').to_euler();cam.keyframe_insert('location',frame=2*n+1);cam.keyframe_insert('rotation_euler',frame=2*n+1)
  # Carved sole silhouette: broad rounded toe, narrow heel, recessed lettering and raised bevels.
  plate=next(o for o in C.objects if o.name.startswith('Sole-shaped embossed'));outline=[(-1.2,-2.4),(-1.45,-1.5),(-1.9,-.4),(-2.1,.8),(-1.95,1.65),(-1.3,2.25),(0,2.5),(1.3,2.25),(1.95,1.65),(2.1,.8),(1.9,-.4),(1.45,-1.5),(1.2,-2.4)]
  d=bpy.data.meshes.new('Refined tapered sole relief');d.from_pydata([(x,y,-1.08) for x,y in outline],[],[tuple(reversed(range(len(outline))))]);d.materials.append(plate.active_material);plate.data=d
@@ -81,5 +87,20 @@ else:
   for x in [-.43,.43]:
    for z in [2.1,3.5,4.7]:cylinder('Boot / panel rivet',(x,-1.12,z),.045,.035,dark,root).rotation_euler.x=math.pi/2
   for z in [2.4,4.2]:cube('Boot / scuffed panel seam',(0,-1.12,z),(.32,.01,.015),dark,root)
+ # Align every end-card vector point to the raised source contour in camera space.
+ C.frame_set(741);bpy.context.view_layer.update();cam=C.camera;end=next(o for o in D.objects if o.type=='CURVE');end.data=end.data.copy();end.location=(0,0,0);end.scale=(1,1,1);end.rotation_euler=(0,0,0)
+ inv=cam.matrix_basis.inverted();width=D.camera.data.ortho_scale
+ for src,dst in zip(raised.data.splines,end.data.splines):
+  for p,q in zip(src.points,dst.points):
+   v=inv@(raised.matrix_basis@Vector((p.co.x,p.co.y,.024)));k=cam.data.lens/cam.data.sensor_width/(-v.z)*width;q.co=(v.x*k-cam.data.shift_x*width,v.y*k-cam.data.shift_y*width,0,1)
+ D['refining']='End-card points reprojected from the raised footprint contour for a registered dissolve.'
+ # The boots enter from the right and walk across the lens, rather than hanging above the horizon.
+ roots=[o for o in C.objects if o.name.startswith('Mechanical ') and o.type=='EMPTY']
+ for idx,root in enumerate(sorted(roots,key=lambda o:o.name)):
+  root.animation_data_clear();offset=12*idx
+  for n,loc,rot in [(280,(5,-3,6),-.18),(292,(0,-2,1),-.05),(300,(-3,-1,-.3),0),(312,(-4,1,-.3),.03),(324,(-8,3,6),.22),(338,(-13,5,14),.3)]:
+   loc=((loc[0]+idx*2)*.5,loc[1]+idx*3,loc[2]);root.location=loc;root.rotation_euler=(0,rot,-.12);root.keyframe_insert('location',frame=2*(n+offset)+1);root.keyframe_insert('rotation_euler',frame=2*(n+offset)+1)
+  for o in root.children_recursive:
+   for f,hide in [(397,True),(2*(279+offset),True),(2*(279+offset)+1,False),(2*(340+offset),False),(2*(340+offset)+1,True)]:o.hide_render=hide;o.keyframe_insert('hide_render',frame=f)
  C['refining']='Layered basalt ridges, inset warm industrial base, panelled machinery and tapered embossed footprint.'
 a.out.parent.mkdir(parents=True,exist_ok=True);bpy.ops.wm.save_as_mainfile(filepath=str(a.out));print('REFINED_STAGE_SAVED',a.stage)
