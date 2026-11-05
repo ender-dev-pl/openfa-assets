@@ -25,14 +25,14 @@ The studio renderer uses Cycles, adaptive sampling up to 32 samples for opaque g
 Inspect all rendered items, including glass, gems, fabrics, metal, organic objects and the inherited missiles. Record the reviewed TI identifiers and observations in a local review JSON. Publication refuses an incomplete review set or stale source/render evidence:
 
 ```sh
-python tools/publish_trade_refinement.py --renders artifacts/trading-goods-refining/production --review artifacts/trading-goods-refining/visual-review.json
+python tools/publish_trade_refinement.py --renders artifacts/trading-goods-refining/production --review artifacts/trading-goods-refining/visual-review.json --consume
 python tools/build_gallery.py --from-catalogue
 python tools/verify_trading_gallery.py
 python tools/verify_trade_refinement.py
 node tools/test_gallery_filters.cjs --filters-only
 ```
 
-Publication removes ancillary PNG metadata without altering decoded pixels. `docs/trading-goods/refinement-validation.json` binds published PNGs to the independently verified native and GLB files. The gallery retains both iterations under each of the existing 101 goods cards. Existing building, ship, scaffold, missile and cinematic gallery records remain preserved.
+Publication removes ancillary PNG metadata without altering decoded pixels. Optional `--consume` removes raw PNG duplicates only after comparing decoded pixels against the installed file, keeping source/render journals and hash-bound publication receipts. Interrupted publication can resume from verified installed images. `docs/trading-goods/refinement-validation.json` binds published PNGs to the independently verified native and GLB files. The gallery retains both iterations under each of the existing 101 goods cards. Existing building, ship, scaffold, missile and cinematic gallery records remain preserved.
 
 This pass does not replace the separate legacy-size compact/detail UI image targets or claim game integration. Artistic review remains iterative; the original low-resolution evidence still limits inferred small details.
 
@@ -41,3 +41,7 @@ This pass does not replace the separate legacy-size compact/detail UI image targ
 The user rejected the first-pass coat and boots as too angular. `TI041/remodelled/` is a separate reconstruction with a continuous fitted open-front shell, turned lapels, actual leather thickness and dark lining, bent closed-shoulder sleeves, hanging folds, shaped boot lasts and calves, ankle creases, layered soles and a flat belt. Raised decorative trim and saddle seams follow the curved surfaces. Ornament is an authored approximation of the low-resolution evidence. The original model and material-only checkpoint remain preserved.
 
 `refinement-selections.json` selects this geometry revision for publication and batch rendering. The remodel's lineage records both the original model and the preserved material-only native. Its own geometry-builder hash supplements the original shader-builder evidence. `remodel_leather.py` rebuilds the selected variant from the material-only checkpoint; `batch.py` handles the selection when rendering or rebuilding missing outputs.
+
+## Gem absorption correction
+
+Actual studio review showed that the first transparent shader washed out ruby/astramarine hues. Selected `optical/` variants increase volume absorption, with lower density for diamonds/metachrome and intermediate density for opal/moonstone. `tint_gems.py` changes only the native volume shading. Meshes and scalar GLBs remain unchanged, with preserved preceding sources and independent native/GLB validation. The selection ledger records the revised deliveries.

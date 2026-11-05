@@ -45,14 +45,18 @@ def main():
             continue
         journal = json.loads(record.read_text())
         assert journal['builder_sha256'] == sha(tools/'refine.py'), folder
-        if 'geometry_builder' in journal:
-            assert journal['geometry_builder_sha256'] == sha(root/journal['geometry_builder']), folder
+        for prefix in ['geometry','revision']:
+            if prefix+'_builder' in journal:
+                assert journal[prefix+'_builder_sha256'] == sha(root/journal[prefix+'_builder']), folder
         assert journal['refined_native_sha256'] == sha(folder/(f'TI{number:03d}.blend')), folder
     if missing:
-        with (work/'build.log').open('w') as log:
-            subprocess.run(['blender', '-b', '-t', '1', '--python', str(tools/'refine.py'), '--',
-                            '--repo', str(root), '--items', ','.join(map(str, missing)), '--out', str(natives)],
-                           stdout=log, stderr=subprocess.STDOUT, check=True)
+        base_missing = [n for n in missing if f'TI{n:03d}' not in selections
+                        or not (natives/f'TI{n:03d}'/'refinement.json').is_file()]
+        if base_missing:
+            with (work/'build.log').open('w') as log:
+                subprocess.run(['blender', '-b', '-t', '1', '--python', str(tools/'refine.py'), '--',
+                                '--repo', str(root), '--items', ','.join(map(str, base_missing)), '--out', str(natives)],
+                               stdout=log, stderr=subprocess.STDOUT, check=True)
         for number in missing:
             ident = f'TI{number:03d}'
             if ident in selections:
@@ -83,6 +87,17 @@ def main():
                         and old['image_sha256'] == sha(png) and old['resolution'] == [a.width, a.width*3//4]
                         and old['samples'] == samples):
                     return ident+' verified; render reused'
+            receipt = work/(ident+'.published.json')
+            if not png.exists() and journal.exists() and receipt.exists():
+                old = json.loads(journal.read_text())
+                installed = json.loads(receipt.read_text())
+                published = root/installed['image']
+                if (old['native_sha256'] == sha(native) == installed['native_sha256']
+                        and old['renderer_sha256'] == sha(tools/'render.py')
+                        and old['image_sha256'] == installed['render_output_sha256']
+                        and published.exists() and sha(published) == installed['image_sha256']
+                        and old['resolution'] == [a.width, a.width*3//4] and old['samples'] == samples):
+                    return ident+' verified; published render reused'
             subprocess.run(['blender', '-b', '-t', '1', '--python', str(tools/'render.py'), '--',
                             '--native', str(native), '--out', str(png), '--width', str(a.width),
                             '--samples', str(samples)], stdout=log, stderr=subprocess.STDOUT, check=True)
