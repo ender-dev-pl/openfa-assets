@@ -5641,8 +5641,8 @@
       "disabled": "gallery/media/ui/scitek/photon-turret/tile-disabled.png",
       "hires": "gallery/media/ui/scitek/photon-turret/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/photon-turret/solid.png",
-      "blend": "sources/ui/scitek/photon-turret/photon-turret.blend",
-      "glb": "sources/ui/scitek/photon-turret/photon-turret.glb",
+      "blend": "sources/objects/terran/photon-turret/refined/model.blend",
+      "glb": "sources/objects/terran/photon-turret/refined/model.glb",
       "readme": "sources/ui/scitek/photon-turret/README.md",
       "tile_registration": {
         "canvas": [
@@ -5669,13 +5669,13 @@
           "label": "Independent weapon-head swivel; fixed base",
           "image": "gallery/media/ui/scitek/photon-turret/solid.png",
           "video": "gallery/media/ui/scitek/photon-turret/preview.webm",
-          "blend": "sources/ui/scitek/photon-turret/photon-turret.blend",
-          "glb": "sources/ui/scitek/photon-turret/photon-turret.glb"
+          "blend": "sources/objects/terran/photon-turret/refined/model.blend",
+          "glb": "sources/objects/terran/photon-turret/refined/model.glb"
         },
         {
           "label": "Whole assembly wireframe",
           "image": "gallery/media/ui/scitek/photon-turret/wireframe.png",
-          "blend": "sources/ui/scitek/photon-turret/photon-turret.blend",
+          "blend": "sources/objects/terran/photon-turret/refined/model.blend",
           "glb": "sources/ui/scitek/photon-turret/photon-turret-wireframe.glb"
         },
         {
@@ -5735,9 +5735,9 @@
           "first_legacy_frame": 311,
           "last_legacy_frame": 421,
           "local_target": [
-            0.55,
-            -0.83,
-            0.44
+            0.5559362173080444,
+            -0.841498076915741,
+            0.4448891282081604
           ],
           "closeup_rotation_euler": [
             0.26160264015197754,
@@ -5784,6 +5784,61 @@
           "Research barrel lower trunnion",
           "Research barrel lower trunnion.001"
         ]
+      },
+      "shared_object": {
+        "id": "terran:photon-turret",
+        "blend": "sources/objects/terran/photon-turret/refined/model.blend",
+        "glb": "sources/objects/terran/photon-turret/refined/model.glb",
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "root": "PhotonResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1.15
+        ],
+        "gameplay_pose_frame": 1,
+        "moving_node": "PhotonWeaponAzimuth",
+        "aim_axis": "localZ",
+        "body_turntable": false,
+        "animated_mesh_nodes": [
+          "Research strengthened egg barrel",
+          "Research tapered photon nozzle",
+          "Research dark photon aperture",
+          "Research slim barrel indicator",
+          "Research barrel lower trunnion",
+          "Research barrel lower trunnion.001"
+        ],
+        "fixed_mesh_nodes": [
+          "Research swivelling weapon cup",
+          "Pedestal foundation joint",
+          "Azimuth race flange",
+          "Research rounded elastoplastic armour",
+          "Research armour horizontal seam",
+          "Research armour horizontal seam.001",
+          "Research armour horizontal seam.002",
+          "Pedestal systems hatch dark gasket",
+          "Pedestal systems hatch lid",
+          "Pedestal systems hatch rim",
+          "Research armoured tracking sensor lens"
+        ],
+        "disable_automatic_preview_playback_in_gameplay": true,
+        "solid_animation_timeline": "sources/ui/scitek/photon-turret/solid-animation-timeline.json",
+        "matrix_contract": "Absolute root-relative row-major4x4, Blender column-vector math/Z-up; replace bind, or current*inverse(bind) for bind-baked vertices; transpose/reverse multiplication for row-vector consumers."
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/photon-turret/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/photon-turret/photon-turret-information.glb",
+        "technical_timeline": "sources/ui/scitek/photon-turret/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical research solid and baked variants authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "All11,096 selected diagram segments are actual evaluated physical edges; source-observed small receiver lens is the sole receiver highlight.",
+        "verification": "gallery/media/ui/scitek/photon-turret/shared-geometry-verification.json"
       }
     },
     {

@@ -360,6 +360,14 @@
 
 [Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb18/animation-00.webm)
 
+**Additional iteration — shared-refined**
+
+![Photon Turret](../gallery/media/objects/terran/photon-turret/refined/render.png)
+
+[Blend](../sources/objects/terran/photon-turret/refined/model.blend) · [GLB](../sources/objects/terran/photon-turret/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/photon-turret/refined/animation-00.webm)
+
 ## Air Processor
 
 `terran:air-processor`

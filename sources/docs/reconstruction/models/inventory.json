@@ -3177,6 +3177,13 @@
           "present": true,
           "sha256": "7dd961ea8f26c38c4a8b4fcc0ded0b43fc1cb5762c7f0b1775739f7c54259126",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/photon-turret/refined/model.blend",
+          "present": true,
+          "sha256": "1fe5d9f71d38d2638f5ac0627a705761c531bb6abd08ee9477349a9f6d6d36ee",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -3218,6 +3225,50 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 18
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/photon-turret/refined/model.blend",
+        "glb": "sources/objects/terran/photon-turret/refined/model.glb",
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; preserve rootZscale1.15 and head-only aiming.",
+        "root": "PhotonResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1.15
+        ],
+        "gameplay_pose_frame": 1,
+        "moving_node": "PhotonWeaponAzimuth",
+        "aim_axis": "localZ",
+        "body_turntable": false,
+        "animated_mesh_nodes": [
+          "Research strengthened egg barrel",
+          "Research tapered photon nozzle",
+          "Research dark photon aperture",
+          "Research slim barrel indicator",
+          "Research barrel lower trunnion",
+          "Research barrel lower trunnion.001"
+        ],
+        "fixed_mesh_nodes": [
+          "Research swivelling weapon cup",
+          "Pedestal foundation joint",
+          "Azimuth race flange",
+          "Research rounded elastoplastic armour",
+          "Research armour horizontal seam",
+          "Research armour horizontal seam.001",
+          "Research armour horizontal seam.002",
+          "Pedestal systems hatch dark gasket",
+          "Pedestal systems hatch lid",
+          "Pedestal systems hatch rim",
+          "Research armoured tracking sensor lens"
+        ],
+        "disable_automatic_preview_playback_in_gameplay": true,
+        "solid_animation_timeline": "sources/ui/scitek/photon-turret/solid-animation-timeline.json",
+        "matrix_contract": "Absolute root-relative row-major4x4, Blender column-vector math/Z-up; replace bind, or current*inverse(bind) for bind-baked vertices; transpose/reverse multiplication for row-vector consumers."
       }
     },
     {

@@ -1,0 +1,194 @@
+{
+  "id": "scitek:photon-turret",
+  "legacy_index": 18,
+  "components": {
+    "chassis": [
+      "Research swivelling weapon cup"
+    ],
+    "strengthened-photon-barrel": [
+      "Research strengthened egg barrel",
+      "Research tapered photon nozzle",
+      "Research dark photon aperture",
+      "Research slim barrel indicator",
+      "Research barrel lower trunnion",
+      "Research barrel lower trunnion.001"
+    ],
+    "elastoplastic-fixed-base": [
+      "Pedestal foundation joint",
+      "Azimuth race flange",
+      "Research rounded elastoplastic armour",
+      "Research armour horizontal seam",
+      "Research armour horizontal seam.001",
+      "Research armour horizontal seam.002",
+      "Pedestal systems hatch dark gasket",
+      "Pedestal systems hatch lid",
+      "Pedestal systems hatch rim"
+    ],
+    "armoured-tracking-receiver": [
+      "Research armoured tracking sensor lens"
+    ]
+  },
+  "phases": [
+    {
+      "component": "strengthened-photon-barrel",
+      "first_legacy_frame": 29,
+      "last_legacy_frame": 139,
+      "local_target": [
+        0,
+        -0.1,
+        1.48
+      ],
+      "closeup_rotation_euler": [
+        0,
+        0,
+        0.9
+      ],
+      "ortho_scale": 1.65
+    },
+    {
+      "component": "elastoplastic-fixed-base",
+      "first_legacy_frame": 170,
+      "last_legacy_frame": 280,
+      "local_target": [
+        0,
+        0,
+        0.38
+      ],
+      "closeup_rotation_euler": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 2.3
+    },
+    {
+      "component": "armoured-tracking-receiver",
+      "first_legacy_frame": 311,
+      "last_legacy_frame": 421,
+      "local_target": [
+        0.5559362173080444,
+        -0.841498076915741,
+        0.4448891282081604
+      ],
+      "closeup_rotation_euler": [
+        0.26160264015197754,
+        0.06556493788957596,
+        -0.5384301543235779
+      ],
+      "ortho_scale": 0.6
+    }
+  ],
+  "whole_information_local_target": [
+    0,
+    0,
+    1
+  ],
+  "whole_information_rotation_euler": [
+    0.12,
+    0,
+    0.25
+  ],
+  "whole_information_ortho_scale": 3.5,
+  "information_timeline_frames": 423,
+  "base_source_sha256": "7dd961ea8f26c38c4a8b4fcc0ded0b43fc1cb5762c7f0b1775739f7c54259126",
+  "preserved_source_meshes": [
+    "Pedestal foundation joint",
+    "Azimuth race flange",
+    "Pedestal systems hatch dark gasket",
+    "Pedestal systems hatch rim"
+  ],
+  "new_presentation_meshes": [
+    "Research rounded elastoplastic armour",
+    "Research armour horizontal seam",
+    "Research armour horizontal seam.001",
+    "Research armour horizontal seam.002",
+    "Research swivelling weapon cup",
+    "Research strengthened egg barrel",
+    "Research tapered photon nozzle",
+    "Research dark photon aperture",
+    "Research slim barrel indicator",
+    "Research barrel lower trunnion",
+    "Research barrel lower trunnion.001",
+    "Research armoured tracking sensor lens"
+  ],
+  "limitations": [
+    "Four original PB18 hardware meshes retain geometry/UV/material slots. Plate geometry/UV/bind retained with armour finish. Small red tracking lens replaces the inferred hatch handle and is the sole receiver highlight; exact hidden construction and authored camera remain approximate."
+  ],
+  "receiver_refinement": {
+    "removed_handle": "Pedestal systems hatch locking handle",
+    "recoloured_plate": "Pedestal systems hatch lid",
+    "new_lens": "Research armoured tracking sensor lens",
+    "lens_local_radius": 0.016,
+    "lens_root_location": [
+      0.5559362173080444,
+      -0.841498076915741,
+      0.4448891282081604
+    ],
+    "surface_world_point": [
+      0.551338791847229,
+      -0.8341421484947205,
+      0.5092238187789917
+    ],
+    "surface_world_normal": [
+      0.5108281373977661,
+      -0.8173263669013977,
+      0.2665185332298279
+    ],
+    "shared_interior_witness": [
+      0.550317108631134,
+      -0.8325074911117554,
+      0.5086907744407654
+    ],
+    "source_evidence": "PB18 colour dot and ST18 decoded150/157/175 show a small sphere inside a green circular housing, not an entirely selected hatch."
+  },
+  "recoloured_source_meshes": [
+    "Pedestal systems hatch lid"
+  ],
+  "removed_source_meshes": [
+    "Pedestal systems hatch locking handle"
+  ],
+  "object_id": "terran:photon-turret",
+  "authoritative_shared": true,
+  "shared_root": "PhotonResearchRoot",
+  "shared_root_scale": [
+    1,
+    1,
+    1.15
+  ],
+  "shared_rig": {
+    "root": "PhotonResearchRoot",
+    "root_scale": [
+      1,
+      1,
+      1.15
+    ],
+    "gameplay_pose_frame": 1,
+    "moving_node": "PhotonWeaponAzimuth",
+    "aim_axis": "localZ",
+    "body_turntable": false,
+    "animated_mesh_nodes": [
+      "Research strengthened egg barrel",
+      "Research tapered photon nozzle",
+      "Research dark photon aperture",
+      "Research slim barrel indicator",
+      "Research barrel lower trunnion",
+      "Research barrel lower trunnion.001"
+    ],
+    "fixed_mesh_nodes": [
+      "Research swivelling weapon cup",
+      "Pedestal foundation joint",
+      "Azimuth race flange",
+      "Research rounded elastoplastic armour",
+      "Research armour horizontal seam",
+      "Research armour horizontal seam.001",
+      "Research armour horizontal seam.002",
+      "Pedestal systems hatch dark gasket",
+      "Pedestal systems hatch lid",
+      "Pedestal systems hatch rim",
+      "Research armoured tracking sensor lens"
+    ],
+    "disable_automatic_preview_playback_in_gameplay": true,
+    "solid_animation_timeline": "sources/ui/scitek/photon-turret/solid-animation-timeline.json",
+    "matrix_contract": "Absolute root-relative row-major4x4, Blender column-vector math/Z-up; replace bind, or current*inverse(bind) for bind-baked vertices; transpose/reverse multiplication for row-vector consumers."
+  }
+}
