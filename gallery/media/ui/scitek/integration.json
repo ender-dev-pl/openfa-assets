@@ -5001,8 +5001,8 @@
       "disabled": "gallery/media/ui/scitek/gravity-nullifier/tile-disabled.png",
       "hires": "gallery/media/ui/scitek/gravity-nullifier/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/gravity-nullifier/solid.png",
-      "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier.blend",
-      "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier.glb",
+      "blend": "sources/objects/terran/gravity-nullifier/refined/model.blend",
+      "glb": "sources/objects/terran/gravity-nullifier/refined/model.glb",
       "readme": "sources/ui/scitek/gravity-nullifier/README.md",
       "tile_registration": {
         "canvas": [
@@ -5029,13 +5029,13 @@
           "label": "Solid preview rotation",
           "image": "gallery/media/ui/scitek/gravity-nullifier/solid.png",
           "video": "gallery/media/ui/scitek/gravity-nullifier/preview.webm",
-          "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier.blend",
-          "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier.glb"
+          "blend": "sources/objects/terran/gravity-nullifier/refined/model.blend",
+          "glb": "sources/objects/terran/gravity-nullifier/refined/model.glb"
         },
         {
           "label": "Whole assembly wireframe",
           "image": "gallery/media/ui/scitek/gravity-nullifier/wireframe.png",
-          "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier.blend",
+          "blend": "sources/objects/terran/gravity-nullifier/refined/model.blend",
           "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-wireframe.glb"
         },
         {
@@ -5121,7 +5121,36 @@
         ],
         "material_contract": "Apply timeline hue/caption and orthographic scale independently."
       },
-      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending"
+      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending",
+      "shared_object": {
+        "id": "terran:gravity-nullifier",
+        "blend": "sources/objects/terran/gravity-nullifier/refined/model.blend",
+        "glb": "sources/objects/terran/gravity-nullifier/refined/model.glb",
+        "root": "NullifierResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "gameplay_pose_frame": 1,
+        "disable_presentation_rotation_in_gameplay": true
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/gravity-nullifier/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-information.glb",
+        "technical_timeline": "sources/ui/scitek/gravity-nullifier/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical research solid and baked variants authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "All11,580 selected diagram segments are actual evaluated physical edges; sensor stroke radius preserved; analytic curves replaced.",
+        "verification": "gallery/media/ui/scitek/gravity-nullifier/shared-geometry-verification.json"
+      }
     },
     {
       "id": "scitek:mega-missile",

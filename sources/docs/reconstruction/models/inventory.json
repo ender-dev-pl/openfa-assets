@@ -2143,6 +2143,13 @@
           "present": true,
           "sha256": "af79022662b034c6a9d917cc5722746d7f11d20cf40b82261829c1f7aa9efb34",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/gravity-nullifier/refined/model.blend",
+          "present": true,
+          "sha256": "466fd44e262661cc30f496359b3cf49d109171a17d0a71960c6a45d333bd69bb",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -2184,6 +2191,23 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 12
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/gravity-nullifier/refined/model.blend",
+        "glb": "sources/objects/terran/gravity-nullifier/refined/model.glb",
+        "root": "NullifierResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
       }
     },
     {

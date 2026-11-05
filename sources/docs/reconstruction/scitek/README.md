@@ -31,7 +31,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 7 | scitek:construction-droids | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 8 | scitek:deflector | Shared openfa:deflector;35 PH10 meshes, UVs and wear preserved | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 9 | scitek:fleet-battleship | Shared45-mesh openfa:fleet-battleship;35 original meshes preserved; evaluated-edge diagrams | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
-| 10 | scitek:gravity-nullifier | PB12 orb geometry reused; open base and four sensors authored | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
+| 10 | scitek:gravity-nullifier | Shared94-mesh terran:gravity-nullifier; three open sectors, four sensors and actual-edge diagrams | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 11 | scitek:hi-energy-power-stores | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 12 | scitek:improved-sensors | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 13 | scitek:mega-missile | Shared65-mesh openfa:mega; four exposed chambers, refined lower neck and evaluated-edge diagrams | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |

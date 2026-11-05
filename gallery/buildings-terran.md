@@ -230,6 +230,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb12/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb12/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Gravity Nullifier](../gallery/media/objects/terran/gravity-nullifier/refined/render.png)
+
+[Blend](../sources/objects/terran/gravity-nullifier/refined/model.blend) · [GLB](../sources/objects/terran/gravity-nullifier/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/gravity-nullifier/refined/animation-00.webm)
+
 ## Deep Bore Mine
 
 `terran:deep-bore-mine`
