@@ -16,7 +16,7 @@ wires={name:bpy.data.objects[name+' technical wire'] for name in components}
 for name,names in components.items():
     for objname in names:bpy.data.objects[objname].hide_render=True
 for o in wires.values():o.hide_render=False
-s.render.resolution_x=224;s.render.resolution_y=224;s.cycles.samples=4;s.render.film_transparent=False;s.view_settings.view_transform='Standard'
+s.render.resolution_x=224;s.render.resolution_y=224;s.cycles.samples=8;s.render.film_transparent=False;s.view_settings.view_transform='Standard'
 s.world.node_tree.nodes['Background'].inputs[0].default_value=(0,0,0,1);s.world.node_tree.nodes['Background'].inputs[1].default_value=0
 s.frame_start=1;s.frame_end=423;s.render.fps=15
 whole=Vector(model['whole_information_local_target']);whole_scale=model['whole_information_ortho_scale'];timeline=[];materials={}
@@ -52,14 +52,24 @@ for node in materials.values():
 s.frame_set(1);bpy.ops.wm.save_as_mainfile(filepath=str(out/'anti-virus-missile-information.blend'))
 bpy.ops.object.select_all(action='DESELECT');root.select_set(True);s.camera.select_set(True)
 for o in wires.values():o.select_set(True)
+# The exporter recognizes direct RGBA-to-output as KHR_materials_unlit.
+# Export only a static base hue; the explicit timeline supplies material changes.
+export_nodes=[]
+for ob in wires.values():
+    nt=ob.data.materials[0].node_tree;emission=nt.nodes.get('Emission');output=nt.nodes.get('Material Output')
+    rgb=nt.nodes.new('ShaderNodeRGB');rgb.outputs['Color'].default_value=emission.inputs['Color'].default_value
+    nt.links.new(rgb.outputs['Color'],output.inputs['Surface']);export_nodes.append((nt,emission,output,rgb))
 bpy.ops.export_scene.gltf(filepath=str(out/'anti-virus-missile-information.glb'),use_selection=True,export_apply=True,export_animations=True,export_animation_mode='ACTIVE_ACTIONS',export_cameras=True,export_format='GLB')
+for nt,emission,output,rgb in export_nodes:
+    nt.links.new(emission.outputs[0],output.inputs['Surface']);nt.nodes.remove(rgb)
+
 frames=out/'frames';frames.mkdir(exist_ok=True)
 reuse='--reuse-native-frames' in sys.argv
 if reuse:assert sorted(p.name for p in frames.glob('*.png'))==[f'{i:03}.png' for i in range(423)]
 requested=[f+1 for f in import_samples] if '--keyframes-only' in sys.argv else range(1,424)
 for f in ([] if reuse else requested):
     s.frame_set(f);s.render.filepath=str(frames/f'{f-1:03}.png');bpy.ops.render.render(write_still=True)
-manifest=dict(material_clock_sha256=hashlib.sha256(clock_path.read_bytes()).hexdigest(),material_clock_schema=1,independent_import_samples=import_samples,highlighted_frames=sum(clock['red_active_by_frame']),caption_visible_frames=sum(x>=0 for x in clock['caption_phase_by_frame']),issue=208,research_id='scitek:anti-virus-missile',source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),renderer_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),fps=15,frame_count=423,rendered_frame_count=len(list(frames.glob('*.png'))),native_frame_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(frames.glob('*.png'))},phases=phases,root='AntiVirusRotor',root_scale=list(root.scale),component_nodes={name:o.name for name,o in wires.items()},timing='Legacy 423-frame source red activity and caption visibility are independent. Explicit source-reviewed component phase boundaries; authored camera/pose interpolation.',client_contract='Evaluate timeline camera/root transform and apply red to highlight_component, green to other components. Material hue and orthographic scale animation require timeline metadata; GLB alone does not portably retain them.',timeline=timeline)
+manifest=dict(material_clock_sha256=hashlib.sha256(clock_path.read_bytes()).hexdigest(),material_clock_schema=1,import_material_contract='Pure unlit emission, same shader graph as native technical lines; apply explicit timeline hue.',independent_import_samples=import_samples,highlighted_frames=sum(clock['red_active_by_frame']),caption_visible_frames=sum(x>=0 for x in clock['caption_phase_by_frame']),issue=208,research_id='scitek:anti-virus-missile',source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),renderer_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),fps=15,frame_count=423,rendered_frame_count=len(list(frames.glob('*.png'))),native_frame_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(frames.glob('*.png'))},phases=phases,root='AntiVirusRotor',root_scale=list(root.scale),component_nodes={name:o.name for name,o in wires.items()},timing='Legacy 423-frame source red activity and caption visibility are independent. Explicit source-reviewed component phase boundaries; authored camera/pose interpolation.',client_contract='Evaluate timeline camera/root transform and apply red to highlight_component, green to other components. Material hue and orthographic scale animation require timeline metadata; GLB alone does not portably retain them.',timeline=timeline)
 (out/'information-timeline.json').write_text(json.dumps(manifest,indent=2)+'\n')
 # Prove glTF node geometry/animation can be evaluated independently at caption
 # closeups, using the explicit portable camera contract.
@@ -71,8 +81,10 @@ for f in import_samples:
     for name in components:
         o=bpy.data.objects.get(name+' technical wire');assert o
         # Exported material animation is not relied upon. Reapply explicit hue.
-        mat=o.data.materials[0];bs=mat.node_tree.nodes.get('Principled BSDF')
-        if bs:
-            bs.inputs['Base Color'].default_value=(0,0,0,1);bs.inputs['Emission Color'].default_value=(.9,.003,.001,1) if name==entry['highlight_component'] else (0,.72,.005,1);bs.inputs['Emission Strength'].default_value=1
+        # Runtime hue applies to unlit technical lines. A black Principled BSDF
+        # plus emission changes denoising/edge coverage for tiny red fragments.
+        mat=o.data.materials[0];nt=mat.node_tree;nt.nodes.clear();node=nt.nodes.new('ShaderNodeEmission')
+        node.inputs['Color'].default_value=(.9,.003,.001,1) if name==entry['highlight_component'] else (0,.72,.005,1)
+        output=nt.nodes.new('ShaderNodeOutputMaterial');nt.links.new(node.outputs[0],output.inputs[0])
     s.camera.location=entry['camera_position'];s.camera.rotation_euler=entry['camera_euler'];s.camera.data.ortho_scale=entry['ortho_scale'];s.render.filepath=str(out/f'imported-{f:03}.png');bpy.ops.render.render(write_still=True)
 print('TRACKER_INFORMATION_RENDERED',len(timeline))

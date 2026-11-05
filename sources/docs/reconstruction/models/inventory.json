@@ -34710,6 +34710,13 @@
           "present": true,
           "sha256": "83795063d7b9bfb688abd34e13a0b054a702fb82eabf5800db09e4a3abb84283",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/anti-virus-missile/refined/model.blend",
+          "present": true,
+          "sha256": "e1f9cd3872462b5abe24c69e6cb816871b22224c0db30dd34917e57c216ba60d",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -34725,7 +34732,24 @@
       "open_evidence_questions": [
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "flight_frame_count": 14
+      "flight_frame_count": 14,
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/anti-virus-missile/refined/model.blend",
+        "glb": "sources/objects/terran/anti-virus-missile/refined/model.glb",
+        "root": "AntiVirusRotor",
+        "root_scale": [
+          0.83,
+          0.83,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
+      }
     },
     {
       "category": "missiles",

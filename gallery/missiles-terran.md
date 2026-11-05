@@ -100,6 +100,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/missiles/terran/anti-virus/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/terran/anti-virus/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Anti-Virus Missile](../gallery/media/objects/terran/anti-virus-missile/refined/render.png)
+
+[Blend](../sources/objects/terran/anti-virus-missile/refined/model.blend) · [GLB](../sources/objects/terran/anti-virus-missile/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/anti-virus-missile/refined/animation-00.webm)
+
 ## Mega Missile
 
 `openfa:mega`

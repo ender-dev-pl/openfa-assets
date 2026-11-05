@@ -3928,8 +3928,8 @@
       },
       "hires": "gallery/media/ui/scitek/anti-virus-missile/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/anti-virus-missile/solid.png",
-      "blend": "sources/ui/scitek/anti-virus-missile/anti-virus-missile.blend",
-      "glb": "sources/ui/scitek/anti-virus-missile/anti-virus-missile.glb",
+      "blend": "sources/objects/terran/anti-virus-missile/refined/model.blend",
+      "glb": "sources/objects/terran/anti-virus-missile/refined/model.glb",
       "readme": "sources/ui/scitek/anti-virus-missile/README.md",
       "gallery_views": [
         {
@@ -3943,31 +3943,31 @@
           "label": "Solid tile/detail and preview rotation",
           "image": "gallery/media/ui/scitek/anti-virus-missile/solid.png",
           "video": "gallery/media/ui/scitek/anti-virus-missile/preview.webm",
-          "blend": "sources/ui/scitek/anti-virus-missile/anti-virus-missile.blend",
-          "glb": "sources/ui/scitek/anti-virus-missile/anti-virus-missile.glb"
+          "blend": "sources/objects/terran/anti-virus-missile/refined/model.blend",
+          "glb": "sources/objects/terran/anti-virus-missile/refined/model.glb"
         },
         {
           "label": "Green technical wireframe",
           "image": "gallery/media/ui/scitek/anti-virus-missile/wireframe.png",
-          "blend": "sources/ui/scitek/anti-virus-missile/anti-virus-missile.blend",
+          "blend": "sources/objects/terran/anti-virus-missile/refined/model.blend",
           "glb": "sources/ui/scitek/anti-virus-missile/anti-virus-missile-wireframe.glb"
         },
         {
           "label": "Wireframe closeup: anti-viral-payload-pods",
           "image": "gallery/media/ui/scitek/anti-virus-missile/highlight-anti-viral-payload-pods.png",
-          "blend": "sources/ui/scitek/anti-virus-missile/anti-virus-missile.blend",
+          "blend": "sources/objects/terran/anti-virus-missile/refined/model.blend",
           "glb": "sources/ui/scitek/anti-virus-missile/anti-virus-missile-highlight-anti-viral-payload-pods.glb"
         },
         {
           "label": "Wireframe closeup: four-main-rocket-thrusters",
           "image": "gallery/media/ui/scitek/anti-virus-missile/highlight-four-main-rocket-thrusters.png",
-          "blend": "sources/ui/scitek/anti-virus-missile/anti-virus-missile.blend",
+          "blend": "sources/objects/terran/anti-virus-missile/refined/model.blend",
           "glb": "sources/ui/scitek/anti-virus-missile/anti-virus-missile-highlight-four-main-rocket-thrusters.glb"
         },
         {
           "label": "Wireframe closeup: nose-navigation-assembly",
           "image": "gallery/media/ui/scitek/anti-virus-missile/highlight-nose-navigation-assembly.png",
-          "blend": "sources/ui/scitek/anti-virus-missile/anti-virus-missile.blend",
+          "blend": "sources/objects/terran/anti-virus-missile/refined/model.blend",
           "glb": "sources/ui/scitek/anti-virus-missile/anti-virus-missile-highlight-nose-navigation-assembly.glb"
         }
       ],
@@ -4446,7 +4446,36 @@
         0.04580123722553253,
         0.0,
         -0.0
-      ]
+      ],
+      "shared_object": {
+        "id": "openfa:anti-virus",
+        "blend": "sources/objects/terran/anti-virus-missile/refined/model.blend",
+        "glb": "sources/objects/terran/anti-virus-missile/refined/model.glb",
+        "root": "AntiVirusRotor",
+        "root_scale": [
+          0.83,
+          0.83,
+          1
+        ],
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "gameplay_pose_frame": 1,
+        "disable_presentation_rotation_in_gameplay": true
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/anti-virus-missile/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/anti-virus-missile/anti-virus-missile-information.glb",
+        "technical_timeline": "sources/ui/scitek/anti-virus-missile/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical research solid and baked variants authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "All29,992 diagram segments are actual evaluated physical edges; continuous casing semantic split preserved.",
+        "verification": "gallery/media/ui/scitek/anti-virus-missile/shared-geometry-verification.json"
+      }
     },
     {
       "id": "scitek:asteroid-engines",
