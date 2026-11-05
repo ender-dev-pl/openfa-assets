@@ -1,3 +1,5 @@
+> Active user scope: build all coloured editable models sequentially. Final image production is deferred. Reuse related completed models and record lineage. Technical preview renders may be used only to inspect model/material correctness. Model completion is tracked independently from the image targets below.
+
 # Trading goods — persistent reconstruction objective
 
 Reconstruct the images of **all trading goods**, retaining editable authored model sources and rendered images. This is a persistent objective across sessions, not a one-session batch. Tracking: [issue #214](https://github.com/ender-dev-pl/openfa-assets/issues/214). Branch: `feat/trading-goods-reconstruction`, created from `origin/main`; cinematic work remains on its own branch.

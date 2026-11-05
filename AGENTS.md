@@ -16,3 +16,5 @@
 - On `feat/trading-goods-reconstruction`, reconstruct images of all trading goods. Continue this objective across sessions until the coverage manifest is complete.
 - Read `docs/trading-goods/README.md` and `docs/trading-goods/coverage.json` before choosing the next item; track work in origin issue #214.
 - Keep compact monochrome and detailed colour images as separate acceptance targets. Planned items are not completed models. Preserve earlier finished items; inspect local reference and description evidence before authoring.
+
+- Latest user scope: author all coloured 3D trading-good models sequentially; final compact/detail image production is deferred. Related goods may derive from completed models; record lineage and preserve each version. Use model_status for progress; image status does not block model completion.
