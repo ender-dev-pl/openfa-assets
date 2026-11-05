@@ -4521,8 +4521,8 @@
       "disabled": "gallery/media/ui/scitek/asteroid-engines/tile-disabled.png",
       "hires": "gallery/media/ui/scitek/asteroid-engines/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/asteroid-engines/solid.png",
-      "blend": "sources/ui/scitek/asteroid-engines/asteroid-engines.blend",
-      "glb": "sources/ui/scitek/asteroid-engines/asteroid-engines.glb",
+      "blend": "sources/objects/terran/asteroid-engines/refined/model.blend",
+      "glb": "sources/objects/terran/asteroid-engines/refined/model.glb",
       "readme": "sources/ui/scitek/asteroid-engines/README.md",
       "tile_registration": {
         "canvas": [
@@ -4549,13 +4549,13 @@
           "label": "Solid preview rotation",
           "image": "gallery/media/ui/scitek/asteroid-engines/solid.png",
           "video": "gallery/media/ui/scitek/asteroid-engines/preview.webm",
-          "blend": "sources/ui/scitek/asteroid-engines/asteroid-engines.blend",
-          "glb": "sources/ui/scitek/asteroid-engines/asteroid-engines.glb"
+          "blend": "sources/objects/terran/asteroid-engines/refined/model.blend",
+          "glb": "sources/objects/terran/asteroid-engines/refined/model.glb"
         },
         {
           "label": "Whole assembly wireframe",
           "image": "gallery/media/ui/scitek/asteroid-engines/wireframe.png",
-          "blend": "sources/ui/scitek/asteroid-engines/asteroid-engines.blend",
+          "blend": "sources/objects/terran/asteroid-engines/refined/model.blend",
           "glb": "sources/ui/scitek/asteroid-engines/asteroid-engines-wireframe.glb"
         },
         {
@@ -4641,7 +4641,36 @@
         ],
         "material_contract": "Apply timeline hue/caption and orthographic scale independently."
       },
-      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending"
+      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending",
+      "shared_object": {
+        "id": "terran:asteroid-engine",
+        "blend": "sources/objects/terran/asteroid-engines/refined/model.blend",
+        "glb": "sources/objects/terran/asteroid-engines/refined/model.glb",
+        "root": "AsteroidEngineRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "gameplay_pose_frame": 1,
+        "disable_presentation_rotation_in_gameplay": true
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/asteroid-engines/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/asteroid-engines/asteroid-engines-information.glb",
+        "technical_timeline": "sources/ui/scitek/asteroid-engines/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical research solid and baked variants authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "All5,728 selected diagram segments are actual evaluated physical edges; analytic sphere curves replaced.",
+        "verification": "gallery/media/ui/scitek/asteroid-engines/shared-geometry-verification.json"
+      }
     },
     {
       "id": "scitek:deflector",

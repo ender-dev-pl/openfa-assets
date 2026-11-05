@@ -25,7 +25,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 1 | scitek:mk2-deep-bore-mine | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 2 | scitek:anti-missile-pod | Shared31-mesh terran:anti-missile-pod; articulated head/fixed base and evaluated-edge diagrams | Model, articulated solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 3 | scitek:anti-virus-missile | Shared openfa:anti-virus;19 source meshes unchanged, evaluated-edge diagrams | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
-| 4 | scitek:asteroid-engines | Existing PB22 orb meshes and authored research assembly | Solid, wire/highlight, 60-frame preview and 425-frame information sequence delivered; game check pending |
+| 4 | scitek:asteroid-engines | Shared36-mesh terran:asteroid-engine; four opposing generators and actual-edge diagrams | Solid, wire/highlight, 60-frame preview and 425-frame information sequence delivered; game check pending |
 | 5 | scitek:asteroid-tracker | Dedicated model added | Model, solid preview and full authored wire/highlight/zoom information sequence delivered; game check pending |
 | 6 | scitek:building-armour | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 7 | scitek:construction-droids | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |

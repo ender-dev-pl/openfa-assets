@@ -428,6 +428,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb22/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb22/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Asteroid Engine](../gallery/media/objects/terran/asteroid-engines/refined/render.png)
+
+[Blend](../sources/objects/terran/asteroid-engines/refined/model.blend) · [GLB](../sources/objects/terran/asteroid-engines/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/asteroid-engines/refined/animation-00.webm)
+
 ## Powerplant
 
 `terran:powerplant`

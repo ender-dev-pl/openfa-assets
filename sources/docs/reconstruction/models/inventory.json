@@ -3811,6 +3811,13 @@
           "present": true,
           "sha256": "b642cd0e3381d54deb774f14cbd11eafede84c9e5eae5e1be28559237d3fdf16",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/asteroid-engines/refined/model.blend",
+          "present": true,
+          "sha256": "2923a83b0821c6a4d839e437b85d15268327642d71651cb9d5b36a91b9a09260",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -3852,6 +3859,23 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 22
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/asteroid-engines/refined/model.blend",
+        "glb": "sources/objects/terran/asteroid-engines/refined/model.glb",
+        "root": "AsteroidEngineRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
       }
     },
     {
