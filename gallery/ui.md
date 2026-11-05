@@ -322,3 +322,9 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Seismic Penetrator](media/ui/scitek/seismic-penetrator/solid.png)
 
 [Technical animation](media/ui/scitek/seismic-penetrator/information.webm) - [Shared source and integration](../sources/ui/scitek/seismic-penetrator/README.md).
+
+### Shield x40
+
+![Shield x40](media/ui/scitek/shield-x40/solid.png)
+
+[Technical animation](media/ui/scitek/shield-x40/information.webm) - [Shared source and integration](../sources/ui/scitek/shield-x40/README.md).

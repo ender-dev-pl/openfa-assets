@@ -152,6 +152,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/hardpoints/shield-x40/model.blend) · [GLB](../sources/docs/assets/reconstruction/hardpoints/shield-x40/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Shield x40](../gallery/media/objects/shared/shield-x40/refined/render.png)
+
+[Blend](../sources/objects/shared/shield-x40/refined/model.blend) · [GLB](../sources/objects/shared/shield-x40/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/shared/shield-x40/refined/animation-00.webm)
+
 ## Shield x50
 
 `openfa:shield-x50`

@@ -33360,6 +33360,13 @@
           "present": true,
           "sha256": "51a10622648e1f4cfea13175748ece964994994e5ab6f9ff714b4a41b5b6c1bd",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/shared/shield-x40/refined/model.blend",
+          "present": true,
+          "sha256": "cbd10db8394e70a795cad9f11dafb7daf764bbccd58c9b44ab3f371cdb388981",
+          "final_visual_acceptance": "Blender and independent import verified; game integration pending"
         }
       ],
       "acceptance": {
@@ -33376,7 +33383,23 @@
         "Determine whether visible mounts differ by culture; do not multiply shared definitions or assume shared geometry without evidence.",
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established."
+      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established.",
+      "authoritative_refined": {
+        "blend": "sources/objects/shared/shield-x40/refined/model.blend",
+        "glb": "sources/objects/shared/shield-x40/refined/model.glb",
+        "consumers": [
+          "ship-hardpoints",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/25",
+        "package_contract": "One physical solid GLB; alias consumers. Preserve Root scale[1,1.3,1]; gameplay frame1 with catalogue turn disabled.",
+        "root_scale": [
+          1.0,
+          1.2999999523162842,
+          1.0
+        ]
+      }
     },
     {
       "category": "hardpoints",
