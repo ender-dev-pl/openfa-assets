@@ -39,17 +39,17 @@
 | 34 | Astramarine | coloured_model_verified |
 | 35 | Peridot | coloured_model_verified |
 | 36 | Amethyst | coloured_model_verified |
-| 37 | Abstract Sculpture | planned |
-| 38 | Domestic interior units | planned |
-| 39 | Decorative drinking horns | planned |
-| 40 | Worked leather | planned |
-| 41 | Ornamental archaic weaponry | planned |
-| 42 | Fizzimo Liqueurs | planned |
-| 43 | Rigellian ant eggs | planned |
-| 44 | Pearls dissolved in brandy | planned |
-| 45 | Goat's ear mushrooms | planned |
-| 46 | Organic corn on the cob | planned |
-| 47 | Braccatian kulos cheese | planned |
+| 37 | Abstract Sculpture | coloured_model_verified |
+| 38 | Domestic interior units | coloured_model_verified |
+| 39 | Decorative drinking horns | coloured_model_verified |
+| 40 | Worked leather | coloured_model_verified |
+| 41 | Ornamental archaic weaponry | coloured_model_verified |
+| 42 | Fizzimo Liqueurs | coloured_model_verified |
+| 43 | Rigellian ant eggs | coloured_model_verified |
+| 44 | Pearls dissolved in brandy | coloured_model_verified |
+| 45 | Goat's ear mushrooms | coloured_model_verified |
+| 46 | Organic corn on the cob | coloured_model_verified |
+| 47 | Braccatian kulos cheese | coloured_model_verified |
 | 48 | Grains | planned |
 | 49 | Seaweed | planned |
 | 50 | Krill | planned |

@@ -140,3 +140,102 @@ def gemstones(n):
   for j,(x,y,z) in enumerate([(-.9,-.35,.45),(0,.1,.56),(.9,.45,.45)]):
    g=gem('inclusion colour facet',(x,y,z+.2),.19,inner,sides=6);g.rotation_euler=(.1,.2,j)
 BUILDERS.update({i:gemstones for i in range(25,38)})
+
+def open_case(name,base,lining,angle=1.1):
+ p=M.root(name);M.cube('case bottom',(0,0,.08),(1.25,.75,.08),base,p)
+ for x in [-1.2,1.2]:M.cube('case side',(x,0,.30),(.05,.75,.25),base,p)
+ for y in [-.7,.7]:M.cube('case end',(0,y,.30),(1.2,.05,.25),base,p)
+ M.cube('case liner',(0,0,.18),(1.15,.65,.025),lining,p)
+ lid=M.root('hinged lid',(0,.72,.55));lid.parent=p;lid.rotation_euler.x=-angle;M.cube('separate lid panel',(0,-.72,0),(1.25,.75,.07),base,lid);M.cube('lid lining',(0,-.72,-.075),(1.12,.62,.006),lining,lid)
+ for x in [-.8,.8]:M.rod('hinge barrel',(x-.12,.72,.55),(x+.12,.72,.55),.06,lining,p)
+ return p
+
+def horn(name,loc,material,trim,parent=None,size=1):
+ p=M.root(name,loc);p.parent=parent;p.scale=(size,)*3;v=[];f=[];N=20;S=32
+ for k in range(N+1):
+  t=k/N;r=.035+.45*t**1.3;cx=.38*math.sin(t*1.8)
+  for j in range(S):a=j*math.tau/S;v.append((cx+r*math.cos(a),r*math.sin(a),2*t))
+ for k in range(N):
+  for j in range(S):q=k*S+j;b=k*S+(j+1)%S;f.append((q,b,b+S,q+S))
+ o=M.mesh('curving hollow horn shell',v,f,material,p);q=o.modifiers.new('Horn wall thickness','SOLIDIFY');q.thickness=.035
+ for face in o.data.polygons:face.use_smooth=True
+ M.ring('decorative mouth rim',(.38*math.sin(1.8),0,2),.485,.05,trim,p)
+ for t in [.45,.65,.83]:
+  r=.035+.45*t**1.3;cx=.38*math.sin(t*1.8);M.ring('gold ornamental band',(cx,0,2*t),r,.055,trim,p)
+  for j in range(12):a=j*math.tau/12;M.ball('individual band stud',(cx+(r+.045)*math.cos(a),(r+.045)*math.sin(a),2*t),(.035,)*3,trim,p,1)
+ return p
+
+def art_food(n):
+ gold=M.mat('aged brass',(.5,.28,.055),.75,.4);dark=M.mat('blackened metal',(.022,.025,.028),.6,.55);wood=M.mat('worn warm wood',(.28,.12,.035),rough=.85);cream=M.mat('cream ivory',(.53,.46,.23),rough=.65);blue=M.mat('blue alloy',(.025,.07,.33),.5,.35)
+ if n==38:
+  M.cube('black plinth',(0,0,.3),(.75,.55,.3),dark);M.cube('cyan pedestal inlay',(0,-.56,.3),(.57,.01,.025),blue);v=[];faces=[];profile=[(.45,.6),(.48,.9),(.26,1.4),(.55,1.8),(.48,2.25),(.23,2.65),(.40,2.9)]
+  for k,(w,z) in enumerate(profile):
+   for j in range(24):a=j*math.tau/24;v.append((w*math.cos(a)+.13*math.sin(z*3),.28*math.sin(a),z))
+  for k in range(len(profile)-1):
+   for j in range(24):faces.append((24*k+j,24*k+(j+1)%24,24*(k+1)+(j+1)%24,24*(k+1)+j))
+  o=M.mesh('Artemian abstract curved sculpture',v,faces,wood);o.data.materials.append(blue)
+  for k,f in enumerate(o.data.polygons):f.material_index=int(k%24>12);f.use_smooth=True
+ elif n==39:
+  p=M.root('curved pedestal table',(0,0,0));M.lathe('exotic alloy table',[(.9,0),(1,.12),(.45,.35),(.35,.7),(.8,1),(1.1,1.12),(1.1,1.25),(.95,1.3)],blue,p)
+  p=M.root('separate tall shelving unit',(-1.7,.6,0))
+  for x in [-.35,.35]:
+   for y in [-.3,.3]:M.rod('slender shelf leg',(x,y,0),(x,y,2.2),.025,blue,p)
+  for z in [.4,1.2,2.2]:M.cube('shelf plane',(0,0,z),(.4,.35,.035),dark,p)
+  M.cube('separate storage block',(1.8,0,.3),(.4,.4,.3),blue)
+  for z in [.15,.3,.45]:M.cube('drawer seam',(1.8,-.405,z),(.34,.012,.01),dark)
+ elif n==40:
+  antler=M.mat('polished horn',(.30,.22,.12),rough=.4)
+  for i,(x,y) in enumerate([(-.9,.3),(0,-.35),(.9,.4)]):horn('individual drinking horn '+str(i),(x,y,0),antler,gold,size=.85 if i!=1 else 1)
+ elif n==41:
+  leather=M.mat('Braccatian worked leather',(.16,.045,.008),rough=.65);p=M.root('long decorated leather coat',(0,.4,0));M.cube('coat rear garment',(0,.1,1.6),(.7,.13,1.5),leather,p)
+  for side in [-1,1]:
+   M.mesh('separate front leather panel',[(side*.10,-.22,.1),(side*.7,-.22,.1),(side*.65,-.22,2.9),(side*.3,-.22,3.1),(side*.1,-.22,2.6)],[(0,1,2,3,4)],leather,p);M.rod('coat sleeve',(side*.65,.1,2.9),(side*1.0,.05,1.8),.24,leather,p);M.ring('decorated cuff',(side*1.0,.05,1.8),.25,.04,gold,p)
+   for z in [.4,.7,1,1.3,1.6,1.9,2.2]:M.ball('coat front stud',(side*.25,-.25,z),(.025,.025,.025),gold,p,1)
+  for x in [1.5,2.1]:
+   p=M.root('separate leather boot',(x,0,0));M.lathe('boot shaft',[(.19,.15),(.16,.4),(.22,1.3)],leather,p);M.cube('boot toe',(0,-.16,.13),(.21,.38,.13),leather,p);M.ring('boot cuff',(0,0,1.3),.23,.035,gold,p)
+  r=M.ring('separate worked belt',(-1.6,-.4,.1),.5,.065,leather);r.scale.y=.65;M.cube('belt buckle',(-1.1,-.4,.13),(.10,.12,.025),gold)
+ elif n==42:
+  steel=M.mat('ornamental blade metal',(.45,.35,.24),.8,.35);p=M.root('ornamental sword',(-1.1,0,0));M.cylinder('sword grip',(0,0,0),.09,.7,wood,p);M.rod('decorative crossguard',(-.35,0,.7),(.35,0,.7),.07,gold,p);M.mesh('leaf shaped blade',[(-.20,0,.7),(-.15,0,2.9),(0,0,3.5),(.15,0,2.9),(.2,0,.7),(0,-.07,1.8)],[(0,1,2,5),(2,3,4,5),(4,0,5)],steel,p)
+  p=M.root('ceremonial flail',(0,0,0));M.cylinder('flail grip',(0,0,0),.12,.8,wood,p)
+  for j in range(7):o=M.ring('individual flail chain link',(0,0,.9+j*.16),.10,.025,gold,p);o.rotation_euler.y=math.pi/2 if j%2 else 0
+  M.ball('flail head',(0,0,2.3),(.3,.3,.3),steel,p,1)
+  for j in range(8):a=j*math.tau/8;M.rod('ornamental head spike',(.25*math.cos(a),.25*math.sin(a),2.3),(.46*math.cos(a),.46*math.sin(a),2.3),.04,gold,p)
+  p=M.root('triangular archaic string weapon',(1.3,.3,0));M.mesh('triangular decorated frame',[(-.7,0,.5),(.7,0,.5),(0,0,3)],[(0,1,2)],wood,p)
+  for z in [.7,.9,1.1,1.3,1.5,1.7,1.9,2.1]:w=.7*(3-z)/2.5;M.rod('individual metallic string',(-w,-.02,z),(w,-.02,z),.008,gold,p)
+ elif n==43:
+  chocolate=M.mat('chocolate shell',(.16,.06,.012),rough=.5);p=open_case('decorative liqueur chocolate case',gold,dark)
+  for x in [-.6,.6]:
+   for y in [-.32,.32]:M.ball('individual filled chocolate',(x,y,.4),(.25,.25,.22),chocolate,p)
+  for x in [-.6,.6]:M.ring('case lid ornament',(x,-.1,.75),.12,.02,gold,p)
+ elif n==44:
+  shell=M.mat('ant egg shell',(.30,.23,.17),rough=.45)
+  for x,y,r in [(-.65,.3,.6),(.4,.4,.62),(-.5,-.4,.6),(.55,-.4,.65)]:M.ball('individual ant egg',(x,y,.25),(r,r*.65,r*.4),shell,sub=3)
+ elif n==45:
+  glass=M.mat('brandy glass',(.42,.44,.38),rough=.22,glass=.3);p=M.bottle('pearl brandy flask',(0,0,0),glass,gold,wood,height=2.5,r=.65)
+  pearl=M.mat('visible pearl residue',(.68,.68,.48),rough=.2)
+  for j in range(18):a=j*2.4;r=.45*(j%3)/2;M.ball('undissolved pearl',(r*math.cos(a),r*math.sin(a),.14+(j%2)*.1),(.07,)*3,pearl,p)
+ elif n==46:
+  cap=M.mat('goat ear mushroom cap',(.27,.18,.085),rough=.85)
+  for i,(x,y,h,r) in enumerate([(-.7,.2,1.6,.65),(.6,.1,1.0,.5),(-.6,-.6,.6,.35),(.7,-.5,.6,.3)]):
+   p=M.root('individual mushroom '+str(i),(x,y,0));M.lathe('slightly bowed mushroom stem',[(.14,0),(.12,h*.4),(.18,h)],cream,p);o=M.lathe('broad irregular mushroom cap',[(.12,h),(.65*r,h+.06),(r,h+.12),(r*.95,h+.27),(r*.55,h+.34),(.1,h+.38)],cap,p)
+   for v in o.data.vertices:v.co.x+=.04*math.sin(v.co.y*11+i)
+   for j in range(20):a=j*math.tau/20;M.rod('underside gill',(.18*math.cos(a),.18*math.sin(a),h+.04),(.85*r*math.cos(a),.85*r*math.sin(a),h+.10),.008,wood,p)
+ elif n==47:
+  p=M.root('wooden sweetcorn crate');M.cube('crate floor',(0,0,.1),(1.4,.8,.1),wood,p)
+  for x in [-1.35,1.35]:M.cube('crate end',(x,0,.5),(.05,.8,.4),wood,p)
+  for y in [-.75,.75]:M.cube('crate side',(0,y,.5),(1.4,.05,.4),wood,p)
+  yellow=M.mat('sweetcorn kernels',(.65,.47,.025),rough=.5);green=M.mat('green husk',(.10,.20,.02),rough=.85)
+  for i,y in enumerate([-.45,0,.45]):
+   M.rod('corn core',(-1,y,.7),(1,y,.7),.16,yellow,p)
+   for j in range(17):
+    x=-1+j*.12
+    for k in range(8):a=k*math.tau/8;M.ball('individual corn kernel',(x,y+.20*math.cos(a),.7+.20*math.sin(a)),(.075,.075,.075),yellow,p,1)
+   M.mesh('corn husk',[(-1.15,y-.23,.65),(1.1,y-.18,.6),(.4,y+.23,.65)],[(0,1,2)],green,p)
+ else:
+  wax=M.mat('purple cheese wax',(.25,.035,.17),rough=.6);cheese=M.mat('yellow cheese interior',(.65,.56,.075),rough=.8);v=[(0,0,0),(0,0,.6)];N=48
+  for j in range(N+1):a=.45+j*(math.tau-.9)/N;v.extend([(1.3*math.cos(a),1.3*math.sin(a),0),(1.3*math.cos(a),1.3*math.sin(a),.6)])
+  f=[]
+  for j in range(N):q=2+j*2;f.extend([(q,q+2,q+3,q+1),(0,q+2,q),(1,q+1,q+3)])
+  f.extend([(0,1,3,2),(0,2+N*2,3+N*2,1)]);o=M.mesh('whole cheese wheel with removed wedge',v,f,wax);o.data.materials.append(cheese);o.data.polygons[-1].material_index=1;o.data.polygons[-2].material_index=1
+  for i in range(8):x=.2+i*.13;M.ball('cheese cut-face hole',(x,.45*x,.15+(i%3)*.14),(.045,.015,.045),wood,sub=1)
+BUILDERS.update({i:art_food for i in range(38,49)})
