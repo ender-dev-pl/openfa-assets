@@ -280,3 +280,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Plasma Turret](media/ui/scitek/plasma-turret/solid.png)
 
 [Full technical animation](media/ui/scitek/plasma-turret/information.webm) - [Source and integration](../sources/ui/scitek/plasma-turret/README.md).
+
+### Screen Generator
+
+![Screen Generator](media/ui/scitek/screen-generator/solid.png)
+
+[Full technical animation](media/ui/scitek/screen-generator/information.webm) - [Source and integration](../sources/ui/scitek/screen-generator/README.md).

@@ -42,7 +42,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 20 | scitek:power-amplifier | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 21 | scitek:powerplant | terran:powerplant | Pending |
 | 22 | scitek:repair-facility | terran:repair-facility | Pending |
-| 23 | scitek:screen-generator | terran:screen-generator | Pending |
+| 23 | scitek:screen-generator | Existing PB10 foundation reused; actual lattice masts and field anatomy authored | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 24 | scitek:seismic-penetrator | terran:seismic-penetrator | Pending |
 | 25 | scitek:shield-x40 | openfa:shield-x40 | Pending |
 | 26 | scitek:shield-x50 | openfa:shield-x50 | Pending |
