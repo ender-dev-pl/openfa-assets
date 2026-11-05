@@ -4558,8 +4558,8 @@
       "disabled": "gallery/media/ui/scitek/deflector/tile-disabled.png",
       "hires": "gallery/media/ui/scitek/deflector/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/deflector/solid.png",
-      "blend": "sources/ui/scitek/deflector/deflector.blend",
-      "glb": "sources/ui/scitek/deflector/deflector.glb",
+      "blend": "sources/objects/shared/deflector/refined/model.blend",
+      "glb": "sources/objects/shared/deflector/refined/model.glb",
       "readme": "sources/ui/scitek/deflector/README.md",
       "tile_registration": {
         "canvas": [
@@ -4586,13 +4586,13 @@
           "label": "Solid preview rotation",
           "image": "gallery/media/ui/scitek/deflector/solid.png",
           "video": "gallery/media/ui/scitek/deflector/preview.webm",
-          "blend": "sources/ui/scitek/deflector/deflector.blend",
-          "glb": "sources/ui/scitek/deflector/deflector.glb"
+          "blend": "sources/objects/shared/deflector/refined/model.blend",
+          "glb": "sources/objects/shared/deflector/refined/model.glb"
         },
         {
           "label": "Whole assembly wireframe",
           "image": "gallery/media/ui/scitek/deflector/wireframe.png",
-          "blend": "sources/ui/scitek/deflector/deflector.blend",
+          "blend": "sources/objects/shared/deflector/refined/model.blend",
           "glb": "sources/ui/scitek/deflector/deflector-wireframe.glb"
         },
         {
@@ -4678,7 +4678,36 @@
         ],
         "material_contract": "Apply timeline hue/caption and orthographic scale independently."
       },
-      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending"
+      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending",
+      "shared_object": {
+        "id": "openfa:deflector",
+        "blend": "sources/objects/shared/deflector/refined/model.blend",
+        "glb": "sources/objects/shared/deflector/refined/model.glb",
+        "root": "DeflectorResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "consumers": [
+          "ship-hardpoints",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "gameplay_pose_frame": 16,
+        "disable_presentation_rotation_in_gameplay": true
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/shared/deflector/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/deflector/deflector-information.glb",
+        "technical_timeline": "sources/ui/scitek/deflector/information-timeline.json",
+        "package_rule": "One shared coloured GLB and one information GLB/timeline. Historical research solid and baked technical variants are authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "Every existing diagram segment is an evaluated shared-solid edge; some display edges are omitted.",
+        "verification": "gallery/media/ui/scitek/deflector/shared-geometry-verification.json"
+      }
     },
     {
       "id": "scitek:fleet-battleship",

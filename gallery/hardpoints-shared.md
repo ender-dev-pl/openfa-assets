@@ -128,6 +128,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/hardpoints/deflector/model.blend) · [GLB](../sources/docs/assets/reconstruction/hardpoints/deflector/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Deflector](../gallery/media/objects/shared/deflector/refined/render.png)
+
+[Blend](../sources/objects/shared/deflector/refined/model.blend) · [GLB](../sources/objects/shared/deflector/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/shared/deflector/refined/animation-00.webm)
+
 ## Shield x10
 
 `openfa:shield-x10`

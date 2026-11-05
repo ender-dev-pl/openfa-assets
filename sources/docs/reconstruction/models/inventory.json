@@ -32948,6 +32948,13 @@
           "present": true,
           "sha256": "a55e8430133da4b6df86610c53eb4d6f08f24bf480e8d2106fb9ed320879c0ed",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/shared/deflector/refined/model.blend",
+          "present": true,
+          "sha256": "47e04456d0999fdf0e4de31b9d34cec942c25fad91dea695195d867541190719",
+          "final_visual_acceptance": "Preserved authored art; native/import geometry verified, client/GPU pending"
         }
       ],
       "acceptance": {
@@ -32964,7 +32971,24 @@
         "Determine whether visible mounts differ by culture; do not multiply shared definitions or assume shared geometry without evidence.",
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established."
+      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established.",
+      "authoritative_refined": {
+        "blend": "sources/objects/shared/deflector/refined/model.blend",
+        "glb": "sources/objects/shared/deflector/refined/model.glb",
+        "root": "DeflectorResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 16,
+        "consumers": [
+          "ship-hardpoints",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation turn at gameplay frame16."
+      }
     },
     {
       "category": "hardpoints",
