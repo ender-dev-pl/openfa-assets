@@ -85,3 +85,24 @@ def battle(info):
    for i,arm in enumerate(a['arms']):T.key(arm,'rotation_euler',n,(-.65*math.sin(phase+i*math.pi),0,0))
 
 BUILDERS['battle']=battle
+
+def council(info):
+ T.light('council warm key',(-4,-5,9),1300,(1,.63,.35),6);T.light('council fill',(5,-2,7),600,(.55,.50,.75));T.curtains((.18,.055,.012));gold=T.material('council old gold',(.35,.18,.035),.7,.42);stone=T.material('council table green marble',(.12,.16,.09),.15,.55);T.ball('oval council table',(0,-.6,2.3),(4,2.5,.18),stone);T.tube('table pedestal',(0,-.6,.1),(0,-.6,2.3),.75,stone);T.cube('throne back',(0,2.4,2.9),(1.1,.2,2.1),gold)
+ hero=T.human('seated admiral',loc=(0,1.4,0),scale=.8,uniform=(.07,.018,.12),skin=(.35,.23,.13),hair=(.04,.025,.02),cape=(.055,.16,.055),hat=True)
+ for leg in hero['legs']:leg.rotation_euler.x=-1.1
+ for arm in hero['arms']:arm.rotation_euler.x=-1.0
+ for x in [-2.5,2.5]:T.human('standing guard '+str(x),loc=(x,2,0),scale=.86,uniform=(.025,.07,.04),skin=(.30,.23,.17),hair=(.025,.02,.02))
+ for a in [-1,1]:
+  tube=T.tube('throne crest ray',(0,3,4.6),(a*2.3,3,6),.065,gold)
+ T.torus('throne crest ring',(0,3,5.4),1.05,.06,gold,vertical=True)
+ paper=T.material('document yellow paper',(.56,.35,.055),rough=.95,worn=False);ink=T.material('placeholder document strokes',(.012,.008,.002),worn=False);T.cube('document',(0.8,-.7,2.51),(.67,.85,.008),paper,bevel=.01)
+ for row in range(8):
+  for col in range(5):T.cube('unreadable document mark',(.31+col*.21,-.12-row*.17,2.525),(.065,.013,.003),ink,bevel=0)
+ pen=T.tube('signing stylus',(.36,-.1,-1.15),(.36,-.25,-1.78),.027,ink,hero['arms'][1]);T.talk(hero,info['source_start'],info['source_end'])
+ if info['id']=='K':
+  T.camera((-6,-13,5.4),(0,1,3),45);fore=T.human('foreground witness',loc=(-6.0,-3.7,0),scale=.95,uniform=(.04,.065,.075),skin=(.20,.25,.28));fore['root'].rotation_euler.z=math.pi;white=T.material('witness white collar',(.40,.46,.48));T.cube('witness collar',(0,0,4.37),(1.0,.5,.15),white,fore['root'])
+ else:
+  T.camera((-4,-9,8.5),(0,.3,4.0),36);T.key(hero['head'],'rotation_euler',1073,(.14,0,-.1));T.key(hero['head'],'rotation_euler',1147,(.2,0,.1))
+  for n in range(1073,1148,4):T.key(hero['arms'][1],'rotation_euler',n,(-1.0,.06,.08*math.sin(n*.55)))
+
+BUILDERS['council']=council
