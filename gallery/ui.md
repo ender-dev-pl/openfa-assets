@@ -184,3 +184,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Missile Bay Extension](media/ui/scitek/missile-bay-extension/solid.png)
 
 [Technical animation](media/ui/scitek/missile-bay-extension/information.webm) · [Source and integration contract](../sources/ui/scitek/missile-bay-extension/README.md).
+
+### Missile Guidance System
+
+![Authored Missile Guidance System research assembly](media/ui/scitek/missile-guidance-system/solid.png)
+
+[Full technical animation](media/ui/scitek/missile-guidance-system/information.webm) · [Source and integration contract](../sources/ui/scitek/missile-guidance-system/README.md).

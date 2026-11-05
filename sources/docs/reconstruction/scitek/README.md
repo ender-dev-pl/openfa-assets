@@ -34,7 +34,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 12 | scitek:improved-sensors | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 13 | scitek:mega-missile | openfa:mega | Pending |
 | 14 | scitek:missile-bay-extension | Dedicated model added | Local solid animation, full wire/highlight/zoom information sequence delivered; game check pending |
-| 15 | scitek:missile-guidance-system | **Missing** | Pending |
+| 15 | scitek:missile-guidance-system | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 16 | scitek:nuclear-missile | openfa:nuclear | Pending |
 | 17 | scitek:ore-teleporter | terran:ore-teleporter | Pending |
 | 18 | scitek:photon-turret | terran:photon-turret | Pending |

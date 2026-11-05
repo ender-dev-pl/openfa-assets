@@ -1500,6 +1500,200 @@
         ]
       },
       "status": "Dedicated model, local mechanism animation and full technical presentation verified; game integration pending"
+    },
+    {
+      "id": "scitek:missile-guidance-system",
+      "name": "Sci-Tek Missile Guidance System",
+      "binding": "openfa:presentation/profile/research/15",
+      "legacy_index": 15,
+      "native": "gallery/media/ui/scitek/missile-guidance-system/tile-native.png",
+      "disabled": "gallery/media/ui/scitek/missile-guidance-system/tile-disabled.png",
+      "tile_registration": {
+        "canvas": [
+          144,
+          160
+        ],
+        "legacy_drawn_box": [
+          8,
+          1,
+          137,
+          157
+        ],
+        "fit": "contain; preserve model proportions"
+      },
+      "hires": "gallery/media/ui/scitek/missile-guidance-system/tile-4x.png",
+      "studio_render": "gallery/media/ui/scitek/missile-guidance-system/solid.png",
+      "blend": "sources/ui/scitek/missile-guidance-system/missile-guidance-system.blend",
+      "glb": "sources/ui/scitek/missile-guidance-system/missile-guidance-system.glb",
+      "readme": "sources/ui/scitek/missile-guidance-system/README.md",
+      "gallery_views": [
+        {
+          "label": "Full technical information animation \u2014 423 frames and three component zooms",
+          "image": "gallery/media/ui/scitek/missile-guidance-system/information-087.png",
+          "video": "gallery/media/ui/scitek/missile-guidance-system/information.webm",
+          "blend": "sources/ui/scitek/missile-guidance-system/missile-guidance-system-information.blend",
+          "glb": "sources/ui/scitek/missile-guidance-system/missile-guidance-system-information.glb"
+        },
+        {
+          "label": "Solid tile/detail and preview rotation",
+          "image": "gallery/media/ui/scitek/missile-guidance-system/solid.png",
+          "video": "gallery/media/ui/scitek/missile-guidance-system/preview.webm",
+          "blend": "sources/ui/scitek/missile-guidance-system/missile-guidance-system.blend",
+          "glb": "sources/ui/scitek/missile-guidance-system/missile-guidance-system.glb"
+        },
+        {
+          "label": "Green technical wireframe",
+          "image": "gallery/media/ui/scitek/missile-guidance-system/wireframe.png",
+          "blend": "sources/ui/scitek/missile-guidance-system/missile-guidance-system.blend",
+          "glb": "sources/ui/scitek/missile-guidance-system/missile-guidance-system-wireframe.glb"
+        },
+        {
+          "label": "Wireframe closeup: holographic-sphere",
+          "image": "gallery/media/ui/scitek/missile-guidance-system/highlight-holographic-sphere.png",
+          "blend": "sources/ui/scitek/missile-guidance-system/missile-guidance-system.blend",
+          "glb": "sources/ui/scitek/missile-guidance-system/missile-guidance-system-highlight-holographic-sphere.glb"
+        },
+        {
+          "label": "Wireframe closeup: targeting-io",
+          "image": "gallery/media/ui/scitek/missile-guidance-system/highlight-targeting-io.png",
+          "blend": "sources/ui/scitek/missile-guidance-system/missile-guidance-system.blend",
+          "glb": "sources/ui/scitek/missile-guidance-system/missile-guidance-system-highlight-targeting-io.glb"
+        },
+        {
+          "label": "Wireframe closeup: armoured-computer-casing",
+          "image": "gallery/media/ui/scitek/missile-guidance-system/highlight-armoured-computer-casing.png",
+          "blend": "sources/ui/scitek/missile-guidance-system/missile-guidance-system.blend",
+          "glb": "sources/ui/scitek/missile-guidance-system/missile-guidance-system-highlight-armoured-computer-casing.glb"
+        }
+      ],
+      "information_phases": [
+        {
+          "component": "holographic-sphere",
+          "first_legacy_frame": 29,
+          "last_legacy_frame": 139,
+          "highlight_glb": "missile-guidance-system-highlight-holographic-sphere.glb",
+          "closeup_camera": [
+            0.0,
+            -13.449999809265137,
+            0.1499999314546585
+          ],
+          "target": [
+            0.0,
+            -1.4500000476837158,
+            -6.338151337104136e-08
+          ],
+          "local_target": [
+            0.0,
+            0.0,
+            1.4500000476837158
+          ],
+          "closeup_rotation_euler": [
+            1.5707963705062866,
+            0.0,
+            0.0
+          ],
+          "ortho_scale": 2.95
+        },
+        {
+          "component": "targeting-io",
+          "first_legacy_frame": 170,
+          "last_legacy_frame": 280,
+          "highlight_glb": "missile-guidance-system-highlight-targeting-io.glb",
+          "closeup_camera": [
+            0.0,
+            -12.831686019897461,
+            1.3377704620361328
+          ],
+          "target": [
+            0.0,
+            -0.8316859006881714,
+            1.1877704858779907
+          ],
+          "local_target": [
+            0.0,
+            0.0,
+            1.4500000476837158
+          ],
+          "closeup_rotation_euler": [
+            0.6108652353286743,
+            0.0,
+            0.0
+          ],
+          "ortho_scale": 2.95
+        },
+        {
+          "component": "armoured-computer-casing",
+          "first_legacy_frame": 311,
+          "last_legacy_frame": 421,
+          "highlight_glb": "missile-guidance-system-highlight-armoured-computer-casing.glb",
+          "closeup_camera": [
+            0.0,
+            -12.100000381469727,
+            0.7999999523162842
+          ],
+          "target": [
+            0.0,
+            -0.10000000149011612,
+            0.6499999761581421
+          ],
+          "local_target": [
+            0.0,
+            -0.10000000149011612,
+            0.6499999761581421
+          ],
+          "closeup_rotation_euler": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "ortho_scale": 2.6500000953674316
+        }
+      ],
+      "information_animation": {
+        "blend": "sources/ui/scitek/missile-guidance-system/missile-guidance-system-information.blend",
+        "glb": "sources/ui/scitek/missile-guidance-system/missile-guidance-system-information.glb",
+        "timeline": "sources/ui/scitek/missile-guidance-system/information-timeline.json",
+        "fps": 15,
+        "frame_count": 423,
+        "root": "GuidanceRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "material_contract": "Apply explicit timeline material selection and orthographic scale in addition to node rotation."
+      },
+      "status": "Model, preview, wire/highlight variants and complete authored information animation verified; game integration pending",
+      "solid_preview_camera": {
+        "position": [
+          -4.0,
+          -10.0,
+          3.799999952316284
+        ],
+        "rotation_euler": [
+          1.3383156061172485,
+          -1.91150650863392e-09,
+          -0.38050633668899536
+        ],
+        "ortho_scale": 2.950000047683716,
+        "resolution": [
+          576,
+          640
+        ]
+      },
+      "solid_animation": {
+        "type": "root-turntable",
+        "root": "GuidanceRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "frame_count": 60,
+        "fps": 15,
+        "loop_closure_frame": 61
+      },
+      "material_contract": "Holographic globe retains alphaMode BLEND/base alpha0.72 and optional KHR_materials_transmission0.18. Six explicit violet core-region materials and40 geometric wear meshes survive export; Blender procedural noise is not baked."
     }
   ]
 }
