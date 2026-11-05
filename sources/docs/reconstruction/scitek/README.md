@@ -29,7 +29,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 7 | scitek:construction-droids | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 8 | scitek:deflector | Existing PH10 Deflector meshes, UVs and wear preserved | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 9 | scitek:fleet-battleship | Existing 35 ship meshes preserved; research probe and wingtip housings added | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
-| 10 | scitek:gravity-nullifier | terran:gravity-nullifier | Pending |
+| 10 | scitek:gravity-nullifier | PB12 orb geometry reused; open base and four sensors authored | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 11 | scitek:hi-energy-power-stores | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 12 | scitek:improved-sensors | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 13 | scitek:mega-missile | openfa:mega | Pending |

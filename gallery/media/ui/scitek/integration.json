@@ -4759,6 +4759,137 @@
         "material_contract": "Apply timeline hue/caption and orthographic scale independently."
       },
       "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending"
+    },
+    {
+      "id": "scitek:gravity-nullifier",
+      "name": "Sci-Tek Gravity Nullifier",
+      "binding": "openfa:presentation/profile/research/10",
+      "legacy_index": 10,
+      "native": "gallery/media/ui/scitek/gravity-nullifier/tile-native.png",
+      "disabled": "gallery/media/ui/scitek/gravity-nullifier/tile-disabled.png",
+      "hires": "gallery/media/ui/scitek/gravity-nullifier/tile-4x.png",
+      "studio_render": "gallery/media/ui/scitek/gravity-nullifier/solid.png",
+      "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier.blend",
+      "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier.glb",
+      "readme": "sources/ui/scitek/gravity-nullifier/README.md",
+      "tile_registration": {
+        "canvas": [
+          144,
+          160
+        ],
+        "legacy_drawn_box": [
+          8,
+          22,
+          135,
+          146
+        ],
+        "fit": "contain"
+      },
+      "gallery_views": [
+        {
+          "label": "Full technical information animation - 423 frames and three zooms",
+          "image": "gallery/media/ui/scitek/gravity-nullifier/information-087.png",
+          "video": "gallery/media/ui/scitek/gravity-nullifier/information.webm",
+          "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-information.blend",
+          "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-information.glb"
+        },
+        {
+          "label": "Solid preview rotation",
+          "image": "gallery/media/ui/scitek/gravity-nullifier/solid.png",
+          "video": "gallery/media/ui/scitek/gravity-nullifier/preview.webm",
+          "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier.blend",
+          "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier.glb"
+        },
+        {
+          "label": "Whole assembly wireframe",
+          "image": "gallery/media/ui/scitek/gravity-nullifier/wireframe.png",
+          "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier.blend",
+          "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-wireframe.glb"
+        },
+        {
+          "label": "Technical closeup: central-gravitic-reactor",
+          "image": "gallery/media/ui/scitek/gravity-nullifier/highlight-central-gravitic-reactor.png",
+          "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-highlight-central-gravitic-reactor.glb",
+          "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-information.blend"
+        },
+        {
+          "label": "Technical closeup: fixed-shaped-base",
+          "image": "gallery/media/ui/scitek/gravity-nullifier/highlight-fixed-shaped-base.png",
+          "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-highlight-fixed-shaped-base.glb",
+          "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-information.blend"
+        },
+        {
+          "label": "Technical closeup: cardinal-orientation-sensors",
+          "image": "gallery/media/ui/scitek/gravity-nullifier/highlight-cardinal-orientation-sensors.png",
+          "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-highlight-cardinal-orientation-sensors.glb",
+          "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-information.blend"
+        }
+      ],
+      "information_phases": [
+        {
+          "component": "central-gravitic-reactor",
+          "first_legacy_frame": 29,
+          "last_legacy_frame": 139,
+          "local_target": [
+            0,
+            0,
+            1.35
+          ],
+          "closeup_rotation_euler": [
+            0,
+            0,
+            0
+          ],
+          "ortho_scale": 2.4
+        },
+        {
+          "component": "fixed-shaped-base",
+          "first_legacy_frame": 170,
+          "last_legacy_frame": 280,
+          "local_target": [
+            0,
+            0,
+            0.12
+          ],
+          "closeup_rotation_euler": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "ortho_scale": 3.2
+        },
+        {
+          "component": "cardinal-orientation-sensors",
+          "first_legacy_frame": 311,
+          "last_legacy_frame": 421,
+          "local_target": [
+            0,
+            -1.1,
+            0.15
+          ],
+          "closeup_rotation_euler": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "ortho_scale": 0.25
+        }
+      ],
+      "information_animation": {
+        "blend": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-information.blend",
+        "glb": "sources/ui/scitek/gravity-nullifier/gravity-nullifier-information.glb",
+        "timeline": "sources/ui/scitek/gravity-nullifier/information-timeline.json",
+        "fps": 15,
+        "frame_count": 423,
+        "root": "NullifierResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "material_contract": "Apply timeline hue/caption and orthographic scale independently."
+      },
+      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending"
     }
   ]
 }
