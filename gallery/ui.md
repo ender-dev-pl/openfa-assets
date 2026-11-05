@@ -232,3 +232,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Asteroid Engines](media/ui/scitek/asteroid-engines/solid.png)
 
 [Full technical animation](media/ui/scitek/asteroid-engines/information.webm) - [Source and integration](../sources/ui/scitek/asteroid-engines/README.md).
+
+### Deflector
+
+![Deflector](media/ui/scitek/deflector/solid.png)
+
+[Full technical animation](media/ui/scitek/deflector/information.webm) - [Source and integration](../sources/ui/scitek/deflector/README.md).
