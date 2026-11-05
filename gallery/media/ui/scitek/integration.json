@@ -5068,8 +5068,8 @@
       "disabled": "gallery/media/ui/scitek/mega-missile/tile-disabled.png",
       "hires": "gallery/media/ui/scitek/mega-missile/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/mega-missile/solid.png",
-      "blend": "sources/ui/scitek/mega-missile/mega-missile.blend",
-      "glb": "sources/ui/scitek/mega-missile/mega-missile.glb",
+      "blend": "sources/objects/terran/mega-missile/refined/model.blend",
+      "glb": "sources/objects/terran/mega-missile/refined/model.glb",
       "readme": "sources/ui/scitek/mega-missile/README.md",
       "tile_registration": {
         "canvas": [
@@ -5096,13 +5096,13 @@
           "label": "Solid preview rotation",
           "image": "gallery/media/ui/scitek/mega-missile/solid.png",
           "video": "gallery/media/ui/scitek/mega-missile/preview.webm",
-          "blend": "sources/ui/scitek/mega-missile/mega-missile.blend",
-          "glb": "sources/ui/scitek/mega-missile/mega-missile.glb"
+          "blend": "sources/objects/terran/mega-missile/refined/model.blend",
+          "glb": "sources/objects/terran/mega-missile/refined/model.glb"
         },
         {
           "label": "Whole assembly wireframe",
           "image": "gallery/media/ui/scitek/mega-missile/wireframe.png",
-          "blend": "sources/ui/scitek/mega-missile/mega-missile.blend",
+          "blend": "sources/objects/terran/mega-missile/refined/model.blend",
           "glb": "sources/ui/scitek/mega-missile/mega-missile-wireframe.glb"
         },
         {
@@ -5188,7 +5188,36 @@
         ],
         "material_contract": "Apply timeline hue/caption and orthographic scale independently."
       },
-      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending"
+      "status": "Shared65-mesh Mega, lower mechanism refined against ST13; native/import verified, client check pending",
+      "shared_object": {
+        "id": "openfa:mega",
+        "blend": "sources/objects/terran/mega-missile/refined/model.blend",
+        "glb": "sources/objects/terran/mega-missile/refined/model.glb",
+        "root": "MegaResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "gameplay_pose_frame": 1,
+        "disable_presentation_rotation_in_gameplay": true
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/mega-missile/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/mega-missile/mega-missile-information.glb",
+        "technical_timeline": "sources/ui/scitek/mega-missile/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical research solid and baked variants authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "All35,719 diagram segments are actual evaluated physical edges; four visible chambers and lower-neck correction shared by all consumers.",
+        "verification": "gallery/media/ui/scitek/mega-missile/shared-geometry-verification.json"
+      }
     },
     {
       "id": "scitek:nuclear-missile",

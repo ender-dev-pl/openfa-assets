@@ -118,6 +118,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/missiles/terran/mega/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/terran/mega/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Mega Missile](../gallery/media/objects/terran/mega-missile/refined/render.png)
+
+[Blend](../sources/objects/terran/mega-missile/refined/model.blend) · [GLB](../sources/objects/terran/mega-missile/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/mega-missile/refined/animation-00.webm)
+
 ## Stasis Missile
 
 `openfa:stasis`
