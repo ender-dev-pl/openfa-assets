@@ -820,6 +820,188 @@
         "material_contract": "Apply explicit timeline material selection and orthographic scale in addition to node rotation."
       },
       "status": "Model, preview, wire/highlight variants and complete authored information animation verified; game integration pending"
+    },
+    {
+      "id": "scitek:building-armour",
+      "name": "Sci-Tek Building Armour",
+      "binding": "openfa:presentation/profile/research/06",
+      "legacy_index": 6,
+      "native": "gallery/media/ui/scitek/building-armour/tile-native.png",
+      "disabled": "gallery/media/ui/scitek/building-armour/tile-disabled.png",
+      "tile_registration": {
+        "canvas": [
+          144,
+          160
+        ],
+        "legacy_drawn_box": [
+          0,
+          0,
+          144,
+          160
+        ],
+        "fit": "Fixed legacy canvas; no recrop or stretching"
+      },
+      "hires": "gallery/media/ui/scitek/building-armour/tile-4x.png",
+      "studio_render": "gallery/media/ui/scitek/building-armour/solid.png",
+      "blend": "sources/ui/scitek/building-armour/building-armour.blend",
+      "glb": "sources/ui/scitek/building-armour/building-armour.glb",
+      "readme": "sources/ui/scitek/building-armour/README.md",
+      "gallery_views": [
+        {
+          "label": "Full technical information animation \u2014 423 frames and three component zooms",
+          "image": "gallery/media/ui/scitek/building-armour/information-087.png",
+          "video": "gallery/media/ui/scitek/building-armour/information.webm",
+          "blend": "sources/ui/scitek/building-armour/building-armour-information.blend",
+          "glb": "sources/ui/scitek/building-armour/building-armour-information.glb"
+        },
+        {
+          "label": "Solid tile/detail and preview rotation",
+          "image": "gallery/media/ui/scitek/building-armour/solid.png",
+          "video": "gallery/media/ui/scitek/building-armour/preview.webm",
+          "blend": "sources/ui/scitek/building-armour/building-armour.blend",
+          "glb": "sources/ui/scitek/building-armour/building-armour.glb"
+        },
+        {
+          "label": "Green technical wireframe",
+          "image": "gallery/media/ui/scitek/building-armour/wireframe.png",
+          "blend": "sources/ui/scitek/building-armour/building-armour.blend",
+          "glb": "sources/ui/scitek/building-armour/building-armour-wireframe.glb"
+        },
+        {
+          "label": "Wireframe closeup: ionisers",
+          "image": "gallery/media/ui/scitek/building-armour/highlight-ionisers.png",
+          "blend": "sources/ui/scitek/building-armour/building-armour.blend",
+          "glb": "sources/ui/scitek/building-armour/building-armour-highlight-ionisers.glb"
+        },
+        {
+          "label": "Wireframe closeup: thermal-transducers",
+          "image": "gallery/media/ui/scitek/building-armour/highlight-thermal-transducers.png",
+          "blend": "sources/ui/scitek/building-armour/building-armour.blend",
+          "glb": "sources/ui/scitek/building-armour/building-armour-highlight-thermal-transducers.glb"
+        },
+        {
+          "label": "Wireframe closeup: damage-monitor",
+          "image": "gallery/media/ui/scitek/building-armour/highlight-damage-monitor.png",
+          "blend": "sources/ui/scitek/building-armour/building-armour.blend",
+          "glb": "sources/ui/scitek/building-armour/building-armour-highlight-damage-monitor.glb"
+        }
+      ],
+      "information_phases": [
+        {
+          "component": "ionisers",
+          "first_legacy_frame": 29,
+          "last_legacy_frame": 139,
+          "highlight_glb": "building-armour-highlight-ionisers.glb",
+          "closeup_camera": [
+            0.7900000214576721,
+            -12.0,
+            2.8500001430511475
+          ],
+          "target": [
+            0.7900000214576721,
+            0.0,
+            2.700000047683716
+          ],
+          "local_target": [
+            0.7900000214576721,
+            0.0,
+            2.700000047683716
+          ],
+          "closeup_rotation_euler": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "ortho_scale": 0.7200000286102295
+        },
+        {
+          "component": "thermal-transducers",
+          "first_legacy_frame": 170,
+          "last_legacy_frame": 280,
+          "highlight_glb": "building-armour-highlight-thermal-transducers.glb",
+          "closeup_camera": [
+            2.3604149745892755e-08,
+            -12.270000457763672,
+            2.1500000953674316
+          ],
+          "target": [
+            2.3604149745892755e-08,
+            -0.27000001072883606,
+            2.0
+          ],
+          "local_target": [
+            0.0,
+            0.27000001072883606,
+            2.0
+          ],
+          "closeup_rotation_euler": [
+            0.0,
+            0.0,
+            3.1415927410125732
+          ],
+          "ortho_scale": 1.9500000476837158
+        },
+        {
+          "component": "damage-monitor",
+          "first_legacy_frame": 311,
+          "last_legacy_frame": 421,
+          "highlight_glb": "building-armour-highlight-damage-monitor.glb",
+          "closeup_camera": [
+            0.0,
+            -12.34000015258789,
+            2.1500000953674316
+          ],
+          "target": [
+            0.0,
+            -0.3400000035762787,
+            2.0
+          ],
+          "local_target": [
+            0.0,
+            -0.3400000035762787,
+            2.0
+          ],
+          "closeup_rotation_euler": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "ortho_scale": 2.25
+        }
+      ],
+      "information_animation": {
+        "blend": "sources/ui/scitek/building-armour/building-armour-information.blend",
+        "glb": "sources/ui/scitek/building-armour/building-armour-information.glb",
+        "timeline": "sources/ui/scitek/building-armour/information-timeline.json",
+        "fps": 15,
+        "frame_count": 423,
+        "root": "ArmourRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "material_contract": "Apply explicit timeline material selection and orthographic scale in addition to node rotation."
+      },
+      "status": "Model, preview, wire/highlight variants and complete authored information animation verified; game integration pending",
+      "solid_preview_camera": {
+        "position": [
+          0.0,
+          -10.0,
+          2.0
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 3.6500000953674316,
+        "resolution": [
+          576,
+          640
+        ],
+        "framing": "Fixed authored source-inspired canvas; blue fields intentionally extend beyond this view"
+      }
     }
   ]
 }

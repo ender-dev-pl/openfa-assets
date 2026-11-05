@@ -166,3 +166,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Mk2 Deep Bore Mine research assembly](media/ui/scitek/mk2-deep-bore-mine/solid.png)
 
 [Full technical animation](media/ui/scitek/mk2-deep-bore-mine/information.webm) · [Source and integration contract](../sources/ui/scitek/mk2-deep-bore-mine/README.md).
+
+### Building Armour
+
+![Authored Building Armour research assembly](media/ui/scitek/building-armour/solid.png)
+
+[Full technical animation](media/ui/scitek/building-armour/information.webm) · [Source and integration contract](../sources/ui/scitek/building-armour/README.md).
