@@ -1555,11 +1555,11 @@
         "frame_count": 423,
         "root": "MissileBayRig",
         "root_scale": [
-          1.18,
-          1,
-          1
+          1.1799999475479126,
+          1.0,
+          1.0
         ],
-        "material_contract": "Apply timeline material selection and orthographic scale alongside explicit Root/camera pose.",
+        "material_contract": "Source red activity and caption visibility are independent; apply highlight_component and caption_component, explicit camera/root pose and ortho scale.",
         "material_clock_status": "Correction required: rendered information movies currently approximate material selection with caption windows; source red activity differs during flashes and tail holds.",
         "material_clock_audit": "sources/docs/reconstruction/scitek/material-clocks.json"
       },
@@ -1638,7 +1638,12 @@
         "shared_counterpart_required": false,
         "package_rule": "One dedicated presentation solid plus information GLB/timeline; do not replace whole buildings/ships/projectiles or add separately simulated content.",
         "evidence": "sources/docs/reconstruction/scitek/model-relationships.json"
-      }
+      },
+      "technical_omitted_physical_nodes": [
+        "Lifted missile body",
+        "Lifted missile nose"
+      ],
+      "technical_geometry_contract": "Transient carried projectile is colour-only; all400 loading-mechanism diagram segments derive from current hardware. Preserve180-frame solid choreography and Root scale[1.18,1,1]."
     },
     {
       "id": "scitek:missile-guidance-system",

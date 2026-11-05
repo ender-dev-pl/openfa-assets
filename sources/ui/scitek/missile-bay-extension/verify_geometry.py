@@ -18,9 +18,12 @@ for name in sum(model['components'].values(),[]):
 rig=json.loads((o/'solid-animation-timeline.json').read_text());assert rig['frame_count']==180 and len(rig['timeline'])==180 and not rig['body_turntable']
 assert rig['source_blend_sha256']==hashlib.sha256((o/'missile-bay-extension.blend').read_bytes()).hexdigest()
 assert rig['source_glb_sha256']==hashlib.sha256((o/'missile-bay-extension.glb').read_bytes()).hexdigest()
-assert len(rig['animated_mesh_nodes'])==5
+expected_moving={'Hydraulic transport lower bed','Moving missile transfer carriage','Carriage red service light','Carriage red service light.001','Lifted missile body','Lifted missile nose'}
+assert set(rig['animated_mesh_nodes'])==expected_moving
+assert bpy.data.objects['Hydraulic transport lower bed'].parent.name=='MissileFeederCradle'
+assert all(bpy.data.objects[n].parent.name=='MissileTransferPivot' for n in ['Lifted missile body','Lifted missile nose'])
 assert len([n for n in model['components']['revolving-storage-rack'] if n.startswith('Stored missile body')])==20
 raw=(o/'missile-bay-extension.glb').read_bytes();size=struct.unpack_from('<I',raw,12)[0];doc=json.loads(raw[20:20+size]);assert len(doc['animations'])==1
 camera=dict(position=list(s.camera.location),rotation_euler=list(s.camera.rotation_euler),ortho_scale=s.camera.data.ortho_scale,resolution=[s.render.resolution_x,s.render.resolution_y])
-(o/'geometry-verification.json').write_text(json.dumps(dict(closed_hardware_meshes=closed,stored_missiles=20,animated_meshes=5,preview_frames=180,body_turntable=False,single_animation_clip=True,solid_camera=camera,source_blend_sha256=rig['source_blend_sha256']),indent=2)+'\n')
+(o/'geometry-verification.json').write_text(json.dumps(dict(closed_hardware_meshes=closed,stored_missiles=20,animated_meshes=len(expected_moving),separate_feeder_and_projectile_ownership=True,preview_frames=180,body_turntable=False,single_animation_clip=True,solid_camera=camera,source_blend_sha256=rig['source_blend_sha256']),indent=2)+'\n')
 print('MISSILE_BAY_GEOMETRY_VERIFIED',closed)
