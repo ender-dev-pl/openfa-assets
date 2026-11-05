@@ -328,3 +328,9 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Shield x40](media/ui/scitek/shield-x40/solid.png)
 
 [Technical animation](media/ui/scitek/shield-x40/information.webm) - [Shared source and integration](../sources/ui/scitek/shield-x40/README.md).
+
+### Shield x50
+
+![Shield x50](media/ui/scitek/shield-x50/solid.png)
+
+[Technical animation](media/ui/scitek/shield-x50/information.webm) - [Shared source and integration](../sources/ui/scitek/shield-x50/README.md).

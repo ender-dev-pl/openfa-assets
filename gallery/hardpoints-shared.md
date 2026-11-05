@@ -169,3 +169,11 @@
 ![Shield x50](../gallery/media/docs/assets/reconstruction/hardpoints/shield-x50/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/hardpoints/shield-x50/model.blend) · [GLB](../sources/docs/assets/reconstruction/hardpoints/shield-x50/model.glb)
+
+**Additional iteration — shared-refined**
+
+![Shield x50](../gallery/media/objects/shared/shield-x50/refined/render.png)
+
+[Blend](../sources/objects/shared/shield-x50/refined/model.blend) · [GLB](../sources/objects/shared/shield-x50/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/shared/shield-x50/refined/animation-00.webm)
