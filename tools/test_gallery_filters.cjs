@@ -5,6 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
+const checkMedia = !process.argv.includes('--filters-only');
 const page = fs.readFileSync(path.join(root, 'gallery/index.html'), 'utf8');
 const models = JSON.parse(fs.readFileSync(path.join(root, 'gallery/catalogue.json'), 'utf8'));
 const supplemental = JSON.parse(fs.readFileSync(path.join(root, 'gallery/supplemental-catalogue.json'), 'utf8'));
@@ -64,6 +65,11 @@ for (const race of ['', ...new Set(inventory.map(row => row.culture))]) {
     combinations++;
   }
 }
+if (inventory.some(row => row.category === 'trading-goods')) {
+  app.change('shared', 'trading-goods'); assert.equal(app.visible().length, 101);
+  app.change('', 'trading-goods', 'TI001'); assert.equal(app.visible().length, 1);
+  app.change('', 'trading-goods', 'Beers'); assert.equal(app.visible().length, 1);
+}
 app.change('terran', 'ships', '  combat   eagle  ');
 assert.equal(app.visible().length, 1);
 assert.match(app.visible()[0].dataset.search, /combat eagle/);
@@ -96,14 +102,16 @@ const animatedStudies = models.flatMap(row => row.studies).filter(study => study
 const extraVideos = supplemental.flatMap(row => row.category === 'scaffolds' ? [row.views.at(-1)] : [row.views[0]]).filter(view => view.video);
 for (const view of extraVideos) {
   assert.ok(page.includes(view.video));
-  assert.ok(fs.existsSync(path.join(root, view.video)));
+  if (checkMedia) assert.ok(fs.existsSync(path.join(root, view.video)));
 }
 assert.equal([...page.matchAll(/<video controls loop muted playsinline preload="none"/g)].length, animatedStudies.length + extraVideos.length);
 for (const study of animatedStudies) {
   for (const clip of study.animations) {
     assert.ok(page.includes(clip.video), `Missing playable clip ${clip.video}`);
-    assert.ok(fs.existsSync(path.join(root, clip.video)));
+    if (checkMedia) assert.ok(fs.existsSync(path.join(root, clip.video)));
     assert.ok(clip.distinct_pose_count > 1);
   }
 }
 console.log(`GALLERY_PLAYABLE_PREVIEWS_OK ${animatedStudies.length} animated studies; controls, local clips, lazy preload and hidden-video pause`);
+
+if (!checkMedia) console.log('PRESERVED_MEDIA_EXISTENCE_SKIPPED (sparse checkout); DOM/video behavior still checked');

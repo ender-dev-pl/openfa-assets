@@ -1,4 +1,5 @@
 """Index and thumbnail existing renders; never invoke model generators or refinement."""
+import argparse
 import collections
 import html
 import json
@@ -6,12 +7,18 @@ from io import BytesIO
 from pathlib import Path
 from urllib.parse import quote
 from PIL import Image, ImageDraw, ImageOps
-from gallery_animation_assets import animation_previews
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORY_LABELS = {'buildings': 'Buildings', 'ships': 'Ships / vehicles',
                    'hardpoints': 'Hardpoints', 'missiles': 'Missiles / rockets',
-                   'ui': 'UI / HUD / menu', 'scaffolds': 'Scaffolds'}
+                   'ui': 'UI / HUD / menu', 'scaffolds': 'Scaffolds',
+                   'trading-goods': 'Trading goods'}
+
+
+def write_page(path, text):
+    previous=path.read_bytes() if path.exists() else b''
+    newline='\r\n' if b'\r\n' in previous else '\n'
+    path.write_bytes(text.replace('\r\n','\n').replace('\n',newline).encode('utf-8'))
 
 
 def culture_label(value):
@@ -44,7 +51,8 @@ def index_table(groups, cultures, categories, interactive=False):
     return '<table><caption>Choose a race, asset type or a count to filter the catalogue.</caption><thead><tr>'+headings+'</tr></thead><tbody>'+''.join(body)+'</tbody></table>'
 
 
-def main():
+def inventory_records():
+    from gallery_animation_assets import animation_previews
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text(encoding='utf-8'))
     rows = []
     sheets = collections.defaultdict(list)
@@ -73,9 +81,21 @@ def main():
                    culture=record['culture'], studies=studies)
         rows.append(row)
         sheets[(row['category'], row['culture'])].append(row)
+    return rows
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--from-catalogue',action='store_true',help='Preserve indexed baseline studies without requiring their media locally; update trading goods and the shared index.')
+    args=parser.parse_args()
+    rows=json.loads((ROOT/'gallery/catalogue.json').read_text()) if args.from_catalogue else inventory_records()
+    from gallery_trading_goods import trading_records
+    rows=[r for r in rows if r['category']!='trading-goods']+trading_records(ROOT)
+    sheets=collections.defaultdict(list)
+    for row in rows:sheets[(row['category'],row['culture'])].append(row)
     out = ROOT / 'gallery'
     (out / 'sheets').mkdir(exist_ok=True)
-    (out / 'catalogue.json').write_text(json.dumps(rows, indent=2)+'\n', encoding='utf-8')
+    write_page(out / 'catalogue.json',json.dumps(rows, indent=2)+'\n')
     lines = ['# Model gallery', '', 'Existing authored studies only. First run and available refined stages are shown separately. '
              'A technical study is not final artistic acceptance.', '',
              '[Interactive catalogue](index.html) · [Machine-readable index](catalogue.json) · '
@@ -86,6 +106,11 @@ def main():
     lines += index_table(sheets, cultures, categories)
     for (category, culture), group in sorted(sheets.items()):
         slug = category+'-'+culture
+        if args.from_catalogue and category!='trading-goods':
+            lines += ['## '+category.title()+' / '+culture.title(), '',
+                      '[Browse '+str(len(group))+' definitions]('+slug+'.md)', '',
+                      '!['+slug+'](sheets/'+slug+'.jpg)', '']
+            continue
         page = ['# '+category.title()+' / '+culture.title(), '', '[All groups](README.md)', '']
         cells = []
         for row in group:
@@ -114,11 +139,11 @@ def main():
         target = out / 'sheets' / (slug+'.jpg')
         if not target.exists() or target.read_bytes() != encoded.getvalue():
             target.write_bytes(encoded.getvalue())
-        (out / (slug+'.md')).write_text('\n'.join(page).rstrip()+'\n', encoding='utf-8')
+        write_page(out / (slug+'.md'),'\n'.join(page).rstrip()+'\n')
         lines += ['## '+category.title()+' / '+culture.title(), '',
                   '[Browse '+str(len(group))+' definitions]('+slug+'.md)', '',
                   '!['+slug+'](sheets/'+slug+'.jpg)', '']
-    (out / 'README.md').write_text('\n'.join(lines).rstrip()+'\n', encoding='utf-8')
+    write_page(out / 'README.md','\n'.join(lines).rstrip()+'\n')
     cards = []
     for row in rows:
         images = []
@@ -139,8 +164,8 @@ def main():
         search = ' '.join([row['name'],row['id'],row['category'],row['culture']]+[s['stage'] for s in row['studies']]).lower()
         cards.append('<article data-search="'+html.escape(search, quote=True)+'" data-race="'+html.escape(row['culture'],quote=True)+'" data-type="'+html.escape(row['category'],quote=True)+'"><h2>'+html.escape(row['name'])+'</h2><p>'+html.escape(CATEGORY_LABELS[row['category']]+' / '+culture_label(row['culture'])+' / '+row['id'])+'</p><div class="variants">'+''.join(images)+'</div></article>')
     from gallery_supplemental import supplemental_records, supplemental_cards
-    extra = supplemental_records()
-    (out / 'supplemental-catalogue.json').write_text(json.dumps(extra, indent=2)+'\n', encoding='utf-8')
+    extra = json.loads((out/'supplemental-catalogue.json').read_text()) if args.from_catalogue else supplemental_records()
+    write_page(out / 'supplemental-catalogue.json',json.dumps(extra, indent=2)+'\n')
     cards += supplemental_cards(extra)
     index_groups = collections.defaultdict(list, {k:list(v) for k,v in sheets.items()})
     for row in extra:
@@ -151,9 +176,10 @@ def main():
     race_options = ''.join('<option value="'+c+'">'+html.escape(culture_label(c))+'</option>' for c in cultures)
     type_options = ''.join('<option value="'+c+'">'+html.escape(CATEGORY_LABELS[c])+'</option>' for c in categories)
     page = template.replace('{{CARDS}}', ''.join(cards)).replace('{{RACES}}', race_options).replace('{{TYPES}}', type_options).replace('{{INDEX}}', index_table(index_groups,cultures,categories,interactive=True)).replace('{{COUNT}}',str(len(rows)+len(extra)))
-    (out / 'index.html').write_text(page, encoding='utf-8')
-    from build_ui_gallery import build
-    build()
+    write_page(out / 'index.html',page)
+    if not args.from_catalogue:
+        from build_ui_gallery import build
+        build()
     print('GALLERY_OK', len(rows), sum(len(r['studies']) for r in rows), len(sheets))
 
 

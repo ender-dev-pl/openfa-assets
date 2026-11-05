@@ -1,8 +1,16 @@
+> New user authorization: render all 101 coloured PNGs and integrate them into the shared asset gallery. Gallery PNGs are separate from the earlier legacy-size compact/detail image targets. Model sources remain preserved.
+
 # Trading goods — persistent coloured-model reconstruction
 
 User objective: reconstruct **all coloured editable trading-good models**, one after another, reusing related finished models/construction families where useful. **Final image generation is deferred.** This supersedes the initial image-first plan. Tracking: [issue #214](https://github.com/ender-dev-pl/openfa-assets/issues/214). Branch: `feat/trading-goods-reconstruction`, based on `origin/main`; cinematic work is separate.
 
 [coverage.json](coverage.json) is the machine-readable ledger; [ITEMS.md](ITEMS.md) lists model progress. Track model completion independently from compact/detail image targets. The catalogue has 101 identities: 68 ordinary goods, five treatments, four anti-personnel-virus containers, ten ores, thirteen Terran missiles and one information bundle. Identities 0–100 map to `_TRADE/TI001`–`TI101`.
+
+## Gallery PNG checkpoint
+
+All 101 colour PNGs are now rendered at 768×576 with transparency and linked in the shared asset gallery. [Browse trading goods](../../gallery/trading-goods-shared.md), or open the [interactive filter](../../gallery/index.html#type=trading-goods). Model sources remain unchanged; render journals bind image hashes to native/renderer hashes. PNG metadata is removed without changing decoded pixels. The newly requested material-refinement pass will preserve this first image set as an earlier iteration.
+
+`python tools/build_gallery.py --from-catalogue` rebuilds the shared index using preserved baseline catalogues, without requiring unrelated media to be materialized in a sparse checkout. Full checkouts retain the existing default builder behavior. `tools/verify_trading_gallery.py` checks PNG content, source hashes and gallery links.
 
 ## Current state
 
