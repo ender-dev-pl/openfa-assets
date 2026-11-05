@@ -262,3 +262,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Nuclear Missile](media/ui/scitek/nuclear-missile/solid.png)
 
 [Full technical animation](media/ui/scitek/nuclear-missile/information.webm) - [Source and integration](../sources/ui/scitek/nuclear-missile/README.md).
+
+### Ore Teleporter
+
+![Ore Teleporter](media/ui/scitek/ore-teleporter/solid.png)
+
+[Full technical animation](media/ui/scitek/ore-teleporter/information.webm) - [Source and integration](../sources/ui/scitek/ore-teleporter/README.md).
