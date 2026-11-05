@@ -48,3 +48,40 @@ def portrait_caption(text):
  o=T.caption(text);cam=T.SCENE.camera
  if cam.data.type=='ORTHO':o.data.size*=cam.data.ortho_scale/6.4;o.location.y=-cam.data.ortho_scale*(262/640)*.45
  return o
+
+def blast(name,loc,start,parent=None,size=1):
+ root=T.empty(name,loc,parent);orange=T.material(name+' orange',(1,.12,.006),worn=False,emit=3);hot=T.material(name+' hot',(1,.65,.12),worn=False,emit=4)
+ for i in range(7):
+  angle=i*2.4;T.ball(name+' lobe '+str(i),(.5*math.cos(angle),.4*math.sin(angle),.23*(i%3)),(.55,.48,.5),hot if i%3==0 else orange,root,1)
+ for n,s in [(start-1,.001),(start+1,size),(start+5,size*.75),(start+11,.001)]:T.key(root,'scale',n,(s,)*3)
+ return root
+
+def battle(info):
+ if info['id']=='I':
+  c=T.camera((16,-24,9),(0,0,3),45);T.stars(91);T.light('warship key',(-8,-10,12),3000,(.5,.6,.65),8);T.light('warship rim',(6,6,10),900,(.3,.4,.3),7);hull=T.material('worn warship green',(.035,.065,.045),.35,.65);dark=T.material('hull vents',(.003,.006,.005));steel=T.material('turret steel',(.09,.12,.13),.7,.4);ship=T.empty('capital ship',(0,0,3));verts=[]
+  for y,w,z in [(-5,.3,.1),(-4,1.3,.55),(-1,1.8,.8),(3,1.5,.65),(5,.85,.25)]:verts.extend([(-w,y,-.45),(w,y,-.45),(w,y,z),(-w,y,z)])
+  faces=[(0,3,2,1),(16,17,18,19)]
+  for j in range(4):
+   for k in range(4):faces.append((j*4+k,j*4+(k+1)%4,(j+1)*4+(k+1)%4,(j+1)*4+k))
+  T.polygon('capital ship hull',verts,faces,hull,ship)
+  for y in [-2.8,-1.8,-.8,.2,1.2,2.2]:
+   for side in [-1,1]:
+    w=1.3+(y+4)*.5/3 if y<=-1 else 1.8-(y+1)*.3/4
+    vent=T.cube('diagonal hull vent',(side*(w+.025),y,-.1),(.025,.28,.19),dark,ship,.01);vent.rotation_euler.x=-.55
+  for x in [-.65,.65]:
+   for y in [.4,1.4,2.4]:T.ball('dorsal turret',(x,y,.78),(.35,.36,.25),steel,ship);T.tube('turret barrel',(x,y,.9),(x,y-.75,1),.055,steel,ship)
+  for n,pos in [(792,(0,1,3)),(910,(0,0,3)),(957,(1,-2,3))]:T.key(ship,'location',n,pos)
+  for n in [868,890,939]:blast('hull impact '+str(n),(-1.5,-2,.25),n,ship,1.3)
+  fighter=T.empty('passing small attacker');T.cube('attacker fuselage',(0,0,0),(.3,2.5,.20),steel,fighter);T.polygon('attacker wings',[(-3,1,0),(0,-1,0),(3,1,0),(0,2,0)],[(0,1,2,3)],steel,fighter)
+  for n,pos in [(906,(-10,8,7)),(916,(0,-9,6)),(924,(18,-35,3))]:T.key(fighter,'location',n,pos)
+  for n,loc in [(792,(16,-24,9)),(916,(16,-24,9)),(917,(9,-14,6)),(957,(9,-14,6))]:T.key(c,'location',n,loc);T.key(c,'rotation_euler',n,(Vector((0,0,3))-Vector(loc)).to_track_quat('-Z','Y').to_euler())
+  for fc in c.animation_data.action.fcurves:
+   for k in fc.keyframe_points:k.interpolation='CONSTANT'
+ else:
+  T.camera((0,-15,2.2),(0,0,2.6),45);T.light('escape warm key',(-3,-3,9),1000,(1,.7,.4));ground=T.material('escape ground',(.09,.10,.025));T.cube('escape ground',(0,2,-.3),(18,18,.3),ground);rock=T.material('escape rock',(.10,.055,.10));T.ball('large broken rock',(5,8,4),(9,3,6),rock,sub=1);a=T.human('escaping figure',uniform=(.045,.09,.045),skin=(.31,.22,.15));cloud=blast('escape explosion',(3,6,2),960,size=5)
+  for n in range(959,978,2):
+   phase=(n-959)*.9;T.key(a['root'],'location',n,(0,(n-959)*.18,.25+.22*abs(math.sin(phase))))
+   for i,leg in enumerate(a['legs']):T.key(leg,'rotation_euler',n,(.7*math.sin(phase+i*math.pi),0,0))
+   for i,arm in enumerate(a['arms']):T.key(arm,'rotation_euler',n,(-.65*math.sin(phase+i*math.pi),0,0))
+
+BUILDERS['battle']=battle
