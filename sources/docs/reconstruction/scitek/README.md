@@ -63,3 +63,14 @@ The initial mapping left research30 unmapped. The existing supplemental `openfa:
 ### Tracker refinement and exact caption anchors
 
 The current Tracker corrects its cabinet aspect, tile placement, left upper data-bank assignment and isolated screw detail. [Current source](../../../ui/scitek/asteroid-tracker-refined/README.md). The original cabinet mounting position of the screw remains unresolved; no external mounting is invented. The caption-phase map binds all112 source descriptions to their actual start/mid/end displayed image updates, including Same holds. Anchor sheets are reviewed explicitly per subject, not inferred from the existence of the map.
+
+
+### Source material-clock correction - pending
+
+The exhaustive [material-clock audit](material-clocks.json) checks 15,794 timeline frames across all 36 research films. Every source VID chunk is checked against the original bytes, including the complete Fram/Same sequence. Red presence in source-bound original-codec PNG caches is measured separately from caption visibility. All 36 films differ from a caption-window-only material rule, by 15-47 frames per film. Lead-in flashes and final red holds must therefore be reconstructed independently of text visibility.
+
+The fifteen delivered authored presentations currently use the caption-window approximation for material hue. Their geometry, native/import checks and complete authored movies remain available, but exact source material-clock fidelity is pending correction. The audit and integration manifest explicitly flag this remaining work. Do not infer final source-clock acceptance from earlier movie/frame-count checks.
+
+The audit measures red on/off activity; it does not identify which semantic component is selected. Component transitions require subject-specific source review. In particular, ST04 has 425 frames rather than 423, and its extra image updates mean component identity must not be guessed solely from the 141-frame caption period. Its source tail retains a red base after the caption window ends.
+
+Reproduce the optional analysis using `sources/tools/evidence/audit_scitek_material_clocks.py ASSET_ROOT LEGACY_ROOT CACHE_ROOT OUTPUT`. Original reference pixels remain private; published data contains only state/count/hash metadata. Cache decoder provenance is retained; this audit does not re-execute the original codec.
