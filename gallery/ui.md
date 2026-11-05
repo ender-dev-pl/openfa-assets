@@ -202,3 +202,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Terminator research assembly](media/ui/scitek/terminator/solid.png)
 
 [Full technical animation](media/ui/scitek/terminator/information.webm) · [Source and integration contract](../sources/ui/scitek/terminator/README.md).
+
+### Turret Optimiser
+
+![Authored Turret Optimiser research assembly](media/ui/scitek/turret-optimiser/solid.png)
+
+[Full technical animation](media/ui/scitek/turret-optimiser/information.webm) · [Source and integration contract](../sources/ui/scitek/turret-optimiser/README.md).

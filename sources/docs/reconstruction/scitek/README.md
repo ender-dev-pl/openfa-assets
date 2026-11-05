@@ -50,7 +50,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 28 | scitek:static-inducer | openfa:static-inducer | Pending |
 | 29 | scitek:stasis-missile | openfa:stasis | Pending |
 | 30 | scitek:terminator | openfa:terminator presentation variant | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
-| 31 | scitek:turret-optimiser | **Missing** | Pending |
+| 31 | scitek:turret-optimiser | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 32 | scitek:virus-missile | openfa:virus | Pending |
 | 33 | scitek:warp-generator | openfa:warp-generator | Pending |
 | 34 | scitek:long-range-transmitter | **Missing** | Pending |
