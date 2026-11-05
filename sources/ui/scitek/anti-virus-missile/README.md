@@ -13,3 +13,14 @@ The separate 423-frame/15fps information Blend/GLB and information-timeline.json
 Validation covers all original mesh signatures, closed topology, exact technical-wire endpoint correspondence with source vertices, source-file preservation, four pods/four nozzles, root scale and clip targets, all sixty projected poses, loop closure, all static variants and independent animation poses, complete information rendering/import/reload and full movie encode/decode. Source-framing comparison is a coarse occupancy check and is not pixel-exact fidelity acceptance. Main game thread must perform actual OpenFA runtime/GPU integration checks.
 
 Build in Blender using build_anti_virus.py -- OUTPUT --base-blend BASE_BLEND, with geometry.py alongside it. render_preview.py and animate_information.py take INPUT_BLEND OUTPUT. --keyframes-only is a review subset, not delivery. Geometry/pose/state checks run in Blender. Device/raster/information/framing checks require Python/Pillow/FFmpeg; framing also needs private original-codec ST03 frames.
+
+
+## Independent source material and caption clocks
+
+The corrected information presentation uses material-clock.json rather than treating text visibility as red selection. All 423 source red activity states match: 336 red frames and 333 caption-visible frames. Lead-in flashes, green interruptions during captions and the final red nose hold are retained. Caption timing remains 29..139, 170..280 and 311..421; these intervals do not define the highlight state.
+
+Source-reviewed component transitions are decoded updates 0, 65 and 130 (timeline frames 0, 141 and 282). Source images at the adjacent red states verify payload, engine and nose identity; hashes and provenance are recorded in the clock file. The original-clock audit measures only red presence, so this separate semantic boundary review is required.
+
+The client must consume highlight_component for material hue and caption_component for text visibility independently. Use step transitions for hue; do not interpolate the red/green state. Every saved-scene frame and half-frame flash transition was checked. Full renders were compared with the source on/off clock at all 423 frames; 19 independent GLB samples cover every previous mismatch and the original closeup anchors. Camera/geometry remain authored approximations.
+
+Run verify_information.py OUTPUT [MATERIAL_CLOCK_FILE] with Pillow/FFmpeg and access to the registered global material-clock audit. Run verify_material_state.py -- OUTPUT MATERIAL_CLOCK_FILE in Blender before movie verification. The default clock path is alongside the verification script. The static model, colour turntable and other geometry variants are unchanged by this correction.

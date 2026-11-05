@@ -3822,7 +3822,7 @@
       "readme": "sources/ui/scitek/anti-virus-missile/README.md",
       "gallery_views": [
         {
-          "label": "Full technical information animation \u2014 423 frames and three component zooms",
+          "label": "Source-clock information animation - independent caption visibility and red flashes",
           "image": "gallery/media/ui/scitek/anti-virus-missile/information-087.png",
           "video": "gallery/media/ui/scitek/anti-virus-missile/information.webm",
           "blend": "sources/ui/scitek/anti-virus-missile/anti-virus-missile-information.blend",
@@ -3926,8 +3926,13 @@
           1
         ],
         "material_contract": "Apply explicit timeline material selection and orthographic scale in addition to node rotation.",
-        "material_clock_status": "Correction required: rendered information movies currently approximate material selection with caption windows; source red activity differs during flashes and tail holds.",
-        "material_clock_audit": "sources/docs/reconstruction/scitek/material-clocks.json"
+        "material_clock_status": "Verified: source red activity and caption visibility independently match all 423 frames; source component transitions reviewed.",
+        "material_clock_audit": "sources/docs/reconstruction/scitek/material-clocks.json",
+        "material_clock": "sources/ui/scitek/anti-virus-missile/material-clock.json",
+        "highlight_field": "highlight_component",
+        "caption_field": "caption_component",
+        "source_red_frames": 336,
+        "caption_visible_frames": 333
       },
       "status": "Model, preview, wire/highlight variants and complete authored information animation verified; game integration pending",
       "solid_preview_camera": {

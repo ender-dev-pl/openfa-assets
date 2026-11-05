@@ -10,6 +10,8 @@ from mathutils import Vector,Euler
 source=Path(sys.argv[sys.argv.index('--')+1]).resolve();out=Path(sys.argv[sys.argv.index('--')+2]).resolve();out.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=str(source));s=bpy.context.scene;root=bpy.data.objects['AntiVirusRotor'];root.animation_data_clear()
 model=json.loads((source.parent/'model.json').read_text());components=model['components']
+clock_path=source.parent/'material-clock.json';clock=json.loads(clock_path.read_text());assert clock['frame_count']==423
+import_samples=clock['independent_import_samples']
 wires={name:bpy.data.objects[name+' technical wire'] for name in components}
 for name,names in components.items():
     for objname in names:bpy.data.objects[objname].hide_render=True
@@ -38,10 +40,15 @@ for f in range(423):
     local=whole.lerp(Vector(phase['local_target']),zoom);target=root.rotation_euler.to_matrix()@Vector((local.x*root.scale.x,local.y*root.scale.y,local.z*root.scale.z));scale=whole_scale+(phase['ortho_scale']-whole_scale)*zoom
     s.camera.location=(target.x,target.y-12,target.z+.15);s.camera.rotation_euler=(target-s.camera.location).to_track_quat('-Z','Y').to_euler();s.camera.data.ortho_scale=scale
     s.camera.keyframe_insert(data_path='location',frame=f+1);s.camera.keyframe_insert(data_path='rotation_euler',frame=f+1);s.camera.data.keyframe_insert(data_path='ortho_scale',frame=f+1)
-    selected=phase['component'] if phase['first_legacy_frame']<=f<=phase['last_legacy_frame'] else None
+    selected=clock['components'][clock['component_phase_by_frame'][f]] if clock['red_active_by_frame'][f] else None
+    caption=clock['components'][clock['caption_phase_by_frame'][f]] if clock['caption_phase_by_frame'][f]>=0 else None
     for name,node in materials.items():
         node.inputs['Color'].default_value=(.9,.003,.001,1) if name==selected else (0,.72,.005,1);node.inputs['Color'].keyframe_insert(data_path='default_value',frame=f+1)
-    timeline.append(dict(frame=f,rotation_euler=list(root.rotation_euler),camera_position=list(s.camera.location),camera_euler=list(s.camera.rotation_euler),ortho_scale=scale,highlight_component=selected))
+    timeline.append(dict(frame=f,rotation_euler=list(root.rotation_euler),camera_position=list(s.camera.location),camera_euler=list(s.camera.rotation_euler),ortho_scale=scale,highlight_component=selected,caption_component=caption,source_decoded_update=clock['decoded_update_by_frame'][f]))
+for node in materials.values():
+    if node.id_data.animation_data:
+        for fc in node.id_data.animation_data.action.fcurves:
+            for key in fc.keyframe_points:key.interpolation='CONSTANT'
 s.frame_set(1);bpy.ops.wm.save_as_mainfile(filepath=str(out/'anti-virus-missile-information.blend'))
 bpy.ops.object.select_all(action='DESELECT');root.select_set(True);s.camera.select_set(True)
 for o in wires.values():o.select_set(True)
@@ -49,17 +56,17 @@ bpy.ops.export_scene.gltf(filepath=str(out/'anti-virus-missile-information.glb')
 frames=out/'frames';frames.mkdir(exist_ok=True)
 reuse='--reuse-native-frames' in sys.argv
 if reuse:assert sorted(p.name for p in frames.glob('*.png'))==[f'{i:03}.png' for i in range(423)]
-requested=[1,88,229,370,423] if '--keyframes-only' in sys.argv else range(1,424)
+requested=[f+1 for f in import_samples] if '--keyframes-only' in sys.argv else range(1,424)
 for f in ([] if reuse else requested):
     s.frame_set(f);s.render.filepath=str(frames/f'{f-1:03}.png');bpy.ops.render.render(write_still=True)
-manifest=dict(issue=208,research_id='scitek:anti-virus-missile',source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),renderer_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),fps=15,frame_count=423,rendered_frame_count=len(list(frames.glob('*.png'))),native_frame_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(frames.glob('*.png'))},phases=phases,root='AntiVirusRotor',root_scale=list(root.scale),component_nodes={name:o.name for name,o in wires.items()},timing='Legacy 423-frame information clock and caption intervals; pose and camera interpolation are authored approximations of the inspected film.',client_contract='Evaluate timeline camera/root transform and apply red to highlight_component, green to other components. Material hue and orthographic scale animation require timeline metadata; GLB alone does not portably retain them.',timeline=timeline)
+manifest=dict(material_clock_sha256=hashlib.sha256(clock_path.read_bytes()).hexdigest(),material_clock_schema=1,independent_import_samples=import_samples,highlighted_frames=sum(clock['red_active_by_frame']),caption_visible_frames=sum(x>=0 for x in clock['caption_phase_by_frame']),issue=208,research_id='scitek:anti-virus-missile',source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),renderer_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),fps=15,frame_count=423,rendered_frame_count=len(list(frames.glob('*.png'))),native_frame_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(frames.glob('*.png'))},phases=phases,root='AntiVirusRotor',root_scale=list(root.scale),component_nodes={name:o.name for name,o in wires.items()},timing='Legacy 423-frame source red activity and caption visibility are independent. Explicit source-reviewed component phase boundaries; authored camera/pose interpolation.',client_contract='Evaluate timeline camera/root transform and apply red to highlight_component, green to other components. Material hue and orthographic scale animation require timeline metadata; GLB alone does not portably retain them.',timeline=timeline)
 (out/'information-timeline.json').write_text(json.dumps(manifest,indent=2)+'\n')
 # Prove glTF node geometry/animation can be evaluated independently at caption
 # closeups, using the explicit portable camera contract.
 for o in list(s.objects):
     if o.type not in ['LIGHT','CAMERA']:bpy.data.objects.remove(o,do_unlink=True)
 bpy.ops.import_scene.gltf(filepath=str(out/'anti-virus-missile-information.glb'))
-for f in [0,87,228,369,422]:
+for f in import_samples:
     s.frame_set(f+1);entry=timeline[f]
     for name in components:
         o=bpy.data.objects.get(name+' technical wire');assert o
