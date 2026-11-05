@@ -328,3 +328,54 @@ def collectibles(n):
   for z in [.7,1.4,2.0]:M.ball('internal therapeutic light',(0,0,z),(.16,.13,.16),light,p)
   for side in [-1,1]:M.rod('internal suspension rod',(side*.23,0,.3),(side*.23,0,2.3),.035,gold,p)
 BUILDERS.update({i:collectibles for i in range(53,61)})
+
+def rare_goods(n):
+ gold=M.mat('ceremonial gold',(.56,.32,.055),.8,.35);wood=M.mat('reddish antique wood',(.23,.08,.025),rough=.8);dark=M.mat('dark artifact metal',(.025,.025,.025),.6,.6);red=M.mat('red enamel',(.5,.015,.008),.25,.45);ivory=M.mat('pale ivory',(.65,.59,.32),rough=.6)
+ if n==61:
+  p=M.root('Braccatian steam racer');M.mesh('pointed red racing chassis',[(-1.4,-.55,.5),(-1.4,.55,.5),(2,0,.5),(-1.4,-.55,1),(-1.4,.55,1),(2,0,.65)],[(0,1,2),(3,5,4),(0,3,4,1),(0,2,5,3),(1,4,5,2)],red,p)
+  M.rod('exposed steam boiler',(-.9,0,.95),(.9,0,.95),.35,red,p)
+  for x,r in [(-1.1,.55),(1.25,.34)]:
+   for side in [-1,1]:
+    w=M.cylinder('separate racer wheel',(x,side*.7,r),r,.14,red,p);w.rotation_euler.x=math.pi/2;M.rod('wheel axle',(x,-.85,r),(x,.85,r),.07,dark,p)
+    for j in range(8):a=j*math.tau/8;M.rod('wheel spoke',(x,side*.78,r),(x+r*.85*math.cos(a),side*.78,r+r*.85*math.sin(a)),.025,gold,p)
+  for x in [-.8,-.4,0,.4]:M.cylinder('steam exhaust stack',(x,0,1.1),.065,.7,gold,p);M.ring('exhaust rim',(x,0,1.8),.07,.015,dark,p)
+  M.rod('ornamental rear harpoon assembly',(-.5,0,1.3),(-1.7,0,1.5),.065,dark,p)
+  for j in range(5):x=-1+j*.35;M.mesh('painted gold flame motif',[(x,-.56,.55),(x+.18,-.52,.9),(x+.10,-.54,.6),(x+.3,-.50,.8)],[(0,1,2,3)],gold,p)
+ elif n==62:
+  green=M.mat('green card backs',(.12,.27,.035),rough=.8);p=M.root('KKZ Quad card arrangement');M.cube('wooden game surface',(0,0,.02),(2,1.5,.02),wood,p)
+  for i,(x,y) in enumerate([(-.8,.1),(-.3,.4),(.3,.3),(.8,.1),(-.5,-.5),(.2,-.6),(.5,.7)]):
+   q=M.root('individual face-up card '+str(i),(x,y,.08+i*.004));q.parent=p;q.rotation_euler.z=(i-3)*.21;M.cube('ivory card',(0,0,0),(.32,.43,.007),ivory,q,bevel=.008);M.cylinder('card emblem',(0,0,.009),.07,.006,gold if i%2 else red,q)
+  for x,y in [(-1.35,-.8),(1.35,.85),(-1.3,1)]:
+   for j in range(8):M.cube('stacked green-backed card',(x,y,.06+j*.012),(.32,.43,.006),green,p,bevel=.006)
+ elif n==63:
+  green=M.mat('Kraagil green organic surface',(.15,.27,.012),.15,.55);p=M.root('spined Kraagil oil reference form');M.mesh('flattened pointed head',[(-1.8,0,.2),(-.7,-.5,.1),(-.6,.5,.1),(-.6,0,.65)],[(0,1,2),(0,3,1),(0,2,3),(1,3,2)],green,p)
+  for i in range(7):
+   x=-.6+i*.35;r=.48*(1-i*.11);M.ball('segmented organic tail',(x,0,.3),(r,.28*(1-i*.09),.3*(1-i*.09)),green,p)
+   M.mesh('dorsal organic spine',[(x-.1,0,.4),(x+.1,0,.4),(x-.03,0,.9-i*.06)],[(0,1,2)],gold,p)
+   for side in [-1,1]:M.mesh('lateral organic spine',[(x,side*.2,.25),(x+.25,side*.5,.25),(x+.15,side*.15,.25)],[(0,1,2)],green,p)
+  for side in [-1,1]:M.ball('organic eye-like nodule',(-.9,side*.25,.43),(.05,.05,.035),gold,p)
+ elif n==64:
+  p=M.root('Artemian sacrificial double axe');M.lathe('carved wooden haft',[(.12,0),(.09,.2),(.07,2.5),(.13,2.7)],wood,p)
+  for side in [-1,1]:
+   pts=[(side*.1,0,2.3),(side*.45,0,2.65),(side*.9,0,2.8),(side*1.05,0,2.45),(side*.95,0,2.05),(side*.55,0,1.9),(side*.5,0,2.15)];o=M.mesh('separate crescent axe blade',pts,[tuple(range(7))],gold,p);q=o.modifiers.new('Actual blade thickness','SOLIDIFY');q.thickness=.07
+ elif n==65:
+  p=horn('ceremonial Horn of Plenty',(0,0,.6),ivory,gold,size=1.4);p.rotation_euler.y=-math.pi/2
+  for i in range(26):
+   t=i/25;M.ball('hanging ceremonial chain bead',(-2.6+2.4*t,-.08,.35-.32*math.sin(math.pi*t)),(.045,)*3,ivory)
+ elif n==66:
+  cyan=M.mat('lightwork cyan prism',(.005,.45,.42),.1,.25,.2,emit=.25);purple=M.mat('lightwork violet beam',(.25,.015,.38),emit=.2);body=M.mat('warm bronze figure',(.27,.13,.06),.5,.5);p=M.root('Dionne Lightwork');M.cube('turquoise pedestal',(0,0,.65),(.6,.4,.65),cyan,p)
+  for x in [-.18,.18]:M.rod('figure leg',(x,0,1.3),(x,0,2),.11,body,p)
+  M.ball('figure torso',(0,0,2.25),(.35,.18,.5),body,p);M.ball('figure head',(0,0,2.95),(.19,.17,.24),body,p)
+  for side in [-1,1]:M.rod('figure arm',(side*.28,0,2.55),(side*.4,-.02,1.8),.09,body,p)
+  for side in [-1,1]:M.mesh('angular translucent light sheet',[(side*.3,-.1,.1),(side*1.8,.2,3.8),(side*.6,-.1,1.2)],[(0,1,2)],cyan if side<0 else purple,p)
+  dot=M.mat('lightwork coloured points',(.12,.28,.62),emit=.4)
+  for i in range(14):
+   for j in range(14):M.ball('backdrop light node',(-1.6+i*.25,.65,.15+j*.26),(.015,)*3,dot,p,1)
+ elif n==67:
+  p=M.root('Achaean loving cup');M.lathe('gold foot stem and hollow bowl',[(.6,0),(.7,.1),(.4,.25),(.13,.5),(.12,1.2),(.45,1.35),(.95,1.6),(1,1.95),(.92,1.95),(.85,1.65),(.2,1.4)],gold,p)
+  inside=M.mat('red enamel inner bowl',(.45,.005,.003),.15,.28);M.lathe('red inner lining',[(.2,1.42),(.84,1.67),(.91,1.94)],inside,p)
+  for side in [-1,1]:o=M.ring('separate cup loop handle',(side*.98,0,1.65),.28,.045,gold,p);o.rotation_euler.x=math.pi/2;o.scale=(1,.7,1)
+ else:
+  grey=M.mat('Law cube gray metal',(.20,.22,.24),.65,.6);copper=M.mat('Law cube copper base',(.28,.10,.04),.7,.5);p=M.root('Law of the Cube relic and pedestal');M.cube('low wide relic plinth',(0,0,.15),(1.2,.85,.15),copper,p);M.cube('stepped slab',(0,0,.4),(.8,.6,.1),dark,p);M.cube('gray inscribed cube',(0,0,1.05),(.5,.5,.55),grey,p)
+  M.polyline('authored angular front motif',[(-.3,-.51,1.3),(-.3,-.51,1.05),(-.1,-.51,1.25),(.12,-.51,1.25),(.25,-.51,1),(.05,-.51,.85)],.025,dark,p);M.cube('red top seal',(0,0,1.61),(.27,.27,.012),red,p);M.rod('side connector',(-.75,0,1.15),(-.5,0,1.15),.075,copper,p)
+BUILDERS.update({i:rare_goods for i in range(61,69)})

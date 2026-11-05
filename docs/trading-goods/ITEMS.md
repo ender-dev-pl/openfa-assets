@@ -62,14 +62,14 @@
 | 57 | Holostar globes | coloured_model_verified |
 | 58 | Besthelda's Apothecary | coloured_model_verified |
 | 59 | Photoplasmic Cocoon | coloured_model_verified |
-| 60 | Steam Racers | planned |
-| 61 | KKZ Quad | planned |
-| 62 | Kraagil Oil | planned |
-| 63 | Sacrificial Axe | planned |
-| 64 | Horn of Plenty | planned |
-| 65 | Dionne's Lightwork | planned |
-| 66 | Loving Cup | planned |
-| 67 | Law of the Cube | planned |
+| 60 | Steam Racers | coloured_model_verified |
+| 61 | KKZ Quad | coloured_model_verified |
+| 62 | Kraagil Oil | coloured_model_verified |
+| 63 | Sacrificial Axe | coloured_model_verified |
+| 64 | Horn of Plenty | coloured_model_verified |
+| 65 | Dionne's Lightwork | coloured_model_verified |
+| 66 | Loving Cup | coloured_model_verified |
+| 67 | Law of the Cube | coloured_model_verified |
 | 68 | Biofort (Pharmaceutical) | planned |
 | 69 | Vir-Attack (Pharmaceutical) | planned |
 | 70 | Supa-Shellac (Pharmaceutical) | planned |
