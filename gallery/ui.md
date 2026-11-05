@@ -226,3 +226,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Anti-Virus Missile research assembly](media/ui/scitek/anti-virus-missile/solid.png)
 
 [Full technical animation](media/ui/scitek/anti-virus-missile/information.webm) · [Source and integration contract](../sources/ui/scitek/anti-virus-missile/README.md).
+
+### Asteroid Engines
+
+![Asteroid Engines](media/ui/scitek/asteroid-engines/solid.png)
+
+[Full technical animation](media/ui/scitek/asteroid-engines/information.webm) - [Source and integration](../sources/ui/scitek/asteroid-engines/README.md).
