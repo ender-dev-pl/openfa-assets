@@ -190,3 +190,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Missile Guidance System research assembly](media/ui/scitek/missile-guidance-system/solid.png)
 
 [Full technical animation](media/ui/scitek/missile-guidance-system/information.webm) · [Source and integration contract](../sources/ui/scitek/missile-guidance-system/README.md).
+
+### Power Amplifier
+
+![Authored Power Amplifier research assembly](media/ui/scitek/power-amplifier/solid.png)
+
+[Full technical animation](media/ui/scitek/power-amplifier/information.webm) · [Source and integration contract](../sources/ui/scitek/power-amplifier/README.md).

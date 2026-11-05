@@ -39,7 +39,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 17 | scitek:ore-teleporter | terran:ore-teleporter | Pending |
 | 18 | scitek:photon-turret | terran:photon-turret | Pending |
 | 19 | scitek:plasma-turret | terran:plasma-turret | Pending |
-| 20 | scitek:power-amplifier | **Missing** | Pending |
+| 20 | scitek:power-amplifier | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 21 | scitek:powerplant | terran:powerplant | Pending |
 | 22 | scitek:repair-facility | terran:repair-facility | Pending |
 | 23 | scitek:screen-generator | terran:screen-generator | Pending |
