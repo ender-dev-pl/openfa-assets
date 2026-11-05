@@ -138,3 +138,44 @@ def alien(info):
  loc,target,lens={'M':((3,-12,5.4),(0,0,4),38),'N':((8,-9,5),(0,0,4.2),42),'O':((1.5,-8,5),(0,0,4.75),42)}[info['id']];T.camera(loc,target,lens)
 
 BUILDERS['alien']=alien
+
+def laboratory(info):
+ blue=T.material('lab blue enamel',(.045,.16,.25),.35,.4);white=T.material('lab pale metal',(.43,.55,.57),.5,.4);pipe=T.material('lab green conduits',(.035,.21,.17),.3,.5);dark=T.material('lab wall',(.035,.04,.045),.2,.7);T.light('lab ceiling',(0,-2,10),2200,(.65,.8,1),12);T.light('lab side',(10,-5,7),1000,(.8,.85,.65),7)
+ if info['id']=='P':
+  T.panel('lab rear wall',(0,4,4),72,13,dark);T.light('scientist fill',(13,-5,8),900,(.8,.85,.7),6)
+  for z in range(0,10):T.tube('wall seam',(-18,3.94,z),(18,3.94,z),.016,white)
+  T.cube('long laboratory bench',(0,1,1.3),(14,1,.25),blue);T.cube('bench pale worktop',(0,1,1.59),(14,1.1,.07),white)
+  for x in [-9,-4,1,6,11]:T.cube('lab bench support',(x,1,.5),(.20,.65,.75),blue)
+  for x in [-8,0,8]:
+   for side in [-1,1]:
+    prev=None
+    for i in range(49):
+     z=1.7+i*.12;a=i*.24+(0 if side==1 else math.pi);point=(x+.58*math.cos(a),1+.58*math.sin(a),z)
+     if prev:T.tube('double helix strand',prev,point,.12,white)
+     prev=point
+     if side==1 and i%3==0:T.tube('double helix rung',(x-.58*math.cos(a),1-.58*math.sin(a),z),point,.055,pipe)
+  for z in [6.2,6.5]:
+   T.tube('overhead conduit',(-18,3,z),(15,3,z),.10,pipe);T.tube('conduit elbow',(15,3,z),(16,2,z-1),.10,pipe)
+  for x in [-11,-3,5]:
+   T.tube('apparatus foot',(x,.5,1.7),(x,.5,2.2),.65,blue);T.tube('apparatus chamber',(x,.5,2.2),(x,.5,4.5),.35,blue)
+   for z in [2.3,3,3.7,4.4]:T.torus('apparatus chamber ring',(x,.5,z),.38,.07,white)
+  a=T.human('laboratory scientist',loc=(13,0,0),scale=.85,uniform=(.085,.14,.075),skin=(.34,.25,.18),hair=(.025,.02,.02))
+  for arm in a['arms']:arm.rotation_euler.x=-1.15
+  T.cube('scientist handheld pad',(13,-1.05,2.8),(.60,.10,.36),blue)
+  c=T.camera((-8,-11,4.6),(-7,1,3.8),40)
+  for n,x in [(1493,-8),(1663,12)]:
+   loc=Vector((x,-11,4.6));target=Vector((x+1,1,3.8));T.key(c,'location',n,loc);T.key(c,'rotation_euler',n,(target-loc).to_track_quat('-Z','Y').to_euler())
+ else:
+  T.panel('handheld view floor',(0,4,3),25,14,dark)
+  for x in range(-12,13,2):T.tube('floor panel seam',(x,3.9,-3),(x,3.9,10),.02,white)
+  c=T.camera((0,-10,4),(0,0,3),42);pad=T.empty('handheld display');screen=T.material('screen green',(.10,.18,.12),worn=False,emit=.5);T.cube('pad housing',(0,.1,3),(1.7,.18,.95),blue,pad);T.panel('pad screen',(0,-.10,3),2.4,1.5,screen,pad)
+  for side in [-1,1]:
+   grip=T.torus('green oval grip',(side*1.65,-.1,3),.65,.13,pipe,pad,True);grip.scale.x=.40
+   for j in range(7):T.ball('pad key',(side*1.4,-.15,2.45+j*.17),(.045,.025,.045),white,pad)
+   T.tube('green sleeve',(side*3,-2,1),(side*2,-.5,2.5),.32,pipe);T.tube('bare forearm',(side*2,-.5,2.5),(side*1.7,-.2,3.2),.16,T.material('operator skin',(.34,.24,.17)));T.ball('gripping hand',(side*1.64,-.23,3.2),(.18,.15,.24),T.material('hand skin',(.34,.24,.17)))
+  a=T.human('display portrait',loc=(0,-.3,1.4),scale=.6,uniform=(.13,.12,.08),skin=(.42,.30,.18),hair=(.27,.22,.14));head_only(a,2)
+  # The screen portrait is authored 3D proxy geometry, not a legacy bitmap.
+  a['root'].parent=pad;a['root'].location=(0,-.31,1.8)
+  T.key(pad,'rotation_euler',1665,(0,-.025,-.05));T.key(pad,'rotation_euler',1730,(0,.025,.04))
+
+BUILDERS['laboratory']=laboratory
