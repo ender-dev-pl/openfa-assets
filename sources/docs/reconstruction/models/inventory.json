@@ -34789,6 +34789,13 @@
           "present": true,
           "sha256": "037c980ff92ed970be4ea7bdab33e26f881d445d39cd89e76a66cad5c0e9e897",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/stasis-missile/refined/model.blend",
+          "present": true,
+          "sha256": "17416aa91b44d9bf86dddcef86c3541ca7702e6ec44ebb8b379696a28657fc57",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -34804,7 +34811,23 @@
       "open_evidence_questions": [
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "flight_frame_count": 14
+      "flight_frame_count": 14,
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/stasis-missile/refined/model.blend",
+        "glb": "sources/objects/terran/stasis-missile/refined/model.glb",
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/29",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "package_contract": "One shared physical solid; alias consumers. Preserve Root unit scale; gameplay frame1 without presentation rotation."
+      }
     },
     {
       "category": "missiles",

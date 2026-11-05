@@ -50,7 +50,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 26 | scitek:shield-x50 | Shared refined openfa:shield-x50 | Shared X50 length/aperture refinement;51-mesh solid, wire/highlight,60-frame colour and423-frame information delivered; game check pending |
 | 27 | scitek:solar-matrix | Shared refined terran:solar-matrix | Trapezoid panels, optional pyramid closure, colour/technical animation and three closeups delivered; client check pending |
 | 28 | scitek:static-inducer | Shared refined openfa:static-inducer | Rounded toroidal coil;52-mesh shared solid, colour/technical animations, wireframe and three closeups delivered; client check pending |
-| 29 | scitek:stasis-missile | openfa:stasis | Pending |
+| 29 | scitek:stasis-missile | Shared refined openfa:stasis | Existing missile refined to six pods/four fins; colour/technical animations, wireframe and closeups delivered; client check pending |
 | 30 | scitek:terminator | openfa:terminator presentation variant | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 31 | scitek:turret-optimiser | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 32 | scitek:virus-missile | openfa:virus | Pending |

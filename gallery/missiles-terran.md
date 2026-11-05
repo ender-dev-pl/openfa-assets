@@ -112,6 +112,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/missiles/terran/stasis/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/terran/stasis/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Stasis Missile](../gallery/media/objects/terran/stasis-missile/refined/render.png)
+
+[Blend](../sources/objects/terran/stasis-missile/refined/model.blend) · [GLB](../sources/objects/terran/stasis-missile/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/stasis-missile/refined/animation-00.webm)
+
 ## Bug Hunter
 
 `openfa:missile/terran/bug-hunter`

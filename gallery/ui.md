@@ -348,3 +348,9 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Static Inducer](media/ui/scitek/static-inducer/solid.png)
 
 [Shared model and technical presentation](../sources/ui/scitek/static-inducer/README.md).
+
+### Stasis Missile
+
+![Stasis Missile](media/ui/scitek/stasis-missile/solid.png)
+
+[Shared model and technical presentation](../sources/ui/scitek/stasis-missile/README.md).
