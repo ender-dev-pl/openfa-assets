@@ -4718,8 +4718,8 @@
       "disabled": "gallery/media/ui/scitek/fleet-battleship/tile-disabled.png",
       "hires": "gallery/media/ui/scitek/fleet-battleship/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/fleet-battleship/solid.png",
-      "blend": "sources/ui/scitek/fleet-battleship/fleet-battleship.blend",
-      "glb": "sources/ui/scitek/fleet-battleship/fleet-battleship.glb",
+      "blend": "sources/objects/terran/fleet-battleship/refined/model.blend",
+      "glb": "sources/objects/terran/fleet-battleship/refined/model.glb",
       "readme": "sources/ui/scitek/fleet-battleship/README.md",
       "tile_registration": {
         "canvas": [
@@ -4746,13 +4746,13 @@
           "label": "Solid preview rotation",
           "image": "gallery/media/ui/scitek/fleet-battleship/solid.png",
           "video": "gallery/media/ui/scitek/fleet-battleship/preview.webm",
-          "blend": "sources/ui/scitek/fleet-battleship/fleet-battleship.blend",
-          "glb": "sources/ui/scitek/fleet-battleship/fleet-battleship.glb"
+          "blend": "sources/objects/terran/fleet-battleship/refined/model.blend",
+          "glb": "sources/objects/terran/fleet-battleship/refined/model.glb"
         },
         {
           "label": "Whole assembly wireframe",
           "image": "gallery/media/ui/scitek/fleet-battleship/wireframe.png",
-          "blend": "sources/ui/scitek/fleet-battleship/fleet-battleship.blend",
+          "blend": "sources/objects/terran/fleet-battleship/refined/model.blend",
           "glb": "sources/ui/scitek/fleet-battleship/fleet-battleship-wireframe.glb"
         },
         {
@@ -4838,7 +4838,36 @@
         ],
         "material_contract": "Apply timeline hue/caption and orthographic scale independently."
       },
-      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending"
+      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending",
+      "shared_object": {
+        "id": "openfa:fleet-battleship",
+        "blend": "sources/objects/terran/fleet-battleship/refined/model.blend",
+        "glb": "sources/objects/terran/fleet-battleship/refined/model.glb",
+        "root": "BattleshipResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "consumers": [
+          "ship-gameplay",
+          "ship-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "gameplay_pose_frame": 1,
+        "disable_presentation_rotation_in_gameplay": true
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/fleet-battleship/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/fleet-battleship/fleet-battleship-information.glb",
+        "technical_timeline": "sources/ui/scitek/fleet-battleship/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical research solid and baked variants authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "All28,764 diagram segments are actual evaluated physical edges.",
+        "verification": "gallery/media/ui/scitek/fleet-battleship/shared-geometry-verification.json"
+      }
     },
     {
       "id": "scitek:gravity-nullifier",

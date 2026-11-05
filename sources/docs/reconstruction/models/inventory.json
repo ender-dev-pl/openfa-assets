@@ -28015,6 +28015,13 @@
           "present": true,
           "sha256": "e28f83b6d9100af1646a04521a2d508644a406b3a8feeb40780d61ad271f8372",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/fleet-battleship/refined/model.blend",
+          "present": true,
+          "sha256": "bf6aa83e51be68873376add82f7418bd49d85d819555908d189223961f32461c",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -28137,6 +28144,23 @@
           ],
           "selected_first_available": "PT6C.256"
         }
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/fleet-battleship/refined/model.blend",
+        "glb": "sources/objects/terran/fleet-battleship/refined/model.glb",
+        "root": "BattleshipResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "ship-gameplay",
+          "ship-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
       }
     },
     {

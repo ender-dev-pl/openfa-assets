@@ -72,6 +72,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/ships/terran/fleet-battleship/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/fleet-battleship/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Fleet Battleship](../gallery/media/objects/terran/fleet-battleship/refined/render.png)
+
+[Blend](../sources/objects/terran/fleet-battleship/refined/model.blend) · [GLB](../sources/objects/terran/fleet-battleship/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/fleet-battleship/refined/animation-00.webm)
+
 ## Space Dock
 
 `openfa:space-dock`
