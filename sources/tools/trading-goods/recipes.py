@@ -64,3 +64,67 @@ def fabrics(n):
  if n==11:
   node=c.node_tree.nodes.new('ShaderNodeTexWave');node.bands_direction='X';node.inputs['Scale'].default_value=8;node.inputs['Distortion'].default_value=6;b=c.node_tree.nodes.new('ShaderNodeBump');b.inputs['Strength'].default_value=.12;b.inputs['Distance'].default_value=.005;c.node_tree.links.new(node.outputs['Color'],b.inputs['Height']);c.node_tree.links.new(b.outputs[0],bs.inputs['Normal'])
 BUILDERS.update({i:fabrics for i in range(9,16)})
+
+def gem(name,loc,r,material,parent=None,sides=10):
+ o=M.lathe(name,[(.03,-r*.65),(r,0),(r*.88,r*.40),(r*.48,r*.62)],material,parent,segments=sides);o.location=loc
+ for p in o.data.polygons:p.use_smooth=False
+ return o
+
+def band(name,r,width,height,material,parent=None,start=.05,end=math.tau-.05):
+ verts=[];faces=[];N=80
+ for i in range(N+1):
+  a=start+(end-start)*i/N
+  for rr,z in [(r-width/2,0),(r+width/2,0),(r+width/2,height),(r-width/2,height)]:verts.append((rr*math.cos(a),rr*math.sin(a),z))
+ for i in range(N):
+  for j in range(4):faces.append((4*i+j,4*i+(j+1)%4,4*(i+1)+(j+1)%4,4*(i+1)+j))
+ faces.extend([(0,1,2,3),(4*N+3,4*N+2,4*N+1,4*N)]);return M.mesh(name,verts,faces,material,parent)
+
+def jewellery(n):
+ gold=M.mat('worked yellow gold',(.63,.39,.07),.85,.25);silver=M.mat('white gold platinum',(.62,.67,.69),.9,.2);redgold=M.mat('red gold',(.62,.10,.016),.85,.25);blue=M.mat('astramarine jewel',(.025,.38,.55),.18,.15,.15);green=M.mat('emerald jewel',(.01,.52,.045),.1,.16,.15);white=M.mat('diamond jewel',(.75,.85,.91),.1,.10,.3);pearl=M.mat('pearl lustre',(.62,.66,.27),.3,.21);ruby=M.mat('ruby cabochon',(.58,.006,.015),.2,.17)
+ if n==16:
+  ivory=M.mat('raw opal tiara',(.68,.73,.72),.45,.2);p=M.root('opal and metachrome tiara',(0,.55,0));band('open tiara band',1.5,.12,.15,ivory,p,start=math.pi,end=math.tau)
+  for a in [math.pi,math.tau]:M.ball('rounded tiara end',(1.5*math.cos(a),1.5*math.sin(a),.08),(.12,.12,.12),ivory,p)
+  M.cube('tiara centre setting',(0,-1.5,.16),(.2,.09,.18),silver,p);gem('tiara central opal',(0,-1.51,.24),.16,white,p,8)
+  p=M.root('separate chain bracelet',(0,-2.4,.08))
+  for j in range(24):
+   a=j*math.tau/24;o=M.ring('individual chain link',(.85*math.cos(a),.55*math.sin(a),0),.08,.016,silver,p);o.scale=(1.4,.75,1);o.rotation_euler.z=a
+  gem('bracelet brilliant',(0,-.55,.06),.23,white,p,12)
+ elif n==17:
+  p=M.root('red gold open choker');band('woven red-gold ribbon',1.5,.12,.4,redgold,p,start=.25,end=math.tau-.25)
+  centre=(0,-1.59,.25);v=[centre]
+  for j in range(16):
+   a=j*math.tau/16;r=.45 if j%2==0 else .25;v.append((r*math.cos(a),-1.59,.25+r*math.sin(a)))
+  M.mesh('eight-point gold sunburst',v,[(0,j+1,(j+1)%16+1) for j in range(16)],gold,p);gem('central aquamarine',(0,-1.62,.25),.20,blue,p).rotation_euler.x=math.pi/2
+ elif n==18:
+  p=M.root('square cut solitaire');g=gem('octagonal square emerald',(0,0,.1),1.15,green,p,8);g.scale=(.83,1.1,.65);r=M.ring('white gold bezel',(0,0,.18),1.13,.055,gold,p);r.scale=(.85,1.1,1)
+ elif n==19:
+  p=M.root('four-point ruby brooch');cream=M.mat('polished red gold face',(.62,.43,.12),.8,.28)
+  for j in range(4):
+   a=j*math.pi/2;ca,sa=math.cos(a),math.sin(a);points=[(-.30,.25),(-.25,.7),(0,1.2),(.25,.7),(.30,.25)];v=[(x*ca-y*sa,x*sa+y*ca,.04) for x,y in points];M.mesh('pointed brooch petal',v,[tuple(range(5))],cream,p)
+  gem('raised ruby centre',(0,0,.1),.38,ruby,p,8)
+ elif n==20:
+  p=M.root('23-stone astramarine necklace')
+  for i in range(23):
+   x=(i-11)*.17;y=.012*(i-11)**2;gem('individual astramarine '+str(i),(x,y,.05),.13,blue,p,8);M.ring('stone gold bezel',(x,y,.02),.14,.018,gold,p)
+   if i: M.rod('necklace link',((i-12)*.17,.012*(i-12)**2,0),(x,y,0),.022,gold,p)
+ elif n==21:
+  p=M.root('eternity ring');band('broad 24ct ring',.85,.22,.30,gold,p,start=0,end=math.tau)
+  for j in range(8):a=j*math.tau/8;gem('set ultropaz alexandrite',( .85*math.cos(a),.85*math.sin(a),.30),.10,blue if j%2 else pearl,p,8)
+ elif n==22:
+  p=M.root('diamond emerald pectoral');band('open metachrome framework',1.6,.20,.08,silver,p,start=.12,end=math.tau-.12)
+  for j in range(28):
+   a=.15+j*(math.tau-.30)/27;x,y=1.6*math.cos(a),1.6*math.sin(a);M.mesh('wide triangular silver lattice',[(1.35*math.cos(a-.05),1.35*math.sin(a-.05),.04),(1.92*math.cos(a),1.92*math.sin(a),.04),(1.35*math.cos(a+.05),1.35*math.sin(a+.05),.04)],[(0,1,2)],silver,p);gem('pectoral emerald',(x,y,.10),.09,green,p,8)
+   for side in [-1,1]:M.rod('triangular lattice rib',(x,y,.05),((1.6+side*.22)*math.cos(a+.08),(1.6+side*.22)*math.sin(a+.08),.05),.025,silver,p)
+  gem('pectoral central diamond',(0,-1.65,.14),.22,white,p,12)
+ elif n==23:
+  p=M.root('seventeen-opal collar');band('pierced gold collar',1.45,.14,.48,gold,p,start=.12,end=math.tau-.12)
+  for j in range(17):
+   a=.18+j*(math.tau-.36)/16;x,y=1.45*math.cos(a),1.45*math.sin(a);gem('blue opal setting '+str(j),(x,y,.25),.14,blue,p,8);M.ring('white gold opal rim',(x,y,.25),.15,.021,silver,p)
+  M.cube('white gold clasp',(1.45,0,.24),(.12,.1,.22),silver,p)
+ else:
+  p=M.root('three pearl strand bracelet')
+  for strand in range(3):
+   for j in range(26):
+    a=j*math.tau/26;M.ball('individual pearl',(math.cos(a),math.sin(a),strand*.27),(.13,.13,.13),pearl,p)
+  M.cube('platinum bracelet clasp',(1.0,0,.28),(.14,.12,.4),silver,p)
+BUILDERS.update({i:jewellery for i in range(16,25)})

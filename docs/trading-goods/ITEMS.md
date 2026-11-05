@@ -17,15 +17,15 @@
 | 12 | Satin taffeta | coloured_model_verified |
 | 13 | Egyptian sea-cotton | coloured_model_verified |
 | 14 | Achaean angora | coloured_model_verified |
-| 15 | Tiara & Bracelet set | planned |
-| 16 | Choker | planned |
-| 17 | Solitaire emerald | planned |
-| 18 | Brooch | planned |
-| 19 | Necklace | planned |
-| 20 | Eternity ring | planned |
-| 21 | Pectoral | planned |
-| 22 | Collar | planned |
-| 23 | 3-strand bracelet | planned |
+| 15 | Tiara & Bracelet set | coloured_model_verified |
+| 16 | Choker | coloured_model_verified |
+| 17 | Solitaire emerald | coloured_model_verified |
+| 18 | Brooch | coloured_model_verified |
+| 19 | Necklace | coloured_model_verified |
+| 20 | Eternity ring | coloured_model_verified |
+| 21 | Pectoral | coloured_model_verified |
+| 22 | Collar | coloured_model_verified |
+| 23 | 3-strand bracelet | coloured_model_verified |
 | 24 | Diamond | planned |
 | 25 | Emerald | planned |
 | 26 | Sapphire | planned |
