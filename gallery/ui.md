@@ -274,3 +274,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Photon Turret](media/ui/scitek/photon-turret/solid.png)
 
 [Full technical animation](media/ui/scitek/photon-turret/information.webm) - [Source and integration](../sources/ui/scitek/photon-turret/README.md).
+
+### Plasma Turret
+
+![Plasma Turret](media/ui/scitek/plasma-turret/solid.png)
+
+[Full technical animation](media/ui/scitek/plasma-turret/information.webm) - [Source and integration](../sources/ui/scitek/plasma-turret/README.md).
