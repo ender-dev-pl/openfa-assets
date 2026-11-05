@@ -74,3 +74,15 @@ def setup_camera():
  for name,offset,power,color in [('key',(-2,-3,4),800,(1,.87,.72)),('fill',(3,-1,2),500,(.65,.8,1)),('rim',(0,3,4),900,(1,1,1))]:
   d=bpy.data.lights.new(name,'AREA');d.energy=power*max(1,span*.5);d.shape='DISK';d.size=span*1.5;ob=bpy.data.objects.new(ID+' / '+name,d);COL.objects.link(ob);ob.location=target+Vector(offset)*span;ob.rotation_euler=(target-ob.location).to_track_quat('-Z','Y').to_euler()
  return o
+
+def mesh(name,verts,faces,material,parent=None):
+ d=bpy.data.meshes.new(ID+' / '+name);d.from_pydata(verts,[],faces);d.update();o=bpy.data.objects.new(ID+' / '+name,d);COL.objects.link(o);o.data.materials.append(material)
+ if parent:o.parent=parent
+ return o
+
+def polyline(name,points,r,material,parent=None):
+ d=bpy.data.curves.new(name,'CURVE');d.dimensions='3D';d.bevel_depth=r;d.bevel_resolution=2;sp=d.splines.new('POLY');sp.points.add(len(points)-1)
+ for p,co in zip(sp.points,points):p.co=(*co,1)
+ o=bpy.data.objects.new(ID+' / '+name,d);COL.objects.link(o);o.data.materials.append(material)
+ if parent:o.parent=parent
+ return o

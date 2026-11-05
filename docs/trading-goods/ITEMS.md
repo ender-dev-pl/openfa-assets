@@ -10,13 +10,13 @@
 | 5 | Fizzimo Lumiere | coloured_model_verified |
 | 6 | Bristol glass | coloured_model_verified |
 | 7 | Crystal Cantata Inc. products | coloured_model_verified |
-| 8 | Deep pile velvet | planned |
-| 9 | Silk | planned |
-| 10 | Watered silk | planned |
-| 11 | Raw silk | planned |
-| 12 | Satin taffeta | planned |
-| 13 | Egyptian sea-cotton | planned |
-| 14 | Achaean angora | planned |
+| 8 | Deep pile velvet | coloured_model_verified |
+| 9 | Silk | coloured_model_verified |
+| 10 | Watered silk | coloured_model_verified |
+| 11 | Raw silk | coloured_model_verified |
+| 12 | Satin taffeta | coloured_model_verified |
+| 13 | Egyptian sea-cotton | coloured_model_verified |
+| 14 | Achaean angora | coloured_model_verified |
 | 15 | Tiara & Bracelet set | planned |
 | 16 | Choker | planned |
 | 17 | Solitaire emerald | planned |

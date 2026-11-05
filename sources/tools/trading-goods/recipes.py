@@ -37,3 +37,30 @@ def glassware(n):
     a=j*math.tau/16;M.rod('cut crystal flute',(r*.65*math.cos(a),r*.65*math.sin(a),h*.6),(r*math.cos(a),r*math.sin(a),h*.95),.014,c,p)
 
 BUILDERS={**{i:beverages for i in range(1,7)},7:glassware,8:glassware}
+
+def fabrics(n):
+ colors={9:(.015,.025,.24),10:(.50,.008,.016),11:(.46,.54,.22),12:(.48,.57,.30),13:(.075,.16,.55),14:(.61,.64,.35),15:(.45,.085,.012)};c=M.mat('woven '+str(n),colors[n],rough=.85 if n in [9,12,14,15] else .28);bs=c.node_tree.nodes.get('Principled BSDF');bs.inputs['Sheen Weight'].default_value=.45;dark=M.mat('rolled edge shadow',tuple(v*.4 for v in colors[n]),rough=.85);p=M.root('independent fabric roll')
+ if n==15:
+  wood=M.mat('wooden spool ends',(.20,.12,.055),rough=.8);M.cylinder('spool core',(0,0,-.15),.13,3.1,wood,p);M.lathe('thick combed angora yarn',[(.22,0),(.40,.12),(.43,.4),(.43,2.5),(.35,2.7),(.2,2.8)],c,p)
+  for j in range(45):M.ring('wound yarn ridge',(0,0,.15+j*.055),.42,.018,c,p)
+  p.rotation_euler=(.1,.30,-.15);return
+ verts=[];faces=[];N=40;W=32
+ for j in range(N+1):
+  y=-1.7+j*2.9/N
+  for i in range(W+1):
+   x=-1.35+i*2.7/W;z=.14+.10*math.sin(y*3.5)+.045*math.cos(x*3+y*2);verts.append((x,y,z))
+ for j in range(N):
+  for i in range(W):a=j*(W+1)+i;faces.append((a,a+1,a+W+2,a+W+1))
+ sheet=M.mesh('editable draped woven sheet',verts,faces,c,p);s=sheet.modifiers.new('Actual cloth thickness','SOLIDIFY');s.thickness=.018 if n==9 else .008
+ for face in sheet.data.polygons:face.use_smooth=True
+ o=M.cylinder('rolled cloth body',(-1.35,1.15,.52),.40,2.7,c,p);o.rotation_euler.y=math.pi/2
+ for side in [-1,1]:
+  points=[]
+  for j in range(180):
+   angle=j*.105;r=.045+j/179*.355;points.append((side*1.357,1.15+r*math.cos(angle),.52+r*math.sin(angle)))
+  M.polyline('visible spiral selvage',points,.009,dark,p)
+ if n in [10,12,14]:
+  o=M.cylinder('partially rolled lower edge',(-1.35,-1.7,.18),.12,2.7,c,p);o.rotation_euler.y=math.pi/2
+ if n==11:
+  node=c.node_tree.nodes.new('ShaderNodeTexWave');node.bands_direction='X';node.inputs['Scale'].default_value=8;node.inputs['Distortion'].default_value=6;b=c.node_tree.nodes.new('ShaderNodeBump');b.inputs['Strength'].default_value=.12;b.inputs['Distance'].default_value=.005;c.node_tree.links.new(node.outputs['Color'],b.inputs['Height']);c.node_tree.links.new(b.outputs[0],bs.inputs['Normal'])
+BUILDERS.update({i:fabrics for i in range(9,16)})
