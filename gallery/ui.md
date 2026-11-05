@@ -196,3 +196,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Power Amplifier research assembly](media/ui/scitek/power-amplifier/solid.png)
 
 [Full technical animation](media/ui/scitek/power-amplifier/information.webm) · [Source and integration contract](../sources/ui/scitek/power-amplifier/README.md).
+
+### Terminator
+
+![Authored Terminator research assembly](media/ui/scitek/terminator/solid.png)
+
+[Full technical animation](media/ui/scitek/terminator/information.webm) · [Source and integration contract](../sources/ui/scitek/terminator/README.md).

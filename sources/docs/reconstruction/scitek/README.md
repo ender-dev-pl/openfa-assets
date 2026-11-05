@@ -2,7 +2,7 @@
 
 All 36 actual research bindings, 36 colour preview sprites, six category frames and the main logo were located. All information-video containers and 7,282 cached original-codec image updates were checked against current source/executable/decoder hashes. Eighteen spaced phases per information film were visually reviewed; this is not exhaustive frame-by-frame motion acceptance. All 36 colour preview films were freshly decoded with the original executable codec; eighteen spaced phases per film were inspected. This is not exhaustive frame-by-frame acceptance.
 
-23 subjects map to existing authored definitions. The initial audit identified thirteen dedicated upgrade/device subjects requiring models; current deliveries are tracked below. Hardpoints and ships use semantic identities because their research ST/PH presentation source differs from the ordinary model sprite family; reuse is conditional on visual comparison. Existing models are preserved.
+The initial audit mapped 23 subjects to existing authored definitions and identified thirteen subjects without a mapped model; current deliveries are tracked below. Hardpoints and ships use semantic identities because their research ST/PH presentation source differs from the ordinary model sprite family; reuse is conditional on visual comparison. Existing models are preserved.
 
 Legacy information films use green wireframe objects, red highlighted subassemblies, changing camera/rotation and close-ups. A generic whole-object turntable alone will not reproduce them. Category art is a grayscale collage of three defence subjects, three ship/equipment subjects, three missile/missile-bay subjects, three mining subjects, two power subjects and two miscellaneous subjects. Main logo is a separate 320×160 logical sprite with a 234×115 drawn plaque, not the HUD oval badge. SCITEKC and SCITEK references require the runtime BUTTONS palette; a directory-neighbour palette fallback is invalid.
 
@@ -49,7 +49,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 27 | scitek:solar-matrix | terran:solar-matrix | Pending |
 | 28 | scitek:static-inducer | openfa:static-inducer | Pending |
 | 29 | scitek:stasis-missile | openfa:stasis | Pending |
-| 30 | scitek:terminator | **Missing** | Pending |
+| 30 | scitek:terminator | openfa:terminator presentation variant | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 31 | scitek:turret-optimiser | **Missing** | Pending |
 | 32 | scitek:virus-missile | openfa:virus | Pending |
 | 33 | scitek:warp-generator | openfa:warp-generator | Pending |
@@ -57,6 +57,8 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 35 | scitek:command-cruiser | openfa:command-cruiser | Pending |
 
 Private original pixels and decoded films remain in ignored local evidence directories. Published outputs must be authored assets, not copies of the reference pixels. Full issue completion requires every delivery gate; this initial audit is only a baseline.
+
+The initial mapping left research30 unmapped. The existing supplemental `openfa:terminator` source was subsequently located and reused with unchanged hull/wings/main-engine meshes, UVs and wear images; ST30-specific anterior/lateral appendages and technical variants are delivered separately.
 
 ### Tracker refinement and exact caption anchors
 

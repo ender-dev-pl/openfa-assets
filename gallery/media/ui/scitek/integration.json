@@ -1889,6 +1889,211 @@
         "bind_component_yaw_degrees": -30
       },
       "material_contract": "Portable PBR colours and27 explicit geometric scuffs; procedural Blender abrasion is not baked to textures."
+    },
+    {
+      "id": "scitek:terminator",
+      "name": "Sci-Tek Terminator",
+      "binding": "openfa:presentation/profile/research/30",
+      "legacy_index": 30,
+      "native": "gallery/media/ui/scitek/terminator/tile-native.png",
+      "disabled": "gallery/media/ui/scitek/terminator/tile-disabled.png",
+      "tile_registration": {
+        "canvas": [
+          144,
+          160
+        ],
+        "legacy_drawn_box": [
+          4,
+          40,
+          122,
+          113
+        ],
+        "fit": "contain; preserve model proportions"
+      },
+      "hires": "gallery/media/ui/scitek/terminator/tile-4x.png",
+      "studio_render": "gallery/media/ui/scitek/terminator/solid.png",
+      "blend": "sources/ui/scitek/terminator/terminator.blend",
+      "glb": "sources/ui/scitek/terminator/terminator.glb",
+      "readme": "sources/ui/scitek/terminator/README.md",
+      "gallery_views": [
+        {
+          "label": "Full technical information animation \u2014 423 frames and three component zooms",
+          "image": "gallery/media/ui/scitek/terminator/information-087.png",
+          "video": "gallery/media/ui/scitek/terminator/information.webm",
+          "blend": "sources/ui/scitek/terminator/terminator-information.blend",
+          "glb": "sources/ui/scitek/terminator/terminator-information.glb"
+        },
+        {
+          "label": "Solid tile/detail and preview rotation",
+          "image": "gallery/media/ui/scitek/terminator/solid.png",
+          "video": "gallery/media/ui/scitek/terminator/preview.webm",
+          "blend": "sources/ui/scitek/terminator/terminator.blend",
+          "glb": "sources/ui/scitek/terminator/terminator.glb"
+        },
+        {
+          "label": "Green technical wireframe",
+          "image": "gallery/media/ui/scitek/terminator/wireframe.png",
+          "blend": "sources/ui/scitek/terminator/terminator.blend",
+          "glb": "sources/ui/scitek/terminator/terminator-wireframe.glb"
+        },
+        {
+          "label": "Wireframe closeup: anterior-device-assembly",
+          "image": "gallery/media/ui/scitek/terminator/highlight-anterior-device-assembly.png",
+          "blend": "sources/ui/scitek/terminator/terminator.blend",
+          "glb": "sources/ui/scitek/terminator/terminator-highlight-anterior-device-assembly.glb"
+        },
+        {
+          "label": "Wireframe closeup: lateral-manoeuvring-thrusters",
+          "image": "gallery/media/ui/scitek/terminator/highlight-lateral-manoeuvring-thrusters.png",
+          "blend": "sources/ui/scitek/terminator/terminator.blend",
+          "glb": "sources/ui/scitek/terminator/terminator-highlight-lateral-manoeuvring-thrusters.glb"
+        },
+        {
+          "label": "Wireframe closeup: twin-main-engine-thrusters",
+          "image": "gallery/media/ui/scitek/terminator/highlight-twin-main-engine-thrusters.png",
+          "blend": "sources/ui/scitek/terminator/terminator.blend",
+          "glb": "sources/ui/scitek/terminator/terminator-highlight-twin-main-engine-thrusters.glb"
+        }
+      ],
+      "information_phases": [
+        {
+          "component": "anterior-device-assembly",
+          "first_legacy_frame": 29,
+          "last_legacy_frame": 139,
+          "highlight_glb": "terminator-highlight-anterior-device-assembly.glb",
+          "closeup_camera": [
+            0.0,
+            -11.975000381469727,
+            2.009999990463257
+          ],
+          "target": [
+            0.0,
+            0.025000082328915596,
+            1.8600000143051147
+          ],
+          "local_target": [
+            0.0,
+            -1.8600000143051147,
+            0.02500000037252903
+          ],
+          "closeup_rotation_euler": [
+            -1.5707963705062866,
+            0.0,
+            0.0
+          ],
+          "ortho_scale": 0.8999999761581421
+        },
+        {
+          "component": "lateral-manoeuvring-thrusters",
+          "first_legacy_frame": 170,
+          "last_legacy_frame": 280,
+          "highlight_glb": "terminator-highlight-lateral-manoeuvring-thrusters.glb",
+          "closeup_camera": [
+            1.5700000524520874,
+            -12.449999809265137,
+            0.059999994933605194
+          ],
+          "target": [
+            1.5700000524520874,
+            -0.44999998807907104,
+            -0.09000000357627869
+          ],
+          "local_target": [
+            1.5700000524520874,
+            -0.44999998807907104,
+            -0.09000000357627869
+          ],
+          "closeup_rotation_euler": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "ortho_scale": 0.5
+        },
+        {
+          "component": "twin-main-engine-thrusters",
+          "first_legacy_frame": 311,
+          "last_legacy_frame": 421,
+          "highlight_glb": "terminator-highlight-twin-main-engine-thrusters.glb",
+          "closeup_camera": [
+            -0.3158482015132904,
+            -13.695816993713379,
+            -0.17084938287734985
+          ],
+          "target": [
+            -0.3158482015132904,
+            -1.6958171129226685,
+            -0.32084938883781433
+          ],
+          "local_target": [
+            -0.4300000071525574,
+            1.7000000476837158,
+            -0.05999999865889549
+          ],
+          "closeup_rotation_euler": [
+            -0.2617993950843811,
+            0.3490658402442932,
+            2.6179938316345215
+          ],
+          "ortho_scale": 0.8399999737739563
+        }
+      ],
+      "information_animation": {
+        "blend": "sources/ui/scitek/terminator/terminator-information.blend",
+        "glb": "sources/ui/scitek/terminator/terminator-information.glb",
+        "timeline": "sources/ui/scitek/terminator/information-timeline.json",
+        "fps": 15,
+        "frame_count": 423,
+        "root": "TerminatorResearchRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "material_contract": "Apply explicit timeline material selection and orthographic scale in addition to node rotation."
+      },
+      "status": "Model, preview, wire/highlight variants and complete authored information animation verified; game integration pending",
+      "solid_preview_camera": {
+        "position": [
+          -12.0,
+          -4.0,
+          9.600000381469727
+        ],
+        "rotation_euler": [
+          0.9254405498504639,
+          -3.035193429923311e-08,
+          -1.2565643787384033
+        ],
+        "ortho_scale": 6.510000228881836,
+        "resolution": [
+          576,
+          640
+        ]
+      },
+      "solid_animation": {
+        "type": "root-turntable",
+        "root": "TerminatorResearchRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "frame_count": 60,
+        "fps": 15,
+        "loop_closure_frame": 61
+      },
+      "material_contract": "Four existing authored packed wear images and UVs preserved; GLB embeds four images. New appendages have worn PBR and four geometric abrasions. Blender procedural noise on new parts is not baked.",
+      "base_source": {
+        "id": "openfa:terminator",
+        "path": "sources/docs/assets/reconstruction/ships/terran/terminator/model.blend",
+        "sha256": "b464ef0ec6556f632212335afccc8c9d9e1c42cb4248049f8b5e9f15ed4cb013",
+        "status": "Existing hull/wings/main engines/wear retained; research appendages authored separately"
+      },
+      "whole_information_rotation_euler": [
+        0.22864219546318054,
+        -0.6089792847633362,
+        1.1844273805618286
+      ]
     }
   ]
 }
