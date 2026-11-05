@@ -22,7 +22,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 0 | scitek:mk2-mine | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 1 | scitek:mk2-deep-bore-mine | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 2 | scitek:anti-missile-pod | terran:anti-missile-pod presentation variant | Model, articulated solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
-| 3 | scitek:anti-virus-missile | openfa:anti-virus | Pending |
+| 3 | scitek:anti-virus-missile | openfa:anti-virus presentation variant | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 4 | scitek:asteroid-engines | terran:asteroid-engine | Pending |
 | 5 | scitek:asteroid-tracker | Dedicated model added | Model, solid preview and full authored wire/highlight/zoom information sequence delivered; game check pending |
 | 6 | scitek:building-armour | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |

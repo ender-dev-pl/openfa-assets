@@ -220,3 +220,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Anti-Missile Pod research assembly](media/ui/scitek/anti-missile-pod/solid.png)
 
 [Full technical animation](media/ui/scitek/anti-missile-pod/information.webm) · [Source and integration contract](../sources/ui/scitek/anti-missile-pod/README.md).
+
+### Anti-Virus Missile
+
+![Authored Anti-Virus Missile research assembly](media/ui/scitek/anti-virus-missile/solid.png)
+
+[Full technical animation](media/ui/scitek/anti-virus-missile/information.webm) · [Source and integration contract](../sources/ui/scitek/anti-virus-missile/README.md).
