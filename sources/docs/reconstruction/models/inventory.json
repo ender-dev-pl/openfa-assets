@@ -3600,6 +3600,13 @@
           "sha256": "26c8c65423ce550ab3689cce806dc1ce8a9bfc17543e16132f5b732377c80e9c",
           "final_visual_acceptance": "awaiting-user-review",
           "evidence": "docs/reconstruction/models/seismic-penetrator-reference.json"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/seismic-penetrator/refined/model.blend",
+          "present": true,
+          "sha256": "89c24cbffb8fd5040ac0ab015b527e8a6810eac4430ad2862cd82c351d2b810f",
+          "final_visual_acceptance": "Blender and independent import verified; game integration pending"
         }
       ],
       "acceptance": {
@@ -3641,6 +3648,17 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 21
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/seismic-penetrator/refined/model.blend",
+        "glb": "sources/objects/terran/seismic-penetrator/refined/model.glb",
+        "consumers": [
+          "gameplay",
+          "building-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/24",
+        "package_contract": "One physical solid GLB; alias consumers. Disable presentation turn during gameplay; unit root scale."
       }
     },
     {

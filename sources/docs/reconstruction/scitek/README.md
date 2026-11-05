@@ -45,7 +45,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 21 | scitek:powerplant | Scoped PB23 decks and six cells retained; control, mini-mine and four pipe elbows added | Solid, wire/highlight, 60-frame preview and 564-frame information sequence delivered; game check pending |
 | 22 | scitek:repair-facility | Shared refined terran:repair-facility | Four dishes, droid ports and aerial; solid/wire/highlight,60-frame colour and423-frame information delivered; game check pending |
 | 23 | scitek:screen-generator | Existing PB10 foundation reused; actual lattice masts and field anatomy authored | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
-| 24 | scitek:seismic-penetrator | terran:seismic-penetrator | Pending |
+| 24 | scitek:seismic-penetrator | Shared refined terran:seismic-penetrator | Curved nose/common drill axis retained; slurry circuits, shared solid/wire/highlight,60-frame colour and423-frame information delivered; game check pending |
 | 25 | scitek:shield-x40 | openfa:shield-x40 | Pending |
 | 26 | scitek:shield-x50 | openfa:shield-x50 | Pending |
 | 27 | scitek:solar-matrix | terran:solar-matrix | Pending |

@@ -316,3 +316,9 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Repair Facility](media/ui/scitek/repair-facility/solid.png)
 
 [Technical animation](media/ui/scitek/repair-facility/information.webm) - [Shared source and integration](../sources/ui/scitek/repair-facility/README.md).
+
+### Seismic Penetrator
+
+![Seismic Penetrator](media/ui/scitek/seismic-penetrator/solid.png)
+
+[Technical animation](media/ui/scitek/seismic-penetrator/information.webm) - [Shared source and integration](../sources/ui/scitek/seismic-penetrator/README.md).
