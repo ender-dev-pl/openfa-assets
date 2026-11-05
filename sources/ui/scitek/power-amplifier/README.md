@@ -13,3 +13,22 @@ Information:423 frames/15fps, four named wire groups. Ethereal-vapour-generator2
 Bind scitek:power-amplifier / openfa:presentation/profile/research/20. Paths in gallery/media/ui/scitek/integration.json. Verification covers closed geometry, ray-cast opening, three collars/paired ports/reflector ownership, retained27 scuff nodes, cycle closure, all five native/imported static variants, independent solid cardinal poses, three source-bound information framing comparisons, full423-frame information/import/reload checks and complete video decoding. Game integration and GPU acceptance remain with the main thread.
 
 Build: Blender -b -t 4 --python-exit-code 1 --python build_amplifier.py -- OUTPUT. Run render_preview.py / animate_information.py with INPUT_BLEND OUTPUT while preserving model.json. --keyframes-only is a review subset, not a full deliverable. Geometry/preview-pose/information-state checks run in Blender; device/raster/information/framing checks use Python/Pillow/FFmpeg. Raster checks expect sibling amplifier-preview-poses. Information validation needs saved-source frame88 reload-0088.png; framing validation takes the private original-codec ST20 directory. Outputs belong outside sources.
+
+
+## Independent source material and caption clocks
+
+The corrected information presentation uses material-clock.json rather than treating text visibility as red selection. All 423 source red activity states match: 336 red frames and 333 caption-visible frames. Lead-in flashes, green interruptions during captions and the final red coupling-port hold are retained. Caption timing remains 29..139, 170..280 and 311..421; these intervals do not define the highlight state.
+
+Source-reviewed component transitions are decoded updates 0, 65 and 130 (timeline frames 0, 141 and 282). Source images at the adjacent red states verify vapour-generator, reflector and coupling-port identity; hashes and provenance are recorded in the clock file. The original-clock audit measures only red presence, so this separate semantic boundary review is required.
+
+The client must consume highlight_component for material hue and caption_component for text visibility independently. Use step transitions for hue; do not interpolate the red/green state. Every saved-scene frame and half-frame flash transition was checked. Full renders were compared with the source on/off clock at all 423 frames; 19 independent GLB samples cover every previous mismatch and the original closeup anchors. Camera/geometry remain authored approximations.
+
+The information WebM uses VP9 Profile 1 lossless RGB (gbrp): all decoded RGB frames match native renders exactly. Lossless RGB avoids chroma-subsampling artifacts on tiny coloured lines.
+
+The information sequence uses 64 Cycles samples. Four-sample rendering lost a source-visible subpixel reflector fragment at frame 266; controlled 16/64-sample probes retained it without changing geometry, line width or camera. Antialiasing therefore changes pixels beyond the fifteen hue-clock discrepancy frames.
+
+All four exported information materials explicitly declare KHR_materials_unlit. Apply timeline hue to unlit technical lines; a black PBR base plus emission does not preserve the native edge response of tiny red fragments. Independent import checks reconstruct the same pure emission graph as the native scene.
+
+Run verify_subpixel_import.py -- OUTPUT in Blender after the full render to reproduce the frame266 import regression check.
+
+Run verify_information.py OUTPUT [MATERIAL_CLOCK_FILE] with Pillow/FFmpeg and access to the registered global material-clock audit. Run verify_material_state.py -- OUTPUT MATERIAL_CLOCK_FILE in Blender before movie verification. The default clock path is alongside the verification script. The static model, colour turntable and other geometry variants are unchanged by this correction.
