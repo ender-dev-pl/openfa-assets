@@ -110,6 +110,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/hardpoints/warp-generator/model.blend) · [GLB](../sources/docs/assets/reconstruction/hardpoints/warp-generator/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Warp Generator](../gallery/media/objects/shared/warp-generator/refined/render.png)
+
+[Blend](../sources/objects/shared/warp-generator/refined/model.blend) · [GLB](../sources/objects/shared/warp-generator/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/shared/warp-generator/refined/animation-00.webm)
+
 ## Deflector
 
 `openfa:deflector`

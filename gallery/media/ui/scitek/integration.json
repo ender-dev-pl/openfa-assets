@@ -7527,6 +7527,171 @@
         "material_portability": "gallery/media/ui/scitek/virus-missile/material-portability-verification.json"
       },
       "status": "Approximately80% authored visual refinement; Blender/import verified; client check pending"
+    },
+    {
+      "id": "scitek:warp-generator",
+      "name": "Sci-Tek Warp Generator",
+      "binding": "openfa:presentation/profile/research/33",
+      "legacy_index": 33,
+      "native": "gallery/media/ui/scitek/warp-generator/tile-native.png",
+      "disabled": "gallery/media/ui/scitek/warp-generator/tile-disabled.png",
+      "hires": "gallery/media/ui/scitek/warp-generator/tile-4x.png",
+      "studio_render": "gallery/media/ui/scitek/warp-generator/solid.png",
+      "blend": "sources/objects/shared/warp-generator/refined/model.blend",
+      "glb": "sources/objects/shared/warp-generator/refined/model.glb",
+      "readme": "sources/ui/scitek/warp-generator/README.md",
+      "gallery_views": [
+        {
+          "label": "Technical information sequence \u2014423frames",
+          "image": "gallery/media/ui/scitek/warp-generator/information-087.png",
+          "video": "gallery/media/ui/scitek/warp-generator/information.webm",
+          "blend": "sources/ui/scitek/warp-generator/warp-generator-information.blend",
+          "glb": "sources/ui/scitek/warp-generator/warp-generator-information.glb"
+        },
+        {
+          "label": "Shared solid rotation",
+          "image": "gallery/media/ui/scitek/warp-generator/solid.png",
+          "video": "gallery/media/ui/scitek/warp-generator/preview.webm",
+          "blend": "sources/objects/shared/warp-generator/refined/model.blend",
+          "glb": "sources/objects/shared/warp-generator/refined/model.glb"
+        },
+        {
+          "label": "Whole assembly wireframe",
+          "image": "gallery/media/ui/scitek/warp-generator/wireframe.png",
+          "blend": "sources/objects/shared/warp-generator/refined/model.blend",
+          "glb": "sources/ui/scitek/warp-generator/warp-generator-wireframe.glb"
+        },
+        {
+          "label": "Technical closeup: warp-field-generator",
+          "image": "gallery/media/ui/scitek/warp-generator/highlight-warp-field-generator.png",
+          "glb": "sources/ui/scitek/warp-generator/warp-generator-highlight-warp-field-generator.glb",
+          "blend": "sources/ui/scitek/warp-generator/warp-generator-information.blend"
+        },
+        {
+          "label": "Technical closeup: flux-capacitor-and-energy-ducts",
+          "image": "gallery/media/ui/scitek/warp-generator/highlight-flux-capacitor-and-energy-ducts.png",
+          "glb": "sources/ui/scitek/warp-generator/warp-generator-highlight-flux-capacitor-and-energy-ducts.glb",
+          "blend": "sources/ui/scitek/warp-generator/warp-generator-information.blend"
+        },
+        {
+          "label": "Technical closeup: energy-flow-monitoring",
+          "image": "gallery/media/ui/scitek/warp-generator/highlight-energy-flow-monitoring.png",
+          "glb": "sources/ui/scitek/warp-generator/warp-generator-highlight-energy-flow-monitoring.glb",
+          "blend": "sources/ui/scitek/warp-generator/warp-generator-information.blend"
+        }
+      ],
+      "information_phases": [
+        {
+          "component": "warp-field-generator",
+          "first_legacy_frame": 29,
+          "last_legacy_frame": 139,
+          "local_target": [
+            0,
+            -0.78,
+            0
+          ],
+          "closeup_rotation_euler": [
+            1.05,
+            0,
+            0
+          ],
+          "ortho_scale": 1.8
+        },
+        {
+          "component": "flux-capacitor-and-energy-ducts",
+          "first_legacy_frame": 170,
+          "last_legacy_frame": 280,
+          "local_target": [
+            0,
+            0.47,
+            0
+          ],
+          "closeup_rotation_euler": [
+            0,
+            0,
+            1.5707963267948966
+          ],
+          "ortho_scale": 1.65
+        },
+        {
+          "component": "energy-flow-monitoring",
+          "first_legacy_frame": 311,
+          "last_legacy_frame": 421,
+          "local_target": [
+            0,
+            -0.99,
+            0
+          ],
+          "closeup_rotation_euler": [
+            0.5,
+            0,
+            0
+          ],
+          "ortho_scale": 0.85
+        }
+      ],
+      "information_animation": {
+        "blend": "sources/ui/scitek/warp-generator/warp-generator-information.blend",
+        "glb": "sources/ui/scitek/warp-generator/warp-generator-information.glb",
+        "timeline": "sources/ui/scitek/warp-generator/information-timeline.json",
+        "fps": 15,
+        "frame_count": 423,
+        "root": "WarpGeneratorRoot",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "solid_animation": {
+        "type": "whole-device-rotation",
+        "root": "WarpGeneratorRoot",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "frame_count": 60,
+        "fps": 15,
+        "turns": 1
+      },
+      "shared_object": {
+        "id": "openfa:warp-generator",
+        "blend": "sources/objects/shared/warp-generator/refined/model.blend",
+        "glb": "sources/objects/shared/warp-generator/refined/model.glb",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "consumers": [
+          "ship-hardpoints",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "gameplay_pose_frame": 1,
+        "disable_presentation_rotation_in_gameplay": true
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/shared/warp-generator/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/warp-generator/warp-generator-information.glb",
+        "technical_timeline": "sources/ui/scitek/warp-generator/information-timeline.json",
+        "gallery_only_baked_glbs": [
+          "sources/ui/scitek/warp-generator/warp-generator-wireframe.glb",
+          "sources/ui/scitek/warp-generator/warp-generator-highlight-warp-field-generator.glb",
+          "sources/ui/scitek/warp-generator/warp-generator-highlight-flux-capacitor-and-energy-ducts.glb",
+          "sources/ui/scitek/warp-generator/warp-generator-highlight-energy-flow-monitoring.glb"
+        ],
+        "package_rule": "One shared solid and one information GLB/timeline. Baked gallery variants are not extra runtime models."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "Every technical segment is an actual evaluated shared-solid edge.",
+        "verification": "gallery/media/ui/scitek/warp-generator/wire-correspondence-verification.json",
+        "anatomy_verification": "gallery/media/ui/scitek/warp-generator/anatomy-verification.json",
+        "material_portability": "gallery/media/ui/scitek/warp-generator/material-portability-verification.json"
+      },
+      "status": "Approximately80% authored visual refinement; Blender/import verified; client check pending"
     }
   ]
 }

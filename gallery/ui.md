@@ -360,3 +360,9 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Virus Missile](media/ui/scitek/virus-missile/solid.png)
 
 [Shared model and technical presentation](../sources/ui/scitek/virus-missile/README.md).
+
+### Warp Generator
+
+![Warp Generator](media/ui/scitek/warp-generator/solid.png)
+
+[Shared model and technical presentation](../sources/ui/scitek/warp-generator/README.md).

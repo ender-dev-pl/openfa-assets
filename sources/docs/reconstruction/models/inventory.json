@@ -32776,6 +32776,13 @@
           "present": true,
           "sha256": "4b9ce515dd8d97644d7ec457d7d8fef73856c0d99b9006c4106b09a6a3c556a2",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/shared/warp-generator/refined/model.blend",
+          "present": true,
+          "sha256": "a7e3af76b132d8c1e54df490a2d9638c64606950abcb64a438d0e0babb3d6e26",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -32792,7 +32799,23 @@
         "Determine whether visible mounts differ by culture; do not multiply shared definitions or assume shared geometry without evidence.",
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established."
+      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established.",
+      "authoritative_refined": {
+        "blend": "sources/objects/shared/warp-generator/refined/model.blend",
+        "glb": "sources/objects/shared/warp-generator/refined/model.glb",
+        "consumers": [
+          "ship-hardpoints",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/33",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "package_contract": "One shared physical solid; alias consumers. Preserve Root unit scale; gameplay frame1 without presentation rotation."
+      }
     },
     {
       "category": "hardpoints",
