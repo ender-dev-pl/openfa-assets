@@ -3383,8 +3383,8 @@
       },
       "hires": "gallery/media/ui/scitek/anti-missile-pod/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/anti-missile-pod/solid.png",
-      "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
-      "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.glb",
+      "blend": "sources/objects/terran/anti-missile-pod/refined/model.blend",
+      "glb": "sources/objects/terran/anti-missile-pod/refined/model.glb",
       "readme": "sources/ui/scitek/anti-missile-pod/README.md",
       "gallery_views": [
         {
@@ -3398,31 +3398,31 @@
           "label": "Solid tile/detail and preview rotation",
           "image": "gallery/media/ui/scitek/anti-missile-pod/solid.png",
           "video": "gallery/media/ui/scitek/anti-missile-pod/preview.webm",
-          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
-          "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.glb"
+          "blend": "sources/objects/terran/anti-missile-pod/refined/model.blend",
+          "glb": "sources/objects/terran/anti-missile-pod/refined/model.glb"
         },
         {
           "label": "Green technical wireframe",
           "image": "gallery/media/ui/scitek/anti-missile-pod/wireframe.png",
-          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
+          "blend": "sources/objects/terran/anti-missile-pod/refined/model.blend",
           "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-wireframe.glb"
         },
         {
           "label": "Wireframe closeup: twin-tracking-dishes",
           "image": "gallery/media/ui/scitek/anti-missile-pod/highlight-twin-tracking-dishes.png",
-          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
+          "blend": "sources/objects/terran/anti-missile-pod/refined/model.blend",
           "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-highlight-twin-tracking-dishes.glb"
         },
         {
           "label": "Wireframe closeup: alloy-plasma-barrel",
           "image": "gallery/media/ui/scitek/anti-missile-pod/highlight-alloy-plasma-barrel.png",
-          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
+          "blend": "sources/objects/terran/anti-missile-pod/refined/model.blend",
           "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-highlight-alloy-plasma-barrel.glb"
         },
         {
           "label": "Wireframe closeup: armoured-plasma-base",
           "image": "gallery/media/ui/scitek/anti-missile-pod/highlight-armoured-plasma-base.png",
-          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
+          "blend": "sources/objects/terran/anti-missile-pod/refined/model.blend",
           "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-highlight-armoured-plasma-base.glb"
         }
       ],
@@ -3500,7 +3500,7 @@
         "source_red_frames": 336,
         "caption_visible_frames": 333
       },
-      "status": "Model, preview, wire/highlight variants and complete authored information animation verified; game integration pending",
+      "status": "Shared31-mesh articulated Pod; source-clock/native/import verified; client aiming/scale check pending",
       "solid_preview_camera": {
         "position": [
           -4.0,
@@ -3904,7 +3904,42 @@
         0.2618466913700104,
         0.12871673703193665,
         -0.4466756284236908
-      ]
+      ],
+      "shared_object": {
+        "id": "terran:anti-missile-pod",
+        "blend": "sources/objects/terran/anti-missile-pod/refined/model.blend",
+        "glb": "sources/objects/terran/anti-missile-pod/refined/model.glb",
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "root": "PodResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "moving_node": "PodTrackingHead",
+        "fixed_node": "PodFixedBase",
+        "fixed_base_scale_z": 0.7222222222222222,
+        "aim_axis": "localZ",
+        "disable_automatic_preview_playback_in_gameplay": true,
+        "preserve_child_bind_transforms": true,
+        "technical_head_pose_frame": 1
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/anti-missile-pod/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-information.glb",
+        "technical_timeline": "sources/ui/scitek/anti-missile-pod/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical solids and baked variants authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "All10,392 selected technical segments are evaluated physical edges at the initial head pose.",
+        "verification": "gallery/media/ui/scitek/anti-missile-pod/shared-geometry-verification.json"
+      }
     },
     {
       "id": "scitek:anti-virus-missile",

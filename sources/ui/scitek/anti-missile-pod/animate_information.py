@@ -52,14 +52,20 @@ for node in materials.values():
 s.frame_set(1);bpy.ops.wm.save_as_mainfile(filepath=str(out/'anti-missile-pod-information.blend'))
 bpy.ops.object.select_all(action='DESELECT');root.select_set(True);s.camera.select_set(True)
 for o in wires.values():o.select_set(True)
+# Export direct unlit colour; native emission nodes remain unchanged.
+temporary=[]
+for ob in wires.values():
+    nt=ob.data.materials[0].node_tree;em=nt.nodes.get('Emission');output=nt.nodes.get('Material Output');rgb=nt.nodes.new('ShaderNodeRGB');rgb.outputs[0].default_value=em.inputs['Color'].default_value;nt.links.new(rgb.outputs[0],output.inputs['Surface']);temporary.append((nt,em,output,rgb))
 bpy.ops.export_scene.gltf(filepath=str(out/'anti-missile-pod-information.glb'),use_selection=True,export_apply=True,export_animations=True,export_animation_mode='ACTIVE_ACTIONS',export_cameras=True,export_format='GLB')
+for nt,em,output,rgb in temporary:
+    nt.links.new(em.outputs[0],output.inputs['Surface']);nt.nodes.remove(rgb)
 frames=out/'frames';frames.mkdir(exist_ok=True)
 reuse='--reuse-native-frames' in sys.argv
 if reuse:assert sorted(p.name for p in frames.glob('*.png'))==[f'{i:03}.png' for i in range(423)]
 requested=[f+1 for f in import_samples] if '--keyframes-only' in sys.argv else range(1,424)
 for f in ([] if reuse else requested):
     s.frame_set(f);s.render.filepath=str(frames/f'{f-1:03}.png');bpy.ops.render.render(write_still=True)
-manifest=dict(material_clock_sha256=hashlib.sha256(clock_path.read_bytes()).hexdigest(),material_clock_schema=1,independent_import_samples=import_samples,highlighted_frames=sum(clock['red_active_by_frame']),caption_visible_frames=sum(x>=0 for x in clock['caption_phase_by_frame']),issue=208,research_id='scitek:anti-missile-pod',source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),renderer_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),fps=15,frame_count=423,rendered_frame_count=len(list(frames.glob('*.png'))),native_frame_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(frames.glob('*.png'))},phases=phases,root='PodResearchRoot',root_scale=list(root.scale),component_nodes={name:o.name for name,o in wires.items()},timing='Legacy 423-frame source red activity and caption visibility are independent. Explicit source-reviewed component phase boundaries; authored camera/pose interpolation.',client_contract='Evaluate timeline camera/root transform and apply red to highlight_component, green to other components. Material hue and orthographic scale animation require timeline metadata; GLB alone does not portably retain them.',timeline=timeline)
+manifest=dict(import_material_contract='Pure unlit technical lines; apply explicit timeline hue.',material_clock_sha256=hashlib.sha256(clock_path.read_bytes()).hexdigest(),material_clock_schema=1,independent_import_samples=import_samples,highlighted_frames=sum(clock['red_active_by_frame']),caption_visible_frames=sum(x>=0 for x in clock['caption_phase_by_frame']),issue=208,research_id='scitek:anti-missile-pod',source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),renderer_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),fps=15,frame_count=423,rendered_frame_count=len(list(frames.glob('*.png'))),native_frame_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(frames.glob('*.png'))},phases=phases,root='PodResearchRoot',root_scale=list(root.scale),component_nodes={name:o.name for name,o in wires.items()},timing='Legacy 423-frame source red activity and caption visibility are independent. Explicit source-reviewed component phase boundaries; authored camera/pose interpolation.',client_contract='Evaluate timeline camera/root transform and apply red to highlight_component, green to other components. Material hue and orthographic scale animation require timeline metadata; GLB alone does not portably retain them.',timeline=timeline)
 (out/'information-timeline.json').write_text(json.dumps(manifest,indent=2)+'\n')
 # Prove glTF node geometry/animation can be evaluated independently at caption
 # closeups, using the explicit portable camera contract.
@@ -71,8 +77,6 @@ for f in import_samples:
     for name in components:
         o=bpy.data.objects.get(name+' technical wire');assert o
         # Exported material animation is not relied upon. Reapply explicit hue.
-        mat=o.data.materials[0];bs=mat.node_tree.nodes.get('Principled BSDF')
-        if bs:
-            bs.inputs['Base Color'].default_value=(0,0,0,1);bs.inputs['Emission Color'].default_value=(.9,.003,.001,1) if name==entry['highlight_component'] else (0,.72,.005,1);bs.inputs['Emission Strength'].default_value=1
+        mat=o.data.materials[0];nt=mat.node_tree;nt.nodes.clear();em=nt.nodes.new('ShaderNodeEmission');em.inputs['Color'].default_value=(.9,.003,.001,1) if name==entry['highlight_component'] else (0,.72,.005,1);output=nt.nodes.new('ShaderNodeOutputMaterial');nt.links.new(em.outputs[0],output.inputs[0])
     s.camera.location=entry['camera_position'];s.camera.rotation_euler=entry['camera_euler'];s.camera.data.ortho_scale=entry['ortho_scale'];s.render.filepath=str(out/f'imported-{f:03}.png');bpy.ops.render.render(write_still=True)
 print('TRACKER_INFORMATION_RENDERED',len(timeline))

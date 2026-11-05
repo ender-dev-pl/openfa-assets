@@ -655,6 +655,13 @@
           "present": true,
           "sha256": "35d1dca30489613d235c64cc9fbf40acfe124f655718eee81a4677108a438a01",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/anti-missile-pod/refined/model.blend",
+          "present": true,
+          "sha256": "2050c0508aca2a06a95d7c747b04114d4d8af6d0e6497d9b1b6261e44e206489",
+          "final_visual_acceptance": "Native/import rig and diagrams verified; client aiming/scale pending"
         }
       ],
       "acceptance": {
@@ -696,6 +703,30 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 3
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/anti-missile-pod/refined/model.blend",
+        "glb": "sources/objects/terran/anti-missile-pod/refined/model.glb",
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; preserve articulated rig and disable automatic preview playback.",
+        "root": "PodResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "moving_node": "PodTrackingHead",
+        "fixed_node": "PodFixedBase",
+        "fixed_base_scale_z": 0.7222222222222222,
+        "aim_axis": "localZ",
+        "disable_automatic_preview_playback_in_gameplay": true,
+        "preserve_child_bind_transforms": true,
+        "technical_head_pose_frame": 1
       }
     },
     {

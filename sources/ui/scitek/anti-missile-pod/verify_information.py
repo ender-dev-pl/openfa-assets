@@ -6,7 +6,8 @@ o=Path(sys.argv[1]);clock_path=Path(sys.argv[2]) if len(sys.argv)>2 else Path(__
 assert d['frame_count']==423 and len(d['timeline'])==423
 assert d['material_clock_sha256']==hashlib.sha256(clock_path.read_bytes()).hexdigest()
 assert d['renderer_sha256']==hashlib.sha256((clock_path.parent/'animate_information.py').read_bytes()).hexdigest()
-assert d['source_sha256']==hashlib.sha256((clock_path.parent/'anti-missile-pod.blend').read_bytes()).hexdigest()
+source_blend=Path(sys.argv[sys.argv.index('--source-blend')+1]) if '--source-blend' in sys.argv else clock_path.parent/'anti-missile-pod.blend'
+assert d['source_sha256']==hashlib.sha256(source_blend.read_bytes()).hexdigest()
 relative='sources/docs/reconstruction/scitek/material-clocks.json';candidates=[p/r for p in Path(__file__).resolve().parents for r in [relative,relative.removeprefix('sources/')]]+[Path('../openfa-assets')/relative]
 audit_path=next(p for p in candidates if p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest()==clock['source_clock_audit_sha256'])
 reference=json.loads(audit_path.read_text())['records'][2]

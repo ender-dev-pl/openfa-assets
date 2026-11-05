@@ -70,6 +70,14 @@
 
 [Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb03/animation-00.webm)
 
+**Additional iteration — shared-refined**
+
+![Anti-Missile Pod](../gallery/media/objects/terran/anti-missile-pod/refined/render.png)
+
+[Blend](../sources/objects/terran/anti-missile-pod/refined/model.blend) · [GLB](../sources/objects/terran/anti-missile-pod/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/anti-missile-pod/refined/animation-00.webm)
+
 ## Solar Panel
 
 `terran:solar-panel`
