@@ -106,3 +106,35 @@ def council(info):
   for n in range(1073,1148,4):T.key(hero['arms'][1],'rotation_euler',n,(-1.0,.06,.08*math.sin(n*.55)))
 
 BUILDERS['council']=council
+
+def alien_body(info):
+ root=T.empty('alien speaker');armor=T.material('alien banded armor',(.10,.055,.11),.35,.5);skin=T.material('alien dark green',(.025,.085,.055),.15,.65);band=T.material('alien copper purple bands',(.26,.13,.18),.5,.45);eye=T.material('alien eyes',(.28,.5,.07),worn=False,emit=.4)
+ T.ball('alien torso',(0,.1,2.5),(1.35,.7,1.3),armor,root)
+ for side in [-1,1]:
+  T.ball('alien shoulder',(side*1.4,.1,3.2),(.85,.65,.75),armor,root)
+  for i in range(4):T.torus('shoulder armor band',(side*1.4,.1,2.8+i*.22),.61,.065,band,root)
+  for j in range(3):T.tube('back spine',(side*(.9+j*.22),.5,3.8),(side*(1.35+j*.33),.7,4.8-j*.15),.08,skin,root)
+ head=T.empty('alien head',(0,0,4.6),root);T.ball('alien face',(0,-.18,-.15),(.76,.59,.8),skin,head)
+ rings=[(-.2,.78,.54),(.45,1.35,.72),(.85,1.06,.63),(1.25,.25,.23)];verts=[]
+ for z,rx,ry in rings:
+  for i in range(12):a=i*math.tau/12;verts.append((rx*math.cos(a),ry*math.sin(a),z))
+ faces=[]
+ for j in range(3):
+  for i in range(12):faces.append((j*12+i,j*12+(i+1)%12,(j+1)*12+(i+1)%12,(j+1)*12+i))
+ faces.extend([tuple(range(11,-1,-1)),tuple(range(36,48))]);T.polygon('flared alien helmet',verts,faces,skin,head)
+ for side in [-1,1]:
+  T.tube('helmet horn',(side*.9,.1,.7),(side*1.5,.15,1.45),.1,skin,head);T.ball('glowing alien eye',(side*.30,-.73,-.18),(.18,.04,.10),eye,head)
+ jaw=T.empty('alien jaw',(0,-.25,-.65),head);T.ball('alien chin',(0,-.13,0),(.55,.4,.22),skin,jaw)
+ for i in range(5):T.cube('chest band',(0,-.66,2.15+i*.25),(1.05,.045,.055),band,root,.02)
+ T.talk(dict(jaw=jaw),info['source_start'],info['source_end'])
+ for n,v in [(info['source_start'],(0,0,-.10)),(info['source_end'],(.04,0,.10))]:T.key(head,'rotation_euler',n,v)
+ return root
+
+def alien(info):
+ if info['id'] in ['E3','E4']:
+  # Standalone generated interference bridges, keeping original cut timing.
+  T.signal(info);return
+ T.background('space').scale.x=3;T.light('alien green rim',(-4,2,8),1000,(.25,.75,.40));T.light('alien face key',(1,-6,7),1000,(.65,.70,.52));alien_body(info)
+ loc,target,lens={'M':((3,-12,5.4),(0,0,4),38),'N':((8,-9,5),(0,0,4.2),42),'O':((1.5,-8,5),(0,0,4.75),42)}[info['id']];T.camera(loc,target,lens)
+
+BUILDERS['alien']=alien
