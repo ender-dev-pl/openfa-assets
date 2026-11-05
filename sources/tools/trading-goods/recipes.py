@@ -427,3 +427,39 @@ def medical(n):
   M.polyline('arched carry handle',[(-.65,0,1.0),(-.65,0,1.4),(.65,0,1.4),(.65,0,1.0)],.07,grey,p)
   for side in [-1,1]:o=M.lathe('sealed pointed end',[(.3,0),(0,.3)],purple,p);o.location=(side*.9,0,.6);o.rotation_euler.y=side*math.pi/2
 BUILDERS.update({i:medical for i in range(69,78)})
+
+def ores(n):
+ from pathlib import Path
+ if n in [78,79,80,81]:
+  src=Path(__file__).resolve().parents[2]/'docs/assets/reconstruction/trading-goods/TI001/TI001.blend'
+  with M.bpy.data.libraries.load(str(src),link=False) as (data,loaded):loaded.objects=data.objects
+  for o in loaded.objects:
+   if o.type in ['CAMERA','LIGHT']:M.bpy.data.objects.remove(o,do_unlink=True);continue
+   M.COL.objects.link(o);o.name=o.name.replace('TI001',M.ID).replace('beer','bulk ore')
+  return
+ gold=M.mat('ore canister aged gold',(.46,.34,.09),.7,.5);grey=M.mat('canister gray metal',(.27,.31,.31),.6,.6);dark=M.mat('recessed instrument',(.025,.035,.03),.4,.6);red=M.mat('red instrumentation',(.55,.012,.005),emit=.15);col={82:(.45,.33,.06),83:(.27,.12,.035),84:(.20,.23,.20),85:(.22,.14,.26),86:(.20,.47,.035),87:(.45,.006,.008)}[n];mineral=M.mat('actual coloured mineral specimen',col,.1,.8);p=M.root('individual ore packaging')
+ if n in [82,83,84]:
+  M.lathe('rounded gold ore canister',[(.55,0),(.75,.1),(.75,1.6),(.80,1.65),(.60,1.9),(.25,2.0),(.1,2.05)],gold,p)
+  for z in [.1,.6,1.1,1.6]:M.ring('canister cage hoop',(0,0,z),.88,.035,gold,p)
+  for j in range(8):a=j*math.tau/8;M.rod('canister protective upright',(.88*math.cos(a),.88*math.sin(a),0),(.88*math.cos(a),.88*math.sin(a),1.65),.035,gold,p)
+  M.cube('front terminal',(0,-.9,.35),(.3,.12,.22),grey,p);M.cube('red terminal screen',(0,-1.03,.4),(.20,.01,.07),red,p);M.cube('side cargo block',(-.95,0,.5),(.18,.23,.18),gold,p)
+  M.cube('small sample tray',(1.2,-.6,.1),(.35,.3,.1),gold,p)
+  for j in range(12):a=j*2.4;r=(j%3)*.07;M.ball('ore granule sample',(1.2+r*math.cos(a),-.6+r*math.sin(a),.25+(j%2)*.05),(.065,)*3,mineral,p,1)
+ elif n==85:
+  purple=M.mat('Dragonium armored packages',(.32,.25,.36),.3,.6)
+  for i,(x,y,z) in enumerate([(-.45,-.3,.35),(.5,.4,.65)]):
+   q=M.root('individual armored ore case '+str(i),(x,y,z));q.parent=p;M.cube('armored case body',(0,0,0),(.8,.4,.3),purple,q,bevel=.12)
+   for x0 in [-.55,0,.55]:M.cube('case reinforcing strap',(x0,0,0),(.025,.42,.32),grey,q)
+   M.cube('recessed case latch',(0,-.42,0),(.18,.02,.06),dark,q)
+  M.cube('folded side cargo rail',(1.45,.3,.35),(.35,.15,.12),grey,p)
+ else:
+  shell=M.mat('green high-grade flask' if n==86 else 'red high-grade flask',col,.35,.4);M.lathe('spherical lower high-grade flask',[(.3,0),(.65,.1),(.85,.45),(.8,.75),(.4,1),(.3,1.15),(.3,1.8),(.15,2),(.12,2.45)],shell,p)
+  for z,r in [(.2,.72),(.5,.84),(.9,.54),(1.7,.32)]:M.ring('flask assembly seam',(0,0,z),r,.025,shell,p)
+  M.rod('top hand valve',(-.38,0,2.45),(.38,0,2.45),.055,shell,p)
+  for side in [-1,1]:M.polyline('flask protective side handle',[(side*.3,0,1.65),(side*.48,0,1.65),(side*.48,0,1.05),(side*.3,0,1.05)],.025,shell,p)
+ # The mineral shown in the original inset is authored as a separate 3D specimen, never a projected image.
+ x=1.65;z=1.55
+ for a,b in [((x-.45,.35,z-.55),(x+.45,.35,z-.55)),((x+.45,.35,z-.55),(x+.45,.35,z+.55)),((x+.45,.35,z+.55),(x-.45,.35,z+.55)),((x-.45,.35,z+.55),(x-.45,.35,z-.55))]:M.rod('specimen display frame',a,b,.012,gold,p)
+ M.rod('specimen support',(x,.35,.1),(x,.35,z-.55),.012,gold,p);r=M.ball('separate mineral specimen',(x,.33,z),(.30,.14,.42),mineral,p,2)
+ for v in r.data.vertices:v.co*=1+.13*math.sin(v.co.x*19+v.co.z*13)
+BUILDERS.update({i:ores for i in range(78,88)})

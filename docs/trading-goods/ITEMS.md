@@ -79,16 +79,16 @@
 | 74 | Phantom (APV) | coloured_model_verified |
 | 75 | Judgement Day (APV) | coloured_model_verified |
 | 76 | Silicon Death (APV) | coloured_model_verified |
-| 77 | Selenium Ore | planned |
-| 78 | Asteros Ore | planned |
-| 79 | Barium Ore | planned |
-| 80 | Crystalite Ore | planned |
-| 81 | Quazinc Ore | planned |
-| 82 | Bytanium Ore | planned |
-| 83 | Korellium Ore | planned |
-| 84 | Dragonium Ore | planned |
-| 85 | Traxium Ore | planned |
-| 86 | Nexos Ore | planned |
+| 77 | Selenium Ore | coloured_model_verified |
+| 78 | Asteros Ore | coloured_model_verified |
+| 79 | Barium Ore | coloured_model_verified |
+| 80 | Crystalite Ore | coloured_model_verified |
+| 81 | Quazinc Ore | coloured_model_verified |
+| 82 | Bytanium Ore | coloured_model_verified |
+| 83 | Korellium Ore | coloured_model_verified |
+| 84 | Dragonium Ore | coloured_model_verified |
+| 85 | Traxium Ore | coloured_model_verified |
+| 86 | Nexos Ore | coloured_model_verified |
 | 87 | Explosive Missile | planned |
 | 88 | Area Explosive Missile | planned |
 | 89 | Napalm Missile | planned |
