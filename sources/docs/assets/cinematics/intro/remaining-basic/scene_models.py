@@ -78,7 +78,7 @@ def battle(info):
   for fc in c.animation_data.action.fcurves:
    for k in fc.keyframe_points:k.interpolation='CONSTANT'
  else:
-  T.camera((0,-15,2.2),(0,0,2.6),45);T.light('escape warm key',(-3,-3,9),1000,(1,.7,.4));ground=T.material('escape ground',(.09,.10,.025));T.cube('escape ground',(0,2,-.3),(18,18,.3),ground);rock=T.material('escape rock',(.10,.055,.10));T.ball('large broken rock',(5,8,4),(9,3,6),rock,sub=1);a=T.human('escaping figure',uniform=(.045,.09,.045),skin=(.31,.22,.15));cloud=blast('escape explosion',(3,6,2),960,size=5)
+  T.camera((0,-15,3.1),(0,0,3.1),34);T.light('escape warm key',(-3,-3,9),1000,(1,.7,.4));ground=T.material('escape ground',(.09,.10,.025));T.cube('escape ground',(0,2,-.3),(18,18,.3),ground);rock=T.material('escape rock',(.10,.055,.10));T.ball('large broken rock',(5,8,4),(9,3,6),rock,sub=1);a=T.human('escaping figure',uniform=(.045,.09,.045),skin=(.31,.22,.15));cloud=blast('escape explosion',(3,6,2),960,size=5)
   for n in range(959,978,2):
    phase=(n-959)*.9;T.key(a['root'],'location',n,(0,(n-959)*.18,.25+.22*abs(math.sin(phase))))
    for i,leg in enumerate(a['legs']):T.key(leg,'rotation_euler',n,(.7*math.sin(phase+i*math.pi),0,0))

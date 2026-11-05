@@ -32,3 +32,9 @@ Ranges are inclusive and zero-based. One-frame black samples occur at several de
 Each major milestone is rendered/inspected in actual Blender, committed and pushed before the next. Native scenes remain separate. Static GLB imports are geometric interchange checks only; material baking and real-time game integration are outside this pass.
 
 [Source plan](../../sources/docs/assets/cinematics/intro/remaining-basic/shot-plan.json) · [Previous source checkpoint](intro-reconstruction.md)
+
+## Basic pass completed
+
+All twenty planned remaining shots are built as independent editable Blender scenes, with static GLB geometry checks and inspected three-frame previews. The full assembly contains 24 scene strips including the preserved first sequence, spans native frames 1–3748 at 24 fps, and retains the first sequence's three cross-dissolves. The new shots use their observed cut boundaries; later matching of transitions and distortion is deferred.
+
+See [complete source and rebuild instructions](../../sources/docs/assets/cinematics/intro/remaining-basic/README.md), [full editable assembly](../../sources/docs/assets/cinematics/intro/remaining-basic/full-intro-basic.blend), and [per-shot source plan](../../sources/docs/assets/cinematics/intro/remaining-basic/shot-plan.json). The review proxy is silent and sampled at 6 fps; native scene animation remains 24 fps.

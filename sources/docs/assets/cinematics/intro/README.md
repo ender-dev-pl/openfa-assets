@@ -1,6 +1,8 @@
 # Editable intro reconstruction
 
-Checkpoint through original zero-based frame **412**, inclusive: **826 frames at 24 fps**, **34.4167 seconds**, **640×480 letterbox**.
+The complete film now has a [basic editable assembly](remaining-basic/README.md), covering original frames **0–1873**: 24 scene strips, **3748 frames at 24 fps** (156.1667 seconds). [Open the full project](remaining-basic/full-intro-basic.blend). The remaining twenty shots establish geometry, framing and coarse motion; refining is deferred.
+
+Preserved first-sequence checkpoint through original zero-based frame **412**, inclusive: **826 frames at 24 fps**, **34.4167 seconds**, **640×480 letterbox**.
 
 Open [the current Blender project](stages/first-sequence-v8-to-frame-412/first-sequence-to-412.blend). Its MASTER scene contains four independent scene strips and three native CROSS dissolves. Choose a source scene in Blender to edit its 3D objects.
 
