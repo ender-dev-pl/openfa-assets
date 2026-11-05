@@ -239,3 +239,37 @@ def art_food(n):
   f.extend([(0,1,3,2),(0,2+N*2,3+N*2,1)]);o=M.mesh('whole cheese wheel with removed wedge',v,f,wax);o.data.materials.append(cheese);o.data.polygons[-1].material_index=1;o.data.polygons[-2].material_index=1
   for i in range(8):x=.2+i*.13;M.ball('cheese cut-face hole',(x,.45*x,.15+(i%3)*.14),(.045,.015,.045),wood,sub=1)
 BUILDERS.update({i:art_food for i in range(38,49)})
+
+def storage(n):
+ sack=M.mat('coarse sack cloth',(.37,.25,.10),rough=.95);metal=M.mat('worn green storage alloy',(.15,.25,.19),.45,.65);dark=M.mat('dark recessed frame',(.045,.07,.06),.3,.85)
+ if n==49:
+  for i,(x,y,h) in enumerate([(-.8,.3,1.3),(.1,.5,1.5),(.9,.25,1.2),(-.3,-.5,1.1),(.7,-.55,1.2)]):
+   p=M.root('individual tied grain sack '+str(i),(x,y,0));M.lathe('bulging woven sack',[(.30,0),(.50,.1),(.52,h*.4),(.4,h*.85),(.18,h),(.07,h+.14)],sack,p);M.ring('tied sack mouth',(0,0,h),.15,.025,dark,p)
+  M.ball('flat foreground grain sack',(-.6,-1,.2),(.65,.38,.2),sack)
+ elif n==50:
+  green=M.mat('packed green seaweed',(.035,.25,.012),rough=.95)
+  for i,(x,y,z) in enumerate([(-.6,.25,1.1),(.65,.25,1.1),(0,-.4,0)]):
+   p=M.root('stacked open mesh produce crate '+str(i),(x,y,z));M.cube('crate floor',(0,0,.04),(.58,.48,.04),metal,p)
+   for side in [-1,1]:
+    for j in range(9):
+     xx=-.55+j*.137;M.rod('crate lattice upright',(xx,side*.48,0),(xx,side*.48,.9),.018,metal,p)
+    for z0 in [.15,.3,.45,.6,.75,.9]:M.rod('crate lattice rail',(-.58,side*.48,z0),(.58,side*.48,z0),.018,metal,p)
+    for j in range(8):yy=-.48+j*.137;M.rod('crate end lattice',(side*.58,yy,0),(side*.58,yy,.9),.018,metal,p)
+   for j in range(25):a=j*2.4;r=(j%5)*.1;M.ball('coiled seaweed fill',(r*math.cos(a),r*math.sin(a),.83+.07*(j%3)),(.18,.13,.07),green,p,1)
+ elif n==51:
+  for i,(x,y) in enumerate([(-.7,.3),(.6,.3),(0,-.6)]):
+   p=M.root('framed krill canister '+str(i),(x,y,0));M.lathe('bulk food canister',[(.4,0),(.46,.1),(.46,2.1),(.4,2.2)],metal,p)
+   for a in [0,math.pi/2,math.pi,math.pi*1.5]:M.rod('canister protective rail',(.52*math.cos(a),.52*math.sin(a),0),(.52*math.cos(a),.52*math.sin(a),2.2),.035,dark,p)
+   for z in [0,1.1,2.2]:M.ring('canister end frame',(0,0,z),.52,.04,metal,p)
+ else:
+  tank=M.mat('water storage tanks',(.42,.49,.53),.4,.48);yellow=M.mat('water cargo markings',(.46,.48,.045),rough=.8);p=M.root('six-tank shipping rack')
+  for j in range(2):
+   for i in range(3):
+    x=(i-1)*.74;z=.5+j*.85;o=M.lathe('individual horizontal water tank',[(.15,0),(.32,.14),(.34,.35),(.34,1.9),(.3,2.12),(.12,2.2)],tank,p);o.rotation_euler.x=math.pi/2;o.location=(x,.8,z);M.cylinder('front valve',(x,-1.42,z),.065,.04,dark,p).rotation_euler.x=math.pi/2
+  for x in [-1.2,1.2]:
+   for y in [-1.25,.85]:M.rod('rack upright',(x,y,0),(x,y,1.9),.055,metal,p)
+  for z in [.05,.9,1.8]:
+   for y in [-1.25,.85]:M.rod('rack horizontal brace',(-1.2,y,z),(1.2,y,z),.045,metal,p)
+  M.cube('cargo instruction plate',(1.25,0,1.0),(.035,.65,.4),metal,p)
+  for y in [-.4,0,.4]:M.cube('yellow cargo pictogram',(1.29,y,1.0),(.015,.1,.13),yellow,p)
+BUILDERS.update({i:storage for i in range(49,53)})

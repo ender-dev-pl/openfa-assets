@@ -1,35 +1,17 @@
-> Active user scope: build all coloured editable models sequentially. Final image production is deferred. Reuse related completed models and record lineage. Technical preview renders may be used only to inspect model/material correctness. Model completion is tracked independently from the image targets below.
+# Trading goods — persistent coloured-model reconstruction
 
-# Trading goods — persistent reconstruction objective
+User objective: reconstruct **all coloured editable trading-good models**, one after another, reusing related finished models/construction families where useful. **Final image generation is deferred.** This supersedes the initial image-first plan. Tracking: [issue #214](https://github.com/ender-dev-pl/openfa-assets/issues/214). Branch: `feat/trading-goods-reconstruction`, based on `origin/main`; cinematic work is separate.
 
-Reconstruct the images of **all trading goods**, retaining editable authored model sources and rendered images. This is a persistent objective across sessions, not a one-session batch. Tracking: [issue #214](https://github.com/ender-dev-pl/openfa-assets/issues/214). Branch: `feat/trading-goods-reconstruction`, created from `origin/main`; cinematic work remains on its own branch.
+[coverage.json](coverage.json) is the machine-readable ledger; [ITEMS.md](ITEMS.md) lists model progress. Track model completion independently from compact/detail image targets. The catalogue has 101 identities: 68 ordinary goods, five treatments, four anti-personnel-virus containers, ten ores, thirteen Terran missiles and one information bundle. Identities 0–100 map to `_TRADE/TI001`–`TI101`.
 
-## Coverage and identity
+## Evidence and workflow
 
-[coverage.json](coverage.json) is the machine-readable work ledger; [ITEMS.md](ITEMS.md) is the initial human-readable checklist. The recovered market catalogue has 101 stable identities, with 202 image targets:
+Read the game repository's `docs/legacy/trade-information.md` and the item's recovered localization description/cultural evidence. Inspect its correctly paletted `TIxxxBIG.256` colour reference locally before authoring. The compact monochrome 108×80 and colour 216×160 image variants remain future output targets; technical preview renders are solely model inspection aids. Do not publish or project original pixels as textures.
 
-| Market IDs | Category | Items |
-|---|---|---:|
-| 0–67 | Ordinary inter-culture goods; first authoring batch | 68 |
-| 68–72 | Disease treatments | 5 |
-| 73–76 | Anti-personnel viruses | 4 |
-| 77–86 | Ores | 10 |
-| 87–99 | Terran missiles | 13 |
-| 100 | Information bundle | 1 |
+Continue from the earliest item whose `model_status` is not `coloured_model_verified`. Sources live in `sources/docs/assets/reconstruction/trading-goods/TIxxx/`, with authored tools in `sources/tools/trading-goods/`. Preserve named editable parts and material assignments. Add function-appropriate wear. Reuse construction functions and existing sources as appropriate; `derived_from` records a related construction family or native-source lineage, not necessarily a byte-level clone.
 
-Every zero-based ID maps to a one-based `_TRADE/TIxxx.256` compact monochrome preview (108×80 canvas) and `_TRADE/TIxxxBIG.256` coloured detail preview (216×160 canvas). Both variants require reconstruction and visual review. The scope ledger includes the entire market archive to avoid silently omitting its non-ordinary categories. Catalogue IDs, names and culture/function descriptions must remain linked to their recovered identities; do not infer identity from a filename's appearance alone.
+Run `build_model.py --item N --out /path/to/ignored/work/TIxxx` in Blender 4.5 LTS. The generator saves a native and static GLB. `verify_model.py --native NATIVE --glb GLB --report REPORT --preview INSPECTION_PNG` reopens the native, renders a technical inspection, independently imports GLB, compares evaluated geometry bounds and object coverage, and verifies used Principled base colours survive the round trip. Procedural wear remains in native shader graphs; GLB material baking and game integration are not claimed.
 
-Evidence: game repository `docs/legacy/trade-information.md` and `content/standard/localization/en.json`. The manifest records localization keys and the inspected file hash; reference images and descriptions must be reviewed locally before modelling. The original game installation/media is optional evidence, never a dependency for rendering published authored models. Do not publish original images or use them as replacement textures.
+Inspect actual model previews against source evidence. Only then mark the coloured model verified, record source/reference hashes, update coverage and register authored assets/tools in `project/layout.json`. Production images stay deferred; native/GLB checks alone do not establish final visual likeness. Commit and push each verified major milestone with issue #214. Continue through the entire catalogue, retaining finished versions and deferring refining unless requested.
 
-## Continue in a new session
-
-1. Read repository authoring instructions and this objective; consult issue #214 and the current coverage ledger.
-2. Select the earliest uncompleted ordinary good, or continue the recorded in-progress item. Inspect its correctly paletted compact/detail references and description/cultural evidence before deciding geometry, materials and camera.
-3. Author separate named objects in Blender, with function-appropriate wear and reusable materials. Keep previous completed work. Render compact monochrome and detailed colour variants from authored sources; higher-resolution masters may accompany the native-size images.
-4. Reopen the native source, independently import its static GLB, inspect actual renders of both variants, and retain source-bound validation reports. Geometry checks do not establish visual likeness or game integration. Record failures and unresolved matching honestly.
-5. Update the item's source/output paths, evidence-review state and validation links. Mark complete only after both images have been rendered and visually checked. Register actual asset sources/media in `project/layout.json` when they are added; keep renders outside `sources/`.
-6. Commit and push each verified major milestone using Conventional Commits with the origin issue number. Continue until all targets are complete; do not stop because one illustrative item exists. Refining finished items remains deferred unless requested.
-
-## Initial checkpoint
-
-All 101 items and both variants are **planned**. This branch-establishment milestone creates no new models, renders or validation claims. Start with ID 0, `TI001`, **Beers**, after reviewing both reference variants and its recovered description.
+No original installation or decoded reference cache is required to open/render published model sources. Original media, decoded references and technical inspection sheets stay local under ignored `artifacts/`.

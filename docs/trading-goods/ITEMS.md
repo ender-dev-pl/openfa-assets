@@ -50,10 +50,10 @@
 | 45 | Goat's ear mushrooms | coloured_model_verified |
 | 46 | Organic corn on the cob | coloured_model_verified |
 | 47 | Braccatian kulos cheese | coloured_model_verified |
-| 48 | Grains | planned |
-| 49 | Seaweed | planned |
-| 50 | Krill | planned |
-| 51 | Water | planned |
+| 48 | Grains | coloured_model_verified |
+| 49 | Seaweed | coloured_model_verified |
+| 50 | Krill | coloured_model_verified |
+| 51 | Water | coloured_model_verified |
 | 52 | Ortok's Mansions | planned |
 | 53 | Shades of Brutos | planned |
 | 54 | Huskar Cigars | planned |
