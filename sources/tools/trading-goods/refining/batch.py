@@ -30,26 +30,41 @@ def main():
     work = root/'artifacts/trading-goods-refining/production'
     work.mkdir(parents=True, exist_ok=True)
     numbers = list(map(int, a.items.split(',')))
+    selections_path = root/'docs/trading-goods/refinement-selections.json'
+    selections = json.loads(selections_path.read_text())['overrides'] if selections_path.exists() else {}
+
+    def folder_for(number):
+        ident = f'TI{number:03d}'
+        return root/selections[ident]['folder'] if ident in selections else natives/ident
     missing = []
     for number in numbers:
-        folder = natives/f'TI{number:03d}'
+        folder = folder_for(number)
         record = folder/'refinement.json'
         if not record.exists():
             missing.append(number)
             continue
         journal = json.loads(record.read_text())
         assert journal['builder_sha256'] == sha(tools/'refine.py'), folder
-        assert journal['refined_native_sha256'] == sha(folder/(folder.name+'.blend')), folder
+        if 'geometry_builder' in journal:
+            assert journal['geometry_builder_sha256'] == sha(root/journal['geometry_builder']), folder
+        assert journal['refined_native_sha256'] == sha(folder/(f'TI{number:03d}.blend')), folder
     if missing:
         with (work/'build.log').open('w') as log:
             subprocess.run(['blender', '-b', '-t', '1', '--python', str(tools/'refine.py'), '--',
                             '--repo', str(root), '--items', ','.join(map(str, missing)), '--out', str(natives)],
                            stdout=log, stderr=subprocess.STDOUT, check=True)
+        for number in missing:
+            ident = f'TI{number:03d}'
+            if ident in selections:
+                with (work/(ident+'-geometry-build.log')).open('w') as log:
+                    subprocess.run(['blender', '-b', '-t', '1', '--python', str(root/selections[ident]['builder']), '--',
+                                    '--repo', str(root), '--out', str(folder_for(number))],
+                                   stdout=log, stderr=subprocess.STDOUT, check=True)
         print('REFINEMENT_BUILD_COMPLETE', len(missing), flush=True)
 
     def process(number):
         ident = f'TI{number:03d}'
-        folder = natives/ident
+        folder = folder_for(number)
         native, glb = folder/(ident+'.blend'), folder/(ident+'.glb')
         report = folder/'runtime-validation.json'
         roles = {m['role'] for m in json.loads((folder/'refinement.json').read_text())['materials']}

@@ -35,3 +35,9 @@ node tools/test_gallery_filters.cjs --filters-only
 Publication removes ancillary PNG metadata without altering decoded pixels. `docs/trading-goods/refinement-validation.json` binds published PNGs to the independently verified native and GLB files. The gallery retains both iterations under each of the existing 101 goods cards. Existing building, ship, scaffold, missile and cinematic gallery records remain preserved.
 
 This pass does not replace the separate legacy-size compact/detail UI image targets or claim game integration. Artistic review remains iterative; the original low-resolution evidence still limits inferred small details.
+
+## TI041 geometry correction
+
+The user rejected the first-pass coat and boots as too angular. `TI041/remodelled/` is a separate reconstruction with a continuous fitted open-front shell, turned lapels, actual leather thickness and dark lining, bent closed-shoulder sleeves, hanging folds, shaped boot lasts and calves, ankle creases, layered soles and a flat belt. Raised decorative trim and saddle seams follow the curved surfaces. Ornament is an authored approximation of the low-resolution evidence. The original model and material-only checkpoint remain preserved.
+
+`refinement-selections.json` selects this geometry revision for publication and batch rendering. The remodel's lineage records both the original model and the preserved material-only native. Its own geometry-builder hash supplements the original shader-builder evidence. `remodel_leather.py` rebuilds the selected variant from the material-only checkpoint; `batch.py` handles the selection when rendering or rebuilding missing outputs.
