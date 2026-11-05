@@ -8,4 +8,4 @@ The project contains four native scenes and a MASTER sequencer with scene-to-sce
 
 The public source snapshot excludes original-game media and authoring logs, following [publication policy](../publication.md). It retains authored packed textures, geometry, animation and a traced vector logo. Optional original audio can be reattached from a locally owned installation. Do not add the original GDV, ISO, decoded screenshots or comparison movies to this branch.
 
-Full-sequence rendering is in progress at the first backup commit. Native project recovery and representative scene rendering are verified independently; no final artistic, GLB export or game integration acceptance is implied.
+The first backup commit preserved the work while rendering continued. The full local 826-frame MASTER delivery is now verified, and a silent authored preview is stored in gallery/media/cinematics/intro/. Native project recovery and representative public-source rendering were verified independently; no final artistic, GLB export or game integration acceptance is implied.

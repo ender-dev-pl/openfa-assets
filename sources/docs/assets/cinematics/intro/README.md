@@ -43,8 +43,10 @@ Add the resulting soundtrack to MASTER at frame 1 if desired. Original evidence 
 
 All eight completed source checkpoints are retained under `stages/`: initial modelling, 24 fps retiming, nebula revision, ship framing fit, continuation to 150, letterbox correction, calmer flight and the multi-scene sequence to 412. Their Python generators and authoring JSON inputs are preserved. Historical finishers/reference comparisons require optional local evidence; `encode_video.py` is the portable delivery encoder.
 
-`SOURCES.sha256` verifies the published source bytes. `publication-runtime.json` records native reopen checks, unchanged mesh/curve/animation fingerprints and representative renders after original audio and local path metadata were removed. Full render status is tracked separately; an in-progress checkpoint does not claim that all 826 frames have been reviewed.
+`SOURCES.sha256` verifies the published source bytes. `publication-runtime.json` records native reopen checks, unchanged mesh/curve/animation fingerprints and representative renders after original audio and local path metadata were removed. The local full MASTER delivery has completed all 826 frames, with PNG decode, stream and final-black checks recorded in `delivery-verification.json`. Public source checks and artistic/game acceptance remain separate.
 
 [Work tracking: issue #209](https://github.com/ender-dev-pl/openfa-assets/issues/209). [Authored preview](../../../../../gallery/media/cinematics/intro/new-shots-preview.jpg).
 
 Publication copies preserve unused authoring datablocks, rewrite local paths and omit original sound. Authored EXR fields are losslessly encoded as PIZ; identical float32 RGBA values are recorded in `packed-field-verification.json`.
+
+[Silent authored preview](../../../../../gallery/media/cinematics/intro/intro-v8-preview.mp4). Recovery-workspace copying and the portable silent encoder were exercised successfully. Optional procedural re-authoring uses NumPy, SciPy and Pillow; fresh rendering uses Blender and standard-library Python.
