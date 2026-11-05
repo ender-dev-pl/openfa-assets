@@ -34467,6 +34467,13 @@
           "present": true,
           "sha256": "4cb6c68243a2ff7ea0b1cf8395d8810243a6714cf6b5e1c773738dbb867c4db6",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/nuclear-missile/refined/model.blend",
+          "present": true,
+          "sha256": "cabc2d3215fde226d4b46719b4406c52f020787d68b111e445947954871c704b",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -34482,7 +34489,24 @@
       "open_evidence_questions": [
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "flight_frame_count": 14
+      "flight_frame_count": 14,
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/nuclear-missile/refined/model.blend",
+        "glb": "sources/objects/terran/nuclear-missile/refined/model.glb",
+        "root": "NuclearResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
+      }
     },
     {
       "category": "missiles",

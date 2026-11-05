@@ -72,6 +72,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/missiles/terran/nuclear/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/terran/nuclear/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Nuclear Missile](../gallery/media/objects/terran/nuclear-missile/refined/render.png)
+
+[Blend](../sources/objects/terran/nuclear-missile/refined/model.blend) · [GLB](../sources/objects/terran/nuclear-missile/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/nuclear-missile/refined/animation-00.webm)
+
 ## Virus Missile
 
 `openfa:virus`
