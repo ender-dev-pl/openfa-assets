@@ -12,7 +12,7 @@ for ob in s.objects:
  ob.select_set(True);nt=ob.data.materials[0].node_tree;em=nt.nodes.get('Emission');output=nt.nodes.get('Material Output');rgb=nt.nodes.new('ShaderNodeRGB');rgb.outputs[0].default_value=(0,.72,.005,1);nt.links.new(rgb.outputs[0],output.inputs['Surface'])
 bpy.ops.export_scene.gltf(filepath=str(out/'plasma-turret-wireframe.glb'),use_selection=True,export_apply=True,export_animations=False,export_format='GLB')
 model=json.loads((out/'model.json').read_text());timeline=json.loads((info/'information-timeline.json').read_text())['timeline'];proof=[]
-for name,f in [('wireframe',None)]+[('highlight-'+p['component'],f) for p,f in zip(model['phases'],[87,228,369])]:
+for name,f in [('wireframe',None)]+[('highlight-'+p['component'],f) for p,f in zip(model['phases'],[87+141*i for i in range(len(model['phases']))])]:
  for ob in list(s.objects):
   if ob.type not in ['CAMERA','LIGHT']:bpy.data.objects.remove(ob,do_unlink=True)
  path=out/('plasma-turret-'+name+'.glb');raw=path.read_bytes();length=struct.unpack_from('<I',raw,12)[0];d=json.loads(raw[20:20+length]);assert all('KHR_materials_unlit' in m.get('extensions',{}) for m in d['materials'])
@@ -27,7 +27,11 @@ for name,f in [('wireframe',None)]+[('highlight-'+p['component'],f) for p,f in z
   for mat in ob.data.materials:
    nt=mat.node_tree;nt.nodes.clear();em=nt.nodes.new('ShaderNodeEmission');em.inputs['Color'].default_value=colour;output=nt.nodes.new('ShaderNodeOutputMaterial');nt.links.new(em.outputs[0],output.inputs[0])
  s.frame_set(1);s.cycles.samples=8;s.view_settings.view_transform='Standard';s.render.resolution_x=640;s.render.resolution_y=640
+ s.render.film_transparent=f is None
  if f is not None:
+  # Native closeups come from the information scene (opaque black), whereas
+  # the whole wireframe comes from the transparent studio source.
+  s.world.node_tree.nodes['Background'].inputs[0].default_value=(0,0,0,1);s.world.node_tree.nodes['Background'].inputs[1].default_value=0
   t=timeline[f];s.camera.location=t['camera_position'];s.camera.rotation_euler=t['camera_euler'];s.camera.data.ortho_scale=t['ortho_scale']
  s.render.filepath=str(out/('imported-'+name+'.png'));bpy.ops.render.render(write_still=True);proof.append(dict(variant=name,independent_import=True,all_materials_unlit=True))
 (out/'static-import-verification.json').write_text(json.dumps(proof,indent=2)+'\n',encoding='utf-8');print('ENGINE_STATIC_IMPORTS_VERIFIED')

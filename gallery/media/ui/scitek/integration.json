@@ -5850,8 +5850,8 @@
       "disabled": "gallery/media/ui/scitek/plasma-turret/tile-disabled.png",
       "hires": "gallery/media/ui/scitek/plasma-turret/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/plasma-turret/solid.png",
-      "blend": "sources/ui/scitek/plasma-turret/plasma-turret.blend",
-      "glb": "sources/ui/scitek/plasma-turret/plasma-turret.glb",
+      "blend": "sources/objects/terran/plasma-turret/refined/model.blend",
+      "glb": "sources/objects/terran/plasma-turret/refined/model.glb",
       "readme": "sources/ui/scitek/plasma-turret/README.md",
       "tile_registration": {
         "canvas": [
@@ -5878,13 +5878,13 @@
           "label": "Independent weapon-head swivel; fixed base",
           "image": "gallery/media/ui/scitek/plasma-turret/solid.png",
           "video": "gallery/media/ui/scitek/plasma-turret/preview.webm",
-          "blend": "sources/ui/scitek/plasma-turret/plasma-turret.blend",
-          "glb": "sources/ui/scitek/plasma-turret/plasma-turret.glb"
+          "blend": "sources/objects/terran/plasma-turret/refined/model.blend",
+          "glb": "sources/objects/terran/plasma-turret/refined/model.glb"
         },
         {
           "label": "Whole assembly wireframe",
           "image": "gallery/media/ui/scitek/plasma-turret/wireframe.png",
-          "blend": "sources/ui/scitek/plasma-turret/plasma-turret.blend",
+          "blend": "sources/objects/terran/plasma-turret/refined/model.blend",
           "glb": "sources/ui/scitek/plasma-turret/plasma-turret-wireframe.glb"
         },
         {
@@ -6003,6 +6003,67 @@
           "Research stereo sensor arm.001",
           "Research stereo sensor armoured housing.001"
         ]
+      },
+      "shared_object": {
+        "id": "terran:plasma-turret",
+        "blend": "sources/objects/terran/plasma-turret/refined/model.blend",
+        "glb": "sources/objects/terran/plasma-turret/refined/model.glb",
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "root": "PlasmaResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1.15
+        ],
+        "gameplay_pose_frame": 1,
+        "moving_node": "PlasmaWeaponAzimuth",
+        "aim_axis": "localZ",
+        "body_turntable": false,
+        "animated_mesh_nodes": [
+          "Weapon barrel",
+          "Weapon dark bore",
+          "Barrel heat-sink collar",
+          "Barrel heat-sink collar.001",
+          "Barrel heat-sink collar.002",
+          "Barrel heat-sink collar.003",
+          "Muzzle locking ring",
+          "Rangefinder lens",
+          "Research second ranging lens",
+          "Research plasma generator housing",
+          "Research shallow golden plasma canopy",
+          "Research canopy rim seam",
+          "Research stereo sensor arm",
+          "Research stereo sensor armoured housing",
+          "Research stereo sensor arm.001",
+          "Research stereo sensor armoured housing.001"
+        ],
+        "fixed_mesh_nodes": [
+          "Pedestal foundation joint",
+          "Azimuth race flange",
+          "Research armoured plasma power base",
+          "Research power base horizontal seam",
+          "Research power base horizontal seam.001",
+          "Research power base horizontal seam.002",
+          "Research armoured azimuth elevation motor"
+        ],
+        "disable_automatic_preview_playback_in_gameplay": true,
+        "solid_animation_timeline": "sources/ui/scitek/plasma-turret/solid-animation-timeline.json",
+        "matrix_contract": "Absolute root-relative row-major4x4, column-vector/Z-up, excludes root scale; replace bind or current*inverse(bind) for bind-baked vertices; transpose/reverse multiplication for row-vector consumers."
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/plasma-turret/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/plasma-turret/plasma-turret-information.glb",
+        "technical_timeline": "sources/ui/scitek/plasma-turret/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical research solid and baked variants authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "All15,796 selected diagram segments are actual evaluated physical edges; synthetic sensor triangulation removed.",
+        "verification": "gallery/media/ui/scitek/plasma-turret/shared-geometry-verification.json"
       }
     },
     {

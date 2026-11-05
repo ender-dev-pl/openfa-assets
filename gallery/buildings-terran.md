@@ -340,6 +340,14 @@
 
 [Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb17/animation-00.webm)
 
+**Additional iteration — shared-refined**
+
+![Plasma Turret](../gallery/media/objects/terran/plasma-turret/refined/render.png)
+
+[Blend](../sources/objects/terran/plasma-turret/refined/model.blend) · [GLB](../sources/objects/terran/plasma-turret/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/plasma-turret/refined/animation-00.webm)
+
 ## Photon Turret
 
 `terran:photon-turret`

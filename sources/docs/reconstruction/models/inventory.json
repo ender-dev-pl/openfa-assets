@@ -3016,6 +3016,13 @@
           "present": true,
           "sha256": "ed9f99c84696aacde6dc3d566cef3c980acb6f1064533393c6dec214bf48c38b",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/plasma-turret/refined/model.blend",
+          "present": true,
+          "sha256": "2ee8c044be15aba5fc54276ddb1bc09fba04454c4af9805bb7a08e06c504cb62",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -3057,6 +3064,56 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 17
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/plasma-turret/refined/model.blend",
+        "glb": "sources/objects/terran/plasma-turret/refined/model.glb",
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; preserve rootZscale1.15 and head-only aiming.",
+        "root": "PlasmaResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1.15
+        ],
+        "gameplay_pose_frame": 1,
+        "moving_node": "PlasmaWeaponAzimuth",
+        "aim_axis": "localZ",
+        "body_turntable": false,
+        "animated_mesh_nodes": [
+          "Weapon barrel",
+          "Weapon dark bore",
+          "Barrel heat-sink collar",
+          "Barrel heat-sink collar.001",
+          "Barrel heat-sink collar.002",
+          "Barrel heat-sink collar.003",
+          "Muzzle locking ring",
+          "Rangefinder lens",
+          "Research second ranging lens",
+          "Research plasma generator housing",
+          "Research shallow golden plasma canopy",
+          "Research canopy rim seam",
+          "Research stereo sensor arm",
+          "Research stereo sensor armoured housing",
+          "Research stereo sensor arm.001",
+          "Research stereo sensor armoured housing.001"
+        ],
+        "fixed_mesh_nodes": [
+          "Pedestal foundation joint",
+          "Azimuth race flange",
+          "Research armoured plasma power base",
+          "Research power base horizontal seam",
+          "Research power base horizontal seam.001",
+          "Research power base horizontal seam.002",
+          "Research armoured azimuth elevation motor"
+        ],
+        "disable_automatic_preview_playback_in_gameplay": true,
+        "solid_animation_timeline": "sources/ui/scitek/plasma-turret/solid-animation-timeline.json",
+        "matrix_contract": "Absolute root-relative row-major4x4, column-vector/Z-up, excludes root scale; replace bind or current*inverse(bind) for bind-baked vertices; transpose/reverse multiplication for row-vector consumers."
       }
     },
     {

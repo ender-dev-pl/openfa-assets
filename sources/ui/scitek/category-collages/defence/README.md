@@ -7,3 +7,5 @@ Original canvas80x64, occupied box(10,8)..(66,59). Approximate subject rectangle
 Published flat assets are category-native.png80x64 and category-4x.png320x256 with alpha. The editable Blend and static neutral GLB contain153meshes. Compositor gain1.25 and final explicit grayscale apply to the flat icons; a client rendering the GLB should apply equivalent monochrome treatment. Existing research models remain unchanged. This asset binds category frame0 only; consult the current integration manifest for other category frames.
 
 Photon uses canonical sources/objects/terran/photon-turret/refined/model.blend at the existing head pose31, including its corrected small tracking lens. Plasma and Screen await shared migration. Collage GLB is authoring/gallery only.
+
+Plasma now uses canonical sources/objects/terran/plasma-turret/refined/model.blend at the existing head pose. Screen remains the last Defence subject awaiting shared migration. Collage GLB is authoring/gallery only.
