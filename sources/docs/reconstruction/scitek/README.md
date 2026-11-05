@@ -35,7 +35,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 13 | scitek:mega-missile | Existing 64 missile meshes preserved; four thrust chambers added | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 14 | scitek:missile-bay-extension | Dedicated model added | Local solid animation, full wire/highlight/zoom information sequence delivered; game check pending |
 | 15 | scitek:missile-guidance-system | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
-| 16 | scitek:nuclear-missile | openfa:nuclear | Pending |
+| 16 | scitek:nuclear-missile | Existing 19 missile meshes preserved; rear manoeuvring pair added | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 17 | scitek:ore-teleporter | terran:ore-teleporter | Pending |
 | 18 | scitek:photon-turret | terran:photon-turret | Pending |
 | 19 | scitek:plasma-turret | terran:plasma-turret | Pending |
@@ -74,3 +74,7 @@ The audit originally flagged fifteen delivered authored presentations. Source re
 The audit measures red on/off activity; it does not identify which semantic component is selected. Component transitions require subject-specific source review. In particular, ST04 has 425 frames rather than 423, and its extra image updates mean component identity must not be guessed solely from the 141-frame caption period. Its source tail retains a red base after the caption window ends.
 
 Reproduce the optional analysis using `sources/tools/evidence/audit_scitek_material_clocks.py ASSET_ROOT LEGACY_ROOT CACHE_ROOT OUTPUT`. Original reference pixels remain private; published data contains only state/count/hash metadata. Cache decoder provenance is retained; this audit does not re-execute the original codec.
+
+### Colour video source bindings
+
+The supplied installation has fifteen _MA/ST*.VID colour films. All fifteen map to research records and their source SHA256 values, existing decode provenance and cached frame counts were checked: 1080 decoded updates. _MA/ST07.VID has120 action frames and _MA/ST14.VID has180 transfer frames; their delivered local animations remain separate from generic whole-object turns. Other research records reuse PB/PM/PH colour films. Nuclear research16 uses _MA/PM06.VID; _MA/ST16.VID is absent here. _SCITEK/ST16.VID is technical wireframe content. See colour-video-bindings.json; this check does not claim a new original-codec decode or coverage of other editions.

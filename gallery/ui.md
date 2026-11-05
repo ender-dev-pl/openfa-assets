@@ -256,3 +256,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Mega Missile](media/ui/scitek/mega-missile/solid.png)
 
 [Full technical animation](media/ui/scitek/mega-missile/information.webm) - [Source and integration](../sources/ui/scitek/mega-missile/README.md).
+
+### Nuclear Missile
+
+![Nuclear Missile](media/ui/scitek/nuclear-missile/solid.png)
+
+[Full technical animation](media/ui/scitek/nuclear-missile/information.webm) - [Source and integration](../sources/ui/scitek/nuclear-missile/README.md).
