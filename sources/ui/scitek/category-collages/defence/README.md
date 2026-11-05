@@ -9,3 +9,5 @@ Published flat assets are category-native.png80x64 and category-4x.png320x256 wi
 Photon uses canonical sources/objects/terran/photon-turret/refined/model.blend at the existing head pose31, including its corrected small tracking lens. Plasma and Screen await shared migration. Collage GLB is authoring/gallery only.
 
 Plasma now uses canonical sources/objects/terran/plasma-turret/refined/model.blend at the existing head pose. Screen remains the last Defence subject awaiting shared migration. Collage GLB is authoring/gallery only.
+
+All three Defence subjects now use their canonical shared object models: Photon, Plasma and Screen. Collage GLB remains authoring/gallery only.

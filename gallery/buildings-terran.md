@@ -198,6 +198,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb10/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb10/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Screen Generator](../gallery/media/objects/terran/screen-generator/refined/render.png)
+
+[Blend](../sources/objects/terran/screen-generator/refined/model.blend) · [GLB](../sources/objects/terran/screen-generator/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/screen-generator/refined/animation-00.webm)
+
 ## Ore Teleporter
 
 `terran:ore-teleporter`

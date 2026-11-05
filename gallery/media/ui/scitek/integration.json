@@ -6075,8 +6075,8 @@
       "disabled": "gallery/media/ui/scitek/screen-generator/tile-disabled.png",
       "hires": "gallery/media/ui/scitek/screen-generator/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/screen-generator/solid.png",
-      "blend": "sources/ui/scitek/screen-generator/screen-generator.blend",
-      "glb": "sources/ui/scitek/screen-generator/screen-generator.glb",
+      "blend": "sources/objects/terran/screen-generator/refined/model.blend",
+      "glb": "sources/objects/terran/screen-generator/refined/model.glb",
       "readme": "sources/ui/scitek/screen-generator/README.md",
       "tile_registration": {
         "canvas": [
@@ -6103,13 +6103,13 @@
           "label": "Whole-device two-turn cycle and field emission pulses",
           "image": "gallery/media/ui/scitek/screen-generator/solid.png",
           "video": "gallery/media/ui/scitek/screen-generator/preview.webm",
-          "blend": "sources/ui/scitek/screen-generator/screen-generator.blend",
-          "glb": "sources/ui/scitek/screen-generator/screen-generator.glb"
+          "blend": "sources/objects/terran/screen-generator/refined/model.blend",
+          "glb": "sources/objects/terran/screen-generator/refined/model.glb"
         },
         {
           "label": "Whole assembly wireframe",
           "image": "gallery/media/ui/scitek/screen-generator/wireframe.png",
-          "blend": "sources/ui/scitek/screen-generator/screen-generator.blend",
+          "blend": "sources/objects/terran/screen-generator/refined/model.blend",
           "glb": "sources/ui/scitek/screen-generator/screen-generator-wireframe.glb"
         },
         {
@@ -6189,9 +6189,9 @@
         "frame_count": 423,
         "root": "ScreenResearchRoot",
         "root_scale": [
-          1,
-          1,
-          1
+          1.0,
+          1.0,
+          1.0
         ],
         "material_contract": "Apply timeline hue/caption and orthographic scale independently."
       },
@@ -6204,6 +6204,37 @@
         "turns": 2,
         "emission_timeline": "sources/ui/scitek/screen-generator/emission-timeline.json",
         "material_contract": "Apply explicit emission strengths independently of GLB transform animation."
+      },
+      "shared_object": {
+        "id": "terran:screen-generator",
+        "blend": "sources/objects/terran/screen-generator/refined/model.blend",
+        "glb": "sources/objects/terran/screen-generator/refined/model.glb",
+        "root": "ScreenResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "gameplay_pose_frame": 1,
+        "disable_presentation_rotation_in_gameplay": true,
+        "emission_timeline": "sources/ui/scitek/screen-generator/emission-timeline.json",
+        "emission_timeline_sha256": "e7e8a7bb0974cb6d8e81069ecd923e656822895c02a62626df9f5ed55ea0d131"
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/screen-generator/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/screen-generator/screen-generator-information.glb",
+        "technical_timeline": "sources/ui/scitek/screen-generator/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical research solid and baked variants authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "All10,770 selected technical segments are actual evaluated physical edges; sparse sphere sampling and fine mast strokes preserve readability.",
+        "verification": "gallery/media/ui/scitek/screen-generator/shared-geometry-verification.json"
       }
     },
     {

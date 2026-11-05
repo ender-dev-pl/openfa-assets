@@ -44,7 +44,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 20 | scitek:power-amplifier | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 21 | scitek:powerplant | Scoped PB23 decks and six cells retained; control, mini-mine and four pipe elbows added | Solid, wire/highlight, 60-frame preview and 564-frame information sequence delivered; game check pending |
 | 22 | scitek:repair-facility | Shared refined terran:repair-facility | Four dishes, droid ports and aerial; solid/wire/highlight,60-frame colour and423-frame information delivered; game check pending |
-| 23 | scitek:screen-generator | Existing PB10 foundation reused; actual lattice masts and field anatomy authored | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
+| 23 | scitek:screen-generator | Shared113-mesh terran:screen-generator; lattice masts, pulse sidecar and actual-edge diagrams | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 24 | scitek:seismic-penetrator | Shared refined terran:seismic-penetrator | Curved nose/common drill axis retained; slurry circuits, shared solid/wire/highlight,60-frame colour and423-frame information delivered; game check pending |
 | 25 | scitek:shield-x40 | Shared refined openfa:shield-x40 | Shared X40 length/monitor refinement;57-mesh solid, wire/highlight,60-frame colour and423-frame information delivered; game check pending |
 | 26 | scitek:shield-x50 | Shared refined openfa:shield-x50 | Shared X50 length/aperture refinement;51-mesh solid, wire/highlight,60-frame colour and423-frame information delivered; game check pending |

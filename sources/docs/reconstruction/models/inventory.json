@@ -1820,6 +1820,13 @@
           "present": true,
           "sha256": "66b484bc9c79a39b7f65bccc0fd12bda7a10e2d3e359a7b0c4fa8bdb4341b953",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/screen-generator/refined/model.blend",
+          "present": true,
+          "sha256": "3824054dbc413d46d68126c39b790670d8efcc5d109a68f22a9eec35e30a5823",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -1861,6 +1868,24 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 10
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/screen-generator/refined/model.blend",
+        "glb": "sources/objects/terran/screen-generator/refined/model.glb",
+        "root": "ScreenResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation and apply emission sidecar.",
+        "emission_timeline": "sources/ui/scitek/screen-generator/emission-timeline.json"
       }
     },
     {
