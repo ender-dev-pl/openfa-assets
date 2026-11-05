@@ -28424,6 +28424,13 @@
           "present": true,
           "sha256": "b2d5c1ba3176d8a945669588cce343894b1dd8a19dc216d961c3c33bf6ba5ea9",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/command-cruiser/refined/model.blend",
+          "present": true,
+          "sha256": "1106380b2a1aa8c3caf68baacd65d19b114b8d130320993d03fbfd95ff07ff91",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -28546,6 +28553,22 @@
           ],
           "selected_first_available": "PT8C.256"
         }
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/command-cruiser/refined/model.blend",
+        "glb": "sources/objects/terran/command-cruiser/refined/model.glb",
+        "consumers": [
+          "ship-gameplay",
+          "ship-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/35",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "package_contract": "One shared physical solid; alias consumers. Preserve Root unit scale; gameplay frame1 without presentation rotation."
       }
     },
     {

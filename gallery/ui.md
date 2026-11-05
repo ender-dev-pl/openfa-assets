@@ -366,3 +366,9 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Warp Generator](media/ui/scitek/warp-generator/solid.png)
 
 [Shared model and technical presentation](../sources/ui/scitek/warp-generator/README.md).
+
+### Command Cruiser
+
+![Command Cruiser](media/ui/scitek/command-cruiser/solid.png)
+
+[Shared model and technical presentation](../sources/ui/scitek/command-cruiser/README.md).

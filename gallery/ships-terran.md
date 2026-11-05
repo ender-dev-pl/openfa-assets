@@ -106,6 +106,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/ships/terran/command-cruiser/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/command-cruiser/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Command Cruiser](../gallery/media/objects/terran/command-cruiser/refined/render.png)
+
+[Blend](../sources/objects/terran/command-cruiser/refined/model.blend) · [GLB](../sources/objects/terran/command-cruiser/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/command-cruiser/refined/animation-00.webm)
+
 ## Spy Satellite
 
 `openfa:spy-satellite`
