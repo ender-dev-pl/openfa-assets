@@ -27573,6 +27573,13 @@
           "present": true,
           "sha256": "b464ef0ec6556f632212335afccc8c9d9e1c42cb4248049f8b5e9f15ed4cb013",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/terminator/refined/model.blend",
+          "present": true,
+          "sha256": "62f71e6f5c1163c6143d45520fa929ea031e1cd9f851f4b1ce9cc4407fc6f8b7",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -27687,6 +27694,23 @@
           ],
           "selected_first_available": "PT4C.256"
         }
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/terminator/refined/model.blend",
+        "glb": "sources/objects/terran/terminator/refined/model.glb",
+        "root": "TerminatorResearchRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "ship-gameplay",
+          "ship-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
       }
     },
     {

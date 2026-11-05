@@ -455,7 +455,7 @@
     "id": "openfa:terminator",
     "path": "sources/docs/assets/reconstruction/ships/terran/terminator/model.blend",
     "sha256": "b464ef0ec6556f632212335afccc8c9d9e1c42cb4248049f8b5e9f15ed4cb013",
-    "status": "Existing hull/wings/main engines/wear retained; research appendages authored separately"
+    "status": "43 original meshes remain raw-data exact; two wings topology-refined with surface/UV preserved; inherited anterior/lateral devices shared by all consumers"
   },
   "base_mesh_signatures": {
     "Terminator swept outer wing 1": "acbc00a8469d25c9508dd17b3743a241ffaccceb8336dc62bbc657fc24817bf1",
@@ -643,6 +643,46 @@
     "fps": 15,
     "loop_closure_frame": 61
   },
-  "wire_display_contract": "Full retained hull edges plus authored18x18 upper/lower wing retessellation. Fine cooling/vent fins and four new wear marks are omitted from display-wire LOD. This is an authored display topology, not recovered legacy mesh topology.",
-  "material_contract": "Four existing authored packed wear images and UVs preserved; GLB embeds four images. New appendages have worn PBR and four geometric abrasions. Blender procedural noise on new parts is not baked."
+  "wire_display_contract": "Actual evaluated physical edges. Bilinear wing grid now belongs to real wing topology; surface/UV field preserved.",
+  "material_contract": "Four existing authored packed wear images and UVs preserved; GLB embeds four images. New appendages have worn PBR and four geometric abrasions. Blender procedural noise on new parts is not baked.",
+  "object_id": "openfa:terminator",
+  "whole_information_local_target": [
+    0,
+    -0.1,
+    0.1
+  ],
+  "whole_information_ortho_scale": 6.0,
+  "retessellated_wings": {
+    "Terminator swept outer wing -1": {
+      "original_vertices": 96,
+      "refined_vertices": 1762,
+      "original_faces": 98,
+      "refined_faces": 1854,
+      "bidirectional_surface_max_error": 9.668973124730373e-08,
+      "uv_method": "Original loop-triangle affine UV field interpolated per retained physical face; no texture change."
+    },
+    "Terminator swept outer wing 1": {
+      "original_vertices": 96,
+      "refined_vertices": 1762,
+      "original_faces": 98,
+      "refined_faces": 1854,
+      "bidirectional_surface_max_error": 1.0468935721312702e-07,
+      "uv_method": "Original loop-triangle affine UV field interpolated per retained physical face; no texture change."
+    }
+  },
+  "retention_contract": {
+    "unchanged_research_meshes": 69,
+    "original_base_meshes_raw_identical": 43,
+    "surface_and_uv_preserved_wings": 2,
+    "physical_mesh_count": 71
+  },
+  "authoritative_shared": true,
+  "shared_root": "TerminatorResearchRotor",
+  "shared_root_scale": [
+    1,
+    1,
+    1
+  ],
+  "gameplay_pose_frame": 1,
+  "disable_presentation_rotation_in_gameplay": true
 }

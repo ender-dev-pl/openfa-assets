@@ -1992,8 +1992,8 @@
       },
       "hires": "gallery/media/ui/scitek/terminator/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/terminator/solid.png",
-      "blend": "sources/ui/scitek/terminator/terminator.blend",
-      "glb": "sources/ui/scitek/terminator/terminator.glb",
+      "blend": "sources/objects/terran/terminator/refined/model.blend",
+      "glb": "sources/objects/terran/terminator/refined/model.glb",
       "readme": "sources/ui/scitek/terminator/README.md",
       "gallery_views": [
         {
@@ -2007,31 +2007,31 @@
           "label": "Solid tile/detail and preview rotation",
           "image": "gallery/media/ui/scitek/terminator/solid.png",
           "video": "gallery/media/ui/scitek/terminator/preview.webm",
-          "blend": "sources/ui/scitek/terminator/terminator.blend",
-          "glb": "sources/ui/scitek/terminator/terminator.glb"
+          "blend": "sources/objects/terran/terminator/refined/model.blend",
+          "glb": "sources/objects/terran/terminator/refined/model.glb"
         },
         {
           "label": "Green technical wireframe",
           "image": "gallery/media/ui/scitek/terminator/wireframe.png",
-          "blend": "sources/ui/scitek/terminator/terminator.blend",
+          "blend": "sources/objects/terran/terminator/refined/model.blend",
           "glb": "sources/ui/scitek/terminator/terminator-wireframe.glb"
         },
         {
           "label": "Wireframe closeup: anterior-device-assembly",
           "image": "gallery/media/ui/scitek/terminator/highlight-anterior-device-assembly.png",
-          "blend": "sources/ui/scitek/terminator/terminator.blend",
+          "blend": "sources/objects/terran/terminator/refined/model.blend",
           "glb": "sources/ui/scitek/terminator/terminator-highlight-anterior-device-assembly.glb"
         },
         {
           "label": "Wireframe closeup: lateral-manoeuvring-thrusters",
           "image": "gallery/media/ui/scitek/terminator/highlight-lateral-manoeuvring-thrusters.png",
-          "blend": "sources/ui/scitek/terminator/terminator.blend",
+          "blend": "sources/objects/terran/terminator/refined/model.blend",
           "glb": "sources/ui/scitek/terminator/terminator-highlight-lateral-manoeuvring-thrusters.glb"
         },
         {
           "label": "Wireframe closeup: twin-main-engine-thrusters",
           "image": "gallery/media/ui/scitek/terminator/highlight-twin-main-engine-thrusters.png",
-          "blend": "sources/ui/scitek/terminator/terminator.blend",
+          "blend": "sources/objects/terran/terminator/refined/model.blend",
           "glb": "sources/ui/scitek/terminator/terminator-highlight-twin-main-engine-thrusters.glb"
         }
       ],
@@ -2175,7 +2175,37 @@
         0.22864219546318054,
         -0.6089792847633362,
         1.1844273805618286
-      ]
+      ],
+      "shared_object": {
+        "id": "openfa:terminator",
+        "blend": "sources/objects/terran/terminator/refined/model.blend",
+        "glb": "sources/objects/terran/terminator/refined/model.glb",
+        "root": "TerminatorResearchRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "consumers": [
+          "ship-gameplay",
+          "ship-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "gameplay_pose_frame": 1,
+        "disable_presentation_rotation_in_gameplay": true
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/terminator/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/terminator/terminator-information.glb",
+        "technical_timeline": "sources/ui/scitek/terminator/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical research solid and baked variants authoring/gallery only."
+      },
+      "material_clock_status": "Exact source red activity and caption phase verified across423frames",
+      "legacy_diagram_correlation": {
+        "contract": "All33,501 diagram segments are actual evaluated physical edges; real wing grid preserves surface/UV.",
+        "verification": "gallery/media/ui/scitek/terminator/shared-geometry-verification.json"
+      }
     },
     {
       "id": "scitek:turret-optimiser",

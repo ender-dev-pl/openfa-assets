@@ -52,6 +52,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/ships/terran/terminator/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/terminator/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Terminator](../gallery/media/objects/terran/terminator/refined/render.png)
+
+[Blend](../sources/objects/terran/terminator/refined/model.blend) · [GLB](../sources/objects/terran/terminator/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/terminator/refined/animation-00.webm)
+
 ## Transporter
 
 `openfa:transporter`
