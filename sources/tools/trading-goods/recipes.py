@@ -128,3 +128,15 @@ def jewellery(n):
     a=j*math.tau/26;M.ball('individual pearl',(math.cos(a),math.sin(a),strand*.27),(.13,.13,.13),pearl,p)
   M.cube('platinum bracelet clasp',(1.0,0,.28),(.14,.12,.4),silver,p)
 BUILDERS.update({i:jewellery for i in range(16,25)})
+
+def gemstones(n):
+ colors={25:(.58,.46,.38),26:(.005,.48,.015),27:(.025,.075,.58),28:(.56,.006,.012),29:(.59,.27,.008),30:(.36,.005,.46),31:(.78,.87,.91),32:(.50,.62,.16),33:(.65,.68,.25),34:(.48,.58,.27),35:(.005,.47,.62),36:(.39,.62,.07),37:(.53,.012,.36)};c=M.mat('individual gemstone colour',colors[n],.12,.14,.18 if n!=33 else 0)
+ for j,(loc,r) in enumerate([((-.9,-.35,.42),.40),((0,.10,.54),.56),((.9,.45,.42),.40)]):
+  if n==33:M.ball('individual lustrous pearl '+str(j),loc,(r,)*3,c,sub=3)
+  else:
+   p=gem('individually faceted stone '+str(j),loc,r,c,sides=10 if n not in [25,31] else 12);p.rotation_euler=(.25+j*.3,.2*j,.15+j*.6)
+ if n in [30,32,34,36]:
+  inner=M.mat('internal colour play',tuple(min(1,x*1.2+.08) for x in colors[n]),.25,.16)
+  for j,(x,y,z) in enumerate([(-.9,-.35,.45),(0,.1,.56),(.9,.45,.45)]):
+   g=gem('inclusion colour facet',(x,y,z+.2),.19,inner,sides=6);g.rotation_euler=(.1,.2,j)
+BUILDERS.update({i:gemstones for i in range(25,38)})

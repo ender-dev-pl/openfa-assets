@@ -26,19 +26,19 @@
 | 21 | Pectoral | coloured_model_verified |
 | 22 | Collar | coloured_model_verified |
 | 23 | 3-strand bracelet | coloured_model_verified |
-| 24 | Diamond | planned |
-| 25 | Emerald | planned |
-| 26 | Sapphire | planned |
-| 27 | Ruby | planned |
-| 28 | Ultropaz | planned |
-| 29 | Alexandrite | planned |
-| 30 | Metachrome | planned |
-| 31 | Opal | planned |
-| 32 | Pearl | planned |
-| 33 | Moonstone | planned |
-| 34 | Astramarine | planned |
-| 35 | Peridot | planned |
-| 36 | Amethyst | planned |
+| 24 | Diamond | coloured_model_verified |
+| 25 | Emerald | coloured_model_verified |
+| 26 | Sapphire | coloured_model_verified |
+| 27 | Ruby | coloured_model_verified |
+| 28 | Ultropaz | coloured_model_verified |
+| 29 | Alexandrite | coloured_model_verified |
+| 30 | Metachrome | coloured_model_verified |
+| 31 | Opal | coloured_model_verified |
+| 32 | Pearl | coloured_model_verified |
+| 33 | Moonstone | coloured_model_verified |
+| 34 | Astramarine | coloured_model_verified |
+| 35 | Peridot | coloured_model_verified |
+| 36 | Amethyst | coloured_model_verified |
 | 37 | Abstract Sculpture | planned |
 | 38 | Domestic interior units | planned |
 | 39 | Decorative drinking horns | planned |
