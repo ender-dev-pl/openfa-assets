@@ -70,15 +70,15 @@
 | 65 | Dionne's Lightwork | coloured_model_verified |
 | 66 | Loving Cup | coloured_model_verified |
 | 67 | Law of the Cube | coloured_model_verified |
-| 68 | Biofort (Pharmaceutical) | planned |
-| 69 | Vir-Attack (Pharmaceutical) | planned |
-| 70 | Supa-Shellac (Pharmaceutical) | planned |
-| 71 | Swat (Pharmaceutical) | planned |
-| 72 | Star Balm (Pharmaceutical) | planned |
-| 73 | Shell Shock (APV) | planned |
-| 74 | Phantom (APV) | planned |
-| 75 | Judgement Day (APV) | planned |
-| 76 | Silicon Death (APV) | planned |
+| 68 | Biofort (Pharmaceutical) | coloured_model_verified |
+| 69 | Vir-Attack (Pharmaceutical) | coloured_model_verified |
+| 70 | Supa-Shellac (Pharmaceutical) | coloured_model_verified |
+| 71 | Swat (Pharmaceutical) | coloured_model_verified |
+| 72 | Star Balm (Pharmaceutical) | coloured_model_verified |
+| 73 | Shell Shock (APV) | coloured_model_verified |
+| 74 | Phantom (APV) | coloured_model_verified |
+| 75 | Judgement Day (APV) | coloured_model_verified |
+| 76 | Silicon Death (APV) | coloured_model_verified |
 | 77 | Selenium Ore | planned |
 | 78 | Asteros Ore | planned |
 | 79 | Barium Ore | planned |

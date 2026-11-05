@@ -379,3 +379,51 @@ def rare_goods(n):
   grey=M.mat('Law cube gray metal',(.20,.22,.24),.65,.6);copper=M.mat('Law cube copper base',(.28,.10,.04),.7,.5);p=M.root('Law of the Cube relic and pedestal');M.cube('low wide relic plinth',(0,0,.15),(1.2,.85,.15),copper,p);M.cube('stepped slab',(0,0,.4),(.8,.6,.1),dark,p);M.cube('gray inscribed cube',(0,0,1.05),(.5,.5,.55),grey,p)
   M.polyline('authored angular front motif',[(-.3,-.51,1.3),(-.3,-.51,1.05),(-.1,-.51,1.25),(.12,-.51,1.25),(.25,-.51,1),(.05,-.51,.85)],.025,dark,p);M.cube('red top seal',(0,0,1.61),(.27,.27,.012),red,p);M.rod('side connector',(-.75,0,1.15),(-.5,0,1.15),.075,copper,p)
 BUILDERS.update({i:rare_goods for i in range(61,69)})
+
+def medical(n):
+ grey=M.mat('medical case alloy',(.42,.47,.49),.45,.5);dark=M.mat('dark inset seams',(.025,.035,.04),.3,.7);cream=M.mat('pale medical casing',(.64,.62,.45),.1,.7);gold=M.mat('yellow fittings',(.60,.47,.04),.3,.45);red=M.mat('red markings',(.6,.005,.003),.1,.5);p=M.root('individual fictional medical package')
+ if n in [69,70]:
+  col=M.mat('Biofort cream' if n==69 else 'Vir-Attack blue gray',(.60,.56,.37) if n==69 else (.14,.24,.29),.25,.55)
+  if n==69:
+   M.cube('upright medical case',(0,0,1.1),(.7,.25,1.1),col,p,bevel=.1);lid=M.cube('raised case cover',(0,.30,2.2),(.7,.045,.48),grey,p);lid.rotation_euler.x=-.3
+  else:
+   v=[(-.8,-.4,0),(.8,-.4,0),(.8,.4,0),(-.8,.4,0),(-.48,-.25,1.8),(.48,-.25,1.8),(.48,.25,1.8),(-.48,.25,1.8)];M.mesh('tapered Vir-Attack housing',v,[(0,1,2,3),(0,4,5,1),(1,5,6,2),(2,6,7,3),(3,7,4,0),(4,7,6,5)],col,p);lid=M.cube('hinged top hatch',(0,.15,2.0),(.42,.025,.3),grey,p);lid.rotation_euler.x=-.4;M.cube('side module',(.75,.0,1.3),(.16,.2,.6),col,p)
+  for z in [.45,1,1.55]:M.cube('case seam',(0,-.265 if n==69 else -.4,z),(.65,.01,.016),dark,p)
+  for x in [-.15,.15]:M.rod('red case handle',(x,-.1,2.05),(x,-.1,2.25),.035,red,p)
+  M.cylinder('round medical badge',(0,-.28 if n==69 else -.405,1.15),.24,.025,dark,p).rotation_euler.x=math.pi/2
+  M.cube('medical cross upright',(0,-.32 if n==69 else -.44,1.15),(.045,.015,.15),red,p);M.cube('medical cross arm',(0,-.33 if n==69 else -.45,1.15),(.15,.015,.045),red,p)
+  for x in [-.75,0,.75]:
+   q=M.bottle('separate medicinal vial',(x,-.8,0),grey,cream,height=.5,r=.14);q.parent=p
+ elif n==71:
+  amber=M.mat('amber preparation bottle',(.42,.18,.005),.1,.25,.15);M.lathe('broad amber bottle',[(.55,0),(.6,.1),(.6,1.7),(.45,1.8),(.16,1.95)],amber,p);M.lathe('yellow conical stopper',[(.18,1.95),(.23,2),(.10,2.4)],gold,p);M.label('orange medicine label',p,.61,1,.7,.55,red);M.text('authored medicine lettering','SUPA',(0,-.63,1.04),.1,gold,p)
+ elif n==72:
+  green=M.mat('green spray container',(.12,.38,.23),.2,.5);M.lathe('tall preparation cylinder',[(.3,0),(.34,.08),(.34,2),(.39,2.1),(.34,2.3),(.1,2.4)],green,p)
+  for z in [.4,1.2,2.05]:M.ring('sprayer body seam',(0,0,z),.345,.018,green,p)
+  M.cylinder('yellow neck collar',(0,0,2.05),.40,.14,gold,p);M.rod('spray nozzle',(-.6,0,2.18),(0,0,2.18),.11,green,p);M.polyline('trigger loop',[(-.4,0,2.1),(-.65,0,1.9),(-.4,0,1.3),(-.25,0,1.3),(-.4,0,2.1)],.055,gold,p)
+ elif n==73:
+  blue=M.mat('Star Balm blue container',(.025,.10,.45),.15,.38);M.lathe('tapered open Star Balm bottle',[(.5,0),(.55,.1),(.4,1.4),(.2,1.9),(.2,2.15),(.15,2.15),(.15,1.95)],blue,p);M.mesh('pale tapered balm label',[(r*math.cos(a),r*math.sin(a),z) for z in [.6,1.4] for a in [-math.pi/2-.8+j*.1 for j in range(17)] for r in [.55+(.4-.55)*(z-.1)/1.3+.01]],[(j,j+1,j+18,j+17) for j in range(16)],cream,p);M.text('authored balm label','BALM',(0,-.46,1.1),.14,blue,p);M.cylinder('detached cap',(.7,0,0),.23,.2,blue,p)
+ elif n==74:
+  orange=M.mat('orange APV case',(.65,.18,.005),.25,.5);M.cube('portable rectangular payload housing',(0,0,1),(.6,.22,1),orange,p,bevel=.08)
+  for x in [-.5,.5]:M.rod('handle upright',(x,0,2),(x,0,2.5),.075,orange,p)
+  M.rod('carrying handle',(-.5,0,2.5),(.5,0,2.5),.075,orange,p)
+  for z in [.2,.35,1.6,1.8]:M.cube('recessed case seam',(0,-.23,z),(.56,.01,.014),dark,p)
+  M.cylinder('fictional hazard medallion',(0,-.24,1),.20,.02,gold,p).rotation_euler.x=math.pi/2;M.cube('hazard upright',(0,-.27,1),(.03,.01,.13),dark,p)
+ elif n==75:
+  purple=M.mat('Phantom purple container',(.19,.015,.45),.2,.45);M.cube('rounded purple transport shell',(0,0,1.0),(.65,.3,.95),purple,p,bevel=.14)
+  for x in [-.48,.48]:M.rod('portable case handle post',(x,0,1.9),(x,0,2.25),.07,purple,p)
+  M.rod('metal carrying grip',(-.48,0,2.25),(.48,0,2.25),.07,grey,p)
+  for z in [.45,1.45]:
+   M.cylinder('large sealed interface',(-.45,-.34,z),.20,.12,purple,p).rotation_euler.x=math.pi/2;M.cylinder('interface centre',(-.45,-.47,z),.12,.02,red,p).rotation_euler.x=math.pi/2
+  M.cube('pale central band',(0,-.31,1),(.62,.018,.11),grey,p);M.ball('front identification mark',(.2,-.33,1.5),(.12,.02,.045),red,p)
+ elif n==76:
+  olive=M.mat('Judgement Day olive shell',(.12,.20,.08),.45,.55);M.lathe('rounded cylindrical payload',[(.3,.2),(.65,.45),(.65,1.6),(.5,1.8),(.1,1.9)],olive,p)
+  for z in [.35,1.2]:M.ring('large protective guard ring',(0,0,z),.85,.04,gold,p)
+  for a in [0,math.pi/2,math.pi,math.pi*1.5]:x,y=.75*math.cos(a),.75*math.sin(a);M.rod('guard upright',(x,y,.1),(x,y,1.5),.035,red,p);M.ball('support foot',(x,y,.08),(.07,)*3,grey,p)
+  for x in [-.35,.35]:M.cylinder('front ribbed service pod',(x,-.5,.65),.14,.7,olive,p)
+  M.cylinder('top red seal',(0,0,1.91),.15,.015,red,p)
+ else:
+  purple=M.mat('Silicon Death violet barrel',(.22,.015,.46),.2,.45);blue=M.mat('bright band',(.015,.24,.48),.4,.35);pink=M.mat('magenta restraint',(.42,.01,.21),.3,.45);o=M.lathe('horizontal sealed barrel',[(.2,0),(.5,.2),(.5,1.6),(.2,1.8)],purple,p);o.rotation_euler.y=math.pi/2;o.location=(-.9,0,.6)
+  for i,x in enumerate([-.7,0,.7]):o=M.ring('broad coloured barrel collar',(x,0,.6),.51,.085,blue if i%2 else pink,p);o.rotation_euler.y=math.pi/2
+  M.polyline('arched carry handle',[(-.65,0,1.0),(-.65,0,1.4),(.65,0,1.4),(.65,0,1.0)],.07,grey,p)
+  for side in [-1,1]:o=M.lathe('sealed pointed end',[(.3,0),(0,.3)],purple,p);o.location=(side*.9,0,.6);o.rotation_euler.y=side*math.pi/2
+BUILDERS.update({i:medical for i in range(69,78)})
