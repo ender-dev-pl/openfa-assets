@@ -6165,6 +6165,22 @@
           "image": "gallery/media/ui/scitek/repair-facility/highlight-droid-antennae.png",
           "glb": "sources/ui/scitek/repair-facility/repair-facility-highlight-droid-antennae.glb",
           "blend": "sources/ui/scitek/repair-facility/repair-facility-information.blend"
+        },
+        {
+          "label": "Corrected concave reflector - isolated solid",
+          "image": "gallery/media/ui/scitek/repair-facility/dish-solid-closeup.png"
+        },
+        {
+          "label": "Same reflector geometry - isolated wire grid",
+          "image": "gallery/media/ui/scitek/repair-facility/dish-wire-closeup.png"
+        },
+        {
+          "label": "Thin concave reflector - solid side view",
+          "image": "gallery/media/ui/scitek/repair-facility/dish-solid-side.png"
+        },
+        {
+          "label": "Same reflector - wire side view",
+          "image": "gallery/media/ui/scitek/repair-facility/dish-wire-side.png"
         }
       ],
       "information_phases": [
@@ -6173,9 +6189,9 @@
           "first_legacy_frame": 29,
           "last_legacy_frame": 139,
           "local_target": [
-            0.304,
-            -0.304,
-            2.44
+            0.30405592918395996,
+            -0.30405592918395996,
+            2.473825693130493
           ],
           "closeup_rotation_euler": [
             0,
@@ -6256,7 +6272,17 @@
         "disable_presentation_rotation_in_gameplay": true,
         "package_solid_copies": 1
       },
-      "status": "Authored approximately80% visual presentation; Blender/import verified; game check pending"
+      "status": "Authored approximately80% visual presentation; Blender/import verified; game check pending",
+      "legacy_diagram_correlation": {
+        "reference": "_SCITEK/ST22.VID updates3/34/63",
+        "component": "four-data-dishes",
+        "solid": "Four deep concave reflectors seated directly against the dome, without exposed stalks",
+        "wire": "Subset of actual evaluated solid edges; identical component geometry",
+        "shape_verification": "gallery/media/ui/scitek/repair-facility/dish-shape-verification.json",
+        "previous_annular_profile_rejected": true,
+        "status": "Author correction after user review; client/user acceptance pending",
+        "edge_correspondence_verification": "gallery/media/ui/scitek/repair-facility/wire-correspondence-verification.json"
+      }
     }
   ]
 }

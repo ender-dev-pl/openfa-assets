@@ -57,7 +57,11 @@ for i in range(8):
 # Closed thin paraboloid dishes, tilted outward on the gold dome.
 for i in range(4):
     a=math.pi/4+i*math.pi/2;rad=Vector((math.cos(a),math.sin(a),0));normal=(rad*.78+Vector((0,0,.63))).normalized()
-    N=32;profile=[(.0,.0),(.032,.055),(.10,.055),(.112,.022),(.112,.010),(.10,.038),(.032,.038),(.0,-.008)]
+    # Deep continuous reflector seated directly against the dome, as shown
+    # by ST22 update34. No exposed stalk or raised annular neck.
+    N=48;radius=.112;depth=.090;thickness=.005
+    radii=[radius*j/6 for j in range(1,7)]
+    profile=[(0,0)]+[(r,depth*(r/radius)**2) for r in radii]+[(r,depth*(r/radius)**2-thickness) for r in reversed(radii)]+[(0,-thickness)]
     # profile is (radius, depth); distinct axis vertices avoid degenerate rings.
     verts=[(0,0,profile[0][1])]
     for radius,z in profile[1:-1]:verts.extend((radius*math.cos(k*math.tau/N),radius*math.sin(k*math.tau/N),z) for k in range(N))
@@ -73,6 +77,13 @@ for i in range(4):
     bm.to_mesh(data);bm.free()
     ob=bpy.data.objects.new('Research data dish '+str(i),data);s.collection.objects.link(ob);ob.data.materials.append(gold)
     ob.location=rad*.43+Vector((0,0,2.44));ob.rotation_euler=normal.to_track_quat('Z','Y').to_euler()
+    bpy.context.view_layer.update();roof=bpy.data.objects['Workshop gold roof'];clearances=[]
+    for v in data.vertices:
+        world=ob.matrix_world@v.co;origin=roof.matrix_world.inverted()@Vector((world.x,world.y,5));direction=roof.matrix_world.inverted().to_3x3()@Vector((0,0,-1))
+        hit,p,_,_=roof.ray_cast(origin,direction)
+        if hit:clearances.append(world.z-(roof.matrix_world@p).z)
+    assert clearances
+    ob.location.z+=.0015-min(clearances)
     for face in data.polygons:face.use_smooth=True
     add(ob,'four-data-dishes')
 
@@ -85,12 +96,27 @@ bpy.context.view_layer.update()
 mat=bpy.data.materials.new('Technical green');mat.use_nodes=True;nt=mat.node_tree;nt.nodes.clear();em=nt.nodes.new('ShaderNodeEmission');em.inputs['Color'].default_value=(0,.72,.005,1);output=nt.nodes.new('ShaderNodeOutputMaterial');nt.links.new(em.outputs[0],output.inputs[0])
 for role,obs in parts.items():
     curve=bpy.data.curves.new(role+' technical wire','CURVE');curve.dimensions='3D';curve.bevel_depth=.0015;curve.bevel_resolution=0
+    def line(a,b):
+        spl=curve.splines.new('POLY');spl.points.add(1);spl.points[0].co=(*a,1);spl.points[1].co=(*b,1)
     for ob in obs:
-        bm=bmesh.new();bm.from_mesh(ob.data);bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=1e-6);bm.normal_update()
+        if role=='four-data-dishes':
+            # Display a sparse grid sampled from the actual reflector surface.
+            # Drawing both sides of a thin shell makes the diagram opaque.
+            for ring in [2,4,6]:
+                for k in range(48):
+                    one=1+(ring-1)*48+k;two=1+(ring-1)*48+(k+1)%48
+                    line(ob.matrix_basis@ob.data.vertices[one].co,ob.matrix_basis@ob.data.vertices[two].co)
+            for k in range(0,48,4):
+                indices=[0]+[1+(ring-1)*48+k for ring in range(1,7)]
+                for one,two in zip(indices,indices[1:]):line(ob.matrix_basis@ob.data.vertices[one].co,ob.matrix_basis@ob.data.vertices[two].co)
+            continue
+        evaluated=ob.evaluated_get(bpy.context.evaluated_depsgraph_get());evaluated_mesh=evaluated.to_mesh()
+        bm=bmesh.new();bm.from_mesh(evaluated_mesh);bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=1e-6);bm.normal_update()
         for edge in bm.edges:
+            if edge.calc_length()<.008:continue  # Omit tiny finish-level bevel edges.
             if len(edge.link_faces)==2 and edge.calc_face_angle(0)<.012:continue
             a,b=[ob.matrix_basis@v.co for v in edge.verts];spl=curve.splines.new('POLY');spl.points.add(1);spl.points[0].co=(*a,1);spl.points[1].co=(*b,1)
-        bm.free()
+        bm.free();evaluated.to_mesh_clear()
     ob=bpy.data.objects.new(role+' technical wire',curve);s.collection.objects.link(ob);ob.parent=root;ob.data.materials.append(mat);ob.hide_render=True
 
 root.rotation_mode='XYZ';s.frame_start=1;s.frame_end=61;s.render.fps=15
@@ -100,7 +126,7 @@ for fc in root.animation_data.action.fcurves:
 s.frame_set(1);target=Vector((0,0,1.40));g.camera.location=(4,-10,5.8);g.camera.rotation_euler=(target-g.camera.location).to_track_quat('-Z','Y').to_euler();g.camera.data.ortho_scale=3.50;s.render.resolution_x=576;s.render.resolution_y=640;s.render.film_transparent=True
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'repair-facility.blend'));export_solid(root,meshes,out/'repair-facility.glb');s.render.filepath=str(out/'solid.png');bpy.ops.render.render(write_still=True)
 phases=[]
-for i,role in enumerate(roles[1:]):phases.append(dict(component=role,first_legacy_frame=29+i*141,last_legacy_frame=139+i*141,local_target=[[.304,-.304,2.44],[.061,-.87,1.18],[0,0,2.77]][i],closeup_rotation_euler=[[0,0,-math.pi/4],[0,0,0],[0,0,0]][i],ortho_scale=[.36,.24,.50][i]))
+for i,role in enumerate(roles[1:]):phases.append(dict(component=role,first_legacy_frame=29+i*141,last_legacy_frame=139+i*141,local_target=[list(parts['four-data-dishes'][3].location),[.061,-.87,1.18],[0,0,2.77]][i],closeup_rotation_euler=[[0,0,-math.pi/4],[0,0,0],[0,0,0]][i],ortho_scale=[.36,.24,.50][i]))
 (out/'model.json').write_text(json.dumps(dict(id='scitek:repair-facility',object_id='terran:repair-facility',legacy_index=22,components={k:[o.name for o in obs] for k,obs in parts.items()},phases=phases,whole_information_local_target=[0,0,1.4],whole_information_rotation_euler=[.12,0,.25],whole_information_ortho_scale=3.6,information_timeline_frames=423,base_source_sha256=digest,preserved_source_meshes=preserved,new_presentation_meshes=[o.name for o in meshes if o.name not in preserved],limitations=['Four scoped original meshes preserved. Recesses, droid port distribution, dish construction and aerial are authored from PB15/ST22; hidden details and camera interpolation are approximate.']),indent=2)+'\n')
 assert hashlib.sha256(base.read_bytes()).hexdigest()==digest
 print('REPAIR_FACILITY_VARIANTS_READY',len(meshes))

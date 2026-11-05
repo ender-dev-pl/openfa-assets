@@ -8,6 +8,8 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 
 ## Delivery gates
 
+- Choose the most legible legacy representation for each detail: enlarged colour/general-model views or technical wire closeups. Cross-check complementary views; do not give either representation blanket priority.
+- Validate solid anatomy against actual legacy colour and wire views; native/export agreement alone does not establish the correct interpretation. Technical diagrams derive from the evaluated shared solid geometry.
 - Preserve and inspect the actual static, preview-video and information-video references for every subject.
 - Reuse existing definition geometry only after confirming its subject; create the thirteen missing models.
 - Supply solid tile/detail, wireframe and red-part variants with source-defined animation/zoom phases.
