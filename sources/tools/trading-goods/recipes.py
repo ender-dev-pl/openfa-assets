@@ -463,3 +463,32 @@ def ores(n):
  M.rod('specimen support',(x,.35,.1),(x,.35,z-.55),.012,gold,p);r=M.ball('separate mineral specimen',(x,.33,z),(.30,.14,.42),mineral,p,2)
  for v in r.data.vertices:v.co*=1+.13*math.sin(v.co.x*19+v.co.z*13)
 BUILDERS.update({i:ores for i in range(78,88)})
+
+MISSILE_SLUGS=['explosive','area-explosive','napalm','hellfire','scatter','vortex','nuclear','virus','anti-virus','mega','stasis','bug-hunter','meat-eater']
+def inherited_missile(n):
+ from pathlib import Path
+ import hashlib,struct
+ slug=MISSILE_SLUGS[n-88];source=getattr(M,'INHERITED_NATIVE',None) or Path(__file__).resolve().parents[2]/f'docs/assets/reconstruction/missiles/terran/{slug}/model.blend';source=Path(source);source_hash=hashlib.sha256(source.read_bytes()).hexdigest();M.bpy.ops.wm.open_mainfile(filepath=str(source));s=M.bpy.context.scene;M.COL=s.collection
+ def local_geometry_hash():
+  h=hashlib.sha256()
+  for o in sorted((o for o in s.objects if o.type=='MESH'),key=lambda o:o.data.name):
+   h.update(o.data.name.encode())
+   for v in o.data.vertices:h.update(struct.pack('<3f',*v.co))
+   for p in o.data.polygons:h.update(struct.pack('<'+'I'*len(p.vertices),*p.vertices))
+  return h.hexdigest()
+ before=local_geometry_hash()
+ assert not [(m.name,node.name) for m in M.bpy.data.materials if m.use_nodes for node in m.node_tree.nodes if node.type=='TEX_IMAGE'],'Inherited source requires an explicit authored-image audit'
+ for img in list(M.bpy.data.images):
+  if img.source=='VIEWER' and img.users==0:M.bpy.data.images.remove(img)
+ assert not M.bpy.data.images
+ for o in list(s.objects):
+  if o.type in ['LIGHT','CAMERA']:M.bpy.data.objects.remove(o,do_unlink=True)
+ group=M.root('inherited Terran '+slug+' assembly')
+ for o in list(s.objects):
+  if o==group:continue
+  if o.parent is None:o.parent=group
+  o.name=M.ID+' / '+o.name
+ group.rotation_euler.y=math.pi/2
+ assert before==local_geometry_hash()
+ s.name=M.ID+' / coloured inherited missile';s.render.engine='CYCLES';s.cycles.samples=8;s.cycles.use_denoising=True;s.render.resolution_x=480;s.render.resolution_y=360;s.render.resolution_percentage=100;s.render.image_settings.file_format='PNG';s.render.film_transparent=False;s.view_settings.view_transform='AgX';s.view_settings.look='AgX - Medium High Contrast';s.world.color=(.12,.12,.12);M.bpy.context.preferences.filepaths.save_version=0;s['inherited_native_sha256']=source_hash;s['inherited_source']=f'sources/docs/assets/reconstruction/missiles/terran/{slug}/model.blend';s['inherited_local_geometry_hash']=before;s['geometry_preserved_during_reuse']=True;s['view_change']='Assembly rotated from +Z nose to +X; original local geometry and shader graphs retained.'
+BUILDERS.update({i:inherited_missile for i in range(88,101)})

@@ -89,17 +89,17 @@
 | 84 | Dragonium Ore | coloured_model_verified |
 | 85 | Traxium Ore | coloured_model_verified |
 | 86 | Nexos Ore | coloured_model_verified |
-| 87 | Explosive Missile | planned |
-| 88 | Area Explosive Missile | planned |
-| 89 | Napalm Missile | planned |
-| 90 | Hellfire Missile | planned |
-| 91 | Scatter Missile | planned |
-| 92 | Vortex Missile | planned |
-| 93 | Nuclear Missile | planned |
-| 94 | Virus Missile | planned |
-| 95 | Anti-Virus Missile | planned |
-| 96 | Mega Missile | planned |
-| 97 | Stasis Missile | planned |
-| 98 | Bug Hunter Missile | planned |
-| 99 | Meat-Eater Missile | planned |
+| 87 | Explosive Missile | coloured_model_verified |
+| 88 | Area Explosive Missile | coloured_model_verified |
+| 89 | Napalm Missile | coloured_model_verified |
+| 90 | Hellfire Missile | coloured_model_verified |
+| 91 | Scatter Missile | coloured_model_verified |
+| 92 | Vortex Missile | coloured_model_verified |
+| 93 | Nuclear Missile | coloured_model_verified |
+| 94 | Virus Missile | coloured_model_verified |
+| 95 | Anti-Virus Missile | coloured_model_verified |
+| 96 | Mega Missile | coloured_model_verified |
+| 97 | Stasis Missile | coloured_model_verified |
+| 98 | Bug Hunter Missile | coloured_model_verified |
+| 99 | Meat-Eater Missile | coloured_model_verified |
 | 100 | Information | planned |
