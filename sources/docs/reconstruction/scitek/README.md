@@ -87,7 +87,7 @@ The supplied installation has fifteen _MA/ST*.VID colour films. All fifteen map 
 | 1 | Ships and hardpoints | Pending |
 | 2 | Missiles | Pending |
 | 3 | Mining | Pending |
-| 4 | Power | Pending |
+| 4 | Power | Hi-Energy Power Stores and shared refined Powerplant; native/4x PNG and131-mesh authoring collage delivered; game check pending |
 | 5 | Miscellaneous | Construction Droids and Improved Sensors; native/4x PNG and curve-preserving neutral assembly delivered; game check pending |
 
-See sources/ui/scitek/category-collages for source manifests and runtime proofs. Category defence depends on Screen Generator delivery7253a765. All six original frames were freshly decoded with BUTTONS palette and checked against private reference caches. This proves input integrity, not completion of the four pending reconstructions.
+See sources/ui/scitek/category-collages for source manifests and runtime proofs. Category defence depends on Screen Generator delivery7253a765. All six original frames were freshly decoded with BUTTONS palette and checked against private reference caches. This proves input integrity, not completion of the three pending reconstructions.

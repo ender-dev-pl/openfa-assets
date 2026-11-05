@@ -6065,6 +6065,42 @@
         "disable_presentation_rotation_in_gameplay": true,
         "package_solid_copies": 1
       }
+    },
+    {
+      "id": "scitek:category-power",
+      "name": "Sci-Tek power category",
+      "binding": "openfa:presentation/profile/research-category/power",
+      "research_category_id": "openfa:research-category/power",
+      "legacy": {
+        "directory": "_MS",
+        "entry": "SCITEKC.256",
+        "frame": 4,
+        "palette": "_MS/BUTTONS.256"
+      },
+      "canvas": [
+        80,
+        64
+      ],
+      "drawn_rectangle": [
+        9,
+        5,
+        73,
+        55
+      ],
+      "native": "gallery/media/ui/scitek/category-power/category-native.png",
+      "hires": "gallery/media/ui/scitek/category-power/category-4x.png",
+      "studio_render": "gallery/media/ui/scitek/category-power/native.png",
+      "blend": "sources/ui/scitek/category-collages/power/category-power.blend",
+      "glb": "sources/ui/scitek/category-collages/power/category-power.glb",
+      "readme": "sources/ui/scitek/category-collages/power/README.md",
+      "source_subjects": [
+        "scitek:hi-energy-power-stores",
+        "scitek:powerplant"
+      ],
+      "monochrome": true,
+      "animation": false,
+      "package_contract": "Use static PNG for category UI; collage GLB is an authoring/gallery asset, not another gameplay solid.",
+      "status": "Category frame4 authored and Blender/import verified; game check pending"
     }
   ]
 }

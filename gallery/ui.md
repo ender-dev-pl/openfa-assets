@@ -304,3 +304,9 @@ Construction Droids and Improved Sensors in the original80x64 logical compositio
 ![Powerplant](media/ui/scitek/powerplant/solid.png)
 
 [Full technical animation](media/ui/scitek/powerplant/information.webm) - [Source and integration](../sources/ui/scitek/powerplant/README.md).
+
+### Sci-Tek power category
+
+![Power category](media/ui/scitek/category-power/category-4x.png)
+
+Hi-Energy Power Stores and shared refined Powerplant in the original80x64 composition. [Source and binding](../sources/ui/scitek/category-collages/power/README.md).

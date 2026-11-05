@@ -2,7 +2,7 @@
 
 The original six SCITEKC.256 frames use the runtime _MS/BUTTONS.256 palette. Their logical canvas is80x64. Fresh decoding of all six frames was compared against the cached actual references; only source/count/hash/rectangle metadata is published. Original pixels are private.
 
-Delivered: defence (frame0), miscellaneous (frame5). Pending: ships-hardpoints (1), missiles (2), mining (3), power (4). Each collage must identify its actual subjects from correctly paletted references, preserve their existing models, and verify its authored layout through Blender plus an independent GLB import.
+Delivered: defence (frame0), power (frame4), miscellaneous (frame5). Pending: ships-hardpoints (1), missiles (2), mining (3). Each collage must identify its actual subjects from correctly paletted references, preserve their existing models, and verify its authored layout through Blender plus an independent GLB import.
 
 Build in Blender: build_collage.py -- defence/layout.json OUTPUT ASSET_ROOT with geometry.py alongside. The manifest records input model paths, frozen source pose and logical placement rectangles. Geometry/UV signatures and input hashes are preserved. Source models are read-only; derivative material copies provide neutral PBR/retained native procedural variation. The source compositor creates monochrome output with a documented gain. Portable materials retain representative neutral colour. The static GLB preserves a three-dimensional arrangement; UI uses the supplied flat PNGs.
 
@@ -11,3 +11,5 @@ verify_collage_import.py -- OUTPUT defence/layout.json independently imports the
 Rebuild after any input model change; stale source hashes are not acceptance evidence. Approximate visual correspondence of80% is the requested criterion. Camera, tone, poses and hidden geometry are authored interpretations, not pixel or recovered original3D fidelity.
 
 The generator preserves both mesh vertex/face/UV data and editable curve control points/bevel data. Curves export as portable meshes; native Mesh/Curve counts are recorded separately from the exported drawable count. Degenerate zero-scale effect objects remain in the snapshot but do not influence placement bounds. Miscellaneous delivery verifies this path with three editable curves, including the coiled welder feed. The updated tool also regenerated defence with identical native and imported rendered pixels; its prior published files remain unchanged.
+
+Category composition GLBs are authoring/interactive-gallery outputs. Runtime category UI uses flat PNGs; do not pack these assemblies as additional copies of their gameplay models. Shared refined object sources take precedence when available.
