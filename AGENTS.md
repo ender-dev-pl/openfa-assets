@@ -13,8 +13,7 @@
 
 ## Persistent objective: trading goods
 
-- On `feat/trading-goods-reconstruction`, reconstruct images of all trading goods. Continue this objective across sessions until the coverage manifest is complete.
-- Read `docs/trading-goods/README.md` and `docs/trading-goods/coverage.json` before choosing the next item; track work in origin issue #214.
-- Keep compact monochrome and detailed colour images as separate acceptance targets. Planned items are not completed models. Preserve earlier finished items; inspect local reference and description evidence before authoring.
-
-- Latest user scope: author all coloured 3D trading-good models sequentially; final compact/detail image production is deferred. Related goods may derive from completed models; record lineage and preserve each version. Use model_status for progress; image status does not block model completion.
+- Branch `feat/trading-goods-reconstruction` tracks reconstruction of all trading-good assets; see origin issue #214 and `docs/trading-goods/README.md`.
+- The user-authorized coloured-model phase is complete: TI001–TI101 have editable natives, coloured static GLBs, inspected technical previews and runtime reports. Read `coverage.json` and `COMPLETION.md` before new work; do not restart completed items.
+- Final compact monochrome and detailed colour images remain deferred by the user. Do not generate them automatically or use their deferred state to claim models are incomplete.
+- Related native models and construction families may be reused, preserving each completed source and recording lineage. Artistic refining and game integration require their own scope; retain original reference and cultural/description evidence locally.

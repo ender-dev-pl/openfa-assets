@@ -4,6 +4,10 @@ User objective: reconstruct **all coloured editable trading-good models**, one a
 
 [coverage.json](coverage.json) is the machine-readable ledger; [ITEMS.md](ITEMS.md) lists model progress. Track model completion independently from compact/detail image targets. The catalogue has 101 identities: 68 ordinary goods, five treatments, four anti-personnel-virus containers, ten ores, thirteen Terran missiles and one information bundle. Identities 0–100 map to `_TRADE/TI001`–`TI101`.
 
+## Current state
+
+**101/101 coloured models are complete for the first reconstruction pass.** All 202 final images remain deferred. See [COMPLETION.md](COMPLETION.md) and [catalogue-validation.json](catalogue-validation.json). No models should be regenerated merely because image targets are deferred.
+
 ## Evidence and workflow
 
 Read the game repository's `docs/legacy/trade-information.md` and the item's recovered localization description/cultural evidence. Inspect its correctly paletted `TIxxxBIG.256` colour reference locally before authoring. The compact monochrome 108×80 and colour 216×160 image variants remain future output targets; technical preview renders are solely model inspection aids. Do not publish or project original pixels as textures.

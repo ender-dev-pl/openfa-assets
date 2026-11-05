@@ -1,105 +1,107 @@
-# Trading-goods model coverage
+# Trading-goods coloured models
 
-| ID | Item | Model status |
-|---:|---|---|
-| 0 | Beers | coloured_model_verified |
-| 1 | Wines | coloured_model_verified |
-| 2 | Altarian Panther Sweat | coloured_model_verified |
-| 3 | St.Etienne's Real Cream & Honey Liqueur | coloured_model_verified |
-| 4 | Muet & Champignon vintage champagne | coloured_model_verified |
-| 5 | Fizzimo Lumiere | coloured_model_verified |
-| 6 | Bristol glass | coloured_model_verified |
-| 7 | Crystal Cantata Inc. products | coloured_model_verified |
-| 8 | Deep pile velvet | coloured_model_verified |
-| 9 | Silk | coloured_model_verified |
-| 10 | Watered silk | coloured_model_verified |
-| 11 | Raw silk | coloured_model_verified |
-| 12 | Satin taffeta | coloured_model_verified |
-| 13 | Egyptian sea-cotton | coloured_model_verified |
-| 14 | Achaean angora | coloured_model_verified |
-| 15 | Tiara & Bracelet set | coloured_model_verified |
-| 16 | Choker | coloured_model_verified |
-| 17 | Solitaire emerald | coloured_model_verified |
-| 18 | Brooch | coloured_model_verified |
-| 19 | Necklace | coloured_model_verified |
-| 20 | Eternity ring | coloured_model_verified |
-| 21 | Pectoral | coloured_model_verified |
-| 22 | Collar | coloured_model_verified |
-| 23 | 3-strand bracelet | coloured_model_verified |
-| 24 | Diamond | coloured_model_verified |
-| 25 | Emerald | coloured_model_verified |
-| 26 | Sapphire | coloured_model_verified |
-| 27 | Ruby | coloured_model_verified |
-| 28 | Ultropaz | coloured_model_verified |
-| 29 | Alexandrite | coloured_model_verified |
-| 30 | Metachrome | coloured_model_verified |
-| 31 | Opal | coloured_model_verified |
-| 32 | Pearl | coloured_model_verified |
-| 33 | Moonstone | coloured_model_verified |
-| 34 | Astramarine | coloured_model_verified |
-| 35 | Peridot | coloured_model_verified |
-| 36 | Amethyst | coloured_model_verified |
-| 37 | Abstract Sculpture | coloured_model_verified |
-| 38 | Domestic interior units | coloured_model_verified |
-| 39 | Decorative drinking horns | coloured_model_verified |
-| 40 | Worked leather | coloured_model_verified |
-| 41 | Ornamental archaic weaponry | coloured_model_verified |
-| 42 | Fizzimo Liqueurs | coloured_model_verified |
-| 43 | Rigellian ant eggs | coloured_model_verified |
-| 44 | Pearls dissolved in brandy | coloured_model_verified |
-| 45 | Goat's ear mushrooms | coloured_model_verified |
-| 46 | Organic corn on the cob | coloured_model_verified |
-| 47 | Braccatian kulos cheese | coloured_model_verified |
-| 48 | Grains | coloured_model_verified |
-| 49 | Seaweed | coloured_model_verified |
-| 50 | Krill | coloured_model_verified |
-| 51 | Water | coloured_model_verified |
-| 52 | Ortok's Mansions | coloured_model_verified |
-| 53 | Shades of Brutos | coloured_model_verified |
-| 54 | Huskar Cigars | coloured_model_verified |
-| 55 | Maunik's Cube | coloured_model_verified |
-| 56 | Gong of Death Song | coloured_model_verified |
-| 57 | Holostar globes | coloured_model_verified |
-| 58 | Besthelda's Apothecary | coloured_model_verified |
-| 59 | Photoplasmic Cocoon | coloured_model_verified |
-| 60 | Steam Racers | coloured_model_verified |
-| 61 | KKZ Quad | coloured_model_verified |
-| 62 | Kraagil Oil | coloured_model_verified |
-| 63 | Sacrificial Axe | coloured_model_verified |
-| 64 | Horn of Plenty | coloured_model_verified |
-| 65 | Dionne's Lightwork | coloured_model_verified |
-| 66 | Loving Cup | coloured_model_verified |
-| 67 | Law of the Cube | coloured_model_verified |
-| 68 | Biofort (Pharmaceutical) | coloured_model_verified |
-| 69 | Vir-Attack (Pharmaceutical) | coloured_model_verified |
-| 70 | Supa-Shellac (Pharmaceutical) | coloured_model_verified |
-| 71 | Swat (Pharmaceutical) | coloured_model_verified |
-| 72 | Star Balm (Pharmaceutical) | coloured_model_verified |
-| 73 | Shell Shock (APV) | coloured_model_verified |
-| 74 | Phantom (APV) | coloured_model_verified |
-| 75 | Judgement Day (APV) | coloured_model_verified |
-| 76 | Silicon Death (APV) | coloured_model_verified |
-| 77 | Selenium Ore | coloured_model_verified |
-| 78 | Asteros Ore | coloured_model_verified |
-| 79 | Barium Ore | coloured_model_verified |
-| 80 | Crystalite Ore | coloured_model_verified |
-| 81 | Quazinc Ore | coloured_model_verified |
-| 82 | Bytanium Ore | coloured_model_verified |
-| 83 | Korellium Ore | coloured_model_verified |
-| 84 | Dragonium Ore | coloured_model_verified |
-| 85 | Traxium Ore | coloured_model_verified |
-| 86 | Nexos Ore | coloured_model_verified |
-| 87 | Explosive Missile | coloured_model_verified |
-| 88 | Area Explosive Missile | coloured_model_verified |
-| 89 | Napalm Missile | coloured_model_verified |
-| 90 | Hellfire Missile | coloured_model_verified |
-| 91 | Scatter Missile | coloured_model_verified |
-| 92 | Vortex Missile | coloured_model_verified |
-| 93 | Nuclear Missile | coloured_model_verified |
-| 94 | Virus Missile | coloured_model_verified |
-| 95 | Anti-Virus Missile | coloured_model_verified |
-| 96 | Mega Missile | coloured_model_verified |
-| 97 | Stasis Missile | coloured_model_verified |
-| 98 | Bug Hunter Missile | coloured_model_verified |
-| 99 | Meat-Eater Missile | coloured_model_verified |
-| 100 | Information | coloured_model_verified |
+**101/101 verified model deliveries. Final compact/detail images remain deferred.**
+
+| ID | Item | Native | GLB | Model status |
+|---:|---|---|---|---|
+| 0 | Beers | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI001/TI001.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI001/TI001.glb) | coloured_model_verified |
+| 1 | Wines | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI002/TI002.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI002/TI002.glb) | coloured_model_verified |
+| 2 | Altarian Panther Sweat | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI003/TI003.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI003/TI003.glb) | coloured_model_verified |
+| 3 | St.Etienne's Real Cream & Honey Liqueur | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI004/TI004.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI004/TI004.glb) | coloured_model_verified |
+| 4 | Muet & Champignon vintage champagne | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI005/TI005.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI005/TI005.glb) | coloured_model_verified |
+| 5 | Fizzimo Lumiere | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI006/TI006.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI006/TI006.glb) | coloured_model_verified |
+| 6 | Bristol glass | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI007/TI007.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI007/TI007.glb) | coloured_model_verified |
+| 7 | Crystal Cantata Inc. products | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI008/TI008.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI008/TI008.glb) | coloured_model_verified |
+| 8 | Deep pile velvet | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI009/TI009.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI009/TI009.glb) | coloured_model_verified |
+| 9 | Silk | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI010/TI010.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI010/TI010.glb) | coloured_model_verified |
+| 10 | Watered silk | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI011/TI011.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI011/TI011.glb) | coloured_model_verified |
+| 11 | Raw silk | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI012/TI012.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI012/TI012.glb) | coloured_model_verified |
+| 12 | Satin taffeta | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI013/TI013.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI013/TI013.glb) | coloured_model_verified |
+| 13 | Egyptian sea-cotton | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI014/TI014.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI014/TI014.glb) | coloured_model_verified |
+| 14 | Achaean angora | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI015/TI015.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI015/TI015.glb) | coloured_model_verified |
+| 15 | Tiara & Bracelet set | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI016/TI016.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI016/TI016.glb) | coloured_model_verified |
+| 16 | Choker | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI017/TI017.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI017/TI017.glb) | coloured_model_verified |
+| 17 | Solitaire emerald | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI018/TI018.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI018/TI018.glb) | coloured_model_verified |
+| 18 | Brooch | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI019/TI019.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI019/TI019.glb) | coloured_model_verified |
+| 19 | Necklace | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI020/TI020.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI020/TI020.glb) | coloured_model_verified |
+| 20 | Eternity ring | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI021/TI021.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI021/TI021.glb) | coloured_model_verified |
+| 21 | Pectoral | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI022/TI022.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI022/TI022.glb) | coloured_model_verified |
+| 22 | Collar | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI023/TI023.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI023/TI023.glb) | coloured_model_verified |
+| 23 | 3-strand bracelet | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI024/TI024.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI024/TI024.glb) | coloured_model_verified |
+| 24 | Diamond | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI025/TI025.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI025/TI025.glb) | coloured_model_verified |
+| 25 | Emerald | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI026/TI026.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI026/TI026.glb) | coloured_model_verified |
+| 26 | Sapphire | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI027/TI027.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI027/TI027.glb) | coloured_model_verified |
+| 27 | Ruby | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI028/TI028.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI028/TI028.glb) | coloured_model_verified |
+| 28 | Ultropaz | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI029/TI029.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI029/TI029.glb) | coloured_model_verified |
+| 29 | Alexandrite | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI030/TI030.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI030/TI030.glb) | coloured_model_verified |
+| 30 | Metachrome | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI031/TI031.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI031/TI031.glb) | coloured_model_verified |
+| 31 | Opal | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI032/TI032.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI032/TI032.glb) | coloured_model_verified |
+| 32 | Pearl | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI033/TI033.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI033/TI033.glb) | coloured_model_verified |
+| 33 | Moonstone | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI034/TI034.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI034/TI034.glb) | coloured_model_verified |
+| 34 | Astramarine | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI035/TI035.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI035/TI035.glb) | coloured_model_verified |
+| 35 | Peridot | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI036/TI036.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI036/TI036.glb) | coloured_model_verified |
+| 36 | Amethyst | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI037/TI037.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI037/TI037.glb) | coloured_model_verified |
+| 37 | Abstract Sculpture | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI038/TI038.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI038/TI038.glb) | coloured_model_verified |
+| 38 | Domestic interior units | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI039/TI039.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI039/TI039.glb) | coloured_model_verified |
+| 39 | Decorative drinking horns | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI040/TI040.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI040/TI040.glb) | coloured_model_verified |
+| 40 | Worked leather | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI041/TI041.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI041/TI041.glb) | coloured_model_verified |
+| 41 | Ornamental archaic weaponry | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI042/TI042.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI042/TI042.glb) | coloured_model_verified |
+| 42 | Fizzimo Liqueurs | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI043/TI043.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI043/TI043.glb) | coloured_model_verified |
+| 43 | Rigellian ant eggs | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI044/TI044.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI044/TI044.glb) | coloured_model_verified |
+| 44 | Pearls dissolved in brandy | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI045/TI045.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI045/TI045.glb) | coloured_model_verified |
+| 45 | Goat's ear mushrooms | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI046/TI046.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI046/TI046.glb) | coloured_model_verified |
+| 46 | Organic corn on the cob | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI047/TI047.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI047/TI047.glb) | coloured_model_verified |
+| 47 | Braccatian kulos cheese | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI048/TI048.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI048/TI048.glb) | coloured_model_verified |
+| 48 | Grains | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI049/TI049.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI049/TI049.glb) | coloured_model_verified |
+| 49 | Seaweed | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI050/TI050.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI050/TI050.glb) | coloured_model_verified |
+| 50 | Krill | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI051/TI051.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI051/TI051.glb) | coloured_model_verified |
+| 51 | Water | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI052/TI052.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI052/TI052.glb) | coloured_model_verified |
+| 52 | Ortok's Mansions | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI053/TI053.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI053/TI053.glb) | coloured_model_verified |
+| 53 | Shades of Brutos | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI054/TI054.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI054/TI054.glb) | coloured_model_verified |
+| 54 | Huskar Cigars | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI055/TI055.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI055/TI055.glb) | coloured_model_verified |
+| 55 | Maunik's Cube | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI056/TI056.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI056/TI056.glb) | coloured_model_verified |
+| 56 | Gong of Death Song | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI057/TI057.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI057/TI057.glb) | coloured_model_verified |
+| 57 | Holostar globes | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI058/TI058.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI058/TI058.glb) | coloured_model_verified |
+| 58 | Besthelda's Apothecary | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI059/TI059.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI059/TI059.glb) | coloured_model_verified |
+| 59 | Photoplasmic Cocoon | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI060/TI060.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI060/TI060.glb) | coloured_model_verified |
+| 60 | Steam Racers | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI061/TI061.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI061/TI061.glb) | coloured_model_verified |
+| 61 | KKZ Quad | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI062/TI062.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI062/TI062.glb) | coloured_model_verified |
+| 62 | Kraagil Oil | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI063/TI063.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI063/TI063.glb) | coloured_model_verified |
+| 63 | Sacrificial Axe | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI064/TI064.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI064/TI064.glb) | coloured_model_verified |
+| 64 | Horn of Plenty | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI065/TI065.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI065/TI065.glb) | coloured_model_verified |
+| 65 | Dionne's Lightwork | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI066/TI066.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI066/TI066.glb) | coloured_model_verified |
+| 66 | Loving Cup | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI067/TI067.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI067/TI067.glb) | coloured_model_verified |
+| 67 | Law of the Cube | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI068/TI068.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI068/TI068.glb) | coloured_model_verified |
+| 68 | Biofort (Pharmaceutical) | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI069/TI069.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI069/TI069.glb) | coloured_model_verified |
+| 69 | Vir-Attack (Pharmaceutical) | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI070/TI070.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI070/TI070.glb) | coloured_model_verified |
+| 70 | Supa-Shellac (Pharmaceutical) | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI071/TI071.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI071/TI071.glb) | coloured_model_verified |
+| 71 | Swat (Pharmaceutical) | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI072/TI072.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI072/TI072.glb) | coloured_model_verified |
+| 72 | Star Balm (Pharmaceutical) | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI073/TI073.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI073/TI073.glb) | coloured_model_verified |
+| 73 | Shell Shock (APV) | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI074/TI074.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI074/TI074.glb) | coloured_model_verified |
+| 74 | Phantom (APV) | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI075/TI075.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI075/TI075.glb) | coloured_model_verified |
+| 75 | Judgement Day (APV) | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI076/TI076.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI076/TI076.glb) | coloured_model_verified |
+| 76 | Silicon Death (APV) | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI077/TI077.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI077/TI077.glb) | coloured_model_verified |
+| 77 | Selenium Ore | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI078/TI078.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI078/TI078.glb) | coloured_model_verified |
+| 78 | Asteros Ore | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI079/TI079.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI079/TI079.glb) | coloured_model_verified |
+| 79 | Barium Ore | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI080/TI080.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI080/TI080.glb) | coloured_model_verified |
+| 80 | Crystalite Ore | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI081/TI081.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI081/TI081.glb) | coloured_model_verified |
+| 81 | Quazinc Ore | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI082/TI082.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI082/TI082.glb) | coloured_model_verified |
+| 82 | Bytanium Ore | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI083/TI083.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI083/TI083.glb) | coloured_model_verified |
+| 83 | Korellium Ore | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI084/TI084.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI084/TI084.glb) | coloured_model_verified |
+| 84 | Dragonium Ore | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI085/TI085.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI085/TI085.glb) | coloured_model_verified |
+| 85 | Traxium Ore | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI086/TI086.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI086/TI086.glb) | coloured_model_verified |
+| 86 | Nexos Ore | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI087/TI087.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI087/TI087.glb) | coloured_model_verified |
+| 87 | Explosive Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI088/TI088.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI088/TI088.glb) | coloured_model_verified |
+| 88 | Area Explosive Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI089/TI089.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI089/TI089.glb) | coloured_model_verified |
+| 89 | Napalm Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI090/TI090.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI090/TI090.glb) | coloured_model_verified |
+| 90 | Hellfire Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI091/TI091.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI091/TI091.glb) | coloured_model_verified |
+| 91 | Scatter Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI092/TI092.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI092/TI092.glb) | coloured_model_verified |
+| 92 | Vortex Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI093/TI093.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI093/TI093.glb) | coloured_model_verified |
+| 93 | Nuclear Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI094/TI094.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI094/TI094.glb) | coloured_model_verified |
+| 94 | Virus Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI095/TI095.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI095/TI095.glb) | coloured_model_verified |
+| 95 | Anti-Virus Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI096/TI096.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI096/TI096.glb) | coloured_model_verified |
+| 96 | Mega Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI097/TI097.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI097/TI097.glb) | coloured_model_verified |
+| 97 | Stasis Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI098/TI098.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI098/TI098.glb) | coloured_model_verified |
+| 98 | Bug Hunter Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI099/TI099.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI099/TI099.glb) | coloured_model_verified |
+| 99 | Meat-Eater Missile | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI100/TI100.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI100/TI100.glb) | coloured_model_verified |
+| 100 | Information | [Blender](../../sources/docs/assets/reconstruction/trading-goods/TI101/TI101.blend) | [GLB](../../sources/docs/assets/reconstruction/trading-goods/TI101/TI101.glb) | coloured_model_verified |
