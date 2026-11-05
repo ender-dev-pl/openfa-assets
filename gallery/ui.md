@@ -372,3 +372,9 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Command Cruiser](media/ui/scitek/command-cruiser/solid.png)
 
 [Shared model and technical presentation](../sources/ui/scitek/command-cruiser/README.md).
+
+### Sci-Tek missiles category
+
+![Missiles category](media/ui/scitek/category-missiles/category-4x.png)
+
+[Source and binding](../sources/ui/scitek/category-collages/missiles/README.md).

@@ -7857,6 +7857,43 @@
         "material_portability": "gallery/media/ui/scitek/command-cruiser/material-portability-verification.json"
       },
       "status": "Approximately80% authored visual refinement; Blender/import verified; client check pending"
+    },
+    {
+      "id": "scitek:category-missiles",
+      "name": "Sci-Tek missiles category",
+      "binding": "openfa:presentation/profile/research-category/missiles",
+      "research_category_id": "openfa:research-category/missiles",
+      "legacy": {
+        "directory": "_MS",
+        "entry": "SCITEKC.256",
+        "frame": 2,
+        "palette": "_MS/BUTTONS.256"
+      },
+      "canvas": [
+        80,
+        64
+      ],
+      "drawn_rectangle": [
+        8,
+        5,
+        75,
+        58
+      ],
+      "native": "gallery/media/ui/scitek/category-missiles/category-native.png",
+      "hires": "gallery/media/ui/scitek/category-missiles/category-4x.png",
+      "studio_render": "gallery/media/ui/scitek/category-missiles/native.png",
+      "blend": "sources/ui/scitek/category-collages/missiles/category-missiles.blend",
+      "glb": "sources/ui/scitek/category-collages/missiles/category-missiles.glb",
+      "readme": "sources/ui/scitek/category-collages/missiles/README.md",
+      "source_subjects": [
+        "scitek:virus-missile",
+        "scitek:mega-missile",
+        "scitek:missile-bay-extension"
+      ],
+      "monochrome": true,
+      "animation": false,
+      "package_contract": "Use static PNG for category UI; collage GLB is authoring/gallery only, not another gameplay solid.",
+      "status": "Category frame2 authored and Blender/import verified; game check pending"
     }
   ]
 }
