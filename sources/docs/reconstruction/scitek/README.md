@@ -53,7 +53,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 31 | scitek:turret-optimiser | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 32 | scitek:virus-missile | openfa:virus | Pending |
 | 33 | scitek:warp-generator | openfa:warp-generator | Pending |
-| 34 | scitek:long-range-transmitter | **Missing** | Pending |
+| 34 | scitek:long-range-transmitter | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 35 | scitek:command-cruiser | openfa:command-cruiser | Pending |
 
 Private original pixels and decoded films remain in ignored local evidence directories. Published outputs must be authored assets, not copies of the reference pixels. Full issue completion requires every delivery gate; this initial audit is only a baseline.

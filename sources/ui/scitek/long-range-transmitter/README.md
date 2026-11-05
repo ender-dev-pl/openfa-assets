@@ -1,0 +1,13 @@
+# Sci-Tek Long Range Transmitter — research 34
+
+Authored reconstruction based on the correctly paletted ST34.256 tile, all 60 colour frames, the 423-frame information film and all three caption anchor groups. Original pixels are private reference evidence and are not textures in this model.
+
+The faceted tan console includes an angled dark display, three red/green/blue controls, paired cartridge drives, a right-hand encryption assembly, three physical rear ventilation slots, end markings and coloured service loops. New hardware has 20 geometric wear marks plus Blender procedural abrasion. The GLB retains geometric wear and portable material colours; procedural abrasion is not baked. Green display glyphs are authored static geometry, not a transcription of source text or a claim of independent screen scrolling. The meaning of the blue end emblem is unconfirmed.
+
+Use long-range-transmitter.blend or .glb for the colour presentation, root TransmitterRotor at unit scale. The preview is 60 frames at 15 fps, with closure at frame 61. Use the exact solid_preview_camera and solid_framing metadata: framing has been checked across the whole rotation. Tile assets use a 144×160 canvas and legacy drawn box (5,41)..(138,123), with contain scaling and preserved proportions.
+
+The separate information Blend/GLB and information-timeline.json provide all 423 frames at 15 fps. Apply the timeline root rotation by replacement, camera pose, orthographic scale and highlight material selection. Material colour and orthographic scale cannot be assumed to survive glTF animation. Whole information orientation differs from the tile orientation, matching the inspected source's opposite-end view. Pose interpolation and camera reconstruction remain authored approximations.
+
+Four technical roles: chassis, audio-visual-console, data-cartridge-drives and data-encryption-device. Caption intervals are respectively 29..139, 170..280 and 311..421 (zero based). Captions come from ENGLISH.TXT records 1451..1453. Non-selected groups remain green; the selected group turns red. Solid glyphs, wear and small fasteners are excluded from technical variants.
+
+Validation covers closed hardware topology, capped curves, role membership, all 60 projected bounds, loop closure, five solid/wire/highlight native/imported comparisons, three independent colour animation poses, complete information rendering, five independent information imports, saved-scene reload, caption selection and film decoding. Coarse source-frame occupancy comparisons are not pixel-exact fidelity evidence. Actual OpenFA integration and GPU acceptance remain the main game thread's responsibility.

@@ -208,3 +208,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Turret Optimiser research assembly](media/ui/scitek/turret-optimiser/solid.png)
 
 [Full technical animation](media/ui/scitek/turret-optimiser/information.webm) · [Source and integration contract](../sources/ui/scitek/turret-optimiser/README.md).
+
+### Long Range Transmitter
+
+![Authored Long Range Transmitter research assembly](media/ui/scitek/long-range-transmitter/solid.png)
+
+[Full technical animation](media/ui/scitek/long-range-transmitter/information.webm) · [Source and integration contract](../sources/ui/scitek/long-range-transmitter/README.md).
