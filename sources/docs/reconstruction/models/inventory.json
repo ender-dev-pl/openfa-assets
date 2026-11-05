@@ -1981,6 +1981,13 @@
           "present": true,
           "sha256": "501a55a663ada193b6bb008f2717b0052997fa785892665d00c379099298d148",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/ore-teleporter/refined/model.blend",
+          "present": true,
+          "sha256": "4b7d9eb24cf9efe4d621881bd24ae2e8ff6ac20be75d8e705714565c716bfd80",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -2022,6 +2029,23 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 11
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/ore-teleporter/refined/model.blend",
+        "glb": "sources/objects/terran/ore-teleporter/refined/model.glb",
+        "root": "OreResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
       }
     },
     {

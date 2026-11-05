@@ -2,7 +2,7 @@ from pathlib import Path
 import json,sys
 from PIL import Image,ImageChops,ImageStat,ImageFilter
 out=Path(sys.argv[1]);proof={}
-for stem in ['solid','wireframe','highlight-long-range-transceiver','highlight-atomic-scan-generators','highlight-data-throughput-supercomputer']:
+for stem in ['solid','wireframe']+['highlight-'+p['component'] for p in json.loads((out/'model.json').read_text())['phases']]:
  a=Image.open(out/(stem+'.png')).convert('RGBA');b=Image.open(out/('imported-'+stem+'.png')).convert('RGBA');assert a.size==b.size
  aa={i for i,p in enumerate(a.getdata()) if p[3]>128 and max(p[:3])>30};bb={i for i,p in enumerate(b.getdata()) if p[3]>128 and max(p[:3])>30};iou=len(aa&bb)/len(aa|bb);# Two pixels at 640px allow native/import antialiasing differences;
  # this checks projected structure, not legacy pixel fidelity.

@@ -149,7 +149,6 @@
     "Transfer ramp tread.003",
     "Transfer ramp tread.004",
     "Cylindrical tower.002",
-    "Tower seam.002",
     "Tower crown.002",
     "Transfer side tank clamp.003",
     "Transfer side tank clamp.004",
@@ -212,5 +211,23 @@
   ],
   "limitations": [
     "Existing selected mesh geometry/UV/material slots retained, foundation/ramp transforms adapted in research variant only. Chamber, three scanner interpretation, antenna and open service bay are authored from observed references. Hidden geometry, camera and wire topology approximated."
+  ],
+  "shared_topology_repair": {
+    "mesh": "Tower seam.002",
+    "before": {
+      "vertices": 392,
+      "faces": 384,
+      "boundary_edges": 16
+    },
+    "after": {
+      "vertices": 390,
+      "faces": 386,
+      "boundary_edges": 0
+    },
+    "added_cap_faces": 2,
+    "precision_weld_tolerance": 1e-06
+  },
+  "repaired_source_meshes": [
+    "Tower seam.002"
   ]
 }

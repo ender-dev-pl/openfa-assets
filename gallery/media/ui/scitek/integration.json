@@ -5481,8 +5481,8 @@
       "disabled": "gallery/media/ui/scitek/ore-teleporter/tile-disabled.png",
       "hires": "gallery/media/ui/scitek/ore-teleporter/tile-4x.png",
       "studio_render": "gallery/media/ui/scitek/ore-teleporter/solid.png",
-      "blend": "sources/ui/scitek/ore-teleporter/ore-teleporter.blend",
-      "glb": "sources/ui/scitek/ore-teleporter/ore-teleporter.glb",
+      "blend": "sources/objects/terran/ore-teleporter/refined/model.blend",
+      "glb": "sources/objects/terran/ore-teleporter/refined/model.glb",
       "readme": "sources/ui/scitek/ore-teleporter/README.md",
       "tile_registration": {
         "canvas": [
@@ -5509,13 +5509,13 @@
           "label": "Solid preview rotation",
           "image": "gallery/media/ui/scitek/ore-teleporter/solid.png",
           "video": "gallery/media/ui/scitek/ore-teleporter/preview.webm",
-          "blend": "sources/ui/scitek/ore-teleporter/ore-teleporter.blend",
-          "glb": "sources/ui/scitek/ore-teleporter/ore-teleporter.glb"
+          "blend": "sources/objects/terran/ore-teleporter/refined/model.blend",
+          "glb": "sources/objects/terran/ore-teleporter/refined/model.glb"
         },
         {
           "label": "Whole assembly wireframe",
           "image": "gallery/media/ui/scitek/ore-teleporter/wireframe.png",
-          "blend": "sources/ui/scitek/ore-teleporter/ore-teleporter.blend",
+          "blend": "sources/objects/terran/ore-teleporter/refined/model.blend",
           "glb": "sources/ui/scitek/ore-teleporter/ore-teleporter-wireframe.glb"
         },
         {
@@ -5601,7 +5601,36 @@
         ],
         "material_contract": "Apply timeline hue/caption and orthographic scale independently."
       },
-      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending"
+      "status": "Authored approximately 80% visual presentation; Blender and independent imports verified; game check pending",
+      "shared_object": {
+        "id": "terran:ore-teleporter",
+        "blend": "sources/objects/terran/ore-teleporter/refined/model.blend",
+        "glb": "sources/objects/terran/ore-teleporter/refined/model.glb",
+        "root": "OreResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_solid_copies": 1,
+        "gameplay_pose_frame": 1,
+        "disable_presentation_rotation_in_gameplay": true
+      },
+      "runtime_geometry_contract": {
+        "shared_solid_glb": "sources/objects/terran/ore-teleporter/refined/model.glb",
+        "technical_glb": "sources/ui/scitek/ore-teleporter/ore-teleporter-information.glb",
+        "technical_timeline": "sources/ui/scitek/ore-teleporter/information-timeline.json",
+        "package_rule": "One shared coloured GLB plus one information GLB/timeline. Historical research solid and baked variants authoring/gallery only."
+      },
+      "legacy_diagram_correlation": {
+        "contract": "All50,248 selected diagram segments are actual evaluated physical edges, including the repaired partial torus.",
+        "verification": "gallery/media/ui/scitek/ore-teleporter/shared-geometry-verification.json"
+      }
     },
     {
       "id": "scitek:photon-turret",

@@ -214,6 +214,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb11/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Ore Teleporter](../gallery/media/objects/terran/ore-teleporter/refined/render.png)
+
+[Blend](../sources/objects/terran/ore-teleporter/refined/model.blend) · [GLB](../sources/objects/terran/ore-teleporter/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/ore-teleporter/refined/animation-00.webm)
+
 ## Gravity Nullifier
 
 `terran:gravity-nullifier`
