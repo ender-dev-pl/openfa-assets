@@ -88,8 +88,8 @@ The supplied installation has fifteen _MA/ST*.VID colour films. All fifteen map 
 | 0 | Defence | Plasma Turret, Screen Generator and Photon Turret; native/4x PNG and153-mesh neutral assembly delivered; game check pending |
 | 1 | Ships and hardpoints | Terminator, Fleet Battleship and shared refined Shield X40; native/4x PNG and173-drawable authoring collage delivered; client check pending |
 | 2 | Missiles | Shared refined Virus, Mega Missile and Missile Bay Extension; native/4x PNG and196-drawable authoring collage delivered; client check pending |
-| 3 | Mining | Pending |
+| 3 | Mining | Ore Teleporter, shared refined Seismic Penetrator and Mk2 Mine; native/4x PNG and381-drawable collage delivered; client check pending |
 | 4 | Power | Hi-Energy Power Stores and shared refined Powerplant; native/4x PNG and131-mesh authoring collage delivered; game check pending |
 | 5 | Miscellaneous | Construction Droids and Improved Sensors; native/4x PNG and curve-preserving neutral assembly delivered; game check pending |
 
-See sources/ui/scitek/category-collages for source manifests and runtime proofs. Category defence depends on Screen Generator delivery7253a765. All six original frames were freshly decoded with BUTTONS palette and checked against private reference caches. This proves input integrity, not completion of the one pending reconstruction.
+See sources/ui/scitek/category-collages for source manifests and runtime proofs. Category defence depends on Screen Generator delivery7253a765. All six original frames were freshly decoded with BUTTONS palette and checked against private reference caches. All six category reconstructions are delivered; client/GPU checks remain pending.

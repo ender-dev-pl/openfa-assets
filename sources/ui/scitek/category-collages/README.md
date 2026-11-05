@@ -2,7 +2,7 @@
 
 The original six SCITEKC.256 frames use the runtime _MS/BUTTONS.256 palette. Their logical canvas is80x64. Fresh decoding of all six frames was compared against the cached actual references; only source/count/hash/rectangle metadata is published. Original pixels are private.
 
-Delivered: defence (frame0), ships-hardpoints (frame1), missiles (frame2), power (frame4), miscellaneous (frame5). Pending: mining (3). Each collage must identify its actual subjects from correctly paletted references, preserve their existing models, and verify its authored layout through Blender plus an independent GLB import.
+Delivered: all six categories — defence (frame0), ships-hardpoints (frame1), missiles (frame2), mining (frame3), power (frame4), miscellaneous (frame5). Client/GPU integration checks remain pending. Each collage must identify its actual subjects from correctly paletted references, preserve their existing models, and verify its authored layout through Blender plus an independent GLB import.
 
 Build in Blender: build_collage.py -- defence/layout.json OUTPUT ASSET_ROOT with geometry.py alongside. The manifest records input model paths, frozen source pose and logical placement rectangles. Geometry/UV signatures and input hashes are preserved. Source models are read-only; derivative material copies provide neutral PBR/retained native procedural variation. The source compositor creates monochrome output with a documented gain. Portable materials retain representative neutral colour. The static GLB preserves a three-dimensional arrangement; UI uses the supplied flat PNGs.
 

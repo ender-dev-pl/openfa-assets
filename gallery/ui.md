@@ -384,3 +384,9 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Ships and hardpoints](media/ui/scitek/category-ships-hardpoints/category-4x.png)
 
 [Source and binding](../sources/ui/scitek/category-collages/ships-hardpoints/README.md).
+
+### Sci-Tek mining category
+
+![Mining category](media/ui/scitek/category-mining/category-4x.png)
+
+[Source and binding](../sources/ui/scitek/category-collages/mining/README.md).
