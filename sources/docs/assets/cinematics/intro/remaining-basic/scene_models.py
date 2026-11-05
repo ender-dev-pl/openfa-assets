@@ -179,3 +179,33 @@ def laboratory(info):
   T.key(pad,'rotation_euler',1665,(0,-.025,-.05));T.key(pad,'rotation_euler',1730,(0,.025,.04))
 
 BUILDERS['laboratory']=laboratory
+
+def emblem(loc=(0,0,0),scale=1):
+ root=T.empty('emblem editable group',loc);root.scale=(scale,scale*.82,scale);gold=T.material('emblem old gold',(.53,.31,.045),.8,.35,emit=.1);red=T.material('emblem red enamel',(.52,.026,.008),.35,.4,emit=.12);black=T.material('emblem black backing',(.001,.002,.002),worn=False)
+ T.tube('black emblem disc',(0,0,-.03),(0,0,0),.85,black,root,64)
+ for r in [.83,.74]:T.torus('gold emblem rim',(0,0,.025),r,.018,gold,root)
+ T.ball('red central glyph',(0,0,.04),(.19,.58,.035),red,root)
+ for y in [-.30,0,.30]:
+  for side in [-1,1]:
+   T.cube('red glyph arm',(side*.35,y,.045),(.30,.065,.025),red,root,.02);T.ball('red glyph rounded end',(side*.65,y,.045),(.065,.065,.027),red,root)
+ for y in [-.54,.54]:T.cube('gold central stem',(0,y,.035),(.045,.18,.018),gold,root,.01)
+ return root
+
+def ending(info):
+ T.SCENE.world.node_tree.nodes['Background'].inputs[1].default_value=0
+ if info['id']=='R':
+  floor=T.material('machine room grey tiles',(.18,.19,.19),.15,.85);seam=T.material('tile seams',(.055,.06,.06));body=T.material('overhead pale casing',(.42,.45,.49),.4,.5);purple=T.material('machine violet base',(.14,.12,.27),.25,.5);dark=T.material('machine dark supports',(.015,.02,.025),.4,.5);T.cube('machine floor',(0,0,-1.2),(30,30,.1),floor)
+  for i in range(-25,26):
+   T.tube('tile seam X',(-30,i,-1.09),(30,i,-1.09),.015,seam);T.tube('tile seam Y',(i,-30,-1.09),(i,30,-1.09),.015,seam)
+  T.cube('machine lower base',(0,-.9,-.6),(.65,1.6,.35),purple);T.cube('machine overhead casing',(0,0,0),(.95,1.1,.3),body)
+  for side in [-1,1]:T.tube('machine transverse axle',(side*.95,0,-.15),(side*1.45,0,-.15),.24,dark)
+  T.cube('machine rear spine',(0,-1.6,-.2),(.22,.8,.25),dark);emblem((0,.2,.31),.66);T.light('machine overhead',(1,-2,10),1800,(.9,.9,1),8,target=(0,0,0));c=T.camera((0,-.001,20),(0,0,0),ortho=16)
+  T.key(c.data,'ortho_scale',1732,16);T.key(c.data,'ortho_scale',1764,5.2)
+ else:
+  emblem(scale=1);T.camera((0,-.001,15),(0,0,0),ortho=5.4);T.light('emblem soft light',(0,-1,6),180,(1,.7,.35),5,target=(0,0,0));glow=T.material('flare warm white',(1,.72,.30),worn=False,emit=8);flare=T.empty('animated upper left flare',(-.62,.54,.12));T.ball('flare core',(0,0,0),(.045,.045,.012),glow,flare)
+  for i in range(12):
+   a=i*math.tau/12;r=.45 if i%3 else .9;T.polygon('flare ray',[(0,0,0),(r*math.cos(a)-.006,r*math.sin(a)-.006,0),(r*math.cos(a)+.006,r*math.sin(a)+.006,0)],[(0,1,2)],glow,flare)
+  for n,s in [(1765,.2),(1780,1.6),(1805,.18),(1873,.18)]:T.key(flare,'scale',n,(s,s,s))
+  T.SCENE.use_nodes=True;nodes=T.SCENE.node_tree.nodes;links=T.SCENE.node_tree.links;rl=nodes.get('Render Layers');out=nodes.get('Composite');g=nodes.new('CompositorNodeGlare');g.glare_type='FOG_GLOW';g.threshold=2;g.quality='LOW';links.new(rl.outputs['Image'],g.inputs[0]);links.new(g.outputs[0],out.inputs['Image'])
+
+BUILDERS['ending']=ending
