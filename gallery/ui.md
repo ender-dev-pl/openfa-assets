@@ -178,3 +178,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Construction Droids research assembly](media/ui/scitek/construction-droids/solid.png)
 
 [Full technical animation](media/ui/scitek/construction-droids/information.webm) · [Source and integration contract](../sources/ui/scitek/construction-droids/README.md).
+
+### Missile Bay Extension
+
+![Authored Missile Bay Extension](media/ui/scitek/missile-bay-extension/solid.png)
+
+[Technical animation](media/ui/scitek/missile-bay-extension/information.webm) · [Source and integration contract](../sources/ui/scitek/missile-bay-extension/README.md).

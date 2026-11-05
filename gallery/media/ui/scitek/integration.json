@@ -1303,6 +1303,203 @@
           "Spot welding arc"
         ]
       }
+    },
+    {
+      "id": "scitek:missile-bay-extension",
+      "name": "Sci-Tek Missile Bay Extension",
+      "binding": "openfa:presentation/profile/research/14",
+      "legacy_index": 14,
+      "native": "gallery/media/ui/scitek/missile-bay-extension/tile-native.png",
+      "disabled": "gallery/media/ui/scitek/missile-bay-extension/tile-disabled.png",
+      "tile_registration": {
+        "canvas": [
+          144,
+          160
+        ],
+        "legacy_drawn_box": [
+          22,
+          0,
+          122,
+          160
+        ],
+        "fit": "Contain into measured source occupied box; preserve proportions"
+      },
+      "hires": "gallery/media/ui/scitek/missile-bay-extension/tile-4x.png",
+      "studio_render": "gallery/media/ui/scitek/missile-bay-extension/solid.png",
+      "blend": "sources/ui/scitek/missile-bay-extension/missile-bay-extension.blend",
+      "glb": "sources/ui/scitek/missile-bay-extension/missile-bay-extension.glb",
+      "readme": "sources/ui/scitek/missile-bay-extension/README.md",
+      "gallery_views": [
+        {
+          "label": "Full technical information animation: 423 frames and three component zooms",
+          "image": "gallery/media/ui/scitek/missile-bay-extension/information-087.png",
+          "video": "gallery/media/ui/scitek/missile-bay-extension/information.webm",
+          "blend": "sources/ui/scitek/missile-bay-extension/missile-bay-extension-information.blend",
+          "glb": "sources/ui/scitek/missile-bay-extension/missile-bay-extension-information.glb"
+        },
+        {
+          "label": "Hydraulic carriage and missile transfer cycle",
+          "image": "gallery/media/ui/scitek/missile-bay-extension/solid.png",
+          "video": "gallery/media/ui/scitek/missile-bay-extension/preview.webm",
+          "blend": "sources/ui/scitek/missile-bay-extension/missile-bay-extension.blend",
+          "glb": "sources/ui/scitek/missile-bay-extension/missile-bay-extension.glb"
+        },
+        {
+          "label": "Green technical wireframe",
+          "image": "gallery/media/ui/scitek/missile-bay-extension/wireframe.png",
+          "blend": "sources/ui/scitek/missile-bay-extension/missile-bay-extension.blend",
+          "glb": "sources/ui/scitek/missile-bay-extension/missile-bay-extension-wireframe.glb"
+        },
+        {
+          "label": "Wireframe closeup: revolving-storage-rack",
+          "image": "gallery/media/ui/scitek/missile-bay-extension/highlight-revolving-storage-rack.png",
+          "blend": "sources/ui/scitek/missile-bay-extension/missile-bay-extension.blend",
+          "glb": "sources/ui/scitek/missile-bay-extension/missile-bay-extension-highlight-revolving-storage-rack.glb"
+        },
+        {
+          "label": "Wireframe closeup: missile-loading-assembly",
+          "image": "gallery/media/ui/scitek/missile-bay-extension/highlight-missile-loading-assembly.png",
+          "blend": "sources/ui/scitek/missile-bay-extension/missile-bay-extension.blend",
+          "glb": "sources/ui/scitek/missile-bay-extension/missile-bay-extension-highlight-missile-loading-assembly.glb"
+        },
+        {
+          "label": "Wireframe closeup: targeting-control",
+          "image": "gallery/media/ui/scitek/missile-bay-extension/highlight-targeting-control.png",
+          "blend": "sources/ui/scitek/missile-bay-extension/missile-bay-extension.blend",
+          "glb": "sources/ui/scitek/missile-bay-extension/missile-bay-extension-highlight-targeting-control.glb"
+        }
+      ],
+      "information_phases": [
+        {
+          "component": "revolving-storage-rack",
+          "first_legacy_frame": 29,
+          "last_legacy_frame": 139,
+          "highlight_glb": "missile-bay-extension-highlight-revolving-storage-rack.glb",
+          "closeup_camera": [
+            0.0,
+            -12.25,
+            0.14999999105930328
+          ],
+          "target": [
+            0.0,
+            -0.25,
+            -1.0927847071684482e-08
+          ],
+          "local_target": [
+            0.0,
+            0.0,
+            0.25
+          ],
+          "closeup_rotation_euler": [
+            1.5707963705062866,
+            0.0,
+            0.0
+          ],
+          "ortho_scale": 2.55
+        },
+        {
+          "component": "missile-loading-assembly",
+          "first_legacy_frame": 170,
+          "last_legacy_frame": 280,
+          "highlight_glb": "missile-bay-extension-highlight-missile-loading-assembly.glb",
+          "closeup_camera": [
+            0.0,
+            -12.229999542236328,
+            1.4299999475479126
+          ],
+          "target": [
+            0.0,
+            -0.23000000417232513,
+            1.2799999713897705
+          ],
+          "local_target": [
+            0.0,
+            -0.23000000417232513,
+            1.2799999713897705
+          ],
+          "closeup_rotation_euler": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "ortho_scale": 2.3
+        },
+        {
+          "component": "targeting-control",
+          "first_legacy_frame": 311,
+          "last_legacy_frame": 421,
+          "highlight_glb": "missile-bay-extension-highlight-targeting-control.glb",
+          "closeup_camera": [
+            -0.40876397490501404,
+            -12.236000061035156,
+            1.100000023841858
+          ],
+          "target": [
+            -0.40876397490501404,
+            -0.23599998652935028,
+            0.949999988079071
+          ],
+          "local_target": [
+            -0.4000000059604645,
+            0.0,
+            0.949999988079071
+          ],
+          "closeup_rotation_euler": [
+            0.0,
+            0.0,
+            0.5235987901687622
+          ],
+          "ortho_scale": 1.25
+        }
+      ],
+      "information_animation": {
+        "blend": "sources/ui/scitek/missile-bay-extension/missile-bay-extension-information.blend",
+        "glb": "sources/ui/scitek/missile-bay-extension/missile-bay-extension-information.glb",
+        "timeline": "sources/ui/scitek/missile-bay-extension/information-timeline.json",
+        "fps": 15,
+        "frame_count": 423,
+        "root": "MissileBayRig",
+        "root_scale": [
+          1.18,
+          1,
+          1
+        ],
+        "material_contract": "Apply timeline material selection and orthographic scale alongside explicit Root/camera pose."
+      },
+      "solid_preview_camera": {
+        "position": [
+          4.0,
+          -10.0,
+          5.300000190734863
+        ],
+        "rotation_euler": [
+          1.2599573135375977,
+          -6.095513782611306e-08,
+          0.3805064260959625
+        ],
+        "ortho_scale": 4.199999809265137,
+        "resolution": [
+          576,
+          640
+        ]
+      },
+      "solid_animation": {
+        "type": "articulated-rigid-nodes",
+        "root": "MissileBayRig",
+        "frame_count": 180,
+        "fps": 15,
+        "body_turntable": false,
+        "timeline": "sources/ui/scitek/missile-bay-extension/solid-animation-timeline.json",
+        "contract": "Absolute row-major4x4 matrices, Blender column-vector math/Z-up; GLB hierarchy authoritative.",
+        "animated_mesh_nodes": [
+          "Moving missile transfer carriage",
+          "Carriage red service light",
+          "Carriage red service light.001",
+          "Lifted missile body",
+          "Lifted missile nose"
+        ]
+      },
+      "status": "Dedicated model, local mechanism animation and full technical presentation verified; game integration pending"
     }
   ]
 }
