@@ -92,6 +92,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/hardpoints/static-inducer/model.blend) · [GLB](../sources/docs/assets/reconstruction/hardpoints/static-inducer/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Static Inducer](../gallery/media/objects/shared/static-inducer/refined/render.png)
+
+[Blend](../sources/objects/shared/static-inducer/refined/model.blend) · [GLB](../sources/objects/shared/static-inducer/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/shared/static-inducer/refined/animation-00.webm)
+
 ## Warp Generator
 
 `openfa:warp-generator`

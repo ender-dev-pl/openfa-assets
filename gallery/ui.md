@@ -342,3 +342,9 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Panels closed as a truncated pyramid](media/ui/scitek/solar-matrix/panelsclose-31.png)
 
 [Shared model, optional folding and technical animation](../sources/ui/scitek/solar-matrix/README.md).
+
+### Static Inducer
+
+![Static Inducer](media/ui/scitek/static-inducer/solid.png)
+
+[Shared model and technical presentation](../sources/ui/scitek/static-inducer/README.md).
