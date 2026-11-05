@@ -22,7 +22,7 @@ The batch builds missing models, independently reopens each native and imports e
 
 The studio renderer uses Cycles, adaptive sampling up to 32 samples for opaque goods and 64 for glass/gems, denoising, three rectangular softboxes, a neutral world and a transient shadow catcher. Render staging is not saved into the model or exported as goods geometry. Each render journal records the actual native and renderer hashes, resolution, settings and output hash. It also verifies that rendering did not modify the source.
 
-Inspect all rendered items, including glass, gems, fabrics, metal, organic objects and the inherited missiles. Record the reviewed TI identifiers and observations in a local review JSON. Publication refuses an incomplete review set or stale source/render evidence:
+Inspect all rendered items, including glass, gems, fabrics, metal, organic objects and the inherited missiles. Record `reviewed_items` (TI identifiers), observations and a `reviewed_images` map in a local review JSON. For each actually inspected item, copy `native_sha256` and `image_sha256` from its render journal into that map. These hashes bind visual review to the exact source and raw PNG, so replacing a render requires a new review. Publication refuses an incomplete review set or stale source/render evidence:
 
 ```sh
 python tools/publish_trade_refinement.py --renders artifacts/trading-goods-refining/production --review artifacts/trading-goods-refining/visual-review.json --consume
@@ -32,7 +32,7 @@ python tools/verify_trade_refinement.py
 node tools/test_gallery_filters.cjs --filters-only
 ```
 
-Publication removes ancillary PNG metadata without altering decoded pixels. Optional `--consume` removes raw PNG duplicates only after comparing decoded pixels against the installed file, keeping source/render journals and hash-bound publication receipts. Interrupted publication can resume from verified installed images. `docs/trading-goods/refinement-validation.json` binds published PNGs to the independently verified native and GLB files. The gallery retains both iterations under each of the existing 101 goods cards. Existing building, ship, scaffold, missile and cinematic gallery records remain preserved.
+Publication removes ancillary PNG metadata and losslessly recompresses the identical filtered scanline stream when smaller, without altering decoded pixels. Optional `--consume` removes raw PNG duplicates only after comparing decoded pixels against the installed file, keeping source/render journals and hash-bound publication receipts. Interrupted publication can resume from verified installed images. `docs/trading-goods/refinement-validation.json` binds published PNGs to the independently verified native and GLB files. The gallery retains both iterations under each of the existing 101 goods cards. Existing building, ship, scaffold, missile and cinematic gallery records remain preserved.
 
 This pass does not replace the separate legacy-size compact/detail UI image targets or claim game integration. Artistic review remains iterative; the original low-resolution evidence still limits inferred small details.
 
@@ -45,3 +45,7 @@ The user rejected the first-pass coat and boots as too angular. `TI041/remodelle
 ## Gem absorption correction
 
 Actual studio review showed that the first transparent shader washed out ruby/astramarine hues. Selected `optical/` variants increase volume absorption, with lower density for diamonds/metachrome and intermediate density for opal/moonstone. `tint_gems.py` changes only the native volume shading. Meshes and scalar GLBs remain unchanged, with preserved preceding sources and independent native/GLB validation. The selection ledger records the revised deliveries.
+
+## TI048 cut-face topology repair
+
+Full-resolution review exposed a dark slit between cheese cavities. The separate `TI048/repaired/` variant welds near-coincident displaced Boolean bridge vertices, triangulates holed cut-face polygons and recalculates normals. The raw wheel mesh changes from 17 nonmanifold edges to zero, while preserving the earlier source checkpoint and actual cavities. This variant has its own native/GLB runtime validation and source-bound studio render.
