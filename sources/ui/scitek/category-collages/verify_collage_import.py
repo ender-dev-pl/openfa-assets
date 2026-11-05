@@ -2,7 +2,7 @@
 import bpy,sys,json,hashlib
 from pathlib import Path
 out=Path(sys.argv[sys.argv.index('--')+1]).resolve();manifest=Path(sys.argv[sys.argv.index('--')+2]).resolve();spec=json.loads(manifest.read_text());stem=spec['id'].split(':')[-1]
-bpy.ops.wm.open_mainfile(filepath=str(out/(stem+'.blend')));s=bpy.context.scene;proof=json.loads((out/'provenance.json').read_text());native={ob.name:ob.matrix_world.copy() for ob in s.objects if ob.type=='MESH'};assert len(native)==proof['mesh_count']
+bpy.ops.wm.open_mainfile(filepath=str(out/(stem+'.blend')));s=bpy.context.scene;proof=json.loads((out/'provenance.json').read_text());native={ob.name:ob.matrix_world.copy() for ob in s.objects if ob.type in ['MESH','CURVE']};assert len(native)==proof['mesh_count']
 s.render.filepath=str(out/'reload.png');bpy.ops.render.render(write_still=True)
 for ob in list(s.objects):
  if ob.type not in ['CAMERA','LIGHT']:bpy.data.objects.remove(ob,do_unlink=True)

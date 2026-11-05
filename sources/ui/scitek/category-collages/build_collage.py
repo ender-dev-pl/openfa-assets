@@ -15,7 +15,10 @@ cam=s.camera;cam.location=(4,-10,6);cam.rotation_euler=(-cam.location).to_track_
 root=bpy.data.objects.new('ScitekCategoryRoot',None);s.collection.objects.link(root)
 all_meshes=[];groups={};provenance=[];materials={}
 def signature(ob):
- d=dict(vertices=[list(v.co) for v in ob.data.vertices],faces=[list(p.vertices) for p in ob.data.polygons],uv={uv.name:[list(p.uv) for p in uv.data] for uv in ob.data.uv_layers})
+ if ob.type=='CURVE':
+  d=dict(type='CURVE',dimensions=ob.data.dimensions,bevel_depth=ob.data.bevel_depth,bevel_resolution=ob.data.bevel_resolution,resolution_u=ob.data.resolution_u,fill_caps=ob.data.use_fill_caps,splines=[dict(type=sp.type,cyclic=sp.use_cyclic_u,order=sp.order_u,points=[dict(co=list(p.co),radius=p.radius,tilt=p.tilt) for p in sp.points],bezier=[dict(co=list(p.co),left=list(p.handle_left),right=list(p.handle_right),radius=p.radius,tilt=p.tilt) for p in sp.bezier_points]) for sp in ob.data.splines])
+ else:
+  d=dict(type='MESH',vertices=[list(v.co) for v in ob.data.vertices],faces=[list(p.vertices) for p in ob.data.polygons],uv={uv.name:[list(p.uv) for p in uv.data] for uv in ob.data.uv_layers})
  return hashlib.sha256(json.dumps(d,sort_keys=True).encode()).hexdigest()
 def luma(v):return sum(a*b for a,b in zip(v,[.2126,.7152,.0722]))
 def neutral(original):
@@ -39,6 +42,7 @@ def neutral(original):
 def bounds(meshes):
  points=[];deps=bpy.context.evaluated_depsgraph_get()
  for ob in meshes:
+  if abs(ob.matrix_world.to_3x3().determinant())<1e-12:continue
   evaluated=ob.evaluated_get(deps);mesh=evaluated.to_mesh()
   points.extend(world_to_camera_view(s,cam,evaluated.matrix_world@v.co) for v in mesh.vertices);evaluated.to_mesh_clear()
  return [min(v.x for v in points),min(v.y for v in points),max(v.x for v in points),max(v.y for v in points)]
@@ -85,9 +89,9 @@ for mat in set(m for ob in all_meshes for m in ob.data.materials if m):
   for link in list(bs.inputs[name].links):links.append((mat.node_tree,link.from_socket,link.to_socket));mat.node_tree.links.remove(link)
 bpy.ops.object.select_all(action='DESELECT')
 for ob in s.objects:
- if ob.type in ['MESH','EMPTY']:ob.select_set(True)
+ if ob.type in ['MESH','CURVE','EMPTY']:ob.select_set(True)
 bpy.ops.export_scene.gltf(filepath=str(out/(stem+'.glb')),use_selection=True,export_apply=True,export_animations=False,export_format='GLB')
 for nt,a,b in links:nt.links.new(a,b)
 for socket,value in defaults:socket.default_value=value
-(out/'provenance.json').write_text(json.dumps(dict(id=spec['id'],manifest_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest(),builder_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),subjects=provenance,mesh_count=len(all_meshes),blend_sha256=hashlib.sha256(blend.read_bytes()).hexdigest(),glb_sha256=hashlib.sha256((out/(stem+'.glb')).read_bytes()).hexdigest(),canvas=[80,64],render_canvas=[800,640],root=root.name,monochrome_gain=spec['monochrome_gain'],limitations=['Layout follows actual category sprite; neutral materials/lighting, poses and hidden geometry are authored approximations. Portable materials approximate native procedural wear.']),indent=2)+'\n')
+(out/'provenance.json').write_text(json.dumps(dict(id=spec['id'],manifest_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest(),builder_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),subjects=provenance,mesh_count=len(all_meshes),native_mesh_count=sum(ob.type=='MESH' for ob in all_meshes),native_curve_count=sum(ob.type=='CURVE' for ob in all_meshes),blend_sha256=hashlib.sha256(blend.read_bytes()).hexdigest(),glb_sha256=hashlib.sha256((out/(stem+'.glb')).read_bytes()).hexdigest(),canvas=[80,64],render_canvas=[800,640],root=root.name,monochrome_gain=spec['monochrome_gain'],limitations=['Layout follows actual category sprite; neutral materials/lighting, poses and hidden geometry are authored approximations. Portable materials approximate native procedural wear.']),indent=2)+'\n')
 print('SCITEK_CATEGORY_BUILT',stem,len(all_meshes))
