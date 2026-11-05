@@ -160,3 +160,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Mk2 Mine research assembly](media/ui/scitek/mk2-mine/solid.png)
 
 [Full technical animation](media/ui/scitek/mk2-mine/information.webm) · [Source and integration contract](../sources/ui/scitek/mk2-mine/README.md).
+
+### Mk2 Deep Bore Mine
+
+![Authored Mk2 Deep Bore Mine research assembly](media/ui/scitek/mk2-deep-bore-mine/solid.png)
+
+[Full technical animation](media/ui/scitek/mk2-deep-bore-mine/information.webm) · [Source and integration contract](../sources/ui/scitek/mk2-deep-bore-mine/README.md).
