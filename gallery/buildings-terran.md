@@ -536,6 +536,18 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb28/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb28/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Solar Matrix](../gallery/media/objects/terran/solar-matrix/refined/render.png)
+
+[Blend](../sources/objects/terran/solar-matrix/refined/model.blend) · [GLB](../sources/objects/terran/solar-matrix/refined/model.glb)
+
+[Play animation: CatalogueTurn](../gallery/media/objects/terran/solar-matrix/refined/animation-00.webm)
+
+[Play animation: PanelsClose](../gallery/media/objects/terran/solar-matrix/refined/animation-01.webm)
+
+[Play animation: PanelsOpen](../gallery/media/objects/terran/solar-matrix/refined/animation-02.webm)
+
 ## Resiblock
 
 `terran:resiblock`

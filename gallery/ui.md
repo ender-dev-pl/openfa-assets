@@ -334,3 +334,11 @@ Hi-Energy Power Stores and shared refined Powerplant in the original80x64 compos
 ![Shield x50](media/ui/scitek/shield-x50/solid.png)
 
 [Technical animation](media/ui/scitek/shield-x50/information.webm) - [Shared source and integration](../sources/ui/scitek/shield-x50/README.md).
+
+### Solar Matrix
+
+![Solar Matrix](media/ui/scitek/solar-matrix/solid.png)
+
+![Panels closed as a truncated pyramid](media/ui/scitek/solar-matrix/panelsclose-31.png)
+
+[Shared model, optional folding and technical animation](../sources/ui/scitek/solar-matrix/README.md).

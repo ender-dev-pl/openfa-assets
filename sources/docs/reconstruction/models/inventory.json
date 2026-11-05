@@ -4771,6 +4771,13 @@
           "present": true,
           "sha256": "dfee4f7a2e39f6493b4fdfe26ef917b981356c8d983d681a55febfea4cf5c1f4",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/solar-matrix/refined/model.blend",
+          "present": true,
+          "sha256": "2c3c22f4fa807d7dc318f98c03df8ece1401fccb773354401fdb2037a2e38ead",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -4812,6 +4819,22 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 28
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/solar-matrix/refined/model.blend",
+        "glb": "sources/objects/terran/solar-matrix/refined/model.glb",
+        "consumers": [
+          "gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/27",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "package_contract": "One physical solid with all three clips. Alias consumers. Disable CatalogueTurn in gameplay. Optional folding extension; client state binding pending."
       }
     },
     {

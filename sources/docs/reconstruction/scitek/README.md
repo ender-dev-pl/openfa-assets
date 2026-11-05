@@ -48,7 +48,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 24 | scitek:seismic-penetrator | Shared refined terran:seismic-penetrator | Curved nose/common drill axis retained; slurry circuits, shared solid/wire/highlight,60-frame colour and423-frame information delivered; game check pending |
 | 25 | scitek:shield-x40 | Shared refined openfa:shield-x40 | Shared X40 length/monitor refinement;57-mesh solid, wire/highlight,60-frame colour and423-frame information delivered; game check pending |
 | 26 | scitek:shield-x50 | Shared refined openfa:shield-x50 | Shared X50 length/aperture refinement;51-mesh solid, wire/highlight,60-frame colour and423-frame information delivered; game check pending |
-| 27 | scitek:solar-matrix | terran:solar-matrix | Pending |
+| 27 | scitek:solar-matrix | Shared refined terran:solar-matrix | Trapezoid panels, optional pyramid closure, colour/technical animation and three closeups delivered; client check pending |
 | 28 | scitek:static-inducer | openfa:static-inducer | Pending |
 | 29 | scitek:stasis-missile | openfa:stasis | Pending |
 | 30 | scitek:terminator | openfa:terminator presentation variant | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
