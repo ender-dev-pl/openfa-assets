@@ -214,3 +214,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Authored Long Range Transmitter research assembly](media/ui/scitek/long-range-transmitter/solid.png)
 
 [Full technical animation](media/ui/scitek/long-range-transmitter/information.webm) · [Source and integration contract](../sources/ui/scitek/long-range-transmitter/README.md).
+
+### Anti-Missile Pod
+
+![Authored Anti-Missile Pod research assembly](media/ui/scitek/anti-missile-pod/solid.png)
+
+[Full technical animation](media/ui/scitek/anti-missile-pod/information.webm) · [Source and integration contract](../sources/ui/scitek/anti-missile-pod/README.md).

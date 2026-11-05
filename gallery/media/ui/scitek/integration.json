@@ -3228,6 +3228,544 @@
         0.381118506193161,
         -0.642252504825592
       ]
+    },
+    {
+      "id": "scitek:anti-missile-pod",
+      "name": "Sci-Tek Anti-Missile Pod",
+      "binding": "openfa:presentation/profile/research/02",
+      "legacy_index": 2,
+      "native": "gallery/media/ui/scitek/anti-missile-pod/tile-native.png",
+      "disabled": "gallery/media/ui/scitek/anti-missile-pod/tile-disabled.png",
+      "tile_registration": {
+        "canvas": [
+          144,
+          160
+        ],
+        "legacy_drawn_box": [
+          17,
+          61,
+          124,
+          148
+        ],
+        "fit": "contain; preserve model proportions"
+      },
+      "hires": "gallery/media/ui/scitek/anti-missile-pod/tile-4x.png",
+      "studio_render": "gallery/media/ui/scitek/anti-missile-pod/solid.png",
+      "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
+      "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.glb",
+      "readme": "sources/ui/scitek/anti-missile-pod/README.md",
+      "gallery_views": [
+        {
+          "label": "Full technical information animation \u2014 423 frames and three component zooms",
+          "image": "gallery/media/ui/scitek/anti-missile-pod/information-087.png",
+          "video": "gallery/media/ui/scitek/anti-missile-pod/information.webm",
+          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-information.blend",
+          "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-information.glb"
+        },
+        {
+          "label": "Solid tile/detail and preview rotation",
+          "image": "gallery/media/ui/scitek/anti-missile-pod/solid.png",
+          "video": "gallery/media/ui/scitek/anti-missile-pod/preview.webm",
+          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
+          "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.glb"
+        },
+        {
+          "label": "Green technical wireframe",
+          "image": "gallery/media/ui/scitek/anti-missile-pod/wireframe.png",
+          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
+          "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-wireframe.glb"
+        },
+        {
+          "label": "Wireframe closeup: twin-tracking-dishes",
+          "image": "gallery/media/ui/scitek/anti-missile-pod/highlight-twin-tracking-dishes.png",
+          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
+          "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-highlight-twin-tracking-dishes.glb"
+        },
+        {
+          "label": "Wireframe closeup: alloy-plasma-barrel",
+          "image": "gallery/media/ui/scitek/anti-missile-pod/highlight-alloy-plasma-barrel.png",
+          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
+          "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-highlight-alloy-plasma-barrel.glb"
+        },
+        {
+          "label": "Wireframe closeup: armoured-plasma-base",
+          "image": "gallery/media/ui/scitek/anti-missile-pod/highlight-armoured-plasma-base.png",
+          "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod.blend",
+          "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-highlight-armoured-plasma-base.glb"
+        }
+      ],
+      "information_phases": [
+        {
+          "component": "twin-tracking-dishes",
+          "first_legacy_frame": 29,
+          "last_legacy_frame": 139,
+          "local_target": [
+            -0.6800000071525574,
+            -0.20000000298023224,
+            0.8799999952316284
+          ],
+          "closeup_rotation_euler": [
+            0.0,
+            0.0,
+            0.9599310755729675
+          ],
+          "ortho_scale": 0.65,
+          "highlight_glb": "anti-missile-pod-highlight-twin-tracking-dishes.glb"
+        },
+        {
+          "component": "alloy-plasma-barrel",
+          "first_legacy_frame": 170,
+          "last_legacy_frame": 280,
+          "local_target": [
+            0.0,
+            -0.6499999761581421,
+            1.2999999523162842
+          ],
+          "closeup_rotation_euler": [
+            0.0,
+            0.0,
+            0.6108652353286743
+          ],
+          "ortho_scale": 1.45,
+          "highlight_glb": "anti-missile-pod-highlight-alloy-plasma-barrel.glb"
+        },
+        {
+          "component": "armoured-plasma-base",
+          "first_legacy_frame": 311,
+          "last_legacy_frame": 421,
+          "local_target": [
+            0.0,
+            0.0,
+            0.3199999928474426
+          ],
+          "closeup_rotation_euler": [
+            -1.3089969158172607,
+            0.0,
+            0.0
+          ],
+          "ortho_scale": 3.95,
+          "highlight_glb": "anti-missile-pod-highlight-armoured-plasma-base.glb"
+        }
+      ],
+      "information_animation": {
+        "blend": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-information.blend",
+        "glb": "sources/ui/scitek/anti-missile-pod/anti-missile-pod-information.glb",
+        "timeline": "sources/ui/scitek/anti-missile-pod/information-timeline.json",
+        "fps": 15,
+        "frame_count": 423,
+        "root": "PodResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "material_contract": "Apply explicit timeline material selection and orthographic scale in addition to node rotation."
+      },
+      "status": "Model, preview, wire/highlight variants and complete authored information animation verified; game integration pending",
+      "solid_preview_camera": {
+        "position": [
+          -4.0,
+          -7.0,
+          3.075000047683716
+        ],
+        "rotation_euler": [
+          1.2814666032791138,
+          -8.02828026280622e-09,
+          -0.5191462635993958
+        ],
+        "ortho_scale": 3.049999952316284,
+        "resolution": [
+          576,
+          640
+        ]
+      },
+      "solid_animation": {
+        "type": "articulated-head-rotation",
+        "root": "PodResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "moving_node": "PodTrackingHead",
+        "fixed_node": "PodFixedBase",
+        "frame_count": 60,
+        "fps": 15,
+        "loop_closure_frame": 61
+      },
+      "material_contract": "Portable PBR retains colours and15 geometric wear marks on newly authored head hardware; procedural Blender abrasion is not baked into textures.",
+      "solid_framing": {
+        "frame_count": 60,
+        "ortho_scale": 3.049999952316284,
+        "method": "All mesh vertices, fixed base and all sixty articulated head poses",
+        "ndc_bounds": [
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7303392219596491
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7294593596764761
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7280801863448375
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7262168083224814
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7238899992941247
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7213811518150259
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7241053186339288
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7263936289239106
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7282165344147062
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7295537890692818
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7303906578375184
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7307180925387725
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7305328882019306
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7298372726727669
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7286385157638068
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7269497500396127
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7310570084627653
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7400469817497219
+          ],
+          [
+            0.13146140901695313,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7493223733483357
+          ],
+          [
+            0.1265806462120922,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7587816110795695
+          ],
+          [
+            0.12506510308974905,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7683210121736528
+          ],
+          [
+            0.12686657480031555,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7778360730755302
+          ],
+          [
+            0.1320340478936714,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7872225442827341
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7963775638107795
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8052008883710906
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8135957434700473
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8214702695544863
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8287381473719198
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8353196923509143
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.841142851268938
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8461980287551572
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8504030290260163
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8536905281456264
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8560244506464544
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8574525975001068
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8579090909161973
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8573678416481618
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8558637330706196
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.853447595243729
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8500805776639935
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8457994984142038
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8406788339877338
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8347885661013957
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8281456967360965
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8208230803571464
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.8129008998699017
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.804465904462
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7956105106480476
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8685376257401571,
+            0.7864318837718007
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8734183016487398,
+            0.7770304918606632
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8749340184683756,
+            0.7675093239254143
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8731322862049308,
+            0.7579726196972678
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8679649868634389,
+            0.7485250293000805
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7392700107647945
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7303088529040986
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7271119919309771
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7287597379334205
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7299161462301684
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7305685728193279
+          ],
+          [
+            0.1336614571792628,
+            0.2020356432654528,
+            0.8663375699293823,
+            0.7307101778235229
+          ]
+        ]
+      },
+      "whole_information_rotation_euler": [
+        0.2618466913700104,
+        0.12871673703193665,
+        -0.4466756284236908
+      ]
     }
   ]
 }
