@@ -250,3 +250,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Gravity Nullifier](media/ui/scitek/gravity-nullifier/solid.png)
 
 [Full technical animation](media/ui/scitek/gravity-nullifier/information.webm) - [Source and integration](../sources/ui/scitek/gravity-nullifier/README.md).
+
+### Mega Missile
+
+![Mega Missile](media/ui/scitek/mega-missile/solid.png)
+
+[Full technical animation](media/ui/scitek/mega-missile/information.webm) - [Source and integration](../sources/ui/scitek/mega-missile/README.md).
