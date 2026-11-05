@@ -268,3 +268,9 @@ Dedicated main-screen plaque, reconstructed from SCITEK.256 with its runtime pal
 ![Ore Teleporter](media/ui/scitek/ore-teleporter/solid.png)
 
 [Full technical animation](media/ui/scitek/ore-teleporter/information.webm) - [Source and integration](../sources/ui/scitek/ore-teleporter/README.md).
+
+### Photon Turret
+
+![Photon Turret](media/ui/scitek/photon-turret/solid.png)
+
+[Full technical animation](media/ui/scitek/photon-turret/information.webm) - [Source and integration](../sources/ui/scitek/photon-turret/README.md).

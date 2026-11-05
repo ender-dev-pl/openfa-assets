@@ -37,7 +37,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 15 | scitek:missile-guidance-system | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 16 | scitek:nuclear-missile | Existing 19 missile meshes preserved; rear manoeuvring pair added | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 17 | scitek:ore-teleporter | Scoped PB11 hardware reused in research assembly | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
-| 18 | scitek:photon-turret | terran:photon-turret | Pending |
+| 18 | scitek:photon-turret | Scoped PB18 hardware reused; egg barrel and rounded armour authored | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 19 | scitek:plasma-turret | terran:plasma-turret | Pending |
 | 20 | scitek:power-amplifier | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
 | 21 | scitek:powerplant | terran:powerplant | Pending |
