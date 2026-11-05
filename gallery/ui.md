@@ -298,3 +298,9 @@ Plasma Turret, Screen Generator and Photon Turret in the original80x64 logical c
 ![Miscellaneous category](media/ui/scitek/category-miscellaneous/category-4x.png)
 
 Construction Droids and Improved Sensors in the original80x64 logical composition. [Source and binding](../sources/ui/scitek/category-collages/miscellaneous/README.md).
+
+### Powerplant
+
+![Powerplant](media/ui/scitek/powerplant/solid.png)
+
+[Full technical animation](media/ui/scitek/powerplant/information.webm) - [Source and integration](../sources/ui/scitek/powerplant/README.md).

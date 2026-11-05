@@ -3905,6 +3905,13 @@
           "present": true,
           "sha256": "657709c29ae32bdf5cfc579d254eee9490cfabbe699774cdad90727da55ad997",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/powerplant/refined/model.blend",
+          "present": true,
+          "sha256": "11bfdd1bfee8f46fe50b4ea910ceb8f5827fa71b99e9395226c02e963f5bc5b2",
+          "final_visual_acceptance": "Blender and independent import verified; game integration pending"
         }
       ],
       "acceptance": {
@@ -3946,6 +3953,17 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 23
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/powerplant/refined/model.blend",
+        "glb": "sources/objects/terran/powerplant/refined/model.glb",
+        "consumers": [
+          "gameplay",
+          "building-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/21",
+        "package_contract": "One physical solid GLB; alias consumers. Disable presentation turn during gameplay; preserve root scale. Technical variants are presentation assets."
       }
     },
     {

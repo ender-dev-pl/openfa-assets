@@ -40,7 +40,7 @@ Legacy information films use green wireframe objects, red highlighted subassembl
 | 18 | scitek:photon-turret | Scoped PB18 hardware reused; egg barrel and rounded armour authored | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 19 | scitek:plasma-turret | Scoped PB17 hardware reused; canopy, stereo sensors and power base authored | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 20 | scitek:power-amplifier | Dedicated model added | Model, solid preview, full wire/highlight/zoom information sequence delivered; game check pending |
-| 21 | scitek:powerplant | terran:powerplant | Pending |
+| 21 | scitek:powerplant | Scoped PB23 decks and six cells retained; control, mini-mine and four pipe elbows added | Solid, wire/highlight, 60-frame preview and 564-frame information sequence delivered; game check pending |
 | 22 | scitek:repair-facility | terran:repair-facility | Pending |
 | 23 | scitek:screen-generator | Existing PB10 foundation reused; actual lattice masts and field anatomy authored | Solid, wire/highlight, 60-frame preview and 423-frame information sequence delivered; game check pending |
 | 24 | scitek:seismic-penetrator | terran:seismic-penetrator | Pending |

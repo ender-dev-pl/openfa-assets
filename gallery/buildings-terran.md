@@ -420,6 +420,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb23/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb23/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Powerplant](../gallery/media/objects/terran/powerplant/refined/render.png)
+
+[Blend](../sources/objects/terran/powerplant/refined/model.blend) · [GLB](../sources/objects/terran/powerplant/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/powerplant/refined/animation-00.webm)
+
 ## Command Centre
 
 `terran:command-centre`
