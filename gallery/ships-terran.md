@@ -112,6 +112,20 @@
 
 [Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/terran/space-dock/animation-00.webm)
 
+**Additional iteration — ps7c-detailed-refinement**
+
+![Space Dock](../gallery/media/objects/terran/space-dock/refined/front-quarter.png)
+
+[Blend](../sources/objects/terran/space-dock/refined/model.blend) · [GLB](../sources/objects/terran/space-dock/refined/model.glb)
+
+**Additional iteration — ps7c-detailed-construction**
+
+![Space Dock](../gallery/media/objects/terran/space-dock/construction/front-quarter.png)
+
+[Blend](../sources/objects/terran/space-dock/construction/model.blend) · [GLB](../sources/objects/terran/space-dock/construction/model.glb)
+
+[Play animation: ConstructionActivity](../gallery/media/objects/terran/space-dock/construction/animation-00.webm)
+
 ## Command Cruiser
 
 `openfa:command-cruiser`
