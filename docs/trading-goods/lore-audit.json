@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "count": 101,
   "scope": "Manual lore/representation assessment, not blanket artistic acceptance or gameplay verification",
   "lore_source": {
@@ -9,12 +9,13 @@
     "file_sha256": "8df3d532ad623177f8cb367d0f4cabdd7e60b8159cdea602d8717799a72b36b5",
     "semantic_content_matches_revision": true
   },
-  "image_manifest_sha256": "fd038bc02642fe3ea71e0eb4335b0239675f32a6996d5c3fe1118f53e268f7b4",
+  "image_manifest_sha256": "0c7b7b6f386d5b76303cbc052b50f2f1fa7962b6907d744ddfe97886f065a4d3",
+  "manual_notes_sha256": "70ead5abd4187313fd38aee56b51b79b23c8b476c9996b259d1ac41b4df46f06",
+  "correction_inspections_sha256": "e98e833c9d9ebb39e9305e53a7ab1dc47c7444b9d4e062e8ca42099bb815bed6",
   "counts": {
-    "core_match": 65,
-    "partial": 27,
-    "ambiguous": 2,
-    "contradiction": 7
+    "core_match": 71,
+    "partial": 28,
+    "ambiguous": 2
   },
   "assessment_meanings": {
     "core_match": "The main object/product representation is consistent; this does not mean its artistic finish is final.",
@@ -23,11 +24,10 @@
     "ambiguous": "Original icon and text leave a genuine interpretive tension; do not silently invent a resolution."
   },
   "limits": [
-    "All101 English item descriptions were read and compared with the actual current rendered studies. Native materials/counts were additionally inspected in Blender for the seven named evidence cases.",
-    "Internal material names alone are not chemical proof; where cited, they establish declared asset identities. Visible colour/cut and actual geometry are considered separately.",
-    "Display-normalised model units do not establish racial scale, carat weights, weapon yields or biological/medical effects.",
-    "The shared gallery grouping is a common trade catalogue, not a statement that cultural origins/styles are identical.",
-    "No original reference pixels are published here. Reference/lore conflicts and authored ornament remain explicit."
+    "All 101 English descriptions were manually read and compared with rendered studies. The seven corrected natives also have read-only Blender geometry/material inspection.",
+    "Technical validation does not certify artistic quality, chemical composition, physical scale, carat mass, biological effects or payload behaviour.",
+    "The shared catalogue does not imply a common cultural origin. Authored motifs and ambiguous icon/text relationships remain explicit.",
+    "Full procedural materials are native-only; GLB shader graphs remain unbaked."
   ],
   "entries": [
     {
@@ -274,23 +274,32 @@
       "legacy_stem": "TI016",
       "item_id": 15,
       "name": "Tiara & Bracelet set",
-      "assessment": "contradiction",
-      "priority": "P1",
+      "assessment": "core_match",
+      "priority": "P2",
       "lore_requirement": "The tiara/bracelet set is raw opal with metachrome.",
-      "current_finding": "Current material slots include a diamond jewel and white-gold/platinum settings, not a consistently opal/metachrome set.",
-      "next_action": "Rebuild the material identities and raw-opal character while preserving the two-piece reference composition.",
+      "current_finding": "The separate tiara and bracelet now use unfaceted raw opals and metachrome settings/chain; introduced diamond identities are removed.",
+      "next_action": "Further refine opal colour play and jewellery workmanship without changing the two-piece composition.",
       "description_key": "openfa:text/gameplay/trade/item/015/description",
       "description_sha256": "c38057dd52bf0c8efae5a2031f6587f4abe86910050d2f8317f9bdfc3776d274",
-      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI016/optical/TI016.blend",
-      "native_sha256": "fddf535ac8041193dbac542c1d89ec4c6da8adc8911d4d610db3b3e17ae77d8b",
+      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI016/lore/TI016.blend",
+      "native_sha256": "552f3df65e20631ce63e1611cb7b368d3ab9e9210e69fc4ee5f9464bee8edb17",
       "image": "gallery/media/docs/assets/reconstruction/trading-goods-refined/TI016/front-quarter.png",
-      "image_sha256": "f10d871e991b4d7548b9d8c5d8631f8860c4460a4d361a00f9c08b74cef6a85d",
+      "image_sha256": "a964f8ad4fc7fe6cbf59b7e2bd010f14637b37779a2fe88d7591cd9af791e27a",
+      "previous_review": {
+        "assessment": "contradiction",
+        "current_finding": "Current material slots include a diamond jewel and white-gold/platinum settings, not a consistently opal/metachrome set.",
+        "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI016/optical/TI016.blend",
+        "native_sha256": "fddf535ac8041193dbac542c1d89ec4c6da8adc8911d4d610db3b3e17ae77d8b",
+        "image_sha256": "f10d871e991b4d7548b9d8c5d8631f8860c4460a4d361a00f9c08b74cef6a85d",
+        "milestone": "c3b17b4"
+      },
       "blender_inspection": {
         "material_names": [
-          "TI016 / diamond jewel",
-          "TI016 / raw opal tiara",
-          "TI016 / white gold platinum"
-        ]
+          "TI016 / metachrome setting and chain",
+          "TI016 / raw opal / milky natural colour play"
+        ],
+        "raw_opals": 2,
+        "introduced_diamonds": 0
       }
     },
     {
@@ -313,89 +322,136 @@
       "legacy_stem": "TI018",
       "item_id": 17,
       "name": "Solitaire emerald",
-      "assessment": "contradiction",
-      "priority": "P1",
+      "assessment": "core_match",
+      "priority": "P3",
       "lore_requirement": "A square-cut emerald must be set in white gold.",
-      "current_finding": "The setting is visibly yellow gold and is assigned the yellow-gold material; the stone also reads as a generic octagon.",
-      "next_action": "Use white gold and a deliberate square/emerald-cut geometry with chamfered corners.",
+      "current_finding": "The revised emerald has a square seven-ring step cut with small chamfered corners, white-gold bezel and corner claws.",
+      "next_action": "Retain the square cut and white-gold identity during future detail work.",
       "description_key": "openfa:text/gameplay/trade/item/017/description",
       "description_sha256": "4ef97dd6ae64292f5d461fdbef240f8bab049a9b4b110032b834f69635c19753",
-      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI018/optical/TI018.blend",
-      "native_sha256": "e3fb7aef0f7b7bdc8ed92c3e41721f80dcd8805df5b88715b367b8efc7e4f1d2",
+      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI018/lore/TI018.blend",
+      "native_sha256": "3ece82848eeb496f9e9cb1dafec0639473b59ea23257f756cf16a7709021a50c",
       "image": "gallery/media/docs/assets/reconstruction/trading-goods-refined/TI018/front-quarter.png",
-      "image_sha256": "861ca222c48a4c5f5804569fe454ddf1a03e3b47cbca50daee008b893a48d85d",
+      "image_sha256": "8255e01e92c32f347263b8061088268ef4ccd5db68a828259a18b92ed3b2dad9",
+      "previous_review": {
+        "assessment": "contradiction",
+        "current_finding": "The setting is visibly yellow gold and is assigned the yellow-gold material; the stone also reads as a generic octagon.",
+        "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI018/optical/TI018.blend",
+        "native_sha256": "e3fb7aef0f7b7bdc8ed92c3e41721f80dcd8805df5b88715b367b8efc7e4f1d2",
+        "image_sha256": "861ca222c48a4c5f5804569fe454ddf1a03e3b47cbca50daee008b893a48d85d",
+        "milestone": "c3b17b4"
+      },
       "blender_inspection": {
         "material_names": [
           "TI018 / emerald jewel",
-          "TI018 / worked yellow gold"
-        ]
+          "TI018 / white gold square solitaire setting"
+        ],
+        "square_xy_extents": [
+          2.0,
+          2.0
+        ],
+        "step_cut_rings": 7
       }
     },
     {
       "legacy_stem": "TI019",
       "item_id": 18,
       "name": "Brooch",
-      "assessment": "contradiction",
-      "priority": "P1",
+      "assessment": "core_match",
+      "priority": "P3",
       "lore_requirement": "The brooch uses a cabochon-cut ruby with red gold and copper.",
-      "current_finding": "The ruby is faceted despite the cabochon material name; red-gold/copper differentiation is weak.",
-      "next_action": "Make a smooth domed cabochon and distinguish the two setting metals.",
+      "current_finding": "The revised ruby is a smooth domed cabochon, with actual sheet thickness and visibly differentiated red-gold/copper petals.",
+      "next_action": "Further engraving is optional; retain the unfaceted cabochon and two metals.",
       "description_key": "openfa:text/gameplay/trade/item/018/description",
       "description_sha256": "a885443e10048870e8c4bc4e52140367ec0688cc1f3a3d0666d57cccb9f5002d",
-      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI019/optical/TI019.blend",
-      "native_sha256": "7d3d8c4d4778572f8bbf28e5b780bae5fe93b256aa28a4b346fbb679f1ec6875",
+      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI019/lore/TI019.blend",
+      "native_sha256": "23c40045738d1f6940c2b6c80d34d6a90c217338e164bf8963b6e6a877f776d7",
       "image": "gallery/media/docs/assets/reconstruction/trading-goods-refined/TI019/front-quarter.png",
-      "image_sha256": "571194c4ce96d495450391edf00c1a4f5de59a4a8e2b40f566e7145c6fb5a043",
+      "image_sha256": "35fdea5b44c58736384c829529db40dc70f34474c6f526f997e675d3655c05ec",
+      "previous_review": {
+        "assessment": "contradiction",
+        "current_finding": "The ruby is faceted despite the cabochon material name; red-gold/copper differentiation is weak.",
+        "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI019/optical/TI019.blend",
+        "native_sha256": "7d3d8c4d4778572f8bbf28e5b780bae5fe93b256aa28a4b346fbb679f1ec6875",
+        "image_sha256": "571194c4ce96d495450391edf00c1a4f5de59a4a8e2b40f566e7145c6fb5a043",
+        "milestone": "c3b17b4"
+      },
       "blender_inspection": {
         "material_names": [
-          "TI019 / polished red gold face",
-          "TI019 / ruby cabochon"
-        ]
+          "TI019 / copper contrasting brooch petals",
+          "TI019 / red gold brooch petals",
+          "TI019 / ruby / smooth cabochon"
+        ],
+        "cabochon_smooth_shading": true,
+        "cabochon_vertices": 2496
       }
     },
     {
       "legacy_stem": "TI020",
       "item_id": 19,
       "name": "Necklace",
-      "assessment": "contradiction",
-      "priority": "P1",
+      "assessment": "core_match",
+      "priority": "P3",
       "lore_requirement": "Exactly 23 astramarines are set in white gold and titanium.",
-      "current_finding": "The 23-stone structure is present, but all bezels/links use yellow gold.",
-      "next_action": "Replace the yellow setting with differentiated white gold and titanium.",
+      "current_finding": "Actual Blender inspection counts 23 astramarines and white-gold bezels, with 22 titanium links; the studio render is visibly a pale setting.",
+      "next_action": "Retain the exact stone count and white-gold/titanium distinction.",
       "description_key": "openfa:text/gameplay/trade/item/019/description",
       "description_sha256": "dc9ea64fb1c587027409f81acc6364b43392cec2b2f28ebabc72271610fbbf72",
-      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI020/optical/TI020.blend",
-      "native_sha256": "31d30b1741b3b67b7ff0c2c52a604c5f0f5ffdfb2b8b65ff145fc81527d051dc",
+      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI020/lore/TI020.blend",
+      "native_sha256": "b3c5210023e96071a8cffc6511538fe979a49f763beee1da1ec6eb7a6d32aed0",
       "image": "gallery/media/docs/assets/reconstruction/trading-goods-refined/TI020/front-quarter.png",
-      "image_sha256": "507b3d986b46d78e55f71f02d0090699e5de1e161d95ddb4b8ee2153d3557bd2",
+      "image_sha256": "b0ac6f67f78b6ccae0bcade8d9c51608614eea53f2cd874d88ea646a4a054a51",
+      "previous_review": {
+        "assessment": "contradiction",
+        "current_finding": "The 23-stone structure is present, but all bezels/links use yellow gold.",
+        "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI020/optical/TI020.blend",
+        "native_sha256": "31d30b1741b3b67b7ff0c2c52a604c5f0f5ffdfb2b8b65ff145fc81527d051dc",
+        "image_sha256": "507b3d986b46d78e55f71f02d0090699e5de1e161d95ddb4b8ee2153d3557bd2",
+        "milestone": "c3b17b4"
+      },
       "blender_inspection": {
         "material_names": [
           "TI020 / astramarine jewel",
-          "TI020 / worked yellow gold"
-        ]
+          "TI020 / titanium necklace links",
+          "TI020 / white gold astramarine bezels"
+        ],
+        "astramarines": 23,
+        "white_gold_bezels": 23,
+        "titanium_links": 22
       }
     },
     {
       "legacy_stem": "TI021",
       "item_id": 20,
       "name": "Eternity ring",
-      "assessment": "contradiction",
-      "priority": "P1",
+      "assessment": "core_match",
+      "priority": "P2",
       "lore_requirement": "The eternity ring combines ultropaz and alexandrite in 24ct yellow gold.",
-      "current_finding": "The current stones use astramarine and pearl materials instead.",
-      "next_action": "Use amber ultropaz and alexandrite identities; retain the yellow-gold ring.",
+      "current_finding": "The yellow-gold ring now carries four amber ultropaz and four violet-studio-state alexandrite gems; pearl/astramarine identities are removed.",
+      "next_action": "Refine the tiny settings; dynamic alexandrite colour change remains unimplemented and is not certified by this still.",
       "description_key": "openfa:text/gameplay/trade/item/020/description",
       "description_sha256": "e0bdf74b9b4b598dd4ccd1e1e5c72685af669ce2d87ed6ebab80c13d074956c7",
-      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI021/optical/TI021.blend",
-      "native_sha256": "d360d9094c7f8e62404fd1343caf6e49f6503d57e956734903ae6decf36064f2",
+      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI021/lore/TI021.blend",
+      "native_sha256": "c4d31b427e03f0ff96dfb1b834d580a102ade82477d569e8b552a3c7ec9852a3",
       "image": "gallery/media/docs/assets/reconstruction/trading-goods-refined/TI021/front-quarter.png",
-      "image_sha256": "fc2521fc5f06d89821a5e00267b88dc80b3a41f68832248a6ebe9686b2c37257",
+      "image_sha256": "773a65fa8182284e09726460bd834d4442ced7613e24480b1a1fcca67ccf4387",
+      "previous_review": {
+        "assessment": "contradiction",
+        "current_finding": "The current stones use astramarine and pearl materials instead.",
+        "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI021/optical/TI021.blend",
+        "native_sha256": "d360d9094c7f8e62404fd1343caf6e49f6503d57e956734903ae6decf36064f2",
+        "image_sha256": "fc2521fc5f06d89821a5e00267b88dc80b3a41f68832248a6ebe9686b2c37257",
+        "milestone": "c3b17b4"
+      },
       "blender_inspection": {
         "material_names": [
-          "TI021 / astramarine jewel",
-          "TI021 / pearl lustre",
+          "TI021 / alexandrite / violet studio-light appearance",
+          "TI021 / ultropaz / warm amber transparent gem",
           "TI021 / worked yellow gold"
-        ]
+        ],
+        "ultropaz": 4,
+        "alexandrite": 4,
+        "colour_change_verified": false
       }
     },
     {
@@ -777,17 +833,36 @@
       "legacy_stem": "TI045",
       "item_id": 44,
       "name": "Pearls dissolved in brandy",
-      "assessment": "contradiction",
-      "priority": "P1",
+      "assessment": "core_match",
+      "priority": "P2",
       "lore_requirement": "The snack consists of pearls dissolved in brandy.",
-      "current_finding": "The flask contains many intact spherical objects named undissolved pearls and lacks a distinct brandy medium.",
-      "next_action": "Represent dissolved/suspended nacre in brandy rather than a heap of whole necklace-like pearls.",
+      "current_finding": "The flask now has an actual hollow glass wall and amber brandy volume with subtle nacre scattering; there are no whole pearl bead objects. The current render was inspected.",
+      "next_action": "Further develop the delicate dissolved-nacre appearance and authored bottle label; do not reintroduce intact pearls.",
       "description_key": "openfa:text/gameplay/trade/item/044/description",
       "description_sha256": "245aba5725b4d988eedbc73642e147a5be93ca7060e46dd32c393f2bd8a091e0",
-      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI045/TI045.blend",
-      "native_sha256": "8921cdf28ebe75be60f3a041ab45e7ed2edde5ce0261b3e2ad7c42d2a24b7e2c",
+      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI045/lore/TI045.blend",
+      "native_sha256": "88bcaec6eca4dfb43d83a003385122db4f8aac65439afa3026313a8cf8d1afb1",
       "image": "gallery/media/docs/assets/reconstruction/trading-goods-refined/TI045/front-quarter.png",
-      "image_sha256": "b2c71cfea352bd10e41c84cc2f0c1f35f2a98b54d1f405752a9ade88eb55b171"
+      "image_sha256": "d1cfe41d7949c38231f684a9fece0f40cdc724b1ae22ed26f6e234ff5b027717",
+      "previous_review": {
+        "assessment": "contradiction",
+        "current_finding": "The flask contains many intact spherical objects named undissolved pearls and lacks a distinct brandy medium.",
+        "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI045/TI045.blend",
+        "native_sha256": "8921cdf28ebe75be60f3a041ab45e7ed2edde5ce0261b3e2ad7c42d2a24b7e2c",
+        "image_sha256": "b2c71cfea352bd10e41c84cc2f0c1f35f2a98b54d1f405752a9ade88eb55b171",
+        "milestone": "c3b17b4"
+      },
+      "blender_inspection": {
+        "material_names": [
+          "TI045 / aged brass",
+          "TI045 / brandy with dissolved pearl / amber opalescent liquid",
+          "TI045 / clear hollow brandy flask glass",
+          "TI045 / worn warm wood"
+        ],
+        "intact_pearl_objects": 0,
+        "separate_liquid_mesh": true,
+        "hollow_glass_mesh": true
+      }
     },
     {
       "legacy_stem": "TI046",
@@ -905,27 +980,45 @@
       "legacy_stem": "TI053",
       "item_id": 52,
       "name": "Ortok's Mansions",
-      "assessment": "contradiction",
-      "priority": "P1",
+      "assessment": "partial",
+      "priority": "P2",
       "lore_requirement": "Ortok's Mansions has ten truth and ten deceit mansions, Tarot-like player pieces and a highest truth goal.",
-      "current_finding": "The generator makes six tiers with four miniature houses each: 24 mansions, with no distinct Tarot-like player pieces.",
-      "next_action": "Design 20 distinct mansion locations and separate character pieces; the lore does not require 20 floors.",
+      "current_finding": "The corrected set has ten truth and ten deceit locations across six tiers, the highest truth goal and four illustrative arcana-like character tokens. Its boards, staircase and craftsmanship remain simpler than the icon.",
+      "next_action": "Add the sculpted staircase and richer Rigellian workmanship while preserving the verified 20-location split; the token motifs/colour coding remain authored interpretations.",
       "description_key": "openfa:text/gameplay/trade/item/052/description",
       "description_sha256": "73786283f4af44737dd4b797993ab0630fdcdd1a01c0d18f6fe7cb387649f2bc",
-      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI053/TI053.blend",
-      "native_sha256": "8130f7ea2e83dda9c7ecbf3937e4fee4a3c9850ef0d7fc96ca02052a167f52b2",
+      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI053/lore/TI053.blend",
+      "native_sha256": "9cb4ac8177d174d80e9358ece3024c91c73cf64d25ed039a9fb546615bebcfd2",
       "image": "gallery/media/docs/assets/reconstruction/trading-goods-refined/TI053/front-quarter.png",
-      "image_sha256": "aee6f0ca79addc5445b6fdb6d1be35a07ede75b8bdd14cca8397530f4f19d29d",
+      "image_sha256": "11de23eda803c18ff2b853104b6aafaf0d41dbfef21a48283db80ef2b1658ffc",
+      "previous_review": {
+        "assessment": "contradiction",
+        "current_finding": "The generator makes six tiers with four miniature houses each: 24 mansions, with no distinct Tarot-like player pieces.",
+        "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI053/TI053.blend",
+        "native_sha256": "8130f7ea2e83dda9c7ecbf3937e4fee4a3c9850ef0d7fc96ca02052a167f52b2",
+        "image_sha256": "aee6f0ca79addc5445b6fdb6d1be35a07ede75b8bdd14cca8397530f4f19d29d",
+        "milestone": "c3b17b4"
+      },
       "blender_inspection": {
         "material_names": [
           "TI053 / aged black base",
           "TI053 / antique warm wood",
           "TI053 / antiqued artifact brass",
           "TI053 / blue enamel",
+          "TI053 / deceit mansions / oxblood enamel",
           "TI053 / ivory small pieces"
         ],
-        "miniature_mansions": 24,
-        "board_tiers": 6
+        "mansion_locations": 20,
+        "truth": 10,
+        "deceit": 10,
+        "board_tiers": 6,
+        "highest_goal": "ultimate truth",
+        "illustrative_character_roles": [
+          "crown",
+          "staff",
+          "scales",
+          "star"
+        ]
       }
     },
     {

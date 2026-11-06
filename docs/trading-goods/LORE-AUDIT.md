@@ -1,30 +1,39 @@
 # Trading goods — lore and representation audit
 
-All **101 item descriptions** were read and compared with the current rendered models. This is a semantic/art-direction assessment; a technically verified render is not automatically a faithful or artistically finished reconstruction.
+All **101 item descriptions** were manually read and compared with rendered models. This is a semantic/art-direction assessment, separate from technical render acceptance.
 
 [Machine-readable audit](lore-audit.json) · [Current gallery](../../gallery/trading-goods-shared.md) · [Reproduction](REFINEMENT.md)
 
-Source: [English item lore at 8d9926f](https://github.com/ender-dev-pl/ed-openfa-game/blob/8d9926f2ce8a22b9c09ffe570a0fa95526f0f6dd/content/standard/localization/en.json). Per-item description, native and image hashes bind this review to the inspected state.
+Source: [English item lore at 8d9926f](https://github.com/ender-dev-pl/ed-openfa-game/blob/8d9926f2ce8a22b9c09ffe570a0fa95526f0f6dd/content/standard/localization/en.json). Description, native and image hashes bind each review to its evidence.
 
 ## Result
 
-- **core_match**: 65 — The main object/product representation is consistent; this does not mean its artistic finish is final.
-- **partial**: 27 — Recognisable identity but missing important material, cultural, construction or functional visual cues.
+- **core_match**: 71 — The main object/product representation is consistent; this does not mean its artistic finish is final.
+- **partial**: 28 — Recognisable identity but missing important material, cultural, construction or functional visual cues.
 - **ambiguous**: 2 — Original icon and text leave a genuine interpretive tension; do not silently invent a resolution.
-- **contradiction**: 7 — A specific stated material, cut, count or product state conflicts with the implementation.
 
-The clearest corrections are the material/cut identities in TI016/TI018/TI019/TI020/TI021, the dissolved-pearl product in TI045, and TI053’s 24 houses versus the described 20 mansions. These findings are **open**, not silently marked fixed by the material-render pass.
+## Corrected explicit conflicts
 
-The TI064 revision treats the axe as rare, revered Artemian metalwork associated with Cyreni: substantial crescent blades, recessed lunar/border channels, restrained forged bronze and carved wood. The lunar decoration is an authored interpretation, not a recovered canonical emblem. Braccatian Celtic/Saxon references should not be applied indiscriminately to Artemian objects.
+The initial audit at `c3b17b4` found seven specific contradictions. Separate `lore/` revisions now correct:
 
-## Evidence cautions
+- TI016: raw opal and metachrome, with no introduced diamonds.
+- TI018: deliberate square step-cut emerald in white gold.
+- TI019: smooth domed ruby cabochon, with red gold and copper.
+- TI020: 23 astramarines, white-gold bezels and titanium links.
+- TI021: ultropaz and alexandrite in yellow gold; one studio-light colour state.
+- TI045: actual brandy fill in hollow glass, with subtle dissolved-nacre scattering and no whole pearl beads.
+- TI053: ten mansions of truth plus ten of deceit, the highest truth goal and illustrative arcana-like character pieces. The more elaborate staircase/craft of the icon remains a refinement target.
 
-- TI007: the text limits Bristol products to drinking glasses, while the original icon has a carafe-like centrepiece. The disagreement must remain explicit.
-- TI063: the commodity is oil but the icon shows the Kraagil creature. Preserve that canonical metonymy while improving its whale/dragon/crustacean character; do not automatically replace it with a generic bottle.
-- TI053: ten mansions of truth plus ten of deceit are **20 locations**, not a requirement for 20 floors. Actual Blender inspection found six tiers and 24 miniature mansion objects.
-- TI019: a material named “ruby cabochon” does not make visibly faceted geometry a cabochon.
-- Dynamic colour change, temporal effects, medical efficacy, payload behaviour and scale cannot be certified from a static trade-item render.
-- Grey/white fictional metals may be visually similar; material-assignment findings and visible colour errors are kept distinct.
+[Read-only Blender inspection](lore-corrections-validation.json) records actual geometry/material checks. Each corrected entry retains its previous finding and source hash. These fixes do not close the remaining partial or ambiguous artistic findings.
+
+## Cultural and evidence cautions
+
+- TI064 is a rare, revered Artemian axe associated with Cyreni. Recessed lunar/border channels, forged bronze and carved wood are authored interpretations, not recovered canonical writing. Do not copy Braccatian Celtic/Saxon styling indiscriminately onto Artemian objects.
+- TI007: the description lists drinking glasses, but the original icon has a carafe-like centrepiece. Keep that tension explicit.
+- TI063: the commodity is Kraagil oil, while the icon depicts the creature. Preserve that metonymy and improve its whale/dragon/crustacean anatomy rather than automatically substituting a bottle.
+- TI053 describes 20 locations, not 20 floors. The corrected set retains six tiers.
+- A “cabochon” material name is not evidence of an unfaceted shape; the revised ruby geometry was actually opened and rendered.
+- Static renders do not establish colour-change behaviour, temporal effects, biological efficacy, payload function or racial scale.
 
 ## Full catalogue
 
@@ -45,12 +54,12 @@ The TI064 revision treats the axe as rare, revered Artemian metalwork associated
 | [TI013 Satin taffeta](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI013/front-quarter.png) | core_match | P2 | Satin taffeta is a rare, expensive social fabric. | The sheet/roll and directional highlights are appropriate. **Next:** Refine fine weave and crisp folds while retaining its difference from silk. |
 | [TI014 Egyptian sea-cotton](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI014/front-quarter.png) | core_match | P2 | Old Terran Egyptian sea-cotton is exceptionally fine and expensive. | The pale cotton roll is compatible with the product. **Next:** Use convincing fine fibres and soft edges; provenance cannot be proved by shape alone. |
 | [TI015 Achaean angora](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI015/front-quarter.png) | partial | P2 | Achaean angora is combed fur from pet felines. | The yarn spool is plausible, but looks more like a smooth wound thread than soft feline angora. **Next:** Add a restrained fuzzy fibre halo and irregular yarn strands. |
-| [TI016 Tiara & Bracelet set](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI016/front-quarter.png) | contradiction | P1 | The tiara/bracelet set is raw opal with metachrome. | Current material slots include a diamond jewel and white-gold/platinum settings, not a consistently opal/metachrome set. **Next:** Rebuild the material identities and raw-opal character while preserving the two-piece reference composition. |
+| [TI016 Tiara & Bracelet set](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI016/front-quarter.png) | core_match | P2 | The tiara/bracelet set is raw opal with metachrome. | The separate tiara and bracelet now use unfaceted raw opals and metachrome settings/chain; introduced diamond identities are removed. **Next:** Further refine opal colour play and jewellery workmanship without changing the two-piece composition. |
 | [TI017 Choker](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI017/front-quarter.png) | partial | P1 | A woven red-gold band carries an eight-point gold sunburst, central aquamarine and scattered brilliants. | The band, sunburst and centre exist; woven construction and surrounding brilliants are missing. **Next:** Model the woven ribbon and scattered small stones; preserve the eight-point motif. |
-| [TI018 Solitaire emerald](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI018/front-quarter.png) | contradiction | P1 | A square-cut emerald must be set in white gold. | The setting is visibly yellow gold and is assigned the yellow-gold material; the stone also reads as a generic octagon. **Next:** Use white gold and a deliberate square/emerald-cut geometry with chamfered corners. |
-| [TI019 Brooch](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI019/front-quarter.png) | contradiction | P1 | The brooch uses a cabochon-cut ruby with red gold and copper. | The ruby is faceted despite the cabochon material name; red-gold/copper differentiation is weak. **Next:** Make a smooth domed cabochon and distinguish the two setting metals. |
-| [TI020 Necklace](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI020/front-quarter.png) | contradiction | P1 | Exactly 23 astramarines are set in white gold and titanium. | The 23-stone structure is present, but all bezels/links use yellow gold. **Next:** Replace the yellow setting with differentiated white gold and titanium. |
-| [TI021 Eternity ring](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI021/front-quarter.png) | contradiction | P1 | The eternity ring combines ultropaz and alexandrite in 24ct yellow gold. | The current stones use astramarine and pearl materials instead. **Next:** Use amber ultropaz and alexandrite identities; retain the yellow-gold ring. |
+| [TI018 Solitaire emerald](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI018/front-quarter.png) | core_match | P3 | A square-cut emerald must be set in white gold. | The revised emerald has a square seven-ring step cut with small chamfered corners, white-gold bezel and corner claws. **Next:** Retain the square cut and white-gold identity during future detail work. |
+| [TI019 Brooch](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI019/front-quarter.png) | core_match | P3 | The brooch uses a cabochon-cut ruby with red gold and copper. | The revised ruby is a smooth domed cabochon, with actual sheet thickness and visibly differentiated red-gold/copper petals. **Next:** Further engraving is optional; retain the unfaceted cabochon and two metals. |
+| [TI020 Necklace](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI020/front-quarter.png) | core_match | P3 | Exactly 23 astramarines are set in white gold and titanium. | Actual Blender inspection counts 23 astramarines and white-gold bezels, with 22 titanium links; the studio render is visibly a pale setting. **Next:** Retain the exact stone count and white-gold/titanium distinction. |
+| [TI021 Eternity ring](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI021/front-quarter.png) | core_match | P2 | The eternity ring combines ultropaz and alexandrite in 24ct yellow gold. | The yellow-gold ring now carries four amber ultropaz and four violet-studio-state alexandrite gems; pearl/astramarine identities are removed. **Next:** Refine the tiny settings; dynamic alexandrite colour change remains unimplemented and is not certified by this still. |
 | [TI022 Pectoral](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI022/front-quarter.png) | partial | P2 | The pectoral combines diamond, emerald and metachrome. | The gem/lattice composition is recognisable, but the framework is labelled white gold/platinum rather than metachrome. **Next:** Give the framework a deliberate metachrome identity; refine lattice workmanship. |
 | [TI023 Collar](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI023/front-quarter.png) | partial | P2 | Seventeen blue opals are paired with a white-gold clasp. | Stone count and pale clasp are present; the stones share an astramarine-style transparent shader. **Next:** Give blue opals their own material character and refine their settings. |
 | [TI024 3-strand bracelet](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI024/front-quarter.png) | core_match | P2 | The bracelet has three pearl strands and platinum. | The model has three strands, pearls and a pale metallic clasp. **Next:** Refine nacre lustre and the clasp; do not add arbitrary gemstones. |
@@ -74,7 +83,7 @@ The TI064 revision treats the axe as rare, revered Artemian metalwork associated
 | [TI042 Ornamental archaic weaponry](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI042/front-quarter.png) | partial | P1 | Braccatian exports are elegant, archaic ornamental weapons. | Sword/flail fit; the third flat triangle with bars loses the handled ornate blade seen in the icon and is described inconsistently as an instrument. **Next:** Resolve the triangular weapon/guard geometry and grip; do not reinterpret it as a harp from the bars alone. |
 | [TI043 Fizzimo Liqueurs](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI043/front-quarter.png) | partial | P2 | Four quail-egg-sized dark chocolates contain glowing Lumiere and come in an exquisite box. | Four chocolate orbs and a decorative box are present; confectionery craftsmanship is very basic. **Next:** Refine the box/interior and edible chocolate finish; a cutaway could clarify filling but closed orbs need not expose it. |
 | [TI044 Rigellian ant eggs](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI044/front-quarter.png) | core_match | P2 | Eggs of metre-tall Rigellian ants are a costly delicacy. | Large smooth egg shapes are consistent. **Next:** Improve shell texture; racial scale is not verifiable from display-normalised objects alone. |
-| [TI045 Pearls dissolved in brandy](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI045/front-quarter.png) | contradiction | P1 | The snack consists of pearls dissolved in brandy. | The flask contains many intact spherical objects named undissolved pearls and lacks a distinct brandy medium. **Next:** Represent dissolved/suspended nacre in brandy rather than a heap of whole necklace-like pearls. |
+| [TI045 Pearls dissolved in brandy](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI045/front-quarter.png) | core_match | P2 | The snack consists of pearls dissolved in brandy. | The flask now has an actual hollow glass wall and amber brandy volume with subtle nacre scattering; there are no whole pearl bead objects. The current render was inspected. **Next:** Further develop the delicate dissolved-nacre appearance and authored bottle label; do not reintroduce intact pearls. |
 | [TI046 Goat's ear mushrooms](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI046/front-quarter.png) | partial | P2 | Goats' ear mushrooms are a rare, limited-harvest delicacy. | Mushrooms are recognisable, but current caps/stems remain generic. **Next:** Use the original cap shapes and organic detail to establish species character without assuming the name dictates exact anatomy. |
 | [TI047 Organic corn on the cob](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI047/front-quarter.png) | core_match | P3 | Sweetcorn is scarce premium organic produce, favoured by vegetarian Artemia. | Individual kernels/cobs in a produce crate match the commodity. **Next:** Keep fresh organic character rather than depicting the blight as the sale product. |
 | [TI048 Braccatian kulos cheese](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI048/front-quarter.png) | core_match | P2 | Kulos cheese is rare, dense and nourishing dairy from a low-yield animal. | A waxed cut cheese wheel is consistent; hole/wax details follow the icon, not explicit lore. **Next:** Retain repaired cut-face topology; develop realistic rind/wax/curd texture in later refinement. |
@@ -82,7 +91,7 @@ The TI064 revision treats the axe as rare, revered Artemian metalwork associated
 | [TI050 Seaweed](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI050/front-quarter.png) | partial | P2 | Marine kelp, phosphoran and mossweed are inexpensive staples. | Lattice crates fit bulk cargo, but generic green ovals read more as leaves than marine fronds. **Next:** Refine ribbon/frond/branching forms while preserving the cargo arrangement. |
 | [TI051 Krill](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI051/front-quarter.png) | core_match | P3 | Krill is a cheap freeze-dried survival staple. | Plain bulk canisters fit dry processed food. **Next:** Keep utilitarian packaging; do not make it a fresh seafood luxury display. |
 | [TI052 Water](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI052/front-quarter.png) | core_match | P3 | Clean water is precious, heavily shipped and legally protected. | A rack of sealed bulk tanks fits this role. **Next:** Cargo/water identification may help; the contents need not be visible through metal tanks. |
-| [TI053 Ortok's Mansions](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI053/front-quarter.png) | contradiction | P1 | Ortok's Mansions has ten truth and ten deceit mansions, Tarot-like player pieces and a highest truth goal. | The generator makes six tiers with four miniature houses each: 24 mansions, with no distinct Tarot-like player pieces. **Next:** Design 20 distinct mansion locations and separate character pieces; the lore does not require 20 floors. |
+| [TI053 Ortok's Mansions](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI053/front-quarter.png) | partial | P2 | Ortok's Mansions has ten truth and ten deceit mansions, Tarot-like player pieces and a highest truth goal. | The corrected set has ten truth and ten deceit locations across six tiers, the highest truth goal and four illustrative arcana-like character tokens. Its boards, staircase and craftsmanship remain simpler than the icon. **Next:** Add the sculpted staircase and richer Rigellian workmanship while preserving the verified 20-location split; the token motifs/colour coding remain authored interpretations. |
 | [TI054 Shades of Brutos](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI054/front-quarter.png) | partial | P2 | Brutos's unique fear-sensitive goggles are historical Maunid military memorabilia. | The goggles are recognisable but generic; fear sensing itself is not visible in a still. **Next:** Refine a distinctive historical instrument and wear; do not invent the unknown mechanism as canon. |
 | [TI055 Huskar Cigars](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI055/front-quarter.png) | core_match | P2 | Huskar cigars are brown-paper rolls in brilliant wooden boxes; smoke is purple if lit. | The coloured wooden box and brown cigars fit an unlit product display. **Next:** Refine wrappers/brand craftsmanship; any later lit view must use purple smoke. |
 | [TI056 Maunik's Cube](../../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI056/front-quarter.png) | partial | P2 | Maunik's Cube is a heavy, oily metal puzzle with uncoloured faces bearing Law-of-the-Cube slogans. | The 3x3 metal cube fits, but repeated crosses do not convey inscriptions and the finish is rather dry. **Next:** Add oily metal response and authored inscription-like strokes without claiming readable canonical language. |
@@ -134,8 +143,12 @@ The TI064 revision treats the axe as rare, revered Artemian metalwork associated
 
 ## Recheck after edits
 
+Manual notes are maintained in `lore-review-notes.tsv` (six pipe-separated fields per item). Regenerate only after actual review:
+
 ```sh
+blender -b --python-exit-code 1 --python sources/tools/trading-goods/refining/verify_lore_geometry.py -- --repo .
+python tools/build_trading_lore_audit.py --game-repo ../ed-openfa-game
 python tools/verify_trading_lore_audit.py --game-repo ../ed-openfa-game
 ```
 
-This check verifies coverage and evidence freshness only. Updating source/image hashes alone does not establish a new semantic review. Reinspect changed models and update the finding before regenerating the audit.
+The final check verifies evidence freshness and coverage, not semantic judgement. Replacing hashes alone is not a new review.

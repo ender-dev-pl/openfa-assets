@@ -67,3 +67,25 @@ The current TI067 handles are independently checked by `verify_cup_clearance.py`
 ## TI064 Artemian craft revision
 
 `TI064/ceremonial/` adds actual Boolean-incised lunar/border channels, a restrained aged-bronze response, shallow forged-face geometry and eight tapered carved hardwood flutes. Both raw blade meshes are checked manifold before the surface modifiers. Lunar decoration interprets the Cyreni description; it is not a recovered inscription. The earlier primitive and first remodel remain preserved.
+
+## Description-driven corrections
+
+The full [101-item lore review](LORE-AUDIT.md) identified seven explicit conflicts. Separate `lore/` variants for TI016, TI018, TI019, TI020, TI021, TI045 and TI053 preserve their earlier material/optical parents. `reconcile_lore.py` implements raw opal/metachrome identities, square emerald stepping, an actual smooth ruby cabochon with red gold/copper, white-gold/titanium necklace fittings, ultropaz/alexandrite, dissolved-pearl brandy in hollow glass, and 20 Ortok locations split ten truth/ten deceit with an upper truth goal and illustrative character tokens.
+
+The fictional metals, opal colour play, dissolved-nacre appearance, truth/deceit palette and character motifs are authored interpretations. The ring shows one alexandrite lighting state; dynamic colour change is not implemented. The Ortok staircase and finer craftsmanship remain artistic targets. Lore corrections do not imply blanket acceptance of every remaining cultural/visual detail.
+
+The existing batch command selects and validates these variants. To build only these missing selected variants, render and independently inspect them:
+
+```sh
+python sources/tools/trading-goods/refining/batch.py --repo . --items 16,18,19,20,21,45,53 --jobs 4
+blender -b --python-exit-code 1 --python sources/tools/trading-goods/refining/verify_lore_geometry.py -- --repo .
+```
+
+Inspect actual PNGs before updating the manual visual-review map and publishing with the earlier commands. Then update `lore-review-notes.tsv` based on actual review, regenerate the audit and run its freshness checker:
+
+```sh
+python tools/build_trading_lore_audit.py --game-repo ../ed-openfa-game
+python tools/verify_trading_lore_audit.py --game-repo ../ed-openfa-game
+```
+
+`lore-corrections-validation.json` binds read-only Blender geometry/material observations to exact native hashes. The initial contradictory assessment and source hashes remain in each corrected audit entry and in milestone `c3b17b4`.

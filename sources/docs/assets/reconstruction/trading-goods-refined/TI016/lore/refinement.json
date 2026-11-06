@@ -1,0 +1,56 @@
+{
+  "item_id": 15,
+  "legacy_stem": "TI016",
+  "baseline_native": "sources/docs/assets/reconstruction/trading-goods/TI016/TI016.blend",
+  "baseline_native_sha256": "f5bb233254aec4b8bb1c1ffb684a46350c48bfdd60268cfdd741c14534301706",
+  "builder_sha256": "755ceafa665ccc11ce979964f40102a4ab54367ab8827d889e95596529e36416",
+  "refined_native_sha256": "552f3df65e20631ce63e1611cb7b368d3ab9e9210e69fc4ee5f9464bee8edb17",
+  "glb_sha256": "159aa11c4c1cc21d587727680e548d81c1082fda705a54cd9cf2ff399df42175",
+  "materials": [
+    {
+      "name": "TI016 / metachrome setting and chain",
+      "role": "metal",
+      "base_colour": [
+        0.6100000143051147,
+        0.6499999761581421,
+        0.6700000166893005,
+        1.0
+      ]
+    },
+    {
+      "name": "TI016 / raw opal / milky natural colour play",
+      "role": "gem",
+      "base_colour": [
+        0.6299999952316284,
+        0.7099999785423279,
+        0.6499999761581421,
+        1.0
+      ]
+    }
+  ],
+  "glb_materials": "Unbaked scalar/base-colour fallback; procedural native material appearance is not claimed for GLB",
+  "model_geometry": "Original parts retained with small manufactured edge radii; deterministic normal displacement on organic, horn, stone and fabric meshes; cask label placement corrected; cheese proxy holes replaced by actual cavities where applicable",
+  "revision_builder": "sources/tools/trading-goods/refining/tint_gems.py",
+  "revision_builder_sha256": "4d40773a1153b9bec2437be454f798abf21290841ac4f0a9e6175d5a0ba4fa55",
+  "prior_refined_native": "sources/docs/assets/reconstruction/trading-goods-refined/TI016/optical/TI016.blend",
+  "prior_refined_native_sha256": "fddf535ac8041193dbac542c1d89ec4c6da8adc8911d4d610db3b3e17ae77d8b",
+  "optical_revision": [
+    {
+      "material": "TI016 / diamond jewel",
+      "prior_density": 0.18000000715255737,
+      "density": 0.8
+    },
+    {
+      "material": "TI016 / raw opal tiara",
+      "prior_density": 0.18000000715255737,
+      "density": 2
+    }
+  ],
+  "geometry_builder": "sources/tools/trading-goods/refining/reconcile_lore.py",
+  "geometry_builder_sha256": "b8ab0776ab488a0cdf37dbf12405c899074479d9bd13c39b18d42b32c0e4aafd",
+  "lore_reconciliation": {
+    "raw_opals": 2,
+    "frame_material": "metachrome",
+    "introduced_diamonds": 0
+  }
+}

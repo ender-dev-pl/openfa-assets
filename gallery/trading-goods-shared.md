@@ -286,7 +286,7 @@ Full procedural materials are in Blend; GLB textures are not baked.
 
 ![Tiara & Bracelet set](../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI016/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI016/optical/TI016.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI016/optical/TI016.glb)
+[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI016/lore/TI016.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI016/lore/TI016.glb)
 
 Full procedural materials are in Blend; GLB textures are not baked.
 
@@ -322,7 +322,7 @@ Full procedural materials are in Blend; GLB textures are not baked.
 
 ![Solitaire emerald](../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI018/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI018/optical/TI018.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI018/optical/TI018.glb)
+[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI018/lore/TI018.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI018/lore/TI018.glb)
 
 Full procedural materials are in Blend; GLB textures are not baked.
 
@@ -340,7 +340,7 @@ Full procedural materials are in Blend; GLB textures are not baked.
 
 ![Brooch](../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI019/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI019/optical/TI019.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI019/optical/TI019.glb)
+[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI019/lore/TI019.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI019/lore/TI019.glb)
 
 Full procedural materials are in Blend; GLB textures are not baked.
 
@@ -358,7 +358,7 @@ Full procedural materials are in Blend; GLB textures are not baked.
 
 ![Necklace](../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI020/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI020/optical/TI020.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI020/optical/TI020.glb)
+[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI020/lore/TI020.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI020/lore/TI020.glb)
 
 Full procedural materials are in Blend; GLB textures are not baked.
 
@@ -376,7 +376,7 @@ Full procedural materials are in Blend; GLB textures are not baked.
 
 ![Eternity ring](../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI021/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI021/optical/TI021.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI021/optical/TI021.glb)
+[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI021/lore/TI021.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI021/lore/TI021.glb)
 
 Full procedural materials are in Blend; GLB textures are not baked.
 
@@ -808,7 +808,7 @@ Full procedural materials are in Blend; GLB textures are not baked.
 
 ![Pearls dissolved in brandy](../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI045/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI045/TI045.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI045/TI045.glb)
+[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI045/lore/TI045.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI045/lore/TI045.glb)
 
 Full procedural materials are in Blend; GLB textures are not baked.
 
@@ -952,7 +952,7 @@ Full procedural materials are in Blend; GLB textures are not baked.
 
 ![Ortok's Mansions](../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI053/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI053/TI053.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI053/TI053.glb)
+[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI053/lore/TI053.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI053/lore/TI053.glb)
 
 Full procedural materials are in Blend; GLB textures are not baked.
 

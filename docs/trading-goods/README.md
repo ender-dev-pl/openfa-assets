@@ -39,3 +39,5 @@ All 101 selected variants have independent native/GLB runtime checks, visually r
 ## Lore review
 
 [LORE-AUDIT.md](LORE-AUDIT.md) reviews all 101 descriptions against current models, with source-bound evidence in [lore-audit.json](lore-audit.json). Technical render completion is separate from lore fidelity. Explicit material/cut/count conflicts are tracked individually; ambiguous icon/text cases are preserved rather than silently reinterpreted.
+
+The first full audit and Artemian axe craft revision are preserved at `c3b17b4`. Seven explicit description conflicts now have separate verified `lore/` variants. The current review records 71 core matches, 28 partial representations and two ambiguous icon/text cases; remaining artistic findings are open. See the per-item audit before choosing the next refinement.

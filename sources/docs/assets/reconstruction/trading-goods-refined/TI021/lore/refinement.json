@@ -1,0 +1,65 @@
+{
+  "item_id": 20,
+  "legacy_stem": "TI021",
+  "baseline_native": "sources/docs/assets/reconstruction/trading-goods/TI021/TI021.blend",
+  "baseline_native_sha256": "b43a20623830ada5ce0b34c2a8bab6718fd88f1e50f3c3e0e22a9c44e922383a",
+  "builder_sha256": "755ceafa665ccc11ce979964f40102a4ab54367ab8827d889e95596529e36416",
+  "refined_native_sha256": "c4d31b427e03f0ff96dfb1b834d580a102ade82477d569e8b552a3c7ec9852a3",
+  "glb_sha256": "5ee0594ebc5efcecee5d9adc28f1bb7b77e982b5f1ccec3cb660f6cb15d8ca83",
+  "materials": [
+    {
+      "name": "TI021 / alexandrite / violet studio-light appearance",
+      "role": "gem",
+      "base_colour": [
+        0.25,
+        0.03500000014901161,
+        0.3799999952316284,
+        1.0
+      ]
+    },
+    {
+      "name": "TI021 / ultropaz / warm amber transparent gem",
+      "role": "gem",
+      "base_colour": [
+        0.7300000190734863,
+        0.30000001192092896,
+        0.017999999225139618,
+        1.0
+      ]
+    },
+    {
+      "name": "TI021 / worked yellow gold",
+      "role": "metal",
+      "base_colour": [
+        0.6299999952316284,
+        0.38999998569488525,
+        0.07000000029802322,
+        1.0
+      ]
+    }
+  ],
+  "glb_materials": "Unbaked scalar/base-colour fallback; procedural native material appearance is not claimed for GLB",
+  "model_geometry": "Original parts retained with small manufactured edge radii; deterministic normal displacement on organic, horn, stone and fabric meshes; cask label placement corrected; cheese proxy holes replaced by actual cavities where applicable",
+  "revision_builder": "sources/tools/trading-goods/refining/tint_gems.py",
+  "revision_builder_sha256": "4d40773a1153b9bec2437be454f798abf21290841ac4f0a9e6175d5a0ba4fa55",
+  "prior_refined_native": "sources/docs/assets/reconstruction/trading-goods-refined/TI021/optical/TI021.blend",
+  "prior_refined_native_sha256": "d360d9094c7f8e62404fd1343caf6e49f6503d57e956734903ae6decf36064f2",
+  "optical_revision": [
+    {
+      "material": "TI021 / astramarine jewel",
+      "prior_density": 0.18000000715255737,
+      "density": 3
+    }
+  ],
+  "geometry_builder": "sources/tools/trading-goods/refining/reconcile_lore.py",
+  "geometry_builder_sha256": "b8ab0776ab488a0cdf37dbf12405c899074479d9bd13c39b18d42b32c0e4aafd",
+  "lore_reconciliation": {
+    "gem_identities": [
+      "ultropaz",
+      "alexandrite"
+    ],
+    "intact_pearls": 0,
+    "setting_material": "24ct yellow gold",
+    "colour_change": "One violet lighting state shown; dynamic spectral colour change not implemented"
+  }
+}
