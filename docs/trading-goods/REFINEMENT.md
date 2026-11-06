@@ -49,3 +49,7 @@ Actual studio review showed that the first transparent shader washed out ruby/as
 ## TI048 cut-face topology repair
 
 Full-resolution review exposed a dark slit between cheese cavities. The separate `TI048/repaired/` variant welds near-coincident displaced Boolean bridge vertices, triangulates holed cut-face polygons and recalculates normals. The raw wheel mesh changes from 17 nonmanifold edges to zero, while preserving the earlier source checkpoint and actual cavities. This variant has its own native/GLB runtime validation and source-bound studio render.
+
+## TI067 bowl correction
+
+The red lining accidentally included a rim-height cap, hiding the intended hollow bowl once flat caps were shaded correctly. `TI067/repaired/` removes that cap, orients the enamel towards the interior with actual coating thickness, restores reflective enamel and moves handles outside the bowl wall. This follows the existing documented hollow red-lined construction; the reference is ambiguous about lining versus contents, so no new historical detail is claimed. Earlier checkpoints remain preserved.
