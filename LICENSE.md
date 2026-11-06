@@ -4,23 +4,27 @@ English version — 6 November 2026. Polish translation: [LICENSE.pl.md](LICENSE
 
 ## 1. Scope and permission authority
 
-This license applies to original OpenFA models, textures, graphics, animations, renders and other creative assets expressly identified as covered by this license (the **Assets**). It covers only rights that the relevant copyright holders are entitled to license. Applying this license does not establish ownership of third-party material.
+This license applies to original OpenFA models, textures, graphics, animations, renders, asset-specific source recipes and other creative assets identified by the repository licensing map, or expressly marked separately, as covered by this license (the **Assets**). The repository map is [project/licensing.json](project/licensing.json); its human-readable guide is [docs/licensing/README.md](docs/licensing/README.md). It covers only rights that the relevant copyright holders are entitled to license. Applying this license does not establish ownership of third-party material.
 
 **EnderDEV**, a business registered in Poland, REGON **320987843**, VAT/tax identification number **PL8581767172**, administers the permissions reserved below on behalf of the OpenFA project. References to approval by OpenFA mean approval by EnderDEV acting within its authority.
 
-Software, generators, tests, build scripts and dependencies are not licensed by this asset license merely because they are stored in the same repository. Their licenses must be stated separately. No MIT or other software license is implied. Separately identified third-party material retains its own terms.
+General-purpose software and dependencies are not licensed by this asset license merely because they are stored in the same repository. Only files explicitly assigned MIT by the licensing map are offered under [LICENSES/MIT.txt](LICENSES/MIT.txt). Asset-specific executable recipes are covered by this asset license, including when they contain utility functions in the same file; they are not offered wholesale under MIT. No license is granted here for separately excluded reference fixtures. Separately identified third-party material retains its own terms. Verbatim copying of these license texts to accompany the licensed material is permitted.
 
 ## 2. Definitions
 
+**Asset-Specific Source** means the editable description of a particular Asset: for example, scripts, procedural node graphs, scene files, profiles, coordinates, construction parameters, layout rules, material recipes, templates and data encoding its protected creative content. File extensions and executability do not make such source general-purpose tooling. Subject to this license, you may run, copy and modify this source for the digital uses permitted in section 3.
+
 A **Modification** is an alteration, adaptation or derivative version of an Asset, including changes to geometry, rigging, animation, materials or textures. Technical conversions retain the original license and attribution even if they do not create new copyright.
 
-**Editable Source** means the preferred form for making further changes: for example, the relevant Blender project, editable textures, rigs, animation data and any modification-specific scripts or instructions reasonably necessary to edit and reproduce the modified Asset. A flattened render, compiled package, GLB, STL or other export alone is insufficient when a more editable working source was used. You need not distribute third-party proprietary software, credentials or unrelated project files; identify required tools and dependencies instead.
+**Editable Source** means the preferred form for making further changes: for example, the relevant Blender project, Asset-Specific Source and its parameters, editable textures, rigs, animation data and any modification-specific scripts or instructions reasonably necessary to edit and reproduce the modified Asset. A flattened render, compiled package, GLB, STL or other export alone is insufficient when a more editable working source was used. You need not distribute third-party proprietary software, credentials or unrelated project files; identify required tools and dependencies instead.
 
 **Share** means to distribute, publish, sell, supply or otherwise make an Asset or Modification available to another person, including within a game, application or asset package. Use entirely within your own organization, without supplying the material outside it, does not by itself trigger the source-distribution obligation.
 
 ## 3. Digital permission
 
 Subject to this license, each authorized rights holder grants everyone a worldwide, non-exclusive, royalty-free permission, for the duration of the applicable rights, to use, copy, display, render, modify and Share the Assets for digital purposes, including commercial digital products. No separate approval is needed for such permitted digital uses.
+
+Regenerating an Asset from supplied recipes, parameters, templates or construction data does not remove these conditions to the extent the result reproduces protected Asset content. This applies equally to digital exports, renders and print-oriented conversions. The license of an independently licensed utility does not relicense the Asset-Specific Source it processes. Merely running a utility does not make unrelated output subject to this license; no exclusive rights are asserted over unprotectable algorithms, ideas, facts or independent creations.
 
 This permission does not include the reserved 3D-printing uses in section 6. It remains available while you comply with this license and cannot be withdrawn merely because your compliant use becomes commercially successful.
 

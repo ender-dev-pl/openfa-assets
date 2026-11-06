@@ -4,23 +4,27 @@ Wersja polska — 6 listopada 2026 r. Wersja angielska: [LICENSE.md](LICENSE.md)
 
 ## 1. Zakres i podmiot udzielający zgód
 
-Licencja obejmuje oryginalne modele, tekstury, grafiki, animacje, rendery i inne zasoby twórcze OpenFA wyraźnie oznaczone jako objęte tą licencją (**Assety**). Obejmuje wyłącznie prawa, których odpowiedni uprawnieni mogą udzielić. Zastosowanie licencji nie stanowi potwierdzenia własności cudzych materiałów.
+Licencja obejmuje oryginalne modele, tekstury, grafiki, animacje, rendery, źródłowe receptury konkretnych assetów i inne zasoby twórcze OpenFA wskazane w repozytoryjnej mapie licencji albo odrębnie wyraźnie oznaczone jako objęte tą licencją (**Assety**). Mapa repozytorium znajduje się w [project/licensing.json](project/licensing.json), a jej przewodnik w [docs/licensing/README.md](docs/licensing/README.md). Obejmuje wyłącznie prawa, których odpowiedni uprawnieni mogą udzielić. Zastosowanie licencji nie stanowi potwierdzenia własności cudzych materiałów.
 
 **EnderDEV**, firma zarejestrowana w Polsce, REGON **320987843**, NIP **PL8581767172**, zarządza w imieniu projektu OpenFA zgodami zastrzeżonymi poniżej. Zgoda OpenFA oznacza zgodę EnderDEV udzieloną w granicach jego uprawnień.
 
-Oprogramowanie, generatory, testy, skrypty budowania i zależności nie zostają objęte tą licencją na assety przez samo umieszczenie ich w tym samym repozytorium. Ich licencje wymagają odrębnego określenia. Nie domniemywa się udzielenia licencji MIT ani innej licencji na oprogramowanie. Osobno oznaczone cudze materiały zachowują własne warunki.
+Ogólne oprogramowanie i zależności nie zostają objęte tą licencją na assety przez samo umieszczenie ich w tym samym repozytorium. Jedynie pliki wyraźnie przypisane do MIT w mapie licencji są oferowane na warunkach [LICENSES/MIT.txt](LICENSES/MIT.txt). Wykonywalne receptury konkretnych assetów podlegają licencji assetów, także gdy zawierają funkcje pomocnicze w tym samym pliku; nie są jako całość oferowane na MIT. Nie udziela się tu licencji na odrębnie wyłączone dane referencyjne. Osobno oznaczone cudze materiały zachowują własne warunki. Dozwolone jest kopiowanie tych tekstów licencji bez zmian w celu dołączenia ich do licencjonowanych materiałów.
 
 ## 2. Definicje
 
+**Źródła Konkretnego Assetu** to edytowalny opis danego Assetu: przykładowo skrypty, proceduralne grafy węzłów, pliki scen, profile, współrzędne, parametry konstrukcyjne, reguły rozmieszczenia, receptury materiałów, szablony i dane opisujące jego chronioną twórczą zawartość. Rozszerzenie pliku ani możliwość jego wykonania nie czynią takich źródeł narzędziem ogólnego przeznaczenia. Z zastrzeżeniem tej licencji można uruchamiać, kopiować i modyfikować te źródła na potrzeby cyfrowe dozwolone w punkcie 3.
+
 **Modyfikacja** to zmiana, adaptacja lub opracowanie Assetu, w tym zmiana geometrii, szkieletu, animacji, materiałów lub tekstur. Konwersje techniczne zachowują pierwotną licencję i oznaczenie pochodzenia także wtedy, gdy nie tworzą nowych praw autorskich.
 
-**Edytowalne Źródła** oznaczają postać preferowaną do dalszego wprowadzania zmian: przykładowo właściwy projekt Blendera, edytowalne tekstury, szkielety, dane animacji oraz skrypty i instrukcje dotyczące Modyfikacji, rozsądnie niezbędne do edycji i odtworzenia zmodyfikowanego Assetu. Sam spłaszczony render, skompilowana paczka, GLB, STL lub inny eksport nie wystarcza, jeżeli do pracy używano bardziej edytowalnych źródeł. Nie trzeba rozpowszechniać cudzego zamkniętego oprogramowania, danych dostępowych ani niepowiązanych plików projektu; należy wskazać wymagane narzędzia i zależności.
+**Edytowalne Źródła** oznaczają postać preferowaną do dalszego wprowadzania zmian: przykładowo właściwy projekt Blendera, Źródła Konkretnego Assetu i ich parametry, edytowalne tekstury, szkielety, dane animacji oraz skrypty i instrukcje dotyczące Modyfikacji, rozsądnie niezbędne do edycji i odtworzenia zmodyfikowanego Assetu. Sam spłaszczony render, skompilowana paczka, GLB, STL lub inny eksport nie wystarcza, jeżeli do pracy używano bardziej edytowalnych źródeł. Nie trzeba rozpowszechniać cudzego zamkniętego oprogramowania, danych dostępowych ani niepowiązanych plików projektu; należy wskazać wymagane narzędzia i zależności.
 
 **Udostępnianie** oznacza rozpowszechnianie, publikowanie, sprzedaż, dostarczanie lub inne udostępnienie Assetu albo Modyfikacji innej osobie, również wewnątrz gry, aplikacji lub paczki assetów. Wykorzystanie wyłącznie wewnątrz własnej organizacji, bez przekazywania materiału poza nią, samo w sobie nie uruchamia obowiązku udostępnienia źródeł.
 
 ## 3. Zezwolenie na wykorzystanie cyfrowe
 
 Z zastrzeżeniem warunków licencji każdy uprawniony udziela wszystkim ogólnoświatowego, niewyłącznego i nieodpłatnego zezwolenia, na okres obowiązywania odpowiednich praw, na cyfrowe używanie, kopiowanie, prezentowanie, renderowanie, modyfikowanie i Udostępnianie Assetów, również w komercyjnych produktach cyfrowych. Takie dozwolone wykorzystanie cyfrowe nie wymaga osobnej zgody.
+
+Ponowne wygenerowanie Assetu z dostarczonych receptur, parametrów, szablonów lub danych konstrukcyjnych nie usuwa tych warunków w zakresie, w jakim wynik odtwarza chronioną zawartość Assetu. Dotyczy to również eksportów cyfrowych, renderów i konwersji na potrzeby druku. Licencja niezależnie licencjonowanego narzędzia nie zmienia licencji przetwarzanych Źródeł Konkretnego Assetu. Samo uruchomienie narzędzia nie obejmuje tą licencją niepowiązanego wyniku; nie zastrzega się wyłącznych praw do niechronionych algorytmów, idei, faktów ani niezależnej twórczości.
 
 Zezwolenie nie obejmuje zastosowań związanych z drukiem 3D zastrzeżonych w punkcie 6. Pozostaje dostępne przy przestrzeganiu licencji i nie może zostać cofnięte wyłącznie dlatego, że zgodne z nią wykorzystanie odnosi sukces komercyjny.
 

@@ -28,6 +28,8 @@ jobs:
       - run: python tools/test_publication.py
       - run: python tools/test_public_pages.py
       - run: python tools/verify_project.py
+      - run: python tools/verify_licensing.py
+      - run: python tools/test_licensing.py
       - run: node tools/test_gallery_filters.cjs
       - run: node tools/test_catalogue_filters.cjs
       - run: python tools/build_public_pages.py --repository "${{ github.repository }}"

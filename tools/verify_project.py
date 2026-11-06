@@ -55,7 +55,7 @@ def main():
     for page in ['index.html', 'ui.html', 'construction-animations.html']:
         LocalLinks().feed((ROOT / 'gallery' / page).read_text(encoding='utf-8'))
     scripts = (list((ROOT / 'sources').rglob('*.py')) + list((ROOT / 'tools').glob('*.py'))
-               + list((ROOT / 'archive').rglob('*.py')))
+               + list((ROOT / 'archive').rglob('*.py')) + list((ROOT / 'tooling').rglob('*.py')))
     for path in scripts:
         ast.parse(path.read_text(encoding='utf-8-sig'), filename=str(path))
     print('PROJECT_VERIFIED', len(gallery), 'definitions', count, 'study entries', len(scripts), 'Python sources')
