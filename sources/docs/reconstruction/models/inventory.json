@@ -2,7 +2,7 @@
   "schema_version": 1,
   "programme_issue": 946,
   "inventory_issue": 947,
-  "definition_count": 303,
+  "definition_count": 304,
   "counts_by_category_culture": {
     "buildings": {
       "terran": 40,
@@ -20,7 +20,8 @@
       "mikotaj": 5,
       "artemian": 6,
       "mauna": 6,
-      "achaean": 4
+      "achaean": 4,
+      "shared": 1
     },
     "hardpoints": {
       "shared": 16
@@ -39274,6 +39275,39 @@
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
       "flight_frame_count": 14
+    },
+    {
+      "id": "openfa:federal-transporter",
+      "name": "Federal Transporter (IS0C)",
+      "category": "ships",
+      "culture": "shared",
+      "workstream_issue": 215,
+      "legacy_identity": {
+        "kind": "Special scheduled federal visit; not a player SHIPS type",
+        "source": "_S/IS0C.256"
+      },
+      "references": [
+        {
+          "directory": "_S",
+          "entry": "IS0C.256",
+          "kind": "sprite-sheet",
+          "present": true,
+          "frame_count": 1,
+          "palette_status": "embedded",
+          "sha256": "b41dffea9e3bd39583ba2c10939bfb7540750196d574f66d6c894c9a2ae98a23"
+        }
+      ],
+      "available_studies": [
+        {
+          "stage": "detailed-refined",
+          "blend": "objects/shared/federal-transporter/refined/model.blend",
+          "present": true,
+          "sha256": "31f0bca76ba28d40586d40bbe30c0f68944cb2d38cd9f27edd6e1b97227b36b1",
+          "final_visual_acceptance": "Source renders reviewed; client integration pending"
+        }
+      ],
+      "gameplay_identity": "Dedicated new binding required; never alias over openfa:transporter",
+      "technical_evidence": "objects/shared/federal-transporter/refined/runtime-verification.json"
     }
   ]
 }

@@ -26,7 +26,12 @@ def main():
     assert not list((ROOT / 'sources').rglob('*.java')), 'Game decompiler code is external evidence'
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text())
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
-    assert len(gallery) == len(inventory['records']) == 303
+    assert len(gallery) == len(inventory['records']) == inventory['definition_count']
+    actual_counts = {}
+    for record in inventory['records']:
+        cultures = actual_counts.setdefault(record['category'], {})
+        cultures[record['culture']] = cultures.get(record['culture'], 0) + 1
+    assert actual_counts == inventory['counts_by_category_culture']
     assert len({r['id'] for r in gallery}) == len(gallery)
     from gallery_supplemental import supplemental_records
     assert json.loads((ROOT / 'gallery/supplemental-catalogue.json').read_text()) == supplemental_records()
