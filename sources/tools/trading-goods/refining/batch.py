@@ -20,6 +20,7 @@ def main():
     ap.add_argument('--repo', type=Path, required=True)
     ap.add_argument('--items', default=','.join(map(str, range(1, 102))))
     ap.add_argument('--jobs', type=int, default=4)
+    ap.add_argument('--renders', type=Path, help='Alternate local work/output directory')
     ap.add_argument('--verify-only', action='store_true', help='Build and check native/GLB files without rendering')
     ap.add_argument('--width', type=int, default=1024)
     ap.add_argument('--samples', type=int, default=64)
@@ -27,11 +28,13 @@ def main():
     root = a.repo.resolve()
     tools = Path(__file__).resolve().parent
     natives = root/'sources/docs/assets/reconstruction/trading-goods-refined'
-    work = root/'artifacts/trading-goods-refining/production'
+    work = a.renders.resolve() if a.renders else root/'artifacts/trading-goods-refining/production'
     work.mkdir(parents=True, exist_ok=True)
     numbers = list(map(int, a.items.split(',')))
     selections_path = root/'docs/trading-goods/refinement-selections.json'
-    selections = json.loads(selections_path.read_text())['overrides'] if selections_path.exists() else {}
+    selection_data = json.loads(selections_path.read_text()) if selections_path.exists() else {}
+    selections = selection_data.get('overrides', {})
+    renderers = selection_data.get('renderer_overrides', {})
 
     def folder_for(number):
         ident = f'TI{number:03d}'
@@ -71,6 +74,7 @@ def main():
         folder = folder_for(number)
         native, glb = folder/(ident+'.blend'), folder/(ident+'.glb')
         report = folder/'runtime-validation.json'
+        renderer = root/renderers[ident] if ident in renderers else tools/'render.py'
         roles = {m['role'] for m in json.loads((folder/'refinement.json').read_text())['materials']}
         samples = a.samples if roles.intersection({'glass', 'gem'}) else min(32, a.samples)
         with (work/(ident+'.log')).open('w') as log:
@@ -83,7 +87,7 @@ def main():
             journal = png.with_suffix('.json')
             if png.exists() and journal.exists():
                 old = json.loads(journal.read_text())
-                if (old['native_sha256'] == sha(native) and old['renderer_sha256'] == sha(tools/'render.py')
+                if (old['native_sha256'] == sha(native) and old['renderer_sha256'] == sha(renderer)
                         and old['image_sha256'] == sha(png) and old['resolution'] == [a.width, a.width*3//4]
                         and old['samples'] == samples):
                     return ident+' verified; render reused'
@@ -93,12 +97,12 @@ def main():
                 installed = json.loads(receipt.read_text())
                 published = root/installed['image']
                 if (old['native_sha256'] == sha(native) == installed['native_sha256']
-                        and old['renderer_sha256'] == sha(tools/'render.py')
+                        and old['renderer_sha256'] == sha(renderer)
                         and old['image_sha256'] == installed['render_output_sha256']
                         and published.exists() and sha(published) == installed['image_sha256']
                         and old['resolution'] == [a.width, a.width*3//4] and old['samples'] == samples):
                     return ident+' verified; published render reused'
-            subprocess.run(['blender', '-b', '-t', '1', '--python', str(tools/'render.py'), '--',
+            subprocess.run(['blender', '-b', '-t', '1', '--python', str(renderer), '--',
                             '--native', str(native), '--out', str(png), '--width', str(a.width),
                             '--samples', str(samples)], stdout=log, stderr=subprocess.STDOUT, check=True)
         return ident+' verified and rendered'

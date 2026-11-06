@@ -53,3 +53,7 @@ Full-resolution review exposed a dark slit between cheese cavities. The separate
 ## TI067 bowl correction
 
 The red lining accidentally included a rim-height cap, hiding the intended hollow bowl once flat caps were shaded correctly. `TI067/repaired/` removes that cap, orients the enamel towards the interior with actual coating thickness, restores reflective enamel and moves handles outside the bowl wall. This follows the existing documented hollow red-lined construction; the reference is ambiguous about lining versus contents, so no new historical detail is claimed. Earlier checkpoints remain preserved.
+
+## Missile studio exposure
+
+The inherited missile family uses the same softboxes and neutral world with exposure −1.0 instead of −0.2, retaining dark coated-metal colours. `renderer_overrides` selects the frozen `render_missiles.py` preset for TI088–TI100. Both studio scripts are source-bound by per-image hashes; all other goods retain the original renderer. This changes presentation, not model geometry or source materials.
