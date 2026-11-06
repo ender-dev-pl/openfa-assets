@@ -4519,6 +4519,14 @@
           "present": true,
           "sha256": "6e8d81f52f495233586bdd762e987bca22de9477535ae8e57db95b0f7fe174bf",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "high-detail-refinement",
+          "blend": "objects/terran/ship-yard/refined/model.blend",
+          "present": true,
+          "sha256": "33721d7f7df32ae8332b9e81a76795b4dbdcf8ceb1e8225c7d8252a450200ec2",
+          "final_visual_acceptance": "not-established",
+          "visual_review": "objects/terran/ship-yard/refined/visual-review.json"
         }
       ],
       "acceptance": {
@@ -4560,6 +4568,13 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 25
+      },
+      "selected_refinement": {
+        "blend": "objects/terran/ship-yard/refined/model.blend",
+        "glb": "objects/terran/ship-yard/refined/model.glb",
+        "evidence": "objects/terran/ship-yard/refined/runtime-validation.json",
+        "issue": "https://github.com/ender-dev-pl/openfa-assets/issues/225",
+        "game_integration": "pending; replace the selected source on all gameplay/build-menu/information paths"
       }
     },
     {

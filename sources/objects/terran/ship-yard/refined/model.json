@@ -1,0 +1,83 @@
+{
+  "id": "terran:ship-yard",
+  "issue": 225,
+  "stage": "high-detail-refinement",
+  "source": "Independently authored geometry and PBR maps; legacy pixels are reference-only",
+  "footprint": [
+    3,
+    3
+  ],
+  "blend_sha256": "33721d7f7df32ae8332b9e81a76795b4dbdcf8ceb1e8225c7d8252a450200ec2",
+  "glb_sha256": "122107606e22c5dcd759ab3af02b95522ee55f23886f9e2a7fd1b02f68f06600",
+  "generator_sha256": "edf5f41a083abc47f392949d3d75a1b0883673d5218fb40d11b477e7e1a1d689",
+  "surface_generator_sha256": "49be6c62457c9e46235450b39f85de6e84cc0ea7a9c78e1452dc33e6028129cf",
+  "triangles": 53392,
+  "mesh_nodes": 30,
+  "materials": 1,
+  "texture_resolution": [
+    1024,
+    1024
+  ],
+  "texture_maps": [
+    "albedo",
+    "orm",
+    "emission"
+  ],
+  "rigid_animation": true,
+  "skeletal_meshes": false,
+  "frame_range": [
+    1,
+    300
+  ],
+  "fps": 30,
+  "components": {
+    "StaticBase": 1580,
+    "CraneLift": 54,
+    "CraneSlew": 49,
+    "Trolley": 10,
+    "Hoist": 13,
+    "HoistCables": 4,
+    "Shutter_-1_0_-1": 7,
+    "Shutter_-1_0_+0": 7,
+    "Shutter_-1_0_+1": 7,
+    "Shutter_-1_1_-1": 7,
+    "Shutter_-1_1_+0": 7,
+    "Shutter_-1_1_+1": 7,
+    "Shutter_-1_2_-1": 7,
+    "Shutter_-1_2_+0": 7,
+    "Shutter_-1_2_+1": 7,
+    "Shutter_-1_3_-1": 7,
+    "Shutter_-1_3_+0": 7,
+    "Shutter_-1_3_+1": 7,
+    "Shutter_+1_0_-1": 7,
+    "Shutter_+1_0_+0": 7,
+    "Shutter_+1_0_+1": 7,
+    "Shutter_+1_1_-1": 7,
+    "Shutter_+1_1_+0": 7,
+    "Shutter_+1_1_+1": 7,
+    "Shutter_+1_2_-1": 7,
+    "Shutter_+1_2_+0": 7,
+    "Shutter_+1_2_+1": 7,
+    "Shutter_+1_3_-1": 7,
+    "Shutter_+1_3_+0": 7,
+    "Shutter_+1_3_+1": 7
+  },
+  "source_reference": {
+    "building": "PB25.256",
+    "video": "PB25.VID",
+    "video_frames": 264
+  },
+  "limitations": [
+    "Telescopic shutter internals, pivot travel and crane shaft are authored interpretations; exact hidden legacy mechanism is unknown.",
+    "No underground hangar volume or calibrated ship attachment sockets.",
+    "Client runtime integration and gameplay trigger binding require separate validation."
+  ],
+  "replaces_selection": "sources/docs/assets/bootstrap-3d/terran-refined/pb25/model.blend",
+  "preserved_previous_variants": true,
+  "metadata_normalization": {
+    "path_strings": 7,
+    "raw_before_sha256": "4c7f5464892dba2a02cd3752636ce446b245093a4b7d670d83932f36c1dd0986",
+    "raw_after_sha256": "306174cef790bd4d2a27e113b1bd14e960e366b07b1388eed5457a17b0805438",
+    "proof": "All decompressed bytes outside fixed-width absolute path strings unchanged; PNG non-image metadata stripped without re-encoding pixels"
+  }
+}

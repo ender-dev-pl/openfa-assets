@@ -532,6 +532,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb25/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb25/model.glb)
 
+**Additional iteration — high-detail-refinement**
+
+![Ship Yard](../gallery/media/objects/terran/ship-yard/refined/front-quarter.png)
+
+[Blend](../sources/objects/terran/ship-yard/refined/model.blend) · [GLB](../sources/objects/terran/ship-yard/refined/model.glb)
+
+[Play animation: Scene](../gallery/media/objects/terran/ship-yard/refined/animation-00.webm)
+
 ## Landing Pad
 
 `terran:landing-pad`
