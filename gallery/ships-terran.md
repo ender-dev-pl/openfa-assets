@@ -52,6 +52,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/ships/terran/terminator/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/terminator/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Terminator](../gallery/media/objects/terran/terminator/refined/render.png)
+
+[Blend](../sources/objects/terran/terminator/refined/model.blend) · [GLB](../sources/objects/terran/terminator/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/terminator/refined/animation-00.webm)
+
 ## Transporter
 
 `openfa:transporter`
@@ -71,6 +79,14 @@
 ![Fleet Battleship](../gallery/media/docs/assets/reconstruction/ships/terran/fleet-battleship/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/ships/terran/fleet-battleship/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/fleet-battleship/model.glb)
+
+**Additional iteration — shared-refined**
+
+![Fleet Battleship](../gallery/media/objects/terran/fleet-battleship/refined/render.png)
+
+[Blend](../sources/objects/terran/fleet-battleship/refined/model.blend) · [GLB](../sources/objects/terran/fleet-battleship/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/fleet-battleship/refined/animation-00.webm)
 
 ## Space Dock
 
@@ -96,6 +112,20 @@
 
 [Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/terran/space-dock/animation-00.webm)
 
+**Additional iteration — ps7c-detailed-refinement**
+
+![Space Dock](../gallery/media/objects/terran/space-dock/refined/front-quarter.png)
+
+[Blend](../sources/objects/terran/space-dock/refined/model.blend) · [GLB](../sources/objects/terran/space-dock/refined/model.glb)
+
+**Additional iteration — ps7c-detailed-construction**
+
+![Space Dock](../gallery/media/objects/terran/space-dock/construction/front-quarter.png)
+
+[Blend](../sources/objects/terran/space-dock/construction/model.blend) · [GLB](../sources/objects/terran/space-dock/construction/model.glb)
+
+[Play animation: ConstructionActivity](../gallery/media/objects/terran/space-dock/construction/animation-00.webm)
+
 ## Command Cruiser
 
 `openfa:command-cruiser`
@@ -105,6 +135,14 @@
 ![Command Cruiser](../gallery/media/docs/assets/reconstruction/ships/terran/command-cruiser/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/ships/terran/command-cruiser/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/command-cruiser/model.glb)
+
+**Additional iteration — shared-refined**
+
+![Command Cruiser](../gallery/media/objects/terran/command-cruiser/refined/render.png)
+
+[Blend](../sources/objects/terran/command-cruiser/refined/model.blend) · [GLB](../sources/objects/terran/command-cruiser/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/command-cruiser/refined/animation-00.webm)
 
 ## Spy Satellite
 

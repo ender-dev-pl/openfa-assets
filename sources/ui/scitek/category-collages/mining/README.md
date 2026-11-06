@@ -1,0 +1,7 @@
+# Sci-Tek mining category (SCITEKC frame3)
+
+Actual legacy composition: Ore Teleporter at left, Seismic Penetrator upper right, small Mk2 Mine lower right. Logical80x64 boxes and frame1 poses are recorded in layout.json. Uses canonical shared refined Seismic Penetrator and current authored Teleporter/Mine sources. Input model hashes and geometry/UV signatures are preserved under uniform placement. Rebuild after source canonical migration or refinement; this derivative collage does not determine gameplay ownership.
+
+Runtime UI uses category-native.png (80x64) or category-4x.png (320x256), exact grayscale with alpha. Editable collage Blend/GLB is authoring/interactive-gallery only, not another physical gameplay copy. Native/reload, full and isolated independent GLB imports, world matrices, subject visibility/placement and raster checks passed. Roughly80% correspondence is targeted; camera, neutral materials and lighting are authored. Client/GPU acceptance remains pending. Build/verification commands in ../README.md. Legacy pixels remain private.
+
+Ore Teleporter now uses canonical sources/objects/terran/ore-teleporter/refined/model.blend with the repaired partial-torus ends; Seismic is also canonical. Collage GLB remains authoring/gallery only.

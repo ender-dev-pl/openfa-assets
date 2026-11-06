@@ -1,0 +1,64 @@
+{
+  "item_id": 18,
+  "legacy_stem": "TI019",
+  "baseline_native": "sources/docs/assets/reconstruction/trading-goods/TI019/TI019.blend",
+  "baseline_native_sha256": "6cb6ce6b9447a8bd55f601d9682e3caddaa2e00e0eb669e02753e1a520a7da7b",
+  "builder_sha256": "755ceafa665ccc11ce979964f40102a4ab54367ab8827d889e95596529e36416",
+  "refined_native_sha256": "23c40045738d1f6940c2b6c80d34d6a90c217338e164bf8963b6e6a877f776d7",
+  "glb_sha256": "eab1d7edb8518ce3a79b9b1960c8ffb283a9b064148093178b5fb73e44a2fb73",
+  "materials": [
+    {
+      "name": "TI019 / copper contrasting brooch petals",
+      "role": "metal",
+      "base_colour": [
+        0.4300000071525574,
+        0.17000000178813934,
+        0.07400000095367432,
+        1.0
+      ]
+    },
+    {
+      "name": "TI019 / red gold brooch petals",
+      "role": "metal",
+      "base_colour": [
+        0.550000011920929,
+        0.2199999988079071,
+        0.11999999731779099,
+        1.0
+      ]
+    },
+    {
+      "name": "TI019 / ruby / smooth cabochon",
+      "role": "gem",
+      "base_colour": [
+        0.5600000023841858,
+        0.00800000037997961,
+        0.023000000044703484,
+        1.0
+      ]
+    }
+  ],
+  "glb_materials": "Unbaked scalar/base-colour fallback; procedural native material appearance is not claimed for GLB",
+  "model_geometry": "Original parts retained with small manufactured edge radii; deterministic normal displacement on organic, horn, stone and fabric meshes; cask label placement corrected; cheese proxy holes replaced by actual cavities where applicable",
+  "revision_builder": "sources/tools/trading-goods/refining/tint_gems.py",
+  "revision_builder_sha256": "4d40773a1153b9bec2437be454f798abf21290841ac4f0a9e6175d5a0ba4fa55",
+  "prior_refined_native": "sources/docs/assets/reconstruction/trading-goods-refined/TI019/optical/TI019.blend",
+  "prior_refined_native_sha256": "7d3d8c4d4778572f8bbf28e5b780bae5fe93b256aa28a4b346fbb679f1ec6875",
+  "optical_revision": [
+    {
+      "material": "TI019 / ruby cabochon",
+      "prior_density": 0.18000000715255737,
+      "density": 3
+    }
+  ],
+  "geometry_builder": "sources/tools/trading-goods/refining/reconcile_lore.py",
+  "geometry_builder_sha256": "b8ab0776ab488a0cdf37dbf12405c899074479d9bd13c39b18d42b32c0e4aafd",
+  "lore_reconciliation": {
+    "cabochon_smooth": true,
+    "setting_materials": [
+      "red gold",
+      "copper"
+    ],
+    "carat_weight": "lore identity; display-normalised scale"
+  }
+}

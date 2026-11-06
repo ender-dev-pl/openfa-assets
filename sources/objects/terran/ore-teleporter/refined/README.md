@@ -1,0 +1,9 @@
+# Shared Ore Teleporter
+
+Authoritative terran:ore-teleporter for building gameplay, construction catalogue and research17. Promotes the66-part research refinement with rounded chamber, tilted transceiver, three scanner forms, open service framework and side supercomputer.65 research geometry/UV/material/bind/parent signatures remain exact. The inherited Tower seam.002 partial torus was repaired by welding two coincident vertices and capping its two open eight-edge ends. All384 original faces, winding, UVs, materials and bind remain intact; two octagonal caps were added. No wear retrofit. Colour GLB bytes change because this is a physical topology repair.
+
+12 unchanged original PB11 hardware meshes retain geometry/UV/material slots. Foundation/ramp transforms retain the prior research adaptation. The13th reused part is the repaired torus. Exact chamber/scanner layout and hidden construction remain authored approximations from actual PB11/ST17 at the accepted approximate80% target.
+
+OreResearchRoot is unit identity atframe1. Disable research whole-device turntable playback in gameplay; client/GPU placement and scale remain pending. Runtime packages one shared coloured model.glb plus information GLB/timeline. Historical research solids, baked technical variants and collage assemblies are authoring/gallery only.
+
+All50,248 selected diagram segments are actual evaluated physical edges. All66 geometries are closed-positive after validation-only1e-6 seam welding/1e-8 degenerate cleanup where needed: raw dish pole duplicates, evaluated foundation/tower seams. This is distinct from the real partial-torus end repair. Retained UV/face proof, topology details and all61 independent pose checks are in shared-geometry-verification.json. Mining category is rebuilt from this same canonical source.
