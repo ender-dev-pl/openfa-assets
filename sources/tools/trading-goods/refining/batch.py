@@ -57,14 +57,14 @@ def main():
                         or not (natives/f'TI{n:03d}'/'refinement.json').is_file()]
         if base_missing:
             with (work/'build.log').open('w') as log:
-                subprocess.run(['blender', '-b', '-t', '1', '--python', str(tools/'refine.py'), '--',
+                subprocess.run(['blender', '-b', '--python-exit-code', '1', '-t', '1', '--python', str(tools/'refine.py'), '--',
                                 '--repo', str(root), '--items', ','.join(map(str, base_missing)), '--out', str(natives)],
                                stdout=log, stderr=subprocess.STDOUT, check=True)
         for number in missing:
             ident = f'TI{number:03d}'
             if ident in selections:
                 with (work/(ident+'-geometry-build.log')).open('w') as log:
-                    subprocess.run(['blender', '-b', '-t', '1', '--python', str(root/selections[ident]['builder']), '--',
+                    subprocess.run(['blender', '-b', '--python-exit-code', '1', '-t', '1', '--python', str(root/selections[ident]['builder']), '--',
                                     '--repo', str(root), '--out', str(folder_for(number))],
                                    stdout=log, stderr=subprocess.STDOUT, check=True)
         print('REFINEMENT_BUILD_COMPLETE', len(missing), flush=True)
@@ -78,7 +78,7 @@ def main():
         roles = {m['role'] for m in json.loads((folder/'refinement.json').read_text())['materials']}
         samples = a.samples if roles.intersection({'glass', 'gem'}) else min(32, a.samples)
         with (work/(ident+'.log')).open('w') as log:
-            subprocess.run(['blender', '-b', '-t', '1', '--python', str(tools/'verify.py'), '--',
+            subprocess.run(['blender', '-b', '--python-exit-code', '1', '-t', '1', '--python', str(tools/'verify.py'), '--',
                             '--native', str(native), '--glb', str(glb), '--report', str(report)],
                            stdout=log, stderr=subprocess.STDOUT, check=True)
             if a.verify_only:
@@ -102,7 +102,7 @@ def main():
                         and published.exists() and sha(published) == installed['image_sha256']
                         and old['resolution'] == [a.width, a.width*3//4] and old['samples'] == samples):
                     return ident+' verified; published render reused'
-            subprocess.run(['blender', '-b', '-t', '1', '--python', str(renderer), '--',
+            subprocess.run(['blender', '-b', '--python-exit-code', '1', '-t', '1', '--python', str(renderer), '--',
                             '--native', str(native), '--out', str(png), '--width', str(a.width),
                             '--samples', str(samples)], stdout=log, stderr=subprocess.STDOUT, check=True)
         return ident+' verified and rendered'

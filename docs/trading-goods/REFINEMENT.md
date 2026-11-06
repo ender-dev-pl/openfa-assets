@@ -57,3 +57,9 @@ The red lining accidentally included a rim-height cap, hiding the intended hollo
 ## Missile studio exposure
 
 The inherited missile family uses the same softboxes and neutral world with exposure −1.0 instead of −0.2, retaining dark coated-metal colours. `renderer_overrides` selects the frozen `render_missiles.py` preset for TI088–TI100. Both studio scripts are source-bound by per-image hashes; all other goods retain the original renderer. This changes presentation, not model geometry or source materials.
+
+## TI064 geometry refinement and cup clearance check
+
+The user rejected TI064’s primitive blade geometry. `TI064/remodelled/` replaces the flat outline with thick stepped crescent blades, convex cutting arcs, tapered burnished bevels, a forged head socket with peened pins and a smoothly turned hardwood haft with longitudinal grain. The silhouette follows the local reference; restrained lunar inlays interpret the Cyreni description and are not recovered glyphs. Earlier versions remain preserved.
+
+The current TI067 handles are independently checked by `verify_cup_clearance.py`: evaluated vertices stay outside the radial cavity profile and BVH triangles do not intersect the inner enamel lining. Source-bound results are in its `clearance-validation.json`. The batch runner also uses Blender’s Python error exit code so script failures cannot be mistaken for successful subprocesses.
