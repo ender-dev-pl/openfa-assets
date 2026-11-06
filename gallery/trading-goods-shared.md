@@ -1150,7 +1150,7 @@ Full procedural materials are in Blend; GLB textures are not baked.
 
 ![Sacrificial Axe](../gallery/media/docs/assets/reconstruction/trading-goods-refined/TI064/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI064/remodelled/TI064.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI064/remodelled/TI064.glb)
+[Blend](../sources/docs/assets/reconstruction/trading-goods-refined/TI064/ceremonial/TI064.blend) · [GLB](../sources/docs/assets/reconstruction/trading-goods-refined/TI064/ceremonial/TI064.glb)
 
 Full procedural materials are in Blend; GLB textures are not baked.
 

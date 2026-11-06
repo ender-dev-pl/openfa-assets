@@ -63,3 +63,7 @@ The inherited missile family uses the same softboxes and neutral world with expo
 The user rejected TI064’s primitive blade geometry. `TI064/remodelled/` replaces the flat outline with thick stepped crescent blades, convex cutting arcs, tapered burnished bevels, a forged head socket with peened pins and a smoothly turned hardwood haft with longitudinal grain. The silhouette follows the local reference; restrained lunar inlays interpret the Cyreni description and are not recovered glyphs. Earlier versions remain preserved.
 
 The current TI067 handles are independently checked by `verify_cup_clearance.py`: evaluated vertices stay outside the radial cavity profile and BVH triangles do not intersect the inner enamel lining. Source-bound results are in its `clearance-validation.json`. The batch runner also uses Blender’s Python error exit code so script failures cannot be mistaken for successful subprocesses.
+
+## TI064 Artemian craft revision
+
+`TI064/ceremonial/` adds actual Boolean-incised lunar/border channels, a restrained aged-bronze response, shallow forged-face geometry and eight tapered carved hardwood flutes. Both raw blade meshes are checked manifold before the surface modifiers. Lunar decoration interprets the Cyreni description; it is not a recovered inscription. The earlier primitive and first remodel remain preserved.

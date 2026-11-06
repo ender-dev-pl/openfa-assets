@@ -121,7 +121,8 @@
       "TI067 repaired cup reviewed at full resolution: unintended rim cap removed, hollow reflective enamel interior visible and handles outside the bowl.",
       "TI088\u2013TI100 reviewed with final lower-exposure studio preset; coated, metal, ceramic/carbon components and inherited part details remain distinguishable.",
       "Medical/fictional packaging, bulk goods/ores, artefacts, jewellery and TI101 paper/leather assembly reviewed without foreground clipping. First-pass assemblies are retained except documented targeted revisions.",
-      "TI064 remodelled final 1024\u00d7768 render inspected: solid crescent blades, cutting bevels, head socket/pins, turned wooden haft and restrained lunar inlays replace the primitive first pass."
+      "TI064 remodelled final 1024\u00d7768 render inspected: solid crescent blades, cutting bevels, head socket/pins, turned wooden haft and restrained lunar inlays replace the primitive first pass.",
+      "TI064 ceremonial craft revision inspected at full resolution: recessed lunar/border channels, restrained patina, shallow forged-face relief and carved wooden grip. Lunar ornament is an authored interpretation of the Cyreni lore."
     ],
     "limitations": [
       "First-pass model topology and inferred details remain; this is a material/surface refinement rather than a complete remodelling pass."
@@ -380,8 +381,8 @@
         "image_sha256": "6f83c3c2f2f9f159de290fc9feb93e140c4982ecca51ffda5015ba6203cf70ca"
       },
       "TI064": {
-        "native_sha256": "98401367fdb0a36f10cb1aece3381414696729602705872a882231b6d7e5103a",
-        "image_sha256": "f0a44b15931f7cf6f738893e1a9463e379b49d15ac4b31e2a9ab802c41126289"
+        "native_sha256": "81d6e94afe69b888fad5f6469222fc9ef50530882c3216d16c8b1bad8ce40691",
+        "image_sha256": "33b4ab68d91bfc9d00cf3af1a7dc527c6684f67d9bcc66a169296ef15a19b2d7"
       },
       "TI065": {
         "native_sha256": "3d837b3b5e45741a9f473abc8d083e007161472aa35c83fa45a8a0cc81d714a4",
@@ -3265,11 +3266,11 @@
     {
       "legacy_stem": "TI064",
       "item_id": 63,
-      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI064/remodelled/TI064.blend",
-      "glb": "sources/docs/assets/reconstruction/trading-goods-refined/TI064/remodelled/TI064.glb",
+      "native": "sources/docs/assets/reconstruction/trading-goods-refined/TI064/ceremonial/TI064.blend",
+      "glb": "sources/docs/assets/reconstruction/trading-goods-refined/TI064/ceremonial/TI064.glb",
       "image": "gallery/media/docs/assets/reconstruction/trading-goods-refined/TI064/front-quarter.png",
-      "native_sha256": "98401367fdb0a36f10cb1aece3381414696729602705872a882231b6d7e5103a",
-      "image_sha256": "c5617d6eda968e74dea2c9bea1371a180644f1535a3e65028c9356a976972941",
+      "native_sha256": "81d6e94afe69b888fad5f6469222fc9ef50530882c3216d16c8b1bad8ce40691",
+      "image_sha256": "a62ee7fcd18876699de36f20c18e4b7c8d1bae94669edbf34ecb2809d5b607fa",
       "renderer_sha256": "085d662c9328965ca7ab4eb01caffbdf4c1ee36a8311038532fbcdcef63d1db3",
       "resolution": [
         1024,
@@ -3282,31 +3283,32 @@
       "studio": "Three rectangular softboxes, neutral world and transient shadow catcher",
       "model_bounds": [
         [
-          -1.3611111640930176,
+          -1.3611112833023071,
           -0.16500000655651093,
           0.0003398691478651017
         ],
         [
-          1.3611111640930176,
+          1.3611112833023071,
           0.16500000655651093,
-          2.9800000190734863
+          2.9800002574920654
         ]
       ],
       "source_unchanged": true,
-      "glb_sha256": "c52276fd0777a6245e127aa0686041d30dc45f7c5aefb665bd3e08e07ee91c68",
+      "glb_sha256": "61394eab99d96da251d04896855a644404abf807982c2b30b39242da119b8c0e",
       "baseline_native_sha256": "931b0a9e1029971afadf9e6b0e9ed7541d61023876bb4e066f9dd45dea8cee5c",
       "builder_sha256": "755ceafa665ccc11ce979964f40102a4ab54367ab8827d889e95596529e36416",
       "png_metadata_removed": true,
-      "render_output_sha256": "f0a44b15931f7cf6f738893e1a9463e379b49d15ac4b31e2a9ab802c41126289",
+      "render_output_sha256": "33b4ab68d91bfc9d00cf3af1a7dc527c6684f67d9bcc66a169296ef15a19b2d7",
       "renderer": "sources/tools/trading-goods/refining/render.py",
       "material_roles": {
         "metal": 4,
-        "wood": 1
+        "wood": 1,
+        "paint": 1
       },
-      "geometry_builder": "sources/tools/trading-goods/refining/remodel_axe.py",
-      "geometry_builder_sha256": "c377c3ebd32100367deb81a6ac09f67c3858eb6a0b99fbfc0606737c8c4d54c0",
-      "prior_refined_native": "sources/docs/assets/reconstruction/trading-goods-refined/TI064/TI064.blend",
-      "prior_refined_native_sha256": "95e19f0c99d770fdac8ef82493005b58eeddf93a6974c0e6ff719d7f864131f9"
+      "geometry_builder": "sources/tools/trading-goods/refining/refine_axe_craft.py",
+      "geometry_builder_sha256": "d586298aac6aed14904b7daa28964de0762cc3a49e2b6e72a9630a62068ffb9d",
+      "prior_refined_native": "sources/docs/assets/reconstruction/trading-goods-refined/TI064/remodelled/TI064.blend",
+      "prior_refined_native_sha256": "98401367fdb0a36f10cb1aece3381414696729602705872a882231b6d7e5103a"
     },
     {
       "legacy_stem": "TI065",

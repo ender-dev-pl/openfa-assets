@@ -35,3 +35,7 @@ See [REFINEMENT.md](REFINEMENT.md) for physical material roles, geometry refinem
 ## Verified material-refinement delivery
 
 All 101 selected variants have independent native/GLB runtime checks, visually reviewed source-bound RGBA PNGs and before/after gallery entries. TI041 and TI064 have rebuilt garment/axe geometry, TI048 has repaired Boolean seams, and TI067 has a corrected open bowl. [refinement-validation.json](refinement-validation.json) records exact source, renderer, image and visual-review hashes. [REFINEMENT.md](REFINEMENT.md) documents reproduction and the unbaked GLB fallback. Full procedural materials are in the Blender natives; original game media is not required to open/render these authored files.
+
+## Lore review
+
+[LORE-AUDIT.md](LORE-AUDIT.md) reviews all 101 descriptions against current models, with source-bound evidence in [lore-audit.json](lore-audit.json). Technical render completion is separate from lore fidelity. Explicit material/cut/count conflicts are tracked individually; ambiguous icon/text cases are preserved rather than silently reinterpreted.

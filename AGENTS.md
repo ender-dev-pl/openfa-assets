@@ -19,3 +19,5 @@
 - Related native models and construction families may be reused, preserving each completed source and recording lineage. Artistic refining and game integration require their own scope; retain original reference and cultural/description evidence locally.
 
 - The material-refinement/gallery pass is complete: all 101 items have selected refined natives and reviewed 1024×768 PNGs alongside the first pass. Read each coverage item’s `refined_variant`, `refinement-selections.json` and `refinement-validation.json` before continuing. TI041/TI064 are remodelled; TI048/TI067 have geometry repairs. Preserve all completed variants and first-pass PNGs. Full shaders are in Blend; GLB textures remain unbaked. Legacy UI targets remain separate.
+
+- Read docs/trading-goods/LORE-AUDIT.md and lore-audit.json before further refinement. All 101 descriptions were reviewed. Do not equate technical PNG/GLB validation with semantic accuracy; explicit conflicts in TI016/TI018/TI019/TI020/TI021/TI045/TI053 are the current correction priority. Keep ambiguous icon/text cases (TI007/TI063) explicit. Current TI064 uses the separate ceremonial craft revision.
