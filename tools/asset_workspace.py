@@ -22,7 +22,7 @@ def layout():
 
 def manifest():
     """Historical evidence only; never used to gate ordinary authoring changes."""
-    return json.loads((ROOT / 'migration/files.json').read_text(encoding='utf-8'))
+    return json.loads((ROOT / 'project/import-baseline.json').read_text(encoding='utf-8'))
 
 
 def relative_path(value):
@@ -115,7 +115,7 @@ def workspace_path(value=None):
     result = Path(value).resolve() if value else ROOT / '.workspace'
     if not result.resolve().is_relative_to(ROOT.resolve()) or result.resolve().is_relative_to((ROOT / 'sources').resolve()):
         raise ValueError('Workspace must be inside this project and outside sources')
-    if result.resolve() == ROOT.resolve() or any(result.resolve().is_relative_to((ROOT / p).resolve()) for p in ['gallery', 'archive', 'migration', 'project', 'tools', 'docs']):
+    if result.resolve() == ROOT.resolve() or any(result.resolve().is_relative_to((ROOT / p).resolve()) for p in ['gallery', 'archive', 'project', 'tools', 'docs']):
         raise ValueError('Workspace must be .workspace or a dedicated directory under artifacts')
     if result != ROOT / '.workspace' and not result.is_relative_to((ROOT / 'artifacts').resolve()):
         raise ValueError('Custom workspaces must live under artifacts')

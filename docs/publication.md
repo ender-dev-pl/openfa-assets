@@ -24,7 +24,7 @@ Current inventory and report hashes are rebound only after these invariants are
 verified. Existing visual checks remain historical checks of identical model/image
 payloads; they do not claim a new artistic review. The separate native-reopen and
 independent-GLB-import run is recorded in `project/publication-runtime.json`.
-Frozen `migration/` hashes remain original import provenance. Consequently the
+Frozen `project/import-baseline.json` hashes remain original import provenance. Consequently the
 optional `audit-import` comparison is expected to report metadata transformations;
 it must not be treated as a current publication failure.
 

@@ -16,7 +16,7 @@
 | `gallery/catalogue.json` | Current registered study/source/export/preview links |
 | `project/layout.json` | Current canonical destinations, input roles and logical workspace paths; no frozen content hashes |
 | `archive/repairs/` | Five immutable one-time repair/proposal scripts, retained as evidence |
-| `migration/` | Frozen import hashes, one-time import recipe and original/new issue crosswalk |
+| `project/import-baseline.json` | Original input hashes and external evidence bindings used by optional authoring tools |
 | `tools/` | Current preparation, validation and gallery entry points |
 | `.workspace/` | Ignored disposable execution layout, synchronized without overwriting edited files |
 

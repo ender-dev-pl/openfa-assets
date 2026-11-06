@@ -38,8 +38,7 @@ class WorkspaceTests(unittest.TestCase):
             baseline.append(dict(row, bytes=path.stat().st_size, sha256=work.sha(path)))
         baseline.append(dict(original='content/unused.json', destination='sources/content/unused.json',
                              role='fixture', ownership='fixture', bytes=2, sha256=hashlib.sha256(b'{}').hexdigest()))
-        (self.root / 'migration').mkdir()
-        (self.root / 'migration/files.json').write_text(json.dumps(dict(files=baseline,
+        (self.root / 'project/import-baseline.json').write_text(json.dumps(dict(files=baseline,
             external_inputs=[dict(original='src/unavailable.cs', sha256='missing')])) )
 
     def write_layout(self):
@@ -68,13 +67,13 @@ class WorkspaceTests(unittest.TestCase):
 
     def test_source_edits_sync_without_rewriting_import_manifest(self):
         workspace = work.prepare()
-        baseline = (self.root / 'migration/files.json').read_bytes()
+        baseline = (self.root / 'project/import-baseline.json').read_bytes()
         source = self.root / 'sources/tools/hello.py'
         source.write_text('print("updated source")\n')
         work.verify()
         work.prepare()
         self.assertEqual((workspace / 'tools/hello.py').read_bytes(), source.read_bytes())
-        self.assertEqual((self.root / 'migration/files.json').read_bytes(), baseline)
+        self.assertEqual((self.root / 'project/import-baseline.json').read_bytes(), baseline)
         with self.assertRaisesRegex(ValueError, 'differs from original import'):
             work.audit_import()
 

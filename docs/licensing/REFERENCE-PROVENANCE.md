@@ -1,6 +1,6 @@
 # OpenFA resources and recovered legacy data
 
-The project maintainer confirmed on 2026-11-06 that the three quick-menu PNGs in `sources/ui/quick-menu/` are their own work from OpenFA Classic, and that `sources/tools/extract_fragile_le.py`, `sources/tools/fragile256.py` and `sources/tools/fragile_vid.py` are their own scripts. The PNGs use the OpenFA Asset License; these three general decoder/extractor scripts use MIT. Their original bytes and the historical import records in `migration/files.json` are preserved.
+The project maintainer confirmed on 2026-11-06 that the three quick-menu PNGs in `sources/ui/quick-menu/` are their own work from OpenFA Classic, and that `sources/tools/extract_fragile_le.py`, `sources/tools/fragile256.py` and `sources/tools/fragile_vid.py` are their own scripts. The PNGs use the OpenFA Asset License; these three general decoder/extractor scripts use MIT. Their original bytes and the historical import records in `project/import-baseline.json` are preserved.
 
 The following JSON files contain OpenFA compatibility structures, descriptions, bindings and recovered legacy parameters:
 
