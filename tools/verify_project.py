@@ -51,6 +51,11 @@ def main():
             assert (ROOT / study['image']).is_file() and study['image'].startswith('gallery/media/')
             assert study['glb'] and (ROOT / study['glb']).is_file(), row['id']
             assert study['animations']==animation_previews(study['blend'],study['glb'],(ROOT/study['image']).parent)
+            assert study.get('views',[])==original.get('views',[])
+            for view in study.get('views',[]):
+                assert view['label'] and view['image'].startswith('gallery/media/')
+                path=(ROOT/view['image']).resolve()
+                assert path.is_relative_to((ROOT/'gallery/media').resolve()) and path.is_file(),view
             count += 1
     for page in ['index.html', 'ui.html', 'construction-animations.html']:
         LocalLinks().feed((ROOT / 'gallery' / page).read_text(encoding='utf-8'))

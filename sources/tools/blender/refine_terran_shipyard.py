@@ -120,7 +120,7 @@ def make_static():
         a0=TAU*k/48+.005;a1=TAU*(k+1)/48-.005
         ring_sector(g,4.22,4.48,.28,1.40,a0,a1,0 if k%4 else 9,2)
         ring_sector(g,4.18,4.51,1.39,1.49,a0,a1,0,2)
-        ring_sector(g,4.18,4.28,1.49,1.635,a0,a1,1,2)
+        ring_sector(g,4.18,4.28,1.49,1.825,a0,a1,1,2)
         a=(a0+a1)/2
         # Inward ribs, inspection plates and capped upper vents.
         box(g,(4.19*math.cos(a),4.19*math.sin(a),.85),(.08,.09,1.08),1,a)
@@ -149,7 +149,8 @@ def make_static():
         pipe(g,[(x,y,.42+h),(x-.25,y,.42+h),(x-.5,y,.25+h),(x-.5,y,.44)],.052)
         for k in range(8):
             a=TAU*k/8;rod(g,(x+r*.88*math.cos(a),y+r*.88*math.sin(a),.46),(x+r*.88*math.cos(a),y+r*.88*math.sin(a),.50),.025,8,6)
-    # Docking/service deck, under-frame, stair access and load marking.
+    # Docking/service deck: separate rigid batch for explicit contact verification.
+    g='FabricationDeck'
     for x in [-.78,.78]:
         for y in [-1.4,.7]:box(g,(x,y,.52),(.14,.14,.48),1)
     box(g,(0,-.35,.75),(1.95,2.65,.15),1)
@@ -157,11 +158,16 @@ def make_static():
         for j in range(6):box(g,(-.77+i*.385,-1.43+j*.43,.836),(.37,.415,.018),12,chamfer=.004)
     for x in [-.94,.94]:
         box(g,(x,-.35,.85),(.045,2.54,.015),3)
-        rail(g,(x,-1.59,.85),(x,.88,.85))
+        rail(g,(x,-1.59,.85),(x,-.40,.85))
+        rail(g,(x,.40,.85),(x,.88,.85))
     for y in [-1.62,.92]:
         box(g,(0,y,.85),(1.85,.035,.015),3)
     stairs(g,(1.48,-1.85,.31),(.95,-.85,.84),.48,6)
-    stairs(g,(-1.45,.65,.31),(-.95,-.25,.84),.48,6)
+    stairs(g,(-1.48,-1.85,.31),(-.95,-.85,.84),.48,6)
+    # Four landing shoes support the lowered beam on the fabrication platform.
+    for x in [-.45,.55]:
+        for y in [-.20,.20]:box(g,(x,y,.875),(.20,.22,.060),10)
+    g='StaticBase'
     # Secondary workbench and catwalk at the rear.
     box(g,(-.8,1.50,.65),(1.8,.48,.10),8)
     for x in [-1.55,-.05]:box(g,(x,1.5,.46),(.10,.4,.38),1)
@@ -230,7 +236,7 @@ def make_static():
 
 def make_crane():
     g='CraneLift'
-    # The nested lattice mast stows into a below-deck shaft; the deck occludes it.
+    # Telescopic mast lowers only until the boom lands on the deck's four shoes.
     for x in [-.23,.23]:
         for y in [-.23,.23]:box(g,(x,y,1.3),(.10,.10,2.6),1)
     for z in [.22,.77,1.32,1.87,2.42]:
@@ -253,9 +259,9 @@ def make_crane():
     box(g,(-.05,-.2,.70),(1.02,.96,.10),8)
     box(g,(-.05,-.67,.18),(.68,.025,.12),9)
     for x in [-.33,.26]:box(g,(x,-.69,.13),(.06,.03,.035),6)
-    rod(g,(.14,.04,.76),(.14,.04,1.55),.016,8)
-    rod(g,(.14,.04,1.30),(.28,.04,1.30),.01,8)
-    lathe(g,(-.32,.05,.76),[(0,.07),(.12,.07),(.15,.035)],14,12)
+    rod('Antenna',(0,0,0),(0,0,.79),.016,8)
+    rod('Antenna',(0,0,.54),(.14,0,.54),.01,8)
+    lathe('Antenna',(-.46,.01,0),[(0,.07),(.12,.07),(.15,.035)],14,12)
     # Twin I-section rails, cross braces, cap plates and end stops.
     for y in [-.20,.20]:
         box(g,(2.10,y,.17),(4.78,.055,.24),1)
@@ -356,21 +362,25 @@ def key(o,frame,location=None,rotation=None,scale=None):
 
 def animate():
     # Open working -> crane stowed -> covers closed -> reopen -> working.
-    phases=[(1,0),(40,0),(75,0),(100,0),(145,1),(185,1),(230,0),(260,0),(300,0)]
+    phases=[(1,0),(40,0),(90,0),(125,0),(160,1),(195,1),(225,0),(260,0),(300,0)]
     for name,o in PARENTS.items():
         if not name.startswith('Shutter_'):continue
         j=o['band'];side=o['side'];piece=o['piece']
         for frame,closed in phases:
             y=o['deployed_y'] if closed else side*(3.19+j*.012)
             x=o['deployed_x'] if closed else piece*.12
-            z=1.63+piece*.027 if closed else 1.55+(3-j)*.08+piece*.025
+            z=1.82+piece*.027 if closed else 1.55+(3-j)*.08+piece*.025
             key(o,frame,(x,y,z))
     lift=PARENTS['CraneLift'];slew=PARENTS['CraneSlew'];trolley=PARENTS['Trolley'];hoist=PARENTS['Hoist'];cables=PARENTS['HoistCables']
-    for frame,z in [(1,.43),(75,.43),(100,-3.05),(230,-3.05),(260,.43),(300,.43)]:key(lift,frame,(-2.12,0,z))
-    for frame,a in [(1,0),(35,.42),(60,.42),(90,0),(235,0),(260,-.15),(300,0)]:key(slew,frame,rotation=(0,0,a))
-    for frame,x in [(1,2.1),(35,3.5),(65,3.5),(90,1.2),(235,1.2),(265,2.1),(300,2.1)]:key(trolley,frame,(x,0,.38))
-    for frame,length in [(1,.80),(25,1.40),(55,1.40),(90,.20),(235,.20),(275,.80),(300,.80)]:
+    # Beam bottom is local +.0125 above Slew; shoes top is .905.
+    rest_lift=.905-2.75-.0125
+    for frame,z in [(1,.43),(90,.43),(115,rest_lift),(225,rest_lift),(255,.43),(300,.43)]:key(lift,frame,(-2.12,0,z))
+    for frame,a in [(1,0),(35,.42),(60,.42),(90,0),(255,0),(275,-.15),(300,0)]:key(slew,frame,rotation=(0,0,a))
+    for frame,x in [(1,2.1),(35,3.5),(65,3.5),(85,1.2),(255,1.2),(280,2.1),(300,2.1)]:key(trolley,frame,(x,0,.38))
+    for frame,length in [(1,.80),(25,1.40),(55,1.40),(78,.03),(265,.03),(285,.80),(300,.80)]:
         key(hoist,frame,(0,0,-length));key(cables,frame,scale=(1,1,length))
+    for frame,a in [(1,0),(78,0),(88,math.pi),(255,math.pi),(265,0),(300,0)]:key(hoist,frame,rotation=(0,a,0))
+    for frame,a in [(1,0),(75,0),(90,math.pi/2),(255,math.pi/2),(270,0),(300,0)]:key(PARENTS['Antenna'],frame,rotation=(a,0,0))
     for o in PARENTS.values():
         if o.animation_data and o.animation_data.action:
             o.animation_data.action.name='Ship Yard | working, stow, close, reopen'
@@ -400,7 +410,7 @@ def main():
     OUT.mkdir(parents=True,exist_ok=True);MEDIA.mkdir(parents=True,exist_ok=True)
     bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False);bpy.context.preferences.filepaths.save_version=0
     root=empty('PlacementRoot');root.scale=(SCALE,)*3;root['catalogue_id']='terran:ship-yard';root['footprint']='3x3';root['forward_axis']='local -Y'
-    empty('StaticBase',root);lift=empty('CraneLift',root);slew=empty('CraneSlew',lift,(0,0,2.75));trolley=empty('Trolley',slew);empty('Hoist',trolley);empty('HoistCables',trolley)
+    empty('StaticBase',root);empty('FabricationDeck',root);lift=empty('CraneLift',root);slew=empty('CraneSlew',lift,(0,0,2.75));trolley=empty('Trolley',slew);empty('Hoist',trolley);empty('HoistCables',trolley);empty('Antenna',slew,(.14,.04,.76))
     make_static();make_crane();make_shutters();mat,images=materials();finalize_geometry(mat);animate();scene=setup_scene(args.draft);scene.frame_set(1)
     collection=bpy.context.collection;collection.asset_mark();collection.asset_data.description='Terran PB25 high-detail industrial yard; shared game atlas, rigid stow/cover assemblies'
     mesh_objects=[o for o in scene.objects if o.type=='MESH'];tris=sum(sum(len(p.vertices)-2 for p in o.data.polygons) for o in mesh_objects)
@@ -413,7 +423,7 @@ def main():
     camera(scene,(3.5,-5.5,4.6));scene.frame_set(1);scene.render.filepath='//front-quarter.png'
     bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'model.blend'),compress=True)
     if not args.no_render:
-        for view,p,frame in [('front-quarter',(3.5,-5.5,4.6),1),('rear-quarter',(-3.5,5.5,4.6),1),('top',(0,-.001,7),1),('closed',(3.5,-5.5,4.6),165),('mechanism',(3.5,-5.5,4.6),120)]:
+        for view,p,frame in [('front-quarter',(3.5,-5.5,4.6),1),('rear-quarter',(-3.5,5.5,4.6),1),('top',(0,-.001,7),1),('closed',(3.5,-5.5,4.6),165),('mechanism',(3.5,-5.5,4.6),120),('crane-rest',(.7,-2.6,1.8),120)]:
             camera(scene,p);scene.frame_set(frame);scene.render.filepath=str(MEDIA/(view+'.png'));bpy.ops.render.render(write_still=True)
     if not args.no_render:
         # A technical view derived from the same meshes, never a separate nicer model.
@@ -433,7 +443,7 @@ def main():
     native_after,path_strings,raw_before,raw_after=clean_blend(native_before)
     (OUT/'model.blend').write_bytes(native_after)
     for image in MEDIA.glob('*.png'):image.write_bytes(clean_png(image.read_bytes()))
-    report=dict(id='terran:ship-yard',issue=225,stage='high-detail-refinement',source='Independently authored geometry and PBR maps; legacy pixels are reference-only',footprint=[3,3],blend_sha256=sha(OUT/'model.blend'),glb_sha256=sha(OUT/'model.glb'),generator_sha256=sha(Path(__file__)),surface_generator_sha256=sha(Path(__file__).with_name('shipyard_surface_maps.py')),triangles=tris,mesh_nodes=len(mesh_objects),materials=1,texture_resolution=[1024,1024],texture_maps=['albedo','orm','emission'],rigid_animation=True,skeletal_meshes=False,frame_range=[1,300],fps=30,components=COUNTS,source_reference=dict(building='PB25.256',video='PB25.VID',video_frames=264),limitations=['Telescopic shutter internals, pivot travel and crane shaft are authored interpretations; exact hidden legacy mechanism is unknown.','No underground hangar volume or calibrated ship attachment sockets.','Client runtime integration and gameplay trigger binding require separate validation.'],replaces_selection='sources/docs/assets/bootstrap-3d/terran-refined/pb25/model.blend',preserved_previous_variants=True,metadata_normalization=dict(path_strings=path_strings,raw_before_sha256=raw_before,raw_after_sha256=raw_after,proof='All decompressed bytes outside fixed-width absolute path strings unchanged; PNG non-image metadata stripped without re-encoding pixels'))
+    report=dict(id='terran:ship-yard',issue=225,stage='high-detail-refinement',source='Independently authored geometry and PBR maps; legacy pixels are reference-only',footprint=[3,3],blend_sha256=sha(OUT/'model.blend'),glb_sha256=sha(OUT/'model.glb'),generator_sha256=sha(Path(__file__)),surface_generator_sha256=sha(Path(__file__).with_name('shipyard_surface_maps.py')),triangles=tris,mesh_nodes=len(mesh_objects),materials=1,texture_resolution=[1024,1024],texture_maps=['albedo','orm','emission'],rigid_animation=True,skeletal_meshes=False,frame_range=[1,300],fps=30,components=COUNTS,crane_rest=dict(frame=120,beam_bottom_local_z=.905,support_top_local_z=.905),source_reference=dict(building='PB25.256',video='PB25.VID',video_frames=264),limitations=['Telescopic shutter internals and mast retraction are authored interpretations; the lowered beam rests on the platform shoes, not below its deck.','No underground hangar volume or calibrated ship attachment sockets.','Client runtime integration and gameplay trigger binding require separate validation.'],replaces_selection='sources/docs/assets/bootstrap-3d/terran-refined/pb25/model.blend',preserved_previous_variants=True,metadata_normalization=dict(path_strings=path_strings,raw_before_sha256=raw_before,raw_after_sha256=raw_after,proof='All decompressed bytes outside fixed-width absolute path strings unchanged; PNG non-image metadata stripped without re-encoding pixels'))
     (OUT/'model.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
     print('HIGH_DETAIL_SHIPYARD_BUILT',tris,'triangles',len(mesh_objects),'mesh nodes',flush=True)
 

@@ -538,6 +538,8 @@
 
 [Blend](../sources/objects/terran/ship-yard/refined/model.blend) · [GLB](../sources/objects/terran/ship-yard/refined/model.glb)
 
+Additional views: [Crane resting on platform](../gallery/media/objects/terran/ship-yard/refined/crane-rest-detail.png) · [Assault Fighter inside: game scale](../gallery/media/objects/terran/ship-yard/refined/scale-fighter-in-yard.png) · [Side-by-side: game scale](../gallery/media/objects/terran/ship-yard/refined/scale-fighter-beside-yard.png) · [Top: game scale](../gallery/media/objects/terran/ship-yard/refined/scale-fighter-top.png) · [Same-mesh wireframe](../gallery/media/objects/terran/ship-yard/refined/wireframe.png)
+
 [Play animation: Scene](../gallery/media/objects/terran/ship-yard/refined/animation-00.webm)
 
 ## Landing Pad

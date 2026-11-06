@@ -7,12 +7,12 @@
     3,
     3
   ],
-  "blend_sha256": "33721d7f7df32ae8332b9e81a76795b4dbdcf8ceb1e8225c7d8252a450200ec2",
-  "glb_sha256": "122107606e22c5dcd759ab3af02b95522ee55f23886f9e2a7fd1b02f68f06600",
-  "generator_sha256": "edf5f41a083abc47f392949d3d75a1b0883673d5218fb40d11b477e7e1a1d689",
+  "blend_sha256": "8d119e7fae6ff300f34643e28478bc6d1a0be724683ad3099f5baf050fe06da0",
+  "glb_sha256": "ac6b97852dff469d9dea1e3bca250f9975d6729dd81d71a1d0be469d8e83116f",
+  "generator_sha256": "a0ed4679d289cb69fe6ce378b62b8bde2a7b98ba18f7ca0c95772d7bc5d8484c",
   "surface_generator_sha256": "49be6c62457c9e46235450b39f85de6e84cc0ea7a9c78e1452dc33e6028129cf",
-  "triangles": 53392,
-  "mesh_nodes": 30,
+  "triangles": 53616,
+  "mesh_nodes": 32,
   "materials": 1,
   "texture_resolution": [
     1024,
@@ -31,9 +31,11 @@
   ],
   "fps": 30,
   "components": {
-    "StaticBase": 1580,
+    "StaticBase": 1473,
+    "FabricationDeck": 115,
     "CraneLift": 54,
-    "CraneSlew": 49,
+    "CraneSlew": 46,
+    "Antenna": 3,
     "Trolley": 10,
     "Hoist": 13,
     "HoistCables": 4,
@@ -62,13 +64,18 @@
     "Shutter_+1_3_+0": 7,
     "Shutter_+1_3_+1": 7
   },
+  "crane_rest": {
+    "frame": 120,
+    "beam_bottom_local_z": 0.905,
+    "support_top_local_z": 0.905
+  },
   "source_reference": {
     "building": "PB25.256",
     "video": "PB25.VID",
     "video_frames": 264
   },
   "limitations": [
-    "Telescopic shutter internals, pivot travel and crane shaft are authored interpretations; exact hidden legacy mechanism is unknown.",
+    "Telescopic shutter internals and mast retraction are authored interpretations; the lowered beam rests on the platform shoes, not below its deck.",
     "No underground hangar volume or calibrated ship attachment sockets.",
     "Client runtime integration and gameplay trigger binding require separate validation."
   ],
@@ -76,8 +83,8 @@
   "preserved_previous_variants": true,
   "metadata_normalization": {
     "path_strings": 7,
-    "raw_before_sha256": "4c7f5464892dba2a02cd3752636ce446b245093a4b7d670d83932f36c1dd0986",
-    "raw_after_sha256": "306174cef790bd4d2a27e113b1bd14e960e366b07b1388eed5457a17b0805438",
+    "raw_before_sha256": "14cf9f81126856aa1c4315bd96bb264e773e3f580eed46803ce67f281e9adb3d",
+    "raw_after_sha256": "667431af5700caff124ecdf09a63d1d4afaeea4d8942563614f00c27dd5a563c",
     "proof": "All decompressed bytes outside fixed-width absolute path strings unchanged; PNG non-image metadata stripped without re-encoding pixels"
   }
 }
