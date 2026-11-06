@@ -4549,6 +4549,72 @@
               "image": "gallery/media/objects/terran/ship-yard/refined/wireframe.png"
             }
           ]
+        },
+        {
+          "stage": "layered-construction-hangar",
+          "blend": "objects/terran/ship-yard/hangar/model.blend",
+          "present": true,
+          "sha256": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Build: frame foundation",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-build-base.png"
+            },
+            {
+              "label": "Build: expanded frame",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-build-frame.png"
+            },
+            {
+              "label": "Build: solid components",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-build-systems.png"
+            },
+            {
+              "label": "Build: partial skin",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-partial-hull.png"
+            },
+            {
+              "label": "Complete ship",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-complete.png"
+            },
+            {
+              "label": "Lifted",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-lifted.png"
+            },
+            {
+              "label": "Hatch open",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-hatch-open-loaded.png"
+            },
+            {
+              "label": "Lowering",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-lowering.png"
+            },
+            {
+              "label": "Received below ground",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-received.png"
+            },
+            {
+              "label": "Ready",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-ready.png"
+            },
+            {
+              "label": "Five construction stages",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/construction-stages.png"
+            },
+            {
+              "label": "Transfer sequence",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/transfer-contact-sheet.png"
+            },
+            {
+              "label": "Combat Eagle on hatch",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/combat-eagle-complete.png"
+            },
+            {
+              "label": "Scoutship on hatch",
+              "image": "gallery/media/objects/terran/ship-yard/hangar/scoutship-complete.png"
+            }
+          ],
+          "showcase": "sources/objects/terran/ship-yard/hangar/showcase.json"
         }
       ],
       "acceptance": {
@@ -4592,11 +4658,11 @@
         "global_type": 25
       },
       "selected_refinement": {
-        "blend": "objects/terran/ship-yard/refined/model.blend",
-        "glb": "objects/terran/ship-yard/refined/model.glb",
-        "evidence": "objects/terran/ship-yard/refined/runtime-validation.json",
-        "issue": "https://github.com/ender-dev-pl/openfa-assets/issues/225",
-        "game_integration": "pending; replace the selected source on all gameplay/build-menu/information paths"
+        "stage": "layered-construction-hangar",
+        "blend": "objects/terran/ship-yard/hangar/model.blend",
+        "glb": "objects/terran/ship-yard/hangar/model.glb",
+        "issue": 227,
+        "integration": "pending client binding and GPU validation; use this one model for all catalogue paths; preserve earlier variants as source history only"
       }
     },
     {
@@ -26910,6 +26976,35 @@
           "present": true,
           "sha256": "5fb2090ea98835f9ad2905df04c8a9417e0863e945e8dfe1ae5204224687adf4",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "layered-construction",
+          "blend": "objects/terran/assault-fighter/construction/model.blend",
+          "present": true,
+          "sha256": "463027eb6ffc3f7cf6a79a32552b893b92d14fcc3a79ee4886cc15571bda87dc",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Frame foundation",
+              "image": "gallery/media/objects/terran/assault-fighter/construction/stage-01.png"
+            },
+            {
+              "label": "Expanded frame",
+              "image": "gallery/media/objects/terran/assault-fighter/construction/stage-02.png"
+            },
+            {
+              "label": "Solid components",
+              "image": "gallery/media/objects/terran/assault-fighter/construction/stage-03.png"
+            },
+            {
+              "label": "Partial skin",
+              "image": "gallery/media/objects/terran/assault-fighter/construction/stage-04.png"
+            },
+            {
+              "label": "Complete skin",
+              "image": "gallery/media/objects/terran/assault-fighter/construction/stage-05.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -27101,6 +27196,13 @@
           ],
           "selected_first_available": null
         }
+      },
+      "selected_refinement": {
+        "stage": "layered-construction",
+        "blend": "objects/terran/assault-fighter/construction/model.blend",
+        "glb": "objects/terran/assault-fighter/construction/model.glb",
+        "issue": 227,
+        "integration": "pending client binding and GPU validation; use this one model for all catalogue paths; preserve earlier variants as source history only"
       }
     },
     {
@@ -27212,6 +27314,35 @@
           "present": true,
           "sha256": "1da63929056fc36483570cb6dc9aa45040dce4212831c44ee34d15ab636e55ea",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "layered-construction",
+          "blend": "objects/terran/combat-eagle/construction/model.blend",
+          "present": true,
+          "sha256": "52a70d2a6698f0c4e60be4023217d6c1fec2d7a1e28286db13a697b0b6cd7dd8",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Frame foundation",
+              "image": "gallery/media/objects/terran/combat-eagle/construction/stage-01.png"
+            },
+            {
+              "label": "Expanded frame",
+              "image": "gallery/media/objects/terran/combat-eagle/construction/stage-02.png"
+            },
+            {
+              "label": "Solid components",
+              "image": "gallery/media/objects/terran/combat-eagle/construction/stage-03.png"
+            },
+            {
+              "label": "Partial skin",
+              "image": "gallery/media/objects/terran/combat-eagle/construction/stage-04.png"
+            },
+            {
+              "label": "Complete skin",
+              "image": "gallery/media/objects/terran/combat-eagle/construction/stage-05.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -27310,6 +27441,13 @@
           ],
           "selected_first_available": null
         }
+      },
+      "selected_refinement": {
+        "stage": "layered-construction",
+        "blend": "objects/terran/combat-eagle/construction/model.blend",
+        "glb": "objects/terran/combat-eagle/construction/model.glb",
+        "issue": 227,
+        "integration": "pending client binding and GPU validation; use this one model for all catalogue paths; preserve earlier variants as source history only"
       }
     },
     {
@@ -27421,6 +27559,35 @@
           "present": true,
           "sha256": "783e3a024b21aa2a761f509f32de05b2e452a94457407b88feb4e6319ec52cb3",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "layered-construction",
+          "blend": "objects/terran/scoutship/construction/model.blend",
+          "present": true,
+          "sha256": "85baa587530cab28fea80ad291b0006fb8d6f15d1d39625ba2de3abedaac9bad",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Frame foundation",
+              "image": "gallery/media/objects/terran/scoutship/construction/stage-01.png"
+            },
+            {
+              "label": "Expanded frame",
+              "image": "gallery/media/objects/terran/scoutship/construction/stage-02.png"
+            },
+            {
+              "label": "Solid components",
+              "image": "gallery/media/objects/terran/scoutship/construction/stage-03.png"
+            },
+            {
+              "label": "Partial skin",
+              "image": "gallery/media/objects/terran/scoutship/construction/stage-04.png"
+            },
+            {
+              "label": "Complete skin",
+              "image": "gallery/media/objects/terran/scoutship/construction/stage-05.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -27515,6 +27682,13 @@
           ],
           "selected_first_available": null
         }
+      },
+      "selected_refinement": {
+        "stage": "layered-construction",
+        "blend": "objects/terran/scoutship/construction/model.blend",
+        "glb": "objects/terran/scoutship/construction/model.glb",
+        "issue": 227,
+        "integration": "pending client binding and GPU validation; use this one model for all catalogue paths; preserve earlier variants as source history only"
       }
     },
     {

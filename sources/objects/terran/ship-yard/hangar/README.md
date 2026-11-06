@@ -11,10 +11,14 @@ package the selected model once and reuse it across flight, build menu and SciTe
 
 ## Construction layers
 
-Each ship has cumulative named groups: `Build01_Frame` (progress 0),
-`Build02_Systems` (0.25), `Build03_InnerPanels` (0.55), `Hull` (0.82).
+Each ship has five cumulative named groups: `Build01_BaseFrame` (progress 0),
+`Build02_ExpandedFrame` (0.16), `Build03_Systems` (0.38), `HullPartial` (0.65),
+and `HullFinal` (0.88): frame foundation, expanded frame, frame with solid components,
+partly fitted skin, and complete skin.
 Use actual simulation progress, independently of the demonstration's four-second
-build window. During normal flight skip all three Build groups and draw Hull only.
+build window. During normal flight skip all three Build groups and draw both
+HullPartial and HullFinal, the two children of Hull. These disjoint face sets
+reconstitute the original hull without overlapping duplicate skin geometry.
 Depth occlusion alone still costs draw calls; it does not provide this optimization.
 The original hull world vertices and materials are preserved and batched by material.
 New internals use the worn yard PBR atlas and are constrained by actual hull sections.
@@ -31,6 +35,9 @@ PlacementRoot 0.3 scale**. The authored yard diameter is 9 local units, correspo
 to the configured 3-by-3 cells of 32 world units. Ship sizes use the game's largest-axis
 normalization: Assault Fighter 30, Combat Eagle 32, Scoutship 28. These are a calibration
 snapshot, not a promise that later game configuration will remain unchanged.
+The `ships[*].source_glb_sha256` values record the payload revisions used when
+the yard rig was authored. Later interior-only revisions preserve those envelopes;
+their current hashes are bound by `runtime-validation.json` and `showcase.json`.
 
 The square hatch is 3.7 local units / about 39.47 game units wide. Both rigid leaves
 rotate down into a genuine through-opening. An underground receiver supports the load

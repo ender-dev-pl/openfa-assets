@@ -51,6 +51,8 @@ def main():
             assert (ROOT / study['image']).is_file() and study['image'].startswith('gallery/media/')
             assert study['glb'] and (ROOT / study['glb']).is_file(), row['id']
             assert study['animations']==animation_previews(study['blend'],study['glb'],(ROOT/study['image']).parent)
+            from gallery_showcase_assets import showcase_previews
+            assert study.get('showcases',[])==showcase_previews(original)
             assert study.get('views',[])==original.get('views',[])
             for view in study.get('views',[]):
                 assert view['label'] and view['image'].startswith('gallery/media/')

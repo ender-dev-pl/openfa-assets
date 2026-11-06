@@ -47,13 +47,14 @@ def combined_scene(ship='assault-fighter'):
 
 def set_phase(scene,objects,frame):
     scene.frame_set(math.floor(frame),subframe=frame-math.floor(frame))
-    stage=min(3,int(frame>=30)+int(frame>=66)+int(frame>=99))
+    groups=['Build01_BaseFrame','Build02_ExpandedFrame','Build03_Systems','HullPartial','HullFinal']
+    stage=min(4,int(frame>=20)+int(frame>=46)+int(frame>=79)+int(frame>=106))
     for obj in objects:
         if obj.type!='MESH':continue
         node=obj.parent
-        while node and node.name not in ['Hull','Build01_Frame','Build02_Systems','Build03_InnerPanels']:node=node.parent
+        while node and node.name not in groups:node=node.parent
         assert node,obj.name
-        index=['Build01_Frame','Build02_Systems','Build03_InnerPanels','Hull'].index(node.name)
+        index=groups.index(node.name)
         obj.hide_render=index>stage
     bpy.context.view_layer.update()
 
@@ -64,7 +65,7 @@ def render_stills():
         scene,objects,config=combined_scene(ship)
         # Other ships use the documented local hoist height correction.
         # The complete animated demonstration is Assault Fighter-calibrated.
-        frames=[('build-frame',15),('build-systems',45),('build-panels',80),('complete',115)]
+        frames=[('build-base',10),('build-frame',30),('build-systems',60),('partial-hull',90),('complete',115)]
         if ship=='assault-fighter':frames += [('lifted',190),('hatch-open-loaded',240),('lowering',285),('received',335),('ready',480)]
         for name,frame in frames:
             set_phase(scene,objects,frame);path=MEDIA/(ship+'-'+name+'.png');scene.render.filepath=str(path);bpy.ops.render.render(write_still=True)
@@ -75,7 +76,7 @@ def render_stills():
 def render_showcase():
     scene,objects,config=combined_scene();scene.render.resolution_x=scene.render.resolution_y=512;scene.cycles.samples=12
     scene.render.image_settings.file_format='PNG';scene.render.image_settings.color_mode='RGB'
-    folder=ROOT/'artifacts/issue-227/transfer-frames';folder.mkdir(parents=True,exist_ok=True)
+    folder=ROOT/'artifacts/issue-227/transfer-five-stage-frames';folder.mkdir(parents=True,exist_ok=True)
     count=192;poses=set()
     for i in range(count):
         frame=1+(END-1)*i/(count-1);set_phase(scene,objects,frame)

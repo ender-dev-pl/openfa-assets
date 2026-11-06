@@ -53,6 +53,7 @@ def index_table(groups, cultures, categories, interactive=False):
 
 def inventory_records():
     from gallery_animation_assets import animation_previews
+    from gallery_showcase_assets import showcase_previews
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text(encoding='utf-8'))
     rows = []
     sheets = collections.defaultdict(list)
@@ -77,6 +78,7 @@ def inventory_records():
                 glb=glb.relative_to(ROOT).as_posix() if glb.is_file() else None,
                 image=image.relative_to(ROOT).as_posix(), sha256=study['sha256'],animations=previews))
             if study.get('views'):studies[-1]['views']=study['views']
+            if study.get('showcase'):studies[-1]['showcases']=showcase_previews(study)
         assert studies, record['id']
         row = dict(id=record['id'], name=record['name'], category=record['category'],
                    culture=record['culture'], studies=studies)
@@ -127,7 +129,7 @@ def main():
                     page += ['Full procedural materials are in Blend; GLB textures are not baked.', '']
                 if study.get('views'):
                     page += ['Additional views: '+' · '.join('['+v['label']+'](../'+quote(v['image'])+')' for v in study['views']), '']
-                for clip in study['animations']:
+                for clip in study.get('showcases',[])+study['animations']:
                     page += ['[Play animation: '+clip['name']+'](../'+quote(clip['video'])+')', '']
                 cell = Image.new('RGB', (256, 288), '#161f2b')
                 source = Image.open(ROOT / study['image']).convert('RGBA')
@@ -156,8 +158,8 @@ def main():
         for n, study in enumerate(row['studies']):
             label = ('First available' if n == 0 else 'Additional')+' / '+study['stage']
             if row['category']=='trading-goods':label=('Preserved first pass' if n==0 else 'Current refinement')+' / '+study['stage']
-            if study['animations']:
-                clips=study['animations']
+            if study['animations'] or study.get('showcases'):
+                clips=study.get('showcases',[])+study['animations']
                 preview='<video controls loop muted playsinline preload="none" poster="../'+quote(study['image'])+'" aria-label="'+html.escape(row['name']+' — '+study['stage']+' animation',quote=True)+'"><source src="../'+quote(clips[0]['video'])+'" type="video/webm">Your browser does not support WebM video.</video>'
                 if len(clips)>1:
                     options=''.join('<option value="../'+quote(c['video'])+'">'+html.escape(c['name'])+'</option>' for c in clips)

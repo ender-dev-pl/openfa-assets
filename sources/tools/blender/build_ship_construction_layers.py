@@ -39,6 +39,25 @@ def hull_bvh(objects):
     return BVHTree.FromPolygons(vertices, faces), vertices
 
 
+def hull_partition(obj,indices,name):
+    source=obj.data;vertices=[];mapping={};faces=[];loops=[];smooth=[]
+    for index in indices:
+        polygon=source.polygons[index];face=[]
+        for vi in polygon.vertices:
+            if vi not in mapping:mapping[vi]=len(vertices);vertices.append(source.vertices[vi].co.copy())
+            face.append(mapping[vi])
+        faces.append(face);loops.extend(polygon.loop_indices);smooth.append(polygon.use_smooth)
+    mesh=bpy.data.meshes.new(name);mesh.from_pydata(vertices,[],faces);mesh.update()
+    for material in source.materials:mesh.materials.append(material)
+    for original in source.uv_layers:
+        uv=mesh.uv_layers.new(name=original.name)
+        for i,li in enumerate(loops):uv.data[i].uv=original.data[li].uv
+    for p,value in zip(mesh.polygons,smooth):p.use_smooth=value
+    mesh.normals_split_custom_set([source.corner_normals[li].vector for li in loops])
+    result=bpy.data.objects.new(name,mesh);bpy.context.collection.objects.link(result);result.matrix_world=obj.matrix_world.copy()
+    return result
+
+
 def build(ship, render):
     bpy.ops.wm.read_factory_settings(use_empty=True)
     bpy.context.preferences.filepaths.save_version = 0
@@ -49,6 +68,9 @@ def build(ship, render):
     bpy.ops.import_scene.gltf(filepath=str(source))
     shell = [o for o in bpy.context.scene.objects if o.type == 'MESH']
     tree, vertices = hull_bvh(shell)
+    # Test each manufactured solid independently. Global parity across overlapping
+    # armour and pressure hulls would incorrectly classify their shared core as air.
+    solid_trees=[hull_bvh([obj])[0] for obj in shell]
     low = Vector([min(p[i] for p in vertices) for i in range(3)])
     high = Vector([max(p[i] for p in vertices) for i in range(3)])
     length = max(high-low); centre = (high+low)/2
@@ -60,32 +82,48 @@ def build(ship, render):
     root = bpy.data.objects.new('ShipAssembly', None); bpy.context.collection.objects.link(root)
     root['catalogue_id'] = 'openfa:'+ship
     hull = bpy.data.objects.new('Hull', None); bpy.context.collection.objects.link(hull); hull.parent = root
+    partial=bpy.data.objects.new('HullPartial',None);bpy.context.collection.objects.link(partial);partial.parent=hull
+    final=bpy.data.objects.new('HullFinal',None);bpy.context.collection.objects.link(final);final.parent=hull
     batches = {}
     for obj in shell:
         assert len(obj.data.materials) == 1, obj.name
-        batches.setdefault(obj.data.materials[0].name, []).append(obj)
-    for index, objects in enumerate(batches.values()):
+        selected=[];remaining=[]
+        for p in obj.data.polygons:
+            point=obj.matrix_world@p.center;u=(point.x-low.x)/(high.x-low.x);v=(point.y-low.y)/(high.y-low.y)
+            target=selected if (u<.36 and v>.22) or (u>.64 and v<.35) or (.40<u<.60 and v<.30) else remaining
+            target.append(p.index)
+        for parent,indices in [(partial,selected),(final,remaining)]:
+            if indices:
+                part=hull_partition(obj,indices,obj.name+' '+parent.name)
+                batches.setdefault((parent.name,obj.data.materials[0].name),[]).append(part)
+        bpy.data.objects.remove(obj,do_unlink=True)
+    for index, ((parent_name,material_name),objects) in enumerate(batches.items()):
         bpy.ops.object.select_all(action='DESELECT')
         for obj in objects: obj.select_set(True)
         bpy.context.view_layer.objects.active = objects[0]
         bpy.ops.object.join(); obj = bpy.context.object
-        obj.name = f'HullBatch_{index:02}'
-        matrix = obj.matrix_world.copy(); obj.parent = hull; obj.matrix_world = matrix
+        obj.name = f'{parent_name}Batch_{index:02}'
+        matrix = obj.matrix_world.copy(); obj.parent = bpy.data.objects[parent_name]; obj.matrix_world = matrix
     hull_meshes = [o for o in bpy.context.scene.objects if o.type == 'MESH']
     sections = {}
 
     def section(x, y):
         key = (round(x, 7), round(y, 7))
         if key in sections: return sections[key]
-        point = Vector((x, y, low.z-length*.1)); hits = []
-        for _ in range(80):
-            hit, normal, face, distance = tree.ray_cast(point, Vector((0, 0, 1)), length*2)
-            if hit is None or hit.z > high.z+length*.001: break
-            if not hits or hit.z-hits[-1] > length*1e-5: hits.append(hit.z)
-            point = hit+Vector((0, 0, length*1e-5))
-        # Longest solid interval avoids placing machinery inside thin exterior fittings.
-        pairs = [(a, b) for a, b in zip(hits[::2], hits[1::2]) if b-a > length*.004]
-        value = max(pairs, key=lambda pair: pair[1]-pair[0]) if pairs else None
+        intervals=[]
+        for solid in solid_trees:
+            point=Vector((x,y,low.z-length*.1));hits=[]
+            for _ in range(40):
+                hit,normal,face,distance=solid.ray_cast(point,Vector((0,0,1)),length*2)
+                if hit is None or hit.z>high.z+length*.001:break
+                if not hits or hit.z-hits[-1]>length*1e-5:hits.append(hit.z)
+                point=hit+Vector((0,0,length*1e-5))
+            intervals.extend((a,b) for a,b in zip(hits[::2],hits[1::2]) if b-a>length*.004)
+        merged=[]
+        for a,b in sorted(intervals):
+            if merged and a<=merged[-1][1]+length*.00001:merged[-1]=(merged[-1][0],max(b,merged[-1][1]))
+            else:merged.append((a,b))
+        value=max(merged,key=lambda pair:pair[1]-pair[0]) if merged else None
         sections[key] = value; return value
 
     def inside(point, margin=0):
@@ -95,11 +133,15 @@ def build(ship, render):
     original_facegroup=geo.facegroup
     def contained_component(group,vertices,faces,tile=1):
         if all(inside(Vector(p),length*.0001) for p in vertices):
+            if group=='Build02_ExpandedFrame':
+                mid=sum((Vector(p) for p in vertices),Vector())/len(vertices)
+                if abs(mid.x-centre.x)<length*.11:group='Build01_BaseFrame'
             original_facegroup(group,vertices,faces,tile)
     geo.facegroup=contained_component
     geo.GROUPS.clear(); geo.COUNTS.clear(); geo.PARENTS.clear()
-    names = ['Build01_Frame', 'Build02_Systems', 'Build03_InnerPanels']
-    for name in names: geo.empty(name, root)
+    names = ['Build02_ExpandedFrame', 'Build03_Systems', 'Build03_Systems']
+    internal=['Build01_BaseFrame','Build02_ExpandedFrame','Build03_Systems']
+    for name in internal: geo.empty(name, root)
     step = length/13; nodes = {}; equipment = 0
     for i in range(14):
         for j in range(14):
@@ -171,19 +213,19 @@ def build(ship, render):
     scene.render.filepath='//front-quarter.png';save_clean(out/'model.blend')
     stages=[]
     if render:
-        for stage in range(4):
-            for obj in hull_meshes: obj.hide_render=stage<3
-            for index,name in enumerate(names):
+        for stage in range(5):
+            for obj in hull_meshes: obj.hide_render=stage<(3 if obj.parent==partial else 4)
+            for index,name in enumerate(internal):
                 for obj in bpy.data.objects[name].children:obj.hide_render=index>stage
             path=media/f'stage-{stage+1:02}.png';scene.render.filepath=str(path);bpy.ops.render.render(write_still=True);stages.append(path.name)
         for obj in meshes: obj.hide_render=False
         scene.render.filepath=str(media/'front-quarter.png');bpy.ops.render.render(write_still=True)
         sys.path.insert(0,str(ROOT/'tools'));from publication_support import clean_png
         for path in media.glob('*.png'):path.write_bytes(clean_png(path.read_bytes()))
-    layer_vertices=[v.co for name in names for obj in bpy.data.objects[name].children for v in obj.data.vertices]
+    layer_vertices=[v.co for name in internal for obj in bpy.data.objects[name].children for v in obj.data.vertices]
     outside=sum(not inside(p,length*-.001) for p in layer_vertices)
     assert outside==0,(ship,outside)
-    report=dict(issue=227,id='openfa:'+ship,source_glb=source.relative_to(ROOT).as_posix(),source_glb_sha256=sha(source),blend_sha256=sha(out/'model.blend'),glb_sha256=sha(out/'model.glb'),generator_sha256=sha(Path(__file__)),geometry_helper_sha256=sha(Path(geo.__file__)),shell_bounds=[list(low),list(high)],game_world_size=SHIPS[ship],layers=[dict(node=name,progress_start=value) for name,value in zip(names+["Hull"],[0,.25,.55,.82])],flight_hidden_nodes=names,lift_socket=eye,lifting_contacts=contacts,mesh_nodes=len(meshes),triangles=sum(len(p.vertices)-2 for o in meshes for p in o.data.polygons),interior_vertices=len(layer_vertices),vertices_outside_ray_sections=outside,engineering='Authored interior constrained by actual shell sections; original exterior geometry and materials preserved, batched by material.',client_binding='Use real build fraction for cumulative layer visibility. In flight draw Hull only, skip all Build* batches. Socket coordinates are ship-local; apply the same placement transform as the ship.',stage_images=stages)
+    report=dict(issue=227,id='openfa:'+ship,source_glb=source.relative_to(ROOT).as_posix(),source_glb_sha256=sha(source),blend_sha256=sha(out/'model.blend'),glb_sha256=sha(out/'model.glb'),generator_sha256=sha(Path(__file__)),geometry_helper_sha256=sha(Path(geo.__file__)),shell_bounds=[list(low),list(high)],game_world_size=SHIPS[ship],layers=[dict(node=name,progress_start=value) for name,value in zip(internal+['HullPartial','HullFinal'],[0,.16,.38,.65,.88])],flight_hidden_nodes=internal,flight_visible_nodes=['HullPartial','HullFinal'],lift_socket=eye,lifting_contacts=contacts,mesh_nodes=len(meshes),triangles=sum(len(p.vertices)-2 for o in meshes for p in o.data.polygons),interior_vertices=len(layer_vertices),vertices_outside_ray_sections=outside,engineering='Authored interior constrained by actual shell sections; original exterior faces, normals, UVs and materials preserved and partitioned into disjoint partial/final hull batches.',client_binding='Use real build fraction for cumulative five-layer visibility. In flight draw both children of Hull, skip all Build* batches. Socket coordinates are ship-local; apply the same placement transform as the ship.',stage_images=stages)
     (out/'model.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
     print('SHIP_CONSTRUCTION_LAYERS',ship,len(nodes),equipment,outside,report['triangles'],flush=True)
 

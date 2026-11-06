@@ -59,16 +59,22 @@ def verify_ship(ship):
     folder=ROOT/'sources/objects/terran'/ship/'construction';meta=json.loads((folder/'model.json').read_text())
     report=compare_asset(folder,[1])
     assert meta['vertices_outside_ray_sections']==0
+    assert meta['triangles']<85000 and meta['mesh_nodes']<=20,(ship,meta['triangles'],meta['mesh_nodes'])
     assert meta['glb_sha256']==report['glb_sha256'] and meta['blend_sha256']==report['blend_sha256']
     assert meta['generator_sha256']==sha(Path(__file__).with_name('build_ship_construction_layers.py'))
     assert all(bpy.data.objects.get(row['node']) for row in meta['layers'])
     assert all(len(bpy.data.objects[name].children)>0 for name in meta['flight_hidden_nodes'])
-    shell=[o for o in bpy.context.scene.objects if o.type=='MESH' and o.name.startswith('HullBatch_')]
+    shell=[o for o in bpy.context.scene.objects if o.type=='MESH' and o.name.startswith(('HullPartialBatch_','HullFinalBatch_'))]
     target=vertices(shell)
+    hull_triangles=sum(len(p.vertices)-2 for o in shell for p in o.data.polygons)
+    partial_triangles=sum(len(p.vertices)-2 for o in shell if o.name.startswith('HullPartialBatch_') for p in o.data.polygons)
+    assert .10<partial_triangles/hull_triangles<.75,(ship,partial_triangles,hull_triangles)
     bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.gltf(filepath=str(ROOT/meta['source_glb']))
     original=vertices([o for o in bpy.context.scene.objects if o.type=='MESH'])
+    original_triangles=sum(len(p.vertices)-2 for o in bpy.context.scene.objects if o.type=='MESH' for p in o.data.polygons)
+    assert hull_triangles==original_triangles,(ship,hull_triangles,original_triangles)
     drift=max(distance(original,target),distance(target,original));assert drift<.00001,(ship,drift)
-    report.update(original_hull_sha256=sha(ROOT/meta['source_glb']),hull_vertex_drift=drift,construction_layers=4,flight_hidden_batches=3,contained_in_actual_ray_sections=True)
+    report.update(original_hull_sha256=sha(ROOT/meta['source_glb']),hull_vertex_drift=drift,construction_layers=5,flight_hidden_batches=3,contained_in_actual_ray_sections=True,original_hull_triangles=original_triangles,partial_hull_triangles=partial_triangles,final_hull_triangles=hull_triangles-partial_triangles,complete_hull_has_no_added_or_missing_triangles=True)
     (folder/'runtime-validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
     print('CONSTRUCTION_SHIP_VERIFIED',ship,drift,flush=True)
 
@@ -107,7 +113,7 @@ def verify_yard():
                 left=max(p.x for p in vertices([doors[0]]));right=min(p.x for p in vertices([doors[1]]))
                 assert min(p.x for p in moved)>left+.03 and max(p.x for p in moved)<right-.03,(ship,frame,'hatch aperture')
             if frame>=415:assert top<(DECK-.10)*.3,(ship,frame,'closing into ship')
-        rows.append(dict(ship=ship,checked_frames=END,full_thickness_opening_clearance_local=edge,socket_height_override_local=offset))
+        rows.append(dict(ship=ship,payload_glb_sha256=ship_meta['glb_sha256'],checked_frames=END,full_thickness_opening_clearance_local=edge,socket_height_override_local=offset))
     assert max_attachment_gap<.00001,max_attachment_gap
     # Actual surface test: the foundation has a real through-hole down to the receiver.
     bpy.context.scene.frame_set(240);static=bpy.data.objects['StaticBaseGeometry']
