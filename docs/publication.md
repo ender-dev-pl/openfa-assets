@@ -99,3 +99,5 @@ archive. The full gallery source exceeds the
 [1 GB Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
 The native Pages deployment is managed by GitHub; this repository's workflow does
 not upload build artifacts or delete existing organization artifacts.
+
+Publication metadata equivalence evidence is retained in `project/scitek-publication-normalization.json`, with the subsequent native reopen results in `project/scitek-normalized-native-runtime.json`. These are historical verification records; moving them does not constitute a new validation run. One-off merge review reports have been removed.

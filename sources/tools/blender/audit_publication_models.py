@@ -2,7 +2,7 @@
 import bpy,json,sys,hashlib
 from pathlib import Path
 root,out=map(lambda s:Path(s).resolve(),sys.argv[sys.argv.index('--')+1:])
-cert=json.loads((root/'docs/merge-review-2026-11-06/publication-normalization.json').read_text());rows=[]
+cert=json.loads((root/'project/scitek-publication-normalization.json').read_text());rows=[]
 for entry in cert['files']:
  p=root/entry['path']
  if p.suffix!='.blend':continue

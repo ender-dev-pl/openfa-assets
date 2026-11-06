@@ -41,6 +41,6 @@ def main():
   if not changes:break
  else:raise AssertionError('hash dependency graph did not converge')
  report=dict(scope='Publication normalization; historical proof hashes rebound through certified metadata equivalence, not represented as fresh historical test execution.',files=entries,hash_rebinding=mapping)
- dest=ROOT/'docs/merge-review-2026-11-06/publication-normalization.json';dest.write_text(json.dumps(report,indent=2)+'\n')
+ dest=ROOT/'project/scitek-publication-normalization.json';dest.write_text(json.dumps(report,indent=2)+'\n')
  print('METADATA_NORMALIZED',len(entries),'files; fresh runtime audits required')
 if __name__=='__main__':main()
