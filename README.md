@@ -12,6 +12,10 @@ The gallery uses existing renders only. It shows each registered iteration with 
 
 [New main-menu labels](gallery/menu-labels.md) provide shade-only fields and separate EN/PL lettering aligned with the original menu reference.
 
+## Licensing
+
+Asset-specific recipes, parameters, models, textures and animations use the [OpenFA Asset License 1.0](LICENSE.md) ([Polski](LICENSE.pl.md)). Regenerating protected asset content does not remove these conditions. Audited general-purpose tools use [MIT](LICENSES/MIT.txt); the reusable package is in [tooling/](tooling/README.md). Existing third-party terms and excluded reference fixtures are listed separately. Read the [component licensing guide](docs/licensing/README.md) and [contribution rules](CONTRIBUTING.md); there is no blanket MIT grant over every Python generator.
+
 ## Quick start
 
 The [HUD and menu gallery](gallery/ui.html) contains editable interface geometry, button
