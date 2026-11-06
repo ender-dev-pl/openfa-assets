@@ -1,0 +1,80 @@
+{
+  "issue": 227,
+  "id": "openfa:scoutship",
+  "source_glb": "sources/docs/assets/reconstruction/ships/terran/scoutship/model.glb",
+  "source_glb_sha256": "58ae7ab4da9ac053d97b3e146f6013483ac83db106f1992c4a8285b3402369d0",
+  "blend_sha256": "74773e4814ee5101741a51dc47eae35da3f59c1a82cf8a64a765ed1482b3868c",
+  "glb_sha256": "92b96aeb61492f78bb6880ce54bce776e7f62f5672c925282c32d4bf60e22edd",
+  "generator_sha256": "9be736e0d750faec44482df21826eb82f70b4020dc1bced9c190817b5e01235e",
+  "geometry_helper_sha256": "a0ed4679d289cb69fe6ce378b62b8bde2a7b98ba18f7ca0c95772d7bc5d8484c",
+  "shell_bounds": [
+    [
+      -1.9299999475479126,
+      -2.5799996852874756,
+      -0.21379999816417694
+    ],
+    [
+      1.9299999475479126,
+      2.130000114440918,
+      0.5772375464439392
+    ]
+  ],
+  "game_world_size": 28,
+  "layers": [
+    {
+      "node": "Build01_Frame",
+      "progress_start": 0
+    },
+    {
+      "node": "Build02_Systems",
+      "progress_start": 0.25
+    },
+    {
+      "node": "Build03_InnerPanels",
+      "progress_start": 0.55
+    },
+    {
+      "node": "Hull",
+      "progress_start": 0.82
+    }
+  ],
+  "flight_hidden_nodes": [
+    "Build01_Frame",
+    "Build02_Systems",
+    "Build03_InnerPanels"
+  ],
+  "lift_socket": [
+    0.0,
+    -0.2249997854232788,
+    0.8598375487327576
+  ],
+  "lifting_contacts": [
+    [
+      -0.3296999931335449,
+      0.10470020771026611,
+      0.1284569650888443
+    ],
+    [
+      0.3296999931335449,
+      0.10470020771026611,
+      0.1284569650888443
+    ],
+    [
+      0.0,
+      -0.6488997936248779,
+      0.10000000894069672
+    ]
+  ],
+  "mesh_nodes": 10,
+  "triangles": 53800,
+  "interior_vertices": 13304,
+  "vertices_outside_ray_sections": 0,
+  "engineering": "Authored interior constrained by actual shell sections; original exterior geometry and materials preserved, batched by material.",
+  "client_binding": "Use real build fraction for cumulative layer visibility. In flight draw Hull only, skip all Build* batches. Socket coordinates are ship-local; apply the same placement transform as the ship.",
+  "stage_images": [
+    "stage-01.png",
+    "stage-02.png",
+    "stage-03.png",
+    "stage-04.png"
+  ]
+}

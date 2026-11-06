@@ -1,0 +1,80 @@
+{
+  "issue": 227,
+  "id": "openfa:combat-eagle",
+  "source_glb": "sources/docs/assets/reconstruction/ships/terran/combat-eagle/model.glb",
+  "source_glb_sha256": "1f2279c5e2b9dee97af90bab7e7ef20ece52cc501f6e004dd47787d30a0731bb",
+  "blend_sha256": "d0a0155f386549c697f93cf224e398415fa468d8a4b75adea5b22c1964d4327d",
+  "glb_sha256": "03ac67b323ac32be68ba9a01d8ab3aa84f81f8b3127df91913b99e45f2b12ae0",
+  "generator_sha256": "9be736e0d750faec44482df21826eb82f70b4020dc1bced9c190817b5e01235e",
+  "geometry_helper_sha256": "a0ed4679d289cb69fe6ce378b62b8bde2a7b98ba18f7ca0c95772d7bc5d8484c",
+  "shell_bounds": [
+    [
+      -2.6500000953674316,
+      -2.4800000190734863,
+      -0.28999999165534973
+    ],
+    [
+      2.6500000953674316,
+      2.7200000286102295,
+      0.6679999828338623
+    ]
+  ],
+  "game_world_size": 32,
+  "layers": [
+    {
+      "node": "Build01_Frame",
+      "progress_start": 0
+    },
+    {
+      "node": "Build02_Systems",
+      "progress_start": 0.25
+    },
+    {
+      "node": "Build03_InnerPanels",
+      "progress_start": 0.55
+    },
+    {
+      "node": "Hull",
+      "progress_start": 0.82
+    }
+  ],
+  "flight_hidden_nodes": [
+    "Build01_Frame",
+    "Build02_Systems",
+    "Build03_InnerPanels"
+  ],
+  "lift_socket": [
+    0.0,
+    0.12000000476837158,
+    0.985999994277954
+  ],
+  "lifting_contacts": [
+    [
+      -0.3710000216960907,
+      0.4910000264644623,
+      0.39896509051322937
+    ],
+    [
+      0.3710000216960907,
+      0.4910000264644623,
+      0.3989705741405487
+    ],
+    [
+      0.0,
+      -0.3570000231266022,
+      0.3877571225166321
+    ]
+  ],
+  "mesh_nodes": 10,
+  "triangles": 42476,
+  "interior_vertices": 7848,
+  "vertices_outside_ray_sections": 0,
+  "engineering": "Authored interior constrained by actual shell sections; original exterior geometry and materials preserved, batched by material.",
+  "client_binding": "Use real build fraction for cumulative layer visibility. In flight draw Hull only, skip all Build* batches. Socket coordinates are ship-local; apply the same placement transform as the ship.",
+  "stage_images": [
+    "stage-01.png",
+    "stage-02.png",
+    "stage-03.png",
+    "stage-04.png"
+  ]
+}
