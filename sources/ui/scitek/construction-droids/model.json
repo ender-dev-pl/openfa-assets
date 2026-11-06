@@ -1,0 +1,308 @@
+{
+  "issue": 208,
+  "id": "scitek:construction-droids",
+  "legacy_index": 7,
+  "source": "_MA/ST07.256 + ST07.VID; _SCITEK/ST07.VID",
+  "components": {
+    "chassis": [
+      "Segmented umbrella canopy",
+      "Canopy lower dark rim",
+      "Small top aerial",
+      "Aerial base",
+      "Tapered central service body",
+      "Welder suspension strut",
+      "Welder suspension strut.001",
+      "Shoulder ball joint",
+      "Shoulder service collar",
+      "Shoulder ball joint.001",
+      "Shoulder service collar.001",
+      "Heavy arm forearm",
+      "Precision arm upper link"
+    ],
+    "heavy-manipulator": [
+      "Heavy gripper palm",
+      "Heavy curved gripping jaw",
+      "Heavy curved gripping jaw.001",
+      "Heavy curved gripping jaw.002"
+    ],
+    "optical-sensor": [
+      "Optical sensor metal housing",
+      "High resolution optical lens"
+    ],
+    "spot-welder": [
+      "Purple spot welding head",
+      "Spot welding tapered nozzle",
+      "Coiled spot welder feed"
+    ],
+    "light-manipulator": [
+      "Precision lower forearm",
+      "Light gripper wrist",
+      "Pale precision gripper finger",
+      "Pale precision gripper finger.001"
+    ],
+    "laser-solder-tool": [
+      "Laser solder tool socket",
+      "Precision laser solder needle",
+      "Precision laser solder needle.001"
+    ]
+  },
+  "solid_only_effect_nodes": [
+    "Welding spark 00",
+    "Welding spark 01",
+    "Welding spark 02",
+    "Welding spark 03",
+    "Welding spark 04",
+    "Welding spark 05",
+    "Welding spark 06",
+    "Welding spark 07",
+    "Welding spark 08",
+    "Welding spark 09",
+    "Welding spark 10",
+    "Welding spark 11",
+    "Welding spark 12",
+    "Welding spark 13",
+    "Welding spark 14",
+    "Welding spark 15",
+    "Welding spark 16",
+    "Welding spark 17",
+    "Welding spark 18",
+    "Welding spark 19",
+    "Welding spark 20",
+    "Welding spark 21",
+    "Welding spark 22",
+    "Welding spark 23",
+    "Welding spark 24",
+    "Welding spark 25",
+    "Welding spark 26",
+    "Welding spark 27",
+    "Welding spark 28",
+    "Welding spark 29",
+    "Welding spark 30",
+    "Welding spark 31",
+    "Spot welding arc"
+  ],
+  "solid_animation": {
+    "type": "articulated-rigid-nodes",
+    "root": "ConstructionDroidRig",
+    "frame_count": 120,
+    "fps": 15,
+    "body_turntable": false,
+    "timeline": "sources/ui/scitek/construction-droids/solid-animation-timeline.json",
+    "contract": "Absolute row-major4x4 mesh transforms relative to root, Blender Z-up; replace bind transforms or derive delta using bind_root_matrices. GLB contains the authoritative rigid node hierarchy and single animation clip.",
+    "animated_mesh_nodes": [
+      "Heavy gripper palm",
+      "Heavy curved gripping jaw",
+      "Heavy curved gripping jaw.001",
+      "Heavy curved gripping jaw.002",
+      "Purple spot welding head",
+      "Spot welding tapered nozzle",
+      "Precision lower forearm",
+      "Light gripper wrist",
+      "Pale precision gripper finger",
+      "Pale precision gripper finger.001",
+      "Welding spark 00",
+      "Welding spark 01",
+      "Welding spark 02",
+      "Welding spark 03",
+      "Welding spark 04",
+      "Welding spark 05",
+      "Welding spark 06",
+      "Welding spark 07",
+      "Welding spark 08",
+      "Welding spark 09",
+      "Welding spark 10",
+      "Welding spark 11",
+      "Welding spark 12",
+      "Welding spark 13",
+      "Welding spark 14",
+      "Welding spark 15",
+      "Welding spark 16",
+      "Welding spark 17",
+      "Welding spark 18",
+      "Welding spark 19",
+      "Welding spark 20",
+      "Welding spark 21",
+      "Welding spark 22",
+      "Welding spark 23",
+      "Welding spark 24",
+      "Welding spark 25",
+      "Welding spark 26",
+      "Welding spark 27",
+      "Welding spark 28",
+      "Welding spark 29",
+      "Welding spark 30",
+      "Welding spark 31",
+      "Spot welding arc"
+    ]
+  },
+  "information_timeline_frames": 705,
+  "phases": [
+    {
+      "component": "heavy-manipulator",
+      "first_legacy_frame": 29,
+      "last_legacy_frame": 139,
+      "highlight_glb": "construction-droids-highlight-heavy-manipulator.glb",
+      "closeup_camera": [
+        -0.8095236420631409,
+        -12.940000534057617,
+        1.1845872402191162
+      ],
+      "target": [
+        -0.8095236420631409,
+        -0.9400001764297485,
+        1.0345872640609741
+      ],
+      "local_target": [
+        -0.8299999833106995,
+        -0.47999998927116394,
+        1.2999999523162842
+      ],
+      "closeup_rotation_euler": [
+        0.1745329201221466,
+        -0.1745329201221466,
+        0.2617993950843811
+      ],
+      "ortho_scale": 1.25
+    },
+    {
+      "component": "optical-sensor",
+      "first_legacy_frame": 170,
+      "last_legacy_frame": 280,
+      "highlight_glb": "construction-droids-highlight-optical-sensor.glb",
+      "closeup_camera": [
+        -0.34407562017440796,
+        -11.801177978515625,
+        1.926874041557312
+      ],
+      "target": [
+        -0.34407562017440796,
+        0.19882245361804962,
+        1.77687406539917
+      ],
+      "local_target": [
+        0.23999999463558197,
+        -0.4000000059604645,
+        1.7599999904632568
+      ],
+      "closeup_rotation_euler": [
+        -0.2617993950843811,
+        -0.3490658402442932,
+        -0.3490658402442932
+      ],
+      "ortho_scale": 0.75
+    },
+    {
+      "component": "spot-welder",
+      "first_legacy_frame": 311,
+      "last_legacy_frame": 421,
+      "highlight_glb": "construction-droids-highlight-spot-welder.glb",
+      "closeup_camera": [
+        -0.38810795545578003,
+        -12.183136940002441,
+        1.1738812923431396
+      ],
+      "target": [
+        -0.38810795545578003,
+        -0.18313699960708618,
+        1.0238813161849976
+      ],
+      "local_target": [
+        0.0,
+        -0.33000001311302185,
+        1.059999942779541
+      ],
+      "closeup_rotation_euler": [
+        0.0,
+        -0.2617993950843811,
+        -0.4363323152065277
+      ],
+      "ortho_scale": 1.4500000476837158
+    },
+    {
+      "component": "light-manipulator",
+      "first_legacy_frame": 452,
+      "last_legacy_frame": 562,
+      "highlight_glb": "construction-droids-highlight-light-manipulator.glb",
+      "closeup_camera": [
+        1.1200000047683716,
+        -12.350000381469727,
+        1.7899999618530273
+      ],
+      "target": [
+        1.1200000047683716,
+        -0.3499999940395355,
+        1.6399999856948853
+      ],
+      "local_target": [
+        1.1200000047683716,
+        -0.3499999940395355,
+        1.6399999856948853
+      ],
+      "closeup_rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ortho_scale": 1.100000023841858
+    },
+    {
+      "component": "laser-solder-tool",
+      "first_legacy_frame": 593,
+      "last_legacy_frame": 703,
+      "highlight_glb": "construction-droids-highlight-laser-solder-tool.glb",
+      "closeup_camera": [
+        -0.5760772824287415,
+        -12.182741165161133,
+        2.053481101989746
+      ],
+      "target": [
+        -0.5760772824287415,
+        -0.18274140357971191,
+        1.903481125831604
+      ],
+      "local_target": [
+        1.0099999904632568,
+        0.2800000011920929,
+        1.7000000476837158
+      ],
+      "closeup_rotation_euler": [
+        0.0,
+        -0.2617993950843811,
+        2.96705961227417
+      ],
+      "ortho_scale": 1.2999999523162842
+    }
+  ],
+  "limitations": [
+    "Camera close-ups approximate observed framing; do not claim source-exact recovered 3D camera transforms."
+  ],
+  "verified": [
+    "Native render",
+    "Saved-source reload",
+    "Independent solid GLB import render"
+  ],
+  "information_delivery": {
+    "frame_count": 705,
+    "fps": 15,
+    "timeline": "sources/ui/scitek/construction-droids/information-timeline.json",
+    "verification": "gallery/media/ui/scitek/construction-droids/information-verification.json",
+    "status": "Full separate information build verified"
+  },
+  "solid_preview_camera": {
+    "position": [
+      5.199999809265137,
+      -10.0,
+      4.170000076293945
+    ],
+    "rotation_euler": [
+      1.3465533256530762,
+      4.170805567582647e-08,
+      0.46364766359329224
+    ],
+    "ortho_scale": 3.299999952316284,
+    "resolution": [
+      576,
+      640
+    ]
+  }
+}

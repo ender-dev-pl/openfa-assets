@@ -1,0 +1,768 @@
+{
+  "issue": 1115,
+  "id": "openfa:space-dock",
+  "category": "ships",
+  "culture": "terran",
+  "blend": "docs/assets/reconstruction/ships/terran/space-dock/model.blend",
+  "source_files_sha256": {
+    "authored-hull-colour.png": "64af9cbdfc7d6ea4d9bc631127b21f9cf879706fafabdffbc4c6cbeec8af9282",
+    "authored-hull-roughness.png": "b1a1fabc131f8101ce7480406ec101141098dc0555747c8845e71d6fdd883e03",
+    "authored-red-colour.png": "7f86277eac05925a4a18434836bcbd17a68e28f83f50185e5869889662a691a5",
+    "authored-red-roughness.png": "b1a1fabc131f8101ce7480406ec101141098dc0555747c8845e71d6fdd883e03",
+    "authored-wear.json": "c367ee6f84c4d012de0691f6e8969c69b73718217d4e3190678cac8c18c9665f",
+    "dock-detail.png": "e9b177239245f34484406cd081308aa9f31364edc53a5a636d3c9899626a64f2",
+    "front-quarter.png": "44489677cfa0063359692e69e0d3e4cbff7ca719eb7e49a3dcad62f5c8c04830",
+    "front.png": "1f3187211a01e1c48c4f880b5c7812b7965da0985b73960486b4b921cc204abe",
+    "gallery.png": "89cf44ae57a67f38c74280c3939abc686ac838877ab6ca65f010cab911ea9896",
+    "imported-glb-dock-detail.png": "01a9f787d9c6b9695241b57cc35f885465ef0bd0f75dbbb830588036ee06c334",
+    "imported-glb-front-quarter.png": "cfc29c26801ee522b406ca7e101aedd7cfd709769bed387afce9c600aa6c45a2",
+    "model.blend": "a0ba12d9a051fd02cf0c0a484807a3f0de33a1418aced187f14317db2c0cc5cd",
+    "model.glb": "a59f326afa6f0f94c2217de918a648dda7df805bc2f6f6522ed010325960cfdc",
+    "model.json": "75a53cc0d77a73b2c499791a0859796ed8a67095bb77f767a6456912662d4f2f",
+    "rear-quarter.png": "69a4d021acdffad06069d236c9df4f59177ea05b95177194c474bfeb34d3e246",
+    "render-review.json": "b5e8d2067418ffff84e239604b93bfc1bbcd2e8012f15744056a8ddd723325b0",
+    "side.png": "47865ec359aeba79baf8d07f60a171bd05431ff260f3a06f52dfbf9099350451",
+    "technical-review.json": "9e7d41aaa239c906aa33bc01d7cb3ca7aee9208b767a7df0eb0b713703a8e022",
+    "top.png": "aca3eabdbff8c645145fbe90cd47dc6856ac786ffff316b80994c2c0af65f448",
+    "underside.png": "62fc972a70a8c79ec201c27ff897fabd94d6fe2166219398cd1ec9566a91c3fc"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "hardpointSlots": 4,
+    "hardpointMounts": [
+      {
+        "x": 62,
+        "y": 36
+      },
+      {
+        "x": 45,
+        "y": 82
+      },
+      {
+        "x": 81,
+        "y": 82
+      },
+      {
+        "x": 62,
+        "y": 132
+      }
+    ],
+    "defaultHardpointIds": [
+      "openfa:laser",
+      "openfa:plasma-cannon",
+      "openfa:shield-x30",
+      "openfa:shield-x10"
+    ]
+  },
+  "declared_sockets": {
+    "Equipment crown": {
+      "position": [
+        0,
+        0,
+        1.08
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Equipment port": {
+      "position": [
+        -1.25,
+        0,
+        0.13
+      ],
+      "forward": [
+        -1,
+        0,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Equipment starboard": {
+      "position": [
+        1.25,
+        0,
+        0.13
+      ],
+      "forward": [
+        1,
+        0,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    },
+    "Equipment lower": {
+      "position": [
+        0,
+        -0.5,
+        -1.2
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Damage/operational variants; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 39,
+    "helpers": {
+      "Equipment crown": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.0,
+              1.5099580252808664e-07,
+              0.0,
+              0.0
+            ],
+            [
+              -1.5099580252808664e-07,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.0800000429153442
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            1.0800000429153442
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "Equipment lower": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -0.5
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              -1.2000000476837158
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -0.5,
+            -1.2000000476837158
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "Equipment port": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -4.371138828673793e-08,
+              -4.371138828673793e-08,
+              -1.0,
+              -1.25
+            ],
+            [
+              -1.0,
+              1.910685676922942e-15,
+              4.371138828673793e-08,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -4.371138828673793e-08,
+              0.12999999523162842
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            -1.25,
+            0.0,
+            0.12999999523162842
+          ],
+          "forward": [
+            -1.0,
+            4.371138828673793e-08,
+            -4.371138828673793e-08
+          ]
+        }
+      },
+      "Equipment starboard": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -4.371138828673793e-08,
+              4.371138828673793e-08,
+              1.0,
+              1.25
+            ],
+            [
+              1.0,
+              1.910685676922942e-15,
+              4.371138828673793e-08,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -4.371138828673793e-08,
+              0.12999999523162842
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            1.25,
+            0.0,
+            0.12999999523162842
+          ],
+          "forward": [
+            1.0,
+            4.371138828673793e-08,
+            -4.371138828673793e-08
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:space-dock",
+          "forward_axis": "local +Z"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 39,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:space-dock",
+          "forward_axis": "local +Z"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "Equipment crown": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -1.0,
+              1.5099580252808664e-07,
+              0.0,
+              0.0
+            ],
+            [
+              -1.5099580252808664e-07,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.0800000429153442
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            1.0800000429153442
+          ],
+          "forward": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "Equipment lower": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -0.5
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              -1.2000000476837158
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -0.5,
+            -1.2000000476837158
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      },
+      "Equipment port": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -2.220446049250313e-16,
+              0.0,
+              -1.0,
+              -1.25
+            ],
+            [
+              -1.0,
+              -2.220446049250313e-16,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -2.220446049250313e-16,
+              0.12999999523162842
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            -1.25,
+            0.0,
+            0.12999999523162842
+          ],
+          "forward": [
+            -1.0,
+            0.0,
+            -2.220446049250313e-16
+          ]
+        }
+      },
+      "Equipment starboard": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              -2.220446049250313e-16,
+              0.0,
+              1.0,
+              1.25
+            ],
+            [
+              1.0,
+              -2.220446049250313e-16,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -2.220446049250313e-16,
+              0.12999999523162842
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            1.25,
+            0.0,
+            0.12999999523162842
+          ],
+          "forward": [
+            1.0,
+            0.0,
+            -2.220446049250313e-16
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "Equipment crown": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "Equipment lower": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "Equipment port": {
+        "matrix_error": 4.371138828673793e-08,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "Equipment starboard": {
+        "matrix_error": 4.371138828673793e-08,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "Equipment crown",
+      "declaration": {
+        "position": [
+          0,
+          0,
+          1.08
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.2915344167226976e-08,
+      "forward_error": 0.0
+    },
+    {
+      "name": "Equipment port",
+      "declaration": {
+        "position": [
+          -1.25,
+          0,
+          0.13
+        ],
+        "forward": [
+          -1,
+          0,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-09,
+      "forward_error": 4.371138828673793e-08
+    },
+    {
+      "name": "Equipment starboard",
+      "declaration": {
+        "position": [
+          1.25,
+          0,
+          0.13
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-09,
+      "forward_error": 4.371138828673793e-08
+    },
+    {
+      "name": "Equipment lower",
+      "declaration": {
+        "position": [
+          0,
+          -0.5,
+          -1.2
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-08,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "Equipment crown",
+      "declaration": {
+        "position": [
+          0,
+          0,
+          1.08
+        ],
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.2915344167226976e-08,
+      "forward_error": 0.0
+    },
+    {
+      "name": "Equipment port",
+      "declaration": {
+        "position": [
+          -1.25,
+          0,
+          0.13
+        ],
+        "forward": [
+          -1,
+          0,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-09,
+      "forward_error": 2.220446049250313e-16
+    },
+    {
+      "name": "Equipment starboard",
+      "declaration": {
+        "position": [
+          1.25,
+          0,
+          0.13
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-09,
+      "forward_error": 2.220446049250313e-16
+    },
+    {
+      "name": "Equipment lower",
+      "declaration": {
+        "position": [
+          0,
+          -0.5,
+          -1.2
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 4.768371586472142e-08,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

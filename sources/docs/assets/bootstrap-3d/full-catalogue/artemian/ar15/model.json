@@ -1,0 +1,74 @@
+{
+  "global_type": 121,
+  "building_id": "openfa:building/legacy/121",
+  "name": "Star Bars",
+  "culture": "artemian",
+  "footprint": [
+    2,
+    2
+  ],
+  "preview": "AR15",
+  "assembly_family": "turret",
+  "observed_features": "Wide curved star-bar weapon hull",
+  "mesh_objects": 7,
+  "bounds_min": [
+    -0.9800000190734863,
+    -1.3615034818649292,
+    0.0
+  ],
+  "bounds_max": [
+    0.9800000190734863,
+    0.9800000190734863,
+    1.4734631776809692
+  ],
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "top"
+  ],
+  "resolution": 512,
+  "samples": 32,
+  "blender": "4.5.15 LTS",
+  "renderer": "Cycles CPU",
+  "transparent": true,
+  "imported_geometry_or_textures": [],
+  "recipe_sha256": "550d23f03475f2f054fc58a1a01c19dad22e3054d6232f087d7e1f35f2ae6830",
+  "code_sha256": "db2af3cfcc2f2b9837d172046c83fa4bbc631ee3784de0057444f281ac28b19d",
+  "rotation_rig": {
+    "generator_sha256": "aedc63862df1426e28921b9eac64c28e207b3051e295e634688d6ab011d0e857",
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "kind": "weapon head",
+    "pivot": [
+      0.0,
+      0.0,
+      1.0299999713897705
+    ],
+    "axis": "+Z",
+    "zero_forward": "-Y",
+    "positive": "counterclockwise",
+    "moving_meshes": [
+      "Weapon barrel",
+      "Weapon barrel.001",
+      "Weapon dark bore",
+      "Weapon dark bore.001",
+      "Weapon pivot"
+    ],
+    "static_meshes": [
+      "Inset service window",
+      "Turret armoured pedestal"
+    ],
+    "animation": "HeadingPreview_360",
+    "frame_start": 1,
+    "frame_end": 17,
+    "direction_count": 16,
+    "direction_step_degrees": 22.5,
+    "camera_location": [
+      9.091659545898438,
+      -13.637489318847656,
+      12.198003768920898
+    ],
+    "ortho_scale": 3.3944711685180664,
+    "runtime_heading_registration": "separate integration step; exported indices are model-local angles"
+  }
+}

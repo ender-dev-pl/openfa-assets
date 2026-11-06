@@ -1,0 +1,74 @@
+{
+  "global_type": 62,
+  "building_id": "openfa:building/legacy/062",
+  "name": "Ultrathermal Lance",
+  "culture": "rigellian",
+  "footprint": [
+    3,
+    3
+  ],
+  "preview": "RI23",
+  "assembly_family": "turret",
+  "observed_features": "Green housing with two elevated gold thermal lances",
+  "mesh_objects": 7,
+  "bounds_min": [
+    -0.9800000190734863,
+    -1.6636537313461304,
+    0.0
+  ],
+  "bounds_max": [
+    0.9800000190734863,
+    0.9800000190734863,
+    1.4840466976165771
+  ],
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "top"
+  ],
+  "resolution": 512,
+  "samples": 32,
+  "blender": "4.5.15 LTS",
+  "renderer": "Cycles CPU",
+  "transparent": true,
+  "imported_geometry_or_textures": [],
+  "recipe_sha256": "6f57beb2b22d37ac1668e17cb857af69349edf915960620c9e2c725a06a45dc1",
+  "code_sha256": "db2af3cfcc2f2b9837d172046c83fa4bbc631ee3784de0057444f281ac28b19d",
+  "rotation_rig": {
+    "generator_sha256": "aedc63862df1426e28921b9eac64c28e207b3051e295e634688d6ab011d0e857",
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "kind": "weapon head",
+    "pivot": [
+      0.0,
+      0.0,
+      1.0299999713897705
+    ],
+    "axis": "+Z",
+    "zero_forward": "-Y",
+    "positive": "counterclockwise",
+    "moving_meshes": [
+      "Weapon barrel",
+      "Weapon barrel.001",
+      "Weapon dark bore",
+      "Weapon dark bore.001",
+      "Weapon pivot"
+    ],
+    "static_meshes": [
+      "Inset service window",
+      "Turret armoured pedestal"
+    ],
+    "animation": "HeadingPreview_360",
+    "frame_start": 1,
+    "frame_end": 17,
+    "direction_count": 16,
+    "direction_step_degrees": 22.5,
+    "camera_location": [
+      9.064953804016113,
+      -13.597430229187012,
+      12.27204418182373
+    ],
+    "ortho_scale": 4.134514808654785,
+    "runtime_heading_registration": "separate integration step; exported indices are model-local angles"
+  }
+}

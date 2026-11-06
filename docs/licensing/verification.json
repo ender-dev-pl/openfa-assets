@@ -1,0 +1,28 @@
+{
+  "issue": 220,
+  "scope": "Licensing boundary and reusable utility extraction; no model or recipe regeneration.",
+  "canonical_sources_archive_gallery_unchanged": true,
+  "publication_module_ast_identical": true,
+  "original_module_sha256": "f0dbca1bd82294e1ae219fa0429cbcec3658c817ffb077f17bb78c4f85073893",
+  "reusable_module_sha256": "a11848aa7c7291822e377920db42aa49bb7dcd106c5efbba0478bd0417fe3ea7",
+  "compatibility_imports": "Six public helper functions resolve to the exact reusable function objects.",
+  "tests": {
+    "licensing": 10,
+    "publication": 6,
+    "pages": 3,
+    "workspace": 14,
+    "gallery_animations": 6,
+    "total_python": 39,
+    "node_suites": [
+      "gallery filters: 72 combinations and79 animated studies",
+      "catalogue filters:585 entries,19 scaffold families,281 stages"
+    ]
+  },
+  "runtime": "Blender4.5.15 independently imported the existing PS7C recipe and the compatibility metadata module; its existing PNG remained byte-identical after metadata processing.",
+  "limitations": [
+    "No native/GLB assets changed; this is not a new artistic/model runtime review.",
+    "Windows Temp sandbox initially blocked two pre-existing fixture suites; both pass with their original assertions using an ignored workspace temp root outside that sandbox.",
+    "No Git-history sanitization or repository visibility change.",
+    "Nine reference fixtures have no new license grant; two font files retain OFL."
+  ]
+}

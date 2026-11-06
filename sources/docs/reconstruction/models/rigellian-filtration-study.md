@@ -1,0 +1,33 @@
+# Rigellian Filtration Plant RI02
+
+Tracked in [#971](https://github.com/ender-dev-pl/ed-openfa-game/issues/971), relates to #948, #946 and reference study #970.
+
+The independently authored editable source and GLB are in `docs/assets/reconstruction/buildings/rigellian/filtration-plant/`. Preserve ID `openfa:building/legacy/041`, global type 41, definition class 38 and nominal 2x2 footprint. `PlacementRoot` is identity at ground Z=0. Runtime scale/projection calibration remains open. The earlier coarse study is retained.
+
+## Evidence and refinement
+
+`rigellian-building-references.json` records the archived RI02 surface layers, embedded VGA palette, catalogue phases, source hashes and catalogue identity. Original pixels and comparison sheets remain under ignored `artifacts/rigellian-building-reference-study/RI02/`. No original image or mesh is distributed with the model.
+
+Observed features are the broad rounded lower body, tapered shoulder, narrower capped upper tower, six gold front ports arranged in two columns, smaller upper gold fitting, lower vertical slots and tall side channel. The video sequence is a hologram reveal/highlight at the same view, not a turntable. Hidden rear closures, screws, structural rail design, exact dimensions, wear patterns and dent placement are authored interpretations.
+
+Revision 1 exposed overly regular, contrasting material patterns and lower ribs without actual recesses. Revision 2 reduced the contrast, localized dirt/stains, removed repeated diagonal bands, and cut eight real lower slots. Comparison with the readable and highlighted source phases then showed that the side rails resembled a ladder. Revision 3 replaces the cross-braces with a continuous cut service channel and curved upper rim. The major silhouette and port arrangement are readable against the references; final proportions, equipment detail and artistic quality still require further review.
+
+## Surface wear and delivery
+
+This is the first new Rigellian model authored after the 2026-10-29 wear instruction. Its shell has shallow actual geometric dents, localized faded coating, stains and joint contamination, with rubbed brass retaining rims and duller pressure faces. Wear uses ordinary mesh material assignments and geometry, with no Blender-only procedural textures or imported legacy pixels. It is intentionally restrained so the source silhouette remains legible. The side-channel cut intersects one authored dent; two other dent depths are measured by actual surface rays.
+
+`build_rigellian_filtration.py` generates the Blend, standalone GLB and six transparent 900x900 views. `verify_rigellian_filtration.py` reopens native geometry, imports the GLB and renders the imported model in the same lighting. It checks topology, positive closed-shell volumes, geometry bounds, 2x2 placement hierarchy, preserved eight material names/base colours/metallic/roughness values, real lower slots, side-channel depths and six pressure-face/body contacts. A nearest-surface vertex/face-centre diagnostic checks the connected component graph in both formats; it is not exhaustive solid-contact proof. `review_rigellian_filtration.py` verifies seven renders including the imported GLB view and builds an authored-only gallery plus an ignored reference comparison.
+
+Actual generation, rendering, reopening and GLB import run in Blender 4.5.15 LTS. Revision 3 has 83 mesh objects and eight materials; the evaluated contact diagnostic reports one connected component in both formats. The seven render framing/alpha checks pass. Wear boundaries remain visibly coarse in some close views and need finer material treatment; the side-channel crown segmentation and pressure-face detailing also remain artistic review items. No gameplay registration/renderer changed and no client integration is asserted. Construction/damage states, runtime orientation/placement, comprehensive contact assessment and final artistic acceptance remain open. The inventory registers a reference-refined study, not a finished reconstruction.
+
+## Revision 4: continuous authored wear maps
+
+`author_filtration_wear.py` now creates independent 1024x1024 colour and roughness maps from analytic joint/fitting contamination fields, soft local stains and deterministic fine scratches. It reads no legacy images. `authored-wear.json` preserves the generator/image hashes and cylindrical UV convention. `filtration_wear_material.py` assigns UVs after the geometry cuts, handles the angular seam per face and packs both images into the Blend. The GLB embeds their contents; no loose image dependency is needed to open either model.
+
+This replaces the coarse face-material patches on the two shell meshes. Three-dimensional dents, cut openings, fittings and placement remain intact. Actual native and imported renders were compared after adjusting wear strength in the final lighting. Wear stays localized around equipment and joints rather than becoming a repeated camouflage pattern. The fine scratch treatment and its roughness variation are independently authored; inferred wear is not presented as recovered original detail.
+
+Verification now checks packed native image bytes against the authored PNG hashes, the full decoded colour pixels across native and GLB, and every roughness-channel byte after glTF's ORM packing. Effective shader values are evaluated through texture, channel-separation and multiply nodes; metallic/roughness packing is allowed one 8-bit quantization step. Only used materials are compared: seven are used; the old brown-stain material remains an unused native slot and is explicitly checked as the only omitted material. Native and GLB topology/contact/dent/opening checks remain enabled. The shared mesh verifier still rejects file images by default; its opt-in permits packed images only, with independent provenance/pixel checks in this model's verifier.
+
+Boolean cutters had introduced another UV set on the body. The material now explicitly references the authored UV map, which is also active for rendering. The verifier samples coordinate correspondence on both shell objects in each format. glTF creates equivalent material variants when those objects use different UV indices; verification resolves the actual material per object and checks equivalent shading rather than assuming the first material instance controls both. Native/imported foreground render differences and exact alpha equality are also recorded in `render-review.json`.
+
+This revision resolves the coarse wear-boundary item, but does not establish final artistic acceptance. Pressure-face construction detail, channel-crown segmentation, construction/damage states and runtime placement/integration remain open.

@@ -1,0 +1,73 @@
+{
+  "global_type": 17,
+  "building_id": "terran:plasma-turret",
+  "name": "Plasma Turret",
+  "culture": "terran",
+  "footprint": [
+    2,
+    2
+  ],
+  "preview": "PB17",
+  "assembly_family": "turret",
+  "observed_features": "Sloped bronze plasma reflector and projecting barrel",
+  "mesh_objects": 6,
+  "bounds_min": [
+    -0.9800000190734863,
+    -1.2089269161224365,
+    0.0
+  ],
+  "bounds_max": [
+    0.9800000190734863,
+    0.9800000190734863,
+    1.850000023841858
+  ],
+  "views": [
+    "front-quarter",
+    "rear-quarter",
+    "top"
+  ],
+  "resolution": 512,
+  "samples": 32,
+  "blender": "4.5.15 LTS",
+  "renderer": "Cycles CPU",
+  "transparent": true,
+  "imported_geometry_or_textures": [],
+  "recipe_sha256": "9176c319a816c6606347622cd22542a6e0b454828b4cab9cc6df338d63b85488",
+  "code_sha256": "db2af3cfcc2f2b9837d172046c83fa4bbc631ee3784de0057444f281ac28b19d",
+  "rotation_rig": {
+    "generator_sha256": "aedc63862df1426e28921b9eac64c28e207b3051e295e634688d6ab011d0e857",
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "kind": "weapon head",
+    "pivot": [
+      0.0,
+      0.0,
+      1.0299999713897705
+    ],
+    "axis": "+Z",
+    "zero_forward": "-Y",
+    "positive": "counterclockwise",
+    "moving_meshes": [
+      "Turret sloped reflector",
+      "Weapon barrel",
+      "Weapon dark bore",
+      "Weapon pivot"
+    ],
+    "static_meshes": [
+      "Inset service window",
+      "Turret armoured pedestal"
+    ],
+    "animation": "HeadingPreview_360",
+    "frame_start": 1,
+    "frame_end": 17,
+    "direction_count": 16,
+    "direction_step_degrees": 22.5,
+    "camera_location": [
+      9.136853218078613,
+      -13.705280303955078,
+      12.26993179321289
+    ],
+    "ortho_scale": 3.398094892501831,
+    "runtime_heading_registration": "separate integration step; exported indices are model-local angles"
+  }
+}

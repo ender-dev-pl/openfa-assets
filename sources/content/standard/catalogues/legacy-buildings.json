@@ -1,0 +1,6136 @@
+{
+  "buildings": [
+    {
+      "id": "terran:living-quarters",
+      "nameLocalizationKey": "openfa:text/content/building/terran/living-quarters",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Living Quarters",
+        "maxHitPoints": 5,
+        "powerPriority": 2,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 50
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Living Quarters",
+        "globalType": 0,
+        "localType": 0,
+        "definitionClass": 0,
+        "baseDurability": 5,
+        "constructionUpdates": 32
+      }
+    },
+    {
+      "id": "terran:power-store",
+      "nameLocalizationKey": "openfa:text/content/building/terran/power-store",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Power Store",
+        "maxHitPoints": 34,
+        "powerPriority": 4,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerStorageCapacity",
+            "amount": 200
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "power-storage-amplifiable"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Power Store",
+        "globalType": 1,
+        "localType": 1,
+        "definitionClass": 1,
+        "baseDurability": 34,
+        "constructionUpdates": 32
+      }
+    },
+    {
+      "id": "terran:storage-facility",
+      "nameLocalizationKey": "openfa:text/content/building/terran/storage-facility",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Storage Facility",
+        "maxHitPoints": 24,
+        "powerPriority": 5,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "OreStorageCapacity",
+            "amount": 300
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Storage Facility",
+        "globalType": 2,
+        "localType": 2,
+        "definitionClass": 2,
+        "baseDurability": 24,
+        "constructionUpdates": 20
+      }
+    },
+    {
+      "id": "terran:anti-missile-pod",
+      "nameLocalizationKey": "openfa:text/content/building/terran/anti-missile-pod",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Anti-Missile Pod",
+        "maxHitPoints": 16,
+        "powerPriority": 35,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 3
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "openfa:building-capability/anti-missile-defense"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Anti-Missile Pod",
+        "globalType": 3,
+        "localType": 3,
+        "definitionClass": 3,
+        "baseDurability": 16,
+        "constructionUpdates": 36,
+        "muzzleElevationByte": 20,
+        "muzzleReachByte": 13
+      }
+    },
+    {
+      "id": "terran:solar-panel",
+      "nameLocalizationKey": "openfa:text/content/building/terran/solar-panel",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 1,
+      "footprintHeight": 1,
+      "runtime": {
+        "displayName": "Solar Panel",
+        "maxHitPoints": 5,
+        "powerPriority": 6,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 2
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "solar-power"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Solar Panel",
+        "globalType": 4,
+        "localType": 4,
+        "definitionClass": 4,
+        "baseDurability": 5,
+        "constructionUpdates": 8
+      }
+    },
+    {
+      "id": "terran:radiation-filter",
+      "nameLocalizationKey": "openfa:text/content/building/terran/radiation-filter",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Radiation Filter",
+        "maxHitPoints": 24,
+        "powerPriority": 21,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "RadiationMitigation",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Radiation Filter",
+        "globalType": 5,
+        "localType": 5,
+        "definitionClass": 5,
+        "baseDurability": 24,
+        "constructionUpdates": 30
+      }
+    },
+    {
+      "id": "terran:solar-generator",
+      "nameLocalizationKey": "openfa:text/content/building/terran/solar-generator",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Solar Generator",
+        "maxHitPoints": 10,
+        "powerPriority": 7,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 8
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "solar-power"
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "openfa:building-capability/basic-solar-generator"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Solar Generator",
+        "globalType": 6,
+        "localType": 6,
+        "definitionClass": 6,
+        "baseDurability": 10,
+        "constructionUpdates": 10
+      }
+    },
+    {
+      "id": "terran:weapons-factory",
+      "nameLocalizationKey": "openfa:text/content/building/terran/weapons-factory",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 4,
+      "footprintHeight": 4,
+      "runtime": {
+        "displayName": "Weapons Factory",
+        "maxHitPoints": 24,
+        "powerPriority": 30,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "weapons-factory"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 11,
+            "capacity": 0
+          }
+        ]
+      },
+      "legacy": {
+        "name": "Weapons Factory",
+        "globalType": 7,
+        "localType": 7,
+        "definitionClass": 7,
+        "baseDurability": 24,
+        "constructionUpdates": 32
+      }
+    },
+    {
+      "id": "terran:mine",
+      "nameLocalizationKey": "openfa:text/content/building/terran/mine",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Mine",
+        "maxHitPoints": 20,
+        "powerPriority": 31,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-common"
+          }
+        ],
+        "hardpointSlots": 0,
+        "oreExtraction": {
+          "periodDays": 4,
+          "oreIds": [
+            "openfa:selenium",
+            "openfa:asteros",
+            "openfa:barium",
+            "openfa:crystalite"
+          ],
+          "unitsPerCycle": 1,
+          "periodModifierKey": "mining.common.period"
+        }
+      },
+      "legacy": {
+        "name": "Mine",
+        "globalType": 8,
+        "localType": 8,
+        "definitionClass": 8,
+        "baseDurability": 20,
+        "constructionUpdates": 32,
+        "operationalCallbackSaveValue": 4294962080
+      }
+    },
+    {
+      "id": "terran:satellite-silo",
+      "nameLocalizationKey": "openfa:text/content/building/terran/satellite-silo",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Satellite Silo",
+        "maxHitPoints": 10,
+        "powerPriority": 36,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "SatelliteSilo",
+            "amount": 1
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "openfa:building-capability/satellite-silo"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Ship",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "spy-satellite"
+            ],
+            "parallelQueues": 10,
+            "capacity": 0,
+            "queueCapacity": 10
+          },
+          {
+            "productKind": "Ship",
+            "role": "Storage",
+            "acceptedProductTags": [
+              "spy-satellite"
+            ],
+            "parallelQueues": 1,
+            "capacity": 10
+          }
+        ]
+      },
+      "legacy": {
+        "name": "Satellite Silo",
+        "globalType": 9,
+        "localType": 9,
+        "definitionClass": 9,
+        "baseDurability": 10,
+        "constructionUpdates": 24
+      }
+    },
+    {
+      "id": "terran:screen-generator",
+      "nameLocalizationKey": "openfa:text/content/building/terran/screen-generator",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Screen Generator",
+        "maxHitPoints": 36,
+        "powerPriority": 20,
+        "powerDemand": 7,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "surface-screen"
+          }
+        ],
+        "hardpointSlots": 0,
+        "surfaceProtection": {
+          "damageDivisor": 2,
+          "coverageRows": [
+            {
+              "offsetX": -1,
+              "offsetY": -6,
+              "width": 4
+            },
+            {
+              "offsetX": -3,
+              "offsetY": -5,
+              "width": 8
+            },
+            {
+              "offsetX": -4,
+              "offsetY": -4,
+              "width": 10
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -2,
+              "width": 12
+            },
+            {
+              "offsetX": -6,
+              "offsetY": -1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 0,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 2,
+              "width": 14
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 4,
+              "width": 12
+            },
+            {
+              "offsetX": -4,
+              "offsetY": 5,
+              "width": 10
+            },
+            {
+              "offsetX": -3,
+              "offsetY": 6,
+              "width": 8
+            },
+            {
+              "offsetX": -1,
+              "offsetY": 7,
+              "width": 4
+            }
+          ]
+        }
+      },
+      "legacy": {
+        "name": "Screen Generator",
+        "globalType": 10,
+        "localType": 10,
+        "definitionClass": 10,
+        "baseDurability": 36,
+        "constructionUpdates": 52
+      }
+    },
+    {
+      "id": "terran:ore-teleporter",
+      "nameLocalizationKey": "openfa:text/content/building/terran/ore-teleporter",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Ore Teleporter",
+        "maxHitPoints": 36,
+        "powerPriority": 38,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "ore-teleporter"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Ore Teleporter",
+        "globalType": 11,
+        "localType": 11,
+        "definitionClass": 11,
+        "baseDurability": 36,
+        "constructionUpdates": 48
+      }
+    },
+    {
+      "id": "terran:gravity-nullifier",
+      "nameLocalizationKey": "openfa:text/content/building/terran/gravity-nullifier",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Gravity Nullifier",
+        "maxHitPoints": 24,
+        "powerPriority": 37,
+        "powerDemand": 4,
+        "powerDemandMode": "SingleActiveInstance",
+        "canPlayerToggle": true,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "gravity-nullifier"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Gravity Nullifier",
+        "globalType": 12,
+        "localType": 12,
+        "definitionClass": 12,
+        "baseDurability": 24,
+        "constructionUpdates": 52,
+        "operationalCallbackSaveValue": 4294961872
+      }
+    },
+    {
+      "id": "terran:deep-bore-mine",
+      "nameLocalizationKey": "openfa:text/content/building/terran/deep-bore-mine",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Deep Bore Mine",
+        "maxHitPoints": 20,
+        "powerPriority": 32,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-deep"
+          }
+        ],
+        "hardpointSlots": 0,
+        "oreExtraction": {
+          "periodDays": 16,
+          "oreIds": [
+            "openfa:quazinc",
+            "openfa:bytanium",
+            "openfa:korellium",
+            "openfa:dragonium"
+          ],
+          "unitsPerCycle": 1,
+          "periodModifierKey": "mining.deep-bore.period"
+        }
+      },
+      "legacy": {
+        "name": "Deep Bore Mine",
+        "globalType": 13,
+        "localType": 13,
+        "definitionClass": 13,
+        "baseDurability": 20,
+        "constructionUpdates": 36,
+        "operationalCallbackSaveValue": 4294961824
+      }
+    },
+    {
+      "id": "terran:missile-silo",
+      "nameLocalizationKey": "openfa:text/content/building/terran/missile-silo",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Missile Silo",
+        "maxHitPoints": 15,
+        "powerPriority": 15,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "MissileSilo",
+            "amount": 1
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "missile-silo"
+          },
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 14
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Storage",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 1,
+            "capacity": 10
+          }
+        ]
+      },
+      "legacy": {
+        "name": "Missile Silo",
+        "globalType": 14,
+        "localType": 14,
+        "definitionClass": 14,
+        "baseDurability": 15,
+        "constructionUpdates": 32
+      }
+    },
+    {
+      "id": "terran:repair-facility",
+      "nameLocalizationKey": "openfa:text/content/building/terran/repair-facility",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Repair Facility",
+        "maxHitPoints": 20,
+        "powerPriority": 22,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "repair-facility"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Repair Facility",
+        "globalType": 15,
+        "localType": 15,
+        "definitionClass": 15,
+        "baseDurability": 20,
+        "constructionUpdates": 36,
+        "operationalCallbackSaveValue": 4294961616
+      }
+    },
+    {
+      "id": "terran:sensor-array",
+      "nameLocalizationKey": "openfa:text/content/building/terran/sensor-array",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 1,
+      "footprintHeight": 1,
+      "runtime": {
+        "displayName": "Sensor Array",
+        "maxHitPoints": 15,
+        "powerPriority": 28,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "sensor-array"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Sensor Array",
+        "globalType": 16,
+        "localType": 16,
+        "definitionClass": 16,
+        "baseDurability": 15,
+        "constructionUpdates": 36
+      }
+    },
+    {
+      "id": "terran:plasma-turret",
+      "nameLocalizationKey": "openfa:text/content/building/terran/plasma-turret",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Plasma Turret",
+        "maxHitPoints": 20,
+        "powerPriority": 26,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 17
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "openfa:building-capability/surface-defense"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Plasma Turret",
+        "globalType": 17,
+        "localType": 17,
+        "definitionClass": 17,
+        "baseDurability": 20,
+        "constructionUpdates": 30
+      }
+    },
+    {
+      "id": "terran:photon-turret",
+      "nameLocalizationKey": "openfa:text/content/building/terran/photon-turret",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Photon Turret",
+        "maxHitPoints": 20,
+        "powerPriority": 25,
+        "powerDemand": 4,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 18
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Photon Turret",
+        "globalType": 18,
+        "localType": 18,
+        "definitionClass": 18,
+        "baseDurability": 20,
+        "constructionUpdates": 52
+      }
+    },
+    {
+      "id": "terran:air-processor",
+      "nameLocalizationKey": "openfa:text/content/building/terran/air-processor",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Air Processor",
+        "maxHitPoints": 24,
+        "powerPriority": 16,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 400,
+            "resourceId": "air"
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "openfa:building-capability/air-production"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Air Processor",
+        "globalType": 19,
+        "localType": 19,
+        "definitionClass": 19,
+        "baseDurability": 24,
+        "constructionUpdates": 48
+      }
+    },
+    {
+      "id": "terran:cpu",
+      "nameLocalizationKey": "openfa:text/content/building/terran/cpu",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 4,
+      "footprintHeight": 4,
+      "runtime": {
+        "displayName": "C.P.U.",
+        "maxHitPoints": 36,
+        "powerPriority": 0,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 100
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "air"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "food"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "water"
+          },
+          {
+            "type": "PowerGeneration",
+            "amount": 8
+          },
+          {
+            "type": "PowerStorageCapacity",
+            "amount": 50
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "cpu-bootstrap"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "C.P.U.",
+        "globalType": 20,
+        "localType": 20,
+        "definitionClass": 20,
+        "baseDurability": 36,
+        "constructionUpdates": 40,
+        "operationalCallbackSaveValue": 4294961296,
+        "constructionCost": 8000
+      }
+    },
+    {
+      "id": "terran:seismic-penetrator",
+      "nameLocalizationKey": "openfa:text/content/building/terran/seismic-penetrator",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "runtime": {
+        "displayName": "Seismic Penetrator",
+        "maxHitPoints": 24,
+        "powerPriority": 34,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-rare"
+          }
+        ],
+        "hardpointSlots": 0,
+        "oreExtraction": {
+          "periodDays": 32,
+          "oreIds": [
+            "openfa:traxium",
+            "openfa:nexos"
+          ],
+          "unitsPerCycle": 1
+        }
+      },
+      "legacy": {
+        "name": "Seismic Penetrator",
+        "globalType": 21,
+        "localType": 21,
+        "definitionClass": 21,
+        "baseDurability": 24,
+        "constructionUpdates": 42,
+        "operationalCallbackSaveValue": 4294961216
+      }
+    },
+    {
+      "id": "terran:asteroid-engine",
+      "nameLocalizationKey": "openfa:text/content/building/terran/asteroid-engine",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "runtime": {
+        "displayName": "Asteroid Engine",
+        "maxHitPoints": 28,
+        "powerPriority": 39,
+        "powerDemand": 0,
+        "powerDemandMode": "AsteroidDriftSpeed",
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "asteroid-engine"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Asteroid Engine",
+        "globalType": 22,
+        "localType": 22,
+        "definitionClass": 22,
+        "baseDurability": 28,
+        "constructionUpdates": 64,
+        "operationalCallbackSaveValue": 4294960192
+      }
+    },
+    {
+      "id": "terran:powerplant",
+      "nameLocalizationKey": "openfa:text/content/building/terran/powerplant",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "runtime": {
+        "displayName": "Powerplant",
+        "maxHitPoints": 34,
+        "powerPriority": 1,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 32
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "asteros-powerplant"
+          }
+        ],
+        "hardpointSlots": 0,
+        "fuelledPower": {
+          "oreId": "openfa:asteros",
+          "fuelledGeneration": 32,
+          "unfuelledGeneration": 8,
+          "consumptionUnits": 1,
+          "consumptionPeriodDays": 4
+        }
+      },
+      "legacy": {
+        "name": "Powerplant",
+        "globalType": 23,
+        "localType": 23,
+        "definitionClass": 23,
+        "baseDurability": 34,
+        "constructionUpdates": 40
+      }
+    },
+    {
+      "id": "terran:command-centre",
+      "nameLocalizationKey": "openfa:text/content/building/terran/command-centre",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "runtime": {
+        "displayName": "Command Centre",
+        "maxHitPoints": 36,
+        "powerPriority": 19,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "fleet-command"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Command Centre",
+        "globalType": 24,
+        "localType": 24,
+        "definitionClass": 24,
+        "baseDurability": 36,
+        "constructionUpdates": 32
+      }
+    },
+    {
+      "id": "terran:ship-yard",
+      "nameLocalizationKey": "openfa:text/content/building/terran/ship-yard",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "runtime": {
+        "displayName": "Ship Yard",
+        "maxHitPoints": 20,
+        "powerPriority": 29,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "ship-yard"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Ship",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "ship"
+            ],
+            "parallelQueues": 1,
+            "capacity": 0,
+            "queueCapacity": 3,
+            "queueCapacityModifierKey": "ship.construction.queue-capacity"
+          }
+        ]
+      },
+      "legacy": {
+        "name": "Ship Yard",
+        "globalType": 25,
+        "localType": 25,
+        "definitionClass": 25,
+        "baseDurability": 20,
+        "constructionUpdates": 32,
+        "operationalCallbackSaveValue": 4294960976
+      }
+    },
+    {
+      "id": "terran:landing-pad",
+      "nameLocalizationKey": "openfa:text/content/building/terran/landing-pad",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Landing Pad",
+        "maxHitPoints": 5,
+        "powerPriority": 13,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "landing-pad"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Landing Pad",
+        "globalType": 26,
+        "localType": 26,
+        "definitionClass": 26,
+        "baseDurability": 5,
+        "constructionUpdates": 16
+      }
+    },
+    {
+      "id": "terran:laser-turret",
+      "nameLocalizationKey": "openfa:text/content/building/terran/laser-turret",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Laser Turret",
+        "maxHitPoints": 16,
+        "powerPriority": 27,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 27
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Laser Turret",
+        "globalType": 27,
+        "localType": 27,
+        "definitionClass": 27,
+        "baseDurability": 16,
+        "constructionUpdates": 25
+      }
+    },
+    {
+      "id": "terran:solar-matrix",
+      "nameLocalizationKey": "openfa:text/content/building/terran/solar-matrix",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Solar Matrix",
+        "maxHitPoints": 10,
+        "powerPriority": 8,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 12
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "solar-power"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Solar Matrix",
+        "globalType": 28,
+        "localType": 28,
+        "definitionClass": 28,
+        "baseDurability": 10,
+        "constructionUpdates": 32
+      }
+    },
+    {
+      "id": "terran:resiblock",
+      "nameLocalizationKey": "openfa:text/content/building/terran/resiblock",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Resiblock",
+        "maxHitPoints": 10,
+        "powerPriority": 3,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 150
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "openfa:building-capability/basic-housing"
+          },
+          {
+            "type": "Morale",
+            "amount": 1
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Resiblock",
+        "globalType": 29,
+        "localType": 29,
+        "definitionClass": 29,
+        "baseDurability": 10,
+        "constructionUpdates": 48
+      }
+    },
+    {
+      "id": "terran:storage-tower",
+      "nameLocalizationKey": "openfa:text/content/building/terran/storage-tower",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Storage Tower",
+        "maxHitPoints": 32,
+        "powerPriority": 10,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "OreStorageCapacity",
+            "amount": 600
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "openfa:building-capability/ore-storage-tower"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Storage Tower",
+        "globalType": 30,
+        "localType": 30,
+        "definitionClass": 30,
+        "baseDurability": 32,
+        "constructionUpdates": 40
+      }
+    },
+    {
+      "id": "terran:protected-solar-matrix",
+      "nameLocalizationKey": "openfa:text/content/building/terran/protected-solar-matrix",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "P. Solar Matrix",
+        "maxHitPoints": 20,
+        "powerPriority": 9,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 12
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "solar-power"
+          },
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 27
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "P. Solar Matrix",
+        "globalType": 31,
+        "localType": 31,
+        "definitionClass": 31,
+        "baseDurability": 20,
+        "constructionUpdates": 32
+      }
+    },
+    {
+      "id": "terran:refuelling-depot",
+      "nameLocalizationKey": "openfa:text/content/building/terran/refuelling-depot",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Refuelling Depot",
+        "maxHitPoints": 40,
+        "powerPriority": 14,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "refuelling"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Refuelling Depot",
+        "globalType": 32,
+        "localType": 32,
+        "definitionClass": 32,
+        "baseDurability": 40,
+        "constructionUpdates": 30
+      }
+    },
+    {
+      "id": "terran:protected-storage-tower",
+      "nameLocalizationKey": "openfa:text/content/building/terran/protected-storage-tower",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "P. Storage Tower",
+        "maxHitPoints": 32,
+        "powerPriority": 23,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "OreStorageCapacity",
+            "amount": 600
+          },
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 27
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "P. Storage Tower",
+        "globalType": 33,
+        "localType": 33,
+        "definitionClass": 33,
+        "baseDurability": 32,
+        "constructionUpdates": 48
+      }
+    },
+    {
+      "id": "terran:medical-centre",
+      "nameLocalizationKey": "openfa:text/content/building/terran/medical-centre",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "runtime": {
+        "displayName": "Medical Centre",
+        "maxHitPoints": 15,
+        "powerPriority": 24,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "HealthCare",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Medical Centre",
+        "globalType": 34,
+        "localType": 34,
+        "definitionClass": 34,
+        "baseDurability": 15,
+        "constructionUpdates": 30
+      }
+    },
+    {
+      "id": "terran:environment-control",
+      "nameLocalizationKey": "openfa:text/content/building/terran/environment-control",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Environment Control",
+        "maxHitPoints": 34,
+        "powerPriority": 11,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 3000,
+            "resourceId": "air"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "food"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "water"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Environment Control",
+        "globalType": 35,
+        "localType": 35,
+        "definitionClass": 35,
+        "baseDurability": 34,
+        "constructionUpdates": 20
+      }
+    },
+    {
+      "id": "terran:pleasure-dome",
+      "nameLocalizationKey": "openfa:text/content/building/terran/pleasure-dome",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "runtime": {
+        "displayName": "Pleasure Dome",
+        "maxHitPoints": 10,
+        "powerPriority": 12,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "Morale",
+            "amount": 2
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Pleasure Dome",
+        "globalType": 36,
+        "localType": 36,
+        "definitionClass": 36,
+        "baseDurability": 10,
+        "constructionUpdates": 32
+      }
+    },
+    {
+      "id": "terran:hydroponics-plant",
+      "nameLocalizationKey": "openfa:text/content/building/terran/hydroponics-plant",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "runtime": {
+        "displayName": "Hydroponics Plant",
+        "maxHitPoints": 24,
+        "powerPriority": 18,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 300,
+            "resourceId": "food"
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "openfa:building-capability/food-production"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Hydroponics Plant",
+        "globalType": 37,
+        "localType": 37,
+        "definitionClass": 37,
+        "baseDurability": 24,
+        "constructionUpdates": 16
+      }
+    },
+    {
+      "id": "terran:hydration-plant",
+      "nameLocalizationKey": "openfa:text/content/building/terran/hydration-plant",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Hydration Plant",
+        "maxHitPoints": 20,
+        "powerPriority": 17,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 400,
+            "resourceId": "water"
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "openfa:building-capability/water-production"
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Hydration Plant",
+        "globalType": 38,
+        "localType": 38,
+        "definitionClass": 38,
+        "baseDurability": 20,
+        "constructionUpdates": 20
+      }
+    },
+    {
+      "id": "terran:security-centre",
+      "nameLocalizationKey": "openfa:text/content/building/terran/security-centre",
+      "factionId": "openfa:faction/terran",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "runtime": {
+        "displayName": "Security Centre",
+        "maxHitPoints": 15,
+        "powerPriority": 33,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Security",
+            "amount": 1,
+            "engageSelfOwnedIncomingMissiles": false
+          }
+        ],
+        "hardpointSlots": 0
+      },
+      "legacy": {
+        "name": "Security Centre",
+        "globalType": 39,
+        "localType": 39,
+        "definitionClass": 39,
+        "baseDurability": 15,
+        "constructionUpdates": 24
+      }
+    },
+    {
+      "id": "openfa:building/legacy/040",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Central Unit",
+        "globalType": 40,
+        "localType": 0,
+        "definitionClass": 20,
+        "baseDurability": 30,
+        "constructionUpdates": 36
+      },
+      "runtime": {
+        "displayName": "Central Unit",
+        "maxHitPoints": 30,
+        "powerPriority": 0,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 100
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "air"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "food"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "water"
+          },
+          {
+            "type": "PowerGeneration",
+            "amount": 8
+          },
+          {
+            "type": "PowerStorageCapacity",
+            "amount": 50
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "cpu-bootstrap"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/041",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Filtration Plant",
+        "globalType": 41,
+        "localType": 1,
+        "definitionClass": 38,
+        "baseDurability": 20,
+        "constructionUpdates": 20
+      },
+      "runtime": {
+        "displayName": "Filtration Plant",
+        "maxHitPoints": 20,
+        "powerPriority": 17,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 400,
+            "resourceId": "water"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/042",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Nourishment Bank",
+        "globalType": 42,
+        "localType": 2,
+        "definitionClass": 37,
+        "baseDurability": 10,
+        "constructionUpdates": 20
+      },
+      "runtime": {
+        "displayName": "Nourishment Bank",
+        "maxHitPoints": 10,
+        "powerPriority": 18,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 300,
+            "resourceId": "food"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/043",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Community",
+        "globalType": 43,
+        "localType": 3,
+        "definitionClass": 0,
+        "baseDurability": 20,
+        "constructionUpdates": 48
+      },
+      "runtime": {
+        "displayName": "Community",
+        "maxHitPoints": 20,
+        "powerPriority": 2,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 50
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/044",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Health Unit",
+        "globalType": 44,
+        "localType": 4,
+        "definitionClass": 34,
+        "baseDurability": 30,
+        "constructionUpdates": 36
+      },
+      "runtime": {
+        "displayName": "Health Unit",
+        "maxHitPoints": 30,
+        "powerPriority": 24,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "HealthCare",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/045",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Strategic Bunker",
+        "globalType": 45,
+        "localType": 5,
+        "definitionClass": 24,
+        "baseDurability": 45,
+        "constructionUpdates": 34
+      },
+      "runtime": {
+        "displayName": "Strategic Bunker",
+        "maxHitPoints": 45,
+        "powerPriority": 19,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "fleet-command"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/046",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Science Labs",
+        "globalType": 46,
+        "localType": 6,
+        "definitionClass": 255,
+        "baseDurability": 50,
+        "constructionUpdates": 58
+      },
+      "runtime": {
+        "displayName": "Science Labs",
+        "maxHitPoints": 50,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/047",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Databanks",
+        "globalType": 47,
+        "localType": 7,
+        "definitionClass": 255,
+        "baseDurability": 50,
+        "constructionUpdates": 44
+      },
+      "runtime": {
+        "displayName": "Databanks",
+        "maxHitPoints": 50,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/048",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 4,
+      "footprintHeight": 4,
+      "legacy": {
+        "name": "Construction Unit",
+        "globalType": 48,
+        "localType": 8,
+        "definitionClass": 25,
+        "baseDurability": 30,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Construction Unit",
+        "maxHitPoints": 30,
+        "powerPriority": 29,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "ship-yard"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Ship",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "ship"
+            ],
+            "parallelQueues": 1,
+            "capacity": 0,
+            "queueCapacity": 3,
+            "queueCapacityModifierKey": "ship.construction.queue-capacity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/049",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Ground Deck",
+        "globalType": 49,
+        "localType": 9,
+        "definitionClass": 26,
+        "baseDurability": 20,
+        "constructionUpdates": 18
+      },
+      "runtime": {
+        "displayName": "Ground Deck",
+        "maxHitPoints": 20,
+        "powerPriority": 13,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "landing-pad"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/050",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Probe Launch",
+        "globalType": 50,
+        "localType": 10,
+        "definitionClass": 9,
+        "baseDurability": 30,
+        "constructionUpdates": 24
+      },
+      "runtime": {
+        "displayName": "Probe Launch",
+        "maxHitPoints": 30,
+        "powerPriority": 36,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "SatelliteSilo",
+            "amount": 1
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/051",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Deep Space Probes",
+        "globalType": 51,
+        "localType": 11,
+        "definitionClass": 16,
+        "baseDurability": 30,
+        "constructionUpdates": 36
+      },
+      "runtime": {
+        "displayName": "Deep Space Probes",
+        "maxHitPoints": 30,
+        "powerPriority": 28,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "sensor-array"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/052",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Gravitic Converter",
+        "globalType": 52,
+        "localType": 12,
+        "definitionClass": 22,
+        "baseDurability": 10,
+        "constructionUpdates": 46
+      },
+      "runtime": {
+        "displayName": "Gravitic Converter",
+        "maxHitPoints": 10,
+        "powerPriority": 39,
+        "powerDemand": 0,
+        "powerDemandMode": "AsteroidDriftSpeed",
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "asteroid-engine"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/053",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Energy Gatherer",
+        "globalType": 53,
+        "localType": 13,
+        "definitionClass": 28,
+        "baseDurability": 30,
+        "constructionUpdates": 46
+      },
+      "runtime": {
+        "displayName": "Energy Gatherer",
+        "maxHitPoints": 30,
+        "powerPriority": 8,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 12
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "solar-power"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/054",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Energy Globe",
+        "globalType": 54,
+        "localType": 14,
+        "definitionClass": 1,
+        "baseDurability": 30,
+        "constructionUpdates": 52
+      },
+      "runtime": {
+        "displayName": "Energy Globe",
+        "maxHitPoints": 30,
+        "powerPriority": 4,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerStorageCapacity",
+            "amount": 200
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "power-storage-amplifiable"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/055",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Shield Generator",
+        "globalType": 55,
+        "localType": 15,
+        "definitionClass": 10,
+        "baseDurability": 45,
+        "constructionUpdates": 46
+      },
+      "runtime": {
+        "displayName": "Shield Generator",
+        "maxHitPoints": 45,
+        "powerPriority": 20,
+        "powerDemand": 7,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "surface-screen"
+          }
+        ],
+        "hardpointSlots": 0,
+        "surfaceProtection": {
+          "damageDivisor": 2,
+          "coverageRows": [
+            {
+              "offsetX": -1,
+              "offsetY": -6,
+              "width": 4
+            },
+            {
+              "offsetX": -3,
+              "offsetY": -5,
+              "width": 8
+            },
+            {
+              "offsetX": -4,
+              "offsetY": -4,
+              "width": 10
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -2,
+              "width": 12
+            },
+            {
+              "offsetX": -6,
+              "offsetY": -1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 0,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 2,
+              "width": 14
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 4,
+              "width": 12
+            },
+            {
+              "offsetX": -4,
+              "offsetY": 5,
+              "width": 10
+            },
+            {
+              "offsetX": -3,
+              "offsetY": 6,
+              "width": 8
+            },
+            {
+              "offsetX": -1,
+              "offsetY": 7,
+              "width": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "openfa:building/legacy/056",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Arms Unit",
+        "globalType": 56,
+        "localType": 16,
+        "definitionClass": 7,
+        "baseDurability": 40,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Arms Unit",
+        "maxHitPoints": 40,
+        "powerPriority": 30,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "weapons-factory"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 11,
+            "capacity": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/057",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Missile Launcher",
+        "globalType": 57,
+        "localType": 17,
+        "definitionClass": 14,
+        "baseDurability": 25,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Missile Launcher",
+        "maxHitPoints": 25,
+        "powerPriority": 15,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "MissileSilo",
+            "amount": 1
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "missile-silo"
+          },
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 14
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Storage",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 1,
+            "capacity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/058",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Thermal Lance",
+        "globalType": 58,
+        "localType": 18,
+        "definitionClass": 17,
+        "baseDurability": 25,
+        "constructionUpdates": 28
+      },
+      "runtime": {
+        "displayName": "Thermal Lance",
+        "maxHitPoints": 25,
+        "powerPriority": 26,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 17
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/059",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Extractor",
+        "globalType": 59,
+        "localType": 19,
+        "definitionClass": 8,
+        "baseDurability": 35,
+        "constructionUpdates": 42
+      },
+      "runtime": {
+        "displayName": "Extractor",
+        "maxHitPoints": 35,
+        "powerPriority": 31,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-common"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/060",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Storage racks",
+        "globalType": 60,
+        "localType": 20,
+        "definitionClass": 30,
+        "baseDurability": 40,
+        "constructionUpdates": 48
+      },
+      "runtime": {
+        "displayName": "Storage racks",
+        "maxHitPoints": 40,
+        "powerPriority": 10,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "OreStorageCapacity",
+            "amount": 600
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/061",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 4,
+      "footprintHeight": 4,
+      "legacy": {
+        "name": "Ex-Fang",
+        "globalType": 61,
+        "localType": 21,
+        "definitionClass": 40,
+        "baseDurability": 45,
+        "constructionUpdates": 48
+      },
+      "runtime": {
+        "displayName": "Ex-Fang",
+        "maxHitPoints": 45,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 40
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/062",
+      "factionId": "openfa:faction/rigellian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Ultrathermal Lance",
+        "globalType": 62,
+        "localType": 22,
+        "definitionClass": 18,
+        "baseDurability": 45,
+        "constructionUpdates": 57
+      },
+      "runtime": {
+        "displayName": "Ultrathermal Lance",
+        "maxHitPoints": 45,
+        "powerPriority": 25,
+        "powerDemand": 4,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 18
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/063",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "First Step",
+        "globalType": 63,
+        "localType": 0,
+        "definitionClass": 20,
+        "baseDurability": 45,
+        "constructionUpdates": 45
+      },
+      "runtime": {
+        "displayName": "First Step",
+        "maxHitPoints": 45,
+        "powerPriority": 0,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 100
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "air"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "food"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "water"
+          },
+          {
+            "type": "PowerGeneration",
+            "amount": 8
+          },
+          {
+            "type": "PowerStorageCapacity",
+            "amount": 50
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "cpu-bootstrap"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/064",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Clan Heart",
+        "globalType": 64,
+        "localType": 1,
+        "definitionClass": 24,
+        "baseDurability": 55,
+        "constructionUpdates": 73
+      },
+      "runtime": {
+        "displayName": "Clan Heart",
+        "maxHitPoints": 55,
+        "powerPriority": 19,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "fleet-command"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/065",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Radiation Shield",
+        "globalType": 65,
+        "localType": 2,
+        "definitionClass": 5,
+        "baseDurability": 16,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Radiation Shield",
+        "maxHitPoints": 16,
+        "powerPriority": 21,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "RadiationMitigation",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/066",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Source",
+        "globalType": 66,
+        "localType": 3,
+        "definitionClass": 37,
+        "baseDurability": 45,
+        "constructionUpdates": 40
+      },
+      "runtime": {
+        "displayName": "Source",
+        "maxHitPoints": 45,
+        "powerPriority": 18,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 300,
+            "resourceId": "food"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/067",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Aesir's Hall",
+        "globalType": 67,
+        "localType": 4,
+        "definitionClass": 19,
+        "baseDurability": 30,
+        "constructionUpdates": 50
+      },
+      "runtime": {
+        "displayName": "Aesir's Hall",
+        "maxHitPoints": 30,
+        "powerPriority": 16,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 400,
+            "resourceId": "air"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/068",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Longhouse",
+        "globalType": 68,
+        "localType": 5,
+        "definitionClass": 0,
+        "baseDurability": 25,
+        "constructionUpdates": 35
+      },
+      "runtime": {
+        "displayName": "Longhouse",
+        "maxHitPoints": 25,
+        "powerPriority": 2,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 50
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/069",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Sports Hall",
+        "globalType": 69,
+        "localType": 6,
+        "definitionClass": 255,
+        "baseDurability": 25,
+        "constructionUpdates": 58
+      },
+      "runtime": {
+        "displayName": "Sports Hall",
+        "maxHitPoints": 25,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/070",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Field Hospital",
+        "globalType": 70,
+        "localType": 7,
+        "definitionClass": 34,
+        "baseDurability": 15,
+        "constructionUpdates": 26
+      },
+      "runtime": {
+        "displayName": "Field Hospital",
+        "maxHitPoints": 15,
+        "powerPriority": 24,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "HealthCare",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/071",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Glasshouse",
+        "globalType": 71,
+        "localType": 8,
+        "definitionClass": 39,
+        "baseDurability": 15,
+        "constructionUpdates": 22
+      },
+      "runtime": {
+        "displayName": "Glasshouse",
+        "maxHitPoints": 15,
+        "powerPriority": 33,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Security",
+            "amount": 1
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/072",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "TechMech",
+        "globalType": 72,
+        "localType": 9,
+        "definitionClass": 25,
+        "baseDurability": 40,
+        "constructionUpdates": 45
+      },
+      "runtime": {
+        "displayName": "TechMech",
+        "maxHitPoints": 40,
+        "powerPriority": 29,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "ship-yard"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Ship",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "ship"
+            ],
+            "parallelQueues": 1,
+            "capacity": 0,
+            "queueCapacity": 3,
+            "queueCapacityModifierKey": "ship.construction.queue-capacity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/073",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Launch Site",
+        "globalType": 73,
+        "localType": 10,
+        "definitionClass": 26,
+        "baseDurability": 20,
+        "constructionUpdates": 12
+      },
+      "runtime": {
+        "displayName": "Launch Site",
+        "maxHitPoints": 20,
+        "powerPriority": 13,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "landing-pad"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/074",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Eyes-in-the-Sky",
+        "globalType": 74,
+        "localType": 11,
+        "definitionClass": 9,
+        "baseDurability": 25,
+        "constructionUpdates": 24
+      },
+      "runtime": {
+        "displayName": "Eyes-in-the-Sky",
+        "maxHitPoints": 25,
+        "powerPriority": 36,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "SatelliteSilo",
+            "amount": 1
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/075",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Eyes-and-Ears",
+        "globalType": 75,
+        "localType": 12,
+        "definitionClass": 16,
+        "baseDurability": 25,
+        "constructionUpdates": 35
+      },
+      "runtime": {
+        "displayName": "Eyes-and-Ears",
+        "maxHitPoints": 25,
+        "powerPriority": 28,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "sensor-array"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/076",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Anchor",
+        "globalType": 76,
+        "localType": 13,
+        "definitionClass": 22,
+        "baseDurability": 30,
+        "constructionUpdates": 65
+      },
+      "runtime": {
+        "displayName": "Anchor",
+        "maxHitPoints": 30,
+        "powerPriority": 39,
+        "powerDemand": 0,
+        "powerDemandMode": "AsteroidDriftSpeed",
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "asteroid-engine"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/077",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Heart-of-the-Sun",
+        "globalType": 77,
+        "localType": 14,
+        "definitionClass": 28,
+        "baseDurability": 35,
+        "constructionUpdates": 50
+      },
+      "runtime": {
+        "displayName": "Heart-of-the-Sun",
+        "maxHitPoints": 35,
+        "powerPriority": 8,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 12
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "solar-power"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/078",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Aegis",
+        "globalType": 78,
+        "localType": 15,
+        "definitionClass": 10,
+        "baseDurability": 35,
+        "constructionUpdates": 50
+      },
+      "runtime": {
+        "displayName": "Aegis",
+        "maxHitPoints": 35,
+        "powerPriority": 20,
+        "powerDemand": 7,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "surface-screen"
+          }
+        ],
+        "hardpointSlots": 0,
+        "surfaceProtection": {
+          "damageDivisor": 2,
+          "coverageRows": [
+            {
+              "offsetX": -1,
+              "offsetY": -6,
+              "width": 4
+            },
+            {
+              "offsetX": -3,
+              "offsetY": -5,
+              "width": 8
+            },
+            {
+              "offsetX": -4,
+              "offsetY": -4,
+              "width": 10
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -2,
+              "width": 12
+            },
+            {
+              "offsetX": -6,
+              "offsetY": -1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 0,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 2,
+              "width": 14
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 4,
+              "width": 12
+            },
+            {
+              "offsetX": -4,
+              "offsetY": 5,
+              "width": 10
+            },
+            {
+              "offsetX": -3,
+              "offsetY": 6,
+              "width": 8
+            },
+            {
+              "offsetX": -1,
+              "offsetY": 7,
+              "width": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "openfa:building/legacy/079",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Forge",
+        "globalType": 79,
+        "localType": 16,
+        "definitionClass": 7,
+        "baseDurability": 60,
+        "constructionUpdates": 57
+      },
+      "runtime": {
+        "displayName": "Forge",
+        "maxHitPoints": 60,
+        "powerPriority": 30,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "weapons-factory"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 11,
+            "capacity": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/080",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Anti-Battery",
+        "globalType": 80,
+        "localType": 17,
+        "definitionClass": 3,
+        "baseDurability": 35,
+        "constructionUpdates": 30,
+        "muzzleElevationByte": 32,
+        "muzzleReachByte": 14
+      },
+      "runtime": {
+        "displayName": "Anti-Battery",
+        "maxHitPoints": 35,
+        "powerPriority": 35,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/081",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Battery",
+        "globalType": 81,
+        "localType": 18,
+        "definitionClass": 14,
+        "baseDurability": 35,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Battery",
+        "maxHitPoints": 35,
+        "powerPriority": 15,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "MissileSilo",
+            "amount": 1
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "missile-silo"
+          },
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 14
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Storage",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 1,
+            "capacity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/082",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Turret",
+        "globalType": 82,
+        "localType": 19,
+        "definitionClass": 18,
+        "baseDurability": 30,
+        "constructionUpdates": 42
+      },
+      "runtime": {
+        "displayName": "Turret",
+        "maxHitPoints": 30,
+        "powerPriority": 25,
+        "powerDemand": 4,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 18
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/083",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Subterranean Extractor",
+        "globalType": 83,
+        "localType": 20,
+        "definitionClass": 8,
+        "baseDurability": 30,
+        "constructionUpdates": 48
+      },
+      "runtime": {
+        "displayName": "Subterranean Extractor",
+        "maxHitPoints": 30,
+        "powerPriority": 31,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-common"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/084",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Pithoi",
+        "globalType": 84,
+        "localType": 21,
+        "definitionClass": 30,
+        "baseDurability": 30,
+        "constructionUpdates": 56
+      },
+      "runtime": {
+        "displayName": "Pithoi",
+        "maxHitPoints": 30,
+        "powerPriority": 10,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "OreStorageCapacity",
+            "amount": 600
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/085",
+      "factionId": "openfa:faction/braccatian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Fire Power",
+        "globalType": 85,
+        "localType": 22,
+        "definitionClass": 17,
+        "baseDurability": 30,
+        "constructionUpdates": 32
+      },
+      "runtime": {
+        "displayName": "Fire Power",
+        "maxHitPoints": 30,
+        "powerPriority": 26,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 17
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/086",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Base Crystal",
+        "globalType": 86,
+        "localType": 0,
+        "definitionClass": 20,
+        "baseDurability": 50,
+        "constructionUpdates": 50
+      },
+      "runtime": {
+        "displayName": "Base Crystal",
+        "maxHitPoints": 50,
+        "powerPriority": 0,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 100
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "air"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "food"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "water"
+          },
+          {
+            "type": "PowerGeneration",
+            "amount": 8
+          },
+          {
+            "type": "PowerStorageCapacity",
+            "amount": 50
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "cpu-bootstrap"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/087",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Stability",
+        "globalType": 87,
+        "localType": 1,
+        "definitionClass": 24,
+        "baseDurability": 40,
+        "constructionUpdates": 78
+      },
+      "runtime": {
+        "displayName": "Stability",
+        "maxHitPoints": 40,
+        "powerPriority": 19,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "fleet-command"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/088",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Purity",
+        "globalType": 88,
+        "localType": 2,
+        "definitionClass": 5,
+        "baseDurability": 35,
+        "constructionUpdates": 52
+      },
+      "runtime": {
+        "displayName": "Purity",
+        "maxHitPoints": 35,
+        "powerPriority": 21,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "RadiationMitigation",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/089",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Fulfilment",
+        "globalType": 89,
+        "localType": 3,
+        "definitionClass": 37,
+        "baseDurability": 30,
+        "constructionUpdates": 50
+      },
+      "runtime": {
+        "displayName": "Fulfilment",
+        "maxHitPoints": 30,
+        "powerPriority": 18,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 300,
+            "resourceId": "food"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/090",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Internal",
+        "globalType": 90,
+        "localType": 4,
+        "definitionClass": 0,
+        "baseDurability": 12,
+        "constructionUpdates": 56
+      },
+      "runtime": {
+        "displayName": "Internal",
+        "maxHitPoints": 12,
+        "powerPriority": 2,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 50
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/091",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Dream",
+        "globalType": 91,
+        "localType": 5,
+        "definitionClass": 255,
+        "baseDurability": 40,
+        "constructionUpdates": 38
+      },
+      "runtime": {
+        "displayName": "Dream",
+        "maxHitPoints": 40,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/092",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Resonance",
+        "globalType": 92,
+        "localType": 6,
+        "definitionClass": 255,
+        "baseDurability": 50,
+        "constructionUpdates": 66
+      },
+      "runtime": {
+        "displayName": "Resonance",
+        "maxHitPoints": 50,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/093",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Fa-lanth",
+        "globalType": 93,
+        "localType": 7,
+        "definitionClass": 10,
+        "baseDurability": 45,
+        "constructionUpdates": 50
+      },
+      "runtime": {
+        "displayName": "Fa-lanth",
+        "maxHitPoints": 45,
+        "powerPriority": 20,
+        "powerDemand": 7,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "surface-screen"
+          }
+        ],
+        "hardpointSlots": 0,
+        "surfaceProtection": {
+          "damageDivisor": 2,
+          "coverageRows": [
+            {
+              "offsetX": -1,
+              "offsetY": -6,
+              "width": 4
+            },
+            {
+              "offsetX": -3,
+              "offsetY": -5,
+              "width": 8
+            },
+            {
+              "offsetX": -4,
+              "offsetY": -4,
+              "width": 10
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -2,
+              "width": 12
+            },
+            {
+              "offsetX": -6,
+              "offsetY": -1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 0,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 2,
+              "width": 14
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 4,
+              "width": 12
+            },
+            {
+              "offsetX": -4,
+              "offsetY": 5,
+              "width": 10
+            },
+            {
+              "offsetX": -3,
+              "offsetY": 6,
+              "width": 8
+            },
+            {
+              "offsetX": -1,
+              "offsetY": 7,
+              "width": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "openfa:building/legacy/094",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Mask",
+        "globalType": 94,
+        "localType": 8,
+        "definitionClass": 255,
+        "baseDurability": 30,
+        "constructionUpdates": 80
+      },
+      "runtime": {
+        "displayName": "Mask",
+        "maxHitPoints": 30,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/095",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Structures Matrix",
+        "globalType": 95,
+        "localType": 9,
+        "definitionClass": 25,
+        "baseDurability": 25,
+        "constructionUpdates": 35
+      },
+      "runtime": {
+        "displayName": "Structures Matrix",
+        "maxHitPoints": 25,
+        "powerPriority": 29,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "ship-yard"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Ship",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "ship"
+            ],
+            "parallelQueues": 1,
+            "capacity": 0,
+            "queueCapacity": 3,
+            "queueCapacityModifierKey": "ship.construction.queue-capacity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/096",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Volition",
+        "globalType": 96,
+        "localType": 10,
+        "definitionClass": 26,
+        "baseDurability": 10,
+        "constructionUpdates": 18
+      },
+      "runtime": {
+        "displayName": "Volition",
+        "maxHitPoints": 10,
+        "powerPriority": 13,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "landing-pad"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/097",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Visibility",
+        "globalType": 97,
+        "localType": 11,
+        "definitionClass": 9,
+        "baseDurability": 20,
+        "constructionUpdates": 24
+      },
+      "runtime": {
+        "displayName": "Visibility",
+        "maxHitPoints": 20,
+        "powerPriority": 36,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "SatelliteSilo",
+            "amount": 1
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/098",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Perception",
+        "globalType": 98,
+        "localType": 12,
+        "definitionClass": 16,
+        "baseDurability": 20,
+        "constructionUpdates": 36
+      },
+      "runtime": {
+        "displayName": "Perception",
+        "maxHitPoints": 20,
+        "powerPriority": 28,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "sensor-array"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/099",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Capacitors",
+        "globalType": 99,
+        "localType": 13,
+        "definitionClass": 28,
+        "baseDurability": 35,
+        "constructionUpdates": 40
+      },
+      "runtime": {
+        "displayName": "Capacitors",
+        "maxHitPoints": 35,
+        "powerPriority": 8,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 12
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "solar-power"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/100",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Lanth",
+        "globalType": 100,
+        "localType": 14,
+        "definitionClass": 255,
+        "baseDurability": 50,
+        "constructionUpdates": 55
+      },
+      "runtime": {
+        "displayName": "Lanth",
+        "maxHitPoints": 50,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/101",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Sharir",
+        "globalType": 101,
+        "localType": 15,
+        "definitionClass": 7,
+        "baseDurability": 20,
+        "constructionUpdates": 34
+      },
+      "runtime": {
+        "displayName": "Sharir",
+        "maxHitPoints": 20,
+        "powerPriority": 30,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "weapons-factory"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 11,
+            "capacity": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/102",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Shrekn",
+        "globalType": 102,
+        "localType": 16,
+        "definitionClass": 14,
+        "baseDurability": 10,
+        "constructionUpdates": 32
+      },
+      "runtime": {
+        "displayName": "Shrekn",
+        "maxHitPoints": 10,
+        "powerPriority": 15,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "MissileSilo",
+            "amount": 1
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "missile-silo"
+          },
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 14
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Storage",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 1,
+            "capacity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/103",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Ruth-feror",
+        "globalType": 103,
+        "localType": 17,
+        "definitionClass": 8,
+        "baseDurability": 15,
+        "constructionUpdates": 48
+      },
+      "runtime": {
+        "displayName": "Ruth-feror",
+        "maxHitPoints": 15,
+        "powerPriority": 31,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-common"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/104",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Ruth-fett",
+        "globalType": 104,
+        "localType": 18,
+        "definitionClass": 30,
+        "baseDurability": 10,
+        "constructionUpdates": 40
+      },
+      "runtime": {
+        "displayName": "Ruth-fett",
+        "maxHitPoints": 10,
+        "powerPriority": 10,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "OreStorageCapacity",
+            "amount": 600
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/105",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Merl",
+        "globalType": 105,
+        "localType": 19,
+        "definitionClass": 17,
+        "baseDurability": 15,
+        "constructionUpdates": 35
+      },
+      "runtime": {
+        "displayName": "Merl",
+        "maxHitPoints": 15,
+        "powerPriority": 26,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 17
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/106",
+      "factionId": "openfa:faction/mikotaj",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Na-Shrekn",
+        "globalType": 106,
+        "localType": 20,
+        "definitionClass": 18,
+        "baseDurability": 20,
+        "constructionUpdates": 57
+      },
+      "runtime": {
+        "displayName": "Na-Shrekn",
+        "maxHitPoints": 20,
+        "powerPriority": 25,
+        "powerDemand": 4,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 18
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/107",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 4,
+      "footprintHeight": 4,
+      "legacy": {
+        "name": "SoftCore",
+        "globalType": 107,
+        "localType": 0,
+        "definitionClass": 20,
+        "baseDurability": 25,
+        "constructionUpdates": 40
+      },
+      "runtime": {
+        "displayName": "SoftCore",
+        "maxHitPoints": 25,
+        "powerPriority": 0,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 100
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "air"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "food"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "water"
+          },
+          {
+            "type": "PowerGeneration",
+            "amount": 8
+          },
+          {
+            "type": "PowerStorageCapacity",
+            "amount": 50
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "cpu-bootstrap"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/108",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Environmental Stabiliser",
+        "globalType": 108,
+        "localType": 1,
+        "definitionClass": 35,
+        "baseDurability": 50,
+        "constructionUpdates": 26
+      },
+      "runtime": {
+        "displayName": "Environmental Stabiliser",
+        "maxHitPoints": 50,
+        "powerPriority": 11,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 3000,
+            "resourceId": "air"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "food"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "water"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/109",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Filtration Tanks",
+        "globalType": 109,
+        "localType": 2,
+        "definitionClass": 37,
+        "baseDurability": 50,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Filtration Tanks",
+        "maxHitPoints": 50,
+        "powerPriority": 18,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 300,
+            "resourceId": "food"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/110",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Canisters",
+        "globalType": 110,
+        "localType": 3,
+        "definitionClass": 0,
+        "baseDurability": 20,
+        "constructionUpdates": 46
+      },
+      "runtime": {
+        "displayName": "Canisters",
+        "maxHitPoints": 20,
+        "powerPriority": 2,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 50
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/111",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Nurseries",
+        "globalType": 111,
+        "localType": 4,
+        "definitionClass": 255,
+        "baseDurability": 60,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Nurseries",
+        "maxHitPoints": 60,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/112",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Healing Quarters",
+        "globalType": 112,
+        "localType": 5,
+        "definitionClass": 34,
+        "baseDurability": 15,
+        "constructionUpdates": 26
+      },
+      "runtime": {
+        "displayName": "Healing Quarters",
+        "maxHitPoints": 15,
+        "powerPriority": 24,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "HealthCare",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/113",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "House of the Axe",
+        "globalType": 113,
+        "localType": 6,
+        "definitionClass": 255,
+        "baseDurability": 35,
+        "constructionUpdates": 48
+      },
+      "runtime": {
+        "displayName": "House of the Axe",
+        "maxHitPoints": 35,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/114",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Naval Dockyard",
+        "globalType": 114,
+        "localType": 7,
+        "definitionClass": 25,
+        "baseDurability": 45,
+        "constructionUpdates": 56
+      },
+      "runtime": {
+        "displayName": "Naval Dockyard",
+        "maxHitPoints": 45,
+        "powerPriority": 29,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "ship-yard"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Ship",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "ship"
+            ],
+            "parallelQueues": 1,
+            "capacity": 0,
+            "queueCapacity": 3,
+            "queueCapacityModifierKey": "ship.construction.queue-capacity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/115",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Launch Pads",
+        "globalType": 115,
+        "localType": 8,
+        "definitionClass": 26,
+        "baseDurability": 20,
+        "constructionUpdates": 18
+      },
+      "runtime": {
+        "displayName": "Launch Pads",
+        "maxHitPoints": 20,
+        "powerPriority": 13,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "landing-pad"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/116",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Deep Probes",
+        "globalType": 116,
+        "localType": 9,
+        "definitionClass": 16,
+        "baseDurability": 25,
+        "constructionUpdates": 34
+      },
+      "runtime": {
+        "displayName": "Deep Probes",
+        "maxHitPoints": 25,
+        "powerPriority": 28,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "sensor-array"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/117",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Gravitic Converter",
+        "globalType": 117,
+        "localType": 10,
+        "definitionClass": 22,
+        "baseDurability": 20,
+        "constructionUpdates": 50
+      },
+      "runtime": {
+        "displayName": "Gravitic Converter",
+        "maxHitPoints": 20,
+        "powerPriority": 39,
+        "powerDemand": 0,
+        "powerDemandMode": "AsteroidDriftSpeed",
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "asteroid-engine"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/118",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Shielded Solars",
+        "globalType": 118,
+        "localType": 11,
+        "definitionClass": 28,
+        "baseDurability": 35,
+        "constructionUpdates": 46
+      },
+      "runtime": {
+        "displayName": "Shielded Solars",
+        "maxHitPoints": 35,
+        "powerPriority": 8,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 12
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "solar-power"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/119",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Shell",
+        "globalType": 119,
+        "localType": 12,
+        "definitionClass": 255,
+        "baseDurability": 40,
+        "constructionUpdates": 44
+      },
+      "runtime": {
+        "displayName": "Shell",
+        "maxHitPoints": 40,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/120",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Arms Forge",
+        "globalType": 120,
+        "localType": 13,
+        "definitionClass": 7,
+        "baseDurability": 50,
+        "constructionUpdates": 36
+      },
+      "runtime": {
+        "displayName": "Arms Forge",
+        "maxHitPoints": 50,
+        "powerPriority": 30,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "weapons-factory"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 11,
+            "capacity": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/121",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Star Bars",
+        "globalType": 121,
+        "localType": 14,
+        "definitionClass": 3,
+        "baseDurability": 23,
+        "constructionUpdates": 34,
+        "muzzleElevationByte": 27,
+        "muzzleReachByte": 26
+      },
+      "runtime": {
+        "displayName": "Star Bars",
+        "maxHitPoints": 23,
+        "powerPriority": 35,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/122",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Missile Launcher",
+        "globalType": 122,
+        "localType": 15,
+        "definitionClass": 14,
+        "baseDurability": 35,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Missile Launcher",
+        "maxHitPoints": 35,
+        "powerPriority": 15,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "MissileSilo",
+            "amount": 1
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "missile-silo"
+          },
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 14
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Storage",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 1,
+            "capacity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/123",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Auto-deterrent",
+        "globalType": 123,
+        "localType": 16,
+        "definitionClass": 17,
+        "baseDurability": 40,
+        "constructionUpdates": 28
+      },
+      "runtime": {
+        "displayName": "Auto-deterrent",
+        "maxHitPoints": 40,
+        "powerPriority": 26,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 17
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/124",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Super-deterrent",
+        "globalType": 124,
+        "localType": 17,
+        "definitionClass": 18,
+        "baseDurability": 40,
+        "constructionUpdates": 48
+      },
+      "runtime": {
+        "displayName": "Super-deterrent",
+        "maxHitPoints": 40,
+        "powerPriority": 25,
+        "powerDemand": 4,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 18
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/125",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Force Fields",
+        "globalType": 125,
+        "localType": 18,
+        "definitionClass": 10,
+        "baseDurability": 30,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Force Fields",
+        "maxHitPoints": 30,
+        "powerPriority": 20,
+        "powerDemand": 7,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "surface-screen"
+          }
+        ],
+        "hardpointSlots": 0,
+        "surfaceProtection": {
+          "damageDivisor": 2,
+          "coverageRows": [
+            {
+              "offsetX": -1,
+              "offsetY": -6,
+              "width": 4
+            },
+            {
+              "offsetX": -3,
+              "offsetY": -5,
+              "width": 8
+            },
+            {
+              "offsetX": -4,
+              "offsetY": -4,
+              "width": 10
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -2,
+              "width": 12
+            },
+            {
+              "offsetX": -6,
+              "offsetY": -1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 0,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 2,
+              "width": 14
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 4,
+              "width": 12
+            },
+            {
+              "offsetX": -4,
+              "offsetY": 5,
+              "width": 10
+            },
+            {
+              "offsetX": -3,
+              "offsetY": 6,
+              "width": 8
+            },
+            {
+              "offsetX": -1,
+              "offsetY": 7,
+              "width": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "openfa:building/legacy/126",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Advanced Ore Extractor",
+        "globalType": 126,
+        "localType": 19,
+        "definitionClass": 13,
+        "baseDurability": 30,
+        "constructionUpdates": 34
+      },
+      "runtime": {
+        "displayName": "Advanced Ore Extractor",
+        "maxHitPoints": 30,
+        "powerPriority": 32,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-deep"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/127",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Rare Ore Extractor",
+        "globalType": 127,
+        "localType": 20,
+        "definitionClass": 21,
+        "baseDurability": 35,
+        "constructionUpdates": 40
+      },
+      "runtime": {
+        "displayName": "Rare Ore Extractor",
+        "maxHitPoints": 35,
+        "powerPriority": 34,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-rare"
+          }
+        ],
+        "hardpointSlots": 0,
+        "oreExtraction": {
+          "periodDays": 32,
+          "oreIds": [
+            "openfa:traxium",
+            "openfa:nexos"
+          ],
+          "unitsPerCycle": 1
+        }
+      }
+    },
+    {
+      "id": "openfa:building/legacy/128",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Ore Depot",
+        "globalType": 128,
+        "localType": 21,
+        "definitionClass": 30,
+        "baseDurability": 25,
+        "constructionUpdates": 24
+      },
+      "runtime": {
+        "displayName": "Ore Depot",
+        "maxHitPoints": 25,
+        "powerPriority": 10,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "OreStorageCapacity",
+            "amount": 600
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/129",
+      "factionId": "openfa:faction/artemian",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Refining Forge",
+        "globalType": 129,
+        "localType": 22,
+        "definitionClass": 255,
+        "baseDurability": 35,
+        "constructionUpdates": 38
+      },
+      "runtime": {
+        "displayName": "Refining Forge",
+        "maxHitPoints": 35,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/130",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Base Block",
+        "globalType": 130,
+        "localType": 0,
+        "definitionClass": 20,
+        "baseDurability": 50,
+        "constructionUpdates": 35
+      },
+      "runtime": {
+        "displayName": "Base Block",
+        "maxHitPoints": 50,
+        "powerPriority": 0,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 100
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "air"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "food"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "water"
+          },
+          {
+            "type": "PowerGeneration",
+            "amount": 8
+          },
+          {
+            "type": "PowerStorageCapacity",
+            "amount": 50
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "cpu-bootstrap"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/131",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Shielding Block",
+        "globalType": 131,
+        "localType": 1,
+        "definitionClass": 5,
+        "baseDurability": 20,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Shielding Block",
+        "maxHitPoints": 20,
+        "powerPriority": 21,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "RadiationMitigation",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/132",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Nutrition Block",
+        "globalType": 132,
+        "localType": 2,
+        "definitionClass": 37,
+        "baseDurability": 20,
+        "constructionUpdates": 26
+      },
+      "runtime": {
+        "displayName": "Nutrition Block",
+        "maxHitPoints": 20,
+        "powerPriority": 18,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 300,
+            "resourceId": "food"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/133",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Off-duty Block",
+        "globalType": 133,
+        "localType": 3,
+        "definitionClass": 0,
+        "baseDurability": 20,
+        "constructionUpdates": 24
+      },
+      "runtime": {
+        "displayName": "Off-duty Block",
+        "maxHitPoints": 20,
+        "powerPriority": 2,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 50
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/134",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Health Block",
+        "globalType": 134,
+        "localType": 4,
+        "definitionClass": 34,
+        "baseDurability": 10,
+        "constructionUpdates": 16
+      },
+      "runtime": {
+        "displayName": "Health Block",
+        "maxHitPoints": 10,
+        "powerPriority": 24,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "HealthCare",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/135",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "The Cube",
+        "globalType": 135,
+        "localType": 5,
+        "definitionClass": 255,
+        "baseDurability": 30,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "The Cube",
+        "maxHitPoints": 30,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/136",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Elite Block",
+        "globalType": 136,
+        "localType": 6,
+        "definitionClass": 16,
+        "baseDurability": 60,
+        "constructionUpdates": 56
+      },
+      "runtime": {
+        "displayName": "Elite Block",
+        "maxHitPoints": 60,
+        "powerPriority": 28,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "sensor-array"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/137",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 4,
+      "footprintHeight": 4,
+      "legacy": {
+        "name": "Construction Area",
+        "globalType": 137,
+        "localType": 7,
+        "definitionClass": 25,
+        "baseDurability": 50,
+        "constructionUpdates": 32
+      },
+      "runtime": {
+        "displayName": "Construction Area",
+        "maxHitPoints": 50,
+        "powerPriority": 29,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "ship-yard"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Ship",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "ship"
+            ],
+            "parallelQueues": 1,
+            "capacity": 0,
+            "queueCapacity": 3,
+            "queueCapacityModifierKey": "ship.construction.queue-capacity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/138",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Launch Area",
+        "globalType": 138,
+        "localType": 8,
+        "definitionClass": 26,
+        "baseDurability": 40,
+        "constructionUpdates": 18
+      },
+      "runtime": {
+        "displayName": "Launch Area",
+        "maxHitPoints": 40,
+        "powerPriority": 13,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "landing-pad"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/139",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Satellite Pad",
+        "globalType": 139,
+        "localType": 9,
+        "definitionClass": 9,
+        "baseDurability": 45,
+        "constructionUpdates": 24
+      },
+      "runtime": {
+        "displayName": "Satellite Pad",
+        "maxHitPoints": 45,
+        "powerPriority": 36,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "SatelliteSilo",
+            "amount": 1
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/140",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Fast Breeder Reactor",
+        "globalType": 140,
+        "localType": 10,
+        "definitionClass": 28,
+        "baseDurability": 35,
+        "constructionUpdates": 52
+      },
+      "runtime": {
+        "displayName": "Fast Breeder Reactor",
+        "maxHitPoints": 35,
+        "powerPriority": 8,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 12
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "solar-power"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/141",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 4,
+      "footprintHeight": 4,
+      "legacy": {
+        "name": "Arms Block",
+        "globalType": 141,
+        "localType": 11,
+        "definitionClass": 7,
+        "baseDurability": 50,
+        "constructionUpdates": 36
+      },
+      "runtime": {
+        "displayName": "Arms Block",
+        "maxHitPoints": 50,
+        "powerPriority": 30,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "weapons-factory"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 11,
+            "capacity": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/142",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Defence Pods",
+        "globalType": 142,
+        "localType": 12,
+        "definitionClass": 3,
+        "baseDurability": 40,
+        "constructionUpdates": 34,
+        "muzzleElevationByte": 32,
+        "muzzleReachByte": 26
+      },
+      "runtime": {
+        "displayName": "Defence Pods",
+        "maxHitPoints": 40,
+        "powerPriority": 35,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/143",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Attack Pods",
+        "globalType": 143,
+        "localType": 13,
+        "definitionClass": 14,
+        "baseDurability": 40,
+        "constructionUpdates": 34
+      },
+      "runtime": {
+        "displayName": "Attack Pods",
+        "maxHitPoints": 40,
+        "powerPriority": 15,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "MissileSilo",
+            "amount": 1
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "missile-silo"
+          },
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 14
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Storage",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 1,
+            "capacity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/144",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Pulse Tower",
+        "globalType": 144,
+        "localType": 14,
+        "definitionClass": 17,
+        "baseDurability": 40,
+        "constructionUpdates": 32
+      },
+      "runtime": {
+        "displayName": "Pulse Tower",
+        "maxHitPoints": 40,
+        "powerPriority": 26,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 17
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/145",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Screening Pods",
+        "globalType": 145,
+        "localType": 15,
+        "definitionClass": 10,
+        "baseDurability": 30,
+        "constructionUpdates": 34
+      },
+      "runtime": {
+        "displayName": "Screening Pods",
+        "maxHitPoints": 30,
+        "powerPriority": 20,
+        "powerDemand": 7,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "surface-screen"
+          }
+        ],
+        "hardpointSlots": 0,
+        "surfaceProtection": {
+          "damageDivisor": 2,
+          "coverageRows": [
+            {
+              "offsetX": -1,
+              "offsetY": -6,
+              "width": 4
+            },
+            {
+              "offsetX": -3,
+              "offsetY": -5,
+              "width": 8
+            },
+            {
+              "offsetX": -4,
+              "offsetY": -4,
+              "width": 10
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -2,
+              "width": 12
+            },
+            {
+              "offsetX": -6,
+              "offsetY": -1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 0,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 2,
+              "width": 14
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 4,
+              "width": 12
+            },
+            {
+              "offsetX": -4,
+              "offsetY": 5,
+              "width": 10
+            },
+            {
+              "offsetX": -3,
+              "offsetY": 6,
+              "width": 8
+            },
+            {
+              "offsetX": -1,
+              "offsetY": 7,
+              "width": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "openfa:building/legacy/146",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Advanced Extraction Unit",
+        "globalType": 146,
+        "localType": 16,
+        "definitionClass": 13,
+        "baseDurability": 30,
+        "constructionUpdates": 38
+      },
+      "runtime": {
+        "displayName": "Advanced Extraction Unit",
+        "maxHitPoints": 30,
+        "powerPriority": 32,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-deep"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/147",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Superior Extraction Unit",
+        "globalType": 147,
+        "localType": 17,
+        "definitionClass": 21,
+        "baseDurability": 40,
+        "constructionUpdates": 44
+      },
+      "runtime": {
+        "displayName": "Superior Extraction Unit",
+        "maxHitPoints": 40,
+        "powerPriority": 34,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-rare"
+          }
+        ],
+        "hardpointSlots": 0,
+        "oreExtraction": {
+          "periodDays": 32,
+          "oreIds": [
+            "openfa:traxium",
+            "openfa:nexos"
+          ],
+          "unitsPerCycle": 1
+        }
+      }
+    },
+    {
+      "id": "openfa:building/legacy/148",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Ores Block",
+        "globalType": 148,
+        "localType": 18,
+        "definitionClass": 30,
+        "baseDurability": 50,
+        "constructionUpdates": 32
+      },
+      "runtime": {
+        "displayName": "Ores Block",
+        "maxHitPoints": 50,
+        "powerPriority": 10,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "OreStorageCapacity",
+            "amount": 600
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/149",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Motion Units",
+        "globalType": 149,
+        "localType": 19,
+        "definitionClass": 22,
+        "baseDurability": 60,
+        "constructionUpdates": 66
+      },
+      "runtime": {
+        "displayName": "Motion Units",
+        "maxHitPoints": 60,
+        "powerPriority": 39,
+        "powerDemand": 0,
+        "powerDemandMode": "AsteroidDriftSpeed",
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "asteroid-engine"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/150",
+      "factionId": "openfa:faction/mauna",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Laser Boost",
+        "globalType": 150,
+        "localType": 20,
+        "definitionClass": 18,
+        "baseDurability": 45,
+        "constructionUpdates": 28
+      },
+      "runtime": {
+        "displayName": "Laser Boost",
+        "maxHitPoints": 45,
+        "powerPriority": 25,
+        "powerDemand": 4,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 18
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/151",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Footprint",
+        "globalType": 151,
+        "localType": 0,
+        "definitionClass": 20,
+        "baseDurability": 38,
+        "constructionUpdates": 50
+      },
+      "runtime": {
+        "displayName": "Footprint",
+        "maxHitPoints": 38,
+        "powerPriority": 0,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 100
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "air"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "food"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "water"
+          },
+          {
+            "type": "PowerGeneration",
+            "amount": 8
+          },
+          {
+            "type": "PowerStorageCapacity",
+            "amount": 50
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "cpu-bootstrap"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/152",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Anti-Rad Screen",
+        "globalType": 152,
+        "localType": 1,
+        "definitionClass": 5,
+        "baseDurability": 15,
+        "constructionUpdates": 32
+      },
+      "runtime": {
+        "displayName": "Anti-Rad Screen",
+        "maxHitPoints": 15,
+        "powerPriority": 21,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "RadiationMitigation",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/153",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Environmental Control",
+        "globalType": 153,
+        "localType": 2,
+        "definitionClass": 35,
+        "baseDurability": 15,
+        "constructionUpdates": 36
+      },
+      "runtime": {
+        "displayName": "Environmental Control",
+        "maxHitPoints": 15,
+        "powerPriority": 11,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 3000,
+            "resourceId": "air"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "food"
+          },
+          {
+            "type": "ResourceStorageCapacity",
+            "amount": 1000,
+            "resourceId": "water"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/154",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Filtration Vats",
+        "globalType": 154,
+        "localType": 3,
+        "definitionClass": 38,
+        "baseDurability": 30,
+        "constructionUpdates": 38
+      },
+      "runtime": {
+        "displayName": "Filtration Vats",
+        "maxHitPoints": 30,
+        "powerPriority": 17,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 400,
+            "resourceId": "water"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/155",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Nutrient Vats",
+        "globalType": 155,
+        "localType": 4,
+        "definitionClass": 37,
+        "baseDurability": 30,
+        "constructionUpdates": 40
+      },
+      "runtime": {
+        "displayName": "Nutrient Vats",
+        "maxHitPoints": 30,
+        "powerPriority": 18,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "ResourceProduction",
+            "amount": 300,
+            "resourceId": "food"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/156",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Habitat",
+        "globalType": 156,
+        "localType": 5,
+        "definitionClass": 0,
+        "baseDurability": 25,
+        "constructionUpdates": 56
+      },
+      "runtime": {
+        "displayName": "Habitat",
+        "maxHitPoints": 25,
+        "powerPriority": 2,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PopulationCapacity",
+            "amount": 50
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/157",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Pharmacopeion",
+        "globalType": 157,
+        "localType": 6,
+        "definitionClass": 34,
+        "baseDurability": 15,
+        "constructionUpdates": 30
+      },
+      "runtime": {
+        "displayName": "Pharmacopeion",
+        "maxHitPoints": 15,
+        "powerPriority": 24,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "HealthCare",
+            "amount": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/158",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Gathering Ground",
+        "globalType": 158,
+        "localType": 7,
+        "definitionClass": 255,
+        "baseDurability": 45,
+        "constructionUpdates": 68
+      },
+      "runtime": {
+        "displayName": "Gathering Ground",
+        "maxHitPoints": 45,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/159",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Market",
+        "globalType": 159,
+        "localType": 8,
+        "definitionClass": 255,
+        "baseDurability": 45,
+        "constructionUpdates": 76
+      },
+      "runtime": {
+        "displayName": "Market",
+        "maxHitPoints": 45,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/160",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Communications Central",
+        "globalType": 160,
+        "localType": 9,
+        "definitionClass": 24,
+        "baseDurability": 50,
+        "constructionUpdates": 36
+      },
+      "runtime": {
+        "displayName": "Communications Central",
+        "maxHitPoints": 50,
+        "powerPriority": 19,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "fleet-command"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/161",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Shipyard",
+        "globalType": 161,
+        "localType": 10,
+        "definitionClass": 25,
+        "baseDurability": 30,
+        "constructionUpdates": 45
+      },
+      "runtime": {
+        "displayName": "Shipyard",
+        "maxHitPoints": 30,
+        "powerPriority": 29,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "ship-yard"
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Ship",
+            "role": "Manufacture",
+            "acceptedProductTags": [
+              "ship"
+            ],
+            "parallelQueues": 1,
+            "capacity": 0,
+            "queueCapacity": 3,
+            "queueCapacityModifierKey": "ship.construction.queue-capacity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/162",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Landing Pad",
+        "globalType": 162,
+        "localType": 11,
+        "definitionClass": 26,
+        "baseDurability": 10,
+        "constructionUpdates": 18
+      },
+      "runtime": {
+        "displayName": "Landing Pad",
+        "maxHitPoints": 10,
+        "powerPriority": 13,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "landing-pad"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/163",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Missile Launcher",
+        "globalType": 163,
+        "localType": 12,
+        "definitionClass": 14,
+        "baseDurability": 40,
+        "constructionUpdates": 34
+      },
+      "runtime": {
+        "displayName": "Missile Launcher",
+        "maxHitPoints": 40,
+        "powerPriority": 15,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "MissileSilo",
+            "amount": 1
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "missile-silo"
+          },
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 14
+          }
+        ],
+        "hardpointSlots": 0,
+        "productionFacilities": [
+          {
+            "productKind": "Missile",
+            "role": "Storage",
+            "acceptedProductTags": [
+              "missile"
+            ],
+            "parallelQueues": 1,
+            "capacity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "openfa:building/legacy/164",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Data Gatherer",
+        "globalType": 164,
+        "localType": 13,
+        "definitionClass": 9,
+        "baseDurability": 15,
+        "constructionUpdates": 28
+      },
+      "runtime": {
+        "displayName": "Data Gatherer",
+        "maxHitPoints": 15,
+        "powerPriority": 36,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "SatelliteSilo",
+            "amount": 1
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/165",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Listening Device",
+        "globalType": 165,
+        "localType": 14,
+        "definitionClass": 16,
+        "baseDurability": 20,
+        "constructionUpdates": 40
+      },
+      "runtime": {
+        "displayName": "Listening Device",
+        "maxHitPoints": 20,
+        "powerPriority": 28,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "sensor-array"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/166",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Manoeuvring Device",
+        "globalType": 166,
+        "localType": 15,
+        "definitionClass": 22,
+        "baseDurability": 35,
+        "constructionUpdates": 68
+      },
+      "runtime": {
+        "displayName": "Manoeuvring Device",
+        "maxHitPoints": 35,
+        "powerPriority": 39,
+        "powerDemand": 0,
+        "powerDemandMode": "AsteroidDriftSpeed",
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "asteroid-engine"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/167",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Destination Beam",
+        "globalType": 167,
+        "localType": 16,
+        "definitionClass": 255,
+        "baseDurability": 50,
+        "constructionUpdates": 100
+      },
+      "runtime": {
+        "displayName": "Destination Beam",
+        "maxHitPoints": 50,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/168",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Reactor Cores",
+        "globalType": 168,
+        "localType": 17,
+        "definitionClass": 28,
+        "baseDurability": 25,
+        "constructionUpdates": 40
+      },
+      "runtime": {
+        "displayName": "Reactor Cores",
+        "maxHitPoints": 25,
+        "powerPriority": 8,
+        "powerDemand": 0,
+        "effects": [
+          {
+            "type": "PowerGeneration",
+            "amount": 12
+          },
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "solar-power"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/169",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Asteroid Shield",
+        "globalType": 169,
+        "localType": 18,
+        "definitionClass": 10,
+        "baseDurability": 26,
+        "constructionUpdates": 46
+      },
+      "runtime": {
+        "displayName": "Asteroid Shield",
+        "maxHitPoints": 26,
+        "powerPriority": 20,
+        "powerDemand": 7,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "surface-screen"
+          }
+        ],
+        "hardpointSlots": 0,
+        "surfaceProtection": {
+          "damageDivisor": 2,
+          "coverageRows": [
+            {
+              "offsetX": -1,
+              "offsetY": -6,
+              "width": 4
+            },
+            {
+              "offsetX": -3,
+              "offsetY": -5,
+              "width": 8
+            },
+            {
+              "offsetX": -4,
+              "offsetY": -4,
+              "width": 10
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": -2,
+              "width": 12
+            },
+            {
+              "offsetX": -6,
+              "offsetY": -1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 0,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 1,
+              "width": 14
+            },
+            {
+              "offsetX": -6,
+              "offsetY": 2,
+              "width": 14
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 3,
+              "width": 12
+            },
+            {
+              "offsetX": -5,
+              "offsetY": 4,
+              "width": 12
+            },
+            {
+              "offsetX": -4,
+              "offsetY": 5,
+              "width": 10
+            },
+            {
+              "offsetX": -3,
+              "offsetY": 6,
+              "width": 8
+            },
+            {
+              "offsetX": -1,
+              "offsetY": 7,
+              "width": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "openfa:building/legacy/170",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Defence Battery",
+        "globalType": 170,
+        "localType": 19,
+        "definitionClass": 3,
+        "baseDurability": 30,
+        "constructionUpdates": 36,
+        "muzzleElevationByte": 38,
+        "muzzleReachByte": 12
+      },
+      "runtime": {
+        "displayName": "Defence Battery",
+        "maxHitPoints": 30,
+        "powerPriority": 35,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 3
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/171",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Commonbore",
+        "globalType": 171,
+        "localType": 20,
+        "definitionClass": 8,
+        "baseDurability": 16,
+        "constructionUpdates": 44
+      },
+      "runtime": {
+        "displayName": "Commonbore",
+        "maxHitPoints": 16,
+        "powerPriority": 31,
+        "powerDemand": 1,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-common"
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/172",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "legacy": {
+        "name": "Deepbore",
+        "globalType": 172,
+        "localType": 21,
+        "definitionClass": 21,
+        "baseDurability": 25,
+        "constructionUpdates": 42
+      },
+      "runtime": {
+        "displayName": "Deepbore",
+        "maxHitPoints": 25,
+        "powerPriority": 34,
+        "powerDemand": 3,
+        "effects": [
+          {
+            "type": "Capability",
+            "amount": 0,
+            "capabilityId": "mine-rare"
+          }
+        ],
+        "hardpointSlots": 0,
+        "oreExtraction": {
+          "periodDays": 32,
+          "oreIds": [
+            "openfa:traxium",
+            "openfa:nexos"
+          ],
+          "unitsPerCycle": 1
+        }
+      }
+    },
+    {
+      "id": "openfa:building/legacy/173",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Ore Yard",
+        "globalType": 173,
+        "localType": 22,
+        "definitionClass": 30,
+        "baseDurability": 35,
+        "constructionUpdates": 44
+      },
+      "runtime": {
+        "displayName": "Ore Yard",
+        "maxHitPoints": 35,
+        "powerPriority": 10,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "OreStorageCapacity",
+            "amount": 600
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/174",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Goods Yard",
+        "globalType": 174,
+        "localType": 23,
+        "definitionClass": 255,
+        "baseDurability": 45,
+        "constructionUpdates": 40
+      },
+      "runtime": {
+        "displayName": "Goods Yard",
+        "maxHitPoints": 45,
+        "powerPriority": 255,
+        "powerDemand": 0,
+        "effects": [],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/175",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Stun Tower",
+        "globalType": 175,
+        "localType": 24,
+        "definitionClass": 27,
+        "baseDurability": 18,
+        "constructionUpdates": 26
+      },
+      "runtime": {
+        "displayName": "Stun Tower",
+        "maxHitPoints": 18,
+        "powerPriority": 27,
+        "powerDemand": 2,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 27
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    },
+    {
+      "id": "openfa:building/legacy/176",
+      "factionId": "openfa:faction/achaean",
+      "footprintWidth": 2,
+      "footprintHeight": 2,
+      "legacy": {
+        "name": "Power Tower",
+        "globalType": 176,
+        "localType": 25,
+        "definitionClass": 18,
+        "baseDurability": 20,
+        "constructionUpdates": 50
+      },
+      "runtime": {
+        "displayName": "Power Tower",
+        "maxHitPoints": 20,
+        "powerPriority": 25,
+        "powerDemand": 4,
+        "effects": [
+          {
+            "type": "Weapon",
+            "amount": 0,
+            "weaponClass": 18
+          }
+        ],
+        "hardpointSlots": 0
+      }
+    }
+  ],
+  "openFa": {
+    "engineContractVersion": 4,
+    "writtenByVersion": "0.323.4-dev"
+  },
+  "legacy": {
+    "compatible": true
+  }
+}

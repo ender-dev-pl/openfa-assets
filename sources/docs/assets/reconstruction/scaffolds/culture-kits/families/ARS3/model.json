@@ -1,0 +1,704 @@
+{
+  "issue": 188,
+  "family": "ARS3",
+  "culture": "artemian",
+  "footprint": 3,
+  "capacity": 2,
+  "pitch": 0.6034241523143186,
+  "pitch_status": "Provisional source-repeat projection; not calibrated game-world height",
+  "pitch_derivation": "2*4/62*(3*.9*sqrt(2))/sqrt(2/3)",
+  "required_max_stage": 10,
+  "required_max_tiers": 5,
+  "style": {
+    "main": [
+      0.24,
+      0.39,
+      0.29
+    ],
+    "trim": [
+      0.13,
+      0.22,
+      0.17
+    ],
+    "kind": "vented matte alloy shell",
+    "technique": "Segmented advanced-alloy shield petals; CDB metal preference takes precedence over ceramic appearance"
+  },
+  "cdb_evidence": {
+    "culture": "artemian",
+    "heading": "Artemians",
+    "section": "Architecture",
+    "record": 105,
+    "offset": 22324,
+    "offset_hex": "0x5734",
+    "byte_length": 1235,
+    "sha256": "9b29742c1c52f739ea932542d59df66a6627d514a2ab77018a74adfcf6759aad",
+    "source_summary": [
+      "Hard surfaces and metal are culturally preferred; advanced alloys can be functional or decorative.",
+      "Designs favour secure exteriors, open interiors, distinct planes, edges and shell-like forms.",
+      "Water and hygiene facilities have unusually strong practical and social importance."
+    ],
+    "authoring_interpretation": [
+      "Use structured metal shells, legible planar breaks and deliberate alloy contrast.",
+      "Do not turn a general affinity for shells into a literal animal model without visual evidence."
+    ],
+    "scope": "Direct evidence for architecture; vehicle/ship application is contextual extrapolation, never recovered geometry."
+  },
+  "authored_interpretation": "OpenFA3D removable perimeter kit; mechanisms, joints, hidden structure and materials are authored interpretations, not recovered CDB technology",
+  "source_reference": "ARS3",
+  "reference_descriptor_sha256": [
+    "7cd29c60646c337beb587d59eeba8bb74ae20c5bd709482de8aad254431f89ba",
+    "c45744f73aa09cd156c6ed90769d3cc5104b62fdd44ee12d8fbe110efd69cfe5",
+    "b8176df30d6da40a9b157256bd5ba8dfc9edef6add96f0dbc3dc11a4e8f3b6da"
+  ],
+  "clear_volume": {
+    "half_extent_xy": 1.25,
+    "temporary_crown_removed_on_reveal": true,
+    "interior_shoring": false
+  },
+  "phases": [
+    {
+      "id": "erection",
+      "building_visible": false
+    },
+    {
+      "id": "reveal",
+      "building_visible": true
+    },
+    {
+      "id": "dismantling",
+      "building_visible": true
+    },
+    {
+      "id": "complete",
+      "building_visible": true,
+      "scaffold_visible": false
+    }
+  ],
+  "sequence_provenance": "User requirement: full height, insert building, reverse dismantling revealing from top; not a newly recovered legacy timing rule",
+  "definitions": [
+    {
+      "id": "openfa:building/legacy/108",
+      "name": "Environmental Stabiliser",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/109",
+      "name": "Filtration Tanks",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/113",
+      "name": "House of the Axe",
+      "ceiling": 4,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "dismantling_stages": [
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/114",
+      "name": "Naval Dockyard",
+      "ceiling": 4,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "dismantling_stages": [
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/117",
+      "name": "Gravitic Converter",
+      "ceiling": 4,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "dismantling_stages": [
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/120",
+      "name": "Arms Forge",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/124",
+      "name": "Super-deterrent",
+      "ceiling": 10,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "dismantling_stages": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/126",
+      "name": "Advanced Ore Extractor",
+      "ceiling": 5,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "dismantling_stages": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/127",
+      "name": "Rare Ore Extractor",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/129",
+      "name": "Refining Forge",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "stage": 1,
+      "frames": [
+        1
+      ],
+      "mesh_objects": 252,
+      "unique_meshes": 14,
+      "blend_sha256": "77836560b86ecadc31386c6ba8beb4f2aeba78335ebdc7242a69b057949293c7",
+      "glb_sha256": "f5360caedbe0e5093749a5a7a4618c0311da44534bf285fbbf7925177c3e6f41",
+      "rear_view": true,
+      "hide_on_reveal": [
+        "Crown alloy petal 0-0",
+        "Crown alloy petal 0-1",
+        "Crown alloy petal 0-2",
+        "Crown alloy petal 0-3",
+        "Crown alloy petal 0-4",
+        "Crown alloy petal 0-5",
+        "Crown alloy petal 1-0",
+        "Crown alloy petal 1-1",
+        "Crown alloy petal 1-2",
+        "Crown alloy petal 1-3",
+        "Crown alloy petal 1-4",
+        "Crown alloy petal 1-5",
+        "Crown alloy petal 2-0",
+        "Crown alloy petal 2-1",
+        "Crown alloy petal 2-2",
+        "Crown alloy petal 2-3",
+        "Crown alloy petal 2-4",
+        "Crown alloy petal 2-5",
+        "Crown alloy petal 3-0",
+        "Crown alloy petal 3-1",
+        "Crown alloy petal 3-2",
+        "Crown alloy petal 3-3",
+        "Crown alloy petal 3-4",
+        "Crown alloy petal 3-5"
+      ]
+    },
+    {
+      "stage": 2,
+      "frames": [
+        2
+      ],
+      "mesh_objects": 444,
+      "unique_meshes": 15,
+      "blend_sha256": "a595bba1afc0403d9e8610591ce02d8642ada51422c119d2efa938de275f4bd0",
+      "glb_sha256": "c8a90217be5f79a6dd10d1fa79c353b26d8fdfbde59e4eb3c8602af74dbccc6c",
+      "rear_view": true,
+      "hide_on_reveal": [
+        "Crown alloy petal 0-0",
+        "Crown alloy petal 0-1",
+        "Crown alloy petal 0-2",
+        "Crown alloy petal 0-3",
+        "Crown alloy petal 0-4",
+        "Crown alloy petal 0-5",
+        "Crown alloy petal 1-0",
+        "Crown alloy petal 1-1",
+        "Crown alloy petal 1-2",
+        "Crown alloy petal 1-3",
+        "Crown alloy petal 1-4",
+        "Crown alloy petal 1-5",
+        "Crown alloy petal 2-0",
+        "Crown alloy petal 2-1",
+        "Crown alloy petal 2-2",
+        "Crown alloy petal 2-3",
+        "Crown alloy petal 2-4",
+        "Crown alloy petal 2-5",
+        "Crown alloy petal 3-0",
+        "Crown alloy petal 3-1",
+        "Crown alloy petal 3-2",
+        "Crown alloy petal 3-3",
+        "Crown alloy petal 3-4",
+        "Crown alloy petal 3-5"
+      ]
+    },
+    {
+      "stage": 3,
+      "frames": [
+        2,
+        1
+      ],
+      "mesh_objects": 684,
+      "unique_meshes": 17,
+      "blend_sha256": "530b229c1eedbaeb1987524e9c854681fcf0a10168c09f6ba4a33fc551b5f857",
+      "glb_sha256": "16c3cc612ba7b1b9fd327d6090fce56c5c7fe7f41f6c00b4b83cf530ebcc1bc1",
+      "rear_view": true,
+      "hide_on_reveal": [
+        "Crown alloy petal 0-0",
+        "Crown alloy petal 0-1",
+        "Crown alloy petal 0-2",
+        "Crown alloy petal 0-3",
+        "Crown alloy petal 0-4",
+        "Crown alloy petal 0-5",
+        "Crown alloy petal 1-0",
+        "Crown alloy petal 1-1",
+        "Crown alloy petal 1-2",
+        "Crown alloy petal 1-3",
+        "Crown alloy petal 1-4",
+        "Crown alloy petal 1-5",
+        "Crown alloy petal 2-0",
+        "Crown alloy petal 2-1",
+        "Crown alloy petal 2-2",
+        "Crown alloy petal 2-3",
+        "Crown alloy petal 2-4",
+        "Crown alloy petal 2-5",
+        "Crown alloy petal 3-0",
+        "Crown alloy petal 3-1",
+        "Crown alloy petal 3-2",
+        "Crown alloy petal 3-3",
+        "Crown alloy petal 3-4",
+        "Crown alloy petal 3-5"
+      ]
+    },
+    {
+      "stage": 4,
+      "frames": [
+        2,
+        2
+      ],
+      "mesh_objects": 876,
+      "unique_meshes": 16,
+      "blend_sha256": "d539ad914da80e71d895f64ec9639cde9301e752986af5538a27b646fdc1952b",
+      "glb_sha256": "32af98860c3dad050a674b346c8ce19df187dcb7b63e088c8e5dec75d87536f0",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown alloy petal 0-0",
+        "Crown alloy petal 0-1",
+        "Crown alloy petal 0-2",
+        "Crown alloy petal 0-3",
+        "Crown alloy petal 0-4",
+        "Crown alloy petal 0-5",
+        "Crown alloy petal 1-0",
+        "Crown alloy petal 1-1",
+        "Crown alloy petal 1-2",
+        "Crown alloy petal 1-3",
+        "Crown alloy petal 1-4",
+        "Crown alloy petal 1-5",
+        "Crown alloy petal 2-0",
+        "Crown alloy petal 2-1",
+        "Crown alloy petal 2-2",
+        "Crown alloy petal 2-3",
+        "Crown alloy petal 2-4",
+        "Crown alloy petal 2-5",
+        "Crown alloy petal 3-0",
+        "Crown alloy petal 3-1",
+        "Crown alloy petal 3-2",
+        "Crown alloy petal 3-3",
+        "Crown alloy petal 3-4",
+        "Crown alloy petal 3-5"
+      ]
+    },
+    {
+      "stage": 5,
+      "frames": [
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1116,
+      "unique_meshes": 17,
+      "blend_sha256": "7f2276b1937ffd231de8ef83ef2966442c9400fde1205ea93c461ce0ba878b61",
+      "glb_sha256": "b19c5223be347540613bb955f1227a1f80ac35d9c7622ec779c152449f879118",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown alloy petal 0-0",
+        "Crown alloy petal 0-1",
+        "Crown alloy petal 0-2",
+        "Crown alloy petal 0-3",
+        "Crown alloy petal 0-4",
+        "Crown alloy petal 0-5",
+        "Crown alloy petal 1-0",
+        "Crown alloy petal 1-1",
+        "Crown alloy petal 1-2",
+        "Crown alloy petal 1-3",
+        "Crown alloy petal 1-4",
+        "Crown alloy petal 1-5",
+        "Crown alloy petal 2-0",
+        "Crown alloy petal 2-1",
+        "Crown alloy petal 2-2",
+        "Crown alloy petal 2-3",
+        "Crown alloy petal 2-4",
+        "Crown alloy petal 2-5",
+        "Crown alloy petal 3-0",
+        "Crown alloy petal 3-1",
+        "Crown alloy petal 3-2",
+        "Crown alloy petal 3-3",
+        "Crown alloy petal 3-4",
+        "Crown alloy petal 3-5"
+      ]
+    },
+    {
+      "stage": 6,
+      "frames": [
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1308,
+      "unique_meshes": 16,
+      "blend_sha256": "aa5a19e85c8f97212fd24f55bfa8be035ec1ad01553ed274cd13ced26303963d",
+      "glb_sha256": "8ac8219129ced2f6c1bb194ef38e1a119bf595f94f748919172e32ef91688b0d",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown alloy petal 0-0",
+        "Crown alloy petal 0-1",
+        "Crown alloy petal 0-2",
+        "Crown alloy petal 0-3",
+        "Crown alloy petal 0-4",
+        "Crown alloy petal 0-5",
+        "Crown alloy petal 1-0",
+        "Crown alloy petal 1-1",
+        "Crown alloy petal 1-2",
+        "Crown alloy petal 1-3",
+        "Crown alloy petal 1-4",
+        "Crown alloy petal 1-5",
+        "Crown alloy petal 2-0",
+        "Crown alloy petal 2-1",
+        "Crown alloy petal 2-2",
+        "Crown alloy petal 2-3",
+        "Crown alloy petal 2-4",
+        "Crown alloy petal 2-5",
+        "Crown alloy petal 3-0",
+        "Crown alloy petal 3-1",
+        "Crown alloy petal 3-2",
+        "Crown alloy petal 3-3",
+        "Crown alloy petal 3-4",
+        "Crown alloy petal 3-5"
+      ]
+    },
+    {
+      "stage": 7,
+      "frames": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1548,
+      "unique_meshes": 17,
+      "blend_sha256": "6d94c42285739703ab1d1a3be016b04cc28092e62feb80ebd50805c6cbece0cb",
+      "glb_sha256": "76ff278bbad2f4b781c606601cf41f7cedd486b7d56fa4488967aa1893964980",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown alloy petal 0-0",
+        "Crown alloy petal 0-1",
+        "Crown alloy petal 0-2",
+        "Crown alloy petal 0-3",
+        "Crown alloy petal 0-4",
+        "Crown alloy petal 0-5",
+        "Crown alloy petal 1-0",
+        "Crown alloy petal 1-1",
+        "Crown alloy petal 1-2",
+        "Crown alloy petal 1-3",
+        "Crown alloy petal 1-4",
+        "Crown alloy petal 1-5",
+        "Crown alloy petal 2-0",
+        "Crown alloy petal 2-1",
+        "Crown alloy petal 2-2",
+        "Crown alloy petal 2-3",
+        "Crown alloy petal 2-4",
+        "Crown alloy petal 2-5",
+        "Crown alloy petal 3-0",
+        "Crown alloy petal 3-1",
+        "Crown alloy petal 3-2",
+        "Crown alloy petal 3-3",
+        "Crown alloy petal 3-4",
+        "Crown alloy petal 3-5"
+      ]
+    },
+    {
+      "stage": 8,
+      "frames": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1740,
+      "unique_meshes": 16,
+      "blend_sha256": "1d670689942984854fcb96a7229612fc2544f5c60683bdbde6539dd84057a0d5",
+      "glb_sha256": "fdc0a94a1c7805e1233d09622a45ee3c29fcc11a00dc1591977478ea165df947",
+      "rear_view": false,
+      "hide_on_reveal": [
+        "Crown alloy petal 0-0",
+        "Crown alloy petal 0-1",
+        "Crown alloy petal 0-2",
+        "Crown alloy petal 0-3",
+        "Crown alloy petal 0-4",
+        "Crown alloy petal 0-5",
+        "Crown alloy petal 1-0",
+        "Crown alloy petal 1-1",
+        "Crown alloy petal 1-2",
+        "Crown alloy petal 1-3",
+        "Crown alloy petal 1-4",
+        "Crown alloy petal 1-5",
+        "Crown alloy petal 2-0",
+        "Crown alloy petal 2-1",
+        "Crown alloy petal 2-2",
+        "Crown alloy petal 2-3",
+        "Crown alloy petal 2-4",
+        "Crown alloy petal 2-5",
+        "Crown alloy petal 3-0",
+        "Crown alloy petal 3-1",
+        "Crown alloy petal 3-2",
+        "Crown alloy petal 3-3",
+        "Crown alloy petal 3-4",
+        "Crown alloy petal 3-5"
+      ]
+    },
+    {
+      "stage": 9,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1980,
+      "unique_meshes": 17,
+      "blend_sha256": "01304250b0a786056b378f3109a83ba1a7c8bfda92ef473ece46600bbf70bb13",
+      "glb_sha256": "a81a6fc9df3a4eb6f82e96421863e03f29a4db4a09c018863683b960186ede95",
+      "rear_view": true,
+      "hide_on_reveal": [
+        "Crown alloy petal 0-0",
+        "Crown alloy petal 0-1",
+        "Crown alloy petal 0-2",
+        "Crown alloy petal 0-3",
+        "Crown alloy petal 0-4",
+        "Crown alloy petal 0-5",
+        "Crown alloy petal 1-0",
+        "Crown alloy petal 1-1",
+        "Crown alloy petal 1-2",
+        "Crown alloy petal 1-3",
+        "Crown alloy petal 1-4",
+        "Crown alloy petal 1-5",
+        "Crown alloy petal 2-0",
+        "Crown alloy petal 2-1",
+        "Crown alloy petal 2-2",
+        "Crown alloy petal 2-3",
+        "Crown alloy petal 2-4",
+        "Crown alloy petal 2-5",
+        "Crown alloy petal 3-0",
+        "Crown alloy petal 3-1",
+        "Crown alloy petal 3-2",
+        "Crown alloy petal 3-3",
+        "Crown alloy petal 3-4",
+        "Crown alloy petal 3-5"
+      ]
+    },
+    {
+      "stage": 10,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 2172,
+      "unique_meshes": 16,
+      "blend_sha256": "cd00dfae650238a694308195a0543733caa7c9dded2673a7563259e1c453039a",
+      "glb_sha256": "4f133a5193769580fdbdfc93407ec058d89d1a7284ac88f1399f1950a72d1a2e",
+      "rear_view": true,
+      "hide_on_reveal": [
+        "Crown alloy petal 0-0",
+        "Crown alloy petal 0-1",
+        "Crown alloy petal 0-2",
+        "Crown alloy petal 0-3",
+        "Crown alloy petal 0-4",
+        "Crown alloy petal 0-5",
+        "Crown alloy petal 1-0",
+        "Crown alloy petal 1-1",
+        "Crown alloy petal 1-2",
+        "Crown alloy petal 1-3",
+        "Crown alloy petal 1-4",
+        "Crown alloy petal 1-5",
+        "Crown alloy petal 2-0",
+        "Crown alloy petal 2-1",
+        "Crown alloy petal 2-2",
+        "Crown alloy petal 2-3",
+        "Crown alloy petal 2-4",
+        "Crown alloy petal 2-5",
+        "Crown alloy petal 3-0",
+        "Crown alloy petal 3-1",
+        "Crown alloy petal 3-2",
+        "Crown alloy petal 3-3",
+        "Crown alloy petal 3-4",
+        "Crown alloy petal 3-5"
+      ]
+    }
+  ],
+  "inputs": {
+    "docs/reconstruction/models/scaffold-stage-limits.json": "5a0fcc956670550a11dff3ea7e0258de745258397eac58f2b0739074746bd7d3",
+    "docs/reconstruction/models/shared-construction-references.json": "be5bbc948f86b0548bda10b6f63dba4e3b131a5175cdfa35f1e146890581d7a6",
+    "docs/reconstruction/models/cultural-architecture-index.json": "3ae667c89e1f2dc54fb27be717b75eb50e1ea14800a1ef02a1609adb7d78765e",
+    "docs/assets/reconstruction/scaffolds/culture-kits/authored-wear.json": "f1175ab496acaf5bec413ba92f1c3fec291ead980cba27816064b2c809521f52",
+    "tools/blender/build_culture_scaffolds.py": "171628100bc5a27d57ef4511888904e8e418b439553b4e510db28af8978249f5",
+    "tools/blender/culture_scaffold_parts.py": "f4bd5d31a159355277693218ff12f7514779aee634a2d9a703a875d42f45b36d",
+    "tools/blender/culture_scaffold_contract.py": "c71d3453ec38e1326c1bede0541ccc111b3f28507aea9ed150e73b69cd3be5d9"
+  },
+  "preview_only": false,
+  "exact_legacy_fidelity_accepted": false,
+  "game_integration_verified": false
+}

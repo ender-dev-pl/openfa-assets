@@ -1,0 +1,11 @@
+# Existing transporter runtime evidence (#1100)
+
+This verifies the unchanged `docs/assets/bootstrap-3d/transporter-inspired/transporter.blend` and `transporter.glb`; no source, geometry, material, texture or export was regenerated. Relates to #1099, #949 and #946. Artistic refinement and scaffolding remain deferred.
+
+The existing `verify_transporter_inspired.py` passed in Blender 4.5.15 LTS, checking 61 meshes, the actual penetrating forward opening, faceted major sections, one main/two auxiliary drive throats, scene settings and independent GLB import. The new `audit_transporter_runtime.py` independently reopens the source, inspects evaluated geometry, renders native front/rear quarter views, removes native mesh objects and unused mesh/material datablocks, imports the existing GLB and renders it with the same camera/lights. It never saves the Blend or reexports the GLB. The report proves source bytes remained unchanged.
+
+All 61 mesh identities match. Maximum bounds error is 2.38419e-7 model units; maximum bidirectional nearest evaluated position error is 2.66561e-7. Sixty rounded position-set hashes match exactly; one Prow sensor whisker crosses a four-decimal rounding boundary, so nearest-position distances were measured rather than concealing the hash discrepancy. Eight named material value tuples match exactly. Duplicate unused native datablocks were removed in memory before import to avoid artificial `.001` material suffixes.
+
+`review_transporter_runtime.py` checks actual pixel hashes and framing. Both 768-square matched views have identical alpha channels and threshold-128 silhouettes. Foreground mean RGB differences are below 0.008/255. The actual four-image comparison sheet was inspected. These new evidence renders are in `docs/assets/reconstruction/evidence/transporter-runtime/` alongside bound JSON reports.
+
+This is scoped technical evidence, not an accepted final model or automatic ledger promotion. It does not exhaustively validate manifold topology, UVs, corner normals, state/animation completeness, gameplay attachment calibration, original-game fidelity or game-client integration. No wear was retrofitted onto this older model. Required changed-code quality base: `6293f6c1`; actual existing verifier and new Blender audit completed with success markers and exit zero.

@@ -1,0 +1,100 @@
+{
+  "issue": 190,
+  "id": "openfa:building/legacy/073",
+  "key": "BR11",
+  "name": "Launch Site",
+  "culture": "braccatian",
+  "stage": "launch-casing-refinement",
+  "source_study": "sources/docs/assets/reconstruction/launch-facilities/braccatian/br11/model.blend",
+  "source_blend_sha256": "26eecb2478031ae7745f2b35296bcee373d4ae2c8859029fa4136b6fc0259a56",
+  "blend_sha256": "d1cecbbf374206cfa02f7c51e6261481361b87958c5dd7d752b717bfac1ddc7f",
+  "glb_sha256": "6f19c6333a9503e032daed78c0192c8f7f1002f4de5402640f5dd4f33ed701d3",
+  "generator_sha256": "03ea5dafde7f56c1b946906a733d845d6732f17349ca1eef2a4951e66fe69465",
+  "dependency_sha256": {
+    "refine_braccatian_pithoi.py": "3a1d91dd5c2be046be73a54b96517f88a00e64397e47ceff9bf4a1190a4f0861",
+    "refine_braccatian_vessels.py": "07f48bac479ce3c944fb227e74f28b358457faa90ba24e4c23f4a37a08d07cea",
+    "refine_braccatian_public_facilities.py": "20b58058daf9152e8aa809b8f0e55c3c087cdcd5c3aa3a6680f0c87c93502035",
+    "build_launch_facilities.py": "37c443e3138d9a00652dd3097605909e8c2854d7c0dac0a620f11d5b3d6d6025",
+    "launch_facility_recipes.py": "364952b026b37b94566e7244bee8621bd4f6e2bd690491345454024fb3150f47",
+    "build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+    "refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "refine_rigellian_missiles.py": "93b0bd4881160f8d931f41b9ed26cb47bff1d457ccbd0754992ecd9567d31f67"
+  },
+  "texture_sha256": {
+    "sources/materials/reconstruction/braccatian-refined/br11/gold-casting-colour.png": "57e03f66c55dd4519538f68182ab6c56dd0f578139e1c274f6f4ccba8c07e79f",
+    "sources/materials/reconstruction/braccatian-refined/br11/gold-casting-roughness.png": "b05b203f3f9943b0ff510ea6a24959fb00ef3f27d3861b8ceb52cf0f6feca608",
+    "sources/materials/reconstruction/braccatian-refined/br11/recess-colour.png": "432f01784d006609d74b0f556a557477e0cc82f1d39dfb4dc142a2524c1bea93",
+    "sources/materials/reconstruction/braccatian-refined/br11/recess-roughness.png": "b05b203f3f9943b0ff510ea6a24959fb00ef3f27d3861b8ceb52cf0f6feca608",
+    "sources/materials/reconstruction/braccatian-refined/br11/rose-casing-colour.png": "bd6fd33708d4acab280b178330da0412c2566c3c668d50f96c2670d2b28320d4",
+    "sources/materials/reconstruction/braccatian-refined/br11/rose-casing-roughness.png": "b05b203f3f9943b0ff510ea6a24959fb00ef3f27d3861b8ceb52cf0f6feca608"
+  },
+  "lore_sha256": "fa1f16371e6bccb2f6c5b5412a6bbb70af76e1319809c9bc606dcc7fec012aca",
+  "reference_sha256": "3670f26d4b8589476db0532b0929f09c106ffea91afdefa01182df4dafaaf031",
+  "functional_sha256": "fcadf5ea6dc8d0e96180ff9922cef07bd32f264f52e0a684bf87dc4680a0b663",
+  "retained_mesh_names": [
+    "Pyramidal hatch petal",
+    "Pyramidal hatch petal.001",
+    "Pyramidal hatch petal.002",
+    "Pyramidal hatch petal.003",
+    "Recessed launch well floor",
+    "Vertical hangar shaft walls"
+  ],
+  "removed_placeholder_or_old_scuff_names": [
+    "Pyramidal hatch petal edge scuff",
+    "Pyramidal hatch petal edge scuff.001",
+    "Pyramidal hatch petal edge scuff.002",
+    "Pyramidal hatch petal.001 edge scuff",
+    "Pyramidal hatch petal.001 edge scuff.001",
+    "Pyramidal hatch petal.001 edge scuff.002",
+    "Pyramidal hatch petal.002 edge scuff",
+    "Pyramidal hatch petal.002 edge scuff.001",
+    "Pyramidal hatch petal.002 edge scuff.002",
+    "Pyramidal hatch petal.003 edge scuff",
+    "Pyramidal hatch petal.003 edge scuff.001",
+    "Pyramidal hatch petal.003 edge scuff.002",
+    "Recessed launch well floor edge scuff",
+    "Recessed launch well floor edge scuff.001",
+    "Vertical hangar shaft walls edge scuff",
+    "Vertical hangar shaft walls edge scuff.001",
+    "Vertical hangar shaft walls edge scuff.002",
+    "Foundation slab"
+  ],
+  "footprint": [
+    3,
+    3
+  ],
+  "aperture_radius": 0.65,
+  "floor_height": -1.15,
+  "terrain_cutout_fraction": 0.2901785714285714,
+  "fixed_open": false,
+  "launch_animation": {
+    "kind": "deck",
+    "clip": "LaunchFacilityCycle",
+    "closed_frame": 1,
+    "open_frame": 31,
+    "end_frame": 61
+  },
+  "observed": [
+    "All 41 paletted catalogue phases and all surface descriptors inspected; BR11 descriptors 2-15 show pink opening structure, descriptor 1 is a different green state",
+    "BR11 pink pyramid with large gold face fitting; BR12 tapered casing/front fitting; BR19 rounded tapered casing/square base/front foundation connection",
+    "Original functional payloads read/hash checked; no invented extra security or symbolic machinery"
+  ],
+  "inferred": [
+    "Exact casing profiles, face fitting details, hidden supports and alloy identities; existing authored hinge engineering/timing remains inferred"
+  ],
+  "geometry_policy": "Retain named floor/shaft/leaves and prior studies; replace generic outer casing/old flat scuff overlays and author new source-visible fittings",
+  "mesh_objects": 10,
+  "views": [
+    "front-quarter",
+    "front",
+    "side",
+    "rear-quarter",
+    "equipment-detail",
+    "open"
+  ],
+  "blender": "4.5.15 LTS",
+  "acceptance": "Actual source-led refinement; final artistic/game calibration open"
+}

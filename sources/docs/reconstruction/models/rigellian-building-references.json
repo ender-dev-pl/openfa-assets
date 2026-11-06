@@ -1,0 +1,4155 @@
+{
+  "issue": 970,
+  "culture": "rigellian",
+  "count": 23,
+  "catalogue_sha256": "a1dc323c0798e4ac5a863f21b4ba13fad821f5b6836cf60f32c728e75225b519",
+  "archive_sha256": "9487bad1a98c10ca0d7118549fe00ffacf4db9c4f9d9a794f942ba6d83d7be7e",
+  "gameplay_sha256": "f66106b01ceb0d0e9ef56e1ee0cfa60900c0322b4e27f565b93ca69186615676",
+  "selector_sha256": "9f2f4401d8576909af9382176b7cdec0ca024b129e355953cd4fdfd4bb4745a8",
+  "composition": "Diagnostic base layer 1 plus one extra layer at decoded offsets; not proof of runtime blend, shadow-ramp or activity selection semantics",
+  "palette": "Embedded VGA flags masked, 6-bit channels expanded; index 0 transparent",
+  "decoder_sha256": {
+    "tools/fragile256.py": "91a73b25be4c60aad4f98b8de1d13a37240f7d6547c899cb1a56e98e7f9a0be3",
+    "tools/fragile_vid.py": "b5eb2bfd925778259aebc13314f392bcbe6f681cc5d0d10c564f77ee4bb6ccc0",
+    "FRAGILE.EXE": "f87ec69b4431f06c75f72f1496249981521adb1269a7aeeed032cf77d6d17852"
+  },
+  "interpretation": "Catalogue phase sampling is not proof of rotations, animation mechanisms, construction or damage states",
+  "buildings": [
+    {
+      "id": "openfa:building/legacy/040",
+      "name": "Central Unit",
+      "key": "RI01",
+      "global_type": 40,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 20,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "d7e2a7e0e8934ecfa051a6062654ebaa70e3de80ca3476c519663472a9658138",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              49,
+              30
+            ],
+            "offset": [
+              132,
+              83
+            ],
+            "indexed_sha256": "2fcf8ab282aa419b8950d1c076356122aacd1b7b44ad3d21dfe44e027fb16c54",
+            "png": "artifacts/rigellian-building-reference-study/RI01/surface-00.png",
+            "png_sha256": "2bcec13e65b5e333a17d1c02ff42fcb8d430c573d4a5035bbb79a424aa2d3813"
+          },
+          {
+            "index": 1,
+            "size": [
+              34,
+              67
+            ],
+            "offset": [
+              143,
+              39
+            ],
+            "indexed_sha256": "b0ba257f5982f6214433f748395194201873c24541d8238f52526b63a4358059",
+            "png": "artifacts/rigellian-building-reference-study/RI01/surface-01.png",
+            "png_sha256": "bb26611b7de26b132d1ea26550156e75b8e912c6de77def445325558d5e5f558"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            143,
+            39
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI01/surface-composite-preview.png",
+          "png_sha256": "08a6c072b46352c153d71a78104b5953b487f8daa218abffdfa7187632c880ca"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "93f8d14ff05cbbb8c2fe37e2fd04cb81ef9797cd45a8c00439da639182b359ca",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI01/hologram/frames/000.png",
+            "png_sha256": "80dd46b0fc2c0099a12985ca5c4c96cd7fa4dbc1a07e174c9386dcf582e0f35e"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI01/hologram/frames/010.png",
+            "png_sha256": "5e35f7fa822d089fca2d2d47c3cfe3c5f41bf666da6ad8bedea48203f0d46eae"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI01/hologram/frames/020.png",
+            "png_sha256": "8ad33f90cf612dac2757ed03cbed6b6a975533888069d12ca05d3283aaef2eb3"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI01/hologram/frames/030.png",
+            "png_sha256": "e81a0edf4de5a6b76f07dac1f43feff10aa6eb7835e5f8ffb08d69c667e06a05"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI01/hologram/frames/040.png",
+            "png_sha256": "5b0a43242d24972b4f16d0da9b0187f5ed76d59d6a37c1fb783669dfb04eab79"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/041",
+      "name": "Filtration Plant",
+      "key": "RI02",
+      "global_type": 41,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 38,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "ef4abe01609771d9aad30b599a6dadb18b18ddb621e30bd192ae5293157ddcb9",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              34,
+              23
+            ],
+            "offset": [
+              141,
+              85
+            ],
+            "indexed_sha256": "757f398201dda9e6986722637c77883163c96b641f7aae74730186023ecda43b",
+            "png": "artifacts/rigellian-building-reference-study/RI02/surface-00.png",
+            "png_sha256": "6881ba22814273f920820cffc4e64fdffe603b0c464cea57a5240ec6b9eb6452"
+          },
+          {
+            "index": 1,
+            "size": [
+              22,
+              36
+            ],
+            "offset": [
+              150,
+              66
+            ],
+            "indexed_sha256": "96f1a42b2cf065c37b2b67e68e2e4c80cab9d724ce24cc4ea37bb9dc730cb13d",
+            "png": "artifacts/rigellian-building-reference-study/RI02/surface-01.png",
+            "png_sha256": "8fd86b5eb1112e4b4ae1e0d7ecce0d6943564982cd9c6727a58cdd8500d40e23"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            150,
+            66
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI02/surface-composite-preview.png",
+          "png_sha256": "fbcc0a2b15560880ddc5268bd60d6398d364b4f042086acf9353f0db0c11a1b4"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "8ceab9e78729b195daed0409ffd8b50d74397a81a961abd8d28c1070f220b638",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI02/hologram/frames/000.png",
+            "png_sha256": "cefc2bbd024725e35f196ad7832fa6720c6d009ad1ba59943d43936e0423bc94"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI02/hologram/frames/010.png",
+            "png_sha256": "cb757e82c7d87cabd09ece59e5529eca56118b81a8162083ea8c4d04e80ab5bb"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI02/hologram/frames/020.png",
+            "png_sha256": "674edc2eed9984b052c3f559fa9251dbd034c0de41c12f85e3e596273ff3330b"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI02/hologram/frames/030.png",
+            "png_sha256": "8d8fa14c379528e56f34c107fe605e57f91ccbaa7cb8e4d027cfb4488fe393be"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI02/hologram/frames/040.png",
+            "png_sha256": "6e2f3f69ebdce46c516e0404384594b182e2c4997e9080e75f3291fedd2779b4"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/042",
+      "name": "Nourishment Bank",
+      "key": "RI03",
+      "global_type": 42,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 37,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "945af93cf1f6dbd0b2f1623eb83d1f12b257002ccb887df65d90744930535f19",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              33,
+              22
+            ],
+            "offset": [
+              143,
+              86
+            ],
+            "indexed_sha256": "79b67384dab05a805e80cb69052f80276525407a690e1fbdc8fa4b4db6145029",
+            "png": "artifacts/rigellian-building-reference-study/RI03/surface-00.png",
+            "png_sha256": "b0b9b448950511bbb1671eabc4897fd164ec9c8dc44a91a03a900f0a457e4515"
+          },
+          {
+            "index": 1,
+            "size": [
+              20,
+              60
+            ],
+            "offset": [
+              152,
+              43
+            ],
+            "indexed_sha256": "277e914018b949640a534adbcef42b12f1149373f25f9c5a9d2e0f06beed43b2",
+            "png": "artifacts/rigellian-building-reference-study/RI03/surface-01.png",
+            "png_sha256": "7602c1ba02c90adb3dba1ffc940a4ee2683faa3804dd41bc56a8920c891ce0ba"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            152,
+            43
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI03/surface-composite-preview.png",
+          "png_sha256": "82d421a6835cbd47137f483de026ae1dce032c3d6c8dab6117fc27cbb786a6c1"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "bfb56fc5d8bcf8cb3498443f61409cafb0a46f0b9494b89467ea45b53ab42e59",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI03/hologram/frames/000.png",
+            "png_sha256": "b6a74cd4fcdde3e3f9b6f38aa8cc17d582900ce4486995cd72ac208cccecf04d"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI03/hologram/frames/010.png",
+            "png_sha256": "f830210ea3dbda7686ee33c657f8c14b585d679b2ddfbbf0c6935b79410031f6"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI03/hologram/frames/020.png",
+            "png_sha256": "412934b7443cb333b8759ccff273ac6a9868089ff89c602ef651414236bc7d3b"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI03/hologram/frames/030.png",
+            "png_sha256": "c4666bf0e1fc2fa8eb55be03f72fedfe50da039906a0f2c3da34bc4e4d091bf6"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI03/hologram/frames/040.png",
+            "png_sha256": "dff4b7cbd0af0f0f37e2d0b0d849e7cca25d7cbd2306fd5b2409da3b9721131f"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/043",
+      "name": "Community",
+      "key": "RI04",
+      "global_type": 43,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 0,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "7be0af43eb59b80550dcb2d2b98563fb718808cf0c0d3e508682ef700477289e",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              27,
+              21
+            ],
+            "offset": [
+              143,
+              87
+            ],
+            "indexed_sha256": "f58bee7825587e29358d406c027ec13efd1cc2bf0a069045bb772b6e3ad3fb97",
+            "png": "artifacts/rigellian-building-reference-study/RI04/surface-00.png",
+            "png_sha256": "e6fb2d40976ae63d9471b6a7967e21cfacb19b29f9c13c62aeffb40904993c6f"
+          },
+          {
+            "index": 1,
+            "size": [
+              18,
+              52
+            ],
+            "offset": [
+              151,
+              51
+            ],
+            "indexed_sha256": "103087e538b75f1b21c4dd77f3fd88df81b37090889bf7429e66a5de97314e40",
+            "png": "artifacts/rigellian-building-reference-study/RI04/surface-01.png",
+            "png_sha256": "29c2ab93b4fbbc5f8ec8b9411adc6333a29c026e0de6e2b03e580784983532aa"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            151,
+            51
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI04/surface-composite-preview.png",
+          "png_sha256": "0e4531a67ad137be4f0e92167ccb7cf5d53db635e2015b9ce59d6f9e69dac4eb"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "5de0d681e7dd0458e5bc01e1e2146e7c88e93bc1567ba2299227f78ec7e7007f",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI04/hologram/frames/000.png",
+            "png_sha256": "ece4251a90f976125e127abf6b725cfe80b7928f7838e2eab6cea8a69f37f1aa"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI04/hologram/frames/010.png",
+            "png_sha256": "c62b421e607259a4667eae04462b4052843e1683105606f6a17e30d47e999aa9"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI04/hologram/frames/020.png",
+            "png_sha256": "587a1f353849c9bbe9b660a9a3bb7d2775c785d52f686a9766aa0dc932ba4f34"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI04/hologram/frames/030.png",
+            "png_sha256": "36b7d662c3642146f04535bdea44c6c06a4e84602d674f3b70f11ccd8a2ae37a"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI04/hologram/frames/040.png",
+            "png_sha256": "48f3785c28d139a7384d21fe4f0305537db1e2f7db60458564018c2686af9de3"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/044",
+      "name": "Health Unit",
+      "key": "RI05",
+      "global_type": 44,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 34,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "80d09773e8dbaaa3c84db024ff22a2ecc5ea6326b6695770432a9a27fff90b8a",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              36,
+              21
+            ],
+            "offset": [
+              138,
+              88
+            ],
+            "indexed_sha256": "e3f56ed68cda53d03d0bc1c8ee75cfefc63e239ac55ba8c899423d08f3ccf182",
+            "png": "artifacts/rigellian-building-reference-study/RI05/surface-00.png",
+            "png_sha256": "50b70b3bb25face6ab30bdf39b6feb7340f3389d200cfd32caa924b5b7e1b04c"
+          },
+          {
+            "index": 1,
+            "size": [
+              26,
+              55
+            ],
+            "offset": [
+              147,
+              49
+            ],
+            "indexed_sha256": "7c5beca4ee20d6b96a5ca916e3e32832f216306a5589d0c2be16c43a80ac71b9",
+            "png": "artifacts/rigellian-building-reference-study/RI05/surface-01.png",
+            "png_sha256": "1eb9c0911ca9cf79d3b0d8612cdad2d60482d193e1a8f151e6e9505e8be9d831"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            147,
+            49
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI05/surface-composite-preview.png",
+          "png_sha256": "db3ba4b53c510d4fbfdeb90c62884579472f881924d36b786b020db2a322bf1c"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "111a7f87e325c080fc517e1528a5be5ffd25d530a31e4673caf3072600a44f34",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI05/hologram/frames/000.png",
+            "png_sha256": "6546c463079a95f1213a66da1093d6e1b2f6c96c3ffdccbbf58169ac11ce50ce"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI05/hologram/frames/010.png",
+            "png_sha256": "693552683a48fd7a1fd4273d440e4fb1da46036d34767cbea90b4e3fdbbdb7a1"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI05/hologram/frames/020.png",
+            "png_sha256": "f012dd36695fc960955af289041c6d84ef82c8cdf662855aae78f128c604195d"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI05/hologram/frames/030.png",
+            "png_sha256": "fc7ef74daa2b98cd6f45741679ab6e7af922d2609312738e63440f5699936f87"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI05/hologram/frames/040.png",
+            "png_sha256": "e1201fb9d4a1e0507157870e527313373649cf47c40218d2130f6bec8f1b6701"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/045",
+      "name": "Strategic Bunker",
+      "key": "RI06",
+      "global_type": 45,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 24,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "a1100743859b7bc4e3f5e03cdf4c58097fc0cdc71394c1e12e62614ab55cce77",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              49,
+              31
+            ],
+            "offset": [
+              132,
+              82
+            ],
+            "indexed_sha256": "c036d92dd5f8c9e136bd408562b994335dab118c3cbe968fb5baca6474ac11f1",
+            "png": "artifacts/rigellian-building-reference-study/RI06/surface-00.png",
+            "png_sha256": "81d8f9fdc311d8df21dad83f8c4dda12d6564f5efb0ce97f0d7ffb5dc17ea470"
+          },
+          {
+            "index": 1,
+            "size": [
+              35,
+              83
+            ],
+            "offset": [
+              143,
+              24
+            ],
+            "indexed_sha256": "cb57e4dd2b8525885e81dc209707af80372a21c5be5f096de114912974606b2c",
+            "png": "artifacts/rigellian-building-reference-study/RI06/surface-01.png",
+            "png_sha256": "a21c21367cb6d489ce32a747e9522331f1fe37191c09d8751d013bfbbd7664a2"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            143,
+            24
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI06/surface-composite-preview.png",
+          "png_sha256": "95c8bfbbed6063c7e2166a5f34b4584a92c796ef7cee6ecd9d5739ba47a623f5"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "aa5c1fb7831b7d948db0739d194b52cf15c8e536591c4a5fa5d0b536183bdb05",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI06/hologram/frames/000.png",
+            "png_sha256": "11026cd9a1c2824c2bc7638f0487b45e87c54fde46902e076606a77375412e7e"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI06/hologram/frames/010.png",
+            "png_sha256": "2c024d8f39702042b09d099dee7f0bd6181a0c6a5b0a274acc580456804a5cd1"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI06/hologram/frames/020.png",
+            "png_sha256": "d21d86174fe22b99b2d9c43aecfd6711ee6f78fdac554fbff80890d68eda40f5"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI06/hologram/frames/030.png",
+            "png_sha256": "f819de51a69a5927dfdd2147187a1b8eb2d8035ae70edfb33c9e6e027f8f50dc"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI06/hologram/frames/040.png",
+            "png_sha256": "a8c539589ec8bcfa4a7ee7257d0515e28217e205557a059d81a4504d601a572a"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/046",
+      "name": "Science Labs",
+      "key": "RI07",
+      "global_type": 46,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 255,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "94cde81e0cbb9f87ace07e3047c2e7849ddd83bb2214a7cfbbac1cf6023d7ecf",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              44,
+              27
+            ],
+            "offset": [
+              136,
+              85
+            ],
+            "indexed_sha256": "2372bf30a3c145ba47425a10cde91a19617afa1d4c5ab8488956877e6999b5a4",
+            "png": "artifacts/rigellian-building-reference-study/RI07/surface-00.png",
+            "png_sha256": "fd580bf301f8bb0bce39bd0bc111aa7c83a224fc72abb704d635d61d14a56905"
+          },
+          {
+            "index": 1,
+            "size": [
+              34,
+              87
+            ],
+            "offset": [
+              145,
+              17
+            ],
+            "indexed_sha256": "98e41d033fa767d40109af4a69e570333018961c0dbb4b4e70ad6c4bb7afa989",
+            "png": "artifacts/rigellian-building-reference-study/RI07/surface-01.png",
+            "png_sha256": "ae05234c6c880d32330746f8a484da33cc214585a0e32ad58a9f12cc30bfca11"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            145,
+            17
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI07/surface-composite-preview.png",
+          "png_sha256": "0a750695aa3cdc460f776498f7e1d230ef20c4f984216127f55b5783ed451fc8"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "1e13417e4e6c92efef10bdbd9a042a896af6cbf80b8084236c1e3507f24edd02",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI07/hologram/frames/000.png",
+            "png_sha256": "9348bd6ce80c4dfca469e764594050dfb48b3b1eb17eaa8ca7635d9b72280bf5"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI07/hologram/frames/010.png",
+            "png_sha256": "16bf4513a3c1d8ceead39f955076a528844a34f6b2248fd7f8f5adb6ed6c2338"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI07/hologram/frames/020.png",
+            "png_sha256": "f86ad5bab6e28e50c90e1fe59a0ce38dbd9f4d7082359232f6ad87ab2d8887f7"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI07/hologram/frames/030.png",
+            "png_sha256": "5c4de7c776be13041c28057e0a3bf5afa886165dde2d40658121d32552016f00"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI07/hologram/frames/040.png",
+            "png_sha256": "0ccdf2f6fd8dc21c12c96e3447d65d79b00a2ac41fbb2e872e4943e97c0024d6"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/047",
+      "name": "Databanks",
+      "key": "RI08",
+      "global_type": 47,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 255,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "78dd5b5543c76a83be5508e7b894632ca2c96bf7ed25346784661f6a183e71ce",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              33,
+              21
+            ],
+            "offset": [
+              141,
+              87
+            ],
+            "indexed_sha256": "514869e51aca4f07bf50809479387b5c194014e231d1ce51bcaa204c8860ad4c",
+            "png": "artifacts/rigellian-building-reference-study/RI08/surface-00.png",
+            "png_sha256": "ffec142230939134d203f92644c5f36b751365c718039e81a6fb393881cae5dd"
+          },
+          {
+            "index": 1,
+            "size": [
+              26,
+              73
+            ],
+            "offset": [
+              148,
+              32
+            ],
+            "indexed_sha256": "4d8463ca58629a6bffe5dd84819aa0178a398a50b4f0ee1fb9bbecfa2208ed42",
+            "png": "artifacts/rigellian-building-reference-study/RI08/surface-01.png",
+            "png_sha256": "b04b72fe3175043df3b145f1ae44cb5c72bdfaac7ea1fbf864361276a6c58839"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            148,
+            32
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI08/surface-composite-preview.png",
+          "png_sha256": "a2ac52fa5c2383e7af27fbe3fe5241cc6b4416ea0528717f0feb7eed4d4b6ac6"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "f57ae8c8e16a6d2b1b2f8f4a5abdcd70badd1968182341a8fff74d77de946367",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI08/hologram/frames/000.png",
+            "png_sha256": "1b6bf115a4c4ae1455d14db11b132ff6eb1a468ec52a23a9390a51adff8f3ffc"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI08/hologram/frames/010.png",
+            "png_sha256": "06b94696cdc5f38f8a47cc3911ef1a827bb7dd42883fcfd58834d1cb108f4243"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI08/hologram/frames/020.png",
+            "png_sha256": "bc92b0656558b7dd2e28258a06ebb03253b253a481f0549f731ae1ab95ed6f40"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI08/hologram/frames/030.png",
+            "png_sha256": "41afa8a5bb4de4a280487ea2177e9b74c0e85aef9fbdc9c8f997f6c5674655ed"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI08/hologram/frames/040.png",
+            "png_sha256": "c1aa3ab1c9bddc54f1098bf2bf5f82e04df59ddae14d71cccc8ffd7e42b7990f"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/048",
+      "name": "Construction Unit",
+      "key": "RI09",
+      "global_type": 48,
+      "footprint": [
+        4,
+        4
+      ],
+      "definition_class": 25,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "1c28150248b109b5d2aa83b1d850ecbd7832f01ed333ca8c405053f1316dba41",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              68,
+              25
+            ],
+            "offset": [
+              124,
+              89
+            ],
+            "indexed_sha256": "a35dc712f62d6e2b4ae22021c3757f279184155bf6a681080ca491ddbef95cec",
+            "png": "artifacts/rigellian-building-reference-study/RI09/surface-00.png",
+            "png_sha256": "6bedf9a3158112ddcdc1377e8e7d51e52b422155d325d61c5cfbc1118dfb706e"
+          },
+          {
+            "index": 1,
+            "size": [
+              60,
+              37
+            ],
+            "offset": [
+              130,
+              72
+            ],
+            "indexed_sha256": "4e17c3927ea5f047cbd0b2b0caad3a9b13bb8b43ac9a2f52368a290f0bd88079",
+            "png": "artifacts/rigellian-building-reference-study/RI09/surface-01.png",
+            "png_sha256": "0bc9e3c287472ca4825f5d93aa19c340ad803fcc090f8e81f29772fae37549e6"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            130,
+            72
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI09/surface-composite-preview.png",
+          "png_sha256": "edc90e3fb739b1b6a95f311c9a3751e3cb70bcfc1dee6b5dcaaec809430fd5e0"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "048011a1929b0228b5d88d6370852916a8587652c330f5da822e0694ed958f19",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI09/hologram/frames/000.png",
+            "png_sha256": "18591cfcaec08556320e5b66a5942115ac0c18ea386e97e02f19246e8e552b95"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI09/hologram/frames/010.png",
+            "png_sha256": "94202c944b6fe5f38402fc28ced46c7871c74b37cc7d711f062df12d3e84a871"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI09/hologram/frames/020.png",
+            "png_sha256": "c1fa4ad21a7064368e7bbc7c2ec5caf1915b703830c233631ce80f61c229af7c"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI09/hologram/frames/030.png",
+            "png_sha256": "c44f75b0cb26594da7803a4e35fdb22523df4ad57f923b36f798bf4b71215cc8"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI09/hologram/frames/040.png",
+            "png_sha256": "a041a75a803714eb46b02124210363b90e7ce8097bfb5fcb891748c6338ca0c8"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/049",
+      "name": "Ground Deck",
+      "key": "RI10",
+      "global_type": 49,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 26,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "ecc20c5c56da2219fa10cc3ad1fb5fd6cc7b47c818855aa13d8705f84a2fddb9",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              51,
+              24
+            ],
+            "offset": [
+              134,
+              88
+            ],
+            "indexed_sha256": "d3d5f1441d0d04377448fbfe250f7604c81bd35ff17a64683e03ffc59b78c176",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-00.png",
+            "png_sha256": "b32fec19a67eea9407ad030b9a9d5f2e628616088ecb75e5e92a7f901ba447dd"
+          },
+          {
+            "index": 1,
+            "size": [
+              44,
+              29
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "indexed_sha256": "2222eb9e191aba7ef145fa049d241e280e934c7a385ca009cf1c9dafb0fed27c",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-01.png",
+            "png_sha256": "c9892bdad7f654e8ae864e905a14e6c8373b9b460076b53cd12b81a69fe22510"
+          },
+          {
+            "index": 2,
+            "size": [
+              28,
+              11
+            ],
+            "offset": [
+              146,
+              87
+            ],
+            "indexed_sha256": "5507dcfab6d8fcb489cf2c77d47ca3d1d736bff5b471b3b2669494a8cc6c612f",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-02.png",
+            "png_sha256": "d2b4b6fe1f22d971769fa78a21cf4442c38f4212826df03ba69a6b84bf9593d5"
+          },
+          {
+            "index": 3,
+            "size": [
+              28,
+              11
+            ],
+            "offset": [
+              146,
+              87
+            ],
+            "indexed_sha256": "f4a90dca937480f7f8cc6e797cbbcd2ccadfbf5d076cc0184ec8456fbfda1741",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-03.png",
+            "png_sha256": "d1e6c0f24033080060026506b844a0967c7c7402a6ac58c0af483ca0a0d0b8f6"
+          },
+          {
+            "index": 4,
+            "size": [
+              28,
+              11
+            ],
+            "offset": [
+              146,
+              87
+            ],
+            "indexed_sha256": "9daf618ec830b1302a7f1bb21aa1e7e90bf6626b0adb43e525dfd4b6371bcb31",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-04.png",
+            "png_sha256": "ad981f443b7b71cfeae87d64e6bd9c59c48adbc5c7b0d5cab1dacc7c900b3b93"
+          },
+          {
+            "index": 5,
+            "size": [
+              28,
+              11
+            ],
+            "offset": [
+              146,
+              87
+            ],
+            "indexed_sha256": "b0660bfa4127ecf7adc17399e37e618a2f1040c3acd770ae3e5d053316010e3a",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-05.png",
+            "png_sha256": "ccdaff83406acffc49bb334bc1de760df651a4f0bb44f699fc54d881f961f3d5"
+          },
+          {
+            "index": 6,
+            "size": [
+              28,
+              11
+            ],
+            "offset": [
+              146,
+              87
+            ],
+            "indexed_sha256": "95843d392d06cf25e730bf8d6a804b9bc61044f6caa8b1276124c7f2de4a85d3",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-06.png",
+            "png_sha256": "04349aeaa72fa400b531c954995c1b2973de2c64842e07f33fe5afd504fd080b"
+          },
+          {
+            "index": 7,
+            "size": [
+              28,
+              11
+            ],
+            "offset": [
+              146,
+              87
+            ],
+            "indexed_sha256": "aa0a8057f4a9378d45d5b83f3c8082350f2cb714d2da7d9616b3c5a8f4a547b0",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-07.png",
+            "png_sha256": "42c1d59d6378935fd352bc160598e44a5e17b5bf318c43056a9b5152419d74ea"
+          },
+          {
+            "index": 8,
+            "size": [
+              28,
+              11
+            ],
+            "offset": [
+              146,
+              87
+            ],
+            "indexed_sha256": "9eed078f2d6e79e396a041781596bd5ad53976d8fddab04595334e5e3de603a7",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-08.png",
+            "png_sha256": "464d91a8e5d17e3d8adc80b0e6e5033f80e62fa8895596994e64d75411983a4b"
+          },
+          {
+            "index": 9,
+            "size": [
+              28,
+              11
+            ],
+            "offset": [
+              146,
+              87
+            ],
+            "indexed_sha256": "e4333892475f443746f6bad1390c7843d6ff95253ef6a4cc5f25983eba4ca156",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-09.png",
+            "png_sha256": "5da5e3df42971e459a208e385683f4e71ff72b9162fcc92b3354edc9afe8ef51"
+          },
+          {
+            "index": 10,
+            "size": [
+              28,
+              11
+            ],
+            "offset": [
+              146,
+              87
+            ],
+            "indexed_sha256": "f9b7d7e40d85743e1480e78f8dfd976b8a86bd4fc9fa356dbb9408999fac04c3",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-10.png",
+            "png_sha256": "946776ea0bcc31ee7448cd96ef94d42020282efb41930079805667dd44fe6070"
+          },
+          {
+            "index": 11,
+            "size": [
+              28,
+              11
+            ],
+            "offset": [
+              146,
+              87
+            ],
+            "indexed_sha256": "9cc62ffc54cddf7e8261eb7a3cae47221830799aabd5acf85637dae11599b9ca",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-11.png",
+            "png_sha256": "0978eac281e6ef5c9ed17cf612d28c93119aa4faf42f20d99e3fee2e3f1af392"
+          },
+          {
+            "index": 12,
+            "size": [
+              28,
+              10
+            ],
+            "offset": [
+              146,
+              88
+            ],
+            "indexed_sha256": "ac030a079cabaceb1de2dae33d929304259bae24f0123aa51056dd82093ff381",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-12.png",
+            "png_sha256": "fad3ea16062b9c44c739f4b8cac74a2d224084a5aeda63f952959660a4103018"
+          },
+          {
+            "index": 13,
+            "size": [
+              28,
+              8
+            ],
+            "offset": [
+              146,
+              89
+            ],
+            "indexed_sha256": "ccaacab6c570ee6726834a3129d8c1b7d3dd7166315c0a9edc58101a07c7acb5",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-13.png",
+            "png_sha256": "f2211791899a9315a1df171eb7b022b5d40648f1185070d8b11fbdec7ce456a3"
+          },
+          {
+            "index": 14,
+            "size": [
+              28,
+              5
+            ],
+            "offset": [
+              146,
+              91
+            ],
+            "indexed_sha256": "6dc9bf16952fa0634801f956accca0826f3373f9cca64bdc90d75e7d62ad894a",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-14.png",
+            "png_sha256": "eba5045d9465e77a1e9e53964ea496f64a37307006f133615ac511c62628c992"
+          },
+          {
+            "index": 15,
+            "size": [
+              0,
+              0
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "empty": true
+          },
+          {
+            "index": 16,
+            "size": [
+              0,
+              0
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "empty": true
+          },
+          {
+            "index": 17,
+            "size": [
+              25,
+              15
+            ],
+            "offset": [
+              148,
+              97
+            ],
+            "indexed_sha256": "2829b532e821c6ac0b37c7b3b76fe1ba7c5a31a433ba35337cfd353a2f2c8c35",
+            "png": "artifacts/rigellian-building-reference-study/RI10/surface-17.png",
+            "png_sha256": "fb45129323dff88988fbc784910f12dd45244f7f551c0976b373f96613f2f433"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1,
+            2
+          ],
+          "offset": [
+            139,
+            81
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI10/surface-composite-preview.png",
+          "png_sha256": "a113e93a8ab12758781bb9fa318727b5fc842471ac3230f5894f79f2cd13d6b4"
+        },
+        "layer_combinations": [
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-02.png",
+            "png_sha256": "a113e93a8ab12758781bb9fa318727b5fc842471ac3230f5894f79f2cd13d6b4"
+          },
+          {
+            "layers": [
+              1,
+              3
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-03.png",
+            "png_sha256": "18547a90da0d26fe04dfaedb7801118f22cd88bd5ea1b5921329a2edb0976278"
+          },
+          {
+            "layers": [
+              1,
+              4
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-04.png",
+            "png_sha256": "68046cc562f30da068e9d193d26bee718b816eca6f95d4a836dfc611c71ac311"
+          },
+          {
+            "layers": [
+              1,
+              5
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-05.png",
+            "png_sha256": "bca791ace4a4f24f941ed589a36a68365a979c9152a0528905eac22136fc3dbf"
+          },
+          {
+            "layers": [
+              1,
+              6
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-06.png",
+            "png_sha256": "05c1b99349be69f84a5e32c972b8cf995d549c43dcfc01ab7ce4cfe362d64079"
+          },
+          {
+            "layers": [
+              1,
+              7
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-07.png",
+            "png_sha256": "26c9076e935f99975e2224af848ea3b6927bb892ba20aba65938f90bde7d4903"
+          },
+          {
+            "layers": [
+              1,
+              8
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-08.png",
+            "png_sha256": "10058c0da6d0551d53168c7e746bf7acb2e362901df397e7cafca9224b1f8884"
+          },
+          {
+            "layers": [
+              1,
+              9
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-09.png",
+            "png_sha256": "087491d3a700cac35604df7b7edcf2b1b9f8f8cfbeada3ad2628d68bfd9e6ff3"
+          },
+          {
+            "layers": [
+              1,
+              10
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-10.png",
+            "png_sha256": "98096d52c3c05f791b4381f9481ea3f48ed55b139a85f2e7c96cd0c8c6f3ba05"
+          },
+          {
+            "layers": [
+              1,
+              11
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-11.png",
+            "png_sha256": "bb6f8fa3c9bb23107a40d99e3a88df0b151ef7f9c3a65c15c1f3495bed5bbdf6"
+          },
+          {
+            "layers": [
+              1,
+              12
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-12.png",
+            "png_sha256": "ada45121434e027b62351bfe859a9ad52ca2c90260d47b606d5715f4c166d004"
+          },
+          {
+            "layers": [
+              1,
+              13
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-13.png",
+            "png_sha256": "808515cd175a3880e3e3bcb84e1a6bca27ca4525cb7d8fcae93e726d1632aefa"
+          },
+          {
+            "layers": [
+              1,
+              14
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-14.png",
+            "png_sha256": "f6ca31133663e614dcfc34a4bc7233ce14f1821fadbb15b5e20d1f5658080994"
+          },
+          {
+            "layers": [
+              1,
+              17
+            ],
+            "offset": [
+              139,
+              81
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI10/layer-combination-17.png",
+            "png_sha256": "079af2b6f4b8f85ace93a39415177283a1d6c2f8e0b080d2dcdb7a599f3e3d51"
+          }
+        ]
+      },
+      "catalogue": {
+        "source_sha256": "bf219f85028372df25f1008fd9d4c27de9386b7b86d7571f13736071fec210d9",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI10/hologram/frames/000.png",
+            "png_sha256": "702dea7b2135401f7a8e93a3b518881e801c377941791b66035a6d03535f0908"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI10/hologram/frames/010.png",
+            "png_sha256": "c135ba1ea3be61d47820129a3a9ac7f7b64162bb6550eddff7f5f33b79075814"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI10/hologram/frames/020.png",
+            "png_sha256": "ceb50e7fadde6bcb828b29b161a9aed9c46a251e0cab54c1fce742474dd989be"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI10/hologram/frames/030.png",
+            "png_sha256": "c886bd9841a74a768c21cde17c754ec5087b6f4c8869bf4f777871cb2c9b77b8"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI10/hologram/frames/040.png",
+            "png_sha256": "2fe0ff39bacb7190b1d2ff7452f7362cfcf6cfee3e7b5b239e536cb5be38f10e"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/050",
+      "name": "Probe Launch",
+      "key": "RI11",
+      "global_type": 50,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 9,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "3742a26657a9726189de2a035f10204772b1bf41d0a82abb14392d4ad5683728",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              41,
+              24
+            ],
+            "offset": [
+              137,
+              87
+            ],
+            "indexed_sha256": "3a558872b06ee944bb047a848c11b4a4dbf3bb0504b664a9023ee0d88cbc7015",
+            "png": "artifacts/rigellian-building-reference-study/RI11/surface-00.png",
+            "png_sha256": "b51b6b3ab285b7981ad3ffc4090880141629873c06578b967c03639551c34923"
+          },
+          {
+            "index": 1,
+            "size": [
+              28,
+              18
+            ],
+            "offset": [
+              146,
+              89
+            ],
+            "indexed_sha256": "47f6efa9ed9d3a9ec3c3043dcc94e9edb99901ea4392e3feb77d7f5fea34d3d0",
+            "png": "artifacts/rigellian-building-reference-study/RI11/surface-01.png",
+            "png_sha256": "dc9f918fc3044c51e9d83fe0772aee11916bb21b4835f6bd474fedda07c5057b"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            146,
+            89
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI11/surface-composite-preview.png",
+          "png_sha256": "6e74f6e9f6c2461f08596d30c683106f0ac6488622016374825e99461141c835"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "2a0805e18533dcb3bdf6c19d35ca2e0662ff38f31008b8dbee4c05a2f1d2ce4d",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI11/hologram/frames/000.png",
+            "png_sha256": "c46cfbbaee54a66843ae6f3ca48b7b5ce32f3ebd000e30c1a61e726a39e3d28d"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI11/hologram/frames/010.png",
+            "png_sha256": "820324ae43bc24e47098682c78c1fc4717d521153112ae4664945c211ccffeeb"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI11/hologram/frames/020.png",
+            "png_sha256": "c78a2f1c8c41457f81c90fb690eb62c27810e02284c19e6cf4d3a72e3688980b"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI11/hologram/frames/030.png",
+            "png_sha256": "beeeeb1e37ebf772c58466487ddf0ce28a001bf68ca3080603085a77cae7397e"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI11/hologram/frames/040.png",
+            "png_sha256": "43966f7cd7427d4a9873db24c59aa8adcb9c7cdcd0863ae552243793ae980daa"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/051",
+      "name": "Deep Space Probes",
+      "key": "RI12",
+      "global_type": 51,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 16,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "fd92cc6903edee079bf1ddda483fba26238c766a338a5b6c868f4865c6f02132",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              40,
+              24
+            ],
+            "offset": [
+              136,
+              86
+            ],
+            "indexed_sha256": "062141897e22d6f9609a92a1f5279000e650222b85a5731442289e9434ca1dd1",
+            "png": "artifacts/rigellian-building-reference-study/RI12/surface-00.png",
+            "png_sha256": "3cfadef687ca86dcc0430ed47072ee2859e6a32a9c20f44ab6815c9c81ffeae6"
+          },
+          {
+            "index": 1,
+            "size": [
+              28,
+              70
+            ],
+            "offset": [
+              146,
+              37
+            ],
+            "indexed_sha256": "9ea80fc828deb0498b2a7da193650caeecbe8fe381c3e29def944c94b6e02f0a",
+            "png": "artifacts/rigellian-building-reference-study/RI12/surface-01.png",
+            "png_sha256": "f4a472e94c9063ae3ebb0bee1fcca78cfc09eb73319e7fd9f1f871e92350a72e"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            146,
+            37
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI12/surface-composite-preview.png",
+          "png_sha256": "4a74614c41576ce17828a2312dc9eb235eefbca1c51603eba58c24330aefc605"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "3a5b030624ac1c6dc3f6541c6f37cb9499c098ff25327026ca97f05e3894d1cf",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI12/hologram/frames/000.png",
+            "png_sha256": "3186c59310714e7b69b611a9a490dcfdf9a4d0a605edc77271fc744ea14ab46c"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI12/hologram/frames/010.png",
+            "png_sha256": "d08edff846badfc4d31d329b964ef318d5b8da4e9a81a318e138f6dd292f22c4"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI12/hologram/frames/020.png",
+            "png_sha256": "0a31fb0a987b7b517a1088318f3307727130ed6488d43ed23fd18a87e750be8a"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI12/hologram/frames/030.png",
+            "png_sha256": "a82a0677c47a6c323f01cbe0d8726e709fac24c7f69b5128d5120c12209c1e49"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI12/hologram/frames/040.png",
+            "png_sha256": "4baa722f2b7fe4b27c828455331f365331889dc0a0720ecd92ab2977ff4f4977"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/052",
+      "name": "Gravitic Converter",
+      "key": "RI13",
+      "global_type": 52,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 22,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "117630706dbfcf524a200f73b95ef2134f891909ca2e09f513dc637bf5121f1f",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              36,
+              23
+            ],
+            "offset": [
+              138,
+              87
+            ],
+            "indexed_sha256": "a68c4ac951026c84fe2bdab5df237b00be60f682e0a1a9a4627d956200593e44",
+            "png": "artifacts/rigellian-building-reference-study/RI13/surface-00.png",
+            "png_sha256": "dda4d896614ce669b6d84f8dc3c7ae5c4965f8df1af497da4619308969548154"
+          },
+          {
+            "index": 1,
+            "size": [
+              25,
+              73
+            ],
+            "offset": [
+              148,
+              33
+            ],
+            "indexed_sha256": "9d5abaf1dc545fde98b605281979f2207ecca52b3da9dbdb14c321fe86a624b6",
+            "png": "artifacts/rigellian-building-reference-study/RI13/surface-01.png",
+            "png_sha256": "10dc32604c7e937f6df1e67175df20c820bacdb66990349c3b3d9a9474b073ae"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            148,
+            33
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI13/surface-composite-preview.png",
+          "png_sha256": "71735c9eed719fd7a72f06456c2b8f327c51dfbb5e88cb72727edef4566b6047"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "8685e3289c70111b5f21c1a0ae1de8d464961e1bb9dbfc24d7cab25f4072c995",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI13/hologram/frames/000.png",
+            "png_sha256": "7ff3b3d7038cfc055492a1e1f2fd3c42eb6d4cb29f90b04969a541720e118e4b"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI13/hologram/frames/010.png",
+            "png_sha256": "9ee3ff129f89c6b11c2fe9d11df0a092cb2b31fce15000ff0610739de9d536cf"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI13/hologram/frames/020.png",
+            "png_sha256": "4c1ac28226d74d55c8171698b165799dc9e32513a692a305a211d560b1109300"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI13/hologram/frames/030.png",
+            "png_sha256": "71471e073c70e49a5b2ad159d71ea874e18932801fde1ded78ca9e9b8daa9819"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI13/hologram/frames/040.png",
+            "png_sha256": "6efc913ea3ba06dc01231c3d42585394b9399e07f181f86c78179dd6b1661692"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/053",
+      "name": "Energy Gatherer",
+      "key": "RI14",
+      "global_type": 53,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 28,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "1b9d52fa30becd16b665957c8b1346dcfe79d76da53f4007caeaeb755f1f1f1b",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              29,
+              21
+            ],
+            "offset": [
+              142,
+              88
+            ],
+            "indexed_sha256": "ab8b97bacc713802c576c7893c5eea73f0ad3f0c0ea3094027891bbd09165be7",
+            "png": "artifacts/rigellian-building-reference-study/RI14/surface-00.png",
+            "png_sha256": "e12fb282a3fa425e902036269d4309823dc6f51daad06303ca58c5bafd04cb5f"
+          },
+          {
+            "index": 1,
+            "size": [
+              19,
+              54
+            ],
+            "offset": [
+              151,
+              50
+            ],
+            "indexed_sha256": "cb98a570f8130e5e278197c8cf2007e654eb5c1d7d7bbaa66d9d9ba1e0446a30",
+            "png": "artifacts/rigellian-building-reference-study/RI14/surface-01.png",
+            "png_sha256": "fa5ae7f212fa881043a8eb15b0ae45379169fec7cc101f9683547c529d009ba3"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            151,
+            50
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI14/surface-composite-preview.png",
+          "png_sha256": "a4134f212622964ad3614ee88ab4ea26cdefb9760739a12bcaa5e1aff0779cdd"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "583ffd75e155964eb395395f9b739e4bf522bea9bb5f26a7b23479e744a15fb8",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI14/hologram/frames/000.png",
+            "png_sha256": "e0df9b700a4579ec87b0af83af63cf1616a67e34063cd0776d08622e28d3801d"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI14/hologram/frames/010.png",
+            "png_sha256": "b67dabc7dd42e3fb057494a3e251fa30fb0162b45282011d6a3a143ba68d01eb"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI14/hologram/frames/020.png",
+            "png_sha256": "e2573441965400fd50ff485bdcc21bc0b0f8aded57d98d654c0ce5bfca352592"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI14/hologram/frames/030.png",
+            "png_sha256": "484563c2a2d9bdad8b4c4e42bdfe95e7d835e5c2c2cde5abfd90d27215d0a4f0"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI14/hologram/frames/040.png",
+            "png_sha256": "f96ab95f70780e63dfd2aaacef0e8a402bdfc9c5aae59f5ed9d0abfd336900c6"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/054",
+      "name": "Energy Globe",
+      "key": "RI15",
+      "global_type": 54,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 1,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "7cd1c68a764d07e7897a517bc5e84b187ad4f4ec27bbe0dc35adae38c54d07ed",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              31,
+              19
+            ],
+            "offset": [
+              144,
+              91
+            ],
+            "indexed_sha256": "2f3327c7eb4be90402b9c7f77e29a6ba830c028b40f5e8e257a91f4d56bba6a5",
+            "png": "artifacts/rigellian-building-reference-study/RI15/surface-00.png",
+            "png_sha256": "07eb2ea2caaf9458cdf381be709c25678e88df0885a2b039c023d3e5b9522592"
+          },
+          {
+            "index": 1,
+            "size": [
+              27,
+              33
+            ],
+            "offset": [
+              148,
+              72
+            ],
+            "indexed_sha256": "6526a1c86a7213954c136d541de82e3e1114d76a27365ae6b626724a8ec91261",
+            "png": "artifacts/rigellian-building-reference-study/RI15/surface-01.png",
+            "png_sha256": "1f423b69563d251e5f9fdc6bd7aeebf820ad58a432a3db064c6ee166dabf39de"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            148,
+            72
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI15/surface-composite-preview.png",
+          "png_sha256": "67de9509190596cdd197e4afdfc360aa690efff08270915134611f01146ce89f"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "9a49668919b991b02d52c74e5e22be29319f1d1e27d49e0f024a34b29387ed9d",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI15/hologram/frames/000.png",
+            "png_sha256": "9c300e38614be498c464c26807805c1d083e75fbe7fd5cf9e69156a7027e08b6"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI15/hologram/frames/010.png",
+            "png_sha256": "2902949409e2c230507ff534aa3aac8a5d95631da2446defecbf598360475054"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI15/hologram/frames/020.png",
+            "png_sha256": "03e6c2e3f9a04550d098a98cd22db06ba85875ee47d64327f9c1240e0bda84dd"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI15/hologram/frames/030.png",
+            "png_sha256": "65b42a0a9741fe09ca3b3e2623d25ea26061520e363c2b0bfc8b8736fe73b469"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI15/hologram/frames/040.png",
+            "png_sha256": "eb80cbc361769a726544b99b662443814413ba85a11d23fda1f850e824b85a56"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/055",
+      "name": "Shield Generator",
+      "key": "RI16",
+      "global_type": 55,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 10,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "195c9682710c8952ed6a060d291a2df33abff2fe84115c70e32a016ad9ca39b2",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              33,
+              22
+            ],
+            "offset": [
+              142,
+              89
+            ],
+            "indexed_sha256": "67c892319f3658f91253fe6a28a5b23fcfba8c59e1ba99665a141552b1af6565",
+            "png": "artifacts/rigellian-building-reference-study/RI16/surface-00.png",
+            "png_sha256": "7669211d7aea99bf4f247c91fe5ff8872912877f88c62661d2ee315af4ebf617"
+          },
+          {
+            "index": 1,
+            "size": [
+              24,
+              49
+            ],
+            "offset": [
+              148,
+              57
+            ],
+            "indexed_sha256": "a2983029223f8c2f16024e729c0d8fe50561ca4001c26370fab9d57ed4ef5051",
+            "png": "artifacts/rigellian-building-reference-study/RI16/surface-01.png",
+            "png_sha256": "b3d9e9484de2e71468155a5e161a421986ceb1145e688e24295d4908157a5ce7"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            148,
+            57
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI16/surface-composite-preview.png",
+          "png_sha256": "53bf2451ea7ac0b5e6ef83bb2ec622392c9709b46088053c2feae34a32d8ee0f"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "d024edb80bcb7525f2225d4317bf30c61345b6ad497c24a96c1aaef72057370e",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI16/hologram/frames/000.png",
+            "png_sha256": "ea1de4ae739df835c533134d2a83bafd91c6c00b23a237f3aa43b778f4991084"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI16/hologram/frames/010.png",
+            "png_sha256": "10be042a8a5181318691f4d7548f95b89699a69bf6337c98f6d1003b04146223"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI16/hologram/frames/020.png",
+            "png_sha256": "dd2d658416995a83af8fefc72d3f4c4d44f0858266e04044fc4f06624ca4beb5"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI16/hologram/frames/030.png",
+            "png_sha256": "942fda85b81a22180d892c2c43e598e206223332e12689cc224352c6ce3fdbad"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI16/hologram/frames/040.png",
+            "png_sha256": "1698442c50f059e8e8e5e5ceb7c52ee409e93e9c63c972f7f43f3a5d355df591"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/056",
+      "name": "Arms Unit",
+      "key": "RI17",
+      "global_type": 56,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 7,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "291117bb091e6d2de18694c1aeb90b06905d92e29205c21882b9580bf4c61b86",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              44,
+              25
+            ],
+            "offset": [
+              138,
+              88
+            ],
+            "indexed_sha256": "d02b46fe9d1f9d323af48751cff927da037be496d9a28149c4f0a9f80df20845",
+            "png": "artifacts/rigellian-building-reference-study/RI17/surface-00.png",
+            "png_sha256": "57d6e7d2e774db089eb8c13c121925fc4a0ea412a497331a44fe10a0035a642b"
+          },
+          {
+            "index": 1,
+            "size": [
+              36,
+              40
+            ],
+            "offset": [
+              144,
+              69
+            ],
+            "indexed_sha256": "c86b5590a7a683c850f4e1a499fcf15f8310180013964e2302b3400322ddf9c8",
+            "png": "artifacts/rigellian-building-reference-study/RI17/surface-01.png",
+            "png_sha256": "c6a82233ca68aecbc9879be04a5cd981ca5aa6a7f4a350db58fddf733498b479"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            144,
+            69
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI17/surface-composite-preview.png",
+          "png_sha256": "7a96e1c80173bde51de5c0cb8f677f0785b57bbf8f0e508403c1afe913b7ddc2"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "ab935d7cefcfe7d793adbb6b689321a4b2e285195c0fec16d026c6195e9fa585",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI17/hologram/frames/000.png",
+            "png_sha256": "e4fd8a1b15cb0238ebe1d31dbffe9984e5881d09b927d2c7a70ba43bedae6905"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI17/hologram/frames/010.png",
+            "png_sha256": "e38a2ed92b945c3ff8c17f8c140fa981eb28f78221e09cb344feb0bf4a3dca48"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI17/hologram/frames/020.png",
+            "png_sha256": "ae1a139e0850b652412348d2120fc0c83a9eaabc4b9c0759313489a3717be809"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI17/hologram/frames/030.png",
+            "png_sha256": "74bba8ad93bfda8041316a9523656ce448285d1e7062a1ce9b54ed9eedc93fae"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI17/hologram/frames/040.png",
+            "png_sha256": "dcbea82a339af310e617a1ef3ea0f2144796e9fe59b0729287fd37c2443d17e5"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/057",
+      "name": "Missile Launcher",
+      "key": "RI18",
+      "global_type": 57,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 14,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "21439b6702fa216e77183028c8b125b1954e1f8fe5dfccdf00f31c3720edd0a4",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              44,
+              21
+            ],
+            "offset": [
+              135,
+              93
+            ],
+            "indexed_sha256": "3e6a6a40e6207f674fa20e3ed6a1448c5a6b80932ffba08697f31f8c7dfcccd1",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-00.png",
+            "png_sha256": "81ff6b76375c2f4633d7cd9a4dad10ee847d2d05f7372fa7ffc4880dbd1c691d"
+          },
+          {
+            "index": 1,
+            "size": [
+              34,
+              41
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "indexed_sha256": "c94d3a958d97ee1a0a55709fc53274f2512f96594c6038ebccc67ec1cd31129e",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-01.png",
+            "png_sha256": "0f770257ed3e3d6834f9f792b06ea57e418b98e566448510994103fcc86c5188"
+          },
+          {
+            "index": 2,
+            "size": [
+              14,
+              10
+            ],
+            "offset": [
+              152,
+              67
+            ],
+            "indexed_sha256": "5d0613e19f9558a17856728d2bb6b625cfcc492249a9282588ec8aa570501285",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-02.png",
+            "png_sha256": "e8b9cbf108d32e32fc7a8cb8ddaa2df137d84a7c8ab0677d968864fdd59f6ff8"
+          },
+          {
+            "index": 3,
+            "size": [
+              15,
+              10
+            ],
+            "offset": [
+              152,
+              67
+            ],
+            "indexed_sha256": "d7dab3c5dda1dc99b91b42d38a933e6cadafad5ee3c1d9bf2d01a34972541138",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-03.png",
+            "png_sha256": "b5ce3813c0841266d41d61be803e1592b4c158e6de8bfd203ffad0b36074c141"
+          },
+          {
+            "index": 4,
+            "size": [
+              15,
+              9
+            ],
+            "offset": [
+              152,
+              68
+            ],
+            "indexed_sha256": "3a20964145f5fa8da7e397f6ee9902e131138d39b63d9492d482a48fda84f994",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-04.png",
+            "png_sha256": "34eea760393d90372a2ecabf0d4afaaf1ddd540305761521e2c1aeaa559cd998"
+          },
+          {
+            "index": 5,
+            "size": [
+              15,
+              9
+            ],
+            "offset": [
+              152,
+              68
+            ],
+            "indexed_sha256": "002c87fa207c5de92b1a62ec35c4731a269e1d7e3c0b8f1d8d41cbf5e37a049d",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-05.png",
+            "png_sha256": "f810c7cc5417e4ac6b02575e411e27834cda4bdda5b160b2edef66d4ebd20da0"
+          },
+          {
+            "index": 6,
+            "size": [
+              15,
+              9
+            ],
+            "offset": [
+              152,
+              68
+            ],
+            "indexed_sha256": "a6e45b52abce00f7f269a6f80c60da33849a04877044e77aa1f206d0a2073ff9",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-06.png",
+            "png_sha256": "3e560b962fe6a1188abfe216db09e45b2d57f8f912c1d01f94c9d7cab52ccd49"
+          },
+          {
+            "index": 7,
+            "size": [
+              15,
+              9
+            ],
+            "offset": [
+              152,
+              68
+            ],
+            "indexed_sha256": "13e007a1e346f04db278fab00f3562392f5784c14b3967d4749b3cbdb74c72a3",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-07.png",
+            "png_sha256": "987923db568e1ea137ad65812fd634c620cc9a6348658d61255a76092ab19731"
+          },
+          {
+            "index": 8,
+            "size": [
+              15,
+              8
+            ],
+            "offset": [
+              152,
+              69
+            ],
+            "indexed_sha256": "ed68c01982454f8260de85ba04bed86cc9e32c2038acd55995f7da193629d073",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-08.png",
+            "png_sha256": "1aa4448cbc8038e9bb5fcb8e6bf5381aaf9a58acbfab8bf83ff019422e12d9d3"
+          },
+          {
+            "index": 9,
+            "size": [
+              15,
+              8
+            ],
+            "offset": [
+              152,
+              69
+            ],
+            "indexed_sha256": "97d61e5788e7075601b073b3211f66812b50edb86696bf4546f686dccca4319b",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-09.png",
+            "png_sha256": "f6220201210438afeb2bc3dcf0037e1dd64ccfae5605c8d4877817ced17b0a14"
+          },
+          {
+            "index": 10,
+            "size": [
+              15,
+              8
+            ],
+            "offset": [
+              152,
+              69
+            ],
+            "indexed_sha256": "bf69f73bd682d9e30fb3dd9d0ca17832f9408f483c8f83cf284b491127d6854a",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-10.png",
+            "png_sha256": "a8372e73633b4b073b2178052e6931aade08c56c6da334de709efe706adda2af"
+          },
+          {
+            "index": 11,
+            "size": [
+              15,
+              7
+            ],
+            "offset": [
+              152,
+              70
+            ],
+            "indexed_sha256": "dc41f3f394b00c044a7fc764dbeb7df6050fefa60757ebe3ebb6d16e3c7b7ae6",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-11.png",
+            "png_sha256": "3d40bf090ec1356d2fd3fe0c8ad04bc995c089470b7c0e7d5c19ed19166a6183"
+          },
+          {
+            "index": 12,
+            "size": [
+              15,
+              7
+            ],
+            "offset": [
+              152,
+              70
+            ],
+            "indexed_sha256": "c434d9ea2b70b509bbbfd3a360c5447a45c89042099675f748dcefcaaf29cc7f",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-12.png",
+            "png_sha256": "85517e430f3297c10edc2475450b34f80518d3caf029d1315e9ad70d64eebb2e"
+          },
+          {
+            "index": 13,
+            "size": [
+              15,
+              7
+            ],
+            "offset": [
+              152,
+              70
+            ],
+            "indexed_sha256": "eb8b34446f0be958040cb3065ed4c8a01f16e809c1c040694d8dcce6eea8b941",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-13.png",
+            "png_sha256": "e80535af164742851cca762e11827767fd554d434172124e27a93abe68bf3826"
+          },
+          {
+            "index": 14,
+            "size": [
+              15,
+              6
+            ],
+            "offset": [
+              152,
+              71
+            ],
+            "indexed_sha256": "07dc47753604571efa72cb3725e05ee0fe094359e1a280c0e9234278d4c3e46a",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-14.png",
+            "png_sha256": "b19503687b2c3508f53b4691cf47a44ad77b48d601b4a64e8fb9d07823a9ffd9"
+          },
+          {
+            "index": 15,
+            "size": [
+              15,
+              6
+            ],
+            "offset": [
+              152,
+              71
+            ],
+            "indexed_sha256": "a118c234a5bc551e7decad2c79d759dcfb45fdb575a7ed3406adf86e38b494df",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-15.png",
+            "png_sha256": "3fbe74ecbac713639ed6cdf4c6ab39483bfaaf987ebd8d1714b559da24e2b79e"
+          },
+          {
+            "index": 16,
+            "size": [
+              15,
+              5
+            ],
+            "offset": [
+              152,
+              72
+            ],
+            "indexed_sha256": "42987be7b4cf7e9c666392021ff761c5ff7dda597cab915d9ef46f8747377522",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-16.png",
+            "png_sha256": "fd986d7620aa1c5d2cb5cb4b06325e62bdb059184065f203fdb48cc79dfb8b86"
+          },
+          {
+            "index": 17,
+            "size": [
+              17,
+              39
+            ],
+            "offset": [
+              151,
+              75
+            ],
+            "indexed_sha256": "b80263aabe2161b3f7545c5435dc47e39ba0153830034ab6df7330a8c9fd8518",
+            "png": "artifacts/rigellian-building-reference-study/RI18/surface-17.png",
+            "png_sha256": "28e1a9c5d9f329d326a6ba931b5c9970fe6f75b186fde0731c79d8240003acf3"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1,
+            2
+          ],
+          "offset": [
+            144,
+            67
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI18/surface-composite-preview.png",
+          "png_sha256": "94e5838f03661471c1e0e458a5b93dcca8aa9d91b2230eeac194008a9e8c2045"
+        },
+        "layer_combinations": [
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "offset": [
+              144,
+              67
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-02.png",
+            "png_sha256": "94e5838f03661471c1e0e458a5b93dcca8aa9d91b2230eeac194008a9e8c2045"
+          },
+          {
+            "layers": [
+              1,
+              3
+            ],
+            "offset": [
+              144,
+              67
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-03.png",
+            "png_sha256": "a852a5812d420dbf9e64e03ea82e0a38f4c350d9fe16e8436479bf76c10e6f10"
+          },
+          {
+            "layers": [
+              1,
+              4
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-04.png",
+            "png_sha256": "541d0c5006d8defdbcb872492a429195bf161aee7695f405440b09283af975ea"
+          },
+          {
+            "layers": [
+              1,
+              5
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-05.png",
+            "png_sha256": "2f9de0bbe1510648dccf852c9b89922723492df600cc4382c3d9b782c782cca8"
+          },
+          {
+            "layers": [
+              1,
+              6
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-06.png",
+            "png_sha256": "9758bfdc3a00215048ead9561a6a6915d0d281a7ee38c0ef51923725835a4a96"
+          },
+          {
+            "layers": [
+              1,
+              7
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-07.png",
+            "png_sha256": "87e0ce10ec2c59a713b41c90a6482a60360f856fdb619efdd22a664626b6ec5a"
+          },
+          {
+            "layers": [
+              1,
+              8
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-08.png",
+            "png_sha256": "5d22f45c752e1f57440c93e9ce7be9a3c4a390e90561c0ee833f9756dedd10b9"
+          },
+          {
+            "layers": [
+              1,
+              9
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-09.png",
+            "png_sha256": "29026b0df216d6866413740f7b3ec405af09cfc03b7a884b33a0079f60ec3251"
+          },
+          {
+            "layers": [
+              1,
+              10
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-10.png",
+            "png_sha256": "d1024a79bd2073089ab261ae058a2d6358b37e5c2581c79ee9e96f9bd75478a6"
+          },
+          {
+            "layers": [
+              1,
+              11
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-11.png",
+            "png_sha256": "9098d76e6e30bf102263459f22a85e97e9e212f5c94a70bde42612d8c3362e9a"
+          },
+          {
+            "layers": [
+              1,
+              12
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-12.png",
+            "png_sha256": "3473880367effaad80dd9a4d82a15f5e825b1b58efd84fe253546f2dcb987f39"
+          },
+          {
+            "layers": [
+              1,
+              13
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-13.png",
+            "png_sha256": "7e9fb24462f3a569558c63392aee4f0f34a7c438c89d86b97d9e9a0079b79d6e"
+          },
+          {
+            "layers": [
+              1,
+              14
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-14.png",
+            "png_sha256": "81bf04294fa2174e4f3697f2b852577866cdfcc425ae8c99c2d0e4c294dbbd48"
+          },
+          {
+            "layers": [
+              1,
+              15
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-15.png",
+            "png_sha256": "3606656a6403f6c7af83e0604d71dc002de03969fcbd89cad2b2d3c50f2db6d9"
+          },
+          {
+            "layers": [
+              1,
+              16
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-16.png",
+            "png_sha256": "4cf98fe9013797f0b091f6d16ab770d07570d4b12f621e920b8d55ebc15b2f08"
+          },
+          {
+            "layers": [
+              1,
+              17
+            ],
+            "offset": [
+              144,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI18/layer-combination-17.png",
+            "png_sha256": "57b401a2f3cdd180a0eba1dcac6ad0b6370d6fed315232256fbccb8d50a719ee"
+          }
+        ]
+      },
+      "catalogue": {
+        "source_sha256": "d32cea30fae42ad281662cff889aa324866fe01d912d119410f733585ec7c8cf",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI18/hologram/frames/000.png",
+            "png_sha256": "8103a0aded488bcbb5d2a0448e8f3e0151e0856e13bb81daa0e2a24a479fe976"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI18/hologram/frames/010.png",
+            "png_sha256": "a1a9bd3231fdbbaa3ad2fa56503f7d69235636590b41e641ebdc2ae52e9edfcf"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI18/hologram/frames/020.png",
+            "png_sha256": "267ca37a405ca91b0113f416cf2d78f15007306e25fcbe0767be8a70372d6f1f"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI18/hologram/frames/030.png",
+            "png_sha256": "cb2755e81a72749bd67c8296bff108530e988519b420e083a0b57188d8b172b2"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI18/hologram/frames/040.png",
+            "png_sha256": "038cbad1fe3ace091460dfce52056eced8a63daf689c2d35b444f9b78445ac03"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/058",
+      "name": "Thermal Lance",
+      "key": "RI19",
+      "global_type": 58,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 17,
+      "directional_runtime_path": true,
+      "surface": {
+        "source_sha256": "658ed1a1e5604990442575b524886d8c279ab8b280e192518cf514ffd82643d3",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              32,
+              18
+            ],
+            "offset": [
+              143,
+              91
+            ],
+            "indexed_sha256": "74fe8c9121f6efe94a595a4b4ec6053d8ffc6f9a10fd58cbe3e7d6b98ff295fa",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-00.png",
+            "png_sha256": "511b4ac17f72eb9b79bab9a0783ba07e7df49ee6a5bcb0088cd747bc8c083faf"
+          },
+          {
+            "index": 1,
+            "size": [
+              21,
+              17
+            ],
+            "offset": [
+              150,
+              88
+            ],
+            "indexed_sha256": "acdcef68040ee9f8e94e23624416e40a9739729a848a831969ce8d3b5a79f17f",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-01.png",
+            "png_sha256": "0a97e13e7430e70e333f70595d8d04a44b61b6f7f42c508cd0b4a2da02e81f68"
+          },
+          {
+            "index": 2,
+            "size": [
+              19,
+              18
+            ],
+            "offset": [
+              154,
+              70
+            ],
+            "indexed_sha256": "db70537e325105175cfcc5fa4f18beda08b50d93712dbc75571533f1540449e4",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-02.png",
+            "png_sha256": "fc899c2b0019cd0df20c1e2ae435bdf6d8068b19271df3a4d46f74dfeea3f89e"
+          },
+          {
+            "index": 3,
+            "size": [
+              21,
+              16
+            ],
+            "offset": [
+              154,
+              72
+            ],
+            "indexed_sha256": "6b96efc2e0a47768e6de6e350967b4fd1b7b78d96daa4a0e48b02168c77ce35d",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-03.png",
+            "png_sha256": "7a2e9f685783c40b1d6ab1c26f748c21e5ad1c225ef24861ef474fb98475efcd"
+          },
+          {
+            "index": 4,
+            "size": [
+              21,
+              14
+            ],
+            "offset": [
+              154,
+              74
+            ],
+            "indexed_sha256": "a54241262d3caae479e74492ed920900a015f18755c0541f55d39cac2daeb15f",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-04.png",
+            "png_sha256": "524678849b5a5dd16fee0d481b5dc5f50a113a67655a15df5ca0e63c930fabd2"
+          },
+          {
+            "index": 5,
+            "size": [
+              19,
+              11
+            ],
+            "offset": [
+              154,
+              77
+            ],
+            "indexed_sha256": "867c46d9f6e8156254192a8a0f7ce336acda0b19ff78290eaf024b55472cbcbc",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-05.png",
+            "png_sha256": "cd54941dc4d596975c30fef417de0694e884373a5377b5f3f886384b3b33e958"
+          },
+          {
+            "index": 6,
+            "size": [
+              16,
+              9
+            ],
+            "offset": [
+              154,
+              79
+            ],
+            "indexed_sha256": "9eff778d4048762c75f81991743edbed409c72e6dacd4fb445f196ef3f1bc669",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-06.png",
+            "png_sha256": "2ca501424728ddf26ef20fde6672f5db23980c948acfc66dd8f6dcb15277d9e1"
+          },
+          {
+            "index": 7,
+            "size": [
+              13,
+              9
+            ],
+            "offset": [
+              154,
+              79
+            ],
+            "indexed_sha256": "5e2850277e21a1ee6afdb4d69e1a66f930b92a5408a0ff1803eead26c0a6e8b6",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-07.png",
+            "png_sha256": "b4ec5f04050d33851d8c0c38db91165f1a558317a7b45d36d0f7d6e6ef29ff4b"
+          },
+          {
+            "index": 8,
+            "size": [
+              13,
+              9
+            ],
+            "offset": [
+              154,
+              79
+            ],
+            "indexed_sha256": "a873bc218cc149da646fd93d41256da4e99b95d18257b625cbd0bdfbb6220d0c",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-08.png",
+            "png_sha256": "e09da0e9c1d4bbb6b6e00e8989a6c61cd3f85f8c5e69a7c4c66d9cbbac071112"
+          },
+          {
+            "index": 9,
+            "size": [
+              15,
+              9
+            ],
+            "offset": [
+              152,
+              79
+            ],
+            "indexed_sha256": "ceb14c064fe53693f541586a4e260d6254cbcb5b80aece48af2a7b7ae8281548",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-09.png",
+            "png_sha256": "07cfaa68f92c1592f989da7ea3eb261a585d3d9f3b6216551bbaa8ce6d48e966"
+          },
+          {
+            "index": 10,
+            "size": [
+              19,
+              11
+            ],
+            "offset": [
+              148,
+              77
+            ],
+            "indexed_sha256": "f2d12484536c178e1722a303f5fd74c6d2ff1b847341765d4eb6c1af435f8ccd",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-10.png",
+            "png_sha256": "e1c86cdbcc952b3b39cd10e2a4b27af65d2f2993b69167732fa383bb4cbe90ea"
+          },
+          {
+            "index": 11,
+            "size": [
+              21,
+              13
+            ],
+            "offset": [
+              146,
+              75
+            ],
+            "indexed_sha256": "d28dadb1d7a1de741cd3380ddcbc17ed288986c3b743c8fd311a6d45ebb420ec",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-11.png",
+            "png_sha256": "8c39da32171b9ccb385d9d404e9159b9fd226b150a144085ccd9aaf2a430d349"
+          },
+          {
+            "index": 12,
+            "size": [
+              21,
+              16
+            ],
+            "offset": [
+              146,
+              72
+            ],
+            "indexed_sha256": "6175269ca059e421a0efcd588bf6ab16e2d529cf145bbeebf19bcd0039b9c9c5",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-12.png",
+            "png_sha256": "43b7f86549e0724ff8ba128e90431d7dea1219b83ea3500cf5ef5f60148af6eb"
+          },
+          {
+            "index": 13,
+            "size": [
+              18,
+              18
+            ],
+            "offset": [
+              149,
+              70
+            ],
+            "indexed_sha256": "bd9163544b264539dd60e50eb104f24c10cf947797ca6950b5aabad849500de6",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-13.png",
+            "png_sha256": "1d9f444ae752c46f13eeed7225c42beac1de1574ed76c793de6c1e9817c565f5"
+          },
+          {
+            "index": 14,
+            "size": [
+              15,
+              20
+            ],
+            "offset": [
+              152,
+              68
+            ],
+            "indexed_sha256": "6a755275da3094090d86ec73dfd5c7ba7185aecd9a8025709011de0a46405544",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-14.png",
+            "png_sha256": "92e4b8d32ee267dbbe844bd809dfb8d470c38fae9e0e5910a113ad63063d761a"
+          },
+          {
+            "index": 15,
+            "size": [
+              13,
+              21
+            ],
+            "offset": [
+              154,
+              67
+            ],
+            "indexed_sha256": "48fee595a6f70d5cd130ea1dd34ad761cda76e4d4d26f5d8afd70e33d4347b9e",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-15.png",
+            "png_sha256": "b05d248bc277e0916911280b58cbf69e87ceff9ccc6ede03d274e0b228d46794"
+          },
+          {
+            "index": 16,
+            "size": [
+              13,
+              21
+            ],
+            "offset": [
+              154,
+              67
+            ],
+            "indexed_sha256": "18ccd27f6ab20ebb2463d120a0af52ad603620ec80928d5f80c17cb1dfbbeb04",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-16.png",
+            "png_sha256": "ed630fff5c992fd0fadcf4a1881b4dcbe96812cff5dade80a2bcf6ede58de075"
+          },
+          {
+            "index": 17,
+            "size": [
+              15,
+              20
+            ],
+            "offset": [
+              154,
+              68
+            ],
+            "indexed_sha256": "fbd7ef658c21d891316c6906edb2be21dab94d895d895459389ffebadf184e7e",
+            "png": "artifacts/rigellian-building-reference-study/RI19/surface-17.png",
+            "png_sha256": "2e959e10565b4b0ee15c349fc495556501a064e579cd59ae1773d571fed475b3"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1,
+            2
+          ],
+          "offset": [
+            150,
+            70
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI19/surface-composite-preview.png",
+          "png_sha256": "9c64377288952f3c8a9365c0a2e65b9a6f8ce82940d755239e8debea3105320a"
+        },
+        "layer_combinations": [
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "offset": [
+              150,
+              70
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-02.png",
+            "png_sha256": "9c64377288952f3c8a9365c0a2e65b9a6f8ce82940d755239e8debea3105320a"
+          },
+          {
+            "layers": [
+              1,
+              3
+            ],
+            "offset": [
+              150,
+              72
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-03.png",
+            "png_sha256": "3b53660d905255e81b26c2b2704950b8be0fdfb267fb8fee2423b295931c7608"
+          },
+          {
+            "layers": [
+              1,
+              4
+            ],
+            "offset": [
+              150,
+              74
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-04.png",
+            "png_sha256": "9f4e4b2016ccee7eee814d681e57f659e9a06e93962484eb4209f3c7adf2011e"
+          },
+          {
+            "layers": [
+              1,
+              5
+            ],
+            "offset": [
+              150,
+              77
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-05.png",
+            "png_sha256": "c2945906aea3aeadc60f2b4b754aff5672137c6970714601103ba32c12d29359"
+          },
+          {
+            "layers": [
+              1,
+              6
+            ],
+            "offset": [
+              150,
+              79
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-06.png",
+            "png_sha256": "acaa68eb93592a45c101b81d268372515936c39213bb8636c8fbf807f0b270fe"
+          },
+          {
+            "layers": [
+              1,
+              7
+            ],
+            "offset": [
+              150,
+              79
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-07.png",
+            "png_sha256": "51e46532be0f73e6066b63984e6ce03126a962068657b12f95b2d47703d40a96"
+          },
+          {
+            "layers": [
+              1,
+              8
+            ],
+            "offset": [
+              150,
+              79
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-08.png",
+            "png_sha256": "00b873075fbf1eef1329e4a8e646c7654c2d851e44f735ca09dcaa3ed080e350"
+          },
+          {
+            "layers": [
+              1,
+              9
+            ],
+            "offset": [
+              150,
+              79
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-09.png",
+            "png_sha256": "c5ccb45fb36b500bdef49390657aa8a86960098fc86bbeed6840eb4957a8e581"
+          },
+          {
+            "layers": [
+              1,
+              10
+            ],
+            "offset": [
+              148,
+              77
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-10.png",
+            "png_sha256": "e6ef90fd5b75f5f98d5a27c5e95c0d7d93a8ce136195d8406bcd280333bc57bb"
+          },
+          {
+            "layers": [
+              1,
+              11
+            ],
+            "offset": [
+              146,
+              75
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-11.png",
+            "png_sha256": "b9803a0a2ab64f09d6167c7f3f66d28f9b04892c6385811287e9f761403ea35a"
+          },
+          {
+            "layers": [
+              1,
+              12
+            ],
+            "offset": [
+              146,
+              72
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-12.png",
+            "png_sha256": "28e4cc5834b332d6aa7c77fa0429aa8b115fba869cc4eb4daf2a2cc47c286153"
+          },
+          {
+            "layers": [
+              1,
+              13
+            ],
+            "offset": [
+              149,
+              70
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-13.png",
+            "png_sha256": "b6b08eb0f5df4c5403b1c9c1dba4a7ba4be73001a5f59fee87b61a2b48bedc64"
+          },
+          {
+            "layers": [
+              1,
+              14
+            ],
+            "offset": [
+              150,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-14.png",
+            "png_sha256": "30cc904d63d7496f22e5fb8bf579f69f0d50e94f1ae3e1a17a2a1e88d4957e1d"
+          },
+          {
+            "layers": [
+              1,
+              15
+            ],
+            "offset": [
+              150,
+              67
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-15.png",
+            "png_sha256": "2e06e4a28f6ca7e9d6ada5bcb2f91aba107e5c90f5d922b063ea17f38074c859"
+          },
+          {
+            "layers": [
+              1,
+              16
+            ],
+            "offset": [
+              150,
+              67
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-16.png",
+            "png_sha256": "0b84b01dc6983e6074377952477f997fce9d205c6141ce8b30b325695af7d5d6"
+          },
+          {
+            "layers": [
+              1,
+              17
+            ],
+            "offset": [
+              150,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI19/layer-combination-17.png",
+            "png_sha256": "eff02f1dbcc837a8db5a822e2c56d1e58c448fc6b2ca0d0c744da2a29a434a8e"
+          }
+        ]
+      },
+      "catalogue": {
+        "source_sha256": "c78f02e221439d66559263d1c6f2f5686c8f23d4fa4400540a861d611c93be49",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI19/hologram/frames/000.png",
+            "png_sha256": "2287be3e76e79a4c517a186e8ec6f37cca5a665533a79010b6508bcac05024ba"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI19/hologram/frames/010.png",
+            "png_sha256": "3eb6092ef2d70f16e10825da9623c6076514c9593d0d93712d4562eac69499b6"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI19/hologram/frames/020.png",
+            "png_sha256": "4703712b283aca79ff1b859326784fc38cd8762ef33252bcd7c117ba3211e101"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI19/hologram/frames/030.png",
+            "png_sha256": "5f0f705c205b04b51052da1b557bb5749f5b935efcb30d3bd6c9b31c7d30a43c"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI19/hologram/frames/040.png",
+            "png_sha256": "794795f1b3da8461da476237e67065c3961c5447b0138a1310667247f2c54230"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/059",
+      "name": "Extractor",
+      "key": "RI20",
+      "global_type": 59,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 8,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "aec1a4994b2d766bf52d830d465558183d874fe75427b4e71d6b405e9671176d",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              28,
+              17
+            ],
+            "offset": [
+              144,
+              92
+            ],
+            "indexed_sha256": "5f1f7ad5bfd7b3a524fcc450510548ed7e63f4a646d02f8743907e7162f7b20e",
+            "png": "artifacts/rigellian-building-reference-study/RI20/surface-00.png",
+            "png_sha256": "3b8d1e4343b923b1eab5a1d33268a028971d27a0a34585a0b05ebe370a7df763"
+          },
+          {
+            "index": 1,
+            "size": [
+              28,
+              38
+            ],
+            "offset": [
+              146,
+              66
+            ],
+            "indexed_sha256": "cc7a462490bf75933a58975745485dfea25c4f898abcbf863c4ad04a6aef42f0",
+            "png": "artifacts/rigellian-building-reference-study/RI20/surface-01.png",
+            "png_sha256": "b9899edda3f28f9d71a0b8105a2fb7bfd86a705840af88a5e6158e66cd008e56"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            146,
+            66
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI20/surface-composite-preview.png",
+          "png_sha256": "3844b4779dbdcdd3f44e087bc5b3ead92e2ffa35ef7e86f7054d55f2b5e99228"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "ce0c8f18f77bd8b8f100747c83c62492a22d6b885dc3205edac01828b38baee8",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI20/hologram/frames/000.png",
+            "png_sha256": "20c925d0a5727527f9baf80e4a80b14fb9fcd704a1e66ac34d554113b7816207"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI20/hologram/frames/010.png",
+            "png_sha256": "2180cd2c022f075f375542a92cc0dd85dc9f6050319bd931d86602b52718db71"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI20/hologram/frames/020.png",
+            "png_sha256": "91c3851ada6f3af6affd1e9e4e8a93cf92bcba47d461164478f7d8fb7cdc3223"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI20/hologram/frames/030.png",
+            "png_sha256": "5fd432b262188ac81e23ed5c91193048d325562db320e463176e2800ad9c2c6c"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI20/hologram/frames/040.png",
+            "png_sha256": "1bad54b8148d6aa1c614f96c39e4225f5ba0ce60650956f13c242ab690376cc7"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/060",
+      "name": "Storage racks",
+      "key": "RI21",
+      "global_type": 60,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 30,
+      "directional_runtime_path": false,
+      "surface": {
+        "source_sha256": "d5acbeefa57cbc2fc837a4eda0dc6f9d4cc2824b8791252fa37d63489b8227db",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              41,
+              18
+            ],
+            "offset": [
+              137,
+              93
+            ],
+            "indexed_sha256": "7c3db1b27eb1e538b761413c34339f86aaafd0fa7645e771daadea2fda5cc453",
+            "png": "artifacts/rigellian-building-reference-study/RI21/surface-00.png",
+            "png_sha256": "612a0b65aea5bd2df8d7c8904cdce0161172a48a332b367a1f53a76af297cbed"
+          },
+          {
+            "index": 1,
+            "size": [
+              35,
+              49
+            ],
+            "offset": [
+              142,
+              57
+            ],
+            "indexed_sha256": "7a99b82144826bd7cbce08631b3a70f072ca9e73ea94ec95f9e5dda83ae243d8",
+            "png": "artifacts/rigellian-building-reference-study/RI21/surface-01.png",
+            "png_sha256": "b332a621a3b9361bbfc26c7fdfc310caf001b4093fe6fed1158e5cac576be148"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1
+          ],
+          "offset": [
+            142,
+            57
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI21/surface-composite-preview.png",
+          "png_sha256": "f6e11d4a272a02ebe430dbe6dc34f43a2e7545f7f3227337cf725f7a770ceb80"
+        },
+        "layer_combinations": []
+      },
+      "catalogue": {
+        "source_sha256": "88d0bf37a4758c3c466f977f26548ae26c4137634c9fc4315d83af237ef19153",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI21/hologram/frames/000.png",
+            "png_sha256": "c0747a7a3edf45c8fcac21660e14df9b8ee2762f6ef46ffa1ee0e7683fa020ac"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI21/hologram/frames/010.png",
+            "png_sha256": "9b3ef0c1a8114ca5c27c89cf0ed6bb743de949e517adf78411d73980acd9e91f"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI21/hologram/frames/020.png",
+            "png_sha256": "4bc99b0a9feaf3a1b9f6ca93ce2715b073ec999b4e792770012a247ef278bd5f"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI21/hologram/frames/030.png",
+            "png_sha256": "5927987371ba3bef1106ffb25995e9f9f921aec1b1ea37d0df71197c2872286f"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI21/hologram/frames/040.png",
+            "png_sha256": "6a512de398672707e95762533549f69870f859e0b1fe3095c0e6d3819b0a25fd"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/061",
+      "name": "Ex-Fang",
+      "key": "RI22",
+      "global_type": 61,
+      "footprint": [
+        4,
+        4
+      ],
+      "definition_class": 40,
+      "directional_runtime_path": true,
+      "surface": {
+        "source_sha256": "1ad78338e69fa532941cf0d88088f37060573f2661455201426fbfeb6d72ea4d",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              31,
+              20
+            ],
+            "offset": [
+              140,
+              90
+            ],
+            "indexed_sha256": "7316df6eb2acbf26784dfc66a0260ebfe09bb3642caa47cc562362d2f7e634b7",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-00.png",
+            "png_sha256": "def767c9ef22ee47c2592473471e6ccdbc1af883e79643d050594713a303801a"
+          },
+          {
+            "index": 1,
+            "size": [
+              0,
+              0
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "empty": true
+          },
+          {
+            "index": 2,
+            "size": [
+              32,
+              45
+            ],
+            "offset": [
+              150,
+              62
+            ],
+            "indexed_sha256": "d994f86f4273f56e113543d5cdf098724c2f6b3a25a56a6d1a2ab2773510286c",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-02.png",
+            "png_sha256": "505112998d3ae4925499006aa859bbd12ab405c04485d792b72374fb4aec6cd9"
+          },
+          {
+            "index": 3,
+            "size": [
+              34,
+              44
+            ],
+            "offset": [
+              149,
+              63
+            ],
+            "indexed_sha256": "7502ca7a1855cd8a5687b409e13086dfbd5264b47da3004bfcadddffb00f1b8d",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-03.png",
+            "png_sha256": "1eeffa05acc37fb6990881293dce6698c7bf2444d4e3d6805188cc1364eca239"
+          },
+          {
+            "index": 4,
+            "size": [
+              36,
+              44
+            ],
+            "offset": [
+              147,
+              63
+            ],
+            "indexed_sha256": "b64d8545a83b3f4c870ad378e68c7d1012e89023f76841848f485a8f8b328226",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-04.png",
+            "png_sha256": "4776a757fb5e0d7866c26bed35112b592285ea1a67e9d6bbea2429addc1c64fe"
+          },
+          {
+            "index": 5,
+            "size": [
+              35,
+              43
+            ],
+            "offset": [
+              148,
+              64
+            ],
+            "indexed_sha256": "915eab3c1de215ccbb8f27db40d6f380c6e4afe7b21d3a126fccfa0b713e0d3c",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-05.png",
+            "png_sha256": "389fd3fac6892962ee880b4a4debf27b6c94ec9ecf035ba27586c28400078b50"
+          },
+          {
+            "index": 6,
+            "size": [
+              34,
+              41
+            ],
+            "offset": [
+              149,
+              66
+            ],
+            "indexed_sha256": "5c1c35d488b0dd483def18557a63eda4cd00bc8afbb7e936d8c1add5b5498b49",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-06.png",
+            "png_sha256": "76b79ff4405907c2d5217e46b9236da940ba163cde0982ae2e07fbef2bc19e21"
+          },
+          {
+            "index": 7,
+            "size": [
+              35,
+              39
+            ],
+            "offset": [
+              147,
+              68
+            ],
+            "indexed_sha256": "918e624b3765c93b245ed97b0d30ae2b649ea63a49887a3480676d06509e3f04",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-07.png",
+            "png_sha256": "3a76fd3d4703ee335799ebef52e1d9624c69a26a5cb57073cc00e1894d466d1c"
+          },
+          {
+            "index": 8,
+            "size": [
+              38,
+              39
+            ],
+            "offset": [
+              141,
+              68
+            ],
+            "indexed_sha256": "d21212b817f267a1d57ec21debd0691f3cf2cf99213df85cc4a7360774566f78",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-08.png",
+            "png_sha256": "d65532221b2b22559efa63d92608dec06c73101c4e0b59bbfcc2523c4e21690e"
+          },
+          {
+            "index": 9,
+            "size": [
+              36,
+              38
+            ],
+            "offset": [
+              137,
+              69
+            ],
+            "indexed_sha256": "276aed7f91542f7c53d285dfa2524d1311d095b97f46cae06cef46bea74aca7f",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-09.png",
+            "png_sha256": "21445c5c0f8bcb45447fdc4a513db116817b6553b62c8cffb87736ce1704b1f8"
+          },
+          {
+            "index": 10,
+            "size": [
+              34,
+              40
+            ],
+            "offset": [
+              135,
+              67
+            ],
+            "indexed_sha256": "80a9b45bad4d503aed18f51c7cfa61bbae535183ce0baf9ad8c42095ad18d5ee",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-10.png",
+            "png_sha256": "0e3b18031777565b61a1c89ce0b69a8496c6d24d49379ca6dd1219b4017100f8"
+          },
+          {
+            "index": 11,
+            "size": [
+              34,
+              41
+            ],
+            "offset": [
+              135,
+              66
+            ],
+            "indexed_sha256": "5f2d91cb4dc865fdbbcec9f4a87f0c3bcc486b24649b4a6d030eacdcedb64a98",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-11.png",
+            "png_sha256": "1bdafa67b9b5b2d3a968b566bd967bf663d286013d77d8f649fa8d678becb646"
+          },
+          {
+            "index": 12,
+            "size": [
+              35,
+              43
+            ],
+            "offset": [
+              135,
+              64
+            ],
+            "indexed_sha256": "dacf185b038e02c759d16acb8f3c9be3aacf62fbf62650e0a44fa952c2456013",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-12.png",
+            "png_sha256": "9b77e37cb3bf3d9047c66716a8422102f584d61dbdc21c11c8e40193c0d8ebbb"
+          },
+          {
+            "index": 13,
+            "size": [
+              35,
+              44
+            ],
+            "offset": [
+              135,
+              63
+            ],
+            "indexed_sha256": "90ba21fcd15cb89bffd078baf5ed75b2f200b09acf6f695417ff7501e60e332c",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-13.png",
+            "png_sha256": "10c2d6020eb71db779a40563cee245c33de63a541dc0dc12b222b139adb4b6a9"
+          },
+          {
+            "index": 14,
+            "size": [
+              34,
+              44
+            ],
+            "offset": [
+              135,
+              63
+            ],
+            "indexed_sha256": "4c040e72b54dde8004c670ac600ba934d5414e753037e860b517ce12cccc6558",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-14.png",
+            "png_sha256": "d20116be8eda240910c798f020e1f096502d1c9a23e2f473fbfc9a29513d9f8e"
+          },
+          {
+            "index": 15,
+            "size": [
+              32,
+              45
+            ],
+            "offset": [
+              137,
+              62
+            ],
+            "indexed_sha256": "7bbbb2e4337f822c24acad0ea962b78e995d2a618663894f1181d5fe8c8061e9",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-15.png",
+            "png_sha256": "44af34c534276068a0817823a968f1900e9ae6d7a6fe1cf8223336267c0b0ebf"
+          },
+          {
+            "index": 16,
+            "size": [
+              34,
+              47
+            ],
+            "offset": [
+              140,
+              60
+            ],
+            "indexed_sha256": "a51da1db484eb3e5bbfd0edbaaa667bbfc50b2c6e75a45d92a3b6a6dac5c12dc",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-16.png",
+            "png_sha256": "848c8fd580c805b3124cf124d053f3cbf804fd4129ca75fee10bb58afb85c2db"
+          },
+          {
+            "index": 17,
+            "size": [
+              34,
+              47
+            ],
+            "offset": [
+              145,
+              60
+            ],
+            "indexed_sha256": "1a2059e345d2be8fb7485504b3b0b7fa7c93927781069726cd4b28f2bdc834e9",
+            "png": "artifacts/rigellian-building-reference-study/RI22/surface-17.png",
+            "png_sha256": "caa594a5dc923afb1097bb536bb554a622f406d7de98d87936c806f987c1b8ec"
+          }
+        ],
+        "preview": {
+          "layers": [
+            2
+          ],
+          "offset": [
+            150,
+            62
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI22/surface-composite-preview.png",
+          "png_sha256": "daf1aad4df75706919286b8688e9af377a8c3288ca3866a39064258692b31fde"
+        },
+        "layer_combinations": [
+          {
+            "layers": [
+              2
+            ],
+            "offset": [
+              150,
+              62
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-02.png",
+            "png_sha256": "daf1aad4df75706919286b8688e9af377a8c3288ca3866a39064258692b31fde"
+          },
+          {
+            "layers": [
+              3
+            ],
+            "offset": [
+              149,
+              63
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-03.png",
+            "png_sha256": "f95cd5a0b2e58bcfc0e327a5de62fa78f0aff310e2957dea8560752e3de86571"
+          },
+          {
+            "layers": [
+              4
+            ],
+            "offset": [
+              147,
+              63
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-04.png",
+            "png_sha256": "29080e009acec254c21022eb2dc642d85ba6a0299ecfb3726bba66882ba5b182"
+          },
+          {
+            "layers": [
+              5
+            ],
+            "offset": [
+              148,
+              64
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-05.png",
+            "png_sha256": "d7909a1ba5865d4d4de83c74e16431b74e03346b9b951e3a0d3369ed93e9166f"
+          },
+          {
+            "layers": [
+              6
+            ],
+            "offset": [
+              149,
+              66
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-06.png",
+            "png_sha256": "12d99c206f2c6b7eeb04c04c0d862f6f6fe672b2cc076aa004f0bdb8d0a07f05"
+          },
+          {
+            "layers": [
+              7
+            ],
+            "offset": [
+              147,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-07.png",
+            "png_sha256": "bcc6200c7f133dbb7567a6da40fef42a70c31fa2a2a764f592354666923f1947"
+          },
+          {
+            "layers": [
+              8
+            ],
+            "offset": [
+              141,
+              68
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-08.png",
+            "png_sha256": "8e7394987360868f93d835e3582eadd82962f0475021d5849fb0775da7c25084"
+          },
+          {
+            "layers": [
+              9
+            ],
+            "offset": [
+              137,
+              69
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-09.png",
+            "png_sha256": "7245167c6c4e24ffc2287de1519ef003d5d1544403fbe5c52e7975ccfd4f2bde"
+          },
+          {
+            "layers": [
+              10
+            ],
+            "offset": [
+              135,
+              67
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-10.png",
+            "png_sha256": "f3a9be0e38052c656686320c52171f819c4e0170afce6f2c3c7e69ea6e88b85d"
+          },
+          {
+            "layers": [
+              11
+            ],
+            "offset": [
+              135,
+              66
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-11.png",
+            "png_sha256": "52525de463edb1796b42dbed63857bcf40493f36ff392220a979f27d2801dc17"
+          },
+          {
+            "layers": [
+              12
+            ],
+            "offset": [
+              135,
+              64
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-12.png",
+            "png_sha256": "716d8ba4c7e99b5bb6f713a94da50daf70cca30e197033c66f4f75d540e3e254"
+          },
+          {
+            "layers": [
+              13
+            ],
+            "offset": [
+              135,
+              63
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-13.png",
+            "png_sha256": "e93d86b0c7b4cd1750bcdfeed367e9ef14421f010814aab293d605fc0af552c2"
+          },
+          {
+            "layers": [
+              14
+            ],
+            "offset": [
+              135,
+              63
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-14.png",
+            "png_sha256": "acee06a21db2ffd7d3e8a0b8778e792ee5a63594015f5207e876a1e4eae78b77"
+          },
+          {
+            "layers": [
+              15
+            ],
+            "offset": [
+              137,
+              62
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-15.png",
+            "png_sha256": "f3d03fe6b9f6a3cb9096accac15a97cd1b6c51a3e3785c965ac322121397c98f"
+          },
+          {
+            "layers": [
+              16
+            ],
+            "offset": [
+              140,
+              60
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-16.png",
+            "png_sha256": "498a6bf2e6d76e1aa32dd01462aa55b362601d7176badff03b7d09574a37e5d8"
+          },
+          {
+            "layers": [
+              17
+            ],
+            "offset": [
+              145,
+              60
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI22/layer-combination-17.png",
+            "png_sha256": "e09e84cb5dfdecdb165d8e5d8df24b4b051f334ae3fac32bc8576099ff779b6e"
+          }
+        ]
+      },
+      "catalogue": {
+        "source_sha256": "ea2e561aee3cf3df409990b9fec46ccf1f150d231945230d23a7fc85364e1dd2",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI22/hologram/frames/000.png",
+            "png_sha256": "94841893c9703d9d4b5c1a77f0c2c2fbbc59dea20029c7c2b34d27eb660657ed"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI22/hologram/frames/010.png",
+            "png_sha256": "827f8fa2ba3bb96fbe3380dca23728a5b8f1d535360521767f0a22e1190a4d44"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI22/hologram/frames/020.png",
+            "png_sha256": "1009701b9ab65d1b791d7af62d2a0f5019abce07b0ab7c26b4bf79e543558b19"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI22/hologram/frames/030.png",
+            "png_sha256": "a898beb672e47eabe594ecf701b20433fbb2ed960431e623c5bd44078efd6111"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI22/hologram/frames/040.png",
+            "png_sha256": "e8c7f1f8073a9334231d3933775a8acf7048daee95d7c8e47fbd7d9a11511783"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    },
+    {
+      "id": "openfa:building/legacy/062",
+      "name": "Ultrathermal Lance",
+      "key": "RI23",
+      "global_type": 62,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 18,
+      "directional_runtime_path": true,
+      "surface": {
+        "source_sha256": "5b292d50a6cae72caa7741616319fb4d2fe6d71aefa3ac5c8aa8e4a27bbce16f",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "layers": [
+          {
+            "index": 0,
+            "size": [
+              36,
+              20
+            ],
+            "offset": [
+              139,
+              93
+            ],
+            "indexed_sha256": "7e7e2eaafd5ca8ea75daf132a033646c01eec534f195a1074b6dec07451ca1ed",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-00.png",
+            "png_sha256": "f6c25dc68aeb3be60d45913df2dfbe7c4ad9b94b4ad7f2b15f98adefff5eae8e"
+          },
+          {
+            "index": 1,
+            "size": [
+              24,
+              31
+            ],
+            "offset": [
+              148,
+              78
+            ],
+            "indexed_sha256": "6216b5ac7cb8e3656f1406dd31cf1c174a5b81b167a859254b407a89c048bc3b",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-01.png",
+            "png_sha256": "2b10eaa00116f651b2ee18e7053469c2fbca5bfe56ca6daa99f75283111245d3"
+          },
+          {
+            "index": 2,
+            "size": [
+              24,
+              28
+            ],
+            "offset": [
+              151,
+              63
+            ],
+            "indexed_sha256": "efe961513e1c2d66bb2f717ebc906a6f3676a6e8f550c5256236f30d1d031831",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-02.png",
+            "png_sha256": "a14ba99d84e34724380eed4da9b34e99e66408989ccbe862ca6e4e044fe3bb21"
+          },
+          {
+            "index": 3,
+            "size": [
+              26,
+              26
+            ],
+            "offset": [
+              151,
+              65
+            ],
+            "indexed_sha256": "e5467a7c6b921cb645e70130aafe2bd9a0528b7fe86f43730bd958c1407a78b7",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-03.png",
+            "png_sha256": "9761739c7ab5c14213598c7368ff4d84254c43bb8b6d42a955fd0d7936f80822"
+          },
+          {
+            "index": 4,
+            "size": [
+              26,
+              24
+            ],
+            "offset": [
+              151,
+              67
+            ],
+            "indexed_sha256": "cbb9f396e5489feb994de5b10cd0bfd9ae8aa1e29257ac231d25f1df021801cf",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-04.png",
+            "png_sha256": "c74ac6d7a420725b536e12e0b1167e96bd2184a5b6412300703985b8916fee2a"
+          },
+          {
+            "index": 5,
+            "size": [
+              26,
+              20
+            ],
+            "offset": [
+              151,
+              71
+            ],
+            "indexed_sha256": "35b1ec8da1af9963399f38b90d9a96585a76cfb8c076c21bc0cb87a425240521",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-05.png",
+            "png_sha256": "7d0e74dcda09ec738f85126984ef5093258a8f5a21a77cf8f801c18970866470"
+          },
+          {
+            "index": 6,
+            "size": [
+              26,
+              17
+            ],
+            "offset": [
+              151,
+              74
+            ],
+            "indexed_sha256": "e36dedfff724d52974a289a830afd3a7f4422720377c96987a0cb4c5b9311708",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-06.png",
+            "png_sha256": "ccd96b8a4e9fe54d057d5f0250356051b38c9f42e107a7ffce7baab6ca614d47"
+          },
+          {
+            "index": 7,
+            "size": [
+              24,
+              14
+            ],
+            "offset": [
+              151,
+              77
+            ],
+            "indexed_sha256": "24813d425d7d8725018d607e1086196a77f36d7926913f8ea2cd1bee25e48dbd",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-07.png",
+            "png_sha256": "9065e6700364ed4f52a490e28bd94e2c3a25a7d3dd1dc89fa3e0648ae70ed51d"
+          },
+          {
+            "index": 8,
+            "size": [
+              22,
+              13
+            ],
+            "offset": [
+              150,
+              78
+            ],
+            "indexed_sha256": "2deecbbbf5635ebfbb5f1321378f14fc502447198cf1aa04185753e6119b60da",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-08.png",
+            "png_sha256": "50202cfc86cc9fbce0c44be0d1f1e0f08c2b0ffe2ac9c735c9fb7dc92f89ac2e"
+          },
+          {
+            "index": 9,
+            "size": [
+              23,
+              13
+            ],
+            "offset": [
+              149,
+              78
+            ],
+            "indexed_sha256": "0b3d0fa4aecf87d53aeb0f28d4e6b7fdcab1a5e0eebae299721aeb7cde2d5537",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-09.png",
+            "png_sha256": "bfa62d4b9d34848519fa452ea30c6625bf812038677f385a42463c79337a83f8"
+          },
+          {
+            "index": 10,
+            "size": [
+              27,
+              14
+            ],
+            "offset": [
+              145,
+              77
+            ],
+            "indexed_sha256": "02bfc1dd3e15be511eec4178c71a3ea707db80e85b7d38de00aeb1d52cd981ac",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-10.png",
+            "png_sha256": "0071bf1c797f735f938a2220a71836354d641474f06a6bd221fb7b6ac83ba1f8"
+          },
+          {
+            "index": 11,
+            "size": [
+              29,
+              17
+            ],
+            "offset": [
+              143,
+              74
+            ],
+            "indexed_sha256": "6f193b36617abe49e9d28d129d1fb8622dcd47662032d6562be3b4dae4d1b1ab",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-11.png",
+            "png_sha256": "5262bed9fc776caa3b825fc2a8a6b4251d8bb3dedbba859d6e64420a514da4f5"
+          },
+          {
+            "index": 12,
+            "size": [
+              27,
+              21
+            ],
+            "offset": [
+              145,
+              70
+            ],
+            "indexed_sha256": "057d9ffaf6521ebc68d41dff3718a951845324fbf988dbfb0a4bbaa867c4751c",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-12.png",
+            "png_sha256": "9a0fb499a4128b90220a68eed15b6e1042ef441848afd626feae3b285b96aec2"
+          },
+          {
+            "index": 13,
+            "size": [
+              27,
+              25
+            ],
+            "offset": [
+              145,
+              66
+            ],
+            "indexed_sha256": "0ea866b88e9c1b7e87ef41f414c87094f4252823d79d4d0b63c797330a95ec83",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-13.png",
+            "png_sha256": "c1f3de59b6d9e16cb70fc8f3b70e41287b2018dc5e3c2b4ff22f0cfe7ea577c2"
+          },
+          {
+            "index": 14,
+            "size": [
+              28,
+              26
+            ],
+            "offset": [
+              144,
+              65
+            ],
+            "indexed_sha256": "573e10a8b58446c5ebbb942ffecae258adcdfdde3a0bf0ac79ca3c359f4f8d1b",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-14.png",
+            "png_sha256": "3c5b66552045a984e9034e3b366a547c1e62c48bf732eb8a42ca7f5e0fa65b14"
+          },
+          {
+            "index": 15,
+            "size": [
+              26,
+              28
+            ],
+            "offset": [
+              146,
+              63
+            ],
+            "indexed_sha256": "b1c78b901c972a557ba1fda2e1f2f80e90f50ce8f2a353bcdaad477a03bf0d81",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-15.png",
+            "png_sha256": "77e812e31f2c7820b794ce4641154998fad0fd217770eaa9a9c16da49e533945"
+          },
+          {
+            "index": 16,
+            "size": [
+              21,
+              27
+            ],
+            "offset": [
+              151,
+              64
+            ],
+            "indexed_sha256": "acd1db0ba42ea8085b56ce7aa4ec166213f1dbd4a3cb4816c315a0f9f3d13747",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-16.png",
+            "png_sha256": "7a53620227062bbcef0a0225182c4512f687f9a448e2ee69bd6d3e9f0f60f663"
+          },
+          {
+            "index": 17,
+            "size": [
+              21,
+              28
+            ],
+            "offset": [
+              151,
+              63
+            ],
+            "indexed_sha256": "57941151f76c4852179dc0e78061ae29aea659d6cecf908d11218732ce47df4f",
+            "png": "artifacts/rigellian-building-reference-study/RI23/surface-17.png",
+            "png_sha256": "910a9aea1738375ea5d1546a0134e8dd3aa7cd4a3aab99d2f60caffd5880ce2c"
+          }
+        ],
+        "preview": {
+          "layers": [
+            1,
+            2
+          ],
+          "offset": [
+            148,
+            63
+          ],
+          "png": "artifacts/rigellian-building-reference-study/RI23/surface-composite-preview.png",
+          "png_sha256": "87efe2e8abb103afcda810ca55599184ccb87bcf7f7654da76f7041b0289f67c"
+        },
+        "layer_combinations": [
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "offset": [
+              148,
+              63
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-02.png",
+            "png_sha256": "87efe2e8abb103afcda810ca55599184ccb87bcf7f7654da76f7041b0289f67c"
+          },
+          {
+            "layers": [
+              1,
+              3
+            ],
+            "offset": [
+              148,
+              65
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-03.png",
+            "png_sha256": "07d4cfde5384cf8b396ed652f4a2f29863d72999c7eef6a6218e4c4bbc2e0fa2"
+          },
+          {
+            "layers": [
+              1,
+              4
+            ],
+            "offset": [
+              148,
+              67
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-04.png",
+            "png_sha256": "4123a7573ab5823e89a6129f48ae5c1e280f94d2e9c1e85d41e45c407815c1d6"
+          },
+          {
+            "layers": [
+              1,
+              5
+            ],
+            "offset": [
+              148,
+              71
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-05.png",
+            "png_sha256": "a01230e92a72c3794e0c52adf047be4b6c98805dfbb3c2f409b24674b9f2a343"
+          },
+          {
+            "layers": [
+              1,
+              6
+            ],
+            "offset": [
+              148,
+              74
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-06.png",
+            "png_sha256": "d7138c8c1227adc454d227ca6e7be74ff07298270401bff8ba6f9370c5f43139"
+          },
+          {
+            "layers": [
+              1,
+              7
+            ],
+            "offset": [
+              148,
+              77
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-07.png",
+            "png_sha256": "aaff2abb6db8e650b20704195b975318a9f67ca552cf61ee9d798a0a43da357a"
+          },
+          {
+            "layers": [
+              1,
+              8
+            ],
+            "offset": [
+              148,
+              78
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-08.png",
+            "png_sha256": "37bbddf73529aefb3f26aee11bbf57a8b30164235ec4d1e0ab2b8e4eb59125a0"
+          },
+          {
+            "layers": [
+              1,
+              9
+            ],
+            "offset": [
+              148,
+              78
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-09.png",
+            "png_sha256": "1fa859761ef8c655c929d4c0bf11bdc46fb866f68abb1fb18ffd665bb0b37398"
+          },
+          {
+            "layers": [
+              1,
+              10
+            ],
+            "offset": [
+              145,
+              77
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-10.png",
+            "png_sha256": "e784da639420e39c60b80beb5c3d0a2a61344d8af58dc3eeb0d44de1c9c2fb75"
+          },
+          {
+            "layers": [
+              1,
+              11
+            ],
+            "offset": [
+              143,
+              74
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-11.png",
+            "png_sha256": "c89e4e74a50392f1c1b702c8b0bd558f5cf9021de24ea62acca587d542e8756a"
+          },
+          {
+            "layers": [
+              1,
+              12
+            ],
+            "offset": [
+              145,
+              70
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-12.png",
+            "png_sha256": "10a42711aa03e276c69223ce80133f4bd7c6ee866cea3b7bcfc3c380a95240d6"
+          },
+          {
+            "layers": [
+              1,
+              13
+            ],
+            "offset": [
+              145,
+              66
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-13.png",
+            "png_sha256": "0efc50a553d4be0bb480382d1e215fb07c8201c44e357ab6a2deaecc77393308"
+          },
+          {
+            "layers": [
+              1,
+              14
+            ],
+            "offset": [
+              144,
+              65
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-14.png",
+            "png_sha256": "b23bff8061ba1ce6ace30db0afe7f1f01ee03fc426b489ad947d4d605c9cbf0d"
+          },
+          {
+            "layers": [
+              1,
+              15
+            ],
+            "offset": [
+              146,
+              63
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-15.png",
+            "png_sha256": "dd9c94387d2e3c8635759eee0789ed43c4b115fb4846a3f7597df4aabeb70b0b"
+          },
+          {
+            "layers": [
+              1,
+              16
+            ],
+            "offset": [
+              148,
+              64
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-16.png",
+            "png_sha256": "2859499f0ee46245af1a526cfee8775cd174abcaa9d6fc39003966cbd9823c51"
+          },
+          {
+            "layers": [
+              1,
+              17
+            ],
+            "offset": [
+              148,
+              63
+            ],
+            "png": "artifacts/rigellian-building-reference-study/RI23/layer-combination-17.png",
+            "png_sha256": "b56ee5d577f3409ce2fc8b19a5c6ea2d6eb65b92c943ea57a5f2978e245023d3"
+          }
+        ]
+      },
+      "catalogue": {
+        "source_sha256": "108dea4a12d01e0ea00b9f3210ecd6d94af772f83cc473b777784bb3afad2a98",
+        "frame_count": 41,
+        "selected_phases": [
+          {
+            "index": 0,
+            "png": "artifacts/rigellian-building-reference-study/RI23/hologram/frames/000.png",
+            "png_sha256": "897ab5794ab9d5d8049f20f603a999f1fc1c7ce80d622cbc9cefd3a82c9c050d"
+          },
+          {
+            "index": 10,
+            "png": "artifacts/rigellian-building-reference-study/RI23/hologram/frames/010.png",
+            "png_sha256": "96eb5f2dda2d44ec7a6ee08e84c147422f0d552e74cbd4549e91b07ade1615d1"
+          },
+          {
+            "index": 20,
+            "png": "artifacts/rigellian-building-reference-study/RI23/hologram/frames/020.png",
+            "png_sha256": "33156c21232fa8585a2af35cc7cdc0ac60448460c34058685fdd986adf0cb3f6"
+          },
+          {
+            "index": 30,
+            "png": "artifacts/rigellian-building-reference-study/RI23/hologram/frames/030.png",
+            "png_sha256": "2fe0ebf53f839301c817496893d94f766bd4875822c49aff405f97e92c69e928"
+          },
+          {
+            "index": 40,
+            "png": "artifacts/rigellian-building-reference-study/RI23/hologram/frames/040.png",
+            "png_sha256": "cc4816dab54f1f58b848c96d1121de066258ead6719f470b487f9f52335fc78a"
+          }
+        ]
+      },
+      "spatial_views": "Not established by phase sampling; requires visual review",
+      "final_visual_acceptance": false
+    }
+  ]
+}

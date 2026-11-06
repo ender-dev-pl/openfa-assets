@@ -1,0 +1,1901 @@
+{
+  "issue": 1111,
+  "id": "openfa:building/legacy/045",
+  "revision": 3,
+  "before_source_files_sha256": {
+    "authored-cap-colour.png": "70946a95dc269dcd2f17b662c897d5b8c1dfb19cbd8e662a72a103008b2a3ebd",
+    "authored-cap-roughness.png": "e6bf95c8b47a5803e60f4c82c1ae381fd6e58e277b79b82b8cbd65e286b7dd06",
+    "authored-shell-colour.png": "f86ed95175456cd92d0f3fb3bf05de9465e8e4935542d22f793fd4c411ec9a0d",
+    "authored-shell-roughness.png": "b2814f00e744576d84ef5dd1df4ffe32b23a62b697e970765450d827f3101d07",
+    "authored-wear.json": "5a8640ea8aacded731fbbb12a90e9907a4ee059c4a1bed21e282877bec827eea",
+    "front-quarter.png": "3262d7473801ce7309dc2652c63bbf7cecad61420fe236c1b69d91bd87e1a026",
+    "front.png": "e971cb559e8cc18536541476d0174a275cec87fb0a28ab07ce4de44d7d0df8d1",
+    "gallery.png": "ba58009eba6c1f3068ebc4705a9cbb0017ff4b3bcabc7a97232d8692725cefec",
+    "imported-glb-front-quarter.png": "f48b1cc3dc4baaf15a074e8d2d86010ff021008ed62a1fde6fbe6e5a1602aaea",
+    "model.blend": "f922ba0009be906aaedff20963a2ace0d3494c185efeeef33fd2fdc90debc971",
+    "model.glb": "99e04490a7ad0ffe84254d70bfe8b6a6b444ba5d991a3aac7eb6c78704801d34",
+    "model.json": "4c830ef0a0a637093370c753a6a37cf17df6bbb57b41abf152e3eeb103b588d4",
+    "rear-quarter.png": "2b3d623393f033e35c88a8b5d934bd6abd883e8ae3bad9570e10c7a65502a7cf",
+    "render-review.json": "8b8b1a76a67d2603d04f5e0aaceb0d2ff46f957127ff76d96b7b620af988e73e",
+    "side.png": "82d422187c60ff4d6ce5b12ec003bd353b0476d43bf3e31a5e8d9d357bfd8d9e",
+    "technical-review.json": "ac404730183e763b56f259313b385dbfd54c1f7ec86b53ddf94b4dd477173569",
+    "top.png": "bcf89d8f34b44016b52259fe88930a36e1f506a392c705bfc43fa581832887f3",
+    "underside.png": "58560b10c7b841771fa40384e8aa99ded93816e9ece09689af0630bad3d68030"
+  },
+  "previous": {
+    "blend_sha256": "f922ba0009be906aaedff20963a2ace0d3494c185efeeef33fd2fdc90debc971",
+    "glb_sha256": "99e04490a7ad0ffe84254d70bfe8b6a6b444ba5d991a3aac7eb6c78704801d34"
+  },
+  "blend_sha256": "db1e1e64c60ecbc3921c6855ce2feee578d2821083e0e3bf4157dcf62abeae70",
+  "glb_sha256": "b339bee4a097216d625e06882f3dc525b4936752b90a5028e8edcc7e5da54e59",
+  "repair_script_sha256": "4ac41fdfb5d9762fa349a325f01e0c6305951a9a76676fcb5684a161ac18b77a",
+  "helper_sha256": "4242a0a815cd5208fdf0e81204a5fdeab67a9d0c3e95be6934d4f64c8672b9c7",
+  "changes": [
+    {
+      "object": "RI06 upper mast neck retaining collar",
+      "method": "Local dominant-face box projection, normalized to existing bounds",
+      "loops": 2048
+    }
+  ],
+  "uv_checks": {
+    "RI06 upper mast neck retaining collar": "Finite shader-selected UVs with nonzero face areas"
+  },
+  "exact_native_geometry_before_and_after": {
+    "OpenFA orthographic 30 degree camera": {
+      "type": "CAMERA",
+      "parent": null,
+      "matrix": [
+        [
+          0.9079594016075134,
+          -0.20440344512462616,
+          0.36582639813423157,
+          7.3880414962768555
+        ],
+        [
+          0.4190581440925598,
+          0.44287416338920593,
+          -0.7926239371299744,
+          -16.007423400878906
+        ],
+        [
+          8.96673668648873e-09,
+          0.8729729056358337,
+          0.48776867985725403,
+          11.934686660766602
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Soft key": {
+      "type": "LIGHT",
+      "parent": null,
+      "matrix": [
+        [
+          0.8574929237365723,
+          0.395312637090683,
+          -0.32929283380508423,
+          -3.0
+        ],
+        [
+          -0.5144957304000854,
+          0.6588544845581055,
+          -0.5488213896751404,
+          -5.0
+        ],
+        [
+          4.690163279974513e-08,
+          0.6400302052497864,
+          0.7683497667312622,
+          8.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Cool fill": {
+      "type": "LIGHT",
+      "parent": null,
+      "matrix": [
+        [
+          0.19611598551273346,
+          -0.605227530002594,
+          0.7715167999267578,
+          5.0
+        ],
+        [
+          0.9805806875228882,
+          0.12104541063308716,
+          -0.15430322289466858,
+          -1.0
+        ],
+        [
+          -4.579728152265261e-09,
+          0.7867957949638367,
+          0.6172133684158325,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Copper rim": {
+      "type": "LIGHT",
+      "parent": null,
+      "matrix": [
+        [
+          -0.9805806875228882,
+          -0.13730864226818085,
+          0.1400279998779297,
+          1.0
+        ],
+        [
+          0.19611606001853943,
+          -0.6865437626838684,
+          0.700140118598938,
+          5.0
+        ],
+        [
+          6.253754492036023e-08,
+          0.7140055894851685,
+          0.7001399993896484,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "RI06 solid interlevel structural column": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "97a84490073c76c476b34a5bb37010569defff88205f409cf4519a39a5057ce1",
+      "evaluated": "97a84490073c76c476b34a5bb37010569defff88205f409cf4519a39a5057ce1"
+    },
+    "RI06 broad saucer level 0": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "9a5d71478ce7dbc72f7215b64748699d815958cc796f0be29fe649dfaae1969e",
+      "evaluated": "9a5d71478ce7dbc72f7215b64748699d815958cc796f0be29fe649dfaae1969e"
+    },
+    "RI06 level 0 embedded well sleeve": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -0.30000001192092896
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "2a6768390c5e8e1c86dc77c12dd7f52ee25927f205dfcfd278e0c7cb53a0f869",
+      "evaluated": "43790f048fb8a8719e21f269dae7ecbd8da84ccdda073fcfeb446d8a44970aa8"
+    },
+    "RI06 level 0 recessed well floor": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.30000001192092896
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.17000000178813934
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "29d652138254cb68833ffc92199128fdef887fc2a2c4f5f50e74c3cd50abd48a",
+      "evaluated": "5ec63e7a0ff6fbb38703568a642552c737840b72f7cacb9a12fba7187a75dac6"
+    },
+    "RI06 level 0 well cooling fin": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.3449999988079071
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.20000000298023224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "861bc14dca790b9cde948a18efd272b24887dbe6db618d69e21ef3eb3ee3b20c",
+      "evaluated": "cb54100549f47778a1a5f16cfa04cccef2836c656a90aa7d6bfca611873206ef"
+    },
+    "RI06 level 0 well cooling fin.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.2549999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.20000000298023224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "861bc14dca790b9cde948a18efd272b24887dbe6db618d69e21ef3eb3ee3b20c",
+      "evaluated": "cb54100549f47778a1a5f16cfa04cccef2836c656a90aa7d6bfca611873206ef"
+    },
+    "RI06 level 0 perimeter machined seam": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "6e2a6966434cae428ec1c1ae34cf3d45d9ac0a6ea5aadbd8927a44d716f2f12f",
+      "evaluated": "45b69b50cd417536246f69af9e5d997dd1f535aedca6eca95144b1fac2fc3890"
+    },
+    "RI06 level 0 rim fitting bezel": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          0.0,
+          6.636055140717684e-17
+        ],
+        [
+          8.742277657347586e-08,
+          -1.0,
+          0.0,
+          -1.0837500095367432
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.23000000417232513
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "d0a89e32b354828d70dd69afd15b46638bc687442521b09f30fed58284cbd654",
+      "evaluated": "364552cfab8c37c5ee831f186cc493ef3128b0453d2df73127e6a561cf3cdac7"
+    },
+    "RI06 level 0 square brass rim face": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          0.0,
+          6.74627331774568e-17
+        ],
+        [
+          8.742277657347586e-08,
+          -1.0,
+          0.0,
+          -1.1017500162124634
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.23000000417232513
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "3e0f8eac249040b0391755e12246fd8fca3b1e0d52850e07fafc1c4d65564cde",
+      "evaluated": "4c64f96f963943f1bdec9f932e4f2a801061b03719bca540a762155c376b7a0c"
+    },
+    "RI06 level 0 rim fitting bezel.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -0.29552021622657776,
+          0.9553365111351013,
+          0.0,
+          1.0353459119796753
+        ],
+        [
+          -0.9553365111351013,
+          -0.29552021622657776,
+          0.0,
+          -0.32027003169059753
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.23000000417232513
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "d0a89e32b354828d70dd69afd15b46638bc687442521b09f30fed58284cbd654",
+      "evaluated": "364552cfab8c37c5ee831f186cc493ef3128b0453d2df73127e6a561cf3cdac7"
+    },
+    "RI06 level 0 square brass rim face.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -0.29552021622657776,
+          0.9553365111351013,
+          0.0,
+          1.052541971206665
+        ],
+        [
+          -0.9553365111351013,
+          -0.29552021622657776,
+          0.0,
+          -0.3255893886089325
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.23000000417232513
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "3e0f8eac249040b0391755e12246fd8fca3b1e0d52850e07fafc1c4d65564cde",
+      "evaluated": "4c64f96f963943f1bdec9f932e4f2a801061b03719bca540a762155c376b7a0c"
+    },
+    "RI06 broad saucer level 1": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "a4fbe6d35100130b65e02a29e4d983347afcbbbabedd5c3b2f735601017802e7",
+      "evaluated": "a4fbe6d35100130b65e02a29e4d983347afcbbbabedd5c3b2f735601017802e7"
+    },
+    "RI06 level 1 embedded well sleeve": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -0.30000001192092896
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "1709afbf51fede67f5ef789ecbbce1ea3765d30428417d9d5bb00b148c9484c0",
+      "evaluated": "f6d0b3c576651af53cd4d448772dabffba02fdadbe7c7698fa5b9fbc01ce70b3"
+    },
+    "RI06 level 1 recessed well floor": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.30000001192092896
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.1699999570846558
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "29d652138254cb68833ffc92199128fdef887fc2a2c4f5f50e74c3cd50abd48a",
+      "evaluated": "5ec63e7a0ff6fbb38703568a642552c737840b72f7cacb9a12fba7187a75dac6"
+    },
+    "RI06 level 1 well cooling fin": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.3449999988079071
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "861bc14dca790b9cde948a18efd272b24887dbe6db618d69e21ef3eb3ee3b20c",
+      "evaluated": "cb54100549f47778a1a5f16cfa04cccef2836c656a90aa7d6bfca611873206ef"
+    },
+    "RI06 level 1 well cooling fin.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.2549999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "861bc14dca790b9cde948a18efd272b24887dbe6db618d69e21ef3eb3ee3b20c",
+      "evaluated": "cb54100549f47778a1a5f16cfa04cccef2836c656a90aa7d6bfca611873206ef"
+    },
+    "RI06 level 1 perimeter machined seam": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "17a5ecf6f124cf7f1a704a0f5876a605d414c46be3949f2228ab5cf7f51d537a",
+      "evaluated": "b780bb0b1b0d886c8bd3a9b70c54274e7d49f6d09ea91877f7d530396502ed7c"
+    },
+    "RI06 level 1 rim fitting bezel": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          0.0,
+          6.636055140717684e-17
+        ],
+        [
+          8.742277657347586e-08,
+          -1.0,
+          0.0,
+          -1.0837500095367432
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "d0a89e32b354828d70dd69afd15b46638bc687442521b09f30fed58284cbd654",
+      "evaluated": "364552cfab8c37c5ee831f186cc493ef3128b0453d2df73127e6a561cf3cdac7"
+    },
+    "RI06 level 1 square brass rim face": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          0.0,
+          6.74627331774568e-17
+        ],
+        [
+          8.742277657347586e-08,
+          -1.0,
+          0.0,
+          -1.1017500162124634
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "3e0f8eac249040b0391755e12246fd8fca3b1e0d52850e07fafc1c4d65564cde",
+      "evaluated": "4c64f96f963943f1bdec9f932e4f2a801061b03719bca540a762155c376b7a0c"
+    },
+    "RI06 level 1 rim fitting bezel.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -0.29552021622657776,
+          0.9553365111351013,
+          0.0,
+          1.0353459119796753
+        ],
+        [
+          -0.9553365111351013,
+          -0.29552021622657776,
+          0.0,
+          -0.32027003169059753
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "d0a89e32b354828d70dd69afd15b46638bc687442521b09f30fed58284cbd654",
+      "evaluated": "364552cfab8c37c5ee831f186cc493ef3128b0453d2df73127e6a561cf3cdac7"
+    },
+    "RI06 level 1 square brass rim face.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -0.29552021622657776,
+          0.9553365111351013,
+          0.0,
+          1.052541971206665
+        ],
+        [
+          -0.9553365111351013,
+          -0.29552021622657776,
+          0.0,
+          -0.3255893886089325
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "3e0f8eac249040b0391755e12246fd8fca3b1e0d52850e07fafc1c4d65564cde",
+      "evaluated": "4c64f96f963943f1bdec9f932e4f2a801061b03719bca540a762155c376b7a0c"
+    },
+    "RI06 broad saucer level 2": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "a8a1533bf4c38ac41912a482b292dd9092a2ae93521e8127f606ec9fc1722a70",
+      "evaluated": "a8a1533bf4c38ac41912a482b292dd9092a2ae93521e8127f606ec9fc1722a70"
+    },
+    "RI06 level 2 embedded well sleeve": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -0.30000001192092896
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "debb4e2d460df36c107cabbf9c6093209474eed996d6e840602d2983103f3d1a",
+      "evaluated": "e5e198a917d82f5646095026da4bd3c9071967c0dfb3577c052c67b7ba3f18b4"
+    },
+    "RI06 level 2 recessed well floor": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.30000001192092896
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.1700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "29d652138254cb68833ffc92199128fdef887fc2a2c4f5f50e74c3cd50abd48a",
+      "evaluated": "5ec63e7a0ff6fbb38703568a642552c737840b72f7cacb9a12fba7187a75dac6"
+    },
+    "RI06 level 2 well cooling fin": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.3449999988079071
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "861bc14dca790b9cde948a18efd272b24887dbe6db618d69e21ef3eb3ee3b20c",
+      "evaluated": "cb54100549f47778a1a5f16cfa04cccef2836c656a90aa7d6bfca611873206ef"
+    },
+    "RI06 level 2 well cooling fin.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.6299999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.2549999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "861bc14dca790b9cde948a18efd272b24887dbe6db618d69e21ef3eb3ee3b20c",
+      "evaluated": "cb54100549f47778a1a5f16cfa04cccef2836c656a90aa7d6bfca611873206ef"
+    },
+    "RI06 level 2 perimeter machined seam": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "5cc1f7545ca1301df52b1b0ab2d40c5f6b54a8717a02096d73d7d46de9b165fa",
+      "evaluated": "45ee7aac07d039a85995c262b37a88344cb51f26f3e5fbab739286aa9bc49ac5"
+    },
+    "RI06 level 2 rim fitting bezel": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          0.0,
+          6.636055140717684e-17
+        ],
+        [
+          8.742277657347586e-08,
+          -1.0,
+          0.0,
+          -1.0837500095367432
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.2300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "d0a89e32b354828d70dd69afd15b46638bc687442521b09f30fed58284cbd654",
+      "evaluated": "364552cfab8c37c5ee831f186cc493ef3128b0453d2df73127e6a561cf3cdac7"
+    },
+    "RI06 level 2 square brass rim face": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          0.0,
+          6.74627331774568e-17
+        ],
+        [
+          8.742277657347586e-08,
+          -1.0,
+          0.0,
+          -1.1017500162124634
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.2300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "3e0f8eac249040b0391755e12246fd8fca3b1e0d52850e07fafc1c4d65564cde",
+      "evaluated": "4c64f96f963943f1bdec9f932e4f2a801061b03719bca540a762155c376b7a0c"
+    },
+    "RI06 level 2 rim fitting bezel.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -0.29552021622657776,
+          0.9553365111351013,
+          0.0,
+          1.0353459119796753
+        ],
+        [
+          -0.9553365111351013,
+          -0.29552021622657776,
+          0.0,
+          -0.32027003169059753
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.2300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "d0a89e32b354828d70dd69afd15b46638bc687442521b09f30fed58284cbd654",
+      "evaluated": "364552cfab8c37c5ee831f186cc493ef3128b0453d2df73127e6a561cf3cdac7"
+    },
+    "RI06 level 2 square brass rim face.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -0.29552021622657776,
+          0.9553365111351013,
+          0.0,
+          1.052541971206665
+        ],
+        [
+          -0.9553365111351013,
+          -0.29552021622657776,
+          0.0,
+          -0.3255893886089325
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.2300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "3e0f8eac249040b0391755e12246fd8fca3b1e0d52850e07fafc1c4d65564cde",
+      "evaluated": "4c64f96f963943f1bdec9f932e4f2a801061b03719bca540a762155c376b7a0c"
+    },
+    "RI06 tapered upper mast": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.20000000298023224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "6a575975a035ba5b671d4856446bc34a55daefa7e50ef789b1e1f14f5325775b",
+      "evaluated": "6a575975a035ba5b671d4856446bc34a55daefa7e50ef789b1e1f14f5325775b"
+    },
+    "RI06 solid exposed brass mast neck": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "b6df236798d95efbee732b8102a5f001c7c0f84d780146767f1a55c635e6619d",
+      "evaluated": "0a44c1eeb9e47500e35d879c4ff9172b474652ed19ef4aa466d36627b17bb65c"
+    },
+    "RI06 pale neck retaining strut": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          1.5099580252808664e-07,
+          0.0,
+          0.15556348860263824
+        ],
+        [
+          -1.5099580252808664e-07,
+          -1.0,
+          0.0,
+          0.15556348860263824
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.690000057220459
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "cff53142c33c85829a1efbcd41354a8d9caa3a16bfb1aa974a6143ad657c34ff",
+      "evaluated": "654d35c2d027b5ddab40eb39dc8d0b75e995678a44286f8f86df564edf22b217"
+    },
+    "RI06 pale neck retaining strut.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          1.5099580252808664e-07,
+          0.0,
+          -0.15556348860263824
+        ],
+        [
+          -1.5099580252808664e-07,
+          -1.0,
+          0.0,
+          0.15556348860263824
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.690000057220459
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "cff53142c33c85829a1efbcd41354a8d9caa3a16bfb1aa974a6143ad657c34ff",
+      "evaluated": "654d35c2d027b5ddab40eb39dc8d0b75e995678a44286f8f86df564edf22b217"
+    },
+    "RI06 pale neck retaining strut.002": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          1.5099580252808664e-07,
+          0.0,
+          -0.15556348860263824
+        ],
+        [
+          -1.5099580252808664e-07,
+          -1.0,
+          0.0,
+          -0.15556348860263824
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.690000057220459
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "cff53142c33c85829a1efbcd41354a8d9caa3a16bfb1aa974a6143ad657c34ff",
+      "evaluated": "654d35c2d027b5ddab40eb39dc8d0b75e995678a44286f8f86df564edf22b217"
+    },
+    "RI06 pale neck retaining strut.003": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          1.5099580252808664e-07,
+          0.0,
+          0.15556348860263824
+        ],
+        [
+          -1.5099580252808664e-07,
+          -1.0,
+          0.0,
+          -0.15556348860263824
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.690000057220459
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "cff53142c33c85829a1efbcd41354a8d9caa3a16bfb1aa974a6143ad657c34ff",
+      "evaluated": "654d35c2d027b5ddab40eb39dc8d0b75e995678a44286f8f86df564edf22b217"
+    },
+    "RI06 lower mast neck retaining collar": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.20000000298023224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "793397ec4bc18550d75297c7d9fe8367d924eb542694ebb7de9493f6e32376a1",
+      "evaluated": "6e2034387d2acab188c5aa96e326cb7d9023da538ed47a70a637103726ada717"
+    },
+    "RI06 upper mast neck retaining collar": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.20000000298023224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "e87d1a7c9888cdcb0d5718e165cb542bfa2ee0fbcdafeea4c9222ad91eaf5583",
+      "evaluated": "8b085706957b93205e193cb3e734141a94f6ad091e86782b844fe8521f6116a5"
+    },
+    "RI06 lower mast contaminated groove": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.20000000298023224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "5d54a7e3e3c5b62f1f3e83271b3a13dafe296b123f0e5affbdbfe051a1d900f7",
+      "evaluated": "0e9257c58d3d643321fbde442bc2b78028fbae67381f1653e704fa3eb3be0936"
+    },
+    "RI06 middle mast machined joint": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.20000000298023224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "64ac21dca8dd0bf47fe7eac443c32b73c7b12e674464e6176494d276784175ae",
+      "evaluated": "3daa4d7c650e5c26585be56ab231ad5d1ea9e4df3e1b84b0d6bfff571e2db1cd"
+    },
+    "RI06 crown solid mounting stem": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          3.955000162124634
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "c8aced20d9e041ee6d70e6cf8d5c273dedbeb9af7d91d21b302eccc50f858a8d",
+      "evaluated": "32bee18d53f4c7d013dbefa04eaeadb50f6e326df0be88f332b73147ec532c1e"
+    },
+    "RI06 crown compact fork bowl": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.20000000298023224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "fa97f6ecc51e692dd4e0167e3afb9a39d39e7788a74be2222a746469af84ad59",
+      "evaluated": "d7fc5e3f2227eb1cd5686d8f60f43bd127d398856b41fba857bc7437c93a3866"
+    },
+    "RI06 crown central conductor": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.449999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "4126e3139344bd5e5c5fe3fd672ab54461089e65a180fa867ad124a1b968707a",
+      "evaluated": "a95569d412dba7e3ef89717259f519d95588ecdb0ad1aeb7679a67be3978abf0"
+    },
+    "RI06 crown outer conductor": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -4.371138828673793e-08,
+          0.6689652800559998,
+          -0.7432936429977417,
+          -0.10000000149011612
+        ],
+        [
+          -1.0,
+          -5.78590686473035e-08,
+          6.73446320931248e-09,
+          0.0
+        ],
+        [
+          -3.8501156041093054e-08,
+          0.7432936429977417,
+          0.6689652800559998,
+          4.09499979019165
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "748ca2be9668a7d28a804eae7f3d15483f6414166fa6bcea64860b3438e5265c",
+      "evaluated": "166b4affe474f23614437402d5c3b3bb051dc27bf7b6b24b68e19aa1c5b279fd"
+    },
+    "RI06 crown outer conductor.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.6292068494294654e-07,
+          0.9805806875228882,
+          -0.19611600041389465,
+          -0.16500000655651093
+        ],
+        [
+          -1.0,
+          -9.146954482730507e-08,
+          3.7338824654398195e-07,
+          0.0
+        ],
+        [
+          3.481986539100035e-07,
+          0.19611600041389465,
+          0.9805806875228882,
+          4.215000152587891
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "53f78e0b91ea7eaea8788a5550dbf4f6c0d6282e459088c393d8c27ab0b377e3",
+      "evaluated": "2e86132c3c5431aa03ee4339ca16b5672608bf5358c6c032f392625b29555b06"
+    },
+    "RI06 crown outer conductor.002": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          1.5099580252808664e-07,
+          0.0,
+          -0.18000000715255737
+        ],
+        [
+          -1.5099580252808664e-07,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.489999771118164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "bb15edca23469383ae49e6a257ecfd8db9db4ba67e7ac1d096eb39169cf78a89",
+      "evaluated": "eee21719b501bcc2f66844f7caf1b2007f3df936d3a1f69e2deff7b669f3f924"
+    },
+    "RI06 crown side terminal": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.689999580383301
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "30fcb74bb4e350ff4114ccae1a0305cec4e5f57c47b27cde9b9965c9f4c8cf6e",
+      "evaluated": "b5d8efd610fb90450d64c0fb457cfef5e3ab8f97c9935af0cc7d1b9b43be8311"
+    },
+    "RI06 crown outer conductor.003": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -4.371138828673793e-08,
+          -0.6689652800559998,
+          0.7432936429977417,
+          0.10000000149011612
+        ],
+        [
+          1.0,
+          -5.78590686473035e-08,
+          6.73446320931248e-09,
+          0.0
+        ],
+        [
+          3.8501156041093054e-08,
+          0.7432936429977417,
+          0.6689652800559998,
+          4.09499979019165
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "748ca2be9668a7d28a804eae7f3d15483f6414166fa6bcea64860b3438e5265c",
+      "evaluated": "166b4affe474f23614437402d5c3b3bb051dc27bf7b6b24b68e19aa1c5b279fd"
+    },
+    "RI06 crown outer conductor.004": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.6292068494294654e-07,
+          -0.9805806875228882,
+          0.19611600041389465,
+          0.16500000655651093
+        ],
+        [
+          1.0,
+          -9.146954482730507e-08,
+          3.7338824654398195e-07,
+          0.0
+        ],
+        [
+          -3.481986539100035e-07,
+          0.19611600041389465,
+          0.9805806875228882,
+          4.215000152587891
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "53f78e0b91ea7eaea8788a5550dbf4f6c0d6282e459088c393d8c27ab0b377e3",
+      "evaluated": "2e86132c3c5431aa03ee4339ca16b5672608bf5358c6c032f392625b29555b06"
+    },
+    "RI06 crown outer conductor.005": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          -1.0,
+          1.5099580252808664e-07,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          -1.5099580252808664e-07,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.489999771118164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "bb15edca23469383ae49e6a257ecfd8db9db4ba67e7ac1d096eb39169cf78a89",
+      "evaluated": "eee21719b501bcc2f66844f7caf1b2007f3df936d3a1f69e2deff7b669f3f924"
+    },
+    "RI06 crown side terminal.001": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.689999580383301
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "30fcb74bb4e350ff4114ccae1a0305cec4e5f57c47b27cde9b9965c9f4c8cf6e",
+      "evaluated": "b5d8efd610fb90450d64c0fb457cfef5e3ab8f97c9935af0cc7d1b9b43be8311"
+    },
+    "RI06 crown central terminal": {
+      "type": "MESH",
+      "parent": "PlacementRoot",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.949999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native": "de2484b03bd6dc20d46433c4f34d46d6cf146957264f2e82c08b68b6650d0fea",
+      "evaluated": "a66c3ea4ee7f0b5d9f1f7de7ac0a02c9c7f5f2589514bb3da9cb154697b333aa"
+    },
+    "PlacementRoot": {
+      "type": "EMPTY",
+      "parent": null,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "packed_images_before_and_after": {
+    "authored-cap-colour.png": "70946a95dc269dcd2f17b662c897d5b8c1dfb19cbd8e662a72a103008b2a3ebd",
+    "authored-cap-roughness.png": "e6bf95c8b47a5803e60f4c82c1ae381fd6e58e277b79b82b8cbd65e286b7dd06",
+    "authored-shell-colour.png": "f86ed95175456cd92d0f3fb3bf05de9465e8e4935542d22f793fd4c411ec9a0d",
+    "authored-shell-roughness.png": "b2814f00e744576d84ef5dd1df4ffe32b23a62b697e970765450d827f3101d07"
+  },
+  "saved_native_reopened": true,
+  "idempotent": true,
+  "original_backup": "artifacts/issue-1111-applied-uv-repair/63568c8aac93407b93ecbb57a651cd1c/strategic-bunker",
+  "final_visual_acceptance": false
+}

@@ -1,0 +1,723 @@
+{
+  "schema_version": 1,
+  "policy": "Explicit reviews survive inventory regeneration. Accepted gates require evidence and the SHA-256 of the exact registered model revision. Existing studies are not automatically accepted. The native_and_glb_runtime gate covers Blender native reopen and standalone GLB import/render only; exact export/report/script/render hashes are bound and game-client integration is not inferred.",
+  "reviews": [
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/040",
+      "model": {
+        "blend": "docs/assets/reconstruction/buildings/rigellian/central-unit/model.blend",
+        "sha256": "bfcbcd963ccf859f15b4575483d7ffd954c37c06c645e02651ad6010ec580417",
+        "runtime_evidence": {
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "verifier": "tools/blender/verify_rigellian_cpu.py",
+          "render_reviewer": "tools/blender/review_rigellian_cpu.py",
+          "imported_render": "docs/assets/reconstruction/buildings/rigellian/central-unit/imported-glb-front-quarter.png",
+          "files": {
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/front-quarter.png": "d941b3847b0ad6cf91ae17625867f4dfd310de0bd119d668ec2545d51660e195",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/front.png": "eb69250db011974a8809c473a332c8d78733eb9420b31cdd040a8aaee3b326af",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/gallery.png": "3fb436c25d3100e13d4296b98638e4d6fe9173a7ae39a6b3b8c24716a1e40a4e",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/imported-glb-front-quarter.png": "453aafb02c9f8f83b63ee8cb1c880de7e933e7585bca86e39bfdca6109c50426",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/model.blend": "bfcbcd963ccf859f15b4575483d7ffd954c37c06c645e02651ad6010ec580417",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/model.glb": "beafe1fcc39a6d2f0b4246719c45fcca05d6d023b7890c5c233b40efe8848854",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/model.json": "48641d6f57954d53574c2fa64d602879f7568ac4a832d6bb4c1ec73c739c6c0f",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/rear-quarter.png": "d70d6de669f214fc9da71de38bc0598fef1a3f12b6ef6541cecb9225d35b6813",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/render-review.json": "83f8d2d89ad54fe9fe29cfed8a5e0f48b044d38f5eb85f3f89fda4decfd83a0a",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/side.png": "85dd9b691e30cd85ca4dfcda8ae76d4b6e62d240035837306a5e74480569190c",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/technical-review.json": "7bcbecfb98ac0b0e55ecd94a5246d99dd620f91d2d6b26b5c058e14b7339a7f6",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/top.png": "7ec4c35b76bb05017d24c03f7b6c339f2388ad7e854e40be997783f628908de5",
+            "docs/assets/reconstruction/buildings/rigellian/central-unit/underside.png": "f9b526b75b581b238a06e191ed9a39f06d843c95c4971756fd2816f60de0d984",
+            "tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "tools/blender/build_rigellian_cpu.py": "c9b0580bb99f6d0127713958d5a90c40d661ca0af2708e29878286636924c501",
+            "tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "tools/blender/review_rigellian_cpu.py": "4c5650088280aebf7b247604fc7004c15502790e008156262c5633bdc62fed60",
+            "tools/blender/rigellian_cpu_parts.py": "bddfefa5565f8f21b796fe1b6242b3f3828a08162cf2c1151a76047ed464d837",
+            "tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+            "tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+          },
+          "text_hash_policy": "lf-for-json-and-python"
+        }
+      },
+      "gates": {
+        "native_and_glb_runtime": true
+      },
+      "evidence": {
+        "native_and_glb_runtime": [
+          "Model source commit: https://github.com/ender-dev-pl/ed-openfa-game/commit/fb9ac09a",
+          "Study issue: https://github.com/ender-dev-pl/ed-openfa-game/issues/969",
+          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/hierarchy checks and actual imported rendering passed; tools/blender/verify_rigellian_cpu.py",
+          "Seven render framing/alpha/native-imported checks passed; tools/blender/review_rigellian_cpu.py",
+          "docs/assets/reconstruction/buildings/rigellian/central-unit/technical-review.json",
+          "docs/assets/reconstruction/buildings/rigellian/central-unit/render-review.json"
+        ]
+      },
+      "scope_note": "Technical Blender gate only. Artistic quality, legacy state coverage, calibrated attachments and game-client integration are not accepted by this review."
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/041",
+      "model": {
+        "blend": "docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.blend",
+        "sha256": "17592f38db313a8177902099004582bc388032253f0cf7c5c0c0445e98cab4dd",
+        "runtime_evidence": {
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "verifier": "tools/blender/verify_rigellian_filtration.py",
+          "render_reviewer": "tools/blender/review_rigellian_filtration.py",
+          "imported_render": "docs/assets/reconstruction/buildings/rigellian/filtration-plant/imported-glb-front-quarter.png",
+          "files": {
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/authored-shell-colour.png": "ca2ca6e19463754d5d584ef75ce8bce60827fbb481d64e3c39b71810ec5de92b",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/authored-shell-roughness.png": "cf9e75b3d1f71c6c941eba3d4ecfb27c5ee680799884ee3abce8672a79875426",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/authored-wear.json": "41e6a7e68715f829f0bd159bae9d5e198fe954da7cea240b6882ff6f498712ab",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/front-quarter.png": "e35b40cb4c7c466ccf0746a24290effee23b8896b50f400448afc65425eced04",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/front.png": "d62d566f956b6bcf181f4f97ce4eb5f0da532c49e17e1c1ca87b804473cf2db0",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/gallery.png": "eb401717b53408791797b56606b006fd520a62836e1ad40c80a1a73414d37e02",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/imported-glb-front-quarter.png": "95b67626d5d3056291a19983963c787163602bfa3e65bf958a577166bd526c1d",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.blend": "17592f38db313a8177902099004582bc388032253f0cf7c5c0c0445e98cab4dd",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.glb": "5b57c727ac681f2122d48c50fb81c0904e3124bf258b01985d1c3e14dc6658fb",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.json": "43e2e224ae1634719cf4cb255c2b8ac12fc4ce65f9c477f3916146fa6b754d1d",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/rear-quarter.png": "775210cdaa95a36a429eeb4670842df4808218fd6fac39e6e2597355b675bd5b",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/render-review.json": "db530927226c4c9d9370899a774afd9832723345dbc417f2364c00fd47c758be",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/side.png": "409224c826aceabebf9edc751bdba7edd8261ae47ed40af45ccfc0e0ad2c7fc1",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/technical-review.json": "58ff2d765bc42852910240296b6ed7d32560f519d4a053c8434cf797eb4c5bf1",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/top.png": "dac80a8f4ddb212063cc41232b949d26a6b9d823c0f4f50032d9fc7ea3cba339",
+            "docs/assets/reconstruction/buildings/rigellian/filtration-plant/underside.png": "24c494e0ab8644c96c937460bcc91db14e3057b2dc747335f3bcc3e48f931404",
+            "tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "tools/blender/author_filtration_wear.py": "c101967f2687832db84f909975b814b854c03d8bdc86a2ddecb67c725f5a2c52",
+            "tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+            "tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+            "tools/blender/review_rigellian_filtration.py": "61bd705a6986b08f58b2331bf94238fce81e42efa8a2b7e7449af1877e6c7cb6",
+            "tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+            "tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+          },
+          "text_hash_policy": "lf-for-json-and-python"
+        }
+      },
+      "gates": {
+        "native_and_glb_runtime": true
+      },
+      "evidence": {
+        "native_and_glb_runtime": [
+          "Model source commit: https://github.com/ender-dev-pl/ed-openfa-game/commit/cc1511d8",
+          "Study issue: https://github.com/ender-dev-pl/ed-openfa-game/issues/971",
+          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/hierarchy checks and actual imported rendering passed; tools/blender/verify_rigellian_filtration.py",
+          "Seven render framing/alpha/native-imported checks passed; tools/blender/review_rigellian_filtration.py",
+          "docs/assets/reconstruction/buildings/rigellian/filtration-plant/technical-review.json",
+          "docs/assets/reconstruction/buildings/rigellian/filtration-plant/render-review.json"
+        ]
+      },
+      "scope_note": "Technical Blender gate only. Artistic quality, legacy state coverage, calibrated attachments and game-client integration are not accepted by this review."
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/042",
+      "model": {
+        "blend": "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.blend",
+        "sha256": "087f2c6e49745ee6510a9187b9ce6de339fddabcb8a64789115ce68b406d35fd",
+        "runtime_evidence": {
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "verifier": "tools/blender/verify_rigellian_nourishment.py",
+          "render_reviewer": "tools/blender/review_rigellian_nourishment.py",
+          "imported_render": "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/imported-glb-front-quarter.png",
+          "files": {
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/authored-cap-colour.png": "d3756e0a541121c9107ecda1f45efe8d894ce98759507d7af77f327eb5854fc3",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/authored-cap-roughness.png": "1e49c3ca0801d1a8bff92508a588a38ee36199aeb0727d7f949b7d9dde604b49",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/authored-shell-colour.png": "6c3c82826590c9d99405dbfc3564231ce610843b9eb5fc33e7c18817394cb0ef",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/authored-shell-roughness.png": "6d43f00dc9fd078fa0333031892eaa61853623b49999494be7bc80fc7417816c",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/authored-wear.json": "cb80e27bb93ca7ea49817c5206171d0b22fc8ecddfa2852f2af1408fe2ab9538",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/front-quarter.png": "93d367802993d728559f7a19467c6511e4edcdd40811b18dd20e1b337db0becc",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/front.png": "5df87f8a126cdba56ee4d6e0258ff10d30b6b9c4927e95d87cdb5883cbc92e44",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/gallery.png": "18d0a35501da695abe122e1cac0cd946dbbbc24f0814e186f332ad8988666b16",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/imported-glb-front-quarter.png": "afd34d3c410dc9bc6ed1e6076445ebdf468a337c6fcce9586a27a88f88a404e3",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.blend": "087f2c6e49745ee6510a9187b9ce6de339fddabcb8a64789115ce68b406d35fd",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.glb": "b69d897af9224463f80c931cf6a62ece8a46117779e846a60a8421070ec4a948",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.json": "2df439ccac36eba586da957aae9f6d50c23cf8ece65254cac407bc5d02ae2cb3",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/rear-quarter.png": "a87d67b910a5ef4fdde8d73d4e593e2659a50d2ef65e2428c024e166bd0d7ba9",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/render-review.json": "2a15a7fafbd2c9ceb5741cde171a186502e2b9fd1e3b91fce16675c5eb95aeb2",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/side.png": "b8889084145a77614dd869f745afba65a6d6a09000222d24046a4d309b50db29",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/technical-review.json": "5ba626638c39741fd127d5d405623c13cc90a25584bfb9d46cfd59bcab37a943",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/top.png": "fe324aa8da990edfa0968580d4bdddea4ac5d8ccfd1baf165cab4995f8188031",
+            "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/underside.png": "335aa2a152798db12aea536adc29268c77dfe9dc9c82fd231a075913bbcd14ac",
+            "tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "tools/blender/author_filtration_wear.py": "c101967f2687832db84f909975b814b854c03d8bdc86a2ddecb67c725f5a2c52",
+            "tools/blender/author_nourishment_wear.py": "3022b9afa3ba41987413bc9c23fe2e25b1f2bf304109c4e0d11bb8beda852895",
+            "tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "tools/blender/build_rigellian_nourishment.py": "65b0e66f79a82454c473a0efd92ab26cfced232a458d5887b5e31c5ef32fa9a6",
+            "tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "tools/blender/review_rigellian_nourishment.py": "692f076c95614e100b4cab0ced82e16a42ee435e60558feaf92a2f6326f7a672",
+            "tools/blender/rigellian_nourishment_parts.py": "f666ef4d05ea1e738522b8d4dd2e9e66379b8cf73237b275f503695e29c25d69",
+            "tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+            "tools/blender/verify_rigellian_nourishment.py": "49de94f076ee0664b003617962fb453af30c5894e6e3df583095025736f5029e"
+          },
+          "text_hash_policy": "lf-for-json-and-python"
+        }
+      },
+      "gates": {
+        "native_and_glb_runtime": true
+      },
+      "evidence": {
+        "native_and_glb_runtime": [
+          "Model source commit: https://github.com/ender-dev-pl/ed-openfa-game/commit/d35c2fb7",
+          "Study issue: https://github.com/ender-dev-pl/ed-openfa-game/issues/972",
+          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/hierarchy checks and actual imported rendering passed; tools/blender/verify_rigellian_nourishment.py",
+          "Seven render framing/alpha/native-imported checks passed; tools/blender/review_rigellian_nourishment.py",
+          "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/technical-review.json",
+          "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/render-review.json"
+        ]
+      },
+      "scope_note": "Technical Blender gate only. Artistic quality, legacy state coverage, calibrated attachments and game-client integration are not accepted by this review."
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/043",
+      "model": {
+        "blend": "docs/assets/reconstruction/buildings/rigellian/community/model.blend",
+        "sha256": "5673af0735c87a9cd0c6b7009c584244310b4c6a98c3c3e6d0e70a415d737003",
+        "runtime_evidence": {
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "verifier": "tools/blender/verify_rigellian_community.py",
+          "render_reviewer": "tools/blender/review_rigellian_community.py",
+          "imported_render": "docs/assets/reconstruction/buildings/rigellian/community/imported-glb-front-quarter.png",
+          "files": {
+            "docs/assets/reconstruction/buildings/rigellian/community/authored-cap-colour.png": "d5332d991fe5fb783124fdf280d9a89f14c07422e8d210647547936f39fe1631",
+            "docs/assets/reconstruction/buildings/rigellian/community/authored-cap-roughness.png": "753d6d14079542ad74d9460c627af45dec30853b0290ee53fce2658e964e548f",
+            "docs/assets/reconstruction/buildings/rigellian/community/authored-shell-colour.png": "c7f0ec1cbcab1a30fef8e7b8e09e28b3d899f3e62a1b27660698c70cf3840e73",
+            "docs/assets/reconstruction/buildings/rigellian/community/authored-shell-roughness.png": "9470ce187ae8e02114ad7c1f61b9d09f8cd4fccd0d3e61e379bd5f84385cc534",
+            "docs/assets/reconstruction/buildings/rigellian/community/authored-wear.json": "174a96b827bebb6ad6e759c37e948d94ce02400258fd22c478d456d43e5e612e",
+            "docs/assets/reconstruction/buildings/rigellian/community/front-quarter.png": "9466579d98f55bd5d1087128eb67bd7dd8c86f4bc6364b7248313ddebe7b688d",
+            "docs/assets/reconstruction/buildings/rigellian/community/front.png": "2eace349d931847f2f06094594f5ddd12e192dee000770fd90b8ab00bdfc90c9",
+            "docs/assets/reconstruction/buildings/rigellian/community/gallery.png": "2da8abcb8b0b6ee8edc492ba6d804e2f5fa7c9f1fff35e7afb35180a60b4b464",
+            "docs/assets/reconstruction/buildings/rigellian/community/imported-glb-front-quarter.png": "dac9ff9d3906caae10d96484a95ee08ac8fda072c10bbdc397ff58000ed0e29d",
+            "docs/assets/reconstruction/buildings/rigellian/community/model.blend": "5673af0735c87a9cd0c6b7009c584244310b4c6a98c3c3e6d0e70a415d737003",
+            "docs/assets/reconstruction/buildings/rigellian/community/model.glb": "a841d5db7b1806962ed47202a713792ff73cfd2b92c753d6ea3ecb9345c4f54a",
+            "docs/assets/reconstruction/buildings/rigellian/community/model.json": "241c5e6b12100df5efce8cff91c441f24dfad4e025605d7ee753496b90ac69fd",
+            "docs/assets/reconstruction/buildings/rigellian/community/rear-quarter.png": "5a9874aa3060218421efa494aabc0fe28991c60858f5080e56f5b5915b1f5ee8",
+            "docs/assets/reconstruction/buildings/rigellian/community/render-review.json": "3b7f427e3553b33eb25690f1bbb5d5d72203b8b060d4db12e07c4be6db7021c3",
+            "docs/assets/reconstruction/buildings/rigellian/community/side.png": "89e91826b3b577af36596dd98a21aa2ea86db9badc9aa868d7863ceaaa5b96b6",
+            "docs/assets/reconstruction/buildings/rigellian/community/technical-review.json": "d2757b8524d342aa28187eaeb83f4d2fc9c5ffb6523e354a3476814ee2837bb9",
+            "docs/assets/reconstruction/buildings/rigellian/community/top.png": "0e6df1590ed4172421e7d98455b35d61ae2446fe53c2f24a4134b1538d72ed85",
+            "docs/assets/reconstruction/buildings/rigellian/community/underside.png": "9018fc1c809c3b5babd38a9da5aace46561c5aed0e56229c3317f5d3171c5cf8",
+            "tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "tools/blender/author_community_wear.py": "633feee2a3f80c03f550e89289982231e91891a8ceab1dc145daac4bc77a6130",
+            "tools/blender/author_filtration_wear.py": "c101967f2687832db84f909975b814b854c03d8bdc86a2ddecb67c725f5a2c52",
+            "tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "tools/blender/build_rigellian_community.py": "7986415deb05a9f7b7a5bbe0420362d09678c0ccba6eb717ddd1e4ed6964dc4a",
+            "tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "tools/blender/manufactured_frames.py": "5df4381a72ee6080766e508ac6e665dd053cbd5fa3b3b691760411afc4a389b7",
+            "tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "tools/blender/review_rigellian_community.py": "79a5229ef9506b5bf1a82f942f07e7957a5275857757d1937c217bd726630729",
+            "tools/blender/rigellian_community_parts.py": "ec257d8106c9bb30578d2d96d1bcdde881c17f28a969ac7f640bad0dfa9a8c33",
+            "tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "tools/blender/verify_rigellian_community.py": "df9f2dea0d4b8ec328edbf17085a15a5c04f299883f04c675a517f835d8f4b22",
+            "tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+          },
+          "text_hash_policy": "lf-for-json-and-python"
+        }
+      },
+      "gates": {
+        "native_and_glb_runtime": true
+      },
+      "evidence": {
+        "native_and_glb_runtime": [
+          "Model source commit: https://github.com/ender-dev-pl/ed-openfa-game/commit/7bf16698",
+          "Study issue: https://github.com/ender-dev-pl/ed-openfa-game/issues/973",
+          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/hierarchy checks and actual imported rendering passed; tools/blender/verify_rigellian_community.py",
+          "Seven render framing/alpha/native-imported checks passed; tools/blender/review_rigellian_community.py",
+          "docs/assets/reconstruction/buildings/rigellian/community/technical-review.json",
+          "docs/assets/reconstruction/buildings/rigellian/community/render-review.json"
+        ]
+      },
+      "scope_note": "Technical Blender gate only. Artistic quality, legacy state coverage, calibrated attachments and game-client integration are not accepted by this review."
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/044",
+      "model": {
+        "blend": "docs/assets/reconstruction/buildings/rigellian/health-unit/model.blend",
+        "sha256": "3be26a800dc6b7718fb255ebc4993cdb6112fb6ade06eabb49ba5401e9d5f575",
+        "runtime_evidence": {
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "verifier": "tools/blender/verify_rigellian_health.py",
+          "render_reviewer": "tools/blender/review_rigellian_health.py",
+          "imported_render": "docs/assets/reconstruction/buildings/rigellian/health-unit/imported-glb-front-quarter.png",
+          "files": {
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/authored-cap-colour.png": "d6a68ff6d3c3f462fc055ee8717dbe3a2650124336744f818e93ba6c99310f42",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/authored-cap-roughness.png": "0575890c69a4cd51997c0681c7762ac97dca89cf12cdd4183f713948c0b7f822",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/authored-shell-colour.png": "8348431f8e018be4735337cdb079438b05e611ebfb3e0b0a87a06db6dadb3e7f",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/authored-shell-roughness.png": "666193fdfedef5df7b7d44d0ecb39866c6c41b70ab65f10c3c3d960cdf2eb9ce",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/authored-wear.json": "0aafde23889a51902ca9aea6b25c37c16b5600ff4e0bf7b1573b31b96b88aee5",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/front-quarter.png": "832bc939f5e8ca75c5e7f4be1dfe1c6217fff1c744cda81444671c0800817aff",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/front.png": "c1aec2acb57ffdc599f8149623c740486e23988ef71e3797eb395c3d89a19343",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/gallery.png": "046e8eafd52be62cb37b7f8ef4863f813c02f0230da445c118fe0ac1f7311e5d",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/imported-glb-front-quarter.png": "181cf21bafc41b4de2000b2b3cb3696a5c09d900241fdfa3c607abb0eeef75f6",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/model.blend": "3be26a800dc6b7718fb255ebc4993cdb6112fb6ade06eabb49ba5401e9d5f575",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/model.glb": "070b81fb7a29b213875b62c7f939e4754a35e63d164d75365a6e9b2187c68f90",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/model.json": "efba926222a93eec04618c74dedd780cb82ab5680f511888781c56d39a58fa59",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/rear-quarter.png": "47419afdb7a44dc15a82811e191df088bd4697244072f943eaca547a9672f54d",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/render-review.json": "d4343db15636717e1f9e7dfc8710d04b1f727beae4891c4ce0eab20296bc3198",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/side.png": "2dcaf5292877195c01aa022dab602904a2fa8420953cc16051e79f33b1bd1338",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/technical-review.json": "97b31e5c265eee3a66ee4683c3f45978a31176b1575469a79bfdb85057ef12f6",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/top.png": "628efbfa08d872f803a5fe5d8bd1fce132a4c4199a4bde6ab293ae53846a6282",
+            "docs/assets/reconstruction/buildings/rigellian/health-unit/underside.png": "7866f0c46f23505751cdefa48ed570c732817e06df14a30f1a872f2c0b224eea",
+            "tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "tools/blender/author_filtration_wear.py": "c101967f2687832db84f909975b814b854c03d8bdc86a2ddecb67c725f5a2c52",
+            "tools/blender/author_health_wear.py": "a81da1b844610ec4415c2dd2b27210e422fd56c6419d1025fc4185f42f3d0d64",
+            "tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "tools/blender/build_rigellian_health.py": "e8b2b2365d7344f52d860f578fc3993d99533b9f96972ecabb1b520f5a16c927",
+            "tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "tools/blender/manufactured_frames.py": "5df4381a72ee6080766e508ac6e665dd053cbd5fa3b3b691760411afc4a389b7",
+            "tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "tools/blender/review_rigellian_health.py": "db0f28b2c0c45d874922aa8af1d0efbc19d91691e9feecd468a64c6dc4ebda37",
+            "tools/blender/rigellian_health_parts.py": "d0fae359bef4ab18cfe4a1729a86b6384358034c0c6f47f9babb253571f9ce22",
+            "tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+            "tools/blender/verify_rigellian_health.py": "09c554d8e3fa4a2d529b8391a9d7ba7325a6470f9e8742e1c5e6f8a3ef497f40"
+          },
+          "text_hash_policy": "lf-for-json-and-python"
+        }
+      },
+      "gates": {
+        "native_and_glb_runtime": true
+      },
+      "evidence": {
+        "native_and_glb_runtime": [
+          "Model source commit: https://github.com/ender-dev-pl/ed-openfa-game/commit/92b1ab43",
+          "Study issue: https://github.com/ender-dev-pl/ed-openfa-game/issues/974",
+          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/hierarchy checks and actual imported rendering passed; tools/blender/verify_rigellian_health.py",
+          "Seven render framing/alpha/native-imported checks passed; tools/blender/review_rigellian_health.py",
+          "docs/assets/reconstruction/buildings/rigellian/health-unit/technical-review.json",
+          "docs/assets/reconstruction/buildings/rigellian/health-unit/render-review.json"
+        ]
+      },
+      "scope_note": "Technical Blender gate only. Artistic quality, legacy state coverage, calibrated attachments and game-client integration are not accepted by this review."
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/045",
+      "model": {
+        "blend": "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.blend",
+        "sha256": "db1e1e64c60ecbc3921c6855ce2feee578d2821083e0e3bf4157dcf62abeae70",
+        "runtime_evidence": {
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "verifier": "tools/blender/verify_rigellian_bunker.py",
+          "render_reviewer": "tools/blender/review_rigellian_bunker.py",
+          "imported_render": "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/imported-glb-front-quarter.png",
+          "files": {
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/authored-cap-colour.png": "70946a95dc269dcd2f17b662c897d5b8c1dfb19cbd8e662a72a103008b2a3ebd",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/authored-cap-roughness.png": "e6bf95c8b47a5803e60f4c82c1ae381fd6e58e277b79b82b8cbd65e286b7dd06",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/authored-shell-colour.png": "f86ed95175456cd92d0f3fb3bf05de9465e8e4935542d22f793fd4c411ec9a0d",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/authored-shell-roughness.png": "b2814f00e744576d84ef5dd1df4ffe32b23a62b697e970765450d827f3101d07",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/authored-wear.json": "9970967b179d6c8ce43265c964a3f77d943457bbbe3ae0440c168734cbcddff0",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/front-quarter.png": "f2eae454666f91e2b00233da3d2743e99c9dd0dee528053f84a96e54b36229e7",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/front.png": "9d63dec3efb0fac05a245be765443c04c7e67d79c77a4a7162d11243493d6ebd",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/gallery.png": "d12b91789fc637811b0741cc46bbcdac93a50d593bf416fb56a9960a95b80f86",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/imported-glb-front-quarter.png": "55ceea7cac0f4153f673352c04a2726379033e15d296a146898d27ccbcb8bf30",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.blend": "db1e1e64c60ecbc3921c6855ce2feee578d2821083e0e3bf4157dcf62abeae70",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.glb": "b339bee4a097216d625e06882f3dc525b4936752b90a5028e8edcc7e5da54e59",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.json": "7aad18132ddaeb9f60af543cebe42b298d317846f63a1af57ca1cf83b902ee53",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/rear-quarter.png": "9ddfcde9d61f0d1c0e8946f61b757cb0b0f5d460ada9d1828a686494f4dc8cfe",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/render-review.json": "d211bb4c29b6c3dbade991bd73557f131046b2baba1dedfda0332b637d370946",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/side.png": "4f4f2f30fd264bb7bea6858991de5ac306f8129f92abd72240a59bf41317b5ca",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/technical-review.json": "a870bd89e0f6ec779fdebee0cff7830a453d3c42e7fb0e61c42b56b2e83f203e",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/top.png": "a089ced718260aeecae42e7e087b5e09608175c9a303e570a5034034decbdae7",
+            "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/underside.png": "be4d5e5c81eb2afa5afb3ca04af952f1910b1b6e728aeb8fd9f33842859c9d2c",
+            "docs/assets/reconstruction/evidence/detail-uv-repair/strategic-bunker.json": "a16bdd9bfbaf72c3448851b61b226e98219e43e9efa5f1ca9aa182af3aa726bf",
+            "tools/blender/apply_detail_uv_repair.py": "4ac41fdfb5d9762fa349a325f01e0c6305951a9a76676fcb5684a161ac18b77a",
+            "tools/blender/audit_detail_uv_proposal.py": "f509b0ba3a5b612d0e7fd19849adfd9e5a3331434614968f9317193282441f42",
+            "tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "tools/blender/author_bunker_wear.py": "2e258a94ea4cda2c1d920224c5d8750cdd83644c844bd642eb520ab00ef3debb",
+            "tools/blender/author_filtration_wear.py": "c101967f2687832db84f909975b814b854c03d8bdc86a2ddecb67c725f5a2c52",
+            "tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "tools/blender/build_rigellian_bunker.py": "b5eafba0931390ea774b7e8c53d934cb011475223200ba2187db5c3451deeb89",
+            "tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "tools/blender/manufactured_frames.py": "5df4381a72ee6080766e508ac6e665dd053cbd5fa3b3b691760411afc4a389b7",
+            "tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "tools/blender/repair_detail_uvs.py": "4242a0a815cd5208fdf0e81204a5fdeab67a9d0c3e95be6934d4f64c8672b9c7",
+            "tools/blender/review_rigellian_bunker.py": "e0c3a517b569620904f8dca285f7aa817cee347276f4c5cc846a384ef70ca75c",
+            "tools/blender/rigellian_bunker_parts.py": "a05627aee83cc361a7c9661399938d42255a9cd33154da503b0c918658156753",
+            "tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "tools/blender/test_detail_uv_proposal.py": "420780ef51a6aceef8703290f686cc7860e1087616345df42401d8b5cd4fbc96",
+            "tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "tools/blender/verify_rigellian_bunker.py": "c599011b0187b3529f55dc4fd4e6ed0142c65bdae4627bff5fa2a6fe72321ec7",
+            "tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+          },
+          "text_hash_policy": "lf-for-json-and-python"
+        }
+      },
+      "gates": {
+        "native_and_glb_runtime": true
+      },
+      "evidence": {
+        "native_and_glb_runtime": [
+          "Model source commit: https://github.com/ender-dev-pl/ed-openfa-game/commit/4960e4d3",
+          "Study issue: https://github.com/ender-dev-pl/ed-openfa-game/issues/975",
+          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/hierarchy checks and actual imported rendering passed; tools/blender/verify_rigellian_bunker.py",
+          "Seven render framing/alpha/native-imported checks passed; tools/blender/review_rigellian_bunker.py",
+          "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/technical-review.json",
+          "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/render-review.json",
+          "2026-10-30 issue #1111: UV-only revision 3; actual native reopen, GLB import, unchanged geometry/packed images, existing structural assertions and seven-view render review passed. Authored textures and artistic scope unchanged."
+        ]
+      },
+      "scope_note": "Technical Blender gate only. Artistic quality, legacy state coverage, calibrated attachments and game-client integration are not accepted by this review."
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/046",
+      "model": {
+        "blend": "docs/assets/reconstruction/buildings/rigellian/science-labs/model.blend",
+        "sha256": "c51ab9ab5f17c8f5b71ba38eee1b8de76399c29de2422259139fb112ce1588ca",
+        "runtime_evidence": {
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "text_hash_policy": "lf-for-json-and-python",
+          "verifier": "tools/blender/verify_rigellian_science.py",
+          "render_reviewer": "tools/blender/review_rigellian_science.py",
+          "imported_render": "docs/assets/reconstruction/buildings/rigellian/science-labs/imported-glb-front-quarter.png",
+          "files": {
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/authored-cap-colour.png": "59e83aaa87b81c7042531a59667f4c07aafdadb25ed2e64a51a3799c5df70063",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/authored-cap-roughness.png": "477517e4e8c8a594b4f838cb87655165d22cb20eb55ff715d09fa55edefa2af6",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/authored-shell-colour.png": "296237bb4ff01653494869e3cb09acd8b8bd43094612f8eef258e02681127fa3",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/authored-shell-roughness.png": "d9f01532df52ca7a8e2f153c0c4f64bac72e91bef7d18fad2a56840cab17415c",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/authored-wear.json": "ea8b2ec418298e46f6d922f8171a9360e860930d9ed1ddeef5718084eb96ca7b",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/front-quarter.png": "e8904f8d2b92f58332f2de1ff930b98cd675738f87ef704c3f32ba13cefd76fc",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/front.png": "4531fe28cef91da504881b12abb09daad1fbad88ce9094e8ea7cda2a2d017cf8",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/gallery.png": "e499559346552daad444231339565ed043bbad9f84b08ed8d9745a936a6f5a8f",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/imported-glb-front-quarter.png": "15b62d4ab2bbc96ed0cd844b00ecd027278981223252fe1c1918967c135df3d4",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/model.blend": "c51ab9ab5f17c8f5b71ba38eee1b8de76399c29de2422259139fb112ce1588ca",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/model.glb": "13c1417fd2960ab4ce024761cfd983661c97ac3e114639035a6270b37936ebf3",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/model.json": "64c62b120c8ef9904c5b02c80050801dd0e3f6ea808abf69c5bbf1c2c164d081",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/rear-quarter.png": "421c5f4967bfeccd1be813dee02232d8b3e5819bf030766e3171fc049497f32d",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/render-review.json": "7eb5dc9d3aa318b44e9056ad2598f76d08b2995c899fd3cbe015b5540a72850e",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/side.png": "4bd67186ae8995737ae53f23f3478f34c61b027b0308e3c2ccc00274e556bbaf",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/technical-review.json": "fa1675799cf5f7b2a4e24b25deaed15da8f6985bc4f334b7e9a262c2f7a56ad0",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/top.png": "af1b4c24409d57ad8e74aa6a0d488a043c8df6caecd40ac37682afb216febb71",
+            "docs/assets/reconstruction/buildings/rigellian/science-labs/underside.png": "64a78f1612aab9923a15679efedb596526877056426e98f183fecd6fba8ad5fe",
+            "tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "tools/blender/author_filtration_wear.py": "c101967f2687832db84f909975b814b854c03d8bdc86a2ddecb67c725f5a2c52",
+            "tools/blender/author_science_wear.py": "948323412d21ee5942d38cadb495e34b6da1f026401d3dcd694a84b9abd52b54",
+            "tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "tools/blender/build_rigellian_science.py": "0f725c6fff4619655fea1b0ffbe9902091b72689511bc2a7ac7d5ce613649c31",
+            "tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "tools/blender/manufactured_roof_wells.py": "d9e7e148613d96e666a30b75f0de1382e9869e11c118ed5c4828b2b4fb75fceb",
+            "tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "tools/blender/review_rigellian_science.py": "0921df3d04c4bf9cd05f602560ce373b8fcec0706cf1977f9d8c0eb256514829",
+            "tools/blender/rigellian_science_parts.py": "f1904c2f95f5b2c1f9ee88db259a3868b2d471bbb8040a18fc2e9fcbaf96eba3",
+            "tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+            "tools/blender/verify_rigellian_science.py": "21467c6643440e3eb62a884143e5b6f578a634870de05ee6d72ef7106a0650de"
+          }
+        }
+      },
+      "gates": {
+        "native_and_glb_runtime": true
+      },
+      "evidence": {
+        "native_and_glb_runtime": [
+          "Milestone source/review commit is recorded in https://github.com/ender-dev-pl/ed-openfa-game/issues/977",
+          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/UV/contact checks and actual imported render passed",
+          "tools/blender/verify_rigellian_science.py",
+          "tools/blender/review_rigellian_science.py",
+          "docs/assets/reconstruction/buildings/rigellian/science-labs/technical-review.json",
+          "docs/assets/reconstruction/buildings/rigellian/science-labs/render-review.json"
+        ]
+      },
+      "scope_note": "Technical Blender gate only; artistic quality, states, calibrated attachments and game integration remain open."
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/047",
+      "model": {
+        "blend": "docs/assets/reconstruction/buildings/rigellian/databanks/model.blend",
+        "sha256": "5e7d82b20efc1468ec6641e8eae13b5497936242b956953c260b3f61cb95da95",
+        "runtime_evidence": {
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "text_hash_policy": "lf-for-json-and-python",
+          "verifier": "tools/blender/verify_rigellian_databanks.py",
+          "render_reviewer": "tools/blender/review_rigellian_databanks.py",
+          "imported_render": "docs/assets/reconstruction/buildings/rigellian/databanks/imported-glb-front-quarter.png",
+          "files": {
+            "docs/assets/reconstruction/buildings/rigellian/databanks/authored-cap-colour.png": "cd90d4f4167fd73681293f378327bc325b8c6244126291ca9aeb45abe387c874",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/authored-cap-roughness.png": "8b8359380c92d61d083c02251ea96f732edf04e4b18563b546a914ce7fa7e708",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/authored-shell-colour.png": "ea7d0a04474ba54ec8eaabeede82897dad376188d9f406ae7b40e183abe85833",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/authored-shell-roughness.png": "9430481832aa2a85fe946b89f50e48a4b6d70ce78f16a085826d200a5dc3fd02",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/authored-wear.json": "e4ddc3f6fc731392f58ee1b275595c2cb99f6f24f08c16db59b4de906522ca49",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/front-quarter.png": "221abc6978a93987d2d58190758853d367eba2acfa9f9a12230f6d8de7488c3d",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/front.png": "f7e86bc22d92fadce4e41875173ee8e8408a419eaf365d90d8a03160b5fb5dc5",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/gallery.png": "d0b6293147c8e7692371687e2e09fbc43fcb57428249cce471e6b608e29446e6",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/imported-glb-front-quarter.png": "d504487125d7b1065ec1edeeb830e9fa5b4d9a4765b681f84407c58d3dbd9201",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/model.blend": "5e7d82b20efc1468ec6641e8eae13b5497936242b956953c260b3f61cb95da95",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/model.glb": "83e97ee4f8ff0c4c40206f049a2b2138c6b59e2fb4f78cc180efa011111a53b4",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/model.json": "9080557068b9f1392b10062d6b219c673c1ae9adf0337504b31a843b1615096f",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/rear-quarter.png": "28d2cf6652d171e8fd068501f4a064cca8bebbdfee1697b6c0b51684f14a6a0a",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/render-review.json": "d1b090c6b2b1f35205b2955d54c65dfd04b13817e3cbfb7d05782d725bffc2ee",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/side.png": "35890070fae324ac4e5d27644e777d30be59d1c5a18e711bf99dc785ae656204",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/technical-review.json": "9f8958918853655e4d9c117b0219e6c0a5c5df8e73b4fa888c538fbe600d0b5d",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/top.png": "9990afbc1a87a202e5869dc5ad62d302d3b352b45a154a40098fcfb08034784e",
+            "docs/assets/reconstruction/buildings/rigellian/databanks/underside.png": "f46539a66c5d2ca6a885a9eb3940f4c8617e8a3b59acbca3d0504136800c4da0",
+            "tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "tools/blender/author_databanks_wear.py": "127dc872b18c6057f6ff9fb174f1237a0776150f691d712b90cae4846d6663b5",
+            "tools/blender/author_filtration_wear.py": "c101967f2687832db84f909975b814b854c03d8bdc86a2ddecb67c725f5a2c52",
+            "tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "tools/blender/build_rigellian_databanks.py": "99707465da7ef941c4e1feae076d0f9b81bc83f83211a96153a403203a16aab3",
+            "tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "tools/blender/manufactured_roof_wells.py": "d9e7e148613d96e666a30b75f0de1382e9869e11c118ed5c4828b2b4fb75fceb",
+            "tools/blender/manufactured_surface_mounts.py": "dd05a5c80253bd6afcaeb4aa75f9d71e50ffaf54ef3c83221a59bd84b748346d",
+            "tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "tools/blender/review_rigellian_databanks.py": "a4699c5867a25b62fb3755c408a6d6d619cfed13c4d20fe4f5874783aed6ca08",
+            "tools/blender/rigellian_databanks_parts.py": "46bb3040d168dca74968964a56a54afaeea61b3840b59e0bfefb1566e1a7ce63",
+            "tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "tools/blender/verify_rigellian_databanks.py": "ac028e01b63b67328b487e1e1edf12dab6813d26dcea31270a1746342ee19e3e",
+            "tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+          }
+        }
+      },
+      "gates": {
+        "native_and_glb_runtime": true
+      },
+      "evidence": {
+        "native_and_glb_runtime": [
+          "Milestone source/review commit is recorded in https://github.com/ender-dev-pl/ed-openfa-game/issues/978",
+          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/UV/contact checks and actual imported render passed",
+          "tools/blender/verify_rigellian_databanks.py",
+          "tools/blender/review_rigellian_databanks.py",
+          "docs/assets/reconstruction/buildings/rigellian/databanks/technical-review.json",
+          "docs/assets/reconstruction/buildings/rigellian/databanks/render-review.json"
+        ]
+      },
+      "scope_note": "Technical Blender gate only; artistic quality, states, calibrated attachments and game integration remain open."
+    },
+    {
+      "category": "buildings",
+      "id": "openfa:building/legacy/048",
+      "model": {
+        "blend": "docs/assets/reconstruction/buildings/rigellian/construction-unit/model.blend",
+        "sha256": "f5f76cdec4916d08ca88ec4cd6dd2b3abca58a0d318adf1a5039874e4e1a6ae3",
+        "runtime_evidence": {
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "text_hash_policy": "lf-for-json-and-python",
+          "verifier": "tools/blender/verify_rigellian_construction.py",
+          "render_reviewer": "tools/blender/review_rigellian_construction.py",
+          "imported_render": "docs/assets/reconstruction/buildings/rigellian/construction-unit/imported-glb-front-quarter.png",
+          "files": {
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/authored-cap-colour.png": "28f1538aadf1932bae649e53a0d2fadbd2c44bc759802a1a165a7b5c65a8337e",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/authored-cap-roughness.png": "3d1c4e2f90f378af0d0c2d9c191dfbc97c9e03fca0cb442e6b3d0ff6ba41c1fc",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/authored-shell-colour.png": "5e23b9a15d076aa7bf7d77ec501c3334515dca6c39fee3f93b631195efaf971c",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/authored-shell-roughness.png": "89374aa7089030b999be7a7e6cd0adf08f9ccc3d5a169d445f00288f7d69acc8",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/authored-wear.json": "0d2b1f181960b4df4e8fd2013a241f6ebd935c2a234352ba2d38bd973929b3a7",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/front-quarter.png": "18abf4faa28ab9e88f9751e9ddf82a68173856c1bbc7401690a2447455a2390a",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/front.png": "dd8da2c2764a67cc18d528d0a959e4452a57a4b9c9c6f2bd9cb8559b900aa0fa",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/gallery.png": "29130df11b38730a220a8d6c08128e8e8d9fb19250f73cfadb3c31aadbf844b3",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/imported-glb-front-quarter.png": "7715f39fbda377cbceb75803d8529f82480ad4bcfe9ab8f515e9b79e1deead87",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/model.blend": "f5f76cdec4916d08ca88ec4cd6dd2b3abca58a0d318adf1a5039874e4e1a6ae3",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/model.glb": "e460d293e51bfe2c974d544ccd51e57b07d3fa47aa90998084ae295b1e48f485",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/model.json": "5422c9bfa64d75abb99848ad3df40a3906573223eba55765b82e7bcc5d4793a8",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/rear-quarter.png": "212652152d1adec12c9f99c2f6f3b73914522315435e33ad0e9385f43f7e5a0a",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/render-review.json": "41ea67cc555f7910d104ae6b314920ab0cd3a4da9bdd5bfbaa33626a8061312e",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/side.png": "1d12f23ff73303f23ea77dcde16bfde2ae759b503842e72f98a5be7e2740ebd3",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/technical-review.json": "b3b85439accdd6e2c09f13bf86c8a8f22f6bb126fbfff0bb2fda3d17b43e6b56",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/top.png": "adc76620c4d51c78179d587c3d73ff88c06d1c6f673c47815d2991343a775576",
+            "docs/assets/reconstruction/buildings/rigellian/construction-unit/underside.png": "c686ed82e8fa07e03e6320b0b2386830221377ebeb74c025c1b8a56032d66e9a",
+            "tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "tools/blender/author_construction_wear.py": "d1f537416c4280fbe2adc3c61d97c96329755d4f6457446145f129c2f1182499",
+            "tools/blender/author_filtration_wear.py": "c101967f2687832db84f909975b814b854c03d8bdc86a2ddecb67c725f5a2c52",
+            "tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "tools/blender/build_rigellian_construction.py": "f1f0c414db9762bc197b366af1f3bfc7fe1a4fc60ad2f6243a086e3337e23306",
+            "tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "tools/blender/manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+            "tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "tools/blender/review_rigellian_construction.py": "97fd44c633719b7c6af6d82ea67ff85677909bcf95480605944cfe8f10fb0f49",
+            "tools/blender/rigellian_construction_parts.py": "e74efe8e46618aa8cb0beecc11411b070741023d2162da41f4ddc9e9ce0ca976",
+            "tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "tools/blender/verify_rigellian_construction.py": "ccdd8288f3ed97b6832b371c85ab112afbe9c93cfa94068ea79c808c878170e8",
+            "tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+          }
+        }
+      },
+      "gates": {
+        "native_and_glb_runtime": true
+      },
+      "evidence": {
+        "native_and_glb_runtime": [
+          "Milestone source/review commit is recorded in https://github.com/ender-dev-pl/ed-openfa-game/issues/979",
+          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/UV/contact checks and actual imported render passed",
+          "tools/blender/verify_rigellian_construction.py",
+          "tools/blender/review_rigellian_construction.py",
+          "docs/assets/reconstruction/buildings/rigellian/construction-unit/technical-review.json",
+          "docs/assets/reconstruction/buildings/rigellian/construction-unit/render-review.json"
+        ]
+      },
+      "scope_note": "Technical Blender gate only; artistic quality, states, calibrated attachments and game integration remain open."
+    },
+    {
+      "category": "ships",
+      "id": "openfa:assault-fighter",
+      "model": {
+        "blend": "docs/assets/reconstruction/ships/terran/assault-fighter/model.blend",
+        "sha256": "5fb2090ea98835f9ad2905df04c8a9417e0863e945e8dfe1ae5204224687adf4",
+        "runtime_evidence": {
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "verifier": "tools/blender/verify_fighter_armour_repair.py",
+          "render_reviewer": "tools/blender/review_fighter_armour_repair.py",
+          "imported_render": "docs/assets/reconstruction/ships/terran/assault-fighter/imported-glb-front-quarter.png",
+          "files": {
+            "docs/assets/reconstruction/evidence/fighter-armour-repair/applied.json": "a89d69ec0854c3eaffbb89d4d868514b842b0d976f3c3e709296330c0cfee475",
+            "docs/assets/reconstruction/evidence/fighter-armour-repair/proposal-belly-after.png": "f7a974dd6d979a796d43a106b2bc8fe948d1cd7fc2fa3ffb0158468a31495816",
+            "docs/assets/reconstruction/evidence/fighter-armour-repair/proposal-belly-before.png": "90899d888c5f678964b22bcabc410063aaacd3136c84fb5895dc1b921d0d9f76",
+            "docs/assets/reconstruction/evidence/fighter-armour-repair/proposal-front-quarter-after.png": "21f45fd96a4e392116e6bcf6314f2fdc317795aeadf39f9c93487667484d1919",
+            "docs/assets/reconstruction/evidence/fighter-armour-repair/proposal-front-quarter-before.png": "201bbed43094c32d2f3896f2f575e0e2ae5c78d78d0a92ced8f6160c7ebc9fce",
+            "docs/assets/reconstruction/evidence/fighter-armour-repair/proposal-side-after.png": "50b63ed9ab4104a0e40eee72d92e4cebe5887149988ea0218b2a378250b40fb9",
+            "docs/assets/reconstruction/evidence/fighter-armour-repair/proposal-side-before.png": "477aed15268fda654065532169b4fb5f3e5f72c031310636449db06cacc1db75",
+            "docs/assets/reconstruction/evidence/fighter-armour-repair/proposal-top-after.png": "8033f4ebbf729d175d27285f901ec7fd383867bd333d00b0caa0e9eb1f7249e2",
+            "docs/assets/reconstruction/evidence/fighter-armour-repair/proposal-top-before.png": "356afdeb6e4fe225dfb1d850b3e10f3294fedbaf701c6ac0aa227276d1ad1405",
+            "docs/assets/reconstruction/evidence/fighter-armour-repair/proposal.json": "0adabb13615314fb5dedb7657da92242605546961752be58d28528dd8ed91fb9",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/belly.png": "f7a974dd6d979a796d43a106b2bc8fe948d1cd7fc2fa3ffb0158468a31495816",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/00.png": "88fdbb0c0ac7f16a1b076eed1625b7fb936773bd5caaabdf151d69a547828d07",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/01.png": "041570702372b2962e0531816ff5d072b62b43f597ec99236e9eaab07de6935e",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/02.png": "de6352307800dbb3af4fd3dd51d1409d8c343263d187eb33c9f31cc642723721",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/03.png": "94a63e76f2cba95e103eaf44b3b3dea6d1ee313564019e04bdd4fe1eb095d026",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/04.png": "5b1e7188ad4e1da5de543a31d757432718a3b908816607ffc139f2cc240f569f",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/05.png": "c1de7ee5b907db7fb34d5dcff94abb1183d96c2f8568a4a6ee766bc2e8ed3fab",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/06.png": "1704c352994606254e0ade8db7efda4b2f188f808c323a52c17088d607d91c34",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/07.png": "8507920661642b864697e6c10e53a92eb82c40b87ae075f7747082a301bdaca0",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/08.png": "a3a027adcbb4fe47accc074058ed5dc85d6deb6be4520494c0bc4c1655d83646",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/09.png": "4af462afc3d5222c33f1bef74595da758b85700faaf546a2c572d397dd924ff1",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/10.png": "b8aa16af7ea1b380ce39e7edf1c7e5816c27f033be455ad159958cd1c37db8dc",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/11.png": "fa3938344d448ee9b459f33c38cbb37b448fe1fb4784d5b99b330d92520eb1d4",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/12.png": "b43682b45f79f12cf4aab43350d5d0360f1d1d60490b27c1c95ac5c4bdd503a1",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/13.png": "e1f927bbb8ebdb89e55946d96ce20fac5b0b83090c4801d06a99092f24cde4f7",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/14.png": "7dffe38ba7a3fb50b14212330f589ffd9dc4cc0289acc13b5e43e024788cfc2e",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/15.png": "decde4a27d707ca242b72c12575179ddf82b9cc1f9001aa0cde4fc21e0bd673a",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/16.png": "7520af907a7de5ae196e19bb4e8605ddd4c029c63ffe47a2a25266fdb70bd6a7",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/17.png": "ddad1b5f8fece3214ff87997661e9a5caee7e047141e8556d04d734fecde9dae",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/18.png": "59e0a49d1cf5a94bc66b17c0ca71691c2ded9e396a828ccc89dd6d93d0272c1a",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/19.png": "1602932162811d3bedacdf7c9d243eb880800241ec55ca5ad7c3dd969099df59",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/20.png": "5c1c3106c8d409324221184ae4a25fcac968a2ae52a2742c5dab5583546b042a",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/21.png": "6cc4c0c11c6baf073370888b879eb2934892823e5c3aed540a57e86ef3e02f6e",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/22.png": "7f739e920990a57ca04bfd40ee3873048525668e59dde44780ea62355593ec94",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/23.png": "6ff42f13cf74fc67085c0ae5732c6d9b69ce192fdee83c82a3636460516d1768",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/24.png": "4afb45fa5c1f26f7802fa622d9e6476593382576786eae5be476ec826dea1fc6",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/25.png": "34d34585249aac7f417f296c0c1e12f086620dfa3d86d5f22d68912005f14709",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/26.png": "219d1a10ddc297ac8799c45e0b5c35d9ccdf48a6412195d4c8f3e126d0050bc3",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/27.png": "9d406890886dc2c85f240da14052d22deb7acd5e9dab612318f0ba54a596138f",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/28.png": "133fcbb8ac138f5f4b3476963da5556bf6499b4ed6dad5ebb4e9a787bc52a0df",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/29.png": "e53313c34ba5dd42c1c1ee64742f758b30899c4eb31f7099ecb38e56030c7857",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/30.png": "1038a4844fe55675fa4a52d838daf3f0d8374811e9a14871c9dee35745c90f90",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions/31.png": "39f1f3934e949dc8d62907f7fa6a260f8c4162641bca6d3ecdac3aa3b6184fc5",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/directions.json": "e8e252362ceea2f45e7f010dfbb3fd49210ef6d375f4bb84e14b9ca1fd3bbcd6",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/front-quarter.png": "21f45fd96a4e392116e6bcf6314f2fdc317795aeadf39f9c93487667484d1919",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/gallery.png": "8d9039154fb0054b48161626ec43a3a5d32d62212999d0edd60ccb0cd70f30a9",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/imported-glb-belly.png": "439a62c6439e79315aef0bca3c8673e57c5813bd177e751bebd48ae9c31f53b4",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/imported-glb-front-quarter.png": "dda59acb7ed8645898046816ee9eb5b425bb21585b78a58aa54be71d0eb64a8c",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/imported-glb-rear-quarter.png": "3df5bb9dd77451d65556e29fe8e6914af7b62643b8e01cd3d537652f5c0ab75c",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/imported-glb-rear.png": "317a8a3b9d0b731c46199c1b7f7a89e8d7b125015a4be3f141a3d3fd8e2f1071",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/imported-glb-side.png": "ede68a87dac0956415b0544202a542d95f13237e74e79f0cb6c7037f3ea5df2b",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/imported-glb-top.png": "64962fc363477247078477b6e1f698c387723bf2b58088c838570b74c8771481",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/model.blend": "5fb2090ea98835f9ad2905df04c8a9417e0863e945e8dfe1ae5204224687adf4",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/model.glb": "953befdb5b40b6b1741d64f7ae3899df34989e73554561124fbeac54d667b2cd",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/model.json": "7cd1519ea45ea2998c39336c574d2bd53749c139348a1031b92a43ba1e4bfc6d",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/rear-quarter.png": "17e06021bf3ce13501fb87026a770bd23cf30682c848a5c0da185e353d499362",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/rear.png": "92c31dc234a1bb1b41557ce84801a221024665bca1835813b2a10c497ffaf1e8",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/render-review.json": "fc589a37a7f9a66e5910f2b136dc99c9d13e62b2da31271b774daf0917903b1c",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/side.png": "50b63ed9ab4104a0e40eee72d92e4cebe5887149988ea0218b2a378250b40fb9",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/technical-review.json": "99e177ead948af9346ed4ba5f6a34e6b0a103030a1feef84c505e4254fafc8e8",
+            "docs/assets/reconstruction/ships/terran/assault-fighter/top.png": "8033f4ebbf729d175d27285f901ec7fd383867bd333d00b0caa0e9eb1f7249e2",
+            "tools/blender/apply_fighter_armour_repair.py": "760b2a5fa846ae90ac886a152b4817a4613d473ec4afcebf4e98a1e436f4f29c",
+            "tools/blender/audit_detail_uv_proposal.py": "f509b0ba3a5b612d0e7fd19849adfd9e5a3331434614968f9317193282441f42",
+            "tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+            "tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+            "tools/blender/probe_fighter_armour_tessellation.py": "3222898c1f58d5bbef867a3468fb9ef71a0ade6c6f26a97e2205849bd5b7c5db",
+            "tools/blender/render_assault_fighter_directions.py": "650663de8422c47db756818329137b007e8e4db72e2558c4e742e3eed2c6e54e",
+            "tools/blender/review_assault_fighter.py": "5f4dfa73de0fbeb1252c20f420b47499218a3b93453dc63b0dbc9d9448caf057",
+            "tools/blender/review_fighter_armour_repair.py": "cfdb4a0e7439e12439cd851680ae57c388cb2ab369ac67f65ee53ae24ad58236",
+            "tools/blender/test_fighter_plate_topology.py": "275929d642967ff23fb0a2349bf17f6e5e40bedf3618a031cd7a10038349a3f5",
+            "tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "tools/blender/verify_fighter_armour_repair.py": "271bb87ae6667106af684792b0bfcfccba0bc7f83ddbbec5155dca4504e268af"
+          },
+          "text_hash_policy": "lf-for-json-and-python"
+        }
+      },
+      "gates": {
+        "native_and_glb_runtime": true
+      },
+      "evidence": {
+        "native_and_glb_runtime": [
+          "Issue #1108: actual native reopen and GLB import; all original structural checks plus positive panel triangle volumes, closed welded surfaces and no detected nonadjacent panel self-intersections.",
+          "Revision 4 preserves every original panel vertex, the other 138 mesh snapshots and the original bounds.",
+          "Forty-four actual render files verified for alpha/framing; six matched native/import views have identical alpha and silhouette; before/after binary silhouettes match at four views.",
+          "Repository changed-code quality gate passed against 44e3fd4f3; final artistic, heading, attachment and gameplay calibration remain open."
+        ]
+      },
+      "scope_note": "Technical Blender/native/import gate only. No final artistic, source-fidelity, full state, attachment or game-client integration acceptance."
+    }
+  ]
+}

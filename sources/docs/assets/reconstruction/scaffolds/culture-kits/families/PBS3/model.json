@@ -1,0 +1,352 @@
+{
+  "issue": 188,
+  "family": "PBS3",
+  "culture": "terran",
+  "footprint": 3,
+  "capacity": 4,
+  "pitch": 1.2068483046286371,
+  "pitch_status": "Provisional source-repeat projection; not calibrated game-world height",
+  "pitch_derivation": "4*4/62*(3*.9*sqrt(2))/sqrt(2/3)",
+  "required_max_stage": 9,
+  "required_max_tiers": 3,
+  "style": {
+    "main": [
+      0.22,
+      0.28,
+      0.32
+    ],
+    "trim": [
+      0.58,
+      0.36,
+      0.055
+    ],
+    "kind": "braced steel access gantry",
+    "technique": "Bolted trusses and removable service decks"
+  },
+  "cdb_evidence": {
+    "culture": "terran",
+    "reason": "No Terran Architecture heading exists in this located CDB; use actual object references rather than inventing a matching cultural article."
+  },
+  "authored_interpretation": "OpenFA3D removable perimeter kit; mechanisms, joints, hidden structure and materials are authored interpretations, not recovered CDB technology",
+  "source_reference": "PBS3",
+  "reference_descriptor_sha256": [
+    "bb429dc1f9406016a04955ceb4effd0ab771df13c47da3e7fca48df3aae489f6",
+    "581535f106fd8bbea7d41e6699f8552287f81cecbe0f2255aaffe7224d5e7ced",
+    "12b2bd29d779051ca748c989dc89da5e73118efc400b71c3931f5120294655c5",
+    "ef0feca4f9a7faacc961e4cbfa42a3dac9dcb2daf5d6d833de2e21047c39c2a3",
+    "db6641f5838e67c88ad6edf836ad4418f6ffba1cb18981b5e5577f758ab5db3c"
+  ],
+  "clear_volume": {
+    "half_extent_xy": 1.25,
+    "temporary_crown_removed_on_reveal": true,
+    "interior_shoring": false
+  },
+  "phases": [
+    {
+      "id": "erection",
+      "building_visible": false
+    },
+    {
+      "id": "reveal",
+      "building_visible": true
+    },
+    {
+      "id": "dismantling",
+      "building_visible": true
+    },
+    {
+      "id": "complete",
+      "building_visible": true,
+      "scaffold_visible": false
+    }
+  ],
+  "sequence_provenance": "User requirement: full height, insert building, reverse dismantling revealing from top; not a newly recovered legacy timing rule",
+  "definitions": [
+    {
+      "id": "terran:seismic-penetrator",
+      "name": "Seismic Penetrator",
+      "ceiling": 5,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "dismantling_stages": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:asteroid-engine",
+      "name": "Asteroid Engine",
+      "ceiling": 6,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dismantling_stages": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:powerplant",
+      "name": "Powerplant",
+      "ceiling": 5,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "dismantling_stages": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:command-centre",
+      "name": "Command Centre",
+      "ceiling": 9,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dismantling_stages": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:ship-yard",
+      "name": "Ship Yard",
+      "ceiling": 3,
+      "erection_stages": [
+        1,
+        2,
+        3
+      ],
+      "dismantling_stages": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:medical-centre",
+      "name": "Medical Centre",
+      "ceiling": 4,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "dismantling_stages": [
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:pleasure-dome",
+      "name": "Pleasure Dome",
+      "ceiling": 4,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "dismantling_stages": [
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:hydroponics-plant",
+      "name": "Hydroponics Plant",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "stage": 1,
+      "frames": [
+        1
+      ],
+      "mesh_objects": 132,
+      "unique_meshes": 10,
+      "blend_sha256": "8fea03b7cb482f5ca86897f13a98feeaeb33e691f2bcd966b5bbfb5d92e1d6f5",
+      "glb_sha256": "f5e3720ed16ee544f44c2582e5c0fa7fed8da5f6632019f12bbc4c5536180077",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 2,
+      "frames": [
+        2
+      ],
+      "mesh_objects": 228,
+      "unique_meshes": 10,
+      "blend_sha256": "99303e47614df3c716a2f7bbd2863d22522baf19d2d58adb4a6eb84eeac88f38",
+      "glb_sha256": "ecd1d13d71225d5603903fb04d6a90d84444ac9650728fa110efd695de15c1cf",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 3,
+      "frames": [
+        3
+      ],
+      "mesh_objects": 324,
+      "unique_meshes": 10,
+      "blend_sha256": "851c0a0bae74c7b6d06e06a5f98228135d2e4739865f41b23bfbdaef77df01e8",
+      "glb_sha256": "6c18c74144d799ef603a4bea7e6e110388a15c68f17b70b14b1f0d9dff35521b",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 4,
+      "frames": [
+        4
+      ],
+      "mesh_objects": 420,
+      "unique_meshes": 12,
+      "blend_sha256": "2b3e7b4e20f0be9aa53e5fc7bb157e8cbad1a29fa8f572b4d47b9e74bd4cb3a5",
+      "glb_sha256": "2f6535d2bafde88ddbdac97ab37e0b9cf2f5552579dec2fa5e57e5e5caaa1a3c",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 5,
+      "frames": [
+        4,
+        1
+      ],
+      "mesh_objects": 564,
+      "unique_meshes": 14,
+      "blend_sha256": "ff793fb589c918d73d1c70a2defa503cc27fb617d0402b45c814cf0cfd3dac4e",
+      "glb_sha256": "fa17dfce6efcc42853d03c47c4a2361ca1206881b81180d9441fcb19b920c57f",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 6,
+      "frames": [
+        4,
+        2
+      ],
+      "mesh_objects": 660,
+      "unique_meshes": 14,
+      "blend_sha256": "d7f1846701d7b04dfbe65629ce22dcc94fb516d7d065b18bae2e4ed724b07fbb",
+      "glb_sha256": "72eba9b91a9723665313ee5c8bce088a62daaac5650dfd8055be2ed63dc8dd05",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 7,
+      "frames": [
+        4,
+        3
+      ],
+      "mesh_objects": 756,
+      "unique_meshes": 14,
+      "blend_sha256": "784a79a08f477a71026463d13fdfcb3565b295862f4c01373dd648a2d05d8e84",
+      "glb_sha256": "3d30da0ebd8774dcd7b22f6e8326e78548f9a439a5c0d35ef1d5da4694b11793",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 8,
+      "frames": [
+        4,
+        4
+      ],
+      "mesh_objects": 852,
+      "unique_meshes": 13,
+      "blend_sha256": "6c67eb88865e1158c89160348eb477acdc44c4e97c68a59b06a83036faeb9134",
+      "glb_sha256": "86c421aac06a568e37bc96b05fc2de3a77db45fad21532d44da734cb13b19b09",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 9,
+      "frames": [
+        4,
+        4,
+        1
+      ],
+      "mesh_objects": 996,
+      "unique_meshes": 14,
+      "blend_sha256": "c89ba4541089d51ac7abb09a423fb6806408165284b6a87e31b65683549acb17",
+      "glb_sha256": "befbeccbef85f7bb80c916ef5f638db619a1c99b26cd193d99338088bf7cbff8",
+      "rear_view": true,
+      "hide_on_reveal": []
+    }
+  ],
+  "inputs": {
+    "docs/reconstruction/models/scaffold-stage-limits.json": "5a0fcc956670550a11dff3ea7e0258de745258397eac58f2b0739074746bd7d3",
+    "docs/reconstruction/models/shared-construction-references.json": "be5bbc948f86b0548bda10b6f63dba4e3b131a5175cdfa35f1e146890581d7a6",
+    "docs/reconstruction/models/cultural-architecture-index.json": "3ae667c89e1f2dc54fb27be717b75eb50e1ea14800a1ef02a1609adb7d78765e",
+    "docs/assets/reconstruction/scaffolds/culture-kits/authored-wear.json": "f1175ab496acaf5bec413ba92f1c3fec291ead980cba27816064b2c809521f52",
+    "tools/blender/build_culture_scaffolds.py": "171628100bc5a27d57ef4511888904e8e418b439553b4e510db28af8978249f5",
+    "tools/blender/culture_scaffold_parts.py": "f4bd5d31a159355277693218ff12f7514779aee634a2d9a703a875d42f45b36d",
+    "tools/blender/culture_scaffold_contract.py": "c71d3453ec38e1326c1bede0541ccc111b3f28507aea9ed150e73b69cd3be5d9"
+  },
+  "preview_only": false,
+  "exact_legacy_fidelity_accepted": false,
+  "game_integration_verified": false
+}

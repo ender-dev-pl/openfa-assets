@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "asset_license": "LicenseRef-OpenFA-Assets-1.0",
+  "asset_terms": [
+    "LICENSE.md",
+    "LICENSE.pl.md"
+  ],
+  "mit_terms": "LICENSES/MIT.txt",
+  "precedence": "First matching rule; exact exceptions and reviewed tool paths precede directory defaults.",
+  "rules": [
+    {
+      "id": "font-ofl",
+      "paths": [
+        "sources/ui/legacy-menu-labels/font/NotoSerif-Bold.ttf",
+        "sources/ui/legacy-menu-labels/font/OFL.txt"
+      ],
+      "license_expression": "OFL-1.1",
+      "kind": "third-party",
+      "notice": "sources/ui/legacy-menu-labels/font/OFL.txt"
+    },
+    {
+      "id": "compatibility-data",
+      "paths": [
+        "sources/content/standard/catalogues/legacy-buildings.json",
+        "sources/content/standard/catalogues/legacy-gameplay.json",
+        "sources/content/standard/presentation/legacy-domain.json"
+      ],
+      "license_expression": "LicenseRef-OpenFA-Assets-1.0",
+      "kind": "compatibility-data",
+      "notice": "docs/licensing/REFERENCE-PROVENANCE.md: OpenFA contributions only; recovered legacy payloads retain their provenance."
+    },
+    {
+      "id": "confirmed-decoder-tools",
+      "paths": [
+        "sources/tools/extract_fragile_le.py",
+        "sources/tools/fragile256.py",
+        "sources/tools/fragile_vid.py"
+      ],
+      "license_expression": "MIT",
+      "kind": "general-tool",
+      "notice": "docs/licensing/REFERENCE-PROVENANCE.md; LICENSES/MIT.txt",
+      "reviewed_general_source": true
+    },
+    {
+      "id": "license-notices",
+      "paths": [
+        "LICENSE.md",
+        "LICENSE.pl.md",
+        "LICENSES/MIT.txt"
+      ],
+      "license_expression": "LicenseRef-License-Notice",
+      "kind": "license-text",
+      "notice": "Verbatim redistribution with the corresponding licensed material is permitted."
+    },
+    {
+      "id": "reviewed-tools",
+      "paths": [
+        "tools/asset_workspace.py",
+        "tools/build_gallery.py",
+        "tools/build_public_pages.py",
+        "tools/publish_public_pages.py",
+        "tools/gallery_animation_assets.py",
+        "tools/publication_support.py",
+        "tools/verify_publication.py",
+        "tools/verify_project.py",
+        "tools/verify_gallery_videos.py",
+        "tools/test_asset_workspace.py",
+        "tools/test_publication.py",
+        "tools/test_public_pages.py",
+        "tools/test_gallery_animations.py",
+        "tools/test_gallery_filters.cjs",
+        "tools/test_catalogue_filters.cjs",
+        "tools/gallery_template.html",
+        "tools/Test-ProvideModels.ps1",
+        "tools/verify_licensing.py",
+        "tools/test_licensing.py"
+      ],
+      "license_expression": "MIT",
+      "kind": "general-tool",
+      "notice": "LICENSES/MIT.txt"
+    },
+    {
+      "id": "tooling-package",
+      "prefixes": [
+        "tooling/"
+      ],
+      "license_expression": "MIT",
+      "kind": "general-tool",
+      "notice": "LICENSES/MIT.txt",
+      "suffixes": [
+        ".py",
+        ".md",
+        ".txt"
+      ]
+    },
+    {
+      "id": "workflow-code",
+      "prefixes": [
+        ".github/"
+      ],
+      "license_expression": "MIT",
+      "kind": "general-tool",
+      "notice": "LICENSES/MIT.txt",
+      "suffixes": [
+        ".yml",
+        ".yaml",
+        ".ps1",
+        ".md"
+      ]
+    },
+    {
+      "id": "policy-documentation",
+      "prefixes": [
+        "docs/licensing/"
+      ],
+      "paths": [
+        "project/licensing.json",
+        "README.md",
+        "AGENTS.md",
+        "CONTRIBUTING.md",
+        ".gitignore",
+        ".gitattributes",
+        "requirements.txt",
+        "requirements-evidence.txt",
+        "requirements-publication.txt"
+      ],
+      "license_expression": "MIT",
+      "kind": "documentation-and-config",
+      "notice": "LICENSES/MIT.txt"
+    },
+    {
+      "id": "asset-recipes",
+      "prefixes": [
+        "sources/",
+        "archive/",
+        "tools/"
+      ],
+      "suffixes": [
+        ".py",
+        ".ps1",
+        ".cjs",
+        ".js",
+        ".java",
+        ".cs",
+        ".sh"
+      ],
+      "license_expression": "LicenseRef-OpenFA-Assets-1.0",
+      "kind": "asset-specific-source",
+      "notice": "LICENSE.md"
+    },
+    {
+      "id": "asset-sources",
+      "prefixes": [
+        "sources/",
+        "archive/"
+      ],
+      "license_expression": "LicenseRef-OpenFA-Assets-1.0",
+      "kind": "asset-source-or-data",
+      "notice": "LICENSE.md"
+    },
+    {
+      "id": "gallery-pages",
+      "prefixes": [
+        "gallery/"
+      ],
+      "suffixes": [
+        ".html"
+      ],
+      "license_expression": "MIT AND LicenseRef-OpenFA-Assets-1.0",
+      "kind": "composite",
+      "notice": "Presentation code is MIT; covered assets and asset-specific data retain the asset license."
+    },
+    {
+      "id": "asset-tool-resources",
+      "prefixes": [
+        "tools/"
+      ],
+      "license_expression": "LicenseRef-OpenFA-Assets-1.0",
+      "kind": "asset-specific-source",
+      "notice": "LICENSE.md"
+    },
+    {
+      "id": "asset-deliverables-and-evidence",
+      "prefixes": [
+        "gallery/",
+        "project/",
+        "migration/",
+        "docs/"
+      ],
+      "license_expression": "LicenseRef-OpenFA-Assets-1.0",
+      "kind": "asset-or-evidence",
+      "notice": "LICENSE.md"
+    }
+  ]
+}

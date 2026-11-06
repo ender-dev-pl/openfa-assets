@@ -1,0 +1,43 @@
+{
+  "issue": 185,
+  "key": "RI11",
+  "id": "openfa:building/legacy/050",
+  "name": "Probe Launch",
+  "study": "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/model.blend",
+  "blend_sha256": "8291b4565b5df7b88f3d9578568ba5f263578acc4ed5b3da330fa4f27956d3c7",
+  "glb_sha256": "b6ec8d3cd8b68283e2f64df43522712db609a00dc0c81ea3f459db8cf0183063",
+  "verifier": "verify_rigellian_probe_launch.py",
+  "verifier_sha256": "74e73fc10c1f02884d8dbdcc1acdb5907239b89b5b329010254264f9ac79883f",
+  "runner_sha256": "a7ab7fa84212289ed53689e113b1dffabb0bb7977aae9f031c282187ef1a7e9b",
+  "original_assertions_unchanged": true,
+  "canonical_inputs_unchanged": true,
+  "canonical_inputs": {
+    "sources/materials/buildings/rigellian/probe-launch/authored-cap-colour.png": "59e83aaa87b81c7042531a59667f4c07aafdadb25ed2e64a51a3799c5df70063",
+    "sources/materials/buildings/rigellian/probe-launch/authored-cap-roughness.png": "477517e4e8c8a594b4f838cb87655165d22cb20eb55ff715d09fa55edefa2af6",
+    "sources/materials/buildings/rigellian/probe-launch/authored-shell-colour.png": "5ba6a88e67976a6e4f49018d0392c396103d96b6ac7657f1cb98bea946b165ce",
+    "sources/materials/buildings/rigellian/probe-launch/authored-shell-roughness.png": "1a56936f07e27ef525cbdf16a572cc230f808f5d3f11132d93ac6c285226eda6",
+    "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/authored-wear.json": "408a78041133c233e5dd77c59bd4c4fd2d7f3ebd55d4ed24b5703851f5f96b40",
+    "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/lighting-study/study.json": "19bf08e9a6c26c17b7c195b56785c3dc9047984d469ec89361da69f4239738f4",
+    "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/model.blend": "8291b4565b5df7b88f3d9578568ba5f263578acc4ed5b3da330fa4f27956d3c7",
+    "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/model.glb": "b6ec8d3cd8b68283e2f64df43522712db609a00dc0c81ea3f459db8cf0183063",
+    "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/model.json": "63af368125dd0744f8d74173d4e7f3adbf165756eeaf7a8100ff96723448b235",
+    "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/render-review.json": "4cd94a71561aa6b8aa17ba995f01e3920758084a2005527455c6815b9720be6e",
+    "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/technical-review.json": "0c1c7dd195604939be9627f5581e190dc899ffedccd45a20397d4315deb91771"
+  },
+  "actual_runtime_report_sha256": "0c1c7dd195604939be9627f5581e190dc899ffedccd45a20397d4315deb91771",
+  "native_overview_sha256": "3747399cb960bd4110ae047d0cd6a56072a3c8100365b0f445a70914c1015a9a",
+  "imported_overview_sha256": "739753ba3a08bf99961fa5d2e8e149b0e8141294a93607c92e34f2fccbdcb502",
+  "working_copy": "artifacts/issue-185/retention-runtime/ri11/working",
+  "blender": "4.5.15 LTS",
+  "passed": true,
+  "visual_decision": "retain-existing-study",
+  "decision_reason": "Retain the open upper port, internal flat guides, flared collar and front fitting. The left dark sprite patch remains ambiguous shading; adding a second hole is unsupported.",
+  "visual_acceptance": "Review decision only; final artistic acceptance and gameplay calibration remain separate",
+  "evidence_scope": "All 41 correctly paletted catalogue phases; source surface parts and current native/independent GLB views",
+  "published_renders": {
+    "imported-glb-front-quarter.png": "739753ba3a08bf99961fa5d2e8e149b0e8141294a93607c92e34f2fccbdcb502",
+    "imported-glb-port-detail.png": "772088befcfec6ef619595bf22cbe41e18f419e000def636fd3cd74622a1f000",
+    "native-current-front-quarter.png": "3747399cb960bd4110ae047d0cd6a56072a3c8100365b0f445a70914c1015a9a"
+  },
+  "actual_runtime_report": "actual-runtime-report.json"
+}

@@ -1,0 +1,934 @@
+{
+  "issue": 188,
+  "family": "PBS2",
+  "culture": "terran",
+  "footprint": 2,
+  "capacity": 8,
+  "pitch": 2.267411966271985,
+  "pitch_status": "Provisional source-repeat projection; not calibrated game-world height",
+  "pitch_derivation": "8*4/44*(2*.9*sqrt(2))/sqrt(2/3)",
+  "required_max_stage": 14,
+  "required_max_tiers": 2,
+  "style": {
+    "main": [
+      0.22,
+      0.28,
+      0.32
+    ],
+    "trim": [
+      0.58,
+      0.36,
+      0.055
+    ],
+    "kind": "braced steel access gantry",
+    "technique": "Bolted trusses and removable service decks"
+  },
+  "cdb_evidence": {
+    "culture": "terran",
+    "reason": "No Terran Architecture heading exists in this located CDB; use actual object references rather than inventing a matching cultural article."
+  },
+  "authored_interpretation": "OpenFA3D removable perimeter kit; mechanisms, joints, hidden structure and materials are authored interpretations, not recovered CDB technology",
+  "source_reference": "PBS2",
+  "reference_descriptor_sha256": [
+    "89ea65f269d1b7673147017aa44b14846873925b5cd91a546cd6c79126b1876d",
+    "e104d47bb88db35941bea8495787f4be3eda4dd832e1c4de403ca8e474bf37ca",
+    "804fb2c153cb0b08745751febacaf18efa9960b2bf2042b5663c8259b68ac545",
+    "60e3c546b463df756ac0e6835eaaeaad8cd1ddf3a79db395f648c0916dd95ead",
+    "44346167d38af0e3397a423387f7023a3da4531f11b4f88ef6973d39c6aa1af5",
+    "3a94b70196ab0f5e8d87a2a99ee33d9c2e3f7de97e313966be14eab18b7d1d3b",
+    "e90dd42c2701536b2f49fbfb1d9ee9fe8d7fe5676c754977ddfa1cad81c27bd6",
+    "ec74be1e153e06c4563fe99fb0810fe3dd7552c253dc53f4b84fdaf078aada84",
+    "dae5f6161b6da83dbdfddab932d9434feb7975bfb5fac000502b1eefd8cfcb57"
+  ],
+  "clear_volume": {
+    "half_extent_xy": 0.8,
+    "temporary_crown_removed_on_reveal": true,
+    "interior_shoring": false
+  },
+  "phases": [
+    {
+      "id": "erection",
+      "building_visible": false
+    },
+    {
+      "id": "reveal",
+      "building_visible": true
+    },
+    {
+      "id": "dismantling",
+      "building_visible": true
+    },
+    {
+      "id": "complete",
+      "building_visible": true,
+      "scaffold_visible": false
+    }
+  ],
+  "sequence_provenance": "User requirement: full height, insert building, reverse dismantling revealing from top; not a newly recovered legacy timing rule",
+  "definitions": [
+    {
+      "id": "terran:living-quarters",
+      "name": "Living Quarters",
+      "ceiling": 5,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "dismantling_stages": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:power-store",
+      "name": "Power Store",
+      "ceiling": 3,
+      "erection_stages": [
+        1,
+        2,
+        3
+      ],
+      "dismantling_stages": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:storage-facility",
+      "name": "Storage Facility",
+      "ceiling": 10,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "dismantling_stages": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:anti-missile-pod",
+      "name": "Anti-Missile Pod",
+      "ceiling": 5,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "dismantling_stages": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:radiation-filter",
+      "name": "Radiation Filter",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:solar-generator",
+      "name": "Solar Generator",
+      "ceiling": 10,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "dismantling_stages": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:mine",
+      "name": "Mine",
+      "ceiling": 6,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dismantling_stages": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:satellite-silo",
+      "name": "Satellite Silo",
+      "ceiling": 3,
+      "erection_stages": [
+        1,
+        2,
+        3
+      ],
+      "dismantling_stages": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:screen-generator",
+      "name": "Screen Generator",
+      "ceiling": 6,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dismantling_stages": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:ore-teleporter",
+      "name": "Ore Teleporter",
+      "ceiling": 9,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dismantling_stages": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:gravity-nullifier",
+      "name": "Gravity Nullifier",
+      "ceiling": 6,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dismantling_stages": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:deep-bore-mine",
+      "name": "Deep Bore Mine",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:missile-silo",
+      "name": "Missile Silo",
+      "ceiling": 2,
+      "erection_stages": [
+        1,
+        2
+      ],
+      "dismantling_stages": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:repair-facility",
+      "name": "Repair Facility",
+      "ceiling": 9,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dismantling_stages": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:plasma-turret",
+      "name": "Plasma Turret",
+      "ceiling": 6,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dismantling_stages": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:photon-turret",
+      "name": "Photon Turret",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:air-processor",
+      "name": "Air Processor",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:landing-pad",
+      "name": "Landing Pad",
+      "ceiling": 1,
+      "erection_stages": [
+        1
+      ],
+      "dismantling_stages": [
+        1
+      ]
+    },
+    {
+      "id": "terran:laser-turret",
+      "name": "Laser Turret",
+      "ceiling": 3,
+      "erection_stages": [
+        1,
+        2,
+        3
+      ],
+      "dismantling_stages": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:solar-matrix",
+      "name": "Solar Matrix",
+      "ceiling": 14,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "dismantling_stages": [
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:resiblock",
+      "name": "Resiblock",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:storage-tower",
+      "name": "Storage Tower",
+      "ceiling": 12,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "dismantling_stages": [
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:protected-solar-matrix",
+      "name": "P. Solar Matrix",
+      "ceiling": 14,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "dismantling_stages": [
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:refuelling-depot",
+      "name": "Refuelling Depot",
+      "ceiling": 13,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "dismantling_stages": [
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:protected-storage-tower",
+      "name": "P. Storage Tower",
+      "ceiling": 12,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "dismantling_stages": [
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:environment-control",
+      "name": "Environment Control",
+      "ceiling": 9,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dismantling_stages": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:hydration-plant",
+      "name": "Hydration Plant",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "terran:security-centre",
+      "name": "Security Centre",
+      "ceiling": 9,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dismantling_stages": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "stage": 1,
+      "frames": [
+        1
+      ],
+      "mesh_objects": 92,
+      "unique_meshes": 7,
+      "blend_sha256": "73ba5212e7a31b92fff06bd44c5c693c8c432197ef693f6da4f11cf3a7205206",
+      "glb_sha256": "1b144df64fe2a93d140b9a92e3c67e73ba1f2d81dbaf0dac5dc692e60124821d",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 2,
+      "frames": [
+        2
+      ],
+      "mesh_objects": 156,
+      "unique_meshes": 7,
+      "blend_sha256": "67c457e818386834bd5b3cc68a1fc0200ef90110fa808cfe047d016afd1f39c2",
+      "glb_sha256": "aa827efb03401baa1f2fadf0c3256d6fc17fcdce3a33833f813e30df360c74ed",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 3,
+      "frames": [
+        3
+      ],
+      "mesh_objects": 220,
+      "unique_meshes": 8,
+      "blend_sha256": "0b27b633256389a6ce68487d3d4504c4dbc6b18b8a68bf136ed05fa64c450393",
+      "glb_sha256": "96c416e2a4a02b92eb9907f6dc72f87a9af60d5b4b94d30ebf497604dfa61804",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 4,
+      "frames": [
+        4
+      ],
+      "mesh_objects": 284,
+      "unique_meshes": 8,
+      "blend_sha256": "77ad6b43c02613e6bd08c19277eea337376a711219cfd6d205e3e632563f2ba7",
+      "glb_sha256": "8574398565c59def59ac0024c60238763abaa8081931ff19c6be88c2525d5b85",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 5,
+      "frames": [
+        5
+      ],
+      "mesh_objects": 348,
+      "unique_meshes": 9,
+      "blend_sha256": "da3b200f6498c2c6ee4b6450b718b0ae38af2aeb17df03ef3f5a203e8daf8ba7",
+      "glb_sha256": "5471acb190b057f6b2a26220155474d91513815df8f2b1eeda6a30e653dbdb9d",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 6,
+      "frames": [
+        6
+      ],
+      "mesh_objects": 412,
+      "unique_meshes": 9,
+      "blend_sha256": "b3a7bd50b00c366bc0f4a602a75566acf333ceab813d2e1a2c08eef1b807bbf7",
+      "glb_sha256": "d9cd7b37ccff8328a02770e5612780f1304be1d1cbaed18373cb335eaf915499",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 7,
+      "frames": [
+        7
+      ],
+      "mesh_objects": 476,
+      "unique_meshes": 9,
+      "blend_sha256": "0647b517e957c58e40544d009c79ac1397abdc6aed38358366f10240717a4c38",
+      "glb_sha256": "599440e10e7aeccf59f57128ea728775e234e0c0bffd3e9ff8dbb1bbfe0db825",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 8,
+      "frames": [
+        8
+      ],
+      "mesh_objects": 540,
+      "unique_meshes": 10,
+      "blend_sha256": "63a8632e8bd42e65a8b836e990f52fa19340fad9c8dc10280723f843b40154e7",
+      "glb_sha256": "b1295eba0040c96da762c4fca9e1363bac436e82e510ba2b03e430c4cddc5e3e",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 9,
+      "frames": [
+        8,
+        1
+      ],
+      "mesh_objects": 636,
+      "unique_meshes": 12,
+      "blend_sha256": "78cab133545d9acdae30cf91f4dccea49ee254279e522c7dae22b056b1a40ab3",
+      "glb_sha256": "2d6d0e3e681c4e000d6570c9003ccb8bd82d72e494045bdfc4d006e5d08bb974",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 10,
+      "frames": [
+        8,
+        2
+      ],
+      "mesh_objects": 700,
+      "unique_meshes": 12,
+      "blend_sha256": "d24746e07fa50aa14546f77a84b07c0c49b5176e0ae5d7736f4104013cd3e6c2",
+      "glb_sha256": "df6f9af6c860645fdf114a7b929154d778c6261570fb2dfea048b8e3f984a538",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 11,
+      "frames": [
+        8,
+        3
+      ],
+      "mesh_objects": 764,
+      "unique_meshes": 12,
+      "blend_sha256": "70860b7a2b5fcbe0676283aa7e80014165b752ab90dd3e0e559072da2eac1f63",
+      "glb_sha256": "1dcd5fca48751545692d6668daac88fd4b69528af540e2251ab8f72b49447911",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 12,
+      "frames": [
+        8,
+        4
+      ],
+      "mesh_objects": 828,
+      "unique_meshes": 12,
+      "blend_sha256": "df933e95e6eec758254272063b819f346bbd0ffd24b551bb608545625bb58e15",
+      "glb_sha256": "ac45ab9865fb2385dd075968f3b33dc4233e671c2f5d33ee32dbb21c96e664e8",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 13,
+      "frames": [
+        8,
+        5
+      ],
+      "mesh_objects": 892,
+      "unique_meshes": 12,
+      "blend_sha256": "8f59cd093d34d952c5421026897d7ca63d7419feb5249d94e1531d649b6e2ab1",
+      "glb_sha256": "39a19707b920cf344faa6b006094fc405418f48c0a4ff96d256d3477265fb450",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 14,
+      "frames": [
+        8,
+        6
+      ],
+      "mesh_objects": 956,
+      "unique_meshes": 12,
+      "blend_sha256": "d797a9c53a91777fbcb95124703d368b1edf051d872e0e8fa63f09c90ef16cd7",
+      "glb_sha256": "2fea4d3c4c009d633de37db3be28e2f650599ad34a9936e0ce8ce788c22afcd1",
+      "rear_view": true,
+      "hide_on_reveal": []
+    }
+  ],
+  "inputs": {
+    "docs/reconstruction/models/scaffold-stage-limits.json": "5a0fcc956670550a11dff3ea7e0258de745258397eac58f2b0739074746bd7d3",
+    "docs/reconstruction/models/shared-construction-references.json": "be5bbc948f86b0548bda10b6f63dba4e3b131a5175cdfa35f1e146890581d7a6",
+    "docs/reconstruction/models/cultural-architecture-index.json": "3ae667c89e1f2dc54fb27be717b75eb50e1ea14800a1ef02a1609adb7d78765e",
+    "docs/assets/reconstruction/scaffolds/culture-kits/authored-wear.json": "f1175ab496acaf5bec413ba92f1c3fec291ead980cba27816064b2c809521f52",
+    "tools/blender/build_culture_scaffolds.py": "171628100bc5a27d57ef4511888904e8e418b439553b4e510db28af8978249f5",
+    "tools/blender/culture_scaffold_parts.py": "f4bd5d31a159355277693218ff12f7514779aee634a2d9a703a875d42f45b36d",
+    "tools/blender/culture_scaffold_contract.py": "c71d3453ec38e1326c1bede0541ccc111b3f28507aea9ed150e73b69cd3be5d9"
+  },
+  "preview_only": false,
+  "exact_legacy_fidelity_accepted": false,
+  "game_integration_verified": false
+}
