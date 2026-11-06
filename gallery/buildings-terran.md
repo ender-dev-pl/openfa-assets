@@ -70,6 +70,14 @@
 
 [Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb03/animation-00.webm)
 
+**Additional iteration — shared-refined**
+
+![Anti-Missile Pod](../gallery/media/objects/terran/anti-missile-pod/refined/render.png)
+
+[Blend](../sources/objects/terran/anti-missile-pod/refined/model.blend) · [GLB](../sources/objects/terran/anti-missile-pod/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/anti-missile-pod/refined/animation-00.webm)
+
 ## Solar Panel
 
 `terran:solar-panel`
@@ -190,6 +198,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb10/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb10/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Screen Generator](../gallery/media/objects/terran/screen-generator/refined/render.png)
+
+[Blend](../sources/objects/terran/screen-generator/refined/model.blend) · [GLB](../sources/objects/terran/screen-generator/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/screen-generator/refined/animation-00.webm)
+
 ## Ore Teleporter
 
 `terran:ore-teleporter`
@@ -206,6 +222,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb11/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Ore Teleporter](../gallery/media/objects/terran/ore-teleporter/refined/render.png)
+
+[Blend](../sources/objects/terran/ore-teleporter/refined/model.blend) · [GLB](../sources/objects/terran/ore-teleporter/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/ore-teleporter/refined/animation-00.webm)
+
 ## Gravity Nullifier
 
 `terran:gravity-nullifier`
@@ -221,6 +245,14 @@
 ![Gravity Nullifier](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb12/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb12/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb12/model.glb)
+
+**Additional iteration — shared-refined**
+
+![Gravity Nullifier](../gallery/media/objects/terran/gravity-nullifier/refined/render.png)
+
+[Blend](../sources/objects/terran/gravity-nullifier/refined/model.blend) · [GLB](../sources/objects/terran/gravity-nullifier/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/gravity-nullifier/refined/animation-00.webm)
 
 ## Deep Bore Mine
 
@@ -272,6 +304,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb15/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Repair Facility](../gallery/media/objects/terran/repair-facility/refined/render.png)
+
+[Blend](../sources/objects/terran/repair-facility/refined/model.blend) · [GLB](../sources/objects/terran/repair-facility/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/repair-facility/refined/animation-00.webm)
+
 ## Sensor Array
 
 `terran:sensor-array`
@@ -308,6 +348,14 @@
 
 [Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb17/animation-00.webm)
 
+**Additional iteration — shared-refined**
+
+![Plasma Turret](../gallery/media/objects/terran/plasma-turret/refined/render.png)
+
+[Blend](../sources/objects/terran/plasma-turret/refined/model.blend) · [GLB](../sources/objects/terran/plasma-turret/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/plasma-turret/refined/animation-00.webm)
+
 ## Photon Turret
 
 `terran:photon-turret`
@@ -327,6 +375,14 @@
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb18/model.glb)
 
 [Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb18/animation-00.webm)
+
+**Additional iteration — shared-refined**
+
+![Photon Turret](../gallery/media/objects/terran/photon-turret/refined/render.png)
+
+[Blend](../sources/objects/terran/photon-turret/refined/model.blend) · [GLB](../sources/objects/terran/photon-turret/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/photon-turret/refined/animation-00.webm)
 
 ## Air Processor
 
@@ -388,6 +444,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/seismic-penetrator/pb21-curved-nose/model.blend) · [GLB](../sources/docs/assets/reconstruction/seismic-penetrator/pb21-curved-nose/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Seismic Penetrator](../gallery/media/objects/terran/seismic-penetrator/refined/render.png)
+
+[Blend](../sources/objects/terran/seismic-penetrator/refined/model.blend) · [GLB](../sources/objects/terran/seismic-penetrator/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/seismic-penetrator/refined/animation-00.webm)
+
 ## Asteroid Engine
 
 `terran:asteroid-engine`
@@ -404,6 +468,14 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb22/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb22/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Asteroid Engine](../gallery/media/objects/terran/asteroid-engines/refined/render.png)
+
+[Blend](../sources/objects/terran/asteroid-engines/refined/model.blend) · [GLB](../sources/objects/terran/asteroid-engines/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/asteroid-engines/refined/animation-00.webm)
+
 ## Powerplant
 
 `terran:powerplant`
@@ -419,6 +491,14 @@
 ![Powerplant](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb23/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb23/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb23/model.glb)
+
+**Additional iteration — shared-refined**
+
+![Powerplant](../gallery/media/objects/terran/powerplant/refined/render.png)
+
+[Blend](../sources/objects/terran/powerplant/refined/model.blend) · [GLB](../sources/objects/terran/powerplant/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/powerplant/refined/animation-00.webm)
 
 ## Command Centre
 
@@ -511,6 +591,18 @@
 ![Solar Matrix](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb28/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb28/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb28/model.glb)
+
+**Additional iteration — shared-refined**
+
+![Solar Matrix](../gallery/media/objects/terran/solar-matrix/refined/render.png)
+
+[Blend](../sources/objects/terran/solar-matrix/refined/model.blend) · [GLB](../sources/objects/terran/solar-matrix/refined/model.glb)
+
+[Play animation: CatalogueTurn](../gallery/media/objects/terran/solar-matrix/refined/animation-00.webm)
+
+[Play animation: PanelsClose](../gallery/media/objects/terran/solar-matrix/refined/animation-01.webm)
+
+[Play animation: PanelsOpen](../gallery/media/objects/terran/solar-matrix/refined/animation-02.webm)
 
 ## Resiblock
 

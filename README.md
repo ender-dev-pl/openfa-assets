@@ -10,6 +10,8 @@ The imported inventory covers **303 definitions**: 177 buildings, 41 ships/vehic
 
 The gallery uses existing renders only. It shows each registered iteration with its original stage label, editable source and available GLB. No model or refined variant was generated for this migration. First-source coverage does not mean final artistic acceptance, complete animation, calibrated attachments or game integration.
 
+[New main-menu labels](gallery/menu-labels.md) provide shade-only fields and separate EN/PL lettering aligned with the original menu reference.
+
 ## Quick start
 
 The [HUD and menu gallery](gallery/ui.html) contains editable interface geometry, button

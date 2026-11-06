@@ -1,0 +1,180 @@
+{
+  "id": "scitek:plasma-turret",
+  "legacy_index": 19,
+  "components": {
+    "chassis": [
+      "Pedestal foundation joint"
+    ],
+    "water-cooled-plasma-delivery": [
+      "Weapon barrel",
+      "Weapon dark bore",
+      "Barrel heat-sink collar",
+      "Barrel heat-sink collar.001",
+      "Barrel heat-sink collar.002",
+      "Barrel heat-sink collar.003",
+      "Muzzle locking ring",
+      "Research plasma generator housing",
+      "Research shallow golden plasma canopy",
+      "Research canopy rim seam"
+    ],
+    "tracking-and-ranging-sensors": [
+      "Rangefinder lens",
+      "Research second ranging lens",
+      "Research stereo sensor arm",
+      "Research stereo sensor armoured housing",
+      "Research stereo sensor arm.001",
+      "Research stereo sensor armoured housing.001"
+    ],
+    "armoured-power-base": [
+      "Azimuth race flange",
+      "Research armoured plasma power base",
+      "Research power base horizontal seam",
+      "Research power base horizontal seam.001",
+      "Research power base horizontal seam.002",
+      "Research armoured azimuth elevation motor"
+    ]
+  },
+  "phases": [
+    {
+      "component": "water-cooled-plasma-delivery",
+      "first_legacy_frame": 29,
+      "last_legacy_frame": 139,
+      "local_target": [
+        0,
+        0.14,
+        1.43
+      ],
+      "closeup_rotation_euler": [
+        0,
+        0,
+        3.141592653589793
+      ],
+      "ortho_scale": 1.85
+    },
+    {
+      "component": "tracking-and-ranging-sensors",
+      "first_legacy_frame": 170,
+      "last_legacy_frame": 280,
+      "local_target": [
+        -0.48,
+        0.4,
+        1.2
+      ],
+      "closeup_rotation_euler": [
+        0,
+        0,
+        3.141592653589793
+      ],
+      "ortho_scale": 0.55
+    },
+    {
+      "component": "armoured-power-base",
+      "first_legacy_frame": 311,
+      "last_legacy_frame": 421,
+      "local_target": [
+        0,
+        0,
+        0.55
+      ],
+      "closeup_rotation_euler": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 2.5
+    }
+  ],
+  "whole_information_local_target": [
+    0,
+    0,
+    0.9
+  ],
+  "whole_information_rotation_euler": [
+    0.12,
+    0,
+    0.25
+  ],
+  "whole_information_ortho_scale": 3.2,
+  "information_timeline_frames": 423,
+  "base_source_sha256": "ed9f99c84696aacde6dc3d566cef3c980acb6f1064533393c6dec214bf48c38b",
+  "preserved_source_meshes": [
+    "Pedestal foundation joint",
+    "Azimuth race flange",
+    "Weapon barrel",
+    "Weapon dark bore",
+    "Barrel heat-sink collar",
+    "Barrel heat-sink collar.001",
+    "Barrel heat-sink collar.002",
+    "Barrel heat-sink collar.003",
+    "Muzzle locking ring",
+    "Rangefinder lens"
+  ],
+  "new_presentation_meshes": [
+    "Research second ranging lens",
+    "Research armoured plasma power base",
+    "Research power base horizontal seam",
+    "Research power base horizontal seam.001",
+    "Research power base horizontal seam.002",
+    "Research armoured azimuth elevation motor",
+    "Research plasma generator housing",
+    "Research shallow golden plasma canopy",
+    "Research canopy rim seam",
+    "Research stereo sensor arm",
+    "Research stereo sensor armoured housing",
+    "Research stereo sensor arm.001",
+    "Research stereo sensor armoured housing.001"
+  ],
+  "limitations": [
+    "Ten selected PB17 meshes retain geometry/UV/material slots with research-only transform adaptations. Second ranging lens duplicates existing geometry. Shallow canopy, generator and copper base are authored interpretations."
+  ],
+  "object_id": "terran:plasma-turret",
+  "authoritative_shared": true,
+  "shared_root": "PlasmaResearchRoot",
+  "shared_root_scale": [
+    1,
+    1,
+    1.15
+  ],
+  "shared_rig": {
+    "root": "PlasmaResearchRoot",
+    "root_scale": [
+      1,
+      1,
+      1.15
+    ],
+    "gameplay_pose_frame": 1,
+    "moving_node": "PlasmaWeaponAzimuth",
+    "aim_axis": "localZ",
+    "body_turntable": false,
+    "animated_mesh_nodes": [
+      "Weapon barrel",
+      "Weapon dark bore",
+      "Barrel heat-sink collar",
+      "Barrel heat-sink collar.001",
+      "Barrel heat-sink collar.002",
+      "Barrel heat-sink collar.003",
+      "Muzzle locking ring",
+      "Rangefinder lens",
+      "Research second ranging lens",
+      "Research plasma generator housing",
+      "Research shallow golden plasma canopy",
+      "Research canopy rim seam",
+      "Research stereo sensor arm",
+      "Research stereo sensor armoured housing",
+      "Research stereo sensor arm.001",
+      "Research stereo sensor armoured housing.001"
+    ],
+    "fixed_mesh_nodes": [
+      "Pedestal foundation joint",
+      "Azimuth race flange",
+      "Research armoured plasma power base",
+      "Research power base horizontal seam",
+      "Research power base horizontal seam.001",
+      "Research power base horizontal seam.002",
+      "Research armoured azimuth elevation motor"
+    ],
+    "disable_automatic_preview_playback_in_gameplay": true,
+    "solid_animation_timeline": "sources/ui/scitek/plasma-turret/solid-animation-timeline.json",
+    "matrix_contract": "Absolute root-relative row-major4x4, column-vector/Z-up, excludes root scale; replace bind or current*inverse(bind) for bind-baked vertices; transpose/reverse multiplication for row-vector consumers."
+  }
+}

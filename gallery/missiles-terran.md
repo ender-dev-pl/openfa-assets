@@ -72,6 +72,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/missiles/terran/nuclear/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/terran/nuclear/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Nuclear Missile](../gallery/media/objects/terran/nuclear-missile/refined/render.png)
+
+[Blend](../sources/objects/terran/nuclear-missile/refined/model.blend) · [GLB](../sources/objects/terran/nuclear-missile/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/nuclear-missile/refined/animation-00.webm)
+
 ## Virus Missile
 
 `openfa:virus`
@@ -81,6 +89,14 @@
 ![Virus Missile](../gallery/media/docs/assets/reconstruction/missiles/terran/virus/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/missiles/terran/virus/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/terran/virus/model.glb)
+
+**Additional iteration — shared-refined**
+
+![Virus Missile](../gallery/media/objects/terran/virus-missile/refined/render.png)
+
+[Blend](../sources/objects/terran/virus-missile/refined/model.blend) · [GLB](../sources/objects/terran/virus-missile/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/virus-missile/refined/animation-00.webm)
 
 ## Anti-Virus Missile
 
@@ -92,6 +108,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/missiles/terran/anti-virus/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/terran/anti-virus/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Anti-Virus Missile](../gallery/media/objects/terran/anti-virus-missile/refined/render.png)
+
+[Blend](../sources/objects/terran/anti-virus-missile/refined/model.blend) · [GLB](../sources/objects/terran/anti-virus-missile/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/anti-virus-missile/refined/animation-00.webm)
+
 ## Mega Missile
 
 `openfa:mega`
@@ -102,6 +126,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/missiles/terran/mega/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/terran/mega/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Mega Missile](../gallery/media/objects/terran/mega-missile/refined/render.png)
+
+[Blend](../sources/objects/terran/mega-missile/refined/model.blend) · [GLB](../sources/objects/terran/mega-missile/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/mega-missile/refined/animation-00.webm)
+
 ## Stasis Missile
 
 `openfa:stasis`
@@ -111,6 +143,14 @@
 ![Stasis Missile](../gallery/media/docs/assets/reconstruction/missiles/terran/stasis/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/missiles/terran/stasis/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/terran/stasis/model.glb)
+
+**Additional iteration — shared-refined**
+
+![Stasis Missile](../gallery/media/objects/terran/stasis-missile/refined/render.png)
+
+[Blend](../sources/objects/terran/stasis-missile/refined/model.blend) · [GLB](../sources/objects/terran/stasis-missile/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/terran/stasis-missile/refined/animation-00.webm)
 
 ## Bug Hunter
 

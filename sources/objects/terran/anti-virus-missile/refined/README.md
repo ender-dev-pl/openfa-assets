@@ -1,0 +1,7 @@
+# Shared Anti-Virus Missile
+
+Authoritative openfa:anti-virus for projectile gameplay, equipment catalogue and research03. All19 existing Terran revision2 mesh/UV/material/local-transform signatures remain unchanged; physical GLB bytes are identical to the authored research solid. No wear retrofit or physical part changes. AntiVirusRotor keeps intentional transverse scale[0.83,0.83,1] exactly once for the shared silhouette, gameplay frame1 zero rotation; do not replace it with identity or apply scale twice. Nose+Z. Client/GPU and flight/mount/scale calibration remain pending.
+
+Corrected diagrams use29,992 actual evaluated solid edges instead of pre-modifier raw edges. The continuous casing is one physical mesh: upper-neck edges with both localZ>=4.3999 are assigned to the nose group, recorded by diagram_edge_sources. Runtime uses one shared coloured GLB plus sources/ui/scitek/anti-virus-missile/anti-virus-missile-information.glb and explicit timeline. Historical research solid and baked technical variants are authoring/gallery only.
+
+Rebuild the original research source, then run refine_shared_wires.py -- INITIAL_OUTPUT REFINED_OUTPUT before technical exports. verify_shared_geometry.py -- ASSET_ROOT PROOF_OUTPUT [REFINED_OUTPUT] checks19 source signatures, closed-positive meshes,61 imported poses, declared scale and real diagram edges. Commands and evidence in research README.

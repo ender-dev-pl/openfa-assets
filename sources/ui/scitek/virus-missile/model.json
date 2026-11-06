@@ -1,0 +1,164 @@
+{
+  "id": "scitek:virus-missile",
+  "object_id": "openfa:virus",
+  "legacy_index": 32,
+  "components": {
+    "chassis": [
+      "Virus two-row pressure casing",
+      "Virus family upper neck joint",
+      "Virus family violet skirt underlayer",
+      "Virus family scalloped olive skirt",
+      "Virus yellow nose collar",
+      "Virus family red nose cap",
+      "Virus family long antenna"
+    ],
+    "binary-agent-pods": [
+      "Virus bronze side form",
+      "Virus bronze side form.001",
+      "Virus bronze side form.002",
+      "Virus bronze side form.003",
+      "Virus bronze side form.004",
+      "Virus bronze side form.005",
+      "Virus bronze side form.006",
+      "Virus bronze side form.007"
+    ],
+    "atmospheric-resistance-sensors": [
+      "Atmospheric resistance sensor 1",
+      "Atmospheric resistance sensor 2",
+      "Atmospheric resistance sensor 3",
+      "Atmospheric resistance sensor 4"
+    ],
+    "main-thrusters": [
+      "Virus family hollow red nozzle",
+      "Virus family recessed nozzle throat",
+      "Virus family hollow red nozzle.001",
+      "Virus family recessed nozzle throat.001",
+      "Virus family hollow red nozzle.002",
+      "Virus family recessed nozzle throat.002",
+      "Virus family hollow red nozzle.003",
+      "Virus family recessed nozzle throat.003"
+    ]
+  },
+  "phases": [
+    {
+      "component": "binary-agent-pods",
+      "first_legacy_frame": 29,
+      "last_legacy_frame": 139,
+      "local_target": [
+        0,
+        0,
+        2.9
+      ],
+      "closeup_rotation_euler": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 3.6
+    },
+    {
+      "component": "atmospheric-resistance-sensors",
+      "first_legacy_frame": 170,
+      "last_legacy_frame": 280,
+      "local_target": [
+        0,
+        0,
+        0.92
+      ],
+      "closeup_rotation_euler": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 1.8
+    },
+    {
+      "component": "main-thrusters",
+      "first_legacy_frame": 311,
+      "last_legacy_frame": 421,
+      "local_target": [
+        0,
+        0,
+        0.28
+      ],
+      "closeup_rotation_euler": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 1.35
+    }
+  ],
+  "whole_information_local_target": [
+    0,
+    0,
+    3.2
+  ],
+  "whole_information_rotation_euler": [
+    0.04,
+    0,
+    0.2
+  ],
+  "whole_information_ortho_scale": 7.4,
+  "information_timeline_frames": 423,
+  "base_source_sha256": "00f6936fdc5d739c9d74c70f982cf33838ffc6dcf1ac39600ffb8170a81d9f37",
+  "preserved_source_meshes": [
+    "Virus two-row pressure casing",
+    "Virus family upper neck joint",
+    "Virus bronze side form",
+    "Virus bronze side form.001",
+    "Virus bronze side form.002",
+    "Virus bronze side form.003",
+    "Virus bronze side form.004",
+    "Virus bronze side form.005",
+    "Virus bronze side form.006",
+    "Virus bronze side form.007",
+    "Virus family violet skirt underlayer",
+    "Virus family scalloped olive skirt",
+    "Virus yellow nose collar",
+    "Virus family red nose cap",
+    "Virus family long antenna",
+    "Virus family hollow red nozzle",
+    "Virus family recessed nozzle throat",
+    "Virus family hollow red nozzle.001",
+    "Virus family recessed nozzle throat.001",
+    "Virus family hollow red nozzle.002",
+    "Virus family recessed nozzle throat.002",
+    "Virus family hollow red nozzle.003",
+    "Virus family recessed nozzle throat.003"
+  ],
+  "removed_source_meshes": [],
+  "new_presentation_meshes": [
+    "Atmospheric resistance sensor 1",
+    "Atmospheric resistance sensor 2",
+    "Atmospheric resistance sensor 3",
+    "Atmospheric resistance sensor 4"
+  ],
+  "source_transform_refinements": {},
+  "shared_root_scale": [
+    1,
+    1,
+    1
+  ],
+  "authoring_texture_inputs": {
+    "sensor-violet.png": "36134406b6ee446192fcb914f8e61c78356ccf02e09ae6018d0cf7e8a15a75db"
+  },
+  "wire_geometry_contract": "Every technical segment is an evaluated shared-solid edge.",
+  "limitations": [
+    "Existing revision2 geometry retained. Four pointed resistance sensors added from ST32 closeups; exact hidden placement and dimensions are inferred. Sensor visibility and skirt clearance require native/import visual review before publication."
+  ],
+  "tile_registration": {
+    "canvas": [
+      80,
+      160
+    ],
+    "legacy_drawn_box": [
+      25,
+      10,
+      55,
+      151
+    ],
+    "fit": "Contain; preserve proportions; actual paletted legacy frame0 occupied rectangle.",
+    "verification": "gallery/media/ui/scitek/virus-missile/tile-registration-verification.json"
+  }
+}

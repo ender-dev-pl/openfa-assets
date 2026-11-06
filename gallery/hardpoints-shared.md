@@ -92,6 +92,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/hardpoints/static-inducer/model.blend) · [GLB](../sources/docs/assets/reconstruction/hardpoints/static-inducer/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Static Inducer](../gallery/media/objects/shared/static-inducer/refined/render.png)
+
+[Blend](../sources/objects/shared/static-inducer/refined/model.blend) · [GLB](../sources/objects/shared/static-inducer/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/shared/static-inducer/refined/animation-00.webm)
+
 ## Warp Generator
 
 `openfa:warp-generator`
@@ -102,6 +110,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/hardpoints/warp-generator/model.blend) · [GLB](../sources/docs/assets/reconstruction/hardpoints/warp-generator/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Warp Generator](../gallery/media/objects/shared/warp-generator/refined/render.png)
+
+[Blend](../sources/objects/shared/warp-generator/refined/model.blend) · [GLB](../sources/objects/shared/warp-generator/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/shared/warp-generator/refined/animation-00.webm)
+
 ## Deflector
 
 `openfa:deflector`
@@ -111,6 +127,14 @@
 ![Deflector](../gallery/media/docs/assets/reconstruction/hardpoints/deflector/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/hardpoints/deflector/model.blend) · [GLB](../sources/docs/assets/reconstruction/hardpoints/deflector/model.glb)
+
+**Additional iteration — shared-refined**
+
+![Deflector](../gallery/media/objects/shared/deflector/refined/render.png)
+
+[Blend](../sources/objects/shared/deflector/refined/model.blend) · [GLB](../sources/objects/shared/deflector/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/shared/deflector/refined/animation-00.webm)
 
 ## Shield x10
 
@@ -152,6 +176,14 @@
 
 [Blend](../sources/docs/assets/reconstruction/hardpoints/shield-x40/model.blend) · [GLB](../sources/docs/assets/reconstruction/hardpoints/shield-x40/model.glb)
 
+**Additional iteration — shared-refined**
+
+![Shield x40](../gallery/media/objects/shared/shield-x40/refined/render.png)
+
+[Blend](../sources/objects/shared/shield-x40/refined/model.blend) · [GLB](../sources/objects/shared/shield-x40/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/shared/shield-x40/refined/animation-00.webm)
+
 ## Shield x50
 
 `openfa:shield-x50`
@@ -161,3 +193,11 @@
 ![Shield x50](../gallery/media/docs/assets/reconstruction/hardpoints/shield-x50/front-quarter.png)
 
 [Blend](../sources/docs/assets/reconstruction/hardpoints/shield-x50/model.blend) · [GLB](../sources/docs/assets/reconstruction/hardpoints/shield-x50/model.glb)
+
+**Additional iteration — shared-refined**
+
+![Shield x50](../gallery/media/objects/shared/shield-x50/refined/render.png)
+
+[Blend](../sources/objects/shared/shield-x50/refined/model.blend) · [GLB](../sources/objects/shared/shield-x50/refined/model.glb)
+
+[Play animation: Animation](../gallery/media/objects/shared/shield-x50/refined/animation-00.webm)

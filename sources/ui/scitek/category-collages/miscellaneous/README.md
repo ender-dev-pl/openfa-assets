@@ -1,0 +1,7 @@
+# Sci-Tek miscellaneous category (SCITEKC frame5)
+
+Actual subjects are Construction Droids (ST07, upper left) and Improved Sensors (ST12, lower right), identified from the actual paletted category and research reference sheets. Binding: openfa:presentation/profile/research-category/miscellaneous. This is a static category icon, separate from the individual research presentations.
+
+Original canvas80x64 and occupied box(5,3)..(71,58). Target subject boxes are Droids(5,3)..(43,41) and Sensors(43,23)..(71,58). The original source poses are frozen at frame1; per-subject uniform placement preserves silhouette proportions. Source geometry/UVs and three editable curves are retained; neutral material copies and monochrome compositor gain1.25 supply the category presentation. Existing research sources remain unchanged. The native assembly contains77meshes and3curves; the portable GLB has80mesh objects. Curve control points and bevel geometry are source-bound in provenance.
+
+Use category-native.png80x64 and category-4x.png320x256 RGBA for UI. The Blend/static GLB also provides the authored arrangement for the interactive catalogue. Raw studio renders can have1LSB view-transform channel rounding; final icons are explicitly exact grayscale. See ../README.md for build and native/import/raster verification commands; pass this layout.json and an external output directory. Original reference pixels remain private. This delivery binds category frame5 only; consult the current integration manifest for other category frames.

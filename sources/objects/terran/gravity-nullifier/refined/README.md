@@ -1,0 +1,7 @@
+# Shared Gravity Nullifier
+
+Authoritative terran:gravity-nullifier for building gameplay, construction catalogue and research10. Promotes the existing94-part research refinement: navy gravitic sphere, three open base sectors/supporting arms and four small cardinal sensors. All94 research geometry/UV/material/local-bind/parent signatures remain unchanged; colour GLB bytes and native colour pixels are identical. No physical edits or wear retrofit. The original PB12 orb geometry/UV/local transform is retained with its previously authored navy finish; exact hidden construction remains approximate.
+
+NullifierResearchRoot is unit identity atframe1. Disable the whole-device research turntable in gameplay. Preserve original child transforms; client/GPU placement and world-scale acceptance remain pending. Runtime packages one shared coloured model.glb plus the information GLB/timeline; historical research solids, baked technical variants and collage assemblies are authoring/gallery only.
+
+All11,580 selected diagram segments are actual evaluated physical edges, replacing analytic sphere/sensor curves. Sensor stroke radius remains0.0006, other groups0.004. Wear, signal dots and decorative lower-latitude seam segments are omitted from technical mode. All94 raw/evaluated geometries are manifold and positive-volume without welding. Scoped independent rays verify three actual open sectors and supporting arms; four sensors and all61 independent import poses are verified.

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "programme_issue": 946,
   "inventory_issue": 947,
-  "definition_count": 303,
+  "definition_count": 304,
   "counts_by_category_culture": {
     "buildings": {
       "terran": 40,
@@ -20,7 +20,8 @@
       "mikotaj": 5,
       "artemian": 6,
       "mauna": 6,
-      "achaean": 4
+      "achaean": 4,
+      "shared": 1
     },
     "hardpoints": {
       "shared": 16
@@ -655,6 +656,13 @@
           "present": true,
           "sha256": "35d1dca30489613d235c64cc9fbf40acfe124f655718eee81a4677108a438a01",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/anti-missile-pod/refined/model.blend",
+          "present": true,
+          "sha256": "c448cca72b040fcdf9ee0e8428844bf5d77507df059d460d29d9dd709e8c4bbd",
+          "final_visual_acceptance": "Native/import rig and diagrams verified; client aiming/scale pending"
         }
       ],
       "acceptance": {
@@ -696,6 +704,30 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 3
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/anti-missile-pod/refined/model.blend",
+        "glb": "sources/objects/terran/anti-missile-pod/refined/model.glb",
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; preserve articulated rig and disable automatic preview playback.",
+        "root": "PodResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "moving_node": "PodTrackingHead",
+        "fixed_node": "PodFixedBase",
+        "fixed_base_scale_z": 0.7222222222222222,
+        "aim_axis": "localZ",
+        "disable_automatic_preview_playback_in_gameplay": true,
+        "preserve_child_bind_transforms": true,
+        "technical_head_pose_frame": 1
       }
     },
     {
@@ -1789,6 +1821,13 @@
           "present": true,
           "sha256": "66b484bc9c79a39b7f65bccc0fd12bda7a10e2d3e359a7b0c4fa8bdb4341b953",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/screen-generator/refined/model.blend",
+          "present": true,
+          "sha256": "d2480b6f313323a00eb4f73a261a64f115ba076257751377556a46901e39b545",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -1830,6 +1869,24 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 10
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/screen-generator/refined/model.blend",
+        "glb": "sources/objects/terran/screen-generator/refined/model.glb",
+        "root": "ScreenResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation and apply emission sidecar.",
+        "emission_timeline": "sources/ui/scitek/screen-generator/emission-timeline.json"
       }
     },
     {
@@ -1950,6 +2007,13 @@
           "present": true,
           "sha256": "501a55a663ada193b6bb008f2717b0052997fa785892665d00c379099298d148",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/ore-teleporter/refined/model.blend",
+          "present": true,
+          "sha256": "5ec7de4dd3ca381de7bc6ec6eaef7f01531f64fe9d22737e9be7a10e8876e7af",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -1991,6 +2055,23 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 11
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/ore-teleporter/refined/model.blend",
+        "glb": "sources/objects/terran/ore-teleporter/refined/model.glb",
+        "root": "OreResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
       }
     },
     {
@@ -2112,6 +2193,13 @@
           "present": true,
           "sha256": "af79022662b034c6a9d917cc5722746d7f11d20cf40b82261829c1f7aa9efb34",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/gravity-nullifier/refined/model.blend",
+          "present": true,
+          "sha256": "fc103c512cbae4ff038b79e172cbb46e9835f055b5a4c8108829feb680560686",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -2153,6 +2241,23 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 12
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/gravity-nullifier/refined/model.blend",
+        "glb": "sources/objects/terran/gravity-nullifier/refined/model.glb",
+        "root": "NullifierResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
       }
     },
     {
@@ -2597,6 +2702,13 @@
           "present": true,
           "sha256": "3afb7d6178ab7f4abe56e245f5609128140c46d11e4fa5dc2eae771b11d9c3f1",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/repair-facility/refined/model.blend",
+          "present": true,
+          "sha256": "06592e6f00b6c3ea508f6eb02910a46e47bbabc6b15d4ca31c36be7fb53f0467",
+          "final_visual_acceptance": "Blender and independent import verified; game integration pending"
         }
       ],
       "acceptance": {
@@ -2638,6 +2750,17 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 15
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/repair-facility/refined/model.blend",
+        "glb": "sources/objects/terran/repair-facility/refined/model.glb",
+        "consumers": [
+          "gameplay",
+          "building-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/22",
+        "package_contract": "One physical solid GLB; alias consumers. Disable presentation turn during gameplay; unit root scale."
       }
     },
     {
@@ -2919,6 +3042,13 @@
           "present": true,
           "sha256": "ed9f99c84696aacde6dc3d566cef3c980acb6f1064533393c6dec214bf48c38b",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/plasma-turret/refined/model.blend",
+          "present": true,
+          "sha256": "14757c9b642e02308bc91d2d02f0b74abe06bce52514622e728300b59471e5ef",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -2960,6 +3090,56 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 17
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/plasma-turret/refined/model.blend",
+        "glb": "sources/objects/terran/plasma-turret/refined/model.glb",
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; preserve rootZscale1.15 and head-only aiming.",
+        "root": "PlasmaResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1.15
+        ],
+        "gameplay_pose_frame": 1,
+        "moving_node": "PlasmaWeaponAzimuth",
+        "aim_axis": "localZ",
+        "body_turntable": false,
+        "animated_mesh_nodes": [
+          "Weapon barrel",
+          "Weapon dark bore",
+          "Barrel heat-sink collar",
+          "Barrel heat-sink collar.001",
+          "Barrel heat-sink collar.002",
+          "Barrel heat-sink collar.003",
+          "Muzzle locking ring",
+          "Rangefinder lens",
+          "Research second ranging lens",
+          "Research plasma generator housing",
+          "Research shallow golden plasma canopy",
+          "Research canopy rim seam",
+          "Research stereo sensor arm",
+          "Research stereo sensor armoured housing",
+          "Research stereo sensor arm.001",
+          "Research stereo sensor armoured housing.001"
+        ],
+        "fixed_mesh_nodes": [
+          "Pedestal foundation joint",
+          "Azimuth race flange",
+          "Research armoured plasma power base",
+          "Research power base horizontal seam",
+          "Research power base horizontal seam.001",
+          "Research power base horizontal seam.002",
+          "Research armoured azimuth elevation motor"
+        ],
+        "disable_automatic_preview_playback_in_gameplay": true,
+        "solid_animation_timeline": "sources/ui/scitek/plasma-turret/solid-animation-timeline.json",
+        "matrix_contract": "Absolute root-relative row-major4x4, column-vector/Z-up, excludes root scale; replace bind or current*inverse(bind) for bind-baked vertices; transpose/reverse multiplication for row-vector consumers."
       }
     },
     {
@@ -3080,6 +3260,13 @@
           "present": true,
           "sha256": "7dd961ea8f26c38c4a8b4fcc0ded0b43fc1cb5762c7f0b1775739f7c54259126",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/photon-turret/refined/model.blend",
+          "present": true,
+          "sha256": "dab183962c486fdde09108a0e77c10a7ea2fe2cd50aad46f20bb31832a9685fb",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -3121,6 +3308,50 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 18
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/photon-turret/refined/model.blend",
+        "glb": "sources/objects/terran/photon-turret/refined/model.glb",
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; preserve rootZscale1.15 and head-only aiming.",
+        "root": "PhotonResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1.15
+        ],
+        "gameplay_pose_frame": 1,
+        "moving_node": "PhotonWeaponAzimuth",
+        "aim_axis": "localZ",
+        "body_turntable": false,
+        "animated_mesh_nodes": [
+          "Research strengthened egg barrel",
+          "Research tapered photon nozzle",
+          "Research dark photon aperture",
+          "Research slim barrel indicator",
+          "Research barrel lower trunnion",
+          "Research barrel lower trunnion.001"
+        ],
+        "fixed_mesh_nodes": [
+          "Research swivelling weapon cup",
+          "Pedestal foundation joint",
+          "Azimuth race flange",
+          "Research rounded elastoplastic armour",
+          "Research armour horizontal seam",
+          "Research armour horizontal seam.001",
+          "Research armour horizontal seam.002",
+          "Pedestal systems hatch dark gasket",
+          "Pedestal systems hatch lid",
+          "Pedestal systems hatch rim",
+          "Research armoured tracking sensor lens"
+        ],
+        "disable_automatic_preview_playback_in_gameplay": true,
+        "solid_animation_timeline": "sources/ui/scitek/photon-turret/solid-animation-timeline.json",
+        "matrix_contract": "Absolute root-relative row-major4x4, Blender column-vector math/Z-up; replace bind, or current*inverse(bind) for bind-baked vertices; transpose/reverse multiplication for row-vector consumers."
       }
     },
     {
@@ -3582,6 +3813,13 @@
           "sha256": "26c8c65423ce550ab3689cce806dc1ce8a9bfc17543e16132f5b732377c80e9c",
           "final_visual_acceptance": "awaiting-user-review",
           "evidence": "docs/reconstruction/models/seismic-penetrator-reference.json"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/seismic-penetrator/refined/model.blend",
+          "present": true,
+          "sha256": "89c24cbffb8fd5040ac0ab015b527e8a6810eac4430ad2862cd82c351d2b810f",
+          "final_visual_acceptance": "Blender and independent import verified; game integration pending"
         }
       ],
       "acceptance": {
@@ -3623,6 +3861,17 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 21
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/seismic-penetrator/refined/model.blend",
+        "glb": "sources/objects/terran/seismic-penetrator/refined/model.glb",
+        "consumers": [
+          "gameplay",
+          "building-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/24",
+        "package_contract": "One physical solid GLB; alias consumers. Disable presentation turn during gameplay; unit root scale."
       }
     },
     {
@@ -3744,6 +3993,13 @@
           "present": true,
           "sha256": "b642cd0e3381d54deb774f14cbd11eafede84c9e5eae5e1be28559237d3fdf16",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/asteroid-engines/refined/model.blend",
+          "present": true,
+          "sha256": "e37c6764e7530560bad7a082c093ee19cfc192a3a4e5428818ec7f09f340c531",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -3785,6 +4041,23 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 22
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/asteroid-engines/refined/model.blend",
+        "glb": "sources/objects/terran/asteroid-engines/refined/model.glb",
+        "root": "AsteroidEngineRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "building-gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
       }
     },
     {
@@ -3905,6 +4178,13 @@
           "present": true,
           "sha256": "657709c29ae32bdf5cfc579d254eee9490cfabbe699774cdad90727da55ad997",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/powerplant/refined/model.blend",
+          "present": true,
+          "sha256": "da9d9880346cd35b60098bd7b98737f56b1f18f1f8add3d9c15dc9ab662d545e",
+          "final_visual_acceptance": "Blender and independent import verified; game integration pending"
         }
       ],
       "acceptance": {
@@ -3946,6 +4226,17 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 23
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/powerplant/refined/model.blend",
+        "glb": "sources/objects/terran/powerplant/refined/model.glb",
+        "consumers": [
+          "gameplay",
+          "building-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/21",
+        "package_contract": "One physical solid GLB; alias consumers. Disable presentation turn during gameplay; preserve root scale. Technical variants are presentation assets."
       }
     },
     {
@@ -4717,6 +5008,13 @@
           "present": true,
           "sha256": "dfee4f7a2e39f6493b4fdfe26ef917b981356c8d983d681a55febfea4cf5c1f4",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/solar-matrix/refined/model.blend",
+          "present": true,
+          "sha256": "5b37f0916e2acc5882891d845deb2eb9b4067603e7ce84a7629129c7a8647c2b",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -4758,6 +5056,22 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 28
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/solar-matrix/refined/model.blend",
+        "glb": "sources/objects/terran/solar-matrix/refined/model.glb",
+        "consumers": [
+          "gameplay",
+          "construction-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/27",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "package_contract": "One physical solid with all three clips. Alias consumers. Disable CatalogueTurn in gameplay. Optional folding extension; client state binding pending."
       }
     },
     {
@@ -27496,6 +27810,13 @@
           "present": true,
           "sha256": "b464ef0ec6556f632212335afccc8c9d9e1c42cb4248049f8b5e9f15ed4cb013",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/terminator/refined/model.blend",
+          "present": true,
+          "sha256": "07a05d0ffb2e71ce7be5231ad85f5675dda42df3994a9e696a12e38bb99f111a",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -27610,6 +27931,23 @@
           ],
           "selected_first_available": "PT4C.256"
         }
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/terminator/refined/model.blend",
+        "glb": "sources/objects/terran/terminator/refined/model.glb",
+        "root": "TerminatorResearchRotor",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "ship-gameplay",
+          "ship-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
       }
     },
     {
@@ -27938,6 +28276,13 @@
           "present": true,
           "sha256": "e28f83b6d9100af1646a04521a2d508644a406b3a8feeb40780d61ad271f8372",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/fleet-battleship/refined/model.blend",
+          "present": true,
+          "sha256": "992680efcb679c3c1ec1165233b6449e60adf833fc39064ee4e72b225824159f",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -28060,6 +28405,23 @@
           ],
           "selected_first_available": "PT6C.256"
         }
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/fleet-battleship/refined/model.blend",
+        "glb": "sources/objects/terran/fleet-battleship/refined/model.glb",
+        "root": "BattleshipResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "ship-gameplay",
+          "ship-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
       }
     },
     {
@@ -28130,6 +28492,20 @@
           "present": true,
           "sha256": "7f0a18c8905908f426b17bd3a4be99071e9578d5b7d0aa90016120d795d07a68",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "ps7c-detailed-refinement",
+          "blend": "objects/terran/space-dock/refined/model.blend",
+          "present": true,
+          "sha256": "44bdbadb6cb36f5bba073bb9918674d29f4700c01ba29447fe99f3094607bd08",
+          "final_visual_acceptance": "Reviewed detailed source; client scale/GPU and mount calibration pending"
+        },
+        {
+          "stage": "ps7c-detailed-construction",
+          "blend": "objects/terran/space-dock/construction/model.blend",
+          "present": true,
+          "sha256": "a8b5c839bb079a7d9c1372edea0a0c35a401a24d47b7b75bc4390e9aeb12d80a",
+          "final_visual_acceptance": "Reviewed detailed source; client scale/GPU and mount calibration pending"
         }
       ],
       "acceptance": {
@@ -28236,7 +28612,9 @@
           ],
           "selected_first_available": "PS7C.256"
         }
-      }
+      },
+      "current_shared_model": "objects/terran/space-dock/refined/model.glb",
+      "current_construction_model": "objects/terran/space-dock/construction/model.glb"
     },
     {
       "category": "ships",
@@ -28347,6 +28725,13 @@
           "present": true,
           "sha256": "b2d5c1ba3176d8a945669588cce343894b1dd8a19dc216d961c3c33bf6ba5ea9",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/command-cruiser/refined/model.blend",
+          "present": true,
+          "sha256": "0ad10c30293ca917d93d7606935eea2f48e55fc0cb31ce2e41fa9d54ea37f5e3",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -28469,6 +28854,22 @@
           ],
           "selected_first_available": "PT8C.256"
         }
+      },
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/command-cruiser/refined/model.blend",
+        "glb": "sources/objects/terran/command-cruiser/refined/model.glb",
+        "consumers": [
+          "ship-gameplay",
+          "ship-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/35",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "package_contract": "One shared physical solid; alias consumers. Preserve Root unit scale; gameplay frame1 without presentation rotation."
       }
     },
     {
@@ -32550,6 +32951,13 @@
           "present": true,
           "sha256": "5e64d263bbc8ed2141c934c7f7fe3b6e87ece17fd9a80ba6391a31864f6dd6e4",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/shared/static-inducer/refined/model.blend",
+          "present": true,
+          "sha256": "4ed8e254c8de66dd331f171558ac81976cac135e32f7d0739a70c7fe130e58b8",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -32566,7 +32974,23 @@
         "Determine whether visible mounts differ by culture; do not multiply shared definitions or assume shared geometry without evidence.",
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established."
+      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established.",
+      "authoritative_refined": {
+        "blend": "sources/objects/shared/static-inducer/refined/model.blend",
+        "glb": "sources/objects/shared/static-inducer/refined/model.glb",
+        "consumers": [
+          "ship-hardpoints",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/28",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "package_contract": "One shared physical solid; alias consumers. Preserve Root unit scale; gameplay frame1 without presentation rotation."
+      }
     },
     {
       "category": "hardpoints",
@@ -32676,6 +33100,13 @@
           "present": true,
           "sha256": "4b9ce515dd8d97644d7ec457d7d8fef73856c0d99b9006c4106b09a6a3c556a2",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/shared/warp-generator/refined/model.blend",
+          "present": true,
+          "sha256": "a7e3af76b132d8c1e54df490a2d9638c64606950abcb64a438d0e0babb3d6e26",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -32692,7 +33123,23 @@
         "Determine whether visible mounts differ by culture; do not multiply shared definitions or assume shared geometry without evidence.",
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established."
+      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established.",
+      "authoritative_refined": {
+        "blend": "sources/objects/shared/warp-generator/refined/model.blend",
+        "glb": "sources/objects/shared/warp-generator/refined/model.glb",
+        "consumers": [
+          "ship-hardpoints",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/33",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "package_contract": "One shared physical solid; alias consumers. Preserve Root unit scale; gameplay frame1 without presentation rotation."
+      }
     },
     {
       "category": "hardpoints",
@@ -32802,6 +33249,13 @@
           "present": true,
           "sha256": "a55e8430133da4b6df86610c53eb4d6f08f24bf480e8d2106fb9ed320879c0ed",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/shared/deflector/refined/model.blend",
+          "present": true,
+          "sha256": "e7049530f7e4b38a260452e7abad3a81684ee29f54c769f1560920dca6746bf0",
+          "final_visual_acceptance": "Preserved authored art; native/import geometry verified, client/GPU pending"
         }
       ],
       "acceptance": {
@@ -32818,7 +33272,24 @@
         "Determine whether visible mounts differ by culture; do not multiply shared definitions or assume shared geometry without evidence.",
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established."
+      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established.",
+      "authoritative_refined": {
+        "blend": "sources/objects/shared/deflector/refined/model.blend",
+        "glb": "sources/objects/shared/deflector/refined/model.glb",
+        "root": "DeflectorResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 16,
+        "consumers": [
+          "ship-hardpoints",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation turn at gameplay frame16."
+      }
     },
     {
       "category": "hardpoints",
@@ -33306,6 +33777,13 @@
           "present": true,
           "sha256": "51a10622648e1f4cfea13175748ece964994994e5ab6f9ff714b4a41b5b6c1bd",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/shared/shield-x40/refined/model.blend",
+          "present": true,
+          "sha256": "cbd10db8394e70a795cad9f11dafb7daf764bbccd58c9b44ab3f371cdb388981",
+          "final_visual_acceptance": "Blender and independent import verified; game integration pending"
         }
       ],
       "acceptance": {
@@ -33322,7 +33800,23 @@
         "Determine whether visible mounts differ by culture; do not multiply shared definitions or assume shared geometry without evidence.",
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established."
+      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established.",
+      "authoritative_refined": {
+        "blend": "sources/objects/shared/shield-x40/refined/model.blend",
+        "glb": "sources/objects/shared/shield-x40/refined/model.glb",
+        "consumers": [
+          "ship-hardpoints",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/25",
+        "package_contract": "One physical solid GLB; alias consumers. Preserve Root scale[1,1.3,1]; gameplay frame1 with catalogue turn disabled.",
+        "root_scale": [
+          1.0,
+          1.2999999523162842,
+          1.0
+        ]
+      }
     },
     {
       "category": "hardpoints",
@@ -33432,6 +33926,13 @@
           "present": true,
           "sha256": "16a5f07ecef45e5518ecf68aa4a0fb6cdb345c5c2d420d2cc71e2d714b3aec6b",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/shared/shield-x50/refined/model.blend",
+          "present": true,
+          "sha256": "8038b429ccf01b0b3455dcdf2a60ea0e182cbd686aa3cfe547df00c91c68685a",
+          "final_visual_acceptance": "Blender and independent import verified; game integration pending"
         }
       ],
       "acceptance": {
@@ -33448,7 +33949,23 @@
         "Determine whether visible mounts differ by culture; do not multiply shared definitions or assume shared geometry without evidence.",
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established."
+      "shared_definition_scope": "Global equipment definition; race-specific mesh variants not established.",
+      "authoritative_refined": {
+        "blend": "sources/objects/shared/shield-x50/refined/model.blend",
+        "glb": "sources/objects/shared/shield-x50/refined/model.glb",
+        "consumers": [
+          "ship-hardpoints",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/26",
+        "package_contract": "One physical solid GLB; alias consumers. Preserve Root scale[1,1.3,1]; gameplay frame1 with catalogue turn disabled.",
+        "root_scale": [
+          1.0,
+          1.2999999523162842,
+          1.0
+        ]
+      }
     },
     {
       "category": "missiles",
@@ -34203,6 +34720,13 @@
           "present": true,
           "sha256": "4cb6c68243a2ff7ea0b1cf8395d8810243a6714cf6b5e1c773738dbb867c4db6",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/nuclear-missile/refined/model.blend",
+          "present": true,
+          "sha256": "d1cfc53160d114b317b6d551ee63adf4ad7cb22337fb3532f610a28d70aa420b",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -34218,7 +34742,24 @@
       "open_evidence_questions": [
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "flight_frame_count": 14
+      "flight_frame_count": 14,
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/nuclear-missile/refined/model.blend",
+        "glb": "sources/objects/terran/nuclear-missile/refined/model.glb",
+        "root": "NuclearResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
+      }
     },
     {
       "category": "missiles",
@@ -34313,6 +34854,13 @@
           "present": true,
           "sha256": "00f6936fdc5d739c9d74c70f982cf33838ffc6dcf1ac39600ffb8170a81d9f37",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/virus-missile/refined/model.blend",
+          "present": true,
+          "sha256": "fd7248cbbdd55448db2ffb7cc7c6c9e50c68ac109b41094c3877fa43ee30a9b3",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -34328,7 +34876,23 @@
       "open_evidence_questions": [
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "flight_frame_count": 14
+      "flight_frame_count": 14,
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/virus-missile/refined/model.blend",
+        "glb": "sources/objects/terran/virus-missile/refined/model.glb",
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/32",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "package_contract": "One shared physical solid; alias consumers. Preserve Root unit scale; gameplay frame1 without presentation rotation."
+      }
     },
     {
       "category": "missiles",
@@ -34423,6 +34987,13 @@
           "present": true,
           "sha256": "83795063d7b9bfb688abd34e13a0b054a702fb82eabf5800db09e4a3abb84283",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/anti-virus-missile/refined/model.blend",
+          "present": true,
+          "sha256": "9443a0053e99685b36d523426baddea1a4b088720f0a80d38ed950033c47de12",
+          "final_visual_acceptance": "Native/import geometry and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -34438,7 +35009,24 @@
       "open_evidence_questions": [
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "flight_frame_count": 14
+      "flight_frame_count": 14,
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/anti-virus-missile/refined/model.blend",
+        "glb": "sources/objects/terran/anti-virus-missile/refined/model.glb",
+        "root": "AntiVirusRotor",
+        "root_scale": [
+          0.83,
+          0.83,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
+      }
     },
     {
       "category": "missiles",
@@ -34533,6 +35121,13 @@
           "present": true,
           "sha256": "f2d64f7510bcc84f1a5a43b21f9447b30c54a65d154609ebcfd5c1f59c1af3de",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/mega-missile/refined/model.blend",
+          "present": true,
+          "sha256": "ee0e7fbd617db141c0b188a899d4ecd4723854356d9f2e159c53310e053a7d4e",
+          "final_visual_acceptance": "Native/import anatomy and diagram verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -34548,7 +35143,24 @@
       "open_evidence_questions": [
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "flight_frame_count": 14
+      "flight_frame_count": 14,
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/mega-missile/refined/model.blend",
+        "glb": "sources/objects/terran/mega-missile/refined/model.glb",
+        "root": "MegaResearchRoot",
+        "root_scale": [
+          1,
+          1,
+          1
+        ],
+        "gameplay_pose_frame": 1,
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "package_contract": "One shared physical solid; disable presentation rotation."
+      }
     },
     {
       "category": "missiles",
@@ -34643,6 +35255,13 @@
           "present": true,
           "sha256": "037c980ff92ed970be4ea7bdab33e26f881d445d39cd89e76a66cad5c0e9e897",
           "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "objects/terran/stasis-missile/refined/model.blend",
+          "present": true,
+          "sha256": "c7eadfe3b3bf956454ab0a22bae0668acedc70f89cd7528974dcbf332b188d90",
+          "final_visual_acceptance": "Blender and independent import verified; client/GPU pending"
         }
       ],
       "acceptance": {
@@ -34658,7 +35277,23 @@
       "open_evidence_questions": [
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
-      "flight_frame_count": 14
+      "flight_frame_count": 14,
+      "authoritative_refined": {
+        "blend": "sources/objects/terran/stasis-missile/refined/model.blend",
+        "glb": "sources/objects/terran/stasis-missile/refined/model.glb",
+        "consumers": [
+          "projectile-gameplay",
+          "equipment-catalogue",
+          "scitek"
+        ],
+        "research_binding": "openfa:presentation/profile/research/29",
+        "root_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "package_contract": "One shared physical solid; alias consumers. Preserve Root unit scale; gameplay frame1 without presentation rotation."
+      }
     },
     {
       "category": "missiles",
@@ -38656,6 +39291,39 @@
         "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
       ],
       "flight_frame_count": 14
+    },
+    {
+      "id": "openfa:federal-transporter",
+      "name": "Federal Transporter (IS0C)",
+      "category": "ships",
+      "culture": "shared",
+      "workstream_issue": 215,
+      "legacy_identity": {
+        "kind": "Special scheduled federal visit; not a player SHIPS type",
+        "source": "_S/IS0C.256"
+      },
+      "references": [
+        {
+          "directory": "_S",
+          "entry": "IS0C.256",
+          "kind": "sprite-sheet",
+          "present": true,
+          "frame_count": 1,
+          "palette_status": "embedded",
+          "sha256": "b41dffea9e3bd39583ba2c10939bfb7540750196d574f66d6c894c9a2ae98a23"
+        }
+      ],
+      "available_studies": [
+        {
+          "stage": "detailed-refined",
+          "blend": "objects/shared/federal-transporter/refined/model.blend",
+          "present": true,
+          "sha256": "31f0bca76ba28d40586d40bbe30c0f68944cb2d38cd9f27edd6e1b97227b36b1",
+          "final_visual_acceptance": "Source renders reviewed; client integration pending"
+        }
+      ],
+      "gameplay_identity": "Dedicated new binding required; never alias over openfa:transporter",
+      "technical_evidence": "objects/shared/federal-transporter/refined/runtime-verification.json"
     }
   ]
 }

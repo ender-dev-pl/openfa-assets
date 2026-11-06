@@ -15,7 +15,7 @@ Existing authored studies only. First run and available refined stages are shown
 | Mikotaj | [21](buildings-mikotaj.md) | [5](ships-mikotaj.md) | — | [9](missiles-mikotaj.md) | — |
 | Rigellian | [23](buildings-rigellian.md) | [5](ships-rigellian.md) | — | [7](missiles-rigellian.md) | — |
 | Terran | [40](buildings-terran.md) | [10](ships-terran.md) | — | [13](missiles-terran.md) | — |
-| Shared / all races | — | — | [16](hardpoints-shared.md) | — | [101](trading-goods-shared.md) |
+| Shared / all races | — | [1](ships-shared.md) | [16](hardpoints-shared.md) | — | [101](trading-goods-shared.md) |
 
 ## Buildings / Achaean
 
@@ -142,6 +142,12 @@ Existing authored studies only. First run and available refined stages are shown
 [Browse 5 definitions](ships-rigellian.md)
 
 ![ships-rigellian](sheets/ships-rigellian.jpg)
+
+## Ships / Shared
+
+[Browse 1 definitions](ships-shared.md)
+
+![ships-shared](sheets/ships-shared.jpg)
 
 ## Ships / Terran
 
