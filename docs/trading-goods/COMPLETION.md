@@ -35,4 +35,24 @@ Related bottles, cloth rolls, jewellery, gems, cases and containers share constr
 | TI088–TI100 | `b5fe2c6` |
 | TI101 | `6b48e30` |
 
-Branch: `feat/trading-goods-reconstruction`. Umbrella: [issue #214](https://github.com/ender-dev-pl/openfa-assets/issues/214). Follow-up image generation/refining needs the user's next scope; do not restart the completed model phase because the image targets are deferred.
+Branch: `feat/trading-goods-reconstruction`. Umbrella: [issue #214](https://github.com/ender-dev-pl/openfa-assets/issues/214). The subsequently authorized gallery/material phase is complete below; do not restart the first model phase because legacy UI targets are deferred.
+
+## Material and gallery refinement complete
+
+101 selected native-material variants and 101 new 1024×768 RGBA gallery PNGs are complete, reviewed and source-bound. All original 101 natives, GLBs and 768×576 PNGs remain preserved. The shared gallery keeps 101 trading cards with both iterations; its existing 303 primary non-trading records and 137 supplemental cards remain preserved.
+
+The pass adds role-specific procedural colour/roughness/normal detail, glass/gem transmission and absorption, reflective metals, fabric weave/sheens, leather pores, organic subsurface response and restrained geometry irregularity. TI041 and TI064 are separately remodelled; TI048 and TI067 receive focused geometry repairs. This is another reconstruction iteration, not final artistic/game-integration acceptance.
+
+| Source milestone | Commit |
+|---|---|
+| 101 physical material/surface natives and runtime checks | `4277cdd` |
+| TI041 tailored coat, rounded boots and belt | `2b2cb3c` |
+| Gem absorption/hue correction | `702b8d8` |
+| TI048 Boolean seam repair | `440ae88` |
+| TI067 open bowl and handle repair | `f160567` |
+| Family-specific studio exposure | `e1418d3` |
+| TI064 crescent axe and independent cup-clearance check | `46b5da7` |
+
+Validation covers actual Blender 4.5.15 LTS native reopen/independent GLB import, geometry bounds and base-colour round trip; all 101 rendered outputs visually inspected with source/image hashes; lossless PNG metadata removal/recompression and pixel equality; RGBA framing; preserved first-pass files and baseline gallery records; gallery filter/search behavior and actual desktop/mobile Chromium inspection. Final per-item evidence is in `refinement-validation.json`.
+
+Full procedural shaders remain in Blend. GLBs are unbaked scalar/base-colour fallbacks. The separate 202 legacy-size compact/detail UI outputs and engine integration remain deferred. See `REFINEMENT.md` for reproduction and publication commands.

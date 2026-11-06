@@ -117,10 +117,13 @@ def main():
             page += ['## '+row['name'], '', '`'+row['id']+'`', '']
             for n, study in enumerate(row['studies']):
                 label = ('First available iteration' if n == 0 else 'Additional iteration')+' — '+study['stage']
+                if row['category']=='trading-goods':label=('Preserved first pass' if n==0 else 'Current refinement')+' — '+study['stage']
                 img = '../'+quote(study['image'])
                 page += ['**'+label+'**', '', '!['+row['name']+']('+img+')', '',
                          '[Blend](../'+quote(study['blend'])+')'+
                          (' · [GLB](../'+quote(study['glb'])+')' if study['glb'] else ''), '']
+                if row['category']=='trading-goods' and study['stage']=='material-refined':
+                    page += ['Full procedural materials are in Blend; GLB textures are not baked.', '']
                 for clip in study['animations']:
                     page += ['[Play animation: '+clip['name']+'](../'+quote(clip['video'])+')', '']
                 cell = Image.new('RGB', (256, 288), '#161f2b')
@@ -149,6 +152,7 @@ def main():
         images = []
         for n, study in enumerate(row['studies']):
             label = ('First available' if n == 0 else 'Additional')+' / '+study['stage']
+            if row['category']=='trading-goods':label=('Preserved first pass' if n==0 else 'Current refinement')+' / '+study['stage']
             if study['animations']:
                 clips=study['animations']
                 preview='<video controls loop muted playsinline preload="none" poster="../'+quote(study['image'])+'" aria-label="'+html.escape(row['name']+' — '+study['stage']+' animation',quote=True)+'"><source src="../'+quote(clips[0]['video'])+'" type="video/webm">Your browser does not support WebM video.</video>'
@@ -158,6 +162,10 @@ def main():
                 preview+='<p class="animation-label">Animated model · '+str(len(clips))+' clip'+('s' if len(clips)!=1 else '')+'</p>'
             else:
                 preview='<img loading="lazy" src="../'+quote(study['image'])+'" alt="'+html.escape(row['name'])+'">'
+                if row['category']=='trading-goods':
+                    preview='<a href="../'+quote(study['image'])+'" aria-label="'+html.escape('Open full-resolution '+row['name']+' — '+study['stage'],quote=True)+'">'+preview+'</a>'
+            if row['category']=='trading-goods' and study['stage']=='material-refined':
+                label+=' · full materials in Blend; GLB unbaked'
             images.append('<figure>'+preview+'<figcaption>'+html.escape(label)+
                 '<br><a href="../'+quote(study['blend'])+'">Blend</a>'+
                 (' · <a href="../'+quote(study['glb'])+'">GLB</a>' if study['glb'] else '')+'</figcaption></figure>')
