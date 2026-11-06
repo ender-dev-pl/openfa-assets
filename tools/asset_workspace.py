@@ -64,7 +64,7 @@ def verify():
                 raise ValueError(f'Misplaced source image: {path}')
             inputs.add(path)
         elif role == 'historical-script':
-            if not path.is_relative_to((ROOT / 'archive/repairs').resolve()) or path.suffix != '.py':
+            if not path.is_relative_to((ROOT / 'sources/tools/historical-repairs').resolve()) or path.suffix != '.py':
                 raise ValueError(f'Misplaced historical script: {path}')
         elif role not in ['source', 'fixture', 'media']:
             raise ValueError(f'Unknown layout role: {role}')
@@ -115,7 +115,7 @@ def workspace_path(value=None):
     result = Path(value).resolve() if value else ROOT / '.workspace'
     if not result.resolve().is_relative_to(ROOT.resolve()) or result.resolve().is_relative_to((ROOT / 'sources').resolve()):
         raise ValueError('Workspace must be inside this project and outside sources')
-    if result.resolve() == ROOT.resolve() or any(result.resolve().is_relative_to((ROOT / p).resolve()) for p in ['gallery', 'archive', 'project', 'tools', 'docs']):
+    if result.resolve() == ROOT.resolve() or any(result.resolve().is_relative_to((ROOT / p).resolve()) for p in ['gallery', 'project', 'tools', 'docs']):
         raise ValueError('Workspace must be .workspace or a dedicated directory under artifacts')
     if result != ROOT / '.workspace' and not result.is_relative_to((ROOT / 'artifacts').resolve()):
         raise ValueError('Custom workspaces must live under artifacts')

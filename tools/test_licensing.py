@@ -23,7 +23,7 @@ class LicensingTests(unittest.TestCase):
                  'sources/tools/trading-goods/recipes.py',
                  'sources/ui/scitek/screen-generator/geometry.py',
                  'sources/docs/assets/bootstrap-3d/recipe.py',
-                 'tools/render_sphere_gallery.py','archive/repairs/model.py']
+                 'tools/render_sphere_gallery.py','sources/tools/historical-repairs/model.py']
         for path in paths:
             with self.subTest(path=path):
                 self.assertEqual(self.license_for(path),'LicenseRef-OpenFA-Assets-1.0')

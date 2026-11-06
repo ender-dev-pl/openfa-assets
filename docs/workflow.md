@@ -42,7 +42,7 @@ python tools/asset_workspace.py references --legacy-root ../legacy --game-root .
 
 ## Historical repairs
 
-See `archive/repairs/README.md`. `prepare --include-history` restores archived support files without requiring a game checkout. Reading those files for evidence is different from rerunning them. Direct execution through the launcher requires `--allow-history`, a matching historical workspace and the original game repository's Git history. Already-applied migrations must not be run on current corrected models.
+See `project/README.md`. `prepare --include-history` restores archived support files without requiring a game checkout. Reading those files for evidence is different from rerunning them. Direct execution through the launcher requires `--allow-history`, a matching historical workspace and the original game repository's Git history. Already-applied migrations must not be run on current corrected models.
 
 ## Game integration
 

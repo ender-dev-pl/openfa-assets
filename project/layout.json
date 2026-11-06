@@ -45292,13 +45292,13 @@
     },
     {
       "original": "tools/blender/apply_detail_uv_repair.py",
-      "destination": "archive/repairs/tools/blender/apply_detail_uv_repair.py",
+      "destination": "sources/tools/historical-repairs/apply_detail_uv_repair.py",
       "role": "historical-script",
       "ownership": "moved"
     },
     {
       "original": "tools/blender/apply_fighter_armour_repair.py",
-      "destination": "archive/repairs/tools/blender/apply_fighter_armour_repair.py",
+      "destination": "sources/tools/historical-repairs/apply_fighter_armour_repair.py",
       "role": "historical-script",
       "ownership": "moved",
       "verification_support": true
@@ -47795,7 +47795,7 @@
     },
     {
       "original": "tools/blender/probe_fighter_armour_tessellation.py",
-      "destination": "archive/repairs/tools/blender/probe_fighter_armour_tessellation.py",
+      "destination": "sources/tools/historical-repairs/probe_fighter_armour_tessellation.py",
       "role": "historical-script",
       "ownership": "moved",
       "verification_support": true
@@ -47852,18 +47852,6 @@
       "original": "tools/blender/refined_terran_parts.py",
       "destination": "sources/tools/blender/refined_terran_parts.py",
       "role": "source",
-      "ownership": "moved"
-    },
-    {
-      "original": "tools/blender/refresh_fighter_armour_indices.py",
-      "destination": "archive/repairs/tools/blender/refresh_fighter_armour_indices.py",
-      "role": "historical-script",
-      "ownership": "moved"
-    },
-    {
-      "original": "tools/blender/refresh_uv_repair_indices.py",
-      "destination": "archive/repairs/tools/blender/refresh_uv_repair_indices.py",
-      "role": "historical-script",
       "ownership": "moved"
     },
     {
@@ -83739,6 +83727,14 @@
     {
       "original": "content/standard/catalogues/terran-construction.json",
       "reason": "No consumer in asset tools; authoritative data remains in openFA-game"
+    },
+    {
+      "original": "tools/blender/refresh_fighter_armour_indices.py",
+      "reason": "Retired one-time historical index refresh; no current tool consumer"
+    },
+    {
+      "original": "tools/blender/refresh_uv_repair_indices.py",
+      "reason": "Retired one-time historical index refresh; no current tool consumer"
     }
   ]
 }

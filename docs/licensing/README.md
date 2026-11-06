@@ -25,7 +25,7 @@ CI checks every tracked publication file and rejects unclassified paths, stale e
 
 ## Recipe sources stay with the assets
 
-Recipes currently live in `sources/tools/`, beside subjects in `sources/ui/`, within historical `sources/docs/` source trees, and in `archive/repairs/`. Asset-specific orchestration, rendering and registration scripts also remain in `tools/` unless explicitly reviewed for MIT. The executable map assigns those files to the asset license. In particular, `sources/tools/blender/build_federal_transporter.py`, `refine_ps7c_details.py` and `sources/tools/trading-goods/recipes.py` are recipes, not permissively licensed generic libraries.
+Recipes currently live in `sources/tools/`, beside subjects in `sources/ui/`, within historical `sources/docs/` source trees, and in `sources/tools/historical-repairs/`. Asset-specific orchestration, rendering and registration scripts also remain in `tools/` unless explicitly reviewed for MIT. The executable map assigns those files to the asset license. In particular, `sources/tools/blender/build_federal_transporter.py`, `refine_ps7c_details.py` and `sources/tools/trading-goods/recipes.py` are recipes, not permissively licensed generic libraries.
 
 A mixed module such as `build_federal_transporter.py` contains both a concrete ship recipe and geometry helpers. Its entire file retains the asset license; the presence of a `box()` function does not make the complete ship recipe MIT. Generic algorithms and independently written implementations are not claimed as exclusive creative assets. Further reusable portions can be extracted and reviewed separately later.
 

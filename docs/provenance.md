@@ -2,7 +2,7 @@
 
 `project/import-baseline.json` is the retained import record: original repository/commit, original path, then-current destination, role, ownership, length and SHA-256. It is no longer the active workspace configuration. `project/layout.json` records current locations, roles and explicit retirements; changing a current file does not rewrite the historical import hash.
 
-All 396 Blend files and 405 GLB files are preserved byte-for-byte by this reorganization. The 698 authored material PNGs, original 2D inputs and five archived repair scripts are relocated with their bytes and report bindings intact. Logical historical paths are restored in workspaces when needed.
+All 396 Blend files and 405 GLB files are preserved byte-for-byte by this reorganization. The 698 authored material PNGs, original 2D inputs and three retained repair/proposal modules are relocated with their bytes and report bindings intact. Logical historical paths are restored in workspaces when needed.
 
 Four copied game data snapshots were removed from the current asset input set because no tool consumed them. Their original hashes remain recorded, and authoritative data remains in the game repository. Nine consumed game-owned catalogue/decoder/independent-texture fixtures remain current asset inputs; the original import recorded fourteen.
 

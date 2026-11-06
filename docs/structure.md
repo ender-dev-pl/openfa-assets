@@ -15,7 +15,7 @@
 | `gallery/sheets/` | Contact sheets assembled from existing previews |
 | `gallery/catalogue.json` | Current registered study/source/export/preview links |
 | `project/layout.json` | Current canonical destinations, input roles and logical workspace paths; no frozen content hashes |
-| `archive/repairs/` | Five immutable one-time repair/proposal scripts, retained as evidence |
+| `sources/tools/historical-repairs/` | Three byte-preserved repair/proposal modules required by current verifiers |
 | `project/import-baseline.json` | Original input hashes and external evidence bindings used by optional authoring tools |
 | `tools/` | Current preparation, validation and gallery entry points |
 | `.workspace/` | Ignored disposable execution layout, synchronized without overwriting edited files |

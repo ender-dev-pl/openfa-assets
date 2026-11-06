@@ -26,7 +26,7 @@ class WorkspaceTests(unittest.TestCase):
         self.addCleanup(self.output.__exit__, None, None, None)
         self.files = [dict(original='tools/hello.py', destination='sources/tools/hello.py', role='source', ownership='moved'),
                       dict(original='images/source.png', destination='sources/materials/test/source.png', role='material-texture', ownership='moved'),
-                      dict(original='tools/one_time.py', destination='archive/repairs/tools/one_time.py', role='historical-script', ownership='moved')]
+                      dict(original='tools/one_time.py', destination='sources/tools/historical-repairs/one_time.py', role='historical-script', ownership='moved')]
         for row in self.files:
             path = self.root / row['destination']
             path.parent.mkdir(parents=True, exist_ok=True)
