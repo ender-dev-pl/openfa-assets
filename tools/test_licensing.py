@@ -39,10 +39,23 @@ class LicensingTests(unittest.TestCase):
     def test_future_tools_default_to_asset_specific_until_reviewed(self):
         self.assertEqual(self.license_for('tools/new-model-builder.py'),'LicenseRef-OpenFA-Assets-1.0')
 
-    def test_third_party_font_and_unresolved_fixtures_override_asset_default(self):
+    def test_confirmed_ownership_and_font_terms_override_asset_default(self):
         self.assertEqual(self.license_for('sources/ui/legacy-menu-labels/font/NotoSerif-Bold.ttf'),'OFL-1.1')
-        self.assertEqual(self.license_for('sources/tools/fragile256.py'),'NOASSERTION')
-        self.assertEqual(self.license_for('sources/ui/quick-menu/quick-asteroid-icon.png'),'NOASSERTION')
+        self.assertEqual(self.license_for('sources/tools/fragile256.py'),'MIT')
+        self.assertEqual(self.license_for('sources/ui/quick-menu/quick-asteroid-icon.png'),'LicenseRef-OpenFA-Assets-1.0')
+
+    def test_reviewed_source_exception_cannot_be_a_directory_or_asset(self):
+        for change in [dict(prefixes=['sources/tools/']), dict(paths=['sources/tools/model.glb'])]:
+            broken=deepcopy(self.policy)
+            rule=next(rule for rule in broken['rules'] if rule.get('reviewed_general_source'))
+            rule.update(change)
+            with self.subTest(change=change),self.assertRaisesRegex(ValueError,'exact Python'):
+                validate_policy(broken)
+
+    def test_compatibility_data_retains_payload_provenance_notice(self):
+        row=classify('sources/content/standard/catalogues/legacy-gameplay.json',self.policy)
+        self.assertEqual(row['license_expression'],'LicenseRef-OpenFA-Assets-1.0')
+        self.assertIn('recovered legacy payloads',row['notice'])
 
     def test_gallery_code_and_content_are_distinguished(self):
         row=classify('gallery/index.html',self.policy)

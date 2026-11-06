@@ -9,7 +9,8 @@ This repository uses different licenses for different components. The executable
 | Models, textures, animations, renders and asset-specific evidence | OpenFA Asset License 1.0 | Original OpenFA contributions only; unrelated code/works do not inherit it merely through tool execution |
 | Generated gallery HTML | Component-specific terms | Presentation code is MIT; covered embedded asset content/data keeps the asset license |
 | Noto font and its notice | Existing SIL OFL 1.1 | Original font terms and copyright notice preserved |
-| Nine imported reference fixtures with no established redistribution license in this repository | No new license grant | See [THIRD-PARTY.md](THIRD-PARTY.md); neither MIT nor the asset license is silently assigned |
+| Confirmed OpenFA Classic quick-menu graphics and compatibility JSON contributions | OpenFA Asset License 1.0 | [Provenance and recovered legacy payload boundaries](REFERENCE-PROVENANCE.md) |
+| Three confirmed general decoder/extractor scripts under `sources/tools/` | MIT | Exact reviewed paths in the map; their input data retains its own provenance |
 
 ## Finding and checking a file
 

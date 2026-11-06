@@ -13,6 +13,13 @@ def validate_policy(policy):
         if rule['id'] in seen_ids:
             raise ValueError('Duplicate licensing rule: '+rule['id'])
         seen_ids.add(rule['id'])
+        if rule.get('reviewed_general_source'):
+            if (rule.get('prefixes') or not rule.get('paths')
+                    or rule.get('license_expression') != 'MIT'
+                    or rule.get('kind') != 'general-tool'
+                    or any(not path.startswith('sources/tools/') or PurePosixPath(path).suffix != '.py'
+                           for path in rule['paths'])):
+                raise ValueError('Reviewed general sources require exact Python tool paths and MIT')
         if not rule.get('paths') and not rule.get('prefixes'):
             raise ValueError('Rule must have an explicit path scope')
         for path in rule.get('paths', []) + rule.get('prefixes', []):
@@ -44,6 +51,8 @@ def load_policy(root):
 
 def audit(root, paths):
     policy = load_policy(root)
+    reviewed_sources = {path for rule in policy['rules'] if rule.get('reviewed_general_source')
+                        for path in rule.get('paths', [])}
     counts = Counter()
     sources, exceptions = [], []
     path_set = set(paths)
@@ -55,7 +64,7 @@ def audit(root, paths):
         if not (root/path).is_file() or (root/path).is_symlink():
             raise ValueError('Expected regular publication file: '+path)
         row = dict(path=path, **classify(path, policy))
-        if 'MIT' in row['license_expression'] and (path.startswith(('sources/', 'archive/')) or PurePosixPath(path).suffix in {'.blend','.glb','.png','.jpg','.webm','.ttf'}):
+        if 'MIT' in row['license_expression'] and ((path.startswith(('sources/', 'archive/')) and path not in reviewed_sources) or PurePosixPath(path).suffix in {'.blend','.glb','.png','.jpg','.webm','.ttf'}):
             raise ValueError('Creative source or payload must not receive a tooling MIT grant: '+path)
         counts[row['kind']] += 1
         if row['kind'] in ['asset-specific-source','general-tool']:

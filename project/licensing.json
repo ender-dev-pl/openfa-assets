@@ -19,21 +19,27 @@
       "notice": "sources/ui/legacy-menu-labels/font/OFL.txt"
     },
     {
-      "id": "reference-fixtures",
+      "id": "compatibility-data",
       "paths": [
         "sources/content/standard/catalogues/legacy-buildings.json",
         "sources/content/standard/catalogues/legacy-gameplay.json",
-        "sources/ui/quick-menu/quick-asteroid-icon.png",
-        "sources/ui/quick-menu/quick-chrome-metal-tile.png",
-        "sources/ui/quick-menu/quick-visual-menu-icon-v2.png",
-        "sources/content/standard/presentation/legacy-domain.json",
+        "sources/content/standard/presentation/legacy-domain.json"
+      ],
+      "license_expression": "LicenseRef-OpenFA-Assets-1.0",
+      "kind": "compatibility-data",
+      "notice": "docs/licensing/REFERENCE-PROVENANCE.md: OpenFA contributions only; recovered legacy payloads retain their provenance."
+    },
+    {
+      "id": "confirmed-decoder-tools",
+      "paths": [
         "sources/tools/extract_fragile_le.py",
         "sources/tools/fragile256.py",
         "sources/tools/fragile_vid.py"
       ],
-      "license_expression": "NOASSERTION",
-      "kind": "excluded",
-      "notice": "docs/licensing/THIRD-PARTY.md"
+      "license_expression": "MIT",
+      "kind": "general-tool",
+      "notice": "docs/licensing/REFERENCE-PROVENANCE.md; LICENSES/MIT.txt",
+      "reviewed_general_source": true
     },
     {
       "id": "license-notices",
