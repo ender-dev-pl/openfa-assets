@@ -552,6 +552,12 @@ Additional views: [Build: frame foundation](../gallery/media/objects/terran/ship
 
 [Play animation: Layered construction and crane transfer (Assault Fighter)](../gallery/media/objects/terran/ship-yard/hangar/construction-transfer.webm)
 
+[Play animation: Assault Fighter — construction on shipyard platform](../gallery/media/objects/terran/ship-yard/hangar/shipyard-build-assault-fighter.webm)
+
+[Play animation: Combat Eagle — construction on shipyard platform](../gallery/media/objects/terran/ship-yard/hangar/shipyard-build-combat-eagle.webm)
+
+[Play animation: Scoutship — construction on shipyard platform](../gallery/media/objects/terran/ship-yard/hangar/shipyard-build-scoutship.webm)
+
 [Play animation: Scene](../gallery/media/objects/terran/ship-yard/hangar/animation-00.webm)
 
 ## Landing Pad

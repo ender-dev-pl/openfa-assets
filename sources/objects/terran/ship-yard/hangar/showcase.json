@@ -10,7 +10,10 @@
     "sources/objects/terran/combat-eagle/construction/model.glb": "29bef70eaeb3f5f0845780c3ad0d090147e19a2b58c6e945f1e586ccce964677",
     "sources/objects/terran/combat-eagle/construction/model.json": "62f19177d2a833306fad4fa3ee7968c13058189b79c6ea50b710286d3e90b18f",
     "sources/objects/terran/scoutship/construction/model.glb": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
-    "sources/objects/terran/scoutship/construction/model.json": "0fc8afe8219e14eca4fe187509de448bdc5b9fe6a90baa91a05102fbdf7871d6"
+    "sources/objects/terran/scoutship/construction/model.json": "0fc8afe8219e14eca4fe187509de448bdc5b9fe6a90baa91a05102fbdf7871d6",
+    "sources/tools/blender/encode_shipyard_build_previews.py": "24fc12ba3c1d0c607e43ee0f462438e4521b8dccf8a620fc7cd8e5d03ebc31a7",
+    "sources/objects/terran/ship-yard/hangar/showcase-stills.json": "1c6d9b33d74449fb0e24f5aa46a65de48030d177e218c1eff3692027a5f0cde0",
+    "sources/objects/terran/ship-yard/hangar/yard-build-previews.json": "3ebe82e22f6101a4b581b1705aad6d9207980274c11b8374b74f12d8814b228c"
   },
   "clips": [
     {
@@ -20,7 +23,72 @@
       "frames": 192,
       "duration": 15.966666666666667,
       "distinct_pose_count": 179
+    },
+    {
+      "kind": "yard-build",
+      "name": "Assault Fighter — construction on shipyard platform",
+      "video": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-assault-fighter.webm",
+      "sha256": "b47ecb5e81bfe0a90f7102186874d242544a76900522dc057b4f720090b9d79d",
+      "mp4": {
+        "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-assault-fighter.mp4",
+        "sha256": "2c61f95bf0cece1141e7eb3cbbedafcd2b5550ffd6fb03da1b4403337d7f0a9c"
+      },
+      "frames": 240,
+      "duration": 8,
+      "distinct_pose_count": 5
+    },
+    {
+      "kind": "yard-build",
+      "name": "Combat Eagle — construction on shipyard platform",
+      "video": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-combat-eagle.webm",
+      "sha256": "d23435b45a2094315d6a20098e3ed8896e432338ea03e19d1cc81be2976f60fe",
+      "mp4": {
+        "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-combat-eagle.mp4",
+        "sha256": "5c1af52d098a4f3db0bfe81c407a554e61d6e918b21933c13eaaeb6699e5a218"
+      },
+      "frames": 240,
+      "duration": 8,
+      "distinct_pose_count": 5
+    },
+    {
+      "kind": "yard-build",
+      "name": "Scoutship — construction on shipyard platform",
+      "video": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-scoutship.webm",
+      "sha256": "98af39b08b44d0851f118d57b301aad8ca06b47340362d1bd9373edcbf38f992",
+      "mp4": {
+        "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-scoutship.mp4",
+        "sha256": "db50cebf66bc13c31200006b939433624b343990f61ee9a3fffe77faafbad888"
+      },
+      "frames": 240,
+      "duration": 8,
+      "distinct_pose_count": 5
     }
   ],
-  "scope": "Offline demonstration using actual canonical imported meshes and authored attachment/visibility contract. Build timing is a preview fixture, not game simulation. Neutral preview terrain masks the underground exterior."
+  "scope": "Offline demonstration using actual canonical imported meshes and authored attachment/visibility contract. Build timing is a preview fixture, not game simulation. Neutral preview terrain masks the underground exterior.",
+  "downloads": {
+    "assault-fighter-mp4": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-assault-fighter.mp4",
+      "sha256": "2c61f95bf0cece1141e7eb3cbbedafcd2b5550ffd6fb03da1b4403337d7f0a9c"
+    },
+    "assault-fighter-webm": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-assault-fighter.webm",
+      "sha256": "b47ecb5e81bfe0a90f7102186874d242544a76900522dc057b4f720090b9d79d"
+    },
+    "combat-eagle-mp4": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-combat-eagle.mp4",
+      "sha256": "5c1af52d098a4f3db0bfe81c407a554e61d6e918b21933c13eaaeb6699e5a218"
+    },
+    "combat-eagle-webm": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-combat-eagle.webm",
+      "sha256": "d23435b45a2094315d6a20098e3ed8896e432338ea03e19d1cc81be2976f60fe"
+    },
+    "scoutship-mp4": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-scoutship.mp4",
+      "sha256": "db50cebf66bc13c31200006b939433624b343990f61ee9a3fffe77faafbad888"
+    },
+    "scoutship-webm": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-scoutship.webm",
+      "sha256": "98af39b08b44d0851f118d57b301aad8ca06b47340362d1bd9373edcbf38f992"
+    }
+  }
 }

@@ -15,7 +15,7 @@ class ShowcaseTests(unittest.TestCase):
 
     def test_current_actual_multimodel_showcase(self):
         clips=showcases.showcase_previews(self.study)
-        self.assertEqual(len(clips),1)
+        self.assertGreaterEqual(len(clips),1)
         self.assertGreater(clips[0]['frames'],100)
 
     def test_stale_source_is_rejected(self):

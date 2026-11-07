@@ -121,3 +121,11 @@ changes, rather than interpolated assembly motion. Their `showcase.json` binds t
 movies to source models and stage evidence; decoded frames verify the order 1–5.
 Reproduce these presentation videos with
 `python sources/tools/blender/encode_ship_construction_previews.py`.
+
+The yard gallery player also offers a separate construction-on-platform movie for
+each of the three ships: `shipyard-build-<ship>.webm` and `.mp4` in this yard's media
+directory. Each is eight seconds / 240 frames, using the five actual combined-scene
+Blender renders from `showcase-stills.json`. These clips show construction only;
+the existing combined preview separately demonstrates the subsequent crane transfer.
+`yard-build-previews.json` records source/image/video hashes and decoded phase-order
+checks. Reproduce with `python sources/tools/blender/encode_shipyard_build_previews.py`.
