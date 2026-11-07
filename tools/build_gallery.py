@@ -53,6 +53,7 @@ def index_table(groups, cultures, categories, interactive=False):
 
 def inventory_records():
     from gallery_animation_assets import animation_previews
+    from gallery_showcase_assets import showcase_previews
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text(encoding='utf-8'))
     rows = []
     sheets = collections.defaultdict(list)
@@ -62,7 +63,7 @@ def inventory_records():
             if not study['present']:
                 continue
             blend = Path(study['blend'])
-            folder = ROOT / 'gallery/media' / blend.parent
+            folder = ROOT / study.get('media', ('gallery/media' / blend.parent).as_posix())
             names = ['front-quarter.png', 'front.png', 'render.png', blend.stem+'.png', 'gallery.png', 'top.png']
             image = next((folder / name for name in names if (folder / name).is_file()), None)
             if image is None:
@@ -76,6 +77,8 @@ def inventory_records():
             studies.append(dict(stage=study['stage'], blend='sources/'+study['blend'],
                 glb=glb.relative_to(ROOT).as_posix() if glb.is_file() else None,
                 image=image.relative_to(ROOT).as_posix(), sha256=study['sha256'],animations=previews))
+            if study.get('views'):studies[-1]['views']=study['views']
+            if study.get('showcase'):studies[-1]['showcases']=showcase_previews(study)
         assert studies, record['id']
         row = dict(id=record['id'], name=record['name'], category=record['category'],
                    culture=record['culture'], studies=studies)
@@ -124,7 +127,9 @@ def main():
                          (' · [GLB](../'+quote(study['glb'])+')' if study['glb'] else ''), '']
                 if row['category']=='trading-goods' and study['stage']=='material-refined':
                     page += ['Full procedural materials are in Blend; GLB textures are not baked.', '']
-                for clip in study['animations']:
+                if study.get('views'):
+                    page += ['Additional views: '+' · '.join('['+v['label']+'](../'+quote(v['image'])+')' for v in study['views']), '']
+                for clip in study.get('showcases',[])+study['animations']:
                     page += ['[Play animation: '+clip['name']+'](../'+quote(clip['video'])+')', '']
                 cell = Image.new('RGB', (256, 288), '#161f2b')
                 source = Image.open(ROOT / study['image']).convert('RGBA')
@@ -153,8 +158,8 @@ def main():
         for n, study in enumerate(row['studies']):
             label = ('First available' if n == 0 else 'Additional')+' / '+study['stage']
             if row['category']=='trading-goods':label=('Preserved first pass' if n==0 else 'Current refinement')+' / '+study['stage']
-            if study['animations']:
-                clips=study['animations']
+            if study['animations'] or study.get('showcases'):
+                clips=study.get('showcases',[])+study['animations']
                 preview='<video controls loop muted playsinline preload="none" poster="../'+quote(study['image'])+'" aria-label="'+html.escape(row['name']+' — '+study['stage']+' animation',quote=True)+'"><source src="../'+quote(clips[0]['video'])+'" type="video/webm">Your browser does not support WebM video.</video>'
                 if len(clips)>1:
                     options=''.join('<option value="../'+quote(c['video'])+'">'+html.escape(c['name'])+'</option>' for c in clips)
@@ -166,9 +171,12 @@ def main():
                     preview='<a href="../'+quote(study['image'])+'" aria-label="'+html.escape('Open full-resolution '+row['name']+' — '+study['stage'],quote=True)+'">'+preview+'</a>'
             if row['category']=='trading-goods' and study['stage']=='material-refined':
                 label+=' · full materials in Blend; GLB unbaked'
+            extra_views=''
+            if study.get('views'):
+                extra_views='<br>Additional views: '+' · '.join('<a href="../'+quote(v['image'])+'">'+html.escape(v['label'])+'</a>' for v in study['views'])
             images.append('<figure>'+preview+'<figcaption>'+html.escape(label)+
                 '<br><a href="../'+quote(study['blend'])+'">Blend</a>'+
-                (' · <a href="../'+quote(study['glb'])+'">GLB</a>' if study['glb'] else '')+'</figcaption></figure>')
+                (' · <a href="../'+quote(study['glb'])+'">GLB</a>' if study['glb'] else '')+extra_views+'</figcaption></figure>')
         search = ' '.join([row['name'],row['id'],row['category'],row['culture']]+[s['stage'] for s in row['studies']]).lower()
         cards.append('<article data-search="'+html.escape(search, quote=True)+'" data-race="'+html.escape(row['culture'],quote=True)+'" data-type="'+html.escape(row['category'],quote=True)+'"><h2>'+html.escape(row['name'])+'</h2><p>'+html.escape(CATEGORY_LABELS[row['category']]+' / '+culture_label(row['culture'])+' / '+row['id'])+'</p><div class="variants">'+''.join(images)+'</div></article>')
     from gallery_supplemental import supplemental_records, supplemental_cards

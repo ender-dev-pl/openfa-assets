@@ -944,20 +944,124 @@
     "culture": "terran",
     "studies": [
       {
-        "stage": "silhouette-study",
-        "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb25/model.blend",
-        "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb25/model.glb",
-        "image": "gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb25/front-quarter.png",
-        "sha256": "9132835715cd731e555914a3870e29626c06d3127f22255633f3f69512ed4510",
-        "animations": []
-      },
-      {
-        "stage": "refined-study",
-        "blend": "sources/docs/assets/bootstrap-3d/terran-refined/pb25/model.blend",
-        "glb": "sources/docs/assets/bootstrap-3d/terran-refined/pb25/model.glb",
-        "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb25/front-quarter.png",
-        "sha256": "6e8d81f52f495233586bdd762e987bca22de9477535ae8e57db95b0f7fe174bf",
-        "animations": []
+        "stage": "layered-construction-hangar",
+        "blend": "sources/objects/terran/ship-yard/model.blend",
+        "glb": "sources/objects/terran/ship-yard/model.glb",
+        "image": "gallery/media/objects/terran/ship-yard/hangar/front-quarter.png",
+        "sha256": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
+        "animations": [
+          {
+            "index": 0,
+            "name": "Scene",
+            "start": 0.03333333333333333,
+            "end": 16,
+            "duration": 15.966666666666667,
+            "video": "gallery/media/objects/terran/ship-yard/hangar/animation-00.webm",
+            "sha256": "9094034861c66ea4c1e8d7af8a3cf74f8a8f043984662254d42c6cdbd27647a9",
+            "frames": 383,
+            "fps": 23.987473903966595,
+            "distinct_pose_count": 352
+          }
+        ],
+        "views": [
+          {
+            "label": "Build: frame foundation",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-build-base.png"
+          },
+          {
+            "label": "Build: expanded frame",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-build-frame.png"
+          },
+          {
+            "label": "Build: solid components",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-build-systems.png"
+          },
+          {
+            "label": "Build: partial skin",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-partial-hull.png"
+          },
+          {
+            "label": "Complete ship",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-complete.png"
+          },
+          {
+            "label": "Lifted",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-lifted.png"
+          },
+          {
+            "label": "Hatch open",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-hatch-open-loaded.png"
+          },
+          {
+            "label": "Lowering",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-lowering.png"
+          },
+          {
+            "label": "Received below ground",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-received.png"
+          },
+          {
+            "label": "Ready",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/assault-fighter-ready.png"
+          },
+          {
+            "label": "Five construction stages",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/construction-stages.png"
+          },
+          {
+            "label": "Transfer sequence",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/transfer-contact-sheet.png"
+          },
+          {
+            "label": "Combat Eagle on hatch",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/combat-eagle-complete.png"
+          },
+          {
+            "label": "Scoutship on hatch",
+            "image": "gallery/media/objects/terran/ship-yard/hangar/scoutship-complete.png"
+          }
+        ],
+        "showcases": [
+          {
+            "kind": "complete-3d",
+            "name": "Assault Fighter \u2014 complete 3D construction and hangar transfer",
+            "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.webm",
+            "sha256": "0535ce9fd3f32136cec64b98f9b32a320072e76e6e40d5df3b2b0aac1d030f1d",
+            "mp4": {
+              "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.mp4",
+              "sha256": "f53a4edc16f0b51a85ad2fb221dbd7c97bf22fc74ca34115c2fea515d3eb1974"
+            },
+            "frames": 480,
+            "duration": 20,
+            "distinct_pose_count": 445
+          },
+          {
+            "kind": "complete-3d",
+            "name": "Combat Eagle \u2014 complete 3D construction and hangar transfer",
+            "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm",
+            "sha256": "08c634f5c8e00badae4be2f9b2006fcb8d61759875b8c320dbd88becf4399366",
+            "mp4": {
+              "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.mp4",
+              "sha256": "3c827be28951a8550ab7f22c53781c1743d5e1b7422906780d676d09909d8eff"
+            },
+            "frames": 480,
+            "duration": 20,
+            "distinct_pose_count": 445
+          },
+          {
+            "kind": "complete-3d",
+            "name": "Scoutship \u2014 complete 3D construction and hangar transfer",
+            "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.webm",
+            "sha256": "e11f88285d2facfe1620473d4bbfcc8c286568beee171c22449c38a21df2ef96",
+            "mp4": {
+              "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.mp4",
+              "sha256": "014ca28acb3436fe39090a26d912756ac320e5eeaa1cb2874ee1d6c7418c123e"
+            },
+            "frames": 480,
+            "duration": 20,
+            "distinct_pose_count": 445
+          }
+        ]
       }
     ]
   },
@@ -4616,12 +4720,49 @@
     "culture": "terran",
     "studies": [
       {
-        "stage": "reference-refined-study",
-        "blend": "sources/docs/assets/reconstruction/ships/terran/assault-fighter/model.blend",
-        "glb": "sources/docs/assets/reconstruction/ships/terran/assault-fighter/model.glb",
-        "image": "gallery/media/docs/assets/reconstruction/ships/terran/assault-fighter/front-quarter.png",
-        "sha256": "5fb2090ea98835f9ad2905df04c8a9417e0863e945e8dfe1ae5204224687adf4",
-        "animations": []
+        "stage": "layered-construction",
+        "blend": "sources/objects/terran/assault-fighter/model.blend",
+        "glb": "sources/objects/terran/assault-fighter/model.glb",
+        "image": "gallery/media/objects/terran/assault-fighter/construction/front-quarter.png",
+        "sha256": "463027eb6ffc3f7cf6a79a32552b893b92d14fcc3a79ee4886cc15571bda87dc",
+        "animations": [],
+        "views": [
+          {
+            "label": "Frame foundation",
+            "image": "gallery/media/objects/terran/assault-fighter/construction/stage-01.png"
+          },
+          {
+            "label": "Expanded frame",
+            "image": "gallery/media/objects/terran/assault-fighter/construction/stage-02.png"
+          },
+          {
+            "label": "Solid components",
+            "image": "gallery/media/objects/terran/assault-fighter/construction/stage-03.png"
+          },
+          {
+            "label": "Partial skin",
+            "image": "gallery/media/objects/terran/assault-fighter/construction/stage-04.png"
+          },
+          {
+            "label": "Complete skin",
+            "image": "gallery/media/objects/terran/assault-fighter/construction/stage-05.png"
+          }
+        ],
+        "showcases": [
+          {
+            "kind": "complete-3d",
+            "name": "Assault Fighter \u2014 complete 3D construction and hangar transfer",
+            "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.webm",
+            "sha256": "0535ce9fd3f32136cec64b98f9b32a320072e76e6e40d5df3b2b0aac1d030f1d",
+            "mp4": {
+              "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.mp4",
+              "sha256": "f53a4edc16f0b51a85ad2fb221dbd7c97bf22fc74ca34115c2fea515d3eb1974"
+            },
+            "frames": 480,
+            "duration": 20,
+            "distinct_pose_count": 445
+          }
+        ]
       }
     ]
   },
@@ -4632,12 +4773,49 @@
     "culture": "terran",
     "studies": [
       {
-        "stage": "reference-refined-study",
-        "blend": "sources/docs/assets/reconstruction/ships/terran/combat-eagle/model.blend",
-        "glb": "sources/docs/assets/reconstruction/ships/terran/combat-eagle/model.glb",
-        "image": "gallery/media/docs/assets/reconstruction/ships/terran/combat-eagle/front-quarter.png",
-        "sha256": "1da63929056fc36483570cb6dc9aa45040dce4212831c44ee34d15ab636e55ea",
-        "animations": []
+        "stage": "layered-construction",
+        "blend": "sources/objects/terran/combat-eagle/model.blend",
+        "glb": "sources/objects/terran/combat-eagle/model.glb",
+        "image": "gallery/media/objects/terran/combat-eagle/construction/front-quarter.png",
+        "sha256": "52a70d2a6698f0c4e60be4023217d6c1fec2d7a1e28286db13a697b0b6cd7dd8",
+        "animations": [],
+        "views": [
+          {
+            "label": "Frame foundation",
+            "image": "gallery/media/objects/terran/combat-eagle/construction/stage-01.png"
+          },
+          {
+            "label": "Expanded frame",
+            "image": "gallery/media/objects/terran/combat-eagle/construction/stage-02.png"
+          },
+          {
+            "label": "Solid components",
+            "image": "gallery/media/objects/terran/combat-eagle/construction/stage-03.png"
+          },
+          {
+            "label": "Partial skin",
+            "image": "gallery/media/objects/terran/combat-eagle/construction/stage-04.png"
+          },
+          {
+            "label": "Complete skin",
+            "image": "gallery/media/objects/terran/combat-eagle/construction/stage-05.png"
+          }
+        ],
+        "showcases": [
+          {
+            "kind": "complete-3d",
+            "name": "Combat Eagle \u2014 complete 3D construction and hangar transfer",
+            "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm",
+            "sha256": "08c634f5c8e00badae4be2f9b2006fcb8d61759875b8c320dbd88becf4399366",
+            "mp4": {
+              "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.mp4",
+              "sha256": "3c827be28951a8550ab7f22c53781c1743d5e1b7422906780d676d09909d8eff"
+            },
+            "frames": 480,
+            "duration": 20,
+            "distinct_pose_count": 445
+          }
+        ]
       }
     ]
   },
@@ -4648,12 +4826,49 @@
     "culture": "terran",
     "studies": [
       {
-        "stage": "reference-refined-study",
-        "blend": "sources/docs/assets/reconstruction/ships/terran/scoutship/model.blend",
-        "glb": "sources/docs/assets/reconstruction/ships/terran/scoutship/model.glb",
-        "image": "gallery/media/docs/assets/reconstruction/ships/terran/scoutship/front-quarter.png",
-        "sha256": "783e3a024b21aa2a761f509f32de05b2e452a94457407b88feb4e6319ec52cb3",
-        "animations": []
+        "stage": "layered-construction",
+        "blend": "sources/objects/terran/scoutship/model.blend",
+        "glb": "sources/objects/terran/scoutship/model.glb",
+        "image": "gallery/media/objects/terran/scoutship/construction/front-quarter.png",
+        "sha256": "85baa587530cab28fea80ad291b0006fb8d6f15d1d39625ba2de3abedaac9bad",
+        "animations": [],
+        "views": [
+          {
+            "label": "Frame foundation",
+            "image": "gallery/media/objects/terran/scoutship/construction/stage-01.png"
+          },
+          {
+            "label": "Expanded frame",
+            "image": "gallery/media/objects/terran/scoutship/construction/stage-02.png"
+          },
+          {
+            "label": "Solid components",
+            "image": "gallery/media/objects/terran/scoutship/construction/stage-03.png"
+          },
+          {
+            "label": "Partial skin",
+            "image": "gallery/media/objects/terran/scoutship/construction/stage-04.png"
+          },
+          {
+            "label": "Complete skin",
+            "image": "gallery/media/objects/terran/scoutship/construction/stage-05.png"
+          }
+        ],
+        "showcases": [
+          {
+            "kind": "complete-3d",
+            "name": "Scoutship \u2014 complete 3D construction and hangar transfer",
+            "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.webm",
+            "sha256": "e11f88285d2facfe1620473d4bbfcc8c286568beee171c22449c38a21df2ef96",
+            "mp4": {
+              "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.mp4",
+              "sha256": "014ca28acb3436fe39090a26d912756ac320e5eeaa1cb2874ee1d6c7418c123e"
+            },
+            "frames": 480,
+            "duration": 20,
+            "distinct_pose_count": 445
+          }
+        ]
       }
     ]
   },

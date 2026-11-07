@@ -1,0 +1,92 @@
+{
+  "issue": 227,
+  "inputs": {
+    "sources/docs/reconstruction/models/shipyard-canonical-assets.json": "832264fa52142e43cc13f1f6ea648057b25944dae7ef18e67fca74a850d6f999",
+    "sources/tools/blender/render_complete_shipyard_movies.py": "5032062c6106578c12e296e2664b5c6877263cac56d4f607525e007a4769b294",
+    "sources/tools/blender/render_shipyard_construction.py": "d65e8ca1dfc762c1b0a5c9d0b790ba15cc2adb1cfa5684c97cb1fc52f1aba989",
+    "sources/objects/terran/ship-yard/model.blend": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
+    "sources/objects/terran/ship-yard/model.glb": "a51fef8dbef18fdc1d54e630e1f32ec655e3a4405b26223864b9cbedcfa367ba",
+    "sources/objects/terran/ship-yard/model.json": "4f7ec272d856a208c9271a55d06242625a9f362caa9687616a88d391a9be50a8",
+    "sources/objects/terran/assault-fighter/model.glb": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+    "sources/objects/terran/assault-fighter/model.json": "ba2c89d431fc5f47c24ca1cfbc5d25038c1bb874f68cfae01ea913ed6632ee54",
+    "sources/objects/terran/ship-yard/canonical-runtime-validation.json": "d37681a6cdbec48beba6f65bf4cf6ccd7899dac3ec5d1577a6bf783520f8d84a",
+    "sources/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.json": "80b61be645504d423e87aefcf9c6cee14758cbe320aff82e6ecf22aa45b545ca",
+    "sources/tools/blender/index_complete_shipyard_movies.py": "71339f22ed4cffcdc58588e69e191f6a2b211c7e3693a3b7ffc7c8949dca86e5"
+  },
+  "clips": [
+    {
+      "kind": "complete-3d",
+      "name": "Assault Fighter — complete 3D construction and hangar transfer",
+      "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.webm",
+      "sha256": "0535ce9fd3f32136cec64b98f9b32a320072e76e6e40d5df3b2b0aac1d030f1d",
+      "mp4": {
+        "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.mp4",
+        "sha256": "f53a4edc16f0b51a85ad2fb221dbd7c97bf22fc74ca34115c2fea515d3eb1974"
+      },
+      "frames": 480,
+      "duration": 20,
+      "distinct_pose_count": 445
+    }
+  ],
+  "downloads": {
+    "mp4": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.mp4",
+      "sha256": "f53a4edc16f0b51a85ad2fb221dbd7c97bf22fc74ca34115c2fea515d3eb1974"
+    },
+    "webm": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.webm",
+      "sha256": "0535ce9fd3f32136cec64b98f9b32a320072e76e6e40d5df3b2b0aac1d030f1d"
+    }
+  },
+  "method": "Every frame rendered from evaluated canonical 3D models. Preview-only batch placement animation during construction; full canonical yard transfer with calibrated per-payload rig. No interpolation between still renders or duplicated still-image holds. Canonical model geometry is unchanged.",
+  "relocation": "Existing film retained after byte-identical model relocation and fresh current-path Blender runtime verification. Original generation inputs remain in the linked historical report; this is not a new render.",
+  "earlier_still_preview": {
+    "issue": 227,
+    "inputs": {
+      "sources/tools/blender/encode_ship_construction_previews.py": "f248dc0e8c1edb964e330dafc735a0648a344fa1164425c987d7c45107589d81",
+      "sources/objects/terran/assault-fighter/construction/model.blend": "463027eb6ffc3f7cf6a79a32552b893b92d14fcc3a79ee4886cc15571bda87dc",
+      "sources/objects/terran/assault-fighter/construction/model.glb": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+      "sources/objects/terran/assault-fighter/construction/model.json": "ba2c89d431fc5f47c24ca1cfbc5d25038c1bb874f68cfae01ea913ed6632ee54",
+      "sources/objects/terran/assault-fighter/construction/visual-review.json": "da6de63fc800be5583de31d083250c23c09d11a1a2463db6e1cb1849faf8a534"
+    },
+    "stage_images": {
+      "gallery/media/objects/terran/assault-fighter/construction/stage-01.png": "a1a61a111f3e21d3c9313567205f91bed3d26c8c2982a35c987df5ae6697690f",
+      "gallery/media/objects/terran/assault-fighter/construction/stage-02.png": "fd014647b90986aa3136befc4c52d1c909fbe01b478f700396a039b7470a9048",
+      "gallery/media/objects/terran/assault-fighter/construction/stage-03.png": "f76d99c875268a9fb271e10bb4cec74866cf5f9247003d16ffab823ad5626669",
+      "gallery/media/objects/terran/assault-fighter/construction/stage-04.png": "76b4e9353252cbd6afad456f95b192acb349ef365234161e2764d7294f4bace1",
+      "gallery/media/objects/terran/assault-fighter/construction/stage-05.png": "f02dffba3a4304dd441497e799214eff75556b089dd352e72d9ec22dfa73cf70"
+    },
+    "decoded_stage_order": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "clips": [
+      {
+        "name": "Assault Fighter — five construction stages",
+        "video": "gallery/media/objects/terran/assault-fighter/construction/construction-stages.webm",
+        "sha256": "7cbe4952fe6d9e374c783eafb201b02691fcad0943bca88c4cc0c5733242ef43",
+        "frames": 240,
+        "duration": 8,
+        "distinct_pose_count": 5,
+        "mp4": {
+          "path": "gallery/media/objects/terran/assault-fighter/construction/construction-stages.mp4",
+          "sha256": "b99b9aed2fb80de17976f6b0d1d3c4b763ca8faebd27746b6237d6bc89e0503f"
+        }
+      }
+    ],
+    "method": "Sequence of five verified actual Blender stage renders, fixed camera and scale. Hard cuts reproduce cumulative mesh visibility; no interpolated assembly motion.",
+    "downloads": {
+      "mp4": {
+        "path": "gallery/media/objects/terran/assault-fighter/construction/construction-stages.mp4",
+        "sha256": "b99b9aed2fb80de17976f6b0d1d3c4b763ca8faebd27746b6237d6bc89e0503f"
+      },
+      "webm": {
+        "path": "gallery/media/objects/terran/assault-fighter/construction/construction-stages.webm",
+        "sha256": "7cbe4952fe6d9e374c783eafb201b02691fcad0943bca88c4cc0c5733242ef43"
+      }
+    }
+  }
+}

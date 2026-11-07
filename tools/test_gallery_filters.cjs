@@ -98,7 +98,7 @@ for (const match of page.matchAll(/href="#([^"]*)"/g)) {
   assert.equal(linked.visible().length, expected.length, match[1]);
 }
 console.log(`GALLERY_FILTER_RUNTIME_OK ${combinations} race/type combinations; search, empty/reset, deep links, invalid values and index links`);
-const animatedStudies = models.flatMap(row => row.studies).filter(study => study.animations.length);
+const animatedStudies = models.flatMap(row => row.studies).filter(study => study.animations.length || (study.showcases || []).length);
 const extraVideos = supplemental.flatMap(row => row.category === 'scaffolds' ? [row.views.at(-1)] : [row.views[0]]).filter(view => view.video);
 for (const view of extraVideos) {
   assert.ok(page.includes(view.video));
@@ -106,7 +106,7 @@ for (const view of extraVideos) {
 }
 assert.equal([...page.matchAll(/<video controls loop muted playsinline preload="none"/g)].length, animatedStudies.length + extraVideos.length);
 for (const study of animatedStudies) {
-  for (const clip of study.animations) {
+  for (const clip of [...(study.showcases || []), ...study.animations]) {
     assert.ok(page.includes(clip.video), `Missing playable clip ${clip.video}`);
     if (checkMedia) assert.ok(fs.existsSync(path.join(root, clip.video)));
     assert.ok(clip.distinct_pose_count > 1);

@@ -1,0 +1,65 @@
+{
+  "issue": 227,
+  "inputs": {
+    "sources/tools/blender/render_complete_shipyard_movies.py": "04cead956aa5938dd8b05040eca7032a6d11420627eaa04dae4faf99f16a9f9b",
+    "sources/tools/blender/render_shipyard_construction.py": "a15bfc47ae5c4f458305e8435958bbf06d4e6189b0ccb544a4fc1ce77e38c992",
+    "sources/objects/terran/ship-yard/hangar/model.blend": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
+    "sources/objects/terran/ship-yard/hangar/model.glb": "a51fef8dbef18fdc1d54e630e1f32ec655e3a4405b26223864b9cbedcfa367ba",
+    "sources/objects/terran/ship-yard/hangar/model.json": "4f7ec272d856a208c9271a55d06242625a9f362caa9687616a88d391a9be50a8",
+    "sources/objects/terran/combat-eagle/construction/model.glb": "29bef70eaeb3f5f0845780c3ad0d090147e19a2b58c6e945f1e586ccce964677",
+    "sources/objects/terran/combat-eagle/construction/model.json": "62f19177d2a833306fad4fa3ee7968c13058189b79c6ea50b710286d3e90b18f"
+  },
+  "clips": [
+    {
+      "kind": "complete-3d",
+      "name": "Combat Eagle \u2014 complete 3D construction and hangar transfer",
+      "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm",
+      "sha256": "08c634f5c8e00badae4be2f9b2006fcb8d61759875b8c320dbd88becf4399366",
+      "mp4": {
+        "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.mp4",
+        "sha256": "3c827be28951a8550ab7f22c53781c1743d5e1b7422906780d676d09909d8eff"
+      },
+      "frames": 480,
+      "duration": 20,
+      "distinct_pose_count": 445
+    }
+  ],
+  "downloads": {
+    "mp4": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.mp4",
+      "sha256": "3c827be28951a8550ab7f22c53781c1743d5e1b7422906780d676d09909d8eff"
+    },
+    "webm": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm",
+      "sha256": "08c634f5c8e00badae4be2f9b2006fcb8d61759875b8c320dbd88becf4399366"
+    }
+  },
+  "fps": 24,
+  "resolution": 768,
+  "engine": "BLENDER_EEVEE_NEXT",
+  "assembly_windows_seconds": [
+    [
+      0,
+      1.3
+    ],
+    [
+      1.3,
+      3.0
+    ],
+    [
+      3.0,
+      4.9
+    ],
+    [
+      4.9,
+      6.5
+    ],
+    [
+      6.5,
+      8.0
+    ]
+  ],
+  "payload_hoist_offset": -0.06595540046691895,
+  "per_frame_attachment_and_sling_checks": true,
+  "method": "Every frame rendered from evaluated canonical 3D models. Preview-only batch placement animation during construction; full canonical yard transfer with calibrated per-payload rig. No interpolation between still renders or duplicated still-image holds. Canonical model geometry is unchanged."
+}

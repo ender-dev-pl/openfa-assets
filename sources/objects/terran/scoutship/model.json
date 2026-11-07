@@ -1,0 +1,89 @@
+{
+  "issue": 227,
+  "id": "openfa:scoutship",
+  "source_glb": "sources/docs/assets/reconstruction/ships/terran/scoutship/model.glb",
+  "source_glb_sha256": "58ae7ab4da9ac053d97b3e146f6013483ac83db106f1992c4a8285b3402369d0",
+  "blend_sha256": "85baa587530cab28fea80ad291b0006fb8d6f15d1d39625ba2de3abedaac9bad",
+  "glb_sha256": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+  "generator_sha256": "7dbfb99363341d336cba00a9cdc655b62367bcf45b998fa336b75a2c420a930d",
+  "geometry_helper_sha256": "a0ed4679d289cb69fe6ce378b62b8bde2a7b98ba18f7ca0c95772d7bc5d8484c",
+  "shell_bounds": [
+    [
+      -1.9299999475479126,
+      -2.5799996852874756,
+      -0.21379999816417694
+    ],
+    [
+      1.9299999475479126,
+      2.130000114440918,
+      0.5772375464439392
+    ]
+  ],
+  "game_world_size": 28,
+  "layers": [
+    {
+      "node": "Build01_BaseFrame",
+      "progress_start": 0
+    },
+    {
+      "node": "Build02_ExpandedFrame",
+      "progress_start": 0.16
+    },
+    {
+      "node": "Build03_Systems",
+      "progress_start": 0.38
+    },
+    {
+      "node": "HullPartial",
+      "progress_start": 0.65
+    },
+    {
+      "node": "HullFinal",
+      "progress_start": 0.88
+    }
+  ],
+  "flight_hidden_nodes": [
+    "Build01_BaseFrame",
+    "Build02_ExpandedFrame",
+    "Build03_Systems"
+  ],
+  "flight_visible_nodes": [
+    "HullPartial",
+    "HullFinal"
+  ],
+  "lift_socket": [
+    0.0,
+    -0.2249997854232788,
+    0.8598375487327576
+  ],
+  "lifting_contacts": [
+    [
+      -0.3296999931335449,
+      0.10470020771026611,
+      0.42000001668930054
+    ],
+    [
+      0.3296999931335449,
+      0.10470020771026611,
+      0.42000001668930054
+    ],
+    [
+      0.0,
+      -0.6488997936248779,
+      0.3860701322555542
+    ]
+  ],
+  "mesh_nodes": 17,
+  "triangles": 54300,
+  "interior_vertices": 13608,
+  "vertices_outside_ray_sections": 0,
+  "engineering": "Authored interior constrained by actual shell sections; original exterior faces, normals, UVs and materials preserved and partitioned into disjoint partial/final hull batches.",
+  "client_binding": "Use real build fraction for cumulative five-layer visibility. In flight draw both children of Hull, skip all Build* batches. Socket coordinates are ship-local; apply the same placement transform as the ship.",
+  "stage_images": [
+    "stage-01.png",
+    "stage-02.png",
+    "stage-03.png",
+    "stage-04.png",
+    "stage-05.png"
+  ]
+}

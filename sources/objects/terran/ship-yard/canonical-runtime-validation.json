@@ -1,0 +1,116 @@
+{
+  "issue": 227,
+  "inputs": {
+    "sources/docs/reconstruction/models/shipyard-canonical-assets.json": "832264fa52142e43cc13f1f6ea648057b25944dae7ef18e67fca74a850d6f999",
+    "sources/objects/terran/assault-fighter/model.blend": "463027eb6ffc3f7cf6a79a32552b893b92d14fcc3a79ee4886cc15571bda87dc",
+    "sources/objects/terran/assault-fighter/model.glb": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+    "sources/objects/terran/combat-eagle/model.blend": "52a70d2a6698f0c4e60be4023217d6c1fec2d7a1e28286db13a697b0b6cd7dd8",
+    "sources/objects/terran/combat-eagle/model.glb": "29bef70eaeb3f5f0845780c3ad0d090147e19a2b58c6e945f1e586ccce964677",
+    "sources/objects/terran/scoutship/model.blend": "85baa587530cab28fea80ad291b0006fb8d6f15d1d39625ba2de3abedaac9bad",
+    "sources/objects/terran/scoutship/model.glb": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+    "sources/objects/terran/ship-yard/model.blend": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
+    "sources/objects/terran/ship-yard/model.glb": "a51fef8dbef18fdc1d54e630e1f32ec655e3a4405b26223864b9cbedcfa367ba",
+    "sources/tools/blender/verify_canonical_shipyard_assets.py": "85fe1376946e54430f782911fc12f11b9b0f99aac5deb868ddb1c7a4ad4fc727",
+    "sources/tools/blender/render_complete_shipyard_movies.py": "5032062c6106578c12e296e2664b5c6877263cac56d4f607525e007a4769b294",
+    "sources/tools/blender/render_shipyard_construction.py": "d65e8ca1dfc762c1b0a5c9d0b790ba15cc2adb1cfa5684c97cb1fc52f1aba989",
+    "sources/tools/blender/build_shipyard_hangar.py": "87fcedaea38d5cd4df10a0e40d2a24a28606973cb4ad70b6bf5ad9be0889b990",
+    "sources/tools/blender/build_ship_construction_layers.py": "f72e043234606dc45035b34f07469af83b753184c5da46f4cf780d0526a30bec"
+  },
+  "payloads_checked": 3,
+  "controller_frames_per_payload": 480,
+  "geometry_relocated_byte_identically": true,
+  "flight_and_construction_share_model": true,
+  "payloads": [
+    {
+      "ship": "assault-fighter",
+      "frames": 480,
+      "contact_assertions": true,
+      "flight_visible_meshes": 14,
+      "flight_triangles": 47198,
+      "flight_image_sha256": "b6ba7da2b257801771ec17d46fa89bf9a8c4a0cfb1d123c325994e3ac4e98055",
+      "combined_renders": [
+        {
+          "seconds": 3,
+          "sha256": "265c16e4d58aa34aaba579880e00fa59baf0f5be688e54c3983e9adee3d966f5"
+        },
+        {
+          "seconds": 7.9,
+          "sha256": "199319b59c82d722d0cabbf0103a58e8c4acb4d9715d61bfa49aadcaba1df18b"
+        },
+        {
+          "seconds": 10.5,
+          "sha256": "d207750c0570375903aa6589277a2dec66aef04bfc671df374dd2db7c40eb734"
+        },
+        {
+          "seconds": 15,
+          "sha256": "66604d2ea18ecc742a6002d574e3d52e61a81dbd1225bb79cb109725d77422e6"
+        },
+        {
+          "seconds": 19.9,
+          "sha256": "cd762f26f0c058f1fecc672bb247f115896b0baa75f603be202505ee5799010d"
+        }
+      ]
+    },
+    {
+      "ship": "combat-eagle",
+      "frames": 480,
+      "contact_assertions": true,
+      "flight_visible_meshes": 13,
+      "flight_triangles": 29192,
+      "flight_image_sha256": "b638c52a1639898ad75445b849ed097c709bac2a21915ff40f0d12566bdfa8bc",
+      "combined_renders": [
+        {
+          "seconds": 3,
+          "sha256": "669bb96caa621cfdce7e1da0866eb22e256c552a8b6a2c5c92ac0433c2fa8a28"
+        },
+        {
+          "seconds": 7.9,
+          "sha256": "a305b3165d7c483b7beff00d23f958e9a4b5616b3db60869c0b750ad01be32b7"
+        },
+        {
+          "seconds": 10.5,
+          "sha256": "71c520a38c42916658a7c70f5683f6ddbc2d4cb749a57d18e3693ce37945dbc8"
+        },
+        {
+          "seconds": 15,
+          "sha256": "35d3210608182285587f4d6785f891e7f1f620e66de38591ed4d9b4431154b68"
+        },
+        {
+          "seconds": 19.9,
+          "sha256": "e2b886a823ea883c1d74d4c63d86ff65b4b2bc894fa43eddb13b43ab06be315c"
+        }
+      ]
+    },
+    {
+      "ship": "scoutship",
+      "frames": 480,
+      "contact_assertions": true,
+      "flight_visible_meshes": 14,
+      "flight_triangles": 31344,
+      "flight_image_sha256": "0d5373f9a6d51015f2ca4f39bc942582527b7b00a25a0497215f3acc00144d1e",
+      "combined_renders": [
+        {
+          "seconds": 3,
+          "sha256": "4fd7e28be4e0b04d552f299d64f678a1040953e37dd772ac51a8096dbd561db4"
+        },
+        {
+          "seconds": 7.9,
+          "sha256": "090495c11f102f6d44966cf0ca4632ffd97b9d60b34348059c273d988c8569c5"
+        },
+        {
+          "seconds": 10.5,
+          "sha256": "8b8fc75cd49199043f6cc1ad7203765b3ac85471f010243d9c669ed90eec995b"
+        },
+        {
+          "seconds": 15,
+          "sha256": "18c00349c8851a114e8a832a4afcd18e36a4df92ee156ce261c4a44da0b741dc"
+        },
+        {
+          "seconds": 19.9,
+          "sha256": "621d74808938f0cbdea9df57aa78c275277922796a64ce6956918871ec438db5"
+        }
+      ]
+    }
+  ],
+  "media": "Existing full movies retained; actual new-path combined probes and native flight renders inspected separately. No claim that the old movie was rerendered."
+}

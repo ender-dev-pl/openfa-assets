@@ -1,0 +1,92 @@
+{
+  "issue": 227,
+  "inputs": {
+    "sources/docs/reconstruction/models/shipyard-canonical-assets.json": "832264fa52142e43cc13f1f6ea648057b25944dae7ef18e67fca74a850d6f999",
+    "sources/tools/blender/render_complete_shipyard_movies.py": "5032062c6106578c12e296e2664b5c6877263cac56d4f607525e007a4769b294",
+    "sources/tools/blender/render_shipyard_construction.py": "d65e8ca1dfc762c1b0a5c9d0b790ba15cc2adb1cfa5684c97cb1fc52f1aba989",
+    "sources/objects/terran/ship-yard/model.blend": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
+    "sources/objects/terran/ship-yard/model.glb": "a51fef8dbef18fdc1d54e630e1f32ec655e3a4405b26223864b9cbedcfa367ba",
+    "sources/objects/terran/ship-yard/model.json": "4f7ec272d856a208c9271a55d06242625a9f362caa9687616a88d391a9be50a8",
+    "sources/objects/terran/scoutship/model.glb": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+    "sources/objects/terran/scoutship/model.json": "0fc8afe8219e14eca4fe187509de448bdc5b9fe6a90baa91a05102fbdf7871d6",
+    "sources/objects/terran/ship-yard/canonical-runtime-validation.json": "d37681a6cdbec48beba6f65bf4cf6ccd7899dac3ec5d1577a6bf783520f8d84a",
+    "sources/objects/terran/ship-yard/hangar/complete-3d-scoutship.json": "0e37ebe33e926a96908d86d5aea8502ea637995b045715d3885b5d4e8c28b47a",
+    "sources/tools/blender/index_complete_shipyard_movies.py": "71339f22ed4cffcdc58588e69e191f6a2b211c7e3693a3b7ffc7c8949dca86e5"
+  },
+  "clips": [
+    {
+      "kind": "complete-3d",
+      "name": "Scoutship — complete 3D construction and hangar transfer",
+      "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.webm",
+      "sha256": "e11f88285d2facfe1620473d4bbfcc8c286568beee171c22449c38a21df2ef96",
+      "mp4": {
+        "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.mp4",
+        "sha256": "014ca28acb3436fe39090a26d912756ac320e5eeaa1cb2874ee1d6c7418c123e"
+      },
+      "frames": 480,
+      "duration": 20,
+      "distinct_pose_count": 445
+    }
+  ],
+  "downloads": {
+    "mp4": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.mp4",
+      "sha256": "014ca28acb3436fe39090a26d912756ac320e5eeaa1cb2874ee1d6c7418c123e"
+    },
+    "webm": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.webm",
+      "sha256": "e11f88285d2facfe1620473d4bbfcc8c286568beee171c22449c38a21df2ef96"
+    }
+  },
+  "method": "Every frame rendered from evaluated canonical 3D models. Preview-only batch placement animation during construction; full canonical yard transfer with calibrated per-payload rig. No interpolation between still renders or duplicated still-image holds. Canonical model geometry is unchanged.",
+  "relocation": "Existing film retained after byte-identical model relocation and fresh current-path Blender runtime verification. Original generation inputs remain in the linked historical report; this is not a new render.",
+  "earlier_still_preview": {
+    "issue": 227,
+    "inputs": {
+      "sources/tools/blender/encode_ship_construction_previews.py": "f248dc0e8c1edb964e330dafc735a0648a344fa1164425c987d7c45107589d81",
+      "sources/objects/terran/scoutship/construction/model.blend": "85baa587530cab28fea80ad291b0006fb8d6f15d1d39625ba2de3abedaac9bad",
+      "sources/objects/terran/scoutship/construction/model.glb": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+      "sources/objects/terran/scoutship/construction/model.json": "0fc8afe8219e14eca4fe187509de448bdc5b9fe6a90baa91a05102fbdf7871d6",
+      "sources/objects/terran/scoutship/construction/visual-review.json": "242e201776f4d3596648d51564e7e71bd44745c8299992c5ca0e442be12b1d61"
+    },
+    "stage_images": {
+      "gallery/media/objects/terran/scoutship/construction/stage-01.png": "f487544126087c5bd0ef3371127d3ee9e346309ca5aa7303bbf6d2cee00c574a",
+      "gallery/media/objects/terran/scoutship/construction/stage-02.png": "1ee5c3d4aedde9216090ee76b4aa7cf6d94219aaa77f2c16341a6504555f4145",
+      "gallery/media/objects/terran/scoutship/construction/stage-03.png": "5b21f672d30cd5b3bb0ab24c04196493a852e41629f3810d621d6f9500bf5987",
+      "gallery/media/objects/terran/scoutship/construction/stage-04.png": "8ca47c1f2c6d46581754917c3a03cab9cb3f1d052883082025f25b4165d5a552",
+      "gallery/media/objects/terran/scoutship/construction/stage-05.png": "ad15467e809c17a6dfd77768e094445abc009e52838536aff3d0209064873606"
+    },
+    "decoded_stage_order": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "clips": [
+      {
+        "name": "Scoutship — five construction stages",
+        "video": "gallery/media/objects/terran/scoutship/construction/construction-stages.webm",
+        "sha256": "d7fdc7c1a40836f069deaa6b7fcd15406ad5afeb80e95b85a8f55a891af0ca28",
+        "frames": 240,
+        "duration": 8,
+        "distinct_pose_count": 5,
+        "mp4": {
+          "path": "gallery/media/objects/terran/scoutship/construction/construction-stages.mp4",
+          "sha256": "8186905129c372e8b42d07b3a1beba28f9980ef010328a04effcf9f471b56d93"
+        }
+      }
+    ],
+    "method": "Sequence of five verified actual Blender stage renders, fixed camera and scale. Hard cuts reproduce cumulative mesh visibility; no interpolated assembly motion.",
+    "downloads": {
+      "mp4": {
+        "path": "gallery/media/objects/terran/scoutship/construction/construction-stages.mp4",
+        "sha256": "8186905129c372e8b42d07b3a1beba28f9980ef010328a04effcf9f471b56d93"
+      },
+      "webm": {
+        "path": "gallery/media/objects/terran/scoutship/construction/construction-stages.webm",
+        "sha256": "d7fdc7c1a40836f069deaa6b7fcd15406ad5afeb80e95b85a8f55a891af0ca28"
+      }
+    }
+  }
+}
