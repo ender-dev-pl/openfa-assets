@@ -2,6 +2,7 @@
 import ast
 import html
 import json
+import hashlib
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -14,10 +15,21 @@ def supplemental_records():
     tree=ast.parse((ROOT/'tools/build_ui_gallery.py').read_text(encoding='utf-8'))
     cards=next(ast.literal_eval(n.value) for n in ast.walk(tree) if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='cards' for t in n.targets))
     for title,image,source,description in cards[2:]:
+        if source=='camera-mode-icon':continue
         stem='interactive-sphere' if source=='interactive-menu-sphere' else 'main-menu'
         view=dict(label=description,image='gallery/media/ui/'+image,blend='sources/ui/'+source+'/'+stem+'.blend',glb='sources/ui/'+source+'/'+stem+'.glb')
         if image.endswith('spin-37.png'):view['video']='gallery/media/ui/interactive-menu-sphere/sphere-spin.webm'
         rows.append(dict(id='ui:'+image,name=title,category='ui',culture='shared',views=[view],detail='sources/ui/'+source+'/README.md'))
+    camera=json.loads((ROOT/'sources/ui/camera-mode-icon/catalog.json').read_text())
+    def check(row):
+        assert hashlib.sha256((ROOT/row['path']).read_bytes()).hexdigest()==row['sha256'],row['path']
+    for path,digest in camera['inputs'].items():check(dict(path=path,sha256=digest))
+    for key in ['blend','glb','preview']:check(camera[key])
+    views=[dict(label='Orbit and pitch mode: native size and interaction states',image=camera['preview']['path'],blend=camera['blend']['path'],glb=camera['glb']['path'])]
+    for size,files in camera['files'].items():
+        for state,row in files.items():
+            check(row);views.append(dict(label='Camera mode / '+size+' / '+state,image=row['path']))
+    rows.append(dict(id='ui:camera-mode-icon',name='Camera orbit and pitch mode',category='ui',culture='shared',views=views,detail='sources/ui/camera-mode-icon/README.md'))
     families=ROOT/'sources/docs/assets/reconstruction/scaffolds/culture-kits/families'
     for folder in sorted(families.iterdir()):
         if not (folder/'model.json').is_file():continue
