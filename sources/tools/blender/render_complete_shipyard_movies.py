@@ -32,7 +32,7 @@ def clamp(value):return min(1,max(0,value))
 def initialize(ship):
     scene,objects,config=combined_scene(ship);scene.frame_set(1);bpy.context.view_layer.update()
     root=next(obj for obj in objects if obj.name=='ShipAssembly')
-    meta=json.loads((ROOT/'sources/objects/terran'/ship/'construction/model.json').read_text())
+    meta=json.loads((ROOT/'sources/objects/terran'/ship/'model.json').read_text())
     size=max(b-a for a,b in zip(*meta['shell_bounds']));components=[]
     for obj in objects:
         if obj.type!='MESH':continue
@@ -118,10 +118,10 @@ def main():
         subprocess.run([ffmpeg,'-v','error','-i',str(output),'-f','null','-'],check=True,capture_output=True)
         outputs[extension]=dict(path=output.relative_to(ROOT).as_posix(),sha256=sha(output))
     files=[Path(__file__),Path(__file__).with_name('render_shipyard_construction.py'),OUT/'model.blend',OUT/'model.glb',OUT/'model.json']
-    files.extend(ROOT/'sources/objects/terran'/ship/'construction'/name for name in ['model.glb','model.json'])
+    files.extend(ROOT/'sources/objects/terran'/ship/name for name in ['model.glb','model.json'])
     clip=dict(kind='complete-3d',name=ship.replace('-',' ').title()+' — complete 3D construction and hangar transfer',video=outputs['webm']['path'],sha256=outputs['webm']['sha256'],mp4=outputs['mp4'],frames=count,duration=DURATION,distinct_pose_count=len(states))
     evidence=dict(issue=227,inputs={p.relative_to(ROOT).as_posix():sha(p) for p in files},clips=[clip],downloads=outputs,fps=args.fps,resolution=args.resolution,engine=args.engine,assembly_windows_seconds=WINDOWS,payload_hoist_offset=config['eye_height_offset'],per_frame_attachment_and_sling_checks=True,method='Every frame rendered from evaluated canonical 3D models. Preview-only batch placement animation during construction; full canonical yard transfer with calibrated per-payload rig. No interpolation between still renders or duplicated still-image holds. Canonical model geometry is unchanged.')
-    (OUT/('complete-3d-'+ship+'.json')).write_text(json.dumps(evidence,indent=2)+'\n',encoding='utf-8')
+    (OUT/'hangar'/('complete-3d-'+ship+'.json')).write_text(json.dumps(evidence,indent=2)+'\n',encoding='utf-8')
     print('COMPLETE_3D_VIDEO_VERIFIED',ship,count,len(states),flush=True)
 
 

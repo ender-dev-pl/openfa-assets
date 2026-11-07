@@ -60,8 +60,8 @@ def main():
         verified_order[ship]=order
         clips.append(dict(kind='yard-build',name=title+' — construction on shipyard platform',video=outputs['webm']['path'],sha256=outputs['webm']['sha256'],mp4=outputs['mp4'],frames=240,duration=8,distinct_pose_count=5))
         print('SHIPYARD_BUILD_VIDEO_VERIFIED',ship,240,8,order,flush=True)
-    inputs=[Path(__file__),renderer,SOURCE/'model.blend',SOURCE/'model.glb',SOURCE/'model.json',SOURCE/'showcase-stills.json']
-    for ship in SHIPS:inputs.extend(ROOT/'sources/objects/terran'/ship/'construction'/name for name in ['model.glb','model.json'])
+    inputs=[Path(__file__),renderer,SOURCE.parent/'model.blend',SOURCE.parent/'model.glb',SOURCE.parent/'model.json',SOURCE/'showcase-stills.json']
+    for ship in SHIPS:inputs.extend(ROOT/'sources/objects/terran'/ship/name for name in ['model.glb','model.json'])
     data=dict(issue=227,inputs={p.relative_to(ROOT).as_posix():sha(p) for p in inputs},clips=clips,downloads=downloads,stage_images=images,decoded_stage_order=verified_order,method='Five actual Blender construction-stage renders on the yard platform, fixed game-calibrated placement and camera, discrete visibility changes. No interpolated assembly motion or post-build transfer in these three clips.')
     path=SOURCE/'yard-build-previews.json';path.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     gallery_path=SOURCE/'showcase.json';gallery=json.loads(gallery_path.read_text(encoding='utf-8'))

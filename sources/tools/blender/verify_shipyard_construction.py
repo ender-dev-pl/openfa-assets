@@ -1,5 +1,6 @@
 """Actual native/GLB geometry and full transfer envelope verification (#227)."""
 import json
+import hashlib
 import sys
 from pathlib import Path
 import bpy
@@ -11,6 +12,18 @@ ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(Path(__file__).parent))
 from build_ship_construction_layers import SHIPS,sha
 from build_shipyard_hangar import OUT,DECK,HALF,END
+
+
+def verify_recipe(meta, name):
+    current=sha(Path(__file__).with_name(name))
+    if meta['generator_sha256']==current:return
+    # Relocation does not rewrite the historical authoring provenance. Require
+    # the exact unchanged model and explicitly reviewed replacement recipe.
+    migration=json.loads((ROOT/'sources/docs/reconstruction/models/shipyard-canonical-assets.json').read_text())
+    recipe=next(row for row in migration['recipe_relocation'] if row['path'].endswith('/'+name))
+    assert recipe['authored_sha256']==meta['generator_sha256']
+    assert recipe['relocated_sha256']==current
+    assert any(row['glb_sha256']==meta['glb_sha256'] for row in migration['models'])
 
 
 def vertices(objects):
@@ -56,12 +69,12 @@ def compare_asset(folder,poses):
 
 
 def verify_ship(ship):
-    folder=ROOT/'sources/objects/terran'/ship/'construction';meta=json.loads((folder/'model.json').read_text())
+    folder=ROOT/'sources/objects/terran'/ship;meta=json.loads((folder/'model.json').read_text())
     report=compare_asset(folder,[1])
     assert meta['vertices_outside_ray_sections']==0
     assert meta['triangles']<85000 and meta['mesh_nodes']<=20,(ship,meta['triangles'],meta['mesh_nodes'])
     assert meta['glb_sha256']==report['glb_sha256'] and meta['blend_sha256']==report['blend_sha256']
-    assert meta['generator_sha256']==sha(Path(__file__).with_name('build_ship_construction_layers.py'))
+    verify_recipe(meta, 'build_ship_construction_layers.py')
     assert all(bpy.data.objects.get(row['node']) for row in meta['layers'])
     assert all(len(bpy.data.objects[name].children)>0 for name in meta['flight_hidden_nodes'])
     shell=[o for o in bpy.context.scene.objects if o.type=='MESH' and o.name.startswith(('HullPartialBatch_','HullFinalBatch_'))]
@@ -69,12 +82,15 @@ def verify_ship(ship):
     hull_triangles=sum(len(p.vertices)-2 for o in shell for p in o.data.polygons)
     partial_triangles=sum(len(p.vertices)-2 for o in shell if o.name.startswith('HullPartialBatch_') for p in o.data.polygons)
     assert .10<partial_triangles/hull_triangles<.75,(ship,partial_triangles,hull_triangles)
-    bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.gltf(filepath=str(ROOT/meta['source_glb']))
-    original=vertices([o for o in bpy.context.scene.objects if o.type=='MESH'])
-    original_triangles=sum(len(p.vertices)-2 for o in bpy.context.scene.objects if o.type=='MESH' for p in o.data.polygons)
+    baseline_path=folder/'exterior-baseline.json';baseline=json.loads(baseline_path.read_text())
+    points=sorted(set(tuple(round(float(c),6) for c in p) for p in target))
+    fingerprint=hashlib.sha256(json.dumps(points,separators=(',',':')).encode()).hexdigest()
+    assert fingerprint==baseline['hull_points_sha256'],(ship,'canonical exterior changed')
+    original_triangles=baseline['original_triangles']
     assert hull_triangles==original_triangles,(ship,hull_triangles,original_triangles)
-    drift=max(distance(original,target),distance(target,original));assert drift<.00001,(ship,drift)
-    report.update(original_hull_sha256=sha(ROOT/meta['source_glb']),hull_vertex_drift=drift,construction_layers=5,flight_hidden_batches=3,contained_in_actual_ray_sections=True,original_hull_triangles=original_triangles,partial_hull_triangles=partial_triangles,final_hull_triangles=hull_triangles-partial_triangles,complete_hull_has_no_added_or_missing_triangles=True)
+    drift=baseline['original_to_upgraded_max_vertex_drift']
+    assert drift<.00001
+    report.update(original_hull_sha256=baseline['original_glb_sha256'],historical_original_comparison_drift=drift,exterior_baseline_sha256=sha(baseline_path),verified_current_hull_points_sha256=fingerprint,construction_layers=5,flight_hidden_batches=3,contained_in_actual_ray_sections=True,original_hull_triangles=original_triangles,partial_hull_triangles=partial_triangles,final_hull_triangles=hull_triangles-partial_triangles,complete_hull_has_no_added_or_missing_triangles=True)
     (folder/'runtime-validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
     print('CONSTRUCTION_SHIP_VERIFIED',ship,drift,flush=True)
 
@@ -83,7 +99,7 @@ def verify_yard():
     poses=[1,120,145,150,170,190,195,215,235,245,280,305,330,335,365,395,415,440,465,480]
     report=compare_asset(OUT,poses)
     meta=json.loads((OUT/'model.json').read_text());assert meta['glb_sha256']==report['glb_sha256']
-    assert meta['generator_sha256']==sha(Path(__file__).with_name('build_shipyard_hangar.py'))
+    verify_recipe(meta, 'build_shipyard_hangar.py')
     rows=[];max_attachment_gap=0;min_edge_clearance=100
     root=bpy.data.objects['PlacementRoot'];carrier=bpy.data.objects['ShipConstructionPlacement'];attachment=bpy.data.objects['LoadAttachment']
     well=bpy.data.objects['HangarWellGeometry'];well_tree=BVHTree.FromPolygons(vertices([well]),[tuple(p.vertices) for p in well.data.polygons])
@@ -93,7 +109,7 @@ def verify_yard():
             obj=bpy.data.objects[name];tree=BVHTree.FromPolygons(vertices([obj]),[tuple(p.vertices) for p in obj.data.polygons])
             assert not tree.overlap(well_tree),(frame,name,'door/well intersection')
     for ship,config in meta['ships'].items():
-        ship_meta=json.loads((ROOT/'sources/objects/terran'/ship/'construction/model.json').read_text())
+        ship_meta=json.loads((ROOT/'sources/objects/terran'/ship/'model.json').read_text())
         lo,hi=map(Vector,ship_meta['shell_bounds']);matrix=Matrix(config['matrix'])
         points=[matrix@Vector((x,y,z)) for x in [lo.x,hi.x] for y in [lo.y,hi.y] for z in [lo.z,hi.z]]
         assert max(abs(v.x) for v in points)<HALF-.25 and max(abs(v.y) for v in points)<HALF-.25

@@ -39,6 +39,32 @@ def hull_bvh(objects):
     return BVHTree.FromPolygons(vertices, faces), vertices
 
 
+def hull_solids(objects):
+    """Reconnect complementary skin batches before testing individual solids.
+
+    Material batching and partial/final splitting are rendering concerns; they
+    cannot be treated as closed physical solids for ray parity tests.
+    """
+    points=[];index={};faces=[];parents=[]
+    def find(i):
+        while parents[i]!=i:
+            parents[i]=parents[parents[i]];i=parents[i]
+        return i
+    for obj in objects:
+        local={}
+        for vertex in obj.data.vertices:
+            p=obj.matrix_world@vertex.co;key=tuple(round(c,6) for c in p)
+            if key not in index:
+                index[key]=len(points);points.append(p);parents.append(len(parents))
+            local[vertex.index]=index[key]
+        for polygon in obj.data.polygons:
+            face=tuple(local[i] for i in polygon.vertices);faces.append(face)
+            for i in face[1:]:parents[find(i)]=find(face[0])
+    groups={}
+    for face in faces:groups.setdefault(find(face[0]),[]).append(face)
+    return [BVHTree.FromPolygons(points,group) for group in groups.values()]
+
+
 def hull_partition(obj,indices,name):
     source=obj.data;vertices=[];mapping={};faces=[];loops=[];smooth=[]
     for index in indices:
@@ -61,16 +87,24 @@ def hull_partition(obj,indices,name):
 def build(ship, render):
     bpy.ops.wm.read_factory_settings(use_empty=True)
     bpy.context.preferences.filepaths.save_version = 0
-    source = ROOT/'sources/docs/assets/reconstruction/ships/terran'/ship/'model.glb'
-    out = ROOT/'sources/objects/terran'/ship/'construction'
+    # Rebuild from the canonical exterior; an upgraded ship is its own hull input.
+    # No frozen pre-construction GLB is distributed alongside the current model.
+    source = ROOT/'sources/objects/terran'/ship/'model.glb'
+    source_digest = sha(source)
+    out = ROOT/'sources/objects/terran'/ship
     media = ROOT/'gallery/media/objects/terran'/ship/'construction'
     out.mkdir(parents=True, exist_ok=True); media.mkdir(parents=True, exist_ok=True)
     bpy.ops.import_scene.gltf(filepath=str(source))
-    shell = [o for o in bpy.context.scene.objects if o.type == 'MESH']
+    layered = bpy.data.objects.get('ShipAssembly') is not None
+    shell = [o for o in bpy.context.scene.objects if o.type == 'MESH'
+             and (not layered or o.name.startswith(('HullPartialBatch_', 'HullFinalBatch_')))]
+    for obj in list(bpy.context.scene.objects):
+        if obj.type == 'MESH' and obj not in shell:
+            bpy.data.objects.remove(obj, do_unlink=True)
     tree, vertices = hull_bvh(shell)
     # Test each manufactured solid independently. Global parity across overlapping
     # armour and pressure hulls would incorrectly classify their shared core as air.
-    solid_trees=[hull_bvh([obj])[0] for obj in shell]
+    solid_trees=hull_solids(shell) if layered else [hull_bvh([obj])[0] for obj in shell]
     low = Vector([min(p[i] for p in vertices) for i in range(3)])
     high = Vector([max(p[i] for p in vertices) for i in range(3)])
     length = max(high-low); centre = (high+low)/2
@@ -225,7 +259,7 @@ def build(ship, render):
     layer_vertices=[v.co for name in internal for obj in bpy.data.objects[name].children for v in obj.data.vertices]
     outside=sum(not inside(p,length*-.001) for p in layer_vertices)
     assert outside==0,(ship,outside)
-    report=dict(issue=227,id='openfa:'+ship,source_glb=source.relative_to(ROOT).as_posix(),source_glb_sha256=sha(source),blend_sha256=sha(out/'model.blend'),glb_sha256=sha(out/'model.glb'),generator_sha256=sha(Path(__file__)),geometry_helper_sha256=sha(Path(geo.__file__)),shell_bounds=[list(low),list(high)],game_world_size=SHIPS[ship],layers=[dict(node=name,progress_start=value) for name,value in zip(internal+['HullPartial','HullFinal'],[0,.16,.38,.65,.88])],flight_hidden_nodes=internal,flight_visible_nodes=['HullPartial','HullFinal'],lift_socket=eye,lifting_contacts=contacts,mesh_nodes=len(meshes),triangles=sum(len(p.vertices)-2 for o in meshes for p in o.data.polygons),interior_vertices=len(layer_vertices),vertices_outside_ray_sections=outside,engineering='Authored interior constrained by actual shell sections; original exterior faces, normals, UVs and materials preserved and partitioned into disjoint partial/final hull batches.',client_binding='Use real build fraction for cumulative five-layer visibility. In flight draw both children of Hull, skip all Build* batches. Socket coordinates are ship-local; apply the same placement transform as the ship.',stage_images=stages)
+    report=dict(issue=227,id='openfa:'+ship,source_glb=source.relative_to(ROOT).as_posix(),source_glb_sha256=source_digest,blend_sha256=sha(out/'model.blend'),glb_sha256=sha(out/'model.glb'),generator_sha256=sha(Path(__file__)),geometry_helper_sha256=sha(Path(geo.__file__)),shell_bounds=[list(low),list(high)],game_world_size=SHIPS[ship],layers=[dict(node=name,progress_start=value) for name,value in zip(internal+['HullPartial','HullFinal'],[0,.16,.38,.65,.88])],flight_hidden_nodes=internal,flight_visible_nodes=['HullPartial','HullFinal'],lift_socket=eye,lifting_contacts=contacts,mesh_nodes=len(meshes),triangles=sum(len(p.vertices)-2 for o in meshes for p in o.data.polygons),interior_vertices=len(layer_vertices),vertices_outside_ray_sections=outside,engineering='Authored interior constrained by actual shell sections; original exterior faces, normals, UVs and materials preserved and partitioned into disjoint partial/final hull batches.',client_binding='Use real build fraction for cumulative five-layer visibility. In flight draw both children of Hull, skip all Build* batches. Socket coordinates are ship-local; apply the same placement transform as the ship.',stage_images=stages)
     (out/'model.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
     print('SHIP_CONSTRUCTION_LAYERS',ship,len(nodes),equipment,outside,report['triangles'],flush=True)
 

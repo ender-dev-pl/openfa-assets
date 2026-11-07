@@ -6,17 +6,11 @@
 
 `openfa:assault-fighter`
 
-**First available iteration — reference-refined-study**
-
-![Assault Fighter](../gallery/media/docs/assets/reconstruction/ships/terran/assault-fighter/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/terran/assault-fighter/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/assault-fighter/model.glb)
-
-**Additional iteration — layered-construction**
+**First available iteration — layered-construction**
 
 ![Assault Fighter](../gallery/media/objects/terran/assault-fighter/construction/front-quarter.png)
 
-[Blend](../sources/objects/terran/assault-fighter/construction/model.blend) · [GLB](../sources/objects/terran/assault-fighter/construction/model.glb)
+[Blend](../sources/objects/terran/assault-fighter/model.blend) · [GLB](../sources/objects/terran/assault-fighter/model.glb)
 
 Additional views: [Frame foundation](../gallery/media/objects/terran/assault-fighter/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/assault-fighter/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/assault-fighter/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/assault-fighter/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/assault-fighter/construction/stage-05.png)
 
@@ -26,17 +20,11 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/assault-fig
 
 `openfa:combat-eagle`
 
-**First available iteration — reference-refined-study**
-
-![Combat Eagle](../gallery/media/docs/assets/reconstruction/ships/terran/combat-eagle/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/terran/combat-eagle/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/combat-eagle/model.glb)
-
-**Additional iteration — layered-construction**
+**First available iteration — layered-construction**
 
 ![Combat Eagle](../gallery/media/objects/terran/combat-eagle/construction/front-quarter.png)
 
-[Blend](../sources/objects/terran/combat-eagle/construction/model.blend) · [GLB](../sources/objects/terran/combat-eagle/construction/model.glb)
+[Blend](../sources/objects/terran/combat-eagle/model.blend) · [GLB](../sources/objects/terran/combat-eagle/model.glb)
 
 Additional views: [Frame foundation](../gallery/media/objects/terran/combat-eagle/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/combat-eagle/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/combat-eagle/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/combat-eagle/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/combat-eagle/construction/stage-05.png)
 
@@ -46,17 +34,11 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/combat-eagl
 
 `openfa:scoutship`
 
-**First available iteration — reference-refined-study**
-
-![Scoutship](../gallery/media/docs/assets/reconstruction/ships/terran/scoutship/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/terran/scoutship/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/scoutship/model.glb)
-
-**Additional iteration — layered-construction**
+**First available iteration — layered-construction**
 
 ![Scoutship](../gallery/media/objects/terran/scoutship/construction/front-quarter.png)
 
-[Blend](../sources/objects/terran/scoutship/construction/model.blend) · [GLB](../sources/objects/terran/scoutship/construction/model.glb)
+[Blend](../sources/objects/terran/scoutship/model.blend) · [GLB](../sources/objects/terran/scoutship/model.glb)
 
 Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/scoutship/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/scoutship/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/scoutship/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/scoutship/construction/stage-05.png)
 

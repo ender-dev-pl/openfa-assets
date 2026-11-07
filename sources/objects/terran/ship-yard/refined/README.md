@@ -1,3 +1,5 @@
+> Historical refinement record. Model payloads in this folder have been replaced by `../model.blend` and `../model.glb` in issue #227. Retained renders and reports describe the earlier mechanism; the current model and transfer contract are documented in `../hangar/README.md`.
+
 # Terran Ship Yard â€” PB25 high-detail refinement
 
 Canonical selected refinement for `terran:ship-yard`, footprint 3Ă—3. The earlier silhouette and generic refined studies remain in their original folders; this source is shared by gameplay, build-menu and information-screen presentations rather than copied into separate model variants.

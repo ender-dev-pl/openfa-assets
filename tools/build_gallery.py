@@ -63,7 +63,7 @@ def inventory_records():
             if not study['present']:
                 continue
             blend = Path(study['blend'])
-            folder = ROOT / 'gallery/media' / blend.parent
+            folder = ROOT / study.get('media', ('gallery/media' / blend.parent).as_posix())
             names = ['front-quarter.png', 'front.png', 'render.png', blend.stem+'.png', 'gallery.png', 'top.png']
             image = next((folder / name for name in names if (folder / name).is_file()), None)
             if image is None:

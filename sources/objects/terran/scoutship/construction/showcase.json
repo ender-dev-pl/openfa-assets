@@ -1,15 +1,17 @@
 {
   "issue": 227,
   "inputs": {
-    "sources/tools/blender/render_complete_shipyard_movies.py": "04cead956aa5938dd8b05040eca7032a6d11420627eaa04dae4faf99f16a9f9b",
-    "sources/tools/blender/render_shipyard_construction.py": "a15bfc47ae5c4f458305e8435958bbf06d4e6189b0ccb544a4fc1ce77e38c992",
-    "sources/objects/terran/ship-yard/hangar/model.blend": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
-    "sources/objects/terran/ship-yard/hangar/model.glb": "a51fef8dbef18fdc1d54e630e1f32ec655e3a4405b26223864b9cbedcfa367ba",
-    "sources/objects/terran/ship-yard/hangar/model.json": "4f7ec272d856a208c9271a55d06242625a9f362caa9687616a88d391a9be50a8",
-    "sources/objects/terran/scoutship/construction/model.glb": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
-    "sources/objects/terran/scoutship/construction/model.json": "0fc8afe8219e14eca4fe187509de448bdc5b9fe6a90baa91a05102fbdf7871d6",
+    "sources/docs/reconstruction/models/shipyard-canonical-assets.json": "832264fa52142e43cc13f1f6ea648057b25944dae7ef18e67fca74a850d6f999",
+    "sources/tools/blender/render_complete_shipyard_movies.py": "5032062c6106578c12e296e2664b5c6877263cac56d4f607525e007a4769b294",
+    "sources/tools/blender/render_shipyard_construction.py": "d65e8ca1dfc762c1b0a5c9d0b790ba15cc2adb1cfa5684c97cb1fc52f1aba989",
+    "sources/objects/terran/ship-yard/model.blend": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
+    "sources/objects/terran/ship-yard/model.glb": "a51fef8dbef18fdc1d54e630e1f32ec655e3a4405b26223864b9cbedcfa367ba",
+    "sources/objects/terran/ship-yard/model.json": "4f7ec272d856a208c9271a55d06242625a9f362caa9687616a88d391a9be50a8",
+    "sources/objects/terran/scoutship/model.glb": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+    "sources/objects/terran/scoutship/model.json": "0fc8afe8219e14eca4fe187509de448bdc5b9fe6a90baa91a05102fbdf7871d6",
+    "sources/objects/terran/ship-yard/canonical-runtime-validation.json": "d37681a6cdbec48beba6f65bf4cf6ccd7899dac3ec5d1577a6bf783520f8d84a",
     "sources/objects/terran/ship-yard/hangar/complete-3d-scoutship.json": "0e37ebe33e926a96908d86d5aea8502ea637995b045715d3885b5d4e8c28b47a",
-    "sources/tools/blender/index_complete_shipyard_movies.py": "e9aac7cec7dcdf072d010802b4ebca4ae446a96c2094da9e51ebb9896272cbbf"
+    "sources/tools/blender/index_complete_shipyard_movies.py": "71339f22ed4cffcdc58588e69e191f6a2b211c7e3693a3b7ffc7c8949dca86e5"
   },
   "clips": [
     {
@@ -37,6 +39,7 @@
     }
   },
   "method": "Every frame rendered from evaluated canonical 3D models. Preview-only batch placement animation during construction; full canonical yard transfer with calibrated per-payload rig. No interpolation between still renders or duplicated still-image holds. Canonical model geometry is unchanged.",
+  "relocation": "Existing film retained after byte-identical model relocation and fresh current-path Blender runtime verification. Original generation inputs remain in the linked historical report; this is not a new render.",
   "earlier_still_preview": {
     "issue": 227,
     "inputs": {

@@ -12,7 +12,7 @@ ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(Path(__file__).parent))
 import refine_terran_shipyard as g
 from build_ship_construction_layers import save_clean,sha,SHIPS
-OUT=ROOT/'sources/objects/terran/ship-yard/hangar'
+OUT=ROOT/'sources/objects/terran/ship-yard'
 MEDIA=ROOT/'gallery/media/objects/terran/ship-yard/hangar'
 HALF=1.85
 MAST=-2.85
@@ -23,7 +23,7 @@ TIMELINE=dict(build=[1,120],approach=[120,150],attach=150,lift=[150,190],open=[1
 
 
 def ship_placement(ship):
-    path=ROOT/'sources/objects/terran'/ship/'construction/model.json'
+    path=ROOT/'sources/objects/terran'/ship/'model.json'
     data=json.loads(path.read_text(encoding='utf-8'));lo,hi=map(Vector,data['shell_bounds']);size=hi-lo
     # Yard is 9 local units / 96 game units. The mobile model uses max(X,Y,Z).
     scale=SHIPS[ship]*9/96/max(size)

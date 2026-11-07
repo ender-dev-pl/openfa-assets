@@ -4,10 +4,15 @@ Issue [#227](https://github.com/ender-dev-pl/openfa-assets/issues/227), dependen
 [#225](https://github.com/ender-dev-pl/openfa-assets/issues/225). This is an authored
 extension requested for OpenFA, not a recovered legacy animation.
 
-The unique yard model is `model.glb` with editable `model.blend`. The three unique
-ship models are under `sources/objects/terran/{assault-fighter,combat-eagle,scoutship}/construction/`.
-The yard contains no ship mesh. Older studies are preserved as source history;
-package the selected model once and reuse it across flight, build menu and SciTek.
+The unique yard model is `../model.glb` with editable `../model.blend`. The three
+unique ship models are `sources/objects/terran/{assault-fighter,combat-eagle,scoutship}/model.glb`.
+This folder and each ship's `construction/` contain presentation metadata, not
+additional models. All superseded yard and ship Blend/GLB payloads were removed;
+earlier renders and reports remain as historical evidence. The yard contains no
+ship mesh. Each catalogue definition publishes exactly one model for reuse across
+flight, construction, build menu and SciTek. See
+`sources/docs/reconstruction/models/shipyard-canonical-assets.json` for the exact
+path replacements and unchanged model hashes.
 
 ## Construction layers
 
@@ -30,7 +35,7 @@ identify the suspension point and actual upper-skin contacts.
 
 ## Yard placement and timing
 
-`model.json` stores all transforms in **yard-local Blender coordinates before the
+`../model.json` stores all transforms in **yard-local Blender coordinates before the
 PlacementRoot 0.3 scale**. The authored yard diameter is 9 local units, corresponding
 to the configured 3-by-3 cells of 32 world units. Ship sizes use the game's largest-axis
 normalization: Assault Fighter 30, Combat Eagle 32, Scoutship 28. These are a calibration
@@ -75,8 +80,10 @@ and envelopes. A generic static-clip player alone cannot select or rig another p
 
 ## Evidence and previews
 
-`runtime-validation.json` binds native/import verification to exact source hashes.
-All three original hulls are compared bidirectionally, and twenty yard poses are
+`../runtime-validation.json` binds native/import verification to exact source hashes.
+All three original hulls were compared bidirectionally before replacement; their
+`exterior-baseline.json` records retain the result and a current exterior fingerprint
+without keeping duplicate geometry. Current imports check that fingerprint, and twenty yard poses are
 compared against an independent GLB import. Door/well triangles are tested in all
 480 frames; all three ship envelopes and attachment continuity are checked through
 the complete timeline. The oversized-payload negative control must be rejected.
@@ -92,6 +99,7 @@ Reproduce with Blender 4.5 LTS, in this order:
 blender --background --python sources/tools/blender/build_ship_construction_layers.py
 blender --background --python sources/tools/blender/build_shipyard_hangar.py
 blender --background --python sources/tools/blender/verify_shipyard_construction.py
+blender --background --python sources/tools/blender/verify_canonical_shipyard_assets.py
 blender --background --python sources/tools/blender/render_shipyard_construction.py
 blender --background --python sources/tools/blender/render_shipyard_construction.py -- --yard-preview-only
 ```

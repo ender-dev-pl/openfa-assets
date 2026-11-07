@@ -4507,52 +4507,8 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/terran/pb25/model.blend",
-          "present": true,
-          "sha256": "9132835715cd731e555914a3870e29626c06d3127f22255633f3f69512ed4510",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "refined-study",
-          "blend": "docs/assets/bootstrap-3d/terran-refined/pb25/model.blend",
-          "present": true,
-          "sha256": "6e8d81f52f495233586bdd762e987bca22de9477535ae8e57db95b0f7fe174bf",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "high-detail-refinement",
-          "blend": "objects/terran/ship-yard/refined/model.blend",
-          "present": true,
-          "sha256": "8d119e7fae6ff300f34643e28478bc6d1a0be724683ad3099f5baf050fe06da0",
-          "final_visual_acceptance": "not-established",
-          "visual_review": "objects/terran/ship-yard/refined/visual-review.json",
-          "views": [
-            {
-              "label": "Crane resting on platform",
-              "image": "gallery/media/objects/terran/ship-yard/refined/crane-rest-detail.png"
-            },
-            {
-              "label": "Assault Fighter inside: game scale",
-              "image": "gallery/media/objects/terran/ship-yard/refined/scale-fighter-in-yard.png"
-            },
-            {
-              "label": "Side-by-side: game scale",
-              "image": "gallery/media/objects/terran/ship-yard/refined/scale-fighter-beside-yard.png"
-            },
-            {
-              "label": "Top: game scale",
-              "image": "gallery/media/objects/terran/ship-yard/refined/scale-fighter-top.png"
-            },
-            {
-              "label": "Same-mesh wireframe",
-              "image": "gallery/media/objects/terran/ship-yard/refined/wireframe.png"
-            }
-          ]
-        },
-        {
           "stage": "layered-construction-hangar",
-          "blend": "objects/terran/ship-yard/hangar/model.blend",
+          "blend": "objects/terran/ship-yard/model.blend",
           "present": true,
           "sha256": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
           "final_visual_acceptance": "not-established",
@@ -4614,7 +4570,8 @@
               "image": "gallery/media/objects/terran/ship-yard/hangar/scoutship-complete.png"
             }
           ],
-          "showcase": "sources/objects/terran/ship-yard/hangar/showcase.json"
+          "showcase": "sources/objects/terran/ship-yard/hangar/showcase.json",
+          "media": "gallery/media/objects/terran/ship-yard/hangar"
         }
       ],
       "acceptance": {
@@ -4659,10 +4616,66 @@
       },
       "selected_refinement": {
         "stage": "layered-construction-hangar",
-        "blend": "objects/terran/ship-yard/hangar/model.blend",
-        "glb": "objects/terran/ship-yard/hangar/model.glb",
+        "blend": "objects/terran/ship-yard/model.blend",
+        "glb": "objects/terran/ship-yard/model.glb",
         "issue": 227,
-        "integration": "pending client binding and GPU validation; use this one model for all catalogue paths; preserve earlier variants as source history only"
+        "integration": "Single canonical payload replaces all preceding model variants. Reuse this path for flight, construction, build menu and SciTek; client event/visibility/terrain integration requires separate runtime verification."
+      },
+      "superseded_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/terran/pb25/model.blend",
+          "present": false,
+          "sha256": "9132835715cd731e555914a3870e29626c06d3127f22255633f3f69512ed4510",
+          "final_visual_acceptance": "not-established",
+          "status": "superseded; model payload removed; retained renders and metadata are historical evidence"
+        },
+        {
+          "stage": "refined-study",
+          "blend": "docs/assets/bootstrap-3d/terran-refined/pb25/model.blend",
+          "present": false,
+          "sha256": "6e8d81f52f495233586bdd762e987bca22de9477535ae8e57db95b0f7fe174bf",
+          "final_visual_acceptance": "not-established",
+          "status": "superseded; model payload removed; retained renders and metadata are historical evidence"
+        },
+        {
+          "stage": "high-detail-refinement",
+          "blend": "objects/terran/ship-yard/refined/model.blend",
+          "present": false,
+          "sha256": "8d119e7fae6ff300f34643e28478bc6d1a0be724683ad3099f5baf050fe06da0",
+          "final_visual_acceptance": "not-established",
+          "visual_review": "objects/terran/ship-yard/refined/visual-review.json",
+          "views": [
+            {
+              "label": "Crane resting on platform",
+              "image": "gallery/media/objects/terran/ship-yard/refined/crane-rest-detail.png"
+            },
+            {
+              "label": "Assault Fighter inside: game scale",
+              "image": "gallery/media/objects/terran/ship-yard/refined/scale-fighter-in-yard.png"
+            },
+            {
+              "label": "Side-by-side: game scale",
+              "image": "gallery/media/objects/terran/ship-yard/refined/scale-fighter-beside-yard.png"
+            },
+            {
+              "label": "Top: game scale",
+              "image": "gallery/media/objects/terran/ship-yard/refined/scale-fighter-top.png"
+            },
+            {
+              "label": "Same-mesh wireframe",
+              "image": "gallery/media/objects/terran/ship-yard/refined/wireframe.png"
+            }
+          ],
+          "status": "superseded; model payload removed; retained renders and metadata are historical evidence"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/terran/ship-yard/model.blend",
+        "sha256": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
+        "runtime_evidence": "objects/terran/ship-yard/runtime-validation.json",
+        "visual_review": "objects/terran/ship-yard/visual-review.json",
+        "game_client_integration": false
       }
     },
     {
@@ -26971,15 +26984,8 @@
       ],
       "available_studies": [
         {
-          "stage": "reference-refined-study",
-          "blend": "docs/assets/reconstruction/ships/terran/assault-fighter/model.blend",
-          "present": true,
-          "sha256": "5fb2090ea98835f9ad2905df04c8a9417e0863e945e8dfe1ae5204224687adf4",
-          "final_visual_acceptance": "not-established"
-        },
-        {
           "stage": "layered-construction",
-          "blend": "objects/terran/assault-fighter/construction/model.blend",
+          "blend": "objects/terran/assault-fighter/model.blend",
           "present": true,
           "sha256": "463027eb6ffc3f7cf6a79a32552b893b92d14fcc3a79ee4886cc15571bda87dc",
           "final_visual_acceptance": "not-established",
@@ -27005,7 +27011,8 @@
               "image": "gallery/media/objects/terran/assault-fighter/construction/stage-05.png"
             }
           ],
-          "showcase": "sources/objects/terran/assault-fighter/construction/showcase.json"
+          "showcase": "sources/objects/terran/assault-fighter/construction/showcase.json",
+          "media": "gallery/media/objects/terran/assault-fighter/construction"
         }
       ],
       "acceptance": {
@@ -27029,7 +27036,104 @@
           "Repository changed-code quality gate passed against 44e3fd4f3; final artistic, heading, attachment and gameplay calibration remain open."
         ]
       },
-      "reviewed_model": {
+      "hardpoint_slots": 1,
+      "attachment_evidence": {
+        "catalogue_mount_coordinates": [
+          {
+            "x": 63,
+            "y": 77
+          }
+        ],
+        "coordinate_space": "legacy ship-designer 2D preview; not recovered 3D sockets",
+        "three_dimensional_sockets": "not-established",
+        "source": "docs/legacy/ship-hardpoints.md and legacy-gameplay.json"
+      },
+      "runtime_variants": {
+        "surface": {
+          "ordered_candidates": [
+            {
+              "directory": "_S",
+              "entry": "PS0C.256",
+              "kind": "sprite-sheet",
+              "archive": "_S",
+              "present": false,
+              "palette_status": "not-yet-decoded"
+            },
+            {
+              "directory": "_S",
+              "entry": "PS0A.256",
+              "kind": "sprite-sheet",
+              "archive": "_S",
+              "present": true,
+              "sha256": "6807bc063ac70acf48cc812a2b9a0d69a251ed5d0113463e6678275b08b5f220",
+              "payload_bytes": 5568,
+              "decoded_metadata_sha256": "fd0dc2f494f41efcf1c32611b148d4755af839febd21809289c21fce9a826c5d",
+              "frame_count": 32,
+              "palette_status": "embedded"
+            },
+            {
+              "directory": "_S",
+              "entry": "PT0C.256",
+              "kind": "sprite-sheet",
+              "archive": "_S",
+              "present": false,
+              "palette_status": "not-yet-decoded"
+            },
+            {
+              "directory": "_S",
+              "entry": "PT0A.256",
+              "kind": "sprite-sheet",
+              "archive": "_S",
+              "present": true,
+              "sha256": "7bff28034925dde27be3149994597ca70782da10a1f03e0c26a66a304934a0d4",
+              "payload_bytes": 5600,
+              "decoded_metadata_sha256": "a7654ca0d7e5ffcac2209e64485c3b941174a1a21d4f5e097bcb2d118f46d51d",
+              "frame_count": 32,
+              "palette_status": "embedded"
+            }
+          ],
+          "selected_first_available": "PS0A.256"
+        },
+        "atmospheric": {
+          "ordered_candidates": [
+            {
+              "directory": "_S",
+              "entry": "PT0C.256",
+              "kind": "sprite-sheet",
+              "archive": "_S",
+              "present": false,
+              "palette_status": "not-yet-decoded"
+            },
+            {
+              "directory": "_S",
+              "entry": "PS0C.256",
+              "kind": "sprite-sheet",
+              "archive": "_S",
+              "present": false,
+              "palette_status": "not-yet-decoded"
+            }
+          ],
+          "selected_first_available": null
+        }
+      },
+      "selected_refinement": {
+        "stage": "layered-construction",
+        "blend": "objects/terran/assault-fighter/model.blend",
+        "glb": "objects/terran/assault-fighter/model.glb",
+        "issue": 227,
+        "integration": "Single canonical payload replaces all preceding model variants. Reuse this path for flight, construction, build menu and SciTek; client event/visibility/terrain integration requires separate runtime verification."
+      },
+      "superseded_studies": [
+        {
+          "stage": "reference-refined-study",
+          "blend": "docs/assets/reconstruction/ships/terran/assault-fighter/model.blend",
+          "present": false,
+          "sha256": "5fb2090ea98835f9ad2905df04c8a9417e0863e945e8dfe1ae5204224687adf4",
+          "final_visual_acceptance": "not-established",
+          "status": "superseded; model payload removed; retained renders and metadata are historical evidence"
+        }
+      ],
+      "historical_reviewed_model": {
         "blend": "docs/assets/reconstruction/ships/terran/assault-fighter/model.blend",
         "sha256": "5fb2090ea98835f9ad2905df04c8a9417e0863e945e8dfe1ae5204224687adf4",
         "runtime_evidence": {
@@ -27118,92 +27222,12 @@
           "text_hash_policy": "lf-for-json-and-python"
         }
       },
-      "hardpoint_slots": 1,
-      "attachment_evidence": {
-        "catalogue_mount_coordinates": [
-          {
-            "x": 63,
-            "y": 77
-          }
-        ],
-        "coordinate_space": "legacy ship-designer 2D preview; not recovered 3D sockets",
-        "three_dimensional_sockets": "not-established",
-        "source": "docs/legacy/ship-hardpoints.md and legacy-gameplay.json"
-      },
-      "runtime_variants": {
-        "surface": {
-          "ordered_candidates": [
-            {
-              "directory": "_S",
-              "entry": "PS0C.256",
-              "kind": "sprite-sheet",
-              "archive": "_S",
-              "present": false,
-              "palette_status": "not-yet-decoded"
-            },
-            {
-              "directory": "_S",
-              "entry": "PS0A.256",
-              "kind": "sprite-sheet",
-              "archive": "_S",
-              "present": true,
-              "sha256": "6807bc063ac70acf48cc812a2b9a0d69a251ed5d0113463e6678275b08b5f220",
-              "payload_bytes": 5568,
-              "decoded_metadata_sha256": "fd0dc2f494f41efcf1c32611b148d4755af839febd21809289c21fce9a826c5d",
-              "frame_count": 32,
-              "palette_status": "embedded"
-            },
-            {
-              "directory": "_S",
-              "entry": "PT0C.256",
-              "kind": "sprite-sheet",
-              "archive": "_S",
-              "present": false,
-              "palette_status": "not-yet-decoded"
-            },
-            {
-              "directory": "_S",
-              "entry": "PT0A.256",
-              "kind": "sprite-sheet",
-              "archive": "_S",
-              "present": true,
-              "sha256": "7bff28034925dde27be3149994597ca70782da10a1f03e0c26a66a304934a0d4",
-              "payload_bytes": 5600,
-              "decoded_metadata_sha256": "a7654ca0d7e5ffcac2209e64485c3b941174a1a21d4f5e097bcb2d118f46d51d",
-              "frame_count": 32,
-              "palette_status": "embedded"
-            }
-          ],
-          "selected_first_available": "PS0A.256"
-        },
-        "atmospheric": {
-          "ordered_candidates": [
-            {
-              "directory": "_S",
-              "entry": "PT0C.256",
-              "kind": "sprite-sheet",
-              "archive": "_S",
-              "present": false,
-              "palette_status": "not-yet-decoded"
-            },
-            {
-              "directory": "_S",
-              "entry": "PS0C.256",
-              "kind": "sprite-sheet",
-              "archive": "_S",
-              "present": false,
-              "palette_status": "not-yet-decoded"
-            }
-          ],
-          "selected_first_available": null
-        }
-      },
-      "selected_refinement": {
-        "stage": "layered-construction",
-        "blend": "objects/terran/assault-fighter/construction/model.blend",
-        "glb": "objects/terran/assault-fighter/construction/model.glb",
-        "issue": 227,
-        "integration": "pending client binding and GPU validation; use this one model for all catalogue paths; preserve earlier variants as source history only"
+      "reviewed_model": {
+        "blend": "objects/terran/assault-fighter/model.blend",
+        "sha256": "463027eb6ffc3f7cf6a79a32552b893b92d14fcc3a79ee4886cc15571bda87dc",
+        "runtime_evidence": "objects/terran/assault-fighter/runtime-validation.json",
+        "visual_review": "objects/terran/assault-fighter/visual-review.json",
+        "game_client_integration": false
       }
     },
     {
@@ -27310,15 +27334,8 @@
       ],
       "available_studies": [
         {
-          "stage": "reference-refined-study",
-          "blend": "docs/assets/reconstruction/ships/terran/combat-eagle/model.blend",
-          "present": true,
-          "sha256": "1da63929056fc36483570cb6dc9aa45040dce4212831c44ee34d15ab636e55ea",
-          "final_visual_acceptance": "not-established"
-        },
-        {
           "stage": "layered-construction",
-          "blend": "objects/terran/combat-eagle/construction/model.blend",
+          "blend": "objects/terran/combat-eagle/model.blend",
           "present": true,
           "sha256": "52a70d2a6698f0c4e60be4023217d6c1fec2d7a1e28286db13a697b0b6cd7dd8",
           "final_visual_acceptance": "not-established",
@@ -27344,7 +27361,8 @@
               "image": "gallery/media/objects/terran/combat-eagle/construction/stage-05.png"
             }
           ],
-          "showcase": "sources/objects/terran/combat-eagle/construction/showcase.json"
+          "showcase": "sources/objects/terran/combat-eagle/construction/showcase.json",
+          "media": "gallery/media/objects/terran/combat-eagle/construction"
         }
       ],
       "acceptance": {
@@ -27446,10 +27464,27 @@
       },
       "selected_refinement": {
         "stage": "layered-construction",
-        "blend": "objects/terran/combat-eagle/construction/model.blend",
-        "glb": "objects/terran/combat-eagle/construction/model.glb",
+        "blend": "objects/terran/combat-eagle/model.blend",
+        "glb": "objects/terran/combat-eagle/model.glb",
         "issue": 227,
-        "integration": "pending client binding and GPU validation; use this one model for all catalogue paths; preserve earlier variants as source history only"
+        "integration": "Single canonical payload replaces all preceding model variants. Reuse this path for flight, construction, build menu and SciTek; client event/visibility/terrain integration requires separate runtime verification."
+      },
+      "superseded_studies": [
+        {
+          "stage": "reference-refined-study",
+          "blend": "docs/assets/reconstruction/ships/terran/combat-eagle/model.blend",
+          "present": false,
+          "sha256": "1da63929056fc36483570cb6dc9aa45040dce4212831c44ee34d15ab636e55ea",
+          "final_visual_acceptance": "not-established",
+          "status": "superseded; model payload removed; retained renders and metadata are historical evidence"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/terran/combat-eagle/model.blend",
+        "sha256": "52a70d2a6698f0c4e60be4023217d6c1fec2d7a1e28286db13a697b0b6cd7dd8",
+        "runtime_evidence": "objects/terran/combat-eagle/runtime-validation.json",
+        "visual_review": "objects/terran/combat-eagle/visual-review.json",
+        "game_client_integration": false
       }
     },
     {
@@ -27556,15 +27591,8 @@
       ],
       "available_studies": [
         {
-          "stage": "reference-refined-study",
-          "blend": "docs/assets/reconstruction/ships/terran/scoutship/model.blend",
-          "present": true,
-          "sha256": "783e3a024b21aa2a761f509f32de05b2e452a94457407b88feb4e6319ec52cb3",
-          "final_visual_acceptance": "not-established"
-        },
-        {
           "stage": "layered-construction",
-          "blend": "objects/terran/scoutship/construction/model.blend",
+          "blend": "objects/terran/scoutship/model.blend",
           "present": true,
           "sha256": "85baa587530cab28fea80ad291b0006fb8d6f15d1d39625ba2de3abedaac9bad",
           "final_visual_acceptance": "not-established",
@@ -27590,7 +27618,8 @@
               "image": "gallery/media/objects/terran/scoutship/construction/stage-05.png"
             }
           ],
-          "showcase": "sources/objects/terran/scoutship/construction/showcase.json"
+          "showcase": "sources/objects/terran/scoutship/construction/showcase.json",
+          "media": "gallery/media/objects/terran/scoutship/construction"
         }
       ],
       "acceptance": {
@@ -27688,10 +27717,27 @@
       },
       "selected_refinement": {
         "stage": "layered-construction",
-        "blend": "objects/terran/scoutship/construction/model.blend",
-        "glb": "objects/terran/scoutship/construction/model.glb",
+        "blend": "objects/terran/scoutship/model.blend",
+        "glb": "objects/terran/scoutship/model.glb",
         "issue": 227,
-        "integration": "pending client binding and GPU validation; use this one model for all catalogue paths; preserve earlier variants as source history only"
+        "integration": "Single canonical payload replaces all preceding model variants. Reuse this path for flight, construction, build menu and SciTek; client event/visibility/terrain integration requires separate runtime verification."
+      },
+      "superseded_studies": [
+        {
+          "stage": "reference-refined-study",
+          "blend": "docs/assets/reconstruction/ships/terran/scoutship/model.blend",
+          "present": false,
+          "sha256": "783e3a024b21aa2a761f509f32de05b2e452a94457407b88feb4e6319ec52cb3",
+          "final_visual_acceptance": "not-established",
+          "status": "superseded; model payload removed; retained renders and metadata are historical evidence"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/terran/scoutship/model.blend",
+        "sha256": "85baa587530cab28fea80ad291b0006fb8d6f15d1d39625ba2de3abedaac9bad",
+        "runtime_evidence": "objects/terran/scoutship/runtime-validation.json",
+        "visual_review": "objects/terran/scoutship/visual-review.json",
+        "game_client_integration": false
       }
     },
     {

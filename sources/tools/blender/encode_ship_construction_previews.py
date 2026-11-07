@@ -23,7 +23,7 @@ def main():
     font=ImageFont.truetype(str(ROOT/'sources/ui/legacy-menu-labels/font/NotoSerif-Bold.ttf'),23)
     title_font=ImageFont.truetype(str(ROOT/'sources/ui/legacy-menu-labels/font/NotoSerif-Bold.ttf'),28)
     for ship,title in SHIPS.items():
-        source=ROOT/'sources/objects/terran'/ship/'construction';media=ROOT/'gallery/media/objects/terran'/ship/'construction'
+        source=ROOT/'sources/objects/terran'/ship;media=ROOT/'gallery/media/objects/terran'/ship/'construction'
         review=json.loads((source/'visual-review.json').read_text(encoding='utf-8'))
         assert review['glb_sha256']==sha(source/'model.glb') and review['blend_sha256']==sha(source/'model.blend')
         frames=ROOT/'artifacts/issue-227'/('individual-build-'+ship);frames.mkdir(parents=True,exist_ok=True)
@@ -57,7 +57,7 @@ def main():
             recognized.append(best+1)
         inputs=[Path(__file__),source/'model.blend',source/'model.glb',source/'model.json',source/'visual-review.json']
         manifest=dict(issue=227,inputs={p.relative_to(ROOT).as_posix():sha(p) for p in inputs},stage_images=stage_inputs,decoded_stage_order=recognized,clips=[dict(name=title+' — five construction stages',video=outputs['webm']['path'],sha256=outputs['webm']['sha256'],frames=240,duration=8,distinct_pose_count=5,mp4=outputs['mp4'])],method='Sequence of five verified actual Blender stage renders, fixed camera and scale. Hard cuts reproduce cumulative mesh visibility; no interpolated assembly motion.',downloads=outputs)
-        (source/'showcase.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+        (source/'construction/showcase.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
         print('INDIVIDUAL_BUILD_MOVIE_VERIFIED',ship,240,8,flush=True)
 
 

@@ -29,7 +29,7 @@ def combined_scene(ship='assault-fighter'):
         if obj.type in ['MESH','EMPTY']:bpy.data.objects.remove(obj,do_unlink=True)
     bpy.ops.import_scene.gltf(filepath=str(OUT/'model.glb'))
     old=set(scene.objects)
-    folder=ROOT/'sources/objects/terran'/ship/'construction'
+    folder=ROOT/'sources/objects/terran'/ship
     bpy.ops.import_scene.gltf(filepath=str(folder/'model.glb'))
     new=[o for o in scene.objects if o not in old]
     root=next(o for o in new if o.name=='ShipAssembly')
@@ -96,14 +96,14 @@ def main():
         manifest=dict(id='terran:ship-yard',stage=study['stage'],glb=study['glb'],glb_sha256=sha(OUT/'model.glb'),blend_sha256=sha(OUT/'model.blend'),renderer_sha256=sha(Path(stock.__file__)),blender=bpy.app.version_string,clips=clips)
         (MEDIA/'animation-previews.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8');return
     if not args.video_only:
-        images=render_stills();(OUT/'showcase-stills.json').write_text(json.dumps(dict(renderer_sha256=sha(Path(__file__)),images=images),indent=2)+'\n',encoding='utf-8')
+        images=render_stills();(OUT/'hangar/showcase-stills.json').write_text(json.dumps(dict(renderer_sha256=sha(Path(__file__)),images=images),indent=2)+'\n',encoding='utf-8')
     if args.stills_only:return
     clip=render_showcase()
     files=[Path(__file__),OUT/'model.blend',OUT/'model.glb',OUT/'model.json']
     for ship in SHIPS:
-        files.extend(ROOT/'sources/objects/terran'/ship/'construction'/name for name in ['model.glb','model.json'])
+        files.extend(ROOT/'sources/objects/terran'/ship/name for name in ['model.glb','model.json'])
     data=dict(issue=227,inputs={p.relative_to(ROOT).as_posix():sha(p) for p in files},clips=[clip],scope='Offline demonstration using actual canonical imported meshes and authored attachment/visibility contract. Build timing is a preview fixture, not game simulation. Neutral preview terrain masks the underground exterior.')
-    (OUT/'showcase.json').write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')
+    (OUT/'hangar/showcase.json').write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')
     print('CONSTRUCTION_SHOWCASE_RENDERED',clip['frames'],clip['distinct_pose_count'],flush=True)
 
 

@@ -1,3 +1,5 @@
+> Historical reconstruction record. The superseded Blend/GLB payloads were removed in asset issue #227. The single current model, including construction layers, is `sources/objects/terran/assault-fighter/model.glb` (editable Blend beside it). Render images and the technical findings below describe the earlier revision.
+
 # Terran Assault Fighter — reconstruction study, revision 3
 
 Issue #953, within #949 / #946. This is an independently authored editable model,
