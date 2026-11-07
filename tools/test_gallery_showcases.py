@@ -31,5 +31,12 @@ class ShowcaseTests(unittest.TestCase):
         with patch.object(showcases,'sha',side_effect=digest):
             with self.assertRaises(AssertionError):showcases.showcase_previews(self.study)
 
+    def test_stale_mp4_download_is_rejected(self):
+        original=showcases.sha
+        def digest(path):return 'stale' if path.suffix=='.mp4' else original(path)
+        study={'showcase':'sources/objects/terran/assault-fighter/construction/showcase.json'}
+        with patch.object(showcases,'sha',side_effect=digest):
+            with self.assertRaises(AssertionError):showcases.showcase_previews(study)
+
 
 if __name__=='__main__':unittest.main()

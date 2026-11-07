@@ -20,6 +20,8 @@
 
 Additional views: [Frame foundation](../gallery/media/objects/terran/assault-fighter/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/assault-fighter/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/assault-fighter/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/assault-fighter/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/assault-fighter/construction/stage-05.png)
 
+[Play animation: Assault Fighter — five construction stages](../gallery/media/objects/terran/assault-fighter/construction/construction-stages.webm)
+
 ## Combat Eagle
 
 `openfa:combat-eagle`
@@ -38,6 +40,8 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/assault-fig
 
 Additional views: [Frame foundation](../gallery/media/objects/terran/combat-eagle/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/combat-eagle/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/combat-eagle/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/combat-eagle/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/combat-eagle/construction/stage-05.png)
 
+[Play animation: Combat Eagle — five construction stages](../gallery/media/objects/terran/combat-eagle/construction/construction-stages.webm)
+
 ## Scoutship
 
 `openfa:scoutship`
@@ -55,6 +59,8 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/combat-eagl
 [Blend](../sources/objects/terran/scoutship/construction/model.blend) · [GLB](../sources/objects/terran/scoutship/construction/model.glb)
 
 Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/scoutship/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/scoutship/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/scoutship/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/scoutship/construction/stage-05.png)
+
+[Play animation: Scoutship — five construction stages](../gallery/media/objects/terran/scoutship/construction/construction-stages.webm)
 
 ## Destructor
 

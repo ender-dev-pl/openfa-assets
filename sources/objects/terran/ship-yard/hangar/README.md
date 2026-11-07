@@ -99,3 +99,22 @@ blender --background --python sources/tools/blender/render_shipyard_construction
 Client binding, underground terrain integration and GPU/frame-time acceptance remain
 the responsibility of game integration. The main game thread receives the commit
 and the canonical source hashes before any source pin should be changed.
+
+## Production coverage and individual movies
+
+The three small-ship construction models do not cover every ground-yard product.
+The current game catalogue also builds Terran Space Dock at the ground yard: it has
+`ship-yard` production capability requirements and no `requires-space-dock` tag.
+`ShipYardState.RequiresSpaceDock` in the game uses that tag to select the orbital
+facility. Consequently Space Dock must retain separate presentation until its own
+construction layers, lifting procedure and opening clearances are authored and verified.
+The three-payload hatch checks in this directory do not establish Space Dock clearance.
+Spy Satellite is produced by the separate satellite silo.
+
+Each small ship's gallery card has a separate eight-second construction movie,
+`construction-stages.webm`, with an MP4 download alongside it. These show the five
+actual verified Blender stage renders with fixed camera/scale and hard visibility
+changes, rather than interpolated assembly motion. Their `showcase.json` binds the
+movies to source models and stage evidence; decoded frames verify the order 1–5.
+Reproduce these presentation videos with
+`python sources/tools/blender/encode_ship_construction_previews.py`.

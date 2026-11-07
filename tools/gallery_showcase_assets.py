@@ -21,4 +21,7 @@ def showcase_previews(study):
         video=(ROOT/clip['video']).resolve()
         assert video.is_relative_to(ROOT/'gallery/media') and sha(video)==clip['sha256'],clip['video']
         assert clip['frames']>1 and clip['distinct_pose_count']>1
+    for download in data.get('downloads',{}).values():
+        path=(ROOT/download['path']).resolve()
+        assert path.is_relative_to(ROOT/'gallery/media') and sha(path)==download['sha256'],download['path']
     return data['clips']
