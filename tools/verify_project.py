@@ -26,6 +26,23 @@ def main():
     assert not list((ROOT / 'sources').rglob('*.java')), 'Game decompiler code is external evidence'
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text())
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
+    migration=json.loads((ROOT/'sources/docs/reconstruction/models/shipyard-canonical-assets.json').read_text())
+    for asset in migration['models']:
+        record=next(row for row in inventory['records'] if row['id']==asset['id'])
+        assert len(record['available_studies'])==1, (asset['id'],'duplicate model study')
+        study=record['available_studies'][0]
+        assert 'sources/'+study['blend']==asset['blend']
+        published=next(row for row in gallery if row['id']==asset['id'])
+        assert len(published['studies'])==1
+        assert published['studies'][0]['glb']==asset['glb']
+        for kind in ['blend','glb']:
+            assert sha(ROOT/asset[kind])==asset[kind+'_sha256']
+            assert list((ROOT/asset[kind]).parent.rglob('*.'+kind))==[ROOT/asset[kind]], (asset['id'],'duplicate canonical payload')
+        for old in asset['removed_models']:
+            assert not (ROOT/old['path']).exists(),('superseded model restored',old['path'])
+    for old,new in migration['redirects'].items():
+        assert (ROOT/new).is_file()
+        if old!=new:assert not (ROOT/old).exists(),('obsolete payload path restored',old)
     from gallery_trading_goods import trading_records
     trades = trading_records(ROOT)
     assert gallery == gallery[:len(inventory['records'])] + trades
@@ -51,6 +68,8 @@ def main():
             assert (ROOT / study['image']).is_file() and study['image'].startswith('gallery/media/')
             assert study['glb'] and (ROOT / study['glb']).is_file(), row['id']
             assert study['animations']==animation_previews(study['blend'],study['glb'],(ROOT/study['image']).parent)
+            from gallery_showcase_assets import showcase_previews
+            assert study.get('showcases',[])==showcase_previews(original)
             assert study.get('views',[])==original.get('views',[])
             for view in study.get('views',[]):
                 assert view['label'] and view['image'].startswith('gallery/media/')

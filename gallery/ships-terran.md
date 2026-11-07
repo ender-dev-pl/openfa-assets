@@ -6,31 +6,43 @@
 
 `openfa:assault-fighter`
 
-**First available iteration — reference-refined-study**
+**First available iteration — layered-construction**
 
-![Assault Fighter](../gallery/media/docs/assets/reconstruction/ships/terran/assault-fighter/front-quarter.png)
+![Assault Fighter](../gallery/media/objects/terran/assault-fighter/construction/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/terran/assault-fighter/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/assault-fighter/model.glb)
+[Blend](../sources/objects/terran/assault-fighter/model.blend) · [GLB](../sources/objects/terran/assault-fighter/model.glb)
+
+Additional views: [Frame foundation](../gallery/media/objects/terran/assault-fighter/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/assault-fighter/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/assault-fighter/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/assault-fighter/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/assault-fighter/construction/stage-05.png)
+
+[Play animation: Assault Fighter — complete 3D construction and hangar transfer](../gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.webm)
 
 ## Combat Eagle
 
 `openfa:combat-eagle`
 
-**First available iteration — reference-refined-study**
+**First available iteration — layered-construction**
 
-![Combat Eagle](../gallery/media/docs/assets/reconstruction/ships/terran/combat-eagle/front-quarter.png)
+![Combat Eagle](../gallery/media/objects/terran/combat-eagle/construction/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/terran/combat-eagle/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/combat-eagle/model.glb)
+[Blend](../sources/objects/terran/combat-eagle/model.blend) · [GLB](../sources/objects/terran/combat-eagle/model.glb)
+
+Additional views: [Frame foundation](../gallery/media/objects/terran/combat-eagle/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/combat-eagle/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/combat-eagle/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/combat-eagle/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/combat-eagle/construction/stage-05.png)
+
+[Play animation: Combat Eagle — complete 3D construction and hangar transfer](../gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm)
 
 ## Scoutship
 
 `openfa:scoutship`
 
-**First available iteration — reference-refined-study**
+**First available iteration — layered-construction**
 
-![Scoutship](../gallery/media/docs/assets/reconstruction/ships/terran/scoutship/front-quarter.png)
+![Scoutship](../gallery/media/objects/terran/scoutship/construction/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/terran/scoutship/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/scoutship/model.glb)
+[Blend](../sources/objects/terran/scoutship/model.blend) · [GLB](../sources/objects/terran/scoutship/model.glb)
+
+Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/scoutship/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/scoutship/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/scoutship/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/scoutship/construction/stage-05.png)
+
+[Play animation: Scoutship — complete 3D construction and hangar transfer](../gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.webm)
 
 ## Destructor
 
