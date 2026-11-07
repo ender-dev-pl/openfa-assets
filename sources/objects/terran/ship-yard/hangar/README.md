@@ -102,14 +102,17 @@ and the canonical source hashes before any source pin should be changed.
 
 ## Production coverage and individual movies
 
-The three small-ship construction models do not cover every ground-yard product.
-The current game catalogue also builds Terran Space Dock at the ground yard: it has
-`ship-yard` production capability requirements and no `requires-space-dock` tag.
-`ShipYardState.RequiresSpaceDock` in the game uses that tag to select the orbital
-facility. Consequently Space Dock must retain separate presentation until its own
-construction layers, lifting procedure and opening clearances are authored and verified.
-The three-payload hatch checks in this directory do not establish Space Dock clearance.
-Spy Satellite is produced by the separate satellite silo.
+The small ground-yard construction sequence covers Assault Fighter, Combat Eagle
+and Scoutship. As clarified by the project owner, Space Dock is constructed in
+orbit through the Command Center; it is not a payload for this platform or hatch
+and requires no addition to these construction assets. Spy Satellite uses the
+separate satellite silo.
+
+An earlier audit incorrectly inferred the physical construction location from
+`ship-yard` capability requirements and the absence of `requires-space-dock` in
+the current game catalogue. Those fields alone do not establish the original
+construction workflow. Any discrepancy in client/catalogue routing is separate
+game reconstruction work, not grounds for adding Space Dock to this asset sequence.
 
 Each small ship's gallery card has a separate eight-second construction movie,
 `construction-stages.webm`, with an MP4 download alongside it. These show the five
