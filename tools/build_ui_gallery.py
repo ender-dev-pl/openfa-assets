@@ -15,11 +15,17 @@ def build():
         ('Interactive sphere — rear', 'interactive-menu-sphere/rear.png', 'interactive-menu-sphere', 'Mirrored continuous logo on the reverse. Both emblems are closed manifold meshes.'),
         ('Interactive sphere — illuminated spin', 'interactive-menu-sphere/spin-37.png', 'interactive-menu-sphere', 'Blender animation demonstration. Client drives random-axis rotation and the independent emission pulse.'),
         ('Independent GLB import', 'interactive-menu-sphere/imported-front.png', 'interactive-menu-sphere', 'Actual imported-model render. Export uses explicit PBR approximations of editable Blender materials.'),
+        ('Camera orbit and pitch mode', 'camera-mode-icon/preview.png', 'camera-mode-icon', 'New camera-mode control: silver camera, blue orbit and gold pitch arrows. Transparent 48x40 and 8x icons, five states; separate from camera reset.'),
     ]
     body=[]
     for title, image, source, description in cards:
         assert (ROOT/'gallery/media/ui'/image).is_file(), image
         links='<a href="../sources/ui/'+source+'/README.md">Source and contract</a>'
+        if source=='camera-mode-icon':
+            for ext in ['blend','glb']:
+                links+=' · <a href="../sources/ui/camera-mode-icon/camera-mode-icon.'+ext+'">'+ext.upper()+'</a>'
+            for size in ['native','hires']:
+                links+=' · <a href="media/ui/camera-mode-icon/icons/'+size+'/camera-mode-icon.png">'+size+' PNG</a>'
         if source in ['interactive-menu-sphere','legacy-main-menu-refined']:
             stem='interactive-sphere' if source=='interactive-menu-sphere' else 'main-menu'
             for ext in ['blend','glb']:
