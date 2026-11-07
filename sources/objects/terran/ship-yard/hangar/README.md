@@ -114,18 +114,39 @@ the current game catalogue. Those fields alone do not establish the original
 construction workflow. Any discrepancy in client/catalogue routing is separate
 game reconstruction work, not grounds for adding Space Dock to this asset sequence.
 
-Each small ship's gallery card has a separate eight-second construction movie,
-`construction-stages.webm`, with an MP4 download alongside it. These show the five
-actual verified Blender stage renders with fixed camera/scale and hard visibility
-changes, rather than interpolated assembly motion. Their `showcase.json` binds the
-movies to source models and stage evidence; decoded frames verify the order 1–5.
-Reproduce these presentation videos with
+Earlier standalone eight-second `construction-stages.webm` / `.mp4` files show the
+five verified Blender stage renders with fixed camera/scale and hard visibility
+changes. They are historical stage presentations, superseded by the full movies
+below. Their original provenance is retained in the historical preview metadata.
+Reproduce these earlier presentation videos with
 `python sources/tools/blender/encode_ship_construction_previews.py`.
 
-The yard gallery player also offers a separate construction-on-platform movie for
-each of the three ships: `shipyard-build-<ship>.webm` and `.mp4` in this yard's media
-directory. Each is eight seconds / 240 frames, using the five actual combined-scene
-Blender renders from `showcase-stills.json`. These clips show construction only;
-the existing combined preview separately demonstrates the subsequent crane transfer.
-`yard-build-previews.json` records source/image/video hashes and decoded phase-order
-checks. Reproduce with `python sources/tools/blender/encode_shipyard_build_previews.py`.
+The current yard and individual-ship players select full 3D movies named
+`complete-3d-<ship>.mp4` / `.webm` in this yard's media directory. Each is 20 seconds,
+480 individually rendered frames at 24 fps. During eight seconds of construction,
+successive rigid mesh batches settle into their final positions and the trolley
+services the platform. The complete transfer follows: attach, raise, open hatch,
+lower onto the receiver, release, return hook/trolley and close the hatch.
+
+Every frame evaluates the canonical GLBs in Blender Eevee. Hoist height and all
+three sling directions/lengths are calibrated separately for each ship, with
+attachment/contact assertions throughout the suspended part of the cycle. The
+preview-only batch placement controller is in `render_complete_shipyard_movies.py`;
+it does not change canonical geometry or embed these assembly movements in the
+static ship GLBs. Client construction progress and animation binding remain required.
+The five structural stages and the complete final hull remain the canonical ones.
+
+`complete-3d-<ship>.json` binds the movie to actual source files and records evaluated
+3D state counts. `complete-motion-audit.json` records distinct decoded frames, in
+addition to codec/frame-count/duration checks. To reproduce, run this once for each
+of `assault-fighter`, `combat-eagle` and `scoutship`, then rebuild the movie index:
+
+```text
+blender --background --python sources/tools/blender/render_complete_shipyard_movies.py -- --ship assault-fighter
+python sources/tools/blender/index_complete_shipyard_movies.py
+```
+
+The earlier eight-second `shipyard-build-<ship>` and isolated `construction-stages`
+files are retained as historical static-stage presentations, not full animations.
+They are no longer the selected gallery movies. Their original provenance remains
+in `yard-build-previews.json` and the historical preview metadata.

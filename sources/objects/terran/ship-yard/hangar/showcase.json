@@ -1,21 +1,91 @@
 {
   "issue": 227,
   "inputs": {
+    "sources/tools/blender/index_complete_shipyard_movies.py": "e9aac7cec7dcdf072d010802b4ebca4ae446a96c2094da9e51ebb9896272cbbf",
+    "sources/tools/blender/render_complete_shipyard_movies.py": "04cead956aa5938dd8b05040eca7032a6d11420627eaa04dae4faf99f16a9f9b",
     "sources/tools/blender/render_shipyard_construction.py": "a15bfc47ae5c4f458305e8435958bbf06d4e6189b0ccb544a4fc1ce77e38c992",
     "sources/objects/terran/ship-yard/hangar/model.blend": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
     "sources/objects/terran/ship-yard/hangar/model.glb": "a51fef8dbef18fdc1d54e630e1f32ec655e3a4405b26223864b9cbedcfa367ba",
     "sources/objects/terran/ship-yard/hangar/model.json": "4f7ec272d856a208c9271a55d06242625a9f362caa9687616a88d391a9be50a8",
     "sources/objects/terran/assault-fighter/construction/model.glb": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
     "sources/objects/terran/assault-fighter/construction/model.json": "ba2c89d431fc5f47c24ca1cfbc5d25038c1bb874f68cfae01ea913ed6632ee54",
+    "sources/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.json": "80b61be645504d423e87aefcf9c6cee14758cbe320aff82e6ecf22aa45b545ca",
     "sources/objects/terran/combat-eagle/construction/model.glb": "29bef70eaeb3f5f0845780c3ad0d090147e19a2b58c6e945f1e586ccce964677",
     "sources/objects/terran/combat-eagle/construction/model.json": "62f19177d2a833306fad4fa3ee7968c13058189b79c6ea50b710286d3e90b18f",
+    "sources/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.json": "ff97a6a050c5f6d7cfcf89c2cb38f27f47e32f1b5c3a39d38a0826da3213a158",
     "sources/objects/terran/scoutship/construction/model.glb": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
     "sources/objects/terran/scoutship/construction/model.json": "0fc8afe8219e14eca4fe187509de448bdc5b9fe6a90baa91a05102fbdf7871d6",
-    "sources/tools/blender/encode_shipyard_build_previews.py": "24fc12ba3c1d0c607e43ee0f462438e4521b8dccf8a620fc7cd8e5d03ebc31a7",
-    "sources/objects/terran/ship-yard/hangar/showcase-stills.json": "1c6d9b33d74449fb0e24f5aa46a65de48030d177e218c1eff3692027a5f0cde0",
-    "sources/objects/terran/ship-yard/hangar/yard-build-previews.json": "3ebe82e22f6101a4b581b1705aad6d9207980274c11b8374b74f12d8814b228c"
+    "sources/objects/terran/ship-yard/hangar/complete-3d-scoutship.json": "0e37ebe33e926a96908d86d5aea8502ea637995b045715d3885b5d4e8c28b47a",
+    "sources/objects/terran/ship-yard/hangar/complete-motion-audit.json": "4af3a1254da7c437a24150cef429c90725e43a45ff3810e972d704bdc0fa1e7e"
   },
   "clips": [
+    {
+      "kind": "complete-3d",
+      "name": "Assault Fighter — complete 3D construction and hangar transfer",
+      "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.webm",
+      "sha256": "0535ce9fd3f32136cec64b98f9b32a320072e76e6e40d5df3b2b0aac1d030f1d",
+      "mp4": {
+        "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.mp4",
+        "sha256": "f53a4edc16f0b51a85ad2fb221dbd7c97bf22fc74ca34115c2fea515d3eb1974"
+      },
+      "frames": 480,
+      "duration": 20,
+      "distinct_pose_count": 445
+    },
+    {
+      "kind": "complete-3d",
+      "name": "Combat Eagle — complete 3D construction and hangar transfer",
+      "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm",
+      "sha256": "08c634f5c8e00badae4be2f9b2006fcb8d61759875b8c320dbd88becf4399366",
+      "mp4": {
+        "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.mp4",
+        "sha256": "3c827be28951a8550ab7f22c53781c1743d5e1b7422906780d676d09909d8eff"
+      },
+      "frames": 480,
+      "duration": 20,
+      "distinct_pose_count": 445
+    },
+    {
+      "kind": "complete-3d",
+      "name": "Scoutship — complete 3D construction and hangar transfer",
+      "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.webm",
+      "sha256": "e11f88285d2facfe1620473d4bbfcc8c286568beee171c22449c38a21df2ef96",
+      "mp4": {
+        "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.mp4",
+        "sha256": "014ca28acb3436fe39090a26d912756ac320e5eeaa1cb2874ee1d6c7418c123e"
+      },
+      "frames": 480,
+      "duration": 20,
+      "distinct_pose_count": 445
+    }
+  ],
+  "downloads": {
+    "assault-fighter-mp4": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.mp4",
+      "sha256": "f53a4edc16f0b51a85ad2fb221dbd7c97bf22fc74ca34115c2fea515d3eb1974"
+    },
+    "assault-fighter-webm": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.webm",
+      "sha256": "0535ce9fd3f32136cec64b98f9b32a320072e76e6e40d5df3b2b0aac1d030f1d"
+    },
+    "combat-eagle-mp4": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.mp4",
+      "sha256": "3c827be28951a8550ab7f22c53781c1743d5e1b7422906780d676d09909d8eff"
+    },
+    "combat-eagle-webm": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm",
+      "sha256": "08c634f5c8e00badae4be2f9b2006fcb8d61759875b8c320dbd88becf4399366"
+    },
+    "scoutship-mp4": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.mp4",
+      "sha256": "014ca28acb3436fe39090a26d912756ac320e5eeaa1cb2874ee1d6c7418c123e"
+    },
+    "scoutship-webm": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.webm",
+      "sha256": "e11f88285d2facfe1620473d4bbfcc8c286568beee171c22449c38a21df2ef96"
+    }
+  },
+  "earlier_previews": [
     {
       "name": "Layered construction and crane transfer (Assault Fighter)",
       "video": "gallery/media/objects/terran/ship-yard/hangar/construction-transfer.webm",
@@ -64,31 +134,5 @@
       "distinct_pose_count": 5
     }
   ],
-  "scope": "Offline demonstration using actual canonical imported meshes and authored attachment/visibility contract. Build timing is a preview fixture, not game simulation. Neutral preview terrain masks the underground exterior.",
-  "downloads": {
-    "assault-fighter-mp4": {
-      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-assault-fighter.mp4",
-      "sha256": "2c61f95bf0cece1141e7eb3cbbedafcd2b5550ffd6fb03da1b4403337d7f0a9c"
-    },
-    "assault-fighter-webm": {
-      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-assault-fighter.webm",
-      "sha256": "b47ecb5e81bfe0a90f7102186874d242544a76900522dc057b4f720090b9d79d"
-    },
-    "combat-eagle-mp4": {
-      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-combat-eagle.mp4",
-      "sha256": "5c1af52d098a4f3db0bfe81c407a554e61d6e918b21933c13eaaeb6699e5a218"
-    },
-    "combat-eagle-webm": {
-      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-combat-eagle.webm",
-      "sha256": "d23435b45a2094315d6a20098e3ed8896e432338ea03e19d1cc81be2976f60fe"
-    },
-    "scoutship-mp4": {
-      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-scoutship.mp4",
-      "sha256": "db50cebf66bc13c31200006b939433624b343990f61ee9a3fffe77faafbad888"
-    },
-    "scoutship-webm": {
-      "path": "gallery/media/objects/terran/ship-yard/hangar/shipyard-build-scoutship.webm",
-      "sha256": "98af39b08b44d0851f118d57b301aad8ca06b47340362d1bd9373edcbf38f992"
-    }
-  }
+  "scope": "Complete 20-second per-frame 3D assembly and crane/hangar cycles. Canonical models are unchanged; assembly batch placement is an offline preview controller requiring client binding. Former static-stage clips are retained only as historical previews."
 }

@@ -20,7 +20,7 @@
 
 Additional views: [Frame foundation](../gallery/media/objects/terran/assault-fighter/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/assault-fighter/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/assault-fighter/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/assault-fighter/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/assault-fighter/construction/stage-05.png)
 
-[Play animation: Assault Fighter — five construction stages](../gallery/media/objects/terran/assault-fighter/construction/construction-stages.webm)
+[Play animation: Assault Fighter — complete 3D construction and hangar transfer](../gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.webm)
 
 ## Combat Eagle
 
@@ -40,7 +40,7 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/assault-fig
 
 Additional views: [Frame foundation](../gallery/media/objects/terran/combat-eagle/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/combat-eagle/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/combat-eagle/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/combat-eagle/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/combat-eagle/construction/stage-05.png)
 
-[Play animation: Combat Eagle — five construction stages](../gallery/media/objects/terran/combat-eagle/construction/construction-stages.webm)
+[Play animation: Combat Eagle — complete 3D construction and hangar transfer](../gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm)
 
 ## Scoutship
 
@@ -60,7 +60,7 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/combat-eagl
 
 Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/construction/stage-01.png) · [Expanded frame](../gallery/media/objects/terran/scoutship/construction/stage-02.png) · [Solid components](../gallery/media/objects/terran/scoutship/construction/stage-03.png) · [Partial skin](../gallery/media/objects/terran/scoutship/construction/stage-04.png) · [Complete skin](../gallery/media/objects/terran/scoutship/construction/stage-05.png)
 
-[Play animation: Scoutship — five construction stages](../gallery/media/objects/terran/scoutship/construction/construction-stages.webm)
+[Play animation: Scoutship — complete 3D construction and hangar transfer](../gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.webm)
 
 ## Destructor
 

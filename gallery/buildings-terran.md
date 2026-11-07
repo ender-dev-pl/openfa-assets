@@ -550,13 +550,11 @@ Additional views: [Crane resting on platform](../gallery/media/objects/terran/sh
 
 Additional views: [Build: frame foundation](../gallery/media/objects/terran/ship-yard/hangar/assault-fighter-build-base.png) · [Build: expanded frame](../gallery/media/objects/terran/ship-yard/hangar/assault-fighter-build-frame.png) · [Build: solid components](../gallery/media/objects/terran/ship-yard/hangar/assault-fighter-build-systems.png) · [Build: partial skin](../gallery/media/objects/terran/ship-yard/hangar/assault-fighter-partial-hull.png) · [Complete ship](../gallery/media/objects/terran/ship-yard/hangar/assault-fighter-complete.png) · [Lifted](../gallery/media/objects/terran/ship-yard/hangar/assault-fighter-lifted.png) · [Hatch open](../gallery/media/objects/terran/ship-yard/hangar/assault-fighter-hatch-open-loaded.png) · [Lowering](../gallery/media/objects/terran/ship-yard/hangar/assault-fighter-lowering.png) · [Received below ground](../gallery/media/objects/terran/ship-yard/hangar/assault-fighter-received.png) · [Ready](../gallery/media/objects/terran/ship-yard/hangar/assault-fighter-ready.png) · [Five construction stages](../gallery/media/objects/terran/ship-yard/hangar/construction-stages.png) · [Transfer sequence](../gallery/media/objects/terran/ship-yard/hangar/transfer-contact-sheet.png) · [Combat Eagle on hatch](../gallery/media/objects/terran/ship-yard/hangar/combat-eagle-complete.png) · [Scoutship on hatch](../gallery/media/objects/terran/ship-yard/hangar/scoutship-complete.png)
 
-[Play animation: Layered construction and crane transfer (Assault Fighter)](../gallery/media/objects/terran/ship-yard/hangar/construction-transfer.webm)
+[Play animation: Assault Fighter — complete 3D construction and hangar transfer](../gallery/media/objects/terran/ship-yard/hangar/complete-3d-assault-fighter.webm)
 
-[Play animation: Assault Fighter — construction on shipyard platform](../gallery/media/objects/terran/ship-yard/hangar/shipyard-build-assault-fighter.webm)
+[Play animation: Combat Eagle — complete 3D construction and hangar transfer](../gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm)
 
-[Play animation: Combat Eagle — construction on shipyard platform](../gallery/media/objects/terran/ship-yard/hangar/shipyard-build-combat-eagle.webm)
-
-[Play animation: Scoutship — construction on shipyard platform](../gallery/media/objects/terran/ship-yard/hangar/shipyard-build-scoutship.webm)
+[Play animation: Scoutship — complete 3D construction and hangar transfer](../gallery/media/objects/terran/ship-yard/hangar/complete-3d-scoutship.webm)
 
 [Play animation: Scene](../gallery/media/objects/terran/ship-yard/hangar/animation-00.webm)
 

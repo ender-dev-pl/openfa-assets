@@ -1,49 +1,89 @@
 {
   "issue": 227,
   "inputs": {
-    "sources/tools/blender/encode_ship_construction_previews.py": "f248dc0e8c1edb964e330dafc735a0648a344fa1164425c987d7c45107589d81",
-    "sources/objects/terran/combat-eagle/construction/model.blend": "52a70d2a6698f0c4e60be4023217d6c1fec2d7a1e28286db13a697b0b6cd7dd8",
+    "sources/tools/blender/render_complete_shipyard_movies.py": "04cead956aa5938dd8b05040eca7032a6d11420627eaa04dae4faf99f16a9f9b",
+    "sources/tools/blender/render_shipyard_construction.py": "a15bfc47ae5c4f458305e8435958bbf06d4e6189b0ccb544a4fc1ce77e38c992",
+    "sources/objects/terran/ship-yard/hangar/model.blend": "14369f597465b8fb9851c8f47f952aefc5072b370d86c528737abe24cd266c90",
+    "sources/objects/terran/ship-yard/hangar/model.glb": "a51fef8dbef18fdc1d54e630e1f32ec655e3a4405b26223864b9cbedcfa367ba",
+    "sources/objects/terran/ship-yard/hangar/model.json": "4f7ec272d856a208c9271a55d06242625a9f362caa9687616a88d391a9be50a8",
     "sources/objects/terran/combat-eagle/construction/model.glb": "29bef70eaeb3f5f0845780c3ad0d090147e19a2b58c6e945f1e586ccce964677",
     "sources/objects/terran/combat-eagle/construction/model.json": "62f19177d2a833306fad4fa3ee7968c13058189b79c6ea50b710286d3e90b18f",
-    "sources/objects/terran/combat-eagle/construction/visual-review.json": "fabc297b5f0a593823bc8f80a6662fabbd66a8a1d8da8caa1cdc2537413b5ebe"
+    "sources/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.json": "ff97a6a050c5f6d7cfcf89c2cb38f27f47e32f1b5c3a39d38a0826da3213a158",
+    "sources/tools/blender/index_complete_shipyard_movies.py": "e9aac7cec7dcdf072d010802b4ebca4ae446a96c2094da9e51ebb9896272cbbf"
   },
-  "stage_images": {
-    "gallery/media/objects/terran/combat-eagle/construction/stage-01.png": "068ea801896fa009e5af58cf3045a599d35c08cb7e947912d25b2c5e0238f430",
-    "gallery/media/objects/terran/combat-eagle/construction/stage-02.png": "43f56af0011723737f3ae00741940084e8213532e313990a76038bbbfd5200c1",
-    "gallery/media/objects/terran/combat-eagle/construction/stage-03.png": "c800c32226d35e623fc687d4b4c2ab51dc7aa6e1de9fa4f8cdfff568ec651aa6",
-    "gallery/media/objects/terran/combat-eagle/construction/stage-04.png": "ebe8ac2514b995734b652b3b2a86a5358e6e04f8cae96f7e6271e92cc4f7bfd6",
-    "gallery/media/objects/terran/combat-eagle/construction/stage-05.png": "e28cdc3b5655f98d9c4cc938a368db63d6cc21ef350da6f64b4764f56cab473d"
-  },
-  "decoded_stage_order": [
-    1,
-    2,
-    3,
-    4,
-    5
-  ],
   "clips": [
     {
-      "name": "Combat Eagle — five construction stages",
-      "video": "gallery/media/objects/terran/combat-eagle/construction/construction-stages.webm",
-      "sha256": "d6dc7936f6f94a9d8b023692aac670f86d2a716768396caa07aaf289933ccf7a",
-      "frames": 240,
-      "duration": 8,
-      "distinct_pose_count": 5,
+      "kind": "complete-3d",
+      "name": "Combat Eagle — complete 3D construction and hangar transfer",
+      "video": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm",
+      "sha256": "08c634f5c8e00badae4be2f9b2006fcb8d61759875b8c320dbd88becf4399366",
+      "mp4": {
+        "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.mp4",
+        "sha256": "3c827be28951a8550ab7f22c53781c1743d5e1b7422906780d676d09909d8eff"
+      },
+      "frames": 480,
+      "duration": 20,
+      "distinct_pose_count": 445
+    }
+  ],
+  "downloads": {
+    "mp4": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.mp4",
+      "sha256": "3c827be28951a8550ab7f22c53781c1743d5e1b7422906780d676d09909d8eff"
+    },
+    "webm": {
+      "path": "gallery/media/objects/terran/ship-yard/hangar/complete-3d-combat-eagle.webm",
+      "sha256": "08c634f5c8e00badae4be2f9b2006fcb8d61759875b8c320dbd88becf4399366"
+    }
+  },
+  "method": "Every frame rendered from evaluated canonical 3D models. Preview-only batch placement animation during construction; full canonical yard transfer with calibrated per-payload rig. No interpolation between still renders or duplicated still-image holds. Canonical model geometry is unchanged.",
+  "earlier_still_preview": {
+    "issue": 227,
+    "inputs": {
+      "sources/tools/blender/encode_ship_construction_previews.py": "f248dc0e8c1edb964e330dafc735a0648a344fa1164425c987d7c45107589d81",
+      "sources/objects/terran/combat-eagle/construction/model.blend": "52a70d2a6698f0c4e60be4023217d6c1fec2d7a1e28286db13a697b0b6cd7dd8",
+      "sources/objects/terran/combat-eagle/construction/model.glb": "29bef70eaeb3f5f0845780c3ad0d090147e19a2b58c6e945f1e586ccce964677",
+      "sources/objects/terran/combat-eagle/construction/model.json": "62f19177d2a833306fad4fa3ee7968c13058189b79c6ea50b710286d3e90b18f",
+      "sources/objects/terran/combat-eagle/construction/visual-review.json": "fabc297b5f0a593823bc8f80a6662fabbd66a8a1d8da8caa1cdc2537413b5ebe"
+    },
+    "stage_images": {
+      "gallery/media/objects/terran/combat-eagle/construction/stage-01.png": "068ea801896fa009e5af58cf3045a599d35c08cb7e947912d25b2c5e0238f430",
+      "gallery/media/objects/terran/combat-eagle/construction/stage-02.png": "43f56af0011723737f3ae00741940084e8213532e313990a76038bbbfd5200c1",
+      "gallery/media/objects/terran/combat-eagle/construction/stage-03.png": "c800c32226d35e623fc687d4b4c2ab51dc7aa6e1de9fa4f8cdfff568ec651aa6",
+      "gallery/media/objects/terran/combat-eagle/construction/stage-04.png": "ebe8ac2514b995734b652b3b2a86a5358e6e04f8cae96f7e6271e92cc4f7bfd6",
+      "gallery/media/objects/terran/combat-eagle/construction/stage-05.png": "e28cdc3b5655f98d9c4cc938a368db63d6cc21ef350da6f64b4764f56cab473d"
+    },
+    "decoded_stage_order": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "clips": [
+      {
+        "name": "Combat Eagle — five construction stages",
+        "video": "gallery/media/objects/terran/combat-eagle/construction/construction-stages.webm",
+        "sha256": "d6dc7936f6f94a9d8b023692aac670f86d2a716768396caa07aaf289933ccf7a",
+        "frames": 240,
+        "duration": 8,
+        "distinct_pose_count": 5,
+        "mp4": {
+          "path": "gallery/media/objects/terran/combat-eagle/construction/construction-stages.mp4",
+          "sha256": "e40388626d15a09c4bc218662516e4de013d2624f96c8ddd33aa63857cd13e0d"
+        }
+      }
+    ],
+    "method": "Sequence of five verified actual Blender stage renders, fixed camera and scale. Hard cuts reproduce cumulative mesh visibility; no interpolated assembly motion.",
+    "downloads": {
       "mp4": {
         "path": "gallery/media/objects/terran/combat-eagle/construction/construction-stages.mp4",
         "sha256": "e40388626d15a09c4bc218662516e4de013d2624f96c8ddd33aa63857cd13e0d"
+      },
+      "webm": {
+        "path": "gallery/media/objects/terran/combat-eagle/construction/construction-stages.webm",
+        "sha256": "d6dc7936f6f94a9d8b023692aac670f86d2a716768396caa07aaf289933ccf7a"
       }
-    }
-  ],
-  "method": "Sequence of five verified actual Blender stage renders, fixed camera and scale. Hard cuts reproduce cumulative mesh visibility; no interpolated assembly motion.",
-  "downloads": {
-    "mp4": {
-      "path": "gallery/media/objects/terran/combat-eagle/construction/construction-stages.mp4",
-      "sha256": "e40388626d15a09c4bc218662516e4de013d2624f96c8ddd33aa63857cd13e0d"
-    },
-    "webm": {
-      "path": "gallery/media/objects/terran/combat-eagle/construction/construction-stages.webm",
-      "sha256": "d6dc7936f6f94a9d8b023692aac670f86d2a716768396caa07aaf289933ccf7a"
     }
   }
 }
