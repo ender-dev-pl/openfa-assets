@@ -62,9 +62,20 @@ def section(y):
     raise ValueError(y)
 
 
-def hull(y,angle,offset=0):
+def hull_base(y,angle):
     w,h=section(y);c,s=math.cos(angle),math.sin(angle)
-    p=Vector((w*c,y,h*s));normal=Vector((c/w,0,s/h)).normalized()
+    lower=max(0,-s)**1.5
+    # A long upper deck above a shorter, fuller lower pressure body.
+    yy=y+lower*((-.20+.64*(y+.20))-y)
+    return Vector((w*c,yy,h*s*(.62 if s>=0 else 1)))
+
+
+def hull(y,angle,offset=0):
+    p=hull_base(y,angle)
+    if not offset:return p
+    lo=max(PROFILE[0][0],y-.0001);hi=min(PROFILE[-1][0],y+.0001)
+    normal=(hull_base(hi,angle)-hull_base(lo,angle)).cross(
+        hull_base(y,angle+.0001)-hull_base(y,angle-.0001)).normalized()
     return p+normal*offset
 
 
@@ -146,7 +157,9 @@ def crescent_point(side,t,v,depth=0):
     a=abs(t);s=math.sin(t*math.pi/2);taper=1-a**2.5
     # Broader fore shield around the hub, as in the concept/legacy root.
     # Grow the leading edge only; keep the inner mouth and distal tips intact.
-    fore_shield=.48*math.exp(-(a/.42)**2)
+    fore_shield=(.48*math.exp(-(a/.42)**2)
+                 +.80*math.exp(-((a-.30)/.15)**2)
+                 -.08*math.exp(-(a/.10)**2))
     y=-.45+2.95*a**1.65+(.5-v)*.64*taper-v*fore_shield*taper
     # Legacy/concept arms curl back towards the mouth instead of flaring apart.
     # Keep the structural root and lateral mounts; converge the distal tips.
@@ -233,10 +246,55 @@ def material():
     return mat
 
 
+def deck_height(x,y):
+    w,h=section(y)
+    return .62*h*math.sqrt(max(0,1-(x/w)**2))
+
+
+def bridge_domes():
+    # Four roof blisters interpreted as glazed crew/bridge stations by request.
+    # Their precise 2x2 layout and interiors are authored, never equipment slots.
+    for cx in [-.42,.42]:
+        for cy in [-.90,.60]:
+            rx,ry,height=.22,.28,.25;n=32;steps=12
+            def point(t,a,lift=.018):
+                x=cx+rx*math.cos(t)*math.cos(a);y=cy+ry*math.cos(t)*math.sin(a)
+                return Vector((x,y,deck_height(x,y)+height*math.sin(t)+lift))
+            vs=[tuple(point(math.pi/2*j/steps,TAU*i/n)) for j in range(steps+1) for i in range(n)]
+            fs=[tuple(range(n-1,-1,-1))]
+            fs.extend((j*n+i,j*n+(i+1)%n,(j+1)*n+(i+1)%n,(j+1)*n+i) for j in range(steps) for i in range(n))
+            emit('BridgeGlass',vs,fs,13)
+            rings=[]
+            for scale,lift in [(1.10,.004),(1.10,.048),(.98,.048),(.98,.004)]:
+                for i in range(n):
+                    a=TAU*i/n;x=cx+rx*scale*math.cos(a);y=cy+ry*scale*math.sin(a)
+                    rings.append((x,y,deck_height(x,y)+lift))
+            faces=[(j*n+i,j*n+(i+1)%n,((j+1)%4)*n+(i+1)%n,((j+1)%4)*n+i) for j in range(4) for i in range(n)]
+            emit('BridgeFrames',rings,faces,9)
+            for a in [0,math.pi/2]:
+                arc=[point(math.pi*j/16,a) if j<=8 else point(math.pi*(16-j)/16,a+math.pi) for j in range(17)]
+                for start,end in zip(arc,arc[1:]):rod('BridgeFrames',start,end,.008,2,8)
+            z=deck_height(cx,cy)
+            box('BridgeFrames',(cx,cy,z+.04),(.24,.27,.035),3,.008)
+            box('BridgeFrames',(cx,cy-.06,z+.10),(.15,.055,.045),9,.008)
+            box('BridgeFrames',(cx,cy+.05,z+.085),(.075,.08,.065),3,.008)
+
+
+def glass_material():
+    mat=bpy.data.materials.new('Achaean | tinted bridge glazing');mat.use_nodes=True
+    bs=mat.node_tree.nodes.get('Principled BSDF')
+    bs.inputs['Base Color'].default_value=(.10,.14,.16,1)
+    bs.inputs['Metallic'].default_value=0;bs.inputs['Roughness'].default_value=.12
+    bs.inputs['IOR'].default_value=1.46;bs.inputs['Transmission Weight'].default_value=.85
+    mat['interpretation']='User-directed bridge/crew glazing, not recovered equipment or proven legacy material'
+    return mat
+
+
 def finalize(mat,root):
     result=[]
     smooth={'PressureHull','FormedHullSkins','BellyCargoHatches','OchreAftMarks','DorsalStructure',
-            'CrescentStructure','CrimsonCrescentInsets','SilverCrescentRims','RootServiceCollars','TransverseStructure','ForeTerminal','AftTerminal'}
+            'CrescentStructure','CrimsonCrescentInsets','SilverCrescentRims','RootServiceCollars','TransverseStructure','ForeTerminal','AftTerminal','BridgeGlass'}
+    glazing=glass_material()
     for name,row in GROUPS.items():
         mesh=bpy.data.meshes.new(name);mesh.from_pydata(row['v'],[],row['f']);mesh.update()
         uv=mesh.uv_layers.new(name='Authored PBR atlas')
@@ -250,7 +308,9 @@ def finalize(mat,root):
         bm=bmesh.new();bm.from_mesh(mesh);bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=1e-7)
         bmesh.ops.dissolve_degenerate(bm,edges=list(bm.edges),dist=1e-7)
         bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bm.to_mesh(mesh);bm.free();mesh.update();mesh.set_sharp_from_angle(angle=.75)
-        obj=bpy.data.objects.new(name,mesh);bpy.context.collection.objects.link(obj);obj.parent=root;mesh.materials.append(mat)
+        obj=bpy.data.objects.new(name,mesh);bpy.context.collection.objects.link(obj);obj.parent=root
+        mesh.materials.append(glazing if name=='BridgeGlass' else mat)
+        if name=='BridgeGlass':obj['crew_domes']=4;obj['equipment_socket']=False
         obj['catalogue_id']=ID;obj['functional_detail_status']='authored structure, not calibrated gameplay equipment';result.append(obj)
     return result
 
@@ -285,7 +345,7 @@ def main():
     root=bpy.data.objects.new('PlacementRoot',None);bpy.context.collection.objects.link(root)
     root['catalogue_id']=ID;root['forward_axis']='-Y';root['up_axis']='Z';root['world_size_is_authored_recommendation']=True;root['proposed_world_size']=180
     root['equipment_slots']=4;root['calibrated_weapon_sockets']=0;root['source']='_S/AC2C.256; sixteen nonempty even headings'
-    body();wings();objects=finalize(material(),root)
+    body();wings();bridge_domes();objects=finalize(material(),root)
     points=[Vector(p) for o in objects for p in o.bound_box];low=Vector(tuple(min(p[a] for p in points) for a in range(3)));high=Vector(tuple(max(p[a] for p in points) for a in range(3)))
     centre=(low+high)/2;factor=18/max(high-low)
     for obj in objects:
@@ -310,7 +370,8 @@ def main():
                 for lamp in [o for o in scene.objects if o.type=='LIGHT']:
                     lamp.location.z=-lamp.location.z;lamp.rotation_euler=(-lamp.location).to_track_quat('-Z','Y').to_euler()
             scene.render.filepath=str(MEDIA/(name+'.png'));bpy.ops.render.render(write_still=True)
-    data={'id':ID,'issue':234,'triangles':triangles,'mesh_batches':len(objects),'materials':1,'packed_maps':2,
+    data={'id':ID,'issue':234,'triangles':triangles,'mesh_batches':len(objects),'materials':2,'packed_maps':2,
+          'crew_domes':4,'glazing_status':'User-directed interpretation; precise layout/interiors authored, not hardpoints',
           'native_dimensions':[round(v*factor,6) for v in high-low],'normalization_factor':factor,'normalization_centre':list(centre),
           'proposed_world_size':180,'scale_status':'Authored transporter-class recommendation; not recovered metres or applied game override',
           'blend_sha256':sha(OUT/'model.blend'),'glb_sha256':sha(OUT/'model.glb'),'generator_sha256':sha(Path(__file__)),

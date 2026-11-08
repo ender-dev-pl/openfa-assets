@@ -73,16 +73,44 @@ def crescent_dimensions(meta):
         return [(obj.matrix_world@v.co)/factor+centre for v in obj.data.vertices]
     hull=points('PressureHull');wing=points('CrescentStructure')
     hull_height=max(v.z for v in hull)-min(v.z for v in hull)
+    hull_length=max(v.y for v in hull)-min(v.y for v in hull)
     tips=[v for v in wing if v.y>2.40]
     gap=max(v.z for v in tips)-min(v.z for v in tips)
     span=max(v.z for v in wing)-min(v.z for v in wing)
     root=[v for v in wing if abs(v.z)<.01]
     root_width=max(v.y for v in root)-min(v.y for v in root)
+    central_fore=min(v.y for v in root)
+    lobes=[v for v in wing if .28<abs(v.z)<.55]
+    lobe_fore=min(v.y for v in lobes)
+    upper=[v.y for v in hull if v.z>.15];lower=[v.y for v in hull if v.z<-.15]
     return dict(hull_height=hull_height,distal_tip_vertical_span=gap,
                 root_fore_aft_width=root_width,
+                central_fore_y=central_fore,lobe_fore_y=lobe_fore,
+                upper_hull_length_at_z_above_point15=max(upper)-min(upper),
+                lower_hull_length_at_z_below_minus_point15=max(lower)-min(lower),
+                tip_span_over_hull_length=gap/hull_length,crescent_span_over_hull_length=span/hull_length,
                 crescent_vertical_span=span,tip_span_over_hull_height=gap/hull_height,
                 crescent_span_over_hull_height=span/hull_height,
                 coordinate_space='Unnormalized authored model units; actual imported vertices')
+
+
+def crew_dome_geometry(meta):
+    obj=bpy.data.objects['BridgeGlass'];bm=bmesh.new();bm.from_mesh(obj.data)
+    bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=1e-6*meta['normalization_factor'])
+    assert all(e.is_manifold for e in bm.edges),'open glazing shell'
+    pending=set(bm.verts);count=0
+    while pending:
+        stack=[pending.pop()];count+=1
+        while stack:
+            v=stack.pop()
+            for edge in v.link_edges:
+                other=edge.other_vert(v)
+                if other in pending:pending.remove(other);stack.append(other)
+    bm.free();assert count==4,('four separate crew domes',count)
+    bs=obj.data.materials[0].node_tree.nodes.get('Principled BSDF')
+    assert bs and bs.inputs['Transmission Weight'].default_value>.75
+    return dict(closed_glazed_shells=count,transmission=float(bs.inputs['Transmission Weight'].default_value),
+                equipment_sockets=False,layout_and_bridge_function='User-directed authored interpretation')
 
 
 def distal_fastener_contacts(meta):
@@ -145,9 +173,14 @@ def main():
     error=compare(native,imported);imported_maps=packed_maps();imported_witnesses=structure_witnesses(scene,meta)
     proportions=crescent_dimensions(meta)
     fastener_contacts=distal_fastener_contacts(meta)
-    assert proportions['tip_span_over_hull_height']<.80,('distal arms still flared apart',proportions)
-    assert proportions['crescent_span_over_hull_height']<1.15,('excessive crescent height',proportions)
+    # Longitudinal normalization keeps arm checks valid after the deliberately
+    # asymmetric hull replaces the previous symmetric cross-section.
+    assert proportions['tip_span_over_hull_length']<.18,('distal arms still flared apart',proportions)
+    assert proportions['crescent_span_over_hull_length']<.29,('excessive crescent height',proportions)
     assert 1.0<proportions['root_fore_aft_width']<1.2,('fore shield width',proportions)
+    assert proportions['lobe_fore_y']<proportions['central_fore_y']-.15,('missing paired front lobes',proportions)
+    assert proportions['lower_hull_length_at_z_below_minus_point15']<.9*proportions['upper_hull_length_at_z_above_point15'],proportions
+    crew_domes=crew_dome_geometry(meta)
     # Image names can change while glTF packs roughness/metallic; actual rendered
     # colour agreement is checked independently by the pixel reviewer.
     assert len(imported_maps)==len(maps)==2
@@ -178,8 +211,12 @@ def main():
             'native_witnesses':native_witnesses,'imported_witnesses':imported_witnesses,'packed_maps_native_and_imported':2,
             'imported_crescent_proportions':proportions,
             'imported_distal_fastener_contacts':fastener_contacts,
+            'materials':2,'imported_crew_domes':crew_domes,
             'source_unchanged':True,'technical_view':'Actual independently imported GLB geometry; authored technical visualization, not original legacy wireframe',
-            'renders':{p.name:sha(p) for p in MEDIA.glob('*.png')},'scope':'Blender asset verification; client scale/orientation, attachments and GPU budgets require separate integration acceptance'}
+            # Supplemental views have their own actual-import renderer and
+            # source-bound round-review ledger, refreshed after this verifier.
+            'renders':{p.name:sha(p) for p in MEDIA.glob('*.png') if p.name not in {'verified-bridge-detail.png','verified-hull-profile.png'}},
+            'scope':'Blender asset verification; client scale/orientation, attachments and GPU budgets require separate integration acceptance'}
     (OUT/'runtime-verification.json').write_text(json.dumps(result,indent=2)+'\n')
     print('ACHAEAN_TRANSPORTER_VERIFIED '+json.dumps(result),flush=True)
 

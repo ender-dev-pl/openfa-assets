@@ -10,7 +10,7 @@ The Achaean Architecture text supplies curved-form context, not proof of vehicle
 
 ## Delivery and verification
 
-`model.blend` is editable; `model.glb` is the portable current export. Both contain 44,856 triangles, 14 mesh batches, one material and two packed 2048-square colour/ORM maps. Maps are independently generated from analytic stains, edge dirt, grain and sparse scratches. The generator scripts and material maps are in the repository. No animation is invented for this delivery.
+`model.blend` is editable; `model.glb` is the portable current export. Both contain 53,248 triangles, 16 mesh batches, two materials and two packed 2048-square colour/ORM maps. Maps are independently generated from analytic stains, edge dirt, grain and sparse scratches. The generator scripts and material maps are in the repository. No animation is invented for this delivery.
 
 The saved publication-cleaned native source and independent GLB import were rendered in Blender 4.5.15. Geometry comparison has zero world-position error. Closed pressure/crescent cores have positive volume; eight empty-mouth and eight occupied-rim witnesses pass in each representation. The technical wireframe is rendered from the actual imported model, not a separately improved diagram. See `runtime-verification.json` for source-bound results and `delivery-review.json` for image comparisons. Technical checks do not establish final user artistic or game integration acceptance.
 
@@ -29,3 +29,11 @@ The geometry/visual correction has been reviewed by the authoring agent; user ar
 ### Leading shield width follow-up
 
 The user's marked concept detail required a broader leading crescent shield around the hub. Its root fore/aft width now measures approximately 1.12 authored units, versus the previous 0.64 source parameter. Expansion is confined to the forward edge near the root and fades along the arms; lateral mounts, inner mouth, distal convergence and hull remain unchanged. The imported vertex measurement is recorded in the runtime and visual feedback reports. The gallery's leading-shield comparison isolates the concept, previous export and corrected actual GLB. Diagnostic views confirm the broad shield without closing the crescent opening.
+
+## Asymmetric hull, paired wing lobes and glazed crew domes
+
+The latest user review takes precedence over the older concept where it refines the reading of legacy. The upper deck remains long; the fuller lower hull now tapers to shorter fore/aft limits. A pair of rounded leading lobes with a central indentation replaces each crescent's single convex fore arc. Four closed glazed roof blisters are arranged in two pairs across the central deck. Their exact positions, glass material, small interior fittings and bridge/crew function are authored interpretations requested by the user, not recovered hardpoint positions or an established original operating mechanism. Lateral and underside equipment remain separate from these roof blisters.
+
+Independent import measures the lower hull's length below z=-0.15 as approximately 3.19 units versus 3.80 above z=+0.15. These diagnostic sections and units describe the authored geometry, not recovered dimensions. Leading lobe extrema extend forward of the central notch. Four closed glass shells with transmission 0.85 are verified independently. The glass uses KHR_materials_transmission; renderers without this extension retain a dark tinted PBR fallback. Client transparency/lighting acceptance remains separate.
+
+`verified-bridge-detail.png` shows the four glazed shells. `verified-hull-profile.png` deliberately hides wing/support/service assemblies to expose the actual imported hull profile; it is a labelled diagnostic, not a gameplay screenshot or alternate model. `round-review.json` binds these supplemental render hashes to the same canonical Blend/GLB. Source/export geometry agreement, open mouths and seated fasteners are rechecked after the changes. The arm-span regression checks now use hull length rather than hull height so the intentionally changed vertical cross-section cannot invalidate unchanged distal-arm geometry.

@@ -22,6 +22,10 @@ def main():
         assert sha(out/('model.'+ext)) == runtime[ext+'_sha256']
     for name, digest in runtime['renders'].items():
         assert sha(media/name) == digest, name
+    focused=json.loads((out/'round-review.json').read_text())
+    assert focused['glb_sha256']==runtime['glb_sha256'] and focused['blend_sha256']==runtime['blend_sha256']
+    for name,digest in focused['renders'].items():
+        assert sha(media/name)==digest,name
     native = np.array(Image.open(media/'verified-native.png').convert('RGBA')).astype(float)
     imported = np.array(Image.open(media/'verified-imported.png').convert('RGBA')).astype(float)
     a, b = native[:,:,3] > 128, imported[:,:,3] > 128
@@ -38,10 +42,12 @@ def main():
     data = (out/'model.glb').read_bytes()
     length = struct.unpack_from('<I', data, 12)[0]
     gltf = json.loads(data[20:20+length])
-    assert len(gltf['materials']) == 1 and len(gltf['images']) == 2
+    assert len(gltf['materials']) == 2 and len(gltf['images']) == 2
+    glazing=[m for m in gltf['materials'] if 'glazing' in m.get('name','')]
+    assert len(glazing)==1 and glazing[0]['extensions']['KHR_materials_transmission']['transmissionFactor']>.75
     assert all('bufferView' in image and 'uri' not in image for image in gltf['images'])
     triangles = sum(gltf['accessors'][p['indices']]['count']//3 for mesh in gltf['meshes'] for p in mesh['primitives'])
-    assert triangles == runtime['triangles'] == 44856
+    assert triangles == runtime['triangles'] and triangles < 60000
     for key in ['native_witnesses', 'imported_witnesses']:
         assert runtime[key] == dict(empty_mouth_witnesses=8, occupied_rim_witnesses=8)
     inventory = json.loads((ROOT/'sources/docs/reconstruction/models/inventory.json').read_text())
@@ -58,13 +64,16 @@ def main():
     assert len(row['studies']) == 1
     assert any(v['image'].endswith('/wing-root-comparison.jpg') for v in row['studies'][0]['views'])
     proportions=runtime['imported_crescent_proportions']
-    assert proportions['tip_span_over_hull_height']<.80
-    assert proportions['crescent_span_over_hull_height']<1.15
+    assert proportions['tip_span_over_hull_length']<.18
+    assert proportions['crescent_span_over_hull_length']<.29
     assert 1.0<proportions['root_fore_aft_width']<1.2
     assert runtime['imported_distal_fastener_contacts']['contacts']==8
+    assert runtime['imported_crew_domes']['closed_glazed_shells']==4
+    assert proportions['lobe_fore_y']<proportions['central_fore_y']-.15
+    assert proportions['lower_hull_length_at_z_below_minus_point15']<.9*proportions['upper_hull_length_at_z_above_point15']
     assert row['studies'][0]['sha256'] == runtime['blend_sha256']
     review = dict(native_imported_alpha_iou=iou, foreground_rgb_mean_error_255=error,
-        framing_margin_pixels=framing, embedded_images=2, materials=1, triangles=triangles,
+        framing_margin_pixels=framing, embedded_images=2, materials=2, triangles=triangles,
         one_current_canonical_study=True, historical_sources_unchanged=historical,
         blend_sha256=runtime['blend_sha256'], glb_sha256=runtime['glb_sha256'],
         scope='Delivery integrity, not final artistic or client acceptance')

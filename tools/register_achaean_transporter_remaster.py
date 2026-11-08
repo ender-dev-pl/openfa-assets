@@ -36,10 +36,16 @@ def main():
              for name in ['front-quarter', 'rear-quarter', 'top', 'front', 'side', 'underside',
                           'crescent-detail', 'hull-detail', 'technical-wireframe', 'concept',
                           'verified-side', 'verified-front', 'verified-legacy-side', 'verified-legacy-quarter']]
+    for name,label in [('verified-bridge-detail','Four glazed crew domes'),
+                       ('verified-hull-profile','Hull profile diagnostic - wing assemblies hidden')]:
+        if (ROOT/'gallery/media'/OBJECT/(name+'.png')).is_file():
+            views.append(dict(label=label,image='gallery/media/'+OBJECT+'/'+name+'.png'))
     if (ROOT/'gallery/media'/OBJECT/'feedback-comparison.jpg').is_file():
         views.append(dict(label='Concept and GLB feedback comparison', image='gallery/media/'+OBJECT+'/feedback-comparison.jpg'))
     if (ROOT/'gallery/media'/OBJECT/'wing-root-comparison.jpg').is_file():
         views.append(dict(label='Leading shield correction', image='gallery/media/'+OBJECT+'/wing-root-comparison.jpg'))
+    if (ROOT/'gallery/media'/OBJECT/'round-shape-comparison.jpg').is_file():
+        views.append(dict(label='Asymmetric hull, lobes and glazing - before and after',image='gallery/media/'+OBJECT+'/round-shape-comparison.jpg'))
     record['available_studies'] = [dict(stage='legacy-hi-def-remaster', blend=OBJECT+'/model.blend',
         present=True, sha256=report['blend_sha256'], final_visual_acceptance='awaiting-user-review', views=views)]
     record['selected_refinement'] = dict(issue=234, blend=OBJECT+'/model.blend', glb=OBJECT+'/model.glb',
@@ -51,7 +57,7 @@ def main():
     metadata = dict(id=ID, issue=234, canonical_blend='sources/'+OBJECT+'/model.blend',
         canonical_glb='sources/'+OBJECT+'/model.glb', source_sha256=report['blend_sha256'],
         export_sha256=report['glb_sha256'], triangles=report['triangles'], mesh_batches=report['mesh_batches'],
-        materials=1, packed_maps=2, map_dimensions=[2048, 2048], local_forward='-Y', local_up='+Z',
+        materials=report['materials'], crew_domes=4, packed_maps=2, map_dimensions=[2048, 2048], local_forward='-Y', local_up='+Z',
         native_max_extent=18, proposed_world_size=180, current_client_fallback_size=96,
         scale_status='Unapplied authored recommendation, not physical metres',
         equipment_slots=4, calibrated_sockets=0, operational_animations=[],
@@ -65,6 +71,7 @@ def main():
     paths += list((ROOT/'gallery/media'/OBJECT).iterdir())
     paths += [ROOT/'sources/tools/achaean_transporter_maps.py',
               ROOT/'sources/tools/blender/remaster_achaean_transporter.py',
+              ROOT/'sources/tools/blender/render_achaean_transporter_round_review.py',
               ROOT/'sources/tools/blender/verify_achaean_transporter_remaster.py']
     for item in sorted(paths):
         rel = item.relative_to(ROOT).as_posix()
