@@ -4,6 +4,8 @@ Existing authored studies only. First run and available refined stages are shown
 
 [Interactive catalogue](index.html) · [Machine-readable index](catalogue.json) · [RIS2 scaffold refinement](scaffolds-ris2.md) · [Culture scaffold kits](scaffolds-cultures.md) · [Game-rendered construction videos](construction-animations.html)
 
+[Interceptor and Decoy extension models / separation animation](extension-missiles.md)
+
 ## Index by race and asset type
 
 | Race | Buildings | Ships / vehicles | Hardpoints | Missiles / rockets | Trading goods |
