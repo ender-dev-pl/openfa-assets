@@ -6,11 +6,13 @@
 
 `openfa:ship/achaean/hunter-prospector`
 
-**First available iteration — initial-reference-study**
+**First available iteration — legacy-hi-def-remaster**
 
-![Hunter/Prospector](../gallery/media/docs/assets/reconstruction/ships/achaean/hunter-prospector/front-quarter.png)
+![Hunter/Prospector](../gallery/media/objects/achaean/hunter-prospector/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/achaean/hunter-prospector/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/achaean/hunter-prospector/model.glb)
+[Blend](../sources/objects/achaean/hunter-prospector/model.blend) · [GLB](../sources/objects/achaean/hunter-prospector/model.glb)
+
+[Front Quarter](../gallery/media/objects/achaean/hunter-prospector/front-quarter.png) · [Rear Quarter](../gallery/media/objects/achaean/hunter-prospector/rear-quarter.png) · [Front](../gallery/media/objects/achaean/hunter-prospector/front.png) · [Side](../gallery/media/objects/achaean/hunter-prospector/side.png) · [Top](../gallery/media/objects/achaean/hunter-prospector/top.png) · [Underside](../gallery/media/objects/achaean/hunter-prospector/underside.png) · [Technical Wireframe](../gallery/media/objects/achaean/hunter-prospector/technical-wireframe.png) · [Concept](../gallery/media/objects/achaean/hunter-prospector/concept.png) · [Verified Heading 0](../gallery/media/objects/achaean/hunter-prospector/verified-heading-0.png) · [Verified Heading 4](../gallery/media/objects/achaean/hunter-prospector/verified-heading-4.png) · [Verified Heading 8](../gallery/media/objects/achaean/hunter-prospector/verified-heading-8.png) · [Verified Heading 12](../gallery/media/objects/achaean/hunter-prospector/verified-heading-12.png) · [Verified Heading 20](../gallery/media/objects/achaean/hunter-prospector/verified-heading-20.png) · [Concept and actual imported GLB](../gallery/media/objects/achaean/hunter-prospector/concept-model-comparison.jpg)
 
 ## Dedicated Fighter
 
