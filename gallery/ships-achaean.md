@@ -16,11 +16,13 @@
 
 `openfa:ship/achaean/dedicated-fighter`
 
-**First available iteration — initial-reference-study**
+**First available iteration — legacy-hi-def-remaster**
 
-![Dedicated Fighter](../gallery/media/docs/assets/reconstruction/ships/achaean/dedicated-fighter/front-quarter.png)
+![Dedicated Fighter](../gallery/media/objects/achaean/dedicated-fighter/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/achaean/dedicated-fighter/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/achaean/dedicated-fighter/model.glb)
+[Blend](../sources/objects/achaean/dedicated-fighter/model.blend) · [GLB](../sources/objects/achaean/dedicated-fighter/model.glb)
+
+[Front Quarter](../gallery/media/objects/achaean/dedicated-fighter/front-quarter.png) · [Rear Quarter](../gallery/media/objects/achaean/dedicated-fighter/rear-quarter.png) · [Front](../gallery/media/objects/achaean/dedicated-fighter/front.png) · [Side](../gallery/media/objects/achaean/dedicated-fighter/side.png) · [Top](../gallery/media/objects/achaean/dedicated-fighter/top.png) · [Underside](../gallery/media/objects/achaean/dedicated-fighter/underside.png) · [Technical Wireframe](../gallery/media/objects/achaean/dedicated-fighter/technical-wireframe.png) · [Concept](../gallery/media/objects/achaean/dedicated-fighter/concept.png) · [Verified Heading 0](../gallery/media/objects/achaean/dedicated-fighter/verified-heading-0.png) · [Verified Heading 4](../gallery/media/objects/achaean/dedicated-fighter/verified-heading-4.png) · [Verified Heading 8](../gallery/media/objects/achaean/dedicated-fighter/verified-heading-8.png) · [Verified Heading 12](../gallery/media/objects/achaean/dedicated-fighter/verified-heading-12.png) · [Verified Heading 20](../gallery/media/objects/achaean/dedicated-fighter/verified-heading-20.png) · [Concept and actual imported GLB](../gallery/media/objects/achaean/dedicated-fighter/concept-model-comparison.jpg)
 
 ## Dedicated Ore Transporter
 

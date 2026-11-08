@@ -31584,28 +31584,86 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:ship/achaean/dedicated-fighter",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-no-object-specific-narrative-mapped",
         "description_records": []
       },
       "presentation_profile": null,
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/achaean/dedicated-fighter/model.blend",
+          "stage": "legacy-hi-def-remaster",
+          "blend": "objects/achaean/dedicated-fighter/model.blend",
           "present": true,
-          "sha256": "48e31a8148868c19e9e368d9e10988b05e1ee44bc7ebeb4476de6816640edbe2",
-          "final_visual_acceptance": "not-established"
+          "sha256": "82c6404ff515a5975524454ffade53859ee7fc1aee2206957a7ac537e33f8e3d",
+          "final_visual_acceptance": "awaiting-user-review",
+          "views": [
+            {
+              "label": "Front Quarter",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/front-quarter.png"
+            },
+            {
+              "label": "Rear Quarter",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/rear-quarter.png"
+            },
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/front.png"
+            },
+            {
+              "label": "Side",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/side.png"
+            },
+            {
+              "label": "Top",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/top.png"
+            },
+            {
+              "label": "Underside",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/underside.png"
+            },
+            {
+              "label": "Technical Wireframe",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/technical-wireframe.png"
+            },
+            {
+              "label": "Concept",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/concept.png"
+            },
+            {
+              "label": "Verified Heading 0",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/verified-heading-0.png"
+            },
+            {
+              "label": "Verified Heading 4",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/verified-heading-4.png"
+            },
+            {
+              "label": "Verified Heading 8",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/verified-heading-8.png"
+            },
+            {
+              "label": "Verified Heading 12",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/verified-heading-12.png"
+            },
+            {
+              "label": "Verified Heading 20",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/verified-heading-20.png"
+            },
+            {
+              "label": "Concept and actual imported GLB",
+              "image": "gallery/media/objects/achaean/dedicated-fighter/concept-model-comparison.jpg"
+            }
+          ]
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
+        "reference_views_reviewed": true,
         "silhouette_and_proportions": false,
         "high_detail_structure": false,
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -31649,6 +31707,25 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/achaean/dedicated-fighter/model.blend",
+          "present": true,
+          "sha256": "48e31a8148868c19e9e368d9e10988b05e1ee44bc7ebeb4476de6816640edbe2",
+          "final_visual_acceptance": "not-established",
+          "historical_not_for_packaging": true
+        }
+      ],
+      "selected_refinement": {
+        "issue": 236,
+        "blend": "objects/achaean/dedicated-fighter/model.blend",
+        "glb": "objects/achaean/dedicated-fighter/model.glb",
+        "source_sha256": "82c6404ff515a5975524454ffade53859ee7fc1aee2206957a7ac537e33f8e3d",
+        "export_sha256": "78b8144db063fed2947dd075dc7691eeef584b91bccfd98684f3dc02cd6e47a9",
+        "proposed_world_size": 96,
+        "scale_status": "Authored size assumption; current generic fallback96; client acceptance separate"
       }
     },
     {
