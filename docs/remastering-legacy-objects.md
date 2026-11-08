@@ -35,6 +35,14 @@ Rebuild the gallery with `python tools/build_gallery.py` after publishing the re
 
 Include the gallery update in the remaster milestone and provide its preview links in the handoff. Distinguish a committed local gallery update from a deployed public gallery: when public publication is in scope, verify the deployed revision separately and report its actual status.
 
+## Disk usage and task-owned cleanup
+
+Before creating a checkout, building, rendering a large batch, unpacking references, or copying substantial assets, check free space and existing usable outputs. Prefer a suitable existing isolated checkout and reuse verified outputs for unchanged inputs. Do not duplicate complete builds, runtimes, archives, or reference caches for convenience.
+
+Record the task's starting disk state, its new output and temporary locations, and whether a checkout was created or reused. At completion, report whether the task caused excessive disk usage, with the sizes and purpose of retained temporary artifacts and any task-created checkout. Distinguish task-attributable files from changes in total free space caused by other work. Identify concrete cleanup candidates by exact path and size, explain their remaining evidence value, and suggest cleanup when appropriate.
+
+Cleanup is restricted to files created by that specific task. Existing checkouts, prior evidence, user files, and artifacts from other tasks are outside its scope, even when they appear obsolete or duplicated. Preserve final deliverables and required verification evidence, verify exact targets before deletion, and follow the repository's approval requirements for removing working directories. A reused checkout must never be proposed for wholesale removal as if it belonged to the current task.
+
 ## Visual quality and game budgets
 
 The current working target is approximately **80% perceptual visual fidelity**, not pixel-for-pixel reproduction or a calculated similarity score. Prioritize recognizable silhouette, proportions, colour placement, characteristic components, and credible materials. Simplification is acceptable where it preserves those features; the target does not excuse a missing visible component, an inconsistent blueprint, or an incorrectly operating mechanism.
