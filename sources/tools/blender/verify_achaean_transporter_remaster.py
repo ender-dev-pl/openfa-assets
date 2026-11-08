@@ -76,7 +76,10 @@ def crescent_dimensions(meta):
     tips=[v for v in wing if v.y>2.40]
     gap=max(v.z for v in tips)-min(v.z for v in tips)
     span=max(v.z for v in wing)-min(v.z for v in wing)
+    root=[v for v in wing if abs(v.z)<.01]
+    root_width=max(v.y for v in root)-min(v.y for v in root)
     return dict(hull_height=hull_height,distal_tip_vertical_span=gap,
+                root_fore_aft_width=root_width,
                 crescent_vertical_span=span,tip_span_over_hull_height=gap/hull_height,
                 crescent_span_over_hull_height=span/hull_height,
                 coordinate_space='Unnormalized authored model units; actual imported vertices')
@@ -144,6 +147,7 @@ def main():
     fastener_contacts=distal_fastener_contacts(meta)
     assert proportions['tip_span_over_hull_height']<.80,('distal arms still flared apart',proportions)
     assert proportions['crescent_span_over_hull_height']<1.15,('excessive crescent height',proportions)
+    assert 1.0<proportions['root_fore_aft_width']<1.2,('fore shield width',proportions)
     # Image names can change while glTF packs roughness/metallic; actual rendered
     # colour agreement is checked independently by the pixel reviewer.
     assert len(imported_maps)==len(maps)==2

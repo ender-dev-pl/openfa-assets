@@ -38,6 +38,8 @@ def main():
                           'verified-side', 'verified-front', 'verified-legacy-side', 'verified-legacy-quarter']]
     if (ROOT/'gallery/media'/OBJECT/'feedback-comparison.jpg').is_file():
         views.append(dict(label='Concept and GLB feedback comparison', image='gallery/media/'+OBJECT+'/feedback-comparison.jpg'))
+    if (ROOT/'gallery/media'/OBJECT/'wing-root-comparison.jpg').is_file():
+        views.append(dict(label='Leading shield correction', image='gallery/media/'+OBJECT+'/wing-root-comparison.jpg'))
     record['available_studies'] = [dict(stage='legacy-hi-def-remaster', blend=OBJECT+'/model.blend',
         present=True, sha256=report['blend_sha256'], final_visual_acceptance='awaiting-user-review', views=views)]
     record['selected_refinement'] = dict(issue=234, blend=OBJECT+'/model.blend', glb=OBJECT+'/model.glb',

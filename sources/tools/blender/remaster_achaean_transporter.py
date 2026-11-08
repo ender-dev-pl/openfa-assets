@@ -144,7 +144,10 @@ def body():
 
 def crescent_point(side,t,v,depth=0):
     a=abs(t);s=math.sin(t*math.pi/2);taper=1-a**2.5
-    y=-.45+2.95*a**1.65+(.5-v)*.64*taper
+    # Broader fore shield around the hub, as in the concept/legacy root.
+    # Grow the leading edge only; keep the inner mouth and distal tips intact.
+    fore_shield=.48*math.exp(-(a/.42)**2)
+    y=-.45+2.95*a**1.65+(.5-v)*.64*taper-v*fore_shield*taper
     # Legacy/concept arms curl back towards the mouth instead of flaring apart.
     # Keep the structural root and lateral mounts; converge the distal tips.
     z=1.06*s*(1-.58*a*a)+(v-.5)*.32*s*taper

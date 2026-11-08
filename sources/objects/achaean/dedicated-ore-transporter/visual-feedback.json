@@ -1,6 +1,6 @@
 {
   "id": "openfa:ship/achaean/dedicated-ore-transporter",
-  "model_render_review_passes": 2,
+  "model_render_review_passes": 3,
   "imagegen_iterations_this_correction": 0,
   "review_method": "Human-readable visual review by authoring agent plus measured actual imported geometry; no automated perceptual score",
   "feedback": "Distal crescent arms too widely separated compared with concept and paletted legacy",
@@ -35,8 +35,8 @@
   "concept_sha256": "3f54b8f73d7248a7bfa68c34f7b62ec981fcbea7ebee719b737c7f45c15f5bff",
   "previous_commit": "a353157c",
   "previous_glb_sha256": "aa6976181a72876d2d305a0877da1d4424849c484d2cbc3dc1428f0cbe43bcfb",
-  "current_glb_sha256": "4ca0da2f4532149079048d72f7372eebf141822b25874a1382d65d5baaf9ef3b",
-  "current_blend_sha256": "4842868881a9f3e75049fbc46420fdc9af05f51d3ceee78635609f8d7fe75f36",
+  "current_glb_sha256": "ba1ad3f0181f65fab28c2899af6e8b71f142b9e4416a0a11ca1a130758e55b9e",
+  "current_blend_sha256": "2eb7552dc52040dddea83ab11ed2418863da8397327b50fc853f37ff4bb60bc1",
   "before": {
     "hull_height": 1.399999976158142,
     "distal_tip_vertical_span": 2.121587038040161,
@@ -51,15 +51,23 @@
   "after": {
     "hull_height": 1.399999976158142,
     "distal_tip_vertical_span": 0.9302675127983093,
+    "root_fore_aft_width": 1.1200000047683716,
     "crescent_vertical_span": 1.5469179153442383,
     "tip_span_over_hull_height": 0.6644768061719079,
     "crescent_span_over_hull_height": 1.104941386920067,
     "coordinate_space": "Unnormalized authored model units; actual imported vertices"
   },
-  "change": "Distal arms converge while preserving lateral mounts and hull; eight fasteners seated on the tapered skin; no whole-ship squash or copied concept geometry glitches",
+  "change": "Distal arms converge; leading shield around the hub widened without changing the mouth, lateral mounts or hull; eight fasteners seated on the tapered skin",
+  "root_width_correction": {
+    "previous_source_commit": "3d235d5a",
+    "previous_authored_width_parameter": 0.64,
+    "current_measured_imported_width": 1.1200000047683716,
+    "user_feedback": "Leading crescent width around the hub must match the broad concept/legacy shield",
+    "comparison_sha256": "9847b6e0c4e34c1a553ec853dad1dfebc78f73a4a102ecef3837c7eef5a3db49"
+  },
   "imported_distal_fastener_contacts": {
     "contacts": 8,
-    "maximum_skin_distance_authored_units": 0.00012663864477564327
+    "maximum_skin_distance_authored_units": 0.00012678376323239693
   },
   "visual_review": {
     "converging_open_crescents": true,
@@ -69,14 +77,14 @@
     "source_export_geometry_agrees": true
   },
   "reviewed_current_views": {
-    "verified-front.png": "04f60cd066bbc2c856f4620a66c5d67c80e4cdab93a26554e054e1c6bb305ba9",
-    "verified-imported.png": "9765e7962741f21b7cf23ad4d45890292e2862f9b4c1bf8aedd3e2d6f9687205",
-    "verified-legacy-quarter.png": "9ab9160b575baa63586e1ef0af5fecfa283c0f0374827efe614e0f36a81fba2f",
-    "verified-legacy-side.png": "d6758b1f4544737614c4f124f7f4304bd1113043a2dcb56e452d2d73fde45885",
-    "verified-native.png": "722906c8bdcb814e2ecddf203431ea05e98388c7288b7c2ac4abc919923c12d9",
-    "verified-side.png": "35bc0ec80d7632fa013af32b50525f8bbc62bd0fbdc365181150c179fd9f5aa7"
+    "verified-front.png": "5a3c9d47e1c45265780679f785a579fe9b14a00e8373564a6c67b92e0608b4ab",
+    "verified-imported.png": "20afab59fa62ff49ebcca4a8d2d1ac879ca8e150eb11911d069a9557e085d56f",
+    "verified-legacy-quarter.png": "90d37204fd3820d10d2feed67156af55f8a93a51e3b0867f4ae845510777caff",
+    "verified-legacy-side.png": "f97f80eb3e4df18150d9f1f3e14bf1d036e93ba09dacb1507751be717d69017a",
+    "verified-native.png": "d01dc95b024767966ea9640995b7da30c2b21d7a508f15ba969f2c11d89c8a30",
+    "verified-side.png": "3e78304047090ba93d327ccd3fd7bd59340fe57ba6fcb1ade8bd558ff52273a9"
   },
-  "comparison_sha256": "08d48ecd57c0f5dff06bafb8de27f2664a224e6f0acb6c52f4da293786303387",
+  "comparison_sha256": "fdf3b62295b1b90470e0bdc56c5178f9142475f2a00d3ce0ffb18da873ed2024",
   "limitations": [
     "No exact original camera or recovered physical dimensions",
     "Concept microdetail and surface wear simplified for gameplay",

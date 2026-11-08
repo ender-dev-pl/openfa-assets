@@ -1,10 +1,10 @@
 {
   "id": "openfa:ship/achaean/dedicated-ore-transporter",
   "blender": "4.5.15 LTS",
-  "blend_sha256": "4842868881a9f3e75049fbc46420fdc9af05f51d3ceee78635609f8d7fe75f36",
-  "glb_sha256": "4ca0da2f4532149079048d72f7372eebf141822b25874a1382d65d5baaf9ef3b",
-  "generator_sha256": "35ab0599664d2de6808aa65caadc682591537d4160f4bba6bbdbbeee4072d48d",
-  "verifier_sha256": "d5c8cf2c2f8586ca4b884914e8481b0e4a33908c73097763d6dd2b5d8fceef2c",
+  "blend_sha256": "2eb7552dc52040dddea83ab11ed2418863da8397327b50fc853f37ff4bb60bc1",
+  "glb_sha256": "ba1ad3f0181f65fab28c2899af6e8b71f142b9e4416a0a11ca1a130758e55b9e",
+  "generator_sha256": "48d8bd91defb62b7fbd516c8303dc11cdab8b0d274bcc4bbc9e91befd0bdac72",
+  "verifier_sha256": "9a1a8fbf9c6fe88b3b6f06b6402dbc0402fc4fb611518a8378099efd2a3f146e",
   "triangles": 44856,
   "mesh_batches": 14,
   "closed_nonzero_core_meshes": {
@@ -24,6 +24,7 @@
   "imported_crescent_proportions": {
     "hull_height": 1.399999976158142,
     "distal_tip_vertical_span": 0.9302675127983093,
+    "root_fore_aft_width": 1.1200000047683716,
     "crescent_vertical_span": 1.5469179153442383,
     "tip_span_over_hull_height": 0.6644768061719079,
     "crescent_span_over_hull_height": 1.104941386920067,
@@ -31,27 +32,27 @@
   },
   "imported_distal_fastener_contacts": {
     "contacts": 8,
-    "maximum_skin_distance_authored_units": 0.00012663864477564327
+    "maximum_skin_distance_authored_units": 0.00012678376323239693
   },
   "source_unchanged": true,
   "technical_view": "Actual independently imported GLB geometry; authored technical visualization, not original legacy wireframe",
   "renders": {
     "concept.png": "3f54b8f73d7248a7bfa68c34f7b62ec981fcbea7ebee719b737c7f45c15f5bff",
-    "crescent-detail.png": "aa49dd3e232743c5439128b4b2d9acaf49f55110ce2448a2cd1201a2b6535841",
-    "front-quarter.png": "dd2b70493abeefca291c63a680ea742a37194586ea23b5a87300254244370889",
-    "front.png": "1e765341b46d951fe85bdd235da06839169577c254b7a4f2475f9b7a6164b04a",
-    "hull-detail.png": "6a32fc3f36546ecb292c2d0f848d71f9f33c88e44ee0ee88984b12d445a976d7",
-    "rear-quarter.png": "4f2b1f81b275b597a39ba508f27fd0f758a353819a129bfe0ab6583fd1e6a548",
-    "side.png": "f5e159a7135b15d16438cbe5bd147cd6af9dc60357b9453ba975544bd4e0bf4c",
-    "technical-wireframe.png": "ae4492bc8c777320cdb8f492298d7296f19cd4cb199140e91f3b4a17a9c0e629",
-    "top.png": "8f6c50798bfff46974b430c974896115f0a59b1a0c59bc554176000fb417fcb9",
-    "underside.png": "9628a2d37846fda0324f13a6ecc5abccd2631a41f92acde232091de4de4535ba",
-    "verified-front.png": "04f60cd066bbc2c856f4620a66c5d67c80e4cdab93a26554e054e1c6bb305ba9",
-    "verified-imported.png": "9765e7962741f21b7cf23ad4d45890292e2862f9b4c1bf8aedd3e2d6f9687205",
-    "verified-legacy-quarter.png": "9ab9160b575baa63586e1ef0af5fecfa283c0f0374827efe614e0f36a81fba2f",
-    "verified-legacy-side.png": "d6758b1f4544737614c4f124f7f4304bd1113043a2dcb56e452d2d73fde45885",
-    "verified-native.png": "722906c8bdcb814e2ecddf203431ea05e98388c7288b7c2ac4abc919923c12d9",
-    "verified-side.png": "35bc0ec80d7632fa013af32b50525f8bbc62bd0fbdc365181150c179fd9f5aa7"
+    "crescent-detail.png": "8aa839bd757aba91298a94737903c0c6dda1219b0236a95161a6fe27ee637fab",
+    "front-quarter.png": "6c241217338b12b560dd3b5ad5a6920402cd5370acf00fadf28f035171867a55",
+    "front.png": "910a8016eeec56e66fbbfba8b2191c2d529da603c61a792e67d084bad3a4cacd",
+    "hull-detail.png": "ee23256aa82d5d691fe4b071cbdaf79233da5ad3520bb76729de4701cd4dcf31",
+    "rear-quarter.png": "541f6cf472154d9b71c62791eb056f471f6a1304d3e5e6485d815459b633e2a1",
+    "side.png": "4dc5009c2b95dd1e5959d117018a41a18a0611f9d879e6117c872057049e42d9",
+    "technical-wireframe.png": "63ba2ecfa3025f58bf5f9eef103a21f9c556b8639fdf15caf4e4abfb91940342",
+    "top.png": "b5566499109c0dc299f0fe07f66b9d3e0d7d49aa18b5ba654b73dab4da223164",
+    "underside.png": "08cc40aeaf33ded72520962459df1973c633814939bedc7a39172402e7bcc0f6",
+    "verified-front.png": "5a3c9d47e1c45265780679f785a579fe9b14a00e8373564a6c67b92e0608b4ab",
+    "verified-imported.png": "20afab59fa62ff49ebcca4a8d2d1ac879ca8e150eb11911d069a9557e085d56f",
+    "verified-legacy-quarter.png": "90d37204fd3820d10d2feed67156af55f8a93a51e3b0867f4ae845510777caff",
+    "verified-legacy-side.png": "f97f80eb3e4df18150d9f1f3e14bf1d036e93ba09dacb1507751be717d69017a",
+    "verified-native.png": "d01dc95b024767966ea9640995b7da30c2b21d7a508f15ba969f2c11d89c8a30",
+    "verified-side.png": "3e78304047090ba93d327ccd3fd7bd59340fe57ba6fcb1ade8bd558ff52273a9"
   },
   "scope": "Blender asset verification; client scale/orientation, attachments and GPU budgets require separate integration acceptance"
 }
