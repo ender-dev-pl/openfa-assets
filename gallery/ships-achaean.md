@@ -26,11 +26,13 @@
 
 `openfa:ship/achaean/dedicated-ore-transporter`
 
-**First available iteration — initial-reference-study**
+**First available iteration — legacy-hi-def-remaster**
 
-![Dedicated Ore Transporter](../gallery/media/docs/assets/reconstruction/ships/achaean/dedicated-ore-transporter/front-quarter.png)
+![Dedicated Ore Transporter](../gallery/media/objects/achaean/dedicated-ore-transporter/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/achaean/dedicated-ore-transporter/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/achaean/dedicated-ore-transporter/model.glb)
+[Blend](../sources/objects/achaean/dedicated-ore-transporter/model.blend) · [GLB](../sources/objects/achaean/dedicated-ore-transporter/model.glb)
+
+[Front Quarter](../gallery/media/objects/achaean/dedicated-ore-transporter/front-quarter.png) · [Rear Quarter](../gallery/media/objects/achaean/dedicated-ore-transporter/rear-quarter.png) · [Top](../gallery/media/objects/achaean/dedicated-ore-transporter/top.png) · [Front](../gallery/media/objects/achaean/dedicated-ore-transporter/front.png) · [Side](../gallery/media/objects/achaean/dedicated-ore-transporter/side.png) · [Underside](../gallery/media/objects/achaean/dedicated-ore-transporter/underside.png) · [Crescent Detail](../gallery/media/objects/achaean/dedicated-ore-transporter/crescent-detail.png) · [Hull Detail](../gallery/media/objects/achaean/dedicated-ore-transporter/hull-detail.png) · [Technical Wireframe](../gallery/media/objects/achaean/dedicated-ore-transporter/technical-wireframe.png) · [Concept](../gallery/media/objects/achaean/dedicated-ore-transporter/concept.png)
 
 ## Orbital Shipyard
 

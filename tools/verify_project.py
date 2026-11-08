@@ -49,6 +49,10 @@ def main():
             assert study['blend'] == 'sources/' + original['blend']
             assert sha(ROOT / study['blend']) == study['sha256'] == original['sha256']
             assert (ROOT / study['image']).is_file() and study['image'].startswith('gallery/media/')
+            assert study.get('views', []) == original.get('views', [])
+            for view in study.get('views', []):
+                assert view['label'] and view['image'].startswith('gallery/media/')
+                assert (ROOT / view['image']).is_file(), view
             assert study['glb'] and (ROOT / study['glb']).is_file(), row['id']
             assert study['animations']==animation_previews(study['blend'],study['glb'],(ROOT/study['image']).parent)
             count += 1

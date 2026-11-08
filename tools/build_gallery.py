@@ -76,6 +76,8 @@ def inventory_records():
             studies.append(dict(stage=study['stage'], blend='sources/'+study['blend'],
                 glb=glb.relative_to(ROOT).as_posix() if glb.is_file() else None,
                 image=image.relative_to(ROOT).as_posix(), sha256=study['sha256'],animations=previews))
+            if study.get('views'):
+                studies[-1]['views'] = study['views']
         assert studies, record['id']
         row = dict(id=record['id'], name=record['name'], category=record['category'],
                    culture=record['culture'], studies=studies)
@@ -122,6 +124,8 @@ def main():
                 page += ['**'+label+'**', '', '!['+row['name']+']('+img+')', '',
                          '[Blend](../'+quote(study['blend'])+')'+
                          (' · [GLB](../'+quote(study['glb'])+')' if study['glb'] else ''), '']
+                if study.get('views'):
+                    page += [' · '.join('['+v['label']+'](../'+quote(v['image'])+')' for v in study['views']), '']
                 if row['category']=='trading-goods' and study['stage']=='material-refined':
                     page += ['Full procedural materials are in Blend; GLB textures are not baked.', '']
                 for clip in study['animations']:
@@ -166,9 +170,10 @@ def main():
                     preview='<a href="../'+quote(study['image'])+'" aria-label="'+html.escape('Open full-resolution '+row['name']+' — '+study['stage'],quote=True)+'">'+preview+'</a>'
             if row['category']=='trading-goods' and study['stage']=='material-refined':
                 label+=' · full materials in Blend; GLB unbaked'
+            view_links = ''.join(' · <a href="../'+quote(v['image'])+'">'+html.escape(v['label'])+'</a>' for v in study.get('views', []))
             images.append('<figure>'+preview+'<figcaption>'+html.escape(label)+
                 '<br><a href="../'+quote(study['blend'])+'">Blend</a>'+
-                (' · <a href="../'+quote(study['glb'])+'">GLB</a>' if study['glb'] else '')+'</figcaption></figure>')
+                (' · <a href="../'+quote(study['glb'])+'">GLB</a>' if study['glb'] else '')+view_links+'</figcaption></figure>')
         search = ' '.join([row['name'],row['id'],row['category'],row['culture']]+[s['stage'] for s in row['studies']]).lower()
         cards.append('<article data-search="'+html.escape(search, quote=True)+'" data-race="'+html.escape(row['culture'],quote=True)+'" data-type="'+html.escape(row['category'],quote=True)+'"><h2>'+html.escape(row['name'])+'</h2><p>'+html.escape(CATEGORY_LABELS[row['category']]+' / '+culture_label(row['culture'])+' / '+row['id'])+'</p><div class="variants">'+''.join(images)+'</div></article>')
     from gallery_supplemental import supplemental_records, supplemental_cards

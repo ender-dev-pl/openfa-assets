@@ -31669,28 +31669,70 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:ship/achaean/dedicated-ore-transporter",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-no-object-specific-narrative-mapped",
         "description_records": []
       },
       "presentation_profile": null,
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/achaean/dedicated-ore-transporter/model.blend",
+          "stage": "legacy-hi-def-remaster",
+          "blend": "objects/achaean/dedicated-ore-transporter/model.blend",
           "present": true,
-          "sha256": "a1445b3d033bc64fe1c7b09a3e77768557c231fe79a01790a1541c7cea3b425e",
-          "final_visual_acceptance": "not-established"
+          "sha256": "38808547d807d715290d4110a4a47ff15a45cc45eb7ac238b181b25a866abe44",
+          "final_visual_acceptance": "awaiting-user-review",
+          "views": [
+            {
+              "label": "Front Quarter",
+              "image": "gallery/media/objects/achaean/dedicated-ore-transporter/front-quarter.png"
+            },
+            {
+              "label": "Rear Quarter",
+              "image": "gallery/media/objects/achaean/dedicated-ore-transporter/rear-quarter.png"
+            },
+            {
+              "label": "Top",
+              "image": "gallery/media/objects/achaean/dedicated-ore-transporter/top.png"
+            },
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/achaean/dedicated-ore-transporter/front.png"
+            },
+            {
+              "label": "Side",
+              "image": "gallery/media/objects/achaean/dedicated-ore-transporter/side.png"
+            },
+            {
+              "label": "Underside",
+              "image": "gallery/media/objects/achaean/dedicated-ore-transporter/underside.png"
+            },
+            {
+              "label": "Crescent Detail",
+              "image": "gallery/media/objects/achaean/dedicated-ore-transporter/crescent-detail.png"
+            },
+            {
+              "label": "Hull Detail",
+              "image": "gallery/media/objects/achaean/dedicated-ore-transporter/hull-detail.png"
+            },
+            {
+              "label": "Technical Wireframe",
+              "image": "gallery/media/objects/achaean/dedicated-ore-transporter/technical-wireframe.png"
+            },
+            {
+              "label": "Concept",
+              "image": "gallery/media/objects/achaean/dedicated-ore-transporter/concept.png"
+            }
+          ]
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
+        "reference_views_reviewed": true,
         "silhouette_and_proportions": false,
         "high_detail_structure": false,
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -31734,6 +31776,25 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/achaean/dedicated-ore-transporter/model.blend",
+          "present": true,
+          "sha256": "a1445b3d033bc64fe1c7b09a3e77768557c231fe79a01790a1541c7cea3b425e",
+          "final_visual_acceptance": "not-established",
+          "historical_not_for_packaging": true
+        }
+      ],
+      "selected_refinement": {
+        "issue": 234,
+        "blend": "objects/achaean/dedicated-ore-transporter/model.blend",
+        "glb": "objects/achaean/dedicated-ore-transporter/model.glb",
+        "source_sha256": "38808547d807d715290d4110a4a47ff15a45cc45eb7ac238b181b25a866abe44",
+        "export_sha256": "aa6976181a72876d2d305a0877da1d4424849c484d2cbc3dc1428f0cbe43bcfb",
+        "proposed_world_size": 180,
+        "scale_status": "Authored recommendation; current client fallback is 96; integration not applied"
       }
     },
     {
