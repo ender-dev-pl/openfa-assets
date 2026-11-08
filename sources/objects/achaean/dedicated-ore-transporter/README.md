@@ -17,3 +17,11 @@ The saved publication-cleaned native source and independent GLB import were rend
 Local forward is -Y and up is +Z. Maximum native extent is 18. Proposed world size 180 is an authored transporter-class recommendation; the current game falls back to 96 and this change does not apply an override. Four gameplay equipment slots have no calibrated 3D sockets. Client orientation, scale, attachments and GPU performance require separate integration review.
 
 Current previews, concept, actual geometry wireframe and source/export downloads are indexed in the Markdown and interactive model galleries. The concept is a target/reference, not a screenshot of the final model.
+
+## Exported-model visual feedback correction
+
+User review identified excessive separation of the crescent arms in the first remaster (commit `a353157c`). The subsequent feedback loop compared correctly paletted AC2C headings 0/4/12/20, the reviewed concept and independently imported GLB renders. The distal arms now converge into a narrower opening while retaining the root structures, lateral mounting positions, body proportions and coherent closed 3D surfaces. This corrects the arm curvature instead of compressing the entire ship. No new ImageGen iteration was needed.
+
+`feedback-baseline.json` records measurements from the previous actual GLB import. `visual-feedback.json` binds the current independent-import measurements, reviewed references, render hashes and qualitative findings. These proportions are authored comparison aids, not recovered physical dimensions or a calculated fidelity percentage. `feedback-comparison.jpg` distinguishes the artistic concept, prior model and corrected actual GLB render; it contains no original-game pixels. The four additional verified views in the galleries are renders of the imported export. Original paletted comparison boards remain outside the repository.
+
+The geometry/visual correction has been reviewed by the authoring agent; user artistic approval and actual game integration remain separate. Concept microdetail and wear are simplified for the game model, and original cameras/hidden construction are not exactly recovered. Successful correction does not calibrate equipment sockets or establish client performance.

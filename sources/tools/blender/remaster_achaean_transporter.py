@@ -145,7 +145,9 @@ def body():
 def crescent_point(side,t,v,depth=0):
     a=abs(t);s=math.sin(t*math.pi/2);taper=1-a**2.5
     y=-.45+2.95*a**1.65+(.5-v)*.64*taper
-    z=1.06*s+(v-.5)*.32*s*taper
+    # Legacy/concept arms curl back towards the mouth instead of flaring apart.
+    # Keep the structural root and lateral mounts; converge the distal tips.
+    z=1.06*s*(1-.58*a*a)+(v-.5)*.32*s*taper
     x=side*(2.0+.055*a+.024*math.sin(math.pi*v)*taper+depth)
     return Vector((x,y,z))
 
@@ -208,7 +210,9 @@ def wings():
                 box('ServiceEquipment',p+Vector((side*.023,0,0)),(.065,.14,.012),3,.004,rotation)
         for t in [-.72,.72]:
             for v in [.27,.63]:
-                p=crescent_point(side,t,v,.100)
+                # Match the inset skin at this station, rather than floating at
+                # a fixed offset above a shell that tapers towards the tips.
+                p=crescent_point(side,t,v,.075*(1-t*t)+.015+.010)
                 rod('Fasteners',p,p+Vector((side*.012,0,0)),.010,4,8)
 
 
@@ -298,7 +302,7 @@ def main():
     bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'model.blend'),compress=True,relative_remap=True)
     if not args.no_render:
         for name,direction in [('front-quarter',(1.15,-1.25,.85)),('rear-quarter',(-1.0,1.2,.70)),('top',(0,-.001,1)),('front',(0,-1,.15)),('side',(1,0,.12)),('underside',(1,-1,-.8))]:
-            aim(scene,direction)
+            aim(scene,direction,margin=1.20)
             if name=='underside':
                 for lamp in [o for o in scene.objects if o.type=='LIGHT']:
                     lamp.location.z=-lamp.location.z;lamp.rotation_euler=(-lamp.location).to_track_quat('-Z','Y').to_euler()

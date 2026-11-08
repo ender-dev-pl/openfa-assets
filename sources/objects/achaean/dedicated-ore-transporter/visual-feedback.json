@@ -1,0 +1,85 @@
+{
+  "id": "openfa:ship/achaean/dedicated-ore-transporter",
+  "model_render_review_passes": 2,
+  "imagegen_iterations_this_correction": 0,
+  "review_method": "Human-readable visual review by authoring agent plus measured actual imported geometry; no automated perceptual score",
+  "feedback": "Distal crescent arms too widely separated compared with concept and paletted legacy",
+  "legacy_source": "AC2C.256",
+  "legacy_sha256": "ca12ed4a7cfb8aa9ff9834c5f18c9877f7f8bb19976b867ec7bf94e10148cd1a",
+  "principal_legacy_frames": [
+    {
+      "index": 0,
+      "png_sha256": "fefd7407b166a48a7d76f209405d89c8a4a97d2d7152fc3f3bc67622d838f5c3",
+      "width": 80,
+      "height": 27
+    },
+    {
+      "index": 4,
+      "png_sha256": "aaf61bcbdf72bfe1a9b8b969e8395768d8119d2e8a1e3345ccf3b72124692482",
+      "width": 87,
+      "height": 24
+    },
+    {
+      "index": 12,
+      "png_sha256": "edf6e77ae788d812c6185b0fec5e8d45245c2aac32587e12ba6d027e16ff1764",
+      "width": 56,
+      "height": 23
+    },
+    {
+      "index": 20,
+      "png_sha256": "4caf37b8d231b4a4aef5d1b1a68b3e7a185786fce6bf580f4854e441394af85f",
+      "width": 87,
+      "height": 24
+    }
+  ],
+  "concept_sha256": "3f54b8f73d7248a7bfa68c34f7b62ec981fcbea7ebee719b737c7f45c15f5bff",
+  "previous_commit": "a353157c",
+  "previous_glb_sha256": "aa6976181a72876d2d305a0877da1d4424849c484d2cbc3dc1428f0cbe43bcfb",
+  "current_glb_sha256": "4ca0da2f4532149079048d72f7372eebf141822b25874a1382d65d5baaf9ef3b",
+  "current_blend_sha256": "4842868881a9f3e75049fbc46420fdc9af05f51d3ceee78635609f8d7fe75f36",
+  "before": {
+    "hull_height": 1.399999976158142,
+    "distal_tip_vertical_span": 2.121587038040161,
+    "crescent_vertical_span": 2.1683666706085205,
+    "tip_span_over_hull_height": 1.5154193386932668,
+    "crescent_span_over_hull_height": 1.5488333625254183,
+    "coordinate_space": "Unnormalized authored model units; actual imported vertices",
+    "glb_sha256": "aa6976181a72876d2d305a0877da1d4424849c484d2cbc3dc1428f0cbe43bcfb",
+    "source_commit": "a353157c",
+    "measurement_method": "Blender 4.5.15 independent import of the committed GLB; world vertices transformed back using generation normalization; distal samples have authored y > 2.40"
+  },
+  "after": {
+    "hull_height": 1.399999976158142,
+    "distal_tip_vertical_span": 0.9302675127983093,
+    "crescent_vertical_span": 1.5469179153442383,
+    "tip_span_over_hull_height": 0.6644768061719079,
+    "crescent_span_over_hull_height": 1.104941386920067,
+    "coordinate_space": "Unnormalized authored model units; actual imported vertices"
+  },
+  "change": "Distal arms converge while preserving lateral mounts and hull; eight fasteners seated on the tapered skin; no whole-ship squash or copied concept geometry glitches",
+  "imported_distal_fastener_contacts": {
+    "contacts": 8,
+    "maximum_skin_distance_authored_units": 0.00012663864477564327
+  },
+  "visual_review": {
+    "converging_open_crescents": true,
+    "pale_fore_tip_and_yellow_aft_marks_preserved": true,
+    "full_warm_hull_and_transverse_supports_preserved": true,
+    "empty_mouths_and_occupied_rims_verified": true,
+    "source_export_geometry_agrees": true
+  },
+  "reviewed_current_views": {
+    "verified-front.png": "04f60cd066bbc2c856f4620a66c5d67c80e4cdab93a26554e054e1c6bb305ba9",
+    "verified-imported.png": "9765e7962741f21b7cf23ad4d45890292e2862f9b4c1bf8aedd3e2d6f9687205",
+    "verified-legacy-quarter.png": "9ab9160b575baa63586e1ef0af5fecfa283c0f0374827efe614e0f36a81fba2f",
+    "verified-legacy-side.png": "d6758b1f4544737614c4f124f7f4304bd1113043a2dcb56e452d2d73fde45885",
+    "verified-native.png": "722906c8bdcb814e2ecddf203431ea05e98388c7288b7c2ac4abc919923c12d9",
+    "verified-side.png": "35bc0ec80d7632fa013af32b50525f8bbc62bd0fbdc365181150c179fd9f5aa7"
+  },
+  "comparison_sha256": "08d48ecd57c0f5dff06bafb8de27f2664a224e6f0acb6c52f4da293786303387",
+  "limitations": [
+    "No exact original camera or recovered physical dimensions",
+    "Concept microdetail and surface wear simplified for gameplay",
+    "Final user artistic approval and game integration remain separate"
+  ]
+}

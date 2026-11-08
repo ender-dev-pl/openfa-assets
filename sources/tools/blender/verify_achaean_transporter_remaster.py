@@ -7,6 +7,7 @@ import bpy
 import bmesh
 from mathutils import Vector
 from mathutils.kdtree import KDTree
+from mathutils.bvhtree import BVHTree
 
 sys.path.insert(0,str(Path(__file__).parent))
 import remaster_achaean_transporter as author
@@ -64,6 +65,57 @@ def packed_maps():
     return {im.name:hashlib.sha256(im.packed_file.data).hexdigest() for im in images}
 
 
+def crescent_dimensions(meta):
+    """Measure actual imported vertices, independently of the authoring formula."""
+    factor=meta['normalization_factor'];centre=Vector(meta['normalization_centre'])
+    def points(name):
+        obj=bpy.data.objects[name]
+        return [(obj.matrix_world@v.co)/factor+centre for v in obj.data.vertices]
+    hull=points('PressureHull');wing=points('CrescentStructure')
+    hull_height=max(v.z for v in hull)-min(v.z for v in hull)
+    tips=[v for v in wing if v.y>2.40]
+    gap=max(v.z for v in tips)-min(v.z for v in tips)
+    span=max(v.z for v in wing)-min(v.z for v in wing)
+    return dict(hull_height=hull_height,distal_tip_vertical_span=gap,
+                crescent_vertical_span=span,tip_span_over_hull_height=gap/hull_height,
+                crescent_span_over_hull_height=span/hull_height,
+                coordinate_space='Unnormalized authored model units; actual imported vertices')
+
+
+def distal_fastener_contacts(meta):
+    """Check actual fastener component bases against the imported painted skin."""
+    factor=meta['normalization_factor'];centre=Vector(meta['normalization_centre'])
+    obj=bpy.data.objects['CrimsonCrescentInsets'];mesh=obj.data
+    tree=BVHTree.FromPolygons([obj.matrix_world@v.co for v in mesh.vertices],
+                             [list(p.vertices) for p in mesh.polygons])
+    obj=bpy.data.objects['Fasteners'];bm=bmesh.new();bm.from_mesh(obj.data)
+    # Diagnostic-only seam welding reconnects glTF UV/normal splits without
+    # changing the imported model used for rendering or source comparison.
+    bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=1e-6*factor)
+    bm.verts.ensure_lookup_table();bm.verts.index_update()
+    points=[obj.matrix_world@v.co for v in bm.verts];adj=[set() for v in points]
+    for edge in bm.edges:
+        a,b=[v.index for v in edge.verts];adj[a].add(b);adj[b].add(a)
+    pending=set(range(len(points)));distances=[]
+    while pending:
+        stack=[pending.pop()];component=[]
+        while stack:
+            i=stack.pop();component.append(points[i])
+            for j in adj[i]:
+                if j in pending:pending.remove(j);stack.append(j)
+        middle=sum(component,Vector())/len(component);local=middle/factor+centre
+        if abs(local.x)<1.9 or local.y<.8:continue
+        side=1 if local.x>0 else -1
+        base_x=min(side*p.x for p in component)
+        base=[p for p in component if abs(side*p.x-base_x)<1e-5]
+        point=sum(base,Vector())/len(base)
+        hit,normal,index,distance=tree.find_nearest(point)
+        assert hit is not None and distance/factor<.008,('floating distal fastener',local,distance/factor)
+        distances.append(distance/factor)
+    bm.free();assert len(distances)==8,distances
+    return dict(contacts=len(distances),maximum_skin_distance_authored_units=max(distances))
+
+
 def main():
     meta=json.loads((OUT/'generation.json').read_text());before={kind:sha(OUT/f'model.{kind}') for kind in ['blend','glb']}
     bpy.ops.wm.open_mainfile(filepath=str(OUT/'model.blend'),load_ui=False,use_scripts=False)
@@ -88,10 +140,18 @@ def main():
             if item.users==0:collection.remove(item)
     bpy.ops.import_scene.gltf(filepath=str(OUT/'model.glb'));imported=snapshot()
     error=compare(native,imported);imported_maps=packed_maps();imported_witnesses=structure_witnesses(scene,meta)
+    proportions=crescent_dimensions(meta)
+    fastener_contacts=distal_fastener_contacts(meta)
+    assert proportions['tip_span_over_hull_height']<.80,('distal arms still flared apart',proportions)
+    assert proportions['crescent_span_over_hull_height']<1.15,('excessive crescent height',proportions)
     # Image names can change while glTF packs roughness/metallic; actual rendered
     # colour agreement is checked independently by the pixel reviewer.
     assert len(imported_maps)==len(maps)==2
     scene.render.filepath=str(MEDIA/'verified-imported.png');bpy.ops.render.render(write_still=True)
+    for name,direction in [('verified-side',(1,0,.12)),('verified-front',(0,-1,.15)),
+                           ('verified-legacy-side',(1,0,.34)),('verified-legacy-quarter',(1,-1,.34))]:
+        author.aim(scene,direction,margin=1.20)
+        scene.render.filepath=str(MEDIA/(name+'.png'));bpy.ops.render.render(write_still=True)
     for name,chosen in [('crescent-detail',[o for o in scene.objects if o.type=='MESH' and 'Crescent' in o.name]),
                         ('hull-detail',[o for o in scene.objects if o.type=='MESH' and o.name in {'PressureHull','FormedHullSkins','DorsalStructure','ServiceEquipment'}])]:
         author.aim(scene,(1.15,-1.25,.85),chosen);scene.render.filepath=str(MEDIA/(name+'.png'));bpy.ops.render.render(write_still=True)
@@ -112,6 +172,8 @@ def main():
             'generator_sha256':sha(Path(author.__file__)),'verifier_sha256':sha(Path(__file__)),'triangles':triangles,'mesh_batches':len(native),
             'closed_nonzero_core_meshes':manifold,'maximum_bidirectional_world_position_error':error,
             'native_witnesses':native_witnesses,'imported_witnesses':imported_witnesses,'packed_maps_native_and_imported':2,
+            'imported_crescent_proportions':proportions,
+            'imported_distal_fastener_contacts':fastener_contacts,
             'source_unchanged':True,'technical_view':'Actual independently imported GLB geometry; authored technical visualization, not original legacy wireframe',
             'renders':{p.name:sha(p) for p in MEDIA.glob('*.png')},'scope':'Blender asset verification; client scale/orientation, attachments and GPU budgets require separate integration acceptance'}
     (OUT/'runtime-verification.json').write_text(json.dumps(result,indent=2)+'\n')

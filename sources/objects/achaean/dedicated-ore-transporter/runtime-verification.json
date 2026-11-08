@@ -1,10 +1,10 @@
 {
   "id": "openfa:ship/achaean/dedicated-ore-transporter",
   "blender": "4.5.15 LTS",
-  "blend_sha256": "38808547d807d715290d4110a4a47ff15a45cc45eb7ac238b181b25a866abe44",
-  "glb_sha256": "aa6976181a72876d2d305a0877da1d4424849c484d2cbc3dc1428f0cbe43bcfb",
-  "generator_sha256": "6319956b767911e9af15efc66dd69518801af0161ae367894bfd93d1cd10d8bc",
-  "verifier_sha256": "07da5213944244914e1349484344c031eb14c65e230fe3a6a93775c38ffa0f58",
+  "blend_sha256": "4842868881a9f3e75049fbc46420fdc9af05f51d3ceee78635609f8d7fe75f36",
+  "glb_sha256": "4ca0da2f4532149079048d72f7372eebf141822b25874a1382d65d5baaf9ef3b",
+  "generator_sha256": "35ab0599664d2de6808aa65caadc682591537d4160f4bba6bbdbbeee4072d48d",
+  "verifier_sha256": "d5c8cf2c2f8586ca4b884914e8481b0e4a33908c73097763d6dd2b5d8fceef2c",
   "triangles": 44856,
   "mesh_batches": 14,
   "closed_nonzero_core_meshes": {
@@ -21,21 +21,37 @@
     "occupied_rim_witnesses": 8
   },
   "packed_maps_native_and_imported": 2,
+  "imported_crescent_proportions": {
+    "hull_height": 1.399999976158142,
+    "distal_tip_vertical_span": 0.9302675127983093,
+    "crescent_vertical_span": 1.5469179153442383,
+    "tip_span_over_hull_height": 0.6644768061719079,
+    "crescent_span_over_hull_height": 1.104941386920067,
+    "coordinate_space": "Unnormalized authored model units; actual imported vertices"
+  },
+  "imported_distal_fastener_contacts": {
+    "contacts": 8,
+    "maximum_skin_distance_authored_units": 0.00012663864477564327
+  },
   "source_unchanged": true,
   "technical_view": "Actual independently imported GLB geometry; authored technical visualization, not original legacy wireframe",
   "renders": {
     "concept.png": "3f54b8f73d7248a7bfa68c34f7b62ec981fcbea7ebee719b737c7f45c15f5bff",
-    "crescent-detail.png": "7872999b3e4725db10f33bd1a9f92c3db0ab38d6c2f8f55e42315aa9fa9a458c",
-    "front-quarter.png": "fb0d2add563df4b15bc2026cc37e0c81bd2aa4a8170331c794c2186ae2ae5203",
-    "front.png": "f476c6507ff867bb28c4ea406ee8641f4a6f1a52cf2a287e389f14ae42043943",
-    "hull-detail.png": "c99d6d3a58b103a5c022345e96e3fce765d69791a9e5a839aa9b8d0cc17a3548",
-    "rear-quarter.png": "084313a56266e0b9bb40099dfeb29b9e36c85baa027e8614d2a17aa5dff76c32",
-    "side.png": "228329801ade17f3933e36d72be4d047d2700ad4f42506b25cc02698249dc43f",
-    "technical-wireframe.png": "26dfdde0a253f22394926054fec3957dfed220352f9f091f8b1bba132e945045",
-    "top.png": "f362fa8fd3700d6ae6a44fcbb6d5d871b08facb1fb6dbf280aa1e4d974f42ef7",
-    "underside.png": "a66533cf9254adc2539c0dae99d0f3efe765f11a86ab9e3f5d7b3f10a5c94b7c",
-    "verified-imported.png": "690bddfa6d07408d08905ffe053567d3db6024932d3ab0d3f71b4a4013f2d4d1",
-    "verified-native.png": "fb0d2add563df4b15bc2026cc37e0c81bd2aa4a8170331c794c2186ae2ae5203"
+    "crescent-detail.png": "aa49dd3e232743c5439128b4b2d9acaf49f55110ce2448a2cd1201a2b6535841",
+    "front-quarter.png": "dd2b70493abeefca291c63a680ea742a37194586ea23b5a87300254244370889",
+    "front.png": "1e765341b46d951fe85bdd235da06839169577c254b7a4f2475f9b7a6164b04a",
+    "hull-detail.png": "6a32fc3f36546ecb292c2d0f848d71f9f33c88e44ee0ee88984b12d445a976d7",
+    "rear-quarter.png": "4f2b1f81b275b597a39ba508f27fd0f758a353819a129bfe0ab6583fd1e6a548",
+    "side.png": "f5e159a7135b15d16438cbe5bd147cd6af9dc60357b9453ba975544bd4e0bf4c",
+    "technical-wireframe.png": "ae4492bc8c777320cdb8f492298d7296f19cd4cb199140e91f3b4a17a9c0e629",
+    "top.png": "8f6c50798bfff46974b430c974896115f0a59b1a0c59bc554176000fb417fcb9",
+    "underside.png": "9628a2d37846fda0324f13a6ecc5abccd2631a41f92acde232091de4de4535ba",
+    "verified-front.png": "04f60cd066bbc2c856f4620a66c5d67c80e4cdab93a26554e054e1c6bb305ba9",
+    "verified-imported.png": "9765e7962741f21b7cf23ad4d45890292e2862f9b4c1bf8aedd3e2d6f9687205",
+    "verified-legacy-quarter.png": "9ab9160b575baa63586e1ef0af5fecfa283c0f0374827efe614e0f36a81fba2f",
+    "verified-legacy-side.png": "d6758b1f4544737614c4f124f7f4304bd1113043a2dcb56e452d2d73fde45885",
+    "verified-native.png": "722906c8bdcb814e2ecddf203431ea05e98388c7288b7c2ac4abc919923c12d9",
+    "verified-side.png": "35bc0ec80d7632fa013af32b50525f8bbc62bd0fbdc365181150c179fd9f5aa7"
   },
   "scope": "Blender asset verification; client scale/orientation, attachments and GPU budgets require separate integration acceptance"
 }

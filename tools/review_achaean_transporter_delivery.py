@@ -55,7 +55,11 @@ def main():
         historical[study['blend']] = study['sha256']
     gallery = json.loads((ROOT/'gallery/catalogue.json').read_text())
     row = next(r for r in gallery if r['id'] == runtime['id'])
-    assert len(row['studies']) == 1 and len(row['studies'][0]['views']) == 10
+    assert len(row['studies']) == 1 and len(row['studies'][0]['views']) == 15
+    proportions=runtime['imported_crescent_proportions']
+    assert proportions['tip_span_over_hull_height']<.80
+    assert proportions['crescent_span_over_hull_height']<1.15
+    assert runtime['imported_distal_fastener_contacts']['contacts']==8
     assert row['studies'][0]['sha256'] == runtime['blend_sha256']
     review = dict(native_imported_alpha_iou=iou, foreground_rgb_mean_error_255=error,
         framing_margin_pixels=framing, embedded_images=2, materials=1, triangles=triangles,
