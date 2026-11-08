@@ -1,6 +1,6 @@
 """Issue242: in-place correction of the current PB14 iris and two status lamps.
 
-The buried leaf pockets/shaft are authored mechanics. Original ground datum and
+The flat iris lamellae and shaft are authored mechanics. Original ground datum and
 first-half iris timing stay fixed. Lamp mode presets use shared geometry; no
 unverified legacy blinking schedule is embedded in the iris clip.
 """
@@ -70,7 +70,7 @@ def shaft(root):
     bm.to_mesh(bunker.data);bm.free()
     bottom=bpy.data.objects.get('Launch well bottom')
     if bottom:bottom.location.z=-3.2
-    for name in ['Launch well inner liner','Iris guide race','Iris outer drive cover','Lid pressure seal','Silo lid seam']:
+    for name in ['Launch well inner liner','Iris guide race','Iris outer drive cover','Lid pressure seal','Silo lid seam','Iris outer pocket wall']:
         o=bpy.data.objects.get(name)
         if o:bpy.data.objects.remove(o,do_unlink=True)
     def ring(name,profile,material):
@@ -78,12 +78,13 @@ def shaft(root):
         fs=[(j*n+i,j*n+(i+1)%n,((j+1)%len(profile))*n+(i+1)%n,((j+1)%len(profile))*n+i) for j in range(len(profile)) for i in range(n)]
         return mesh_object(name,vs,fs,bpy.data.materials['Refined | '+material],root)
     ring('Buried launch shaft',[(-3.2,.90),(-1.05,.90),(-1.05,.865),(-3.2,.865)],'dark')
-    ring('Buried iris chamber',[(-1.05,1.19),(0,1.19),(0,1.18),(-1.05,1.18)],'dark')
-    ring('Buried iris chamber ceiling',[(0,1.18),(.025,1.18),(.025,.905),(0,.905)],'dark')
-    ring('Buried iris chamber floor',[(-1.075,1.18),(-1.05,1.18),(-1.05,.865),(-1.075,.865)],'dark')
+
+
+
     ring('Launch well inner liner',[(0,.925),(.61,.925),(.61,.905),(0,.905)],'dark')
     ring('Iris guide race',[(.60,.965),(.66,.965),(.66,.905),(.60,.905)],'edge')
-    ring('Iris outer drive cover',[(.59,1.04),(.64,1.04),(.64,.965),(.59,.965)],'bronze')
+    ring('Iris outer drive cover',[(.708,1.23),(.745,1.23),(.745,.885),(.708,.885)],'bronze')
+    ring('Iris outer pocket wall',[(.65,1.23),(.708,1.23),(.708,1.215),(.65,1.215)],'dark')
     ring('Lid pressure seal',[(.62,.91),(.64,.91),(.64,.885),(.62,.885)],'dark')
     for o in bpy.context.scene.objects:
         if o.name.startswith('Launch guide rail'):
@@ -95,28 +96,41 @@ def shaft(root):
 
 
 def iris():
-    for i in range(8):
-        o=bpy.data.objects[f'Iris curved leaf {i+1:02}'];o.animation_data_clear()
-        theta=i*math.tau/8+math.pi/8;radial=Vector((math.cos(theta),math.sin(theta),0));tangent=Vector((-math.sin(theta),math.cos(theta),0))
-        pivot=radial*.82+Vector((0,0,.64));o.rotation_mode='QUATERNION'
-        basis=Matrix((radial,tangent,Vector((0,0,1)))).transposed()
-        fold=Matrix(((0,0,-1),(1,0,0),(0,-1,0)))
-        final=(basis@fold@basis.transposed()).to_quaternion()
-        # Original thin overlapping curved plates remain rigid. First lower the
-        # carrier through the clear bore, then fold edge-on inside a real chamber.
-        for f,u,drop in [(1,0,0),(5,0,1.09),(9,.33,1.09),(13,.67,1.09),(17,1,1.09),(21,.67,1.09),(25,.33,1.09),(29,0,1.09),(33,0,0)]:
-            o.location=pivot+radial*(.26*u)+tangent*(.34*u)+Vector((0,0,-drop))
-            o.rotation_quaternion=Quaternion().slerp(final,u)
-            o.keyframe_insert('location',frame=f);o.keyframe_insert('rotation_quaternion',frame=f)
-        for modifier in o.modifiers:
-            if modifier.type=='SOLIDIFY':modifier.thickness=.0012
-        o.animation_data.action.name='IrisLeaf_'+str(i+1)
-        for layer in o.animation_data.action.layers:
+    # A camera-style iris: rigid, flat overlapping lamellae rotate only around Z.
+    # Sixteen authored thin blades fit a complete aperture into the existing rim;
+    # this is a mechanical reconstruction, not a claim of recovered blade count.
+    root=bpy.data.objects['SiloPlacementRoot']
+    for obj in list(bpy.context.scene.objects):
+        if obj.name.startswith(('Iris curved leaf','Iris hinge axle','Silo lid hinge')):
+            bpy.data.objects.remove(obj,do_unlink=True)
+    count=16
+    for i in range(count):
+        theta=i*math.tau/count
+        pivot=Vector((math.cos(theta),math.sin(theta),.673+i*.0015))
+        vertices=[];faces=[];rows=48;columns=6
+        for row in range(rows+1):
+            radius=.883*row/rows
+            # Curved sides produce a star-shaped intermediate opening, as in VID.
+            centre=math.radians(145 if radius<.25 else 158.3-35.1*radius)
+            for col in range(columns+1):
+                angle=theta+centre+(col/columns-.5)*(math.tau/count+.006)
+                vertices.append((radius*math.cos(angle)-pivot.x,radius*math.sin(angle)-pivot.y,0))
+        for row in range(rows):
+            for col in range(columns):
+                a=row*(columns+1)+col;faces.append((a,a+columns+1,a+columns+2,a+1))
+        obj=mesh_object(f'Iris curved leaf {i+1:02}',vertices,faces,bpy.data.materials['Refined | bronze' if i%2==0 else 'Refined | gold'],root)
+        obj.location=pivot;obj.rotation_mode='QUATERNION';obj['iris_leaf']=i
+        modifier=obj.modifiers.new('Thin iris sheet','SOLIDIFY');modifier.thickness=.001;modifier.offset=-1
+        for frame,amount in [(1,0),(5,.25),(9,.5),(13,.75),(17,1),(21,.75),(25,.5),(29,.25),(33,0)]:
+            obj.rotation_quaternion=Quaternion((0,0,1),math.pi/3*amount)
+            obj.keyframe_insert('rotation_quaternion',frame=frame)
+        obj.animation_data.action.name='IrisLeaf_'+str(i+1)
+        for layer in obj.animation_data.action.layers:
             for strip in layer.strips:
                 for bag in strip.channelbags:
                     for curve in bag.fcurves:
                         for key in curve.keyframe_points:key.interpolation='LINEAR'
-        o['mechanism']='Rigid curved leaf carrier lowers, then folds edge-on inside buried annular chamber; authored mechanics'
+        obj['mechanism']='Flat rigid iris lamella rotating about fixed rim pivot; no vertical motion or out-of-plane folding'
 
 
 def set_lamps(mode='Hybrid',left=True,right=True):
@@ -159,7 +173,7 @@ def main():
     root['building_id']='terran:missile-silo';root['preserve_ground_origin']=True;root['ground_level']=0.0;root['animation_kind']='iris';root['lamp_control']='Set each StatusLamp{Left,Right}{Hybrid,AttackOnly,DefenceOnly} scale to 0 or 1; never multiple modes at once'
     hold=bpy.data.objects.get('LaunchPayloadHoldPoint')
     if not hold:hold=bpy.data.objects.new('LaunchPayloadHoldPoint',None);bpy.context.collection.objects.link(hold)
-    hold.parent=root;hold.location=(0,0,-2.05);hold['status']='Authored payload-centre proposal for nominal WorldSize48; keep nose below chamber until iris is clear; not recovered calibration'
+    hold.parent=root;hold.location=(0,0,-2.05);hold['status']='Authored payload-centre proposal for nominal WorldSize48; keep nose below iris until clear; not recovered calibration'
     for o in list(scene.objects):
         if o!=root and o.type=='MESH' and o.parent is None:o.parent=root
     shaft(root);iris();lamps(root);set_lamps();scene.frame_start=1;scene.frame_end=33;scene.render.fps=16;scene.frame_set(1)
@@ -170,7 +184,7 @@ def main():
     bpy.ops.export_scene.gltf(filepath=str(OUT/'model.glb'),export_format='GLB',use_selection=True,export_extras=True,export_animations=True,export_animation_mode='SCENE',export_frame_range=True,export_apply=True,export_anim_slide_to_zero=True,export_merge_animation='NONE')
     merge_iris_clip(OUT/'model.glb')
     bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'model.blend'),compress=True,relative_remap=True)
-    report=dict(id='terran:missile-silo',issue=242,source_sha256=sha(OUT/'model.blend'),glb_sha256=sha(OUT/'model.glb'),patcher_sha256=sha(Path(__file__)),closed_frame=1,open_frame=17,loop_end_frame=33,fps=16,normalized_glb_seconds=[0,2],full_open_seconds=1,ground_level=0,preserve_ground_origin=True,nominal_aperture_radius=.87,usable_shaft_radius=.82,shaft_floor=-3.2,payload_hold_centre_z=-2.05,payload_contract='Authored presentation: keep loaded payload below retracting carrier, then raise through the fully clear iris',lamp_colours_srgb=COLOURS,lamp_on_off='independent node visibility per lamp; original blink schedule not established',mechanism_status='Authored buried retracting leaf pockets; rigid original leaf geometry retained')
+    report=dict(id='terran:missile-silo',issue=242,source_sha256=sha(OUT/'model.blend'),glb_sha256=sha(OUT/'model.glb'),patcher_sha256=sha(Path(__file__)),closed_frame=1,open_frame=17,loop_end_frame=33,fps=16,normalized_glb_seconds=[0,2],full_open_seconds=1,ground_level=0,preserve_ground_origin=True,leaf_count=16,nominal_aperture_radius=.87,usable_shaft_radius=.82,shaft_floor=-3.2,payload_hold_centre_z=-2.05,payload_contract='Keep payload below closed iris, then raise through fully clear aperture; no retracting carrier',lamp_colours_srgb=COLOURS,lamp_on_off='independent node visibility per lamp; original blink schedule not established',mechanism_status='Rigid planar diaphragm blades turn around fixed rim pivots; no vertical carrier or folding')
     (OUT/'correction-generation.json').write_text(json.dumps(report,indent=2)+'\n');print('SILO_CORRECTED',json.dumps(report))
 
 

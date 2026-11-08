@@ -31,7 +31,8 @@ def main():
     metadata = json.loads((folder / 'model.json').read_text())
     if 'historical_metadata' not in metadata:
         metadata = dict(historical_metadata=metadata)
-    metadata.update(building_id='terran:missile-silo', name='Missile Silo', culture='terran', footprint=[2, 2], binaries=report['binaries'], ground_level=0, preserve_ground_origin=True, animation=dict(name='Animation', duration_seconds=2, closed_seconds=0, fully_open_seconds=1, closed_again_seconds=2), status_lamps=dict(channels=['StatusLampLeft', 'StatusLampRight'], presets=dict(Hybrid=[255, 210, 138], AttackOnly=[194, 93, 93], DefenceOnly=[150, 170, 210]), control='Exactly one preset mesh at unit scale per lit channel; all presets zero scale when off; no lamp animation'), integration='Preserve grade Z=0 native / Y=0 glTF. Hold payload below carrier until fully open, then lift. Explicit client state/node binding required.', verification='correction-runtime-verification.json')
+    metadata.update(building_id='terran:missile-silo', name='Missile Silo', culture='terran', footprint=[2, 2], binaries=report['binaries'], ground_level=0, preserve_ground_origin=True, animation=dict(name='Animation', duration_seconds=2, closed_seconds=0, fully_open_seconds=1, closed_again_seconds=2), status_lamps=dict(channels=['StatusLampLeft', 'StatusLampRight'], presets=dict(Hybrid=[255, 210, 138], AttackOnly=[194, 93, 93], DefenceOnly=[150, 170, 210]), control='Exactly one preset mesh at unit scale per lit channel; all presets zero scale when off; no lamp animation'), integration='Preserve grade Z=0 native / Y=0 glTF. Flat iris blades rotate about fixed rim pivots; hold payload below closed iris until open, then lift. Explicit client state/node binding required.', verification='correction-runtime-verification.json')
+    metadata['iris_mechanism'] = dict(blades=16, fixed_pivots=True, motion='Rotation in the lid plane; no vertical carrier or out-of-plane folding', blade_count_status='Authored to fit the fully clear aperture into the surrounding rim; not recovered legacy engineering', proof='diaphragm-verification.json')
     write(folder / 'model.json', metadata)
     path = ROOT / 'sources/docs/reconstruction/models/inventory.json'
     inventory = json.loads(path.read_text())
@@ -55,7 +56,7 @@ def main():
     layout_path = ROOT / 'project/layout.json'
     layout = json.loads(layout_path.read_text())
     known = {r['destination'] for r in layout['files']}
-    files = list(folder.glob('*')) + list(media.rglob('*')) + [ROOT/'sources/tools/blender/correct_missile_silo.py', ROOT/'sources/tools/blender/verify_missile_silo_correction.py']
+    files = list(folder.glob('*')) + list(media.rglob('*')) + [ROOT/'sources/tools/blender/correct_missile_silo.py', ROOT/'sources/tools/blender/verify_missile_silo_correction.py', ROOT/'sources/tools/blender/verify_silo_diaphragm.py']
     for path in sorted(files):
         if not path.is_file():
             continue
