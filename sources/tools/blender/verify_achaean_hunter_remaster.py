@@ -33,15 +33,24 @@ def witnesses(meta):
     transform=lambda p:(Vector(p)-centre)*factor
     gaps=rims=0
     for side in [-1,1]:
-        for y in [1.1,1.5,1.9,2.3]:
-            hit,*_=scene.ray_cast(graph,transform((side*.65,y,1)),Vector((0,0,-1)),distance=2*factor)
-            assert not hit,('trailing fork gap obstructed',side,y);gaps+=1
-        for t in [1.0,2.5,4.0,5.0]:
-            point=author.surface(author.ARM,t,1.57079632679,side)
-            hit,where,normal,index,obj,matrix=scene.ray_cast(graph,transform(point+Vector((0,0,.4))),Vector((0,0,-1)),distance=.8*factor)
-            assert hit and obj.name in {'SweptRedLobes','RedFormedSkins','LobeRootCollars'},('missing lobe',side,t,obj.name if obj else None)
+        for y,z in [(.6,.2),(.6,-.2),(1.0,.2),(1.0,-.2)]:
+            hit,*_=scene.ray_cast(graph,transform((side*1.1,y,z)),Vector((-side,0,0)),distance=.65*factor)
+            assert not hit,('upright crescent aft mouth obstructed',side,y,z);gaps+=1
+        for t in [-.7,-.3,.3,.7]:
+            point=author.crescent(side,t,.5)
+            hit,where,normal,index,obj,matrix=scene.ray_cast(graph,transform(point+Vector((side*.4,0,0))),Vector((-side,0,0)),distance=.8*factor)
+            assert hit and obj.name in {'UprightCrescentCore','RedCrescentSkins','SilverCrescentRims'},('missing upright crescent',side,t,obj.name if obj else None)
             rims+=1
-    return dict(open_trailing_gap_samples=gaps,occupied_lobe_samples=rims)
+    # The rejected revision had a separate third trailing spar.
+    hit,*_=scene.ray_cast(graph,transform((0,1.4,1)),Vector((0,0,-1)),distance=2*factor)
+    assert not hit,'independent trailing spar must be absent'
+    core=bpy.data.objects['UprightCrescentCore'];points=[core.matrix_world@v.co for v in core.data.vertices]
+    ratios=[]
+    for side in [-1,1]:
+        wing=[p for p in points if p.x*side>0]
+        ratio=(max(p.z for p in wing)-min(p.z for p in wing))/(max(p.x for p in wing)-min(p.x for p in wing))
+        assert ratio>8,('wing must be an upright thin plate',ratio);ratios.append(ratio)
+    return dict(open_aft_mouth_samples=gaps,occupied_crescent_samples=rims,wing_height_to_thickness=ratios,independent_spar_absent=True)
 
 
 def packed_maps():
@@ -60,7 +69,7 @@ def main():
     native=snapshot();triangles=sum(r['triangles'] for r in native.values())
     assert triangles==meta['triangles']<60000 and len(native)==meta['mesh_batches']<=20
     packed_maps();cores={}
-    for name in ['GreenPressureHull','SweptRedLobes']:
+    for name in ['GreenPressureHull','UprightCrescentCore']:
         bm=bmesh.new();bm.from_mesh(bpy.data.objects[name].data)
         assert all(e.is_manifold for e in bm.edges) and abs(bm.calc_volume())>1e-6,name
         cores[name]=len(bm.faces);bm.free()
@@ -83,7 +92,7 @@ def main():
     assert maximum<1e-5;packed_maps();imported_witnesses=witnesses(meta)
     points=[v for row in imported.values() for v in row['points']]
     width_to_length=(max(v.x for v in points)-min(v.x for v in points))/(max(v.y for v in points)-min(v.y for v in points))
-    assert .65<width_to_length<.95,('compact fork planform',width_to_length)
+    assert .38<width_to_length<.60,('paired plates around axial hull',width_to_length)
     scene.render.filepath=str(media/'verified-imported.png');bpy.ops.render.render(write_still=True)
     for heading,direction in [(0,(1,-1,.65)),(4,(1,0,.65)),(8,(1,1,.65)),(12,(0,1,.65)),(20,(-1,0,.65))]:
         author.shared.aim(scene,direction,margin=1.20)
@@ -93,7 +102,7 @@ def main():
         mat=bpy.data.materials.new('Actual imported technical '+obj.name);mat.use_nodes=True
         tree=mat.node_tree;tree.nodes.clear();wire=tree.nodes.new('ShaderNodeWireframe');wire.use_pixel_size=True;wire.inputs['Size'].default_value=.6
         mix=tree.nodes.new('ShaderNodeMixRGB');mix.inputs[1].default_value=(0,0,0,1)
-        mix.inputs[2].default_value=(.7,.03,.02,1) if 'Lobe' in obj.name or obj.name.startswith('Red') else (.015,.58,.035,1)
+        mix.inputs[2].default_value=(.7,.03,.02,1) if 'Crescent' in obj.name else (.015,.58,.035,1)
         tree.links.new(wire.outputs[0],mix.inputs[0]);emission=tree.nodes.new('ShaderNodeEmission');tree.links.new(mix.outputs[0],emission.inputs[0])
         output=tree.nodes.new('ShaderNodeOutputMaterial');tree.links.new(emission.outputs[0],output.inputs[0]);obj.data.materials.clear();obj.data.materials.append(mat)
     author.shared.aim(scene,(1,-1,.85),margin=1.20);scene.render.filepath=str(media/'technical-wireframe.png');bpy.ops.render.render(write_still=True)

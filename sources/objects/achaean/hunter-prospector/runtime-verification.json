@@ -1,46 +1,56 @@
 {
   "id": "openfa:ship/achaean/hunter-prospector",
   "blender": "4.5.15 LTS",
-  "blend_sha256": "96127824c6684aae145e4e323e1f4b4d27800e80e2b08f366a763fabd70ef234",
-  "glb_sha256": "226a61b3ab2b97a4beb5c1c4915230d0ab13e4eee2d6d8f5c2af312bca807a4b",
-  "generator_sha256": "6df0630d7348948bb10dd0dbfd522a897040d6645fe038aa3f6c063df1a27b83",
+  "blend_sha256": "42983a03e066bb2cc743fd35f38d59da0fa97ce584488fd7a7e0ad0e354aabd4",
+  "glb_sha256": "a2f09789f56162e3570f6bc2dcc01fc837f1ad388ac65210c2d0efaeff00ef5c",
+  "generator_sha256": "35b712eeffd30f0d553052db55046b03b1de2ed10a8d08ae5061801f2ff44031",
   "shared_helper_sha256": "030f5741f42ae856ee254415cb6a98f52102296cd228f04ddd496780ab3175f5",
-  "verifier_sha256": "12dd9af00699ab6fcf56be969c258e1825bc25a55c37628f66d59e41c9be55a1",
-  "triangles": 34166,
-  "mesh_batches": 16,
+  "verifier_sha256": "90cb2838e8bbe9346a6b9533bc5b8ae5d95c91a82739c2a75d76db6cd53d0548",
+  "triangles": 25806,
+  "mesh_batches": 12,
   "materials": 2,
   "packed_maps": 4,
   "closed_core_meshes": {
     "GreenPressureHull": 3202,
-    "SweptRedLobes": 6404
+    "UprightCrescentCore": 6288
   },
   "maximum_bidirectional_world_position_error": 0,
   "native_witnesses": {
-    "open_trailing_gap_samples": 8,
-    "occupied_lobe_samples": 8
+    "open_aft_mouth_samples": 8,
+    "occupied_crescent_samples": 8,
+    "wing_height_to_thickness": [
+      12.109435449891578,
+      12.109435449891578
+    ],
+    "independent_spar_absent": true
   },
   "imported_witnesses": {
-    "open_trailing_gap_samples": 8,
-    "occupied_lobe_samples": 8
+    "open_aft_mouth_samples": 8,
+    "occupied_crescent_samples": 8,
+    "wing_height_to_thickness": [
+      12.109435449891578,
+      12.109435449891578
+    ],
+    "independent_spar_absent": true
   },
-  "width_to_length": 0.8070655398898654,
+  "width_to_length": 0.4904782507154677,
   "source_unchanged": true,
   "renders": {
-    "concept.png": "1aef3096b4b076d28f40d6541ff099bc46f61f8770a4dfb8724d197fd50c3907",
-    "front-quarter.png": "0bd6bc4f64bee4d43e7a9f8607cb544bc05fc4bbad733212d8c958f4cdd0711f",
-    "front.png": "058b3b4816310d5e15be0acc13bdf00d37a039ec34b49877ee284e37c483c232",
-    "rear-quarter.png": "0eaa837eb6ca1daa494bc9074b122f5e4d5b5d07afea42a6bb8da3e0e63ffd53",
-    "side.png": "894e5f51a24eaa489c460bab9098991190eaf5bcbfe089b7c4743e95430259ef",
-    "technical-wireframe.png": "d69f7336744523282939e6c650c3705314eb870407455b442e1acd284db71cf2",
-    "top.png": "081fd5ba6f2f59259a78430028866e87a25f955a9cbf9a154a388b68f293d4f5",
-    "underside.png": "92c8b7409bec995f6f78d67691c709863d623b9339255052f5ffd76fc510ce11",
-    "verified-heading-0.png": "3d4f089dd8b413312b9fb509384e17b7de7b5f254226861f5561263d78f1da6a",
-    "verified-heading-12.png": "7a9188c85e3c48d9c1d29adff53ea45503d57fa34bd6596299e4a6adda673aed",
-    "verified-heading-20.png": "c6a5c22836584c206585f169cf62e37cef9e3175a9ffc154dc41ce877ed35270",
-    "verified-heading-4.png": "da146a9fdd5ac5eea7808e480e8b6484b2875a4ebdf5cb4c412c869ce26c775d",
-    "verified-heading-8.png": "2932269ae396330a1bee64cb81d29d916ab4da123d7221b35f46af70597bee9c",
-    "verified-imported.png": "aec342e1859caa701141dc09e08fcbda92038f2bb3620e2d179d31fca07ac20d",
-    "verified-native.png": "0bd6bc4f64bee4d43e7a9f8607cb544bc05fc4bbad733212d8c958f4cdd0711f"
+    "concept.png": "8fd530169576686cc02581ec30f08acbd4cdbeab69866eb4935718203ffd9fa8",
+    "front-quarter.png": "3e13d83b0a70124102f64e3c89610c13bc672e5246231e132c21fa7960343ed5",
+    "front.png": "28c4e39da17e85002865437e474bd486b6e20cbdd9cea4e272b89506629a643c",
+    "rear-quarter.png": "be4bd9048d702d1055d86a4f214bdceeb757959665f18a16ee41dd331f96cf58",
+    "side.png": "a0cbc940fed995e69365eb4fd5be6d1e70d10d8f83c34905f318c5db5c069b4f",
+    "technical-wireframe.png": "3d5b04f277a31163ee66829fb3459404f9fb4cf1775354117514e58347f5c76e",
+    "top.png": "ef124a7daa020b97bae94a2c49ad4fe845128ae37fe8d2861ee3bb4f10217d10",
+    "underside.png": "4ce0a416d4a269968f6e433d061ce76ec2d43da30ab149d9bbdda0b9e4a8f5f5",
+    "verified-heading-0.png": "4766832cac95ee71ae5b45c4607cc931128d9d4a4f56f6be76f816e1072c770f",
+    "verified-heading-12.png": "56c614c97bb3c5f23f35a6f931501e620087c1c79597b96d36fb010431422158",
+    "verified-heading-20.png": "e83bc7acaae3781e93df05f9b41222ca93794a5b2b5137d1fd71346b195f10a3",
+    "verified-heading-4.png": "824fc5c4c1051148f42356385181cecf5e870182f50e3026750439dc1a48dde3",
+    "verified-heading-8.png": "26c52daf6bbc4112ac20e71469f66e3c32eec877cc7592477b60b6d74c602893",
+    "verified-imported.png": "87fc839ea5c663f0a20237a6b196910440545ccaf9454b9414d6105bf7770eac",
+    "verified-native.png": "3e13d83b0a70124102f64e3c89610c13bc672e5246231e132c21fa7960343ed5"
   },
   "scope": "Blender asset verification and author visual review; final user/client acceptance separate"
 }

@@ -33,12 +33,12 @@ def main():
     subprocess.run(['git','diff','--exit-code','da8c49bb','--','sources/objects/achaean/dedicated-ore-transporter','sources/objects/achaean/dedicated-fighter','sources/docs/assets/reconstruction/ships/achaean/hunter-prospector',
                     'sources/tools/blender/remaster_achaean_transporter.py','sources/materials/achaean/dedicated-ore-transporter'],cwd=ROOT,check=True,capture_output=True)
     board=Image.new('RGB',(1600,650),(18,21,25));draw=ImageDraw.Draw(board)
-    for i,(name,label) in enumerate([('concept.png','Reviewed concept2 - shorter green nose'),('verified-imported.png','Actual independently imported GLB')]):
+    for i,(name,label) in enumerate([('concept.png','User construction sketch - two upright crescents'),('verified-imported.png','Actual independently imported GLB')]):
         im=Image.open(media/name).convert('RGBA');im=im.crop(im.getchannel('A').getbbox());im=ImageOps.contain(im,(770,580));bg=Image.new('RGBA',im.size,(18,21,25,255));bg.alpha_composite(im);board.paste(bg.convert('RGB'),(i*800+(800-im.width)//2,45+(580-im.height)//2));draw.text((i*800+12,15),label,fill=(235,237,240))
     board.save(media/'concept-model-comparison.jpg',quality=92)
     report=dict(id=r['id'],blend_sha256=r['blend_sha256'],glb_sha256=r['glb_sha256'],alpha_iou=iou,
         mean_foreground_rgb_error_255=error,framing_margin_pixels=framing,triangles=r['triangles'],materials=2,packed_maps=4,
-        prior_models_and_historical_source_unchanged=True,visual_feedback='Concept1 green needle shortened in concept2 to follow original compact front. Smooth horizontal trailing lobes and two gaps retained in GLB; mirrored fitting normals corrected after first native render. Detailed sections remain authored interpretation at tiny source resolution',
+        prior_models_and_historical_source_unchanged=True,visual_feedback='User corrected the previous horizontal fork interpretation. Current actual GLB has two upright aft-opening crescent plates, thin rails from above, continuous central hull and no independent ochre trailing spar. Compare side/top/quarter views with original headings and user sketch; precise sections remain authored.',
         concept_model_comparison_sha256=sha(media/'concept-model-comparison.jpg'),
         acceptance='Agent-reviewed characteristic silhouette/colour/negative spaces; final user/client acceptance separate')
     (out/'delivery-review.json').write_bytes((json.dumps(report,indent=2)+'\n').encode());print('HUNTER_DELIVERY_REVIEWED',iou,error)

@@ -1,4 +1,4 @@
-"""AC0A Hunter/Prospector, issue238: compact green hull and horizontal red fork.
+"""AC0A Hunter/Prospector, issue238: central green hull and paired upright crescents.
 
 Original tiny sprites constrain broad silhouette/colour; sections, hidden fittings
 and scale remain authored. Reuses unchanged copper/red material primitives only.
@@ -18,13 +18,17 @@ ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT/'sources/objects/achaean/hunter-prospector'
 MEDIA = ROOT/'gallery/media/objects/achaean/hunter-prospector'
 ID = 'openfa:ship/achaean/hunter-prospector'
-BODY = [(-1.18, 0, .012, .012), (-.90, 0, .15, .12),
-        (-.52, 0, .34, .22), (-.12, 0, .39, .24),
-        (.28, 0, .30, .20), (.66, 0, .16, .12), (.83, 0, .10, .075)]
-ARM = [(-.25, .30, .23, .18), (-.17, .70, .26, .18),
-       (.10, 1.02, .25, .155), (.55, 1.24, .21, .115),
-       (1.15, 1.35, .15, .075), (1.88, 1.36, .075, .037),
-       (2.55, 1.31, .008, .007)]
+BODY = [(-1.62, 0, .012, .012), (-1.20, 0, .13, .10),
+        (-.70, 0, .27, .19), (-.15, 0, .34, .26),
+        (.35, 0, .32, .24), (.75, 0, .22, .17), (.92, 0, .035, .045)]
+
+
+def crescent(side, t, v, depth=0):
+    # Two upright plates: full C profile from the side, thin rails from above.
+    a=abs(t);s=math.sin(t*math.pi/2);taper=1-a*a
+    return Vector((side*(.67+.025*a+depth),
+                   -.48+2.08*a**1.7+(v-.5)*.68*taper,
+                   1.10*s+(v-.5)*.12*s*taper))
 
 
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -96,6 +100,31 @@ def fitting(profile, side, t, angle, length=.26):
             q=p+rot@Vector((x,y,.021));shared.rod('Fasteners',q,q+normal*.006,.008,11,8)
 
 
+def crescent_plate(side):
+    # One watertight shell with coloured edge faces, not overlapping rim skins.
+    # Keeping rims in the same topology prevents tip self-intersection stripes.
+    nt,nv=120,12;count=(nt+1)*(nv+1);vertices=[]
+    for layer in [0,1]:
+        for j in range(nt+1):
+            t=-.998+1.996*j/nt
+            for i in range(nv+1):
+                v=i/nv;depth=(.075*(1-t*t)+.015)*(1 if layer==0 else -1)
+                if layer==0:depth-=.003*math.exp(-((t-.25)/.14)**2-((v-.48)/.2)**2)
+                vertices.append(tuple(crescent(side,t,v,depth)))
+    n=nv+1;faces=[];tiles=[]
+    for j in range(nt):
+        for i in range(nv):
+            q=(j*n+i,j*n+i+1,(j+1)*n+i+1,(j+1)*n+i)
+            faces.extend([q,tuple(v+count for v in reversed(q))])
+            tiles.extend([9 if i==0 else (2 if i==nv-1 else 15)]*2)
+    boundary=list(range(n))+[j*n+nv for j in range(1,nt+1)]
+    boundary += [nt*n+i for i in range(nv-1,-1,-1)]+[j*n for j in range(nt-1,0,-1)]
+    for a,b in zip(boundary,boundary[1:]+boundary[:1]):
+        faces.append((a,a+count,b+count,b));tiles.append(9)
+    shared.emit('UprightCrescentCore',vertices,faces,15)
+    shared.GROUPS['UprightCrescentCore']['t'][-len(tiles):]=tiles
+
+
 def geometry():
     loft('GreenPressureHull',BODY,1,0)
     for lo,hi in [(1.15,2.6),(2.64,4.6)]:
@@ -104,23 +133,21 @@ def geometry():
     patch('GreenBellyHatch',BODY,1,2.2,4.1,3.7,5.7,3,.010)
     fitting(BODY,1,3.10,math.pi/2,.31)
     fitting(BODY,1,3.15,math.pi*1.5,.28)
-    shared.box('OchreCentralSpar',(0,1.45,0),(.15,1.42,.12),5,.012)
-    shared.box('RedSparCap',(0,2.24,0),(.16,.20,.13),1,.016)
-    shared.box('SparCollars',(0,.82,0),(.19,.075,.155),2,.010)
-    shared.box('SparCollars',(0,2.10,0),(.18,.045,.15),9,.008)
-    for y in [1.23,1.77]:
-        shared.box('SparCollars',(0,y,0),(.153,.018,.123),6,.003)
+    # Warm fields belong to the hull/fittings; no detached third spar.
     for side in [-1,1]:
-        loft('SweptRedLobes',ARM,side,1)
-        for lo,hi in [(.18,1.4),(1.43,3.2),(3.23,4.8),(4.83,5.9)]:
-            patch('RedFormedSkins',ARM,side,lo,hi,.32,2.82,15,.009)
-        patch('SilverLobeEdges',ARM,side,.2,5.98,0,.12,9,.006,64,3)
-        patch('SilverLobeEdges',ARM,side,.2,5.98,math.pi-.12,math.pi,9,.006,64,3)
-        patch('LobeRootCollars',ARM,side,.23,.43,0,math.tau,2,.015,4,32)
-        fitting(ARM,side,2.8,math.pi/2,.28)
-        for t in [1.7,4.2]:
-            p=surface(ARM,t,math.pi*1.5,side,.009)
-            shared.box('UndersideServicePads',p,(.08,.11,.025),3,.005)
+        crescent_plate(side)
+        shared.rod('LateralHullLinks',(side*.26,-.40,0),(side*.72,-.40,0),.070,9,24)
+        shared.x_ring('RootCollars',side*.69,-.40,0,
+                      [(side*-.018,.16),(side*.022,.17),(side*.04,.15),(side*.04,.10),(side*-.018,.10)],2,32)
+        for t in [-.42,.42]:
+            skin=.075*(1-t*t)+.015+.012
+            point=crescent(side,t,.45,skin)
+            rot=Vector((side,0,0)).to_track_quat('Z','Y').to_matrix()
+            shared.box('RecessedServiceCovers',point,(.075,.15,.016),3,.004,rot)
+            for u in [-.05,0,.05]:
+                shared.box('ServiceLouvers',point+rot@Vector((0,u,.012)),(.055,.014,.014),9,.003,rot)
+        angle=.20 if side==1 else math.pi-.20
+        patch('OchreHullFields',BODY,1,3.7,4.4,angle-.18,angle+.18,5,.009)
     # Small alloy nose cap; no invented emitter or weapon function.
     patch('NoseCap',BODY,1,.01,.20,0,math.tau,11,.004,5,32)
 
@@ -140,11 +167,11 @@ def green_material():
 
 def main():
     bpy.ops.wm.read_factory_settings(use_empty=True);bpy.context.preferences.filepaths.save_version=0
-    shared.GROUPS.clear();shared.ID=ID
+    shared.GROUPS.clear();shared.ID=ID;shared.crescent_point=crescent
     root=bpy.data.objects.new('PlacementRoot',None);bpy.context.collection.objects.link(root)
     root['catalogue_id']=ID;root['forward_axis']='-Y';root['up_axis']='Z'
     root['equipment_slots']=2;root['calibrated_weapon_sockets']=0;root['proposed_world_size']=40
-    root['interpretation']='AC0A horizontal trailing fork, green hull; sections and hidden fittings authored'
+    root['interpretation']='AC0A user-corrected upright aft-opening paired crescents and continuous green hull; sections authored'
     geometry();objects=shared.finalize(shared.material(),root);green=green_material()
     for o in objects:
         if o.name.startswith('Green'):o.data.materials.clear();o.data.materials.append(green)
