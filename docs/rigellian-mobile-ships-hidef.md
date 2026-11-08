@@ -91,7 +91,12 @@ Hidden-side service equipment remains authored interpretation.
 `sources/objects/rigellian/canonical-assets.json` records the sixteen superseded
 binary payloads retired from distribution. Each ship now has exactly one
 catalogue study and one selected canonical Blend/GLB. Historical reports and
-renders remain available. Each interactive catalogue card includes six individual
+renders remain available. The completed editable variants are preserved at
+immutable commit `489d518a4363254a92b6538e4d7ced44aebf9efc`: the manifest records
+each original path, Git blob id, recovery URL and byte-verification proof.
+Registration refuses retirement if the working bytes differ from that committed
+original. The delivery reviewer independently hashes all sixteen Git blobs with
+`--verify-history`, without restoring or duplicating them on disk. Each interactive catalogue card includes six individual
 views and two common-camera fleet comparisons. Preview:
 [fleet review](../gallery/media/objects/rigellian/fleet/review.jpg).
 
@@ -104,7 +109,7 @@ python tools/prepare_rigellian_mobile_publication.py
 blender --background --python-exit-code 1 --python sources/tools/blender/verify_rigellian_mobile_fleet.py
 python tools/register_rigellian_mobile_fleet.py
 python tools/build_gallery.py
-python tools/review_rigellian_mobile_fleet.py
+python tools/review_rigellian_mobile_fleet.py --verify-history
 python tools/register_rigellian_mobile_fleet.py
 python tools/verify_project.py
 ```

@@ -1,7 +1,8 @@
 """Register one canonical model per mobile Rigellian type and preserve history.
 
-Only the exact superseded tracked Blend/GLB payloads listed in the inventory are
-retired. Their metadata and rendered evidence remain. No directory is removed.
+Only exact superseded tracked payloads whose committed original bytes have been
+verified are retired. Editable variants remain recoverable from an immutable Git
+commit; their metadata/media remain in the checkout. No directory is removed.
 """
 from pathlib import Path
 import hashlib
@@ -10,9 +11,24 @@ import subprocess
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT=Path(__file__).resolve().parents[1]
+PRESERVED_COMMIT='489d518a4363254a92b6538e4d7ced44aebf9efc'
 
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def preserve(item):
+    """Fail closed: no edited/uncommitted model may be retired as a duplicate."""
+    spec=PRESERVED_COMMIT+':'+item['path']
+    original=subprocess.check_output(['git','show',spec],cwd=ROOT)
+    assert hashlib.sha256(original).hexdigest()==item['sha256'],('Historical bytes differ; preserve variant before retirement',item['path'])
+    assert len(original)==item['bytes']
+    blob=subprocess.check_output(['git','rev-parse',spec],cwd=ROOT).decode().strip()
+    item['preserved_commit']=PRESERVED_COMMIT
+    item['preserved_blob']=blob
+    item['recovery_url']='https://github.com/ender-dev-pl/openfa-assets/blob/'+PRESERVED_COMMIT+'/'+item['path']
+    item['committed_bytes_verified_before_retirement']=True
+    return item
 
 
 def write_json(path,data):
@@ -59,8 +75,9 @@ def main():
                 assert target.is_relative_to(ROOT/'sources/docs/assets/reconstruction')
                 assert relative in tracked,('Only tracked superseded payloads may be retired',relative)
                 if target.exists():
-                    history.append({'path':relative,'sha256':sha(target),'bytes':target.stat().st_size})
+                    history.append(preserve({'path':relative,'sha256':sha(target),'bytes':target.stat().st_size}))
                     target.unlink();removed.add(relative)
+        for original in history:preserve(original)
         media='gallery/media/objects/rigellian/'+ship['slug']
         views=[{'label':label,'image':media+'/'+name+'.png'} for name,label in [
             ('front-quarter','Front quarter'),('rear-quarter','Rear quarter'),('top','Top'),('underside','Underside'),
@@ -104,7 +121,8 @@ def main():
             'No calibrated weapon sockets, flight behaviour or client GPU acceptance is claimed. '+
             'The shared fleet comparison uses actual relative model sizes and a single camera.\n',encoding='utf-8')
     write_json(path,inventory)
-    migration['policy']='Exactly one editable Blend and one runtime GLB per mobile Rigellian id. Preserve historical metadata/media, retire superseded binary payloads.'
+    migration['policy']='Exactly one current editable Blend and runtime GLB per mobile Rigellian id. Completed superseded editable variants are preserved in verified immutable Git history; historical metadata/media remain in the checkout.'
+    migration['preservation_commit']=PRESERVED_COMMIT
     write_json(migration_path,migration)
     retained=[]
     for item in layout['files']:

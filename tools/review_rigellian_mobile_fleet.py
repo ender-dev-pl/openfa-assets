@@ -3,6 +3,8 @@ import hashlib
 import json
 from pathlib import Path
 import struct
+import subprocess
+import argparse
 import numpy as np
 from PIL import Image
 
@@ -13,6 +15,8 @@ def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--verify-history',action='store_true',help='Read and hash original Git blobs without restoring/copying them; requires their commit locally')
+    args=parser.parse_args();historical_blobs_checked=0
     style=json.loads((ROOT/'sources/objects/rigellian/fleet-style.json').read_text())
     migration=json.loads((ROOT/'sources/objects/rigellian/canonical-assets.json').read_text())
     inventory=json.loads((ROOT/'sources/docs/reconstruction/models/inventory.json').read_text())
@@ -42,6 +46,15 @@ def main():
         assert published['studies'][0]['glb']==ship['canonical_directory']+'/model.glb'
         retired=next(r for r in migration['models'] if r['id']==ship['id'])['removed_models']
         assert len(retired)==4 and all(not (ROOT/r['path']).exists() for r in retired)
+        for old in retired:
+            assert old['preserved_commit']==migration['preservation_commit']
+            assert old['committed_bytes_verified_before_retirement'] and len(old['preserved_blob'])==40
+            assert old['recovery_url'].endswith(old['preserved_commit']+'/'+old['path'])
+            if args.verify_history:
+                raw=subprocess.check_output(['git','cat-file','blob',old['preserved_blob']],cwd=ROOT)
+                assert len(raw)==old['bytes'] and hashlib.sha256(raw).hexdigest()==old['sha256']
+                blob=subprocess.check_output(['git','rev-parse',old['preserved_commit']+':'+old['path']],cwd=ROOT).decode().strip()
+                assert blob==old['preserved_blob'];historical_blobs_checked+=1
         media=ROOT/'gallery/media/objects/rigellian'/ship['slug']
         for name,digest in report['renders'].items():assert sha(media/name)==digest
         a=np.array(Image.open(media/'verified-native.png').convert('RGBA'))
@@ -56,6 +69,7 @@ def main():
                         'native_import_alpha_iou':iou,'native_import_rgb_mae_255_foreground':difference,
                         'four_superseded_binary_payloads_retired':True,'embedded_images':3})
     output={'issue':232,'reviewer_sha256':sha(Path(__file__)),'models':results,
+            'historical_model_blobs_independently_verified':historical_blobs_checked,
             'visual_review':'Broad formed skins; rejected dense grid removed. Functional details and restrained wear reviewed separately from technical equality. User and game visual acceptance not implied.',
             'scope':'Asset delivery only; proposed sizes and uncalibrated weapon sockets require client integration review.'}
     (ROOT/'sources/objects/rigellian/delivery-review.json').write_text(json.dumps(output,indent=2)+'\n')
