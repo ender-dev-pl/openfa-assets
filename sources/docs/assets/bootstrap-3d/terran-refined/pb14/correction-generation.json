@@ -1,9 +1,9 @@
 {
   "id": "terran:missile-silo",
   "issue": 242,
-  "source_sha256": "8fd871653dd8db600318580f785bb6a6c12917354d72091795564fae43adcdbd",
-  "glb_sha256": "c36302d3fb851dcdb2cd25b0d6eb56b2f1e6f440917cade8f4fa774560c1bc7c",
-  "patcher_sha256": "f463c2c0db7738ff7e4efa9c0e0ccb71906f63f8a56e6a882c4ad591730f77c4",
+  "source_sha256": "e07ac284233bd47841ecd82b9a242438f6b5afe1528fd603748b94038813860b",
+  "glb_sha256": "9f87094a3901b55ef0ae727a8b62eca9a8bf9ce95e787e477d775886ddcf05ac",
+  "patcher_sha256": "62ffd30d3b108fa389cbdd2795b584b5d8b2a4074c2b13b984312877dbb2a7cd",
   "closed_frame": 1,
   "open_frame": 17,
   "loop_end_frame": 33,
@@ -15,7 +15,10 @@
   "full_open_seconds": 1,
   "ground_level": 0,
   "preserve_ground_origin": true,
-  "leaf_count": 16,
+  "leaf_count": 8,
+  "lift": 0.08,
+  "radial_travel": 0.6,
+  "turn_degrees": 50,
   "nominal_aperture_radius": 0.87,
   "usable_shaft_radius": 0.82,
   "shaft_floor": -3.2,
@@ -39,5 +42,5 @@
     ]
   },
   "lamp_on_off": "independent node visibility per lamp; original blink schedule not established",
-  "mechanism_status": "Rigid planar diaphragm blades turn around fixed rim pivots; no vertical carrier or folding"
+  "mechanism_status": "Original eight curved leaves; small lift above rim then original turn plus radial slide; no folding or scaling"
 }

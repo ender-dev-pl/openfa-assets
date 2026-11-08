@@ -1,6 +1,6 @@
 """Issue242: in-place correction of the current PB14 iris and two status lamps.
 
-The flat iris lamellae and shaft are authored mechanics. Original ground datum and
+The original eight curved leaves lift slightly above the rim before spreading. Original ground datum and
 first-half iris timing stay fixed. Lamp mode presets use shared geometry; no
 unverified legacy blinking schedule is embedded in the iris clip.
 """
@@ -83,9 +83,8 @@ def shaft(root):
 
     ring('Launch well inner liner',[(0,.925),(.61,.925),(.61,.905),(0,.905)],'dark')
     ring('Iris guide race',[(.60,.965),(.66,.965),(.66,.905),(.60,.905)],'edge')
-    ring('Iris outer drive cover',[(.708,1.23),(.745,1.23),(.745,.885),(.708,.885)],'bronze')
-    ring('Iris outer pocket wall',[(.65,1.23),(.708,1.23),(.708,1.215),(.65,1.215)],'dark')
-    ring('Lid pressure seal',[(.62,.91),(.64,.91),(.64,.885),(.62,.885)],'dark')
+    ring('Iris outer drive cover',[(.59,1.04),(.64,1.04),(.64,.965),(.59,.965)],'bronze')
+    ring('Lid pressure seal',[(.62,.925),(.64,.925),(.64,.90),(.62,.90)],'dark')
     for o in bpy.context.scene.objects:
         if o.name.startswith('Launch guide rail'):
             v=Vector((o.location.x,o.location.y,0)).normalized();o.location.x=v.x*.94;o.location.y=v.y*.94
@@ -96,41 +95,50 @@ def shaft(root):
 
 
 def iris():
-    # A camera-style iris: rigid, flat overlapping lamellae rotate only around Z.
-    # Sixteen authored thin blades fit a complete aperture into the existing rim;
-    # this is a mechanical reconstruction, not a claim of recovered blade count.
+    # Preserve the original eight curved leaves, including every mesh coordinate.
+    # Lift above the rim, then retain their 50-degree turn while sliding outward.
     root=bpy.data.objects['SiloPlacementRoot']
     for obj in list(bpy.context.scene.objects):
-        if obj.name.startswith(('Iris curved leaf','Iris hinge axle','Silo lid hinge')):
+        if obj.name.startswith(('Iris curved leaf','Iris hinge axle','Silo lid hinge','Iris sliding guide')):
             bpy.data.objects.remove(obj,do_unlink=True)
-    count=16
-    for i in range(count):
-        theta=i*math.tau/count
-        pivot=Vector((math.cos(theta),math.sin(theta),.673+i*.0015))
-        vertices=[];faces=[];rows=48;columns=6
+    for i in range(8):
+        theta=i*math.tau/8;angle=theta+math.pi/8
+        radial=Vector((math.cos(angle),math.sin(angle),0));pivot=radial*.82+Vector((0,0,.64))
+        vertices=[];faces=[];rows=16;columns=10
         for row in range(rows+1):
-            radius=.883*row/rows
-            # Curved sides produce a star-shaped intermediate opening, as in VID.
-            centre=math.radians(145 if radius<.25 else 158.3-35.1*radius)
+            radius=.003+.88*row/rows;sweep=.48*(1-radius/.883)
             for col in range(columns+1):
-                angle=theta+centre+(col/columns-.5)*(math.tau/count+.006)
-                vertices.append((radius*math.cos(angle)-pivot.x,radius*math.sin(angle)-pivot.y,0))
+                a=theta+sweep+(col/columns)*(math.tau/8+.08)-.04
+                height=.64+.22*math.sqrt(max(0,1-(radius/.883)**2))+i*.0015
+                vertices.append(tuple(Vector((radius*math.cos(a),radius*math.sin(a),height))-pivot))
         for row in range(rows):
             for col in range(columns):
                 a=row*(columns+1)+col;faces.append((a,a+columns+1,a+columns+2,a+1))
         obj=mesh_object(f'Iris curved leaf {i+1:02}',vertices,faces,bpy.data.materials['Refined | bronze' if i%2==0 else 'Refined | gold'],root)
         obj.location=pivot;obj.rotation_mode='QUATERNION';obj['iris_leaf']=i
-        modifier=obj.modifiers.new('Thin iris sheet','SOLIDIFY');modifier.thickness=.001;modifier.offset=-1
-        for frame,amount in [(1,0),(5,.25),(9,.5),(13,.75),(17,1),(21,.75),(25,.5),(29,.25),(33,0)]:
-            obj.rotation_quaternion=Quaternion((0,0,1),math.pi/3*amount)
-            obj.keyframe_insert('rotation_quaternion',frame=frame)
+        modifier=obj.modifiers.new('Leaf metal thickness','SOLIDIFY');modifier.thickness=.012;modifier.offset=-1
+        guide=box(f'Iris sliding guide {i+1:02}',(0,0,0),(1,.05,.035),bpy.data.materials['Refined | dark'],root)
+        guide.rotation_euler.z=angle
+        bpy.ops.mesh.primitive_cylinder_add(vertices=16,radius=.020,depth=.06)
+        axle=bpy.context.object;axle.name=f'Iris hinge axle {i+1:02}';axle.parent=obj;axle.location=(0,0,.03);axle.data.materials.append(bpy.data.materials['Refined | edge'])
+        for frame,amount,lift in [(1,0,0),(3,0,.08),(5,1/7,.08),(9,3/7,.08),(13,5/7,.08),(17,1,.08),(21,5/7,.08),(25,3/7,.08),(29,1/7,.08),(31,0,.08),(33,0,0)]:
+            obj.location=pivot+radial*(.60*amount)+Vector((0,0,lift))
+            obj.rotation_quaternion=Quaternion((0,0,1),math.radians(50)*amount)
+            obj.keyframe_insert('location',frame=frame);obj.keyframe_insert('rotation_quaternion',frame=frame)
+            guide.location=radial*(.82+.4*amount)+Vector((0,0,.615+lift));guide.scale=(.08+.4*amount,1,1)
+            guide.keyframe_insert('location',frame=frame);guide.keyframe_insert('scale',frame=frame)
         obj.animation_data.action.name='IrisLeaf_'+str(i+1)
         for layer in obj.animation_data.action.layers:
             for strip in layer.strips:
                 for bag in strip.channelbags:
                     for curve in bag.fcurves:
                         for key in curve.keyframe_points:key.interpolation='LINEAR'
-        obj['mechanism']='Flat rigid iris lamella rotating about fixed rim pivot; no vertical motion or out-of-plane folding'
+        for layer in guide.animation_data.action.layers:
+            for strip in layer.strips:
+                for bag in strip.channelbags:
+                    for curve in bag.fcurves:
+                        for key in curve.keyframe_points:key.interpolation='LINEAR'
+        obj['mechanism']='Original curved leaf lifts 0.08 above rim, turns original 50 degrees and slides radially 0.60; no folding or scaling'
 
 
 def set_lamps(mode='Hybrid',left=True,right=True):
@@ -184,7 +192,7 @@ def main():
     bpy.ops.export_scene.gltf(filepath=str(OUT/'model.glb'),export_format='GLB',use_selection=True,export_extras=True,export_animations=True,export_animation_mode='SCENE',export_frame_range=True,export_apply=True,export_anim_slide_to_zero=True,export_merge_animation='NONE')
     merge_iris_clip(OUT/'model.glb')
     bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'model.blend'),compress=True,relative_remap=True)
-    report=dict(id='terran:missile-silo',issue=242,source_sha256=sha(OUT/'model.blend'),glb_sha256=sha(OUT/'model.glb'),patcher_sha256=sha(Path(__file__)),closed_frame=1,open_frame=17,loop_end_frame=33,fps=16,normalized_glb_seconds=[0,2],full_open_seconds=1,ground_level=0,preserve_ground_origin=True,leaf_count=16,nominal_aperture_radius=.87,usable_shaft_radius=.82,shaft_floor=-3.2,payload_hold_centre_z=-2.05,payload_contract='Keep payload below closed iris, then raise through fully clear aperture; no retracting carrier',lamp_colours_srgb=COLOURS,lamp_on_off='independent node visibility per lamp; original blink schedule not established',mechanism_status='Rigid planar diaphragm blades turn around fixed rim pivots; no vertical carrier or folding')
+    report=dict(id='terran:missile-silo',issue=242,source_sha256=sha(OUT/'model.blend'),glb_sha256=sha(OUT/'model.glb'),patcher_sha256=sha(Path(__file__)),closed_frame=1,open_frame=17,loop_end_frame=33,fps=16,normalized_glb_seconds=[0,2],full_open_seconds=1,ground_level=0,preserve_ground_origin=True,leaf_count=8,lift=.08,radial_travel=.60,turn_degrees=50,nominal_aperture_radius=.87,usable_shaft_radius=.82,shaft_floor=-3.2,payload_hold_centre_z=-2.05,payload_contract='Keep payload below closed iris, then raise through fully clear aperture; no retracting carrier',lamp_colours_srgb=COLOURS,lamp_on_off='independent node visibility per lamp; original blink schedule not established',mechanism_status='Original eight curved leaves; small lift above rim then original turn plus radial slide; no folding or scaling')
     (OUT/'correction-generation.json').write_text(json.dumps(report,indent=2)+'\n');print('SILO_CORRECTED',json.dumps(report))
 
 

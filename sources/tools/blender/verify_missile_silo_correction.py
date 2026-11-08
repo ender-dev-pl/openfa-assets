@@ -53,12 +53,12 @@ def fixed_clearance():
     checks=0
     for f in range(1,34):
         phase(f);rows=geometry();trees={n:BVHTree.FromPolygons(r['points'],r['faces']) for n,r in rows.items()}
-        leaves=[n for n in trees if n.startswith('Iris curved leaf')];assert len(leaves)==16
+        leaves=[n for n in trees if n.startswith('Iris curved leaf')];assert len(leaves)==8
         for leaf in leaves:
             for name in trees:
-                if name in leaves:continue
+                if name in leaves or name=='Iris hinge axle '+leaf[-2:]:continue
                 overlap=trees[leaf].overlap(trees[name]);assert not overlap,(f,leaf,name,len(overlap));checks+=1
-    return dict(frames=33,moving_vs_fixed_tests=checks,overlaps=0,leaf_laps='Thin overlapping iris sheets intentionally excluded from fixed-structure test')
+    return dict(frames=33,moving_vs_fixed_tests=checks,overlaps=0,leaf_laps='Original overlapping leaf seams excluded; each leaf mounting axle is an intentional attached interface, not a fixed obstruction')
 
 
 def open_bore():
@@ -78,7 +78,7 @@ def open_bore():
 
 def view(direction=(3,-5,4)):
     scene=bpy.context.scene;cam=scene.camera;target=Vector((0,0,.30));cam.location=target+Vector(direction);cam.rotation_mode='QUATERNION';cam.rotation_quaternion=(-Vector(direction)).to_track_quat('-Z','Y')
-    cam.data.type='ORTHO';cam.data.ortho_scale=3.6;scene.render.resolution_x=scene.render.resolution_y=512;scene.render.resolution_percentage=100;scene.render.engine='CYCLES';scene.cycles.samples=16;scene.cycles.use_denoising=True;scene.render.film_transparent=True;scene.render.image_settings.color_mode='RGBA'
+    cam.data.type='ORTHO';cam.data.ortho_scale=4.1;scene.render.resolution_x=scene.render.resolution_y=512;scene.render.resolution_percentage=100;scene.render.engine='CYCLES';scene.cycles.samples=16;scene.cycles.use_denoising=True;scene.render.film_transparent=True;scene.render.image_settings.color_mode='RGBA'
 
 
 def ground_holdout():
@@ -105,7 +105,7 @@ def decoy_fixture():
     scene=bpy.context.scene;phase_sources=[]
     for f in range(1,34):phase(f);phase_sources.append(geometry())
     phase(17);source=geometry();trees=[BVHTree.FromPolygons(r['points'],r['faces']) for n,r in source.items()]
-    points=[p for row in source.values() for p in row['points']];xy=[max(p[a] for p in points)-min(p[a] for p in points) for a in [0,1]]
+    phase(1);closed=geometry();points=[p for row in closed.values() for p in row['points']];xy=[max(p[a] for p in points)-min(p[a] for p in points) for a in [0,1]];phase(17)
     before=set(scene.objects);path=author.ROOT/'sources/objects/extensions/munitions/decoy/model.glb';bpy.ops.import_scene.gltf(filepath=str(path));new=set(scene.objects)-before
     for o in new:
         if o.animation_data:o.animation_data_clear()
@@ -130,7 +130,7 @@ def decoy_fixture():
     root.location.z=1.8-(-min(v.y for v in p))*factor;bpy.context.view_layer.update()
     render('decoy-clearance',17)
     for o in new:bpy.data.objects.remove(o,do_unlink=True)
-    return dict(decoy_glb_sha256=sha(path),world_size_proposal=48,building_footprint=[2,2],surface_cell_world_units=32,silo_world_fit_scale=silo_scale,relative_scale=factor,required_projectile_radius=required,usable_shaft_radius=.82,radial_margin=.82-required,launch_collision_tests=tests,loaded_payload_collision_tests=loaded_tests,loaded_payload_nose_z=-1.15,overlaps=0,orientation='Native-Y missile to native+Z launch axis by X-90deg; explicit proposed adapter',scope='Asset fixture using current source fitting formulas; loaded payload held below the closed iris before lift. Not a game-client runtime test')
+    return dict(decoy_glb_sha256=sha(path),world_size_proposal=48,building_footprint=[2,2],surface_cell_world_units=32,silo_world_fit_scale=silo_scale,fit_datum='Closed bind-pose footprint, never the extended moving leaves',relative_scale=factor,required_projectile_radius=required,usable_shaft_radius=.82,radial_margin=.82-required,launch_collision_tests=tests,loaded_payload_collision_tests=loaded_tests,loaded_payload_nose_z=-1.15,overlaps=0,orientation='Native-Y missile to native+Z launch axis by X-90deg; explicit proposed adapter',scope='Asset fixture using current source fitting formulas; loaded payload held below the closed iris before lift. Not a game-client runtime test')
 
 
 def preview(clip):
@@ -173,7 +173,7 @@ def main():
     animation=preview(clips[0])
     for p in author.MEDIA.rglob('*.png'):p.write_bytes(clean_png(p.read_bytes()))
     manifest=dict(id='terran:missile-silo',stage='refined-study',glb=(author.OUT/'model.glb').relative_to(author.ROOT).as_posix(),glb_sha256=before['glb'],blend_sha256=before['blend'],renderer_path=Path(__file__).relative_to(author.ROOT).as_posix(),renderer_sha256=sha(Path(__file__)),blender=bpy.app.version_string,clips=[animation]);(author.MEDIA/'animation-previews.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    report=dict(id='terran:missile-silo',blender=bpy.app.version_string,binaries=before,patcher_sha256=sha(Path(author.__file__)),verifier_sha256=sha(Path(__file__)),position_errors=errors,native_fixed_clearance=native_fixed,imported_fixed_clearance=imported_fixed,native_bore=native_bore,imported_bore=imported_bore,decoy_fixture=fixture,clip=animation,lamp_views=lamp_views,lamp_control='Two channels, three fixed colour presets each, zero/unit node scales; no invented blink timeline',renders={p.relative_to(author.MEDIA).as_posix():sha(p) for p in author.MEDIA.rglob('*.png')},scope='Saved-source and imported asset runtime. Planar diaphragm mechanics are authored; actual game/Android and final visual acceptance separate')
+    report=dict(id='terran:missile-silo',blender=bpy.app.version_string,binaries=before,patcher_sha256=sha(Path(author.__file__)),verifier_sha256=sha(Path(__file__)),position_errors=errors,native_fixed_clearance=native_fixed,imported_fixed_clearance=imported_fixed,native_bore=native_bore,imported_bore=imported_bore,decoy_fixture=fixture,clip=animation,lamp_views=lamp_views,lamp_control='Two channels, three fixed colour presets each, zero/unit node scales; no invented blink timeline',renders={p.relative_to(author.MEDIA).as_posix():sha(p) for p in author.MEDIA.rglob('*.png')},scope='Saved-source and imported asset runtime. Lift/slide above rim is authored; actual game/Android and final visual acceptance separate')
     assert before=={k:sha(author.OUT/('model.'+k)) for k in before};(author.OUT/'correction-runtime-verification.json').write_text(json.dumps(report,indent=2)+'\n');print('SILO_CORRECTION_VERIFIED',json.dumps(report),flush=True)
 
 

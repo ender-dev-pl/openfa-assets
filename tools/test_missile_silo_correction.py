@@ -36,7 +36,7 @@ def main():
     assert report['decoy_fixture']['loaded_payload_collision_tests'] == 33*4*mesh_count
     assert report['decoy_fixture']['launch_collision_tests'] == 11*4*mesh_count
     for kind in ['native_fixed_clearance', 'imported_fixed_clearance']:
-        assert report[kind]['moving_vs_fixed_tests'] == 33*16*(mesh_count-16)
+        assert report[kind]['moving_vs_fixed_tests'] == 33*8*(mesh_count-8-1)
     nodes = {n['name']: n for n in gltf['nodes']}
     assert nodes['SiloPlacementRoot']['extras']['preserve_ground_origin']
     assert 'LaunchPayloadHoldPoint' in nodes
@@ -44,17 +44,18 @@ def main():
     clip = glb_clips(BASE/'model.glb')[0]
     assert clip['start'] == 0 and clip['end'] == 2
     animated = {gltf['nodes'][c['target']['node']]['name'] for c in gltf['animations'][0]['channels']}
-    assert len(animated) == 16 and all('Iris curved leaf' in name for name in animated)
-    assert all(c['target']['path'] == 'rotation' for c in gltf['animations'][0]['channels'])
+    assert len(animated) == 16 and sum(name.startswith('Iris curved leaf') for name in animated) == 8 and sum(name.startswith('Iris sliding guide') for name in animated) == 8
+    assert {c['target']['path'] for c in gltf['animations'][0]['channels']} == {'rotation', 'translation', 'scale'}
     planar = json.loads((BASE/'diaphragm-verification.json').read_text())
     assert planar['binaries'] == report['binaries']
     assert planar['verifier_sha256'] == sha(ROOT/'sources/tools/blender/verify_silo_diaphragm.py')
     for kind in ['native', 'imported']:
         proof = planar[kind]
-        assert proof['fixed_pivots'] and proof['blades'] == 16 and proof['frames'] == 33
-        assert proof['out_of_plane_axis_error'] < 1e-6
-        assert proof['maximum_sheet_thickness'] < .00101
-        assert proof['minimum_blade_layer_gap'] > .00049
+        assert proof['blades'] == 8 and proof['frames'] == 33
+        assert proof['original_shape_error'] < 1e-6
+        assert abs(proof['lift']-.08) < 1e-6
+        assert proof['turn_degrees'] == 50 and proof['radial_travel'] == .60
+        assert not proof['folding'] and not proof['scaling']
         opened = proof['opening_samples']
         assert opened[0]['clear'] == 0 and opened[-1]['clear'] == opened[-1]['samples']
         assert all(a['clear'] < b['clear'] for a, b in zip(opened, opened[1:]))
