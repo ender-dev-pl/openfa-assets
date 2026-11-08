@@ -23,6 +23,14 @@ Rigellian cultural evidence for elegant, ergonomic engineering. The CDB does not
 identify a mandatory alloy. Add restrained seam dirt, scuffs, edge wear and small
 surface damage to newly authored geometry/materials.
 
+The user's subsequent quality benchmark is the refined IS0C Federal Transporter.
+Use its formed surfaces, readable functional equipment, recessed joins and
+portable materials as the craft standard, not its sphere/truss design language.
+The user explicitly rejected the first drafts' dense regular hull grid: neither
+legacy nor the supplied hi-def references supports that treatment. Use broad,
+quiet formed skins and concentrate detail at service assemblies and interfaces.
+Do not claim the early generated drafts are artistically accepted.
+
 ## Scale contract
 
 | Ship | Confirmed legacy role | Authoring size recommendation |
@@ -61,3 +69,48 @@ to actual hashes. Update the interactive gallery and provide signed commit,
 canonical paths, scale contract and previews to the authorized game thread.
 Game attachment, renderer/GPU and runtime acceptance remain separate integration
 evidence. Avoid duplicate builds, full runtime copies or large reference exports.
+
+## Verified asset delivery
+
+| Model | Triangles | Mesh batches | Material |
+| --- | ---: | ---: | ---: |
+| Lazzaro Research | 16,400 | 10 | 1 |
+| Delphini Assault | 25,728 | 15 | 1 |
+| Messier-Lukannon | 32,842 | 14 | 1 |
+| Transportation | 52,390 | 14 | 1 |
+
+The final saved sources were reopened in Blender 4.5.15 LTS and independently
+imported from GLB. Bidirectional world-position error is zero. Native/imported
+render silhouettes have alpha IoU 1.0; foreground RGB mean error is below
+0.03/255 for every model. Local ray checks verify that the blue drive exits are
+unobstructed in native and imported geometry. These checks caught and corrected
+overlapping drive housings; file existence alone would not have exposed them.
+The underside review uses mirrored studio lights to show the actual lower meshes.
+Hidden-side service equipment remains authored interpretation.
+
+`sources/objects/rigellian/canonical-assets.json` records the sixteen superseded
+binary payloads retired from distribution. Each ship now has exactly one
+catalogue study and one selected canonical Blend/GLB. Historical reports and
+renders remain available. Each interactive catalogue card includes six individual
+views and two common-camera fleet comparisons. Preview:
+[fleet review](../gallery/media/objects/rigellian/fleet/review.jpg).
+
+Reproduce from the asset repository (Python requires Pillow and NumPy):
+
+```text
+python sources/tools/rigellian_fleet_surface_maps.py
+blender --background --python-exit-code 1 --python sources/tools/blender/build_rigellian_mobile_fleet.py
+python tools/prepare_rigellian_mobile_publication.py
+blender --background --python-exit-code 1 --python sources/tools/blender/verify_rigellian_mobile_fleet.py
+python tools/register_rigellian_mobile_fleet.py
+python tools/build_gallery.py
+python tools/review_rigellian_mobile_fleet.py
+python tools/register_rigellian_mobile_fleet.py
+python tools/verify_project.py
+```
+
+Both the builder and publication preparer support `--ship <slug>` for focused
+updates. Avoid regenerating unaffected models. Run native/import verification
+against the same final artifacts; no game rebuild or unpacked runtime is needed
+for this source-asset check. Full client lighting, scale overrides and equipment
+attachment acceptance remain the game worker's responsibility.
