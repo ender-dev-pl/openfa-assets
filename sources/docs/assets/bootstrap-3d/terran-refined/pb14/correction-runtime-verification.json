@@ -1,0 +1,125 @@
+{
+  "id": "terran:missile-silo",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "2775447d6112994210c790064d18f8253c1629a6710ca4785563600b22f0c651",
+    "glb": "aa3126f9aba61dcfaab9718d3e31385fb99e492eaae0753fcfb44904c776303a"
+  },
+  "patcher_sha256": "fa7cf41e3b2e45908b182525bb2a1d7b2d866028918e8233f8578256413649b5",
+  "verifier_sha256": "ff98546d8ac8311dee244ccc4eb1602f3f2135a6ff3b1d408d4db39043d0dbb9",
+  "position_errors": {
+    "1": 1.2065571297625866e-07,
+    "5": 1.2065571297625866e-07,
+    "9": 1.3265380971461127e-07,
+    "13": 1.341104507446289e-07,
+    "17": 2.5734181008374435e-07,
+    "25": 1.3265380971461127e-07,
+    "33": 1.2065571297625866e-07
+  },
+  "native_fixed_clearance": {
+    "frames": 33,
+    "moving_vs_fixed_tests": 17160,
+    "overlaps": 0,
+    "leaf_laps": "Thin overlapping iris sheets intentionally excluded from fixed-structure test"
+  },
+  "imported_fixed_clearance": {
+    "frames": 33,
+    "moving_vs_fixed_tests": 17160,
+    "overlaps": 0,
+    "leaf_laps": "Thin overlapping iris sheets intentionally excluded from fixed-structure test"
+  },
+  "native_bore": {
+    "open_mouth_radius_tested": 0.87,
+    "continuous_shaft_radius_tested": 0.82,
+    "shaft_z_tested": [
+      -3.05,
+      1.1
+    ],
+    "empty_ray_samples": 768,
+    "closed_cover_samples": 64
+  },
+  "imported_bore": {
+    "open_mouth_radius_tested": 0.87,
+    "continuous_shaft_radius_tested": 0.82,
+    "shaft_z_tested": [
+      -3.05,
+      1.1
+    ],
+    "empty_ray_samples": 768,
+    "closed_cover_samples": 64
+  },
+  "decoy_fixture": {
+    "decoy_glb_sha256": "6de8207c7d3175031ebd3d3fdcde1e2b05897c37e20a5651583839dcc97ec28a",
+    "world_size_proposal": 48,
+    "building_footprint": [
+      2,
+      2
+    ],
+    "surface_cell_world_units": 32,
+    "silo_world_fit_scale": 26.733722132792384,
+    "relative_scale": 0.17116159659357344,
+    "required_projectile_radius": 0.22171158851225983,
+    "usable_shaft_radius": 0.82,
+    "radial_margin": 0.5982884114877401,
+    "launch_collision_tests": 3212,
+    "loaded_payload_collision_tests": 9636,
+    "loaded_payload_nose_z": -1.15,
+    "overlaps": 0,
+    "orientation": "Native-Y missile to native+Z launch axis by X-90deg; explicit proposed adapter",
+    "scope": "Asset fixture using current source fitting formulas; loaded payload held below carrier before lift. Not a game-client runtime test"
+  },
+  "clip": {
+    "index": 0,
+    "name": "Animation",
+    "start": 0,
+    "end": 2,
+    "duration": 2,
+    "video": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/animation-00.webm",
+    "sha256": "fdd85f89285d7c295b19ca8b9c0a3aae2930b36c5c1112080b586dd26e71be5f",
+    "frames": 48,
+    "fps": 24,
+    "distinct_pose_count": 26
+  },
+  "lamp_views": [
+    "lamps-Hybrid.png",
+    "lamps-AttackOnly.png",
+    "lamps-DefenceOnly.png",
+    "lamps-off.png",
+    "lamps-left.png",
+    "lamps-right.png"
+  ],
+  "lamp_control": "Two channels, three fixed colour presets each, zero/unit node scales; no invented blink timeline",
+  "renders": {
+    "closed.png": "e39483ed2038c97b2ea8a4d2b9b1d7db3b3df43cf2898742c4eee0fcbfea7807",
+    "decoy-clearance.png": "77984ef3966eb73799eba0a25b8fad107ed9ef4f475779d1a3868bd77a131dfa",
+    "front-quarter.png": "7f16f374e7f0d9190f119aaf2ef54dfd804ed1a1d778cfe6aa299ae66610054c",
+    "lamps-AttackOnly.png": "8b344013635acc1d11c7a53eca9db323544dcd758a5b1241dca0e4b9485679bf",
+    "lamps-DefenceOnly.png": "8f431f09b08607b9eec073546dd1e049cca556efc740466157fe774e42a36932",
+    "lamps-Hybrid.png": "7f16f374e7f0d9190f119aaf2ef54dfd804ed1a1d778cfe6aa299ae66610054c",
+    "lamps-left.png": "73ebc615f3984ec3bae2c49e14e0bcb8eb614934eaa5cb094e8670ddfebd6ff2",
+    "lamps-off.png": "d9fc919d7a98003e177ca178be933adc4d065900c5f3a57ea8c3d6eb3d609fbf",
+    "lamps-right.png": "12dc38807c3aa7f82bd491a8349be0b3b446a8550cd181f48629aa1081d897d6",
+    "rear-quarter.png": "9c832583009c3524341544925857eb6ad726c4beeeae22ec3dc24f23eb26a4fd",
+    "top.png": "80db3b4ed74e432782e53fe0e5dc3cd72e7b8d6d51eacf8cc14a3f75dff7a419",
+    "verified-imported.png": "7f16f374e7f0d9190f119aaf2ef54dfd804ed1a1d778cfe6aa299ae66610054c",
+    "verified-native.png": "bc109d4d5429df7cb40f65c44fb128684f3a8f94d1afd7fa09cd51cf82c700e3",
+    "iris/00.png": "e39483ed2038c97b2ea8a4d2b9b1d7db3b3df43cf2898742c4eee0fcbfea7807",
+    "iris/01.png": "03fff0ce8bbc504a199762188f742ae82313823efddbb0a896400e6243cc9fb8",
+    "iris/02.png": "50a32f8c71e47490c0cba1a8fffa573908230ca57b1876bc62153af9a1a0bd41",
+    "iris/03.png": "d6cdb5f30a27e6ae36033a6309a2d7b0073805811b8a2f794e60df970154adbf",
+    "iris/04.png": "b95b25799c23fce12e209438a4db44adb776c99537e49e872b8003726822c131",
+    "iris/05.png": "75627c670212488e63e31459ee18671ae9264b77deff164a3cc4ff057f911c4f",
+    "iris/06.png": "d5b2d0d02ec211da6d2432064b181779cd1edc47b87a9365ce28a9dde6e4a6ea",
+    "iris/07.png": "51bd7baf99511b9df1f016735605c293b89c13445b54181efd84919b008eee8c",
+    "iris/08.png": "a73f8b3a4539f71045bbfe727a5b98eaf924d4764bb447bae64631737b4122c4",
+    "iris/09.png": "a166b6eb12d68ee9217959b286cae27e579f615439a3e29fa78f0419bf6270cb",
+    "iris/10.png": "741f23b18296669ee96745f41358c273d95f1c9765fdee39782e92500bd32074",
+    "iris/11.png": "035761ff7c890bff92ed56670a0fecf4d46389d2312d0965ef04699ca5292630",
+    "iris/12.png": "6d903a75043d539a8a6740386d66bde0f75810fb6994b38d2e3b8e1f70228d42",
+    "iris/13.png": "683f3431c43cb7b35d971450eea7e9916a8ba301c72895d2f9a36a750db34b8b",
+    "iris/14.png": "c75fec5571616c4207921871572438c0481ebca2ec9850d1e62ef82b6f2ecb7b",
+    "iris/15.png": "21cf165485defe7c7d3f291f8bc1dcacf917b286b3fc5d8bef96dfe1528ad1e8",
+    "iris/16.png": "7f16f374e7f0d9190f119aaf2ef54dfd804ed1a1d778cfe6aa299ae66610054c"
+  },
+  "scope": "Saved-source and imported asset runtime. Buried carrier/fold mechanics are authored; actual game/Android and final visual acceptance separate"
+}

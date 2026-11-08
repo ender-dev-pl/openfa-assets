@@ -274,17 +274,13 @@
 
 `terran:missile-silo`
 
-**First available iteration — silhouette-study**
-
-![Missile Silo](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/terran/pb14/front-quarter.png)
-
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/terran/pb14/model.glb)
-
-**Additional iteration — refined-study**
+**First available iteration — refined-study**
 
 ![Missile Silo](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.glb)
+
+Additional views: [Closed iris](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/closed.png) · [Decoy clearance fixture](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/decoy-clearance.png) · [Attack: red](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-AttackOnly.png) · [Defence: blue](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-DefenceOnly.png) · [Hybrid: base colour](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-Hybrid.png) · [Both lamps off](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-off.png) · [Left lamp only](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-left.png) · [Right lamp only](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-right.png)
 
 [Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/animation-00.webm)
 

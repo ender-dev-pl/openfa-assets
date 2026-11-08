@@ -34,7 +34,8 @@ def animation_previews(blend,glb,media):
     manifest=json.loads(path.read_text())
     assert manifest['glb_sha256']==sha(ROOT/glb),f'Stale GLB animation preview: {glb}'
     assert manifest['blend_sha256']==sha(ROOT/blend),f'Stale animation lighting/framing source: {blend}'
-    assert manifest['renderer_sha256']==sha(ROOT/'sources/tools/blender/render_gallery_animations.py'),f'Stale animation renderer: {glb}'
+    renderer=preview_renderer(manifest)
+    assert manifest['renderer_sha256']==sha(renderer),f'Stale animation renderer: {glb}'
     assert len(manifest['clips'])==len(clips),(glb,'Missing preview clips')
     result=[]
     for actual,preview in zip(clips,manifest['clips']):
@@ -45,3 +46,11 @@ def animation_previews(blend,glb,media):
         assert preview['distinct_pose_count']>1,(glb,'Imported clip was not moving')
         result.append(preview)
     return result
+
+
+def preview_renderer(manifest):
+    relative=Path(manifest.get('renderer_path','sources/tools/blender/render_gallery_animations.py'))
+    assert not relative.is_absolute() and '..' not in relative.parts,'Expected repository-relative preview renderer'
+    renderer=(ROOT/relative).resolve()
+    assert renderer.is_relative_to((ROOT/'sources/tools/blender').resolve()) and renderer.suffix=='.py' and renderer.is_file(),'Invalid preview renderer'
+    return renderer

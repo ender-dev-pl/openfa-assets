@@ -2504,10 +2504,10 @@
         {
           "directory": "_MA",
           "entry": "PB14.VID",
-          "kind": "rotation-video",
+          "kind": "operational-video",
           "present": true,
           "sha256": "d088f6dc710aa6104a2bf621e56954d82192d8f48a95f30681c8612a6240e9f0",
-          "palette_status": "requires-video-palette-decoding",
+          "palette_status": "embedded palette reviewed; opening and closing, fixed camera",
           "role": "profile.catalogue.previewAnimationId",
           "asset_id": "openfa:presentation/asset/legacy/building/14/video",
           "animation_id": "openfa:presentation/animation/legacy/building/14/preview"
@@ -2528,32 +2528,60 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/terran/pb14/model.blend",
-          "present": true,
-          "sha256": "40f5d0c62fdd1f96d3036e01f2ddaf6a8ac09cd023f7b36de9532cc79354af7b",
-          "final_visual_acceptance": "not-established"
-        },
-        {
           "stage": "refined-study",
           "blend": "docs/assets/bootstrap-3d/terran-refined/pb14/model.blend",
           "present": true,
-          "sha256": "c48c5934e59e71f763c375641afe983d09181f984d7f765460b410f468a403cc",
-          "final_visual_acceptance": "not-established"
+          "sha256": "2775447d6112994210c790064d18f8253c1629a6710ca4785563600b22f0c651",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Closed iris",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/closed.png"
+            },
+            {
+              "label": "Decoy clearance fixture",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/decoy-clearance.png"
+            },
+            {
+              "label": "Attack: red",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-AttackOnly.png"
+            },
+            {
+              "label": "Defence: blue",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-DefenceOnly.png"
+            },
+            {
+              "label": "Hybrid: base colour",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-Hybrid.png"
+            },
+            {
+              "label": "Both lamps off",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-off.png"
+            },
+            {
+              "label": "Left lamp only",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-left.png"
+            },
+            {
+              "label": "Right lamp only",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-right.png"
+            }
+          ]
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
+        "reference_views_reviewed": true,
         "silhouette_and_proportions": false,
         "high_detail_structure": false,
         "materials": false,
-        "moving_assemblies": false,
+        "moving_assemblies": true,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
-        "Resolve external palette from renderer/legacy evidence before treating decoded grayscale previews as colour references."
+        "No on/off timing recovered in reviewed surface phases or 120 PB14.VID frames; drive independent lamps from actual game state.",
+        "Final client placement, launch timing and status binding need runtime verification."
       ],
       "footprint": [
         2,
@@ -2581,6 +2609,23 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 14
+      },
+      "superseded_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/terran/pb14/model.blend",
+          "present": true,
+          "sha256": "40f5d0c62fdd1f96d3036e01f2ddaf6a8ac09cd023f7b36de9532cc79354af7b",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging; payload preserved as earlier study"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "refined-study",
+        "blend": "docs/assets/bootstrap-3d/terran-refined/pb14/model.blend",
+        "glb": "docs/assets/bootstrap-3d/terran-refined/pb14/model.glb",
+        "issue": 242,
+        "integration": "Use one canonical payload across surface, build menu and SciTek. Explicit terrain, stored-payload and lamp controls require game runtime integration."
       }
     },
     {
