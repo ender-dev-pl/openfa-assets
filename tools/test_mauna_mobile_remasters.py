@@ -30,6 +30,9 @@ def check_type5_end_uv(raw,g,length):
 
 
 def main():
+    # The repository stores root tools as LF. Bind the generator's committed
+    # byte representation, so a new clone can validate the same model proof.
+    assert b'\r\n' not in (ROOT/'tools/author_mauna_mobile_maps.py').read_bytes(),'Normalize the map generator to repository LF before recording model hashes'
     doc=json.loads((ROOT/'sources/docs/reconstruction/models/mauna-mobile-remaster.json').read_text());models=doc['models'];assert 1<=len(models)<=doc['expected_mobile_ship_count']==5
     refs=json.loads((ROOT/'sources/docs/reconstruction/models/ship-reference-index.json').read_text())['ships'];expected={r['id'] for r in refs if r['culture']=='mauna' and not r['runtime_fixed_scale']}
     assert {r['id'] for r in models}|set(doc['pending'])==expected and not {r['id'] for r in models}&set(doc['pending'])
