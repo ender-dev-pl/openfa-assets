@@ -104,23 +104,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/047`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Databanks](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri08/front-quarter.png)
+![Databanks](../gallery/media/objects/rigellian/databanks/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri08/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri08/model.glb)
+[Blend](../sources/objects/rigellian/databanks/model.blend) · [GLB](../sources/objects/rigellian/databanks/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Databanks](../gallery/media/docs/assets/reconstruction/buildings/rigellian/databanks/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/databanks/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/databanks/model.glb)
-
-**Additional iteration — visible-equipment-refinement**
-
-![Databanks](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri08/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri08/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri08/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri08-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/databanks/imported-front-quarter.png)
 
 ## Construction Unit
 
