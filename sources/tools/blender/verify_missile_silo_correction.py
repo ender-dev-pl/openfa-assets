@@ -64,7 +64,7 @@ def fixed_clearance():
 
 def open_bore():
     scene=bpy.context.scene;phase(17);deps=bpy.context.evaluated_depsgraph_get();count=0
-    for radii,stop in [([0,.2,.4,.6,.8,.82],-3.05),([.85,.87],0)]:
+    for radii,stop in [([0,.1,.2,.3,.4,.42,.44],-3.05)]:
         for r in radii:
             for i in range(96):
                 p=Vector((r*math.cos(math.tau*i/96),r*math.sin(math.tau*i/96),1.1))
@@ -74,12 +74,12 @@ def open_bore():
     for r in [.05,.3,.6,.84]:
         for i in range(16):
             p=Vector((r*math.cos(math.tau*i/16),r*math.sin(math.tau*i/16),1.1));hit,*_=scene.ray_cast(deps,p,Vector((0,0,-1)),distance=.7);assert hit,('closed iris gap',r,i)
-    return dict(open_mouth_radius_tested=.87,continuous_shaft_radius_tested=.82,shaft_z_tested=[-3.05,1.1],empty_ray_samples=count,closed_cover_samples=64)
+    return dict(open_mouth_radius_tested=.44,continuous_shaft_radius_tested=.44,nominal_mouth_radius=.87,shaft_z_tested=[-3.05,1.1],empty_ray_samples=count,closed_cover_samples=64)
 
 
 def view(direction=(3,-5,4)):
     scene=bpy.context.scene;cam=scene.camera;target=Vector((0,0,.30));cam.location=target+Vector(direction);cam.rotation_mode='QUATERNION';cam.rotation_quaternion=(-Vector(direction)).to_track_quat('-Z','Y')
-    cam.data.type='ORTHO';cam.data.ortho_scale=4.1;scene.render.resolution_x=scene.render.resolution_y=512;scene.render.resolution_percentage=100;scene.render.engine='CYCLES';scene.cycles.samples=16;scene.cycles.use_denoising=True;scene.render.film_transparent=True;scene.render.image_settings.color_mode='RGBA'
+    cam.data.type='ORTHO';cam.data.ortho_scale=3.4;scene.render.resolution_x=scene.render.resolution_y=512;scene.render.resolution_percentage=100;scene.render.engine='CYCLES';scene.cycles.samples=16;scene.cycles.use_denoising=True;scene.render.film_transparent=True;scene.render.image_settings.color_mode='RGBA'
 
 
 def ground_holdout():
@@ -114,7 +114,7 @@ def decoy_fixture():
     for i,(x,z) in enumerate([(-.57,-.57),(-.57,.57),(.57,-.57),(.57,.57)]):bpy.data.objects['DecoySegment'+str(i)].location=(x,0,z)
     bpy.context.view_layer.update();missile=[o for o in new if o.type=='MESH'];p=[o.matrix_world@v.co for o in missile for v in o.data.vertices]
     length=max(v.y for v in p)-min(v.y for v in p);silo_scale=min(64/d for d in xy);factor=(48/length)/silo_scale;required=max(math.hypot(v.x,v.z) for v in p)*factor
-    assert required<.82;root.scale=(factor,)*3;root.rotation_euler.x=-math.pi/2
+    assert required<.44;root.scale=(factor,)*3;root.rotation_euler.x=-math.pi/2
     tests=0
     for tip in [-1.15,-.75,-.25,.25,.55,.75,1.0,1.4,1.8,2.2,2.8]:
         root.location.z=tip-(-min(v.y for v in p))*factor;bpy.context.view_layer.update()
@@ -131,7 +131,7 @@ def decoy_fixture():
     root.location.z=1.8-(-min(v.y for v in p))*factor;bpy.context.view_layer.update()
     render('decoy-clearance',17)
     for o in new:bpy.data.objects.remove(o,do_unlink=True)
-    return dict(decoy_glb_sha256=sha(path),world_size_proposal=48,building_footprint=[2,2],surface_cell_world_units=32,silo_world_fit_scale=silo_scale,fit_datum='Closed bind-pose footprint, never the extended moving leaves',relative_scale=factor,required_projectile_radius=required,usable_shaft_radius=.82,radial_margin=.82-required,launch_collision_tests=tests,loaded_payload_collision_tests=loaded_tests,loaded_payload_nose_z=-1.15,overlaps=0,orientation='Native-Y missile to native+Z launch axis by X-90deg; explicit proposed adapter',scope='Asset fixture using current source fitting formulas; loaded payload held below the closed iris before lift. Not a game-client runtime test')
+    return dict(decoy_glb_sha256=sha(path),world_size_proposal=48,building_footprint=[2,2],surface_cell_world_units=32,silo_world_fit_scale=silo_scale,fit_datum='Closed bind-pose footprint, never the extended moving leaves',relative_scale=factor,required_projectile_radius=required,usable_shaft_radius=.44,radial_margin=.44-required,launch_collision_tests=tests,loaded_payload_collision_tests=loaded_tests,loaded_payload_nose_z=-1.15,overlaps=0,orientation='Native-Y missile to native+Z launch axis by X-90deg; explicit proposed adapter',scope='Asset fixture using current source fitting formulas; loaded payload held below the closed iris before lift. Not a game-client runtime test')
 
 
 def preview(clip):

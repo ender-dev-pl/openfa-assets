@@ -69,8 +69,8 @@
     2
   ],
   "binaries": {
-    "blend": "9e67e776a18b5d058c0d0d8083db44cf24e6f0a10d57fda3cfdb81b2a89f6913",
-    "glb": "f6a6fd5f0568941384c0b8180f28bcc6b50ee40cb6469d529660ab08d5c4e25a"
+    "blend": "5e52745e478476c37f7eca7d539d616bf87a275601b016c61285fddf17aa55c9",
+    "glb": "2ccd94bcc5052f2e87cc346ffe5539293af89d49fddc7e0d7af12bd3eb9d3f11"
   },
   "ground_level": 0,
   "preserve_ground_origin": true,
@@ -105,15 +105,17 @@
     },
     "control": "Exactly one preset mesh at unit scale per lit channel; all presets zero scale when off; no lamp animation"
   },
-  "integration": "Preserve grade Z=0 native / Y=0 glTF. Original curved leaves lift above rim, turn and slide outward. Fit building using closed bind pose; never resize from opened leaf extent. Hold payload below closed iris until open, then lift. Explicit client state/node binding required.",
+  "integration": "Preserve grade Z=0 native / Y=0 glTF. Original curved leaves lift0.08 on coaxial cylinders and turn90degrees, without radial travel. Fit building using closed bind pose. Hold payload below closed iris until open, then lift. Explicit client state/node binding required.",
   "verification": "correction-runtime-verification.json",
   "iris_mechanism": {
     "blades": 8,
     "original_mesh_preserved": true,
     "lift": 0.08,
-    "radial_travel": 0.6,
-    "turn_degrees": 50,
-    "motion": "Lift above rim, then original turn and constant-length rack travel through body-mounted guides; pinion drive and leaf bearing; no folding or leaf scaling",
+    "radial_travel": 0,
+    "turn_degrees": 90,
+    "verified_passage_radius": 0.44,
+    "nominal_tube_radius": 0.87,
+    "motion": "Coaxial lift beneath fixed leaf axes, then90-degree rotation; no external arms, radial drive, folding or scaling",
     "proof": "diaphragm-verification.json"
   }
 }

@@ -29,8 +29,9 @@ def main():
     assert max(report['position_errors'].values()) < 1e-4
     for kind in ['native_fixed_clearance', 'imported_fixed_clearance', 'decoy_fixture']:
         assert report[kind]['overlaps'] == 0
-    assert report['decoy_fixture']['radial_margin'] > .5
-    assert report['imported_bore']['continuous_shaft_radius_tested'] == .82
+    assert report['decoy_fixture']['radial_margin'] > .19
+    assert report['imported_bore']['continuous_shaft_radius_tested'] == .44
+    assert report['imported_bore']['nominal_mouth_radius'] == .87
     payload = (BASE/'model.glb').read_bytes()
     gltf = json.loads(payload[20:20+struct.unpack_from('<I', payload, 12)[0]])
     mesh_count = sum('mesh' in n for n in gltf['nodes'])
@@ -45,9 +46,7 @@ def main():
     clip = glb_clips(BASE/'model.glb')[0]
     assert clip['start'] == 0 and clip['end'] == 2
     animated = {gltf['nodes'][c['target']['node']]['name'] for c in gltf['animations'][0]['channels']}
-    assert len(animated) == 32
-    for prefix in ['Iris curved leaf', 'Iris sliding guide', 'Iris lift carriage ', 'Iris drive wheel']:
-        assert sum(name.startswith(prefix) for name in animated) == 8
+    assert len(animated) == 8 and all(name.startswith('Iris curved leaf') for name in animated)
     assert {c['target']['path'] for c in gltf['animations'][0]['channels']} == {'rotation', 'translation'}
     planar = json.loads((BASE/'diaphragm-verification.json').read_text())
     assert planar['binaries'] == report['binaries']
@@ -58,13 +57,13 @@ def main():
         assert proof['blades'] == 8 and proof['frames'] == 33
         assert proof['original_shape_error'] < 1e-6
         assert abs(proof['lift']-.08) < 1e-6
-        assert proof['turn_degrees'] == 50 and proof['radial_travel'] == .60
+        assert proof['turn_degrees'] == 90 and proof['radial_travel'] == 0
         assert not proof['folding'] and not proof['scaling']
         support = proof['support']
-        assert support['anchored_feet'] == 8
-        assert support['minimum_rack_engagement'] > .0999
-        assert support['minimum_piston_engagement'] > .0699
-        assert support['leaf_bearing_contacts'] == support['actuator_contacts'] == 33*8
+        assert support['mounting_ring_anchored'] and support['anchored_actuators'] == 8
+        assert support['maximum_axis_error'] < 1e-6
+        assert support['minimum_piston_engagement'] > .0649
+        assert support['leaf_bearing_contacts'] == support['actuator_contacts'] == support['rod_bearing_contacts'] == 33*8
         opened = proof['opening_samples']
         assert opened[0]['clear'] == 0 and opened[-1]['clear'] == opened[-1]['samples']
         assert all(a['clear'] < b['clear'] for a, b in zip(opened, opened[1:]))
