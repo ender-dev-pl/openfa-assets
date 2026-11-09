@@ -1,0 +1,70 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/046",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri07-review-1.png",
+    "sha256": "9f7cdc7369d9fadccdfce38ec14964ded9c17256f1c0fe4f7ecb9a12f54ee42d",
+    "prompt": "sources/docs/reconstruction/models/ri07-concept-prompt-1.txt",
+    "verdict": "Single saucer, flared pedestal, segmented mast and thin silver fork agree with legacy. Concept broadens the foot and retainers, adds a rectangular roof cover and more prominent gold fittings; retain the established proportions and modest round roof well. Fine fittings and well engineering remain interpreted."
+  },
+  "legacy": {
+    "body_sha256": "0a750695aa3cdc460f776498f7e1d230ef20c4f984216127f55b5783ed451fc8",
+    "catalogue_colour_phase20_sha256": "f86ad5bab6e28e50c90e1fe59a0ce38dbd9f4d7082359232f6ad87ab2d8887f7",
+    "functional_record": 907,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "bf887c645a2becd75ff69dac610359dc1ae69522f68c37db0ac28672c8ed4787",
+    "glb": "d7b52e2984a4a578cb183cc68503e0b8441405ffd09cfe18a01740947f6b74e3"
+  },
+  "runtime_report_sha256": "b65d2193e066f523b563853a10f8b84d4c182fbcf78729355ca358ea54b59f61",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.019636366102430556,
+        0.016776190863715276,
+        0.017274644639756944,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 56
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.015226576063368056,
+        0.012758043077256944,
+        0.012956407335069444,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 56
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.014372083875868056,
+        0.013587103949652778,
+        0.0146026611328125,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 57
+    }
+  },
+  "feedback": [
+    "Actual independent GLB retains the legacy-guided flared foot, single saucer, exposed brass neck with pale retainers, segmented mast and thin SILVER fork rather than the broad gold crown used on other buildings.",
+    "All three mapped body solids and complete twelve-part silver crown retain exact evaluated source geometry. Full mapped colour/roughness pixels and six planar caps/cylindrical side UV contracts pass in saved-native and imported GLB.",
+    "The concept broadens the foot, thickens retainers and adds a rectangular roof cover and more prominent gold fittings. These differences are not new geometric authority; exact small fitting counts and roof-well engineering remain interpreted.",
+    "Six seams/collars are reduced; all prior anatomy/contact/dent/silver-terminal assertions are retained. Civilian research role is documented, while crown function and catalogue technical motion are not. Fine material wear is subtler than the concept."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

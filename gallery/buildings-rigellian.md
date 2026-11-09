@@ -92,17 +92,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/046`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Science Labs](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri07/front-quarter.png)
+![Science Labs](../gallery/media/objects/rigellian/science-labs/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri07/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri07/model.glb)
+[Blend](../sources/objects/rigellian/science-labs/model.blend) · [GLB](../sources/objects/rigellian/science-labs/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Science Labs](../gallery/media/docs/assets/reconstruction/buildings/rigellian/science-labs/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/science-labs/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/science-labs/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri07-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/science-labs/imported-front-quarter.png)
 
 ## Databanks
 
