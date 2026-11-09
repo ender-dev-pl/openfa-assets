@@ -36,18 +36,18 @@ def main():
     doc=json.loads((ROOT/'sources/docs/reconstruction/models/mauna-mobile-remaster.json').read_text());models=doc['models'];assert 1<=len(models)<=doc['expected_mobile_ship_count']==5
     refs=json.loads((ROOT/'sources/docs/reconstruction/models/ship-reference-index.json').read_text())['ships'];expected={r['id'] for r in refs if r['culture']=='mauna' and not r['runtime_fixed_scale']}
     assert {r['id'] for r in models}|set(doc['pending'])==expected and not {r['id'] for r in models}&set(doc['pending'])
-    assert {r['id'] for r in doc['quality_followups']}=={'openfa:ship/mauna/elite-command-craft'}
+    assert doc['quality_followups']==[]
     inventory=json.loads((ROOT/'sources/docs/reconstruction/models/inventory.json').read_text());results=[]
-    assert next(r for r in inventory['records'] if r['id']=='openfa:ship/mauna/elite-command-craft')['acceptance']['high_detail_structure'] is False
+    assert next(r for r in inventory['records'] if r['id']=='openfa:ship/mauna/elite-command-craft')['acceptance']['high_detail_structure'] is True
     for row in models:
         folder=(ROOT/row['blend']).parent;meta=json.loads((folder/'model.json').read_text());proof=json.loads((folder/'runtime-verification.json').read_text());review=json.loads((folder/'concept-review.json').read_text());media=ROOT/'gallery/media/objects/mauna'/folder.name
-        suffix='type6' if folder.name=='max-combat-craft-type-6' else 'mobile_ship'
+        suffix={'max-combat-craft-type-6':'type6','elite-command-craft':'elite'}.get(folder.name,'mobile_ship')
         assert proof['generator_sha256']==meta['generator_sha256']==sha(ROOT/('sources/tools/blender/remaster_mauna_'+suffix+'.py'))
         assert proof['verifier_sha256']==sha(ROOT/('sources/tools/blender/verify_mauna_'+suffix+'.py'))
-        if suffix=='type6':
+        if suffix in ['type6','elite']:
             assert proof['verifier_inputs_unchanged'] is True
             assert proof['shared_mauna_verifier_sha256']==sha(ROOT/'sources/tools/blender/verify_mauna_mobile_ship.py')
-            assert proof['detail_parts_sha256']==meta['detail_parts_sha256']==sha(ROOT/'sources/tools/blender/mauna_type6_detail_parts.py')
+            assert proof['detail_parts_sha256']==meta['detail_parts_sha256']==sha(ROOT/('sources/tools/blender/mauna_'+suffix+'_detail_parts.py'))
         assert meta['shared_recipe_helpers_sha256']==sha(ROOT/'sources/tools/blender/remaster_artemian_mobile_ship.py')
         assert proof['shared_geometry_verifier_sha256']==sha(ROOT/'sources/tools/blender/verify_artemian_mobile_ship.py')
         assert meta['shared_primitives_sha256']==sha(ROOT/'sources/tools/blender/remaster_braccatian_mobile_ships.py')
@@ -108,14 +108,35 @@ def main():
             assert meta['comparison_heading_directions']=={'12':[0,-1,.95],'28':[0,1,.95]}
         if folder.name=='elite-command-craft':
             names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
-            assert len(names)==59 and {'Elite pod -1','Elite pod 1','Elite central connection'}<=names
-            assert len(proof['attachments_checked'])==58 and len(proof['protected_dents'])==2
+            detail_names=set(meta['detailed_parts']['names'])
+            assert len(names)==59+len(detail_names) and len(detail_names)>90
+            assert {'Elite pod -1','Elite pod 1','Elite central connection'}<=names
+            assert len(proof['attachments_checked'])==len(names)-1 and len(proof['protected_dents'])==2
+            assert len({n for n in names if 'detail end blue armour ' in n})==4
+            assert len({n for n in names if 'detail end upper blue field ' in n})==2
+            assert len({n for n in names if 'detail connector side truss ' in n})==8
+            assert len({n for n in names if 'detail axial collar ' in n and 'pin' not in n})==4
+            assert review['detail_reviewed_binary_hashes']==proof['binaries'] and review['construction_detail_feedback']
+            for item in review['user_references']:assert sha(ROOT/item['image'])==item['sha256']
+            assert meta['presentation_hero_direction']==[12,-8,6]
+            for field,name in [('detail_baseline_helpers_sha256','mauna_elite_command_craft_parts.py'),('detail_primitives_sha256','build_openfa_assets.py')]:
+                assert proof[field]==meta[field]==sha(ROOT/'sources/tools/blender'/name)
             assert proof['ray_witnesses']['native']==dict(void_rays=2,solid_rays=3)
             assert meta['material_tiles']['Elite | worn red tips']==6
             assert review['attempts_used']==review['maximum_attempts']==3 and len(review['failed_attempts'])==2
             assert [it['number'] for it in review['iterations']]==[3]
             assert meta['comparison_heading_directions']=={'12':[0,-1,.25],'28':[0,1,.25]}
             areas=atlas_areas(raw,g,length,'PrimaryHullAndArmour');assert areas[6]>0 and areas[3]>.02,areas.tolist()
+            # Check actual broad blue end faces, beyond narrow vertical strips.
+            broad_blue=0
+            for mesh in g['meshes']:
+                for prim in mesh['primitives']:
+                    uv=read_accessor(raw,g,length,prim['attributes']['TEXCOORD_0']);pos=read_accessor(raw,g,length,prim['attributes']['POSITION']);idx=read_accessor(raw,g,length,prim['indices']).reshape(-1,3)
+                    means=uv[idx].mean(axis=1);tiles=np.floor(means[:,0]*4)+4*np.floor(means[:,1]*2);points=pos[idx];centre=points.mean(axis=1)
+                    mask=(tiles==3)&(abs(centre[:,2])>1.11)&(centre[:,1]>.145)&(centre[:,1]<.295)&(np.ptp(points[:,:,0],axis=1)>.60)
+                    broad_blue+=int(mask.sum())
+            assert broad_blue>=4,'Missing broad opaque blue end fields'
+
         if folder.name=='transportation-craft-type-3':
             names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
             assert len(names)==83 and {f'Transport tower {i}' for i in [-1,0,1]}<=names

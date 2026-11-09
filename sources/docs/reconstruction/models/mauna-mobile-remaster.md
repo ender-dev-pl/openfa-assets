@@ -1,13 +1,13 @@
 # Mauna mobile remasters
 
-Issue #251 is part of programme #248 and follows the completed Artemian asset milestone #249 / PR #250. This is an incremental delivery: all five Mauna mobile ships now have canonical remaster assets; the latest user-concept construction-detail follow-up for MN3C remains open. All cultures' completed spacedocks, including MN5C, are explicitly excluded. Asset verification does not establish final user artistic acceptance or client calibration.
+Issue #251 is part of programme #248 and follows the completed Artemian asset milestone #249 / PR #250. This is an incremental delivery: all five Mauna mobile ships have canonical remaster assets with source-bound concept/render feedback; final user and client acceptance remain separate. All cultures' completed spacedocks, including MN5C, are explicitly excluded. Asset verification does not establish final user artistic acceptance or client calibration.
 
 | Ship | Legacy | Current milestone | Proposed WorldSize |
 |---|---|---|---:|
 | Surveillance Craft Type 5 | MN0A.256 | Canonical remaster and concept/GLB feedback verified | 40 |
 | Combat Craft Type 1.5 | MN1A.256 | Canonical remaster and concept/GLB feedback verified | 56 |
 | Max Combat Craft Type 6 | MN2C.256 | Canonical model, user-concept and GLB feedback verified | 128 |
-| Elite Command Craft | MN3C.256 | Runtime verified; further construction-detail refinement open | 160 |
+| Elite Command Craft | MN3C.256 | User-concept construction detail and GLB feedback reviewed | 160 |
 | Transportation Craft Type 3 | MN4C.256 | Canonical remaster and concept/GLB feedback verified | 180 |
 
 ## Evidence and material direction
@@ -66,11 +66,13 @@ Inventory selects one canonical payload for gameplay, ship/build menus and SciTe
 
 ## Elite Command Craft
 
-MN3C retains two grey chamfered blocks in tandem, a short narrow connector and opposed red-tipped axial rods. All32 populated headings were inspected. Two built-in ImageGen requests returned no pixels; the explicitly authorized third attempt returned the sole inspectable concept. All three requests count against the limit. The concept guides sparse worn alloy, fitted maintenance surfaces and opaque pale-blue bands; exact joints, hidden surfaces and rod function remain interpretations.
+MN3C retains two grey chamfered blocks in tandem, a short narrow connector and opposed red-tipped projections. All32 populated legacy headings were inspected. Two built-in ImageGen requests returned no pixels; the third returned the sole inspectable generated study. The user subsequently supplied the preferred construction-detail concept. No fourth tool generation was made. Exact small parts, hidden joints and projection function remain interpretations.
 
-The canonical `sources/objects/mauna/elite-command-craft/model.blend` and `model.glb` contain38,594 triangles in four batches, one material and three embedded maps, versus103,696 triangles in59 original meshes. All59 source part identities remain editable. Actual saved-native and independent GLB verification covers source-surface tolerance,58 seated connections, two physical dents, matching exported positions and rendered parity. Two side-void rays preserve the narrow connector; three occupied rays check adjacent structure.
+The updated canonical `sources/objects/mauna/elite-command-craft/model.blend` and `model.glb` contain61,070 triangles in four batches, one material and three embedded maps. All59 baseline part identities remain alongside129 new fitted details. These include blue-field bezels/clasps, service hoods, low deck bays, end armour/blue fields, stepped collars, supported connector routes and eight side-truss members. The concept tall bridge, bright lamps and dense plate grid are omitted to retain legacy character.
 
-The first GLB feedback found blue-grey rod terminals: the recipe now uses the muted-red atlas tile. End comparison elevation was reduced from0.95 to0.25 after inspecting corresponding legacy12/28, and the saved source/import were actually verified again. End blue-field extent and lighting still differ; no numerical fidelity score or complete client acceptance is inferred. WorldSize160 and six equipment mounts require calibration. The gallery selects the same canonical source for gameplay and all menus, with the first study retained as historical.
+Actual saved-native and independent GLB checks cover source tolerance,187 seated contacts, two physical dents, matching positions/renders, two open connector-side rays and three occupied rays in both formats. Feedback moved the presentation hero camera to12,-8,6 to reveal the connector, added visible truss construction and restored the broad upper opaque-blue end fields seen in legacy12/28. Exact field width remains authored. Preview lighting is cooler/darker than the source; no numerical artistic fidelity score is claimed.
+
+The dedicated `remaster_mauna_elite.py`, `mauna_elite_detail_parts.py` and `verify_mauna_elite.py` refine the existing canonical paths without rewriting the other four model authors or binaries. Sanitize with `prepare_mauna_mobile_publication.py --ship elite-command-craft` before the dedicated verifier. The previous canonical version remains in signed Git history, with no extra model directory. Four report-I/O regressions exercise both detailed author entrypoints and reject source mutation. WorldSize160/six mounts require client calibration; final user acceptance remains separate.
 
 ## Max Combat Craft Type 6
 
@@ -82,4 +84,4 @@ Actual saved-native and independent GLB verification covers declared source-surf
 
 MN2C uses dedicated `remaster_mauna_type6.py`, `mauna_type6_detail_parts.py` and `verify_mauna_type6.py` so the four preceding source authors/exports are unchanged. Sanitize with `prepare_mauna_mobile_publication.py --ship max-combat-craft-type-6`, then run the dedicated verifier with that ship argument. Existing primitive/loft helpers and the shared geometry verifier are hash-bound. Report I/O regression tests ensure reports remain in the model folder and validation cannot silently rewrite source inputs.
 
-The user's new MN3C reference exposes remaining detail work despite its existing technical pass. Its high-detail acceptance gate is therefore withdrawn until that follow-up is actually rendered and reviewed. This is not completion of the whole remaster programme or final user/client acceptance.
+The MN3C construction-detail follow-up is now rendered and reviewed against the user reference and legacy; its source-bound agent high-detail gate can be restored. This does not complete remaining cross-faction programme audits or final user/client acceptance.

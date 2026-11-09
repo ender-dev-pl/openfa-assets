@@ -48,7 +48,7 @@ Additional views: [Rear fittings](../gallery/media/objects/mauna/max-combat-craf
 
 [Blend](../sources/objects/mauna/elite-command-craft/model.blend) · [GLB](../sources/objects/mauna/elite-command-craft/model.glb)
 
-Additional views: [Rear fittings](../gallery/media/objects/mauna/elite-command-craft/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mauna/elite-command-craft/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/mauna/elite-command-craft/heading-04.png) · [Reviewed tandem command-craft concept (attempt3)](../gallery/media/concepts/mauna/elite-command-craft-03.png)
+Additional views: [Rear fittings](../gallery/media/objects/mauna/elite-command-craft/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mauna/elite-command-craft/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/mauna/elite-command-craft/heading-04.png) · [Reviewed tandem command-craft concept (attempt3)](../gallery/media/concepts/mauna/elite-command-craft-03.png) · [User-provided artistic concept](../gallery/media/concepts/mauna/elite-command-craft-user.png)
 
 ## Transportation Craft Type 3
 
