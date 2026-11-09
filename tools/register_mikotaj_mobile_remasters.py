@@ -1,7 +1,9 @@
 """Publish one current canonical study per mobile ship; retain prior evidence."""
 from pathlib import Path
-import hashlib,json
+import hashlib,json,sys
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'sources/tools/blender'))
+from mobile_remaster_evidence import bind_record
 KEYS=['hiero','ylikt-shan','falari-lourn','ruth-strivakh']
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 
@@ -36,9 +38,10 @@ def main():
             for iteration in review['iterations']:
                 row['available_studies'][0]['views'].append(dict(label=iteration.get('gallery_label','Retrospective concept '+str(iteration['number'])),image=iteration['image']))
             if key=='falari-lourn':
-                row['available_studies'][0]['views'].append(dict(label='Four parallel modules — axial GLB',image='gallery/media/objects/mikotaj/falari-lourn/axial-front.png'))
+                row['available_studies'][0]['views'].append(dict(label='Four parallel modules \u2014 axial GLB',image='gallery/media/objects/mikotaj/falari-lourn/axial-front.png'))
                 row['remaster_protocol']['concept_review']='three concepts rejected geometrically; explicit legacy/user geometry verified'
         row['acceptance'].update(reference_views_reviewed=True,silhouette_and_proportions=True,high_detail_structure=True,materials=True,native_and_glb_runtime=True)
+        bind_record(ROOT,row)
         published.append(dict(id=meta['id'],blend=('sources/'+(rel/'model.blend').as_posix()),glb=('sources/'+(rel/'model.glb').as_posix()),blend_sha256=report['binaries']['blend'],glb_sha256=report['binaries']['glb'],size_class=meta['size_class'],world_size_proposal=meta['world_size_proposal'],triangles=meta['triangles'],mesh_batches=4))
     write(inventory,data)
     write(ROOT/'sources/docs/reconstruction/models/mikotaj-mobile-remaster.json',dict(issue=246,models=published,scope='Asset runtime verified, game integration separate; size values are proposals, not recovered dimensions.'))

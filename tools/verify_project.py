@@ -25,6 +25,15 @@ def main():
     verify()
     assert not list((ROOT / 'sources').rglob('*.java')), 'Game decompiler code is external evidence'
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text())
+    # Published mobile gates must use the same source-bound evidence contract as
+    # the standalone inventory audit, without requiring private legacy pixels.
+    sys.path.insert(0,str(ROOT/'sources/tools/blender'))
+    from model_runtime_evidence import verify_runtime_evidence
+    mobile_ids={s['id'] for s in json.loads((ROOT/'sources/docs/reconstruction/models/ship-reference-index.json').read_text())['ships'] if not s['runtime_fixed_scale'] and s['culture']!='terran'}
+    for record in inventory['records']:
+        if record['id'] in mobile_ids and any(record.get('acceptance',{}).values()):
+            assert record.get('reviewed_model') and all(record.get('acceptance_evidence',{}).get(k) for k,v in record['acceptance'].items() if v),(record['id'],'unbound acceptance gate')
+            verify_runtime_evidence(ROOT/'sources',record)
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
     migration=json.loads((ROOT/'sources/docs/reconstruction/models/shipyard-canonical-assets.json').read_text())
     for asset in migration['models']:

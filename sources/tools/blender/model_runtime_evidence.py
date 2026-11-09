@@ -17,6 +17,9 @@ def evidence_digest(path):
 def verify_runtime_evidence(root,record):
     root=Path(root).resolve();model=record['reviewed_model'];proof=model.get('runtime_evidence')
     assert isinstance(proof,dict),'Native/GLB gate requires bound runtime evidence'
+    if proof.get('format')=='mobile-remaster-runtime-v1':
+        from mobile_remaster_evidence import verify_record
+        return verify_record(root,record)
     assert proof.get('scope')=='blender-native-and-imported-glb'
     assert proof.get('text_hash_policy')=='lf-for-json-and-python'
     assert proof.get('game_client_integration') is False,'Do not infer game integration from Blender checks'

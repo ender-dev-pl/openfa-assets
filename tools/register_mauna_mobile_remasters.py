@@ -1,7 +1,9 @@
 """Register verified canonical ships incrementally; keep missing faction work visible."""
 from pathlib import Path
-import hashlib,json
+import hashlib,json,sys
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'sources/tools/blender'))
+from mobile_remaster_evidence import bind_record
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 
 
@@ -33,6 +35,7 @@ def main():
         row['selected_refinement']=dict(stage='mobile-ship-remaster',blend=(rel/'model.blend').as_posix(),glb=(rel/'model.glb').as_posix(),issue=251,integration='One canonical source/export across gameplay, ship/build menus and SciTek. Keep the original catalogue id; WorldSize and equipment mounts require client calibration.')
         row['remaster_protocol']=dict(issue=251,concept_review='reviewed',review=(rel/'concept-review.json').as_posix(),iterations=len(review['iterations']),final_user_acceptance='pending')
         row['acceptance'].update(reference_views_reviewed=True,silhouette_and_proportions=True,high_detail_structure=True,materials=True,native_and_glb_runtime=True)
+        bind_record(ROOT,row)
         published.append(dict(id=meta['id'],blend='sources/'+(rel/'model.blend').as_posix(),glb='sources/'+(rel/'model.glb').as_posix(),blend_sha256=report['binaries']['blend'],glb_sha256=report['binaries']['glb'],triangles=meta['triangles'],mesh_batches=meta['mesh_batches'],material_count=meta['material_count'],size_class=meta['size_class'],world_size_proposal=meta['world_size_proposal']))
         files+=list(folder.glob('*'))+list(media.glob('*.png'))
     write(inventory_path,inventory)
