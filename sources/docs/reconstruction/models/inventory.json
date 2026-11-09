@@ -7391,7 +7391,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/042",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-903",
         "description_records": [
           903
         ]
@@ -7465,6 +7465,126 @@
       ],
       "available_studies": [
         {
+          "stage": "canonical-game-remaster",
+          "blend": "objects/rigellian/nourishment-bank/model.blend",
+          "present": true,
+          "sha256": "ad4d328fda63d9efca0b1a60b68362a7883d681708254c3cff23d9e8c5e95afc",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Concept review (legacy-based; interpreted sleeves)",
+              "image": "gallery/media/concepts/rigellian/ri03-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/rigellian/nourishment-bank/imported-front-quarter.png"
+            }
+          ]
+        }
+      ],
+      "acceptance": {
+        "reference_views_reviewed": false,
+        "silhouette_and_proportions": false,
+        "high_detail_structure": false,
+        "materials": false,
+        "moving_assemblies": false,
+        "attachment_transforms": false,
+        "native_and_glb_runtime": true,
+        "final_visual_acceptance": false
+      },
+      "open_evidence_questions": [],
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB RI03 remaster validation; source-bound evidence in reviewed_model.runtime_evidence.",
+          "objects/rigellian/nourishment-bank/runtime-review.json",
+          "objects/rigellian/nourishment-bank/visual-review.json"
+        ]
+      },
+      "reviewed_model": {
+        "blend": "objects/rigellian/nourishment-bank/model.blend",
+        "sha256": "ad4d328fda63d9efca0b1a60b68362a7883d681708254c3cff23d9e8c5e95afc",
+        "runtime_evidence": {
+          "format": "rigellian-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/rigellian/nourishment-bank",
+          "files": {
+            "gallery/media/concepts/rigellian/ri03-review-1.png": "add7786fa55445a4a7c245698340a47be0337bbb98923ac1cb1eedfe02a54df3",
+            "gallery/media/objects/rigellian/nourishment-bank/imported-front-quarter.png": "78fb043b794153d0b1175edb679caa3427589407128a401c289223aef1fcee95",
+            "gallery/media/objects/rigellian/nourishment-bank/imported-front.png": "e7fd7cefaf1d603b2d6dbdfe34171659b5a26475b3357f5f27c5f17333e33112",
+            "gallery/media/objects/rigellian/nourishment-bank/imported-rear-quarter.png": "81b12d1dc807a0a27bb9c0e2ccb68989d9e08ebdede46d5eb98eb0fc855da440",
+            "gallery/media/objects/rigellian/nourishment-bank/native-front-quarter.png": "7350e63f12ba5d36c069328914eaae8c0b4a67e27dab699b933677a2ff2724ac",
+            "gallery/media/objects/rigellian/nourishment-bank/native-front.png": "f4fcb0c743aa23292c313840840b7ca85dd4e0857901d2c75c5f9fa0dfa3c835",
+            "gallery/media/objects/rigellian/nourishment-bank/native-rear-quarter.png": "8aec719286b91a31e1cf771e6b7979018a4fcae1b8a98b4246b2595bbd9711e3",
+            "sources/docs/assets/reconstruction/rigellian-refined/ri03/model.blend": "1875962a486bc565cb5a0b437a021ffc3e9711b222c6f8edf7bccb076af56f4a",
+            "sources/docs/reconstruction/models/ri03-concept-prompt-1.txt": "0df6a79614ac658cea631c7e1ce458e995c6cdfb202c4254025d356fab53bdff",
+            "sources/objects/rigellian/nourishment-bank/model.blend": "ad4d328fda63d9efca0b1a60b68362a7883d681708254c3cff23d9e8c5e95afc",
+            "sources/objects/rigellian/nourishment-bank/model.glb": "21a147d4da80be44c3a528b7671fb060995d28c0d74bcdf5adc6ad90c5be3bbd",
+            "sources/objects/rigellian/nourishment-bank/model.json": "212258cf6ca205f9c9061cec2f05db7bec6c74d5e0799b14f2f072a3233c8c44",
+            "sources/objects/rigellian/nourishment-bank/runtime-review.json": "81b20c67f694e4fc98bd5050064fc2768ca51e54970f8a474bc76b81b7d7264f",
+            "sources/objects/rigellian/nourishment-bank/visual-review.json": "fffff3fd8836c5e5f87d43ef712a72e7f107b54cc857710a8bce27282e26826d",
+            "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+            "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+            "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+            "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+            "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+            "sources/tools/blender/refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+            "sources/tools/blender/refine_rigellian_nourishment.py": "42b8292dbc06283f929deab01cd21db8fdb647eeb5ed0e7bfab0897054381bdf",
+            "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+            "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+            "sources/tools/blender/remaster_rigellian_nourishment.py": "05baebdccf4cea3f033975066e0168ef44d584a0b6fd0ac927eea6a386d83987",
+            "sources/tools/blender/rigellian_nourishment_parts.py": "f666ef4d05ea1e738522b8d4dd2e9e66379b8cf73237b275f503695e29c25d69",
+            "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "sources/tools/blender/verify_refined_rigellian_nourishment.py": "853e7c94afd296ccc8ff36540562dd1e555852ba25a4ffcb47083c416d0f30e7",
+            "sources/tools/blender/verify_remastered_rigellian_nourishment.py": "1c57b9df20ef7770b5f886f7bee68882180ecc519454b1b466d946d5d4b113f0",
+            "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106"
+          }
+        }
+      },
+      "footprint": [
+        2,
+        2
+      ],
+      "shared_construction_reference": {
+        "index": "docs/reconstruction/models/shared-construction-references.json",
+        "id": "openfa:building/legacy/042",
+        "culture": "rigellian",
+        "footprint": [
+          2,
+          2
+        ],
+        "family": "RIS2",
+        "footprint_class": 2,
+        "stage_limits": {
+          "index": "docs/reconstruction/models/scaffold-stage-limits.json",
+          "stage_ceiling_raw": 14,
+          "frames_per_tier": 2,
+          "max_stage_while_constructing": 14,
+          "max_tiers": 7
+        },
+        "studies": [
+          {
+            "family": "RIS2",
+            "stage": "modular-prototype",
+            "manifest": "docs/assets/reconstruction/scaffolds/rigellian/size-2/model.json",
+            "generator": "tools/blender/build_rigellian_scaffold.py",
+            "verifier": "tools/blender/verify_rigellian_scaffold.py",
+            "reviewer": "tools/blender/review_rigellian_scaffold.py",
+            "sha256": "c125b2ec32e42d73b153785a68bc52fc6167f7f9468acef2bd063efbd531ac82"
+          }
+        ]
+      },
+      "reference_recipe": {
+        "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
+        "global_type": 42
+      },
+      "historical_studies": [
+        {
           "stage": "silhouette-study",
           "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri03/model.blend",
           "present": true,
@@ -7486,28 +7606,7 @@
           "final_visual_acceptance": "not-established"
         }
       ],
-      "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
-        "moving_assemblies": false,
-        "attachment_transforms": false,
-        "native_and_glb_runtime": true,
-        "final_visual_acceptance": false
-      },
-      "open_evidence_questions": [],
-      "acceptance_evidence": {
-        "native_and_glb_runtime": [
-          "Model source commit: https://github.com/ender-dev-pl/ed-openfa-game/commit/d35c2fb7",
-          "Study issue: https://github.com/ender-dev-pl/ed-openfa-game/issues/972",
-          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/hierarchy checks and actual imported rendering passed; tools/blender/verify_rigellian_nourishment.py",
-          "Seven render framing/alpha/native-imported checks passed; tools/blender/review_rigellian_nourishment.py",
-          "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/technical-review.json",
-          "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/render-review.json"
-        ]
-      },
-      "reviewed_model": {
+      "historical_runtime_review": {
         "blend": "docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.blend",
         "sha256": "087f2c6e49745ee6510a9187b9ce6de339fddabcb8a64789115ce68b406d35fd",
         "runtime_evidence": {
@@ -7555,43 +7654,6 @@
           },
           "text_hash_policy": "lf-for-json-and-python"
         }
-      },
-      "footprint": [
-        2,
-        2
-      ],
-      "shared_construction_reference": {
-        "index": "docs/reconstruction/models/shared-construction-references.json",
-        "id": "openfa:building/legacy/042",
-        "culture": "rigellian",
-        "footprint": [
-          2,
-          2
-        ],
-        "family": "RIS2",
-        "footprint_class": 2,
-        "stage_limits": {
-          "index": "docs/reconstruction/models/scaffold-stage-limits.json",
-          "stage_ceiling_raw": 14,
-          "frames_per_tier": 2,
-          "max_stage_while_constructing": 14,
-          "max_tiers": 7
-        },
-        "studies": [
-          {
-            "family": "RIS2",
-            "stage": "modular-prototype",
-            "manifest": "docs/assets/reconstruction/scaffolds/rigellian/size-2/model.json",
-            "generator": "tools/blender/build_rigellian_scaffold.py",
-            "verifier": "tools/blender/verify_rigellian_scaffold.py",
-            "reviewer": "tools/blender/review_rigellian_scaffold.py",
-            "sha256": "c125b2ec32e42d73b153785a68bc52fc6167f7f9468acef2bd063efbd531ac82"
-          }
-        ]
-      },
-      "reference_recipe": {
-        "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
-        "global_type": 42
       }
     },
     {

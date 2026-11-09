@@ -44,23 +44,13 @@
 
 `openfa:building/legacy/042`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Nourishment Bank](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri03/front-quarter.png)
+![Nourishment Bank](../gallery/media/objects/rigellian/nourishment-bank/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri03/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri03/model.glb)
+[Blend](../sources/objects/rigellian/nourishment-bank/model.blend) · [GLB](../sources/objects/rigellian/nourishment-bank/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Nourishment Bank](../gallery/media/docs/assets/reconstruction/buildings/rigellian/nourishment-bank/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/nourishment-bank/model.glb)
-
-**Additional iteration — structural-detail-refinement**
-
-![Nourishment Bank](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri03/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri03/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri03/model.glb)
+Additional views: [Concept review (legacy-based; interpreted sleeves)](../gallery/media/concepts/rigellian/ri03-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/nourishment-bank/imported-front-quarter.png)
 
 ## Community
 

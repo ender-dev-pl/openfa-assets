@@ -25,6 +25,13 @@ def main():
     verify()
     assert not list((ROOT / 'sources').rglob('*.java')), 'Game decompiler code is external evidence'
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text())
+    sys.path.insert(0, str(ROOT / 'sources/tools/blender'))
+    from model_runtime_evidence import verify_runtime_evidence
+    for record in inventory['records']:
+        reviewed = record.get('reviewed_model')
+        proof = reviewed.get('runtime_evidence') if isinstance(reviewed, dict) else None
+        if isinstance(proof, dict) and proof.get('format') == 'rigellian-building-remaster-v1':
+            verify_runtime_evidence(ROOT / 'sources', record)
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
     migration=json.loads((ROOT/'sources/docs/reconstruction/models/shipyard-canonical-assets.json').read_text())
     for asset in migration['models']:
