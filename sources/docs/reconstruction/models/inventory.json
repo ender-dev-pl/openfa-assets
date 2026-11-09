@@ -7970,7 +7970,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/044",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-905",
         "description_records": [
           905
         ]
@@ -8044,6 +8044,139 @@
       ],
       "available_studies": [
         {
+          "stage": "canonical-game-remaster",
+          "blend": "objects/rigellian/health-unit/model.blend",
+          "present": true,
+          "sha256": "9dffaf5551f728938bda8e59a08d49d2951698e3751f1ae9931d1f85c92f26bb",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based concept (interpreted details)",
+              "image": "gallery/media/concepts/rigellian/ri05-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/rigellian/health-unit/imported-front-quarter.png"
+            }
+          ]
+        }
+      ],
+      "acceptance": {
+        "reference_views_reviewed": false,
+        "silhouette_and_proportions": false,
+        "high_detail_structure": false,
+        "materials": false,
+        "moving_assemblies": false,
+        "attachment_transforms": false,
+        "native_and_glb_runtime": true,
+        "final_visual_acceptance": false
+      },
+      "open_evidence_questions": [],
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB source-bound remaster evidence; client and final artistic acceptance remain separate.",
+          "objects/rigellian/health-unit/runtime-review.json",
+          "objects/rigellian/health-unit/visual-review.json"
+        ]
+      },
+      "reviewed_model": {
+        "blend": "objects/rigellian/health-unit/model.blend",
+        "sha256": "9dffaf5551f728938bda8e59a08d49d2951698e3751f1ae9931d1f85c92f26bb",
+        "runtime_evidence": {
+          "format": "rigellian-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/rigellian/health-unit",
+          "files": {
+            "gallery/media/concepts/rigellian/ri05-review-1.png": "019fd27167ef5219e1c3d569117a99680d4ec8f8d7c70ad2065fff340bcdca42",
+            "gallery/media/objects/rigellian/health-unit/imported-front-quarter.png": "d3560184731232d4ece8536e42c73ee52a82bcbd1815bef07286a56f5dcb8276",
+            "gallery/media/objects/rigellian/health-unit/imported-front.png": "5917be03349290568968196a913466678aa106c7b679f83ece0c91c06b2d60d2",
+            "gallery/media/objects/rigellian/health-unit/imported-rear-quarter.png": "e56617c95d4e8957d4018f9c53a6d8e0e12225ed74f7b2a7dc85bbbbd2318945",
+            "gallery/media/objects/rigellian/health-unit/native-front-quarter.png": "a1166ff55608301c08662403333d253ccb4823c844869c070436915b66e8faec",
+            "gallery/media/objects/rigellian/health-unit/native-front.png": "d36635eb602c60721278d165e2f472f805edef1aec4933f9aa22fd4ae0ff703d",
+            "gallery/media/objects/rigellian/health-unit/native-rear-quarter.png": "d4b6e6922fcb80202ebf54b0014cbe769e0891c643785a5fe9d76cfc4bce066a",
+            "sources/docs/assets/reconstruction/rigellian-refined/ri05/model.blend": "64b64a680da6843573d254c0450ab5b50a02147c3aa63d213d17185fe7928162",
+            "sources/docs/reconstruction/models/ri05-concept-prompt-1.txt": "4fd6ef6f63519fba32b627b70dc7e5fad22530105e484a003235b4feb68b421b",
+            "sources/objects/rigellian/health-unit/model.blend": "9dffaf5551f728938bda8e59a08d49d2951698e3751f1ae9931d1f85c92f26bb",
+            "sources/objects/rigellian/health-unit/model.glb": "875af1266ef031b39517ef10ac2f049701e21da0abd2dd5c583ebead5ca89678",
+            "sources/objects/rigellian/health-unit/model.json": "820067ac870976c9c1bd0d78f6d3e6a4ec5596f32cb79c1a91476835f2c78835",
+            "sources/objects/rigellian/health-unit/recipe.json": "9431e9c2e8132fd0c745c9de7f6f991d40c3f1ca27c2cf238dfe3433b7f983f2",
+            "sources/objects/rigellian/health-unit/runtime-review.json": "8c37af5bbac40ecf45962adde5761606c798b5d87600bc1c7d67654e383b3aca",
+            "sources/objects/rigellian/health-unit/visual-review.json": "0a472d79ceaa8e9daf8904e111445265d697f5a3f8473355ba8294b70cf4de33",
+            "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+            "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+            "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+            "sources/tools/blender/build_rigellian_health.py": "e8b2b2365d7344f52d860f578fc3993d99533b9f96972ecabb1b520f5a16c927",
+            "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+            "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+            "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+            "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+            "sources/tools/blender/manufactured_frames.py": "5df4381a72ee6080766e508ac6e665dd053cbd5fa3b3b691760411afc4a389b7",
+            "sources/tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+            "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+            "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+            "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+            "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+            "sources/tools/blender/rigellian_health_parts.py": "d0fae359bef4ab18cfe4a1729a86b6384358034c0c6f47f9babb253571f9ce22",
+            "sources/tools/blender/rigellian_health_remaster_checks.py": "f68c753404a941dbbaa270ed778d31b1d4c0c02862d2c92ca2574cf27171ca0c",
+            "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "sources/tools/blender/verify_remastered_rigellian_static.py": "5704efe280a5e1e01b874562a49ef6ea70617a1f6d515840997a09f56719ee13",
+            "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+            "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+            "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+            "sources/tools/blender/verify_rigellian_health.py": "09c554d8e3fa4a2d529b8391a9d7ba7325a6470f9e8742e1c5e6f8a3ef497f40"
+          }
+        }
+      },
+      "footprint": [
+        2,
+        2
+      ],
+      "shared_construction_reference": {
+        "index": "docs/reconstruction/models/shared-construction-references.json",
+        "id": "openfa:building/legacy/044",
+        "culture": "rigellian",
+        "footprint": [
+          2,
+          2
+        ],
+        "family": "RIS2",
+        "footprint_class": 2,
+        "stage_limits": {
+          "index": "docs/reconstruction/models/scaffold-stage-limits.json",
+          "stage_ceiling_raw": 12,
+          "frames_per_tier": 2,
+          "max_stage_while_constructing": 12,
+          "max_tiers": 6
+        },
+        "studies": [
+          {
+            "family": "RIS2",
+            "stage": "modular-prototype",
+            "manifest": "docs/assets/reconstruction/scaffolds/rigellian/size-2/model.json",
+            "generator": "tools/blender/build_rigellian_scaffold.py",
+            "verifier": "tools/blender/verify_rigellian_scaffold.py",
+            "reviewer": "tools/blender/review_rigellian_scaffold.py",
+            "sha256": "c125b2ec32e42d73b153785a68bc52fc6167f7f9468acef2bd063efbd531ac82"
+          }
+        ]
+      },
+      "reference_recipe": {
+        "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
+        "global_type": 44
+      },
+      "historical_studies": [
+        {
           "stage": "silhouette-study",
           "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri05/model.blend",
           "present": true,
@@ -8065,28 +8198,7 @@
           "final_visual_acceptance": "not-established"
         }
       ],
-      "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
-        "moving_assemblies": false,
-        "attachment_transforms": false,
-        "native_and_glb_runtime": true,
-        "final_visual_acceptance": false
-      },
-      "open_evidence_questions": [],
-      "acceptance_evidence": {
-        "native_and_glb_runtime": [
-          "Model source commit: https://github.com/ender-dev-pl/ed-openfa-game/commit/92b1ab43",
-          "Study issue: https://github.com/ender-dev-pl/ed-openfa-game/issues/974",
-          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/hierarchy checks and actual imported rendering passed; tools/blender/verify_rigellian_health.py",
-          "Seven render framing/alpha/native-imported checks passed; tools/blender/review_rigellian_health.py",
-          "docs/assets/reconstruction/buildings/rigellian/health-unit/technical-review.json",
-          "docs/assets/reconstruction/buildings/rigellian/health-unit/render-review.json"
-        ]
-      },
-      "reviewed_model": {
+      "historical_runtime_review": {
         "blend": "docs/assets/reconstruction/buildings/rigellian/health-unit/model.blend",
         "sha256": "3be26a800dc6b7718fb255ebc4993cdb6112fb6ade06eabb49ba5401e9d5f575",
         "runtime_evidence": {
@@ -8136,43 +8248,6 @@
           },
           "text_hash_policy": "lf-for-json-and-python"
         }
-      },
-      "footprint": [
-        2,
-        2
-      ],
-      "shared_construction_reference": {
-        "index": "docs/reconstruction/models/shared-construction-references.json",
-        "id": "openfa:building/legacy/044",
-        "culture": "rigellian",
-        "footprint": [
-          2,
-          2
-        ],
-        "family": "RIS2",
-        "footprint_class": 2,
-        "stage_limits": {
-          "index": "docs/reconstruction/models/scaffold-stage-limits.json",
-          "stage_ceiling_raw": 12,
-          "frames_per_tier": 2,
-          "max_stage_while_constructing": 12,
-          "max_tiers": 6
-        },
-        "studies": [
-          {
-            "family": "RIS2",
-            "stage": "modular-prototype",
-            "manifest": "docs/assets/reconstruction/scaffolds/rigellian/size-2/model.json",
-            "generator": "tools/blender/build_rigellian_scaffold.py",
-            "verifier": "tools/blender/verify_rigellian_scaffold.py",
-            "reviewer": "tools/blender/review_rigellian_scaffold.py",
-            "sha256": "c125b2ec32e42d73b153785a68bc52fc6167f7f9468acef2bd063efbd531ac82"
-          }
-        ]
-      },
-      "reference_recipe": {
-        "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
-        "global_type": 44
       }
     },
     {

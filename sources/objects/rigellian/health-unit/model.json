@@ -1,0 +1,50 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/044",
+  "name": "Health Unit",
+  "author_sha256": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+  "recipe": "sources/objects/rigellian/health-unit/recipe.json",
+  "recipe_sha256": "9431e9c2e8132fd0c745c9de7f6f991d40c3f1ca27c2cf238dfe3433b7f983f2",
+  "camera_helper_sha256": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+  "source": "sources/docs/assets/reconstruction/rigellian-refined/ri05/model.blend",
+  "source_sha256": "64b64a680da6843573d254c0450ab5b50a02147c3aa63d213d17185fe7928162",
+  "binaries": {
+    "blend": "9dffaf5551f728938bda8e59a08d49d2951698e3751f1ae9931d1f85c92f26bb",
+    "glb": "875af1266ef031b39517ef10ac2f049701e21da0abd2dd5c583ebead5ca89678"
+  },
+  "original_triangles": 50996,
+  "triangles": 47336,
+  "mesh_nodes": 41,
+  "changes": [
+    {
+      "name": "RI05 ground contact rim",
+      "original_triangles": 3072,
+      "triangles": 1780,
+      "bidirectional_vertex_surface_error": 0.0006432310910895467,
+      "accepted": true
+    },
+    {
+      "name": "RI05 lower neck contaminated seam",
+      "original_triangles": 2560,
+      "triangles": 1484,
+      "bidirectional_vertex_surface_error": 0.00040528399404138327,
+      "accepted": true
+    },
+    {
+      "name": "RI05 neck machined collar",
+      "original_triangles": 3072,
+      "triangles": 1780,
+      "bidirectional_vertex_surface_error": 0.00045862028491683304,
+      "accepted": true
+    }
+  ],
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 34,
+  "construction_updates": 36,
+  "scope": "Measured candidate tessellation reduction, existing anatomy/materials/components retained. Requires saved-native and independent GLB verification and actual visual feedback before delivery.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

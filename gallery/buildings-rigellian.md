@@ -68,23 +68,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/044`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Health Unit](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri05/front-quarter.png)
+![Health Unit](../gallery/media/objects/rigellian/health-unit/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri05/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri05/model.glb)
+[Blend](../sources/objects/rigellian/health-unit/model.blend) · [GLB](../sources/objects/rigellian/health-unit/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Health Unit](../gallery/media/docs/assets/reconstruction/buildings/rigellian/health-unit/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/health-unit/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/health-unit/model.glb)
-
-**Additional iteration — crown-refinement-study**
-
-![Health Unit](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri05/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri05/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri05/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri05-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/health-unit/imported-front-quarter.png)
 
 ## Strategic Bunker
 
