@@ -9421,7 +9421,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/049",
-        "review_status": "source-function-reviewed",
+        "review_status": "reviewed-original-record-910",
         "description_records": [
           910
         ]
@@ -9495,24 +9495,21 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri10/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/rigellian/ground-deck/model.blend",
           "present": true,
-          "sha256": "db968b1d72ac9d7661b3195bde284741352ce7562fcfbd001dcb326656c576dd",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "animated-mechanism-study",
-          "blend": "docs/assets/reconstruction/buildings/rigellian/ground-deck/model.blend",
-          "present": true,
-          "sha256": "6f867278830e5a7f96cb6cf57c5e8c8a395dcc909dce5a99b7285f6eade1ad3f",
+          "sha256": "ef209f3b4063c7faf2e6e45b6d7df0b08e0ecda122ae7939d772e1a7429d687b",
           "final_visual_acceptance": "not-established",
-          "state_exports": {
-            "index": "docs/assets/reconstruction/buildings/rigellian/ground-deck/states/state-exports.json",
-            "sha256": "2f0235b14debbe6b29b2b6fc705e7489f9a0f57c1d4dca2a03371a00dbc6f9f9",
-            "generator": "tools/blender/export_rigellian_ground_deck_states.py",
-            "reviewer": "tools/blender/review_rigellian_ground_deck_states.py"
-          }
+          "views": [
+            {
+              "label": "Legacy-based concept (interpreted details)",
+              "image": "gallery/media/concepts/rigellian/ri10-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/rigellian/ground-deck/imported-front-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -9522,7 +9519,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -9552,6 +9549,136 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 49
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri10/model.blend",
+          "present": true,
+          "sha256": "db968b1d72ac9d7661b3195bde284741352ce7562fcfbd001dcb326656c576dd",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "animated-mechanism-study",
+          "blend": "docs/assets/reconstruction/buildings/rigellian/ground-deck/model.blend",
+          "present": true,
+          "sha256": "6f867278830e5a7f96cb6cf57c5e8c8a395dcc909dce5a99b7285f6eade1ad3f",
+          "final_visual_acceptance": "not-established",
+          "state_exports": {
+            "index": "docs/assets/reconstruction/buildings/rigellian/ground-deck/states/state-exports.json",
+            "sha256": "2f0235b14debbe6b29b2b6fc705e7489f9a0f57c1d4dca2a03371a00dbc6f9f9",
+            "generator": "tools/blender/export_rigellian_ground_deck_states.py",
+            "reviewer": "tools/blender/review_rigellian_ground_deck_states.py"
+          }
+        }
+      ],
+      "historical_runtime_review": null,
+      "reviewed_model": {
+        "blend": "objects/rigellian/ground-deck/model.blend",
+        "sha256": "ef209f3b4063c7faf2e6e45b6d7df0b08e0ecda122ae7939d772e1a7429d687b",
+        "runtime_evidence": {
+          "format": "rigellian-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/rigellian/ground-deck",
+          "files": {
+            "gallery/media/concepts/rigellian/ri10-review-1.png": "0bc5f42495f0c6fb20d8affacc8ec7cee404194807c0c7d2f3c9727060bbe119",
+            "gallery/media/objects/rigellian/ground-deck/animation-00.webm": "3c99f3d0d821b73d5a8715f0b8963cfdf1a080e9fe7fb7d5939f5fbc33dcdac6",
+            "gallery/media/objects/rigellian/ground-deck/animation-01.webm": "628e1ae4ebc9c361794e6339c241a13b8ed80cdab39dd9205dfaecc3ed0c8c9c",
+            "gallery/media/objects/rigellian/ground-deck/animation-previews.json": "1f5e601edc9ae6c9ff17b35a238800df91d01fa7e8dd221352d82217de2ef4bf",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-02.png": "7cad5931257d450f8c3b997228e63e299268310d377779a08018dc90b373bb2a",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-03.png": "f8f04ada6798fb806adb659368812f45495bdc9fae9e0dedf70fbdd9f721b6c0",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-04.png": "4c4662d26436b65efd621efe9915985a9cd3456e2c1cda5fc84c08d187d80b43",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-05.png": "8c04ec6cecbd426b957d0f95aea5b5c3d6a7384a7dd9a14e187b7b3321530235",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-06.png": "fc9db9c93074f89293eb40de3ca7931facfcfa9f4dfbca2483cb93983448914c",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-07.png": "e228baf50c3ed1a8b7e1fbadc382b70bfe8ea152146533525cf7603d5f9ce207",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-08.png": "17b45c61d6d4e9dc646ddc7afb7bbcefa1446a249f94af25d68ee13971d1ba20",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-09.png": "a083e2737d22f4fabe08a1b32220698502a6b9b27dc10ee7481fe8b7cb027b11",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-10.png": "dd8fc5c0ab840007abc0cbc0f2650e2f824045859fa0c7052ba2fdb639c68629",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-11.png": "c35f769b7913c34215115fef71a377b49ae4b80496fd33a3a152883f204cc076",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-12.png": "d32b5a93fef5284ca86013ed3625931a25cfe2b455c5e4318bc83ff1522f9008",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-13.png": "109754baddc6fd4a29b5169c0e54845f9bb76da94b90ef77d240b76224b3c92a",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-14.png": "578526e4b97f48d524d0986d8ce484807b4827455a23cacdb032a6a5d5b3086b",
+            "gallery/media/objects/rigellian/ground-deck/imported-descriptor-15.png": "5daaafb48f4eb22e919f615d505b820a300a535e3196c59031e794722385a79a",
+            "gallery/media/objects/rigellian/ground-deck/imported-front-quarter.png": "fc82ddd93f44f64b4ed11b1b041e514963a346ec0dd10b0850ff25ff607b80ad",
+            "gallery/media/objects/rigellian/ground-deck/imported-front.png": "7cad5931257d450f8c3b997228e63e299268310d377779a08018dc90b373bb2a",
+            "gallery/media/objects/rigellian/ground-deck/imported-half-open.png": "1c9a20ea8c063adb41e2f4aef89ec40dff6fe04cf5cc3e11c15b7ad90fdb038b",
+            "gallery/media/objects/rigellian/ground-deck/imported-open-top.png": "7efac5db7421727238eff6803c5e95481441a65d8e5cd27ec4fa5287f7ff53fa",
+            "gallery/media/objects/rigellian/ground-deck/imported-open.png": "5daaafb48f4eb22e919f615d505b820a300a535e3196c59031e794722385a79a",
+            "gallery/media/objects/rigellian/ground-deck/imported-rear-quarter.png": "7437a4417232fcaef5bcea8161ad43693684bb1d45e2eb1c29ad63e31341d528",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-02.png": "ab66f873bcfce79cc8efddcdff1fac83949ee7ffc5b28f9d361ec8070eced147",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-03.png": "de2b3c239a4ec7453850480870772fc8aa032288c6dbdb0421334b7ed38c849f",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-04.png": "a41bbeca68c5f8ad116db926a118f8d85f18fcc820f0f689716dfc84babd1eed",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-05.png": "5a53dd14529fe22e1a62333d011acbada7e7f0bcd8111ed9a5bfa638513e335e",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-06.png": "1704355d63526dfbbdca4f7043c5b715baefb8921bc638132078735a546b677a",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-07.png": "1e3db5292dc8e6784d64de8221d980798faadc561d50530c56c6b17033e02573",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-08.png": "3124a601db10ecc700e8b2a0f8131f5ca31821c8f939f82dbc85ba43c83762a6",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-09.png": "37f1c7748be66468ee12706f3dd6f574e2adb1fd07ba5e461b5032b3935571b1",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-10.png": "c018ba932c8c40e25898bb8276946ca3d0210a00c027d67a80d1664fe285f2c4",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-11.png": "63fa8d7644eaeb9c5aab123119cf3c9cc85474e44fe8d0f7975a3c691e57f257",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-12.png": "287be7b8e1eae2f5a06f45fd43b4405a596f52ae03d165d9dba92722b75da44f",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-13.png": "02b0663f354f59c9172613a847345da5c31d5a17e0fddeb6ffd14e4503494341",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-14.png": "9b7e0eb5791779d96c870191a87b2aaec7c8919eee96736026bce3382245154e",
+            "gallery/media/objects/rigellian/ground-deck/native-descriptor-15.png": "ee5be8b5c57bf3852e7bb9c9f18b226b5555fd4b4d850111d9efb031d4ffc478",
+            "gallery/media/objects/rigellian/ground-deck/native-front-quarter.png": "63583b593768e22bcf9bbc3cdcefc1bb7c560932e523ffbacf5b8d9b4a7dcdc3",
+            "gallery/media/objects/rigellian/ground-deck/native-front.png": "ab66f873bcfce79cc8efddcdff1fac83949ee7ffc5b28f9d361ec8070eced147",
+            "gallery/media/objects/rigellian/ground-deck/native-half-open.png": "b36c1e7e0861de6d1ff795b10ab900b37bd3414ec6f854ffe598f788af38010f",
+            "gallery/media/objects/rigellian/ground-deck/native-open-top.png": "64a508e7622eac3b33dc9ff44e589820528e46e9639b026a12206179426a7455",
+            "gallery/media/objects/rigellian/ground-deck/native-open.png": "ee5be8b5c57bf3852e7bb9c9f18b226b5555fd4b4d850111d9efb031d4ffc478",
+            "gallery/media/objects/rigellian/ground-deck/native-rear-quarter.png": "67f10c5ffc10d9f2381aded35dd0a059e0d646299ae1a7d9952c1da72a5048e2",
+            "sources/docs/assets/reconstruction/buildings/rigellian/ground-deck/model.blend": "6f867278830e5a7f96cb6cf57c5e8c8a395dcc909dce5a99b7285f6eade1ad3f",
+            "sources/docs/reconstruction/models/ri10-concept-prompt-1.txt": "bbe9f14fddae8e60c8a0086075aea68947e660fb4ad66f3ba8f5e36e1e238bff",
+            "sources/docs/reconstruction/models/rigellian-ground-deck-mechanism.json": "54885fae1796c6c4b2d0cf7b631bf6b09e03e49c079d4ec89349b01679815fab",
+            "sources/objects/rigellian/ground-deck/model.blend": "ef209f3b4063c7faf2e6e45b6d7df0b08e0ecda122ae7939d772e1a7429d687b",
+            "sources/objects/rigellian/ground-deck/model.glb": "ee37a98563105d4fd1596ae6805a8aa0257688d2c0e5f1190a6bb9fbc171e51e",
+            "sources/objects/rigellian/ground-deck/model.json": "59177cc272091edc3c7b6a5209ce3a059c7876c7e2a4b2e804bd7e42f55f9c3c",
+            "sources/objects/rigellian/ground-deck/recipe.json": "4b49ac631fa076b123b25a0a0c50c6e8042382336ac56ce1bf15076d68a43e51",
+            "sources/objects/rigellian/ground-deck/runtime-review.json": "e1fff89c02f510d6f56fdcdc2281ae0b1b86236a8bc0b2049448681b50bee4c7",
+            "sources/objects/rigellian/ground-deck/visual-review.json": "d25895769e376fe6a5871f4f00c5c7fc366b943b0a04f554242b67b46b98102e",
+            "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+            "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+            "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+            "sources/tools/blender/build_rigellian_ground_deck.py": "006a50fee58014d7f6864bcc9f2d1fa4da13318fb46275d081b69b6cf5f7e638",
+            "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+            "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+            "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "sources/tools/blender/export_rigellian_ground_deck_states.py": "343c95c5c095fae2044cd427bdb5c49c1448efbc2e02da28972d94c9812a934b",
+            "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+            "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+            "sources/tools/blender/manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+            "sources/tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+            "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+            "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+            "sources/tools/blender/remaster_rigellian_ground_deck.py": "42228e37e9c50a21b06f86c45a22912899c210a65ec3f6d50600427ec3d8e6f7",
+            "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+            "sources/tools/blender/render_rigellian_ground_deck_animations.py": "7cea0212eb429650f146515c08e8ae4b1a9ffcf1641e9db0a019ef21d666db52",
+            "sources/tools/blender/rigellian_construction_parts.py": "e74efe8e46618aa8cb0beecc11411b070741023d2162da41f4ddc9e9ce0ca976",
+            "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+            "sources/tools/blender/rigellian_ground_deck_parts.py": "a8f5b08e2e31b3ba95871b0fe747ceb0272886fccf79c7e4162f2c8056bad565",
+            "sources/tools/blender/rigellian_shaft_preview.py": "be6ce6bc28a029a253663776e92545d56152b9ba2572852d3398e7d0202adf71",
+            "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "sources/tools/blender/verify_remastered_rigellian_ground_deck.py": "837ff658b0218c1f9fa88819a6f76a4795a5bc90840c959c96c65e1248a8136b",
+            "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+            "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+            "sources/tools/blender/verify_rigellian_ground_deck.py": "4a75e79655672e21b1d10eb9de944731e38df3f5d3cf59f86ad865d29c6b3f87"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB source-bound remaster evidence; client and final artistic acceptance remain separate.",
+          "objects/rigellian/ground-deck/runtime-review.json",
+          "objects/rigellian/ground-deck/visual-review.json"
+        ]
       }
     },
     {

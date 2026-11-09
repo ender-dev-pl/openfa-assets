@@ -23,7 +23,9 @@ class Evidence(unittest.TestCase):
             proof = reviewed.get('runtime_evidence') if isinstance(reviewed, dict) else None
             if isinstance(proof, dict) and proof.get('format') == 'rigellian-building-remaster-v1':
                 result = verify_runtime_evidence(ROOT / 'sources', record)
-                self.assertEqual(result['views'], 6)
+                folder = ROOT / 'sources' / Path(record['reviewed_model']['blend']).parent
+                metadata = json.loads((folder / 'model.json').read_bytes())
+                self.assertEqual(result['views'], 40 if metadata.get('animation') else 6)
                 self.assertFalse(result['game_client_integration'])
                 checked.append(record['id'])
         self.assertIn('openfa:building/legacy/042', checked)
@@ -44,6 +46,30 @@ class Evidence(unittest.TestCase):
         self.record['reviewed_model']['runtime_evidence']['game_client_integration'] = True
         with self.assertRaises(AssertionError):
             verify_runtime_evidence(ROOT / 'sources', self.record)
+
+    def test_animated_contract_rejects_missing_state_or_weakened_sweep(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_animation_contract
+        folder = ROOT / 'sources/objects/rigellian/ground-deck'
+        metadata = json.loads((folder / 'model.json').read_bytes())
+        report = json.loads((folder / 'runtime-review.json').read_bytes())
+        raw = (folder / 'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I', raw, 12)[0]])
+        verify_animation_contract(metadata, report, document)
+        wrong = deepcopy(metadata)
+        wrong['states'].pop()
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(wrong, report, document)
+        wrong = deepcopy(report)
+        wrong['animation_validation']['cycle_integer_frames'] = 60
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(metadata, wrong, document)
+        wrong = deepcopy(document)
+        for clip in wrong['animations']:
+            if clip['name'] == metadata['animation']['descriptor_clip']:
+                clip['samplers'][0]['interpolation'] = 'LINEAR'
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(metadata, report, wrong)
 
 
 if __name__ == '__main__':

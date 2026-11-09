@@ -1,6 +1,7 @@
 """Validate canonical building evidence without conflating it with client acceptance."""
 import hashlib
 import json
+import struct
 from pathlib import Path
 
 
@@ -9,6 +10,33 @@ def digest(path):
     if path.suffix in {'.json', '.py'}:
         raw = raw.replace(b'\r\n', b'\n')
     return hashlib.sha256(raw).hexdigest()
+
+
+def verify_animation_contract(metadata, report, document):
+    animation = metadata['animation']
+    expected = {animation['cycle_clip'], animation['descriptor_clip']}
+    assert set(report['clips']) == expected
+    clips = {clip['name']: clip for clip in document['animations']}
+    assert set(clips) == expected and len(document['meshes']) == report['meshes']
+    for name, clip in clips.items():
+        assert len(clip['channels']) == 6
+        assert {document['nodes'][c['target']['node']]['name'] for c in clip['channels']} == set(animation['target_nodes'])
+        assert all(c['target']['path'] == 'translation' for c in clip['channels'])
+        if name == animation['descriptor_clip']:
+            assert all(s['interpolation'] == 'STEP' for s in clip['samplers'])
+    assert [s['descriptor'] for s in metadata['states']] == report['descriptor_domain'] == list(range(2,18))
+    assert all(s['clip'] == animation['descriptor_clip'] and s['frame'] == s['descriptor'] for s in metadata['states'])
+    assert all(abs(s['time_seconds'] - s['frame']/animation['fps']) < 1e-9 for s in metadata['states'])
+    validation = report['animation_validation']
+    assert validation['cycle_integer_frames'] == 61 and validation['descriptor_poses'] == 16
+    assert validation['channels_per_clip'] == 6
+    assert validation['translation_only'] is True and validation['descriptor_step'] is True
+    assert validation['duplicate_state_meshes'] is False
+    assert validation['continuous_sweep_proven'] is False and validation['descriptor17_composition_verified'] is False
+    assert report['maximum_animation_matrix_error'] < .00003
+    for key in ['native', 'imported']:
+        assert report[key]['sweep']['sampled_frames'] == list(range(1,62))
+        assert not report[key]['sweep']['surface_intersections']
 
 
 def verify(root, record):
@@ -46,6 +74,12 @@ def verify(root, record):
     assert report['native']['positive_closed_meshes'] == report['imported']['positive_closed_meshes'] == report['meshes']
     assert report['maximum_bidirectional_surface_error'] < 1e-5
     assert report['final_artistic_acceptance'] is False and report['game_client_integration'] is False
+    if metadata.get('animation'):
+        mechanism = metadata['mechanism_evidence']
+        assert mechanism in files and hashlib.sha256(path(mechanism).read_bytes()).hexdigest() == metadata['mechanism_sha256']
+        raw = path((folder / 'model.glb').as_posix()).read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I', raw, 12)[0]])
+        verify_animation_contract(metadata, report, document)
     for helper, expected in report['helpers'].items():
         assert helper in files
         assert hashlib.sha256(path(helper).read_bytes()).hexdigest() == expected

@@ -357,12 +357,281 @@
       "state_contract": "Static RI09; catalogue reveal/highlight is presentation. Ship construction role is established; exact equipment mechanics, hidden connections and construction cycle remain interpretations.",
       "reuse": "One current model across gameplay, build menu and SciTek; previous studies are history.",
       "limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "id": "openfa:building/legacy/049",
+      "key": "RI10",
+      "blend": "sources/objects/rigellian/ground-deck/model.blend",
+      "glb": "sources/objects/rigellian/ground-deck/model.glb",
+      "binaries": {
+        "blend": "ef209f3b4063c7faf2e6e45b6d7df0b08e0ecda122ae7939d772e1a7429d687b",
+        "glb": "ee37a98563105d4fd1596ae6805a8aa0257688d2c0e5f1190a6bb9fbc171e51e"
+      },
+      "triangles": 13170,
+      "meshes": 45,
+      "materials": 7,
+      "embedded_images": 4,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 26,
+      "construction_updates": 18,
+      "root": "PlacementRoot",
+      "root_matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "native_world_bounds": [
+        -1.350000023841858,
+        -1.1549999713897705,
+        -2.0199999809265137,
+        1.350000023841858,
+        1.0199999809265137,
+        1.2900835275650024
+      ],
+      "axes": "Blender -Y forward; +Z dorsal",
+      "state_contract": "Animated deep hangar-access shaft. GroundDeckCoverCycle is inferred preview; GroundDeckDescriptorStates maps original descriptors to rigid cover poses without duplicate model payloads. Empty cover overlays do not remove static housing; descriptor17 mixed shadow composition remains unverified.",
+      "reuse": "One current model across gameplay, build menu and SciTek; previous studies are history.",
+      "limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate.",
+      "animation": {
+        "cycle_clip": "GroundDeckCoverCycle",
+        "cycle_frames": [
+          1,
+          61
+        ],
+        "closed_frame": 1,
+        "open_frame": 31,
+        "descriptor_clip": "GroundDeckDescriptorStates",
+        "descriptor_frames": [
+          2,
+          17
+        ],
+        "fps": 24,
+        "scale_animated": false,
+        "target_nodes": [
+          "CoverLeft",
+          "CoverRight",
+          "CoverLeftInner",
+          "CoverLeftOuter",
+          "CoverRightInner",
+          "CoverRightOuter"
+        ],
+        "interpolation": "Descriptor controls are discrete STEP; cycle retains original inferred timing."
+      },
+      "state_mapping": [
+        {
+          "descriptor": 2,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 2,
+          "fractions": [
+            0.0,
+            0.0
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.08333333333333333
+        },
+        {
+          "descriptor": 3,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 3,
+          "fractions": [
+            0.0680194805194805,
+            0.13603896103896107
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.125
+        },
+        {
+          "descriptor": 4,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 4,
+          "fractions": [
+            0.13603896103896107,
+            0.20405844155844158
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.16666666666666666
+        },
+        {
+          "descriptor": 5,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 5,
+          "fractions": [
+            0.20405844155844158,
+            0.2720779220779221
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.20833333333333334
+        },
+        {
+          "descriptor": 6,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 6,
+          "fractions": [
+            0.2720779220779221,
+            0.34009740259740256
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.25
+        },
+        {
+          "descriptor": 7,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 7,
+          "fractions": [
+            0.34009740259740256,
+            0.40811688311688316
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.2916666666666667
+        },
+        {
+          "descriptor": 8,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 8,
+          "fractions": [
+            0.40811688311688316,
+            0.47613636363636364
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.3333333333333333
+        },
+        {
+          "descriptor": 9,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 9,
+          "fractions": [
+            0.47613636363636364,
+            0.5441558441558442
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.375
+        },
+        {
+          "descriptor": 10,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 10,
+          "fractions": [
+            0.5441558441558442,
+            0.5441558441558442
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.4166666666666667
+        },
+        {
+          "descriptor": 11,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 11,
+          "fractions": [
+            0.6121753246753247,
+            0.6801948051948052
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.4583333333333333
+        },
+        {
+          "descriptor": 12,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 12,
+          "fractions": [
+            0.6801948051948052,
+            0.7482142857142857
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.5
+        },
+        {
+          "descriptor": 13,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 13,
+          "fractions": [
+            0.7482142857142857,
+            0.8162337662337663
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.5416666666666666
+        },
+        {
+          "descriptor": 14,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 14,
+          "fractions": [
+            0.8842532467532468,
+            0.8842532467532468
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.5833333333333334
+        },
+        {
+          "descriptor": 15,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 15,
+          "fractions": [
+            1,
+            1
+          ],
+          "cover_overlay_empty": true,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.625
+        },
+        {
+          "descriptor": 16,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 16,
+          "fractions": [
+            1,
+            1
+          ],
+          "cover_overlay_empty": true,
+          "lower_structure_shadow_composition_verified": null,
+          "time_seconds": 0.6666666666666666
+        },
+        {
+          "descriptor": 17,
+          "clip": "GroundDeckDescriptorStates",
+          "frame": 17,
+          "fractions": [
+            1,
+            1
+          ],
+          "cover_overlay_empty": false,
+          "lower_structure_shadow_composition_verified": false,
+          "time_seconds": 0.7083333333333334
+        }
+      ]
     }
   ],
   "pending": [
     "RI01",
     "RI02",
-    "RI10",
     "RI11",
     "RI12",
     "RI13",

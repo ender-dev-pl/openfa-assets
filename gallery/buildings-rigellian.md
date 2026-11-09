@@ -128,19 +128,17 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/049`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Ground Deck](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri10/front-quarter.png)
+![Ground Deck](../gallery/media/objects/rigellian/ground-deck/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri10/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri10/model.glb)
+[Blend](../sources/objects/rigellian/ground-deck/model.blend) · [GLB](../sources/objects/rigellian/ground-deck/model.glb)
 
-**Additional iteration — animated-mechanism-study**
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri10-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/ground-deck/imported-front-quarter.png)
 
-![Ground Deck](../gallery/media/docs/assets/reconstruction/buildings/rigellian/ground-deck/front-quarter.png)
+[Play animation: GroundDeckCoverCycle](../gallery/media/objects/rigellian/ground-deck/animation-00.webm)
 
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/ground-deck/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/ground-deck/model.glb)
-
-[Play animation: GroundDeckCoverCycle](../gallery/media/docs/assets/reconstruction/buildings/rigellian/ground-deck/animation-00.webm)
+[Play animation: GroundDeckDescriptorStates](../gallery/media/objects/rigellian/ground-deck/animation-01.webm)
 
 ## Probe Launch
 

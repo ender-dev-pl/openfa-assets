@@ -2,7 +2,8 @@
 import json
 from pathlib import Path
 import struct
-import tempfile
+import shutil
+import uuid
 import unittest
 from unittest.mock import patch
 
@@ -11,8 +12,12 @@ import gallery_animation_assets as assets
 
 class GalleryAnimationsTests(unittest.TestCase):
     def setUp(self):
-        self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
-        self.root=Path(self.temp.name);self.patch=patch.object(assets,'ROOT',self.root);self.patch.start();self.addCleanup(self.patch.stop)
+        parent = Path(__file__).resolve().parents[1] / 'artifacts'
+        self.root = parent / ('gallery-animation-test-' + uuid.uuid4().hex)
+        assert self.root.resolve().is_relative_to(parent.resolve())
+        self.root.mkdir(parents=True)
+        self.addCleanup(shutil.rmtree, self.root)
+        self.patch=patch.object(assets,'ROOT',self.root);self.patch.start();self.addCleanup(self.patch.stop)
         self.blend=self.root/'sources/model.blend';self.blend.parent.mkdir();self.blend.write_bytes(b'editable native source')
         self.glb=self.root/'sources/model.glb';self.write_glb()
         self.renderer=self.root/'sources/tools/blender/render_gallery_animations.py';self.renderer.parent.mkdir(parents=True);self.renderer.write_text('renderer')
@@ -64,6 +69,21 @@ class GalleryAnimationsTests(unittest.TestCase):
     def test_static_glb_does_not_gain_invented_animation(self):
         self.write_glb(animated=False)
         self.assertEqual([],self.previews())
+
+    def test_bound_case_renderer_preserves_old_renderer_contract(self):
+        custom = self.renderer.with_name('render_rigellian_ground_deck_animations.py')
+        custom.write_text('case-specific NLA time mapping')
+        self.manifest['renderer'] = custom.relative_to(self.root).as_posix()
+        self.manifest['renderer_sha256'] = assets.sha(custom)
+        self.save()
+        self.assertEqual(len(self.previews()), 1)
+        custom.write_text('changed mapping')
+        with self.assertRaises(AssertionError):
+            self.previews()
+        self.manifest['renderer'] = 'sources/model.blend'
+        self.save()
+        with self.assertRaises(AssertionError):
+            self.previews()
 
 
 if __name__=='__main__':unittest.main()

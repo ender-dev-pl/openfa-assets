@@ -50,6 +50,14 @@ def main(folder):
     paths.update(ROOT / name for name in [meta['source'], meta['recipe'], concept['image'], concept['prompt']])
     paths.update(ROOT / name for name in runtime['helpers'])
     paths.update(media / name for name in runtime['renders'])
+    if meta.get('mechanism_evidence'):
+        paths.add(ROOT / meta['mechanism_evidence'])
+    preview_index = media / 'animation-previews.json'
+    if preview_index.exists():
+        previews = json.loads(preview_index.read_bytes())
+        paths.add(preview_index)
+        paths.add(ROOT / previews.get('renderer', 'sources/tools/blender/render_gallery_animations.py'))
+        paths.update(ROOT / clip['video'] for clip in previews['clips'])
     proof = dict(format='rigellian-building-remaster-v1', scope='blender-native-and-imported-glb',
                  game_client_integration=False, render_directory=recipe['media'],
                  files={p.relative_to(ROOT).as_posix(): digest(p) for p in sorted(paths)})
@@ -58,7 +66,7 @@ def main(folder):
     functional_record = visual['legacy']['functional_record']
     assert functional_record in record['functional_reference']['description_records']
     record['functional_reference']['review_status'] = 'reviewed-original-record-' + str(functional_record)
-    record['acceptance_evidence']['native_and_glb_runtime'] = [
+    record.setdefault('acceptance_evidence', {})['native_and_glb_runtime'] = [
         'Actual saved-native/independent GLB source-bound remaster evidence; client and final artistic acceptance remain separate.',
         (folder / 'runtime-review.json').relative_to(ROOT / 'sources').as_posix(),
         (folder / 'visual-review.json').relative_to(ROOT / 'sources').as_posix()]
@@ -79,6 +87,10 @@ def main(folder):
         reuse='One current model across gameplay, build menu and SciTek; previous studies are history.',
         limits='Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate.'))
     delivery['models'].sort(key=lambda row: row['key'])
+    if meta.get('animation'):
+        current = next(row for row in delivery['models'] if row['id'] == meta['id'])
+        current['animation'] = meta['animation']
+        current['state_mapping'] = meta['states']
     delivery['pending'] = [key for key in delivery['pending'] if key != recipe['key']]
     write_json(delivery_path, delivery)
     print('RIGELLIAN_CANONICAL_REGISTERED', recipe['key'], len(proof['files']))
