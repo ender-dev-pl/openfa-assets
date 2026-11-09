@@ -50,11 +50,13 @@ Additional views: [Rear fittings](../gallery/media/objects/mauna/combat-craft-ty
 
 `openfa:ship/mauna/transportation-craft-type-3`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Transportation Craft Type 3](../gallery/media/docs/assets/reconstruction/ships/mauna/transportation-craft-type-3/front-quarter.png)
+![Transportation Craft Type 3](../gallery/media/objects/mauna/transportation-craft-type-3/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/mauna/transportation-craft-type-3/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mauna/transportation-craft-type-3/model.glb)
+[Blend](../sources/objects/mauna/transportation-craft-type-3/model.blend) · [GLB](../sources/objects/mauna/transportation-craft-type-3/model.glb)
+
+Additional views: [Rear fittings](../gallery/media/objects/mauna/transportation-craft-type-3/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mauna/transportation-craft-type-3/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/mauna/transportation-craft-type-3/heading-04.png) · [Reviewed three-section cargo assembly concept1](../gallery/media/concepts/mauna/transportation-craft-type-3-01.png)
 
 ## Orbital Construction Area
 

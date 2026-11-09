@@ -44,7 +44,7 @@ def main(key):
     dents=[]
     for dent in meta.get('protected_dents',[]):
         if 'undented_point' in dent:
-            target=author.transformed_reference_point(dent['part'],Vector(dent['undented_point']),meta);outward=Vector(dent['outward']).normalized()
+            target=author.transformed_reference_point(dent['part'],Vector(dent['undented_point']),meta);outward=author.transformed_reference_direction(dent['part'],dent['outward'],meta)
             p,normal,index,distance=trees[dent['part']].ray_cast(target+outward*3,-outward,6);assert p is not None
             depth=(target-p).dot(outward)
         else:

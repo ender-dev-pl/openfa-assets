@@ -30,6 +30,6 @@ Destructor, Terminator, Transporter, Fleet Battleship, Command Cruiser and Spy S
 
 ## Remaining programme work
 
-This audit does not complete the combined audit-and-repair milestone in #248. Keep that checkbox open until the remaining source-specific protocol work and canonical cross-branch integration are verified. Mauna MN2C/MN3C/MN4C also remain open. Two MN2C requests and one MN3C request returned ImageGen output moderation errors without an inspectable image; no concept completion or corresponding new model is claimed for them. Exact failed-request history remains private and is summarized technically in the issue.
+This audit does not complete the combined audit-and-repair milestone in #248. Keep that checkbox open until the remaining source-specific protocol work and canonical cross-branch integration are verified. At the audit snapshot, Mauna MN2C/MN3C/MN4C were also open; current coverage is tracked separately in `mauna-mobile-remaster.json`. Two MN2C requests and one MN3C request returned ImageGen output moderation errors without an inspectable image; no concept completion or corresponding new model is claimed for them. Exact failed-request history remains private and is summarized technically in the issue.
 
 No model, reference raster, material or completed spacedock changed during this audit. No new checkout, build or archive was created. Only small evidence documents were added.

@@ -31821,7 +31821,7 @@
           "stage": "mobile-ship-remaster",
           "blend": "objects/mauna/surveillance-craft-type-5/model.blend",
           "present": true,
-          "sha256": "3058d298c298ac32a237948dd0d46d6ccc0417ef6115b049cb8d4f3761faf1d7",
+          "sha256": "d98ec600ad7a5977cf6923859681e75113ebe65697e3f9e95972387d2c2b565b",
           "views": [
             {
               "label": "Rear fittings",
@@ -31952,7 +31952,7 @@
           "stage": "mobile-ship-remaster",
           "blend": "objects/mauna/combat-craft-type-1-5/model.blend",
           "present": true,
-          "sha256": "9ae4d3c94a38f5166b0cc7f96e48ee0f3c3d3c1be47858d37274610b40bfba40",
+          "sha256": "6534de549ac16a574e26e86b7aeb3fee59adf8cd5737fb65af275ffb89a573cd",
           "views": [
             {
               "label": "Rear fittings",
@@ -32250,21 +32250,39 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/mauna/transportation-craft-type-3/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/mauna/transportation-craft-type-3/model.blend",
           "present": true,
-          "sha256": "6cb9fb6aa9c830cfb77dd79e19b0d08c3e7a107a8fc4136786b00cec3aa6d19f",
-          "final_visual_acceptance": "not-established"
+          "sha256": "76e4853e7004780a9b6cda50fc9ff0787fccc63262baa8913931eedc1117c7a6",
+          "views": [
+            {
+              "label": "Rear fittings",
+              "image": "gallery/media/objects/mauna/transportation-craft-type-3/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/mauna/transportation-craft-type-3/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 comparison",
+              "image": "gallery/media/objects/mauna/transportation-craft-type-3/heading-04.png"
+            },
+            {
+              "label": "Reviewed three-section cargo assembly concept1",
+              "image": "gallery/media/concepts/mauna/transportation-craft-type-3-01.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent legacy/concept/imported-render review complete; final user acceptance and client calibration separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -32308,6 +32326,30 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/mauna/transportation-craft-type-3/model.blend",
+          "present": true,
+          "sha256": "6cb9fb6aa9c830cfb77dd79e19b0d08c3e7a107a8fc4136786b00cec3aa6d19f",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/mauna/transportation-craft-type-3/model.blend",
+        "glb": "objects/mauna/transportation-craft-type-3/model.glb",
+        "issue": 251,
+        "integration": "One canonical source/export across gameplay, ship/build menus and SciTek. Keep the original catalogue id; WorldSize and equipment mounts require client calibration."
+      },
+      "remaster_protocol": {
+        "issue": 251,
+        "concept_review": "reviewed",
+        "review": "objects/mauna/transportation-craft-type-3/concept-review.json",
+        "iterations": 1,
+        "final_user_acceptance": "pending"
       }
     },
     {

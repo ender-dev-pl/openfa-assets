@@ -74,6 +74,15 @@ def main():
             assert proof['ray_witnesses']['native']==dict(void_rays=3,solid_rays=2)
             assert meta['material_tiles']['Type 1.5 | dull pale blue grey end']==3
             assert meta['comparison_heading_directions']=={'12':[0,-1,.95],'28':[0,1,.95]}
+        if folder.name=='transportation-craft-type-3':
+            names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
+            assert len(names)==83 and {f'Transport tower {i}' for i in [-1,0,1]}<=names
+            assert len({n for n in names if n.startswith('Transport blue band ')})==12
+            assert len(proof['attachments_checked'])==82 and len(proof['protected_dents'])==3
+            assert proof['ray_witnesses']['native']==dict(void_rays=29,solid_rays=12)
+            rotations=meta['part_rotations'];assert len(rotations)==3 and sum(len(r['parts']) for r in rotations)==66
+            assert all(r['axis']=='Z' and abs(r['angle']+np.pi/2)<1e-8 for r in rotations)
+            areas=atlas_areas(raw,g,length,'PrimaryHullAndArmour');assert .06<areas[3]<.35,areas.tolist()
         texture=g['materials'][0]['pbrMetallicRoughness']['metallicRoughnessTexture']['index'];image=g['images'][g['textures'][texture]['source']];view=g['bufferViews'][image['bufferView']];start=28+length+view.get('byteOffset',0)
         orm=np.asarray(Image.open(io.BytesIO(raw[start:start+view['byteLength']])).convert('RGB')).astype(float)/255
         assert orm.shape[:2]==(1024,2048) and .57<orm[:512,:512,1].mean()<.64 and .72<orm[:512,:512,2].mean()<.76

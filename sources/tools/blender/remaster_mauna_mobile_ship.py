@@ -2,14 +2,28 @@
 from pathlib import Path
 import argparse,json,sys
 import bpy,bmesh
-from mathutils import Vector
+from mathutils import Matrix,Vector
 sys.path.insert(0,str(Path(__file__).parent))
 import remaster_artemian_mobile_ship as shared
 core=shared.core
 sha=core.sha
-transformed_reference_point=shared.transformed_reference_point
 ROOT=Path(__file__).resolve().parents[3]
 MAPS=ROOT/'sources/materials/mauna/mobile-ships'
+
+
+def transformed_reference_point(name,point,recipe):
+    p=shared.transformed_reference_point(name,point,recipe)
+    for change in recipe.get('part_rotations',[]):
+        if name in change['parts']:
+            origin=Vector(change['origin']);p=origin+Matrix.Rotation(change['angle'],3,change['axis'])@(p-origin)
+    return p
+
+
+def transformed_reference_direction(name,direction,recipe):
+    result=Vector(direction)
+    for change in recipe.get('part_rotations',[]):
+        if name in change['parts']:result=Matrix.Rotation(change['angle'],3,change['axis'])@result
+    return result.normalized()
 
 
 def folders(key):return ROOT/'sources/objects/mauna'/key,ROOT/'gallery/media/objects/mauna'/key
@@ -63,6 +77,11 @@ def main(key):
             for normal in normals:
                 axial=axis*normal.dot(axis);corrected.append(((normal-axial)/change['transverse_scale']+axial/change['axial_scale']).normalized())
             o.data.normals_split_custom_set(corrected)
+        for change in recipe.get('part_rotations',[]):
+            if o.name not in change['parts']:continue
+            normals=[n.vector.copy() for n in o.data.corner_normals];origin=Vector(change['origin']);rotation=Matrix.Rotation(change['angle'],3,change['axis'])
+            for vertex in o.data.vertices:vertex.co=origin+rotation@(vertex.co-origin)
+            o.data.update();o.data.normals_split_custom_set([(rotation@n).normalized() for n in normals])
         before=len(o.data.polygons);target=next((v for word,v in recipe['part_face_budget'].items() if word!='default' and word in o.name.lower()),recipe['part_face_budget']['default'])
         if before>target:
             modifier=o.modifiers.new('Game density budget','DECIMATE');modifier.ratio=target/before;modifier.use_collapse_triangulate=True;bpy.ops.object.modifier_apply(modifier=modifier.name)
