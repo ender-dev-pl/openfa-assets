@@ -90,6 +90,8 @@ Additional views: [Retrospective concept (interpretations limited)](../gallery/m
 
 [Blend](../sources/objects/terran/fleet-battleship/refined/model.blend) · [GLB](../sources/objects/terran/fleet-battleship/refined/model.glb)
 
+Additional views: [Retrospective concept (interpretations limited)](../gallery/media/concepts/terran/fleet-battleship-review-1.png) · [Protocol review: actual imported front](../gallery/media/docs/assets/reconstruction/evidence/fleet-battleship-protocol/imported-front-quarter.png) · [Protocol review: actual imported rear](../gallery/media/docs/assets/reconstruction/evidence/fleet-battleship-protocol/imported-rear-quarter.png)
+
 [Play animation: Animation](../gallery/media/objects/terran/fleet-battleship/refined/animation-00.webm)
 
 ## Space Dock

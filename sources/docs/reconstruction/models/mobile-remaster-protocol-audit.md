@@ -41,3 +41,5 @@ The snapshots and findings above are historical. Current Terran canonical select
 Destructor now has one actual retrospective ImageGen request and fresh saved-native/independent GLB render feedback in [destructor-protocol-review.md](destructor-protocol-review.md). Existing model bytes remain unchanged and visual differences remain explicit. This advances one Terran protocol entry; it does not complete the remaining eight Terran entries, cross-branch reconciliation, client integration or programme #248.
 
 Terminator now also has one actual retrospective ImageGen request and fresh evaluated native/imported renders in [terminator-protocol-review.md](terminator-protocol-review.md). Its latest SciTek canonical binary is unchanged. Seven other Terran protocol entries remain open; this does not complete programme #248.
+
+Fleet Battleship now has one actual retrospective ImageGen request and fresh evaluated native/imported renders in [fleet-battleship-protocol-review.md](fleet-battleship-protocol-review.md). The canonical SciTek source is preserved with explicit remaining appearance differences; six other Terran protocol entries remain open.
