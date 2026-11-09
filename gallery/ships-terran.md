@@ -54,6 +54,8 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/c
 
 [Blend](../sources/docs/assets/reconstruction/ships/terran/destructor/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/destructor/model.glb)
 
+Additional views: [Retrospective concept (interpretations limited)](../gallery/media/concepts/terran/destructor-review-1.png) · [Protocol review: actual imported front](../gallery/media/docs/assets/reconstruction/evidence/destructor-protocol/imported-front-quarter.png) · [Protocol review: actual imported rear](../gallery/media/docs/assets/reconstruction/evidence/destructor-protocol/imported-rear-quarter.png)
+
 ## Terminator
 
 `openfa:terminator`
