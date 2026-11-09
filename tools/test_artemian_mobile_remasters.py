@@ -7,6 +7,24 @@ ROOT=Path(__file__).resolve().parents[1]
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 
 
+def atlas_areas(raw,document,json_length,mesh_name):
+    def read(index):
+        a=document['accessors'][index];v=document['bufferViews'][a['bufferView']]
+        dtype=np.dtype({5121:'u1',5123:'<u2',5125:'<u4',5126:'<f4'}[a['componentType']]);size={'SCALAR':1,'VEC2':2,'VEC3':3}[a['type']]
+        return np.ndarray((a['count'],size),dtype=dtype,buffer=raw,offset=28+json_length+v.get('byteOffset',0)+a.get('byteOffset',0),strides=(v.get('byteStride',size*dtype.itemsize),dtype.itemsize))
+    totals=np.zeros(8)
+    mesh=document['meshes'][next(n['mesh'] for n in document['nodes'] if n['name']==mesh_name)]
+    for primitive in mesh['primitives']:
+        indices=read(primitive['indices']).reshape(-1,3);points=read(primitive['attributes']['POSITION'])[indices];uv=read(primitive['attributes']['TEXCOORD_0'])[indices]
+        # glTF exporter flips Blender V: GLB coordinates address top image row
+        # at V=0, unlike the authoring UV coordinates used by the generator.
+        tiles=np.floor(uv[:,:,0]*4).astype(int)+4*np.floor(uv[:,:,1]*2).astype(int)
+        assert (tiles[:,0]==tiles[:,1]).all() and (tiles[:,0]==tiles[:,2]).all(),'triangle crosses atlas materials'
+        area=np.linalg.norm(np.cross(points[:,1]-points[:,0],points[:,2]-points[:,0]),axis=1)/2
+        for tile in range(8):totals[tile]+=area[tiles[:,0]==tile].sum()
+    return totals/totals.sum()
+
+
 def main():
     publication=json.loads((ROOT/'sources/docs/reconstruction/models/artemian-mobile-remaster.json').read_text());models=publication['models'];assert 1<=len(models)<=publication['expected_mobile_ship_count']==5
     refs=json.loads((ROOT/'sources/docs/reconstruction/models/ship-reference-index.json').read_text())['ships'];expected={r['id'] for r in refs if r['culture']=='artemian' and not r['runtime_fixed_scale']}
@@ -38,6 +56,13 @@ def main():
         assert len(g['materials'])==1 and len(g['meshes'])==meta['mesh_batches']==4 and len(g['images'])==3
         assert sum(len(m['primitives']) for m in g['meshes'])<=meta['max_primitives'] and not g.get('animations')
         assert all('uri' not in im for im in g['images'])
+        if folder.name=='shielded-multi-assault':
+            names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
+            assert len(names)==46 and len(proof['attachments_checked'])==45 and len(proof['protected_dents'])==3
+            # Read actual GLB positions, UVs and indices: bronze must be a
+            # subordinate alloy region, not the historical exact half split.
+            areas=atlas_areas(raw,g,length,'PrimaryHullAndArmour')
+            assert areas[0]>.65 and .04<areas[2]<.30 and areas[1]<.001,areas.tolist()
         ti=g['materials'][0]['pbrMetallicRoughness']['metallicRoughnessTexture']['index'];im=g['images'][g['textures'][ti]['source']];view=g['bufferViews'][im['bufferView']];start=28+length+view.get('byteOffset',0)
         texture=np.asarray(Image.open(io.BytesIO(raw[start:start+view['byteLength']])).convert('RGB')).astype(float)/255
         assert texture.shape[:2]==(1024,2048) and .52<texture[:512,:512,1].mean()<.60 and .75<texture[:512,:512,2].mean()<.81

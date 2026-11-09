@@ -34,14 +34,47 @@ def transformed_reference_point(name,point,recipe):
     return p
 
 
+def assign_recipe_uv(obj,mat,recipe):
+    names=[m.name for m in obj.data.materials]
+    assert names and all(name in recipe['material_tiles'] for name in names),(obj.name,names)
+    layout=recipe.get('surface_regions',{}).get(obj.name)
+    if layout:
+        obj['material_layout']=layout['interpretation']
+        # Material boundaries must cross large faces continuously instead of
+        # classifying whole triangles into a visibly serrated colour stripe.
+        bm=bmesh.new();bm.from_mesh(obj.data)
+        planes={(band['axis'],value) for band in layout['bands'] for value in [band['minimum'],band['maximum']]}
+        for axis,value in sorted(planes):
+            index='xyz'.index(axis);point=[0,0,0];point[index]=value;normal=[0,0,0];normal[index]=1
+            bmesh.ops.bisect_plane(bm,geom=list(bm.verts)+list(bm.edges)+list(bm.faces),dist=1e-7,plane_co=point,plane_no=normal,clear_inner=False,clear_outer=False)
+        bm.to_mesh(obj.data);bm.free();obj.data.update()
+    if len(names)==1 and not layout:
+        tile=recipe['material_tiles'][names[0]];core.assign_uv(obj,mat,tile);return tile
+    tiles=[]
+    for face in obj.data.polygons:
+        tile=recipe['material_tiles'][names[face.material_index]]
+        if layout:
+            tile=layout['default_tile'];centre=face.center
+            for band in layout['bands']:
+                value=centre['xyz'.index(band['axis'])]
+                if band['minimum']<=value<=band['maximum']:tile=band['tile']
+        assert 0<=tile<8;tiles.append(tile)
+    # Reuse the proven projection with a zero tile; apply explicit per-face
+    # atlas offsets after it clears source materials. No face index is lost.
+    core.assign_uv(obj,mat,0);uv=obj.data.uv_layers.active.data
+    for face,tile in zip(obj.data.polygons,tiles):
+        for loop in face.loop_indices:
+            uv[loop].uv.x+=(tile%4)/4;uv[loop].uv.y-=(tile//4)/2
+    return sorted(set(tiles))
+
+
 def main(key):
     out,media=folders(key);recipe_path=out/'recipe.json';recipe=json.loads(recipe_path.read_text());out.mkdir(parents=True,exist_ok=True);media.mkdir(parents=True,exist_ok=True)
     source=ROOT/'sources'/recipe['source']/'model.blend';baseline=sha(source)
     bpy.ops.wm.open_mainfile(filepath=str(source),load_ui=False,use_scripts=False);bpy.context.preferences.filepaths.save_version=0
     scene=bpy.context.scene;baseline_bounds=core.bounds(core.meshes());core.MAPS=MAPS;mat=core.material();mat.name='Artemian | used alloy green bronze and silver';reductions=[];groups={}
     for o in list(core.meshes()):
-        assert len(o.data.materials)==1,(key,o.name)
-        old_material=o.data.materials[0].name;assert old_material in recipe['material_tiles'],old_material
+        assert o.data.materials and all(m.name in recipe['material_tiles'] for m in o.data.materials),(key,o.name)
         if o.animation_data:o.animation_data_clear()
         bpy.context.view_layer.objects.active=o
         for modifier in list(o.modifiers):bpy.ops.object.modifier_apply(modifier=modifier.name)
@@ -60,8 +93,9 @@ def main(key):
         if any(word in o.name.lower() for word in edge_finish.get('part_keywords',[])):
             modifier=o.modifiers.new('Manufactured edge radius','BEVEL');modifier.width=edge_finish['width'];modifier.segments=edge_finish['segments'];modifier.limit_method='ANGLE';modifier.angle_limit=edge_finish['angle_limit'];modifier.use_clamp_overlap=True
             bpy.ops.object.modifier_apply(modifier=modifier.name)
-        reductions.append(dict(part=o.name,source_faces=before,final_faces=len(o.data.polygons),atlas_tile=recipe['material_tiles'][old_material]))
-        core.assign_uv(o,mat,recipe['material_tiles'][old_material]);groups.setdefault(group_for(o.name),[]).append(o)
+        tile=assign_recipe_uv(o,mat,recipe)
+        reductions.append(dict(part=o.name,source_faces=before,final_faces=len(o.data.polygons),atlas_tile=tile))
+        groups.setdefault(group_for(o.name),[]).append(o)
     root=bpy.data.objects['PlacementRoot'];mapping={}
     for group,items in groups.items():
         mapping[group]=[o.name for o in items];bpy.ops.object.select_all(action='DESELECT')

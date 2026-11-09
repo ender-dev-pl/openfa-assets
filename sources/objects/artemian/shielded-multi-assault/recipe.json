@@ -1,0 +1,291 @@
+{
+  "id": "openfa:ship/artemian/shielded-multi-assault",
+  "issue": 249,
+  "name": "Shielded Multi-Assault",
+  "key": "AR2C",
+  "source": "docs/assets/reconstruction/ships/artemian/shielded-multi-assault",
+  "size_class": "medium combat",
+  "world_size_proposal": 64,
+  "equipment_slots": 4,
+  "material_tiles": {
+    "Shielded Multi | worn silver alloy": 0,
+    "Shielded Multi | worn gold alloy": 2,
+    "Shielded Multi | oxidized blue grey fittings": 6,
+    "Shielded Multi | carbon dark seams": 4,
+    "Shielded Multi | dull amber inserts": 3
+  },
+  "surface_regions": {
+    "Shielded Multi central pressure body": {
+      "default_tile": 0,
+      "bands": [
+        {
+          "axis": "x",
+          "minimum": -0.5,
+          "maximum": -0.28,
+          "tile": 2
+        }
+      ],
+      "interpretation": "Authored subordinate bronze flank band and tip-root bands on silver alloy, guided by concept3. Exact legacy alloy distribution is unresolved; this replaces the unsupported exact half-gold split."
+    },
+    "Shielded Multi broad metal wing": {
+      "default_tile": 0,
+      "bands": [
+        {
+          "axis": "x",
+          "minimum": -0.5,
+          "maximum": -0.28,
+          "tile": 2
+        },
+        {
+          "axis": "y",
+          "minimum": 1.35,
+          "maximum": 1.6,
+          "tile": 2
+        },
+        {
+          "axis": "y",
+          "minimum": -1.6,
+          "maximum": -1.35,
+          "tile": 2
+        }
+      ],
+      "interpretation": "Authored subordinate bronze flank band and tip-root bands on silver alloy, guided by concept3. Exact legacy alloy distribution is unresolved; this replaces the unsupported exact half-gold split."
+    }
+  },
+  "part_face_budget": {
+    "wing": 7000,
+    "body": 7000,
+    "cover": 400,
+    "slot": 120,
+    "inset": 240,
+    "insert": 150,
+    "slat": 120,
+    "saddle": 400,
+    "default": 350
+  },
+  "edge_finish": {
+    "part_keywords": [
+      "wing",
+      "cover",
+      "saddle"
+    ],
+    "width": 0.01,
+    "segments": 3,
+    "angle_limit": 0.52,
+    "reason": "Soften manufactured wing and service-cover edges without dense panel grids."
+  },
+  "max_triangles": 55000,
+  "max_primitives": 6,
+  "comparison_elevation": 0.25,
+  "comparison_azimuth": 3.141592653589793,
+  "reference_side_bounds": [
+    38,
+    8
+  ],
+  "protected_dents": [
+    {
+      "part": "Shielded Multi central pressure body",
+      "x": 0,
+      "y": -0.15,
+      "minimum_depth": 0.0015,
+      "undented_z": 0.44
+    },
+    {
+      "part": "Shielded Multi broad metal wing",
+      "x": -0.8,
+      "y": 0.7,
+      "minimum_depth": 0.0015,
+      "undented_z": -0.04967863894139887
+    },
+    {
+      "part": "Shielded Multi broad metal wing",
+      "x": 0.8,
+      "y": 0.7,
+      "minimum_depth": 0.0015,
+      "undented_z": -0.04967863894139887
+    }
+  ],
+  "attachment_pairs": [
+    {
+      "part": "Shielded Multi service cover 0",
+      "support": "Shielded Multi central pressure body"
+    },
+    {
+      "part": "Shielded Multi service slot 0 0",
+      "support": "Shielded Multi service cover 0"
+    },
+    {
+      "part": "Shielded Multi service slot 0 1",
+      "support": "Shielded Multi service cover 0"
+    },
+    {
+      "part": "Shielded Multi service cover 1",
+      "support": "Shielded Multi central pressure body"
+    },
+    {
+      "part": "Shielded Multi service slot 1 0",
+      "support": "Shielded Multi service cover 1"
+    },
+    {
+      "part": "Shielded Multi service slot 1 1",
+      "support": "Shielded Multi service cover 1"
+    },
+    {
+      "part": "Shielded Multi service cover 2",
+      "support": "Shielded Multi broad metal wing"
+    },
+    {
+      "part": "Shielded Multi service slot 2 0",
+      "support": "Shielded Multi service cover 2"
+    },
+    {
+      "part": "Shielded Multi service slot 2 1",
+      "support": "Shielded Multi service cover 2"
+    },
+    {
+      "part": "Shielded Multi service cover 3",
+      "support": "Shielded Multi broad metal wing"
+    },
+    {
+      "part": "Shielded Multi service slot 3 0",
+      "support": "Shielded Multi service cover 3"
+    },
+    {
+      "part": "Shielded Multi service slot 3 1",
+      "support": "Shielded Multi service cover 3"
+    },
+    {
+      "part": "Shielded Multi forward service inset",
+      "support": "Shielded Multi central pressure body"
+    },
+    {
+      "part": "Shielded Multi forward alloy slat 0",
+      "support": "Shielded Multi forward service inset"
+    },
+    {
+      "part": "Shielded Multi forward alloy slat 1",
+      "support": "Shielded Multi forward service inset"
+    },
+    {
+      "part": "Shielded Multi forward alloy slat 2",
+      "support": "Shielded Multi forward service inset"
+    },
+    {
+      "part": "Shielded Multi fitting saddle -1",
+      "support": "Shielded Multi broad metal wing"
+    },
+    {
+      "part": "Shielded Multi blue grey fitting -1",
+      "support": "Shielded Multi fitting saddle -1"
+    },
+    {
+      "part": "Shielded Multi side dark inset -1",
+      "support": "Shielded Multi central pressure body"
+    },
+    {
+      "part": "Shielded Multi side amber insert -1 0",
+      "support": "Shielded Multi side dark inset -1"
+    },
+    {
+      "part": "Shielded Multi side amber insert -1 1",
+      "support": "Shielded Multi side dark inset -1"
+    },
+    {
+      "part": "Shielded Multi side amber insert -1 2",
+      "support": "Shielded Multi side dark inset -1"
+    },
+    {
+      "part": "Shielded Multi fitting saddle 1",
+      "support": "Shielded Multi broad metal wing"
+    },
+    {
+      "part": "Shielded Multi blue grey fitting 1",
+      "support": "Shielded Multi fitting saddle 1"
+    },
+    {
+      "part": "Shielded Multi side dark inset 1",
+      "support": "Shielded Multi central pressure body"
+    },
+    {
+      "part": "Shielded Multi side amber insert 1 0",
+      "support": "Shielded Multi side dark inset 1"
+    },
+    {
+      "part": "Shielded Multi side amber insert 1 1",
+      "support": "Shielded Multi side dark inset 1"
+    },
+    {
+      "part": "Shielded Multi side amber insert 1 2",
+      "support": "Shielded Multi side dark inset 1"
+    },
+    {
+      "part": "Shielded Multi fastener 0 0 0",
+      "support": "Shielded Multi service cover 0"
+    },
+    {
+      "part": "Shielded Multi fastener 0 0 1",
+      "support": "Shielded Multi service cover 0"
+    },
+    {
+      "part": "Shielded Multi fastener 0 1 0",
+      "support": "Shielded Multi service cover 0"
+    },
+    {
+      "part": "Shielded Multi fastener 0 1 1",
+      "support": "Shielded Multi service cover 0"
+    },
+    {
+      "part": "Shielded Multi fastener 1 0 0",
+      "support": "Shielded Multi service cover 1"
+    },
+    {
+      "part": "Shielded Multi fastener 1 0 1",
+      "support": "Shielded Multi service cover 1"
+    },
+    {
+      "part": "Shielded Multi fastener 1 1 0",
+      "support": "Shielded Multi service cover 1"
+    },
+    {
+      "part": "Shielded Multi fastener 1 1 1",
+      "support": "Shielded Multi service cover 1"
+    },
+    {
+      "part": "Shielded Multi fastener 2 0 0",
+      "support": "Shielded Multi service cover 2"
+    },
+    {
+      "part": "Shielded Multi fastener 2 0 1",
+      "support": "Shielded Multi service cover 2"
+    },
+    {
+      "part": "Shielded Multi fastener 2 1 0",
+      "support": "Shielded Multi service cover 2"
+    },
+    {
+      "part": "Shielded Multi fastener 2 1 1",
+      "support": "Shielded Multi service cover 2"
+    },
+    {
+      "part": "Shielded Multi fastener 3 0 0",
+      "support": "Shielded Multi service cover 3"
+    },
+    {
+      "part": "Shielded Multi fastener 3 0 1",
+      "support": "Shielded Multi service cover 3"
+    },
+    {
+      "part": "Shielded Multi fastener 3 1 0",
+      "support": "Shielded Multi service cover 3"
+    },
+    {
+      "part": "Shielded Multi fastener 3 1 1",
+      "support": "Shielded Multi service cover 3"
+    },
+    {
+      "part": "Shielded Multi central pressure body",
+      "support": "Shielded Multi broad metal wing"
+    }
+  ],
+  "interpretation": "Broad low diamond silver wing with raised opaque central body, subordinate bronze regions, blue-grey fittings and six dull amber inserts. Exact fine geometry/function and gold distribution are interpretive. Name does not prove a shield bubble or emission; fittings/inserts are not mapped weapons/engines or equipment mounts. Legacy headings take precedence over imperfect concept top/side ratios."
+}

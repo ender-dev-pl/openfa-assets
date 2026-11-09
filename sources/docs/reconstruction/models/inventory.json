@@ -31071,7 +31071,7 @@
           "stage": "mobile-ship-remaster",
           "blend": "objects/artemian/gerla-kans-explorer/model.blend",
           "present": true,
-          "sha256": "583ed4ae37619ab79ed456492aef5b565db68c91bdeba2fc533c41bbd4215334",
+          "sha256": "c336b1216fb4b530d7e11c56d4724e3f21811022e1dc89f2926908dd8e52756b",
           "views": [
             {
               "label": "Rear fittings",
@@ -31202,7 +31202,7 @@
           "stage": "mobile-ship-remaster",
           "blend": "objects/artemian/all-purpose-assault/model.blend",
           "present": true,
-          "sha256": "01f550d7f33e138758752b33adf8349a647ce26df0432d00f130ea77cc121692",
+          "sha256": "f03cde43e2097f5f6af26c370edcb2f0d19aa1263a17b72c6db33460ea65e01a",
           "views": [
             {
               "label": "Rear fittings",
@@ -31330,21 +31330,47 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/artemian/shielded-multi-assault/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/artemian/shielded-multi-assault/model.blend",
           "present": true,
-          "sha256": "fd3037fefd88a18107264dbfe37de6238b335682a9b6203cede626e771bbb3f9",
-          "final_visual_acceptance": "not-established"
+          "sha256": "5897ef65d1b8352521d5e206a98efb722056febe691a06120abf903b750ee98d",
+          "views": [
+            {
+              "label": "Rear fittings",
+              "image": "gallery/media/objects/artemian/shielded-multi-assault/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/artemian/shielded-multi-assault/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 comparison",
+              "image": "gallery/media/objects/artemian/shielded-multi-assault/heading-04.png"
+            },
+            {
+              "label": "Rejected thin concept1",
+              "image": "gallery/media/concepts/artemian/shielded-multi-assault-01.png"
+            },
+            {
+              "label": "Narrow planform concept2",
+              "image": "gallery/media/concepts/artemian/shielded-multi-assault-02.png"
+            },
+            {
+              "label": "Reviewed broad concept3",
+              "image": "gallery/media/concepts/artemian/shielded-multi-assault-03.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent legacy/concept/imported-render review complete; final user acceptance and client calibration separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -31388,6 +31414,30 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/artemian/shielded-multi-assault/model.blend",
+          "present": true,
+          "sha256": "fd3037fefd88a18107264dbfe37de6238b335682a9b6203cede626e771bbb3f9",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/artemian/shielded-multi-assault/model.blend",
+        "glb": "objects/artemian/shielded-multi-assault/model.glb",
+        "issue": 249,
+        "integration": "One canonical source/export across gameplay, ship/build menus and SciTek. Keep the original catalogue id; WorldSize and equipment mounts require client calibration."
+      },
+      "remaster_protocol": {
+        "issue": 249,
+        "concept_review": "reviewed",
+        "review": "objects/artemian/shielded-multi-assault/concept-review.json",
+        "iterations": 3,
+        "final_user_acceptance": "pending"
       }
     },
     {

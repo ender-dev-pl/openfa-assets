@@ -30,11 +30,13 @@ Additional views: [Rear fittings](../gallery/media/objects/artemian/all-purpose-
 
 `openfa:ship/artemian/shielded-multi-assault`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Shielded Multi-Assault](../gallery/media/docs/assets/reconstruction/ships/artemian/shielded-multi-assault/front-quarter.png)
+![Shielded Multi-Assault](../gallery/media/objects/artemian/shielded-multi-assault/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/artemian/shielded-multi-assault/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/artemian/shielded-multi-assault/model.glb)
+[Blend](../sources/objects/artemian/shielded-multi-assault/model.blend) · [GLB](../sources/objects/artemian/shielded-multi-assault/model.glb)
+
+Additional views: [Rear fittings](../gallery/media/objects/artemian/shielded-multi-assault/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/artemian/shielded-multi-assault/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/artemian/shielded-multi-assault/heading-04.png) · [Rejected thin concept1](../gallery/media/concepts/artemian/shielded-multi-assault-01.png) · [Narrow planform concept2](../gallery/media/concepts/artemian/shielded-multi-assault-02.png) · [Reviewed broad concept3](../gallery/media/concepts/artemian/shielded-multi-assault-03.png)
 
 ## Ultimate Mk II
 

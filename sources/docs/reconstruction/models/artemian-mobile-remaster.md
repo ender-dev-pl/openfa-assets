@@ -1,12 +1,12 @@
 # Artemian mobile remasters
 
-Issue #249 is part of programme #248. This is an incremental delivery: two of five mobile ships are currently remastered. The user confirmed that every culture's spacedocks are already complete. Geostationary Construction AR5C and the other fixed orbital stations are excluded from further work in this programme.
+Issue #249 is part of programme #248. This is an incremental delivery: three of five mobile ships are currently remastered. The user confirmed that every culture's spacedocks are already complete. Geostationary Construction AR5C and the other fixed orbital stations are excluded from further work in this programme.
 
 | Ship | Legacy | Current milestone | Proposed WorldSize |
 |---|---|---|---:|
 | Gerla-Kans Explorer | AR0A.256 | Canonical remaster and concept/GLB feedback verified | 40 |
 | All-Purpose Assault | AR1A.256 | Canonical remaster and concept/GLB feedback verified | 48 |
-| Shielded Multi-Assault | AR2C.256 | Pending | — |
+| Shielded Multi-Assault | AR2C.256 | Canonical remaster and concept/GLB feedback verified | 64 |
 | Ultimate Mk II | AR3C.256 | Pending | — |
 | Hardcore | AR4C.256 | Pending | — |
 
@@ -39,6 +39,20 @@ The canonical `sources/objects/artemian/all-purpose-assault/model.blend` and `mo
 Actual independent-GLB feedback found excessively sharp manufactured hull and service-cover edges. A small three-segment edge radius softens their perimeter without adding a dense panel grid. The first bevel pass exceeded the existing 55,000-triangle limit, so the surface density was reduced before another actual render/check cycle. Protected dents, fitted overlays, sparse fasteners, dark recesses, stains and scratches remain readable. Checks cover 53 seated connections, four physical dents, closed positive native batches, per-part source-form deviations, actual imported positions and native/import renders. The side reference's opaque bounds are 16 by 8 pixels; an estimated camera and coarse aspect check diagnose substantial errors without claiming precise camera recovery or percentage fidelity.
 
 The recipe-specific edge treatment is inactive for Gerla-Kans. That model was regenerated and independently checked after the shared engine changed: its GLB bytes, geometry and rendered appearance are unchanged; its saved native metadata hash is refreshed honestly. WorldSize 48 remains a size-class proposal; three socket positions, client orientation/scale/material validation and final user artistic acceptance are separate from the asset milestone.
+
+## Shielded Multi-Assault refinement and GLB feedback
+
+AR2C supplies 32 paletted headings with a broad low silver/grey outline, raised central body, warm alloy portions, blue-grey accents and pale/amber marks. Its combat-direct-approach role and four equipment slots do not establish visible shield geometry or equipment positions. The name alone is not evidence for a shield effect, cockpit, weapon or engine.
+
+Three actual ImageGen attempts exhaust this asset's limit. The first side silhouette was too thin; the second raised the central mass but retained a narrow top planform. The third restores a broad diamond wing around a smaller opaque central body. Exact top/side proportions in the concept remain imperfect; actual paletted headings take precedence. Its restrained worn silver/bronze finish guides the canonical model without treating the concept as recovered engineering.
+
+The canonical `sources/objects/artemian/shielded-multi-assault/model.blend` and `model.glb` contain 39,680 triangles in four batches with one material and three embedded PBR maps, reduced from 126,536 triangles in 46 meshes. Named vertex groups retain all 46 original part identities. Small edge radii, seated service covers, sparse fasteners, three physical dents and worn materials preserve readable broad surfaces without dense panel grids.
+
+The first study's exact gold/silver half division was explicitly unproven. This refinement replaces it with subordinate bronze flank and tip-root bands on predominantly silver alloy. Their precise location remains an artistic interpretation: the references do not conclusively separate material placement from lighting. The generator now supports explicit per-face atlas allocation. Actual GLB feedback rejected serrated band boundaries from whole-triangle classification; splitting actual faces at the declared boundaries produces continuous material edges. A direct GLB positions/indices/UV test checks that bronze remains subordinate and triangles do not interpolate across unrelated atlas tiles.
+
+Saved-native and independent-import checks cover per-part source-form deviation, closed geometry, matching world positions, actual renders, 45 seated connections and three protected dents. The alpha bounds of reference heading4 are 38 by 8 pixels. Estimated comparison elevation and azimuth expose corresponding ends without claiming recovered gameplay orientation. WorldSize 64 is a medium-combat size proposal; four equipment mounts, client scale/heading/material validation and final user artistic acceptance remain separate.
+
+Both earlier canonical models were genuinely regenerated and independently verified after the atlas-region engine extension. Their GLB bytes and rendered appearance remain unchanged; current source/runtime bindings accompany the refreshed native files. No extra gameplay/menu model is introduced.
 
 ## Reproduction
 
