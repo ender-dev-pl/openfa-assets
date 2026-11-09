@@ -2,8 +2,11 @@
 from pathlib import Path
 import hashlib
 import json
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'sources/tools/blender'))
+from mobile_remaster_evidence import bind_record
 ID = 'openfa:ship/achaean/dedicated-ore-transporter'
 OBJECT = 'objects/achaean/dedicated-ore-transporter'
 
@@ -53,7 +56,6 @@ def main():
         scale_status='Authored recommendation; current client fallback is 96; integration not applied')
     record['functional_reference']['review_status'] = 'reviewed-no-object-specific-narrative-mapped'
     record['acceptance'].update(reference_views_reviewed=True, native_and_glb_runtime=True)
-    write(path, inventory)
     metadata = dict(id=ID, issue=234, canonical_blend='sources/'+OBJECT+'/model.blend',
         canonical_glb='sources/'+OBJECT+'/model.glb', source_sha256=report['blend_sha256'],
         export_sha256=report['glb_sha256'], triangles=report['triangles'], mesh_batches=report['mesh_batches'],
@@ -64,10 +66,12 @@ def main():
         technical_verification='runtime-verification.json', visual_acceptance='awaiting-user-review',
         game_integration='separate acceptance required', preserved_historical_sources=preserved)
     write(out/'model.json', metadata)
+    bind_record(ROOT,record)
+    write(path, inventory)
     layout_path = ROOT/'project/layout.json'
     layout = json.loads(layout_path.read_text(encoding='utf-8'))
     known = {item['destination'] for item in layout['files']}
-    paths = list(out.iterdir())+list((ROOT/'sources/materials/achaean/dedicated-ore-transporter').iterdir())
+    paths = [ROOT/'sources/tools/blender/mobile_remaster_evidence.py', ROOT/'sources/docs/reconstruction/models/mobile-remaster-evidence.md']+list(out.iterdir())+list((ROOT/'sources/materials/achaean/dedicated-ore-transporter').iterdir())
     paths += list((ROOT/'gallery/media'/OBJECT).iterdir())
     paths += [ROOT/'sources/tools/achaean_transporter_maps.py',
               ROOT/'sources/tools/blender/remaster_achaean_transporter.py',
