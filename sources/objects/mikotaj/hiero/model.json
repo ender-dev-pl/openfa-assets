@@ -40,7 +40,7 @@
       1.100000023841858
     ]
   ],
-  "triangles": 31188,
+  "triangles": 31412,
   "mesh_batches": 4,
   "material_count": 1,
   "packed_maps": 3,
@@ -56,7 +56,15 @@
       "Hiero roof service slot 2 1",
       "Hiero roof service slot 3 0",
       "Hiero roof service slot 3 1",
-      "Authored underside service recess"
+      "Authored underside service recess",
+      "HieroPeripheralSpike00",
+      "HieroPeripheralSpike01",
+      "HieroPeripheralSpike02",
+      "HieroPeripheralSpike03",
+      "HieroPeripheralSpike04",
+      "HieroPeripheralSpike05",
+      "HieroPeripheralSpike06",
+      "HieroPeripheralSpike07"
     ],
     "PrimaryHullAndArmour": [
       "Hiero upper spike",
@@ -295,10 +303,190 @@
     "normal.png": "de6f304fee8a4698344b7af2fa8db3913f0761350eef626fda383a0c3500c8b1",
     "orm.png": "d3e6484a329f80b316e9625892ad2c051b77f98d8923bac035de17d79c30b135"
   },
-  "blend_sha256": "885d2cd10c3c6d8cc1113db489f83e318b7304e6b6ea4ac6badbf0abb4515a8a",
-  "glb_sha256": "f66dd5c137483941b38d1b95876bfb4b192e6aaa79ac173a6cd23e8447da1468",
+  "blend_sha256": "98e3c0c74428a42acb84da9a0c8b6179df6a2f1bafa3b396ce6e2800c6a744d9",
+  "glb_sha256": "eeb25924535c4c059c130777922f79790beb18963f6debdb3749fb6635d9161a",
   "reference_review": "Actual paletted heading descriptors; no matching MK mobile-ship animation entries found in _MA",
   "concept": "Direct legacy-to-GLB feedback; no ImageGen stage",
   "inference": "Additional service details/size are authored proposals, not recovered hidden engineering or calibrated weapon mounts",
-  "visual_acceptance": "Final user/game acceptance separate"
+  "visual_acceptance": "Final user/game acceptance separate",
+  "spike_refinement": {
+    "generator": "sources/tools/blender/refine_hiero_peripheral_spikes.py",
+    "generator_sha256": "2c22d41a9aa54fdb8d67ddaac7177e6c10a145c62ff0a33d91dd0479f9840cb8",
+    "input_binaries": {
+      "blend": "885d2cd10c3c6d8cc1113db489f83e318b7304e6b6ea4ac6badbf0abb4515a8a",
+      "glb": "f66dd5c137483941b38d1b95876bfb4b192e6aaa79ac173a6cd23e8447da1468"
+    },
+    "mesh_group": "RecessedMachinery",
+    "spikes": [
+      {
+        "name": "HieroPeripheralSpike00",
+        "azimuth_degrees": 0,
+        "surface_point": [
+          0.5164858102798462,
+          0.0,
+          0.10499999672174454
+        ],
+        "start": [
+          0.4914858043193817,
+          0.0,
+          0.10499999672174454
+        ],
+        "tip": [
+          0.7364858388900757,
+          0.0,
+          0.125
+        ],
+        "base_radius": 0.038,
+        "tip_radius": 0.003
+      },
+      {
+        "name": "HieroPeripheralSpike01",
+        "azimuth_degrees": 45,
+        "surface_point": [
+          0.3652104139328003,
+          0.3652104139328003,
+          0.10499999672174454
+        ],
+        "start": [
+          0.3475327491760254,
+          0.3475327491760254,
+          0.10499999672174454
+        ],
+        "tip": [
+          0.5207738876342773,
+          0.5207738876342773,
+          0.125
+        ],
+        "base_radius": 0.038,
+        "tip_radius": 0.003
+      },
+      {
+        "name": "HieroPeripheralSpike02",
+        "azimuth_degrees": 90,
+        "surface_point": [
+          3.162563606440931e-17,
+          0.5164858102798462,
+          0.10499999672174454
+        ],
+        "start": [
+          3.0094829153039075e-17,
+          0.4914858043193817,
+          0.10499999672174454
+        ],
+        "tip": [
+          4.5096752104590646e-17,
+          0.7364858388900757,
+          0.125
+        ],
+        "base_radius": 0.038,
+        "tip_radius": 0.003
+      },
+      {
+        "name": "HieroPeripheralSpike03",
+        "azimuth_degrees": 135,
+        "surface_point": [
+          -0.3652104139328003,
+          0.3652104139328003,
+          0.10499999672174454
+        ],
+        "start": [
+          -0.3475327491760254,
+          0.3475327491760254,
+          0.10499999672174454
+        ],
+        "tip": [
+          -0.5207738876342773,
+          0.5207738876342773,
+          0.125
+        ],
+        "base_radius": 0.038,
+        "tip_radius": 0.003
+      },
+      {
+        "name": "HieroPeripheralSpike04",
+        "azimuth_degrees": 180,
+        "surface_point": [
+          -0.5164858102798462,
+          6.325127212881862e-17,
+          0.10499999672174454
+        ],
+        "start": [
+          -0.4914858043193817,
+          6.018965830607815e-17,
+          0.10499999672174454
+        ],
+        "tip": [
+          -0.7364858388900757,
+          9.019350420918129e-17,
+          0.125
+        ],
+        "base_radius": 0.038,
+        "tip_radius": 0.003
+      },
+      {
+        "name": "HieroPeripheralSpike05",
+        "azimuth_degrees": 225,
+        "surface_point": [
+          -0.3652104139328003,
+          -0.3652104139328003,
+          0.10499999672174454
+        ],
+        "start": [
+          -0.3475327491760254,
+          -0.3475327491760254,
+          0.10499999672174454
+        ],
+        "tip": [
+          -0.5207738876342773,
+          -0.5207738876342773,
+          0.125
+        ],
+        "base_radius": 0.038,
+        "tip_radius": 0.003
+      },
+      {
+        "name": "HieroPeripheralSpike06",
+        "azimuth_degrees": 270,
+        "surface_point": [
+          -9.419856053393034e-17,
+          -0.5127930641174316,
+          0.10499999672174454
+        ],
+        "start": [
+          -8.960613318237474e-17,
+          -0.48779305815696716,
+          0.10499999672174454
+        ],
+        "tip": [
+          -1.346119053457519e-16,
+          -0.7327930927276611,
+          0.125
+        ],
+        "base_radius": 0.038,
+        "tip_radius": 0.003
+      },
+      {
+        "name": "HieroPeripheralSpike07",
+        "azimuth_degrees": 315,
+        "surface_point": [
+          0.3652104139328003,
+          -0.3652104139328003,
+          0.10499999672174454
+        ],
+        "start": [
+          0.3475327491760254,
+          -0.3475327491760254,
+          0.10499999672174454
+        ],
+        "tip": [
+          0.5207738876342773,
+          -0.5207738876342773,
+          0.125
+        ],
+        "base_radius": 0.038,
+        "tip_radius": 0.003
+      }
+    ],
+    "interpretation": "Eight small rim projections at45-degree intervals, following user interpretation of MK0A; four large fins and central spike retained; dimensions authored"
+  }
 }

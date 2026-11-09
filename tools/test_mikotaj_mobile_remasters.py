@@ -19,6 +19,13 @@ def main():
         assert meta['maps_generator_sha256']==sha(ROOT/'tools/author_mikotaj_ship_maps.py')
         for n,h in meta['map_sha256'].items():assert sha(ROOT/'sources/materials/mikotaj/mobile-ships'/n)==h
         for n,h in report['renders'].items():assert sha(media/n)==h
+        if folder.name=='hiero':
+            spikes=json.loads((folder/'spike-verification.json').read_text())
+            assert spikes['binaries']==report['binaries']
+            assert spikes['spikes']==8 and spikes['spacing_degrees']==45 and spikes['seated_native_contacts']==8
+            assert spikes['ray_checks']==dict(native=8,imported=8)
+            assert spikes['patcher_sha256']==sha(ROOT/'sources/tools/blender/refine_hiero_peripheral_spikes.py')
+            assert spikes['verifier_sha256']==sha(ROOT/'sources/tools/blender/verify_hiero_peripheral_spikes.py')
         assert report['mesh_batches']==4 and report['triangles']<55000
         assert report['relative_surface_deviation']<.012 and report['source_import_position_error']<1e-5
         raw=(folder/'model.glb').read_bytes();g=json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])

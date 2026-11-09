@@ -21,7 +21,7 @@ The palette remains opaque slate blue, green metal, copper structure, dulled gol
 
 Comparison-camera elevation is explicitly an estimate for each sheet. Ruth-Strivakh's crosswise beam also requires a 90-degree comparison-camera azimuth adjustment relative to the longitudinal craft. These render settings do not establish a client heading transform or alter the canonical orientation. Matching-side aspect checks are a coarse diagnostic, not a claim of pixel-level or percentage artistic fidelity.
 
-No ImageGen stage was used. Actual imported GLB renders are compared directly with paletted legacy frames retained privately. Wireframe images derive from exactly the same GLB geometry and do not create another model.
+The initial pass skipped ImageGen. Issue #248 tracks retrospective concept reviews and corrections; that earlier omission is not rewritten as a completed concept stage. Hiero now has a recorded retrospective concept and eight small seated perimeter spikes at 45-degree intervals, checked in the saved native source and independent GLB import. Its broad form/material concept is visible in the gallery; the exact small-spike count follows the user instruction rather than the concept's incomplete secondary projections. Actual imported renders retain the compact disc, four larger fins and axial spike. Other Mikotaj concepts and the requested Falari-Lourn glass-sphere/four-parallel-module reconstruction remain pending. The continuous-wing description above records the initial model and is not the accepted target for Falari-Lourn. Original pixels remain private. Technical wireframes derive from the same GLB geometry.
 
 ## Verification and reproduction
 

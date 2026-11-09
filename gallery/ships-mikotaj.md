@@ -12,7 +12,7 @@
 
 [Blend](../sources/objects/mikotaj/hiero/model.blend) · [GLB](../sources/objects/mikotaj/hiero/model.glb)
 
-Additional views: [Rear machinery](../gallery/media/objects/mikotaj/hiero/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/hiero/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/hiero/heading-04.png)
+Additional views: [Rear machinery](../gallery/media/objects/mikotaj/hiero/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/hiero/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/hiero/heading-04.png) · [Retrospective concept 1](../gallery/media/concepts/mikotaj/hiero-01.png)
 
 ## Ylikt-shan
 

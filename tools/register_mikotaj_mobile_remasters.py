@@ -24,6 +24,13 @@ def main():
         if old:row.setdefault('superseded_studies',[]).extend(old)
         row['available_studies']=[dict(stage='mobile-ship-remaster',blend=(rel/'model.blend').as_posix(),present=True,sha256=report['binaries']['blend'],views=[dict(label=label,image=(Path('gallery/media')/rel/name).as_posix()) for label,name in [('Rear machinery','rear-quarter.png'),('Actual imported wireframe','technical-wireframe.png'),('Legacy heading4 view','heading-04.png')]],final_visual_acceptance='User review pending; source/import runtime verified')]
         row['selected_refinement']=dict(stage='mobile-ship-remaster',blend=(rel/'model.blend').as_posix(),glb=(rel/'model.glb').as_posix(),issue=246,integration='One canonical model for gameplay, ship/build menus and SciTek; retain original catalogue id. World-size proposal and sockets require client calibration.')
+        review_path=folder/'concept-review.json'
+        row['remaster_protocol']=dict(issue=248,concept_review='reviewed' if review_path.exists() else 'pending',final_user_acceptance='pending')
+        if review_path.exists():
+            review=json.loads(review_path.read_text())
+            row['remaster_protocol']['review']=(rel/'concept-review.json').as_posix()
+            for iteration in review['iterations']:
+                row['available_studies'][0]['views'].append(dict(label='Retrospective concept '+str(iteration['number']),image=iteration['image']))
         row['acceptance'].update(reference_views_reviewed=True,silhouette_and_proportions=True,high_detail_structure=True,materials=True,native_and_glb_runtime=True)
         published.append(dict(id=meta['id'],blend=('sources/'+(rel/'model.blend').as_posix()),glb=('sources/'+(rel/'model.glb').as_posix()),blend_sha256=report['binaries']['blend'],glb_sha256=report['binaries']['glb'],size_class=meta['size_class'],world_size_proposal=meta['world_size_proposal'],triangles=meta['triangles'],mesh_batches=4))
     write(inventory,data)
@@ -32,9 +39,10 @@ def main():
     files=[]
     for key in KEYS:files+=list((ROOT/'sources/objects/mikotaj'/key).glob('*'))+list((ROOT/'gallery/media/objects/mikotaj'/key).glob('*'))
     files+=list((ROOT/'sources/materials/mikotaj/mobile-ships').glob('*'))
-    files+=[ROOT/'sources/tools/blender'/n for n in ['remaster_mikotaj_mobile_ships.py','verify_mikotaj_mobile_remasters.py']]
+    files+=[ROOT/'sources/tools/blender'/n for n in ['remaster_mikotaj_mobile_ships.py','verify_mikotaj_mobile_remasters.py','refine_hiero_peripheral_spikes.py','verify_hiero_peripheral_spikes.py']]
     files+=[ROOT/'sources/docs/reconstruction/models'/n for n in ['mikotaj-mobile-remaster.json','mikotaj-mobile-remaster.md','mikotaj-mobile-delivery.json']]
     files+=[ROOT/'gallery/media/objects/mikotaj/mobile-ships.jpg']
+    files+=list((ROOT/'gallery/media/concepts/mikotaj').glob('*.png'))
     for entry in layout['files']:
         if entry['destination'].startswith('sources/materials/mikotaj/mobile-ships/') and entry['destination'].endswith('.png'):entry['role']='material-texture'
     for p in sorted(files):
