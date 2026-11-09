@@ -66,6 +66,8 @@ Additional views: [Retrospective concept (interpretations limited)](../gallery/m
 
 [Blend](../sources/objects/terran/terminator/refined/model.blend) · [GLB](../sources/objects/terran/terminator/refined/model.glb)
 
+Additional views: [Retrospective concept (interpretations limited)](../gallery/media/concepts/terran/terminator-review-1.png) · [Protocol review: actual imported front](../gallery/media/docs/assets/reconstruction/evidence/terminator-protocol/imported-front-quarter.png) · [Protocol review: actual imported rear](../gallery/media/docs/assets/reconstruction/evidence/terminator-protocol/imported-rear-quarter.png)
+
 [Play animation: Animation](../gallery/media/objects/terran/terminator/refined/animation-00.webm)
 
 ## Transporter

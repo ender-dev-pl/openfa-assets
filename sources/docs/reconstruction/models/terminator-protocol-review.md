@@ -1,0 +1,11 @@
+# Terminator retrospective concept and GLB feedback
+
+Programme openfa-assets #248. Latest SciTek source remains canonical and byte-identical. This is the missing retrospective concept/render review, not a new model or final artistic acceptance.
+
+One built-in ImageGen request used original PS04.VID rotation frames 0/15/30/45. The original ST30 preview frames 0/15 were also inspected for consistency. Exact prompt, reference identities, selected concept and explicit limits are recorded in [the review](terminator-protocol-review.json). Original pixels remain private. The concept preserves broad swept wings, paired red stripes, raised central body, longitudinal engine housings and twin bronze exhausts. Rounded wing tips, softened shoulders, grille glow and small extra under-wing details are interpretations, not recovered geometry.
+
+Fresh Blender 4.5.15 rendering opens the saved source at frame 1, then removes source meshes/empties and independently imports the GLB. Both sides use the same camera/light rig. The evaluated dependency graph includes native bevels: comparing the unevaluated source to an evaluated export initially caused a false bounds failure on the small bow needles. The corrected check keeps its 1e-5 tolerance and passes within 2.39e-7. Cameras are fitted to projected physical bounds; all four published images have clear alpha margins. No source or export is rewritten.
+
+Visual feedback: the current model retains the main legacy arrangement. Its wing tips are more sharply triangular than the concept, its central body has smoother continuous transitions than the stepped legacy form, and its small grille is raised rather than recessed. Actual GLB wear/detail contrast is simpler than the concept. This review records those differences while preserving the user's canonical decision. It does not silently approve concept additions or claim pixel-level fidelity.
+
+The interactive and Markdown galleries link the concept and actual imported front/rear views. Existing gameplay frame 1 and disabled presentation rotation contract remains; client size, mounts, full animation handling and final acceptance are separate. No extra gameplay/menu model payload is introduced. Other Terran protocol entries remain open.
