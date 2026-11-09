@@ -43,3 +43,5 @@ Destructor now has one actual retrospective ImageGen request and fresh saved-nat
 Terminator now also has one actual retrospective ImageGen request and fresh evaluated native/imported renders in [terminator-protocol-review.md](terminator-protocol-review.md). Its latest SciTek canonical binary is unchanged. Seven other Terran protocol entries remain open; this does not complete programme #248.
 
 Fleet Battleship now has one actual retrospective ImageGen request and fresh evaluated native/imported renders in [fleet-battleship-protocol-review.md](fleet-battleship-protocol-review.md). The canonical SciTek source is preserved with explicit remaining appearance differences; six other Terran protocol entries remain open.
+
+Command Cruiser now has two actual ImageGen iterations with original wireframe feedback and fresh evaluated native/imported renders in [command-cruiser-protocol-review.md](command-cruiser-protocol-review.md). Rejected iteration 1 and selected iteration 2 remain distinct. Five other Terran protocol entries remain open; no final fidelity/client acceptance is inferred.

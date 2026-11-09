@@ -142,6 +142,8 @@ Additional views: [Retrospective concept (interpretations limited)](../gallery/m
 
 [Blend](../sources/objects/terran/command-cruiser/refined/model.blend) · [GLB](../sources/objects/terran/command-cruiser/refined/model.glb)
 
+Additional views: [Concept iteration 1: rejected anatomy](../gallery/media/concepts/terran/command-cruiser-review-1.png) · [Concept iteration 2: selected after legacy wire feedback](../gallery/media/concepts/terran/command-cruiser-review-2.png) · [Protocol review: actual imported front](../gallery/media/docs/assets/reconstruction/evidence/command-cruiser-protocol/imported-front-quarter.png) · [Protocol review: actual imported rear](../gallery/media/docs/assets/reconstruction/evidence/command-cruiser-protocol/imported-rear-quarter.png)
+
 [Play animation: Animation](../gallery/media/objects/terran/command-cruiser/refined/animation-00.webm)
 
 ## Spy Satellite
