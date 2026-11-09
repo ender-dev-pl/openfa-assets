@@ -54,9 +54,15 @@ def main(key):
         contacts.append(pair)
     dents=[]
     for dent in meta.get('protected_dents',[]):
-        target=author.transformed_reference_point(dent['part'],Vector((dent['x'],dent['y'],dent['undented_z'])),meta)
-        p,normal,index,distance=trees[dent['part']].ray_cast(Vector((target.x,target.y,3)),Vector((0,0,-1)),6);assert p is not None
-        depth=target.z-p.z;assert depth>=dent['minimum_depth'],('lost physical dent',dent,depth)
+        if 'undented_point' in dent:
+            target=author.transformed_reference_point(dent['part'],Vector(dent['undented_point']),meta);outward=Vector(dent['outward']).normalized()
+            p,normal,index,distance=trees[dent['part']].ray_cast(target+outward*3,-outward,6);assert p is not None
+            depth=(target-p).dot(outward)
+        else:
+            target=author.transformed_reference_point(dent['part'],Vector((dent['x'],dent['y'],dent['undented_z'])),meta)
+            p,normal,index,distance=trees[dent['part']].ray_cast(Vector((target.x,target.y,3)),Vector((0,0,-1)),6);assert p is not None
+            depth=target.z-p.z
+        assert depth>=dent['minimum_depth'],('lost physical dent',dent,depth)
         dents.append(dict(part=dent['part'],measured_depth=depth))
     profile_checks=[]
     for constraint in meta.get('profile_constraints',[]):

@@ -1,13 +1,13 @@
 # Artemian mobile remasters
 
-Issue #249 is part of programme #248. This is an incremental delivery: three of five mobile ships are currently remastered. The user confirmed that every culture's spacedocks are already complete. Geostationary Construction AR5C and the other fixed orbital stations are excluded from further work in this programme.
+Issue #249 is part of programme #248. This is an incremental delivery: four of five mobile ships are currently remastered. The user confirmed that every culture's spacedocks are already complete. Geostationary Construction AR5C and the other fixed orbital stations are excluded from further work in this programme.
 
 | Ship | Legacy | Current milestone | Proposed WorldSize |
 |---|---|---|---:|
 | Gerla-Kans Explorer | AR0A.256 | Canonical remaster and concept/GLB feedback verified | 40 |
 | All-Purpose Assault | AR1A.256 | Canonical remaster and concept/GLB feedback verified | 48 |
 | Shielded Multi-Assault | AR2C.256 | Canonical remaster and concept/GLB feedback verified | 64 |
-| Ultimate Mk II | AR3C.256 | Pending | — |
+| Ultimate Mk II | AR3C.256 | Canonical remaster and concept/GLB feedback verified | 88 |
 | Hardcore | AR4C.256 | Pending | — |
 
 ## Evidence and concept workflow
@@ -53,6 +53,18 @@ The first study's exact gold/silver half division was explicitly unproven. This 
 Saved-native and independent-import checks cover per-part source-form deviation, closed geometry, matching world positions, actual renders, 45 seated connections and three protected dents. The alpha bounds of reference heading4 are 38 by 8 pixels. Estimated comparison elevation and azimuth expose corresponding ends without claiming recovered gameplay orientation. WorldSize 64 is a medium-combat size proposal; four equipment mounts, client scale/heading/material validation and final user artistic acceptance remain separate.
 
 Both earlier canonical models were genuinely regenerated and independently verified after the atlas-region engine extension. Their GLB bytes and rendered appearance remain unchanged; current source/runtime bindings accompany the refreshed native files. No extra gameplay/menu model is introduced.
+
+## Ultimate Mk II refinement and GLB feedback
+
+AR3C's 32 paletted headings show an elongated low silver upper cover above a smaller green lower body, with grey perimeter protrusions. Pale marks do not establish lamps, windows or emission. Its heavy-combat catalogue role and six equipment slots do not calibrate mounts or assign functions to protrusions.
+
+One actual ImageGen concept retains the silver lid, recessed green body, restrained surface construction and low opaque perimeter fittings. Exact count, profile and hatch layout remain interpretation. The canonical `sources/objects/artemian/ultimate-mk-ii/model.blend` and `model.glb` reduce 81,928 triangles in 55 meshes to 43,040 triangles in four batches, one material and three embedded PBR maps. All 55 source part identities remain editable vertex groups.
+
+Actual GLB feedback found hanging bulb-like fittings. Twelve declared, root-preserving axial transforms flatten those profiles to 35% outward depth and broaden them to 125% transverse width, with inverse-transpose normal correction. The actual imported side/end/underside views were compared again with legacy and concept. Fitting number and final pad shape remain authored; they are not twelve recovered weapons or equipment mounts.
+
+Saved-native and independent-import checks verify the explicitly transformed baseline form, closed positive geometry, 54 seated connections, matching positions and actual renders. Radial ray checks preserve the lid/body dents at measured depths approximately 0.01214 and 0.01000 model units; vertical-only checks would not measure these side dents correctly. The direct GLB UV/area check requires both silver upper and green lower surfaces, while rejecting unproven emission. Shared generator/verifier changes were exercised on earlier models, whose GLB bytes and appearance remain unchanged.
+
+The green underside is darker under the current preview lighting than the original. Client material/illumination validation remains separate; emission is not invented to compensate. Reference heading4 alpha bounds are 78 by 21 pixels. Comparison camera estimates do not establish recovered heading or projection. WorldSize 88 is a heavy-combat scale proposal; six socket locations and final user artistic acceptance remain separate.
 
 ## Reproduction
 

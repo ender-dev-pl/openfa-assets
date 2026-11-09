@@ -2,7 +2,7 @@
 from pathlib import Path
 import argparse,json,sys
 import bpy,bmesh
-from mathutils import Matrix
+from mathutils import Matrix,Vector
 sys.path.insert(0,str(Path(__file__).parent))
 import remaster_braccatian_mobile_ships as core
 ROOT=Path(__file__).resolve().parents[3]
@@ -31,6 +31,10 @@ def transformed_reference_point(name,point,recipe):
         p.x*=target_width/old_width
         p.y+=adjustment['front_retreat']*t
         p.z=(p.z+adjustment['front_lift']*t*max(0,min(1,(p.z+.015)/.04)))*adjustment['height_scale']
+    for change in recipe.get('part_transforms',[]):
+        if name!=change['part']:continue
+        origin=Vector(change['origin']);axis=Vector(change['axis']).normalized();delta=p-origin;axial=axis*delta.dot(axis)
+        p=origin+(delta-axial)*change['transverse_scale']+axial*change['axial_scale']
     return p
 
 
@@ -86,6 +90,14 @@ def main(key):
             for vertex in o.data.vertices:vertex.co=transformed_reference_point(o.name,vertex.co,recipe)
             for face in o.data.polygons:face.use_smooth=False
             o.data.update()
+        for change in recipe.get('part_transforms',[]):
+            if o.name!=change['part']:continue
+            normals=[n.vector.copy() for n in o.data.corner_normals];axis=Vector(change['axis']).normalized()
+            for vertex in o.data.vertices:vertex.co=transformed_reference_point(o.name,vertex.co,recipe)
+            o.data.update();corrected=[]
+            for normal in normals:
+                axial=axis*normal.dot(axis);corrected.append(((normal-axial)/change['transverse_scale']+axial/change['axial_scale']).normalized())
+            o.data.normals_split_custom_set(corrected)
         before=len(o.data.polygons);target=next((v for word,v in recipe['part_face_budget'].items() if word!='default' and word in o.name.lower()),recipe['part_face_budget']['default'])
         if before>target:
             modifier=o.modifiers.new('Game density budget','DECIMATE');modifier.ratio=target/before;modifier.use_collapse_triangulate=True;bpy.ops.object.modifier_apply(modifier=modifier.name)

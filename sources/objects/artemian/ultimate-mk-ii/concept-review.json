@@ -1,0 +1,58 @@
+{
+  "asset": "openfa:ship/artemian/ultimate-mk-ii",
+  "issue": 249,
+  "stage": "Canonical remaster, concept and independent imported-GLB feedback reviewed",
+  "tool": "Built-in image_gen",
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. Asset: OpenFA Artemian Ultimate MkII AR3C heavy combat spacecraft. Input image is actual correctly paletted legacy headings0/4/12/28, PRIMARY reference for silhouette, proportions, major sections and colours. Remaster that SAME object: one very broad low elongated OVAL SILVER opaque upper cover, stretched along its fore-aft axis roughly2:1 in top plan; a visibly smaller FOREST-GREEN rounded lower body/bowl hangs beneath, recessed inward from silver cover perimeter. A narrow dark/alloy seam separates overlapping upper/lower assemblies. Small seated grey perimeter protrusions surround the lower body below the lid edge. Legacy does not establish exact count; an authored even ring of twelve modest fittings is plausible, but do NOT turn these into twelve guns or engines. Cover is continuous smooth worn silver alloy with a low convex roof, NOT a circular flying saucer, not a flat metal plate, no tall central dome/bridge, no fins, no extra pods. Preserve the visible green underbody; do not make the craft entirely grey. Pale yellow-white original highlights do NOT establish emission/windows/lamps; avoid glowing light strips or exhausts. Six equipment slots have unknown positions: no speculative equipment placement. Sparse fitted maintenance covers, tiny fasteners and recessed seams, large calm surfaces without dense panel grids. Used spacecraft metal: restrained grime near seams, scuffs, small irregular stains and dents while silhouette stays clear. Professional high-detail believable game asset concept. One consistent spacecraft shown in large elevated front-three-quarter, smaller true side view and top view, same proportions and fittings. Plain charcoal background, no text or logos.",
+      "verdict": "Retained broad form/material reference: elongated silver low convex lid, recessed green lower body, modest opaque grey perimeter fittings, sparse worn alloy construction. Exact fitting count and hatch layout remain authored; no emission inferred from legacy pale marks.",
+      "input_images": [
+        {
+          "role": "Actual paletted legacy reference",
+          "sha256": "4341e9280bac96c471236b940606180c84b0a0fc08f742a4cd08a6fbfc9bdea1"
+        }
+      ],
+      "generated_original_sha256": "fcc734cbdba08c22f7a6cb1d05230c05bc49e7ac2fcf999355dc84da79c55f05",
+      "image": "gallery/media/concepts/artemian/ultimate-mk-ii-01.png",
+      "sha256": "fcc734cbdba08c22f7a6cb1d05230c05bc49e7ac2fcf999355dc84da79c55f05",
+      "gallery_label": "Reviewed silver lid and green lower body concept"
+    }
+  ],
+  "maximum_iterations": 3,
+  "remaining_iterations": 2,
+  "legacy_identity": {
+    "entry": "AR3C.256",
+    "source_sha256": "51f6ee65f9b243ca6f694dcda42fe0eb4a62f5936ac45e011ecefd9b1f901301",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ],
+    "all_32_descriptors_inspected": true
+  },
+  "reviewed_binary_hashes": {
+    "blend": "d970ae89f7d3b5b05da8be646ed2575ae8da20b2de700eb7dcb1c6957f1d5132",
+    "glb": "2c89290ba89c0753ed5a51c55f54b878ec97d515191f37baad974f9579eca11b"
+  },
+  "glb_feedback": [
+    {
+      "round": 1,
+      "verdict": "Actual imported hero/side/end/underside views retain low elongated silver lid and green lower body, but the perimeter fittings hang as rounded bulbs. Correct their profile towards lower broad seated pads, following actual legacy/concept cues; preserve fitting roots and support connections."
+    },
+    {
+      "round": 2,
+      "verdict": "Twelve fitting profiles shortened to35 percent along their outward axes and broadened to125 percent transversely about preserved roots, with inverse-transpose normal correction. Actual imported 0/4/12/28 comparison against legacy and concept inspected; low silver cover, recessed green underbody, seam and modest perimeter pads retained. 43040tri/4batches/1material,54 tested contacts,two radial dents. Exact fitting count/shape and hatch layout remain interpretation; underside is shaded by the preview lighting, so client illumination/material validation remains necessary."
+    },
+    {
+      "round": 3,
+      "verdict": "Coarse projected-aspect check exposed a too-flat comparison camera. Raised estimated comparison elevation from.16 to.29 and rerendered corresponding views; did not distort the hull to compensate for a camera mismatch. This remains an estimated view, not recovered client calibration."
+    }
+  ],
+  "glb_visual_review": "Actual legacy and independent GLB at estimated corresponding 0/4/12/28 angles compared with concept1. Broad elongated convex silver cover over smaller green body retained. Green underbody is readable in side/underside views but darker under preview lighting than the original; this is not solved by inventing emission. Twelve low broad fittings replace the rejected hanging bulb profile while retaining their root contacts. Actual reference side alpha bounds78x21; comparison elevation.29/azimuth180 are estimates, not recovered client calibration. Sparse wear and hatches remain authored; no dense panel grid or inferred glow.",
+  "next_step": "One canonical GLB across gameplay/menus/SciTek; client validation of WorldSize88 proposal, six uncalibrated equipment slots, heading and lighting/materials. Final user artistic acceptance separate.",
+  "final_user_acceptance": "pending"
+}

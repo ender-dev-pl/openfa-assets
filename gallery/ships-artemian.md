@@ -42,11 +42,13 @@ Additional views: [Rear fittings](../gallery/media/objects/artemian/shielded-mul
 
 `openfa:ship/artemian/ultimate-mk-ii`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Ultimate Mk II](../gallery/media/docs/assets/reconstruction/ships/artemian/ultimate-mk-ii/front-quarter.png)
+![Ultimate Mk II](../gallery/media/objects/artemian/ultimate-mk-ii/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/artemian/ultimate-mk-ii/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/artemian/ultimate-mk-ii/model.glb)
+[Blend](../sources/objects/artemian/ultimate-mk-ii/model.blend) · [GLB](../sources/objects/artemian/ultimate-mk-ii/model.glb)
+
+Additional views: [Rear fittings](../gallery/media/objects/artemian/ultimate-mk-ii/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/artemian/ultimate-mk-ii/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/artemian/ultimate-mk-ii/heading-04.png) · [Reviewed silver lid and green lower body concept](../gallery/media/concepts/artemian/ultimate-mk-ii-01.png)
 
 ## Hardcore
 

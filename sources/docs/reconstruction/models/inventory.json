@@ -31071,7 +31071,7 @@
           "stage": "mobile-ship-remaster",
           "blend": "objects/artemian/gerla-kans-explorer/model.blend",
           "present": true,
-          "sha256": "c336b1216fb4b530d7e11c56d4724e3f21811022e1dc89f2926908dd8e52756b",
+          "sha256": "c2ac7c77f64973c3b3ecdd9fba72569a8a1e92022acb57a1155cf424a99765cd",
           "views": [
             {
               "label": "Rear fittings",
@@ -31202,7 +31202,7 @@
           "stage": "mobile-ship-remaster",
           "blend": "objects/artemian/all-purpose-assault/model.blend",
           "present": true,
-          "sha256": "f03cde43e2097f5f6af26c370edcb2f0d19aa1263a17b72c6db33460ea65e01a",
+          "sha256": "de581781ae7cc452bdf1824171a7596698804c88f4fb44f29eb733d14d37393a",
           "views": [
             {
               "label": "Rear fittings",
@@ -31333,7 +31333,7 @@
           "stage": "mobile-ship-remaster",
           "blend": "objects/artemian/shielded-multi-assault/model.blend",
           "present": true,
-          "sha256": "5897ef65d1b8352521d5e206a98efb722056febe691a06120abf903b750ee98d",
+          "sha256": "189b736f4e9c6e5dcb8359dbd7c678df518008b4d7e97a6c91340fd63496234b",
           "views": [
             {
               "label": "Rear fittings",
@@ -31465,21 +31465,39 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/artemian/ultimate-mk-ii/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/artemian/ultimate-mk-ii/model.blend",
           "present": true,
-          "sha256": "c2255259e6544f87308c982db8120bdc5120cae4f68ce36cf5f15c99767be4ef",
-          "final_visual_acceptance": "not-established"
+          "sha256": "d970ae89f7d3b5b05da8be646ed2575ae8da20b2de700eb7dcb1c6957f1d5132",
+          "views": [
+            {
+              "label": "Rear fittings",
+              "image": "gallery/media/objects/artemian/ultimate-mk-ii/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/artemian/ultimate-mk-ii/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 comparison",
+              "image": "gallery/media/objects/artemian/ultimate-mk-ii/heading-04.png"
+            },
+            {
+              "label": "Reviewed silver lid and green lower body concept",
+              "image": "gallery/media/concepts/artemian/ultimate-mk-ii-01.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent legacy/concept/imported-render review complete; final user acceptance and client calibration separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -31523,6 +31541,30 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/artemian/ultimate-mk-ii/model.blend",
+          "present": true,
+          "sha256": "c2255259e6544f87308c982db8120bdc5120cae4f68ce36cf5f15c99767be4ef",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/artemian/ultimate-mk-ii/model.blend",
+        "glb": "objects/artemian/ultimate-mk-ii/model.glb",
+        "issue": 249,
+        "integration": "One canonical source/export across gameplay, ship/build menus and SciTek. Keep the original catalogue id; WorldSize and equipment mounts require client calibration."
+      },
+      "remaster_protocol": {
+        "issue": 249,
+        "concept_review": "reviewed",
+        "review": "objects/artemian/ultimate-mk-ii/concept-review.json",
+        "iterations": 1,
+        "final_user_acceptance": "pending"
       }
     },
     {
