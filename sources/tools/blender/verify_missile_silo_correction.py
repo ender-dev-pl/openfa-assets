@@ -51,20 +51,22 @@ def compare(a,b):
 
 def fixed_clearance():
     # Deliberate iris leaf laps are excluded; this tests moving vs fixed structures.
-    checks=0
+    checks=0;contacts={}
     for f in range(1,34):
         phase(f);rows=geometry();trees={n:BVHTree.FromPolygons(r['points'],r['faces']) for n,r in rows.items()}
         leaves=[n for n in trees if n.startswith('Iris curved leaf')];assert len(leaves)==8
         for leaf in leaves:
             for name in trees:
                 if name in leaves or name=='Iris hinge axle '+leaf[-2:]:continue
-                overlap=trees[leaf].overlap(trees[name]);assert not overlap,(f,leaf,name,len(overlap));checks+=1
-    return dict(frames=33,moving_vs_fixed_tests=checks,overlaps=0,leaf_laps='Original overlapping leaf seams excluded; each leaf mounting axle is an intentional attached interface, not a fixed obstruction')
+                overlap=trees[leaf].overlap(trees[name]);checks+=1
+                if overlap:contacts[name]=contacts.get(name,0)+1
+    return dict(frames=33,moving_vs_fixed_tests=checks,overlaps=sum(contacts.values()),contacts_by_obstacle=contacts,acceptance='Original leaf/rim interference retained explicitly at user request; not a collision-free mechanism claim. Decoy passage checked separately.',leaf_laps='Original overlapping seams and own hinge interfaces excluded')
+
 
 
 def open_bore():
     scene=bpy.context.scene;phase(17);deps=bpy.context.evaluated_depsgraph_get();count=0
-    for radii,stop in [([0,.1,.2,.3,.4,.42,.44],-3.05)]:
+    for radii,stop in [([0,.1,.2,.25,.30,.32,.33],-3.05)]:
         for r in radii:
             for i in range(96):
                 p=Vector((r*math.cos(math.tau*i/96),r*math.sin(math.tau*i/96),1.1))
@@ -74,7 +76,7 @@ def open_bore():
     for r in [.05,.3,.6,.84]:
         for i in range(16):
             p=Vector((r*math.cos(math.tau*i/16),r*math.sin(math.tau*i/16),1.1));hit,*_=scene.ray_cast(deps,p,Vector((0,0,-1)),distance=.7);assert hit,('closed iris gap',r,i)
-    return dict(open_mouth_radius_tested=.44,continuous_shaft_radius_tested=.44,nominal_mouth_radius=.87,shaft_z_tested=[-3.05,1.1],empty_ray_samples=count,closed_cover_samples=64)
+    return dict(open_mouth_radius_tested=.33,continuous_shaft_radius_tested=.33,nominal_mouth_radius=.87,shaft_z_tested=[-3.05,1.1],empty_ray_samples=count,closed_cover_samples=64)
 
 
 def view(direction=(3,-5,4)):
@@ -114,7 +116,7 @@ def decoy_fixture():
     for i,(x,z) in enumerate([(-.57,-.57),(-.57,.57),(.57,-.57),(.57,.57)]):bpy.data.objects['DecoySegment'+str(i)].location=(x,0,z)
     bpy.context.view_layer.update();missile=[o for o in new if o.type=='MESH'];p=[o.matrix_world@v.co for o in missile for v in o.data.vertices]
     length=max(v.y for v in p)-min(v.y for v in p);silo_scale=min(64/d for d in xy);factor=(48/length)/silo_scale;required=max(math.hypot(v.x,v.z) for v in p)*factor
-    assert required<.44;root.scale=(factor,)*3;root.rotation_euler.x=-math.pi/2
+    assert required<.33;root.scale=(factor,)*3;root.rotation_euler.x=-math.pi/2
     tests=0
     for tip in [-1.15,-.75,-.25,.25,.55,.75,1.0,1.4,1.8,2.2,2.8]:
         root.location.z=tip-(-min(v.y for v in p))*factor;bpy.context.view_layer.update()
@@ -128,10 +130,11 @@ def decoy_fixture():
         for o in missile:
             tree=BVHTree.FromPolygons([o.matrix_world@v.co for v in o.data.vertices],[list(f.vertices) for f in o.data.polygons])
             for obstacle in obstacles:assert not tree.overlap(obstacle),'Loaded Decoy intersects iris blades';loaded_tests+=1
+    render('stored-payload-top',17,(0,.001,6))
     root.location.z=1.8-(-min(v.y for v in p))*factor;bpy.context.view_layer.update()
     render('decoy-clearance',17)
     for o in new:bpy.data.objects.remove(o,do_unlink=True)
-    return dict(decoy_glb_sha256=sha(path),world_size_proposal=48,building_footprint=[2,2],surface_cell_world_units=32,silo_world_fit_scale=silo_scale,fit_datum='Closed bind-pose footprint, never the extended moving leaves',relative_scale=factor,required_projectile_radius=required,usable_shaft_radius=.44,radial_margin=.44-required,launch_collision_tests=tests,loaded_payload_collision_tests=loaded_tests,loaded_payload_nose_z=-1.15,overlaps=0,orientation='Native-Y missile to native+Z launch axis by X-90deg; explicit proposed adapter',scope='Asset fixture using current source fitting formulas; loaded payload held below the closed iris before lift. Not a game-client runtime test')
+    return dict(decoy_glb_sha256=sha(path),world_size_proposal=48,building_footprint=[2,2],surface_cell_world_units=32,silo_world_fit_scale=silo_scale,fit_datum='Closed bind-pose footprint, never the extended moving leaves',relative_scale=factor,required_projectile_radius=required,usable_shaft_radius=.33,radial_margin=.33-required,launch_collision_tests=tests,loaded_payload_collision_tests=loaded_tests,loaded_payload_nose_z=-1.15,overlaps=0,orientation='Native-Y missile to native+Z launch axis by X-90deg; explicit proposed adapter',scope='Asset fixture using current source fitting formulas; loaded payload held below the closed iris before lift. Not a game-client runtime test')
 
 
 def preview(clip):
@@ -174,7 +177,7 @@ def main():
     animation=preview(clips[0])
     for p in author.MEDIA.rglob('*.png'):p.write_bytes(clean_png(p.read_bytes()))
     manifest=dict(id='terran:missile-silo',stage='refined-study',glb=(author.OUT/'model.glb').relative_to(author.ROOT).as_posix(),glb_sha256=before['glb'],blend_sha256=before['blend'],renderer_path=Path(__file__).relative_to(author.ROOT).as_posix(),renderer_sha256=sha(Path(__file__)),blender=bpy.app.version_string,clips=[animation]);(author.MEDIA/'animation-previews.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    report=dict(id='terran:missile-silo',blender=bpy.app.version_string,binaries=before,patcher_sha256=sha(Path(author.__file__)),drive_generator_sha256=sha(Path(author.__file__).with_name('missile_silo_drive.py')),verifier_sha256=sha(Path(__file__)),position_errors=errors,native_fixed_clearance=native_fixed,imported_fixed_clearance=imported_fixed,native_bore=native_bore,imported_bore=imported_bore,decoy_fixture=fixture,clip=animation,lamp_views=lamp_views,lamp_control='Two channels, three fixed colour presets each, zero/unit node scales; no invented blink timeline',renders={p.relative_to(author.MEDIA).as_posix():sha(p) for p in author.MEDIA.rglob('*.png')},scope='Saved-source and imported asset runtime. Lift/slide above rim is authored; actual game/Android and final visual acceptance separate')
+    report=dict(id='terran:missile-silo',blender=bpy.app.version_string,binaries=before,patcher_sha256=sha(Path(author.__file__)),drive_generator_sha256=sha(Path(author.__file__).with_name('missile_silo_drive.py')),verifier_sha256=sha(Path(__file__)),position_errors=errors,native_fixed_clearance=native_fixed,imported_fixed_clearance=imported_fixed,native_bore=native_bore,imported_bore=imported_bore,decoy_fixture=fixture,clip=animation,lamp_views=lamp_views,lamp_control='Two channels, three fixed colour presets each, zero/unit node scales; no invented blink timeline',renders={p.relative_to(author.MEDIA).as_posix():sha(p) for p in author.MEDIA.rglob('*.png')},scope='Saved-source and imported asset runtime. Original drop0.20/turn50 leaves restored; original wall interference retained. Tube and black floor corrected; actual game/Android acceptance separate')
     assert before=={k:sha(author.OUT/('model.'+k)) for k in before};(author.OUT/'correction-runtime-verification.json').write_text(json.dumps(report,indent=2)+'\n');print('SILO_CORRECTION_VERIFIED',json.dumps(report),flush=True)
 
 

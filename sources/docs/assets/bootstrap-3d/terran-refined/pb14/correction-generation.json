@@ -2,9 +2,9 @@
   "id": "terran:missile-silo",
   "issue": 242,
   "drive_generator_sha256": "a1ab6e1796d0a5fa9dfc1f3b2e3c8ea570de704cd164d0d7ed84b414dd3b0797",
-  "source_sha256": "5e52745e478476c37f7eca7d539d616bf87a275601b016c61285fddf17aa55c9",
-  "glb_sha256": "2ccd94bcc5052f2e87cc346ffe5539293af89d49fddc7e0d7af12bd3eb9d3f11",
-  "patcher_sha256": "504459bb9e3503621ea31c89eecf7e515288b382ccea9105f2531446ad993a08",
+  "source_sha256": "974aef937d8de7c89b0bba6ab295e574cf53749699ab60e23c4f579358af0420",
+  "glb_sha256": "9b45f44bb87a47df85c0ed03a4a038e71f43cbaea5630351fdc588616cc0d147",
+  "patcher_sha256": "63a855c7f5d593f3d2eda82e4b342c2806731135fc98c24f73512a69c374cffe",
   "closed_frame": 1,
   "open_frame": 17,
   "loop_end_frame": 33,
@@ -17,11 +17,12 @@
   "ground_level": 0,
   "preserve_ground_origin": true,
   "leaf_count": 8,
-  "lift": 0.08,
+  "lift": 0,
+  "drop": 0.2,
   "radial_travel": 0,
-  "turn_degrees": 90,
+  "turn_degrees": 50,
   "nominal_aperture_radius": 0.87,
-  "verified_passage_radius": 0.44,
+  "verified_passage_radius": 0.33,
   "shaft_floor": -3.2,
   "payload_hold_centre_z": -2.05,
   "payload_contract": "Keep payload below closed iris, then raise through fully clear aperture; no retracting carrier",
@@ -43,5 +44,5 @@
     ]
   },
   "lamp_on_off": "independent node visibility per lamp; original blink schedule not established",
-  "mechanism_status": "Original eight curved leaves; coaxial lift then90-degree rotation; no radial travel, folding or scaling"
+  "mechanism_status": "Original eight curved leaves and original drop0.20/turn50 motion; tube-only correction; original leaf/rim interference explicitly retained"
 }
