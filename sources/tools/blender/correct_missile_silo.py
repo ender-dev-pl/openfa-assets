@@ -9,6 +9,7 @@ import math
 import json
 import hashlib
 import struct
+import sys
 import bpy
 import bmesh
 from mathutils import Vector,Quaternion,Matrix
@@ -16,6 +17,9 @@ from mathutils import Vector,Quaternion,Matrix
 ROOT=Path(__file__).resolve().parents[3]
 OUT=ROOT/'sources/docs/assets/bootstrap-3d/terran-refined/pb14'
 MEDIA=ROOT/'gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14'
+sys.path.insert(0,str(Path(__file__).parent))
+from missile_silo_drive import drive, key_drive, linear_action
+
 COLOURS={'Hybrid':(255,210,138),'AttackOnly':(194,93,93),'DefenceOnly':(150,170,210)}
 
 
@@ -99,7 +103,7 @@ def iris():
     # Lift above the rim, then retain their 50-degree turn while sliding outward.
     root=bpy.data.objects['SiloPlacementRoot']
     for obj in list(bpy.context.scene.objects):
-        if obj.name.startswith(('Iris curved leaf','Iris hinge axle','Silo lid hinge','Iris sliding guide')):
+        if obj.name.startswith(('Iris curved leaf','Iris hinge axle','Silo lid hinge','Iris sliding guide','Iris mount','Iris lift carriage','Iris drive wheel')):
             bpy.data.objects.remove(obj,do_unlink=True)
     for i in range(8):
         theta=i*math.tau/8;angle=theta+math.pi/8
@@ -117,27 +121,14 @@ def iris():
         obj=mesh_object(f'Iris curved leaf {i+1:02}',vertices,faces,bpy.data.materials['Refined | bronze' if i%2==0 else 'Refined | gold'],root)
         obj.location=pivot;obj.rotation_mode='QUATERNION';obj['iris_leaf']=i
         modifier=obj.modifiers.new('Leaf metal thickness','SOLIDIFY');modifier.thickness=.012;modifier.offset=-1
-        guide=box(f'Iris sliding guide {i+1:02}',(0,0,0),(1,.05,.035),bpy.data.materials['Refined | dark'],root)
-        guide.rotation_euler.z=angle
-        bpy.ops.mesh.primitive_cylinder_add(vertices=16,radius=.020,depth=.06)
-        axle=bpy.context.object;axle.name=f'Iris hinge axle {i+1:02}';axle.parent=obj;axle.location=(0,0,.03);axle.data.materials.append(bpy.data.materials['Refined | edge'])
+        head,wheel,guide=drive(root,i,radial,angle,obj,box,mesh_object)
         for frame,amount,lift in [(1,0,0),(3,0,.08),(5,1/7,.08),(9,3/7,.08),(13,5/7,.08),(17,1,.08),(21,5/7,.08),(25,3/7,.08),(29,1/7,.08),(31,0,.08),(33,0,0)]:
             obj.location=pivot+radial*(.60*amount)+Vector((0,0,lift))
             obj.rotation_quaternion=Quaternion((0,0,1),math.radians(50)*amount)
             obj.keyframe_insert('location',frame=frame);obj.keyframe_insert('rotation_quaternion',frame=frame)
-            guide.location=radial*(.82+.4*amount)+Vector((0,0,.615+lift));guide.scale=(.08+.4*amount,1,1)
-            guide.keyframe_insert('location',frame=frame);guide.keyframe_insert('scale',frame=frame)
+            key_drive(head,wheel,guide,radial,amount,lift,frame)
         obj.animation_data.action.name='IrisLeaf_'+str(i+1)
-        for layer in obj.animation_data.action.layers:
-            for strip in layer.strips:
-                for bag in strip.channelbags:
-                    for curve in bag.fcurves:
-                        for key in curve.keyframe_points:key.interpolation='LINEAR'
-        for layer in guide.animation_data.action.layers:
-            for strip in layer.strips:
-                for bag in strip.channelbags:
-                    for curve in bag.fcurves:
-                        for key in curve.keyframe_points:key.interpolation='LINEAR'
+        for animated in [obj,head,wheel,guide]:linear_action(animated)
         obj['mechanism']='Original curved leaf lifts 0.08 above rim, turns original 50 degrees and slides radially 0.60; no folding or scaling'
 
 
@@ -192,7 +183,7 @@ def main():
     bpy.ops.export_scene.gltf(filepath=str(OUT/'model.glb'),export_format='GLB',use_selection=True,export_extras=True,export_animations=True,export_animation_mode='SCENE',export_frame_range=True,export_apply=True,export_anim_slide_to_zero=True,export_merge_animation='NONE')
     merge_iris_clip(OUT/'model.glb')
     bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'model.blend'),compress=True,relative_remap=True)
-    report=dict(id='terran:missile-silo',issue=242,source_sha256=sha(OUT/'model.blend'),glb_sha256=sha(OUT/'model.glb'),patcher_sha256=sha(Path(__file__)),closed_frame=1,open_frame=17,loop_end_frame=33,fps=16,normalized_glb_seconds=[0,2],full_open_seconds=1,ground_level=0,preserve_ground_origin=True,leaf_count=8,lift=.08,radial_travel=.60,turn_degrees=50,nominal_aperture_radius=.87,usable_shaft_radius=.82,shaft_floor=-3.2,payload_hold_centre_z=-2.05,payload_contract='Keep payload below closed iris, then raise through fully clear aperture; no retracting carrier',lamp_colours_srgb=COLOURS,lamp_on_off='independent node visibility per lamp; original blink schedule not established',mechanism_status='Original eight curved leaves; small lift above rim then original turn plus radial slide; no folding or scaling')
+    report=dict(id='terran:missile-silo',issue=242,drive_generator_sha256=sha(Path(__file__).with_name('missile_silo_drive.py')),source_sha256=sha(OUT/'model.blend'),glb_sha256=sha(OUT/'model.glb'),patcher_sha256=sha(Path(__file__)),closed_frame=1,open_frame=17,loop_end_frame=33,fps=16,normalized_glb_seconds=[0,2],full_open_seconds=1,ground_level=0,preserve_ground_origin=True,leaf_count=8,lift=.08,radial_travel=.60,turn_degrees=50,nominal_aperture_radius=.87,usable_shaft_radius=.82,shaft_floor=-3.2,payload_hold_centre_z=-2.05,payload_contract='Keep payload below closed iris, then raise through fully clear aperture; no retracting carrier',lamp_colours_srgb=COLOURS,lamp_on_off='independent node visibility per lamp; original blink schedule not established',mechanism_status='Original eight curved leaves; small lift above rim then original turn plus radial slide; no folding or scaling')
     (OUT/'correction-generation.json').write_text(json.dumps(report,indent=2)+'\n');print('SILO_CORRECTED',json.dumps(report))
 
 

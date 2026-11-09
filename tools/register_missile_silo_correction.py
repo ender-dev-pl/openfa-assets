@@ -32,7 +32,7 @@ def main():
     if 'historical_metadata' not in metadata:
         metadata = dict(historical_metadata=metadata)
     metadata.update(building_id='terran:missile-silo', name='Missile Silo', culture='terran', footprint=[2, 2], binaries=report['binaries'], ground_level=0, preserve_ground_origin=True, animation=dict(name='Animation', duration_seconds=2, closed_seconds=0, fully_open_seconds=1, closed_again_seconds=2), status_lamps=dict(channels=['StatusLampLeft', 'StatusLampRight'], presets=dict(Hybrid=[255, 210, 138], AttackOnly=[194, 93, 93], DefenceOnly=[150, 170, 210]), control='Exactly one preset mesh at unit scale per lit channel; all presets zero scale when off; no lamp animation'), integration='Preserve grade Z=0 native / Y=0 glTF. Original curved leaves lift above rim, turn and slide outward. Fit building using closed bind pose; never resize from opened leaf extent. Hold payload below closed iris until open, then lift. Explicit client state/node binding required.', verification='correction-runtime-verification.json')
-    metadata['iris_mechanism'] = dict(blades=8, original_mesh_preserved=True, lift=.08, radial_travel=.60, turn_degrees=50, motion='Lift above rim, then original turn and outward sliding on telescopic guides; no folding or leaf scaling', proof='diaphragm-verification.json')
+    metadata['iris_mechanism'] = dict(blades=8, original_mesh_preserved=True, lift=.08, radial_travel=.60, turn_degrees=50, motion='Lift above rim, then original turn and constant-length rack travel through body-mounted guides; pinion drive and leaf bearing; no folding or leaf scaling', proof='diaphragm-verification.json')
     write(folder / 'model.json', metadata)
     path = ROOT / 'sources/docs/reconstruction/models/inventory.json'
     inventory = json.loads(path.read_text())
@@ -47,7 +47,7 @@ def main():
         row.setdefault('superseded_studies', []).extend(old)
     current = next(r for r in row['available_studies'] if r['stage'] == 'refined-study')
     current['sha256'] = report['binaries']['blend']
-    current['views'] = [dict(label=label, image=MEDIA+'/'+name+'.png') for name, label in [('closed', 'Closed iris'), ('decoy-clearance', 'Decoy clearance fixture'), ('lamps-AttackOnly', 'Attack: red'), ('lamps-DefenceOnly', 'Defence: blue'), ('lamps-Hybrid', 'Hybrid: base colour'), ('lamps-off', 'Both lamps off'), ('lamps-left', 'Left lamp only'), ('lamps-right', 'Right lamp only')]]
+    current['views'] = [dict(label=label, image=MEDIA+'/'+name+'.png') for name, label in [('mechanism-detail', 'Body-mounted actuators and leaf bearings'), ('closed', 'Closed iris'), ('decoy-clearance', 'Decoy clearance fixture'), ('lamps-AttackOnly', 'Attack: red'), ('lamps-DefenceOnly', 'Defence: blue'), ('lamps-Hybrid', 'Hybrid: base colour'), ('lamps-off', 'Both lamps off'), ('lamps-left', 'Left lamp only'), ('lamps-right', 'Right lamp only')]]
     row['available_studies'] = [current]
     row['selected_refinement'] = dict(stage='refined-study', blend=BASE.removeprefix('sources/')+'/model.blend', glb=BASE.removeprefix('sources/')+'/model.glb', issue=242, integration='Use one canonical payload across surface, build menu and SciTek. Explicit terrain, stored-payload and lamp controls require game runtime integration.')
     row['acceptance'].update(reference_views_reviewed=True, moving_assemblies=True, native_and_glb_runtime=True)
@@ -56,7 +56,7 @@ def main():
     layout_path = ROOT / 'project/layout.json'
     layout = json.loads(layout_path.read_text())
     known = {r['destination'] for r in layout['files']}
-    files = list(folder.glob('*')) + list(media.rglob('*')) + [ROOT/'sources/tools/blender/correct_missile_silo.py', ROOT/'sources/tools/blender/verify_missile_silo_correction.py', ROOT/'sources/tools/blender/verify_silo_diaphragm.py']
+    files = list(folder.glob('*')) + list(media.rglob('*')) + [ROOT/'sources/tools/blender/correct_missile_silo.py', ROOT/'sources/tools/blender/verify_missile_silo_correction.py', ROOT/'sources/tools/blender/verify_silo_diaphragm.py', ROOT/'sources/tools/blender/missile_silo_drive.py']
     for path in sorted(files):
         if not path.is_file():
             continue

@@ -34,6 +34,7 @@ def geometry():
     bpy.context.view_layer.update();deps=bpy.context.evaluated_depsgraph_get();rows={}
     for o in bpy.context.scene.objects:
         if o.type!='MESH' or o.get('preview_only'):continue
+        assert all(material is not None for material in o.data.materials),('Unbound material',o.name)
         eo=o.evaluated_get(deps);mesh=eo.to_mesh();rows[o.name]=dict(points=[o.matrix_world@v.co for v in mesh.vertices],faces=[tuple(p.vertices) for p in mesh.polygons]);eo.to_mesh_clear()
     return rows
 
@@ -173,7 +174,7 @@ def main():
     animation=preview(clips[0])
     for p in author.MEDIA.rglob('*.png'):p.write_bytes(clean_png(p.read_bytes()))
     manifest=dict(id='terran:missile-silo',stage='refined-study',glb=(author.OUT/'model.glb').relative_to(author.ROOT).as_posix(),glb_sha256=before['glb'],blend_sha256=before['blend'],renderer_path=Path(__file__).relative_to(author.ROOT).as_posix(),renderer_sha256=sha(Path(__file__)),blender=bpy.app.version_string,clips=[animation]);(author.MEDIA/'animation-previews.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    report=dict(id='terran:missile-silo',blender=bpy.app.version_string,binaries=before,patcher_sha256=sha(Path(author.__file__)),verifier_sha256=sha(Path(__file__)),position_errors=errors,native_fixed_clearance=native_fixed,imported_fixed_clearance=imported_fixed,native_bore=native_bore,imported_bore=imported_bore,decoy_fixture=fixture,clip=animation,lamp_views=lamp_views,lamp_control='Two channels, three fixed colour presets each, zero/unit node scales; no invented blink timeline',renders={p.relative_to(author.MEDIA).as_posix():sha(p) for p in author.MEDIA.rglob('*.png')},scope='Saved-source and imported asset runtime. Lift/slide above rim is authored; actual game/Android and final visual acceptance separate')
+    report=dict(id='terran:missile-silo',blender=bpy.app.version_string,binaries=before,patcher_sha256=sha(Path(author.__file__)),drive_generator_sha256=sha(Path(author.__file__).with_name('missile_silo_drive.py')),verifier_sha256=sha(Path(__file__)),position_errors=errors,native_fixed_clearance=native_fixed,imported_fixed_clearance=imported_fixed,native_bore=native_bore,imported_bore=imported_bore,decoy_fixture=fixture,clip=animation,lamp_views=lamp_views,lamp_control='Two channels, three fixed colour presets each, zero/unit node scales; no invented blink timeline',renders={p.relative_to(author.MEDIA).as_posix():sha(p) for p in author.MEDIA.rglob('*.png')},scope='Saved-source and imported asset runtime. Lift/slide above rim is authored; actual game/Android and final visual acceptance separate')
     assert before=={k:sha(author.OUT/('model.'+k)) for k in before};(author.OUT/'correction-runtime-verification.json').write_text(json.dumps(report,indent=2)+'\n');print('SILO_CORRECTION_VERIFIED',json.dumps(report),flush=True)
 
 
