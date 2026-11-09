@@ -74,6 +74,16 @@ def main():
             assert proof['ray_witnesses']['native']==dict(void_rays=3,solid_rays=2)
             assert meta['material_tiles']['Type 1.5 | dull pale blue grey end']==3
             assert meta['comparison_heading_directions']=={'12':[0,-1,.95],'28':[0,1,.95]}
+        if folder.name=='elite-command-craft':
+            names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
+            assert len(names)==59 and {'Elite pod -1','Elite pod 1','Elite central connection'}<=names
+            assert len(proof['attachments_checked'])==58 and len(proof['protected_dents'])==2
+            assert proof['ray_witnesses']['native']==dict(void_rays=2,solid_rays=3)
+            assert meta['material_tiles']['Elite | worn red tips']==6
+            assert review['attempts_used']==review['maximum_attempts']==3 and len(review['failed_attempts'])==2
+            assert [it['number'] for it in review['iterations']]==[3]
+            assert meta['comparison_heading_directions']=={'12':[0,-1,.25],'28':[0,1,.25]}
+            areas=atlas_areas(raw,g,length,'PrimaryHullAndArmour');assert areas[6]>0 and areas[3]>.02,areas.tolist()
         if folder.name=='transportation-craft-type-3':
             names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
             assert len(names)==83 and {f'Transport tower {i}' for i in [-1,0,1]}<=names

@@ -1,0 +1,413 @@
+{
+  "id": "openfa:ship/mauna/elite-command-craft",
+  "issue": 251,
+  "name": "Elite Command Craft",
+  "key": "MN3C",
+  "source": "docs/assets/reconstruction/ships/mauna/elite-command-craft",
+  "size_class": "large command craft",
+  "world_size_proposal": 160,
+  "equipment_slots": 6,
+  "material_tiles": {
+    "Elite | dark recesses": 4,
+    "Elite | oxidized service alloy": 1,
+    "Elite | worn grey armour": 0,
+    "Elite | worn pale blue bands": 3,
+    "Elite | worn red tips": 6
+  },
+  "surface_regions": {
+    "Elite pod -1": {
+      "default_tile": 0,
+      "bands": [
+        {
+          "axis": "y",
+          "minimum": -0.94,
+          "maximum": -0.75,
+          "tile": 3
+        }
+      ],
+      "interpretation": "Opaque pale blue band continued around the grey block; hidden continuation and exact width authored."
+    },
+    "Elite pod 1": {
+      "default_tile": 0,
+      "bands": [
+        {
+          "axis": "y",
+          "minimum": 0.3,
+          "maximum": 0.49,
+          "tile": 3
+        }
+      ],
+      "interpretation": "Opaque pale blue band continued around the grey block; hidden continuation and exact width authored."
+    }
+  },
+  "part_face_budget": {
+    "pod": 8500,
+    "service frame": 400,
+    "service inset": 350,
+    "service strip": 120,
+    "fastener": 120,
+    "default": 250
+  },
+  "edge_finish": {
+    "part_keywords": [
+      "service frame"
+    ],
+    "width": 0.003,
+    "segments": 2,
+    "angle_limit": 0.52
+  },
+  "max_triangles": 65000,
+  "max_primitives": 6,
+  "comparison_elevation": 0.18,
+  "comparison_azimuth": 0,
+  "reference_side_bounds": [
+    82,
+    18
+  ],
+  "protected_dents": [
+    {
+      "part": "Elite pod 1",
+      "undented_point": [
+        -0.52,
+        0.6,
+        0.12
+      ],
+      "outward": [
+        -1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.003
+    },
+    {
+      "part": "Elite pod -1",
+      "undented_point": [
+        0.52,
+        -0.64,
+        0.12
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.003
+    }
+  ],
+  "attachment_pairs": [
+    {
+      "part": "Elite blue side band -1 -1",
+      "support": "Elite pod -1"
+    },
+    {
+      "part": "Elite service frame -1 -1",
+      "support": "Elite pod -1"
+    },
+    {
+      "part": "Elite service inset -1 -1",
+      "support": "Elite service frame -1 -1"
+    },
+    {
+      "part": "Elite service strip -1 -1 0",
+      "support": "Elite service inset -1 -1"
+    },
+    {
+      "part": "Elite service strip -1 -1 1",
+      "support": "Elite service inset -1 -1"
+    },
+    {
+      "part": "Elite service strip -1 -1 2",
+      "support": "Elite service inset -1 -1"
+    },
+    {
+      "part": "Elite blue side band -1 1",
+      "support": "Elite pod -1"
+    },
+    {
+      "part": "Elite service frame -1 1",
+      "support": "Elite pod -1"
+    },
+    {
+      "part": "Elite service inset -1 1",
+      "support": "Elite service frame -1 1"
+    },
+    {
+      "part": "Elite service strip -1 1 0",
+      "support": "Elite service inset -1 1"
+    },
+    {
+      "part": "Elite service strip -1 1 1",
+      "support": "Elite service inset -1 1"
+    },
+    {
+      "part": "Elite service strip -1 1 2",
+      "support": "Elite service inset -1 1"
+    },
+    {
+      "part": "Elite blue side band 1 -1",
+      "support": "Elite pod 1"
+    },
+    {
+      "part": "Elite service frame 1 -1",
+      "support": "Elite pod 1"
+    },
+    {
+      "part": "Elite service inset 1 -1",
+      "support": "Elite service frame 1 -1"
+    },
+    {
+      "part": "Elite service strip 1 -1 0",
+      "support": "Elite service inset 1 -1"
+    },
+    {
+      "part": "Elite service strip 1 -1 1",
+      "support": "Elite service inset 1 -1"
+    },
+    {
+      "part": "Elite service strip 1 -1 2",
+      "support": "Elite service inset 1 -1"
+    },
+    {
+      "part": "Elite blue side band 1 1",
+      "support": "Elite pod 1"
+    },
+    {
+      "part": "Elite service frame 1 1",
+      "support": "Elite pod 1"
+    },
+    {
+      "part": "Elite service inset 1 1",
+      "support": "Elite service frame 1 1"
+    },
+    {
+      "part": "Elite service strip 1 1 0",
+      "support": "Elite service inset 1 1"
+    },
+    {
+      "part": "Elite service strip 1 1 1",
+      "support": "Elite service inset 1 1"
+    },
+    {
+      "part": "Elite service strip 1 1 2",
+      "support": "Elite service inset 1 1"
+    },
+    {
+      "part": "Elite pod -1",
+      "support": "Elite central connection"
+    },
+    {
+      "part": "Elite axial root -1",
+      "support": "Elite pod -1"
+    },
+    {
+      "part": "Elite axial projection -1",
+      "support": "Elite axial root -1"
+    },
+    {
+      "part": "Elite red tip -1",
+      "support": "Elite axial projection -1"
+    },
+    {
+      "part": "Elite upper blue band -1",
+      "support": "Elite pod -1"
+    },
+    {
+      "part": "Elite upper rail -1 0",
+      "support": "Elite pod -1"
+    },
+    {
+      "part": "Elite upper rail -1 1",
+      "support": "Elite pod -1"
+    },
+    {
+      "part": "Elite small red marker -1 -1",
+      "support": "Elite pod -1"
+    },
+    {
+      "part": "Elite frame fastener -1 -1 0 0",
+      "support": "Elite service frame -1 -1"
+    },
+    {
+      "part": "Elite frame fastener -1 -1 0 1",
+      "support": "Elite service frame -1 -1"
+    },
+    {
+      "part": "Elite frame fastener -1 -1 1 0",
+      "support": "Elite service frame -1 -1"
+    },
+    {
+      "part": "Elite frame fastener -1 -1 1 1",
+      "support": "Elite service frame -1 -1"
+    },
+    {
+      "part": "Elite small red marker -1 1",
+      "support": "Elite pod -1"
+    },
+    {
+      "part": "Elite frame fastener -1 1 0 0",
+      "support": "Elite service frame -1 1"
+    },
+    {
+      "part": "Elite frame fastener -1 1 0 1",
+      "support": "Elite service frame -1 1"
+    },
+    {
+      "part": "Elite frame fastener -1 1 1 0",
+      "support": "Elite service frame -1 1"
+    },
+    {
+      "part": "Elite frame fastener -1 1 1 1",
+      "support": "Elite service frame -1 1"
+    },
+    {
+      "part": "Elite pod 1",
+      "support": "Elite central connection"
+    },
+    {
+      "part": "Elite axial root 1",
+      "support": "Elite pod 1"
+    },
+    {
+      "part": "Elite axial projection 1",
+      "support": "Elite axial root 1"
+    },
+    {
+      "part": "Elite red tip 1",
+      "support": "Elite axial projection 1"
+    },
+    {
+      "part": "Elite upper blue band 1",
+      "support": "Elite pod 1"
+    },
+    {
+      "part": "Elite upper rail 1 0",
+      "support": "Elite pod 1"
+    },
+    {
+      "part": "Elite upper rail 1 1",
+      "support": "Elite pod 1"
+    },
+    {
+      "part": "Elite small red marker 1 -1",
+      "support": "Elite pod 1"
+    },
+    {
+      "part": "Elite frame fastener 1 -1 0 0",
+      "support": "Elite service frame 1 -1"
+    },
+    {
+      "part": "Elite frame fastener 1 -1 0 1",
+      "support": "Elite service frame 1 -1"
+    },
+    {
+      "part": "Elite frame fastener 1 -1 1 0",
+      "support": "Elite service frame 1 -1"
+    },
+    {
+      "part": "Elite frame fastener 1 -1 1 1",
+      "support": "Elite service frame 1 -1"
+    },
+    {
+      "part": "Elite small red marker 1 1",
+      "support": "Elite pod 1"
+    },
+    {
+      "part": "Elite frame fastener 1 1 0 0",
+      "support": "Elite service frame 1 1"
+    },
+    {
+      "part": "Elite frame fastener 1 1 0 1",
+      "support": "Elite service frame 1 1"
+    },
+    {
+      "part": "Elite frame fastener 1 1 1 0",
+      "support": "Elite service frame 1 1"
+    },
+    {
+      "part": "Elite frame fastener 1 1 1 1",
+      "support": "Elite service frame 1 1"
+    }
+  ],
+  "void_rays": [
+    {
+      "origin": [
+        -0.43,
+        0,
+        2
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 3
+    },
+    {
+      "origin": [
+        0.43,
+        0,
+        2
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 3
+    }
+  ],
+  "solid_rays": [
+    {
+      "origin": [
+        0,
+        -0.62,
+        2
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 3
+    },
+    {
+      "origin": [
+        0,
+        0,
+        2
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 3
+    },
+    {
+      "origin": [
+        0,
+        0.62,
+        2
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 3
+    }
+  ],
+  "interpretation": "Two chamfered square-section grey blocks in tandem, short narrow connector and opposed red-tipped axial rods, opaque pale blue bands. Rod function, hidden engineering and exact band continuation unproven; no glazing or emission inferred. WorldSize160 proposal, six uncalibrated mounts.",
+  "comparison_heading_directions": {
+    "12": [
+      0,
+      -1,
+      0.25
+    ],
+    "28": [
+      0,
+      1,
+      0.25
+    ]
+  }
+}

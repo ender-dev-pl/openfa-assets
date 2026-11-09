@@ -33274,21 +33274,39 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/mauna/elite-command-craft/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/mauna/elite-command-craft/model.blend",
           "present": true,
-          "sha256": "3f34a14e55af002c618f89fe99a82647cd562e7d5c93b4e7758e3be6b873b74d",
-          "final_visual_acceptance": "not-established"
+          "sha256": "dd8ad7e70ac5f1d367b5f2ee6fdc037fd27c4ed66e0d48b6270e0a40d2dba967",
+          "views": [
+            {
+              "label": "Rear fittings",
+              "image": "gallery/media/objects/mauna/elite-command-craft/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/mauna/elite-command-craft/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 comparison",
+              "image": "gallery/media/objects/mauna/elite-command-craft/heading-04.png"
+            },
+            {
+              "label": "Reviewed tandem command-craft concept (attempt3)",
+              "image": "gallery/media/concepts/mauna/elite-command-craft-03.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent legacy/concept/imported-render review complete; final user acceptance and client calibration separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -33331,6 +33349,103 @@
         "atmospheric": {
           "ordered_candidates": [],
           "selected_first_available": null
+        }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/mauna/elite-command-craft/model.blend",
+          "present": true,
+          "sha256": "3f34a14e55af002c618f89fe99a82647cd562e7d5c93b4e7758e3be6b873b74d",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/mauna/elite-command-craft/model.blend",
+        "glb": "objects/mauna/elite-command-craft/model.glb",
+        "issue": 251,
+        "integration": "One canonical source/export across gameplay, ship/build menus and SciTek. Keep the original catalogue id; WorldSize and equipment mounts require client calibration."
+      },
+      "remaster_protocol": {
+        "issue": 251,
+        "concept_review": "reviewed",
+        "review": "objects/mauna/elite-command-craft/concept-review.json",
+        "iterations": 1,
+        "final_user_acceptance": "pending"
+      },
+      "reviewed_model": {
+        "blend": "objects/mauna/elite-command-craft/model.blend",
+        "sha256": "dd8ad7e70ac5f1d367b5f2ee6fdc037fd27c4ed66e0d48b6270e0a40d2dba967",
+        "runtime_evidence": {
+          "format": "mobile-remaster-runtime-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "metadata": "sources/objects/mauna/elite-command-craft/model.json",
+          "runtime_report": "sources/objects/mauna/elite-command-craft/runtime-verification.json",
+          "visual_review": "sources/objects/mauna/elite-command-craft/concept-review.json",
+          "generator": "sources/tools/blender/remaster_mauna_mobile_ship.py",
+          "verifier": "sources/tools/blender/verify_mauna_mobile_ship.py",
+          "native_render": "gallery/media/objects/mauna/elite-command-craft/verified-native.png",
+          "imported_render": "gallery/media/objects/mauna/elite-command-craft/verified-imported.png",
+          "files": {
+            "sources/objects/mauna/elite-command-craft/model.blend": "dd8ad7e70ac5f1d367b5f2ee6fdc037fd27c4ed66e0d48b6270e0a40d2dba967",
+            "sources/objects/mauna/elite-command-craft/model.glb": "cd9c6946b96936a60ed62a925e172d37f7ff912bd6685534ae2a35d6a6083ad9",
+            "sources/objects/mauna/elite-command-craft/model.json": "260896b0cef182ab417d77192990a84c3ed4ef7162f8f57f65761f418c161db1",
+            "sources/objects/mauna/elite-command-craft/runtime-verification.json": "5b4114ae9fd74d4ad4e64f2668c20ca95770c417d1284c9b3fb5604c95d76789",
+            "sources/objects/mauna/elite-command-craft/concept-review.json": "76a0ac86003fb42083c4d2ca05c21f37c522cb125ee8ccfd3d40aaee633c192d",
+            "sources/objects/mauna/elite-command-craft/recipe.json": "c82c7de5a1803f5365c93c730726f61d402710c03d4a76027332c42e331e353c",
+            "sources/docs/assets/reconstruction/ships/mauna/elite-command-craft/model.blend": "3f34a14e55af002c618f89fe99a82647cd562e7d5c93b4e7758e3be6b873b74d",
+            "sources/tools/blender/remaster_mauna_mobile_ship.py": "867880874549de38529bd10b81416f4718c4a6f95b17b0498efd78848915f39e",
+            "sources/tools/blender/remaster_braccatian_mobile_ships.py": "1469b823c8eb59eeca4372d8f5b4059f9ab1de5a1d02e4ddcf3ae9a650cbffa1",
+            "sources/tools/blender/remaster_artemian_mobile_ship.py": "7c152a5afe634f62d26a8666787d99944caa5000110239bb54f59db5e9f61d1b",
+            "tools/author_mauna_mobile_maps.py": "214e5905f8120d78085a7c4985a20447e595d7a29eb129cc50be5609a0d209e0",
+            "sources/tools/blender/verify_mauna_mobile_ship.py": "2e99e1ffca8318b2ced51e5e78520a5b93f9d531af8e62b9e77d0ff58cf5359f",
+            "sources/tools/blender/verify_artemian_mobile_ship.py": "e55822d3d93d2f33dee9236a230b1acff0a553e20d553d15d69cd9e44a7123de",
+            "gallery/media/objects/mauna/elite-command-craft/front-quarter.png": "90064bb8b916415f11f572b541a997e55225e04371e9e4e06901a7272c3f0749",
+            "gallery/media/objects/mauna/elite-command-craft/heading-00.png": "558db978074643866878e3f3a7b1335686e8b3c037081205e5071d3482bcf3b5",
+            "gallery/media/objects/mauna/elite-command-craft/heading-04.png": "ee836a11dadb1f25a5e3afb76ec8bf565844e7212718a323957a8dbab0a814b9",
+            "gallery/media/objects/mauna/elite-command-craft/heading-08.png": "747889ab085db8222bc0e03667a52de1881fd435cd5ee9b8ffa8e8b8259998b5",
+            "gallery/media/objects/mauna/elite-command-craft/heading-12.png": "68fb0884d281a8f5b8997bb46df8b0045b439b6b72693b9e4eda39532310aafa",
+            "gallery/media/objects/mauna/elite-command-craft/heading-16.png": "6e2cd056311b8e5f9db4cf37b19fd070514f3ede1d048118b441ed32b66994ef",
+            "gallery/media/objects/mauna/elite-command-craft/heading-28.png": "b15e5322c92cd3699f954d6d125dd5f5733d0729b7fcb24a8076f522ec63ed8a",
+            "gallery/media/objects/mauna/elite-command-craft/rear-quarter.png": "16b265dd4d19674f668b17d911777b47519b2c48a2263787bcaa2b60be56723b",
+            "gallery/media/objects/mauna/elite-command-craft/side.png": "f5d32da2ddf524954590a2d95d2517ed1a6848c17a50571aeb9f23ea81334e89",
+            "gallery/media/objects/mauna/elite-command-craft/technical-wireframe.png": "91734fb35b65c81ba2bcd0ab62cc81269823ab6285c951f7b318108363a244e6",
+            "gallery/media/objects/mauna/elite-command-craft/top.png": "1367a1c0848916066d1c89323c22370474adb5a6bad9797f92470978f76d92cb",
+            "gallery/media/objects/mauna/elite-command-craft/underside.png": "0f4a4965dc44271e49621aa0524b844410c6e4963ef1d3f9d05f35daf7517e20",
+            "gallery/media/objects/mauna/elite-command-craft/verified-imported.png": "90064bb8b916415f11f572b541a997e55225e04371e9e4e06901a7272c3f0749",
+            "gallery/media/objects/mauna/elite-command-craft/verified-native.png": "259223ccee193da01b7d305adb23ab9fa23a992b0aa5350795b495f71a1d50bd"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/elite-command-craft/concept-review.json",
+          "sha256": "76a0ac86003fb42083c4d2ca05c21f37c522cb125ee8ccfd3d40aaee633c192d",
+          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/elite-command-craft/concept-review.json",
+          "sha256": "76a0ac86003fb42083c4d2ca05c21f37c522cb125ee8ccfd3d40aaee633c192d",
+          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/elite-command-craft/concept-review.json",
+          "sha256": "76a0ac86003fb42083c4d2ca05c21f37c522cb125ee8ccfd3d40aaee633c192d",
+          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/elite-command-craft/concept-review.json",
+          "sha256": "76a0ac86003fb42083c4d2ca05c21f37c522cb125ee8ccfd3d40aaee633c192d",
+          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/elite-command-craft/runtime-verification.json",
+          "sha256": "5b4114ae9fd74d4ad4e64f2668c20ca95770c417d1284c9b3fb5604c95d76789",
+          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
         }
       }
     },

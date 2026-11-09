@@ -1,14 +1,14 @@
 # Mauna mobile remasters
 
-Issue #251 is part of programme #248 and follows the completed Artemian asset milestone #249 / PR #250. This is an incremental delivery: one of five Mauna mobile ships is currently remastered. All cultures' completed spacedocks, including MN5C, are explicitly excluded. Asset verification does not establish final user artistic acceptance or client calibration.
+Issue #251 is part of programme #248 and follows the completed Artemian asset milestone #249 / PR #250. This is an incremental delivery: four of five Mauna mobile ships are currently remastered. All cultures' completed spacedocks, including MN5C, are explicitly excluded. Asset verification does not establish final user artistic acceptance or client calibration.
 
 | Ship | Legacy | Current milestone | Proposed WorldSize |
 |---|---|---|---:|
 | Surveillance Craft Type 5 | MN0A.256 | Canonical remaster and concept/GLB feedback verified | 40 |
-| Combat Craft Type 1.5 | MN1A.256 | Pending | — |
+| Combat Craft Type 1.5 | MN1A.256 | Canonical remaster and concept/GLB feedback verified | 56 |
 | Max Combat Craft Type 6 | MN2C.256 | Pending | — |
-| Elite Command Craft | MN3C.256 | Pending | — |
-| Transportation Craft Type 3 | MN4C.256 | Pending | — |
+| Elite Command Craft | MN3C.256 | Canonical remaster and concept/GLB feedback verified | 160 |
+| Transportation Craft Type 3 | MN4C.256 | Canonical remaster and concept/GLB feedback verified | 180 |
 
 ## Evidence and material direction
 
@@ -63,3 +63,11 @@ Generate the independently authored atlas with `tools/author_mauna_mobile_maps.p
 The Mauna author uses stable shared mesh/recipe helpers with its own palette, grouping, planar projection and generator. The verifier reuses geometry/raster helpers while adding native/import void/solid witnesses. Both entrypoints and imported helper files are hash-bound; none of the earlier cultural generators or models is rewritten. Source-bound evidence must follow actual validation, not hash replacement alone.
 
 Inventory selects one canonical payload for gameplay, ship/build menus and SciTek. Historical first studies remain outside current packaging selection. Blender is the asset authoring target runtime; no game build, device performance certification or completed client integration is claimed here.
+
+## Elite Command Craft
+
+MN3C retains two grey chamfered blocks in tandem, a short narrow connector and opposed red-tipped axial rods. All32 populated headings were inspected. Two built-in ImageGen requests returned no pixels; the explicitly authorized third attempt returned the sole inspectable concept. All three requests count against the limit. The concept guides sparse worn alloy, fitted maintenance surfaces and opaque pale-blue bands; exact joints, hidden surfaces and rod function remain interpretations.
+
+The canonical `sources/objects/mauna/elite-command-craft/model.blend` and `model.glb` contain38,594 triangles in four batches, one material and three embedded maps, versus103,696 triangles in59 original meshes. All59 source part identities remain editable. Actual saved-native and independent GLB verification covers source-surface tolerance,58 seated connections, two physical dents, matching exported positions and rendered parity. Two side-void rays preserve the narrow connector; three occupied rays check adjacent structure.
+
+The first GLB feedback found blue-grey rod terminals: the recipe now uses the muted-red atlas tile. End comparison elevation was reduced from0.95 to0.25 after inspecting corresponding legacy12/28, and the saved source/import were actually verified again. End blue-field extent and lighting still differ; no numerical fidelity score or complete client acceptance is inferred. WorldSize160 and six equipment mounts require calibration. The gallery selects the same canonical source for gameplay and all menus, with the first study retained as historical.
