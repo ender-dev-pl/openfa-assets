@@ -30,11 +30,13 @@ Additional views: [Rear fittings](../gallery/media/objects/mauna/combat-craft-ty
 
 `openfa:ship/mauna/max-combat-craft-type-6`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Max Combat Craft Type 6](../gallery/media/docs/assets/reconstruction/ships/mauna/max-combat-craft-type-6/front-quarter.png)
+![Max Combat Craft Type 6](../gallery/media/objects/mauna/max-combat-craft-type-6/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/mauna/max-combat-craft-type-6/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mauna/max-combat-craft-type-6/model.glb)
+[Blend](../sources/objects/mauna/max-combat-craft-type-6/model.blend) · [GLB](../sources/objects/mauna/max-combat-craft-type-6/model.glb)
+
+Additional views: [Rear fittings](../gallery/media/objects/mauna/max-combat-craft-type-6/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mauna/max-combat-craft-type-6/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/mauna/max-combat-craft-type-6/heading-04.png) · [Primitive concept3: limitations documented](../gallery/media/concepts/mauna/max-combat-craft-type-6-03.png) · [User-provided artistic concept](../gallery/media/concepts/mauna/max-combat-craft-type-6-user.png)
 
 ## Elite Command Craft
 

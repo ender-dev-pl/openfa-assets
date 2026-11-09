@@ -36,11 +36,18 @@ def main():
     doc=json.loads((ROOT/'sources/docs/reconstruction/models/mauna-mobile-remaster.json').read_text());models=doc['models'];assert 1<=len(models)<=doc['expected_mobile_ship_count']==5
     refs=json.loads((ROOT/'sources/docs/reconstruction/models/ship-reference-index.json').read_text())['ships'];expected={r['id'] for r in refs if r['culture']=='mauna' and not r['runtime_fixed_scale']}
     assert {r['id'] for r in models}|set(doc['pending'])==expected and not {r['id'] for r in models}&set(doc['pending'])
+    assert {r['id'] for r in doc['quality_followups']}=={'openfa:ship/mauna/elite-command-craft'}
     inventory=json.loads((ROOT/'sources/docs/reconstruction/models/inventory.json').read_text());results=[]
+    assert next(r for r in inventory['records'] if r['id']=='openfa:ship/mauna/elite-command-craft')['acceptance']['high_detail_structure'] is False
     for row in models:
         folder=(ROOT/row['blend']).parent;meta=json.loads((folder/'model.json').read_text());proof=json.loads((folder/'runtime-verification.json').read_text());review=json.loads((folder/'concept-review.json').read_text());media=ROOT/'gallery/media/objects/mauna'/folder.name
-        assert proof['generator_sha256']==meta['generator_sha256']==sha(ROOT/'sources/tools/blender/remaster_mauna_mobile_ship.py')
-        assert proof['verifier_sha256']==sha(ROOT/'sources/tools/blender/verify_mauna_mobile_ship.py')
+        suffix='type6' if folder.name=='max-combat-craft-type-6' else 'mobile_ship'
+        assert proof['generator_sha256']==meta['generator_sha256']==sha(ROOT/('sources/tools/blender/remaster_mauna_'+suffix+'.py'))
+        assert proof['verifier_sha256']==sha(ROOT/('sources/tools/blender/verify_mauna_'+suffix+'.py'))
+        if suffix=='type6':
+            assert proof['verifier_inputs_unchanged'] is True
+            assert proof['shared_mauna_verifier_sha256']==sha(ROOT/'sources/tools/blender/verify_mauna_mobile_ship.py')
+            assert proof['detail_parts_sha256']==meta['detail_parts_sha256']==sha(ROOT/'sources/tools/blender/mauna_type6_detail_parts.py')
         assert meta['shared_recipe_helpers_sha256']==sha(ROOT/'sources/tools/blender/remaster_artemian_mobile_ship.py')
         assert proof['shared_geometry_verifier_sha256']==sha(ROOT/'sources/tools/blender/verify_artemian_mobile_ship.py')
         assert meta['shared_primitives_sha256']==sha(ROOT/'sources/tools/blender/remaster_braccatian_mobile_ships.py')
@@ -60,6 +67,31 @@ def main():
         assert len(g['meshes'])==meta['mesh_batches']==4 and len(g['materials'])==1 and len(g['images'])==3
         assert sum(len(m['primitives']) for m in g['meshes'])<=meta['max_primitives'] and not g.get('animations')
         assert all('uri' not in image for image in g['images']) and not any(g['materials'][0].get('emissiveFactor',[0,0,0]))
+        if folder.name=='max-combat-craft-type-6':
+            names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
+            detail_names=set(meta['detailed_parts']['names'])
+            assert len(names)==58+len(detail_names) and len(detail_names)>100
+            assert len(proof['attachments_checked'])==len(names)-1 and len(proof['protected_dents'])==3
+            assert proof['ray_witnesses']['native']==dict(void_rays=2,solid_rays=3)
+            assert len({n for n in names if n.startswith('Type 6 red raised piece ')})==2
+            assert len({n for n in names if 'detail roof shoulder armour ' in n})==4
+            assert len({n for n in names if 'detail service bay backing ' in n})==6
+            assert meta['material_tiles']['Type 6 | worn red raised pieces']==6
+            assert review['attempts_used']==review['maximum_attempts']==3 and len(review['failed_attempts'])==2
+            assert review['user_references'] and [it['number'] for it in review['iterations']]==[3]
+            for item in review['user_references']:assert sha(ROOT/item['image'])==item['sha256']
+            for field,name in [('detail_baseline_helpers_sha256','mauna_max_combat_craft_type_6_parts.py'),('detail_primitives_sha256','build_openfa_assets.py')]:
+                assert proof[field]==meta[field]==sha(ROOT/'sources/tools/blender'/name)
+            # Actual exported muted-red surfaces must remain separated across
+            # the beam, at the same longitudinal deck station (glTF +Z=-Y).
+            red=[]
+            for mesh in g['meshes']:
+                for prim in mesh['primitives']:
+                    uv=read_accessor(raw,g,length,prim['attributes']['TEXCOORD_0']);pos=read_accessor(raw,g,length,prim['attributes']['POSITION']);idx=read_accessor(raw,g,length,prim['indices']).reshape(-1,3)
+                    means=uv[idx].mean(axis=1);tiles=np.floor(means[:,0]*4)+4*np.floor(means[:,1]*2)
+                    red.extend(pos[idx[tiles==6]].mean(axis=1))
+            red=np.asarray(red);assert len(red)>20 and red[:,0].min()<-.25 and red[:,0].max()>.25
+            assert red[:,2].min()>.60 and np.ptp(red[:,2])<.50
         if folder.name=='surveillance-craft-type-5':
             names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
             assert len(names)==47 and len({n for n in names if 'crown tab' in n})==4 and len({n for n in names if 'warm lower tab' in n})==2

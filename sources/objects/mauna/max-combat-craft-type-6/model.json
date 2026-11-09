@@ -1,0 +1,3089 @@
+{
+  "id": "openfa:ship/mauna/max-combat-craft-type-6",
+  "issue": 251,
+  "name": "Max Combat Craft Type 6",
+  "key": "MN2C",
+  "source": "docs/assets/reconstruction/ships/mauna/max-combat-craft-type-6",
+  "size_class": "large combat craft",
+  "world_size_proposal": 128,
+  "equipment_slots": 6,
+  "material_tiles": {
+    "Type 6 | worn grey layered hull": 0,
+    "Type 6 | worn red raised pieces": 6,
+    "Type 6 | worn brown side details": 7,
+    "Type 6 | dull pale blue end": 3,
+    "Type 6 | oxidized service alloy": 1,
+    "Type 6 | carbon dark strips": 4
+  },
+  "part_face_budget": {
+    "detail roof shoulder rib": 80,
+    "detail roof shoulder service inset": 120,
+    "detail roof shoulder armour": 180,
+    "main hull": 6500,
+    "upper roof": 4500,
+    "red raised piece": 1400,
+    "service frame": 350,
+    "inset": 300,
+    "strip": 100,
+    "fastener": 100,
+    "default": 250
+  },
+  "edge_finish": {
+    "part_keywords": [],
+    "width": 0.003,
+    "segments": 2,
+    "angle_limit": 0.52
+  },
+  "max_triangles": 65000,
+  "max_primitives": 6,
+  "comparison_elevation": 0.18,
+  "comparison_azimuth": 3.141592653589793,
+  "comparison_heading_directions": {
+    "12": [
+      0,
+      -1,
+      0.12
+    ],
+    "28": [
+      0,
+      1,
+      0.12
+    ]
+  },
+  "reference_side_bounds": [
+    59,
+    20
+  ],
+  "protected_dents": [
+    {
+      "part": "Type 6 main hull",
+      "undented_point": [
+        -0.55,
+        0,
+        0.1
+      ],
+      "outward": [
+        -1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0025
+    },
+    {
+      "part": "Type 6 main hull",
+      "undented_point": [
+        0.55,
+        0,
+        0.1
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0025
+    },
+    {
+      "part": "Type 6 sloped upper roof",
+      "x": 0,
+      "y": 0.75,
+      "undented_z": 0.5842857142857143,
+      "minimum_depth": 0.0025
+    }
+  ],
+  "attachment_pairs": [
+    {
+      "part": "Type 6 base service frame -1 0",
+      "support": "Type 6 lower base"
+    },
+    {
+      "part": "Type 6 base grey inset -1 0",
+      "support": "Type 6 base service frame -1 0"
+    },
+    {
+      "part": "Type 6 dark service strip -1 0 0",
+      "support": "Type 6 base grey inset -1 0"
+    },
+    {
+      "part": "Type 6 dark service strip -1 0 1",
+      "support": "Type 6 base grey inset -1 0"
+    },
+    {
+      "part": "Type 6 base service frame -1 1",
+      "support": "Type 6 lower base"
+    },
+    {
+      "part": "Type 6 base grey inset -1 1",
+      "support": "Type 6 base service frame -1 1"
+    },
+    {
+      "part": "Type 6 dark service strip -1 1 0",
+      "support": "Type 6 base grey inset -1 1"
+    },
+    {
+      "part": "Type 6 dark service strip -1 1 1",
+      "support": "Type 6 base grey inset -1 1"
+    },
+    {
+      "part": "Type 6 base service frame 1 0",
+      "support": "Type 6 lower base"
+    },
+    {
+      "part": "Type 6 base grey inset 1 0",
+      "support": "Type 6 base service frame 1 0"
+    },
+    {
+      "part": "Type 6 dark service strip 1 0 0",
+      "support": "Type 6 base grey inset 1 0"
+    },
+    {
+      "part": "Type 6 dark service strip 1 0 1",
+      "support": "Type 6 base grey inset 1 0"
+    },
+    {
+      "part": "Type 6 base service frame 1 1",
+      "support": "Type 6 lower base"
+    },
+    {
+      "part": "Type 6 base grey inset 1 1",
+      "support": "Type 6 base service frame 1 1"
+    },
+    {
+      "part": "Type 6 dark service strip 1 1 0",
+      "support": "Type 6 base grey inset 1 1"
+    },
+    {
+      "part": "Type 6 dark service strip 1 1 1",
+      "support": "Type 6 base grey inset 1 1"
+    },
+    {
+      "part": "Type 6 roof hatch",
+      "support": "Type 6 sloped upper roof"
+    },
+    {
+      "part": "Type 6 roof dark strip 0",
+      "support": "Type 6 roof hatch"
+    },
+    {
+      "part": "Type 6 roof dark strip 1",
+      "support": "Type 6 roof hatch"
+    },
+    {
+      "part": "Type 6 roof dark strip 2",
+      "support": "Type 6 roof hatch"
+    },
+    {
+      "part": "Type 6 main hull",
+      "support": "Type 6 lower base"
+    },
+    {
+      "part": "Type 6 sloped upper roof",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 red mount -1",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 red raised piece -1",
+      "support": "Type 6 red mount -1"
+    },
+    {
+      "part": "Type 6 brown side band -1",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 frame fastener -1 0 0 0",
+      "support": "Type 6 base service frame -1 0"
+    },
+    {
+      "part": "Type 6 frame fastener -1 0 0 1",
+      "support": "Type 6 base service frame -1 0"
+    },
+    {
+      "part": "Type 6 frame fastener -1 0 1 0",
+      "support": "Type 6 base service frame -1 0"
+    },
+    {
+      "part": "Type 6 frame fastener -1 0 1 1",
+      "support": "Type 6 base service frame -1 0"
+    },
+    {
+      "part": "Type 6 frame fastener -1 1 0 0",
+      "support": "Type 6 base service frame -1 1"
+    },
+    {
+      "part": "Type 6 frame fastener -1 1 0 1",
+      "support": "Type 6 base service frame -1 1"
+    },
+    {
+      "part": "Type 6 frame fastener -1 1 1 0",
+      "support": "Type 6 base service frame -1 1"
+    },
+    {
+      "part": "Type 6 frame fastener -1 1 1 1",
+      "support": "Type 6 base service frame -1 1"
+    },
+    {
+      "part": "Type 6 red mount 1",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 red raised piece 1",
+      "support": "Type 6 red mount 1"
+    },
+    {
+      "part": "Type 6 brown side band 1",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 frame fastener 1 0 0 0",
+      "support": "Type 6 base service frame 1 0"
+    },
+    {
+      "part": "Type 6 frame fastener 1 0 0 1",
+      "support": "Type 6 base service frame 1 0"
+    },
+    {
+      "part": "Type 6 frame fastener 1 0 1 0",
+      "support": "Type 6 base service frame 1 0"
+    },
+    {
+      "part": "Type 6 frame fastener 1 0 1 1",
+      "support": "Type 6 base service frame 1 0"
+    },
+    {
+      "part": "Type 6 frame fastener 1 1 0 0",
+      "support": "Type 6 base service frame 1 1"
+    },
+    {
+      "part": "Type 6 frame fastener 1 1 0 1",
+      "support": "Type 6 base service frame 1 1"
+    },
+    {
+      "part": "Type 6 frame fastener 1 1 1 0",
+      "support": "Type 6 base service frame 1 1"
+    },
+    {
+      "part": "Type 6 frame fastener 1 1 1 1",
+      "support": "Type 6 base service frame 1 1"
+    },
+    {
+      "part": "Type 6 brown rear panel",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 pale fore panel",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 rear dark strip 0",
+      "support": "Type 6 brown rear panel"
+    },
+    {
+      "part": "Type 6 rear dark strip 1",
+      "support": "Type 6 brown rear panel"
+    },
+    {
+      "part": "Type 6 rear dark strip 2",
+      "support": "Type 6 brown rear panel"
+    },
+    {
+      "part": "Type 6 rear dark strip 3",
+      "support": "Type 6 brown rear panel"
+    },
+    {
+      "part": "Type 6 warm lower block 0",
+      "support": "Type 6 lower base"
+    },
+    {
+      "part": "Type 6 warm lower block 1",
+      "support": "Type 6 lower base"
+    },
+    {
+      "part": "Type 6 warm lower block 2",
+      "support": "Type 6 lower base"
+    },
+    {
+      "part": "Type 6 roof fastener 0 0",
+      "support": "Type 6 roof hatch"
+    },
+    {
+      "part": "Type 6 roof fastener 0 1",
+      "support": "Type 6 roof hatch"
+    },
+    {
+      "part": "Type 6 roof fastener 1 0",
+      "support": "Type 6 roof hatch"
+    },
+    {
+      "part": "Type 6 roof fastener 1 1",
+      "support": "Type 6 roof hatch"
+    },
+    {
+      "part": "Type 6 detail service bay backing -1 0",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 0 -1",
+      "support": "Type 6 detail service bay backing -1 0"
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 0 -1",
+      "support": "Type 6 detail service bay backing -1 0"
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 0 1",
+      "support": "Type 6 detail service bay backing -1 0"
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 0 1",
+      "support": "Type 6 detail service bay backing -1 0"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 0 0",
+      "support": "Type 6 detail service bay backing -1 0"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 0 1",
+      "support": "Type 6 detail service bay backing -1 0"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 0 2",
+      "support": "Type 6 detail service bay backing -1 0"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 0 3",
+      "support": "Type 6 detail service bay backing -1 0"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 0 4",
+      "support": "Type 6 detail service bay backing -1 0"
+    },
+    {
+      "part": "Type 6 detail service bay backing -1 1",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 1 -1",
+      "support": "Type 6 detail service bay backing -1 1"
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 1 -1",
+      "support": "Type 6 detail service bay backing -1 1"
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 1 1",
+      "support": "Type 6 detail service bay backing -1 1"
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 1 1",
+      "support": "Type 6 detail service bay backing -1 1"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 1 0",
+      "support": "Type 6 detail service bay backing -1 1"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 1 1",
+      "support": "Type 6 detail service bay backing -1 1"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 1 2",
+      "support": "Type 6 detail service bay backing -1 1"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 1 3",
+      "support": "Type 6 detail service bay backing -1 1"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 1 4",
+      "support": "Type 6 detail service bay backing -1 1"
+    },
+    {
+      "part": "Type 6 detail service bay backing -1 2",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 2 -1",
+      "support": "Type 6 detail service bay backing -1 2"
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 2 -1",
+      "support": "Type 6 detail service bay backing -1 2"
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 2 1",
+      "support": "Type 6 detail service bay backing -1 2"
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 2 1",
+      "support": "Type 6 detail service bay backing -1 2"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 2 0",
+      "support": "Type 6 detail service bay backing -1 2"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 2 1",
+      "support": "Type 6 detail service bay backing -1 2"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 2 2",
+      "support": "Type 6 detail service bay backing -1 2"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 2 3",
+      "support": "Type 6 detail service bay backing -1 2"
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 2 4",
+      "support": "Type 6 detail service bay backing -1 2"
+    },
+    {
+      "part": "Type 6 detail pipe saddle -1 0",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail seated conduit -1 0",
+      "support": "Type 6 detail pipe saddle -1 0"
+    },
+    {
+      "part": "Type 6 detail pipe saddle -1 1",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail seated conduit -1 1",
+      "support": "Type 6 detail pipe saddle -1 1"
+    },
+    {
+      "part": "Type 6 detail service bay backing 1 0",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 0 -1",
+      "support": "Type 6 detail service bay backing 1 0"
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 0 -1",
+      "support": "Type 6 detail service bay backing 1 0"
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 0 1",
+      "support": "Type 6 detail service bay backing 1 0"
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 0 1",
+      "support": "Type 6 detail service bay backing 1 0"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 0 0",
+      "support": "Type 6 detail service bay backing 1 0"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 0 1",
+      "support": "Type 6 detail service bay backing 1 0"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 0 2",
+      "support": "Type 6 detail service bay backing 1 0"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 0 3",
+      "support": "Type 6 detail service bay backing 1 0"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 0 4",
+      "support": "Type 6 detail service bay backing 1 0"
+    },
+    {
+      "part": "Type 6 detail service bay backing 1 1",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 1 -1",
+      "support": "Type 6 detail service bay backing 1 1"
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 1 -1",
+      "support": "Type 6 detail service bay backing 1 1"
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 1 1",
+      "support": "Type 6 detail service bay backing 1 1"
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 1 1",
+      "support": "Type 6 detail service bay backing 1 1"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 1 0",
+      "support": "Type 6 detail service bay backing 1 1"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 1 1",
+      "support": "Type 6 detail service bay backing 1 1"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 1 2",
+      "support": "Type 6 detail service bay backing 1 1"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 1 3",
+      "support": "Type 6 detail service bay backing 1 1"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 1 4",
+      "support": "Type 6 detail service bay backing 1 1"
+    },
+    {
+      "part": "Type 6 detail service bay backing 1 2",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 2 -1",
+      "support": "Type 6 detail service bay backing 1 2"
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 2 -1",
+      "support": "Type 6 detail service bay backing 1 2"
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 2 1",
+      "support": "Type 6 detail service bay backing 1 2"
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 2 1",
+      "support": "Type 6 detail service bay backing 1 2"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 2 0",
+      "support": "Type 6 detail service bay backing 1 2"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 2 1",
+      "support": "Type 6 detail service bay backing 1 2"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 2 2",
+      "support": "Type 6 detail service bay backing 1 2"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 2 3",
+      "support": "Type 6 detail service bay backing 1 2"
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 2 4",
+      "support": "Type 6 detail service bay backing 1 2"
+    },
+    {
+      "part": "Type 6 detail pipe saddle 1 0",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail seated conduit 1 0",
+      "support": "Type 6 detail pipe saddle 1 0"
+    },
+    {
+      "part": "Type 6 detail pipe saddle 1 1",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail seated conduit 1 1",
+      "support": "Type 6 detail pipe saddle 1 1"
+    },
+    {
+      "part": "Type 6 detail prow recessed backing",
+      "support": "Type 6 pale fore panel"
+    },
+    {
+      "part": "Type 6 detail prow frame side -1",
+      "support": "Type 6 detail prow recessed backing"
+    },
+    {
+      "part": "Type 6 detail prow frame horizontal -1",
+      "support": "Type 6 detail prow recessed backing"
+    },
+    {
+      "part": "Type 6 detail prow frame side 1",
+      "support": "Type 6 detail prow recessed backing"
+    },
+    {
+      "part": "Type 6 detail prow frame horizontal 1",
+      "support": "Type 6 detail prow recessed backing"
+    },
+    {
+      "part": "Type 6 detail prow rib 0",
+      "support": "Type 6 detail prow recessed backing"
+    },
+    {
+      "part": "Type 6 detail prow rib 1",
+      "support": "Type 6 detail prow recessed backing"
+    },
+    {
+      "part": "Type 6 detail prow rib 2",
+      "support": "Type 6 detail prow recessed backing"
+    },
+    {
+      "part": "Type 6 detail prow rib 3",
+      "support": "Type 6 detail prow recessed backing"
+    },
+    {
+      "part": "Type 6 detail prow rib 4",
+      "support": "Type 6 detail prow recessed backing"
+    },
+    {
+      "part": "Type 6 detail prow rib 5",
+      "support": "Type 6 detail prow recessed backing"
+    },
+    {
+      "part": "Type 6 detail foredeck recessed backing",
+      "support": "Type 6 main hull"
+    },
+    {
+      "part": "Type 6 detail foredeck edge -1",
+      "support": "Type 6 detail foredeck recessed backing"
+    },
+    {
+      "part": "Type 6 detail foredeck transverse edge -1",
+      "support": "Type 6 detail foredeck recessed backing"
+    },
+    {
+      "part": "Type 6 detail foredeck edge 1",
+      "support": "Type 6 detail foredeck recessed backing"
+    },
+    {
+      "part": "Type 6 detail foredeck transverse edge 1",
+      "support": "Type 6 detail foredeck recessed backing"
+    },
+    {
+      "part": "Type 6 detail foredeck louver 0",
+      "support": "Type 6 detail foredeck recessed backing"
+    },
+    {
+      "part": "Type 6 detail foredeck louver 1",
+      "support": "Type 6 detail foredeck recessed backing"
+    },
+    {
+      "part": "Type 6 detail foredeck louver 2",
+      "support": "Type 6 detail foredeck recessed backing"
+    },
+    {
+      "part": "Type 6 detail foredeck louver 3",
+      "support": "Type 6 detail foredeck recessed backing"
+    },
+    {
+      "part": "Type 6 detail foredeck louver 4",
+      "support": "Type 6 detail foredeck recessed backing"
+    },
+    {
+      "part": "Type 6 detail roof backing -1",
+      "support": "Type 6 sloped upper roof"
+    },
+    {
+      "part": "Type 6 detail roof louver -1 0",
+      "support": "Type 6 detail roof backing -1"
+    },
+    {
+      "part": "Type 6 detail roof louver -1 1",
+      "support": "Type 6 detail roof backing -1"
+    },
+    {
+      "part": "Type 6 detail roof louver -1 2",
+      "support": "Type 6 detail roof backing -1"
+    },
+    {
+      "part": "Type 6 detail roof louver -1 3",
+      "support": "Type 6 detail roof backing -1"
+    },
+    {
+      "part": "Type 6 detail roof louver -1 4",
+      "support": "Type 6 detail roof backing -1"
+    },
+    {
+      "part": "Type 6 detail roof louver -1 5",
+      "support": "Type 6 detail roof backing -1"
+    },
+    {
+      "part": "Type 6 detail roof bezel -1 -1",
+      "support": "Type 6 detail roof backing -1"
+    },
+    {
+      "part": "Type 6 detail roof bezel -1 1",
+      "support": "Type 6 detail roof backing -1"
+    },
+    {
+      "part": "Type 6 detail roof backing 1",
+      "support": "Type 6 sloped upper roof"
+    },
+    {
+      "part": "Type 6 detail roof louver 1 0",
+      "support": "Type 6 detail roof backing 1"
+    },
+    {
+      "part": "Type 6 detail roof louver 1 1",
+      "support": "Type 6 detail roof backing 1"
+    },
+    {
+      "part": "Type 6 detail roof louver 1 2",
+      "support": "Type 6 detail roof backing 1"
+    },
+    {
+      "part": "Type 6 detail roof louver 1 3",
+      "support": "Type 6 detail roof backing 1"
+    },
+    {
+      "part": "Type 6 detail roof louver 1 4",
+      "support": "Type 6 detail roof backing 1"
+    },
+    {
+      "part": "Type 6 detail roof louver 1 5",
+      "support": "Type 6 detail roof backing 1"
+    },
+    {
+      "part": "Type 6 detail roof bezel 1 -1",
+      "support": "Type 6 detail roof backing 1"
+    },
+    {
+      "part": "Type 6 detail roof bezel 1 1",
+      "support": "Type 6 detail roof backing 1"
+    },
+    {
+      "part": "Type 6 detail roof shoulder armour -1 0",
+      "support": "Type 6 sloped upper roof"
+    },
+    {
+      "part": "Type 6 detail roof shoulder service inset -1 0",
+      "support": "Type 6 detail roof shoulder armour -1 0"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 0 0",
+      "support": "Type 6 detail roof shoulder service inset -1 0"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 0 1",
+      "support": "Type 6 detail roof shoulder service inset -1 0"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 0 2",
+      "support": "Type 6 detail roof shoulder service inset -1 0"
+    },
+    {
+      "part": "Type 6 detail shoulder stud -1 0 0",
+      "support": "Type 6 detail roof shoulder armour -1 0"
+    },
+    {
+      "part": "Type 6 detail shoulder stud -1 0 1",
+      "support": "Type 6 detail roof shoulder armour -1 0"
+    },
+    {
+      "part": "Type 6 detail roof shoulder armour -1 1",
+      "support": "Type 6 sloped upper roof"
+    },
+    {
+      "part": "Type 6 detail roof shoulder service inset -1 1",
+      "support": "Type 6 detail roof shoulder armour -1 1"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 1 0",
+      "support": "Type 6 detail roof shoulder service inset -1 1"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 1 1",
+      "support": "Type 6 detail roof shoulder service inset -1 1"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 1 2",
+      "support": "Type 6 detail roof shoulder service inset -1 1"
+    },
+    {
+      "part": "Type 6 detail shoulder stud -1 1 0",
+      "support": "Type 6 detail roof shoulder armour -1 1"
+    },
+    {
+      "part": "Type 6 detail shoulder stud -1 1 1",
+      "support": "Type 6 detail roof shoulder armour -1 1"
+    },
+    {
+      "part": "Type 6 detail roof shoulder armour 1 0",
+      "support": "Type 6 sloped upper roof"
+    },
+    {
+      "part": "Type 6 detail roof shoulder service inset 1 0",
+      "support": "Type 6 detail roof shoulder armour 1 0"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 0 0",
+      "support": "Type 6 detail roof shoulder service inset 1 0"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 0 1",
+      "support": "Type 6 detail roof shoulder service inset 1 0"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 0 2",
+      "support": "Type 6 detail roof shoulder service inset 1 0"
+    },
+    {
+      "part": "Type 6 detail shoulder stud 1 0 0",
+      "support": "Type 6 detail roof shoulder armour 1 0"
+    },
+    {
+      "part": "Type 6 detail shoulder stud 1 0 1",
+      "support": "Type 6 detail roof shoulder armour 1 0"
+    },
+    {
+      "part": "Type 6 detail roof shoulder armour 1 1",
+      "support": "Type 6 sloped upper roof"
+    },
+    {
+      "part": "Type 6 detail roof shoulder service inset 1 1",
+      "support": "Type 6 detail roof shoulder armour 1 1"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 1 0",
+      "support": "Type 6 detail roof shoulder service inset 1 1"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 1 1",
+      "support": "Type 6 detail roof shoulder service inset 1 1"
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 1 2",
+      "support": "Type 6 detail roof shoulder service inset 1 1"
+    },
+    {
+      "part": "Type 6 detail shoulder stud 1 1 0",
+      "support": "Type 6 detail roof shoulder armour 1 1"
+    },
+    {
+      "part": "Type 6 detail shoulder stud 1 1 1",
+      "support": "Type 6 detail roof shoulder armour 1 1"
+    },
+    {
+      "part": "Type 6 detail red cover band -1 0",
+      "support": "Type 6 red raised piece -1"
+    },
+    {
+      "part": "Type 6 detail red cover band -1 1",
+      "support": "Type 6 red raised piece -1"
+    },
+    {
+      "part": "Type 6 detail red cover band 1 0",
+      "support": "Type 6 red raised piece 1"
+    },
+    {
+      "part": "Type 6 detail red cover band 1 1",
+      "support": "Type 6 red raised piece 1"
+    }
+  ],
+  "void_rays": [
+    {
+      "origin": [
+        0,
+        -0.9,
+        0.7
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        0,
+        -0.5,
+        0.6
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 0.25
+    }
+  ],
+  "solid_rays": [
+    {
+      "origin": [
+        -0.28,
+        -0.9,
+        0.7
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 0.5
+    },
+    {
+      "origin": [
+        0.28,
+        -0.9,
+        0.7
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 0.5
+    },
+    {
+      "origin": [
+        0,
+        0,
+        2
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 3
+    }
+  ],
+  "interpretation": "Original layered low grey hull, low aft roof and two transverse separate red covers preserved. User concept guides fitted service machinery and depth, not tandem bridges, lamps, glazing or dense plate grids. Hidden engineering is authored; six mounts uncalibrated and WorldSize128 proposed.",
+  "detailed_parts": {
+    "names": [
+      "Type 6 detail service bay backing -1 0",
+      "Type 6 detail service bay jamb -1 0 -1",
+      "Type 6 detail service bay ledge -1 0 -1",
+      "Type 6 detail service bay jamb -1 0 1",
+      "Type 6 detail service bay ledge -1 0 1",
+      "Type 6 detail service bay rib -1 0 0",
+      "Type 6 detail service bay rib -1 0 1",
+      "Type 6 detail service bay rib -1 0 2",
+      "Type 6 detail service bay rib -1 0 3",
+      "Type 6 detail service bay rib -1 0 4",
+      "Type 6 detail service bay backing -1 1",
+      "Type 6 detail service bay jamb -1 1 -1",
+      "Type 6 detail service bay ledge -1 1 -1",
+      "Type 6 detail service bay jamb -1 1 1",
+      "Type 6 detail service bay ledge -1 1 1",
+      "Type 6 detail service bay rib -1 1 0",
+      "Type 6 detail service bay rib -1 1 1",
+      "Type 6 detail service bay rib -1 1 2",
+      "Type 6 detail service bay rib -1 1 3",
+      "Type 6 detail service bay rib -1 1 4",
+      "Type 6 detail service bay backing -1 2",
+      "Type 6 detail service bay jamb -1 2 -1",
+      "Type 6 detail service bay ledge -1 2 -1",
+      "Type 6 detail service bay jamb -1 2 1",
+      "Type 6 detail service bay ledge -1 2 1",
+      "Type 6 detail service bay rib -1 2 0",
+      "Type 6 detail service bay rib -1 2 1",
+      "Type 6 detail service bay rib -1 2 2",
+      "Type 6 detail service bay rib -1 2 3",
+      "Type 6 detail service bay rib -1 2 4",
+      "Type 6 detail pipe saddle -1 0",
+      "Type 6 detail seated conduit -1 0",
+      "Type 6 detail pipe saddle -1 1",
+      "Type 6 detail seated conduit -1 1",
+      "Type 6 detail service bay backing 1 0",
+      "Type 6 detail service bay jamb 1 0 -1",
+      "Type 6 detail service bay ledge 1 0 -1",
+      "Type 6 detail service bay jamb 1 0 1",
+      "Type 6 detail service bay ledge 1 0 1",
+      "Type 6 detail service bay rib 1 0 0",
+      "Type 6 detail service bay rib 1 0 1",
+      "Type 6 detail service bay rib 1 0 2",
+      "Type 6 detail service bay rib 1 0 3",
+      "Type 6 detail service bay rib 1 0 4",
+      "Type 6 detail service bay backing 1 1",
+      "Type 6 detail service bay jamb 1 1 -1",
+      "Type 6 detail service bay ledge 1 1 -1",
+      "Type 6 detail service bay jamb 1 1 1",
+      "Type 6 detail service bay ledge 1 1 1",
+      "Type 6 detail service bay rib 1 1 0",
+      "Type 6 detail service bay rib 1 1 1",
+      "Type 6 detail service bay rib 1 1 2",
+      "Type 6 detail service bay rib 1 1 3",
+      "Type 6 detail service bay rib 1 1 4",
+      "Type 6 detail service bay backing 1 2",
+      "Type 6 detail service bay jamb 1 2 -1",
+      "Type 6 detail service bay ledge 1 2 -1",
+      "Type 6 detail service bay jamb 1 2 1",
+      "Type 6 detail service bay ledge 1 2 1",
+      "Type 6 detail service bay rib 1 2 0",
+      "Type 6 detail service bay rib 1 2 1",
+      "Type 6 detail service bay rib 1 2 2",
+      "Type 6 detail service bay rib 1 2 3",
+      "Type 6 detail service bay rib 1 2 4",
+      "Type 6 detail pipe saddle 1 0",
+      "Type 6 detail seated conduit 1 0",
+      "Type 6 detail pipe saddle 1 1",
+      "Type 6 detail seated conduit 1 1",
+      "Type 6 detail prow recessed backing",
+      "Type 6 detail prow frame side -1",
+      "Type 6 detail prow frame horizontal -1",
+      "Type 6 detail prow frame side 1",
+      "Type 6 detail prow frame horizontal 1",
+      "Type 6 detail prow rib 0",
+      "Type 6 detail prow rib 1",
+      "Type 6 detail prow rib 2",
+      "Type 6 detail prow rib 3",
+      "Type 6 detail prow rib 4",
+      "Type 6 detail prow rib 5",
+      "Type 6 detail foredeck recessed backing",
+      "Type 6 detail foredeck edge -1",
+      "Type 6 detail foredeck transverse edge -1",
+      "Type 6 detail foredeck edge 1",
+      "Type 6 detail foredeck transverse edge 1",
+      "Type 6 detail foredeck louver 0",
+      "Type 6 detail foredeck louver 1",
+      "Type 6 detail foredeck louver 2",
+      "Type 6 detail foredeck louver 3",
+      "Type 6 detail foredeck louver 4",
+      "Type 6 detail roof backing -1",
+      "Type 6 detail roof louver -1 0",
+      "Type 6 detail roof louver -1 1",
+      "Type 6 detail roof louver -1 2",
+      "Type 6 detail roof louver -1 3",
+      "Type 6 detail roof louver -1 4",
+      "Type 6 detail roof louver -1 5",
+      "Type 6 detail roof bezel -1 -1",
+      "Type 6 detail roof bezel -1 1",
+      "Type 6 detail roof backing 1",
+      "Type 6 detail roof louver 1 0",
+      "Type 6 detail roof louver 1 1",
+      "Type 6 detail roof louver 1 2",
+      "Type 6 detail roof louver 1 3",
+      "Type 6 detail roof louver 1 4",
+      "Type 6 detail roof louver 1 5",
+      "Type 6 detail roof bezel 1 -1",
+      "Type 6 detail roof bezel 1 1",
+      "Type 6 detail roof shoulder armour -1 0",
+      "Type 6 detail roof shoulder service inset -1 0",
+      "Type 6 detail roof shoulder rib -1 0 0",
+      "Type 6 detail roof shoulder rib -1 0 1",
+      "Type 6 detail roof shoulder rib -1 0 2",
+      "Type 6 detail shoulder stud -1 0 0",
+      "Type 6 detail shoulder stud -1 0 1",
+      "Type 6 detail roof shoulder armour -1 1",
+      "Type 6 detail roof shoulder service inset -1 1",
+      "Type 6 detail roof shoulder rib -1 1 0",
+      "Type 6 detail roof shoulder rib -1 1 1",
+      "Type 6 detail roof shoulder rib -1 1 2",
+      "Type 6 detail shoulder stud -1 1 0",
+      "Type 6 detail shoulder stud -1 1 1",
+      "Type 6 detail roof shoulder armour 1 0",
+      "Type 6 detail roof shoulder service inset 1 0",
+      "Type 6 detail roof shoulder rib 1 0 0",
+      "Type 6 detail roof shoulder rib 1 0 1",
+      "Type 6 detail roof shoulder rib 1 0 2",
+      "Type 6 detail shoulder stud 1 0 0",
+      "Type 6 detail shoulder stud 1 0 1",
+      "Type 6 detail roof shoulder armour 1 1",
+      "Type 6 detail roof shoulder service inset 1 1",
+      "Type 6 detail roof shoulder rib 1 1 0",
+      "Type 6 detail roof shoulder rib 1 1 1",
+      "Type 6 detail roof shoulder rib 1 1 2",
+      "Type 6 detail shoulder stud 1 1 0",
+      "Type 6 detail shoulder stud 1 1 1",
+      "Type 6 detail red cover band -1 0",
+      "Type 6 detail red cover band -1 1",
+      "Type 6 detail red cover band 1 0",
+      "Type 6 detail red cover band 1 1"
+    ],
+    "attachment_pairs": [
+      {
+        "part": "Type 6 detail service bay backing -1 0",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail service bay jamb -1 0 -1",
+        "support": "Type 6 detail service bay backing -1 0"
+      },
+      {
+        "part": "Type 6 detail service bay ledge -1 0 -1",
+        "support": "Type 6 detail service bay backing -1 0"
+      },
+      {
+        "part": "Type 6 detail service bay jamb -1 0 1",
+        "support": "Type 6 detail service bay backing -1 0"
+      },
+      {
+        "part": "Type 6 detail service bay ledge -1 0 1",
+        "support": "Type 6 detail service bay backing -1 0"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 0 0",
+        "support": "Type 6 detail service bay backing -1 0"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 0 1",
+        "support": "Type 6 detail service bay backing -1 0"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 0 2",
+        "support": "Type 6 detail service bay backing -1 0"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 0 3",
+        "support": "Type 6 detail service bay backing -1 0"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 0 4",
+        "support": "Type 6 detail service bay backing -1 0"
+      },
+      {
+        "part": "Type 6 detail service bay backing -1 1",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail service bay jamb -1 1 -1",
+        "support": "Type 6 detail service bay backing -1 1"
+      },
+      {
+        "part": "Type 6 detail service bay ledge -1 1 -1",
+        "support": "Type 6 detail service bay backing -1 1"
+      },
+      {
+        "part": "Type 6 detail service bay jamb -1 1 1",
+        "support": "Type 6 detail service bay backing -1 1"
+      },
+      {
+        "part": "Type 6 detail service bay ledge -1 1 1",
+        "support": "Type 6 detail service bay backing -1 1"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 1 0",
+        "support": "Type 6 detail service bay backing -1 1"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 1 1",
+        "support": "Type 6 detail service bay backing -1 1"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 1 2",
+        "support": "Type 6 detail service bay backing -1 1"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 1 3",
+        "support": "Type 6 detail service bay backing -1 1"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 1 4",
+        "support": "Type 6 detail service bay backing -1 1"
+      },
+      {
+        "part": "Type 6 detail service bay backing -1 2",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail service bay jamb -1 2 -1",
+        "support": "Type 6 detail service bay backing -1 2"
+      },
+      {
+        "part": "Type 6 detail service bay ledge -1 2 -1",
+        "support": "Type 6 detail service bay backing -1 2"
+      },
+      {
+        "part": "Type 6 detail service bay jamb -1 2 1",
+        "support": "Type 6 detail service bay backing -1 2"
+      },
+      {
+        "part": "Type 6 detail service bay ledge -1 2 1",
+        "support": "Type 6 detail service bay backing -1 2"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 2 0",
+        "support": "Type 6 detail service bay backing -1 2"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 2 1",
+        "support": "Type 6 detail service bay backing -1 2"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 2 2",
+        "support": "Type 6 detail service bay backing -1 2"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 2 3",
+        "support": "Type 6 detail service bay backing -1 2"
+      },
+      {
+        "part": "Type 6 detail service bay rib -1 2 4",
+        "support": "Type 6 detail service bay backing -1 2"
+      },
+      {
+        "part": "Type 6 detail pipe saddle -1 0",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail seated conduit -1 0",
+        "support": "Type 6 detail pipe saddle -1 0"
+      },
+      {
+        "part": "Type 6 detail pipe saddle -1 1",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail seated conduit -1 1",
+        "support": "Type 6 detail pipe saddle -1 1"
+      },
+      {
+        "part": "Type 6 detail service bay backing 1 0",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail service bay jamb 1 0 -1",
+        "support": "Type 6 detail service bay backing 1 0"
+      },
+      {
+        "part": "Type 6 detail service bay ledge 1 0 -1",
+        "support": "Type 6 detail service bay backing 1 0"
+      },
+      {
+        "part": "Type 6 detail service bay jamb 1 0 1",
+        "support": "Type 6 detail service bay backing 1 0"
+      },
+      {
+        "part": "Type 6 detail service bay ledge 1 0 1",
+        "support": "Type 6 detail service bay backing 1 0"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 0 0",
+        "support": "Type 6 detail service bay backing 1 0"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 0 1",
+        "support": "Type 6 detail service bay backing 1 0"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 0 2",
+        "support": "Type 6 detail service bay backing 1 0"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 0 3",
+        "support": "Type 6 detail service bay backing 1 0"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 0 4",
+        "support": "Type 6 detail service bay backing 1 0"
+      },
+      {
+        "part": "Type 6 detail service bay backing 1 1",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail service bay jamb 1 1 -1",
+        "support": "Type 6 detail service bay backing 1 1"
+      },
+      {
+        "part": "Type 6 detail service bay ledge 1 1 -1",
+        "support": "Type 6 detail service bay backing 1 1"
+      },
+      {
+        "part": "Type 6 detail service bay jamb 1 1 1",
+        "support": "Type 6 detail service bay backing 1 1"
+      },
+      {
+        "part": "Type 6 detail service bay ledge 1 1 1",
+        "support": "Type 6 detail service bay backing 1 1"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 1 0",
+        "support": "Type 6 detail service bay backing 1 1"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 1 1",
+        "support": "Type 6 detail service bay backing 1 1"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 1 2",
+        "support": "Type 6 detail service bay backing 1 1"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 1 3",
+        "support": "Type 6 detail service bay backing 1 1"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 1 4",
+        "support": "Type 6 detail service bay backing 1 1"
+      },
+      {
+        "part": "Type 6 detail service bay backing 1 2",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail service bay jamb 1 2 -1",
+        "support": "Type 6 detail service bay backing 1 2"
+      },
+      {
+        "part": "Type 6 detail service bay ledge 1 2 -1",
+        "support": "Type 6 detail service bay backing 1 2"
+      },
+      {
+        "part": "Type 6 detail service bay jamb 1 2 1",
+        "support": "Type 6 detail service bay backing 1 2"
+      },
+      {
+        "part": "Type 6 detail service bay ledge 1 2 1",
+        "support": "Type 6 detail service bay backing 1 2"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 2 0",
+        "support": "Type 6 detail service bay backing 1 2"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 2 1",
+        "support": "Type 6 detail service bay backing 1 2"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 2 2",
+        "support": "Type 6 detail service bay backing 1 2"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 2 3",
+        "support": "Type 6 detail service bay backing 1 2"
+      },
+      {
+        "part": "Type 6 detail service bay rib 1 2 4",
+        "support": "Type 6 detail service bay backing 1 2"
+      },
+      {
+        "part": "Type 6 detail pipe saddle 1 0",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail seated conduit 1 0",
+        "support": "Type 6 detail pipe saddle 1 0"
+      },
+      {
+        "part": "Type 6 detail pipe saddle 1 1",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail seated conduit 1 1",
+        "support": "Type 6 detail pipe saddle 1 1"
+      },
+      {
+        "part": "Type 6 detail prow recessed backing",
+        "support": "Type 6 pale fore panel"
+      },
+      {
+        "part": "Type 6 detail prow frame side -1",
+        "support": "Type 6 detail prow recessed backing"
+      },
+      {
+        "part": "Type 6 detail prow frame horizontal -1",
+        "support": "Type 6 detail prow recessed backing"
+      },
+      {
+        "part": "Type 6 detail prow frame side 1",
+        "support": "Type 6 detail prow recessed backing"
+      },
+      {
+        "part": "Type 6 detail prow frame horizontal 1",
+        "support": "Type 6 detail prow recessed backing"
+      },
+      {
+        "part": "Type 6 detail prow rib 0",
+        "support": "Type 6 detail prow recessed backing"
+      },
+      {
+        "part": "Type 6 detail prow rib 1",
+        "support": "Type 6 detail prow recessed backing"
+      },
+      {
+        "part": "Type 6 detail prow rib 2",
+        "support": "Type 6 detail prow recessed backing"
+      },
+      {
+        "part": "Type 6 detail prow rib 3",
+        "support": "Type 6 detail prow recessed backing"
+      },
+      {
+        "part": "Type 6 detail prow rib 4",
+        "support": "Type 6 detail prow recessed backing"
+      },
+      {
+        "part": "Type 6 detail prow rib 5",
+        "support": "Type 6 detail prow recessed backing"
+      },
+      {
+        "part": "Type 6 detail foredeck recessed backing",
+        "support": "Type 6 main hull"
+      },
+      {
+        "part": "Type 6 detail foredeck edge -1",
+        "support": "Type 6 detail foredeck recessed backing"
+      },
+      {
+        "part": "Type 6 detail foredeck transverse edge -1",
+        "support": "Type 6 detail foredeck recessed backing"
+      },
+      {
+        "part": "Type 6 detail foredeck edge 1",
+        "support": "Type 6 detail foredeck recessed backing"
+      },
+      {
+        "part": "Type 6 detail foredeck transverse edge 1",
+        "support": "Type 6 detail foredeck recessed backing"
+      },
+      {
+        "part": "Type 6 detail foredeck louver 0",
+        "support": "Type 6 detail foredeck recessed backing"
+      },
+      {
+        "part": "Type 6 detail foredeck louver 1",
+        "support": "Type 6 detail foredeck recessed backing"
+      },
+      {
+        "part": "Type 6 detail foredeck louver 2",
+        "support": "Type 6 detail foredeck recessed backing"
+      },
+      {
+        "part": "Type 6 detail foredeck louver 3",
+        "support": "Type 6 detail foredeck recessed backing"
+      },
+      {
+        "part": "Type 6 detail foredeck louver 4",
+        "support": "Type 6 detail foredeck recessed backing"
+      },
+      {
+        "part": "Type 6 detail roof backing -1",
+        "support": "Type 6 sloped upper roof"
+      },
+      {
+        "part": "Type 6 detail roof louver -1 0",
+        "support": "Type 6 detail roof backing -1"
+      },
+      {
+        "part": "Type 6 detail roof louver -1 1",
+        "support": "Type 6 detail roof backing -1"
+      },
+      {
+        "part": "Type 6 detail roof louver -1 2",
+        "support": "Type 6 detail roof backing -1"
+      },
+      {
+        "part": "Type 6 detail roof louver -1 3",
+        "support": "Type 6 detail roof backing -1"
+      },
+      {
+        "part": "Type 6 detail roof louver -1 4",
+        "support": "Type 6 detail roof backing -1"
+      },
+      {
+        "part": "Type 6 detail roof louver -1 5",
+        "support": "Type 6 detail roof backing -1"
+      },
+      {
+        "part": "Type 6 detail roof bezel -1 -1",
+        "support": "Type 6 detail roof backing -1"
+      },
+      {
+        "part": "Type 6 detail roof bezel -1 1",
+        "support": "Type 6 detail roof backing -1"
+      },
+      {
+        "part": "Type 6 detail roof backing 1",
+        "support": "Type 6 sloped upper roof"
+      },
+      {
+        "part": "Type 6 detail roof louver 1 0",
+        "support": "Type 6 detail roof backing 1"
+      },
+      {
+        "part": "Type 6 detail roof louver 1 1",
+        "support": "Type 6 detail roof backing 1"
+      },
+      {
+        "part": "Type 6 detail roof louver 1 2",
+        "support": "Type 6 detail roof backing 1"
+      },
+      {
+        "part": "Type 6 detail roof louver 1 3",
+        "support": "Type 6 detail roof backing 1"
+      },
+      {
+        "part": "Type 6 detail roof louver 1 4",
+        "support": "Type 6 detail roof backing 1"
+      },
+      {
+        "part": "Type 6 detail roof louver 1 5",
+        "support": "Type 6 detail roof backing 1"
+      },
+      {
+        "part": "Type 6 detail roof bezel 1 -1",
+        "support": "Type 6 detail roof backing 1"
+      },
+      {
+        "part": "Type 6 detail roof bezel 1 1",
+        "support": "Type 6 detail roof backing 1"
+      },
+      {
+        "part": "Type 6 detail roof shoulder armour -1 0",
+        "support": "Type 6 sloped upper roof"
+      },
+      {
+        "part": "Type 6 detail roof shoulder service inset -1 0",
+        "support": "Type 6 detail roof shoulder armour -1 0"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib -1 0 0",
+        "support": "Type 6 detail roof shoulder service inset -1 0"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib -1 0 1",
+        "support": "Type 6 detail roof shoulder service inset -1 0"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib -1 0 2",
+        "support": "Type 6 detail roof shoulder service inset -1 0"
+      },
+      {
+        "part": "Type 6 detail shoulder stud -1 0 0",
+        "support": "Type 6 detail roof shoulder armour -1 0"
+      },
+      {
+        "part": "Type 6 detail shoulder stud -1 0 1",
+        "support": "Type 6 detail roof shoulder armour -1 0"
+      },
+      {
+        "part": "Type 6 detail roof shoulder armour -1 1",
+        "support": "Type 6 sloped upper roof"
+      },
+      {
+        "part": "Type 6 detail roof shoulder service inset -1 1",
+        "support": "Type 6 detail roof shoulder armour -1 1"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib -1 1 0",
+        "support": "Type 6 detail roof shoulder service inset -1 1"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib -1 1 1",
+        "support": "Type 6 detail roof shoulder service inset -1 1"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib -1 1 2",
+        "support": "Type 6 detail roof shoulder service inset -1 1"
+      },
+      {
+        "part": "Type 6 detail shoulder stud -1 1 0",
+        "support": "Type 6 detail roof shoulder armour -1 1"
+      },
+      {
+        "part": "Type 6 detail shoulder stud -1 1 1",
+        "support": "Type 6 detail roof shoulder armour -1 1"
+      },
+      {
+        "part": "Type 6 detail roof shoulder armour 1 0",
+        "support": "Type 6 sloped upper roof"
+      },
+      {
+        "part": "Type 6 detail roof shoulder service inset 1 0",
+        "support": "Type 6 detail roof shoulder armour 1 0"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib 1 0 0",
+        "support": "Type 6 detail roof shoulder service inset 1 0"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib 1 0 1",
+        "support": "Type 6 detail roof shoulder service inset 1 0"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib 1 0 2",
+        "support": "Type 6 detail roof shoulder service inset 1 0"
+      },
+      {
+        "part": "Type 6 detail shoulder stud 1 0 0",
+        "support": "Type 6 detail roof shoulder armour 1 0"
+      },
+      {
+        "part": "Type 6 detail shoulder stud 1 0 1",
+        "support": "Type 6 detail roof shoulder armour 1 0"
+      },
+      {
+        "part": "Type 6 detail roof shoulder armour 1 1",
+        "support": "Type 6 sloped upper roof"
+      },
+      {
+        "part": "Type 6 detail roof shoulder service inset 1 1",
+        "support": "Type 6 detail roof shoulder armour 1 1"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib 1 1 0",
+        "support": "Type 6 detail roof shoulder service inset 1 1"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib 1 1 1",
+        "support": "Type 6 detail roof shoulder service inset 1 1"
+      },
+      {
+        "part": "Type 6 detail roof shoulder rib 1 1 2",
+        "support": "Type 6 detail roof shoulder service inset 1 1"
+      },
+      {
+        "part": "Type 6 detail shoulder stud 1 1 0",
+        "support": "Type 6 detail roof shoulder armour 1 1"
+      },
+      {
+        "part": "Type 6 detail shoulder stud 1 1 1",
+        "support": "Type 6 detail roof shoulder armour 1 1"
+      },
+      {
+        "part": "Type 6 detail red cover band -1 0",
+        "support": "Type 6 red raised piece -1"
+      },
+      {
+        "part": "Type 6 detail red cover band -1 1",
+        "support": "Type 6 red raised piece -1"
+      },
+      {
+        "part": "Type 6 detail red cover band 1 0",
+        "support": "Type 6 red raised piece 1"
+      },
+      {
+        "part": "Type 6 detail red cover band 1 1",
+        "support": "Type 6 red raised piece 1"
+      }
+    ],
+    "interpretation": "User artistic concept guides seated service bays, deck/roof louvers and cover bands. Original low layered hull and transverse red covers control shape; added fittings do not establish equipment function."
+  },
+  "detail_parts_sha256": "ee98f6d3e215f72f0eb061db5ed307891598459cc10bebeb0d2dbfabe09cde91",
+  "detail_baseline_helpers_sha256": "c97ba809e56e0931b6ea3e9358ded6cce50e7aa06a003a743f40c6c3ce52c54e",
+  "detail_primitives_sha256": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+  "stage": "mobile-ship-remaster",
+  "baseline_sha256": "d7b091d9d3f98c80b2ee4c3e540e0a142a1c62eec77691352e41308eccd5db0f",
+  "baseline_bounds": [
+    [
+      -0.6220001578330994,
+      -1.850000023841858,
+      -0.39500001072883606
+    ],
+    [
+      0.6220001578330994,
+      1.850000023841858,
+      0.6387532353401184
+    ]
+  ],
+  "final_bounds": [
+    [
+      -0.6220019459724426,
+      -1.8700000047683716,
+      -0.39500001072883606
+    ],
+    [
+      0.6220019459724426,
+      1.850000023841858,
+      0.6387532353401184
+    ]
+  ],
+  "triangles": 61322,
+  "mesh_batches": 4,
+  "material_count": 1,
+  "packed_maps": 3,
+  "editable_part_vertex_groups": {
+    "PrimaryHullAndArmour": [
+      "Type 6 main hull",
+      "Type 6 lower base",
+      "Type 6 sloped upper roof",
+      "Type 6 red mount -1",
+      "Type 6 red raised piece -1",
+      "Type 6 brown side band -1",
+      "Type 6 red mount 1",
+      "Type 6 red raised piece 1",
+      "Type 6 brown side band 1",
+      "Type 6 brown rear panel",
+      "Type 6 pale fore panel",
+      "Type 6 warm lower block 0",
+      "Type 6 warm lower block 1",
+      "Type 6 warm lower block 2",
+      "Type 6 roof hatch",
+      "Type 6 detail service bay backing -1 0",
+      "Type 6 detail service bay jamb -1 0 -1",
+      "Type 6 detail service bay ledge -1 0 -1",
+      "Type 6 detail service bay jamb -1 0 1",
+      "Type 6 detail service bay ledge -1 0 1",
+      "Type 6 detail service bay rib -1 0 0",
+      "Type 6 detail service bay rib -1 0 1",
+      "Type 6 detail service bay rib -1 0 2",
+      "Type 6 detail service bay rib -1 0 3",
+      "Type 6 detail service bay rib -1 0 4",
+      "Type 6 detail service bay backing -1 1",
+      "Type 6 detail service bay jamb -1 1 -1",
+      "Type 6 detail service bay ledge -1 1 -1",
+      "Type 6 detail service bay jamb -1 1 1",
+      "Type 6 detail service bay ledge -1 1 1",
+      "Type 6 detail service bay rib -1 1 0",
+      "Type 6 detail service bay rib -1 1 1",
+      "Type 6 detail service bay rib -1 1 2",
+      "Type 6 detail service bay rib -1 1 3",
+      "Type 6 detail service bay rib -1 1 4",
+      "Type 6 detail service bay backing -1 2",
+      "Type 6 detail service bay jamb -1 2 -1",
+      "Type 6 detail service bay ledge -1 2 -1",
+      "Type 6 detail service bay jamb -1 2 1",
+      "Type 6 detail service bay ledge -1 2 1",
+      "Type 6 detail service bay rib -1 2 0",
+      "Type 6 detail service bay rib -1 2 1",
+      "Type 6 detail service bay rib -1 2 2",
+      "Type 6 detail service bay rib -1 2 3",
+      "Type 6 detail service bay rib -1 2 4",
+      "Type 6 detail pipe saddle -1 0",
+      "Type 6 detail seated conduit -1 0",
+      "Type 6 detail pipe saddle -1 1",
+      "Type 6 detail seated conduit -1 1",
+      "Type 6 detail service bay backing 1 0",
+      "Type 6 detail service bay jamb 1 0 -1",
+      "Type 6 detail service bay ledge 1 0 -1",
+      "Type 6 detail service bay jamb 1 0 1",
+      "Type 6 detail service bay ledge 1 0 1",
+      "Type 6 detail service bay rib 1 0 0",
+      "Type 6 detail service bay rib 1 0 1",
+      "Type 6 detail service bay rib 1 0 2",
+      "Type 6 detail service bay rib 1 0 3",
+      "Type 6 detail service bay rib 1 0 4",
+      "Type 6 detail service bay backing 1 1",
+      "Type 6 detail service bay jamb 1 1 -1",
+      "Type 6 detail service bay ledge 1 1 -1",
+      "Type 6 detail service bay jamb 1 1 1",
+      "Type 6 detail service bay ledge 1 1 1",
+      "Type 6 detail service bay rib 1 1 0",
+      "Type 6 detail service bay rib 1 1 1",
+      "Type 6 detail service bay rib 1 1 2",
+      "Type 6 detail service bay rib 1 1 3",
+      "Type 6 detail service bay rib 1 1 4",
+      "Type 6 detail service bay backing 1 2",
+      "Type 6 detail service bay jamb 1 2 -1",
+      "Type 6 detail service bay ledge 1 2 -1",
+      "Type 6 detail service bay jamb 1 2 1",
+      "Type 6 detail service bay ledge 1 2 1",
+      "Type 6 detail service bay rib 1 2 0",
+      "Type 6 detail service bay rib 1 2 1",
+      "Type 6 detail service bay rib 1 2 2",
+      "Type 6 detail service bay rib 1 2 3",
+      "Type 6 detail service bay rib 1 2 4",
+      "Type 6 detail pipe saddle 1 0",
+      "Type 6 detail seated conduit 1 0",
+      "Type 6 detail pipe saddle 1 1",
+      "Type 6 detail seated conduit 1 1",
+      "Type 6 detail prow frame side -1",
+      "Type 6 detail prow frame horizontal -1",
+      "Type 6 detail prow frame side 1",
+      "Type 6 detail prow frame horizontal 1",
+      "Type 6 detail prow rib 0",
+      "Type 6 detail prow rib 1",
+      "Type 6 detail prow rib 2",
+      "Type 6 detail prow rib 3",
+      "Type 6 detail prow rib 4",
+      "Type 6 detail prow rib 5",
+      "Type 6 detail foredeck edge -1",
+      "Type 6 detail foredeck transverse edge -1",
+      "Type 6 detail foredeck edge 1",
+      "Type 6 detail foredeck transverse edge 1",
+      "Type 6 detail foredeck louver 0",
+      "Type 6 detail foredeck louver 1",
+      "Type 6 detail foredeck louver 2",
+      "Type 6 detail foredeck louver 3",
+      "Type 6 detail foredeck louver 4",
+      "Type 6 detail roof backing -1",
+      "Type 6 detail roof louver -1 0",
+      "Type 6 detail roof louver -1 1",
+      "Type 6 detail roof louver -1 2",
+      "Type 6 detail roof louver -1 3",
+      "Type 6 detail roof louver -1 4",
+      "Type 6 detail roof louver -1 5",
+      "Type 6 detail roof backing 1",
+      "Type 6 detail roof louver 1 0",
+      "Type 6 detail roof louver 1 1",
+      "Type 6 detail roof louver 1 2",
+      "Type 6 detail roof louver 1 3",
+      "Type 6 detail roof louver 1 4",
+      "Type 6 detail roof louver 1 5",
+      "Type 6 detail roof shoulder armour -1 0",
+      "Type 6 detail roof shoulder rib -1 0 0",
+      "Type 6 detail roof shoulder rib -1 0 1",
+      "Type 6 detail roof shoulder rib -1 0 2",
+      "Type 6 detail shoulder stud -1 0 0",
+      "Type 6 detail shoulder stud -1 0 1",
+      "Type 6 detail roof shoulder armour -1 1",
+      "Type 6 detail roof shoulder rib -1 1 0",
+      "Type 6 detail roof shoulder rib -1 1 1",
+      "Type 6 detail roof shoulder rib -1 1 2",
+      "Type 6 detail shoulder stud -1 1 0",
+      "Type 6 detail shoulder stud -1 1 1",
+      "Type 6 detail roof shoulder armour 1 0",
+      "Type 6 detail roof shoulder rib 1 0 0",
+      "Type 6 detail roof shoulder rib 1 0 1",
+      "Type 6 detail roof shoulder rib 1 0 2",
+      "Type 6 detail shoulder stud 1 0 0",
+      "Type 6 detail shoulder stud 1 0 1",
+      "Type 6 detail roof shoulder armour 1 1",
+      "Type 6 detail roof shoulder rib 1 1 0",
+      "Type 6 detail roof shoulder rib 1 1 1",
+      "Type 6 detail roof shoulder rib 1 1 2",
+      "Type 6 detail shoulder stud 1 1 0",
+      "Type 6 detail shoulder stud 1 1 1",
+      "Type 6 detail red cover band -1 0",
+      "Type 6 detail red cover band -1 1",
+      "Type 6 detail red cover band 1 0",
+      "Type 6 detail red cover band 1 1"
+    ],
+    "RecessedMachinery": [
+      "Type 6 rear dark strip 0",
+      "Type 6 rear dark strip 1",
+      "Type 6 rear dark strip 2",
+      "Type 6 rear dark strip 3",
+      "Type 6 base grey inset -1 0",
+      "Type 6 dark service strip -1 0 0",
+      "Type 6 dark service strip -1 0 1",
+      "Type 6 base grey inset -1 1",
+      "Type 6 dark service strip -1 1 0",
+      "Type 6 dark service strip -1 1 1",
+      "Type 6 base grey inset 1 0",
+      "Type 6 dark service strip 1 0 0",
+      "Type 6 dark service strip 1 0 1",
+      "Type 6 base grey inset 1 1",
+      "Type 6 dark service strip 1 1 0",
+      "Type 6 dark service strip 1 1 1",
+      "Type 6 roof dark strip 0",
+      "Type 6 roof dark strip 1",
+      "Type 6 roof dark strip 2",
+      "Type 6 detail prow recessed backing",
+      "Type 6 detail foredeck recessed backing",
+      "Type 6 detail roof shoulder service inset -1 0",
+      "Type 6 detail roof shoulder service inset -1 1",
+      "Type 6 detail roof shoulder service inset 1 0",
+      "Type 6 detail roof shoulder service inset 1 1"
+    ],
+    "ServiceAssemblies": [
+      "Type 6 base service frame -1 0",
+      "Type 6 base service frame -1 1",
+      "Type 6 base service frame 1 0",
+      "Type 6 base service frame 1 1",
+      "Type 6 detail roof bezel -1 -1",
+      "Type 6 detail roof bezel -1 1",
+      "Type 6 detail roof bezel 1 -1",
+      "Type 6 detail roof bezel 1 1"
+    ],
+    "TrimAndFasteners": [
+      "Type 6 frame fastener -1 0 0 0",
+      "Type 6 frame fastener -1 0 0 1",
+      "Type 6 frame fastener -1 0 1 0",
+      "Type 6 frame fastener -1 0 1 1",
+      "Type 6 frame fastener -1 1 0 0",
+      "Type 6 frame fastener -1 1 0 1",
+      "Type 6 frame fastener -1 1 1 0",
+      "Type 6 frame fastener -1 1 1 1",
+      "Type 6 frame fastener 1 0 0 0",
+      "Type 6 frame fastener 1 0 0 1",
+      "Type 6 frame fastener 1 0 1 0",
+      "Type 6 frame fastener 1 0 1 1",
+      "Type 6 frame fastener 1 1 0 0",
+      "Type 6 frame fastener 1 1 0 1",
+      "Type 6 frame fastener 1 1 1 0",
+      "Type 6 frame fastener 1 1 1 1",
+      "Type 6 roof fastener 0 0",
+      "Type 6 roof fastener 0 1",
+      "Type 6 roof fastener 1 0",
+      "Type 6 roof fastener 1 1"
+    ]
+  },
+  "reductions": [
+    {
+      "part": "Type 6 main hull",
+      "source_faces": 27004,
+      "final_faces": 6500,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 lower base",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 sloped upper roof",
+      "source_faces": 13724,
+      "final_faces": 4500,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 red mount -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 red raised piece -1",
+      "source_faces": 2240,
+      "final_faces": 1400,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Type 6 brown side band -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 7
+    },
+    {
+      "part": "Type 6 red mount 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 red raised piece 1",
+      "source_faces": 2240,
+      "final_faces": 1400,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Type 6 brown side band 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 7
+    },
+    {
+      "part": "Type 6 brown rear panel",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 7
+    },
+    {
+      "part": "Type 6 pale fore panel",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 3
+    },
+    {
+      "part": "Type 6 rear dark strip 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 rear dark strip 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 rear dark strip 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 rear dark strip 3",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 warm lower block 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 7
+    },
+    {
+      "part": "Type 6 warm lower block 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 7
+    },
+    {
+      "part": "Type 6 warm lower block 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 7
+    },
+    {
+      "part": "Type 6 base service frame -1 0",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 base grey inset -1 0",
+      "source_faces": 440,
+      "final_faces": 600,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 dark service strip -1 0 0",
+      "source_faces": 440,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 dark service strip -1 0 1",
+      "source_faces": 440,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 frame fastener -1 0 0 0",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener -1 0 0 1",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener -1 0 1 0",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener -1 0 1 1",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 base service frame -1 1",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 base grey inset -1 1",
+      "source_faces": 440,
+      "final_faces": 600,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 dark service strip -1 1 0",
+      "source_faces": 440,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 dark service strip -1 1 1",
+      "source_faces": 440,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 frame fastener -1 1 0 0",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener -1 1 0 1",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener -1 1 1 0",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener -1 1 1 1",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 base service frame 1 0",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 base grey inset 1 0",
+      "source_faces": 440,
+      "final_faces": 600,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 dark service strip 1 0 0",
+      "source_faces": 440,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 dark service strip 1 0 1",
+      "source_faces": 440,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 frame fastener 1 0 0 0",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener 1 0 0 1",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener 1 0 1 0",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener 1 0 1 1",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 base service frame 1 1",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 base grey inset 1 1",
+      "source_faces": 440,
+      "final_faces": 600,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 dark service strip 1 1 0",
+      "source_faces": 440,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 dark service strip 1 1 1",
+      "source_faces": 440,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 frame fastener 1 1 0 0",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener 1 1 0 1",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener 1 1 1 0",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 frame fastener 1 1 1 1",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 roof hatch",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 roof dark strip 0",
+      "source_faces": 848,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 roof dark strip 1",
+      "source_faces": 848,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 roof dark strip 2",
+      "source_faces": 848,
+      "final_faces": 200,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 roof fastener 0 0",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 roof fastener 0 1",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 roof fastener 1 0",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 roof fastener 1 1",
+      "source_faces": 114,
+      "final_faces": 220,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay backing -1 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 0 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 0 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 0 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 0 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 0 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 0 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 0 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 0 3",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 0 4",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay backing -1 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 1 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 1 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 1 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 1 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 1 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 1 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 1 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 1 3",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 1 4",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay backing -1 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 2 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 2 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay jamb -1 2 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge -1 2 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 2 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 2 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 2 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 2 3",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib -1 2 4",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail pipe saddle -1 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail seated conduit -1 0",
+      "source_faces": 86,
+      "final_faces": 86,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail pipe saddle -1 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail seated conduit -1 1",
+      "source_faces": 86,
+      "final_faces": 86,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay backing 1 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 0 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 0 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 0 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 0 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 0 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 0 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 0 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 0 3",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 0 4",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay backing 1 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 1 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 1 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 1 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 1 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 1 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 1 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 1 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 1 3",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 1 4",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay backing 1 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 2 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 2 -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay jamb 1 2 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail service bay ledge 1 2 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 2 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 2 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 2 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 2 3",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail service bay rib 1 2 4",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail pipe saddle 1 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail seated conduit 1 0",
+      "source_faces": 86,
+      "final_faces": 86,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail pipe saddle 1 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail seated conduit 1 1",
+      "source_faces": 86,
+      "final_faces": 86,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail prow recessed backing",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail prow frame side -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail prow frame horizontal -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail prow frame side 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail prow frame horizontal 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail prow rib 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail prow rib 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail prow rib 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail prow rib 3",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail prow rib 4",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail prow rib 5",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail foredeck recessed backing",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail foredeck edge -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail foredeck transverse edge -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail foredeck edge 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail foredeck transverse edge 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail foredeck louver 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail foredeck louver 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail foredeck louver 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail foredeck louver 3",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail foredeck louver 4",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof backing -1",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail roof louver -1 0",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof louver -1 1",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof louver -1 2",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof louver -1 3",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof louver -1 4",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof louver -1 5",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof bezel -1 -1",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail roof bezel -1 1",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail roof backing 1",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail roof louver 1 0",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof louver 1 1",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof louver 1 2",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof louver 1 3",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof louver 1 4",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof louver 1 5",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof bezel 1 -1",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail roof bezel 1 1",
+      "source_faces": 848,
+      "final_faces": 498,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail roof shoulder armour -1 0",
+      "source_faces": 304,
+      "final_faces": 360,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail roof shoulder service inset -1 0",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 0 0",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 0 1",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 0 2",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail shoulder stud -1 0 0",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail shoulder stud -1 0 1",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder armour -1 1",
+      "source_faces": 304,
+      "final_faces": 360,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail roof shoulder service inset -1 1",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 1 0",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 1 1",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib -1 1 2",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail shoulder stud -1 1 0",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail shoulder stud -1 1 1",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder armour 1 0",
+      "source_faces": 304,
+      "final_faces": 360,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail roof shoulder service inset 1 0",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 0 0",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 0 1",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 0 2",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail shoulder stud 1 0 0",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail shoulder stud 1 0 1",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder armour 1 1",
+      "source_faces": 304,
+      "final_faces": 360,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 6 detail roof shoulder service inset 1 1",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 1 0",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 1 1",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail roof shoulder rib 1 1 2",
+      "source_faces": 304,
+      "final_faces": 160,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail shoulder stud 1 1 0",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail shoulder stud 1 1 1",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail red cover band -1 0",
+      "source_faces": 6,
+      "final_faces": 6,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail red cover band -1 1",
+      "source_faces": 6,
+      "final_faces": 6,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail red cover band 1 0",
+      "source_faces": 6,
+      "final_faces": 6,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 6 detail red cover band 1 1",
+      "source_faces": 6,
+      "final_faces": 6,
+      "atlas_tile": 1
+    }
+  ],
+  "generator_sha256": "26b9341ed1fdd62bf1092280c57f6ed0dce0d4e2121550b1a5fcc22e730f87ad",
+  "recipe_sha256": "672f3b7c5e0eb5e72bb0a5131b33b826829d5e3bcb4fb8c530de171e976a510a",
+  "shared_primitives_sha256": "1469b823c8eb59eeca4372d8f5b4059f9ab1de5a1d02e4ddcf3ae9a650cbffa1",
+  "shared_recipe_helpers_sha256": "7c152a5afe634f62d26a8666787d99944caa5000110239bb54f59db5e9f61d1b",
+  "maps_generator_sha256": "214e5905f8120d78085a7c4985a20447e595d7a29eb129cc50be5609a0d209e0",
+  "map_sha256": {
+    "colour.png": "97cf240ad0545c4d5466a68bedaf6c791ce2bf42214e3423cf2c09034fd2640d",
+    "normal.png": "e6960df773dd4f734a84bf0f9cc0b7919c62d43f642bb343ac084010997c8119",
+    "orm.png": "b73e975099985d68baab3e196f575c2ca58d15df0132175b8d2d1ee3e9a44087"
+  },
+  "blend_sha256": "238b44a9283ed46e358cb21c0c39997e5a1c0865d99e7edf39452a66811773d4",
+  "glb_sha256": "073a0bd2f149b5cff96b59090abcd61f33afb27c7d589a38c64c08e2693381c1",
+  "visual_acceptance": "Agent actual legacy/user-concept/imported feedback reviewed; final user/client acceptance separate"
+}

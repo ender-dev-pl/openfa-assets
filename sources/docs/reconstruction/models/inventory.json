@@ -33189,21 +33189,43 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/mauna/max-combat-craft-type-6/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/mauna/max-combat-craft-type-6/model.blend",
           "present": true,
-          "sha256": "d7b091d9d3f98c80b2ee4c3e540e0a142a1c62eec77691352e41308eccd5db0f",
-          "final_visual_acceptance": "not-established"
+          "sha256": "238b44a9283ed46e358cb21c0c39997e5a1c0865d99e7edf39452a66811773d4",
+          "views": [
+            {
+              "label": "Rear fittings",
+              "image": "gallery/media/objects/mauna/max-combat-craft-type-6/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/mauna/max-combat-craft-type-6/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 comparison",
+              "image": "gallery/media/objects/mauna/max-combat-craft-type-6/heading-04.png"
+            },
+            {
+              "label": "Primitive concept3: limitations documented",
+              "image": "gallery/media/concepts/mauna/max-combat-craft-type-6-03.png"
+            },
+            {
+              "label": "User-provided artistic concept",
+              "image": "gallery/media/concepts/mauna/max-combat-craft-type-6-user.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent legacy/concept/imported-render review complete; final user acceptance and client calibration separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -33246,6 +33268,107 @@
         "atmospheric": {
           "ordered_candidates": [],
           "selected_first_available": null
+        }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/mauna/max-combat-craft-type-6/model.blend",
+          "present": true,
+          "sha256": "d7b091d9d3f98c80b2ee4c3e540e0a142a1c62eec77691352e41308eccd5db0f",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/mauna/max-combat-craft-type-6/model.blend",
+        "glb": "objects/mauna/max-combat-craft-type-6/model.glb",
+        "issue": 251,
+        "integration": "One canonical source/export across gameplay, ship/build menus and SciTek. Keep the original catalogue id; WorldSize and equipment mounts require client calibration."
+      },
+      "remaster_protocol": {
+        "issue": 251,
+        "concept_review": "reviewed",
+        "review": "objects/mauna/max-combat-craft-type-6/concept-review.json",
+        "iterations": 1,
+        "final_user_acceptance": "pending"
+      },
+      "reviewed_model": {
+        "blend": "objects/mauna/max-combat-craft-type-6/model.blend",
+        "sha256": "238b44a9283ed46e358cb21c0c39997e5a1c0865d99e7edf39452a66811773d4",
+        "runtime_evidence": {
+          "format": "mobile-remaster-runtime-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "metadata": "sources/objects/mauna/max-combat-craft-type-6/model.json",
+          "runtime_report": "sources/objects/mauna/max-combat-craft-type-6/runtime-verification.json",
+          "visual_review": "sources/objects/mauna/max-combat-craft-type-6/concept-review.json",
+          "generator": "sources/tools/blender/remaster_mauna_type6.py",
+          "verifier": "sources/tools/blender/verify_mauna_type6.py",
+          "native_render": "gallery/media/objects/mauna/max-combat-craft-type-6/verified-native.png",
+          "imported_render": "gallery/media/objects/mauna/max-combat-craft-type-6/verified-imported.png",
+          "files": {
+            "sources/objects/mauna/max-combat-craft-type-6/model.blend": "238b44a9283ed46e358cb21c0c39997e5a1c0865d99e7edf39452a66811773d4",
+            "sources/objects/mauna/max-combat-craft-type-6/model.glb": "073a0bd2f149b5cff96b59090abcd61f33afb27c7d589a38c64c08e2693381c1",
+            "sources/objects/mauna/max-combat-craft-type-6/model.json": "3bc65868aca612e1e7756a88bace0ee15642b16fbe2eb19899c911a7b2b4af76",
+            "sources/objects/mauna/max-combat-craft-type-6/runtime-verification.json": "51f510e8eb88b0820e5141115b0af0d02893361339c0791951dc0ca4dd0fc9a3",
+            "sources/objects/mauna/max-combat-craft-type-6/concept-review.json": "94b3cffe9dac25020fbbef135b4e1fa8bdb8c0ae1aaa723652b501cc5d8e876d",
+            "sources/objects/mauna/max-combat-craft-type-6/recipe.json": "672f3b7c5e0eb5e72bb0a5131b33b826829d5e3bcb4fb8c530de171e976a510a",
+            "sources/docs/assets/reconstruction/ships/mauna/max-combat-craft-type-6/model.blend": "d7b091d9d3f98c80b2ee4c3e540e0a142a1c62eec77691352e41308eccd5db0f",
+            "sources/tools/blender/mauna_type6_detail_parts.py": "ee98f6d3e215f72f0eb061db5ed307891598459cc10bebeb0d2dbfabe09cde91",
+            "sources/tools/blender/mauna_max_combat_craft_type_6_parts.py": "c97ba809e56e0931b6ea3e9358ded6cce50e7aa06a003a743f40c6c3ce52c54e",
+            "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "sources/tools/blender/remaster_mauna_type6.py": "26b9341ed1fdd62bf1092280c57f6ed0dce0d4e2121550b1a5fcc22e730f87ad",
+            "sources/tools/blender/remaster_braccatian_mobile_ships.py": "1469b823c8eb59eeca4372d8f5b4059f9ab1de5a1d02e4ddcf3ae9a650cbffa1",
+            "sources/tools/blender/remaster_artemian_mobile_ship.py": "7c152a5afe634f62d26a8666787d99944caa5000110239bb54f59db5e9f61d1b",
+            "tools/author_mauna_mobile_maps.py": "214e5905f8120d78085a7c4985a20447e595d7a29eb129cc50be5609a0d209e0",
+            "sources/tools/blender/verify_mauna_type6.py": "36332f814183c95a06fd5bbc48f4603a578fec4838ddf7886b4db4d333ab2d6d",
+            "sources/tools/blender/verify_artemian_mobile_ship.py": "e55822d3d93d2f33dee9236a230b1acff0a553e20d553d15d69cd9e44a7123de",
+            "sources/tools/blender/verify_mauna_mobile_ship.py": "2e99e1ffca8318b2ced51e5e78520a5b93f9d531af8e62b9e77d0ff58cf5359f",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/front-quarter.png": "2f2094dfc72566376c12259b7e9b02b1d7d5bc68ab64a94553e630c90b0cf28c",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/heading-00.png": "b73115d7834600c756c881962723e5a5a50e72c099e7dede0eaec1fa393859db",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/heading-04.png": "bfaa5ba81ea676679914d61385f8719b1b2ebaa453ababea6bbca5c66f266e02",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/heading-08.png": "a524318081285277ec61af95b5d667302a39a58ff00a9a2ce18969815389ba4a",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/heading-12.png": "9f78822595e697b8138634ebf4e43f49abc6bdb2bbad63caa573b3c76081388a",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/heading-16.png": "9a1dd5e82262d7b68618ffff3e180b9c8466b1689d82056bf3c24ed0c6f4867c",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/heading-28.png": "cf5bd41b2b2f18d6dd3649140f8fa4f53f33c83301828b2e179b7688e9060246",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/rear-quarter.png": "3acd03fcb5403998b6c17708365fa9f3308f96a45ec740763b9dd79731dce55a",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/side.png": "5712773c00286401a155c2e0a80358a01599559b26f72aa8acdc8ce03c295a5d",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/technical-wireframe.png": "490d3fa163bd29a51ca861c9e241864cc5bba74f5cd3475ba01771c9c2afa9ed",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/top.png": "8e58071b93591397a26a29c01e10c7c9d8951dcf9c9d4847076083ed52f29bcb",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/underside.png": "504ecc8e50e919352994b1678fdcb5ce8f0d7417be3f9d1bd97c89c369ea1b96",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/verified-imported.png": "2f2094dfc72566376c12259b7e9b02b1d7d5bc68ab64a94553e630c90b0cf28c",
+            "gallery/media/objects/mauna/max-combat-craft-type-6/verified-native.png": "a19d78d6dd32514ab57f5e0c362fa51054b88b9893f5beae692268fb51934497"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/max-combat-craft-type-6/concept-review.json",
+          "sha256": "94b3cffe9dac25020fbbef135b4e1fa8bdb8c0ae1aaa723652b501cc5d8e876d",
+          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/max-combat-craft-type-6/concept-review.json",
+          "sha256": "94b3cffe9dac25020fbbef135b4e1fa8bdb8c0ae1aaa723652b501cc5d8e876d",
+          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/max-combat-craft-type-6/concept-review.json",
+          "sha256": "94b3cffe9dac25020fbbef135b4e1fa8bdb8c0ae1aaa723652b501cc5d8e876d",
+          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/max-combat-craft-type-6/concept-review.json",
+          "sha256": "94b3cffe9dac25020fbbef135b4e1fa8bdb8c0ae1aaa723652b501cc5d8e876d",
+          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/max-combat-craft-type-6/runtime-verification.json",
+          "sha256": "51f510e8eb88b0820e5141115b0af0d02893361339c0791951dc0ca4dd0fc9a3",
+          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
         }
       }
     },
@@ -33302,7 +33425,7 @@
       "acceptance": {
         "reference_views_reviewed": true,
         "silhouette_and_proportions": true,
-        "high_detail_structure": true,
+        "high_detail_structure": false,
         "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
@@ -33373,7 +33496,8 @@
         "concept_review": "reviewed",
         "review": "objects/mauna/elite-command-craft/concept-review.json",
         "iterations": 1,
-        "final_user_acceptance": "pending"
+        "final_user_acceptance": "pending",
+        "detail_status": "Further construction-detail refinement required after comparison with the user-supplied concept; existing runtime evidence remains valid."
       },
       "reviewed_model": {
         "blend": "objects/mauna/elite-command-craft/model.blend",
@@ -33428,11 +33552,6 @@
           "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
         },
         "silhouette_and_proportions": {
-          "report": "sources/objects/mauna/elite-command-craft/concept-review.json",
-          "sha256": "76a0ac86003fb42083c4d2ca05c21f37c522cb125ee8ccfd3d40aaee633c192d",
-          "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"
-        },
-        "high_detail_structure": {
           "report": "sources/objects/mauna/elite-command-craft/concept-review.json",
           "sha256": "76a0ac86003fb42083c4d2ca05c21f37c522cb125ee8ccfd3d40aaee633c192d",
           "scope": "Bound agent/source evidence only; final user and client acceptance remain separate"

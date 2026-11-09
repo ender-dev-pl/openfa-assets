@@ -1,13 +1,13 @@
 # Mauna mobile remasters
 
-Issue #251 is part of programme #248 and follows the completed Artemian asset milestone #249 / PR #250. This is an incremental delivery: four of five Mauna mobile ships are currently remastered. All cultures' completed spacedocks, including MN5C, are explicitly excluded. Asset verification does not establish final user artistic acceptance or client calibration.
+Issue #251 is part of programme #248 and follows the completed Artemian asset milestone #249 / PR #250. This is an incremental delivery: all five Mauna mobile ships now have canonical remaster assets; the latest user-concept construction-detail follow-up for MN3C remains open. All cultures' completed spacedocks, including MN5C, are explicitly excluded. Asset verification does not establish final user artistic acceptance or client calibration.
 
 | Ship | Legacy | Current milestone | Proposed WorldSize |
 |---|---|---|---:|
 | Surveillance Craft Type 5 | MN0A.256 | Canonical remaster and concept/GLB feedback verified | 40 |
 | Combat Craft Type 1.5 | MN1A.256 | Canonical remaster and concept/GLB feedback verified | 56 |
-| Max Combat Craft Type 6 | MN2C.256 | Pending | — |
-| Elite Command Craft | MN3C.256 | Canonical remaster and concept/GLB feedback verified | 160 |
+| Max Combat Craft Type 6 | MN2C.256 | Canonical model, user-concept and GLB feedback verified | 128 |
+| Elite Command Craft | MN3C.256 | Runtime verified; further construction-detail refinement open | 160 |
 | Transportation Craft Type 3 | MN4C.256 | Canonical remaster and concept/GLB feedback verified | 180 |
 
 ## Evidence and material direction
@@ -71,3 +71,15 @@ MN3C retains two grey chamfered blocks in tandem, a short narrow connector and o
 The canonical `sources/objects/mauna/elite-command-craft/model.blend` and `model.glb` contain38,594 triangles in four batches, one material and three embedded maps, versus103,696 triangles in59 original meshes. All59 source part identities remain editable. Actual saved-native and independent GLB verification covers source-surface tolerance,58 seated connections, two physical dents, matching exported positions and rendered parity. Two side-void rays preserve the narrow connector; three occupied rays check adjacent structure.
 
 The first GLB feedback found blue-grey rod terminals: the recipe now uses the muted-red atlas tile. End comparison elevation was reduced from0.95 to0.25 after inspecting corresponding legacy12/28, and the saved source/import were actually verified again. End blue-field extent and lighting still differ; no numerical fidelity score or complete client acceptance is inferred. WorldSize160 and six equipment mounts require calibration. The gallery selects the same canonical source for gameplay and all menus, with the first study retained as historical.
+
+## Max Combat Craft Type 6
+
+MN2C keeps the low layered grey hull, bronze side strips, sloped aft housing and two separate red covers at one transverse deck station. All32 populated paletted headings were inspected. Two built-in ImageGen requests returned no inspectable output; the third returned a primitive/material study, whose plan view incorrectly placed the red pair longitudinally. The user-supplied ImageGen concept is the preferred construction-detail reference. It does not authorize tandem bridges, a taller silhouette or invented lights. Both inspectable concepts are available in the gallery; no fourth generation was made.
+
+Canonical `sources/objects/mauna/max-combat-craft-type-6/model.blend` and `model.glb` contain61,322 triangles in four batches, one material and three embedded PBR maps. The58 original part identities remain alongside139 new fitted details: six framed side maintenance banks, four conformal shoulder plates with service insets, roof/foredeck louvers, supported conduits and red-cover bands. Broad surfaces remain quiet. Equipment function and hidden engineering are interpretations; WorldSize128 and six mounts require client calibration.
+
+Actual saved-native and independent GLB verification covers declared source-surface tolerance, closed positive geometry,197 named parts,196 seated contacts, three physical dents, two open-space rays and three occupied rays in both formats. Feedback corrected planar side-wall shading, added the missing shoulder depth, reduced excessive tessellation on added planar fittings, and adjusted estimated comparison cameras. The exported red surfaces are tested as a transverse pair at the same longitudinal station, using actual GLB positions and UV material tiles. No numerical artistic fidelity score is inferred.
+
+MN2C uses dedicated `remaster_mauna_type6.py`, `mauna_type6_detail_parts.py` and `verify_mauna_type6.py` so the four preceding source authors/exports are unchanged. Sanitize with `prepare_mauna_mobile_publication.py --ship max-combat-craft-type-6`, then run the dedicated verifier with that ship argument. Existing primitive/loft helpers and the shared geometry verifier are hash-bound. Report I/O regression tests ensure reports remain in the model folder and validation cannot silently rewrite source inputs.
+
+The user's new MN3C reference exposes remaining detail work despite its existing technical pass. Its high-detail acceptance gate is therefore withdrawn until that follow-up is actually rendered and reviewed. This is not completion of the whole remaster programme or final user/client acceptance.
