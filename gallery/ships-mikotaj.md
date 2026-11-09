@@ -36,7 +36,7 @@ Additional views: [Rear machinery](../gallery/media/objects/mikotaj/ylikt-shan/r
 
 [Blend](../sources/objects/mikotaj/falari-lourn/model.blend) · [GLB](../sources/objects/mikotaj/falari-lourn/model.glb)
 
-Additional views: [Rear machinery](../gallery/media/objects/mikotaj/falari-lourn/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/falari-lourn/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/falari-lourn/heading-04.png)
+Additional views: [Rear machinery](../gallery/media/objects/mikotaj/falari-lourn/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/falari-lourn/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/falari-lourn/heading-04.png) · [Rejected concept 1 (geometry)](../gallery/media/concepts/mikotaj/falari-lourn-01.png) · [Rejected concept 2 (geometry)](../gallery/media/concepts/mikotaj/falari-lourn-02.png) · [Rejected concept 3 (geometry)](../gallery/media/concepts/mikotaj/falari-lourn-03.png) · [Four parallel modules — axial GLB](../gallery/media/objects/mikotaj/falari-lourn/axial-front.png)
 
 ## Ruth-Strivakh
 

@@ -16,8 +16,12 @@ def main():
         rel=Path('objects/mikotaj')/key;folder=ROOT/'sources'/rel;meta=json.loads((folder/'model.json').read_text());report=json.loads((folder/'runtime-verification.json').read_text())
         assert report['binaries']=={k:sha(folder/('model.'+k)) for k in ['blend','glb']}
         assert report['generator_sha256']==sha(ROOT/'sources/tools/blender/remaster_mikotaj_mobile_ships.py')
-        assert report['verifier_sha256']==sha(ROOT/'sources/tools/blender/verify_mikotaj_mobile_remasters.py')
-        assert report['relative_surface_deviation']<.012 and report['source_import_position_error']<1e-5
+        assert report['verifier_sha256']==sha(ROOT/report.get('verifier_path','sources/tools/blender/verify_mikotaj_mobile_remasters.py'))
+        assert report['source_import_position_error']<1e-5
+        if report.get('geometry_revision')=='glass-sphere-parallel-modules':
+            assert key=='falari-lourn' and report['parallel_modules']==4 and report['spacing_degrees']==90 and report['seated_modules']==4
+            assert report['revision_generator_sha256']==sha(ROOT/meta['geometry_refinement']['generator'])
+        else:assert report['relative_surface_deviation']<.012
         for filename,digest in report['renders'].items():assert sha(ROOT/'gallery/media'/rel/filename)==digest
         row=next(r for r in data['records'] if r['id']==meta['id']);old=[s for s in row['available_studies'] if s['blend']!=(rel/'model.blend').as_posix()]
         for s in old:s['status']='historical_not_for_packaging'
@@ -30,7 +34,10 @@ def main():
             review=json.loads(review_path.read_text())
             row['remaster_protocol']['review']=(rel/'concept-review.json').as_posix()
             for iteration in review['iterations']:
-                row['available_studies'][0]['views'].append(dict(label='Retrospective concept '+str(iteration['number']),image=iteration['image']))
+                row['available_studies'][0]['views'].append(dict(label=iteration.get('gallery_label','Retrospective concept '+str(iteration['number'])),image=iteration['image']))
+            if key=='falari-lourn':
+                row['available_studies'][0]['views'].append(dict(label='Four parallel modules — axial GLB',image='gallery/media/objects/mikotaj/falari-lourn/axial-front.png'))
+                row['remaster_protocol']['concept_review']='three concepts rejected geometrically; explicit legacy/user geometry verified'
         row['acceptance'].update(reference_views_reviewed=True,silhouette_and_proportions=True,high_detail_structure=True,materials=True,native_and_glb_runtime=True)
         published.append(dict(id=meta['id'],blend=('sources/'+(rel/'model.blend').as_posix()),glb=('sources/'+(rel/'model.glb').as_posix()),blend_sha256=report['binaries']['blend'],glb_sha256=report['binaries']['glb'],size_class=meta['size_class'],world_size_proposal=meta['world_size_proposal'],triangles=meta['triangles'],mesh_batches=4))
     write(inventory,data)
@@ -39,7 +46,7 @@ def main():
     files=[]
     for key in KEYS:files+=list((ROOT/'sources/objects/mikotaj'/key).glob('*'))+list((ROOT/'gallery/media/objects/mikotaj'/key).glob('*'))
     files+=list((ROOT/'sources/materials/mikotaj/mobile-ships').glob('*'))
-    files+=[ROOT/'sources/tools/blender'/n for n in ['remaster_mikotaj_mobile_ships.py','verify_mikotaj_mobile_remasters.py','refine_hiero_peripheral_spikes.py','verify_hiero_peripheral_spikes.py']]
+    files+=[ROOT/'sources/tools/blender'/n for n in ['remaster_mikotaj_mobile_ships.py','verify_mikotaj_mobile_remasters.py','refine_hiero_peripheral_spikes.py','verify_hiero_peripheral_spikes.py','refine_falari_parallel_modules.py','verify_falari_parallel_modules.py']]
     files+=[ROOT/'sources/docs/reconstruction/models'/n for n in ['mikotaj-mobile-remaster.json','mikotaj-mobile-remaster.md','mikotaj-mobile-delivery.json']]
     files+=[ROOT/'gallery/media/objects/mikotaj/mobile-ships.jpg']
     files+=list((ROOT/'gallery/media/concepts/mikotaj').glob('*.png'))

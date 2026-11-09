@@ -14,7 +14,7 @@ def main():
         folder=(ROOT/row['blend']).parent;report=json.loads((folder/'runtime-verification.json').read_text());meta=json.loads((folder/'model.json').read_text());media=ROOT/'gallery/media/objects/mikotaj'/folder.name
         for k in ['blend','glb']:assert sha(ROOT/row[k])==row[k+'_sha256']==report['binaries'][k]
         assert report['generator_sha256']==sha(ROOT/'sources/tools/blender/remaster_mikotaj_mobile_ships.py')
-        assert report['verifier_sha256']==sha(ROOT/'sources/tools/blender/verify_mikotaj_mobile_remasters.py')
+        assert report['verifier_sha256']==sha(ROOT/report.get('verifier_path','sources/tools/blender/verify_mikotaj_mobile_remasters.py'))
         assert meta['shared_primitives_sha256']==sha(ROOT/'sources/tools/blender/remaster_braccatian_mobile_ships.py')
         assert meta['maps_generator_sha256']==sha(ROOT/'tools/author_mikotaj_ship_maps.py')
         for n,h in meta['map_sha256'].items():assert sha(ROOT/'sources/materials/mikotaj/mobile-ships'/n)==h
@@ -27,9 +27,19 @@ def main():
             assert spikes['patcher_sha256']==sha(ROOT/'sources/tools/blender/refine_hiero_peripheral_spikes.py')
             assert spikes['verifier_sha256']==sha(ROOT/'sources/tools/blender/verify_hiero_peripheral_spikes.py')
         assert report['mesh_batches']==4 and report['triangles']<55000
-        assert report['relative_surface_deviation']<.012 and report['source_import_position_error']<1e-5
+        assert report['source_import_position_error']<1e-5
+        revised=meta.get('geometry_revision')=='glass-sphere-parallel-modules'
+        if revised:
+            assert folder.name=='falari-lourn' and report['parallel_modules']==4 and report['seated_modules']==4
+            assert report['spacing_degrees']==90 and report['imported_glass_transmission_verified']
+            assert report['revision_generator_sha256']==sha(ROOT/meta['geometry_refinement']['generator'])
+            assert all(abs(a+2.8)<1e-5 and abs(b-2.8)<1e-5 for a,b in report['common_longitudinal_extents'])
+        else:assert report['relative_surface_deviation']<.012
         raw=(folder/'model.glb').read_bytes();g=json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
-        assert len(g['materials'])==1 and len(g['meshes'])==4 and len(g['images'])==3
+        assert len(g['materials'])==(2 if revised else 1) and len(g['meshes'])==4 and len(g['images'])==3
+        if revised:
+            glass=[m for m in g['materials'] if m.get('extensions',{}).get('KHR_materials_transmission',{}).get('transmissionFactor',0)>.7]
+            assert len(glass)==1 and abs(glass[0]['extensions']['KHR_materials_ior']['ior']-1.46)<1e-5
         assert not g.get('animations') and all('uri' not in image for image in g['images'])
         assert sum(len(m['primitives']) for m in g['meshes'])==4
         side=Image.open(media/'heading-04.png').convert('RGBA').getchannel('A');box=side.point(lambda value:255 if value>128 else 0).getbbox();aspect=(box[2]-box[0])/(box[3]-box[1]);w,h=meta['reference_side_alpha_bounds']
