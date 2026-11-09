@@ -54,11 +54,13 @@ Additional views: [Rear fittings](../gallery/media/objects/artemian/ultimate-mk-
 
 `openfa:ship/artemian/hardcore`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Hardcore](../gallery/media/docs/assets/reconstruction/ships/artemian/hardcore/front-quarter.png)
+![Hardcore](../gallery/media/objects/artemian/hardcore/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/artemian/hardcore/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/artemian/hardcore/model.glb)
+[Blend](../sources/objects/artemian/hardcore/model.blend) · [GLB](../sources/objects/artemian/hardcore/model.glb)
+
+Additional views: [Rear fittings](../gallery/media/objects/artemian/hardcore/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/artemian/hardcore/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/artemian/hardcore/heading-04.png) · [Reviewed inline twin-body transporter concept](../gallery/media/concepts/artemian/hardcore-01.png)
 
 ## Geostationary Construction
 

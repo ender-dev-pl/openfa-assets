@@ -31592,21 +31592,39 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/artemian/hardcore/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/artemian/hardcore/model.blend",
           "present": true,
-          "sha256": "c0b10a6bcc4832b1f73c197fc17f5418d8121d0bf898e506f508d427b61631e7",
-          "final_visual_acceptance": "not-established"
+          "sha256": "11f9dcf517401a90e654ee89ae1f0b50f059585a169ce3a95fff2f2912fa9f1a",
+          "views": [
+            {
+              "label": "Rear fittings",
+              "image": "gallery/media/objects/artemian/hardcore/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/artemian/hardcore/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 comparison",
+              "image": "gallery/media/objects/artemian/hardcore/heading-04.png"
+            },
+            {
+              "label": "Reviewed inline twin-body transporter concept",
+              "image": "gallery/media/concepts/artemian/hardcore-01.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent legacy/concept/imported-render review complete; final user acceptance and client calibration separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -31650,6 +31668,30 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/artemian/hardcore/model.blend",
+          "present": true,
+          "sha256": "c0b10a6bcc4832b1f73c197fc17f5418d8121d0bf898e506f508d427b61631e7",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/artemian/hardcore/model.blend",
+        "glb": "objects/artemian/hardcore/model.glb",
+        "issue": 249,
+        "integration": "One canonical source/export across gameplay, ship/build menus and SciTek. Keep the original catalogue id; WorldSize and equipment mounts require client calibration."
+      },
+      "remaster_protocol": {
+        "issue": 249,
+        "concept_review": "reviewed",
+        "review": "objects/artemian/hardcore/concept-review.json",
+        "iterations": 1,
+        "final_user_acceptance": "pending"
       }
     },
     {

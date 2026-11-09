@@ -1,6 +1,6 @@
 # Artemian mobile remasters
 
-Issue #249 is part of programme #248. This is an incremental delivery: four of five mobile ships are currently remastered. The user confirmed that every culture's spacedocks are already complete. Geostationary Construction AR5C and the other fixed orbital stations are excluded from further work in this programme.
+Issue #249 is part of programme #248. All five mobile ships now have canonical remasters with reviewed concepts and independent GLB feedback. This establishes the asset milestone, not final user artistic acceptance or client calibration. The user confirmed that every culture's spacedocks are already complete. Geostationary Construction AR5C and the other fixed orbital stations are excluded from further work in this programme.
 
 | Ship | Legacy | Current milestone | Proposed WorldSize |
 |---|---|---|---:|
@@ -8,7 +8,7 @@ Issue #249 is part of programme #248. This is an incremental delivery: four of f
 | All-Purpose Assault | AR1A.256 | Canonical remaster and concept/GLB feedback verified | 48 |
 | Shielded Multi-Assault | AR2C.256 | Canonical remaster and concept/GLB feedback verified | 64 |
 | Ultimate Mk II | AR3C.256 | Canonical remaster and concept/GLB feedback verified | 88 |
-| Hardcore | AR4C.256 | Pending | — |
+| Hardcore | AR4C.256 | Canonical remaster and concept/GLB feedback verified | 96 |
 
 ## Evidence and concept workflow
 
@@ -65,6 +65,16 @@ Actual GLB feedback found hanging bulb-like fittings. Twelve declared, root-pres
 Saved-native and independent-import checks verify the explicitly transformed baseline form, closed positive geometry, 54 seated connections, matching positions and actual renders. Radial ray checks preserve the lid/body dents at measured depths approximately 0.01214 and 0.01000 model units; vertical-only checks would not measure these side dents correctly. The direct GLB UV/area check requires both silver upper and green lower surfaces, while rejecting unproven emission. Shared generator/verifier changes were exercised on earlier models, whose GLB bytes and appearance remain unchanged.
 
 The green underside is darker under the current preview lighting than the original. Client material/illumination validation remains separate; emission is not invented to compensate. Reference heading4 alpha bounds are 78 by 21 pixels. Comparison camera estimates do not establish recovered heading or projection. WorldSize 88 is a heavy-combat scale proposal; six socket locations and final user artistic acceptance remain separate.
+
+## Hardcore refinement and GLB feedback
+
+AR4C contains sixteen populated even headings and sixteen empty odd headings. All populated views were inspected with the original palette. They show two warm gold/brown rounded bodies inline, a silver connecting assembly, lateral elements, an aft plane and blue-grey details. Catalogue tags establish an ore/missile transporter with five equipment slots; no descriptive narrative or catalogue animation is mapped.
+
+One actual ImageGen concept retains the inline twin-body form and four small lateral modules. More elaborate concept bridge machinery, collars and the enlarged fore fairing remain interpretation and do not override the clearer original geometry. The canonical `sources/objects/artemian/hardcore/model.blend` and `model.glb` retain 48 editable part identities, reduced from 56,356 triangles in 48 meshes to 49,716 triangles in four batches with one material and three embedded PBR maps. The body/module pressure profiles, seated trims and connector remain distinct; sparse covers/slots/fasteners, six physical radial dents and worn alloy surfaces keep the silhouette readable without dense panel grids. Tail and service-cover edges receive a small manufactured radius.
+
+Actual imported-GLB feedback found a reversed fore/aft comparison direction and an excessively elevated side view. Corrected camera estimates use azimuth zero and elevation 0.12; they do not establish recovered gameplay orientation. Corresponding 0/4/12/28 views were rerendered and inspected against legacy and the concept. Heading4 alpha bounds are 122 by 18 pixels. Saved-native and independent-import checks verify closed geometry, declared source-form tolerance, matching positions/renders, 51 seated connections and all six radial dents. A direct GLB positions/indices/UV area check requires predominantly warm alloy bodies and the silver connector, without invented green surfaces or emission.
+
+Exact body sections/spacing, fine bridge construction, module function and hidden backs remain authored interpretation. WorldSize 96 is a large-transporter proposal, not a recovered physical dimension. Five mount coordinates, client scale/heading/material validation and final user artistic acceptance remain separate. No extra gameplay/menu/SciTek model is introduced; the historical first study is retained outside current packaging selection.
 
 ## Reproduction
 

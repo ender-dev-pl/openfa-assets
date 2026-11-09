@@ -73,6 +73,13 @@ def main():
             lower=atlas_areas(raw,g,length,'PrimaryHullAndArmour');lid=atlas_areas(raw,g,length,'ServiceAssemblies')
             assert lower[1]>.5 and lid[0]>.8,(lower.tolist(),lid.tolist())
             assert not any(g['materials'][0].get('emissiveFactor',[0,0,0])),'unproven emission'
+        if folder.name=='hardcore':
+            names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
+            assert len(names)==48 and len({n for n in names if 'main pressure body' in n})==2 and len({n for n in names if 'lateral module' in n})==4
+            assert len(proof['attachments_checked'])==51 and len(proof['protected_dents'])==6
+            assert all(d['measured_depth']>(.003 if 'main pressure' in d['part'] else .001) for d in proof['protected_dents'])
+            areas=atlas_areas(raw,g,length,'PrimaryHullAndArmour');assert areas[2]>.80 and .01<areas[0]<.20 and areas[1]<.001,areas.tolist()
+            assert not any(g['materials'][0].get('emissiveFactor',[0,0,0])),'unproven emission'
         ti=g['materials'][0]['pbrMetallicRoughness']['metallicRoughnessTexture']['index'];im=g['images'][g['textures'][ti]['source']];view=g['bufferViews'][im['bufferView']];start=28+length+view.get('byteOffset',0)
         texture=np.asarray(Image.open(io.BytesIO(raw[start:start+view['byteLength']])).convert('RGB')).astype(float)/255
         assert texture.shape[:2]==(1024,2048) and .52<texture[:512,:512,1].mean()<.60 and .75<texture[:512,:512,2].mean()<.81
