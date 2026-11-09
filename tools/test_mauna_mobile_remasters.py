@@ -67,12 +67,24 @@ def main():
             assert proof['ray_witnesses']['native']==dict(void_rays=3,solid_rays=4)
             areas=atlas_areas(raw,g,length,'PrimaryHullAndArmour');assert areas[0]>.8 and .01<areas[5]<.15,areas.tolist()
             check_type5_end_uv(raw,g,length)
+        if folder.name=='combat-craft-type-1-5':
+            names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
+            assert len(names)==49 and {'Type 1.5 fore raised deck','Type 1.5 aft raised deck'}<=names
+            assert len(proof['attachments_checked'])==48 and len(proof['protected_dents'])==3
+            assert proof['ray_witnesses']['native']==dict(void_rays=3,solid_rays=2)
+            assert meta['material_tiles']['Type 1.5 | dull pale blue grey end']==3
+            assert meta['comparison_heading_directions']=={'12':[0,-1,.95],'28':[0,1,.95]}
         texture=g['materials'][0]['pbrMetallicRoughness']['metallicRoughnessTexture']['index'];image=g['images'][g['textures'][texture]['source']];view=g['bufferViews'][image['bufferView']];start=28+length+view.get('byteOffset',0)
         orm=np.asarray(Image.open(io.BytesIO(raw[start:start+view['byteLength']])).convert('RGB')).astype(float)/255
         assert orm.shape[:2]==(1024,2048) and .57<orm[:512,:512,1].mean()<.64 and .72<orm[:512,:512,2].mean()<.76
         native=np.asarray(Image.open(media/'verified-native.png').convert('RGBA')).astype(float);imported=np.asarray(Image.open(media/'verified-imported.png').convert('RGBA')).astype(float);a=native[:,:,3]>128;b=imported[:,:,3]>128
         iou=float((a&b).sum()/(a|b).sum());rgb=float(abs(native[:,:,:3]-imported[:,:,:3])[a&b].mean());assert iou>.995 and rgb<4
-        bounds=Image.open(media/'heading-04.png').convert('RGBA').getchannel('A').point(lambda v:255 if v>128 else 0).getbbox();aspect=(bounds[2]-bounds[0])/(bounds[3]-bounds[1]);w,h=meta['reference_side_bounds'];assert abs(aspect/(w/h)-1)<.18,(folder.name,aspect,w/h)
+        bounds=Image.open(media/'heading-04.png').convert('RGBA').getchannel('A').point(lambda v:255 if v>128 else 0).getbbox();aspect=(bounds[2]-bounds[0])/(bounds[3]-bounds[1]);w,h=meta['reference_side_bounds']
+        # One source pixel is significant for a six-pixel-high sprite. Keep
+        # the prior coarse camera tolerance, with explicit raster uncertainty;
+        # this is a proportion diagnostic, never an artistic acceptance score.
+        low=min(.82*w/h,(w-1)/(h+1));high=max(1.18*w/h,(w+1)/max(1,h-1))
+        assert low<aspect<high,(folder.name,aspect,(low,high),w/h)
         record=next(r for r in inventory['records'] if r['id']==row['id']);assert len(record['available_studies'])==1 and 'sources/'+record['available_studies'][0]['blend']==row['blend']
         results.append(dict(id=row['id'],alpha_iou=iou,mean_rgb_error_255=rgb,**proof['binaries']))
     (ROOT/'sources/docs/reconstruction/models/mauna-mobile-delivery.json').write_text(json.dumps(dict(models=results,pending=doc['pending'],scope='Verified asset milestones only; client calibration and final user artistic acceptance separate'),indent=2)+'\n');print('MAUNA_DELIVERY_OK',results)

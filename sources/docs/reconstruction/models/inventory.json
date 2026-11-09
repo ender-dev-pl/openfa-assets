@@ -31949,21 +31949,43 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/mauna/combat-craft-type-1-5/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/mauna/combat-craft-type-1-5/model.blend",
           "present": true,
-          "sha256": "73b36ffe2ec8ecdd3d754ca24871f1af9d1bdc08d73884febf317c8a05798c9c",
-          "final_visual_acceptance": "not-established"
+          "sha256": "9ae4d3c94a38f5166b0cc7f96e48ee0f3c3d3c1be47858d37274610b40bfba40",
+          "views": [
+            {
+              "label": "Rear fittings",
+              "image": "gallery/media/objects/mauna/combat-craft-type-1-5/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/mauna/combat-craft-type-1-5/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 comparison",
+              "image": "gallery/media/objects/mauna/combat-craft-type-1-5/heading-04.png"
+            },
+            {
+              "label": "Rejected thin/long beam concept1",
+              "image": "gallery/media/concepts/mauna/combat-craft-type-1-5-01.png"
+            },
+            {
+              "label": "Reviewed stepped grey beam concept2",
+              "image": "gallery/media/concepts/mauna/combat-craft-type-1-5-02.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent legacy/concept/imported-render review complete; final user acceptance and client calibration separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -32007,6 +32029,30 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/mauna/combat-craft-type-1-5/model.blend",
+          "present": true,
+          "sha256": "73b36ffe2ec8ecdd3d754ca24871f1af9d1bdc08d73884febf317c8a05798c9c",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/mauna/combat-craft-type-1-5/model.blend",
+        "glb": "objects/mauna/combat-craft-type-1-5/model.glb",
+        "issue": 251,
+        "integration": "One canonical source/export across gameplay, ship/build menus and SciTek. Keep the original catalogue id; WorldSize and equipment mounts require client calibration."
+      },
+      "remaster_protocol": {
+        "issue": 251,
+        "concept_review": "reviewed",
+        "review": "objects/mauna/combat-craft-type-1-5/concept-review.json",
+        "iterations": 2,
+        "final_user_acceptance": "pending"
       }
     },
     {

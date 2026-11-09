@@ -83,7 +83,9 @@ def main(key):
     render(media/'verified-imported.png',core.VIEWS['front-quarter'])
     for label,direction in core.VIEWS.items():render(media/(label+'.png'),direction)
     angle=meta['comparison_azimuth'];c=math.cos(angle);s=math.sin(angle)
-    for frame,(x,y) in [(0,(1,-1)),(4,(1,0)),(8,(1,1)),(12,(0,1)),(16,(-1,1)),(28,(0,-1))]:render(media/f'heading-{frame:02}.png',(x*c-y*s,x*s+y*c,meta['comparison_elevation']))
+    for frame,(x,y) in [(0,(1,-1)),(4,(1,0)),(8,(1,1)),(12,(0,1)),(16,(-1,1)),(28,(0,-1))]:
+        direction=meta.get('comparison_heading_directions',{}).get(str(frame),(x*c-y*s,x*s+y*c,meta['comparison_elevation']))
+        render(media/f'heading-{frame:02}.png',direction)
     for o in core.meshes():
         mat=bpy.data.materials.new('Actual imported technical wireframe');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();wire=n.new('ShaderNodeWireframe');wire.use_pixel_size=True;wire.inputs['Size'].default_value=.5
         mix=n.new('ShaderNodeMixRGB');mix.inputs[1].default_value=(0,0,0,1);mix.inputs[2].default_value=(.03,.55,.13,1);mat.node_tree.links.new(wire.outputs[0],mix.inputs[0]);em=n.new('ShaderNodeEmission');mat.node_tree.links.new(mix.outputs[0],em.inputs[0]);output=n.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(em.outputs[0],output.inputs[0]);o.data.materials.clear();o.data.materials.append(mat)

@@ -18,11 +18,13 @@ Additional views: [Rear fittings](../gallery/media/objects/mauna/surveillance-cr
 
 `openfa:ship/mauna/combat-craft-type-1-5`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Combat Craft Type 1.5](../gallery/media/docs/assets/reconstruction/ships/mauna/combat-craft-type-1-5/front-quarter.png)
+![Combat Craft Type 1.5](../gallery/media/objects/mauna/combat-craft-type-1-5/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/mauna/combat-craft-type-1-5/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mauna/combat-craft-type-1-5/model.glb)
+[Blend](../sources/objects/mauna/combat-craft-type-1-5/model.blend) · [GLB](../sources/objects/mauna/combat-craft-type-1-5/model.glb)
+
+Additional views: [Rear fittings](../gallery/media/objects/mauna/combat-craft-type-1-5/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mauna/combat-craft-type-1-5/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/mauna/combat-craft-type-1-5/heading-04.png) · [Rejected thin/long beam concept1](../gallery/media/concepts/mauna/combat-craft-type-1-5-01.png) · [Reviewed stepped grey beam concept2](../gallery/media/concepts/mauna/combat-craft-type-1-5-02.png)
 
 ## Max Combat Craft Type 6
 
