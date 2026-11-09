@@ -1,7 +1,7 @@
 """Select one current AC0A model and preserve its completed first editable source."""
 from pathlib import Path
 import json
-from register_achaean_transporter_remaster import write,sha
+from register_achaean_transporter_remaster import write,sha,bind_record
 
 ROOT=Path(__file__).resolve().parents[1]
 OBJECT='objects/achaean/hunter-prospector'
@@ -29,7 +29,6 @@ def main():
         scale_status='Authored size assumption; current generic fallback96; client acceptance separate')
     record['acceptance'].update(reference_views_reviewed=True,native_and_glb_runtime=True)
     record['functional_reference']['review_status']='reviewed-no-object-specific-narrative-mapped'
-    write(path,inventory)
     write(out/'model.json',dict(id=report['id'],issue=238,canonical_blend='sources/'+OBJECT+'/model.blend',
         canonical_glb='sources/'+OBJECT+'/model.glb',blend_sha256=report['blend_sha256'],glb_sha256=report['glb_sha256'],
         triangles=report['triangles'],mesh_batches=report['mesh_batches'],materials=2,packed_maps=4,
@@ -37,6 +36,8 @@ def main():
         native_max_extent=18,proposed_world_size=40,current_client_fallback_size=96,equipment_slots=2,
         calibrated_sockets=0,operational_animations=[],preserved_historical_sources=preserved,
         visual_acceptance='Author review completed; final user/client acceptance separate'))
+    bind_record(ROOT,record)
+    write(path,inventory)
     layout_path=ROOT/'project/layout.json';layout=json.loads(layout_path.read_text());known={i['destination'] for i in layout['files']}
     paths=list(out.iterdir())+list((ROOT/'gallery/media'/OBJECT).iterdir())
     paths += [ROOT/'sources/tools/blender/remaster_achaean_hunter.py',ROOT/'sources/tools/blender/verify_achaean_hunter_remaster.py']

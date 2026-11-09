@@ -25,6 +25,11 @@ def main():
     verify()
     assert not list((ROOT / 'sources').rglob('*.java')), 'Game decompiler code is external evidence'
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text())
+    sys.path.insert(0,str(ROOT/'sources/tools/blender'))
+    from model_runtime_evidence import verify_runtime_evidence
+    for record in inventory['records']:
+        if record.get('selected_refinement',{}).get('issue') in {234,236,238}:
+            verify_runtime_evidence(ROOT/'sources',record)
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
     from gallery_trading_goods import trading_records
     trades = trading_records(ROOT)
