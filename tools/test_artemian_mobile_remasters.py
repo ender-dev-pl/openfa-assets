@@ -26,6 +26,14 @@ def main():
         assert proof['relative_surface_deviation']<.012 and proof['source_import_position_error']<1e-5 and proof['triangles']<meta['max_triangles']
         assert len(proof['attachments_checked'])==len(meta.get('attachment_pairs',[]))
         assert len(proof['protected_dents'])==len(meta.get('protected_dents',[])) and len(proof['profile_checks'])==len(meta.get('profile_constraints',[]))
+        if folder.name=='all-purpose-assault':
+            names={name for group in meta['editable_part_vertex_groups'].values() for name in group}
+            assert len(names)==54 and {name for name in names if 'grey cowl' in name}=={'All-Purpose central grey cowl','All-Purpose port grey cowl','All-Purpose starboard grey cowl'}
+            # Actual surface-distance evidence must detect a manufactured edge
+            # change; simply recording a bevel recipe does not prove it ran.
+            assert .0003<proof['part_surface_errors']['All-Purpose green delta hull']<.01
+            assert all(.0003<proof['part_surface_errors'][f'All-Purpose service cover {i}']<.01 for i in range(6))
+            assert len(proof['attachments_checked'])==53 and len(proof['protected_dents'])==4
         raw=(folder/'model.glb').read_bytes();length=struct.unpack_from('<I',raw,12)[0];g=json.loads(raw[20:20+length])
         assert len(g['materials'])==1 and len(g['meshes'])==meta['mesh_batches']==4 and len(g['images'])==3
         assert sum(len(m['primitives']) for m in g['meshes'])<=meta['max_primitives'] and not g.get('animations')

@@ -18,11 +18,13 @@ Additional views: [Rear fittings](../gallery/media/objects/artemian/gerla-kans-e
 
 `openfa:ship/artemian/all-purpose-assault`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![All-Purpose Assault](../gallery/media/docs/assets/reconstruction/ships/artemian/all-purpose-assault/front-quarter.png)
+![All-Purpose Assault](../gallery/media/objects/artemian/all-purpose-assault/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/artemian/all-purpose-assault/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/artemian/all-purpose-assault/model.glb)
+[Blend](../sources/objects/artemian/all-purpose-assault/model.blend) · [GLB](../sources/objects/artemian/all-purpose-assault/model.glb)
+
+Additional views: [Rear fittings](../gallery/media/objects/artemian/all-purpose-assault/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/artemian/all-purpose-assault/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/artemian/all-purpose-assault/heading-04.png) · [Rejected extra grey cowls](../gallery/media/concepts/artemian/all-purpose-assault-01.png) · [Reviewed three-cowl concept](../gallery/media/concepts/artemian/all-purpose-assault-02.png)
 
 ## Shielded Multi-Assault
 

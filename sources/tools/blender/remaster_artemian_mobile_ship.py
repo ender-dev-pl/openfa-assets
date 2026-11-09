@@ -56,6 +56,10 @@ def main(key):
         before=len(o.data.polygons);target=next((v for word,v in recipe['part_face_budget'].items() if word!='default' and word in o.name.lower()),recipe['part_face_budget']['default'])
         if before>target:
             modifier=o.modifiers.new('Game density budget','DECIMATE');modifier.ratio=target/before;modifier.use_collapse_triangulate=True;bpy.ops.object.modifier_apply(modifier=modifier.name)
+        edge_finish=recipe.get('edge_finish',{})
+        if any(word in o.name.lower() for word in edge_finish.get('part_keywords',[])):
+            modifier=o.modifiers.new('Manufactured edge radius','BEVEL');modifier.width=edge_finish['width'];modifier.segments=edge_finish['segments'];modifier.limit_method='ANGLE';modifier.angle_limit=edge_finish['angle_limit'];modifier.use_clamp_overlap=True
+            bpy.ops.object.modifier_apply(modifier=modifier.name)
         reductions.append(dict(part=o.name,source_faces=before,final_faces=len(o.data.polygons),atlas_tile=recipe['material_tiles'][old_material]))
         core.assign_uv(o,mat,recipe['material_tiles'][old_material]);groups.setdefault(group_for(o.name),[]).append(o)
     root=bpy.data.objects['PlacementRoot'];mapping={}
