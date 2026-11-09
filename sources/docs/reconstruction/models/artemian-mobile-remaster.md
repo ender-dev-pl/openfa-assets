@@ -1,6 +1,6 @@
 # Artemian mobile remasters
 
-Issue #249 is part of programme #248. This is an incremental delivery: one of five mobile ships is currently remastered. Geostationary Construction AR5C is a fixed orbital station and remains a separate audit, not a small-shipyard product.
+Issue #249 is part of programme #248. This is an incremental delivery: one of five mobile ships is currently remastered. The user confirmed that every culture's spacedocks are already complete. Geostationary Construction AR5C and the other fixed orbital stations are excluded from further work in this programme.
 
 | Ship | Legacy | Current milestone | Proposed WorldSize |
 |---|---|---|---:|
