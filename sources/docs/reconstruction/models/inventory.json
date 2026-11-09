@@ -29826,21 +29826,35 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/braccatian/rattlesnake/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/braccatian/rattlesnake/model.blend",
           "present": true,
-          "sha256": "4162053450219686cd2404a20c8b55a160423f2061c6a9b3f585362d42a317ea",
-          "final_visual_acceptance": "not-established"
+          "sha256": "5d506efe867d9ad1e5da6a00797d9965d4c722296519aa1c853f0b8d485942b1",
+          "views": [
+            {
+              "label": "Rear machinery",
+              "image": "gallery/media/objects/braccatian/rattlesnake/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/braccatian/rattlesnake/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 view",
+              "image": "gallery/media/objects/braccatian/rattlesnake/heading-04.png"
+            }
+          ],
+          "final_visual_acceptance": "User review pending; source/import runtime verified"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -29884,6 +29898,23 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/braccatian/rattlesnake/model.blend",
+          "present": true,
+          "sha256": "4162053450219686cd2404a20c8b55a160423f2061c6a9b3f585362d42a317ea",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/braccatian/rattlesnake/model.blend",
+        "glb": "objects/braccatian/rattlesnake/model.glb",
+        "issue": 244,
+        "integration": "One canonical model for gameplay, ship/build menus and SciTek; retain original catalogue id. World-size proposal and sockets require client calibration."
       }
     },
     {
@@ -29911,28 +29942,35 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/braccatian/widowmaker/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/braccatian/widowmaker/model.blend",
           "present": true,
-          "sha256": "7f29a9565811e7b739efec0e3ce44b39842889b60409dbeb9cbd9e21add9bad8",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "ship-visible-equipment-refinement",
-          "blend": "docs/assets/reconstruction/braccatian-refined/ships/widowmaker/model.blend",
-          "present": true,
-          "sha256": "810297a29c2e403d518725e7ae95c7cf4a149cb9da0344040768c893d66a382f",
-          "final_visual_acceptance": "not-established"
+          "sha256": "fa8025cdd5c921190eeb9aa0359cd972250ab05630f6437d9065e569eb9e8e68",
+          "views": [
+            {
+              "label": "Rear machinery",
+              "image": "gallery/media/objects/braccatian/widowmaker/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/braccatian/widowmaker/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 view",
+              "image": "gallery/media/objects/braccatian/widowmaker/heading-04.png"
+            }
+          ],
+          "final_visual_acceptance": "User review pending; source/import runtime verified"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -29976,6 +30014,31 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/braccatian/widowmaker/model.blend",
+          "present": true,
+          "sha256": "7f29a9565811e7b739efec0e3ce44b39842889b60409dbeb9cbd9e21add9bad8",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        },
+        {
+          "stage": "ship-visible-equipment-refinement",
+          "blend": "docs/assets/reconstruction/braccatian-refined/ships/widowmaker/model.blend",
+          "present": true,
+          "sha256": "810297a29c2e403d518725e7ae95c7cf4a149cb9da0344040768c893d66a382f",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/braccatian/widowmaker/model.blend",
+        "glb": "objects/braccatian/widowmaker/model.glb",
+        "issue": 244,
+        "integration": "One canonical model for gameplay, ship/build menus and SciTek; retain original catalogue id. World-size proposal and sockets require client calibration."
       }
     },
     {
@@ -30003,28 +30066,35 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/braccatian/heartsblood/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/braccatian/heartsblood/model.blend",
           "present": true,
-          "sha256": "3bf654da6569ecee2f8511e6887320cb56a6a05a773b1edae1554362dbff649d",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "ship-visible-equipment-refinement",
-          "blend": "docs/assets/reconstruction/braccatian-refined/ships/heartsblood/model.blend",
-          "present": true,
-          "sha256": "69fbad72c832cc935dd03c03cad85d75e14c98cba0b1fc1900b6a7e20f9dcaaa",
-          "final_visual_acceptance": "not-established"
+          "sha256": "c017f8b7b60560683a8fa7814d7d075ae7c5afa93dc7b30a7378d2e3376e700c",
+          "views": [
+            {
+              "label": "Rear machinery",
+              "image": "gallery/media/objects/braccatian/heartsblood/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/braccatian/heartsblood/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 view",
+              "image": "gallery/media/objects/braccatian/heartsblood/heading-04.png"
+            }
+          ],
+          "final_visual_acceptance": "User review pending; source/import runtime verified"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -30068,6 +30138,31 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/braccatian/heartsblood/model.blend",
+          "present": true,
+          "sha256": "3bf654da6569ecee2f8511e6887320cb56a6a05a773b1edae1554362dbff649d",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        },
+        {
+          "stage": "ship-visible-equipment-refinement",
+          "blend": "docs/assets/reconstruction/braccatian-refined/ships/heartsblood/model.blend",
+          "present": true,
+          "sha256": "69fbad72c832cc935dd03c03cad85d75e14c98cba0b1fc1900b6a7e20f9dcaaa",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/braccatian/heartsblood/model.blend",
+        "glb": "objects/braccatian/heartsblood/model.glb",
+        "issue": 244,
+        "integration": "One canonical model for gameplay, ship/build menus and SciTek; retain original catalogue id. World-size proposal and sockets require client calibration."
       }
     },
     {
@@ -30095,21 +30190,35 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/braccatian/morning-glory/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/braccatian/morning-glory/model.blend",
           "present": true,
-          "sha256": "b6b8c35ad8dcc65a3e9b375a184cd0322b39500da014f6a49003cc969e1aa7be",
-          "final_visual_acceptance": "not-established"
+          "sha256": "f043f8e9e5948c674b46caf267d23f2afe3cade8be5ae8f9f72712b374f7400f",
+          "views": [
+            {
+              "label": "Rear machinery",
+              "image": "gallery/media/objects/braccatian/morning-glory/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/braccatian/morning-glory/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 view",
+              "image": "gallery/media/objects/braccatian/morning-glory/heading-04.png"
+            }
+          ],
+          "final_visual_acceptance": "User review pending; source/import runtime verified"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -30153,6 +30262,23 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/braccatian/morning-glory/model.blend",
+          "present": true,
+          "sha256": "b6b8c35ad8dcc65a3e9b375a184cd0322b39500da014f6a49003cc969e1aa7be",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/braccatian/morning-glory/model.blend",
+        "glb": "objects/braccatian/morning-glory/model.glb",
+        "issue": 244,
+        "integration": "One canonical model for gameplay, ship/build menus and SciTek; retain original catalogue id. World-size proposal and sockets require client calibration."
       }
     },
     {
