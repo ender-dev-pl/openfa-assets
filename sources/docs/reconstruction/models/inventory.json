@@ -31068,21 +31068,43 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/artemian/gerla-kans-explorer/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/artemian/gerla-kans-explorer/model.blend",
           "present": true,
-          "sha256": "8947918e9498fcd987331af5de779bec7d30b30b429dbc2e2f5e58ac8bf6bad5",
-          "final_visual_acceptance": "not-established"
+          "sha256": "1c9cd909b0b626685c8bf90147ac2805cb8f028cb112e890f8f382831fbb3e72",
+          "views": [
+            {
+              "label": "Rear fittings",
+              "image": "gallery/media/objects/artemian/gerla-kans-explorer/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/artemian/gerla-kans-explorer/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 comparison",
+              "image": "gallery/media/objects/artemian/gerla-kans-explorer/heading-04.png"
+            },
+            {
+              "label": "Rejected elongated concept1",
+              "image": "gallery/media/concepts/artemian/gerla-kans-explorer-01.png"
+            },
+            {
+              "label": "Reviewed compact concept2",
+              "image": "gallery/media/concepts/artemian/gerla-kans-explorer-02.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent legacy/concept/imported-render review complete; final user acceptance and client calibration separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -31126,6 +31148,30 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/artemian/gerla-kans-explorer/model.blend",
+          "present": true,
+          "sha256": "8947918e9498fcd987331af5de779bec7d30b30b429dbc2e2f5e58ac8bf6bad5",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/artemian/gerla-kans-explorer/model.blend",
+        "glb": "objects/artemian/gerla-kans-explorer/model.glb",
+        "issue": 249,
+        "integration": "One canonical source/export across gameplay, ship/build menus and SciTek. Keep the original catalogue id; WorldSize and equipment mounts require client calibration."
+      },
+      "remaster_protocol": {
+        "issue": 249,
+        "concept_review": "reviewed",
+        "review": "objects/artemian/gerla-kans-explorer/concept-review.json",
+        "iterations": 2,
+        "final_user_acceptance": "pending"
       }
     },
     {

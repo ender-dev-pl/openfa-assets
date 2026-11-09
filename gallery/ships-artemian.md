@@ -6,11 +6,13 @@
 
 `openfa:ship/artemian/gerla-kans-explorer`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Gerla-Kans Explorer](../gallery/media/docs/assets/reconstruction/ships/artemian/gerla-kans-explorer/front-quarter.png)
+![Gerla-Kans Explorer](../gallery/media/objects/artemian/gerla-kans-explorer/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/artemian/gerla-kans-explorer/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/artemian/gerla-kans-explorer/model.glb)
+[Blend](../sources/objects/artemian/gerla-kans-explorer/model.blend) · [GLB](../sources/objects/artemian/gerla-kans-explorer/model.glb)
+
+Additional views: [Rear fittings](../gallery/media/objects/artemian/gerla-kans-explorer/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/artemian/gerla-kans-explorer/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/artemian/gerla-kans-explorer/heading-04.png) · [Rejected elongated concept1](../gallery/media/concepts/artemian/gerla-kans-explorer-01.png) · [Reviewed compact concept2](../gallery/media/concepts/artemian/gerla-kans-explorer-02.png)
 
 ## All-Purpose Assault
 

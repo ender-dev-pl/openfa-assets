@@ -1,0 +1,44 @@
+"""Source-bound geometry, export, concept feedback and one-canonical-selection gates."""
+from pathlib import Path
+import hashlib,io,json,struct
+import numpy as np
+from PIL import Image
+ROOT=Path(__file__).resolve().parents[1]
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+
+
+def main():
+    publication=json.loads((ROOT/'sources/docs/reconstruction/models/artemian-mobile-remaster.json').read_text());models=publication['models'];assert 1<=len(models)<=publication['expected_mobile_ship_count']==5
+    refs=json.loads((ROOT/'sources/docs/reconstruction/models/ship-reference-index.json').read_text())['ships'];expected={r['id'] for r in refs if r['culture']=='artemian' and not r['runtime_fixed_scale']}
+    assert {r['id'] for r in models}|set(publication['pending'])==expected and not {r['id'] for r in models}&set(publication['pending'])
+    inventory=json.loads((ROOT/'sources/docs/reconstruction/models/inventory.json').read_text());results=[]
+    for row in models:
+        folder=(ROOT/row['blend']).parent;meta=json.loads((folder/'model.json').read_text());proof=json.loads((folder/'runtime-verification.json').read_text());review=json.loads((folder/'concept-review.json').read_text());media=ROOT/'gallery/media/objects/artemian'/folder.name
+        assert proof['generator_sha256']==sha(ROOT/'sources/tools/blender/remaster_artemian_mobile_ship.py') and proof['verifier_sha256']==sha(ROOT/'sources/tools/blender/verify_artemian_mobile_ship.py')
+        assert proof['recipe_sha256']==meta['recipe_sha256']==sha(folder/'recipe.json')
+        assert meta['shared_primitives_sha256']==sha(ROOT/'sources/tools/blender/remaster_braccatian_mobile_ships.py') and meta['maps_generator_sha256']==sha(ROOT/'tools/author_artemian_mobile_maps.py')
+        for kind in ['blend','glb']:assert sha(folder/('model.'+kind))==proof['binaries'][kind]==row[kind+'_sha256']
+        assert review['reviewed_binary_hashes']==proof['binaries'] and 1<=len(review['iterations'])<=3
+        ref=next(r for r in refs if r['id']==row['id']);assert review['legacy_identity']['source_sha256']==ref['source_sha256']
+        for it in review['iterations']:assert it['prompt'] and it['verdict'] and sha(ROOT/it['image'])==it['sha256'] and it['input_images']
+        for name,digest in meta['map_sha256'].items():assert sha(ROOT/'sources/materials/artemian/mobile-ships'/name)==digest
+        for name,digest in proof['renders'].items():assert sha(media/name)==digest
+        assert proof['relative_surface_deviation']<.012 and proof['source_import_position_error']<1e-5 and proof['triangles']<meta['max_triangles']
+        assert len(proof['attachments_checked'])==len(meta.get('attachment_pairs',[]))
+        assert len(proof['protected_dents'])==len(meta.get('protected_dents',[])) and len(proof['profile_checks'])==len(meta.get('profile_constraints',[]))
+        raw=(folder/'model.glb').read_bytes();length=struct.unpack_from('<I',raw,12)[0];g=json.loads(raw[20:20+length])
+        assert len(g['materials'])==1 and len(g['meshes'])==meta['mesh_batches']==4 and len(g['images'])==3
+        assert sum(len(m['primitives']) for m in g['meshes'])<=meta['max_primitives'] and not g.get('animations')
+        assert all('uri' not in im for im in g['images'])
+        ti=g['materials'][0]['pbrMetallicRoughness']['metallicRoughnessTexture']['index'];im=g['images'][g['textures'][ti]['source']];view=g['bufferViews'][im['bufferView']];start=28+length+view.get('byteOffset',0)
+        texture=np.asarray(Image.open(io.BytesIO(raw[start:start+view['byteLength']])).convert('RGB')).astype(float)/255
+        assert texture.shape[:2]==(1024,2048) and .52<texture[:512,:512,1].mean()<.60 and .75<texture[:512,:512,2].mean()<.81
+        native=np.asarray(Image.open(media/'verified-native.png').convert('RGBA')).astype(float);imported=np.asarray(Image.open(media/'verified-imported.png').convert('RGBA')).astype(float);a=native[:,:,3]>128;b=imported[:,:,3]>128
+        iou=float((a&b).sum()/(a|b).sum());rgb=float(abs(native[:,:,:3]-imported[:,:,:3])[a&b].mean());assert iou>.995 and rgb<4
+        bounds=Image.open(media/'heading-04.png').convert('RGBA').getchannel('A').point(lambda v:255 if v>128 else 0).getbbox();aspect=(bounds[2]-bounds[0])/(bounds[3]-bounds[1]);w,h=meta['reference_side_bounds'];assert abs(aspect/(w/h)-1)<.18,(folder.name,aspect,w/h)
+        record=next(r for r in inventory['records'] if r['id']==row['id']);assert len(record['available_studies'])==1 and 'sources/'+record['available_studies'][0]['blend']==row['blend']
+        results.append(dict(id=row['id'],alpha_iou=iou,mean_rgb_error_255=rgb,**proof['binaries']))
+    path=ROOT/'sources/docs/reconstruction/models/artemian-mobile-delivery.json';path.write_text(json.dumps(dict(models=results,pending=publication['pending'],scope='Verified asset milestones only; client calibration and final user acceptance separate'),indent=2)+'\n');print('ARTEMIAN_DELIVERY_OK',results)
+
+
+if __name__=='__main__':main()

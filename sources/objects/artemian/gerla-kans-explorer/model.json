@@ -1,0 +1,562 @@
+{
+  "id": "openfa:ship/artemian/gerla-kans-explorer",
+  "issue": 249,
+  "name": "Gerla-Kans Explorer",
+  "key": "AR0A",
+  "source": "docs/assets/reconstruction/ships/artemian/gerla-kans-explorer",
+  "size_class": "small scout",
+  "world_size_proposal": 40,
+  "equipment_slots": 2,
+  "material_tiles": {
+    "Gerla-Kans | worn grey alloy shell": 0,
+    "Gerla-Kans | worn green lower hull": 1,
+    "Gerla-Kans | oxidized service alloy": 6,
+    "Gerla-Kans | carbon dark seams": 4
+  },
+  "part_face_budget": {
+    "hull": 7000,
+    "shell": 7000,
+    "cover": 600,
+    "slot": 120,
+    "inset": 200,
+    "slat": 120,
+    "default": 350
+  },
+  "max_triangles": 55000,
+  "max_primitives": 6,
+  "comparison_elevation": 0.55,
+  "comparison_azimuth": 3.141592653589793,
+  "reference_side_bounds": [
+    19,
+    6
+  ],
+  "protected_dents": [
+    {
+      "part": "Gerla-Kans green lower hull",
+      "x": -0.54,
+      "y": 0.45,
+      "minimum_depth": 0.0015,
+      "undented_z": 0.045612322587950296
+    },
+    {
+      "part": "Gerla-Kans grey upper shell",
+      "x": 0,
+      "y": 0.05,
+      "minimum_depth": 0.0015,
+      "undented_z": 0.28
+    }
+  ],
+  "interpretation": "Opaque grey raised faceted shell on a green pointed lower wedge; sparse service details and two neutral rear interfaces retained as authored interpretation. No recovered canopy, engine, weapon or equipment mount is claimed. Concept2 guides finish and broad proportions; actual paletted headings take precedence.",
+  "attachment_pairs": [
+    {
+      "part": "Gerla-Kans service cover 0",
+      "support": "Gerla-Kans grey upper shell"
+    },
+    {
+      "part": "Gerla-Kans service slot 0 0",
+      "support": "Gerla-Kans service cover 0"
+    },
+    {
+      "part": "Gerla-Kans service slot 0 1",
+      "support": "Gerla-Kans service cover 0"
+    },
+    {
+      "part": "Gerla-Kans service cover 1",
+      "support": "Gerla-Kans grey upper shell"
+    },
+    {
+      "part": "Gerla-Kans service slot 1 0",
+      "support": "Gerla-Kans service cover 1"
+    },
+    {
+      "part": "Gerla-Kans service slot 1 1",
+      "support": "Gerla-Kans service cover 1"
+    },
+    {
+      "part": "Gerla-Kans service cover 2",
+      "support": "Gerla-Kans green lower hull"
+    },
+    {
+      "part": "Gerla-Kans service slot 2 0",
+      "support": "Gerla-Kans service cover 2"
+    },
+    {
+      "part": "Gerla-Kans service slot 2 1",
+      "support": "Gerla-Kans service cover 2"
+    },
+    {
+      "part": "Gerla-Kans service cover 3",
+      "support": "Gerla-Kans green lower hull"
+    },
+    {
+      "part": "Gerla-Kans service slot 3 0",
+      "support": "Gerla-Kans service cover 3"
+    },
+    {
+      "part": "Gerla-Kans service slot 3 1",
+      "support": "Gerla-Kans service cover 3"
+    },
+    {
+      "part": "Gerla-Kans forward service inset",
+      "support": "Gerla-Kans grey upper shell"
+    },
+    {
+      "part": "Gerla-Kans forward alloy slat 0",
+      "support": "Gerla-Kans forward service inset"
+    },
+    {
+      "part": "Gerla-Kans forward alloy slat 1",
+      "support": "Gerla-Kans forward service inset"
+    },
+    {
+      "part": "Gerla-Kans forward alloy slat 2",
+      "support": "Gerla-Kans forward service inset"
+    },
+    {
+      "part": "Gerla-Kans fastener 0 0 0",
+      "support": "Gerla-Kans service cover 0"
+    },
+    {
+      "part": "Gerla-Kans fastener 0 0 1",
+      "support": "Gerla-Kans service cover 0"
+    },
+    {
+      "part": "Gerla-Kans fastener 0 1 0",
+      "support": "Gerla-Kans service cover 0"
+    },
+    {
+      "part": "Gerla-Kans fastener 0 1 1",
+      "support": "Gerla-Kans service cover 0"
+    },
+    {
+      "part": "Gerla-Kans fastener 1 0 0",
+      "support": "Gerla-Kans service cover 1"
+    },
+    {
+      "part": "Gerla-Kans fastener 1 0 1",
+      "support": "Gerla-Kans service cover 1"
+    },
+    {
+      "part": "Gerla-Kans fastener 1 1 0",
+      "support": "Gerla-Kans service cover 1"
+    },
+    {
+      "part": "Gerla-Kans fastener 1 1 1",
+      "support": "Gerla-Kans service cover 1"
+    },
+    {
+      "part": "Gerla-Kans fastener 2 0 0",
+      "support": "Gerla-Kans service cover 2"
+    },
+    {
+      "part": "Gerla-Kans fastener 2 0 1",
+      "support": "Gerla-Kans service cover 2"
+    },
+    {
+      "part": "Gerla-Kans fastener 2 1 0",
+      "support": "Gerla-Kans service cover 2"
+    },
+    {
+      "part": "Gerla-Kans fastener 2 1 1",
+      "support": "Gerla-Kans service cover 2"
+    },
+    {
+      "part": "Gerla-Kans fastener 3 0 0",
+      "support": "Gerla-Kans service cover 3"
+    },
+    {
+      "part": "Gerla-Kans fastener 3 0 1",
+      "support": "Gerla-Kans service cover 3"
+    },
+    {
+      "part": "Gerla-Kans fastener 3 1 0",
+      "support": "Gerla-Kans service cover 3"
+    },
+    {
+      "part": "Gerla-Kans fastener 3 1 1",
+      "support": "Gerla-Kans service cover 3"
+    },
+    {
+      "part": "Gerla-Kans rear bezel -1",
+      "support": "Gerla-Kans green lower hull"
+    },
+    {
+      "part": "Gerla-Kans rear interface -1",
+      "support": "Gerla-Kans rear bezel -1"
+    },
+    {
+      "part": "Gerla-Kans rear bezel 1",
+      "support": "Gerla-Kans green lower hull"
+    },
+    {
+      "part": "Gerla-Kans rear interface 1",
+      "support": "Gerla-Kans rear bezel 1"
+    },
+    {
+      "part": "Gerla-Kans grey upper shell",
+      "support": "Gerla-Kans green lower hull"
+    }
+  ],
+  "upper_shell_refinement": {
+    "parts": [
+      "Gerla-Kans grey upper shell",
+      "Gerla-Kans service cover 0",
+      "Gerla-Kans service slot 0 0",
+      "Gerla-Kans service slot 0 1",
+      "Gerla-Kans service cover 1",
+      "Gerla-Kans service slot 1 0",
+      "Gerla-Kans service slot 1 1",
+      "Gerla-Kans forward service inset",
+      "Gerla-Kans forward alloy slat 0",
+      "Gerla-Kans forward alloy slat 1",
+      "Gerla-Kans forward alloy slat 2",
+      "Gerla-Kans fastener 0 0 0",
+      "Gerla-Kans fastener 0 0 1",
+      "Gerla-Kans fastener 0 1 0",
+      "Gerla-Kans fastener 0 1 1",
+      "Gerla-Kans fastener 1 0 0",
+      "Gerla-Kans fastener 1 0 1",
+      "Gerla-Kans fastener 1 1 0",
+      "Gerla-Kans fastener 1 1 1"
+    ],
+    "transition_y": -0.6,
+    "old_front_y": -1.1,
+    "transition_half_width": 0.19,
+    "old_front_half_width": 0.03,
+    "front_half_width": 0.14,
+    "front_retreat": 0.18,
+    "front_lift": 0.08,
+    "height_scale": 1.25,
+    "reason": "Actual GLB/legacy/concept feedback: original grey needle prow was too sharp and flat; broaden/truncate its forecap and raise the grey shell while retaining the green planform and fitted components. Linear target half-width avoids the rejected intermediate flared/bulbous prow."
+  },
+  "profile_constraints": [
+    {
+      "part": "Gerla-Kans grey upper shell",
+      "front_y": -0.92,
+      "front_width": 0.28,
+      "maximum_z": 0.35,
+      "fore_transition_y": -0.6,
+      "maximum_fore_half_width": 0.195
+    }
+  ],
+  "stage": "mobile-ship-remaster",
+  "baseline_sha256": "8947918e9498fcd987331af5de779bec7d30b30b429dbc2e2f5e58ac8bf6bad5",
+  "baseline_bounds": [
+    [
+      -0.699999988079071,
+      -1.5,
+      -0.13482093811035156
+    ],
+    [
+      0.699999988079071,
+      1.2059999704360962,
+      0.27980637550354004
+    ]
+  ],
+  "final_bounds": [
+    [
+      -0.7000001072883606,
+      -1.5,
+      -0.13482093811035156
+    ],
+    [
+      0.7000001072883606,
+      1.2060003280639648,
+      0.34975796937942505
+    ]
+  ],
+  "triangles": 28778,
+  "mesh_batches": 4,
+  "material_count": 1,
+  "packed_maps": 3,
+  "editable_part_vertex_groups": {
+    "PrimaryHullAndArmour": [
+      "Gerla-Kans green lower hull",
+      "Gerla-Kans grey upper shell"
+    ],
+    "ServiceAssemblies": [
+      "Gerla-Kans service cover 0",
+      "Gerla-Kans service cover 1",
+      "Gerla-Kans service cover 2",
+      "Gerla-Kans service cover 3",
+      "Gerla-Kans rear bezel -1",
+      "Gerla-Kans rear bezel 1"
+    ],
+    "RecessedMachinery": [
+      "Gerla-Kans service slot 0 0",
+      "Gerla-Kans service slot 0 1",
+      "Gerla-Kans service slot 1 0",
+      "Gerla-Kans service slot 1 1",
+      "Gerla-Kans service slot 2 0",
+      "Gerla-Kans service slot 2 1",
+      "Gerla-Kans service slot 3 0",
+      "Gerla-Kans service slot 3 1",
+      "Gerla-Kans forward service inset",
+      "Gerla-Kans rear interface -1",
+      "Gerla-Kans rear interface 1"
+    ],
+    "TrimAndFasteners": [
+      "Gerla-Kans fastener 0 0 0",
+      "Gerla-Kans fastener 0 0 1",
+      "Gerla-Kans fastener 0 1 0",
+      "Gerla-Kans fastener 0 1 1",
+      "Gerla-Kans fastener 1 0 0",
+      "Gerla-Kans fastener 1 0 1",
+      "Gerla-Kans fastener 1 1 0",
+      "Gerla-Kans fastener 1 1 1",
+      "Gerla-Kans fastener 2 0 0",
+      "Gerla-Kans fastener 2 0 1",
+      "Gerla-Kans fastener 2 1 0",
+      "Gerla-Kans fastener 2 1 1",
+      "Gerla-Kans fastener 3 0 0",
+      "Gerla-Kans fastener 3 0 1",
+      "Gerla-Kans fastener 3 1 0",
+      "Gerla-Kans fastener 3 1 1",
+      "Gerla-Kans forward alloy slat 0",
+      "Gerla-Kans forward alloy slat 1",
+      "Gerla-Kans forward alloy slat 2"
+    ]
+  },
+  "reductions": [
+    {
+      "part": "Gerla-Kans green lower hull",
+      "source_faces": 17636,
+      "final_faces": 7000,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Gerla-Kans grey upper shell",
+      "source_faces": 13716,
+      "final_faces": 6998,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Gerla-Kans service cover 0",
+      "source_faces": 1120,
+      "final_faces": 1200,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Gerla-Kans service slot 0 0",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Gerla-Kans service slot 0 1",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Gerla-Kans fastener 0 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 0 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 0 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 0 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans service cover 1",
+      "source_faces": 1120,
+      "final_faces": 1200,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Gerla-Kans service slot 1 0",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Gerla-Kans service slot 1 1",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Gerla-Kans fastener 1 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 1 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 1 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 1 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans service cover 2",
+      "source_faces": 1384,
+      "final_faces": 1200,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Gerla-Kans service slot 2 0",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Gerla-Kans service slot 2 1",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Gerla-Kans fastener 2 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 2 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 2 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 2 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans service cover 3",
+      "source_faces": 1384,
+      "final_faces": 1200,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Gerla-Kans service slot 3 0",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Gerla-Kans service slot 3 1",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Gerla-Kans fastener 3 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 3 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 3 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans fastener 3 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans forward service inset",
+      "source_faces": 1120,
+      "final_faces": 400,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Gerla-Kans forward alloy slat 0",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans forward alloy slat 1",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans forward alloy slat 2",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans rear bezel -1",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans rear interface -1",
+      "source_faces": 450,
+      "final_faces": 792,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Gerla-Kans rear bezel 1",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Gerla-Kans rear interface 1",
+      "source_faces": 450,
+      "final_faces": 792,
+      "atlas_tile": 4
+    }
+  ],
+  "generator_sha256": "4d6bbbba959d747e6011827dd522bb48bc0f8b4a8b159ddabb42733e509f4bfd",
+  "recipe_sha256": "4353d932ac12590de7d0c3e3e0bb182395a067246d2c7b28eec25804c971dcef",
+  "shared_primitives_sha256": "1469b823c8eb59eeca4372d8f5b4059f9ab1de5a1d02e4ddcf3ae9a650cbffa1",
+  "maps_generator_sha256": "235a9f6ec6b6186a7781ced10e9cbfaef7923408f5922d5d2f6c56b16b2aa77a",
+  "map_sha256": {
+    "colour.png": "129469027d784ca4a67c661f21ad7d28291f3d30a27175fb9f860fb9704fafac",
+    "normal.png": "f6f3936984cf3234313308daaba22f8f38cede3b6042ba7dc0007224bfe541b4",
+    "orm.png": "af938bc610d5088e3defb36306d0cc8469f38179303e86c18b285e9dcb8120ba"
+  },
+  "blend_sha256": "1c9cd909b0b626685c8bf90147ac2805cb8f028cb112e890f8f382831fbb3e72",
+  "glb_sha256": "68f44c6f41378cd423ad6e68d3a754f52429aa470ceef1a6b8056009c4e5b57c",
+  "visual_acceptance": "Agent inspected actual legacy/concept/imported-GLB feedback; final user acceptance and client calibration separate"
+}
