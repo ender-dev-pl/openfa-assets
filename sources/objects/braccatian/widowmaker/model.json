@@ -494,14 +494,14 @@
     }
   ],
   "generator_sha256": "1469b823c8eb59eeca4372d8f5b4059f9ab1de5a1d02e4ddcf3ae9a650cbffa1",
-  "maps_generator_sha256": "f9ec938eaab593941d04807cb45c2e01066b41af4d6ae6739d115d414a823ddd",
+  "maps_generator_sha256": "c2ad87582c70b670f1b98f6dd46b3bbebcb329718cacad8afd34766a9ac5b4c7",
   "map_sha256": {
     "colour.png": "963e7ff0cbc6603dc77c0cbb2a0459b25f073c20b2c7d1ac78e36c03d8825765",
     "normal.png": "c1648ac166f1bb44bfbdba90d5e5c584a19f4887ba13af3aed562c1ff60d3cf7",
-    "orm.png": "7f4c4fe0b91c251559b8194a32afa2080324b25e47e9eb420de001e9825f124e"
+    "orm.png": "8acbeac6b8c82dd576c7d0bea91c8ecc0152212979d8cb323379098c74db9cb4"
   },
-  "blend_sha256": "fa8025cdd5c921190eeb9aa0359cd972250ab05630f6437d9065e569eb9e8e68",
-  "glb_sha256": "1546f131f23c8894c2ce6e55199da72f27497be68c9a9929f8c6ad4b6095fb40",
+  "blend_sha256": "dca426bf3084e3b9d6a8cf99e9f7236f6e530105e87c092f97006ab9e97cbb37",
+  "glb_sha256": "dd1f59c62715b4472fd1ab466f1f65e99d2503627a8309c786fa75c59de81914",
   "references": "Actual paletted32 headings; source hashes in shared reference index; no matching BR ship animations in _MA archive",
   "concept": "No ImageGen stage used; direct legacy-to-GLB feedback",
   "inference": "Hidden service details and scale proposals are authored; no operational animation or calibrated weapon sockets claimed",
@@ -510,5 +510,14 @@
   "reference_side_alpha_bounds": [
     79,
     34
-  ]
+  ],
+  "surface_refinement": {
+    "generator": "sources/tools/blender/refine_braccatian_surface_finish.py",
+    "generator_sha256": "29c2210411a378e3eb00ee86384afd6c34598511fdb15e992f8b2b55c36ea150",
+    "input_binary_hashes": {
+      "blend": "fa8025cdd5c921190eeb9aa0359cd972250ab05630f6437d9065e569eb9e8e68",
+      "glb": "1546f131f23c8894c2ce6e55199da72f27497be68c9a9929f8c6ad4b6095fb40"
+    },
+    "reason": "Retrospective concept/GLB feedback: increase roughness from .43 to .57 and metalness from .66 to .80 for used alloy; retain geometry, palette regions and isolated wear without dense panels."
+  }
 }

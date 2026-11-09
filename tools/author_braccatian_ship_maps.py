@@ -26,8 +26,9 @@ def main():
         h=np.asarray(height.filter(ImageFilter.GaussianBlur(.45)),dtype=float)/255
         gy,gx=np.gradient(h);n=np.stack((-gx*1.6,-gy*1.6,np.ones_like(h)),axis=-1);n/=np.linalg.norm(n,axis=-1)[:,:,None]
         normal=Image.fromarray(np.clip((n*.5+.5)*255,0,255).astype('uint8'))
-        rough=np.clip((.43+noise*.8+(128-np.asarray(height,dtype=float))*.003)*255,50,230).astype('uint8')
-        metal=np.full((size,size),int((.66 if tile not in [3,6] else .15)*255),dtype='uint8')
+        # Concept/GLB feedback: broad polished highlights masked the used alloy.
+        rough=np.clip((.57+noise*1.35+(128-np.asarray(height,dtype=float))*.003)*255,70,235).astype('uint8')
+        metal=np.full((size,size),int((.80 if tile not in [3,6] else .15)*255),dtype='uint8')
         orm=Image.fromarray(np.stack((np.full_like(rough,255),rough,metal),axis=-1))
         xy=(tile%4*size,tile//4*size)
         for key,im in [('colour',image),('orm',orm),('normal',normal)]:maps[key].paste(im,xy)
