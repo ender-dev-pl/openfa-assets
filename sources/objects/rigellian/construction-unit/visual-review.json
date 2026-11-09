@@ -1,0 +1,70 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/048",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri09-review-1.png",
+    "sha256": "f5c7263750373b7f55c20bba135cc4a6adf3829488c89e54e8bb1b36283a3220",
+    "prompt": "sources/docs/reconstruction/models/ri09-concept-prompt-1.txt",
+    "verdict": "Twin open annuli, central hood/red inset, pale rear supports and green internal equipment agree with legacy. Concept adds internal posts/hood supports, protruding ribs and a broad shallow hood depression; retain established geometry. Exact counts and hidden mechanics remain interpretations."
+  },
+  "legacy": {
+    "body_sha256": "edc90e3fb739b1b6a95f311c9a3751e3cb70bcfc1dee6b5dcaaec809430fd5e0",
+    "catalogue_colour_phase20_sha256": "c1fa4ad21a7064368e7bbc7c2ec5caf1915b703830c233631ce80f61c229af7c",
+    "functional_record": 909,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "8d76030e76772edaba35d7d95ecda2f6db5e781e0ab6a1099fd88441f4e1e9e9",
+    "glb": "7fd2f22285e90c5dc24794e52b1560b80c82baaaea61e3e49e7e99ac27f80165"
+  },
+  "runtime_report_sha256": "4adebd06d5839292854baf1a41bb417271a83d49fb9ad20895177a6e54693f4b",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.026129828559027776,
+        0.030312432183159724,
+        0.02728271484375,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 106
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.018091837565104168,
+        0.016577826605902776,
+        0.016626993815104168,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 59
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.011377970377604166,
+        0.012052747938368056,
+        0.010977851019965278,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 112
+    }
+  },
+  "feedback": [
+    "Actual independent GLB preserves both genuinely open annular platforms, raised circular hood/recess, central red inset, paired rear uprights, green internal posts and front inspection detail visible in legacy.",
+    "Six mapped castings retain exact evaluated geometry and full colour/roughness pixels plus their planar/cylindrical UVs. Reduction affects only four green equipment posts, with sampled old/new surface deviation below 9.14e-7 source units; real runner/post/cap overlaps pass afterward.",
+    "Concept invents additional posts and hood supports, replaces recessed channels with raised ribs and broadens the hood depression. Those differences are not adopted as geometric authority. Post counts, rear runners, exact recess depths and hidden connections remain authored interpretation.",
+    "All original open-axis, ten channel/backing, dent, hood-floor and column-support checks are retained and extended with actual support ray intervals. Catalogue highlighting does not prove a shipbuilding process loop; model remains static. Existing wear is subtler than concept."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

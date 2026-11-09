@@ -116,17 +116,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/048`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Construction Unit](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri09/front-quarter.png)
+![Construction Unit](../gallery/media/objects/rigellian/construction-unit/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri09/model.glb)
+[Blend](../sources/objects/rigellian/construction-unit/model.blend) · [GLB](../sources/objects/rigellian/construction-unit/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Construction Unit](../gallery/media/docs/assets/reconstruction/buildings/rigellian/construction-unit/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/construction-unit/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/construction-unit/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri09-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/construction-unit/imported-front-quarter.png)
 
 ## Ground Deck
 
