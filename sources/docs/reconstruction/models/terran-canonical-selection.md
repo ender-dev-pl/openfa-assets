@@ -1,14 +1,14 @@
-# Existing shared Terran ship selection
+# Terran shared-source candidates: selection deferred
 
-Programme #248's source audit found that three already-authored shared ship models were documented as authoritative but lacked explicit canonical selection in the main inventory. This milestone selects those existing sources; it does not remaster their appearance or complete their missing ImageGen/legacy feedback stages.
+Programme #248's source audit found that three already-authored shared ship models were documented as authoritative but lacked explicit canonical selection in the main inventory. The initial metadata selection was withdrawn after the user reported loss of detail in the SciTek refinements and reserved artistic review. These existing sources remain candidates; no new canonical selection or replacement recommendation follows from technical validation.
 
-| Runtime object | Single selected source/export directory | Existing physical meshes | SciTek information |
+| Runtime object | Candidate source/export directory | Existing physical meshes | SciTek information |
 | --- | --- | ---: | --- |
 | `openfa:terminator` | `sources/objects/terran/terminator/refined/` | 71 | Research30 |
 | `openfa:fleet-battleship` | `sources/objects/terran/fleet-battleship/refined/` | 45 | Research09 |
 | `openfa:command-cruiser` | `sources/objects/terran/command-cruiser/refined/` | 82 | Research35 |
 
-Each directory contains `model.blend` and `model.glb`. These files were not changed. The per-ship README and metadata already establish shared use by gameplay, the ship catalogue and SciTek. The main inventory now has one current study/selection per object; preceding studies are retained in historical metadata outside current packaging selection. Historical physical SciTek solids are not extra gameplay payloads. Dedicated information/timeline assets remain distinct, since they carry presentation semantics rather than another current coloured ship.
+Each directory contains `model.blend` and `model.glb`. These files were not changed. The per-ship README and metadata already establish shared use by gameplay, the ship catalogue and SciTek. The preceding inventory/gallery choices are restored so both existing studies remain available for comparison. Do not change gameplay or package selection on the strength of this report; wait for the user's detail review. Historical physical SciTek solids are not extra gameplay payloads. Dedicated information/timeline assets remain distinct, since they carry presentation semantics rather than another current coloured ship.
 
 Gameplay uses frame1 without the presentation turntable animation. The three documented roots are identity at that pose. This selection does not establish client scale, equipment mounts or the client's animation handling; integration must apply those rules explicitly.
 
@@ -22,4 +22,4 @@ Run Blender with `sources/tools/blender/verify_terran_canonical_selection.py -- 
 
 No ImageGen concept is fabricated or claimed by this metadata correction. Terran source-specific concept and corresponding legacy/imported-render feedback remain open under #248; construction-stage reports for the three small Terran ships likewise do not prove that requirement. All cultures' completed spacedocks remain excluded.
 
-The earlier `mobile-remaster-protocol-audit.json` is an immutable cross-branch snapshot. Its historical selection state is not rewritten; this report records the subsequent correction. Original legacy pixels remain outside published sources. Gallery entries are rebuilt around the single current choices, with no new media or model copies.
+The earlier `mobile-remaster-protocol-audit.json` is an immutable cross-branch snapshot. Its historical selection state is not rewritten; this report retains technical evidence while deferring the proposed selection. Original legacy pixels remain outside published sources. Gallery entries retain the prior comparison choices, with no new media or model copies.

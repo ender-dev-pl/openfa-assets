@@ -58,7 +58,13 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/c
 
 `openfa:terminator`
 
-**First available iteration — shared-refined**
+**First available iteration — initial-reference-study**
+
+![Terminator](../gallery/media/docs/assets/reconstruction/ships/terran/terminator/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/ships/terran/terminator/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/terminator/model.glb)
+
+**Additional iteration — shared-refined**
 
 ![Terminator](../gallery/media/objects/terran/terminator/refined/render.png)
 
@@ -80,7 +86,13 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/c
 
 `openfa:fleet-battleship`
 
-**First available iteration — shared-refined**
+**First available iteration — initial-reference-study**
+
+![Fleet Battleship](../gallery/media/docs/assets/reconstruction/ships/terran/fleet-battleship/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/ships/terran/fleet-battleship/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/fleet-battleship/model.glb)
+
+**Additional iteration — shared-refined**
 
 ![Fleet Battleship](../gallery/media/objects/terran/fleet-battleship/refined/render.png)
 
@@ -130,7 +142,13 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/c
 
 `openfa:command-cruiser`
 
-**First available iteration — shared-refined**
+**First available iteration — initial-reference-study**
+
+![Command Cruiser](../gallery/media/docs/assets/reconstruction/ships/terran/command-cruiser/front-quarter.png)
+
+[Blend](../sources/docs/assets/reconstruction/ships/terran/command-cruiser/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/command-cruiser/model.glb)
+
+**Additional iteration — shared-refined**
 
 ![Command Cruiser](../gallery/media/objects/terran/command-cruiser/refined/render.png)
 

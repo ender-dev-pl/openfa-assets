@@ -1,4 +1,4 @@
-"""Read-only native/independent-GLB smoke check for existing shared ship choices."""
+"""Read-only native/independent-GLB smoke check for existing shared candidates."""
 from pathlib import Path
 import hashlib,json,sys,struct
 import bpy
@@ -42,7 +42,7 @@ def main(output):
         assert before==dict(blend=SHA(source),glb=SHA(glb))
         rows.append(dict(id='openfa:'+slug,blend=source.relative_to(ROOT).as_posix(),glb=glb.relative_to(ROOT).as_posix(),binaries=before,mesh_count=count,frames=[1,31,61],maximum_world_matrix_error=matrix_error,maximum_evaluated_bounds_error=bounds_error,gameplay_pose_frame=1,root=root_name,gameplay_root_identity_error=identity,embedded_images=len(document['images']),source_and_export_unchanged=True))
         print('TERRAN_CANONICAL_SELECTION_VERIFIED',slug,matrix_error,bounds_error,flush=True)
-    report=dict(issue=248,verifier_sha256=SHA(Path(__file__)),blender=bpy.app.version_string,models=rows,scope='Read-only current saved-native and independent GLB smoke checks for source selection. Three sampled poses are not exhaustive animation/topology/UV/legacy-fidelity or concept review. Existing source-specific SciTek evidence remains separate; client scale/mount/animation handling not accepted.')
+    report=dict(issue=248,verifier_sha256=SHA(Path(__file__)),blender=bpy.app.version_string,models=rows,selection_status='Deferred pending user detail review: technical checks do not authorize a new canonical selection or gameplay replacement.',scope='Read-only current saved-native and independent GLB candidate smoke checks. Three sampled poses are not exhaustive animation/topology/UV/legacy-fidelity, detail quality or concept review. Existing source-specific SciTek evidence remains separate; client scale/mount/animation handling not accepted.')
     output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(report,indent=2)+'\n')
 
 
