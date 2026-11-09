@@ -144,17 +144,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/050`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Probe Launch](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri11/front-quarter.png)
+![Probe Launch](../gallery/media/objects/rigellian/probe-launch/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri11/model.glb)
+[Blend](../sources/objects/rigellian/probe-launch/model.blend) · [GLB](../sources/objects/rigellian/probe-launch/model.glb)
 
-**Additional iteration — initial-reference-study**
-
-![Probe Launch](../gallery/media/docs/assets/reconstruction/buildings/rigellian/probe-launch/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri11-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/probe-launch/imported-front-quarter.png)
 
 ## Deep Space Probes
 

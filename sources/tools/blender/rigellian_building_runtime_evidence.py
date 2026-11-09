@@ -74,6 +74,15 @@ def verify(root, record):
     assert report['native']['positive_closed_meshes'] == report['imported']['positive_closed_meshes'] == report['meshes']
     assert report['maximum_bidirectional_surface_error'] < 1e-5
     assert report['final_artistic_acceptance'] is False and report['game_client_integration'] is False
+    if metadata.get('recipe'):
+        recipe_path = metadata['recipe']
+        assert recipe_path in files
+        assert hashlib.sha256(path(recipe_path).read_bytes()).hexdigest() == metadata['recipe_sha256']
+        recipe = json.loads(path(recipe_path).read_bytes())
+        if recipe.get('state_evidence'):
+            state_evidence = recipe['state_evidence']
+            assert state_evidence in files
+            assert hashlib.sha256(path(state_evidence).read_bytes()).hexdigest() == recipe['state_evidence_sha256']
     if metadata.get('animation'):
         mechanism = metadata['mechanism_evidence']
         assert mechanism in files and hashlib.sha256(path(mechanism).read_bytes()).hexdigest() == metadata['mechanism_sha256']

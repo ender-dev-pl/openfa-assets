@@ -52,6 +52,8 @@ def main(folder):
     paths.update(media / name for name in runtime['renders'])
     if meta.get('mechanism_evidence'):
         paths.add(ROOT / meta['mechanism_evidence'])
+    if recipe.get('state_evidence'):
+        paths.add(ROOT / recipe['state_evidence'])
     preview_index = media / 'animation-previews.json'
     if preview_index.exists():
         previews = json.loads(preview_index.read_bytes())

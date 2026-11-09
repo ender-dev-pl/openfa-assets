@@ -71,6 +71,14 @@ class Evidence(unittest.TestCase):
         with self.assertRaises(AssertionError):
             verify_animation_contract(metadata, report, wrong)
 
+    def test_static_open_port_evidence_cannot_be_omitted(self):
+        data = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_bytes())
+        record = next(row for row in data['records'] if row['id'] == 'openfa:building/legacy/050')
+        proof = record['reviewed_model']['runtime_evidence']
+        del proof['files']['sources/docs/reconstruction/models/launch-facility-animation-audit.json']
+        with self.assertRaises(AssertionError):
+            verify_runtime_evidence(ROOT / 'sources', record)
+
 
 if __name__ == '__main__':
     unittest.main()

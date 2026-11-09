@@ -1,0 +1,35 @@
+{
+  "key": "RI11",
+  "id": "openfa:building/legacy/050",
+  "name": "Probe Launch",
+  "source": "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/model.blend",
+  "source_sha256": "8291b4565b5df7b88f3d9578568ba5f263578acc4ed5b3da330fa4f27956d3c7",
+  "media": "gallery/media/objects/rigellian/probe-launch",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 9,
+  "construction_updates": 24,
+  "protected_parts": [
+    "RI11 stepped launch housing",
+    "RI11 embedded open port liner",
+    "RI11 recessed launch mechanism floor",
+    "RI11 internal port guide 0",
+    "RI11 guide 0 recessed running track",
+    "RI11 guide 0 wear strip -1",
+    "RI11 guide 0 wear strip 1",
+    "RI11 internal port guide 1",
+    "RI11 guide 1 recessed running track",
+    "RI11 guide 1 wear strip -1",
+    "RI11 guide 1 wear strip 1",
+    "RI11 internal port guide 2",
+    "RI11 guide 2 recessed running track",
+    "RI11 guide 2 wear strip -1",
+    "RI11 guide 2 wear strip 1"
+  ],
+  "state_evidence": "sources/docs/reconstruction/models/launch-facility-animation-audit.json",
+  "state_evidence_sha256": "c0ebb7c3721a4c3926d46394d4f6d1065229115e3c9a49e3208251579764467e",
+  "state_contract": "Permanent open RI11 satellite construction/launch port. Legacy has only shadow descriptor0 and static body1; no lid or opening/closing clip is established. Satellite entity launch is separate from the static housing.",
+  "checks_module": "rigellian_probe_launch_remaster_checks"
+}
