@@ -1,0 +1,57 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/043",
+  "name": "Community",
+  "author_sha256": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+  "recipe": "sources/objects/rigellian/community/recipe.json",
+  "recipe_sha256": "af15bfe0db9769d3dc3d932e46fa4a82172cfaa53a128f3b031a448751f0154e",
+  "camera_helper_sha256": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+  "source": "sources/docs/assets/reconstruction/rigellian-refined/ri04/model.blend",
+  "source_sha256": "ecdb6edd7c7388be9fcdf91c12b21bf5fc01c1a21b887ac8bc24d4759cd4a137",
+  "binaries": {
+    "blend": "894f48068c70a3ffdddd99ec3a3b6d2f1dd1e44e7eaa706ad9cf688a2f23272d",
+    "glb": "410f73be8376a170961049ff1a1bb4601865b3685cb16bd9dc3509d1e5d48833"
+  },
+  "original_triangles": 47324,
+  "triangles": 42536,
+  "mesh_nodes": 56,
+  "changes": [
+    {
+      "name": "RI04 ground contact rim",
+      "original_triangles": 3072,
+      "triangles": 1780,
+      "bidirectional_vertex_surface_error": 0.0006812859210185707,
+      "accepted": true
+    },
+    {
+      "name": "RI04 waist contaminated seam",
+      "original_triangles": 2560,
+      "triangles": 1484,
+      "bidirectional_vertex_surface_error": 0.00048071230412460864,
+      "accepted": true
+    },
+    {
+      "name": "RI04 crown stepped brass foundation",
+      "original_triangles": 2684,
+      "triangles": 1556,
+      "bidirectional_vertex_surface_error": 0.0005332045839168131,
+      "accepted": true
+    },
+    {
+      "name": "RI04 crown rubbed mounting lip",
+      "original_triangles": 3072,
+      "triangles": 1780,
+      "bidirectional_vertex_surface_error": 0.0005057475063949823,
+      "accepted": true
+    }
+  ],
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 0,
+  "construction_updates": 48,
+  "scope": "Measured candidate tessellation reduction, existing anatomy/materials/components retained. Requires saved-native and independent GLB verification and actual visual feedback before delivery.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

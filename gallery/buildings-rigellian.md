@@ -56,23 +56,13 @@ Additional views: [Concept review (legacy-based; interpreted sleeves)](../galler
 
 `openfa:building/legacy/043`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Community](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri04/front-quarter.png)
+![Community](../gallery/media/objects/rigellian/community/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri04/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri04/model.glb)
+[Blend](../sources/objects/rigellian/community/model.blend) · [GLB](../sources/objects/rigellian/community/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Community](../gallery/media/docs/assets/reconstruction/buildings/rigellian/community/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/community/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/community/model.glb)
-
-**Additional iteration — crown-refinement-study**
-
-![Community](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri04/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri04/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri04/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri04-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/community/imported-front-quarter.png)
 
 ## Health Unit
 

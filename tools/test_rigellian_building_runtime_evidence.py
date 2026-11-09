@@ -16,9 +16,17 @@ class Evidence(unittest.TestCase):
         self.record = next(row for row in data['records'] if row['id'] == 'openfa:building/legacy/042')
 
     def test_current_runtime_and_canonical_selection(self):
-        result = verify_runtime_evidence(ROOT / 'sources', self.record)
-        self.assertEqual(result['views'], 6)
-        self.assertFalse(result['game_client_integration'])
+        data = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_bytes())
+        checked = []
+        for record in data['records']:
+            reviewed = record.get('reviewed_model')
+            proof = reviewed.get('runtime_evidence') if isinstance(reviewed, dict) else None
+            if isinstance(proof, dict) and proof.get('format') == 'rigellian-building-remaster-v1':
+                result = verify_runtime_evidence(ROOT / 'sources', record)
+                self.assertEqual(result['views'], 6)
+                self.assertFalse(result['game_client_integration'])
+                checked.append(record['id'])
+        self.assertIn('openfa:building/legacy/042', checked)
 
     def test_reject_changed_imported_render_identity(self):
         proof = self.record['reviewed_model']['runtime_evidence']
