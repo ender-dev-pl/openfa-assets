@@ -1,0 +1,203 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/045",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "4d474feb44e8948a28a11fb57d307463ce53fb6a24bffbbe5b0bb27fff83c1eb",
+    "glb": "b6c5ea58874057ed7f47c1788dde68082c9ee523437ed9e424191adaadd6bc00"
+  },
+  "metadata_sha256": "76e427ca17299cb73efcee676ab64926735c8e35110737223cd2297039bf6243",
+  "verifier_sha256": "5704efe280a5e1e01b874562a49ef6ea70617a1f6d515840997a09f56719ee13",
+  "helpers": {
+    "sources/tools/blender/verify_remastered_rigellian_static.py": "5704efe280a5e1e01b874562a49ef6ea70617a1f6d515840997a09f56719ee13",
+    "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+    "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+    "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+    "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+    "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+    "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+    "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+    "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+    "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+    "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+    "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+    "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+    "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+    "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+    "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+    "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+    "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+    "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+    "sources/tools/blender/repair_detail_uvs.py": "4242a0a815cd5208fdf0e81204a5fdeab67a9d0c3e95be6934d4f64c8672b9c7",
+    "sources/tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "sources/tools/blender/rigellian_bunker_parts.py": "a05627aee83cc361a7c9661399938d42255a9cd33154da503b0c918658156753",
+    "sources/tools/blender/build_rigellian_bunker.py": "b5eafba0931390ea774b7e8c53d934cb011475223200ba2187db5c3451deeb89",
+    "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+    "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+    "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+    "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+    "sources/tools/blender/verify_rigellian_bunker.py": "c599011b0187b3529f55dc4fd4e6ed0142c65bdae4627bff5fa2a6fe72321ec7",
+    "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "sources/tools/blender/rigellian_bunker_remaster_checks.py": "1bb44ba14bc1edb681d02032de832ec87084d93d33373a6b35a9e53f2abd4996"
+  },
+  "native": {
+    "positive_closed_meshes": 47,
+    "body_bounds": [
+      -1.1039999723434448,
+      -1.1067500114440918,
+      0.0,
+      1.1039999723434448,
+      1.1039999723434448,
+      4.964999675750732
+    ],
+    "one_sampled_contact_component": true,
+    "three_roof_wells_and_seated_sleeves_floors_fins": true,
+    "three_dents_and_six_rim_fittings": true,
+    "crown": {
+      "left": {
+        "volume": 0.00282722036767043,
+        "middle_width": 0.08999999612569809,
+        "tip_width": 0.02275550365447998,
+        "taper_ratio": 3.955086975540503,
+        "minimum_upper_gap": 0.10980000346899033
+      },
+      "right": {
+        "volume": 0.0028272203372900215,
+        "middle_width": 0.08999999612569809,
+        "tip_width": 0.022755563259124756,
+        "taper_ratio": 3.95507661580774,
+        "minimum_upper_gap": 0.10980000346899033
+      }
+    },
+    "texture_pixels_and_uvs": {
+      "materials": {
+        "RI06 | aged jade shell": {
+          "colour": "8762eaa6918c05aff389840b71104059daa1cd386bf791afbaa1a71b55fdad61",
+          "roughness": "4cb768ec65982e6e522523ded2c0f212922b4a5b3f073b4369dffac441c83c19"
+        },
+        "RI06 | worn planar end caps": {
+          "colour": "38e633d26cf52655b7a46150eac4709214e33b326e11cdacb4ae2712d2a27192",
+          "roughness": "bfb96f0b72a1b3b90a48cdf1b8fceea00e6095b5e6259c4fcfe5a6b6cdb80b91"
+        }
+      },
+      "planar_cap_surfaces": 10
+    },
+    "contact_scope": "Existing sampled nearest-surface contact graph; not exhaustive structural intersection proof."
+  },
+  "imported": {
+    "positive_closed_meshes": 47,
+    "body_bounds": [
+      -1.1039999723434448,
+      -1.1067500114440918,
+      0.0,
+      1.1039999723434448,
+      1.1040000915527344,
+      4.964999675750732
+    ],
+    "one_sampled_contact_component": true,
+    "three_roof_wells_and_seated_sleeves_floors_fins": true,
+    "three_dents_and_six_rim_fittings": true,
+    "crown": {
+      "left": {
+        "volume": 0.0028272204319897505,
+        "middle_width": 0.08999999612569809,
+        "tip_width": 0.02275550365447998,
+        "taper_ratio": 3.955086975540503,
+        "minimum_upper_gap": 0.10980000346899033
+      },
+      "right": {
+        "volume": 0.0028272204456464894,
+        "middle_width": 0.08999999612569809,
+        "tip_width": 0.022755563259124756,
+        "taper_ratio": 3.95507661580774,
+        "minimum_upper_gap": 0.10980000346899033
+      }
+    },
+    "texture_pixels_and_uvs": {
+      "materials": {
+        "RI06 | aged jade shell": {
+          "colour": "8762eaa6918c05aff389840b71104059daa1cd386bf791afbaa1a71b55fdad61",
+          "roughness": "4cb768ec65982e6e522523ded2c0f212922b4a5b3f073b4369dffac441c83c19"
+        },
+        "RI06 | worn planar end caps": {
+          "colour": "38e633d26cf52655b7a46150eac4709214e33b326e11cdacb4ae2712d2a27192",
+          "roughness": "bfb96f0b72a1b3b90a48cdf1b8fceea00e6095b5e6259c4fcfe5a6b6cdb80b91"
+        }
+      },
+      "planar_cap_surfaces": 10
+    },
+    "contact_scope": "Existing sampled nearest-surface contact graph; not exhaustive structural intersection proof."
+  },
+  "maximum_bidirectional_surface_error": 5.70346685435652e-07,
+  "renders": {
+    "native-front-quarter.png": "6316c40e5ebf083882b6b939c4def8d1bee7832b183e6b291b748cfbed828583",
+    "native-front.png": "3a24514cf2d8b40d20985889bf9306a45dd6b64cdd791bad092f1bdae9259da8",
+    "native-rear-quarter.png": "94f15401bf55819cd224fd18d74e75ea947a7417bdb8ea7c3b611aa4bd4c976b",
+    "imported-front-quarter.png": "eb720620e6f89af460e0564bcfa1c55c17435130c16ed4d816106bbdfe6dba26",
+    "imported-front.png": "4b05b882e13f49b2662fb47e414cd59b5a359548a6f86996928745ea7d641388",
+    "imported-rear-quarter.png": "94ca9a97665403c9c5590dda297052558cd8447b6b94d4ac43f65be36c2267d3"
+  },
+  "triangles": 79236,
+  "meshes": 47,
+  "protected_parts": [
+    "RI06 broad saucer level 0",
+    "RI06 broad saucer level 1",
+    "RI06 broad saucer level 2",
+    "RI06 solid interlevel structural column",
+    "RI06 tapered upper mast",
+    "RI06 refined crown arm left",
+    "RI06 refined crown arm right"
+  ],
+  "protected_surface_error": 0.0,
+  "native_world_bounds": [
+    -1.1039999723434448,
+    -1.1067500114440918,
+    0.0,
+    1.1039999723434448,
+    1.1039999723434448,
+    4.964999675750732
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "imported_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "material_count": 8,
+  "embedded_images": 6,
+  "clips": [],
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

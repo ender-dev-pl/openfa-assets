@@ -80,23 +80,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/045`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Strategic Bunker](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri06/front-quarter.png)
+![Strategic Bunker](../gallery/media/objects/rigellian/strategic-bunker/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri06/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri06/model.glb)
+[Blend](../sources/objects/rigellian/strategic-bunker/model.blend) · [GLB](../sources/objects/rigellian/strategic-bunker/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Strategic Bunker](../gallery/media/docs/assets/reconstruction/buildings/rigellian/strategic-bunker/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.glb)
-
-**Additional iteration — crown-refinement-study**
-
-![Strategic Bunker](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri06/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri06/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri06/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri06-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/strategic-bunker/imported-front-quarter.png)
 
 ## Science Labs
 

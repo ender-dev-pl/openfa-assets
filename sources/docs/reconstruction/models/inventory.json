@@ -8267,7 +8267,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/045",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-906",
         "description_records": [
           906
         ]
@@ -8341,6 +8341,129 @@
       ],
       "available_studies": [
         {
+          "stage": "canonical-game-remaster",
+          "blend": "objects/rigellian/strategic-bunker/model.blend",
+          "present": true,
+          "sha256": "4d474feb44e8948a28a11fb57d307463ce53fb6a24bffbbe5b0bb27fff83c1eb",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based concept (interpreted details)",
+              "image": "gallery/media/concepts/rigellian/ri06-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/rigellian/strategic-bunker/imported-front-quarter.png"
+            }
+          ]
+        }
+      ],
+      "acceptance": {
+        "reference_views_reviewed": false,
+        "silhouette_and_proportions": false,
+        "high_detail_structure": false,
+        "materials": false,
+        "moving_assemblies": false,
+        "attachment_transforms": false,
+        "native_and_glb_runtime": true,
+        "final_visual_acceptance": false
+      },
+      "open_evidence_questions": [],
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB source-bound remaster evidence; client and final artistic acceptance remain separate.",
+          "objects/rigellian/strategic-bunker/runtime-review.json",
+          "objects/rigellian/strategic-bunker/visual-review.json"
+        ]
+      },
+      "reviewed_model": {
+        "blend": "objects/rigellian/strategic-bunker/model.blend",
+        "sha256": "4d474feb44e8948a28a11fb57d307463ce53fb6a24bffbbe5b0bb27fff83c1eb",
+        "runtime_evidence": {
+          "format": "rigellian-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/rigellian/strategic-bunker",
+          "files": {
+            "gallery/media/concepts/rigellian/ri06-review-1.png": "30e1b27fd22da52c2e0f8e8fb375975205e43fc9fb8827cf3847583b9a705d11",
+            "gallery/media/objects/rigellian/strategic-bunker/imported-front-quarter.png": "eb720620e6f89af460e0564bcfa1c55c17435130c16ed4d816106bbdfe6dba26",
+            "gallery/media/objects/rigellian/strategic-bunker/imported-front.png": "4b05b882e13f49b2662fb47e414cd59b5a359548a6f86996928745ea7d641388",
+            "gallery/media/objects/rigellian/strategic-bunker/imported-rear-quarter.png": "94ca9a97665403c9c5590dda297052558cd8447b6b94d4ac43f65be36c2267d3",
+            "gallery/media/objects/rigellian/strategic-bunker/native-front-quarter.png": "6316c40e5ebf083882b6b939c4def8d1bee7832b183e6b291b748cfbed828583",
+            "gallery/media/objects/rigellian/strategic-bunker/native-front.png": "3a24514cf2d8b40d20985889bf9306a45dd6b64cdd791bad092f1bdae9259da8",
+            "gallery/media/objects/rigellian/strategic-bunker/native-rear-quarter.png": "94f15401bf55819cd224fd18d74e75ea947a7417bdb8ea7c3b611aa4bd4c976b",
+            "sources/docs/assets/reconstruction/rigellian-refined/ri06/model.blend": "84c180297fd8287234aab061161ab6068373c7e335fc2b4ef511d76c54342600",
+            "sources/docs/reconstruction/models/ri06-concept-prompt-1.txt": "32e8da3e9f7b7ea16739e2d64c208bc91c9eb08a119daf624406ea893727e6dd",
+            "sources/objects/rigellian/strategic-bunker/model.blend": "4d474feb44e8948a28a11fb57d307463ce53fb6a24bffbbe5b0bb27fff83c1eb",
+            "sources/objects/rigellian/strategic-bunker/model.glb": "b6c5ea58874057ed7f47c1788dde68082c9ee523437ed9e424191adaadd6bc00",
+            "sources/objects/rigellian/strategic-bunker/model.json": "5280348c54d2dfe2c72c8ff50fb7662fc9cd7841ee997320ed8cbdd9842de847",
+            "sources/objects/rigellian/strategic-bunker/recipe.json": "4052d67f3eaee3011888182a6eacb6fa448be648daa4f5af120b2d3962858996",
+            "sources/objects/rigellian/strategic-bunker/runtime-review.json": "5998be6fba5d4ff6be0239a59b410435a3aee9eb13f90b17758c591acff2f2d0",
+            "sources/objects/rigellian/strategic-bunker/visual-review.json": "b34d736bfef409abcd5f9113f8b1783d8bbf5a402246d22a49aa6da967bc73dc",
+            "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+            "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+            "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "sources/tools/blender/build_rigellian_bunker.py": "b5eafba0931390ea774b7e8c53d934cb011475223200ba2187db5c3451deeb89",
+            "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+            "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+            "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+            "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+            "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+            "sources/tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+            "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+            "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+            "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+            "sources/tools/blender/repair_detail_uvs.py": "4242a0a815cd5208fdf0e81204a5fdeab67a9d0c3e95be6934d4f64c8672b9c7",
+            "sources/tools/blender/rigellian_bunker_parts.py": "a05627aee83cc361a7c9661399938d42255a9cd33154da503b0c918658156753",
+            "sources/tools/blender/rigellian_bunker_remaster_checks.py": "1bb44ba14bc1edb681d02032de832ec87084d93d33373a6b35a9e53f2abd4996",
+            "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+            "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "sources/tools/blender/verify_remastered_rigellian_static.py": "5704efe280a5e1e01b874562a49ef6ea70617a1f6d515840997a09f56719ee13",
+            "sources/tools/blender/verify_rigellian_bunker.py": "c599011b0187b3529f55dc4fd4e6ed0142c65bdae4627bff5fa2a6fe72321ec7",
+            "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+            "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+            "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+          }
+        }
+      },
+      "footprint": [
+        3,
+        3
+      ],
+      "shared_construction_reference": {
+        "index": "docs/reconstruction/models/shared-construction-references.json",
+        "id": "openfa:building/legacy/045",
+        "culture": "rigellian",
+        "footprint": [
+          3,
+          3
+        ],
+        "family": "RIS3",
+        "footprint_class": 3,
+        "stage_limits": {
+          "index": "docs/reconstruction/models/scaffold-stage-limits.json",
+          "stage_ceiling_raw": 17,
+          "frames_per_tier": 2,
+          "max_stage_while_constructing": 17,
+          "max_tiers": 9
+        },
+        "studies": []
+      },
+      "reference_recipe": {
+        "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
+        "global_type": 45
+      },
+      "historical_studies": [
+        {
           "stage": "silhouette-study",
           "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri06/model.blend",
           "present": true,
@@ -8362,29 +8485,7 @@
           "final_visual_acceptance": "not-established"
         }
       ],
-      "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
-        "moving_assemblies": false,
-        "attachment_transforms": false,
-        "native_and_glb_runtime": true,
-        "final_visual_acceptance": false
-      },
-      "open_evidence_questions": [],
-      "acceptance_evidence": {
-        "native_and_glb_runtime": [
-          "Model source commit: https://github.com/ender-dev-pl/ed-openfa-game/commit/4960e4d3",
-          "Study issue: https://github.com/ender-dev-pl/ed-openfa-game/issues/975",
-          "2026-10-29 Blender 4.5.15 LTS: native reopen, GLB import, geometry/material/hierarchy checks and actual imported rendering passed; tools/blender/verify_rigellian_bunker.py",
-          "Seven render framing/alpha/native-imported checks passed; tools/blender/review_rigellian_bunker.py",
-          "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/technical-review.json",
-          "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/render-review.json",
-          "2026-10-30 issue #1111: UV-only revision 3; actual native reopen, GLB import, unchanged geometry/packed images, existing structural assertions and seven-view render review passed. Authored textures and artistic scope unchanged."
-        ]
-      },
-      "reviewed_model": {
+      "historical_runtime_review": {
         "blend": "docs/assets/reconstruction/buildings/rigellian/strategic-bunker/model.blend",
         "sha256": "db1e1e64c60ecbc3921c6855ce2feee578d2821083e0e3bf4157dcf62abeae70",
         "runtime_evidence": {
@@ -8439,33 +8540,6 @@
           },
           "text_hash_policy": "lf-for-json-and-python"
         }
-      },
-      "footprint": [
-        3,
-        3
-      ],
-      "shared_construction_reference": {
-        "index": "docs/reconstruction/models/shared-construction-references.json",
-        "id": "openfa:building/legacy/045",
-        "culture": "rigellian",
-        "footprint": [
-          3,
-          3
-        ],
-        "family": "RIS3",
-        "footprint_class": 3,
-        "stage_limits": {
-          "index": "docs/reconstruction/models/scaffold-stage-limits.json",
-          "stage_ceiling_raw": 17,
-          "frames_per_tier": 2,
-          "max_stage_while_constructing": 17,
-          "max_tiers": 9
-        },
-        "studies": []
-      },
-      "reference_recipe": {
-        "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
-        "global_type": 45
       }
     },
     {
