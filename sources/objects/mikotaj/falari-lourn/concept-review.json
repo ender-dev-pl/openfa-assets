@@ -11,6 +11,12 @@
       "gallery_label": "Rejected concept 1 (geometry)",
       "input_identities": [
         "MK2C actual paletted frames0/4/12/28"
+      ],
+      "input_images": [
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "c8f8925a58513dd7ddc9aa66ad0b7790437631ad4dc5c1be1d163987c4b749d4"
+        }
       ]
     },
     {
@@ -23,6 +29,16 @@
       "input_identities": [
         "MK2C actual paletted frames0/4/12/28",
         "Rejected concept1"
+      ],
+      "input_images": [
+        {
+          "role": "rejected first concept edit target",
+          "sha256": "9195bace91a0dc67ca3859a9e141ded6cb1aa586bc81385f85f5ff88d4752651"
+        },
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "c8f8925a58513dd7ddc9aa66ad0b7790437631ad4dc5c1be1d163987c4b749d4"
+        }
       ]
     },
     {
@@ -35,6 +51,16 @@
       "input_identities": [
         "MK2C actual paletted frames0/4/12/28",
         "User annotation identifying required end-on lateral-module cross sections"
+      ],
+      "input_images": [
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "c8f8925a58513dd7ddc9aa66ad0b7790437631ad4dc5c1be1d163987c4b749d4"
+        },
+        {
+          "role": "user annotation of required end-on module sections",
+          "sha256": "588eb0f81dcf7f85597aa4655b7e3b3583170a335464c4ef10f409041d2a3b35"
+        }
       ]
     }
   ],
@@ -54,5 +80,10 @@
     ]
   },
   "glb_visual_review": "Independent imported hero, axial and side renders inspected: four continuous parallel longitudinal modules share fore/aft extents and surround a bluish glass sphere at90-degree intervals. All four compact ends are visible in the axial view, with no radial spears or staggered fore/aft pair. Broad green/blue/brass fields retained. Internal hub/brackets and detailed profile are authored interpretation. Rejected concepts are not certified as faithful geometry.",
-  "final_user_acceptance": "pending"
+  "final_user_acceptance": "pending",
+  "legacy_contact_sha256": "c8f8925a58513dd7ddc9aa66ad0b7790437631ad4dc5c1be1d163987c4b749d4",
+  "reviewed_binary_hashes": {
+    "blend": "378a5f5d09d67f8f70d66c771e5c0771e55dcabeaefe27ae83f3a14f4d68cd01",
+    "glb": "c7588e901f0c3667e6cf9701ad81f6082e5b88f5be7f35eddc6b4d2738ff9945"
+  }
 }

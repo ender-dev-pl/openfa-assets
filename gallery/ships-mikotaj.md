@@ -24,7 +24,7 @@ Additional views: [Rear machinery](../gallery/media/objects/mikotaj/hiero/rear-q
 
 [Blend](../sources/objects/mikotaj/ylikt-shan/model.blend) · [GLB](../sources/objects/mikotaj/ylikt-shan/model.glb)
 
-Additional views: [Rear machinery](../gallery/media/objects/mikotaj/ylikt-shan/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/ylikt-shan/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/ylikt-shan/heading-04.png)
+Additional views: [Rear machinery](../gallery/media/objects/mikotaj/ylikt-shan/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/ylikt-shan/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/ylikt-shan/heading-04.png) · [Retrospective concept 1](../gallery/media/concepts/mikotaj/ylikt-shan-01.png)
 
 ## Falari-Lourn
 
@@ -48,7 +48,7 @@ Additional views: [Rear machinery](../gallery/media/objects/mikotaj/falari-lourn
 
 [Blend](../sources/objects/mikotaj/ruth-strivakh/model.blend) · [GLB](../sources/objects/mikotaj/ruth-strivakh/model.glb)
 
-Additional views: [Rear machinery](../gallery/media/objects/mikotaj/ruth-strivakh/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/ruth-strivakh/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/ruth-strivakh/heading-04.png)
+Additional views: [Rear machinery](../gallery/media/objects/mikotaj/ruth-strivakh/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/ruth-strivakh/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/ruth-strivakh/heading-04.png) · [Retrospective concept 1](../gallery/media/concepts/mikotaj/ruth-strivakh-01.png)
 
 ## Na-Xanth
 

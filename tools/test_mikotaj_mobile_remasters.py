@@ -19,6 +19,14 @@ def main():
         assert meta['maps_generator_sha256']==sha(ROOT/'tools/author_mikotaj_ship_maps.py')
         for n,h in meta['map_sha256'].items():assert sha(ROOT/'sources/materials/mikotaj/mobile-ships'/n)==h
         for n,h in report['renders'].items():assert sha(media/n)==h
+        concept=json.loads((folder/'concept-review.json').read_text())
+        assert 1<=len(concept['iterations'])<=3
+        assert concept['reviewed_binary_hashes']==report['binaries']
+        refs=json.loads((ROOT/'sources/docs/reconstruction/models/ship-reference-index.json').read_text())['ships']
+        ref=next(r for r in refs if r['id']==row['id'])
+        assert concept['legacy_identity']['source_sha256']==ref['source_sha256']
+        for iteration in concept['iterations']:
+            assert iteration['prompt'] and iteration['verdict'] and sha(ROOT/iteration['image'])==iteration['sha256']
         if folder.name=='hiero':
             spikes=json.loads((folder/'spike-verification.json').read_text())
             assert spikes['binaries']==report['binaries']
