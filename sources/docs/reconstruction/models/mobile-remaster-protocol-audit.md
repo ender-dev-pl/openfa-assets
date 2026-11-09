@@ -45,3 +45,5 @@ Terminator now also has one actual retrospective ImageGen request and fresh eval
 Fleet Battleship now has one actual retrospective ImageGen request and fresh evaluated native/imported renders in [fleet-battleship-protocol-review.md](fleet-battleship-protocol-review.md). The canonical SciTek source is preserved with explicit remaining appearance differences; six other Terran protocol entries remain open.
 
 Command Cruiser now has two actual ImageGen iterations with original wireframe feedback and fresh evaluated native/imported renders in [command-cruiser-protocol-review.md](command-cruiser-protocol-review.md). Rejected iteration 1 and selected iteration 2 remain distinct. Five other Terran protocol entries remain open; no final fidelity/client acceptance is inferred.
+
+A current read-only [light-ship input audit](light-ship-protocol-inputs.md) establishes both complementary hull groups for flight, five cumulative construction layers and exact current counts/bounds. It exposes inherited non-root helper catalogue tags. This preparation does not complete any of the five remaining Terran concept/render entries.
