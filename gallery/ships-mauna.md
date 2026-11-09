@@ -6,11 +6,13 @@
 
 `openfa:ship/mauna/surveillance-craft-type-5`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Surveillance Craft Type 5](../gallery/media/docs/assets/reconstruction/ships/mauna/surveillance-craft-type-5/front-quarter.png)
+![Surveillance Craft Type 5](../gallery/media/objects/mauna/surveillance-craft-type-5/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/mauna/surveillance-craft-type-5/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mauna/surveillance-craft-type-5/model.glb)
+[Blend](../sources/objects/mauna/surveillance-craft-type-5/model.blend) · [GLB](../sources/objects/mauna/surveillance-craft-type-5/model.glb)
+
+Additional views: [Rear fittings](../gallery/media/objects/mauna/surveillance-craft-type-5/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mauna/surveillance-craft-type-5/technical-wireframe.png) · [Legacy heading4 comparison](../gallery/media/objects/mauna/surveillance-craft-type-5/heading-04.png) · [Rejected numeral-like field concept1](../gallery/media/concepts/mauna/surveillance-craft-type-5-01.png) · [Reviewed plain opaque fields concept2](../gallery/media/concepts/mauna/surveillance-craft-type-5-02.png)
 
 ## Combat Craft Type 1.5
 

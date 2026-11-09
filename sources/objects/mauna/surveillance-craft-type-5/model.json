@@ -1,0 +1,738 @@
+{
+  "id": "openfa:ship/mauna/surveillance-craft-type-5",
+  "issue": 251,
+  "name": "Surveillance Craft Type 5",
+  "key": "MN0A",
+  "source": "docs/assets/reconstruction/ships/mauna/surveillance-craft-type-5",
+  "size_class": "small scout",
+  "world_size_proposal": 40,
+  "equipment_slots": 2,
+  "material_tiles": {
+    "Type 5 | worn grey metal slab": 0,
+    "Type 5 | worn warm lower tabs": 5,
+    "Type 5 | dull blue grey insets": 2,
+    "Type 5 | oxidized service alloy": 1,
+    "Type 5 | carbon dark strips": 4
+  },
+  "part_face_budget": {
+    "slab body": 9000,
+    "service frame": 500,
+    "inset": 350,
+    "dark service strip": 120,
+    "fastener": 150,
+    "default": 250
+  },
+  "edge_finish": {
+    "part_keywords": [
+      "service frame"
+    ],
+    "width": 0.004,
+    "segments": 2,
+    "angle_limit": 0.52,
+    "reason": "Small manufactured service-frame radius; preserve existing slab chamfers and open crown gaps."
+  },
+  "max_triangles": 55000,
+  "max_primitives": 6,
+  "comparison_elevation": 0.12,
+  "comparison_azimuth": 0,
+  "reference_side_bounds": [
+    20,
+    17
+  ],
+  "protected_dents": [
+    {
+      "part": "Type 5 chamfered slab body",
+      "undented_point": [
+        -0.325,
+        0,
+        -0.1
+      ],
+      "outward": [
+        -1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0025
+    },
+    {
+      "part": "Type 5 chamfered slab body",
+      "undented_point": [
+        0.325,
+        0,
+        0.1
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0025
+    }
+  ],
+  "attachment_pairs": [
+    {
+      "part": "Type 5 service frame -1 0",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 blue grey inset -1 0",
+      "support": "Type 5 service frame -1 0"
+    },
+    {
+      "part": "Type 5 dark service strip -1 0 0",
+      "support": "Type 5 blue grey inset -1 0"
+    },
+    {
+      "part": "Type 5 dark service strip -1 0 1",
+      "support": "Type 5 blue grey inset -1 0"
+    },
+    {
+      "part": "Type 5 dark service strip -1 0 2",
+      "support": "Type 5 blue grey inset -1 0"
+    },
+    {
+      "part": "Type 5 service frame -1 1",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 blue grey inset -1 1",
+      "support": "Type 5 service frame -1 1"
+    },
+    {
+      "part": "Type 5 dark service strip -1 1 0",
+      "support": "Type 5 blue grey inset -1 1"
+    },
+    {
+      "part": "Type 5 dark service strip -1 1 1",
+      "support": "Type 5 blue grey inset -1 1"
+    },
+    {
+      "part": "Type 5 dark service strip -1 1 2",
+      "support": "Type 5 blue grey inset -1 1"
+    },
+    {
+      "part": "Type 5 service frame 1 0",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 blue grey inset 1 0",
+      "support": "Type 5 service frame 1 0"
+    },
+    {
+      "part": "Type 5 dark service strip 1 0 0",
+      "support": "Type 5 blue grey inset 1 0"
+    },
+    {
+      "part": "Type 5 dark service strip 1 0 1",
+      "support": "Type 5 blue grey inset 1 0"
+    },
+    {
+      "part": "Type 5 dark service strip 1 0 2",
+      "support": "Type 5 blue grey inset 1 0"
+    },
+    {
+      "part": "Type 5 service frame 1 1",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 blue grey inset 1 1",
+      "support": "Type 5 service frame 1 1"
+    },
+    {
+      "part": "Type 5 dark service strip 1 1 0",
+      "support": "Type 5 blue grey inset 1 1"
+    },
+    {
+      "part": "Type 5 dark service strip 1 1 1",
+      "support": "Type 5 blue grey inset 1 1"
+    },
+    {
+      "part": "Type 5 dark service strip 1 1 2",
+      "support": "Type 5 blue grey inset 1 1"
+    },
+    {
+      "part": "Type 5 crown tab 0",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 crown tab 1",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 crown tab 2",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 crown tab 3",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 warm lower tab 0",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 warm lower tab 1",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 side seam strip -1",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 end seam strip -1",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 frame fastener -1 0 0 0",
+      "support": "Type 5 service frame -1 0"
+    },
+    {
+      "part": "Type 5 frame fastener -1 0 0 1",
+      "support": "Type 5 service frame -1 0"
+    },
+    {
+      "part": "Type 5 frame fastener -1 0 1 0",
+      "support": "Type 5 service frame -1 0"
+    },
+    {
+      "part": "Type 5 frame fastener -1 0 1 1",
+      "support": "Type 5 service frame -1 0"
+    },
+    {
+      "part": "Type 5 frame fastener -1 1 0 0",
+      "support": "Type 5 service frame -1 1"
+    },
+    {
+      "part": "Type 5 frame fastener -1 1 0 1",
+      "support": "Type 5 service frame -1 1"
+    },
+    {
+      "part": "Type 5 frame fastener -1 1 1 0",
+      "support": "Type 5 service frame -1 1"
+    },
+    {
+      "part": "Type 5 frame fastener -1 1 1 1",
+      "support": "Type 5 service frame -1 1"
+    },
+    {
+      "part": "Type 5 side seam strip 1",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 end seam strip 1",
+      "support": "Type 5 chamfered slab body"
+    },
+    {
+      "part": "Type 5 frame fastener 1 0 0 0",
+      "support": "Type 5 service frame 1 0"
+    },
+    {
+      "part": "Type 5 frame fastener 1 0 0 1",
+      "support": "Type 5 service frame 1 0"
+    },
+    {
+      "part": "Type 5 frame fastener 1 0 1 0",
+      "support": "Type 5 service frame 1 0"
+    },
+    {
+      "part": "Type 5 frame fastener 1 0 1 1",
+      "support": "Type 5 service frame 1 0"
+    },
+    {
+      "part": "Type 5 frame fastener 1 1 0 0",
+      "support": "Type 5 service frame 1 1"
+    },
+    {
+      "part": "Type 5 frame fastener 1 1 0 1",
+      "support": "Type 5 service frame 1 1"
+    },
+    {
+      "part": "Type 5 frame fastener 1 1 1 0",
+      "support": "Type 5 service frame 1 1"
+    },
+    {
+      "part": "Type 5 frame fastener 1 1 1 1",
+      "support": "Type 5 service frame 1 1"
+    }
+  ],
+  "void_rays": [
+    {
+      "origin": [
+        -2,
+        -0.4,
+        0.71
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        0,
+        0.71
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        0.4,
+        0.71
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    }
+  ],
+  "solid_rays": [
+    {
+      "origin": [
+        -2,
+        -0.6,
+        0.71
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        -0.2,
+        0.71
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        0.2,
+        0.71
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        0.6,
+        0.71
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    }
+  ],
+  "interpretation": "Upright chamfered grey metal slab with four interpreted crown tabs/open gaps, two warm lower tabs and subdued opaque blue-grey service fields. Exact tab/panel layout, hidden geometry and function remain interpretation; no symbolic numeral, glazing, emission, engines or weapons inferred. Two equipment slots remain uncalibrated.",
+  "stage": "mobile-ship-remaster",
+  "baseline_sha256": "fb6a56857618f35d965c54446d900d5de617791d32eee1d8ecd35e60eb28e11f",
+  "baseline_bounds": [
+    [
+      -0.34700003266334534,
+      -0.8549999594688416,
+      -0.8600000143051147
+    ],
+    [
+      0.34700027108192444,
+      0.8549999594688416,
+      0.75
+    ]
+  ],
+  "final_bounds": [
+    [
+      -0.34700003266334534,
+      -0.8549999594688416,
+      -0.8600000143051147
+    ],
+    [
+      0.34700027108192444,
+      0.8549999594688416,
+      0.75
+    ]
+  ],
+  "triangles": 26160,
+  "mesh_batches": 4,
+  "material_count": 1,
+  "packed_maps": 3,
+  "editable_part_vertex_groups": {
+    "PrimaryHullAndArmour": [
+      "Type 5 chamfered slab body",
+      "Type 5 crown tab 0",
+      "Type 5 crown tab 1",
+      "Type 5 crown tab 2",
+      "Type 5 crown tab 3",
+      "Type 5 warm lower tab 0",
+      "Type 5 warm lower tab 1"
+    ],
+    "TrimAndFasteners": [
+      "Type 5 side seam strip -1",
+      "Type 5 end seam strip -1",
+      "Type 5 side seam strip 1",
+      "Type 5 end seam strip 1",
+      "Type 5 frame fastener -1 0 0 0",
+      "Type 5 frame fastener -1 0 0 1",
+      "Type 5 frame fastener -1 0 1 0",
+      "Type 5 frame fastener -1 0 1 1",
+      "Type 5 frame fastener -1 1 0 0",
+      "Type 5 frame fastener -1 1 0 1",
+      "Type 5 frame fastener -1 1 1 0",
+      "Type 5 frame fastener -1 1 1 1",
+      "Type 5 frame fastener 1 0 0 0",
+      "Type 5 frame fastener 1 0 0 1",
+      "Type 5 frame fastener 1 0 1 0",
+      "Type 5 frame fastener 1 0 1 1",
+      "Type 5 frame fastener 1 1 0 0",
+      "Type 5 frame fastener 1 1 0 1",
+      "Type 5 frame fastener 1 1 1 0",
+      "Type 5 frame fastener 1 1 1 1"
+    ],
+    "ServiceAssemblies": [
+      "Type 5 service frame -1 0",
+      "Type 5 service frame -1 1",
+      "Type 5 service frame 1 0",
+      "Type 5 service frame 1 1"
+    ],
+    "RecessedMachinery": [
+      "Type 5 blue grey inset -1 0",
+      "Type 5 dark service strip -1 0 0",
+      "Type 5 dark service strip -1 0 1",
+      "Type 5 dark service strip -1 0 2",
+      "Type 5 blue grey inset -1 1",
+      "Type 5 dark service strip -1 1 0",
+      "Type 5 dark service strip -1 1 1",
+      "Type 5 dark service strip -1 1 2",
+      "Type 5 blue grey inset 1 0",
+      "Type 5 dark service strip 1 0 0",
+      "Type 5 dark service strip 1 0 1",
+      "Type 5 dark service strip 1 0 2",
+      "Type 5 blue grey inset 1 1",
+      "Type 5 dark service strip 1 1 0",
+      "Type 5 dark service strip 1 1 1",
+      "Type 5 dark service strip 1 1 2"
+    ]
+  },
+  "reductions": [
+    {
+      "part": "Type 5 chamfered slab body",
+      "source_faces": 17820,
+      "final_faces": 9000,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 crown tab 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 crown tab 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 crown tab 2",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 crown tab 3",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 warm lower tab 0",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 5
+    },
+    {
+      "part": "Type 5 warm lower tab 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 5
+    },
+    {
+      "part": "Type 5 side seam strip -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 end seam strip -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 side seam strip 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 end seam strip 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 service frame -1 0",
+      "source_faces": 440,
+      "final_faces": 696,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 blue grey inset -1 0",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Type 5 dark service strip -1 0 0",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 dark service strip -1 0 1",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 dark service strip -1 0 2",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 frame fastener -1 0 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener -1 0 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener -1 0 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener -1 0 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 service frame -1 1",
+      "source_faces": 440,
+      "final_faces": 696,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 blue grey inset -1 1",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Type 5 dark service strip -1 1 0",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 dark service strip -1 1 1",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 dark service strip -1 1 2",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 frame fastener -1 1 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener -1 1 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener -1 1 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener -1 1 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 service frame 1 0",
+      "source_faces": 440,
+      "final_faces": 696,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 blue grey inset 1 0",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Type 5 dark service strip 1 0 0",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 dark service strip 1 0 1",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 dark service strip 1 0 2",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 frame fastener 1 0 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener 1 0 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener 1 0 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener 1 0 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 service frame 1 1",
+      "source_faces": 440,
+      "final_faces": 696,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 5 blue grey inset 1 1",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Type 5 dark service strip 1 1 0",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 dark service strip 1 1 1",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 dark service strip 1 1 2",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 5 frame fastener 1 1 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener 1 1 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener 1 1 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 5 frame fastener 1 1 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    }
+  ],
+  "generator_sha256": "8f9227d6137439682fcddc489d5f3dabf57a1e2768eaeb85a15186094a37317a",
+  "recipe_sha256": "abc5ebc9b8640a123202cfb953ad790a47e7d99213a92437139196e92728167b",
+  "shared_primitives_sha256": "1469b823c8eb59eeca4372d8f5b4059f9ab1de5a1d02e4ddcf3ae9a650cbffa1",
+  "shared_recipe_helpers_sha256": "7c152a5afe634f62d26a8666787d99944caa5000110239bb54f59db5e9f61d1b",
+  "maps_generator_sha256": "511b7bf17319e3db5c36432b4f2499d73d16f64656152880e00e3097cdad9e36",
+  "map_sha256": {
+    "colour.png": "97cf240ad0545c4d5466a68bedaf6c791ce2bf42214e3423cf2c09034fd2640d",
+    "normal.png": "e6960df773dd4f734a84bf0f9cc0b7919c62d43f642bb343ac084010997c8119",
+    "orm.png": "b73e975099985d68baab3e196f575c2ca58d15df0132175b8d2d1ee3e9a44087"
+  },
+  "blend_sha256": "f85f7c79b388b3475c89a8897ba2f15e6adb15971756b6bc64511f63724cf74c",
+  "glb_sha256": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
+  "visual_acceptance": "Agent reviewed actual legacy/concept/imported GLB feedback; final user acceptance and client calibration separate"
+}

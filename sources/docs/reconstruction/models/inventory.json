@@ -31818,21 +31818,43 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/mauna/surveillance-craft-type-5/model.blend",
+          "stage": "mobile-ship-remaster",
+          "blend": "objects/mauna/surveillance-craft-type-5/model.blend",
           "present": true,
-          "sha256": "fb6a56857618f35d965c54446d900d5de617791d32eee1d8ecd35e60eb28e11f",
-          "final_visual_acceptance": "not-established"
+          "sha256": "f85f7c79b388b3475c89a8897ba2f15e6adb15971756b6bc64511f63724cf74c",
+          "views": [
+            {
+              "label": "Rear fittings",
+              "image": "gallery/media/objects/mauna/surveillance-craft-type-5/rear-quarter.png"
+            },
+            {
+              "label": "Actual imported wireframe",
+              "image": "gallery/media/objects/mauna/surveillance-craft-type-5/technical-wireframe.png"
+            },
+            {
+              "label": "Legacy heading4 comparison",
+              "image": "gallery/media/objects/mauna/surveillance-craft-type-5/heading-04.png"
+            },
+            {
+              "label": "Rejected numeral-like field concept1",
+              "image": "gallery/media/concepts/mauna/surveillance-craft-type-5-01.png"
+            },
+            {
+              "label": "Reviewed plain opaque fields concept2",
+              "image": "gallery/media/concepts/mauna/surveillance-craft-type-5-02.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent legacy/concept/imported-render review complete; final user acceptance and client calibration separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -31876,6 +31898,30 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/mauna/surveillance-craft-type-5/model.blend",
+          "present": true,
+          "sha256": "fb6a56857618f35d965c54446d900d5de617791d32eee1d8ecd35e60eb28e11f",
+          "final_visual_acceptance": "not-established",
+          "status": "historical_not_for_packaging"
+        }
+      ],
+      "selected_refinement": {
+        "stage": "mobile-ship-remaster",
+        "blend": "objects/mauna/surveillance-craft-type-5/model.blend",
+        "glb": "objects/mauna/surveillance-craft-type-5/model.glb",
+        "issue": 251,
+        "integration": "One canonical source/export across gameplay, ship/build menus and SciTek. Keep the original catalogue id; WorldSize and equipment mounts require client calibration."
+      },
+      "remaster_protocol": {
+        "issue": 251,
+        "concept_review": "reviewed",
+        "review": "objects/mauna/surveillance-craft-type-5/concept-review.json",
+        "iterations": 2,
+        "final_user_acceptance": "pending"
       }
     },
     {
