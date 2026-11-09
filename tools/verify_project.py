@@ -28,7 +28,7 @@ def main():
     sys.path.insert(0,str(ROOT/'sources/tools/blender'))
     from model_runtime_evidence import verify_runtime_evidence
     for record in inventory['records']:
-        if record.get('selected_refinement',{}).get('issue')==234:
+        if record.get('selected_refinement',{}).get('issue') in {234,236}:
             verify_runtime_evidence(ROOT/'sources',record)
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
     from gallery_trading_goods import trading_records
