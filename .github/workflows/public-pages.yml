@@ -29,6 +29,7 @@ jobs:
       - run: python tools/test_public_pages.py
       - run: python tools/verify_project.py
       - run: python -m unittest discover -s tools -p 'test_achaean*evidence.py'
+      - run: python tools/test_mobile_remaster_evidence.py
       - run: python tools/verify_licensing.py
       - run: python tools/test_licensing.py
       - run: node tools/test_gallery_filters.cjs

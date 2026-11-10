@@ -1,0 +1,73 @@
+# Remastering legacy 3D objects
+
+This policy applies to remastered 3D buildings, ships, and trading goods, together with their blueprints, construction or operational animations, and other object-specific visual elements. It governs new remasters and explicitly requested revisions; it does not require retroactive changes to completed models.
+
+## Source hierarchy
+
+1. **Original visual evidence.** Inspect the correctly paletted legacy representations of the specific object: surface and overview sprites, enlarged detail views, technical wireframes, and available animation frames. Survey the full `_MA` directory and archive index for relevant material, rather than restricting the search to `ST*.VID`. Choose the most informative overall view as the primary silhouette and proportion reference, but choose evidence separately for individual details. A component may be clearer in a wireframe than in a larger colour image, or vice versa; pixel dimensions alone do not determine reliability. Record the exact archive member, palette, frame or view used and explain why it was selected. Preserve identifiable silhouette, proportions, colour placement, distinctive components, and observed animation states.
+2. **Textual and functional evidence.** Use the game's language package and `.cdb` databases for object descriptions, function, cultural context, materials, and any stated physical dimensions. Record the exact file, record or identifier, and relevant text for claims used in the remaster. General culture lore informs interpretation but does not override object-specific evidence. Record contradictions between descriptions, diagrams, and observed animations instead of silently treating every illustrated state as implemented behaviour.
+3. **Authored interpretation.** Details absent from the evidence may be designed to make the object coherent in 3D. Identify these choices as interpretations. Additional mechanisms or animation phases are enhancements when they go beyond observed legacy behaviour, even if a blueprint or description inspired them. Do not present ImageGen output or an earlier model as recovered legacy evidence.
+
+Original pixels remain reference material; follow [provenance and media rules](provenance.md) when recording or publishing evidence. A generated concept must be checked against the original evidence rather than allowed to override it.
+
+## Animation and preview survey
+
+`_MA` includes multiple video families, such as `PB*.VID`, `PH*.VID`, `PM*.VID`, `PS*.VID`, and `ST*.VID`. It also contains preview images stored as `.256` members of the extensionless `_MA/_MA` archive. Inspect the directory and archive indexes, then review the videos and still previews relevant to the object. A search limited to one filename prefix or to loose files can miss useful evidence.
+
+Use catalogue bindings and existing source indexes to identify what each asset depicts; a prefix or numeric suffix alone does not establish object identity. Record the complete directory/archive path and member name. Check related sources such as `_SCITEK` through their own bindings; the same basename in another directory must not be assumed to contain the same presentation.
+
+Distinguish a whole-object turntable from an operational animation. Rotation can reveal hidden surfaces, proportions, and fittings without proving independent movement of those parts. Where an operational sequence exists, inspect its relevant phases and mechanism travel, not only one representative frame. Decode the material needed for the object under review rather than exporting unrelated families or duplicating complete reference caches.
+
+## Production sequence
+
+1. **Establish the evidence set.** Locate existing canonical models and related deliverables before creating replacements. Review all useful legacy views and animation phases, gather relevant lore, and record unresolved details. Use the clearest source for each feature; technical detail views and the general model must describe compatible geometry.
+2. **Prepare and review a high-resolution concept.** This stage can be completed manually by the user in ImageGen or optionally automated by the authoring agent. A suitable user-supplied ImageGen concept satisfies the stage; do not generate another merely to repeat an already completed step. When creating a concept, supply ImageGen with the selected legacy image references and relevant language-package and `.cdb` lore. Review the result against those sources and revise conflicting silhouette, components, colours, or function. Retain the selected concept, its source identifiers, and notes on interpreted details. Record the prompt and generation details when available; identify unavailable details rather than inventing them. The concept develops the reference; it does not replace it.
+3. **Create or refine the editable 3D source.** Build the `.blend` from the reviewed concept and original evidence, updating the canonical object when refining an existing asset. Use physical dimensions stated by the sources. When dimensions are absent or incomplete, document the scale assumption and its basis, including unit class and relationships to other objects. A role class is not itself a recovered metric length. Keep meaningful parts, materials, pivots, attachments, and animated components editable. Add material- and function-appropriate wear to newly created objects while retaining a readable silhouette and markings. Do not infer calibrated 3D weapon sockets from a slot count or a 2D diagram alone.
+4. **Export and derive related elements.** Export the reviewed model as `.glb`. Derive blueprints, wireframes, construction stages, and operational animations from the same canonical geometry, scale, identity, and interpretation. A detail wireframe is a technical view of that model, not an independently improved substitute. Keep stages and moving assemblies in the canonical asset where practical rather than distributing separate copies of the same hull. Retain editable sources and authored inputs needed to reproduce the exports.
+5. **Finalize the model gallery.** After the final model review, update and verify the model gallery against that exact source/export revision. This is a required part of remaster completion; follow the gallery finalization requirements below.
+6. **Publish and hand off.** Supply the designated game integration worker with the committed asset paths, hashes, current gallery previews, scale contract, and known limitations. Follow the [authoring workflow](workflow.md) for publication locations, project checks, signed commits where required, and technical issue records.
+
+## Model gallery finalization
+
+A remaster is not complete until the model gallery reflects its final reviewed revision. Update the catalogue selection and both the Markdown gallery and interactive model catalogue, including their thumbnails, rendered views, model downloads, and relevant wireframe, construction-stage or animation previews. Generate affected previews from the final canonical model; retain unchanged valid media instead of regenerating unrelated assets. Historical views must remain clearly labelled as historical rather than appearing to describe the new model.
+
+Rebuild the gallery with `python tools/build_gallery.py` after publishing the reviewed sources, metadata, and media. Run `python tools/verify_project.py` and relevant gallery checks. Inspect the affected entry in the generated gallery: confirm that its images, downloadable Blend/GLB, animation controls where applicable, and catalogue links use the intended current revision and work correctly. Updating only the model files or their hashes does not satisfy this step.
+
+Include the gallery update in the remaster milestone and provide its preview links in the handoff. Distinguish a committed local gallery update from a deployed public gallery: when public publication is in scope, verify the deployed revision separately and report its actual status.
+
+## Disk usage and task-owned cleanup
+
+Before creating a checkout, building, rendering a large batch, unpacking references, or copying substantial assets, check free space and existing usable outputs. Prefer a suitable existing isolated checkout and reuse verified outputs for unchanged inputs. Do not duplicate complete builds, runtimes, archives, or reference caches for convenience.
+
+Record the task's starting disk state, its new output and temporary locations, and whether a checkout was created or reused. At completion, report whether the task caused excessive disk usage, with the sizes and purpose of retained temporary artifacts and any task-created checkout. Distinguish task-attributable files from changes in total free space caused by other work. Identify concrete cleanup candidates by exact path and size, explain their remaining evidence value, and suggest cleanup when appropriate.
+
+Cleanup is restricted to files created by that specific task. Existing checkouts, prior evidence, user files, and artifacts from other tasks are outside its scope, even when they appear obsolete or duplicated. Preserve final deliverables and required verification evidence, verify exact targets before deletion, and follow the repository's approval requirements for removing working directories. A reused checkout must never be proposed for wholesale removal as if it belonged to the current task.
+
+## Visual quality and game budgets
+
+The current working target is approximately **80% perceptual visual fidelity**, not pixel-for-pixel reproduction or a calculated similarity score. Prioritize recognizable silhouette, proportions, colour placement, characteristic components, and credible materials. Simplification is acceptable where it preserves those features; the target does not excuse a missing visible component, an inconsistent blueprint, or an incorrectly operating mechanism.
+
+Concentrate detail where the references support it and where it remains readable at the game's normal camera distance. High quality does not require a dense regular panel grid, excessive fasteners, or uniform surface noise. Use broad, quiet surfaces when the original object and reviewed concept call for them. A shared cultural palette and material language should connect related objects without erasing their individual forms.
+
+Set and record budgets appropriate to the object and target runtime: triangles, mesh batches, materials, texture dimensions, and relevant memory or rendering costs. Measure the exported result instead of inferring performance from the editable scene. Inspect details at gameplay scale as well as in close-ups. Compare related ships or structures at a common physical scale and camera; individually fitted images do not demonstrate their relative sizes. Asset budgets alone do not establish a client frame-rate guarantee.
+
+## Canonical models and preservation
+
+Maintain one current canonical object identity and model source/export pair for each object. Refinement should improve that shared model for gameplay, construction and build menus, SciTek, and other presentations. Dedicated menu images and animations may be separate deliverables, but must not become competing versions of the underlying model. Package consumers should select the canonical payload rather than include every historical variant.
+
+Preserve earlier accepted editable iterations and useful verification evidence. For an explicitly authorized canonical consolidation, duplicate working-tree payloads may be retired only after their actual committed content has been verified as recoverable in immutable Git history. Record the original commit, path, blob identifier, and recovery location; hashes and rendered images alone are insufficient preservation. Do not discard modified or uncommitted variants under this procedure. Historical evidence must remain distinguishable from verification of the current model.
+
+## Review and acceptance
+
+- Compare the concept, actual Blender renders, and independently imported GLB against the original visual evidence and lore. Check silhouette, distinctive details, colours, material roles, scale, known animation phases, and the full motion of visible mechanisms. Use whichever source best resolves each detail.
+- Open the final editable `.blend` and independently import the `.glb` in Blender's actual runtime. Inspect rendered results from relevant directions and poses. File presence, polygon counts, matching hashes, or a successful export alone do not establish visual acceptance.
+- Check that the general model, technical detail views, wireframes, and animated parts agree geometrically. Explicitly distinguish legacy states from authored enhancements.
+- Record the selected source variants and reasons for using them, lore citations, known dimensions or scale assumptions, concept provenance and available prompt, authored deviations, source/export paths and hashes, measured budgets, and verification results. Keep original-game media outside published authored sources as required by [provenance](provenance.md).
+- Require the model gallery finalization step before marking a remaster complete. Identify the current canonical asset clearly; do not present obsolete renders or reports as verification of a changed model.
+- Distinguish technical source/export verification, artistic review, and game integration acceptance. Record user approval when it exists; do not infer it from passing tests or inclusion in the gallery. Game integration must verify actual client scale, orientation, lighting, animation handling, attachments, and performance as applicable, using the same canonical asset across its presentation paths.
+
+## Reference examples
+
+The [Federal Transporter IS0C](../gallery/ships-shared.md#federal-transporter-is0c) is a user-identified quality benchmark for workmanship, functional detail, materials, and presentation. Its architecture and segmentation are not templates for other cultures or objects.
+
+The [Rigellian ships](../gallery/ships-rigellian.md) illustrate the workflow of user-prepared ImageGen concepts, a common cultural palette, size-class-aware models, and iterative visual refinement. Consult the evidence and acceptance records for the specific revision; inclusion here does not itself establish final artistic or game integration approval. Each new object's original evidence and reviewed concept determine its design.

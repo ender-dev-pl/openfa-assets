@@ -1,0 +1,9 @@
+# Corrected concept and model review
+
+The user rejected the initial interpretation after reviewing the original sprite headings and supplied a three-view drawing: two upright aft-opening crescent wings beside a central green hull. That drawing is the current architectural concept, shown in `gallery/media/objects/achaean/hunter-prospector/concept.png`. Its source hash is recorded in `reference-evidence.json`. It is user-authored reference material, not an original-game screenshot.
+
+The two previous ImageGen iterations incorrectly developed a horizontal fork plus separate warm central spar. They are historical, rejected concepts, recoverable with the old remaster in commit de66138148d53a6549d24b161dd9e85cf78dd38b. No new image generation was performed for this correction.
+
+The corrected editable model replaces the horizontal lobes with a complete upright C plate on each side; both openings face aft. The continuous green hull occupies the middle, short lateral links bridge the side gaps, and no separate third spar remains. Broad red skins and silver edging use the existing shared material atlas. The green shell remains worn; fittings, exact thickness, joints and hidden sections are authored interpretation.
+
+Review the actual side/top/front-quarter imported renders against the three-view sketch and the tiny original headings. Side views should show crescent profiles; top views should show thin rails; the central hull should remain a coherent body, with the mouth regions empty beside its aft portion. The technical wireframe is derived from that same GLB. Native review also exposed tip intersections in layered edge strips; these were removed by making edge colours part of one closed wing topology. Passing geometry/render checks does not establish final user approval or recovered original camera calibration.

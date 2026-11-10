@@ -38,6 +38,9 @@ def verify_runtime_evidence(root,record):
     if proof.get('format') == 'rigellian-building-remaster-v1':
         from rigellian_building_runtime_evidence import verify
         return verify(root, record)
+    if proof.get('format') == 'mobile-remaster-runtime-v1':
+        from mobile_remaster_evidence import verify_record
+        return verify_record(root, record)
     assert proof.get('scope')=='blender-native-and-imported-glb'
     assert proof.get('text_hash_policy')=='lf-for-json-and-python'
     assert proof.get('game_client_integration') is False,'Do not infer game integration from Blender checks'
