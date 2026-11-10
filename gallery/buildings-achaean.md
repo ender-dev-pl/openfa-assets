@@ -298,13 +298,15 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/175`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Stun Tower](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/front-quarter.png)
+![Stun Tower](../gallery/media/objects/achaean/stun-tower/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/model.glb)
+[Blend](../sources/objects/achaean/stun-tower/model.blend) · [GLB](../sources/objects/achaean/stun-tower/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/animation-00.webm)
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac25-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/stun-tower/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/stun-tower/imported-rear-quarter.png)
+
+[Play animation: Animation](../gallery/media/objects/achaean/stun-tower/animation-00.webm)
 
 ## Power Tower
 

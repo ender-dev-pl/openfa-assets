@@ -30396,7 +30396,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/175",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1036",
         "description_records": [
           1036
         ]
@@ -30470,11 +30470,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/stun-tower/model.blend",
           "present": true,
-          "sha256": "bf60a7e485058dbed2651e9912ea18c25448c5d8c86cbab3ac9b996f127c65f8",
-          "final_visual_acceptance": "not-established"
+          "sha256": "e496841ad3cd88914dc256584403981d4c78211665b0f3c86c6333555f9c3273",
+          "media": "gallery/media/objects/achaean/stun-tower",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac25-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/stun-tower/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/stun-tower/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -30484,7 +30499,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -30514,6 +30529,71 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 175
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/model.blend",
+          "present": true,
+          "sha256": "bf60a7e485058dbed2651e9912ea18c25448c5d8c86cbab3ac9b996f127c65f8",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/stun-tower/model.blend",
+        "sha256": "e496841ad3cd88914dc256584403981d4c78211665b0f3c86c6333555f9c3273",
+        "runtime_evidence": {
+          "format": "achaean-stun-tower-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/stun-tower",
+          "files": {
+            "gallery/media/concepts/achaean/ac25-review-1.png": "9a194e507a03258b89c635ab9c23a9d3063d096f72622e4ca7b07de28ba8631b",
+            "gallery/media/objects/achaean/stun-tower/animation-00.webm": "d66026524e9cec37e0818a1684b0346df4450983693f6a65140dc86abcfe9ffc",
+            "gallery/media/objects/achaean/stun-tower/animation-previews.json": "7624c3020e5c00eb29867835a590ae13cf49e47a218d4b024672604e677c639d",
+            "gallery/media/objects/achaean/stun-tower/front-quarter.png": "d8713b9e297c3137c0fbcb24732963ce6b7d92615490ca41db1bfdba1b8e6faa",
+            "gallery/media/objects/achaean/stun-tower/imported-front-quarter.png": "d8713b9e297c3137c0fbcb24732963ce6b7d92615490ca41db1bfdba1b8e6faa",
+            "gallery/media/objects/achaean/stun-tower/imported-front.png": "bc525a67c5fe366edb32b0ab26bd984494ee6d40eba91bff7d776913e1efa431",
+            "gallery/media/objects/achaean/stun-tower/imported-rear-quarter.png": "f62148d4572db30b9f0532b227f2372b9e40419cd90db9cf38729740ac2cf087",
+            "gallery/media/objects/achaean/stun-tower/native-front-quarter.png": "5a5b4e41ad5155f99294735538dd426b9b6e9ad881a3e59734377aff518ffe86",
+            "gallery/media/objects/achaean/stun-tower/native-front.png": "86568776643576bdf2cdd7f25a387a66929f4f906371e87c970c90e8a4a8f333",
+            "gallery/media/objects/achaean/stun-tower/native-rear-quarter.png": "cf1f6be3ac055aabbca3e526bc5eb587c64af5a8a640f2750a48312c37615dc0",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/model.blend": "bf60a7e485058dbed2651e9912ea18c25448c5d8c86cbab3ac9b996f127c65f8",
+            "sources/docs/reconstruction/models/ac25-concept-prompt-1.txt": "1a401ee8dede1d60a0039e916cf08cf044434984e3b832e23d8396d51169427b",
+            "sources/materials/achaean/stun-tower/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/stun-tower/Coral fine wear normal.png": "bef1048d97b12a3f013fec0182bd58055527d07459163c91eef3f8f3f87c70bf",
+            "sources/materials/achaean/stun-tower/Coral metal roughness.png": "efaef6c8b59203937dd615b0f6cedf9cb69d612a32ab3acfedff0cf196669985",
+            "sources/materials/achaean/stun-tower/Dark muzzle and field backs.png": "5332a3ac3c627033ff2fadf1be0714e8dd19b3512e18de6c7d04a9a97511d18a",
+            "sources/materials/achaean/stun-tower/Ochre left fitting.png": "2c0450436d41dc54f22b2afab457e1b98ea8aca1531dc8c7b394f70b63d3d6ce",
+            "sources/materials/achaean/stun-tower/Red neck.png": "009e1b3bf7dd52ca5322313e569b37bf8b6752f830635e1ccee03692ac254ea4",
+            "sources/materials/achaean/stun-tower/Slate left fitting.png": "8a98bad71882176bd07fe870e6be68537cf16ead1ea57a73383a2f26cff0599d",
+            "sources/objects/achaean/stun-tower/model.blend": "e496841ad3cd88914dc256584403981d4c78211665b0f3c86c6333555f9c3273",
+            "sources/objects/achaean/stun-tower/model.glb": "814dc694abe1bad49deefc62dd28eef3ab459f734bc5f2e612a4aa404ad573bb",
+            "sources/objects/achaean/stun-tower/model.json": "db24d87c7143fb16b5f1ac9df551f7cbcb5dad4be319017b1444b14c11228595",
+            "sources/objects/achaean/stun-tower/runtime-review.json": "c51ba0b595be918990b99ab48a45b738ccd516db69bc3dee8b9575b8e6904522",
+            "sources/objects/achaean/stun-tower/visual-review.json": "fb325312d43adafd375affc241a4f1a2ff81e3859288afa3833fb6a5782a64c5",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/achaean_stun_tower_runtime_evidence.py": "d73233a34c700af61c769524b6e461196a75d059e488bc6ec50c9e2763b8b6f2",
+            "sources/tools/blender/checks_achaean_shipyard.py": "e397a226fc7a4df37f4531f8ea724bfa2fac33579bcd2bd3082ab99d382a36ae",
+            "sources/tools/blender/remaster_achaean_manoeuvring_device.py": "bccbd3e9cd29706fbf5b0af5dd1df712be840edefc562002bac491ed895cb4fe",
+            "sources/tools/blender/remaster_achaean_missile_launcher.py": "a0594e4649ef870b68a100439a1feb0e92214babd70da949b7a4169364c18a2d",
+            "sources/tools/blender/remaster_achaean_shipyard.py": "7ccce8d2dfa946f86da065ecb64a8b30a5d56d0e5a375f7d9a6e7957c4b6fbf6",
+            "sources/tools/blender/remaster_achaean_stun_tower.py": "707de6b6c4a7d30cb014be5f5479dddfab16f920f26ef9a33b383f5a24e3e59e",
+            "sources/tools/blender/render_achaean_stun_heading_preview.py": "a682f9cc990f80740cbfe5b30226c0a4a875c70c388dd7ec1f22405ad92dede4",
+            "sources/tools/blender/verify_achaean_building_centered.py": "c40d7ed4063b8a4e64954eef81d08ca4e37420a4a3579e42c38f1a809cc88860",
+            "sources/tools/blender/verify_achaean_building_left_quarter.py": "27a9026001272eaa467909e1d02f157af0353fc51dceed1cc60077154333cb74",
+            "sources/tools/blender/verify_achaean_landing_pad.py": "d34c2c7b7539ebc44c7a47d8a36928f6b4077d53e373af086a4347379687dd20",
+            "sources/tools/blender/verify_achaean_stun_tower.py": "6ecd67452f1415b8a7af93f1ffb55f35be75db2ee575ef0866fea1df8290fadb",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with 65 sampled heading states, bearing/clearance/nozzle checks, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/stun-tower/runtime-review.json",
+          "objects/achaean/stun-tower/visual-review.json"
+        ]
       }
     },
     {
