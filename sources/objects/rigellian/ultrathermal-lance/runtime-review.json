@@ -1,0 +1,4165 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/062",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "58704c9d51c7716aa9833c63b147bd215725c0ad175f7c56e9c226f0bc2c672d",
+    "glb": "82c56cf93ef69d4e8ca2facdd8166a77ae3a58ed04bdd22fb4436c690451c886"
+  },
+  "metadata_sha256": "8d54010be86230ad617bc1a3eb5abe207b20b0ca57e8f7b8f5c360b6f5e12f7e",
+  "verifier_sha256": "2ab54f4ff565b9153b7ef08c9693eff032affced09dd95b8bda96914f04e34a8",
+  "helpers": {
+    "sources/tools/blender/verify_remastered_rigellian_ultrathermal_lance.py": "2ab54f4ff565b9153b7ef08c9693eff032affced09dd95b8bda96914f04e34a8",
+    "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+    "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "sources/tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "sources/tools/blender/manufactured_surface_mounts.py": "dd05a5c80253bd6afcaeb4aa75f9d71e50ffaf54ef3c83221a59bd84b748346d",
+    "sources/tools/blender/manufactured_profile_strips.py": "29db9a886573ac1b959ce9cc01102c3ea3f6bb5c3c8dd6373af7e71440b52376",
+    "sources/tools/blender/rigellian_ultrathermal_lance_parts.py": "c9e2813cf85660fe5878040a81838175bfe3685bb9b79986b3c69b4c15309625",
+    "sources/tools/blender/refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "sources/tools/blender/refine_rigellian_missiles.py": "93b0bd4881160f8d931f41b9ed26cb47bff1d457ccbd0754992ecd9567d31f67",
+    "sources/tools/blender/refine_rigellian_lance_base.py": "0a57612bfd3e53da38c6cb2edfee05f1072c6b85629a0093795105eda7eadf88",
+    "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "sources/tools/blender/verify_refined_rigellian_lance_base.py": "153e5e5903f75efdb880d6f2fce9ff841f5d74925e2f7353798051fc4a4b2fa2",
+    "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+    "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+    "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+    "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+    "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+    "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+    "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+    "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+    "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+    "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+    "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+    "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+    "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+    "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+    "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+    "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+    "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+    "sources/tools/blender/repair_detail_uvs.py": "4242a0a815cd5208fdf0e81204a5fdeab67a9d0c3e95be6934d4f64c8672b9c7",
+    "sources/tools/blender/manufactured_roof_wells.py": "d9e7e148613d96e666a30b75f0de1382e9869e11c118ed5c4828b2b4fb75fceb",
+    "sources/tools/blender/build_rigellian_ultrathermal_lance.py": "701d84d1e71b870ce5c1f06b42a94d262156eb69fe661af53269379b5058ef18",
+    "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+    "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+    "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+    "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+    "sources/tools/blender/verify_rigellian_ultrathermal_lance.py": "ad3d3ed05be7fe7b1d17429e386620b4cc18b2269c97409587e48e0adf209f4a",
+    "sources/tools/blender/rigellian_ultrathermal_remaster_checks.py": "3b51c5e0e3617da73838c81f0c6e22a29331027f7c5578a4bde6aa78220d3e1c",
+    "sources/tools/blender/verify_refined_rigellian_extractor.py": "d8a090cc290d0b5ebe800c93a1dc70446e02c1e1697e909bd039073a9d6ef84f",
+    "sources/tools/blender/rigellian_extractor_remaster_checks.py": "f2024418942b8111f93f71a61160dec511ac0c91ce9f1b28a33f9959a53e70a3",
+    "sources/tools/blender/rigellian_surface_uv_checks.py": "4723082f1245231552b14080237014e931d6f8b89998df84115b50616f5d58d5"
+  },
+  "native": {
+    "positive_closed_meshes": 22,
+    "body_bounds": [
+      -0.49000000953674316,
+      -0.5027174949645996,
+      0.0,
+      0.614433228969574,
+      0.49000000953674316,
+      1.8972787857055664
+    ],
+    "retained_refined_foot": {
+      "positive_closed_meshes": 22,
+      "tapered_foot_radius_ratio": 0.5434782509162984,
+      "segment_root_contacts": [
+        [
+          0.38499999046325684,
+          0.0,
+          0.07000000029802322
+        ],
+        [
+          0.4300000071525574,
+          0.0,
+          0.12999999523162842
+        ],
+        [
+          0.45500001311302185,
+          0.0,
+          0.20000000298023224
+        ],
+        [
+          0.3334197700023651,
+          0.19249999523162842,
+          0.07000000029802322
+        ],
+        [
+          0.3723909258842468,
+          0.2150000035762787,
+          0.12999999523162842
+        ],
+        [
+          0.3940415680408478,
+          0.22750000655651093,
+          0.20000000298023224
+        ],
+        [
+          0.19249999523162842,
+          0.3334197700023651,
+          0.07000000029802322
+        ],
+        [
+          0.2150000035762787,
+          0.3723909258842468,
+          0.12999999523162842
+        ],
+        [
+          0.22750000655651093,
+          0.3940415680408478,
+          0.20000000298023224
+        ],
+        [
+          2.35744505887755e-17,
+          0.38499999046325684,
+          0.07000000029802322
+        ],
+        [
+          2.6329908323197844e-17,
+          0.4300000071525574,
+          0.12999999523162842
+        ],
+        [
+          2.7860716888929304e-17,
+          0.45500001311302185,
+          0.20000000298023224
+        ],
+        [
+          -0.19249999523162842,
+          0.3334197700023651,
+          0.07000000029802322
+        ],
+        [
+          -0.2150000035762787,
+          0.3723909258842468,
+          0.12999999523162842
+        ],
+        [
+          -0.22750000655651093,
+          0.3940415680408478,
+          0.20000000298023224
+        ],
+        [
+          -0.3334197700023651,
+          0.19249999523162842,
+          0.07000000029802322
+        ],
+        [
+          -0.3723909258842468,
+          0.2150000035762787,
+          0.12999999523162842
+        ],
+        [
+          -0.3940415680408478,
+          0.22750000655651093,
+          0.20000000298023224
+        ],
+        [
+          -0.38499999046325684,
+          4.7148901177551e-17,
+          0.07000000029802322
+        ],
+        [
+          -0.4300000071525574,
+          5.265981664639569e-17,
+          0.12999999523162842
+        ],
+        [
+          -0.45500001311302185,
+          5.572143377785861e-17,
+          0.20000000298023224
+        ],
+        [
+          -0.3334197700023651,
+          -0.19249999523162842,
+          0.07000000029802322
+        ],
+        [
+          -0.3723909258842468,
+          -0.2150000035762787,
+          0.12999999523162842
+        ],
+        [
+          -0.3940415680408478,
+          -0.22750000655651093,
+          0.20000000298023224
+        ],
+        [
+          -0.19249999523162842,
+          -0.3334197700023651,
+          0.07000000029802322
+        ],
+        [
+          -0.2150000035762787,
+          -0.3723909258842468,
+          0.12999999523162842
+        ],
+        [
+          -0.22750000655651093,
+          -0.3940415680408478,
+          0.20000000298023224
+        ],
+        [
+          -7.072334680324283e-17,
+          -0.38499999046325684,
+          0.07000000029802322
+        ],
+        [
+          -7.898972000650986e-17,
+          -0.4300000071525574,
+          0.12999999523162842
+        ],
+        [
+          -8.358214735806546e-17,
+          -0.45500001311302185,
+          0.20000000298023224
+        ],
+        [
+          0.19249999523162842,
+          -0.3334197700023651,
+          0.07000000029802322
+        ],
+        [
+          0.2150000035762787,
+          -0.3723909258842468,
+          0.12999999523162842
+        ],
+        [
+          0.22750000655651093,
+          -0.3940415680408478,
+          0.20000000298023224
+        ],
+        [
+          0.3334197700023651,
+          -0.19249999523162842,
+          0.07000000029802322
+        ],
+        [
+          0.3723909258842468,
+          -0.2150000035762787,
+          0.12999999523162842
+        ],
+        [
+          0.3940415680408478,
+          -0.22750000655651093,
+          0.20000000298023224
+        ]
+      ],
+      "horizontal_segment_relief": true,
+      "yaw_poses": [
+        {
+          "yaw_degrees": 0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.6075142025947571,
+                -0.06609109789133072,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6394886374473572,
+                0.11990411579608917,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.6075142025947571,
+                0.2939089238643646,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6394886374473572,
+                0.11990411579608917,
+                0.7593927383422852
+              ]
+            }
+          }
+        },
+        {
+          "yaw_degrees": 90,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.06609112024307251,
+                0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.11990407109260559,
+                0.6394886374473572,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.29390889406204224,
+                0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.11990407109260559,
+                0.6394886374473572,
+                0.7593927383422852
+              ]
+            }
+          }
+        },
+        {
+          "yaw_degrees": 180,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.6075142025947571,
+                0.0660911500453949,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6394886374473572,
+                -0.1199040561914444,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.6075142025947571,
+                -0.29390886425971985,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6394886374473572,
+                -0.1199040561914444,
+                0.7593927383422852
+              ]
+            }
+          }
+        },
+        {
+          "yaw_degrees": 270,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.06609107553958893,
+                -0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                0.11990416049957275,
+                -0.6394886374473572,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.293908953666687,
+                -0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                0.11990416049957275,
+                -0.6394886374473572,
+                0.7593927383422852
+              ]
+            }
+          }
+        }
+      ],
+      "preserved_two_lance_rig": true,
+      "packed_authored_wear": true
+    },
+    "retained_upper_details": {
+      "measured_dents": [
+        {
+          "name": "RI23 fixed green pedestal",
+          "depth": 0.002827609245386997
+        },
+        {
+          "name": "RI23 rotating green head",
+          "depth": 0.0019059530537706426
+        },
+        {
+          "name": "RI23 bronze lance -1",
+          "depth": 0.0013418665380750192
+        },
+        {
+          "name": "RI23 bronze lance 1",
+          "depth": 0.0013591400845389054
+        },
+        {
+          "name": "RI23 fixed bronze skirt",
+          "depth": 0.0019604808773101556
+        }
+      ],
+      "spur_root_and_front_strip_seated": true,
+      "front_fitting_root_samples": 32
+    },
+    "sampled_contact_graph": {
+      "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+      "tolerance": 0.0001,
+      "links": [
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 00"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 01"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 02"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 03"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 04"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 05"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 06"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 07"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 08"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 09"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 10"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 bronze skirt segment 11"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 00",
+          "RI23 bronze skirt segment 11"
+        ],
+        [
+          "RI23 bronze skirt segment 00",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 01",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 02",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 03",
+          "RI23 bronze skirt segment 04"
+        ],
+        [
+          "RI23 bronze skirt segment 03",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 04",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 05",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 06",
+          "RI23 bronze skirt segment 07"
+        ],
+        [
+          "RI23 bronze skirt segment 06",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 07",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 08",
+          "RI23 bronze skirt segment 09"
+        ],
+        [
+          "RI23 bronze skirt segment 08",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 09",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 10",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 11",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 fixed green pedestal",
+          "RI23 rotating green head"
+        ],
+        [
+          "RI23 fixed green pedestal",
+          "RI23 static yaw bearing"
+        ],
+        [
+          "RI23 fixed green pedestal",
+          "RI23 bronze front strip"
+        ],
+        [
+          "RI23 fixed green pedestal",
+          "RI23 base fitting bezel"
+        ],
+        [
+          "RI23 fixed green pedestal",
+          "RI23 fixed green spur"
+        ],
+        [
+          "RI23 rotating green head",
+          "RI23 bronze lance -1"
+        ],
+        [
+          "RI23 rotating green head",
+          "RI23 bronze lance 1"
+        ],
+        [
+          "RI23 rotating green head",
+          "RI23 static yaw bearing"
+        ],
+        [
+          "RI23 base fitting bezel",
+          "RI23 bronze base fitting"
+        ]
+      ],
+      "components": [
+        [
+          "RI23 base fitting bezel",
+          "RI23 bronze base fitting",
+          "RI23 bronze front strip",
+          "RI23 bronze lance -1",
+          "RI23 bronze lance 1",
+          "RI23 bronze skirt segment 00",
+          "RI23 bronze skirt segment 01",
+          "RI23 bronze skirt segment 02",
+          "RI23 bronze skirt segment 03",
+          "RI23 bronze skirt segment 04",
+          "RI23 bronze skirt segment 05",
+          "RI23 bronze skirt segment 06",
+          "RI23 bronze skirt segment 07",
+          "RI23 bronze skirt segment 08",
+          "RI23 bronze skirt segment 09",
+          "RI23 bronze skirt segment 10",
+          "RI23 bronze skirt segment 11",
+          "RI23 fixed bronze skirt",
+          "RI23 fixed green pedestal",
+          "RI23 fixed green spur",
+          "RI23 rotating green head",
+          "RI23 static yaw bearing"
+        ]
+      ],
+      "isolated": []
+    },
+    "texture_pixels_and_uvs": {
+      "materials": {
+        "RI23 | weathered green armour": {
+          "colour": "d2dad820d4f023b1f2bd08090504ca974de3bffe11d872f9223b4d34137d8dbd",
+          "roughness": "943519c70eda6baebac3b4c5fda7c750392a174b6030a280cc1ffa15fa3d62bd"
+        },
+        "RI23 | green planar caps": {
+          "colour": "119acee419c886124fffaa05292204556ce3ae14b1358cdbf8e172a4b273a9eb",
+          "roughness": "ed5c9208682feb2bc6ea82df6162c7b14569f97c0d79a6251a7a879e6047000c"
+        },
+        "RI23 | aged bronze fittings": {
+          "colour": "85a30b236e451b7aa7d10cd3ac3a5169dca6930cd45baabe7ae52f37a2127ab0",
+          "roughness": "943519c70eda6baebac3b4c5fda7c750392a174b6030a280cc1ffa15fa3d62bd"
+        },
+        "RI23 | bronze planar caps": {
+          "colour": "4f570ee5731445d7719999c1fcb1e0b7be1460b60d8f8a0f35aee5c0ba402a5c",
+          "roughness": "ed5c9208682feb2bc6ea82df6162c7b14569f97c0d79a6251a7a879e6047000c"
+        },
+        "RI23 | worn recessed bronze skirt": {
+          "colour": "5b3572c5392c8bd8bf96309e09151c446001b7cd0bcdd2e2bdaa8e5eb3a677f9",
+          "roughness": "943519c70eda6baebac3b4c5fda7c750392a174b6030a280cc1ffa15fa3d62bd"
+        }
+      },
+      "planar_cap_surfaces": 8
+    },
+    "yaw_validation": {
+      "poses": [
+        {
+          "index": 0,
+          "authored_yaw_degrees": 0.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.6075142025947571,
+                -0.06609109789133072,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6394885778427124,
+                0.11990412324666977,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.6075142025947571,
+                0.2939089238643646,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6394885778427124,
+                0.11990412324666977,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.3600000046690305,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.18428866565227509,
+              -0.7463860511779785,
+              0.6394885182380676,
+              0.0,
+              0.9828721880912781,
+              -0.1399475783109665,
+              0.11990407854318619,
+              -0.18000000715255737,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.18428866565227509,
+              -0.7463860511779785,
+              0.6394885182380676,
+              0.0,
+              0.9828721880912781,
+              -0.1399475783109665,
+              0.11990407854318619,
+              0.18000000715255737,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 1,
+          "authored_yaw_degrees": 22.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.586561918258667,
+                0.17142535746097565,
+                1.891422986984253
+              ],
+              "forward": [
+                0.5449250936508179,
+                0.35549861192703247,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.448795884847641,
+                0.5040220022201538,
+                1.891422986984253
+              ],
+              "forward": [
+                0.5449250936508179,
+                0.35549861192703247,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.36000002277807985,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.9238795638084412,
+              -0.3826833665370941,
+              0.0,
+              0.0,
+              0.3826833665370941,
+              0.9238795638084412,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.5463894009590149,
+              -0.6360152363777161,
+              0.5449250936508179,
+              0.0688830092549324,
+              0.837531328201294,
+              -0.4149242639541626,
+              0.3554985523223877,
+              -0.16629832983016968,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.5463894009590149,
+              -0.6360152363777161,
+              0.5449250936508179,
+              -0.0688830092549324,
+              0.837531328201294,
+              -0.4149242639541626,
+              0.3554985523223877,
+              0.16629832983016968,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 2,
+          "authored_yaw_degrees": 45.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.4763108789920807,
+                0.3828439712524414,
+                1.891422986984253
+              ],
+              "forward": [
+                0.36740168929100037,
+                0.5369717478752136,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.22175240516662598,
+                0.6374024152755737,
+                1.891422986984253
+              ],
+              "forward": [
+                0.36740168929100037,
+                0.5369717478752136,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.36000002536508685,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.7071067690849304,
+              -0.7071068286895752,
+              0.0,
+              0.0,
+              0.7071068286895752,
+              0.7071067690849304,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.8253073692321777,
+              -0.4288167357444763,
+              0.36740168929100037,
+              0.12727923691272736,
+              0.5646837949752808,
+              -0.626732587814331,
+              0.5369716882705688,
+              -0.12727922201156616,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.8253073692321777,
+              -0.4288167357444763,
+              0.36740168929100037,
+              -0.12727923691272736,
+              0.5646837949752808,
+              -0.626732587814331,
+              0.5369716882705688,
+              0.12727922201156616,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 3,
+          "authored_yaw_degrees": 67.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.2935459017753601,
+                0.5359780192375183,
+                1.891422986984253
+              ],
+              "forward": [
+                0.1339447796344757,
+                0.6366958022117615,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.039050787687301636,
+                0.6737440824508667,
+                1.891422986984253
+              ],
+              "forward": [
+                0.1339447796344757,
+                0.6366958022117615,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.36000006417018926,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.38268354535102844,
+              -0.9238796234130859,
+              0.0,
+              0.0,
+              0.9238796234130859,
+              0.38268354535102844,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.9785798192024231,
+              -0.15633493661880493,
+              0.1339448094367981,
+              0.16629834473133087,
+              0.2058684527873993,
+              -0.7431264519691467,
+              0.6366957426071167,
+              -0.06888303905725479,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.9785798192024231,
+              -0.15633493661880493,
+              0.1339448094367981,
+              -0.16629834473133087,
+              0.2058684527873993,
+              -0.7431264519691467,
+              0.6366957426071167,
+              0.06888303905725479,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 4,
+          "authored_yaw_degrees": 90.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.06609112024307251,
+                0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.11990410089492798,
+                0.6394885778427124,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.29390889406204224,
+                0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.11990410089492798,
+                0.6394885778427124,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.3600000046690305,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              3.422854177870249e-08,
+              -1.0,
+              0.0,
+              0.0,
+              1.0,
+              3.422854177870249e-08,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.9828721880912781,
+              0.1399475485086441,
+              -0.1199040561914444,
+              0.18000000715255737,
+              -0.1842886358499527,
+              -0.7463860511779785,
+              0.6394885182380676,
+              -6.161137822147111e-09,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.9828721880912781,
+              0.1399475485086441,
+              -0.1199040561914444,
+              -0.18000000715255737,
+              -0.1842886358499527,
+              -0.7463860511779785,
+              0.6394885182380676,
+              6.161137822147111e-09,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 5,
+          "authored_yaw_degrees": 112.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.1714254915714264,
+                0.586561918258667,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.355498731136322,
+                0.5449250936508179,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.5040221214294434,
+                0.4487958252429962,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.355498731136322,
+                0.5449250936508179,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.36000002536508685,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.38268357515335083,
+              -0.9238795042037964,
+              0.0,
+              0.0,
+              0.9238795042037964,
+              -0.38268357515335083,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.8375312089920044,
+              0.41492438316345215,
+              -0.35549867153167725,
+              0.16629831492900848,
+              -0.5463895797729492,
+              -0.6360151171684265,
+              0.5449250340461731,
+              0.06888304650783539,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.8375312089920044,
+              0.41492438316345215,
+              -0.35549867153167725,
+              -0.16629831492900848,
+              -0.5463895797729492,
+              -0.6360151171684265,
+              0.5449250340461731,
+              -0.06888304650783539,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 6,
+          "authored_yaw_degrees": 135.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.3828440308570862,
+                0.47631075978279114,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.5369718074798584,
+                0.3674015402793884,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.6374024152755737,
+                0.22175227105617523,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.5369718074798584,
+                0.3674015402793884,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.3600000046690305,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.70710688829422,
+              -0.7071065902709961,
+              0.0,
+              0.0,
+              0.7071065902709961,
+              -0.70710688829422,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.5646836161613464,
+              0.6267325282096863,
+              -0.5369716882705688,
+              0.12727919220924377,
+              -0.8253074288368225,
+              -0.42881661653518677,
+              0.3674015402793884,
+              0.12727925181388855,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.5646836161613464,
+              0.6267325282096863,
+              -0.5369716882705688,
+              -0.12727919220924377,
+              -0.8253074288368225,
+              -0.42881661653518677,
+              0.3674015402793884,
+              -0.12727925181388855,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 7,
+          "authored_yaw_degrees": 157.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.5359781384468079,
+                0.2935459613800049,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6366958618164062,
+                0.13394474983215332,
+                0.7593926191329956
+              ]
+            },
+            "1": {
+              "position": [
+                -0.673744261264801,
+                -0.03905081748962402,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6366958618164062,
+                0.13394474983215332,
+                0.7593926191329956
+              ]
+            }
+          },
+          "tip_separation": 0.36000017023744796,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.923879861831665,
+              -0.38268357515335083,
+              0.0,
+              0.0,
+              0.38268357515335083,
+              -0.923879861831665,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.2058684378862381,
+              0.7431266903877258,
+              -0.6366958618164062,
+              0.06888304650783539,
+              -0.978580117225647,
+              -0.15633493661880493,
+              0.1339447945356369,
+              0.16629837453365326,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.2058684378862381,
+              0.7431266903877258,
+              -0.6366958618164062,
+              -0.06888304650783539,
+              -0.978580117225647,
+              -0.15633493661880493,
+              0.1339447945356369,
+              -0.16629837453365326,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 8,
+          "authored_yaw_degrees": 180.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.6075142025947571,
+                0.0660911500453949,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6394885778427124,
+                -0.119904063642025,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.6075142025947571,
+                -0.29390886425971985,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6394885778427124,
+                -0.119904063642025,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.3600000046690305,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -1.0,
+              -8.742277657347586e-08,
+              0.0,
+              0.0,
+              8.742277657347586e-08,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.18428857624530792,
+              0.7463860511779785,
+              -0.6394885182380676,
+              1.5736100422714117e-08,
+              -0.9828721880912781,
+              0.13994751870632172,
+              -0.11990401893854141,
+              0.18000000715255737,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.18428857624530792,
+              0.7463860511779785,
+              -0.6394885182380676,
+              -1.5736100422714117e-08,
+              -0.9828721880912781,
+              0.13994751870632172,
+              -0.11990401893854141,
+              -0.18000000715255737,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 9,
+          "authored_yaw_degrees": 202.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.586561918258667,
+                -0.17142517864704132,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.5449252128601074,
+                -0.35549843311309814,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.44879603385925293,
+                -0.5040218830108643,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.5449252128601074,
+                -0.35549843311309814,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.3600000279520938,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.9238796234130859,
+              0.38268306851387024,
+              0.0,
+              0.0,
+              -0.38268306851387024,
+              -0.9238796234130859,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.546389102935791,
+              0.6360152959823608,
+              -0.5449251532554626,
+              -0.06888295710086823,
+              -0.8375314474105835,
+              0.4149240255355835,
+              -0.35549837350845337,
+              0.16629834473133087,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.546389102935791,
+              0.6360152959823608,
+              -0.5449251532554626,
+              0.06888295710086823,
+              -0.8375314474105835,
+              0.4149240255355835,
+              -0.35549837350845337,
+              -0.16629834473133087,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 10,
+          "authored_yaw_degrees": 225.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.4763109087944031,
+                -0.38284382224082947,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.3674018085002899,
+                -0.5369716286659241,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.22175253927707672,
+                -0.6374022960662842,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.3674018085002899,
+                -0.5369716286659241,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.35999998397297295,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.70710688829422,
+              0.7071065902709961,
+              0.0,
+              0.0,
+              -0.7071065902709961,
+              -0.70710688829422,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.8253071904182434,
+              0.42881685495376587,
+              -0.36740177869796753,
+              -0.12727919220924377,
+              -0.5646839737892151,
+              0.6267324090003967,
+              -0.5369715690612793,
+              0.12727925181388855,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.8253071904182434,
+              0.42881685495376587,
+              -0.36740177869796753,
+              0.12727919220924377,
+              -0.5646839737892151,
+              0.6267324090003967,
+              -0.5369715690612793,
+              -0.12727925181388855,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 11,
+          "authored_yaw_degrees": 247.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.2935459315776825,
+                -0.5359779596328735,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.1339448094367981,
+                -0.6366957426071167,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.03905072808265686,
+                -0.6737440824508667,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.1339448094367981,
+                -0.6366957426071167,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.3600000564091691,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.38268357515335083,
+              0.9238795042037964,
+              0.0,
+              0.0,
+              -0.9238795042037964,
+              -0.38268357515335083,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.9785797595977783,
+              0.1563349962234497,
+              -0.13394483923912048,
+              -0.16629831492900848,
+              -0.20586851239204407,
+              0.7431264519691467,
+              -0.6366956830024719,
+              0.06888304650783539,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.9785797595977783,
+              0.1563349962234497,
+              -0.13394483923912048,
+              0.16629831492900848,
+              -0.20586851239204407,
+              0.7431264519691467,
+              -0.6366956830024719,
+              -0.06888304650783539,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 12,
+          "authored_yaw_degrees": 270.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.06609107553958893,
+                -0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                0.11990414559841156,
+                -0.6394885778427124,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.293908953666687,
+                -0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                0.11990414559841156,
+                -0.6394885778427124,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.3600000046690305,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              3.422854177870249e-08,
+              1.0,
+              0.0,
+              0.0,
+              -1.0,
+              3.422854177870249e-08,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.9828721880912781,
+              -0.13994760811328888,
+              0.11990410089492798,
+              -0.18000000715255737,
+              0.18428869545459747,
+              0.7463860511779785,
+              -0.6394885182380676,
+              -6.161137822147111e-09,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.9828721880912781,
+              -0.13994760811328888,
+              0.11990410089492798,
+              0.18000000715255737,
+              0.18428869545459747,
+              0.7463860511779785,
+              -0.6394885182380676,
+              6.161137822147111e-09,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 13,
+          "authored_yaw_degrees": 292.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.171425461769104,
+                -0.5865619778633118,
+                1.891422986984253
+              ],
+              "forward": [
+                0.355498731136322,
+                -0.5449251532554626,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.5040221214294434,
+                -0.448795884847641,
+                1.891422986984253
+              ],
+              "forward": [
+                0.355498731136322,
+                -0.5449251532554626,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.360000046061142,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.38268354535102844,
+              0.9238796234130859,
+              0.0,
+              0.0,
+              -0.9238796234130859,
+              0.38268354535102844,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.8375313878059387,
+              -0.41492438316345215,
+              0.35549867153167725,
+              -0.16629834473133087,
+              0.5463895797729492,
+              0.6360152363777161,
+              -0.5449250936508179,
+              -0.06888303905725479,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.8375313878059387,
+              -0.41492438316345215,
+              0.35549867153167725,
+              0.16629834473133087,
+              0.5463895797729492,
+              0.6360152363777161,
+              -0.5449250936508179,
+              0.06888303905725479,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 14,
+          "authored_yaw_degrees": 315.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.38284364342689514,
+                -0.4763110876083374,
+                1.891422986984253
+              ],
+              "forward": [
+                0.5369715094566345,
+                -0.36740201711654663,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.6374022364616394,
+                -0.22175277769565582,
+                1.891422986984253
+              ],
+              "forward": [
+                0.5369715094566345,
+                -0.36740201711654663,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.36000002536508685,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.707106351852417,
+              0.7071071863174438,
+              0.0,
+              0.0,
+              -0.7071071863174438,
+              0.707106351852417,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.5646843314170837,
+              -0.6267322897911072,
+              0.5369714498519897,
+              -0.12727929651737213,
+              0.8253070116043091,
+              0.42881709337234497,
+              -0.36740198731422424,
+              -0.1272791475057602,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.5646843314170837,
+              -0.6267322897911072,
+              0.5369714498519897,
+              0.12727929651737213,
+              0.8253070116043091,
+              0.42881709337234497,
+              -0.36740198731422424,
+              0.1272791475057602,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 15,
+          "authored_yaw_degrees": 337.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.535977840423584,
+                -0.29354605078697205,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6366956830024719,
+                -0.13394498825073242,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.6737440228462219,
+                0.03905056416988373,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6366956830024719,
+                -0.13394498825073242,
+                0.7593927383422852
+              ]
+            }
+          },
+          "tip_separation": 0.3600000279520938,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.9238793849945068,
+              0.38268381357192993,
+              0.0,
+              0.0,
+              -0.38268381357192993,
+              0.9238793849945068,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.20586876571178436,
+              -0.7431263327598572,
+              0.6366955637931824,
+              -0.06888309121131897,
+              0.9785796403884888,
+              0.15633518993854523,
+              -0.13394498825073242,
+              -0.1662983000278473,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.20586876571178436,
+              -0.7431263327598572,
+              0.6366955637931824,
+              0.06888309121131897,
+              0.9785796403884888,
+              0.15633518993854523,
+              -0.13394498825073242,
+              0.1662983000278473,
+              1.3652200436808926e-07,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        }
+      ],
+      "maximum_socket_error": 2.4027400458748785e-07,
+      "fixed_base_unchanged": true,
+      "model_yaw_phase_sign_calibrated": false,
+      "continuous_collision_sweep_proven": false
+    }
+  },
+  "imported": {
+    "positive_closed_meshes": 22,
+    "body_bounds": [
+      -0.49000000953674316,
+      -0.5027174949645996,
+      0.0,
+      0.614433228969574,
+      0.49000000953674316,
+      1.8972787857055664
+    ],
+    "retained_refined_foot": {
+      "positive_closed_meshes": 22,
+      "tapered_foot_radius_ratio": 0.5434782509162984,
+      "segment_root_contacts": [
+        [
+          0.38499999046325684,
+          0.0,
+          0.07000000029802322
+        ],
+        [
+          0.4300000071525574,
+          0.0,
+          0.12999999523162842
+        ],
+        [
+          0.45500001311302185,
+          0.0,
+          0.20000000298023224
+        ],
+        [
+          0.3334197700023651,
+          0.19249999523162842,
+          0.07000000029802322
+        ],
+        [
+          0.3723909258842468,
+          0.2150000035762787,
+          0.12999999523162842
+        ],
+        [
+          0.3940415680408478,
+          0.22750000655651093,
+          0.20000000298023224
+        ],
+        [
+          0.19249999523162842,
+          0.3334197700023651,
+          0.07000000029802322
+        ],
+        [
+          0.2150000035762787,
+          0.3723909258842468,
+          0.12999999523162842
+        ],
+        [
+          0.22750000655651093,
+          0.3940415680408478,
+          0.20000000298023224
+        ],
+        [
+          2.35744505887755e-17,
+          0.38499999046325684,
+          0.07000000029802322
+        ],
+        [
+          2.6329908323197844e-17,
+          0.4300000071525574,
+          0.12999999523162842
+        ],
+        [
+          2.7860716888929304e-17,
+          0.45500001311302185,
+          0.20000000298023224
+        ],
+        [
+          -0.19249999523162842,
+          0.3334197700023651,
+          0.07000000029802322
+        ],
+        [
+          -0.2150000035762787,
+          0.3723909258842468,
+          0.12999999523162842
+        ],
+        [
+          -0.22750000655651093,
+          0.3940415680408478,
+          0.20000000298023224
+        ],
+        [
+          -0.3334197700023651,
+          0.19249999523162842,
+          0.07000000029802322
+        ],
+        [
+          -0.3723909258842468,
+          0.2150000035762787,
+          0.12999999523162842
+        ],
+        [
+          -0.3940415680408478,
+          0.22750000655651093,
+          0.20000000298023224
+        ],
+        [
+          -0.38499999046325684,
+          4.7148901177551e-17,
+          0.07000000029802322
+        ],
+        [
+          -0.4300000071525574,
+          5.265981664639569e-17,
+          0.12999999523162842
+        ],
+        [
+          -0.45500001311302185,
+          5.572143377785861e-17,
+          0.20000000298023224
+        ],
+        [
+          -0.3334197700023651,
+          -0.19249999523162842,
+          0.07000000029802322
+        ],
+        [
+          -0.3723909258842468,
+          -0.2150000035762787,
+          0.12999999523162842
+        ],
+        [
+          -0.3940415680408478,
+          -0.22750000655651093,
+          0.20000000298023224
+        ],
+        [
+          -0.19249999523162842,
+          -0.3334197700023651,
+          0.07000000029802322
+        ],
+        [
+          -0.2150000035762787,
+          -0.3723909258842468,
+          0.12999999523162842
+        ],
+        [
+          -0.22750000655651093,
+          -0.3940415680408478,
+          0.20000000298023224
+        ],
+        [
+          -7.072334680324283e-17,
+          -0.38499999046325684,
+          0.07000000029802322
+        ],
+        [
+          -7.898972000650986e-17,
+          -0.4300000071525574,
+          0.12999999523162842
+        ],
+        [
+          -8.358214735806546e-17,
+          -0.45500001311302185,
+          0.20000000298023224
+        ],
+        [
+          0.19249999523162842,
+          -0.3334197700023651,
+          0.07000000029802322
+        ],
+        [
+          0.2150000035762787,
+          -0.3723909258842468,
+          0.12999999523162842
+        ],
+        [
+          0.22750000655651093,
+          -0.3940415680408478,
+          0.20000000298023224
+        ],
+        [
+          0.3334197700023651,
+          -0.19249999523162842,
+          0.07000000029802322
+        ],
+        [
+          0.3723909258842468,
+          -0.2150000035762787,
+          0.12999999523162842
+        ],
+        [
+          0.3940415680408478,
+          -0.22750000655651093,
+          0.20000000298023224
+        ]
+      ],
+      "horizontal_segment_relief": true,
+      "yaw_poses": [
+        {
+          "yaw_degrees": 0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.6075142025947571,
+                -0.06609109789133072,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6394886374473572,
+                0.11990411579608917,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.6075142025947571,
+                0.2939089238643646,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6394886374473572,
+                0.11990411579608917,
+                0.7593927383422852
+              ]
+            }
+          }
+        },
+        {
+          "yaw_degrees": 90,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.06609112024307251,
+                0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.11990407109260559,
+                0.6394886374473572,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.29390889406204224,
+                0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.11990407109260559,
+                0.6394886374473572,
+                0.7593927383422852
+              ]
+            }
+          }
+        },
+        {
+          "yaw_degrees": 180,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.6075142025947571,
+                0.0660911500453949,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6394886374473572,
+                -0.1199040561914444,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                -0.6075142025947571,
+                -0.29390886425971985,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6394886374473572,
+                -0.1199040561914444,
+                0.7593927383422852
+              ]
+            }
+          }
+        },
+        {
+          "yaw_degrees": 270,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.06609107553958893,
+                -0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                0.11990416049957275,
+                -0.6394886374473572,
+                0.7593927383422852
+              ]
+            },
+            "1": {
+              "position": [
+                0.293908953666687,
+                -0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                0.11990416049957275,
+                -0.6394886374473572,
+                0.7593927383422852
+              ]
+            }
+          }
+        }
+      ],
+      "preserved_two_lance_rig": true,
+      "packed_authored_wear": true
+    },
+    "retained_upper_details": {
+      "measured_dents": [
+        {
+          "name": "RI23 fixed green pedestal",
+          "depth": 0.002827609245386997
+        },
+        {
+          "name": "RI23 rotating green head",
+          "depth": 0.0019059530537706426
+        },
+        {
+          "name": "RI23 bronze lance -1",
+          "depth": 0.0013418418014578548
+        },
+        {
+          "name": "RI23 bronze lance 1",
+          "depth": 0.0013595998463028017
+        },
+        {
+          "name": "RI23 fixed bronze skirt",
+          "depth": 0.0019604808773101556
+        }
+      ],
+      "spur_root_and_front_strip_seated": true,
+      "front_fitting_root_samples": 32
+    },
+    "sampled_contact_graph": {
+      "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+      "tolerance": 0.0001,
+      "links": [
+        [
+          "RI23 base fitting bezel",
+          "RI23 bronze base fitting"
+        ],
+        [
+          "RI23 base fitting bezel",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze front strip",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 00",
+          "RI23 bronze skirt segment 01"
+        ],
+        [
+          "RI23 bronze skirt segment 00",
+          "RI23 bronze skirt segment 11"
+        ],
+        [
+          "RI23 bronze skirt segment 00",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 00",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 01",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 01",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 02",
+          "RI23 bronze skirt segment 03"
+        ],
+        [
+          "RI23 bronze skirt segment 02",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 02",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 03",
+          "RI23 bronze skirt segment 04"
+        ],
+        [
+          "RI23 bronze skirt segment 03",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 03",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 04",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 04",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 05",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 05",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 06",
+          "RI23 bronze skirt segment 07"
+        ],
+        [
+          "RI23 bronze skirt segment 06",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 06",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 07",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 07",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 08",
+          "RI23 bronze skirt segment 09"
+        ],
+        [
+          "RI23 bronze skirt segment 08",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 08",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 09",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 09",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 10",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 10",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 bronze skirt segment 11",
+          "RI23 fixed bronze skirt"
+        ],
+        [
+          "RI23 bronze skirt segment 11",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 fixed bronze skirt",
+          "RI23 fixed green pedestal"
+        ],
+        [
+          "RI23 fixed green pedestal",
+          "RI23 fixed green spur"
+        ],
+        [
+          "RI23 fixed green pedestal",
+          "RI23 static yaw bearing"
+        ],
+        [
+          "RI23 fixed green pedestal",
+          "RI23 rotating green head"
+        ],
+        [
+          "RI23 static yaw bearing",
+          "RI23 rotating green head"
+        ],
+        [
+          "RI23 bronze lance -1",
+          "RI23 rotating green head"
+        ],
+        [
+          "RI23 bronze lance 1",
+          "RI23 rotating green head"
+        ]
+      ],
+      "components": [
+        [
+          "RI23 base fitting bezel",
+          "RI23 bronze base fitting",
+          "RI23 bronze front strip",
+          "RI23 bronze lance -1",
+          "RI23 bronze lance 1",
+          "RI23 bronze skirt segment 00",
+          "RI23 bronze skirt segment 01",
+          "RI23 bronze skirt segment 02",
+          "RI23 bronze skirt segment 03",
+          "RI23 bronze skirt segment 04",
+          "RI23 bronze skirt segment 05",
+          "RI23 bronze skirt segment 06",
+          "RI23 bronze skirt segment 07",
+          "RI23 bronze skirt segment 08",
+          "RI23 bronze skirt segment 09",
+          "RI23 bronze skirt segment 10",
+          "RI23 bronze skirt segment 11",
+          "RI23 fixed bronze skirt",
+          "RI23 fixed green pedestal",
+          "RI23 fixed green spur",
+          "RI23 rotating green head",
+          "RI23 static yaw bearing"
+        ]
+      ],
+      "isolated": []
+    },
+    "texture_pixels_and_uvs": {
+      "materials": {
+        "RI23 | weathered green armour": {
+          "colour": "d2dad820d4f023b1f2bd08090504ca974de3bffe11d872f9223b4d34137d8dbd",
+          "roughness": "943519c70eda6baebac3b4c5fda7c750392a174b6030a280cc1ffa15fa3d62bd"
+        },
+        "RI23 | green planar caps": {
+          "colour": "119acee419c886124fffaa05292204556ce3ae14b1358cdbf8e172a4b273a9eb",
+          "roughness": "ed5c9208682feb2bc6ea82df6162c7b14569f97c0d79a6251a7a879e6047000c"
+        },
+        "RI23 | aged bronze fittings": {
+          "colour": "85a30b236e451b7aa7d10cd3ac3a5169dca6930cd45baabe7ae52f37a2127ab0",
+          "roughness": "943519c70eda6baebac3b4c5fda7c750392a174b6030a280cc1ffa15fa3d62bd"
+        },
+        "RI23 | bronze planar caps": {
+          "colour": "4f570ee5731445d7719999c1fcb1e0b7be1460b60d8f8a0f35aee5c0ba402a5c",
+          "roughness": "ed5c9208682feb2bc6ea82df6162c7b14569f97c0d79a6251a7a879e6047000c"
+        },
+        "RI23 | worn recessed bronze skirt": {
+          "colour": "5b3572c5392c8bd8bf96309e09151c446001b7cd0bcdd2e2bdaa8e5eb3a677f9",
+          "roughness": "943519c70eda6baebac3b4c5fda7c750392a174b6030a280cc1ffa15fa3d62bd"
+        }
+      },
+      "planar_cap_surfaces": 8
+    },
+    "yaw_validation": {
+      "poses": [
+        {
+          "index": 0,
+          "authored_yaw_degrees": 0.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.6075142025947571,
+                -0.06609109789133072,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6394885182380676,
+                0.11990410089492798,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                0.6075142025947571,
+                0.2939089238643646,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6394885182380676,
+                0.11990410089492798,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.3600000046690305,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.18428868055343628,
+              -0.7463861107826233,
+              0.6394885182380676,
+              0.0,
+              0.9828721880912781,
+              -0.1399475634098053,
+              0.11990409344434738,
+              -0.18000000715255737,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.18428868055343628,
+              -0.7463861107826233,
+              0.6394885182380676,
+              0.0,
+              0.9828721880912781,
+              -0.1399475634098053,
+              0.11990409344434738,
+              0.18000000715255737,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 1,
+          "authored_yaw_degrees": 22.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.586561918258667,
+                0.17142535746097565,
+                1.891422986984253
+              ],
+              "forward": [
+                0.5449250936508179,
+                0.3554985821247101,
+                0.7593929171562195
+              ]
+            },
+            "1": {
+              "position": [
+                0.448795884847641,
+                0.5040220022201538,
+                1.891422986984253
+              ],
+              "forward": [
+                0.5449250936508179,
+                0.3554985821247101,
+                0.7593929171562195
+              ]
+            }
+          },
+          "tip_separation": 0.36000002277807985,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.9238795638084412,
+              -0.3826833665370941,
+              0.0,
+              0.0,
+              0.3826833665370941,
+              0.9238795638084412,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.5463894009590149,
+              -0.6360152959823608,
+              0.5449250340461731,
+              0.0688830092549324,
+              0.837531328201294,
+              -0.4149242341518402,
+              0.3554985523223877,
+              -0.16629832983016968,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.5463894009590149,
+              -0.6360152959823608,
+              0.5449250340461731,
+              -0.0688830092549324,
+              0.837531328201294,
+              -0.4149242341518402,
+              0.3554985523223877,
+              0.16629832983016968,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 2,
+          "authored_yaw_degrees": 45.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.4763108789920807,
+                0.3828439712524414,
+                1.891422986984253
+              ],
+              "forward": [
+                0.367401659488678,
+                0.5369716882705688,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                0.22175240516662598,
+                0.6374024152755737,
+                1.891422986984253
+              ],
+              "forward": [
+                0.367401659488678,
+                0.5369716882705688,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.36000002536508685,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.7071067690849304,
+              -0.7071068286895752,
+              0.0,
+              0.0,
+              0.7071068286895752,
+              0.7071067690849304,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.8253074288368225,
+              -0.4288167953491211,
+              0.367401659488678,
+              0.12727923691272736,
+              0.5646837949752808,
+              -0.626732587814331,
+              0.5369716882705688,
+              -0.12727922201156616,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.8253074288368225,
+              -0.4288167953491211,
+              0.367401659488678,
+              -0.12727923691272736,
+              0.5646837949752808,
+              -0.626732587814331,
+              0.5369716882705688,
+              0.12727922201156616,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 3,
+          "authored_yaw_degrees": 67.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.2935459017753601,
+                0.5359780192375183,
+                1.891422986984253
+              ],
+              "forward": [
+                0.1339447796344757,
+                0.6366957426071167,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                -0.039050787687301636,
+                0.6737440824508667,
+                1.891422986984253
+              ],
+              "forward": [
+                0.1339447796344757,
+                0.6366957426071167,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.36000006417018926,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.38268354535102844,
+              -0.9238796234130859,
+              0.0,
+              0.0,
+              0.9238796234130859,
+              0.38268354535102844,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.9785798788070679,
+              -0.1563349813222885,
+              0.1339447945356369,
+              0.16629834473133087,
+              0.2058684378862381,
+              -0.7431265115737915,
+              0.6366957426071167,
+              -0.06888303905725479,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.9785798788070679,
+              -0.1563349813222885,
+              0.1339447945356369,
+              -0.16629834473133087,
+              0.2058684378862381,
+              -0.7431265115737915,
+              0.6366957426071167,
+              0.06888303905725479,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 4,
+          "authored_yaw_degrees": 90.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.06609112024307251,
+                0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.11990407854318619,
+                0.6394885182380676,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                -0.29390889406204224,
+                0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.11990407854318619,
+                0.6394885182380676,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.3600000046690305,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              3.422854177870249e-08,
+              -1.0,
+              0.0,
+              0.0,
+              1.0,
+              3.422854177870249e-08,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.9828721880912781,
+              0.1399475336074829,
+              -0.11990407109260559,
+              0.18000000715255737,
+              -0.1842886507511139,
+              -0.7463861107826233,
+              0.6394885182380676,
+              -6.161137822147111e-09,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.9828721880912781,
+              0.1399475336074829,
+              -0.11990407109260559,
+              -0.18000000715255737,
+              -0.1842886507511139,
+              -0.7463861107826233,
+              0.6394885182380676,
+              6.161137822147111e-09,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 5,
+          "authored_yaw_degrees": 112.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.1714254915714264,
+                0.586561918258667,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.35549870133399963,
+                0.5449250340461731,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                -0.5040221214294434,
+                0.4487958252429962,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.35549870133399963,
+                0.5449250340461731,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.36000002536508685,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.38268357515335083,
+              -0.9238795042037964,
+              0.0,
+              0.0,
+              0.9238795042037964,
+              -0.38268357515335083,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.8375312089920044,
+              0.41492438316345215,
+              -0.35549867153167725,
+              0.16629831492900848,
+              -0.5463895797729492,
+              -0.6360152363777161,
+              0.5449250340461731,
+              0.06888304650783539,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.8375312089920044,
+              0.41492438316345215,
+              -0.35549867153167725,
+              -0.16629831492900848,
+              -0.5463895797729492,
+              -0.6360152363777161,
+              0.5449250340461731,
+              -0.06888304650783539,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 6,
+          "authored_yaw_degrees": 135.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.3828440308570862,
+                0.47631075978279114,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.5369717478752136,
+                0.3674015700817108,
+                0.7593929171562195
+              ]
+            },
+            "1": {
+              "position": [
+                -0.6374024152755737,
+                0.22175227105617523,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.5369717478752136,
+                0.3674015700817108,
+                0.7593929171562195
+              ]
+            }
+          },
+          "tip_separation": 0.3600000046690305,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.70710688829422,
+              -0.7071065902709961,
+              0.0,
+              0.0,
+              0.7071065902709961,
+              -0.70710688829422,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.5646836161613464,
+              0.626732587814331,
+              -0.5369716882705688,
+              0.12727919220924377,
+              -0.8253074288368225,
+              -0.42881661653518677,
+              0.3674015402793884,
+              0.12727925181388855,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.5646836161613464,
+              0.626732587814331,
+              -0.5369716882705688,
+              -0.12727919220924377,
+              -0.8253074288368225,
+              -0.42881661653518677,
+              0.3674015402793884,
+              -0.12727925181388855,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 7,
+          "authored_yaw_degrees": 157.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.5359781384468079,
+                0.2935459613800049,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6366958022117615,
+                0.13394476473331451,
+                0.7593926787376404
+              ]
+            },
+            "1": {
+              "position": [
+                -0.673744261264801,
+                -0.03905081748962402,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6366958022117615,
+                0.13394476473331451,
+                0.7593926787376404
+              ]
+            }
+          },
+          "tip_separation": 0.36000017023744796,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.923879861831665,
+              -0.38268357515335083,
+              0.0,
+              0.0,
+              0.38268357515335083,
+              -0.923879861831665,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              -0.2058684378862381,
+              0.7431266903877258,
+              -0.6366958618164062,
+              0.06888304650783539,
+              -0.978580117225647,
+              -0.1563349813222885,
+              0.1339447796344757,
+              0.16629837453365326,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              -0.2058684378862381,
+              0.7431266903877258,
+              -0.6366958618164062,
+              -0.06888304650783539,
+              -0.978580117225647,
+              -0.1563349813222885,
+              0.1339447796344757,
+              -0.16629837453365326,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 8,
+          "authored_yaw_degrees": 180.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.6075142025947571,
+                0.0660911500453949,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6394885182380676,
+                -0.1199040412902832,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                -0.6075142025947571,
+                -0.29390886425971985,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.6394885182380676,
+                -0.1199040412902832,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.3600000046690305,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -1.0,
+              -8.742277657347586e-08,
+              0.0,
+              0.0,
+              8.742277657347586e-08,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.18428859114646912,
+              0.7463861107826233,
+              -0.6394885182380676,
+              1.5736100422714117e-08,
+              -0.9828721880912781,
+              0.13994750380516052,
+              -0.1199040338397026,
+              0.18000000715255737,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.18428859114646912,
+              0.7463861107826233,
+              -0.6394885182380676,
+              -1.5736100422714117e-08,
+              -0.9828721880912781,
+              0.13994750380516052,
+              -0.1199040338397026,
+              -0.18000000715255737,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 9,
+          "authored_yaw_degrees": 202.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.586561918258667,
+                -0.17142517864704132,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.5449252128601074,
+                -0.35549840331077576,
+                0.7593929171562195
+              ]
+            },
+            "1": {
+              "position": [
+                -0.44879603385925293,
+                -0.5040218830108643,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.5449252128601074,
+                -0.35549840331077576,
+                0.7593929171562195
+              ]
+            }
+          },
+          "tip_separation": 0.3600000279520938,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.9238796234130859,
+              0.38268306851387024,
+              0.0,
+              0.0,
+              -0.38268306851387024,
+              -0.9238796234130859,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.546389102935791,
+              0.6360153555870056,
+              -0.5449251532554626,
+              -0.06888295710086823,
+              -0.8375314474105835,
+              0.4149240255355835,
+              -0.35549837350845337,
+              0.16629834473133087,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.546389102935791,
+              0.6360153555870056,
+              -0.5449251532554626,
+              0.06888295710086823,
+              -0.8375314474105835,
+              0.4149240255355835,
+              -0.35549837350845337,
+              -0.16629834473133087,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 10,
+          "authored_yaw_degrees": 225.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.4763109087944031,
+                -0.38284382224082947,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.36740177869796753,
+                -0.5369716286659241,
+                0.7593929171562195
+              ]
+            },
+            "1": {
+              "position": [
+                -0.22175253927707672,
+                -0.6374022960662842,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.36740177869796753,
+                -0.5369716286659241,
+                0.7593929171562195
+              ]
+            }
+          },
+          "tip_separation": 0.35999998397297295,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.70710688829422,
+              0.7071065902709961,
+              0.0,
+              0.0,
+              -0.7071065902709961,
+              -0.70710688829422,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.8253071904182434,
+              0.42881691455841064,
+              -0.36740174889564514,
+              -0.12727919220924377,
+              -0.5646839737892151,
+              0.6267324090003967,
+              -0.5369715690612793,
+              0.12727925181388855,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.8253071904182434,
+              0.42881691455841064,
+              -0.36740174889564514,
+              0.12727919220924377,
+              -0.5646839737892151,
+              0.6267324090003967,
+              -0.5369715690612793,
+              -0.12727925181388855,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 11,
+          "authored_yaw_degrees": 247.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.2935459315776825,
+                -0.5359779596328735,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.1339448094367981,
+                -0.6366956830024719,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                0.03905072808265686,
+                -0.6737440824508667,
+                1.891422986984253
+              ],
+              "forward": [
+                -0.1339448094367981,
+                -0.6366956830024719,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.3600000564091691,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              -0.38268357515335083,
+              0.9238795042037964,
+              0.0,
+              0.0,
+              -0.9238795042037964,
+              -0.38268357515335083,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.9785797595977783,
+              0.1563350409269333,
+              -0.1339448243379593,
+              -0.16629831492900848,
+              -0.20586849749088287,
+              0.7431264519691467,
+              -0.6366956830024719,
+              0.06888304650783539,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.9785797595977783,
+              0.1563350409269333,
+              -0.1339448243379593,
+              0.16629831492900848,
+              -0.20586849749088287,
+              0.7431264519691467,
+              -0.6366956830024719,
+              -0.06888304650783539,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 12,
+          "authored_yaw_degrees": 270.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                -0.06609107553958893,
+                -0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                0.11990412324666977,
+                -0.6394885182380676,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                0.293908953666687,
+                -0.6075142025947571,
+                1.891422986984253
+              ],
+              "forward": [
+                0.11990412324666977,
+                -0.6394885182380676,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.3600000046690305,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              3.422854177870249e-08,
+              1.0,
+              0.0,
+              0.0,
+              -1.0,
+              3.422854177870249e-08,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.9828721880912781,
+              -0.13994759321212769,
+              0.11990411579608917,
+              -0.18000000715255737,
+              0.18428871035575867,
+              0.7463861107826233,
+              -0.6394885182380676,
+              -6.161137822147111e-09,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.9828721880912781,
+              -0.13994759321212769,
+              0.11990411579608917,
+              0.18000000715255737,
+              0.18428871035575867,
+              0.7463861107826233,
+              -0.6394885182380676,
+              6.161137822147111e-09,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 13,
+          "authored_yaw_degrees": 292.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.171425461769104,
+                -0.5865619778633118,
+                1.891422986984253
+              ],
+              "forward": [
+                0.35549870133399963,
+                -0.5449250936508179,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                0.5040221214294434,
+                -0.448795884847641,
+                1.891422986984253
+              ],
+              "forward": [
+                0.35549870133399963,
+                -0.5449250936508179,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.360000046061142,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.38268354535102844,
+              0.9238796234130859,
+              0.0,
+              0.0,
+              -0.9238796234130859,
+              0.38268354535102844,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.837531328201294,
+              -0.41492438316345215,
+              0.35549867153167725,
+              -0.16629834473133087,
+              0.5463895797729492,
+              0.6360152959823608,
+              -0.5449250936508179,
+              -0.06888303905725479,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.837531328201294,
+              -0.41492438316345215,
+              0.35549867153167725,
+              0.16629834473133087,
+              0.5463895797729492,
+              0.6360152959823608,
+              -0.5449250936508179,
+              0.06888303905725479,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 14,
+          "authored_yaw_degrees": 315.0,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.38284364342689514,
+                -0.4763110876083374,
+                1.891422986984253
+              ],
+              "forward": [
+                0.5369714498519897,
+                -0.36740195751190186,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                0.6374022364616394,
+                -0.22175277769565582,
+                1.891422986984253
+              ],
+              "forward": [
+                0.5369714498519897,
+                -0.36740195751190186,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.36000002536508685,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.707106351852417,
+              0.7071071863174438,
+              0.0,
+              0.0,
+              -0.7071071863174438,
+              0.707106351852417,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.564684271812439,
+              -0.6267322301864624,
+              0.5369714498519897,
+              -0.12727929651737213,
+              0.8253070116043091,
+              0.42881718277931213,
+              -0.36740195751190186,
+              -0.1272791475057602,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.564684271812439,
+              -0.6267322301864624,
+              0.5369714498519897,
+              0.12727929651737213,
+              0.8253070116043091,
+              0.42881718277931213,
+              -0.36740195751190186,
+              0.1272791475057602,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        },
+        {
+          "index": 15,
+          "authored_yaw_degrees": 337.5,
+          "tip_sockets": {
+            "-1": {
+              "position": [
+                0.535977840423584,
+                -0.29354605078697205,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6366956233978271,
+                -0.13394498825073242,
+                0.7593927979469299
+              ]
+            },
+            "1": {
+              "position": [
+                0.6737440228462219,
+                0.03905056416988373,
+                1.891422986984253
+              ],
+              "forward": [
+                0.6366956233978271,
+                -0.13394498825073242,
+                0.7593927979469299
+              ]
+            }
+          },
+          "tip_separation": 0.3600000279520938,
+          "moving_world_matrices": {
+            "RI23 rotating green head": [
+              0.9238793849945068,
+              0.38268381357192993,
+              0.0,
+              0.0,
+              -0.38268381357192993,
+              0.9238793849945068,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance -1": [
+              0.20586875081062317,
+              -0.743126392364502,
+              0.6366956233978271,
+              -0.06888309121131897,
+              0.9785796403884888,
+              0.15633520483970642,
+              -0.13394498825073242,
+              -0.1662983000278473,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "RI23 bronze lance 1": [
+              0.20586875081062317,
+              -0.743126392364502,
+              0.6366956233978271,
+              0.06888309121131897,
+              0.9785796403884888,
+              0.15633520483970642,
+              -0.13394498825073242,
+              0.1662983000278473,
+              8.319521072053249e-08,
+              0.6506324410438538,
+              0.7593927979469299,
+              1.1699999570846558,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "fixed_base_unchanged": true
+        }
+      ],
+      "maximum_socket_error": 2.4027400458748785e-07,
+      "fixed_base_unchanged": true,
+      "model_yaw_phase_sign_calibrated": false,
+      "continuous_collision_sweep_proven": false
+    }
+  },
+  "source_uv_comparison": {
+    "maximum_uv_corner_error": 1.65402889251709e-05,
+    "maximum_sampled_surface_distance": 5.899667303310707e-05,
+    "matched_directed_corners": 97604,
+    "position_tolerance": 0.0001,
+    "uv_tolerance": 0.001,
+    "scope": "All unique material/UV corner samples projected bidirectionally onto corresponding triangles, with barycentric UV interpolation and repeat-wrap equivalence; not a continuous UV-field proof."
+  },
+  "exported_uv_comparison": {
+    "maximum_uv_corner_error": 4.231929779052734e-06,
+    "maximum_sampled_surface_distance": 1.3441488988519268e-07,
+    "matched_directed_corners": 61500,
+    "position_tolerance": 1e-05,
+    "uv_tolerance": 1e-05,
+    "scope": "All unique material/UV corner samples projected bidirectionally onto corresponding triangles, with barycentric UV interpolation and repeat-wrap equivalence; not a continuous UV-field proof."
+  },
+  "maximum_bidirectional_surface_error": 1.2013700256829907e-07,
+  "renders": {
+    "source-front-quarter.png": "776026486c4bebccedfdffa663541b43a29c766c2fd1282dd2f8b7c3b6aef2ed",
+    "source-front.png": "4990928bd57fcec28a31fc123a2aac12a9617878d0c9740eff4ed4483189fc58",
+    "source-rear-quarter.png": "5c70d1a03879926ff4aa080e36b7c1d22dc20f63de9597285b8dcd7e73bcfe02",
+    "native-front-quarter.png": "da12bd768903a088ca78bdbe93b7d998a10e28a4202a04fa423924a63ec6932e",
+    "native-front.png": "0b3f7a64087dd4d69a5aa781183d887d7200cf0e2a0f171386835b0de1cde73b",
+    "native-rear-quarter.png": "b11cc36ae655c71af675fff4f7c323bca186ea59a82669e80275ae120426289d",
+    "native-yaw-00.png": "da12bd768903a088ca78bdbe93b7d998a10e28a4202a04fa423924a63ec6932e",
+    "native-yaw-01.png": "158d339dc552b78359535bc23112a50bf9314c9d5cf1d59221637174aac141e7",
+    "native-yaw-02.png": "037f3bc6f7099aeb296d89aed4794a20ecdc20cffd3d9da3678e4d62a40d1c64",
+    "native-yaw-03.png": "5b9add8d09221e2a0970719c0fff7880b5cdbe7ff778737079a014aedcfad545",
+    "native-yaw-04.png": "507112f0b3f66de198856fd8ba799f3adb220b886a2b152b6d0394ba2d50e517",
+    "native-yaw-05.png": "64446f1b01b619fcf4d4e369ffa0a5ac4ebb64c1c9d077568abacb20f4b0b29d",
+    "native-yaw-06.png": "0f36af9d84531d585ba8e83f6290a9da7fddd904b66ff1e8e7384da26a1c32c0",
+    "native-yaw-07.png": "50a247bf147cc5a4011f99c12b1ac31c3b957e79c0fc681ecfe6dc66cbd316f3",
+    "native-yaw-08.png": "3faea3d2cd45101f78d2ae93cf1c69974f23a300921abba4f3d06aaedea7cdda",
+    "native-yaw-09.png": "70ee1e8c77d82337457ea229b0f67338e7f51d02b88f390dd33e6e737798932a",
+    "native-yaw-10.png": "c12892fd81a5e18127ee60650108de8f22b79136788670c56317da495afb5e68",
+    "native-yaw-11.png": "74802496cd5d739ada963026fb9717944a385abba75ca9573fd7bf05e47a2a5b",
+    "native-yaw-12.png": "383b4d115f092ddeff15081c3a844ec8d4d28a90fdaa2321030cbd9948897fe9",
+    "native-yaw-13.png": "0cc258eda8156efe737c2d11b6df4c225ae40878de12ecf57eec3889afd7d9f6",
+    "native-yaw-14.png": "651a5e03d76fea2e4f77b804bed286239333a950107140e7edd90bbe8eb43753",
+    "native-yaw-15.png": "85bc1357be77e918ff203e17608597b94b3c4b4ca1a4fa445053fac8f2ac62c6",
+    "imported-front-quarter.png": "0668a5e69599912088b6e22408a995d022b7a2bce082bfdf207b23d89233ad31",
+    "imported-front.png": "912bbdf48500c1e1ce2a89563f127dd2ecd749c43a6a283a3283b047427ce518",
+    "imported-rear-quarter.png": "bbc18749014f04aeeb47cd8581c9f4cd13fe5b80404d620fcb79216c5d84561b",
+    "imported-yaw-00.png": "0668a5e69599912088b6e22408a995d022b7a2bce082bfdf207b23d89233ad31",
+    "imported-yaw-01.png": "c8123f29fc7ed7cb8225a67856b2e70f6a316987b4221f088911f42468eb5d65",
+    "imported-yaw-02.png": "d50be6c2922d9f565961b8853b7c6b9d8192d42d5f61768eef337d7342fde87c",
+    "imported-yaw-03.png": "bd26eab567aeeb0dc3a24f48f5ad1d3dfc8990b3e34e846b2801f150add46bac",
+    "imported-yaw-04.png": "ec8e435f7d1237d90b3cd5b075068f6edda2f9110e8c5b8a209310f71bfabb44",
+    "imported-yaw-05.png": "0da810f7e1929b2d3b593156c2432348f8f7ada3c6e0e1fe70133915f30de4b2",
+    "imported-yaw-06.png": "3bed01a86dd90992b8457d8bc0677843e5574ef1ba8134b0aa2b0ef53da28236",
+    "imported-yaw-07.png": "16cd9c0fab106840e1d1fed857eb2d1099009fe77922196c5eb5470ada098d12",
+    "imported-yaw-08.png": "5571c801f9e83045e95c57caa5dd2db78cdeb8eab0a6506e75bdc46a25067f5a",
+    "imported-yaw-09.png": "7738923f0251874d246e94829cd12b73106704efc41bf17ee2de95160d9f5609",
+    "imported-yaw-10.png": "353cc3afa2623dcdc2f08f4e90ec239411f225eaefd0b0a1c4869ee44bfe3e69",
+    "imported-yaw-11.png": "4d206024f3573db5e1997fa4572fb11d0acbddd281314fbb653eedba52eced64",
+    "imported-yaw-12.png": "15eea29fe243297896060d659728b50dfd29e112157b146465587a71bcd751d6",
+    "imported-yaw-13.png": "cbfa36001baf14cf493365ced4b286ea2b0b4e7e36f54c5a7eef2e7cd152f8b5",
+    "imported-yaw-14.png": "5fb78034c18ae0d2cd582b3360ae699cfd6e747710fa22526a028c1ecee09ed0",
+    "imported-yaw-15.png": "65504fbe8cba27e77d4429a95d40b4160d0304db4dfb408305acb42de3a85ded"
+  },
+  "triangles": 54344,
+  "meshes": 22,
+  "protected_parts": [
+    "RI23 base fitting bezel",
+    "RI23 bronze base fitting",
+    "RI23 bronze front strip",
+    "RI23 bronze lance -1",
+    "RI23 bronze lance 1",
+    "RI23 fixed green pedestal",
+    "RI23 fixed green spur",
+    "RI23 rotating green head",
+    "RI23 static yaw bearing"
+  ],
+  "protected_surface_error": 0.0,
+  "optimized_surface_error": 5.899667303310707e-05,
+  "optimized_parts": [
+    "RI23 fixed bronze skirt",
+    "RI23 bronze skirt segment 00",
+    "RI23 bronze skirt segment 01",
+    "RI23 bronze skirt segment 02",
+    "RI23 bronze skirt segment 03",
+    "RI23 bronze skirt segment 04",
+    "RI23 bronze skirt segment 05",
+    "RI23 bronze skirt segment 06",
+    "RI23 bronze skirt segment 07",
+    "RI23 bronze skirt segment 08",
+    "RI23 bronze skirt segment 09",
+    "RI23 bronze skirt segment 10",
+    "RI23 bronze skirt segment 11"
+  ],
+  "native_world_bounds": [
+    -0.49000000953674316,
+    -0.5027174949645996,
+    0.0,
+    0.614433228969574,
+    0.49000000953674316,
+    1.8972787857055664
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "imported_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "material_count": 7,
+  "embedded_images": 9,
+  "clips": [],
+  "articulation_validation": {
+    "kind": "ri23-dual-lance-yaw-v1",
+    "sampled_yaw_degrees": [
+      0.0,
+      22.5,
+      45.0,
+      67.5,
+      90.0,
+      112.5,
+      135.0,
+      157.5,
+      180.0,
+      202.5,
+      225.0,
+      247.5,
+      270.0,
+      292.5,
+      315.0,
+      337.5
+    ],
+    "maximum_moving_matrix_error": 1.1920928955078125e-07,
+    "model_yaw_phase_sign_calibrated": false
+  },
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

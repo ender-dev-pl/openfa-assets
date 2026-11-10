@@ -80,7 +80,82 @@ def verify_animation_contract(metadata, report, document):
         assert not report[key]['sweep']['surface_intersections']
 
 
+def verify_dual_lance_yaw_contract(metadata,report,document):
+    import math
+    articulation = metadata['articulation']
+    assert metadata['id']==report['id']=='openfa:building/legacy/062'
+    assert articulation['kind']=='ri23-dual-lance-yaw-v1'
+    assert articulation['axis']==articulation['tip_forward_axis']=='local +Z'
+    assert articulation['pivot_position']==[0,0,1]
+    assert articulation['descriptor_formula']=='2+(((heading+8)>>4)&15)'
+    assert articulation['descriptor_domain']==list(range(2,18))
+    for field in ['legacy_static_base_descriptor_empty','complete_directional_building_frames',
+                  'model_yaw_phase_sign_calibrated','firing_or_pitch_cycle_established']:
+        assert articulation[field] is False
+    assert not document.get('animations') and report['clips']==[]
+    assert metadata['mesh_nodes']==report['meshes']==len(document['meshes'])==22
+    moving = {'RI23 rotating green head','RI23 bronze lance -1','RI23 bronze lance 1'}
+    assert set(articulation['moving_meshes'])==moving
+    sockets = articulation['tip_sockets']
+    assert len(sockets)==2
+    assert {s['name'] for s in sockets}=={'LanceTipSocket -1','LanceTipSocket 1'}
+    assert {s['lance_mesh'] for s in sockets}==moving-{'RI23 rotating green head'}
+    nodes = document['nodes']
+    indices = {node['name']:i for i,node in enumerate(nodes)}
+    pivot,root = indices[articulation['pivot']],indices['PlacementRoot']
+    assert pivot in nodes[root]['children']
+    for socket in sockets:
+        assert socket['name']=='LanceTipSocket '+socket['lance_mesh'].rsplit(' ',1)[1]
+        assert indices[socket['name']] in nodes[pivot]['children']
+    for node in nodes:
+        if 'mesh' in node:
+            assert indices[node['name']] in nodes[pivot if node['name'] in moving else root]['children']
+    assert len(metadata['protected_parts'])==9 and len(metadata['optimized_parts'])==13
+    assert set(metadata['protected_parts']).isdisjoint(metadata['optimized_parts'])
+    assert set(report['optimized_parts'])==set(metadata['optimized_parts'])
+    assert set(report['protected_parts'])==set(metadata['protected_parts'])
+    assert metadata['original_triangles']>metadata['triangles']==report['triangles']
+    assert report['protected_surface_error']<1e-6 and report['optimized_surface_error']<1e-4
+    for key,tolerance in [('source_uv_comparison',.001),('exported_uv_comparison',1e-5)]:
+        uv = report[key]
+        assert uv['uv_tolerance']==tolerance and uv['maximum_uv_corner_error']<tolerance
+        assert uv['matched_directed_corners']>0
+        assert uv['maximum_sampled_surface_distance']<uv['position_tolerance']
+    validation = report['articulation_validation']
+    assert validation['kind']==articulation['kind']
+    assert validation['sampled_yaw_degrees']==[i*22.5 for i in range(16)]
+    assert validation['maximum_moving_matrix_error']<1e-5
+    assert validation['model_yaw_phase_sign_calibrated'] is False
+    def rotate(point,angle,origin):
+        x,y,z = [value-centre for value,centre in zip(point,origin)]
+        return [origin[0]+x*math.cos(angle)-y*math.sin(angle),
+                origin[1]+x*math.sin(angle)+y*math.cos(angle),origin[2]+z]
+    for key in ['native','imported']:
+        form = report[key]
+        foot = form['retained_refined_foot']
+        assert foot['horizontal_segment_relief'] is True and foot['preserved_two_lance_rig'] is True
+        assert len(foot['segment_root_contacts'])==36 and .5<foot['tapered_foot_radius_ratio']<.6
+        assert len(form['sampled_contact_graph']['components'])==1 and not form['sampled_contact_graph']['isolated']
+        yaw = form['yaw_validation']
+        assert yaw['maximum_socket_error']<1e-5 and yaw['fixed_base_unchanged'] is True
+        assert yaw['model_yaw_phase_sign_calibrated'] is False and yaw['continuous_collision_sweep_proven'] is False
+        assert [p['index'] for p in yaw['poses']]==list(range(16))
+        for index,pose in enumerate(yaw['poses']):
+            assert pose['authored_yaw_degrees']==index*22.5
+            assert pose['fixed_base_unchanged'] is True and set(pose['moving_world_matrices'])==moving
+            assert set(pose['tip_sockets'])=={'-1','1'} and abs(pose['tip_separation']-.36)<1e-5
+            angle = math.radians(index*22.5)
+            for socket in sockets:
+                tip = pose['tip_sockets'][socket['name'].rsplit(' ',1)[1]]
+                expected = rotate(socket['position_zero_yaw'],angle,articulation['pivot_position'])
+                forward = rotate(articulation['lance_axis_zero_yaw'],angle,[0,0,0])
+                assert max(abs(a-b) for a,b in zip(tip['position'],expected))<1e-5
+                assert max(abs(a-b) for a,b in zip(tip['forward'],forward))<1e-5
+
+
 def verify_manual_yaw_contract(metadata,report,document):
+    if metadata['articulation']['kind']=='ri23-dual-lance-yaw-v1':
+        return verify_dual_lance_yaw_contract(metadata,report,document)
     articulation = metadata['articulation']
     expected_moving_counts = {'ri19-manual-yaw-v1':4,'ri22-manual-yaw-v1':11}
     assert articulation['kind'] in expected_moving_counts

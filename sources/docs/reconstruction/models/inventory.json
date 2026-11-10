@@ -12669,7 +12669,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/062",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-923",
         "description_records": [
           923
         ]
@@ -12743,25 +12743,33 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri23/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/rigellian/ultrathermal-lance/model.blend",
           "present": true,
-          "sha256": "794a406a17eeb0e25710f152a5b25538e82d20165064881fc483c351ff2e0098",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/buildings/rigellian/ultrathermal-lance/model.blend",
-          "present": true,
-          "sha256": "b668a2e2b170e93ee5b497902a92f47561a3afcb1d3b37fd0749f98c472efe83",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "visible-base-refinement",
-          "blend": "docs/assets/reconstruction/rigellian-refined/ri23/model.blend",
-          "present": true,
-          "sha256": "5d5083c96504635d03c12f12f210dea9e5abfc7aa1924318bfd0ae1392f95b55",
-          "final_visual_acceptance": "not-established"
+          "sha256": "58704c9d51c7716aa9833c63b147bd215725c0ad175f7c56e9c226f0bc2c672d",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based concept (interpreted details)",
+              "image": "gallery/media/concepts/rigellian/ri23-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/rigellian/ultrathermal-lance/imported-front-quarter.png"
+            },
+            {
+              "label": "Articulated head: authored yaw 90 degrees (fixed base)",
+              "image": "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-04.png"
+            },
+            {
+              "label": "Articulated head: authored yaw 180 degrees (fixed base)",
+              "image": "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-08.png"
+            },
+            {
+              "label": "Articulated head: authored yaw 270 degrees (fixed base)",
+              "image": "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-12.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -12771,7 +12779,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -12801,6 +12809,141 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 62
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri23/model.blend",
+          "present": true,
+          "sha256": "794a406a17eeb0e25710f152a5b25538e82d20165064881fc483c351ff2e0098",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/buildings/rigellian/ultrathermal-lance/model.blend",
+          "present": true,
+          "sha256": "b668a2e2b170e93ee5b497902a92f47561a3afcb1d3b37fd0749f98c472efe83",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "visible-base-refinement",
+          "blend": "docs/assets/reconstruction/rigellian-refined/ri23/model.blend",
+          "present": true,
+          "sha256": "5d5083c96504635d03c12f12f210dea9e5abfc7aa1924318bfd0ae1392f95b55",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "historical_runtime_review": null,
+      "reviewed_model": {
+        "blend": "objects/rigellian/ultrathermal-lance/model.blend",
+        "sha256": "58704c9d51c7716aa9833c63b147bd215725c0ad175f7c56e9c226f0bc2c672d",
+        "runtime_evidence": {
+          "format": "rigellian-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/rigellian/ultrathermal-lance",
+          "files": {
+            "gallery/media/concepts/rigellian/ri23-review-1.png": "cb499297ae7a6c29c71f6492e0669ba6eefa892a76390ea79e045d0260a1d9e7",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-front-quarter.png": "0668a5e69599912088b6e22408a995d022b7a2bce082bfdf207b23d89233ad31",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-front.png": "912bbdf48500c1e1ce2a89563f127dd2ecd749c43a6a283a3283b047427ce518",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-rear-quarter.png": "bbc18749014f04aeeb47cd8581c9f4cd13fe5b80404d620fcb79216c5d84561b",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-00.png": "0668a5e69599912088b6e22408a995d022b7a2bce082bfdf207b23d89233ad31",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-01.png": "c8123f29fc7ed7cb8225a67856b2e70f6a316987b4221f088911f42468eb5d65",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-02.png": "d50be6c2922d9f565961b8853b7c6b9d8192d42d5f61768eef337d7342fde87c",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-03.png": "bd26eab567aeeb0dc3a24f48f5ad1d3dfc8990b3e34e846b2801f150add46bac",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-04.png": "ec8e435f7d1237d90b3cd5b075068f6edda2f9110e8c5b8a209310f71bfabb44",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-05.png": "0da810f7e1929b2d3b593156c2432348f8f7ada3c6e0e1fe70133915f30de4b2",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-06.png": "3bed01a86dd90992b8457d8bc0677843e5574ef1ba8134b0aa2b0ef53da28236",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-07.png": "16cd9c0fab106840e1d1fed857eb2d1099009fe77922196c5eb5470ada098d12",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-08.png": "5571c801f9e83045e95c57caa5dd2db78cdeb8eab0a6506e75bdc46a25067f5a",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-09.png": "7738923f0251874d246e94829cd12b73106704efc41bf17ee2de95160d9f5609",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-10.png": "353cc3afa2623dcdc2f08f4e90ec239411f225eaefd0b0a1c4869ee44bfe3e69",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-11.png": "4d206024f3573db5e1997fa4572fb11d0acbddd281314fbb653eedba52eced64",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-12.png": "15eea29fe243297896060d659728b50dfd29e112157b146465587a71bcd751d6",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-13.png": "cbfa36001baf14cf493365ced4b286ea2b0b4e7e36f54c5a7eef2e7cd152f8b5",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-14.png": "5fb78034c18ae0d2cd582b3360ae699cfd6e747710fa22526a028c1ecee09ed0",
+            "gallery/media/objects/rigellian/ultrathermal-lance/imported-yaw-15.png": "65504fbe8cba27e77d4429a95d40b4160d0304db4dfb408305acb42de3a85ded",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-front-quarter.png": "da12bd768903a088ca78bdbe93b7d998a10e28a4202a04fa423924a63ec6932e",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-front.png": "0b3f7a64087dd4d69a5aa781183d887d7200cf0e2a0f171386835b0de1cde73b",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-rear-quarter.png": "b11cc36ae655c71af675fff4f7c323bca186ea59a82669e80275ae120426289d",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-00.png": "da12bd768903a088ca78bdbe93b7d998a10e28a4202a04fa423924a63ec6932e",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-01.png": "158d339dc552b78359535bc23112a50bf9314c9d5cf1d59221637174aac141e7",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-02.png": "037f3bc6f7099aeb296d89aed4794a20ecdc20cffd3d9da3678e4d62a40d1c64",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-03.png": "5b9add8d09221e2a0970719c0fff7880b5cdbe7ff778737079a014aedcfad545",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-04.png": "507112f0b3f66de198856fd8ba799f3adb220b886a2b152b6d0394ba2d50e517",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-05.png": "64446f1b01b619fcf4d4e369ffa0a5ac4ebb64c1c9d077568abacb20f4b0b29d",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-06.png": "0f36af9d84531d585ba8e83f6290a9da7fddd904b66ff1e8e7384da26a1c32c0",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-07.png": "50a247bf147cc5a4011f99c12b1ac31c3b957e79c0fc681ecfe6dc66cbd316f3",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-08.png": "3faea3d2cd45101f78d2ae93cf1c69974f23a300921abba4f3d06aaedea7cdda",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-09.png": "70ee1e8c77d82337457ea229b0f67338e7f51d02b88f390dd33e6e737798932a",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-10.png": "c12892fd81a5e18127ee60650108de8f22b79136788670c56317da495afb5e68",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-11.png": "74802496cd5d739ada963026fb9717944a385abba75ca9573fd7bf05e47a2a5b",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-12.png": "383b4d115f092ddeff15081c3a844ec8d4d28a90fdaa2321030cbd9948897fe9",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-13.png": "0cc258eda8156efe737c2d11b6df4c225ae40878de12ecf57eec3889afd7d9f6",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-14.png": "651a5e03d76fea2e4f77b804bed286239333a950107140e7edd90bbe8eb43753",
+            "gallery/media/objects/rigellian/ultrathermal-lance/native-yaw-15.png": "85bc1357be77e918ff203e17608597b94b3c4b4ca1a4fa445053fac8f2ac62c6",
+            "gallery/media/objects/rigellian/ultrathermal-lance/source-front-quarter.png": "776026486c4bebccedfdffa663541b43a29c766c2fd1282dd2f8b7c3b6aef2ed",
+            "gallery/media/objects/rigellian/ultrathermal-lance/source-front.png": "4990928bd57fcec28a31fc123a2aac12a9617878d0c9740eff4ed4483189fc58",
+            "gallery/media/objects/rigellian/ultrathermal-lance/source-rear-quarter.png": "5c70d1a03879926ff4aa080e36b7c1d22dc20f63de9597285b8dcd7e73bcfe02",
+            "sources/docs/assets/reconstruction/rigellian-refined/ri23/model.blend": "5d5083c96504635d03c12f12f210dea9e5abfc7aa1924318bfd0ae1392f95b55",
+            "sources/docs/reconstruction/models/ri23-concept-prompt-1.txt": "e80d889cbe7feee10cd2868c34ba1af33ce8ed830375f915ed6e4aefe112e11b",
+            "sources/objects/rigellian/ultrathermal-lance/model.blend": "58704c9d51c7716aa9833c63b147bd215725c0ad175f7c56e9c226f0bc2c672d",
+            "sources/objects/rigellian/ultrathermal-lance/model.glb": "82c56cf93ef69d4e8ca2facdd8166a77ae3a58ed04bdd22fb4436c690451c886",
+            "sources/objects/rigellian/ultrathermal-lance/model.json": "8d54010be86230ad617bc1a3eb5abe207b20b0ca57e8f7b8f5c360b6f5e12f7e",
+            "sources/objects/rigellian/ultrathermal-lance/recipe.json": "cb428a1ebbab39d9e55c7509fbd23f0767a5881a6c875e532a0d3162878b02b4",
+            "sources/objects/rigellian/ultrathermal-lance/runtime-review.json": "d397bc3af9e622dd48af2b410eba9da97a677514b739fe61b8ac432c4362491e",
+            "sources/objects/rigellian/ultrathermal-lance/visual-review.json": "6a00eaac595c483456d95ad20f1fcccbd10c3e6a5b329936bcb80cc50a3742a0",
+            "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+            "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+            "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+            "sources/tools/blender/build_rigellian_ultrathermal_lance.py": "701d84d1e71b870ce5c1f06b42a94d262156eb69fe661af53269379b5058ef18",
+            "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+            "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+            "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+            "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+            "sources/tools/blender/manufactured_profile_strips.py": "29db9a886573ac1b959ce9cc01102c3ea3f6bb5c3c8dd6373af7e71440b52376",
+            "sources/tools/blender/manufactured_roof_wells.py": "d9e7e148613d96e666a30b75f0de1382e9869e11c118ed5c4828b2b4fb75fceb",
+            "sources/tools/blender/manufactured_surface_mounts.py": "dd05a5c80253bd6afcaeb4aa75f9d71e50ffaf54ef3c83221a59bd84b748346d",
+            "sources/tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+            "sources/tools/blender/refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+            "sources/tools/blender/refine_rigellian_lance_base.py": "8ee9768721fab7a59303b1cde4256ea62e9141edf108688b5e9316c48e8add27",
+            "sources/tools/blender/refine_rigellian_missiles.py": "93b0bd4881160f8d931f41b9ed26cb47bff1d457ccbd0754992ecd9567d31f67",
+            "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+            "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+            "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+            "sources/tools/blender/repair_detail_uvs.py": "4242a0a815cd5208fdf0e81204a5fdeab67a9d0c3e95be6934d4f64c8672b9c7",
+            "sources/tools/blender/rigellian_extractor_remaster_checks.py": "f2024418942b8111f93f71a61160dec511ac0c91ce9f1b28a33f9959a53e70a3",
+            "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+            "sources/tools/blender/rigellian_surface_uv_checks.py": "5bb3bbed7d579c1baac10e52e71b00e8f0123f6ca7eb16aa1d2eeb11c5d176dc",
+            "sources/tools/blender/rigellian_ultrathermal_lance_parts.py": "c9e2813cf85660fe5878040a81838175bfe3685bb9b79986b3c69b4c15309625",
+            "sources/tools/blender/rigellian_ultrathermal_remaster_checks.py": "3b51c5e0e3617da73838c81f0c6e22a29331027f7c5578a4bde6aa78220d3e1c",
+            "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "sources/tools/blender/verify_refined_rigellian_extractor.py": "d8a090cc290d0b5ebe800c93a1dc70446e02c1e1697e909bd039073a9d6ef84f",
+            "sources/tools/blender/verify_refined_rigellian_lance_base.py": "53845e5de05699251004aa501bbf63250c6e291ef80222b8be2b5410bd50aa66",
+            "sources/tools/blender/verify_remastered_rigellian_ultrathermal_lance.py": "2ab54f4ff565b9153b7ef08c9693eff032affced09dd95b8bda96914f04e34a8",
+            "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+            "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+            "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+            "sources/tools/blender/verify_rigellian_ultrathermal_lance.py": "ad3d3ed05be7fe7b1d17429e386620b4cc18b2269c97409587e48e0adf209f4a"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB source-bound remaster evidence; client and final artistic acceptance remain separate.",
+          "objects/rigellian/ultrathermal-lance/runtime-review.json",
+          "objects/rigellian/ultrathermal-lance/visual-review.json"
+        ]
       }
     },
     {

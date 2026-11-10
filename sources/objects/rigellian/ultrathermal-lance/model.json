@@ -1,0 +1,196 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/062",
+  "name": "Ultrathermal Lance",
+  "source": "sources/docs/assets/reconstruction/rigellian-refined/ri23/model.blend",
+  "source_sha256": "5d5083c96504635d03c12f12f210dea9e5abfc7aa1924318bfd0ae1392f95b55",
+  "author_sha256": "df498d852d5fc75645d1d6b01255a5df2aad8691fb1f6ca3558afa044c68a58b",
+  "recipe": "sources/objects/rigellian/ultrathermal-lance/recipe.json",
+  "recipe_sha256": "cb428a1ebbab39d9e55c7509fbd23f0767a5881a6c875e532a0d3162878b02b4",
+  "binaries": {
+    "blend": "58704c9d51c7716aa9833c63b147bd215725c0ad175f7c56e9c226f0bc2c672d",
+    "glb": "82c56cf93ef69d4e8ca2facdd8166a77ae3a58ed04bdd22fb4436c690451c886"
+  },
+  "protected_parts": [
+    "RI23 base fitting bezel",
+    "RI23 bronze base fitting",
+    "RI23 bronze front strip",
+    "RI23 bronze lance -1",
+    "RI23 bronze lance 1",
+    "RI23 fixed green pedestal",
+    "RI23 fixed green spur",
+    "RI23 rotating green head",
+    "RI23 static yaw bearing"
+  ],
+  "optimized_parts": [
+    "RI23 fixed bronze skirt",
+    "RI23 bronze skirt segment 00",
+    "RI23 bronze skirt segment 01",
+    "RI23 bronze skirt segment 02",
+    "RI23 bronze skirt segment 03",
+    "RI23 bronze skirt segment 04",
+    "RI23 bronze skirt segment 05",
+    "RI23 bronze skirt segment 06",
+    "RI23 bronze skirt segment 07",
+    "RI23 bronze skirt segment 08",
+    "RI23 bronze skirt segment 09",
+    "RI23 bronze skirt segment 10",
+    "RI23 bronze skirt segment 11"
+  ],
+  "simplification": [
+    {
+      "name": "RI23 fixed bronze skirt",
+      "original_triangles": 19388,
+      "triangles": 2032,
+      "maximum_vertex_surface_error": 5.899667303310707e-05
+    },
+    {
+      "name": "RI23 bronze skirt segment 00",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.108314558630809e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 01",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.1005874916445464e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 02",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.1005874916445464e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 03",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.108314558630809e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 04",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.1005874916445464e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 05",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.1005874916445464e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 06",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.108314558630809e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 07",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.1005874916445464e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 08",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.1005874916445464e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 09",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.108314558630809e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 10",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.1005874916445464e-06
+    },
+    {
+      "name": "RI23 bronze skirt segment 11",
+      "original_triangles": 5504,
+      "triangles": 1492,
+      "maximum_vertex_surface_error": 3.1005874916445464e-06
+    }
+  ],
+  "original_triangles": 119844,
+  "triangles": 54344,
+  "mesh_nodes": 22,
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 18,
+  "construction_updates": 57,
+  "articulation": {
+    "kind": "ri23-dual-lance-yaw-v1",
+    "pivot": "YawPivot",
+    "axis": "local +Z",
+    "pivot_position": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "moving_meshes": [
+      "RI23 rotating green head",
+      "RI23 bronze lance -1",
+      "RI23 bronze lance 1"
+    ],
+    "tip_sockets": [
+      {
+        "name": "LanceTipSocket -1",
+        "lance_mesh": "RI23 bronze lance -1",
+        "position_zero_yaw": [
+          0.6075142025947571,
+          -0.06609109789133072,
+          1.891422986984253
+        ]
+      },
+      {
+        "name": "LanceTipSocket 1",
+        "lance_mesh": "RI23 bronze lance 1",
+        "position_zero_yaw": [
+          0.6075142025947571,
+          0.2939089238643646,
+          1.891422986984253
+        ]
+      }
+    ],
+    "tip_forward_axis": "local +Z",
+    "lance_axis_zero_yaw": [
+      0.6394886374473572,
+      0.11990411579608917,
+      0.7593927383422852
+    ],
+    "descriptor_formula": "2+(((heading+8)>>4)&15)",
+    "descriptor_domain": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "legacy_static_base_descriptor_empty": false,
+    "complete_directional_building_frames": false,
+    "model_yaw_phase_sign_calibrated": false,
+    "firing_or_pitch_cycle_established": false
+  },
+  "changes": "Protected upper assembly unchanged; thirteen lower-foot components lose near-coplanar subdivisions at angle .005rad with UV/material boundaries retained and measured surface error below .0001. Refined taper/segments/relief remain; no invented firing/pitch clip.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

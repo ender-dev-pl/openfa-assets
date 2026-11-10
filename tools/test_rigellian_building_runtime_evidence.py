@@ -27,7 +27,7 @@ class Evidence(unittest.TestCase):
                 metadata = json.loads((folder / 'model.json').read_bytes())
                 expected_views = 16 if metadata.get('animation',{}).get('mechanism_kind') == 'ri18-supported-dome-v1' else (40 if metadata.get('animation') else 6)
                 if metadata.get('articulation'):
-                    expected_views = 38
+                    expected_views = 41 if metadata['articulation']['kind']=='ri23-dual-lance-yaw-v1' else 38
                 self.assertEqual(result['views'], expected_views)
                 self.assertFalse(result['game_client_integration'])
                 checked.append(record['id'])
@@ -185,6 +185,33 @@ class Evidence(unittest.TestCase):
         del proof['files']['sources/docs/reconstruction/models/launch-facility-animation-audit.json']
         with self.assertRaises(AssertionError):
             verify_runtime_evidence(ROOT / 'sources', record)
+
+
+    def test_dual_lance_contract_rejects_lost_tip_pose_and_foot_detail(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_dual_lance_yaw_contract
+        folder = ROOT/'sources/objects/rigellian/ultrathermal-lance'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        raw = (folder/'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_dual_lance_yaw_contract(metadata,report,document)
+        wrong = deepcopy(metadata)
+        wrong['articulation']['tip_sockets'].pop()
+        with self.assertRaises(AssertionError):
+            verify_dual_lance_yaw_contract(wrong,report,document)
+        wrong = deepcopy(report)
+        wrong['imported']['yaw_validation']['poses'][5]['tip_sockets']['1']['position'][0]+=.1
+        with self.assertRaises(AssertionError):
+            verify_dual_lance_yaw_contract(metadata,wrong,document)
+        wrong = deepcopy(report)
+        wrong['native']['retained_refined_foot']['horizontal_segment_relief'] = False
+        with self.assertRaises(AssertionError):
+            verify_dual_lance_yaw_contract(metadata,wrong,document)
+        wrong = deepcopy(report)
+        wrong['source_uv_comparison']['maximum_uv_corner_error'] = .1
+        with self.assertRaises(AssertionError):
+            verify_dual_lance_yaw_contract(metadata,wrong,document)
 
 
 if __name__ == '__main__':
