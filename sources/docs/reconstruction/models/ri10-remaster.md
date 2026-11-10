@@ -8,7 +8,7 @@ Correctly paletted body, closed base-plus-cover composite and cover descriptors 
 
 One actual built-in ImageGen request used those original images. Exact prompt: `ri10-concept-prompt-1.txt`; public concept: `gallery/media/concepts/rigellian/ri10-review-1.png`. It preserves paired covers, deep shaft, two red wall fittings, brass buttresses, front steps and bent right mast. Its added seams, compact body and changed support proportions are interpretation. The established side cassettes/telescopic mechanics and body proportions remain an approximation, not final artistic acceptance. Original pixels stay private.
 
-The latest revision-six source is preserved, including its corrected deep shaft, narrow front supports, shortened mast, undercuts and rigid covers. All 45 asset mesh surfaces match the original evaluated closed geometry exactly. There are 13,170 triangles, seven used materials and four embedded maps. Preview terrain holdout is excluded from the GLB. These counts do not certify Android performance or exhaustive engineering fidelity.
+The latest revision-six source is preserved, including its corrected deep shaft, narrow front supports, shortened mast, undercuts and rigid covers. All 45 asset mesh surfaces match the original evaluated closed geometry exactly. There are 19,010 evaluated/export triangles (13,170 before modifiers), seven used materials and four embedded maps. Preview terrain holdout is excluded from the GLB. These counts do not certify Android performance or exhaustive engineering fidelity.
 
 ## Single model, two clips, no pose-model duplication
 
@@ -34,3 +34,7 @@ These are sampled surface-intersection checks, not continuous swept-volume or co
 ## Reproduction and disk
 
 Run `remaster_rigellian_ground_deck.py`, `verify_remastered_rigellian_ground_deck.py` and `render_rigellian_ground_deck_animations.py` in Blender background mode with Python exit code 1. Inspect outputs and record feedback, then register the canonical folder and rebuild galleries. Bind reports to the exact model, tools, mechanism evidence, concept/prompt, renders and videos; never replace hashes to imply a run. Reuse the existing checkout. No game build, archive or additional worktree is required. Clean only precisely identified task-owned temporary frames and empty exporter folders after their processes finish.
+
+## Final audit correction
+
+The initial budget counted raw native tessellation before existing modifiers. The final audit counts evaluated native/imported meshes and actual GLB index accessors, correcting the runtime budget from13,170 to19,010 without changing geometry or mechanisms. Full native/imported geometry, state sweep, forty renders (twenty native/imported pairs) and both playable previews were regenerated and reviewed after correcting the author/verifier.

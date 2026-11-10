@@ -164,6 +164,12 @@ def main():
     bpy.ops.import_scene.gltf(filepath=str(FOLDER / 'model.glb'))
     imported = validate('imported', meta)
     error = compare(native['geometry'], imported['geometry'])
+    for label, snapshot in [('native',native['geometry']),('imported',imported['geometry'])]:
+        assert sum(part['triangles'] for part in snapshot.values())==meta['triangles'],label
+    raw_export_triangles = sum(document['accessors'][primitive['indices']]['count']//3
+        for mesh in document['meshes'] for primitive in mesh['primitives'])
+    assert raw_export_triangles==meta['triangles']
+
     assert native['pixels'] == imported['pixels']
     assert native['materials'].keys() == imported['materials'].keys()
     for name, value in native['materials'].items():

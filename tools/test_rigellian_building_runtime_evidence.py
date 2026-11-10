@@ -258,5 +258,32 @@ class Evidence(unittest.TestCase):
             verify_preserved_filtration_contract(metadata,wrong)
 
 
+    def test_all_canonical_budgets_match_actual_export_indices(self):
+        import struct
+        delivery = json.loads((ROOT/'sources/docs/reconstruction/models/rigellian-building-remaster-delivery.json').read_bytes())
+        for model in delivery['models']:
+            raw = (ROOT/model['glb']).read_bytes()
+            document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+            triangles = sum(document['accessors'][p['indices']]['count']//3
+                for mesh in document['meshes'] for p in mesh['primitives'])
+            self.assertEqual(triangles,model['triangles'],model['key'])
+
+    def test_ground_deck_rejects_raw_mesh_budget_as_runtime_budget(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_animation_contract
+        folder = ROOT/'sources/objects/rigellian/ground-deck'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        raw = (folder/'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_animation_contract(metadata,report,document)
+        wrong = deepcopy(metadata)
+        wrong['triangles'] = wrong['original_triangles'] = 13170
+        wrong_report = deepcopy(report)
+        wrong_report['triangles'] = 13170
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(wrong,wrong_report,document)
+
+
 if __name__ == '__main__':
     unittest.main()

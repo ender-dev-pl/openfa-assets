@@ -54,6 +54,12 @@ def verify_supported_dome_contract(metadata, report, document):
 def verify_animation_contract(metadata, report, document):
     if metadata['animation'].get('mechanism_kind') == 'ri18-supported-dome-v1':
         return verify_supported_dome_contract(metadata, report, document)
+    assert metadata['id']=='openfa:building/legacy/049'
+    assert metadata['triangles']==metadata['original_triangles']==report['triangles']==19010
+    assert metadata['raw_mesh_triangles']==13170
+    exported_triangles = sum(document['accessors'][p['indices']]['count']//3
+        for mesh in document['meshes'] for p in mesh['primitives'])
+    assert exported_triangles==report['triangles']
     animation = metadata['animation']
     expected = {animation['cycle_clip'], animation['descriptor_clip']}
     assert set(report['clips']) == expected

@@ -18,6 +18,6 @@ Saved-native and independent-import validation checks closed positive meshes, co
 
 ## Integration contract and limits
 
-ID `openfa:building/legacy/040`, class20,3Ă—3footprint,36construction updates. `PlacementRoot` is identity; local-Yforward,+Zdorsal. Authored bind bounds and hashes are recorded in runtime-review.json and the delivery manifest; physical game scale and placement remain uncalibrated.
+ID `openfa:building/legacy/040`, class20,3x3footprint,36construction updates. `PlacementRoot` is identity; local-Yforward,+Zdorsal. Authored bind bounds and hashes are recorded in runtime-review.json and the delivery manifest; physical game scale and placement remain uncalibrated.
 
 Static complete body1 over ground0; RIS3shared construction is separate. No moving mechanism, firing, special glow or operational timing was invented. Catalogue reveal/highlight is distinct from menu camera rotation. One canonical source/export must serve gameplay, build menus and SciTek. Client integration, damage/state mapping, Android frame rate and final user artistic acceptance remain separate. Mobile-ship programme #248 remains unfinished.

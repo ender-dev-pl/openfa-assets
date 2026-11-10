@@ -153,9 +153,18 @@ def main():
         strip_png(path)
         renders[path.name] = sha(path)
     triangles = 0
+    raw_mesh_triangles = 0
+    graph = bpy.context.evaluated_depsgraph_get()
     for obj in meshes:
         obj.data.calc_loop_triangles()
-        triangles += len(obj.data.loop_triangles)
+        raw_mesh_triangles += len(obj.data.loop_triangles)
+        evaluated = obj.evaluated_get(graph)
+        data = evaluated.to_mesh()
+        try:
+            data.calc_loop_triangles()
+            triangles += len(data.loop_triangles)
+        finally:
+            evaluated.to_mesh_clear()
     animation = dict(cycle_clip=CYCLE, cycle_frames=[1, 61], closed_frame=1, open_frame=31,
                      descriptor_clip=STATES, descriptor_frames=[2, 17], fps=scene.render.fps,
                      scale_animated=False, target_nodes=TARGETS,
@@ -166,7 +175,7 @@ def main():
                     recipe=recipe_path.relative_to(ROOT).as_posix(), recipe_sha256=sha(recipe_path),
                     source=case['source'], source_sha256=sha(source),
                     binaries={kind: sha(FOLDER / ('model.' + kind)) for kind in ['blend', 'glb']},
-                    triangles=triangles, mesh_nodes=len(meshes), original_triangles=triangles,
+                    triangles=triangles, raw_mesh_triangles=raw_mesh_triangles, mesh_nodes=len(meshes), original_triangles=triangles,
                     changes=[], footprint=[3, 3], definition_class=26, construction_updates=18,
                     animation=animation, states=states,
                     mechanism_evidence=case['mechanism_evidence'], mechanism_sha256=sha(ROOT / case['mechanism_evidence']),
