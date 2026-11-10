@@ -27,10 +27,14 @@ def main():
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text())
     sys.path.insert(0, str(ROOT / 'sources/tools/blender'))
     from model_runtime_evidence import verify_runtime_evidence
+    mobile_ids = {ship['id'] for ship in json.loads((ROOT / 'sources/docs/reconstruction/models/ship-reference-index.json').read_text())['ships'] if not ship['runtime_fixed_scale'] and ship['culture'] != 'terran'}
     for record in inventory['records']:
+        published_mobile = record['id'] in mobile_ids and any(record.get('acceptance', {}).values())
+        if published_mobile:
+            assert record.get('reviewed_model') and all(record.get('acceptance_evidence', {}).get(key) for key, accepted in record['acceptance'].items() if accepted), (record['id'], 'unbound acceptance gate')
         reviewed = record.get('reviewed_model')
         proof = reviewed.get('runtime_evidence') if isinstance(reviewed, dict) else None
-        if isinstance(proof, dict) and proof.get('format') in {'rigellian-building-remaster-v1', 'achaean-building-remaster-v1', 'achaean-static-building-remaster-v2', 'achaean-animated-building-remaster-v1', 'achaean-directional-building-remaster-v1', 'achaean-stun-tower-remaster-v1', 'achaean-power-tower-remaster-v1', 'mobile-remaster-runtime-v1'}:
+        if published_mobile or isinstance(proof, dict) and proof.get('format') in {'rigellian-building-remaster-v1', 'achaean-building-remaster-v1', 'achaean-static-building-remaster-v2', 'achaean-animated-building-remaster-v1', 'achaean-directional-building-remaster-v1', 'achaean-stun-tower-remaster-v1', 'achaean-power-tower-remaster-v1', 'mobile-remaster-runtime-v1'}:
             verify_runtime_evidence(ROOT / 'sources', record)
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
     migration=json.loads((ROOT/'sources/docs/reconstruction/models/shipyard-canonical-assets.json').read_text())

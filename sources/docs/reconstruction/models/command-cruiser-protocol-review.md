@@ -1,0 +1,11 @@
+# Command Cruiser retrospective concept and GLB feedback
+
+Programme openfa-assets #248. The user's latest SciTek canonical source remains unchanged. This is a missing retrospective concept/render stage, not a new geometric remaster or final acceptance.
+
+Two actual built-in ImageGen requests were used (limit three). First, original PS08.VID rotation frames 0/15/30/45 produced a study with a rectangular rear block and only two exhausts. It was rejected for anatomy. Inspection of original ST35 technical views resolves the ambiguity: frame 34 shows a squat circular sensor casing with antennas, frame 99 a longitudinal subwing pod, and frame 164 four exhaust apertures. A second actual request used those original diagrams and corrected the concept. Exact prompts, both images and verdicts are recorded in [the review](command-cruiser-protocol-review.json). No old authored model was passed off as a legacy reference; the original-only contact crop excludes the authored comparison row. Original pixels remain private.
+
+Fresh Blender 4.5.15 rendering reopens the canonical native source and independently imports its GLB at frame 1, comparing evaluated geometry under the same camera/light rig. Both complete-object front/rear views have clear alpha margins. The report binds the exact unchanged model, wrapper, shared renderer and output images. Geometry/render agreement is not exhaustive topology, UV, animation, mounting or client acceptance.
+
+Selected concept 2 and current GLB agree on the elongated deck, rounded bow, red outboard tabs, circular rear sensor, two subwing pods and four nozzles. The actual GLB sensor is more domed and its pods more rounded than the concept; deck detailing and wear contrast are simpler. Exact concept pod sections and small seam/routing details remain interpretations. Preserve the SciTek source, not the obsolete first study or rejected concept 1.
+
+The interactive and Markdown galleries distinguish rejected iteration 1 from selected iteration 2 and show actual imported front/rear renders. Gameplay remains the documented frame-1 pose with presentation rotation disabled. No duplicate model payload, new socket calibration or automatic wear retrofit is introduced. Five other Terran protocol entries and wider programme integration remain open.

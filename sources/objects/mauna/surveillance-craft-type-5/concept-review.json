@@ -1,0 +1,73 @@
+{
+  "asset": "openfa:ship/mauna/surveillance-craft-type-5",
+  "issue": 251,
+  "stage": "Canonical remaster, concept and independent imported-GLB feedback reviewed",
+  "tool": "Built-in image_gen",
+  "legacy_identity": {
+    "entry": "MN0A.256",
+    "source_sha256": "6b59aa3fd81efeca970ba070de2e13ac187ac318fb7c4217b19b5858c8b63697",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ],
+    "all_32_populated_headings_inspected": true
+  },
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. OpenFA Mauna Surveillance Craft Type5 MN0A small scout remaster. Attached image is actual correctly paletted legacy headings0/4/12/28, PRIMARY authority for shape/color. Preserve this unusual craft as one UPRIGHT thick chamfered rectangular SLAB of opaque grey metal: broad face roughly square, width slightly greater than height; thickness seen edge-on about0.4 of full height. It is the actual spacecraft body, not a billboard attached to another hull, NOT a flat horizontal carrier, aircraft or winged spaceship. Interrupted top edge with a few low separate rectangular crown tabs and real open gaps, not pointed spikes; four low tabs are a plausible authored interpretation of the pixel silhouette. Two small warm rusty-brown/copper opaque lower tabs project below the body, non-emissive. Blue-grey opaque surface fields and sparse fitted service panels on broad metal faces, no literal windows or glass. Exact face panel layout/crown count below source resolution is interpretive. No big wings, turrets, cockpit, glowing engines, thruster flames, antenna dish, landing legs, cargo boxes, extra hull or support stand. Two equipment slots exist but no coordinates/functions are recovered: do not turn visible details into weapons. Plain utilitarian Mauna metal construction, medium/dark neutral steel grey, subdued blue-grey fields, oxidized dark-alloy recesses and tiny warm lower details; no architecture ornament and no concrete texture. Few seated maintenance panels, small fasteners and shallow seams; large quiet surfaces WITHOUT dense rectangular panel grids. Material-appropriate restrained use wear: irregular grime around joins, small scuffs, scratches, stains and dents without muddying silhouette. High-quality believable game remaster, one coherent upright slab shown in large three-quarter view and smaller broad-face and edge-on views, consistent form/counts. Plain charcoal studio background, no text, logos or infographic annotations.",
+      "verdict": "Useful broad geometry/finish: upright thick chamfered slab, low interpreted crown tabs and warm lower tabs. Rejected the large numeral-like blue field; original pixels do not establish a painted symbol.",
+      "input_images": [
+        {
+          "role": "Actual paletted legacy primary shape/colour reference",
+          "sha256": "58e3048716be9dfd11fdb6e7dcabeabf938d9dc2450d9f49da4d35a184374447"
+        }
+      ],
+      "generated_original_sha256": "4b54a6495bbdb4cc708a4f074212d0832dfc22e7fb675326aa81c7c4b4e70ef2",
+      "image": "gallery/media/concepts/mauna/surveillance-craft-type-5-01.png",
+      "sha256": "4b54a6495bbdb4cc708a4f074212d0832dfc22e7fb675326aa81c7c4b4e70ef2",
+      "gallery_label": "Rejected numeral-like field concept1"
+    },
+    {
+      "number": 2,
+      "prompt": "Precise-object-edit / stylized-concept. Mauna Surveillance Craft Type5 MN0A iteration2 of maximum3. Image1 is previous concept and edit target; Image2 is actual paletted legacy and primary authority. Preserve exactly the upright chamfered grey metal slab proportions, four short interpreted crown tabs with open gaps, two small rusty warm lower tabs, subdued worn alloy, sparse service covers and the same multi-view presentation. Correct ONE issue: remove the giant numeral-like blue marking from the broad face. It must NOT look like '1', 'L', a digit, letter, logo or decal insignia. Replace it with two or three separate subdued BLUE-GREY OPAQUE METAL inset/service fields integrated into the broad face, plain asymmetrical rectangular areas, below source-resolution engineering interpretation. No readable symbolic arrangement. Do not add glazing, emitters, glow, weapon mounts, extra hull, fins or a support stand. Maintain broad quiet surfaces with restrained grime/scuffs/stains/dents and NO dense panel grid. This is a functional plain alien scout, not a building wall. No text or labels. Other geometry and primary material colors unchanged.",
+      "verdict": "Retained broad form/finish reference: no numeral-like field, subdued opaque blue-grey service fields; low crown gaps and warm non-emissive lower tabs remain. Exact tab count, field layout, panel engineering and hidden faces are interpretation. Do not use architectural concrete or infer windows/weapons/engines.",
+      "input_images": [
+        {
+          "role": "Previous concept edit target; retain geometry and worn finish only",
+          "sha256": "4b54a6495bbdb4cc708a4f074212d0832dfc22e7fb675326aa81c7c4b4e70ef2"
+        },
+        {
+          "role": "Actual paletted legacy primary authority",
+          "sha256": "58e3048716be9dfd11fdb6e7dcabeabf938d9dc2450d9f49da4d35a184374447"
+        }
+      ],
+      "generated_original_sha256": "eb6d7f7e401a438d377de740aac06b3d5d71b0b0f04d266c5d194ecdd6829679",
+      "image": "gallery/media/concepts/mauna/surveillance-craft-type-5-02.png",
+      "sha256": "eb6d7f7e401a438d377de740aac06b3d5d71b0b0f04d266c5d194ecdd6829679",
+      "gallery_label": "Reviewed plain opaque fields concept2"
+    }
+  ],
+  "maximum_iterations": 3,
+  "remaining_iterations": 1,
+  "next_step": "Use one canonical source/export across gameplay and menus; validate WorldSize40 proposal, heading/materials and two uncalibrated equipment slots in client. Final user artistic acceptance separate.",
+  "reviewed_binary_hashes": {
+    "blend": "d98ec600ad7a5977cf6923859681e75113ebe65697e3f9e95972387d2c2b565b",
+    "glb": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b"
+  },
+  "glb_feedback": [
+    {
+      "round": 1,
+      "verdict": "Actual imported hero/end/broadside views retain the slab and service fields, but cylindrical body UV mapping produces a fan of stretched texture and a wavy seam on flat surfaces. Rejected that mapping; shape and actual crown gaps remain useful."
+    },
+    {
+      "round": 2,
+      "verdict": "Reproject angular Mauna surfaces with dominant-axis planar UVs while preserving explicit atlas tiles. Actual imported hero/end/broadside views and corresponding0/4/12/28 compared against legacy and concept2; stretched fan/seam removed. 26160tri/4batches/1material,47 editable names,46 checked contacts,two physical side dents and native/import crown-gap/occupied-tab ray witnesses. No symbolic blue decal, glazing or emission inferred."
+    }
+  ],
+  "glb_visual_review": "Actual 0/4/12/28 comparison inspected with legacy and concept2. Upright thick grey slab, interrupted crown and warm lower details retained. Two sparse opaque blue-grey service fields on each broad face are authored interpretation of low-resolution fields, not a literal numeral/window. Exact crown count/panel layout/hidden geometry remain interpretation. Warm lower tabs are occluded in some high views and darker in preview lighting; lower-angle/underside views verify their geometry. Estimated comparison azimuth0/elevation.12 is not client calibration or a recovered projection. Appropriate sparse wear and physical dents retained, no dense panel grid.",
+  "final_user_acceptance": "pending"
+}

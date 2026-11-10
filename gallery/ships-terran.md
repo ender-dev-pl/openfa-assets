@@ -54,21 +54,19 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/c
 
 [Blend](../sources/docs/assets/reconstruction/ships/terran/destructor/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/destructor/model.glb)
 
+Additional views: [Retrospective concept (interpretations limited)](../gallery/media/concepts/terran/destructor-review-1.png) · [Protocol review: actual imported front](../gallery/media/docs/assets/reconstruction/evidence/destructor-protocol/imported-front-quarter.png) · [Protocol review: actual imported rear](../gallery/media/docs/assets/reconstruction/evidence/destructor-protocol/imported-rear-quarter.png)
+
 ## Terminator
 
 `openfa:terminator`
 
-**First available iteration — initial-reference-study**
-
-![Terminator](../gallery/media/docs/assets/reconstruction/ships/terran/terminator/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/terran/terminator/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/terminator/model.glb)
-
-**Additional iteration — shared-refined**
+**First available iteration — shared-refined**
 
 ![Terminator](../gallery/media/objects/terran/terminator/refined/render.png)
 
 [Blend](../sources/objects/terran/terminator/refined/model.blend) · [GLB](../sources/objects/terran/terminator/refined/model.glb)
+
+Additional views: [Retrospective concept (interpretations limited)](../gallery/media/concepts/terran/terminator-review-1.png) · [Protocol review: actual imported front](../gallery/media/docs/assets/reconstruction/evidence/terminator-protocol/imported-front-quarter.png) · [Protocol review: actual imported rear](../gallery/media/docs/assets/reconstruction/evidence/terminator-protocol/imported-rear-quarter.png)
 
 [Play animation: Animation](../gallery/media/objects/terran/terminator/refined/animation-00.webm)
 
@@ -86,17 +84,13 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/c
 
 `openfa:fleet-battleship`
 
-**First available iteration — initial-reference-study**
-
-![Fleet Battleship](../gallery/media/docs/assets/reconstruction/ships/terran/fleet-battleship/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/terran/fleet-battleship/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/fleet-battleship/model.glb)
-
-**Additional iteration — shared-refined**
+**First available iteration — shared-refined**
 
 ![Fleet Battleship](../gallery/media/objects/terran/fleet-battleship/refined/render.png)
 
 [Blend](../sources/objects/terran/fleet-battleship/refined/model.blend) · [GLB](../sources/objects/terran/fleet-battleship/refined/model.glb)
+
+Additional views: [Retrospective concept (interpretations limited)](../gallery/media/concepts/terran/fleet-battleship-review-1.png) · [Protocol review: actual imported front](../gallery/media/docs/assets/reconstruction/evidence/fleet-battleship-protocol/imported-front-quarter.png) · [Protocol review: actual imported rear](../gallery/media/docs/assets/reconstruction/evidence/fleet-battleship-protocol/imported-rear-quarter.png)
 
 [Play animation: Animation](../gallery/media/objects/terran/fleet-battleship/refined/animation-00.webm)
 
@@ -142,17 +136,13 @@ Additional views: [Frame foundation](../gallery/media/objects/terran/scoutship/c
 
 `openfa:command-cruiser`
 
-**First available iteration — initial-reference-study**
-
-![Command Cruiser](../gallery/media/docs/assets/reconstruction/ships/terran/command-cruiser/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/terran/command-cruiser/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/terran/command-cruiser/model.glb)
-
-**Additional iteration — shared-refined**
+**First available iteration — shared-refined**
 
 ![Command Cruiser](../gallery/media/objects/terran/command-cruiser/refined/render.png)
 
 [Blend](../sources/objects/terran/command-cruiser/refined/model.blend) · [GLB](../sources/objects/terran/command-cruiser/refined/model.glb)
+
+Additional views: [Concept iteration 1: rejected anatomy](../gallery/media/concepts/terran/command-cruiser-review-1.png) · [Concept iteration 2: selected after legacy wire feedback](../gallery/media/concepts/terran/command-cruiser-review-2.png) · [Protocol review: actual imported front](../gallery/media/docs/assets/reconstruction/evidence/command-cruiser-protocol/imported-front-quarter.png) · [Protocol review: actual imported rear](../gallery/media/docs/assets/reconstruction/evidence/command-cruiser-protocol/imported-rear-quarter.png)
 
 [Play animation: Animation](../gallery/media/objects/terran/command-cruiser/refined/animation-00.webm)
 

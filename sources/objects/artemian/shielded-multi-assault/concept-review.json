@@ -1,0 +1,88 @@
+{
+  "asset": "openfa:ship/artemian/shielded-multi-assault",
+  "issue": 249,
+  "stage": "Canonical remaster, concept and independent imported-GLB feedback reviewed",
+  "tool": "Built-in image_gen",
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. OpenFA Artemian Shielded Multi-Assault AR2C combat spacecraft remaster. Attached image is the actual paletted legacy sprite in four headings, PRIMARY authority for silhouette, major forms and colors. The original is a very low flat broad silver/grey craft, raised low rounded/faceted central body, long thin pointed metal projections at both opposed ends and short lateral projections/blue-grey fittings. Gold/bronze portions appear around the central-to-side structure and near fitting roots, not green and not orange paint. Preserve the low wide flattened rhomboid/diamond metal planform and modest central bulge, no tall bridge, no extra pods. Side view is roughly 4 times longer than high. Important: exact spatial gold placement is uncertain; use integrated gold/brass structural bands and subordinate gold areas with a predominantly grey/silver main shell rather than arbitrarily painting a straight half of the entire craft gold. Small pale/amber service inserts, blue-grey fittings, a few seated access hatches and sparse fasteners. Smooth large shell surfaces with no dense panel-grid. Used metal: subtle irregular seam grime, small scuffs, stains and dents, readable forms and construction. Cowling is opaque metal, not cockpit glass. No invented guns, flames, exhausts, shield bubble, fins, logos or speculative equipment. Four equipment slots exist but positions are unknown; do not place four guns. One coherent craft, large three-quarter view plus smaller side and top views, same geometry and material arrangement across views. Neutral charcoal background, realistic professional game model concept, no text.",
+      "verdict": "Useful silver/gold/blue-grey materials and broad form, but generated orthographic side is too thin (roughly7:1), so request thicker central body.",
+      "input_images": [
+        {
+          "role": "Actual legacy reference",
+          "sha256": "43eb8ed016de57e93ee9536678cc271a1f2d52edf30def21ad57b7d3f106bc7a"
+        }
+      ],
+      "generated_original_sha256": "f5aa34b400a28f7b8f8f8300ed8cae1efb98371c29dad49442457910656d7e63",
+      "image": "gallery/media/concepts/artemian/shielded-multi-assault-01.png",
+      "sha256": "f5aa34b400a28f7b8f8f8300ed8cae1efb98371c29dad49442457910656d7e63",
+      "gallery_label": "Rejected thin concept1"
+    },
+    {
+      "number": 2,
+      "prompt": "Use case: stylized-concept. OpenFA Artemian Shielded Multi-Assault AR2C combat spacecraft remaster. Attached image is the actual paletted legacy sprite in four headings, PRIMARY authority for silhouette, major forms and colors. The original is a very low flat broad silver/grey craft, raised low rounded/faceted central body, long thin pointed metal projections at both opposed ends and short lateral projections/blue-grey fittings. Gold/bronze portions appear around the central-to-side structure and near fitting roots, not green and not orange paint. Preserve the low wide flattened rhomboid/diamond metal planform and modest central bulge, no tall bridge, no extra pods. Side view is roughly 4 times longer than high. Important: exact spatial gold placement is uncertain; use integrated gold/brass structural bands and subordinate gold areas with a predominantly grey/silver main shell rather than arbitrarily painting a straight half of the entire craft gold. Small pale/amber service inserts, blue-grey fittings, a few seated access hatches and sparse fasteners. Smooth large shell surfaces with no dense panel-grid. Used metal: subtle irregular seam grime, small scuffs, stains and dents, readable forms and construction. Cowling is opaque metal, not cockpit glass. No invented guns, flames, exhausts, shield bubble, fins, logos or speculative equipment. Four equipment slots exist but positions are unknown; do not place four guns. One coherent craft, large three-quarter view plus smaller side and top views, same geometry and material arrangement across views. Neutral charcoal background, realistic professional game model concept, no text.\nITERATION 2 targeted thickness correction. The previous side view was too thin, about7:1. Give the actual orthographic SIDE silhouette a LENGTH/HEIGHT RATIO of approximately4.0 to4.3, as in actual AR2C legacy side frame, not7 or8. Retain the very thin pointed wing tips, but make the central low rounded body substantially taller and thicker above/below the wing plane. No tall bridge or tower; the body is one integrated opaque central flattened ellipsoid. Retain the silver hull with subordinate gold structural bands, small blue-grey fittings, sparse service details and worn alloy. Primary image large true SIDE view with the 4:1 overall length-to-height silhouette; smaller coherent three-quarter view and top view. Use source pixels as authority; avoid beautifying away the fuller central mass.",
+      "verdict": "Retained broad silver body/gold structure concept with fuller central mass; exact orthographic side ratio remains more elongated than requested. Legacy frame4 is a projected heading, not calibrated orthographic elevation. Actual GLB comparison must resolve projected mass and body height before acceptance; do not treat this concept as percentage fidelity proof or copy arbitrary half-gold split.",
+      "input_images": [
+        {
+          "role": "Actual legacy reference",
+          "sha256": "43eb8ed016de57e93ee9536678cc271a1f2d52edf30def21ad57b7d3f106bc7a"
+        }
+      ],
+      "generated_original_sha256": "9e29ebc246fb04a17ff6780ab0ff8bc62d8d4df1cf4c6ae9c2c571aaad31ef85",
+      "image": "gallery/media/concepts/artemian/shielded-multi-assault-02.png",
+      "sha256": "9e29ebc246fb04a17ff6780ab0ff8bc62d8d4df1cf4c6ae9c2c571aaad31ef85",
+      "gallery_label": "Narrow planform concept2"
+    },
+    {
+      "number": 3,
+      "prompt": "Precise-object-edit / stylized-concept, Shielded Multi-Assault AR2C concept iteration THREE of maximum3. Image1 is actual paletted legacy and primary silhouette/color authority; Image2 is previous concept, retained only for worn silver/gold metal finish and low central integrated ellipsoid. Correct its excessive narrowness in TOP view: length divided by overall width should be about1.4, not3.5. Make a very BROAD low diamond/rhomboid wing planform with thin pointed opposite fore/aft ends, plus a much smaller low central opaque metal ellipsoid occupying the middle. From directly above, the grey central body is narrower than the full wing. No slender spindle, no tall tower/bridge, no glass, no engines/weapons guessed. Main image a large elevated three-quarter showing the BROAD diamond wing and smaller central ellipsoid; smaller exact top view showing 1.4:1 planform and side view. Side mass remains flattened with fuller central bulge and thin tips. Predominantly silver/grey alloy, subordinate bronze-gold bands near roots/one flank and small blue-grey fittings as in actual sprite. The specific gold pattern is artistic interpretation, not a literal recovered half-gold paint scheme. Sparse small service covers/insets/fasteners, broad quiet surfaces, NO dense panel-grid. Irregular restrained grime, scuffs, stains and dents; same geometry across all views. Plain charcoal background, no text. Prioritize legacy silhouette over elegance of the previous narrow concept.",
+      "verdict": "Retained broad diamond wing with smaller raised opaque central body and worn silver/bronze finish. Orthographic side remains thin and exact top/side proportions are imperfect; actual legacy headings and corresponding GLB feedback take precedence. No fourth ImageGen generation.",
+      "input_images": [
+        {
+          "role": "Actual legacy reference",
+          "sha256": "43eb8ed016de57e93ee9536678cc271a1f2d52edf30def21ad57b7d3f106bc7a"
+        },
+        {
+          "role": "Previous concept for finish only",
+          "sha256": "9e29ebc246fb04a17ff6780ab0ff8bc62d8d4df1cf4c6ae9c2c571aaad31ef85"
+        }
+      ],
+      "generated_original_sha256": "21596cc83ba12df5b912ccbed788f2da7819693d2697e453344fb2b3d4d56b89",
+      "image": "gallery/media/concepts/artemian/shielded-multi-assault-03.png",
+      "sha256": "21596cc83ba12df5b912ccbed788f2da7819693d2697e453344fb2b3d4d56b89",
+      "gallery_label": "Reviewed broad concept3"
+    }
+  ],
+  "maximum_iterations": 3,
+  "remaining_iterations": 0,
+  "next_step": "Use one canonical GLB for gameplay, ship/build menus and SciTek; validate proposed WorldSize64, heading/materials and four uncalibrated equipment slots in client.",
+  "legacy_identity": {
+    "entry": "AR2C.256",
+    "source_sha256": "446c3902a42cd3d96184a13479ad06d26bad778352cbc603e2382ed91155b0db",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ],
+    "all_32_descriptors_inspected": true
+  },
+  "reviewed_binary_hashes": {
+    "blend": "189b736f4e9c6e5dcb8359dbd7c678df518008b4d7e97a6c91340fd63496234b",
+    "glb": "33c2e8fcd32e42df6c8bc3db69cee80608d2e82ef006f45bda4e69cca4b46910"
+  },
+  "glb_feedback": [
+    {
+      "round": 1,
+      "verdict": "Actual imported hero and headings retained broad silver wing/raised body but bronze regions classified by whole-triangle centres created serrated boundaries. Rejected material boundaries; no historical duplicate model was retained."
+    },
+    {
+      "round": 2,
+      "verdict": "Split actual mesh faces on declared material boundaries before UV allocation. Actual imported hero/top/side and corresponding 0/4/12/28 compared with actual legacy and concept3. Bronze bands now continuous; low wide diamond wing, smaller raised opaque body, blue-grey accents and dull amber inserts retained. 39680 triangles, 46 editable part identities, 45 tested contacts and three physical dents. Concept side/top ratios and exact alloy distribution remain approximate; not used as recovered engineering."
+    }
+  ],
+  "glb_visual_review": "Actual corresponding 0/4/12/28 comparison inspected against actual paletted legacy and concept3. Wide flat silver silhouette with central raised body, gold areas and small blue-grey/pale accents retained. The historical exact half-gold split is replaced by subordinate bronze bands; their precise placement is an authored interpretation because legacy lighting/colour placement is ambiguous. No exact cockpit/engine/mount/shield effect is inferred. Estimated comparison elevation .25 and azimuth correction 180 degrees are not recovered gameplay orientation; no numerical percentage fidelity claimed.",
+  "final_user_acceptance": "pending"
+}

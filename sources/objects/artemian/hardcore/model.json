@@ -1,0 +1,730 @@
+{
+  "id": "openfa:ship/artemian/hardcore",
+  "issue": 249,
+  "name": "Hardcore",
+  "key": "AR4C",
+  "source": "docs/assets/reconstruction/ships/artemian/hardcore",
+  "size_class": "large ore/missile transporter",
+  "world_size_proposal": 96,
+  "equipment_slots": 5,
+  "material_tiles": {
+    "Hardcore | worn gold brown shells": 2,
+    "Hardcore | worn silver bridge": 0,
+    "Hardcore | oxidized blue grey details": 6,
+    "Hardcore | carbon dark seams": 4
+  },
+  "part_face_budget": {
+    "main pressure body": 6000,
+    "lateral module": 1200,
+    "tail plane": 1800,
+    "service cover": 350,
+    "service slot": 120,
+    "body trim": 400,
+    "interface": 350,
+    "arm": 200,
+    "bridge": 200,
+    "projection": 100,
+    "default": 300
+  },
+  "edge_finish": {
+    "part_keywords": [
+      "tail plane",
+      "service cover"
+    ],
+    "width": 0.006,
+    "segments": 3,
+    "angle_limit": 0.52,
+    "reason": "Soften manufactured tail/cover edges without dense panel grids; retain rounded main shells."
+  },
+  "max_triangles": 55000,
+  "max_primitives": 6,
+  "comparison_elevation": 0.12,
+  "comparison_azimuth": 0,
+  "reference_side_bounds": [
+    122,
+    18
+  ],
+  "protected_dents": [
+    {
+      "part": "Hardcore main pressure body 0",
+      "undented_point": [
+        3.977652803630603e-17,
+        -1.9495999523162841,
+        0.2
+      ],
+      "outward": [
+        6.123233995736766e-17,
+        -1.0,
+        0
+      ],
+      "minimum_depth": 0.003
+    },
+    {
+      "part": "Hardcore lateral module 0 -1",
+      "undented_point": [
+        -1.159999966621399,
+        -1.4879999523162841,
+        0.010000000670552255
+      ],
+      "outward": [
+        6.123233995736766e-17,
+        -1.0,
+        0
+      ],
+      "minimum_depth": 0.001
+    },
+    {
+      "part": "Hardcore lateral module 0 1",
+      "undented_point": [
+        1.159999966621399,
+        -1.4879999523162841,
+        0.010000000670552255
+      ],
+      "outward": [
+        6.123233995736766e-17,
+        -1.0,
+        0
+      ],
+      "minimum_depth": 0.001
+    },
+    {
+      "part": "Hardcore main pressure body 1",
+      "undented_point": [
+        3.977652803630603e-17,
+        0.6503999523162842,
+        0.2
+      ],
+      "outward": [
+        6.123233995736766e-17,
+        -1.0,
+        0
+      ],
+      "minimum_depth": 0.003
+    },
+    {
+      "part": "Hardcore lateral module 1 -1",
+      "undented_point": [
+        -1.159999966621399,
+        1.1119999523162842,
+        0.010000000670552255
+      ],
+      "outward": [
+        6.123233995736766e-17,
+        -1.0,
+        0
+      ],
+      "minimum_depth": 0.001
+    },
+    {
+      "part": "Hardcore lateral module 1 1",
+      "undented_point": [
+        1.159999966621399,
+        1.1119999523162842,
+        0.010000000670552255
+      ],
+      "outward": [
+        6.123233995736766e-17,
+        -1.0,
+        0
+      ],
+      "minimum_depth": 0.001
+    }
+  ],
+  "attachment_pairs": [
+    {
+      "part": "Hardcore service cover 0 0",
+      "support": "Hardcore main pressure body 0"
+    },
+    {
+      "part": "Hardcore service slot 0 0 0",
+      "support": "Hardcore service cover 0 0"
+    },
+    {
+      "part": "Hardcore service slot 0 0 1",
+      "support": "Hardcore service cover 0 0"
+    },
+    {
+      "part": "Hardcore service cover 0 1",
+      "support": "Hardcore main pressure body 0"
+    },
+    {
+      "part": "Hardcore service slot 0 1 0",
+      "support": "Hardcore service cover 0 1"
+    },
+    {
+      "part": "Hardcore service slot 0 1 1",
+      "support": "Hardcore service cover 0 1"
+    },
+    {
+      "part": "Hardcore service cover 1 0",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore service slot 1 0 0",
+      "support": "Hardcore service cover 1 0"
+    },
+    {
+      "part": "Hardcore service slot 1 0 1",
+      "support": "Hardcore service cover 1 0"
+    },
+    {
+      "part": "Hardcore service cover 1 1",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore service slot 1 1 0",
+      "support": "Hardcore service cover 1 1"
+    },
+    {
+      "part": "Hardcore service slot 1 1 1",
+      "support": "Hardcore service cover 1 1"
+    },
+    {
+      "part": "Hardcore silver connecting bridge",
+      "support": "Hardcore main pressure body 0"
+    },
+    {
+      "part": "Hardcore silver body trim 0",
+      "support": "Hardcore main pressure body 0"
+    },
+    {
+      "part": "Hardcore lateral arm 0 -1",
+      "support": "Hardcore main pressure body 0"
+    },
+    {
+      "part": "Hardcore lateral arm 0 -1",
+      "support": "Hardcore lateral module 0 -1"
+    },
+    {
+      "part": "Hardcore bridge edge rail -1",
+      "support": "Hardcore main pressure body 0"
+    },
+    {
+      "part": "Hardcore lateral arm 0 1",
+      "support": "Hardcore main pressure body 0"
+    },
+    {
+      "part": "Hardcore lateral arm 0 1",
+      "support": "Hardcore lateral module 0 1"
+    },
+    {
+      "part": "Hardcore bridge edge rail 1",
+      "support": "Hardcore main pressure body 0"
+    },
+    {
+      "part": "Hardcore fastener 0 0 0 0",
+      "support": "Hardcore service cover 0 0"
+    },
+    {
+      "part": "Hardcore fastener 0 0 0 1",
+      "support": "Hardcore service cover 0 0"
+    },
+    {
+      "part": "Hardcore fastener 0 0 1 0",
+      "support": "Hardcore service cover 0 0"
+    },
+    {
+      "part": "Hardcore fastener 0 0 1 1",
+      "support": "Hardcore service cover 0 0"
+    },
+    {
+      "part": "Hardcore fastener 0 1 0 0",
+      "support": "Hardcore service cover 0 1"
+    },
+    {
+      "part": "Hardcore fastener 0 1 0 1",
+      "support": "Hardcore service cover 0 1"
+    },
+    {
+      "part": "Hardcore fastener 0 1 1 0",
+      "support": "Hardcore service cover 0 1"
+    },
+    {
+      "part": "Hardcore fastener 0 1 1 1",
+      "support": "Hardcore service cover 0 1"
+    },
+    {
+      "part": "Hardcore silver connecting bridge",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore silver body trim 1",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore lateral arm 1 -1",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore lateral arm 1 -1",
+      "support": "Hardcore lateral module 1 -1"
+    },
+    {
+      "part": "Hardcore bridge edge rail -1",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore lateral arm 1 1",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore lateral arm 1 1",
+      "support": "Hardcore lateral module 1 1"
+    },
+    {
+      "part": "Hardcore bridge edge rail 1",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore fastener 1 0 0 0",
+      "support": "Hardcore service cover 1 0"
+    },
+    {
+      "part": "Hardcore fastener 1 0 0 1",
+      "support": "Hardcore service cover 1 0"
+    },
+    {
+      "part": "Hardcore fastener 1 0 1 0",
+      "support": "Hardcore service cover 1 0"
+    },
+    {
+      "part": "Hardcore fastener 1 0 1 1",
+      "support": "Hardcore service cover 1 0"
+    },
+    {
+      "part": "Hardcore fastener 1 1 0 0",
+      "support": "Hardcore service cover 1 1"
+    },
+    {
+      "part": "Hardcore fastener 1 1 0 1",
+      "support": "Hardcore service cover 1 1"
+    },
+    {
+      "part": "Hardcore fastener 1 1 1 0",
+      "support": "Hardcore service cover 1 1"
+    },
+    {
+      "part": "Hardcore fastener 1 1 1 1",
+      "support": "Hardcore service cover 1 1"
+    },
+    {
+      "part": "Hardcore bridge edge rail -1",
+      "support": "Hardcore silver connecting bridge"
+    },
+    {
+      "part": "Hardcore aft blue grey projection -1",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore bridge edge rail 1",
+      "support": "Hardcore silver connecting bridge"
+    },
+    {
+      "part": "Hardcore aft blue grey projection 1",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore tail plane",
+      "support": "Hardcore main pressure body 1"
+    },
+    {
+      "part": "Hardcore fore interface bezel",
+      "support": "Hardcore main pressure body 0"
+    },
+    {
+      "part": "Hardcore blue grey fore interface",
+      "support": "Hardcore fore interface bezel"
+    }
+  ],
+  "interpretation": "Two warm-metal rounded main bodies inline with silver bridge/edge rails, four smaller lateral modules on short arms, aft plane and blue-grey interfaces/projections. Counts, fine construction, hidden backs and physical size remain interpretation; five equipment slots are uncalibrated, and visible modules/bright marks do not establish weapons, engines or emission.",
+  "stage": "mobile-ship-remaster",
+  "baseline_sha256": "c0b10a6bcc4832b1f73c197fc17f5418d8121d0bf898e506f508d427b61631e7",
+  "baseline_bounds": [
+    [
+      -1.3799999952316284,
+      -2.1599998474121094,
+      -0.375
+    ],
+    [
+      1.3799999952316284,
+      2.75,
+      0.4375
+    ]
+  ],
+  "final_bounds": [
+    [
+      -1.3799999952316284,
+      -2.1600003242492676,
+      -0.375
+    ],
+    [
+      1.3799999952316284,
+      2.75,
+      0.4375
+    ]
+  ],
+  "triangles": 49716,
+  "mesh_batches": 4,
+  "material_count": 1,
+  "packed_maps": 3,
+  "editable_part_vertex_groups": {
+    "PrimaryHullAndArmour": [
+      "Hardcore main pressure body 0",
+      "Hardcore lateral module 0 -1",
+      "Hardcore lateral module 0 1",
+      "Hardcore main pressure body 1",
+      "Hardcore lateral module 1 -1",
+      "Hardcore lateral module 1 1",
+      "Hardcore lateral arm 0 -1",
+      "Hardcore lateral arm 0 1",
+      "Hardcore lateral arm 1 -1",
+      "Hardcore lateral arm 1 1",
+      "Hardcore silver connecting bridge",
+      "Hardcore bridge edge rail -1",
+      "Hardcore bridge edge rail 1",
+      "Hardcore tail plane",
+      "Hardcore aft blue grey projection -1",
+      "Hardcore aft blue grey projection 1"
+    ],
+    "TrimAndFasteners": [
+      "Hardcore silver body trim 0",
+      "Hardcore silver body trim 1",
+      "Hardcore fastener 0 0 0 0",
+      "Hardcore fastener 0 0 0 1",
+      "Hardcore fastener 0 0 1 0",
+      "Hardcore fastener 0 0 1 1",
+      "Hardcore fastener 0 1 0 0",
+      "Hardcore fastener 0 1 0 1",
+      "Hardcore fastener 0 1 1 0",
+      "Hardcore fastener 0 1 1 1",
+      "Hardcore fastener 1 0 0 0",
+      "Hardcore fastener 1 0 0 1",
+      "Hardcore fastener 1 0 1 0",
+      "Hardcore fastener 1 0 1 1",
+      "Hardcore fastener 1 1 0 0",
+      "Hardcore fastener 1 1 0 1",
+      "Hardcore fastener 1 1 1 0",
+      "Hardcore fastener 1 1 1 1"
+    ],
+    "RecessedMachinery": [
+      "Hardcore fore interface bezel",
+      "Hardcore blue grey fore interface",
+      "Hardcore service slot 0 0 0",
+      "Hardcore service slot 0 0 1",
+      "Hardcore service slot 0 1 0",
+      "Hardcore service slot 0 1 1",
+      "Hardcore service slot 1 0 0",
+      "Hardcore service slot 1 0 1",
+      "Hardcore service slot 1 1 0",
+      "Hardcore service slot 1 1 1"
+    ],
+    "ServiceAssemblies": [
+      "Hardcore service cover 0 0",
+      "Hardcore service cover 0 1",
+      "Hardcore service cover 1 0",
+      "Hardcore service cover 1 1"
+    ]
+  },
+  "reductions": [
+    {
+      "part": "Hardcore main pressure body 0",
+      "source_faces": 4226,
+      "final_faces": 4226,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore lateral module 0 -1",
+      "source_faces": 1410,
+      "final_faces": 2610,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore lateral module 0 1",
+      "source_faces": 1410,
+      "final_faces": 2610,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore main pressure body 1",
+      "source_faces": 4226,
+      "final_faces": 4226,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore lateral module 1 -1",
+      "source_faces": 1410,
+      "final_faces": 2610,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore lateral module 1 1",
+      "source_faces": 1410,
+      "final_faces": 2610,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore silver body trim 0",
+      "source_faces": 768,
+      "final_faces": 800,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Hardcore lateral arm 0 -1",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore lateral arm 0 1",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore silver body trim 1",
+      "source_faces": 768,
+      "final_faces": 800,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Hardcore lateral arm 1 -1",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore lateral arm 1 1",
+      "source_faces": 154,
+      "final_faces": 154,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore silver connecting bridge",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Hardcore bridge edge rail -1",
+      "source_faces": 86,
+      "final_faces": 86,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore bridge edge rail 1",
+      "source_faces": 86,
+      "final_faces": 86,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore tail plane",
+      "source_faces": 3166,
+      "final_faces": 4328,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore fore interface bezel",
+      "source_faces": 1296,
+      "final_faces": 662,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore blue grey fore interface",
+      "source_faces": 450,
+      "final_faces": 792,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore aft blue grey projection -1",
+      "source_faces": 86,
+      "final_faces": 86,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore aft blue grey projection 1",
+      "source_faces": 86,
+      "final_faces": 86,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore service cover 0 0",
+      "source_faces": 338,
+      "final_faces": 706,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore service slot 0 0 0",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Hardcore service slot 0 0 1",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Hardcore fastener 0 0 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 0 0 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 0 0 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 0 0 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore service cover 0 1",
+      "source_faces": 338,
+      "final_faces": 706,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore service slot 0 1 0",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Hardcore service slot 0 1 1",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Hardcore fastener 0 1 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 0 1 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 0 1 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 0 1 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore service cover 1 0",
+      "source_faces": 338,
+      "final_faces": 706,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore service slot 1 0 0",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Hardcore service slot 1 0 1",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Hardcore fastener 1 0 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 1 0 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 1 0 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 1 0 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore service cover 1 1",
+      "source_faces": 338,
+      "final_faces": 706,
+      "atlas_tile": 2
+    },
+    {
+      "part": "Hardcore service slot 1 1 0",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Hardcore service slot 1 1 1",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Hardcore fastener 1 1 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 1 1 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 1 1 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Hardcore fastener 1 1 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    }
+  ],
+  "generator_sha256": "7c152a5afe634f62d26a8666787d99944caa5000110239bb54f59db5e9f61d1b",
+  "recipe_sha256": "48e4f16f0418c0ee8ee74c9e8d03396c4db67ce928efe5db3488627e989eaea9",
+  "shared_primitives_sha256": "1469b823c8eb59eeca4372d8f5b4059f9ab1de5a1d02e4ddcf3ae9a650cbffa1",
+  "maps_generator_sha256": "235a9f6ec6b6186a7781ced10e9cbfaef7923408f5922d5d2f6c56b16b2aa77a",
+  "map_sha256": {
+    "colour.png": "129469027d784ca4a67c661f21ad7d28291f3d30a27175fb9f860fb9704fafac",
+    "normal.png": "f6f3936984cf3234313308daaba22f8f38cede3b6042ba7dc0007224bfe541b4",
+    "orm.png": "af938bc610d5088e3defb36306d0cc8469f38179303e86c18b285e9dcb8120ba"
+  },
+  "blend_sha256": "11f9dcf517401a90e654ee89ae1f0b50f059585a169ce3a95fff2f2912fa9f1a",
+  "glb_sha256": "f34fae179f154d61436190f42633819ecf21dded70e67d7325571c92ff64568a",
+  "visual_acceptance": "Agent reviewed actual legacy/concept/imported GLB feedback; final user acceptance and client calibration separate"
+}

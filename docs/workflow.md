@@ -40,6 +40,44 @@ python tools/asset_workspace.py references --legacy-root ../legacy --game-root .
 6. Revalidate affected source-bound inventories/reports after actual source changes. Keep their meaningful acceptance contracts. Do not replace hashes alone to claim a test ran. The optional import audit may now correctly report intentional divergence; do not rewrite historical import evidence to hide it.
 7. Rebuild the gallery, run project checks, commit the milestone and record technical English issue results with the commit reference.
 
+## Required remaster concept and render feedback
+
+The ImageGen concept stage is required for a remaster unless the user explicitly
+waives it. Automation of this stage is optional; the stage itself is not optional.
+A concept the user has already generated manually in ImageGen satisfies this
+stage when its reference and review are recorded. Ordinary technical repairs do
+not require inventing a new concept.
+
+1. Inspect actual paletted legacy headings, enlargements, technical views and
+   available animations before interpreting the form. Use the clearest source
+   for each detail. Keep original pixels outside this repository.
+2. Generate the concept from those actual references, or use the user's supplied
+   ImageGen concept. Show each actual generated result in the conversation and
+   preserve the exact prompt and input identities. Do not describe Blender-only
+   work as an ImageGen iteration.
+3. Compare the concept with legacy for silhouette, major sections, proportions,
+   material/colour regions and functional distinctions. Use at most three
+   ImageGen iterations per asset; each additional iteration addresses a recorded
+   discrepancy. If the concept still deviates substantially, keep artistic
+   acceptance pending and identify the unresolved issue rather than certifying it.
+4. Author or refine the single canonical model using the reviewed concept and
+   legacy together. A concept does not override clearer original evidence.
+5. Render an independent import of the actual GLB at corresponding angles.
+   Compare it with both legacy and the concept. Correct meaningful geometric or
+   material deviations and rerender; source-only pictures, counts and hash edits
+   do not establish visual fidelity. Technical wireframes derive from this same
+   geometry.
+6. Publish the editable model, export, source-bound evidence and refreshed gallery
+   together. Notify the game thread of the commit, canonical paths, previews and
+   integration limits. Keep the model consistent across gameplay and menus.
+7. Report task-owned disk growth and cleanup candidates. Remove only temporary
+   files created by the current task; preserve user files and prior evidence.
+
+For Braccatian and Mikotaj mobile passes originally published without ImageGen,
+record subsequent concepts as retrospective reviews. Do not rewrite their history
+to imply the missing stage occurred before those first models. A remaster is not
+artistically complete until the missing concept and GLB feedback stages are done.
+
 ## Historical repairs
 
 See `project/README.md`. `prepare --include-history` restores archived support files without requiring a game checkout. Reading those files for evidence is different from rerunning them. Direct execution through the launcher requires `--allow-history`, a matching historical workspace and the original game repository's Git history. Already-applied migrations must not be run on current corrected models.

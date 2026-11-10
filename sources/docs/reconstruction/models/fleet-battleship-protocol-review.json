@@ -1,0 +1,91 @@
+{
+  "issue": 248,
+  "id": "openfa:fleet-battleship",
+  "kind": "retrospective concept/render feedback; user-selected SciTek geometry preserved",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/terran/fleet-battleship-review-1.png",
+    "sha256": "a7fd643daa457b356e76b252feb1ea39dd151802347c3cbe7ec1f469e97c0689",
+    "prompt": "sources/docs/reconstruction/models/fleet-battleship-concept-prompt-1.txt",
+    "verdict": "Useful broad arched-wing/central-body/one-engine layout. Added collar routing, small attachments and wingtip endcap details are interpretations; exact outline and markings remain legacy-controlled."
+  },
+  "reference": {
+    "kind": "Actual original PS06.VID frames 0/15/30/45 cropped from existing private comparison",
+    "private_comparison_sha256": "e3d2ac210ecb1c56893cfe82ee0bdc08bb4a7d4ddba4583790c48287aee7b4a6",
+    "private_reference_sheet_sha256": "6f676dc10489a28d78c2035563f4d6e458926f5bc66c8fddb6cda226c47f3b14",
+    "legacy_pixels_published": false
+  },
+  "model": {
+    "blend": "sources/objects/terran/fleet-battleship/refined/model.blend",
+    "glb": "sources/objects/terran/fleet-battleship/refined/model.glb",
+    "binaries": {
+      "blend": "992680efcb679c3c1ec1165233b6449e60adf833fc39064ee4e72b225824159f",
+      "glb": "f43e9b36b8144855b25f9697e5a47c264e8bb3f3b1dfe479124f1c1a6ed2ded9"
+    },
+    "mesh_count": 45,
+    "triangles": 47944,
+    "model_bytes_unchanged": true
+  },
+  "runtime": {
+    "report": "gallery/media/docs/assets/reconstruction/evidence/fleet-battleship-protocol/runtime-review.json",
+    "sha256": "628874f463fd9ba50e1393e4398abec0ecc27adf92f4f5120741f197ab4ce917",
+    "native_import_pixel_comparisons": {
+      "front-quarter": {
+        "mean_absolute_rgba_255": [
+          0.067646484375,
+          0.0638623046875,
+          0.06740966796875,
+          0.0
+        ],
+        "binary_silhouette_equal": true,
+        "alpha_bounds_native_imported": [
+          [
+            70,
+            205,
+            532,
+            500
+          ],
+          [
+            70,
+            205,
+            532,
+            500
+          ]
+        ]
+      },
+      "rear-quarter": {
+        "mean_absolute_rgba_255": [
+          0.13010009765625,
+          0.124560546875,
+          0.1377294921875,
+          0.0
+        ],
+        "binary_silhouette_equal": true,
+        "alpha_bounds_native_imported": [
+          [
+            70,
+            183,
+            532,
+            454
+          ],
+          [
+            70,
+            183,
+            532,
+            454
+          ]
+        ]
+      }
+    }
+  },
+  "feedback": [
+    "Legacy, concept and GLB preserve one continuous arched transverse wing, a long forward central body, red upper markings and one large bronze aft/underside engine.",
+    "The concept follows the broad flowing red legacy marking more closely than the GLB narrow continuous crown stripe. Its small routed lines, endcap and underside attachments remain interpretations.",
+    "Current canonical GLB wing has a simpler flatter chord/shoulder outline, central body a more cylindrical cross-section and slender transition than the legacy/concept faceted forebody.",
+    "Existing GLB finish is simpler and smoother than the concept. This review does not replace the canonical SciTek source, claim exact fidelity or retrofit additional detail."
+  ],
+  "final_artistic_acceptance": false,
+  "client_integration_verified": false
+}

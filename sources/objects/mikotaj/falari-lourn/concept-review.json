@@ -1,0 +1,89 @@
+{
+  "asset": "Falari-Lourn MK2C",
+  "stage": "Retrospective concept review and corrected canonical GLB feedback",
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. Iteration 1, actual concept for the OpenFA Falari-Lourn (Mikotaj MK2C) remaster. The attached image is ONLY the original paletted legacy reference, four headings including axial-looking frames12 and28. Study its silhouette and blue/green/yellow regions. Create a detailed, physically plausible game-asset concept on a dark neutral studio background. Show ONE coherent spacecraft in a large oblique hero view and a smaller top view of exactly the same design, so the module count is unambiguous. Central body is a full spherical bluish glassy/translucent globe with subtle internal structural supports and muted reflections, rather than an opaque flattened metal dome. Four distinct elongated pointed green metal modules attach radially around the equator at 90-degree intervals (four separate leaf/spindle-shaped outriggers, not a single continuous flat diamond wing). Leave clear open gaps between the four modules; preserve the long tapered, slender legacy silhouette as far as the view allows. Small muted yellow/brass fittings where supported by the reference. Metal has restrained scratches, recess grime, edge wear and minor dents. Preserve readable broad surfaces: no dense panel grid, no excessive greebles, no extra craft, no invented weapons, flames, humans or text, no legacy pixel collage. All views must agree geometrically. This is a first interpretation to verify against legacy, not a final model.",
+      "verdict": "Rejected: radial module orientation; user requires four parallel modules pointing the same direction.",
+      "image": "gallery/media/concepts/mikotaj/falari-lourn-01.png",
+      "sha256": "9195bace91a0dc67ca3859a9e141ded6cb1aa586bc81385f85f5ff88d4752651",
+      "gallery_label": "Rejected concept 1 (geometry)",
+      "input_identities": [
+        "MK2C actual paletted frames0/4/12/28"
+      ],
+      "input_images": [
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "c8f8925a58513dd7ddc9aa66ad0b7790437631ad4dc5c1be1d163987c4b749d4"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "prompt": "Precise corrective edit, Falari-Lourn MK2C, ImageGen iteration 2 of maximum 3. Image1 is the rejected first concept; image2 is the actual original legacy reference. Preserve the central bluish glass sphere, muted green worn metal, small brass fittings and restrained level of surface detail. CORRECT THE MODULE DIRECTIONS: all FOUR elongated green modules must be PARALLEL TO ONE COMMON FORE-AFT LONGITUDINAL AXIS, all pointing in the SAME forward direction. They are spaced 90 degrees around that axis / around the sphere's circumference: dorsal, ventral, port and starboard. Think of four long parallel stream-lined green rails forming a cage around one spherical glass centre, viewed end-on as a circle with modules at top/right/bottom/left. Each module extends fore and aft beyond the sphere along the same axis, with a long pointed nose and tapered rear. They DO NOT radiate outward in a planar cross and are NOT four petals, wings, rotor blades or a four-point star. The existing radial-cross layout is wrong and must be completely replaced. The sphere remains exposed between the rails; short credible brackets meet the sphere's structural frame, no floating parts. Long-axis span around three sphere diameters; rails slim compared with sphere. Show one consistent craft as a large clear oblique hero view, with a smaller axial end-on view that makes the four parallel modules around the sphere unambiguous. Inset must agree exactly with hero. Match the legacy blue/glassy centre and green/gold regions; no opaque blue metal dome, no single flat wing, no dense panel grids, no extra ships, no text or original pixel collage.",
+      "verdict": "Rejected: frontal view retains radial spears; user annotated their required end-on cross sections.",
+      "image": "gallery/media/concepts/mikotaj/falari-lourn-02.png",
+      "sha256": "5753e4bcd3d725187dc242bfd3d1c536c83d7d020964f963d32268af6e8c82dc",
+      "gallery_label": "Rejected concept 2 (geometry)",
+      "input_identities": [
+        "MK2C actual paletted frames0/4/12/28",
+        "Rejected concept1"
+      ],
+      "input_images": [
+        {
+          "role": "rejected first concept edit target",
+          "sha256": "9195bace91a0dc67ca3859a9e141ded6cb1aa586bc81385f85f5ff88d4752651"
+        },
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "c8f8925a58513dd7ddc9aa66ad0b7790437631ad4dc5c1be1d163987c4b749d4"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "prompt": "Use case: stylized-concept. Falari-Lourn MK2C spacecraft remaster concept, third and final geometry correction. Input1 is original paletted legacy, the authoritative silhouette and colors. Input2 is a rejected concept annotated by user: the left/right sideways spears are WRONG; green drawn loops show their required end-on cross sections. Make ONE coherent three-quarter view of a glassy blue sphere surrounded by exactly FOUR elongated green streamlined pods. ALL FOUR PODS ARE PARALLEL and point FORWARD IN THE SAME DIRECTION, like four parallel pencils around a ball. Place their centers at 12,3,6,9 o'clock around the fore-aft axis. EACH pod's long axis runs fore-aft, perpendicular to the frontal circular plane of the sphere. No pod points radially away from the sphere. Viewed straight from front each green pod would appear as a small OVAL end, NOT a long outward-pointing spike. Four long green pods around a blue transparent globe, with small brass fittings and short mounting brackets. Long slim silhouette from side, circular sphere with four small green ends from front, as actual legacy. Show nose pointing screen LEFT, with all four pointed green noses toward screen LEFT and blunt tapered aft ends toward screen RIGHT. No rear-facing pointed noses, no eight spikes, no planar cross or star, no lateral spear wings. Pods about 2.8 sphere diameters long, fairly slim. Restrained worn green metal, blue glass sphere clearly exposed between pods, sparse seams and modest brass details. Neutral charcoal backdrop, large single spacecraft three-quarter hero view, no secondary views, no text. Preserve original legacy proportions before adding surface detail.",
+      "verdict": "Rejected as geometric authority: module axes parallel, but port/starboard placement staggered fore/aft instead of four full longitudinal modules around a sphere.",
+      "image": "gallery/media/concepts/mikotaj/falari-lourn-03.png",
+      "sha256": "525a4affcf3a1456a15d3c2e9bb5fc30306c281d0319667269e83937e6a04d6f",
+      "gallery_label": "Rejected concept 3 (geometry)",
+      "input_identities": [
+        "MK2C actual paletted frames0/4/12/28",
+        "User annotation identifying required end-on lateral-module cross sections"
+      ],
+      "input_images": [
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "c8f8925a58513dd7ddc9aa66ad0b7790437631ad4dc5c1be1d163987c4b749d4"
+        },
+        {
+          "role": "user annotation of required end-on module sections",
+          "sha256": "588eb0f81dcf7f85597aa4655b7e3b3583170a335464c4ef10f409041d2a3b35"
+        }
+      ]
+    }
+  ],
+  "required_geometry": "Four continuous longitudinal green modules, parallel to one fore-aft axis and pointing in the same direction, placed 90 degrees around the glass sphere. End-on views show four compact pod ends; side views show elongated pods. Do not copy radial spears or fore/aft-staggered pod halves.",
+  "legacy_reference": "legacy-reference.png",
+  "user_annotation": "codex-clipboard-957dd0e8-10f9-47a7-a205-713d1515ee36.png",
+  "next_step": "Game integration and final user artistic acceptance remain pending; no fourth ImageGen iteration.",
+  "legacy_identity": {
+    "entry": "MK2C.256",
+    "source_sha256": "2c641c22c822991004906cf881f508acd6df1e871816005a344ce31c6bf3b6a1",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ]
+  },
+  "glb_visual_review": "Independent imported hero, axial and side renders inspected: four continuous parallel longitudinal modules share fore/aft extents and surround a bluish glass sphere at90-degree intervals. All four compact ends are visible in the axial view, with no radial spears or staggered fore/aft pair. Broad green/blue/brass fields retained. Internal hub/brackets and detailed profile are authored interpretation. Rejected concepts are not certified as faithful geometry.",
+  "final_user_acceptance": "pending",
+  "legacy_contact_sha256": "c8f8925a58513dd7ddc9aa66ad0b7790437631ad4dc5c1be1d163987c4b749d4",
+  "reviewed_binary_hashes": {
+    "blend": "378a5f5d09d67f8f70d66c771e5c0771e55dcabeaefe27ae83f3a14f4d68cd01",
+    "glb": "c7588e901f0c3667e6cf9701ad81f6082e5b88f5be7f35eddc6b4d2738ff9945"
+  }
+}

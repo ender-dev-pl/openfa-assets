@@ -1,0 +1,925 @@
+{
+  "id": "openfa:ship/artemian/ultimate-mk-ii",
+  "issue": 249,
+  "name": "Ultimate Mk II",
+  "key": "AR3C",
+  "source": "docs/assets/reconstruction/ships/artemian/ultimate-mk-ii",
+  "size_class": "heavy combat",
+  "world_size_proposal": 88,
+  "equipment_slots": 6,
+  "material_tiles": {
+    "Ultimate Mk II | worn silver cover": 0,
+    "Ultimate Mk II | worn green lower shell": 1,
+    "Ultimate Mk II | oxidized service alloy": 6,
+    "Ultimate Mk II | carbon dark seams": 4
+  },
+  "part_face_budget": {
+    "upper cover": 9000,
+    "lower body": 7000,
+    "service cover": 400,
+    "perimeter fitting": 450,
+    "bezel": 350,
+    "rim": 600,
+    "slot": 120,
+    "default": 300
+  },
+  "edge_finish": {
+    "part_keywords": [
+      "service cover"
+    ],
+    "width": 0.006,
+    "segments": 3,
+    "angle_limit": 0.52,
+    "reason": "Small edge radius on seated curved maintenance covers; continuous lid remains smooth."
+  },
+  "max_triangles": 55000,
+  "max_primitives": 6,
+  "comparison_elevation": 0.29,
+  "comparison_azimuth": 3.141592653589793,
+  "reference_side_bounds": [
+    78,
+    21
+  ],
+  "protected_dents": [
+    {
+      "part": "Ultimate Mk II silver upper cover",
+      "undented_point": [
+        4.853275265020961e-17,
+        -1.62483,
+        0.36
+      ],
+      "outward": [
+        6.123233995736766e-17,
+        -1.0,
+        0
+      ],
+      "minimum_depth": 0.004
+    },
+    {
+      "part": "Ultimate Mk II green lower body",
+      "undented_point": [
+        3.6445488742625233e-17,
+        -1.22016,
+        -0.24
+      ],
+      "outward": [
+        6.123233995736766e-17,
+        -1.0,
+        0
+      ],
+      "minimum_depth": 0.004
+    }
+  ],
+  "attachment_pairs": [
+    {
+      "part": "Ultimate Mk II service cover 0",
+      "support": "Ultimate Mk II silver upper cover"
+    },
+    {
+      "part": "Ultimate Mk II service slot 0 0",
+      "support": "Ultimate Mk II service cover 0"
+    },
+    {
+      "part": "Ultimate Mk II service slot 0 1",
+      "support": "Ultimate Mk II service cover 0"
+    },
+    {
+      "part": "Ultimate Mk II service cover 1",
+      "support": "Ultimate Mk II silver upper cover"
+    },
+    {
+      "part": "Ultimate Mk II service slot 1 0",
+      "support": "Ultimate Mk II service cover 1"
+    },
+    {
+      "part": "Ultimate Mk II service slot 1 1",
+      "support": "Ultimate Mk II service cover 1"
+    },
+    {
+      "part": "Ultimate Mk II service cover 2",
+      "support": "Ultimate Mk II silver upper cover"
+    },
+    {
+      "part": "Ultimate Mk II service slot 2 0",
+      "support": "Ultimate Mk II service cover 2"
+    },
+    {
+      "part": "Ultimate Mk II service slot 2 1",
+      "support": "Ultimate Mk II service cover 2"
+    },
+    {
+      "part": "Ultimate Mk II service cover 3",
+      "support": "Ultimate Mk II silver upper cover"
+    },
+    {
+      "part": "Ultimate Mk II service slot 3 0",
+      "support": "Ultimate Mk II service cover 3"
+    },
+    {
+      "part": "Ultimate Mk II service slot 3 1",
+      "support": "Ultimate Mk II service cover 3"
+    },
+    {
+      "part": "Ultimate Mk II fastener 0 0 0",
+      "support": "Ultimate Mk II service cover 0"
+    },
+    {
+      "part": "Ultimate Mk II fastener 0 0 1",
+      "support": "Ultimate Mk II service cover 0"
+    },
+    {
+      "part": "Ultimate Mk II fastener 0 1 0",
+      "support": "Ultimate Mk II service cover 0"
+    },
+    {
+      "part": "Ultimate Mk II fastener 0 1 1",
+      "support": "Ultimate Mk II service cover 0"
+    },
+    {
+      "part": "Ultimate Mk II fastener 1 0 0",
+      "support": "Ultimate Mk II service cover 1"
+    },
+    {
+      "part": "Ultimate Mk II fastener 1 0 1",
+      "support": "Ultimate Mk II service cover 1"
+    },
+    {
+      "part": "Ultimate Mk II fastener 1 1 0",
+      "support": "Ultimate Mk II service cover 1"
+    },
+    {
+      "part": "Ultimate Mk II fastener 1 1 1",
+      "support": "Ultimate Mk II service cover 1"
+    },
+    {
+      "part": "Ultimate Mk II fastener 2 0 0",
+      "support": "Ultimate Mk II service cover 2"
+    },
+    {
+      "part": "Ultimate Mk II fastener 2 0 1",
+      "support": "Ultimate Mk II service cover 2"
+    },
+    {
+      "part": "Ultimate Mk II fastener 2 1 0",
+      "support": "Ultimate Mk II service cover 2"
+    },
+    {
+      "part": "Ultimate Mk II fastener 2 1 1",
+      "support": "Ultimate Mk II service cover 2"
+    },
+    {
+      "part": "Ultimate Mk II fastener 3 0 0",
+      "support": "Ultimate Mk II service cover 3"
+    },
+    {
+      "part": "Ultimate Mk II fastener 3 0 1",
+      "support": "Ultimate Mk II service cover 3"
+    },
+    {
+      "part": "Ultimate Mk II fastener 3 1 0",
+      "support": "Ultimate Mk II service cover 3"
+    },
+    {
+      "part": "Ultimate Mk II fastener 3 1 1",
+      "support": "Ultimate Mk II service cover 3"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 0",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 0",
+      "support": "Ultimate Mk II fitting bezel 0"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 1",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 1",
+      "support": "Ultimate Mk II fitting bezel 1"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 2",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 2",
+      "support": "Ultimate Mk II fitting bezel 2"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 3",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 3",
+      "support": "Ultimate Mk II fitting bezel 3"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 4",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 4",
+      "support": "Ultimate Mk II fitting bezel 4"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 5",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 5",
+      "support": "Ultimate Mk II fitting bezel 5"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 6",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 6",
+      "support": "Ultimate Mk II fitting bezel 6"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 7",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 7",
+      "support": "Ultimate Mk II fitting bezel 7"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 8",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 8",
+      "support": "Ultimate Mk II fitting bezel 8"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 9",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 9",
+      "support": "Ultimate Mk II fitting bezel 9"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 10",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 10",
+      "support": "Ultimate Mk II fitting bezel 10"
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 11",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 11",
+      "support": "Ultimate Mk II fitting bezel 11"
+    },
+    {
+      "part": "Ultimate Mk II silver upper cover",
+      "support": "Ultimate Mk II green lower body"
+    },
+    {
+      "part": "Ultimate Mk II lid seam rim",
+      "support": "Ultimate Mk II silver upper cover"
+    }
+  ],
+  "interpretation": "Broad elongated low silver cover above a smaller recessed green lower body, annular seam and twelve authored perimeter fittings. Exact fitting count/layout, hatches, hidden geometry and function are interpretation; no emission, cockpit, engine or weapon inferred from bright legacy marks or six uncalibrated equipment slots.",
+  "part_transforms": [
+    {
+      "part": "Ultimate Mk II perimeter fitting 0",
+      "origin": [
+        0.8580622673034668,
+        0.0004158871597610414,
+        -0.20440733432769775
+      ],
+      "axis": [
+        0.5849062204360962,
+        0.007004415150731802,
+        -0.8110706806182861
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 1",
+      "origin": [
+        0.7440385222434998,
+        0.8524202704429626,
+        -0.2060057669878006
+      ],
+      "axis": [
+        0.5259699821472168,
+        0.14534559845924377,
+        -0.8379918932914734
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 2",
+      "origin": [
+        0.43059948086738586,
+        1.4778531789779663,
+        -0.21000194549560547
+      ],
+      "axis": [
+        0.32188868522644043,
+        0.2771775424480438,
+        -0.905295729637146
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 3",
+      "origin": [
+        0.0009914180263876915,
+        1.7075340747833252,
+        -0.21225260198116302
+      ],
+      "axis": [
+        0.016697566956281662,
+        0.3318011164665222,
+        -0.9432016611099243
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 4",
+      "origin": [
+        -0.4305993616580963,
+        1.4778529405593872,
+        -0.21000194549560547
+      ],
+      "axis": [
+        -0.3218887448310852,
+        0.27717751264572144,
+        -0.905295729637146
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 5",
+      "origin": [
+        -0.7440385222434998,
+        0.8524203896522522,
+        -0.2060057669878006
+      ],
+      "axis": [
+        -0.5259699821472168,
+        0.14534547924995422,
+        -0.8379918336868286
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 6",
+      "origin": [
+        -0.8580620288848877,
+        0.00041588227031752467,
+        -0.20440733432769775
+      ],
+      "axis": [
+        -0.5849062204360962,
+        0.0070043327286839485,
+        -0.8110706806182861
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 7",
+      "origin": [
+        -0.7440385222434998,
+        -0.8524202704429626,
+        -0.2060057669878006
+      ],
+      "axis": [
+        -0.5259699821472168,
+        -0.14534559845924377,
+        -0.8379918932914734
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 8",
+      "origin": [
+        -0.43059948086738586,
+        -1.4778531789779663,
+        -0.21000194549560547
+      ],
+      "axis": [
+        -0.32188868522644043,
+        -0.2771775424480438,
+        -0.905295729637146
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 9",
+      "origin": [
+        0.0008342228829860687,
+        -1.7051852941513062,
+        -0.212396040558815
+      ],
+      "axis": [
+        0.014050068333745003,
+        -0.3249773383140564,
+        -0.9456174373626709
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 10",
+      "origin": [
+        0.4305993616580963,
+        -1.4778529405593872,
+        -0.21000194549560547
+      ],
+      "axis": [
+        0.3218887448310852,
+        -0.27717751264572144,
+        -0.905295729637146
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 11",
+      "origin": [
+        0.7440385222434998,
+        -0.8524203896522522,
+        -0.2060057669878006
+      ],
+      "axis": [
+        0.5259699821472168,
+        -0.14534547924995422,
+        -0.8379918336868286
+      ],
+      "axial_scale": 0.35,
+      "transverse_scale": 1.25,
+      "reason": "Actual legacy/concept/GLB feedback: flatten the hanging bulb profile into a low broad seated fitting; preserve its root location. Exact fitting shape/count remains interpretation."
+    }
+  ],
+  "stage": "mobile-ship-remaster",
+  "baseline_sha256": "c2255259e6544f87308c982db8120bdc5120cae4f68ce36cf5f15c99767be4ef",
+  "baseline_bounds": [
+    [
+      -1.062000036239624,
+      -2.17710018157959,
+      -0.38305604457855225
+    ],
+    [
+      1.062000036239624,
+      2.17710018157959,
+      0.5
+    ]
+  ],
+  "final_bounds": [
+    [
+      -1.062000036239624,
+      -2.17710018157959,
+      -0.3125
+    ],
+    [
+      1.062000036239624,
+      2.17710018157959,
+      0.5
+    ]
+  ],
+  "triangles": 43040,
+  "mesh_batches": 4,
+  "material_count": 1,
+  "packed_maps": 3,
+  "editable_part_vertex_groups": {
+    "ServiceAssemblies": [
+      "Ultimate Mk II silver upper cover",
+      "Ultimate Mk II fitting bezel 0",
+      "Ultimate Mk II fitting bezel 1",
+      "Ultimate Mk II fitting bezel 2",
+      "Ultimate Mk II fitting bezel 3",
+      "Ultimate Mk II fitting bezel 4",
+      "Ultimate Mk II fitting bezel 5",
+      "Ultimate Mk II fitting bezel 6",
+      "Ultimate Mk II fitting bezel 7",
+      "Ultimate Mk II fitting bezel 8",
+      "Ultimate Mk II fitting bezel 9",
+      "Ultimate Mk II fitting bezel 10",
+      "Ultimate Mk II fitting bezel 11",
+      "Ultimate Mk II service cover 0",
+      "Ultimate Mk II service cover 1",
+      "Ultimate Mk II service cover 2",
+      "Ultimate Mk II service cover 3"
+    ],
+    "PrimaryHullAndArmour": [
+      "Ultimate Mk II green lower body",
+      "Ultimate Mk II lid seam rim",
+      "Ultimate Mk II perimeter fitting 0",
+      "Ultimate Mk II perimeter fitting 1",
+      "Ultimate Mk II perimeter fitting 2",
+      "Ultimate Mk II perimeter fitting 3",
+      "Ultimate Mk II perimeter fitting 4",
+      "Ultimate Mk II perimeter fitting 5",
+      "Ultimate Mk II perimeter fitting 6",
+      "Ultimate Mk II perimeter fitting 7",
+      "Ultimate Mk II perimeter fitting 8",
+      "Ultimate Mk II perimeter fitting 9",
+      "Ultimate Mk II perimeter fitting 10",
+      "Ultimate Mk II perimeter fitting 11"
+    ],
+    "RecessedMachinery": [
+      "Ultimate Mk II service slot 0 0",
+      "Ultimate Mk II service slot 0 1",
+      "Ultimate Mk II service slot 1 0",
+      "Ultimate Mk II service slot 1 1",
+      "Ultimate Mk II service slot 2 0",
+      "Ultimate Mk II service slot 2 1",
+      "Ultimate Mk II service slot 3 0",
+      "Ultimate Mk II service slot 3 1"
+    ],
+    "TrimAndFasteners": [
+      "Ultimate Mk II fastener 0 0 0",
+      "Ultimate Mk II fastener 0 0 1",
+      "Ultimate Mk II fastener 0 1 0",
+      "Ultimate Mk II fastener 0 1 1",
+      "Ultimate Mk II fastener 1 0 0",
+      "Ultimate Mk II fastener 1 0 1",
+      "Ultimate Mk II fastener 1 1 0",
+      "Ultimate Mk II fastener 1 1 1",
+      "Ultimate Mk II fastener 2 0 0",
+      "Ultimate Mk II fastener 2 0 1",
+      "Ultimate Mk II fastener 2 1 0",
+      "Ultimate Mk II fastener 2 1 1",
+      "Ultimate Mk II fastener 3 0 0",
+      "Ultimate Mk II fastener 3 0 1",
+      "Ultimate Mk II fastener 3 1 0",
+      "Ultimate Mk II fastener 3 1 1"
+    ]
+  },
+  "reductions": [
+    {
+      "part": "Ultimate Mk II silver upper cover",
+      "source_faces": 2946,
+      "final_faces": 2946,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II green lower body",
+      "source_faces": 2178,
+      "final_faces": 2178,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Ultimate Mk II lid seam rim",
+      "source_faces": 768,
+      "final_faces": 1200,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 0",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 0",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 1",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 1",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 2",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 2",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 3",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 3",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 4",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 4",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 5",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 5",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 6",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 6",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 7",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 7",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 8",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 8",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 9",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 9",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 10",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 10",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II fitting bezel 11",
+      "source_faces": 1216,
+      "final_faces": 662,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II perimeter fitting 11",
+      "source_faces": 1154,
+      "final_faces": 996,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II service cover 0",
+      "source_faces": 304,
+      "final_faces": 660,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II service slot 0 0",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Ultimate Mk II service slot 0 1",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Ultimate Mk II fastener 0 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 0 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 0 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 0 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II service cover 1",
+      "source_faces": 304,
+      "final_faces": 660,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II service slot 1 0",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Ultimate Mk II service slot 1 1",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Ultimate Mk II fastener 1 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 1 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 1 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 1 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II service cover 2",
+      "source_faces": 304,
+      "final_faces": 660,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II service slot 2 0",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Ultimate Mk II service slot 2 1",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Ultimate Mk II fastener 2 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 2 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 2 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 2 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II service cover 3",
+      "source_faces": 304,
+      "final_faces": 660,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Ultimate Mk II service slot 3 0",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Ultimate Mk II service slot 3 1",
+      "source_faces": 304,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Ultimate Mk II fastener 3 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 3 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 3 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    },
+    {
+      "part": "Ultimate Mk II fastener 3 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 6
+    }
+  ],
+  "generator_sha256": "7c152a5afe634f62d26a8666787d99944caa5000110239bb54f59db5e9f61d1b",
+  "recipe_sha256": "0ec07d712437bdf82141637eb9be6ed5f090c4d3981d6feffaeab0a60208525e",
+  "shared_primitives_sha256": "1469b823c8eb59eeca4372d8f5b4059f9ab1de5a1d02e4ddcf3ae9a650cbffa1",
+  "maps_generator_sha256": "235a9f6ec6b6186a7781ced10e9cbfaef7923408f5922d5d2f6c56b16b2aa77a",
+  "map_sha256": {
+    "colour.png": "129469027d784ca4a67c661f21ad7d28291f3d30a27175fb9f860fb9704fafac",
+    "normal.png": "f6f3936984cf3234313308daaba22f8f38cede3b6042ba7dc0007224bfe541b4",
+    "orm.png": "af938bc610d5088e3defb36306d0cc8469f38179303e86c18b285e9dcb8120ba"
+  },
+  "blend_sha256": "d970ae89f7d3b5b05da8be646ed2575ae8da20b2de700eb7dcb1c6957f1d5132",
+  "glb_sha256": "2c89290ba89c0753ed5a51c55f54b878ec97d515191f37baad974f9579eca11b",
+  "visual_acceptance": "Agent reviewed actual legacy/concept/imported GLB feedback; final user acceptance, client calibration and preview/client illumination differences separate"
+}

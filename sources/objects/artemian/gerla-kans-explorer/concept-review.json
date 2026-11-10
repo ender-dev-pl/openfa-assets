@@ -1,0 +1,88 @@
+{
+  "asset": "openfa:ship/artemian/gerla-kans-explorer",
+  "issue": 249,
+  "stage": "Canonical remaster, concept and independent imported-GLB feedback reviewed",
+  "legacy": {
+    "entry": "AR0A.256",
+    "source_sha256": "9f89970cc695243b05174e4c4ea6ffa0dcdb3cda69f2665d146e4f8789006704",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ],
+    "all_32_descriptors_inspected": true,
+    "contact_sha256": "c3332a22f1551e75911f5d0c8f9a986508adbda61f189779a1fb2c1e1994172b"
+  },
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. OpenFA Artemian Gerla-Kans Explorer AR0A small scout, ImageGen concept iteration1 of maximum3. Attached image is actual paletted legacy reference and authoritative silhouette/color. Preserve a small low elongated pointed GREEN LOWER WEDGE with a raised GREY METAL upper shell, a single continuous compact body, clearly faceted plane breaks, one tapered pointed end and a broader truncated opposite end. Original sampled side silhouette is about3 times wider than tall; keep a low body, no tall bridge. The grey upper surface is opaque alloy, NOT a proven glass cockpit. Two equipment slots exist but their mount positions/function are not recovered: do NOT add guns, external pods or guess engines. Fine surface construction is artistic interpretation: integrate a few small seated access panels, narrow recesses and fasteners appropriate to a small scout. Culturally preferred hard metal/alloy shells and deliberate planar edges may guide finish, but do not create a literal insect or borrowed heraldry. Palette follows original green lower body and grey upper shell, with sparse neutral metal details; not the warm Braccatian palette. Used spacecraft metal with restrained seam grime, small scratches, scuffed edges and tiny dents, broad readable surfaces and sparse seams rather than a dense hull panel grid. One coherent three-quarter hero plus smaller side view of exactly the same craft, neutral charcoal studio backdrop, no text, no thrust plumes or original pixel collage.",
+      "verdict": "Rejected: correct grey/green shell hierarchy, but side silhouette too long/thin and lower green too yellow/olive.",
+      "input_images": [
+        {
+          "role": "actual legacy reference",
+          "sha256": "c3332a22f1551e75911f5d0c8f9a986508adbda61f189779a1fb2c1e1994172b"
+        }
+      ],
+      "generated_original_sha256": "4cdc98e4cb1c6beff9a58fad3abaf1e8aee2a3f95d3869e7953bbeee5023ad2b",
+      "image": "gallery/media/concepts/artemian/gerla-kans-explorer-01.png",
+      "sha256": "4cdc98e4cb1c6beff9a58fad3abaf1e8aee2a3f95d3869e7953bbeee5023ad2b",
+      "gallery_label": "Rejected elongated concept1"
+    },
+    {
+      "number": 2,
+      "prompt": "Precise-object-edit, Gerla-Kans Explorer AR0A concept iteration2 of max3. Input1 is REJECTED first concept, input2 is authoritative actual paletted legacy. Keep the simple faceted grey OPAQUE alloy upper shell and green lower wedge, restrained access covers and wear, NO canopy/weapons/exhausts. Correct proportions: the first concept has an excessively long thin side profile around6:1. COMPRESS ITS LENGTH BY ABOUT HALF while retaining body HEIGHT and WIDTH so the full SIDE silhouette is only3.0 to3.3 times longer than it is tall, matching the actual legacy side frame19pixels by6pixels. Make a short, compact, solid pointed wedge, not a long blade, not a rail. Grey upper shell remains a raised faceted compact mass with a short tapered forward end and broad truncated rear, green lower body visible around its perimeter. Match original medium cool forest-green underbody, not yellowish olive/drab; neutral grey metal above. Primary image: a large exact orthographic SIDE VIEW that makes the compact3:1 length/height ratio unmistakable; smaller three-quarter view of precisely the same stubby compact craft. Do not stretch it out to fill the canvas. A few sparse seams and scuffs, no dense tiled panels. Neutral charcoal backdrop, no text, no source-pixel collage. Correct silhouette before adding details.",
+      "verdict": "Retained broad silhouette/material reference: side aspect approximately3.3, shorter solid wedge, raised grey opaque shell and green lower body. Fine access-panel shapes remain authored interpretation.",
+      "input_images": [
+        {
+          "role": "rejected first concept edit target",
+          "sha256": "4cdc98e4cb1c6beff9a58fad3abaf1e8aee2a3f95d3869e7953bbeee5023ad2b"
+        },
+        {
+          "role": "actual legacy reference",
+          "sha256": "c3332a22f1551e75911f5d0c8f9a986508adbda61f189779a1fb2c1e1994172b"
+        }
+      ],
+      "generated_original_sha256": "a874ed08fa7af3b245d70e78bdbe553a6ff58cab6f8f7f6ee0a5e0a1aedcca46",
+      "image": "gallery/media/concepts/artemian/gerla-kans-explorer-02.png",
+      "sha256": "a874ed08fa7af3b245d70e78bdbe553a6ff58cab6f8f7f6ee0a5e0a1aedcca46",
+      "gallery_label": "Reviewed compact concept2"
+    }
+  ],
+  "maximum_iterations": 3,
+  "remaining_iterations": 1,
+  "next_step": "Game thread integration using one canonical model across all usages; client scale/equipment socket calibration and final user artistic acceptance remain separate.",
+  "mode": "built-in image_gen",
+  "legacy_identity": {
+    "entry": "AR0A.256",
+    "source_sha256": "9f89970cc695243b05174e4c4ea6ffa0dcdb3cda69f2665d146e4f8789006704",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ]
+  },
+  "reviewed_binary_hashes": {
+    "blend": "c2ac7c77f64973c3b3ecdd9fba72569a8a1e92022acb57a1155cf424a99765cd",
+    "glb": "68f44c6f41378cd423ad6e68d3a754f52429aa470ceef1a6b8056009c4e5b57c"
+  },
+  "glb_feedback": [
+    {
+      "round": 1,
+      "verdict": "Initial atlas/budget pass retained a grey needle-like prow and overly flat upper shell; actual legacy/concept/imported views called for a broader truncated grey forecap and raised shell."
+    },
+    {
+      "round": 2,
+      "verdict": "First profile deformation made an unwanted bulbous/flared fore section; actual GLB render rejected. Historical binary was overwritten in place rather than copied as another model."
+    },
+    {
+      "round": 3,
+      "verdict": "Corrected linear half-width profile produces a blunt tapered grey forecap with no flange. Actual imported hero, side and axial headings were inspected against paletted legacy and concept2; green lower planform and grey opaque shell hierarchy retained. Sparse covers, fittings and wear remain authored detail, not recovered engineering."
+    }
+  ],
+  "glb_visual_review": "Green pointed lower body and raised grey faceted shell agree with legacy broad form/colour. The grey forecap is now truncated and moderately raised, following concept feedback without replacing the clearer original green planform. Actual imported side and opposite headings were inspected. Concept hatch shapes are interpretive; existing fitted service covers/slots and neutral rear interfaces are retained. No canopy, engine or weapon is inferred. Comparison camera uses an authored 180-degree azimuth correction and estimated elevation, not a calibrated gameplay transform.",
+  "final_user_acceptance": "pending"
+}

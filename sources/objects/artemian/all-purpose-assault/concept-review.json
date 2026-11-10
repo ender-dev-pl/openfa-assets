@@ -1,0 +1,70 @@
+{
+  "asset": "openfa:ship/artemian/all-purpose-assault",
+  "stage": "Canonical remaster, concept and independent imported-GLB feedback reviewed",
+  "use_case": "stylized-concept",
+  "tool": "Built-in image_gen",
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. Asset: Artemian All-Purpose Assault AR1A, small combat spacecraft remaster for OpenFA. Input image is the actual correctly paletted low-resolution legacy sprite in four headings; use it as PRIMARY silhouette and colour evidence, not a texture. Generate a high-detail physically plausible 3D concept of the SAME broad low green delta/wedge craft with a pointed front, a small low opaque grey alloy central cowl, and two small low grey lateral cowls at its wide rear-side shoulders. Body width is approximately its length, NOT an elongated jet. Preserve the broad green planform and three modest grey accents; keep all cowls firmly seated into the green body, never floating. These are alloy covers, NOT transparent cockpits, NOT engine pods. Shared palette: medium cool forest green hull and neutral grey/silver cowls, dark recessed service details. Restraint: a few fitted service hatches, sparse fasteners, shallow vents, gently bevelled alloy edges. Fine irregular material grime in recesses, stains, scratches, restrained physical dents; large calm continuous shell surfaces without dense rectangular panel grids. No invented guns, extra wings, flames, pylons, fins, labels, logos or speculative equipment. Show one coherent spacecraft in a large elevated front three-quarter view and a smaller consistent orthographic top view on a plain charcoal background, both facing the same direction. Professional game remaster concept, readable primary volumes, realistic worn metal, restrained studio light. Avoid generic human aircraft styling and ornament. No text.",
+      "verdict": "Rejected geometry: extra grey rear-corner plates/cowls exceed the interpreted central-plus-two-lateral arrangement. Broad green planform and restrained worn finish useful.",
+      "input_images": [
+        {
+          "role": "Actual paletted legacy reference contact sheet",
+          "sha256": "61d1508eb9a85aa32f6d076c31f40e7e54bc76522c7a5afc65797a89f090a552"
+        }
+      ],
+      "generated_original_sha256": "76dcd34aa929a8459f5be8635c99365206244cac92e0a8f3493f5036f6c64a9e",
+      "image": "gallery/media/concepts/artemian/all-purpose-assault-01.png",
+      "sha256": "76dcd34aa929a8459f5be8635c99365206244cac92e0a8f3493f5036f6c64a9e",
+      "gallery_label": "Rejected extra grey cowls"
+    },
+    {
+      "number": 2,
+      "prompt": "Use case: stylized-concept. Asset: Artemian All-Purpose Assault AR1A, small combat spacecraft remaster for OpenFA. Input image is the actual correctly paletted low-resolution legacy sprite in four headings; use it as PRIMARY silhouette and colour evidence, not a texture. Generate a high-detail physically plausible 3D concept of the SAME broad low green delta/wedge craft with a pointed front, a small low opaque grey alloy central cowl, and two small low grey lateral cowls at its wide rear-side shoulders. Body width is approximately its length, NOT an elongated jet. Preserve the broad green planform and three modest grey accents; keep all cowls firmly seated into the green body, never floating. These are alloy covers, NOT transparent cockpits, NOT engine pods. Shared palette: medium cool forest green hull and neutral grey/silver cowls, dark recessed service details. Restraint: a few fitted service hatches, sparse fasteners, shallow vents, gently bevelled alloy edges. Fine irregular material grime in recesses, stains, scratches, restrained physical dents; large calm continuous shell surfaces without dense rectangular panel grids. No invented guns, extra wings, flames, pylons, fins, labels, logos or speculative equipment. Show one coherent spacecraft in a large elevated front three-quarter view and a smaller consistent orthographic top view on a plain charcoal background, both facing the same direction. Professional game remaster concept, readable primary volumes, realistic worn metal, restrained studio light. Avoid generic human aircraft styling and ornament. No text.\nITERATION 2 targeted correction: the previous concept introduced extra grey corner plates. EXACTLY THREE grey cowls total on the entire craft: ONE central low grey cowl, ONE port lateral cowl and ONE starboard lateral cowl at the broad shoulders. The two rear corners are plain green hull. No fourth or fifth grey plate/cowl at the back. The lateral cowls should be rounded low opaque alloy covers, pointed fore/aft, firmly seated, not boxy corner armour. Top view must show this exact count of three. Use the attached actual legacy contact sheet as authority. Retain sparse detail and broad green body.",
+      "verdict": "Retained for broad planform, three seated grey alloy covers, sparse detail and worn finish. Central cowl is boxier and side covers more inset than the existing interpretation; low-resolution legacy does not establish these exact surfaces. Do not copy decorative seams or change unproven engineering/function.",
+      "input_images": [
+        {
+          "role": "Actual paletted legacy reference contact sheet",
+          "sha256": "61d1508eb9a85aa32f6d076c31f40e7e54bc76522c7a5afc65797a89f090a552"
+        }
+      ],
+      "generated_original_sha256": "c35b8e35be69029fc13ae33dbcd660cb466a85d845b11ff1312bb6036d5f7453",
+      "image": "gallery/media/concepts/artemian/all-purpose-assault-02.png",
+      "sha256": "c35b8e35be69029fc13ae33dbcd660cb466a85d845b11ff1312bb6036d5f7453",
+      "gallery_label": "Reviewed three-cowl concept"
+    }
+  ],
+  "iteration_limit": 3,
+  "iterations_used": 2,
+  "issue": 249,
+  "legacy_identity": {
+    "entry": "AR1A.256",
+    "source_sha256": "d69ca7ed6d46fdb2e772d4f81fa37ec039b45ff3a050d1cca4166524ee29f8d7",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ],
+    "all_32_descriptors_inspected": true
+  },
+  "reviewed_binary_hashes": {
+    "blend": "de581781ae7cc452bdf1824171a7596698804c88f4fb44f29eb733d14d37393a",
+    "glb": "fd39236bf4aa9ee616adcb65c37dbcc24ae92b76b827e7c0fc7fcf0b61b73ee1"
+  },
+  "glb_feedback": [
+    {
+      "round": 1,
+      "verdict": "Actual independent GLB views retained the broad green delta and three seated grey cowls, but the sharp hull/cover edges looked too much like cut sheet. Added a small manufactured edge radius, then adjusted density budgets after the bevel pass exceeded the existing 55000-triangle limit."
+    },
+    {
+      "round": 2,
+      "verdict": "Actual hero/rear/top and corresponding headings inspected with legacy and concept2. Rounded perimeter and covers retain broad form; 46320 triangles, all four physical dents and 53 checked contacts remain. Side cowls remain at the legacy shoulder accents rather than copying concept2 inset placement. Opaque, more rounded cowl form is a low-resolution interpretation; no cockpit/engine/weapon function is inferred."
+    }
+  ],
+  "glb_visual_review": "Corresponding 0/4/12/28 views compared with correctly paletted legacy and concept2. Broad pointed green body, three small grey cover regions and distinct lateral accents retained. Exact cowl curvatures, fine fittings, underside and hidden engineering remain interpretation; avoid treating the concept as recovered geometry. Comparison camera uses estimated elevation and 180-degree azimuth correction, not recovered gameplay calibration. Exact side alpha bounds measured 16x8 pixels; coarse aspect check is diagnostic, not a percentage-fidelity claim.",
+  "next_step": "Use this one canonical GLB across gameplay and menus; game thread must validate client scale, heading, material appearance and three uncalibrated equipment sockets.",
+  "final_user_acceptance": "pending"
+}

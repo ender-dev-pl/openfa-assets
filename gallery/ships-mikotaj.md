@@ -6,41 +6,49 @@
 
 `openfa:ship/mikotaj/hiero`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Hiero](../gallery/media/docs/assets/reconstruction/ships/mikotaj/hiero/front-quarter.png)
+![Hiero](../gallery/media/objects/mikotaj/hiero/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/mikotaj/hiero/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mikotaj/hiero/model.glb)
+[Blend](../sources/objects/mikotaj/hiero/model.blend) · [GLB](../sources/objects/mikotaj/hiero/model.glb)
+
+Additional views: [Rear machinery](../gallery/media/objects/mikotaj/hiero/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/hiero/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/hiero/heading-04.png) · [Retrospective concept 1](../gallery/media/concepts/mikotaj/hiero-01.png)
 
 ## Ylikt-shan
 
 `openfa:ship/mikotaj/ylikt-shan`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Ylikt-shan](../gallery/media/docs/assets/reconstruction/ships/mikotaj/ylikt-shan/front-quarter.png)
+![Ylikt-shan](../gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/mikotaj/ylikt-shan/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mikotaj/ylikt-shan/model.glb)
+[Blend](../sources/objects/mikotaj/ylikt-shan/model.blend) · [GLB](../sources/objects/mikotaj/ylikt-shan/model.glb)
+
+Additional views: [Rear machinery](../gallery/media/objects/mikotaj/ylikt-shan/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/ylikt-shan/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/ylikt-shan/heading-04.png) · [Retrospective concept 1](../gallery/media/concepts/mikotaj/ylikt-shan-01.png)
 
 ## Falari-Lourn
 
 `openfa:ship/mikotaj/falari-lourn`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Falari-Lourn](../gallery/media/docs/assets/reconstruction/ships/mikotaj/falari-lourn/front-quarter.png)
+![Falari-Lourn](../gallery/media/objects/mikotaj/falari-lourn/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/mikotaj/falari-lourn/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mikotaj/falari-lourn/model.glb)
+[Blend](../sources/objects/mikotaj/falari-lourn/model.blend) · [GLB](../sources/objects/mikotaj/falari-lourn/model.glb)
+
+Additional views: [Rear machinery](../gallery/media/objects/mikotaj/falari-lourn/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/falari-lourn/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/falari-lourn/heading-04.png) · [Rejected concept 1 (geometry)](../gallery/media/concepts/mikotaj/falari-lourn-01.png) · [Rejected concept 2 (geometry)](../gallery/media/concepts/mikotaj/falari-lourn-02.png) · [Rejected concept 3 (geometry)](../gallery/media/concepts/mikotaj/falari-lourn-03.png) · [Four parallel modules — axial GLB](../gallery/media/objects/mikotaj/falari-lourn/axial-front.png)
 
 ## Ruth-Strivakh
 
 `openfa:ship/mikotaj/ruth-strivakh`
 
-**First available iteration — initial-reference-study**
+**First available iteration — mobile-ship-remaster**
 
-![Ruth-Strivakh](../gallery/media/docs/assets/reconstruction/ships/mikotaj/ruth-strivakh/front-quarter.png)
+![Ruth-Strivakh](../gallery/media/objects/mikotaj/ruth-strivakh/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/mikotaj/ruth-strivakh/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mikotaj/ruth-strivakh/model.glb)
+[Blend](../sources/objects/mikotaj/ruth-strivakh/model.blend) · [GLB](../sources/objects/mikotaj/ruth-strivakh/model.glb)
+
+Additional views: [Rear machinery](../gallery/media/objects/mikotaj/ruth-strivakh/rear-quarter.png) · [Actual imported wireframe](../gallery/media/objects/mikotaj/ruth-strivakh/technical-wireframe.png) · [Legacy heading4 view](../gallery/media/objects/mikotaj/ruth-strivakh/heading-04.png) · [Retrospective concept 1](../gallery/media/concepts/mikotaj/ruth-strivakh-01.png)
 
 ## Na-Xanth
 

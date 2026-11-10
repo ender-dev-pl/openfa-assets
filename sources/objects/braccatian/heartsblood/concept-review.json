@@ -1,0 +1,56 @@
+{
+  "asset": "openfa:ship/braccatian/heartsblood",
+  "review_type": "Retrospective review; the initial mobile pass skipped ImageGen",
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. OpenFA Braccatian HeartsBlood BR2C large transporter, required retrospective concept iteration1 of max3. Attached is actual paletted legacy, authoritative multi-angle reference. Preserve stout ochre/gold main barrel hull, rounded rose-copper narrower end cap with small central metal tip, opposite broad grey/dark aft cluster and FOUR separate rose-copper longitudinal side pods spaced at90 degrees around the central hull. Each side pod has repeated gold collar bands, integrated mounting brackets and dark end fittings; keep their count and the original broad clustered silhouette, not cargo containers. The aft central body has four recessed round dark openings with silver collars, rendered as openings without inventing engine/weapon function. Grey longitudinal cheek panels are subordinate to the four banded rose pods. Related family palette to WidowMaker: worn ochre brass, rose copper, slate grey and silver. Modest recess grime, scratches, isolated dents and sparse service seams; preserve broad color areas, no dense tiled panel grid. No flames, glass cockpit, new weapons, giant antennas or extra pods. Show one coherent three-quarter view and small axial/reverse view of exactly the same geometry, neutral charcoal studio background, no text or legacy pixel collage.",
+      "image": "gallery/media/concepts/braccatian/heartsblood-01.png",
+      "verdict": "Rejected inset topology: the bottom outboard pod incorrectly has an open cup instead of the closed cap shared by its siblings; hero broad form/color retained provisionally.",
+      "gallery_label": "Rejected concept 1",
+      "sha256": "c3e43d3e2cdd385b3274ffb2ab50318a728f537e80210384e80647d73c164832",
+      "input_images": [
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "f548cda2a3fb4550118af62ca947bbb5fd835589991414bb8ee73ba0b85a74b6"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "prompt": "Precise-object-edit: OpenFA Braccatian HeartsBlood BR2C concept iteration2 of maximum3. Input1 is the first generated concept EDIT TARGET; input2 is actual legacy reference. Keep the hero ship, worn ochre/rose/slate colors, four banded rose side pods, main hull and four central recessed openings unchanged. FIX ONLY THE INCONSISTENT SMALL AXIAL INSET: all FOUR OUTBOARD ROSE PODS at top/right/bottom/left must have matching CLOSED dark slate end caps with small central solid bosses, like the top/left/right caps already shown. The bottom outboard pod in the first inset mistakenly has an open cup/extra nozzle. Replace that erroneous open cup with the same CLOSED dark-grey cap and small solid centre as its three siblings. There are exactly FOUR OPEN circular recesses in the CENTRAL aft hull, plus FOUR CLOSED side-pod end caps around it. No fifth central opening and no fifth side pod. Hero and inset must agree; preserve hero composition and geometry, no added engines/weapons/flames, no text, no new panel grid. No redesign.",
+      "image": "gallery/media/concepts/braccatian/heartsblood-02.png",
+      "verdict": "Retained: corrected inset has four closed banded side-pod caps around four central aft openings, consistent with hero and the legacy-constrained layout.",
+      "gallery_label": "Reviewed concept 2",
+      "sha256": "137e397f9ec802e4d93bbf01216a745a0535ff06684c59f2bf7f65fc5a9c7d7f",
+      "input_images": [
+        {
+          "role": "first concept edit target with rejected inset",
+          "sha256": "c3e43d3e2cdd385b3274ffb2ab50318a728f537e80210384e80647d73c164832"
+        },
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "f548cda2a3fb4550118af62ca947bbb5fd835589991414bb8ee73ba0b85a74b6"
+        }
+      ]
+    }
+  ],
+  "glb_visual_review": "Imported GLB retains four banded rose pods around the ochre main hull, copper terminal and grey aft cluster. It does not copy the first concept's inconsistent bottom-pod opening. Current rounded pod profile and mounts remain authored interpretations where the reference is unresolved. Rougher alloy finish applied after concept feedback.",
+  "final_user_acceptance": "pending",
+  "legacy_identity": {
+    "entry": "BR2C.256",
+    "source_sha256": "0125a9b47826ac0a4a029993817d6d7e1254c7599a535cc183a63e270390eae9",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ]
+  },
+  "legacy_contact_sha256": "f548cda2a3fb4550118af62ca947bbb5fd835589991414bb8ee73ba0b85a74b6",
+  "reviewed_binary_hashes": {
+    "blend": "c6396f2346364489edbae1ac0307fce39492af59ab3859f929cb8068c248bad9",
+    "glb": "9001a83fc5da27dc2c9666d3296234ddf2d45a83922a28e71fafcb9d49432091"
+  }
+}

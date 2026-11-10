@@ -1,0 +1,1061 @@
+{
+  "issue": 248,
+  "scope": "Existing mobile ships only; all seven fixed-scale stations excluded. Git snapshot/content audit, not fresh runtime or artistic acceptance.",
+  "snapshots": {
+    "terran": "b2f9aad9449538f1062056180c3317b75fc1a96b",
+    "rigellian": "93582d421d1ddef0b6a0172832df05cd4d30ad8f",
+    "achaean": "3722ae78246ba213d2327aa39c2ad338a35d7b9b"
+  },
+  "models": [
+    {
+      "id": "openfa:assault-fighter",
+      "culture": "terran",
+      "snapshot": "b2f9aad9449538f1062056180c3317b75fc1a96b",
+      "source_entry": "PS0A.256",
+      "legacy_source_sha256": "6807bc063ac70acf48cc812a2b9a0d69a251ed5d0113463e6678275b08b5f220",
+      "canonical_selection": {
+        "stage": "layered-construction",
+        "blend": "objects/terran/assault-fighter/model.blend",
+        "glb": "objects/terran/assault-fighter/model.glb",
+        "issue": 227,
+        "integration": "Single canonical payload replaces all preceding model variants. Reuse this path for flight, construction, build menu and SciTek; client event/visibility/terrain integration requires separate runtime verification."
+      },
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "sources": [
+        {
+          "stage": "layered-construction",
+          "blend": "sources/objects/terran/assault-fighter/model.blend",
+          "blend_sha256": "463027eb6ffc3f7cf6a79a32552b893b92d14fcc3a79ee4886cc15571bda87dc",
+          "inventory_hash_matches": true,
+          "glb": "sources/objects/terran/assault-fighter/model.glb",
+          "glb_sha256": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087"
+        }
+      ],
+      "protocol_status": "Source inventory inspected; concept and corresponding legacy/imported-render feedback not certified. Preserve accepted appearance and construction layers during any follow-up.",
+      "next_action": "Inspect existing source-specific art/reference reports before deciding whether a retrospective concept or just missing evidence is needed; do not infer missing geometry from absent protocol metadata."
+    },
+    {
+      "id": "openfa:combat-eagle",
+      "culture": "terran",
+      "snapshot": "b2f9aad9449538f1062056180c3317b75fc1a96b",
+      "source_entry": "PS1A.256",
+      "legacy_source_sha256": "2a43ec61b99cffdd70a8d1e3c055075e1454356612a124d3c8648a3e22b8308e",
+      "canonical_selection": {
+        "stage": "layered-construction",
+        "blend": "objects/terran/combat-eagle/model.blend",
+        "glb": "objects/terran/combat-eagle/model.glb",
+        "issue": 227,
+        "integration": "Single canonical payload replaces all preceding model variants. Reuse this path for flight, construction, build menu and SciTek; client event/visibility/terrain integration requires separate runtime verification."
+      },
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "sources": [
+        {
+          "stage": "layered-construction",
+          "blend": "sources/objects/terran/combat-eagle/model.blend",
+          "blend_sha256": "52a70d2a6698f0c4e60be4023217d6c1fec2d7a1e28286db13a697b0b6cd7dd8",
+          "inventory_hash_matches": true,
+          "glb": "sources/objects/terran/combat-eagle/model.glb",
+          "glb_sha256": "29bef70eaeb3f5f0845780c3ad0d090147e19a2b58c6e945f1e586ccce964677"
+        }
+      ],
+      "protocol_status": "Source inventory inspected; concept and corresponding legacy/imported-render feedback not certified. Preserve accepted appearance and construction layers during any follow-up.",
+      "next_action": "Inspect existing source-specific art/reference reports before deciding whether a retrospective concept or just missing evidence is needed; do not infer missing geometry from absent protocol metadata."
+    },
+    {
+      "id": "openfa:scoutship",
+      "culture": "terran",
+      "snapshot": "b2f9aad9449538f1062056180c3317b75fc1a96b",
+      "source_entry": "PS2A.256",
+      "legacy_source_sha256": "e38d9b24c70cffdb7945e80bf9127634807ec68a496f49992f83777f50bb69b9",
+      "canonical_selection": {
+        "stage": "layered-construction",
+        "blend": "objects/terran/scoutship/model.blend",
+        "glb": "objects/terran/scoutship/model.glb",
+        "issue": 227,
+        "integration": "Single canonical payload replaces all preceding model variants. Reuse this path for flight, construction, build menu and SciTek; client event/visibility/terrain integration requires separate runtime verification."
+      },
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "sources": [
+        {
+          "stage": "layered-construction",
+          "blend": "sources/objects/terran/scoutship/model.blend",
+          "blend_sha256": "85baa587530cab28fea80ad291b0006fb8d6f15d1d39625ba2de3abedaac9bad",
+          "inventory_hash_matches": true,
+          "glb": "sources/objects/terran/scoutship/model.glb",
+          "glb_sha256": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3"
+        }
+      ],
+      "protocol_status": "Source inventory inspected; concept and corresponding legacy/imported-render feedback not certified. Preserve accepted appearance and construction layers during any follow-up.",
+      "next_action": "Inspect existing source-specific art/reference reports before deciding whether a retrospective concept or just missing evidence is needed; do not infer missing geometry from absent protocol metadata."
+    },
+    {
+      "id": "openfa:destructor",
+      "culture": "terran",
+      "snapshot": "b2f9aad9449538f1062056180c3317b75fc1a96b",
+      "source_entry": "PS3C.256",
+      "legacy_source_sha256": "4728f5f1bc1babef43a127a776d70cdb0c6f87c2b8827ff83ec92264556b0b3d",
+      "canonical_selection": null,
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "sources": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "sources/docs/assets/reconstruction/ships/terran/destructor/model.blend",
+          "blend_sha256": "55409a2c0fb93eb0bf886fb4b116d24a5c5f05f336cbd5a68a0a3a7c6d53bbe9",
+          "inventory_hash_matches": true,
+          "glb": "sources/docs/assets/reconstruction/ships/terran/destructor/model.glb",
+          "glb_sha256": "72b507f43409883797fc4ace51032b064fc54f590ba87ba8719488b8d709f847"
+        }
+      ],
+      "protocol_status": "Source inventory inspected; concept and corresponding legacy/imported-render feedback not certified. Preserve accepted appearance and construction layers during any follow-up.",
+      "next_action": "Inspect existing source-specific art/reference reports before deciding whether a retrospective concept or just missing evidence is needed; do not infer missing geometry from absent protocol metadata."
+    },
+    {
+      "id": "openfa:terminator",
+      "culture": "terran",
+      "snapshot": "b2f9aad9449538f1062056180c3317b75fc1a96b",
+      "source_entry": "PS4C.256",
+      "legacy_source_sha256": "0b59fedc9cbc9f65cc74b5a7efc21378d7fc90df860cb390573304e218740e52",
+      "canonical_selection": null,
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "sources": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "sources/docs/assets/reconstruction/ships/terran/terminator/model.blend",
+          "blend_sha256": "b464ef0ec6556f632212335afccc8c9d9e1c42cb4248049f8b5e9f15ed4cb013",
+          "inventory_hash_matches": true,
+          "glb": "sources/docs/assets/reconstruction/ships/terran/terminator/model.glb",
+          "glb_sha256": "1add528105d65720a81892b01941a9544cd283a46228a6eac41cf89f3607af4b"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "sources/objects/terran/terminator/refined/model.blend",
+          "blend_sha256": "07a05d0ffb2e71ce7be5231ad85f5675dda42df3994a9e696a12e38bb99f111a",
+          "inventory_hash_matches": true,
+          "glb": "sources/objects/terran/terminator/refined/model.glb",
+          "glb_sha256": "ad8f9217645347aa7649a9b0aa77b46c86276088e8d650917d84425f79412fed"
+        }
+      ],
+      "protocol_status": "Source inventory inspected; concept and corresponding legacy/imported-render feedback not certified. Preserve accepted appearance and construction layers during any follow-up.",
+      "next_action": "Inspect existing source-specific art/reference reports before deciding whether a retrospective concept or just missing evidence is needed; do not infer missing geometry from absent protocol metadata."
+    },
+    {
+      "id": "openfa:transporter",
+      "culture": "terran",
+      "snapshot": "b2f9aad9449538f1062056180c3317b75fc1a96b",
+      "source_entry": "PS5C.256",
+      "legacy_source_sha256": "97ac0a9cb9e567bef18ae40d940124a5bfb2a8a3a0f7bcd906e37acb95695449",
+      "canonical_selection": null,
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "sources": [
+        {
+          "stage": "transporter-study",
+          "blend": "sources/docs/assets/bootstrap-3d/transporter-inspired/transporter.blend",
+          "blend_sha256": "04aafd76f1c94e40bbae87524f3569de3a29216d0f7eb5bba56e5b9df73644cd",
+          "inventory_hash_matches": true,
+          "glb": "sources/docs/assets/bootstrap-3d/transporter-inspired/transporter.glb",
+          "glb_sha256": "2e67d50b4247ff4dada7f926e953f1c1aeaa5b9b42b4d06a1843e70fa9dc0f74"
+        }
+      ],
+      "protocol_status": "Source inventory inspected; concept and corresponding legacy/imported-render feedback not certified. Preserve accepted appearance and construction layers during any follow-up.",
+      "next_action": "Inspect existing source-specific art/reference reports before deciding whether a retrospective concept or just missing evidence is needed; do not infer missing geometry from absent protocol metadata."
+    },
+    {
+      "id": "openfa:fleet-battleship",
+      "culture": "terran",
+      "snapshot": "b2f9aad9449538f1062056180c3317b75fc1a96b",
+      "source_entry": "PS6C.256",
+      "legacy_source_sha256": "3b5122fd617e03e0be71f1b47100d6c968bb1a97de785a13a18e69a0c69c2694",
+      "canonical_selection": null,
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "sources": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "sources/docs/assets/reconstruction/ships/terran/fleet-battleship/model.blend",
+          "blend_sha256": "e28f83b6d9100af1646a04521a2d508644a406b3a8feeb40780d61ad271f8372",
+          "inventory_hash_matches": true,
+          "glb": "sources/docs/assets/reconstruction/ships/terran/fleet-battleship/model.glb",
+          "glb_sha256": "7a4fcf6ed2cbae1487bed20b51acae8b35e2f6301835e2cbc64effc0709e68d4"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "sources/objects/terran/fleet-battleship/refined/model.blend",
+          "blend_sha256": "992680efcb679c3c1ec1165233b6449e60adf833fc39064ee4e72b225824159f",
+          "inventory_hash_matches": true,
+          "glb": "sources/objects/terran/fleet-battleship/refined/model.glb",
+          "glb_sha256": "f43e9b36b8144855b25f9697e5a47c264e8bb3f3b1dfe479124f1c1a6ed2ded9"
+        }
+      ],
+      "protocol_status": "Source inventory inspected; concept and corresponding legacy/imported-render feedback not certified. Preserve accepted appearance and construction layers during any follow-up.",
+      "next_action": "Inspect existing source-specific art/reference reports before deciding whether a retrospective concept or just missing evidence is needed; do not infer missing geometry from absent protocol metadata."
+    },
+    {
+      "id": "openfa:command-cruiser",
+      "culture": "terran",
+      "snapshot": "b2f9aad9449538f1062056180c3317b75fc1a96b",
+      "source_entry": "PS8C.256",
+      "legacy_source_sha256": "d06a24e9ecb5f379d1922e337d3431d3147e7490fb33fd3ef3ee3413bcc3148b",
+      "canonical_selection": null,
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "sources": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "sources/docs/assets/reconstruction/ships/terran/command-cruiser/model.blend",
+          "blend_sha256": "b2d5c1ba3176d8a945669588cce343894b1dd8a19dc216d961c3c33bf6ba5ea9",
+          "inventory_hash_matches": true,
+          "glb": "sources/docs/assets/reconstruction/ships/terran/command-cruiser/model.glb",
+          "glb_sha256": "7ec6c048ee106f6481aef49e365d8c4dcf9d5a18258fe25f46be8a2acbda922a"
+        },
+        {
+          "stage": "shared-refined",
+          "blend": "sources/objects/terran/command-cruiser/refined/model.blend",
+          "blend_sha256": "0ad10c30293ca917d93d7606935eea2f48e55fc0cb31ce2e41fa9d54ea37f5e3",
+          "inventory_hash_matches": true,
+          "glb": "sources/objects/terran/command-cruiser/refined/model.glb",
+          "glb_sha256": "1095a207d05d8375adb66a9ff63f4a8315dffa90886a04fd9c105d8a2e8e6557"
+        }
+      ],
+      "protocol_status": "Source inventory inspected; concept and corresponding legacy/imported-render feedback not certified. Preserve accepted appearance and construction layers during any follow-up.",
+      "next_action": "Inspect existing source-specific art/reference reports before deciding whether a retrospective concept or just missing evidence is needed; do not infer missing geometry from absent protocol metadata."
+    },
+    {
+      "id": "openfa:spy-satellite",
+      "culture": "terran",
+      "snapshot": "b2f9aad9449538f1062056180c3317b75fc1a96b",
+      "source_entry": "PS9C.256",
+      "legacy_source_sha256": "ff9cdc05ed508d44aced07c81ddb347cc414e5b3c87466c01c87a35b9140574a",
+      "canonical_selection": null,
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "sources": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "sources/docs/assets/reconstruction/ships/terran/spy-satellite/model.blend",
+          "blend_sha256": "66a4687c69ab75692a27b23738ebd4ceaf77a72c92651eb5118911610624613a",
+          "inventory_hash_matches": true,
+          "glb": "sources/docs/assets/reconstruction/ships/terran/spy-satellite/model.glb",
+          "glb_sha256": "716bc7417a73efa01f2f88f87e76c00f5522570352ca61695fd82145be4c1a12"
+        }
+      ],
+      "protocol_status": "Source inventory inspected; concept and corresponding legacy/imported-render feedback not certified. Preserve accepted appearance and construction layers during any follow-up.",
+      "next_action": "Inspect existing source-specific art/reference reports before deciding whether a retrospective concept or just missing evidence is needed; do not infer missing geometry from absent protocol metadata."
+    },
+    {
+      "id": "openfa:ship/rigellian/lazzaro-research",
+      "culture": "rigellian",
+      "snapshot": "93582d421d1ddef0b6a0172832df05cd4d30ad8f",
+      "source_entry": "RI0A.256",
+      "legacy_source_sha256": "76c5978ea3f1b57d17a65bbcceb955fc931ae60f888f25110aabf322cd98dc39",
+      "canonical_selection": {
+        "stage": "hi-def-broad-skin-refinement",
+        "blend": "objects/rigellian/lazzaro-research/model.blend",
+        "glb": "objects/rigellian/lazzaro-research/model.glb",
+        "issue": 232,
+        "integration": "Single canonical hull for flight, build previews and SciTek. Apply proposed scale explicitly; no calibrated sockets or game acceptance supplied."
+      },
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "canonical_files": {
+        "blend": "sources/objects/rigellian/lazzaro-research/model.blend",
+        "glb": "sources/objects/rigellian/lazzaro-research/model.glb"
+      },
+      "binaries": {
+        "blend": "7d8868d588fb3a49bf3789e156606724ad6cc2360aff061a5ae095017b78044f",
+        "glb": "5f53e732b96945aa4ef39421ed487f3f299b93f1fee555bebadb640c0a07e565"
+      },
+      "metadata_and_runtime_binary_bindings": {
+        "blend": true,
+        "glb": true
+      },
+      "existing_runtime_report": {
+        "path": "sources/objects/rigellian/lazzaro-research/runtime-verification.json",
+        "sha256": "79a33510a2fd6b291749fd313a06842f9ef83dec2bca888973d00e4c8e1684c3",
+        "render_bindings": [
+          {
+            "path": "gallery/media/objects/rigellian/lazzaro-research/front-quarter.png",
+            "sha256": "ba0420e0f0e899cd3a3cd1e2dc87f7cfbdd3943beb4f7d0e8b4b37ffef113f1c",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/lazzaro-research/rear-quarter.png",
+            "sha256": "a4f24e03c4d176f59d2686c6618c7074d0620a15e02484884da31be3487eafa6",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/lazzaro-research/top.png",
+            "sha256": "ba4d8269e460fbedd0f24840bfcdcb6d9feca179cf6f1baa75b3bd09fa117668",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/lazzaro-research/underside.png",
+            "sha256": "3d84ef92e7c83087c5c326ee247fcb5486aa9f0bd8fd232fe35dc9d1e515ce5c",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/lazzaro-research/verified-imported.png",
+            "sha256": "f01ec8cd08559dd9e1608e9716489299e2bc8460e1f16172819d38abee070e98",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/lazzaro-research/verified-native.png",
+            "sha256": "2352d7d5c56dffab0372700eac3dca27d2385f57278a6d04b21c6e5d2ecdc845",
+            "matches": true
+          }
+        ],
+        "unlocated_render_names": []
+      },
+      "runtime_tool_bindings": {
+        "generator_sha256": {
+          "sha256": "1d4cfa524db50409302256bac44dc509bc21c5b8983b7eb133cdfaf00ca86ee0",
+          "matching_snapshot_path": "sources/tools/blender/build_rigellian_mobile_fleet.py"
+        },
+        "verifier_sha256": {
+          "sha256": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+          "matching_snapshot_path": "sources/tools/blender/verify_rigellian_mobile_fleet.py"
+        }
+      },
+      "triangles": 16400,
+      "mesh_batches": 10,
+      "inventory_canonical_count": 1,
+      "concept": {
+        "origin": "User-supplied ImageGen artistic reference; manual generation before remaster",
+        "filename": "1000057611.png",
+        "sha256": "9ff827830385561e63a3425d6aac65200a1d3d81d5b28bba98b217ecf74e64b4",
+        "local_original_hash_verified": true,
+        "exact_manual_prompt": "not supplied; do not invent",
+        "new_generation_required": false
+      },
+      "protocol_status": "Existing manual concept provenance and source-bound runtime/render reports found. No fresh generation or artistic approval inferred.",
+      "next_action": "Retain existing remaster and user art; resolve branch integration and compare current imported views against source/reference before final programme acceptance."
+    },
+    {
+      "id": "openfa:ship/rigellian/delphini-assault",
+      "culture": "rigellian",
+      "snapshot": "93582d421d1ddef0b6a0172832df05cd4d30ad8f",
+      "source_entry": "RI1C.256",
+      "legacy_source_sha256": "b669740561e506e75e184af1d5c30a1a08908d22c5de213d75ba1a3b32398d1b",
+      "canonical_selection": {
+        "stage": "hi-def-broad-skin-refinement",
+        "blend": "objects/rigellian/delphini-assault/model.blend",
+        "glb": "objects/rigellian/delphini-assault/model.glb",
+        "issue": 232,
+        "integration": "Single canonical hull for flight, build previews and SciTek. Apply proposed scale explicitly; no calibrated sockets or game acceptance supplied."
+      },
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "canonical_files": {
+        "blend": "sources/objects/rigellian/delphini-assault/model.blend",
+        "glb": "sources/objects/rigellian/delphini-assault/model.glb"
+      },
+      "binaries": {
+        "blend": "821bcd6c4dca0e706f9ed2fb808e09adc4df209859905415f9d54880e27a31b4",
+        "glb": "43e4b1e7959d4e7a7e983613f722c64ce91e11ff5fb042d9144400590d59f75a"
+      },
+      "metadata_and_runtime_binary_bindings": {
+        "blend": true,
+        "glb": true
+      },
+      "existing_runtime_report": {
+        "path": "sources/objects/rigellian/delphini-assault/runtime-verification.json",
+        "sha256": "a52d73c94f8e6445e742617bc932d7de43ca5fc4634dd1137cbae1d10b12e848",
+        "render_bindings": [
+          {
+            "path": "gallery/media/objects/rigellian/delphini-assault/front-quarter.png",
+            "sha256": "9b1d5fdb58ce5c37d2d3fdb26eeafeffb86f9f55d12109c56a7d7ac9a66f52c5",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/delphini-assault/rear-quarter.png",
+            "sha256": "ee7e861822b87ea218d87af342f8b75c64fd04a2eca8dcff38cecc29c807da99",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/delphini-assault/top.png",
+            "sha256": "30935937b137e993ffc71e1b35c401858ce277c2f13c2307213b0983a06a124c",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/delphini-assault/underside.png",
+            "sha256": "52977428a0e0abea9b0f53078fca6ed72ec4c685a80e17f789f6fd907876c0ac",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/delphini-assault/verified-imported.png",
+            "sha256": "1c52aa33d7b3b6d096bcf9ab8c892dfc30627ddb72834e790d6c57ddcdc6a1b9",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/delphini-assault/verified-native.png",
+            "sha256": "6954b7a6eee266d749f15592191548017418e2974782ce36b8afb97579f916cb",
+            "matches": true
+          }
+        ],
+        "unlocated_render_names": []
+      },
+      "runtime_tool_bindings": {
+        "generator_sha256": {
+          "sha256": "1d4cfa524db50409302256bac44dc509bc21c5b8983b7eb133cdfaf00ca86ee0",
+          "matching_snapshot_path": "sources/tools/blender/build_rigellian_mobile_fleet.py"
+        },
+        "verifier_sha256": {
+          "sha256": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+          "matching_snapshot_path": "sources/tools/blender/verify_rigellian_mobile_fleet.py"
+        }
+      },
+      "triangles": 25728,
+      "mesh_batches": 15,
+      "inventory_canonical_count": 1,
+      "concept": {
+        "origin": "User-supplied ImageGen artistic reference; manual generation before remaster",
+        "filename": "1000057609.png",
+        "sha256": "7c77fc48a154908edc1e01b9c29233ef13f89fabd8550fd23146054f0efab166",
+        "local_original_hash_verified": true,
+        "exact_manual_prompt": "not supplied; do not invent",
+        "new_generation_required": false
+      },
+      "protocol_status": "Existing manual concept provenance and source-bound runtime/render reports found. No fresh generation or artistic approval inferred.",
+      "next_action": "Retain existing remaster and user art; resolve branch integration and compare current imported views against source/reference before final programme acceptance."
+    },
+    {
+      "id": "openfa:ship/rigellian/messier-lukannon",
+      "culture": "rigellian",
+      "snapshot": "93582d421d1ddef0b6a0172832df05cd4d30ad8f",
+      "source_entry": "RI2C.256",
+      "legacy_source_sha256": "c568719331f1686f30f9be191b09dab0146d29b6501971f888049d031e27426a",
+      "canonical_selection": {
+        "stage": "hi-def-broad-skin-refinement",
+        "blend": "objects/rigellian/messier-lukannon/model.blend",
+        "glb": "objects/rigellian/messier-lukannon/model.glb",
+        "issue": 232,
+        "integration": "Single canonical hull for flight, build previews and SciTek. Apply proposed scale explicitly; no calibrated sockets or game acceptance supplied."
+      },
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "canonical_files": {
+        "blend": "sources/objects/rigellian/messier-lukannon/model.blend",
+        "glb": "sources/objects/rigellian/messier-lukannon/model.glb"
+      },
+      "binaries": {
+        "blend": "1b0e9bde882377d553f53bd3f0fdc2bd9ded39ce01285e6d2c320738f18313d1",
+        "glb": "4ae61215fd209cf526b2406b72a7cee97f1598fd0fd139994b38acdf3243df61"
+      },
+      "metadata_and_runtime_binary_bindings": {
+        "blend": true,
+        "glb": true
+      },
+      "existing_runtime_report": {
+        "path": "sources/objects/rigellian/messier-lukannon/runtime-verification.json",
+        "sha256": "cc1dc6f2c7bd3c1ddd62d4f358b87422e54f90d1c63dc0f1424e9c7ca8366450",
+        "render_bindings": [
+          {
+            "path": "gallery/media/objects/rigellian/messier-lukannon/front-quarter.png",
+            "sha256": "cb294473d238ce8bb7f09c0b159c519b2c91e1ae79b5ec88654cc75d488a56b2",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/messier-lukannon/rear-quarter.png",
+            "sha256": "72599c661b3cd676bcac419735c1d06496f4f5584753aa7bdac586fe867ab149",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/messier-lukannon/top.png",
+            "sha256": "1309727500e5cbd1b8b3fba433539ede00f2044a7694d7f82f1ae4bd7f89c176",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/messier-lukannon/underside.png",
+            "sha256": "0eb056f0f4e0ec1b0cd3136a2f9851f46b45bf77cfa9a493fbfc0d60f9c43235",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/messier-lukannon/verified-imported.png",
+            "sha256": "a3bfb94c6dbb56dda7ffcc714637cb85d25ce4f9ca23dc77f512dd72a47a4596",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/messier-lukannon/verified-native.png",
+            "sha256": "6fad765e5a070a1c880809292faa9d7d01d92d9dbcdf2907aa70c9a51005e800",
+            "matches": true
+          }
+        ],
+        "unlocated_render_names": []
+      },
+      "runtime_tool_bindings": {
+        "generator_sha256": {
+          "sha256": "1d4cfa524db50409302256bac44dc509bc21c5b8983b7eb133cdfaf00ca86ee0",
+          "matching_snapshot_path": "sources/tools/blender/build_rigellian_mobile_fleet.py"
+        },
+        "verifier_sha256": {
+          "sha256": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+          "matching_snapshot_path": "sources/tools/blender/verify_rigellian_mobile_fleet.py"
+        }
+      },
+      "triangles": 32842,
+      "mesh_batches": 14,
+      "inventory_canonical_count": 1,
+      "concept": {
+        "origin": "User-supplied ImageGen artistic reference; manual generation before remaster",
+        "filename": "1000057608.png",
+        "sha256": "71ed52fb27ad089178621157d9483717f09056b1af735a05959f967334be3cbf",
+        "local_original_hash_verified": true,
+        "exact_manual_prompt": "not supplied; do not invent",
+        "new_generation_required": false
+      },
+      "protocol_status": "Existing manual concept provenance and source-bound runtime/render reports found. No fresh generation or artistic approval inferred.",
+      "next_action": "Retain existing remaster and user art; resolve branch integration and compare current imported views against source/reference before final programme acceptance."
+    },
+    {
+      "id": "openfa:ship/rigellian/transportation",
+      "culture": "rigellian",
+      "snapshot": "93582d421d1ddef0b6a0172832df05cd4d30ad8f",
+      "source_entry": "RI3C.256",
+      "legacy_source_sha256": "7bffcea7e9af1d5592e8652998ebb11401a252c9e715725008fc942c024dfe7b",
+      "canonical_selection": {
+        "stage": "hi-def-broad-skin-refinement",
+        "blend": "objects/rigellian/transportation/model.blend",
+        "glb": "objects/rigellian/transportation/model.glb",
+        "issue": 232,
+        "integration": "Single canonical hull for flight, build previews and SciTek. Apply proposed scale explicitly; no calibrated sockets or game acceptance supplied."
+      },
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "canonical_files": {
+        "blend": "sources/objects/rigellian/transportation/model.blend",
+        "glb": "sources/objects/rigellian/transportation/model.glb"
+      },
+      "binaries": {
+        "blend": "18ca0b366f74fa6de53e2043d006316938964445f2f05e283a0452f6a74f13f0",
+        "glb": "2152b4cd73e4578d2c2fb8429713019f27de9dab4faf8f0b883c7bb1f8b0c6bf"
+      },
+      "metadata_and_runtime_binary_bindings": {
+        "blend": true,
+        "glb": true
+      },
+      "existing_runtime_report": {
+        "path": "sources/objects/rigellian/transportation/runtime-verification.json",
+        "sha256": "b28f19d0ca1f36d2f118aebab719d3e1f69bbdbc1ccca4403f7737a45f7f2724",
+        "render_bindings": [
+          {
+            "path": "gallery/media/objects/rigellian/transportation/front-quarter.png",
+            "sha256": "20b7f15fb4d312a120455f51b9700af7773acf9ce9276b8e15b48b26ac13ba61",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/transportation/rear-quarter.png",
+            "sha256": "2fd601224db98101e7e9449815f844c4d635c5fcefdaf851b41fa954a493a489",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/transportation/top.png",
+            "sha256": "17dd9ab5a9d3ac7139b3722b548ec6594f2ca960979b4a993e3298a935d5b95d",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/transportation/underside.png",
+            "sha256": "fe76c2e6c44fc47a6893a809c38da518e064cf356727736be4d2607792ee08b8",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/transportation/verified-imported.png",
+            "sha256": "eca7d740d401f82d0eac65a339b68dc2a0b3c9d6c9f36e11459007819515a4a7",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/rigellian/transportation/verified-native.png",
+            "sha256": "feb9cd574ee60d74b93251d9f8d00c6f743e778c0f0dc4af11df20037d059696",
+            "matches": true
+          }
+        ],
+        "unlocated_render_names": []
+      },
+      "runtime_tool_bindings": {
+        "generator_sha256": {
+          "sha256": "1d4cfa524db50409302256bac44dc509bc21c5b8983b7eb133cdfaf00ca86ee0",
+          "matching_snapshot_path": "sources/tools/blender/build_rigellian_mobile_fleet.py"
+        },
+        "verifier_sha256": {
+          "sha256": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+          "matching_snapshot_path": "sources/tools/blender/verify_rigellian_mobile_fleet.py"
+        }
+      },
+      "triangles": 52390,
+      "mesh_batches": 14,
+      "inventory_canonical_count": 1,
+      "concept": {
+        "origin": "User-supplied ImageGen artistic reference; manual generation before remaster",
+        "filename": "1000057607.png",
+        "sha256": "fa1edcd6d0202d60e49818811cd5f0db852a319ce05ecba8f265ab3435b1ea88",
+        "local_original_hash_verified": true,
+        "exact_manual_prompt": "not supplied; do not invent",
+        "new_generation_required": false
+      },
+      "protocol_status": "Existing manual concept provenance and source-bound runtime/render reports found. No fresh generation or artistic approval inferred.",
+      "next_action": "Retain existing remaster and user art; resolve branch integration and compare current imported views against source/reference before final programme acceptance."
+    },
+    {
+      "id": "openfa:ship/achaean/hunter-prospector",
+      "culture": "achaean",
+      "snapshot": "3722ae78246ba213d2327aa39c2ad338a35d7b9b",
+      "source_entry": "AC0A.256",
+      "legacy_source_sha256": "1204d8820003b7032a148b753d5806c98667760f2846efef62212b0af0eb34dd",
+      "canonical_selection": {
+        "issue": 238,
+        "blend": "objects/achaean/hunter-prospector/model.blend",
+        "glb": "objects/achaean/hunter-prospector/model.glb",
+        "source_sha256": "42983a03e066bb2cc743fd35f38d59da0fa97ce584488fd7a7e0ad0e354aabd4",
+        "export_sha256": "a2f09789f56162e3570f6bc2dcc01fc837f1ad388ac65210c2d0efaeff00ef5c",
+        "proposed_world_size": 40,
+        "scale_status": "Authored size assumption; current generic fallback96; client acceptance separate"
+      },
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "canonical_files": {
+        "blend": "sources/objects/achaean/hunter-prospector/model.blend",
+        "glb": "sources/objects/achaean/hunter-prospector/model.glb"
+      },
+      "binaries": {
+        "blend": "42983a03e066bb2cc743fd35f38d59da0fa97ce584488fd7a7e0ad0e354aabd4",
+        "glb": "a2f09789f56162e3570f6bc2dcc01fc837f1ad388ac65210c2d0efaeff00ef5c"
+      },
+      "metadata_and_runtime_binary_bindings": {
+        "blend": true,
+        "glb": true
+      },
+      "existing_runtime_report": {
+        "path": "sources/objects/achaean/hunter-prospector/runtime-verification.json",
+        "sha256": "de47df2c208c6e548d180fbecb192a525ab69743529a7f2b20d64dc1255a11b0",
+        "render_bindings": [
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/concept.png",
+            "sha256": "8fd530169576686cc02581ec30f08acbd4cdbeab69866eb4935718203ffd9fa8",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/front-quarter.png",
+            "sha256": "3e13d83b0a70124102f64e3c89610c13bc672e5246231e132c21fa7960343ed5",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/front.png",
+            "sha256": "28c4e39da17e85002865437e474bd486b6e20cbdd9cea4e272b89506629a643c",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/rear-quarter.png",
+            "sha256": "be4bd9048d702d1055d86a4f214bdceeb757959665f18a16ee41dd331f96cf58",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/side.png",
+            "sha256": "a0cbc940fed995e69365eb4fd5be6d1e70d10d8f83c34905f318c5db5c069b4f",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/technical-wireframe.png",
+            "sha256": "3d5b04f277a31163ee66829fb3459404f9fb4cf1775354117514e58347f5c76e",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/top.png",
+            "sha256": "ef124a7daa020b97bae94a2c49ad4fe845128ae37fe8d2861ee3bb4f10217d10",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/underside.png",
+            "sha256": "4ce0a416d4a269968f6e433d061ce76ec2d43da30ab149d9bbdda0b9e4a8f5f5",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/verified-heading-0.png",
+            "sha256": "4766832cac95ee71ae5b45c4607cc931128d9d4a4f56f6be76f816e1072c770f",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/verified-heading-12.png",
+            "sha256": "56c614c97bb3c5f23f35a6f931501e620087c1c79597b96d36fb010431422158",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/verified-heading-20.png",
+            "sha256": "e83bc7acaae3781e93df05f9b41222ca93794a5b2b5137d1fd71346b195f10a3",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/verified-heading-4.png",
+            "sha256": "824fc5c4c1051148f42356385181cecf5e870182f50e3026750439dc1a48dde3",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/verified-heading-8.png",
+            "sha256": "26c52daf6bbc4112ac20e71469f66e3c32eec877cc7592477b60b6d74c602893",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/verified-imported.png",
+            "sha256": "87fc839ea5c663f0a20237a6b196910440545ccaf9454b9414d6105bf7770eac",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/hunter-prospector/verified-native.png",
+            "sha256": "3e13d83b0a70124102f64e3c89610c13bc672e5246231e132c21fa7960343ed5",
+            "matches": true
+          }
+        ],
+        "unlocated_render_names": []
+      },
+      "runtime_tool_bindings": {
+        "generator_sha256": {
+          "sha256": "35b712eeffd30f0d553052db55046b03b1de2ed10a8d08ae5061801f2ff44031",
+          "matching_snapshot_path": "sources/tools/blender/remaster_achaean_hunter.py"
+        },
+        "verifier_sha256": {
+          "sha256": "90cb2838e8bbe9346a6b9533bc5b8ae5d95c91a82739c2a75d76db6cd53d0548",
+          "matching_snapshot_path": "sources/tools/blender/verify_achaean_hunter_remaster.py"
+        }
+      },
+      "triangles": 25806,
+      "mesh_batches": 12,
+      "inventory_canonical_count": 1,
+      "concept": {
+        "source": "User-supplied three-view construction sketch",
+        "source_sha256": "ce5f9f008c50e258eb2c5a5e51449d561df96931e6e3f6b4fd92b23ad07590c3",
+        "selected_sha256": "8fd530169576686cc02581ec30f08acbd4cdbeab69866eb4935718203ffd9fa8",
+        "new_imagegen_iterations": 0,
+        "previous_imagegen_iterations": 2,
+        "prior_concept_status": "Rejected by user: incorrectly interpreted a horizontal fork and separate central spar",
+        "interpretation": "Two thin upright aft-opening crescent wings, one on either side of a continuous green central hull; top view shows thin rails; no independent third spar",
+        "acceptance": "User-directed architecture; final rendered proportions await user review"
+      },
+      "existing_feedback": "User corrected the previous horizontal fork interpretation. Current actual GLB has two upright aft-opening crescent plates, thin rails from above, continuous central hull and no independent ochre trailing spar. Compare side/top/quarter views with original headings and user sketch; precise sections remain authored.",
+      "selected_concept_binding": {
+        "image": "gallery/media/objects/achaean/hunter-prospector/concept.png",
+        "sha256": "8fd530169576686cc02581ec30f08acbd4cdbeab69866eb4935718203ffd9fa8",
+        "matches": true
+      },
+      "recorded_prompt": {
+        "path": "sources/objects/achaean/hunter-prospector/concept-prompt.txt",
+        "sha256": "a8c48b1f8769e74a152d544a8eb195bf04e7185addd94e71da49e48f660bac6d",
+        "scope": "Existing recorded prompt; not proof of every historical iteration prompt"
+      },
+      "protocol_status": "Existing concept and actual GLB feedback records found; explicit unresolved/rejected concept portions remain unresolved.",
+      "next_action": "Preserve user-directed geometry. Review unresolved concept portions without a fourth generation; verify one canonical selection during branch integration."
+    },
+    {
+      "id": "openfa:ship/achaean/dedicated-fighter",
+      "culture": "achaean",
+      "snapshot": "3722ae78246ba213d2327aa39c2ad338a35d7b9b",
+      "source_entry": "AC1C.256",
+      "legacy_source_sha256": "7a9bda31581aab2ce32ddf69b57df46ecb27b0d489b3b6150024ac418ee10cb7",
+      "canonical_selection": {
+        "issue": 236,
+        "blend": "objects/achaean/dedicated-fighter/model.blend",
+        "glb": "objects/achaean/dedicated-fighter/model.glb",
+        "source_sha256": "82c6404ff515a5975524454ffade53859ee7fc1aee2206957a7ac537e33f8e3d",
+        "export_sha256": "78b8144db063fed2947dd075dc7691eeef584b91bccfd98684f3dc02cd6e47a9",
+        "proposed_world_size": 96,
+        "scale_status": "Authored size assumption; current generic fallback96; client acceptance separate"
+      },
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "canonical_files": {
+        "blend": "sources/objects/achaean/dedicated-fighter/model.blend",
+        "glb": "sources/objects/achaean/dedicated-fighter/model.glb"
+      },
+      "binaries": {
+        "blend": "82c6404ff515a5975524454ffade53859ee7fc1aee2206957a7ac537e33f8e3d",
+        "glb": "78b8144db063fed2947dd075dc7691eeef584b91bccfd98684f3dc02cd6e47a9"
+      },
+      "metadata_and_runtime_binary_bindings": {
+        "blend": true,
+        "glb": true
+      },
+      "existing_runtime_report": {
+        "path": "sources/objects/achaean/dedicated-fighter/runtime-verification.json",
+        "sha256": "a91b94072f98b66efa08fd4c261e8aa105dc82adb3388806dcff878341834ed9",
+        "render_bindings": [
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/concept.png",
+            "sha256": "a6f84bb7792e5e81d3220bd43618b6d5482e4cd444a2334ea4142d9536c31281",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/front-quarter.png",
+            "sha256": "ef0f33f0f2493d5c64ccf43958514fed893296d1abfb580835dddd3a4ec0764f",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/front.png",
+            "sha256": "ed328424174acd271b1eded4fbe3486e0242678658ef350bbc72e7f64c557c77",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/rear-quarter.png",
+            "sha256": "82fbe11d6c443152f459aee82868aa59764ea78fe5197d6fb26b6d1332f6bee5",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/side.png",
+            "sha256": "a8caed7b3286e95154e96a73fcdc372807af3d4b90c6b3dde50fe88bb26c7e5b",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/technical-wireframe.png",
+            "sha256": "fbd74fbccabffa16d19deb5a6b8375c40e99d9688b90d362e4c8bbd301c5fa0e",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/top.png",
+            "sha256": "e3e32bbde2a79fe8d6fefe7daa6b61629af6c0d9b6d930b8af3efb4df73f39a6",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/underside.png",
+            "sha256": "12adf1a723cb0d495f25c010c6c112cd614c09614203ad192421077992a78806",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/verified-heading-0.png",
+            "sha256": "979b4cf11352a94b58a6d30ae274dc84e96d2a9df38736f8d4feff9e8c7e90fe",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/verified-heading-12.png",
+            "sha256": "bb664a5de907558c97084bd9e34b926aabec1ff56fe4025b97d3927a5bd9249a",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/verified-heading-20.png",
+            "sha256": "6ff755e675230a7f6b534f531209f0efe06935fd1e7aa4c2e5a0b56d71173559",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/verified-heading-4.png",
+            "sha256": "b552698dc6516318c2de84f64efec6107a4664aef196c0c742bcb094127e7f90",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/verified-heading-8.png",
+            "sha256": "8a2b878240c95c867f8bf6d972856c83f378278696a4fa4466c9ec1305df9c92",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/verified-imported.png",
+            "sha256": "5afe0add8529b9fabfa521f59366171b36310df647da9b13a6307ec532c67903",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-fighter/verified-native.png",
+            "sha256": "ef0f33f0f2493d5c64ccf43958514fed893296d1abfb580835dddd3a4ec0764f",
+            "matches": true
+          }
+        ],
+        "unlocated_render_names": []
+      },
+      "runtime_tool_bindings": {
+        "generator_sha256": {
+          "sha256": "7e11da5f523877787a313a30a5611d16654ee151df2e5537b73b267b8737d17c",
+          "matching_snapshot_path": "sources/tools/blender/remaster_achaean_fighter.py"
+        },
+        "verifier_sha256": {
+          "sha256": "6abfeeb1ba1affd98349def4751edbd2e87134deabede602e42a1ea66ee8c086",
+          "matching_snapshot_path": "sources/tools/blender/verify_achaean_fighter_remaster.py"
+        }
+      },
+      "triangles": 35000,
+      "mesh_batches": 12,
+      "inventory_canonical_count": 1,
+      "concept": {
+        "iterations": 3,
+        "selected_sha256": "a6f84bb7792e5e81d3220bd43618b6d5482e4cd444a2334ea4142d9536c31281",
+        "iteration1_feedback": "One-wing side elevation obscures the second crescent and connections",
+        "iteration2_review": "Paired upright crescents, open toward long fore projection, short yellow aft terminal and warm spindle retained; sparse hatches/hidden details interpreted; coherent production brief accepted by author, final user approval separate",
+        "iteration3_feedback": "Original end-on width30 pixels versus side59 requires compact lateral spacing; long outriggers in iteration2 rejected",
+        "iteration3_review": "Main concept retained as artistic guide for compact paired architecture. Small inset overstates plate height relative to width; excluded from geometric authority. No further ImageGen iterations; final concept acceptance remains unresolved for this inset. Model proportions follow original headings directly.",
+        "acceptance": "unresolved secondary-inset proportions; legacy-guided model available for review"
+      },
+      "existing_feedback": "Legacy end/side views corrected hull fullness, distal arm flare and excessive lateral wing spacing; concept3 inset remains unresolved and is excluded from geometric authority",
+      "selected_concept_binding": {
+        "image": "gallery/media/objects/achaean/dedicated-fighter/concept.png",
+        "sha256": "a6f84bb7792e5e81d3220bd43618b6d5482e4cd444a2334ea4142d9536c31281",
+        "matches": true
+      },
+      "recorded_prompt": {
+        "path": "sources/objects/achaean/dedicated-fighter/concept-prompt.txt",
+        "sha256": "f3e5e0a13f7d5ec9290a5905002aa5b93511b9f577c7df0bdbfc9747427c8b12",
+        "scope": "Existing recorded prompt; not proof of every historical iteration prompt"
+      },
+      "protocol_status": "Existing concept and actual GLB feedback records found; explicit unresolved/rejected concept portions remain unresolved.",
+      "next_action": "Preserve user-directed geometry. Review unresolved concept portions without a fourth generation; verify one canonical selection during branch integration."
+    },
+    {
+      "id": "openfa:ship/achaean/dedicated-ore-transporter",
+      "culture": "achaean",
+      "snapshot": "3722ae78246ba213d2327aa39c2ad338a35d7b9b",
+      "source_entry": "AC2C.256",
+      "legacy_source_sha256": "ca12ed4a7cfb8aa9ff9834c5f18c9877f7f8bb19976b867ec7bf94e10148cd1a",
+      "canonical_selection": {
+        "issue": 234,
+        "blend": "objects/achaean/dedicated-ore-transporter/model.blend",
+        "glb": "objects/achaean/dedicated-ore-transporter/model.glb",
+        "source_sha256": "5d5e5a2fdae5d59a7d273d37343c7e40dd4a22a2ad8f123bdffc384c66f3fa7e",
+        "export_sha256": "d9ff676fdbb26dd37032375a77e74ca2d75b0fcbef1e7f7f8bc57e2277689b49",
+        "proposed_world_size": 180,
+        "scale_status": "Authored recommendation; current client fallback is 96; integration not applied"
+      },
+      "final_user_acceptance": "not established by this audit",
+      "fresh_blender_execution": false,
+      "canonical_files": {
+        "blend": "sources/objects/achaean/dedicated-ore-transporter/model.blend",
+        "glb": "sources/objects/achaean/dedicated-ore-transporter/model.glb"
+      },
+      "binaries": {
+        "blend": "5d5e5a2fdae5d59a7d273d37343c7e40dd4a22a2ad8f123bdffc384c66f3fa7e",
+        "glb": "d9ff676fdbb26dd37032375a77e74ca2d75b0fcbef1e7f7f8bc57e2277689b49"
+      },
+      "metadata_and_runtime_binary_bindings": {
+        "blend": true,
+        "glb": true
+      },
+      "existing_runtime_report": {
+        "path": "sources/objects/achaean/dedicated-ore-transporter/runtime-verification.json",
+        "sha256": "ffc8eae308e91a9021651dbca2b412bb68002808b17bfca219c89e4b5d6fe020",
+        "render_bindings": [
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/concept.png",
+            "sha256": "3f54b8f73d7248a7bfa68c34f7b62ec981fcbea7ebee719b737c7f45c15f5bff",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/crescent-detail.png",
+            "sha256": "12a2c3427b44629d3ebb6c59a6db8c85b638dc755c4dcdbf59d5d6a82d25d64d",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/front-quarter.png",
+            "sha256": "fc06e3a06b08fcf9ae7dd3e7b507344e434996fad6df9a32bada9772fa7964db",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/front.png",
+            "sha256": "c1ac4f331f75a06127581f21a1290b42a30753454f0d72514353ed5e6bfcc742",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/hull-detail.png",
+            "sha256": "40ca55fdff1f110c3974d14db99450dd322014d48d749c88a65088a90c70489d",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/rear-quarter.png",
+            "sha256": "86736fb99d82a6eb1cf6e08b974f4f815a5e265f4618497e13d5fcf1ea5c9fda",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/side.png",
+            "sha256": "8dc36a377aaf087d50e257c91de80722373d53dcc8253e4a5d941cdb982efe07",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/technical-wireframe.png",
+            "sha256": "70d6fb56fe3640dcad0ae2ab9dfa54727b39c860c10b6367928c15555b74df70",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/top.png",
+            "sha256": "59e7f80ad38b243ebfd86f545da8dca3df627c478f61fb23181aa911479599e1",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/underside.png",
+            "sha256": "71afaeb29d4c0ffb0c0cac131b2fa5cc9cb0ef99d1fc80aa5b54e31c40ade45e",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/verified-front.png",
+            "sha256": "564e2bc23c9f8eb167a012f12d8e1543621d3f8eb78d2018aeabbd7d5145ba61",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/verified-imported.png",
+            "sha256": "3bf0b071b4ff9de7d1ca3273fc6a28f4c36559cf669a80a49d9be48c59fdc41d",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/verified-legacy-quarter.png",
+            "sha256": "b447b9eeea79e5d526823f02d6572c475848c64d48fb89f3e9705cae4b3f9fb9",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/verified-legacy-side.png",
+            "sha256": "42e34c5dc3b21d73f0f364629cdc51dfab9effaeffc7564ed3053e44ff8dafa6",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/verified-native.png",
+            "sha256": "e79dea3463c552044fea4e9a2cef11e521f1d309ab4f5d9c671ebbbabf096db7",
+            "matches": true
+          },
+          {
+            "path": "gallery/media/objects/achaean/dedicated-ore-transporter/verified-side.png",
+            "sha256": "d67492dfb4ea50d1392b9997736bddf8266729dae8559aee7d28d30f11bc5b43",
+            "matches": true
+          }
+        ],
+        "unlocated_render_names": []
+      },
+      "runtime_tool_bindings": {
+        "generator_sha256": {
+          "sha256": "030f5741f42ae856ee254415cb6a98f52102296cd228f04ddd496780ab3175f5",
+          "matching_snapshot_path": "sources/tools/blender/remaster_achaean_transporter.py"
+        },
+        "verifier_sha256": {
+          "sha256": "d7ddf7b5ed46d6ff4f52d19b3e15da6c5560b534b3bf8f476cd0a7db8245cbf4",
+          "matching_snapshot_path": "sources/tools/blender/verify_achaean_transporter_remaster.py"
+        }
+      },
+      "triangles": 53248,
+      "mesh_batches": 16,
+      "inventory_canonical_count": 1,
+      "concept": {
+        "tool": "built-in image_gen",
+        "image": "gallery/media/objects/achaean/dedicated-ore-transporter/concept.png",
+        "image_sha256": "3f54b8f73d7248a7bfa68c34f7b62ec981fcbea7ebee719b737c7f45c15f5bff",
+        "prompt": "sources/objects/achaean/dedicated-ore-transporter/concept-prompt.txt",
+        "prompt_sha256": "02e642e8679e5991e9d46e621ba07588821b7229428ed3fea4455e31117cb005",
+        "review": "Reviewed against sixteen original headings: retain broad central body, paired upright open crescents, long pale fore terminal and yellow aft marks. Omit the concept additional yellow fore markings in the 3D model; their placement is not established. Service housings, panel seams and hidden surfaces are authored interpretation."
+      },
+      "existing_feedback": null,
+      "selected_concept_binding": {
+        "image": "gallery/media/objects/achaean/dedicated-ore-transporter/concept.png",
+        "sha256": "3f54b8f73d7248a7bfa68c34f7b62ec981fcbea7ebee719b737c7f45c15f5bff",
+        "matches": true
+      },
+      "recorded_prompt": {
+        "path": "sources/objects/achaean/dedicated-ore-transporter/concept-prompt.txt",
+        "sha256": "02e642e8679e5991e9d46e621ba07588821b7229428ed3fea4455e31117cb005",
+        "scope": "Existing recorded prompt; not proof of every historical iteration prompt"
+      },
+      "protocol_status": "Existing concept and actual GLB feedback records found; explicit unresolved/rejected concept portions remain unresolved.",
+      "next_action": "Preserve user-directed geometry. Review unresolved concept portions without a fourth generation; verify one canonical selection during branch integration."
+    }
+  ],
+  "completion": "Incomplete: Terran source-specific concept/feedback audit, cross-branch integration and unresolved concept acceptance remain open. Current Mauna coverage is tracked separately in mauna-mobile-remaster.json; this audit is an immutable earlier snapshot.",
+  "later_followups": {
+    "historical_snapshots_preserved": true,
+    "terran_user_canonical_selection": "terran-canonical-selection.md",
+    "mauna_current_delivery": "mauna-mobile-remaster.json",
+    "destructor_retrospective_feedback": "destructor-protocol-review.json",
+    "programme_complete": false,
+    "terminator_retrospective_feedback": "terminator-protocol-review.json",
+    "fleet_battleship_retrospective_feedback": "fleet-battleship-protocol-review.json",
+    "command_cruiser_retrospective_feedback": "command-cruiser-protocol-review.json",
+    "light_ship_flight_input_audit": "light-ship-protocol-inputs.json"
+  }
+}

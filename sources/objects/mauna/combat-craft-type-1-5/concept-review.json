@@ -1,0 +1,75 @@
+{
+  "asset": "openfa:ship/mauna/combat-craft-type-1-5",
+  "issue": 251,
+  "tool": "Built-in image_gen",
+  "stage": "Canonical remaster, concepts and actual independent imported GLB feedback reviewed",
+  "legacy_identity": {
+    "entry": "MN1A.256",
+    "source_sha256": "6822dda1785b122dd2822c6ffab017463cba2fe5951829b80871f9803ce9f3e8",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ],
+    "all_32_populated_headings_inspected": true
+  },
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. Asset: OpenFA Mauna Combat Craft Type1.5 MN1A small/medium combat spacecraft remaster. Attached image is ACTUAL paletted legacy headings0/4/12/28, PRIMARY authority for silhouette, stepped contour and grey/pale-blue colours. Remaster the SAME simple low elongated rectangular opaque grey metal beam, chamfered corners, low stepped upper deck. A short raised fore deck separated by a shallow open transverse gap from a longer aft raised deck is an authored interpretation of the stepped silhouette, not exact recovered engineering. Keep approximately3.3 times longer than wide in top view and very LOW overall thickness, no upright slab, no circular hull, no aircraft wings. One end has a modest pale blue-grey OPAQUE service/end field, not windshield, glass, emitter or engine. Four equipment slots exist but coordinates/functions are unknown: do NOT add four guns or guess engines. Plain Mauna utilitarian angular alloy, neutral grey main hull with dark oxidized seam edges and very restrained pale blue at the single end. Few seated maintenance hatches, tiny fasteners, shallow service slots; broad calm surfaces with NO dense rectangular panel-grid. Appropriate worn metal: restrained irregular grime at joins, small scratches, stains and shallow dents, not pristine, not heavily wrecked. No warm feet/tabs from other Mauna craft, no red decorative stripes, no fins, turrets, bridge tower, cockpit canopy, extra pods, labels or logos. High-detail believable game model concept. One coherent craft in a large elevated fore three-quarter view plus smaller true side/top views; same two unequal deck sections and shallow gap in every view, plain charcoal studio background, no text.",
+      "input_images": [
+        {
+          "role": "Actual paletted legacy primary shape and colour evidence",
+          "sha256": "1a4b4fa4379d858cb40b9df836954d53a2c7be5c3f6d029cd93738bd547692d2"
+        }
+      ],
+      "generated_original_sha256": "f9554c04fc5ed93d60a7893a98b0094ae97bf425a5c38a7b80a4429f47307a2d",
+      "verdict": "Rejected: too long/thin, pale field on long aft end.",
+      "image": "gallery/media/concepts/mauna/combat-craft-type-1-5-01.png",
+      "sha256": "f9554c04fc5ed93d60a7893a98b0094ae97bf425a5c38a7b80a4429f47307a2d",
+      "gallery_label": "Rejected thin/long beam concept1"
+    },
+    {
+      "number": 2,
+      "prompt": "Precise-object-edit / stylized-concept. Mauna Combat Craft Type1.5 MN1A concept iteration2 of maximum3. Image1 is previous concept, useful worn grey alloy/stepped contour but REJECTED for an overly long thin side profile and pale field at the wrong end. Image2 is primary ACTUAL paletted legacy. Keep simple low rectangular chamfered opaque grey beam, sparse maintenance construction and wear, no added weapons/engines/glow/windows. Correct proportions consistently across views: overall LENGTH:WIDTH:HEIGHT about3.3:1:0.6, giving orthographic SIDE aspect about5.5:1, NOT10:1; TOP aspect about3.3:1, NOT4.5:1. Make the existing beam moderately shorter, wider and more solid in height, still low with no tall bridge. Retain TWO unequal raised deck sections with shallow open transverse gap: short section at the FORE end about15 percent of length, long aft section about65 percent. Place the small pale blue-grey OPAQUE end/service field on the end with the SHORT raised section, not the opposite long aft end. Treat dimensions/deck construction as a plausible interpretation, not calibrated recovered engineering; actual legacy silhouette/colors take precedence. Primary image a large true SIDE view making the5.5:1 aspect unmistakable; smaller top and matching three-quarter view of exactly the same craft. Calm worn grey metal surfaces without dense panel grids, blue limited to the small fore service field, no insignia/text, charcoal background.",
+      "input_images": [
+        {
+          "role": "Previous generated concept, rejected proportions and end-field placement",
+          "sha256": "f9554c04fc5ed93d60a7893a98b0094ae97bf425a5c38a7b80a4429f47307a2d"
+        },
+        {
+          "role": "Actual paletted legacy primary shape and colour evidence",
+          "sha256": "1a4b4fa4379d858cb40b9df836954d53a2c7be5c3f6d029cd93738bd547692d2"
+        }
+      ],
+      "generated_original_sha256": "dc30b0281c6530ed97081b38b4bed5055fd117aeabf7b23c08204dae81b2f7c8",
+      "verdict": "Useful corrected thicker and shorter grey stepped beam; pale field on short fore end. Concept top view remains somewhat elongated and narrow; actual legacy and native baseline proportions take precedence. Sparse fitted maintenance surfaces and wear retained, no emission inferred.",
+      "image": "gallery/media/concepts/mauna/combat-craft-type-1-5-02.png",
+      "sha256": "dc30b0281c6530ed97081b38b4bed5055fd117aeabf7b23c08204dae81b2f7c8",
+      "gallery_label": "Reviewed stepped grey beam concept2"
+    }
+  ],
+  "final_user_acceptance": "pending",
+  "reviewed_binary_hashes": {
+    "blend": "6534de549ac16a574e26e86b7aeb3fee59adf8cd5737fb65af275ffb89a573cd",
+    "glb": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af"
+  },
+  "glb_feedback": [
+    {
+      "round": 1,
+      "verdict": "Actual imported GLB retained low grey stepped silhouette and seated service parts. Generic comparative camera reverses end labels12/28 and makes side profile too thin relative to paletted frame4. Reject comparison camera, not model geometry."
+    },
+    {
+      "round": 2,
+      "verdict": "Actual saved native and independent GLB re-rendered after explicitly estimating frame12/28 directions and elevation. Private corresponding0/4/12/28 collage inspected against actual legacy and concept2. Correct pale fore end now at bottom of12 and absent from28; side silhouette and shallow fore gap are recognizable. Camera is an estimate, not recovered projection. 34456tri/fourbatches/one material,49 editable part names,48 seated contacts,three physical dents; native/import three open-gap and two solid-deck rays passed."
+    },
+    {
+      "round": 3,
+      "verdict": "A separately estimated higher camera for frame4 was tried but did not resolve the coarse raster aspect discrepancy. Rejected this per-frame camera adjustment; restore the common elevation0.95. The16x6 reference has significant one-pixel uncertainty, now explicit in the coarse regression interval. This diagnostic is not an artistic acceptance percentage. No geometry changed to satisfy that metric."
+    }
+  ],
+  "glb_visual_review": "Actual legacy all32 headings and corresponding0/4/12/28 collage inspected. Retain low elongated grey beam, short fore and long aft raised deck, shallow transverse notch and opaque pale fore service field. Native proportions override still somewhat elongated concept top view. Harder stepped edges and service frames remain authored interpretation of a very small sprite, not exact recovered engineering. Sparse wear, no dense panel grid, no inferred lamps, canopy, guns or engine. Estimated direction/elevation is only a comparison aid, not client heading/scale acceptance.",
+  "next_step": "One canonical source/export in gameplay, build menu and SciTek. WorldSize56 and four equipment mounts require client calibration. Final user artistic acceptance pending."
+}
