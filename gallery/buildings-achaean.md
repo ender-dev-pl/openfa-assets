@@ -262,11 +262,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/172`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Deepbore](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac22/front-quarter.png)
+![Deepbore](../gallery/media/objects/achaean/deepbore/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac22/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac22/model.glb)
+[Blend](../sources/objects/achaean/deepbore/model.blend) · [GLB](../sources/objects/achaean/deepbore/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac22-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/deepbore/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/deepbore/imported-rear-quarter.png)
 
 ## Ore Yard
 
