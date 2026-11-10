@@ -6,23 +6,13 @@
 
 `openfa:building/legacy/040`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Central Unit](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri01/front-quarter.png)
+![Central Unit](../gallery/media/objects/rigellian/central-unit/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri01/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri01/model.glb)
+[Blend](../sources/objects/rigellian/central-unit/model.blend) · [GLB](../sources/objects/rigellian/central-unit/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Central Unit](../gallery/media/docs/assets/reconstruction/buildings/rigellian/central-unit/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/central-unit/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/central-unit/model.glb)
-
-**Additional iteration — crown-refinement-study**
-
-![Central Unit](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri01/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri01/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri01/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri01-review-2.png) · [Actual independent GLB](../gallery/media/objects/rigellian/central-unit/imported-front-quarter.png)
 
 ## Filtration Plant
 

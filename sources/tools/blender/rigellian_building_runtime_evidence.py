@@ -195,6 +195,31 @@ def verify_manual_yaw_contract(metadata,report,document):
         assert all(p['fixed_base_unchanged'] is True and set(p['moving_world_matrices']) == moving for p in yaw['poses'])
 
 
+def verify_preserved_cpu_contract(metadata,report):
+    assert metadata['id']==report['id']=='openfa:building/legacy/040'
+    assert metadata['mesh_nodes']==report['meshes']==len(report['protected_parts'])==75
+    assert metadata['triangles']==metadata['original_triangles']==report['triangles']==40636
+    assert metadata['changes']==[] and report['protected_surface_error']<1e-6
+    assert report['clips']==[] and not metadata.get('animation') and not metadata.get('articulation')
+    assert report['material_count']==7 and report['embedded_images']==2
+    assert len(report['renders'])==9
+    for name in ['source_uv_comparison','exported_uv_comparison']:
+        uv = report[name]
+        assert uv['maximum_uv_corner_error']<1e-5 and uv['matched_directed_corners']>0
+        assert uv['position_tolerance']==uv['uv_tolerance']==1e-5
+    for key in ['native','imported']:
+        form = report[key]
+        for field in ['retained_cut_roof_well_and_seated_cooling_fins',
+                      'retained_conformal_cap_and_open_neck_grille','clean_body_and_existing_crown_finish_preserved']:
+            assert form[field] is True
+        assert len(form['texture_pixels_and_uvs'])==7
+        assert len(form['sampled_contact_graph']['components'])==1 and not form['sampled_contact_graph']['isolated']
+        assert set(form['crown'])=={'left','right'}
+        for arm in form['crown'].values():
+            assert arm['volume']>0 and arm['taper_ratio']>2.6 and arm['minimum_upper_gap']>.168
+    assert report['native']['texture_pixels_and_uvs']==report['imported']['texture_pixels_and_uvs']
+
+
 def verify_retained_extractor_contract(metadata,report):
     assert metadata['id'] == report['id'] == 'openfa:building/legacy/059'
     assert metadata['mesh_nodes'] == report['meshes'] == len(report['protected_parts']) == 39
@@ -264,6 +289,8 @@ def verify(root, record):
         raw = path((folder / 'model.glb').as_posix()).read_bytes()
         document = json.loads(raw[20:20+struct.unpack_from('<I', raw, 12)[0]])
         verify_animation_contract(metadata, report, document)
+    if metadata['id'] == 'openfa:building/legacy/040':
+        verify_preserved_cpu_contract(metadata,report)
     if metadata['id'] == 'openfa:building/legacy/059':
         verify_retained_extractor_contract(metadata,report)
     if metadata.get('articulation'):

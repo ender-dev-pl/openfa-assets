@@ -26,6 +26,8 @@ class Evidence(unittest.TestCase):
                 folder = ROOT / 'sources' / Path(record['reviewed_model']['blend']).parent
                 metadata = json.loads((folder / 'model.json').read_bytes())
                 expected_views = 16 if metadata.get('animation',{}).get('mechanism_kind') == 'ri18-supported-dome-v1' else (40 if metadata.get('animation') else 6)
+                if metadata['id']=='openfa:building/legacy/040':
+                    expected_views = 9
                 if metadata.get('articulation'):
                     expected_views = 41 if metadata['articulation']['kind']=='ri23-dual-lance-yaw-v1' else 38
                 self.assertEqual(result['views'], expected_views)
@@ -212,6 +214,27 @@ class Evidence(unittest.TestCase):
         wrong['source_uv_comparison']['maximum_uv_corner_error'] = .1
         with self.assertRaises(AssertionError):
             verify_dual_lance_yaw_contract(metadata,wrong,document)
+
+
+    def test_preserved_cpu_rejects_reduced_geometry_missing_roof_or_crown(self):
+        from rigellian_building_runtime_evidence import verify_preserved_cpu_contract
+        folder = ROOT/'sources/objects/rigellian/central-unit'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        verify_preserved_cpu_contract(metadata,report)
+        wrong = deepcopy(metadata)
+        wrong['triangles']-=1
+        with self.assertRaises(AssertionError):
+            verify_preserved_cpu_contract(wrong,report)
+        for key in ['retained_cut_roof_well_and_seated_cooling_fins','clean_body_and_existing_crown_finish_preserved']:
+            wrong = deepcopy(report)
+            wrong['imported'][key] = False
+            with self.assertRaises(AssertionError):
+                verify_preserved_cpu_contract(metadata,wrong)
+        wrong = deepcopy(report)
+        wrong['native']['crown']['left']['taper_ratio'] = 1
+        with self.assertRaises(AssertionError):
+            verify_preserved_cpu_contract(metadata,wrong)
 
 
 if __name__ == '__main__':
