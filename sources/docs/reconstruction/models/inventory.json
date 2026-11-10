@@ -28488,7 +28488,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/166",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1027",
         "description_records": [
           1027
         ]
@@ -28562,11 +28562,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac16/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/manoeuvring-device/model.blend",
           "present": true,
-          "sha256": "65d664306c288b12a9e1e6cd6a81f66d01dbb507cfa532846b2529cff7ff6383",
-          "final_visual_acceptance": "not-established"
+          "sha256": "08a22362442cb8cf9f373a4e8fe96b837d9dc4a122d68415b6bceb1976e8b740",
+          "media": "gallery/media/objects/achaean/manoeuvring-device",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac16-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/manoeuvring-device/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/manoeuvring-device/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -28576,7 +28591,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -28606,6 +28621,64 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 166
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac16/model.blend",
+          "present": true,
+          "sha256": "65d664306c288b12a9e1e6cd6a81f66d01dbb507cfa532846b2529cff7ff6383",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/manoeuvring-device/model.blend",
+        "sha256": "08a22362442cb8cf9f373a4e8fe96b837d9dc4a122d68415b6bceb1976e8b740",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/manoeuvring-device",
+          "files": {
+            "gallery/media/concepts/achaean/ac16-review-1.png": "4fba30a82df82d588c286b96022850073ebd5dabcc09cbc7526ea7ca8d7b63af",
+            "gallery/media/objects/achaean/manoeuvring-device/front-quarter.png": "d4342fc6b872b1291f4cf8c16efb86371a911feb66376aedeea4ac3ebd314154",
+            "gallery/media/objects/achaean/manoeuvring-device/imported-front-quarter.png": "d4342fc6b872b1291f4cf8c16efb86371a911feb66376aedeea4ac3ebd314154",
+            "gallery/media/objects/achaean/manoeuvring-device/imported-front.png": "c2bdfcc38428ed796afbbc63ab49110cf403cd8c6359d9fbdd0485abeaa1487e",
+            "gallery/media/objects/achaean/manoeuvring-device/imported-rear-quarter.png": "7adcd0acdf3b56aca170aeb5a9cf2e77ddb9caa28a54a3f5133a8974060107bd",
+            "gallery/media/objects/achaean/manoeuvring-device/native-front-quarter.png": "a88a787a34b1174d5e4689fc94c1b88806a8b7ec10556c4ce5a3c3c0a3549f2a",
+            "gallery/media/objects/achaean/manoeuvring-device/native-front.png": "2dc8065d7b4b8d1876c7e054eb3b1eca9da4ba34f49da36fda934cd7240f5c0d",
+            "gallery/media/objects/achaean/manoeuvring-device/native-rear-quarter.png": "47ba705cf306870889ad62a1d63125def720808bf5f9af3734cc5bf705cb8857",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac16/model.blend": "65d664306c288b12a9e1e6cd6a81f66d01dbb507cfa532846b2529cff7ff6383",
+            "sources/docs/reconstruction/models/ac16-concept-prompt-1.txt": "60c475681f137aa7ea4f6b3c3ab9be4b1e1ff34a439f898b1396293ea6a7b0e3",
+            "sources/materials/achaean/manoeuvring-device/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/manoeuvring-device/Coral fine wear normal.png": "bef1048d97b12a3f013fec0182bd58055527d07459163c91eef3f8f3f87c70bf",
+            "sources/materials/achaean/manoeuvring-device/Coral metal roughness.png": "efaef6c8b59203937dd615b0f6cedf9cb69d612a32ab3acfedff0cf196669985",
+            "sources/materials/achaean/manoeuvring-device/Dark source recess.png": "51eefbeb9d42567fc83cd193d873312e43f0140c247917fd919eba364a901038",
+            "sources/materials/achaean/manoeuvring-device/Ochre raised fittings.png": "61dbdd8b3f2f1e2c970ea1bef07595a54cf5eeb3f7dbf4fcef44de38f159c98a",
+            "sources/materials/achaean/manoeuvring-device/Red source fields and stems.png": "f7aec5c9691b6cd9b05fe625f1a5ee76b22c7ca0d3f5b066079800c757e534f3",
+            "sources/materials/achaean/manoeuvring-device/Slate grounded pods.png": "c3f51e0d29d52d75a1e57fdd2af766f6142e9efc9919bda03473e3df0f21de55",
+            "sources/objects/achaean/manoeuvring-device/model.blend": "08a22362442cb8cf9f373a4e8fe96b837d9dc4a122d68415b6bceb1976e8b740",
+            "sources/objects/achaean/manoeuvring-device/model.glb": "b83c2142431946670b4402987334e4f081ccc704724996db87fa8e0444a670c3",
+            "sources/objects/achaean/manoeuvring-device/model.json": "6ef0c09c86ccb04a04d93a6bbccc1821d80953050a8d4e7a072ee58c69b37017",
+            "sources/objects/achaean/manoeuvring-device/runtime-review.json": "34fc1ce5c8e8bb5f06e8f321b197f7be1938095070d95c8b50fb0ff5d5770897",
+            "sources/objects/achaean/manoeuvring-device/visual-review.json": "55986cc86e5266fde5833aacce5e158f292b8b9f4f8621d3faff2b35ba074b67",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_manoeuvring_device.py": "1e6a5b1eb27109c556a33c674f6424582e34c25c24e1cc11bb05bfcebdbaa73c",
+            "sources/tools/blender/checks_achaean_shipyard.py": "e397a226fc7a4df37f4531f8ea724bfa2fac33579bcd2bd3082ab99d382a36ae",
+            "sources/tools/blender/remaster_achaean_manoeuvring_device.py": "bccbd3e9cd29706fbf5b0af5dd1df712be840edefc562002bac491ed895cb4fe",
+            "sources/tools/blender/remaster_achaean_missile_launcher.py": "a0594e4649ef870b68a100439a1feb0e92214babd70da949b7a4169364c18a2d",
+            "sources/tools/blender/remaster_achaean_shipyard.py": "7ccce8d2dfa946f86da065ecb64a8b30a5d56d0e5a375f7d9a6e7957c4b6fbf6",
+            "sources/tools/blender/verify_achaean_building_left_quarter.py": "27a9026001272eaa467909e1d02f157af0353fc51dceed1cc60077154333cb74",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/manoeuvring-device/runtime-review.json",
+          "objects/achaean/manoeuvring-device/visual-review.json"
+        ]
       }
     },
     {

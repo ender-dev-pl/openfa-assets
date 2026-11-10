@@ -188,11 +188,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/166`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Manoeuvring Device](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac16/front-quarter.png)
+![Manoeuvring Device](../gallery/media/objects/achaean/manoeuvring-device/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac16/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac16/model.glb)
+[Blend](../sources/objects/achaean/manoeuvring-device/model.blend) · [GLB](../sources/objects/achaean/manoeuvring-device/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac16-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/manoeuvring-device/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/manoeuvring-device/imported-rear-quarter.png)
 
 ## Destination Beam
 
