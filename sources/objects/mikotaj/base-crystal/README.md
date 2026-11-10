@@ -1,0 +1,9 @@
+# MK01 Base Crystal
+
+Canonical Mikotaj CPU: `model.blend` and `model.glb`, identity `openfa:building/legacy/086`, issue openfa-assets #259. A heavy green-grey mineral-alloy structure replaces the early generic sharp-shard approximation. Original _B/MK01.256 body1, _ZOOM/MK01.256 detail1 and all 41 decoded catalogue updates were inspected. The catalogue reveal is information presentation, not an operating animation. Original ENGLISH.TXT record947 and the indexed Mikotaj Architecture CDB record describe the noise-masking CPU and heavy ore-like colony architecture.
+
+The actual ImageGen concept is recorded in `mk01-concept-review.json`. Three rejected GLB feedback rounds corrected disconnected-looking rounded feet, overly coarse relief/protruding optics and discontinuous UV patina. The final source has continuous mineral flanks and a boolean-seated emitter. Stress relief, wear, hidden sections and the rear access port are authored; no exact alloy chemistry is recovered. A technical wireframe is rendered from the same imported geometry, not a competing model.
+
+Placement contract: 3x3 cells, local +Z up and -Y front. Native dimensions are authored cell-relative proportions; no source-proven physical height or calibrated client scale. Four materials, three authored packed-map inputs, no operational clips. Current measured budget and source/output hashes are in `model.json`; `runtime-review.json` records actual saved-native/independent GLB checks and renders. `visual-review.json` separates agent review from user/client acceptance.
+
+The current catalogue selects this single pair for gameplay, build menus and SciTek; the old source remains a historical study. Gallery views are generated from this exact GLB revision. Game-package integration, final artistic acceptance, performance and construction/state mapping remain separate.

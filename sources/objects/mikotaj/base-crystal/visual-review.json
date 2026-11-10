@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/086",
+  "binaries": {
+    "blend": "e2233aff60c20e023d658b7b480b506ec28f41d6008488bc5fbb731588cccd1e",
+    "glb": "0a25b3c2d06a4371c60b79a5063d36be553d6770ade7ab740c59869a7de08af1"
+  },
+  "runtime_report_sha256": "21c6d8346d5a68f551d14e3d0bb2dbee62d9dc153ebee914d0ef8be50d092d2f",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 8.536064874093044e-05,
+      "margin": 77
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 8.529776674937965e-05,
+      "margin": 53
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.000139640425903299,
+      "margin": 79
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk01-review-1.png",
+      "sha256": "45c5e9f12d721c87d91e18a5c11f3fefaa9f67d5ae959414330411bf95d21488",
+      "prompt": "sources/docs/reconstruction/models/mk01-concept-prompt-1.txt",
+      "feedback": "Selected. Preserves broad joined upper lobes, opaque metallic green-grey mass, blue central emitter, two brass neck bands and lower luminous nodes; avoids the old sharp-shard approximation."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "verdict": "rejected-for-refinement",
+      "issues": [
+        "Crown and flanks too spherical; visible shoulder gap around neck unlike continuous ore-like sides.",
+        "Emitter seating protrudes too much, producing tube-like profile.",
+        "Alloy too glossy, emission too flat/white; strengthen restrained mineral relief and roughness."
+      ],
+      "source_model_sha256": "2939c87a69010c6a3854211bcf5bd2893f656c1bae02a81a83b269f39b7c904a"
+    },
+    {
+      "iteration": 2,
+      "verdict": "refine-relief-and-seat",
+      "issues": [
+        "Continuous sidewalls corrected, but displacement is too coarse and produces visibly harsh surface patches.",
+        "Primary optic must be inset into an actual boolean recess rather than depend only on a backing cylinder."
+      ],
+      "source_model_sha256": "608b60960fc30c9cd3e26ed94f57b2c79b8ae8665aa0a17bed52a0f26302f822"
+    },
+    {
+      "iteration": 3,
+      "verdict": "correct-UV-patina",
+      "issues": [
+        "Broad shell shows discontinuous dark angular patches at smart-projected UV islands; use continuous cylindrical coordinates with seam on rear and restrained mineral patina."
+      ],
+      "source_model_sha256": "7298caacbc44dc2be843921ce404e4c8e6f840221783a34822b69cbebe855f21"
+    }
+  ],
+  "final_review": "Final imported GLB retains the broad joined upper mass, continuous mineral-metal flanks, blue inset optic, two separated brass collars and smaller lower nodes. Continuous rear-seamed UVs and restrained patina replace the rejected dark atlas-island patches. Broad shapes are intentionally quiet rather than densely panelled.",
+  "limitations": [
+    "Precise lobes, rear service closure and stress relief are authored from limited legacy evidence.",
+    "At close-up the sculpt is simplified relative to ImageGen; shape/colour identity and gameplay-scale readability take priority over copying every generated crevice.",
+    "No recovered metric height, calibrated game state, construction implementation, Android timing or final user approval is claimed."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

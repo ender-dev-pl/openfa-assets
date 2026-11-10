@@ -6,11 +6,13 @@
 
 `openfa:building/legacy/086`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Base Crystal](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk01/front-quarter.png)
+![Base Crystal](../gallery/media/objects/mikotaj/base-crystal/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk01/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk01/model.glb)
+[Blend](../sources/objects/mikotaj/base-crystal/model.blend) · [GLB](../sources/objects/mikotaj/base-crystal/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/base-crystal/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/base-crystal/rear-quarter.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/base-crystal/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/base-crystal/concept-glb-comparison.jpg)
 
 ## Stability
 

@@ -34,7 +34,7 @@ def main():
             assert record.get('reviewed_model') and all(record.get('acceptance_evidence', {}).get(key) for key, accepted in record['acceptance'].items() if accepted), (record['id'], 'unbound acceptance gate')
         reviewed = record.get('reviewed_model')
         proof = reviewed.get('runtime_evidence') if isinstance(reviewed, dict) else None
-        if published_mobile or isinstance(proof, dict) and proof.get('format') in {'rigellian-building-remaster-v1', 'achaean-building-remaster-v1', 'achaean-static-building-remaster-v2', 'achaean-animated-building-remaster-v1', 'achaean-directional-building-remaster-v1', 'achaean-stun-tower-remaster-v1', 'achaean-power-tower-remaster-v1', 'mobile-remaster-runtime-v1'}:
+        if published_mobile or isinstance(proof, dict) and proof.get('format') in {'rigellian-building-remaster-v1', 'achaean-building-remaster-v1', 'achaean-static-building-remaster-v2', 'achaean-animated-building-remaster-v1', 'achaean-directional-building-remaster-v1', 'achaean-stun-tower-remaster-v1', 'achaean-power-tower-remaster-v1', 'mobile-remaster-runtime-v1', 'culture-building-remaster-v1'}:
             verify_runtime_evidence(ROOT / 'sources', record)
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
     migration=json.loads((ROOT/'sources/docs/reconstruction/models/shipyard-canonical-assets.json').read_text())

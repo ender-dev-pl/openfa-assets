@@ -13,3 +13,7 @@ No model delivery is complete in this baseline milestone. MK01 Base Crystal has 
 The existing generic MK01 recipe's sharp crystal cluster is not treated as ground truth. Original paletted views show a heavy rounded mineral-metal mass, joined upper lobes, central blue emitter and two brass lower bands. The mining architecture lore and object function determine the interpretation; exact alloy chemistry and hidden construction remain unknown.
 
 Private decoded legacy pixels and authoring logs remain outside published sources. Use the main worktree; no extra checkout, game build or copied archive. Task disk accounting, recoverable checkpoint and original image inputs are retained privately in the game repository's ignored artifacts.
+
+## Current delivery index
+
+The [Mikotaj delivery manifest](mikotaj-building-remaster-delivery.json) records the current canonical selections and remaining identities. MK01 is source/native/import/visual verified; user and game integration acceptance remain separate. Culture milestone checkboxes are updated only after signed verified commits.

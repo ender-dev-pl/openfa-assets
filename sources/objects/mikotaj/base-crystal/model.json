@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/086",
+  "key": "MK01",
+  "name": "Base Crystal",
+  "culture": "mikotaj",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 20,
+  "construction_updates": 50,
+  "triangles": 25352,
+  "triangle_budget": 30000,
+  "mesh_nodes": 24,
+  "materials": 4,
+  "author": "sources/tools/blender/remaster_mikotaj_base_crystal.py",
+  "author_sha256": "fd8f7350ebd8f777c1848bc1e5ef793919272219a0985cdcbb520250312671b3",
+  "binaries": {
+    "blend": "e2233aff60c20e023d658b7b480b506ec28f41d6008488bc5fbb731588cccd1e",
+    "glb": "0a25b3c2d06a4371c60b79a5063d36be553d6770ade7ab740c59869a7de08af1"
+  },
+  "textures": {
+    "brass-base-colour.png": "910f6da7a43d537bc6ac1d28ee02c6a6475eb18e03517e46b257a01e70ccf498",
+    "mineral-base-colour.png": "8d0518652c7e8e56520045e15c80798b454f66d777d86c8b9cdecc9c349992db",
+    "occlusion-roughness-metallic.png": "b20a7f6b812c52c931b7f13ab9aa5a6b803cdb9a441ca20a45bb579526a64c79"
+  },
+  "interpretation": [
+    "Opaque ore-like alloy anatomy, not transparent home-world crystal; precise sections/backside service port are authored.",
+    "No operational motion inferred from catalogue information reveal. Blue emitters are material emission, not an invented gameplay effect."
+  ],
+  "scale_contract": "3x3 placement footprint, local +Z up/-Y front. Native dimensions are authored cell-relative proportions; no metric legacy height or calibrated game scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/mk01-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

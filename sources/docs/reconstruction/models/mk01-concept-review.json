@@ -3,7 +3,7 @@
   "issue": 259,
   "id": "openfa:building/legacy/086",
   "key": "MK01",
-  "stage": "concept-reviewed-model-pending",
+  "stage": "concept-reviewed",
   "iterations": [
     {
       "attempt": 1,
@@ -111,5 +111,52 @@
     "Full catalogue sequence is a holographic information reveal, not an operating mechanism; do not create motion from the reveal.",
     "The red catalogue contour and green/blue frame are UI, not model geometry."
   ],
-  "next_gate": "Create canonical editable model, independently import/export and render, compare actual result to legacy and concept before any model acceptance."
+  "following_gates": [
+    "canonical model and independent GLB render review",
+    "gallery finalization",
+    "signed delivery and game-thread handoff",
+    "separate client and final user acceptance"
+  ],
+  "research_semantic_survey": {
+    "subjects_reviewed": [
+      "scitek:mk2-mine",
+      "scitek:mk2-deep-bore-mine",
+      "scitek:anti-missile-pod",
+      "scitek:anti-virus-missile",
+      "scitek:asteroid-engines",
+      "scitek:asteroid-tracker",
+      "scitek:building-armour",
+      "scitek:construction-droids",
+      "scitek:deflector",
+      "scitek:fleet-battleship",
+      "scitek:gravity-nullifier",
+      "scitek:hi-energy-power-stores",
+      "scitek:improved-sensors",
+      "scitek:mega-missile",
+      "scitek:missile-bay-extension",
+      "scitek:missile-guidance-system",
+      "scitek:nuclear-missile",
+      "scitek:ore-teleporter",
+      "scitek:photon-turret",
+      "scitek:plasma-turret",
+      "scitek:power-amplifier",
+      "scitek:powerplant",
+      "scitek:repair-facility",
+      "scitek:screen-generator",
+      "scitek:seismic-penetrator",
+      "scitek:shield-x40",
+      "scitek:shield-x50",
+      "scitek:solar-matrix",
+      "scitek:static-inducer",
+      "scitek:stasis-missile",
+      "scitek:terminator",
+      "scitek:turret-optimiser",
+      "scitek:virus-missile",
+      "scitek:warp-generator",
+      "scitek:long-range-transmitter",
+      "scitek:command-cruiser"
+    ],
+    "finding": "All 36 research subject identities and preview bindings reviewed. No CPU/Base Crystal subject is bound; unrelated Terran machinery is not substituted for Mikotaj body geometry. _MA archive/video family enumeration is retained privately.",
+    "source": "sources/content/standard/presentation/legacy-domain.json"
+  }
 }

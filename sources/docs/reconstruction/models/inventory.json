@@ -16440,7 +16440,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/086",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           947
         ]
@@ -16514,21 +16514,40 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk01/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mikotaj/base-crystal/model.blend",
           "present": true,
-          "sha256": "b87b4452a72247b2627badd203c4649badc4dd578b806dd26f624b72d0167530",
-          "final_visual_acceptance": "not-established"
+          "sha256": "e2233aff60c20e023d658b7b480b506ec28f41d6008488bc5fbb731588cccd1e",
+          "media": "gallery/media/objects/mikotaj/base-crystal",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mikotaj/base-crystal/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mikotaj/base-crystal/rear-quarter.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mikotaj/base-crystal/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mikotaj/base-crystal/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -16558,6 +16577,82 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 86
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk01/model.blend",
+          "present": true,
+          "sha256": "b87b4452a72247b2627badd203c4649badc4dd578b806dd26f624b72d0167530",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mikotaj/base-crystal/model.blend",
+        "sha256": "e2233aff60c20e023d658b7b480b506ec28f41d6008488bc5fbb731588cccd1e",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mikotaj/base-crystal",
+          "verifier": "sources/tools/blender/verify_mikotaj_base_crystal.py",
+          "files": {
+            "sources/objects/mikotaj/base-crystal/model.blend": "e2233aff60c20e023d658b7b480b506ec28f41d6008488bc5fbb731588cccd1e",
+            "sources/objects/mikotaj/base-crystal/model.glb": "0a25b3c2d06a4371c60b79a5063d36be553d6770ade7ab740c59869a7de08af1",
+            "sources/objects/mikotaj/base-crystal/model.json": "0de0f6b34530b2b5ccfcc4eaf3f0190ae422eb9a0d052c1da481b8ab4098c2c1",
+            "sources/objects/mikotaj/base-crystal/README.md": "5b1e3c454ecab6bb1c9bbfebd8cc947c04321aaff972b804f0175816a340e34e",
+            "sources/objects/mikotaj/base-crystal/runtime-review.json": "21c6d8346d5a68f551d14e3d0bb2dbee62d9dc153ebee914d0ef8be50d092d2f",
+            "sources/objects/mikotaj/base-crystal/visual-review.json": "c06425fb131caae6f71baf863161bf8d8cf9d335908ee0465262f7415483cc13",
+            "gallery/media/objects/mikotaj/base-crystal/concept-glb-comparison.jpg": "3db89f986e6a94e1221a4ff4d96f42c33a29517be698f2e488bd5a706769674d",
+            "gallery/media/objects/mikotaj/base-crystal/front-quarter.png": "4cebe027eee436987177adbe3522c883a0e66ad882f4f0721d61b06ccf6e656f",
+            "gallery/media/objects/mikotaj/base-crystal/front.png": "c2c819d2f368d705ced5c012372e20c4949d44d48308d5e43a77100428e30aa1",
+            "gallery/media/objects/mikotaj/base-crystal/imported-front-quarter.png": "4cebe027eee436987177adbe3522c883a0e66ad882f4f0721d61b06ccf6e656f",
+            "gallery/media/objects/mikotaj/base-crystal/imported-front.png": "c2c819d2f368d705ced5c012372e20c4949d44d48308d5e43a77100428e30aa1",
+            "gallery/media/objects/mikotaj/base-crystal/imported-rear-quarter.png": "f9366a92ffe53921788ef3f25a575877c2f48f5498ace09334488d804b5897a0",
+            "gallery/media/objects/mikotaj/base-crystal/native-front-quarter.png": "bd3281d925fc5e83bfc47dab36ace6ba4ca5a58e0600816c5986591e18369474",
+            "gallery/media/objects/mikotaj/base-crystal/native-front.png": "91b509ae941feb2c31647da52f4f88734386e8f8aaf6ec7c9e5e74d929c4345d",
+            "gallery/media/objects/mikotaj/base-crystal/native-rear-quarter.png": "da7aa5afca08e813c334285e1f08d10ecca75494a9258aa67402ad31308b0f2b",
+            "gallery/media/objects/mikotaj/base-crystal/rear-quarter.png": "f9366a92ffe53921788ef3f25a575877c2f48f5498ace09334488d804b5897a0",
+            "gallery/media/objects/mikotaj/base-crystal/technical-wireframe.png": "1dc83f6a8837db67b75786e70a98823a74d2081d51e0653b99c92bf36d867a5b",
+            "sources/materials/mikotaj/base-crystal/brass-base-colour.png": "910f6da7a43d537bc6ac1d28ee02c6a6475eb18e03517e46b257a01e70ccf498",
+            "sources/materials/mikotaj/base-crystal/mineral-base-colour.png": "8d0518652c7e8e56520045e15c80798b454f66d777d86c8b9cdecc9c349992db",
+            "sources/materials/mikotaj/base-crystal/occlusion-roughness-metallic.png": "b20a7f6b812c52c931b7f13ab9aa5a6b803cdb9a441ca20a45bb579526a64c79",
+            "sources/tools/blender/remaster_mikotaj_base_crystal.py": "fd8f7350ebd8f777c1848bc1e5ef793919272219a0985cdcbb520250312671b3",
+            "sources/tools/blender/verify_mikotaj_base_crystal.py": "cb05a9d45e5a1f643e77cfb56a5af9335d5bc550034b29622a83e0695f882b27",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "122fe933c0bcac1324cc2c71a2efe36c806229e243d0f201a4fc5edf6bc2e53e",
+            "sources/docs/reconstruction/models/mk01-concept-review.json": "df8eeb70f9998981ac7c9dc9edb4cacdc201ab362bc57bf484742771fb22a001",
+            "sources/docs/reconstruction/models/mk01-concept-prompt-1.txt": "005eb76ba7d2a61dcb9d11b00e303c32241ef23403bb9d1c4f583351290ed719",
+            "gallery/media/concepts/mikotaj/mk01-review-1.png": "45c5e9f12d721c87d91e18a5c11f3fefaa9f67d5ae959414330411bf95d21488"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mikotaj/base-crystal/visual-review.json",
+          "sha256": "c06425fb131caae6f71baf863161bf8d8cf9d335908ee0465262f7415483cc13",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mikotaj/base-crystal/visual-review.json",
+          "sha256": "c06425fb131caae6f71baf863161bf8d8cf9d335908ee0465262f7415483cc13",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mikotaj/base-crystal/visual-review.json",
+          "sha256": "c06425fb131caae6f71baf863161bf8d8cf9d335908ee0465262f7415483cc13",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mikotaj/base-crystal/visual-review.json",
+          "sha256": "c06425fb131caae6f71baf863161bf8d8cf9d335908ee0465262f7415483cc13",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mikotaj/base-crystal/runtime-review.json",
+          "sha256": "21c6d8346d5a68f551d14e3d0bb2dbee62d9dc153ebee914d0ef8be50d092d2f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
