@@ -1,0 +1,35 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/057",
+  "concept_requests_used": 2,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri18-review-2.png",
+    "sha256": "2e148e7fe3feb841ce126ad8905039b9ddd9277f0925f3adaadcc7b443c0a7a4",
+    "prompt": "sources/docs/reconstruction/models/ri18-concept-prompt-2.txt"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "prompt": "sources/docs/reconstruction/models/ri18-concept-prompt-1.txt",
+      "outcome": "No image returned after built-in output moderation.",
+      "request_id": "ed7dc4b9-e608-44e3-ad80-ce2d68d5442d"
+    },
+    {
+      "attempt": 2,
+      "outcome": "Image returned and reviewed."
+    }
+  ],
+  "feedback": [
+    "Stepped green upper body, ribbed bronze drum, angled fitting and two-half dome agree broadly with actual legacy closed/open progression.",
+    "Concept adds three front bands instead of the existing two, exaggerates shell ring divisions and details the angled fitting. Do not transfer those changes automatically.",
+    "The open concept uses hollow thin cap halves, while the retained source-derived halves have broad solid cut faces. Internal thickness was not established by legacy; inspect this as a remaining artistic/engineering question, preserving the source outer silhouette and two-sided opening.",
+    "Compact hinge support is a useful engineering interpretation, not recovered original hardware. Candidate now has physical bearings/axles and a local collar relief; full hardware seating and material/source-preservation checks remain.",
+    "Candidate angles are authored monotonic descriptor calibration, not recovered hinge measurements or simulation timers. Descriptor17 lower/shadow composition remains unresolved."
+  ],
+  "candidate_motion_report_sha256": "28df6615d9cc4ff922a016f038e674324dfd7432e5ea10e23104115cf43ec736",
+  "canonical_delivery_ready": false,
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
