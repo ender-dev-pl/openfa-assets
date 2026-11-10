@@ -42,11 +42,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/154`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Filtration Vats](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac04/front-quarter.png)
+![Filtration Vats](../gallery/media/objects/achaean/filtration-vats/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac04/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac04/model.glb)
+[Blend](../sources/objects/achaean/filtration-vats/model.blend) · [GLB](../sources/objects/achaean/filtration-vats/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac04-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/filtration-vats/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/filtration-vats/imported-rear-quarter.png)
 
 ## Nutrient Vats
 
