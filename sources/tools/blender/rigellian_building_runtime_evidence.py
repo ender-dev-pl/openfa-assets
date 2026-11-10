@@ -12,7 +12,48 @@ def digest(path):
     return hashlib.sha256(raw).hexdigest()
 
 
+def verify_supported_dome_contract(metadata, report, document):
+    animation = metadata['animation']
+    expected = {animation['cycle_clip'], animation['descriptor_clip']}
+    assert set(report['clips']) == expected
+    clips = {clip['name']: clip for clip in document['animations']}
+    assert set(clips) == expected and len(document['meshes']) == report['meshes']
+    assert len(animation['target_nodes']) == 2
+    for name, clip in clips.items():
+        assert len(clip['channels']) == 2
+        assert {document['nodes'][c['target']['node']]['name'] for c in clip['channels']} == set(animation['target_nodes'])
+        assert all(c['target']['path'] == 'rotation' for c in clip['channels'])
+        interpolation = 'STEP' if name == animation['descriptor_clip'] else 'LINEAR'
+        assert all(s['interpolation'] == interpolation for s in clip['samplers'])
+    assert animation['cycle_frames'] == [1,61] and animation['descriptor_frames'] == [2,17]
+    assert animation['fps'] == 30 and animation['continuous_timing_recovered'] is False
+    motion = report['sampled_motion']
+    assert motion['cycle_frames'] == list(range(1,62))
+    assert motion['descriptor_domain'] == [s['descriptor'] for s in metadata['states']] == list(range(2,18))
+    assert motion['leaf_old_body_surface_intersections'] is False
+    assert motion['maximum_axle_leaf_distance'] < .018
+    assert max(motion['maximum_cycle_matrix_error'],motion['maximum_descriptor_matrix_error']) < 1e-5
+    assert motion['continuous_sweep_proven'] is False and motion['descriptor17_composition_verified'] is False
+    for state in metadata['states']:
+        assert state['clip'] == animation['descriptor_clip'] and state['frame'] == state['descriptor']
+        assert abs(state['time_seconds']-state['frame']/30) < 1e-9
+        fraction = min(1,(state['descriptor']-2)/14)
+        assert abs(state['opening_fraction']-fraction) < 1e-9
+        assert abs(state['angle_degrees']-110*fraction) < 1e-9
+    assert metadata['states'][-1]['lower_shadow_composition_verified'] is False
+    for key in ['native','imported']:
+        sweep = report['supported_hardware_sweep'][key]
+        assert [s['frame'] for s in sweep['samples']] == list(range(1,62))
+        assert all(s['opposite_hardware_contacts'] == 0 for s in sweep['samples'])
+        assert sweep['allowed_axis_seat_radius'] == .065 and sweep['allowed_axis_half_length'] == .096
+        assert sweep['maximum_contact_envelope_radius'] < .065
+        assert report[key]['low_floor_seated_in_original_ring'] is True
+        assert report[key]['supported_hardware_contact_points'] == 24
+
+
 def verify_animation_contract(metadata, report, document):
+    if metadata['animation'].get('mechanism_kind') == 'ri18-supported-dome-v1':
+        return verify_supported_dome_contract(metadata, report, document)
     animation = metadata['animation']
     expected = {animation['cycle_clip'], animation['descriptor_clip']}
     assert set(report['clips']) == expected

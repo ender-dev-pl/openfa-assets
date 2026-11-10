@@ -25,7 +25,8 @@ class Evidence(unittest.TestCase):
                 result = verify_runtime_evidence(ROOT / 'sources', record)
                 folder = ROOT / 'sources' / Path(record['reviewed_model']['blend']).parent
                 metadata = json.loads((folder / 'model.json').read_bytes())
-                self.assertEqual(result['views'], 40 if metadata.get('animation') else 6)
+                expected_views = 16 if metadata.get('animation',{}).get('mechanism_kind') == 'ri18-supported-dome-v1' else (40 if metadata.get('animation') else 6)
+                self.assertEqual(result['views'], expected_views)
                 self.assertFalse(result['game_client_integration'])
                 checked.append(record['id'])
         self.assertIn('openfa:building/legacy/042', checked)
@@ -70,6 +71,32 @@ class Evidence(unittest.TestCase):
                 clip['samplers'][0]['interpolation'] = 'LINEAR'
         with self.assertRaises(AssertionError):
             verify_animation_contract(metadata, report, wrong)
+
+    def test_supported_dome_contract_rejects_weakened_hardware_or_wrong_motion(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_animation_contract
+        folder = ROOT / 'sources/objects/rigellian/missile-launcher'
+        metadata = json.loads((folder / 'model.json').read_bytes())
+        report = json.loads((folder / 'runtime-review.json').read_bytes())
+        raw = (folder / 'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_animation_contract(metadata,report,document)
+        wrong = deepcopy(report)
+        wrong['supported_hardware_sweep']['imported']['samples'][20]['opposite_hardware_contacts'] = 1
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(metadata,wrong,document)
+        wrong = deepcopy(report)
+        wrong['sampled_motion']['cycle_frames'].pop()
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(metadata,wrong,document)
+        wrong = deepcopy(metadata)
+        wrong['states'][5]['angle_degrees'] += 5
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(wrong,report,document)
+        wrong = deepcopy(document)
+        wrong['animations'][0]['channels'][0]['target']['path'] = 'translation'
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(metadata,report,wrong)
 
     def test_static_open_port_evidence_cannot_be_omitted(self):
         data = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_bytes())

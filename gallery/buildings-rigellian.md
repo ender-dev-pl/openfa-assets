@@ -228,27 +228,17 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/057`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Missile Launcher](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/front-quarter.png)
+![Missile Launcher](../gallery/media/objects/rigellian/missile-launcher/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/model.glb)
+[Blend](../sources/objects/rigellian/missile-launcher/model.blend) · [GLB](../sources/objects/rigellian/missile-launcher/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/animation-00.webm)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri18-review-2.png) · [Actual independent GLB](../gallery/media/objects/rigellian/missile-launcher/imported-front-quarter.png)
 
-**Additional iteration — initial-reference-study**
+[Play animation: MissileDomeCycle](../gallery/media/objects/rigellian/missile-launcher/animation-00.webm)
 
-![Missile Launcher](../gallery/media/docs/assets/reconstruction/buildings/rigellian/missile-launcher/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/missile-launcher/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/missile-launcher/model.glb)
-
-**Additional iteration — verified-launch-mechanism**
-
-![Missile Launcher](../gallery/media/docs/assets/reconstruction/launch-facilities/rigellian/ri18/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.glb)
-
-[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/rigellian/ri18/animation-00.webm)
+[Play animation: MissileDomeDescriptorStates](../gallery/media/objects/rigellian/missile-launcher/animation-01.webm)
 
 ## Thermal Lance
 

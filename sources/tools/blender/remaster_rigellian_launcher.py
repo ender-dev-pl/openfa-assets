@@ -52,8 +52,8 @@ def main():
     upper = bpy.data.objects['RI18 stepped green silo casing']
     edited = 0
     for vertex in upper.data.vertices:
-        if vertex.co.z > 1.629:
-            vertex.co.z = 1.629
+        if vertex.co.z > 1.62:
+            vertex.co.z = 1.62+(vertex.co.z-1.62)*(.009/.03)
             edited += 1
     assert edited > 0
     upper.data.update()
@@ -65,6 +65,22 @@ def main():
             continue
         for index,point in zip(face.loop_indices,points):
             uv.data[index].uv.y = point.z/3.0
+    # Seat the existing low floor into its surrounding original floor ring.
+    floor = bpy.data.objects['Recessed launch well floor']
+    old_floor_radius = max(math.hypot(v.co.x,v.co.y) for v in floor.data.vertices)
+    for vertex in floor.data.vertices:
+        vertex.co.x *= .181/old_floor_radius
+        vertex.co.y *= .181/old_floor_radius
+    floor.data.update()
+    # The original bisection creates planar cut faces; give those faces an
+    # explicit interior projection while retaining exterior cap UVs.
+    for obj in [o for o in scene.objects if o.name in ['Split pointed cap -1','Split pointed cap 1']]:
+        layer = obj.data.uv_layers.active
+        for face in obj.data.polygons:
+            points = [obj.data.vertices[obj.data.loops[i].vertex_index].co for i in face.loop_indices]
+            if all(abs(p.x)<1e-6 for p in points):
+                for index,point in zip(face.loop_indices,points):
+                    layer.data[index].uv = (.5+point.y/.52,(point.z-1.63)/.34)
     scuffs = []
     for obj in scene.objects:
         if obj.type=='MESH' and 'edge scuff' in obj.name:
@@ -75,8 +91,8 @@ def main():
             bpy.ops.object.modifier_apply(modifier=modifier.name)
             scuffs.append(obj.name)
     assert len(scuffs)==6
-    alloy = bpy.data.materials['RI18 | bronze exterior ribs']
-    support = bpy.data.materials['RI18 | green connector alloy']
+    alloy = bpy.data.materials['RI18 | aged bronze foundation']
+    support = bpy.data.materials['RI18 | weathered green casing']
     additions = []
     for sign in [-1,1]:
         pin = cylinder(f'RI18 hinge axle {sign}',(sign*.26,0,1.63),.018,.19,alloy,
@@ -91,6 +107,25 @@ def main():
                           (.048,.030,.060),support,.003)
             bracket.parent = root
             additions.extend([bearing.name,bracket.name])
+    # Reuse authored worn maps with explicit per-component coordinates.
+    for name in additions:
+        obj = bpy.data.objects[name]
+        bpy.context.view_layer.objects.active = obj
+        for modifier in list(obj.modifiers):
+            bpy.ops.object.modifier_apply(modifier=modifier.name)
+        data = obj.data
+        while data.uv_layers:
+            data.uv_layers.remove(data.uv_layers[0])
+        layer = data.uv_layers.new(name='Authored surface wear')
+        low = [min(v.co[i] for v in data.vertices) for i in range(3)]
+        high = [max(v.co[i] for v in data.vertices) for i in range(3)]
+        for face in data.polygons:
+            axis = max(range(3),key=lambda i:abs(face.normal[i]))
+            a,b = [i for i in range(3) if i != axis]
+            for index in face.loop_indices:
+                point = data.vertices[data.loops[index].vertex_index].co
+                layer.data[index].uv = ((point[a]-low[a])/(high[a]-low[a]),
+                                       (point[b]-low[b])/(high[b]-low[b]))
     states = [dict(descriptor=d,clip=STATES,frame=d,time_seconds=d/30,
                    opening_fraction=min(1,(d-2)/14),
                    angle_degrees=110*min(1,(d-2)/14),
@@ -186,17 +221,24 @@ def main():
         triangles += len(obj.data.loop_triangles)
     meta = dict(issue=253,id=case['id'],name='Missile Launcher',
                 recipe=recipe_path.relative_to(ROOT).as_posix(),recipe_sha256=sha(recipe_path),
+                mechanism_evidence='sources/docs/reconstruction/models/launch-facility-animation-audit.json',
+                mechanism_sha256=sha(ROOT/'sources/docs/reconstruction/models/launch-facility-animation-audit.json'),
                 source=case['source'],source_sha256=sha(source),author_sha256=sha(Path(__file__)),
                 binaries={k:sha(FOLDER/('model.'+k)) for k in ['blend','glb']},
                 footprint=[3,3],definition_class=14,construction_updates=30,
                 triangles=triangles,mesh_nodes=len(meshes),
-                local_collar_edit=dict(edited_vertices=edited,new_top=1.629,old_top=1.65),
-                added_hinge_parts=additions,solidified_cosmetic_scuffs=scuffs,
-                preserved_components=sorted(original_names-{'RI18 stepped green silo casing'}-set(scuffs)),
-                animation=dict(cycle_clip=CYCLE,descriptor_clip=STATES,target_nodes=TARGETS,
+                local_collar_edit=dict(edited_vertices=edited,new_top=1.629,old_top=1.65,
+                    method="Proportional compression above 1.62; no collapsed profile faces"),
+                low_floor_seat=dict(old_radius=old_floor_radius,new_radius=.181),
+                cap_cut_uv='Local planar YZ projection; exterior cap UVs retained',
+                added_hinge_parts=additions,hinge_wear='Reused authored bronze/green maps with explicit local planar UVs',
+                solidified_cosmetic_scuffs=scuffs,
+                preserved_components=sorted(original_names-{'RI18 stepped green silo casing','Recessed launch well floor'}-set(scuffs)),
+                animation=dict(mechanism_kind='ri18-supported-dome-v1',cycle_clip=CYCLE,descriptor_clip=STATES,target_nodes=TARGETS,
+                               cycle_frames=[1,61],descriptor_frames=[2,17],
                                fps=30,closed_frame=1,open_frame=31,end_frame=61,
                                continuous_timing_recovered=False),states=states,
-                canonical_delivery_ready=False,game_client_integration=False,final_artistic_acceptance=False)
+                delivery_authority='Bound runtime/visual evidence and canonical inventory registration',game_client_integration=False,final_artistic_acceptance=False)
     (FOLDER/'model.json').write_bytes((json.dumps(meta,indent=2)+'\n').encode())
     print('RI18_SUPPORTED_DOME_CANDIDATE',len(meshes),triangles,flush=True)
 

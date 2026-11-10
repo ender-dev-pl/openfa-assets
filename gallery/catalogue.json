@@ -2023,52 +2023,45 @@
     "culture": "rigellian",
     "studies": [
       {
-        "stage": "silhouette-study",
-        "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/model.blend",
-        "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/model.glb",
-        "image": "gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/front-quarter.png",
-        "sha256": "c3980faaccdcc1a796bd3be61c52d01db0a96fe234f9ec59beb776b4d8089378",
+        "stage": "canonical-game-remaster",
+        "blend": "sources/objects/rigellian/missile-launcher/model.blend",
+        "glb": "sources/objects/rigellian/missile-launcher/model.glb",
+        "image": "gallery/media/objects/rigellian/missile-launcher/front-quarter.png",
+        "sha256": "4d9837de686fcb4631725b44280a0007e8d03d3b92ed91784dcec1ffcdc0a13e",
         "animations": [
           {
             "index": 0,
-            "name": "Animation",
-            "start": 0.0625,
-            "end": 1.0625,
-            "duration": 1.0,
-            "video": "gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri18/animation-00.webm",
-            "sha256": "f15573a1ff20ce050d2775515349730984891bbb1840533d505c6d2be09fac40",
-            "frames": 24,
-            "fps": 24.0,
-            "distinct_pose_count": 23
-          }
-        ]
-      },
-      {
-        "stage": "initial-reference-study",
-        "blend": "sources/docs/assets/reconstruction/buildings/rigellian/missile-launcher/model.blend",
-        "glb": "sources/docs/assets/reconstruction/buildings/rigellian/missile-launcher/model.glb",
-        "image": "gallery/media/docs/assets/reconstruction/buildings/rigellian/missile-launcher/front-quarter.png",
-        "sha256": "e3526459e2f3b2e397df2b6a604a01acf33df4ae7fcc685a8caedfef63ab9074",
-        "animations": []
-      },
-      {
-        "stage": "verified-launch-mechanism",
-        "blend": "sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.blend",
-        "glb": "sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.glb",
-        "image": "gallery/media/docs/assets/reconstruction/launch-facilities/rigellian/ri18/front-quarter.png",
-        "sha256": "102e2f5be43bac358a3a15f3b5552e386b7b52766b0ea45f61235a8b50cc37b1",
-        "animations": [
-          {
-            "index": 0,
-            "name": "LaunchFacilityCycle",
+            "name": "MissileDomeCycle",
             "start": 0.03333333333333333,
             "end": 2.033333333333333,
             "duration": 1.9999999999999998,
-            "video": "gallery/media/docs/assets/reconstruction/launch-facilities/rigellian/ri18/animation-00.webm",
-            "sha256": "9c326b9b88481dc037739325ae7cb23c9776a8f691e5bc50865e45288b6ec8bd",
-            "frames": 48,
-            "fps": 24.000000000000004,
-            "distinct_pose_count": 24
+            "video": "gallery/media/objects/rigellian/missile-launcher/animation-00.webm",
+            "sha256": "4e3789ab25b07d8b9d90b10590ea94f99cd8386fdc85bcaf6845fe2a02531529",
+            "frames": 61,
+            "fps": 30.500000000000004,
+            "distinct_pose_count": 31
+          },
+          {
+            "index": 1,
+            "name": "MissileDomeDescriptorStates",
+            "start": 0.06666666666666667,
+            "end": 0.5666666666666667,
+            "duration": 0.5,
+            "video": "gallery/media/objects/rigellian/missile-launcher/animation-01.webm",
+            "sha256": "62547372882aa7c6fd495dbe95e7945450bdbc0a577f86ba3932e525b4d716aa",
+            "frames": 16,
+            "fps": 32.0,
+            "distinct_pose_count": 15
+          }
+        ],
+        "views": [
+          {
+            "label": "Legacy-based concept (interpreted details)",
+            "image": "gallery/media/concepts/rigellian/ri18-review-2.png"
+          },
+          {
+            "label": "Actual independent GLB",
+            "image": "gallery/media/objects/rigellian/missile-launcher/imported-front-quarter.png"
           }
         ]
       }

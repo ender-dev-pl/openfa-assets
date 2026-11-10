@@ -4,12 +4,14 @@
   "name": "Missile Launcher",
   "recipe": "sources/objects/rigellian/missile-launcher/recipe.json",
   "recipe_sha256": "8aa0d224c4d4e74e8a22efee8e9443bc9c443556490d8a60e091f30b3f35cc91",
+  "mechanism_evidence": "sources/docs/reconstruction/models/launch-facility-animation-audit.json",
+  "mechanism_sha256": "c0ebb7c3721a4c3926d46394d4f6d1065229115e3c9a49e3208251579764467e",
   "source": "sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.blend",
   "source_sha256": "102e2f5be43bac358a3a15f3b5552e386b7b52766b0ea45f61235a8b50cc37b1",
-  "author_sha256": "13d984716bb6c5c3fe4d9bdb867827f218e6798b6b5c1a50cfb5f8dd1d19aebb",
+  "author_sha256": "b2da551f3e12d53fe1b76a269406e9d9944a7cdadaedabc5b39925f7c74ea058",
   "binaries": {
-    "blend": "41ba0cdbacd557d458e7b03b5c470a4bc47c0f066acc198e8617e8cbc5ca7ff9",
-    "glb": "23084f78addfe05a87d7feae7cee34e75f1150390ef5667ecc5576e8a5358721"
+    "blend": "4d9837de686fcb4631725b44280a0007e8d03d3b92ed91784dcec1ffcdc0a13e",
+    "glb": "ff1b899465c6b334b52b540dce124ecd6fe3b75c859746ce9d1748c7a32f8679"
   },
   "footprint": [
     3,
@@ -17,13 +19,19 @@
   ],
   "definition_class": 14,
   "construction_updates": 30,
-  "triangles": 51788,
+  "triangles": 54796,
   "mesh_nodes": 38,
   "local_collar_edit": {
-    "edited_vertices": 512,
+    "edited_vertices": 768,
     "new_top": 1.629,
-    "old_top": 1.65
+    "old_top": 1.65,
+    "method": "Proportional compression above 1.62; no collapsed profile faces"
   },
+  "low_floor_seat": {
+    "old_radius": 0.17910000693653325,
+    "new_radius": 0.181
+  },
+  "cap_cut_uv": "Local planar YZ projection; exterior cap UVs retained",
   "added_hinge_parts": [
     "RI18 hinge axle -1",
     "RI18 hinge bearing -1 -1",
@@ -36,6 +44,7 @@
     "RI18 hinge bearing 1 1",
     "RI18 hinge root bracket 1 1"
   ],
+  "hinge_wear": "Reused authored bronze/green maps with explicit local planar UVs",
   "solidified_cosmetic_scuffs": [
     "Split pointed cap -1 edge scuff",
     "Split pointed cap -1 edge scuff.001",
@@ -63,16 +72,24 @@
     "RI18 front drum band 0",
     "RI18 front drum band 1",
     "RI18 low silo floor",
-    "Recessed launch well floor",
     "Split pointed cap -1",
     "Split pointed cap 1"
   ],
   "animation": {
+    "mechanism_kind": "ri18-supported-dome-v1",
     "cycle_clip": "MissileDomeCycle",
     "descriptor_clip": "MissileDomeDescriptorStates",
     "target_nodes": [
       "LaunchLeaf pointed cap -1",
       "LaunchLeaf pointed cap 1"
+    ],
+    "cycle_frames": [
+      1,
+      61
+    ],
+    "descriptor_frames": [
+      2,
+      17
     ],
     "fps": 30,
     "closed_frame": 1,
@@ -242,7 +259,7 @@
       "lower_shadow_composition_verified": false
     }
   ],
-  "canonical_delivery_ready": false,
+  "delivery_authority": "Bound runtime/visual evidence and canonical inventory registration",
   "game_client_integration": false,
   "final_artistic_acceptance": false
 }

@@ -984,12 +984,246 @@
       "state_contract": "Static annular industrial building with open recess, low floor and three-prong crown. Catalogue reveal/highlight is not mechanism motion or camera rotation. No hangar, silo or closing lid is established. Shared RIS3 construction separate.",
       "reuse": "One current model across gameplay, build menu and SciTek; previous studies are history.",
       "limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "id": "openfa:building/legacy/057",
+      "key": "RI18",
+      "blend": "sources/objects/rigellian/missile-launcher/model.blend",
+      "glb": "sources/objects/rigellian/missile-launcher/model.glb",
+      "binaries": {
+        "blend": "4d9837de686fcb4631725b44280a0007e8d03d3b92ed91784dcec1ffcdc0a13e",
+        "glb": "ff1b899465c6b334b52b540dce124ecd6fe3b75c859746ce9d1748c7a32f8679"
+      },
+      "triangles": 54796,
+      "meshes": 38,
+      "materials": 11,
+      "embedded_images": 8,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 14,
+      "construction_updates": 30,
+      "root": "PlacementRoot",
+      "root_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_world_bounds": [
+        -0.8600000143051147,
+        -0.8600000143051147,
+        0.0,
+        0.9420199394226074,
+        0.8600000143051147,
+        1.9747313261032104
+      ],
+      "axes": "Blender -Y forward; +Z dorsal",
+      "state_contract": "Two-half dome opens outward on supported rim hinges. Continuous cycle timing and discrete descriptor angles are authored interpretations, not recovered timers. Descriptor17 lower/shadow composition remains unverified; shared RIS3 construction and launch entity are separate.",
+      "reuse": "One current model across gameplay, build menu and SciTek; previous studies are history.",
+      "limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate.",
+      "animation": {
+        "mechanism_kind": "ri18-supported-dome-v1",
+        "cycle_clip": "MissileDomeCycle",
+        "descriptor_clip": "MissileDomeDescriptorStates",
+        "target_nodes": [
+          "LaunchLeaf pointed cap -1",
+          "LaunchLeaf pointed cap 1"
+        ],
+        "cycle_frames": [
+          1,
+          61
+        ],
+        "descriptor_frames": [
+          2,
+          17
+        ],
+        "fps": 30,
+        "closed_frame": 1,
+        "open_frame": 31,
+        "end_frame": 61,
+        "continuous_timing_recovered": false
+      },
+      "state_mapping": [
+        {
+          "descriptor": 2,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 2,
+          "time_seconds": 0.06666666666666667,
+          "opening_fraction": 0.0,
+          "angle_degrees": 0.0,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 3,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 3,
+          "time_seconds": 0.1,
+          "opening_fraction": 0.07142857142857142,
+          "angle_degrees": 7.857142857142857,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 4,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 4,
+          "time_seconds": 0.13333333333333333,
+          "opening_fraction": 0.14285714285714285,
+          "angle_degrees": 15.714285714285714,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 5,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 5,
+          "time_seconds": 0.16666666666666666,
+          "opening_fraction": 0.21428571428571427,
+          "angle_degrees": 23.57142857142857,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 6,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 6,
+          "time_seconds": 0.2,
+          "opening_fraction": 0.2857142857142857,
+          "angle_degrees": 31.428571428571427,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 7,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 7,
+          "time_seconds": 0.23333333333333334,
+          "opening_fraction": 0.35714285714285715,
+          "angle_degrees": 39.285714285714285,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 8,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 8,
+          "time_seconds": 0.26666666666666666,
+          "opening_fraction": 0.42857142857142855,
+          "angle_degrees": 47.14285714285714,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 9,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 9,
+          "time_seconds": 0.3,
+          "opening_fraction": 0.5,
+          "angle_degrees": 55.0,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 10,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 10,
+          "time_seconds": 0.3333333333333333,
+          "opening_fraction": 0.5714285714285714,
+          "angle_degrees": 62.857142857142854,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 11,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 11,
+          "time_seconds": 0.36666666666666664,
+          "opening_fraction": 0.6428571428571429,
+          "angle_degrees": 70.71428571428572,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 12,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 12,
+          "time_seconds": 0.4,
+          "opening_fraction": 0.7142857142857143,
+          "angle_degrees": 78.57142857142857,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 13,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 13,
+          "time_seconds": 0.43333333333333335,
+          "opening_fraction": 0.7857142857142857,
+          "angle_degrees": 86.42857142857143,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 14,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 14,
+          "time_seconds": 0.4666666666666667,
+          "opening_fraction": 0.8571428571428571,
+          "angle_degrees": 94.28571428571428,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 15,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 15,
+          "time_seconds": 0.5,
+          "opening_fraction": 0.9285714285714286,
+          "angle_degrees": 102.14285714285715,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 16,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 16,
+          "time_seconds": 0.5333333333333333,
+          "opening_fraction": 1,
+          "angle_degrees": 110,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": null
+        },
+        {
+          "descriptor": 17,
+          "clip": "MissileDomeDescriptorStates",
+          "frame": 17,
+          "time_seconds": 0.5666666666666667,
+          "opening_fraction": 1,
+          "angle_degrees": 110,
+          "angle_calibration": "Authored monotonic interpretation; original pixels do not establish hinge angles.",
+          "lower_shadow_composition_verified": false
+        }
+      ]
     }
   ],
   "pending": [
     "RI01",
     "RI02",
-    "RI18",
     "RI19",
     "RI20",
     "RI21",
