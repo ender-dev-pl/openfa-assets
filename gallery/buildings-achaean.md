@@ -66,11 +66,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/156`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Habitat](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac06/front-quarter.png)
+![Habitat](../gallery/media/objects/achaean/habitat/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac06/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac06/model.glb)
+[Blend](../sources/objects/achaean/habitat/model.blend) · [GLB](../sources/objects/achaean/habitat/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac06-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/habitat/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/habitat/imported-rear-quarter.png)
 
 ## Pharmacopeion
 

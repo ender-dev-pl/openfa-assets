@@ -1,0 +1,113 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/156",
+  "binaries": {
+    "blend": "4c6fcbb7861134a6bb3455de9e77ec3920275a9dde337fd41589d35083b282cc",
+    "glb": "c0c2105076cc61d70ff9a699adca6b691277d6a3851c345fa32b42f4ad974283"
+  },
+  "runtime_report_sha256": "9fe44825b9946d0cd226ae1c531ea8db629aefb95021097b1ea090bcc117ecb6",
+  "legacy": {
+    "surface_payload_sha256": "df3406d7b8d9bf91cae9911e6bdfde6d573d63e8e7bd61368c54ef9246228b92",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1017,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "c00fdaec0ff85c605a531daf6268312b27bb529542e18f8d0e83dcbd75ce247f",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All 41 actual paletted phases inspected: reveal/highlight of one fixed view, not an operating mechanism. All profile catalogue roles map to AC06.VID; shared ACS2 scaffolding remains separate. No AC-named _MA family is present. Most rooms are underground according to function record1017; no invented exterior tower or underground interior is supplied."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac06-review-1.png",
+      "sha256": "0831d8a02bcd3ced63b5bfc1d46ff4dd852adaa3204c8386f667724faf5c3a9c",
+      "prompt": "sources/docs/reconstruction/models/ac06-concept-prompt-1.txt",
+      "feedback": "Accepted as an interpreted guide: broad lobed coral roof, short narrower warm-window drum, small blue-gray four-port cap, flowing castings and restrained wear. Actual sprite proportions take precedence over concept or lore interpretation; no additional tall structures or gold roof fields."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual rendered candidate was too flat relative to the legacy silhouette, despite the text describing small surface quarters.",
+      "action": "Raised the coral roof and blue cap using actual source visual proportions; kept the short lower window drum. Updated a source-specific height contract from the observed correction."
+    },
+    {
+      "iteration": 2,
+      "observation": "Revised silhouette better matches legacy, but the overly deep glowing panes obscured oblique window banks.",
+      "action": "Moved glazing just behind the outer rim, retained actual Boolean openings and dark backs, and updated actual owner-specific ray depths. Removed sub-micron Boolean cap slivers with measured surface deviation below2e-6."
+    },
+    {
+      "iteration": 3,
+      "observation": "Final actual front-quarter/front/rear imports show the lobed crown, flowing coral castings, short paired-window drum and seated cap. Native/import geometry and decoded textures agree. Four ports and twenty panes have real clear ray paths on both.",
+      "action": "Accept for integration review. Ten rear-distributed window banks are an authored continuation of the approximately five visible source banks, not recovered hidden geometry. Extra top/elevated renders support four-port inspection. Final user artistic acceptance, client states/scale/FPS remain separate."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.01146076146076146,
+      "margin": 90
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.023193227968879973,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.022362724994303942,
+      "margin": 96
+    }
+  ],
+  "review": "Static legacy-led Habitat crown with constant low warm emission. Same rooted geometry for gameplay/build/SciTek. Sparse flowing castings, restrained wear, no artificial dense panel divisions. Review camera approximate; no numerical legacy-fidelity percentage or hidden-room reconstruction claimed.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

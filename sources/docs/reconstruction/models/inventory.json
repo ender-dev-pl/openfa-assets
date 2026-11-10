@@ -26405,7 +26405,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/156",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1017",
         "description_records": [
           1017
         ]
@@ -26479,11 +26479,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac06/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/habitat/model.blend",
           "present": true,
-          "sha256": "5982eeabd97e567cf578820c7ef0e96295073a15dd60385e6d1f38057c64169e",
-          "final_visual_acceptance": "not-established"
+          "sha256": "4c6fcbb7861134a6bb3455de9e77ec3920275a9dde337fd41589d35083b282cc",
+          "media": "gallery/media/objects/achaean/habitat",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac06-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/habitat/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/habitat/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -26493,7 +26508,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -26523,6 +26538,56 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 156
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac06/model.blend",
+          "present": true,
+          "sha256": "5982eeabd97e567cf578820c7ef0e96295073a15dd60385e6d1f38057c64169e",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/habitat/model.blend",
+        "sha256": "4c6fcbb7861134a6bb3455de9e77ec3920275a9dde337fd41589d35083b282cc",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/habitat",
+          "files": {
+            "gallery/media/concepts/achaean/ac06-review-1.png": "0831d8a02bcd3ced63b5bfc1d46ff4dd852adaa3204c8386f667724faf5c3a9c",
+            "gallery/media/objects/achaean/habitat/front-quarter.png": "31da6960c89b677830224d9b6c56c09dd72c823bd5e6c9da938d76df7c7d2053",
+            "gallery/media/objects/achaean/habitat/imported-front-quarter.png": "31da6960c89b677830224d9b6c56c09dd72c823bd5e6c9da938d76df7c7d2053",
+            "gallery/media/objects/achaean/habitat/imported-front.png": "be9a12fc8f88e330cf8a3438a2dda02c4de9a8637c7eaf9d509bcc0dcba8bcf0",
+            "gallery/media/objects/achaean/habitat/imported-rear-quarter.png": "ae462280f9d072da10dbaff28627dee64f738092f94375e81b90d5a4b4e4c332",
+            "gallery/media/objects/achaean/habitat/native-front-quarter.png": "124acbe3188f80d1e17f970a2ce693f81a9b7a4cd72120a596207caadd325ba8",
+            "gallery/media/objects/achaean/habitat/native-front.png": "56189a0472f0998609fb5484f7367e706bb7b53fd0982fcd5c02f4500ebf33a1",
+            "gallery/media/objects/achaean/habitat/native-rear-quarter.png": "0fdaa939ea0049aee33ccf8e8de22367bfe5aa7f6ed6bfc21cc497b46a59ae0b",
+            "sources/docs/reconstruction/models/ac06-concept-prompt-1.txt": "864e14761f0d2de11c0bf9a9f5344384245539abb7ff813fee49300b667b4758",
+            "sources/materials/achaean/habitat/Blue gray fittings.png": "1cec76be88724e04938b39c23553f5888fca337821b86b619081ee093150f32d",
+            "sources/materials/achaean/habitat/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/habitat/Dark recess.png": "01d94b2e397c317087ceaed9091e6b3d3b497c0db66b9af081f3b4e69abde7b7",
+            "sources/objects/achaean/habitat/model.blend": "4c6fcbb7861134a6bb3455de9e77ec3920275a9dde337fd41589d35083b282cc",
+            "sources/objects/achaean/habitat/model.glb": "c0c2105076cc61d70ff9a699adca6b691277d6a3851c345fa32b42f4ad974283",
+            "sources/objects/achaean/habitat/model.json": "09e7d8bfe6203e5b79340ebc1f109e2c4278ba342a3d40cde842e2067f2c1663",
+            "sources/objects/achaean/habitat/runtime-review.json": "5195bad6ca926c8fcbc01e35a9c969b1fc86bc6f186415835929e5c0b3027575",
+            "sources/objects/achaean/habitat/visual-review.json": "17be388ea4dddbb8110ed4628f571fcaa0be3668710d74b96b57cd3cefad2b5c",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_habitat.py": "6cf3c31ea77f47a74eca5d974c218191acd4ae6105cbc27ab84591780b3fd475",
+            "sources/tools/blender/remaster_achaean_habitat.py": "d6aee5daf70433d13c2bf9f52c698e6bd6b89b0bd4465ad6b64ba5206b9d7638",
+            "sources/tools/blender/verify_achaean_building.py": "bc5aba2d48684e47183408fc6f1ff9d4ae5500616b1194421abaa1b7aaf9aa0e",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/habitat/runtime-review.json",
+          "objects/achaean/habitat/visual-review.json"
+        ]
       }
     },
     {
