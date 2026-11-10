@@ -18,11 +18,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/base-crystal/front.pn
 
 `openfa:building/legacy/087`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Stability](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk02/front-quarter.png)
+![Stability](../gallery/media/objects/mikotaj/stability/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk02/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk02/model.glb)
+[Blend](../sources/objects/mikotaj/stability/model.blend) · [GLB](../sources/objects/mikotaj/stability/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/stability/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/stability/rear-quarter.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/stability/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/stability/concept-glb-comparison.jpg)
 
 ## Purity
 
