@@ -274,11 +274,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/173`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Ore Yard](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac23/front-quarter.png)
+![Ore Yard](../gallery/media/objects/achaean/ore-yard/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac23/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac23/model.glb)
+[Blend](../sources/objects/achaean/ore-yard/model.blend) · [GLB](../sources/objects/achaean/ore-yard/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac23-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/ore-yard/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/ore-yard/imported-rear-quarter.png)
 
 ## Goods Yard
 

@@ -29975,7 +29975,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/173",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1034",
         "description_records": [
           1034
         ]
@@ -30049,11 +30049,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac23/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/ore-yard/model.blend",
           "present": true,
-          "sha256": "30c3bdce98b2352be7d63af90b8746cba12afe5a3cab51ff233525d15e55cf6e",
-          "final_visual_acceptance": "not-established"
+          "sha256": "c0e49aba81333f848ced8558322d47ad78a6b7f06ef1b41cbc90701822a8fb45",
+          "media": "gallery/media/objects/achaean/ore-yard",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac23-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/ore-yard/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/ore-yard/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -30063,7 +30078,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -30093,6 +30108,61 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 173
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac23/model.blend",
+          "present": true,
+          "sha256": "30c3bdce98b2352be7d63af90b8746cba12afe5a3cab51ff233525d15e55cf6e",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/ore-yard/model.blend",
+        "sha256": "c0e49aba81333f848ced8558322d47ad78a6b7f06ef1b41cbc90701822a8fb45",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/ore-yard",
+          "files": {
+            "gallery/media/concepts/achaean/ac23-review-1.png": "cb9a6c0a07b2dcb0bf38f93abfd64ed9c42b563227648e15d10cb9c5ceb05ad7",
+            "gallery/media/objects/achaean/ore-yard/front-quarter.png": "4f40c80f0a05b9c5393baeb2173d3c1d51ea0c695372f4f75165c41151129d49",
+            "gallery/media/objects/achaean/ore-yard/imported-front-quarter.png": "4f40c80f0a05b9c5393baeb2173d3c1d51ea0c695372f4f75165c41151129d49",
+            "gallery/media/objects/achaean/ore-yard/imported-front.png": "f025222dc3e4956d0b66c53993b138f6741947e0ce74045e0674895598db4be9",
+            "gallery/media/objects/achaean/ore-yard/imported-rear-quarter.png": "c0362decb4e7d55462249c1162a66b05cf92913535a647065bec1dd3912a9e31",
+            "gallery/media/objects/achaean/ore-yard/native-front-quarter.png": "f94bfea2f15e193d3a1a05ba0cf24ab94b6aea3ea719bac85c1a309f291ed2d4",
+            "gallery/media/objects/achaean/ore-yard/native-front.png": "3a78aca82b74a625f37c476948a63590768496db4563c6bd56c975a92dd3b377",
+            "gallery/media/objects/achaean/ore-yard/native-rear-quarter.png": "e65861276d158744103f33e7face0f77a1238b7b00d338f58ff06ec12180bd68",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac23/model.blend": "30c3bdce98b2352be7d63af90b8746cba12afe5a3cab51ff233525d15e55cf6e",
+            "sources/docs/reconstruction/models/ac23-concept-prompt-1.txt": "82e7e371277d3e6a6f6fb9427b23ed6a9475536dfb0dc7f5521e06ed197b3c2b",
+            "sources/materials/achaean/ore-yard/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/ore-yard/Coral fine wear normal.png": "bef1048d97b12a3f013fec0182bd58055527d07459163c91eef3f8f3f87c70bf",
+            "sources/materials/achaean/ore-yard/Coral metal roughness.png": "efaef6c8b59203937dd615b0f6cedf9cb69d612a32ab3acfedff0cf196669985",
+            "sources/materials/achaean/ore-yard/Red source top tips.png": "048025480bde8b3d9a28f1f63f5bf4a342833f3fb9815f235e4ef2b53b39e55f",
+            "sources/materials/achaean/ore-yard/Slate structural braces.png": "989998815399b0dd0707cf97e1ec5eaecd04586c99177b1a99aa20c12501e6b9",
+            "sources/objects/achaean/ore-yard/model.blend": "c0e49aba81333f848ced8558322d47ad78a6b7f06ef1b41cbc90701822a8fb45",
+            "sources/objects/achaean/ore-yard/model.glb": "9a40ef469f813da5ef4e661394ff3aa9e75de37a29a01350901414d20b66fa44",
+            "sources/objects/achaean/ore-yard/model.json": "15c8160f1cc6a0df4958e2f548ffc4abe846157abcf90789a36486560bfd52ee",
+            "sources/objects/achaean/ore-yard/runtime-review.json": "e706713c493d94fd29ae64a8fe1a89334e24ce8b8da82086af114ddb0d43f25c",
+            "sources/objects/achaean/ore-yard/visual-review.json": "87955f39c955dd42aab343922460ac7de212f774ceba36a717dea468d4e3fba3",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_ore_yard.py": "975c12690d68ada2583587e37732fa71b70db0b55e1aabeb289516fddefb1558",
+            "sources/tools/blender/checks_achaean_shipyard.py": "e397a226fc7a4df37f4531f8ea724bfa2fac33579bcd2bd3082ab99d382a36ae",
+            "sources/tools/blender/remaster_achaean_ore_yard.py": "6e806bbd1c1be819efe56cf236ae39dad23fae51a1534d1da424ef8cbf17725d",
+            "sources/tools/blender/remaster_achaean_shipyard.py": "7ccce8d2dfa946f86da065ecb64a8b30a5d56d0e5a375f7d9a6e7957c4b6fbf6",
+            "sources/tools/blender/verify_achaean_building_centered.py": "c40d7ed4063b8a4e64954eef81d08ca4e37420a4a3579e42c38f1a809cc88860",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/ore-yard/runtime-review.json",
+          "objects/achaean/ore-yard/visual-review.json"
+        ]
       }
     },
     {

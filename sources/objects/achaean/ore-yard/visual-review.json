@@ -1,0 +1,113 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/173",
+  "binaries": {
+    "blend": "c0e49aba81333f848ced8558322d47ad78a6b7f06ef1b41cbc90701822a8fb45",
+    "glb": "9a40ef469f813da5ef4e661394ff3aa9e75de37a29a01350901414d20b66fa44"
+  },
+  "runtime_report_sha256": "29d282bc2a1575771359a0e524fa0fbc734f5fbc9bdb060fe051008afa5f280c",
+  "legacy": {
+    "surface_payload_sha256": "e824b87e74d89b95f6524442197e7e214bf9abc0bb399bce884ccafb29f14fee",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1034,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "28110a6630845e5f94a78900c8ad5d4273692f9fb00fbea1e30bd2d2dd464c95",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "additional_zoom_sprite_payload_sha256": "3bb1d0b91f12e8cda3a2eb24a0b68c622567af0a08af2d5bcbe56809d7bc8b1c",
+    "additional_zoom_sprite_layers_reviewed": [
+      0,
+      1
+    ],
+    "interpretation": "Actual shadow/body,all41 paletted fixed-view catalogue reveal/highlight phases and both additional _ZOOM sprite frame/body layers reviewed. Three closely joined upright four-lobed coral columns in triangular arrangement,three short red tips,two continuous slate braces on front/right-rear columns retained;left-rear column has no extra brace. Function1034 establishes highly protected ore storage. No exposed ore,capacity-fill stages,door or transfer mechanism evidenced. Direct _B/_SCITEK/_MA/_ZOOM tables/current mappings audited;all catalogue roles AC23.VID,shared ACS2 separate. No additional mapped technical/_MA sequence;prefix absence alone is not semantic proof. Hidden depth and small brace straps/fasteners interpreted engineering."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac23-review-1.png",
+      "sha256": "cb9a6c0a07b2dcb0bf38f93abfd64ed9c42b563227648e15d10cb9c5ceb05ad7",
+      "prompt": "sources/docs/reconstruction/models/ac23-concept-prompt-1.txt",
+      "feedback": "Accepted as source-consistent three-column/four-rounded-segment anatomy,two slate braces,three short red tips and restrained worn-material guide. Keep source compactness and absence of windows,extra conduit,ore heaps or floor slab. Small mount details are interpreted,not recovered original construction."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Historical actual native uses generic straight cylindrical towers,gold caps,white grid windows and three conduits;source instead has scalloped enclosed casings,two braces and red tips. First actual new native/import gate passed but rendered segment shoulders and upper domes looked too angular/pinched.",
+      "action": "Preserved historical binaries. Replaced linear profile joins with cubic radius interpolation respecting actual axial spacing and all original radial control sections;rounded upper dome shoulders. Genuinely reauthored/exported and reran all native/import geometry/contact/profile/PBR checks and six renders. Structural gates unchanged."
+    },
+    {
+      "iteration": 2,
+      "observation": "Final actual source/import quarter/front/rear renders retain three connected four-lobed casings,three red tips and two attached visible braces. Source/import geometry,transforms and texture pixels agree.",
+      "action": "Accept for integration review after12actual lobe-peak and9waist radial sections,three column-contact pairs,three grounded columns/tips support,eight brace/rib sections and visibility rays,six actual strap/body/brace contacts,twelve fastener/strap contacts,PBR graph/pixels,closed positive UV/root and six-render parity. No operating motion or fill states inferred. Client scale/storage/activity/FPS and final user artistic acceptance separate."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00010017302613605318,
+      "margin": 51
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 5.5926456709427106e-05,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 3.848003848003848e-05,
+      "margin": 62
+    }
+  ],
+  "review": "Static protected Achaean ore storage;one canonical payload for gameplay/build/SciTek. One actual ImageGen concept with source-led roundness feedback after genuine GLB rendering. No invented cargo/door animation.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
