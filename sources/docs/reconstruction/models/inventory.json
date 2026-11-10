@@ -27626,7 +27626,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/162",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1023",
         "description_records": [
           1023
         ]
@@ -27700,17 +27700,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/landing-pad/model.blend",
           "present": true,
-          "sha256": "1c0c3e6fc7d97b7c0ecd892d75df999885d0b6959827c5fa684f1ec1a4922c8f",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "verified-launch-mechanism",
-          "blend": "docs/assets/reconstruction/launch-facilities/achaean/ac12/model.blend",
-          "present": true,
-          "sha256": "865f66a4708c0c15594b374ccf822d92b6dc878cef3709ba73e1f7678623336e"
+          "sha256": "4aaccdc9db5e2242345b9dd2338a1b98000f8f2e284ccb4bb2cf5c83d5342a04",
+          "media": "gallery/media/objects/achaean/landing-pad",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac12-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/landing-pad/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/landing-pad/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -27720,7 +27729,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -27750,6 +27759,78 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 162
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/model.blend",
+          "present": true,
+          "sha256": "1c0c3e6fc7d97b7c0ecd892d75df999885d0b6959827c5fa684f1ec1a4922c8f",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "verified-launch-mechanism",
+          "blend": "docs/assets/reconstruction/launch-facilities/achaean/ac12/model.blend",
+          "present": true,
+          "sha256": "865f66a4708c0c15594b374ccf822d92b6dc878cef3709ba73e1f7678623336e"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/landing-pad/model.blend",
+        "sha256": "4aaccdc9db5e2242345b9dd2338a1b98000f8f2e284ccb4bb2cf5c83d5342a04",
+        "runtime_evidence": {
+          "format": "achaean-animated-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/landing-pad",
+          "files": {
+            "gallery/media/concepts/achaean/ac12-review-1.png": "2b08c8d550564f4d69b0114b698a83b3c441d24e09d46f4b866fd8f262ecc59a",
+            "gallery/media/objects/achaean/landing-pad/animation-00.webm": "fbda83ffda0df962fc4bbd040b59688d8b97bae69c11185ffc7c29a154cdedfe",
+            "gallery/media/objects/achaean/landing-pad/animation-previews.json": "6811fd85cbcea2f454829736ddbce9f097e10c6fd1d355b220f2e5214406e7e9",
+            "gallery/media/objects/achaean/landing-pad/front-quarter.png": "144951e30cf7ba7d5391ea541ed83b9ac0f7cf3a7da1c5c45bc9c69b17363f89",
+            "gallery/media/objects/achaean/landing-pad/imported-front-quarter.png": "144951e30cf7ba7d5391ea541ed83b9ac0f7cf3a7da1c5c45bc9c69b17363f89",
+            "gallery/media/objects/achaean/landing-pad/imported-front.png": "8c1200ef456d71a109d2406e3127a726e53649d19e90a2f7c739c4338164d72f",
+            "gallery/media/objects/achaean/landing-pad/imported-half-open-front-quarter.png": "8d64530ce6a3eccd4b140f7270309449c241481d87a4b1da2624b5e8d805064f",
+            "gallery/media/objects/achaean/landing-pad/imported-open-front-quarter.png": "afed2c5e9060174312828997ef3a56816a3b316a6cb330e991f9401a909ffde8",
+            "gallery/media/objects/achaean/landing-pad/imported-rear-quarter.png": "5f966f48ca946d1275608490b212f203f88301f35046bdfa6fd44a46ebd3c9f0",
+            "gallery/media/objects/achaean/landing-pad/native-front-quarter.png": "dbe5f6704c75eb2f04aea4c0b2e53e0039d105d0c0d3415689ee301fa6b6fad6",
+            "gallery/media/objects/achaean/landing-pad/native-front.png": "8f08adf0d26b9fe87ddef891ca25c9ea37444e24433e15f84f2efa3f9e7f4d1c",
+            "gallery/media/objects/achaean/landing-pad/native-half-open-front-quarter.png": "c6b33a02b5f41957cacd90fbd4676a31da7c1343a310bdbd428c5ae7549f1d08",
+            "gallery/media/objects/achaean/landing-pad/native-open-front-quarter.png": "e00e0da4ed81b03d3a68998f451a2a150b71f23ae27dcd8aa3db432b9a9a0aab",
+            "gallery/media/objects/achaean/landing-pad/native-rear-quarter.png": "380014d0af97cd8f3648b7586e7d850fc1b50399ce588ab1d552b0a794a8add7",
+            "sources/docs/assets/reconstruction/launch-facilities/achaean/ac12/model.blend": "865f66a4708c0c15594b374ccf822d92b6dc878cef3709ba73e1f7678623336e",
+            "sources/docs/reconstruction/models/ac12-concept-prompt-1.txt": "56812855f221c02ca828f5468331b511086b147c8c759b7451070d28c94391ec",
+            "sources/materials/achaean/landing-pad/Blue mast bands.png": "6f74cac4702e7b8ee79bbdc364d9c4aae1e1c3701b17e9b30bbf2e4b0eb86ab2",
+            "sources/materials/achaean/landing-pad/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/landing-pad/Coral fine wear normal.png": "bef1048d97b12a3f013fec0182bd58055527d07459163c91eef3f8f3f87c70bf",
+            "sources/materials/achaean/landing-pad/Coral metal roughness.png": "efaef6c8b59203937dd615b0f6cedf9cb69d612a32ab3acfedff0cf196669985",
+            "sources/materials/achaean/landing-pad/Dark bay floor.png": "cc12a7d78aac3100696c42ab60a6fa07d57e01ad1c0255638cd21b4032284e66",
+            "sources/materials/achaean/landing-pad/Slate mast and well.png": "762a938f84c705365040544c4ea8d65dd063d3f3a7d0a078da59d944b2c18766",
+            "sources/materials/achaean/landing-pad/Two red cover bands.png": "7577831240b425da52de56b6755b3795cb6f6b8aacd3bdb062ab364de8dabc56",
+            "sources/materials/achaean/landing-pad/Worn green cover.png": "bd7789da2e17fb59db7fa08d5901f08db827f2e7bd1d8516f40bc6f5f1f54f3f",
+            "sources/objects/achaean/landing-pad/model.blend": "4aaccdc9db5e2242345b9dd2338a1b98000f8f2e284ccb4bb2cf5c83d5342a04",
+            "sources/objects/achaean/landing-pad/model.glb": "57408e97812bd11bcdc655782b2e2d4f145f9fc698a7d4da4fc72fa569af41b7",
+            "sources/objects/achaean/landing-pad/model.json": "25dd1c9f1d79c370b165949e16c5d103d2e82cd1efc2b0e1cb184da36778c028",
+            "sources/objects/achaean/landing-pad/runtime-review.json": "c84f1ef8e320590e1e8471754dd47b1bedf2be5d36627166ec68c9d507e0d533",
+            "sources/objects/achaean/landing-pad/visual-review.json": "662b485b0a21bbec726d82cab9e8dda584b935043eac582aef4e78b2ee6c1543",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_shipyard.py": "e397a226fc7a4df37f4531f8ea724bfa2fac33579bcd2bd3082ab99d382a36ae",
+            "sources/tools/blender/remaster_achaean_landing_pad.py": "a29b3038082fb1fd27d3ca007411071a9735e40c1de24682e9bbbae9c8bd9c75",
+            "sources/tools/blender/remaster_achaean_shipyard.py": "7ccce8d2dfa946f86da065ecb64a8b30a5d56d0e5a375f7d9a6e7957c4b6fbf6",
+            "sources/tools/blender/render_achaean_landing_pad_animation.py": "853a26ad6a5a3566f75b64134d3747e96893e9511525f8a2c5a80ef6b17ec6af",
+            "sources/tools/blender/verify_achaean_building_centered.py": "c40d7ed4063b8a4e64954eef81d08ca4e37420a4a3579e42c38f1a809cc88860",
+            "sources/tools/blender/verify_achaean_landing_pad.py": "d34c2c7b7539ebc44c7a47d8a36928f6b4077d53e373af086a4347379687dd20",
+            "tools/gallery_animation_assets.py": "072f9ffbcdc7e0f5d5d333253d67918486257862a0f80b3d4fc4554f7618095c",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with 61 sampled motion states, collision/open-clearance checks, textures and ten real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/landing-pad/runtime-review.json",
+          "objects/achaean/landing-pad/visual-review.json"
+        ]
       }
     },
     {

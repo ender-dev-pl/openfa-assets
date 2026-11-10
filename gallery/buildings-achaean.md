@@ -138,19 +138,15 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/162`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Landing Pad](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/front-quarter.png)
+![Landing Pad](../gallery/media/objects/achaean/landing-pad/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/model.glb)
+[Blend](../sources/objects/achaean/landing-pad/model.blend) · [GLB](../sources/objects/achaean/landing-pad/model.glb)
 
-**Additional iteration — verified-launch-mechanism**
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac12-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/landing-pad/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/landing-pad/imported-rear-quarter.png)
 
-![Landing Pad](../gallery/media/docs/assets/reconstruction/launch-facilities/achaean/ac12/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac12/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac12/model.glb)
-
-[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/achaean/ac12/animation-00.webm)
+[Play animation: LaunchFacilityCycle](../gallery/media/objects/achaean/landing-pad/animation-00.webm)
 
 ## Missile Launcher
 

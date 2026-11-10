@@ -617,10 +617,163 @@
       ],
       "reuse": "One current payload for gameplay/build/SciTek. Historical studies are not package selections.",
       "limits": "Client scale/state integration, Android frame time and final user artistic acceptance remain separate."
+    },
+    {
+      "id": "openfa:building/legacy/162",
+      "key": "AC12",
+      "name": "Landing Pad",
+      "blend": "sources/objects/achaean/landing-pad/model.blend",
+      "glb": "sources/objects/achaean/landing-pad/model.glb",
+      "binaries": {
+        "blend": "4aaccdc9db5e2242345b9dd2338a1b98000f8f2e284ccb4bb2cf5c83d5342a04",
+        "glb": "57408e97812bd11bcdc655782b2e2d4f145f9fc698a7d4da4fc72fa569af41b7"
+      },
+      "triangles": 5896,
+      "meshes": 25,
+      "materials": 6,
+      "embedded_images": 8,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 26,
+      "construction_updates": 18,
+      "root": "PlacementRoot",
+      "root_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_world_bounds": [
+        -1.2155108451843262,
+        -1.227500081062317,
+        0.0,
+        1.2164227962493896,
+        1.215000033378601,
+        2.2799999713897705
+      ],
+      "axes": "Blender -Y front, +Z up",
+      "animation": {
+        "clip": "LaunchFacilityCycle",
+        "fps": 30,
+        "frames": [
+          1,
+          10,
+          31,
+          52,
+          61
+        ],
+        "closed_frame": 1,
+        "open_frame": 31,
+        "end_frame": 61,
+        "retained_open_translations": {
+          "LaunchLeaf Transverse green cover -1 0": [
+            -0.7726666927337646,
+            0.0,
+            0.0
+          ],
+          "LaunchLeaf Transverse green cover -1 1": [
+            -0.6460000276565552,
+            0.0,
+            -0.012000000104308128
+          ],
+          "LaunchLeaf Transverse green cover -1 2": [
+            -0.5193333625793457,
+            0.0,
+            -0.024000000208616257
+          ],
+          "LaunchLeaf Transverse green cover -1 3": [
+            -0.39266666769981384,
+            0.0,
+            -0.035999998450279236
+          ],
+          "LaunchLeaf Transverse green cover -1 4": [
+            -0.26600000262260437,
+            0.0,
+            -0.04800000041723251
+          ],
+          "LaunchLeaf Transverse green cover -1 5": [
+            -0.1393333375453949,
+            0.0,
+            -0.05999999865889549
+          ],
+          "LaunchLeaf Transverse green cover 1 0": [
+            0.7726666927337646,
+            0.0,
+            0.0
+          ],
+          "LaunchLeaf Transverse green cover 1 1": [
+            0.6460000276565552,
+            0.0,
+            -0.012000000104308128
+          ],
+          "LaunchLeaf Transverse green cover 1 2": [
+            0.5193333625793457,
+            0.0,
+            -0.024000000208616257
+          ],
+          "LaunchLeaf Transverse green cover 1 3": [
+            0.39266666769981384,
+            0.0,
+            -0.035999998450279236
+          ],
+          "LaunchLeaf Transverse green cover 1 4": [
+            0.26600000262260437,
+            0.0,
+            -0.04800000041723251
+          ],
+          "LaunchLeaf Transverse green cover 1 5": [
+            0.1393333375453949,
+            0.0,
+            -0.05999999865889549
+          ]
+        },
+        "mechanism": "paired fore/aft telescopic cover strips",
+        "continuous_timing_recovered": false,
+        "descriptor17_is_foreground": true,
+        "pose_map": {
+          "2": 1,
+          "3": 15,
+          "4": 22,
+          "5": 27,
+          "6": 31,
+          "7": 31,
+          "8": 31,
+          "9": 31,
+          "10": 31,
+          "11": 31,
+          "12": 31,
+          "13": 31,
+          "14": 31,
+          "15": 31,
+          "16": 31
+        }
+      },
+      "animation_preview": "gallery/media/objects/achaean/landing-pad/animation-00.webm",
+      "state_contract": "Retains the useful LaunchFacilityCycle label,61-frame closed/open/closed cycle and12 segment travel amplitudes from the prior refinement. Axis is aligned fore/aft from actual paired strip imagery; vertical pre-stow and hidden cavity are authored engineering. Descriptors2\u20135 are visible cover phases,6\u201316 empty/open,17 foreground rather than a lid pose. Original timing/hidden engineering/foreground composition not recovered.",
+      "scale_contract": "PlacementRoot at groundZ0; Blender-Y front/+Zup. Client tile/ship scale remains separate.",
+      "superseded_studies": [
+        "docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/model.blend",
+        "docs/assets/reconstruction/launch-facilities/achaean/ac12/model.blend"
+      ],
+      "reuse": "One current payload for gameplay/build/SciTek. Historical studies are not package selections.",
+      "limits": "Client scale/state integration, Android frame time and final user artistic acceptance remain separate."
     }
   ],
   "pending": [
-    "AC12",
     "AC13",
     "AC14",
     "AC15",

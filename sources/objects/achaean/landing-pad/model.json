@@ -1,0 +1,129 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/162",
+  "key": "AC12",
+  "name": "Landing Pad",
+  "culture": "achaean",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 26,
+  "construction_updates": 18,
+  "triangle_budget": 30000,
+  "triangles": 5896,
+  "mesh_nodes": 25,
+  "materials": 6,
+  "binaries": {
+    "blend": "4aaccdc9db5e2242345b9dd2338a1b98000f8f2e284ccb4bb2cf5c83d5342a04",
+    "glb": "57408e97812bd11bcdc655782b2e2d4f145f9fc698a7d4da4fc72fa569af41b7"
+  },
+  "author": "sources/tools/blender/remaster_achaean_landing_pad.py",
+  "author_sha256": "d89e267409ba3b35e3e37684c5acc91a2702a4240066113bbd35e763a6363204",
+  "helpers": {
+    "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "sources/tools/blender/remaster_achaean_shipyard.py": "48458c78408d329f83dc1f413af5d3f2ae685358dd28fb33c3aef46e25b3f0a5",
+    "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f",
+    "sources/docs/assets/reconstruction/launch-facilities/achaean/ac12/model.blend": "865f66a4708c0c15594b374ccf822d92b6dc878cef3709ba73e1f7678623336e"
+  },
+  "animation": {
+    "clip": "LaunchFacilityCycle",
+    "fps": 30,
+    "frames": [
+      1,
+      10,
+      31,
+      52,
+      61
+    ],
+    "closed_frame": 1,
+    "open_frame": 31,
+    "end_frame": 61,
+    "retained_open_translations": {
+      "LaunchLeaf Transverse green cover -1 0": [
+        -0.7726666927337646,
+        0.0,
+        0.0
+      ],
+      "LaunchLeaf Transverse green cover -1 1": [
+        -0.6460000276565552,
+        0.0,
+        -0.012000000104308128
+      ],
+      "LaunchLeaf Transverse green cover -1 2": [
+        -0.5193333625793457,
+        0.0,
+        -0.024000000208616257
+      ],
+      "LaunchLeaf Transverse green cover -1 3": [
+        -0.39266666769981384,
+        0.0,
+        -0.035999998450279236
+      ],
+      "LaunchLeaf Transverse green cover -1 4": [
+        -0.26600000262260437,
+        0.0,
+        -0.04800000041723251
+      ],
+      "LaunchLeaf Transverse green cover -1 5": [
+        -0.1393333375453949,
+        0.0,
+        -0.05999999865889549
+      ],
+      "LaunchLeaf Transverse green cover 1 0": [
+        0.7726666927337646,
+        0.0,
+        0.0
+      ],
+      "LaunchLeaf Transverse green cover 1 1": [
+        0.6460000276565552,
+        0.0,
+        -0.012000000104308128
+      ],
+      "LaunchLeaf Transverse green cover 1 2": [
+        0.5193333625793457,
+        0.0,
+        -0.024000000208616257
+      ],
+      "LaunchLeaf Transverse green cover 1 3": [
+        0.39266666769981384,
+        0.0,
+        -0.035999998450279236
+      ],
+      "LaunchLeaf Transverse green cover 1 4": [
+        0.26600000262260437,
+        0.0,
+        -0.04800000041723251
+      ],
+      "LaunchLeaf Transverse green cover 1 5": [
+        0.1393333375453949,
+        0.0,
+        -0.05999999865889549
+      ]
+    },
+    "mechanism": "paired fore/aft telescopic cover strips",
+    "continuous_timing_recovered": false,
+    "descriptor17_is_foreground": true,
+    "pose_map": {
+      "2": 1,
+      "3": 15,
+      "4": 22,
+      "5": 27,
+      "6": 31,
+      "7": 31,
+      "8": 31,
+      "9": 31,
+      "10": 31,
+      "11": 31,
+      "12": 31,
+      "13": 31,
+      "14": 31,
+      "15": 31,
+      "16": 31
+    }
+  },
+  "state_contract": "Retains the useful LaunchFacilityCycle label,61-frame closed/open/closed cycle and12 segment travel amplitudes from the prior refinement. Axis is aligned fore/aft from actual paired strip imagery; vertical pre-stow and hidden cavity are authored engineering. Descriptors2\u20135 are visible cover phases,6\u201316 empty/open,17 foreground rather than a lid pose. Original timing/hidden engineering/foreground composition not recovered.",
+  "scale_contract": "PlacementRoot at groundZ0; Blender-Y front/+Zup. Client tile/ship scale remains separate.",
+  "game_client_integration": false,
+  "final_artistic_acceptance": false
+}
