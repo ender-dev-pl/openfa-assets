@@ -1,0 +1,75 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/151",
+  "binaries": {
+    "blend": "3d6cbf336f02bf60134aaac3cd5d6ccceba00df59a39082a3d60fdc7e830310b",
+    "glb": "4d6591826cf3117716dd425a52d784f0686560d00474b8f9fad1ca2f4150ae29"
+  },
+  "runtime_report_sha256": "fb744fcc654a65c9c453fa72f671fefcd7efcce4c76d8942b18828e0103183fa",
+  "legacy": {
+    "surface_payload_sha256": "e7b7fea3b9e81d329b5f7f054ffcb409b1ca66e70adf3f6ddbe9c650155cd612",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1012,
+    "culture_record": 166,
+    "catalogue_sha256": "7b2adc79ef85a9a4ab9419f6e6defc913cab740b263f1c663da0bae0f7f8318a",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "interpretation": "Reveal/highlight of a fixed view, not proof of a rotating or operational mechanism. No AC-specific _MA file is present; the _MA directory has PB, PH, PM, PS and ST families. Shared construction ACS3 remains a separate existing presentation contract."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac01-review-1.png",
+      "sha256": "db8f650221b0150cc45eac519574b14b689b81454d9f3f1134316c69e170ab4a",
+      "prompt": "sources/docs/reconstruction/models/ac01-concept-prompt-1.txt",
+      "feedback": "Retains asymmetric narrow tall column, two rounded lower chambers, coral/gold/slate family, circular upper optic and front grille. Accepted as an interpreted modelling guide; enlarged fasteners and cap details are not recovered original geometry."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Original candidate hid most of the front gold roof and the service plates inside the casing.",
+      "action": "Re-seated visible service plates and rebuilt the chamber/cap join; added sparse maintenance details and restrained material wear."
+    },
+    {
+      "iteration": 2,
+      "observation": "The first cap adjustment left intersecting exposed lobes around the casing.",
+      "action": "Closed the lower chamber at its shoulder and seated a continuous separate onion cap, removing the protruding coral upper shell."
+    },
+    {
+      "iteration": 3,
+      "observation": "Actual independent-import front-quarter, front and rear views retain the required asymmetric silhouette, stepped column and rounded twin chambers. Real native/import pixel feedback also isolated a shadow-terminator representation mismatch.",
+      "action": "Explicit split normals with smooth face representation preserve the intended sharp edges and achieve pixel agreement without loosening tolerance."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 3.4776560598156845e-05,
+      "margin": 45
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 2.7769549763033174e-05,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 3.861252332839951e-05,
+      "margin": 39
+    }
+  ],
+  "review": "Legacy-based remaster ready for integration review; no measured 80-percent score or exact hidden geometry claimed. Concept finish is interpreted and restrained for game cost. High-detail artistic acceptance remains with the user.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

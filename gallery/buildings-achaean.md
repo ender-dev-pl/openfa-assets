@@ -6,11 +6,13 @@
 
 `openfa:building/legacy/151`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Footprint](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac01/front-quarter.png)
+![Footprint](../gallery/media/objects/achaean/footprint/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac01/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac01/model.glb)
+[Blend](../sources/objects/achaean/footprint/model.blend) · [GLB](../sources/objects/achaean/footprint/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac01-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/footprint/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/footprint/imported-rear-quarter.png)
 
 ## Anti-Rad Screen
 
