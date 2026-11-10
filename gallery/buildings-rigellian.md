@@ -268,17 +268,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/060`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Storage racks](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri21/front-quarter.png)
+![Storage racks](../gallery/media/objects/rigellian/storage-racks/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri21/model.glb)
+[Blend](../sources/objects/rigellian/storage-racks/model.blend) · [GLB](../sources/objects/rigellian/storage-racks/model.glb)
 
-**Additional iteration — initial-reference-study**
-
-![Storage racks](../gallery/media/docs/assets/reconstruction/buildings/rigellian/storage-racks/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/storage-racks/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/storage-racks/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri21-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/storage-racks/imported-front-quarter.png)
 
 ## Ex-Fang
 

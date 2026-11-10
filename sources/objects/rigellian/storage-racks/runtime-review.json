@@ -1,0 +1,702 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/060",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "21ff9c82ff9dfa88e2cc8220ff20fd901b0cf2a56f5a55ff86234cbd1ab0ab0f",
+    "glb": "9ed6fde8c8ab535d2429ac81c5c534055589d360194f4e1a789068f0559453a3"
+  },
+  "metadata_sha256": "4013255569a0157763cf51de7a8268954ed478170aeca1c877d71eba8938f10f",
+  "verifier_sha256": "3fc9d08410881783dafeb073c65f75fdf8ec202a420ce3991988bf61be26f4e0",
+  "helpers": {
+    "sources/tools/blender/verify_remastered_rigellian_storage.py": "3fc9d08410881783dafeb073c65f75fdf8ec202a420ce3991988bf61be26f4e0",
+    "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+    "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+    "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+    "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+    "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+    "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+    "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+    "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+    "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+    "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+    "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+    "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+    "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+    "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+    "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+    "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+    "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+    "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+    "sources/tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "sources/tools/blender/manufactured_surface_mounts.py": "dd05a5c80253bd6afcaeb4aa75f9d71e50ffaf54ef3c83221a59bd84b748346d",
+    "sources/tools/blender/rigellian_storage_racks_parts.py": "c2253ec8050dbf6bf3af5929071e4bc4fcd574e8d262e0d196d3cf8129bf7ad1",
+    "sources/tools/blender/manufactured_roof_wells.py": "d9e7e148613d96e666a30b75f0de1382e9869e11c118ed5c4828b2b4fb75fceb",
+    "sources/tools/blender/build_rigellian_storage_racks.py": "df6206d49e712f7e3fcc726284862ed64b03310ddff712b41e2321dac7a4f1ae",
+    "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+    "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+    "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+    "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+    "sources/tools/blender/verify_rigellian_storage_racks.py": "6bb913f7c7bf5535e2e33322684b99351f356be7121b1bd82296a7e0c4c80e46",
+    "sources/tools/blender/refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "sources/tools/blender/verify_refined_rigellian_extractor.py": "d8a090cc290d0b5ebe800c93a1dc70446e02c1e1697e909bd039073a9d6ef84f",
+    "sources/tools/blender/rigellian_extractor_remaster_checks.py": "f2024418942b8111f93f71a61160dec511ac0c91ce9f1b28a33f9959a53e70a3",
+    "sources/tools/blender/rigellian_storage_remaster_checks.py": "18cb0622ce99bcd88e5c11d6ecc712a0bc71fb297527f2fe2c79d3d1d4b43403"
+  },
+  "native": {
+    "positive_closed_meshes": 32,
+    "body_bounds": [
+      -0.6523909568786621,
+      -0.5559999942779541,
+      0.0,
+      0.6523909568786621,
+      0.7100000381469727,
+      1.809999942779541
+    ],
+    "one_sampled_contact_component": true,
+    "sampled_contact_graph": {
+      "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+      "tolerance": 0.0001,
+      "links": [
+        [
+          "RI21 storage housing 0 0",
+          "RI21 cradle edge 0 0"
+        ],
+        [
+          "RI21 storage housing 0 0",
+          "RI21 cradle edge 0 2"
+        ],
+        [
+          "RI21 storage housing 0 1",
+          "RI21 face bezel 0 1"
+        ],
+        [
+          "RI21 storage housing 0 1",
+          "RI21 front guide -1"
+        ],
+        [
+          "RI21 storage housing 0 1",
+          "RI21 cradle edge 0 0"
+        ],
+        [
+          "RI21 storage housing 0 1",
+          "RI21 cradle edge 0 1"
+        ],
+        [
+          "RI21 storage housing 0 1",
+          "RI21 rear cradle tie 0 -1"
+        ],
+        [
+          "RI21 storage housing 0 2",
+          "RI21 face bezel 0 2"
+        ],
+        [
+          "RI21 storage housing 0 2",
+          "RI21 front guide 1"
+        ],
+        [
+          "RI21 storage housing 0 2",
+          "RI21 cradle edge 0 1"
+        ],
+        [
+          "RI21 storage housing 0 2",
+          "RI21 cradle edge 0 2"
+        ],
+        [
+          "RI21 storage housing 0 2",
+          "RI21 rear cradle tie 0 1"
+        ],
+        [
+          "RI21 storage housing 1 0",
+          "RI21 face bezel 1 0"
+        ],
+        [
+          "RI21 storage housing 1 0",
+          "RI21 cradle edge 1 0"
+        ],
+        [
+          "RI21 storage housing 1 0",
+          "RI21 cradle edge 1 2"
+        ],
+        [
+          "RI21 storage housing 1 1",
+          "RI21 face bezel 1 1"
+        ],
+        [
+          "RI21 storage housing 1 1",
+          "RI21 cradle edge 1 0"
+        ],
+        [
+          "RI21 storage housing 1 1",
+          "RI21 cradle edge 1 1"
+        ],
+        [
+          "RI21 storage housing 1 1",
+          "RI21 rear cradle tie 1 -1"
+        ],
+        [
+          "RI21 storage housing 1 2",
+          "RI21 face bezel 1 2"
+        ],
+        [
+          "RI21 storage housing 1 2",
+          "RI21 cradle edge 1 1"
+        ],
+        [
+          "RI21 storage housing 1 2",
+          "RI21 cradle edge 1 2"
+        ],
+        [
+          "RI21 storage housing 1 2",
+          "RI21 rear cradle tie 1 1"
+        ],
+        [
+          "RI21 face bezel 0 1",
+          "RI21 green oval face 0 1"
+        ],
+        [
+          "RI21 face bezel 0 2",
+          "RI21 green oval face 0 2"
+        ],
+        [
+          "RI21 face bezel 1 0",
+          "RI21 green oval face 1 0"
+        ],
+        [
+          "RI21 face bezel 1 1",
+          "RI21 green oval face 1 1"
+        ],
+        [
+          "RI21 face bezel 1 2",
+          "RI21 green oval face 1 2"
+        ],
+        [
+          "RI21 rear rack spine -1",
+          "RI21 rear cradle tie 0 -1"
+        ],
+        [
+          "RI21 rear rack spine -1",
+          "RI21 rear cradle tie 1 -1"
+        ],
+        [
+          "RI21 front guide -1",
+          "RI21 front guide foot tie -1"
+        ],
+        [
+          "RI21 rear rack spine 1",
+          "RI21 rear cradle tie 0 1"
+        ],
+        [
+          "RI21 rear rack spine 1",
+          "RI21 rear cradle tie 1 1"
+        ],
+        [
+          "RI21 front guide 1",
+          "RI21 front guide foot tie 1"
+        ],
+        [
+          "RI21 cradle edge 0 0",
+          "RI21 cradle edge 0 1"
+        ],
+        [
+          "RI21 cradle edge 0 0",
+          "RI21 cradle edge 0 2"
+        ],
+        [
+          "RI21 cradle edge 0 0",
+          "RI21 rear cradle tie 0 -1"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 cradle edge 0 2"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 rear cradle tie 0 -1"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 rear cradle tie 0 1"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 front guide foot tie -1"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 front guide foot tie 1"
+        ],
+        [
+          "RI21 cradle edge 0 2",
+          "RI21 rear cradle tie 0 1"
+        ],
+        [
+          "RI21 cradle edge 1 0",
+          "RI21 cradle edge 1 1"
+        ],
+        [
+          "RI21 cradle edge 1 0",
+          "RI21 cradle edge 1 2"
+        ],
+        [
+          "RI21 cradle edge 1 0",
+          "RI21 rear cradle tie 1 -1"
+        ],
+        [
+          "RI21 cradle edge 1 1",
+          "RI21 cradle edge 1 2"
+        ],
+        [
+          "RI21 cradle edge 1 1",
+          "RI21 rear cradle tie 1 -1"
+        ],
+        [
+          "RI21 cradle edge 1 1",
+          "RI21 rear cradle tie 1 1"
+        ],
+        [
+          "RI21 cradle edge 1 2",
+          "RI21 rear cradle tie 1 1"
+        ]
+      ],
+      "components": [
+        [
+          "RI21 cradle edge 0 0",
+          "RI21 cradle edge 0 1",
+          "RI21 cradle edge 0 2",
+          "RI21 cradle edge 1 0",
+          "RI21 cradle edge 1 1",
+          "RI21 cradle edge 1 2",
+          "RI21 face bezel 0 1",
+          "RI21 face bezel 0 2",
+          "RI21 face bezel 1 0",
+          "RI21 face bezel 1 1",
+          "RI21 face bezel 1 2",
+          "RI21 front guide -1",
+          "RI21 front guide 1",
+          "RI21 front guide foot tie -1",
+          "RI21 front guide foot tie 1",
+          "RI21 green oval face 0 1",
+          "RI21 green oval face 0 2",
+          "RI21 green oval face 1 0",
+          "RI21 green oval face 1 1",
+          "RI21 green oval face 1 2",
+          "RI21 rear cradle tie 0 -1",
+          "RI21 rear cradle tie 0 1",
+          "RI21 rear cradle tie 1 -1",
+          "RI21 rear cradle tie 1 1",
+          "RI21 rear rack spine -1",
+          "RI21 rear rack spine 1",
+          "RI21 storage housing 0 0",
+          "RI21 storage housing 0 1",
+          "RI21 storage housing 0 2",
+          "RI21 storage housing 1 0",
+          "RI21 storage housing 1 1",
+          "RI21 storage housing 1 2"
+        ]
+      ],
+      "isolated": []
+    },
+    "six_measured_dents_and_housing_cradle_contacts": true,
+    "five_oval_rim_roots_and_face_contacts": true,
+    "two_front_guides_seated": true,
+    "opaque_non_emissive_green_faces": 5,
+    "texture_pixels_and_uvs": {
+      "materials": {
+        "RI21 | weathered bronze housings": {
+          "colour": "46411dabbe8bc01847a13813f7632a21f2b241de55e3822906bc712961122aed",
+          "roughness": "dce8434a7148f2680c4641541e9f43c40e7982587e3251144aa312cb9984a46a"
+        },
+        "RI21 | bronze planar caps": {
+          "colour": "a0b5a4f33260e3db2ccc4169f47092707c189d65e180a9031bea05ef756db24c",
+          "roughness": "aa22fda1f16bb4ee5aed1f85fec6366c8230876377b1f3012dd101e461a3c2b6"
+        }
+      },
+      "planar_cap_surfaces": 12
+    },
+    "contact_scope": "Retained cradle/spine/guide containment and 160 flange/25 face rays plus sampled contact graph; not exhaustive solid intersection proof."
+  },
+  "imported": {
+    "positive_closed_meshes": 32,
+    "body_bounds": [
+      -0.6523909568786621,
+      -0.5559999942779541,
+      0.0,
+      0.6523909568786621,
+      0.7100000381469727,
+      1.809999942779541
+    ],
+    "one_sampled_contact_component": true,
+    "sampled_contact_graph": {
+      "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+      "tolerance": 0.0001,
+      "links": [
+        [
+          "RI21 cradle edge 0 0",
+          "RI21 cradle edge 0 1"
+        ],
+        [
+          "RI21 cradle edge 0 0",
+          "RI21 cradle edge 0 2"
+        ],
+        [
+          "RI21 cradle edge 0 0",
+          "RI21 rear cradle tie 0 -1"
+        ],
+        [
+          "RI21 cradle edge 0 0",
+          "RI21 storage housing 0 0"
+        ],
+        [
+          "RI21 cradle edge 0 0",
+          "RI21 storage housing 0 1"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 cradle edge 0 2"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 front guide foot tie -1"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 front guide foot tie 1"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 rear cradle tie 0 -1"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 rear cradle tie 0 1"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 storage housing 0 1"
+        ],
+        [
+          "RI21 cradle edge 0 1",
+          "RI21 storage housing 0 2"
+        ],
+        [
+          "RI21 cradle edge 0 2",
+          "RI21 rear cradle tie 0 1"
+        ],
+        [
+          "RI21 cradle edge 0 2",
+          "RI21 storage housing 0 0"
+        ],
+        [
+          "RI21 cradle edge 0 2",
+          "RI21 storage housing 0 2"
+        ],
+        [
+          "RI21 cradle edge 1 0",
+          "RI21 cradle edge 1 1"
+        ],
+        [
+          "RI21 cradle edge 1 0",
+          "RI21 cradle edge 1 2"
+        ],
+        [
+          "RI21 cradle edge 1 0",
+          "RI21 rear cradle tie 1 -1"
+        ],
+        [
+          "RI21 cradle edge 1 0",
+          "RI21 storage housing 1 0"
+        ],
+        [
+          "RI21 cradle edge 1 0",
+          "RI21 storage housing 1 1"
+        ],
+        [
+          "RI21 cradle edge 1 1",
+          "RI21 cradle edge 1 2"
+        ],
+        [
+          "RI21 cradle edge 1 1",
+          "RI21 rear cradle tie 1 -1"
+        ],
+        [
+          "RI21 cradle edge 1 1",
+          "RI21 rear cradle tie 1 1"
+        ],
+        [
+          "RI21 cradle edge 1 1",
+          "RI21 storage housing 1 1"
+        ],
+        [
+          "RI21 cradle edge 1 1",
+          "RI21 storage housing 1 2"
+        ],
+        [
+          "RI21 cradle edge 1 2",
+          "RI21 rear cradle tie 1 1"
+        ],
+        [
+          "RI21 cradle edge 1 2",
+          "RI21 storage housing 1 0"
+        ],
+        [
+          "RI21 cradle edge 1 2",
+          "RI21 storage housing 1 2"
+        ],
+        [
+          "RI21 face bezel 0 1",
+          "RI21 green oval face 0 1"
+        ],
+        [
+          "RI21 face bezel 0 1",
+          "RI21 storage housing 0 1"
+        ],
+        [
+          "RI21 face bezel 0 2",
+          "RI21 green oval face 0 2"
+        ],
+        [
+          "RI21 face bezel 0 2",
+          "RI21 storage housing 0 2"
+        ],
+        [
+          "RI21 face bezel 1 0",
+          "RI21 green oval face 1 0"
+        ],
+        [
+          "RI21 face bezel 1 0",
+          "RI21 storage housing 1 0"
+        ],
+        [
+          "RI21 face bezel 1 1",
+          "RI21 green oval face 1 1"
+        ],
+        [
+          "RI21 face bezel 1 1",
+          "RI21 storage housing 1 1"
+        ],
+        [
+          "RI21 face bezel 1 2",
+          "RI21 green oval face 1 2"
+        ],
+        [
+          "RI21 face bezel 1 2",
+          "RI21 storage housing 1 2"
+        ],
+        [
+          "RI21 front guide -1",
+          "RI21 front guide foot tie -1"
+        ],
+        [
+          "RI21 front guide -1",
+          "RI21 storage housing 0 1"
+        ],
+        [
+          "RI21 front guide 1",
+          "RI21 front guide foot tie 1"
+        ],
+        [
+          "RI21 front guide 1",
+          "RI21 storage housing 0 2"
+        ],
+        [
+          "RI21 rear cradle tie 0 -1",
+          "RI21 rear rack spine -1"
+        ],
+        [
+          "RI21 rear cradle tie 0 -1",
+          "RI21 storage housing 0 1"
+        ],
+        [
+          "RI21 rear cradle tie 0 1",
+          "RI21 rear rack spine 1"
+        ],
+        [
+          "RI21 rear cradle tie 0 1",
+          "RI21 storage housing 0 2"
+        ],
+        [
+          "RI21 rear cradle tie 1 -1",
+          "RI21 rear rack spine -1"
+        ],
+        [
+          "RI21 rear cradle tie 1 -1",
+          "RI21 storage housing 1 1"
+        ],
+        [
+          "RI21 rear cradle tie 1 1",
+          "RI21 rear rack spine 1"
+        ],
+        [
+          "RI21 rear cradle tie 1 1",
+          "RI21 storage housing 1 2"
+        ]
+      ],
+      "components": [
+        [
+          "RI21 cradle edge 0 0",
+          "RI21 cradle edge 0 1",
+          "RI21 cradle edge 0 2",
+          "RI21 cradle edge 1 0",
+          "RI21 cradle edge 1 1",
+          "RI21 cradle edge 1 2",
+          "RI21 face bezel 0 1",
+          "RI21 face bezel 0 2",
+          "RI21 face bezel 1 0",
+          "RI21 face bezel 1 1",
+          "RI21 face bezel 1 2",
+          "RI21 front guide -1",
+          "RI21 front guide 1",
+          "RI21 front guide foot tie -1",
+          "RI21 front guide foot tie 1",
+          "RI21 green oval face 0 1",
+          "RI21 green oval face 0 2",
+          "RI21 green oval face 1 0",
+          "RI21 green oval face 1 1",
+          "RI21 green oval face 1 2",
+          "RI21 rear cradle tie 0 -1",
+          "RI21 rear cradle tie 0 1",
+          "RI21 rear cradle tie 1 -1",
+          "RI21 rear cradle tie 1 1",
+          "RI21 rear rack spine -1",
+          "RI21 rear rack spine 1",
+          "RI21 storage housing 0 0",
+          "RI21 storage housing 0 1",
+          "RI21 storage housing 0 2",
+          "RI21 storage housing 1 0",
+          "RI21 storage housing 1 1",
+          "RI21 storage housing 1 2"
+        ]
+      ],
+      "isolated": []
+    },
+    "six_measured_dents_and_housing_cradle_contacts": true,
+    "five_oval_rim_roots_and_face_contacts": true,
+    "two_front_guides_seated": true,
+    "opaque_non_emissive_green_faces": 5,
+    "texture_pixels_and_uvs": {
+      "materials": {
+        "RI21 | weathered bronze housings": {
+          "colour": "46411dabbe8bc01847a13813f7632a21f2b241de55e3822906bc712961122aed",
+          "roughness": "dce8434a7148f2680c4641541e9f43c40e7982587e3251144aa312cb9984a46a"
+        },
+        "RI21 | bronze planar caps": {
+          "colour": "a0b5a4f33260e3db2ccc4169f47092707c189d65e180a9031bea05ef756db24c",
+          "roughness": "aa22fda1f16bb4ee5aed1f85fec6366c8230876377b1f3012dd101e461a3c2b6"
+        }
+      },
+      "planar_cap_surfaces": 12
+    },
+    "contact_scope": "Retained cradle/spine/guide containment and 160 flange/25 face rays plus sampled contact graph; not exhaustive solid intersection proof."
+  },
+  "source_uv_comparison": {
+    "maximum_uv_corner_error": 0.0,
+    "matched_directed_corners": 193536,
+    "position_tolerance": 1e-05,
+    "scope": "All used colour/roughness material corners matched bidirectionally by world position and UV, including split seams."
+  },
+  "exported_uv_comparison": {
+    "maximum_uv_corner_error": 2.9802322387695312e-08,
+    "matched_directed_corners": 244152,
+    "position_tolerance": 1e-05,
+    "scope": "All used colour/roughness material corners matched bidirectionally by world position and UV, including split seams."
+  },
+  "maximum_bidirectional_surface_error": 1.3328003944934608e-07,
+  "renders": {
+    "native-front-quarter.png": "4b0f4b99edd0ed9215f4ebe558f95c73763e271a0a39f3b9bb7849d7b3c34572",
+    "native-front.png": "0359287233829401100cca71d6519cd8c821b6114e055eb284a1c6ae34df5174",
+    "native-rear-quarter.png": "25e4644eec3deb7efa51b8e88f01d32e39f86199522b5b2644b90e0539025974",
+    "imported-front-quarter.png": "c55b730c4e514f667379150d653c95bc7c3f6f49483589bf6d6e4bbcbf092ba3",
+    "imported-front.png": "61a063dd526fe1f035fabe663660ef4691b08b71992f5b514a4beade0a225897",
+    "imported-rear-quarter.png": "f319c9c774cb11e1139d6ae0308c2bef38602697c9c196e59f89e184ec2d69d8"
+  },
+  "triangles": 68756,
+  "meshes": 32,
+  "protected_parts": [
+    "RI21 cradle edge 0 0",
+    "RI21 cradle edge 0 1",
+    "RI21 cradle edge 0 2",
+    "RI21 cradle edge 1 0",
+    "RI21 cradle edge 1 1",
+    "RI21 cradle edge 1 2",
+    "RI21 face bezel 0 1",
+    "RI21 face bezel 0 2",
+    "RI21 face bezel 1 0",
+    "RI21 face bezel 1 1",
+    "RI21 face bezel 1 2",
+    "RI21 front guide -1",
+    "RI21 front guide 1",
+    "RI21 front guide foot tie -1",
+    "RI21 front guide foot tie 1",
+    "RI21 green oval face 0 1",
+    "RI21 green oval face 0 2",
+    "RI21 green oval face 1 0",
+    "RI21 green oval face 1 1",
+    "RI21 green oval face 1 2",
+    "RI21 rear cradle tie 0 -1",
+    "RI21 rear cradle tie 0 1",
+    "RI21 rear cradle tie 1 -1",
+    "RI21 rear cradle tie 1 1",
+    "RI21 rear rack spine -1",
+    "RI21 rear rack spine 1",
+    "RI21 storage housing 0 0",
+    "RI21 storage housing 0 1",
+    "RI21 storage housing 0 2",
+    "RI21 storage housing 1 0",
+    "RI21 storage housing 1 1",
+    "RI21 storage housing 1 2"
+  ],
+  "protected_surface_error": 0.0,
+  "native_world_bounds": [
+    -0.6523909568786621,
+    -0.5559999942779541,
+    0.0,
+    0.6523909568786621,
+    0.7100000381469727,
+    1.809999942779541
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "imported_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "material_count": 5,
+  "embedded_images": 4,
+  "clips": [],
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}
