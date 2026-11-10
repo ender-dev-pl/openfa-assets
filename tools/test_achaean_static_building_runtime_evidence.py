@@ -15,6 +15,16 @@ class EvidenceTests(unittest.TestCase):
         result=evidence.verify(ROOT/'sources',self.record)
         self.assertEqual(result['views'],6)
         self.assertFalse(result['game_client_integration'])
+    def test_all_current_static_deliveries_have_valid_runtime_evidence(self):
+        records=json.loads((ROOT/'sources/docs/reconstruction/models/inventory.json').read_bytes())['records']
+        selected=[]
+        for record in records:
+            reviewed=record.get('reviewed_model')
+            proof=reviewed.get('runtime_evidence') if isinstance(reviewed,dict) else None
+            if isinstance(proof,dict) and proof.get('format')=='achaean-static-building-remaster-v2':selected.append(record)
+        self.assertTrue(selected)
+        for record in selected:
+            with self.subTest(id=record['id']):evidence.verify(ROOT/'sources',record)
     def test_changed_source_is_rejected_before_acceptance(self):
         r=copy.deepcopy(self.record);key=next(iter(r['reviewed_model']['runtime_evidence']['files']));r['reviewed_model']['runtime_evidence']['files'][key]='0'*64
         with self.assertRaisesRegex(AssertionError,'Changed evidence'):evidence.verify(ROOT/'sources',r)

@@ -30,11 +30,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/153`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Environmental Control](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac03/front-quarter.png)
+![Environmental Control](../gallery/media/objects/achaean/environmental-control/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac03/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac03/model.glb)
+[Blend](../sources/objects/achaean/environmental-control/model.blend) · [GLB](../sources/objects/achaean/environmental-control/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac03-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/environmental-control/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/environmental-control/imported-rear-quarter.png)
 
 ## Filtration Vats
 

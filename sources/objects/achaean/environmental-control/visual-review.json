@@ -1,0 +1,113 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/153",
+  "binaries": {
+    "blend": "e971dd078ef2ab0a0aaa4fa85ff6c86eb65bce429f13a31d103e4949700f674a",
+    "glb": "fc21a69a7fa5aa7f42d4af568ea1021e6c24b9a69efc868c9798fd68ec05edb8"
+  },
+  "runtime_report_sha256": "fa4c372700f722f3f00f35ba231393ce082e4b1a863df0c99cd104c59356c400",
+  "legacy": {
+    "surface_payload_sha256": "06b2e22f03bcfd410030ad3c7f889932c04e32a7d5414676c88d1e4f574ddd16",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1014,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "0bf10165a1bb77a3c456d6f8c9048a4ccbed7847537f40b7396076e05eb78582",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All 41 catalogue phases were decoded and inspected: reveal/highlight of a fixed building, not recovered mechanical operation or camera rotation. All actual profile catalogue roles map to AC03.VID. Two surface descriptors are shadow/body. Shared ACS2 construction is an existing separate contract; no AC-named _MA family is present."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac03-review-1.png",
+      "sha256": "721e5bacebff6e8e0c3ddce5056fac0809d60862d6eaf15484d66e18b62f4054",
+      "prompt": "sources/docs/reconstruction/models/ac03-concept-prompt-1.txt",
+      "feedback": "Retains the bell housing and flared base, copper bulb, asymmetric brass facing, grille/status lens and two external pipes feeding blue-gray aggregates. Accepted as an interpreted detailing guide; the upper bulb/finial were kept modest in the model to favour the actual legacy proportions. Seams, clamps and hidden intake depth are authored interpretations."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual native/import renders retained the main legacy massing and pipe equipment. The lower intake frame was partly buried in the flared base despite correct ray depths inside all 15 cells.",
+      "action": "Reduced the vertical extent of the flare and moved the intake slightly upward. Added actual casing-ray checks that each rim corner straddles the housing surface."
+    },
+    {
+      "iteration": 2,
+      "observation": "The corrected rim is visibly seated. The status lens was now too low relative to the shifted grille and the original raster.",
+      "action": "Moved the lens beside the upper part of the grille and verified the relative bounds on both saved native and independently imported GLB."
+    },
+    {
+      "iteration": 3,
+      "observation": "Final real front-quarter/front/rear views retain the copper/brass/blue-gray silhouette and restrained wear. The intake remains a real pocket with a rear well and 15 open ray paths, not an uncut wall with painted cells.",
+      "action": "Accept for integration review. Actual pixel parity verifies export representation, not an exact percentage of legacy fidelity. Hidden rear details and client state/scale remain explicitly unestablished."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 3.6356695539942375e-05,
+      "margin": 31
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 5.9396531242575434e-05,
+      "margin": 32
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 5.563024430948959e-05,
+      "margin": 28
+    }
+  ],
+  "review": "Legacy-led static remaster, ready for client integration review. The camera is an approximate front-quarter interpretation, not a recovered original projection. No final user artistic acceptance, FPS guarantee or operational timing is claimed.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

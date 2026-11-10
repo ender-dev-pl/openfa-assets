@@ -1,0 +1,92 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/153",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "e971dd078ef2ab0a0aaa4fa85ff6c86eb65bce429f13a31d103e4949700f674a",
+    "glb": "fc21a69a7fa5aa7f42d4af568ea1021e6c24b9a69efc868c9798fd68ec05edb8"
+  },
+  "metadata_sha256": "7abd27be46590bcf20a0ed842f78f36e0ee13ba998f7ef9b5f4f9dc94076f981",
+  "verifier": "sources/tools/blender/verify_achaean_building.py",
+  "helpers": {
+    "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f",
+    "sources/tools/blender/remaster_achaean_environmental.py": "635888ece53607b67d99e150526a499fcc831d05fb6d3ecca3b12e82c6c62af7",
+    "sources/tools/blender/verify_achaean_building.py": "cbeb66d67c81d145c97e0d1589bc8bbe1e0ea61265fae339655afee67c7680f0",
+    "sources/tools/blender/checks_achaean_environmental.py": "d94ad4a8bbc73bac196569d9095bcfa4c84caa4fb3f8543e369e52a3a8412afc"
+  },
+  "triangles": 13820,
+  "meshes": 37,
+  "materials": 5,
+  "embedded_images": 4,
+  "maximum_bidirectional_surface_error": 1.1920928955078125e-07,
+  "positive_closed_meshes": {
+    "native": 37,
+    "imported": 37
+  },
+  "native_world_bounds": [
+    -0.8285772204399109,
+    -0.8313817977905273,
+    0.0,
+    1.041422724723816,
+    0.8286182284355164,
+    2.799999952316284
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "texture_pixels_equal": true,
+  "native_anatomy": {
+    "foot_to_casing_width_ratio": 1.3815981431439635,
+    "small_top_bulb": true,
+    "actual_intake_open_cells": 15,
+    "four_intake_rim_corner_seats": true,
+    "minimum_intake_ray_depth": 0.5879998803138733,
+    "maximum_intake_ray_depth": 0.5879999995231628,
+    "status_lens_beside_upper_grille": true,
+    "paired_grounded_pumps": true,
+    "paired_seated_copper_risers": true,
+    "maximum_brass_facing_surface_distance": 0.01694539375603199,
+    "operational_timing_established": false
+  },
+  "imported_anatomy": {
+    "foot_to_casing_width_ratio": 1.3815981431439635,
+    "small_top_bulb": true,
+    "actual_intake_open_cells": 15,
+    "four_intake_rim_corner_seats": true,
+    "minimum_intake_ray_depth": 0.5879998803138733,
+    "maximum_intake_ray_depth": 0.5879999995231628,
+    "status_lens_beside_upper_grille": true,
+    "paired_grounded_pumps": true,
+    "paired_seated_copper_risers": true,
+    "maximum_brass_facing_surface_distance": 0.01694539375603199,
+    "operational_timing_established": false
+  },
+  "clips": [],
+  "renders": {
+    "native-front-quarter.png": "2fa95677dd169948beec2cdbc1c1a6c0343758f5a4f418a615a5954c4dd62800",
+    "native-front.png": "0bbca1ef06aaa2005fff566eee8225e83fbbe140dedc5a4f3e5ccebdc63df6d4",
+    "native-rear-quarter.png": "cbbc87f2dc93bc4ea484616f3ac3de37086344482f199c991518e468984cac89",
+    "imported-front-quarter.png": "41fc97a079ace437fcd2332479d4c98a641c78ab6429e64d4d6fc035fea20a9e",
+    "imported-front.png": "cb3e88e44a68fa66c001956d80fe45c97359d9f67cb69af941683859b5816ccf",
+    "imported-rear-quarter.png": "b138428eecaa98e99a2b7ea204fcfb2a35e1a357e11ddcdde5a22934de51652b"
+  },
+  "scope": "Actual saved-native/independent GLB geometry, rooted anatomy, textures and renders. Source-specific checks run on both. Pixel review separate; client scale/state/FPS and final user artistic acceptance remain unverified.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}
