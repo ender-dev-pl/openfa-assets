@@ -1,0 +1,113 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/170",
+  "key": "AC20",
+  "name": "Defence Battery",
+  "culture": "achaean",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 3,
+  "construction_updates": 36,
+  "triangle_budget": 30000,
+  "materials": 4,
+  "mesh_nodes": 13,
+  "triangles": 3192,
+  "author": "sources/tools/blender/remaster_achaean_defence_battery.py",
+  "author_sha256": "cc55954c5cc9146799fcfa5224b3f3768a4681b06c8dee51aae8288722f69d1f",
+  "helpers": {
+    "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "sources/tools/blender/remaster_achaean_shipyard.py": "48458c78408d329f83dc1f413af5d3f2ae685358dd28fb33c3aef46e25b3f0a5",
+    "sources/tools/blender/remaster_achaean_manoeuvring_device.py": "d059d083422720513ac2ca8f7cca1703bee299aae57495acd9f5b80c0439c3f4",
+    "sources/tools/blender/remaster_achaean_missile_launcher.py": "8a24bce326873bed11be0ee8f021acc3c8990440eb6a4d7291e4bab02fa54c3d",
+    "sources/tools/blender/checks_achaean_shipyard.py": "11a1a192cb115676d686c0cbbe764e1fac8080648dd00eaf7e8d15a143fcf012",
+    "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f",
+    "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.blend": "258986894b552591f21456365518fd16aa3b6a3438edd9a689bafb9bc7eb349e"
+  },
+  "binaries": {
+    "blend": "c36033cbe3bda19b54197a07aaa3d249a85f5eb075267dbe0d600095ba3f1e23",
+    "glb": "41cce5e650b90b6eb8ddf9cb94dcd9b6070b985fa18dba48b66cca86c0354b4e"
+  },
+  "animation": {
+    "retained_controller_signature": {
+      "location": [
+        0.0,
+        0.0,
+        1.2999999523162842
+      ],
+      "rotation_mode": "XYZ",
+      "action": "HeadingPreview_360",
+      "curves": [
+        {
+          "path": "rotation_euler",
+          "index": 2,
+          "keys": [
+            {
+              "co": [
+                1.0,
+                0.0
+              ],
+              "interpolation": "LINEAR",
+              "left": [
+                -4.333333492279053,
+                0.0
+              ],
+              "right": [
+                6.333333492279053,
+                0.0
+              ]
+            },
+            {
+              "co": [
+                17.0,
+                6.2831854820251465
+              ],
+              "interpolation": "LINEAR",
+              "left": [
+                11.666666030883789,
+                6.2831854820251465
+              ],
+              "right": [
+                22.33333396911621,
+                6.2831854820251465
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "clip": "Animation",
+    "export_bake_fps": 64,
+    "fps": 16,
+    "frames": [
+      1,
+      17
+    ],
+    "direction_count": 16,
+    "moving_meshes": [
+      "AC20 moving bearing spindle",
+      "AC20 fork channel bed",
+      "AC20 separate fork rail 0",
+      "AC20 separate fork rail 1",
+      "AC20 short rear fork bridge"
+    ],
+    "static_meshes": [
+      "AC20 narrow grounded pedestal",
+      "AC20 stationary ochre sloping bearing",
+      "AC20 grounded ochre left foot",
+      "AC20 coral right vertical relief",
+      "AC20 blue status field 0 dark back",
+      "AC20 blue status field 0",
+      "AC20 blue status field 1 dark back",
+      "AC20 blue status field 1"
+    ],
+    "timing_recovered": false
+  },
+  "state_contract": "Sixteen source surface heading rasters over separate stationary base. Original +Z heading controller/action retained exactly; authored preview timing is not a recovered idle/firing cycle. Source-shaped twin rail/trough head and fixed ochre bearing/foot,coral pedestal/two blue fields. No recoil/projectile sequence inferred. Runtime heading calibration,shared ACS2 and combat mapping separate.",
+  "scale_contract": "Identity PlacementRoot groundZ0;Blender-Yfront/+Zup;2x2footprint. Source heading index registration and exact world/camera scale separate.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

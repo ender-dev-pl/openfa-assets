@@ -17,6 +17,9 @@ def evidence_digest(path):
 def verify_runtime_evidence(root,record):
     root=Path(root).resolve();model=record['reviewed_model'];proof=model.get('runtime_evidence')
     assert isinstance(proof,dict),'Native/GLB gate requires bound runtime evidence'
+    if proof.get('format') == 'achaean-directional-building-remaster-v1':
+        from achaean_directional_building_runtime_evidence import verify
+        return verify(root, record)
     if proof.get('format') == 'achaean-animated-building-remaster-v1':
         from achaean_animated_building_runtime_evidence import verify
         return verify(root, record)

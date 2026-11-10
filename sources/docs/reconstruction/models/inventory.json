@@ -29336,7 +29336,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/170",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1031",
         "description_records": [
           1031
         ]
@@ -29410,11 +29410,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/defence-battery/model.blend",
           "present": true,
-          "sha256": "258986894b552591f21456365518fd16aa3b6a3438edd9a689bafb9bc7eb349e",
-          "final_visual_acceptance": "not-established"
+          "sha256": "c36033cbe3bda19b54197a07aaa3d249a85f5eb075267dbe0d600095ba3f1e23",
+          "media": "gallery/media/objects/achaean/defence-battery",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac20-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/defence-battery/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/defence-battery/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -29424,7 +29439,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -29454,6 +29469,69 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 170
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.blend",
+          "present": true,
+          "sha256": "258986894b552591f21456365518fd16aa3b6a3438edd9a689bafb9bc7eb349e",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/defence-battery/model.blend",
+        "sha256": "c36033cbe3bda19b54197a07aaa3d249a85f5eb075267dbe0d600095ba3f1e23",
+        "runtime_evidence": {
+          "format": "achaean-directional-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/defence-battery",
+          "files": {
+            "gallery/media/concepts/achaean/ac20-review-1.png": "02353e21330fe7e1f1ec61472a9621826b0675c86917439a78f987e1437a4e36",
+            "gallery/media/objects/achaean/defence-battery/animation-00.webm": "8eb77fb407ce5e67005608b3bc687a1929a3625dcf741b76a90272c5e9b9ac3f",
+            "gallery/media/objects/achaean/defence-battery/animation-previews.json": "414be52029502afab9f979b6fba97bf696a0f8860bbec08a6769861177e96b19",
+            "gallery/media/objects/achaean/defence-battery/front-quarter.png": "933007065f6bb35bc0c009c50d6126cf4b4a8246ac01be1d54d5d1c3301bbaea",
+            "gallery/media/objects/achaean/defence-battery/imported-front-quarter.png": "933007065f6bb35bc0c009c50d6126cf4b4a8246ac01be1d54d5d1c3301bbaea",
+            "gallery/media/objects/achaean/defence-battery/imported-front.png": "367232aeea720d5a25a2a5440bf7ea5c72167ba4d298e1f90e4706b9df072a70",
+            "gallery/media/objects/achaean/defence-battery/imported-rear-quarter.png": "433a5083e82aa29a550f7784c5bdb0a4ebde2fe505f8acabb9fad95188ba7e15",
+            "gallery/media/objects/achaean/defence-battery/native-front-quarter.png": "65c8377a0ecc20f0ab9f3bf292dee54297266b2af8f31e9cf83dd47cf265264d",
+            "gallery/media/objects/achaean/defence-battery/native-front.png": "211a4c018e2bc1eb4b1af4a43c153814826ba7dadc3c3fbca0c9063fb5c41f06",
+            "gallery/media/objects/achaean/defence-battery/native-rear-quarter.png": "2f907a11aa354e108a771aa61ac62faf39e32937151d6ab1c10955e2aaf2bcb4",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.blend": "258986894b552591f21456365518fd16aa3b6a3438edd9a689bafb9bc7eb349e",
+            "sources/docs/reconstruction/models/ac20-concept-prompt-1.txt": "d7d9e6e07a627c4ffecc57b9d802423299a6a520d1a8da26c65bbc96566f3da5",
+            "sources/materials/achaean/defence-battery/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/defence-battery/Coral fine wear normal.png": "bef1048d97b12a3f013fec0182bd58055527d07459163c91eef3f8f3f87c70bf",
+            "sources/materials/achaean/defence-battery/Coral metal roughness.png": "efaef6c8b59203937dd615b0f6cedf9cb69d612a32ab3acfedff0cf196669985",
+            "sources/materials/achaean/defence-battery/Dark source light backs.png": "49b86b9728bc7f7db0e862f110131d37d01eb76ffe8a25efc750b834474af934",
+            "sources/materials/achaean/defence-battery/Ochre bearing and foot.png": "c5f7cde2c66718020f304f6ba4be02be66b3a0fff4ce4039b6aa3e5eaee4b4ee",
+            "sources/objects/achaean/defence-battery/model.blend": "c36033cbe3bda19b54197a07aaa3d249a85f5eb075267dbe0d600095ba3f1e23",
+            "sources/objects/achaean/defence-battery/model.glb": "41cce5e650b90b6eb8ddf9cb94dcd9b6070b985fa18dba48b66cca86c0354b4e",
+            "sources/objects/achaean/defence-battery/model.json": "30333c2675b28dffb583672ced20187aa32dcca7614480793a6e4231bad9fc3e",
+            "sources/objects/achaean/defence-battery/runtime-review.json": "55e7ef0094f475d0124f3ed296bee7879016a9cc96dd6c622b999043adf56aaf",
+            "sources/objects/achaean/defence-battery/visual-review.json": "ddd6227f74cad19ef4ee90278b9481b56c343fe1d66175f579294bcbd7b42a5c",
+            "sources/tools/blender/achaean_directional_building_runtime_evidence.py": "eed4b402fc3335a21de7b3156fc2a82d93f307be25583aa9ad888847c5a87ef7",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_shipyard.py": "e397a226fc7a4df37f4531f8ea724bfa2fac33579bcd2bd3082ab99d382a36ae",
+            "sources/tools/blender/remaster_achaean_defence_battery.py": "059617f5e2b6a79949c1cda685dcd166ef501fcc30de1fcb05a5efd222f80e3d",
+            "sources/tools/blender/remaster_achaean_manoeuvring_device.py": "bccbd3e9cd29706fbf5b0af5dd1df712be840edefc562002bac491ed895cb4fe",
+            "sources/tools/blender/remaster_achaean_missile_launcher.py": "a0594e4649ef870b68a100439a1feb0e92214babd70da949b7a4169364c18a2d",
+            "sources/tools/blender/remaster_achaean_shipyard.py": "7ccce8d2dfa946f86da065ecb64a8b30a5d56d0e5a375f7d9a6e7957c4b6fbf6",
+            "sources/tools/blender/render_achaean_heading_preview.py": "aecddbcf55310ac69eae0498ca16f8e7ee83367cb7905be2adc0aa72ae6ba4a5",
+            "sources/tools/blender/verify_achaean_building_centered.py": "c40d7ed4063b8a4e64954eef81d08ca4e37420a4a3579e42c38f1a809cc88860",
+            "sources/tools/blender/verify_achaean_building_left_quarter.py": "27a9026001272eaa467909e1d02f157af0353fc51dceed1cc60077154333cb74",
+            "sources/tools/blender/verify_achaean_defence_battery.py": "ce3be34b2aa576f497c89b311879dc580fe58178abcdf9eacbb9309518f5377e",
+            "sources/tools/blender/verify_achaean_landing_pad.py": "d34c2c7b7539ebc44c7a47d8a36928f6b4077d53e373af086a4347379687dd20",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with 65 sampled heading states, bearing/clearance/fork checks, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/defence-battery/runtime-review.json",
+          "objects/achaean/defence-battery/visual-review.json"
+        ]
       }
     },
     {

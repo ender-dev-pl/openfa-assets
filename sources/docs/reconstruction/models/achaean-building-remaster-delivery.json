@@ -1165,10 +1165,143 @@
       ],
       "reuse": "One current payload for gameplay/build/SciTek. Historical studies are not package selections.",
       "limits": "Client scale/state integration, Android frame time and final user artistic acceptance remain separate."
+    },
+    {
+      "id": "openfa:building/legacy/170",
+      "key": "AC20",
+      "name": "Defence Battery",
+      "blend": "sources/objects/achaean/defence-battery/model.blend",
+      "glb": "sources/objects/achaean/defence-battery/model.glb",
+      "binaries": {
+        "blend": "c36033cbe3bda19b54197a07aaa3d249a85f5eb075267dbe0d600095ba3f1e23",
+        "glb": "41cce5e650b90b6eb8ddf9cb94dcd9b6070b985fa18dba48b66cca86c0354b4e"
+      },
+      "triangles": 3192,
+      "meshes": 13,
+      "materials": 4,
+      "embedded_images": 5,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 3,
+      "construction_updates": 36,
+      "root": "PlacementRoot",
+      "root_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_world_bounds": [
+        -0.5735940933227539,
+        -0.5735940933227539,
+        0.0,
+        0.5735940933227539,
+        0.5735940933227539,
+        1.7813037633895874
+      ],
+      "axes": "Blender -Y front, +Z up",
+      "animation": {
+        "retained_controller_signature": {
+          "location": [
+            0.0,
+            0.0,
+            1.2999999523162842
+          ],
+          "rotation_mode": "XYZ",
+          "action": "HeadingPreview_360",
+          "curves": [
+            {
+              "path": "rotation_euler",
+              "index": 2,
+              "keys": [
+                {
+                  "co": [
+                    1.0,
+                    0.0
+                  ],
+                  "interpolation": "LINEAR",
+                  "left": [
+                    -4.333333492279053,
+                    0.0
+                  ],
+                  "right": [
+                    6.333333492279053,
+                    0.0
+                  ]
+                },
+                {
+                  "co": [
+                    17.0,
+                    6.2831854820251465
+                  ],
+                  "interpolation": "LINEAR",
+                  "left": [
+                    11.666666030883789,
+                    6.2831854820251465
+                  ],
+                  "right": [
+                    22.33333396911621,
+                    6.2831854820251465
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "head": "DirectionalHead",
+        "base": "StaticBase",
+        "clip": "Animation",
+        "export_bake_fps": 64,
+        "fps": 16,
+        "frames": [
+          1,
+          17
+        ],
+        "direction_count": 16,
+        "moving_meshes": [
+          "AC20 moving bearing spindle",
+          "AC20 fork channel bed",
+          "AC20 separate fork rail 0",
+          "AC20 separate fork rail 1",
+          "AC20 short rear fork bridge"
+        ],
+        "static_meshes": [
+          "AC20 narrow grounded pedestal",
+          "AC20 stationary ochre sloping bearing",
+          "AC20 grounded ochre left foot",
+          "AC20 coral right vertical relief",
+          "AC20 blue status field 0 dark back",
+          "AC20 blue status field 0",
+          "AC20 blue status field 1 dark back",
+          "AC20 blue status field 1"
+        ],
+        "timing_recovered": false
+      },
+      "animation_preview": "gallery/media/objects/achaean/defence-battery/animation-00.webm",
+      "state_contract": "Sixteen source surface heading rasters over separate stationary base. Original +Z heading controller/action retained exactly; authored preview timing is not a recovered idle/firing cycle. Source-shaped twin rail/trough head and fixed ochre bearing/foot,coral pedestal/two blue fields. No recoil/projectile sequence inferred. Runtime heading calibration,shared ACS2 and combat mapping separate.",
+      "scale_contract": "Identity PlacementRoot groundZ0;Blender-Yfront/+Zup;2x2footprint. Source heading index registration and exact world/camera scale separate.",
+      "superseded_studies": [
+        "docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.blend"
+      ],
+      "reuse": "One current payload for gameplay/build/SciTek. Historical studies are not package selections.",
+      "limits": "Client scale/state integration, Android frame time and final user artistic acceptance remain separate."
     }
   ],
   "pending": [
-    "AC20",
     "AC21",
     "AC22",
     "AC23",
