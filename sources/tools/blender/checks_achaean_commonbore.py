@@ -26,7 +26,7 @@ def structure():
         rod='AC21 slate vertical fitting '+str(i);collar='AC21 ochre middle coupling '+str(i);assert trees[rod].overlap(trees[pod]) and trees[rod].overlap(trees[lower]) and trees[rod].overlap(trees[collar])
     connector='AC21 supported right slate connector';assert trees[connector].overlap(trees[pods[2]]) and trees[connector].overlap(trees[pods[4]])
     assert trees['AC21 slate tip socket'].overlap(trees[upper]) and trees['AC21 short ochre tip'].overlap(trees['AC21 slate tip socket'])
-    names=[f'AC21 upper amber field {i}' for i in range(4)]+['AC21 amber slit '+n for n in ['main','front left','front right']]+['AC21 red slit back '+n for n in ['main','front left','front right']];depths=[]
+    names=[f'AC21 upper amber field {i}' for i in range(4)]+['AC21 amber slit '+n for n in ['main','front left','front right','outer right']]+['AC21 red slit back '+n for n in ['main','front left','front right','outer right']];depths=[]
     for name in names:
         o=bpy.data.objects[name];normal=o.matrix_world.to_3x3()@Vector((0,-1,0));centre=o.matrix_world.translation.copy()
         if name.startswith('AC21 red slit back'):centre+=o.matrix_world.to_3x3()@Vector((.055,0,0))
