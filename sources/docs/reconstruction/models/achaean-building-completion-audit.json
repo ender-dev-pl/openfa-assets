@@ -1,0 +1,1154 @@
+{
+  "schema_version": 1,
+  "issue": 256,
+  "scope": "Current asset-only completion integrity audit backed by actual per-model Blender and reference reviews;not a new Blender run or client/artist acceptance.",
+  "auditor_sha256": "eb1293f97af5d9444625f1bffec9d6c983733687b7b5c428df0a6395ef32d31e",
+  "model_count": 26,
+  "preserved_original_pairs": 29,
+  "render_pairs": 80,
+  "catalogue_updates_reviewed": 1066,
+  "extra_zoom_layers_reviewed": 52,
+  "research_video_subject_reviews": 72,
+  "concept_attempts": 27,
+  "animated_models": 4,
+  "total_triangles": 392976,
+  "maximum_model_triangles": 30946,
+  "maximum_model_meshes": 54,
+  "inputs": {
+    "achaean-building-remaster-delivery.json": "d340c174c99a80b3d2e6785186bbf10aaeb38286e4ac9340c9cf6c0de3c04d59",
+    "achaean-building-reference-review.json": "12dfe0e42ebd326627fa033d3468be54fad241a97847180c71ea3f50549ff029",
+    "achaean-building-remaster-baseline.json": "fef1721f2614f21970e25f4e6d6701760656c7d145975b3e058cdd74e6ae18be",
+    "achaean-building-milestones.json": "b77bc5d1b40d6a54a1eb59673875656bfb020466baf3a7793be6e07cb61fa1e1"
+  },
+  "inventory_sha256": "7aa9bae995dd54571c79339a93e2599764f461e33ca507baaad6ee410737b573",
+  "gallery_catalogue_sha256": "a1cf3e4d68584b78bb698cb2ed4eeb1aefe7b56e11eec24b3da97cc42c9716ae",
+  "models": [
+    {
+      "id": "openfa:building/legacy/151",
+      "key": "AC01",
+      "name": "Footprint",
+      "blend": "sources/objects/achaean/footprint/model.blend",
+      "glb": "sources/objects/achaean/footprint/model.glb",
+      "binaries": {
+        "blend": "3d6cbf336f02bf60134aaac3cd5d6ccceba00df59a39082a3d60fdc7e830310b",
+        "glb": "4d6591826cf3117716dd425a52d784f0686560d00474b8f9fad1ca2f4150ae29"
+      },
+      "triangles": 16844,
+      "triangle_budget": 30000,
+      "meshes": 39,
+      "materials": 6,
+      "embedded_images": 5,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 20,
+      "construction_updates": 50,
+      "runtime_report": "sources/objects/achaean/footprint/runtime-review.json",
+      "runtime_report_sha256": "fb744fcc654a65c9c453fa72f671fefcd7efcce4c76d8942b18828e0103183fa",
+      "reference_surface_sha256": "e7b7fea3b9e81d329b5f7f054ffcb409b1ca66e70adf3f6ddbe9c650155cd612",
+      "reference_zoom_sha256": "d782e5a82e94b3c033796d5845973b173dff5235523535e88516d9bf1d522a74",
+      "bound_runtime_files": 22,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 3.861252332839951e-05,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "8b9fb5e6573aba2c7a3fbe6f7e817ea4acb0640b",
+      "state_contract": "Static support facility; catalogue reveal/highlight is presentation, not an established operating cycle. Construction/damage are not authored here.",
+      "scale_contract": "Local origin at footprint centre and ground Z=0; -Y front, +Z up. Game tile/world scale requires integration calibration."
+    },
+    {
+      "id": "openfa:building/legacy/152",
+      "key": "AC02",
+      "name": "Anti-Rad Screen",
+      "blend": "sources/objects/achaean/anti-rad-screen/model.blend",
+      "glb": "sources/objects/achaean/anti-rad-screen/model.glb",
+      "binaries": {
+        "blend": "246f878e4465d213472d6be942e436e0b48821909bd405595aaa64aafc22a091",
+        "glb": "fe9cb5c3178e51cf8a98a78dd13ff23d06f076bcc50916828d8feb88dcddbeaf"
+      },
+      "triangles": 15152,
+      "triangle_budget": 30000,
+      "meshes": 31,
+      "materials": 5,
+      "embedded_images": 4,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 5,
+      "construction_updates": 32,
+      "runtime_report": "sources/objects/achaean/anti-rad-screen/runtime-review.json",
+      "runtime_report_sha256": "da27eda538d7e0f1f0fe2358b25a5f4f7f0183f9031d801720ea269b50a5ec9d",
+      "reference_surface_sha256": "214b1d0aa6bbfa7a941a2170f3fd0ef01a58a354fa5c68b666998dc81d32a68f",
+      "reference_zoom_sha256": "93ecfa5f82a79e9911a3277e86a655c5a27f17766db56168b24a6f40cd364119",
+      "bound_runtime_files": 23,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.00010670731707317073,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "9ffedf0a05f41d1f252e06b77d6896c917b45566",
+      "state_contract": "Static radiation-control facility. Actual AC02 catalogue reveal/highlight does not establish a mechanical operating cycle; construction/damage and shader activity require client integration.",
+      "scale_contract": "PlacementRoot at ground Z=0, local -Y front and +Z up; tile/world calibration remains separate."
+    },
+    {
+      "id": "openfa:building/legacy/153",
+      "key": "AC03",
+      "name": "Environmental Control",
+      "blend": "sources/objects/achaean/environmental-control/model.blend",
+      "glb": "sources/objects/achaean/environmental-control/model.glb",
+      "binaries": {
+        "blend": "e971dd078ef2ab0a0aaa4fa85ff6c86eb65bce429f13a31d103e4949700f674a",
+        "glb": "fc21a69a7fa5aa7f42d4af568ea1021e6c24b9a69efc868c9798fd68ec05edb8"
+      },
+      "triangles": 13820,
+      "triangle_budget": 30000,
+      "meshes": 37,
+      "materials": 5,
+      "embedded_images": 4,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 35,
+      "construction_updates": 36,
+      "runtime_report": "sources/objects/achaean/environmental-control/runtime-review.json",
+      "runtime_report_sha256": "fa4c372700f722f3f00f35ba231393ce082e4b1a863df0c99cd104c59356c400",
+      "reference_surface_sha256": "06b2e22f03bcfd410030ad3c7f889932c04e32a7d5414676c88d1e4f574ddd16",
+      "reference_zoom_sha256": "5c546cfb82e24b33b63a0f7256c76bd86e68a43548845cfb0b94011e8352c414",
+      "bound_runtime_files": 23,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 5.9396531242575434e-05,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "c299ecc8a53cd59497d2763eddebed5c8fb46dd8",
+      "state_contract": "Static environmental control and emergency reserves. All catalogue phases are reveal/highlight; no operational timing established. Construction/damage/activity mappings remain client integration.",
+      "scale_contract": "PlacementRoot at ground Z=0, local -Y front/+Z up; game tile/world scale requires calibration."
+    },
+    {
+      "id": "openfa:building/legacy/154",
+      "key": "AC04",
+      "name": "Filtration Vats",
+      "blend": "sources/objects/achaean/filtration-vats/model.blend",
+      "glb": "sources/objects/achaean/filtration-vats/model.glb",
+      "binaries": {
+        "blend": "f3862fe485a2e785e30f0770e70f79362996fbb0bd7a5ab5bcba9d1ff89986e4",
+        "glb": "1f9df31969930b6529deeecc1a264bcb2bea3dc56aca0afe08acb8ebfd2c5443"
+      },
+      "triangles": 12484,
+      "triangle_budget": 30000,
+      "meshes": 37,
+      "materials": 6,
+      "embedded_images": 4,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 38,
+      "construction_updates": 38,
+      "runtime_report": "sources/objects/achaean/filtration-vats/runtime-review.json",
+      "runtime_report_sha256": "a8a542e134789ffb6c6fee867acc33ea3a9e915ebfe44cf5925ddd8ad320d05e",
+      "reference_surface_sha256": "4636eb0e692ab40dd915096ee10bf8ca649353090b39aa20c4da957358350c0d",
+      "reference_zoom_sha256": "19398b32306a091567f0240a0c76945f01af47c80847e38a12d2ee9affd6c513",
+      "bound_runtime_files": 23,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.0004087268710301022,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "42cd168dcec2fd5e0d1fa8e1f5e5d841738c0417",
+      "state_contract": "Static water extraction/purification facility. All catalogue frames are reveal/highlight; no operational timing recovered. Amber/red lenses have constant low emission, not an inferred blink sequence. Client construction/damage/activity mapping remains separate.",
+      "scale_contract": "PlacementRoot at ground Z=0, local -Y front/+Z up. Tile/world scale calibration remains a client integration task."
+    },
+    {
+      "id": "openfa:building/legacy/155",
+      "key": "AC05",
+      "name": "Nutrient Vats",
+      "blend": "sources/objects/achaean/nutrient-vats/model.blend",
+      "glb": "sources/objects/achaean/nutrient-vats/model.glb",
+      "binaries": {
+        "blend": "b854f0bea8740c284615c080223b612f03d49ae4c5fd7a0b471400d06c8ee26e",
+        "glb": "7be8e209bd2297cde9091a87484f3741cdac1a8b1586abdb766a2fdd6b30deab"
+      },
+      "triangles": 18034,
+      "triangle_budget": 30000,
+      "meshes": 37,
+      "materials": 6,
+      "embedded_images": 4,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 37,
+      "construction_updates": 40,
+      "runtime_report": "sources/objects/achaean/nutrient-vats/runtime-review.json",
+      "runtime_report_sha256": "46e1089be1095afec37a782273a138e9de1b6c7a467f00e5857a9b0c6c866c74",
+      "reference_surface_sha256": "9aa7e64a8f6cc04c174cc0667c2f4c00d4404554c2a0921fbf3413c75ecd92f5",
+      "reference_zoom_sha256": "6e8df29b740e01b5f85cd0efecb69c8ffce9e20e9cc1b4891950dcb7e33590d4",
+      "bound_runtime_files": 23,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.00013388314678948213,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "ff07e3bbba45343a6a0de649a6c1dd90fd919ea9",
+      "state_contract": "Static nutrient-processing vessel and internal spice-growing cells. Catalogue reveal/highlight does not establish operational timing; constant low indicator emission is not a recovered blink sequence. Client construction/damage/activity mapping remains separate.",
+      "scale_contract": "PlacementRoot at ground Z=0, local -Y front/+Z up. Game tile/world calibration remains separate."
+    },
+    {
+      "id": "openfa:building/legacy/156",
+      "key": "AC06",
+      "name": "Habitat",
+      "blend": "sources/objects/achaean/habitat/model.blend",
+      "glb": "sources/objects/achaean/habitat/model.glb",
+      "binaries": {
+        "blend": "4c6fcbb7861134a6bb3455de9e77ec3920275a9dde337fd41589d35083b282cc",
+        "glb": "c0c2105076cc61d70ff9a699adca6b691277d6a3851c345fa32b42f4ad974283"
+      },
+      "triangles": 20112,
+      "triangle_budget": 30000,
+      "meshes": 15,
+      "materials": 4,
+      "embedded_images": 3,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 0,
+      "construction_updates": 56,
+      "runtime_report": "sources/objects/achaean/habitat/runtime-review.json",
+      "runtime_report_sha256": "9fe44825b9946d0cd226ae1c531ea8db629aefb95021097b1ea090bcc117ecb6",
+      "reference_surface_sha256": "df3406d7b8d9bf91cae9911e6bdfde6d573d63e8e7bd61368c54ef9246228b92",
+      "reference_zoom_sha256": "af72dafa292b33ac5b046d86a3525e3238a42c7dc3db89c7e461d1030bdf47e0",
+      "bound_runtime_files": 22,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.023193227968879973,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "b35b9762fad830bfc41778d45aa6d408dd85fa31",
+      "state_contract": "Static low surface habitat crown; most rooms/tunnels are underground in legacy lore and are not externally invented. Catalogue reveal/highlight does not establish mechanical operation. Warm windows have low constant emission; activity/construction/damage mapping remains client integration.",
+      "scale_contract": "PlacementRoot at ground Z=0, local -Y front/+Z up. Client tile/world calibration remains separate."
+    },
+    {
+      "id": "openfa:building/legacy/157",
+      "key": "AC07",
+      "name": "Pharmacopeion",
+      "blend": "sources/objects/achaean/pharmacopeion/model.blend",
+      "glb": "sources/objects/achaean/pharmacopeion/model.glb",
+      "binaries": {
+        "blend": "8c86e4c9612ee55410510b1d843a948d815fe60dbd924ba3cbb1fff1a67f04f7",
+        "glb": "50c575755fd9037bbe1857174631a430e1e3f0c27da5f0624a3a5acb11d2535a"
+      },
+      "triangles": 15994,
+      "triangle_budget": 35000,
+      "meshes": 18,
+      "materials": 6,
+      "embedded_images": 5,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 34,
+      "construction_updates": 30,
+      "runtime_report": "sources/objects/achaean/pharmacopeion/runtime-review.json",
+      "runtime_report_sha256": "1db0dcb11fc801884c3a8647435c5e7d0cdd5962fb5dbe6ec5d6a843a30e1116",
+      "reference_surface_sha256": "c1e69a292532d22b5ab25a0cd1635de1a11f4361c8614ab98e7f2819cd50cbfc",
+      "reference_zoom_sha256": "2b79e6d27ba5a0ec9251d34fc6f64e673541ccb4fc8fbaff3da361f089410ba3",
+      "bound_runtime_files": 24,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.006326634543816352,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "8ab6828ff530fff0ffcbe31712b6f7c953ed074f",
+      "state_contract": "Static medical/herbal treatment facility. Catalogue reveal/highlight does not establish operational timing. Low constant warm lights; activity/construction/damage mapping remains client integration.",
+      "scale_contract": "PlacementRoot at ground Z=0, local -Y front/+Z up. Client tile/world calibration remains separate."
+    },
+    {
+      "id": "openfa:building/legacy/158",
+      "key": "AC08",
+      "name": "Gathering Ground",
+      "blend": "sources/objects/achaean/gathering-ground/model.blend",
+      "glb": "sources/objects/achaean/gathering-ground/model.glb",
+      "binaries": {
+        "blend": "b8b7d1536f925984659a1ce861f054b1effe9882c4a6dfdb31bd0108fc4f3211",
+        "glb": "9f6a629318855abf905c31938d49fa8153431885018a7b343f961c5e6e84c0dc"
+      },
+      "triangles": 30946,
+      "triangle_budget": 45000,
+      "meshes": 54,
+      "materials": 7,
+      "embedded_images": 5,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 255,
+      "construction_updates": 68,
+      "runtime_report": "sources/objects/achaean/gathering-ground/runtime-review.json",
+      "runtime_report_sha256": "ce47f81e37c6cab28ac063e5fd7a18af386f09e0cca062055adeae7ce16af021",
+      "reference_surface_sha256": "1cd7c12efc7074dcaa594fe9c4f988a3552e1bce8e6e5bd614268b560b54b9ba",
+      "reference_zoom_sha256": "16663a89c4fdfceb78355d9206592edfd9294711fc52737b4ccfc9ba38dac9af",
+      "bound_runtime_files": 24,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.001425155876423984,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "a6042b30961cbbd5c59531ccd3fd38a9b30db175",
+      "state_contract": "Static cultural gathering/festival facility with constant low warm and blue emission. Catalogue reveal/highlight does not establish mechanical or blink timing. Shared ACS3 scaffolding and client state/activity/construction/damage mapping remain separate.",
+      "scale_contract": "PlacementRoot at ground Z=0, local -Y front/+Z up. Client tile/world calibration remains separate."
+    },
+    {
+      "id": "openfa:building/legacy/159",
+      "key": "AC09",
+      "name": "Market",
+      "blend": "sources/objects/achaean/market/model.blend",
+      "glb": "sources/objects/achaean/market/model.glb",
+      "binaries": {
+        "blend": "1ae0e50da62ae9290c8f8bab87f796faee8d78b0f415646f6e3cfaa64e83830b",
+        "glb": "c66187aa8f77d369f33017fff001676f4b3b55d89dc98595e68088d36e20efa4"
+      },
+      "triangles": 18080,
+      "triangle_budget": 35000,
+      "meshes": 31,
+      "materials": 6,
+      "embedded_images": 4,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 255,
+      "construction_updates": 76,
+      "runtime_report": "sources/objects/achaean/market/runtime-review.json",
+      "runtime_report_sha256": "ec7fdab153a3d6361b4dbe182db1a72f63e0c288b48f7537cf0c5b5a8658516a",
+      "reference_surface_sha256": "c4377170a0313c0a55e2a9fc3782b848d642b53861f2829d9aa77bb1b2976c71",
+      "reference_zoom_sha256": "8855f532ed1d9ce0dee5abae9e2c7c697b24f90ffac497d0322aadc47eb0d5da",
+      "bound_runtime_files": 23,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.00011059958801653464,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "7a93bb347462186acdb8f5e1a414395f4267a281",
+      "state_contract": "Static trade/visiting facility. Catalogue reveal/highlight does not establish operating timing. Constant low warm/blue emission; ACS3 construction and client state/activity/damage mapping remain separate.",
+      "scale_contract": "PlacementRoot at ground Z=0, local -Y front/+Z up. Client tile/world calibration remains separate."
+    },
+    {
+      "id": "openfa:building/legacy/160",
+      "key": "AC10",
+      "name": "Communications Central",
+      "blend": "sources/objects/achaean/communications-central/model.blend",
+      "glb": "sources/objects/achaean/communications-central/model.glb",
+      "binaries": {
+        "blend": "69bc97bf20abba433851040e809e33626a5c3137b8d887dda5b5b1ee1164f0c6",
+        "glb": "eef5fc411afe783c3c4059057e2922516de88d746341dc201c3d341a9ec4bee7"
+      },
+      "triangles": 23614,
+      "triangle_budget": 35000,
+      "meshes": 27,
+      "materials": 8,
+      "embedded_images": 4,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 24,
+      "construction_updates": 36,
+      "runtime_report": "sources/objects/achaean/communications-central/runtime-review.json",
+      "runtime_report_sha256": "c7c667f75b35ab04ee619a27827043f3f085bb88c83c7464ef31c1ceb00e3ece",
+      "reference_surface_sha256": "d60264860683111807040e50ee3e924b2dcb5f9f93a0be1c44279053a93b982f",
+      "reference_zoom_sha256": "b19adc3eed8767b56500fd19b118d23ae1f195821f11e20cf37c5a6ecbe932b7",
+      "bound_runtime_files": 23,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.00019065642300305051,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "5984e8b52675817b907754a3ccaa8119f124970b",
+      "state_contract": "Static information-evaluation and communication facility. Eighteen authored blue/violet/cold-blue cells follow the actual visible palette sequence, with constant low emission. Catalogue reveal/highlight does not establish antenna motion, blinking or data scrolling. Shared ACS3 construction and client state/activity/damage mapping remain separate.",
+      "scale_contract": "PlacementRoot at ground Z=0, local -Y front/+Z up. Client tile/world calibration remains separate."
+    },
+    {
+      "id": "openfa:building/legacy/161",
+      "key": "AC11",
+      "name": "Shipyard",
+      "blend": "sources/objects/achaean/shipyard/model.blend",
+      "glb": "sources/objects/achaean/shipyard/model.glb",
+      "binaries": {
+        "blend": "8d13411fef4f034f58659f93457d3e6880ccbf0c51f5f1d05020b84546af5feb",
+        "glb": "e1a7e565c68ae03ad551d4d7bc2560057551f8ba0c217ab9e1399e77620fd12a"
+      },
+      "triangles": 12578,
+      "triangle_budget": 30000,
+      "meshes": 34,
+      "materials": 7,
+      "embedded_images": 7,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 25,
+      "construction_updates": 45,
+      "runtime_report": "sources/objects/achaean/shipyard/runtime-review.json",
+      "runtime_report_sha256": "0093b390cfccebaa61cebee224316049ed063993a9490910af905512be6b5c39",
+      "reference_surface_sha256": "2d3807bcfe852d10397852158184cbf5b01703d881e6621b80ce656ce812470c",
+      "reference_zoom_sha256": "965d4405344802817f2dc46f596733a766a9dc11817edb10aa60d3feca89dfc8",
+      "bound_runtime_files": 28,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.0005333197887037789,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "0c389a5aaae652f49cc9cb85cfecc352d8d11e3d",
+      "state_contract": "Static Achaean construction/refitting facility from four-lobed legacy source. Articulated front shoulders/necks with four seated red fields,broad constructed ochre arch/service fixture,stepped spine coupling,source-visible side fitting and three-part blue equipment cluster. Structural seams/fasteners/hidden rear are conservative authored detail. Red/blue low emission constant; no crane/gate cycle inferred from catalogue reveal. Shared ACS3 and client state/FPS remain separate.",
+      "scale_contract": "PlacementRoot at groundZ0; Blender-Y front/+Zup. Legacy-led proportions,exact tile/world calibration and final user artistic acceptance separate."
+    },
+    {
+      "id": "openfa:building/legacy/162",
+      "key": "AC12",
+      "name": "Landing Pad",
+      "blend": "sources/objects/achaean/landing-pad/model.blend",
+      "glb": "sources/objects/achaean/landing-pad/model.glb",
+      "binaries": {
+        "blend": "4aaccdc9db5e2242345b9dd2338a1b98000f8f2e284ccb4bb2cf5c83d5342a04",
+        "glb": "57408e97812bd11bcdc655782b2e2d4f145f9fc698a7d4da4fc72fa569af41b7"
+      },
+      "triangles": 5896,
+      "triangle_budget": 30000,
+      "meshes": 25,
+      "materials": 6,
+      "embedded_images": 8,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 26,
+      "construction_updates": 18,
+      "runtime_report": "sources/objects/achaean/landing-pad/runtime-review.json",
+      "runtime_report_sha256": "666e295989eba5dec3222f6abaf0e478ad616291b5cccbbb63f61f9da7c3c438",
+      "reference_surface_sha256": "48cd9e46618541b9df51ba99a7a2b8e685532f3629138559ecf21c5fa4267d91",
+      "reference_zoom_sha256": "f7a382fdc9e97181238da91fb057d344df1e534f98857a2efa14ac83ea66add0",
+      "bound_runtime_files": 38,
+      "render_pairs": 5,
+      "maximum_render_channel_mean_difference": 0.0003319942896982172,
+      "concept_attempts": 1,
+      "clips": [
+        "LaunchFacilityCycle"
+      ],
+      "signed_model_commit": "9519e7b049056cfd814897839661de81503ee5f9",
+      "state_contract": "Retains the useful LaunchFacilityCycle label,61-frame closed/open/closed cycle and12 segment travel amplitudes from the prior refinement. Axis is aligned fore/aft from actual paired strip imagery; vertical pre-stow and hidden cavity are authored engineering. Descriptors2\u20135 are visible cover phases,6\u201316 empty/open,17 foreground rather than a lid pose. Original timing/hidden engineering/foreground composition not recovered.",
+      "scale_contract": "PlacementRoot at groundZ0; Blender-Y front/+Zup. Client tile/ship scale remains separate."
+    },
+    {
+      "id": "openfa:building/legacy/163",
+      "key": "AC13",
+      "name": "Missile Launcher",
+      "blend": "sources/objects/achaean/missile-launcher/model.blend",
+      "glb": "sources/objects/achaean/missile-launcher/model.glb",
+      "binaries": {
+        "blend": "53c04968bb6b76def65d677b0d9d7225c091b0af01d4d2a04b442fafe546f48a",
+        "glb": "d995c42dc0d38dad2dcc65ae77958acc8ca6298cd185efdfd85ef6f61d44f657"
+      },
+      "triangles": 14072,
+      "triangle_budget": 30000,
+      "meshes": 18,
+      "materials": 4,
+      "embedded_images": 5,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 14,
+      "construction_updates": 34,
+      "runtime_report": "sources/objects/achaean/missile-launcher/runtime-review.json",
+      "runtime_report_sha256": "febcc09cb1bfbd2f40a1425cc4ba962b493524646601afec352154b9c4e38be3",
+      "reference_surface_sha256": "c29f628828cd63d04717e444fec91b004b8a379d1c9797bf2357fa9b0962dddc",
+      "reference_zoom_sha256": "4ad14b1994e09bb661f61ad2e06d9cda9896d891da19b8a1aa1f717268e19f12",
+      "bound_runtime_files": 27,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.0011031661674235835,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "c354e40fcd525bd3c7a82bcea2336fcb51aff8ec",
+      "state_contract": "Static exposed Achaean launcher: two grounded connected coral chambers,two parallel ringed posts with slate heads,seven recessed front fields and two red source optics. Actual surface has only shadow/body; fixed-view catalogue reveal does not establish a lid cycle. Retains useful prior permanent .17-radius emitter opening and .05-height dark floor. No invented lid animation. Dark front recess purpose,hidden rear and dimensions remain interpreted. Shared ACS2 construction and client missile/mode/state/scale mapping remain separate.",
+      "scale_contract": "PlacementRoot at groundZ0; Blender-Y front/+Zup. Exposed emitter dimensions are authored; client rocket fit and tile/world calibration remain separate."
+    },
+    {
+      "id": "openfa:building/legacy/164",
+      "key": "AC14",
+      "name": "Data Gatherer",
+      "blend": "sources/objects/achaean/data-gatherer/model.blend",
+      "glb": "sources/objects/achaean/data-gatherer/model.glb",
+      "binaries": {
+        "blend": "7a599fb1a35deddebac2f118c7e0154dfd9c7575a5a15e0b986589f3d84d0f8d",
+        "glb": "04448ffda043cdd17032db4ae480e8a8b74abb3ccb9882f2a8a318ec11426364"
+      },
+      "triangles": 12618,
+      "triangle_budget": 30000,
+      "meshes": 22,
+      "materials": 5,
+      "embedded_images": 6,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 9,
+      "construction_updates": 28,
+      "runtime_report": "sources/objects/achaean/data-gatherer/runtime-review.json",
+      "runtime_report_sha256": "7812a6be66979e88e004cbe4c0fc4243cd52b3bc324e0620de697d6b27ff481d",
+      "reference_surface_sha256": "2eaf64d5c93c3265b49ca9aca28d24da1e26f87a5eaa06314a0ee1d6f620577d",
+      "reference_zoom_sha256": "72848b74a2b8e7b938bcfe2ed6bf2e7555cbc0ac7845333881d192427950ae09",
+      "bound_runtime_files": 29,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.00048102824597860385,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "df53ecfc56d19218e7fe0d528fc40ab43902835e",
+      "state_contract": "Static exposed satellite silo from actual two-layer surface/fixed-view catalogue. Four connected coral lobes resolve the source foreground/rear shoulders; tall ochre mast with slate collar,short blue-gray fitting,seven dark right fields and one amber front window. Preserves useful prior permanent open-emitter treatment and .05 floor datum; mouth widened from prior .17 to .28 radius to follow the broader AC14 source. No lid cycle inferred. Hidden rear,dark-field purpose,exact dimensions and tiny fitting interpretation remain separate. Shared ACS3 construction and client satellite/state/mode mapping remain separate.",
+      "scale_contract": "PlacementRoot at groundZ0; Blender-Y front/+Zup. Client tile scale,satellite fit and authored well dimensions need integration review."
+    },
+    {
+      "id": "openfa:building/legacy/165",
+      "key": "AC15",
+      "name": "Listening Device",
+      "blend": "sources/objects/achaean/listening-device/model.blend",
+      "glb": "sources/objects/achaean/listening-device/model.glb",
+      "binaries": {
+        "blend": "8311fdada45ff3b2002b69ca93a1feb72aa8678cbebb6297a46181b0c00a067e",
+        "glb": "7854259a44bae0faa456a88d8bdeff2b53af861fcaf6d606246df38482b30b7b"
+      },
+      "triangles": 13312,
+      "triangle_budget": 30000,
+      "meshes": 17,
+      "materials": 6,
+      "embedded_images": 7,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 16,
+      "construction_updates": 40,
+      "runtime_report": "sources/objects/achaean/listening-device/runtime-review.json",
+      "runtime_report_sha256": "09dbbcf215362a949e755777b38c5db72345eaca1ceaa5280f907b072eee84d9",
+      "reference_surface_sha256": "455f67ca7a462f2c19bd4600d21e64f257bb3253a1689e598ec1e7fb6acc6de3",
+      "reference_zoom_sha256": "6d21db19d5796da9f2e61ed25c914565082a6e852ee7c418e69b95bc433bf327",
+      "bound_runtime_files": 30,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 4.254594962559564e-05,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "5ab6c624062e97a741ca5e06007e1f4c185a5e6d",
+      "state_contract": "Static sensor-array equivalent from actual shadow/body and fixed-view catalogue reveal. Narrow stepped coral receiver with broad slate belt,two banded lower supports,connected coral return elbow,parallel ribbed ochre column,two stacked amber source fields and forward dark-red foot field. Muted red needle has no invented blinking or coloured band markings. Hidden rear,fitting purposes and exact dimensions interpreted; no operational motion established. Shared ACS2 construction and client state/mode mapping remain separate.",
+      "scale_contract": "PlacementRoot at groundZ0; Blender-Y front/+Zup. Authored narrow proportions follow source silhouette; client tile/world and neighbouring-building scale need integration review."
+    },
+    {
+      "id": "openfa:building/legacy/166",
+      "key": "AC16",
+      "name": "Manoeuvring Device",
+      "blend": "sources/objects/achaean/manoeuvring-device/model.blend",
+      "glb": "sources/objects/achaean/manoeuvring-device/model.glb",
+      "binaries": {
+        "blend": "08a22362442cb8cf9f373a4e8fe96b837d9dc4a122d68415b6bceb1976e8b740",
+        "glb": "b83c2142431946670b4402987334e4f081ccc704724996db87fa8e0444a670c3"
+      },
+      "triangles": 10018,
+      "triangle_budget": 30000,
+      "meshes": 24,
+      "materials": 6,
+      "embedded_images": 7,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 22,
+      "construction_updates": 68,
+      "runtime_report": "sources/objects/achaean/manoeuvring-device/runtime-review.json",
+      "runtime_report_sha256": "a2dd57f33c8d179139bf74bd27bd3ad83fedbaf81f431a8845a96f1264f48d6d",
+      "reference_surface_sha256": "ccd40671a2f94fda97013b78b871af4c3f44fab9acfedaeedc00f5a386130617",
+      "reference_zoom_sha256": "8d3bf32a9ce8698be88945f3e842e0e75ac4c7aadb4f3839c521f9b75c0252b0",
+      "bound_runtime_files": 30,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 9.09090909090909e-05,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "1db15c2f181945fa484ba207ef8b2b1ae32a7f98",
+      "state_contract": "Static asteroid-engine equivalent from actual shadow/body and fixed-view catalogue. Two-tier coral body,three upper surface-seated ochre fittings,one lower fitting,pale-blue slot,three red source fields and four grounded slate/red pods in the source-visible left/front arrangement. No rear pods,unobserved thrust effect or movement inferred. Fitting functions/hidden rear interpreted. Shared ACS2 construction and client propulsion/state mapping remain separate.",
+      "scale_contract": "PlacementRoot at groundZ0; Blender-Y front/+Zup. Left-quarter review shows the source-visible pod arrangement; exact camera/world/tile calibration remains separate."
+    },
+    {
+      "id": "openfa:building/legacy/167",
+      "key": "AC17",
+      "name": "Destination Beam",
+      "blend": "sources/objects/achaean/destination-beam/model.blend",
+      "glb": "sources/objects/achaean/destination-beam/model.glb",
+      "binaries": {
+        "blend": "1d94d6837e63f473b30fa9d1646d000ba750af9ad0cc318c0e36ae6885648c92",
+        "glb": "1e0d35ff694ee5fb22680c4ae9a8e852346f780a3e8cd668e4bc875859c7e07b"
+      },
+      "triangles": 11714,
+      "triangle_budget": 30000,
+      "meshes": 29,
+      "materials": 6,
+      "embedded_images": 7,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 255,
+      "construction_updates": 100,
+      "runtime_report": "sources/objects/achaean/destination-beam/runtime-review.json",
+      "runtime_report_sha256": "945a79926c1c45b3b24a5b4ed2aa5db6049c671c824e7fbdf048c5c7923c0298",
+      "reference_surface_sha256": "87df1614676f4df396f44ef68277c4508340557773f7a35bd71added3ef5c591",
+      "reference_zoom_sha256": "e89812e4e96ffd671c63accda005160c41740d7feab0a4f9e106fb5231674885",
+      "bound_runtime_files": 31,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 4.134623335814107e-05,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "a12ffbc409d625c28a35a7bb67cfe9c78a6c50fb",
+      "state_contract": "Static source-led warp building from actual shadow/body and all41 fixed-view catalogue phases. Main round cast field,left stepped slate plate,two lower dark slots,small pale blue field,upper dark aperture,short ochre tip and supported ground fittings. Catalogue reveal/highlight does not establish mechanical operation. No beam or jump animation inferred; shared ACS2 construction and client warp/power/state mapping separate. Hidden rear and exact fitting function interpreted.",
+      "scale_contract": "Identity PlacementRoot at groundZ0; Blender-Y front/+Zup. Two-by-two placement; exact client tile/world and source camera calibration separate."
+    },
+    {
+      "id": "openfa:building/legacy/168",
+      "key": "AC18",
+      "name": "Reactor Cores",
+      "blend": "sources/objects/achaean/reactor-cores/model.blend",
+      "glb": "sources/objects/achaean/reactor-cores/model.glb",
+      "binaries": {
+        "blend": "3c95223ce9b0e66acd03b7791995bec41fa514eeba4940ddbee924969b3a2a01",
+        "glb": "0fbfedf57010b24621b31e7812623cd7636a772027004766942eb04b9c98a5d0"
+      },
+      "triangles": 20724,
+      "triangle_budget": 30000,
+      "meshes": 51,
+      "materials": 7,
+      "embedded_images": 7,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 28,
+      "construction_updates": 40,
+      "runtime_report": "sources/objects/achaean/reactor-cores/runtime-review.json",
+      "runtime_report_sha256": "44d3a7abe2d45adcad79b6f8c9f757867aa20177d3662590db2aaaa6d0cbddaa",
+      "reference_surface_sha256": "cbb259981c6cf846faffaba2925933dd381128fb87eaec16f772ab6da73ce1ca",
+      "reference_zoom_sha256": "e26e2e235cb5cce5239415c718832d8ff9fb7954c641138ef48c9a6a04a366de",
+      "bound_runtime_files": 31,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.00013801987486198014,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "2142b11d628dfcc08091dffea14d0f93850586d2",
+      "state_contract": "Static power-generating Reactor Cores from actual body/shadow,all41 fixed-view reveal/highlight phases and additional zoom sprite. Three coral tiers,three lower and two upper exposed slate conduits,pale blue fields,ribbed ochre middle coupling,red/amber front instruments and short upper tip. No mechanical movement,emission pulse or beam inferred. Shared ACS2 construction and client activity/power/damage states separate. Exact hidden depth and field/conduit engineering interpreted.",
+      "scale_contract": "PlacementRoot identity at groundZ0; Blender-Yfront/+Zup;2x2footprint. Slender three-tier silhouette retained; exact client scale,camera and frame time separate."
+    },
+    {
+      "id": "openfa:building/legacy/169",
+      "key": "AC19",
+      "name": "Asteroid Shield",
+      "blend": "sources/objects/achaean/asteroid-shield/model.blend",
+      "glb": "sources/objects/achaean/asteroid-shield/model.glb",
+      "binaries": {
+        "blend": "891384797674b2fa7e8a4e9cf8d03e3080a122059874646b278ff3b84fab2b65",
+        "glb": "f444ec78b772060d2d86cd8ede97798811885ab1ba3360fb898af330bfaead7a"
+      },
+      "triangles": 8622,
+      "triangle_budget": 30000,
+      "meshes": 28,
+      "materials": 8,
+      "embedded_images": 7,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 10,
+      "construction_updates": 46,
+      "runtime_report": "sources/objects/achaean/asteroid-shield/runtime-review.json",
+      "runtime_report_sha256": "0207b9fa6548f9d487926e58c139f1a8306f24b63ed4417a4fee57628dcd9997",
+      "reference_surface_sha256": "61e6455de108c65f21ec2688a6c22914d6f87418a04e02f8c668c96b706e0eaa",
+      "reference_zoom_sha256": "f98ec95840239e27513593595bbc3da6fc5c2f0bf4a1ce12f2c79aa02460bba6",
+      "bound_runtime_files": 31,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 6.24512099921936e-05,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "f2c9cb3eba270a093f9753d8bf763f5130a2f80b",
+      "state_contract": "Static source-led power-intensive screen device with enclosed domed column,asymmetric long side facings,front slate conduit,red instrument collar,two small left pale fields,upper red port,grounded red/amber shoe and short slate tip. All41 catalogue phases are fixed-view reveal/highlight,not evidenced operating motion or shield-bubble effect. Low constant source-field emission is authored per material; client activity/power/shield mapping and shared ACS2 construction separate. Hidden rear/depth engineering interpreted.",
+      "scale_contract": "PlacementRoot identity at groundZ0;Blender-Yfront/+Zup;2x2footprint. Exact tile/world,camera calibration and Android frame time separate."
+    },
+    {
+      "id": "openfa:building/legacy/170",
+      "key": "AC20",
+      "name": "Defence Battery",
+      "blend": "sources/objects/achaean/defence-battery/model.blend",
+      "glb": "sources/objects/achaean/defence-battery/model.glb",
+      "binaries": {
+        "blend": "899dbf66c9152e62e55b28dc68da3d29f50bd30f22497fefc283c627d03b7928",
+        "glb": "6819ae81a2bdee3f52e17d402d0557bda4248a370a051496f3a576144335bbc3"
+      },
+      "triangles": 3516,
+      "triangle_budget": 30000,
+      "meshes": 16,
+      "materials": 4,
+      "embedded_images": 5,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 3,
+      "construction_updates": 36,
+      "runtime_report": "sources/objects/achaean/defence-battery/runtime-review.json",
+      "runtime_report_sha256": "4972681d037340ac927beac1ae54a9184617621f01cb039ff6ae90cca932bd3c",
+      "reference_surface_sha256": "131f190dc1c83a9c76f06d8a699c1b345be1f75b718a41976bda3feee50dd945",
+      "reference_zoom_sha256": "52055b0ea9b094c3670716ffe904b2746a219717aac78f7ad1cd285eab070083",
+      "bound_runtime_files": 35,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.0029224428624953164,
+      "concept_attempts": 1,
+      "clips": [
+        "Animation"
+      ],
+      "signed_model_commit": "e3f20f3d16e24672eaeb84370d61ab94948cfa84",
+      "state_contract": "Sixteen source surface heading rasters over separate stationary base. Original +Z heading controller/action retained exactly; authored preview timing is not a recovered idle/firing cycle. Source-shaped twin rail/trough head and fixed ochre bearing/foot,coral pedestal/two blue fields. No recoil/projectile sequence inferred. Runtime heading calibration,shared ACS2 and combat mapping separate. Review refinement adds an inset cannon emitter on a supported housing between the rails. Detailed emitter construction is interpreted; low-emission aperture is a readability cue, not a recovered firing effect.",
+      "scale_contract": "Identity PlacementRoot groundZ0;Blender-Yfront/+Zup;2x2footprint. Source heading index registration and exact world/camera scale separate."
+    },
+    {
+      "id": "openfa:building/legacy/171",
+      "key": "AC21",
+      "name": "Commonbore",
+      "blend": "sources/objects/achaean/commonbore/model.blend",
+      "glb": "sources/objects/achaean/commonbore/model.glb",
+      "binaries": {
+        "blend": "a947d5075d7aa0231c883b1a65480734eab43c3ae7d24392e5c0a730879204ba",
+        "glb": "c87279006021c0d6ec8809cbc802a714a303557ef4076ac19c2b609cac56e4e1"
+      },
+      "triangles": 12868,
+      "triangle_budget": 30000,
+      "meshes": 34,
+      "materials": 6,
+      "embedded_images": 7,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 8,
+      "construction_updates": 44,
+      "runtime_report": "sources/objects/achaean/commonbore/runtime-review.json",
+      "runtime_report_sha256": "ca27a85575f93c6cc45cbc7389bf7bfdf493bfd1acec7e8f510e8af4ed9b0533",
+      "reference_surface_sha256": "7ecf7f2eff6b0c24af308e15e72b9c298aff00244b2f15098036f0cb09ab6a7c",
+      "reference_zoom_sha256": "65f7dbaf94781f8a859cf8c86deb295f825c70751c2e783554ad4f9a958d9ae6",
+      "bound_runtime_files": 33,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 4.946821667078902e-05,
+      "concept_attempts": 2,
+      "clips": [],
+      "signed_model_commit": "356d80724189012697a217b9203ce67272ce6145",
+      "state_contract": "Static legacy-led common-ore facility:two joined large chambers,five source-visible staggered ground lobes,two attached slate fittings/ochre couplings,four upper amber fields and four red/amber lower slits. All41 catalogue frames are fixed-view reveal/highlight,not evidence of pump/drill motion. No invented bore mechanism or foundation slab. Shared ACS3 construction and client extraction/activity/damage mapping separate. Hidden depth and exact internal engineering interpreted.",
+      "scale_contract": "PlacementRoot identity groundZ0;Blender-Yfront/+Zup;3x3footprint. Staggered asymmetry retained;exact tile/world/camera calibration and Android frame time separate."
+    },
+    {
+      "id": "openfa:building/legacy/172",
+      "key": "AC22",
+      "name": "Deepbore",
+      "blend": "sources/objects/achaean/deepbore/model.blend",
+      "glb": "sources/objects/achaean/deepbore/model.glb",
+      "binaries": {
+        "blend": "d4df75208f1db1cd99e69ee39e7f083186da4928865198478e5fd3d3929a43a8",
+        "glb": "b74433ca03d021c8512fe7c57801c771fce96165fe9d3f3e99f637502150ad8e"
+      },
+      "triangles": 17120,
+      "triangle_budget": 30000,
+      "meshes": 43,
+      "materials": 6,
+      "embedded_images": 7,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 21,
+      "construction_updates": 42,
+      "runtime_report": "sources/objects/achaean/deepbore/runtime-review.json",
+      "runtime_report_sha256": "c14acaaf19615867a0bd1aed2d00eb8897cc555a108f7cb314e48dee40a39daa",
+      "reference_surface_sha256": "d12d08b48bcafaf6785e4e2e5cf62b2fbc20151c5683d041a1725bddce8c945a",
+      "reference_zoom_sha256": "2b180f123d55d967b3e8b22f378cca611eb24d73355e16bffb62358d588ca1c4",
+      "bound_runtime_files": 31,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 4.633973980236101e-05,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "aecf2a18b7553375077deee0aa94c7716271eccb",
+      "state_contract": "Static source-led rare-ore facility:tall closed coral tower/shoulder,three rounded cast reliefs,short neck/cap,long ochre sleeve/slate tip,five grounded clustered lobes,two supported slate fittings/ochre collars,warm upper segments/red middle band and four lower red/amber slits. All41 catalogue phases are fixed-view reveal/highlight,no operating motion evidenced. Surface descriptor0 is used as shadow-mask pass despite containing coloured artwork;descriptor1 is visible body. Do not infer an inactive-blue material state from descriptor0. Shared ACS3 and client rare-ore extraction/activity/damage mapping separate;hidden depth/engineering interpreted.",
+      "scale_contract": "PlacementRoot identity groundZ0;Blender-Yfront/+Zup;3x3footprint. Tall relative proportions retained;exact tile/world/camera calibration and Android frame time separate."
+    },
+    {
+      "id": "openfa:building/legacy/173",
+      "key": "AC23",
+      "name": "Ore Yard",
+      "blend": "sources/objects/achaean/ore-yard/model.blend",
+      "glb": "sources/objects/achaean/ore-yard/model.glb",
+      "binaries": {
+        "blend": "c0e49aba81333f848ced8558322d47ad78a6b7f06ef1b41cbc90701822a8fb45",
+        "glb": "9a40ef469f813da5ef4e661394ff3aa9e75de37a29a01350901414d20b66fa44"
+      },
+      "triangles": 23640,
+      "triangle_budget": 30000,
+      "meshes": 26,
+      "materials": 3,
+      "embedded_images": 5,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 30,
+      "construction_updates": 44,
+      "runtime_report": "sources/objects/achaean/ore-yard/runtime-review.json",
+      "runtime_report_sha256": "29d282bc2a1575771359a0e524fa0fbc734f5fbc9bdb060fe051008afa5f280c",
+      "reference_surface_sha256": "e824b87e74d89b95f6524442197e7e214bf9abc0bb399bce884ccafb29f14fee",
+      "reference_zoom_sha256": "3bb1d0b91f12e8cda3a2eb24a0b68c622567af0a08af2d5bcbe56809d7bc8b1c",
+      "bound_runtime_files": 27,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.00010017302613605318,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "4022f441e8f1f4374b81a35964db336feb17457d",
+      "state_contract": "Static protected ore storage from actual body/shadow and all41 fixed-view catalogue phases. Three attached four-lobed closed coral columns with three short red tips;two grounded slate braces on front and right-rear columns. Left-rear column remains without added brace. Source gives no exposed ore,capacity-fill stages,door motion or transfer mechanism. Small brace straps/fasteners and hidden depth interpreted engineering;shared ACS2/client storage/activity/damage mapping separate.",
+      "scale_contract": "PlacementRoot identity groundZ0;Blender-Yfront/+Zup;2x2footprint. Triangular three-column arrangement and source-visible asymmetry retained;exact tile/world/camera calibration and Android frame time separate."
+    },
+    {
+      "id": "openfa:building/legacy/174",
+      "key": "AC24",
+      "name": "Goods Yard",
+      "blend": "sources/objects/achaean/goods-yard/model.blend",
+      "glb": "sources/objects/achaean/goods-yard/model.glb",
+      "binaries": {
+        "blend": "37c128d64e4739311b76761fde56053024e31f5deb91f2f263fee841f7d60d96",
+        "glb": "09213e57f8665356ec2643d5ed0407d61400e2831d4d76f19ab90c171193b8a0"
+      },
+      "triangles": 17120,
+      "triangle_budget": 30000,
+      "meshes": 30,
+      "materials": 4,
+      "embedded_images": 6,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 255,
+      "construction_updates": 40,
+      "runtime_report": "sources/objects/achaean/goods-yard/runtime-review.json",
+      "runtime_report_sha256": "03eb56c118fdcbb9b4a50cb8d06d089bb4e8688945c8e8cb06218d5f3fb03f27",
+      "reference_surface_sha256": "ec47e786fde96855d526a095ab9c3dbc0dab6d1ca066e1abb0080bbbd9154047",
+      "reference_zoom_sha256": "80a96fc7489c35de15f6c6060bcfe57659012d5fa9c88934f068e11322826862",
+      "bound_runtime_files": 30,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 5.0907856779229593e-05,
+      "concept_attempts": 1,
+      "clips": [],
+      "signed_model_commit": "03ef6ee79f1fb8d338fba086b7182ff9897caa2c",
+      "state_contract": "Static highly protected storage for non-ore goods. Actual source has three grounded ochre lower casings,joined rounded coral shoulders/dark ports,short blue-violet tips and vertical recessed/ribbed lower details. No exposed cargo,door motion or capacity-fill stages evidenced by all41 fixed-view catalogue phases. Grooves/ribs are closed-casing engineering interpretation,not open cargo bays. Shared ACS2 and client storage/activity/damage mapping separate;hidden depth/engineering interpreted.",
+      "scale_contract": "PlacementRoot identity groundZ0;Blender-Yfront/+Zup;2x2footprint. Source colour boundary/three-unit asymmetry retained;exact tile/world/camera calibration and Android frame time separate."
+    },
+    {
+      "id": "openfa:building/legacy/175",
+      "key": "AC25",
+      "name": "Stun Tower",
+      "blend": "sources/objects/achaean/stun-tower/model.blend",
+      "glb": "sources/objects/achaean/stun-tower/model.glb",
+      "binaries": {
+        "blend": "e496841ad3cd88914dc256584403981d4c78211665b0f3c86c6333555f9c3273",
+        "glb": "814dc694abe1bad49deefc62dd28eef3ab459f734bc5f2e612a4aa404ad573bb"
+      },
+      "triangles": 12248,
+      "triangle_budget": 30000,
+      "meshes": 23,
+      "materials": 6,
+      "embedded_images": 7,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 27,
+      "construction_updates": 26,
+      "runtime_report": "sources/objects/achaean/stun-tower/runtime-review.json",
+      "runtime_report_sha256": "ce1543f1cd926f2cdc92fd3cd57d558ca99e899ef7e97b2aeb78f4215cd0a9dd",
+      "reference_surface_sha256": "fb7372aace269afa88c59a7837e83459840ceb63fa33c1840e660152143fd6ad",
+      "reference_zoom_sha256": "9e4ab1b68714902a861fe474852692b51503c261b31d64eeea83cd723ac92dac",
+      "bound_runtime_files": 37,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.00011879177960885106,
+      "concept_attempts": 1,
+      "clips": [
+        "Animation"
+      ],
+      "signed_model_commit": "ddfa4154cd8249c3894d6f418b7d2b249ddf64ad",
+      "state_contract": "Directional Stun Tower with one spherical head,short raised tapered nozzle and actual recessed muzzle over a stationary rounded collar,red neck,flared casing/two grounded buttresses,left ochre/slate fitting and six blue source fields. All16 original headings reviewed;original native heading controller/action retained exactly. Dense GLB sampling preserves original clip name/timing. No firing/recoil/continuous idle timing recovered. Shared ACS2,client heading/muzzle/state mapping separate;hidden nozzle/engineering interpreted.",
+      "scale_contract": "Identity PlacementRoot groundZ0;Blender-Yfront/+Zup;2x2footprint. Source anatomical proportions retained;exact heading index/world/camera/impact calibration and Android frame time separate."
+    },
+    {
+      "id": "openfa:building/legacy/176",
+      "key": "AC26",
+      "name": "Power Tower",
+      "blend": "sources/objects/achaean/power-tower/model.blend",
+      "glb": "sources/objects/achaean/power-tower/model.glb",
+      "binaries": {
+        "blend": "6af10073ce0823a7ae59193429893ece0acfd60eff6260dea374e7b9c011c553",
+        "glb": "300fd017bd9f11f77c0e6b339659fd54bdf0978abf776e67146721faeb2fbd85"
+      },
+      "triangles": 11830,
+      "triangle_budget": 30000,
+      "meshes": 31,
+      "materials": 6,
+      "embedded_images": 7,
+      "footprint": [
+        2,
+        2
+      ],
+      "definition_class": 18,
+      "construction_updates": 50,
+      "runtime_report": "sources/objects/achaean/power-tower/runtime-review.json",
+      "runtime_report_sha256": "c73eb5f13bf0c777a40c2c53a0c4b5b15e5170779cef7ac151562d3f0346cff4",
+      "reference_surface_sha256": "d8afd302d41a45c1a04fbe8f1c92cc529f69b59dcd06602cb131a6abe26e329d",
+      "reference_zoom_sha256": "b3fee864c332f9db160704517751d305da081e1a4bc40beff7bcd18619222ec4",
+      "bound_runtime_files": 37,
+      "render_pairs": 3,
+      "maximum_render_channel_mean_difference": 0.0001461133839859731,
+      "concept_attempts": 1,
+      "clips": [
+        "Animation"
+      ],
+      "signed_model_commit": "d33662f8c60718801fa92367640e4b253f078354",
+      "state_contract": "Directional Power Tower with one low bowl head/shallow cap,long central emitter and two shorter flanking lugs over stationary narrow shaft/four red bands,flared ground casing,left sloping buttress,three-rib ochre plate,six cobalt fields and small slate oval. All16 source headings reviewed;one long central/two short flanking projections interpreted from them. Exact original native heading controller/action retained. No firing/recoil/idle cycle recovered;current preview timing is heading demonstration. Shared ACS2,client heading/muzzle/state mapping separate;hidden bore/mechanism construction interpreted.",
+      "scale_contract": "Identity PlacementRoot groundZ0;Blender-Yfront/+Zup;2x2footprint. Source anatomy/counts retained;exact heading index/world/camera/impact calibration and Android frame time separate."
+    }
+  ],
+  "preserved": [
+    {
+      "id": "openfa:building/legacy/151",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac01/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac01/model.glb",
+      "blend_sha256": "48c118c267a751fe791fc0eb06ce3433045f0f848467912d4bda99b4a16c90c5",
+      "glb_sha256": "e47aaa8edc2eb658038586d4442a018e93a27d4028dfd89c61a943fb9068f52b"
+    },
+    {
+      "id": "openfa:building/legacy/152",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac02/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac02/model.glb",
+      "blend_sha256": "40d5b29c10a5db7fbd704ff14c40eeaa39aec3004c4bf263bf045bc13bfd8e09",
+      "glb_sha256": "b773d1f054d41ada58f75c39e54c6e5a1177c20d50629ca92a83e17ff0717026"
+    },
+    {
+      "id": "openfa:building/legacy/153",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac03/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac03/model.glb",
+      "blend_sha256": "d618f64e92a730ba8e9b17d59329ff26abd78f5205ca853ebf533fcdc54e65d1",
+      "glb_sha256": "397cce16f64a4fcf941c4650c7333973aca09e9f3b3159fbd88d84fe3daf6332"
+    },
+    {
+      "id": "openfa:building/legacy/154",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac04/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac04/model.glb",
+      "blend_sha256": "a603b3cada26f6e1690f1e00e0729be3b7f87ddb8742f53a1c1808c62d42c143",
+      "glb_sha256": "32ff2947b643c9c6e81cda0e0fe51f822460a103ca2155b348b0db972cae9b45"
+    },
+    {
+      "id": "openfa:building/legacy/155",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac05/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac05/model.glb",
+      "blend_sha256": "ea3728191234f6a468bd9b12a7704c94830581bdf9898a8be21dd65e348ef0e8",
+      "glb_sha256": "e4e893e48cf5e0a3a717b403a96aa3a8041cc823b77e60ca1d7c54eed24ff584"
+    },
+    {
+      "id": "openfa:building/legacy/156",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac06/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac06/model.glb",
+      "blend_sha256": "5982eeabd97e567cf578820c7ef0e96295073a15dd60385e6d1f38057c64169e",
+      "glb_sha256": "00e03f1fbcaac88ba66b5f32ccd1a244ebf644ed074d0bbaad7384d29e4c92ea"
+    },
+    {
+      "id": "openfa:building/legacy/157",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac07/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac07/model.glb",
+      "blend_sha256": "0d872c96ec08d328475743bb30b295b650573eac484f6cdb4f34f5f381e515bc",
+      "glb_sha256": "bfc92497feda2936a5ee1d5533b00518bd4ef7fff2475b6cd4334fa1ee4a2508"
+    },
+    {
+      "id": "openfa:building/legacy/158",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac08/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac08/model.glb",
+      "blend_sha256": "040bf5c1e51e0e0a0c303ab5f87264c42f585c235cda84c8f79f825eb3bec0e4",
+      "glb_sha256": "a263e6f0501d2c5952bb194373162227f476d19d3c4f08a91f4acafc77b526f6"
+    },
+    {
+      "id": "openfa:building/legacy/159",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac09/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac09/model.glb",
+      "blend_sha256": "e3c140b11d1b01ee5cec2afe8418ae008a6757ded23bc9662e36b5c7507bdbd7",
+      "glb_sha256": "7670a4014e143ebf236b3dc2facbd1d770a5446759f509873973282fcdf416ce"
+    },
+    {
+      "id": "openfa:building/legacy/160",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac10/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac10/model.glb",
+      "blend_sha256": "85ed9d5bb90e6ea0252525568a3b46dd9177110800b9e822c5f6b56f5d531dce",
+      "glb_sha256": "d84384eb4a5f87b9c4ceb8eba42f5405b2879b75bce0d0378276c56ece38fa9c"
+    },
+    {
+      "id": "openfa:building/legacy/161",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac11/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac11/model.glb",
+      "blend_sha256": "7e393d83dca5fae0ec7b426288f3dff2fc685cded0cb8fbb5d518c0255d7664c",
+      "glb_sha256": "03efc53bda1193c2885fe65a0c8766cd8f27482e276936d11734db27b9dc2da5"
+    },
+    {
+      "id": "openfa:building/legacy/162",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac12/model.glb",
+      "blend_sha256": "1c0c3e6fc7d97b7c0ecd892d75df999885d0b6959827c5fa684f1ec1a4922c8f",
+      "glb_sha256": "2b6a9efd084bed949a020eb7ca3e621b71dfa49291a40a23871fc811b6d200b3"
+    },
+    {
+      "id": "openfa:building/legacy/162",
+      "stage": "verified-launch-mechanism",
+      "blend": "sources/docs/assets/reconstruction/launch-facilities/achaean/ac12/model.blend",
+      "glb": "sources/docs/assets/reconstruction/launch-facilities/achaean/ac12/model.glb",
+      "blend_sha256": "865f66a4708c0c15594b374ccf822d92b6dc878cef3709ba73e1f7678623336e",
+      "glb_sha256": "dcf35a845094168e443da7fab3e3f688f0fc3b42c9ead4faf2582a744531dda4"
+    },
+    {
+      "id": "openfa:building/legacy/163",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac13/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac13/model.glb",
+      "blend_sha256": "8af04057213a9beb6f581c77a2e9e54f5af3958195d952e67584b0a7f7fbf1c7",
+      "glb_sha256": "4436e97ee3fe2cf122ec99d44a1ee879668c0a1b1fb1d7193112b0cb2117fac5"
+    },
+    {
+      "id": "openfa:building/legacy/163",
+      "stage": "verified-launch-mechanism",
+      "blend": "sources/docs/assets/reconstruction/launch-facilities/achaean/ac13/model.blend",
+      "glb": "sources/docs/assets/reconstruction/launch-facilities/achaean/ac13/model.glb",
+      "blend_sha256": "6f26342997acb44ec2b77e722e887d50a1f07ce8ee7f85661e1e3e4bbbd3e46e",
+      "glb_sha256": "7231cf45373daf183e14bc04da05209680929b918e3370e17d99eb32f38623f9"
+    },
+    {
+      "id": "openfa:building/legacy/164",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac14/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac14/model.glb",
+      "blend_sha256": "aca0308e5b7ec7181cc69549e9c3db2003d7769a5c8d86aa4b97f09c3b441480",
+      "glb_sha256": "71ecf6ea5be395ad7f74402391abc8311e9c4ce61a40f0c4c250f7b1f7a8e49d"
+    },
+    {
+      "id": "openfa:building/legacy/164",
+      "stage": "verified-launch-mechanism",
+      "blend": "sources/docs/assets/reconstruction/launch-facilities/achaean/ac14/model.blend",
+      "glb": "sources/docs/assets/reconstruction/launch-facilities/achaean/ac14/model.glb",
+      "blend_sha256": "eef0e522477efa998dabbe8f54e594fb8b6454b7eeaa0e0f8929ed9fad2bb0b5",
+      "glb_sha256": "5088f1f4fc61b4188c3099a6545edd0306e9d3c9f6b33186f466c8a836492cdc"
+    },
+    {
+      "id": "openfa:building/legacy/165",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac15/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac15/model.glb",
+      "blend_sha256": "5a4f87d30ae042f9fdb246f178ce0d72a52f40a51eb9191ab20fe554d5a6a54c",
+      "glb_sha256": "5e2de2e380d8337a7e90048d2d647a35defd6f8e8dea2c7fd38fb9be8a8da416"
+    },
+    {
+      "id": "openfa:building/legacy/166",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac16/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac16/model.glb",
+      "blend_sha256": "65d664306c288b12a9e1e6cd6a81f66d01dbb507cfa532846b2529cff7ff6383",
+      "glb_sha256": "afeafef586847e075493454656e32f8484698ee962bf5333a139a5cb0e239dc1"
+    },
+    {
+      "id": "openfa:building/legacy/167",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac17/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac17/model.glb",
+      "blend_sha256": "301380f927f82efcdca394faf32d25123d30f0aaf9b90882f2c0f8a9ea720e84",
+      "glb_sha256": "f73f3051a9c100946049a38f97dadf0fc599937d8f3ff04b2cb452df707e2303"
+    },
+    {
+      "id": "openfa:building/legacy/168",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac18/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac18/model.glb",
+      "blend_sha256": "fffee8e3b1ea996766c074864e5d999e865d3846f7c5b7d2da88b375d8cb85b5",
+      "glb_sha256": "d3e6768367fd043cc0489dbcf54a6257d56c19921321d492dfea6bae1efe49ae"
+    },
+    {
+      "id": "openfa:building/legacy/169",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac19/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac19/model.glb",
+      "blend_sha256": "d212fdc068ca091de436e09c9776bd4695b8ffe0f291707aad83851c3b9f172a",
+      "glb_sha256": "0251636cdea08ae1dc2723591d29140535cc5a2ec133187b09f1bc8eb9e72ac3"
+    },
+    {
+      "id": "openfa:building/legacy/170",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.glb",
+      "blend_sha256": "258986894b552591f21456365518fd16aa3b6a3438edd9a689bafb9bc7eb349e",
+      "glb_sha256": "3cb00b30b7eaf8c6df08daa968b7d25d3f7d04e15684f09b4cc0fa5b945ec9fb"
+    },
+    {
+      "id": "openfa:building/legacy/171",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac21/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac21/model.glb",
+      "blend_sha256": "62e82d24c26c01b544c4eb86d92a4132c246f2f7813ff020dbe1ea30e920635c",
+      "glb_sha256": "44a578b633538638c01d70c556f24ae80d38a6d0b9286d4926832fe7fafebb97"
+    },
+    {
+      "id": "openfa:building/legacy/172",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac22/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac22/model.glb",
+      "blend_sha256": "a6996cf24fe79de960414f6cf2bc713f750338523084db469f5a522e6d0aa3f8",
+      "glb_sha256": "12151d98871f056c258697527370e99cbcf391b512840bb7c35f91bfaf83ac10"
+    },
+    {
+      "id": "openfa:building/legacy/173",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac23/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac23/model.glb",
+      "blend_sha256": "30c3bdce98b2352be7d63af90b8746cba12afe5a3cab51ff233525d15e55cf6e",
+      "glb_sha256": "9d098c4929b09fa9de6b313e4b7e1929adfaa7176a3c46b1150c6d84c245f257"
+    },
+    {
+      "id": "openfa:building/legacy/174",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac24/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac24/model.glb",
+      "blend_sha256": "329c497bf83f0b3c05f3faaa9f2ef00ff9d7bdd14f21f622e142a52526604410",
+      "glb_sha256": "ca1594914702d4dff704e0bfec40bb963c9a0fc4929715b33063ab7947e79603"
+    },
+    {
+      "id": "openfa:building/legacy/175",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/model.glb",
+      "blend_sha256": "bf60a7e485058dbed2651e9912ea18c25448c5d8c86cbab3ac9b996f127c65f8",
+      "glb_sha256": "c7151e3d4780cbd793989944bf628b4a025242117c04beaa3aa96668a3874d31"
+    },
+    {
+      "id": "openfa:building/legacy/176",
+      "stage": "silhouette-study",
+      "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/model.blend",
+      "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/model.glb",
+      "blend_sha256": "1479dcb9cb565825a8ec2adf9d627791d55badc8441699b02b083c8e76bfb86c",
+      "glb_sha256": "e93b9ceafbcefae97edb694dd16b4a564fd8760948c4064d13a16caff4ca4ba5"
+    }
+  ],
+  "limits": "One canonical asset pair per definition. Wireframe/diagram rendering should use that geometry. Hidden construction,exact scale/heading/muzzle calibration,game-client/package integration,Android frame time and final user artistic acceptance remain separate;no numerical80-percent fidelity score or continuous collision sweep claimed."
+}

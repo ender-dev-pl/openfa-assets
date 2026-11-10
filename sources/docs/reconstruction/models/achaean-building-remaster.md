@@ -1,5 +1,7 @@
 # Achaean building remaster: preservation baseline
 
+The 26 current model milestones and their final reference/runtime audit are documented in [Achaean building completion](achaean-building-completion.md). Use its current delivery manifest for integration; the table below intentionally records the initial preservation baseline.
+
 Tracking: openfa-assets #256; relates to #9 and #7. This is the initial inspection milestone, not completed model delivery. The dedicated branch is based on the committed Rigellian programme (#253 / PR #254) to reuse its current authoring and gallery infrastructure; that PR was still open when this branch was created. No additional checkout was created.
 
 ## Scope and existing sources
