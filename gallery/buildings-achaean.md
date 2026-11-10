@@ -200,11 +200,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/167`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Destination Beam](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac17/front-quarter.png)
+![Destination Beam](../gallery/media/objects/achaean/destination-beam/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac17/model.glb)
+[Blend](../sources/objects/achaean/destination-beam/model.blend) · [GLB](../sources/objects/achaean/destination-beam/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac17-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/destination-beam/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/destination-beam/imported-rear-quarter.png)
 
 ## Reactor Cores
 
