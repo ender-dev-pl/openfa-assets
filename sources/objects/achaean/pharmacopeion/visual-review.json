@@ -1,0 +1,113 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/157",
+  "binaries": {
+    "blend": "8c86e4c9612ee55410510b1d843a948d815fe60dbd924ba3cbb1fff1a67f04f7",
+    "glb": "50c575755fd9037bbe1857174631a430e1e3f0c27da5f0624a3a5acb11d2535a"
+  },
+  "runtime_report_sha256": "1db0dcb11fc801884c3a8647435c5e7d0cdd5962fb5dbe6ec5d6a843a30e1116",
+  "legacy": {
+    "surface_payload_sha256": "c1e69a292532d22b5ab25a0cd1635de1a11f4361c8614ab98e7f2819cd50cbfc",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1018,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "eeb9ba005b0af48596f4f6b75ffca7c5afaf2bfa67de2f091325880fc008b0ea",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All 41 actual paletted catalogue phases inspected: progressive reveal and feature highlighting of a fixed view, not operating motion. All profile catalogue roles map to AC07.VID. Shared ACS3 scaffolding remains separate; _MA has no AC-named family. Function1018 establishes the medical/herbal role; hidden interior treatment rooms are not invented."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac07-review-1.png",
+      "sha256": "9c9a8106dffbf6282e7ce2e5a6a4dedaf6286d60dbb4bc461dd93fc8f1f7ffb5",
+      "prompt": "sources/docs/reconstruction/models/ac07-concept-prompt-1.txt",
+      "feedback": "Accepted with specific modelling corrections: the concept adds a second red upper slit and an overlong tip. The model follows the actual source single slit and short finial. Preserve wide curved lower quarters, central arch, paired warm window banks, narrow blue-inset neck and smaller onion chamber. Source-visible front fields are distinct from interpreted rear continuation."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual first native/import renders retain entrance, neck and onion chamber but the lower quarters read too much as a straight-sided cylindrical bucket.",
+      "action": "Re-profiled the lower shell with fuller rounded cheeks and an indented central passage. Adjusted all window pocket/rim/glazing locations together to remain seated. Maintained the narrow-neck and crown/base width contracts; an intermediate candidate failing those proportions was rejected before rendering."
+    },
+    {
+      "iteration": 2,
+      "observation": "Final actual independent-import quarter/front/rear views and native pairs reviewed after the shape correction. The true through-passage and source-visible fields remain clear.",
+      "action": "Accept for integration review subject to final user artistic acceptance and game-client scale/state/FPS. Rear windows and passage continuation are interpretation, not a recovered hidden view."
+    },
+    {
+      "iteration": 3,
+      "observation": "Studio renders made the red status fields too pale, and the curved shell required deeper support behind the top window-rim corners.",
+      "action": "Darkened the red alloy with authored wear, kept its single source slit, and extended only the hidden rim bodies into the quarters. Sixteen actual rim-corner support checks now run on both source and import; glazing depths and doorway clearance remain enforced."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0041673505863471395,
+      "margin": 43
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.006326634543816352,
+      "margin": 54
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0035251141552511416,
+      "margin": 53
+    }
+  ],
+  "review": "Legacy-led static medical/herbal-treatment facility; broad rounded lower quarters, true arched passage, paired warm lights, narrow blue-inset neck, onion upper chamber with flowing castings and one red slit. Sparse seams and restrained wear, no invented plants or medical symbols. Same canonical rooted geometry for gameplay/build/SciTek; approximate review camera, no numerical fidelity claim.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

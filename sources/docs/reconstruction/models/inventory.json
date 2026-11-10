@@ -26607,7 +26607,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/157",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1018",
         "description_records": [
           1018
         ]
@@ -26681,11 +26681,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac07/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/pharmacopeion/model.blend",
           "present": true,
-          "sha256": "0d872c96ec08d328475743bb30b295b650573eac484f6cdb4f34f5f381e515bc",
-          "final_visual_acceptance": "not-established"
+          "sha256": "8c86e4c9612ee55410510b1d843a948d815fe60dbd924ba3cbb1fff1a67f04f7",
+          "media": "gallery/media/objects/achaean/pharmacopeion",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac07-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/pharmacopeion/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/pharmacopeion/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -26695,7 +26710,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -26725,6 +26740,58 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 157
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac07/model.blend",
+          "present": true,
+          "sha256": "0d872c96ec08d328475743bb30b295b650573eac484f6cdb4f34f5f381e515bc",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/pharmacopeion/model.blend",
+        "sha256": "8c86e4c9612ee55410510b1d843a948d815fe60dbd924ba3cbb1fff1a67f04f7",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/pharmacopeion",
+          "files": {
+            "gallery/media/concepts/achaean/ac07-review-1.png": "9c9a8106dffbf6282e7ce2e5a6a4dedaf6286d60dbb4bc461dd93fc8f1f7ffb5",
+            "gallery/media/objects/achaean/pharmacopeion/front-quarter.png": "7fd15b673d1a7a5c299e4b7054c47e779abf0eab277610f7cd90b33b1d883de8",
+            "gallery/media/objects/achaean/pharmacopeion/imported-front-quarter.png": "7fd15b673d1a7a5c299e4b7054c47e779abf0eab277610f7cd90b33b1d883de8",
+            "gallery/media/objects/achaean/pharmacopeion/imported-front.png": "d003d134e6f653c5f984a1caa6715da599030810c4d8295038b696d388c4beba",
+            "gallery/media/objects/achaean/pharmacopeion/imported-rear-quarter.png": "1e2d302d6203c8b216aa40a90d3e3ff471b8375f07b662e6dacca385e16f1957",
+            "gallery/media/objects/achaean/pharmacopeion/native-front-quarter.png": "4eecde968a6a0f0bcb14a3c969c333a79f8e8d75934673dd1506e6bbf06c1464",
+            "gallery/media/objects/achaean/pharmacopeion/native-front.png": "78d7712f3f8a9a3095cad0d4ff9cf1adc7cd0926c87065567f1258a24864f30a",
+            "gallery/media/objects/achaean/pharmacopeion/native-rear-quarter.png": "c71ea8588af359ed0297a87579acf3375f2fcb4a4fcb4f592cc03ca0e506abb5",
+            "sources/docs/reconstruction/models/ac07-concept-prompt-1.txt": "55530efe7b9c64104c11b4eb055d7e9004472b8344a7078f0db9b1fb0ddc1512",
+            "sources/materials/achaean/pharmacopeion/Blue gray fittings.png": "1cec76be88724e04938b39c23553f5888fca337821b86b619081ee093150f32d",
+            "sources/materials/achaean/pharmacopeion/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/pharmacopeion/Dark recess.png": "01d94b2e397c317087ceaed9091e6b3d3b497c0db66b9af081f3b4e69abde7b7",
+            "sources/materials/achaean/pharmacopeion/Dark red status.png": "7e827d69b17bc9ba2d6780358a63888ac6fdd93bff52f4257fa3f9ecdb6647b2",
+            "sources/materials/achaean/pharmacopeion/Worn brass feet.png": "ec287e2fb332438f0e6081f5406fcb2154b9a88e67d7877b7fbbfb71530712c2",
+            "sources/objects/achaean/pharmacopeion/model.blend": "8c86e4c9612ee55410510b1d843a948d815fe60dbd924ba3cbb1fff1a67f04f7",
+            "sources/objects/achaean/pharmacopeion/model.glb": "50c575755fd9037bbe1857174631a430e1e3f0c27da5f0624a3a5acb11d2535a",
+            "sources/objects/achaean/pharmacopeion/model.json": "953af1096ae5ab1a7d6013809774cabc870d07c6e0ca9a2b906919ddfeae7f00",
+            "sources/objects/achaean/pharmacopeion/runtime-review.json": "5eb3082313115514203d8b3f722d6c38ca618e5b8ff01383a8b156529dd21876",
+            "sources/objects/achaean/pharmacopeion/visual-review.json": "a9624471b614fea523d00d5e47c13fd903176a520e06cb1ac0bdceef0e8ca1b0",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_pharmacopeion.py": "64020f9fa678c56eeeae1751a5f6a203039cd248fa5ea2b7e87708d3659c61e8",
+            "sources/tools/blender/remaster_achaean_pharmacopeion.py": "f97e3c3dd2c57e93fd3e17e954db19d3cdd5f18f795de65c76afe9e68f0228f7",
+            "sources/tools/blender/verify_achaean_building.py": "bc5aba2d48684e47183408fc6f1ff9d4ae5500616b1194421abaa1b7aaf9aa0e",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/pharmacopeion/runtime-review.json",
+          "objects/achaean/pharmacopeion/visual-review.json"
+        ]
       }
     },
     {

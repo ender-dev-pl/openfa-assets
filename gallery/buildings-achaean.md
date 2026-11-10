@@ -78,11 +78,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/157`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Pharmacopeion](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac07/front-quarter.png)
+![Pharmacopeion](../gallery/media/objects/achaean/pharmacopeion/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac07/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac07/model.glb)
+[Blend](../sources/objects/achaean/pharmacopeion/model.blend) · [GLB](../sources/objects/achaean/pharmacopeion/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac07-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/pharmacopeion/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/pharmacopeion/imported-rear-quarter.png)
 
 ## Gathering Ground
 
