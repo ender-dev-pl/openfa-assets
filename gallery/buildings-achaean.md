@@ -90,11 +90,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/158`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Gathering Ground](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac08/front-quarter.png)
+![Gathering Ground](../gallery/media/objects/achaean/gathering-ground/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac08/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac08/model.glb)
+[Blend](../sources/objects/achaean/gathering-ground/model.blend) · [GLB](../sources/objects/achaean/gathering-ground/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac08-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/gathering-ground/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/gathering-ground/imported-rear-quarter.png)
 
 ## Market
 
