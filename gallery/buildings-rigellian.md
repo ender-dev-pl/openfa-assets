@@ -204,17 +204,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/055`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Shield Generator](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri16/front-quarter.png)
+![Shield Generator](../gallery/media/objects/rigellian/shield-generator/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri16/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri16/model.glb)
+[Blend](../sources/objects/rigellian/shield-generator/model.blend) · [GLB](../sources/objects/rigellian/shield-generator/model.glb)
 
-**Additional iteration — initial-reference-study**
-
-![Shield Generator](../gallery/media/docs/assets/reconstruction/buildings/rigellian/shield-generator/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/shield-generator/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/shield-generator/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri16-review-2.png) · [Actual independent GLB](../gallery/media/objects/rigellian/shield-generator/imported-front-quarter.png)
 
 ## Arms Unit
 
