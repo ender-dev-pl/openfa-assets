@@ -10421,7 +10421,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/053",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-914",
         "description_records": [
           914
         ]
@@ -10495,25 +10495,21 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri14/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/rigellian/energy-gatherer/model.blend",
           "present": true,
-          "sha256": "29588edb511592da7363d07a3be9be2596103c5094093be8186e7ebaa310a096",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "reference-refined-study",
-          "blend": "docs/assets/reconstruction/buildings/rigellian/energy-gatherer/model.blend",
-          "present": true,
-          "sha256": "1c3b0e2b3b8d7ed25107b8c612868b7d0cf8764d65ec2617e868191ae72f7dff",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "visible-casing-refinement",
-          "blend": "docs/assets/reconstruction/rigellian-refined/ri14/model.blend",
-          "present": true,
-          "sha256": "bc53a47f91b28605cc923a02692e6fadef54fbc96ff5445ce27e9926eca79540",
-          "final_visual_acceptance": "not-established"
+          "sha256": "240386ef69fdb1756db58140ccec496210d691349907856b4ff6923211b26a8b",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based concept (interpreted details)",
+              "image": "gallery/media/concepts/rigellian/ri14-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/rigellian/energy-gatherer/imported-front-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -10523,7 +10519,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -10563,6 +10559,103 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 53
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri14/model.blend",
+          "present": true,
+          "sha256": "29588edb511592da7363d07a3be9be2596103c5094093be8186e7ebaa310a096",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "reference-refined-study",
+          "blend": "docs/assets/reconstruction/buildings/rigellian/energy-gatherer/model.blend",
+          "present": true,
+          "sha256": "1c3b0e2b3b8d7ed25107b8c612868b7d0cf8764d65ec2617e868191ae72f7dff",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "visible-casing-refinement",
+          "blend": "docs/assets/reconstruction/rigellian-refined/ri14/model.blend",
+          "present": true,
+          "sha256": "bc53a47f91b28605cc923a02692e6fadef54fbc96ff5445ce27e9926eca79540",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "historical_runtime_review": null,
+      "reviewed_model": {
+        "blend": "objects/rigellian/energy-gatherer/model.blend",
+        "sha256": "240386ef69fdb1756db58140ccec496210d691349907856b4ff6923211b26a8b",
+        "runtime_evidence": {
+          "format": "rigellian-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/rigellian/energy-gatherer",
+          "files": {
+            "gallery/media/concepts/rigellian/ri14-review-1.png": "b6c41fa144e957dd8805e26b681b79f83527b2d7406e4198ceb67979508e4e5d",
+            "gallery/media/objects/rigellian/energy-gatherer/imported-front-quarter.png": "59921a08830d4b2bb94f4857cb3dad76407814a82bce25549147c6e4ddd04c51",
+            "gallery/media/objects/rigellian/energy-gatherer/imported-front.png": "cf818847fff4fdcbb8d23fc2b159b3fbd93f37531173f19912af61f7029155d3",
+            "gallery/media/objects/rigellian/energy-gatherer/imported-rear-quarter.png": "706ee1c4b476c546a6347a8ae4e26505b42a98737ef6d81d4dfe7b4f8ccafdc2",
+            "gallery/media/objects/rigellian/energy-gatherer/native-front-quarter.png": "34e845ab9053480f8e477d023247a4162f534bd2888e4412f8d7d67e8156a56d",
+            "gallery/media/objects/rigellian/energy-gatherer/native-front.png": "30977dc663d0319eb55f3a3e42b28c5faf4cdb0844bfbb1682cebe8b4b56719c",
+            "gallery/media/objects/rigellian/energy-gatherer/native-rear-quarter.png": "4c98545ffd1ae3cc4134085d45872b453e6fea0ea05c8f5f5e719b297fb5e61e",
+            "sources/docs/assets/reconstruction/rigellian-refined/ri14/model.blend": "bc53a47f91b28605cc923a02692e6fadef54fbc96ff5445ce27e9926eca79540",
+            "sources/docs/reconstruction/models/ri14-concept-prompt-1.txt": "7b1e8978968abbf61a7d86bb9901077ca4eb7e67b640509ad386dac9f77800d0",
+            "sources/objects/rigellian/energy-gatherer/model.blend": "240386ef69fdb1756db58140ccec496210d691349907856b4ff6923211b26a8b",
+            "sources/objects/rigellian/energy-gatherer/model.glb": "2cc1f2395781cc51cbd65c12519210481f82e03ec448cc5f2b92aaa427c903ba",
+            "sources/objects/rigellian/energy-gatherer/model.json": "ab095a61cbc078fb916515d134ae4debf41ec96877b3531bcb4b7e8b9c368050",
+            "sources/objects/rigellian/energy-gatherer/recipe.json": "89cc37ea54e6c7648c4abd964cbd62b2473c6d4b92d89a000843f66173029e2a",
+            "sources/objects/rigellian/energy-gatherer/runtime-review.json": "a17869273fb84ab54089843155b4ec0819e744fdeda4284bb1217a13d24b8845",
+            "sources/objects/rigellian/energy-gatherer/visual-review.json": "38a841d4ebfdce6fd36f6254c8ada3aa2d5a5cc2631b8f157b9600587eb36213",
+            "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+            "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+            "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "sources/tools/blender/build_rigellian_energy_gatherer.py": "948a893ff5cc0bc0d2344f1abf1851313a4a1789d21eb666854ffbf6dfbeb2a0",
+            "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+            "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+            "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+            "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+            "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+            "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+            "sources/tools/blender/finish_rigellian_energy_uvs.py": "8c3cc60e9c7567c112e8cf71b70b508fab1673e6697e265db0c9fd0e7c9a27c9",
+            "sources/tools/blender/manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+            "sources/tools/blender/manufactured_roof_wells.py": "d9e7e148613d96e666a30b75f0de1382e9869e11c118ed5c4828b2b4fb75fceb",
+            "sources/tools/blender/manufactured_surface_mounts.py": "dd05a5c80253bd6afcaeb4aa75f9d71e50ffaf54ef3c83221a59bd84b748346d",
+            "sources/tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+            "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+            "sources/tools/blender/refine_rigellian_energy_casings.py": "64df38b36a5ea513ac6e304e493f98dfb49dc0676be9e5e36c80a786c24925a2",
+            "sources/tools/blender/refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+            "sources/tools/blender/refine_rigellian_missiles.py": "93b0bd4881160f8d931f41b9ed26cb47bff1d457ccbd0754992ecd9567d31f67",
+            "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+            "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+            "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+            "sources/tools/blender/rigellian_energy_gatherer_parts.py": "eabdd5f1dcb066cffc44e31e3cbcca79b314c3837ea73d110f16f9a9d83b98fc",
+            "sources/tools/blender/rigellian_energy_remaster_checks.py": "b03230dfeaed589904ecd593362fea76ec550bbb5534fd7ea5d8dd09a5c3c7ab",
+            "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+            "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+            "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+            "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "sources/tools/blender/verify_refined_rigellian_energy_casings.py": "7d156f2e9725f7138fc0bf63c377d7d236327a1df59054bdecfe2666df8f3c21",
+            "sources/tools/blender/verify_remastered_rigellian_static.py": "5704efe280a5e1e01b874562a49ef6ea70617a1f6d515840997a09f56719ee13",
+            "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+            "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+            "sources/tools/blender/verify_rigellian_energy_gatherer.py": "8746b1aebef46e87660af453d32dec9847417c7cb1d88043a438cae6294845d8",
+            "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB source-bound remaster evidence; client and final artistic acceptance remain separate.",
+          "objects/rigellian/energy-gatherer/runtime-review.json",
+          "objects/rigellian/energy-gatherer/visual-review.json"
+        ]
       }
     },
     {

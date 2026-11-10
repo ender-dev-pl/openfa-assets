@@ -180,23 +180,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/053`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Energy Gatherer](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri14/front-quarter.png)
+![Energy Gatherer](../gallery/media/objects/rigellian/energy-gatherer/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri14/model.glb)
+[Blend](../sources/objects/rigellian/energy-gatherer/model.blend) · [GLB](../sources/objects/rigellian/energy-gatherer/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Energy Gatherer](../gallery/media/docs/assets/reconstruction/buildings/rigellian/energy-gatherer/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/energy-gatherer/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/energy-gatherer/model.glb)
-
-**Additional iteration — visible-casing-refinement**
-
-![Energy Gatherer](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri14/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri14/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri14/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri14-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/energy-gatherer/imported-front-quarter.png)
 
 ## Energy Globe
 

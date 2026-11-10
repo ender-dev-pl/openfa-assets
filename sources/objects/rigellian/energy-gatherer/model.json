@@ -1,0 +1,100 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/053",
+  "name": "Energy Gatherer",
+  "author_sha256": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+  "recipe": "sources/objects/rigellian/energy-gatherer/recipe.json",
+  "recipe_sha256": "89cc37ea54e6c7648c4abd964cbd62b2473c6d4b92d89a000843f66173029e2a",
+  "camera_helper_sha256": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+  "source": "sources/docs/assets/reconstruction/rigellian-refined/ri14/model.blend",
+  "source_sha256": "bc53a47f91b28605cc923a02692e6fadef54fbc96ff5445ce27e9926eca79540",
+  "binaries": {
+    "blend": "240386ef69fdb1756db58140ccec496210d691349907856b4ff6923211b26a8b",
+    "glb": "2cc1f2395781cc51cbd65c12519210481f82e03ec448cc5f2b92aaa427c903ba"
+  },
+  "original_triangles": 107788,
+  "triangles": 86060,
+  "mesh_nodes": 26,
+  "changes": [
+    {
+      "name": "RI14 refined casing lower backing",
+      "original_triangles": 6464,
+      "triangles": 3748,
+      "bidirectional_vertex_surface_error": 6.828570064953965e-08,
+      "accepted": true
+    },
+    {
+      "name": "RI14 refined casing upper backing",
+      "original_triangles": 6464,
+      "triangles": 3748,
+      "bidirectional_vertex_surface_error": 1.2644053981603065e-07,
+      "accepted": true
+    },
+    {
+      "name": "RI14 refined casing upper horizontal rib 0",
+      "original_triangles": 6464,
+      "triangles": 3748,
+      "bidirectional_vertex_surface_error": 0.0,
+      "accepted": true
+    },
+    {
+      "name": "RI14 refined casing upper horizontal rib 1",
+      "original_triangles": 6464,
+      "triangles": 3748,
+      "bidirectional_vertex_surface_error": 0.0,
+      "accepted": true
+    },
+    {
+      "name": "RI14 refined casing upper horizontal rib 2",
+      "original_triangles": 6464,
+      "triangles": 3748,
+      "bidirectional_vertex_surface_error": 0.0,
+      "accepted": true
+    },
+    {
+      "name": "RI14 refined casing lower vertical rib 0",
+      "original_triangles": 6464,
+      "triangles": 3748,
+      "bidirectional_vertex_surface_error": 1.8128045553567063e-07,
+      "accepted": true
+    },
+    {
+      "name": "RI14 refined casing lower vertical rib 1",
+      "original_triangles": 6464,
+      "triangles": 3748,
+      "bidirectional_vertex_surface_error": 1.7881393432617188e-07,
+      "accepted": true
+    },
+    {
+      "name": "RI14 refined casing lower vertical rib 2",
+      "original_triangles": 6464,
+      "triangles": 3748,
+      "bidirectional_vertex_surface_error": 1.7890123160668736e-07,
+      "accepted": true
+    }
+  ],
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 28,
+  "construction_updates": 46,
+  "scope": "Measured candidate tessellation reduction, existing anatomy/materials/components retained. Requires saved-native and independent GLB verification and actual visual feedback before delivery.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false,
+  "casing_uv_finish": {
+    "tool": "sources/tools/blender/finish_rigellian_energy_uvs.py",
+    "sha256": "8c3cc60e9c7567c112e8cf71b70b508fab1673e6697e265db0c9fd0e7c9a27c9",
+    "parts": [
+      "RI14 refined casing lower backing",
+      "RI14 refined casing lower vertical rib 0",
+      "RI14 refined casing lower vertical rib 1",
+      "RI14 refined casing lower vertical rib 2",
+      "RI14 refined casing upper backing",
+      "RI14 refined casing upper horizontal rib 0",
+      "RI14 refined casing upper horizontal rib 1",
+      "RI14 refined casing upper horizontal rib 2"
+    ],
+    "contract": "Recompute existing dominant-axis local planar projection after decimation; source maps and protected radial UVs unchanged."
+  }
+}
