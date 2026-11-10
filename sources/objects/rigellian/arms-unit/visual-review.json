@@ -1,0 +1,102 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/056",
+  "concept_requests_used": 2,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri17-review-2.png",
+    "sha256": "9393f566a60cc2f98c9f4d2626d86e519fb5652a8e429cef224322d757da7bc9",
+    "prompt": "sources/docs/reconstruction/models/ri17-concept-prompt-2.txt",
+    "verdict": "Low annular grey body, open recess, interior green/red details and three-part bronze crown agree with legacy. Concept broadens recess and adds mast collars/panel engineering not established by source. Retain current source-guided proportions and tapered crown geometry."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "prompt": "sources/docs/reconstruction/models/ri17-concept-prompt-1.txt",
+      "outcome": "No image returned; built-in output moderation rejected the request.",
+      "request_id": "0ade04b0-9efd-444b-8957-7c51dde4c133"
+    },
+    {
+      "attempt": 2,
+      "outcome": "Image returned and reviewed."
+    }
+  ],
+  "legacy": {
+    "body_sha256": "c6a82233ca68aecbc9879be04a5cd981ca5aa6a7f4a350db58fddf733498b479",
+    "catalogue_colour_phase20_sha256": "ae1a139e0850b652412348d2120fc0c83a9eaabc4b9c0759313489a3717be809",
+    "functional_record": 917,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "77d6bcd37107f496c7803fd77a44e2b0c3679d11bbcab55965987c7c0fbb893d",
+    "glb": "18d57e2d233aea7f8c08b593106276393aedf1fae0e36d722e548b9dde92fe4f"
+  },
+  "runtime_report_sha256": "1cfaa83135c44fd4afc98ab72996223fa3328c7a38cfb7892b3f609289e1d36e",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.05685085720486111,
+        0.05311245388454861,
+        0.056282891167534724,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.27548789109382965,
+        0.25738618614668796,
+        0.2728162043963632,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 66
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.09007093641493055,
+        0.08315870496961805,
+        0.07860819498697917,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.3968695340180293,
+        0.3664170067722115,
+        0.34641431582724136,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 42
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.06305440266927083,
+        0.05882093641493055,
+        0.05801222059461805,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.32934996368017294,
+        0.3071682936768067,
+        0.30296936732632923,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 77
+    }
+  },
+  "feedback": [
+    "Actual independent GLB preserves latest three-prong crown refinement instead of reverting to the earlier single bulb/spike; low annular body, open recess/floor, green interior unit, red inner-wall panel, twelve underside ribs and roof fitting retained.",
+    "Six protected body/crown parts retain exact evaluated geometry. No reduction claimed. Three body dents plus shallow crown-arm shaping, full body maps/UVs and decoded crown colour/roughness maps retained.",
+    "Earlier bronze-head dent/UV/overlap assertions apply to the removed single head. They are specifically replaced with current tapered-arm form, arm/central-stem root rays, mast/central-stem overlap, source-preservation checks and crown maps. All unrelated body/opening/fitting tests retained.",
+    "Concept enlarges recess, changes the interior cap and adds mast collars/panel hardware. These changes are rejected; exact hidden sections, arm thickness and rear engineering remain authored interpretation. Existing wear is subtler.",
+    "Catalogue phases reveal/highlight a static structure; current directional selector excludes ID056. No underground hangar, launch silo, lid or operational cycle is established. Shared RIS3 construction separate. Final user artistic acceptance, game calibration/damage/state integration and Android cost remain unproved.",
+    "RI17-specific verifier wrapper expands the shared whole-object framing scale by 8 percent, preserving >20 pixel margins without changing shared tools or model geometry."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

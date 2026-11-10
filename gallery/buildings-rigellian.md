@@ -216,23 +216,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/056`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Arms Unit](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri17/front-quarter.png)
+![Arms Unit](../gallery/media/objects/rigellian/arms-unit/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri17/model.glb)
+[Blend](../sources/objects/rigellian/arms-unit/model.blend) · [GLB](../sources/objects/rigellian/arms-unit/model.glb)
 
-**Additional iteration — initial-reference-study**
-
-![Arms Unit](../gallery/media/docs/assets/reconstruction/buildings/rigellian/arms-unit/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/arms-unit/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/arms-unit/model.glb)
-
-**Additional iteration — crown-refinement-study**
-
-![Arms Unit](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri17/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri17/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri17/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri17-review-2.png) · [Actual independent GLB](../gallery/media/objects/rigellian/arms-unit/imported-front-quarter.png)
 
 ## Missile Launcher
 
