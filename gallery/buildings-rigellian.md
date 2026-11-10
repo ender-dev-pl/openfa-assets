@@ -156,17 +156,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/051`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Deep Space Probes](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri12/front-quarter.png)
+![Deep Space Probes](../gallery/media/objects/rigellian/deep-space-probes/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri12/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri12/model.glb)
+[Blend](../sources/objects/rigellian/deep-space-probes/model.blend) · [GLB](../sources/objects/rigellian/deep-space-probes/model.glb)
 
-**Additional iteration — initial-reference-study**
-
-![Deep Space Probes](../gallery/media/docs/assets/reconstruction/buildings/rigellian/deep-space-probes/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/deep-space-probes/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/deep-space-probes/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri12-review-2.png) · [Actual independent GLB](../gallery/media/objects/rigellian/deep-space-probes/imported-front-quarter.png)
 
 ## Gravitic Converter
 
