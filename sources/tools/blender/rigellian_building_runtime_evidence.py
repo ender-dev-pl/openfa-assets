@@ -82,7 +82,8 @@ def verify_animation_contract(metadata, report, document):
 
 def verify_manual_yaw_contract(metadata,report,document):
     articulation = metadata['articulation']
-    assert articulation['kind'] == 'ri19-manual-yaw-v1'
+    expected_moving_counts = {'ri19-manual-yaw-v1':4,'ri22-manual-yaw-v1':11}
+    assert articulation['kind'] in expected_moving_counts
     assert not document.get('animations') and report['clips'] == []
     assert articulation['descriptor_formula'] == '2+(((heading+8)>>4)&15)'
     assert articulation['descriptor_domain'] == list(range(2,18))
@@ -93,12 +94,18 @@ def verify_manual_yaw_contract(metadata,report,document):
     root,pivot = indices['PlacementRoot'],indices[articulation['pivot']]
     assert pivot in nodes[root]['children']
     moving = set(articulation['moving_meshes'])
-    assert len(moving) == 4
+    assert len(moving) == expected_moving_counts[articulation['kind']]
     assert indices[articulation['tip_socket']] in nodes[pivot]['children']
     for node in nodes:
         if 'mesh' in node:
             parent = pivot if node['name'] in moving else root
             assert indices[node['name']] in nodes[parent]['children']
+    if articulation['kind'] == 'ri22-manual-yaw-v1':
+        assert articulation['legacy_static_base_descriptor_empty'] is True
+        assert articulation['complete_directional_building_frames'] is True
+        for name in ['source_uv_comparison','exported_uv_comparison']:
+            assert report[name]['maximum_uv_corner_error'] < 1e-5
+            assert report[name]['matched_directed_corners'] > 0
     validation = report['articulation_validation']
     assert validation['kind'] == articulation['kind']
     assert validation['sampled_yaw_degrees'] == [i*22.5 for i in range(16)]

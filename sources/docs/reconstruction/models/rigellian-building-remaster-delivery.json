@@ -1421,12 +1421,120 @@
       "state_contract": "Static ore rack; six authored bronze housings in two tiers, five opaque non-emissive green oval faces and grey front guides. Hidden cradles/rear supports are interpretation. Catalogue reveal/highlight is presentation; no loading cycle established. RIS3 construction and client calibration separate.",
       "reuse": "One current model across gameplay, build menu and SciTek; previous studies are history.",
       "limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "id": "openfa:building/legacy/061",
+      "key": "RI22",
+      "blend": "sources/objects/rigellian/ex-fang/model.blend",
+      "glb": "sources/objects/rigellian/ex-fang/model.glb",
+      "binaries": {
+        "blend": "f63ba527395322e59c8fcd2b3e255478eb25e85eef1c4e985e52515267a25072",
+        "glb": "5ddcf26ad1ff3bf5467718526c6c725359a0334e81b30b4821f7bc603530e593"
+      },
+      "triangles": 30492,
+      "meshes": 16,
+      "materials": 9,
+      "embedded_images": 8,
+      "footprint": [
+        4,
+        4
+      ],
+      "definition_class": 40,
+      "construction_updates": 48,
+      "root": "PlacementRoot",
+      "root_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_world_bounds": [
+        -0.3400000035762787,
+        -0.5156994462013245,
+        0.0,
+        0.5137442350387573,
+        0.8870709538459778,
+        1.862734317779541
+      ],
+      "axes": "Blender -Y forward; +Z dorsal",
+      "state_contract": "Eleven upper meshes and CollectorAxisSocket rotate rigidly on local +Z YawPivot; five fixed base meshes remain under PlacementRoot. Legacy descriptor1 is empty and2..17 are complete directional building sprites. Formula2+(((heading+8)>>4)&15); model yaw phase/sign and client calibration unresolved. No firing/pitch/timed cycle established; RIS4 construction separate.",
+      "reuse": "One current model across gameplay, build menu and SciTek; previous studies are history.",
+      "limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate.",
+      "articulation": {
+        "kind": "ri22-manual-yaw-v1",
+        "pivot": "YawPivot",
+        "axis": "local +Z",
+        "pivot_position": [
+          0.0,
+          0.0,
+          0.5799999833106995
+        ],
+        "moving_meshes": [
+          "RI22 green yaw housing",
+          "RI22 copper collector feed",
+          "RI22 concave collector shell",
+          "RI22 inclined green support",
+          "RI22 copper rear support",
+          "RI22 copper yoke cap -1",
+          "RI22 copper yoke cap 1",
+          "RI22 collector fastener 0",
+          "RI22 collector fastener 1",
+          "RI22 collector fastener 2",
+          "RI22 collector fastener 3"
+        ],
+        "tip_socket": "CollectorAxisSocket",
+        "tip_forward_axis": "local +Z",
+        "tip_position_zero_yaw": [
+          0.33206498622894287,
+          0.24766618013381958,
+          1.3297057151794434
+        ],
+        "lance_axis_zero_yaw": [
+          0.8514487147331238,
+          0.2504260838031769,
+          0.460783988237381
+        ],
+        "descriptor_formula": "2+(((heading+8)>>4)&15)",
+        "descriptor_domain": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "legacy_static_base_descriptor_empty": true,
+        "complete_directional_building_frames": true,
+        "model_yaw_phase_sign_calibrated": false,
+        "firing_or_pitch_cycle_established": false
+      }
     }
   ],
   "pending": [
     "RI01",
     "RI02",
-    "RI22",
     "RI23"
   ]
 }

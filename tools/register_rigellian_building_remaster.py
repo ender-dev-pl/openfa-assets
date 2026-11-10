@@ -53,6 +53,14 @@ def main(folder):
     paths = {folder / name for name in ['model.blend', 'model.glb', 'model.json',
                                         'runtime-review.json', 'visual-review.json']}
     paths.update(ROOT / name for name in [meta['source'], meta['recipe'], concept['image'], concept['prompt']])
+    for attempt in visual.get('concept_attempts',[]):
+        for field in ['prompt','image']:
+            if attempt.get(field):
+                candidate = (ROOT/attempt[field]).resolve()
+                assert candidate.is_relative_to(ROOT.resolve()) and candidate.is_file()
+                paths.add(candidate)
+        if attempt.get('image') and attempt.get('sha256'):
+            assert sha(ROOT/attempt['image']) == attempt['sha256']
     paths.update(ROOT / name for name in runtime['helpers'])
     paths.update(media / name for name in runtime['renders'])
     if meta.get('mechanism_evidence'):

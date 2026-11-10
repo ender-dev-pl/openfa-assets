@@ -280,19 +280,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/061`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Ex-Fang](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri22/front-quarter.png)
+![Ex-Fang](../gallery/media/objects/rigellian/ex-fang/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri22/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri22/model.glb)
+[Blend](../sources/objects/rigellian/ex-fang/model.blend) · [GLB](../sources/objects/rigellian/ex-fang/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri22/animation-00.webm)
-
-**Additional iteration — initial-reference-study**
-
-![Ex-Fang](../gallery/media/docs/assets/reconstruction/buildings/rigellian/ex-fang/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/ex-fang/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/ex-fang/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri22-review-2.png) · [Actual independent GLB](../gallery/media/objects/rigellian/ex-fang/imported-front-quarter.png) · [Articulated head: authored yaw 90 degrees (fixed base)](../gallery/media/objects/rigellian/ex-fang/imported-yaw-04.png) · [Articulated head: authored yaw 180 degrees (fixed base)](../gallery/media/objects/rigellian/ex-fang/imported-yaw-08.png) · [Articulated head: authored yaw 270 degrees (fixed base)](../gallery/media/objects/rigellian/ex-fang/imported-yaw-12.png)
 
 ## Ultrathermal Lance
 

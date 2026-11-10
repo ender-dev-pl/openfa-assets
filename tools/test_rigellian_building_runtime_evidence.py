@@ -146,6 +146,38 @@ class Evidence(unittest.TestCase):
         with self.assertRaises(AssertionError):
             verify_retained_extractor_contract(metadata,wrong)
 
+    def test_collector_yaw_preserves_complete_frame_and_eleven_part_contract(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_manual_yaw_contract
+        folder = ROOT/'sources/objects/rigellian/ex-fang'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        raw = (folder/'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_manual_yaw_contract(metadata,report,document)
+        wrong = deepcopy(metadata)
+        wrong['articulation']['moving_meshes'].pop()
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(wrong,report,document)
+        wrong = deepcopy(metadata)
+        wrong['articulation']['legacy_static_base_descriptor_empty'] = False
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(wrong,report,document)
+        wrong = deepcopy(report)
+        wrong['exported_uv_comparison']['maximum_uv_corner_error'] = .01
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(metadata,wrong,document)
+
+    def test_rejected_collector_concept_remains_bound_to_review(self):
+        inventory = json.loads((ROOT/'sources/docs/reconstruction/models/inventory.json').read_bytes())
+        record = next(row for row in inventory['records'] if row['id']=='openfa:building/legacy/061')
+        proof = record['reviewed_model']['runtime_evidence']
+        first = 'gallery/media/concepts/rigellian/ri22-review-1.png'
+        self.assertIn(first,proof['files'])
+        proof['files'][first] = '0'*64
+        with self.assertRaises(AssertionError):
+            verify_runtime_evidence(ROOT/'sources',record)
+
     def test_static_open_port_evidence_cannot_be_omitted(self):
         data = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_bytes())
         record = next(row for row in data['records'] if row['id'] == 'openfa:building/legacy/050')
