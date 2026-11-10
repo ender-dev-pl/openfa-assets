@@ -26,7 +26,7 @@ class Evidence(unittest.TestCase):
                 folder = ROOT / 'sources' / Path(record['reviewed_model']['blend']).parent
                 metadata = json.loads((folder / 'model.json').read_bytes())
                 expected_views = 16 if metadata.get('animation',{}).get('mechanism_kind') == 'ri18-supported-dome-v1' else (40 if metadata.get('animation') else 6)
-                if metadata['id']=='openfa:building/legacy/040':
+                if metadata['id'] in {'openfa:building/legacy/040','openfa:building/legacy/041'}:
                     expected_views = 9
                 if metadata.get('articulation'):
                     expected_views = 41 if metadata['articulation']['kind']=='ri23-dual-lance-yaw-v1' else 38
@@ -235,6 +235,27 @@ class Evidence(unittest.TestCase):
         wrong['native']['crown']['left']['taper_ratio'] = 1
         with self.assertRaises(AssertionError):
             verify_preserved_cpu_contract(metadata,wrong)
+
+
+    def test_preserved_filtration_rejects_geometry_wear_and_opening_regressions(self):
+        from rigellian_building_runtime_evidence import verify_preserved_filtration_contract
+        folder = ROOT/'sources/objects/rigellian/filtration-plant'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        verify_preserved_filtration_contract(metadata,report)
+        wrong = deepcopy(metadata)
+        wrong['triangles']-=1
+        with self.assertRaises(AssertionError):
+            verify_preserved_filtration_contract(wrong,report)
+        for key in ['eight_cut_lower_slots','six_embedded_front_pressure_faces']:
+            wrong = deepcopy(report)
+            wrong['imported'][key] = False
+            with self.assertRaises(AssertionError):
+                verify_preserved_filtration_contract(metadata,wrong)
+        wrong = deepcopy(report)
+        wrong['imported']['retained_authored_wear']['roughness_pixels_sha256'] = 'changed'
+        with self.assertRaises(AssertionError):
+            verify_preserved_filtration_contract(metadata,wrong)
 
 
 if __name__ == '__main__':

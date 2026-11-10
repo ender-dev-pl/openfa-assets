@@ -1,0 +1,1493 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/041",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "81f07ae516f2be27adaa913c895d0a38fd002d112592b3e49e19f32afd4c7688",
+    "glb": "9d04713c2753cf581651454ef5800b9bb8cf859fad63ebb0aeaed2e465881136"
+  },
+  "metadata_sha256": "1342ddd9a28ced38645446a0d9ec68b35bf2e6474179def5fb5c2c64afac477c",
+  "verifier_sha256": "17619904f04e3d8e3eb2c5ead2190d895a0c05cbf905af7d594342b06aee8474",
+  "helpers": {
+    "sources/tools/blender/verify_remastered_rigellian_filtration.py": "17619904f04e3d8e3eb2c5ead2190d895a0c05cbf905af7d594342b06aee8474",
+    "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+    "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+    "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+    "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+    "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+    "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+    "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+    "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+    "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+    "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+    "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+    "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+    "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+    "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+    "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+    "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+    "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+    "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+    "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+    "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+    "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+    "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+    "sources/tools/blender/rigellian_filtration_preservation_checks.py": "717084f5302bcc9ef86e15c85fa7ef0bb9ddfa6294bfe6486f01e59ffe9e0dd1",
+    "sources/tools/blender/refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "sources/tools/blender/verify_refined_rigellian_extractor.py": "d8a090cc290d0b5ebe800c93a1dc70446e02c1e1697e909bd039073a9d6ef84f",
+    "sources/tools/blender/rigellian_extractor_remaster_checks.py": "f2024418942b8111f93f71a61160dec511ac0c91ce9f1b28a33f9959a53e70a3",
+    "sources/tools/blender/rigellian_filtration_uv_checks.py": "8d6c5e0a755acbb52b160d584faab4d8cbf72464d832f2fad8990341a2f4fdbc"
+  },
+  "native": {
+    "positive_closed_meshes": 83,
+    "body_bounds": [
+      -0.8199999928474426,
+      -0.826598048210144,
+      0.0,
+      0.8199999928474426,
+      0.8395000100135803,
+      2.492499828338623
+    ],
+    "eight_cut_lower_slots": true,
+    "two_measured_dents": true,
+    "three_height_cut_side_channel": true,
+    "six_embedded_front_pressure_faces": true,
+    "sampled_contact_graph": {
+      "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+      "tolerance": 0.0001,
+      "links": [
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 recessed intake backing"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 recessed intake backing.001"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 recessed intake backing.002"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 recessed intake backing.003"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 recessed intake backing.004"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 recessed intake backing.005"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 recessed intake backing.006"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 recessed intake backing.007"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 recessed side channel backing"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 capped upper tower"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 ground mounting rim"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 shoulder contaminated gasket"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 0-0 brass pressure face"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 0-0 abraded retaining rim"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 0-1 brass pressure face"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 0-1 abraded retaining rim"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 1-0 brass pressure face"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 1-0 abraded retaining rim"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 1-1 brass pressure face"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 1-1 abraded retaining rim"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 2-0 brass pressure face"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 2-0 abraded retaining rim"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 2-1 brass pressure face"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 front port 2-1 abraded retaining rim"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 lower intake structural rib"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 lower intake structural rib.001"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 lower intake structural rib.002"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 lower intake structural rib.003"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 lower intake structural rib.004"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 lower intake structural rib.005"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 lower intake structural rib.006"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 lower intake structural rib.007"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 lower intake structural rib.008"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail.001"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail.002"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail.003"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail.004"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail.005"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.001"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.002"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.003"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.004"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.005"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.006"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.007"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.008"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.009"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.010"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.011"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 inferred rear service closure brass pressure face"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 inferred rear service closure abraded retaining rim"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 inferred rear service closure brass pressure face.001"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 inferred rear service closure abraded retaining rim.001"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 inferred rear service closure brass pressure face.002"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 inferred rear service closure abraded retaining rim.002"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 shoulder contaminated gasket"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 tower lower machined collar"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 tower cap worn rim"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 tower terminal cap"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 upper tower fitting brass pressure face"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 upper tower fitting abraded retaining rim"
+        ],
+        [
+          "RI02 front port 0-0 brass pressure face",
+          "RI02 front port 0-0 abraded retaining rim"
+        ],
+        [
+          "RI02 front port 0-0 brass pressure face",
+          "RI02 front port 0-0 captive screw"
+        ],
+        [
+          "RI02 front port 0-0 brass pressure face",
+          "RI02 front port 0-0 captive screw.001"
+        ],
+        [
+          "RI02 front port 0-1 brass pressure face",
+          "RI02 front port 0-1 abraded retaining rim"
+        ],
+        [
+          "RI02 front port 0-1 brass pressure face",
+          "RI02 front port 0-1 captive screw"
+        ],
+        [
+          "RI02 front port 0-1 brass pressure face",
+          "RI02 front port 0-1 captive screw.001"
+        ],
+        [
+          "RI02 front port 1-0 brass pressure face",
+          "RI02 front port 1-0 abraded retaining rim"
+        ],
+        [
+          "RI02 front port 1-0 brass pressure face",
+          "RI02 front port 1-0 captive screw"
+        ],
+        [
+          "RI02 front port 1-0 brass pressure face",
+          "RI02 front port 1-0 captive screw.001"
+        ],
+        [
+          "RI02 front port 1-1 brass pressure face",
+          "RI02 front port 1-1 abraded retaining rim"
+        ],
+        [
+          "RI02 front port 1-1 brass pressure face",
+          "RI02 front port 1-1 captive screw"
+        ],
+        [
+          "RI02 front port 1-1 brass pressure face",
+          "RI02 front port 1-1 captive screw.001"
+        ],
+        [
+          "RI02 front port 2-0 brass pressure face",
+          "RI02 front port 2-0 abraded retaining rim"
+        ],
+        [
+          "RI02 front port 2-0 brass pressure face",
+          "RI02 front port 2-0 captive screw"
+        ],
+        [
+          "RI02 front port 2-0 brass pressure face",
+          "RI02 front port 2-0 captive screw.001"
+        ],
+        [
+          "RI02 front port 2-1 brass pressure face",
+          "RI02 front port 2-1 abraded retaining rim"
+        ],
+        [
+          "RI02 front port 2-1 brass pressure face",
+          "RI02 front port 2-1 captive screw"
+        ],
+        [
+          "RI02 front port 2-1 brass pressure face",
+          "RI02 front port 2-1 captive screw.001"
+        ],
+        [
+          "RI02 upper tower fitting brass pressure face",
+          "RI02 upper tower fitting abraded retaining rim"
+        ],
+        [
+          "RI02 upper tower fitting brass pressure face",
+          "RI02 upper tower fitting captive screw"
+        ],
+        [
+          "RI02 upper tower fitting brass pressure face",
+          "RI02 upper tower fitting captive screw.001"
+        ],
+        [
+          "RI02 side channel retaining rail",
+          "RI02 side channel retaining rail.001"
+        ],
+        [
+          "RI02 side channel retaining rail.001",
+          "RI02 side channel retaining rail.002"
+        ],
+        [
+          "RI02 side channel retaining rail.002",
+          "RI02 side channel curved crown.011"
+        ],
+        [
+          "RI02 side channel retaining rail.003",
+          "RI02 side channel retaining rail.004"
+        ],
+        [
+          "RI02 side channel retaining rail.004",
+          "RI02 side channel retaining rail.005"
+        ],
+        [
+          "RI02 side channel retaining rail.005",
+          "RI02 side channel curved crown"
+        ],
+        [
+          "RI02 side channel curved crown",
+          "RI02 side channel curved crown.001"
+        ],
+        [
+          "RI02 side channel curved crown.001",
+          "RI02 side channel curved crown.002"
+        ],
+        [
+          "RI02 side channel curved crown.002",
+          "RI02 side channel curved crown.003"
+        ],
+        [
+          "RI02 side channel curved crown.003",
+          "RI02 side channel curved crown.004"
+        ],
+        [
+          "RI02 side channel curved crown.004",
+          "RI02 side channel curved crown.005"
+        ],
+        [
+          "RI02 side channel curved crown.005",
+          "RI02 side channel curved crown.006"
+        ],
+        [
+          "RI02 side channel curved crown.006",
+          "RI02 side channel curved crown.007"
+        ],
+        [
+          "RI02 side channel curved crown.007",
+          "RI02 side channel curved crown.008"
+        ],
+        [
+          "RI02 side channel curved crown.008",
+          "RI02 side channel curved crown.009"
+        ],
+        [
+          "RI02 side channel curved crown.009",
+          "RI02 side channel curved crown.010"
+        ],
+        [
+          "RI02 side channel curved crown.010",
+          "RI02 side channel curved crown.011"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face",
+          "RI02 inferred rear service closure abraded retaining rim"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face",
+          "RI02 inferred rear service closure captive screw"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face",
+          "RI02 inferred rear service closure captive screw.001"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.001",
+          "RI02 inferred rear service closure abraded retaining rim.001"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.001",
+          "RI02 inferred rear service closure captive screw.002"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.001",
+          "RI02 inferred rear service closure captive screw.003"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.002",
+          "RI02 inferred rear service closure abraded retaining rim.002"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.002",
+          "RI02 inferred rear service closure captive screw.004"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.002",
+          "RI02 inferred rear service closure captive screw.005"
+        ]
+      ],
+      "components": [
+        [
+          "RI02 capped upper tower",
+          "RI02 front port 0-0 abraded retaining rim",
+          "RI02 front port 0-0 brass pressure face",
+          "RI02 front port 0-0 captive screw",
+          "RI02 front port 0-0 captive screw.001",
+          "RI02 front port 0-1 abraded retaining rim",
+          "RI02 front port 0-1 brass pressure face",
+          "RI02 front port 0-1 captive screw",
+          "RI02 front port 0-1 captive screw.001",
+          "RI02 front port 1-0 abraded retaining rim",
+          "RI02 front port 1-0 brass pressure face",
+          "RI02 front port 1-0 captive screw",
+          "RI02 front port 1-0 captive screw.001",
+          "RI02 front port 1-1 abraded retaining rim",
+          "RI02 front port 1-1 brass pressure face",
+          "RI02 front port 1-1 captive screw",
+          "RI02 front port 1-1 captive screw.001",
+          "RI02 front port 2-0 abraded retaining rim",
+          "RI02 front port 2-0 brass pressure face",
+          "RI02 front port 2-0 captive screw",
+          "RI02 front port 2-0 captive screw.001",
+          "RI02 front port 2-1 abraded retaining rim",
+          "RI02 front port 2-1 brass pressure face",
+          "RI02 front port 2-1 captive screw",
+          "RI02 front port 2-1 captive screw.001",
+          "RI02 ground mounting rim",
+          "RI02 inferred rear service closure abraded retaining rim",
+          "RI02 inferred rear service closure abraded retaining rim.001",
+          "RI02 inferred rear service closure abraded retaining rim.002",
+          "RI02 inferred rear service closure brass pressure face",
+          "RI02 inferred rear service closure brass pressure face.001",
+          "RI02 inferred rear service closure brass pressure face.002",
+          "RI02 inferred rear service closure captive screw",
+          "RI02 inferred rear service closure captive screw.001",
+          "RI02 inferred rear service closure captive screw.002",
+          "RI02 inferred rear service closure captive screw.003",
+          "RI02 inferred rear service closure captive screw.004",
+          "RI02 inferred rear service closure captive screw.005",
+          "RI02 lower intake structural rib",
+          "RI02 lower intake structural rib.001",
+          "RI02 lower intake structural rib.002",
+          "RI02 lower intake structural rib.003",
+          "RI02 lower intake structural rib.004",
+          "RI02 lower intake structural rib.005",
+          "RI02 lower intake structural rib.006",
+          "RI02 lower intake structural rib.007",
+          "RI02 lower intake structural rib.008",
+          "RI02 recessed intake backing",
+          "RI02 recessed intake backing.001",
+          "RI02 recessed intake backing.002",
+          "RI02 recessed intake backing.003",
+          "RI02 recessed intake backing.004",
+          "RI02 recessed intake backing.005",
+          "RI02 recessed intake backing.006",
+          "RI02 recessed intake backing.007",
+          "RI02 recessed side channel backing",
+          "RI02 rounded filtration pressure body",
+          "RI02 shoulder contaminated gasket",
+          "RI02 side channel curved crown",
+          "RI02 side channel curved crown.001",
+          "RI02 side channel curved crown.002",
+          "RI02 side channel curved crown.003",
+          "RI02 side channel curved crown.004",
+          "RI02 side channel curved crown.005",
+          "RI02 side channel curved crown.006",
+          "RI02 side channel curved crown.007",
+          "RI02 side channel curved crown.008",
+          "RI02 side channel curved crown.009",
+          "RI02 side channel curved crown.010",
+          "RI02 side channel curved crown.011",
+          "RI02 side channel retaining rail",
+          "RI02 side channel retaining rail.001",
+          "RI02 side channel retaining rail.002",
+          "RI02 side channel retaining rail.003",
+          "RI02 side channel retaining rail.004",
+          "RI02 side channel retaining rail.005",
+          "RI02 tower cap worn rim",
+          "RI02 tower lower machined collar",
+          "RI02 tower terminal cap",
+          "RI02 upper tower fitting abraded retaining rim",
+          "RI02 upper tower fitting brass pressure face",
+          "RI02 upper tower fitting captive screw",
+          "RI02 upper tower fitting captive screw.001"
+        ]
+      ],
+      "isolated": []
+    },
+    "retained_authored_wear": {
+      "colour_pixels_sha256": "008571241e5f4d815035c45d0fa957b259cfedd2232355395cc38a45f3221894",
+      "roughness_pixels_sha256": "86876790879a2136e4d59d4112f990af839944c1ff860b620b189c23c5c93160"
+    },
+    "texture_pixels_and_uvs": {
+      "RI02 | abraded pale alloy": {
+        "Base Color": [
+          0.39,
+          0.46,
+          0.42,
+          1.0
+        ],
+        "Metallic": 194,
+        "Roughness": 125,
+        "Alpha": 255
+      },
+      "RI02 | aged brass fittings": {
+        "Base Color": [
+          0.46,
+          0.29,
+          0.085,
+          1.0
+        ],
+        "Metallic": 186,
+        "Roughness": 122,
+        "Alpha": 255
+      },
+      "RI02 | aged jade shell": {
+        "Base Color": {
+          "size": [
+            1024,
+            1024
+          ],
+          "colour_space": "sRGB",
+          "pixels": "008571241e5f4d815035c45d0fa957b259cfedd2232355395cc38a45f3221894"
+        },
+        "Metallic": 135,
+        "Roughness": {
+          "size": [
+            1024,
+            1024
+          ],
+          "colour_space": "Non-Color",
+          "pixels": "86876790879a2136e4d59d4112f990af839944c1ff860b620b189c23c5c93160"
+        },
+        "Alpha": 255
+      },
+      "RI02 | faded jade coating": {
+        "Base Color": [
+          0.133,
+          0.305,
+          0.235,
+          1.0
+        ],
+        "Metallic": 115,
+        "Roughness": 148,
+        "Alpha": 255
+      },
+      "RI02 | joint contamination": {
+        "Base Color": [
+          0.075,
+          0.13,
+          0.1,
+          1.0
+        ],
+        "Metallic": 46,
+        "Roughness": 219,
+        "Alpha": 255
+      },
+      "RI02 | recessed equipment": {
+        "Base Color": [
+          0.015,
+          0.025,
+          0.024,
+          1.0
+        ],
+        "Metallic": 97,
+        "Roughness": 166,
+        "Alpha": 255
+      },
+      "RI02 | rubbed brass edges": {
+        "Base Color": [
+          0.63,
+          0.45,
+          0.18,
+          1.0
+        ],
+        "Metallic": 199,
+        "Roughness": 99,
+        "Alpha": 255
+      }
+    },
+    "contact_scope": "Existing eight-slot/channel/dent/pressure-face ray checks and sampled vertex/face nearest-surface contact graph; not exhaustive solid-contact proof."
+  },
+  "imported": {
+    "positive_closed_meshes": 83,
+    "body_bounds": [
+      -0.8199999928474426,
+      -0.826598048210144,
+      0.0,
+      0.8199999928474426,
+      0.8395000100135803,
+      2.492499828338623
+    ],
+    "eight_cut_lower_slots": true,
+    "two_measured_dents": true,
+    "three_height_cut_side_channel": true,
+    "six_embedded_front_pressure_faces": true,
+    "sampled_contact_graph": {
+      "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+      "tolerance": 0.0001,
+      "links": [
+        [
+          "RI02 capped upper tower",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 shoulder contaminated gasket"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 tower cap worn rim"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 tower lower machined collar"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 tower terminal cap"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 upper tower fitting abraded retaining rim"
+        ],
+        [
+          "RI02 capped upper tower",
+          "RI02 upper tower fitting brass pressure face"
+        ],
+        [
+          "RI02 front port 0-0 abraded retaining rim",
+          "RI02 front port 0-0 brass pressure face"
+        ],
+        [
+          "RI02 front port 0-0 abraded retaining rim",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 0-0 brass pressure face",
+          "RI02 front port 0-0 captive screw"
+        ],
+        [
+          "RI02 front port 0-0 brass pressure face",
+          "RI02 front port 0-0 captive screw.001"
+        ],
+        [
+          "RI02 front port 0-0 brass pressure face",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 0-1 abraded retaining rim",
+          "RI02 front port 0-1 brass pressure face"
+        ],
+        [
+          "RI02 front port 0-1 abraded retaining rim",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 0-1 brass pressure face",
+          "RI02 front port 0-1 captive screw"
+        ],
+        [
+          "RI02 front port 0-1 brass pressure face",
+          "RI02 front port 0-1 captive screw.001"
+        ],
+        [
+          "RI02 front port 0-1 brass pressure face",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 1-0 abraded retaining rim",
+          "RI02 front port 1-0 brass pressure face"
+        ],
+        [
+          "RI02 front port 1-0 abraded retaining rim",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 1-0 brass pressure face",
+          "RI02 front port 1-0 captive screw"
+        ],
+        [
+          "RI02 front port 1-0 brass pressure face",
+          "RI02 front port 1-0 captive screw.001"
+        ],
+        [
+          "RI02 front port 1-0 brass pressure face",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 1-1 abraded retaining rim",
+          "RI02 front port 1-1 brass pressure face"
+        ],
+        [
+          "RI02 front port 1-1 abraded retaining rim",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 1-1 brass pressure face",
+          "RI02 front port 1-1 captive screw"
+        ],
+        [
+          "RI02 front port 1-1 brass pressure face",
+          "RI02 front port 1-1 captive screw.001"
+        ],
+        [
+          "RI02 front port 1-1 brass pressure face",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 2-0 abraded retaining rim",
+          "RI02 front port 2-0 brass pressure face"
+        ],
+        [
+          "RI02 front port 2-0 abraded retaining rim",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 2-0 brass pressure face",
+          "RI02 front port 2-0 captive screw"
+        ],
+        [
+          "RI02 front port 2-0 brass pressure face",
+          "RI02 front port 2-0 captive screw.001"
+        ],
+        [
+          "RI02 front port 2-0 brass pressure face",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 2-1 abraded retaining rim",
+          "RI02 front port 2-1 brass pressure face"
+        ],
+        [
+          "RI02 front port 2-1 abraded retaining rim",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 front port 2-1 brass pressure face",
+          "RI02 front port 2-1 captive screw"
+        ],
+        [
+          "RI02 front port 2-1 brass pressure face",
+          "RI02 front port 2-1 captive screw.001"
+        ],
+        [
+          "RI02 front port 2-1 brass pressure face",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 ground mounting rim",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 inferred rear service closure abraded retaining rim",
+          "RI02 inferred rear service closure brass pressure face"
+        ],
+        [
+          "RI02 inferred rear service closure abraded retaining rim",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 inferred rear service closure abraded retaining rim.001",
+          "RI02 inferred rear service closure brass pressure face.001"
+        ],
+        [
+          "RI02 inferred rear service closure abraded retaining rim.001",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 inferred rear service closure abraded retaining rim.002",
+          "RI02 inferred rear service closure brass pressure face.002"
+        ],
+        [
+          "RI02 inferred rear service closure abraded retaining rim.002",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face",
+          "RI02 inferred rear service closure captive screw"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face",
+          "RI02 inferred rear service closure captive screw.001"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.001",
+          "RI02 inferred rear service closure captive screw.002"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.001",
+          "RI02 inferred rear service closure captive screw.003"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.001",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.002",
+          "RI02 inferred rear service closure captive screw.004"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.002",
+          "RI02 inferred rear service closure captive screw.005"
+        ],
+        [
+          "RI02 inferred rear service closure brass pressure face.002",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 lower intake structural rib",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 lower intake structural rib.001",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 lower intake structural rib.002",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 lower intake structural rib.003",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 lower intake structural rib.004",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 lower intake structural rib.005",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 lower intake structural rib.006",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 lower intake structural rib.007",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 lower intake structural rib.008",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 recessed intake backing",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 recessed intake backing.001",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 recessed intake backing.002",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 recessed intake backing.003",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 recessed intake backing.004",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 recessed intake backing.005",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 recessed intake backing.006",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 recessed intake backing.007",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 recessed side channel backing",
+          "RI02 rounded filtration pressure body"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 shoulder contaminated gasket"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.001"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.002"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.003"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.004"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.005"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.006"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.007"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.008"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.009"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.010"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel curved crown.011"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail.001"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail.002"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail.003"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail.004"
+        ],
+        [
+          "RI02 rounded filtration pressure body",
+          "RI02 side channel retaining rail.005"
+        ],
+        [
+          "RI02 side channel curved crown",
+          "RI02 side channel curved crown.001"
+        ],
+        [
+          "RI02 side channel curved crown",
+          "RI02 side channel retaining rail.005"
+        ],
+        [
+          "RI02 side channel curved crown.001",
+          "RI02 side channel curved crown.002"
+        ],
+        [
+          "RI02 side channel curved crown.002",
+          "RI02 side channel curved crown.003"
+        ],
+        [
+          "RI02 side channel curved crown.003",
+          "RI02 side channel curved crown.004"
+        ],
+        [
+          "RI02 side channel curved crown.004",
+          "RI02 side channel curved crown.005"
+        ],
+        [
+          "RI02 side channel curved crown.005",
+          "RI02 side channel curved crown.006"
+        ],
+        [
+          "RI02 side channel curved crown.006",
+          "RI02 side channel curved crown.007"
+        ],
+        [
+          "RI02 side channel curved crown.007",
+          "RI02 side channel curved crown.008"
+        ],
+        [
+          "RI02 side channel curved crown.008",
+          "RI02 side channel curved crown.009"
+        ],
+        [
+          "RI02 side channel curved crown.009",
+          "RI02 side channel curved crown.010"
+        ],
+        [
+          "RI02 side channel curved crown.010",
+          "RI02 side channel curved crown.011"
+        ],
+        [
+          "RI02 side channel curved crown.011",
+          "RI02 side channel retaining rail.002"
+        ],
+        [
+          "RI02 side channel retaining rail",
+          "RI02 side channel retaining rail.001"
+        ],
+        [
+          "RI02 side channel retaining rail.001",
+          "RI02 side channel retaining rail.002"
+        ],
+        [
+          "RI02 side channel retaining rail.003",
+          "RI02 side channel retaining rail.004"
+        ],
+        [
+          "RI02 side channel retaining rail.004",
+          "RI02 side channel retaining rail.005"
+        ],
+        [
+          "RI02 upper tower fitting abraded retaining rim",
+          "RI02 upper tower fitting brass pressure face"
+        ],
+        [
+          "RI02 upper tower fitting brass pressure face",
+          "RI02 upper tower fitting captive screw"
+        ],
+        [
+          "RI02 upper tower fitting brass pressure face",
+          "RI02 upper tower fitting captive screw.001"
+        ]
+      ],
+      "components": [
+        [
+          "RI02 capped upper tower",
+          "RI02 front port 0-0 abraded retaining rim",
+          "RI02 front port 0-0 brass pressure face",
+          "RI02 front port 0-0 captive screw",
+          "RI02 front port 0-0 captive screw.001",
+          "RI02 front port 0-1 abraded retaining rim",
+          "RI02 front port 0-1 brass pressure face",
+          "RI02 front port 0-1 captive screw",
+          "RI02 front port 0-1 captive screw.001",
+          "RI02 front port 1-0 abraded retaining rim",
+          "RI02 front port 1-0 brass pressure face",
+          "RI02 front port 1-0 captive screw",
+          "RI02 front port 1-0 captive screw.001",
+          "RI02 front port 1-1 abraded retaining rim",
+          "RI02 front port 1-1 brass pressure face",
+          "RI02 front port 1-1 captive screw",
+          "RI02 front port 1-1 captive screw.001",
+          "RI02 front port 2-0 abraded retaining rim",
+          "RI02 front port 2-0 brass pressure face",
+          "RI02 front port 2-0 captive screw",
+          "RI02 front port 2-0 captive screw.001",
+          "RI02 front port 2-1 abraded retaining rim",
+          "RI02 front port 2-1 brass pressure face",
+          "RI02 front port 2-1 captive screw",
+          "RI02 front port 2-1 captive screw.001",
+          "RI02 ground mounting rim",
+          "RI02 inferred rear service closure abraded retaining rim",
+          "RI02 inferred rear service closure abraded retaining rim.001",
+          "RI02 inferred rear service closure abraded retaining rim.002",
+          "RI02 inferred rear service closure brass pressure face",
+          "RI02 inferred rear service closure brass pressure face.001",
+          "RI02 inferred rear service closure brass pressure face.002",
+          "RI02 inferred rear service closure captive screw",
+          "RI02 inferred rear service closure captive screw.001",
+          "RI02 inferred rear service closure captive screw.002",
+          "RI02 inferred rear service closure captive screw.003",
+          "RI02 inferred rear service closure captive screw.004",
+          "RI02 inferred rear service closure captive screw.005",
+          "RI02 lower intake structural rib",
+          "RI02 lower intake structural rib.001",
+          "RI02 lower intake structural rib.002",
+          "RI02 lower intake structural rib.003",
+          "RI02 lower intake structural rib.004",
+          "RI02 lower intake structural rib.005",
+          "RI02 lower intake structural rib.006",
+          "RI02 lower intake structural rib.007",
+          "RI02 lower intake structural rib.008",
+          "RI02 recessed intake backing",
+          "RI02 recessed intake backing.001",
+          "RI02 recessed intake backing.002",
+          "RI02 recessed intake backing.003",
+          "RI02 recessed intake backing.004",
+          "RI02 recessed intake backing.005",
+          "RI02 recessed intake backing.006",
+          "RI02 recessed intake backing.007",
+          "RI02 recessed side channel backing",
+          "RI02 rounded filtration pressure body",
+          "RI02 shoulder contaminated gasket",
+          "RI02 side channel curved crown",
+          "RI02 side channel curved crown.001",
+          "RI02 side channel curved crown.002",
+          "RI02 side channel curved crown.003",
+          "RI02 side channel curved crown.004",
+          "RI02 side channel curved crown.005",
+          "RI02 side channel curved crown.006",
+          "RI02 side channel curved crown.007",
+          "RI02 side channel curved crown.008",
+          "RI02 side channel curved crown.009",
+          "RI02 side channel curved crown.010",
+          "RI02 side channel curved crown.011",
+          "RI02 side channel retaining rail",
+          "RI02 side channel retaining rail.001",
+          "RI02 side channel retaining rail.002",
+          "RI02 side channel retaining rail.003",
+          "RI02 side channel retaining rail.004",
+          "RI02 side channel retaining rail.005",
+          "RI02 tower cap worn rim",
+          "RI02 tower lower machined collar",
+          "RI02 tower terminal cap",
+          "RI02 upper tower fitting abraded retaining rim",
+          "RI02 upper tower fitting brass pressure face",
+          "RI02 upper tower fitting captive screw",
+          "RI02 upper tower fitting captive screw.001"
+        ]
+      ],
+      "isolated": []
+    },
+    "retained_authored_wear": {
+      "colour_pixels_sha256": "008571241e5f4d815035c45d0fa957b259cfedd2232355395cc38a45f3221894",
+      "roughness_pixels_sha256": "86876790879a2136e4d59d4112f990af839944c1ff860b620b189c23c5c93160"
+    },
+    "texture_pixels_and_uvs": {
+      "RI02 | abraded pale alloy": {
+        "Base Color": [
+          0.39,
+          0.46,
+          0.42,
+          1.0
+        ],
+        "Metallic": 194,
+        "Roughness": 125,
+        "Alpha": 255
+      },
+      "RI02 | aged brass fittings": {
+        "Base Color": [
+          0.46,
+          0.29,
+          0.085,
+          1.0
+        ],
+        "Metallic": 186,
+        "Roughness": 122,
+        "Alpha": 255
+      },
+      "RI02 | aged jade shell": {
+        "Base Color": {
+          "size": [
+            1024,
+            1024
+          ],
+          "colour_space": "sRGB",
+          "pixels": "008571241e5f4d815035c45d0fa957b259cfedd2232355395cc38a45f3221894"
+        },
+        "Metallic": 135,
+        "Roughness": {
+          "size": [
+            1024,
+            1024
+          ],
+          "colour_space": "Non-Color",
+          "pixels": "86876790879a2136e4d59d4112f990af839944c1ff860b620b189c23c5c93160"
+        },
+        "Alpha": 255
+      },
+      "RI02 | faded jade coating": {
+        "Base Color": [
+          0.133,
+          0.305,
+          0.235,
+          1.0
+        ],
+        "Metallic": 115,
+        "Roughness": 148,
+        "Alpha": 255
+      },
+      "RI02 | joint contamination": {
+        "Base Color": [
+          0.075,
+          0.13,
+          0.1,
+          1.0
+        ],
+        "Metallic": 46,
+        "Roughness": 219,
+        "Alpha": 255
+      },
+      "RI02 | recessed equipment": {
+        "Base Color": [
+          0.015,
+          0.025,
+          0.024,
+          1.0
+        ],
+        "Metallic": 97,
+        "Roughness": 166,
+        "Alpha": 255
+      },
+      "RI02 | rubbed brass edges": {
+        "Base Color": [
+          0.63,
+          0.45,
+          0.18,
+          1.0
+        ],
+        "Metallic": 199,
+        "Roughness": 99,
+        "Alpha": 255
+      }
+    },
+    "contact_scope": "Existing eight-slot/channel/dent/pressure-face ray checks and sampled vertex/face nearest-surface contact graph; not exhaustive solid-contact proof."
+  },
+  "source_uv_comparison": {
+    "maximum_uv_corner_error": 0.0,
+    "maximum_sampled_surface_distance": 0.0,
+    "matched_directed_corners": 21862,
+    "position_tolerance": 1e-05,
+    "uv_tolerance": 1e-05,
+    "scope": "All unique material/UV corner samples projected bidirectionally onto corresponding triangles, with barycentric UV interpolation and repeat-wrap equivalence; not a continuous UV-field proof."
+  },
+  "exported_uv_comparison": {
+    "maximum_uv_corner_error": 2.9802322387695312e-08,
+    "maximum_sampled_surface_distance": 0.0,
+    "matched_directed_corners": 21862,
+    "position_tolerance": 1e-05,
+    "uv_tolerance": 1e-05,
+    "scope": "All unique material/UV corner samples projected bidirectionally onto corresponding triangles, with barycentric UV interpolation and repeat-wrap equivalence; not a continuous UV-field proof."
+  },
+  "maximum_bidirectional_surface_error": 3.3717478231665154e-07,
+  "renders": {
+    "source-front-quarter.png": "656e574787fee3ecf27b53b2f1852e127a552d32210617d4ed4e6de24974d142",
+    "source-front.png": "7385fdd8815058c8fafafe43ecb70e1b917f633eb8d747dfc04f5f2d6abe180c",
+    "source-rear-quarter.png": "b4e457364eeb8bfc428f77841a30d15d0acb739a316c69841829fd0a1d196054",
+    "native-front-quarter.png": "656e574787fee3ecf27b53b2f1852e127a552d32210617d4ed4e6de24974d142",
+    "native-front.png": "7385fdd8815058c8fafafe43ecb70e1b917f633eb8d747dfc04f5f2d6abe180c",
+    "native-rear-quarter.png": "b4e457364eeb8bfc428f77841a30d15d0acb739a316c69841829fd0a1d196054",
+    "imported-front-quarter.png": "fcdcc9339c26e3e0ee3e62becebd74b88d1a9f287a2a68b3c957f23a4a1866d8",
+    "imported-front.png": "83f308bdef543a3e25fae5f632900654ac8541030a9b74e9205afc7e1f6214b3",
+    "imported-rear-quarter.png": "ce65739478370ed9541ece01053a21e7c3c9307b2a7925c8715d17e185806af1"
+  },
+  "triangles": 65890,
+  "meshes": 83,
+  "protected_parts": [
+    "RI02 capped upper tower",
+    "RI02 front port 0-0 abraded retaining rim",
+    "RI02 front port 0-0 brass pressure face",
+    "RI02 front port 0-0 captive screw",
+    "RI02 front port 0-0 captive screw.001",
+    "RI02 front port 0-1 abraded retaining rim",
+    "RI02 front port 0-1 brass pressure face",
+    "RI02 front port 0-1 captive screw",
+    "RI02 front port 0-1 captive screw.001",
+    "RI02 front port 1-0 abraded retaining rim",
+    "RI02 front port 1-0 brass pressure face",
+    "RI02 front port 1-0 captive screw",
+    "RI02 front port 1-0 captive screw.001",
+    "RI02 front port 1-1 abraded retaining rim",
+    "RI02 front port 1-1 brass pressure face",
+    "RI02 front port 1-1 captive screw",
+    "RI02 front port 1-1 captive screw.001",
+    "RI02 front port 2-0 abraded retaining rim",
+    "RI02 front port 2-0 brass pressure face",
+    "RI02 front port 2-0 captive screw",
+    "RI02 front port 2-0 captive screw.001",
+    "RI02 front port 2-1 abraded retaining rim",
+    "RI02 front port 2-1 brass pressure face",
+    "RI02 front port 2-1 captive screw",
+    "RI02 front port 2-1 captive screw.001",
+    "RI02 ground mounting rim",
+    "RI02 inferred rear service closure abraded retaining rim",
+    "RI02 inferred rear service closure abraded retaining rim.001",
+    "RI02 inferred rear service closure abraded retaining rim.002",
+    "RI02 inferred rear service closure brass pressure face",
+    "RI02 inferred rear service closure brass pressure face.001",
+    "RI02 inferred rear service closure brass pressure face.002",
+    "RI02 inferred rear service closure captive screw",
+    "RI02 inferred rear service closure captive screw.001",
+    "RI02 inferred rear service closure captive screw.002",
+    "RI02 inferred rear service closure captive screw.003",
+    "RI02 inferred rear service closure captive screw.004",
+    "RI02 inferred rear service closure captive screw.005",
+    "RI02 lower intake structural rib",
+    "RI02 lower intake structural rib.001",
+    "RI02 lower intake structural rib.002",
+    "RI02 lower intake structural rib.003",
+    "RI02 lower intake structural rib.004",
+    "RI02 lower intake structural rib.005",
+    "RI02 lower intake structural rib.006",
+    "RI02 lower intake structural rib.007",
+    "RI02 lower intake structural rib.008",
+    "RI02 recessed intake backing",
+    "RI02 recessed intake backing.001",
+    "RI02 recessed intake backing.002",
+    "RI02 recessed intake backing.003",
+    "RI02 recessed intake backing.004",
+    "RI02 recessed intake backing.005",
+    "RI02 recessed intake backing.006",
+    "RI02 recessed intake backing.007",
+    "RI02 recessed side channel backing",
+    "RI02 rounded filtration pressure body",
+    "RI02 shoulder contaminated gasket",
+    "RI02 side channel curved crown",
+    "RI02 side channel curved crown.001",
+    "RI02 side channel curved crown.002",
+    "RI02 side channel curved crown.003",
+    "RI02 side channel curved crown.004",
+    "RI02 side channel curved crown.005",
+    "RI02 side channel curved crown.006",
+    "RI02 side channel curved crown.007",
+    "RI02 side channel curved crown.008",
+    "RI02 side channel curved crown.009",
+    "RI02 side channel curved crown.010",
+    "RI02 side channel curved crown.011",
+    "RI02 side channel retaining rail",
+    "RI02 side channel retaining rail.001",
+    "RI02 side channel retaining rail.002",
+    "RI02 side channel retaining rail.003",
+    "RI02 side channel retaining rail.004",
+    "RI02 side channel retaining rail.005",
+    "RI02 tower cap worn rim",
+    "RI02 tower lower machined collar",
+    "RI02 tower terminal cap",
+    "RI02 upper tower fitting abraded retaining rim",
+    "RI02 upper tower fitting brass pressure face",
+    "RI02 upper tower fitting captive screw",
+    "RI02 upper tower fitting captive screw.001"
+  ],
+  "protected_surface_error": 0.0,
+  "native_world_bounds": [
+    -0.8199999928474426,
+    -0.826598048210144,
+    0.0,
+    0.8199999928474426,
+    0.8395000100135803,
+    2.492499828338623
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "imported_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "material_count": 8,
+  "embedded_images": 2,
+  "clips": [],
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

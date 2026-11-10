@@ -18,17 +18,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/041`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Filtration Plant](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri02/front-quarter.png)
+![Filtration Plant](../gallery/media/objects/rigellian/filtration-plant/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri02/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri02/model.glb)
+[Blend](../sources/objects/rigellian/filtration-plant/model.blend) · [GLB](../sources/objects/rigellian/filtration-plant/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Filtration Plant](../gallery/media/docs/assets/reconstruction/buildings/rigellian/filtration-plant/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri02-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/filtration-plant/imported-front-quarter.png)
 
 ## Nourishment Bank
 

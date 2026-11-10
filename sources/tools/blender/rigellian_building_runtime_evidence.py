@@ -195,6 +195,30 @@ def verify_manual_yaw_contract(metadata,report,document):
         assert all(p['fixed_base_unchanged'] is True and set(p['moving_world_matrices']) == moving for p in yaw['poses'])
 
 
+def verify_preserved_filtration_contract(metadata,report):
+    assert metadata['id']==report['id']=='openfa:building/legacy/041'
+    assert metadata['mesh_nodes']==report['meshes']==len(report['protected_parts'])==83
+    assert metadata['triangles']==metadata['original_triangles']==report['triangles']==65890
+    assert metadata['changes']==[] and report['protected_surface_error']<1e-6
+    assert report['clips']==[] and not metadata.get('animation') and not metadata.get('articulation')
+    assert report['material_count']==8 and report['embedded_images']==2
+    assert len(report['renders'])==9
+    for name in ['source_uv_comparison','exported_uv_comparison']:
+        uv = report[name]
+        assert uv['maximum_uv_corner_error']<1e-5 and uv['matched_directed_corners']>0
+        assert uv['position_tolerance']==uv['uv_tolerance']==1e-5
+    for key in ['native','imported']:
+        form = report[key]
+        for field in ['eight_cut_lower_slots','two_measured_dents','three_height_cut_side_channel',
+                      'six_embedded_front_pressure_faces']:
+            assert form[field] is True
+        assert len(form['texture_pixels_and_uvs'])==7
+        assert len(form['sampled_contact_graph']['components'])==1 and not form['sampled_contact_graph']['isolated']
+        assert set(form['retained_authored_wear'])=={'colour_pixels_sha256','roughness_pixels_sha256'}
+    for field in ['texture_pixels_and_uvs','retained_authored_wear']:
+        assert report['native'][field]==report['imported'][field]
+
+
 def verify_preserved_cpu_contract(metadata,report):
     assert metadata['id']==report['id']=='openfa:building/legacy/040'
     assert metadata['mesh_nodes']==report['meshes']==len(report['protected_parts'])==75
@@ -289,6 +313,8 @@ def verify(root, record):
         raw = path((folder / 'model.glb').as_posix()).read_bytes()
         document = json.loads(raw[20:20+struct.unpack_from('<I', raw, 12)[0]])
         verify_animation_contract(metadata, report, document)
+    if metadata['id'] == 'openfa:building/legacy/041':
+        verify_preserved_filtration_contract(metadata,report)
     if metadata['id'] == 'openfa:building/legacy/040':
         verify_preserved_cpu_contract(metadata,report)
     if metadata['id'] == 'openfa:building/legacy/059':
