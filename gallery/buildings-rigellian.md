@@ -168,17 +168,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/052`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Gravitic Converter](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri13/front-quarter.png)
+![Gravitic Converter](../gallery/media/objects/rigellian/gravitic-converter/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri13/model.glb)
+[Blend](../sources/objects/rigellian/gravitic-converter/model.blend) · [GLB](../sources/objects/rigellian/gravitic-converter/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Gravitic Converter](../gallery/media/docs/assets/reconstruction/buildings/rigellian/gravitic-converter/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/gravitic-converter/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/gravitic-converter/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri13-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/gravitic-converter/imported-front-quarter.png)
 
 ## Energy Gatherer
 
