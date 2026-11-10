@@ -30182,7 +30182,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/174",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1035",
         "description_records": [
           1035
         ]
@@ -30256,11 +30256,30 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac24/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/goods-yard/model.blend",
           "present": true,
-          "sha256": "329c497bf83f0b3c05f3faaa9f2ef00ff9d7bdd14f21f622e142a52526604410",
-          "final_visual_acceptance": "not-established"
+          "sha256": "37c128d64e4739311b76761fde56053024e31f5deb91f2f263fee841f7d60d96",
+          "media": "gallery/media/objects/achaean/goods-yard",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac24-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/goods-yard/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/goods-yard/imported-rear-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB front (three casings visible)",
+              "image": "gallery/media/objects/achaean/goods-yard/imported-front.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -30270,7 +30289,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -30300,6 +30319,64 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 174
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac24/model.blend",
+          "present": true,
+          "sha256": "329c497bf83f0b3c05f3faaa9f2ef00ff9d7bdd14f21f622e142a52526604410",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/goods-yard/model.blend",
+        "sha256": "37c128d64e4739311b76761fde56053024e31f5deb91f2f263fee841f7d60d96",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/goods-yard",
+          "files": {
+            "gallery/media/concepts/achaean/ac24-review-1.png": "39e0a6f65011e6bf928355508a9832438406b45da583f82c8e6738f237ff0f66",
+            "gallery/media/objects/achaean/goods-yard/front-quarter.png": "a2172c5f9c5cad89134b1592cf97d7e52d9e2b8428faa5cae5887e2198b33f98",
+            "gallery/media/objects/achaean/goods-yard/imported-front-quarter.png": "a2172c5f9c5cad89134b1592cf97d7e52d9e2b8428faa5cae5887e2198b33f98",
+            "gallery/media/objects/achaean/goods-yard/imported-front.png": "f05b0fcff6c91fd52459a5f2b17dd09b92af65e55f484d399175d6828fd8f05d",
+            "gallery/media/objects/achaean/goods-yard/imported-rear-quarter.png": "6aa2184878d799044230ebe6d92aaa3309611e9ee3b00f9cd07077cb9bad4f99",
+            "gallery/media/objects/achaean/goods-yard/native-front-quarter.png": "55a22cde92eee5f4dc03b37fe7f5549434e2a7f3d1185a23fa37a3d974f18391",
+            "gallery/media/objects/achaean/goods-yard/native-front.png": "0569b06c42e08ddd3a6480b6481ffe780041a6fe2d8f51342ed824cabf12ad83",
+            "gallery/media/objects/achaean/goods-yard/native-rear-quarter.png": "2b86d198cf4d6a4e5ea3d2e721e19b45d5d27ed3306cb5e3cd4ae03e4730c9db",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac24/model.blend": "329c497bf83f0b3c05f3faaa9f2ef00ff9d7bdd14f21f622e142a52526604410",
+            "sources/docs/reconstruction/models/ac24-concept-prompt-1.txt": "3db1e498540d7f9945c06539bb337b1cfe6684600a3374ae1fe24b83c1ae863f",
+            "sources/materials/achaean/goods-yard/Blue violet source tips.png": "ac1db4ebc1465eb5893ae001d43d9cd8cc00d5bb0078d270d3938d428ec2b72d",
+            "sources/materials/achaean/goods-yard/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/goods-yard/Coral fine wear normal.png": "bef1048d97b12a3f013fec0182bd58055527d07459163c91eef3f8f3f87c70bf",
+            "sources/materials/achaean/goods-yard/Coral metal roughness.png": "efaef6c8b59203937dd615b0f6cedf9cb69d612a32ab3acfedff0cf196669985",
+            "sources/materials/achaean/goods-yard/Dark closed recesses.png": "d3fcf8341bda103eb5b12961b941586301d571019032d46813ed0217d5a7dae0",
+            "sources/materials/achaean/goods-yard/Ochre protected lower casings.png": "e778fa90e0588e1bed0f9bdec4d3c739dc8feffbe9036da1debf6e160b5a7c7b",
+            "sources/objects/achaean/goods-yard/model.blend": "37c128d64e4739311b76761fde56053024e31f5deb91f2f263fee841f7d60d96",
+            "sources/objects/achaean/goods-yard/model.glb": "09213e57f8665356ec2643d5ed0407d61400e2831d4d76f19ab90c171193b8a0",
+            "sources/objects/achaean/goods-yard/model.json": "1047c266970e4a562dfe1819dd5e812c77cca4319f4514301b06ef3eb2943055",
+            "sources/objects/achaean/goods-yard/runtime-review.json": "b321c65306f9f0ea658f06728f42f4f7be470511fd72e88cfecbd1f78a574ebb",
+            "sources/objects/achaean/goods-yard/visual-review.json": "1c1cb31dcceece8f73295b8a6b1cc20e8335dea6360e0113838f1d73cac8ccd7",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_goods_yard.py": "01a6326f3a38a73b01fa653ba610d526b4b390456275118e85f82f35b8291269",
+            "sources/tools/blender/checks_achaean_shipyard.py": "e397a226fc7a4df37f4531f8ea724bfa2fac33579bcd2bd3082ab99d382a36ae",
+            "sources/tools/blender/remaster_achaean_goods_yard.py": "9e18f216b66aa0e3fc5fbcf3241cec4b9aa7d82ce777bda37a003a4f49a6b173",
+            "sources/tools/blender/remaster_achaean_manoeuvring_device.py": "bccbd3e9cd29706fbf5b0af5dd1df712be840edefc562002bac491ed895cb4fe",
+            "sources/tools/blender/remaster_achaean_missile_launcher.py": "a0594e4649ef870b68a100439a1feb0e92214babd70da949b7a4169364c18a2d",
+            "sources/tools/blender/remaster_achaean_shipyard.py": "7ccce8d2dfa946f86da065ecb64a8b30a5d56d0e5a375f7d9a6e7957c4b6fbf6",
+            "sources/tools/blender/verify_achaean_building_centered.py": "c40d7ed4063b8a4e64954eef81d08ca4e37420a4a3579e42c38f1a809cc88860",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/goods-yard/runtime-review.json",
+          "objects/achaean/goods-yard/visual-review.json"
+        ]
       }
     },
     {

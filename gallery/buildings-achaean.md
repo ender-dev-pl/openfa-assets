@@ -286,11 +286,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/174`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Goods Yard](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac24/front-quarter.png)
+![Goods Yard](../gallery/media/objects/achaean/goods-yard/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac24/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac24/model.glb)
+[Blend](../sources/objects/achaean/goods-yard/model.blend) · [GLB](../sources/objects/achaean/goods-yard/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac24-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/goods-yard/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/goods-yard/imported-rear-quarter.png) · [Actual independent GLB front (three casings visible)](../gallery/media/objects/achaean/goods-yard/imported-front.png)
 
 ## Stun Tower
 
