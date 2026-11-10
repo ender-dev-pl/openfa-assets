@@ -1,6 +1,6 @@
 # Rigellian building remaster: preservation baseline
 
-Tracking: openfa-assets #253; prior reference programme #31 and refining programme #185. This is an inspection milestone, not completed remaster or game integration acceptance.
+Tracking: openfa-assets #253; prior reference programme #31 and refining programme #185. This file preserves the initial inspection milestone. Current completed asset delivery is recorded in [the completion audit](rigellian-building-remaster-completion.md); game integration remains separate.
 
 ## Existing models to preserve
 
@@ -14,7 +14,7 @@ All paths above are relative to `sources/docs/assets/reconstruction/`. See [the 
 
 A fresh Blender 4.5.15 session opened each saved native candidate, then cleared the scene and independently imported its GLB. Matching mesh names and frame-1 world bounds agree within 4.77e-7 scene units. Source and export hashes remained unchanged. No GLB clips are present in these five inspected candidate/predecessor pairs. This does not establish material appearance, UV parity, exhaustive states, geometry fidelity, calibrated dimensions, frame rate or visual acceptance.
 
-RI01 and RI03 inventory evidence currently binds earlier sources instead of their later refinements. The inspection includes those predecessors to expose the difference. It does not silently replace the inventory selection or rebind an acceptance claim. RI02 already points to its current filtration study.
+At the baseline inspection, RI01 and RI03 inventory evidence bound earlier sources instead of their later refinements. The inspection includes those predecessors to expose the difference. It does not silently replace the inventory selection or rebind an acceptance claim. RI02 already points to its current filtration study.
 
 ## Reference interpretation
 
@@ -26,7 +26,7 @@ The current game's `LegacyBuildingSpriteFrameSelector.cs` hash is `9f2f4401d8576
 
 Original functional source SHA-256: `559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449`. Culture source SHA-256: `767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4`. These original files were checked locally, not copied into this repository.
 
-## Remaining delivery gates
+## Delivery gates at the baseline inspection
 
 Preserve the good RI01/RI02 geometry; assess concept history and missing current protocol evidence before authoring. Continue RI03 onward from existing studies. Each ready building needs actual native/import renders against legacy and its concept, material/batch evaluation without silhouette degradation, explicit canonical selection, spatial and state contracts, gallery updates, source-bound checks, a signed milestone and a game-thread handoff. Triangle or material counts alone are not an Android performance certification. Keep historical studies out of package selection rather than duplicating gameplay/menu payloads.
 

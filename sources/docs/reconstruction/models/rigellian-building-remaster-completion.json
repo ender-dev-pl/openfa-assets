@@ -1,0 +1,1300 @@
+{
+  "schema_version": 1,
+  "issue": 253,
+  "pull_request": 254,
+  "audited_asset_revision": "285399d864d18962f4b953016c1f34cc769c72de",
+  "scope": "Completed Rigellian building asset delivery; independent game-client integration and final user artistic acceptance are not asserted",
+  "model_count": 23,
+  "current_pairs": 23,
+  "pending": [],
+  "total_bound_renders": 287,
+  "recomputed_native_import_pairs": 139,
+  "maximum_foreground_mean_channel_error_255": 0.45753621842496284,
+  "maximum_silhouette_disagreement_fraction": 1.7156778643241944e-05,
+  "requirements": [
+    {
+      "id": "all-23-identities",
+      "status": "verified",
+      "evidence": "RI01\u2013RI23 / IDs040\u2013062; delivery pending list empty; one current inventory study and matching gallery selection per ID."
+    },
+    {
+      "id": "preserve-assessed-geometry",
+      "status": "verified",
+      "evidence": "RI01 all75parts/40,636tri and RI02 all83parts/65,890tri retained without reduction; all other source-specific protected anatomy and intentional measured reductions remain source-bound."
+    },
+    {
+      "id": "actual-legacy-evidence",
+      "status": "verified",
+      "evidence": "Fresh read-only archive payload/palette/layer decode and VID selected-phase decode match all23 saved private references; actual function901\u2013923 and culture18 sources match recorded hashes."
+    },
+    {
+      "id": "concept-feedback",
+      "status": "verified",
+      "evidence": "Each asset has a selected actual ImageGen output, exact agent prompt and explicit legacy/concept deviations. One or two requests per asset, never more than three; rejected/no-output attempts remain recorded."
+    },
+    {
+      "id": "consistent-technical-geometry",
+      "status": "verified",
+      "evidence": "Technical information views derive from the same canonical meshes and components. Outlined catalogue phases are technical reference, not independent operating models or proof of hidden geometry."
+    },
+    {
+      "id": "mechanisms-and-states",
+      "status": "verified",
+      "evidence": "RI10 and RI18 exported cycle/discrete descriptor clips checked against native/imported poses. RI11 remains static per its two-descriptor evidence; RI19/22/23 manual yaw hierarchies and sockets verified. Authored timings and uncalibrated mappings remain explicit."
+    },
+    {
+      "id": "single-runtime-selection",
+      "status": "verified",
+      "evidence": "One current Blend/GLB pair per ID in inventory and delivery manifest across gameplay/build/SciTek. Historical studies are outside current selection; this does not claim the downstream game package has already been rebuilt."
+    },
+    {
+      "id": "saved-native-independent-glb",
+      "status": "verified",
+      "evidence": "All23 current binary/helper/report bindings verified; actual Blender4.5.15 native/import evidence covers287renders. Fresh recomputation checks139native/import pairs."
+    },
+    {
+      "id": "actual-export-budgets",
+      "status": "verified",
+      "evidence": "All23 GLB index-accessor triangle totals match delivery/runtime counts. RI10 corrected to19,010 evaluated/export triangles;13,170 raw triangles retained as a separate diagnostic. Regression prevents recurrence."
+    },
+    {
+      "id": "spatial-and-performance-limits",
+      "status": "verified",
+      "evidence": "Each delivery records root/axes/footprint/class/construction updates/bind bounds, material/map/mesh counts and state contract; no Android frame-rate or calibrated game-scale claim."
+    },
+    {
+      "id": "both-galleries",
+      "status": "verified",
+      "evidence": "Interactive catalogue and Markdown Rigellian group select the same current sources/exports; animated studies retain actual imported-GLB playable previews. Project and gallery runtime checks pass."
+    },
+    {
+      "id": "signed-milestones-and-issues",
+      "status": "verified",
+      "evidence": "Every current model milestone has valid GitHub GPG verification and technical English issue253 comments linked to commit; RI10 correction signed and documented separately."
+    },
+    {
+      "id": "main-thread-handoffs",
+      "status": "verified",
+      "evidence": "Read-back confirmed all23 per-model delivery acknowledgements, plus the superseding RI10 correction, in the authorized main integration thread."
+    },
+    {
+      "id": "disk-care-and-source-privacy",
+      "status": "verified",
+      "evidence": "Existing checkout reused; no game build, archive or new worktree. Only precisely identified current-audit temporary frames/dependencies removed after verification. Original pixels remain private; changed publication inputs pass metadata checks."
+    },
+    {
+      "id": "mobile-programme-separation",
+      "status": "verified",
+      "evidence": "Issue248 remains OPEN and unfinished. This building audit does not claim mobile-ship completion."
+    }
+  ],
+  "models": [
+    {
+      "key": "RI01",
+      "id": "openfa:building/legacy/040",
+      "name": "Central Unit",
+      "blend": "sources/objects/rigellian/central-unit/model.blend",
+      "glb": "sources/objects/rigellian/central-unit/model.glb",
+      "binaries": {
+        "blend": "2327740c93e3390ee2493b22724224dbd688dc955f1e272ba136b9151210b17d",
+        "glb": "1acdc64d42c9de093d1afef274705b7f0c7b0e22a1aacc997e79941e3281db08"
+      },
+      "source": "sources/docs/assets/reconstruction/rigellian-refined/ri01/model.blend",
+      "source_sha256": "488485fa840b3599c104bbcfc1872c4b8410688adee9f1d4dc7a5a3592295ac3",
+      "triangles": 40636,
+      "meshes": 75,
+      "export_materials": 7,
+      "embedded_images": 2,
+      "render_count": 9,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.10520714865962633,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 2,
+      "concept": "gallery/media/concepts/rigellian/ri01-review-2.png",
+      "concept_sha256": "4e8ab726370cd3d55d4696fac230d3dd0a177a49db228ace571183dbc8ebabce",
+      "exact_prompt": "sources/docs/reconstruction/models/ri01-concept-prompt-2.txt",
+      "native_imported_proof": "sources/objects/rigellian/central-unit/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/central-unit/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI01",
+        "surface_payload_sha256": "d7e2a7e0e8934ecfa051a6062654ebaa70e3de80ca3476c519663472a9658138",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "93f8d14ff05cbbb8c2fe37e2fd04cb81ef9797cd45a8c00439da639182b359ca",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "ef3e69f12711d140ef306b1070d696e4c73b37dd",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6757808911"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static assessed CPU; complete surface body1 over ground0. Catalogue RI01.VID reveal/highlight is not rotation. RIS3 shared construction separate; no recovered moving/operating clip, client states and scale uncalibrated.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI02",
+      "id": "openfa:building/legacy/041",
+      "name": "Filtration Plant",
+      "blend": "sources/objects/rigellian/filtration-plant/model.blend",
+      "glb": "sources/objects/rigellian/filtration-plant/model.glb",
+      "binaries": {
+        "blend": "81f07ae516f2be27adaa913c895d0a38fd002d112592b3e49e19f32afd4c7688",
+        "glb": "9d04713c2753cf581651454ef5800b9bb8cf859fad63ebb0aeaed2e465881136"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/filtration-plant/model.blend",
+      "source_sha256": "17592f38db313a8177902099004582bc388032253f0cf7c5c0c0445e98cab4dd",
+      "triangles": 65890,
+      "meshes": 83,
+      "export_materials": 8,
+      "embedded_images": 2,
+      "render_count": 9,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.2736492336998874,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri02-review-1.png",
+      "concept_sha256": "fd2d168c69a8a00dcdee9f1581db738eb9161b6e26e30b47c6f47afddad67c09",
+      "exact_prompt": "sources/docs/reconstruction/models/ri02-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/filtration-plant/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/filtration-plant/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI02",
+        "surface_payload_sha256": "ef4abe01609771d9aad30b599a6dadb18b18ddb621e30bd192ae5293157ddcb9",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "8ceab9e78729b195daed0409ffd8b50d74397a81a961abd8d28c1070f220b638",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "6ecb26a2d280faab1e46c7af099e5e9c5d9709e6",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6757938058"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static complete surface body1 over ground0. Catalogue RI02.VID reveal/highlight is not rotation. RIS2shared construction separate; no recovered moving/operating clip, client states and scale uncalibrated.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI03",
+      "id": "openfa:building/legacy/042",
+      "name": "Nourishment Bank",
+      "blend": "sources/objects/rigellian/nourishment-bank/model.blend",
+      "glb": "sources/objects/rigellian/nourishment-bank/model.glb",
+      "binaries": {
+        "blend": "ad4d328fda63d9efca0b1a60b68362a7883d681708254c3cff23d9e8c5e95afc",
+        "glb": "21a147d4da80be44c3a528b7671fb060995d28c0d74bcdf5adc6ad90c5be3bbd"
+      },
+      "source": "sources/docs/assets/reconstruction/rigellian-refined/ri03/model.blend",
+      "source_sha256": "1875962a486bc565cb5a0b437a021ffc3e9711b222c6f8edf7bccb076af56f4a",
+      "triangles": 50018,
+      "meshes": 43,
+      "export_materials": 7,
+      "embedded_images": 4,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.13747096240619794,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri03-review-1.png",
+      "concept_sha256": "add7786fa55445a4a7c245698340a47be0337bbb98923ac1cb1eedfe02a54df3",
+      "exact_prompt": "sources/docs/reconstruction/models/ri03-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/nourishment-bank/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/nourishment-bank/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI03",
+        "surface_payload_sha256": "945af93cf1f6dbd0b2f1623eb83d1f12b257002ccb887df65d90744930535f19",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "bfb56fc5d8bcf8cb3498443f61409cafb0a46f0b9494b89467ea45b53ab42e59",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "315933c6b8a7668af46bc8fd8c1f3d300df81a47",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6753181109"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static; no clips. Legacy catalogue reveal/highlight is presentation, not mechanical motion.",
+      "integration_limits": "43 editable components/7 used materials/4 embedded maps retained. No Android FPS, client scale/mount or final user artistic acceptance inferred."
+    },
+    {
+      "key": "RI04",
+      "id": "openfa:building/legacy/043",
+      "name": "Community",
+      "blend": "sources/objects/rigellian/community/model.blend",
+      "glb": "sources/objects/rigellian/community/model.glb",
+      "binaries": {
+        "blend": "894f48068c70a3ffdddd99ec3a3b6d2f1dd1e44e7eaa706ad9cf688a2f23272d",
+        "glb": "410f73be8376a170961049ff1a1bb4601865b3685cb16bd9dc3509d1e5d48833"
+      },
+      "source": "sources/docs/assets/reconstruction/rigellian-refined/ri04/model.blend",
+      "source_sha256": "ecdb6edd7c7388be9fcdf91c12b21bf5fc01c1a21b887ac8bc24d4759cd4a137",
+      "triangles": 42536,
+      "meshes": 56,
+      "export_materials": 9,
+      "embedded_images": 6,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.1261086643258712,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri04-review-1.png",
+      "concept_sha256": "8740447ea7697e40de311a85e96b339823f30853064bdf7101cbbc129e6497fb",
+      "exact_prompt": "sources/docs/reconstruction/models/ri04-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/community/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/community/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI04",
+        "surface_payload_sha256": "7be0af43eb59b80550dcb2d2b98563fb718808cf0c0d3e508682ef700477289e",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "5de0d681e7dd0458e5bc01e1e2146e7c88e93bc1567ba2299227f78ec7e7007f",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "c90fabbb1c84eeecc18c97871fd90c07a98013c7",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6753496163",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6753709432"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static RI04; catalogue reveal/highlight is presentation. Crown function and movement are not established.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI05",
+      "id": "openfa:building/legacy/044",
+      "name": "Health Unit",
+      "blend": "sources/objects/rigellian/health-unit/model.blend",
+      "glb": "sources/objects/rigellian/health-unit/model.glb",
+      "binaries": {
+        "blend": "9dffaf5551f728938bda8e59a08d49d2951698e3751f1ae9931d1f85c92f26bb",
+        "glb": "875af1266ef031b39517ef10ac2f049701e21da0abd2dd5c583ebead5ca89678"
+      },
+      "source": "sources/docs/assets/reconstruction/rigellian-refined/ri05/model.blend",
+      "source_sha256": "64b64a680da6843573d254c0450ab5b50a02147c3aa63d213d17185fe7928162",
+      "triangles": 47336,
+      "meshes": 41,
+      "export_materials": 9,
+      "embedded_images": 6,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.19536881547231458,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri05-review-1.png",
+      "concept_sha256": "019fd27167ef5219e1c3d569117a99680d4ec8f8d7c70ad2065fff340bcdca42",
+      "exact_prompt": "sources/docs/reconstruction/models/ri05-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/health-unit/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/health-unit/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI05",
+        "surface_payload_sha256": "80d09773e8dbaaa3c84db024ff22a2ecc5ea6326b6695770432a9a27fff90b8a",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "111a7f87e325c080fc517e1528a5be5ffd25d530a31e4673caf3072600a44f34",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "c17e38fab3155f39a6191751349a0c05fe824f13",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6753709432",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6753827520"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static RI05; catalogue reveal/highlight is presentation. Medical role is established; crown motion and hidden mechanisms are not.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI06",
+      "id": "openfa:building/legacy/045",
+      "name": "Strategic Bunker",
+      "blend": "sources/objects/rigellian/strategic-bunker/model.blend",
+      "glb": "sources/objects/rigellian/strategic-bunker/model.glb",
+      "binaries": {
+        "blend": "4d474feb44e8948a28a11fb57d307463ce53fb6a24bffbbe5b0bb27fff83c1eb",
+        "glb": "b6c5ea58874057ed7f47c1788dde68082c9ee523437ed9e424191adaadd6bc00"
+      },
+      "source": "sources/docs/assets/reconstruction/rigellian-refined/ri06/model.blend",
+      "source_sha256": "84c180297fd8287234aab061161ab6068373c7e335fc2b4ef511d76c54342600",
+      "triangles": 79236,
+      "meshes": 47,
+      "export_materials": 8,
+      "embedded_images": 6,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.29135857415967875,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri06-review-1.png",
+      "concept_sha256": "30e1b27fd22da52c2e0f8e8fb375975205e43fc9fb8827cf3847583b9a705d11",
+      "exact_prompt": "sources/docs/reconstruction/models/ri06-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/strategic-bunker/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/strategic-bunker/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI06",
+        "surface_payload_sha256": "a1100743859b7bc4e3f5e03cdf4c58097fc0cdc71394c1e12e62614ab55cce77",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "aa5c1fb7831b7d948db0739d194b52cf15c8e536591c4a5fa5d0b536183bdb05",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "81d34232963867c9a2e2d3d014ff50a76f296d8d",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6753827520",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6753949789"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static RI06; catalogue reveal/highlight is presentation. Command/research-coordination role is established; crown operation and roof-feature engineering remain interpretations.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI07",
+      "id": "openfa:building/legacy/046",
+      "name": "Science Labs",
+      "blend": "sources/objects/rigellian/science-labs/model.blend",
+      "glb": "sources/objects/rigellian/science-labs/model.glb",
+      "binaries": {
+        "blend": "bf887c645a2becd75ff69dac610359dc1ae69522f68c37db0ac28672c8ed4787",
+        "glb": "d7b52e2984a4a578cb183cc68503e0b8441405ffd09cfe18a01740947f6b74e3"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/science-labs/model.blend",
+      "source_sha256": "c51ab9ab5f17c8f5b71ba38eee1b8de76399c29de2422259139fb112ce1588ca",
+      "triangles": 65184,
+      "meshes": 38,
+      "export_materials": 8,
+      "embedded_images": 4,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.1838451756754403,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri07-review-1.png",
+      "concept_sha256": "9f7cdc7369d9fadccdfce38ec14964ded9c17256f1c0fe4f7ecb9a12f54ee42d",
+      "exact_prompt": "sources/docs/reconstruction/models/ri07-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/science-labs/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/science-labs/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI07",
+        "surface_payload_sha256": "94cde81e0cbb9f87ace07e3047c2e7849ddd83bb2214a7cfbbac1cf6023d7ecf",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "1e13417e4e6c92efef10bdbd9a042a896af6cbf80b8084236c1e3507f24edd02",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "9be82297bd0376805cb6f92240c0351d3427d932",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6753949789",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754083908"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static RI07; catalogue reveal/highlight is presentation. Mainly civilian fundamental-research role is established; silver crown operation and roof-feature engineering remain interpretations.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI08",
+      "id": "openfa:building/legacy/047",
+      "name": "Databanks",
+      "blend": "sources/objects/rigellian/databanks/model.blend",
+      "glb": "sources/objects/rigellian/databanks/model.glb",
+      "binaries": {
+        "blend": "6811da5ca5d1b9f036ca5d85e046b8287886912572abc3c7be0418e255b57a8f",
+        "glb": "1fc633638c2622bdea75421ed1996648d31612111c69c2636b30d379d9690e68"
+      },
+      "source": "sources/docs/assets/reconstruction/rigellian-refined/ri08/model.blend",
+      "source_sha256": "6c31e174e16cceba7c7e8716d961604b23dfbb86d92c677a364c50433c5c4d8b",
+      "triangles": 77840,
+      "meshes": 50,
+      "export_materials": 9,
+      "embedded_images": 5,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.060290057545820445,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri08-review-1.png",
+      "concept_sha256": "405c459e5ce28de31759d07e2f7b59d9dcecae5df2459a411dc609ccbb7b52fb",
+      "exact_prompt": "sources/docs/reconstruction/models/ri08-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/databanks/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/databanks/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI08",
+        "surface_payload_sha256": "78dd5b5543c76a83be5508e7b894632ca2c96bf7ed25346784661f6a183e71ce",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "f57ae8c8e16a6d2b1b2f8f4a5abdcd70badd1968182341a8fff74d77de946367",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "f703fdf5d596702291a5b6e722eb47f190488a93",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754083908",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754205285"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static RI08; catalogue reveal/highlight is presentation. Research storage/remote communication roles are established; equipment purpose and hidden port engineering remain interpretations.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI09",
+      "id": "openfa:building/legacy/048",
+      "name": "Construction Unit",
+      "blend": "sources/objects/rigellian/construction-unit/model.blend",
+      "glb": "sources/objects/rigellian/construction-unit/model.glb",
+      "binaries": {
+        "blend": "8d76030e76772edaba35d7d95ecda2f6db5e781e0ab6a1099fd88441f4e1e9e9",
+        "glb": "7fd2f22285e90c5dc24794e52b1560b80c82baaaea61e3e49e7e99ac27f80165"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/construction-unit/model.blend",
+      "source_sha256": "f5f76cdec4916d08ca88ec4cd6dd2b3abca58a0d318adf1a5039874e4e1a6ae3",
+      "triangles": 49372,
+      "meshes": 46,
+      "export_materials": 8,
+      "embedded_images": 4,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.13927739963390143,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri09-review-1.png",
+      "concept_sha256": "f5c7263750373b7f55c20bba135cc4a6adf3829488c89e54e8bb1b36283a3220",
+      "exact_prompt": "sources/docs/reconstruction/models/ri09-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/construction-unit/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/construction-unit/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI09",
+        "surface_payload_sha256": "1c28150248b109b5d2aa83b1d850ecbd7832f01ed333ca8c405053f1316dba41",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "048011a1929b0228b5d88d6370852916a8587652c330f5da822e0694ed958f19",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "bc797c56994f47ef77b9cefd35b351e8043c7a8c",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754205285",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754512291"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static RI09; catalogue reveal/highlight is presentation. Ship construction role is established; exact equipment mechanics, hidden connections and construction cycle remain interpretations.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI10",
+      "id": "openfa:building/legacy/049",
+      "name": "Ground Deck",
+      "blend": "sources/objects/rigellian/ground-deck/model.blend",
+      "glb": "sources/objects/rigellian/ground-deck/model.glb",
+      "binaries": {
+        "blend": "3d63fe056a2ae9c2d70d4ded74c956940c8280b5477fee6b49aaf510bcf45f6e",
+        "glb": "05a52a73cc419427e253ca94d927d959db9c5a5229d2a3865769272357e8c801"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/ground-deck/model.blend",
+      "source_sha256": "6f867278830e5a7f96cb6cf57c5e8c8a395dcc909dce5a99b7285f6eade1ad3f",
+      "triangles": 19010,
+      "meshes": 45,
+      "export_materials": 7,
+      "embedded_images": 4,
+      "render_count": 40,
+      "paired_views": 20,
+      "maximum_foreground_mean_channel_error_255": 0.005604599945593644,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri10-review-1.png",
+      "concept_sha256": "0bc5f42495f0c6fb20d8affacc8ec7cee404194807c0c7d2f3c9727060bbe119",
+      "exact_prompt": "sources/docs/reconstruction/models/ri10-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/ground-deck/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/ground-deck/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI10",
+        "surface_payload_sha256": "ecc20c5c56da2219fa10cc3ad1fb5fd6cc7b47c818855aa13d8705f84a2fddb9",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 16,
+        "catalogue_sha256": "bf219f85028372df25f1008fd9d4c27de9386b7b86d7571f13736071fec210d9",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "285399d864d18962f4b953016c1f34cc769c72de",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6758293959",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754512291",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754662055"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [
+        "GroundDeckCoverCycle",
+        "GroundDeckDescriptorStates"
+      ],
+      "state_contract": "Animated deep hangar-access shaft. GroundDeckCoverCycle is inferred preview; GroundDeckDescriptorStates maps original descriptors to rigid cover poses without duplicate model payloads. Empty cover overlays do not remove static housing; descriptor17 mixed shadow composition remains unverified.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI11",
+      "id": "openfa:building/legacy/050",
+      "name": "Probe Launch",
+      "blend": "sources/objects/rigellian/probe-launch/model.blend",
+      "glb": "sources/objects/rigellian/probe-launch/model.glb",
+      "binaries": {
+        "blend": "990188442e525acc3b7c71207261e656ed1d118f5c18bb8c5d77546c0b4f1091",
+        "glb": "8fe9e8bd8c0ec727b10fe399e6fff434f7ba3fcdecf717ba43aae7a31a155fa4"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/probe-launch/model.blend",
+      "source_sha256": "8291b4565b5df7b88f3d9578568ba5f263578acc4ed5b3da330fa4f27956d3c7",
+      "triangles": 25914,
+      "meshes": 21,
+      "export_materials": 6,
+      "embedded_images": 4,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.4219762801098248,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri11-review-1.png",
+      "concept_sha256": "786d9a52f41a7b6b751e5d86a08ab0c74f07da3647ae23de0251db995726e570",
+      "exact_prompt": "sources/docs/reconstruction/models/ri11-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/probe-launch/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/probe-launch/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI11",
+        "surface_payload_sha256": "3742a26657a9726189de2a035f10204772b1bf41d0a82abb14392d4ad5683728",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "2a0805e18533dcb3bdf6c19d35ca2e0662ff38f31008b8dbee4c05a2f1d2ce4d",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "e5e27a5267162ea531838693ba3c2fee1b30e389",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754662055",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754858620"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Permanent open RI11 satellite construction/launch port. Legacy has only shadow descriptor0 and static body1; no lid or opening/closing clip is established. Satellite entity launch is separate from the static housing.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI12",
+      "id": "openfa:building/legacy/051",
+      "name": "Deep Space Probes",
+      "blend": "sources/objects/rigellian/deep-space-probes/model.blend",
+      "glb": "sources/objects/rigellian/deep-space-probes/model.glb",
+      "binaries": {
+        "blend": "33d7d56d697ccbca932a6713c2751cbcdc9824164b8fa24f153278ef20346f98",
+        "glb": "0f72af1a986ea5582ce8cfec50badf614ffbd4376c8d37dcd01bd1252c033307"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/deep-space-probes/model.blend",
+      "source_sha256": "6850143012953d54a53b134163de741a0fd4a35a08307ee90952794bec0a7916",
+      "triangles": 44510,
+      "meshes": 19,
+      "export_materials": 7,
+      "embedded_images": 6,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.0061061745272271584,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 2,
+      "concept": "gallery/media/concepts/rigellian/ri12-review-2.png",
+      "concept_sha256": "98c95a46fa8dae2da67fd09dadd46b3612d6dc6f4040d237cd8838cc1ad9fa03",
+      "exact_prompt": "sources/docs/reconstruction/models/ri12-concept-prompt-2.txt",
+      "native_imported_proof": "sources/objects/rigellian/deep-space-probes/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/deep-space-probes/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI12",
+        "surface_payload_sha256": "fd92cc6903edee079bf1ddda483fba26238c766a338a5b6c868f4865c6f02132",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "3a5b030624ac1c6dc3f6541c6f37cb9499c098ff25327026ca97f05e3894d1cf",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "6850249bac5e55b5cd4033953115f46d9ffcc9a5",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754858620",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754969225"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static research and observation sensor tower. Catalogue phases reveal and highlight the same anatomy, not mechanical states or additional spatial views. Shared RIS2 construction remains separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI13",
+      "id": "openfa:building/legacy/052",
+      "name": "Gravitic Converter",
+      "blend": "sources/objects/rigellian/gravitic-converter/model.blend",
+      "glb": "sources/objects/rigellian/gravitic-converter/model.glb",
+      "binaries": {
+        "blend": "9872dbefe4ea44567d30a03178f9aa5a9491eee407894adf15482f3e9b12db31",
+        "glb": "69451f802b4fa78c9ca9200cb67443e1e190885a789ebec6585c5efb262698f0"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/gravitic-converter/model.blend",
+      "source_sha256": "9fe905d1465b5e2979e5753b398756aea53d33282d726691b16f9fb96ed279e9",
+      "triangles": 96640,
+      "meshes": 34,
+      "export_materials": 8,
+      "embedded_images": 8,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.051892352837902236,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri13-review-1.png",
+      "concept_sha256": "73ac3f61a40e3d75effdefe0cd2942af837357cc5a25fce4d223a1a7dc0f3c36",
+      "exact_prompt": "sources/docs/reconstruction/models/ri13-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/gravitic-converter/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/gravitic-converter/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI13",
+        "surface_payload_sha256": "117630706dbfcf524a200f73b95ef2134f891909ca2e09f513dc637bf5121f1f",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "8685e3289c70111b5f21c1a0ae1de8d464961e1bb9dbfc24d7cab25f4072c995",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "8f42940515b623040c18d93de3421ea1d182fe2d",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6754969225",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6755117930"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static combined gravitic nullifier and asteroid engine. Catalogue phases reveal/highlight the same anatomy rather than a mechanical cycle or spatial rotation. Shared RIS2 construction remains separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI14",
+      "id": "openfa:building/legacy/053",
+      "name": "Energy Gatherer",
+      "blend": "sources/objects/rigellian/energy-gatherer/model.blend",
+      "glb": "sources/objects/rigellian/energy-gatherer/model.glb",
+      "binaries": {
+        "blend": "240386ef69fdb1756db58140ccec496210d691349907856b4ff6923211b26a8b",
+        "glb": "2cc1f2395781cc51cbd65c12519210481f82e03ec448cc5f2b92aaa427c903ba"
+      },
+      "source": "sources/docs/assets/reconstruction/rigellian-refined/ri14/model.blend",
+      "source_sha256": "bc53a47f91b28605cc923a02692e6fadef54fbc96ff5445ce27e9926eca79540",
+      "triangles": 86060,
+      "meshes": 26,
+      "export_materials": 7,
+      "embedded_images": 9,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.45753621842496284,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri14-review-1.png",
+      "concept_sha256": "b6c41fa144e957dd8805e26b681b79f83527b2d7406e4198ceb67979508e4e5d",
+      "exact_prompt": "sources/docs/reconstruction/models/ri14-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/energy-gatherer/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/energy-gatherer/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI14",
+        "surface_payload_sha256": "1b9d52fa30becd16b665957c8b1346dcfe79d76da53f4007caeaeb755f1f1f1b",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "583ffd75e155964eb395395f9b739e4bf522bea9bb5f26a7b23479e744a15fb8",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "db316456f18e43d158538faeba7cb1f148a734e2",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6755117930",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6755230464"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static power-generation installation; the original explicitly leaves its method undisclosed. Catalogue reveal/highlight is not a mechanical cycle or rotation. Shared RIS2 construction separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI15",
+      "id": "openfa:building/legacy/054",
+      "name": "Energy Globe",
+      "blend": "sources/objects/rigellian/energy-globe/model.blend",
+      "glb": "sources/objects/rigellian/energy-globe/model.glb",
+      "binaries": {
+        "blend": "3a8c835172d61dbd9a2aca3e14baa32b8864e6392f63481118466700c0d36d41",
+        "glb": "42a74467664e4ece8d14b28565669875fe78b7cf65463dbf69c1ff4e3f487317"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/energy-globe/model.blend",
+      "source_sha256": "14f823676ebeddb1402929572f8aee2c4b90bea45c7732939aa59eb1606e0f33",
+      "triangles": 45512,
+      "meshes": 16,
+      "export_materials": 8,
+      "embedded_images": 8,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.0047254549714910565,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri15-review-1.png",
+      "concept_sha256": "5c298b8ee0bc976d998dbaa89eb289e1cb04ee51a8b0fcab7af2cb68af78271f",
+      "exact_prompt": "sources/docs/reconstruction/models/ri15-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/energy-globe/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/energy-globe/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI15",
+        "surface_payload_sha256": "7cd1c68a764d07e7897a517bc5e84b187ad4f4ec27bbe0dc35adae38c54d07ed",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "9a49668919b991b02d52c74e5e22be29319f1d1e27d49e0f024a34b29387ed9d",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "f31ba98a3de9714b093e48729e3869d85ba99188",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6755230464",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6755361276"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static energy-storage globe. Catalogue reveal/highlight is not a mechanical cycle or spatial rotation. No emission is established for the green face. Shared RIS2 construction remains separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI16",
+      "id": "openfa:building/legacy/055",
+      "name": "Shield Generator",
+      "blend": "sources/objects/rigellian/shield-generator/model.blend",
+      "glb": "sources/objects/rigellian/shield-generator/model.glb",
+      "binaries": {
+        "blend": "e79cea191577227fe7c59f3041c9cdb7bbdd58560de3779c2a93946a04417bb5",
+        "glb": "be8f7251f8d6d298bb808b0d4692d4ab677964ce0bf733280ecfa214487f9f27"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/shield-generator/model.blend",
+      "source_sha256": "af72ce08f8544e3831d38fce416ab5e49ca0b1989796285bb6f513eed6cbb8bc",
+      "triangles": 76628,
+      "meshes": 19,
+      "export_materials": 8,
+      "embedded_images": 12,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.0073061071562382915,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 2,
+      "concept": "gallery/media/concepts/rigellian/ri16-review-2.png",
+      "concept_sha256": "dd8f6105994ed014235d3ba09945dfff8eb8e3ce9f0400a6b19a8241a2507d13",
+      "exact_prompt": "sources/docs/reconstruction/models/ri16-concept-prompt-2.txt",
+      "native_imported_proof": "sources/objects/rigellian/shield-generator/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/shield-generator/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI16",
+        "surface_payload_sha256": "195c9682710c8952ed6a060d291a2df33abff2fe84115c70e32a016ad9ca39b2",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "d024edb80bcb7525f2225d4317bf30c61345b6ad497c24a96c1aaef72057370e",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "3830aab4961ee4f1c352011697c63e4e469568e4",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6755361276",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6755496552"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static protective-field installation. Catalogue reveal/highlight is not a mechanism cycle or camera rotation. Functional analogy to Terran Screen Generator does not establish crystals or emission. Shared RIS2 construction separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI17",
+      "id": "openfa:building/legacy/056",
+      "name": "Arms Unit",
+      "blend": "sources/objects/rigellian/arms-unit/model.blend",
+      "glb": "sources/objects/rigellian/arms-unit/model.glb",
+      "binaries": {
+        "blend": "77d6bcd37107f496c7803fd77a44e2b0c3679d11bbcab55965987c7c0fbb893d",
+        "glb": "18d57e2d233aea7f8c08b593106276393aedf1fae0e36d722e548b9dde92fe4f"
+      },
+      "source": "sources/docs/assets/reconstruction/rigellian-refined/ri17/model.blend",
+      "source_sha256": "7f58ca047fd49906ba77b921a453ea61f2aa93d3d56bc62f87b8abfa12c996f7",
+      "triangles": 43692,
+      "meshes": 23,
+      "export_materials": 8,
+      "embedded_images": 10,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.39931239588958783,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 2,
+      "concept": "gallery/media/concepts/rigellian/ri17-review-2.png",
+      "concept_sha256": "9393f566a60cc2f98c9f4d2626d86e519fb5652a8e429cef224322d757da7bc9",
+      "exact_prompt": "sources/docs/reconstruction/models/ri17-concept-prompt-2.txt",
+      "native_imported_proof": "sources/objects/rigellian/arms-unit/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/arms-unit/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI17",
+        "surface_payload_sha256": "291117bb091e6d2de18694c1aeb90b06905d92e29205c21882b9580bf4c61b86",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "ab935d7cefcfe7d793adbb6b689321a4b2e285195c0fec16d026c6195e9fa585",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "d158bc9f5c658293f125f2a4c611fca9b837af9d",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6755496552",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6755607646"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static annular industrial building with open recess, low floor and three-prong crown. Catalogue reveal/highlight is not mechanism motion or camera rotation. No hangar, silo or closing lid is established. Shared RIS3 construction separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI18",
+      "id": "openfa:building/legacy/057",
+      "name": "Missile Launcher",
+      "blend": "sources/objects/rigellian/missile-launcher/model.blend",
+      "glb": "sources/objects/rigellian/missile-launcher/model.glb",
+      "binaries": {
+        "blend": "4d9837de686fcb4631725b44280a0007e8d03d3b92ed91784dcec1ffcdc0a13e",
+        "glb": "ff1b899465c6b334b52b540dce124ecd6fe3b75c859746ce9d1748c7a32f8679"
+      },
+      "source": "sources/docs/assets/reconstruction/launch-facilities/rigellian/ri18/model.blend",
+      "source_sha256": "102e2f5be43bac358a3a15f3b5552e386b7b52766b0ea45f61235a8b50cc37b1",
+      "triangles": 54796,
+      "meshes": 38,
+      "export_materials": 11,
+      "embedded_images": 8,
+      "render_count": 16,
+      "paired_views": 8,
+      "maximum_foreground_mean_channel_error_255": 0.13565595716198126,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 2,
+      "concept": "gallery/media/concepts/rigellian/ri18-review-2.png",
+      "concept_sha256": "2e148e7fe3feb841ce126ad8905039b9ddd9277f0925f3adaadcc7b443c0a7a4",
+      "exact_prompt": "sources/docs/reconstruction/models/ri18-concept-prompt-2.txt",
+      "native_imported_proof": "sources/objects/rigellian/missile-launcher/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/missile-launcher/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI18",
+        "surface_payload_sha256": "21439b6702fa216e77183028c8b125b1954e1f8fe5dfccdf00f31c3720edd0a4",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 18,
+        "catalogue_sha256": "d32cea30fae42ad281662cff889aa324866fe01d912d119410f733585ec7c8cf",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "905fcadb9ebaeaee450a38d15ce33373d25f63fa",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6756107065",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6756319368"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [
+        "MissileDomeCycle",
+        "MissileDomeDescriptorStates"
+      ],
+      "state_contract": "Two-half dome opens outward on supported rim hinges. Continuous cycle timing and discrete descriptor angles are authored interpretations, not recovered timers. Descriptor17 lower/shadow composition remains unverified; shared RIS3 construction and launch entity are separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI19",
+      "id": "openfa:building/legacy/058",
+      "name": "Thermal Lance",
+      "blend": "sources/objects/rigellian/thermal-lance/model.blend",
+      "glb": "sources/objects/rigellian/thermal-lance/model.glb",
+      "binaries": {
+        "blend": "418454cac84f887735af96f62016886dccf65ec8abdbf693382b9818194ae2cc",
+        "glb": "19d5bd1723f4a1b041ce6ee8b6ee8d12e6cee812db3149c653f727fe8f454537"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/thermal-lance/model.blend",
+      "source_sha256": "809ec971ec45eeba35564808ce06537b523a6f2a660319f7ca9e25d026eb3698",
+      "triangles": 30200,
+      "meshes": 12,
+      "export_materials": 5,
+      "embedded_images": 4,
+      "render_count": 38,
+      "paired_views": 19,
+      "maximum_foreground_mean_channel_error_255": 0.006465995521213711,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri19-review-1.png",
+      "concept_sha256": "2fc44498fd3a4a587afbacb7f65f90df2a4c2b9eb25b13cca0da797d53f16ef1",
+      "exact_prompt": "sources/docs/reconstruction/models/ri19-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/thermal-lance/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/thermal-lance/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI19",
+        "surface_payload_sha256": "658ed1a1e5604990442575b524886d8c279ab8b280e192518cf514ffd82643d3",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 18,
+        "catalogue_sha256": "c78f02e221439d66559263d1c6f2f5686c8f23d4fa4400540a861d611c93be49",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "0e93014bf2db386ef43304a34d290a9cde0c6326",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6756319368",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6756561997"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Fixed pedestal; four upper meshes and LanceTipSocket rotate rigidly on local +Z YawPivot. Legacy descriptor=2+(((heading+8)>>4)&15). Model yaw phase/sign and client placement require calibration; no firing/pitch/timed cycle established. RIS3 construction separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI20",
+      "id": "openfa:building/legacy/059",
+      "name": "Extractor",
+      "blend": "sources/objects/rigellian/extractor/model.blend",
+      "glb": "sources/objects/rigellian/extractor/model.glb",
+      "binaries": {
+        "blend": "d3190b4e5ae6c5ae0ab9cbcd32c24a81c733666a22688fd5ae2541149eda5a4b",
+        "glb": "7c0e56b8dc90391e4e08764d3900b117e5f61bc0c4f05b361c9b951b4da9c8f9"
+      },
+      "source": "sources/docs/assets/reconstruction/rigellian-refined/ri20/model.blend",
+      "source_sha256": "84f5c578b94a2b8f4ea78b30dfe7fa37e434cd4ecf6be6b51a8fdda492a6efd5",
+      "triangles": 13774,
+      "meshes": 39,
+      "export_materials": 5,
+      "embedded_images": 4,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.0007449167894086376,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri20-review-1.png",
+      "concept_sha256": "1d0a0680f49371bdd2e746a72327b3e10bef36aa2fe87b44ee162761512c9e50",
+      "exact_prompt": "sources/docs/reconstruction/models/ri20-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/extractor/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/extractor/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI20",
+        "surface_payload_sha256": "aec1a4994b2d766bf52d830d465558183d874fe75427b4e71d6b405e9671176d",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "ce0c8f18f77bd8b8f100747c83c62492a22d6b885dc3205edac01828b38baee8",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "adc482bc2c1f885293a7beba7814e976ee7b60a1",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6756561997",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6756760815"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static integrated mining structure; existing broad shoulder, side pod, three lower rib tiers, true recessed slots and segmented green lower fitting retained. Catalogue reveal/highlight is presentation. No drill, operating cycle or emission established; RIS2 construction and client calibration separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI21",
+      "id": "openfa:building/legacy/060",
+      "name": "Storage Racks",
+      "blend": "sources/objects/rigellian/storage-racks/model.blend",
+      "glb": "sources/objects/rigellian/storage-racks/model.glb",
+      "binaries": {
+        "blend": "21ff9c82ff9dfa88e2cc8220ff20fd901b0cf2a56f5a55ff86234cbd1ab0ab0f",
+        "glb": "9ed6fde8c8ab535d2429ac81c5c534055589d360194f4e1a789068f0559453a3"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/storage-racks/model.blend",
+      "source_sha256": "c20b5d3116933c6cdae7a4c0e56f7954a72d8cd1677c3a544867c863ed36e139",
+      "triangles": 68756,
+      "meshes": 32,
+      "export_materials": 5,
+      "embedded_images": 4,
+      "render_count": 6,
+      "paired_views": 3,
+      "maximum_foreground_mean_channel_error_255": 0.008069951508717099,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri21-review-1.png",
+      "concept_sha256": "341c7e6ec95c31722b171df1c65dec9509c8072785c1ace4b3b8329022336d98",
+      "exact_prompt": "sources/docs/reconstruction/models/ri21-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/storage-racks/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/storage-racks/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI21",
+        "surface_payload_sha256": "d5acbeefa57cbc2fc837a4eda0dc6f9d4cc2824b8791252fa37d63489b8227db",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 2,
+        "catalogue_sha256": "88d0bf37a4758c3c466f977f26548ae26c4137634c9fc4315d83af237ef19153",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "a3aae0ce9b2f2478f37a84950de7760bd5435de6",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6756760815",
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6757053950"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Static ore rack; six authored bronze housings in two tiers, five opaque non-emissive green oval faces and grey front guides. Hidden cradles/rear supports are interpretation. Catalogue reveal/highlight is presentation; no loading cycle established. RIS3 construction and client calibration separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI22",
+      "id": "openfa:building/legacy/061",
+      "name": "Ex-Fang",
+      "blend": "sources/objects/rigellian/ex-fang/model.blend",
+      "glb": "sources/objects/rigellian/ex-fang/model.glb",
+      "binaries": {
+        "blend": "f63ba527395322e59c8fcd2b3e255478eb25e85eef1c4e985e52515267a25072",
+        "glb": "5ddcf26ad1ff3bf5467718526c6c725359a0334e81b30b4821f7bc603530e593"
+      },
+      "source": "sources/docs/assets/reconstruction/buildings/rigellian/ex-fang/model.blend",
+      "source_sha256": "7cd851c063ddd33dc895cd78638970acf6bbee81470a3cc4163837aa03d8508c",
+      "triangles": 30492,
+      "meshes": 16,
+      "export_materials": 9,
+      "embedded_images": 8,
+      "render_count": 38,
+      "paired_views": 19,
+      "maximum_foreground_mean_channel_error_255": 0.00502693614246989,
+      "maximum_silhouette_disagreement_fraction": 1.7156778643241944e-05,
+      "concept_requests": 2,
+      "concept": "gallery/media/concepts/rigellian/ri22-review-2.png",
+      "concept_sha256": "0f1bf6fb61a8d65409ad6b7a7df3673cdc54fd171b53e33c714af87de6d21cac",
+      "exact_prompt": "sources/docs/reconstruction/models/ri22-concept-prompt-2.txt",
+      "native_imported_proof": "sources/objects/rigellian/ex-fang/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/ex-fang/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI22",
+        "surface_payload_sha256": "1ad78338e69fa532941cf0d88088f37060573f2661455201426fbfeb6d72ea4d",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 17,
+        "catalogue_sha256": "ea2e561aee3cf3df409990b9fec46ccf1f150d231945230d23a7fc85364e1dd2",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "f4eb934ad3878985aaa96c25d637e7fa7581c335",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6757053950"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Eleven upper meshes and CollectorAxisSocket rotate rigidly on local +Z YawPivot; five fixed base meshes remain under PlacementRoot. Legacy descriptor1 is empty and2..17 are complete directional building sprites. Formula2+(((heading+8)>>4)&15); model yaw phase/sign and client calibration unresolved. No firing/pitch/timed cycle established; RIS4 construction separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    },
+    {
+      "key": "RI23",
+      "id": "openfa:building/legacy/062",
+      "name": "Ultrathermal Lance",
+      "blend": "sources/objects/rigellian/ultrathermal-lance/model.blend",
+      "glb": "sources/objects/rigellian/ultrathermal-lance/model.glb",
+      "binaries": {
+        "blend": "58704c9d51c7716aa9833c63b147bd215725c0ad175f7c56e9c226f0bc2c672d",
+        "glb": "82c56cf93ef69d4e8ca2facdd8166a77ae3a58ed04bdd22fb4436c690451c886"
+      },
+      "source": "sources/docs/assets/reconstruction/rigellian-refined/ri23/model.blend",
+      "source_sha256": "5d5083c96504635d03c12f12f210dea9e5abfc7aa1924318bfd0ae1392f95b55",
+      "triangles": 54344,
+      "meshes": 22,
+      "export_materials": 7,
+      "embedded_images": 9,
+      "render_count": 41,
+      "paired_views": 19,
+      "maximum_foreground_mean_channel_error_255": 0.0091966314663815,
+      "maximum_silhouette_disagreement_fraction": 0.0,
+      "concept_requests": 1,
+      "concept": "gallery/media/concepts/rigellian/ri23-review-1.png",
+      "concept_sha256": "cb499297ae7a6c29c71f6492e0669ba6eefa892a76390ea79e045d0260a1d9e7",
+      "exact_prompt": "sources/docs/reconstruction/models/ri23-concept-prompt-1.txt",
+      "native_imported_proof": "sources/objects/rigellian/ultrathermal-lance/runtime-review.json",
+      "visual_feedback": "sources/objects/rigellian/ultrathermal-lance/visual-review.json",
+      "fresh_legacy_reference_verification": {
+        "key": "RI23",
+        "surface_payload_sha256": "5b292d50a6cae72caa7741616319fb4d2fe6d71aefa3ac5c8aa8e4a27bbce16f",
+        "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+        "nonempty_surface_layers": 18,
+        "catalogue_sha256": "108dea4a12d01e0ea00b9f3210ecd6d94af772f83cc473b777784bb3afad2a98",
+        "catalogue_frames": 41,
+        "verified_phases": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "milestone_commit": "aa6f2b57a86c13b357316fcaebee3d382adb3af8",
+      "github_gpg_verified": true,
+      "technical_issue_comments": [
+        "https://github.com/ender-dev-pl/openfa-assets/issues/253#issuecomment-6757541181"
+      ],
+      "main_integration_thread_receipt_reviewed": true,
+      "clips": [],
+      "state_contract": "Fixed refined tapered segmented skirt, pedestal and side spur; head and two parallel lances share local+Z YawPivot with two independent LanceTipSocket children. Legacy fixed descriptor1 plus directional upper overlays2..17. Model yaw phase/sign uncalibrated; no firing/pitch/timed cycle established. RIS3 construction separate.",
+      "integration_limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate."
+    }
+  ],
+  "client_integration": false,
+  "final_user_artistic_acceptance": false,
+  "android_performance_certified": false,
+  "mobile_ship_issue248_complete": false,
+  "temporary_cleanup": {
+    "encoded_frames_bytes": 6259957,
+    "decoder_dependencies_bytes": 59964804,
+    "historical_files_removed": false
+  }
+}
