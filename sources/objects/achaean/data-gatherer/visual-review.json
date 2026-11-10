@@ -1,0 +1,108 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/164",
+  "binaries": {
+    "blend": "7a599fb1a35deddebac2f118c7e0154dfd9c7575a5a15e0b986589f3d84d0f8d",
+    "glb": "04448ffda043cdd17032db4ae480e8a8b74abb3ccb9882f2a8a318ec11426364"
+  },
+  "runtime_report_sha256": "7812a6be66979e88e004cbe4c0fc4243cd52b3bc324e0620de697d6b27ff481d",
+  "legacy": {
+    "surface_payload_sha256": "2eaf64d5c93c3265b49ca9aca28d24da1e26f87a5eaa06314a0ee1d6f620577d",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1025,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "f85d1d201ead15e200c793ab82608f9d984253d1343be1dff68bbadd8b10b83d",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All41 actual paletted phases reviewed: reveal/highlight of one fixed view,not mechanical motion. All catalogue roles map to AC14.VID. Direct archive-table audit finds only AC14.256 for this prefix,with shadow/body descriptors. Enlarged surface and final catalogue phases resolve left front/rear chambers and separate right front/rear shoulders,four connected cast lobes. Tall ochre mast with blue-gray collar,short central blue-gray fitting,low amber left field,seven dark right-front fields and exposed right-rear mouth. Function1025 establishes satellite-silo purpose. Shared ACS3 remains separate. _MA PB/PH/PM/PS/ST families considered; no AC-named family. Hidden rear,minor fitting purpose and exact dimensions interpreted."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac14-review-1.png",
+      "sha256": "cefca1c2d0bfcef03a9ba45c128c40892223e69c71a1c3885ceb10a211ad7219",
+      "prompt": "sources/docs/reconstruction/models/ac14-concept-prompt-1.txt",
+      "feedback": "Accepted with source-led review: initial written prompt described three chambers,but actual enlarged source and generated concept resolve a separate right-front shoulder below the right-rear mouth. Model therefore uses four connected lobes,not blind adherence to the incorrect chamber count in the prompt. Tall thin ochre rod,slate collar,short fitting,single amber window,seven dark fields and broad exposed mouth retained. Restrained wear and sparse joins replace heavy concept pitting."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual historical native inspection shows a large central dome,forked aerial,gold cap roofs and white window grids instead of the source asymmetric mast/fore-rear arrangement. Its permanent open-emitter treatment is useful,but .17 radius is too narrow relative to the broad AC14 source mouth.",
+      "action": "Rebuilt the four connected ground lobes,ochre/slate tall mast,short fitting and actual seven front recesses. Preserved permanent exposed shaft and .05 floor datum,widening authored mouth radius to.28. Source and concept take priority over unrelated historical coarse geometry. No unsupported lid cycle added."
+    },
+    {
+      "iteration": 2,
+      "observation": "Actual final native/import quarter,front and rear renders preserve the tall narrow mast,visible collar,amber left-front field,seven right-front holes and right-rear opening. Both representations have matching surfaces,textures and source-specific structure checks.",
+      "action": "Accept for integration review after recomputing six-render pixel parity. Actual supported mast/collar/short fitting,connected grounded lobes,seven dark-field rays,amber ray and17 open-well/16 collar rays pass. Exact satellite fit,client state/scale/FPS,hidden rear and final user artistic acceptance remain separate."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00038926817582944065,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00048102824597860385,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00030817997710663026,
+      "margin": 43
+    }
+  ],
+  "review": "Static legacy-led Data Gatherer with broad worn coral castings,ochre mast and low amber emission. One canonical editable payload for gameplay/build/SciTek; no movement inferred from catalogue reveal. Approximate camera,no numerical legacy-fidelity score. Four-lobe topology and minor fitting interpretation are explicitly recorded. Actual Blender runtime verified; client and final user acceptance separate.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -164,17 +164,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/164`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Data Gatherer](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac14/front-quarter.png)
+![Data Gatherer](../gallery/media/objects/achaean/data-gatherer/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac14/model.glb)
+[Blend](../sources/objects/achaean/data-gatherer/model.blend) · [GLB](../sources/objects/achaean/data-gatherer/model.glb)
 
-**Additional iteration — verified-launch-mechanism**
-
-![Data Gatherer](../gallery/media/docs/assets/reconstruction/launch-facilities/achaean/ac14/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac14/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac14/model.glb)
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac14-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/data-gatherer/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/data-gatherer/imported-rear-quarter.png)
 
 ## Listening Device
 
