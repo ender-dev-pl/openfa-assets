@@ -1219,12 +1219,111 @@
           "lower_shadow_composition_verified": false
         }
       ]
+    },
+    {
+      "id": "openfa:building/legacy/058",
+      "key": "RI19",
+      "blend": "sources/objects/rigellian/thermal-lance/model.blend",
+      "glb": "sources/objects/rigellian/thermal-lance/model.glb",
+      "binaries": {
+        "blend": "418454cac84f887735af96f62016886dccf65ec8abdbf693382b9818194ae2cc",
+        "glb": "19d5bd1723f4a1b041ce6ee8b6ee8d12e6cee812db3149c653f727fe8f454537"
+      },
+      "triangles": 30200,
+      "meshes": 12,
+      "materials": 5,
+      "embedded_images": 4,
+      "footprint": [
+        3,
+        3
+      ],
+      "definition_class": 17,
+      "construction_updates": 28,
+      "root": "PlacementRoot",
+      "root_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_world_bounds": [
+        -0.49000000953674316,
+        -0.5004440546035767,
+        0.0,
+        0.7299233675003052,
+        0.49000000953674316,
+        1.7632193565368652
+      ],
+      "axes": "Blender -Y forward; +Z dorsal",
+      "state_contract": "Fixed pedestal; four upper meshes and LanceTipSocket rotate rigidly on local +Z YawPivot. Legacy descriptor=2+(((heading+8)>>4)&15). Model yaw phase/sign and client placement require calibration; no firing/pitch/timed cycle established. RIS3 construction separate.",
+      "reuse": "One current model across gameplay, build menu and SciTek; previous studies are history.",
+      "limits": "Client scale/state/mount integration, Android performance and final user artistic acceptance remain separate.",
+      "articulation": {
+        "kind": "ri19-manual-yaw-v1",
+        "pivot": "YawPivot",
+        "axis": "local +Z",
+        "pivot_position": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "moving_meshes": [
+          "RI19 rotating green head",
+          "RI19 tapered thermal lance",
+          "RI19 head fitting bezel",
+          "RI19 bronze head fitting"
+        ],
+        "tip_socket": "LanceTipSocket",
+        "tip_forward_axis": "local +Z",
+        "tip_position_zero_yaw": [
+          0.7220966219902039,
+          0.17370319366455078,
+          1.7538666725158691
+        ],
+        "lance_axis_zero_yaw": [
+          0.7578851580619812,
+          0.18189243972301483,
+          0.6265184283256531
+        ],
+        "descriptor_formula": "2+(((heading+8)>>4)&15)",
+        "descriptor_domain": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "model_yaw_phase_sign_calibrated": false,
+        "firing_or_pitch_cycle_established": false
+      }
     }
   ],
   "pending": [
     "RI01",
     "RI02",
-    "RI19",
     "RI20",
     "RI21",
     "RI22",

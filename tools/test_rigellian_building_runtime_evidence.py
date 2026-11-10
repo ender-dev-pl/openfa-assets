@@ -26,6 +26,8 @@ class Evidence(unittest.TestCase):
                 folder = ROOT / 'sources' / Path(record['reviewed_model']['blend']).parent
                 metadata = json.loads((folder / 'model.json').read_bytes())
                 expected_views = 16 if metadata.get('animation',{}).get('mechanism_kind') == 'ri18-supported-dome-v1' else (40 if metadata.get('animation') else 6)
+                if metadata.get('articulation'):
+                    expected_views = 38
                 self.assertEqual(result['views'], expected_views)
                 self.assertFalse(result['game_client_integration'])
                 checked.append(record['id'])
@@ -97,6 +99,33 @@ class Evidence(unittest.TestCase):
         wrong['animations'][0]['channels'][0]['target']['path'] = 'translation'
         with self.assertRaises(AssertionError):
             verify_animation_contract(metadata,report,wrong)
+
+    def test_manual_yaw_contract_rejects_wrong_hierarchy_or_incomplete_poses(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_manual_yaw_contract
+        folder = ROOT/'sources/objects/rigellian/thermal-lance'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        raw = (folder/'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_manual_yaw_contract(metadata,report,document)
+        wrong = deepcopy(report)
+        wrong['imported']['yaw_validation']['poses'].pop()
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(metadata,wrong,document)
+        wrong = deepcopy(report)
+        wrong['native']['yaw_validation']['poses'][4]['fixed_base_unchanged'] = False
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(metadata,wrong,document)
+        wrong = deepcopy(document)
+        pivot = next(n for n in wrong['nodes'] if n['name']=='YawPivot')
+        pivot['children'].pop()
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(metadata,report,wrong)
+        wrong = deepcopy(metadata)
+        wrong['articulation']['model_yaw_phase_sign_calibrated'] = True
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(wrong,report,document)
 
     def test_static_open_port_evidence_cannot_be_omitted(self):
         data = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_bytes())

@@ -80,6 +80,39 @@ def verify_animation_contract(metadata, report, document):
         assert not report[key]['sweep']['surface_intersections']
 
 
+def verify_manual_yaw_contract(metadata,report,document):
+    articulation = metadata['articulation']
+    assert articulation['kind'] == 'ri19-manual-yaw-v1'
+    assert not document.get('animations') and report['clips'] == []
+    assert articulation['descriptor_formula'] == '2+(((heading+8)>>4)&15)'
+    assert articulation['descriptor_domain'] == list(range(2,18))
+    assert articulation['model_yaw_phase_sign_calibrated'] is False
+    assert articulation['firing_or_pitch_cycle_established'] is False
+    nodes = document['nodes']
+    indices = {node['name']:i for i,node in enumerate(nodes)}
+    root,pivot = indices['PlacementRoot'],indices[articulation['pivot']]
+    assert pivot in nodes[root]['children']
+    moving = set(articulation['moving_meshes'])
+    assert len(moving) == 4
+    assert indices[articulation['tip_socket']] in nodes[pivot]['children']
+    for node in nodes:
+        if 'mesh' in node:
+            parent = pivot if node['name'] in moving else root
+            assert indices[node['name']] in nodes[parent]['children']
+    validation = report['articulation_validation']
+    assert validation['kind'] == articulation['kind']
+    assert validation['sampled_yaw_degrees'] == [i*22.5 for i in range(16)]
+    assert validation['maximum_moving_matrix_error'] < 1e-5
+    assert validation['model_yaw_phase_sign_calibrated'] is False
+    for key in ['native','imported']:
+        yaw = report[key]['yaw_validation']
+        assert yaw['maximum_socket_error'] < 1e-5 and yaw['fixed_base_unchanged'] is True
+        assert yaw['model_yaw_phase_sign_calibrated'] is False and yaw['continuous_collision_sweep_proven'] is False
+        assert [p['index'] for p in yaw['poses']] == list(range(16))
+        assert [p['authored_yaw_degrees'] for p in yaw['poses']] == [i*22.5 for i in range(16)]
+        assert all(p['fixed_base_unchanged'] is True and set(p['moving_world_matrices']) == moving for p in yaw['poses'])
+
+
 def verify(root, record):
     root = Path(root).resolve()
     project = root.parent if root.name == 'sources' else root
@@ -130,6 +163,10 @@ def verify(root, record):
         raw = path((folder / 'model.glb').as_posix()).read_bytes()
         document = json.loads(raw[20:20+struct.unpack_from('<I', raw, 12)[0]])
         verify_animation_contract(metadata, report, document)
+    if metadata.get('articulation'):
+        raw = path((folder / 'model.glb').as_posix()).read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_manual_yaw_contract(metadata,report,document)
     for helper, expected in report['helpers'].items():
         assert helper in files
         assert hashlib.sha256(path(helper).read_bytes()).hexdigest() == expected

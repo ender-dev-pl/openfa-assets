@@ -1,0 +1,88 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/058",
+  "name": "Thermal Lance",
+  "source": "sources/docs/assets/reconstruction/buildings/rigellian/thermal-lance/model.blend",
+  "source_sha256": "809ec971ec45eeba35564808ce06537b523a6f2a660319f7ca9e25d026eb3698",
+  "author_sha256": "aaf3a18985b13d5b385d6f608b1973cf357d10c83d580e2c9fbf05822a56c045",
+  "recipe": "sources/objects/rigellian/thermal-lance/recipe.json",
+  "recipe_sha256": "eb06da21c0cc3d56c1fa0dcf5ca296bad429b45bfba36245aa2992a2cbf637cc",
+  "binaries": {
+    "blend": "418454cac84f887735af96f62016886dccf65ec8abdbf693382b9818194ae2cc",
+    "glb": "19d5bd1723f4a1b041ce6ee8b6ee8d12e6cee812db3149c653f727fe8f454537"
+  },
+  "protected_parts": [
+    "RI19 base fitting bezel",
+    "RI19 bronze base fitting",
+    "RI19 bronze front strip",
+    "RI19 bronze head fitting",
+    "RI19 fixed green pedestal",
+    "RI19 head fitting bezel",
+    "RI19 lower base inset 0",
+    "RI19 lower base inset 1",
+    "RI19 lower base inset 2",
+    "RI19 rotating green head",
+    "RI19 static yaw bearing",
+    "RI19 tapered thermal lance"
+  ],
+  "triangles": 30200,
+  "mesh_nodes": 12,
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 17,
+  "construction_updates": 28,
+  "articulation": {
+    "kind": "ri19-manual-yaw-v1",
+    "pivot": "YawPivot",
+    "axis": "local +Z",
+    "pivot_position": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "moving_meshes": [
+      "RI19 rotating green head",
+      "RI19 tapered thermal lance",
+      "RI19 head fitting bezel",
+      "RI19 bronze head fitting"
+    ],
+    "tip_socket": "LanceTipSocket",
+    "tip_forward_axis": "local +Z",
+    "tip_position_zero_yaw": [
+      0.7220966219902039,
+      0.17370319366455078,
+      1.7538666725158691
+    ],
+    "lance_axis_zero_yaw": [
+      0.7578851580619812,
+      0.18189243972301483,
+      0.6265184283256531
+    ],
+    "descriptor_formula": "2+(((heading+8)>>4)&15)",
+    "descriptor_domain": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "model_yaw_phase_sign_calibrated": false,
+    "firing_or_pitch_cycle_established": false
+  },
+  "changes": "Evaluated source geometry/materials and articulated hierarchy retained; canonical source/export/evidence/gallery consolidation. No tessellation reduction or invented firing/pitch clip.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

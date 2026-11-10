@@ -45,6 +45,11 @@ def main(folder):
         present=True, sha256=meta['binaries']['blend'], final_visual_acceptance='not-established',
         views=[dict(label='Legacy-based concept (interpreted details)', image=concept['image']),
                dict(label='Actual independent GLB', image=(media / 'imported-front-quarter.png').relative_to(ROOT).as_posix())])]
+    if meta.get('articulation'):
+        record['available_studies'][0]['views'].extend(
+            dict(label='Articulated head: authored yaw '+str(angle)+' degrees (fixed base)',
+                 image=(media/('imported-yaw-'+str(index).zfill(2)+'.png')).relative_to(ROOT).as_posix())
+            for index,angle in [(4,90),(8,180),(12,270)])
     paths = {folder / name for name in ['model.blend', 'model.glb', 'model.json',
                                         'runtime-review.json', 'visual-review.json']}
     paths.update(ROOT / name for name in [meta['source'], meta['recipe'], concept['image'], concept['prompt']])
@@ -93,6 +98,9 @@ def main(folder):
         current = next(row for row in delivery['models'] if row['id'] == meta['id'])
         current['animation'] = meta['animation']
         current['state_mapping'] = meta['states']
+    if meta.get('articulation'):
+        current = next(row for row in delivery['models'] if row['id'] == meta['id'])
+        current['articulation'] = meta['articulation']
     delivery['pending'] = [key for key in delivery['pending'] if key != recipe['key']]
     write_json(delivery_path, delivery)
     print('RIGELLIAN_CANONICAL_REGISTERED', recipe['key'], len(proof['files']))

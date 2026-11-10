@@ -244,19 +244,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/058`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Thermal Lance](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri19/front-quarter.png)
+![Thermal Lance](../gallery/media/objects/rigellian/thermal-lance/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri19/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri19/model.glb)
+[Blend](../sources/objects/rigellian/thermal-lance/model.blend) · [GLB](../sources/objects/rigellian/thermal-lance/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri19/animation-00.webm)
-
-**Additional iteration — initial-reference-study**
-
-![Thermal Lance](../gallery/media/docs/assets/reconstruction/buildings/rigellian/thermal-lance/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/thermal-lance/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/thermal-lance/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri19-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/thermal-lance/imported-front-quarter.png) · [Articulated head: authored yaw 90 degrees (fixed base)](../gallery/media/objects/rigellian/thermal-lance/imported-yaw-04.png) · [Articulated head: authored yaw 180 degrees (fixed base)](../gallery/media/objects/rigellian/thermal-lance/imported-yaw-08.png) · [Articulated head: authored yaw 270 degrees (fixed base)](../gallery/media/objects/rigellian/thermal-lance/imported-yaw-12.png)
 
 ## Extractor
 
