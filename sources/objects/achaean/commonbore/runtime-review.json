@@ -1,0 +1,101 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/171",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "251e6f8479c77c3066f066453bdc457c500ad6a115f8c828440aec32ea55cf4a",
+    "glb": "45af3ea7823c8344248a036b7824c86309c7c956160fa9e9ba4e37e68c520499"
+  },
+  "metadata_sha256": "4a9c896b04609cb8d13f64c236beace6acb14c000e6d20c45ebfdfaeee399e7b",
+  "verifier": "sources/tools/blender/verify_achaean_building_left_quarter.py",
+  "helpers": {
+    "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "sources/tools/blender/remaster_achaean_shipyard.py": "48458c78408d329f83dc1f413af5d3f2ae685358dd28fb33c3aef46e25b3f0a5",
+    "sources/tools/blender/remaster_achaean_manoeuvring_device.py": "d059d083422720513ac2ca8f7cca1703bee299aae57495acd9f5b80c0439c3f4",
+    "sources/tools/blender/remaster_achaean_missile_launcher.py": "8a24bce326873bed11be0ee8f021acc3c8990440eb6a4d7291e4bab02fa54c3d",
+    "sources/tools/blender/checks_achaean_shipyard.py": "11a1a192cb115676d686c0cbbe764e1fac8080648dd00eaf7e8d15a143fcf012",
+    "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f",
+    "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac21/model.blend": "62e82d24c26c01b544c4eb86d92a4132c246f2f7813ff020dbe1ea30e920635c",
+    "sources/tools/blender/remaster_achaean_commonbore.py": "7023c328e1144cd9ce784571b373958dc61dafc5ff77ee8c05504ab605ca5e6c",
+    "sources/tools/blender/verify_achaean_building_left_quarter.py": "1b2fa91bbe15b8d3525e078c554e688434bf462d11a3895cdd70c65e2c746711",
+    "sources/tools/blender/checks_achaean_commonbore.py": "230d57cd1021535fa0e1354167a10c9dd51be3e067bd3d65d021cb59959a4311"
+  },
+  "triangles": 12428,
+  "meshes": 31,
+  "materials": 6,
+  "embedded_images": 7,
+  "maximum_bidirectional_surface_error": 5.960464477539063e-08,
+  "positive_closed_meshes": {
+    "native": 31,
+    "imported": 31
+  },
+  "native_world_bounds": [
+    -1.4005109071731567,
+    -1.0600149631500244,
+    0.0,
+    1.3494890928268433,
+    1.0210438966751099,
+    3.0999999046325684
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "texture_pixels_equal": true,
+  "native_anatomy": {
+    "grounded_main_and_small_chambers": 6,
+    "connected_chamber_graph_nodes": 7,
+    "chamber_surface_contact_pairs": 8,
+    "attached_supported_vertical_fittings": 2,
+    "supported_ochre_couplings": 2,
+    "right_connector_attached_at_both_ends": true,
+    "supported_tip_socket": true,
+    "actual_source_field_visibility_rays": 10,
+    "minimum_field_depth": 0.992499828338623,
+    "maximum_field_depth": 0.9930001497268677,
+    "coral_roughness_range": 0.2549019753932953,
+    "operating_cycle_established": false,
+    "hidden_depth_interpretation": true
+  },
+  "imported_anatomy": {
+    "grounded_main_and_small_chambers": 6,
+    "connected_chamber_graph_nodes": 7,
+    "chamber_surface_contact_pairs": 8,
+    "attached_supported_vertical_fittings": 2,
+    "supported_ochre_couplings": 2,
+    "right_connector_attached_at_both_ends": true,
+    "supported_tip_socket": true,
+    "actual_source_field_visibility_rays": 10,
+    "minimum_field_depth": 0.9924998879432678,
+    "maximum_field_depth": 0.9930001497268677,
+    "coral_roughness_range": 0.2549019753932953,
+    "operating_cycle_established": false,
+    "hidden_depth_interpretation": true
+  },
+  "clips": [],
+  "renders": {
+    "native-front-quarter.png": "f7ed86be2e3a403a49c8c414b6da2f7afc16b8592e9210797e68e2f420e68291",
+    "native-front.png": "b3dd7ed85b2e19586b4bbeef50952a60c83a1253b9a9c558592f6d344ba416e3",
+    "native-rear-quarter.png": "de66dcf1852a06b931a7d5a447731f428fcb4721dbc580b91e0181876fd81b49",
+    "imported-front-quarter.png": "3dd77960e4671065608e866fafd4f55175e9db43001bdcedbc489d8fd27fbead",
+    "imported-front.png": "3815ff769f8079c13116941d645d863907c500e6ca8ba90c0c79ac44e3606195",
+    "imported-rear-quarter.png": "18ea8fc5b383d20955dcc1512aea61b9450b2cbda21ab4f33d5e179dfa3897e5"
+  },
+  "scope": "Actual saved-native/independent GLB geometry, rooted anatomy, textures and renders. Source-specific checks run on both. Pixel review separate; client scale/state/FPS and final user artistic acceptance remain unverified.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

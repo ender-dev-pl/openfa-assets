@@ -250,11 +250,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/171`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Commonbore](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac21/front-quarter.png)
+![Commonbore](../gallery/media/objects/achaean/commonbore/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac21/model.glb)
+[Blend](../sources/objects/achaean/commonbore/model.blend) · [GLB](../sources/objects/achaean/commonbore/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac21-review-2.png) · [Actual independent GLB](../gallery/media/objects/achaean/commonbore/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/commonbore/imported-rear-quarter.png)
 
 ## Deepbore
 
