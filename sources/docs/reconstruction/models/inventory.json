@@ -25593,7 +25593,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/152",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1013",
         "description_records": [
           1013
         ]
@@ -25667,11 +25667,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac02/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/anti-rad-screen/model.blend",
           "present": true,
-          "sha256": "40d5b29c10a5db7fbd704ff14c40eeaa39aec3004c4bf263bf045bc13bfd8e09",
-          "final_visual_acceptance": "not-established"
+          "sha256": "246f878e4465d213472d6be942e436e0b48821909bd405595aaa64aafc22a091",
+          "media": "gallery/media/objects/achaean/anti-rad-screen",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac02-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/anti-rad-screen/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/anti-rad-screen/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -25681,7 +25696,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -25711,6 +25726,57 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 152
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac02/model.blend",
+          "present": true,
+          "sha256": "40d5b29c10a5db7fbd704ff14c40eeaa39aec3004c4bf263bf045bc13bfd8e09",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/anti-rad-screen/model.blend",
+        "sha256": "246f878e4465d213472d6be942e436e0b48821909bd405595aaa64aafc22a091",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/anti-rad-screen",
+          "files": {
+            "gallery/media/concepts/achaean/ac02-review-1.png": "288780f652d2652d06963feef87e284ee9fc9f38382e602c0e0ab38e77cfbe32",
+            "gallery/media/objects/achaean/anti-rad-screen/front-quarter.png": "30c462ce1879d593132af2d043c567e8d9f8502af41cbde45a959ba61857651a",
+            "gallery/media/objects/achaean/anti-rad-screen/imported-front-quarter.png": "30c462ce1879d593132af2d043c567e8d9f8502af41cbde45a959ba61857651a",
+            "gallery/media/objects/achaean/anti-rad-screen/imported-front.png": "4b95ec18f5dfe1d37cad55bfc16392c89f543619b541ebcbf6d765acabdd49e7",
+            "gallery/media/objects/achaean/anti-rad-screen/imported-rear-quarter.png": "d944135f7d826ac4a64376705b50f7b8634d01fdbc21a1d0a968107e49da9c0f",
+            "gallery/media/objects/achaean/anti-rad-screen/native-front-quarter.png": "83082ff4248430da06b38e8c6f443aff37f8311e8154fde1192cb56a95e7a363",
+            "gallery/media/objects/achaean/anti-rad-screen/native-front.png": "0eb09478d9e3e617197043e15d7b8d6a00c023cfda13561b4c19c3cdd796c056",
+            "gallery/media/objects/achaean/anti-rad-screen/native-rear-quarter.png": "2131b02c4a3b36fab254f85f40d328d53f618b22e81fc8465b7c4907e1026afb",
+            "sources/docs/reconstruction/models/ac02-concept-prompt-1.txt": "7684b682057a8a6e16a35a25f1b2c2a114792ab81cdd87f79350442e8dd6767b",
+            "sources/materials/achaean/anti-rad-screen/Aged brass.png": "7998798e8943c28b58c5efc5006a20bd68740ca5d0eb9532b3e86690d628d3fd",
+            "sources/materials/achaean/anti-rad-screen/Blue gray fittings.png": "1cec76be88724e04938b39c23553f5888fca337821b86b619081ee093150f32d",
+            "sources/materials/achaean/anti-rad-screen/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/anti-rad-screen/Dark recess.png": "01d94b2e397c317087ceaed9091e6b3d3b497c0db66b9af081f3b4e69abde7b7",
+            "sources/objects/achaean/anti-rad-screen/model.blend": "246f878e4465d213472d6be942e436e0b48821909bd405595aaa64aafc22a091",
+            "sources/objects/achaean/anti-rad-screen/model.glb": "fe9cb5c3178e51cf8a98a78dd13ff23d06f076bcc50916828d8feb88dcddbeaf",
+            "sources/objects/achaean/anti-rad-screen/model.json": "0a3192785401ff253fffa15148080395c5a240f002bc7c1a3699127e819c7556",
+            "sources/objects/achaean/anti-rad-screen/runtime-review.json": "8233a23914514b0ec1f3cd7b3bba70c1965fe6817fdf0b2c088a052285f59a2f",
+            "sources/objects/achaean/anti-rad-screen/visual-review.json": "fe84068d189d768f0bb61f479a658991a98987f01eaf6931b618e16ce21e9d5c",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_anti_rad.py": "b2e3543865fbf826cdbe5528975da50dc37a487ea0fb809dbc782e9132c13815",
+            "sources/tools/blender/remaster_achaean_anti_rad.py": "25e45cdd9b0a25ebf6dbc1042bf0e202de8b01878ea542ab7a78ec3e855f30bf",
+            "sources/tools/blender/verify_achaean_building.py": "bc5aba2d48684e47183408fc6f1ff9d4ae5500616b1194421abaa1b7aaf9aa0e",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/anti-rad-screen/runtime-review.json",
+          "objects/achaean/anti-rad-screen/visual-review.json"
+        ]
       }
     },
     {

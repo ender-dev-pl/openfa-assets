@@ -1,0 +1,108 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/152",
+  "binaries": {
+    "blend": "246f878e4465d213472d6be942e436e0b48821909bd405595aaa64aafc22a091",
+    "glb": "fe9cb5c3178e51cf8a98a78dd13ff23d06f076bcc50916828d8feb88dcddbeaf"
+  },
+  "runtime_report_sha256": "da27eda538d7e0f1f0fe2358b25a5f4f7f0183f9031d801720ea269b50a5ec9d",
+  "legacy": {
+    "surface_payload_sha256": "214b1d0aa6bbfa7a941a2170f3fd0ef01a58a354fa5c68b666998dc81d32a68f",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1013,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "687984be93d728b6452ef0ebacd7eb9723269f6c1709d8c8a193cb434e956f53",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All 41 catalogue phases show reveal/highlight, not an operating mechanism. Actual presentation-profile roles all map to AC02.VID. Surface descriptors are shadow/body. No AC-specific _MA family exists; shared construction ACS2 remains separate."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac02-review-1.png",
+      "sha256": "288780f652d2652d06963feef87e284ee9fc9f38382e602c0e0ab38e77cfbe32",
+      "prompt": "sources/docs/reconstruction/models/ac02-concept-prompt-1.txt",
+      "feedback": "Retains broad coral dome/arch, paired gold-capped side pods, stepped gray antenna and exposed descending conductor bank from the sprite/catalogue. Accepted as a modelling guide. The brass-facing contour, fasteners and conductor clamps are interpreted detailing, not recovered exact geometry."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual imported renders preserved the open bay and silhouette, but the first brass-facing boundary was visibly stair-stepped.",
+      "action": "Replaced the masked-quad boundary with a continuous curved closed facing and measured its proximity to the original dome. Added a low frontal review light to expose bay hardware; model itself has no review lights."
+    },
+    {
+      "iteration": 2,
+      "observation": "The corrected actual front-quarter/front/rear imports retain the recognizable legacy massing and smooth casing finish with sparse seams. Independent geometric rays confirm five open spaces between six supported bars.",
+      "action": "Accept for integration review with explicit static-state and uncalibrated client-scale limits. Final artistic approval remains with the user."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 3.7755795514611494e-05,
+      "margin": 30
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 3.909100385697905e-05,
+      "margin": 39
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00010670731707317073,
+      "margin": 35
+    }
+  ],
+  "review": "Faithful interpreted static remaster for integration review, without asserting a measured legacy-fidelity percentage or hidden original geometry.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

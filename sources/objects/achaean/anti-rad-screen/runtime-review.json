@@ -1,0 +1,88 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/152",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "246f878e4465d213472d6be942e436e0b48821909bd405595aaa64aafc22a091",
+    "glb": "fe9cb5c3178e51cf8a98a78dd13ff23d06f076bcc50916828d8feb88dcddbeaf"
+  },
+  "metadata_sha256": "301829ee07d4748eeddb71126a507f946de02496e4480b67f78921bf75718c26",
+  "verifier": "sources/tools/blender/verify_achaean_building.py",
+  "helpers": {
+    "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f",
+    "sources/tools/blender/remaster_achaean_anti_rad.py": "b32fa12411a711151f77775394983aa8830b65ad3f6cb625883bebdeb759f79c",
+    "sources/tools/blender/verify_achaean_building.py": "cbeb66d67c81d145c97e0d1589bc8bbe1e0ea61265fae339655afee67c7680f0",
+    "sources/tools/blender/checks_achaean_anti_rad.py": "ac348828eeff817c93907922c8a79d0cd4d0e4e7c15f5c1e1ffa9bb6c0ba2c0d"
+  },
+  "triangles": 15152,
+  "meshes": 31,
+  "materials": 5,
+  "embedded_images": 4,
+  "maximum_bidirectional_surface_error": 1.3328003944934608e-07,
+  "positive_closed_meshes": {
+    "native": 31,
+    "imported": 31
+  },
+  "native_world_bounds": [
+    -1.1159999370574951,
+    -0.793999969959259,
+    0.0,
+    1.1159999370574951,
+    1.0549999475479126,
+    2.5799999237060547
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "texture_pixels_equal": true,
+  "native_anatomy": {
+    "rooted_two_grounded_pods": true,
+    "six_supported_independent_conductors": true,
+    "open_interbar_ray_paths": 5,
+    "minimum_interbar_gap": 0.04999999701976776,
+    "maximum_conductor_top_error": 3.814697269177714e-08,
+    "conformal_closed_brass_facing": true,
+    "maximum_brass_facing_surface_distance": 0.0203346386551857,
+    "stepped_antenna": true,
+    "operational_timing_established": false
+  },
+  "imported_anatomy": {
+    "rooted_two_grounded_pods": true,
+    "six_supported_independent_conductors": true,
+    "open_interbar_ray_paths": 5,
+    "minimum_interbar_gap": 0.04999999701976776,
+    "maximum_conductor_top_error": 3.814697269177714e-08,
+    "conformal_closed_brass_facing": true,
+    "maximum_brass_facing_surface_distance": 0.0203346386551857,
+    "stepped_antenna": true,
+    "operational_timing_established": false
+  },
+  "clips": [],
+  "renders": {
+    "native-front-quarter.png": "83082ff4248430da06b38e8c6f443aff37f8311e8154fde1192cb56a95e7a363",
+    "native-front.png": "0eb09478d9e3e617197043e15d7b8d6a00c023cfda13561b4c19c3cdd796c056",
+    "native-rear-quarter.png": "2131b02c4a3b36fab254f85f40d328d53f618b22e81fc8465b7c4907e1026afb",
+    "imported-front-quarter.png": "30c462ce1879d593132af2d043c567e8d9f8502af41cbde45a959ba61857651a",
+    "imported-front.png": "4b95ec18f5dfe1d37cad55bfc16392c89f543619b541ebcbf6d765acabdd49e7",
+    "imported-rear-quarter.png": "d944135f7d826ac4a64376705b50f7b8634d01fdbc21a1d0a968107e49da9c0f"
+  },
+  "scope": "Actual saved-native/independent GLB geometry, rooted anatomy, textures and renders. Source-specific checks run on both. Pixel review separate; client scale/state/FPS and final user artistic acceptance remain unverified.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

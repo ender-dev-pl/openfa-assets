@@ -30,7 +30,7 @@ def main():
     for record in inventory['records']:
         reviewed = record.get('reviewed_model')
         proof = reviewed.get('runtime_evidence') if isinstance(reviewed, dict) else None
-        if isinstance(proof, dict) and proof.get('format') in {'rigellian-building-remaster-v1', 'achaean-building-remaster-v1'}:
+        if isinstance(proof, dict) and proof.get('format') in {'rigellian-building-remaster-v1', 'achaean-building-remaster-v1', 'achaean-static-building-remaster-v2'}:
             verify_runtime_evidence(ROOT / 'sources', record)
     gallery = json.loads((ROOT / 'gallery/catalogue.json').read_text())
     migration=json.loads((ROOT/'sources/docs/reconstruction/models/shipyard-canonical-assets.json').read_text())
