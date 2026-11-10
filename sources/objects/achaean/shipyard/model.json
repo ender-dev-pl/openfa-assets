@@ -11,21 +11,28 @@
   "definition_class": 25,
   "construction_updates": 45,
   "triangle_budget": 30000,
-  "materials": 6,
-  "structure_checks": "checks_achaean_shipyard",
-  "state_contract": "Static Achaean construction/refitting facility from actual four-lobed legacy evidence. Red/blue source optics have constant low emission. Catalogue reveal/highlight does not establish crane, gate or fitting motion; no Terran shipyard cycle is inferred. Shared ACS3 construction and client activity/damage mapping remain separate.",
-  "scale_contract": "PlacementRoot at ground Z=0, local -Y front/+Z up. Client tile/world calibration remains separate.",
-  "mesh_nodes": 21,
-  "triangles": 7566,
-  "author": "sources/tools/blender/remaster_achaean_shipyard.py",
-  "author_sha256": "48458c78408d329f83dc1f413af5d3f2ae685358dd28fb33c3aef46e25b3f0a5",
+  "materials": 7,
+  "structure_checks": "checks_achaean_shipyard_refined",
+  "visual_revision": "construction-detail-and-profile-refinement",
+  "supersedes_binaries": {
+    "blend": "80ed5af69eebe7695788cf4ca51654db8958239c7651ba9abe3ab0c75832400c",
+    "glb": "4212ce95c1a737aeea2ca323c394227f5d499d5f84f530a04d85c6a378837782"
+  },
+  "state_contract": "Static Achaean construction/refitting facility from four-lobed legacy source. Articulated front shoulders/necks with four seated red fields,broad constructed ochre arch/service fixture,stepped spine coupling,source-visible side fitting and three-part blue equipment cluster. Structural seams/fasteners/hidden rear are conservative authored detail. Red/blue low emission constant; no crane/gate cycle inferred from catalogue reveal. Shared ACS3 and client state/FPS remain separate.",
+  "scale_contract": "PlacementRoot at groundZ0; Blender-Y front/+Zup. Legacy-led proportions,exact tile/world calibration and final user artistic acceptance separate.",
+  "mesh_nodes": 34,
+  "triangles": 12578,
+  "author": "sources/tools/blender/remaster_achaean_shipyard_refined.py",
+  "author_sha256": "546f0428da7abbea54e3b0e2e7a50438ed814a209b4266369c8a6a2c7f04594f",
   "helpers": {
     "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "sources/tools/blender/remaster_achaean_shipyard.py": "48458c78408d329f83dc1f413af5d3f2ae685358dd28fb33c3aef46e25b3f0a5",
+    "sources/tools/blender/checks_achaean_shipyard.py": "11a1a192cb115676d686c0cbbe764e1fac8080648dd00eaf7e8d15a143fcf012",
     "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
   },
   "binaries": {
-    "blend": "80ed5af69eebe7695788cf4ca51654db8958239c7651ba9abe3ab0c75832400c",
-    "glb": "4212ce95c1a737aeea2ca323c394227f5d499d5f84f530a04d85c6a378837782"
+    "blend": "8d13411fef4f034f58659f93457d3e6880ccbf0c51f5f1d05020b84546af5feb",
+    "glb": "e1a7e565c68ae03ad551d4d7bc2560057551f8ba0c217ab9e1399e77620fd12a"
   },
   "final_artistic_acceptance": false,
   "game_client_integration": false
