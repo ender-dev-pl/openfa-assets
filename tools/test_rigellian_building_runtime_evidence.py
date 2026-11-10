@@ -127,6 +127,25 @@ class Evidence(unittest.TestCase):
         with self.assertRaises(AssertionError):
             verify_manual_yaw_contract(wrong,report,document)
 
+    def test_retained_extractor_rejects_missing_or_changed_uv_evidence(self):
+        from rigellian_building_runtime_evidence import verify_retained_extractor_contract
+        folder = ROOT/'sources/objects/rigellian/extractor'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        verify_retained_extractor_contract(metadata,report)
+        wrong = deepcopy(report)
+        wrong['exported_uv_comparison']['maximum_uv_corner_error'] = .01
+        with self.assertRaises(AssertionError):
+            verify_retained_extractor_contract(metadata,wrong)
+        wrong = deepcopy(report)
+        wrong['source_uv_comparison']['matched_directed_corners'] = 0
+        with self.assertRaises(AssertionError):
+            verify_retained_extractor_contract(metadata,wrong)
+        wrong = deepcopy(report)
+        wrong['protected_parts'].pop()
+        with self.assertRaises(AssertionError):
+            verify_retained_extractor_contract(metadata,wrong)
+
     def test_static_open_port_evidence_cannot_be_omitted(self):
         data = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_bytes())
         record = next(row for row in data['records'] if row['id'] == 'openfa:building/legacy/050')

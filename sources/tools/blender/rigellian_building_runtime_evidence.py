@@ -113,6 +113,25 @@ def verify_manual_yaw_contract(metadata,report,document):
         assert all(p['fixed_base_unchanged'] is True and set(p['moving_world_matrices']) == moving for p in yaw['poses'])
 
 
+def verify_retained_extractor_contract(metadata,report):
+    assert metadata['id'] == report['id'] == 'openfa:building/legacy/059'
+    assert metadata['mesh_nodes'] == report['meshes'] == len(report['protected_parts']) == 39
+    assert metadata['triangles'] == metadata['original_triangles'] == report['triangles']
+    assert report['protected_surface_error'] < 1e-6
+    assert report['clips'] == [] and not metadata.get('animation')
+    for name in ['source_uv_comparison','exported_uv_comparison']:
+        comparison = report[name]
+        assert comparison['maximum_uv_corner_error'] < 1e-5
+        assert comparison['matched_directed_corners'] > 0 and comparison['position_tolerance'] == 1e-5
+    assert report['source_uv_comparison']['matched_directed_corners'] == report['exported_uv_comparison']['matched_directed_corners']
+    for key in ['native','imported']:
+        form = report[key]
+        assert len(form['sampled_contact_graph']['components']) == 1 and not form['sampled_contact_graph']['isolated']
+        assert len(form['retained_two_casing_dents']) == 2
+        assert len(form['recessed_slots']) == 2 and len(form['lower_ribs']) == 3
+        assert len(form['texture_pixels_and_uvs']) == 2
+
+
 def verify(root, record):
     root = Path(root).resolve()
     project = root.parent if root.name == 'sources' else root
@@ -163,6 +182,8 @@ def verify(root, record):
         raw = path((folder / 'model.glb').as_posix()).read_bytes()
         document = json.loads(raw[20:20+struct.unpack_from('<I', raw, 12)[0]])
         verify_animation_contract(metadata, report, document)
+    if metadata['id'] == 'openfa:building/legacy/059':
+        verify_retained_extractor_contract(metadata,report)
     if metadata.get('articulation'):
         raw = path((folder / 'model.glb').as_posix()).read_bytes()
         document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])

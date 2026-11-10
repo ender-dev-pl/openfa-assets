@@ -11922,7 +11922,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/059",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-920",
         "description_records": [
           920
         ]
@@ -11996,25 +11996,21 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri20/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/rigellian/extractor/model.blend",
           "present": true,
-          "sha256": "e93ed8ef2053146100a9144cede35a0caa89476a67b7f8e64402f09553f2c278",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/buildings/rigellian/extractor/model.blend",
-          "present": true,
-          "sha256": "3f942692a8e7cbccf44e05a88e4736581e70fe4afddc0c85cbbc91491f5ef241",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "structural-detail-refinement",
-          "blend": "docs/assets/reconstruction/rigellian-refined/ri20/model.blend",
-          "present": true,
-          "sha256": "84f5c578b94a2b8f4ea78b30dfe7fa37e434cd4ecf6be6b51a8fdda492a6efd5",
-          "final_visual_acceptance": "not-established"
+          "sha256": "d3190b4e5ae6c5ae0ab9cbcd32c24a81c733666a22688fd5ae2541149eda5a4b",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based concept (interpreted details)",
+              "image": "gallery/media/concepts/rigellian/ri20-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/rigellian/extractor/imported-front-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -12024,7 +12020,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -12064,6 +12060,82 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 59
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/rigellian/ri20/model.blend",
+          "present": true,
+          "sha256": "e93ed8ef2053146100a9144cede35a0caa89476a67b7f8e64402f09553f2c278",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/buildings/rigellian/extractor/model.blend",
+          "present": true,
+          "sha256": "3f942692a8e7cbccf44e05a88e4736581e70fe4afddc0c85cbbc91491f5ef241",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "structural-detail-refinement",
+          "blend": "docs/assets/reconstruction/rigellian-refined/ri20/model.blend",
+          "present": true,
+          "sha256": "84f5c578b94a2b8f4ea78b30dfe7fa37e434cd4ecf6be6b51a8fdda492a6efd5",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "historical_runtime_review": null,
+      "reviewed_model": {
+        "blend": "objects/rigellian/extractor/model.blend",
+        "sha256": "d3190b4e5ae6c5ae0ab9cbcd32c24a81c733666a22688fd5ae2541149eda5a4b",
+        "runtime_evidence": {
+          "format": "rigellian-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/rigellian/extractor",
+          "files": {
+            "gallery/media/concepts/rigellian/ri20-review-1.png": "1d0a0680f49371bdd2e746a72327b3e10bef36aa2fe87b44ee162761512c9e50",
+            "gallery/media/objects/rigellian/extractor/imported-front-quarter.png": "479dc70fd7df2e48ffc5251d5a12604f9d1feb3fbb8a3a07850ce901a3e809ba",
+            "gallery/media/objects/rigellian/extractor/imported-front.png": "62651751bd621629e9f2a5db3895c149b4b0f7df4e8ecd61cbd3ab38b6fcfd1b",
+            "gallery/media/objects/rigellian/extractor/imported-rear-quarter.png": "265eb60bd658538359717fa36c74cb6e24682924901902fed4c0b65d351cecaf",
+            "gallery/media/objects/rigellian/extractor/native-front-quarter.png": "62b160df718bcf2a2d4dc8edf790245a1ed40be39d7a74ad4dcebd07f4710ae9",
+            "gallery/media/objects/rigellian/extractor/native-front.png": "fc3bcfd4a34969a3ddb6a608c2fb5e640cf9abfb23c8d19f5c171e272806bfb1",
+            "gallery/media/objects/rigellian/extractor/native-rear-quarter.png": "67baf84d457272f9a21ba9dfde84941af91f8e0bd4f035d7c4c3f880d25d5a08",
+            "sources/docs/assets/reconstruction/rigellian-refined/ri20/model.blend": "84f5c578b94a2b8f4ea78b30dfe7fa37e434cd4ecf6be6b51a8fdda492a6efd5",
+            "sources/docs/reconstruction/models/ri20-concept-prompt-1.txt": "43e169afe601688984c73e5fda068d783262c57d06acd1374f03fd7d4ac092a2",
+            "sources/objects/rigellian/extractor/model.blend": "d3190b4e5ae6c5ae0ab9cbcd32c24a81c733666a22688fd5ae2541149eda5a4b",
+            "sources/objects/rigellian/extractor/model.glb": "7c0e56b8dc90391e4e08764d3900b117e5f61bc0c4f05b361c9b951b4da9c8f9",
+            "sources/objects/rigellian/extractor/model.json": "1a349a3ea4dbd3812f32d0a3155b217d0ab60985de3df729935856ae3bbbb6bd",
+            "sources/objects/rigellian/extractor/recipe.json": "76f410557a864f23c83d1124691edb5b82e530c16fe87d303286593729e5d066",
+            "sources/objects/rigellian/extractor/runtime-review.json": "91b1283813323fc86e4707a28fb6953794d1fea07033a64b48e89862cee042eb",
+            "sources/objects/rigellian/extractor/visual-review.json": "7237f99b3162a2285a96849e7d2bb0fde0af76a22d8c14a58fd6ca2d51e3318c",
+            "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+            "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+            "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+            "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+            "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+            "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+            "sources/tools/blender/refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+            "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+            "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+            "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+            "sources/tools/blender/rigellian_extractor_remaster_checks.py": "f2024418942b8111f93f71a61160dec511ac0c91ce9f1b28a33f9959a53e70a3",
+            "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+            "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+            "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+            "sources/tools/blender/verify_refined_rigellian_extractor.py": "d8a090cc290d0b5ebe800c93a1dc70446e02c1e1697e909bd039073a9d6ef84f",
+            "sources/tools/blender/verify_remastered_rigellian_extractor.py": "c1cb5a3064a4d8df74b397e4ecbd17f9c436affb57e978398fc9c8721f059943",
+            "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+            "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB source-bound remaster evidence; client and final artistic acceptance remain separate.",
+          "objects/rigellian/extractor/runtime-review.json",
+          "objects/rigellian/extractor/visual-review.json"
+        ]
       }
     },
     {

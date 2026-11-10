@@ -1,0 +1,107 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/059",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri20-review-1.png",
+    "sha256": "1d0a0680f49371bdd2e746a72327b3e10bef36aa2fe87b44ee162761512c9e50",
+    "prompt": "sources/docs/reconstruction/models/ri20-concept-prompt-1.txt",
+    "verdict": "Broad lower shoulder, round upper housing, side pod, three lower ribs, two recessed slots and bronze/green details agree. Concept rounds slot ends and changes green-fitting layout; latest source geometry retained."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "outcome": "Image returned and inspected."
+    }
+  ],
+  "legacy": {
+    "body_sha256": "b9899edda3f28f9d71a0b8105a2fb7bfd86a705840af88a5e6158e66cd008e56",
+    "shadow_sha256": "3b8d1e4343b923b1eab5a1d33268a028971d27a0a34585a0b05ebe370a7df763",
+    "catalogue_phases_sheet_sha256": "9c7f8a9542de6ed7e3f376c10bf89883123d044388475df79c91c80d5f7a46f3",
+    "reviewed_catalogue_phases": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "functional_record": 920,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "d3190b4e5ae6c5ae0ab9cbcd32c24a81c733666a22688fd5ae2541149eda5a4b",
+    "glb": "7c0e56b8dc90391e4e08764d3900b117e5f61bc0c4f05b361c9b951b4da9c8f9"
+  },
+  "runtime_report_sha256": "12c0bc4c8ab897213dafc2eb741a1837e03ca0fc6e1924e9a25844abbbc21e07",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0001220703125,
+        0.00012376573350694444,
+        6.781684027777778e-05,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.0005020920502092051,
+        0.000495118549511855,
+        0.0002789400278940028,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 88
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.00022718641493055556,
+        0.00021531846788194444,
+        0.00016954210069444444,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.0007449167894086376,
+        0.0007167002443552802,
+        0.0005586875920564783,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 74
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        3.729926215277778e-05,
+        4.57763671875e-05,
+        4.57763671875e-05,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.00014801657785671994,
+        0.00017621021173419042,
+        0.0001691618032648228,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 113
+    }
+  },
+  "feedback": [
+    "Original functional record920 identifies one mining device handling all ores. Correctly paletted body/shadow and catalogue colour/outline phases reviewed. Current selector excludes this ID from directional body definitions. Two descriptors do not establish a cycle; RIS2 construction separate.",
+    "One actual built-in ImageGen concept preserves the broad shoulder, rounded upper section, left side pod, front fittings, two vertical slots and three lower ribs. Rounded slot ends, enlarged upper fitting, rearranged green lower pieces and stronger natural patina are interpreted details and are not transferred automatically.",
+    "All39 evaluated parts of the latest structural refinement are protected. Do not revert to the older smooth capsule/flat-inlay/green-loop study. Source stepped shoulder, true slot cavities/backing/rims, three lower ribs, segmented green blocks and existing bronze/green finish remain.",
+    "Source and native UV corners match exactly; native/imported corresponding material corners and complete used colour/roughness pixels are checked. Two retained casing dents and one sampled39-part contact component supplement structural rays; not exhaustive solid-contact proof.",
+    "Three paired actual saved-native/independent GLB views inspected. Export pixel equivalence is separate from legacy likeness. Existing wear/patina is more graphic and subtler than concept; material identity and ambiguous green marks do not establish external plumbing.",
+    "Identity PlacementRoot, nominal2x2 footprint. Lowest physical surface remains at source Z0.02; do not silently assume it touches root Z0. Client ground/scale/state calibration and Android cost remain separate. No drill, operating cycle, glow or damage model invented; final user artistic acceptance remains open."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

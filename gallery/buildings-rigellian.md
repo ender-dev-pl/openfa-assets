@@ -256,23 +256,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/059`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Extractor](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri20/front-quarter.png)
+![Extractor](../gallery/media/objects/rigellian/extractor/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri20/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri20/model.glb)
+[Blend](../sources/objects/rigellian/extractor/model.blend) · [GLB](../sources/objects/rigellian/extractor/model.glb)
 
-**Additional iteration — initial-reference-study**
-
-![Extractor](../gallery/media/docs/assets/reconstruction/buildings/rigellian/extractor/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/extractor/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/extractor/model.glb)
-
-**Additional iteration — structural-detail-refinement**
-
-![Extractor](../gallery/media/docs/assets/reconstruction/rigellian-refined/ri20/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/ri20/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/ri20/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri20-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/extractor/imported-front-quarter.png)
 
 ## Storage racks
 
