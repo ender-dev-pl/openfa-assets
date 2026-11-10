@@ -1,0 +1,89 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/054",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri15-review-1.png",
+    "sha256": "5c298b8ee0bc976d998dbaa89eb289e1cb04ee51a8b0fcab7af2cb68af78271f",
+    "prompt": "sources/docs/reconstruction/models/ri15-concept-prompt-1.txt",
+    "verdict": "Broad grey globe seams, offset green/grey fittings and brass support agree with legacy. Concept splits stem into two pillars, thickens base and simplifies the green bezel; these changes are not established and are rejected in favor of the existing source-guided construction."
+  },
+  "legacy": {
+    "body_sha256": "1f423b69563d251e5f9fdc6bd7aeebf820ad58a432a3db064c6ee166dabf39de",
+    "catalogue_colour_phase20_sha256": "03e6c2e3f9a04550d098a98cd22db06ba85875ee47d64327f9c1240e0bda84dd",
+    "functional_record": 915,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "3a8c835172d61dbd9a2aca3e14baa32b8864e6392f63481118466700c0d36d41",
+    "glb": "42a74467664e4ece8d14b28565669875fe78b7cf65463dbf69c1ff4e3f487317"
+  },
+  "runtime_report_sha256": "000d832ca6c166eae934c03eb57f59bf14a8e9c10282e8c3995ffd8a7438ea7b",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0009375678168402778,
+        0.0008697509765625,
+        0.0008765326605902778,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.003814924425864222,
+        0.0035389805252592148,
+        0.0035596763178045903,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 114
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.0014851888020833333,
+        0.001346164279513889,
+        0.0011834038628472222,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.004838709677419355,
+        0.004380247459125055,
+        0.0038555015466195316,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 76
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.001034206814236111,
+        0.0009426540798611111,
+        0.001007080078125,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.004208096958976237,
+        0.003828055361695953,
+        0.004104449250627069,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 106
+    }
+  },
+  "feedback": [
+    "Actual independent GLB retains the segmented grey globe, offset right green face with dark vertical inset, smaller left grey fitting, brass stem and low grey base with small brass detail.",
+    "Protected base/stem/globe geometry remains exact, including three measured dents and actual meridian/equatorial recesses. Reduction affects two cast bezels only; all 32 perimeter-root samples on each of three fittings remain valid.",
+    "Concept doubles stem into pillars, thickens base and omits some bezel construction. These changes remain unsupported and are rejected. Exact complete seam layout, rear/underside and fitting engineering remain interpretation; existing wear is subtler than the concept.",
+    "Green material is opaque/non-transmissive with zero effective emission, checked in actual native/imported shaders. No charging glow, operating mechanism or rotation is inferred from catalogue reveal/highlight. Shared RIS2 construction separate.",
+    "Numeric native/import comparisons are recorded below; alpha and threshold silhouettes match. Final user artistic acceptance, game scale/state/damage integration, batching and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

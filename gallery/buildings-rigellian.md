@@ -192,17 +192,13 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/054`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Energy Globe](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri15/front-quarter.png)
+![Energy Globe](../gallery/media/objects/rigellian/energy-globe/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/rigellian/ri15/model.glb)
+[Blend](../sources/objects/rigellian/energy-globe/model.blend) · [GLB](../sources/objects/rigellian/energy-globe/model.glb)
 
-**Additional iteration — reference-refined-study**
-
-![Energy Globe](../gallery/media/docs/assets/reconstruction/buildings/rigellian/energy-globe/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/buildings/rigellian/energy-globe/model.blend) · [GLB](../sources/docs/assets/reconstruction/buildings/rigellian/energy-globe/model.glb)
+Additional views: [Legacy-based concept (interpreted details)](../gallery/media/concepts/rigellian/ri15-review-1.png) · [Actual independent GLB](../gallery/media/objects/rigellian/energy-globe/imported-front-quarter.png)
 
 ## Shield Generator
 
