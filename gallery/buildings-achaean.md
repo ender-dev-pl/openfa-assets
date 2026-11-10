@@ -212,11 +212,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/168`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Reactor Cores](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac18/front-quarter.png)
+![Reactor Cores](../gallery/media/objects/achaean/reactor-cores/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac18/model.glb)
+[Blend](../sources/objects/achaean/reactor-cores/model.blend) · [GLB](../sources/objects/achaean/reactor-cores/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac18-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/reactor-cores/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/reactor-cores/imported-rear-quarter.png)
 
 ## Asteroid Shield
 
