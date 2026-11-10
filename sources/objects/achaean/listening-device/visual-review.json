@@ -1,0 +1,108 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/165",
+  "binaries": {
+    "blend": "8311fdada45ff3b2002b69ca93a1feb72aa8678cbebb6297a46181b0c00a067e",
+    "glb": "7854259a44bae0faa456a88d8bdeff2b53af861fcaf6d606246df38482b30b7b"
+  },
+  "runtime_report_sha256": "09dbbcf215362a949e755777b38c5db72345eaca1ceaa5280f907b072eee84d9",
+  "legacy": {
+    "surface_payload_sha256": "455f67ca7a462f2c19bd4600d21e64f257bb3253a1689e598ec1e7fb6acc6de3",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1026,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "7a30022cd55c61fc35b4610b381bece14dbe4a11d8eadb59a436d035f6d1dc8f",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All41 actual paletted catalogue phases and both surface shadow/body layers reviewed. All catalogue roles map to AC15.VID,a fixed-view reveal/highlight rather than mechanical motion. Direct archive-table audit finds AC15.256 only for this prefix. Original depicts tall narrow stepped coral receiver with slate belt on a banded slate support,muted red top needle,parallel ribbed ochre column joined by coral elbow,two amber fields in the main rounded base and one forward-facing round dark foot field. Function1026 establishes sensor-array equivalent near Comms Central. Shared ACS2 construction separate. _MA PB/PH/PM/PS/ST families considered,no AC-named family. Hidden rear,field purposes and exact dimensions interpreted."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac15-review-1.png",
+      "sha256": "1727b7f4d60459580c96ffdb94d7b8aad12ef8272b6c6e31222cb4ee6f441895",
+      "prompt": "sources/docs/reconstruction/models/ac15-concept-prompt-1.txt",
+      "feedback": "Accepted as interpreted guide to the actual narrow two-support silhouette,stepped coral receiver,slate bands,ochre ribbed side column,connected elbow,stacked amber fields and forward dark foot field. Do not retain concept purple bands on the red needle: source does not establish those markings. Keep restrained wear,sparse joins and source proportions rather than additional ornamental flanges or machinery."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Historical coarse native is a single tapered spire with white field grid and detached-looking repeated collars,omitting the actual base/side column/elbow. First new independent GLB restores the asymmetric structure but the upper receiver is too conical relative to source and concept.",
+      "action": "Rebuilt grounded connected bases,supported receiver and side column,actual recessed amber/round fields and continuous coral elbow. Then replaced the over-tapered upper body with broader stepped sections and longer constant-radius tiers; added three owner-specific ray-depth checks across those actual tiers. Source and export regenerated and genuinely reverified."
+    },
+    {
+      "iteration": 2,
+      "observation": "Final native/import quarter,front and rear renders retain the corrected stepped receiver,narrow silhouette,two supports,real elbow and source fields. Native/import surfaces,materials and decoded textures agree.",
+      "action": "Accept for integration review after recomputing all six-render pixel pairs. Actual support,amber/round recess rays,three lower collars,two upper bands and three receiver tier rays pass in both representations. No operational cycle or coloured needle markings inferred. Client scale/state/FPS,hidden rear and final user artistic acceptance remain separate."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 4.006891853988861e-05,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 3.786157807057398e-05,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 4.254594962559564e-05,
+      "margin": 42
+    }
+  ],
+  "review": "Static legacy-led Listening Device with supported asymmetric column loop,subtle coral wear,slate bands and low amber emission. One canonical editable Blend/GLB for gameplay/build/SciTek. Approximate camera,no numerical fidelity score. Actual Blender runtime verified; hidden engineering and client/final user acceptance separate.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

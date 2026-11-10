@@ -176,11 +176,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/165`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Listening Device](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac15/front-quarter.png)
+![Listening Device](../gallery/media/objects/achaean/listening-device/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac15/model.glb)
+[Blend](../sources/objects/achaean/listening-device/model.blend) · [GLB](../sources/objects/achaean/listening-device/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac15-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/listening-device/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/listening-device/imported-rear-quarter.png)
 
 ## Manoeuvring Device
 

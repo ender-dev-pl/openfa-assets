@@ -28278,7 +28278,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/165",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1026",
         "description_records": [
           1026
         ]
@@ -28352,11 +28352,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac15/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/listening-device/model.blend",
           "present": true,
-          "sha256": "5a4f87d30ae042f9fdb246f178ce0d72a52f40a51eb9191ab20fe554d5a6a54c",
-          "final_visual_acceptance": "not-established"
+          "sha256": "8311fdada45ff3b2002b69ca93a1feb72aa8678cbebb6297a46181b0c00a067e",
+          "media": "gallery/media/objects/achaean/listening-device",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac15-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/listening-device/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/listening-device/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -28366,7 +28381,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -28396,6 +28411,64 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 165
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac15/model.blend",
+          "present": true,
+          "sha256": "5a4f87d30ae042f9fdb246f178ce0d72a52f40a51eb9191ab20fe554d5a6a54c",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/listening-device/model.blend",
+        "sha256": "8311fdada45ff3b2002b69ca93a1feb72aa8678cbebb6297a46181b0c00a067e",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/listening-device",
+          "files": {
+            "gallery/media/concepts/achaean/ac15-review-1.png": "1727b7f4d60459580c96ffdb94d7b8aad12ef8272b6c6e31222cb4ee6f441895",
+            "gallery/media/objects/achaean/listening-device/front-quarter.png": "3ee7e9ba2b8e82176d84688690a14c469336c7c3778ab8b0b3be814d0b9f0724",
+            "gallery/media/objects/achaean/listening-device/imported-front-quarter.png": "3ee7e9ba2b8e82176d84688690a14c469336c7c3778ab8b0b3be814d0b9f0724",
+            "gallery/media/objects/achaean/listening-device/imported-front.png": "3813fe5b1aa30c3ec61327b402244a8947f177aff81449a372ba775afae21c38",
+            "gallery/media/objects/achaean/listening-device/imported-rear-quarter.png": "88a58f054fd9d9bfd6c032ac060432229408a09d8a168369593e2cb25c3808ea",
+            "gallery/media/objects/achaean/listening-device/native-front-quarter.png": "81c388c97683493b64c34d10b6f20e985e6807aea3d9c5ffb0d73e7c7201e726",
+            "gallery/media/objects/achaean/listening-device/native-front.png": "e3e043f4dd8e7775b61189362955176828efe1f9c045f4e3949b7be64fe61b05",
+            "gallery/media/objects/achaean/listening-device/native-rear-quarter.png": "07e64ad31f6572d55f787289270b8ff00cd4d4489b480c05ab3823c460660ecc",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac15/model.blend": "5a4f87d30ae042f9fdb246f178ce0d72a52f40a51eb9191ab20fe554d5a6a54c",
+            "sources/docs/reconstruction/models/ac15-concept-prompt-1.txt": "13aeb95c9d629701857c5f0b9e5e947646c5b46bf012a31d52005e0a8ec7b217",
+            "sources/materials/achaean/listening-device/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/listening-device/Coral fine wear normal.png": "bef1048d97b12a3f013fec0182bd58055527d07459163c91eef3f8f3f87c70bf",
+            "sources/materials/achaean/listening-device/Coral metal roughness.png": "efaef6c8b59203937dd615b0f6cedf9cb69d612a32ab3acfedff0cf196669985",
+            "sources/materials/achaean/listening-device/Dark receiver recess.png": "f846fcffc3d132864ce9800ec857683f24044ff4ccd502fe78b471a59692da1a",
+            "sources/materials/achaean/listening-device/Muted red aerial.png": "ea5be319ba578716d9e238b5c05a9faa12e6c247fbe5724445014f6a5395cb2e",
+            "sources/materials/achaean/listening-device/Ochre ribbed column.png": "52092fae0d540e98e045e1520240592bfb9b836621eeedb40f6c354a93e4df0c",
+            "sources/materials/achaean/listening-device/Slate receiver belts.png": "9fd1c20bd6afa610ec084bc4904a49c9c20a80a167e1894c65d8ad6365a39071",
+            "sources/objects/achaean/listening-device/model.blend": "8311fdada45ff3b2002b69ca93a1feb72aa8678cbebb6297a46181b0c00a067e",
+            "sources/objects/achaean/listening-device/model.glb": "7854259a44bae0faa456a88d8bdeff2b53af861fcaf6d606246df38482b30b7b",
+            "sources/objects/achaean/listening-device/model.json": "5168957e314b98a6ea0a73e8a309aa83c05a62cf16366f08600f81e9b30778f2",
+            "sources/objects/achaean/listening-device/runtime-review.json": "23b02090423ab9e4332545c33e8b98be4a5bd593caca7063f1062d24cd471e76",
+            "sources/objects/achaean/listening-device/visual-review.json": "a64b5265d75c219525f3c8c87d9155e3c82f6daefa39e995e458d32f5783ebad",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_listening_device.py": "d96f0a1631626da6acf7ce06d1c81dc064ba55eed7316524bd7641b3840729f5",
+            "sources/tools/blender/checks_achaean_shipyard.py": "e397a226fc7a4df37f4531f8ea724bfa2fac33579bcd2bd3082ab99d382a36ae",
+            "sources/tools/blender/remaster_achaean_listening_device.py": "3b77d52a03086ba0e19261c59752ee3bb8e9f43cf4436596208c1ad9db0cff99",
+            "sources/tools/blender/remaster_achaean_missile_launcher.py": "a0594e4649ef870b68a100439a1feb0e92214babd70da949b7a4169364c18a2d",
+            "sources/tools/blender/remaster_achaean_shipyard.py": "7ccce8d2dfa946f86da065ecb64a8b30a5d56d0e5a375f7d9a6e7957c4b6fbf6",
+            "sources/tools/blender/verify_achaean_building_centered.py": "c40d7ed4063b8a4e64954eef81d08ca4e37420a4a3579e42c38f1a809cc88860",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/listening-device/runtime-review.json",
+          "objects/achaean/listening-device/visual-review.json"
+        ]
       }
     },
     {
