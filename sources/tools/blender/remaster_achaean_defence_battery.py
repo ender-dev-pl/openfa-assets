@@ -2,6 +2,7 @@
 import sys,json,math,tempfile,uuid
 from pathlib import Path
 import bpy
+from mathutils import Matrix,Vector
 sys.path.insert(0,str(Path(__file__).parent))
 from achaean_remaster_geometry import ROOT,lathe,box,material,sha
 from remaster_achaean_shipyard import cleanup,worn_coral_pbr
@@ -33,6 +34,16 @@ def main():
     for i,x in enumerate([-.22,.22]):
         o=box('AC20 separate fork rail '+str(i),(x,0,1.51),(.14,1.08,.17),coral,.045);o.rotation_euler.x=-.4
     bridge=box('AC20 short rear fork bridge',(0,.43,1.34),(.52,.12,.15),coral,.025);bridge.rotation_euler.x=-.4
+    # Functional interpretation requested in review: a recessed emitter facing
+    # along the existing rails, without replacing the source-shaped open fork.
+    emitter_origin=Vector((0,.24,1.46));emitter_rotation=Matrix.Rotation(-.4,3,'X')
+    for name,offset,size,mat,bevel in [
+        ('AC20 seated emitter housing',(0,0,0),(.28,.22,.20),gold,.022),
+        ('AC20 recessed dark emitter surround',(0,-.114,0),(.21,.018,.14),dark,.012),
+        ('AC20 emitter aperture',(0,-.126,0),(.12,.012,.075),blue,.008),
+    ]:
+        obj=box(name,emitter_origin+emitter_rotation@Vector(offset),size,mat,bevel);obj.rotation_euler.x=-.4
+        obj['functional_detail']='Interpreted cannon emitter; not a recovered legacy muzzle shape'
     root=bpy.data.objects.new('PlacementRoot',None);scene.collection.objects.link(root);root['catalogue_id']='openfa:building/legacy/170';root['footprint']=[2,2];root['forward_axis']='-Y';root['dorsal_axis']='+Z'
     for c in [head,base]:world=c.matrix_world.copy();c.parent=root;c.matrix_world=world
     meshes=[o for o in scene.objects if o.type=='MESH'];moving=[o for o in meshes if o not in fixed]
@@ -60,6 +71,8 @@ def main():
     helpers=['achaean_remaster_geometry.py','remaster_achaean_shipyard.py','remaster_achaean_manoeuvring_device.py','remaster_achaean_missile_launcher.py','checks_achaean_shipyard.py']
     dependencies=[*(Path(__file__).with_name(n) for n in helpers),ROOT/'tools/publication_support.py',source]
     meta=dict(issue=256,id='openfa:building/legacy/170',key='AC20',name='Defence Battery',culture='achaean',footprint=[2,2],definition_class=3,construction_updates=36,triangle_budget=30000,materials=4,mesh_nodes=len(meshes),triangles=count,author=Path(__file__).relative_to(ROOT).as_posix(),author_sha256=sha(Path(__file__)),helpers={p.relative_to(ROOT).as_posix():sha(p) for p in dependencies},binaries={ext:sha(output/f'model.{ext}') for ext in ['blend','glb']},animation=dict(retained_controller_signature=original,head='DirectionalHead',base='StaticBase',clip='Animation',export_bake_fps=64,fps=16,frames=[1,17],direction_count=16,moving_meshes=[o.name for o in moving],static_meshes=[o.name for o in fixed],timing_recovered=False),state_contract='Sixteen source surface heading rasters over separate stationary base. Original +Z heading controller/action retained exactly; authored preview timing is not a recovered idle/firing cycle. Source-shaped twin rail/trough head and fixed ochre bearing/foot,coral pedestal/two blue fields. No recoil/projectile sequence inferred. Runtime heading calibration,shared ACS2 and combat mapping separate.',scale_contract='Identity PlacementRoot groundZ0;Blender-Yfront/+Zup;2x2footprint. Source heading index registration and exact world/camera scale separate.',final_artistic_acceptance=False,game_client_integration=False)
+    meta['emitter']=dict(housing='AC20 seated emitter housing',surround='AC20 recessed dark emitter surround',aperture='AC20 emitter aperture',head_local_origin=[0,.24,1.46],head_local_forward=[0,-math.cos(.4),math.sin(.4)],interpretation=True,firing_animation_recovered=False)
+    meta['state_contract']+=' Review refinement adds an inset cannon emitter on a supported housing between the rails. Detailed emitter construction is interpreted; low-emission aperture is a readability cue, not a recovered firing effect.'
     (output/'model.json').write_text(json.dumps(meta,indent=2)+'\n',encoding='utf-8');print('AC20_AUTHORED',count,len(meshes),flush=True)
 if __name__=='__main__':main()
 

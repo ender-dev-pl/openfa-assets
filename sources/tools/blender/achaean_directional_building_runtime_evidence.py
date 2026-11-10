@@ -55,4 +55,7 @@ def verify_animation_document(meta,report,doc):
         m=report[label];assert m['sample_frames']==[1+i/4 for i in range(65)] and m['bearing_contact_checks']==65 and m['fork_rail_gap_bed_rays']==260
         assert m['nonbearing_surface_intersections']==0 and m['nonbearing_surface_pair_checks']>1000 and m['closed_cycle_matrix_error']<1e-5 and m['stationary_meshes_constant'] is True
         assert m['grounded_pedestal_and_foot'] and m['body_foot_relief_bearing_contacts'] and m['source_status_visibility_rays']==2 and m['coral_roughness_range']>.2
+        assert m['emitter_attachment_and_visibility_checks']==260
+    emitter=meta['emitter'];assert emitter['interpretation'] is True and emitter['firing_animation_recovered'] is False
+    assert all(emitter[key] in meta['animation']['moving_meshes'] for key in ['housing','surround','aperture'])
 

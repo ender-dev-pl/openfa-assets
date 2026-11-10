@@ -12,10 +12,10 @@
   "construction_updates": 36,
   "triangle_budget": 30000,
   "materials": 4,
-  "mesh_nodes": 13,
-  "triangles": 3192,
+  "mesh_nodes": 16,
+  "triangles": 3516,
   "author": "sources/tools/blender/remaster_achaean_defence_battery.py",
-  "author_sha256": "cc55954c5cc9146799fcfa5224b3f3768a4681b06c8dee51aae8288722f69d1f",
+  "author_sha256": "621cc7bc60b53476a5bbee3dd80450bbbfaba4b1b45f7dda82bbd72e2b72a327",
   "helpers": {
     "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
     "sources/tools/blender/remaster_achaean_shipyard.py": "48458c78408d329f83dc1f413af5d3f2ae685358dd28fb33c3aef46e25b3f0a5",
@@ -26,8 +26,8 @@
     "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.blend": "258986894b552591f21456365518fd16aa3b6a3438edd9a689bafb9bc7eb349e"
   },
   "binaries": {
-    "blend": "c36033cbe3bda19b54197a07aaa3d249a85f5eb075267dbe0d600095ba3f1e23",
-    "glb": "41cce5e650b90b6eb8ddf9cb94dcd9b6070b985fa18dba48b66cca86c0354b4e"
+    "blend": "899dbf66c9152e62e55b28dc68da3d29f50bd30f22497fefc283c627d03b7928",
+    "glb": "6819ae81a2bdee3f52e17d402d0557bda4248a370a051496f3a576144335bbc3"
   },
   "animation": {
     "retained_controller_signature": {
@@ -92,7 +92,10 @@
       "AC20 fork channel bed",
       "AC20 separate fork rail 0",
       "AC20 separate fork rail 1",
-      "AC20 short rear fork bridge"
+      "AC20 short rear fork bridge",
+      "AC20 seated emitter housing",
+      "AC20 recessed dark emitter surround",
+      "AC20 emitter aperture"
     ],
     "static_meshes": [
       "AC20 narrow grounded pedestal",
@@ -106,8 +109,25 @@
     ],
     "timing_recovered": false
   },
-  "state_contract": "Sixteen source surface heading rasters over separate stationary base. Original +Z heading controller/action retained exactly; authored preview timing is not a recovered idle/firing cycle. Source-shaped twin rail/trough head and fixed ochre bearing/foot,coral pedestal/two blue fields. No recoil/projectile sequence inferred. Runtime heading calibration,shared ACS2 and combat mapping separate.",
+  "state_contract": "Sixteen source surface heading rasters over separate stationary base. Original +Z heading controller/action retained exactly; authored preview timing is not a recovered idle/firing cycle. Source-shaped twin rail/trough head and fixed ochre bearing/foot,coral pedestal/two blue fields. No recoil/projectile sequence inferred. Runtime heading calibration,shared ACS2 and combat mapping separate. Review refinement adds an inset cannon emitter on a supported housing between the rails. Detailed emitter construction is interpreted; low-emission aperture is a readability cue, not a recovered firing effect.",
   "scale_contract": "Identity PlacementRoot groundZ0;Blender-Yfront/+Zup;2x2footprint. Source heading index registration and exact world/camera scale separate.",
   "final_artistic_acceptance": false,
-  "game_client_integration": false
+  "game_client_integration": false,
+  "emitter": {
+    "housing": "AC20 seated emitter housing",
+    "surround": "AC20 recessed dark emitter surround",
+    "aperture": "AC20 emitter aperture",
+    "head_local_origin": [
+      0,
+      0.24,
+      1.46
+    ],
+    "head_local_forward": [
+      0,
+      -0.9210609940028851,
+      0.3894183423086505
+    ],
+    "interpretation": true,
+    "firing_animation_recovered": false
+  }
 }

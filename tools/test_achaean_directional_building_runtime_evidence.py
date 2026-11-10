@@ -26,5 +26,11 @@ class DirectionalEvidenceTests(unittest.TestCase):
     def test_reject_false_continuous_sweep_claim(self):
         r=copy.deepcopy(self.report);r['continuous_sweep_proven']=True
         with self.assertRaises(AssertionError):verify_animation_document(self.meta,r,self.doc)
+    def test_reject_missing_emitter_visibility_or_support_pose(self):
+        r=copy.deepcopy(self.report);r['imported_motion']['emitter_attachment_and_visibility_checks']=259
+        with self.assertRaises(AssertionError):verify_animation_document(self.meta,r,self.doc)
+    def test_reject_emitter_outside_rotating_head(self):
+        m=copy.deepcopy(self.meta);m['animation']['moving_meshes'].remove(m['emitter']['aperture'])
+        with self.assertRaises(AssertionError):verify_animation_document(m,self.report,self.doc)
 
 if __name__=='__main__':unittest.main()

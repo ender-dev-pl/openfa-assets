@@ -3,10 +3,10 @@
   "id": "openfa:building/legacy/170",
   "blender": "4.5.15 LTS",
   "binaries": {
-    "blend": "c36033cbe3bda19b54197a07aaa3d249a85f5eb075267dbe0d600095ba3f1e23",
-    "glb": "41cce5e650b90b6eb8ddf9cb94dcd9b6070b985fa18dba48b66cca86c0354b4e"
+    "blend": "899dbf66c9152e62e55b28dc68da3d29f50bd30f22497fefc283c627d03b7928",
+    "glb": "6819ae81a2bdee3f52e17d402d0557bda4248a370a051496f3a576144335bbc3"
   },
-  "metadata_sha256": "e97742e593ea6d26730af43a68c05e9dccfd3463c24ad8b46866219664517828",
+  "metadata_sha256": "e82a121cfc28e336c685a76539b0c9e86416c023011d9c27fa06ea0d661ce6c5",
   "verifier": "sources/tools/blender/verify_achaean_defence_battery.py",
   "helpers": {
     "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
@@ -16,21 +16,21 @@
     "sources/tools/blender/checks_achaean_shipyard.py": "11a1a192cb115676d686c0cbbe764e1fac8080648dd00eaf7e8d15a143fcf012",
     "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f",
     "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.blend": "258986894b552591f21456365518fd16aa3b6a3438edd9a689bafb9bc7eb349e",
-    "sources/tools/blender/remaster_achaean_defence_battery.py": "cc55954c5cc9146799fcfa5224b3f3768a4681b06c8dee51aae8288722f69d1f",
-    "sources/tools/blender/verify_achaean_defence_battery.py": "95e17e6495d4864306c22f88ae9e376b3f7e414b3997aa80b83081255022019a",
+    "sources/tools/blender/remaster_achaean_defence_battery.py": "621cc7bc60b53476a5bbee3dd80450bbbfaba4b1b45f7dda82bbd72e2b72a327",
+    "sources/tools/blender/verify_achaean_defence_battery.py": "3f6d7a421fcd671243819c85c40bf056e8ffd694724f4e1ff3cfbe2d15e1afdc",
     "sources/tools/blender/verify_achaean_landing_pad.py": "1ff152b35a34dccac96d1fa89e6aaf11eab34d641f47ef45dc1fed650dd67e6c",
     "sources/tools/blender/verify_achaean_building_left_quarter.py": "1b2fa91bbe15b8d3525e078c554e688434bf462d11a3895cdd70c65e2c746711",
     "sources/tools/blender/verify_achaean_building_centered.py": "7ddc3d622d77053e1eaee35e4bc06533694f7871ecbaf6b6fdf82390d4c82258"
   },
-  "triangles": 3192,
-  "meshes": 13,
+  "triangles": 3516,
+  "meshes": 16,
   "materials": 4,
   "embedded_images": 5,
   "maximum_bidirectional_surface_error": 3.2098083124765253e-07,
   "maximum_animation_matrix_error": 4.76837158203125e-07,
   "positive_closed_meshes": {
-    "native": 13,
-    "imported": 13
+    "native": 16,
+    "imported": 16
   },
   "native_world_bounds": [
     -0.5735940933227539,
@@ -130,9 +130,10 @@
     "stationary_meshes_constant": true,
     "closed_cycle_matrix_error": 1.7484555314695172e-07,
     "bearing_contact_checks": 65,
-    "nonbearing_surface_pair_checks": 2080,
+    "nonbearing_surface_pair_checks": 3640,
     "nonbearing_surface_intersections": 0,
     "fork_rail_gap_bed_rays": 260,
+    "emitter_attachment_and_visibility_checks": 260,
     "source_status_visibility_rays": 2,
     "grounded_pedestal_and_foot": true,
     "body_foot_relief_bearing_contacts": true,
@@ -209,9 +210,10 @@
     "stationary_meshes_constant": true,
     "closed_cycle_matrix_error": 1.7484555314695172e-07,
     "bearing_contact_checks": 65,
-    "nonbearing_surface_pair_checks": 2080,
+    "nonbearing_surface_pair_checks": 3640,
     "nonbearing_surface_intersections": 0,
     "fork_rail_gap_bed_rays": 260,
+    "emitter_attachment_and_visibility_checks": 260,
     "source_status_visibility_rays": 2,
     "grounded_pedestal_and_foot": true,
     "body_foot_relief_bearing_contacts": true,
@@ -268,12 +270,12 @@
     "Animation"
   ],
   "renders": {
-    "native-front-quarter.png": "65c8377a0ecc20f0ab9f3bf292dee54297266b2af8f31e9cf83dd47cf265264d",
-    "native-front.png": "211a4c018e2bc1eb4b1af4a43c153814826ba7dadc3c3fbca0c9063fb5c41f06",
-    "native-rear-quarter.png": "2f907a11aa354e108a771aa61ac62faf39e32937151d6ab1c10955e2aaf2bcb4",
-    "imported-front-quarter.png": "933007065f6bb35bc0c009c50d6126cf4b4a8246ac01be1d54d5d1c3301bbaea",
-    "imported-front.png": "367232aeea720d5a25a2a5440bf7ea5c72167ba4d298e1f90e4706b9df072a70",
-    "imported-rear-quarter.png": "433a5083e82aa29a550f7784c5bdb0a4ebde2fe505f8acabb9fad95188ba7e15"
+    "native-front-quarter.png": "e589646d860691b935646c34c9b398830715c0f30e3bc99eff559ed6fd2eda70",
+    "native-front.png": "acd0b6d9bb2be6a986254fa7c68e4caebcdaf3777c68b594e1f660435e8491f3",
+    "native-rear-quarter.png": "9e8eb91ce02505a940a906dbf01d4762395b0bfb1e0e99a0fc226ccdd94175b6",
+    "imported-front-quarter.png": "edcfcb3311b626a2b9ad7d9a6bb2a682b252a9eb590ce5d08bc94f2434dc6752",
+    "imported-front.png": "20253344bb4a24371842da6e28a1ffdac3d6ed8a85291b674008c9f8eab66cd3",
+    "imported-rear-quarter.png": "94c17ec05ea3e79c6709e1e6943367246874625ff7aa7f5f37c6563855b1d2c6"
   },
   "continuous_sweep_proven": false,
   "game_client_integration": false,

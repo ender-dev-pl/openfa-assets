@@ -11,7 +11,7 @@ from checks_achaean_shipyard import material_contract
 F=ROOT/'sources/objects/achaean/defence-battery';M=ROOT/'gallery/media/objects/achaean/defence-battery'
 
 def sample(meta):
-    scene=bpy.context.scene;frames=[1+i/4 for i in range(65)];states={};collisions=0;fork_rays=0;bearing_checks=0
+    scene=bpy.context.scene;frames=[1+i/4 for i in range(65)];states={};collisions=0;fork_rays=0;bearing_checks=0;emitter_checks=0
     for frame in frames:
         scene.frame_set(int(frame),subframe=frame%1);s=snap();states[str(frame)]=s;head=bpy.data.objects['DirectionalHead'];base=bpy.data.objects['StaticBase'];root=bpy.data.objects['PlacementRoot']
         assert head.parent==base.parent==root and root['catalogue_id']==meta['id'] and list(root['footprint'])==[2,2]
@@ -28,6 +28,12 @@ def sample(meta):
             o=bpy.data.objects[name];off=len(p);p.extend(o.matrix_world@v.co for v in o.data.vertices)
             for face in o.data.polygons:faces.append(tuple(off+i for i in face.vertices));owners.append(name)
         tree=BVHTree.FromPolygons(p,faces)
+        emitter=meta['emitter'];housing=emitter['housing'];surround=emitter['surround'];aperture=emitter['aperture']
+        for a,b in [(housing,'AC20 fork channel bed'),(surround,housing),(aperture,surround)]:
+            assert s[a]['tree'].overlap(s[b]['tree']),(frame,a,b);emitter_checks+=1
+        normal=head.matrix_world.to_3x3()@Vector(emitter['head_local_forward']);centre=bpy.data.objects[aperture].matrix_world.translation
+        hit=tree.ray_cast(centre+normal*.5,-normal,1)
+        assert hit[0] is not None and owners[hit[2]]==aperture,(frame,'Emitter occluded');emitter_checks+=1
         for i,x in enumerate([-.22,.22]):
             hit=tree.ray_cast(head.matrix_world@Vector((x,-.45,.8)),Vector((0,0,-1)),1);assert hit[0] is not None and owners[hit[2]]=='AC20 separate fork rail '+str(i);fork_rays+=1
         assert tree.ray_cast(head.matrix_world@Vector((0,-.45,.8)),Vector((0,0,-1)),1)[0] is None;fork_rays+=1
@@ -44,7 +50,8 @@ def sample(meta):
         hit=BVHTree.FromPolygons(allvs,allfaces).ray_cast(o.matrix_world.translation+normal,-normal,2);assert hit[0] is not None and owners[hit[2]]==name
     moved=meta['animation']['moving_meshes'];assert all(states['1.0'][n]['matrix']!=states['5.0'][n]['matrix'] for n in moved)
     cycle=max(abs(a-b) for n in moved for a,b in zip(states['1.0'][n]['matrix'],states['17.0'][n]['matrix']));assert cycle<1e-5
-    return states,dict(sample_frames=frames,stationary_meshes_constant=True,closed_cycle_matrix_error=cycle,bearing_contact_checks=bearing_checks,nonbearing_surface_pair_checks=collisions,nonbearing_surface_intersections=0,fork_rail_gap_bed_rays=fork_rays,source_status_visibility_rays=2,grounded_pedestal_and_foot=True,body_foot_relief_bearing_contacts=True,coral_roughness_range=material_contract())
+    assert emitter_checks==260
+    return states,dict(sample_frames=frames,stationary_meshes_constant=True,closed_cycle_matrix_error=cycle,bearing_contact_checks=bearing_checks,nonbearing_surface_pair_checks=collisions,nonbearing_surface_intersections=0,fork_rail_gap_bed_rays=fork_rays,emitter_attachment_and_visibility_checks=emitter_checks,source_status_visibility_rays=2,grounded_pedestal_and_foot=True,body_foot_relief_bearing_contacts=True,coral_roughness_range=material_contract())
 
 def main():
     meta=json.loads((F/'model.json').read_bytes());source=ROOT/'sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac20/model.blend'
