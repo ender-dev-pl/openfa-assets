@@ -27015,7 +27015,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/159",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1020",
         "description_records": [
           1020
         ]
@@ -27089,11 +27089,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac09/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/market/model.blend",
           "present": true,
-          "sha256": "e3c140b11d1b01ee5cec2afe8418ae008a6757ded23bc9662e36b5c7507bdbd7",
-          "final_visual_acceptance": "not-established"
+          "sha256": "1ae0e50da62ae9290c8f8bab87f796faee8d78b0f415646f6e3cfaa64e83830b",
+          "media": "gallery/media/objects/achaean/market",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac09-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/market/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/market/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -27103,7 +27118,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -27133,6 +27148,57 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 159
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac09/model.blend",
+          "present": true,
+          "sha256": "e3c140b11d1b01ee5cec2afe8418ae008a6757ded23bc9662e36b5c7507bdbd7",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/market/model.blend",
+        "sha256": "1ae0e50da62ae9290c8f8bab87f796faee8d78b0f415646f6e3cfaa64e83830b",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/market",
+          "files": {
+            "gallery/media/concepts/achaean/ac09-review-1.png": "8f757c37d47a6134dbd919012148b7fa85f2f2d414cc486c5ce08261cb805ad1",
+            "gallery/media/objects/achaean/market/front-quarter.png": "2cd9e6e81474eded2558825682c2c30743dcaafd95309289c0fc0b0a334bb9f4",
+            "gallery/media/objects/achaean/market/imported-front-quarter.png": "2cd9e6e81474eded2558825682c2c30743dcaafd95309289c0fc0b0a334bb9f4",
+            "gallery/media/objects/achaean/market/imported-front.png": "9aa02e26b29bffb3f0cdea21646740766b34b41648822eee89cedab36c60124d",
+            "gallery/media/objects/achaean/market/imported-rear-quarter.png": "73e04b63dc09f6ffb3cc76019f0656a2ae180518f28eba9b48e0d9c44f5850fd",
+            "gallery/media/objects/achaean/market/native-front-quarter.png": "4fd542e3721a05e83c0c85d79746b30811005fdaba1fbf19711bd0ba18b094f7",
+            "gallery/media/objects/achaean/market/native-front.png": "5cc1e3cd51df5ab5bd80afefaccd3877b0c7a8593a35557412f94f0e0e09168a",
+            "gallery/media/objects/achaean/market/native-rear-quarter.png": "eb17207ce5e9b89e9ecd7b73c647a24508f95f07bbff4d032985f09a8ccecc92",
+            "sources/docs/reconstruction/models/ac09-concept-prompt-1.txt": "3293048c811a7bccac81ae3a934208c9cda50c322f6a4ba72315acffeaea35b0",
+            "sources/materials/achaean/market/Blue gray fittings.png": "1cec76be88724e04938b39c23553f5888fca337821b86b619081ee093150f32d",
+            "sources/materials/achaean/market/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/market/Dark recess.png": "01d94b2e397c317087ceaed9091e6b3d3b497c0db66b9af081f3b4e69abde7b7",
+            "sources/materials/achaean/market/Dark red status.png": "87f3db7cb8ba5d7a00bf92753335058e3e9abb33a6d9fec909a99c6e2229b264",
+            "sources/objects/achaean/market/model.blend": "1ae0e50da62ae9290c8f8bab87f796faee8d78b0f415646f6e3cfaa64e83830b",
+            "sources/objects/achaean/market/model.glb": "c66187aa8f77d369f33017fff001676f4b3b55d89dc98595e68088d36e20efa4",
+            "sources/objects/achaean/market/model.json": "2c708afc97f3fcf9d38c67dfc0e4ab9d3caa3cc2ff1984069e78a99455ba2c3f",
+            "sources/objects/achaean/market/runtime-review.json": "fac2adb771766be80cfe6134e62aafd9d30d97ad10a43235e46aacb9b045c3dc",
+            "sources/objects/achaean/market/visual-review.json": "91f1fa510d6880982193e74eafb9d4aa837831bc5e3842f8f9b22a90deae8dd1",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_market.py": "81700b8d29aa06ef50dbf9bdeadf66bb4d74c4318b8376c9a557e29e24a33ac3",
+            "sources/tools/blender/remaster_achaean_market.py": "a454d490ba9ce57734e4a62cf3c298076441615b516825bd70881cd170788632",
+            "sources/tools/blender/verify_achaean_building.py": "bc5aba2d48684e47183408fc6f1ff9d4ae5500616b1194421abaa1b7aaf9aa0e",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/market/runtime-review.json",
+          "objects/achaean/market/visual-review.json"
+        ]
       }
     },
     {

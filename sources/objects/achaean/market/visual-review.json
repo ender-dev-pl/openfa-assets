@@ -1,0 +1,113 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/159",
+  "binaries": {
+    "blend": "1ae0e50da62ae9290c8f8bab87f796faee8d78b0f415646f6e3cfaa64e83830b",
+    "glb": "c66187aa8f77d369f33017fff001676f4b3b55d89dc98595e68088d36e20efa4"
+  },
+  "runtime_report_sha256": "ec7fdab153a3d6361b4dbe182db1a72f63e0c288b48f7537cf0c5b5a8658516a",
+  "legacy": {
+    "surface_payload_sha256": "c4377170a0313c0a55e2a9fc3782b848d642b53861f2829d9aa77bb1b2976c71",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1020,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "046cb06b789aef15206d6eb4cb3dd8a7e84021a15e7e814eaddd39420f1a39f6",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All 41 actual paletted phases inspected: progressive reveal and feature highlighting of a fixed view, not operating motion. All profile catalogue roles map to AC09.VID. Shared ACS3 scaffolding remains separate; _MA has no AC-named family. Function1020 establishes trade and visiting as the facility role; no hidden trading interiors invented."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac09-review-1.png",
+      "sha256": "8f757c37d47a6134dbd919012148b7fa85f2f2d414cc486c5ce08261cb805ad1",
+      "prompt": "sources/docs/reconstruction/models/ac09-concept-prompt-1.txt",
+      "feedback": "Retains the compact multi-lobed hall, two low blue-window pavilions, two supported higher side chambers with short posts, upper circular coral motif, paired warm fields and slate crown. Accepted with source-led corrections: shorten the top and preserve the cross-shaped warm fields rather than treating the concept four-pane grids as authoritative. No invented stalls, interiors or machinery."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual first native/import renders preserve the lobe hierarchy and front fields, but the top is too tall/pointed, the circular roof motif reads as a shield, and the central dark recess reflects too much light.",
+      "action": "Shortened the crown neck/hood and side posts, reduced recess specularity and attempted a smoother analytic outline for the coral motif. Updated the explicit model-height constraint from observed source proportions, not merely to pass export checks."
+    },
+    {
+      "iteration": 2,
+      "observation": "Revised real render improves crown/recess, but angular-profile interpolation still produces a tapered roof motif.",
+      "action": "Replaced only that casting with a closed circular patch projected onto the actual cut hall mesh by ray casting. Added a projected-radius error check and 48 distinct boundary directions on both source and independent import. This also reduces exported triangles."
+    },
+    {
+      "iteration": 3,
+      "observation": "Final real front-quarter/front/rear imports and native pairs reviewed: shorter slate crown, circular seated motif, deep central recess, two warm crosses, blue portholes and supported side chambers remain clear.",
+      "action": "Accept for integration review, with quiet interpreted rear surfaces. Constant low warm/blue emission does not establish an operating or blink cycle. Final user artistic acceptance and client scale/state/FPS remain separate."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 3.1276878567518965e-05,
+      "margin": 33
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00011059958801653464,
+      "margin": 39
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 6.393044367727913e-05,
+      "margin": 40
+    }
+  ],
+  "review": "Legacy-led static trade/visiting facility with curved coral chambers, two real blue portholes, cross-shaped warm glazing and a small slate crown. Actual source/import support and owner-specific field checks, projected circular surface casting, sparse seams and restrained wear. Rear/corridor continuation is interpreted; approximate review camera, no numerical legacy-fidelity score. Same rooted canonical payload for gameplay/build/SciTek.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

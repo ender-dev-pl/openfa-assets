@@ -102,11 +102,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/159`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Market](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac09/front-quarter.png)
+![Market](../gallery/media/objects/achaean/market/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac09/model.glb)
+[Blend](../sources/objects/achaean/market/model.blend) · [GLB](../sources/objects/achaean/market/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac09-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/market/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/market/imported-rear-quarter.png)
 
 ## Communications Central
 
