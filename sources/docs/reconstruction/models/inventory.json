@@ -27218,7 +27218,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/160",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1021",
         "description_records": [
           1021
         ]
@@ -27292,11 +27292,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac10/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/communications-central/model.blend",
           "present": true,
-          "sha256": "85ed9d5bb90e6ea0252525568a3b46dd9177110800b9e822c5f6b56f5d531dce",
-          "final_visual_acceptance": "not-established"
+          "sha256": "69bc97bf20abba433851040e809e33626a5c3137b8d887dda5b5b1ee1164f0c6",
+          "media": "gallery/media/objects/achaean/communications-central",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac10-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/communications-central/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/communications-central/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -27306,7 +27321,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -27336,6 +27351,57 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 160
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac10/model.blend",
+          "present": true,
+          "sha256": "85ed9d5bb90e6ea0252525568a3b46dd9177110800b9e822c5f6b56f5d531dce",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/communications-central/model.blend",
+        "sha256": "69bc97bf20abba433851040e809e33626a5c3137b8d887dda5b5b1ee1164f0c6",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/communications-central",
+          "files": {
+            "gallery/media/concepts/achaean/ac10-review-1.png": "5b0c3b0ca75e1d3c80b07aa596a876432979502b0fdda40fdb4ca8c8a85c9138",
+            "gallery/media/objects/achaean/communications-central/front-quarter.png": "bbeab1d85a9a7d835a9bddd93640939f6056aa3c1c119d6c3982cfffccc711ed",
+            "gallery/media/objects/achaean/communications-central/imported-front-quarter.png": "bbeab1d85a9a7d835a9bddd93640939f6056aa3c1c119d6c3982cfffccc711ed",
+            "gallery/media/objects/achaean/communications-central/imported-front.png": "9e7a22fc6e5347d7fc1414ddf41996b94581f073c093cf87c6584e0bcd2f234e",
+            "gallery/media/objects/achaean/communications-central/imported-rear-quarter.png": "8323ef58bde5fe883801d3b5bef2fff48c4766e9724a9e1b8fab717f20437ce0",
+            "gallery/media/objects/achaean/communications-central/native-front-quarter.png": "be5490d23c9396b3d93b88e893c65ca5a94e9d81e0ed161b552b3ca57c525814",
+            "gallery/media/objects/achaean/communications-central/native-front.png": "df22c3c3907cb893b454d97fe61cec5bafbc0e82d44de36d8c5889478e3919a8",
+            "gallery/media/objects/achaean/communications-central/native-rear-quarter.png": "5b15ae5fd586d323433b9006389ba2c831fd5a9fb6469c2ce2fca406ca80d49d",
+            "sources/docs/reconstruction/models/ac10-concept-prompt-1.txt": "e23625eca63bb26fe13fe9b44cd8805f0b233e074c2199759db3c730dc6a178b",
+            "sources/materials/achaean/communications-central/Blue gray fittings.png": "1cec76be88724e04938b39c23553f5888fca337821b86b619081ee093150f32d",
+            "sources/materials/achaean/communications-central/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/communications-central/Dark recess.png": "01d94b2e397c317087ceaed9091e6b3d3b497c0db66b9af081f3b4e69abde7b7",
+            "sources/materials/achaean/communications-central/Dark red terminal.png": "80b9ab58444431d4faab5b81f7344271e5f225fd3920652b313ff267e0b611c2",
+            "sources/objects/achaean/communications-central/model.blend": "69bc97bf20abba433851040e809e33626a5c3137b8d887dda5b5b1ee1164f0c6",
+            "sources/objects/achaean/communications-central/model.glb": "eef5fc411afe783c3c4059057e2922516de88d746341dc201c3d341a9ec4bee7",
+            "sources/objects/achaean/communications-central/model.json": "25e2ddc11c3ea41ce96aa201adfb0f27222bcb81039a14559484fc43d7542d82",
+            "sources/objects/achaean/communications-central/runtime-review.json": "2b204fd6f0f8014f7265f20d7decdf59acb2dfbf4a168d6bc1e6a0e129116b55",
+            "sources/objects/achaean/communications-central/visual-review.json": "04a166bcd61988174faf5a746ed35fc5fffc238e981dece4d63f0a9da3fc4d04",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_communications.py": "bbcf3d5b5f6a850e78a8fd20bacc2d26db515c31e97e891290ee0b737ac035fd",
+            "sources/tools/blender/remaster_achaean_communications.py": "fcfee599baf85daf35abe519e4e68a54d871bb71d395d89e1b1420d2d4e2994c",
+            "sources/tools/blender/verify_achaean_building.py": "bc5aba2d48684e47183408fc6f1ff9d4ae5500616b1194421abaa1b7aaf9aa0e",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/communications-central/runtime-review.json",
+          "objects/achaean/communications-central/visual-review.json"
+        ]
       }
     },
     {

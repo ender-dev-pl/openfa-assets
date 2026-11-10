@@ -1,0 +1,109 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/160",
+  "binaries": {
+    "blend": "69bc97bf20abba433851040e809e33626a5c3137b8d887dda5b5b1ee1164f0c6",
+    "glb": "eef5fc411afe783c3c4059057e2922516de88d746341dc201c3d341a9ec4bee7"
+  },
+  "runtime_report_sha256": "c7c667f75b35ab04ee619a27827043f3f085bb88c83c7464ef31c1ceb00e3ece",
+  "legacy": {
+    "surface_payload_sha256": "d60264860683111807040e50ee3e924b2dcb5f9f93a0be1c44279053a93b982f",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1021,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "8b4f91e136e1bb295ffc4661bb3904eb478de8fee56ed56f9bc3be72aad67603",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All 41 actual paletted phases inspected: reveal/highlight of one fixed view, not operating motion. Actual profile roles map to AC10.VID. Original strip column sampled privately across rows32\u201349 to establish18 cells and three-shade order; materials are interpreted under 3D lighting, not pixel-identical source textures. Shared ACS3 scaffolding remains separate; no AC-named _MA family. Function1021 establishes information collection/evaluation and links to Data Gatherer/Listening Device, not a combat-fleet headquarters.",
+    "strip_sample_count": 18
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac10-review-1.png",
+      "sha256": "5b0c3b0ca75e1d3c80b07aa596a876432979502b0fdda40fdb4ca8c8a85c9138",
+      "prompt": "sources/docs/reconstruction/models/ac10-concept-prompt-1.txt",
+      "feedback": "Retains tall coral information tower, slate tiered hood, asymmetrical lower chambers, left cyan windows and curled castings, two real right roof apertures and a narrow coloured strip ending in a red terminal. Accepted as an interpreted modelling guide. The actual source strip contains 18 rows in a three-shade sequence; its count/ordering takes precedence over the concept."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual first native/import renders retain the hierarchy but the hood tip is too sharp, too few left roof castings face the viewer, one right aperture floor is difficult to read obliquely and display reflections wash out its colours.",
+      "action": "Shortened the hood, redistributed/broadened the three conformal left castings, seated the existing black bore floors closer to the mouth and reduced strip specularity while preserving the sampled three-colour order. Updated height/depth contracts from this explicit physical correction; no shared producer/tolerance change."
+    },
+    {
+      "iteration": 2,
+      "observation": "Final actual quarter/front/rear imports and native pairs show the revised hood, visible left castings and two dark right roof bores. A supplemental actual GLB render from an elevated near-front angle supports roof comparison against the source.",
+      "action": "Accept for integration review. The 18 cells are static and low-emissive; reveal/highlight does not establish scrolling, blinking or antenna motion. Final user artistic acceptance, client scale/state and Android FPS remain separate."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 6.445167735490316e-05,
+      "margin": 41
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00019065642300305051,
+      "margin": 38
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 4.220050302999612e-05,
+      "margin": 30
+    }
+  ],
+  "review": "Legacy-led static information-evaluation facility: asymmetric lower chambers, narrow 18-cell blue/violet/cold-blue strip, two cyan windows and two blind roof bores with dark floors. Supported post/case/terminal and ground contact checked on both source/import. Curved worn alloy with sparse castings. Quiet interpreted rear; approximate cameras rather than recovered projection; no numerical fidelity score. Same rooted canonical payload for gameplay/build/SciTek.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
