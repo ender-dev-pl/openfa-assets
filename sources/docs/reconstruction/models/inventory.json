@@ -27850,7 +27850,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/163",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1024",
         "description_records": [
           1024
         ]
@@ -27924,17 +27924,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac13/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/missile-launcher/model.blend",
           "present": true,
-          "sha256": "8af04057213a9beb6f581c77a2e9e54f5af3958195d952e67584b0a7f7fbf1c7",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "verified-launch-mechanism",
-          "blend": "docs/assets/reconstruction/launch-facilities/achaean/ac13/model.blend",
-          "present": true,
-          "sha256": "6f26342997acb44ec2b77e722e887d50a1f07ce8ee7f85661e1e3e4bbbd3e46e"
+          "sha256": "53c04968bb6b76def65d677b0d9d7225c091b0af01d4d2a04b442fafe546f48a",
+          "media": "gallery/media/objects/achaean/missile-launcher",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac13-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/missile-launcher/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/missile-launcher/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -27944,7 +27953,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -27974,6 +27983,67 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 163
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac13/model.blend",
+          "present": true,
+          "sha256": "8af04057213a9beb6f581c77a2e9e54f5af3958195d952e67584b0a7f7fbf1c7",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "verified-launch-mechanism",
+          "blend": "docs/assets/reconstruction/launch-facilities/achaean/ac13/model.blend",
+          "present": true,
+          "sha256": "6f26342997acb44ec2b77e722e887d50a1f07ce8ee7f85661e1e3e4bbbd3e46e"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/missile-launcher/model.blend",
+        "sha256": "53c04968bb6b76def65d677b0d9d7225c091b0af01d4d2a04b442fafe546f48a",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/missile-launcher",
+          "files": {
+            "gallery/media/concepts/achaean/ac13-review-1.png": "d8f462b04764b9059f272c6b65d8e76abb2800c95283a0fff0b8eba2b3d92836",
+            "gallery/media/objects/achaean/missile-launcher/front-quarter.png": "cc8c6a76e5721e8e347697d60792f2afdd7c28721e8fe3941bc4c0beb565cf3a",
+            "gallery/media/objects/achaean/missile-launcher/imported-front-quarter.png": "cc8c6a76e5721e8e347697d60792f2afdd7c28721e8fe3941bc4c0beb565cf3a",
+            "gallery/media/objects/achaean/missile-launcher/imported-front.png": "f737d30a124c506d17f9d79cd11d022a6f734dae76e0c41faae4eff0878e0593",
+            "gallery/media/objects/achaean/missile-launcher/imported-rear-quarter.png": "b01b01028c6f17a67777b1209566450f546ed321c7ef8e8929edec3c1d40ebf0",
+            "gallery/media/objects/achaean/missile-launcher/native-front-quarter.png": "58453a1139bea86bdc01fd0074d410fe4679cdb029ad7880fcb4594052c2f8e6",
+            "gallery/media/objects/achaean/missile-launcher/native-front.png": "1d74f14d041f576f9ca0adc5f497087e1862552accde01a980b1ec65cc0d5856",
+            "gallery/media/objects/achaean/missile-launcher/native-rear-quarter.png": "c1c5baf1f1da4b8454b30bb3f3ccd5584be23a354506bea8563434fb7ceef8d3",
+            "sources/docs/assets/reconstruction/launch-facilities/achaean/ac13/model.blend": "6f26342997acb44ec2b77e722e887d50a1f07ce8ee7f85661e1e3e4bbbd3e46e",
+            "sources/docs/reconstruction/models/ac13-concept-prompt-1.txt": "8dc4bcbba99d2ed275567784a3aa18d2d58730fd04414a3d8a646826ab9d9acc",
+            "sources/materials/achaean/missile-launcher/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/missile-launcher/Coral fine wear normal.png": "bef1048d97b12a3f013fec0182bd58055527d07459163c91eef3f8f3f87c70bf",
+            "sources/materials/achaean/missile-launcher/Coral metal roughness.png": "efaef6c8b59203937dd615b0f6cedf9cb69d612a32ab3acfedff0cf196669985",
+            "sources/materials/achaean/missile-launcher/Dark recessed fields.png": "4861e49fe822ac50789d8a7ca73e6183cb0b23d567542024789a1938d9e61ea4",
+            "sources/materials/achaean/missile-launcher/Slate twin heads.png": "9ce68e7cc809ed301edb32d873b67cca2d84ab0d705dd1173af939447070bb73",
+            "sources/objects/achaean/missile-launcher/model.blend": "53c04968bb6b76def65d677b0d9d7225c091b0af01d4d2a04b442fafe546f48a",
+            "sources/objects/achaean/missile-launcher/model.glb": "d995c42dc0d38dad2dcc65ae77958acc8ca6298cd185efdfd85ef6f61d44f657",
+            "sources/objects/achaean/missile-launcher/model.json": "b008bb25f6bff5c0a0a961e17d112d406f186ee9b5349c3c46efaace6e0a6b26",
+            "sources/objects/achaean/missile-launcher/runtime-review.json": "6ae41b893390cc4b89c7a07087c723aed858962df20c07f80ae71d75454effc1",
+            "sources/objects/achaean/missile-launcher/visual-review.json": "d43b281b6f31e3c4171d7a0310e9b377d40f5bbdde1a1975429afb677fc6207e",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_missile_launcher.py": "02c50ee801f38228dccebaec0fb8bf71f59e801e7abe2a6481bf756dc5c0b8ce",
+            "sources/tools/blender/checks_achaean_shipyard.py": "e397a226fc7a4df37f4531f8ea724bfa2fac33579bcd2bd3082ab99d382a36ae",
+            "sources/tools/blender/remaster_achaean_missile_launcher.py": "a0594e4649ef870b68a100439a1feb0e92214babd70da949b7a4169364c18a2d",
+            "sources/tools/blender/remaster_achaean_shipyard.py": "7ccce8d2dfa946f86da065ecb64a8b30a5d56d0e5a375f7d9a6e7957c4b6fbf6",
+            "sources/tools/blender/verify_achaean_building_centered.py": "c40d7ed4063b8a4e64954eef81d08ca4e37420a4a3579e42c38f1a809cc88860",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/missile-launcher/runtime-review.json",
+          "objects/achaean/missile-launcher/visual-review.json"
+        ]
       }
     },
     {

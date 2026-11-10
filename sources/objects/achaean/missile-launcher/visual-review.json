@@ -1,0 +1,108 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/163",
+  "binaries": {
+    "blend": "53c04968bb6b76def65d677b0d9d7225c091b0af01d4d2a04b442fafe546f48a",
+    "glb": "d995c42dc0d38dad2dcc65ae77958acc8ca6298cd185efdfd85ef6f61d44f657"
+  },
+  "runtime_report_sha256": "febcc09cb1bfbd2f40a1425cc4ba962b493524646601afec352154b9c4e38be3",
+  "legacy": {
+    "surface_payload_sha256": "c29f628828cd63d04717e444fec91b004b8a379d1c9797bf2357fa9b0962dddc",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1024,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "6d090a045b315b1aa4e43aae61aa7a90c593b4795afaaf8dabf14fa0f1230448",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All41 actual paletted phases inspected: reveal/highlight of a fixed view,not an operating cycle. All catalogue roles map to AC13.VID. Original archive table has only AC13.256 for this prefix; two surface descriptors are shadow and permanent body. Two ringed coral posts with separate slate heads rise above the left chamber; two red lower fields and seven dark right fields arranged2/3/2 are visible. Right top aperture remains permanently exposed,consistent with prior refinement. Function1024 establishes equivalent missile-launching role; no new lid inferred. Shared ACS2 scaffolding separate. _MA PB/PH/PM/PS/ST families considered; no AC-named family. Dark front field purpose,hidden rear and exact scale are interpreted."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac13-review-1.png",
+      "sha256": "d8f462b04764b9059f272c6b65d8e76abb2800c95283a0fff0b8eba2b3d92836",
+      "prompt": "sources/docs/reconstruction/models/ac13-concept-prompt-1.txt",
+      "feedback": "Accepted as interpreted modelling/material guide: two connected coral lobes,two parallel ringed posts with slate heads,two red lower fields,seven dark front recesses and permanently open small right mouth. Preserve broad flowing castings and source proportions. Heavy concept pitting is restrained in the game model; no third central dome,gold cap,forked antenna,white window grid or lid cycle."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual historical native inspection shows a large third dome,forked aerial,gold caps and white window grids,diverging from the source. Its permanently open emitter and dark floor remain useful. First new independent GLB render restores the source layout but the post bands bulge too far.",
+      "action": "Rebuilt two connected grounded chambers,parallel supported posts,seven actual Boolean front recesses and two red fields. Retained authored .17 mouth radius and .05 floor datum from prior exposed-emitter treatment. Narrowed post ring radius from.125 to.112 to retain straighter source columns; no change to hidden mechanism or animation invented."
+    },
+    {
+      "iteration": 2,
+      "observation": "Final actual source/import quarter,front and rear renders retain the twin-post and seven-field arrangement after the post correction. Open-mouth and recessed-field rays pass in both representations.",
+      "action": "Accept for integration review. Actual independent geometry,supports,UVs,decoded textures,PBR topology,separate dark floor and21 open-well/16collar rays verified; native/import pixel parity recomputed across six final renders. Hidden rear,field purpose,client scale/rocket fit/state/FPS and final user artistic acceptance remain separate."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0003448217860086458,
+      "margin": 52
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0001887922504036248,
+      "margin": 45
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0011031661674235835,
+      "margin": 53
+    }
+  ],
+  "review": "Legacy-led static exposed Missile Launcher with four materials,coral PBR wear,twin slate heads and actual recessed fields. One canonical payload for gameplay/build/SciTek. Fixed-view source provides no opening/closing cycle. Approximate camera and conservative hidden geometry,no numerical fidelity score. Actual Blender runtime verified; client and final user acceptance separate.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

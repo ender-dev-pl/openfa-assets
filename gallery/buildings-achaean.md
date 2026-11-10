@@ -152,17 +152,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/163`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Missile Launcher](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac13/front-quarter.png)
+![Missile Launcher](../gallery/media/objects/achaean/missile-launcher/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac13/model.glb)
+[Blend](../sources/objects/achaean/missile-launcher/model.blend) · [GLB](../sources/objects/achaean/missile-launcher/model.glb)
 
-**Additional iteration — verified-launch-mechanism**
-
-![Missile Launcher](../gallery/media/docs/assets/reconstruction/launch-facilities/achaean/ac13/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac13/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/achaean/ac13/model.glb)
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac13-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/missile-launcher/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/missile-launcher/imported-rear-quarter.png)
 
 ## Data Gatherer
 
