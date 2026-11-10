@@ -312,10 +312,12 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/176`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Power Tower](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/front-quarter.png)
+![Power Tower](../gallery/media/objects/achaean/power-tower/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/model.glb)
+[Blend](../sources/objects/achaean/power-tower/model.blend) · [GLB](../sources/objects/achaean/power-tower/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/animation-00.webm)
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac26-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/power-tower/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/power-tower/imported-rear-quarter.png)
+
+[Play animation: Animation](../gallery/media/objects/achaean/power-tower/animation-00.webm)

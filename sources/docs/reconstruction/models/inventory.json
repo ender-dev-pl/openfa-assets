@@ -30613,7 +30613,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/176",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1037",
         "description_records": [
           1037
         ]
@@ -30687,11 +30687,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/power-tower/model.blend",
           "present": true,
-          "sha256": "1479dcb9cb565825a8ec2adf9d627791d55badc8441699b02b083c8e76bfb86c",
-          "final_visual_acceptance": "not-established"
+          "sha256": "6af10073ce0823a7ae59193429893ece0acfd60eff6260dea374e7b9c011c553",
+          "media": "gallery/media/objects/achaean/power-tower",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac26-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/power-tower/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/power-tower/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -30701,7 +30716,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -30731,6 +30746,71 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 176
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/model.blend",
+          "present": true,
+          "sha256": "1479dcb9cb565825a8ec2adf9d627791d55badc8441699b02b083c8e76bfb86c",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/power-tower/model.blend",
+        "sha256": "6af10073ce0823a7ae59193429893ece0acfd60eff6260dea374e7b9c011c553",
+        "runtime_evidence": {
+          "format": "achaean-power-tower-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/power-tower",
+          "files": {
+            "gallery/media/concepts/achaean/ac26-review-1.png": "e67a1c3d1de307bfbea6288c8a61e33a72979e2b9e68e7cbe680f00e6a4ea0de",
+            "gallery/media/objects/achaean/power-tower/animation-00.webm": "a118db7b8ba9d960e2f0400fd70f934d68ea0f03c2d477e0d8b320819a970df8",
+            "gallery/media/objects/achaean/power-tower/animation-previews.json": "13469ebec079c2e0dfb3e7e4e0fe2ba05daece2a85d8510edb5e3249510cc19f",
+            "gallery/media/objects/achaean/power-tower/front-quarter.png": "fcfb43231546c5a67a66a949335c7f27b1a1433add010c768c893c6876a1722c",
+            "gallery/media/objects/achaean/power-tower/imported-front-quarter.png": "fcfb43231546c5a67a66a949335c7f27b1a1433add010c768c893c6876a1722c",
+            "gallery/media/objects/achaean/power-tower/imported-front.png": "47a812687620a4c77793c827ff9ccc53cc286ae479a27465156e1ac974453b4f",
+            "gallery/media/objects/achaean/power-tower/imported-rear-quarter.png": "e7c726ed158bfda75551de5c9681376f3501ed8e3e250bfef50fcb15a1821d65",
+            "gallery/media/objects/achaean/power-tower/native-front-quarter.png": "b1597c274289c7fd9bcc16af6fb7d8a7580d0f0c86e488eb570dd2c3b4eb2f18",
+            "gallery/media/objects/achaean/power-tower/native-front.png": "c763c07c6065b08fc7e6c788edea363a62e9ae12a7f98def5ae0d738565b1a35",
+            "gallery/media/objects/achaean/power-tower/native-rear-quarter.png": "06eb08cb915e6105068d98627cb8d030f7ee89cd0e0dc40996eec200183353e2",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/model.blend": "1479dcb9cb565825a8ec2adf9d627791d55badc8441699b02b083c8e76bfb86c",
+            "sources/docs/reconstruction/models/ac26-concept-prompt-1.txt": "0413735e9cbe105af6fe1a5c3c4897f7ad3881b4c7cd41819ad1596bf037ea9d",
+            "sources/materials/achaean/power-tower/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/power-tower/Coral fine wear normal.png": "bef1048d97b12a3f013fec0182bd58055527d07459163c91eef3f8f3f87c70bf",
+            "sources/materials/achaean/power-tower/Coral metal roughness.png": "efaef6c8b59203937dd615b0f6cedf9cb69d612a32ab3acfedff0cf196669985",
+            "sources/materials/achaean/power-tower/Dark bore and field backs.png": "5146923c5c988377f331ebb7c91c19316669d9acc3f4c8ab67d7f100175ed138",
+            "sources/materials/achaean/power-tower/Four red shaft bands.png": "0791d9e1d814668ff3ed090ee0b415f2b006ffbcd66992779ab1a9c3a0e2dd3d",
+            "sources/materials/achaean/power-tower/Ochre source fitting.png": "9df92e13101ac1c797f8b3d1581ee96c99018dcf6e553ae03ec15142d49c8f40",
+            "sources/materials/achaean/power-tower/Slate lower oval fitting.png": "f8b267403c24be83d9b773ae534453bca079b1f60c9c68a78d4518b5aee3aecb",
+            "sources/objects/achaean/power-tower/model.blend": "6af10073ce0823a7ae59193429893ece0acfd60eff6260dea374e7b9c011c553",
+            "sources/objects/achaean/power-tower/model.glb": "300fd017bd9f11f77c0e6b339659fd54bdf0978abf776e67146721faeb2fbd85",
+            "sources/objects/achaean/power-tower/model.json": "db8aefae58a084f55ed076a8b8acb2b9b44bc05177c51d20c6282b7514789ad2",
+            "sources/objects/achaean/power-tower/runtime-review.json": "3ed6e4966b7e0187b45d2200159831e9dea5abd9cc3ea030d73f39f537b13d11",
+            "sources/objects/achaean/power-tower/visual-review.json": "7a2637ef000a83de19f0d5681993259870b8ac27bb5856626fce01801d8f4d42",
+            "sources/tools/blender/achaean_power_tower_runtime_evidence.py": "83763364f7dd6ffe073d5a2b1721d90c6fdb5bb4cb5ce3d0aa0c4b567fba41ff",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_shipyard.py": "e397a226fc7a4df37f4531f8ea724bfa2fac33579bcd2bd3082ab99d382a36ae",
+            "sources/tools/blender/remaster_achaean_manoeuvring_device.py": "bccbd3e9cd29706fbf5b0af5dd1df712be840edefc562002bac491ed895cb4fe",
+            "sources/tools/blender/remaster_achaean_missile_launcher.py": "a0594e4649ef870b68a100439a1feb0e92214babd70da949b7a4169364c18a2d",
+            "sources/tools/blender/remaster_achaean_power_tower.py": "1cd1614c58881aedf4dc5939e5aa24166e6b2631fda2479eeab1d229c85c3664",
+            "sources/tools/blender/remaster_achaean_shipyard.py": "7ccce8d2dfa946f86da065ecb64a8b30a5d56d0e5a375f7d9a6e7957c4b6fbf6",
+            "sources/tools/blender/render_achaean_power_heading_preview.py": "58a26d19b5bb97f46e140820b79e36a590f566bf95f83f3f4f592abe32f540ca",
+            "sources/tools/blender/verify_achaean_building_centered.py": "c40d7ed4063b8a4e64954eef81d08ca4e37420a4a3579e42c38f1a809cc88860",
+            "sources/tools/blender/verify_achaean_building_left_quarter.py": "27a9026001272eaa467909e1d02f157af0353fc51dceed1cc60077154333cb74",
+            "sources/tools/blender/verify_achaean_landing_pad.py": "d34c2c7b7539ebc44c7a47d8a36928f6b4077d53e373af086a4347379687dd20",
+            "sources/tools/blender/verify_achaean_power_tower.py": "cd104edaf4dd9d123f830dbce71f6bfadc217358b7956dbd3327ede9895040ba",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with 65 sampled heading states, bearing/clearance/nozzle checks, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/power-tower/runtime-review.json",
+          "objects/achaean/power-tower/visual-review.json"
+        ]
       }
     },
     {

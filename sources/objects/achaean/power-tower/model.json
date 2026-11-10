@@ -1,0 +1,149 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/176",
+  "key": "AC26",
+  "name": "Power Tower",
+  "culture": "achaean",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 18,
+  "construction_updates": 50,
+  "triangle_budget": 30000,
+  "materials": 6,
+  "mesh_nodes": 31,
+  "triangles": 11830,
+  "author": "sources/tools/blender/remaster_achaean_power_tower.py",
+  "author_sha256": "93ed5d2f17750fe41597a0f2c7048ff4594e2a8fbcfeb104ac88d182592debc3",
+  "helpers": {
+    "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "sources/tools/blender/remaster_achaean_shipyard.py": "48458c78408d329f83dc1f413af5d3f2ae685358dd28fb33c3aef46e25b3f0a5",
+    "sources/tools/blender/remaster_achaean_manoeuvring_device.py": "d059d083422720513ac2ca8f7cca1703bee299aae57495acd9f5b80c0439c3f4",
+    "sources/tools/blender/remaster_achaean_missile_launcher.py": "8a24bce326873bed11be0ee8f021acc3c8990440eb6a4d7291e4bab02fa54c3d",
+    "sources/tools/blender/checks_achaean_shipyard.py": "11a1a192cb115676d686c0cbbe764e1fac8080648dd00eaf7e8d15a143fcf012",
+    "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f",
+    "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac26/model.blend": "1479dcb9cb565825a8ec2adf9d627791d55badc8441699b02b083c8e76bfb86c"
+  },
+  "binaries": {
+    "blend": "6af10073ce0823a7ae59193429893ece0acfd60eff6260dea374e7b9c011c553",
+    "glb": "300fd017bd9f11f77c0e6b339659fd54bdf0978abf776e67146721faeb2fbd85"
+  },
+  "animation": {
+    "retained_controller_signature": {
+      "location": [
+        0.0,
+        0.0,
+        2.5999999046325684
+      ],
+      "rotation_mode": "XYZ",
+      "action": "HeadingPreview_360",
+      "curves": [
+        {
+          "path": "rotation_euler",
+          "index": 2,
+          "keys": [
+            {
+              "co": [
+                1.0,
+                0.0
+              ],
+              "interpolation": "LINEAR",
+              "left": [
+                -4.333333492279053,
+                0.0
+              ],
+              "right": [
+                6.333333492279053,
+                0.0
+              ]
+            },
+            {
+              "co": [
+                17.0,
+                6.2831854820251465
+              ],
+              "interpolation": "LINEAR",
+              "left": [
+                11.666666030883789,
+                6.2831854820251465
+              ],
+              "right": [
+                22.33333396911621,
+                6.2831854820251465
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "clip": "Animation",
+    "export_bake_fps": 64,
+    "fps": 16,
+    "frames": [
+      1,
+      17
+    ],
+    "direction_count": 16,
+    "moving_meshes": [
+      "AC26 moving bearing spindle",
+      "AC26 low bowl directional head",
+      "AC26 shallow head cap",
+      "AC26 long central emitter",
+      "AC26 recessed central emitter face",
+      "AC26 short flanking lug 0",
+      "AC26 short flanking lug 1"
+    ],
+    "static_meshes": [
+      "AC26 grounded sloping buttress",
+      "AC26 grounded flared casing",
+      "AC26 narrow stationary shaft",
+      "AC26 red shaft band 0",
+      "AC26 red shaft band 1",
+      "AC26 red shaft band 2",
+      "AC26 red shaft band 3",
+      "AC26 ochre raised service plate",
+      "AC26 ochre service rib 0",
+      "AC26 ochre service rib 1",
+      "AC26 ochre service rib 2",
+      "AC26 small slate ground oval",
+      "AC26 cobalt status field 0 dark back",
+      "AC26 cobalt status field 0",
+      "AC26 cobalt status field 1 dark back",
+      "AC26 cobalt status field 1",
+      "AC26 cobalt status field 2 dark back",
+      "AC26 cobalt status field 2",
+      "AC26 cobalt status field 3 dark back",
+      "AC26 cobalt status field 3",
+      "AC26 cobalt status field 4 dark back",
+      "AC26 cobalt status field 4",
+      "AC26 cobalt status field 5 dark back",
+      "AC26 cobalt status field 5"
+    ],
+    "timing_recovered": false
+  },
+  "emitter": {
+    "centre": [
+      0.0,
+      0.0,
+      1.7300000190734863
+    ],
+    "axis": [
+      0.0,
+      0.9004471302032471,
+      0.4349655210971832
+    ],
+    "central_length": 1.1,
+    "flanking_lengths": [
+      0.42,
+      0.42
+    ],
+    "recessed_face_distance": 0.977
+  },
+  "state_contract": "Directional Power Tower with one low bowl head/shallow cap,long central emitter and two shorter flanking lugs over stationary narrow shaft/four red bands,flared ground casing,left sloping buttress,three-rib ochre plate,six cobalt fields and small slate oval. All16 source headings reviewed;one long central/two short flanking projections interpreted from them. Exact original native heading controller/action retained. No firing/recoil/idle cycle recovered;current preview timing is heading demonstration. Shared ACS2,client heading/muzzle/state mapping separate;hidden bore/mechanism construction interpreted.",
+  "scale_contract": "Identity PlacementRoot groundZ0;Blender-Yfront/+Zup;2x2footprint. Source anatomy/counts retained;exact heading index/world/camera/impact calibration and Android frame time separate.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

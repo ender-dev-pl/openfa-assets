@@ -1,0 +1,134 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/176",
+  "binaries": {
+    "blend": "6af10073ce0823a7ae59193429893ece0acfd60eff6260dea374e7b9c011c553",
+    "glb": "300fd017bd9f11f77c0e6b339659fd54bdf0978abf776e67146721faeb2fbd85"
+  },
+  "runtime_report_sha256": "c73eb5f13bf0c777a40c2c53a0c4b5b15e5170779cef7ac151562d3f0346cff4",
+  "legacy": {
+    "surface_payload_sha256": "d8afd302d41a45c1a04fbe8f1c92cc529f69b59dcd06602cb131a6abe26e329d",
+    "surface_layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "functional_record": 1037,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "c32dfb9487290cdcdf0b0b1267948a3e3e88c4db74748967e5a7125714bcc987",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "additional_zoom_sprite_payload_sha256": "b3fee864c332f9db160704517751d305da081e1a4bc40beff7bcd18619222ec4",
+    "additional_zoom_sprite_layers_reviewed": [
+      0,
+      1
+    ],
+    "interpretation": "Actual shadow,stationary body and all16 head directions reviewed using original offsets. All41 paletted fixed-view catalogue phases and both extra zoom sprite layers reviewed. Function1037 describes an equivalent of the Terran Photon Turret,but more deadly. Source has four red shaft bands,low broad bowl head/top cap,a long central narrow projection and two short flanking projections especially clear in heading16;lower left sloping buttress,three-rib ochre plate,six cobalt fields and small slate oval. Projection engineering/recessed muzzle interpreted;not the historical generic twin-long-barrel ball turret. Exact original heading action/controller retained,not a recovered firing loop. Direct archive tables/current profile bindings audited;no additional mapped technical/_MA sequence. Prefix absence alone does not establish semantic absence. Shared ACS2/client heading,muzzle,state,scale mapping separate."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac26-review-1.png",
+      "sha256": "e67a1c3d1de307bfbea6288c8a61e33a72979e2b9e68e7cbe680f00e6a4ea0de",
+      "prompt": "sources/docs/reconstruction/models/ac26-concept-prompt-1.txt",
+      "feedback": "Accepted one actual source-led concept:four shaft bands,one long central emitter/two shorter lugs,low bowl/cap,sloping left foot,three-rib fitting and six cobalt fields. Concept lower grey oval is too large;model reduces it to source scale. Do not import decorative seam networks as geometry or copy historical extra dome/foundation disk/twin long barrels."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual historical native contains a generic bulb/ball head,two long barrels,large foundation disk and extra side dome. Actual source headings instead resolve one long central/two short flanking projections and distinctive four-band shaft.",
+      "action": "Preserved historical binaries and exact original heading controller/action. Authored one canonical source-shaped body/head,physical fittings/fields and genuine recessed central bore. Actual first native/import65pose checks and six renders passed."
+    },
+    {
+      "iteration": 2,
+      "observation": "Actual first GLB renders made the red shaft bands look like raised metal hoops,with insufficient red contrast relative to source.",
+      "action": "Flattened the bands to close-fitting straps and increased red material contrast. Genuinely reauthored/exported and repeated complete65pose native/import support/clearance/bore/field/band/PBR/root/UV/parity checks and six renders. No geometry tolerance relaxation or evidence-only hash replacement."
+    },
+    {
+      "iteration": 3,
+      "observation": "Final six native/import renders and actual imported heading video preserve four flat red bands,low bowl/three projections,source fitting counts and grounded asymmetric foot.",
+      "action": "Accept for integration review after65bearing contacts,520moving-part attachment/bore/lip checks,sampled nonbearing clearance pairs,six cobalt/four band visibility rays,three actual projection length checks,low bowl proportions,body/shaft/plate/rib/oval contacts,closed positive UV meshes,PBR/texture/root parity and unchanged1e-5surface/matrix gates. Exact heading-index/client muzzle/firing/scale/state/FPS and final user artistic acceptance remain separate."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 7.049203440011279e-05,
+      "margin": 50
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 8.136255152961597e-05,
+      "margin": 43
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0001461133839859731,
+      "margin": 43
+    }
+  ],
+  "review": "One canonical directional Achaean Power Tower for gameplay/build/SciTek. One actual ImageGen concept and saved-native/imported GLB review with feedback refinement. No inferred firing/recoil/continuous idle loop or active discharge effect.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
