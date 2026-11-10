@@ -224,11 +224,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/169`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Asteroid Shield](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac19/front-quarter.png)
+![Asteroid Shield](../gallery/media/objects/achaean/asteroid-shield/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac19/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac19/model.glb)
+[Blend](../sources/objects/achaean/asteroid-shield/model.blend) · [GLB](../sources/objects/achaean/asteroid-shield/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac19-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/asteroid-shield/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/asteroid-shield/imported-rear-quarter.png)
 
 ## Defence Battery
 

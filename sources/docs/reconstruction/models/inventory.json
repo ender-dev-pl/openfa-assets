@@ -29123,7 +29123,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/169",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-record-1030",
         "description_records": [
           1030
         ]
@@ -29197,11 +29197,26 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac19/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/achaean/asteroid-shield/model.blend",
           "present": true,
-          "sha256": "d212fdc068ca091de436e09c9776bd4695b8ffe0f291707aad83851c3b9f172a",
-          "final_visual_acceptance": "not-established"
+          "sha256": "891384797674b2fa7e8a4e9cf8d03e3080a122059874646b278ff3b84fab2b65",
+          "media": "gallery/media/objects/achaean/asteroid-shield",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Legacy-based ImageGen concept (interpreted details)",
+              "image": "gallery/media/concepts/achaean/ac19-review-1.png"
+            },
+            {
+              "label": "Actual independent GLB",
+              "image": "gallery/media/objects/achaean/asteroid-shield/imported-front-quarter.png"
+            },
+            {
+              "label": "Actual independent GLB rear",
+              "image": "gallery/media/objects/achaean/asteroid-shield/imported-rear-quarter.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -29211,7 +29226,7 @@
         "materials": false,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -29241,6 +29256,65 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 169
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/achaean/ac19/model.blend",
+          "present": true,
+          "sha256": "d212fdc068ca091de436e09c9776bd4695b8ffe0f291707aad83851c3b9f172a",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/achaean/asteroid-shield/model.blend",
+        "sha256": "891384797674b2fa7e8a4e9cf8d03e3080a122059874646b278ff3b84fab2b65",
+        "runtime_evidence": {
+          "format": "achaean-static-building-remaster-v2",
+          "scope": "blender-native-and-imported-glb",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/achaean/asteroid-shield",
+          "files": {
+            "gallery/media/concepts/achaean/ac19-review-1.png": "c4f324023d33db8187f0a0538893298f7f9e57ab9009ee7c9aa31e08fda50b53",
+            "gallery/media/objects/achaean/asteroid-shield/front-quarter.png": "def0eb9c0bc9a183f4081044eeba3562871fee13dd6ffecb97a5da8dada59dcb",
+            "gallery/media/objects/achaean/asteroid-shield/imported-front-quarter.png": "def0eb9c0bc9a183f4081044eeba3562871fee13dd6ffecb97a5da8dada59dcb",
+            "gallery/media/objects/achaean/asteroid-shield/imported-front.png": "caaf627c3d3032b876e7216939bbd72ad57580aa309e5cb143dde7f1cb3f7a9d",
+            "gallery/media/objects/achaean/asteroid-shield/imported-rear-quarter.png": "c6159467f83b9be1d9317c25b4a82f2fef92febade7e03b4c87277cb9adb9bd0",
+            "gallery/media/objects/achaean/asteroid-shield/native-front-quarter.png": "6a2e97552e2d1cec7ac02e0771237f8bb182c55c2c3117e630dc3ca217c1209b",
+            "gallery/media/objects/achaean/asteroid-shield/native-front.png": "033c0f3a2d83a12f91d188a146da3294a644e3799461e539f3a0347d082c55b1",
+            "gallery/media/objects/achaean/asteroid-shield/native-rear-quarter.png": "1f32c82205c2304eab94c709905f7c8369f617b0a7adc73255a59ec1f9c31f62",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac19/model.blend": "d212fdc068ca091de436e09c9776bd4695b8ffe0f291707aad83851c3b9f172a",
+            "sources/docs/reconstruction/models/ac19-concept-prompt-1.txt": "0a82acf622aecf3fe96344e0acf149c6562fb1e7a03c37530a7046e8350d7ac5",
+            "sources/materials/achaean/asteroid-shield/Coral alloy.png": "37a9ce9a5eb412e67eb1174d2f81ca88f6a7bd5adb6e5c45d8c0d8e79d7c0180",
+            "sources/materials/achaean/asteroid-shield/Coral fine wear normal.png": "bef1048d97b12a3f013fec0182bd58055527d07459163c91eef3f8f3f87c70bf",
+            "sources/materials/achaean/asteroid-shield/Coral metal roughness.png": "efaef6c8b59203937dd615b0f6cedf9cb69d612a32ab3acfedff0cf196669985",
+            "sources/materials/achaean/asteroid-shield/Dark instrument backs.png": "667a1da6ee8eb8bddb9c6eca21b38292843c5141b7b943a03e96b2babbffdf43",
+            "sources/materials/achaean/asteroid-shield/Ochre flank facing.png": "1a75c2b388a995bcbb21c519a7d6223a916a8cadc8102d98f7bb5539a9998cdd",
+            "sources/materials/achaean/asteroid-shield/Red instrument casing.png": "ff952baefd09e4d07fe2f22d20bd5705fafdcac9d3af14c3638ed31129da7b2c",
+            "sources/materials/achaean/asteroid-shield/Slate front conduit.png": "3dd69243e51845010537e18ed51c7321d472b3cfc5ba5fd7e0be7cfa8de63b54",
+            "sources/objects/achaean/asteroid-shield/model.blend": "891384797674b2fa7e8a4e9cf8d03e3080a122059874646b278ff3b84fab2b65",
+            "sources/objects/achaean/asteroid-shield/model.glb": "f444ec78b772060d2d86cd8ede97798811885ab1ba3360fb898af330bfaead7a",
+            "sources/objects/achaean/asteroid-shield/model.json": "29bcc5b2ab944e7028789af61f912159169aa3cb170ab95bb7d0d183f56aa648",
+            "sources/objects/achaean/asteroid-shield/runtime-review.json": "5ac11d56caeda64197488cf7bd58414fce88064f6c20116b146cf9cd8ab3ff69",
+            "sources/objects/achaean/asteroid-shield/visual-review.json": "89fdbeea8f937d287c7be5721b9f728b4fada22e006d05c6523408765a1ed5e3",
+            "sources/tools/blender/achaean_remaster_geometry.py": "1f6ae82837f6328c2f57b65c7d807772107bf62a91833c0d34e410aa49f01cd1",
+            "sources/tools/blender/checks_achaean_asteroid_shield.py": "a75ca29ce33521bd19faa6e28fb3861c36439db0e0b21fa91944438c056faa12",
+            "sources/tools/blender/checks_achaean_shipyard.py": "e397a226fc7a4df37f4531f8ea724bfa2fac33579bcd2bd3082ab99d382a36ae",
+            "sources/tools/blender/remaster_achaean_asteroid_shield.py": "ec578ea249cabd79b3c0ba92a128f2bab9f9a11e0e7c1d7b55420d0a5197189b",
+            "sources/tools/blender/remaster_achaean_manoeuvring_device.py": "bccbd3e9cd29706fbf5b0af5dd1df712be840edefc562002bac491ed895cb4fe",
+            "sources/tools/blender/remaster_achaean_missile_launcher.py": "a0594e4649ef870b68a100439a1feb0e92214babd70da949b7a4169364c18a2d",
+            "sources/tools/blender/remaster_achaean_shipyard.py": "7ccce8d2dfa946f86da065ecb64a8b30a5d56d0e5a375f7d9a6e7957c4b6fbf6",
+            "sources/tools/blender/verify_achaean_building_left_quarter.py": "27a9026001272eaa467909e1d02f157af0353fc51dceed1cc60077154333cb74",
+            "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "native_and_glb_runtime": [
+          "Actual saved-native/independent GLB with model-specific anatomy, textures and six real renders; client/final user artistic acceptance separate.",
+          "objects/achaean/asteroid-shield/runtime-review.json",
+          "objects/achaean/asteroid-shield/visual-review.json"
+        ]
       }
     },
     {
