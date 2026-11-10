@@ -1,0 +1,113 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/161",
+  "binaries": {
+    "blend": "80ed5af69eebe7695788cf4ca51654db8958239c7651ba9abe3ab0c75832400c",
+    "glb": "4212ce95c1a737aeea2ca323c394227f5d499d5f84f530a04d85c6a378837782"
+  },
+  "runtime_report_sha256": "8db1a31530823900096fa456b08e6c38798b939d5f2e2167713d00f90e11708c",
+  "legacy": {
+    "surface_payload_sha256": "2d3807bcfe852d10397852158184cbf5b01703d881e6621b80ce656ce812470c",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1022,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "208f3079440048d8b7b2354bedcdf0d60b95ab37ace4289e758949246ef877c6",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All41 actual paletted phases inspected: progressive reveal/highlight of a fixed view, not crane/gate/fitting operation. All catalogue roles map to AC11.VID. Direct archive-table audit finds only AC11.256 for this prefix; actual surface/shadow layers inspected. Shared ACS3 scaffolding remains separate, _MA has no AC-named family. Function1022 establishes scout/trading construction and visiting-vessel refitting; no exposed Terran-style yard or invented mechanism cycle."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac11-review-1.png",
+      "sha256": "b9e705bad10c22b25adf987e236e157a95fcf46c7e1ebd81547185c8484e1f82",
+      "prompt": "sources/docs/reconstruction/models/ac11-concept-prompt-1.txt",
+      "feedback": "Retains four compact coral lobes, a narrow blue-gray spine, ochre collar and right arched fitting. Accepted with source-led corrections: two lower left slots rather than the concept three; two shoulder optics remain on the tall rear chambers rather than finials on the low front chambers. Omit extra mast equipment and large support feet not established by source. No Terran ring-yard or crane is inferred."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual first native/import renders preserve the four-lobed arrangement and source fields, but the ochre collar is partly obscured and blue extends too far below it relative to the source.",
+      "action": "Brought the continuous spine housing/collar forward, changed the lower section to coral and seated the blue upper spine into the collar. Added three owner-specific visibility rays across the collar, preserving support and original field checks."
+    },
+    {
+      "iteration": 2,
+      "observation": "Geometry correction reads clearly; the coral finish still reflects studio light too uniformly.",
+      "action": "Added two small authored packed metal/roughness and tangent-normal maps without increasing triangles. Actual native/import shader graph checks prove their use, roughness variation, non-colour handling and normal strength. Decoded pixels and six real render pairs are verified after export."
+    },
+    {
+      "iteration": 3,
+      "observation": "The existing camera fitter left only17/23 pixels of bottom margin in two views, below the unchanged24-pixel acceptance rule.",
+      "action": "Added a centered verifier that fits the projected bounding-box centre in the image plane and actually reran all native/import geometry/material checks and six renders. The historically source-bound original verifier remains immutable. Final margins42\u201343 pixels, with no geometry change or tolerance relaxation. Accept for integration review subject to client scale/state/FPS and final user artistic acceptance."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0004929281245070719,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00029526548218137004,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 3.3575073865162504e-05,
+      "margin": 43
+    }
+  ],
+  "review": "Legacy-led static construction/refitting facility with four supported lobes, two actual left slots, correctly placed red optics, blue base fields and a surface-projected ochre collar around a grounded coral fitting. Its mechanical function/timing is not established by the available fixed-view evidence. Six final centered renders reviewed; hidden rear and support continuation are interpreted. One canonical payload for gameplay/build/SciTek, approximate camera and no numerical fidelity score.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -126,11 +126,13 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/161`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Shipyard](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/achaean/ac11/front-quarter.png)
+![Shipyard](../gallery/media/objects/achaean/shipyard/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac11/model.glb)
+[Blend](../sources/objects/achaean/shipyard/model.blend) · [GLB](../sources/objects/achaean/shipyard/model.glb)
+
+Additional views: [Legacy-based ImageGen concept (interpreted details)](../gallery/media/concepts/achaean/ac11-review-1.png) · [Actual independent GLB](../gallery/media/objects/achaean/shipyard/imported-front-quarter.png) · [Actual independent GLB rear](../gallery/media/objects/achaean/shipyard/imported-rear-quarter.png)
 
 ## Landing Pad
 
