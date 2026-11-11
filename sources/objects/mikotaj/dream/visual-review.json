@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/091",
+  "binaries": {
+    "blend": "fb1fe3f704948d71efc5b17206b44e3a883d305ddc0e180e8557d46b3328f127",
+    "glb": "5411ca0e01dfa98bf9a9c81733d05dddc676744d6bfa9fb8f323166ab223d958"
+  },
+  "runtime_report_sha256": "3968ae2e6edb5b5b07ea3d76582d74f5a1186a9ac76d9d44faa1219773879fd2",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0027576258962284162,
+      "margin": 31
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0026753726134900817,
+      "margin": 33
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.002375466751410185,
+      "margin": 24
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk06-review-1.png",
+      "sha256": "50b23138d9b0d6cde800d7214e3f96f59da81c0f88252631d1fcfd4a6134b534",
+      "prompt": "sources/docs/reconstruction/models/mk06-concept-prompt-1.txt",
+      "feedback": "Selected major structure: broad mineral base/narrow front split, central spire, straight brass summit rod and supported left brass arch. Concept summit rod is thicker than original; GLB must follow the thinner legacy rod. Fine strata and sockets authored, no medical apparatus or blue emitter invented."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "verdict": "refine-mineral-structure-and-material",
+      "source_model_sha256": "ddb163d5ab77a4b9be3d54f306885cb203dc67245a90a46eb4730cafdd1258a7",
+      "issues": [
+        "Major source elements are correctly placed and the summit rod is thinner than concept as required by legacy.",
+        "Body has overly regular flat planes and wave-like colour bands; author nonperiodic mineral colour/weathering, stronger portable fracture relief and denser restrained physical surface detail.",
+        "Seat the spire root more deeply in the base, retaining its source outline."
+      ]
+    },
+    {
+      "iteration": 2,
+      "verdict": "restrain-fracture-material",
+      "source_model_sha256": "abe9b0778b6b2c582039fe0c51973ce66ffc8db828172b44b945a8a17b8473cb",
+      "issues": [
+        "Source proportions, arch/rod and more deeply seated spire are retained.",
+        "Strong broad normal waves read as crumpled foil. Reduce broad normal noise, retain narrow mineral cracks and quieter grain appropriate to heavy ore.",
+        "Correct the descriptive metadata concept link to MK06 rather than inherited MK02."
+      ]
+    }
+  ],
+  "final_review": "Final independent GLB retains the heavy broad mineral foundation, narrow front split, central focusing spire, thin summit brass rod and supported left brass arch. Feedback adds irregular ore relief, more varied wear and a deeply seated spire root, while reducing foil-like broad normal waves. The thinner rod follows legacy over the more massive concept rod.",
+  "limitations": [
+    "Physical purposes of the arch, rod and slit are not recovered; exact sections, sockets, material strata and hidden faces are authored.",
+    "Original fixed-angle views do not determine every microcrevice. No human medical machinery, blue emitter or operating mechanism is invented.",
+    "No source metric height, calibrated client scale/state, Android performance or final user artistic acceptance claimed."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
