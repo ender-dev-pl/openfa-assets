@@ -30268,7 +30268,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/142",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           1003
         ]
@@ -30342,21 +30342,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn13/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/defence-pods/model.blend",
           "present": true,
-          "sha256": "4819bd3ba1cb4fc49d97eae03ece04abe1452d772fdaad73717baeababfc9ae4",
-          "final_visual_acceptance": "not-established"
+          "sha256": "94fdf771c4f7b7d3deba43690871977748b433ed97a63318b46044ddeac4f198",
+          "media": "gallery/media/objects/mauna/defence-pods",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/defence-pods/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/defence-pods/rear-quarter.png"
+            },
+            {
+              "label": "Compact head and single recessed barrel",
+              "image": "gallery/media/objects/mauna/defence-pods/head-and-single-recessed-barrel-detail.png"
+            },
+            {
+              "label": "Cast base, red strip and eight vent cells",
+              "image": "gallery/media/objects/mauna/defence-pods/cast-base-red-strip-and-eight-cell-vent-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/defence-pods/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/defence-pods/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
-        "moving_assemblies": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
+        "moving_assemblies": true,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -30386,6 +30413,97 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 142
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn13/model.blend",
+          "present": true,
+          "sha256": "4819bd3ba1cb4fc49d97eae03ece04abe1452d772fdaad73717baeababfc9ae4",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/defence-pods/model.blend",
+        "sha256": "94fdf771c4f7b7d3deba43690871977748b433ed97a63318b46044ddeac4f198",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/defence-pods",
+          "verifier": "sources/tools/blender/verify_mauna_defence_pods.py",
+          "files": {
+            "sources/objects/mauna/defence-pods/integration-contract.json": "3f7509696c8de837547ae3570c055cfe96c77ebbd16178c820a463a85e8c16f7",
+            "sources/objects/mauna/defence-pods/model.blend": "94fdf771c4f7b7d3deba43690871977748b433ed97a63318b46044ddeac4f198",
+            "sources/objects/mauna/defence-pods/model.glb": "a81b66ea337b450056623a59deba19dc9585213936c4486fc0f18dfd47a6fe6b",
+            "sources/objects/mauna/defence-pods/model.json": "d028b5bff128516bc0f291aaa19cc0205c4cc2698b3dfb75e2dfe40053f271de",
+            "sources/objects/mauna/defence-pods/README.md": "7b3992e732088ec35c52930ddcf3edb444d320995af26f5d05ab21c169942aa2",
+            "sources/objects/mauna/defence-pods/runtime-review.json": "edf85a3d65a229c086412460fbeacac70fbefb431ba49d13e01dbafc61e4a4d9",
+            "sources/objects/mauna/defence-pods/visual-review.json": "3afdd77ce15274bd5307267be37456137d42ffd94b68f28ffabfd3d62e7ee6c8",
+            "gallery/media/objects/mauna/defence-pods/animation-00.webm": "526e2408d05db7ea94b97536341bc6fc7c5e6ae81589dea3a90f978ad3b7137f",
+            "gallery/media/objects/mauna/defence-pods/animation-previews.json": "d50b95f50f2985f3723aca896875ad4fd009629ededee9d882e8b0e421a71025",
+            "gallery/media/objects/mauna/defence-pods/cast-base-red-strip-and-eight-cell-vent-detail.png": "1ea2649795cec4be09420f05948df153e9dff8dfbe688f69e59855cd9e053bc0",
+            "gallery/media/objects/mauna/defence-pods/concept-glb-comparison.jpg": "9a3b6292e263fab43ed3ef359e39924ba9a4e8219132ced068fc2bb8b985c4e4",
+            "gallery/media/objects/mauna/defence-pods/front-quarter.png": "a316bbf465c4f64fda8ef17e98b0e72621e13a0e63dbecc2d2bd3cd204902237",
+            "gallery/media/objects/mauna/defence-pods/front.png": "3bac07280e182079c955b22a1fbe571f39f73381f1dcda858453527d1c65810c",
+            "gallery/media/objects/mauna/defence-pods/head-and-single-recessed-barrel-detail.png": "d397c697be3df3e8295b84405a92100e39a5d2ef29897bed53444b5176c70a25",
+            "gallery/media/objects/mauna/defence-pods/imported-front-quarter.png": "a316bbf465c4f64fda8ef17e98b0e72621e13a0e63dbecc2d2bd3cd204902237",
+            "gallery/media/objects/mauna/defence-pods/imported-front.png": "3bac07280e182079c955b22a1fbe571f39f73381f1dcda858453527d1c65810c",
+            "gallery/media/objects/mauna/defence-pods/imported-rear-quarter.png": "16c0c66a18fed93f1f65a63d3bb1a25d3bb811fe01b3319956ef13ec4413665f",
+            "gallery/media/objects/mauna/defence-pods/native-front-quarter.png": "2dc407c419d7a9be6d801f43bde30991252ec16eb03d24b5304189f0bcd5bc8b",
+            "gallery/media/objects/mauna/defence-pods/native-front.png": "d21a407a289298c168f24dc29d23de315961ff3417ac38bc7c6105c093034457",
+            "gallery/media/objects/mauna/defence-pods/native-rear-quarter.png": "bf8918c56b891e2d5423da6e3c5a65ad05abaf8854784e7cc75784b8eb986093",
+            "gallery/media/objects/mauna/defence-pods/rear-quarter.png": "16c0c66a18fed93f1f65a63d3bb1a25d3bb811fe01b3319956ef13ec4413665f",
+            "gallery/media/objects/mauna/defence-pods/technical-wireframe.png": "c076f9e6da6a8e391ed6fee4f0c5484946e6c3ae9183298f93f28e0ade118c89",
+            "sources/materials/mauna/defence-pods/cast-concrete-colour.png": "f5fa2e7ebe75940f75223a6199a45bb65ea0598b5f3aae8db1ae3b7a8ff125d1",
+            "sources/materials/mauna/defence-pods/cast-service-normal.png": "6ab180faca54929061992d20b2b5205fcfbac8073c00cc4ff4d9d27446847ca9",
+            "sources/materials/mauna/defence-pods/concrete-orm.png": "b6842bf0bd085d3424617720ced2dd9bf3421ccf65383e8fe748469133b92ca3",
+            "sources/materials/mauna/defence-pods/marking-red-colour.png": "96c537a50ad2011fa64cfbea3c5a95e10be801e0f37c8583db2c074a8ff23085",
+            "sources/materials/mauna/defence-pods/metal-orm.png": "daaf33ddb2f152b13788b72a69b6378df8d309226df4b416d05f4cdaaef76e49",
+            "sources/materials/mauna/defence-pods/pale-alloy-colour.png": "300f75e21d37e9ba25436338cf1fb3f0af92de6ab678cdfd9cf146f56c2a8d10",
+            "sources/tools/blender/remaster_mauna_defence_pods.py": "1685ffc5d798b760e6f7172901d7ae948f2d55fa25d9979a7d16addf2522e115",
+            "sources/tools/blender/verify_mauna_defence_pods.py": "6f3c6bc3de343346d21b0da4b87c689947949a5e244533e1653b1ce169058afb",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/tools/blender/render_mauna_defence_pods_animation.py": "2ceda8307c3921618d50497bb816ff6ef2b75316b42f995ab67ff13be68a4767",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn13/model.blend": "4819bd3ba1cb4fc49d97eae03ece04abe1452d772fdaad73717baeababfc9ae4",
+            "sources/docs/reconstruction/models/mn13-concept-review.json": "45a8d3f4f3b4aeb55d46d5c7f39d5860184bdaef2997a945681526bc9d8d2efe",
+            "sources/docs/reconstruction/models/mn13-concept-prompt-1.txt": "132d7c8df109bf20e3883c94064125dfb76b0a88be54284a4ee4e3313392d6c7",
+            "gallery/media/concepts/mauna/mn13-review-1.png": "52906bb8ff904089fc169fc68420ca90a82139dad3b20141a059ac2bd4e723c6"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/defence-pods/visual-review.json",
+          "sha256": "3afdd77ce15274bd5307267be37456137d42ffd94b68f28ffabfd3d62e7ee6c8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/defence-pods/visual-review.json",
+          "sha256": "3afdd77ce15274bd5307267be37456137d42ffd94b68f28ffabfd3d62e7ee6c8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/defence-pods/visual-review.json",
+          "sha256": "3afdd77ce15274bd5307267be37456137d42ffd94b68f28ffabfd3d62e7ee6c8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/defence-pods/visual-review.json",
+          "sha256": "3afdd77ce15274bd5307267be37456137d42ffd94b68f28ffabfd3d62e7ee6c8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "moving_assemblies": {
+          "report": "sources/objects/mauna/defence-pods/runtime-review.json",
+          "sha256": "edf85a3d65a229c086412460fbeacac70fbefb431ba49d13e01dbafc61e4a4d9",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/defence-pods/runtime-review.json",
+          "sha256": "edf85a3d65a229c086412460fbeacac70fbefb431ba49d13e01dbafc61e4a4d9",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

@@ -152,13 +152,15 @@ Additional views: [Front](../gallery/media/objects/mauna/arms-block/front.png) �
 
 `openfa:building/legacy/142`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Defence Pods](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn13/front-quarter.png)
+![Defence Pods](../gallery/media/objects/mauna/defence-pods/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn13/model.glb)
+[Blend](../sources/objects/mauna/defence-pods/model.blend) · [GLB](../sources/objects/mauna/defence-pods/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn13/animation-00.webm)
+Additional views: [Front](../gallery/media/objects/mauna/defence-pods/front.png) · [Rear quarter](../gallery/media/objects/mauna/defence-pods/rear-quarter.png) · [Compact head and single recessed barrel](../gallery/media/objects/mauna/defence-pods/head-and-single-recessed-barrel-detail.png) · [Cast base, red strip and eight vent cells](../gallery/media/objects/mauna/defence-pods/cast-base-red-strip-and-eight-cell-vent-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/defence-pods/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/defence-pods/concept-glb-comparison.jpg)
+
+[Play animation: Animation](../gallery/media/objects/mauna/defence-pods/animation-00.webm)
 
 ## Attack Pods
 
