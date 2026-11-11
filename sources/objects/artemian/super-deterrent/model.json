@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/124",
+  "key": "AR18",
+  "name": "Super-deterrent",
+  "culture": "artemian",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 18,
+  "construction_updates": 48,
+  "triangles": 23432,
+  "triangle_budget": 30000,
+  "mesh_nodes": 8,
+  "materials": 4,
+  "author": "sources/tools/blender/remaster_artemian_super_deterrent.py",
+  "author_sha256": "d2ce9c6ade231f8216e94dba6f344927f5a426427f70ee8b1cef3032f013f363",
+  "binaries": {
+    "blend": "9243a71070817bc05574282de3e734d3b353793e2e8555d5634bf050c82ff2fe",
+    "glb": "bccb0f303fbe15d8b946fd96de891a8462ef3648c2762a23599833a7cfa0b7f7"
+  },
+  "textures": {
+    "copper-fitting-colour.png": "f5bec5f91ece22d7e9c06834019f56d3fb8cffbecfd92582ccf1668095a4d442",
+    "exposed-alloy-edge-colour.png": "00a041c53b1ea3ca96ebfbff5902e7897a873dc794b94cdfa736f78c056fee0f",
+    "muted-green-alloy-colour.png": "7cf6e70aed0ec6246dc2fb5109b6d51de8c3124e760c89ed2a963f0e7f509202",
+    "occlusion-roughness-metallic.png": "d9d457c1f1ce994d41729c1e0953b99aac405195bb912ac4d1c5d6eb23edecdc",
+    "used-metal-normal.png": "eebc57de0ce59f8521f137d4fa9220ee891b664d4682f83e34f01cc2aa5bac5f"
+  },
+  "physical_dent": {
+    "point": [
+      -0.5810227394104004,
+      -0.4357670545578003,
+      0.33000001311302185
+    ],
+    "normal": [
+      -0.6651545166969299,
+      -0.5190929770469666,
+      0.536760687828064
+    ]
+  },
+  "fixed_ports": [
+    {
+      "radius": 0.037,
+      "angle_deg": -105,
+      "point": [
+        -0.20276576280593872,
+        -0.7567322254180908,
+        0.23999999463558197
+      ],
+      "normal": [
+        -0.22503477334976196,
+        -0.8131711483001709,
+        0.5367605090141296
+      ]
+    },
+    {
+      "radius": 0.065,
+      "angle_deg": -70,
+      "point": [
+        0.26798754930496216,
+        -0.7362897396087646,
+        0.23999999463558197
+      ],
+      "normal": [
+        0.30365628004074097,
+        -0.7871981859207153,
+        0.5367604494094849
+      ]
+    }
+  ],
+  "emitter": {
+    "origin": [
+      0.20000000298023224,
+      0.14000000059604645,
+      0.9750000238418579
+    ],
+    "direction": [
+      0.6396021842956543,
+      0.42640143632888794,
+      0.6396021842956543
+    ],
+    "length": 1.1,
+    "bore_floor": 1.0022222222222221
+  },
+  "interpretation": [
+    "Own16sprite headings establish low rotating green dome,short silver stub and one long tapered emitter above fixed flared green foot/broad silver bearing belt/two unlike points. GenericPB18/ST18Terran counterpart does not override Artemian anatomy;unclear ritual significance does not establish symbols.",
+    "Blind emitter bore,sections,bearing and metric dimensions are authored. Four-second azimuth preview is not recovered game timing or client aiming logic."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar18-concept-review.json",
+  "animation_clips": [
+    "SuperDeterrentAzimuth"
+  ],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

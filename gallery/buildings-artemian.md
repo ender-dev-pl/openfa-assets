@@ -218,13 +218,15 @@ Additional views: [Front](../gallery/media/objects/artemian/auto-deterrent/front
 
 `openfa:building/legacy/124`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Super-deterrent](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar18/front-quarter.png)
+![Super-deterrent](../gallery/media/objects/artemian/super-deterrent/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar18/model.glb)
+[Blend](../sources/objects/artemian/super-deterrent/model.blend) · [GLB](../sources/objects/artemian/super-deterrent/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar18/animation-00.webm)
+Additional views: [Front](../gallery/media/objects/artemian/super-deterrent/front.png) · [Rear quarter](../gallery/media/objects/artemian/super-deterrent/rear-quarter.png) · [Dome, emitter and short silver stub](../gallery/media/objects/artemian/super-deterrent/dome-emitter-and-short-stub-detail.png) · [Silver belt and unlike front points](../gallery/media/objects/artemian/super-deterrent/silver-belt-and-unlike-front-points-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/super-deterrent/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/super-deterrent/concept-glb-comparison.jpg)
+
+[Play animation: SuperDeterrentAzimuth](../gallery/media/objects/artemian/super-deterrent/animation-00.webm)
 
 ## Force Fields
 

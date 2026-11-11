@@ -25753,7 +25753,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/124",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           985
         ]
@@ -25827,21 +25827,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar18/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/super-deterrent/model.blend",
           "present": true,
-          "sha256": "9b1af3360b065683881202753fb025a90c708defbe8a7d9bf633eeab9e0b61e1",
-          "final_visual_acceptance": "not-established"
+          "sha256": "9243a71070817bc05574282de3e734d3b353793e2e8555d5634bf050c82ff2fe",
+          "media": "gallery/media/objects/artemian/super-deterrent",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/super-deterrent/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/super-deterrent/rear-quarter.png"
+            },
+            {
+              "label": "Dome, emitter and short silver stub",
+              "image": "gallery/media/objects/artemian/super-deterrent/dome-emitter-and-short-stub-detail.png"
+            },
+            {
+              "label": "Silver belt and unlike front points",
+              "image": "gallery/media/objects/artemian/super-deterrent/silver-belt-and-unlike-front-points-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/super-deterrent/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/super-deterrent/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -25871,6 +25898,89 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 124
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar18/model.blend",
+          "present": true,
+          "sha256": "9b1af3360b065683881202753fb025a90c708defbe8a7d9bf633eeab9e0b61e1",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/super-deterrent/model.blend",
+        "sha256": "9243a71070817bc05574282de3e734d3b353793e2e8555d5634bf050c82ff2fe",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/super-deterrent",
+          "verifier": "sources/tools/blender/verify_artemian_super_deterrent.py",
+          "files": {
+            "sources/objects/artemian/super-deterrent/model.blend": "9243a71070817bc05574282de3e734d3b353793e2e8555d5634bf050c82ff2fe",
+            "sources/objects/artemian/super-deterrent/model.glb": "bccb0f303fbe15d8b946fd96de891a8462ef3648c2762a23599833a7cfa0b7f7",
+            "sources/objects/artemian/super-deterrent/model.json": "5a7cbe08de4f4956c253df860eff79888da11b78051807d13c0f524a090fcd85",
+            "sources/objects/artemian/super-deterrent/README.md": "6652b99371f6ed27e523263e482d228702bcff0e2f250b87d16d37000ea98926",
+            "sources/objects/artemian/super-deterrent/runtime-review.json": "c47c7fb8dfdfff14db772a07d91012ac3d05cde2297fb0f2e6393cd9822f8d37",
+            "sources/objects/artemian/super-deterrent/visual-review.json": "cd521e796dc96ea9fd1543154beee43232b3518ccf9987ee513bf676fc2f48d5",
+            "gallery/media/objects/artemian/super-deterrent/animation-00.webm": "3c9009821cf271e9a2febf234c98817808151313f8809c9a01c23498d32a4159",
+            "gallery/media/objects/artemian/super-deterrent/animation-previews.json": "f3d9c390d33656e12f92ec82535ee4cf00ef307392e8f0a9a6f560f2652d931c",
+            "gallery/media/objects/artemian/super-deterrent/concept-glb-comparison.jpg": "8227496e625428861f9c052f8dd9eb5afaa86b32a3f8402304bb923f3a8a5d63",
+            "gallery/media/objects/artemian/super-deterrent/dome-emitter-and-short-stub-detail.png": "2a305ea5116fb8ed7e7e70b06c77189c1317c408142b0be9c5dc351927218e69",
+            "gallery/media/objects/artemian/super-deterrent/front-quarter.png": "d229408a6f1a015bc74c2ddbc2a5b08889f9f5035f486ab7acc76824e099b0f4",
+            "gallery/media/objects/artemian/super-deterrent/front.png": "aeed0cf990159c48420dfb54a1f3c524a363a69e78584c984ef8bb318844df00",
+            "gallery/media/objects/artemian/super-deterrent/imported-front-quarter.png": "d229408a6f1a015bc74c2ddbc2a5b08889f9f5035f486ab7acc76824e099b0f4",
+            "gallery/media/objects/artemian/super-deterrent/imported-front.png": "aeed0cf990159c48420dfb54a1f3c524a363a69e78584c984ef8bb318844df00",
+            "gallery/media/objects/artemian/super-deterrent/imported-rear-quarter.png": "f1409409e69ee67636c0252a4c9b2d1df14aba73b8e01ee2bcd5cc1dfb42e198",
+            "gallery/media/objects/artemian/super-deterrent/native-front-quarter.png": "451207954afbd3756f37b729fc3b33ba25d32615c7ccfde60a4955903d503504",
+            "gallery/media/objects/artemian/super-deterrent/native-front.png": "2569e5733dd1c4ce4f9ed0d96d691dea450769dde62807ed96df3cf00e3de517",
+            "gallery/media/objects/artemian/super-deterrent/native-rear-quarter.png": "01c504d6c0c1697c0ea1c0c7497a8b194d532048aee3d1e2efb583122e0fcd0a",
+            "gallery/media/objects/artemian/super-deterrent/rear-quarter.png": "f1409409e69ee67636c0252a4c9b2d1df14aba73b8e01ee2bcd5cc1dfb42e198",
+            "gallery/media/objects/artemian/super-deterrent/silver-belt-and-unlike-front-points-detail.png": "f29259dc1e80abee22ff33861565775e5ac41681580d120ce77d41144565ef41",
+            "gallery/media/objects/artemian/super-deterrent/technical-wireframe.png": "772c8f0538c7326cb8c8070ea364df48416e42d09ce2bd85429690fecb8e5ad9",
+            "sources/materials/artemian/super-deterrent/copper-fitting-colour.png": "f5bec5f91ece22d7e9c06834019f56d3fb8cffbecfd92582ccf1668095a4d442",
+            "sources/materials/artemian/super-deterrent/exposed-alloy-edge-colour.png": "00a041c53b1ea3ca96ebfbff5902e7897a873dc794b94cdfa736f78c056fee0f",
+            "sources/materials/artemian/super-deterrent/muted-green-alloy-colour.png": "7cf6e70aed0ec6246dc2fb5109b6d51de8c3124e760c89ed2a963f0e7f509202",
+            "sources/materials/artemian/super-deterrent/occlusion-roughness-metallic.png": "d9d457c1f1ce994d41729c1e0953b99aac405195bb912ac4d1c5d6eb23edecdc",
+            "sources/materials/artemian/super-deterrent/used-metal-normal.png": "eebc57de0ce59f8521f137d4fa9220ee891b664d4682f83e34f01cc2aa5bac5f",
+            "sources/tools/blender/render_artemian_super_deterrent_animation.py": "30ad4c233c2ed3d7fd721274f2c4351f7364de5c787a4fb6a24d71374c7ee8cc",
+            "sources/tools/blender/remaster_artemian_super_deterrent.py": "d2ce9c6ade231f8216e94dba6f344927f5a426427f70ee8b1cef3032f013f363",
+            "sources/tools/blender/verify_artemian_super_deterrent.py": "47d2afa5c2f7cbfdeb7750326fc57c823ca353368b038b00ce6f8a88f834b723",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar18-concept-review.json": "9d3b5f1e9240ae1b750fcbcb82b683f5d1cf85844604e3477b8994f2ad537995",
+            "sources/docs/reconstruction/models/ar18-concept-prompt-1.txt": "460f7d3a431cbcd9e7842d78312c9457433f246d9f2470c27d275ee4a18ac71a",
+            "gallery/media/concepts/artemian/ar18-review-1.png": "4d2b65da1c167af41692d81286e55e3c397a12c6ccb29e1b15d9cf386e0f5ed5"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/super-deterrent/visual-review.json",
+          "sha256": "cd521e796dc96ea9fd1543154beee43232b3518ccf9987ee513bf676fc2f48d5",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/super-deterrent/visual-review.json",
+          "sha256": "cd521e796dc96ea9fd1543154beee43232b3518ccf9987ee513bf676fc2f48d5",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/super-deterrent/visual-review.json",
+          "sha256": "cd521e796dc96ea9fd1543154beee43232b3518ccf9987ee513bf676fc2f48d5",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/super-deterrent/visual-review.json",
+          "sha256": "cd521e796dc96ea9fd1543154beee43232b3518ccf9987ee513bf676fc2f48d5",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/super-deterrent/runtime-review.json",
+          "sha256": "c47c7fb8dfdfff14db772a07d91012ac3d05cde2297fb0f2e6393cd9822f8d37",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

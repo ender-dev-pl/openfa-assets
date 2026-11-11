@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/124",
+  "binaries": {
+    "blend": "9243a71070817bc05574282de3e734d3b353793e2e8555d5634bf050c82ff2fe",
+    "glb": "bccb0f303fbe15d8b946fd96de891a8462ef3648c2762a23599833a7cfa0b7f7"
+  },
+  "runtime_report_sha256": "c47c7fb8dfdfff14db772a07d91012ac3d05cde2297fb0f2e6393cd9822f8d37",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0001951371814385513,
+      "margin": 47
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00020264982110912343,
+      "margin": 45
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0002179651740088639,
+      "margin": 99
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar18-review-1.png",
+      "sha256": "4d2b65da1c167af41692d81286e55e3c397a12c6ccb29e1b15d9cf386e0f5ed5",
+      "prompt": "sources/docs/reconstruction/models/ar18-concept-prompt-1.txt",
+      "feedback": "Selected faithful flared jade foot,broad narrower silver bearing belt,low green dome,single long inclined tapered green emitter,short central silver upright,and two unlike lower front fittings. Restrained wear;no generic Terran shroud/side fins or invented ritual ornaments. Source proportions and colour placement govern geometry;hidden bore,bearing and timing authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "status": "revision_required",
+      "finding": "Actual native whole view against source and selected concept shows silver belt reading as a stack of thick rings. Source/concept use a broader quiet silver face with thin lines. Emitter collars also shade too sharply.",
+      "runtime_report_sha256": "b4e2b1124da86b5e1d4b916d5578dc0a04632f31a77f5ac0d767cf4c34d16eab",
+      "binaries": {
+        "blend": "8cb123ad74c534c9faa87136a3c9eec20a49eaa490676682676351153a801f26",
+        "glb": "ea64abce12a20630967efe2a96cf8dcec3d40f4ffa9630558890850ef0dd8760"
+      },
+      "pass_number": 1,
+      "action": "Narrow both groove bands about their existing centres while retaining actual radial depth and all original tests. Smooth emitter corner normals;retain bore boundary and geometry checks. Rerun independent native/import evidence."
+    },
+    {
+      "runtime_report_sha256": "c47c7fb8dfdfff14db772a07d91012ac3d05cde2297fb0f2e6393cd9822f8d37",
+      "status": "agent_accepted",
+      "binaries": {
+        "blend": "9243a71070817bc05574282de3e734d3b353793e2e8555d5634bf050c82ff2fe",
+        "glb": "bccb0f303fbe15d8b946fd96de891a8462ef3648c2762a23599833a7cfa0b7f7"
+      },
+      "finding": "Actual legacy/concept/import comparison,front/rear views and both details reviewed. Broad silver belt now has thin grooves rather than stacked heavy rings,with unchanged measured radial relief. Smoothed emitter normals retain physical collared taper. Low green dome,short silver stub and two unlike front fittings remain source-recognizable. Actual17pose native/import surface and texture checks pass. Final user/client acceptance remains separate.",
+      "pass_number": 2
+    }
+  ],
+  "final_review": "Actual paletted legacy, selected real ImageGen concept and independent GLB whole/front/rear/detail views reviewed. Broad flared green foot and narrower silver belt support a low green rotating dome. One short silver centre stub is distinct from the single long inclined tapered emitter. Exactly two unlike fixed front points are physically recessed: small dark left, larger dull copper right. Actual seventeen-heading native/import checks preserve seated moving assemblies, fixed fittings, two real belt grooves, blind emitter bore and shallow dent. No generic Terran shroud, side fins or invented religious ornaments. Authored hidden sections and timing remain separate from recovered evidence.",
+  "limitations": [
+    "The original narrative relates the function to a Photon Turret and mentions uncertain ritual significance, without establishing additional decorative symbols.",
+    "Own sixteen headings establish dome/stub/emitter azimuth. The four-second presentation duration, hidden bearing and bore sections and metric dimensions are authored.",
+    "Generic PB18/ST18 are semantically bound Terran context, not Artemian geometry. Client aiming, scale, state, shaders, Android performance and final user artistic acceptance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
