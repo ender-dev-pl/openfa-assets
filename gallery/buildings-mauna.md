@@ -54,11 +54,13 @@ Additional views: [Front](../gallery/media/objects/mauna/off-duty-block/front.pn
 
 `openfa:building/legacy/134`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Health Block](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn05/front-quarter.png)
+![Health Block](../gallery/media/objects/mauna/health-block/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn05/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn05/model.glb)
+[Blend](../sources/objects/mauna/health-block/model.blend) · [GLB](../sources/objects/mauna/health-block/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/health-block/front.png) · [Rear quarter](../gallery/media/objects/mauna/health-block/rear-quarter.png) · [Five roof elements](../gallery/media/objects/mauna/health-block/five-roof-elements-detail.png) · [Three attached conduits and service fields](../gallery/media/objects/mauna/health-block/three-attached-conduits-and-service-fields-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/health-block/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/health-block/concept-glb-comparison.jpg)
 
 ## The Cube
 

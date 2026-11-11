@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/134",
+  "binaries": {
+    "blend": "2bb071affea6a7f1d5c6fa26fd08f83f85a804125f2495045cea8d213951cc5f",
+    "glb": "9cfa529a7102ad96c7668da4f806f9e2a4e0149679785ec5c8a0ff1205d2f5e8"
+  },
+  "runtime_report_sha256": "8746f9a6c11f6b09f7ab68be0ce287f85b72cef715740d72a42362d92dc855bb",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0005972850678733031,
+      "margin": 43
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0001709284835224942,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 9.401870117437905e-05,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn05-review-1.png",
+      "sha256": "b899c39f97a9cd2fede1e3af800c9f7fe4a0caf1f549517e3e6b236445939c39",
+      "prompt": "sources/docs/reconstruction/models/mn05-concept-prompt-1.txt",
+      "feedback": "Selected steppedconcreteblock,upper2x2fields,lowerpairedfields/twobrasspanels/redcornerstrips,threeattached paleconduits andfive-elementroof(3brass/2pale). Ownspriteclarifies loweruprightfields aspairedpanes;total19amberpanes includingtinyfrontpoint. Sourcegoverns dimensions/clusterpositions andquietungridded walls overextra conceptjoints. No Terranopeningdome transferred."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "stage": "actual_saved_native_and_independent_glb_runtime_with_native_quarter_review",
+      "binaries": {
+        "blend": "2a8111552faf257937005322d5f0188402aff9151f2bb32deabfc063c23defb0",
+        "glb": "7faf5ef58383d6079732e209b6dc53c241ebbdbcde1b2bc7cafe7a2df8ee509a"
+      },
+      "runtime_report_sha256": "2f0898cac17ab14abde3d89611454296675654e968ab45c949a8d23c30443240",
+      "status": "revision_required",
+      "finding": "Actualruntime1PASS2176tri/22closedparts/error3.168e-07. Nativequarterview confirms mountedthreeconduits andsteppedsourceanatomy,butshortpale roofupright hidesbehindtallbrassblade andlowerbrasspanels too deeplyshadowed. Spreadfive roofelements into source-visible horizontalorder,addstrictsource-view visibilityguard,andshallowonlytwo brasspanel recesses .040to.012. Preservecounts,contacts,portablematerials andallothergeometryguards."
+    },
+    {
+      "pass_number": 2,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "2bb071affea6a7f1d5c6fa26fd08f83f85a804125f2495045cea8d213951cc5f",
+        "glb": "9cfa529a7102ad96c7668da4f806f9e2a4e0149679785ec5c8a0ff1205d2f5e8"
+      },
+      "runtime_report_sha256": "8746f9a6c11f6b09f7ab68be0ce287f85b72cef715740d72a42362d92dc855bb",
+      "status": "accepted_asset_only",
+      "finding": "Finalnativequarter/importwhole/front/rear/bothdetails andprivatelegacy/concept/GLBboardVIEWED. Allfive source roofelements nowreadable inhorizontalorder;two brasslowerpanels seatedshallower. Source steppedmass/19panes/redcornerstrips/three mountedconduits retained. Runtime2PASS2176tri/22closedpositiveparts/6materials/9portablemaps/error3.16803e-07. Actual12blindfields/backings/19panecontacts,three complete conduitattachmentchains/shoulderclearance,five roofcontacts/unequalhierarchy/strictvisibility,twocastchips,root,texturepixels/lowsteadyemission/renderpairs pass.",
+      "limitations": [
+        "Plainhiddenrearwalls,conduit/mountprofiles,blinddepths/cellrelative proportions authored.",
+        "PB34 full120updates showsgenericTerranopeningdome,not Mauna mechanism;no ownoperatinganimationinferred.",
+        "Lowsteadyamberemission authoredmaterialchoice,notrecoveredtimedlighting. Approximatecamera;finaluser/clientacceptance separate."
+      ]
+    }
+  ],
+  "final_review": "Own fourpalettedlayers/all41catalogueupdates,function995/culture137,one selectedrealImageGenconcept andactualnative/independentGLB whole/front/rear/details reviewed. Steppedconcretebody,19amberpanes,two lowerbrasspanels,two redcornerstrips,three mountedangularconduits andfive roofelements(3brass/2pale) retain sourceanatomy. Initialnativefeedback corrected hidden shortpaleupright anddeeplyshadowedbrasspanels. Finalstrict roofvisibility,conduit clearance/contacts,recesses/panes/roofseating,texturepixels/emission andrenderpairs pass.",
+  "limitations": [
+    "Plainhiddenrearwalls,conduit/mountprofiles,blindfielddepths andcellrelative dimensions authored.",
+    "PB34full120updates/archivepreview depictsTerranmedicalcentre withopeningdome,notMauna operation. Full_MAindexes/all36researchsubjects surveyed;no directownoperatinganimation identified.",
+    "Lowsteadyamberemission isanauthoredmaterialchoice,notrecoveredtimedlighting. Approximatecamera;finaluser/clientacceptance separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
