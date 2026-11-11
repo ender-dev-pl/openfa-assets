@@ -22755,7 +22755,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/112",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           973
         ]
@@ -22829,21 +22829,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar06/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/healing-quarters/model.blend",
           "present": true,
-          "sha256": "571a03b58efff2f47b04c6718af748383e9c25ed9e0c9d524cbc2a09b83efc61",
-          "final_visual_acceptance": "not-established"
+          "sha256": "9f052d9ce220130df93dc43c062b11a3c322a009f153d1e3a8fb7e743dc3430b",
+          "media": "gallery/media/objects/artemian/healing-quarters",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/healing-quarters/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/healing-quarters/rear-quarter.png"
+            },
+            {
+              "label": "Copper inset and dark point",
+              "image": "gallery/media/objects/artemian/healing-quarters/copper-inset-and-dark-point-detail.png"
+            },
+            {
+              "label": "Silver and raised green ribs",
+              "image": "gallery/media/objects/artemian/healing-quarters/silver-rib-and-green-ribs-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/healing-quarters/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/healing-quarters/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -22873,6 +22900,86 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 112
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar06/model.blend",
+          "present": true,
+          "sha256": "571a03b58efff2f47b04c6718af748383e9c25ed9e0c9d524cbc2a09b83efc61",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/healing-quarters/model.blend",
+        "sha256": "9f052d9ce220130df93dc43c062b11a3c322a009f153d1e3a8fb7e743dc3430b",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/healing-quarters",
+          "verifier": "sources/tools/blender/verify_artemian_healing_quarters.py",
+          "files": {
+            "sources/objects/artemian/healing-quarters/model.blend": "9f052d9ce220130df93dc43c062b11a3c322a009f153d1e3a8fb7e743dc3430b",
+            "sources/objects/artemian/healing-quarters/model.glb": "e8a3472d63f5a14a7e8d3d28fea322633a0d87c488d56e0845051dceefecfaab",
+            "sources/objects/artemian/healing-quarters/model.json": "043d6834906f4df467272ecc2c68b0ef5065eebf02c8d0bbda7981b975e363f3",
+            "sources/objects/artemian/healing-quarters/README.md": "883ac1ece85a8de186460cf88a94d5d862d36f24eaf3cb09f871c73e5aff5a95",
+            "sources/objects/artemian/healing-quarters/runtime-review.json": "748ac6390d6c1c2d8fb7176e571fc77036e8e5a43c30d74b65a7eb2dfe84559b",
+            "sources/objects/artemian/healing-quarters/visual-review.json": "ebd75917be36ad1ecd1dc57fb7ab1ee67d584c5ed95d955d7ca777717c2db51f",
+            "gallery/media/objects/artemian/healing-quarters/concept-glb-comparison.jpg": "1e94f2d7885a3ae6a88d880f405a51794f353eb07f65ba5f8938b4f71d072c69",
+            "gallery/media/objects/artemian/healing-quarters/copper-inset-and-dark-point-detail.png": "cbb39325b8f2165294d46b624ea73e92b197b2b42a7d38b9a95cf4e84ae0b308",
+            "gallery/media/objects/artemian/healing-quarters/front-quarter.png": "42c91ca5e4f15617961df9425b51811a9b5cbf70ca553b5bd157e61d70a01a30",
+            "gallery/media/objects/artemian/healing-quarters/front.png": "85e223f8ecfffab6aa8fe6e71d1ea28b72604a7f3d0021750fa89baebba345e9",
+            "gallery/media/objects/artemian/healing-quarters/imported-front-quarter.png": "42c91ca5e4f15617961df9425b51811a9b5cbf70ca553b5bd157e61d70a01a30",
+            "gallery/media/objects/artemian/healing-quarters/imported-front.png": "85e223f8ecfffab6aa8fe6e71d1ea28b72604a7f3d0021750fa89baebba345e9",
+            "gallery/media/objects/artemian/healing-quarters/imported-rear-quarter.png": "e1c04a43f879d3487eacd3d18ebcb49900df464b8bde7ca16d60355dcf964f3e",
+            "gallery/media/objects/artemian/healing-quarters/native-front-quarter.png": "999ca7b7cda1976a9c5d18b74daec0485852732eaf46a526d70077d08c841f9b",
+            "gallery/media/objects/artemian/healing-quarters/native-front.png": "a7833d0394daeeb10fb38764aa6fe718f4371d752c034bc430d497518eedea01",
+            "gallery/media/objects/artemian/healing-quarters/native-rear-quarter.png": "3d07e051b4c1376cca5cb1450767110533214de2cea9e05ce80e79e9c2b598e5",
+            "gallery/media/objects/artemian/healing-quarters/rear-quarter.png": "e1c04a43f879d3487eacd3d18ebcb49900df464b8bde7ca16d60355dcf964f3e",
+            "gallery/media/objects/artemian/healing-quarters/silver-rib-and-green-ribs-detail.png": "ffa437de1a9f72a250ca32d2bbdb5d77631c591f74353bc66e66f6f4e0412b8a",
+            "gallery/media/objects/artemian/healing-quarters/technical-wireframe.png": "965b6b15b35696f650a8964beedd710e3933f188f1a58e86fc7d9c507b725fbd",
+            "sources/materials/artemian/healing-quarters/amber-fitting-colour.png": "74061a4195cfec16c876aba55ee67e7aaee8813b0e42053874ef50b0201fc476",
+            "sources/materials/artemian/healing-quarters/exposed-alloy-edge-colour.png": "5d99700f26069e07851f9d937f08515cca26e5b296f9541ecf69fb6674e33d6a",
+            "sources/materials/artemian/healing-quarters/muted-green-alloy-colour.png": "10f7108bcc7ca36a878d3eaebf9a96809d4b05b17ef47f6a01566cde861d259e",
+            "sources/materials/artemian/healing-quarters/occlusion-roughness-metallic.png": "765ce5ead2f58e01ee8bec9329b9bfdc045c03384ac76de86adfb9c15c272c0f",
+            "sources/materials/artemian/healing-quarters/used-metal-normal.png": "e6bc4836dab9fb7918401a12b97a8571c2578df318731f247f5726cd582e70b4",
+            "sources/tools/blender/remaster_artemian_healing_quarters.py": "b141eeeccb59f41c3ead46c16aeeeff34a954ae764babc30cc61c1a418b52901",
+            "sources/tools/blender/verify_artemian_healing_quarters.py": "de00b997a69607ac1351f2718e7f08402c210c2e27217f82e48b2ba5e9797ec3",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar06-concept-review.json": "f602e25673058b89fab3e5526991ffa54e60985755d4daf3bd6a4138001769f9",
+            "sources/docs/reconstruction/models/ar06-concept-prompt-1.txt": "2144509e1adf56296e64aef7a310a160f7d880189728332b8de876f12448ec3f",
+            "gallery/media/concepts/artemian/ar06-review-1.png": "68acf26396518b3fb5c8cc8fe58ca43e6e6f031d5f3cd8888f9971816bc6d98c"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/healing-quarters/visual-review.json",
+          "sha256": "ebd75917be36ad1ecd1dc57fb7ab1ee67d584c5ed95d955d7ca777717c2db51f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/healing-quarters/visual-review.json",
+          "sha256": "ebd75917be36ad1ecd1dc57fb7ab1ee67d584c5ed95d955d7ca777717c2db51f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/healing-quarters/visual-review.json",
+          "sha256": "ebd75917be36ad1ecd1dc57fb7ab1ee67d584c5ed95d955d7ca777717c2db51f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/healing-quarters/visual-review.json",
+          "sha256": "ebd75917be36ad1ecd1dc57fb7ab1ee67d584c5ed95d955d7ca777717c2db51f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/healing-quarters/runtime-review.json",
+          "sha256": "748ac6390d6c1c2d8fb7176e571fc77036e8e5a43c30d74b65a7eb2dfe84559b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

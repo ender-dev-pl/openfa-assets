@@ -66,11 +66,13 @@ Additional views: [Front](../gallery/media/objects/artemian/nurseries/front.png)
 
 `openfa:building/legacy/112`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Healing Quarters](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar06/front-quarter.png)
+![Healing Quarters](../gallery/media/objects/artemian/healing-quarters/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar06/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar06/model.glb)
+[Blend](../sources/objects/artemian/healing-quarters/model.blend) · [GLB](../sources/objects/artemian/healing-quarters/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/healing-quarters/front.png) · [Rear quarter](../gallery/media/objects/artemian/healing-quarters/rear-quarter.png) · [Copper inset and dark point](../gallery/media/objects/artemian/healing-quarters/copper-inset-and-dark-point-detail.png) · [Silver and raised green ribs](../gallery/media/objects/artemian/healing-quarters/silver-rib-and-green-ribs-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/healing-quarters/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/healing-quarters/concept-glb-comparison.jpg)
 
 ## House of the Axe
 
