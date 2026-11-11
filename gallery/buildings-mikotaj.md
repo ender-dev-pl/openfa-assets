@@ -154,11 +154,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/visibility/front.png)
 
 `openfa:building/legacy/098`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Perception](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk13/front-quarter.png)
+![Perception](../gallery/media/objects/mikotaj/perception/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk13/model.glb)
+[Blend](../sources/objects/mikotaj/perception/model.blend) · [GLB](../sources/objects/mikotaj/perception/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/perception/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/perception/rear-quarter.png) · [Upper inset detail](../gallery/media/objects/mikotaj/perception/upper-inset-detail.png) · [Lower status cells detail](../gallery/media/objects/mikotaj/perception/lower-status-detail.png) · [Mineral foundation detail](../gallery/media/objects/mikotaj/perception/foundation-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/perception/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/perception/concept-glb-comparison.jpg)
 
 ## Capacitors
 
