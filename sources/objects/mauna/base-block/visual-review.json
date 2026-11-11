@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/130",
+  "binaries": {
+    "blend": "e1929646b4ed16a97a4ffcc7bcb6bdc952defd86e6527aeaadefdb835946d882",
+    "glb": "71820ad9e4c81fdd2bc8ec9e292b6f4cca20961c408da37c9cb420246ff71057"
+  },
+  "runtime_report_sha256": "2563c6c1514aed1ca17125bb6800196e2596269f15bd0c9db9cc03b6c2985bbd",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00016941734551255807,
+      "margin": 56
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0001601630751310425,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00019126647834274952,
+      "margin": 54
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn01-review-1.png",
+      "sha256": "c8d51051d247057af7e567ddff7bc55594063dd46cd5327f524aa4e47b611fd8",
+      "prompt": "sources/docs/reconstruction/models/mn01-concept-prompt-1.txt",
+      "feedback": "Selected source-shaped tapered greyblue angular concrete block,raisedsquare roofpad/fourcellreading,two longleftredrecesses,three amberrightupperpoints/two darkslots,two shortlowerredrecesses/four amberpoints,four concrete/gold feet on eachvisibleface. Retains roughcastwear/strictpracticalarchitecture. Fourcellroofmark interpretation andhiddenbackfoot symmetry authored;ownsource governs proportions over heavierconcepthardware."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "stage": "actual_saved_geometry_and_unverified_diagnostic_render",
+      "binaries": {
+        "blend": "9c356796fbb5c49ddc81407e577cfcc17821edd54cf1f1a809573dea26afaf88",
+        "glb": "e39c1339b93ad8081d3c4aec8114cf81ffc992e30bcbb919139700b42150c00d"
+      },
+      "status": "revision_required",
+      "finding": "Actualgeometry visibilityguard rejects loweramberfitting0 behind concretebuttress. Diagnostic nativefront-quarter render (not runtimeacceptance) confirms lowerrow mostlyhidden. Contactfailure beforehand was a witness atamberbacking boundary,signeddistance0;independentdiagnostic verifies interioroffset.0015 givesnegative1.5mm inbothsurfaces withunchangedstrictinsideguard.",
+      "action": "Shorten buttresstop fromZ.90to.78 andraise loweramberrow.59to.89,withshortredrecesses.91to1.12 toretain readable separation belowupperstack. Keepallcounts/physicalcontacts andstrictvisibilityguards;update buttress/body witness toactualnewtop. No acceptanceorfullruntimepass claimed."
+    },
+    {
+      "pass_number": 2,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "e1929646b4ed16a97a4ffcc7bcb6bdc952defd86e6527aeaadefdb835946d882",
+        "glb": "71820ad9e4c81fdd2bc8ec9e292b6f4cca20961c408da37c9cb420246ff71057"
+      },
+      "runtime_report_sha256": "2563c6c1514aed1ca17125bb6800196e2596269f15bd0c9db9cc03b6c2985bbd",
+      "status": "accepted_asset_only",
+      "finding": "Reviewed final native/imported whole,front,rear and both details plus private legacy/concept/GLB board. All source counts readable;lower amber row no longer hidden by buttresses. Angular tapered concrete body,roof pad,red recesses,brass points and gold feet retain the original anatomy. Quiet roughcast wear and real small spall retain silhouette. Runtime3 passes contacts,recesses,visibility,16 feet,4 roof cells,portable texture pixels and independently imported geometry.",
+      "limitations": [
+        "Hidden rear foot symmetry and four-cell reading of tiny roof mark are authored interpretations.",
+        "Cell-relative dimensions and approximate review camera are authored,not recovered metric dimensions or projection.",
+        "No own operating overlays support animation or emission;PB20 is Terran function context only.",
+        "Final user artistic acceptance and client integration/performance remain separate."
+      ]
+    }
+  ],
+  "final_review": "Own four paletted layers/all41catalogueupdates,function991/culture137,one selected actual ImageGen concept and final saved native/independent GLB whole/front/rear/details reviewed. Angular tapered rough concrete block,raised four-cell roof pad,two long red recesses,three upper amber points/two dark slots,two short red recesses/four lower amber points and four gold-tipped buttresses per visible face retain the source anatomy. Initial lower row occlusion corrected with shorter buttresses and raised fittings;strict geometry/visibility guards retained.",
+  "limitations": [
+    "Hidden rear foot symmetry,four-cell reading of small roof mark and cell-relative dimensions authored.",
+    "Full_MA loose/archive indexes and all36researchsubjects surveyed. PB20 is generic Terran CPU function context,not Mauna geometry or operating motion. No own operating overlays/glow recovered.",
+    "Approximate reviewcamera,not recovered/calibrated projection. Final user artistic acceptance and client scale/orientation/state/shaders/Androidperformance separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -27242,7 +27242,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/130",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           991
         ]
@@ -27316,21 +27316,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn01/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/base-block/model.blend",
           "present": true,
-          "sha256": "680582e01d56cd3d94d204ff67f588f4f2495c9f759a91782689ea2c4c2ee530",
-          "final_visual_acceptance": "not-established"
+          "sha256": "e1929646b4ed16a97a4ffcc7bcb6bdc952defd86e6527aeaadefdb835946d882",
+          "media": "gallery/media/objects/mauna/base-block",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/base-block/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/base-block/rear-quarter.png"
+            },
+            {
+              "label": "Roof pad and concrete spall",
+              "image": "gallery/media/objects/mauna/base-block/roof-pad-and-concrete-spall-detail.png"
+            },
+            {
+              "label": "Recesses and gold-tipped buttresses",
+              "image": "gallery/media/objects/mauna/base-block/recesses-and-gold-tipped-buttresses-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/base-block/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/base-block/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -27360,6 +27387,88 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 130
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn01/model.blend",
+          "present": true,
+          "sha256": "680582e01d56cd3d94d204ff67f588f4f2495c9f759a91782689ea2c4c2ee530",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/base-block/model.blend",
+        "sha256": "e1929646b4ed16a97a4ffcc7bcb6bdc952defd86e6527aeaadefdb835946d882",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/base-block",
+          "verifier": "sources/tools/blender/verify_mauna_base_block.py",
+          "files": {
+            "sources/objects/mauna/base-block/model.blend": "e1929646b4ed16a97a4ffcc7bcb6bdc952defd86e6527aeaadefdb835946d882",
+            "sources/objects/mauna/base-block/model.glb": "71820ad9e4c81fdd2bc8ec9e292b6f4cca20961c408da37c9cb420246ff71057",
+            "sources/objects/mauna/base-block/model.json": "f0694638dd984bb866964149e20a109dd722022803eae1dc98f51d28f2612437",
+            "sources/objects/mauna/base-block/README.md": "58d3f22a6a271531c3b0a4b73acb1e05cbc90cf3bd48b6f49cd0e493b903732b",
+            "sources/objects/mauna/base-block/runtime-review.json": "2563c6c1514aed1ca17125bb6800196e2596269f15bd0c9db9cc03b6c2985bbd",
+            "sources/objects/mauna/base-block/visual-review.json": "75814d78a1572acb2f3b7aa1c51a36b17b408cdc09e93aea232abe231abc069a",
+            "gallery/media/objects/mauna/base-block/concept-glb-comparison.jpg": "20b86f2e83b3fcc18644bf5b0524fe75e8dc398d9e2678ba1406d0b71e178553",
+            "gallery/media/objects/mauna/base-block/front-quarter.png": "d2815957b9b181e19b064b300a888ab3674ab07dc866ead256321328112d564f",
+            "gallery/media/objects/mauna/base-block/front.png": "cc4a490c5b57991309c43330a4eb48759c1497025a0b057af18513ee5f213be6",
+            "gallery/media/objects/mauna/base-block/imported-front-quarter.png": "d2815957b9b181e19b064b300a888ab3674ab07dc866ead256321328112d564f",
+            "gallery/media/objects/mauna/base-block/imported-front.png": "cc4a490c5b57991309c43330a4eb48759c1497025a0b057af18513ee5f213be6",
+            "gallery/media/objects/mauna/base-block/imported-rear-quarter.png": "e68c2c22762c8007a81c1f3c3d327738cdd19101e2fd1a4240d64d44de89cca6",
+            "gallery/media/objects/mauna/base-block/native-front-quarter.png": "5c3598dd0b9d538230ea61f269b33060bbf84a30a6158507948848ac22e9bafc",
+            "gallery/media/objects/mauna/base-block/native-front.png": "ec8aa857db79ff077710f85efb04b073d8125bbf32a60d253ab69d022382ad3d",
+            "gallery/media/objects/mauna/base-block/native-rear-quarter.png": "8d6abea0da501ccf30b19b2e118a77d6cbf57b2ab557bdacd7ef9803130830d6",
+            "gallery/media/objects/mauna/base-block/rear-quarter.png": "e68c2c22762c8007a81c1f3c3d327738cdd19101e2fd1a4240d64d44de89cca6",
+            "gallery/media/objects/mauna/base-block/recesses-and-gold-tipped-buttresses-detail.png": "9261d952b8cf1e8f4af32b838797813536a7a519a134cb3d4bd5ba3de6be3eac",
+            "gallery/media/objects/mauna/base-block/roof-pad-and-concrete-spall-detail.png": "5771a3c5285b4032cb6a17a10b68bd9ae296bd18b56cf10043fa65783cc8524c",
+            "gallery/media/objects/mauna/base-block/technical-wireframe.png": "41f10a1af72a27eb610733818e3bdb9f86822b214c737498db37b4cb8fe7197f",
+            "sources/materials/mauna/base-block/cast-concrete-colour.png": "d0b20a244b5292784328e28907ff3d96eb06cde34682dca3ac3873a3800bda3f",
+            "sources/materials/mauna/base-block/cast-service-normal.png": "a2a88511be5101afd3484fa7b3c9771c5adeb81962ae0b84cfec5f557697acb5",
+            "sources/materials/mauna/base-block/chipped-concrete-edge-colour.png": "bee2b5e588d7013bc9c1ccfc127687a6fd8d3f504f28d97d43a52e59820bab25",
+            "sources/materials/mauna/base-block/concrete-orm.png": "a3fd15572b5473d136275f7816224b106de1e643bdd75f9dfd0b148db9d3edb5",
+            "sources/materials/mauna/base-block/metal-orm.png": "6ef83dceaedf78a7ef743a6c9ba00494f3d61fc821e1ef258b9a868732ad0d38",
+            "sources/materials/mauna/base-block/recess-red-colour.png": "259e56948645cf2028772a21d224e9dc108304bf71c89f077f4ce597448be972",
+            "sources/materials/mauna/base-block/used-brass-colour.png": "d56a44920b293eca6469735d9086196c812c7d1dc9b50e5138f1543466999dbb",
+            "sources/tools/blender/remaster_mauna_base_block.py": "a605e4d3fe726fa76cb4dd812690b341dbca8bce3f047371d765ae0b2bd66a82",
+            "sources/tools/blender/verify_mauna_base_block.py": "a0077e2d88bfef2d0eb4cc01174f3937ac29e4bff6faf71dda4b02d74629066c",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn01-concept-review.json": "57759ab2bd212afb369ae099bf9a4c36769c1c54412d9464a831ccdd4b26abe0",
+            "sources/docs/reconstruction/models/mn01-concept-prompt-1.txt": "6700acce793b464094a2b29e814f1d0166eb46d030e1fda82d34e27288da7507",
+            "gallery/media/concepts/mauna/mn01-review-1.png": "c8d51051d247057af7e567ddff7bc55594063dd46cd5327f524aa4e47b611fd8"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/base-block/visual-review.json",
+          "sha256": "75814d78a1572acb2f3b7aa1c51a36b17b408cdc09e93aea232abe231abc069a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/base-block/visual-review.json",
+          "sha256": "75814d78a1572acb2f3b7aa1c51a36b17b408cdc09e93aea232abe231abc069a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/base-block/visual-review.json",
+          "sha256": "75814d78a1572acb2f3b7aa1c51a36b17b408cdc09e93aea232abe231abc069a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/base-block/visual-review.json",
+          "sha256": "75814d78a1572acb2f3b7aa1c51a36b17b408cdc09e93aea232abe231abc069a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/base-block/runtime-review.json",
+          "sha256": "2563c6c1514aed1ca17125bb6800196e2596269f15bd0c9db9cc03b6c2985bbd",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

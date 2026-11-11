@@ -6,11 +6,13 @@
 
 `openfa:building/legacy/130`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Base Block](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn01/front-quarter.png)
+![Base Block](../gallery/media/objects/mauna/base-block/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn01/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn01/model.glb)
+[Blend](../sources/objects/mauna/base-block/model.blend) · [GLB](../sources/objects/mauna/base-block/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/base-block/front.png) · [Rear quarter](../gallery/media/objects/mauna/base-block/rear-quarter.png) · [Roof pad and concrete spall](../gallery/media/objects/mauna/base-block/roof-pad-and-concrete-spall-detail.png) · [Recesses and gold-tipped buttresses](../gallery/media/objects/mauna/base-block/recesses-and-gold-tipped-buttresses-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/base-block/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/base-block/concept-glb-comparison.jpg)
 
 ## Shielding Block
 

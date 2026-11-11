@@ -1,0 +1,501 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/130",
+  "key": "MN01",
+  "name": "Base Block",
+  "culture": "mauna",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 20,
+  "construction_updates": 35,
+  "triangles": 7060,
+  "triangle_budget": 30000,
+  "mesh_nodes": 24,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mauna_base_block.py",
+  "author_sha256": "a605e4d3fe726fa76cb4dd812690b341dbca8bce3f047371d765ae0b2bd66a82",
+  "binaries": {
+    "blend": "e1929646b4ed16a97a4ffcc7bcb6bdc952defd86e6527aeaadefdb835946d882",
+    "glb": "71820ad9e4c81fdd2bc8ec9e292b6f4cca20961c408da37c9cb420246ff71057"
+  },
+  "textures": {
+    "cast-concrete-colour.png": "d0b20a244b5292784328e28907ff3d96eb06cde34682dca3ac3873a3800bda3f",
+    "cast-service-normal.png": "a2a88511be5101afd3484fa7b3c9771c5adeb81962ae0b84cfec5f557697acb5",
+    "chipped-concrete-edge-colour.png": "bee2b5e588d7013bc9c1ccfc127687a6fd8d3f504f28d97d43a52e59820bab25",
+    "concrete-orm.png": "a3fd15572b5473d136275f7816224b106de1e643bdd75f9dfd0b148db9d3edb5",
+    "metal-orm.png": "6ef83dceaedf78a7ef743a6c9ba00494f3d61fc821e1ef258b9a868732ad0d38",
+    "recess-red-colour.png": "259e56948645cf2028772a21d224e9dc108304bf71c89f077f4ce597448be972",
+    "used-brass-colour.png": "d56a44920b293eca6469735d9086196c812c7d1dc9b50e5138f1543466999dbb"
+  },
+  "rectangular_recesses": [
+    {
+      "family": "long-red",
+      "index": 0,
+      "point": [
+        -0.1599999964237213,
+        -0.6834385395050049,
+        1.5499999523162842
+      ],
+      "normal": [
+        0.0,
+        -0.989150881767273,
+        0.14690357446670532
+      ],
+      "depth": 0.03
+    },
+    {
+      "family": "long-red",
+      "index": 1,
+      "point": [
+        0.1599999964237213,
+        -0.6834385395050049,
+        1.5499999523162842
+      ],
+      "normal": [
+        -1.913348945947746e-08,
+        -0.989150881767273,
+        0.14690357446670532
+      ],
+      "depth": 0.03
+    },
+    {
+      "family": "upper-dark",
+      "index": 0,
+      "point": [
+        0.7087125778198242,
+        0.18000000715255737,
+        1.5499999523162842
+      ],
+      "normal": [
+        0.9891508221626282,
+        0.0,
+        0.14690358936786652
+      ],
+      "depth": 0.03
+    },
+    {
+      "family": "upper-dark",
+      "index": 1,
+      "point": [
+        0.7087128162384033,
+        0.3499999940395355,
+        1.5499999523162842
+      ],
+      "normal": [
+        0.9891507625579834,
+        -5.7833968725162777e-08,
+        0.14690357446670532
+      ],
+      "depth": 0.03
+    },
+    {
+      "family": "short-red",
+      "index": 0,
+      "point": [
+        0.7725744247436523,
+        -0.14000000059604645,
+        1.1200000047683716
+      ],
+      "normal": [
+        0.9891507625579834,
+        0.0,
+        0.1469036489725113
+      ],
+      "depth": 0.03
+    },
+    {
+      "family": "short-red",
+      "index": 1,
+      "point": [
+        0.7725741863250732,
+        0.10000000149011612,
+        1.1200000047683716
+      ],
+      "normal": [
+        0.9891508221626282,
+        0.0,
+        0.14690366387367249
+      ],
+      "depth": 0.03
+    }
+  ],
+  "amber_fittings": [
+    {
+      "family": "upper-amber",
+      "index": 0,
+      "point": [
+        0.7384157180786133,
+        -0.17000000178813934,
+        1.350000023841858
+      ],
+      "normal": [
+        0.9891508221626282,
+        8.809719176383624e-09,
+        0.14690354466438293
+      ],
+      "depth": 0.028
+    },
+    {
+      "family": "upper-amber",
+      "index": 1,
+      "point": [
+        0.7087128162384033,
+        -0.17000000178813934,
+        1.5499999523162842
+      ],
+      "normal": [
+        0.989150881767273,
+        -0.0,
+        0.14690358936786652
+      ],
+      "depth": 0.028
+    },
+    {
+      "family": "upper-amber",
+      "index": 2,
+      "point": [
+        0.6790099143981934,
+        -0.17000000178813934,
+        1.75
+      ],
+      "normal": [
+        0.9891508221626282,
+        -2.951728461653147e-08,
+        0.14690354466438293
+      ],
+      "depth": 0.028
+    },
+    {
+      "family": "lower-amber",
+      "index": 0,
+      "point": [
+        0.8301537036895752,
+        -0.6000000238418579,
+        0.8899999856948853
+      ],
+      "normal": [
+        0.977581799030304,
+        0.0,
+        0.2105560600757599
+      ],
+      "depth": 0.028
+    },
+    {
+      "family": "lower-amber",
+      "index": 1,
+      "point": [
+        0.8301539421081543,
+        -0.20000000298023224,
+        0.8899999856948853
+      ],
+      "normal": [
+        0.977581799030304,
+        -0.0,
+        0.21055607497692108
+      ],
+      "depth": 0.028
+    },
+    {
+      "family": "lower-amber",
+      "index": 2,
+      "point": [
+        0.8301537036895752,
+        0.20000000298023224,
+        0.8899999856948853
+      ],
+      "normal": [
+        0.977581799030304,
+        0.0,
+        0.21055607497692108
+      ],
+      "depth": 0.028
+    },
+    {
+      "family": "lower-amber",
+      "index": 3,
+      "point": [
+        0.8301537036895752,
+        0.6000000238418579,
+        0.8899999856948853
+      ],
+      "normal": [
+        0.977581799030304,
+        0.0,
+        0.2105560600757599
+      ],
+      "depth": 0.028
+    }
+  ],
+  "roof_cells": [
+    [
+      -0.11,
+      -0.11,
+      2.138
+    ],
+    [
+      0.11,
+      -0.11,
+      2.138
+    ],
+    [
+      -0.11,
+      0.11,
+      2.138
+    ],
+    [
+      0.11,
+      0.11,
+      2.138
+    ]
+  ],
+  "buttress_contacts": [
+    {
+      "face": 0,
+      "index": 0,
+      "body_contact": [
+        -0.6899999976158142,
+        -0.8442307710647583,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        -0.6899999976158142,
+        -1.0,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 0,
+      "index": 1,
+      "body_contact": [
+        -0.23000000417232513,
+        -0.8442307710647583,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        -0.23000000417232513,
+        -1.0,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 0,
+      "index": 2,
+      "body_contact": [
+        0.23000000417232513,
+        -0.8442307710647583,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        0.23000000417232513,
+        -1.0,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 0,
+      "index": 3,
+      "body_contact": [
+        0.6899999976158142,
+        -0.8442307710647583,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        0.6899999976158142,
+        -1.0,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 1,
+      "index": 0,
+      "body_contact": [
+        0.8442307710647583,
+        -0.6899999976158142,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        1.0,
+        -0.6899999976158142,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 1,
+      "index": 1,
+      "body_contact": [
+        0.8442307710647583,
+        -0.23000000417232513,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        1.0,
+        -0.23000000417232513,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 1,
+      "index": 2,
+      "body_contact": [
+        0.8442307710647583,
+        0.23000000417232513,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        1.0,
+        0.23000000417232513,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 1,
+      "index": 3,
+      "body_contact": [
+        0.8442307710647583,
+        0.6899999976158142,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        1.0,
+        0.6899999976158142,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 2,
+      "index": 0,
+      "body_contact": [
+        0.6899999976158142,
+        0.8442307710647583,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        0.6899999976158142,
+        1.0,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 2,
+      "index": 1,
+      "body_contact": [
+        0.23000000417232513,
+        0.8442307710647583,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        0.23000000417232513,
+        1.0,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 2,
+      "index": 2,
+      "body_contact": [
+        -0.23000000417232513,
+        0.8442307710647583,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        -0.23000000417232513,
+        1.0,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 2,
+      "index": 3,
+      "body_contact": [
+        -0.6899999976158142,
+        0.8442307710647583,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        -0.6899999976158142,
+        1.0,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 3,
+      "index": 0,
+      "body_contact": [
+        -0.8442307710647583,
+        0.6899999976158142,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        -1.0,
+        0.6899999976158142,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 3,
+      "index": 1,
+      "body_contact": [
+        -0.8442307710647583,
+        0.23000000417232513,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        -1.0,
+        0.23000000417232513,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 3,
+      "index": 2,
+      "body_contact": [
+        -0.8442307710647583,
+        -0.23000000417232513,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        -1.0,
+        -0.23000000417232513,
+        0.3199999928474426
+      ]
+    },
+    {
+      "face": 3,
+      "index": 3,
+      "body_contact": [
+        -0.8442307710647583,
+        -0.6899999976158142,
+        0.7549999952316284
+      ],
+      "foot_contact": [
+        -1.0,
+        -0.6899999976158142,
+        0.3199999928474426
+      ]
+    }
+  ],
+  "physical_spall": {
+    "point": [
+      0.3499999940395355,
+      0.2800000011920929,
+      2.0799999237060547
+    ],
+    "normal": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "interpretation": [
+    "Own angular greyblue concrete block,slopedskirt/roofpad,2longredslots/3upperamberpoints/2darkslots/2shortredslots/4loweramberpoints and4goldtippedbuttressespervisibleface govern geometry.",
+    "Hidden rearfoot symmetry andfourcellreading ofsmall roofmark,practicalpanelrecess andcell-relative dimensions authored. PB20isTerran functioncontext,not Mauna operation. No own operating phases/glow inferred."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront. Cell-relative proportions authored;no recovered metric dimensions.",
+  "concept_review": "sources/docs/reconstruction/models/mn01-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}
