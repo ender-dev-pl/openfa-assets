@@ -102,19 +102,15 @@ Additional views: [Front](../gallery/media/objects/mauna/construction-area/front
 
 `openfa:building/legacy/138`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Launch Area](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn09/front-quarter.png)
+![Launch Area](../gallery/media/objects/mauna/launch-area/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn09/model.glb)
+[Blend](../sources/objects/mauna/launch-area/model.blend) · [GLB](../sources/objects/mauna/launch-area/model.glb)
 
-**Additional iteration — verified-launch-mechanism**
+Additional views: [Front](../gallery/media/objects/mauna/launch-area/front.png) · [Rear quarter](../gallery/media/objects/mauna/launch-area/rear-quarter.png) · [Braced mast and source markings](../gallery/media/objects/mauna/launch-area/braced-mast-and-source-markings-detail.png) · [Downward doors and hinge bearings](../gallery/media/objects/mauna/launch-area/downward-doors-and-hinge-bearings-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/launch-area/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/launch-area/concept-glb-comparison.jpg) · [Fully open launch shaft](../gallery/media/objects/mauna/launch-area/imported-open-front-quarter.png) · [Mauna Type5 clearance at proposal40](../gallery/media/objects/mauna/launch-area/clearance-surveillance-craft-type-5.png) · [Mauna Type1.5 clearance at proposal56 aligned45deg](../gallery/media/objects/mauna/launch-area/clearance-combat-craft-type-1-5.png) · [Supplementary Terran Assault Fighter](../gallery/media/objects/mauna/launch-area/clearance-assault-fighter.png) · [Supplementary Terran Combat Eagle](../gallery/media/objects/mauna/launch-area/clearance-combat-eagle.png) · [Supplementary Terran Scoutship](../gallery/media/objects/mauna/launch-area/clearance-scoutship.png)
 
-![Launch Area](../gallery/media/docs/assets/reconstruction/launch-facilities/mauna/mn09/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn09/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn09/model.glb)
-
-[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/mauna/mn09/animation-00.webm)
+[Play animation: LaunchFacilityCycle](../gallery/media/objects/mauna/launch-area/animation-00.webm)
 
 ## Satellite Pad
 

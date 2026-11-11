@@ -1,0 +1,506 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/138",
+  "key": "MN09",
+  "name": "Launch Area",
+  "culture": "mauna",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 26,
+  "construction_updates": 18,
+  "triangles": 2232,
+  "triangle_budget": 30000,
+  "mesh_nodes": 17,
+  "materials": 8,
+  "author": "sources/tools/blender/remaster_mauna_launch_area.py",
+  "author_sha256": "b5afa3a160fc298a2721687fdf66c884b039d02b9d75a81f73e110e26685ec67",
+  "binaries": {
+    "blend": "d86c8f8bc53ec6584b057fbaedeff2eb1cb864f2ddc7a73102f023b988f6d653",
+    "glb": "a56401153523cc7d31cb5abf32b2001ba654d6c76010c997b32f0a26bf38476b"
+  },
+  "textures": {
+    "cast-concrete-colour.png": "4038cbec3eaf8b9fafd946720763c89f3fcfbb88441e18bb05308084c97fc05a",
+    "cast-service-normal.png": "b39484fb7316da81784f2ee5021bc00cbad3e6a7c885d2e12a6e60fe7cc843c3",
+    "concrete-orm.png": "8ec8f29ccaf99b12bfdff49e95e54a50f372a47d76c8133fa622b909d5914249",
+    "guide-pale-colour.png": "304d1ae5c4dd4a99f1582586f32315571cd72b3f218eaa3167be004c2f5dc874",
+    "marking-red-colour.png": "ede5dd98fbd975ee2300a3a3429514a8e32031ecae024b647f6e5ae00b74590c",
+    "metal-orm.png": "6fafbb1fb7c021e035c2649c87333fc980ddc50aa0c2fd473531cc6aba7cce2d",
+    "pale-alloy-colour.png": "e3a54fe8f58515272e178b343a6689feaa4214867278411fec29d1f8e601bd60",
+    "used-brass-colour.png": "7332ebd92124f8b6e5d7e25cd3e676a256c9bbebe030c69bbc2b57b99db2952e",
+    "window-orm.png": "0d33bf9cb825b9ae38bf2f5c353d6eb4bc46facfc75569ac2492fa271efe52c5"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Launch Area front dark vent",
+      "body": "Launch Area sloping concrete shell",
+      "point": [
+        0.0,
+        -0.8642709255218506,
+        0.3149999976158142
+      ],
+      "normal": [
+        0.0,
+        -0.9895330667495728,
+        0.14430688321590424
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.032
+    },
+    {
+      "object": "Launch Area right lower dark vertical slot",
+      "body": "Launch Area sloping concrete shell",
+      "point": [
+        0.882500171661377,
+        -0.4300000071525574,
+        0.1899999976158142
+      ],
+      "normal": [
+        0.9895330667495728,
+        0.0,
+        0.14430688321590424
+      ],
+      "depth": 0.012,
+      "contact_depth": 0.019
+    },
+    {
+      "object": "Launch Area mast small dark field 0",
+      "body": "Launch Area slender pale mast",
+      "point": [
+        -0.7900000214576721,
+        0.8054999709129333,
+        1.2300000190734863
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.006,
+      "contact_depth": 0.013000000000000001
+    },
+    {
+      "object": "Launch Area mast small dark field 1",
+      "body": "Launch Area slender pale mast",
+      "point": [
+        -0.7900000214576721,
+        0.8054999709129333,
+        1.340000033378601
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.006,
+      "contact_depth": 0.013000000000000001
+    },
+    {
+      "object": "Launch Area mast small dark field 2",
+      "body": "Launch Area slender pale mast",
+      "point": [
+        -0.7900000214576721,
+        0.8055002093315125,
+        1.4500000476837158
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.006,
+      "contact_depth": 0.013000000000000001
+    }
+  ],
+  "attachment_contacts": [
+    {
+      "object": "Launch Area brass corner post 0",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        -0.825,
+        -0.825,
+        0.545
+      ]
+    },
+    {
+      "object": "Launch Area brass corner post 1",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        0.825,
+        -0.825,
+        0.545
+      ]
+    },
+    {
+      "object": "Launch Area brass corner post 2",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        0.825,
+        0.828,
+        0.545
+      ]
+    },
+    {
+      "object": "Launch Area brass corner post 3",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        -0.825,
+        0.828,
+        0.545
+      ]
+    },
+    {
+      "object": "Launch Area slender pale mast",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        -0.79,
+        0.828,
+        0.545
+      ]
+    },
+    {
+      "object": "Launch Area shorter mast brace leg",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        -0.5,
+        0.828,
+        0.545
+      ]
+    },
+    {
+      "object": "Launch Area diagonal mast bridge",
+      "support": "Launch Area slender pale mast",
+      "point": [
+        -0.7900000214576721,
+        0.828000009059906,
+        1.2699999809265137
+      ]
+    },
+    {
+      "object": "Launch Area diagonal mast bridge",
+      "support": "Launch Area shorter mast brace leg",
+      "point": [
+        -0.5,
+        0.828000009059906,
+        1.0800000429153442
+      ]
+    },
+    {
+      "object": "Launch Area mast forward thin rail",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        -0.823,
+        0.828,
+        0.545
+      ]
+    },
+    {
+      "object": "Launch Area mast small bridge 0",
+      "support": "Launch Area slender pale mast",
+      "point": [
+        -0.793,
+        0.828,
+        0.71
+      ]
+    },
+    {
+      "object": "Launch Area mast small bridge 0",
+      "support": "Launch Area mast forward thin rail",
+      "point": [
+        -0.82,
+        0.828,
+        0.71
+      ]
+    },
+    {
+      "object": "Launch Area mast small bridge 1",
+      "support": "Launch Area slender pale mast",
+      "point": [
+        -0.793,
+        0.828,
+        0.9
+      ]
+    },
+    {
+      "object": "Launch Area mast small bridge 1",
+      "support": "Launch Area mast forward thin rail",
+      "point": [
+        -0.82,
+        0.828,
+        0.9
+      ]
+    },
+    {
+      "object": "Launch Area mast small bridge 2",
+      "support": "Launch Area slender pale mast",
+      "point": [
+        -0.793,
+        0.828,
+        1.09
+      ]
+    },
+    {
+      "object": "Launch Area mast small bridge 2",
+      "support": "Launch Area mast forward thin rail",
+      "point": [
+        -0.82,
+        0.828,
+        1.09
+      ]
+    },
+    {
+      "object": "Launch Area front vent rib 0",
+      "support": "Launch Area front dark vent",
+      "point": [
+        0.0,
+        -0.8452224135398865,
+        0.2515874207019806
+      ]
+    },
+    {
+      "object": "Launch Area front vent rib 1",
+      "support": "Launch Area front dark vent",
+      "point": [
+        0.0,
+        -0.8394501209259033,
+        0.291168749332428
+      ]
+    },
+    {
+      "object": "Launch Area front vent rib 2",
+      "support": "Launch Area front dark vent",
+      "point": [
+        0.0,
+        -0.8336778879165649,
+        0.330750048160553
+      ]
+    },
+    {
+      "object": "Launch Area front vent rib 3",
+      "support": "Launch Area front dark vent",
+      "point": [
+        0.0,
+        -0.8279055953025818,
+        0.37033137679100037
+      ]
+    },
+    {
+      "object": "Launch Area red wall zigzag 0",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        0.8420222401618958,
+        -0.4300000071525574,
+        0.46063104271888733
+      ]
+    },
+    {
+      "object": "Launch Area red wall zigzag 1",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        0.8420224785804749,
+        0.029999999329447746,
+        0.4606310725212097
+      ]
+    },
+    {
+      "object": "Launch Area red wall zigzag 2",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        0.8420224785804749,
+        0.49000000953674316,
+        0.4606310725212097
+      ]
+    },
+    {
+      "object": "Launch Area shaft guide -1 0",
+      "support": "Launch Area maroon underground shaft",
+      "point": [
+        -0.853,
+        0,
+        -0.08
+      ]
+    },
+    {
+      "object": "Launch Area shaft guide -1 1",
+      "support": "Launch Area maroon underground shaft",
+      "point": [
+        -0.853,
+        0,
+        -0.28
+      ]
+    },
+    {
+      "object": "Launch Area shaft guide -1 2",
+      "support": "Launch Area maroon underground shaft",
+      "point": [
+        -0.853,
+        0,
+        -0.48
+      ]
+    },
+    {
+      "object": "Launch Area shaft guide 1 0",
+      "support": "Launch Area maroon underground shaft",
+      "point": [
+        0.853,
+        0,
+        -0.08
+      ]
+    },
+    {
+      "object": "Launch Area shaft guide 1 1",
+      "support": "Launch Area maroon underground shaft",
+      "point": [
+        0.853,
+        0,
+        -0.28
+      ]
+    },
+    {
+      "object": "Launch Area shaft guide 1 2",
+      "support": "Launch Area maroon underground shaft",
+      "point": [
+        0.853,
+        0,
+        -0.48
+      ]
+    },
+    {
+      "object": "Launch Area fixed hinge bearing -1 0",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        -0.53,
+        -0.818,
+        0.518
+      ]
+    },
+    {
+      "object": "Launch Area fixed hinge bearing -1 1",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        0.53,
+        -0.818,
+        0.518
+      ]
+    },
+    {
+      "object": "Launch Area fixed hinge bearing 1 0",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        -0.53,
+        0.818,
+        0.518
+      ]
+    },
+    {
+      "object": "Launch Area fixed hinge bearing 1 1",
+      "support": "Launch Area sloping concrete shell",
+      "point": [
+        0.53,
+        0.818,
+        0.518
+      ]
+    }
+  ],
+  "part_batches": {
+    "Launch Area slender pale mast": "Launch Area fixed pale assemblies",
+    "Launch Area shorter mast brace leg": "Launch Area fixed pale assemblies",
+    "Launch Area diagonal mast bridge": "Launch Area fixed pale assemblies",
+    "Launch Area mast forward thin rail": "Launch Area fixed pale assemblies",
+    "Launch Area mast small bridge 0": "Launch Area fixed pale assemblies",
+    "Launch Area mast small bridge 1": "Launch Area fixed pale assemblies",
+    "Launch Area mast small bridge 2": "Launch Area fixed pale assemblies",
+    "Launch Area front vent rib 0": "Launch Area fixed pale assemblies",
+    "Launch Area front vent rib 1": "Launch Area fixed pale assemblies",
+    "Launch Area front vent rib 2": "Launch Area fixed pale assemblies",
+    "Launch Area front vent rib 3": "Launch Area fixed pale assemblies",
+    "Launch Area brass corner post 0": "Launch Area fixed brass assemblies",
+    "Launch Area brass corner post 1": "Launch Area fixed brass assemblies",
+    "Launch Area brass corner post 2": "Launch Area fixed brass assemblies",
+    "Launch Area brass corner post 3": "Launch Area fixed brass assemblies",
+    "Launch Area fixed hinge bearing -1 0": "Launch Area fixed brass assemblies",
+    "Launch Area hinge axle -1 0": "Launch Area fixed brass assemblies",
+    "Launch Area fixed hinge bearing -1 1": "Launch Area fixed brass assemblies",
+    "Launch Area hinge axle -1 1": "Launch Area fixed brass assemblies",
+    "Launch Area fixed hinge bearing 1 0": "Launch Area fixed brass assemblies",
+    "Launch Area hinge axle 1 0": "Launch Area fixed brass assemblies",
+    "Launch Area fixed hinge bearing 1 1": "Launch Area fixed brass assemblies",
+    "Launch Area hinge axle 1 1": "Launch Area fixed brass assemblies",
+    "Launch Area front dark vent": "Launch Area dark blind backings",
+    "Launch Area right lower dark vertical slot": "Launch Area dark blind backings",
+    "Launch Area mast small dark field 0": "Launch Area dark blind backings",
+    "Launch Area mast small dark field 1": "Launch Area dark blind backings",
+    "Launch Area mast small dark field 2": "Launch Area dark blind backings",
+    "Launch Area shaft guide -1 0": "Launch Area pale shaft guides",
+    "Launch Area shaft guide -1 1": "Launch Area pale shaft guides",
+    "Launch Area shaft guide -1 2": "Launch Area pale shaft guides",
+    "Launch Area shaft guide 1 0": "Launch Area pale shaft guides",
+    "Launch Area shaft guide 1 1": "Launch Area pale shaft guides",
+    "Launch Area shaft guide 1 2": "Launch Area pale shaft guides",
+    "Launch Area red wall zigzag 0": "Launch Area three source wall zigzags",
+    "Launch Area red wall zigzag 1": "Launch Area three source wall zigzags",
+    "Launch Area red wall zigzag 2": "Launch Area three source wall zigzags"
+  },
+  "physical_chips": [
+    {
+      "body": "Launch Area sloping concrete shell",
+      "point": [
+        -0.8149999976158142,
+        -0.10000000149011612,
+        0.550000011920929
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "body": "Launch Area cast foot plinth",
+      "point": [
+        0.6499999761581421,
+        -0.9200000166893005,
+        0.054999999701976776
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ],
+  "interpretation": [
+    "Own square sloping pad,braced slender mast,four brass posts,front vent,three red wall zigzags,two red roof bands and downward-folding paired cover govern geometry.",
+    "Shaft depth,hinge engineering,point placement,recess depths and cell-relative dimensions authored. Own source mechanism retained;generic PB26 geometry is context only."
+  ],
+  "scale_contract": "2x2 placement footprint,+Zup/-Yfront;preserve ground origin0 and closed bind horizontal bounds. Cell-relative proportions authored;no recovered metric dimensions.",
+  "concept_review": "sources/docs/reconstruction/models/mn09-concept-review.json",
+  "animation_clips": [
+    "LaunchFacilityCycle"
+  ],
+  "launch_animation": {
+    "kind": "deck",
+    "clip": "LaunchFacilityCycle",
+    "closed_frame": 1,
+    "open_first_frame": 25,
+    "open_last_frame": 73,
+    "end_frame": 97,
+    "fps": 24,
+    "source": "Own descriptors2..5 moving cover,6..16 empty overlay open,17 foreground mask. Continuous timing authored;game maps attached ship altitude."
+  },
+  "hangar": {
+    "aperture_half_extent": 0.805,
+    "hinge_y": 0.805,
+    "hinge_z": 0.55,
+    "open_angle_degrees": 90,
+    "shaft_floor": -1.55,
+    "transit_min_z": -1.25,
+    "terrain_cutout_required": true,
+    "ground_level": 0,
+    "preserve_ground_origin": true
+  },
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

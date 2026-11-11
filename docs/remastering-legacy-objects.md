@@ -51,6 +51,8 @@ Concentrate detail where the references support it and where it remains readable
 
 Set and record budgets appropriate to the object and target runtime: triangles, mesh batches, materials, texture dimensions, and relevant memory or rendering costs. Measure the exported result instead of inferring performance from the editable scene. Inspect details at gameplay scale as well as in close-ups. Compare related ships or structures at a common physical scale and camera; individually fitted images do not demonstrate their relative sizes. Asset budgets alone do not establish a client frame-rate guarantee.
 
+For a hangar or launch opening, the primary clearance references are the small craft of that same culture. Identify the production roster from evidence; do not infer ground production merely from an absent orbital-production tag. Import the canonical ship geometry at an explicit shared physical scale, verify its complete transit path and required alignment against the moving doors and fixed structure, and show a combined render. Terran ships may provide supplementary comparisons. Separate authored scale proposals from installed game dimensions, reject unsuitable fallback sizes, and never silently shrink a ship to make the opening pass.
+
 ## Canonical models and preservation
 
 Maintain one current canonical object identity and model source/export pair for each object. Refinement should improve that shared model for gameplay, construction and build menus, SciTek, and other presentations. Dedicated menu images and animations may be separate deliverables, but must not become competing versions of the underlying model. Package consumers should select the canonical payload rather than include every historical variant.

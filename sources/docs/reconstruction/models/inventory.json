@@ -29217,7 +29217,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/138",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           999
         ]
@@ -29291,27 +29291,72 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn09/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/launch-area/model.blend",
           "present": true,
-          "sha256": "164618ee5d276e270476f0f8702b7086d5db38e25f188d8dde6cbac7f5b7ef59",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "verified-launch-mechanism",
-          "blend": "docs/assets/reconstruction/launch-facilities/mauna/mn09/model.blend",
-          "present": true,
-          "sha256": "b891fa4d057931e75ed8756e1cb5e9c2a8f85b6266712607c2afc98632ef9574"
+          "sha256": "d86c8f8bc53ec6584b057fbaedeff2eb1cb864f2ddc7a73102f023b988f6d653",
+          "media": "gallery/media/objects/mauna/launch-area",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/launch-area/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/launch-area/rear-quarter.png"
+            },
+            {
+              "label": "Braced mast and source markings",
+              "image": "gallery/media/objects/mauna/launch-area/braced-mast-and-source-markings-detail.png"
+            },
+            {
+              "label": "Downward doors and hinge bearings",
+              "image": "gallery/media/objects/mauna/launch-area/downward-doors-and-hinge-bearings-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/launch-area/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/launch-area/concept-glb-comparison.jpg"
+            },
+            {
+              "label": "Fully open launch shaft",
+              "image": "gallery/media/objects/mauna/launch-area/imported-open-front-quarter.png"
+            },
+            {
+              "label": "Mauna Type5 clearance at proposal40",
+              "image": "gallery/media/objects/mauna/launch-area/clearance-surveillance-craft-type-5.png"
+            },
+            {
+              "label": "Mauna Type1.5 clearance at proposal56 aligned45deg",
+              "image": "gallery/media/objects/mauna/launch-area/clearance-combat-craft-type-1-5.png"
+            },
+            {
+              "label": "Supplementary Terran Assault Fighter",
+              "image": "gallery/media/objects/mauna/launch-area/clearance-assault-fighter.png"
+            },
+            {
+              "label": "Supplementary Terran Combat Eagle",
+              "image": "gallery/media/objects/mauna/launch-area/clearance-combat-eagle.png"
+            },
+            {
+              "label": "Supplementary Terran Scoutship",
+              "image": "gallery/media/objects/mauna/launch-area/clearance-scoutship.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
-        "moving_assemblies": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
+        "moving_assemblies": true,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -29341,6 +29386,122 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 138
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn09/model.blend",
+          "present": true,
+          "sha256": "164618ee5d276e270476f0f8702b7086d5db38e25f188d8dde6cbac7f5b7ef59",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "verified-launch-mechanism",
+          "blend": "docs/assets/reconstruction/launch-facilities/mauna/mn09/model.blend",
+          "present": true,
+          "sha256": "b891fa4d057931e75ed8756e1cb5e9c2a8f85b6266712607c2afc98632ef9574"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/launch-area/model.blend",
+        "sha256": "d86c8f8bc53ec6584b057fbaedeff2eb1cb864f2ddc7a73102f023b988f6d653",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/launch-area",
+          "verifier": "sources/tools/blender/verify_mauna_launch_area.py",
+          "files": {
+            "sources/objects/mauna/launch-area/integration-contract.json": "ce1065882c66e8c51aa0c6d3b7f4facddca6e00b8a414816c4a383a1fcd1b8bd",
+            "sources/objects/mauna/launch-area/model.blend": "d86c8f8bc53ec6584b057fbaedeff2eb1cb864f2ddc7a73102f023b988f6d653",
+            "sources/objects/mauna/launch-area/model.glb": "a56401153523cc7d31cb5abf32b2001ba654d6c76010c997b32f0a26bf38476b",
+            "sources/objects/mauna/launch-area/model.json": "ec04f586149a70f75f0689086e0f504f02359f354f2e5bb9c600e42daed84934",
+            "sources/objects/mauna/launch-area/README.md": "02d9e6a50397b54658209673137ba26e4b051d08e919e7ab2f17bc9347220570",
+            "sources/objects/mauna/launch-area/runtime-review.json": "1fc45dbf6d310a41d2c388b59bab74575daabd15bd260d464697e513ec83c9b0",
+            "sources/objects/mauna/launch-area/visual-review.json": "e55ed32b22490b1da53db49a5f510797176f295842e24ea2cb5f470327459af6",
+            "gallery/media/objects/mauna/launch-area/animation-00.webm": "599193985957776c34e4ab7699a5ad15da371656148c4b2afae38a11a12fabd7",
+            "gallery/media/objects/mauna/launch-area/animation-previews.json": "099a991a777c15dd308648a83aa87d215bb27ef8a3ee48d32954eb3c3a84e3f8",
+            "gallery/media/objects/mauna/launch-area/braced-mast-and-source-markings-detail.png": "b5a3d2daf56bd5c15e4c78e7a7c376b20a055da867f92dedf9266c3f078d6efd",
+            "gallery/media/objects/mauna/launch-area/clearance-assault-fighter.png": "59fc0b1fae321b58d6dd6cbe23c0e9ad54cfc8822c2df86abbc48fc8aa3a7260",
+            "gallery/media/objects/mauna/launch-area/clearance-combat-craft-type-1-5.png": "2c0c4a91d2b5e9bd9397e98887a0d8a004988b9b9948a2ddf3bb15414b7ffcae",
+            "gallery/media/objects/mauna/launch-area/clearance-combat-eagle.png": "bf0418981dfb5881f5abc9f4defc59c65be971242b644da1de80487d31d014b6",
+            "gallery/media/objects/mauna/launch-area/clearance-renders.json": "165b142a64bc7402387331931019020150215bef4425ca4d1f5f4ce302988935",
+            "gallery/media/objects/mauna/launch-area/clearance-scoutship.png": "1d37149d8efd83c547ee2243c5c012a817aed477771bc9f616b0152681c56b4c",
+            "gallery/media/objects/mauna/launch-area/clearance-surveillance-craft-type-5.png": "309bad94ae476b3cda2e611c68016757864ac879d36835e4986bd60a4b7c65c3",
+            "gallery/media/objects/mauna/launch-area/concept-glb-comparison.jpg": "0ec4998b72603d806a7d7833a2a68fd48da539de56e6c161a3f629f9883664eb",
+            "gallery/media/objects/mauna/launch-area/downward-doors-and-hinge-bearings-detail.png": "2014325ff052f056ca6fd8ca5c8efe536a4dac53c7c7d9dcec388b4f3d9ee413",
+            "gallery/media/objects/mauna/launch-area/front-quarter.png": "992a472102d4ee8127fb2aaeea04fa605b69cd3eb1a03df98e0c45bc19834f9e",
+            "gallery/media/objects/mauna/launch-area/front.png": "68e0b39a5363cf69665eca8b8043e55871f324de912be338a09051cc77f64852",
+            "gallery/media/objects/mauna/launch-area/imported-front-quarter.png": "992a472102d4ee8127fb2aaeea04fa605b69cd3eb1a03df98e0c45bc19834f9e",
+            "gallery/media/objects/mauna/launch-area/imported-front.png": "68e0b39a5363cf69665eca8b8043e55871f324de912be338a09051cc77f64852",
+            "gallery/media/objects/mauna/launch-area/imported-open-front-quarter.png": "fcdff3f4c733c9312e2f0e2b20fae3f07bdb15157aa556e93ee97a2b0146c6e0",
+            "gallery/media/objects/mauna/launch-area/imported-open-front.png": "7e470ebcaa48ff250a3347ca93e4a4184ff216366b09e9df5154722928978362",
+            "gallery/media/objects/mauna/launch-area/imported-open-rear-quarter.png": "2c88037f99e668b2ae2c4e7b71d76b14608dc9042ed17e9865dbe4f3e6d3ca8b",
+            "gallery/media/objects/mauna/launch-area/imported-rear-quarter.png": "1ed7ef52bdcf4099fea9a34a0b9a7a13ee59047da9899dbfa9a4fa72b2882530",
+            "gallery/media/objects/mauna/launch-area/native-front-quarter.png": "88fce3836e23680d2283a5fe3b0892d4e34625a7da2ab664030319ed054d2fa0",
+            "gallery/media/objects/mauna/launch-area/native-front.png": "58770998709f92dd83c07973f00d704cf34dd45e44df926605eee2972d9efadd",
+            "gallery/media/objects/mauna/launch-area/native-rear-quarter.png": "fc062a5bf8dba65ae0ec5fb4d71f62197e6d9b4f4ee7457a5d1ac57676be4fd3",
+            "gallery/media/objects/mauna/launch-area/rear-quarter.png": "1ed7ef52bdcf4099fea9a34a0b9a7a13ee59047da9899dbfa9a4fa72b2882530",
+            "gallery/media/objects/mauna/launch-area/technical-wireframe.png": "7db97aeec55ee10b7cd080b25a9ad6d7eb3ca0193a3a017641926c5120b762ca",
+            "sources/materials/mauna/launch-area/cast-concrete-colour.png": "4038cbec3eaf8b9fafd946720763c89f3fcfbb88441e18bb05308084c97fc05a",
+            "sources/materials/mauna/launch-area/cast-service-normal.png": "b39484fb7316da81784f2ee5021bc00cbad3e6a7c885d2e12a6e60fe7cc843c3",
+            "sources/materials/mauna/launch-area/concrete-orm.png": "8ec8f29ccaf99b12bfdff49e95e54a50f372a47d76c8133fa622b909d5914249",
+            "sources/materials/mauna/launch-area/guide-pale-colour.png": "304d1ae5c4dd4a99f1582586f32315571cd72b3f218eaa3167be004c2f5dc874",
+            "sources/materials/mauna/launch-area/marking-red-colour.png": "ede5dd98fbd975ee2300a3a3429514a8e32031ecae024b647f6e5ae00b74590c",
+            "sources/materials/mauna/launch-area/metal-orm.png": "6fafbb1fb7c021e035c2649c87333fc980ddc50aa0c2fd473531cc6aba7cce2d",
+            "sources/materials/mauna/launch-area/pale-alloy-colour.png": "e3a54fe8f58515272e178b343a6689feaa4214867278411fec29d1f8e601bd60",
+            "sources/materials/mauna/launch-area/used-brass-colour.png": "7332ebd92124f8b6e5d7e25cd3e676a256c9bbebe030c69bbc2b57b99db2952e",
+            "sources/materials/mauna/launch-area/window-orm.png": "0d33bf9cb825b9ae38bf2f5c353d6eb4bc46facfc75569ac2492fa271efe52c5",
+            "sources/tools/blender/remaster_mauna_launch_area.py": "b5afa3a160fc298a2721687fdf66c884b039d02b9d75a81f73e110e26685ec67",
+            "sources/tools/blender/verify_mauna_launch_area.py": "ba723e55c5e8d56ad147999ef67d20c2d165fd56b4de86ed7ed3d625703619c6",
+            "sources/tools/blender/render_mauna_launch_area_animation.py": "045216decb8c117a0edbf39428e44ea885029954a5569c90f4093dc5a5a5744e",
+            "sources/tools/blender/render_mauna_launch_area_clearance.py": "dd6296a600473f8a512de53d9ef64b2ea151c10451397bdb9cafbfc56eb58878",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn09-concept-review.json": "c7b2b3c48165a571e20c57dc3abc1d43885e8b6fb0e2b1673c6f399ab07b6ede",
+            "sources/docs/reconstruction/models/mn09-concept-prompt-1.txt": "9ca558b2905d8e6ae0af5928c1f5783f36cf5d38210993ca7cf6ada157291c2b",
+            "gallery/media/concepts/mauna/mn09-review-1.png": "bcd923fb91c4145c5c471369d12e01fcfdb46a7324a6ebfbfa782465c6b05da8",
+            "sources/objects/mauna/surveillance-craft-type-5/model.glb": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
+            "sources/objects/mauna/surveillance-craft-type-5/model.json": "d95312b47cbe715de46a55774fd14acfa1531590b67cde1b3488ac48ff78d199",
+            "sources/objects/mauna/combat-craft-type-1-5/model.glb": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
+            "sources/objects/mauna/combat-craft-type-1-5/model.json": "292e5e5311ed916e2a0fe4fa7e46f8584b95d2cb02d4dbceb3a40be07a1c4368",
+            "sources/objects/terran/assault-fighter/model.glb": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+            "sources/objects/terran/combat-eagle/model.glb": "29bef70eaeb3f5f0845780c3ad0d090147e19a2b58c6e945f1e586ccce964677",
+            "sources/objects/terran/scoutship/model.glb": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/launch-area/visual-review.json",
+          "sha256": "e55ed32b22490b1da53db49a5f510797176f295842e24ea2cb5f470327459af6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/launch-area/visual-review.json",
+          "sha256": "e55ed32b22490b1da53db49a5f510797176f295842e24ea2cb5f470327459af6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/launch-area/visual-review.json",
+          "sha256": "e55ed32b22490b1da53db49a5f510797176f295842e24ea2cb5f470327459af6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/launch-area/visual-review.json",
+          "sha256": "e55ed32b22490b1da53db49a5f510797176f295842e24ea2cb5f470327459af6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/launch-area/runtime-review.json",
+          "sha256": "1fc45dbf6d310a41d2c388b59bab74575daabd15bd260d464697e513ec83c9b0",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "moving_assemblies": {
+          "report": "sources/objects/mauna/launch-area/visual-review.json",
+          "sha256": "e55ed32b22490b1da53db49a5f510797176f295842e24ea2cb5f470327459af6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

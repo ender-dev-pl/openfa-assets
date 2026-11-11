@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/138",
+  "binaries": {
+    "blend": "d86c8f8bc53ec6584b057fbaedeff2eb1cb864f2ddc7a73102f023b988f6d653",
+    "glb": "a56401153523cc7d31cb5abf32b2001ba654d6c76010c997b32f0a26bf38476b"
+  },
+  "runtime_report_sha256": "1fc45dbf6d310a41d2c388b59bab74575daabd15bd260d464697e513ec83c9b0",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 6.129253702069236e-05,
+      "margin": 43
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00016688918558077436,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00010036801605888258,
+      "margin": 43
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn09-review-1.png",
+      "sha256": "bcd923fb91c4145c5c471369d12e01fcfdb46a7324a6ebfbfa782465c6b05da8",
+      "prompt": "sources/docs/reconstruction/models/mn09-concept-prompt-1.txt",
+      "feedback": "Selected angular truncated-pad silhouette,roof cover with two red bands,three red wall zigzags,dark front vent,four brass cornerposts/slender braced pale mast. Paired downward-folding covers follow own source,not upward doors or sliders. Small open inset is artistic guidance only: hinge seating,leaf travel,shaft opening and aircraft clearance remain unverified until actual native/GLB authoring."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "51e702ce4510c32b75580019068d1e39b5bd36d284d25c357b417a0737c3bfae",
+        "glb": "18cb23a6c5b931e88660dd05c390d004d15b700157749e7572a28845baf0ed47"
+      },
+      "runtime_report_sha256": "bf7d726b07165a79e241f0bd30f5f0e6198cdec5536e68c80ba099ceff64906e",
+      "status": "render_presentation_revision_required",
+      "finding": "Actual native/imported closed and open whole/front/rear and both details viewed. Source/concept body/mast/fourposts/markings and attached downward mechanism retained.97integerposes and real ship clearance pass. Detail camera lacks the terrain holdout used in whole views,exposing underground maroon wall below the building. Add the same exact square cutout mask to detail renders,retain real source geometry and all strict guards.",
+      "limitations": [
+        "No client/state/performance or final user artistic acceptance."
+      ]
+    },
+    {
+      "pass_number": 2,
+      "stage": "actual_source_concept_glb_and_animation_review",
+      "binaries": {
+        "blend": "51e702ce4510c32b75580019068d1e39b5bd36d284d25c357b417a0737c3bfae",
+        "glb": "18cb23a6c5b931e88660dd05c390d004d15b700157749e7572a28845baf0ed47"
+      },
+      "runtime_report_sha256": "8d30dd7f0b771dd2d910883f9be9a4b7ff37639327a42d40d1074effdc5d1ab3",
+      "status": "source_mark_refinement_required",
+      "finding": "97native/import poses,ships and first97frame/25distinctpose GLB clip pass. Closed/open source/concept board shows two roof bands too narrow and three wall zigzags too short against the source. Widen only moving paint bands .055to.11 and scale zigzag height1.30;keep source mechanism/flight corridor. Detail terrain mask now correct.",
+      "limitations": [
+        "No final artistic/client acceptance;replace preview after actual new GLB render."
+      ]
+    },
+    {
+      "pass_number": 3,
+      "stage": "actual_source_concept_native_glb_and_encoded_animation_review",
+      "binaries": {
+        "blend": "158744027bb2fa63c717d5176ad7e33ea887a22608deabad139f2559d3f9dd3e",
+        "glb": "45d0da19e0b04a42e5f5adb87356e5e519cb004b2df10902e1d4d798d963db85"
+      },
+      "runtime_report_sha256": "0ff1e03e69c883688f63ba0e8de54359b07ce9878e0cdd26143cd6aa6641a88d",
+      "status": "accepted_asset_only",
+      "finding": "Final native/independent GLB closed/open whole/front/rear,both masked details,source/concept comparison,three actual scaled complete ship examples and decoded video keyposes viewed. Red bands/wall zigzags now retain source prominence. Both source-shaped halves fold DOWN on captive actual hinges without shell/plinth/shaft/opposite-leaf collisions in all97integerframes. Strict static parts/fields/backings/paint/lug/axle/bearing contacts,chips,root,texture pixels and actual surfaces/transforms agree. Final2228tri/17closedpositiveobjects/8materials/9maps. Measured actual open triangle envelope minimum radius.704 supports the three documented ship sizes at256headings. Encoded97frame clip has25distinct imported matrix poses and visible opening/hold/closure.",
+      "video_review": {
+        "video": "gallery/media/objects/mauna/launch-area/animation-00.webm",
+        "sha256": "bc1ae88d2f01bc20aa940caf708a2893169cff94e937e5d6e2905ffe5bc9004c",
+        "decoded_frames_viewed": [
+          0,
+          12,
+          24,
+          48,
+          72,
+          84,
+          96
+        ],
+        "frames": 97,
+        "distinct_imported_matrix_poses": 25,
+        "duration": "4.042000"
+      },
+      "limitations": [
+        "Hidden hinge engineering,lining/leaf interior surface colour,guide placement,shaft depth,blind depths and cell-relative proportions authored. Camera approximately matches source,not recovered calibration.",
+        "Own descriptors establish down-folding. Continuous four-second preview timing/90degree motion are authored;client maps altitude/source phase,holds open until clear,does not autoplay a gameplay clock.",
+        "Clearance certifies three listed canonical ship geometries at documented current world sizes,not arbitrary culture/fallback scales. Final user/client scale,terrain/state/materials/Android performance acceptance remains separate."
+      ]
+    },
+    {
+      "pass_number": 4,
+      "stage": "same_culture_clearance_correction",
+      "status": "revision_required",
+      "finding": "User clarification makes same-culture small craft the authoritative clearance reference. Existing Terran examples remain supplementary. Actual independent Mauna Type5 GLB fits proposal40, but installed fallback96 fails; Type1.5 proposal56 also fails. No ship has been silently rescaled and no geometry changed. MN09 is not delivered pending an explicit same-culture scale/production contract.",
+      "diagnostic": [
+        {
+          "model": "surveillance-craft-type-5",
+          "proposed_world_size": 40,
+          "horizontal_radius_per_world_size": 0.5364714957019628,
+          "maximum_world_size_with_radial_margin": 43.375219597978244,
+          "margin_at_proposed_size_world": 3.0281003882994924,
+          "fallback96_margin_world": -27.01430337101043
+        },
+        {
+          "model": "combat-craft-type-1-5",
+          "proposed_world_size": 56,
+          "horizontal_radius_per_world_size": 0.51329123677977,
+          "maximum_world_size_with_radial_margin": 45.33404676868154,
+          "margin_at_proposed_size_world": -4.257349043289114,
+          "fallback96_margin_world": -24.78899851447991
+        }
+      ],
+      "limitations": [
+        "World-size proposals40/56 are not installed game dimensions. Game source currently lacks Mauna world-size overrides and falls back to96.",
+        "The earlier pass03 acceptance establishes asset geometry/motion/material/source comparison only; its Terran clearance conclusion does not establish MN09 same-culture acceptance."
+      ]
+    },
+    {
+      "pass_number": 5,
+      "stage": "same_culture_final_native_glb_source_concept_and_video",
+      "status": "accepted_asset_only_at_explicit_scale_contract",
+      "binaries": {
+        "blend": "d86c8f8bc53ec6584b057fbaedeff2eb1cb864f2ddc7a73102f023b988f6d653",
+        "glb": "a56401153523cc7d31cb5abf32b2001ba654d6c76010c997b32f0a26bf38476b"
+      },
+      "runtime_report_sha256": "1fc45dbf6d310a41d2c388b59bab74575daabd15bd260d464697e513ec83c9b0",
+      "finding": "Final actual native/imported closed/open views,source composite,selected real concept,mast/hinge details,rear views,two canonical Mauna ship-at-mouth renders and seven decoded video poses inspected. Aperture1.61 retains source paired90degree DOWN mechanism and source silhouette/marks. All97native/import poses,strict contacts,positive closed surfaces,recesses/chips,texture pixel equality and surface transforms pass.2232triangles/17meshes/8materials/9maps. Same-culture Type5 proposal40 fits256headings with5.237world-unit square margin;Type1.5 proposal56 fits a45degree-aligned vertical corridor with1.406margin. Neither unconfigured96fallback is accepted. One canonical pair;no ship shrunk. This supersedes pass04asset-clearance rejection,without claiming game roster/scale integration.",
+      "clearance": {
+        "aperture_half_extent_authored": 0.805,
+        "minimum_actual_surface_radius": 0.7740000980929133,
+        "minimum_actual_square_half_extent": 0.7675000429153442,
+        "limiting_mesh": "Launch Area red moving roof band 1",
+        "ground_cell_world_units": 32,
+        "closed_bind_horizontal_span": 1.840000033378601,
+        "building_scale_world_per_local": 34.78260806467674,
+        "vertical_corridor": [
+          -1.25,
+          2.0
+        ],
+        "ships": [
+          {
+            "model": "sources/objects/mauna/surveillance-craft-type-5/model.glb",
+            "sha256": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
+            "world_size": 40,
+            "scale_source": "Authored asset proposal;not installed game scale",
+            "same_culture_authoritative": true,
+            "maximum_horizontal_radius_local": 0.6169422312489248,
+            "maximum_required_square_extent_local": 0.6169375193205954,
+            "minimum_radial_margin_local": 0.15705786684398848,
+            "minimum_square_margin_local": 0.15056252359474886,
+            "minimum_square_margin_world_units": 5.236957247424793,
+            "headings": 256,
+            "required_yaw_degrees": null,
+            "all_headings": true,
+            "maximum_world_size_with_safety_margin": 47.49265654791185,
+            "unconfigured_game_fallback_world_size": 96,
+            "unconfigured_fallback_fits": false
+          },
+          {
+            "model": "sources/objects/mauna/combat-craft-type-1-5/model.glb",
+            "sha256": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
+            "world_size": 56,
+            "scale_source": "Authored asset proposal;not installed game scale",
+            "same_culture_authoritative": true,
+            "maximum_horizontal_radius_local": 0.8263989062067552,
+            "maximum_required_square_extent_local": 0.7270744613967136,
+            "minimum_radial_margin_local": -0.0523988081138419,
+            "minimum_square_margin_local": 0.04042558151863063,
+            "minimum_square_margin_world_units": 1.4061071577491684,
+            "headings": 1,
+            "required_yaw_degrees": 45,
+            "all_headings": false,
+            "maximum_world_size_with_safety_margin": 56.4178836985412,
+            "unconfigured_game_fallback_world_size": 96,
+            "unconfigured_fallback_fits": false
+          },
+          {
+            "model": "sources/objects/terran/assault-fighter/model.glb",
+            "sha256": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+            "world_size": 30,
+            "scale_source": "Supplementary Terran package scale",
+            "same_culture_authoritative": false,
+            "maximum_horizontal_radius_local": 0.5489662546181254,
+            "maximum_required_square_extent_local": 0.5489530351446524,
+            "minimum_radial_margin_local": 0.22503384347478783,
+            "minimum_square_margin_local": 0.2185470077706918,
+            "minimum_square_margin_world_units": 7.601634914995834,
+            "headings": 256,
+            "required_yaw_degrees": null,
+            "all_headings": true,
+            "maximum_world_size_with_safety_margin": 40.0307492273356,
+            "unconfigured_game_fallback_world_size": null,
+            "unconfigured_fallback_fits": null
+          },
+          {
+            "model": "sources/objects/terran/combat-eagle/model.glb",
+            "sha256": "29bef70eaeb3f5f0845780c3ad0d090147e19a2b58c6e945f1e586ccce964677",
+            "world_size": 32,
+            "scale_source": "Supplementary Terran package scale",
+            "same_culture_authoritative": false,
+            "maximum_horizontal_radius_local": 0.6240325511759469,
+            "maximum_required_square_extent_local": 0.6240064730633734,
+            "minimum_radial_margin_local": 0.14996754691696634,
+            "minimum_square_margin_local": 0.14349356985197081,
+            "minimum_square_margin_world_units": 4.991080599962415,
+            "headings": 256,
+            "required_yaw_degrees": null,
+            "all_headings": true,
+            "maximum_world_size_with_safety_margin": 37.5637150977286,
+            "unconfigured_game_fallback_world_size": null,
+            "unconfigured_fallback_fits": null
+          },
+          {
+            "model": "sources/objects/terran/scoutship/model.glb",
+            "sha256": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+            "world_size": 28,
+            "scale_source": "Supplementary Terran package scale",
+            "same_culture_authoritative": false,
+            "maximum_horizontal_radius_local": 0.45823875676568665,
+            "maximum_required_square_extent_local": 0.45821450693271437,
+            "minimum_radial_margin_local": 0.3157613413272266,
+            "minimum_square_margin_local": 0.30928553598262987,
+            "minimum_square_margin_world_units": 10.757757578157289,
+            "headings": 256,
+            "required_yaw_degrees": null,
+            "all_headings": true,
+            "maximum_world_size_with_safety_margin": 44.760698082047824,
+            "unconfigured_game_fallback_world_size": null,
+            "unconfigured_fallback_fits": null
+          }
+        ],
+        "game_client_accepted": false,
+        "game_production_roster_verified": false,
+        "scale_limit": "Same-culture geometry at explicit asset proposals only. Game currently lacks Mauna size overrides and confirmed production recipes;fallback96 fails. Type1.5 requires45degree alignment before vertical transit."
+      },
+      "video_review": {
+        "video": "gallery/media/objects/mauna/launch-area/animation-00.webm",
+        "sha256": "599193985957776c34e4ab7699a5ad15da371656148c4b2afae38a11a12fabd7",
+        "glb_sha256": "a56401153523cc7d31cb5abf32b2001ba654d6c76010c997b32f0a26bf38476b",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 384,
+              "height": 384,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "97"
+            }
+          ],
+          "format": {
+            "duration": "4.042000"
+          }
+        },
+        "selected_frames": [
+          {
+            "index": 0,
+            "image": "decoded-01.png",
+            "sha256": "4c881914f3127bba21e028b2c17e71d2ad60683ddc556ad14bed448e1aac722d"
+          },
+          {
+            "index": 12,
+            "image": "decoded-02.png",
+            "sha256": "877d91c1418ec427018f02c1173e95ca9d2216687f058c4fdb165e9ea1275d8a"
+          },
+          {
+            "index": 24,
+            "image": "decoded-03.png",
+            "sha256": "767d0550c863002361f48f426a270535dd0acca4c80f8abfd495d02fc89a9bab"
+          },
+          {
+            "index": 48,
+            "image": "decoded-04.png",
+            "sha256": "7ae4917824e813a875a9954458d347b674ec513a8319b99d973eb94ae42fe36b"
+          },
+          {
+            "index": 72,
+            "image": "decoded-05.png",
+            "sha256": "7ae4917824e813a875a9954458d347b674ec513a8319b99d973eb94ae42fe36b"
+          },
+          {
+            "index": 84,
+            "image": "decoded-06.png",
+            "sha256": "b8ebfecff707b5504ba6b52e8f3f10fb48a70ae35fc166e8510fa007f650f262"
+          },
+          {
+            "index": 96,
+            "image": "decoded-07.png",
+            "sha256": "db31ed410a1bfb2d519065e74195fc016abc2cabb29de750706b38a27a8f71bf"
+          }
+        ],
+        "closed_to_open_channel_difference": 16.663533528645832,
+        "distinct_imported_matrix_poses": 25,
+        "visual_review": "Actually inspected seven decoded final video frames0/12/24/48/72/84/96:down-folding opening,hold and closure with fixed mast/body."
+      },
+      "limitations": [
+        "Mauna40/56 remain explicit asset world-size proposals,not installed game dimensions. Current game has no Mauna overrides and fallback96fails. Game worker confirms missing production recipe/mount metadata;playable ground/orbital roster remains unverified.",
+        "Type1.5 requires45degree alignment before descent/ascent and must hold orientation until fully clear;not an all-heading fit. Larger Mauna craft not certified. Terran rows supplementary only.",
+        "Opening widened1.47to1.61about9.5percent;hidden hinges,shaft engineering,contact dimensions,ground mask and continuous4second timing authored. Altitude/source phase must drive gameplay;hold open until craft clears.",
+        "Final user artistic acceptance,gameclient orientation/scale/state/terrain/materials/Android performance separate."
+      ]
+    }
+  ],
+  "final_review": "Final actual native/imported closed/open views,source composite,selected real concept,mast/hinge details,rear views,two canonical Mauna ship-at-mouth renders and seven decoded video poses inspected. Aperture1.61 retains source paired90degree DOWN mechanism and source silhouette/marks. All97native/import poses,strict contacts,positive closed surfaces,recesses/chips,texture pixel equality and surface transforms pass.2232triangles/17meshes/8materials/9maps. Same-culture Type5 proposal40 fits256headings with5.237world-unit square margin;Type1.5 proposal56 fits a45degree-aligned vertical corridor with1.406margin. Neither unconfigured96fallback is accepted. One canonical pair;no ship shrunk. This supersedes pass04asset-clearance rejection,without claiming game roster/scale integration.",
+  "limitations": [
+    "Mauna40/56 remain explicit asset world-size proposals,not installed game dimensions. Current game has no Mauna overrides and fallback96fails. Game worker confirms missing production recipe/mount metadata;playable ground/orbital roster remains unverified.",
+    "Type1.5 requires45degree alignment before descent/ascent and must hold orientation until fully clear;not an all-heading fit. Larger Mauna craft not certified. Terran rows supplementary only.",
+    "Opening widened1.47to1.61about9.5percent;hidden hinges,shaft engineering,contact dimensions,ground mask and continuous4second timing authored. Altitude/source phase must drive gameplay;hold open until craft clears.",
+    "Final user artistic acceptance,gameclient orientation/scale/state/terrain/materials/Android performance separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
