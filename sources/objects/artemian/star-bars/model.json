@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/121",
+  "key": "AR15",
+  "name": "Star Bars",
+  "culture": "artemian",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 3,
+  "construction_updates": 34,
+  "triangles": 20272,
+  "triangle_budget": 30000,
+  "mesh_nodes": 9,
+  "materials": 3,
+  "author": "sources/tools/blender/remaster_artemian_star_bars.py",
+  "author_sha256": "84a20ad523a01388e2b217c0fe00d29b2491cbb42b71431d2838f89fd75ed64c",
+  "binaries": {
+    "blend": "db0ec1095a04fa8290ec81e4e72afa6656de7b6c5150a39194ed8ab3b5cf216d",
+    "glb": "df2d8e178702d2e989bd0b3088a6094f7c576fc9775383c7494a664462bd5205"
+  },
+  "textures": {
+    "exposed-alloy-edge-colour.png": "685319b25cf4b7283be26d8f69b61974fe91841405bf952cf3e63acf096cefb0",
+    "muted-green-alloy-colour.png": "39398b6c8877a1ea09d54854b0ac2caac461961b5d81a64b106b18eaa833bd95",
+    "occlusion-roughness-metallic.png": "846bef79128e4feccd917cfce7f2f565192f9dae3800ff348970a15acc397964",
+    "used-metal-normal.png": "edb142b4766cae0cc86d868b903e082ab07b374b9ae3ffbb84f90ec412582d26"
+  },
+  "physical_dent": {
+    "point": [
+      -0.3199999928474426,
+      -0.2199999988079071,
+      0.9009017944335938
+    ],
+    "normal": [
+      -0.40572822093963623,
+      -0.28574612736701965,
+      0.8681784272193909
+    ]
+  },
+  "fixed_ports": [
+    {
+      "angle_deg": -57,
+      "point": [
+        0.42199575901031494,
+        -0.649816632270813,
+        0.28999999165534973
+      ],
+      "normal": [
+        0.4785449504852295,
+        -0.7557055950164795,
+        -0.4471059739589691
+      ]
+    },
+    {
+      "angle_deg": -31,
+      "point": [
+        0.6642874479293823,
+        -0.39914417266845703,
+        0.28999999165534973
+      ],
+      "normal": [
+        0.7557054162025452,
+        -0.47854483127593994,
+        -0.44710659980773926
+      ]
+    }
+  ],
+  "emitter": {
+    "origin": [
+      0.2199999988079071,
+      0.1599999964237213,
+      0.9100000262260437
+    ],
+    "direction": [
+      0.6396021842956543,
+      0.42640143632888794,
+      0.6396021842956543
+    ],
+    "length": 0.9,
+    "bore_floor": 0.82
+  },
+  "interpretation": [
+    "Own16sprite headings establish rotating head/stem/emitter above fixed bowl. GenericPB03/ST02Terran counterpart does not override Artemian geometry.",
+    "Blind emitter bore,sections,bearing and metric dimensions are authored. Four-second azimuth preview is not recovered game timing or client aiming logic."
+  ],
+  "scale_contract": "2x2 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar15-concept-review.json",
+  "animation_clips": [
+    "StarBarsAzimuth"
+  ],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

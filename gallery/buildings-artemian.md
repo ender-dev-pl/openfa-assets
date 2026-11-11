@@ -174,13 +174,15 @@ Additional views: [Front](../gallery/media/objects/artemian/arms-forge/front.png
 
 `openfa:building/legacy/121`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Star Bars](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar15/front-quarter.png)
+![Star Bars](../gallery/media/objects/artemian/star-bars/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar15/model.glb)
+[Blend](../sources/objects/artemian/star-bars/model.blend) · [GLB](../sources/objects/artemian/star-bars/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar15/animation-00.webm)
+Additional views: [Front](../gallery/media/objects/artemian/star-bars/front.png) · [Rear quarter](../gallery/media/objects/artemian/star-bars/rear-quarter.png) · [Emitter,stem and bearing](../gallery/media/objects/artemian/star-bars/emitter-stem-and-bearing-detail.png) · [Fixed bowl and paired points](../gallery/media/objects/artemian/star-bars/fixed-bowl-paired-points-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/star-bars/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/star-bars/concept-glb-comparison.jpg)
+
+[Play animation: StarBarsAzimuth](../gallery/media/objects/artemian/star-bars/animation-00.webm)
 
 ## Missile Launcher
 
