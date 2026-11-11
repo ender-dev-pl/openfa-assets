@@ -24,6 +24,15 @@ def snapshot():
     for z in [.13,.24,.36,.48]:
         hit=body['tree'].ray_cast(Vector((3,.20,z)),Vector((-1,0,0)))[0];assert hit;hits.append(hit.x)
     assert all(a-b>.035 for a,b in zip(hits,hits[1:])),'Nested physical shell shoulders'
+    source_body=bpy.data.objects[required[0]]
+    for face in source_body.data.polygons:
+        if face.center.y<-1.15 and face.center.z>.10:
+            assert source_body.data.materials[face.material_index].name=='Used Artemian blue-grey alloy','Front cap must not inherit exposed shoulder material stripes'
+    front_hits=[]
+    for i in range(13):
+        hit=body['tree'].ray_cast(Vector((0,-4,.18+i*.02)),Vector((0,1,0)))[0];assert hit;front_hits.append(hit.y)
+    increments=[b-a for a,b in zip(front_hits,front_hits[1:])]
+    assert min(increments)>.008 and max(abs(b-a) for a,b in zip(increments,increments[1:]))<.005,'Smooth continuously receding front cap,not three wrapped terrace shoulders'
     for i in range(2):
         post=result['SoftCore pale front fitting '+str(i)]['points'];cap=result['SoftCore amber fitting cap '+str(i)]['points'];assert max(p.z for p in cap)<.49 and min(p.x for p in post)>.35 and max(p.y for p in post)<-.90,'Modest front-right fittings'
         centre=sum(post,Vector())/len(post);assert body['tree'].find_nearest(centre)[3]<.13,'Fitting seated against actual shell'

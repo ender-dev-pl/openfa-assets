@@ -37,17 +37,34 @@ def main(root):
     alloy=material('Used Artemian blue-grey alloy',(.22,.28,.335),'blue-grey-alloy-colour');exposed=material('Worn exposed alloy edges',(.37,.43,.48),'exposed-alloy-edge-colour');dark=material('Dark recessed fittings',(.014,.019,.023),metal=.35,rough=.65);warm=material('Amber fitting caps',(.46,.22,.035),'amber-fitting-colour',emission=.12);redmat=material('Tiny red nose inset',(.46,.025,.012),'red-nose-inset-colour',emission=.15)
     def solid(name,vertices,faces,mat):
         mesh=bpy.data.meshes.new(name);mesh.from_pydata(vertices,[],faces);mesh.update();o=bpy.data.objects.new(name,mesh);bpy.context.collection.objects.link(o);o.data.materials.append(mat);return o
-    profile=[(.02,.72,1.67),(.065,.76,1.72),(.14,.75,1.70),(.16,.73,1.68),(.19,.675,1.61),(.26,.66,1.59),(.28,.64,1.56),(.31,.59,1.49),(.38,.58,1.47),(.40,.56,1.44),(.43,.51,1.37),(.50,.49,1.34),(.56,.39,1.18),(.60,.24,.88),(.615,.02,.10)];count=96;vertices=[];faces=[]
+    profile=[(.02,.72,1.67),(.065,.76,1.72),(.14,.75,1.70),(.16,.73,1.68),(.19,.675,1.61),(.26,.66,1.59),(.28,.64,1.56),(.31,.59,1.49),(.38,.58,1.47),(.40,.56,1.44),(.43,.51,1.37),(.50,.49,1.34),(.56,.39,1.18),(.60,.24,.88),(.615,.02,.10)]
+    # Preserve original stepped rear/flanks;the front cap is a smooth continuous
+    # section in actual legacy and the selected concept,not a wrap of terraces.
+    original_profile=profile;profile=[]
+    for left,right in zip(original_profile,original_profile[1:]):
+        for step in range(3):
+            t=step/3;profile.append(tuple(a+(b-a)*t for a,b in zip(left,right)))
+    profile.append(original_profile[-1])
+    smooth=[(.02,.72,1.67),(.065,.76,1.72),(.31,.59,1.49),(.50,.49,1.34),(.56,.39,1.18),(.60,.24,.88),(.615,.02,.10)]
+    def cap_radius(z,column):
+        knots=[p[0] for p in smooth];values=[p[column] for p in smooth];secants=[(b-a)/(y-x) for x,y,a,b in zip(knots,knots[1:],values,values[1:])];tangents=[secants[0]]
+        for i in range(1,len(knots)-1):
+            a,b=secants[i-1],secants[i];h0=knots[i]-knots[i-1];h1=knots[i+1]-knots[i]
+            tangents.append(0 if a*b<=0 else 3*(h0+h1)/((2*h1+h0)/a+(h1+2*h0)/b))
+        tangents.append(secants[-1]);j=next((i for i in range(len(knots)-1) if z<=knots[i+1]),len(knots)-2);h=knots[j+1]-knots[j];t=(z-knots[j])/h
+        return (2*t**3-3*t*t+1)*values[j]+(t**3-2*t*t+t)*h*tangents[j]+(-2*t**3+3*t*t)*values[j+1]+(t**3-t*t)*h*tangents[j+1]
+    count=96;vertices=[];faces=[]
     for j,(z,rx,ry) in enumerate(profile):
         for i in range(count):
             a=i*math.tau/count;c=math.cos(a);s=math.sin(a);x=rx*c;y=ry*s
+            weight=max(0,min(1,(-y-.85)/.30));weight=weight*weight*(3-2*weight);x+=(cap_radius(z,1)*c-x)*weight;y+=(cap_radius(z,2)*s-y)*weight
             dent=.0018*math.sin(7*a+z*21)*math.sin(math.pi*max(0,min(1,z/.62)));vertices.append((x*(1-dent),y*(1-dent),z))
     for j in range(len(profile)-1):
         for i in range(count):faces.append((j*count+i,j*count+(i+1)%count,(j+1)*count+(i+1)%count,(j+1)*count+i))
     faces += [tuple(reversed(range(count))),tuple((len(profile)-1)*count+i for i in range(count))]
     body=solid('SoftCore continuous stepped metal carapace',vertices,faces,alloy);body.data.materials.append(exposed);body.data.materials.append(dark)
     for polygon in body.data.polygons:
-        if any(abs(polygon.center.z-z)<.008 for z in [.15,.27,.39]):polygon.material_index=1
+        if polygon.center.y>-.90 and any(abs(polygon.center.z-z)<.008 for z in [.15,.27,.39]):polygon.material_index=1
     bpy.context.view_layer.objects.active=body;mod=body.modifiers.new('Stable shell faces before small seam','TRIANGULATE');bpy.ops.object.modifier_apply(modifier=mod.name)
     # Source cap seam follows an actual section of the authored shell.
     points=[];origin=Vector((0,-.95,.20));bpy.context.view_layer.update()
@@ -110,7 +127,7 @@ def main(root):
     try:bpy.ops.export_scene.gltf(filepath=str(out/'model.glb'),export_format='GLB',export_yup=True,export_animations=False,export_extras=True)
     finally:tempfile.mkdtemp=old
     bpy.ops.wm.save_as_mainfile(filepath=str(out/'model.blend'),compress=True);blend=out/'model.blend';blend.write_bytes(clean_blend(blend.read_bytes())[0])
-    metadata=dict(schema_version=1,issue=260,id='openfa:building/legacy/107',key='AR01',name='SoftCore',culture='artemian',footprint=[4,4],definition_class=20,construction_updates=40,triangles=triangles,triangle_budget=30000,mesh_nodes=len(meshes),materials=5,author='sources/tools/blender/remaster_artemian_softcore.py',author_sha256=sha(Path(__file__)),binaries=dict(blend=sha(blend),glb=sha(out/'model.glb')),textures={p.name:sha(p) for p in sorted(maps.glob('*.png'))},interpretation=['Low elongated stepped metal shell,two unequal pale amber-capped front fittings,tiny red/dark nose details and two dark roof features follow actual source and reviewed concept.','Sparse front-cap seam,metal wear,hidden sections and engineering interpreted. No operation/opening clip inferred from catalogue reveal.'],scale_contract='4x4 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.',concept_review='sources/docs/reconstruction/models/ar01-concept-review.json',animation_clips=[],game_client_integration=False,final_user_artistic_acceptance=False)
+    metadata=dict(schema_version=1,issue=260,id='openfa:building/legacy/107',key='AR01',name='SoftCore',culture='artemian',footprint=[4,4],definition_class=20,construction_updates=40,triangles=triangles,triangle_budget=30000,mesh_nodes=len(meshes),materials=5,author='sources/tools/blender/remaster_artemian_softcore.py',author_sha256=sha(Path(__file__)),binaries=dict(blend=sha(blend),glb=sha(out/'model.glb')),textures={p.name:sha(p) for p in sorted(maps.glob('*.png'))},interpretation=['Low elongated stepped rear/flanks with smooth unbroken front cap,two unequal pale amber-capped front fittings,tiny red/dark nose details and two dark roof features follow actual source and reviewed concept.','User correction removes front terraces while preserving rear/flank shoulders. Sparse front-cap seam,metal wear,hidden sections and engineering interpreted. No operation/opening clip inferred from catalogue reveal.'],scale_contract='4x4 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.',concept_review='sources/docs/reconstruction/models/ar01-concept-review.json',animation_clips=[],game_client_integration=False,final_user_artistic_acceptance=False)
     (out/'model.json').write_text(json.dumps(metadata,indent=2)+'\n',encoding='utf-8');print('ARTEMIAN_SOFTCORE_AUTHORED',triangles,len(meshes),len(created),flush=True)
 
 
