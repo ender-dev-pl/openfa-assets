@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/117",
+  "binaries": {
+    "blend": "6dcf98decb434f993bbd7f3812b350b6ca9c169c1e8c672fc96549cd7d847770",
+    "glb": "ab2c9fb499c5cc069503f4dc771f34b277e6e196b937aaa5cb089d3d4198c67c"
+  },
+  "runtime_report_sha256": "b14b602f235270af182d7def4971396c3f62bcafcde0346ded081b3e39681940",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 6.257822277847309e-05,
+      "margin": 78
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 9.255567579882667e-05,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 2.8080422329551836e-05,
+      "margin": 82
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar11-review-1.png",
+      "sha256": "7c25f246a032f0def0464d39f62888f68970f148602c0734f56b2707884809f6",
+      "prompt": "sources/docs/reconstruction/models/ar11-concept-prompt-1.txt",
+      "feedback": "Selected low elongated slate-blue wedge with integrated longitudinal ribbing,three brass capped front stubs and three small amber roof points in dark seats. Source controls arrangement;rib sections and hidden converter engineering remain interpreted."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "f816391ea137d8c6502d1dae162c4b698bea56e6ae4679e20697651b7ad5f35c",
+        "glb": "c6a6c11651a6e338ab0d803e4112b3ea038fe5b3a88357945f4d7a2aa9f161db"
+      },
+      "runtime_report_sha256": "417d069479e5a04b041cd6648e49f4132bfd4d633a76a86c1ef63aaad01b32fe",
+      "status": "revision_required",
+      "finding": "Actual source/concept/import comparison and roof/fixture detail renders show four integral roof crests too shallow and visually faceted. Lower tapered front,rounded rising rear,three front capped stubs and three small roof points are recognizable, but rib definition is weaker than actual legacy and concept.",
+      "action": "Increase integral roof deformation from .020 to .055 and angular loft sampling128 to256,within30000triangle budget. Rebuild both canonical binaries and rerun full actual native/imported runtime and render feedback."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "6dcf98decb434f993bbd7f3812b350b6ca9c169c1e8c672fc96549cd7d847770",
+        "glb": "ab2c9fb499c5cc069503f4dc771f34b277e6e196b937aaa5cb089d3d4198c67c"
+      },
+      "runtime_report_sha256": "b14b602f235270af182d7def4971396c3f62bcafcde0346ded081b3e39681940",
+      "status": "agent_review_accepted",
+      "finding": "Actual final whole legacy/concept/import board,front/rear renders and both fixture/rib details inspected. Increased integral deformation .055 and256angular samples make four longitudinal ribs clear and remove coarse first-pass facets. Low elongated dark slate-blue wedge,rising rounded rear,three squat brass capped stubs and three small amber roof points retained. Fine mapped scratches/stains,three physical chips and shallow dent preserve readable hard alloy. All13native/imported meshes closed positive,five decoded maps equal,surfaceerror1.4901161193847656e-8. Actual source-specific proportions,four crest rays,and all fixture interior contacts pass. Frozen original pair hashes confirmed unchanged.",
+      "action": "Accept asset-only source/concept/native/imported GLB review. Hidden engineering,rib/fixture sections and metric dimensions remain authored or unknown. Narrative gravity-nullifier/runtime asteroid-engine distinction retained;generic PB22/PB12/ST10 context does not establish AR11 motion. Client scale/state/shaders,Android performance and final user artistic acceptance separate."
+    }
+  ],
+  "final_review": "Actual source/concept/imported GLB comparison retains low elongated slate-blue wedge,rising rounded rear,four integral longitudinal rib crests,three brass capped front stubs and three small amber roof points in dark seats. Actual cap/body,stem/cap,roof seat/body and amber/seat overlaps checked;native/imported closed positive surfaces and decoded textures agree;whole/front/rear/detail renders inspected.",
+  "limitations": [
+    "Exact hidden converter engineering,rib/fixture sections and metric dimensions remain authored or unknown.",
+    "Narrative gravity-nullifier and runtime class22 asteroid-engine are separate evidence;generic PB22/PB12 spheres/ST10 technical diagrams do not override own anatomy or establish AR11 motion.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -126,11 +126,13 @@ Additional views: [Front](../gallery/media/objects/artemian/deep-probes/front.pn
 
 `openfa:building/legacy/117`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Gravitic Converter](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar11/front-quarter.png)
+![Gravitic Converter](../gallery/media/objects/artemian/gravitic-converter/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar11/model.glb)
+[Blend](../sources/objects/artemian/gravitic-converter/model.blend) · [GLB](../sources/objects/artemian/gravitic-converter/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/gravitic-converter/front.png) · [Rear quarter](../gallery/media/objects/artemian/gravitic-converter/rear-quarter.png) · [Three brass stubs and small roof points](../gallery/media/objects/artemian/gravitic-converter/three-brass-stubs-and-roof-points-detail.png) · [Integral longitudinal ribs](../gallery/media/objects/artemian/gravitic-converter/integrated-longitudinal-ribs-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/gravitic-converter/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/gravitic-converter/concept-glb-comparison.jpg)
 
 ## Shielded Solars
 
