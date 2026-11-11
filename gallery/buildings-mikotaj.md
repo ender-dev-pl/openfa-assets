@@ -114,11 +114,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/mask/front.png) · [R
 
 `openfa:building/legacy/095`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Structures Matrix](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk10/front-quarter.png)
+![Structures Matrix](../gallery/media/objects/mikotaj/structures-matrix/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk10/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk10/model.glb)
+[Blend](../sources/objects/mikotaj/structures-matrix/model.blend) · [GLB](../sources/objects/mikotaj/structures-matrix/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/structures-matrix/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/structures-matrix/rear-quarter.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/structures-matrix/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/structures-matrix/concept-glb-comparison.jpg)
 
 ## Volition
 
