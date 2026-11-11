@@ -126,19 +126,15 @@ Additional views: [Front](../gallery/media/objects/mikotaj/structures-matrix/fro
 
 `openfa:building/legacy/096`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Volition](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk11/front-quarter.png)
+![Volition](../gallery/media/objects/mikotaj/volition/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk11/model.glb)
+[Blend](../sources/objects/mikotaj/volition/model.blend) · [GLB](../sources/objects/mikotaj/volition/model.glb)
 
-**Additional iteration — verified-launch-mechanism**
+Additional views: [Front](../gallery/media/objects/mikotaj/volition/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/volition/rear-quarter.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/volition/technical-wireframe.png) · [Spiral fully open](../gallery/media/objects/mikotaj/volition/state-open.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/volition/concept-glb-comparison.jpg)
 
-![Volition](../gallery/media/docs/assets/reconstruction/launch-facilities/mikotaj/mk11/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk11/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk11/model.glb)
-
-[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/mikotaj/mk11/animation-00.webm)
+[Play animation: LaunchFacilityCycle](../gallery/media/objects/mikotaj/volition/animation-00.webm)
 
 ## Visibility
 

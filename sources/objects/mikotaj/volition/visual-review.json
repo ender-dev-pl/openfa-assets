@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/096",
+  "binaries": {
+    "blend": "0865686dbe8a6adc07b6595cc26c072735dda4a7ca07698c2ba13eabd7b1bd76",
+    "glb": "b5ee366ea8d15a14b954b7144c4fdb27017452efd27c024e4aa9500ac1595276"
+  },
+  "runtime_report_sha256": "24017b91af1dc23b5eb83abd7f0fcc036f00d4899e2386782368e9300514b4de",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0051660516605166054,
+      "margin": 65
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.003997817955112219,
+      "margin": 45
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00473790217379961,
+      "margin": 61
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk11-review-1.png",
+      "sha256": "f85bcd32feb62b6b6e95c612a3b55044171253acfd0ecd4219de77574737bce5",
+      "prompt": "sources/docs/reconstruction/models/mk11-concept-prompt-1.txt",
+      "feedback": "Selected for closed-state morphology: asymmetric mineral support, open negative space, dark front cone and gold spiral over a pale bowl. Concept rigid-ring reading is superseded by actual sprites and the user-confirmed original upward-winding/disappearing spiral."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "stage": "First native render; imported pass stopped at direct-parent assertion for a skinned mesh, not a complete GLB review.",
+      "discrepancies": [
+        "Cone too smooth and dark, lacking original mineral relief.",
+        "Golden ribbon has repeated block-like texture bands."
+      ],
+      "corrections": [
+        "Authored dark mineral colour/normal map and genuine geometric erosion.",
+        "Continuous longitudinal ribbon UVs and quieter gold variation.",
+        "Require every imported mesh to descend from placement root; glTF importer legitimately parents skinned mesh through its rig."
+      ]
+    },
+    {
+      "stage": "Complete saved-native/import GLB pass and state renders.",
+      "discrepancy": "Open bowl had a shallow filled light bottom; original and confirmed launch audit require an empty upper ring/throat.",
+      "correction": "Replace cap-ended bowl with a genuinely closed annular cross-section around an open central throat, darken inner walls and add a ray test through centre."
+    },
+    {
+      "stage": "Second complete native/import pass.",
+      "discrepancy": "The curved supports capped endpoint intrudes visibly into one side of the newly open throat.",
+      "correction": "Seat the upper arch end under the left outer bowl wall, and sample the clear aperture against every fixed mesh rather than only the bowl."
+    }
+  ],
+  "final_review": "Actual independent GLB retains asymmetric open mineral support, dark front cone with blue inclusions, hollow upper bowl and golden upward-winding spiral. Feedback corrected smooth dark cone, repeated ribbon UVs filled bowl and protruding support endpoint. Actual seven native/import animated states match. Original user-confirmed winding/disappearance overrides rigid-ring reading of the concept.",
+  "limitations": [
+    "Exact profiles, hidden routing, ribbon material and continuous timing are authored from raster evidence.",
+    "One skinned ribbon mesh has96bones. Hidden segments stow as tiny nonzero pieces inside the opaque base; no recovered physical engineering claimed.",
+    "Final user artistic acceptance, client state/scale/skin/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

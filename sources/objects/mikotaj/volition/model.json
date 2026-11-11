@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/096",
+  "key": "MK11",
+  "name": "Volition",
+  "culture": "mikotaj",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 26,
+  "construction_updates": 18,
+  "triangles": 20112,
+  "triangle_budget": 30000,
+  "mesh_nodes": 10,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mikotaj_volition.py",
+  "author_sha256": "fc3d27d5ca10745d29d6a138419e4679952fa5b6f04f00209982e4dc8bfbd422",
+  "binaries": {
+    "blend": "0865686dbe8a6adc07b6595cc26c072735dda4a7ca07698c2ba13eabd7b1bd76",
+    "glb": "b5ee366ea8d15a14b954b7144c4fdb27017452efd27c024e4aa9500ac1595276"
+  },
+  "textures": {
+    "brass-base-colour.png": "828b550340a45b3825cb0954187f07e63b651ae0ec1bc408659973c5d78deab4",
+    "dark-mineral-base-colour.png": "1d5d8365a1f80e3f52741ee6b4112860035982cf2435d595a8ce85b6f2a2fbcf",
+    "exposed-ridge-base-colour.png": "0f4293c8523c34c7962104bd4e75cb4fe6b9f2d4ba960d02cdf1bd24bfa05c1e",
+    "mineral-base-colour.png": "2abfc5853a2408f244873c8c0279f4a49989f68c0c93069f3c423b16568d841b",
+    "mineral-fracture-normal.png": "fe6a125f441cae24c82cc412afc8503bc2dc0f57441f95b40ae49de9450b6ed8",
+    "occlusion-roughness-metallic.png": "71d9b6dce7f69ad2b9ea4528b97a5ac0c3fa73d21ed3727d5eb44df679b2c410",
+    "pale-blue-lens-colour.png": "90de1594ac7fe10d9ecf49edac770feb20c04d05989e5de9ffad4cfb3a724413"
+  },
+  "interpretation": [
+    "Open asymmetric mineral support, exposed dark cone and gold spiral follow original sprites and closed-state concept.",
+    "Original/user-confirmed spiral winds upward and disappears; hidden routing, exact material and continuous timing are authored. One skinned ribbon mesh, no invented mechanical lid."
+  ],
+  "scale_contract": "2x2 placement footprint, local +Z up/-Y front. Native dimensions are authored cell-relative proportions; no metric legacy height or calibrated game scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/mk11-concept-review.json",
+  "animation_clips": [
+    "LaunchFacilityCycle"
+  ],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}
