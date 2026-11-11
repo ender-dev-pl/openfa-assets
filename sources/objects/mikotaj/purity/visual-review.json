@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/088",
+  "binaries": {
+    "blend": "bfc115ba159140b87882a87f002471e121ea2b80d868ff977a655dd2018650ed",
+    "glb": "effd984979f1edb08ade5db07f42bf483060606c21fb8212608b9330d891a335"
+  },
+  "runtime_report_sha256": "6d6204f453ac0ff6843b2038683fd43d776249b5220f06d811a42457dbacceec",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.001386530843237125,
+      "margin": 55
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0018728378861982585,
+      "margin": 44
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0008675402949637003,
+      "margin": 57
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk03-review-1.png",
+      "sha256": "274169d41dbb01130e7adf2f3d3e9976ca2dd557dd0da6dad9c4ff43dd7c799e",
+      "prompt": "sources/docs/reconstruction/models/mk03-concept-prompt-1.txt",
+      "feedback": "Selected: single tall ore-like wedge, broad left lower buttress, one upper pale blue lens, two lower pale blue lenses and three diagonal red slits of increasing length. Detailed slit seating, lens mounts and mineral relief are artistic additions; retain the original mass in GLB."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "verdict": "refine-before-delivery",
+      "source_model_sha256": "7fa0ed581bf9d8a533dcd99711dc4b0cbdba8d3f54d7f2dc39a3bb905b7ae37c",
+      "issues": [
+        "Initial mass and marker counts follow the original, but red bars read applied rather than inset: author actual shallow slot recesses.",
+        "Add sparse irregular mineral ridges and improve blue lens shading; retain the single crown, low left buttress, and original colour layout. No regular panel grid."
+      ]
+    }
+  ],
+  "final_review": "Final independent GLB keeps the original single pointed wedge, broad low left buttress, one upper blue lens, two lower blue lenses and three diagonal red slits increasing downwards. Actual feedback added shallow cut recesses, sparse irregular ore ridges and improved lens shading. The model retains broad source planes rather than every generated concept crevice.",
+  "limitations": [
+    "Exact cross-sections, underside, hidden rear closure and detailed mineral relief are authored.",
+    "Red slit physical purpose is not recovered. Static catalogue information reveal does not establish an operating cycle.",
+    "No metric source height, calibrated game scale/state, Android performance or final user artistic acceptance claimed."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false,
+  "technical_render_note": "Exact canonical mesh edge coordinates rendered as thin curves, avoiding wireframe-offset miter spikes on slender inset triangles; no alternate model geometry."
+}

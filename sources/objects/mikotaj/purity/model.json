@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/088",
+  "key": "MK03",
+  "name": "Purity",
+  "culture": "mikotaj",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 5,
+  "construction_updates": 52,
+  "triangles": 11442,
+  "triangle_budget": 30000,
+  "mesh_nodes": 27,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mikotaj_purity.py",
+  "author_sha256": "f5a438d2ed2d483844f5550113fd9b84c8fd3bb6244e4db0c50e75c88870796a",
+  "binaries": {
+    "blend": "bfc115ba159140b87882a87f002471e121ea2b80d868ff977a655dd2018650ed",
+    "glb": "effd984979f1edb08ade5db07f42bf483060606c21fb8212608b9330d891a335"
+  },
+  "textures": {
+    "exposed-ridge-base-colour.png": "22330937b10399dcfbcf32a3e885cecf4adc56927407ede3ea4e56273621ea46",
+    "mineral-base-colour.png": "414bf3e4d60ac30da8449c86edeb68e51d3db694612d11c0729b357a39923c1f",
+    "mineral-fracture-normal.png": "a43a8d215c6eceae5abcce47a5aa870e2f0b8a81d469f040c68f4edf98519ab7",
+    "occlusion-roughness-metallic.png": "27a1274a3d681c160d92e6703f23fc6e862fdfd8b6fcee78cbe140a8ea44ee66"
+  },
+  "interpretation": [
+    "Single pointed mineral-alloy mass, low left buttress, one upper blue lens, two lower blue lenses and three diagonal red slits follow legacy; precise sections, inset engineering and rear closure are authored.",
+    "No operational motion inferred from catalogue information reveal. Blue emitters are material emission, not an invented gameplay effect."
+  ],
+  "scale_contract": "2x2 placement footprint, local +Z up/-Y front. Native dimensions are authored cell-relative proportions; no metric legacy height or calibrated game scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/mk02-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

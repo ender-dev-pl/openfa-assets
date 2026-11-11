@@ -30,11 +30,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/stability/front.png) 
 
 `openfa:building/legacy/088`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Purity](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk03/front-quarter.png)
+![Purity](../gallery/media/objects/mikotaj/purity/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk03/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk03/model.glb)
+[Blend](../sources/objects/mikotaj/purity/model.blend) · [GLB](../sources/objects/mikotaj/purity/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/purity/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/purity/rear-quarter.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/purity/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/purity/concept-glb-comparison.jpg)
 
 ## Fulfilment
 

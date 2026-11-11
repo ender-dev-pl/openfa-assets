@@ -1,0 +1,9 @@
+# MK03 Purity
+
+Canonical Mikotaj environmental/radiation-control building: `model.blend` and `model.glb`, identity `openfa:building/legacy/088`, openfa-assets #259. Original _B/MK03.256 body1, _ZOOM/MK03.256 detail1 and all41 catalogue updates establish one pointed asymmetric mineral mass, a broad low left buttress, one upper pale-blue lens, two lower pale-blue lenses and three diagonal red slits on the right facet. Their precise physical purpose remains unknown.
+
+Original function text describes environmental quality and radiation influencing Mikotaj thought-patterns, not a breathing mechanism. Mining architecture is heavy metallic ore-like focusing equipment for abstract entities. All36 research identities were surveyed; no dedicated Purity/environment-control subject was found. Unrelated research geometry is not substituted. The catalogue sequence is an information reveal, not an operating animation.
+
+Actual built-in ImageGen attempt1 and its exact prompt are recorded in `mk03-concept-review.json`. Native/import render feedback corrected applied-looking bars into shallow physical recesses and added sparse exposed mineral ridges and smoother blue lenses. Broad source planes and marker counts take priority over generated microcrevices. Precise profiles, inset engineering, rear closure and irregular wear are authored. Source-bound runtime and visual feedback are in the adjacent JSON reports; the wireframe uses this canonical geometry.
+
+Placement:2x2 cells, +Z up/-Y front. Legacy class5, construction52updates; no source metric height or calibrated game scale is inferred. Actual triangle/material/texture counts and hashes are in `model.json`. Static body, no operational clips. One current source pair shared across gameplay/build/SciTek; previous source remains historical. Final user artistic acceptance, client/package integration, emission/normal treatment and Android performance remain separate.
