@@ -31278,7 +31278,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/146",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           1007
         ]
@@ -31352,21 +31352,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn17/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/advanced-extraction-unit/model.blend",
           "present": true,
-          "sha256": "68e3caf634fe7ebe507717c84f29f0c39390aca80a9ba62c8a26773d25dca7c7",
-          "final_visual_acceptance": "not-established"
+          "sha256": "f79ffe5494c010bbcadde62eab6ec77ed44a1024b39429a91117922a9a7be71a",
+          "media": "gallery/media/objects/mauna/advanced-extraction-unit",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/advanced-extraction-unit/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/advanced-extraction-unit/rear-quarter.png"
+            },
+            {
+              "label": "Inclined red crown, two brass posts and four points",
+              "image": "gallery/media/objects/mauna/advanced-extraction-unit/inclined-red-crown-two-brass-posts-and-four-points-detail.png"
+            },
+            {
+              "label": "Two ducts, front points and stacked end fields",
+              "image": "gallery/media/objects/mauna/advanced-extraction-unit/two-roof-ducts-front-points-and-stacked-end-fields-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/advanced-extraction-unit/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/advanced-extraction-unit/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -31396,6 +31423,89 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 146
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn17/model.blend",
+          "present": true,
+          "sha256": "68e3caf634fe7ebe507717c84f29f0c39390aca80a9ba62c8a26773d25dca7c7",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/advanced-extraction-unit/model.blend",
+        "sha256": "f79ffe5494c010bbcadde62eab6ec77ed44a1024b39429a91117922a9a7be71a",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/advanced-extraction-unit",
+          "verifier": "sources/tools/blender/verify_mauna_advanced_extraction_unit.py",
+          "files": {
+            "sources/objects/mauna/advanced-extraction-unit/integration-contract.json": "fcf593e9b02037cb50f3cf3f2260fddb85ba93ff8992ee7cfdccb2ea5bbec24f",
+            "sources/objects/mauna/advanced-extraction-unit/model.blend": "f79ffe5494c010bbcadde62eab6ec77ed44a1024b39429a91117922a9a7be71a",
+            "sources/objects/mauna/advanced-extraction-unit/model.glb": "1b2853898fb7b2d4036a544e98aaffb686b130459e3e0a5876f87aac068869bc",
+            "sources/objects/mauna/advanced-extraction-unit/model.json": "e6037e5aa8337f897af9c9f29be60c6f8f0a98090b0472323e43610997753905",
+            "sources/objects/mauna/advanced-extraction-unit/README.md": "8972ea0924c234e7ce1d913257bcc4748660cd4015e7e078b8708f570e75b519",
+            "sources/objects/mauna/advanced-extraction-unit/runtime-review.json": "e753dfa6968b14cf666de83e86513e034f7a9bc59a46a461746c4c4b024b3351",
+            "sources/objects/mauna/advanced-extraction-unit/visual-review.json": "082f1f7445fcaade8f653de8309f39f279f0f9df6542fe0fd616b0dcabc1ad52",
+            "gallery/media/objects/mauna/advanced-extraction-unit/concept-glb-comparison.jpg": "11ce52416288c178a8b2a574b636714a39d5345e1cdc0096c2a1c33d84320b4e",
+            "gallery/media/objects/mauna/advanced-extraction-unit/front-quarter.png": "3ce68abc1beb174d3cf753fc64697d1faa35ee030159454e4291af0a36e4705c",
+            "gallery/media/objects/mauna/advanced-extraction-unit/front.png": "856f9b7bc454f7d165df02f92e2bc70cd52b654a37173a486101a7384e1af4f3",
+            "gallery/media/objects/mauna/advanced-extraction-unit/imported-front-quarter.png": "3ce68abc1beb174d3cf753fc64697d1faa35ee030159454e4291af0a36e4705c",
+            "gallery/media/objects/mauna/advanced-extraction-unit/imported-front.png": "856f9b7bc454f7d165df02f92e2bc70cd52b654a37173a486101a7384e1af4f3",
+            "gallery/media/objects/mauna/advanced-extraction-unit/imported-rear-quarter.png": "fef4dcb523470897f26737599402b467d9bb093d2b1ff0737f09eae426084707",
+            "gallery/media/objects/mauna/advanced-extraction-unit/inclined-red-crown-two-brass-posts-and-four-points-detail.png": "fc8a363cc67767d58d6c0c6145a734832710a83857f7ac66504476ce606fb59d",
+            "gallery/media/objects/mauna/advanced-extraction-unit/native-front-quarter.png": "cbe08fbd42caf4d2e458505036fb2cb49514f0ae819c3eceb19b71110ffa76ab",
+            "gallery/media/objects/mauna/advanced-extraction-unit/native-front.png": "a76ee77d4f4031421841910dfbc92bc7fb52d3eaac719e40601b451ccf1d8b4b",
+            "gallery/media/objects/mauna/advanced-extraction-unit/native-rear-quarter.png": "010475a68c4353a3e5571ad9bf6bf64d2ab9daf5c10b5fb2c11961fb26adf688",
+            "gallery/media/objects/mauna/advanced-extraction-unit/rear-quarter.png": "fef4dcb523470897f26737599402b467d9bb093d2b1ff0737f09eae426084707",
+            "gallery/media/objects/mauna/advanced-extraction-unit/technical-wireframe.png": "f1d5f854b1e2c5d20d50ad446dc25d1cd9cae8140dbf4d2fb3aa84c037186ba5",
+            "gallery/media/objects/mauna/advanced-extraction-unit/two-roof-ducts-front-points-and-stacked-end-fields-detail.png": "f16a64d920bd72f832c9e95abbfa88c0ca8ca74763d943a280603e94c5569666",
+            "sources/materials/mauna/advanced-extraction-unit/brass-colour.png": "fe7fec543108296bc532652b4e493d59efc13d3c475946f642f82c676adaec4f",
+            "sources/materials/mauna/advanced-extraction-unit/cast-concrete-colour.png": "8142af513b29c9359cd5a6ae70fe108f1a5526d5dbd501d1f87e84b2966efa1f",
+            "sources/materials/mauna/advanced-extraction-unit/cast-service-normal.png": "2e30185b2134e22a6ddec2736e99d658dfc4faaa3702923c244e2b3b805fc5f9",
+            "sources/materials/mauna/advanced-extraction-unit/concrete-orm.png": "4a128b8214a4f8ec1573fa4a074268ba2c9be59abee7d51b9266a46a2a4bb60a",
+            "sources/materials/mauna/advanced-extraction-unit/marking-red-colour.png": "3ab1a07aaf42b4f0e9b7421c6d0e30b8f2ee78aa30e3f7592ae1e72424428654",
+            "sources/materials/mauna/advanced-extraction-unit/metal-orm.png": "2066ecb8121713526f4116a16d045096371dbf27ea1db523891042c790ec2afc",
+            "sources/materials/mauna/advanced-extraction-unit/pale-alloy-colour.png": "4f81aae9b40d6f0f3228785657542984727acca5947daa78362356ccb35304ec",
+            "sources/tools/blender/remaster_mauna_advanced_extraction_unit.py": "cdbc09a33d2564e0cf131a7c0ef8f59ea47213496430cf89a4a5476cc4852c43",
+            "sources/tools/blender/verify_mauna_advanced_extraction_unit.py": "51635776f1104cf7f5668296975769fdbd97cdbd5cd237c9b9cf3b44fa48a2b5",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn17-concept-review.json": "b147eae07422fc762f62314dcbca7d4b6ea26506628723ed4a3a102ea1c84fb3",
+            "sources/docs/reconstruction/models/mn17-concept-prompt-1.txt": "a86b3703bfd239f7e8f9accf706653a0553886865e8de96d80226858c872e86b",
+            "gallery/media/concepts/mauna/mn17-review-1.png": "c3298299ade8d9b10717042688631b70eb6d5df6b8a36686b27c5e95c4c89cac"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/advanced-extraction-unit/visual-review.json",
+          "sha256": "082f1f7445fcaade8f653de8309f39f279f0f9df6542fe0fd616b0dcabc1ad52",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/advanced-extraction-unit/visual-review.json",
+          "sha256": "082f1f7445fcaade8f653de8309f39f279f0f9df6542fe0fd616b0dcabc1ad52",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/advanced-extraction-unit/visual-review.json",
+          "sha256": "082f1f7445fcaade8f653de8309f39f279f0f9df6542fe0fd616b0dcabc1ad52",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/advanced-extraction-unit/visual-review.json",
+          "sha256": "082f1f7445fcaade8f653de8309f39f279f0f9df6542fe0fd616b0dcabc1ad52",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/advanced-extraction-unit/runtime-review.json",
+          "sha256": "e753dfa6968b14cf666de83e86513e034f7a9bc59a46a461746c4c4b024b3351",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

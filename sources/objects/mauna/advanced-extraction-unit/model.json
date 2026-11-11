@@ -1,0 +1,540 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/146",
+  "key": "MN17",
+  "name": "Advanced Extraction Unit",
+  "culture": "mauna",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 13,
+  "construction_updates": 38,
+  "triangles": 1536,
+  "triangle_budget": 30000,
+  "mesh_nodes": 12,
+  "materials": 6,
+  "author": "sources/tools/blender/remaster_mauna_advanced_extraction_unit.py",
+  "author_sha256": "cdbc09a33d2564e0cf131a7c0ef8f59ea47213496430cf89a4a5476cc4852c43",
+  "binaries": {
+    "blend": "f79ffe5494c010bbcadde62eab6ec77ed44a1024b39429a91117922a9a7be71a",
+    "glb": "1b2853898fb7b2d4036a544e98aaffb686b130459e3e0a5876f87aac068869bc"
+  },
+  "textures": {
+    "brass-colour.png": "fe7fec543108296bc532652b4e493d59efc13d3c475946f642f82c676adaec4f",
+    "cast-concrete-colour.png": "8142af513b29c9359cd5a6ae70fe108f1a5526d5dbd501d1f87e84b2966efa1f",
+    "cast-service-normal.png": "2e30185b2134e22a6ddec2736e99d658dfc4faaa3702923c244e2b3b805fc5f9",
+    "concrete-orm.png": "4a128b8214a4f8ec1573fa4a074268ba2c9be59abee7d51b9266a46a2a4bb60a",
+    "marking-red-colour.png": "3ab1a07aaf42b4f0e9b7421c6d0e30b8f2ee78aa30e3f7592ae1e72424428654",
+    "metal-orm.png": "2066ecb8121713526f4116a16d045096371dbf27ea1db523891042c790ec2afc",
+    "pale-alloy-colour.png": "4f81aae9b40d6f0f3228785657542984727acca5947daa78362356ccb35304ec"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Extraction Unit tall dark front field",
+      "body": "Extraction Unit high continuous inclined block",
+      "point": [
+        -0.6899999976158142,
+        -0.6399999856948853,
+        0.800000011920929
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.033
+    },
+    {
+      "object": "Extraction Unit low dark front field",
+      "body": "Extraction Unit low projecting body",
+      "point": [
+        0.5299999713897705,
+        -0.6399999856948853,
+        0.3100000023841858
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.033
+    },
+    {
+      "object": "Extraction Unit pale square end panel 0",
+      "body": "Extraction Unit low projecting body",
+      "point": [
+        1.25,
+        0.05000000074505806,
+        0.2199999988079071
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.033
+    },
+    {
+      "object": "Extraction Unit pale square end panel 1",
+      "body": "Extraction Unit low projecting body",
+      "point": [
+        1.25,
+        0.05000000074505806,
+        0.5099999904632568
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.033
+    },
+    {
+      "object": "Extraction Unit dark duct end 0",
+      "body": "Extraction Unit long low roof duct 0",
+      "point": [
+        1.100000023841858,
+        -0.3400000035762787,
+        0.7850000262260437
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.018,
+      "contact_depth": 0.026
+    },
+    {
+      "object": "Extraction Unit dark duct end 1",
+      "body": "Extraction Unit long low roof duct 1",
+      "point": [
+        1.100000023841858,
+        0.3400000035762787,
+        0.7850000262260437
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.018,
+      "contact_depth": 0.026
+    }
+  ],
+  "attachment_contacts": [
+    {
+      "object": "Extraction Unit high continuous inclined block",
+      "support": "Extraction Unit grounded foot",
+      "point": [
+        -0.7,
+        0,
+        0.04
+      ]
+    },
+    {
+      "object": "Extraction Unit low projecting body",
+      "support": "Extraction Unit grounded foot",
+      "point": [
+        0.5,
+        0,
+        0.04
+      ]
+    },
+    {
+      "object": "Extraction Unit sloping front tower foot",
+      "support": "Extraction Unit grounded foot",
+      "point": [
+        -0.7,
+        -0.75,
+        0.04
+      ]
+    },
+    {
+      "object": "Extraction Unit sloping front tower foot",
+      "support": "Extraction Unit high continuous inclined block",
+      "point": [
+        -0.7,
+        -0.63,
+        0.2
+      ]
+    },
+    {
+      "object": "Extraction Unit low projecting body",
+      "support": "Extraction Unit high continuous inclined block",
+      "point": [
+        -0.17,
+        0,
+        0.35
+      ]
+    },
+    {
+      "object": "Extraction Unit long low roof duct 0",
+      "support": "Extraction Unit low projecting body",
+      "point": [
+        0.5,
+        -0.34,
+        0.69
+      ]
+    },
+    {
+      "object": "Extraction Unit long low roof duct 0",
+      "support": "Extraction Unit high continuous inclined block",
+      "point": [
+        -0.18,
+        -0.34,
+        0.9
+      ]
+    },
+    {
+      "object": "Extraction Unit long low roof duct 1",
+      "support": "Extraction Unit low projecting body",
+      "point": [
+        0.5,
+        0.34,
+        0.69
+      ]
+    },
+    {
+      "object": "Extraction Unit long low roof duct 1",
+      "support": "Extraction Unit high continuous inclined block",
+      "point": [
+        -0.18,
+        0.34,
+        0.9
+      ]
+    },
+    {
+      "object": "Extraction Unit continuous red inclined crown hook",
+      "support": "Extraction Unit high continuous inclined block",
+      "point": [
+        -1.04,
+        0,
+        1.582
+      ]
+    },
+    {
+      "object": "Extraction Unit continuous red inclined crown hook",
+      "support": "Extraction Unit high continuous inclined block",
+      "point": [
+        -0.6,
+        -0.25,
+        1.478484375
+      ]
+    },
+    {
+      "object": "Extraction Unit continuous red inclined crown hook",
+      "support": "Extraction Unit high continuous inclined block",
+      "point": [
+        -0.28,
+        -0.45,
+        1.3956718750000001
+      ]
+    },
+    {
+      "object": "Extraction Unit red front downstroke 0",
+      "support": "Extraction Unit high continuous inclined block",
+      "point": [
+        -1.1300000000000001,
+        -0.639,
+        0.8
+      ]
+    },
+    {
+      "object": "Extraction Unit red front downstroke 1",
+      "support": "Extraction Unit high continuous inclined block",
+      "point": [
+        -0.25,
+        -0.639,
+        0.8
+      ]
+    },
+    {
+      "object": "Extraction Unit red sloping foot stripe",
+      "support": "Extraction Unit sloping front tower foot",
+      "point": [
+        -1.06,
+        -0.75,
+        0.274
+      ]
+    },
+    {
+      "object": "Extraction Unit low brass post seating plinth",
+      "support": "Extraction Unit high continuous inclined block",
+      "point": [
+        -0.5,
+        0.35,
+        1.719921875
+      ]
+    },
+    {
+      "object": "Extraction Unit unequal brass upright 0",
+      "support": "Extraction Unit low brass post seating plinth",
+      "point": [
+        -0.65,
+        0.36,
+        1.806
+      ]
+    },
+    {
+      "object": "Extraction Unit unequal brass upright 1",
+      "support": "Extraction Unit low brass post seating plinth",
+      "point": [
+        -0.32,
+        0.36,
+        1.806
+      ]
+    },
+    {
+      "object": "Extraction Unit pale end structural rib",
+      "support": "Extraction Unit low projecting body",
+      "point": [
+        1.245,
+        0.49,
+        0.35
+      ]
+    },
+    {
+      "object": "Extraction Unit tall warm point 0",
+      "support": "Extraction Unit tall dark front field",
+      "point": [
+        -1.0,
+        -0.6169999837875366,
+        0.9900000095367432
+      ]
+    },
+    {
+      "object": "Extraction Unit tall warm point 1",
+      "support": "Extraction Unit tall dark front field",
+      "point": [
+        -0.800000011920929,
+        -0.6169999837875366,
+        0.9900000095367432
+      ]
+    },
+    {
+      "object": "Extraction Unit tall warm point 2",
+      "support": "Extraction Unit tall dark front field",
+      "point": [
+        -0.6000000238418579,
+        -0.6169999837875366,
+        0.9900000095367432
+      ]
+    },
+    {
+      "object": "Extraction Unit tall warm point 3",
+      "support": "Extraction Unit tall dark front field",
+      "point": [
+        -0.4000000059604645,
+        -0.6169999837875366,
+        0.9900000095367432
+      ]
+    },
+    {
+      "object": "Extraction Unit lower warm point 0",
+      "support": "Extraction Unit low dark front field",
+      "point": [
+        0.18000000715255737,
+        -0.6169999837875366,
+        0.3100000023841858
+      ]
+    },
+    {
+      "object": "Extraction Unit lower warm point 1",
+      "support": "Extraction Unit low dark front field",
+      "point": [
+        0.5299999713897705,
+        -0.6169999837875366,
+        0.3100000023841858
+      ]
+    },
+    {
+      "object": "Extraction Unit lower warm point 2",
+      "support": "Extraction Unit low dark front field",
+      "point": [
+        0.8799999952316284,
+        -0.6169999837875366,
+        0.3100000023841858
+      ]
+    },
+    {
+      "object": "Extraction Unit duct warm point 0",
+      "support": "Extraction Unit dark duct end 0",
+      "point": [
+        1.0839999914169312,
+        -0.3400000035762787,
+        0.7850000262260437
+      ]
+    },
+    {
+      "object": "Extraction Unit duct warm point 1",
+      "support": "Extraction Unit dark duct end 1",
+      "point": [
+        1.0839999914169312,
+        0.3400000035762787,
+        0.7850000262260437
+      ]
+    }
+  ],
+  "part_batches": {
+    "Extraction Unit pale square end panel 0": "Extraction Unit three pale end assemblies",
+    "Extraction Unit pale square end panel 1": "Extraction Unit three pale end assemblies",
+    "Extraction Unit pale end structural rib": "Extraction Unit three pale end assemblies",
+    "Extraction Unit unequal brass upright 0": "Extraction Unit two unequal brass posts",
+    "Extraction Unit unequal brass upright 1": "Extraction Unit two unequal brass posts",
+    "Extraction Unit continuous red inclined crown hook": "Extraction Unit four continuous red assemblies",
+    "Extraction Unit red front downstroke 0": "Extraction Unit four continuous red assemblies",
+    "Extraction Unit red front downstroke 1": "Extraction Unit four continuous red assemblies",
+    "Extraction Unit red sloping foot stripe": "Extraction Unit four continuous red assemblies",
+    "Extraction Unit tall warm point 0": "Extraction Unit nine opaque warm source points",
+    "Extraction Unit tall warm point 1": "Extraction Unit nine opaque warm source points",
+    "Extraction Unit tall warm point 2": "Extraction Unit nine opaque warm source points",
+    "Extraction Unit tall warm point 3": "Extraction Unit nine opaque warm source points",
+    "Extraction Unit lower warm point 0": "Extraction Unit nine opaque warm source points",
+    "Extraction Unit lower warm point 1": "Extraction Unit nine opaque warm source points",
+    "Extraction Unit lower warm point 2": "Extraction Unit nine opaque warm source points",
+    "Extraction Unit duct warm point 0": "Extraction Unit nine opaque warm source points",
+    "Extraction Unit duct warm point 1": "Extraction Unit nine opaque warm source points",
+    "Extraction Unit tall dark front field": "Extraction Unit four dark blind backings",
+    "Extraction Unit low dark front field": "Extraction Unit four dark blind backings",
+    "Extraction Unit dark duct end 0": "Extraction Unit four dark blind backings",
+    "Extraction Unit dark duct end 1": "Extraction Unit four dark blind backings"
+  },
+  "physical_chips": [
+    {
+      "body": "Extraction Unit high continuous inclined block",
+      "point": [
+        -1.2200000286102295,
+        0.10000000149011612,
+        0.550000011920929
+      ],
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "body": "Extraction Unit grounded foot",
+      "point": [
+        0.7300000190734863,
+        -0.8399999737739563,
+        0.02500000037252903
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ],
+  "warm_points": [
+    {
+      "object": "Extraction Unit tall warm point 0",
+      "centre": [
+        -1.0,
+        -0.621999979019165,
+        0.9900000095367432
+      ],
+      "group": "tall-front"
+    },
+    {
+      "object": "Extraction Unit tall warm point 1",
+      "centre": [
+        -0.800000011920929,
+        -0.621999979019165,
+        0.9900000095367432
+      ],
+      "group": "tall-front"
+    },
+    {
+      "object": "Extraction Unit tall warm point 2",
+      "centre": [
+        -0.6000000238418579,
+        -0.621999979019165,
+        0.9900000095367432
+      ],
+      "group": "tall-front"
+    },
+    {
+      "object": "Extraction Unit tall warm point 3",
+      "centre": [
+        -0.4000000059604645,
+        -0.621999979019165,
+        0.9900000095367432
+      ],
+      "group": "tall-front"
+    },
+    {
+      "object": "Extraction Unit lower warm point 0",
+      "centre": [
+        0.18000000715255737,
+        -0.621999979019165,
+        0.3100000023841858
+      ],
+      "group": "low-front"
+    },
+    {
+      "object": "Extraction Unit lower warm point 1",
+      "centre": [
+        0.5299999713897705,
+        -0.621999979019165,
+        0.3100000023841858
+      ],
+      "group": "low-front"
+    },
+    {
+      "object": "Extraction Unit lower warm point 2",
+      "centre": [
+        0.8799999952316284,
+        -0.621999979019165,
+        0.3100000023841858
+      ],
+      "group": "low-front"
+    },
+    {
+      "object": "Extraction Unit duct warm point 0",
+      "centre": [
+        1.0889999866485596,
+        -0.3400000035762787,
+        0.7850000262260437
+      ],
+      "group": "duct-end"
+    },
+    {
+      "object": "Extraction Unit duct warm point 1",
+      "centre": [
+        1.0889999866485596,
+        0.3400000035762787,
+        0.7850000262260437
+      ],
+      "group": "duct-end"
+    }
+  ],
+  "steady_point_emission": {
+    "colour": [
+      0.7,
+      0.43,
+      0.1
+    ],
+    "strength": 0.35,
+    "opaque": true,
+    "point_count": 9,
+    "scope": "Authored steady source-colour point appearance; no recovered pulse or client bloom guarantee."
+  },
+  "interpretation": [
+    "Own high inclined greyblue block, hooked red band, two unequal brass posts, low projecting body, two parallel low ducts, stacked pale end fields and warm point groups govern anatomy.",
+    "Hidden engineering, exact depths and cell-relative dimensions are authored. Generic Terran PB13/ST01 deep-drill machinery/rotation is context, not own Mauna operation."
+  ],
+  "scale_contract": "3x3 placement footprint, ground0, +Z up/-Y front. Native dimensions are authored; no recovered metric or calibrated client scale.",
+  "concept_review": "sources/docs/reconstruction/models/mn17-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

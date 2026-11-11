@@ -204,11 +204,13 @@ Additional views: [Front](../gallery/media/objects/mauna/screening-pods/front.pn
 
 `openfa:building/legacy/146`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Advanced Extraction Unit](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn17/front-quarter.png)
+![Advanced Extraction Unit](../gallery/media/objects/mauna/advanced-extraction-unit/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn17/model.glb)
+[Blend](../sources/objects/mauna/advanced-extraction-unit/model.blend) · [GLB](../sources/objects/mauna/advanced-extraction-unit/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/advanced-extraction-unit/front.png) · [Rear quarter](../gallery/media/objects/mauna/advanced-extraction-unit/rear-quarter.png) · [Inclined red crown, two brass posts and four points](../gallery/media/objects/mauna/advanced-extraction-unit/inclined-red-crown-two-brass-posts-and-four-points-detail.png) · [Two ducts, front points and stacked end fields](../gallery/media/objects/mauna/advanced-extraction-unit/two-roof-ducts-front-points-and-stacked-end-fields-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/advanced-extraction-unit/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/advanced-extraction-unit/concept-glb-comparison.jpg)
 
 ## Superior Extraction Unit
 
