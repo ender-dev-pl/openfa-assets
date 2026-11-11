@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/094",
+  "binaries": {
+    "blend": "cdf9036c26cdc7a1b8e96522127006417cfa76508001eea3e66e2b78e346020e",
+    "glb": "1b47d2ccd1304bda1669642057ed512b30917203d507f0e9de9de43a48c90fa7"
+  },
+  "runtime_report_sha256": "9ca087b3d9fd6f4ea189e570fce2edce05290443b52a71009d2385e792a629fc",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0027596439169139467,
+      "margin": 71
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0034752747252747252,
+      "margin": 49
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.001827511070499754,
+      "margin": 64
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk09-review-1.png",
+      "sha256": "58f826a9bb884de03e920bf71fdc8aaa53d164062eee644d4d15a4ff24ffebce",
+      "prompt": "sources/docs/reconstruction/models/mk09-concept-prompt-1.txt",
+      "feedback": "Selected: asymmetric mineral mass, brass front S and right return, exactly three unequal blue insets and one lower red terminal. Concept conduit is thicker than original; GLB must keep a slender seated line. Exact route/socket engineering and microrelief authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "verdict": "broaden-asymmetric-mineral-mass",
+      "source_model_sha256": "88adb062cfa8fc242f4544532c872780995363100a683a3179d4a4fe5a99f298",
+      "issues": [
+        "Three blue nodes, lower red terminal and thin S conduit are correctly placed.",
+        "Body is too narrow and regular versus source: widen it, strengthen right shoulder/asymmetric summit.",
+        "Add restrained dirty-red material variation so the terminal is worn hardware rather than a clean flat UI button."
+      ]
+    }
+  ],
+  "final_review": "Final independent GLB retains the broad asymmetric ore mass, three unequal blue insets, one lower red terminal and thin seated brass S conduit with a right shoulder return segment. Actual feedback widens the mass, strengthens the right shoulder and varies the red terminal material. The thinner conduit follows legacy over the heavier concept pipe.",
+  "limitations": [
+    "Exact sections, socket details, conduit material/joints and hidden routing are authored; no robot production mechanism is visible in original references.",
+    "Portable worn materials, sparse chips and broken veins are authored rather than copied from legacy pixels. Not every concept microcrevice is represented.",
+    "No source metric height, calibrated client scale/state, Android performance or final user artistic acceptance claimed."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

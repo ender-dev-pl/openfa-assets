@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/094",
+  "key": "MK09",
+  "name": "Mask",
+  "culture": "mikotaj",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 255,
+  "construction_updates": 80,
+  "triangles": 22636,
+  "triangle_budget": 30000,
+  "mesh_nodes": 21,
+  "materials": 6,
+  "author": "sources/tools/blender/remaster_mikotaj_mask.py",
+  "author_sha256": "b32f085354c5a63269eb05de43d9805be82bd0be40bf002c332506eb0999564b",
+  "binaries": {
+    "blend": "cdf9036c26cdc7a1b8e96522127006417cfa76508001eea3e66e2b78e346020e",
+    "glb": "1b47d2ccd1304bda1669642057ed512b30917203d507f0e9de9de43a48c90fa7"
+  },
+  "textures": {
+    "brass-base-colour.png": "c47cf39f29b6299fb46470fbd0c6086f67ea8ee332c9a799834a4d8688a18a8c",
+    "exposed-ridge-base-colour.png": "3519a79040995b8bd6d3fab81308a5f71621a48b681c5130de896b6acc3ee3f9",
+    "mineral-base-colour.png": "f40f8a4f7dc70d6c2e38ae260e11efc715103b364766a4e0d5e7201949f1d6e2",
+    "mineral-fracture-normal.png": "e5e8353646904a5624b411a86ddd208e185f9bf44b967598a33b6de109983c23",
+    "occlusion-roughness-metallic.png": "5b728de5aed1ddd8e19687db08504a58afba8c971583d3c2bdd3aede369c1c83",
+    "pale-blue-lens-colour.png": "d3d611e0e4fc1a911c4b1de2373253c66649deb499d40e951174df9746eb4e3a",
+    "red-terminal-colour.png": "14eb305b61d1e51b6d35214de71412e83e1443d94c454ee87fe995c6b0feda3b"
+  },
+  "interpretation": [
+    "Asymmetric mineral mound, three unequal blue insets, one lower red terminal and brass S conduit with right return follow legacy; exact sections, sockets and hidden routing authored.",
+    "Automated persona-robot construction is original lore; no unobserved robots, production mechanism or operating cycle is invented."
+  ],
+  "scale_contract": "2x2 placement footprint, local +Z up/-Y front. Native dimensions are authored cell-relative proportions; no metric legacy height or calibrated game scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/mk09-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

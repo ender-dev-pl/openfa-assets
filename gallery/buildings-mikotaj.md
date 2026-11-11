@@ -102,11 +102,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/fa-lanth/front.png) �
 
 `openfa:building/legacy/094`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Mask](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk09/front-quarter.png)
+![Mask](../gallery/media/objects/mikotaj/mask/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk09/model.glb)
+[Blend](../sources/objects/mikotaj/mask/model.blend) · [GLB](../sources/objects/mikotaj/mask/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/mask/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/mask/rear-quarter.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/mask/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/mask/concept-glb-comparison.jpg)
 
 ## Structures Matrix
 
