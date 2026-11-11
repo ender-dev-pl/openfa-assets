@@ -24222,7 +24222,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/118",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           979
         ]
@@ -24296,21 +24296,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar12/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/shielded-solars/model.blend",
           "present": true,
-          "sha256": "2dc1db4852a5e221acab5ea8897c8418704036371c87eb2f3e140b8160a5441c",
-          "final_visual_acceptance": "not-established"
+          "sha256": "70557208751695d538cbf95f6f12b6946b8cecbe3546aebcbbf5cf1013b6fe35",
+          "media": "gallery/media/objects/artemian/shielded-solars",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/shielded-solars/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/shielded-solars/rear-quarter.png"
+            },
+            {
+              "label": "Front collector faces",
+              "image": "gallery/media/objects/artemian/shielded-solars/front-collector-detail.png"
+            },
+            {
+              "label": "Side collectors and mast",
+              "image": "gallery/media/objects/artemian/shielded-solars/side-collectors-and-mast-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/shielded-solars/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/shielded-solars/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -24340,6 +24367,86 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 118
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar12/model.blend",
+          "present": true,
+          "sha256": "2dc1db4852a5e221acab5ea8897c8418704036371c87eb2f3e140b8160a5441c",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/shielded-solars/model.blend",
+        "sha256": "70557208751695d538cbf95f6f12b6946b8cecbe3546aebcbbf5cf1013b6fe35",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/shielded-solars",
+          "verifier": "sources/tools/blender/verify_artemian_shielded_solars.py",
+          "files": {
+            "sources/objects/artemian/shielded-solars/model.blend": "70557208751695d538cbf95f6f12b6946b8cecbe3546aebcbbf5cf1013b6fe35",
+            "sources/objects/artemian/shielded-solars/model.glb": "127dbadf35afde82d7992681d9d2f46878ca8734c2820502e316bef198eafc24",
+            "sources/objects/artemian/shielded-solars/model.json": "481ab5119457d5b7c929397bc7b6428f01004e82cfaece949ba2506da6104686",
+            "sources/objects/artemian/shielded-solars/README.md": "83610aea2adac920a9675d24231ee7cb74ab55f60f9af5ab939caaff3977afe8",
+            "sources/objects/artemian/shielded-solars/runtime-review.json": "72fb4a260912ad1fafffa3904a0d4bc6241b8c0d71e1e9038fa8c20de0b1941d",
+            "sources/objects/artemian/shielded-solars/visual-review.json": "a16fc5df445273fce5bcf28af31a749aa2773d1152e1b43e4f393b8288af5309",
+            "gallery/media/objects/artemian/shielded-solars/concept-glb-comparison.jpg": "a32a57581a9e065354f4bc01166d864a4baf338708fd1e20635ecb2370af66b4",
+            "gallery/media/objects/artemian/shielded-solars/front-collector-detail.png": "b2f850c16e20a33db0f4223106acfc86c527a1d9b9aa073e997cdfde68039312",
+            "gallery/media/objects/artemian/shielded-solars/front-quarter.png": "7bd26a2282f38b2f7d780a123dc0606c89184a698ec58687e04677d68a9592c4",
+            "gallery/media/objects/artemian/shielded-solars/front.png": "674d89a910710389430921e0292dfd9fecd207315dcbfbf4cd5287e0af7501dc",
+            "gallery/media/objects/artemian/shielded-solars/imported-front-quarter.png": "7bd26a2282f38b2f7d780a123dc0606c89184a698ec58687e04677d68a9592c4",
+            "gallery/media/objects/artemian/shielded-solars/imported-front.png": "674d89a910710389430921e0292dfd9fecd207315dcbfbf4cd5287e0af7501dc",
+            "gallery/media/objects/artemian/shielded-solars/imported-rear-quarter.png": "24a3fa4728221c2823dcb158402007149c0264f0cee20a501d8fc245acbfe931",
+            "gallery/media/objects/artemian/shielded-solars/native-front-quarter.png": "59f140c70c22902b9c006bee4bd68a20130b06391ff6b79846112347f926f2bd",
+            "gallery/media/objects/artemian/shielded-solars/native-front.png": "b738cba34adf7fe6bece822a90a1deb6a0004a2f412122152ecbf586df8c5add",
+            "gallery/media/objects/artemian/shielded-solars/native-rear-quarter.png": "850008bbb1e05ba7460482ff2ee37b7f7a209365e0b24b4ced0ca0292b46df21",
+            "gallery/media/objects/artemian/shielded-solars/rear-quarter.png": "24a3fa4728221c2823dcb158402007149c0264f0cee20a501d8fc245acbfe931",
+            "gallery/media/objects/artemian/shielded-solars/side-collectors-and-mast-detail.png": "53a201732264efd0ab4b70e447b37625b7328e8272a6360f9d238e29cd040a2b",
+            "gallery/media/objects/artemian/shielded-solars/technical-wireframe.png": "0100c6e88ee3e309bc511b2d594df1e8ce30bb0f4d845066e8dc60c9596fd8eb",
+            "sources/materials/artemian/shielded-solars/exposed-alloy-edge-colour.png": "a3ff9820d2e4a43c5464d56642165924771af3b29dc75c4b3b3509bb1ef2d86a",
+            "sources/materials/artemian/shielded-solars/green-alloy-colour.png": "876afa1a08bd1116a4f159b28b52c87c08f04af4650f36abd0e7ab523fedc85c",
+            "sources/materials/artemian/shielded-solars/occlusion-roughness-metallic.png": "3e464fb93e576797cc3710f5725fc54a4bccf24617b782516a33faa1d8bfa48b",
+            "sources/materials/artemian/shielded-solars/pale-cyan-collector-colour.png": "d590dc8dc13d7655538c8b45beb03fd75013dc173997ef73c142e02927405931",
+            "sources/materials/artemian/shielded-solars/used-metal-normal.png": "86d80218a97b46179964efbd5ecca37fd793e37a54bb2c0eb6dc71ad3d851ffb",
+            "sources/tools/blender/remaster_artemian_shielded_solars.py": "4ec6cfb5142eb94b69aae53ae79d9d7468200258300d011476bf2f840d779b0d",
+            "sources/tools/blender/verify_artemian_shielded_solars.py": "2959e8f8a840c8c431c75c1844514a970396f8dcf4e1db41b99f25bc2e02ee3a",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar12-concept-review.json": "392dcba00c5d5d4630a8105ec600695775dd90da29534b9434bdfdd110bdca93",
+            "sources/docs/reconstruction/models/ar12-concept-prompt-1.txt": "8545fb07e9b3c9164ec9eb52171b84748b5646a2bb00b0c7ff26419a3e9c2d11",
+            "gallery/media/concepts/artemian/ar12-review-1.png": "352189ce37a69dde90abedabd19a92abef4e65f44c4c7be35a52a4c2745df680"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/shielded-solars/visual-review.json",
+          "sha256": "a16fc5df445273fce5bcf28af31a749aa2773d1152e1b43e4f393b8288af5309",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/shielded-solars/visual-review.json",
+          "sha256": "a16fc5df445273fce5bcf28af31a749aa2773d1152e1b43e4f393b8288af5309",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/shielded-solars/visual-review.json",
+          "sha256": "a16fc5df445273fce5bcf28af31a749aa2773d1152e1b43e4f393b8288af5309",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/shielded-solars/visual-review.json",
+          "sha256": "a16fc5df445273fce5bcf28af31a749aa2773d1152e1b43e4f393b8288af5309",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/shielded-solars/runtime-review.json",
+          "sha256": "72fb4a260912ad1fafffa3904a0d4bc6241b8c0d71e1e9038fa8c20de0b1941d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

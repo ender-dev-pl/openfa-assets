@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/118",
+  "binaries": {
+    "blend": "70557208751695d538cbf95f6f12b6946b8cecbe3546aebcbbf5cf1013b6fe35",
+    "glb": "127dbadf35afde82d7992681d9d2f46878ca8734c2820502e316bef198eafc24"
+  },
+  "runtime_report_sha256": "72fb4a260912ad1fafffa3904a0d4bc6241b8c0d71e1e9038fa8c20de0b1941d",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0006347325660121868,
+      "margin": 43
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0009033613445378151,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 9.897070467141726e-05,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar12-review-1.png",
+      "sha256": "352189ce37a69dde90abedabd19a92abef4e65f44c4c7be35a52a4c2745df680",
+      "prompt": "sources/docs/reconstruction/models/ar12-concept-prompt-1.txt",
+      "feedback": "Selected slender green upright shell,two large pale elongated hexagonal front collectors,one smaller mid-left round spot,two tiny lower-front spots,three slim side collectors and short top mast. Source governs proportions/placement;hidden solar engineering and collector sections remain authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "4a283f4125a559ffdbd7f92dd5ad0734d9004b65ede70d307f1298d790148683",
+        "glb": "33a37dbe9463de2b1bc506042606bae5d0dcc5f4030ad4b9e0cd365371f12509"
+      },
+      "runtime_report_sha256": "4ea37264aaa8d365a0f8336e55a28a6301b967af190ba3dcc61ae7d356236a5e",
+      "status": "revision_required",
+      "finding": "Actual native quarter render retains source anatomy but large front faces have overly angular hex corners and broad S-like metallic reflections,unlike pale smooth protective faces in original/concept. Actual full native/import check11708tri/18closedmeshes/5equaldecodedmaps,error0 passed.",
+      "action": "Round main collector outlines,soften shell edge radius,and give pale faces lower metalness/constant roughness with subtle wear. Keep source feature counts/positions and source-specific contact guards."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "d74aa39c50e9abe9f58830b9e170834cf118c362caff76593aded95064f588bc",
+        "glb": "f953750f7a2435985371006f06ea5df3b7c975b81a77f8606f8ada9906acfd51"
+      },
+      "runtime_report_sha256": "da4c4979014ca2247c0832cc35f24c92e702ae4bdff2e802ff0ec1e46218a88d",
+      "status": "revision_required",
+      "finding": "Actual second native quarter shows smoother collector outlines and removes broad Smetal reflections;full native/import13244tri/18positiveclosed/5equalmaps/error0 pass. Casing remains darker green than source/concept. Code audit finds sampled-vertex dent too weak because broad casing has no vertices near target;do not claim a meaningful dent from intent alone.",
+      "action": "Slightly lighten green alloy and replace weak dent code with one actual shallow spherical Boolean dent outside collector faces,then assert real front ray recess and rerender."
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "93195ac0889eed8b831785c8299ef6bb94dd18cf850d1b567c3e35cbcc643e9f",
+        "glb": "3846c6ed62203917beba47ee1251b9d29d93a683ebde564d15c589629e440a5b"
+      },
+      "runtime_report_sha256": "fa197f42a26c1453fae9270370c0162a63d4f4f795689bbfd65464cc5c9a52c9",
+      "status": "revision_required",
+      "finding": "Actual whole legacy/concept/import comparison and front/side/rear details viewed. Palette and wear improved,real dent verified;13290tri/18closedmeshes/5equalmaps/error0. Actual comparison still shows a flatter rectangular top than source/concept and collector faces standing too proud like buttons. Source top shoulder slopes more strongly,faces sit closer to shell.",
+      "action": "Lower left roof shoulder while retaining right high corner,root mast into corrected roof,and reduce front/side collector stand-off. Keep counts/layout;rerun source-specific overlap and full native/import render evidence."
+    },
+    {
+      "pass_number": 4,
+      "binaries": {
+        "blend": "70557208751695d538cbf95f6f12b6946b8cecbe3546aebcbbf5cf1013b6fe35",
+        "glb": "127dbadf35afde82d7992681d9d2f46878ca8734c2820502e316bef198eafc24"
+      },
+      "runtime_report_sha256": "72fb4a260912ad1fafffa3904a0d4bc6241b8c0d71e1e9038fa8c20de0b1941d",
+      "status": "agent_review_accepted",
+      "finding": "Actual final original/concept/import board,front/rear and both collector/mast details viewed. Steeper rounded top shoulder matches source slant better;front/side protective faces now sit close to shell instead of standing proud. Slender green case,two softly hexagonal elongated pale main faces,one mid-left spot,two tiny lower spots,three slim side strips and short mast retain sparse source layout. Previous feedback rounds face corners,lowers metalness/removes broad Sreflections,and lightens alloy. Fine scratches/grime/stains,three real small chips and one actual shallow dent retained;ray confirms dent rather than relying on intent.13262triangles,18native/imported positiveclosed meshes,4materials,5equaldecodedmaps,surfaceerror0. All shape/contact/mast/dent guards pass. Frozen originalpair hashes unchanged.",
+      "action": "Accept asset-only source/concept/native/import review. Hidden collector engineering/sections and metric height remain authored/unknown. Generic PB28/ST27 Terran petals do not imply Artemian operation. Final user artistic/client state/scale/shader/performance acceptance separate."
+    }
+  ],
+  "final_review": "Actual source/concept/imported whole/front/rear and collector/mast details reviewed. Slender green upright shell,two large pale elongated collectors,one middle-left spot,two tiny lower spots,three narrow side fields and short top mast retain source layout. Actual feedback rounds front outlines,lowers collector metalness,lightens shell,steepens source-like top shoulder,reduces collector stand-off and verifies one real shallow dent. All18native/imported meshes closed positive,five decoded maps agree and source-specific proportions/attachment/dent guards pass.",
+  "limitations": [
+    "Exact collector/shield sections,hidden solar engineering and metric dimensions remain authored or unknown.",
+    "Generic Terran PB28/ST27 solar petals/columns do not override Artemian upright shell or establish AR12 motion.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

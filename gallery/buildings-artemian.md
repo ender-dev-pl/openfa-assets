@@ -138,11 +138,13 @@ Additional views: [Front](../gallery/media/objects/artemian/gravitic-converter/f
 
 `openfa:building/legacy/118`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Shielded Solars](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar12/front-quarter.png)
+![Shielded Solars](../gallery/media/objects/artemian/shielded-solars/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar12/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar12/model.glb)
+[Blend](../sources/objects/artemian/shielded-solars/model.blend) · [GLB](../sources/objects/artemian/shielded-solars/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/shielded-solars/front.png) · [Rear quarter](../gallery/media/objects/artemian/shielded-solars/rear-quarter.png) · [Front collector faces](../gallery/media/objects/artemian/shielded-solars/front-collector-detail.png) · [Side collectors and mast](../gallery/media/objects/artemian/shielded-solars/side-collectors-and-mast-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/shielded-solars/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/shielded-solars/concept-glb-comparison.jpg)
 
 ## Shell
 
