@@ -25204,7 +25204,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/122",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           983
         ]
@@ -25278,27 +25278,56 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/missile-launcher/model.blend",
           "present": true,
-          "sha256": "0a58f19455677d8038a476fffd5952b259f5bbb6d50da043c04a92fbb79f5d32",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "verified-launch-mechanism",
-          "blend": "docs/assets/reconstruction/launch-facilities/artemian/ar16/model.blend",
-          "present": true,
-          "sha256": "832321afac179e268eeb87612e9bde075d44c9e3d875240b455b862b36c8cc4a"
+          "sha256": "807c8e6b9aad858718fa9d9c6524860912822546a3402bcdfe7ac0c0b41236c9",
+          "media": "gallery/media/objects/artemian/missile-launcher",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/missile-launcher/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/missile-launcher/rear-quarter.png"
+            },
+            {
+              "label": "Status and unequal uprights",
+              "image": "gallery/media/objects/artemian/missile-launcher/status-and-unequal-uprights-detail.png"
+            },
+            {
+              "label": "Lower recess and used metal",
+              "image": "gallery/media/objects/artemian/missile-launcher/lower-opening-and-used-metal-detail.png"
+            },
+            {
+              "label": "Half open",
+              "image": "gallery/media/objects/artemian/missile-launcher/state-half-open.png"
+            },
+            {
+              "label": "Fully open",
+              "image": "gallery/media/objects/artemian/missile-launcher/state-open.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/missile-launcher/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/missile-launcher/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -25328,6 +25357,97 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 122
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/model.blend",
+          "present": true,
+          "sha256": "0a58f19455677d8038a476fffd5952b259f5bbb6d50da043c04a92fbb79f5d32",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "verified-launch-mechanism",
+          "blend": "docs/assets/reconstruction/launch-facilities/artemian/ar16/model.blend",
+          "present": true,
+          "sha256": "832321afac179e268eeb87612e9bde075d44c9e3d875240b455b862b36c8cc4a"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/missile-launcher/model.blend",
+        "sha256": "807c8e6b9aad858718fa9d9c6524860912822546a3402bcdfe7ac0c0b41236c9",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/missile-launcher",
+          "verifier": "sources/tools/blender/verify_artemian_missile_launcher.py",
+          "files": {
+            "sources/objects/artemian/missile-launcher/model.blend": "807c8e6b9aad858718fa9d9c6524860912822546a3402bcdfe7ac0c0b41236c9",
+            "sources/objects/artemian/missile-launcher/model.glb": "6a4320794c51b609ed377224af7567fe615f97af7fe5464dcec3f433926dbf57",
+            "sources/objects/artemian/missile-launcher/model.json": "df4cad11df40ff7929017acf68ea82e2d955083f98bf7e00747fbffc55c83b63",
+            "sources/objects/artemian/missile-launcher/README.md": "07ca926f46bce2f9e9b13cd979a52c829dcd498f50ab5e15b5bd75f8f7991dbb",
+            "sources/objects/artemian/missile-launcher/runtime-review.json": "503519ec1629869690048ab7c4135b28fb39b5364a95443f54b180b57c4ca648",
+            "sources/objects/artemian/missile-launcher/visual-review.json": "b6833483b9a0fbdfd7aacc9fbea8f08dfb2a9c79e1fb7b3df26f89d8b400969e",
+            "gallery/media/objects/artemian/missile-launcher/animation-00.webm": "f7a89eec5b7265d107d3ab931a3f10e2b581e17d2370818f508d2fb20a504176",
+            "gallery/media/objects/artemian/missile-launcher/animation-previews.json": "7917e92c69ad114944bcc159f883f4eaffd5e8668105de3876fd2083cb72cf3c",
+            "gallery/media/objects/artemian/missile-launcher/concept-glb-comparison.jpg": "5254c73553eb9000dda9c3145888c63178ffacf149a7fc672a972c310541ed2c",
+            "gallery/media/objects/artemian/missile-launcher/front-quarter.png": "2381e97390783b5eadef99aaf79a78734d0786047a78ba0cae5ee658e4320dc8",
+            "gallery/media/objects/artemian/missile-launcher/front.png": "18385778358db6c37f629f10ae2eb90d962bf1a6f9a1f5f901f6c84942ae69f6",
+            "gallery/media/objects/artemian/missile-launcher/imported-front-quarter.png": "2381e97390783b5eadef99aaf79a78734d0786047a78ba0cae5ee658e4320dc8",
+            "gallery/media/objects/artemian/missile-launcher/imported-front.png": "18385778358db6c37f629f10ae2eb90d962bf1a6f9a1f5f901f6c84942ae69f6",
+            "gallery/media/objects/artemian/missile-launcher/imported-rear-quarter.png": "9c71901df5adb49c122a63842352d9fa22a74f8c3b61648288e07bc72978ce22",
+            "gallery/media/objects/artemian/missile-launcher/lower-opening-and-used-metal-detail.png": "dc49b18084d9a430f1633d37d7ea090ab90765ae3c4a187ea897abf3e18c4cac",
+            "gallery/media/objects/artemian/missile-launcher/native-front-quarter.png": "45951cba069634c85ce63e3adc0795bb0247749594faeb3085700a730343f9e6",
+            "gallery/media/objects/artemian/missile-launcher/native-front.png": "4d30e2ea21162bf9ada49d98a80a74e9518ccef7b05adff909d246eccfcd8a61",
+            "gallery/media/objects/artemian/missile-launcher/native-rear-quarter.png": "d2c9835d224cb7cdc93235b9d54f271246d86b40c333130315c67f73ceeca2b8",
+            "gallery/media/objects/artemian/missile-launcher/rear-quarter.png": "9c71901df5adb49c122a63842352d9fa22a74f8c3b61648288e07bc72978ce22",
+            "gallery/media/objects/artemian/missile-launcher/state-half-open.png": "6f93d39ce48bb9e1747d3fed66a8f3b4732ed9d034cf4e478093de4ef8afc784",
+            "gallery/media/objects/artemian/missile-launcher/state-open.png": "c4f35509eabac36e1877abf3a84690a4d5b1594c70f802b7eb50b33926fca178",
+            "gallery/media/objects/artemian/missile-launcher/status-and-unequal-uprights-detail.png": "efac00670a9e7df7adbade2655598a7a32f1cea5063c862ba426b00cf5cd546f",
+            "gallery/media/objects/artemian/missile-launcher/technical-wireframe.png": "2a44d167e9a00b9d95c4679d46ab62de154bd21748225dccfc467a315e7a4f34",
+            "sources/materials/artemian/missile-launcher/exposed-alloy-edge-colour.png": "4aa301633b24c92fd4b1c7e20e55489f66be5ed61b71ef01138fba13026db19d",
+            "sources/materials/artemian/missile-launcher/muted-green-alloy-colour.png": "1a2ca47149b49b238749043577f62615c8c3980ec61f335a0cdddd080b6fe83d",
+            "sources/materials/artemian/missile-launcher/occlusion-roughness-metallic.png": "8c6f27d3f8792f1bdcca6a7138c19a9d9e38b59f095ea4d3dd21ccebef8a0571",
+            "sources/materials/artemian/missile-launcher/used-metal-normal.png": "4e5d8c84572e5ee83280f283baad500f56889544d6a3753439e847c2e83e12af",
+            "sources/materials/artemian/missile-launcher/yellow-status-colour.png": "be8546ea50eb284dec8986f635b0f053615edae6f6852b767e16b5acd3ba6711",
+            "sources/tools/blender/render_artemian_missile_launcher_animation.py": "3340925913de3001654ea2867941b2b754530bb8dbd18e907ad9813aee1020e5",
+            "sources/tools/blender/remaster_artemian_missile_launcher.py": "3c5db4d2aabffc9c45aba818f6660c3c463e83200926b9cfb935bb12f226e8fc",
+            "sources/tools/blender/verify_artemian_missile_launcher.py": "88d5188825482f2b17f4dc5b79da921734c67bf75ae0a6b82cbe4702403daeba",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar16-concept-review.json": "45b3375ae66b5c522f8fa50c3464d51af6b0a82dd85385378a6374dc95c31495",
+            "sources/docs/reconstruction/models/ar16-concept-prompt-1.txt": "aaff8b33d235c98dd657fe6dd3422fe4c8830b20667351615713b6aa06cfed40",
+            "gallery/media/concepts/artemian/ar16-review-1.png": "127bde110527e45dacf2ac37181130ed83db9f5c086bc6419cebd3492cc7e815"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/missile-launcher/visual-review.json",
+          "sha256": "b6833483b9a0fbdfd7aacc9fbea8f08dfb2a9c79e1fb7b3df26f89d8b400969e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/missile-launcher/visual-review.json",
+          "sha256": "b6833483b9a0fbdfd7aacc9fbea8f08dfb2a9c79e1fb7b3df26f89d8b400969e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/missile-launcher/visual-review.json",
+          "sha256": "b6833483b9a0fbdfd7aacc9fbea8f08dfb2a9c79e1fb7b3df26f89d8b400969e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/missile-launcher/visual-review.json",
+          "sha256": "b6833483b9a0fbdfd7aacc9fbea8f08dfb2a9c79e1fb7b3df26f89d8b400969e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/missile-launcher/runtime-review.json",
+          "sha256": "503519ec1629869690048ab7c4135b28fb39b5364a95443f54b180b57c4ca648",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

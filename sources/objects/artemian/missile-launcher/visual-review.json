@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/122",
+  "binaries": {
+    "blend": "807c8e6b9aad858718fa9d9c6524860912822546a3402bcdfe7ac0c0b41236c9",
+    "glb": "6a4320794c51b609ed377224af7567fe615f97af7fe5464dcec3f433926dbf57"
+  },
+  "runtime_report_sha256": "503519ec1629869690048ab7c4135b28fb39b5364a95443f54b180b57c4ca648",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00014398433450440591,
+      "margin": 74
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00025164330705058793,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 5.901794145420208e-05,
+      "margin": 76
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar16-review-1.png",
+      "sha256": "127bde110527e45dacf2ac37181130ed83db9f5c086bc6419cebd3492cc7e815",
+      "prompt": "sources/docs/reconstruction/models/ar16-concept-prompt-1.txt",
+      "feedback": "Selected coherent closed/open views of one green-neck/slate-blue-foot installation:single hinged cap,two unequal front-left uprights/one rung,one yellow upper fitting and one lower dark point. Actual source governs proportions;neck must stay fixed when cap opens. Hinge internals/throat depth and timing authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "ddad1094511b687d8d9eae84d97ce0da70f924dcdc37a80cb57b1394fdeea72d",
+        "glb": "5979310ea4d49af218458ccf88390fd7d77f35f401d5bcab77b3934abb322d18"
+      },
+      "runtime_report_sha256": "915b65ff69b60f5d88b9dbf50957013f5795943aa8e22e7909e8bad59b3ec62b",
+      "status": "revision_required",
+      "finding": "Actual native quarter render and source/concept review show lower upright segments buried in broad foot,visually too short despite interior root witnesses. Upper yellow fitting too far forward instead of right-flank position. Full17pose mechanism verification otherwise passed;cap/axle/bearing joints and shaft remain physically coherent.",
+      "action": "Move two unequal rails forward to remain visible full-height,connect them with real short foot mounts and deeper joining rung;move upper fitting farther around right flank. Preserve single hinge and actual attachment/aperture checks;rerender."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "934e74abde6ffbd894814c389ec25e98a3ce1e94fce68bdb4fb6392a31677219",
+        "glb": "ab79a90ef27608b7db18d747f164b8048e8404f4c7db6d736dd41f9470b30a58"
+      },
+      "runtime_report_sha256": "d4cbcce3a2b6401529bf52f655a8d1555ff8ba0e9414f5647bb85ae89533aa5c",
+      "status": "revision_required",
+      "finding": "Actual revised render retains full-height rails and correct right-flank upper fitting. Source/concept single cap is shallow shell-like;actual open render still exposes an overly flat solid underside rather than concept concavity.",
+      "action": "Replace flat underside with actual closed positive thin dome shell,keeping outer silhouette,one hinge and full shaft clearance. Verify concavity by independent ray depths and retain real cap/lug/axle/bearing witnesses. Earlier moved rung witness corrected only after actual signed-distance diagnostic proved shared interior atY-.53."
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "807c8e6b9aad858718fa9d9c6524860912822546a3402bcdfe7ac0c0b41236c9",
+        "glb": "6a4320794c51b609ed377224af7567fe615f97af7fe5464dcec3f433926dbf57"
+      },
+      "runtime_report_sha256": "503519ec1629869690048ab7c4135b28fb39b5364a95443f54b180b57c4ca648",
+      "status": "agent_review_accepted",
+      "finding": "Actual final legacy/concept/import closed and open boards,front/rear,two details,half-open and video keyposes inspected. Full visible unequal uprights on attached foot mounts,upper fitting on right flank,lower true recess and real concave single cap preserve source anatomy.24328tri16positiveclosed meshes,4materials,5equaldecodedmaps,maxsurfaceerror5.146836201674887e-7 across17poses. Hinge/lug/axle/bearing and rail/rung contacts,cap concavity,shaft floor,closed cover/full-open aperture and real dent pass independently.",
+      "animation_review": "Actual imported GLB61frames24FPS,VP9/384x384/2.542s,31distinct poses verified by bound hashes and ffprobe decoded count. Keyposes1/16/31/46/61 reviewed:only one connected cap opens/closes;fixed neck/foot/rails/status remain fixed.",
+      "action": "Select one canonical pair and refresh both galleries. User artistic acceptance,client state/scale/shaders and Android performance remain separate.",
+      "final_user_artistic_acceptance": false,
+      "game_client_integration": false
+    }
+  ],
+  "final_review": "Actual paletted closed/open source and selected concept compared with native/imported whole/front/rear and detail/state renders. Green neck and shallow single cap above slate-blue flared foot,two unequal pale uprights/one rung,one upper yellow square point in round fitting and one lower dark recess. Feedback exposes initially buried uprights with real foot mounts/deeper rung,moves upper point to right flank and adds actual concave cap underside. Native/imported17pose physical hinge-lug-axle-bearing contacts,fixed neck/foot/rails/status,real shaft/dark floor,closed cover and fully open aperture,concavity and dent checks pass. Actual imported animation verified separately. No Terran iris or magazine-loader substitution.",
+  "limitations": [
+    "Hidden hinge engineering,axis position/110degree angle,shaft sections/depth and metric dimensions remain authored or unknown.",
+    "Own progressive cap overlays establish one hinge;2.5second preview timing is authored rather than recovered gameplay timing.",
+    "Generic PB14 and missile-bay-extension ST14 sources explain function,not Artemian anatomy. Final user artistic acceptance,client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

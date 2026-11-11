@@ -188,19 +188,15 @@ Additional views: [Front](../gallery/media/objects/artemian/star-bars/front.png)
 
 `openfa:building/legacy/122`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Missile Launcher](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/front-quarter.png)
+![Missile Launcher](../gallery/media/objects/artemian/missile-launcher/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/model.glb)
+[Blend](../sources/objects/artemian/missile-launcher/model.blend) · [GLB](../sources/objects/artemian/missile-launcher/model.glb)
 
-**Additional iteration — verified-launch-mechanism**
+Additional views: [Front](../gallery/media/objects/artemian/missile-launcher/front.png) · [Rear quarter](../gallery/media/objects/artemian/missile-launcher/rear-quarter.png) · [Status and unequal uprights](../gallery/media/objects/artemian/missile-launcher/status-and-unequal-uprights-detail.png) · [Lower recess and used metal](../gallery/media/objects/artemian/missile-launcher/lower-opening-and-used-metal-detail.png) · [Half open](../gallery/media/objects/artemian/missile-launcher/state-half-open.png) · [Fully open](../gallery/media/objects/artemian/missile-launcher/state-open.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/missile-launcher/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/missile-launcher/concept-glb-comparison.jpg)
 
-![Missile Launcher](../gallery/media/docs/assets/reconstruction/launch-facilities/artemian/ar16/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/launch-facilities/artemian/ar16/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/artemian/ar16/model.glb)
-
-[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/artemian/ar16/animation-00.webm)
+[Play animation: LaunchFacilityCycle](../gallery/media/objects/artemian/missile-launcher/animation-00.webm)
 
 ## Auto-deterrent
 

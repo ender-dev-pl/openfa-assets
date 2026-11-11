@@ -4434,31 +4434,57 @@
     "culture": "artemian",
     "studies": [
       {
-        "stage": "silhouette-study",
-        "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/model.blend",
-        "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/model.glb",
-        "image": "gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar16/front-quarter.png",
-        "sha256": "0a58f19455677d8038a476fffd5952b259f5bbb6d50da043c04a92fbb79f5d32",
-        "animations": []
-      },
-      {
-        "stage": "verified-launch-mechanism",
-        "blend": "sources/docs/assets/reconstruction/launch-facilities/artemian/ar16/model.blend",
-        "glb": "sources/docs/assets/reconstruction/launch-facilities/artemian/ar16/model.glb",
-        "image": "gallery/media/docs/assets/reconstruction/launch-facilities/artemian/ar16/front-quarter.png",
-        "sha256": "832321afac179e268eeb87612e9bde075d44c9e3d875240b455b862b36c8cc4a",
+        "stage": "canonical-game-remaster",
+        "blend": "sources/objects/artemian/missile-launcher/model.blend",
+        "glb": "sources/objects/artemian/missile-launcher/model.glb",
+        "image": "gallery/media/objects/artemian/missile-launcher/front-quarter.png",
+        "sha256": "807c8e6b9aad858718fa9d9c6524860912822546a3402bcdfe7ac0c0b41236c9",
         "animations": [
           {
             "index": 0,
             "name": "LaunchFacilityCycle",
-            "start": 0.03333333333333333,
-            "end": 2.033333333333333,
-            "duration": 1.9999999999999998,
-            "video": "gallery/media/docs/assets/reconstruction/launch-facilities/artemian/ar16/animation-00.webm",
-            "sha256": "b9f5715a48ef5d2f3a3a285eeb9772fdd3e9998457471f4bfc272a91ee501a80",
-            "frames": 48,
-            "fps": 24.000000000000004,
-            "distinct_pose_count": 24
+            "start": 0.041666666666666664,
+            "end": 2.5416666666666665,
+            "duration": 2.5,
+            "video": "gallery/media/objects/artemian/missile-launcher/animation-00.webm",
+            "sha256": "f7a89eec5b7265d107d3ab931a3f10e2b581e17d2370818f508d2fb20a504176",
+            "frames": 61,
+            "fps": 24.0,
+            "distinct_pose_count": 31
+          }
+        ],
+        "views": [
+          {
+            "label": "Front",
+            "image": "gallery/media/objects/artemian/missile-launcher/front.png"
+          },
+          {
+            "label": "Rear quarter",
+            "image": "gallery/media/objects/artemian/missile-launcher/rear-quarter.png"
+          },
+          {
+            "label": "Status and unequal uprights",
+            "image": "gallery/media/objects/artemian/missile-launcher/status-and-unequal-uprights-detail.png"
+          },
+          {
+            "label": "Lower recess and used metal",
+            "image": "gallery/media/objects/artemian/missile-launcher/lower-opening-and-used-metal-detail.png"
+          },
+          {
+            "label": "Half open",
+            "image": "gallery/media/objects/artemian/missile-launcher/state-half-open.png"
+          },
+          {
+            "label": "Fully open",
+            "image": "gallery/media/objects/artemian/missile-launcher/state-open.png"
+          },
+          {
+            "label": "Canonical technical wireframe",
+            "image": "gallery/media/objects/artemian/missile-launcher/technical-wireframe.png"
+          },
+          {
+            "label": "Concept and actual GLB",
+            "image": "gallery/media/objects/artemian/missile-launcher/concept-glb-comparison.jpg"
           }
         ]
       }
