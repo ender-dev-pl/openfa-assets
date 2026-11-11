@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/097",
+  "key": "MK12",
+  "name": "Visibility",
+  "culture": "mikotaj",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 9,
+  "construction_updates": 24,
+  "triangles": 25368,
+  "triangle_budget": 30000,
+  "mesh_nodes": 9,
+  "materials": 6,
+  "author": "sources/tools/blender/remaster_mikotaj_visibility.py",
+  "author_sha256": "8bc7240f3e86afecfd6cb36d790cdf4a73a53a8de839ff3e7d9d1f57bee6deb5",
+  "binaries": {
+    "blend": "605ce0c02749c0c4a0080ea9075b624967b0c712d84a78555321df7014b36df1",
+    "glb": "fe1b620dd0a2e64b3b32cf5e923a8d09230c90f98a98b8f8c2675b3b69fcfdd3"
+  },
+  "textures": {
+    "brass-base-colour.png": "24f55d4c5406a2fbddd63c4ac8d8dcfe1240e4a25c05b2d91e7ac475d2274533",
+    "dark-mineral-base-colour.png": "e4e777e07d809e6b21918277adaf802296d9a3642ef29739afe3513552b88c82",
+    "energy-ribbon-orm.png": "a5ce1fb2a2ce3610c8a328328fcaa9b492bf06468731bb0b73ba309df7950574",
+    "exposed-ridge-base-colour.png": "2578c8d539a9850cab182f3cc0d3aa0648a87ee627cf682b418a64c6231e816c",
+    "mineral-base-colour.png": "308b922df286b05fdae29a5d2d36cfa5aa9d5b47bd4161a9582fd815c18a7e29",
+    "mineral-fracture-normal.png": "bf59934111a4b92d6d0bbc20b67e31f9657aef51a73f4454e36c640eb5038aad",
+    "occlusion-roughness-metallic.png": "40f294fe3778ebc8e38ac53e976baa95f1afa640918e4b754b99ae7fdb4b1fa1",
+    "pale-blue-lens-colour.png": "deed9132a907cfeca9513b2f0a33de01c339e26249322f7295572f0ac1b5d11b",
+    "red-status-lens-colour.png": "c3b819155850b769b37520e8a5db3ae0beb874ac29a571baccfe6c7316084f5b"
+  },
+  "interpretation": [
+    "Tall flared mineral casing, dark clefts, one lower red/blue status port, two upper-right mineral ribs and energetic gold spiral follow actual legacy sprites/concept.",
+    "Gold winds away leaving the shaft open; hidden routing, material, timing and metric dimensions are authored. Lens mesh visibility encodes the original colour swap without a mechanical lamp flip."
+  ],
+  "scale_contract": "2x2 placement footprint, local +Z up/-Y front. Native dimensions are authored cell-relative proportions; no metric legacy height or calibrated game scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/mk12-concept-review.json",
+  "animation_clips": [
+    "LaunchFacilityCycle"
+  ],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}
