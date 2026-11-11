@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/110",
+  "binaries": {
+    "blend": "60e2585fd310457c1e886c30eef4768408ae36bde96966bd8a031e77dfa09845",
+    "glb": "658c41d0843da37f424ccc33ba9c260b14996ac89726c9c515e0738e63491145"
+  },
+  "runtime_report_sha256": "6842b54f7dc8291795519e7b5859b08f14935e8cce4bd7c5d5cb1eb75b3417ad",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00013777357896394268,
+      "margin": 79
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0003696912338814622,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 9.921225469770027e-05,
+      "margin": 78
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar04-review-1.png",
+      "sha256": "da8b65779faf9718fe7e74f63ca073925fc066c49fde03fabfa12631d6292b6f",
+      "prompt": "sources/docs/reconstruction/models/ar04-concept-prompt-1.txt",
+      "feedback": "Selected low elongated green metal habitation shell with fork-shaped silver front fitting and central stem,tall and short amber uprights,two dark round insets and one larger amber circular inset. Source controls count and arrangement;concept surface seams and hidden interior engineering remain interpretations."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "93c6ca8b96b9d6bffb51b22a5e2592a2b8cfbb21dcace627d9a7d473bb5a5b65",
+        "glb": "e90a77c0d2b5a765daa6321b87d39b7ebae106e88b72188cd4a03b3679a6440b"
+      },
+      "runtime_report_sha256": "d00ec53dee1ad6b1118c106e2ad6143365f2f4015ff1655ca53f1337052a698b",
+      "status": "revision_required",
+      "finding": "Actual whole/source/concept/GLB and fork/rear detail review: silver fork legs/gap visually swallowed by roof despite geometric contact passing;rear longitudinal shell sections show sharp transitions. Major source features need visible geometry,not only mesh-count checks.",
+      "action": "Move fork to forward exterior retaining real body contacts;sample smooth longitudinal Catmull-Rom shell sections and rerun native/import runtime and actual render review."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "60e2585fd310457c1e886c30eef4768408ae36bde96966bd8a031e77dfa09845",
+        "glb": "658c41d0843da37f424ccc33ba9c260b14996ac89726c9c515e0738e63491145"
+      },
+      "runtime_report_sha256": "6842b54f7dc8291795519e7b5859b08f14935e8cce4bd7c5d5cb1eb75b3417ad",
+      "finding": "Reviewed actual final whole legacy/concept/imported GLB board and fork/inset,rear and amber upright detail renders. Both silver legs and actual gap now project visibly forward;their rear samples remain inside actual shell. Smooth sampled longitudinal sections remove the prior abrupt rear transition while retaining low narrower prow and broader higher rear. Two small dark points/one larger amber point and two amber upright heights remain source recognizable. Subtle scratches,dirt,shallow dents and small chips retained. Concept has richer panel engineering;source sparse exterior governs canonical shell. All10native/imported positive closed meshes,all5decodedtextureimages and source-specific contacts agree;maximum surface error6.828570064953965e-8. Frozen original pair unchanged.",
+      "action": "Accept agent source/concept/native/imported GLB review. Exact interior/bath engineering and sections remain authored. No invented operating cycle. Client scale/state/shaders,Android performance and final user artistic acceptance stay separate.",
+      "status": "agent_review_accepted"
+    }
+  ],
+  "final_review": "Actual legacy/concept/GLB comparison retains elongated low green hard-metal quarters with lower/narrower prow,higher/wider rear,silver fork with two legs/open gap/continuous central stem,tall and short amber uprights,two small dark roof discs and one larger amber inset. Actual fitting/body overlaps,open rims and native/import geometry/decoded texture equality verified;whole/front/rear and detail views inspected.",
+  "limitations": [
+    "Exact internal living and bath spaces,hardware sections and metric dimensions remain authored or unknown.",
+    "Generic _MA/PB00 living quarters is class0 function context,not this Artemian geometry or an operating cycle.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

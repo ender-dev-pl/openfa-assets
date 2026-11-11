@@ -42,11 +42,13 @@ Additional views: [Front](../gallery/media/objects/artemian/filtration-tanks/fro
 
 `openfa:building/legacy/110`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Canisters](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar04/front-quarter.png)
+![Canisters](../gallery/media/objects/artemian/canisters/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar04/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar04/model.glb)
+[Blend](../sources/objects/artemian/canisters/model.blend) · [GLB](../sources/objects/artemian/canisters/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/canisters/front.png) · [Rear quarter](../gallery/media/objects/artemian/canisters/rear-quarter.png) · [Silver fork and roof insets](../gallery/media/objects/artemian/canisters/fork-and-roof-insets-detail.png) · [Amber uprights and shell](../gallery/media/objects/artemian/canisters/amber-uprights-and-shell-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/canisters/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/canisters/concept-glb-comparison.jpg)
 
 ## Nurseries
 

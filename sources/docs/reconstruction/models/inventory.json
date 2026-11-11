@@ -22267,7 +22267,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/110",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           971
         ]
@@ -22341,21 +22341,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar04/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/canisters/model.blend",
           "present": true,
-          "sha256": "39b94aa6f84b1352f8f3e0eebb95829d2c92468c43aa841af8dd00eddd69cc2a",
-          "final_visual_acceptance": "not-established"
+          "sha256": "60e2585fd310457c1e886c30eef4768408ae36bde96966bd8a031e77dfa09845",
+          "media": "gallery/media/objects/artemian/canisters",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/canisters/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/canisters/rear-quarter.png"
+            },
+            {
+              "label": "Silver fork and roof insets",
+              "image": "gallery/media/objects/artemian/canisters/fork-and-roof-insets-detail.png"
+            },
+            {
+              "label": "Amber uprights and shell",
+              "image": "gallery/media/objects/artemian/canisters/amber-uprights-and-shell-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/canisters/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/canisters/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -22385,6 +22412,86 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 110
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar04/model.blend",
+          "present": true,
+          "sha256": "39b94aa6f84b1352f8f3e0eebb95829d2c92468c43aa841af8dd00eddd69cc2a",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/canisters/model.blend",
+        "sha256": "60e2585fd310457c1e886c30eef4768408ae36bde96966bd8a031e77dfa09845",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/canisters",
+          "verifier": "sources/tools/blender/verify_artemian_canisters.py",
+          "files": {
+            "sources/objects/artemian/canisters/model.blend": "60e2585fd310457c1e886c30eef4768408ae36bde96966bd8a031e77dfa09845",
+            "sources/objects/artemian/canisters/model.glb": "658c41d0843da37f424ccc33ba9c260b14996ac89726c9c515e0738e63491145",
+            "sources/objects/artemian/canisters/model.json": "e78568671a65c23fffd44406da55755e4ec1cbc09d867ac99985f1ff6593337c",
+            "sources/objects/artemian/canisters/README.md": "b6bd14a2099466b47cab5833e580303b25d95b3957aa05bbfb7a470a8c1a8843",
+            "sources/objects/artemian/canisters/runtime-review.json": "6842b54f7dc8291795519e7b5859b08f14935e8cce4bd7c5d5cb1eb75b3417ad",
+            "sources/objects/artemian/canisters/visual-review.json": "60cdf89365519c65cbb5991259e2091784280e4b7f87ad91d095d420fb81724e",
+            "gallery/media/objects/artemian/canisters/amber-uprights-and-shell-detail.png": "6b2e6178abb118cb19133b5619d09c1d55451ff3254611e0488b7e935cde48be",
+            "gallery/media/objects/artemian/canisters/concept-glb-comparison.jpg": "3cc94330f600831d7e88685d7f122f9668bf7971ec1f26580c9e710c4ff9ef79",
+            "gallery/media/objects/artemian/canisters/fork-and-roof-insets-detail.png": "aee8f3fa955499fda8e9827d24434c15e47ad70264c1e8b6fab68cf56333ee72",
+            "gallery/media/objects/artemian/canisters/front-quarter.png": "f25321f2f3358a8e32440789f067bf0709dd5a94307a558a71c4641d6fb41c9d",
+            "gallery/media/objects/artemian/canisters/front.png": "79d35ecfd49b41e26df21a7832683a1b175d0b336a7e7cc08efe4a1b0d8e7939",
+            "gallery/media/objects/artemian/canisters/imported-front-quarter.png": "f25321f2f3358a8e32440789f067bf0709dd5a94307a558a71c4641d6fb41c9d",
+            "gallery/media/objects/artemian/canisters/imported-front.png": "79d35ecfd49b41e26df21a7832683a1b175d0b336a7e7cc08efe4a1b0d8e7939",
+            "gallery/media/objects/artemian/canisters/imported-rear-quarter.png": "3f0ffa773442b0fff849cedf329d784c7e595b8bf843827055fe50a042260859",
+            "gallery/media/objects/artemian/canisters/native-front-quarter.png": "cb5dcd007b08e85d4f32eded035d9ccf4bd6dd9329f9d2e7f3863fbec863bd09",
+            "gallery/media/objects/artemian/canisters/native-front.png": "d85db76c6eba0d76238f604daafb7a7149f38f3d12bcff65096423804358836e",
+            "gallery/media/objects/artemian/canisters/native-rear-quarter.png": "f446868269cc3cc6e37d282e442e4cdd7174584309b71061f9954ce2080c58b2",
+            "gallery/media/objects/artemian/canisters/rear-quarter.png": "3f0ffa773442b0fff849cedf329d784c7e595b8bf843827055fe50a042260859",
+            "gallery/media/objects/artemian/canisters/technical-wireframe.png": "3c9d0eedc1ed11ff5989406cd07bcd348202b8e5a28c8883a2b691e2d629d3a4",
+            "sources/materials/artemian/canisters/amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+            "sources/materials/artemian/canisters/exposed-alloy-edge-colour.png": "7f522bdb1f0de182037e45691709ba281010618dc3799cd57c36c0811ce6ae71",
+            "sources/materials/artemian/canisters/muted-green-alloy-colour.png": "c04e8a563358c2b2049f4b195f9608c154dabfba06c71ac94212b0b14971103a",
+            "sources/materials/artemian/canisters/occlusion-roughness-metallic.png": "ea2386b62c486ff61a448a92267b778c2f3bda890789a89da3dd847429379a00",
+            "sources/materials/artemian/canisters/used-metal-normal.png": "e4e53b8debd17eedf81843060bf50c79298dc99496a3e68ee3128dd8f0577ebf",
+            "sources/tools/blender/remaster_artemian_canisters.py": "8be52df39d465441167877141576fb26f56a86b07a7efb0fcd9a31b13fd9775c",
+            "sources/tools/blender/verify_artemian_canisters.py": "d7a41212d753267b66a4e0e2752ce8200ee02e3e9524a6cca6333dd69a882a7d",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar04-concept-review.json": "7e114f2eab4741c4c6c29ed904324984ec7a73ddc437772710a560b6724ea1fc",
+            "sources/docs/reconstruction/models/ar04-concept-prompt-1.txt": "16e122d0ff38b3a7cd23a39566373b51316f52209de58c3cf28654a562de66eb",
+            "gallery/media/concepts/artemian/ar04-review-1.png": "da8b65779faf9718fe7e74f63ca073925fc066c49fde03fabfa12631d6292b6f"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/canisters/visual-review.json",
+          "sha256": "60cdf89365519c65cbb5991259e2091784280e4b7f87ad91d095d420fb81724e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/canisters/visual-review.json",
+          "sha256": "60cdf89365519c65cbb5991259e2091784280e4b7f87ad91d095d420fb81724e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/canisters/visual-review.json",
+          "sha256": "60cdf89365519c65cbb5991259e2091784280e4b7f87ad91d095d420fb81724e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/canisters/visual-review.json",
+          "sha256": "60cdf89365519c65cbb5991259e2091784280e4b7f87ad91d095d420fb81724e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/canisters/runtime-review.json",
+          "sha256": "6842b54f7dc8291795519e7b5859b08f14935e8cce4bd7c5d5cb1eb75b3417ad",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
