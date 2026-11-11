@@ -18,11 +18,13 @@ Additional views: [Front](../gallery/media/objects/mauna/base-block/front.png) �
 
 `openfa:building/legacy/131`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Shielding Block](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn02/front-quarter.png)
+![Shielding Block](../gallery/media/objects/mauna/shielding-block/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn02/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn02/model.glb)
+[Blend](../sources/objects/mauna/shielding-block/model.blend) · [GLB](../sources/objects/mauna/shielding-block/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/shielding-block/front.png) · [Rear quarter](../gallery/media/objects/mauna/shielding-block/rear-quarter.png) · [Four red roof wells](../gallery/media/objects/mauna/shielding-block/four-red-roof-wells-detail.png) · [Pale ribs and brass feet](../gallery/media/objects/mauna/shielding-block/pale-ribs-and-brass-feet-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/shielding-block/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/shielding-block/concept-glb-comparison.jpg)
 
 ## Nutrition Block
 

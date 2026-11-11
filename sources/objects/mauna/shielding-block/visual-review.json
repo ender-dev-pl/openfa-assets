@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/131",
+  "binaries": {
+    "blend": "b146b46cdf30a208472197eaa2edf3bba939135aeafa49a5ae154e31a6de61ab",
+    "glb": "1829afc58f325862ad51da8b21212de77398982720fb58a88dfba8854390f775"
+  },
+  "runtime_report_sha256": "bd241deaec4c7158a5fc26bd3fca0939b16d06d360d294f56f33fb050104db76",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0039896696054857956,
+      "margin": 59
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0027465323304119798,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0031682128478907755,
+      "margin": 59
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn02-review-1.png",
+      "sha256": "dc582ea3da427512543c2be957be62fbf84de4cdbc784ec0d72bf0ae43452afb",
+      "prompt": "sources/docs/reconstruction/models/mn02-concept-prompt-1.txt",
+      "feedback": "Selected:correct squat greyblue angular concrete shell,four actual red square roof wells,three pale wall ribs andthree brassfeet on eachvisibleface;materialwear/practicalarchitecture fit. Ownsource governs squatheight over slightlytallerconcept;no glow or addedmechanism. Hiddenrearrepeat authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "28cb8e3c8a6d80ff390fed9aa683deda77356ecf038940575d59db39795226bb",
+        "glb": "780969c5f986197bad4125f3c98166057c3e02f25e213062ebe141a272901162"
+      },
+      "runtime_report_sha256": "da927aea1926d3b00bb2a5f4792466f78822f054c795c6fd575e15727341ef89",
+      "status": "revision_required",
+      "finding": "Actual geometry/runtime passes1460tri,7closedparts,maxerror8.43e-08. Native source-quarter render has correct silhouette,4realwells/3ribs/3feetpervisibleface,but surfaces too clean relative to selected roughcastconcept. Add source-compatible concrete dirt/pores/sparseaggregatechips,redlining wear,brasspatina andfour additional smallrooflipchips;retain geometry counts/proportions andstrict actualwells/contacts guards.",
+      "reviewed_images": [
+        {
+          "path": "gallery/media/objects/mauna/shielding-block/native-front-quarter.png",
+          "sha256": "2552aab93f3f003ea1ae18159833ecf848c1d420d4a66a4c1b054e8eedbdb1ce"
+        }
+      ]
+    },
+    {
+      "pass_number": 2,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "b146b46cdf30a208472197eaa2edf3bba939135aeafa49a5ae154e31a6de61ab",
+        "glb": "1829afc58f325862ad51da8b21212de77398982720fb58a88dfba8854390f775"
+      },
+      "runtime_report_sha256": "bd241deaec4c7158a5fc26bd3fca0939b16d06d360d294f56f33fb050104db76",
+      "status": "accepted_asset_only",
+      "finding": "Final native/imported whole,front,rear,both detail renders andprivate actuallegacy/concept/GLBboard reviewed. Squat angular shell,four red blindwells andthree pale ribs/three brassfeet pervisibleface retain source silhouette/counts/colourplacement. Updated roughcast dirt/pores/sparseaggregateflecks,redlining wear andbrasspatina improve materialreading overinitial cleanrevision. Runtime2 passes1628tri/7closedmeshes,error8.43e-08,actualwellfloors/walls/mouths,roof/corecontact,12rib/12footcontacts,sixchips,portabletexturepixels andrenderpairs.",
+      "limitations": [
+        "Hiddenrear repetition,internalwelldepths/floors andcellrelative proportions authored.",
+        "PB05 is genericTerranfunctioncontext,not Mauna geometry/operation;no ownanimation/emission recovered.",
+        "Approximate reviewcamera,not recoveredprojection. Finaluserartisticacceptance andclientintegration/performance remainseparate."
+      ]
+    }
+  ],
+  "final_review": "Own four paletted layers/all41catalogueupdates,function992/culture137,one real selected ImageGen concept and actual saved native/independent GLB whole/front/rear/details reviewed. Squat angular greyblue concrete shell,four deep red square roof wells,three pale ribs andthree brassfeet pervisibleface retain sourceanatomy. Initial overlyclean surfaces refined with roughcast pores/dirt,sparse redlining chips andusedbrass patina. Actual blindwell floors/walls/openings,roof/core seating,rib/foot contacts andsix physicalchips verified.",
+  "limitations": [
+    "Hiddenrear rib/foot repetition,well depths/internalfloors andcell-relative dimensions authored.",
+    "Full_MA loose/archive indexes andall36researchsubjects surveyed. PB05 full60updates/archivepreview depict generic Terran radiation-filter pipes,not Mauna anatomy oroperatingmotion. No directowntechnical/operatingvideo or glow recovered.",
+    "Approximate reviewcamera,not recovered/calibrated projection. Final user artistic acceptance andclient scale/orientation/state/shaders/Androidperformance separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -1,0 +1,456 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/131",
+  "key": "MN02",
+  "name": "Shielding Block",
+  "culture": "mauna",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 5,
+  "construction_updates": 30,
+  "triangles": 1628,
+  "triangle_budget": 30000,
+  "mesh_nodes": 7,
+  "materials": 4,
+  "author": "sources/tools/blender/remaster_mauna_shielding_block.py",
+  "author_sha256": "1e4e4bb2df6cf425b98197a57305f68382532424bd6707d1d34ebd4cfcf127c0",
+  "binaries": {
+    "blend": "b146b46cdf30a208472197eaa2edf3bba939135aeafa49a5ae154e31a6de61ab",
+    "glb": "1829afc58f325862ad51da8b21212de77398982720fb58a88dfba8854390f775"
+  },
+  "textures": {
+    "cast-concrete-colour.png": "dce0c2ee13b304b348277b611e11dcf417294bbc056000d788a3be4a1dee0a0d",
+    "cast-service-normal.png": "92343569476f262d96c71882b0a7a2e2d3b862ec81ca735ff18277bd25a20547",
+    "chipped-concrete-edge-colour.png": "22f50bfc594292c8a14a3c1dd1699daf59edc6ece1b082a6adf9bd22a01cc3cb",
+    "concrete-orm.png": "1cae9bf1a66e8f0d82d104ad66307ef449e0f3d7c7463793d27065bbb7e69064",
+    "metal-orm.png": "d4c7a884b55c324eb88bfbf43d05c5dc296d3ed0fcb54b45bde38f3aaff05772",
+    "recess-red-colour.png": "ccaef52474eae9ef21e7752b0dab79f1a474918bdfcbec6e7b7b5e0417b3ab34",
+    "used-brass-colour.png": "81e97d4659f1d8e1aeef5d808b57304df981c91da3baf0355760d03c4261cdc2"
+  },
+  "roof_wells": [
+    {
+      "index": 0,
+      "centre": [
+        -0.345,
+        -0.345
+      ],
+      "floor": 0.56,
+      "roof_top": 0.927,
+      "width": 0.52
+    },
+    {
+      "index": 1,
+      "centre": [
+        0.345,
+        -0.345
+      ],
+      "floor": 0.56,
+      "roof_top": 0.927,
+      "width": 0.52
+    },
+    {
+      "index": 2,
+      "centre": [
+        -0.345,
+        0.345
+      ],
+      "floor": 0.56,
+      "roof_top": 0.927,
+      "width": 0.52
+    },
+    {
+      "index": 3,
+      "centre": [
+        0.345,
+        0.345
+      ],
+      "floor": 0.56,
+      "roof_top": 0.927,
+      "width": 0.52
+    }
+  ],
+  "rib_contacts": [
+    {
+      "face": 0,
+      "index": 0,
+      "point": [
+        -0.5,
+        -0.8592814803123474,
+        0.5976702570915222
+      ],
+      "normal": [
+        0.0,
+        -0.9429903030395508,
+        0.3328201174736023
+      ]
+    },
+    {
+      "face": 0,
+      "index": 1,
+      "point": [
+        0.0,
+        -0.8592814803123474,
+        0.5976702570915222
+      ],
+      "normal": [
+        0.0,
+        -0.9429903626441956,
+        0.3328201472759247
+      ]
+    },
+    {
+      "face": 0,
+      "index": 2,
+      "point": [
+        0.5,
+        -0.8592814803123474,
+        0.5976702570915222
+      ],
+      "normal": [
+        0.0,
+        -0.9429903626441956,
+        0.3328201472759247
+      ]
+    },
+    {
+      "face": 1,
+      "index": 0,
+      "point": [
+        0.8592814803123474,
+        -0.5,
+        0.5976702570915222
+      ],
+      "normal": [
+        0.9429903030395508,
+        -0.0,
+        0.3328201174736023
+      ]
+    },
+    {
+      "face": 1,
+      "index": 1,
+      "point": [
+        0.8592814803123474,
+        -5.302001409849313e-17,
+        0.5976702570915222
+      ],
+      "normal": [
+        0.9429903626441956,
+        0.0,
+        0.3328201472759247
+      ]
+    },
+    {
+      "face": 1,
+      "index": 2,
+      "point": [
+        0.8592814803123474,
+        0.5,
+        0.5976702570915222
+      ],
+      "normal": [
+        0.9429903626441956,
+        0.0,
+        0.3328201472759247
+      ]
+    },
+    {
+      "face": 2,
+      "index": 0,
+      "point": [
+        0.5,
+        0.8592814803123474,
+        0.5976702570915222
+      ],
+      "normal": [
+        0.0,
+        0.9429903030395508,
+        0.3328201174736023
+      ]
+    },
+    {
+      "face": 2,
+      "index": 1,
+      "point": [
+        1.0604002819698626e-16,
+        0.8592814803123474,
+        0.5976702570915222
+      ],
+      "normal": [
+        -0.0,
+        0.9429903626441956,
+        0.3328201472759247
+      ]
+    },
+    {
+      "face": 2,
+      "index": 2,
+      "point": [
+        -0.5,
+        0.8592814803123474,
+        0.5976702570915222
+      ],
+      "normal": [
+        -0.0,
+        0.9429903626441956,
+        0.3328201472759247
+      ]
+    },
+    {
+      "face": 3,
+      "index": 0,
+      "point": [
+        -0.8592814803123474,
+        0.5,
+        0.5976702570915222
+      ],
+      "normal": [
+        -0.9429903030395508,
+        0.0,
+        0.3328201174736023
+      ]
+    },
+    {
+      "face": 3,
+      "index": 1,
+      "point": [
+        -0.8592814803123474,
+        1.5906002906058959e-16,
+        0.5976702570915222
+      ],
+      "normal": [
+        -0.9429903626441956,
+        0.0,
+        0.3328201472759247
+      ]
+    },
+    {
+      "face": 3,
+      "index": 2,
+      "point": [
+        -0.8592814803123474,
+        -0.5,
+        0.5976702570915222
+      ],
+      "normal": [
+        -0.9429903626441956,
+        0.0,
+        0.3328201472759247
+      ]
+    }
+  ],
+  "foot_contacts": [
+    {
+      "face": 0,
+      "index": 0,
+      "point": [
+        -0.5,
+        -0.9700000286102295,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 0,
+      "index": 1,
+      "point": [
+        0.0,
+        -0.9700000286102295,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 0,
+      "index": 2,
+      "point": [
+        0.5,
+        -0.9700000286102295,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 1,
+      "index": 0,
+      "point": [
+        0.9700000286102295,
+        -0.5,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 1,
+      "index": 1,
+      "point": [
+        0.9700000286102295,
+        -5.939537301212513e-17,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 1,
+      "index": 2,
+      "point": [
+        0.9700000286102295,
+        0.5,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 2,
+      "index": 0,
+      "point": [
+        0.5,
+        0.9700000286102295,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 2,
+      "index": 1,
+      "point": [
+        1.1879074602425026e-16,
+        0.9700000286102295,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 2,
+      "index": 2,
+      "point": [
+        -0.5,
+        0.9700000286102295,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 3,
+      "index": 0,
+      "point": [
+        -0.9700000286102295,
+        0.5,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 3,
+      "index": 1,
+      "point": [
+        -0.9700000286102295,
+        1.781861124189305e-16,
+        0.20499999821186066
+      ]
+    },
+    {
+      "face": 3,
+      "index": 2,
+      "point": [
+        -0.9700000286102295,
+        -0.5,
+        0.20499999821186066
+      ]
+    }
+  ],
+  "physical_chips": [
+    {
+      "label": "roof-lip",
+      "object": "Shielding Block red four-well roof",
+      "point": [
+        0.6600000262260437,
+        -0.18000000715255737,
+        0.9269999861717224
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "expected_depth": 0.006999999999999999
+    },
+    {
+      "label": "concrete-face",
+      "object": "Shielding Block squat concrete shell",
+      "point": [
+        0.9082353115081787,
+        -0.7300000190734863,
+        0.47999998927116394
+      ],
+      "normal": [
+        0.9429903030395508,
+        -0.0,
+        0.3328201174736023
+      ],
+      "expected_depth": 0.006999999999999999
+    },
+    {
+      "label": "roof-lip-0",
+      "object": "Shielding Block red four-well roof",
+      "point": [
+        -0.6800000071525574,
+        -0.10000000149011612,
+        0.9269999861717224
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "expected_depth": 0.006
+    },
+    {
+      "label": "roof-lip-1",
+      "object": "Shielding Block red four-well roof",
+      "point": [
+        0.11999999731779099,
+        -0.699999988079071,
+        0.9269999861717224
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "expected_depth": 0.006
+    },
+    {
+      "label": "roof-lip-2",
+      "object": "Shielding Block red four-well roof",
+      "point": [
+        0.6899999976158142,
+        0.5400000214576721,
+        0.9269999861717224
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "expected_depth": 0.006
+    },
+    {
+      "label": "roof-lip-3",
+      "object": "Shielding Block red four-well roof",
+      "point": [
+        -0.11999999731779099,
+        0.699999988079071,
+        0.9269999861717224
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "expected_depth": 0.006
+    }
+  ],
+  "interpretation": [
+    "Own squat angular concrete shell,four red roof wells,three pale wall ribs andthree brassfeet pervisibleface govern geometry.",
+    "Hiddenrear rib/footrepeat,well depths/internalfloor andcell-relative dimensions authored. PB05isTerran functioncontext,notMauna operation. No own operating overlays/glow inferred."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront. Cell-relative proportions authored;no recovered metric dimensions.",
+  "concept_review": "sources/docs/reconstruction/models/mn02-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}
