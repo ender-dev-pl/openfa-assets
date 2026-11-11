@@ -78,11 +78,13 @@ Additional views: [Front](../gallery/media/objects/mauna/the-cube/front.png) · 
 
 `openfa:building/legacy/136`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Elite Block](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn07/front-quarter.png)
+![Elite Block](../gallery/media/objects/mauna/elite-block/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn07/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn07/model.glb)
+[Blend](../sources/objects/mauna/elite-block/model.blend) · [GLB](../sources/objects/mauna/elite-block/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/elite-block/front.png) · [Rear quarter](../gallery/media/objects/mauna/elite-block/rear-quarter.png) · [Split sensor mast and five roof pins](../gallery/media/objects/mauna/elite-block/split-sensor-mast-and-roof-pins-detail.png) · [Blue L and command panels](../gallery/media/objects/mauna/elite-block/blue-l-field-and-command-panels-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/elite-block/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/elite-block/concept-glb-comparison.jpg)
 
 ## Construction Area
 

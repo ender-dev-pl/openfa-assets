@@ -28721,7 +28721,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/136",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           997
         ]
@@ -28795,21 +28795,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn07/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/elite-block/model.blend",
           "present": true,
-          "sha256": "b9c0e175cabcb8b3c3584b9593324a026cb2896c35e2991cf112bfe442f3e041",
-          "final_visual_acceptance": "not-established"
+          "sha256": "819bbb63419f2cc4dcd47a2fffe05098e11bab63a4ef313eb943d2fe7fd84deb",
+          "media": "gallery/media/objects/mauna/elite-block",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/elite-block/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/elite-block/rear-quarter.png"
+            },
+            {
+              "label": "Split sensor mast and five roof pins",
+              "image": "gallery/media/objects/mauna/elite-block/split-sensor-mast-and-roof-pins-detail.png"
+            },
+            {
+              "label": "Blue L and command panels",
+              "image": "gallery/media/objects/mauna/elite-block/blue-l-field-and-command-panels-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/elite-block/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/elite-block/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -28839,6 +28866,90 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 136
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn07/model.blend",
+          "present": true,
+          "sha256": "b9c0e175cabcb8b3c3584b9593324a026cb2896c35e2991cf112bfe442f3e041",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/elite-block/model.blend",
+        "sha256": "819bbb63419f2cc4dcd47a2fffe05098e11bab63a4ef313eb943d2fe7fd84deb",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/elite-block",
+          "verifier": "sources/tools/blender/verify_mauna_elite_block.py",
+          "files": {
+            "sources/objects/mauna/elite-block/model.blend": "819bbb63419f2cc4dcd47a2fffe05098e11bab63a4ef313eb943d2fe7fd84deb",
+            "sources/objects/mauna/elite-block/model.glb": "bba1235035330000f029e280b3062763b690b99a7eb819abfffa31924ad8010a",
+            "sources/objects/mauna/elite-block/model.json": "b7b31055937177c834752761c7e7a7a60f77ac4e84cff9fb8754efcc480b8fda",
+            "sources/objects/mauna/elite-block/README.md": "7c0a4a6f5a4d0450f6ff068926705e22365c31c348bbf785f730a79129b20828",
+            "sources/objects/mauna/elite-block/runtime-review.json": "4cc00fe9553c48414d19091f31dd693869680a46cf27c139d6af531dd62ce21d",
+            "sources/objects/mauna/elite-block/visual-review.json": "b10d4488a3c764ba2c371085e117be14b2fff222a98df8a5fcf25305fb0d275e",
+            "gallery/media/objects/mauna/elite-block/blue-l-field-and-command-panels-detail.png": "929178c1e883e3a435c425ae7d5d9c50e11c0a4a0e60a85987b7537aff3daa3a",
+            "gallery/media/objects/mauna/elite-block/concept-glb-comparison.jpg": "fab85141308ad09196b9886360da80b8bc25bd47daf6479460a2b425cadf643c",
+            "gallery/media/objects/mauna/elite-block/front-quarter.png": "f8d0354676137d24a1a70dc4497fd688f1ac366b362e57a927b7c4525346d9c3",
+            "gallery/media/objects/mauna/elite-block/front.png": "4a7f7fb0d3bfd77c0f933b9a5671de1be25b85a3ded1b24ad006abfd45810ab4",
+            "gallery/media/objects/mauna/elite-block/imported-front-quarter.png": "f8d0354676137d24a1a70dc4497fd688f1ac366b362e57a927b7c4525346d9c3",
+            "gallery/media/objects/mauna/elite-block/imported-front.png": "4a7f7fb0d3bfd77c0f933b9a5671de1be25b85a3ded1b24ad006abfd45810ab4",
+            "gallery/media/objects/mauna/elite-block/imported-rear-quarter.png": "a2c331ae70c314d0e1a7b321d3cdc0c81e806b06bee3b6215365415a747a3c5e",
+            "gallery/media/objects/mauna/elite-block/native-front-quarter.png": "6d932e062036cec88ef53e40c7407bd91e9d816670d4ada013ecdc62f1e4d0c8",
+            "gallery/media/objects/mauna/elite-block/native-front.png": "140fb1d2b71cb5a72ae7a6f7c44ba83eac3d5d866e45a61ccfaf0142ef433e2c",
+            "gallery/media/objects/mauna/elite-block/native-rear-quarter.png": "6891b21af02c0f2bae5da29423adaf045eb828c986ead8e5e3522cd48f819bdd",
+            "gallery/media/objects/mauna/elite-block/rear-quarter.png": "a2c331ae70c314d0e1a7b321d3cdc0c81e806b06bee3b6215365415a747a3c5e",
+            "gallery/media/objects/mauna/elite-block/split-sensor-mast-and-roof-pins-detail.png": "a6d1a274e65dced038f70024d89f5977aa1b885af97437b002fa2fb1baffd033",
+            "gallery/media/objects/mauna/elite-block/technical-wireframe.png": "b63be4505c5df58f7a4e4faa9ea5b28d0b6e014534b6ea145062c642f5852bd7",
+            "sources/materials/mauna/elite-block/band-blue-colour.png": "250e2b3fb5395c67784574d5450716b35d31debfd2364e413bbb7be321392b11",
+            "sources/materials/mauna/elite-block/cast-concrete-colour.png": "4df10d9e423d8060c59540d38e5f76f8e85469790f9e616513de5a145f62f0e9",
+            "sources/materials/mauna/elite-block/cast-service-normal.png": "c0ca898aa9dc71c4d9cb8bf2cd68d6d6561b2ad4821ea35439e21388639185b8",
+            "sources/materials/mauna/elite-block/concrete-orm.png": "dc2ed6b51ce149ca743ba5b3b3ada630fb74eb41201298d515ed5bc7aea7b7d1",
+            "sources/materials/mauna/elite-block/metal-orm.png": "8162bc2e9e1d5ad1eed026838a537370bb7ad608bd88a4694e2d7afb8a85dca2",
+            "sources/materials/mauna/elite-block/pale-alloy-colour.png": "bdca75b53175f5605150f8fda6516cfc2d49712bc4eead381430caafc0dcc654",
+            "sources/materials/mauna/elite-block/used-brass-colour.png": "915b262164a3778e9d70e980da2c64b7e42fd5ed0eec71f817d832adb6a32368",
+            "sources/materials/mauna/elite-block/window-amber-colour.png": "45c0a4adcd03167d3d3ebd259d12ec5323a10cff5b0bed16066a3c1ee4ff2059",
+            "sources/materials/mauna/elite-block/window-orm.png": "0d33bf9cb825b9ae38bf2f5c353d6eb4bc46facfc75569ac2492fa271efe52c5",
+            "sources/tools/blender/remaster_mauna_elite_block.py": "ca0721622ea62082e7f690bee8abb85e2790e967d83c3dd067dac7eca8bcb46c",
+            "sources/tools/blender/verify_mauna_elite_block.py": "16aa7251d5831d0f0a7ef68e50c388ef7267911aa9824a77297bdb4c2e15fedb",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn07-concept-review.json": "a690fbc41d9ee2111ee18504ff07a46514228c1155af39f8df94cfdfaea33356",
+            "sources/docs/reconstruction/models/mn07-concept-prompt-1.txt": "d932a8ecb44c21d6c5784fcfc16818b34a859338a143dbcd593eab1cd292f069",
+            "gallery/media/concepts/mauna/mn07-review-1.png": "7f9ace5d502efdf0c1e7090d8e76ea9b7e578f5b44df296139f8496451772881"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/elite-block/visual-review.json",
+          "sha256": "b10d4488a3c764ba2c371085e117be14b2fff222a98df8a5fcf25305fb0d275e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/elite-block/visual-review.json",
+          "sha256": "b10d4488a3c764ba2c371085e117be14b2fff222a98df8a5fcf25305fb0d275e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/elite-block/visual-review.json",
+          "sha256": "b10d4488a3c764ba2c371085e117be14b2fff222a98df8a5fcf25305fb0d275e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/elite-block/visual-review.json",
+          "sha256": "b10d4488a3c764ba2c371085e117be14b2fff222a98df8a5fcf25305fb0d275e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/elite-block/runtime-review.json",
+          "sha256": "4cc00fe9553c48414d19091f31dd693869680a46cf27c139d6af531dd62ce21d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
