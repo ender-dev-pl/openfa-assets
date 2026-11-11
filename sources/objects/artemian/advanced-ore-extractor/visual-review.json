@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/126",
+  "binaries": {
+    "blend": "18279b21dbe753c7043ac22a8f01b3e38e4b8831d6fb0c2b70af8ff0ae7ecf58",
+    "glb": "acf228486a7cc857334bc3c316f08f85ac5190e695bc95c01c619aabab294a1b"
+  },
+  "runtime_report_sha256": "0d9aa8ee6173fe6af6dc31b3eafd79dad64fba4d73d75f166414413407b13fdb",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 4.5063990867031185e-05,
+      "margin": 56
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 7.543696864085214e-05,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 8.31186102568365e-05,
+      "margin": 107
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar20-review-1.png",
+      "sha256": "69e767db5e81e9d6b2fe8cfcd14cc76158a80681633e871b880b4e0d290ad32a",
+      "prompt": "sources/docs/reconstruction/models/ar20-concept-prompt-1.txt",
+      "feedback": "Selected recognizable continuous two-lobed green shell,front leaf with exactly2copper ports,taller hood with one narrow brass open-bottom arch andstraight pale rod,one tiny dark right point. Mild wear andquiet surfaces agree with ownsource. Concept enlarged hood height and slightly widened brass lip;ownsource governs final proportions. No Terra-style exposed drilling legs borrowed."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "de7d219dbdd4ad87f1d4129fb3286ed0126a6b847071aeb4d35499f1f5b8b655",
+        "glb": "e900cc62f6599bd84ef0dcecc36289232e1039bae253fa3e485172bddc5fd8a7"
+      },
+      "status": "revision_required",
+      "finding": "Actual saved-native front-quarter render shows partly hidden brass ribbon,front leaf intersects arch at bottom,a projecting rod bracket andfirst copperpoint on silhouette. These differ from ownsource andselectedconcept.",
+      "action": "Move narrow arch and rod tofront-right hood surface,subdivide ribbon across width/height tofollow actualskin,keep rod close tohood andseat bothcopperpoints onvisiblefrontsurface. Preserve actualcontact,recess,closedpositive,texture andruntimechecks.",
+      "runtime_report_sha256": "1400be9e65e0ac0624561137ca98d1ba4892163358461429fbcd1596c80e3e34"
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "0ee9884318f98ae29c131c1af656d100eb75e7b9252ac65f777cc8a8b60c85f9",
+        "glb": "e92b40106beafc1eeb58affe89e29fa13a44f2d2eab4b7d463c595a520f79f4c"
+      },
+      "runtime_report_sha256": "139fe584aad0f86db70d61331b2a8c4c232999653d072155be543aec7413b02b",
+      "status": "revision_required",
+      "finding": "Actual independent GLB whole/front/rear andtwo details confirm corrected arch/rod/fittings, but quiet alloy shows polygon-shaped tonal seams on broad shell. Smart-project islands break continuous weather texture.",
+      "action": "Use continuous body-space planar UVcoordinates for broad shell so adjacent vertices share texturecoordinates;preserve geometry/budgets/portablemaps and rerun actualnative/importchecks."
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "be7ccee5b43c716d86ceef70568a3e4ab18f0f34f9f37e783636e7b083d45152",
+        "glb": "a722e510e3a9ede37f0b697f8b5db11ff0db6b400db4a81e973c040a08593e15"
+      },
+      "runtime_report_sha256": "b9aaa386801961696f1f17b40b71f0bf1d4b0a37d5bcf0afac169faf1c0be1d9",
+      "status": "revision_required",
+      "finding": "Final three-column actuallegacy/concept/import comparison overrides provisional acceptance of individual views:front leaf still too round/disc-like,and hood too spherical. Source andselectedconcept haveelongated front andcurled upperleft hood shoulder.",
+      "limitations": [
+        "Metric dimensions,hidden backside/sections andcontacts authored. No own operating phases recovered or invented.",
+        "Asset-agent acceptance;final user artistic acceptance andgameclient scale/state/shaders/performance remain separate."
+      ],
+      "action": "Narrow/elongate front leaf ondiagonal sourceaxis andlean upperhood shoulder towardfront-left,retaining source fittings andactualcontacts. Rerun savednative/import/visualchecks."
+    },
+    {
+      "pass_number": 4,
+      "binaries": {
+        "blend": "18279b21dbe753c7043ac22a8f01b3e38e4b8831d6fb0c2b70af8ff0ae7ecf58",
+        "glb": "acf228486a7cc857334bc3c316f08f85ac5190e695bc95c01c619aabab294a1b"
+      },
+      "runtime_report_sha256": "0d9aa8ee6173fe6af6dc31b3eafd79dad64fba4d73d75f166414413407b13fdb",
+      "status": "accepted_asset_review",
+      "finding": "Final whole/front/rear andbothdetails viewed. Narrow elongated lowfrontleaf andupperhood shoulder leaning front-left nowretain source/selectedconcept silhouette;two readable copperfrontfittings,narrow continuous brassarch,straightphysicallysupportedpalerod andtinyrightpoint arepresent. Quiet continuous greenalloy has sparsewear andmeasured dent. Actual native/import closedpositive/recess/rim/arch/rodcontacts/texturepixels/root/renderpairs pass.21470triangles,10closedmeshes,4materials,6portable512pxmaps;maximumsurfaceerror6.143906006172983e-8.",
+      "limitations": [
+        "Hidden backside,sections,contacts andcell-relative dimensions authored;no recovered metricheight or operatingphases claimed.",
+        "Asset-agent acceptance only;final user artistic acceptance andgameclient integration/scale/state/shaders/performance separate."
+      ]
+    }
+  ],
+  "final_review": "Actual original sprite/enlargement and41catalogueupdates,selectedrealImageGen andnative/importGLB whole/front/rear/details reviewed. Elongatedlowfrontleaf/curledtallerhood,exactly2copperfrontfittings,one narrowopen-bottombrassarch,straightpalerod andtiny darkrightpoint retain sourceanatomy. Render feedback moved arch/rod tofront-right hood,conformed actualribbon acrosswidth/height toskin andseated bothcopperpoints onvisiblefront. Three-column source/concept/import feedback narrowed andelongated frontleaf andleaned upperhood shoulder towardfront-left. Tenclosedpositiveparts,actualrecess/rim/arch/rod-supportcontacts,dent andportabletextures checked. Continuous body-space UVs remove polygon-shaped smart-project weather seams.",
+  "limitations": [
+    "Own4layers/41catalogueupdates show staticanatomy,reveal andannotations,not operating overlays. PB13/ST01 are Terran functionalcontext,not Artemian geometry ormotion.",
+    "Backside,sections,contacts andcell-relative dimensions are authored;no recovered underground machinery or metricheight claimed.",
+    "Client scale/state/shaders/Android performance andfinaluser artisticacceptance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

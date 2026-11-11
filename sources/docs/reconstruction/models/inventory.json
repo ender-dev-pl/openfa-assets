@@ -26258,7 +26258,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/126",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           987
         ]
@@ -26332,21 +26332,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar20/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/advanced-ore-extractor/model.blend",
           "present": true,
-          "sha256": "26e612b41b5a34fc288c4dfe497fa6feb86d17c89a1aa13e2cc2c5a73ee46dff",
-          "final_visual_acceptance": "not-established"
+          "sha256": "18279b21dbe753c7043ac22a8f01b3e38e4b8831d6fb0c2b70af8ff0ae7ecf58",
+          "media": "gallery/media/objects/artemian/advanced-ore-extractor",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/advanced-ore-extractor/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/advanced-ore-extractor/rear-quarter.png"
+            },
+            {
+              "label": "Brass arch and supported pale rod",
+              "image": "gallery/media/objects/artemian/advanced-ore-extractor/brass-arch-and-supported-pale-rod-detail.png"
+            },
+            {
+              "label": "Two copper front fittings",
+              "image": "gallery/media/objects/artemian/advanced-ore-extractor/two-copper-front-fittings-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/advanced-ore-extractor/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/advanced-ore-extractor/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -26376,6 +26403,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 126
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar20/model.blend",
+          "present": true,
+          "sha256": "26e612b41b5a34fc288c4dfe497fa6feb86d17c89a1aa13e2cc2c5a73ee46dff",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/advanced-ore-extractor/model.blend",
+        "sha256": "18279b21dbe753c7043ac22a8f01b3e38e4b8831d6fb0c2b70af8ff0ae7ecf58",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/advanced-ore-extractor",
+          "verifier": "sources/tools/blender/verify_artemian_advanced_ore_extractor.py",
+          "files": {
+            "sources/objects/artemian/advanced-ore-extractor/model.blend": "18279b21dbe753c7043ac22a8f01b3e38e4b8831d6fb0c2b70af8ff0ae7ecf58",
+            "sources/objects/artemian/advanced-ore-extractor/model.glb": "acf228486a7cc857334bc3c316f08f85ac5190e695bc95c01c619aabab294a1b",
+            "sources/objects/artemian/advanced-ore-extractor/model.json": "c850decaa5013afeac2b7a6ca41774f7576f4d43dbf0ca03a7273f755a060939",
+            "sources/objects/artemian/advanced-ore-extractor/README.md": "6b1c988a4b086a783416db5065a563a2f1ddf0cdd6dc220af6c5b7f504571cf7",
+            "sources/objects/artemian/advanced-ore-extractor/runtime-review.json": "0d9aa8ee6173fe6af6dc31b3eafd79dad64fba4d73d75f166414413407b13fdb",
+            "sources/objects/artemian/advanced-ore-extractor/visual-review.json": "c85a212771c1bb8edb04679867e3ec7b424e874e2a21e974d9f46b7fe889eb3f",
+            "gallery/media/objects/artemian/advanced-ore-extractor/brass-arch-and-supported-pale-rod-detail.png": "b9cba239d1da05feeb724bd4896b7bd3f69c128f0d21c9621c32b1ada35a7f68",
+            "gallery/media/objects/artemian/advanced-ore-extractor/concept-glb-comparison.jpg": "1ee656265d4e538ede1541b6716b52578ca3620f08381142838539c35e3e677c",
+            "gallery/media/objects/artemian/advanced-ore-extractor/front-quarter.png": "fdb4412ab962da8c8749481abbef8cc6492ba4ed0ee8d0593d2428b804998e5b",
+            "gallery/media/objects/artemian/advanced-ore-extractor/front.png": "8d36cc880c6ec9c1b765d5a717cd19eea4c96de347dc5a6b7d050ee414fc05a8",
+            "gallery/media/objects/artemian/advanced-ore-extractor/imported-front-quarter.png": "fdb4412ab962da8c8749481abbef8cc6492ba4ed0ee8d0593d2428b804998e5b",
+            "gallery/media/objects/artemian/advanced-ore-extractor/imported-front.png": "8d36cc880c6ec9c1b765d5a717cd19eea4c96de347dc5a6b7d050ee414fc05a8",
+            "gallery/media/objects/artemian/advanced-ore-extractor/imported-rear-quarter.png": "edfb4b7fc51e6ca30c8b64c938478adab6a388a58a637f863f6e6fdf01de65f8",
+            "gallery/media/objects/artemian/advanced-ore-extractor/native-front-quarter.png": "ff41891928f711bd18bbce37ec0451de3b8a285cb24816fd47bee895d95b3f03",
+            "gallery/media/objects/artemian/advanced-ore-extractor/native-front.png": "d50fc3197eeebbccdaf23703731548afb1ddf3e5b01bf7bd48c22adbe7c8b469",
+            "gallery/media/objects/artemian/advanced-ore-extractor/native-rear-quarter.png": "8af49e4b491e23e5fccec50a0f9770f32aa16a89864934d7fd51115fde60feb2",
+            "gallery/media/objects/artemian/advanced-ore-extractor/rear-quarter.png": "edfb4b7fc51e6ca30c8b64c938478adab6a388a58a637f863f6e6fdf01de65f8",
+            "gallery/media/objects/artemian/advanced-ore-extractor/technical-wireframe.png": "e72faf81de62dcfb7c5233bdd402c5fcb70daae95fbd06e03d8b55682a57ec46",
+            "gallery/media/objects/artemian/advanced-ore-extractor/two-copper-front-fittings-detail.png": "edf36ee7ab93411e2fa14b1a0ec6c0e803c49bee0cefb0bdd817b609e07fee56",
+            "sources/materials/artemian/advanced-ore-extractor/copper-fitting-colour.png": "1c6fc3f284779bbde4d8cc5c651c013ab880a26e313305e88da20ae36120b81a",
+            "sources/materials/artemian/advanced-ore-extractor/exposed-alloy-edge-colour.png": "39346cf95969d954b879952fc8a9a12a645d15bdaba68f9fd2807e49f8702c7b",
+            "sources/materials/artemian/advanced-ore-extractor/muted-green-alloy-colour.png": "f54a1b1816bfeacc59e033f381b8c748acbdd845f40005c128cbf6a0a8b73803",
+            "sources/materials/artemian/advanced-ore-extractor/occlusion-roughness-metallic.png": "65fb5369fb3e1da9ddbf8bc13cddfa83485e17d4493f62af31363c169614aec6",
+            "sources/materials/artemian/advanced-ore-extractor/oxidized-alloy-orm.png": "335b6f4fc45f7c1b6c492cd93632b945359c456c5d2d4776b299e7b274f1c7f9",
+            "sources/materials/artemian/advanced-ore-extractor/used-metal-normal.png": "a95118b61579a7d7b4a268357b4fdc2b42d6c915a03c2fd7f05a040dbb6897d8",
+            "sources/tools/blender/remaster_artemian_advanced_ore_extractor.py": "014d1cc78f097d628d80c0a37e512784ecd475c47a1dc12acf85a5a61b44ecbf",
+            "sources/tools/blender/verify_artemian_advanced_ore_extractor.py": "ccd34be149c7d42fbb72d82322e3ad2bc4c60308308010bc7b58b8ee98410e2a",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar20-concept-review.json": "0434d59568b217e510ef69267f72cd9109f116fc04eda5951f067a06801cf3f9",
+            "sources/docs/reconstruction/models/ar20-concept-prompt-1.txt": "082b410a82ee8ef1bc6c75c7e0f3894de5f14b03dbe73a581d921a072233993f",
+            "gallery/media/concepts/artemian/ar20-review-1.png": "69e767db5e81e9d6b2fe8cfcd14cc76158a80681633e871b880b4e0d290ad32a"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/advanced-ore-extractor/visual-review.json",
+          "sha256": "c85a212771c1bb8edb04679867e3ec7b424e874e2a21e974d9f46b7fe889eb3f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/advanced-ore-extractor/visual-review.json",
+          "sha256": "c85a212771c1bb8edb04679867e3ec7b424e874e2a21e974d9f46b7fe889eb3f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/advanced-ore-extractor/visual-review.json",
+          "sha256": "c85a212771c1bb8edb04679867e3ec7b424e874e2a21e974d9f46b7fe889eb3f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/advanced-ore-extractor/visual-review.json",
+          "sha256": "c85a212771c1bb8edb04679867e3ec7b424e874e2a21e974d9f46b7fe889eb3f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/advanced-ore-extractor/runtime-review.json",
+          "sha256": "0d9aa8ee6173fe6af6dc31b3eafd79dad64fba4d73d75f166414413407b13fdb",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

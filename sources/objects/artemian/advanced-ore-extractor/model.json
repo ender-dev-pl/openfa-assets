@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/126",
+  "key": "AR20",
+  "name": "Advanced Ore Extractor",
+  "culture": "artemian",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 13,
+  "construction_updates": 34,
+  "triangles": 21470,
+  "triangle_budget": 30000,
+  "mesh_nodes": 10,
+  "materials": 4,
+  "author": "sources/tools/blender/remaster_artemian_advanced_ore_extractor.py",
+  "author_sha256": "014d1cc78f097d628d80c0a37e512784ecd475c47a1dc12acf85a5a61b44ecbf",
+  "binaries": {
+    "blend": "18279b21dbe753c7043ac22a8f01b3e38e4b8831d6fb0c2b70af8ff0ae7ecf58",
+    "glb": "acf228486a7cc857334bc3c316f08f85ac5190e695bc95c01c619aabab294a1b"
+  },
+  "textures": {
+    "copper-fitting-colour.png": "1c6fc3f284779bbde4d8cc5c651c013ab880a26e313305e88da20ae36120b81a",
+    "exposed-alloy-edge-colour.png": "39346cf95969d954b879952fc8a9a12a645d15bdaba68f9fd2807e49f8702c7b",
+    "muted-green-alloy-colour.png": "f54a1b1816bfeacc59e033f381b8c748acbdd845f40005c128cbf6a0a8b73803",
+    "occlusion-roughness-metallic.png": "65fb5369fb3e1da9ddbf8bc13cddfa83485e17d4493f62af31363c169614aec6",
+    "oxidized-alloy-orm.png": "335b6f4fc45f7c1b6c492cd93632b945359c456c5d2d4776b299e7b274f1c7f9",
+    "used-metal-normal.png": "a95118b61579a7d7b4a268357b4fdc2b42d6c915a03c2fd7f05a040dbb6897d8"
+  },
+  "front_ports": [
+    {
+      "point": [
+        -0.5499999523162842,
+        -1.0296682119369507,
+        0.2199999988079071
+      ],
+      "normal": [
+        0.31431499123573303,
+        -0.8588132858276367,
+        0.4045317471027374
+      ]
+    },
+    {
+      "point": [
+        -0.20000001788139343,
+        -0.7232813835144043,
+        0.3100000023841858
+      ],
+      "normal": [
+        0.4058677852153778,
+        -0.4663694500923157,
+        0.7859840393066406
+      ]
+    }
+  ],
+  "small_point": {
+    "point": [
+      0.7799999713897705,
+      -0.03337383270263672,
+      0.20999999344348907
+    ],
+    "normal": [
+      0.8574144244194031,
+      -0.47771719098091125,
+      -0.19138096272945404
+    ]
+  },
+  "arch_contacts": [
+    [
+      0.255,
+      -0.3398050956726074,
+      0.28
+    ],
+    [
+      0.255,
+      -0.31997439193725585,
+      0.55
+    ],
+    [
+      0.44499999999999995,
+      -0.30321714210510253,
+      0.28
+    ],
+    [
+      0.44499999999999995,
+      -0.2397365264892578,
+      0.55
+    ],
+    [
+      0.35,
+      -0.08815619277954101,
+      0.742
+    ]
+  ],
+  "rod_supports": [
+    {
+      "body_point": [
+        0.3499999940395355,
+        -0.3255462646484375,
+        0.20000000298023224
+      ],
+      "rod_point": [
+        0.35,
+        -0.34573341369628907,
+        0.2
+      ]
+    },
+    {
+      "body_point": [
+        0.3499999940395355,
+        -0.3059852123260498,
+        0.5299999713897705
+      ],
+      "rod_point": [
+        0.35,
+        -0.34573341369628907,
+        0.53
+      ]
+    }
+  ],
+  "rod_centre": [
+    0.35,
+    -0.3607334136962891,
+    0.31
+  ],
+  "physical_dent": {
+    "point": [
+      -0.09999999403953552,
+      -0.5,
+      0.36091405153274536
+    ],
+    "normal": [
+      0.31720444560050964,
+      -0.26342082023620605,
+      0.911038339138031
+    ]
+  },
+  "interpretation": [
+    "Own low two-lobed shell,2front copper fittings,narrow brass arch,straight pale rod and1tiny dark right point govern geometry.",
+    "No own operating overlays;genericPB13/ST01 is functional Terran context,not Artemian motion. Hidden backside/sections/cell-relative dimensions are authored."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront. Cell-relative proportions authored;no recovered metric dimensions.",
+  "concept_review": "sources/docs/reconstruction/models/ar20-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

@@ -244,11 +244,13 @@ Additional views: [Front](../gallery/media/objects/artemian/force-fields/front.p
 
 `openfa:building/legacy/126`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Advanced Ore Extractor](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar20/front-quarter.png)
+![Advanced Ore Extractor](../gallery/media/objects/artemian/advanced-ore-extractor/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar20/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar20/model.glb)
+[Blend](../sources/objects/artemian/advanced-ore-extractor/model.blend) · [GLB](../sources/objects/artemian/advanced-ore-extractor/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/advanced-ore-extractor/front.png) · [Rear quarter](../gallery/media/objects/artemian/advanced-ore-extractor/rear-quarter.png) · [Brass arch and supported pale rod](../gallery/media/objects/artemian/advanced-ore-extractor/brass-arch-and-supported-pale-rod-detail.png) · [Two copper front fittings](../gallery/media/objects/artemian/advanced-ore-extractor/two-copper-front-fittings-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/advanced-ore-extractor/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/advanced-ore-extractor/concept-glb-comparison.jpg)
 
 ## Rare Ore Extractor
 
