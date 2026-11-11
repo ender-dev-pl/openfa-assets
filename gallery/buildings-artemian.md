@@ -150,11 +150,13 @@ Additional views: [Front](../gallery/media/objects/artemian/shielded-solars/fron
 
 `openfa:building/legacy/119`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Shell](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar13/front-quarter.png)
+![Shell](../gallery/media/objects/artemian/shell/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar13/model.glb)
+[Blend](../sources/objects/artemian/shell/model.blend) · [GLB](../sources/objects/artemian/shell/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/shell/front.png) · [Rear quarter](../gallery/media/objects/artemian/shell/rear-quarter.png) · [Double copper blocks and brass pins](../gallery/media/objects/artemian/shell/double-block-brass-fittings-detail.png) · [Integral shell ribs](../gallery/media/objects/artemian/shell/integral-shell-ribs-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/shell/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/shell/concept-glb-comparison.jpg)
 
 ## Arms Forge
 

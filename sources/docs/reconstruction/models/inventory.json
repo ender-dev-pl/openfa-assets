@@ -24466,7 +24466,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/119",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           980
         ]
@@ -24540,21 +24540,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar13/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/shell/model.blend",
           "present": true,
-          "sha256": "9cdd7a69bb252dfbcb06c553794d0576ae16f927901a3fcc07324257a6dfed8b",
-          "final_visual_acceptance": "not-established"
+          "sha256": "a8d9211c70793a4736de19582888545677a71e7d7432509b746043ffab2be4a9",
+          "media": "gallery/media/objects/artemian/shell",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/shell/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/shell/rear-quarter.png"
+            },
+            {
+              "label": "Double copper blocks and brass pins",
+              "image": "gallery/media/objects/artemian/shell/double-block-brass-fittings-detail.png"
+            },
+            {
+              "label": "Integral shell ribs",
+              "image": "gallery/media/objects/artemian/shell/integral-shell-ribs-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/shell/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/shell/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -24584,6 +24611,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 119
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar13/model.blend",
+          "present": true,
+          "sha256": "9cdd7a69bb252dfbcb06c553794d0576ae16f927901a3fcc07324257a6dfed8b",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/shell/model.blend",
+        "sha256": "a8d9211c70793a4736de19582888545677a71e7d7432509b746043ffab2be4a9",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/shell",
+          "verifier": "sources/tools/blender/verify_artemian_shell.py",
+          "files": {
+            "sources/objects/artemian/shell/model.blend": "a8d9211c70793a4736de19582888545677a71e7d7432509b746043ffab2be4a9",
+            "sources/objects/artemian/shell/model.glb": "4b41c069f24f3b0c00320f9853106eb8d8d6742e13ba704826b4b865781e83fd",
+            "sources/objects/artemian/shell/model.json": "f3e05aefadc093a164613f5a2755078ed208fcefb97b1a5648144fe1618451fd",
+            "sources/objects/artemian/shell/README.md": "08c1f4af49184df589d4d8cbe65dd4fbbf35153359bde55f810bc06081e75e28",
+            "sources/objects/artemian/shell/runtime-review.json": "448457da354a570ca77f1fcac0e412973cff332cd3c3026c4d90d16b6559ef7b",
+            "sources/objects/artemian/shell/visual-review.json": "43353c49bbbb75eee2148e945a807fc14e16390ab202d9c35b0eef873497d1cf",
+            "gallery/media/objects/artemian/shell/concept-glb-comparison.jpg": "39dc42724a9a2be10fc3791c3c7fdcbbce1411727fffaaedd3a1712f4b0250f3",
+            "gallery/media/objects/artemian/shell/double-block-brass-fittings-detail.png": "d17e5c06093f94196d0147432fe17ba9617ebdf605c1c283ed8e4f7bad884d65",
+            "gallery/media/objects/artemian/shell/front-quarter.png": "7f73dcc9916077c85d5f83b7111b1404fd792f7cfa528dceb595b934d614cb4e",
+            "gallery/media/objects/artemian/shell/front.png": "c138e2c4fe45b51362da6c981d03d6390e15a3184d4c561704449c770f8c5540",
+            "gallery/media/objects/artemian/shell/imported-front-quarter.png": "7f73dcc9916077c85d5f83b7111b1404fd792f7cfa528dceb595b934d614cb4e",
+            "gallery/media/objects/artemian/shell/imported-front.png": "c138e2c4fe45b51362da6c981d03d6390e15a3184d4c561704449c770f8c5540",
+            "gallery/media/objects/artemian/shell/imported-rear-quarter.png": "1ac45eadd863b3613a29d16c8e1c07f0ad1f8481eafaff7b5a8a7b1cb223a896",
+            "gallery/media/objects/artemian/shell/integral-shell-ribs-detail.png": "c12b58b5882eac78bb1b05a8740821c6e68069e67bb21d9b4101a0a3b823e3c6",
+            "gallery/media/objects/artemian/shell/native-front-quarter.png": "f01087685cb7b1a507602c2f7781893cbfb06b4d32093ac2be3786a88099ed3d",
+            "gallery/media/objects/artemian/shell/native-front.png": "27cc318e50d9bef75a166fde83e3b30357737216957ec353924d39cef3cf9c8b",
+            "gallery/media/objects/artemian/shell/native-rear-quarter.png": "c195cbc2843ecb10c704488dcf5153544b5332490ac0956ecfb40dcdb401fdd1",
+            "gallery/media/objects/artemian/shell/rear-quarter.png": "1ac45eadd863b3613a29d16c8e1c07f0ad1f8481eafaff7b5a8a7b1cb223a896",
+            "gallery/media/objects/artemian/shell/technical-wireframe.png": "ad51835ae08349256ccef89cccb52bc9bae466a57f856b38524c570c52f453bb",
+            "sources/materials/artemian/shell/amber-fitting-colour.png": "aa072b1e2caa63383ac0fb873bb8e8d3e220191de7d8bbc2980e70587ce43051",
+            "sources/materials/artemian/shell/copper-fitting-colour.png": "7b93b855881d20e8ef4fe7447d6b03d512b40525f79986ebd8aeca4f566f66c2",
+            "sources/materials/artemian/shell/exposed-alloy-edge-colour.png": "181533ec2d691b369a9b679f41c9d7f5b220ddba96ab3051613e5a047a5c56a5",
+            "sources/materials/artemian/shell/muted-green-alloy-colour.png": "dd69c8111098400c2af484f02ee7751f37231895c99b5925d9d2296f424d3881",
+            "sources/materials/artemian/shell/occlusion-roughness-metallic.png": "62db8b746466cdc6f531bb5dd1427abf3f375b1b3abedf4f69e814b02eda0dd3",
+            "sources/materials/artemian/shell/used-metal-normal.png": "ded66bc2b1b5df0bd417d8d9f3e95d102a720de4cfa62df7376bf582ef9f066c",
+            "sources/tools/blender/remaster_artemian_shell.py": "a65e529556dd2dc8e72a1a7a063407c69f2739b7d940158803ac7b75a149442f",
+            "sources/tools/blender/verify_artemian_shell.py": "f937429fc30a1e7d006ea47f81a34608149d55c3de9371808e05187d1b818f2a",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar13-concept-review.json": "27ab2250e4f34ede5308455702fd5520dd9e2470a93a99562a6ac834cc07f093",
+            "sources/docs/reconstruction/models/ar13-concept-prompt-1.txt": "68182a5946c856c588f109ca0dc0a3555158b912786c4720bcaf00d6c4ae353e",
+            "gallery/media/concepts/artemian/ar13-review-1.png": "cc3bd64925329d80e700adc654106d243f0e498c031e478911ec555c53a0c14e"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/shell/visual-review.json",
+          "sha256": "43353c49bbbb75eee2148e945a807fc14e16390ab202d9c35b0eef873497d1cf",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/shell/visual-review.json",
+          "sha256": "43353c49bbbb75eee2148e945a807fc14e16390ab202d9c35b0eef873497d1cf",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/shell/visual-review.json",
+          "sha256": "43353c49bbbb75eee2148e945a807fc14e16390ab202d9c35b0eef873497d1cf",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/shell/visual-review.json",
+          "sha256": "43353c49bbbb75eee2148e945a807fc14e16390ab202d9c35b0eef873497d1cf",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/shell/runtime-review.json",
+          "sha256": "448457da354a570ca77f1fcac0e412973cff332cd3c3026c4d90d16b6559ef7b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

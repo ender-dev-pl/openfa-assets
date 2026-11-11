@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/119",
+  "binaries": {
+    "blend": "a8d9211c70793a4736de19582888545677a71e7d7432509b746043ffab2be4a9",
+    "glb": "4b41c069f24f3b0c00320f9853106eb8d8d6742e13ba704826b4b865781e83fd"
+  },
+  "runtime_report_sha256": "448457da354a570ca77f1fcac0e412973cff332cd3c3026c4d90d16b6559ef7b",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00018315018315018315,
+      "margin": 91
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0001838871581862236,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00016454134101192923,
+      "margin": 91
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar13-review-1.png",
+      "sha256": "cc3bd64925329d80e700adc654106d243f0e498c031e478911ec555c53a0c14e",
+      "prompt": "sources/docs/reconstruction/models/ar13-concept-prompt-1.txt",
+      "feedback": "Selected low broad green ribbed shell,two double copper-block front fittings with unequal brass pins,and two small dark round insets. Actual source controls feature layout and modest heights;rib/hardware sections and hidden cloaking engineering remain interpretations."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "749bff455359bc9f7796f6e945e2eb074cd20b9b3750511a48f1d51881710d22",
+        "glb": "ea628e538ef888929ffc3a365af305c83aaff18787f1c4c1c3224c305c88d0ab"
+      },
+      "runtime_report_sha256": "e895c18751d1ed77e57178427987425e8a5c62e531351c3046c2b88632a34281",
+      "status": "revision_required",
+      "finding": "Actual whole legacy/concept/import board and native quarter reviewed. Sparse counts/attachments and low broad shell remain,but double copper blocks/brass pins are too small relative to source;integral ribs weak and broad roof material reflections obscure them. Actual full native/import23368tri/11closedmeshes/6equalmaps/surfaceerror6.143906006172983e-8 passes technically.",
+      "action": "Enlarge front block/pin sections and modest heights,strengthen integral ribs,normalize radial UV to this shell height (not inherited dock dimensions),soften metallic contrast and mute bright rims. Recheck actual contacts and source proportions."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "f36d1fee22de50dd2eb38ccf69e7935c6ae27d59f83195bea254ef15727f00ef",
+        "glb": "961d256a579a53ac6844c6bfbd6230f4a67b75e7c25b7997be362cba95aeeaef"
+      },
+      "runtime_report_sha256": "db5162e7f6ec566dde2d0a0d9c86ff3d075cd550d972df625c5b26ea2560ca09",
+      "status": "revision_required",
+      "finding": "Actual second native quarter has clearer ribs,larger source-like blocks/pins and quieter material,but crest tops show angular triangular transitions. Full native/import23368tri/11positiveclosed/6equalmaps/error6.143906006172983e-8 passes.",
+      "action": "Redistribute sphere tessellation from192azimuth/48latitude to128azimuth/96latitude for denser meridian sampling across rib profiles,within30000budget;keep continuous shell normals smooth while retaining hard fitting edges. Regenerate and inspect actual crest details."
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "a8d9211c70793a4736de19582888545677a71e7d7432509b746043ffab2be4a9",
+        "glb": "4b41c069f24f3b0c00320f9853106eb8d8d6742e13ba704826b4b865781e83fd"
+      },
+      "runtime_report_sha256": "448457da354a570ca77f1fcac0e412973cff332cd3c3026c4d90d16b6559ef7b",
+      "status": "agent_review_accepted",
+      "finding": "Actual final whole legacy/concept/import comparison,front/rear and both fitting/rib details inspected. Low broad green shell,five broad integral crests,two double copper-block fittings with modest unequal gold pins and two dark round points retain source arrangement. Feedback enlarges initially undersized fittings,corrects height-normalized radialUV/material contrast and redistributes sphere sampling to128azimuth/96latitude with smooth shell normals. Crest triangulation is visually softened;hard fitting corners remain. Fine scratches/stains/recess wear,three small physical chips and one actual sampled shallow dent retained.29628triangles,11native/imported positiveclosed meshes,5materials,6equaldecodedmaps,surfaceerror2.9802322387695312e-8. Source-specific block/body,block/block,pin/block and both spot contacts,low proportions,unequal tips,crest rays and dent guards pass. Frozen original pair hashes unchanged.",
+      "action": "Accept asset-only review. Exact rib/fixture sections and hidden cloaking engineering remain authored/unknown. Narrative one-per-colony/weapon restriction is not runtime implementation;class255 has no indexed capability/MAprofile,no operating clip inferred. Final user artistic/client scale/state/shader/performance acceptance separate."
+    }
+  ],
+  "final_review": "Actual source/concept/imported whole/front/rear and fitting/roof details reviewed. Low broad green integral-rib shell,two unequal double copper-block/brass-pin fittings and two dark points retain sparse source anatomy. Actual feedback enlarges fittings,strengthens ribs,corrects radial UV/material contrast and refines crest sampling/normals. All11native/imported meshes closed positive,six decoded maps agree and source-specific contacts/proportions/crest/dent guards pass.",
+  "limitations": [
+    "Exact rib/fitting sections,hidden cloaking engineering and metric dimensions remain authored or unknown.",
+    "Unique class255 has no indexed MAprofile or runtime capability;catalogue reveal does not establish cloaking operation.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
