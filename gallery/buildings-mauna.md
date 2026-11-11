@@ -178,13 +178,15 @@ Additional views: [Front](../gallery/media/objects/mauna/attack-pods/front.png) 
 
 `openfa:building/legacy/144`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Pulse Tower](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/front-quarter.png)
+![Pulse Tower](../gallery/media/objects/mauna/pulse-tower/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/model.glb)
+[Blend](../sources/objects/mauna/pulse-tower/model.blend) · [GLB](../sources/objects/mauna/pulse-tower/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/animation-00.webm)
+Additional views: [Front](../gallery/media/objects/mauna/pulse-tower/front.png) · [Rear quarter](../gallery/media/objects/mauna/pulse-tower/rear-quarter.png) · [Fork head and real triangular support](../gallery/media/objects/mauna/pulse-tower/fork-head-and-triangular-support-detail.png) · [Two reservoirs and opaque front fittings](../gallery/media/objects/mauna/pulse-tower/two-reservoirs-and-front-fittings-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/pulse-tower/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/pulse-tower/concept-glb-comparison.jpg)
+
+[Play animation: Animation](../gallery/media/objects/mauna/pulse-tower/animation-00.webm)
 
 ## Screening Pods
 

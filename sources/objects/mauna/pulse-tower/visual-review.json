@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/144",
+  "binaries": {
+    "blend": "b8acfdde3a176f7774f9e0f9e3d75729e99f4747618fbd96ad187b2f2e226479",
+    "glb": "d6a17e2bc10e5dac4d64eda188583208d526143c1203443d1c216980f8c89b34"
+  },
+  "runtime_report_sha256": "cf52535f5007b97ed4401971937c6cf5eb8d97aea5c24fa95721e9bebde8839b",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00021182088939098286,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0008286242121277983,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0005583472920156337,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn15-review-1.png",
+      "sha256": "8de5cc80fd3a5556b475967b40a766984fb184b9d2be5c551855b196bb6ecd8b",
+      "prompt": "sources/docs/reconstruction/models/mn15-concept-prompt-1.txt",
+      "feedback": "Selected against own catalogue/detail and all sixteen correctly composited directional heads. Preserves broad asymmetric wedge/spade head tapering into TWO parallel rectangular prongs, real triangular support aperture, sloping grey-blue base, TWO side brass reservoirs/dark caps, TWO front ochre points, dark lower service slot and ONE low red marking. Source governs final rail length and proportions; the concept may slightly elongate prongs. Fine bearings, caps, recess depths and hidden geometry remain interpretation. No generic Terran dome or prior three circular emitters transferred."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "status": "revision_required",
+      "binaries": {
+        "blend": "822eaf90e50552eb99de536137636417c127f3554b1fa225a506469a2bfcebd1",
+        "glb": "76cf4937059b0819cd93b31b62ad0f0d8c275e8d9b20356a946f1215181a8d5a"
+      },
+      "runtime_report_sha256": "71af2a5b729a983684e73ae4a7085a01b250f3bc7807ca7235a461cee6b4036b",
+      "finding": "Actual source/concept/independent GLB whole/front/rear/support board inspected. Source component counts, aperture, fork gap and65pose supports pass. Head/support appear too pale and matte compared with own grey-blue source and steel concept; soften key edges and use darker used steel PBR. Initial heading1 foreshortens the fork; choose heading5 for source-like comparison renders without changing the controller or geometry registration.",
+      "limitations": [
+        "Camera/preview heading is presentation only, not calibrated legacy heading-index recovery."
+      ]
+    },
+    {
+      "pass_number": 2,
+      "status": "accepted_asset_only",
+      "binaries": {
+        "blend": "b8acfdde3a176f7774f9e0f9e3d75729e99f4747618fbd96ad187b2f2e226479",
+        "glb": "d6a17e2bc10e5dac4d64eda188583208d526143c1203443d1c216980f8c89b34"
+      },
+      "runtime_report_sha256": "cf52535f5007b97ed4401971937c6cf5eb8d97aea5c24fa95721e9bebde8839b",
+      "finding": "Inspected final own-source/selected-concept/independent GLB whole/front/rear/fork-support board, final native hero and reservoir/front-fitting detail. Darker used steel and softened head/support edges improve the grey-blue source/concept match. Heading5 presentation reveals the source-like fork inclination without changing the controller. Broad asymmetric head, two rectangular prongs with a real gap, actual triangular support aperture, two fixed brass reservoirs/caps, two opaque front points, narrow slot and low red mark retain source identity. Actual native/independent GLB65pose checks pass:1692triangles/16closedpositivebatches/5materials/7maps; fourteen attachment contacts at every sample, stationary base, no unintended moving/fixed intersections, triangular opening/solid rays, distinct rails/gap rays, actual blind slot/backing, slope/chips, finite UVs, decoded pixels and retained controller/motion parity. Surface error5.372689884097781e-7; matrix error4.76837158203125e-7. No significant further source/concept discrepancy identified requiring another model pass.",
+      "limitations": [
+        "Hidden bearing/cap/recess construction, rail inclination and cell-relative dimensions are authored. Heading5 and source-like camera are presentation, not calibrated legacy index recovery.",
+        "Own16directional heads establish heading movement, not autonomous scan, firing/recoil or light phases. Opaque front points are fittings, not recovered timed lamps.",
+        "65pose checks are sampled validation, not continuous-sweep proof. Client heading registration, weapon socket, scale/state/shader and Android performance remain separate.",
+        "Agent visual acceptance does not establish final user artistic approval; generic Terran PB17/ST19 anatomy is functional context only."
+      ]
+    }
+  ],
+  "final_review": "Inspected final own-source/selected-concept/independent GLB whole/front/rear/fork-support board, final native hero and reservoir/front-fitting detail. Darker used steel and softened head/support edges improve the grey-blue source/concept match. Heading5 presentation reveals the source-like fork inclination without changing the controller. Broad asymmetric head, two rectangular prongs with a real gap, actual triangular support aperture, two fixed brass reservoirs/caps, two opaque front points, narrow slot and low red mark retain source identity. Actual native/independent GLB65pose checks pass:1692triangles/16closedpositivebatches/5materials/7maps; fourteen attachment contacts at every sample, stationary base, no unintended moving/fixed intersections, triangular opening/solid rays, distinct rails/gap rays, actual blind slot/backing, slope/chips, finite UVs, decoded pixels and retained controller/motion parity. Surface error5.372689884097781e-7; matrix error4.76837158203125e-7. No significant further source/concept discrepancy identified requiring another model pass.",
+  "limitations": [
+    "Hidden bearing/cap/recess construction, rail inclination and cell-relative dimensions are authored. Heading5 and source-like camera are presentation, not calibrated legacy index recovery.",
+    "Own16directional heads establish heading movement, not autonomous scan, firing/recoil or light phases. Opaque front points are fittings, not recovered timed lamps.",
+    "65pose checks are sampled validation, not continuous-sweep proof. Client heading registration, weapon socket, scale/state/shader and Android performance remain separate.",
+    "Agent visual acceptance does not establish final user artistic approval; generic Terran PB17/ST19 anatomy is functional context only."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

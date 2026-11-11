@@ -30776,7 +30776,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/144",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           1005
         ]
@@ -30850,21 +30850,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/pulse-tower/model.blend",
           "present": true,
-          "sha256": "2bc7479c0df4dbfedeb09f44e87084f152d84d76c03f87cf78f481569ae145b0",
-          "final_visual_acceptance": "not-established"
+          "sha256": "b8acfdde3a176f7774f9e0f9e3d75729e99f4747618fbd96ad187b2f2e226479",
+          "media": "gallery/media/objects/mauna/pulse-tower",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/pulse-tower/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/pulse-tower/rear-quarter.png"
+            },
+            {
+              "label": "Fork head and real triangular support",
+              "image": "gallery/media/objects/mauna/pulse-tower/fork-head-and-triangular-support-detail.png"
+            },
+            {
+              "label": "Two reservoirs and opaque front fittings",
+              "image": "gallery/media/objects/mauna/pulse-tower/two-reservoirs-and-front-fittings-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/pulse-tower/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/pulse-tower/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
-        "moving_assemblies": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
+        "moving_assemblies": true,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -30894,6 +30921,98 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 144
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/model.blend",
+          "present": true,
+          "sha256": "2bc7479c0df4dbfedeb09f44e87084f152d84d76c03f87cf78f481569ae145b0",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/pulse-tower/model.blend",
+        "sha256": "b8acfdde3a176f7774f9e0f9e3d75729e99f4747618fbd96ad187b2f2e226479",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/pulse-tower",
+          "verifier": "sources/tools/blender/verify_mauna_pulse_tower.py",
+          "files": {
+            "sources/objects/mauna/pulse-tower/integration-contract.json": "891f40bb7298420219c6fd0f40062f8a6a6cda76901da213e225889a12b2285f",
+            "sources/objects/mauna/pulse-tower/model.blend": "b8acfdde3a176f7774f9e0f9e3d75729e99f4747618fbd96ad187b2f2e226479",
+            "sources/objects/mauna/pulse-tower/model.glb": "d6a17e2bc10e5dac4d64eda188583208d526143c1203443d1c216980f8c89b34",
+            "sources/objects/mauna/pulse-tower/model.json": "9f41256aa8816402834e384f1f2a4611d7ef56599464886e33c2ab8807dff221",
+            "sources/objects/mauna/pulse-tower/README.md": "749311b0de33a18ef24418f8f75c952d30839795410624f8094f2280d159309e",
+            "sources/objects/mauna/pulse-tower/runtime-review.json": "cf52535f5007b97ed4401971937c6cf5eb8d97aea5c24fa95721e9bebde8839b",
+            "sources/objects/mauna/pulse-tower/visual-review.json": "7f4d41cde80297673101381f90f50aee9f90a7f4dcbdf04bdc566d99626a0cd8",
+            "gallery/media/objects/mauna/pulse-tower/animation-00.webm": "66b02a265cf6f4ca4d6f87e19477ff0e5892f1ddc718928fe59a6eb1ce3c1fe9",
+            "gallery/media/objects/mauna/pulse-tower/animation-previews.json": "94ffad8618d3f060ab7a32b8b7f873220190f6856c66638c7a1e0617502ff449",
+            "gallery/media/objects/mauna/pulse-tower/concept-glb-comparison.jpg": "4d08977a4a2190ca3556476421c34d7186f8e78caba063206d6f28df9cb86698",
+            "gallery/media/objects/mauna/pulse-tower/fork-head-and-triangular-support-detail.png": "7bfae00b0ecb991e7cbf2c9da0bca8e11177a3d24675840ea3b4b1647dd808dd",
+            "gallery/media/objects/mauna/pulse-tower/front-quarter.png": "33f241eb714c491ac87c978db52a8887b5b38d6a23fe9921a7273eddb9f4014a",
+            "gallery/media/objects/mauna/pulse-tower/front.png": "11b8436a32a120f7922966d8c62490ae2aa37f12e6c0311291abdc857215faae",
+            "gallery/media/objects/mauna/pulse-tower/imported-front-quarter.png": "33f241eb714c491ac87c978db52a8887b5b38d6a23fe9921a7273eddb9f4014a",
+            "gallery/media/objects/mauna/pulse-tower/imported-front.png": "11b8436a32a120f7922966d8c62490ae2aa37f12e6c0311291abdc857215faae",
+            "gallery/media/objects/mauna/pulse-tower/imported-rear-quarter.png": "1e1ae7288500fb0914b11b7c983f8a216949dd6686c87c52e63ec2c3a61410a1",
+            "gallery/media/objects/mauna/pulse-tower/native-front-quarter.png": "7f193ca26fab6396c9db440e7b7e1e1607c058a536494731b737353d3d5f9eb1",
+            "gallery/media/objects/mauna/pulse-tower/native-front.png": "a3e90781c7eadfe05c369c2ee9f3e8190f4c0554f823f9f8044d52a15a655f49",
+            "gallery/media/objects/mauna/pulse-tower/native-rear-quarter.png": "80e958986f18c26bdaedfc9a107ab5dc912ef734b6add210d782daeac481d152",
+            "gallery/media/objects/mauna/pulse-tower/rear-quarter.png": "1e1ae7288500fb0914b11b7c983f8a216949dd6686c87c52e63ec2c3a61410a1",
+            "gallery/media/objects/mauna/pulse-tower/technical-wireframe.png": "a31e961d50b44be653aa622ec7d94967448130dcae74e81b8e18afabe1763c7f",
+            "gallery/media/objects/mauna/pulse-tower/two-reservoirs-and-front-fittings-detail.png": "2d05ff43a72124051e92ec0f363a211fcd8783e4e9db20c2a31a737962a615e5",
+            "sources/materials/mauna/pulse-tower/brass-colour.png": "51df283d78b86e71ce6982b45ce67d36c56d14b9ec9fdbcc2fec8dceb472c0ac",
+            "sources/materials/mauna/pulse-tower/cast-concrete-colour.png": "10272f675090a85b4e05feb0f1d929f35a223ad360d2c778fce9402a9a1e50ef",
+            "sources/materials/mauna/pulse-tower/cast-service-normal.png": "af02fab7e5ebfcce031a2c4e5c4772cc4bcba9ab3058036c4db95b750d802f16",
+            "sources/materials/mauna/pulse-tower/concrete-orm.png": "95558043e959426c9fb2ba87ae01cfc74aa7202c82215833d61c0460db593469",
+            "sources/materials/mauna/pulse-tower/marking-red-colour.png": "5edc71d2accd93bc1f2d1799bb942174b7917a6d2d5fd08a699a65a8757f2ef4",
+            "sources/materials/mauna/pulse-tower/metal-orm.png": "8f3b5b63fc6feb2ae077d729c13cd47e9b79bbde9fbfedb2799e3beb5b563db4",
+            "sources/materials/mauna/pulse-tower/pale-alloy-colour.png": "50fd67eb7a384b47cbbe0e72b003ef1b35198ade116ab3b68d6b55210bc29d37",
+            "sources/tools/blender/remaster_mauna_pulse_tower.py": "8b7952e2cec54686d2cdae7c8fe49477959aeaeb399ecadf5124ceab134ee2e4",
+            "sources/tools/blender/verify_mauna_pulse_tower.py": "ebfa94b89bce2f8aaec043e618ce08a8dbf6bbd9198da93db2b5d482c79df690",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/tools/blender/render_mauna_pulse_tower_animation.py": "16644df6e9b935c7af536725e3d81f4d852cb5d04ec6812f75386644573cbe77",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/model.blend": "2bc7479c0df4dbfedeb09f44e87084f152d84d76c03f87cf78f481569ae145b0",
+            "sources/docs/reconstruction/models/mn15-concept-review.json": "6cfce6846527ccfcf59af49f86d0c429011ce4faec25275105c5d790d626f27d",
+            "sources/docs/reconstruction/models/mn15-concept-prompt-1.txt": "06a96ad9ddf51671f110e74e94b6bdcbdcd37afa4be4b079710c3c9fbc32b669",
+            "gallery/media/concepts/mauna/mn15-review-1.png": "8de5cc80fd3a5556b475967b40a766984fb184b9d2be5c551855b196bb6ecd8b"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/pulse-tower/visual-review.json",
+          "sha256": "7f4d41cde80297673101381f90f50aee9f90a7f4dcbdf04bdc566d99626a0cd8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/pulse-tower/visual-review.json",
+          "sha256": "7f4d41cde80297673101381f90f50aee9f90a7f4dcbdf04bdc566d99626a0cd8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/pulse-tower/visual-review.json",
+          "sha256": "7f4d41cde80297673101381f90f50aee9f90a7f4dcbdf04bdc566d99626a0cd8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/pulse-tower/visual-review.json",
+          "sha256": "7f4d41cde80297673101381f90f50aee9f90a7f4dcbdf04bdc566d99626a0cd8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "moving_assemblies": {
+          "report": "sources/objects/mauna/pulse-tower/runtime-review.json",
+          "sha256": "cf52535f5007b97ed4401971937c6cf5eb8d97aea5c24fa95721e9bebde8839b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/pulse-tower/runtime-review.json",
+          "sha256": "cf52535f5007b97ed4401971937c6cf5eb8d97aea5c24fa95721e9bebde8839b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

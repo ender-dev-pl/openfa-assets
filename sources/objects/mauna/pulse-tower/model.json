@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/144",
+  "key": "MN15",
+  "name": "Pulse Tower",
+  "culture": "mauna",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 17,
+  "construction_updates": 32,
+  "triangles": 1692,
+  "triangle_budget": 30000,
+  "mesh_nodes": 16,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mauna_pulse_tower.py",
+  "author_sha256": "8b7952e2cec54686d2cdae7c8fe49477959aeaeb399ecadf5124ceab134ee2e4",
+  "binaries": {
+    "blend": "b8acfdde3a176f7774f9e0f9e3d75729e99f4747618fbd96ad187b2f2e226479",
+    "glb": "d6a17e2bc10e5dac4d64eda188583208d526143c1203443d1c216980f8c89b34"
+  },
+  "textures": {
+    "brass-colour.png": "51df283d78b86e71ce6982b45ce67d36c56d14b9ec9fdbcc2fec8dceb472c0ac",
+    "cast-concrete-colour.png": "10272f675090a85b4e05feb0f1d929f35a223ad360d2c778fce9402a9a1e50ef",
+    "cast-service-normal.png": "af02fab7e5ebfcce031a2c4e5c4772cc4bcba9ab3058036c4db95b750d802f16",
+    "concrete-orm.png": "95558043e959426c9fb2ba87ae01cfc74aa7202c82215833d61c0460db593469",
+    "marking-red-colour.png": "5edc71d2accd93bc1f2d1799bb942174b7917a6d2d5fd08a699a65a8757f2ef4",
+    "metal-orm.png": "8f3b5b63fc6feb2ae077d729c13cd47e9b79bbde9fbfedb2799e3beb5b563db4",
+    "pale-alloy-colour.png": "50fd67eb7a384b47cbbe0e72b003ef1b35198ade116ab3b68d6b55210bc29d37"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Pulse Tower seated dark horizontal slot backing",
+      "body": "Pulse Tower inclined fixed cast body",
+      "point": [
+        0.0,
+        -0.6666666865348816,
+        0.4000000059604645
+      ],
+      "normal": [
+        0.0,
+        -0.7682212591171265,
+        0.6401843428611755
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.032
+    }
+  ],
+  "attachment_contacts": [
+    {
+      "object": "Pulse Tower brass side reservoir 0",
+      "support": "Pulse Tower inclined fixed cast body",
+      "point": [
+        -0.63,
+        -0.2,
+        0.39
+      ]
+    },
+    {
+      "object": "Pulse Tower dark reservoir cap 0",
+      "support": "Pulse Tower brass side reservoir 0",
+      "point": [
+        -0.68,
+        -0.2,
+        0.645
+      ]
+    },
+    {
+      "object": "Pulse Tower brass side reservoir 1",
+      "support": "Pulse Tower inclined fixed cast body",
+      "point": [
+        -0.63,
+        0.2,
+        0.39
+      ]
+    },
+    {
+      "object": "Pulse Tower dark reservoir cap 1",
+      "support": "Pulse Tower brass side reservoir 1",
+      "point": [
+        -0.68,
+        0.2,
+        0.645
+      ]
+    },
+    {
+      "object": "Pulse Tower opaque round front fitting 0",
+      "support": "Pulse Tower inclined fixed cast body",
+      "point": [
+        -0.1599999964237213,
+        -0.44013023376464844,
+        0.6687196493148804
+      ]
+    },
+    {
+      "object": "Pulse Tower opaque round front fitting 1",
+      "support": "Pulse Tower inclined fixed cast body",
+      "point": [
+        0.1599999964237213,
+        -0.44013023376464844,
+        0.6687196493148804
+      ]
+    },
+    {
+      "object": "Pulse Tower low vertical red source mark",
+      "support": "Pulse Tower inclined fixed cast body",
+      "point": [
+        0.3,
+        -0.749,
+        0.19
+      ]
+    },
+    {
+      "object": "Pulse Tower inclined fixed cast body",
+      "support": "Pulse Tower grounded low rectangular foot",
+      "point": [
+        0.5,
+        0,
+        0.11
+      ]
+    },
+    {
+      "object": "Pulse Tower fixed supported bearing",
+      "support": "Pulse Tower inclined fixed cast body",
+      "point": [
+        0,
+        0.05,
+        0.95
+      ]
+    },
+    {
+      "object": "Pulse Tower moving bearing",
+      "support": "Pulse Tower fixed supported bearing",
+      "point": [
+        0.1,
+        0.05,
+        1.085
+      ]
+    },
+    {
+      "object": "Pulse Tower pierced rotating support",
+      "support": "Pulse Tower moving bearing",
+      "point": [
+        0,
+        0.05,
+        1.125
+      ]
+    },
+    {
+      "object": "Pulse Tower broad asymmetric wedge head",
+      "support": "Pulse Tower pierced rotating support",
+      "point": [
+        0,
+        0.1,
+        1.665
+      ]
+    },
+    {
+      "object": "Pulse Tower parallel rectangular prong 0",
+      "support": "Pulse Tower broad asymmetric wedge head",
+      "point": [
+        -0.14000000059604645,
+        -0.2,
+        1.79
+      ]
+    },
+    {
+      "object": "Pulse Tower parallel rectangular prong 1",
+      "support": "Pulse Tower broad asymmetric wedge head",
+      "point": [
+        0.14000000059604645,
+        -0.2,
+        1.79
+      ]
+    }
+  ],
+  "physical_chips": [
+    {
+      "body": "Pulse Tower inclined fixed cast body",
+      "point": [
+        0.44999998807907104,
+        0.3499999940395355,
+        0.9599999785423279
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "body": "Pulse Tower grounded low rectangular foot",
+      "point": [
+        0.6000000238418579,
+        -0.8500000238418579,
+        0.054999999701976776
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ],
+  "animation": {
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "retained_controller_signature": {
+      "location": [
+        0.0,
+        0.0,
+        1.3200000524520874
+      ],
+      "rotation_mode": "XYZ",
+      "action": "HeadingPreview_360",
+      "curves": [
+        {
+          "path": "rotation_euler",
+          "index": 2,
+          "keys": [
+            {
+              "co": [
+                1.0,
+                0.0
+              ],
+              "interpolation": "LINEAR",
+              "left": [
+                -4.333333492279053,
+                0.0
+              ],
+              "right": [
+                6.333333492279053,
+                0.0
+              ]
+            },
+            {
+              "co": [
+                17.0,
+                6.2831854820251465
+              ],
+              "interpolation": "LINEAR",
+              "left": [
+                11.666666030883789,
+                6.2831854820251465
+              ],
+              "right": [
+                22.33333396911621,
+                6.2831854820251465
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "moving_meshes": [
+      "Pulse Tower moving bearing",
+      "Pulse Tower pierced rotating support",
+      "Pulse Tower broad asymmetric wedge head",
+      "Pulse Tower parallel rectangular prong 0",
+      "Pulse Tower parallel rectangular prong 1"
+    ],
+    "static_meshes": [
+      "Pulse Tower grounded low rectangular foot",
+      "Pulse Tower inclined fixed cast body",
+      "Pulse Tower fixed supported bearing",
+      "Pulse Tower low vertical red source mark",
+      "Pulse Tower seated dark horizontal slot backing",
+      "Pulse Tower brass side reservoir 0",
+      "Pulse Tower brass side reservoir 1",
+      "Pulse Tower dark reservoir cap 0",
+      "Pulse Tower dark reservoir cap 1",
+      "Pulse Tower opaque round front fitting 0",
+      "Pulse Tower opaque round front fitting 1"
+    ],
+    "fps": 16,
+    "frames": [
+      1,
+      17
+    ],
+    "export_bake_fps": 64,
+    "direction_count": 16,
+    "timing_recovered": false
+  },
+  "scale_contract": "2x2 placement footprint, ground0, +Z up/-Y front. Dimensions, rail angle and socket are authored, not recovered metric calibration.",
+  "concept_review": "sources/docs/reconstruction/models/mn15-concept-review.json",
+  "animation_clips": [
+    "Animation"
+  ],
+  "source_controller": "sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn15/model.blend",
+  "source_controller_sha256": "2bc7479c0df4dbfedeb09f44e87084f152d84d76c03f87cf78f481569ae145b0",
+  "interpretation": [
+    "Own sixteen directional heads establish broad asymmetric wedge head with TWO parallel rectangular prongs and an open triangular support. Prior three circular emitters are superseded by own-source anatomy.",
+    "Two side brass reservoirs, two round opaque front points, narrow lower service slot and one low red marking govern fixed detail placement. Hidden bearing, caps, recess depths, rail angle and dimensions are authored. Generic PB17/ST19 round Terran turret is context only; no firing/recoil/scan timing inferred."
+  ],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}
