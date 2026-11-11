@@ -19781,7 +19781,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/100",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           961
         ]
@@ -19855,21 +19855,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk15/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mikotaj/lanth/model.blend",
           "present": true,
-          "sha256": "0fe25907042a96f03b0ccb35934280681a974c5d6061c7788c514600909c8010",
-          "final_visual_acceptance": "not-established"
+          "sha256": "52c20904b926ea18750a977ffeb6272e0bf5af1bb74e4105377be22748087f53",
+          "media": "gallery/media/objects/mikotaj/lanth",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mikotaj/lanth/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mikotaj/lanth/rear-quarter.png"
+            },
+            {
+              "label": "Paired front lens detail",
+              "image": "gallery/media/objects/mikotaj/lanth/paired-lens-detail.png"
+            },
+            {
+              "label": "Upper mineral detail",
+              "image": "gallery/media/objects/mikotaj/lanth/upper-mineral-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mikotaj/lanth/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mikotaj/lanth/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -19899,6 +19926,86 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 100
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk15/model.blend",
+          "present": true,
+          "sha256": "0fe25907042a96f03b0ccb35934280681a974c5d6061c7788c514600909c8010",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mikotaj/lanth/model.blend",
+        "sha256": "52c20904b926ea18750a977ffeb6272e0bf5af1bb74e4105377be22748087f53",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mikotaj/lanth",
+          "verifier": "sources/tools/blender/verify_mikotaj_lanth.py",
+          "files": {
+            "sources/objects/mikotaj/lanth/model.blend": "52c20904b926ea18750a977ffeb6272e0bf5af1bb74e4105377be22748087f53",
+            "sources/objects/mikotaj/lanth/model.glb": "2d818b1ea895a2f305ae2b919922866faeda62807b2e4107bafab469e61fd64b",
+            "sources/objects/mikotaj/lanth/model.json": "a73c1fc71189529d603e438a2e6dea802ff97811bafcbb514f0cdf0bedfec906",
+            "sources/objects/mikotaj/lanth/README.md": "700f3877a0016d6e991cc42127dc2be0a0762c219fe6d7b12bbee3ada99f4494",
+            "sources/objects/mikotaj/lanth/runtime-review.json": "714885ee90db2bd4ffcafcc028cc25ebc41c1c87229d25d7f404ea20bc1e98c7",
+            "sources/objects/mikotaj/lanth/visual-review.json": "e05f38b08fbfd4d94e1007c4459507efb9105ce5982d7cc8e11c015fd7a15df2",
+            "gallery/media/objects/mikotaj/lanth/concept-glb-comparison.jpg": "8554aef7a5953fabc24ec3eccc132e46d113d76a3de5d5986b9bd7f62019b99b",
+            "gallery/media/objects/mikotaj/lanth/front-quarter.png": "c62a40a23e9995a89e8e74a74444ec0f453dfa0675c15a94417e003c6e1aa146",
+            "gallery/media/objects/mikotaj/lanth/front.png": "9414e6d5ab9988a66914e4853c23831ed345309e91f74a20a4131f2af22da012",
+            "gallery/media/objects/mikotaj/lanth/imported-front-quarter.png": "c62a40a23e9995a89e8e74a74444ec0f453dfa0675c15a94417e003c6e1aa146",
+            "gallery/media/objects/mikotaj/lanth/imported-front.png": "9414e6d5ab9988a66914e4853c23831ed345309e91f74a20a4131f2af22da012",
+            "gallery/media/objects/mikotaj/lanth/imported-rear-quarter.png": "d21b30b73934713aad708721f2c3f81245db8c53736a69a01fe67e7bba00b21e",
+            "gallery/media/objects/mikotaj/lanth/native-front-quarter.png": "00ee13a4b97ebe555bdd0952e47c7a951f72fa22d3fe379e7c3a124e4517b73d",
+            "gallery/media/objects/mikotaj/lanth/native-front.png": "f24dc48726ecc8d99f09e198c77c25d97fb1be6cc7013d3f3364e0ecd41cdf8e",
+            "gallery/media/objects/mikotaj/lanth/native-rear-quarter.png": "ef96d76ca81cbbe7a3688a12abe0a8a4de3b4500220fb58e1ca3f25f4a955f29",
+            "gallery/media/objects/mikotaj/lanth/paired-lens-detail.png": "837b1fca438deb6fd1d251746b116983a20ecf56d8d9adf4059cd91bdd64ddca",
+            "gallery/media/objects/mikotaj/lanth/rear-quarter.png": "d21b30b73934713aad708721f2c3f81245db8c53736a69a01fe67e7bba00b21e",
+            "gallery/media/objects/mikotaj/lanth/technical-wireframe.png": "9e121db307e48b7e56f263df18d32aec965807e4c79594b73e423ee0ff0e7cd3",
+            "gallery/media/objects/mikotaj/lanth/upper-mineral-detail.png": "e540b3a5d78aca641bf7c20a953fd13f5986b19fc1eaa2a4ceb3a4f0a58ced27",
+            "sources/materials/mikotaj/lanth/exposed-ridge-base-colour.png": "664bffaac907c0c8461092f82027024aafe1f0e11f07ad4b4ba3b97bf1434b6a",
+            "sources/materials/mikotaj/lanth/mineral-base-colour.png": "c68db2e643b2297bf2d254e019089b23286c5347fc70df6a7ff53278d7e685a0",
+            "sources/materials/mikotaj/lanth/mineral-fracture-normal.png": "c5ca7b496e35ea0fbe9347f38e8fe13abffb41734b1b90270ad8549796ebe5f4",
+            "sources/materials/mikotaj/lanth/occlusion-roughness-metallic.png": "3a2ef428e4c0f0860b962b0fc453ae7d3854349b323c5c557d015f6b3543ef88",
+            "sources/materials/mikotaj/lanth/pale-blue-lens-colour.png": "15336dffc597c64ac4d46df0e5a27502a57814ef17f4cc106c961d3c95f5d86f",
+            "sources/tools/blender/remaster_mikotaj_lanth.py": "0f2f312f6a1e17ea7b17b7af37705714a712366027d17e097245fa6ccc4d522d",
+            "sources/tools/blender/verify_mikotaj_lanth.py": "e1b19748451b785d4eb9d1277e030eaa66948e0a2c6ab6a8b16d3d7ce9a84fa6",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mk15-concept-review.json": "72b6e34073884a817cbe5c02de83955bdb2942f73a464de534459d6810f36f76",
+            "sources/docs/reconstruction/models/mk15-concept-prompt-1.txt": "1dc1100168823011ca4116e45f64dbbfb16bd55fceea6992fcef5d3f34fd0afe",
+            "gallery/media/concepts/mikotaj/mk15-review-1.png": "643b66625f1f0a9d04bc5d30154c21723ab6c22b7cd1d3970c6ba2cf6e228b2c"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mikotaj/lanth/visual-review.json",
+          "sha256": "e05f38b08fbfd4d94e1007c4459507efb9105ce5982d7cc8e11c015fd7a15df2",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mikotaj/lanth/visual-review.json",
+          "sha256": "e05f38b08fbfd4d94e1007c4459507efb9105ce5982d7cc8e11c015fd7a15df2",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mikotaj/lanth/visual-review.json",
+          "sha256": "e05f38b08fbfd4d94e1007c4459507efb9105ce5982d7cc8e11c015fd7a15df2",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mikotaj/lanth/visual-review.json",
+          "sha256": "e05f38b08fbfd4d94e1007c4459507efb9105ce5982d7cc8e11c015fd7a15df2",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mikotaj/lanth/runtime-review.json",
+          "sha256": "714885ee90db2bd4ffcafcc028cc25ebc41c1c87229d25d7f404ea20bc1e98c7",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

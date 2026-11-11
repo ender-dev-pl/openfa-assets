@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/100",
+  "key": "MK15",
+  "name": "Lanth",
+  "culture": "mikotaj",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 255,
+  "construction_updates": 55,
+  "triangles": 21456,
+  "triangle_budget": 30000,
+  "mesh_nodes": 5,
+  "materials": 4,
+  "author": "sources/tools/blender/remaster_mikotaj_lanth.py",
+  "author_sha256": "0f2f312f6a1e17ea7b17b7af37705714a712366027d17e097245fa6ccc4d522d",
+  "binaries": {
+    "blend": "52c20904b926ea18750a977ffeb6272e0bf5af1bb74e4105377be22748087f53",
+    "glb": "2d818b1ea895a2f305ae2b919922866faeda62807b2e4107bafab469e61fd64b"
+  },
+  "textures": {
+    "exposed-ridge-base-colour.png": "664bffaac907c0c8461092f82027024aafe1f0e11f07ad4b4ba3b97bf1434b6a",
+    "mineral-base-colour.png": "c68db2e643b2297bf2d254e019089b23286c5347fc70df6a7ff53278d7e685a0",
+    "mineral-fracture-normal.png": "c5ca7b496e35ea0fbe9347f38e8fe13abffb41734b1b90270ad8549796ebe5f4",
+    "occlusion-roughness-metallic.png": "3a2ef428e4c0f0860b962b0fc453ae7d3854349b323c5c557d015f6b3543ef88",
+    "pale-blue-lens-colour.png": "15336dffc597c64ac4d46df0e5a27502a57814ef17f4cc106c961d3c95f5d86f"
+  },
+  "interpretation": [
+    "Compact tapering knobbly mineral body, two stacked pale lenses in one front inset and two small right recesses follow actual original views.",
+    "Source overrides concept extra lowest slot. Hidden section and physical cloaking engineering unknown. No unsupported visible operating clip."
+  ],
+  "scale_contract": "2x2 placement footprint, local +Z up/-Y front. Native dimensions are authored cell-relative proportions; no metric legacy height or calibrated game scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/mk15-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

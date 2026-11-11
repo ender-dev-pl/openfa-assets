@@ -178,11 +178,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/capacitors/front.png)
 
 `openfa:building/legacy/100`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Lanth](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk15/front-quarter.png)
+![Lanth](../gallery/media/objects/mikotaj/lanth/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk15/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk15/model.glb)
+[Blend](../sources/objects/mikotaj/lanth/model.blend) · [GLB](../sources/objects/mikotaj/lanth/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/lanth/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/lanth/rear-quarter.png) · [Paired front lens detail](../gallery/media/objects/mikotaj/lanth/paired-lens-detail.png) · [Upper mineral detail](../gallery/media/objects/mikotaj/lanth/upper-mineral-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/lanth/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/lanth/concept-glb-comparison.jpg)
 
 ## Sharir
 
