@@ -102,11 +102,13 @@ Additional views: [Front](../gallery/media/objects/artemian/naval-dockyard/front
 
 `openfa:building/legacy/115`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Launch Pads](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar09/front-quarter.png)
+![Launch Pads](../gallery/media/objects/artemian/launch-pads/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar09/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar09/model.glb)
+[Blend](../sources/objects/artemian/launch-pads/model.blend) · [GLB](../sources/objects/artemian/launch-pads/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/launch-pads/front.png) · [Rear quarter](../gallery/media/objects/artemian/launch-pads/rear-quarter.png) · [Brass frame and copper fittings](../gallery/media/objects/artemian/launch-pads/brass-frame-and-copper-fittings-detail.png) · [Real recessed well and four baffles](../gallery/media/objects/artemian/launch-pads/recessed-well-and-four-baffles-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/launch-pads/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/launch-pads/concept-glb-comparison.jpg)
 
 ## Deep Probes
 

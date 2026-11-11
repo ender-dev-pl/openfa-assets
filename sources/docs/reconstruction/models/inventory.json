@@ -23488,7 +23488,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/115",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           976
         ]
@@ -23562,21 +23562,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar09/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/launch-pads/model.blend",
           "present": true,
-          "sha256": "968b9e19a4e5a751ef10df829262f9901f22c96eae356842eb88d89f9cc0eec2",
-          "final_visual_acceptance": "not-established"
+          "sha256": "6928883cdcb8d5ada26bc6c671bbc48d6f6ec2f99b158144ea840c72bb3cf591",
+          "media": "gallery/media/objects/artemian/launch-pads",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/launch-pads/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/launch-pads/rear-quarter.png"
+            },
+            {
+              "label": "Brass frame and copper fittings",
+              "image": "gallery/media/objects/artemian/launch-pads/brass-frame-and-copper-fittings-detail.png"
+            },
+            {
+              "label": "Real recessed well and four baffles",
+              "image": "gallery/media/objects/artemian/launch-pads/recessed-well-and-four-baffles-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/launch-pads/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/launch-pads/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -23606,6 +23633,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 115
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar09/model.blend",
+          "present": true,
+          "sha256": "968b9e19a4e5a751ef10df829262f9901f22c96eae356842eb88d89f9cc0eec2",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/launch-pads/model.blend",
+        "sha256": "6928883cdcb8d5ada26bc6c671bbc48d6f6ec2f99b158144ea840c72bb3cf591",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/launch-pads",
+          "verifier": "sources/tools/blender/verify_artemian_launch_pads.py",
+          "files": {
+            "sources/objects/artemian/launch-pads/model.blend": "6928883cdcb8d5ada26bc6c671bbc48d6f6ec2f99b158144ea840c72bb3cf591",
+            "sources/objects/artemian/launch-pads/model.glb": "51491123294721ebc07ecb43778610de45ad7c45a16a20de84ea83da6d09e3a7",
+            "sources/objects/artemian/launch-pads/model.json": "825146a0a02b74ea5ce85b1b3ee77fda6d005ae08103d0515480c71fc9baf025",
+            "sources/objects/artemian/launch-pads/README.md": "a326508d6b0d96eaf8baeeec5e241e0cec7414bf15eb896172286b35375fba95",
+            "sources/objects/artemian/launch-pads/runtime-review.json": "061268f26ca9af65e44545d2dd0de8681a4fa0f1e41e0041763ac1f0280b4ed2",
+            "sources/objects/artemian/launch-pads/visual-review.json": "d745d679286ec8f19656c542e92d5dac9756d318764e1eb141739fdf6c7ec5f6",
+            "gallery/media/objects/artemian/launch-pads/brass-frame-and-copper-fittings-detail.png": "04cd1a37733a40dfcfc07678661c660d78fde5a0377bf0e8a47dcb0c2c65d9fb",
+            "gallery/media/objects/artemian/launch-pads/concept-glb-comparison.jpg": "cda620c147fb728a2150972a83c48018641079c283c14053c8b44a8304347cee",
+            "gallery/media/objects/artemian/launch-pads/front-quarter.png": "58b007dfd1c51c5a570f13fdb26f39a56b3ac253965cdd305309cb867ce1ddee",
+            "gallery/media/objects/artemian/launch-pads/front.png": "2f4b0c8aa1a543579f00d7b90c817489010b19bb0e464b765ffc194bbdab8933",
+            "gallery/media/objects/artemian/launch-pads/imported-front-quarter.png": "58b007dfd1c51c5a570f13fdb26f39a56b3ac253965cdd305309cb867ce1ddee",
+            "gallery/media/objects/artemian/launch-pads/imported-front.png": "2f4b0c8aa1a543579f00d7b90c817489010b19bb0e464b765ffc194bbdab8933",
+            "gallery/media/objects/artemian/launch-pads/imported-rear-quarter.png": "834d8acd037e666f7d93ddcc9d1ab4f5f27b5ff8eba3b171f846c43d3c0e6844",
+            "gallery/media/objects/artemian/launch-pads/native-front-quarter.png": "1cf8f742e0836d9cea5b15af4dcfec500a082d628624c3d7bf75fd9a325eac15",
+            "gallery/media/objects/artemian/launch-pads/native-front.png": "a7cac998926691effe1eeae01c1779a59ee17c030453ec9a2d3c6bd8fcd0c863",
+            "gallery/media/objects/artemian/launch-pads/native-rear-quarter.png": "4ca5e9a68224907a07b08619e252e86364083655818de9426c2d9d46eaeee2f0",
+            "gallery/media/objects/artemian/launch-pads/rear-quarter.png": "834d8acd037e666f7d93ddcc9d1ab4f5f27b5ff8eba3b171f846c43d3c0e6844",
+            "gallery/media/objects/artemian/launch-pads/recessed-well-and-four-baffles-detail.png": "32582fa7acd191ab098462aa8af779d0373016c29ff2e743a42fdb657737d972",
+            "gallery/media/objects/artemian/launch-pads/technical-wireframe.png": "efc6db65893b8789418dd0dd410c947802c4250fcf12bbea8ba1c3056b5d6877",
+            "sources/materials/artemian/launch-pads/amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+            "sources/materials/artemian/launch-pads/copper-fitting-colour.png": "f5bec5f91ece22d7e9c06834019f56d3fb8cffbecfd92582ccf1668095a4d442",
+            "sources/materials/artemian/launch-pads/exposed-alloy-edge-colour.png": "6c194e943ac17d76db4c069e212c4e26543027bfe26584599ce577cd17a3a5f7",
+            "sources/materials/artemian/launch-pads/muted-green-alloy-colour.png": "5dbd94802bb97e2e991c56636693ed565bb1fb03fe962634d1d0171e6aba804f",
+            "sources/materials/artemian/launch-pads/occlusion-roughness-metallic.png": "3354f057a7d54d60b94d039162d2924577720a6a7e176463b9884905c560f8a9",
+            "sources/materials/artemian/launch-pads/used-metal-normal.png": "fcad4ea32f35de192931f82605b7fa663ffbabd0f842502a048fe721e3b92b40",
+            "sources/tools/blender/remaster_artemian_launch_pads.py": "a11a9f20ad51ea237819912295ed0805644e4214b3960ca4ece2b5ed975ae9e2",
+            "sources/tools/blender/verify_artemian_launch_pads.py": "2119ea1410fb6c3ab99a01dcbbd0be518d4099c0113f54246055f4e0e4369a88",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar09-concept-review.json": "0587bdca7237ea741e2c4b925e07970703ab6aae489cd8d2b4a01b1c0cfc24b1",
+            "sources/docs/reconstruction/models/ar09-concept-prompt-1.txt": "2d50c933b364acfa8773c30a6f2ea1c8d04cf0f2e80a2e253804f08b63d91532",
+            "gallery/media/concepts/artemian/ar09-review-1.png": "c69686f0d216f48d47d0dbaa9d3a07397aca2554c266c58459ca642757d4bfaa"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/launch-pads/visual-review.json",
+          "sha256": "d745d679286ec8f19656c542e92d5dac9756d318764e1eb141739fdf6c7ec5f6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/launch-pads/visual-review.json",
+          "sha256": "d745d679286ec8f19656c542e92d5dac9756d318764e1eb141739fdf6c7ec5f6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/launch-pads/visual-review.json",
+          "sha256": "d745d679286ec8f19656c542e92d5dac9756d318764e1eb141739fdf6c7ec5f6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/launch-pads/visual-review.json",
+          "sha256": "d745d679286ec8f19656c542e92d5dac9756d318764e1eb141739fdf6c7ec5f6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/launch-pads/runtime-review.json",
+          "sha256": "061268f26ca9af65e44545d2dd0de8681a4fa0f1e41e0041763ac1f0280b4ed2",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

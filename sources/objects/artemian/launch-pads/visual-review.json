@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/115",
+  "binaries": {
+    "blend": "6928883cdcb8d5ada26bc6c671bbc48d6f6ec2f99b158144ea840c72bb3cf591",
+    "glb": "51491123294721ebc07ecb43778610de45ad7c45a16a20de84ea83da6d09e3a7"
+  },
+  "runtime_report_sha256": "061268f26ca9af65e44545d2dd0de8681a4fa0f1e41e0041763ac1f0280b4ed2",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00025772592019868325,
+      "margin": 80
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0003964289678575393,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 7.427902917308871e-05,
+      "margin": 65
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar09-review-1.png",
+      "sha256": "c69686f0d216f48d47d0dbaa9d3a07397aca2554c266c58459ca642757d4bfaa",
+      "prompt": "sources/docs/reconstruction/models/ar09-concept-prompt-1.txt",
+      "feedback": "Selected low green shell with real dark ribbed roof well,two tall brass rails/crosspiece rooted in copper sleeves with coupling rings,two copper front insets. Source governs placement/counts;exact recessed baffle sections and hidden landing engineering interpreted."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "6928883cdcb8d5ada26bc6c671bbc48d6f6ec2f99b158144ea840c72bb3cf591",
+        "glb": "51491123294721ebc07ecb43778610de45ad7c45a16a20de84ea83da6d09e3a7"
+      },
+      "runtime_report_sha256": "061268f26ca9af65e44545d2dd0de8681a4fa0f1e41e0041763ac1f0280b4ed2",
+      "status": "agent_review_accepted",
+      "finding": "Actual whole source/concept/imported GLB,front/rear and brass-frame/copper-fitting plus recessed-well detail renders reviewed. Low green shell,two brass H-like rails with copper bases/couplings,two copper front points and a dark recessed ribbed well retain source arrangement. Well is actual blind cut with closed dark floor;four grey baffles are an interpretation of visible parallel ribbing. Real floor/wall attachment and tops below lip verified;no painted hole or floating baffles. Actual sleeve/body,rail/sleeve,coupling/rail,crosspiece/rail and inset/body contacts checked. All18native/imported meshes closed positive;all6decodedtextures agree;surfaceerror6.537857899502342e-8. Fine scratches/tarnish,three chips and two shallow dents retained;concept finer engineering remains interpreted. Frozen old pair unchanged.",
+      "action": "Accept asset-only agent source/concept/native/imported GLB review. Hidden landing engineering,baffle/well sections and metric dimensions remain unknown/authored. No operating animation inferred from different PB26 covers. Client scale/state/shaders,Android performance and final user artistic acceptance separate."
+    }
+  ],
+  "final_review": "Actual source/concept/imported GLB comparison retains low green shell,two tall brass rails with real crosspiece,copper base sleeves/four coupling rings,two copper front points and a real blind dark roof well with four recessed grey baffles. Actual cavity/floor/rim rays and four baffle floor/end contacts verified,as are sleeve/body,rail/sleeve,coupling/rail,crosspiece/rail and inset/body contacts. Native/imported closed positive surfaces and decoded textures agree;whole/front/rear/detail renders inspected.",
+  "limitations": [
+    "Exact hidden landing engineering,well/baffle sections and metric dimensions remain authored or unknown;four baffles interpret visible parallel ribbing.",
+    "Generic PB26 rectangular cover motion is Terran function context,not an AR09 operating cycle.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
