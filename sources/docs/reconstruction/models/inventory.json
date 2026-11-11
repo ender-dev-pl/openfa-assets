@@ -27980,7 +27980,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/133",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           994
         ]
@@ -28054,21 +28054,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn04/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/off-duty-block/model.blend",
           "present": true,
-          "sha256": "16a66d8f5b678623346dc3f5db3292de76383c3e61468d205b7bd24e9fb8c3f8",
-          "final_visual_acceptance": "not-established"
+          "sha256": "7d1d35d0fdd6e3b4933f5a41c1aaf52db0a59f2f81026ac03a3dfcca49ef41d5",
+          "media": "gallery/media/objects/mauna/off-duty-block",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/off-duty-block/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/off-duty-block/rear-quarter.png"
+            },
+            {
+              "label": "Three roof stacks and plinth",
+              "image": "gallery/media/objects/mauna/off-duty-block/three-roof-stacks-and-plinth-detail.png"
+            },
+            {
+              "label": "Recessed window banks and red panels",
+              "image": "gallery/media/objects/mauna/off-duty-block/recessed-window-banks-and-red-panels-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/off-duty-block/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/off-duty-block/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -28098,6 +28125,89 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 133
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn04/model.blend",
+          "present": true,
+          "sha256": "16a66d8f5b678623346dc3f5db3292de76383c3e61468d205b7bd24e9fb8c3f8",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/off-duty-block/model.blend",
+        "sha256": "7d1d35d0fdd6e3b4933f5a41c1aaf52db0a59f2f81026ac03a3dfcca49ef41d5",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/off-duty-block",
+          "verifier": "sources/tools/blender/verify_mauna_off_duty_block.py",
+          "files": {
+            "sources/objects/mauna/off-duty-block/model.blend": "7d1d35d0fdd6e3b4933f5a41c1aaf52db0a59f2f81026ac03a3dfcca49ef41d5",
+            "sources/objects/mauna/off-duty-block/model.glb": "8db21faa64b0feeda7ae61eef3fe2a374b6a93a6bd4c5f2f125547451e9b85e0",
+            "sources/objects/mauna/off-duty-block/model.json": "c6873835190d63b5830ec53d8e6828039c0676a0e68920584a60844afd4388ce",
+            "sources/objects/mauna/off-duty-block/README.md": "d8c0cfc1e6687127971566be07dd225304d852dc380f38e8477ea77a4b316327",
+            "sources/objects/mauna/off-duty-block/runtime-review.json": "38709f27624e1312c8c5dc02858e6616e8da0315d09dd2a505d01d3a2e1a81bb",
+            "sources/objects/mauna/off-duty-block/visual-review.json": "c4be967871fbbdecacf51aaa46ac4fa9ba8d8d1d2ee04eb4c02d0bf8ed747572",
+            "gallery/media/objects/mauna/off-duty-block/concept-glb-comparison.jpg": "afaf6bf75486966620b19049c911c7b302dcb39f843d98945ef15a165c539565",
+            "gallery/media/objects/mauna/off-duty-block/front-quarter.png": "a481df19bc0f3a9e5d9f3aa43e57d48f0083725c16fc7477b9de628c3c945c2d",
+            "gallery/media/objects/mauna/off-duty-block/front.png": "6bdcc6a208830adc842bcadaf168821c4c1de04bfb41f161a3846d8aa3dc82b6",
+            "gallery/media/objects/mauna/off-duty-block/imported-front-quarter.png": "a481df19bc0f3a9e5d9f3aa43e57d48f0083725c16fc7477b9de628c3c945c2d",
+            "gallery/media/objects/mauna/off-duty-block/imported-front.png": "6bdcc6a208830adc842bcadaf168821c4c1de04bfb41f161a3846d8aa3dc82b6",
+            "gallery/media/objects/mauna/off-duty-block/imported-rear-quarter.png": "e88771f2ab7c6ca4a6f1b4117babfc5cc4dd99abef54515995f0670b51c85698",
+            "gallery/media/objects/mauna/off-duty-block/native-front-quarter.png": "00bef6df4bd32d7ac5087b758941d9d4efa5a1f2c5e2bb22c3f2e3edab9a60d2",
+            "gallery/media/objects/mauna/off-duty-block/native-front.png": "d873567a22a6e065b844e9adcdbd2c06be962a3551774c5bc4f3dd41cc7eebd0",
+            "gallery/media/objects/mauna/off-duty-block/native-rear-quarter.png": "f2624e4a5c8869f4161391c5c168bfe9e15442e78d5b174727b50ab1fc536574",
+            "gallery/media/objects/mauna/off-duty-block/rear-quarter.png": "e88771f2ab7c6ca4a6f1b4117babfc5cc4dd99abef54515995f0670b51c85698",
+            "gallery/media/objects/mauna/off-duty-block/recessed-window-banks-and-red-panels-detail.png": "90e5198a596c3c8422c77eeeb41b0ab9a089ab9396ebcfc2b6786b197f49a5fe",
+            "gallery/media/objects/mauna/off-duty-block/technical-wireframe.png": "de59cd1d319f1aa89f1f39986268aaf236155e3e59e643a47512b0287ed9861e",
+            "gallery/media/objects/mauna/off-duty-block/three-roof-stacks-and-plinth-detail.png": "baefba9f2c777daf0c2a207ab376de5e59ff7d61d8768e79a97dd541fc30aea8",
+            "sources/materials/mauna/off-duty-block/cast-concrete-colour.png": "b9faa0343ce97c423156d4698ae08a079e99b26722282370e67e9345ac83020f",
+            "sources/materials/mauna/off-duty-block/cast-service-normal.png": "99ada855d1c8678aeb93bb5ba2fbc94e898bf4175a6472892f94f7cfe74450b0",
+            "sources/materials/mauna/off-duty-block/concrete-orm.png": "e5b7f35769f5445f3622b910fa7e71c7ec30fe4f38cb49258fe98731f05d155b",
+            "sources/materials/mauna/off-duty-block/metal-orm.png": "d476678f348b7ae40a4907f78f5b18fbb7a1035bd30968fa5eefc358c9dd518a",
+            "sources/materials/mauna/off-duty-block/recess-red-colour.png": "0eacdff6503fdac0716ce781617c0d6ca932ad9ee1a8078fb487d6a2ab406b49",
+            "sources/materials/mauna/off-duty-block/used-brass-colour.png": "277ebe162fc71a103262d4ed5bf3710438aa12e725a8dabdcd9e37ecc3df5632",
+            "sources/materials/mauna/off-duty-block/window-amber-colour.png": "6751983a47cb395ed8269eb7a0345a697a3e23e78657cd7e3536211aa72d79c8",
+            "sources/materials/mauna/off-duty-block/window-orm.png": "0d33bf9cb825b9ae38bf2f5c353d6eb4bc46facfc75569ac2492fa271efe52c5",
+            "sources/tools/blender/remaster_mauna_off_duty_block.py": "ada3c641039c17fdc1aeb088fba63c11221faf4012f7da06d8ea2f67abde51c3",
+            "sources/tools/blender/verify_mauna_off_duty_block.py": "027abcbd58dc05665ddf1efc4bcedd5b48712a6d727d25bb45f98503a1a171d2",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn04-concept-review.json": "d18ff26e8fe5e73994b3a6e8aaf86c8c6de957f75f5012db8a07b143e739dc9f",
+            "sources/docs/reconstruction/models/mn04-concept-prompt-1.txt": "b21961f590338272ce5ebf9c1977f149b74d3418bcc77bdeee71fd04af1c4c7f",
+            "gallery/media/concepts/mauna/mn04-review-1.png": "e09971078cd7a561a3e261a3063a5c030edcc023f80139f53dd6cac7d144eebc"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/off-duty-block/visual-review.json",
+          "sha256": "c4be967871fbbdecacf51aaa46ac4fa9ba8d8d1d2ee04eb4c02d0bf8ed747572",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/off-duty-block/visual-review.json",
+          "sha256": "c4be967871fbbdecacf51aaa46ac4fa9ba8d8d1d2ee04eb4c02d0bf8ed747572",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/off-duty-block/visual-review.json",
+          "sha256": "c4be967871fbbdecacf51aaa46ac4fa9ba8d8d1d2ee04eb4c02d0bf8ed747572",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/off-duty-block/visual-review.json",
+          "sha256": "c4be967871fbbdecacf51aaa46ac4fa9ba8d8d1d2ee04eb4c02d0bf8ed747572",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/off-duty-block/runtime-review.json",
+          "sha256": "38709f27624e1312c8c5dc02858e6616e8da0315d09dd2a505d01d3a2e1a81bb",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

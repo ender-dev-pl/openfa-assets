@@ -42,11 +42,13 @@ Additional views: [Front](../gallery/media/objects/mauna/nutrition-block/front.p
 
 `openfa:building/legacy/133`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Off-duty Block](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn04/front-quarter.png)
+![Off-duty Block](../gallery/media/objects/mauna/off-duty-block/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn04/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn04/model.glb)
+[Blend](../sources/objects/mauna/off-duty-block/model.blend) · [GLB](../sources/objects/mauna/off-duty-block/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/off-duty-block/front.png) · [Rear quarter](../gallery/media/objects/mauna/off-duty-block/rear-quarter.png) · [Three roof stacks and plinth](../gallery/media/objects/mauna/off-duty-block/three-roof-stacks-and-plinth-detail.png) · [Recessed window banks and red panels](../gallery/media/objects/mauna/off-duty-block/recessed-window-banks-and-red-panels-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/off-duty-block/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/off-duty-block/concept-glb-comparison.jpg)
 
 ## Health Block
 
