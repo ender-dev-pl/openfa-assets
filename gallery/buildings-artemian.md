@@ -162,11 +162,13 @@ Additional views: [Front](../gallery/media/objects/artemian/shell/front.png) · 
 
 `openfa:building/legacy/120`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Arms Forge](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar14/front-quarter.png)
+![Arms Forge](../gallery/media/objects/artemian/arms-forge/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar14/model.glb)
+[Blend](../sources/objects/artemian/arms-forge/model.blend) · [GLB](../sources/objects/artemian/arms-forge/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/arms-forge/front.png) · [Rear quarter](../gallery/media/objects/artemian/arms-forge/rear-quarter.png) · [Open frame and grounded support](../gallery/media/objects/artemian/arms-forge/open-frame-and-rooted-prongs-detail.png) · [Recessed right-flank pairs and copper insets](../gallery/media/objects/artemian/arms-forge/tier-pairs-and-copper-insets-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/arms-forge/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/arms-forge/concept-glb-comparison.jpg)
 
 ## Star Bars
 

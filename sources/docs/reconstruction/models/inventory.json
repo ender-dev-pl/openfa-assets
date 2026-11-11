@@ -24711,7 +24711,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/120",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           981
         ]
@@ -24785,21 +24785,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar14/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/arms-forge/model.blend",
           "present": true,
-          "sha256": "b83a366260af339a39671002797a428f99abe944fc6738004f9d9465c923f664",
-          "final_visual_acceptance": "not-established"
+          "sha256": "1ac39a7bd2de9b7d183e0a3412c404a8491b1e9de77eacebfb20e274a1e80981",
+          "media": "gallery/media/objects/artemian/arms-forge",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/arms-forge/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/arms-forge/rear-quarter.png"
+            },
+            {
+              "label": "Open frame and grounded support",
+              "image": "gallery/media/objects/artemian/arms-forge/open-frame-and-rooted-prongs-detail.png"
+            },
+            {
+              "label": "Recessed right-flank pairs and copper insets",
+              "image": "gallery/media/objects/artemian/arms-forge/tier-pairs-and-copper-insets-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/arms-forge/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/arms-forge/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -24829,6 +24856,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 120
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar14/model.blend",
+          "present": true,
+          "sha256": "b83a366260af339a39671002797a428f99abe944fc6738004f9d9465c923f664",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/arms-forge/model.blend",
+        "sha256": "1ac39a7bd2de9b7d183e0a3412c404a8491b1e9de77eacebfb20e274a1e80981",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/arms-forge",
+          "verifier": "sources/tools/blender/verify_artemian_arms_forge.py",
+          "files": {
+            "sources/objects/artemian/arms-forge/model.blend": "1ac39a7bd2de9b7d183e0a3412c404a8491b1e9de77eacebfb20e274a1e80981",
+            "sources/objects/artemian/arms-forge/model.glb": "6a0d74bd1179dbc8e92c927cb482a700d672339525d1bcc42001033f48b24667",
+            "sources/objects/artemian/arms-forge/model.json": "8955e796e398bf6c196694d66025e292fe3d2b56577689fcef28baf0b926b18f",
+            "sources/objects/artemian/arms-forge/README.md": "2d3b2c4a8c51d986c49042bfef9b5a338e996ef995ff718ebd74b893ca193d75",
+            "sources/objects/artemian/arms-forge/runtime-review.json": "cb60432d84286532d0873f3f5104cd984b6f6cb6ee40a6c6cee0db00a8212ed5",
+            "sources/objects/artemian/arms-forge/visual-review.json": "01c62e67194b130514d63530c372b39d441813de58287ea9e113bfb462089a5e",
+            "gallery/media/objects/artemian/arms-forge/concept-glb-comparison.jpg": "b9ac034f65baf3fcbad3f78537068eeebfd43143b1c4f30bb42539847c20268f",
+            "gallery/media/objects/artemian/arms-forge/front-quarter.png": "f5b1dd4b3067995955cc3690acc36227409fdd525d1aff3ccb5b57471bf48920",
+            "gallery/media/objects/artemian/arms-forge/front.png": "659e17ac255328992f104d90dc44ed8a6ca2dcce7024765e089f47e2b49e6582",
+            "gallery/media/objects/artemian/arms-forge/imported-front-quarter.png": "f5b1dd4b3067995955cc3690acc36227409fdd525d1aff3ccb5b57471bf48920",
+            "gallery/media/objects/artemian/arms-forge/imported-front.png": "659e17ac255328992f104d90dc44ed8a6ca2dcce7024765e089f47e2b49e6582",
+            "gallery/media/objects/artemian/arms-forge/imported-rear-quarter.png": "c503e31d0de44f5cc8ff164467a8ec25d8fc5c9fdef59921bab88933d11d9eab",
+            "gallery/media/objects/artemian/arms-forge/native-front-quarter.png": "97ae6a8073576d44cea2d69f1783e06615d411fa94d0824b7aa6d7b18fba4cdd",
+            "gallery/media/objects/artemian/arms-forge/native-front.png": "a4867f4ec15417bfe4cce729b84e2bb66f5c68224e779eabd9e8ba53e876666a",
+            "gallery/media/objects/artemian/arms-forge/native-rear-quarter.png": "1e394259c719d91d10b9a1a3246e0cb126cd03963b37edeb6d8dd8d91856bc50",
+            "gallery/media/objects/artemian/arms-forge/open-frame-and-rooted-prongs-detail.png": "5ab4017b4383192bc68a6326d39fd41e96310901dc4de5533c5772d44dfaecf8",
+            "gallery/media/objects/artemian/arms-forge/rear-quarter.png": "c503e31d0de44f5cc8ff164467a8ec25d8fc5c9fdef59921bab88933d11d9eab",
+            "gallery/media/objects/artemian/arms-forge/technical-wireframe.png": "f5ff98ddbe72a8026ba7a08948f974b0584231457e6af51b7605ee50a9bfa387",
+            "gallery/media/objects/artemian/arms-forge/tier-pairs-and-copper-insets-detail.png": "13192407a1563ff9d3ed79fce8c69aeb2f478a0adeabc7a9f550af2046fd09bb",
+            "sources/materials/artemian/arms-forge/amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+            "sources/materials/artemian/arms-forge/copper-fitting-colour.png": "f5bec5f91ece22d7e9c06834019f56d3fb8cffbecfd92582ccf1668095a4d442",
+            "sources/materials/artemian/arms-forge/exposed-alloy-edge-colour.png": "4838b2c0c6f80dbc379bc45e00f6969244de53293a7a8c690a80a3326707b840",
+            "sources/materials/artemian/arms-forge/muted-green-alloy-colour.png": "99fce0407edb575abdbb8ac738afd48cc1ab055517f19d085ccfd43ab3382407",
+            "sources/materials/artemian/arms-forge/occlusion-roughness-metallic.png": "f4231a34243387c52ba5e0971a28892f25486a1b82184f5745f4e5eab6fa79bb",
+            "sources/materials/artemian/arms-forge/used-metal-normal.png": "4a8a92dae6bd01edeb0a132ecb9b22cae1a8ded551b12d2b395c82da18056c67",
+            "sources/tools/blender/remaster_artemian_arms_forge.py": "77f452aefb9d2dae9f3445e36b3aa88c6659f8c3599cbc7a566d8ba604d0cccd",
+            "sources/tools/blender/verify_artemian_arms_forge.py": "9c782e68662fe5e022d923387dc9becd02f2f95bba3f7300c511937545bded76",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar14-concept-review.json": "a8ab6ab50e664940b237a1312ef604845dff9a4d387d6f7aca8378b40ec37360",
+            "sources/docs/reconstruction/models/ar14-concept-prompt-1.txt": "22b702c2aa1eec20410b89a74cc8fc182585ee1a70903c9df867094246bd7947",
+            "gallery/media/concepts/artemian/ar14-review-1.png": "8379644c26f2a469c8ddb3ebcada8beed5909754936406ff944c1b0f26341f77"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/arms-forge/visual-review.json",
+          "sha256": "01c62e67194b130514d63530c372b39d441813de58287ea9e113bfb462089a5e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/arms-forge/visual-review.json",
+          "sha256": "01c62e67194b130514d63530c372b39d441813de58287ea9e113bfb462089a5e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/arms-forge/visual-review.json",
+          "sha256": "01c62e67194b130514d63530c372b39d441813de58287ea9e113bfb462089a5e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/arms-forge/visual-review.json",
+          "sha256": "01c62e67194b130514d63530c372b39d441813de58287ea9e113bfb462089a5e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/arms-forge/runtime-review.json",
+          "sha256": "cb60432d84286532d0873f3f5104cd984b6f6cb6ee40a6c6cee0db00a8212ed5",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
