@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/143",
+  "binaries": {
+    "blend": "75e80d71aee55a309344eddf9273b9838da65b3a3dcf1383d828e522487e1687",
+    "glb": "fdfa5625b8577cf441b9e412356294e01c38f8f4eb78027d3e4424f069ba951f"
+  },
+  "runtime_report_sha256": "f021a62b97ce2a7c98caa8d257ff6cb44cc8586997528084688263a83d1cb7e0",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0005281803542673107,
+      "margin": 43
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00022441326789152875,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00019952751883539778,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn14-review-1.png",
+      "sha256": "a272df7248cbb906c5e6739bb227a295316bad5a05cb300852cf3fff49078b7a",
+      "prompt": "sources/docs/reconstruction/models/mn14-concept-prompt-1.txt",
+      "feedback": "Selected after comparison with own paletted body1 and all41 catalogue updates. Preserves squat truncated-square grey-blue concrete base, open chamfered-square well with pale lip/red outer band, broad front service recess, exactly three brass bent side fittings, two close tall brass supports with narrow two-rail crosshead, and one short pale roof upright. Wear is appropriate and quiet surfaces remain readable. Precise beam inclination/rib count, hidden structure, lining/floor depth, dimensions and red-band profile are interpreted. No generic Terran iris, firing cycle or missile loader inferred."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "status": "revision_required",
+      "binaries": {
+        "blend": "c780cd89f95e96dfe9db9d52d5a46b14c560b4e7b95a3e38e00bdfc867d1eb82",
+        "glb": "e2b41fc5ccf258974088b39daf2de61294d085c0d2db3d7bfb5b3439c81e5f66"
+      },
+      "runtime_report_sha256": "1eade1460cc07562b04a8a0693127cca419c4686cee9ce00ad5180f5e312fe87",
+      "finding": "Actual source/concept/independent GLB whole/front/rear/well comparison inspected. Counts, supports and true open well pass, but the visible mouth is too narrow relative to its pale lip and brass reads dark brown rather than source/concept ochre. Widen aperture halfwidth .32 to .36 with matching body opening/lining/floor and support guards, brighten brass map and soften bent fitting edges. Preserve all source counts and static open anatomy.",
+      "limitations": [
+        "Metric dimensions/hidden floor remain authored; source-like camera is not calibrated recovery."
+      ]
+    },
+    {
+      "pass_number": 2,
+      "status": "accepted_asset_only",
+      "binaries": {
+        "blend": "75e80d71aee55a309344eddf9273b9838da65b3a3dcf1383d828e522487e1687",
+        "glb": "fdfa5625b8577cf441b9e412356294e01c38f8f4eb78027d3e4424f069ba951f"
+      },
+      "runtime_report_sha256": "f021a62b97ce2a7c98caa8d257ff6cb44cc8586997528084688263a83d1cb7e0",
+      "finding": "Inspected final actual own-source/selected-concept/independent GLB whole/front/rear/well comparison board, final native hero and bent-fitting/front-recess detail. Widening the well from .64 to .72 clear width, brightening tarnished brass and rounding the three fitting edges improve the source/concept match. Source counts and quiet cast silhouette remain intact. Actual saved-native/independent GLB checks pass:1732triangles/9positiveclosedmeshes/5materials/7maps, thirty support witnesses, three bent brass fittings and two tall supports, two rails/six authored ribs and one short post, one blind service recess/backing, nine deep-well rays to floorZ.10, inner walls at three heights, cast slope, two real wear chips, root and decoded texture pixels. Maximum surface error5.960464477539063e-8. No significant further source/concept discrepancy requiring another model pass identified.",
+      "limitations": [
+        "Exact hidden rear, wall/lining/floor depths, support engineering, rib count and cell-relative dimensions are authored. Camera approximates the source, not calibrated recovery.",
+        "Static open own source does not establish a closing lid, iris, heading action, firing cycle or generic Terran loader. No operating clip is supplied.",
+        "Black floorZ.10 is authored visual engineering, not recovered missile emergence altitude. Actual missile payload clearance, socket, emergence/masking, scale/state/shader and Android performance remain separate client checks.",
+        "Agent visual review does not establish final user artistic acceptance."
+      ]
+    }
+  ],
+  "final_review": "Inspected final actual own-source/selected-concept/independent GLB whole/front/rear/well comparison board, final native hero and bent-fitting/front-recess detail. Widening the well from .64 to .72 clear width, brightening tarnished brass and rounding the three fitting edges improve the source/concept match. Source counts and quiet cast silhouette remain intact. Actual saved-native/independent GLB checks pass:1732triangles/9positiveclosedmeshes/5materials/7maps, thirty support witnesses, three bent brass fittings and two tall supports, two rails/six authored ribs and one short post, one blind service recess/backing, nine deep-well rays to floorZ.10, inner walls at three heights, cast slope, two real wear chips, root and decoded texture pixels. Maximum surface error5.960464477539063e-8. No significant further source/concept discrepancy requiring another model pass identified.",
+  "limitations": [
+    "Exact hidden rear, wall/lining/floor depths, support engineering, rib count and cell-relative dimensions are authored. Camera approximates the source, not calibrated recovery.",
+    "Static open own source does not establish a closing lid, iris, heading action, firing cycle or generic Terran loader. No operating clip is supplied.",
+    "Black floorZ.10 is authored visual engineering, not recovered missile emergence altitude. Actual missile payload clearance, socket, emergence/masking, scale/state/shader and Android performance remain separate client checks.",
+    "Agent visual review does not establish final user artistic acceptance."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

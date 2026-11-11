@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/143",
+  "key": "MN14",
+  "name": "Attack Pods",
+  "culture": "mauna",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 14,
+  "construction_updates": 34,
+  "triangles": 1732,
+  "triangle_budget": 30000,
+  "mesh_nodes": 9,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mauna_attack_pods.py",
+  "author_sha256": "a0697a69f7095b905de5f046b2e3ab092965024d790d1058912128b61d0f7781",
+  "binaries": {
+    "blend": "75e80d71aee55a309344eddf9273b9838da65b3a3dcf1383d828e522487e1687",
+    "glb": "fdfa5625b8577cf441b9e412356294e01c38f8f4eb78027d3e4424f069ba951f"
+  },
+  "textures": {
+    "brass-colour.png": "b4002e273e50375a68a8c0dcdb586abfc4361bae773dd16c745d9ed6e82de698",
+    "cast-concrete-colour.png": "7c863d68cae154af8858ba063ab1ec2cf4e17e81bfcfe45e52bf56b2e647b2c1",
+    "cast-service-normal.png": "6d81eeef9a27cd7cd1530d011c306f0113f265a006dfceb2904670e0bc9852c2",
+    "concrete-orm.png": "a8a7d2354279b1c9e95d10beb2ff843c1d8ecd5bed077d73cf151a6877d57307",
+    "marking-red-colour.png": "f60ccde5dac6fd4c44167b918bdb1cf3ee5643e0c7496a3072dc0622171a523b",
+    "metal-orm.png": "bab7f5ecfe543115d882aa7f317c7d825d8ad92fa3459be9f3e932e15dd824be",
+    "pale-alloy-colour.png": "a57a71504d129b37a2f08fd6c2e9bc69c865b9ca93f5b60f4f7c90b1c2197730"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Attack Pods seated front service backing",
+      "body": "Attack Pods low truncated square cast body",
+      "point": [
+        0.0,
+        -0.8327058553695679,
+        0.47999998927116394
+      ],
+      "normal": [
+        0.0,
+        -0.9623737931251526,
+        0.271729052066803
+      ],
+      "depth": 0.032,
+      "contact_depth": 0.04
+    }
+  ],
+  "attachment_contacts": [
+    {
+      "object": "Attack Pods low truncated square cast body",
+      "support": "Attack Pods grounded rectangular foot",
+      "point": [
+        0.65,
+        0,
+        0.11
+      ]
+    },
+    {
+      "object": "Attack Pods raised red well band",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        0.45,
+        0,
+        0.945
+      ]
+    },
+    {
+      "object": "Attack Pods pale upper well lip",
+      "support": "Attack Pods raised red well band",
+      "point": [
+        0.45,
+        0,
+        1.108
+      ]
+    },
+    {
+      "object": "Attack Pods dark deep well lining",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        0.385,
+        0,
+        0.5
+      ]
+    },
+    {
+      "object": "Attack Pods dark deep well lining",
+      "support": "Attack Pods pale upper well lip",
+      "point": [
+        0.375,
+        0,
+        1.115
+      ]
+    },
+    {
+      "object": "Attack Pods recessed black well floor",
+      "support": "Attack Pods dark deep well lining",
+      "point": [
+        0.375,
+        0,
+        0.09
+      ]
+    },
+    {
+      "object": "Attack Pods tall brass support 0",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        0.54,
+        0.42,
+        0.945
+      ]
+    },
+    {
+      "object": "Attack Pods narrow crosshead rail 0",
+      "support": "Attack Pods tall brass support 0",
+      "point": [
+        0.54,
+        0.42,
+        1.963
+      ]
+    },
+    {
+      "object": "Attack Pods tall brass support 1",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        0.66,
+        0.42,
+        0.945
+      ]
+    },
+    {
+      "object": "Attack Pods narrow crosshead rail 1",
+      "support": "Attack Pods tall brass support 1",
+      "point": [
+        0.66,
+        0.42,
+        1.963
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 0",
+      "support": "Attack Pods narrow crosshead rail 0",
+      "point": [
+        0.54,
+        0.08,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 0",
+      "support": "Attack Pods narrow crosshead rail 1",
+      "point": [
+        0.66,
+        0.08,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 1",
+      "support": "Attack Pods narrow crosshead rail 0",
+      "point": [
+        0.54,
+        0.216,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 1",
+      "support": "Attack Pods narrow crosshead rail 1",
+      "point": [
+        0.66,
+        0.216,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 2",
+      "support": "Attack Pods narrow crosshead rail 0",
+      "point": [
+        0.54,
+        0.352,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 2",
+      "support": "Attack Pods narrow crosshead rail 1",
+      "point": [
+        0.66,
+        0.352,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 3",
+      "support": "Attack Pods narrow crosshead rail 0",
+      "point": [
+        0.54,
+        0.488,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 3",
+      "support": "Attack Pods narrow crosshead rail 1",
+      "point": [
+        0.66,
+        0.488,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 4",
+      "support": "Attack Pods narrow crosshead rail 0",
+      "point": [
+        0.54,
+        0.624,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 4",
+      "support": "Attack Pods narrow crosshead rail 1",
+      "point": [
+        0.66,
+        0.624,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 5",
+      "support": "Attack Pods narrow crosshead rail 0",
+      "point": [
+        0.54,
+        0.76,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods supported crosshead rib 5",
+      "support": "Attack Pods narrow crosshead rail 1",
+      "point": [
+        0.66,
+        0.76,
+        1.975
+      ]
+    },
+    {
+      "object": "Attack Pods short pale roof upright",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        -0.57,
+        -0.49,
+        0.945
+      ]
+    },
+    {
+      "object": "Attack Pods bent brass side fitting 0",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        0.815,
+        -0.44,
+        0.46
+      ]
+    },
+    {
+      "object": "Attack Pods bent brass side fitting 1",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        0.815,
+        0,
+        0.46
+      ]
+    },
+    {
+      "object": "Attack Pods bent brass side fitting 2",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        0.815,
+        0.44,
+        0.46
+      ]
+    },
+    {
+      "object": "Attack Pods pale front frame 0",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        -0.5649999976158142,
+        -0.828856348991394,
+        0.4789130687713623
+      ]
+    },
+    {
+      "object": "Attack Pods pale front frame 1",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        0.5649999976158142,
+        -0.828856348991394,
+        0.4789130687713623
+      ]
+    },
+    {
+      "object": "Attack Pods pale front frame 2",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        0.0,
+        -0.885104238986969,
+        0.27970167994499207
+      ]
+    },
+    {
+      "object": "Attack Pods pale front frame 3",
+      "support": "Attack Pods low truncated square cast body",
+      "point": [
+        0.0,
+        -0.7726084589958191,
+        0.6781244874000549
+      ]
+    }
+  ],
+  "part_batches": {
+    "Attack Pods narrow crosshead rail 0": "Attack Pods pale supported assemblies",
+    "Attack Pods narrow crosshead rail 1": "Attack Pods pale supported assemblies",
+    "Attack Pods supported crosshead rib 0": "Attack Pods pale supported assemblies",
+    "Attack Pods supported crosshead rib 1": "Attack Pods pale supported assemblies",
+    "Attack Pods supported crosshead rib 2": "Attack Pods pale supported assemblies",
+    "Attack Pods supported crosshead rib 3": "Attack Pods pale supported assemblies",
+    "Attack Pods supported crosshead rib 4": "Attack Pods pale supported assemblies",
+    "Attack Pods supported crosshead rib 5": "Attack Pods pale supported assemblies",
+    "Attack Pods short pale roof upright": "Attack Pods pale supported assemblies",
+    "Attack Pods pale front frame 0": "Attack Pods pale supported assemblies",
+    "Attack Pods pale front frame 1": "Attack Pods pale supported assemblies",
+    "Attack Pods pale front frame 2": "Attack Pods pale supported assemblies",
+    "Attack Pods pale front frame 3": "Attack Pods pale supported assemblies",
+    "Attack Pods tall brass support 0": "Attack Pods five source brass assemblies",
+    "Attack Pods tall brass support 1": "Attack Pods five source brass assemblies",
+    "Attack Pods bent brass side fitting 0": "Attack Pods five source brass assemblies",
+    "Attack Pods bent brass side fitting 1": "Attack Pods five source brass assemblies",
+    "Attack Pods bent brass side fitting 2": "Attack Pods five source brass assemblies",
+    "Attack Pods seated front service backing": "Attack Pods front blind backing"
+  },
+  "physical_chips": [
+    {
+      "body": "Attack Pods low truncated square cast body",
+      "point": [
+        -0.6399999856948853,
+        0.0,
+        0.949999988079071
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "body": "Attack Pods grounded rectangular foot",
+      "point": [
+        0.6499999761581421,
+        -0.9800000190734863,
+        0.054999999701976776
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ],
+  "well": {
+    "shape": "Chamfered square",
+    "inner_halfwidth": 0.36,
+    "mouth_top": 1.145,
+    "floor_top": 0.1,
+    "ground_level": 0,
+    "fixed_open": true,
+    "hidden_floor_depth_authored": true,
+    "missile_clearance_calibrated": false
+  },
+  "interpretation": [
+    "Own fixed-open body1, empty activity2..16 and foregroundmask17 govern the static open well. Three bent brass side fittings, two tall brass supports, one narrow rail/rib crosshead and one short pale post follow source and reviewed concept.",
+    "Hidden shaft lining/floor depth, support engineering, rib count, dimensions and material depths are authored. Generic Terran PB14 iris and ST14 technology tower do not establish Mauna operation."
+  ],
+  "scale_contract": "2x2 placement footprint, ground0, +Z up/-Y front. Cell-relative dimensions authored; metric launch corridor and missile socket are not calibrated.",
+  "concept_review": "sources/docs/reconstruction/models/mn14-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

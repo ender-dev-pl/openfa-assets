@@ -30523,7 +30523,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/143",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           1004
         ]
@@ -30597,27 +30597,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/attack-pods/model.blend",
           "present": true,
-          "sha256": "49aef942f84586f1ef41ed00446b05a9b0809aa0c4a6abb49ae68a56c658f940",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "verified-launch-mechanism",
-          "blend": "docs/assets/reconstruction/launch-facilities/mauna/mn14/model.blend",
-          "present": true,
-          "sha256": "da3ab7e50c849c25dbb1ae5770d3ae4652bd288b272065985ce43c5d406a3700"
+          "sha256": "75e80d71aee55a309344eddf9273b9838da65b3a3dcf1383d828e522487e1687",
+          "media": "gallery/media/objects/mauna/attack-pods",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/attack-pods/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/attack-pods/rear-quarter.png"
+            },
+            {
+              "label": "Open well, red band and supported crosshead",
+              "image": "gallery/media/objects/mauna/attack-pods/open-well-red-band-and-supported-crosshead-detail.png"
+            },
+            {
+              "label": "Three bent brass fittings and cast recess",
+              "image": "gallery/media/objects/mauna/attack-pods/three-bent-brass-fittings-and-cast-recess-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/attack-pods/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/attack-pods/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -30647,6 +30668,95 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 143
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/model.blend",
+          "present": true,
+          "sha256": "49aef942f84586f1ef41ed00446b05a9b0809aa0c4a6abb49ae68a56c658f940",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "verified-launch-mechanism",
+          "blend": "docs/assets/reconstruction/launch-facilities/mauna/mn14/model.blend",
+          "present": true,
+          "sha256": "da3ab7e50c849c25dbb1ae5770d3ae4652bd288b272065985ce43c5d406a3700"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/attack-pods/model.blend",
+        "sha256": "75e80d71aee55a309344eddf9273b9838da65b3a3dcf1383d828e522487e1687",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/attack-pods",
+          "verifier": "sources/tools/blender/verify_mauna_attack_pods.py",
+          "files": {
+            "sources/objects/mauna/attack-pods/integration-contract.json": "860586eb5be1c39d79351748fa30046c5ae30a2a7c9101e903251129cdfb119b",
+            "sources/objects/mauna/attack-pods/model.blend": "75e80d71aee55a309344eddf9273b9838da65b3a3dcf1383d828e522487e1687",
+            "sources/objects/mauna/attack-pods/model.glb": "fdfa5625b8577cf441b9e412356294e01c38f8f4eb78027d3e4424f069ba951f",
+            "sources/objects/mauna/attack-pods/model.json": "3d5009dcf322dd25f6bebffa0ec476709284783d0bd321aa061559baaa7a59f7",
+            "sources/objects/mauna/attack-pods/README.md": "440b4adefad03b373fea3500c1e16a1fb51933e9ad280f83319387898fde8879",
+            "sources/objects/mauna/attack-pods/runtime-review.json": "f021a62b97ce2a7c98caa8d257ff6cb44cc8586997528084688263a83d1cb7e0",
+            "sources/objects/mauna/attack-pods/visual-review.json": "dc11eb74024f6166063554d6aeca9ca99f0996c8bd7dad38c80e43c829e2961b",
+            "gallery/media/objects/mauna/attack-pods/concept-glb-comparison.jpg": "29cc98edaa66311620f7513369280c73a008ad1014e2323dd002b10de6cacf85",
+            "gallery/media/objects/mauna/attack-pods/front-quarter.png": "972989d016e86752d888cfa0f04a4290e3271f0f182dead90c7443a830d3707e",
+            "gallery/media/objects/mauna/attack-pods/front.png": "0ee86db7256b94c3ba9969799bf18923a8559cbe7060212812e37c9cb92d3f22",
+            "gallery/media/objects/mauna/attack-pods/imported-front-quarter.png": "972989d016e86752d888cfa0f04a4290e3271f0f182dead90c7443a830d3707e",
+            "gallery/media/objects/mauna/attack-pods/imported-front.png": "0ee86db7256b94c3ba9969799bf18923a8559cbe7060212812e37c9cb92d3f22",
+            "gallery/media/objects/mauna/attack-pods/imported-rear-quarter.png": "06b3a97b9f44266e7bd37548284c5f2ec5057cb110532e7e989072b86525fb1c",
+            "gallery/media/objects/mauna/attack-pods/native-front-quarter.png": "19427d182c5b457c83d32980150d054ebf62404d9652d76b32877020646d187e",
+            "gallery/media/objects/mauna/attack-pods/native-front.png": "3cac47e49e05b8b599ae15757e9a611db80b272b1349021b4dab5c646d653177",
+            "gallery/media/objects/mauna/attack-pods/native-rear-quarter.png": "8c3b42b61d6ecdc232bdbb714de12e3318ba1dcd97e5ffb3dfa17d0c76491c9b",
+            "gallery/media/objects/mauna/attack-pods/open-well-red-band-and-supported-crosshead-detail.png": "d0208d00aed37aa946d7d1fadfca9968e98cc4cfe37acb26ced57db1ab06d75a",
+            "gallery/media/objects/mauna/attack-pods/rear-quarter.png": "06b3a97b9f44266e7bd37548284c5f2ec5057cb110532e7e989072b86525fb1c",
+            "gallery/media/objects/mauna/attack-pods/technical-wireframe.png": "3b582497b5d23892a38c0f1bd289e2e932c8848dc18a47cadb20baaad4e7a1a7",
+            "gallery/media/objects/mauna/attack-pods/three-bent-brass-fittings-and-cast-recess-detail.png": "0a58d8b64e3aa375a21f072455d0bd78334f559361c08ca1c476412ed19adab9",
+            "sources/materials/mauna/attack-pods/brass-colour.png": "b4002e273e50375a68a8c0dcdb586abfc4361bae773dd16c745d9ed6e82de698",
+            "sources/materials/mauna/attack-pods/cast-concrete-colour.png": "7c863d68cae154af8858ba063ab1ec2cf4e17e81bfcfe45e52bf56b2e647b2c1",
+            "sources/materials/mauna/attack-pods/cast-service-normal.png": "6d81eeef9a27cd7cd1530d011c306f0113f265a006dfceb2904670e0bc9852c2",
+            "sources/materials/mauna/attack-pods/concrete-orm.png": "a8a7d2354279b1c9e95d10beb2ff843c1d8ecd5bed077d73cf151a6877d57307",
+            "sources/materials/mauna/attack-pods/marking-red-colour.png": "f60ccde5dac6fd4c44167b918bdb1cf3ee5643e0c7496a3072dc0622171a523b",
+            "sources/materials/mauna/attack-pods/metal-orm.png": "bab7f5ecfe543115d882aa7f317c7d825d8ad92fa3459be9f3e932e15dd824be",
+            "sources/materials/mauna/attack-pods/pale-alloy-colour.png": "a57a71504d129b37a2f08fd6c2e9bc69c865b9ca93f5b60f4f7c90b1c2197730",
+            "sources/tools/blender/remaster_mauna_attack_pods.py": "a0697a69f7095b905de5f046b2e3ab092965024d790d1058912128b61d0f7781",
+            "sources/tools/blender/verify_mauna_attack_pods.py": "202214349583fafc66de54ed68e890fef58f9f009325fbbb9ac0e75a5f2aff5b",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn14-concept-review.json": "7a1f9e1fbe9dd5fdcd574b1d55d3a204c6e81c3117ca3449e35bd7fcae920aba",
+            "sources/docs/reconstruction/models/mn14-concept-prompt-1.txt": "37d8d03306270caa740e96d589fb4bcf6232bfb2fe67bd08c148f0ad31750b3d",
+            "gallery/media/concepts/mauna/mn14-review-1.png": "a272df7248cbb906c5e6739bb227a295316bad5a05cb300852cf3fff49078b7a"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/attack-pods/visual-review.json",
+          "sha256": "dc11eb74024f6166063554d6aeca9ca99f0996c8bd7dad38c80e43c829e2961b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/attack-pods/visual-review.json",
+          "sha256": "dc11eb74024f6166063554d6aeca9ca99f0996c8bd7dad38c80e43c829e2961b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/attack-pods/visual-review.json",
+          "sha256": "dc11eb74024f6166063554d6aeca9ca99f0996c8bd7dad38c80e43c829e2961b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/attack-pods/visual-review.json",
+          "sha256": "dc11eb74024f6166063554d6aeca9ca99f0996c8bd7dad38c80e43c829e2961b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/attack-pods/runtime-review.json",
+          "sha256": "f021a62b97ce2a7c98caa8d257ff6cb44cc8586997528084688263a83d1cb7e0",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

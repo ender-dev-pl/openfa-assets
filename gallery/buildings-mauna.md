@@ -166,19 +166,13 @@ Additional views: [Front](../gallery/media/objects/mauna/defence-pods/front.png)
 
 `openfa:building/legacy/143`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Attack Pods](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/front-quarter.png)
+![Attack Pods](../gallery/media/objects/mauna/attack-pods/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/model.glb)
+[Blend](../sources/objects/mauna/attack-pods/model.blend) · [GLB](../sources/objects/mauna/attack-pods/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn14/animation-00.webm)
-
-**Additional iteration — verified-launch-mechanism**
-
-![Attack Pods](../gallery/media/docs/assets/reconstruction/launch-facilities/mauna/mn14/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn14/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn14/model.glb)
+Additional views: [Front](../gallery/media/objects/mauna/attack-pods/front.png) · [Rear quarter](../gallery/media/objects/mauna/attack-pods/rear-quarter.png) · [Open well, red band and supported crosshead](../gallery/media/objects/mauna/attack-pods/open-well-red-band-and-supported-crosshead-detail.png) · [Three bent brass fittings and cast recess](../gallery/media/objects/mauna/attack-pods/three-bent-brass-fittings-and-cast-recess-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/attack-pods/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/attack-pods/concept-glb-comparison.jpg)
 
 ## Pulse Tower
 
