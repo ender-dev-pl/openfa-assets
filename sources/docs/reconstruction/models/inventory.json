@@ -23243,7 +23243,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/114",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           975
         ]
@@ -23317,21 +23317,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar08/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/naval-dockyard/model.blend",
           "present": true,
-          "sha256": "e829cbd5dea9e86c981842b8bf9db335e1619dc94933e35ee2d7b79c9ef83ade",
-          "final_visual_acceptance": "not-established"
+          "sha256": "96a826bd961a184e85aea0d903424dd591faf175841d3b16cc8aa206f501580b",
+          "media": "gallery/media/objects/artemian/naval-dockyard",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/naval-dockyard/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/naval-dockyard/rear-quarter.png"
+            },
+            {
+              "label": "Four front fittings and copper inset",
+              "image": "gallery/media/objects/artemian/naval-dockyard/four-front-fittings-and-copper-inset-detail.png"
+            },
+            {
+              "label": "Two roof points and shell",
+              "image": "gallery/media/objects/artemian/naval-dockyard/two-roof-points-and-shell-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/naval-dockyard/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/naval-dockyard/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -23361,6 +23388,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 114
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar08/model.blend",
+          "present": true,
+          "sha256": "e829cbd5dea9e86c981842b8bf9db335e1619dc94933e35ee2d7b79c9ef83ade",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/naval-dockyard/model.blend",
+        "sha256": "96a826bd961a184e85aea0d903424dd591faf175841d3b16cc8aa206f501580b",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/naval-dockyard",
+          "verifier": "sources/tools/blender/verify_artemian_naval_dockyard.py",
+          "files": {
+            "sources/objects/artemian/naval-dockyard/model.blend": "96a826bd961a184e85aea0d903424dd591faf175841d3b16cc8aa206f501580b",
+            "sources/objects/artemian/naval-dockyard/model.glb": "2bdbb4f8d77b74b6cdb887d962272e3a05c872efa6bc696d91274a8fe370408b",
+            "sources/objects/artemian/naval-dockyard/model.json": "ecaff8908901f04ccb8bb382052bb04881f86acdd886be6d7ea98649dca9552f",
+            "sources/objects/artemian/naval-dockyard/README.md": "e23a22ae3677fe1dce450340f93077a417f1db7654fbe67c924a05da979919a1",
+            "sources/objects/artemian/naval-dockyard/runtime-review.json": "b5be2f95d6100cc2d3ee05c3a0952d4bfbe593cd51558f56976e02065f094e63",
+            "sources/objects/artemian/naval-dockyard/visual-review.json": "600bb63553aaf4318a9ed9f4acd350e3ce0519c5eef55fa4d40554c12b1f812d",
+            "gallery/media/objects/artemian/naval-dockyard/concept-glb-comparison.jpg": "12ac6fd1a9356e718b66708d335d8e8a9c491ee0a617e6e392e831f58cbc256a",
+            "gallery/media/objects/artemian/naval-dockyard/four-front-fittings-and-copper-inset-detail.png": "051e3ab0c027fac07578476f850c4c34d58669532237097400f31243b3c59484",
+            "gallery/media/objects/artemian/naval-dockyard/front-quarter.png": "c7bf5558797b6f2eb6d18bfbeb35e84925fe6c2ae6cc9a753c938b460337f290",
+            "gallery/media/objects/artemian/naval-dockyard/front.png": "02e4288de8283f627a3edc2e9e8d191a44f301f2929cefff822380b01d7c3bef",
+            "gallery/media/objects/artemian/naval-dockyard/imported-front-quarter.png": "c7bf5558797b6f2eb6d18bfbeb35e84925fe6c2ae6cc9a753c938b460337f290",
+            "gallery/media/objects/artemian/naval-dockyard/imported-front.png": "02e4288de8283f627a3edc2e9e8d191a44f301f2929cefff822380b01d7c3bef",
+            "gallery/media/objects/artemian/naval-dockyard/imported-rear-quarter.png": "f19223d8a110f68aa5e8c33aa3a723ca1036020a8616c58d65244658bd2f73a4",
+            "gallery/media/objects/artemian/naval-dockyard/native-front-quarter.png": "f2576abe33138bcd3be598f4a9bf415e84265f7b2f610a4061cad33014988bbe",
+            "gallery/media/objects/artemian/naval-dockyard/native-front.png": "a85e52848c11d23c60d775e53ddf5abab9df85b0c681bcb3914ce3bfeaa6cffc",
+            "gallery/media/objects/artemian/naval-dockyard/native-rear-quarter.png": "5e904ab57ad3ccda759b2c3d3f3a6517ca7c6c51f699fa69f50484b2eb94f3f7",
+            "gallery/media/objects/artemian/naval-dockyard/rear-quarter.png": "f19223d8a110f68aa5e8c33aa3a723ca1036020a8616c58d65244658bd2f73a4",
+            "gallery/media/objects/artemian/naval-dockyard/technical-wireframe.png": "3d13872f0cd201ca31a3ea4731a2af7d9e411cb5e926b8598a06aaaaf302eb14",
+            "gallery/media/objects/artemian/naval-dockyard/two-roof-points-and-shell-detail.png": "5ff3212f07d481dff322980b8ed4993d50347f307af859d599f3140e94f172b4",
+            "sources/materials/artemian/naval-dockyard/amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+            "sources/materials/artemian/naval-dockyard/copper-fitting-colour.png": "f5bec5f91ece22d7e9c06834019f56d3fb8cffbecfd92582ccf1668095a4d442",
+            "sources/materials/artemian/naval-dockyard/exposed-alloy-edge-colour.png": "c600d0710df2d2299cda35b246f70241724423fe0f9753f7cd4a99d4c9e4596f",
+            "sources/materials/artemian/naval-dockyard/muted-green-alloy-colour.png": "531a4aedb35d1d99caa7cc15e0bdf44c1def8b884d2b16a0ee68e2cc40b1e74b",
+            "sources/materials/artemian/naval-dockyard/occlusion-roughness-metallic.png": "4370672480f2f4508fe86c23a37a469b2fb3f0d7055a071f56699bb5791ba325",
+            "sources/materials/artemian/naval-dockyard/used-metal-normal.png": "099f56bae0ee923afeb2d69068483f93a4a631ce7575819a742314654b8c83f6",
+            "sources/tools/blender/remaster_artemian_naval_dockyard.py": "ac862579ec35ab09eda9d54aa4cb053de00e84ee64b8cb945f004955d190c9fe",
+            "sources/tools/blender/verify_artemian_naval_dockyard.py": "2e7c6fbfde1fc00b96c5db9ae6e9c1e77f740c51d7eeb74d7f7afdcc6c397c5e",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar08-concept-review.json": "daee9d0c7e28bb916ecab3e93ebd4beb220ca4e56ed70537d6c37c8d769f09a7",
+            "sources/docs/reconstruction/models/ar08-concept-prompt-1.txt": "34b9d3827fcf834663022e66fa7f14a636112891abf30e5899ca392fbca0b432",
+            "gallery/media/concepts/artemian/ar08-review-1.png": "b3bc61a4aadc3da107bead4c04dc4d3c4585521ef82df9d1ba433e5deb314ec3"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/naval-dockyard/visual-review.json",
+          "sha256": "600bb63553aaf4318a9ed9f4acd350e3ce0519c5eef55fa4d40554c12b1f812d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/naval-dockyard/visual-review.json",
+          "sha256": "600bb63553aaf4318a9ed9f4acd350e3ce0519c5eef55fa4d40554c12b1f812d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/naval-dockyard/visual-review.json",
+          "sha256": "600bb63553aaf4318a9ed9f4acd350e3ce0519c5eef55fa4d40554c12b1f812d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/naval-dockyard/visual-review.json",
+          "sha256": "600bb63553aaf4318a9ed9f4acd350e3ce0519c5eef55fa4d40554c12b1f812d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/naval-dockyard/runtime-review.json",
+          "sha256": "b5be2f95d6100cc2d3ee05c3a0952d4bfbe593cd51558f56976e02065f094e63",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

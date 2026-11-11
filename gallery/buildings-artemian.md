@@ -90,11 +90,13 @@ Additional views: [Front](../gallery/media/objects/artemian/house-of-the-axe/fro
 
 `openfa:building/legacy/114`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Naval Dockyard](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar08/front-quarter.png)
+![Naval Dockyard](../gallery/media/objects/artemian/naval-dockyard/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar08/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar08/model.glb)
+[Blend](../sources/objects/artemian/naval-dockyard/model.blend) · [GLB](../sources/objects/artemian/naval-dockyard/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/naval-dockyard/front.png) · [Rear quarter](../gallery/media/objects/artemian/naval-dockyard/rear-quarter.png) · [Four front fittings and copper inset](../gallery/media/objects/artemian/naval-dockyard/four-front-fittings-and-copper-inset-detail.png) · [Two roof points and shell](../gallery/media/objects/artemian/naval-dockyard/two-roof-points-and-shell-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/naval-dockyard/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/naval-dockyard/concept-glb-comparison.jpg)
 
 ## Launch Pads
 
