@@ -108,7 +108,9 @@ Additional views: [Front](../gallery/media/objects/artemian/naval-dockyard/front
 
 [Blend](../sources/objects/artemian/launch-pads/model.blend) · [GLB](../sources/objects/artemian/launch-pads/model.glb)
 
-Additional views: [Front](../gallery/media/objects/artemian/launch-pads/front.png) · [Rear quarter](../gallery/media/objects/artemian/launch-pads/rear-quarter.png) · [Brass frame and copper fittings](../gallery/media/objects/artemian/launch-pads/brass-frame-and-copper-fittings-detail.png) · [Real recessed well and four baffles](../gallery/media/objects/artemian/launch-pads/recessed-well-and-four-baffles-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/launch-pads/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/launch-pads/concept-glb-comparison.jpg)
+Additional views: [Front](../gallery/media/objects/artemian/launch-pads/front.png) · [Rear quarter](../gallery/media/objects/artemian/launch-pads/rear-quarter.png) · [Brass frame and copper fittings](../gallery/media/objects/artemian/launch-pads/brass-frame-and-copper-fittings-detail.png) · [Real recessed well and four baffles](../gallery/media/objects/artemian/launch-pads/recessed-well-and-four-baffles-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/launch-pads/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/launch-pads/concept-glb-comparison.jpg) · [Open hangar exit](../gallery/media/objects/artemian/launch-pads/imported-open-front-quarter.png) · [Assault Fighter clearance](../gallery/media/objects/artemian/launch-pads/clearance-assault-fighter.png) · [Combat Eagle clearance](../gallery/media/objects/artemian/launch-pads/clearance-combat-eagle.png) · [Scoutship clearance](../gallery/media/objects/artemian/launch-pads/clearance-scoutship.png) · [All-Purpose proposed48 clearance](../gallery/media/objects/artemian/launch-pads/clearance-all-purpose-assault.png)
+
+[Play animation: HangarExitCycle](../gallery/media/objects/artemian/launch-pads/animation-00.webm)
 
 ## Deep Probes
 
