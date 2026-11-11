@@ -256,11 +256,13 @@ Additional views: [Front](../gallery/media/objects/artemian/advanced-ore-extract
 
 `openfa:building/legacy/127`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Rare Ore Extractor](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar21/front-quarter.png)
+![Rare Ore Extractor](../gallery/media/objects/artemian/rare-ore-extractor/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar21/model.glb)
+[Blend](../sources/objects/artemian/rare-ore-extractor/model.blend) · [GLB](../sources/objects/artemian/rare-ore-extractor/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/rare-ore-extractor/front.png) · [Rear quarter](../gallery/media/objects/artemian/rare-ore-extractor/rear-quarter.png) · [Open pale capsule and supported brass core](../gallery/media/objects/artemian/rare-ore-extractor/open-pale-capsule-and-supported-brass-core-detail.png) · [Hood points and lower front fittings](../gallery/media/objects/artemian/rare-ore-extractor/hood-points-and-lower-front-fittings-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/rare-ore-extractor/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/rare-ore-extractor/concept-glb-comparison.jpg)
 
 ## Ore Depot
 

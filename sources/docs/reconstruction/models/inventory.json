@@ -26503,7 +26503,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/127",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           988
         ]
@@ -26577,21 +26577,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar21/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/rare-ore-extractor/model.blend",
           "present": true,
-          "sha256": "e720aab50d270d1e7530eccfdec91989d2ebc93b067934593d5884b242d51215",
-          "final_visual_acceptance": "not-established"
+          "sha256": "bdf070125a6371d02f58c48d2250fc88e36039babc4017502d2d2bc6a97c390d",
+          "media": "gallery/media/objects/artemian/rare-ore-extractor",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/rare-ore-extractor/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/rare-ore-extractor/rear-quarter.png"
+            },
+            {
+              "label": "Open pale capsule and supported brass core",
+              "image": "gallery/media/objects/artemian/rare-ore-extractor/open-pale-capsule-and-supported-brass-core-detail.png"
+            },
+            {
+              "label": "Hood points and lower front fittings",
+              "image": "gallery/media/objects/artemian/rare-ore-extractor/hood-points-and-lower-front-fittings-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/rare-ore-extractor/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/rare-ore-extractor/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -26621,6 +26648,88 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 127
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar21/model.blend",
+          "present": true,
+          "sha256": "e720aab50d270d1e7530eccfdec91989d2ebc93b067934593d5884b242d51215",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/rare-ore-extractor/model.blend",
+        "sha256": "bdf070125a6371d02f58c48d2250fc88e36039babc4017502d2d2bc6a97c390d",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/rare-ore-extractor",
+          "verifier": "sources/tools/blender/verify_artemian_rare_ore_extractor.py",
+          "files": {
+            "sources/objects/artemian/rare-ore-extractor/model.blend": "bdf070125a6371d02f58c48d2250fc88e36039babc4017502d2d2bc6a97c390d",
+            "sources/objects/artemian/rare-ore-extractor/model.glb": "e07002285847a39204702920fd82c1fd560143898b77cf7df1bf997400e3c32f",
+            "sources/objects/artemian/rare-ore-extractor/model.json": "9f89a316e721312caceec4bf72ca8eb1cc62fff8875ec82a088223683b428019",
+            "sources/objects/artemian/rare-ore-extractor/README.md": "7c663ba86091810ad1a4f78e7357aec5a351dca37412aa5450c0d25c0d0cef4f",
+            "sources/objects/artemian/rare-ore-extractor/runtime-review.json": "ec31276a9439fc25ac96b50fa382f2f36af163f8e2e1bd98c869c353404f3cd3",
+            "sources/objects/artemian/rare-ore-extractor/visual-review.json": "c0f8ad555d45fbdd907851a1e0327e4bc0879ebb1d9d8d3e580a7f6241be21e7",
+            "gallery/media/objects/artemian/rare-ore-extractor/concept-glb-comparison.jpg": "4c1f90a5b2ade0b5d4404dd36057ea6e52a4c8b0582c5fccec0e2ab47ccc1a10",
+            "gallery/media/objects/artemian/rare-ore-extractor/front-quarter.png": "acc29320fbb7617eeb94bf927e9f361d82551ddac7947481d4361b286758780b",
+            "gallery/media/objects/artemian/rare-ore-extractor/front.png": "e2cb99923cc06ed091e984dbe865624c9943fef3e3bd4ed91f5e4bcdebe1b20f",
+            "gallery/media/objects/artemian/rare-ore-extractor/hood-points-and-lower-front-fittings-detail.png": "aa5ea30cef7b98a2375fd3623308863878cfeafd71c7e55125c8cbbfb449bd6f",
+            "gallery/media/objects/artemian/rare-ore-extractor/imported-front-quarter.png": "acc29320fbb7617eeb94bf927e9f361d82551ddac7947481d4361b286758780b",
+            "gallery/media/objects/artemian/rare-ore-extractor/imported-front.png": "e2cb99923cc06ed091e984dbe865624c9943fef3e3bd4ed91f5e4bcdebe1b20f",
+            "gallery/media/objects/artemian/rare-ore-extractor/imported-rear-quarter.png": "a9f38adcfdd7c7027000779b2033cdc73c735ecf41e5dd4035d1ddb40762a257",
+            "gallery/media/objects/artemian/rare-ore-extractor/native-front-quarter.png": "b26887cdad48196337ef94cfcc40e84802e9bdbd1b62520087db43fab1f0840b",
+            "gallery/media/objects/artemian/rare-ore-extractor/native-front.png": "e33c9ef46c058c4fb9f212c15fa5408a3b6c746ac4165cd912cfc6725cb9add7",
+            "gallery/media/objects/artemian/rare-ore-extractor/native-rear-quarter.png": "5fbe21a484520ede0f9ef5377e2926e2e9bb8688e7217f526bcc695ba8346f2f",
+            "gallery/media/objects/artemian/rare-ore-extractor/open-pale-capsule-and-supported-brass-core-detail.png": "ad109fab1b0cfd2286a2a8b7a8ebf5b1e6ec5ff7c058b43b2f616ff7bff29ac8",
+            "gallery/media/objects/artemian/rare-ore-extractor/rear-quarter.png": "a9f38adcfdd7c7027000779b2033cdc73c735ecf41e5dd4035d1ddb40762a257",
+            "gallery/media/objects/artemian/rare-ore-extractor/technical-wireframe.png": "fd12e4aa71d5902cd773bba25aafead312b2662099006da7a4c442d34695bc2f",
+            "sources/materials/artemian/rare-ore-extractor/amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+            "sources/materials/artemian/rare-ore-extractor/copper-fitting-colour.png": "0b2b534259c61da12bdc0866c48384c004971c4d695c02396926bcbcbf813b0e",
+            "sources/materials/artemian/rare-ore-extractor/exposed-alloy-edge-colour.png": "bc21445a7200e1865079ae2eae7f1ad3ed09aeb2b71fc282f2de427e1e95768a",
+            "sources/materials/artemian/rare-ore-extractor/muted-green-alloy-colour.png": "7c74212a481c26ff95bcddf8e0955ec6f8317204a49fda3d39b17bda0b6b86d8",
+            "sources/materials/artemian/rare-ore-extractor/occlusion-roughness-metallic.png": "84eb9d9681e76d8cec8772b98c64a9a6b019b56971ab60a7a9457d220eab6cb5",
+            "sources/materials/artemian/rare-ore-extractor/oxidized-alloy-orm.png": "5efffab2dbf0630f287b582f15e916958db6b390d3df96ce67f302225681aee1",
+            "sources/materials/artemian/rare-ore-extractor/used-metal-normal.png": "aac2647ef9ad40a5b9da601bd9b1e2b81cc79a477a8c65cabb3dd78700fcdbfb",
+            "sources/tools/blender/remaster_artemian_rare_ore_extractor.py": "7e0e4d3bf98be9fa3bf7598a696a69a94aa4ae30ab1dab29409cefe53911a697",
+            "sources/tools/blender/verify_artemian_rare_ore_extractor.py": "bb10b682647c37ba5d64cabe391d5bd11fcea427472d0c9c894fe2da1ac8bda5",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar21-concept-review.json": "423f9c949c78f3540a81f2095e0b7159e10262595d4c59bcc3d463cadcfc5a5f",
+            "sources/docs/reconstruction/models/ar21-concept-prompt-1.txt": "93153ef793c96ff6881bb5f34567cfbfe3ed6e1bd4be783cb9fd20373253827b",
+            "gallery/media/concepts/artemian/ar21-review-1.png": "c0be501baca81d083bb578d3c38618f5d05e137eb9b8ba17157a0185de566adb"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/rare-ore-extractor/visual-review.json",
+          "sha256": "c0f8ad555d45fbdd907851a1e0327e4bc0879ebb1d9d8d3e580a7f6241be21e7",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/rare-ore-extractor/visual-review.json",
+          "sha256": "c0f8ad555d45fbdd907851a1e0327e4bc0879ebb1d9d8d3e580a7f6241be21e7",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/rare-ore-extractor/visual-review.json",
+          "sha256": "c0f8ad555d45fbdd907851a1e0327e4bc0879ebb1d9d8d3e580a7f6241be21e7",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/rare-ore-extractor/visual-review.json",
+          "sha256": "c0f8ad555d45fbdd907851a1e0327e4bc0879ebb1d9d8d3e580a7f6241be21e7",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/rare-ore-extractor/runtime-review.json",
+          "sha256": "ec31276a9439fc25ac96b50fa382f2f36af163f8e2e1bd98c869c353404f3cd3",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/127",
+  "binaries": {
+    "blend": "bdf070125a6371d02f58c48d2250fc88e36039babc4017502d2d2bc6a97c390d",
+    "glb": "e07002285847a39204702920fd82c1fd560143898b77cf7df1bf997400e3c32f"
+  },
+  "runtime_report_sha256": "ec31276a9439fc25ac96b50fa382f2f36af163f8e2e1bd98c869c353404f3cd3",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 7.983890283605524e-05,
+      "margin": 69
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00021668472372697725,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 8.937508937508938e-05,
+      "margin": 56
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar21-review-1.png",
+      "sha256": "c0be501baca81d083bb578d3c38618f5d05e137eb9b8ba17157a0185de566adb",
+      "prompt": "sources/docs/reconstruction/models/ar21-concept-prompt-1.txt",
+      "feedback": "Selected source-shaped low scalloped green shell andraised tapered hood,two small dark hood points,one lower brass/copper fitting,left tall pale open capsule withcontinuous brass core/two collars,straight pale stem andshortredcopper banded front-left upright. Keeps quiet surfaces,mildwear andsourcecount/placement. Hidden mounts/sections authored;source governsframe/slenderstem proportions over slightly heavy concept hardware."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "adbc84b4d881a5b2be210f316f74daf41d353fc9d36d063bff92f409df09a334",
+        "glb": "40e9cd9dcaac76e1ee0558b61f777e32cdccf684cb65fc62aef29ab96cd5eb48"
+      },
+      "status": "revision_required",
+      "finding": "Actual native whole render shows stepped hood/base profile bands andcapsule opening foreshortened byview;stem mounting rods readtoo long. Source/concept hasrounder quiet shell,readable paleopenframe andshorter seatedmounts.",
+      "action": "Use monotone cubic radius interpolation overheight withoutovershoot,makefrontscallops clearer,bringstemcloser toshellwithshortermounts,androtatecapsule plane45degrees tosource reviewdirection. Preserve actualcore/end/stem/socket/opening/contact andportabletexture checks.",
+      "runtime_report_sha256": "84de0430e4a359c963af7e5975f8de3596e4498b5dc062d05546e8d743a39fcc"
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "e6e16fa170d57af9335c4601846edddaf6cb53af2a441ba8a20b429c4e899503",
+        "glb": "465bbf97500c1b7c9fd7445d90a4ecd6235f2581dccb819c712a3c81f4824dcc"
+      },
+      "runtime_report_sha256": "636096188e2f52ec5b97f07985418aca2a98f9bd9a5fb8ac051666c872729b3a",
+      "status": "revision_required",
+      "finding": "Actual importedGLB front/rear/details confirm improved smoothscalloped shell andreadableframe,butbrasscore tip isvisible throughpale endcap because roddepth exceedsframethickness. Shortupright colour istoo yellow comparedwith redcopper source/concept.",
+      "action": "Deepen realpale frame from.08to.12 soitsendcaps enclosebrasscore without changing itsupportedendcontacts;addactualraytestofcapocclusion atbothends. Changeonly shortupright coppermap greenchannel.34to.24 forredcoppercolour. Rerun actualsavednative/importgeometry/textures/renders."
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "bdf070125a6371d02f58c48d2250fc88e36039babc4017502d2d2bc6a97c390d",
+        "glb": "e07002285847a39204702920fd82c1fd560143898b77cf7df1bf997400e3c32f"
+      },
+      "runtime_report_sha256": "ec31276a9439fc25ac96b50fa382f2f36af163f8e2e1bd98c869c353404f3cd3",
+      "status": "accepted_asset_review",
+      "finding": "Final actualnative/import whole/front/rear,bothdetailviews andlegacy/concept/importboard reviewed. Low scallopedgreenbody,raised taperedhood,two darkupperpoints,onelowerbrassfitting,tall paleopencapsule/continuousbrasscore/twocollars,straightstem andshortredcopper upright retain ownsource anatomy. Smoother profile andsource-facing frame improve readability;actual pale endcaps enclosebrasscore anduprightcolour matchesredcopper intent.25964triangles,13closedpositiveparts,5materials,7portable512pxmaps;maximumgeometryerror6.143906006172983e-8. Actualrecess/contact/opening/endcapocclusion/dent,root,texturepixels andrenderpairs pass.",
+      "limitations": [
+        "Hidden mounts/backside/sections/cell-relative dimensions andcollar interpretation authored;no recovered operating phases ormetricheight claimed.",
+        "Asset-agent visualreview only;final user artistic acceptance andgameclient integration/scale/state/shaders/performance remain separate."
+      ]
+    }
+  ],
+  "final_review": "Own paletted surface/enlargement and41catalogueupdates,selected realImageGen andactual native/importedGLB whole/front/rear/details reviewed. Lowgreen scalloped shell,raised taperedhood,two darkupperpoints,onelower brassfitting,left tallpaleopencapsule/continuousbrasscore/twocollars,straightstem andshortredcopperbandedupright retain sourceanatomy. Actualendcontacts,corecollars,sidegaps,stemmounts,recesses anddent checked. Monotonecubic shell profile andsource-facing capsule improve first-render steppedcontours andforeshortened opening. Actual endcap occlusion rays verify that pale caps enclose the core;redcopper map corrects an initially too-yellow upright.",
+  "limitations": [
+    "Own4sprite layers and41catalogueupdates show staticanatomy/reveal/annotations,not operating overlays. PB21/ST24 are Terran functionalcontext,not Artemian geometry oroperation.",
+    "Hidden mounts,backside,sections andcell-relative dimensions are authored;collarbanding interprets source highlights rather than proving moving segments.",
+    "Final user artistic acceptance andclient scale/state/shaders/Androidperformance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
