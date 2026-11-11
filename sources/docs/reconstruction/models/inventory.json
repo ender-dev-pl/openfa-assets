@@ -21777,7 +21777,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/108",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           969
         ]
@@ -21851,21 +21851,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar02/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/environmental-stabiliser/model.blend",
           "present": true,
-          "sha256": "44cffc6cb2fc25c69edc0d70c1f2661346ec295f1e720d0f4291318b9463320c",
-          "final_visual_acceptance": "not-established"
+          "sha256": "7296fbfac5f5f92410baca823971a70cd0bb077c7d7ea6543c90bed80fdba60d",
+          "media": "gallery/media/objects/artemian/environmental-stabiliser",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/environmental-stabiliser/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/environmental-stabiliser/rear-quarter.png"
+            },
+            {
+              "label": "Shell and source insets",
+              "image": "gallery/media/objects/artemian/environmental-stabiliser/shell-and-insets-detail.png"
+            },
+            {
+              "label": "Connected rear pipework",
+              "image": "gallery/media/objects/artemian/environmental-stabiliser/rear-pipe-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/environmental-stabiliser/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/environmental-stabiliser/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -21895,6 +21922,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 108
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar02/model.blend",
+          "present": true,
+          "sha256": "44cffc6cb2fc25c69edc0d70c1f2661346ec295f1e720d0f4291318b9463320c",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/environmental-stabiliser/model.blend",
+        "sha256": "7296fbfac5f5f92410baca823971a70cd0bb077c7d7ea6543c90bed80fdba60d",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/environmental-stabiliser",
+          "verifier": "sources/tools/blender/verify_artemian_environmental_stabiliser.py",
+          "files": {
+            "sources/objects/artemian/environmental-stabiliser/model.blend": "7296fbfac5f5f92410baca823971a70cd0bb077c7d7ea6543c90bed80fdba60d",
+            "sources/objects/artemian/environmental-stabiliser/model.glb": "58fbaed5e60c1e574812bcfc4e250ec7f1126f4246cca0e8aa5339880ed81e4d",
+            "sources/objects/artemian/environmental-stabiliser/model.json": "6a3b473837ac4e3335cbe503b0ca8a593f41e81833f8a31f9ddf0cc4b8ef1c98",
+            "sources/objects/artemian/environmental-stabiliser/README.md": "2c840ff8414ff20d6ad53ab2a6a4f28cc545e7f0698f6d46534a0a641c92cb28",
+            "sources/objects/artemian/environmental-stabiliser/runtime-review.json": "cf8f2e081aad79176ff3568de9b0e041a18abb122a806d9b26ab212de5c2f365",
+            "sources/objects/artemian/environmental-stabiliser/visual-review.json": "df03f1c5015d9ec8b93a3530568f85f19f99d4ee3101f1ebd5b40f667e0a92c8",
+            "gallery/media/objects/artemian/environmental-stabiliser/concept-glb-comparison.jpg": "2d3cc11adaa038350c9ef74b968fcec1d8a5ae0740822d1f372be0ae6e8fb1da",
+            "gallery/media/objects/artemian/environmental-stabiliser/front-quarter.png": "551a3a713a84bd23d17adf54e10c75072c39719864c80c08ac3534508bf2d197",
+            "gallery/media/objects/artemian/environmental-stabiliser/front.png": "2c53950360be98fd1eb1cfa612e9b1300e6bafd972b4ce02a1d4cd370c89d570",
+            "gallery/media/objects/artemian/environmental-stabiliser/imported-front-quarter.png": "551a3a713a84bd23d17adf54e10c75072c39719864c80c08ac3534508bf2d197",
+            "gallery/media/objects/artemian/environmental-stabiliser/imported-front.png": "2c53950360be98fd1eb1cfa612e9b1300e6bafd972b4ce02a1d4cd370c89d570",
+            "gallery/media/objects/artemian/environmental-stabiliser/imported-rear-quarter.png": "9ecb14e26023be096613d5752f7112a030bc6bc0659f7236df6bb06027149b79",
+            "gallery/media/objects/artemian/environmental-stabiliser/native-front-quarter.png": "bb5833639bb43c28fe460f621010490a828c7ec0441f555ab62a88dbb21351b8",
+            "gallery/media/objects/artemian/environmental-stabiliser/native-front.png": "e9a4cfa64a605fadced7f9309288b7f2e3e5aead654f4ab465599cc29bca1784",
+            "gallery/media/objects/artemian/environmental-stabiliser/native-rear-quarter.png": "a43393e3eae10f33a4ffd890ff9b25476897c49ba9358ed2923ba8c06c284f67",
+            "gallery/media/objects/artemian/environmental-stabiliser/rear-pipe-detail.png": "d5ba75f2fb55b1e1b2ee20b435ed7ee8c8493c7b3dff01db1d1099f782f4c5a1",
+            "gallery/media/objects/artemian/environmental-stabiliser/rear-quarter.png": "9ecb14e26023be096613d5752f7112a030bc6bc0659f7236df6bb06027149b79",
+            "gallery/media/objects/artemian/environmental-stabiliser/shell-and-insets-detail.png": "fbcf0c41bd37809c9cb5c983f9820b5734481a1df26439132489e76234f38f14",
+            "gallery/media/objects/artemian/environmental-stabiliser/technical-wireframe.png": "ea4f903d805f7a4e22f16e705c2bd5b6bd703f7495c6132a969707ce9c6c5b93",
+            "sources/materials/artemian/environmental-stabiliser/amber-fitting-colour.png": "99716edd20534fcbab7e211a1c751dcbd92d59168b8f308a280d8b502f16796c",
+            "sources/materials/artemian/environmental-stabiliser/exposed-alloy-edge-colour.png": "c47abc5097cfe0815713eef9deac085b2f9280231817aba2126ea3e3c722c795",
+            "sources/materials/artemian/environmental-stabiliser/muted-green-alloy-colour.png": "19695e9e7b50b86d07bc341a8416569a3d43d93dbb2cb7d410102d5e520a0877",
+            "sources/materials/artemian/environmental-stabiliser/occlusion-roughness-metallic.png": "d87ff61dcd60f01cfd74244746c1cac6487f64bc404575eaa4d38aefa9e90a56",
+            "sources/materials/artemian/environmental-stabiliser/orange-monitor-colour.png": "e72dff9a01e619c257512a412dfeb4add6858cc005c7a345cfa8bc7cb7324631",
+            "sources/materials/artemian/environmental-stabiliser/used-metal-normal.png": "0369a2da0fcf8fb098922fdefe3848d8b9638cfcfc4bee8b3e8be9d2dae64888",
+            "sources/tools/blender/remaster_artemian_environmental_stabiliser.py": "aabb553a58e347f9c33aa9034cb3f685dec2aaf8e9f959876684a4c0789e8d40",
+            "sources/tools/blender/verify_artemian_environmental_stabiliser.py": "a52ab11d55c26a3a38b6b353fc062f1485505cec4fe4869829cd8f61529ae1c6",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar02-concept-review.json": "8cbf4c36fe5563e36f32518dae7df2b5d02b2792f3cd9e2172cd8ae8aea8b4d1",
+            "sources/docs/reconstruction/models/ar02-concept-prompt-1.txt": "48a6f39ff7334c52f1c99200c1c8f26d07b4a4a8b4524cfcd6a89af3b1c6301e",
+            "gallery/media/concepts/artemian/ar02-review-1.png": "2e1764c8b5aee318155c1fcc6a7a97421387cb926e7c71b6a5aa1419b4d433ee"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/environmental-stabiliser/visual-review.json",
+          "sha256": "df03f1c5015d9ec8b93a3530568f85f19f99d4ee3101f1ebd5b40f667e0a92c8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/environmental-stabiliser/visual-review.json",
+          "sha256": "df03f1c5015d9ec8b93a3530568f85f19f99d4ee3101f1ebd5b40f667e0a92c8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/environmental-stabiliser/visual-review.json",
+          "sha256": "df03f1c5015d9ec8b93a3530568f85f19f99d4ee3101f1ebd5b40f667e0a92c8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/environmental-stabiliser/visual-review.json",
+          "sha256": "df03f1c5015d9ec8b93a3530568f85f19f99d4ee3101f1ebd5b40f667e0a92c8",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/environmental-stabiliser/runtime-review.json",
+          "sha256": "cf8f2e081aad79176ff3568de9b0e041a18abb122a806d9b26ab212de5c2f365",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

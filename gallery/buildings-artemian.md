@@ -18,11 +18,13 @@ Additional views: [Front](../gallery/media/objects/artemian/softcore/front.png) 
 
 `openfa:building/legacy/108`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Environmental Stabiliser](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar02/front-quarter.png)
+![Environmental Stabiliser](../gallery/media/objects/artemian/environmental-stabiliser/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar02/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar02/model.glb)
+[Blend](../sources/objects/artemian/environmental-stabiliser/model.blend) · [GLB](../sources/objects/artemian/environmental-stabiliser/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/environmental-stabiliser/front.png) · [Rear quarter](../gallery/media/objects/artemian/environmental-stabiliser/rear-quarter.png) · [Shell and source insets](../gallery/media/objects/artemian/environmental-stabiliser/shell-and-insets-detail.png) · [Connected rear pipework](../gallery/media/objects/artemian/environmental-stabiliser/rear-pipe-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/environmental-stabiliser/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/environmental-stabiliser/concept-glb-comparison.jpg)
 
 ## Filtration Tanks
 
