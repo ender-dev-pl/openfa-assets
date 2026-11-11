@@ -190,11 +190,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/lanth/front.png) · [
 
 `openfa:building/legacy/101`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Sharir](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk16/front-quarter.png)
+![Sharir](../gallery/media/objects/mikotaj/sharir/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk16/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk16/model.glb)
+[Blend](../sources/objects/mikotaj/sharir/model.blend) · [GLB](../sources/objects/mikotaj/sharir/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/sharir/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/sharir/rear-quarter.png) · [Lower copper fitting and inset](../gallery/media/objects/mikotaj/sharir/lower-copper-detail.png) · [Upper mineral detail](../gallery/media/objects/mikotaj/sharir/upper-mineral-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/sharir/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/sharir/concept-glb-comparison.jpg)
 
 ## Shrekn
 

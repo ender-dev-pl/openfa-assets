@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/101",
+  "binaries": {
+    "blend": "82ef2ec07ed53ff4eec570bf35b98c7f775cce4ce5990a7e4ea46de9ebe97674",
+    "glb": "9b88624b2185d93ec2eaa38670f3e6b46204a9f63aea0ea71ae408ca830954c6"
+  },
+  "runtime_report_sha256": "6bdf93e717ea1ed7ae6199abdcd69be7214c2a26eea7f04b2bde6d89476b7c5c",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0041619241426091354,
+      "margin": 72
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.004319674578295268,
+      "margin": 51
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.005794191292987698,
+      "margin": 75
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk16-review-1.png",
+      "sha256": "be00bafb16ae21e4de6cbd8dc43e1de281c42d37a34dea838f4da305ad7f966f",
+      "prompt": "sources/docs/reconstruction/models/mk16-concept-prompt-1.txt",
+      "feedback": "Selected source-grounded upper ovoid mineral volume, low ore footing and sloped lower copper fitting with two unequal pale insets. Source controls widths, short supported neck and smaller upper marker. Hidden surfaces, exact connection and wear remain authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "binaries": {
+        "blend": "1573e0b348e655599e0fac82f044a9c06b99e73fd78a5680128550df4e96d95d",
+        "glb": "f72a784227de7bb1aa59d6da9d1ddb24cfabcc4aabb937002031580798657c33"
+      },
+      "runtime_sha256": "b8c648db8973e83ab0740eb68f3b808e3ecfe3f9d60394fd9a4eb8cbc5731edb",
+      "finding": "First complete native/import renders have a too narrow lower copper fitting and thin mineral footing;source/concept show a broad integrated lower hood and more substantial footing. Upper/lower inset sizes correctly differ.",
+      "correction": "Broaden lower copper lobe and shoulder,thicken ore footing,slightly lower upper mineral volume to shorten exposed neck;preserve supported attachment and unequal marker sizes."
+    },
+    {
+      "iteration": 2,
+      "binaries": {
+        "blend": "c1a398df4eb426b5b7ff5e9daa12e345e0ea0628d2b11f250b585852c24342ab",
+        "glb": "daf3b42ad122c0d06400d91d9ef2fdadcdaa819eafe9eab36a61327971766b1b"
+      },
+      "runtime_sha256": "651e3e6126ba9eba723910aaca51013a625f8930d67a3fcd2ae530a096a02330",
+      "finding": "Corrected broad lower hood and thicker footing now follow original proportions,but upper mineral surface remains too softly shaded and copper profile shows artificial normal bands.",
+      "correction": "Strengthen small mineral relief and irregular mineral fracture normals without adding machinery;keep full smooth copper normals rather than ore-style face-normal mixing."
+    }
+  ],
+  "final_review": "Actual independent GLB retains the narrower upright mineral ovoid,small upper pale inset,broad low ore footing and sloping reddish copper lower fitting with a larger pale inset. The narrow support physically overlaps the upper body and lower ore seat. Whole legacy/concept/GLB comparison and actual closeups reviewed after proportion feedback;native/import surfaces and authored texture pixels agree.",
+  "limitations": [
+    "Exact mineral facets,hidden sections and physical focusing/manufacturing mechanism remain authored or unknown.",
+    "Catalogue reveal is not an operating/manufacturing cycle;no factory machinery or moving mechanism invented.",
+    "Final user artistic acceptance,client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
