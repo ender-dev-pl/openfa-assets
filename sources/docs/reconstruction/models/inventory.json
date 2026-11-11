@@ -22511,7 +22511,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/111",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           972
         ]
@@ -22585,21 +22585,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar05/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/nurseries/model.blend",
           "present": true,
-          "sha256": "875d30a4b4934685c1065da52adda78cb20cc5d67292a345bdc88744a118152c",
-          "final_visual_acceptance": "not-established"
+          "sha256": "486b6ce76cc75ea14190cc9e72162cd3b36c4ce7967860f59b505b152dbadb88",
+          "media": "gallery/media/objects/artemian/nurseries",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/nurseries/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/nurseries/rear-quarter.png"
+            },
+            {
+              "label": "Front insets and shell",
+              "image": "gallery/media/objects/artemian/nurseries/front-insets-and-shell-detail.png"
+            },
+            {
+              "label": "Central upright and terraces",
+              "image": "gallery/media/objects/artemian/nurseries/central-upright-and-terraces-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/nurseries/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/nurseries/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -22629,6 +22656,86 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 111
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar05/model.blend",
+          "present": true,
+          "sha256": "875d30a4b4934685c1065da52adda78cb20cc5d67292a345bdc88744a118152c",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/nurseries/model.blend",
+        "sha256": "486b6ce76cc75ea14190cc9e72162cd3b36c4ce7967860f59b505b152dbadb88",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/nurseries",
+          "verifier": "sources/tools/blender/verify_artemian_nurseries.py",
+          "files": {
+            "sources/objects/artemian/nurseries/model.blend": "486b6ce76cc75ea14190cc9e72162cd3b36c4ce7967860f59b505b152dbadb88",
+            "sources/objects/artemian/nurseries/model.glb": "c3788164129e866b078b3449f021f9d5cdef83afd05d72ba81dde00ea202c5f8",
+            "sources/objects/artemian/nurseries/model.json": "57ea6d24b69ee61ccb21bd00be9ccabebcff42fa750b9c8ae08a1d669701af34",
+            "sources/objects/artemian/nurseries/README.md": "eabc6b8a9866da36d62c76f4671ea00aa78a268a703e675db26d882f8015ffa7",
+            "sources/objects/artemian/nurseries/runtime-review.json": "6f29af415448c9f212ffb083ce5fb6d9f57b2841f1d22272d724bad8aca27b76",
+            "sources/objects/artemian/nurseries/visual-review.json": "62e8d6eba70ddd673efc650fa151e4ec7aa5c890e5b1c8c7d181111d6d115701",
+            "gallery/media/objects/artemian/nurseries/central-upright-and-terraces-detail.png": "5e3ddbb2971d80710405fff75d27a63e3018650df05b71d8fe8237c670ad7f6d",
+            "gallery/media/objects/artemian/nurseries/concept-glb-comparison.jpg": "7471dcf87ed7fdf7f4bce28bb5ee735c09ca2e404d1b8755b3fe4d252f160490",
+            "gallery/media/objects/artemian/nurseries/front-insets-and-shell-detail.png": "ac3b6aa9f1f61f5c0871fc0f9ad5833d586f610ba1ecb6ba6a8ce71571f49ea3",
+            "gallery/media/objects/artemian/nurseries/front-quarter.png": "a892a8cecca66835a5055d942b590a9be0757977f3ea00ab01bb411691ca709e",
+            "gallery/media/objects/artemian/nurseries/front.png": "5288d22def24bc942d4f94d2840d822969cd2fa758d20cbb446a708c5e27c4f1",
+            "gallery/media/objects/artemian/nurseries/imported-front-quarter.png": "a892a8cecca66835a5055d942b590a9be0757977f3ea00ab01bb411691ca709e",
+            "gallery/media/objects/artemian/nurseries/imported-front.png": "5288d22def24bc942d4f94d2840d822969cd2fa758d20cbb446a708c5e27c4f1",
+            "gallery/media/objects/artemian/nurseries/imported-rear-quarter.png": "f0b6ca53355718e7c0c7ace774395e4bd373a4c0966838c2941da3d28e687893",
+            "gallery/media/objects/artemian/nurseries/native-front-quarter.png": "0300498e7ef2ff95d523089c9b655a643998578e079ecfecf429acb81d0d52a1",
+            "gallery/media/objects/artemian/nurseries/native-front.png": "fae6fb4256218f08f0683ed91ba3c3a3264a9539036af64c1c925c2923eed388",
+            "gallery/media/objects/artemian/nurseries/native-rear-quarter.png": "ebe8149785a6c145de2ff96904613b871f02bfa7c447de5e29579ffb28fa73a4",
+            "gallery/media/objects/artemian/nurseries/rear-quarter.png": "f0b6ca53355718e7c0c7ace774395e4bd373a4c0966838c2941da3d28e687893",
+            "gallery/media/objects/artemian/nurseries/technical-wireframe.png": "2158d5891d16ac480e02a09a00fbadef98b9a8d9130a42dbdd5325bec781db3e",
+            "sources/materials/artemian/nurseries/amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+            "sources/materials/artemian/nurseries/exposed-alloy-edge-colour.png": "7f7a3618e219f12ce27e5b86751af3b3d026c67183a1a794ab0de4b1cd183062",
+            "sources/materials/artemian/nurseries/muted-green-alloy-colour.png": "efb9a124fd2352a21acdd52973f655ac7b8f50c68cbebbb18f3cbe6c9350246b",
+            "sources/materials/artemian/nurseries/occlusion-roughness-metallic.png": "4d78e7eff8e0c7034182ceaab133176485211711ed3d33cbe3bbfb3865026511",
+            "sources/materials/artemian/nurseries/used-metal-normal.png": "73faf284638a3a58f1f330e8aa37d3a7224eb6ccbdfc1e5df3ba45825cd24808",
+            "sources/tools/blender/remaster_artemian_nurseries.py": "b23ecf812fa3b537347beb5b41e51da530ff478ebdcc53f47b61ddf4c80a7d2e",
+            "sources/tools/blender/verify_artemian_nurseries.py": "cd42b07441f0a0d34bf1b6ebb7fd5b8ea1249c5b9969f709e8c3853b4e66d9ed",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar05-concept-review.json": "aa486e5c2f427e77f83d5a7a066e499c68f9b5d8ba58e1d13c2936e67f0e8f23",
+            "sources/docs/reconstruction/models/ar05-concept-prompt-1.txt": "0a6e309abd9b19388b5d3bab230f5e10c89d5d7f03fc1cde827313dc85b3394a",
+            "gallery/media/concepts/artemian/ar05-review-1.png": "f11dbf0287864154e03dd3d589eebb0ba6e5e6c33077a2ea10961d47150b4f31"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/nurseries/visual-review.json",
+          "sha256": "62e8d6eba70ddd673efc650fa151e4ec7aa5c890e5b1c8c7d181111d6d115701",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/nurseries/visual-review.json",
+          "sha256": "62e8d6eba70ddd673efc650fa151e4ec7aa5c890e5b1c8c7d181111d6d115701",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/nurseries/visual-review.json",
+          "sha256": "62e8d6eba70ddd673efc650fa151e4ec7aa5c890e5b1c8c7d181111d6d115701",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/nurseries/visual-review.json",
+          "sha256": "62e8d6eba70ddd673efc650fa151e4ec7aa5c890e5b1c8c7d181111d6d115701",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/nurseries/runtime-review.json",
+          "sha256": "6f29af415448c9f212ffb083ce5fb6d9f57b2841f1d22272d724bad8aca27b76",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

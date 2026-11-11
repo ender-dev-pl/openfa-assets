@@ -54,11 +54,13 @@ Additional views: [Front](../gallery/media/objects/artemian/canisters/front.png)
 
 `openfa:building/legacy/111`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Nurseries](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar05/front-quarter.png)
+![Nurseries](../gallery/media/objects/artemian/nurseries/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar05/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar05/model.glb)
+[Blend](../sources/objects/artemian/nurseries/model.blend) · [GLB](../sources/objects/artemian/nurseries/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/nurseries/front.png) · [Rear quarter](../gallery/media/objects/artemian/nurseries/rear-quarter.png) · [Front insets and shell](../gallery/media/objects/artemian/nurseries/front-insets-and-shell-detail.png) · [Central upright and terraces](../gallery/media/objects/artemian/nurseries/central-upright-and-terraces-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/nurseries/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/nurseries/concept-glb-comparison.jpg)
 
 ## Healing Quarters
 
