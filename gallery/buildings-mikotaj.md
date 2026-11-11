@@ -202,19 +202,15 @@ Additional views: [Front](../gallery/media/objects/mikotaj/sharir/front.png) · 
 
 `openfa:building/legacy/102`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Shrekn](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk17/front-quarter.png)
+![Shrekn](../gallery/media/objects/mikotaj/shrekn/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk17/model.glb)
+[Blend](../sources/objects/mikotaj/shrekn/model.blend) · [GLB](../sources/objects/mikotaj/shrekn/model.glb)
 
-**Additional iteration — verified-launch-mechanism**
+Additional views: [Front](../gallery/media/objects/mikotaj/shrekn/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/shrekn/rear-quarter.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/shrekn/technical-wireframe.png) · [Rigid cap fully rear-stowed](../gallery/media/objects/mikotaj/shrekn/state-open.png) · [Silver cap detail](../gallery/media/objects/mikotaj/shrekn/silver-cap-detail.png) · [Actual rear guides](../gallery/media/objects/mikotaj/shrekn/rear-guides-detail.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/shrekn/concept-glb-comparison.jpg)
 
-![Shrekn](../gallery/media/docs/assets/reconstruction/launch-facilities/mikotaj/mk17/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk17/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mikotaj/mk17/model.glb)
-
-[Play animation: LaunchFacilityCycle](../gallery/media/docs/assets/reconstruction/launch-facilities/mikotaj/mk17/animation-00.webm)
+[Play animation: LaunchFacilityCycle](../gallery/media/objects/mikotaj/shrekn/animation-00.webm)
 
 ## Ruth-feror
 
