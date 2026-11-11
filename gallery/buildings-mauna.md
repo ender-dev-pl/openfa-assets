@@ -116,17 +116,13 @@ Additional views: [Front](../gallery/media/objects/mauna/launch-area/front.png) 
 
 `openfa:building/legacy/139`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Satellite Pad](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn10/front-quarter.png)
+![Satellite Pad](../gallery/media/objects/mauna/satellite-pad/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn10/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn10/model.glb)
+[Blend](../sources/objects/mauna/satellite-pad/model.blend) · [GLB](../sources/objects/mauna/satellite-pad/model.glb)
 
-**Additional iteration — verified-launch-mechanism**
-
-![Satellite Pad](../gallery/media/docs/assets/reconstruction/launch-facilities/mauna/mn10/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn10/model.blend) · [GLB](../sources/docs/assets/reconstruction/launch-facilities/mauna/mn10/model.glb)
+Additional views: [Front](../gallery/media/objects/mauna/satellite-pad/front.png) · [Rear quarter](../gallery/media/objects/mauna/satellite-pad/rear-quarter.png) · [Open well rim and inner flutes](../gallery/media/objects/mauna/satellite-pad/open-well-rim-and-flutes-detail.png) · [Single mast and source markings](../gallery/media/objects/mauna/satellite-pad/single-mast-and-source-markings-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/satellite-pad/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/satellite-pad/concept-glb-comparison.jpg)
 
 ## Fast Breeder Reactor
 

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/139",
+  "binaries": {
+    "blend": "156c3619abef92e418f4e09f6c679acfb3396f3ec55a229aaee282e58b45986e",
+    "glb": "40b216cc27ed793010fbbc3e133660b1d3c3ce68aeb498192e91fbb6f09ca0ae"
+  },
+  "runtime_report_sha256": "ba9da639b0d620506bc8b607aa551a1fe6a706b678ea9d8478e9e659e2b267c3",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.008250959335041832,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.011094410381570332,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.008924579257060075,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn10-review-1.png",
+      "sha256": "ba0bbeffdf4ead007f71feaf62ab43ba57669b818466d213bb74b74d6de81fe9",
+      "prompt": "sources/docs/reconstruction/models/mn10-concept-prompt-1.txt",
+      "feedback": "Selected as workmanship/silhouette guide after actual source feedback. Maintains squat grey-blue sloping concrete body,permanently open circular fluted shaft,fourbrassposts,oneunbracedrear-rightmast,frontvent/tallfrontedgefield,two redrightzigzags andquiet wornsurfaces. Do not copy extra lower-right vertical seam/slot or tiny magenta/base artifact from concept. Keep one actual front-right slot only,sourcecount/placements override invented details. No iris/lid invented fromgenericTerranPB09."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "status": "revision_required",
+      "binaries": {
+        "blend": "a845a4cabe1a1948c01207b0068e4d0ace26e30917375c5de104288d4822348e",
+        "glb": "32945d1b69256a1cd11333525198999466af7436d106793d1ad596ab0f822002"
+      },
+      "finding": "Actual native and independent GLB hero viewed against source/concept. Geometry3324tri/11parts passes but mast hides rear-right brass post and its fields read slate rather than source/concept dark green. Move mast rearward while retaining physical body attachment,restore dedicated green fields andbatchthem. Keep static open well and omit extra concept slot.",
+      "limitations": [
+        "No user/client acceptance. Hidden engineering andmetric dimensions authored."
+      ]
+    },
+    {
+      "pass_number": 2,
+      "status": "accepted_asset_only",
+      "binaries": {
+        "blend": "156c3619abef92e418f4e09f6c679acfb3396f3ec55a229aaee282e58b45986e",
+        "glb": "40b216cc27ed793010fbbc3e133660b1d3c3ce68aeb498192e91fbb6f09ca0ae"
+      },
+      "runtime_report_sha256": "ba9da639b0d620506bc8b607aa551a1fe6a706b678ea9d8478e9e659e2b267c3",
+      "finding": "Actual final own-source/concept/imported-GLB comparison board,front/rear,well detail and mast/markings detail inspected. Rearward single mast now exposes allfourposts in source-like quarterview;three small fields restored darkgreen. Static open well,source two rightzigzags andsinglefront-edgefield retained;extra lower-right conceptslot omitted.3324triangles/9closedpositive mesh batches/8materials/7portablemaps. Actual contacts,blinddepths,chips,128clear-bore rays,flute/liner/rim profiles,root,decodedpixels andindependent imported surfaces pass;maximumerror1.1920928955078125e-7. No iris or operatingclip invented.",
+      "limitations": [
+        "Sixteenflutes,hiddenengineering,blinddepths,wellfloor andcell-relative dimensions authored;camera approximate,not recovered calibratedprojection.",
+        "Source body remains open;genericTerranPB09irisnottransferred. Catalogueoutlinesareannotations.",
+        "Clear radius.54local is an assetgeometricmeasurement,not a certifiedsatellitepayload fit. Preserveground0,circularterraincutout.56,andclosedhorizontalplacementextent;undergroundboundsmustnotliftbuilding.",
+        "Finaluserartisticacceptance,clientscale/state/terrain/materials andAndroidperformance separate."
+      ]
+    }
+  ],
+  "final_review": "Actual final own-source/concept/imported-GLB comparison board,front/rear,well detail and mast/markings detail inspected. Rearward single mast now exposes allfourposts in source-like quarterview;three small fields restored darkgreen. Static open well,source two rightzigzags andsinglefront-edgefield retained;extra lower-right conceptslot omitted.3324triangles/9closedpositive mesh batches/8materials/7portablemaps. Actual contacts,blinddepths,chips,128clear-bore rays,flute/liner/rim profiles,root,decodedpixels andindependent imported surfaces pass;maximumerror1.1920928955078125e-7. No iris or operatingclip invented.",
+  "limitations": [
+    "Sixteenflutes,hiddenengineering,blinddepths,wellfloor andcell-relative dimensions authored;camera approximate,not recovered calibratedprojection.",
+    "Source body remains open;genericTerranPB09irisnottransferred. Catalogueoutlinesareannotations.",
+    "Clear radius.54local is an assetgeometricmeasurement,not a certifiedsatellitepayload fit. Preserveground0,circularterraincutout.56,andclosedhorizontalplacementextent;undergroundboundsmustnotliftbuilding.",
+    "Finaluserartisticacceptance,clientscale/state/terrain/materials andAndroidperformance separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

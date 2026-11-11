@@ -29521,7 +29521,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/139",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           1000
         ]
@@ -29595,27 +29595,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn10/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/satellite-pad/model.blend",
           "present": true,
-          "sha256": "93c1184e4915c48045b7ac5862336be1f11ee2981230a49614d85d447ae7c5a5",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "verified-launch-mechanism",
-          "blend": "docs/assets/reconstruction/launch-facilities/mauna/mn10/model.blend",
-          "present": true,
-          "sha256": "2e43f175ab6747ad0a6d184fa6cf8155f513c6035310f2a6026ba8b96186c0e3"
+          "sha256": "156c3619abef92e418f4e09f6c679acfb3396f3ec55a229aaee282e58b45986e",
+          "media": "gallery/media/objects/mauna/satellite-pad",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/satellite-pad/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/satellite-pad/rear-quarter.png"
+            },
+            {
+              "label": "Open well rim and inner flutes",
+              "image": "gallery/media/objects/mauna/satellite-pad/open-well-rim-and-flutes-detail.png"
+            },
+            {
+              "label": "Single mast and source markings",
+              "image": "gallery/media/objects/mauna/satellite-pad/single-mast-and-source-markings-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/satellite-pad/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/satellite-pad/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -29645,6 +29666,97 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 139
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn10/model.blend",
+          "present": true,
+          "sha256": "93c1184e4915c48045b7ac5862336be1f11ee2981230a49614d85d447ae7c5a5",
+          "final_visual_acceptance": "not-established"
+        },
+        {
+          "stage": "verified-launch-mechanism",
+          "blend": "docs/assets/reconstruction/launch-facilities/mauna/mn10/model.blend",
+          "present": true,
+          "sha256": "2e43f175ab6747ad0a6d184fa6cf8155f513c6035310f2a6026ba8b96186c0e3"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/satellite-pad/model.blend",
+        "sha256": "156c3619abef92e418f4e09f6c679acfb3396f3ec55a229aaee282e58b45986e",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/satellite-pad",
+          "verifier": "sources/tools/blender/verify_mauna_satellite_pad.py",
+          "files": {
+            "sources/objects/mauna/satellite-pad/integration-contract.json": "7a3579c7d170c322ab82cd03333eb5455c7be10c26de29c28353708de4acde76",
+            "sources/objects/mauna/satellite-pad/model.blend": "156c3619abef92e418f4e09f6c679acfb3396f3ec55a229aaee282e58b45986e",
+            "sources/objects/mauna/satellite-pad/model.glb": "40b216cc27ed793010fbbc3e133660b1d3c3ce68aeb498192e91fbb6f09ca0ae",
+            "sources/objects/mauna/satellite-pad/model.json": "735bb52dd325d00f680c0195626484c553a08753ea9030e9f7c81bcdbcdf508a",
+            "sources/objects/mauna/satellite-pad/README.md": "c0f4eaecfba17accfe30d680cf78116cfc5b844b4e08e310228dae71c3524473",
+            "sources/objects/mauna/satellite-pad/runtime-review.json": "ba9da639b0d620506bc8b607aa551a1fe6a706b678ea9d8478e9e659e2b267c3",
+            "sources/objects/mauna/satellite-pad/visual-review.json": "ef750f234cb821cf67c093f3dfbd524c9efd8098618bf4df577befbfda3292b4",
+            "gallery/media/objects/mauna/satellite-pad/concept-glb-comparison.jpg": "6b1d7742bdd783814a6cf06b0c8a74bfc6e82be569be11ea16176f76388fc222",
+            "gallery/media/objects/mauna/satellite-pad/front-quarter.png": "b4b6060ab3b0fe26e111a1a9b33a3c55056943a190ed14ee1a28099baf236d43",
+            "gallery/media/objects/mauna/satellite-pad/front.png": "05e51c8f33afaf25246bc03437a34564c2c0e95f8c74fb35dc656f3328dccab2",
+            "gallery/media/objects/mauna/satellite-pad/imported-front-quarter.png": "b4b6060ab3b0fe26e111a1a9b33a3c55056943a190ed14ee1a28099baf236d43",
+            "gallery/media/objects/mauna/satellite-pad/imported-front.png": "05e51c8f33afaf25246bc03437a34564c2c0e95f8c74fb35dc656f3328dccab2",
+            "gallery/media/objects/mauna/satellite-pad/imported-rear-quarter.png": "4aba638561e6cf92b78d99151d4ab7358e744f7e4c4f0fbd90d02dbcbc0dad88",
+            "gallery/media/objects/mauna/satellite-pad/inclined-emblem-and-service-nose-detail.png": "db16099a260390a32b724fc95410b531d4d533f4d85d1159f5156507a0c0b4fd",
+            "gallery/media/objects/mauna/satellite-pad/native-front-quarter.png": "3b1b6c6189c05215fdd09d4aa473150cf6581d2c74c567933a2882a5b6401899",
+            "gallery/media/objects/mauna/satellite-pad/native-front.png": "73f9ec7aefbad7d513c899bafc8e628c08e9a097e34a99ec6c7ab9117bb88ed6",
+            "gallery/media/objects/mauna/satellite-pad/native-rear-quarter.png": "30c43ba0347020c0372ff46a6deb771a290ff2f62102b38e7c147d3643368d1b",
+            "gallery/media/objects/mauna/satellite-pad/open-well-rim-and-flutes-detail.png": "a2ba76f6813b0857a74a80a2b7263c8aed8dc216b9bb20e1f6952ec75d6eeaea",
+            "gallery/media/objects/mauna/satellite-pad/paired-roof-mast-and-service-uprights-detail.png": "46f20d60d0fffb7cd8d4792bb79968087c558e697d2e8bc235d5b89cb30b6eb6",
+            "gallery/media/objects/mauna/satellite-pad/rear-quarter.png": "4aba638561e6cf92b78d99151d4ab7358e744f7e4c4f0fbd90d02dbcbc0dad88",
+            "gallery/media/objects/mauna/satellite-pad/single-mast-and-source-markings-detail.png": "1c2a79909ad65db19cbe50ab328efb683c08346bfe5fed56d611b36a087db348",
+            "gallery/media/objects/mauna/satellite-pad/technical-wireframe.png": "eaeb6da7bc0fa112506d9b269044e689b4324350ee8d8aaeb6ecda50f4e53504",
+            "sources/materials/mauna/satellite-pad/cast-concrete-colour.png": "b7d5099a06d349652ce07374d2210ba13092d9c60564be5db01e419dfcb10c89",
+            "sources/materials/mauna/satellite-pad/cast-service-normal.png": "8fd731735ad87e41eb3f3d87c000b8ad7c060c7dd20ddc8df8c079b332334630",
+            "sources/materials/mauna/satellite-pad/concrete-orm.png": "dcf42715b5f2a62623146d52930aa8bfd3d8aded5edd7c5952b20c300fc66a0d",
+            "sources/materials/mauna/satellite-pad/marking-red-colour.png": "e3bae8681b29753480058aa6def6da392030e8e67f6e52cf01d3a368d268763f",
+            "sources/materials/mauna/satellite-pad/metal-orm.png": "e5a24ede5463b28487ace815f38181846892d154ca53de04c14b9956d07b9420",
+            "sources/materials/mauna/satellite-pad/pale-alloy-colour.png": "c7cb555cf5b9aa7adaccd1e0a9fa320cf5872ca9b6b9e438e58ec63be3f05386",
+            "sources/materials/mauna/satellite-pad/used-brass-colour.png": "7b6bd01142f4ecaabc36eb782b7c073969f1329bf54da01a9920c3cc63a18adc",
+            "sources/tools/blender/remaster_mauna_satellite_pad.py": "2266aa1a9c8142669bdc8e4860837ac0084bc7d5dc01b173bcd3ef62cf3f76e8",
+            "sources/tools/blender/verify_mauna_satellite_pad.py": "8528bb294a62cd7e42ef3e4e7cc86d184765095cf734905b126325a22731a77f",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn10-concept-review.json": "cb56270970cc40ba1dc54f807848026acad76f57e03e54f514569152e7d5cf21",
+            "sources/docs/reconstruction/models/mn10-concept-prompt-1.txt": "b3b81009aa28c2c8878ae03e35c00d334defff733fc54771b19251c5a0c99609",
+            "gallery/media/concepts/mauna/mn10-review-1.png": "ba0bbeffdf4ead007f71feaf62ab43ba57669b818466d213bb74b74d6de81fe9"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/satellite-pad/visual-review.json",
+          "sha256": "ef750f234cb821cf67c093f3dfbd524c9efd8098618bf4df577befbfda3292b4",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/satellite-pad/visual-review.json",
+          "sha256": "ef750f234cb821cf67c093f3dfbd524c9efd8098618bf4df577befbfda3292b4",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/satellite-pad/visual-review.json",
+          "sha256": "ef750f234cb821cf67c093f3dfbd524c9efd8098618bf4df577befbfda3292b4",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/satellite-pad/visual-review.json",
+          "sha256": "ef750f234cb821cf67c093f3dfbd524c9efd8098618bf4df577befbfda3292b4",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/satellite-pad/runtime-review.json",
+          "sha256": "ba9da639b0d620506bc8b607aa551a1fe6a706b678ea9d8478e9e659e2b267c3",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
