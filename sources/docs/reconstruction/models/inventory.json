@@ -26749,7 +26749,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/128",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           989
         ]
@@ -26823,21 +26823,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar22/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/ore-depot/model.blend",
           "present": true,
-          "sha256": "73126e901646299e77550971b93936cc25eb15f81366ada79ddd859585ee244d",
-          "final_visual_acceptance": "not-established"
+          "sha256": "e9be70ed0fb19cc4ec8c4d68b53411c02277ab3256710018f04a4292c1d5e6b3",
+          "media": "gallery/media/objects/artemian/ore-depot",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/ore-depot/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/ore-depot/rear-quarter.png"
+            },
+            {
+              "label": "Tapered cap and dark point",
+              "image": "gallery/media/objects/artemian/ore-depot/tapered-cap-and-dark-point-detail.png"
+            },
+            {
+              "label": "Green service pipe and foot socket",
+              "image": "gallery/media/objects/artemian/ore-depot/green-service-pipe-and-foot-socket-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/ore-depot/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/ore-depot/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -26867,6 +26894,88 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 128
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar22/model.blend",
+          "present": true,
+          "sha256": "73126e901646299e77550971b93936cc25eb15f81366ada79ddd859585ee244d",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/ore-depot/model.blend",
+        "sha256": "e9be70ed0fb19cc4ec8c4d68b53411c02277ab3256710018f04a4292c1d5e6b3",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/ore-depot",
+          "verifier": "sources/tools/blender/verify_artemian_ore_depot.py",
+          "files": {
+            "sources/objects/artemian/ore-depot/model.blend": "e9be70ed0fb19cc4ec8c4d68b53411c02277ab3256710018f04a4292c1d5e6b3",
+            "sources/objects/artemian/ore-depot/model.glb": "ba509032a97073d0819dae7c734221961538cdbb85245bbaff75634b33fd1734",
+            "sources/objects/artemian/ore-depot/model.json": "ba4f92482826b7b0834130f73b69b152d5fd0a426853756026b8a64627040a11",
+            "sources/objects/artemian/ore-depot/README.md": "0acb838f8a236a4e0ff814804d58ab36fee116c3b005f269d45baa46ff546d85",
+            "sources/objects/artemian/ore-depot/runtime-review.json": "3b43fb4fca2df5596df23ceaa016b1b9819371574f009020e3bb449c44d3b777",
+            "sources/objects/artemian/ore-depot/visual-review.json": "5cd10e49bd3a0188fbfca8f4e361fe68e8d852cbf876adc7da7590c6067ac30b",
+            "gallery/media/objects/artemian/ore-depot/concept-glb-comparison.jpg": "397ef62ea818e600cbea1f623db7ca390b7e21931488118b5a7dc6dd3dcf8083",
+            "gallery/media/objects/artemian/ore-depot/front-quarter.png": "c2fad379d91454c148c65b2645261f60435646cb7097440fd699b8e370826023",
+            "gallery/media/objects/artemian/ore-depot/front.png": "1f575c7f44950f5f0adbf27dfa4aa29121d70ed14cbab12b25ae22cb1ccfc1de",
+            "gallery/media/objects/artemian/ore-depot/green-service-pipe-and-foot-socket-detail.png": "f0d577ac8b03e630ced7e08d05faff2481062ed2317c1d754b4df4040690a54c",
+            "gallery/media/objects/artemian/ore-depot/imported-front-quarter.png": "c2fad379d91454c148c65b2645261f60435646cb7097440fd699b8e370826023",
+            "gallery/media/objects/artemian/ore-depot/imported-front.png": "1f575c7f44950f5f0adbf27dfa4aa29121d70ed14cbab12b25ae22cb1ccfc1de",
+            "gallery/media/objects/artemian/ore-depot/imported-rear-quarter.png": "a1bd4f2e0a7bd8bc9b00fefbb2637a24023a0c05935df4199a14d60bfaea6c78",
+            "gallery/media/objects/artemian/ore-depot/native-front-quarter.png": "540a4a20ff96cc7748c5b36ad9701bc678444798782c141a295331f7f7691151",
+            "gallery/media/objects/artemian/ore-depot/native-front.png": "04f0d07d529c4068ae2daef497cfe5ba8d8c3dafa39437c0dbe2b91d718c4acd",
+            "gallery/media/objects/artemian/ore-depot/native-rear-quarter.png": "bf72d39b52db7d9d96f6e2e3aa0255b8a289c34ef9391cb4af03b28cbbd137cd",
+            "gallery/media/objects/artemian/ore-depot/rear-quarter.png": "a1bd4f2e0a7bd8bc9b00fefbb2637a24023a0c05935df4199a14d60bfaea6c78",
+            "gallery/media/objects/artemian/ore-depot/tapered-cap-and-dark-point-detail.png": "533ae01bcb5b4d09fab48c986f91c186207da32c09073d9bc4a7e8c442f15f25",
+            "gallery/media/objects/artemian/ore-depot/technical-wireframe.png": "c412908c453ced15078d1b176111cde23e6d073612b2803d8d0726b39e8415d4",
+            "sources/materials/artemian/ore-depot/exposed-alloy-edge-colour.png": "c27fcf491505ca2d81fe47ca464292d93589d6def6d3b144b8631f725208a2e4",
+            "sources/materials/artemian/ore-depot/green-pipe-colour.png": "e1b46ff0cd0d7bb102db114fd8426200e534dfa8e75ce3d9f97af9428e43405b",
+            "sources/materials/artemian/ore-depot/occlusion-roughness-metallic.png": "be1eb36595ce844cdaeb1a487549fbabb245974f3ddffd4a7d2baa9be09d056d",
+            "sources/materials/artemian/ore-depot/oxidized-alloy-orm.png": "cb18e9a6a0b44afa471ed8c1d63cc983b2b53aa577c72623a2fa2bc933f3ecd2",
+            "sources/materials/artemian/ore-depot/slate-blue-alloy-colour.png": "9604fbc94cede08a61da5099aba37183b7d1c52af3abfdf02463290e3088c02e",
+            "sources/materials/artemian/ore-depot/used-metal-normal.png": "e0823fefd6c886cafb83bef57b7b34105fa5ca913ea79d363cc457f744b8ced3",
+            "sources/tools/blender/remaster_artemian_ore_depot.py": "91ef4d15de86400b896eee35f1e6e5e7991d8522ec7ed2ecd86fe475c2824bfb",
+            "sources/tools/blender/verify_artemian_ore_depot.py": "3b82f6cdd6844d995bd4de01255f8b1cd3a0587a8307a52e858a059ad8c75890",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar22-concept-review.json": "1b05705848f9d38d21445a5e782b5474bd04d40e62db96c190971d20435a8317",
+            "sources/docs/reconstruction/models/ar22-concept-prompt-1.txt": "2eb0e4ae37a815c5662aa6b9548250f42124eae8fcc11ffbbe8b1f0a759bc8cc",
+            "sources/docs/reconstruction/models/ar22-concept-prompt-2.txt": "2def9c6938162b950b8a86c1b5f05d98e4ce7cb479260aa86b22ca431e0f90dc",
+            "gallery/media/concepts/artemian/ar22-review-2.png": "5c933c2eeed46af38be83dc3dccddce5f88de489d9caeab6e4cf9bf445cea049"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/ore-depot/visual-review.json",
+          "sha256": "5cd10e49bd3a0188fbfca8f4e361fe68e8d852cbf876adc7da7590c6067ac30b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/ore-depot/visual-review.json",
+          "sha256": "5cd10e49bd3a0188fbfca8f4e361fe68e8d852cbf876adc7da7590c6067ac30b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/ore-depot/visual-review.json",
+          "sha256": "5cd10e49bd3a0188fbfca8f4e361fe68e8d852cbf876adc7da7590c6067ac30b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/ore-depot/visual-review.json",
+          "sha256": "5cd10e49bd3a0188fbfca8f4e361fe68e8d852cbf876adc7da7590c6067ac30b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/ore-depot/runtime-review.json",
+          "sha256": "3b43fb4fca2df5596df23ceaa016b1b9819371574f009020e3bb449c44d3b777",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

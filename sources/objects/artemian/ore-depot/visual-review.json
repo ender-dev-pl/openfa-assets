@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/128",
+  "binaries": {
+    "blend": "e9be70ed0fb19cc4ec8c4d68b53411c02277ab3256710018f04a4292c1d5e6b3",
+    "glb": "ba509032a97073d0819dae7c734221961538cdbb85245bbaff75634b33fd1734"
+  },
+  "runtime_report_sha256": "3b43fb4fca2df5596df23ceaa016b1b9819371574f009020e3bb449c44d3b777",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0005483865439651775,
+      "margin": 62
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00023869196801527628,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00010773540185304891,
+      "margin": 65
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 2,
+      "image": "gallery/media/concepts/artemian/ar22-review-2.png",
+      "sha256": "5c933c2eeed46af38be83dc3dccddce5f88de489d9caeab6e4cf9bf445cea049",
+      "prompt": "sources/docs/reconstruction/models/ar22-concept-prompt-2.txt",
+      "feedback": "Selected darkslateblue continuous tower,roundedfoot,three broad roundedmiddle drums andtapered bluntcap,one darkcap point,two darkbasepoints,smallgreen front-leftpipe/inwardelbow/rectangularfoot socket. Quiet metalreflections are notlights. Keep ownsource slimmerpipe andsubtlerjoints over heavierconceptpipe/collars. Hidden sections/contacts authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "b65a2abf4b7e1eadba0c203191f6b1dc3ea39a5c72e4e0b4bd3e9cef3232e8f8",
+        "glb": "791e07da65b4e35304d4c6520113394d310d1b0cd7ff31d3200d7068438aaea3"
+      },
+      "status": "revision_required",
+      "finding": "Actualnative whole render retains tower/3drums/cap/pipe/points, but greenpipe too thin andneck grooves too deep relative toownsource. Own annotated rightoutline peakx92,valleyx89 aroundroughaxisx70 suggests neck/peakradiusabout19/22=.864;initialauthoredratio.35/.46=.761. Socketwhole pale side also readsaslargewhitepanel ratherthan small edgehighlight.",
+      "action": "Increase pipe radius.025to.045 andsocketwidth.10to.12. Change middle neckradius toward.395/.46=.859,with source-backed checksfor shallowbutrealnecks instead ofolddeep-neckthreshold. Limit pale socket material tosmall bevel edges. Rerun actualnative/importgeometry,contacts,texturepixels andrenderfeedback.",
+      "source_estimate": {
+        "source": "_ZOOM/AR22.256 detail1",
+        "right_outline_peak_x": 92,
+        "right_outline_valley_x": 89,
+        "approximate_axis_x": 70,
+        "approximate_neck_peak_radius_ratio": 0.8636363636363636,
+        "scope": "Pixel silhouette proportion estimate,not metric dimensions."
+      },
+      "runtime_report_sha256": "6fe6917a9acbb3017bff8cec1c6c51e2d2aad16aca90936805a744da663f0751"
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "5abb739bfcde9332350c8ce5af78d999db7acbc76a447f6a24ea634db4312323",
+        "glb": "ffdfddf8957446e74f9e42394a8dbabf0d3975026496bd722a272680782c1851"
+      },
+      "runtime_report_sha256": "c4276da430dd00320b1be8494b5e930b6ae945c8a6752f8bf027141665bb3c77",
+      "status": "revision_required",
+      "finding": "Actualimportwhole/front/rear/details andsource/concept/importboard confirmcorrectedpipe/necks,butcap tip remains too sharp. Ownsource upperoutline hasablunt smallflat top (approximately6pixels ofreal top width over44bodywidth),whileinitialauthoredtipdiameter.03/body.92 isonly.033. Capdarkpoint also reads too low.",
+      "action": "Use radius.075 atZ2.235 and.060 atZ2.25 forsmallblunttop,retainingoverallheight. MoveonecapdarkpointtoX-.05,Z2.13. Preserve alltrue blindrecess/contact/dent/nativeimport checks andrerender.",
+      "source_estimate": {
+        "source": "_ZOOM/AR22.256 detail1",
+        "approximate_real_top_width_pixels": 6,
+        "body_width_pixels": 44,
+        "scope": "Approximate source silhouette proportions,not metricdimension calibration."
+      }
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "e9be70ed0fb19cc4ec8c4d68b53411c02277ab3256710018f04a4292c1d5e6b3",
+        "glb": "ba509032a97073d0819dae7c734221961538cdbb85245bbaff75634b33fd1734"
+      },
+      "runtime_report_sha256": "3b43fb4fca2df5596df23ceaa016b1b9819371574f009020e3bb449c44d3b777",
+      "status": "accepted_asset_review",
+      "finding": "Final actualnative/import whole/front/rear andcap/pipe/footdetails comparedwith ownpaletted source andselectedrealImageGen. Slate-blue continuous tower retains roundedfoot,3roundedmiddle drums,taperedbluntcap,1upperdarkpoint/2basepoints,greenservicepipe/elbow/footsocket. Source-proportion feedback improves neckdepth,pipewidth,smallpaleedge andblunttip/upperpointplacement.21638triangles,9closedpositiveparts,4materials,6portable512pxmaps;maximumgeometryerror0. Actual drum/neck/blunttop/recess/pipe/elbow/socket/mount/dent checks,roots,decodedtexturepixels andrenderpairs pass.",
+      "limitations": [
+        "Hidden sections/mounts/backside andcell-relative dimensions authored. Outline ratios areapproximate imageproportions,not metriccalibration.",
+        "PB30isTerra context;no ore-storage research binding orown operating phases recovered. Noanimation/glow claimed.",
+        "Asset-agent acceptance;final user artistic acceptance andclientintegration/scale/state/shaders/Androidperformance separate."
+      ]
+    }
+  ],
+  "final_review": "Own paletted surface/enlargement and41catalogueupdates,actualPB30colourturntable/preview,selectedrealImageGen andactual native/importedGLB whole/front/rear/details reviewed. Slate-blue continuous tower hasroundedfoot,3middle drums andtaperedbluntcap,one cappoint/two basepoints andgreen frontpipe/elbow/rectangularsocket. Source-outline feedback corrects overlydeep necks/thinpipe andlimits palefoot finish tobevel edges. Further source/concept/import feedback replaces a sharp tip with a small blunt cap andmoves the cap point upward. Realrecesses,pipe/elbow/socket/mount contacts,dent andportabletextures checked.",
+  "limitations": [
+    "Own4layers and41catalogueupdates show staticanatomy/reveal/annotations,not operating overlays. PB30isTerran functionalcontext,not Artemian operation.",
+    "No ore-storage-tower research subject found amongall36semanticresearchprofiles;no unrelated ST technical view asserted. Hidden necksections,mounts,backside andcell-relative dimensions authored.",
+    "FirstImageGenattempt returned noimage;secondproducedselectedconcept. Final user artistic acceptance andclient integration/scale/state/shaders/Androidperformance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

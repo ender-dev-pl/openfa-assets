@@ -268,11 +268,13 @@ Additional views: [Front](../gallery/media/objects/artemian/rare-ore-extractor/f
 
 `openfa:building/legacy/128`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Ore Depot](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar22/front-quarter.png)
+![Ore Depot](../gallery/media/objects/artemian/ore-depot/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar22/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar22/model.glb)
+[Blend](../sources/objects/artemian/ore-depot/model.blend) · [GLB](../sources/objects/artemian/ore-depot/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/ore-depot/front.png) · [Rear quarter](../gallery/media/objects/artemian/ore-depot/rear-quarter.png) · [Tapered cap and dark point](../gallery/media/objects/artemian/ore-depot/tapered-cap-and-dark-point-detail.png) · [Green service pipe and foot socket](../gallery/media/objects/artemian/ore-depot/green-service-pipe-and-foot-socket-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/ore-depot/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/ore-depot/concept-glb-comparison.jpg)
 
 ## Refining Forge
 
