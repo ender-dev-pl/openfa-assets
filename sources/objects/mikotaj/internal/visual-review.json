@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/090",
+  "binaries": {
+    "blend": "0ed150dd31d0d7d3920404c4d14921811ea111d710ac1b03aa992167d0c57f8c",
+    "glb": "30c1d33fc580d3e5031fa58e07ad20096919113d9b6362828e8936dda844b2af"
+  },
+  "runtime_report_sha256": "1c71c2100602a2230eea0a582c7bf271e902fb545e7b7a3bf3d88020f8a25b59",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0038630724114595083,
+      "margin": 82
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.003069862956288504,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.004813084112149532,
+      "margin": 90
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk05-review-1.png",
+      "sha256": "cb8f83d786ebe049ebf04527979fef1248871679ddad4913dc4a4840dc897bbb",
+      "prompt": "sources/docs/reconstruction/models/mk05-concept-prompt-1.txt",
+      "feedback": "Selected: low broad oval mineral body, two unequal pale-blue lenses with the larger right lens higher, dark upper/left and lighter lower/right mineral regions. Exact microrelief and socket hardware are authored; no human interior or visible shield is inferred."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "verdict": "correct-proportions-and-lens-seating",
+      "source_model_sha256": "eca3b54f5a402dfa73a8c2b7b9328fbbbfb2e89d01939106ad8ae6fe954e102c",
+      "issues": [
+        "Original and concept show a fuller low dome; the first GLB is too flattened. Increase body height while retaining the broad compact oval silhouette.",
+        "Both lenses sit too low near the rim: move them onto the sloping front face, right remains larger/higher.",
+        "Soft body normals read like clay: retain more irregular mineral facets, without a repeating panel pattern."
+      ]
+    }
+  ],
+  "final_review": "Final independent GLB follows the low broad oval mineral mound, dark upper/left and lighter lower/right regions, and exactly two pale-blue lenses with the right one larger/higher. Actual feedback made the body fuller, raised lenses onto the front slope and restored restrained mineral facets. Actual shallow sockets are closed and independently checked.",
+  "limitations": [
+    "Precise dome sections, underside, sockets, small weathering and lens surface detail are authored from limited fixed views.",
+    "The model does not reproduce every concept microcrevice. Lore describes personal shields but does not establish a visible field or known human interior.",
+    "No metric source height, calibrated game scale/state, Android performance or final user artistic acceptance claimed."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

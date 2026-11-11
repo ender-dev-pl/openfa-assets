@@ -17371,7 +17371,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/090",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           951
         ]
@@ -17445,21 +17445,40 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk05/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mikotaj/internal/model.blend",
           "present": true,
-          "sha256": "e18aead261e05de7c603658bd4183e15bc543cf149c1524404e6bd1a9f37ea10",
-          "final_visual_acceptance": "not-established"
+          "sha256": "0ed150dd31d0d7d3920404c4d14921811ea111d710ac1b03aa992167d0c57f8c",
+          "media": "gallery/media/objects/mikotaj/internal",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mikotaj/internal/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mikotaj/internal/rear-quarter.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mikotaj/internal/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mikotaj/internal/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -17489,6 +17508,84 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 90
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk05/model.blend",
+          "present": true,
+          "sha256": "e18aead261e05de7c603658bd4183e15bc543cf149c1524404e6bd1a9f37ea10",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mikotaj/internal/model.blend",
+        "sha256": "0ed150dd31d0d7d3920404c4d14921811ea111d710ac1b03aa992167d0c57f8c",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mikotaj/internal",
+          "verifier": "sources/tools/blender/verify_mikotaj_internal.py",
+          "files": {
+            "sources/objects/mikotaj/internal/model.blend": "0ed150dd31d0d7d3920404c4d14921811ea111d710ac1b03aa992167d0c57f8c",
+            "sources/objects/mikotaj/internal/model.glb": "30c1d33fc580d3e5031fa58e07ad20096919113d9b6362828e8936dda844b2af",
+            "sources/objects/mikotaj/internal/model.json": "88717cd19f84eedde2406d0771565178b4db4eb04e830d0a71acb4198f940bcd",
+            "sources/objects/mikotaj/internal/README.md": "ed295db60f9c029740ff857519174008a0225b95c114e5f31894c7e2a4d94d97",
+            "sources/objects/mikotaj/internal/runtime-review.json": "1c71c2100602a2230eea0a582c7bf271e902fb545e7b7a3bf3d88020f8a25b59",
+            "sources/objects/mikotaj/internal/visual-review.json": "d5a9291fe4c0468d2f1993cc8163beaecdc0a5b38d3fb923f3ae86c613f45b0a",
+            "gallery/media/objects/mikotaj/internal/concept-glb-comparison.jpg": "c18ee0b3c104982698ca5538863aad5163d4cd28e3d22cd493a0549f10d95ff8",
+            "gallery/media/objects/mikotaj/internal/front-quarter.png": "02a9831c855480a792e731ac975a89f8482e0f83b88e00bccb665983db2fb00a",
+            "gallery/media/objects/mikotaj/internal/front.png": "02cc7c143cb24e9326547adbe356de0963a60784d54cd944c70795fc30fa04f4",
+            "gallery/media/objects/mikotaj/internal/imported-front-quarter.png": "02a9831c855480a792e731ac975a89f8482e0f83b88e00bccb665983db2fb00a",
+            "gallery/media/objects/mikotaj/internal/imported-front.png": "02cc7c143cb24e9326547adbe356de0963a60784d54cd944c70795fc30fa04f4",
+            "gallery/media/objects/mikotaj/internal/imported-rear-quarter.png": "e6e282c21a2f60c91a9191ff3f6370981e7c96328989cfc759fa380e2ab37a6f",
+            "gallery/media/objects/mikotaj/internal/native-front-quarter.png": "8058b2fff10c9f61bd4793f0a866801f829f91ea9c8e950a3f49fda694f87442",
+            "gallery/media/objects/mikotaj/internal/native-front.png": "def1dd0cac5494e86ac15974be2daa5d8009b3a1e2f4f4f6ddc50ba4e970010c",
+            "gallery/media/objects/mikotaj/internal/native-rear-quarter.png": "cd183dead34b6ff91a9da1e830cccc34bbe7a8ee2a7997fac3235506816e4319",
+            "gallery/media/objects/mikotaj/internal/rear-quarter.png": "e6e282c21a2f60c91a9191ff3f6370981e7c96328989cfc759fa380e2ab37a6f",
+            "gallery/media/objects/mikotaj/internal/technical-wireframe.png": "036fbcdb79ea0073a276c4452244d88d20b002ec43f428f63f3755a6ec2e68de",
+            "sources/materials/mikotaj/internal/exposed-ridge-base-colour.png": "620ea520f1f080e9d1cc265cfd4f8b719c54ea2a24dd22f57e1d9cac9a7d9cd9",
+            "sources/materials/mikotaj/internal/mineral-base-colour.png": "b14c58d0bbe3049b03e851c7f9ad89a738cb70ef8c591d9fc2f7411c2c00daf1",
+            "sources/materials/mikotaj/internal/mineral-fracture-normal.png": "39a48c2caf8d152c8e4f26f7a8e30051c92e277626c52be6ea159c8547817965",
+            "sources/materials/mikotaj/internal/occlusion-roughness-metallic.png": "83132736218c7ff4c4c498a4e3669785d98a552a459a7dd03530082d85613ee4",
+            "sources/materials/mikotaj/internal/pale-blue-lens-colour.png": "ced43e8cb55bdd27676a019183e53e30675351e68d3b6ee33b2339431b50a871",
+            "sources/tools/blender/remaster_mikotaj_internal.py": "91a46a0669429084a73c7637dd1fe009e9486d297f43fe4cb843186620b8f0e7",
+            "sources/tools/blender/verify_mikotaj_internal.py": "9df53691948c429bb02778f4af4d4dc0b686c0a7e7a7f1824658bc2776bc820c",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "122fe933c0bcac1324cc2c71a2efe36c806229e243d0f201a4fc5edf6bc2e53e",
+            "sources/docs/reconstruction/models/mk05-concept-review.json": "0a847a2483b2bb33f796ceff949c9bf08b92dab0fed1d620179aeec54332b80a",
+            "sources/docs/reconstruction/models/mk05-concept-prompt-1.txt": "e1c82abfab10e7b89014e46673447a18a49801845645c609389a737db751678f",
+            "gallery/media/concepts/mikotaj/mk05-review-1.png": "cb8f83d786ebe049ebf04527979fef1248871679ddad4913dc4a4840dc897bbb"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mikotaj/internal/visual-review.json",
+          "sha256": "d5a9291fe4c0468d2f1993cc8163beaecdc0a5b38d3fb923f3ae86c613f45b0a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mikotaj/internal/visual-review.json",
+          "sha256": "d5a9291fe4c0468d2f1993cc8163beaecdc0a5b38d3fb923f3ae86c613f45b0a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mikotaj/internal/visual-review.json",
+          "sha256": "d5a9291fe4c0468d2f1993cc8163beaecdc0a5b38d3fb923f3ae86c613f45b0a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mikotaj/internal/visual-review.json",
+          "sha256": "d5a9291fe4c0468d2f1993cc8163beaecdc0a5b38d3fb923f3ae86c613f45b0a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mikotaj/internal/runtime-review.json",
+          "sha256": "1c71c2100602a2230eea0a582c7bf271e902fb545e7b7a3bf3d88020f8a25b59",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
