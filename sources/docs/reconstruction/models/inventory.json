@@ -21025,7 +21025,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/105",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           966
         ]
@@ -21099,21 +21099,52 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mikotaj/merl/model.blend",
           "present": true,
-          "sha256": "aa70e5e9afe8d7c564a191e3e2869d1099d4f7b906749a728757e62db225f727",
-          "final_visual_acceptance": "not-established"
+          "sha256": "b4882d8e3a6da96c1b7e49a12317ce2d9b7e689674370f0bce042d72635c071c",
+          "media": "gallery/media/objects/mikotaj/merl",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mikotaj/merl/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mikotaj/merl/rear-quarter.png"
+            },
+            {
+              "label": "Fork and front lens",
+              "image": "gallery/media/objects/mikotaj/merl/fork-and-lens-detail.png"
+            },
+            {
+              "label": "Mineral mound",
+              "image": "gallery/media/objects/mikotaj/merl/mineral-mound-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mikotaj/merl/technical-wireframe.png"
+            },
+            {
+              "label": "Source-supported gold pulse",
+              "image": "gallery/media/objects/mikotaj/merl/pulse-peak.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mikotaj/merl/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -21143,6 +21174,91 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 105
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/model.blend",
+          "present": true,
+          "sha256": "aa70e5e9afe8d7c564a191e3e2869d1099d4f7b906749a728757e62db225f727",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mikotaj/merl/model.blend",
+        "sha256": "b4882d8e3a6da96c1b7e49a12317ce2d9b7e689674370f0bce042d72635c071c",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mikotaj/merl",
+          "verifier": "sources/tools/blender/verify_mikotaj_merl.py",
+          "files": {
+            "sources/objects/mikotaj/merl/model.blend": "b4882d8e3a6da96c1b7e49a12317ce2d9b7e689674370f0bce042d72635c071c",
+            "sources/objects/mikotaj/merl/model.glb": "a67f52ae01ea4c839e36748eeedf7e3037d2186d4efd0730f3c7c1a7c8fa2888",
+            "sources/objects/mikotaj/merl/model.json": "34d6cb69171d9f6ceadfb1ed2b490fc967ae49f00b3e3dee98b6ce4a876a2262",
+            "sources/objects/mikotaj/merl/README.md": "d09ac0bc454732013aab5e2b8f7e9229ed2de228fabe6a0edc815e2272607df1",
+            "sources/objects/mikotaj/merl/runtime-review.json": "816a7d56d4437349dbdc891c4696d7253db5515abf0711d5d7eb94a7fa45280d",
+            "sources/objects/mikotaj/merl/visual-review.json": "42753dc4f00f7352991635af8f0add99c2af2f682b65e7013f5b53ed6ac9e24e",
+            "gallery/media/objects/mikotaj/merl/animation-00.webm": "04aa4fa3ba77071a8b9b8db7970458f033a4df0826dede7026c47a9aa4b3d840",
+            "gallery/media/objects/mikotaj/merl/animation-previews.json": "e670f7ef19dab5355b132b14e147ed663fcc01ca91cb10d932b5608ca78df2d8",
+            "gallery/media/objects/mikotaj/merl/concept-glb-comparison.jpg": "2dcb154d427944be4ce66c955d1148c6842055f5c54d72a7ccc1e39b71f20a38",
+            "gallery/media/objects/mikotaj/merl/fork-and-lens-detail.png": "39696d6a98ecb0d335e0e2aa2de9356b78a8caf34c5caacd300ad05d350b8e7b",
+            "gallery/media/objects/mikotaj/merl/front-quarter.png": "0db4824a5266d4847d1cf0545c44f2165211cfe69e2ecd33cc792e979758cc33",
+            "gallery/media/objects/mikotaj/merl/front.png": "faf11ef7356d6052ef6351899ca642cea61c613e15ebee62a862e0e6e7921287",
+            "gallery/media/objects/mikotaj/merl/imported-front-quarter.png": "0db4824a5266d4847d1cf0545c44f2165211cfe69e2ecd33cc792e979758cc33",
+            "gallery/media/objects/mikotaj/merl/imported-front.png": "faf11ef7356d6052ef6351899ca642cea61c613e15ebee62a862e0e6e7921287",
+            "gallery/media/objects/mikotaj/merl/imported-rear-quarter.png": "80d47f162ea3f5a9726dc23b16f2f56ca97c55ea27e615244bced4a3e1a30c89",
+            "gallery/media/objects/mikotaj/merl/mineral-mound-detail.png": "748dee85adc3e019b1b15cd3c5fd752748688eb97166fa4bf4c52d0923fafbca",
+            "gallery/media/objects/mikotaj/merl/native-front-quarter.png": "d103cdc43c30a9a73b848bea17aa9c1f8787d40f68e20257c1d6470d01893580",
+            "gallery/media/objects/mikotaj/merl/native-front.png": "e9dd2a0ef7e408ed90b3458737aef2a250075eb9385a2db5f8bdcfd7a75049b2",
+            "gallery/media/objects/mikotaj/merl/native-rear-quarter.png": "9727b6dc005c37430e1194cc7bb7f9f76032cd0b546eba7e745f34cfb462e473",
+            "gallery/media/objects/mikotaj/merl/pulse-peak.png": "a66375dbcba0f9ba9cdadc5eea41c82cf4f1adbd3502dabef3ce39bc6435a4c2",
+            "gallery/media/objects/mikotaj/merl/rear-quarter.png": "80d47f162ea3f5a9726dc23b16f2f56ca97c55ea27e615244bced4a3e1a30c89",
+            "gallery/media/objects/mikotaj/merl/technical-wireframe.png": "eabb0bb61d29efba41c3f7ffa9b4b889dd7abc6043b8a0546b2c4e4427b78837",
+            "sources/materials/mikotaj/merl/exposed-ridge-base-colour.png": "52a158cf0c0571103dcecccd476b5ba0a72d8a2441d4c7e5afd0b1f58fcfed29",
+            "sources/materials/mikotaj/merl/gold-pulse-colour.png": "c4b14bfc95aa92e29f0d522912cb265d8e3092c77c688eed6188a97e713eacd3",
+            "sources/materials/mikotaj/merl/mineral-base-colour.png": "d449d1164540acbee0b14945e141a77ea7d560272ea52908ffaf055f50e59963",
+            "sources/materials/mikotaj/merl/mineral-fracture-normal.png": "8cc5065894234509452cfe0508620c94de859c4a8a53d180c713c9a22e5db3d8",
+            "sources/materials/mikotaj/merl/occlusion-roughness-metallic.png": "c552dc917697cfb7ec0aa99757344f1a5cf1fc21c7fc34cf70045838d4ad6789",
+            "sources/materials/mikotaj/merl/pale-blue-lens-colour.png": "24f8845a5cadc9e1c7d7bac138b08378cd0a5d38d833413e4ace842fa2c9961e",
+            "sources/tools/blender/remaster_mikotaj_merl.py": "91a5daf692dbaf3f894fe505a2ef370c8841896f61885da1f700c485859997e7",
+            "sources/tools/blender/render_mikotaj_merl_animation.py": "8927d168ed5da87b9c7b446389c9b97c940dc3276b412001c3a48121818403be",
+            "sources/tools/blender/verify_mikotaj_merl.py": "e7773805d99f7ac7b93400018f46e014e2aae9fe8a4a8b5b69efe6e33cdec728",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mk20-concept-review.json": "f81baddc977ecd9dc9b8d3212a1dc0fc6a3c8fcbe6015891c6d1b0929e8a3bf4",
+            "sources/docs/reconstruction/models/mk20-concept-prompt-1.txt": "a54ba578c3bc16940513b177991a2f4c6c9303a447bd1eedf65cbb2161fb50c0",
+            "gallery/media/concepts/mikotaj/mk20-review-1.png": "3d35d13a5b0cf14c8b2d6013df3b3c6ba4368addc4992baf8a604350cc4546d0"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mikotaj/merl/visual-review.json",
+          "sha256": "42753dc4f00f7352991635af8f0add99c2af2f682b65e7013f5b53ed6ac9e24e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mikotaj/merl/visual-review.json",
+          "sha256": "42753dc4f00f7352991635af8f0add99c2af2f682b65e7013f5b53ed6ac9e24e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mikotaj/merl/visual-review.json",
+          "sha256": "42753dc4f00f7352991635af8f0add99c2af2f682b65e7013f5b53ed6ac9e24e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mikotaj/merl/visual-review.json",
+          "sha256": "42753dc4f00f7352991635af8f0add99c2af2f682b65e7013f5b53ed6ac9e24e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mikotaj/merl/runtime-review.json",
+          "sha256": "816a7d56d4437349dbdc891c4696d7253db5515abf0711d5d7eb94a7fa45280d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

@@ -3673,23 +3673,53 @@
     "culture": "mikotaj",
     "studies": [
       {
-        "stage": "silhouette-study",
-        "blend": "sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/model.blend",
-        "glb": "sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/model.glb",
-        "image": "gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/front-quarter.png",
-        "sha256": "aa70e5e9afe8d7c564a191e3e2869d1099d4f7b906749a728757e62db225f727",
+        "stage": "canonical-game-remaster",
+        "blend": "sources/objects/mikotaj/merl/model.blend",
+        "glb": "sources/objects/mikotaj/merl/model.glb",
+        "image": "gallery/media/objects/mikotaj/merl/front-quarter.png",
+        "sha256": "b4882d8e3a6da96c1b7e49a12317ce2d9b7e689674370f0bce042d72635c071c",
         "animations": [
           {
             "index": 0,
-            "name": "Animation",
-            "start": 0.0625,
-            "end": 1.0625,
-            "duration": 1.0,
-            "video": "gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/animation-00.webm",
-            "sha256": "028e2a6467e4c25fba0c830981de1a643b04f4e4319dd775318eb9aa03bc2e9b",
-            "frames": 24,
+            "name": "PlasmaDischarge",
+            "start": 0.041666666666666664,
+            "end": 1.375,
+            "duration": 1.3333333333333333,
+            "video": "gallery/media/objects/mikotaj/merl/animation-00.webm",
+            "sha256": "04aa4fa3ba77071a8b9b8db7970458f033a4df0826dede7026c47a9aa4b3d840",
+            "frames": 33,
             "fps": 24.0,
-            "distinct_pose_count": 23
+            "distinct_pose_count": 25
+          }
+        ],
+        "views": [
+          {
+            "label": "Front",
+            "image": "gallery/media/objects/mikotaj/merl/front.png"
+          },
+          {
+            "label": "Rear quarter",
+            "image": "gallery/media/objects/mikotaj/merl/rear-quarter.png"
+          },
+          {
+            "label": "Fork and front lens",
+            "image": "gallery/media/objects/mikotaj/merl/fork-and-lens-detail.png"
+          },
+          {
+            "label": "Mineral mound",
+            "image": "gallery/media/objects/mikotaj/merl/mineral-mound-detail.png"
+          },
+          {
+            "label": "Canonical technical wireframe",
+            "image": "gallery/media/objects/mikotaj/merl/technical-wireframe.png"
+          },
+          {
+            "label": "Source-supported gold pulse",
+            "image": "gallery/media/objects/mikotaj/merl/pulse-peak.png"
+          },
+          {
+            "label": "Concept and actual GLB",
+            "image": "gallery/media/objects/mikotaj/merl/concept-glb-comparison.jpg"
           }
         ]
       }

@@ -240,13 +240,15 @@ Additional views: [Front](../gallery/media/objects/mikotaj/ruth-fett/front.png) 
 
 `openfa:building/legacy/105`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Merl](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/front-quarter.png)
+![Merl](../gallery/media/objects/mikotaj/merl/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/model.glb)
+[Blend](../sources/objects/mikotaj/merl/model.blend) · [GLB](../sources/objects/mikotaj/merl/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk20/animation-00.webm)
+Additional views: [Front](../gallery/media/objects/mikotaj/merl/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/merl/rear-quarter.png) · [Fork and front lens](../gallery/media/objects/mikotaj/merl/fork-and-lens-detail.png) · [Mineral mound](../gallery/media/objects/mikotaj/merl/mineral-mound-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/merl/technical-wireframe.png) · [Source-supported gold pulse](../gallery/media/objects/mikotaj/merl/pulse-peak.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/merl/concept-glb-comparison.jpg)
+
+[Play animation: PlasmaDischarge](../gallery/media/objects/mikotaj/merl/animation-00.webm)
 
 ## Na-Shrekn
 
