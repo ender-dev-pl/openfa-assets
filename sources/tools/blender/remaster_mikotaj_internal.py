@@ -143,7 +143,7 @@ def main(root):
         interpretation=['Low broad mineral dome and two unequal blue lenses follow legacy; exact sections, sockets, weathering and hidden underside are authored.',
                         'Personal resting quarters for abstract entities; no human interior, visible personal shield or operating cycle is inferred from lore or catalogue reveal.'],
         scale_contract='3x3 placement footprint, local +Z up/-Y front. Native dimensions are authored cell-relative proportions; no metric legacy height or calibrated game scale claimed.',
-        concept_review='sources/docs/reconstruction/models/mk02-concept-review.json',animation_clips=[],game_client_integration=False,final_user_artistic_acceptance=False)
+        concept_review='sources/docs/reconstruction/models/mk05-concept-review.json',animation_clips=[],game_client_integration=False,final_user_artistic_acceptance=False)
     (out/'model.json').write_text(json.dumps(metadata,indent=2)+'\n',encoding='utf-8')
     print('MIKOTAJ_INTERNAL_AUTHORED',triangles,'triangles;',len(meshes),'mesh nodes;',len(created),'export temporary directories',flush=True)
 

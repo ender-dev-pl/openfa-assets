@@ -41,6 +41,14 @@ class CultureBuildingEvidenceTests(unittest.TestCase):
         row=copy.deepcopy(self.record)
         with self.mutate_report(row,'/runtime-review.json',lambda data:data.update(maximum_bidirectional_surface_error=.1)):
             with self.assertRaises(AssertionError):self.check(row)
+    def test_rehashed_wrong_concept_pointer(self):
+        row=copy.deepcopy(self.record)
+        with self.mutate_report(row,'/model.json',lambda data:data.update(concept_review='unbound-concept.json')):
+            with self.assertRaisesRegex(AssertionError,'Concept reference is not bound'):self.check(row)
+    def test_rehashed_wrong_concept_identity(self):
+        row=copy.deepcopy(self.record)
+        with self.mutate_report(row,'concept-review.json',lambda data:data.update(id='unrelated-building')):
+            with self.assertRaisesRegex(AssertionError,'Concept identity mismatch'):self.check(row)
     def test_unbound_accepted_gate(self):
         row=copy.deepcopy(self.record);row['acceptance_evidence'].pop('native_and_glb_runtime')
         with self.assertRaisesRegex(AssertionError,'Unbound acceptance gate'):self.check(row)

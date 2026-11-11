@@ -50,6 +50,8 @@ def render(label,media):
 def main():
     folder=ROOT/'sources/objects/mikotaj/purity';media=ROOT/'gallery/media/objects/mikotaj/purity';media.mkdir(parents=True,exist_ok=True);meta=json.loads((folder/'model.json').read_text(encoding='utf-8'))
     assert meta['author_sha256']==sha(Path(__file__).with_name('remaster_mikotaj_purity.py'))
+    assert meta['concept_review']=='sources/docs/reconstruction/models/mk03-concept-review.json'
+    assert json.loads((ROOT/meta['concept_review']).read_bytes())['id']==meta['id']
     for ext,h in meta['binaries'].items():assert sha(folder/f'model.{ext}')==h
     bpy.ops.wm.open_mainfile(filepath=str(folder/'model.blend'),load_ui=False,use_scripts=False);native,ni,nr=snapshot();renders=render('native',media)
     bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.gltf(filepath=str(folder/'model.glb'));imported,ii,ir=snapshot();assert native.keys()==imported.keys();assert nr==ir

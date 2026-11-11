@@ -33,6 +33,12 @@ def verify(source_root,record):
     assert all(name in files for name in required),'Incomplete canonical runtime evidence'
     meta=json.loads(path(folder+'/model.json').read_bytes());runtime=json.loads(path(folder+'/runtime-review.json').read_bytes());visual=json.loads(path(folder+'/visual-review.json').read_bytes())
     assert meta['id']==runtime['id']==visual['id']==record['id'],'Model identity mismatch'
+    concept_name=meta['concept_review'];assert concept_name in files,'Concept reference is not bound to this model'
+    concept=json.loads(path(concept_name).read_bytes())
+    assert concept['id']==record['id'] and concept['key']==meta['key'],'Concept identity mismatch'
+    assert len(concept['iterations'])==len(visual['concept_attempts']),'Concept/visual attempt mismatch'
+    for actual,reviewed in zip(concept['iterations'],visual['concept_attempts']):
+        assert all(actual[name]==reviewed[name] for name in ['attempt','image','sha256','prompt']),'Concept/visual attempt mismatch'
     assert meta['culture']==record['culture'] and meta['footprint']==record['footprint']
     assert meta['binaries']==runtime['binaries']==visual['binaries'],'Stale visual/model revision'
     for kind,digest in meta['binaries'].items():assert files[folder+'/model.'+kind]==digest

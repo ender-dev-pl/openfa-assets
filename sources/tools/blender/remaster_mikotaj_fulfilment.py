@@ -148,7 +148,7 @@ def main(root):
         interpretation=['Asymmetric blunt mineral head, connected fluted base, one brass waist band, small amber band inset and single low blue lens follow legacy; precise cross-sections, flutes and fasteners are authored.',
                         'Nourishment function is original lore, its mechanism explicitly unknown. No operational motion inferred from catalogue information reveal.'],
         scale_contract='2x2 placement footprint, local +Z up/-Y front. Native dimensions are authored cell-relative proportions; no metric legacy height or calibrated game scale claimed.',
-        concept_review='sources/docs/reconstruction/models/mk02-concept-review.json',animation_clips=[],game_client_integration=False,final_user_artistic_acceptance=False)
+        concept_review='sources/docs/reconstruction/models/mk04-concept-review.json',animation_clips=[],game_client_integration=False,final_user_artistic_acceptance=False)
     (out/'model.json').write_text(json.dumps(metadata,indent=2)+'\n',encoding='utf-8')
     print('MIKOTAJ_FULFILMENT_AUTHORED',triangles,'triangles;',len(meshes),'mesh nodes;',len(created),'export temporary directories',flush=True)
 

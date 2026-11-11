@@ -169,7 +169,7 @@ def main(root):
         interpretation=['Single pointed mineral-alloy mass, low left buttress, one upper blue lens, two lower blue lenses and three diagonal red slits follow legacy; precise sections, inset engineering and rear closure are authored.',
                         'No operational motion inferred from catalogue information reveal. Blue emitters are material emission, not an invented gameplay effect.'],
         scale_contract='2x2 placement footprint, local +Z up/-Y front. Native dimensions are authored cell-relative proportions; no metric legacy height or calibrated game scale claimed.',
-        concept_review='sources/docs/reconstruction/models/mk02-concept-review.json',animation_clips=[],game_client_integration=False,final_user_artistic_acceptance=False)
+        concept_review='sources/docs/reconstruction/models/mk03-concept-review.json',animation_clips=[],game_client_integration=False,final_user_artistic_acceptance=False)
     (out/'model.json').write_text(json.dumps(metadata,indent=2)+'\n',encoding='utf-8')
     print('MIKOTAJ_PURITY_AUTHORED',triangles,'triangles;',len(meshes),'mesh nodes;',len(created),'export temporary directories',flush=True)
 
