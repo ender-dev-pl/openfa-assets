@@ -26995,7 +26995,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/129",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           990
         ]
@@ -27069,21 +27069,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar23/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/refining-forge/model.blend",
           "present": true,
-          "sha256": "717220978ac964110358a4992733da5d19ff6fca995d0c0082782c03066b8040",
-          "final_visual_acceptance": "not-established"
+          "sha256": "259cca69c24e82d3055a6beb755c4e89cca0b729c015d056b4252f88bf20adaa",
+          "media": "gallery/media/objects/artemian/refining-forge",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/refining-forge/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/refining-forge/rear-quarter.png"
+            },
+            {
+              "label": "Open pale frame and two unequal pins",
+              "image": "gallery/media/objects/artemian/refining-forge/open-pale-frame-and-two-unequal-pins-detail.png"
+            },
+            {
+              "label": "Three chambers and source fittings",
+              "image": "gallery/media/objects/artemian/refining-forge/three-rounded-chambers-and-source-fittings-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/refining-forge/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/refining-forge/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -27113,6 +27140,89 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 129
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar23/model.blend",
+          "present": true,
+          "sha256": "717220978ac964110358a4992733da5d19ff6fca995d0c0082782c03066b8040",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/refining-forge/model.blend",
+        "sha256": "259cca69c24e82d3055a6beb755c4e89cca0b729c015d056b4252f88bf20adaa",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/refining-forge",
+          "verifier": "sources/tools/blender/verify_artemian_refining_forge.py",
+          "files": {
+            "sources/objects/artemian/refining-forge/model.blend": "259cca69c24e82d3055a6beb755c4e89cca0b729c015d056b4252f88bf20adaa",
+            "sources/objects/artemian/refining-forge/model.glb": "a95ce1274be44ade22144e8dcd454f3c9e0dca5f8e60fd403940c92b29357f12",
+            "sources/objects/artemian/refining-forge/model.json": "a5e528a2541b52338f7899b3b7de64f7fafb06eecec29cde24869f50a9604da6",
+            "sources/objects/artemian/refining-forge/README.md": "7dd8baf0f412bb45521ab1909e5ebc5febb5055babe08de0b2ebce5a21b4d5eb",
+            "sources/objects/artemian/refining-forge/runtime-review.json": "fff59e9c2cbe0cfdfac94af87d533d028e9337135f3e1431285f0e838368cc2f",
+            "sources/objects/artemian/refining-forge/visual-review.json": "f6b8d4e13ba3cdec88703faa1401c7cd8f74252af9e0278f376d848714f6e610",
+            "gallery/media/objects/artemian/refining-forge/concept-glb-comparison.jpg": "2da2a747e9943259d8760a2aaad5780f04c7de2985ce1d0e00eff232062835f6",
+            "gallery/media/objects/artemian/refining-forge/front-quarter.png": "b4388bd9220d715b27f129963f927c0ce806b35c4894c07ef102bc163409d803",
+            "gallery/media/objects/artemian/refining-forge/front.png": "bb0ef32afe42c439586d137c823955b631ec5573be62a418ad212a72f8f1dc13",
+            "gallery/media/objects/artemian/refining-forge/imported-front-quarter.png": "b4388bd9220d715b27f129963f927c0ce806b35c4894c07ef102bc163409d803",
+            "gallery/media/objects/artemian/refining-forge/imported-front.png": "bb0ef32afe42c439586d137c823955b631ec5573be62a418ad212a72f8f1dc13",
+            "gallery/media/objects/artemian/refining-forge/imported-rear-quarter.png": "7f70fc8af5c2cd022b9a6ea30f0791715fada71c34ff88d404b282902b0c8dc1",
+            "gallery/media/objects/artemian/refining-forge/native-front-quarter.png": "85972ee524f3cf50628be65a5ca71dfe19b51e90ed2bfb5722f04986710eee67",
+            "gallery/media/objects/artemian/refining-forge/native-front.png": "ffb276f3fa940cd8c35d1c6499f64ef0f7521068cc44b336c2f94faa8246ade8",
+            "gallery/media/objects/artemian/refining-forge/native-rear-quarter.png": "7645d752c1ee6b6898aa63ba44d11496cbd6cd957373db5c23e52dd95d142177",
+            "gallery/media/objects/artemian/refining-forge/open-pale-frame-and-two-unequal-pins-detail.png": "b82312607fb5ec447024086c5242249a3cb38fef0e089daacb5925e0a91c4cf0",
+            "gallery/media/objects/artemian/refining-forge/rear-quarter.png": "7f70fc8af5c2cd022b9a6ea30f0791715fada71c34ff88d404b282902b0c8dc1",
+            "gallery/media/objects/artemian/refining-forge/technical-wireframe.png": "0be05a87263792b03d21c58244d14934c896dca607b3579a42aa58141e327267",
+            "gallery/media/objects/artemian/refining-forge/three-rounded-chambers-and-source-fittings-detail.png": "96ae38ae4fd298af7df125c730a0e5b43a782e546ed328c38078d274b2292a00",
+            "sources/materials/artemian/refining-forge/amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+            "sources/materials/artemian/refining-forge/copper-fitting-colour.png": "0b2b534259c61da12bdc0866c48384c004971c4d695c02396926bcbcbf813b0e",
+            "sources/materials/artemian/refining-forge/exposed-alloy-edge-colour.png": "bb0ad0ef1318d345fcaba03f59582125fd908212026b8be32b39d93694786da7",
+            "sources/materials/artemian/refining-forge/muted-green-alloy-colour.png": "519d348d46b95b0cc5d5b359cecd80971a5aebf1cd60b089946eb0ef63288fd2",
+            "sources/materials/artemian/refining-forge/occlusion-roughness-metallic.png": "f6809f4123840768d19a0bc9a9b9f0d57df933ab488ca0775aaf664392eb1f6c",
+            "sources/materials/artemian/refining-forge/oxidized-alloy-orm.png": "220aef245d0ff0b1b367bd194a339a26f66c318f418c7beb2a60367847253026",
+            "sources/materials/artemian/refining-forge/used-metal-normal.png": "804737d038fd7060ab87dc9cfd594594fffa725f3f08da5a2452b62e3bda14ed",
+            "sources/tools/blender/remaster_artemian_refining_forge.py": "6dd4d98bcf4d21a5d707779d2b0b12a402195d02c7d5bad0df4969d72266a204",
+            "sources/tools/blender/verify_artemian_refining_forge.py": "a962979921255156a183207e1b0fa872c00b81faf6c385ac6e9e145b3ffd1bdb",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar23-concept-review.json": "fec1ad766949d99b9dcfc2352b7fd6399af891a4f01e9d44bfe1e842891b34f3",
+            "sources/docs/reconstruction/models/ar23-concept-prompt-1.txt": "f951d74c35179265750c49a82e42466104cf3e7ff257489238662e9754b8b1b6",
+            "sources/docs/reconstruction/models/ar23-concept-prompt-2.txt": "606886abe92bbb1cf851d3649bff3e09acf2b590d256a133059d0aa4b2d353b4",
+            "gallery/media/concepts/artemian/ar23-review-2.png": "f46511c16fce73f4fb863445145c71b089ed845054e9a87a9e96c6cad973e6a1"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/refining-forge/visual-review.json",
+          "sha256": "f6b8d4e13ba3cdec88703faa1401c7cd8f74252af9e0278f376d848714f6e610",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/refining-forge/visual-review.json",
+          "sha256": "f6b8d4e13ba3cdec88703faa1401c7cd8f74252af9e0278f376d848714f6e610",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/refining-forge/visual-review.json",
+          "sha256": "f6b8d4e13ba3cdec88703faa1401c7cd8f74252af9e0278f376d848714f6e610",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/refining-forge/visual-review.json",
+          "sha256": "f6b8d4e13ba3cdec88703faa1401c7cd8f74252af9e0278f376d848714f6e610",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/refining-forge/runtime-review.json",
+          "sha256": "fff59e9c2cbe0cfdfac94af87d533d028e9337135f3e1431285f0e838368cc2f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/129",
+  "binaries": {
+    "blend": "259cca69c24e82d3055a6beb755c4e89cca0b729c015d056b4252f88bf20adaa",
+    "glb": "a95ce1274be44ade22144e8dcd454f3c9e0dca5f8e60fd403940c92b29357f12"
+  },
+  "runtime_report_sha256": "fff59e9c2cbe0cfdfac94af87d533d028e9337135f3e1431285f0e838368cc2f",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00020773726901032077,
+      "margin": 66
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0001204207846274267,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0001474788872329856,
+      "margin": 70
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 2,
+      "image": "gallery/media/concepts/artemian/ar23-review-2.png",
+      "sha256": "f46511c16fce73f4fb863445145c71b089ed845054e9a87a9e96c6cad973e6a1",
+      "prompt": "sources/docs/reconstruction/models/ar23-concept-prompt-2.txt",
+      "feedback": "Selected3joinedgreen shellchambers,leftflatwing,tallpaleopenframe/brasscore/stem,2unequalbrasspins onredcopperpedestals;front/rightchambers each2darkpoints/1brasslowerfitting,rearonly1darkpoint. Concept tops/feet aretooflat/truncated andsome hardwareheavy;ownsource governs roundedhoods/feet,slimmerstem andproportions in3D. No extra equipment,lightoroperation invented."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "stage": "actual_saved_geometry_gate_before_render",
+      "binaries": {
+        "blend": "0efc100b406ac5b27c662f6bc687af77f61ef3605b500e4ff07e494a306a593b",
+        "glb": "60c914e1a598efc492f9a2ee832ee46faf31b8dca0be61855cdf7fea57e84c25"
+      },
+      "status": "revision_required",
+      "finding": "Independent actualsaved-native raydiagnostic foundonlythe rightlower brassfitting hidden byfrontchamber fromstandardreviewdirection;other6sourcefittings clear. No successful render/runtime report isclaimed atthisstage.",
+      "action": "Move rightlowerfitting slightly towardvisiblefront-right flank (localXoffset+.14),retaining itschamber/height/recess andsource counts. Keep strictother-body visibility/contactguards. Reauthorandrerunactualnative/import runtime. Diagnostic retained privately."
+    },
+    {
+      "pass_number": 2,
+      "stage": "actual_saved_native_render_review",
+      "binaries": {
+        "blend": "8399377881aecfe918e9d0397ccb941aece3662498001655f5619d077ea6990e",
+        "glb": "f8436ea9f1e86a3d00dcf6ce2869eed479a8068f52c49c2eb6598fbc37801d8f"
+      },
+      "status": "revision_required",
+      "finding": "Actual nativewhole render shows3sourcechambers/fittings/hardware,butupperhoods aretoo conical ratherthan source-rounded. Standard10,-10camera offsetsfore/rearchambershorizontally,while sourcecentres nearlyalign.",
+      "action": "Broaden upperprofile radii atnormalisedheights.72/.85/.94 to.57/.43/.27 andretain smallroundedtip. Useapproximatesource-reviewfront-quarterdirection8,-12.5,9 (not recoveredmetriccamera),updating actualgreenbodyvisibilityguard tosameangle. Preserve allsourcecounts,physicalassembly/recess/frame/pedestal contacts andbudgets;rerun actualsavednative/import checks andviews.",
+      "runtime_report_sha256": "5705df383fb8e0db8422bf8c1ade912c40b8ba2cd1a8230d32ee2573c9c66ae6"
+    },
+    {
+      "pass_number": 3,
+      "stage": "final_actual_native_and_independent_glb_visual_review",
+      "binaries": {
+        "blend": "259cca69c24e82d3055a6beb755c4e89cca0b729c015d056b4252f88bf20adaa",
+        "glb": "a95ce1274be44ade22144e8dcd454f3c9e0dca5f8e60fd403940c92b29357f12"
+      },
+      "runtime_report_sha256": "fff59e9c2cbe0cfdfac94af87d533d028e9337135f3e1431285f0e838368cc2f",
+      "status": "accepted_asset_review",
+      "finding": "Actual finalnative/importwhole/front/rear,bothdetails andsource/concept/importboard reviewed.3joinedroundedgreenchambers/tallerrearhood/leftwing,5darkpoints/2lowerbrassfittings,tallpaleopencapsule/brasscore/stem and2copperpedestals/unequalbrasspins retainownsourceanatomy. Source-roundedhoods overrideflatconcepttops;allfittingsvisibleagainstothergreenbodies.27864triangles,22closedpositiveparts,5materials,7portable512pxmaps;geometryerror0. Actualassembly/recess/visibility/endcap/sidegap/stem/pedestal/dent/root/decodedtexture/renderpairchecks pass.",
+      "limitations": [
+        "Hidden sections/contacts/cell-relative dimensions andapproximate source-reviewcamera authored;not recoveredmetricprojection.",
+        "Class255/noTerraequivalent;no inventedPB/ST/ownoperation/glow.",
+        "Asset-agent acceptance;finaluser artisticacceptance andclientintegration/scale/state/shaders/Androidperformance separate."
+      ]
+    }
+  ],
+  "final_review": "Own4paletted sprite layers/all41catalogueupdates,originalfunction990/culture105,selectedrealImageGen andactualnative/importedGLB whole/front/rear/details reviewed. Three joinedroundedgreenchambers withtallerrear,leftwing,5darkpoints/2brasslowerfittings,tallpaleopencapsule/brasscore/stem and2redcopperpedestals/unequalbrasspins retain sourceanatomy. Actualassembly/recess/visibility/frame/endcap/stem/pedestal/dent checks agree. Rounded sourcehoods override flatterconcepttops;fittingvisibility andsource-reviewcamera corrected frominitialgeometry/render feedback.",
+  "limitations": [
+    "Uniqueclass255 andoriginaltext identify no realTerran equivalent;no genericPB/ST technical/operation counterpart invented. Full_MA indexes/all36researchsubjects surveyed.",
+    "Hidden sections/assemblycontacts andcell-relative dimensions authored. Reviewcamera approximates the source angle,not a recovered/calibrated legacy projection.",
+    "FirstImageGenattempt returned noimage;secondproducedselectedconcept. No recoveredown operating phases/glow. Final user artistic acceptance andclientintegration/scale/state/shaders/Androidperformance separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/129",
+  "key": "AR23",
+  "name": "Refining Forge",
+  "culture": "artemian",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 255,
+  "construction_updates": 38,
+  "triangles": 27864,
+  "triangle_budget": 30000,
+  "mesh_nodes": 22,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_artemian_refining_forge.py",
+  "author_sha256": "6dd4d98bcf4d21a5d707779d2b0b12a402195d02c7d5bad0df4969d72266a204",
+  "binaries": {
+    "blend": "259cca69c24e82d3055a6beb755c4e89cca0b729c015d056b4252f88bf20adaa",
+    "glb": "a95ce1274be44ade22144e8dcd454f3c9e0dca5f8e60fd403940c92b29357f12"
+  },
+  "textures": {
+    "amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+    "copper-fitting-colour.png": "0b2b534259c61da12bdc0866c48384c004971c4d695c02396926bcbcbf813b0e",
+    "exposed-alloy-edge-colour.png": "bb0ad0ef1318d345fcaba03f59582125fd908212026b8be32b39d93694786da7",
+    "muted-green-alloy-colour.png": "519d348d46b95b0cc5d5b359cecd80971a5aebf1cd60b089946eb0ef63288fd2",
+    "occlusion-roughness-metallic.png": "f6809f4123840768d19a0bc9a9b9f0d57df933ab488ca0775aaf664392eb1f6c",
+    "oxidized-alloy-orm.png": "220aef245d0ff0b1b367bd194a339a26f66c318f418c7beb2a60367847253026",
+    "used-metal-normal.png": "804737d038fd7060ab87dc9cfd594594fffa725f3f08da5a2452b62e3bda14ed"
+  },
+  "chambers": [
+    {
+      "key": "front",
+      "centre": [
+        0.26,
+        -0.42
+      ],
+      "radius": 0.55,
+      "height": 0.82
+    },
+    {
+      "key": "right",
+      "centre": [
+        0.68,
+        0.22
+      ],
+      "radius": 0.47,
+      "height": 0.82
+    },
+    {
+      "key": "rear",
+      "centre": [
+        -0.2,
+        0.3
+      ],
+      "radius": 0.48,
+      "height": 1.02
+    }
+  ],
+  "dark_ports": [
+    {
+      "chamber": "front",
+      "index": 0,
+      "point": [
+        0.1599999964237213,
+        -0.7029013633728027,
+        0.5199999809265137
+      ],
+      "normal": [
+        -0.23030222952365875,
+        -0.9495184421539307,
+        0.2130155712366104
+      ]
+    },
+    {
+      "chamber": "front",
+      "index": 1,
+      "point": [
+        0.36000001430511475,
+        -0.7029016017913818,
+        0.5199999809265137
+      ],
+      "normal": [
+        0.2303023487329483,
+        -0.9495189189910889,
+        0.21301327645778656
+      ]
+    },
+    {
+      "chamber": "right",
+      "index": 0,
+      "point": [
+        0.5799999833106995,
+        -0.01753997802734375,
+        0.5199999809265137
+      ],
+      "normal": [
+        -0.2972375452518463,
+        -0.9368578195571899,
+        0.1842482089996338
+      ]
+    },
+    {
+      "chamber": "right",
+      "index": 1,
+      "point": [
+        0.7799999713897705,
+        -0.01753997802734375,
+        0.5199999809265137
+      ],
+      "normal": [
+        0.2972382605075836,
+        -0.9368575215339661,
+        0.18424825370311737
+      ]
+    },
+    {
+      "chamber": "rear",
+      "index": 0,
+      "point": [
+        -0.25,
+        0.07185697555541992,
+        0.7699999809265137
+      ],
+      "normal": [
+        -0.16003741323947906,
+        -0.9355365037918091,
+        0.31489601731300354
+      ]
+    }
+  ],
+  "brass_ports": [
+    {
+      "chamber": "front",
+      "point": [
+        0.25999999046325684,
+        -0.8915727138519287,
+        0.17000000178813934
+      ],
+      "normal": [
+        0.03370494022965431,
+        -0.9974917769432068,
+        0.06224390119314194
+      ]
+    },
+    {
+      "chamber": "right",
+      "point": [
+        0.8199999928474426,
+        -0.16442131996154785,
+        0.17000000178813934
+      ],
+      "normal": [
+        0.2353704273700714,
+        -0.9704198241233826,
+        0.05372363701462746
+      ]
+    }
+  ],
+  "frame_centre": [
+    -0.48,
+    -0.43
+  ],
+  "uprights": [
+    {
+      "body_point": [
+        -0.8999999761581421,
+        -0.3816513419151306,
+        0.14000000059604645
+      ],
+      "normal": [
+        -0.1842731088399887,
+        -0.7792248129844666,
+        -0.5990426540374756
+      ],
+      "rod_point": [
+        -0.9,
+        -0.41665134191513065,
+        0.212
+      ],
+      "top": 0.5
+    },
+    {
+      "body_point": [
+        -0.6800000071525574,
+        -0.42262953519821167,
+        0.14000000059604645
+      ],
+      "normal": [
+        -0.10128790140151978,
+        -0.8087277412414551,
+        -0.5793964862823486
+      ],
+      "rod_point": [
+        -0.68,
+        -0.4576295351982117,
+        0.212
+      ],
+      "top": 0.42
+    }
+  ],
+  "assembly_contacts": [
+    {
+      "a": "front",
+      "b": "right",
+      "point": [
+        0.47,
+        -0.1,
+        0.12
+      ]
+    },
+    {
+      "a": "rear",
+      "b": "front",
+      "point": [
+        0.0208,
+        -0.0456,
+        0.12
+      ]
+    },
+    {
+      "a": "wing",
+      "b": "front",
+      "point": [
+        -0.15,
+        -0.23,
+        0.12
+      ]
+    },
+    {
+      "a": "wing",
+      "b": "rear",
+      "point": [
+        -0.3,
+        0.12,
+        0.12
+      ]
+    }
+  ],
+  "physical_dent": {
+    "chamber": "rear",
+    "point": [
+      -0.10000000149011612,
+      0.36000001430511475,
+      0.9884853363037109
+    ],
+    "normal": [
+      0.441270112991333,
+      0.3428462743759155,
+      0.8292992115020752
+    ]
+  },
+  "interpretation": [
+    "Ownsource governs3joinedgreenroundedchambers/leftwing,2darkfrontpairs/2lowerbrassfittings/1reardarkpoint,tallpaleopencapsule/brasscore/stem and2redcopperpedestals/unequalbrasspins.",
+    "Source roundedcontours override flatterconcepttops/feet. Hidden sections/contacts andcell-relative dimensions authored. Uniqueclass255/noTerraequivalent;no inventedPB/ST orownoperating phases."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront. Cell-relative proportions authored;no recovered metric dimensions.",
+  "concept_review": "sources/docs/reconstruction/models/ar23-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

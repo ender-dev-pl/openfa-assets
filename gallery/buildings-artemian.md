@@ -280,8 +280,10 @@ Additional views: [Front](../gallery/media/objects/artemian/ore-depot/front.png)
 
 `openfa:building/legacy/129`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Refining Forge](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar23/front-quarter.png)
+![Refining Forge](../gallery/media/objects/artemian/refining-forge/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar23/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar23/model.glb)
+[Blend](../sources/objects/artemian/refining-forge/model.blend) · [GLB](../sources/objects/artemian/refining-forge/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/refining-forge/front.png) · [Rear quarter](../gallery/media/objects/artemian/refining-forge/rear-quarter.png) · [Open pale frame and two unequal pins](../gallery/media/objects/artemian/refining-forge/open-pale-frame-and-two-unequal-pins-detail.png) · [Three chambers and source fittings](../gallery/media/objects/artemian/refining-forge/three-rounded-chambers-and-source-fittings-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/refining-forge/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/refining-forge/concept-glb-comparison.jpg)
