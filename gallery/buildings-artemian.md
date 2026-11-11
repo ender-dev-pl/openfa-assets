@@ -114,11 +114,13 @@ Additional views: [Front](../gallery/media/objects/artemian/launch-pads/front.pn
 
 `openfa:building/legacy/116`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Deep Probes](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar10/front-quarter.png)
+![Deep Probes](../gallery/media/objects/artemian/deep-probes/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar10/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar10/model.glb)
+[Blend](../sources/objects/artemian/deep-probes/model.blend) · [GLB](../sources/objects/artemian/deep-probes/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/deep-probes/front.png) · [Rear quarter](../gallery/media/objects/artemian/deep-probes/rear-quarter.png) · [Small plinth and two red housings](../gallery/media/objects/artemian/deep-probes/small-plinth-and-two-red-housings-detail.png) · [Open capsule frame and mast](../gallery/media/objects/artemian/deep-probes/open-capsule-frame-and-mast-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/deep-probes/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/deep-probes/concept-glb-comparison.jpg)
 
 ## Gravitic Converter
 

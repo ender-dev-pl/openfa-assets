@@ -23733,7 +23733,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/116",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           977
         ]
@@ -23807,21 +23807,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar10/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/deep-probes/model.blend",
           "present": true,
-          "sha256": "dc99fc3265345a6d067e46fe80861ad67c50d3daa2a74e9a4db25dc22d7cb655",
-          "final_visual_acceptance": "not-established"
+          "sha256": "f675f76f487bb12a93f35b05c5f1c55af347364b0e1998c6e0b6a40e0ac5288a",
+          "media": "gallery/media/objects/artemian/deep-probes",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/deep-probes/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/deep-probes/rear-quarter.png"
+            },
+            {
+              "label": "Small plinth and two red housings",
+              "image": "gallery/media/objects/artemian/deep-probes/small-plinth-and-two-red-housings-detail.png"
+            },
+            {
+              "label": "Open capsule frame and mast",
+              "image": "gallery/media/objects/artemian/deep-probes/open-capsule-frame-and-mast-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/deep-probes/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/deep-probes/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -23851,6 +23878,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 116
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar10/model.blend",
+          "present": true,
+          "sha256": "dc99fc3265345a6d067e46fe80861ad67c50d3daa2a74e9a4db25dc22d7cb655",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/deep-probes/model.blend",
+        "sha256": "f675f76f487bb12a93f35b05c5f1c55af347364b0e1998c6e0b6a40e0ac5288a",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/deep-probes",
+          "verifier": "sources/tools/blender/verify_artemian_deep_probes.py",
+          "files": {
+            "sources/objects/artemian/deep-probes/model.blend": "f675f76f487bb12a93f35b05c5f1c55af347364b0e1998c6e0b6a40e0ac5288a",
+            "sources/objects/artemian/deep-probes/model.glb": "008f00f7ae9bafcdf51ad8c0e2859804f90717d374e79fc014adaca2ed6f5b6d",
+            "sources/objects/artemian/deep-probes/model.json": "df03747f0ad1df18f8d5767c2c8c79538c297c2508d88b03858cee6562cfdd5e",
+            "sources/objects/artemian/deep-probes/README.md": "8a8d04f53a2ce1067a216814181b5ff289b6d467f9aecb36bc9ca1483c65fa5b",
+            "sources/objects/artemian/deep-probes/runtime-review.json": "64785671e92ea45929ebc5f4459d16bf6e1285db51101ffbbb848ad8d1d34723",
+            "sources/objects/artemian/deep-probes/visual-review.json": "1a23348b569eda5a8b2324af5ffd37293a8195316414f0e167b9ce3fd810963b",
+            "gallery/media/objects/artemian/deep-probes/concept-glb-comparison.jpg": "ce1aa3dd055e9874a1df019a67beb68701b2719077ba0dafcfad450bb13e1beb",
+            "gallery/media/objects/artemian/deep-probes/front-quarter.png": "fbc15321e951b8e9ee5014668540b271c0f85c31a300f8725ecfbac31179195b",
+            "gallery/media/objects/artemian/deep-probes/front.png": "6a1f33718a7347ef1167f49ad56e9fd9b75f74ba168cbe59856df8b85bb7bf80",
+            "gallery/media/objects/artemian/deep-probes/imported-front-quarter.png": "fbc15321e951b8e9ee5014668540b271c0f85c31a300f8725ecfbac31179195b",
+            "gallery/media/objects/artemian/deep-probes/imported-front.png": "6a1f33718a7347ef1167f49ad56e9fd9b75f74ba168cbe59856df8b85bb7bf80",
+            "gallery/media/objects/artemian/deep-probes/imported-rear-quarter.png": "0f8432dd9395db28236ac8b4ee8147e4d94789069decc8af2afeca0af9621c1c",
+            "gallery/media/objects/artemian/deep-probes/native-front-quarter.png": "e9be1593458648c343aef0ef809ba14da9f97ae87d0a6d3e26acf162c5785dd8",
+            "gallery/media/objects/artemian/deep-probes/native-front.png": "a2838e92b2e8af6c57a8ed536a69ae4ec1f0e5b97fd6cd65168af4494434648a",
+            "gallery/media/objects/artemian/deep-probes/native-rear-quarter.png": "d3dd2f772a41a1bd686c8abe49498f1ebf9e25ba4a3a792f35fd487e7ad2bfa3",
+            "gallery/media/objects/artemian/deep-probes/open-capsule-frame-and-mast-detail.png": "b899ef4e3acc02a0fd8ad93904133f45fcd57727efea00effed51bb98ef3907b",
+            "gallery/media/objects/artemian/deep-probes/rear-quarter.png": "0f8432dd9395db28236ac8b4ee8147e4d94789069decc8af2afeca0af9621c1c",
+            "gallery/media/objects/artemian/deep-probes/small-plinth-and-two-red-housings-detail.png": "4bc767b3cae529951980d1758fd1de5418bf6a76d967aea1b1ad45c4272f25d7",
+            "gallery/media/objects/artemian/deep-probes/technical-wireframe.png": "02a632aad71aa360fdc4dcd0bc75741bbf2e97bc2e3438caad2aff4a1806e0fd",
+            "sources/materials/artemian/deep-probes/amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+            "sources/materials/artemian/deep-probes/exposed-alloy-edge-colour.png": "0412988c4de2a0ed8eef9f256229026aa24da13b6db23ca9702a33a664455f72",
+            "sources/materials/artemian/deep-probes/muted-green-alloy-colour.png": "b714ab656d8dd0e6a529096848876af0713de1b3f7e2e60dcc604ac40b5ec61b",
+            "sources/materials/artemian/deep-probes/occlusion-roughness-metallic.png": "c299f75c1115e6f84b6412181ce59c6a3cb5257b1b1af4c63af60f82d01e7ec4",
+            "sources/materials/artemian/deep-probes/red-sensor-housing-colour.png": "4b691231b7553ee3a6992551ee62355ed73e1518f3f0bb26c54f5866eb72de00",
+            "sources/materials/artemian/deep-probes/used-metal-normal.png": "52af3a5b84e9c1ac09876266cb544f98e2438f684a15f05cd95269de4f33a4a0",
+            "sources/tools/blender/remaster_artemian_deep_probes.py": "d3d30152054c420efefabf120fbc7de7c13415c131159bb692fccba0cdfe5b97",
+            "sources/tools/blender/verify_artemian_deep_probes.py": "eda540117b8ef595e92f3e0bf97cbe1ae2d060f7345b960999e03cff2b63c1ae",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar10-concept-review.json": "0e721e3248134296870a8da67a7b03717030cb0729206669e92ef0446171d202",
+            "sources/docs/reconstruction/models/ar10-concept-prompt-1.txt": "549b69a4bc9d2ff387bd6693bb44f8bbe90d8921c06ec5e091002c945aa48277",
+            "gallery/media/concepts/artemian/ar10-review-1.png": "957dabb85f8ca27f417392e136be08e83139d516921b566ed00d7f3675ea6996"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/deep-probes/visual-review.json",
+          "sha256": "1a23348b569eda5a8b2324af5ffd37293a8195316414f0e167b9ce3fd810963b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/deep-probes/visual-review.json",
+          "sha256": "1a23348b569eda5a8b2324af5ffd37293a8195316414f0e167b9ce3fd810963b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/deep-probes/visual-review.json",
+          "sha256": "1a23348b569eda5a8b2324af5ffd37293a8195316414f0e167b9ce3fd810963b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/deep-probes/visual-review.json",
+          "sha256": "1a23348b569eda5a8b2324af5ffd37293a8195316414f0e167b9ce3fd810963b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/deep-probes/runtime-review.json",
+          "sha256": "64785671e92ea45929ebc5f4459d16bf6e1285db51101ffbbb848ad8d1d34723",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

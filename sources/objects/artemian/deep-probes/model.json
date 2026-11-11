@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/116",
+  "key": "AR10",
+  "name": "Deep Probes",
+  "culture": "artemian",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 16,
+  "construction_updates": 34,
+  "triangles": 10648,
+  "triangle_budget": 30000,
+  "mesh_nodes": 8,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_artemian_deep_probes.py",
+  "author_sha256": "d3d30152054c420efefabf120fbc7de7c13415c131159bb692fccba0cdfe5b97",
+  "binaries": {
+    "blend": "f675f76f487bb12a93f35b05c5f1c55af347364b0e1998c6e0b6a40e0ac5288a",
+    "glb": "008f00f7ae9bafcdf51ad8c0e2859804f90717d374e79fc014adaca2ed6f5b6d"
+  },
+  "textures": {
+    "amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+    "exposed-alloy-edge-colour.png": "0412988c4de2a0ed8eef9f256229026aa24da13b6db23ca9702a33a664455f72",
+    "muted-green-alloy-colour.png": "b714ab656d8dd0e6a529096848876af0713de1b3f7e2e60dcc604ac40b5ec61b",
+    "occlusion-roughness-metallic.png": "c299f75c1115e6f84b6412181ce59c6a3cb5257b1b1af4c63af60f82d01e7ec4",
+    "red-sensor-housing-colour.png": "4b691231b7553ee3a6992551ee62355ed73e1518f3f0bb26c54f5866eb72de00",
+    "used-metal-normal.png": "52af3a5b84e9c1ac09876266cb544f98e2438f684a15f05cd95269de4f33a4a0"
+  },
+  "interpretation": [
+    "Small low green plinth,slender teal mast with open brass capsule frame,one short brass rod and two red housings follow actual source and reviewed concept.",
+    "Hidden sensor engineering,frame/housing sections and metric dimensions remain authored or unknown. Generic PB16 turntable and ST12 different housing do not establish AR10 operation."
+  ],
+  "scale_contract": "2x2 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar10-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}
