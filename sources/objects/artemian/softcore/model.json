@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/107",
+  "key": "AR01",
+  "name": "SoftCore",
+  "culture": "artemian",
+  "footprint": [
+    4,
+    4
+  ],
+  "definition_class": 20,
+  "construction_updates": 40,
+  "triangles": 9310,
+  "triangle_budget": 30000,
+  "mesh_nodes": 9,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_artemian_softcore.py",
+  "author_sha256": "09cf11acca89c76738dd495ce7696abbdf55eb36213290293b06365d30a2904d",
+  "binaries": {
+    "blend": "08c66228172760f931ed13acb8b3127c225151c0af3949a99ac54d3a6bb390e4",
+    "glb": "7c9fe78fd64a27c51375ae37bb95565664dce4f1234b2a05b8ecd33d789e047d"
+  },
+  "textures": {
+    "amber-fitting-colour.png": "99716edd20534fcbab7e211a1c751dcbd92d59168b8f308a280d8b502f16796c",
+    "blue-grey-alloy-colour.png": "e9192e89ee4958355e880c708b6501a3a06da7d813c95b4dafda85d06c05bd03",
+    "exposed-alloy-edge-colour.png": "1b8a6f1eea93157d82679b43b9739a567aaa77a09359ff25544c6b4757c2c05f",
+    "occlusion-roughness-metallic.png": "124b130a761b67d7e4710dce48732cace8ec5e2aa5a63165518716a1c9de3680",
+    "red-nose-inset-colour.png": "92d515fe875b71ba3ffeb6d1a6733d1591e1566f45f1a2478b773fc9029d6c63",
+    "used-metal-normal.png": "d092683a0dc3e2dc5fd65ab5b9db52cae143e319d74c9b699295c1c0c8c91e3b"
+  },
+  "interpretation": [
+    "Low elongated stepped metal shell,two unequal pale amber-capped front fittings,tiny red/dark nose details and two dark roof features follow actual source and reviewed concept.",
+    "Sparse front-cap seam,metal wear,hidden sections and engineering interpreted. No operation/opening clip inferred from catalogue reveal."
+  ],
+  "scale_contract": "4x4 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar01-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/107",
+  "binaries": {
+    "blend": "08c66228172760f931ed13acb8b3127c225151c0af3949a99ac54d3a6bb390e4",
+    "glb": "7c9fe78fd64a27c51375ae37bb95565664dce4f1234b2a05b8ecd33d789e047d"
+  },
+  "runtime_report_sha256": "0e5e849ccf4c816db3c194b53d267c476f9d315aaeb9a42f1deeac4109aa3bf1",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.007228330194982689,
+      "margin": 93
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0023254962279352525,
+      "margin": 46
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.009634704905961786,
+      "margin": 102
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar01-review-1.png",
+      "sha256": "9799ff6b80fea304fe0afff510128873f45efd725208d533431659b55d507024",
+      "prompt": "sources/docs/reconstruction/models/ar01-concept-prompt-1.txt",
+      "feedback": "Selected low elongated metal carapace,broad nested shoulders,two tiny roof details,front amber-capped pale fittings and sparse red/dark nose points. Source controls proportions/size of fittings;fine seams,wear and hidden construction are authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "509d1903bbb9e6713d8f373f098beca3cee79793d53945c748ad689a7f3394ae",
+        "glb": "849eca2b2896cbfdc2fa9864d33995d68ffd8fab0bd9f1298452f01f679852e9"
+      },
+      "runtime_report_sha256": "b2612147b4ceca9e3899016ac59691e539147524cc9eeb57eab6e8994e942446",
+      "finding": "Actual first full native/imported render has appropriate low elongated shell and sparse fittings,but the per-vertex smooth-front interpolation creates irregular folded-looking transition edges around the cap seam.",
+      "action": "Remove nonlinear per-vertex front radius interpolation;retain orderly continuous nested oval shell shoulders and an actual shallow front seam. Original tier continuity takes priority over the concept cap interpretation.",
+      "status": "revision_required"
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "c88aeac03b1eb0c22c5ac0c1685718efdd934566bd9cfa2dfc1cd24679c7a8a8",
+        "glb": "f37cd5d6478cf5d0786941ffd8c363110ef5434318c02dc5a9123b96bbe48298"
+      },
+      "runtime_report_sha256": "e006a9f103d36a6408b58e52a2c0a4f98b7c79aa8e0de6fbf840f105386bddcc",
+      "finding": "Actual whole original/concept/GLB comparison and fitting/shell details retain source morphology without folded transitions. Surface is too pristine relative to required used equipment and selected concept.",
+      "action": "Keep source-led shell and sparse fitting geometry. Add portable deterministic fine line scratches/tarnish variation and shallow physical roof dents with finer surface sampling;avoid adding armour panels or unsupported machinery.",
+      "status": "revision_required"
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "08c66228172760f931ed13acb8b3127c225151c0af3949a99ac54d3a6bb390e4",
+        "glb": "7c9fe78fd64a27c51375ae37bb95565664dce4f1234b2a05b8ecd33d789e047d"
+      },
+      "runtime_report_sha256": "088e792b4d9cfaf16b9cf918edf445e83affe1ae2662e512ad1565a6294303a2",
+      "finding": "Used metal scratches/tarnish and real shallow roof dents are present;all nine closed native/imported meshes and six texture maps agree. Current primary view projects the long axis too steeply compared with actual legacy reference.",
+      "action": "Keep model unchanged. Re-render actual native/imported front-quarter at equal X/Y azimuth and source-like elevation for a better corresponding-angle comparison.",
+      "status": "view_revision_required"
+    },
+    {
+      "pass_number": 4,
+      "binaries": {
+        "blend": "08c66228172760f931ed13acb8b3127c225151c0af3949a99ac54d3a6bb390e4",
+        "glb": "7c9fe78fd64a27c51375ae37bb95565664dce4f1234b2a05b8ecd33d789e047d"
+      },
+      "runtime_report_sha256": "0e5e849ccf4c816db3c194b53d267c476f9d315aaeb9a42f1deeac4109aa3bf1",
+      "finding": "Final actual whole original/concept/imported GLB comparison uses a corresponding source-like projection and retains the low elongated metal CPU shell,three broad physical shoulders,unequal amber-capped front fittings,tiny nose details and two small roof features. Fitting/shell/rear actual renders reviewed. Portable fine scratches/tarnish and physical shallow roof dents keep used surfaces readable without extra panels. Closed positive native/import meshes and all texture pixels agree.",
+      "action": "Accept agent source/concept/native/imported GLB review. Exact shell sections and fitting engineering remain interpreted;final user artistic/client state/scale/shader and Android performance gates remain separate.",
+      "status": "agent_review_accepted"
+    }
+  ],
+  "final_review": "Actual source/concept/independent GLB comparison retains a low elongated blue-grey metal carapace,three broad nested physical shoulders,two unequal pale amber-capped front-right fittings,tiny red/dark nose points and two tiny roof features. Actual first GLB feedback rejected folded front transition geometry;regular continuous shell tiers replace the nonlinear cap interpolation. A second actual comparison retained the morphology but called for stronger fine metal wear and shallow roof dents. Real shallow cap seam,small physical chips and portable used-metal maps retained. Native/import geometry and decoded texture pixels agree.",
+  "limitations": [
+    "Exact shell cross-sections,hidden construction and engineering of small fittings remain authored or unknown.",
+    "No direct CPU research subject or source operating overlays establish an opening/operation clip. Catalogue sequence is information reveal.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

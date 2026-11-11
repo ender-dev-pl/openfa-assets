@@ -6,11 +6,13 @@
 
 `openfa:building/legacy/107`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![SoftCore](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar01/front-quarter.png)
+![SoftCore](../gallery/media/objects/artemian/softcore/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar01/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar01/model.glb)
+[Blend](../sources/objects/artemian/softcore/model.blend) · [GLB](../sources/objects/artemian/softcore/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/softcore/front.png) · [Rear quarter](../gallery/media/objects/artemian/softcore/rear-quarter.png) · [Front CPU fittings](../gallery/media/objects/artemian/softcore/front-fittings-detail.png) · [Layered metal shell](../gallery/media/objects/artemian/softcore/layered-shell-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/softcore/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/softcore/concept-glb-comparison.jpg)
 
 ## Environmental Stabiliser
 
