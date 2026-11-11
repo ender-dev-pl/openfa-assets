@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/099",
+  "binaries": {
+    "blend": "f9d0c407feb6e8083cfcfa26ad0ba3ef25800af6abf3e453aeb6e18044cbb302",
+    "glb": "63253e77b227ac8264611564603dafaa643d0a32d8acd429fef0f9a2ba16c7d8"
+  },
+  "runtime_report_sha256": "ce5b22706a6a9b8b51764b593377cedbeb465358ead417f3ba2a6cd43ef30a5e",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.003289774284931006,
+      "margin": 77
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0034680021792883784,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0024602927436935536,
+      "margin": 84
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk14-review-1.png",
+      "sha256": "b381f8bda2ed6cca786e77c34e8c81799977806f4e7984f500cb465a2ad8906b",
+      "prompt": "sources/docs/reconstruction/models/mk14-concept-prompt-1.txt",
+      "feedback": "Selected: broad low mineral mound, darker left cleft, pale front/right knuckles and a compact reddish copper crown with a shallow central depression. Fine ore facets, exact depression profile and hidden sections remain authored; no mechanical/charging operation added."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "stage": "Complete actual native/import pass and original/concept/GLB comparison.",
+      "discrepancies": [
+        "Voxel-rounded body reads as smooth blobs instead of fractured ore knuckles.",
+        "Uniform glossy elliptical cleft looks like an added port, not a natural recess.",
+        "Copper cap has a puffy, pinched centre rather than a flatter shallow depression."
+      ],
+      "corrections": [
+        "Union faceted ore lobes while preserving larger natural planes, subtle bevels and pale exposed regions.",
+        "Use a shallower irregular cut and rough dark-green mineral interior.",
+        "Flatten cap shoulders/floor, remove displacement at central depression, add gentle authored copper micro-normal."
+      ]
+    },
+    {
+      "stage": "Second complete native/import pass after topology repair.",
+      "finding": "Large low-resolution lobe planes, flat-face normal weighting and regional per-polygon material changes read as low-poly triangles. Cap is still too bulbous.",
+      "correction": "Use denser ore lobe geometry and modest fine relief, mostly smooth normals, reserve pale material for actual wear cuts, flatten copper shoulder profile. Keep strict native/import topology and image checks."
+    },
+    {
+      "stage": "Third complete native/import pass.",
+      "finding": "Polar UV convergence makes a star-like copper highlight/colour pattern despite a flat depression floor. Ore albedo/roughness variation is too quiet for the worn metallic source/concept.",
+      "correction": "Planar copper UVs remove the polar singularity, keep true depression geometry. Stronger continuous pale wear regions and roughness variation in the authored ore map, no per-polygon panels."
+    }
+  ],
+  "final_review": "Actual independent GLB retains the low connected ore mound, dark left cleft, paler front/right knuckles and compact rear-left reddish copper crown. The shallow crown depression is geometry and its bottom is seated in the mineral body. Native/import surfaces, closed meshes and portable texture pixels are compared; no unsupported operating clip is introduced.",
+  "limitations": [
+    "Exact ore facets, hidden sections, cap depression and mental-energy engineering remain authored or unknown.",
+    "Generic ST11 high-energy stores are research function context, not Mikotaj geometry or a charging operation.",
+    "Final user artistic acceptance, client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

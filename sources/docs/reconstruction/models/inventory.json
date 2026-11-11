@@ -19536,7 +19536,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/099",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           960
         ]
@@ -19610,21 +19610,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk14/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mikotaj/capacitors/model.blend",
           "present": true,
-          "sha256": "76c4f3eb9e95c5544bb3cdc26cca7287d9515fff7d99b26111b780e4a93c3b67",
-          "final_visual_acceptance": "not-established"
+          "sha256": "f9d0c407feb6e8083cfcfa26ad0ba3ef25800af6abf3e453aeb6e18044cbb302",
+          "media": "gallery/media/objects/mikotaj/capacitors",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mikotaj/capacitors/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mikotaj/capacitors/rear-quarter.png"
+            },
+            {
+              "label": "Copper crown detail",
+              "image": "gallery/media/objects/mikotaj/capacitors/copper-crown-detail.png"
+            },
+            {
+              "label": "Mineral cleft detail",
+              "image": "gallery/media/objects/mikotaj/capacitors/mineral-cleft-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mikotaj/capacitors/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mikotaj/capacitors/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -19654,6 +19681,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 99
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk14/model.blend",
+          "present": true,
+          "sha256": "76c4f3eb9e95c5544bb3cdc26cca7287d9515fff7d99b26111b780e4a93c3b67",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mikotaj/capacitors/model.blend",
+        "sha256": "f9d0c407feb6e8083cfcfa26ad0ba3ef25800af6abf3e453aeb6e18044cbb302",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mikotaj/capacitors",
+          "verifier": "sources/tools/blender/verify_mikotaj_capacitors.py",
+          "files": {
+            "sources/objects/mikotaj/capacitors/model.blend": "f9d0c407feb6e8083cfcfa26ad0ba3ef25800af6abf3e453aeb6e18044cbb302",
+            "sources/objects/mikotaj/capacitors/model.glb": "63253e77b227ac8264611564603dafaa643d0a32d8acd429fef0f9a2ba16c7d8",
+            "sources/objects/mikotaj/capacitors/model.json": "2a2f2fd1b9f2d8f5748b08c8d21da431cd429a4506e90419d949af25d63bc362",
+            "sources/objects/mikotaj/capacitors/README.md": "a1574901784c27558876914aba150c1fc3e8d981727cc10213d41fbd0310f3b8",
+            "sources/objects/mikotaj/capacitors/runtime-review.json": "ce5b22706a6a9b8b51764b593377cedbeb465358ead417f3ba2a6cd43ef30a5e",
+            "sources/objects/mikotaj/capacitors/visual-review.json": "0be614eea98b16bd45bde6cf345fcf651efe93745e2fc589187dce83dae4dda6",
+            "gallery/media/objects/mikotaj/capacitors/concept-glb-comparison.jpg": "ce7f0fb956be5e26922c8fc719087adc08e1e078dea7f683b68a23392c8651b0",
+            "gallery/media/objects/mikotaj/capacitors/copper-crown-detail.png": "341280b2c0f2d3da7760e670716f82aa4266b93140abb3b3abd99aaaa5101e44",
+            "gallery/media/objects/mikotaj/capacitors/front-quarter.png": "9a3136141d8265ca0253f8c3c41ef27b012d6feb1a15e31eaded613c0cde6f84",
+            "gallery/media/objects/mikotaj/capacitors/front.png": "67705a8ed759144751335ed484e6caf8ad67e5c98ec8a2fd917df7e3249b7b52",
+            "gallery/media/objects/mikotaj/capacitors/imported-front-quarter.png": "9a3136141d8265ca0253f8c3c41ef27b012d6feb1a15e31eaded613c0cde6f84",
+            "gallery/media/objects/mikotaj/capacitors/imported-front.png": "67705a8ed759144751335ed484e6caf8ad67e5c98ec8a2fd917df7e3249b7b52",
+            "gallery/media/objects/mikotaj/capacitors/imported-rear-quarter.png": "b08035863051d617a89cc4e8b8142040b2ee3a31b39d14a1d9186de7913df141",
+            "gallery/media/objects/mikotaj/capacitors/mineral-cleft-detail.png": "f2e508449b9e4cf5377c44c02d13761b3ae08099bf781657aaa8a85fa019c47d",
+            "gallery/media/objects/mikotaj/capacitors/native-front-quarter.png": "9c79e09e434e594cedc2623f517210901e44f5fb9f1a8ca72d4c8b5081802a8a",
+            "gallery/media/objects/mikotaj/capacitors/native-front.png": "4ef0de3a70ca555d9078b04484ab94e6f6854b6fae535e7e7a9d417fab33cc09",
+            "gallery/media/objects/mikotaj/capacitors/native-rear-quarter.png": "5eebc885f582f5e2796678ff2c5a5095b4b53c40a3a2632883a86b6245d45e74",
+            "gallery/media/objects/mikotaj/capacitors/rear-quarter.png": "b08035863051d617a89cc4e8b8142040b2ee3a31b39d14a1d9186de7913df141",
+            "gallery/media/objects/mikotaj/capacitors/technical-wireframe.png": "eb360404445a90abab11a925d78737e64cba32558c9fabcb36d1d72f04edd30f",
+            "sources/materials/mikotaj/capacitors/copper-cap-base-colour.png": "e17049f9faa8e6e3e2ab5080501cf0accac700e20e2ad4c7c63f92e83bf82fd8",
+            "sources/materials/mikotaj/capacitors/copper-use-normal.png": "451325799f4fcb61dea839f72718d67175672b5a5e13c9d1fc964b818db0c731",
+            "sources/materials/mikotaj/capacitors/exposed-ridge-base-colour.png": "874e144abbdade06b65f694b5c84f6125006aafa7879d27b3049318338222809",
+            "sources/materials/mikotaj/capacitors/mineral-base-colour.png": "38884a8161af53e6730fb1f038daf56db5c482d94752ac1e795dbb79795e93e5",
+            "sources/materials/mikotaj/capacitors/mineral-fracture-normal.png": "cb7710dfeaf173ba598f1a1fddcd1eac38154f0825dda2b619b26f0a5918c74c",
+            "sources/materials/mikotaj/capacitors/occlusion-roughness-metallic.png": "9afd9a38a8286eebd086459a64a7349760a496c15418859536ec7b1a49743be6",
+            "sources/tools/blender/remaster_mikotaj_capacitors.py": "2d08f509b2fbf2cd333ac2f7efdecf86ee4b8d40a584464e2c121bf3a0051b34",
+            "sources/tools/blender/verify_mikotaj_capacitors.py": "4009b49691e54354685f9b073dbc70692d9100c27fa3fad88abb09ee13e7ec5e",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mk14-concept-review.json": "d525e27a1cdd25368c134b000a3acf86286b7082ce09add3cd0f204eb1d891d0",
+            "sources/docs/reconstruction/models/mk14-concept-prompt-1.txt": "d4f42135fd0e8e36bdc513044f68646d37b0944211672a84b525f24d7918bff7",
+            "gallery/media/concepts/mikotaj/mk14-review-1.png": "b381f8bda2ed6cca786e77c34e8c81799977806f4e7984f500cb465a2ad8906b"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mikotaj/capacitors/visual-review.json",
+          "sha256": "0be614eea98b16bd45bde6cf345fcf651efe93745e2fc589187dce83dae4dda6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mikotaj/capacitors/visual-review.json",
+          "sha256": "0be614eea98b16bd45bde6cf345fcf651efe93745e2fc589187dce83dae4dda6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mikotaj/capacitors/visual-review.json",
+          "sha256": "0be614eea98b16bd45bde6cf345fcf651efe93745e2fc589187dce83dae4dda6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mikotaj/capacitors/visual-review.json",
+          "sha256": "0be614eea98b16bd45bde6cf345fcf651efe93745e2fc589187dce83dae4dda6",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mikotaj/capacitors/runtime-review.json",
+          "sha256": "ce5b22706a6a9b8b51764b593377cedbeb465358ead417f3ba2a6cd43ef30a5e",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
