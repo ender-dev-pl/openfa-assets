@@ -22999,7 +22999,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/113",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           974
         ]
@@ -23073,21 +23073,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar07/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/house-of-the-axe/model.blend",
           "present": true,
-          "sha256": "0d82090110f6ec3f37d4899288912cfb8163ad476eb8249271c8e44aa27faf60",
-          "final_visual_acceptance": "not-established"
+          "sha256": "b811977c2217eb2f00e34fd065141a7cccc5aa79063b371a2a6865fec20bc6dc",
+          "media": "gallery/media/objects/artemian/house-of-the-axe",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/house-of-the-axe/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/house-of-the-axe/rear-quarter.png"
+            },
+            {
+              "label": "Front uprights and sleeves",
+              "image": "gallery/media/objects/artemian/house-of-the-axe/front-uprights-and-sleeves-detail.png"
+            },
+            {
+              "label": "Roof lobe and three points",
+              "image": "gallery/media/objects/artemian/house-of-the-axe/roof-lobe-and-three-insets-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/house-of-the-axe/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/house-of-the-axe/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -23117,6 +23144,86 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 113
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar07/model.blend",
+          "present": true,
+          "sha256": "0d82090110f6ec3f37d4899288912cfb8163ad476eb8249271c8e44aa27faf60",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/house-of-the-axe/model.blend",
+        "sha256": "b811977c2217eb2f00e34fd065141a7cccc5aa79063b371a2a6865fec20bc6dc",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/house-of-the-axe",
+          "verifier": "sources/tools/blender/verify_artemian_house_of_the_axe.py",
+          "files": {
+            "sources/objects/artemian/house-of-the-axe/model.blend": "b811977c2217eb2f00e34fd065141a7cccc5aa79063b371a2a6865fec20bc6dc",
+            "sources/objects/artemian/house-of-the-axe/model.glb": "476508564fa951a4a50068e10dc82cd42938e15ef0980e4d6d86079c3d75d18e",
+            "sources/objects/artemian/house-of-the-axe/model.json": "20e1331c039cd9c1a19217b0c74a433ee7008d3d6d453c3cb4b38e4ca51082c4",
+            "sources/objects/artemian/house-of-the-axe/README.md": "5e11b4461ffb0c01647898926c57e5f77f84eff0afc50a1f60f008d2d9fa0b0b",
+            "sources/objects/artemian/house-of-the-axe/runtime-review.json": "9a09078cda9462ada4f9d1d00be8bda459927542cee836a6d7cf668084e48d23",
+            "sources/objects/artemian/house-of-the-axe/visual-review.json": "1dc0118ec21200d270c559506d4e625d18c4a81a49e43c875a798db58be8b32a",
+            "gallery/media/objects/artemian/house-of-the-axe/concept-glb-comparison.jpg": "88cf847e5458876a8504a769b9ccbc4a34add923d2b74c7d54c5733e0f08c157",
+            "gallery/media/objects/artemian/house-of-the-axe/front-quarter.png": "2e6c7fa70120de8de5db04e0dddab97e81ff3bd65222b884cd3b31a22a77d566",
+            "gallery/media/objects/artemian/house-of-the-axe/front-uprights-and-sleeves-detail.png": "0c672885b16cd266c5082fa99155b6899b933fd0890891675b85ddee28cc4106",
+            "gallery/media/objects/artemian/house-of-the-axe/front.png": "be21f3079fe90a00d99e12f43334292177b2db4365eb5fad396fd93db89f1d18",
+            "gallery/media/objects/artemian/house-of-the-axe/imported-front-quarter.png": "2e6c7fa70120de8de5db04e0dddab97e81ff3bd65222b884cd3b31a22a77d566",
+            "gallery/media/objects/artemian/house-of-the-axe/imported-front.png": "be21f3079fe90a00d99e12f43334292177b2db4365eb5fad396fd93db89f1d18",
+            "gallery/media/objects/artemian/house-of-the-axe/imported-rear-quarter.png": "f9864e6bf8ba363765e2f76bf2d8dbc29fec0731612a0e7def5bd70c45310777",
+            "gallery/media/objects/artemian/house-of-the-axe/native-front-quarter.png": "6ee1d890c5b9a8bd04b1bed6d4e818c537d976e7f5fee9e153f8ee6b6cf491ba",
+            "gallery/media/objects/artemian/house-of-the-axe/native-front.png": "9ad6e6c329a3102ccf5414177d350ec95af18ee182596abecc3c989d9d6348e7",
+            "gallery/media/objects/artemian/house-of-the-axe/native-rear-quarter.png": "ee6ad0ad87633452b4ff7dde7e01a9da8fa95a8839671f6da216acc9d1ef20ce",
+            "gallery/media/objects/artemian/house-of-the-axe/rear-quarter.png": "f9864e6bf8ba363765e2f76bf2d8dbc29fec0731612a0e7def5bd70c45310777",
+            "gallery/media/objects/artemian/house-of-the-axe/roof-lobe-and-three-insets-detail.png": "b94bd33767617b622dc451f13cc1721d5d77564b7c279a7bfac99041e4d9bed3",
+            "gallery/media/objects/artemian/house-of-the-axe/technical-wireframe.png": "24c16d3571de7b8f7cdd9c0cc40a539a33154935c26917e16554714c84543527",
+            "sources/materials/artemian/house-of-the-axe/amber-fitting-colour.png": "710f0935f911358ca59e9758565b7048fee5366928b92906ca0949dfc686137e",
+            "sources/materials/artemian/house-of-the-axe/exposed-alloy-edge-colour.png": "c0e3646cbc32d81d533727b60797584782315519facb8cae53ca26b2f3a0b787",
+            "sources/materials/artemian/house-of-the-axe/occlusion-roughness-metallic.png": "4617cccb9082c83e531717573b7ca8e3e97ae4206053f3ef8a7c57f3f354e200",
+            "sources/materials/artemian/house-of-the-axe/slate-blue-alloy-colour.png": "1a99f928fe0860861f03e247c2c3389548006c885c1319866767717ecd29748e",
+            "sources/materials/artemian/house-of-the-axe/used-metal-normal.png": "58d41b87b0af2dcb057039c7f25426eda98e5a21935298f3ac6e6c1c58e8c1b3",
+            "sources/tools/blender/remaster_artemian_house_of_the_axe.py": "9d838d5f5136109c8a325d01e8ec1a9982e56f3404c22e5a14a4792dc6cf3083",
+            "sources/tools/blender/verify_artemian_house_of_the_axe.py": "605a2c26990bb4c6234561d1cafc1503469845bcfc94ecd1863bb09fc282a8bb",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar07-concept-review.json": "4a0ab5bdef140008c41d524590c5de96a6eea7e71a3282e1a4a1596c8dd143c9",
+            "sources/docs/reconstruction/models/ar07-concept-prompt-1.txt": "7d87c4e6ff39564eaa66316a1eff2f0e1aaaed8987e811c2c610fc97367f1e76",
+            "gallery/media/concepts/artemian/ar07-review-1.png": "c3d6e1a58ab78bc0d7a048752bac79c26c901b9a9315aeb6f75d84122c6f0301"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/house-of-the-axe/visual-review.json",
+          "sha256": "1dc0118ec21200d270c559506d4e625d18c4a81a49e43c875a798db58be8b32a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/house-of-the-axe/visual-review.json",
+          "sha256": "1dc0118ec21200d270c559506d4e625d18c4a81a49e43c875a798db58be8b32a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/house-of-the-axe/visual-review.json",
+          "sha256": "1dc0118ec21200d270c559506d4e625d18c4a81a49e43c875a798db58be8b32a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/house-of-the-axe/visual-review.json",
+          "sha256": "1dc0118ec21200d270c559506d4e625d18c4a81a49e43c875a798db58be8b32a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/house-of-the-axe/runtime-review.json",
+          "sha256": "9a09078cda9462ada4f9d1d00be8bda459927542cee836a6d7cf668084e48d23",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

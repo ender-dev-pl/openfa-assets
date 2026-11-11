@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/113",
+  "binaries": {
+    "blend": "b811977c2217eb2f00e34fd065141a7cccc5aa79063b371a2a6865fec20bc6dc",
+    "glb": "476508564fa951a4a50068e10dc82cd42938e15ef0980e4d6d86079c3d75d18e"
+  },
+  "runtime_report_sha256": "9a09078cda9462ada4f9d1d00be8bda459927542cee836a6d7cf668084e48d23",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00026200219582792696,
+      "margin": 78
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00020519386716569816,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00019151488272233365,
+      "margin": 80
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar07-review-1.png",
+      "sha256": "c3d6e1a58ab78bc0d7a048752bac79c26c901b9a9315aeb6f75d84122c6f0301",
+      "prompt": "sources/docs/reconstruction/models/ar07-concept-prompt-1.txt",
+      "feedback": "Selected low layered slate-blue/gunmetal wedge carapace,low rear-right pale lobe,copper roof inset,two small dark points,tall silver upright and shorter copper upright in wider base sleeves. Source controls colour/counts/arrangement;sections and hidden ritual/civic engineering remain interpreted."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "00bfdece3c7b149c7e6b3fca61e5c05c6fa1b244997f5f95812db1878a0c7dfd",
+        "glb": "c76d04ace09aee2645f8e048d07f522bbf92cb8ae60e15cd3ba54c392cfb5cad"
+      },
+      "runtime_report_sha256": "34a14845269439eccd8207791e12d01c8ec4453f82ed54b4fc4e6a0186c39f98",
+      "status": "revision_required",
+      "finding": "Actual first front-quarter review retains slate tiers/lobe/points,but silver upright reads too needle-thin relative to original and concept. Lower shell side also shows angular triangular highlight transitions.",
+      "action": "Increase silver stem radius.024 to.040 and copper.026 to.034;refine radial shell sampling96 to128 and rerun actual native/import geometry/render feedback. Keep all original attachment/source-shape guards."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "c2dd3e5631caf75e2059fccd62fb7ee2d8a7a62aec61eb1ed0f841cff88e8722",
+        "glb": "6ae39ce65c7eda60d1377751f0c96d66ae37739134704be921a5ad9bc2ee57cc"
+      },
+      "runtime_report_sha256": "1bde5c8894cb010cb38ddcfdf6ea830ffa8a816b50373ad6ed730f6f280f8190",
+      "status": "revision_required",
+      "finding": "Thicker source stems read correctly;more radial shell segments alone do not remove lower-wall triangular reflection transitions. Actual GLB inspection finds exposed chip material only55tiny triangles,totalarea0.000311 (no broad material bleed),and no flat normals among2816lowerwall triangles. Current planar projected body UVs are poorly conditioned on near-vertical shell walls.",
+      "action": "Replace planar body UV projection with continuous angle/height mapping around the authored shell and unwrap the single angular seam. Keep exact geometry,wear maps and source/contact tests. Repeat actual native/import runtime/render review;do not mark a shading fix from intent alone."
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "b811977c2217eb2f00e34fd065141a7cccc5aa79063b371a2a6865fec20bc6dc",
+        "glb": "476508564fa951a4a50068e10dc82cd42938e15ef0980e4d6d86079c3d75d18e"
+      },
+      "runtime_report_sha256": "9a09078cda9462ada4f9d1d00be8bda459927542cee836a6d7cf668084e48d23",
+      "status": "agent_review_accepted",
+      "finding": "Actual final whole legacy/concept/imported GLB,front/rear and both upright/sleeve and roof/lobe/detail renders reviewed. Increased stem widths now read source proportions;angle/height shell UV mapping removes broad lower-wall triangular reflection transitions that higher radial segmentation alone did not fix. One connected four-terrace slate-blue shell,low pale lobe,copper roof point,two side-by-side dark points and contrasting front uprights in wider sleeves preserve source major features. Concept has richer fine engineering;canonical surface retains sparse details,wear,three small physical chips and two shallow dents. All12native/imported meshes closed positive,all5decodedmaps equal,maxsurfaceerror5.960464477539063e-8. Actual sleeve/body,post/sleeve,lobe/roof and inset/body samples pass;rim centres clear. Frozen original pair unchanged.",
+      "action": "Accept asset-only agent source/concept/native/imported GLB review. Hidden ritual/civic spaces,hardware sections and metric dimensions remain interpreted. Class255 has no indexed generic PB/runtime role;no invented operating cycle. Client scale/state/shaders,Android performance and final user artistic acceptance separate."
+    }
+  ],
+  "final_review": "Actual source/concept/imported GLB comparison retains low slate-blue layered wedge shell,four shallow armour terraces,low pale rear-right roof lobe,copper roof inset,two side-by-side dark points and two contrasting front uprights in wider sleeves. Actual sleeve/body,post/sleeve,lobe/roof and point/body contact samples checked;native/imported positive closed surfaces and decoded textures agree;whole/front/rear/detail renders inspected.",
+  "limitations": [
+    "Exact hidden civic/ritual spaces,sections and metric dimensions remain authored or unknown.",
+    "Class255 has no indexed generic PB counterpart or runtime role here. Catalogue reveal is not ritual/building operation animation.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

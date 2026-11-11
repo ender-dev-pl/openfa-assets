@@ -78,11 +78,13 @@ Additional views: [Front](../gallery/media/objects/artemian/healing-quarters/fro
 
 `openfa:building/legacy/113`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![House of the Axe](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar07/front-quarter.png)
+![House of the Axe](../gallery/media/objects/artemian/house-of-the-axe/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar07/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar07/model.glb)
+[Blend](../sources/objects/artemian/house-of-the-axe/model.blend) · [GLB](../sources/objects/artemian/house-of-the-axe/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/house-of-the-axe/front.png) · [Rear quarter](../gallery/media/objects/artemian/house-of-the-axe/rear-quarter.png) · [Front uprights and sleeves](../gallery/media/objects/artemian/house-of-the-axe/front-uprights-and-sleeves-detail.png) · [Roof lobe and three points](../gallery/media/objects/artemian/house-of-the-axe/roof-lobe-and-three-insets-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/house-of-the-axe/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/house-of-the-axe/concept-glb-comparison.jpg)
 
 ## Naval Dockyard
 
