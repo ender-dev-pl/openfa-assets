@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/089",
+  "binaries": {
+    "blend": "cc544b83ff47b1a606c66b81375b1b7001d0a495dd28210db8e264ce8ef482e4",
+    "glb": "ea116b61b98ace7d0a02636455f5131c530c10fe8e0b209351c32f502bbb7701"
+  },
+  "runtime_report_sha256": "d5a08edd1d0f4ff515cab212999f859dd9a378a3f2185384f76ddab85d92d18a",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 7.139797229758674e-05,
+      "margin": 51
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0003287724894373094,
+      "margin": 40
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0002444070074980578,
+      "margin": 39
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk04-review-1.png",
+      "sha256": "8830bb0c928975cc17dbf1ea5251f5eeab82ed2cf24385cfffdb7e48893ece96",
+      "prompt": "sources/docs/reconstruction/models/mk04-concept-prompt-1.txt",
+      "feedback": "Selected: broad connected fluted base, narrowed single brass waist band, asymmetric blunt right-leaning head, small amber band inset and single low blue lens follow legacy. Exact relief/hardware are authored; do not invent a nourishment process or human machinery."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "verdict": "refine-material-reading",
+      "source_model_sha256": "f0e6da1eb3a76936aabf1da7a2862d00151830730ddf87d6867cbd6f12df8189",
+      "issues": [
+        "Source-backed silhouette, single band and two coloured details are retained.",
+        "Flat normal facets on displaced mineral grids create a regular patch pattern: smooth mineral normals while retaining irregular geometry/fracture detail.",
+        "Strengthen the head cleft and nonperiodic weathering on the brass band without adding a panel grid or invented nourishment process."
+      ]
+    }
+  ],
+  "final_review": "Final independent GLB retains the broad continuous fluted base, narrow waist with one brass collar, blunt asymmetric head, small amber band inset and one low blue lens. Actual feedback removes the regular displaced-facet shading pattern, strengthens the cleft and adds more varied brass wear. Hidden sections and individual flutes are authored.",
+  "limitations": [
+    "The original explicitly leaves the nourishment mechanism unknown; no process engineering or moving mechanism is inferred.",
+    "Precise cross-sections, flutes, joints and material wear are authored from limited fixed views. Not every generated concept microcrevice is represented.",
+    "No source metric height, calibrated game scale/state, Android performance or final user artistic acceptance claimed."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
