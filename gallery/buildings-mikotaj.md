@@ -228,11 +228,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/ruth-feror/front.png)
 
 `openfa:building/legacy/104`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Ruth-fett](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk19/front-quarter.png)
+![Ruth-fett](../gallery/media/objects/mikotaj/ruth-fett/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk19/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk19/model.glb)
+[Blend](../sources/objects/mikotaj/ruth-fett/model.blend) · [GLB](../sources/objects/mikotaj/ruth-fett/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/ruth-fett/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/ruth-fett/rear-quarter.png) · [Lower blue/red fittings](../gallery/media/objects/mikotaj/ruth-fett/lower-fittings-detail.png) · [Stacked mineral crown](../gallery/media/objects/mikotaj/ruth-fett/stacked-crown-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/ruth-fett/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/ruth-fett/concept-glb-comparison.jpg)
 
 ## Merl
 

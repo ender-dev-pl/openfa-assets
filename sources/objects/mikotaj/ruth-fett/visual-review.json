@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/104",
+  "binaries": {
+    "blend": "f82a881c991318d390c69ed48fbf4db0d56203deacd06cc44fa7e354694a3bc3",
+    "glb": "c3afd220c1091ff7c2dba00027f34c54f15b285a9748b0f466e8d49fc3cdffec"
+  },
+  "runtime_report_sha256": "9fd0d579314fac6f1e379fc4705fc0b5fb54c133ead239d075722856c4609ca3",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0024400267118713723,
+      "margin": 62
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.004083687625867085,
+      "margin": 49
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0023272631648149364,
+      "margin": 67
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk19-review-1.png",
+      "sha256": "60a53a1507917dda86b0adac525e57138daa9a7ce36ac7580c837295ff461299",
+      "prompt": "sources/docs/reconstruction/models/mk19-concept-prompt-1.txt",
+      "feedback": "Selected stacked irregular mineral crown/middle lobe,flared asymmetric footing and two different low fittings:blue left/red gridded right. Keep fittings modest per actual sprite;concept larger arch and exact summit indentation are interpretations,not recovered engineering."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "runtime_report_sha256": "b98ac660063d5a42dad150fe74eda322641fb15dd9f1c5883e6a0931ba088e96",
+      "binaries": {
+        "blend": "ec846c6c8f291334c402507ecb07d4c7fd82e21b9ee9386d995a61bc43bd8f9c",
+        "glb": "9703f6ea7b20032d907a0fb01c18731ac2b493f6f3f1422f4b3b9e61eedc0f10"
+      },
+      "finding": "Actual whole legacy/concept/imported GLB comparison and both detail renders show overly regular collar rings,overly smooth mineral anatomy and a flat dark triangular lower stripe. Retain overall stacked envelope and modest simultaneous fittings but refine physical irregularity and cleft shading.",
+      "action": "Replace simple profile sampling by rounded sampling,add asymmetric mineral relief,remove hard polygon-assigned dark stripe in favour of shaped physical cleft and continuous authored texture shading.",
+      "status": "revision_required"
+    },
+    {
+      "pass_number": 2,
+      "runtime_report_sha256": "9fd0d579314fac6f1e379fc4705fc0b5fb54c133ead239d075722856c4609ca3",
+      "binaries": {
+        "blend": "f82a881c991318d390c69ed48fbf4db0d56203deacd06cc44fa7e354694a3bc3",
+        "glb": "c3afd220c1091ff7c2dba00027f34c54f15b285a9748b0f466e8d49fc3cdffec"
+      },
+      "finding": "Actual whole original/concept/imported comparison,lower fittings and rear view reviewed. Artificial ring edges and flat lower stripe corrected;upper rounded crown,middle lobe,flared foot and small blue-left/red-right fittings readable. Model remains an interpretation of low-resolution mineral anatomy rather than exact recovered engineering.",
+      "action": "Accept for agent asset-only source/concept/runtime review;retain final user artistic acceptance and client scale/material/performance as separate gates.",
+      "status": "agent_review_accepted"
+    }
+  ],
+  "final_review": "Actual saved native and independent GLB retain one stacked mineral tower with rounded crown,swollen irregular middle,flared asymmetric base and small simultaneous blue-left/red-gridded-right fittings. Actual whole legacy/concept/GLB comparison and detail renders reviewed. Shallow summit indentation and fine fitting cells remain authored interpretations. Native/import surfaces and all decoded texture pixels agree.",
+  "limitations": [
+    "Hidden mineral sections,exact summit depression,fine blue facet count and storage engineering are interpreted or unknown.",
+    "All41catalogue images show information reveal,not a filling or operating cycle;unrelated research machines do not define this tower.",
+    "Final user artistic acceptance,client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -20780,7 +20780,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/104",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           965
         ]
@@ -20854,21 +20854,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk19/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mikotaj/ruth-fett/model.blend",
           "present": true,
-          "sha256": "687cdcc4610d5a0d839f55ebc06cce2f5de3c778c0dd30ce1230501ae297d8a2",
-          "final_visual_acceptance": "not-established"
+          "sha256": "f82a881c991318d390c69ed48fbf4db0d56203deacd06cc44fa7e354694a3bc3",
+          "media": "gallery/media/objects/mikotaj/ruth-fett",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mikotaj/ruth-fett/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mikotaj/ruth-fett/rear-quarter.png"
+            },
+            {
+              "label": "Lower blue/red fittings",
+              "image": "gallery/media/objects/mikotaj/ruth-fett/lower-fittings-detail.png"
+            },
+            {
+              "label": "Stacked mineral crown",
+              "image": "gallery/media/objects/mikotaj/ruth-fett/stacked-crown-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mikotaj/ruth-fett/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mikotaj/ruth-fett/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -20898,6 +20925,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 104
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk19/model.blend",
+          "present": true,
+          "sha256": "687cdcc4610d5a0d839f55ebc06cce2f5de3c778c0dd30ce1230501ae297d8a2",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mikotaj/ruth-fett/model.blend",
+        "sha256": "f82a881c991318d390c69ed48fbf4db0d56203deacd06cc44fa7e354694a3bc3",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mikotaj/ruth-fett",
+          "verifier": "sources/tools/blender/verify_mikotaj_ruth_fett.py",
+          "files": {
+            "sources/objects/mikotaj/ruth-fett/model.blend": "f82a881c991318d390c69ed48fbf4db0d56203deacd06cc44fa7e354694a3bc3",
+            "sources/objects/mikotaj/ruth-fett/model.glb": "c3afd220c1091ff7c2dba00027f34c54f15b285a9748b0f466e8d49fc3cdffec",
+            "sources/objects/mikotaj/ruth-fett/model.json": "d28ee9d5bff6daca8eeaed7dfe7f9632fdceab8bfabe9275a839adbd80b3f1d5",
+            "sources/objects/mikotaj/ruth-fett/README.md": "bf1f7be72b4e9857ae88bb9e56f104b3babfd00401ebd41f7bb133e9f8740156",
+            "sources/objects/mikotaj/ruth-fett/runtime-review.json": "9fd0d579314fac6f1e379fc4705fc0b5fb54c133ead239d075722856c4609ca3",
+            "sources/objects/mikotaj/ruth-fett/visual-review.json": "114c7118f4dd45f7f061c950adadd4d1fba31e54464a8874c6abfe278a946dda",
+            "gallery/media/objects/mikotaj/ruth-fett/concept-glb-comparison.jpg": "f357d6dddd007f607fdc3219203699d622a829ff1ef41ba11101d588a514e4cf",
+            "gallery/media/objects/mikotaj/ruth-fett/front-quarter.png": "e5f1891496f02b943dfd356ca39f589448ec050159a7ea65786f12a922bac9a8",
+            "gallery/media/objects/mikotaj/ruth-fett/front.png": "1aa92007f7e9e4679c68d510e100a5f1d123f0afdcf8a2623c2efb8f56399d9e",
+            "gallery/media/objects/mikotaj/ruth-fett/imported-front-quarter.png": "e5f1891496f02b943dfd356ca39f589448ec050159a7ea65786f12a922bac9a8",
+            "gallery/media/objects/mikotaj/ruth-fett/imported-front.png": "1aa92007f7e9e4679c68d510e100a5f1d123f0afdcf8a2623c2efb8f56399d9e",
+            "gallery/media/objects/mikotaj/ruth-fett/imported-rear-quarter.png": "c398c36de3bbc8e77fad6e6f22b6e093a4019f636a35e71bee6a0cfc7dc110b9",
+            "gallery/media/objects/mikotaj/ruth-fett/lower-fittings-detail.png": "eb70f78dafed423b83b7fd42ddb12a35ea0d6d56ebaaaca5421483b6abf4efe1",
+            "gallery/media/objects/mikotaj/ruth-fett/native-front-quarter.png": "5384c8a424e8872a37200f041ba2e19d57f63a580ef70e72a1676859412c6101",
+            "gallery/media/objects/mikotaj/ruth-fett/native-front.png": "6d5f72c4ed2468c90fb5a3a62243a6ad74bd2b5a296321e03e2f9983b5bf18e6",
+            "gallery/media/objects/mikotaj/ruth-fett/native-rear-quarter.png": "17400b6612b9576c7c2e18b44a92b66829bddf1b6d179231b1888c30ba7e67a3",
+            "gallery/media/objects/mikotaj/ruth-fett/rear-quarter.png": "c398c36de3bbc8e77fad6e6f22b6e093a4019f636a35e71bee6a0cfc7dc110b9",
+            "gallery/media/objects/mikotaj/ruth-fett/stacked-crown-detail.png": "8efbb697effbadc8a3756d15a0f01318bea4c4e09d822ce065d4366614c6e1ab",
+            "gallery/media/objects/mikotaj/ruth-fett/technical-wireframe.png": "b14ab79948f24188f373dc545cf3c65c665c3dc18c4bda0cb0aec5620949b2d3",
+            "sources/materials/mikotaj/ruth-fett/exposed-ridge-base-colour.png": "63bb9cb50e98cc2386dbd9773688a3c9ddb66d16df59d8357324dff1d292cea2",
+            "sources/materials/mikotaj/ruth-fett/mineral-base-colour.png": "c0ba9b7c0d6b6cc050a9e39e98ee0cb66391e59d363ad8a5e3bfe5d15b6a004e",
+            "sources/materials/mikotaj/ruth-fett/mineral-fracture-normal.png": "8a7b290ea5285b3b9bc78276c13f6751fae8bc4996acd1347fb8422d7031cce5",
+            "sources/materials/mikotaj/ruth-fett/occlusion-roughness-metallic.png": "e53d2ae99f31283bc7c2aa5bf611d84bb9273443903794e01718a30c3e536a18",
+            "sources/materials/mikotaj/ruth-fett/pale-blue-lens-colour.png": "bfae8a7da61e427e3aa97b62ad99d7e8d3e28ec07e0d2f64fd60b094074e9760",
+            "sources/materials/mikotaj/ruth-fett/red-gridded-port-colour.png": "39e108664d8590fce6ec62f4ec256d4bd919eb198a7d0f65eca4bcc269a25806",
+            "sources/tools/blender/remaster_mikotaj_ruth_fett.py": "bbb807971b6b1729026c1882237ccb29b144fccd1a7366afa40363d6ff18e40a",
+            "sources/tools/blender/verify_mikotaj_ruth_fett.py": "711ac25960ea4395ab2ed61dedc2e26e0db6571ce1c3f1c0d088df05e118b5ba",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mk19-concept-review.json": "f3591282901b105a6c118086e61fc02b7773131c031bf86dc3de62fa2ae9c0ff",
+            "sources/docs/reconstruction/models/mk19-concept-prompt-1.txt": "158f7c16e1319f01ff115b6068dabebcb147698131911082604303e79f34d2b7",
+            "gallery/media/concepts/mikotaj/mk19-review-1.png": "60a53a1507917dda86b0adac525e57138daa9a7ce36ac7580c837295ff461299"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mikotaj/ruth-fett/visual-review.json",
+          "sha256": "114c7118f4dd45f7f061c950adadd4d1fba31e54464a8874c6abfe278a946dda",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mikotaj/ruth-fett/visual-review.json",
+          "sha256": "114c7118f4dd45f7f061c950adadd4d1fba31e54464a8874c6abfe278a946dda",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mikotaj/ruth-fett/visual-review.json",
+          "sha256": "114c7118f4dd45f7f061c950adadd4d1fba31e54464a8874c6abfe278a946dda",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mikotaj/ruth-fett/visual-review.json",
+          "sha256": "114c7118f4dd45f7f061c950adadd4d1fba31e54464a8874c6abfe278a946dda",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mikotaj/ruth-fett/runtime-review.json",
+          "sha256": "9fd0d579314fac6f1e379fc4705fc0b5fb54c133ead239d075722856c4609ca3",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
