@@ -78,11 +78,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/dream/front.png) · [
 
 `openfa:building/legacy/092`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Resonance](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk07/front-quarter.png)
+![Resonance](../gallery/media/objects/mikotaj/resonance/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk07/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk07/model.glb)
+[Blend](../sources/objects/mikotaj/resonance/model.blend) · [GLB](../sources/objects/mikotaj/resonance/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/resonance/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/resonance/rear-quarter.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/resonance/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/resonance/concept-glb-comparison.jpg)
 
 ## Fa-lanth
 

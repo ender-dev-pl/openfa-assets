@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/092",
+  "binaries": {
+    "blend": "72e75cd7db167b242a8fc5938b80cc85412c89506de5ee3f51857220398a0379",
+    "glb": "4a8686da1562bc326ca831022378349d7aacc239e902f47b72cc89492a119dba"
+  },
+  "runtime_report_sha256": "5342145212060ce526603901fa13c583126a19fc64bb71fd55ac804dbf11e521",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.002412967397310739,
+      "margin": 61
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00268104590914568,
+      "margin": 48
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0026914858645627877,
+      "margin": 67
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk07-review-1.png",
+      "sha256": "4b193528276d988cce94c3edfcd4bc0ca42340a367d1cc9cd571553593bd0184",
+      "prompt": "sources/docs/reconstruction/models/mk07-concept-prompt-1.txt",
+      "feedback": "Selected: connected lobed flared mineral base, rounded leaning head, single diagonal deep-blue channel ending at one pale-blue lens. Fine strata, socket engineering and unseen surfaces are authored. No separate legs, reactor or energy beam added."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "verdict": "correct-body-head-proportions",
+      "source_model_sha256": "b61a83f70d4574bed2431c944680eca2e468829b933f130be2a1326217aac718",
+      "issues": [
+        "Head is too tall relative to the lower mass. Reduce its height and increase connected mineral foundation height according to original silhouette.",
+        "The thick black neck and separated low rounded roots look like a robot on paws. Bury a much thinner neck and extend the mineral buttresses up into the body.",
+        "The blue channel reads applied: seat its blue surface deeper into the actual cut groove."
+      ]
+    }
+  ],
+  "final_review": "Final independent GLB keeps the broad connected mineral supports, front toe, seated rounded left-leaning head, one diagonal deep-blue channel and one pale-blue lens. Actual feedback reduces the over-tall head, thick exposed neck and paw-like low roots while increasing the connected lower mass and recessing the blue surface. Used material slots are normalized before export and final native/import materials match.",
+  "limitations": [
+    "Exact sections, underside, socket engineering, detailed wear and channel/lens physical purpose are authored or unknown.",
+    "Broad source shapes take priority over copying every generated mineral microcrevice. PB23/ST21 generic powerplant research supplies function context, not Mikotaj body geometry.",
+    "No source metric height, calibrated game scale/state, Android performance or final user artistic acceptance claimed."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
