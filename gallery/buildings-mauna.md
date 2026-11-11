@@ -30,11 +30,13 @@ Additional views: [Front](../gallery/media/objects/mauna/shielding-block/front.p
 
 `openfa:building/legacy/132`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Nutrition Block](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn03/front-quarter.png)
+![Nutrition Block](../gallery/media/objects/mauna/nutrition-block/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn03/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn03/model.glb)
+[Blend](../sources/objects/mauna/nutrition-block/model.blend) · [GLB](../sources/objects/mauna/nutrition-block/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/nutrition-block/front.png) · [Rear quarter](../gallery/media/objects/mauna/nutrition-block/rear-quarter.png) · [Low roof cap and small point](../gallery/media/objects/mauna/nutrition-block/low-roof-cap-and-small-point-detail.png) · [Service recesses and base buttresses](../gallery/media/objects/mauna/nutrition-block/service-recesses-and-base-buttresses-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/nutrition-block/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/nutrition-block/concept-glb-comparison.jpg)
 
 ## Off-duty Block
 

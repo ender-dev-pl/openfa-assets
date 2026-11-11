@@ -27734,7 +27734,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/132",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           993
         ]
@@ -27808,21 +27808,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn03/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/nutrition-block/model.blend",
           "present": true,
-          "sha256": "31328691d1a6296ec5c0588552004dde9b9529ec844c394c94c62392035eb0e7",
-          "final_visual_acceptance": "not-established"
+          "sha256": "5a50a4ee2b5be87d129bd823826beb2d43a3495e9c3fe99c7ddadaac5b1deda6",
+          "media": "gallery/media/objects/mauna/nutrition-block",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/nutrition-block/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/nutrition-block/rear-quarter.png"
+            },
+            {
+              "label": "Low roof cap and small point",
+              "image": "gallery/media/objects/mauna/nutrition-block/low-roof-cap-and-small-point-detail.png"
+            },
+            {
+              "label": "Service recesses and base buttresses",
+              "image": "gallery/media/objects/mauna/nutrition-block/service-recesses-and-base-buttresses-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/nutrition-block/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/nutrition-block/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -27852,6 +27879,88 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 132
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn03/model.blend",
+          "present": true,
+          "sha256": "31328691d1a6296ec5c0588552004dde9b9529ec844c394c94c62392035eb0e7",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/nutrition-block/model.blend",
+        "sha256": "5a50a4ee2b5be87d129bd823826beb2d43a3495e9c3fe99c7ddadaac5b1deda6",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/nutrition-block",
+          "verifier": "sources/tools/blender/verify_mauna_nutrition_block.py",
+          "files": {
+            "sources/objects/mauna/nutrition-block/model.blend": "5a50a4ee2b5be87d129bd823826beb2d43a3495e9c3fe99c7ddadaac5b1deda6",
+            "sources/objects/mauna/nutrition-block/model.glb": "b6777a0119969162f71a4f1b43fffd691ce945b532f72d5ae5f833df56f087a6",
+            "sources/objects/mauna/nutrition-block/model.json": "c41700e60906e159b863edc8edbba64a39ee817f15e60ca632795285aa2716d9",
+            "sources/objects/mauna/nutrition-block/README.md": "4e920042ed704eae54f5a552ce3d93a321a1845011f274562c2ba1cd47c2a3bf",
+            "sources/objects/mauna/nutrition-block/runtime-review.json": "7de37a479750405cbd6cdcc9f23dda0eb5d58094f40b0b8e1bbefb81682e6ccc",
+            "sources/objects/mauna/nutrition-block/visual-review.json": "aec536eb28d65a2b378e56cc8a8ff8a7f7713bd3aed9a08de7193694483182d2",
+            "gallery/media/objects/mauna/nutrition-block/concept-glb-comparison.jpg": "cc528d7e347f81894ea27badc70dd76cd0e62c2a700b9891f3f0093c81587bd5",
+            "gallery/media/objects/mauna/nutrition-block/front-quarter.png": "f37e5351cf61f0d652565699e32cefc1e1cbf8328a42c39222488355be26b85b",
+            "gallery/media/objects/mauna/nutrition-block/front.png": "beb517c1e7b6c0d1eb0a92d533f748b63aadfd3d07764e0c433900f3d2a432bf",
+            "gallery/media/objects/mauna/nutrition-block/imported-front-quarter.png": "f37e5351cf61f0d652565699e32cefc1e1cbf8328a42c39222488355be26b85b",
+            "gallery/media/objects/mauna/nutrition-block/imported-front.png": "beb517c1e7b6c0d1eb0a92d533f748b63aadfd3d07764e0c433900f3d2a432bf",
+            "gallery/media/objects/mauna/nutrition-block/imported-rear-quarter.png": "418ed99734c2a7fcda06034d0f674e682201faacd066fdbc928e40c512c34ef9",
+            "gallery/media/objects/mauna/nutrition-block/low-roof-cap-and-small-point-detail.png": "1ab5d95e533ce08b490822a8e7399b6d26e126c3d50065c2b1574631a7b5c645",
+            "gallery/media/objects/mauna/nutrition-block/native-front-quarter.png": "2f9551a390de3b6dc065e1bec1c0b714a045806476ac167d13d7a812a6cdf78d",
+            "gallery/media/objects/mauna/nutrition-block/native-front.png": "f5ebc81e0733248ab513831b84b053f80d47cd6d820540f521082b16de158087",
+            "gallery/media/objects/mauna/nutrition-block/native-rear-quarter.png": "1a428010962309ce967840a3ee6c37a6eb8b91ab80ed2605516ddbaef36fc22c",
+            "gallery/media/objects/mauna/nutrition-block/rear-quarter.png": "418ed99734c2a7fcda06034d0f674e682201faacd066fdbc928e40c512c34ef9",
+            "gallery/media/objects/mauna/nutrition-block/service-recesses-and-base-buttresses-detail.png": "4ee388e9200adc57a29dff8b39930bf093bb7b6074a17d26c57fa0b84d43739a",
+            "gallery/media/objects/mauna/nutrition-block/technical-wireframe.png": "32732382a5830c8a1ccb08e54da143fe0781a48699e9f367cf76192dce701e39",
+            "sources/materials/mauna/nutrition-block/cast-concrete-colour.png": "cde05716badcbc3658a4bec06eecb53a4f0107ab236fccff00fee031bf601c0a",
+            "sources/materials/mauna/nutrition-block/cast-service-normal.png": "ae0de6d92e833a8845505662c70379b9019aafe1c3f4f9c5260b789d5cf285f1",
+            "sources/materials/mauna/nutrition-block/chipped-concrete-edge-colour.png": "324233da4d24dca7f269651e40ba17573cc4578f726a527e744c3561f131dcde",
+            "sources/materials/mauna/nutrition-block/concrete-orm.png": "d7d01b558381d3f8f2360b30d4d52ac8284e782ba13d1dc8881f299cfcb137c9",
+            "sources/materials/mauna/nutrition-block/metal-orm.png": "3216781127b7d0c9bcf65908c335a251ab7ff62d46db8849499a1be012aa8248",
+            "sources/materials/mauna/nutrition-block/recess-red-colour.png": "0b9e30b8792e0484dba553c43278ec05b5204f208bc7360eb3127162fd5fc948",
+            "sources/materials/mauna/nutrition-block/used-brass-colour.png": "9ac13a48f8fd6fd772d6947ddf6f2b0f231044354b22ed0683b62e07a0f3e689",
+            "sources/tools/blender/remaster_mauna_nutrition_block.py": "50c49a919893cb9c1f6e285f5ebfcb6f62b8680ecf2ecb7a08729f704792e2a8",
+            "sources/tools/blender/verify_mauna_nutrition_block.py": "9273c1e68a491387b2a82b363e9c06b99e5d9f18174726d62d2ed5c61330a975",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn03-concept-review.json": "4ce075cd1a1c17d174f9b0547f6a28bbcccafc8498a0e1061bb19fc74783e773",
+            "sources/docs/reconstruction/models/mn03-concept-prompt-1.txt": "b6ab7fb298f1d6de234925087e42b9e001fb451d6d71779152f3816494d3f708",
+            "gallery/media/concepts/mauna/mn03-review-1.png": "743b7999501f7a619251f70b8c0cf1f6132d12a3b3c6602507fd29f423616f72"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/nutrition-block/visual-review.json",
+          "sha256": "aec536eb28d65a2b378e56cc8a8ff8a7f7713bd3aed9a08de7193694483182d2",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/nutrition-block/visual-review.json",
+          "sha256": "aec536eb28d65a2b378e56cc8a8ff8a7f7713bd3aed9a08de7193694483182d2",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/nutrition-block/visual-review.json",
+          "sha256": "aec536eb28d65a2b378e56cc8a8ff8a7f7713bd3aed9a08de7193694483182d2",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/nutrition-block/visual-review.json",
+          "sha256": "aec536eb28d65a2b378e56cc8a8ff8a7f7713bd3aed9a08de7193694483182d2",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/nutrition-block/runtime-review.json",
+          "sha256": "7de37a479750405cbd6cdcc9f23dda0eb5d58094f40b0b8e1bbefb81682e6ccc",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

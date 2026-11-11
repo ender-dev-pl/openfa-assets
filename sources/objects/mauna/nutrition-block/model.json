@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/132",
+  "key": "MN03",
+  "name": "Nutrition Block",
+  "culture": "mauna",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 37,
+  "construction_updates": 26,
+  "triangles": 2620,
+  "triangle_budget": 30000,
+  "mesh_nodes": 24,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mauna_nutrition_block.py",
+  "author_sha256": "50c49a919893cb9c1f6e285f5ebfcb6f62b8680ecf2ecb7a08729f704792e2a8",
+  "binaries": {
+    "blend": "5a50a4ee2b5be87d129bd823826beb2d43a3495e9c3fe99c7ddadaac5b1deda6",
+    "glb": "b6777a0119969162f71a4f1b43fffd691ce945b532f72d5ae5f833df56f087a6"
+  },
+  "textures": {
+    "cast-concrete-colour.png": "cde05716badcbc3658a4bec06eecb53a4f0107ab236fccff00fee031bf601c0a",
+    "cast-service-normal.png": "ae0de6d92e833a8845505662c70379b9019aafe1c3f4f9c5260b789d5cf285f1",
+    "chipped-concrete-edge-colour.png": "324233da4d24dca7f269651e40ba17573cc4578f726a527e744c3561f131dcde",
+    "concrete-orm.png": "d7d01b558381d3f8f2360b30d4d52ac8284e782ba13d1dc8881f299cfcb137c9",
+    "metal-orm.png": "3216781127b7d0c9bcf65908c335a251ab7ff62d46db8849499a1be012aa8248",
+    "recess-red-colour.png": "0b9e30b8792e0484dba553c43278ec05b5204f208bc7360eb3127162fd5fc948",
+    "used-brass-colour.png": "9ac13a48f8fd6fd772d6947ddf6f2b0f231044354b22ed0683b62e07a0f3e689"
+  },
+  "rectangular_recesses": [
+    {
+      "family": "short red strip",
+      "object": "Nutrition Block short red strip",
+      "point": [
+        -0.44999998807907104,
+        -0.690000057220459,
+        1.309999942779541
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "depth": 0.035
+    },
+    {
+      "family": "near red strip",
+      "object": "Nutrition Block near red strip",
+      "point": [
+        0.5899999737739563,
+        -0.690000057220459,
+        1.559999942779541
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "depth": 0.035
+    },
+    {
+      "family": "far red strip",
+      "object": "Nutrition Block far red strip",
+      "point": [
+        0.690000057220459,
+        0.5899999737739563,
+        1.559999942779541
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.035
+    },
+    {
+      "family": "upper dark slot 0",
+      "object": "Nutrition Block upper dark slot 0",
+      "point": [
+        0.690000057220459,
+        -0.3499999940395355,
+        2.180000066757202
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "depth": 0.035
+    },
+    {
+      "family": "upper dark slot 1",
+      "object": "Nutrition Block upper dark slot 1",
+      "point": [
+        0.690000057220459,
+        -0.11999999731779099,
+        2.180000066757202
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.035
+    },
+    {
+      "family": "upper dark slot 2",
+      "object": "Nutrition Block upper dark slot 2",
+      "point": [
+        0.690000057220459,
+        0.10999999940395355,
+        2.180000066757202
+      ],
+      "normal": [
+        0.9999999403953552,
+        -0.0,
+        0.0
+      ],
+      "depth": 0.035
+    },
+    {
+      "family": "front vent backing",
+      "object": "Nutrition Block front vent backing",
+      "point": [
+        -0.03999999910593033,
+        -0.690000057220459,
+        2.130000114440918
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.035
+    },
+    {
+      "family": "amber stack backing",
+      "object": "Nutrition Block amber stack backing",
+      "point": [
+        0.6899998188018799,
+        -0.10000000149011612,
+        1.340000033378601
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.035
+    }
+  ],
+  "vent_slats": [
+    {
+      "index": 0,
+      "point": [
+        -0.03999999910593033,
+        -0.6470000743865967,
+        2.0399999618530273
+      ]
+    },
+    {
+      "index": 1,
+      "point": [
+        -0.03999999910593033,
+        -0.6470000743865967,
+        2.2200000286102295
+      ]
+    }
+  ],
+  "amber_stack": [
+    {
+      "index": 0,
+      "point": [
+        0.6559998393058777,
+        -0.10000000149011612,
+        1.1200000047683716
+      ]
+    },
+    {
+      "index": 1,
+      "point": [
+        0.6559998393058777,
+        -0.10000000149011612,
+        1.340000033378601
+      ]
+    },
+    {
+      "index": 2,
+      "point": [
+        0.6559998393058777,
+        -0.10000000149011612,
+        1.559999942779541
+      ]
+    }
+  ],
+  "pale_front_points": [
+    {
+      "index": 0,
+      "point": [
+        0.07999999821186066,
+        -0.6860000491142273,
+        1.0
+      ]
+    },
+    {
+      "index": 1,
+      "point": [
+        0.07999999821186066,
+        -0.6860000491142273,
+        1.2000000476837158
+      ]
+    },
+    {
+      "index": 2,
+      "point": [
+        0.07999999821186066,
+        -0.6860000491142273,
+        1.399999976158142
+      ]
+    }
+  ],
+  "buttress_contacts": [
+    {
+      "face": 0,
+      "index": 0,
+      "body_contact": [
+        -0.5199999809265137,
+        -0.7310000061988831,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        -0.5199999809265137,
+        -1.0440000295639038,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 0,
+      "index": 1,
+      "body_contact": [
+        0.0,
+        -0.7310000061988831,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        0.0,
+        -1.0440000295639038,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 0,
+      "index": 2,
+      "body_contact": [
+        0.5199999809265137,
+        -0.7310000061988831,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        0.5199999809265137,
+        -1.0440000295639038,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 1,
+      "index": 0,
+      "body_contact": [
+        0.7310000061988831,
+        -0.5199999809265137,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        1.0440000295639038,
+        -0.5199999809265137,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 1,
+      "index": 1,
+      "body_contact": [
+        0.7310000061988831,
+        -4.476084398400021e-17,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        1.0440000295639038,
+        -6.392656914601711e-17,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 1,
+      "index": 2,
+      "body_contact": [
+        0.7310000061988831,
+        0.5199999809265137,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        1.0440000295639038,
+        0.5199999809265137,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 2,
+      "index": 0,
+      "body_contact": [
+        0.5199999809265137,
+        0.7310000061988831,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        0.5199999809265137,
+        1.0440000295639038,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 2,
+      "index": 1,
+      "body_contact": [
+        8.952168796800042e-17,
+        0.7310000061988831,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        1.2785313829203422e-16,
+        1.0440000295639038,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 2,
+      "index": 2,
+      "body_contact": [
+        -0.5199999809265137,
+        0.7310000061988831,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        -0.5199999809265137,
+        1.0440000295639038,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 3,
+      "index": 0,
+      "body_contact": [
+        -0.7310000061988831,
+        0.5199999809265137,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        -1.0440000295639038,
+        0.5199999809265137,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 3,
+      "index": 1,
+      "body_contact": [
+        -0.7310000061988831,
+        1.3428251540838839e-16,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        -1.0440000295639038,
+        1.9177969420316153e-16,
+        0.25999999046325684
+      ]
+    },
+    {
+      "face": 3,
+      "index": 2,
+      "body_contact": [
+        -0.7310000061988831,
+        -0.5199999809265137,
+        0.6949999928474426
+      ],
+      "foot_contact": [
+        -1.0440000295639038,
+        -0.5199999809265137,
+        0.25999999046325684
+      ]
+    }
+  ],
+  "roof_point_floor": 2.62,
+  "physical_chips": [
+    {
+      "label": "roof",
+      "object": "Nutrition Block low square roof cap",
+      "point": [
+        0.20999999344348907,
+        -0.17000000178813934,
+        2.6600000858306885
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "label": "tower",
+      "object": "Nutrition Block square tower and flared base",
+      "point": [
+        0.6899999976158142,
+        -0.46000000834465027,
+        1.840000033378601
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "interpretation": [
+    "Own tallsquareconcretetower/flaredbase,3pale/brassfeetpervisibleface,front2slats/3palepoints,right3slots/3amberpoints,redstrips andsmallroundroofpoint govern geometry.",
+    "Hiddenrearfootrepeat,internalrecessdepths andcellrelative dimensions authored. PB37isgenericTerranfunctioncontext,notMauna geometry oroperatingmotion. No exposedvats/glow inferred."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront. Cell-relative proportions authored;no recovered metric dimensions.",
+  "concept_review": "sources/docs/reconstruction/models/mn03-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}
