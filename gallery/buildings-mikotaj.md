@@ -254,10 +254,12 @@ Additional views: [Front](../gallery/media/objects/mikotaj/merl/front.png) · [R
 
 `openfa:building/legacy/106`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Na-Shrekn](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk21/front-quarter.png)
+![Na-Shrekn](../gallery/media/objects/mikotaj/na-shrekn/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk21/model.glb)
+[Blend](../sources/objects/mikotaj/na-shrekn/model.blend) · [GLB](../sources/objects/mikotaj/na-shrekn/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk21/animation-00.webm)
+Additional views: [Front](../gallery/media/objects/mikotaj/na-shrekn/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/na-shrekn/rear-quarter.png) · [Crown and front focus](../gallery/media/objects/mikotaj/na-shrekn/crown-and-front-focus-detail.png) · [Right red strips](../gallery/media/objects/mikotaj/na-shrekn/right-red-strips-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/na-shrekn/technical-wireframe.png) · [Source-supported gold pulse](../gallery/media/objects/mikotaj/na-shrekn/pulse-peak.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/na-shrekn/concept-glb-comparison.jpg)
+
+[Play animation: PhotonDischarge](../gallery/media/objects/mikotaj/na-shrekn/animation-00.webm)

@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/106",
+  "binaries": {
+    "blend": "cdb67c0fb337139427241279d26567c245ab7131f99a7054afb8eecdabb4d627",
+    "glb": "1e0b1b7e67a7f1e47cb88ac734731fa8d6894c43371f1caaf00c838348dfed2d"
+  },
+  "runtime_report_sha256": "a513ffdfdb93b980579dfd484fca9a1a153ae0dd63f4e2b739dd415a3c3696bd",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.002385964912280702,
+      "margin": 63
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0030484255864035854,
+      "margin": 43
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.001601423487544484,
+      "margin": 70
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk21-review-1.png",
+      "sha256": "4293a3661082a7718e68bb92fc938947465a1b41d963bf70b078109b3e6e3e62",
+      "prompt": "sources/docs/reconstruction/models/mk21-concept-prompt-1.txt",
+      "feedback": "Selected:compact upright mineral monolith,four short crown posts,one recessed navy-blue front lens and exactly two thin red right-flank strips. Fine ore facets and hidden chamber remain authored. Actual operating overlays govern a separate blue-white crown pulse,not turret rotation."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "d95057af9fd86fa413ccb2d20088e094890782f04959b4a42ab5dc4e681726f6",
+        "glb": "f62e08756ce8046be9785f979c720e71226d065bb36f1c96c0bf9ecbd097d7bf"
+      },
+      "runtime_report_sha256": "3d7803b9edc9b641bfab6c73951e7b6e6924cbe85faf3b2a6dd35763afcfe8e1",
+      "finding": "Actual front-quarter render compared with source/enlargement and selected concept:body is too smoothly lofted,vertical mineral clefts/ribs are weak,posts appear too tall and front lens is a raised badge rather than a recessed source focus.",
+      "action": "Add actual front clefts/rib mass and local crown shoulders,shorten visible posts and carve a real lens recess. Retain compact silhouette and two source red strips;source pulse remains above shorter crown.",
+      "status": "revision_required"
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "96dcff8e8233b89547cefef1ae34a8c8934cefef8b29062b6889254cb07aba8d",
+        "glb": "5772de3437259ace9236f7bfc40250f85b7580d821d4354967d1108eb48b7d91"
+      },
+      "runtime_report_sha256": "f87c50a97bbebf0071e199da2985c6d6aaad90d0a1bbeb6f52b3505d71fa1652",
+      "finding": "Shorter crown posts match source better,but actual render exposes an important occlusion error:solid bezel disc hides the now recessed blue lens. Mineral ribs also need deeper relief for source readability.",
+      "action": "Bore bezel into a genuine annular rim,keep carved body pocket and add a direct clear-centre ray guard. Deepen source vertical clefts and lower mineral normal noise contrast.",
+      "status": "revision_required"
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "e7a98818b4287616c001c9707265635a2cf4cb73b5e240fd6d31329b60373b76",
+        "glb": "d4b1580dcfd7c403baca200001b9fd37f6063e881a8a492afd08ec52c6bf0c45"
+      },
+      "runtime_report_sha256": "5b1c9624684bd33b816607209491df42568f9df4462300b4153ab648fa519093",
+      "finding": "Actual whole render confirms lens visible through true annulus and short posts,while long front mineral clefts still merge into mottled surface at gameplay scale.",
+      "action": "Carve two irregular narrow front fracture channels into the same body,with actual dark recessed walls;technical wireframe derives from that geometry. Preserve sparse source fittings and silhouette.",
+      "status": "revision_required"
+    },
+    {
+      "pass_number": 4,
+      "binaries": {
+        "blend": "d8600f0810a824adf86948656cbbce7957184e546f12b81fe35f78323c5a4fb2",
+        "glb": "0b6d7fc3155d7bd2736aff265844b8dd93ee59d16e45b3d0e6cff3a19e07ced7"
+      },
+      "runtime_report_sha256": "c4d8c557e6fe628d43f024c3b1bd6bf11add94e2d25a72a00f52e3c8aa561da9",
+      "finding": "Actual whole/detail renders retain recognisable markers but physical fracture readability remains weak. Successful Boolean and triangle count alone do not prove useful mineral channels.",
+      "action": "Explicitly recalculate cutter outward normals and require positive closed cutter volume. Measure actual post-cut ray depth along the sampled surface normal at three sections per fracture;oblique world-Y rays hit narrow side walls and are unsuitable. Final generation now proves each fracture depth>.025 authored units before export.",
+      "status": "revision_required"
+    },
+    {
+      "pass_number": 5,
+      "binaries": {
+        "blend": "cdb67c0fb337139427241279d26567c245ab7131f99a7054afb8eecdabb4d627",
+        "glb": "1e0b1b7e67a7f1e47cb88ac734731fa8d6894c43371f1caaf00c838348dfed2d"
+      },
+      "runtime_report_sha256": "a513ffdfdb93b980579dfd484fca9a1a153ae0dd63f4e2b739dd415a3c3696bd",
+      "finding": "Final actual whole source/concept/imported GLB comparison,front/crown,right strips,rear and pulse peak reviewed. Four short posts,navy recessed focus,exactly two red diagonals and two real dark front mineral clefts are readable. Positive cutter volumes and actual surface-normal depth rays establish physical channels. Same canonical geometry supplies wireframe. Full video decoded33frames and eight decoded samples reviewed:10distinct imported pulse sizes/poses repeat the source photon rhythm,then return idle. Renderer threshold inherited from Merl was corrected to source idle/small/medium/large phases and the whole clip genuinely re-rendered with current source hashes.",
+      "action": "Accept agent source/concept/native/imported GLB review;final user/client scale,state,shader,bloom and performance checks remain separate.",
+      "status": "agent_review_accepted",
+      "portable_pulse_emission": {
+        "doubleSided": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveTexture": {
+          "index": 0
+        },
+        "extensions": {
+          "KHR_materials_emissive_strength": {
+            "emissiveStrength": 3
+          }
+        },
+        "name": "Blue white photon pulse",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.0010000000474974513,
+            0.0020000000949949026,
+            0.009999999776482582,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.800000011920929
+        }
+      },
+      "video_sha256": "4a125e1ba3d64fa43c3bc7b557523febe5355a7fde5f8c09e19b2e7b43c6bf28",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 384,
+            "height": 384,
+            "r_frame_rate": "24/1",
+            "nb_read_frames": "33"
+          }
+        ],
+        "format": {
+          "duration": "1.375000",
+          "size": "12332"
+        }
+      },
+      "decoded_contact_sheet_sha256": "3f828ae6772814229e822b8baa7bc8ddc877d36056774fa04a6ae7aa967aa830"
+    }
+  ],
+  "final_review": "Actual whole original/concept/imported GLB comparison retains a compact upright mineral monolith,four short crown posts,one recessed navy front lens and two narrow parallel red right-flank strips. Feedback shortened the initial posts,deepened actual mineral clefts and carved a focusing pocket. A subsequent actual render exposed occlusion by the solid bezel;the rim was bored into a real annulus with a clear-centre ray guard. Body/posts/lens/strips remain fixed during the blue-white crown pulse. Actual native/import surfaces,textures,eight animation states and full decoded video checked.",
+  "limitations": [
+    "Hidden mineral sections,post depth arrangement,energetic material and continuous timing remain authored or unknown.",
+    "Generic photon research is functional context,not this Mikotaj ore geometry or a rotation requirement. Preview bloom is renderer-side;portable emission is in the GLB.",
+    "Final user artistic acceptance,client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
