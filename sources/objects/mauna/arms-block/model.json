@@ -1,0 +1,855 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/141",
+  "key": "MN12",
+  "name": "Arms Block",
+  "culture": "mauna",
+  "footprint": [
+    4,
+    4
+  ],
+  "definition_class": 7,
+  "construction_updates": 36,
+  "triangles": 2378,
+  "triangle_budget": 30000,
+  "mesh_nodes": 10,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mauna_arms_block.py",
+  "author_sha256": "4fe56f8f8115c1c4b4f4a9e8b6612c9d11982bc518a13e63db899e67264021ba",
+  "binaries": {
+    "blend": "f23937228aa00f0e6a32a269b0ba94190b5ee026cf2d9047ddff37a405b600fd",
+    "glb": "a972ea38c67441a8b73dace93e1a3628df82bc91753d1cecdfb4be69d59912ad"
+  },
+  "textures": {
+    "cast-concrete-colour.png": "d0e8d43c92ee84c90433cda8ff0814f3b5b4101bfb11b6883611329fcde74338",
+    "cast-service-normal.png": "d5aad0f75b81403705377728bfb70a40cb21a3348ffcdaec0257319c9c952fc1",
+    "concrete-orm.png": "1422d12c61bcc42dbe1688ac47f8b515b574969fee915e781769f7411163b513",
+    "marking-red-colour.png": "25bc26d948a4280c69fe7f21f45288400af3bee9ec6563a9cefeb86a6611a1de",
+    "metal-orm.png": "65e359baebcacd15ce2c5932d31f9a93314fbd8e990d0a18affc627d5d17912b",
+    "pale-alloy-colour.png": "ae67b7c1c2808ade39990ed904b89aa3175c5101c8e70df9189a835d5215fd14"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Arms Block tower front dark field",
+      "body": "Arms Block square upper tower",
+      "point": [
+        -0.5600000023841858,
+        -0.040000006556510925,
+        2.359999895095825
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    },
+    {
+      "object": "Arms Block tower right dark field",
+      "body": "Arms Block square upper tower",
+      "point": [
+        -0.30000025033950806,
+        0.20000000298023224,
+        2.359999895095825
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    },
+    {
+      "object": "Arms Block lower upper front dark field",
+      "body": "Arms Block lower connected service block",
+      "point": [
+        0.23000000417232513,
+        -0.5299996137619019,
+        1.0399999618530273
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    },
+    {
+      "object": "Arms Block lower lower front dark field",
+      "body": "Arms Block lower connected service block",
+      "point": [
+        0.23000000417232513,
+        -0.5300000905990601,
+        0.5600000023841858
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    },
+    {
+      "object": "Arms Block lower end dark field",
+      "body": "Arms Block lower connected service block",
+      "point": [
+        0.9199997186660767,
+        -0.019999999552965164,
+        0.6700000166893005
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    },
+    {
+      "object": "Arms Block roof post dark field",
+      "body": "Arms Block short lower roof service post",
+      "point": [
+        0.4000000059604645,
+        -1.7136335372924805e-07,
+        1.5800000429153442
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    },
+    {
+      "object": "Arms Block under emblem dark field 0",
+      "body": "Arms Block tall inclined emblem block",
+      "point": [
+        -0.9100000262260437,
+        -0.5524282455444336,
+        0.2849999964237213
+      ],
+      "normal": [
+        0.0,
+        -0.9684929847717285,
+        0.24904106557369232
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    },
+    {
+      "object": "Arms Block under emblem dark field 1",
+      "body": "Arms Block tall inclined emblem block",
+      "point": [
+        -0.6499999761581421,
+        -0.5524287223815918,
+        0.2849999964237213
+      ],
+      "normal": [
+        -2.2288290324468107e-08,
+        -0.9684929251670837,
+        0.24904102087020874
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    },
+    {
+      "object": "Arms Block under emblem dark field 2",
+      "body": "Arms Block tall inclined emblem block",
+      "point": [
+        -0.3700000047683716,
+        -0.5524289608001709,
+        0.2849999964237213
+      ],
+      "normal": [
+        -3.436559836700326e-08,
+        -0.9684929847717285,
+        0.24904103577136993
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    },
+    {
+      "object": "Arms Block roof fitting dark field 0",
+      "body": "Arms Block low roof service fitting 0",
+      "point": [
+        0.10000000149011612,
+        -0.31999993324279785,
+        1.4249999523162842
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    },
+    {
+      "object": "Arms Block roof fitting dark field 1",
+      "body": "Arms Block low roof service fitting 1",
+      "point": [
+        0.6600000262260437,
+        -0.31999993324279785,
+        1.4249999523162842
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.024,
+      "contact_depth": 0.031
+    }
+  ],
+  "attachment_contacts": [
+    {
+      "object": "Arms Block tall inclined emblem block",
+      "support": "Arms Block low rectangular cast plinth",
+      "point": [
+        -0.7,
+        0,
+        0.11
+      ]
+    },
+    {
+      "object": "Arms Block lower connected service block",
+      "support": "Arms Block low rectangular cast plinth",
+      "point": [
+        0.5,
+        0,
+        0.11
+      ]
+    },
+    {
+      "object": "Arms Block low projecting sloping end foot",
+      "support": "Arms Block lower connected service block",
+      "point": [
+        0.905,
+        0,
+        0.35
+      ]
+    },
+    {
+      "object": "Arms Block low projecting sloping end foot",
+      "support": "Arms Block low rectangular cast plinth",
+      "point": [
+        1.1,
+        0,
+        0.1
+      ]
+    },
+    {
+      "object": "Arms Block square upper tower",
+      "support": "Arms Block tall inclined emblem block",
+      "point": [
+        -0.56,
+        0.2,
+        1.842
+      ]
+    },
+    {
+      "object": "Arms Block short lower roof service post",
+      "support": "Arms Block lower connected service block",
+      "point": [
+        0.4,
+        0.07,
+        1.395
+      ]
+    },
+    {
+      "object": "Arms Block tall inclined emblem block",
+      "support": "Arms Block lower connected service block",
+      "point": [
+        -0.11,
+        0,
+        0.9
+      ]
+    },
+    {
+      "object": "Arms Block pale tower roof cap",
+      "support": "Arms Block square upper tower",
+      "point": [
+        -0.56,
+        0.2,
+        2.797
+      ]
+    },
+    {
+      "object": "Arms Block long roof mast",
+      "support": "Arms Block pale tower roof cap",
+      "point": [
+        -0.48,
+        0.24,
+        2.815
+      ]
+    },
+    {
+      "object": "Arms Block short roof mast",
+      "support": "Arms Block pale tower roof cap",
+      "point": [
+        -0.7,
+        0.11,
+        2.815
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-front 0",
+      "support": "Arms Block tower front dark field",
+      "point": [
+        -0.5600000023841858,
+        -0.01700000651180744,
+        2.609999895095825
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-front 1",
+      "support": "Arms Block tower front dark field",
+      "point": [
+        -0.6299999952316284,
+        -0.01700000651180744,
+        2.3999998569488525
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-front 2",
+      "support": "Arms Block tower front dark field",
+      "point": [
+        -0.49000000953674316,
+        -0.01700000651180744,
+        2.3999998569488525
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-front 3",
+      "support": "Arms Block tower front dark field",
+      "point": [
+        -0.6299999952316284,
+        -0.01700000651180744,
+        2.25
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-front 4",
+      "support": "Arms Block tower front dark field",
+      "point": [
+        -0.49000000953674316,
+        -0.01700000651180744,
+        2.25
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-right 0",
+      "support": "Arms Block tower right dark field",
+      "point": [
+        -0.3230002522468567,
+        0.20000000298023224,
+        2.609999895095825
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-right 1",
+      "support": "Arms Block tower right dark field",
+      "point": [
+        -0.3230002522468567,
+        0.20000000298023224,
+        2.359999895095825
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-right 2",
+      "support": "Arms Block tower right dark field",
+      "point": [
+        -0.3230002522468567,
+        0.20000000298023224,
+        2.2099997997283936
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-upper 0",
+      "support": "Arms Block lower upper front dark field",
+      "point": [
+        0.11000000685453415,
+        -0.5069996118545532,
+        1.1050000190734863
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-upper 1",
+      "support": "Arms Block lower upper front dark field",
+      "point": [
+        0.11000000685453415,
+        -0.5069996118545532,
+        0.9749999642372131
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-lower 0",
+      "support": "Arms Block lower lower front dark field",
+      "point": [
+        0.11000000685453415,
+        -0.5070000886917114,
+        0.6349999904632568
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-lower 1",
+      "support": "Arms Block lower lower front dark field",
+      "point": [
+        0.11000000685453415,
+        -0.5070000886917114,
+        0.48500001430511475
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-lower 2",
+      "support": "Arms Block lower lower front dark field",
+      "point": [
+        0.3700000047683716,
+        -0.5070000886917114,
+        0.6349999904632568
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-lower 3",
+      "support": "Arms Block lower lower front dark field",
+      "point": [
+        0.3700000047683716,
+        -0.5070000886917114,
+        0.48500001430511475
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-end 0",
+      "support": "Arms Block lower end dark field",
+      "point": [
+        0.896999716758728,
+        -0.20999999344348907,
+        0.7549999952316284
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-end 1",
+      "support": "Arms Block lower end dark field",
+      "point": [
+        0.896999716758728,
+        -0.20999999344348907,
+        0.5850000381469727
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-end 2",
+      "support": "Arms Block lower end dark field",
+      "point": [
+        0.896999716758728,
+        0.17000000178813934,
+        0.7549999952316284
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-end 3",
+      "support": "Arms Block lower end dark field",
+      "point": [
+        0.896999716758728,
+        0.17000000178813934,
+        0.5850000381469727
+      ]
+    },
+    {
+      "object": "Arms Block amber roof-post 0",
+      "support": "Arms Block roof post dark field",
+      "point": [
+        0.4000000059604645,
+        0.022999828681349754,
+        1.5800000429153442
+      ]
+    },
+    {
+      "object": "Arms Block amber under-emblem 0",
+      "support": "Arms Block under emblem dark field 0",
+      "point": [
+        -0.9100000262260437,
+        -0.5301529169082642,
+        0.27927204966545105
+      ]
+    },
+    {
+      "object": "Arms Block amber under-emblem 1",
+      "support": "Arms Block under emblem dark field 1",
+      "point": [
+        -0.6499999761581421,
+        -0.5301533937454224,
+        0.27927204966545105
+      ]
+    },
+    {
+      "object": "Arms Block amber under-emblem 2",
+      "support": "Arms Block under emblem dark field 2",
+      "point": [
+        -0.3700000047683716,
+        -0.5301536321640015,
+        0.27927204966545105
+      ]
+    },
+    {
+      "object": "Arms Block pale end upright 0",
+      "support": "Arms Block lower connected service block",
+      "point": [
+        0.892,
+        -0.42,
+        0.75
+      ]
+    },
+    {
+      "object": "Arms Block pale end upright 1",
+      "support": "Arms Block lower connected service block",
+      "point": [
+        0.892,
+        -0.02,
+        0.75
+      ]
+    },
+    {
+      "object": "Arms Block pale end upright 2",
+      "support": "Arms Block lower connected service block",
+      "point": [
+        0.892,
+        0.38,
+        0.75
+      ]
+    },
+    {
+      "object": "Arms Block pale end cross frame",
+      "support": "Arms Block lower connected service block",
+      "point": [
+        0.91,
+        0,
+        1.1
+      ]
+    },
+    {
+      "object": "Arms Block low roof service fitting 0",
+      "support": "Arms Block lower connected service block",
+      "point": [
+        0.1,
+        -0.23,
+        1.395
+      ]
+    },
+    {
+      "object": "Arms Block low roof service fitting 1",
+      "support": "Arms Block lower connected service block",
+      "point": [
+        0.66,
+        -0.23,
+        1.395
+      ]
+    },
+    {
+      "object": "Arms Block red source three-pronged mark",
+      "support": "Arms Block tall inclined emblem block",
+      "point": [
+        -0.800000011920929,
+        -0.36760279536247253,
+        0.9997509717941284
+      ]
+    }
+  ],
+  "part_batches": {
+    "Arms Block pale tower roof cap": "Arms Block pale roof and end assemblies",
+    "Arms Block long roof mast": "Arms Block pale roof and end assemblies",
+    "Arms Block short roof mast": "Arms Block pale roof and end assemblies",
+    "Arms Block pale end upright 0": "Arms Block pale roof and end assemblies",
+    "Arms Block pale end upright 1": "Arms Block pale roof and end assemblies",
+    "Arms Block pale end upright 2": "Arms Block pale roof and end assemblies",
+    "Arms Block pale end cross frame": "Arms Block pale roof and end assemblies",
+    "Arms Block low roof service fitting 0": "Arms Block pale roof and end assemblies",
+    "Arms Block low roof service fitting 1": "Arms Block pale roof and end assemblies",
+    "Arms Block tower front dark field": "Arms Block dark blind backings",
+    "Arms Block tower right dark field": "Arms Block dark blind backings",
+    "Arms Block lower upper front dark field": "Arms Block dark blind backings",
+    "Arms Block lower lower front dark field": "Arms Block dark blind backings",
+    "Arms Block lower end dark field": "Arms Block dark blind backings",
+    "Arms Block roof post dark field": "Arms Block dark blind backings",
+    "Arms Block under emblem dark field 0": "Arms Block dark blind backings",
+    "Arms Block under emblem dark field 1": "Arms Block dark blind backings",
+    "Arms Block under emblem dark field 2": "Arms Block dark blind backings",
+    "Arms Block roof fitting dark field 0": "Arms Block dark blind backings",
+    "Arms Block roof fitting dark field 1": "Arms Block dark blind backings",
+    "Arms Block red source three-pronged mark": "Arms Block red industrial mark",
+    "Arms Block amber tower-front 0": "Arms Block twenty-two source amber points",
+    "Arms Block amber tower-front 1": "Arms Block twenty-two source amber points",
+    "Arms Block amber tower-front 2": "Arms Block twenty-two source amber points",
+    "Arms Block amber tower-front 3": "Arms Block twenty-two source amber points",
+    "Arms Block amber tower-front 4": "Arms Block twenty-two source amber points",
+    "Arms Block amber tower-right 0": "Arms Block twenty-two source amber points",
+    "Arms Block amber tower-right 1": "Arms Block twenty-two source amber points",
+    "Arms Block amber tower-right 2": "Arms Block twenty-two source amber points",
+    "Arms Block amber lower-front-upper 0": "Arms Block twenty-two source amber points",
+    "Arms Block amber lower-front-upper 1": "Arms Block twenty-two source amber points",
+    "Arms Block amber lower-front-lower 0": "Arms Block twenty-two source amber points",
+    "Arms Block amber lower-front-lower 1": "Arms Block twenty-two source amber points",
+    "Arms Block amber lower-front-lower 2": "Arms Block twenty-two source amber points",
+    "Arms Block amber lower-front-lower 3": "Arms Block twenty-two source amber points",
+    "Arms Block amber lower-end 0": "Arms Block twenty-two source amber points",
+    "Arms Block amber lower-end 1": "Arms Block twenty-two source amber points",
+    "Arms Block amber lower-end 2": "Arms Block twenty-two source amber points",
+    "Arms Block amber lower-end 3": "Arms Block twenty-two source amber points",
+    "Arms Block amber roof-post 0": "Arms Block twenty-two source amber points",
+    "Arms Block amber under-emblem 0": "Arms Block twenty-two source amber points",
+    "Arms Block amber under-emblem 1": "Arms Block twenty-two source amber points",
+    "Arms Block amber under-emblem 2": "Arms Block twenty-two source amber points"
+  },
+  "physical_chips": [
+    {
+      "body": "Arms Block tall inclined emblem block",
+      "point": [
+        -0.9599999785423279,
+        0.0,
+        1.850000023841858
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "body": "Arms Block low rectangular cast plinth",
+      "point": [
+        0.7799999713897705,
+        -0.6800000071525574,
+        0.054999999701976776
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ],
+  "warm_points": [
+    {
+      "object": "Arms Block amber tower-front 0",
+      "group": "tower-front",
+      "centre": [
+        -0.5600000023841858,
+        -0.021000007167458534,
+        2.609999895095825
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-front 1",
+      "group": "tower-front",
+      "centre": [
+        -0.6299999952316284,
+        -0.021000007167458534,
+        2.3999998569488525
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-front 2",
+      "group": "tower-front",
+      "centre": [
+        -0.49000000953674316,
+        -0.021000007167458534,
+        2.3999998569488525
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-front 3",
+      "group": "tower-front",
+      "centre": [
+        -0.6299999952316284,
+        -0.021000007167458534,
+        2.25
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-front 4",
+      "group": "tower-front",
+      "centre": [
+        -0.49000000953674316,
+        -0.021000007167458534,
+        2.25
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-right 0",
+      "group": "tower-right",
+      "centre": [
+        -0.319000244140625,
+        0.20000000298023224,
+        2.609999895095825
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-right 1",
+      "group": "tower-right",
+      "centre": [
+        -0.319000244140625,
+        0.20000000298023224,
+        2.359999895095825
+      ]
+    },
+    {
+      "object": "Arms Block amber tower-right 2",
+      "group": "tower-right",
+      "centre": [
+        -0.319000244140625,
+        0.20000000298023224,
+        2.2099997997283936
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-upper 0",
+      "group": "lower-front-upper",
+      "centre": [
+        0.11000000685453415,
+        -0.5109996199607849,
+        1.1050000190734863
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-upper 1",
+      "group": "lower-front-upper",
+      "centre": [
+        0.11000000685453415,
+        -0.5109996199607849,
+        0.9749999642372131
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-lower 0",
+      "group": "lower-front-lower",
+      "centre": [
+        0.11000000685453415,
+        -0.5110000967979431,
+        0.6349999904632568
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-lower 1",
+      "group": "lower-front-lower",
+      "centre": [
+        0.11000000685453415,
+        -0.5110000967979431,
+        0.48500001430511475
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-lower 2",
+      "group": "lower-front-lower",
+      "centre": [
+        0.3700000047683716,
+        -0.5110000967979431,
+        0.6349999904632568
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-front-lower 3",
+      "group": "lower-front-lower",
+      "centre": [
+        0.3700000047683716,
+        -0.5110000967979431,
+        0.48500001430511475
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-end 0",
+      "group": "lower-end",
+      "centre": [
+        0.9009997248649597,
+        -0.20999999344348907,
+        0.7549999952316284
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-end 1",
+      "group": "lower-end",
+      "centre": [
+        0.9009997248649597,
+        -0.20999999344348907,
+        0.5850000381469727
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-end 2",
+      "group": "lower-end",
+      "centre": [
+        0.9009997248649597,
+        0.17000000178813934,
+        0.7549999952316284
+      ]
+    },
+    {
+      "object": "Arms Block amber lower-end 3",
+      "group": "lower-end",
+      "centre": [
+        0.9009997248649597,
+        0.17000000178813934,
+        0.5850000381469727
+      ]
+    },
+    {
+      "object": "Arms Block amber roof-post 0",
+      "group": "roof-post",
+      "centre": [
+        0.4000000059604645,
+        0.018999828025698662,
+        1.5800000429153442
+      ]
+    },
+    {
+      "object": "Arms Block amber under-emblem 0",
+      "group": "under-emblem",
+      "centre": [
+        -0.9100000262260437,
+        -0.5340268611907959,
+        0.28026822209358215
+      ]
+    },
+    {
+      "object": "Arms Block amber under-emblem 1",
+      "group": "under-emblem",
+      "centre": [
+        -0.6499999761581421,
+        -0.5340273380279541,
+        0.28026822209358215
+      ]
+    },
+    {
+      "object": "Arms Block amber under-emblem 2",
+      "group": "under-emblem",
+      "centre": [
+        -0.3700000047683716,
+        -0.5340275764465332,
+        0.28026822209358215
+      ]
+    }
+  ],
+  "steady_service_field_emission": {
+    "colour": [
+      0.3,
+      0.18,
+      0.05
+    ],
+    "strength": 0.65,
+    "opaque": true,
+    "scope": "Authored steady source-colour preservation,not recovered light phases."
+  },
+  "interpretation": [
+    "Own sloping red-emblem block,tower with two unequal masts,lower service block/end framing/sloping foot/roof post and22visible warm points govern anatomy.",
+    "Hidden rear walls,roof-fitting depths,paint profile,mount engineering andcell-relative dimensions authored. GenericPB07factory/ST06armour context doesnot establish Mauna operation."
+  ],
+  "scale_contract": "4x4 placement footprint,+Zup/-Yfront,ground0. Cell-relative dimensions authored;metric scale not recovered.",
+  "concept_review": "sources/docs/reconstruction/models/mn12-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

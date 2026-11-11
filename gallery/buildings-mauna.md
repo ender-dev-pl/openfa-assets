@@ -140,11 +140,13 @@ Additional views: [Front](../gallery/media/objects/mauna/fast-breeder-reactor/fr
 
 `openfa:building/legacy/141`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Arms Block](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn12/front-quarter.png)
+![Arms Block](../gallery/media/objects/mauna/arms-block/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn12/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn12/model.glb)
+[Blend](../sources/objects/mauna/arms-block/model.blend) · [GLB](../sources/objects/mauna/arms-block/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/arms-block/front.png) · [Rear quarter](../gallery/media/objects/mauna/arms-block/rear-quarter.png) · [Tower, masts and source warm fields](../gallery/media/objects/mauna/arms-block/tower-masts-and-warm-fields-detail.png) · [Inclined red emblem and connected service block](../gallery/media/objects/mauna/arms-block/red-emblem-and-service-block-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/arms-block/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/arms-block/concept-glb-comparison.jpg)
 
 ## Defence Pods
 
