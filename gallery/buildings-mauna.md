@@ -192,11 +192,13 @@ Additional views: [Front](../gallery/media/objects/mauna/pulse-tower/front.png) 
 
 `openfa:building/legacy/145`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Screening Pods](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn16/front-quarter.png)
+![Screening Pods](../gallery/media/objects/mauna/screening-pods/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn16/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn16/model.glb)
+[Blend](../sources/objects/mauna/screening-pods/model.blend) · [GLB](../sources/objects/mauna/screening-pods/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/screening-pods/front.png) · [Rear quarter](../gallery/media/objects/mauna/screening-pods/rear-quarter.png) · [Three warm caps and open roof brackets](../gallery/media/objects/mauna/screening-pods/three-warm-caps-and-open-roof-brackets-detail.png) · [Two front fields and red side stripe](../gallery/media/objects/mauna/screening-pods/two-front-recesses-and-red-side-flutes-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/screening-pods/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/screening-pods/concept-glb-comparison.jpg)
 
 ## Advanced Extraction Unit
 
