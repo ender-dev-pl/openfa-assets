@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/123",
+  "binaries": {
+    "blend": "aeccfeeaf9d8a340117d21fcc57a79c19994ca6459ccd4d9719128d5cbe9ea59",
+    "glb": "afb880854d1c53b6769ecf3a182d2391bbcb8bd0cd3ac54e93d6e3d6f677fada"
+  },
+  "runtime_report_sha256": "68a27d390e1df9977fb6c121a0830b6593c97986197d7d9b7efdbc52f2983b8a",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00012057323963070139,
+      "margin": 75
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00039741291981609914,
+      "margin": 45
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00042977100919048774,
+      "margin": 99
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar17-review-1.png",
+      "sha256": "760dec4da7e3f33a8dcc8c62204e55125171aa3415e51da2d4f10300eb7e06da",
+      "prompt": "sources/docs/reconstruction/models/ar17-concept-prompt-1.txt",
+      "feedback": "Selected squat green two-hoop fixed base,pale tapered shoulder collar,one small rounded bulb-like rotating head and one long inclined tapered collared emitter,two fixed front-right dark points. No added antenna,second emitter or Terran side pods. Actual source governs proportions and placement;hidden bore/bearing sections and timing authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "5c7d8c7d5e5798e9570fe3ee50e4e89e52047204d85cd0b94baa9cab5def33e6",
+        "glb": "149e1ea26fff6d07d7f0094c20fcbbc53e64a37e9c062f7786f2a991f5cee3bb"
+      },
+      "runtime_report_sha256": "7a1df5b1f505a01dc0b415892d5268aad344031e1785e928277037075498a05c",
+      "status": "revision_required",
+      "finding": "Actual quarter render/source/concept comparison retains anatomy but bulb head has a conspicuous hard horizontal shading band from sparse piecewise-linear profile/hard normal transitions,unlike rounded source/concept.",
+      "action": "Replace head loft with sampled ellipsoidal bulb,continuous head normals and height-normalized UVs. Preserve small head/base proportion,actual emitter/bearing contacts,own16heading rotation and all surface/recess/dent checks;rerender."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "6045d480530295aef5dd0921ff9fd1e377e3ef6e684b7a4e473597c43a70e4f8",
+        "glb": "976ed12abeaf268b8e001f972013245d7a3a4f260ff683991544d92f87b23072"
+      },
+      "runtime_report_sha256": "34f3464e9e8fc3dcadb584c1a3d0388fc20722201d754ab66f9b6e0dd0a1a7a1",
+      "status": "revision_required",
+      "finding": "Actual source/concept/import board and details show corrected rounded head,but exposed pale shoulder occupies too much radial width and reads as a broad flat silver disc rather than the narrower conical collar in source/concept.",
+      "action": "Restrict exposed shoulder material to the upper narrower cone,retaining lower shoulder green. Add actual ray/material witnesses to distinguish green outer shoulder from pale inner collar;rerun native/imported checks and renders."
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "aeccfeeaf9d8a340117d21fcc57a79c19994ca6459ccd4d9719128d5cbe9ea59",
+        "glb": "afb880854d1c53b6769ecf3a182d2391bbcb8bd0cd3ac54e93d6e3d6f677fada"
+      },
+      "runtime_report_sha256": "68a27d390e1df9977fb6c121a0830b6593c97986197d7d9b7efdbc52f2983b8a",
+      "status": "agent_accepted",
+      "finding": "Actual legacy/concept/import comparison, whole rear view and bulb/emitter detail reviewed. Narrow upper pale collar retains green outer shoulder and rounded small head. Actual native/import geometry and material witnesses pass; user/client acceptance remains separate."
+    }
+  ],
+  "final_review": "Actual paletted source/concept/imported whole/front/rear and head/collar/fixed-point details reviewed. Squat green fixed two-hoop base and pale conical shoulder support one small rounded rotating bulb head with a single inclined tapered collared emitter. Exactly two fixed front-right points are actual shallow recesses. Actual17heading native/import geometry validates rotating attached head/emitter,stationary base/points,two physical hoop reliefs,small head/base proportions,blind emitter bore and actual dent. Actual render feedback replaces a sparse hard-banded head profile with a sampled rounded ellipsoid,continuous head normals and height-normalized UVs. Further whole-view feedback narrows exposed pale collar to the inner upper cone,keeping outer shoulder green. No added stem,second emitter or generic Terran shield/side pods. Preview timing/hidden sections authored;user/client acceptance separate.",
+  "limitations": [
+    "Exact hidden engineering,bearing/emitter sections and metric dimensions remain authored or unknown.",
+    "Own16heading overlays establish rotation;four-second preview duration does not claim recovered gameplay timing or client aiming control.",
+    "PB17/ST19 are semantically bound generic Terran plasma-turret counterparts,not Artemian anatomy. Final user artistic acceptance,client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

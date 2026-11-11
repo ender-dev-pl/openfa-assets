@@ -25467,7 +25467,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/123",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           984
         ]
@@ -25541,21 +25541,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar17/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/auto-deterrent/model.blend",
           "present": true,
-          "sha256": "24827cbbd42ede6d052943858986ea3c7b9d73d7181a089478caf8965604addf",
-          "final_visual_acceptance": "not-established"
+          "sha256": "aeccfeeaf9d8a340117d21fcc57a79c19994ca6459ccd4d9719128d5cbe9ea59",
+          "media": "gallery/media/objects/artemian/auto-deterrent",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/auto-deterrent/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/auto-deterrent/rear-quarter.png"
+            },
+            {
+              "label": "Bulb head,emitter and pale collar",
+              "image": "gallery/media/objects/artemian/auto-deterrent/bulb-emitter-and-pale-collar-detail.png"
+            },
+            {
+              "label": "Two hoops and fixed dark points",
+              "image": "gallery/media/objects/artemian/auto-deterrent/two-hoops-and-fixed-points-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/auto-deterrent/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/auto-deterrent/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -25585,6 +25612,88 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 123
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar17/model.blend",
+          "present": true,
+          "sha256": "24827cbbd42ede6d052943858986ea3c7b9d73d7181a089478caf8965604addf",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/auto-deterrent/model.blend",
+        "sha256": "aeccfeeaf9d8a340117d21fcc57a79c19994ca6459ccd4d9719128d5cbe9ea59",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/auto-deterrent",
+          "verifier": "sources/tools/blender/verify_artemian_auto_deterrent.py",
+          "files": {
+            "sources/objects/artemian/auto-deterrent/model.blend": "aeccfeeaf9d8a340117d21fcc57a79c19994ca6459ccd4d9719128d5cbe9ea59",
+            "sources/objects/artemian/auto-deterrent/model.glb": "afb880854d1c53b6769ecf3a182d2391bbcb8bd0cd3ac54e93d6e3d6f677fada",
+            "sources/objects/artemian/auto-deterrent/model.json": "baef3d1ee33215fff11a1b1bbaa7467c0d87b5c872df82bc81fdcc37cd4151aa",
+            "sources/objects/artemian/auto-deterrent/README.md": "bb9973dd45e58725cb2953c270342f5c07ffc969506d43ce38ff6e75c9e230a8",
+            "sources/objects/artemian/auto-deterrent/runtime-review.json": "68a27d390e1df9977fb6c121a0830b6593c97986197d7d9b7efdbc52f2983b8a",
+            "sources/objects/artemian/auto-deterrent/visual-review.json": "284f12ab081d35a9c8429e44972cca3666fe05256816167f29176648ebea5554",
+            "gallery/media/objects/artemian/auto-deterrent/animation-00.webm": "4d96a7844bb1f7ff66c0afe7cfdf311b154ed03e9fb2bc13bd399a8db3cd941c",
+            "gallery/media/objects/artemian/auto-deterrent/animation-previews.json": "b1fdebb0d7c6f942da5acbb87bda1cb982d136bb455c915bb9b7eca2d27f52bb",
+            "gallery/media/objects/artemian/auto-deterrent/bulb-emitter-and-pale-collar-detail.png": "45fd0962b5cbeda7cd35a9f93453e504435e1590f156db37208e12073563daf3",
+            "gallery/media/objects/artemian/auto-deterrent/concept-glb-comparison.jpg": "4d860da6c590f00e8b9af06bc3cfa848b05512d7f41114412087f7a9f7381a8e",
+            "gallery/media/objects/artemian/auto-deterrent/front-quarter.png": "cbf725b12da1385c122c52df95baaa32c9bd1bee9369ce10920ab33932d099ea",
+            "gallery/media/objects/artemian/auto-deterrent/front.png": "0209def9d8d99c87674e1f9e973ce74b20827170c1d440137e0c66150b164ce4",
+            "gallery/media/objects/artemian/auto-deterrent/imported-front-quarter.png": "cbf725b12da1385c122c52df95baaa32c9bd1bee9369ce10920ab33932d099ea",
+            "gallery/media/objects/artemian/auto-deterrent/imported-front.png": "0209def9d8d99c87674e1f9e973ce74b20827170c1d440137e0c66150b164ce4",
+            "gallery/media/objects/artemian/auto-deterrent/imported-rear-quarter.png": "665bcd704124e9d4b8768ff1ab582baf29f00bf29983d8358460936dd60a28f6",
+            "gallery/media/objects/artemian/auto-deterrent/native-front-quarter.png": "4ff1bd1266af5e5a3b73dc45dd842386274d9c29f6b68c1e3fea05fa80d88963",
+            "gallery/media/objects/artemian/auto-deterrent/native-front.png": "babe82db7f12e24cb004a3c9f87de8cd19cc1f92e6a5341ac4a58084978d77c8",
+            "gallery/media/objects/artemian/auto-deterrent/native-rear-quarter.png": "a8121d918016e47b683145fa5ad24545707c296302cefe7842d5bc827f2d2542",
+            "gallery/media/objects/artemian/auto-deterrent/rear-quarter.png": "665bcd704124e9d4b8768ff1ab582baf29f00bf29983d8358460936dd60a28f6",
+            "gallery/media/objects/artemian/auto-deterrent/technical-wireframe.png": "1cbcc0696860c74c5496f7744daf94fc5cdb9064af1255e2401ffd7d11b12774",
+            "gallery/media/objects/artemian/auto-deterrent/two-hoops-and-fixed-points-detail.png": "d98419c7bacf2af66823a0f9860e67f344e54090fdc772a9685e210c3406a199",
+            "sources/materials/artemian/auto-deterrent/exposed-alloy-edge-colour.png": "e343658d8fdb303e5c9af651672d7facfd2fc4706e25e0b05393f9f182fb2403",
+            "sources/materials/artemian/auto-deterrent/muted-green-alloy-colour.png": "568234c474663e45499a325caf42be9a2a44ce7bdeb21db232c5389b9d6440a5",
+            "sources/materials/artemian/auto-deterrent/occlusion-roughness-metallic.png": "0e2f041399629d340e71a1d5a34bb8e2a389e800fcfd406a1bff22c5c3d8bf5d",
+            "sources/materials/artemian/auto-deterrent/used-metal-normal.png": "eb53457b8d394a1588449fe05da9849dc085987b4fd5a3a052be651026938a92",
+            "sources/tools/blender/render_artemian_auto_deterrent_animation.py": "bbe3227dcb80ba71b21788ee824119ce763dca486b0b907af329427237b4229b",
+            "sources/tools/blender/remaster_artemian_auto_deterrent.py": "f3d841f01d318bd3f6ec095ea733bc2465c0a57392d4a7e0b95e2c0457917051",
+            "sources/tools/blender/verify_artemian_auto_deterrent.py": "2620a99eeefa6b1d42bbb4f997a3af30845ae622beb76c9f518f86f4e0feb21f",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar17-concept-review.json": "25c4d67795f1405b843e31939adc7a94d6d8cc05f572c3ed47c340f72ad9511b",
+            "sources/docs/reconstruction/models/ar17-concept-prompt-1.txt": "bafced7e19fe21748d2e692189ef0b1be402de7fb17ccaa7e01928a26ec975eb",
+            "gallery/media/concepts/artemian/ar17-review-1.png": "760dec4da7e3f33a8dcc8c62204e55125171aa3415e51da2d4f10300eb7e06da"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/auto-deterrent/visual-review.json",
+          "sha256": "284f12ab081d35a9c8429e44972cca3666fe05256816167f29176648ebea5554",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/auto-deterrent/visual-review.json",
+          "sha256": "284f12ab081d35a9c8429e44972cca3666fe05256816167f29176648ebea5554",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/auto-deterrent/visual-review.json",
+          "sha256": "284f12ab081d35a9c8429e44972cca3666fe05256816167f29176648ebea5554",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/auto-deterrent/visual-review.json",
+          "sha256": "284f12ab081d35a9c8429e44972cca3666fe05256816167f29176648ebea5554",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/auto-deterrent/runtime-review.json",
+          "sha256": "68a27d390e1df9977fb6c121a0830b6593c97986197d7d9b7efdbc52f2983b8a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

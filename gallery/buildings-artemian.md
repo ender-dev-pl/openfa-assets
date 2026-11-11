@@ -202,13 +202,15 @@ Additional views: [Front](../gallery/media/objects/artemian/missile-launcher/fro
 
 `openfa:building/legacy/123`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Auto-deterrent](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar17/front-quarter.png)
+![Auto-deterrent](../gallery/media/objects/artemian/auto-deterrent/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar17/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar17/model.glb)
+[Blend](../sources/objects/artemian/auto-deterrent/model.blend) · [GLB](../sources/objects/artemian/auto-deterrent/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar17/animation-00.webm)
+Additional views: [Front](../gallery/media/objects/artemian/auto-deterrent/front.png) · [Rear quarter](../gallery/media/objects/artemian/auto-deterrent/rear-quarter.png) · [Bulb head,emitter and pale collar](../gallery/media/objects/artemian/auto-deterrent/bulb-emitter-and-pale-collar-detail.png) · [Two hoops and fixed dark points](../gallery/media/objects/artemian/auto-deterrent/two-hoops-and-fixed-points-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/auto-deterrent/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/auto-deterrent/concept-glb-comparison.jpg)
+
+[Play animation: AutoDeterrentAzimuth](../gallery/media/objects/artemian/auto-deterrent/animation-00.webm)
 
 ## Super-deterrent
 
