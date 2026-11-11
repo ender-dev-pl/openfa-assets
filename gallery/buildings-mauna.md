@@ -66,11 +66,13 @@ Additional views: [Front](../gallery/media/objects/mauna/health-block/front.png)
 
 `openfa:building/legacy/135`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![The Cube](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn06/front-quarter.png)
+![The Cube](../gallery/media/objects/mauna/the-cube/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn06/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn06/model.glb)
+[Blend](../sources/objects/mauna/the-cube/model.blend) · [GLB](../sources/objects/mauna/the-cube/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/the-cube/front.png) · [Rear quarter](../gallery/media/objects/mauna/the-cube/rear-quarter.png) · [Slotted roof block and three pins](../gallery/media/objects/mauna/the-cube/slotted-roof-block-and-three-pins-detail.png) · [Red bands,pale slits and unequal staves](../gallery/media/objects/mauna/the-cube/red-bands-pale-slits-and-unequal-staves-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/the-cube/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/the-cube/concept-glb-comparison.jpg)
 
 ## Elite Block
 
