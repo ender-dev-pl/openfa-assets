@@ -232,11 +232,13 @@ Additional views: [Front](../gallery/media/objects/artemian/super-deterrent/fron
 
 `openfa:building/legacy/125`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Force Fields](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar19/front-quarter.png)
+![Force Fields](../gallery/media/objects/artemian/force-fields/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar19/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar19/model.glb)
+[Blend](../sources/objects/artemian/force-fields/model.blend) · [GLB](../sources/objects/artemian/force-fields/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/force-fields/front.png) · [Rear quarter](../gallery/media/objects/artemian/force-fields/rear-quarter.png) · [Two open capsules and six supported segments](../gallery/media/objects/artemian/force-fields/open-capsules-and-three-segments-detail.png) · [Pale end closure and front fittings](../gallery/media/objects/artemian/force-fields/pale-face-and-front-fittings-detail.png) · [Low-light steady emission on](../gallery/media/objects/artemian/force-fields/emission-review-on.png) · [Same view with material emission off](../gallery/media/objects/artemian/force-fields/emission-review-off.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/force-fields/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/force-fields/concept-glb-comparison.jpg)
 
 ## Advanced Ore Extractor
 

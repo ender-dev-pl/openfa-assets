@@ -26000,7 +26000,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/125",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           986
         ]
@@ -26074,21 +26074,56 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar19/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/force-fields/model.blend",
           "present": true,
-          "sha256": "448d2ff36b3c53b0bd7b8a06134579289d32a6a6b2735089c8010c4f5d10ed10",
-          "final_visual_acceptance": "not-established"
+          "sha256": "4dd4f5d63017732b0a4c73c9f9dcd5b3a4d4f00cdf8164e72f0fff69b267a496",
+          "media": "gallery/media/objects/artemian/force-fields",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/force-fields/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/force-fields/rear-quarter.png"
+            },
+            {
+              "label": "Two open capsules and six supported segments",
+              "image": "gallery/media/objects/artemian/force-fields/open-capsules-and-three-segments-detail.png"
+            },
+            {
+              "label": "Pale end closure and front fittings",
+              "image": "gallery/media/objects/artemian/force-fields/pale-face-and-front-fittings-detail.png"
+            },
+            {
+              "label": "Low-light steady emission on",
+              "image": "gallery/media/objects/artemian/force-fields/emission-review-on.png"
+            },
+            {
+              "label": "Same view with material emission off",
+              "image": "gallery/media/objects/artemian/force-fields/emission-review-off.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/force-fields/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/force-fields/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -26118,6 +26153,92 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 125
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar19/model.blend",
+          "present": true,
+          "sha256": "448d2ff36b3c53b0bd7b8a06134579289d32a6a6b2735089c8010c4f5d10ed10",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/force-fields/model.blend",
+        "sha256": "4dd4f5d63017732b0a4c73c9f9dcd5b3a4d4f00cdf8164e72f0fff69b267a496",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/force-fields",
+          "verifier": "sources/tools/blender/verify_artemian_force_fields.py",
+          "files": {
+            "sources/objects/artemian/force-fields/emission-review.json": "4530527808f465583498fe8f899d70e27929e436502d1902f92473b05d31f30c",
+            "sources/objects/artemian/force-fields/model.blend": "4dd4f5d63017732b0a4c73c9f9dcd5b3a4d4f00cdf8164e72f0fff69b267a496",
+            "sources/objects/artemian/force-fields/model.glb": "720ef20e75fe55330b9e00080eaa2135e97125523c0633b60c4e4e77854a522c",
+            "sources/objects/artemian/force-fields/model.json": "7b09fa1edbcad3138dc7efab27e1c14d2b630c52d39111aea429db280406775c",
+            "sources/objects/artemian/force-fields/README.md": "ed2dd730a0332df9e501b6451721b06dabe0d1c938c9e32fe4553a1b74e4b225",
+            "sources/objects/artemian/force-fields/runtime-review.json": "d701493ace1496102c7b1606630ba551605c8366b60b75edb93aa8c974a6d2aa",
+            "sources/objects/artemian/force-fields/visual-review.json": "d10d3187b7ded9402acb638db94598610a80de5e6799c5621e28a00af652c671",
+            "gallery/media/objects/artemian/force-fields/concept-glb-comparison.jpg": "d7ad11792c6a1579e8161ec224e45cd3191b0cbe50579884280e0320fad24872",
+            "gallery/media/objects/artemian/force-fields/emission-review-off.png": "44adcbf486ac2b3a7b6672e1d93badf11b0521759448552bf3ef5c5f6ef5603a",
+            "gallery/media/objects/artemian/force-fields/emission-review-on.png": "96de167aff685ddca827e64d0381dff0d040f3bd27b7e49acda0eb0b12a43f55",
+            "gallery/media/objects/artemian/force-fields/front-quarter.png": "cb905838ee9ce0d8db1d8fda5d4ffa7fce9d522f0fa6533c55212e7884fdfe5e",
+            "gallery/media/objects/artemian/force-fields/front.png": "b3d9cb3a5b3a0a629d945b79530d3f837a4bfed7666586a90ee1d088f3847c6d",
+            "gallery/media/objects/artemian/force-fields/imported-front-quarter.png": "cb905838ee9ce0d8db1d8fda5d4ffa7fce9d522f0fa6533c55212e7884fdfe5e",
+            "gallery/media/objects/artemian/force-fields/imported-front.png": "b3d9cb3a5b3a0a629d945b79530d3f837a4bfed7666586a90ee1d088f3847c6d",
+            "gallery/media/objects/artemian/force-fields/imported-rear-quarter.png": "106c938faa151f8843df4279c99e42bfb075f157e5d68b5f1cf87eb1e4ad0232",
+            "gallery/media/objects/artemian/force-fields/native-front-quarter.png": "c427df5901a0697c89e99dd0789552cb1658fd8f059ed78fc660c72d67cf775b",
+            "gallery/media/objects/artemian/force-fields/native-front.png": "dcae8b0bd3c4a12d642a13b1305ba6167dd5d31470b61ec415a81ff3df562eaf",
+            "gallery/media/objects/artemian/force-fields/native-rear-quarter.png": "ad459444427e855b71ea1160138968e71bb13733edc226e2d49abb364d0d91a9",
+            "gallery/media/objects/artemian/force-fields/open-capsules-and-three-segments-detail.png": "1c34a9287a3db569b75e4caf5946f25cf7148b1264a0ba119dd636b96ce19a92",
+            "gallery/media/objects/artemian/force-fields/pale-face-and-front-fittings-detail.png": "33ace8afeaa3707d11baa78cce1f055aeff291b8408e95fa51109c8bc9a1e138",
+            "gallery/media/objects/artemian/force-fields/rear-quarter.png": "106c938faa151f8843df4279c99e42bfb075f157e5d68b5f1cf87eb1e4ad0232",
+            "gallery/media/objects/artemian/force-fields/technical-wireframe.png": "5e1f1fda2ed92644b5f16638f1791a0d3f9f7249ade40b14f54afe4f83c8a133",
+            "sources/materials/artemian/force-fields/amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+            "sources/materials/artemian/force-fields/copper-fitting-colour.png": "f5bec5f91ece22d7e9c06834019f56d3fb8cffbecfd92582ccf1668095a4d442",
+            "sources/materials/artemian/force-fields/exposed-alloy-edge-colour.png": "dea83a72c3a25d0d85f3b1e47d7c6d05ef61362c68b101d010e8213a4cf4634b",
+            "sources/materials/artemian/force-fields/muted-green-alloy-colour.png": "964111f18bace215811e3676b1ee22ddcaa895a063cf10cb0233a174bd6d0029",
+            "sources/materials/artemian/force-fields/occlusion-roughness-metallic.png": "a4afd72746882546b0e4505978b72ff9970779424a47b5e7dbb55f50d335a95e",
+            "sources/materials/artemian/force-fields/oxidized-alloy-orm.png": "042116cb470332be148b4963824e6e76c245b4929db3f741b7c38cefd4301766",
+            "sources/materials/artemian/force-fields/used-metal-normal.png": "2c4a6bf9523be5759882228489fcf84be32cd1a1408e165250cf9ce07a8f3ca3",
+            "sources/tools/blender/verify_artemian_force_fields_emission.py": "c39e519427bae7f4a76e89c39224b2895b3ff34355278fef77b0052117d8ee23",
+            "sources/tools/blender/remaster_artemian_force_fields.py": "5c1789397fb3c3c0db39e62807d49cadc02ac2159b413885b2fb8bb6f17e3f62",
+            "sources/tools/blender/verify_artemian_force_fields.py": "4836eb693e86e1e2429d84bc1f7865aa1db3d4912c9b0720a12606c4fa20bcbc",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar19-concept-review.json": "8627ac54e08ccb95d0dc43fa24776548c71a438c12e24da23593fd79721dc0fd",
+            "sources/docs/reconstruction/models/ar19-concept-prompt-1.txt": "a68efd08c61dde224a1faf16dedc8b10882daf753b2c491155b36678be605356",
+            "gallery/media/concepts/artemian/ar19-review-1.png": "3ee6714672e172f6eb3ae038972053a065d154616bd7dcb0fe02ae02f07cc6a5"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/force-fields/visual-review.json",
+          "sha256": "d10d3187b7ded9402acb638db94598610a80de5e6799c5621e28a00af652c671",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/force-fields/visual-review.json",
+          "sha256": "d10d3187b7ded9402acb638db94598610a80de5e6799c5621e28a00af652c671",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/force-fields/visual-review.json",
+          "sha256": "d10d3187b7ded9402acb638db94598610a80de5e6799c5621e28a00af652c671",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/force-fields/visual-review.json",
+          "sha256": "d10d3187b7ded9402acb638db94598610a80de5e6799c5621e28a00af652c671",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/force-fields/runtime-review.json",
+          "sha256": "d701493ace1496102c7b1606630ba551605c8366b60b75edb93aa8c974a6d2aa",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

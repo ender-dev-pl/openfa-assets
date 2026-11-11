@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/125",
+  "binaries": {
+    "blend": "4dd4f5d63017732b0a4c73c9f9dcd5b3a4d4f00cdf8164e72f0fff69b267a496",
+    "glb": "720ef20e75fe55330b9e00080eaa2135e97125523c0633b60c4e4e77854a522c"
+  },
+  "runtime_report_sha256": "d701493ace1496102c7b1606630ba551605c8366b60b75edb93aa8c974a6d2aa",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0022723913686077445,
+      "margin": 44
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0011885023403225097,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0006532024574535697,
+      "margin": 44
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar19-review-1.png",
+      "sha256": "3ee6714672e172f6eb3ae038972053a065d154616bd7dcb0fe02ae02f07cc6a5",
+      "prompt": "sources/docs/reconstruction/models/ar19-concept-prompt-1.txt",
+      "feedback": "Selected low rounded green housing,large pale circular face/copper centre,two tall supported open bottle frames with3amber segments each and2gold caps,front rail/two stacked dark points/lower toe. Source counts and placement govern geometry. No third Terran projector or borrowed pulse. Warm steady emission is an explicit optical interpretation,not recovered Artemian operating timing."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "ee6db2e90319a03bc2e33861fdb23bea20ddd53ccbd4a6e7fd51c12fdeaa20fb",
+        "glb": "52cce48494b2ca98a94b0b97cec8d5f16a2996eeb4b52df774b47b6efde51d66"
+      },
+      "runtime_report_sha256": "33dae160365d6c8b65e8637ddfb36e3f39674ac8a3541219f87d4dca060cc2fd",
+      "status": "revision_required",
+      "finding": "Actual native whole render against source/concept shows a small bolted side shield with remaining green nose beyond it. Source/concept broad pale face closes the right end of a horizontal housing.",
+      "action": "Give the housing a flat right-end section and a broad ellipse matching its actual section. Copper inset remains blind/seated. Keep all physical contact,segment/frame,rail,toe and emission guards;update exact housing-width expectation to the explicitly revised end-cap geometry."
+    },
+    {
+      "status": "revision_required",
+      "binaries": {
+        "blend": "52ce7d443a08fed0a20e92deab1da44bef30ae5c4b5a5540845f40acd116df69",
+        "glb": "828c7d872720c7ef360f7916698d75c3382deb904bbd18051b1a26001870e50c"
+      },
+      "finding": "Actual end-face render now has the source/concept closure position,but pale face and copper centre read too dark/green under the real PBR studio. Source/concept distinguish pale oxidized face and a visible warm centre.",
+      "action": "Lighten exposed alloy colour to pale cool grey and use authored oxidized metallicFactor0.35 on exposed/copper surfaces. Retain quiet green housing and all unchanged geometry/contact guards. No face emission added.",
+      "pass_number": 2,
+      "runtime_report_sha256": "658bad6dcdbe8d565c9a9fd3b2c0d01198fc0a200f1a5910472427587777221c"
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "c473bf3bebdf7d2ce82bbc728a268da3835b93b88eceef5ff7a65ac7175a0a61",
+        "glb": "7ffa78caf39355dadd6eae09075e75851118501b32cc8292f94506d0fe03a67c"
+      },
+      "runtime_report_sha256": "aceb4bb48e998305f38b159328b7239cd2999d39e19fbd738815da5f4f070349",
+      "status": "revision_required",
+      "finding": "Actual source/concept/import board shows lower small point too low and foreshortened beneath the rounded body;source relative height is nearer38%of housing height,upper point near73%. Pale vertical rail reads as a curved stripe rather than a straight fabricated component. Bottle frames have angular shoulders and copper centre reads as a deep hole.",
+      "action": "Raise source-specific point positions toZ.45/.26,restore a longer lower toe while preserving clearance,make a straight rail with2real hidden support brackets,round frame contours without changing count/height/openings,and bring copper front closer to pale closure. Preserve all actual core/frame/recess/body/dent/emission contracts."
+    },
+    {
+      "pass_number": 4,
+      "binaries": {
+        "blend": "4dd4f5d63017732b0a4c73c9f9dcd5b3a4d4f00cdf8164e72f0fff69b267a496",
+        "glb": "720ef20e75fe55330b9e00080eaa2135e97125523c0633b60c4e4e77854a522c"
+      },
+      "runtime_report_sha256": "d701493ace1496102c7b1606630ba551605c8366b60b75edb93aa8c974a6d2aa",
+      "status": "accepted_asset_review",
+      "finding": "Viewed final source/concept/native/imported whole and detail renders. Two rounded open frames each retain three supported amber segments and gold tip. Broad pale end closure has copper centre. Both raised small front points, straight supported pale rail and lower toe remain distinct. Low-light on/off images show steady material emission; all eight independent samples pass. Final geometry has 24174 triangles and25 closed positive mesh parts; native/import geometry error is zero.",
+      "limitations": [
+        "Asset-agent review only; final user artistic acceptance and client integration remain separate. Steady emission is authored, not recovered operating timing."
+      ]
+    }
+  ],
+  "final_review": "Actual paletted own source,selected real ImageGen concept and native/imported GLB whole/front/rear/details reviewed. Two same-height upright open green bottle frames each contain3real supported amber segments and1gold cap,above a low horizontal green housing. A broad pale end closure with copper centre replaces an initial small side-mounted disc. Pale front rail,2stacked small dark points andlower toe retain source placement. All25closed positive meshes,actual frame openings/core support/endface/body contacts/recesses/rail/toe/dent checks agree in native/import. Pale oxidized surfaces use their own portable authored ORM rather than relying on exporter-synthesized channel images. Low-light material on/off samples show steady amber emission;no own pulse or motion is claimed.",
+  "limitations": [
+    "Own4sprite layers and41catalogue updates show anatomy/reveal/annotations,not operating overlays. PB10/ST23 are functional Terran context,not an Artemian operating cycle or3projector geometry.",
+    "Steady warm emission is an explicit optical interpretation of bright source amber cores/caps and function,not recovered Artemian timing or a calibrated client state.",
+    "Hidden engineering,body/frame sections and metric dimensions remain authored or unknown. Client scale/state/shaders/glow/Android performance and final user artistic acceptance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
