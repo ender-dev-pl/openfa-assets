@@ -128,11 +128,13 @@ Additional views: [Front](../gallery/media/objects/mauna/satellite-pad/front.png
 
 `openfa:building/legacy/140`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Fast Breeder Reactor](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn11/front-quarter.png)
+![Fast Breeder Reactor](../gallery/media/objects/mauna/fast-breeder-reactor/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn11/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn11/model.glb)
+[Blend](../sources/objects/mauna/fast-breeder-reactor/model.blend) · [GLB](../sources/objects/mauna/fast-breeder-reactor/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/fast-breeder-reactor/front.png) · [Rear quarter](../gallery/media/objects/mauna/fast-breeder-reactor/rear-quarter.png) · [Physically connected module waists](../gallery/media/objects/mauna/fast-breeder-reactor/connected-module-waists-detail.png) · [Paired service fields and roof](../gallery/media/objects/mauna/fast-breeder-reactor/paired-service-fields-and-roof-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/fast-breeder-reactor/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/fast-breeder-reactor/concept-glb-comparison.jpg)
 
 ## Arms Block
 

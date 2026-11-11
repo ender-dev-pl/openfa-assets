@@ -29774,7 +29774,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/140",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           1001
         ]
@@ -29848,21 +29848,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn11/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/fast-breeder-reactor/model.blend",
           "present": true,
-          "sha256": "82ab3cd182781e4578cd2a7debc61c08bb702a0ccbe8c4afb1508107e4581652",
-          "final_visual_acceptance": "not-established"
+          "sha256": "afe9a373963c138a893d7923a13dd88521e39b384ba4b8574ad5aa76826351f9",
+          "media": "gallery/media/objects/mauna/fast-breeder-reactor",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/fast-breeder-reactor/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/fast-breeder-reactor/rear-quarter.png"
+            },
+            {
+              "label": "Physically connected module waists",
+              "image": "gallery/media/objects/mauna/fast-breeder-reactor/connected-module-waists-detail.png"
+            },
+            {
+              "label": "Paired service fields and roof",
+              "image": "gallery/media/objects/mauna/fast-breeder-reactor/paired-service-fields-and-roof-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/fast-breeder-reactor/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/fast-breeder-reactor/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -29892,6 +29919,88 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 140
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn11/model.blend",
+          "present": true,
+          "sha256": "82ab3cd182781e4578cd2a7debc61c08bb702a0ccbe8c4afb1508107e4581652",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/fast-breeder-reactor/model.blend",
+        "sha256": "afe9a373963c138a893d7923a13dd88521e39b384ba4b8574ad5aa76826351f9",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/fast-breeder-reactor",
+          "verifier": "sources/tools/blender/verify_mauna_fast_breeder_reactor.py",
+          "files": {
+            "sources/objects/mauna/fast-breeder-reactor/integration-contract.json": "94877658542acaf53e75e8a6a5e183148dbdff6476bbae4b3a94783dfee94b06",
+            "sources/objects/mauna/fast-breeder-reactor/model.blend": "afe9a373963c138a893d7923a13dd88521e39b384ba4b8574ad5aa76826351f9",
+            "sources/objects/mauna/fast-breeder-reactor/model.glb": "6e73adaa93da8c875adff96787d76eb57e799f59fac780644cc5852abf6125e9",
+            "sources/objects/mauna/fast-breeder-reactor/model.json": "557988617563e2bb4040e58651f58d21bdc6753c77ffb30e7853ed102dd8d914",
+            "sources/objects/mauna/fast-breeder-reactor/README.md": "e99dba24bd131374bc21eb55682a7996af01a874fa04a77d8d7066aedd1d8a5b",
+            "sources/objects/mauna/fast-breeder-reactor/runtime-review.json": "20a4e1784ff76b592d2f253e4e367dad6878f01ffc450cc1a433318439bfca86",
+            "sources/objects/mauna/fast-breeder-reactor/visual-review.json": "97a7264a995bad89cda42a30869044c95e0e41cdc1bd1b3e2a8d1c3b1034c02b",
+            "gallery/media/objects/mauna/fast-breeder-reactor/concept-glb-comparison.jpg": "aa1d571d1ea0d00cf77fdfe6cb1d93b92b259a09097a6c4e2e69ec79755662c9",
+            "gallery/media/objects/mauna/fast-breeder-reactor/connected-module-waists-detail.png": "09bd63e1271104bd696175ea91b1c3198f07fdd278efdd58e283f706963a172a",
+            "gallery/media/objects/mauna/fast-breeder-reactor/front-quarter.png": "f574e8364d422548377c7b0e4b2f462409e2875d4e1e4a5bf14b19e5ac7d9f06",
+            "gallery/media/objects/mauna/fast-breeder-reactor/front.png": "c89cab47bc5fee9c00844fe7d091acab5a30c9661dcba4861a8267908fdd7200",
+            "gallery/media/objects/mauna/fast-breeder-reactor/imported-front-quarter.png": "f574e8364d422548377c7b0e4b2f462409e2875d4e1e4a5bf14b19e5ac7d9f06",
+            "gallery/media/objects/mauna/fast-breeder-reactor/imported-front.png": "c89cab47bc5fee9c00844fe7d091acab5a30c9661dcba4861a8267908fdd7200",
+            "gallery/media/objects/mauna/fast-breeder-reactor/imported-rear-quarter.png": "3df0add266ebf751a3770502a25b93980728b4a2da5679a037a7e6ae073e3b5d",
+            "gallery/media/objects/mauna/fast-breeder-reactor/native-front-quarter.png": "0fcdc0631693111e24c8f08da78d88fcc373e4bb76b09d9376641f99ed1f0f4a",
+            "gallery/media/objects/mauna/fast-breeder-reactor/native-front.png": "4e3546cae34eea3f4cdeec50fce535a7133004a326238f143cce447e385b1777",
+            "gallery/media/objects/mauna/fast-breeder-reactor/native-rear-quarter.png": "69c27106be165476c5db9009a6b26112d2efb0cf776c1984af0bdcf951aaf85c",
+            "gallery/media/objects/mauna/fast-breeder-reactor/paired-service-fields-and-roof-detail.png": "8a8a274d82348fe49ed5b45f6e90159458c31578d25dae1e304f7f0084b26e03",
+            "gallery/media/objects/mauna/fast-breeder-reactor/rear-quarter.png": "3df0add266ebf751a3770502a25b93980728b4a2da5679a037a7e6ae073e3b5d",
+            "gallery/media/objects/mauna/fast-breeder-reactor/technical-wireframe.png": "07380a322b5f6853c8d7d852e0e7931eeacdba7212480f4d884725517bde805c",
+            "sources/materials/mauna/fast-breeder-reactor/cast-concrete-colour.png": "28db5cba31c442ecd9a3bb85e9600937e24f518569e11bd3d11c4aad643da71e",
+            "sources/materials/mauna/fast-breeder-reactor/cast-service-normal.png": "162e1ce4dda52b8d8e7e59ef9a6beaf8ad3c8a08777dca276c6f3e62d5477bdf",
+            "sources/materials/mauna/fast-breeder-reactor/concrete-orm.png": "8e53de71be2df516012b38d157ead54ec78c35af112d3eca6d75c732a0c036de",
+            "sources/materials/mauna/fast-breeder-reactor/marking-red-colour.png": "e43be50e24667849c135a143a925dcc208fd8e624aaadc294d5f65e5b11f214d",
+            "sources/materials/mauna/fast-breeder-reactor/metal-orm.png": "370c3e30b1b2e3d4c64a5761b8a67a7d84c395edd6c342e55c97376430e53a27",
+            "sources/materials/mauna/fast-breeder-reactor/pale-alloy-colour.png": "e56394cc78ab6b41d6dab29a92a5453811d8584dbd53efd67f2cafff36116bd9",
+            "sources/tools/blender/remaster_mauna_fast_breeder_reactor.py": "ac2ab239384b0bc9888d3a292e6067073afd054e8381c359c14f5014bdef43c1",
+            "sources/tools/blender/verify_mauna_fast_breeder_reactor.py": "01ca1cb0ece773b07d084b779f2475a56e5a508e49430f6798e10e61d807e758",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn11-concept-review.json": "1e8501c03b2edd97051fb1b1b8f3a1cae806ec145770ed1f9595eceba8a660ef",
+            "sources/docs/reconstruction/models/mn11-concept-prompt-1.txt": "a32f10bce6b64dd4b426095c8bf2a1fb564ba56cdd69a0a722871879aa94f548",
+            "gallery/media/concepts/mauna/mn11-review-1.png": "c87085cf294cafa0f905e4a16b5b80ad893a264b301f2738115f5765db9cd505"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/fast-breeder-reactor/visual-review.json",
+          "sha256": "97a7264a995bad89cda42a30869044c95e0e41cdc1bd1b3e2a8d1c3b1034c02b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/fast-breeder-reactor/visual-review.json",
+          "sha256": "97a7264a995bad89cda42a30869044c95e0e41cdc1bd1b3e2a8d1c3b1034c02b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/fast-breeder-reactor/visual-review.json",
+          "sha256": "97a7264a995bad89cda42a30869044c95e0e41cdc1bd1b3e2a8d1c3b1034c02b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/fast-breeder-reactor/visual-review.json",
+          "sha256": "97a7264a995bad89cda42a30869044c95e0e41cdc1bd1b3e2a8d1c3b1034c02b",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/fast-breeder-reactor/runtime-review.json",
+          "sha256": "20a4e1784ff76b592d2f253e4e367dad6878f01ffc450cc1a433318439bfca86",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
