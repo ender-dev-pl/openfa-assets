@@ -22022,7 +22022,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/109",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           970
         ]
@@ -22096,21 +22096,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar03/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/artemian/filtration-tanks/model.blend",
           "present": true,
-          "sha256": "5194a0026f12b551d0edcdf77c71caa59f9ffd87f035a63b3e4059f449fcb3c6",
-          "final_visual_acceptance": "not-established"
+          "sha256": "e05231cd498f9fc887718285a5c6ca9bc428893a6306df24958fa3090560bdd1",
+          "media": "gallery/media/objects/artemian/filtration-tanks",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/artemian/filtration-tanks/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/artemian/filtration-tanks/rear-quarter.png"
+            },
+            {
+              "label": "Side fittings and amber modules",
+              "image": "gallery/media/objects/artemian/filtration-tanks/side-fittings-and-module-detail.png"
+            },
+            {
+              "label": "Rear pipe and front markers",
+              "image": "gallery/media/objects/artemian/filtration-tanks/rear-pipe-and-front-marker-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/artemian/filtration-tanks/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/artemian/filtration-tanks/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -22140,6 +22167,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 109
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/artemian/ar03/model.blend",
+          "present": true,
+          "sha256": "5194a0026f12b551d0edcdf77c71caa59f9ffd87f035a63b3e4059f449fcb3c6",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/artemian/filtration-tanks/model.blend",
+        "sha256": "e05231cd498f9fc887718285a5c6ca9bc428893a6306df24958fa3090560bdd1",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/artemian/filtration-tanks",
+          "verifier": "sources/tools/blender/verify_artemian_filtration_tanks.py",
+          "files": {
+            "sources/objects/artemian/filtration-tanks/model.blend": "e05231cd498f9fc887718285a5c6ca9bc428893a6306df24958fa3090560bdd1",
+            "sources/objects/artemian/filtration-tanks/model.glb": "943cca490fca7b81cf960a5ead7600acf0b779eb2b33068659bfaf82da29132f",
+            "sources/objects/artemian/filtration-tanks/model.json": "6037f67fc23dfdcfda17188986ba9d288dd320373c36f260313c2317c51e13b1",
+            "sources/objects/artemian/filtration-tanks/README.md": "ec5af93cd4fe9bb28509932eb7e1bce00aefd1a5d1dadb02d3b8b8ba66904ce6",
+            "sources/objects/artemian/filtration-tanks/runtime-review.json": "607fee3e435b48ac1492878203494479045014ea6aa0d553373c4ceac1214dbe",
+            "sources/objects/artemian/filtration-tanks/visual-review.json": "6cc726d44d9a1c59251e0de0d800f58306e86e19a9972de4df8d89bf5f869689",
+            "gallery/media/objects/artemian/filtration-tanks/concept-glb-comparison.jpg": "af11c6fb5376ccd682418f904c8aed455afb5f66d57635f13d51c885f099a87f",
+            "gallery/media/objects/artemian/filtration-tanks/front-quarter.png": "b87f9e5a16316ab9d348a6ee7f824028949618cfba60bbbc78f6700ab2f7a09e",
+            "gallery/media/objects/artemian/filtration-tanks/front.png": "8364b194c4d9e23eb9cf225d32bffdd812b1fa7bd2036c2e7558d7d862556d8e",
+            "gallery/media/objects/artemian/filtration-tanks/imported-front-quarter.png": "b87f9e5a16316ab9d348a6ee7f824028949618cfba60bbbc78f6700ab2f7a09e",
+            "gallery/media/objects/artemian/filtration-tanks/imported-front.png": "8364b194c4d9e23eb9cf225d32bffdd812b1fa7bd2036c2e7558d7d862556d8e",
+            "gallery/media/objects/artemian/filtration-tanks/imported-rear-quarter.png": "3cd237321193d4d0bd4c5176cd0bdb9ef326f839b4a5b6ba222da2a30b514dce",
+            "gallery/media/objects/artemian/filtration-tanks/native-front-quarter.png": "70822dae92724b683aac7df1886752871a33d97560ff85e7eaf810ca294d8e61",
+            "gallery/media/objects/artemian/filtration-tanks/native-front.png": "9cc244f9becd059ae48c425b2b0f5a41da76a588dea7545d977a1229c2816e9b",
+            "gallery/media/objects/artemian/filtration-tanks/native-rear-quarter.png": "89b49bbfa305334b412098c979a4e9bf9ffcab4fa6499e5f2c3982bc4ba7f5d9",
+            "gallery/media/objects/artemian/filtration-tanks/rear-pipe-and-front-marker-detail.png": "a3d99c67016eef4f73f7ea9c00af1b2a67f3fc794eb4c00d39bf98c1005d1f99",
+            "gallery/media/objects/artemian/filtration-tanks/rear-quarter.png": "3cd237321193d4d0bd4c5176cd0bdb9ef326f839b4a5b6ba222da2a30b514dce",
+            "gallery/media/objects/artemian/filtration-tanks/side-fittings-and-module-detail.png": "203ffeb96f7222c215b45e40ec1ec81cc468b1fbce331c0df6103c4efa5f6ff0",
+            "gallery/media/objects/artemian/filtration-tanks/technical-wireframe.png": "be0d5cf848dbec502cc97125d91ea3768c57346201a33bd726347b0bae2ab5b9",
+            "sources/materials/artemian/filtration-tanks/amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+            "sources/materials/artemian/filtration-tanks/exposed-alloy-edge-colour.png": "5cec024e75883117c1930210e09b98941d33b1f594884ef0d91090a30165461e",
+            "sources/materials/artemian/filtration-tanks/muted-green-alloy-colour.png": "8d3511076684364149599a5ff98457b0e61fce77e9ff844b5befa318a241b295",
+            "sources/materials/artemian/filtration-tanks/occlusion-roughness-metallic.png": "f37e144eb56ae67adc59a348e997007f12e510b5d375f5eebfb6c48984db4170",
+            "sources/materials/artemian/filtration-tanks/red-front-inset-colour.png": "712a9495a39bcd9b0723e6f25a8379448bff847e20f74cce17934e775a7bfdf3",
+            "sources/materials/artemian/filtration-tanks/used-metal-normal.png": "cc24f5d34216b6ad0f9f8a4f463a351b45e3ba1f14453a8267f09cb88ad6202d",
+            "sources/tools/blender/remaster_artemian_filtration_tanks.py": "42abc7fb718434872a6d106bee97062bedcfa94a8a83a7767f1842c39638b904",
+            "sources/tools/blender/verify_artemian_filtration_tanks.py": "fa655bdf05238c2b35381aa4d6f765367a14c166585850d5c45f7aa22a55f7c8",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/ar03-concept-review.json": "7d2d269286dcec11b789f02e6ddfb23de4cf3b8757b9b4261c088af57b1fa591",
+            "sources/docs/reconstruction/models/ar03-concept-prompt-1.txt": "1e4b04786cd161c18b15a502f8b0f1814fa10553a6c85002b8bdd612daddf309",
+            "gallery/media/concepts/artemian/ar03-review-1.png": "e29797a1d26815f08119dea65d165fa35137c67bed0915cd70f450c1616e6ac6"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/artemian/filtration-tanks/visual-review.json",
+          "sha256": "6cc726d44d9a1c59251e0de0d800f58306e86e19a9972de4df8d89bf5f869689",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/artemian/filtration-tanks/visual-review.json",
+          "sha256": "6cc726d44d9a1c59251e0de0d800f58306e86e19a9972de4df8d89bf5f869689",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/artemian/filtration-tanks/visual-review.json",
+          "sha256": "6cc726d44d9a1c59251e0de0d800f58306e86e19a9972de4df8d89bf5f869689",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/artemian/filtration-tanks/visual-review.json",
+          "sha256": "6cc726d44d9a1c59251e0de0d800f58306e86e19a9972de4df8d89bf5f869689",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/artemian/filtration-tanks/runtime-review.json",
+          "sha256": "607fee3e435b48ac1492878203494479045014ea6aa0d553373c4ceac1214dbe",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

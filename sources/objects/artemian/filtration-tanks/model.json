@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/109",
+  "key": "AR03",
+  "name": "Filtration Tanks",
+  "culture": "artemian",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 37,
+  "construction_updates": 30,
+  "triangles": 12482,
+  "triangle_budget": 30000,
+  "mesh_nodes": 24,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_artemian_filtration_tanks.py",
+  "author_sha256": "42abc7fb718434872a6d106bee97062bedcfa94a8a83a7767f1842c39638b904",
+  "binaries": {
+    "blend": "e05231cd498f9fc887718285a5c6ca9bc428893a6306df24958fa3090560bdd1",
+    "glb": "943cca490fca7b81cf960a5ead7600acf0b779eb2b33068659bfaf82da29132f"
+  },
+  "textures": {
+    "amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+    "exposed-alloy-edge-colour.png": "5cec024e75883117c1930210e09b98941d33b1f594884ef0d91090a30165461e",
+    "muted-green-alloy-colour.png": "8d3511076684364149599a5ff98457b0e61fce77e9ff844b5befa318a241b295",
+    "occlusion-roughness-metallic.png": "f37e144eb56ae67adc59a348e997007f12e510b5d375f5eebfb6c48984db4170",
+    "red-front-inset-colour.png": "712a9495a39bcd9b0723e6f25a8379448bff847e20f74cce17934e775a7bfdf3",
+    "used-metal-normal.png": "cc24f5d34216b6ad0f9f8a4f463a351b45e3ba1f14453a8267f09cb88ad6202d"
+  },
+  "interpretation": [
+    "Broad low green shell,three pale side fittings,four amber roof modules,two unequal red front insets and connected silver rear pipe/short upright follow actual source and reviewed concept.",
+    "Exact hidden water-treatment engineering,sections and metric dimensions are authored or unknown. No operation clip inferred from catalogue reveal or generic PB37 turntable."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar03-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

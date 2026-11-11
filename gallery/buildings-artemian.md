@@ -30,11 +30,13 @@ Additional views: [Front](../gallery/media/objects/artemian/environmental-stabil
 
 `openfa:building/legacy/109`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Filtration Tanks](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/artemian/ar03/front-quarter.png)
+![Filtration Tanks](../gallery/media/objects/artemian/filtration-tanks/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar03/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/artemian/ar03/model.glb)
+[Blend](../sources/objects/artemian/filtration-tanks/model.blend) · [GLB](../sources/objects/artemian/filtration-tanks/model.glb)
+
+Additional views: [Front](../gallery/media/objects/artemian/filtration-tanks/front.png) · [Rear quarter](../gallery/media/objects/artemian/filtration-tanks/rear-quarter.png) · [Side fittings and amber modules](../gallery/media/objects/artemian/filtration-tanks/side-fittings-and-module-detail.png) · [Rear pipe and front markers](../gallery/media/objects/artemian/filtration-tanks/rear-pipe-and-front-marker-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/filtration-tanks/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/filtration-tanks/concept-glb-comparison.jpg)
 
 ## Canisters
 
