@@ -90,11 +90,13 @@ Additional views: [Front](../gallery/media/objects/mauna/elite-block/front.png) 
 
 `openfa:building/legacy/137`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Construction Area](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn08/front-quarter.png)
+![Construction Area](../gallery/media/objects/mauna/construction-area/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn08/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn08/model.glb)
+[Blend](../sources/objects/mauna/construction-area/model.blend) · [GLB](../sources/objects/mauna/construction-area/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/construction-area/front.png) · [Rear quarter](../gallery/media/objects/mauna/construction-area/rear-quarter.png) · [Paired roof mast and service uprights](../gallery/media/objects/mauna/construction-area/paired-roof-mast-and-service-uprights-detail.png) · [Inclined emblem wall and service nose](../gallery/media/objects/mauna/construction-area/inclined-emblem-and-service-nose-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/construction-area/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/construction-area/concept-glb-comparison.jpg)
 
 ## Launch Area
 

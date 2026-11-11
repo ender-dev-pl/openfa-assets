@@ -28969,7 +28969,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/137",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           998
         ]
@@ -29043,21 +29043,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn08/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/construction-area/model.blend",
           "present": true,
-          "sha256": "7659a373e268761743b91b90bb1279c0fa13466b98c8de0ef232aad83a64f110",
-          "final_visual_acceptance": "not-established"
+          "sha256": "d4fde3762572335cb8876075c61fa6941a8fa6b578ea5b04a434a201b1e09469",
+          "media": "gallery/media/objects/mauna/construction-area",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/construction-area/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/construction-area/rear-quarter.png"
+            },
+            {
+              "label": "Paired roof mast and service uprights",
+              "image": "gallery/media/objects/mauna/construction-area/paired-roof-mast-and-service-uprights-detail.png"
+            },
+            {
+              "label": "Inclined emblem wall and service nose",
+              "image": "gallery/media/objects/mauna/construction-area/inclined-emblem-and-service-nose-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/construction-area/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/construction-area/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -29087,6 +29114,90 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 137
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn08/model.blend",
+          "present": true,
+          "sha256": "7659a373e268761743b91b90bb1279c0fa13466b98c8de0ef232aad83a64f110",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/construction-area/model.blend",
+        "sha256": "d4fde3762572335cb8876075c61fa6941a8fa6b578ea5b04a434a201b1e09469",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/construction-area",
+          "verifier": "sources/tools/blender/verify_mauna_construction_area.py",
+          "files": {
+            "sources/objects/mauna/construction-area/model.blend": "d4fde3762572335cb8876075c61fa6941a8fa6b578ea5b04a434a201b1e09469",
+            "sources/objects/mauna/construction-area/model.glb": "3f98f80c4bf987ec67f0a6052eb9cf0c446d6bf26e3c2fbd1fa89babab36ead1",
+            "sources/objects/mauna/construction-area/model.json": "b8b15f1b2d3665cbff0fea2b5abbb96be1dd360cf50b4e417bbfabe42273617c",
+            "sources/objects/mauna/construction-area/README.md": "cc81de33571448ed37b1c862ed7efb9ca2ebbfcd47da4836a9d3a35cd10a9417",
+            "sources/objects/mauna/construction-area/runtime-review.json": "191ff29b232f01615c7e080766918b0eb6e3740f41a5351213cb8d3c8f3465d0",
+            "sources/objects/mauna/construction-area/visual-review.json": "6c49f7138de10c545ca8b885d7477b2170d00ce151bbefaeb91be3fb207e8aed",
+            "gallery/media/objects/mauna/construction-area/concept-glb-comparison.jpg": "d45bc8e88f4ba91029e0af0659470176611c4b490041b5b6fb68c74b41a2e374",
+            "gallery/media/objects/mauna/construction-area/front-quarter.png": "82350942b6665a028890ff710326eab6ef14ed1fad41bb298eb1b492096e38bd",
+            "gallery/media/objects/mauna/construction-area/front.png": "ee5de0b07723e0c716031db1077adf586b0c304ed8afd86cf547de469c954e67",
+            "gallery/media/objects/mauna/construction-area/imported-front-quarter.png": "82350942b6665a028890ff710326eab6ef14ed1fad41bb298eb1b492096e38bd",
+            "gallery/media/objects/mauna/construction-area/imported-front.png": "ee5de0b07723e0c716031db1077adf586b0c304ed8afd86cf547de469c954e67",
+            "gallery/media/objects/mauna/construction-area/imported-rear-quarter.png": "dabe2efb53324c91d3cc626b083934c61f7974300b08528f848033fd34374f8b",
+            "gallery/media/objects/mauna/construction-area/inclined-emblem-and-service-nose-detail.png": "a887696830ad4335890b4a8cc23742854ab0951f4046dd9862e7b137eaae32ba",
+            "gallery/media/objects/mauna/construction-area/native-front-quarter.png": "c6d646e531f2d0bb2b9b7dda9cc908641f02adefa8c2f7933294886d7ac3bbbd",
+            "gallery/media/objects/mauna/construction-area/native-front.png": "4a21ce83245301b7488ccd481bbbe65bac3839a890e503822d8757f05ced9555",
+            "gallery/media/objects/mauna/construction-area/native-rear-quarter.png": "5c8ec74592b99da5b6cec4b4485bf61e5ca591ee99f555dbbacce158725d50e0",
+            "gallery/media/objects/mauna/construction-area/paired-roof-mast-and-service-uprights-detail.png": "c5c86ed165b4acfbe05a8f027ad63b5ce936f96d3fe658364c51db770dde5165",
+            "gallery/media/objects/mauna/construction-area/rear-quarter.png": "dabe2efb53324c91d3cc626b083934c61f7974300b08528f848033fd34374f8b",
+            "gallery/media/objects/mauna/construction-area/technical-wireframe.png": "38c36ce6b14855b486dcdcd69268e32087d622513b2cbb50050d6ab87497aea4",
+            "sources/materials/mauna/construction-area/cast-concrete-colour.png": "51dd8cd30a11cd1efabfae92f52facc0f2f13b88ba8b2e9049e7524caaeaf9f7",
+            "sources/materials/mauna/construction-area/cast-service-normal.png": "966e24aba7b57f8ad81852df6a100e2a580a39a0b73012a2993b620095b38874",
+            "sources/materials/mauna/construction-area/concrete-orm.png": "ae5c1f253313878fca768937fe34d36417587cc72eae6d1655ae4568baa64e46",
+            "sources/materials/mauna/construction-area/marking-red-colour.png": "01698ae54d7d13368d2838f5ebfaac4045975dccf83d039a269bc4ea96316dcd",
+            "sources/materials/mauna/construction-area/metal-orm.png": "bc7304e2c6e36447c39e90926da58948743a2d6efd18ef5d5ca8d5b4a0d528f3",
+            "sources/materials/mauna/construction-area/pale-alloy-colour.png": "47c3bcb2742a65adfcdf5b8de81cd7437208252701d19f93621c8a5cc0ba1051",
+            "sources/materials/mauna/construction-area/used-brass-colour.png": "f9f665223fab12c8690e920269c3f09c71b14f8ddec478d239d97b7d990e4dcb",
+            "sources/materials/mauna/construction-area/window-amber-colour.png": "c7be81aa96b37982274db5a87b3ad031f7446053c82aa4c0a5b9193f3bd314b8",
+            "sources/materials/mauna/construction-area/window-orm.png": "0d33bf9cb825b9ae38bf2f5c353d6eb4bc46facfc75569ac2492fa271efe52c5",
+            "sources/tools/blender/remaster_mauna_construction_area.py": "abb9c4b5977fabf2ca1f036084d5ac816b6eaffa7f9452b48cf7f3eb6964d425",
+            "sources/tools/blender/verify_mauna_construction_area.py": "e332a57e6c21744ef687df85d6534a49aafcda1a181da185160144c94027fa31",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn08-concept-review.json": "5f543833979836248bbb2f03c217cdba15fc445c079383dd00884930b0dafe73",
+            "sources/docs/reconstruction/models/mn08-concept-prompt-1.txt": "791c743dc7739982975d3f183e430f1933f9424cc77ff0fb4471b225e107f247",
+            "gallery/media/concepts/mauna/mn08-review-1.png": "df9e4be3fbb40a5b54f7c4a6e1ca18e18fd3cdf4798aaed4df041e5a28c1dc0e"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/construction-area/visual-review.json",
+          "sha256": "6c49f7138de10c545ca8b885d7477b2170d00ce151bbefaeb91be3fb207e8aed",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/construction-area/visual-review.json",
+          "sha256": "6c49f7138de10c545ca8b885d7477b2170d00ce151bbefaeb91be3fb207e8aed",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/construction-area/visual-review.json",
+          "sha256": "6c49f7138de10c545ca8b885d7477b2170d00ce151bbefaeb91be3fb207e8aed",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/construction-area/visual-review.json",
+          "sha256": "6c49f7138de10c545ca8b885d7477b2170d00ce151bbefaeb91be3fb207e8aed",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/construction-area/runtime-review.json",
+          "sha256": "191ff29b232f01615c7e080766918b0eb6e3740f41a5351213cb8d3c8f3465d0",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
