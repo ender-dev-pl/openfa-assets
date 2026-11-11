@@ -24,10 +24,19 @@ def snapshot():
         crest=body['tree'].ray_cast(Vector((q*.75,.50,2)),Vector((0,0,-1)))[0];assert crest;baseline=.08+.42*math.sqrt(1-q*q);assert crest.z-baseline>.002,'Four actual integral longitudinal roof crests,not detached strips'
     def inside(tree,p):
         surface,normal,_,distance=tree.find_nearest(p);return surface is not None and normal.dot(p-surface)<-1e-5
-    for i,x in enumerate([-.40,-.13,.14]):
-        stem=result['Gravitic Converter short brass stem '+str(i)];cap=result['Gravitic Converter wider brass cap '+str(i)];pts=cap['points'];cy=(min(p.y for p in pts)+max(p.y for p in pts))/2;sample=Vector((x,cy+.030,.14));assert inside(cap['tree'],sample) and inside(body['tree'],sample),'All three brass caps seated against actual wedge';sample=Vector((x,cy,.110));assert inside(stem['tree'],sample) and inside(cap['tree'],sample),'Each smaller stem supports its wider cap';assert min(p.z for p in stem['points'])<.03 and max(p.z for p in cap['points'])<.18
-    for i,(x,y) in enumerate([(-.30,-.55),(-.10,-.45),(.10,-.35)]):
+    for i,x in enumerate([-.25,0,.25]):
+        stem=result['Gravitic Converter short brass stem '+str(i)];cap=result['Gravitic Converter wider brass cap '+str(i)];pts=cap['points'];cy=(min(p.y for p in pts)+max(p.y for p in pts))/2;sample=Vector((x,cy+.045,.14));assert inside(cap['tree'],sample) and inside(body['tree'],sample),'All three brass caps seated against actual wedge';sample=Vector((x,cy,.110));assert inside(stem['tree'],sample) and inside(cap['tree'],sample),'Each smaller stem supports its wider cap';assert min(p.z for p in stem['points'])<.03 and max(p.z for p in cap['points'])<.18
+    for i,(x,y) in enumerate([(-.25,-1.05),(-.25,-.80),(-.25,-.55)]):
         roof=body['tree'].ray_cast(Vector((x,y,2)),Vector((0,0,-1)))[0];assert roof;nearest,normal,_,_=body['tree'].find_nearest(roof);seat=result['Gravitic Converter dark roof seat '+str(i)];amber=result['Gravitic Converter amber roof inset '+str(i)];sample=roof-normal*.003;assert inside(body['tree'],sample) and inside(seat['tree'],sample),'Three dark seats meet real sloping roof';sample=roof+normal*.008;assert inside(seat['tree'],sample) and inside(amber['tree'],sample),'Each amber roof point physically overlaps its dark seat';assert max(p.z for p in amber['points'])-min(p.z for p in amber['points'])<.06,'Small source roof fixtures stay small'
+    for i,x in enumerate([-.25,0,.25]):
+        cap=result['Gravitic Converter wider brass cap '+str(i)];centre=Vector([(min(p[a] for p in cap['points'])+max(p[a] for p in cap['points']))/2 for a in range(3)]);assert abs(centre.y+1.38)<1e-5 and abs(centre.x-x)<1e-5,'Lower brass fittings form one transverse front row,not an arc around the prow'
+    assert min(p.y for p in body['points'])< -1.349 and max(p.x for p in body['points'] if p.y< -1.349)>.33,'Blunt broad front supports the lower fitting row'
+    centres=[]
+    for i in range(3):
+        o=bpy.data.objects['Gravitic Converter amber roof inset '+str(i)];centre=sum((o.matrix_world@v.co for v in o.data.vertices),Vector())/len(o.data.vertices);centres.append(centre)
+        assert abs(centre.x+.25)<.012,'Yellow lights share one front row along shell length,not a staggered diagonal'
+        m=o.data.materials[0];p=m.node_tree.nodes.get('Principled BSDF');assert p.inputs['Emission Strength'].default_value*p.inputs['Emission Color'].default_value[1]>.4,'Actual yellow indicators glow'
+    assert max(p.x for p in centres)-min(p.x for p in centres)<.012 and all(abs(centres[i+1].y-centres[i].y-.25)<.015 for i in range(2)),'Three evenly spaced lights aligned along front shell'
     root=bpy.data.objects['PlacementRoot'];assert root['catalogue_id']=='openfa:building/legacy/117';assert list(root['footprint'])==[3,3]
     assert all(o.parent==root for o in bpy.context.scene.objects if o.type=='MESH')
     images={i.name:dict(size=list(i.size),pixels=hashlib.sha256(bytes(round(max(0,min(1,v))*255) for v in i.pixels)).hexdigest()) for i in bpy.data.images if i.users and i.size[0] and i.source!='VIEWER'}
@@ -42,7 +51,7 @@ def setup():
 
 def render(label,media):
     s=setup();meshes=[o for o in s.objects if o.type=='MESH'];points=[o.matrix_world@Vector(v) for o in meshes for v in o.bound_box];centre=Vector([(min(p[a] for p in points)+max(p[a] for p in points))/2 for a in range(3)]);renders={}
-    for view,direction in [('front-quarter',(12,-8,10)),('front',(0,-16,9)),('rear-quarter',(7,12,9))]:
+    for view,direction in [('front-quarter',(10,-10,3.56)),('front',(0,-16,9)),('rear-quarter',(7,12,9))]:
         v=Vector(direction).normalized();s.camera.location=centre+v*15;s.camera.rotation_euler=(-v).to_track_quat('-Z','Y').to_euler();bpy.context.view_layer.update();q=[s.camera.matrix_world.inverted()@p for p in points];midpoint=Vector(((min(p.x for p in q)+max(p.x for p in q))/2,(min(p.y for p in q)+max(p.y for p in q))/2,0));s.camera.location+=s.camera.rotation_euler.to_matrix()@midpoint;s.camera.data.ortho_scale=max(max(p.x for p in q)-min(p.x for p in q),max(p.y for p in q)-min(p.y for p in q))*1.2;p=media/f'{label}-{view}.png';s.render.filepath=str(p);bpy.ops.render.render(write_still=True);p.write_bytes(clean_png(p.read_bytes()));renders[p.name]=sha(p)
     return renders
 
@@ -62,7 +71,7 @@ def main():
     for name,n in native.items():
         other=imported[name];assert n['triangles']==other['triangles'];assert n['materials']==other['materials'];assert max(abs(a-b) for a,b in zip(n['matrix'],other['matrix']))<1e-5
         error=max(error,max(other['tree'].find_nearest(p)[3] for p in n['points']),max(n['tree'].find_nearest(p)[3] for p in other['points']))
-    assert error<1e-5;raw=(folder/'model.glb').read_bytes();gltf=json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]]);tri=sum(gltf['accessors'][p['indices']]['count']//3 for m in gltf['meshes'] for p in m['primitives']);assert tri==meta['triangles']==sum(o['triangles'] for o in imported.values());assert tri<30000;assert not gltf.get('animations');assert len(gltf['materials'])==4;assert all('bufferView' in i for i in gltf['images']);renders.update(render('imported',media))
+    assert error<1e-5;raw=(folder/'model.glb').read_bytes();gltf=json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]]);tri=sum(gltf['accessors'][p['indices']]['count']//3 for m in gltf['meshes'] for p in m['primitives']);assert tri==meta['triangles']==sum(o['triangles'] for o in imported.values());assert tri<30000;assert not gltf.get('animations');assert len(gltf['materials'])==5;assert all('bufferView' in i for i in gltf['images']);renders.update(render('imported',media))
     s=bpy.context.scene
     for label,centre,scale in [('three-brass-stubs-and-roof-points-detail',Vector((-.13,-.75,.20)),1.35),('integrated-longitudinal-ribs-detail',Vector((.25,.50,.35)),1.65)]:
         direction=Vector((4,-16,10)).normalized();s.camera.location=centre+direction*15;s.camera.rotation_euler=(-direction).to_track_quat('-Z','Y').to_euler();s.camera.data.ortho_scale=scale;path=media/(label+'.png');s.render.filepath=str(path);bpy.ops.render.render(write_still=True);path.write_bytes(clean_png(path.read_bytes()));renders[path.name]=sha(path)

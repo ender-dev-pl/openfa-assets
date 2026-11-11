@@ -132,7 +132,7 @@ Additional views: [Front](../gallery/media/objects/artemian/deep-probes/front.pn
 
 [Blend](../sources/objects/artemian/gravitic-converter/model.blend) · [GLB](../sources/objects/artemian/gravitic-converter/model.glb)
 
-Additional views: [Front](../gallery/media/objects/artemian/gravitic-converter/front.png) · [Rear quarter](../gallery/media/objects/artemian/gravitic-converter/rear-quarter.png) · [Three brass stubs and small roof points](../gallery/media/objects/artemian/gravitic-converter/three-brass-stubs-and-roof-points-detail.png) · [Integral longitudinal ribs](../gallery/media/objects/artemian/gravitic-converter/integrated-longitudinal-ribs-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/gravitic-converter/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/gravitic-converter/concept-glb-comparison.jpg)
+Additional views: [Front](../gallery/media/objects/artemian/gravitic-converter/front.png) · [Rear quarter](../gallery/media/objects/artemian/gravitic-converter/rear-quarter.png) · [Three brass stubs and aligned yellow front lights](../gallery/media/objects/artemian/gravitic-converter/three-brass-stubs-and-roof-points-detail.png) · [Integral longitudinal ribs](../gallery/media/objects/artemian/gravitic-converter/integrated-longitudinal-ribs-detail.png) · [Canonical technical wireframe](../gallery/media/objects/artemian/gravitic-converter/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/artemian/gravitic-converter/concept-glb-comparison.jpg)
 
 ## Shielded Solars
 
