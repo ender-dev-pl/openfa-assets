@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/093",
+  "binaries": {
+    "blend": "3be48fb1cf774022d2b037f93f7b2c52e5751555c41d3bec9d49c43c0fe83f9d",
+    "glb": "4be90720d1656753a8d34a1d6af7ca14c380c2ab09882ebffdddd0dab7f6496f"
+  },
+  "runtime_report_sha256": "89ed4d8bf6c645960a5be1d5bcaf5b099bfa91ea228cc553ef0db3481477067e",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.002460062582345191,
+      "margin": 64
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0028827577879739193,
+      "margin": 46
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0013285024154589373,
+      "margin": 64
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk08-review-1.png",
+      "sha256": "0e0e832cce56c495de1d35a0862816aa297ccbda9e2c9e4df1a99b654073f475",
+      "prompt": "sources/docs/reconstruction/models/mk08-concept-prompt-1.txt",
+      "feedback": "Selected major form: one blunt irregular mineral cone, small horizontal oval inset and two splayed dark clefts. Concept clefts extend too far down and inset is duller than original; GLB must use shorter legacy clefts and paler blue. Fine microrelief and exact engineering remain authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "verdict": "correct-mineral-surface-and-recesses",
+      "source_model_sha256": "6be65f2d8da960bc6a2a5c0460e6964ee1e28c63d21efd5e37d63570e77901be",
+      "issues": [
+        "Retain one oval inset, short downward-splaying clefts and continuous triangular body.",
+        "Connected cellular normal-map seams read as assembled panels; replace with sparse broken meandering mineral cracks and quiet grain.",
+        "Broaden/blunt the summit and deepen the dark cleft fill so it reads recessed rather than applied rails."
+      ]
+    },
+    {
+      "iteration": 2,
+      "verdict": "add-restrained-material-wear",
+      "source_model_sha256": "b6d4ed0b3e43b02cdc5a17592ecc731ebcdd5f6557d4b8f7255ac493560694e7",
+      "issues": [
+        "Body proportions, quiet broken veins and short clefts retained.",
+        "Surface still reads too soft/plain versus original and concept. Add sparse shallow irregular chips with exposed mineral faces and slightly stronger physical grain; no structural panels or invented machinery."
+      ]
+    },
+    {
+      "iteration": 3,
+      "verdict": "remove-rear-uv-seam",
+      "source_model_sha256": "ae00f7103e294e62eb1a27992dcbce2ef3db396dc4535c35c9f653bc1cb87b96",
+      "issues": [
+        "Rear view exposes a vertical material discontinuity from nonperiodic texture edges. Make colour/packed/normal fields tile continuously in U and wrap the normal derivative.",
+        "Keep the validated body geometry, short clefts, oval inset and physical wear cuts unchanged."
+      ]
+    }
+  ],
+  "final_review": "Final independent GLB retains one continuous blunt mineral mound, one horizontal pale-blue oval and two short downward-splaying dark clefts. The clearer legacy cleft length and colour take priority over concept embellishment. Actual feedback removes closed cellular panel-like normal seams, blunts the summit and seats dark fill deeper in the physical cuts. Sparse shallow wear chips expose lighter alloy without adding structural panels. Periodic U material fields remove the rear texture discontinuity.",
+  "limitations": [
+    "Exact profiles, socket engineering, hidden surfaces and detailed weathering are authored from limited fixed views.",
+    "The original functional text calls this Silence while catalogue identity is Fa-lanth; its spiritual purpose and the physical role of inset/clefts remain unknown.",
+    "No source metric height, calibrated game scale/state, Android performance or final user artistic acceptance claimed."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

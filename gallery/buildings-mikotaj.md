@@ -90,11 +90,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/resonance/front.png) 
 
 `openfa:building/legacy/093`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Fa-lanth](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk08/front-quarter.png)
+![Fa-lanth](../gallery/media/objects/mikotaj/fa-lanth/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk08/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk08/model.glb)
+[Blend](../sources/objects/mikotaj/fa-lanth/model.blend) · [GLB](../sources/objects/mikotaj/fa-lanth/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/fa-lanth/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/fa-lanth/rear-quarter.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/fa-lanth/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/fa-lanth/concept-glb-comparison.jpg)
 
 ## Mask
 
