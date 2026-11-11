@@ -216,11 +216,13 @@ Additional views: [Front](../gallery/media/objects/mikotaj/shrekn/front.png) · 
 
 `openfa:building/legacy/103`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Ruth-feror](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk18/front-quarter.png)
+![Ruth-feror](../gallery/media/objects/mikotaj/ruth-feror/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk18/model.glb)
+[Blend](../sources/objects/mikotaj/ruth-feror/model.blend) · [GLB](../sources/objects/mikotaj/ruth-feror/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mikotaj/ruth-feror/front.png) · [Rear quarter](../gallery/media/objects/mikotaj/ruth-feror/rear-quarter.png) · [Front socket pair](../gallery/media/objects/mikotaj/ruth-feror/socket-pair-detail.png) · [Mineral pinnacle detail](../gallery/media/objects/mikotaj/ruth-feror/mineral-pinnacle-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mikotaj/ruth-feror/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mikotaj/ruth-feror/concept-glb-comparison.jpg)
 
 ## Ruth-fett
 

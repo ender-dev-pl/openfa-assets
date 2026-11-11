@@ -20535,7 +20535,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/103",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           964
         ]
@@ -20609,21 +20609,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk18/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mikotaj/ruth-feror/model.blend",
           "present": true,
-          "sha256": "407f66c67e22f4cb1ae14b744a989cf71fe4abc8ee67c99285b816cd5d50e6d3",
-          "final_visual_acceptance": "not-established"
+          "sha256": "268ae1bab9efea364c64b37d5c5a53c9e42c0c664a6d715780447df940bb6ac1",
+          "media": "gallery/media/objects/mikotaj/ruth-feror",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mikotaj/ruth-feror/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mikotaj/ruth-feror/rear-quarter.png"
+            },
+            {
+              "label": "Front socket pair",
+              "image": "gallery/media/objects/mikotaj/ruth-feror/socket-pair-detail.png"
+            },
+            {
+              "label": "Mineral pinnacle detail",
+              "image": "gallery/media/objects/mikotaj/ruth-feror/mineral-pinnacle-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mikotaj/ruth-feror/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mikotaj/ruth-feror/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -20653,6 +20680,87 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 103
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mikotaj/mk18/model.blend",
+          "present": true,
+          "sha256": "407f66c67e22f4cb1ae14b744a989cf71fe4abc8ee67c99285b816cd5d50e6d3",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mikotaj/ruth-feror/model.blend",
+        "sha256": "268ae1bab9efea364c64b37d5c5a53c9e42c0c664a6d715780447df940bb6ac1",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mikotaj/ruth-feror",
+          "verifier": "sources/tools/blender/verify_mikotaj_ruth_feror.py",
+          "files": {
+            "sources/objects/mikotaj/ruth-feror/model.blend": "268ae1bab9efea364c64b37d5c5a53c9e42c0c664a6d715780447df940bb6ac1",
+            "sources/objects/mikotaj/ruth-feror/model.glb": "7d1f707353fb0672376b48556270b8d5caa81a16cf47b94c952ad8d21142339d",
+            "sources/objects/mikotaj/ruth-feror/model.json": "b95aa24e38aad1784e9676e86faa28da4c671d778fb928161a768f5292dda2eb",
+            "sources/objects/mikotaj/ruth-feror/README.md": "9a5809d16bece88ed16b71bfb235e19a42d2a9ee1fe7e807c0e6f334c3f9288d",
+            "sources/objects/mikotaj/ruth-feror/runtime-review.json": "d9f7c3f9c599ea3b4a7e3175a23adbe88bd1812ff6a24d4169c5295c5ec1a308",
+            "sources/objects/mikotaj/ruth-feror/visual-review.json": "a6a933449a00ae50083e3201fa87cb4fb5771728befc7d140a8f6817e654bd4d",
+            "gallery/media/objects/mikotaj/ruth-feror/concept-glb-comparison.jpg": "e67457be83fbf0cd5e2695a067b1dab6611afed9e60f341654003720b3c1e6a4",
+            "gallery/media/objects/mikotaj/ruth-feror/front-quarter.png": "d7f368e2f0bcb58462e7cfd940f997d4a34978333bc08b0bed27e57c69307a2d",
+            "gallery/media/objects/mikotaj/ruth-feror/front.png": "16278bd365e530b7365f87486c13c13eb58b652d7b74fec1a063fc8e8ffa6ac1",
+            "gallery/media/objects/mikotaj/ruth-feror/imported-front-quarter.png": "d7f368e2f0bcb58462e7cfd940f997d4a34978333bc08b0bed27e57c69307a2d",
+            "gallery/media/objects/mikotaj/ruth-feror/imported-front.png": "16278bd365e530b7365f87486c13c13eb58b652d7b74fec1a063fc8e8ffa6ac1",
+            "gallery/media/objects/mikotaj/ruth-feror/imported-rear-quarter.png": "fbbfcfab84bfc3b78fc4b361809ca9e131cb7764a379feb1812c0b08185c2ec3",
+            "gallery/media/objects/mikotaj/ruth-feror/mineral-pinnacle-detail.png": "56b28ff214dbe7901e8feb20085e7fb4542956e54b4e9608e8aa6b08df9a5cca",
+            "gallery/media/objects/mikotaj/ruth-feror/native-front-quarter.png": "887901c3dee3e98e4d5d128d2aabf244060768c0cd4469a95a6586f19db57cd8",
+            "gallery/media/objects/mikotaj/ruth-feror/native-front.png": "9dbabb516f6f67cb73f9ba4959af360c3c4b1d3e2b00e09cdfa6925a9a1c35a3",
+            "gallery/media/objects/mikotaj/ruth-feror/native-rear-quarter.png": "76ef0f6358adcff329835a7bf0729faf310174aa48542cd2c142ec4e5ba73d1e",
+            "gallery/media/objects/mikotaj/ruth-feror/rear-quarter.png": "fbbfcfab84bfc3b78fc4b361809ca9e131cb7764a379feb1812c0b08185c2ec3",
+            "gallery/media/objects/mikotaj/ruth-feror/socket-pair-detail.png": "2b7755922092d9adaccb0de5a34250eb8979a9dc74aaf1eda6a52426620ce7e0",
+            "gallery/media/objects/mikotaj/ruth-feror/technical-wireframe.png": "9238d0578f85d85aec49e50f95d235305e21cf1c520bd7f98404eab7b67247d2",
+            "sources/materials/mikotaj/ruth-feror/exposed-ridge-base-colour.png": "04cae530e4bfe3418ccba3a911a41968655a0264fdcec40f598209bb7f151fcf",
+            "sources/materials/mikotaj/ruth-feror/mineral-base-colour.png": "fe17af7d27e5fa1f67863dc8a33b805715eeed626d4c5fc752917798be008e4d",
+            "sources/materials/mikotaj/ruth-feror/mineral-fracture-normal.png": "ba59f2b6773ca2c99603f1f0b88bb71ddabfeb85595a70846fa8a68e8a4fc1d9",
+            "sources/materials/mikotaj/ruth-feror/occlusion-roughness-metallic.png": "969299487937945bb6b15514789574446b4716ea3feae689337fa122632a4b7a",
+            "sources/materials/mikotaj/ruth-feror/pale-blue-lens-colour.png": "b102d66dac8172a247fde6eb4f37ed69e4fd082e3ff4ce0c122687aced788bf7",
+            "sources/materials/mikotaj/ruth-feror/red-socket-paint.png": "abf32c3d3ce62fbdfab85584f29b5fd4854399965377efb71a00a36ae5e77401",
+            "sources/tools/blender/remaster_mikotaj_ruth_feror.py": "27153608ccda7e496872e77ff19c93f2b5003f81a346c6dd82c5e7543e4363d4",
+            "sources/tools/blender/verify_mikotaj_ruth_feror.py": "d62740d145a05d8a4a3c0e95aa0b7509c82c0ad8e3a9ca5f95d1c3b1468bb018",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mk18-concept-review.json": "33fd4cb38926a4ae223f1f648c54b1e630a147fffebeb05595089174a9c32a2a",
+            "sources/docs/reconstruction/models/mk18-concept-prompt-1.txt": "3b1ad9b1e71ac679c569f923f14d800d49b58b1c8fc2cbc12ed20f78ebff4fa1",
+            "gallery/media/concepts/mikotaj/mk18-review-1.png": "8c83051b4fb6956e97d1699937b27c941379361ec51fe2a5108e250208c8abe4"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mikotaj/ruth-feror/visual-review.json",
+          "sha256": "a6a933449a00ae50083e3201fa87cb4fb5771728befc7d140a8f6817e654bd4d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mikotaj/ruth-feror/visual-review.json",
+          "sha256": "a6a933449a00ae50083e3201fa87cb4fb5771728befc7d140a8f6817e654bd4d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mikotaj/ruth-feror/visual-review.json",
+          "sha256": "a6a933449a00ae50083e3201fa87cb4fb5771728befc7d140a8f6817e654bd4d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mikotaj/ruth-feror/visual-review.json",
+          "sha256": "a6a933449a00ae50083e3201fa87cb4fb5771728befc7d140a8f6817e654bd4d",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mikotaj/ruth-feror/runtime-review.json",
+          "sha256": "d9f7c3f9c599ea3b4a7e3175a23adbe88bd1812ff6a24d4169c5295c5ec1a308",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
