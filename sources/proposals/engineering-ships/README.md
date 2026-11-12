@@ -1,4 +1,4 @@
-# Engineering ship proposals Ă˘â‚¬â€ť issue #265
+# Engineering ship proposals - issue #265
 
 Fourteen new authored OpenFA asset proposals: Terraforming Ship and Repair / Construction Assist Ship for seven cultures. These are not recovered legacy units. The selected supplied concepts and their identities are in `concepts.json`.
 
@@ -14,17 +14,17 @@ The dedicated [proposal gallery](../../../gallery/engineering-proposals.html) sh
 
 ## Delivered tool articulation
 
-All fourteen proposals contain one looping `ToolOperation` clip, authored at 24 fps over frames 1Ă˘â‚¬â€ś97 (four seconds). The lightweight gallery videos sample playback at 6 fps; the GLB contains continuously interpolated animation. First/last poses match. Tool pivots are named editable nodes; engines and hulls remain stationary.
+All fourteen proposals contain one looping `ToolOperation` clip, authored at 24 fps over frames 1-97 (four seconds). The lightweight gallery videos sample playback at 6 fps; the GLB contains continuously interpolated animation. First/last poses match. Tool pivots are named editable nodes; engines and hulls remain stationary.
 
 | Culture | Terraforming Ship | Repair / Construction Assist Ship |
 | --- | --- | --- |
-| Terran | Continuous horizontal milling drum rotation | Independent shoulder/elbow motion on both arms |
-| Rigellian | Two pivoted copper-ended precision horns | Separate shoulder/elbow tool chains |
-| Braccatian | Opposing hinged crusher jaws | Single rooted ventral service yoke |
+| Terran | Continuous horizontal milling drum rotation | Shoulders/elbows on both arms and independently closing clamp jaws |
+| Rigellian | Two pivoted copper-ended precision horns | Shoulder/elbow chains and independently closing clamp jaws |
+| Braccatian | Opposing hinged crusher jaws | Rooted positioning yoke and two independent fingers |
 | Mikotaj | Hinged working plates on the open frame | Tilting clamp support and two closing fingers |
-| Artemian | Two direct sliding wedge tools | Separate sliding gripper and service blade |
-| Mauna | Pivoted grading blade with mounting blocks | Separate short clamp and service-head slides |
-| Achaean | Ventral silver-edged crescent grading tool | Curved lower support about the side bearing |
+| Artemian | Two direct sliding wedge tools | Separate sliders, a wrist and two independent clamp jaws |
+| Mauna | Pivoted grading blade with mounting blocks | Separate slides, independent clamp jaws and a service-head wrist |
+| Achaean | Ventral silver-edged crescent grading tool | Curved lower support, a wrist and two independent claws |
 
 `verify_engineering_delivery.py` validates all fourteen source/export hashes, selected concepts, material maps, runtime and visual reviews, clip channels, preview hashes and gallery links. Pass `--base <commit>` to additionally check that canonical/runtime catalogues have not changed from that revision. Artistic user acceptance and future gameplay integration remain separate decisions.
 
@@ -42,4 +42,30 @@ The repair ship uses two mirrored longitudinal red/silver wings with matching ro
 
 ## Canonical-fleet style refinement
 
-The next refinement uses at most three generator-correction / actual GLB render / visual comparison cycles per model. Follow the [canonical-fleet refinement protocol](../../../docs/workflow.md#engineering-ship-refinement-against-the-canonical-fleet); the current comparison is `gallery/engineering-style-comparison.json`. Preserve the actual cycle history and unresolved findings. A fourth cycle requires a new user decision; technical checks alone do not establish style agreement.
+The canonical-fleet pass has an author visual review for all fourteen models. The
+[whole-fleet review](canonical-style-review.json) binds current sources, exports,
+runtime/animation evidence, comparison images and per-model cycle histories. The
+[overview image](../../../gallery/media/proposals/engineering-ships/canonical-style-overview.png)
+and the [comparison gallery](../../../gallery/engineering-proposals.html#style-comparison)
+show engineering proposals beside the current canonical fleet in the same review
+studio. Display fitting is independent and does not establish game scale.
+
+| Culture | Terraforming attempts | Repair attempts |
+| --- | ---: | ---: |
+| Terran | 2 | 2 |
+| Rigellian | 1 | 1 |
+| Braccatian | 3 | 3 |
+| Mikotaj | 3 | 3 |
+| Artemian | 2 | 2 |
+| Mauna | 3 | 2 |
+| Achaean | 2 | 2 |
+
+Failed attempts remain in the histories. Mauna repair's second actual export uses
+shared author revision 3; revision 2 stopped before exporting that role. Mikotaj's
+final same-studio canonical reference renders reuse its existing engineering
+models and consume no additional generator attempt.
+
+Follow the [refinement protocol](../../../docs/workflow.md#engineering-ship-refinement-against-the-canonical-fleet)
+for subsequent work. A fourth generator cycle requires a new user decision.
+Artistic user acceptance, physical game scale, platform profiling, continuous swept
+clearance and gameplay integration remain separate from this asset review.

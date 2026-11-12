@@ -1,0 +1,876 @@
+{
+  "issue": 265,
+  "status": "author-whole-fleet-review-complete",
+  "scope": "All 14 engineering proposals against the current canonical small fleet;technical verification and author visual judgement remain distinct from user artistic acceptance.",
+  "conditions": "Actual independent GLB previews;all canonical references rendered in the same review studio. Each image is fitted independently;this does not establish physical game scale.",
+  "runtime_integration": false,
+  "max_cycles_per_model": 3,
+  "cultures": [
+    {
+      "culture": "terran",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/terran/final-fleet-comparison.png",
+        "sha256": "cd7fcc6e43097d4c039ed735ab668da1b54c69c03ed97e30f5765cb0e5d84fe2"
+      },
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/terran/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/terran/terraform/imported-front-quarter.png",
+          "model_sha256": "f9dd25a937b9153fc51b098cb653df7422f9fcb23bf602621894077fc9317146",
+          "image_sha256": "d915bc84d4722d2c9344b271514609653025ddc8e5139c2d800127e3f6054548"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/terran/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/terran/repair/imported-front-quarter.png",
+          "model_sha256": "12a4cd30acfde835d022a740183248c4b77e0e6d34dab14d0e28d169de4a9635",
+          "image_sha256": "05491b9679d633e992d88a9daac7e6288b88432ed2259aaded5f58e6e0031fad"
+        },
+        {
+          "name": "Assault Fighter",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:assault-fighter",
+          "stage": "layered-construction",
+          "model": "sources/objects/terran/assault-fighter/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/terran/canonical-references/assault-fighter-front-quarter.png",
+          "model_sha256": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+          "image_sha256": "68d3644b7d9a1d52be96826787ea773e31f2130b0fe7419d7e7413f9b8665d33",
+          "catalogue_image": "gallery/media/objects/terran/assault-fighter/construction/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Scoutship",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:scoutship",
+          "stage": "layered-construction",
+          "model": "sources/objects/terran/scoutship/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/terran/canonical-references/scoutship-front-quarter.png",
+          "model_sha256": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+          "image_sha256": "8c07bc43788a30d94dcbcb202f5bbb19d493fb7554801d27de606bbe3d0fcf0a",
+          "catalogue_image": "gallery/media/objects/terran/scoutship/construction/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "models": [
+        {
+          "role": "terraform",
+          "model": "sources/proposals/engineering-ships/terran/terraform/model.glb",
+          "binaries": {
+            "blend": "8444a3cefa6d88cc10da2d451b8dc6d8a689ddb4d5e2609e65c64001cdf7f0ef",
+            "glb": "f9dd25a937b9153fc51b098cb653df7422f9fcb23bf602621894077fc9317146"
+          },
+          "triangles": 23644,
+          "channels": 1,
+          "cycles_used": 2,
+          "cycles_remaining": 1,
+          "history": {
+            "path": "sources/proposals/engineering-ships/terran/terraform/style-refinement.json",
+            "sha256": "d36b1a4b7eadcc355558b5b4e558363e413d10f7bd0baadcb612785e4b918e02"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/terran/terraform/runtime-review.json",
+            "sha256": "c361c98113feeb3caff2b4d92e8f82d9d670a9861c8761bc1fde9d99416fea75"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/terran/terraform/visual-review.json",
+            "sha256": "05953c323722a74efeae6e1b0a3c0d75575dbca40850ad410abf19f396e55b94"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/terran/terraform/video-review.json",
+            "sha256": "51e3825af452fb47b0383f923b6c74823a226df56cf2ed085bd0972903381ac8"
+          }
+        },
+        {
+          "role": "repair",
+          "model": "sources/proposals/engineering-ships/terran/repair/model.glb",
+          "binaries": {
+            "blend": "9121f749d6cbb633afa2b963412411bf07cdbf60aded2a56c79164988469bb9f",
+            "glb": "12a4cd30acfde835d022a740183248c4b77e0e6d34dab14d0e28d169de4a9635"
+          },
+          "triangles": 31376,
+          "channels": 6,
+          "cycles_used": 2,
+          "cycles_remaining": 1,
+          "history": {
+            "path": "sources/proposals/engineering-ships/terran/repair/style-refinement.json",
+            "sha256": "26f94e57984228d4bb29f9687955b0bd5be20362f5450455bc862e105c20f443"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/terran/repair/runtime-review.json",
+            "sha256": "69fe1630fa63596bd6725a95fb59ac46e9afe6e53963dd62611fefd7e4eacb48"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/terran/repair/visual-review.json",
+            "sha256": "ba9107350612831929db79a24fb0b84ac3ddc3041bf2c3efeda18de9c1bd7a88"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/terran/repair/video-review.json",
+            "sha256": "2a7fb3e648d9b0b95c8ff251958d55b491f81c930459305b404afef676b2cb58"
+          }
+        }
+      ],
+      "visual_status": "author-reviewed",
+      "visual_observations": [
+        "Violet-grey faceted carrier hulls,layered tapered decks,red fields and round brass/steel engine casings connect both utility ships to the current Fighter/Scoutship."
+      ],
+      "remaining_characteristics": [
+        "The front mounting edge remains broader and blunter than the combat wedge to support the milling drum and articulated arms.",
+        "Independent fitting does not establish physical game scale.",
+        "User artistic acceptance remains separate."
+      ]
+    },
+    {
+      "culture": "rigellian",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/rigellian/final-fleet-comparison.png",
+        "sha256": "5cbc1bb1935a044025197f274dbb38cb2c910a6461579261067322184576400a"
+      },
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/rigellian/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/rigellian/terraform/imported-front-quarter.png",
+          "model_sha256": "9abac90f7cdf168ca3339c2f600101b1132b95e66fce13de52982c3e9b55d6db",
+          "image_sha256": "dfdd09d7a1e6b364a809e41f772a0ae179b66b5f3d27aef049d4182fbb5a426c"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/rigellian/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/rigellian/repair/imported-front-quarter.png",
+          "model_sha256": "9362d783eb2fa8a9ce94254349c762991ced99f9370d2f928310a10a55ae8591",
+          "image_sha256": "9c8226f9ee1d4350cf6f20de6f316a734a9836795f3ce2f2184ddacccd9d9bb6"
+        },
+        {
+          "name": "Delphini Assault",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/rigellian/delphini-assault",
+          "stage": "visible-section-refinement",
+          "model": "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/rigellian/canonical-references/delphini-assault-front-quarter.png",
+          "model_sha256": "893489b3ff5b6a22ecf45ff059ffa63c3ef5700f91511bea0bd91069606bed24",
+          "image_sha256": "9922dc55b3cc1a1af168074e0f8c38cc86f09a1e1c7918bc5ca48def16f7a7c4",
+          "catalogue_image": "gallery/media/docs/assets/reconstruction/rigellian-refined/delphini-assault/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Lazzaro Research",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/rigellian/lazzaro-research",
+          "stage": "visible-form-refinement",
+          "model": "sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/rigellian/canonical-references/lazzaro-research-front-quarter.png",
+          "model_sha256": "49966492503271a0aa839959b96d99f8dd79fe69335ea88bdd48cbfe0e5b518b",
+          "image_sha256": "67d64907dd4e5f4684e8eeb12957cb0153b206e2e2fca4d91a6f9dc11a2c3f33",
+          "catalogue_image": "gallery/media/docs/assets/reconstruction/rigellian-refined/lazzaro-research/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "models": [
+        {
+          "role": "terraform",
+          "model": "sources/proposals/engineering-ships/rigellian/terraform/model.glb",
+          "binaries": {
+            "blend": "d06d078540880a91feb0a9dfe59576ab4ebc8d0808254d57a7e28da66b05e6da",
+            "glb": "9abac90f7cdf168ca3339c2f600101b1132b95e66fce13de52982c3e9b55d6db"
+          },
+          "triangles": 26140,
+          "channels": 2,
+          "cycles_used": 1,
+          "cycles_remaining": 2,
+          "history": {
+            "path": "sources/proposals/engineering-ships/rigellian/terraform/style-refinement.json",
+            "sha256": "d520745f461cfb24da7511d87678fa7aa949448d03f4f2d3a3b4302e1873f12c"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/rigellian/terraform/runtime-review.json",
+            "sha256": "3dbb6643058490afb3faff2be6d3c7609efcd17afb1e95fdec6912d6a8667308"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/rigellian/terraform/visual-review.json",
+            "sha256": "52dfde5181e68923ef96404ecf4a152ccfad8c05bbd29b13a3bfc26963566345"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/rigellian/terraform/video-review.json",
+            "sha256": "b83c68cd4ecebe9b9a430646d764472df9375d42cce410f27ee007d7f07c338c"
+          }
+        },
+        {
+          "role": "repair",
+          "model": "sources/proposals/engineering-ships/rigellian/repair/model.glb",
+          "binaries": {
+            "blend": "565596fe779553000b10a24f0868d7e7dbdb4b9fc72d0061c1e9685d8487a27e",
+            "glb": "9362d783eb2fa8a9ce94254349c762991ced99f9370d2f928310a10a55ae8591"
+          },
+          "triangles": 37804,
+          "channels": 6,
+          "cycles_used": 1,
+          "cycles_remaining": 2,
+          "history": {
+            "path": "sources/proposals/engineering-ships/rigellian/repair/style-refinement.json",
+            "sha256": "d99723c82bac5f20f3e41869e13b898b2b064e3b85252713f7b58b141e8b9158"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/rigellian/repair/runtime-review.json",
+            "sha256": "b74751607d2f8d50d48245374620e612ec3bc9b9fb709fd8f8ac7d4ec945dca9"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/rigellian/repair/visual-review.json",
+            "sha256": "3a984960ee2dbb5e235d68185e13fc68bbae37385b45a8ec7c939eaeadf0d468"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/rigellian/repair/video-review.json",
+            "sha256": "caeaad76988140517763ba8336a5a7b195431fbaad628ac8e14304e60ea580ce"
+          }
+        }
+      ],
+      "visual_status": "author-reviewed",
+      "visual_observations": [
+        "Green oval shells,gold upper fields/crowns and slate/bronze gondolas repeat the current Delphini/Lazzaro rounded family. Metal tool chains remain visually distinct."
+      ],
+      "remaining_characteristics": [
+        "The utility carriers are wider than Delphini and add working pads/arms. Graphite roughness/metalness remain the documented small approximation.",
+        "Independent fitting does not establish physical game scale.",
+        "User artistic acceptance remains separate."
+      ]
+    },
+    {
+      "culture": "braccatian",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/braccatian/final-fleet-comparison.png",
+        "sha256": "23777825227640b845623c16734bad93813d928ad62195358dcaef24d7e47fcc"
+      },
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/braccatian/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/braccatian/terraform/imported-front-quarter.png",
+          "model_sha256": "79bfcf19234dbbeddc808a5f4f518a9f81b5bc511aeaa2bc16687673dea3701d",
+          "image_sha256": "aaad14bee770f5b1df5d39a25f153d9ff28fbc3a2aea3f595920f9de4d811316"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/braccatian/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/braccatian/repair/imported-front-quarter.png",
+          "model_sha256": "23c1ddb7edc061a2c598a157bfc269a0b4903becb9aa80cfd9c003b90271bf68",
+          "image_sha256": "cc08ef5936572b5260159189f28a3f10106799ce8a7e38c83a6e119167b4da1d"
+        },
+        {
+          "name": "Morning Glory",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/morning-glory",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/morning-glory/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/braccatian/canonical-references/morning-glory-front-quarter.png",
+          "model_sha256": "b3e9ded923afcd331caa5c0671f3ba2f2766d32b9899797f904babc59acbc4df",
+          "image_sha256": "5e42f5f42790b128cf2d49941cf4b9ed68c752020e6c905be21ff566252a59cd",
+          "catalogue_image": "gallery/media/objects/braccatian/morning-glory/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Rattlesnake",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/rattlesnake",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/rattlesnake/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/braccatian/canonical-references/rattlesnake-front-quarter.png",
+          "model_sha256": "a1e9813632151814e7850892bb30c17e5c66db0d296d7fc589f2556c9e66921e",
+          "image_sha256": "43b49d9ec28f14f02ab9f6dca3e19ab028f0eb2f44b4727b6d42214e0cb6b35d",
+          "catalogue_image": "gallery/media/objects/braccatian/rattlesnake/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "models": [
+        {
+          "role": "terraform",
+          "model": "sources/proposals/engineering-ships/braccatian/terraform/model.glb",
+          "binaries": {
+            "blend": "754c0ce741b982142824f39b23bf1b86b9243dac97707b69f4d6806a3caffd80",
+            "glb": "79bfcf19234dbbeddc808a5f4f518a9f81b5bc511aeaa2bc16687673dea3701d"
+          },
+          "triangles": 18164,
+          "channels": 2,
+          "cycles_used": 3,
+          "cycles_remaining": 0,
+          "history": {
+            "path": "sources/proposals/engineering-ships/braccatian/terraform/style-refinement.json",
+            "sha256": "600c01361023b27fcb5203e577ef5f8f310f138db74e69289ee4d7b6ecf3afe5"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/braccatian/terraform/runtime-review.json",
+            "sha256": "b98d8bdac32225cf6e072961a872ce1a9da5148da0df968274bbe2a9df243db3"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/braccatian/terraform/visual-review.json",
+            "sha256": "2ce87a5a3678a0e3beadb224d33cb78e35fcbd2ce191e96f7388fb7587b7bbb3"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/braccatian/terraform/video-review.json",
+            "sha256": "3995349c67ea992e8d3d04938739dc67fd25edf6b9f9e464aaf914f4e0939087"
+          }
+        },
+        {
+          "role": "repair",
+          "model": "sources/proposals/engineering-ships/braccatian/repair/model.glb",
+          "binaries": {
+            "blend": "77f5b9a1f6bf17bb1b436af1d0d9145c290e4c519cc23ff5e3a7d74637aa94c3",
+            "glb": "23c1ddb7edc061a2c598a157bfc269a0b4903becb9aa80cfd9c003b90271bf68"
+          },
+          "triangles": 22216,
+          "channels": 3,
+          "cycles_used": 3,
+          "cycles_remaining": 0,
+          "history": {
+            "path": "sources/proposals/engineering-ships/braccatian/repair/style-refinement.json",
+            "sha256": "7ba448bc30a71707bfbdda10e914e6374441da709fb9ec9d531c4103c7955328"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/braccatian/repair/runtime-review.json",
+            "sha256": "9e39e5645ae3ff989fb19da0e4608992389e6022a1cb04e63cf88653d3c8c67d"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/braccatian/repair/visual-review.json",
+            "sha256": "879f28de7a72563050e481fc510a2bee0b5b6180afef40d741572da7f03d0ff1"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/braccatian/repair/video-review.json",
+            "sha256": "51080e1d36d939d35dd2191b3ba2666a7cb42cbed8fbe28053a6d26e62152e35"
+          }
+        }
+      ],
+      "visual_status": "author-reviewed",
+      "visual_observations": [
+        "Rose-copper lobes and waist,ochre prows and narrow gold inlays share the Rattlesnake/Morning Glory alloy and curved construction language."
+      ],
+      "remaining_characteristics": [
+        "The utility nose and body are broader than the scout and retain crusher/yoke tooling. The permitted three attempts are exhausted.",
+        "Independent fitting does not establish physical game scale.",
+        "User artistic acceptance remains separate."
+      ]
+    },
+    {
+      "culture": "mikotaj",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/final-fleet-comparison.png",
+        "sha256": "a280b4bb0c084bf82869e401900417e3cb9ae024ba7c2e5960596aa4dbb30707"
+      },
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mikotaj/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mikotaj/terraform/imported-front-quarter.png",
+          "model_sha256": "2b1ff96f611372bbbe7475d64524d2386817c7565b607eadee2be205d1120932",
+          "image_sha256": "e6b1e1aef7936ced7012bd2ec4fe550c8ca391f79e8bee01328ef976bb6c8376"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mikotaj/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mikotaj/repair/imported-front-quarter.png",
+          "model_sha256": "686494d0107b14249c2ed0fe5c1c663d9c144166d467b258e61088a75313ec79",
+          "image_sha256": "d560378018169c63cb2103a96e81d7856f423452a81f24099ee7594f60acd6ad"
+        },
+        {
+          "name": "Ylikt-shan",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/ylikt-shan",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/ylikt-shan/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mikotaj/canonical-references/ylikt-shan-front-quarter.png",
+          "model_sha256": "52de04f4769a1f321ced5dd41d8c5a00e69f326e9de28be1828a60bf4c890b1c",
+          "image_sha256": "dfe9fe806e415def4a55e85f96d13aac7efaba680d56bd7614542becdfd77f30",
+          "catalogue_image": "gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Hiero",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/hiero",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/hiero/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mikotaj/canonical-references/hiero-front-quarter.png",
+          "model_sha256": "eeb25924535c4c059c130777922f79790beb18963f6debdb3749fb6635d9161a",
+          "image_sha256": "45a2ab1a6e000a358df8d650e5ad29fbff1c03e64d79b2af61a327c17f3f75de",
+          "catalogue_image": "gallery/media/objects/mikotaj/hiero/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "models": [
+        {
+          "role": "terraform",
+          "model": "sources/proposals/engineering-ships/mikotaj/terraform/model.glb",
+          "binaries": {
+            "blend": "3dd627b8ecc6ad64aafc76a4cc5a79f18d158b9c7a3c0bcd9a56e63a6f6a0f0b",
+            "glb": "2b1ff96f611372bbbe7475d64524d2386817c7565b607eadee2be205d1120932"
+          },
+          "triangles": 8472,
+          "channels": 2,
+          "cycles_used": 3,
+          "cycles_remaining": 0,
+          "history": {
+            "path": "sources/proposals/engineering-ships/mikotaj/terraform/style-refinement.json",
+            "sha256": "0a93d1b290da5ba9e0bd8a89f51e9aa6f211eb73f45013081c70a738e899b8bd"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/mikotaj/terraform/runtime-review.json",
+            "sha256": "e8f63c23b1aaedf9d6f4112189e7332966edfe35c5becda762ecc2adf296e21c"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/mikotaj/terraform/visual-review.json",
+            "sha256": "e817655e6b81c0d10992731f2c7e71286e4ba50b08ae113f894ba75e3c1ffe63"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/mikotaj/terraform/video-review.json",
+            "sha256": "9179536f9d8c07b6d24cc63777d521f16b5500e63054c88b9465ed26f09d689c"
+          }
+        },
+        {
+          "role": "repair",
+          "model": "sources/proposals/engineering-ships/mikotaj/repair/model.glb",
+          "binaries": {
+            "blend": "378049f97aef7095f53037a19baa2db898abf392e18efab2baf7bd04e1badd29",
+            "glb": "686494d0107b14249c2ed0fe5c1c663d9c144166d467b258e61088a75313ec79"
+          },
+          "triangles": 9892,
+          "channels": 3,
+          "cycles_used": 3,
+          "cycles_remaining": 0,
+          "history": {
+            "path": "sources/proposals/engineering-ships/mikotaj/repair/style-refinement.json",
+            "sha256": "19e42f1e2b4a96f8259084c1ad9e94a7d5c1176bfc163687ca84d4b23fc2fb54"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/mikotaj/repair/runtime-review.json",
+            "sha256": "13bfaf5e72faf6d63df4a0194c74c61db56f8b9ac661b4fee134e64ae03ad9cd"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/mikotaj/repair/visual-review.json",
+            "sha256": "be99c9e7e022f7ea80bc08a81d393e69b0320dd030535d31a6a6e47b3ab96446"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/mikotaj/repair/video-review.json",
+            "sha256": "e6ae48d3fe6ccb8fdb68aedaa0a02fd44675c7984f2171e99013fe718f0bb217"
+          }
+        }
+      ],
+      "visual_status": "author-reviewed",
+      "visual_observations": [
+        "Slate-blue/gunmetal frames,faceted tapered rails/pods and dulled-gold joints repeat Ylikt-shan/Hiero material distribution and clear structural edges."
+      ],
+      "remaining_characteristics": [
+        "Open utility frames and shorter pods differ from the long combat prongs. All three attempts remain consumed;only canonical reference views were added for this final studio comparison.",
+        "Independent fitting does not establish physical game scale.",
+        "User artistic acceptance remains separate."
+      ]
+    },
+    {
+      "culture": "artemian",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/artemian/final-fleet-comparison.png",
+        "sha256": "b60f2e4c99840ceecfd0adfc9e1c9673bc6d2f7b3f05ec1f4d9602044dde8c7c"
+      },
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/artemian/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/artemian/terraform/imported-front-quarter.png",
+          "model_sha256": "48e0e8606ee318b15da72e2685c26041f6116239e76e6fc499177dde6949b37e",
+          "image_sha256": "5359c389b3e9c87061659343a02ff73c4178b85b3ad73bd01dcaba13e07e68a3"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/artemian/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/artemian/repair/imported-front-quarter.png",
+          "model_sha256": "6931c183a8874880f8f2dca62379b51673b4e1abec63bfeaebeff7cb52689672",
+          "image_sha256": "27fa8dea8062f0e368a07c5ce5b927d3502ff4f43ce90ceaddb2163a2ebe2567"
+        },
+        {
+          "name": "All-Purpose Assault",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/artemian/all-purpose-assault",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/artemian/all-purpose-assault/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/artemian/canonical-references/all-purpose-assault-front-quarter.png",
+          "model_sha256": "fd39236bf4aa9ee616adcb65c37dbcc24ae92b76b827e7c0fc7fcf0b61b73ee1",
+          "image_sha256": "050397ebe753e57f0b583c1aa349cba2267e5e800b1887c53f8066f54acd440c",
+          "catalogue_image": "gallery/media/objects/artemian/all-purpose-assault/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Gerla-Kans Explorer",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/artemian/gerla-kans-explorer",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/artemian/gerla-kans-explorer/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/artemian/canonical-references/gerla-kans-explorer-front-quarter.png",
+          "model_sha256": "68f44c6f41378cd423ad6e68d3a754f52429aa470ceef1a6b8056009c4e5b57c",
+          "image_sha256": "dc320a7c99a0fe11c05bd71c98c1be4553f3d40eed7164022f54631d0080c397",
+          "catalogue_image": "gallery/media/objects/artemian/gerla-kans-explorer/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "models": [
+        {
+          "role": "terraform",
+          "model": "sources/proposals/engineering-ships/artemian/terraform/model.glb",
+          "binaries": {
+            "blend": "b0142d24cce483b3ed12714da2883d9be081f16cdc6a0051da2d634bd686c273",
+            "glb": "48e0e8606ee318b15da72e2685c26041f6116239e76e6fc499177dde6949b37e"
+          },
+          "triangles": 3830,
+          "channels": 2,
+          "cycles_used": 2,
+          "cycles_remaining": 1,
+          "history": {
+            "path": "sources/proposals/engineering-ships/artemian/terraform/style-refinement.json",
+            "sha256": "d8d78eac2608742b9643ad21c8b59a5b5f9d07f90da66233edc80751fcfb2e4c"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/artemian/terraform/runtime-review.json",
+            "sha256": "003ff71cadb729d8602f8c5e31041dc91cca9cd03d9022c507bb355b8caddff5"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/artemian/terraform/visual-review.json",
+            "sha256": "54f3982581dd16b06cc01a4157c50da0308ce0ab9dbc66b683ff830a26881694"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/artemian/terraform/video-review.json",
+            "sha256": "363a03bfc63916abeb7ff3217cff5bd796e3686951bea4212c93de1206b6dc09"
+          }
+        },
+        {
+          "role": "repair",
+          "model": "sources/proposals/engineering-ships/artemian/repair/model.glb",
+          "binaries": {
+            "blend": "32313ad814d04f1ceb8cc03c33d91e0f80ee4d24d4936c1015145e71393e5531",
+            "glb": "6931c183a8874880f8f2dca62379b51673b4e1abec63bfeaebeff7cb52689672"
+          },
+          "triangles": 9858,
+          "channels": 5,
+          "cycles_used": 2,
+          "cycles_remaining": 1,
+          "history": {
+            "path": "sources/proposals/engineering-ships/artemian/repair/style-refinement.json",
+            "sha256": "381b176576c9a71de041063804b3de6c56d5e9cbaa3ae381286660d48151415a"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/artemian/repair/runtime-review.json",
+            "sha256": "bd1a38a2de2f587afad73cc3cc0e6163e3778e07575819b83cc400f26f5cfc55"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/artemian/repair/visual-review.json",
+            "sha256": "13534df249833f7e598ec1336463c3a08ae87161eef3e00a51a624076f80b1b4"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/artemian/repair/video-review.json",
+            "sha256": "ed0edb6578a484072cf91dd0293742685a67b62fdf59f4f5acfe68a5c5f164e9"
+          }
+        }
+      ],
+      "visual_status": "author-reviewed",
+      "visual_observations": [
+        "Pointed green decks and three separated silver faceted fairings connect the proposals to the current Assault/Explorer forms. Green working wedges retain that construction language."
+      ],
+      "remaining_characteristics": [
+        "The paired tools and broader working deck remain distinct from combat/scout layouts.",
+        "Independent fitting does not establish physical game scale.",
+        "User artistic acceptance remains separate."
+      ]
+    },
+    {
+      "culture": "mauna",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/mauna/final-fleet-comparison.png",
+        "sha256": "0fe9a17eea023d545cb6343d1bb958a58e503a3d0b03c5d6719773ab8197d398"
+      },
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mauna/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mauna/terraform/imported-front-quarter.png",
+          "model_sha256": "29b04e9dc0456535f4d43b6f0e89cb453e730c940757ce3d6e493fa92ae2cf93",
+          "image_sha256": "78513afeff87598f68337ecd1ad5dc00be7565653275164db8808d398fbff079"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mauna/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mauna/repair/imported-front-quarter.png",
+          "model_sha256": "c88e790c22b797ac113a8f2fdd65dd08f5c9383c7c0e1d9f9292a41cd49c3c63",
+          "image_sha256": "4807b902fa0673baa0c0a99b3489c63d6352f4c387a929f0f830b8da92bad7b4"
+        },
+        {
+          "name": "Combat Craft Type 1.5",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mauna/combat-craft-type-1-5",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mauna/combat-craft-type-1-5/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mauna/canonical-references/combat-craft-type-1-5-front-quarter.png",
+          "model_sha256": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
+          "image_sha256": "b2db76cffe85515da8bc5b3e7426d94b8fd3585fda6ba0fff210285cee20dee1",
+          "catalogue_image": "gallery/media/objects/mauna/combat-craft-type-1-5/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Surveillance Craft Type 5",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mauna/surveillance-craft-type-5",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mauna/surveillance-craft-type-5/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mauna/canonical-references/surveillance-craft-type-5-front-quarter.png",
+          "model_sha256": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
+          "image_sha256": "d664b7a55cc3617abbdb4295637aa8bbcfdd882a298e04e0d49d1913ebca18d4",
+          "catalogue_image": "gallery/media/objects/mauna/surveillance-craft-type-5/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "models": [
+        {
+          "role": "terraform",
+          "model": "sources/proposals/engineering-ships/mauna/terraform/model.glb",
+          "binaries": {
+            "blend": "2b84b666902bece97faa709e8e35a4c7f5d9a1f9091c05dbdca6deb77c276b8a",
+            "glb": "29b04e9dc0456535f4d43b6f0e89cb453e730c940757ce3d6e493fa92ae2cf93"
+          },
+          "triangles": 6210,
+          "channels": 1,
+          "cycles_used": 3,
+          "cycles_remaining": 0,
+          "history": {
+            "path": "sources/proposals/engineering-ships/mauna/terraform/style-refinement.json",
+            "sha256": "68e36579aa3d493114ba118d41d969ef40d397f37200683e424fe7f1efc77cb5"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/mauna/terraform/runtime-review.json",
+            "sha256": "158ec4f0ec493c525c861756a9bbd291c2f318a3ba230b3b27b8abf3aa150b53"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/mauna/terraform/visual-review.json",
+            "sha256": "721186ee17a01378089f50b3ff6cb228a4cf5a1d5cb0800a32002ee5dc29a181"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/mauna/terraform/video-review.json",
+            "sha256": "311fd30864e6ac078ef1694a82f9e719023e6e217bcf3d05ee143e954d2c0d26"
+          }
+        },
+        {
+          "role": "repair",
+          "model": "sources/proposals/engineering-ships/mauna/repair/model.glb",
+          "binaries": {
+            "blend": "fda0d0f16d1a0c3dadda3f483f7b9d5b158c6f50c251d43e835f810f38108641",
+            "glb": "c88e790c22b797ac113a8f2fdd65dd08f5c9383c7c0e1d9f9292a41cd49c3c63"
+          },
+          "triangles": 15340,
+          "channels": 5,
+          "cycles_used": 2,
+          "cycles_remaining": 1,
+          "history": {
+            "path": "sources/proposals/engineering-ships/mauna/repair/style-refinement.json",
+            "sha256": "7964bce0f77640fc6db40753aff7c9df00d48109367655cf03d6ad2070b54404"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/mauna/repair/runtime-review.json",
+            "sha256": "7f6f922ccfba282b7d5ee8833faad38aabcd95218c73751b721fb762286ce194"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/mauna/repair/visual-review.json",
+            "sha256": "560e59e32ca026c21d569db2ecc730c27b99a47797b68eb323c2cf3d3686058e"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/mauna/repair/video-review.json",
+            "sha256": "213568c95510cd1f74fff905dec904d377d5a640c9705d9845b4aeb44922c772"
+          }
+        }
+      ],
+      "visual_status": "author-reviewed",
+      "visual_observations": [
+        "Grey rectangular slabs,stepped upper volumes and blue-grey service insets match the current Type1.5/Type5 structural/material regions. Edges remain defined."
+      ],
+      "remaining_characteristics": [
+        "Twin service towers and grading blade are role-specific. Surface wear placement is independently authored and differs from canonical scratch patterns;technical failed attempts remain in the history.",
+        "Independent fitting does not establish physical game scale.",
+        "User artistic acceptance remains separate."
+      ]
+    },
+    {
+      "culture": "achaean",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/achaean/final-fleet-comparison.png",
+        "sha256": "e59916192c95ff91436c4a807a864231c8bc537a19d846894baf1d02bf4b3796"
+      },
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/achaean/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/achaean/terraform/imported-front-quarter.png",
+          "model_sha256": "e69580866eeef04396a736ed3233e6f8fc7cb61041941d2640be1c4d2fe44856",
+          "image_sha256": "c63ebea8367e0ae19b16d128a28f8adf0dbf9e38defb20c20e013fdf9676525f"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/achaean/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/achaean/repair/imported-front-quarter.png",
+          "model_sha256": "63f1a86236f4bf460347572bfe94a6a71d1b0e69bd73fce4be24942fb0438b50",
+          "image_sha256": "316b12da4057a2f5065eac3307bc9efd47e366d58e1182e810f5999ae442a8c1"
+        },
+        {
+          "name": "Dedicated Fighter",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/achaean/dedicated-fighter",
+          "stage": "legacy-hi-def-remaster",
+          "model": "sources/objects/achaean/dedicated-fighter/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/achaean/canonical-references/dedicated-fighter-front-quarter.png",
+          "model_sha256": "78b8144db063fed2947dd075dc7691eeef584b91bccfd98684f3dc02cd6e47a9",
+          "image_sha256": "7e11ec734e79bea1c6ccd3cdc86bfc20daf18d78059bdbf84bcc82a01b300d7c",
+          "catalogue_image": "gallery/media/objects/achaean/dedicated-fighter/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Hunter/Prospector",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/achaean/hunter-prospector",
+          "stage": "legacy-hi-def-remaster",
+          "model": "sources/objects/achaean/hunter-prospector/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/achaean/canonical-references/hunter-prospector-front-quarter.png",
+          "model_sha256": "a2f09789f56162e3570f6bc2dcc01fc837f1ad388ac65210c2d0efaeff00ef5c",
+          "image_sha256": "91458d3db612fdcd3d0e8068661a01fa8ebcf1dcba83fbd12ef426545b8bbb23",
+          "catalogue_image": "gallery/media/objects/achaean/hunter-prospector/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "models": [
+        {
+          "role": "terraform",
+          "model": "sources/proposals/engineering-ships/achaean/terraform/model.glb",
+          "binaries": {
+            "blend": "6728dbf6b1c8e0d2b526c68712f66a22a98a08a39b7516b604d9eb968bb21ceb",
+            "glb": "e69580866eeef04396a736ed3233e6f8fc7cb61041941d2640be1c4d2fe44856"
+          },
+          "triangles": 15316,
+          "channels": 1,
+          "cycles_used": 2,
+          "cycles_remaining": 1,
+          "history": {
+            "path": "sources/proposals/engineering-ships/achaean/terraform/style-refinement.json",
+            "sha256": "ddf1523eb2ddcbd881b4f07af9e4ddb82bce48f8c7881656ccf9121559a1ed4f"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/achaean/terraform/runtime-review.json",
+            "sha256": "9912435e2735b0960d805bce1dca0ebe0b3b9aa87993fdc5a1b10fac4b25045f"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/achaean/terraform/visual-review.json",
+            "sha256": "96ea99792f111db5e790653e5d27de9b2f2ba4ba2943edc1d3cda423a5a0e5ef"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/achaean/terraform/video-review.json",
+            "sha256": "029e7a491d439dadf7b77f32cbb25e5c65cfce56f32eccdef7bcee08c072e30f"
+          }
+        },
+        {
+          "role": "repair",
+          "model": "sources/proposals/engineering-ships/achaean/repair/model.glb",
+          "binaries": {
+            "blend": "aeb524def87c654a8933567a623099cad9a267ed0ec86c2c38fea012a62df735",
+            "glb": "63f1a86236f4bf460347572bfe94a6a71d1b0e69bd73fce4be24942fb0438b50"
+          },
+          "triangles": 24332,
+          "channels": 4,
+          "cycles_used": 2,
+          "cycles_remaining": 1,
+          "history": {
+            "path": "sources/proposals/engineering-ships/achaean/repair/style-refinement.json",
+            "sha256": "2ada87bc40adddf69ddf43e7d4f3107927ba2a6a20c9a5dcbc5c1622525521a3"
+          },
+          "runtime": {
+            "path": "sources/proposals/engineering-ships/achaean/repair/runtime-review.json",
+            "sha256": "31d968384e39670dfa46544052cb05e42638cc33fa4929210618371d8fb52cb3"
+          },
+          "visual": {
+            "path": "sources/proposals/engineering-ships/achaean/repair/visual-review.json",
+            "sha256": "aa8fcc3f90babd51d632150ebfabc4a1d7085cef4dd8b0acf36700f9b8194b93"
+          },
+          "video": {
+            "path": "sources/proposals/engineering-ships/achaean/repair/video-review.json",
+            "sha256": "eb3f2293fddadeaf26833888dbee8158074df218bb787b4367c1b7f8fa776ee8"
+          }
+        }
+      ],
+      "visual_status": "author-reviewed",
+      "visual_observations": [
+        "Pointed copper spindles,continuous crimson fields and thin silver crescent edges repeat the current Achaean fleet. Fixed repair wings/roots/bosses remain mirrored."
+      ],
+      "remaining_characteristics": [
+        "Compact utility crescents and the ventral grader/service spine differ from combat/scout profiles;the working tool remains intentionally asymmetric.",
+        "Independent fitting does not establish physical game scale.",
+        "User artistic acceptance remains separate."
+      ]
+    }
+  ],
+  "overview": {
+    "path": "gallery/media/proposals/engineering-ships/canonical-style-overview.png",
+    "sha256": "c1fb29a492ddeb145176d646d9b28b76d99d49566c54eb61eeb2b47cab491d09"
+  },
+  "comparison_manifest": {
+    "path": "gallery/engineering-style-comparison.json",
+    "sha256": "fb1fe8df4f93770f8df3a0322a43622d70a1bf5ec3b8d31f2189dd29b34bf2f2"
+  },
+  "models_reviewed": 14,
+  "final_user_artistic_acceptance": false,
+  "technical_and_visual_scope": "All current per-model source/export/runtime/visual/video identities are bound below. Whole-fleet judgement is based on the actual seven comparison rows,not technical pass flags alone.",
+  "limits": [
+    "These are new engineering proposals,not recovered legacy units.",
+    "User artistic acceptance,physical game scale,platform profiling,continuous swept clearance and gameplay integration are separate.",
+    "Every actual generator attempt is retained,including failed checks. No fourth attempt was run."
+  ],
+  "triangle_range": [
+    3830,
+    37804
+  ],
+  "repair_wing_symmetry": {
+    "path": "sources/proposals/engineering-ships/achaean/repair/wing-symmetry-review.json",
+    "sha256": "641d6d3c34491c1ba8557bd004a8e0f547363a51db2935bd62f45d6054351761"
+  },
+  "canonical_models_and_runtime_catalogues_unchanged_from": "af7c385de5b1ddb599d1212ee8ce234660ad2690",
+  "mikotaj_final_reference_update": "Canonical references only;both engineering GLBs and generators are unchanged from the three-cycle milestone."
+}
