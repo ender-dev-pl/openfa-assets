@@ -1,4 +1,4 @@
-# Engineering ship proposals — issue #265
+# Engineering ship proposals â€” issue #265
 
 Fourteen new authored OpenFA asset proposals: Terraforming Ship and Repair / Construction Assist Ship for seven cultures. These are not recovered legacy units. The selected supplied concepts and their identities are in `concepts.json`.
 
@@ -14,7 +14,7 @@ The dedicated [proposal gallery](../../../gallery/engineering-proposals.html) sh
 
 ## Delivered tool articulation
 
-All fourteen proposals contain one looping `ToolOperation` clip, authored at 24 fps over frames 1–97 (four seconds). The lightweight gallery videos sample playback at 6 fps; the GLB contains continuously interpolated animation. First/last poses match. Tool pivots are named editable nodes; engines and hulls remain stationary.
+All fourteen proposals contain one looping `ToolOperation` clip, authored at 24 fps over frames 1â€“97 (four seconds). The lightweight gallery videos sample playback at 6 fps; the GLB contains continuously interpolated animation. First/last poses match. Tool pivots are named editable nodes; engines and hulls remain stationary.
 
 | Culture | Terraforming Ship | Repair / Construction Assist Ship |
 | --- | --- | --- |
@@ -35,3 +35,7 @@ Refinement retains defined hull planes, clipped corners and structural breaks. C
 The current refinement uses authored colour, packed roughness/metallic and tangent-space normal maps, including sparse scuffs and shallow dent shading. Maps are embedded in GLB. Named joints, tool motions and proposal-only integration status are preserved. Geometry has a 40,000-triangle guard per ship; this is an authoring bound, not a measured game performance guarantee. Runtime draw calls, texture sharing and platform profiling remain future integration work.
 
 The delivery audit additionally pins the refinement helper, verifies GLB PBR channels and actual native/imported per-material image assignments, and binds the before/refined/concept comparison to the current GLB. During refinement, pass `--cultures <name> ...` to verify a completed subset; the default requires all fourteen revision-2 models. Original revision-1 sources and exports remain in Git history, without duplicate model payloads in the catalogue.
+
+### Achaean repair wing correction
+
+The repair ship uses two mirrored longitudinal red/silver wings with matching roots and bosses. This user-requested correction supersedes the selected concept's asymmetric overhead/side arches; the original concept is retained as provenance rather than edited to imply it already contained the correction. The ventral articulated service tool remains functionally asymmetric. `verify_achaean_engineering_symmetry.py` checks both native and imported wing surfaces at five animation poses and rejects a deliberately distorted wing; its source-bound result is `achaean/repair/wing-symmetry-review.json`.
