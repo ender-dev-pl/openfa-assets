@@ -32277,7 +32277,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/150",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           1011
         ]
@@ -32351,21 +32351,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/laser-boost/model.blend",
           "present": true,
-          "sha256": "9e78f8da2c0719d3e5275e4323afd4bf13e09f7f8018ea63ee28cfdf8b173613",
-          "final_visual_acceptance": "not-established"
+          "sha256": "0719129adb0939acadd6175589f7bfae5c0b0e67401c57bb3eea5adbf9e68754",
+          "media": "gallery/media/objects/mauna/laser-boost",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/laser-boost/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/laser-boost/rear-quarter.png"
+            },
+            {
+              "label": "Single blade, inclined grooves and rotating cradle",
+              "image": "gallery/media/objects/mauna/laser-boost/single-blade-two-inclined-grooves-and-cradle-detail.png"
+            },
+            {
+              "label": "Two hooked front fittings and red side markings",
+              "image": "gallery/media/objects/mauna/laser-boost/two-hooked-brass-fittings-and-red-side-marks-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/laser-boost/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/laser-boost/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
-        "moving_assemblies": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
+        "moving_assemblies": true,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -32395,6 +32422,98 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 150
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/model.blend",
+          "present": true,
+          "sha256": "9e78f8da2c0719d3e5275e4323afd4bf13e09f7f8018ea63ee28cfdf8b173613",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/laser-boost/model.blend",
+        "sha256": "0719129adb0939acadd6175589f7bfae5c0b0e67401c57bb3eea5adbf9e68754",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/laser-boost",
+          "verifier": "sources/tools/blender/verify_mauna_laser_boost.py",
+          "files": {
+            "sources/objects/mauna/laser-boost/integration-contract.json": "255f3cf191cef0193ed18189273d16f30fc3ecb964b3f4c48e1e0f26f2e6637a",
+            "sources/objects/mauna/laser-boost/model.blend": "0719129adb0939acadd6175589f7bfae5c0b0e67401c57bb3eea5adbf9e68754",
+            "sources/objects/mauna/laser-boost/model.glb": "b2a90ff8d8e5c6f71de16f2f7666e7acd1c34cdf10a4458f499e8365644e686b",
+            "sources/objects/mauna/laser-boost/model.json": "fec6544e0f0f3e5aa7537d4f874430b6b9cbb9b766fc3fa4abb6fdf271e6b156",
+            "sources/objects/mauna/laser-boost/README.md": "ed2552a61f035e7f670b9116f6b505343108cf9b329241cead1225a51404639a",
+            "sources/objects/mauna/laser-boost/runtime-review.json": "007023d2a64b53bc29f0a9c515fcb938fc26419ab26723f48a37c8acc7698e70",
+            "sources/objects/mauna/laser-boost/visual-review.json": "e00c51257bf925b04448c6b6ad8103e35208326687efeb9f1e29491e70f4918a",
+            "gallery/media/objects/mauna/laser-boost/animation-00.webm": "9ae1f2faf08e228b88390a01ad38df043cee65bccdffdf65cff3a7a2b7134ddc",
+            "gallery/media/objects/mauna/laser-boost/animation-previews.json": "99c4f2a5d5b20c773832cbb378f14d6afdfd20254b25395ba4f0d1d041575f4c",
+            "gallery/media/objects/mauna/laser-boost/concept-glb-comparison.jpg": "bceeebc9bf91b850f34ea2bac68e3f7576956c08c06d68e08478e0eec5c7ee47",
+            "gallery/media/objects/mauna/laser-boost/front-quarter.png": "2416e7cc3c2c0f7115431f4ba284a9b3bf2a975b28bbb0a5a4ff0847d72ac33b",
+            "gallery/media/objects/mauna/laser-boost/front.png": "bf66d6f6486d32bf9943cd7203e662d98bca172bcd36b24f10ceae9355987277",
+            "gallery/media/objects/mauna/laser-boost/imported-front-quarter.png": "2416e7cc3c2c0f7115431f4ba284a9b3bf2a975b28bbb0a5a4ff0847d72ac33b",
+            "gallery/media/objects/mauna/laser-boost/imported-front.png": "bf66d6f6486d32bf9943cd7203e662d98bca172bcd36b24f10ceae9355987277",
+            "gallery/media/objects/mauna/laser-boost/imported-rear-quarter.png": "66c1845066cbad2f2f8985f7ca674e1b03791913a5fc04b759246195dbc295ad",
+            "gallery/media/objects/mauna/laser-boost/native-front-quarter.png": "a052720ea900ee3b19b28b1a206a5fe44a708deed39da95e833dfd0ceb07f857",
+            "gallery/media/objects/mauna/laser-boost/native-front.png": "775cdecdff582512fd8f9b3113c6bbbc1c4ce4d83c736937b3e3f63c162b4693",
+            "gallery/media/objects/mauna/laser-boost/native-rear-quarter.png": "2681d45b6ca4e683f2d5b810ca676a6aa320a3f35feafc8db03e6027f07d3918",
+            "gallery/media/objects/mauna/laser-boost/rear-quarter.png": "66c1845066cbad2f2f8985f7ca674e1b03791913a5fc04b759246195dbc295ad",
+            "gallery/media/objects/mauna/laser-boost/single-blade-two-inclined-grooves-and-cradle-detail.png": "b6832e70bfdde30066b704c652cf4aaeb4d85c4c1a80f07fe0380fbe71f9e3a6",
+            "gallery/media/objects/mauna/laser-boost/technical-wireframe.png": "17e89483298472dc92aaea7178c8deac0bbea78f6c21a6b573e7ba941f4dfdd4",
+            "gallery/media/objects/mauna/laser-boost/two-hooked-brass-fittings-and-red-side-marks-detail.png": "844fccca081d4d83a4eb044abaf8402d99ff7bf155d0cc83318656e48da4e41a",
+            "sources/materials/mauna/laser-boost/brass-colour.png": "2b6c65e81a0d037aaa3aea1924562af6cd5cd48b226331efe73f0e3aa96e8572",
+            "sources/materials/mauna/laser-boost/cast-concrete-colour.png": "c203193b8aa6aba92ff8eaece70c30e08d94213426272a6ae93b5cea048117fd",
+            "sources/materials/mauna/laser-boost/cast-service-normal.png": "2d8c2af9705d12073602f46ecc5e321c935cdbad9f97962a00c27724da0db785",
+            "sources/materials/mauna/laser-boost/concrete-orm.png": "87e58677d530ef899e7b44e3058001a08854346ccc59a0b68dee7e84a9f99225",
+            "sources/materials/mauna/laser-boost/marking-red-colour.png": "27236b45f4c4ad8998d20fcbef695bb2e0917c0b71b14d7cb9b4757b4be6af11",
+            "sources/materials/mauna/laser-boost/metal-orm.png": "af2b9d51fbf7b053c6cfe31b45f50b765aeb7636a898add33aadf9aa549d4365",
+            "sources/materials/mauna/laser-boost/pale-alloy-colour.png": "13248ec44ede6182a0857a48e941de87a0f6c871b9f3d1f90fc63f240c17f0a1",
+            "sources/tools/blender/remaster_mauna_laser_boost.py": "2013cf8151505ccdd5c4b546a3684d12ef01de0b6445e249816131d35eafb27a",
+            "sources/tools/blender/verify_mauna_laser_boost.py": "9901b8770cbae1f1c6979509805cddd57789d598438539d4c6d7d433dcf85676",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/tools/blender/render_mauna_laser_boost_animation.py": "4d933429b92a770fe10b1f98980c67745692beabc22384f6486dc299cf39102a",
+            "sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/model.blend": "9e78f8da2c0719d3e5275e4323afd4bf13e09f7f8018ea63ee28cfdf8b173613",
+            "sources/docs/reconstruction/models/mn21-concept-review.json": "b0b84766b753d100ce59ee1b6f8068d6d65450f80eba2f8d4fcf2725c8a0edd3",
+            "sources/docs/reconstruction/models/mn21-concept-prompt-1.txt": "2933403e953f5bcc1a15225d23275e500786254386f6eda34b3f3d0ae3b90c4e",
+            "gallery/media/concepts/mauna/mn21-review-1.png": "61d4458bf6d1d3c579d11e91d54d6f09e547a7bd0fc964c653841fda7544c9bb"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/laser-boost/visual-review.json",
+          "sha256": "e00c51257bf925b04448c6b6ad8103e35208326687efeb9f1e29491e70f4918a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/laser-boost/visual-review.json",
+          "sha256": "e00c51257bf925b04448c6b6ad8103e35208326687efeb9f1e29491e70f4918a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/laser-boost/visual-review.json",
+          "sha256": "e00c51257bf925b04448c6b6ad8103e35208326687efeb9f1e29491e70f4918a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/laser-boost/visual-review.json",
+          "sha256": "e00c51257bf925b04448c6b6ad8103e35208326687efeb9f1e29491e70f4918a",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "moving_assemblies": {
+          "report": "sources/objects/mauna/laser-boost/runtime-review.json",
+          "sha256": "007023d2a64b53bc29f0a9c515fcb938fc26419ab26723f48a37c8acc7698e70",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/laser-boost/runtime-review.json",
+          "sha256": "007023d2a64b53bc29f0a9c515fcb938fc26419ab26723f48a37c8acc7698e70",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

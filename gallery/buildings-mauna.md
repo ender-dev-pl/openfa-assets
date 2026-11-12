@@ -252,10 +252,12 @@ Additional views: [Front](../gallery/media/objects/mauna/motion-units/front.png)
 
 `openfa:building/legacy/150`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Laser Boost](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/front-quarter.png)
+![Laser Boost](../gallery/media/objects/mauna/laser-boost/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/model.glb)
+[Blend](../sources/objects/mauna/laser-boost/model.blend) · [GLB](../sources/objects/mauna/laser-boost/model.glb)
 
-[Play animation: Animation](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/animation-00.webm)
+Additional views: [Front](../gallery/media/objects/mauna/laser-boost/front.png) · [Rear quarter](../gallery/media/objects/mauna/laser-boost/rear-quarter.png) · [Single blade, inclined grooves and rotating cradle](../gallery/media/objects/mauna/laser-boost/single-blade-two-inclined-grooves-and-cradle-detail.png) · [Two hooked front fittings and red side markings](../gallery/media/objects/mauna/laser-boost/two-hooked-brass-fittings-and-red-side-marks-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/laser-boost/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/laser-boost/concept-glb-comparison.jpg)
+
+[Play animation: Animation](../gallery/media/objects/mauna/laser-boost/animation-00.webm)

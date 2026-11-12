@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/150",
+  "binaries": {
+    "blend": "0719129adb0939acadd6175589f7bfae5c0b0e67401c57bb3eea5adbf9e68754",
+    "glb": "b2a90ff8d8e5c6f71de16f2f7666e7acd1c34cdf10a4458f499e8365644e686b"
+  },
+  "runtime_report_sha256": "007023d2a64b53bc29f0a9c515fcb938fc26419ab26723f48a37c8acc7698e70",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 7.474710562596549e-05,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00010013351134846461,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00011382450331125828,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn21-review-1.png",
+      "sha256": "61d4458bf6d1d3c579d11e91d54d6f09e547a7bd0fc964c653841fda7544c9bb",
+      "prompt": "sources/docs/reconstruction/models/mn21-concept-prompt-1.txt",
+      "feedback": "Selected after actual comparison against own base1 plus all16 direction heads at source offsets and enlarged catalogue/all41 updates. Retains squat flared angular grey-blue base, two front hooked brass fittings, long red side stripe/smaller angular red marking and inclined broad-shoulder tapered single blade head with two elongated grooves. Source controls proportions,details and heading over incidental concept engineering. Concept support/pedestal is an authored enhancement: in3D,keep all under-head braces in the rotating cradle over the bearing,never rigidly bridge fixed base to moving blade. Prior study two round muzzles are not accepted as own source anatomy. No firing/recoil/light cycle inferred."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "binaries": {
+        "blend": "0a04f9d7a1bba8084587706cfd9fe8d49ea99dbae4dae60b680f7129d71e03b2",
+        "glb": "d75ddc29426048b095c96c75fc76410a13f3c0454922f44fb490d2e9ba9789ac"
+      },
+      "runtime_report_sha256": "f8f612d34d0ef41914b74c292221c29b19ad138655a651b18317115139e98a1b",
+      "finding": "All native/imported65pose geometry/motion checks pass, but actual source/concept/whole/detail review shows too-thin broad blade shoulder, hooked fitting tops buried in the base and reversed left/right presentation of source-side marking/front fittings.",
+      "action": "Thicken the broad shoulder while retaining one tapered solid nose and real grooves; make curved/bracketed hook returns visible; place source side marking on positiveX and render heading9 with positiveX/front camera for corresponding source orientation. Preserve controller/action/pivot and rerun native/import proof.",
+      "accepted": false
+    },
+    {
+      "iteration": 2,
+      "binaries": {
+        "blend": "0719129adb0939acadd6175589f7bfae5c0b0e67401c57bb3eea5adbf9e68754",
+        "glb": "b2a90ff8d8e5c6f71de16f2f7666e7acd1c34cdf10a4458f499e8365644e686b"
+      },
+      "runtime_report_sha256": "007023d2a64b53bc29f0a9c515fcb938fc26419ab26723f48a37c8acc7698e70",
+      "inspected": [
+        "Actual own-source and ImageGen together with three native and independent imported GLB views,both detail views and canonical technical wireframe in source-concept-native-glb-review-2.jpg"
+      ],
+      "finding": "Thicker broad blade shoulder and single tapered nose, two real inclined grooves, continuous hooked front fittings, long red stripe/smaller flag and squat flared base preserve characteristic source anatomy. Correct source-side presentation uses heading9 and positiveX/front camera. Native/imported geometry and renders agree after real feedback. Hook returns are visible; physical support and nonbearing clearance pass all65sampledposes. Used cast/metal/brass/paint stays subordinate to broad readable surfaces. Agent visual review accepted.",
+      "limitations": [
+        "Exact sections,hidden geometry,bearing,groove depths,mark segmentation and cell-relative dimensions are authored.",
+        "Heading9 is a representative pose,not recovered source-index calibration. No firing,recoil,autonomous scanning or emission timing is inferred.",
+        "Final user artistic acceptance,actual client scale/state/shaders/sockets and Android performance remain separate integration checks."
+      ],
+      "accepted": true,
+      "final_user_artistic_acceptance": false,
+      "game_client_integration": false,
+      "encoded_animation_review": {
+        "frames": 65,
+        "distinct_imported_poses": 64,
+        "decoded_samples": 8,
+        "full_decode_error_free": true,
+        "video_sha256": "9ae1f2faf08e228b88390a01ad38df043cee65bccdffdf65cff3a7a2b7134ddc",
+        "finding": "Actual decoded full-cycle video contact inspected: fixed base remains grounded; blade/cradle turn together with supported bearing,without clipping the base. Quarter-speed gallery presentation only."
+      }
+    }
+  ],
+  "final_review": "Thicker broad blade shoulder and single tapered nose, two real inclined grooves, continuous hooked front fittings, long red stripe/smaller flag and squat flared base preserve characteristic source anatomy. Correct source-side presentation uses heading9 and positiveX/front camera. Native/imported geometry and renders agree after real feedback. Hook returns are visible; physical support and nonbearing clearance pass all65sampledposes. Used cast/metal/brass/paint stays subordinate to broad readable surfaces. Agent visual review accepted.",
+  "limitations": [
+    "Exact sections,hidden geometry,bearing,groove depths,mark segmentation and cell-relative dimensions are authored.",
+    "Heading9 is a representative pose,not recovered source-index calibration. No firing,recoil,autonomous scanning or emission timing is inferred.",
+    "Final user artistic acceptance,actual client scale/state/shaders/sockets and Android performance remain separate integration checks."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}
