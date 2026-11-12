@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/103",
+  "binaries": {
+    "blend": "268ae1bab9efea364c64b37d5c5a53c9e42c0c664a6d715780447df940bb6ac1",
+    "glb": "7d1f707353fb0672376b48556270b8d5caa81a16cf47b94c952ad8d21142339d"
+  },
+  "runtime_report_sha256": "d9f7c3f9c599ea3b4a7e3175a23adbe88bd1812ff6a24d4169c5295c5ec1a308",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.003592904958208842,
+      "margin": 52
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0031957335938772187,
+      "margin": 45
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0023493970196762,
+      "margin": 57
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk18-review-1.png",
+      "sha256": "8c83051b4fb6956e97d1699937b27c941379361ec51fe2a5108e250208c8abe4",
+      "prompt": "sources/docs/reconstruction/models/mk18-concept-prompt-1.txt",
+      "feedback": "Selected two unequal pointed mineral profiles,taller rear-left/shorter front-right,darker stout pedestals,paler upper ore and two narrow red front sockets with round inset/vertical pale strip. Source controls actual proportions;fine surfaces,low connection and hidden sections authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "binaries": {
+        "blend": "2006e385e2b727c70b7f855fe47e528681ed4c82f3efd6ba3c425cb354ae44c9",
+        "glb": "1fe52eb27341dfd3b09897847228eacd9e20757df5eef4139a8503a61210be6f"
+      },
+      "runtime_sha256": "ab34a72dd913b11be79f5622b9d5bdf2bc275c146e6053d165f6d7255923a9bc",
+      "finding": "Actual first native/import render is too slender versus both legacy and concept. Connecting bed maps across the full head-to-base texture and becomes a bright plank. Source has broader heavy pedestals/upper masses and a low subdued connection.",
+      "correction": "Widen each mineral form and separate centres proportionately,slightly enlarge socket widths while preserving heights,lower/rear-seat the connecting bed and map it only into the darker pedestal region."
+    },
+    {
+      "iteration": 2,
+      "binaries": {
+        "blend": "bfdb5ded93718a61e564670e43ad8435579a6d360ebcb49c2346d236a3d88282",
+        "glb": "f811e64c51c5829b24ec9f2f23d05d73cc821bfb93920355cf52d81d65442c39"
+      },
+      "runtime_sha256": "c47b8980ce4167e75d72088aa3d77eb49050d59bd3d156a3cbad1a799f3f134a",
+      "finding": "Final closeup exposes an artificial collar between upper ore and pedestal plus overly regular grid-like material mottling. Broader proportions now correct,but whole object still reads too much like paired smooth crystal hats.",
+      "correction": "Remove the radial waist in the source profiles,soften the base/head palette transition,warp authored colour-noise coordinates,reduce grid-like normal contrast and add asymmetric mineral shoulders/fine physical relief. Refresh existing selected canonical evidence only after actual rerun;do not register a duplicate."
+    }
+  ],
+  "final_review": "Actual independent GLB retains the taller rear-left and shorter front-right pointed mineral forms,darker stout pedestals,paler upper ore and two red front sockets with pale disc/strip details. Source/concept feedback widened the initially slender pillars and lowered/darkened the connecting ore bed. Final feedback removes an artificial collar and overly regular mottling using continuous profiles,warped palette noise and asymmetric shoulders. Actual paired renders,whole legacy/concept/GLB board and details reviewed;native/import surfaces and authored texture pixels agree.",
+  "limitations": [
+    "Exact geology,hidden sections and extraction/focusing engineering remain authored or unknown.",
+    "Generic MK2mine research is function context,not Mikotaj geometry. Catalogue reveal is not an operating cycle.",
+    "Final user artistic acceptance,client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

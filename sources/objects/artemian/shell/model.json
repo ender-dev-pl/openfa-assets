@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/119",
+  "key": "AR13",
+  "name": "Shell",
+  "culture": "artemian",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 255,
+  "construction_updates": 44,
+  "triangles": 29628,
+  "triangle_budget": 30000,
+  "mesh_nodes": 11,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_artemian_shell.py",
+  "author_sha256": "a65e529556dd2dc8e72a1a7a063407c69f2739b7d940158803ac7b75a149442f",
+  "binaries": {
+    "blend": "a8d9211c70793a4736de19582888545677a71e7d7432509b746043ffab2be4a9",
+    "glb": "4b41c069f24f3b0c00320f9853106eb8d8d6742e13ba704826b4b865781e83fd"
+  },
+  "textures": {
+    "amber-fitting-colour.png": "aa072b1e2caa63383ac0fb873bb8e8d3e220191de7d8bbc2980e70587ce43051",
+    "copper-fitting-colour.png": "7b93b855881d20e8ef4fe7447d6b03d512b40525f79986ebd8aeca4f566f66c2",
+    "exposed-alloy-edge-colour.png": "181533ec2d691b369a9b679f41c9d7f5b220ddba96ab3051613e5a047a5c56a5",
+    "muted-green-alloy-colour.png": "dd69c8111098400c2af484f02ee7751f37231895c99b5925d9d2296f424d3881",
+    "occlusion-roughness-metallic.png": "62db8b746466cdc6f531bb5dd1427abf3f375b1b3abedf4f69e814b02eda0dd3",
+    "used-metal-normal.png": "ded66bc2b1b5df0bd417d8d9f3e95d102a720de4cfa62df7376bf582ef9f066c"
+  },
+  "interpretation": [
+    "Low broad green integral-rib shell,two unequal double copper-block/brass-pin front fittings and two small dark points follow actual source/concept.",
+    "Hidden cloaking engineering,rib/fitting sections and metric height remain unknown/authored. Unique class255 has no indexed MAprofile;no cloak/operation animation inferred."
+  ],
+  "scale_contract": "2x2 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar13-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

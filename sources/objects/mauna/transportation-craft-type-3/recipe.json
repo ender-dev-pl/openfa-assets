@@ -1,0 +1,2220 @@
+{
+  "id": "openfa:ship/mauna/transportation-craft-type-3",
+  "issue": 251,
+  "name": "Transportation Craft Type 3",
+  "key": "MN4C",
+  "source": "docs/assets/reconstruction/ships/mauna/transportation-craft-type-3",
+  "size_class": "large ore/missile transporter",
+  "world_size_proposal": 180,
+  "equipment_slots": 4,
+  "material_tiles": {
+    "Transport | dark recesses": 4,
+    "Transport | oxidized service alloy": 1,
+    "Transport | worn grey casing": 0,
+    "Transport | worn pale blue bands": 3,
+    "Transport | worn warm lower details": 7
+  },
+  "surface_regions": {
+    "Transport tower -1": {
+      "default_tile": 0,
+      "bands": [
+        {
+          "axis": "z",
+          "minimum": 0.55,
+          "maximum": 0.66,
+          "tile": 3
+        },
+        {
+          "axis": "z",
+          "minimum": 1.14,
+          "maximum": 1.26,
+          "tile": 3
+        },
+        {
+          "axis": "z",
+          "minimum": 1.64,
+          "maximum": 1.76,
+          "tile": 3
+        },
+        {
+          "axis": "z",
+          "minimum": 2.13,
+          "maximum": 2.3,
+          "tile": 3
+        }
+      ],
+      "interpretation": "Opaque pale blue-grey bands wrap the notched grey sections, guided by actual paletted headings and concept1. Exact band width/hidden continuation are authored interpretation."
+    },
+    "Transport tower 0": {
+      "default_tile": 0,
+      "bands": [
+        {
+          "axis": "z",
+          "minimum": 0.55,
+          "maximum": 0.66,
+          "tile": 3
+        },
+        {
+          "axis": "z",
+          "minimum": 1.14,
+          "maximum": 1.26,
+          "tile": 3
+        },
+        {
+          "axis": "z",
+          "minimum": 1.64,
+          "maximum": 1.76,
+          "tile": 3
+        },
+        {
+          "axis": "z",
+          "minimum": 2.13,
+          "maximum": 2.3,
+          "tile": 3
+        }
+      ],
+      "interpretation": "Opaque pale blue-grey bands wrap the notched grey sections, guided by actual paletted headings and concept1. Exact band width/hidden continuation are authored interpretation."
+    },
+    "Transport tower 1": {
+      "default_tile": 0,
+      "bands": [
+        {
+          "axis": "z",
+          "minimum": 0.55,
+          "maximum": 0.66,
+          "tile": 3
+        },
+        {
+          "axis": "z",
+          "minimum": 1.14,
+          "maximum": 1.26,
+          "tile": 3
+        },
+        {
+          "axis": "z",
+          "minimum": 1.64,
+          "maximum": 1.76,
+          "tile": 3
+        },
+        {
+          "axis": "z",
+          "minimum": 2.13,
+          "maximum": 2.3,
+          "tile": 3
+        }
+      ],
+      "interpretation": "Opaque pale blue-grey bands wrap the notched grey sections, guided by actual paletted headings and concept1. Exact band width/hidden continuation are authored interpretation."
+    },
+    "Transport lower housing": {
+      "default_tile": 0,
+      "bands": [
+        {
+          "axis": "z",
+          "minimum": -0.225,
+          "maximum": -0.155,
+          "tile": 3
+        }
+      ],
+      "interpretation": "Continue the narrow lower blue trim around the grey casing; no emission/glazing inferred."
+    }
+  },
+  "part_face_budget": {
+    "tower frame": 350,
+    "tower inset": 300,
+    "tower strip": 120,
+    "tower": 4500,
+    "fastener": 120,
+    "default": 250
+  },
+  "edge_finish": {
+    "part_keywords": [
+      "tower frame",
+      "rear service plate"
+    ],
+    "width": 0.004,
+    "segments": 2,
+    "angle_limit": 0.52
+  },
+  "max_triangles": 65000,
+  "max_primitives": 6,
+  "comparison_elevation": 0.18,
+  "comparison_azimuth": -1.5707963267948966,
+  "reference_side_bounds": [
+    74,
+    65
+  ],
+  "protected_dents": [
+    {
+      "part": "Transport tower -1",
+      "undented_point": [
+        -0.8,
+        0,
+        1.25
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0035
+    },
+    {
+      "part": "Transport tower 0",
+      "undented_point": [
+        0.32,
+        0,
+        1.25
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0035
+    },
+    {
+      "part": "Transport tower 1",
+      "undented_point": [
+        1.4400000000000002,
+        0,
+        1.25
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0035
+    }
+  ],
+  "attachment_pairs": [
+    {
+      "part": "Transport tower frame -1 -1",
+      "support": "Transport tower -1"
+    },
+    {
+      "part": "Transport tower inset -1 -1",
+      "support": "Transport tower frame -1 -1"
+    },
+    {
+      "part": "Transport tower strip -1 -1 0",
+      "support": "Transport tower inset -1 -1"
+    },
+    {
+      "part": "Transport tower strip -1 -1 1",
+      "support": "Transport tower inset -1 -1"
+    },
+    {
+      "part": "Transport tower frame -1 1",
+      "support": "Transport tower -1"
+    },
+    {
+      "part": "Transport tower inset -1 1",
+      "support": "Transport tower frame -1 1"
+    },
+    {
+      "part": "Transport tower strip -1 1 0",
+      "support": "Transport tower inset -1 1"
+    },
+    {
+      "part": "Transport tower strip -1 1 1",
+      "support": "Transport tower inset -1 1"
+    },
+    {
+      "part": "Transport tower frame 0 -1",
+      "support": "Transport tower 0"
+    },
+    {
+      "part": "Transport tower inset 0 -1",
+      "support": "Transport tower frame 0 -1"
+    },
+    {
+      "part": "Transport tower strip 0 -1 0",
+      "support": "Transport tower inset 0 -1"
+    },
+    {
+      "part": "Transport tower strip 0 -1 1",
+      "support": "Transport tower inset 0 -1"
+    },
+    {
+      "part": "Transport tower frame 0 1",
+      "support": "Transport tower 0"
+    },
+    {
+      "part": "Transport tower inset 0 1",
+      "support": "Transport tower frame 0 1"
+    },
+    {
+      "part": "Transport tower strip 0 1 0",
+      "support": "Transport tower inset 0 1"
+    },
+    {
+      "part": "Transport tower strip 0 1 1",
+      "support": "Transport tower inset 0 1"
+    },
+    {
+      "part": "Transport tower frame 1 -1",
+      "support": "Transport tower 1"
+    },
+    {
+      "part": "Transport tower inset 1 -1",
+      "support": "Transport tower frame 1 -1"
+    },
+    {
+      "part": "Transport tower strip 1 -1 0",
+      "support": "Transport tower inset 1 -1"
+    },
+    {
+      "part": "Transport tower strip 1 -1 1",
+      "support": "Transport tower inset 1 -1"
+    },
+    {
+      "part": "Transport tower frame 1 1",
+      "support": "Transport tower 1"
+    },
+    {
+      "part": "Transport tower inset 1 1",
+      "support": "Transport tower frame 1 1"
+    },
+    {
+      "part": "Transport tower strip 1 1 0",
+      "support": "Transport tower inset 1 1"
+    },
+    {
+      "part": "Transport tower strip 1 1 1",
+      "support": "Transport tower inset 1 1"
+    },
+    {
+      "part": "Transport tower -1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport fastener -1 -1 0 0",
+      "support": "Transport tower frame -1 -1"
+    },
+    {
+      "part": "Transport fastener -1 -1 0 1",
+      "support": "Transport tower frame -1 -1"
+    },
+    {
+      "part": "Transport fastener -1 -1 1 0",
+      "support": "Transport tower frame -1 -1"
+    },
+    {
+      "part": "Transport fastener -1 -1 1 1",
+      "support": "Transport tower frame -1 -1"
+    },
+    {
+      "part": "Transport fastener -1 1 0 0",
+      "support": "Transport tower frame -1 1"
+    },
+    {
+      "part": "Transport fastener -1 1 0 1",
+      "support": "Transport tower frame -1 1"
+    },
+    {
+      "part": "Transport fastener -1 1 1 0",
+      "support": "Transport tower frame -1 1"
+    },
+    {
+      "part": "Transport fastener -1 1 1 1",
+      "support": "Transport tower frame -1 1"
+    },
+    {
+      "part": "Transport blue band -1 0",
+      "support": "Transport tower -1"
+    },
+    {
+      "part": "Transport blue band -1 1",
+      "support": "Transport tower -1"
+    },
+    {
+      "part": "Transport blue band -1 2",
+      "support": "Transport tower -1"
+    },
+    {
+      "part": "Transport blue band -1 3",
+      "support": "Transport tower -1"
+    },
+    {
+      "part": "Transport rear service plate -1",
+      "support": "Transport tower -1"
+    },
+    {
+      "part": "Transport tower 0",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport fastener 0 -1 0 0",
+      "support": "Transport tower frame 0 -1"
+    },
+    {
+      "part": "Transport fastener 0 -1 0 1",
+      "support": "Transport tower frame 0 -1"
+    },
+    {
+      "part": "Transport fastener 0 -1 1 0",
+      "support": "Transport tower frame 0 -1"
+    },
+    {
+      "part": "Transport fastener 0 -1 1 1",
+      "support": "Transport tower frame 0 -1"
+    },
+    {
+      "part": "Transport fastener 0 1 0 0",
+      "support": "Transport tower frame 0 1"
+    },
+    {
+      "part": "Transport fastener 0 1 0 1",
+      "support": "Transport tower frame 0 1"
+    },
+    {
+      "part": "Transport fastener 0 1 1 0",
+      "support": "Transport tower frame 0 1"
+    },
+    {
+      "part": "Transport fastener 0 1 1 1",
+      "support": "Transport tower frame 0 1"
+    },
+    {
+      "part": "Transport blue band 0 0",
+      "support": "Transport tower 0"
+    },
+    {
+      "part": "Transport blue band 0 1",
+      "support": "Transport tower 0"
+    },
+    {
+      "part": "Transport blue band 0 2",
+      "support": "Transport tower 0"
+    },
+    {
+      "part": "Transport blue band 0 3",
+      "support": "Transport tower 0"
+    },
+    {
+      "part": "Transport rear service plate 0",
+      "support": "Transport tower 0"
+    },
+    {
+      "part": "Transport tower 1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport fastener 1 -1 0 0",
+      "support": "Transport tower frame 1 -1"
+    },
+    {
+      "part": "Transport fastener 1 -1 0 1",
+      "support": "Transport tower frame 1 -1"
+    },
+    {
+      "part": "Transport fastener 1 -1 1 0",
+      "support": "Transport tower frame 1 -1"
+    },
+    {
+      "part": "Transport fastener 1 -1 1 1",
+      "support": "Transport tower frame 1 -1"
+    },
+    {
+      "part": "Transport fastener 1 1 0 0",
+      "support": "Transport tower frame 1 1"
+    },
+    {
+      "part": "Transport fastener 1 1 0 1",
+      "support": "Transport tower frame 1 1"
+    },
+    {
+      "part": "Transport fastener 1 1 1 0",
+      "support": "Transport tower frame 1 1"
+    },
+    {
+      "part": "Transport fastener 1 1 1 1",
+      "support": "Transport tower frame 1 1"
+    },
+    {
+      "part": "Transport blue band 1 0",
+      "support": "Transport tower 1"
+    },
+    {
+      "part": "Transport blue band 1 1",
+      "support": "Transport tower 1"
+    },
+    {
+      "part": "Transport blue band 1 2",
+      "support": "Transport tower 1"
+    },
+    {
+      "part": "Transport blue band 1 3",
+      "support": "Transport tower 1"
+    },
+    {
+      "part": "Transport rear service plate 1",
+      "support": "Transport tower 1"
+    },
+    {
+      "part": "Transport lower blue trim -1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport long dark seam -1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport lower service block -1 0",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport lower service block -1 1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport lower blue trim 1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport long dark seam 1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport lower service block 1 0",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport lower service block 1 1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport warm lower foot 0",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport end inset 0",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport grey lower block 0",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport end warm detail 0",
+      "support": "Transport end inset 0"
+    },
+    {
+      "part": "Transport warm lower foot 1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport end inset 1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport grey lower block 1",
+      "support": "Transport lower housing"
+    },
+    {
+      "part": "Transport end warm detail 1",
+      "support": "Transport end inset 1"
+    }
+  ],
+  "void_rays": [
+    {
+      "origin": [
+        -0.56,
+        0,
+        3
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 2.5
+    },
+    {
+      "origin": [
+        0.56,
+        0,
+        3
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "distance": 2.5
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        0.15,
+        1
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        0.15,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        0.15,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        0,
+        1
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        0,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        0,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        -0.15,
+        1
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        -0.15,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        -0.15,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        0.6,
+        0.15,
+        1
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        0.6,
+        0.15,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        0.6,
+        0.15,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        0.6,
+        0,
+        1
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        0.6,
+        0,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        0.6,
+        0,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        0.6,
+        -0.15,
+        1
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        0.6,
+        -0.15,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        0.6,
+        -0.15,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        0.15,
+        1
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        0.15,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        0.15,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        0,
+        1
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        0,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        0,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        -0.15,
+        1
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        -0.15,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        -0.15,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.45
+    }
+  ],
+  "solid_rays": [
+    {
+      "origin": [
+        -0.5200000000000001,
+        0,
+        0.8
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        0,
+        1.3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        0,
+        1.8
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        -0.5200000000000001,
+        0,
+        2.25
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        0.6,
+        0,
+        0.8
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        0.6,
+        0,
+        1.3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        0.6,
+        0,
+        1.8
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        0.6,
+        0,
+        2.25
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        0,
+        0.8
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        0,
+        1.3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        0,
+        1.8
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    },
+    {
+      "origin": [
+        1.7200000000000002,
+        0,
+        2.25
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distance": 0.6
+    }
+  ],
+  "interpretation": "Three equal-height notched upright sections on a broad lower casing, opaque pale blue-grey bands and warm lower/end details. Full-width notch recesses and exact band continuation are authored interpretation, not recovered mechanical geometry. No equipment/emission/glass invented. Sixteen even headings populated; four equipment mounts uncalibrated, WorldSize180 proposed. Actual imported GLB feedback corrects first-study recess orientation by rotating all three whole tower assemblies90degrees about their own centres; fitted details follow. Source-form verification uses these declared rigid transforms.",
+  "part_rotations": [
+    {
+      "parts": [
+        "Transport tower -1",
+        "Transport rear service plate -1",
+        "Transport blue band -1 0",
+        "Transport blue band -1 1",
+        "Transport blue band -1 2",
+        "Transport blue band -1 3",
+        "Transport tower frame -1 -1",
+        "Transport tower inset -1 -1",
+        "Transport tower strip -1 -1 0",
+        "Transport tower strip -1 -1 1",
+        "Transport tower frame -1 1",
+        "Transport tower inset -1 1",
+        "Transport tower strip -1 1 0",
+        "Transport tower strip -1 1 1",
+        "Transport fastener -1 -1 0 0",
+        "Transport fastener -1 -1 0 1",
+        "Transport fastener -1 -1 1 0",
+        "Transport fastener -1 -1 1 1",
+        "Transport fastener -1 1 0 0",
+        "Transport fastener -1 1 0 1",
+        "Transport fastener -1 1 1 0",
+        "Transport fastener -1 1 1 1"
+      ],
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": "Z",
+      "angle": -1.5707963267948966,
+      "reason": "Actual legacy broadside and concept show comb profiles across the base. Rotate each entire fitted tower assembly90degrees; do not retain source first-study transverse recess orientation."
+    },
+    {
+      "parts": [
+        "Transport tower 0",
+        "Transport rear service plate 0",
+        "Transport blue band 0 0",
+        "Transport blue band 0 1",
+        "Transport blue band 0 2",
+        "Transport blue band 0 3",
+        "Transport tower frame 0 -1",
+        "Transport tower inset 0 -1",
+        "Transport tower strip 0 -1 0",
+        "Transport tower strip 0 -1 1",
+        "Transport tower frame 0 1",
+        "Transport tower inset 0 1",
+        "Transport tower strip 0 1 0",
+        "Transport tower strip 0 1 1",
+        "Transport fastener 0 -1 0 0",
+        "Transport fastener 0 -1 0 1",
+        "Transport fastener 0 -1 1 0",
+        "Transport fastener 0 -1 1 1",
+        "Transport fastener 0 1 0 0",
+        "Transport fastener 0 1 0 1",
+        "Transport fastener 0 1 1 0",
+        "Transport fastener 0 1 1 1"
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": "Z",
+      "angle": -1.5707963267948966,
+      "reason": "Actual legacy broadside and concept show comb profiles across the base. Rotate each entire fitted tower assembly90degrees; do not retain source first-study transverse recess orientation."
+    },
+    {
+      "parts": [
+        "Transport tower 1",
+        "Transport rear service plate 1",
+        "Transport blue band 1 0",
+        "Transport blue band 1 1",
+        "Transport blue band 1 2",
+        "Transport blue band 1 3",
+        "Transport tower frame 1 -1",
+        "Transport tower inset 1 -1",
+        "Transport tower strip 1 -1 0",
+        "Transport tower strip 1 -1 1",
+        "Transport tower frame 1 1",
+        "Transport tower inset 1 1",
+        "Transport tower strip 1 1 0",
+        "Transport tower strip 1 1 1",
+        "Transport fastener 1 -1 0 0",
+        "Transport fastener 1 -1 0 1",
+        "Transport fastener 1 -1 1 0",
+        "Transport fastener 1 -1 1 1",
+        "Transport fastener 1 1 0 0",
+        "Transport fastener 1 1 0 1",
+        "Transport fastener 1 1 1 0",
+        "Transport fastener 1 1 1 1"
+      ],
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": "Z",
+      "angle": -1.5707963267948966,
+      "reason": "Actual legacy broadside and concept show comb profiles across the base. Rotate each entire fitted tower assembly90degrees; do not retain source first-study transverse recess orientation."
+    }
+  ],
+  "part_transforms": [
+    {
+      "part": "Transport tower -1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport rear service plate -1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band -1 0",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band -1 1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band -1 2",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band -1 3",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower frame -1 -1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower inset -1 -1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip -1 -1 0",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip -1 -1 1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower frame -1 1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower inset -1 1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip -1 1 0",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip -1 1 1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener -1 -1 0 0",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener -1 -1 0 1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener -1 -1 1 0",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener -1 -1 1 1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener -1 1 0 0",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener -1 1 0 1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener -1 1 1 0",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener -1 1 1 1",
+      "origin": [
+        -1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower 0",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport rear service plate 0",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band 0 0",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band 0 1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band 0 2",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band 0 3",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower frame 0 -1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower inset 0 -1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip 0 -1 0",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip 0 -1 1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower frame 0 1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower inset 0 1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip 0 1 0",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip 0 1 1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 0 -1 0 0",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 0 -1 0 1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 0 -1 1 0",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 0 -1 1 1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 0 1 0 0",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 0 1 0 1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 0 1 1 0",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 0 1 1 1",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport rear service plate 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band 1 0",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band 1 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band 1 2",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport blue band 1 3",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower frame 1 -1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower inset 1 -1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip 1 -1 0",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip 1 -1 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower frame 1 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower inset 1 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip 1 1 0",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport tower strip 1 1 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 1 -1 0 0",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 1 -1 0 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 1 -1 1 0",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 1 -1 1 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 1 1 0 0",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 1 1 0 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 1 1 1 0",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    },
+    {
+      "part": "Transport fastener 1 1 1 1",
+      "origin": [
+        1.12,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axial_scale": 1.1428571428571428,
+      "transverse_scale": 1,
+      "reason": "Restore a broader comb profile after correcting orientation; legacy side sections are broader than the initial rotated depth."
+    }
+  ]
+}

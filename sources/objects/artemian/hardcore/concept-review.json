@@ -1,0 +1,56 @@
+{
+  "asset": "openfa:ship/artemian/hardcore",
+  "issue": 249,
+  "stage": "Canonical remaster, concept and independent imported-GLB feedback reviewed",
+  "tool": "Built-in image_gen",
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. Asset: OpenFA Artemian Hardcore AR4C, large ore/missile transporter remaster. Attached reference is ACTUAL paletted legacy headings0/4/12/28 and primary authority. Same silhouette: TWO rounded flattened gold/brown pressure hull bodies INLINE one behind the other along the craft's fore-aft axis, connected by an exposed shorter SILVER METAL bridge/spine. NOT side-by-side, not a single long capsule. Each main body has TWO small gold/brown lateral modules, one to port and one starboard, on short structural arms; four small side modules TOTAL. Modest gold tail plane behind rear hull, small blue-grey fore service interface and two slender blue-grey aft projections, matching the source cues. Main bodies are low convex domed/rounded alloy volumes with flattened lower lobes, a broad equatorial seam, NOT perfect balls. Entire assembly reads as a low industrial cargo spacecraft. Shared Artemian metal/alloy style but preserve this ship's warm BRONZE/GOLD body palette, silver bridge and sparse blue-grey details, no green replacement hull. Five equipment slots exist but mount positions/functions are unknown: do not invent engines/guns/cockpits or emission. Bright source marks are reflections, not evidence of lights/windows. No cargo containers, cranes, antenna dish, extra bodies, big fins or fantasy additions. Readable high-detail practical game remaster with sparse fitted maintenance covers, shallow slots, small seated fasteners and structural trims. No dense rectangular hull panel grid; broad calm shell surfaces. Appropriate use wear: restrained grime at joins, irregular stains, scuffs, small scratches and tiny dents, not pristine or wrecked. Show one coherent craft in large front three-quarter view, smaller true side and top views with exactly the same body count and arm/module layout. Plain charcoal studio background, no labels, logos or text.",
+      "verdict": "Retained broad reference: two inline warm-metal rounded bodies, silver bridge, four small lateral modules on short arms, small aft plane and blue-grey details. Exact bridge machinery, collars, fore-interface length, hatch/trim shapes remain artistic interpretation; actual legacy takes precedence.",
+      "input_images": [
+        {
+          "role": "Actual paletted legacy reference",
+          "sha256": "b4927b3374d4f3231ece03dd87ded8895a24083a8ce2100d1d4ca18b8ddaa715"
+        }
+      ],
+      "generated_original_sha256": "9b91402a7e7c41102b9be0825714f27205185838767cb64e34ad9893da5b3db6",
+      "image": "gallery/media/concepts/artemian/hardcore-01.png",
+      "sha256": "9b91402a7e7c41102b9be0825714f27205185838767cb64e34ad9893da5b3db6",
+      "gallery_label": "Reviewed inline twin-body transporter concept"
+    }
+  ],
+  "maximum_iterations": 3,
+  "remaining_iterations": 2,
+  "legacy_identity": {
+    "entry": "AR4C.256",
+    "source_sha256": "de1e9027a8bac6634ff12f957a15ca12264693da3be40fb99709639649f93307",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ],
+    "all_populated_headings_inspected": true,
+    "populated_even_headings": 16,
+    "empty_odd_headings": 16
+  },
+  "reviewed_binary_hashes": {
+    "blend": "11f9dcf517401a90e654ee89ae1f0b50f059585a169ce3a95fff2f2912fa9f1a",
+    "glb": "f34fae179f154d61436190f42633819ecf21dded70e67d7325571c92ff64568a"
+  },
+  "glb_feedback": [
+    {
+      "round": 1,
+      "verdict": "Actual imported hero/side/end views preserve the warm twin-body layout and silver bridge. The comparison camera reversed fore/aft relative to AR4C and was too elevated for the thin side heading. Rejected those comparison directions; do not distort the asset to compensate."
+    },
+    {
+      "round": 2,
+      "verdict": "Estimated comparison azimuth changed from180 to0 degrees and elevation from.25 to.12; independently imported GLB rerendered and inspected against actual0/4/12/28 and concept1. Blue-grey fore interface now matches the correct visible end. Retained original fitted service details rather than copying speculative concept bridge mechanisms or enlarged fore fairing. 49716tri/4batches/1material,48editablepartgroups,51 tested contacts and six protected radial dents. Exact hidden geometry, body spacing and module engineering remain authored interpretation."
+    }
+  ],
+  "glb_visual_review": "Actual 0/4/12/28 comparison inspected against correctly paletted legacy and concept1. Two rounded warm-metal bodies inline, exposed silver connector, four smaller lateral modules and aft plane/blue-grey details agree in broad silhouette and colour. The first source had an overly plain finish; remaster adds restrained worn PBR metal and softened service-cover/tail edges without dense panel grids. Original source fine geometry is retained where the concept invents extra bridge/fore-interface machinery. Reference side alpha122x18 and estimated comparison azimuth0/elevation.12 are not recovered client calibration or percentage fidelity. Highlights are not used to invent emission.",
+  "next_step": "Use one canonical GLB across gameplay, ship/build menus and SciTek; validate WorldSize96 proposal, heading/materials and five uncalibrated equipment slots in client. Final user artistic acceptance separate.",
+  "final_user_acceptance": "pending"
+}

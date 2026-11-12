@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/145",
+  "binaries": {
+    "blend": "77c45ba74624569c0482f0d7a686250b9fbab2296c64920defe35528304ce213",
+    "glb": "82fe54576aec50f0d8f6faaab0e96c21158b8f52231fe94d2bd766b4f16c6e48"
+  },
+  "runtime_report_sha256": "f071ed1f95353cff37cc78cd7e4a9579e7cc2c9daba03195f5e65128e86290ef",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00019233830317822465,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0002,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0001822821728034998,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn16-review-1.png",
+      "sha256": "82f5209a07627b8da7207ba3a087aa6bac452e0f9901f9e06a1df225940e6f13",
+      "prompt": "sources/docs/reconstruction/models/mn16-concept-prompt-1.txt",
+      "feedback": "Selected after direct comparison with own paletted body1 and all41 catalogue updates. Retains stepped grey-blue block, two dark front service fields, right red strip/pale flutes, THREE comparable-height straight roof posts in one row with separated warm bright caps, and TWO lower angular open roof brackets. Source governs final cap scale, post spacing and sparse detail placement. Small cap housings, hidden walls, recess depths and exact bracket construction are interpreted. Extra tiny lower concept recesses must not override own source. Steady tip emission can preserve source appearance; no recovered pulse or moving phase claimed."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "binaries": {
+        "blend": "70b7fd16b8e4359b5ec10ec1a8af58e90c4e9316f651e3c0023ba19a9251253f",
+        "glb": "59a8f51f25796f7225876204c63ab1674ce1b61d3cc45b758a88d20005fa8392"
+      },
+      "runtime_report_sha256": "7db2dc8fb4f476e6c0aa23bcafed6d8c48fd721139490101e5ae515598020fbe",
+      "finding": "Actual native/imported renders preserve component counts, contacts, recesses, emission and brackets, but the post row runs along the depth axis: the visible diagonal rises rightwards instead of descending as in own legacy and selected concept.",
+      "action": "Rotate the row onto the roof width axis: X -0.40/0/0.40 at Y -0.25, same post heights. Preserve two brackets behind the row and reverify real geometry and emission after export.",
+      "accepted": false
+    },
+    {
+      "iteration": 2,
+      "binaries": {
+        "blend": "77c45ba74624569c0482f0d7a686250b9fbab2296c64920defe35528304ce213",
+        "glb": "82fe54576aec50f0d8f6faaab0e96c21158b8f52231fe94d2bd766b4f16c6e48"
+      },
+      "runtime_report_sha256": "f071ed1f95353cff37cc78cd7e4a9579e7cc2c9daba03195f5e65128e86290ef",
+      "inspected": [
+        "Own paletted body and enlarged catalogue source",
+        "Selected actual ImageGen concept",
+        "Three whole views each of saved native and independently imported GLB",
+        "Both final detail views",
+        "Canonical technical edge diagram",
+        "Source/concept/native/imported contact board at full size"
+      ],
+      "finding": "Accepted for agent source/concept review: the corrected width-axis post row now descends across the corresponding front-quarter projection as in legacy and the concept. All three posts remain equal-height and supported; three small distinct warm cores and red collars remain visible. Two low open angular brackets, stepped grey-blue cast body, projecting two-field front and right red stripe/flutes retain the characteristic anatomy. Native/imported whole and detail views agree. Sparse used cast pores/stains, scuffed alloy/red surfaces and shallow real chips remain readable without a hull grid. The concept is richer in incidental surface damage; the canonical asset preserves source-led sparse geometry and restrained game-scale wear.",
+      "runtime": {
+        "triangles": 1788,
+        "meshes": 7,
+        "materials": 5,
+        "embedded_images": 6,
+        "maximum_bidirectional_surface_error": 6.143906006172983e-08,
+        "effective_steady_tip_emission_rgb": [
+          3.15,
+          2.03,
+          0.56
+        ]
+      },
+      "limitations": [
+        "Hidden structure, bracket construction, recess depth, cap housings and cell-relative dimensions are authored interpretations.",
+        "Static source caps justify steady brightness, not recovered pulse timing or a borrowed generic Terran cycle. Client bloom/halo is separate.",
+        "World scale, game states, shaders and Android frame rate remain unverified client integration; final user artistic approval is separate."
+      ],
+      "accepted": true,
+      "final_user_artistic_acceptance": false,
+      "game_client_integration": false
+    }
+  ],
+  "final_review": "Accepted for agent source/concept review: the corrected width-axis post row now descends across the corresponding front-quarter projection as in legacy and the concept. All three posts remain equal-height and supported; three small distinct warm cores and red collars remain visible. Two low open angular brackets, stepped grey-blue cast body, projecting two-field front and right red stripe/flutes retain the characteristic anatomy. Native/imported whole and detail views agree. Sparse used cast pores/stains, scuffed alloy/red surfaces and shallow real chips remain readable without a hull grid. The concept is richer in incidental surface damage; the canonical asset preserves source-led sparse geometry and restrained game-scale wear.",
+  "limitations": [
+    "Hidden structure, bracket construction, recess depth, cap housings and cell-relative dimensions are authored interpretations.",
+    "Static source caps justify steady brightness, not recovered pulse timing or a borrowed generic Terran cycle. Client bloom/halo is separate.",
+    "World scale, game states, shaders and Android frame rate remain unverified client integration; final user artistic approval is separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false,
+  "source_citation_revalidation": {
+    "report": "sources/docs/reconstruction/models/mauna-source-citation-revalidation.json",
+    "model_binaries_and_renders_unchanged": true,
+    "scope": "Actual original-payload citation revalidation only; not a new render or artistic/client acceptance."
+  }
+}

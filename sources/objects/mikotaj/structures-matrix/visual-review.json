@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/095",
+  "binaries": {
+    "blend": "7b2d46ef751fa4dbf9fbef90202dc0a53bbcdb21902605603a13dcfc574bd2db",
+    "glb": "95ed97388d95dd24ae4f57dc1879f78ff1b50ee0acad9519667bb30eda0329d9"
+  },
+  "runtime_report_sha256": "19921a7538e2d31b79b5bca83043018ecb37653f9eacfaeec747ca3973cc6eda",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.002113271344040575,
+      "margin": 43
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.002404804625199362,
+      "margin": 36
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0024676850763807284,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk10-review-1.png",
+      "sha256": "624bf75a317b38721655e49f135944ede2c92302f7a1f6da48516679f0dbf399",
+      "prompt": "sources/docs/reconstruction/models/mk10-concept-prompt-1.txt",
+      "feedback": "Selected: broad mineral body, compact asymmetric crown with left point/right lobe, two lower-left blue insets and two opposing lower-right brass bent fittings. Fine sections/joints and hidden faces are authored; no Terran shipyard equipment added."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "verdict": "refine-crown-mineral-geometry",
+      "source_model_sha256": "fba8ab81052ea007be8aca242c3e4751af77ec518d8fb8c9ed60e007993081d1",
+      "issues": [
+        "Foundation, two blue insets and two opposing brass fittings follow the source layout.",
+        "The rounded joined crown looks like separate soft balls. Replace with one irregular angular mineral mass, retaining the short left point and blunt right lobe."
+      ]
+    },
+    {
+      "iteration": 2,
+      "verdict": "shorten-narrow-left-crown-point",
+      "source_model_sha256": "06585278c2d3c850d29aa628bfb18676b813fa38c7654c14c5ccde66d72e9e83",
+      "issues": [
+        "Angular crown avoids the previous soft separated-ball appearance.",
+        "Left crown feature became a broad triangular roof. Original shows a shorter narrow protrusion above a compact blunt mass; reduce crown height and author a narrow seated left point."
+      ]
+    }
+  ],
+  "final_review": "Final independent GLB retains the broad mineral foundation, compact angular crown with short left point/right lobe, two lower-left blue insets and two lower-right opposing brass fittings. Actual feedback replaces soft separated crown balls and then a too-broad triangular roof with a compact seated mineral mass and narrower left point. Brass elements are seated on the actual body.",
+  "limitations": [
+    "Exact sections, brass engineering, hidden surfaces and material wear are authored from limited original views.",
+    "Automated ship construction is original lore, but no specific crane, platform, robot or operating cycle is visible and none is invented.",
+    "No source metric height, calibrated client scale/state, Android performance or final user artistic acceptance claimed."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/150",
+  "key": "MN21",
+  "name": "Laser Boost",
+  "culture": "mauna",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 18,
+  "construction_updates": 28,
+  "triangles": 808,
+  "triangle_budget": 30000,
+  "mesh_nodes": 14,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mauna_laser_boost.py",
+  "author_sha256": "2013cf8151505ccdd5c4b546a3684d12ef01de0b6445e249816131d35eafb27a",
+  "binaries": {
+    "blend": "0719129adb0939acadd6175589f7bfae5c0b0e67401c57bb3eea5adbf9e68754",
+    "glb": "b2a90ff8d8e5c6f71de16f2f7666e7acd1c34cdf10a4458f499e8365644e686b"
+  },
+  "textures": {
+    "brass-colour.png": "2b6c65e81a0d037aaa3aea1924562af6cd5cd48b226331efe73f0e3aa96e8572",
+    "cast-concrete-colour.png": "c203193b8aa6aba92ff8eaece70c30e08d94213426272a6ae93b5cea048117fd",
+    "cast-service-normal.png": "2d8c2af9705d12073602f46ecc5e321c935cdbad9f97962a00c27724da0db785",
+    "concrete-orm.png": "87e58677d530ef899e7b44e3058001a08854346ccc59a0b68dee7e84a9f99225",
+    "marking-red-colour.png": "27236b45f4c4ad8998d20fcbef695bb2e0917c0b71b14d7cb9b4757b4be6af11",
+    "metal-orm.png": "af2b9d51fbf7b053c6cfe31b45f50b765aeb7636a898add33aadf9aa549d4365",
+    "pale-alloy-colour.png": "13248ec44ede6182a0857a48e941de87a0f6c871b9f3d1f90fc63f240c17f0a1"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Laser Boost dark seated blade groove 0",
+      "body": "Laser Boost single inclined tapered blade",
+      "point": [
+        -0.28,
+        0.04,
+        1.744
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "depth": 0.035,
+      "contact_depth": 0.038,
+      "moving": true
+    },
+    {
+      "object": "Laser Boost dark seated blade groove 1",
+      "body": "Laser Boost single inclined tapered blade",
+      "point": [
+        -0.28,
+        0.04,
+        1.844
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "depth": 0.035,
+      "contact_depth": 0.038,
+      "moving": true
+    }
+  ],
+  "attachment_contacts": [
+    {
+      "object": "Laser Boost continuous hooked front brass 0",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        -0.28,
+        -0.6812,
+        0.3
+      ]
+    },
+    {
+      "object": "Laser Boost continuous hooked front brass 0",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        -0.28,
+        -0.6152,
+        0.45
+      ]
+    },
+    {
+      "object": "Laser Boost continuous hooked front brass 0",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        -0.28,
+        -0.5492,
+        0.6
+      ]
+    },
+    {
+      "object": "Laser Boost continuous hooked front brass 1",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        0.28,
+        -0.6812,
+        0.3
+      ]
+    },
+    {
+      "object": "Laser Boost continuous hooked front brass 1",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        0.28,
+        -0.6152,
+        0.45
+      ]
+    },
+    {
+      "object": "Laser Boost continuous hooked front brass 1",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        0.28,
+        -0.5492,
+        0.6
+      ]
+    },
+    {
+      "object": "Laser Boost sloping structural front rib 0",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        -0.5,
+        -0.7242000000000001,
+        0.2
+      ]
+    },
+    {
+      "object": "Laser Boost sloping structural front rib 0",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        -0.5,
+        -0.5922000000000001,
+        0.5
+      ]
+    },
+    {
+      "object": "Laser Boost sloping structural front rib 0",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        -0.5,
+        -0.4602,
+        0.8
+      ]
+    },
+    {
+      "object": "Laser Boost sloping structural front rib 1",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        0.5,
+        -0.7242000000000001,
+        0.2
+      ]
+    },
+    {
+      "object": "Laser Boost sloping structural front rib 1",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        0.5,
+        -0.5922000000000001,
+        0.5
+      ]
+    },
+    {
+      "object": "Laser Boost sloping structural front rib 1",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        0.5,
+        -0.4602,
+        0.8
+      ]
+    },
+    {
+      "object": "Laser Boost long narrow red side stripe",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        0.6568,
+        -0.07,
+        0.55
+      ]
+    },
+    {
+      "object": "Laser Boost smaller angular red side flag",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        0.6048,
+        0.17,
+        0.75
+      ]
+    },
+    {
+      "object": "Laser Boost flared fixed cast base",
+      "support": "Laser Boost grounded low foot",
+      "point": [
+        0.4,
+        0,
+        0.09
+      ]
+    },
+    {
+      "object": "Laser Boost fixed supported bearing",
+      "support": "Laser Boost flared fixed cast base",
+      "point": [
+        0.1,
+        0,
+        1.07
+      ]
+    },
+    {
+      "object": "Laser Boost moving bearing",
+      "support": "Laser Boost fixed supported bearing",
+      "point": [
+        0.1,
+        0,
+        1.225
+      ]
+    },
+    {
+      "object": "Laser Boost pierced rotating cradle",
+      "support": "Laser Boost moving bearing",
+      "point": [
+        0,
+        0,
+        1.275
+      ]
+    },
+    {
+      "object": "Laser Boost single inclined tapered blade",
+      "support": "Laser Boost pierced rotating cradle",
+      "point": [
+        0,
+        -0.24,
+        1.8359999999999999
+      ]
+    },
+    {
+      "object": "Laser Boost single inclined tapered blade",
+      "support": "Laser Boost pierced rotating cradle",
+      "point": [
+        0,
+        0.28,
+        1.498
+      ]
+    }
+  ],
+  "physical_chips": [
+    {
+      "body": "Laser Boost flared fixed cast base",
+      "point": [
+        0.3499999940395355,
+        0.10000000149011612,
+        1.0800000429153442
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "body": "Laser Boost grounded low foot",
+      "point": [
+        0.6299999952316284,
+        -0.8199999928474426,
+        0.05000000074505806
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ],
+  "animation": {
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "retained_controller_signature": {
+      "location": [
+        0.0,
+        0.0,
+        1.3200000524520874
+      ],
+      "rotation_mode": "XYZ",
+      "action": "HeadingPreview_360",
+      "curves": [
+        {
+          "path": "rotation_euler",
+          "index": 2,
+          "keys": [
+            {
+              "co": [
+                1.0,
+                0.0
+              ],
+              "interpolation": "LINEAR",
+              "left": [
+                -4.333333492279053,
+                0.0
+              ],
+              "right": [
+                6.333333492279053,
+                0.0
+              ]
+            },
+            {
+              "co": [
+                17.0,
+                6.2831854820251465
+              ],
+              "interpolation": "LINEAR",
+              "left": [
+                11.666666030883789,
+                6.2831854820251465
+              ],
+              "right": [
+                22.33333396911621,
+                6.2831854820251465
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "moving_meshes": [
+      "Laser Boost moving bearing",
+      "Laser Boost pierced rotating cradle",
+      "Laser Boost single inclined tapered blade",
+      "Laser Boost dark seated blade groove 0",
+      "Laser Boost dark seated blade groove 1"
+    ],
+    "static_meshes": [
+      "Laser Boost grounded low foot",
+      "Laser Boost flared fixed cast base",
+      "Laser Boost fixed supported bearing",
+      "Laser Boost continuous hooked front brass 0",
+      "Laser Boost continuous hooked front brass 1",
+      "Laser Boost sloping structural front rib 0",
+      "Laser Boost sloping structural front rib 1",
+      "Laser Boost long narrow red side stripe",
+      "Laser Boost smaller angular red side flag"
+    ],
+    "fps": 16,
+    "frames": [
+      1,
+      17
+    ],
+    "export_bake_fps": 64,
+    "direction_count": 16,
+    "timing_recovered": false
+  },
+  "scale_contract": "2x2 placement footprint, ground0, +Z up/-Y front. Dimensions, rail angle and socket are authored, not recovered metric calibration.",
+  "concept_review": "sources/docs/reconstruction/models/mn21-concept-review.json",
+  "animation_clips": [
+    "Animation"
+  ],
+  "source_controller": "sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn21/model.blend",
+  "source_controller_sha256": "9e78f8da2c0719d3e5275e4323afd4bf13e09f7f8018ea63ee28cfdf8b173613",
+  "interpretation": [
+    "Own sixteen direction heads establish one flattened inclined tapered blade with two elongated grooves over a narrow rotating cradle. Prior two round muzzles are superseded by own source anatomy.",
+    "Two front hooked brass fittings and long stripe/smaller red side flag govern fixed anatomy. Exact hidden structure,bearing,groove depths and sections are authored;generic PB18/ST18 and turret optimiser ST31 are context only. No firing,recoil or autonomous scan timing inferred."
+  ],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

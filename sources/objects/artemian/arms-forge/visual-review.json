@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/120",
+  "binaries": {
+    "blend": "1ac39a7bd2de9b7d183e0a3412c404a8491b1e9de77eacebfb20e274a1e80981",
+    "glb": "6a0d74bd1179dbc8e92c927cb482a700d672339525d1bcc42001033f48b24667"
+  },
+  "runtime_report_sha256": "cb60432d84286532d0873f3f5104cd984b6f6cb6ee40a6c6cee0db00a8212ed5",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0013352870276274432,
+      "margin": 94
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.001253971551001254,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0008006198347107438,
+      "margin": 61
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar14-review-1.png",
+      "sha256": "8379644c26f2a469c8ddb3ebcada8beed5909754936406ff944c1b0f26341f77",
+      "prompt": "sources/docs/reconstruction/models/ar14-concept-prompt-1.txt",
+      "feedback": "Selected green tiered protective shell,small upper boss,pale shoulder accents,tall silver open capsule frame with gold bar/short crosspiece and rooted prong support,four small dark points in two pairs,two copper base insets. Actual source controls proportions;hidden engineering/sections remain authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "8e0c555735e730e1c5fe47fab225992fbfc7e2dfe621dcf21c09e60d3dc52010",
+        "glb": "199958ea21570c09bfef7567232e39830c62bebd239a70a8cd0fec0b5f5333ed"
+      },
+      "runtime_report_sha256": "0bd2f68fcda95585a1b4ef1ebf8049d487caa42495efdb0a70aeb3760f70f443",
+      "status": "revision_required",
+      "finding": "Actual whole source/concept/import comparison and native quarter reviewed. All17source parts/attachments/slots/dent pass20324tri/6decodedmaps/error6.322026990801533e-8,but centred cone looks too symmetric,upper boss too flat,white shoulder bands broad and frame tip projects below boss unlike actual source. Before first verification source inspection also anchored initially unmounted gold bar and widened frame/bar proportions;no rendered pass is falsely claimed for initial author1.",
+      "action": "Lean upper shell toward frame,round boss cap,narrow/mute silver bands,raise frame/bar top to match source visible ordering. Reposition two dark-point pairs with shifted shoulders,retain all real support/contact/slot tests and rerender."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "484b2cf45afbf53c90eb0f0478e74c5524dc9f9c77cbf5fa80c5d9b16a267441",
+        "glb": "c2bb84531c9e9aeee0fbfcca9b940d29b3d77315ccc87695f5a713c557c2ff91"
+      },
+      "runtime_report_sha256": "308afd9a9dcd1ecf010155008a87bd3f48f92b783175e60830e927e74d1eb256",
+      "status": "revision_required",
+      "finding": "Actual saved native/imported revision passed 21854 triangles and 17 closed meshes, but user source/concept comparison correctly identifies both dark pairs too far forward. Lower pair must be farther around right flank than upper pair.",
+      "action": "Move both pairs around the actual right shoulder surface; cut four shallow recessed openings and seat dark backings at their floors. Verify physical recess depth and angular placement in native and independent import, then inspect corresponding renders."
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "c1dd0a70bf9f37906dd37245805b706f8c810cf1c607abdb6ce4052781658f83",
+        "glb": "62fe108596f4a83bdf5b38f1de66f4656d7a79a1ed7c92adc0c2de303b4bb6d2"
+      },
+      "runtime_report_sha256": "5194e26f947a1cb34a4e6ac2d947c21eac859a5446d92b086503ef456f982a9b",
+      "status": "revision_required",
+      "finding": "Actual source/concept/import board and recess detail show corrected right flank positions and real seated shallow openings, but within-pair spacing is visibly wider than source and concept.",
+      "action": "Reduce angular separation from35degrees to18degrees while retaining upper/lower right-flank offset and actual recess tests."
+    },
+    {
+      "pass_number": 4,
+      "binaries": {
+        "blend": "1ac39a7bd2de9b7d183e0a3412c404a8491b1e9de77eacebfb20e274a1e80981",
+        "glb": "6a0d74bd1179dbc8e92c927cb482a700d672339525d1bcc42001033f48b24667"
+      },
+      "runtime_report_sha256": "cb60432d84286532d0873f3f5104cd984b6f6cb6ee40a6c6cee0db00a8212ed5",
+      "status": "agent_review_accepted",
+      "finding": "Actual final source/concept/import whole board,front/rear and frame/recess details inspected. Four real recessed openings now form tighter right-flank pairs,lower pair farther right,matching source/concept feature ordering.17closed positive native/imported meshes,22470triangles,6equal decoded maps,surface error6.143906006172983e-8;independent angular/recess/backing/contact/slot/asymmetric-body/dent checks pass.",
+      "action": "Select this one canonical pair and update both galleries. Final user artistic acceptance and client integration remain separate.",
+      "final_user_artistic_acceptance": false,
+      "game_client_integration": false
+    }
+  ],
+  "final_review": "Actual paletted source/concept/imported whole/front/rear and frame/shoulder details reviewed. Green asymmetric tiered shell and rounded upper boss,open silver capsule frame with gold bar/crosspiece,grounded three-prong support,two right-flank pairs of recessed dark openings and two copper front base insets. User correction moves both port pairs from front to right flank,lower pair farther around flank;further rendered feedback tightens within-pair spacing. All17native/imported meshes closed positive,six decoded maps agree;actual port recess depths/backing-floor contact,angular placement,frame/bar/support attachment,open slots,shoulder proportions and dent guards pass.",
+  "limitations": [
+    "Exact hidden factory engineering,frame/tier/fitting sections and metric dimensions remain authored or unknown.",
+    "Class07 generic PB07 factory turntable is a functional counterpart,not Artemian geometry or an operating clip;no same-index ST07 association.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

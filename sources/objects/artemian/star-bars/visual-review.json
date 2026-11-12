@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/121",
+  "binaries": {
+    "blend": "db0ec1095a04fa8290ec81e4e72afa6656de7b6c5150a39194ed8ab3b5cf216d",
+    "glb": "df2d8e178702d2e989bd0b3088a6094f7c576fc9775383c7494a664462bd5205"
+  },
+  "runtime_report_sha256": "d227fc19636bb6c9e46ef7c56fd34348f7949a0fe7e52b08b2c6b3a0a201a3bb",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00019543973941368078,
+      "margin": 63
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00019662532679857555,
+      "margin": 46
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.000266611026104697,
+      "margin": 97
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar15-review-1.png",
+      "sha256": "6a2615b76eed7f01b18766c4f24a63be90361ec9381dc2059a77dbef8caa8cd8",
+      "prompt": "sources/docs/reconstruction/models/ar15-concept-prompt-1.txt",
+      "feedback": "Selected squat green bowl/pale rims,rounded tapering rotating head,one inclined tapered collared emitter,one narrow pale vertical stem and exactly two fixed front-side dark round points. Keeps source simple anatomy and sparse metal detail;emitter bore/bearing/sections remain authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "fbf1c77c05821a4e9df45a6ada0c0ee0f171e011413ce8e71ffecb2506ec8747",
+        "glb": "02f8f956a39a141f11773d4ff5830c8786d0273e83e8d2001fbac5f9452b3b43"
+      },
+      "status": "revision_required",
+      "finding": "Actual source/concept/independent-import comparison shows recognisable anatomy and rotation,but vertical stem/collar and paired fixed points are visibly too thin;emitter collar pale faces too broad relative to sparse source/concept accents.",
+      "action": "Widen stem/collar and two fixed point rims,increase restrained pale metal lightness and limit exposed emitter colour to narrow collar lips;rerun actual native/import animation and render checks. Initial verifier time-origin assumption rejected;diagnostic proves imported action1..97 and matching source1..97,contract retained."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "3e56bb3eb83179e4ef37513d5ec73f118bba2194d94baeaa63f6ae04c66419b8",
+        "glb": "ac08bd53a625b2e772bcc9c4cbacedb97d447cf548c0aa26d2c294c1767f8d20"
+      },
+      "runtime_report_sha256": "a2716d96f73590e023e2978704084803cca2b0289fe300f4cde9623999afe4de",
+      "status": "revision_required",
+      "finding": "Full native/imported17heading verification passed20272tri/9positiveclosed/4equalmaps/error4.2981520209650625e-7. Direct anchored-source pixel examination then proves upper pale stem has identical x159/160,y76..79 pixels in all16headings. Authored off-axis stem would orbit,contradicting source.",
+      "action": "Centre stem and collar on yaw axis,retain enlarged proportions and verify invariant stem centre through all native/imported samples. Stop only verified task renderer132856 and discard own partial preview frames after preserving a diagnostic sheet;render final preview after correction."
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "db0ec1095a04fa8290ec81e4e72afa6656de7b6c5150a39194ed8ab3b5cf216d",
+        "glb": "df2d8e178702d2e989bd0b3088a6094f7c576fc9775383c7494a664462bd5205"
+      },
+      "runtime_report_sha256": "d227fc19636bb6c9e46ef7c56fd34348f7949a0fe7e52b08b2c6b3a0a201a3bb",
+      "status": "agent_review_accepted",
+      "finding": "Actual final source/concept/imported whole comparison,front/rear and emitter/stem/bearing/fixed-point details inspected. Widened stem/points and narrow collar accents retain source anatomy. Own16heading pixel proof centres stem/collar on yaw axis. All17native/imported heading checks pass;9positiveclosed meshes,20272tri,4equaldecodedmaps,error4.2981520209650625e-7;fixed bowl/points,head joints,axis-invariant stem,blind bore floor and physical dent verified.",
+      "action": "Select this canonical pair after actual imported-GLB video pose review and media checks. Final user artistic acceptance,client aiming/timing/scale/shaders and Android performance separate.",
+      "final_user_artistic_acceptance": false,
+      "game_client_integration": false,
+      "animation_review": "Actual imported-GLB video verified VP9,384x384,97decoded frames,24fps,4.042s,96distinct yaw poses. Keyposes1/25/49/73/97 inspected:head/emitter rotate,centred stem and fixed bowl/two points remain aligned. Bound manifest/model/renderer hashes verified."
+    }
+  ],
+  "final_review": "Actual source/concept/imported whole/front/rear and emitter/bearing/fixed-point details reviewed. Squat green rounded bowl,pale rims,one rounded tapering rotating head,one inclined collared tapered emitter with real blind bore,short pale stem in green collar and exactly two fixed dark front-side points. Nine closed positive meshes,four decoded maps agree;actual17heading native/imported geometry validates continuous head/stem/emitter rotation and stationary base/points,real mounting joints,blind bore floor and sampled dent. Feedback widens undersized stem/points,narrows emitter collar highlights and centres stem on yaw axis after actual16heading source-pixel comparison. Duration and hidden sections authored;no generic Terran side pods copied.",
+  "limitations": [
+    "Exact hidden engineering,bearing/emitter/fitting sections and metric dimensions remain authored or unknown.",
+    "Own16heading overlays establish rotation;four-second preview duration does not claim recovered gameplay timing or client aiming control.",
+    "PB03/ST02 are semantically bound generic Terran counterparts,not Artemian geometry. Final user artistic acceptance,client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

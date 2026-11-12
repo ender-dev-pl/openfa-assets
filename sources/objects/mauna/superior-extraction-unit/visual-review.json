@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/147",
+  "binaries": {
+    "blend": "b73205972d795a227280de26d5aaf464f92e05366b1a70964d846e897e96f819",
+    "glb": "17934238910d2558e729b4a2a17c1a2bdb091ab45492e3cd3e354c86dc13d1c7"
+  },
+  "runtime_report_sha256": "aca4d6ce5ea561b9b62d9e55608567fcd77411a53b8f85082209ef0e34cd1074",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00036344755970924193,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00013155376961347112,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00017332704733908318,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn18-review-1.png",
+      "sha256": "efbff86137fcb5f6e980205a691d74d99b445397441414bc1ce7a213569a38b6",
+      "prompt": "sources/docs/reconstruction/models/mn18-concept-prompt-1.txt",
+      "feedback": "Selected after actual comparison with own correctly paletted body1 and enlarged catalogue/all41 updates. Retains low broad square grey-blue base, compact paler angular central block with sloping shoulder, characteristic split red face including tapered upper-right field, two pale upper rails flanking one shorter brass bar, short rear pale stub/front brass stud, right brass two-port plaque/separate upright, four base channels/end bays, front three-point field and two brass corner rails. Small exact depths/port shapes/attachment engineering and wear patterns are interpreted; no generic Terran drill/lattice/circular-pad anatomy or rotating/pulse cycle transferred. Base corner rails must remain seated and above ground in the 3D model even if the concept shadow obscures their foot."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "binaries": {
+        "blend": "4a10c038c43b7574ff99cb733287c3917dce1db579c9312764d94a81f4d5e2ef",
+        "glb": "402262a74588cf93527f83674da6afadfdc5d4007eefaa73078ad79c00fef9fe"
+      },
+      "runtime_report_sha256": "9a7b894358084d8b12ae2ff9a10c049e35e82f7987bf3a53ba9baf2039df0b1c",
+      "inspected": [
+        "Actual independently imported GLB front-quarter render against own source and selected real concept"
+      ],
+      "finding": "Source-specific body,split red fields,paired guides/shorter brass bar,channels and point groups are present and technical checks pass. The upper pale block looks too smooth because its inherited pale surface map lacks the pores/stains of the cast base; brass is also darker/browner than own source and concept.",
+      "action": "Use the same restrained cast stain/pore/dust field on the pale upper concrete map while retaining its paler cyan-grey base colour. Brighten the brass base reflectance toward source gold without changing geometry or adding dense surface divisions. Re-export and repeat all native/independent GLB checks and final source/concept/render review.",
+      "accepted": false
+    },
+    {
+      "iteration": 2,
+      "binaries": {
+        "blend": "b73205972d795a227280de26d5aaf464f92e05366b1a70964d846e897e96f819",
+        "glb": "17934238910d2558e729b4a2a17c1a2bdb091ab45492e3cd3e354c86dc13d1c7"
+      },
+      "runtime_report_sha256": "aca4d6ce5ea561b9b62d9e55608567fcd77411a53b8f85082209ef0e34cd1074",
+      "inspected": [
+        "Actual own paletted body/catalogue and selected real ImageGen concept",
+        "All three saved-native and all three independently imported GLB whole views",
+        "Both final close-ups",
+        "Canonical technical edges",
+        "Full source/concept/native/GLB comparison board"
+      ],
+      "finding": "Accepted for agent source/concept review: low broad grey-blue base and paler angular block retain the own silhouette and source palette. Split red front fields include the actual tapered upper-right pocket with structural divisions. Two tall pale guides enclose one shorter brass bar; their slenderness follows own legacy rather than the thicker incidental concept rendering. Rear stub/front stud, two-port right plaque/separate upright, four channel ends and grooves, three front plus four end warm points and two seated brass corner rails are legible. Improved pale cast stain/pore finish and source-gold brass remain restrained. Native and imported whole/detail views agree and the technical diagram uses the same geometry.",
+      "runtime": {
+        "triangles": 1878,
+        "meshes": 11,
+        "materials": 6,
+        "embedded_images": 7,
+        "attachment_witnesses": 21,
+        "real_blind_fields": 11,
+        "triangular_blind_fields": 1,
+        "maximum_bidirectional_surface_error": 3.1680303891334916e-07
+      },
+      "limitations": [
+        "Exact hidden construction,depths,shoulder slopes,bar/guide sections and cell-relative dimensions are authored interpretations developing the concept,not recovered metric data.",
+        "The selected concept has richer incidental rough damage; the canonical model keeps source-led quiet broad surfaces and moderate material budgets. No numerical fidelity score or final user artistic approval is claimed.",
+        "Own source has no operating overlays; steady warm opaque points do not establish a pulse/drill cycle or guarantee client bloom.",
+        "Client world scale,state/shader handling and Android performance remain separate integration verification."
+      ],
+      "accepted": true,
+      "final_user_artistic_acceptance": false,
+      "game_client_integration": false
+    }
+  ],
+  "final_review": "Accepted for agent source/concept review: low broad grey-blue base and paler angular block retain the own silhouette and source palette. Split red front fields include the actual tapered upper-right pocket with structural divisions. Two tall pale guides enclose one shorter brass bar; their slenderness follows own legacy rather than the thicker incidental concept rendering. Rear stub/front stud, two-port right plaque/separate upright, four channel ends and grooves, three front plus four end warm points and two seated brass corner rails are legible. Improved pale cast stain/pore finish and source-gold brass remain restrained. Native and imported whole/detail views agree and the technical diagram uses the same geometry.",
+  "limitations": [
+    "Exact hidden construction,depths,shoulder slopes,bar/guide sections and cell-relative dimensions are authored interpretations developing the concept,not recovered metric data.",
+    "The selected concept has richer incidental rough damage; the canonical model keeps source-led quiet broad surfaces and moderate material budgets. No numerical fidelity score or final user artistic approval is claimed.",
+    "Own source has no operating overlays; steady warm opaque points do not establish a pulse/drill cycle or guarantee client bloom.",
+    "Client world scale,state/shader handling and Android performance remain separate integration verification."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false,
+  "source_citation_revalidation": {
+    "report": "sources/docs/reconstruction/models/mauna-source-citation-revalidation.json",
+    "model_binaries_and_renders_unchanged": true,
+    "scope": "Actual original-payload citation revalidation only; not a new render or artistic/client acceptance."
+  }
+}

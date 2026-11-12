@@ -1,0 +1,89 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/052",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri13-review-1.png",
+    "sha256": "73ac3f61a40e3d75effdefe0cd2942af837357cc5a25fce4d223a1a7dc0f3c36",
+    "prompt": "sources/docs/reconstruction/models/ri13-concept-prompt-1.txt",
+    "verdict": "Grey round chamber, green foot/side risers, red details and stepped terminal agree with legacy. Concept lengthens the foot, thickens service pods and rearranges the asymmetric lower panel; reject those changes and retain source-guided proportions and detail placement."
+  },
+  "legacy": {
+    "body_sha256": "10dc32604c7e937f6df1e67175df20c820bacdb66990349c3b3d9a9474b073ae",
+    "catalogue_colour_phase20_sha256": "4c1ac28226d74d55c8171698b165799dc9e32513a692a305a211d560b1109300",
+    "functional_record": 913,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "9872dbefe4ea44567d30a03178f9aa5a9491eee407894adf15482f3e9b12db31",
+    "glb": "69451f802b4fa78c9ca9200cb67443e1e190885a789ebec6585c5efb262698f0"
+  },
+  "runtime_report_sha256": "4ee4a215b05345257bf13dbff85233abb46f1c79ba558687f7185083e4ddcc85",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.005555894639756944,
+        0.006588406032986111,
+        0.006593492296006944,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.039591269121470464,
+        0.04687103210593144,
+        0.04691940262410061,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 58
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.008512708875868056,
+        0.008680555555555556,
+        0.007563273111979167,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.06144765683357212,
+        0.06257423802701345,
+        0.05455346974762132,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 53
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.002529568142361111,
+        0.002829657660590278,
+        0.0025431315104166665,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.018679294922388845,
+        0.020871700429711478,
+        0.01874193507974092,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 59
+    }
+  },
+  "feedback": [
+    "Actual independent GLB retains legacy grey round upper chamber, narrow equipment drum, green flared foot, curved green side risers/red details, asymmetric front strips/panel, round fittings and segmented terminal.",
+    "Six protected mapped profile parts retain exact evaluated geometry, six measurable dents, full colour/roughness pixels and twelve planar-cap surfaces. Curved risers follow the chamber skin and retain the prior local/deformed UV mapping and contact checks.",
+    "Concept lengthens foot, thickens side pods and rearranges panel details. These departures are rejected. Existing wear is subtler; exact rear/underside, spherical interpretation, seam and fitting engineering remain inferred.",
+    "Catalogue phases reveal/highlight a fixed object, not a mechanical cycle. Current selector does not list ID052 as directional; RIS2 construction remains separate.",
+    "96,640 triangles, 34 physical components, eight materials and eight embedded maps are a substantial asset cost. No Android FPS, batching, game scale/state integration or final user artistic acceptance is certified."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/102",
+  "binaries": {
+    "blend": "d06e8b30ed960536579b56835867dbcc6e2af7b1d88030e94276eaf9b29a3e5a",
+    "glb": "12c8a4ec5fc3ea28b6382f3bce0796b231c27a2052af032ac34ac8c745686c66"
+  },
+  "runtime_report_sha256": "c5c5ecec13eb1f204e9f00a8bd3b5ae340916776fb86cc5cee99005d25def0c7",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0028959060615677563,
+      "margin": 64
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.004183651576914825,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0020029582152101565,
+      "margin": 65
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk17-review-1.png",
+      "sha256": "96b6a975fa4f1e478511b09593db2ed303cc689a9abb422b15b048fad8bee1ac",
+      "prompt": "sources/docs/reconstruction/models/mk17-concept-prompt-1.txt",
+      "feedback": "Selected rounded asymmetric side chambers,shorter mineral neck,one front pale port and a single shallow silver mushroom dome with spiral relief. Source and prior user confirmation govern rigid rear stow,not petals or an energetic disappearing ribbon. Hidden guides and timing remain authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "binaries": {
+        "blend": "8ec697ef708f27c211f628e37747814c4bd61d769530914ccfd43080d5b2a12c",
+        "glb": "17b26ec29f907018b45e3b361e070d5a2c2e3933f8545b8e6124612819fcc353"
+      },
+      "runtime_sha256": "9482de9ab1b8f89e9a49a4606a427253117e0b42a7500ed6bf9c4d4178c0c0ce",
+      "finding": "First complete native/import pass has a too continuous cone/vase-like lower body instead of the two rounded side chambers clearly shown in source/concept. Rigid cap translation/support and aperture are retained.",
+      "correction": "Reduce central lower taper and Boolean-union asymmetric knobbly side volumes,then rebore the same clear shaft. Broaden dark cap spiral relief slightly;read actual guide/bearing envelopes at every frame rather than comparing authored formulas only."
+    }
+  ],
+  "final_review": "Actual independent GLB retains two rounded asymmetric side chambers joined to a hollow mineral neck,one front red/blue port and one rigid silver mushroom cap with attached spiral relief. Cap/carriage slide rearward as a rigid assembly on overlapping telescopic guides;the cap does not unwind. Source/concept/GLB comparison and actual state/detail renders reviewed. Closed aperture coverage,open shaft,contact supports and actual every-frame guide envelopes verified.",
+  "limitations": [
+    "Exact hidden engineering,continuous timing,guide arrangement and metric sections remain authored;prior user confirmation establishes rigid rear stow.",
+    "The inactive alternate lens surface stows below an opaque floor to encode a colour swap,not mechanical lamp motion.",
+    "Final user artistic acceptance,actual missile fit,client state/scale/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -1,0 +1,37 @@
+{
+  "asset": "openfa:ship/mikotaj/ruth-strivakh",
+  "review_type": "Retrospective review; initial pass skipped ImageGen",
+  "legacy_identity": {
+    "entry": "MK3C.256",
+    "source_sha256": "35f67108faa90818816d5876fa4ab45ec2a39de7e5bc5062f89d16ba0c901590",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ]
+  },
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. Required retrospective ImageGen concept review1 of max3 for OpenFA Mikotaj Ruth-Strivakh MK3C LARGE transporter. Attached contact sheet is actual paletted legacy, authoritative geometry and broad colour. Reconstruct its distinctive low crosswise open copper truss/beam structure with an elongated central slate-blue pressure body running perpendicular to that beam, and small slate-blue rounded flattened terminal pods at the two far beam ends. Preserve OPEN rectangular gaps in the copper side frames; do not fill them with armour. Several small muted green fittings sit at structural junctions. Main body is opaque rounded blue-grey metal, not a transparent glass globe; broad slightly flattened upper shell, narrower projecting underside machinery. Match the legacy relation of wide beam to relatively short central fore-aft body and thin overall height. Transport size class should inform believable material details while preserving this silhouette. Worn copper/orange structural metal, slate-blue body/pods, modest green and dull brass accents; scratches, recess grime, restrained joints and fasteners, no dense hull grid. Avoid adding cargo containers, huge antennas, new weapons, thrust plumes or invented functional mechanisms. Show one clear three-quarter studio view and smaller plan view of the SAME geometry, charcoal backdrop, no text or original pixel collage.",
+      "image": "gallery/media/concepts/mikotaj/ruth-strivakh-01.png",
+      "verdict": "Broad form/material concept retained: low crosswise copper structure, opaque elongated blue central body, blue terminal pods and small green junction fittings. The plan inset resolves perpendicular body/beam axes; oblique hero alone is ambiguous. New panel/hatch patterns are not treated as legacy fact.",
+      "sha256": "9be45b71aac0b7b6a719b5624ebc5661bc7362655a85ceaa2b4501c899ed398a",
+      "input_images": [
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "f4e3ac50a1f87e0a3993d1601a647d7e831a58f2f0640b6183f4fed72682652c"
+        }
+      ]
+    }
+  ],
+  "glb_visual_review": "Actual imported GLB inspected against legacy and the concept: perpendicular central-body/beam arrangement, open copper bays, terminal pods, green fittings and low profile agree. The existing open triangulated frame is retained; filling it with the concept's thicker box sections is not required by legacy. Surface details remain restrained and authored.",
+  "final_user_acceptance": "pending",
+  "legacy_contact_sha256": "f4e3ac50a1f87e0a3993d1601a647d7e831a58f2f0640b6183f4fed72682652c",
+  "reviewed_binary_hashes": {
+    "blend": "02a011bf712c18f4b84baa85a1a43aa39613be0cfe6c58c0734e84e0a232402f",
+    "glb": "526a30a433ebf9009d5be3f10ee53c08f5f4aaac507568f0d5b75ed4c7f67562"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "issue": 1116,
+  "summary_sha256": "2dd60e7009cf34d87af3d63c4ec43b511142545763a25a96c2271388ed027bd7",
+  "checker_sha256": "fa54c8bee0c0a884719bd7abb622528ec0e059cb6f44e7e9828ff5fcb4cebad7",
+  "counts": {
+    "definitions": 303,
+    "native_materials": 1783,
+    "native_decoded_image_datablocks": 698,
+    "native_models_with_decoded_images": 124,
+    "native_decoded_input_components": 1360036962,
+    "native_image_driven_inputs": 698,
+    "imported_materials": 1784,
+    "imported_decoded_image_datablocks": 698,
+    "imported_models_with_decoded_images": 124,
+    "imported_decoded_input_components": 1705286409,
+    "imported_image_driven_inputs": 1050,
+    "equal-at-8-bit-readback": 7136,
+    "models_with_equal_four_input_material_bindings": 303,
+    "compared_image_colour_space_roles": 698,
+    "verified_four_input_aliases": 1
+  },
+  "findings": [],
+  "verified_four_input_aliases": [
+    {
+      "id": "openfa:building/legacy/041",
+      "imported": "RI02 | aged jade shell.001",
+      "native": "RI02 | aged jade shell",
+      "scope": "Duplicate GLB name and four decoded inputs only; not complete shader/UV equivalence"
+    }
+  ],
+  "final_visual_acceptance": false,
+  "scope": "Decoded supported inputs rounded to 8-bit Blender readback. No unquantized equality, complete shader/normal/emission/UV-sampling/render equivalence, final art or game integration acceptance."
+}

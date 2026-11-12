@@ -1,0 +1,89 @@
+{
+  "issue": 227,
+  "id": "openfa:assault-fighter",
+  "source_glb": "sources/docs/assets/reconstruction/ships/terran/assault-fighter/model.glb",
+  "source_glb_sha256": "953befdb5b40b6b1741d64f7ae3899df34989e73554561124fbeac54d667b2cd",
+  "blend_sha256": "463027eb6ffc3f7cf6a79a32552b893b92d14fcc3a79ee4886cc15571bda87dc",
+  "glb_sha256": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+  "generator_sha256": "7dbfb99363341d336cba00a9cdc655b62367bcf45b998fa336b75a2c420a930d",
+  "geometry_helper_sha256": "a0ed4679d289cb69fe6ce378b62b8bde2a7b98ba18f7ca0c95772d7bc5d8484c",
+  "shell_bounds": [
+    [
+      -2.3795058727264404,
+      -2.6725997924804688,
+      -0.3481999933719635
+    ],
+    [
+      2.3795058727264404,
+      1.6517000198364258,
+      0.699999988079071
+    ]
+  ],
+  "game_world_size": 30,
+  "layers": [
+    {
+      "node": "Build01_BaseFrame",
+      "progress_start": 0
+    },
+    {
+      "node": "Build02_ExpandedFrame",
+      "progress_start": 0.16
+    },
+    {
+      "node": "Build03_Systems",
+      "progress_start": 0.38
+    },
+    {
+      "node": "HullPartial",
+      "progress_start": 0.65
+    },
+    {
+      "node": "HullFinal",
+      "progress_start": 0.88
+    }
+  ],
+  "flight_hidden_nodes": [
+    "Build01_BaseFrame",
+    "Build02_ExpandedFrame",
+    "Build03_Systems"
+  ],
+  "flight_visible_nodes": [
+    "HullPartial",
+    "HullFinal"
+  ],
+  "lift_socket": [
+    0.0,
+    -0.5104498863220215,
+    0.9855406928062439
+  ],
+  "lifting_contacts": [
+    [
+      -0.3331308364868164,
+      -0.17731904983520508,
+      0.4299999475479126
+    ],
+    [
+      0.3331308364868164,
+      -0.17731904983520508,
+      0.429999977350235
+    ],
+    [
+      0.0,
+      -0.9387609362602234,
+      0.4055933356285095
+    ]
+  ],
+  "mesh_nodes": 17,
+  "triangles": 64338,
+  "interior_vertices": 10132,
+  "vertices_outside_ray_sections": 0,
+  "engineering": "Authored interior constrained by actual shell sections; original exterior faces, normals, UVs and materials preserved and partitioned into disjoint partial/final hull batches.",
+  "client_binding": "Use real build fraction for cumulative five-layer visibility. In flight draw both children of Hull, skip all Build* batches. Socket coordinates are ship-local; apply the same placement transform as the ship.",
+  "stage_images": [
+    "stage-01.png",
+    "stage-02.png",
+    "stage-03.png",
+    "stage-04.png",
+    "stage-05.png"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/098",
+  "binaries": {
+    "blend": "8ca3d55a12521d05e7cfedfd4517afa85b707881f9ebd00b36bf4cb84a0f404d",
+    "glb": "4a3951691d187293fe9939d3b5ab9c1677e97d90fc430db4ab9443d1754985c9"
+  },
+  "runtime_report_sha256": "ae6662399dbc681590bb0e021dcb1cbd8188e53002fad3e52a19cf527874d7f1",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0016737609119111176,
+      "margin": 43
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0017851517378977212,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0007379560011138959,
+      "margin": 43
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk13-review-1.png",
+      "sha256": "9b58f16e78ee303faf6fb12d00ef7200c72bad6f85affac052a31731a7fa8cf9",
+      "prompt": "sources/docs/reconstruction/models/mk13-concept-prompt-1.txt",
+      "feedback": "Selected: slender L-profile, rear-left mineral mast with pointed copper stalk, low right-projecting ore knuckles, upper blue inset and four lower amber/red cells. Concept copper trace is slightly thick; the GLB will use the subtler original trace scale. Hidden sections, joints and fine wear are authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "stage": "Complete native/import runtime with detail renders; no final promotion.",
+      "discrepancies": [
+        "Foundation forms pointed little mountains above a wafer edge, rather than a chunky knuckled ore bed.",
+        "Four red cells lack the original warm light centres.",
+        "Descriptive generator path inherited the Mask script although actual executed Perception source hash was correct; caught before inventory registration."
+      ],
+      "corrections": [
+        "Thicken foundation, use wider plateau-like mineral knuckles and physical chips.",
+        "Authored warm-centred red map with source-specific front UVs and emission.",
+        "Correct explicit author path and assert same-model generator identity in actual verifier."
+      ]
+    },
+    {
+      "stage": "Final three-way comparison before committing; previous native/import checks passed but proportions need correction.",
+      "discrepancy": "GLB foundation height is roughly half the original/concept share of the silhouette, and mast thickness is too low. The separate closeups obscured this global comparison.",
+      "correction": "Raise/widen blunt knuckles to about1.1totalheight vs3.66overall, widen mast sections1.4x, restore a clearer but seated upper copper dogleg and slightly broaden upper inset. Retain same identity and historical pair; refresh the already-selected uncommitted canonical evidence after actual rerun, not re-register."
+    }
+  ],
+  "final_review": "Actual saved-native and independent GLB keep the narrow rear-left mineral mast/copper stalk over a low right-projecting foundation, one upper vertical blue inset and exactly four lower amber-red status cells. Source-specific feedback broadens/flattens knuckles into a thick ore bed and adds warm cell cores. A final whole-silhouette comparison restored the previously too-low foundation height and too-thin mast, while the copper trace remains subtler than the concept. All surfaces/texture pixels match and detail renders come from the same canonical geometry.",
+  "limitations": [
+    "Exact hidden sections, mineral profiles, copper joint engineering and wear are authored from limited original views.",
+    "No operating motion is demonstrated by this building sprite/catalogue. Improved-sensors research depicts a separate generic housing; its rotating presentation does not establish Mikotaj motion.",
+    "Final user artistic acceptance, client state/scale/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

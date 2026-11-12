@@ -1,0 +1,1568 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/040",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "2327740c93e3390ee2493b22724224dbd688dc955f1e272ba136b9151210b17d",
+    "glb": "1acdc64d42c9de093d1afef274705b7f0c7b0e22a1aacc997e79941e3281db08"
+  },
+  "metadata_sha256": "0a4878497bd7589829d17df987baf3774fd3be840a3e71627a1866c36764f46c",
+  "verifier_sha256": "eabe004e4263bfa0bf8e24075ad917dc80d998f1ffc0f0d25b6625b51bc3af76",
+  "helpers": {
+    "sources/tools/blender/verify_remastered_rigellian_cpu.py": "eabe004e4263bfa0bf8e24075ad917dc80d998f1ffc0f0d25b6625b51bc3af76",
+    "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+    "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+    "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+    "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+    "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+    "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+    "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+    "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+    "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+    "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+    "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+    "sources/tools/blender/rigellian_cpu_preservation_checks.py": "4f99ff3e90041ce6c1ac1d177876e0b5072f5b7fd8994686769ef9a62dede32c",
+    "sources/tools/blender/refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "sources/tools/blender/verify_refined_rigellian_extractor.py": "d8a090cc290d0b5ebe800c93a1dc70446e02c1e1697e909bd039073a9d6ef84f",
+    "sources/tools/blender/rigellian_extractor_remaster_checks.py": "f2024418942b8111f93f71a61160dec511ac0c91ce9f1b28a33f9959a53e70a3",
+    "sources/tools/blender/rigellian_cpu_uv_checks.py": "06f5f13d06f1527c5f34c36a94b71d0a8f0ac1e6530496f10d656c08287f1ab2"
+  },
+  "native": {
+    "positive_closed_meshes": 75,
+    "body_bounds": [
+      -1.1829999685287476,
+      -1.183000087738037,
+      0.0,
+      1.1829999685287476,
+      1.182999849319458,
+      4.072499752044678
+    ],
+    "retained_cut_roof_well_and_seated_cooling_fins": true,
+    "retained_conformal_cap_and_open_neck_grille": true,
+    "crown": {
+      "left": {
+        "volume": 0.00997243154111796,
+        "middle_width": 0.14999999105930328,
+        "tip_width": 0.03790859878063202,
+        "taper_ratio": 3.9568856640499246,
+        "minimum_upper_gap": 0.18299999833106995
+      },
+      "right": {
+        "volume": 0.009972431672708991,
+        "middle_width": 0.14999999105930328,
+        "tip_width": 0.03790861368179321,
+        "taper_ratio": 3.956884108672785,
+        "minimum_upper_gap": 0.18299999833106995
+      }
+    },
+    "sampled_contact_graph": {
+      "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+      "tolerance": 0.0001,
+      "links": [
+        [
+          "RI01 refined crown arm left",
+          "CPU broad upper saucer"
+        ],
+        [
+          "RI01 refined crown arm left",
+          "CPU crown brass seating ring"
+        ],
+        [
+          "RI01 refined crown arm left",
+          "CPU crown solid mounting socket"
+        ],
+        [
+          "RI01 refined crown arm left",
+          "CPU crown central conductor"
+        ],
+        [
+          "RI01 refined crown arm right",
+          "CPU broad upper saucer"
+        ],
+        [
+          "RI01 refined crown arm right",
+          "CPU crown brass seating ring"
+        ],
+        [
+          "RI01 refined crown arm right",
+          "CPU crown solid mounting socket"
+        ],
+        [
+          "RI01 refined crown arm right",
+          "CPU crown central conductor"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation ground lip"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation upper seam"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU exposed brass neck core"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU lower neck collar"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation circular service cap"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation circular service cap.001"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation circular service cap.002"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.001"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.002"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.003"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.004"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.005"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.006"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.007"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.008"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.009"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.010"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.011"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.012"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.013"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.014"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.015"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.016"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.017"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.018"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.019"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.020"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.021"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.022"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.023"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.024"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.025"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.026"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.027"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.028"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.029"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.030"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.031"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU grille horizontal structural fin"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU grille horizontal structural fin.001"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU grille horizontal structural fin.002"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU grille horizontal structural fin.003"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU grille horizontal structural fin.004"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU lower neck collar"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU upper neck collar"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU broad upper saucer"
+        ],
+        [
+          "CPU exposed brass neck core",
+          "CPU broad upper saucer"
+        ],
+        [
+          "CPU grille horizontal structural fin",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU grille horizontal structural fin",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU grille horizontal structural fin.001",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU grille horizontal structural fin.001",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU grille horizontal structural fin.002",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU grille horizontal structural fin.002",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU grille horizontal structural fin.003",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU grille horizontal structural fin.003",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU grille horizontal structural fin.004",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU grille horizontal structural fin.004",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU grille horizontal structural fin.004",
+          "CPU upper neck collar"
+        ],
+        [
+          "CPU grille horizontal structural fin.004",
+          "CPU broad upper saucer"
+        ],
+        [
+          "CPU grille side retaining rail",
+          "CPU lower neck collar"
+        ],
+        [
+          "CPU grille side retaining rail",
+          "CPU upper neck collar"
+        ],
+        [
+          "CPU grille side retaining rail",
+          "CPU broad upper saucer"
+        ],
+        [
+          "CPU grille side retaining rail.001",
+          "CPU lower neck collar"
+        ],
+        [
+          "CPU grille side retaining rail.001",
+          "CPU upper neck collar"
+        ],
+        [
+          "CPU grille side retaining rail.001",
+          "CPU broad upper saucer"
+        ],
+        [
+          "CPU upper neck collar",
+          "CPU broad upper saucer"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU saucer perimeter machined rim"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU roof well inner sleeve"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU roof well recessed floor"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.001"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.002"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.003"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.004"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.005"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.006"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.007"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.008"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.009"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.010"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.011"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU pale conformal roof service cap"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU crown brass seating ring"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU crown solid mounting socket"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU crown central conductor"
+        ],
+        [
+          "CPU roof well inner sleeve",
+          "CPU roof well recessed floor"
+        ],
+        [
+          "CPU roof well recessed floor",
+          "CPU well interior cooling fin"
+        ],
+        [
+          "CPU roof well recessed floor",
+          "CPU well interior cooling fin.001"
+        ],
+        [
+          "CPU roof well recessed floor",
+          "CPU well interior cooling fin.002"
+        ],
+        [
+          "CPU foundation circular service cap",
+          "CPU foundation panel joint.029"
+        ],
+        [
+          "CPU foundation panel joint",
+          "CPU foundation panel joint.001"
+        ],
+        [
+          "CPU foundation panel joint.002",
+          "CPU foundation panel joint.003"
+        ],
+        [
+          "CPU foundation panel joint.004",
+          "CPU foundation panel joint.005"
+        ],
+        [
+          "CPU foundation panel joint.006",
+          "CPU foundation panel joint.007"
+        ],
+        [
+          "CPU foundation panel joint.008",
+          "CPU foundation panel joint.009"
+        ],
+        [
+          "CPU foundation panel joint.010",
+          "CPU foundation panel joint.011"
+        ],
+        [
+          "CPU foundation panel joint.012",
+          "CPU foundation panel joint.013"
+        ],
+        [
+          "CPU foundation panel joint.014",
+          "CPU foundation panel joint.015"
+        ],
+        [
+          "CPU foundation panel joint.016",
+          "CPU foundation panel joint.017"
+        ],
+        [
+          "CPU foundation panel joint.018",
+          "CPU foundation panel joint.019"
+        ],
+        [
+          "CPU foundation panel joint.020",
+          "CPU foundation panel joint.021"
+        ],
+        [
+          "CPU foundation panel joint.022",
+          "CPU foundation panel joint.023"
+        ],
+        [
+          "CPU foundation panel joint.024",
+          "CPU foundation panel joint.025"
+        ],
+        [
+          "CPU foundation panel joint.026",
+          "CPU foundation panel joint.027"
+        ],
+        [
+          "CPU foundation panel joint.028",
+          "CPU foundation panel joint.029"
+        ],
+        [
+          "CPU foundation panel joint.030",
+          "CPU foundation panel joint.031"
+        ],
+        [
+          "CPU crown brass seating ring",
+          "CPU crown solid mounting socket"
+        ],
+        [
+          "CPU crown solid mounting socket",
+          "CPU crown central conductor"
+        ],
+        [
+          "CPU crown central conductor",
+          "CPU crown central terminal"
+        ]
+      ],
+      "components": [
+        [
+          "CPU broad upper saucer",
+          "CPU crown brass seating ring",
+          "CPU crown central conductor",
+          "CPU crown central terminal",
+          "CPU crown solid mounting socket",
+          "CPU exposed brass neck core",
+          "CPU flared waisted foundation",
+          "CPU foundation circular service cap",
+          "CPU foundation circular service cap.001",
+          "CPU foundation circular service cap.002",
+          "CPU foundation ground lip",
+          "CPU foundation panel joint",
+          "CPU foundation panel joint.001",
+          "CPU foundation panel joint.002",
+          "CPU foundation panel joint.003",
+          "CPU foundation panel joint.004",
+          "CPU foundation panel joint.005",
+          "CPU foundation panel joint.006",
+          "CPU foundation panel joint.007",
+          "CPU foundation panel joint.008",
+          "CPU foundation panel joint.009",
+          "CPU foundation panel joint.010",
+          "CPU foundation panel joint.011",
+          "CPU foundation panel joint.012",
+          "CPU foundation panel joint.013",
+          "CPU foundation panel joint.014",
+          "CPU foundation panel joint.015",
+          "CPU foundation panel joint.016",
+          "CPU foundation panel joint.017",
+          "CPU foundation panel joint.018",
+          "CPU foundation panel joint.019",
+          "CPU foundation panel joint.020",
+          "CPU foundation panel joint.021",
+          "CPU foundation panel joint.022",
+          "CPU foundation panel joint.023",
+          "CPU foundation panel joint.024",
+          "CPU foundation panel joint.025",
+          "CPU foundation panel joint.026",
+          "CPU foundation panel joint.027",
+          "CPU foundation panel joint.028",
+          "CPU foundation panel joint.029",
+          "CPU foundation panel joint.030",
+          "CPU foundation panel joint.031",
+          "CPU foundation upper seam",
+          "CPU grille horizontal structural fin",
+          "CPU grille horizontal structural fin.001",
+          "CPU grille horizontal structural fin.002",
+          "CPU grille horizontal structural fin.003",
+          "CPU grille horizontal structural fin.004",
+          "CPU grille side retaining rail",
+          "CPU grille side retaining rail.001",
+          "CPU lower neck collar",
+          "CPU neck with actual grille opening",
+          "CPU pale conformal roof service cap",
+          "CPU perimeter captive fastener",
+          "CPU perimeter captive fastener.001",
+          "CPU perimeter captive fastener.002",
+          "CPU perimeter captive fastener.003",
+          "CPU perimeter captive fastener.004",
+          "CPU perimeter captive fastener.005",
+          "CPU perimeter captive fastener.006",
+          "CPU perimeter captive fastener.007",
+          "CPU perimeter captive fastener.008",
+          "CPU perimeter captive fastener.009",
+          "CPU perimeter captive fastener.010",
+          "CPU perimeter captive fastener.011",
+          "CPU roof well inner sleeve",
+          "CPU roof well recessed floor",
+          "CPU saucer perimeter machined rim",
+          "CPU upper neck collar",
+          "CPU well interior cooling fin",
+          "CPU well interior cooling fin.001",
+          "CPU well interior cooling fin.002",
+          "RI01 refined crown arm left",
+          "RI01 refined crown arm right"
+        ]
+      ],
+      "isolated": []
+    },
+    "texture_pixels_and_uvs": {
+      "Rigellian CPU | blue green service inset": {
+        "Base Color": [
+          0.025,
+          0.09,
+          0.105,
+          1.0
+        ],
+        "Metallic": 115,
+        "Roughness": 79,
+        "Alpha": 255
+      },
+      "Rigellian CPU | brass conductor alloy": {
+        "Base Color": [
+          0.47,
+          0.29,
+          0.07,
+          1.0
+        ],
+        "Metallic": 184,
+        "Roughness": 94,
+        "Alpha": 255
+      },
+      "Rigellian CPU | deep equipment well": {
+        "Base Color": [
+          0.012,
+          0.025,
+          0.024,
+          1.0
+        ],
+        "Metallic": 77,
+        "Roughness": 140,
+        "Alpha": 255
+      },
+      "Rigellian CPU | machined pale alloy": {
+        "Base Color": [
+          0.33,
+          0.43,
+          0.4,
+          1.0
+        ],
+        "Metallic": 194,
+        "Roughness": 87,
+        "Alpha": 255
+      },
+      "Rigellian CPU | pale green shell": {
+        "Base Color": [
+          0.18,
+          0.32,
+          0.28,
+          1.0
+        ],
+        "Metallic": 135,
+        "Roughness": 105,
+        "Alpha": 255
+      },
+      "Rigellian CPU | teal titanium": {
+        "Base Color": [
+          0.075,
+          0.23,
+          0.18,
+          1.0
+        ],
+        "Metallic": 145,
+        "Roughness": 110,
+        "Alpha": 255
+      },
+      "Rigellian refined crown | aged conductor brass": {
+        "Base Color": {
+          "size": [
+            256,
+            256
+          ],
+          "colour_space": "sRGB",
+          "pixels": "3b08a050b00e971aa4c922d35990dbee9d6405afdf5a8c4ec298d6ee2fe127cc"
+        },
+        "Metallic": 194,
+        "Roughness": {
+          "size": [
+            256,
+            256
+          ],
+          "colour_space": "Non-Color",
+          "pixels": "e9f233cb6647f385880ddbe7a4e9ba634fc67d08c3c8b05ec0210a429bb3e4e5"
+        },
+        "Alpha": 255
+      }
+    },
+    "clean_body_and_existing_crown_finish_preserved": true,
+    "contact_scope": "Existing ray checks and sampled vertex/face nearest-surface contact graph, not exhaustive solid or continuous-state proof."
+  },
+  "imported": {
+    "positive_closed_meshes": 75,
+    "body_bounds": [
+      -1.1829999685287476,
+      -1.1830004453659058,
+      0.0,
+      1.1829999685287476,
+      1.1829997301101685,
+      4.072499752044678
+    ],
+    "retained_cut_roof_well_and_seated_cooling_fins": true,
+    "retained_conformal_cap_and_open_neck_grille": true,
+    "crown": {
+      "left": {
+        "volume": 0.009972429392940095,
+        "middle_width": 0.14999999105930328,
+        "tip_width": 0.03790859878063202,
+        "taper_ratio": 3.9568856640499246,
+        "minimum_upper_gap": 0.18299999833106995
+      },
+      "right": {
+        "volume": 0.009972429625048927,
+        "middle_width": 0.14999999105930328,
+        "tip_width": 0.03790861368179321,
+        "taper_ratio": 3.956884108672785,
+        "minimum_upper_gap": 0.18299999833106995
+      }
+    },
+    "sampled_contact_graph": {
+      "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+      "tolerance": 0.0001,
+      "links": [
+        [
+          "CPU broad upper saucer",
+          "CPU crown brass seating ring"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU crown central conductor"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU crown solid mounting socket"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU exposed brass neck core"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU grille horizontal structural fin.004"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU pale conformal roof service cap"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.001"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.002"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.003"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.004"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.005"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.006"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.007"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.008"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.009"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.010"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU perimeter captive fastener.011"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU roof well inner sleeve"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU roof well recessed floor"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU saucer perimeter machined rim"
+        ],
+        [
+          "CPU broad upper saucer",
+          "CPU upper neck collar"
+        ],
+        [
+          "CPU broad upper saucer",
+          "RI01 refined crown arm left"
+        ],
+        [
+          "CPU broad upper saucer",
+          "RI01 refined crown arm right"
+        ],
+        [
+          "CPU crown brass seating ring",
+          "CPU crown solid mounting socket"
+        ],
+        [
+          "CPU crown brass seating ring",
+          "RI01 refined crown arm left"
+        ],
+        [
+          "CPU crown brass seating ring",
+          "RI01 refined crown arm right"
+        ],
+        [
+          "CPU crown central conductor",
+          "CPU crown central terminal"
+        ],
+        [
+          "CPU crown central conductor",
+          "CPU crown solid mounting socket"
+        ],
+        [
+          "CPU crown central conductor",
+          "RI01 refined crown arm left"
+        ],
+        [
+          "CPU crown central conductor",
+          "RI01 refined crown arm right"
+        ],
+        [
+          "CPU crown solid mounting socket",
+          "RI01 refined crown arm left"
+        ],
+        [
+          "CPU crown solid mounting socket",
+          "RI01 refined crown arm right"
+        ],
+        [
+          "CPU exposed brass neck core",
+          "CPU flared waisted foundation"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation circular service cap"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation circular service cap.001"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation circular service cap.002"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation ground lip"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.001"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.002"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.003"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.004"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.005"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.006"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.007"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.008"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.009"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.010"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.011"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.012"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.013"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.014"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.015"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.016"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.017"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.018"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.019"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.020"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.021"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.022"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.023"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.024"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.025"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.026"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.027"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.028"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.029"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.030"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation panel joint.031"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU foundation upper seam"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU lower neck collar"
+        ],
+        [
+          "CPU flared waisted foundation",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU foundation circular service cap",
+          "CPU foundation panel joint.029"
+        ],
+        [
+          "CPU foundation panel joint",
+          "CPU foundation panel joint.001"
+        ],
+        [
+          "CPU foundation panel joint.002",
+          "CPU foundation panel joint.003"
+        ],
+        [
+          "CPU foundation panel joint.004",
+          "CPU foundation panel joint.005"
+        ],
+        [
+          "CPU foundation panel joint.006",
+          "CPU foundation panel joint.007"
+        ],
+        [
+          "CPU foundation panel joint.008",
+          "CPU foundation panel joint.009"
+        ],
+        [
+          "CPU foundation panel joint.010",
+          "CPU foundation panel joint.011"
+        ],
+        [
+          "CPU foundation panel joint.012",
+          "CPU foundation panel joint.013"
+        ],
+        [
+          "CPU foundation panel joint.014",
+          "CPU foundation panel joint.015"
+        ],
+        [
+          "CPU foundation panel joint.016",
+          "CPU foundation panel joint.017"
+        ],
+        [
+          "CPU foundation panel joint.018",
+          "CPU foundation panel joint.019"
+        ],
+        [
+          "CPU foundation panel joint.020",
+          "CPU foundation panel joint.021"
+        ],
+        [
+          "CPU foundation panel joint.022",
+          "CPU foundation panel joint.023"
+        ],
+        [
+          "CPU foundation panel joint.024",
+          "CPU foundation panel joint.025"
+        ],
+        [
+          "CPU foundation panel joint.026",
+          "CPU foundation panel joint.027"
+        ],
+        [
+          "CPU foundation panel joint.028",
+          "CPU foundation panel joint.029"
+        ],
+        [
+          "CPU foundation panel joint.030",
+          "CPU foundation panel joint.031"
+        ],
+        [
+          "CPU grille horizontal structural fin",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU grille horizontal structural fin",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU grille horizontal structural fin",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU grille horizontal structural fin.001",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU grille horizontal structural fin.001",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU grille horizontal structural fin.001",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU grille horizontal structural fin.002",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU grille horizontal structural fin.002",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU grille horizontal structural fin.002",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU grille horizontal structural fin.003",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU grille horizontal structural fin.003",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU grille horizontal structural fin.003",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU grille horizontal structural fin.004",
+          "CPU grille side retaining rail"
+        ],
+        [
+          "CPU grille horizontal structural fin.004",
+          "CPU grille side retaining rail.001"
+        ],
+        [
+          "CPU grille horizontal structural fin.004",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU grille horizontal structural fin.004",
+          "CPU upper neck collar"
+        ],
+        [
+          "CPU grille side retaining rail",
+          "CPU lower neck collar"
+        ],
+        [
+          "CPU grille side retaining rail",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU grille side retaining rail",
+          "CPU upper neck collar"
+        ],
+        [
+          "CPU grille side retaining rail.001",
+          "CPU lower neck collar"
+        ],
+        [
+          "CPU grille side retaining rail.001",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU grille side retaining rail.001",
+          "CPU upper neck collar"
+        ],
+        [
+          "CPU lower neck collar",
+          "CPU neck with actual grille opening"
+        ],
+        [
+          "CPU neck with actual grille opening",
+          "CPU upper neck collar"
+        ],
+        [
+          "CPU roof well inner sleeve",
+          "CPU roof well recessed floor"
+        ],
+        [
+          "CPU roof well recessed floor",
+          "CPU well interior cooling fin"
+        ],
+        [
+          "CPU roof well recessed floor",
+          "CPU well interior cooling fin.001"
+        ],
+        [
+          "CPU roof well recessed floor",
+          "CPU well interior cooling fin.002"
+        ]
+      ],
+      "components": [
+        [
+          "CPU broad upper saucer",
+          "CPU crown brass seating ring",
+          "CPU crown central conductor",
+          "CPU crown central terminal",
+          "CPU crown solid mounting socket",
+          "CPU exposed brass neck core",
+          "CPU flared waisted foundation",
+          "CPU foundation circular service cap",
+          "CPU foundation circular service cap.001",
+          "CPU foundation circular service cap.002",
+          "CPU foundation ground lip",
+          "CPU foundation panel joint",
+          "CPU foundation panel joint.001",
+          "CPU foundation panel joint.002",
+          "CPU foundation panel joint.003",
+          "CPU foundation panel joint.004",
+          "CPU foundation panel joint.005",
+          "CPU foundation panel joint.006",
+          "CPU foundation panel joint.007",
+          "CPU foundation panel joint.008",
+          "CPU foundation panel joint.009",
+          "CPU foundation panel joint.010",
+          "CPU foundation panel joint.011",
+          "CPU foundation panel joint.012",
+          "CPU foundation panel joint.013",
+          "CPU foundation panel joint.014",
+          "CPU foundation panel joint.015",
+          "CPU foundation panel joint.016",
+          "CPU foundation panel joint.017",
+          "CPU foundation panel joint.018",
+          "CPU foundation panel joint.019",
+          "CPU foundation panel joint.020",
+          "CPU foundation panel joint.021",
+          "CPU foundation panel joint.022",
+          "CPU foundation panel joint.023",
+          "CPU foundation panel joint.024",
+          "CPU foundation panel joint.025",
+          "CPU foundation panel joint.026",
+          "CPU foundation panel joint.027",
+          "CPU foundation panel joint.028",
+          "CPU foundation panel joint.029",
+          "CPU foundation panel joint.030",
+          "CPU foundation panel joint.031",
+          "CPU foundation upper seam",
+          "CPU grille horizontal structural fin",
+          "CPU grille horizontal structural fin.001",
+          "CPU grille horizontal structural fin.002",
+          "CPU grille horizontal structural fin.003",
+          "CPU grille horizontal structural fin.004",
+          "CPU grille side retaining rail",
+          "CPU grille side retaining rail.001",
+          "CPU lower neck collar",
+          "CPU neck with actual grille opening",
+          "CPU pale conformal roof service cap",
+          "CPU perimeter captive fastener",
+          "CPU perimeter captive fastener.001",
+          "CPU perimeter captive fastener.002",
+          "CPU perimeter captive fastener.003",
+          "CPU perimeter captive fastener.004",
+          "CPU perimeter captive fastener.005",
+          "CPU perimeter captive fastener.006",
+          "CPU perimeter captive fastener.007",
+          "CPU perimeter captive fastener.008",
+          "CPU perimeter captive fastener.009",
+          "CPU perimeter captive fastener.010",
+          "CPU perimeter captive fastener.011",
+          "CPU roof well inner sleeve",
+          "CPU roof well recessed floor",
+          "CPU saucer perimeter machined rim",
+          "CPU upper neck collar",
+          "CPU well interior cooling fin",
+          "CPU well interior cooling fin.001",
+          "CPU well interior cooling fin.002",
+          "RI01 refined crown arm left",
+          "RI01 refined crown arm right"
+        ]
+      ],
+      "isolated": []
+    },
+    "texture_pixels_and_uvs": {
+      "Rigellian CPU | blue green service inset": {
+        "Base Color": [
+          0.025,
+          0.09,
+          0.105,
+          1.0
+        ],
+        "Metallic": 115,
+        "Roughness": 79,
+        "Alpha": 255
+      },
+      "Rigellian CPU | brass conductor alloy": {
+        "Base Color": [
+          0.47,
+          0.29,
+          0.07,
+          1.0
+        ],
+        "Metallic": 184,
+        "Roughness": 94,
+        "Alpha": 255
+      },
+      "Rigellian CPU | deep equipment well": {
+        "Base Color": [
+          0.012,
+          0.025,
+          0.024,
+          1.0
+        ],
+        "Metallic": 77,
+        "Roughness": 140,
+        "Alpha": 255
+      },
+      "Rigellian CPU | machined pale alloy": {
+        "Base Color": [
+          0.33,
+          0.43,
+          0.4,
+          1.0
+        ],
+        "Metallic": 194,
+        "Roughness": 87,
+        "Alpha": 255
+      },
+      "Rigellian CPU | pale green shell": {
+        "Base Color": [
+          0.18,
+          0.32,
+          0.28,
+          1.0
+        ],
+        "Metallic": 135,
+        "Roughness": 105,
+        "Alpha": 255
+      },
+      "Rigellian CPU | teal titanium": {
+        "Base Color": [
+          0.075,
+          0.23,
+          0.18,
+          1.0
+        ],
+        "Metallic": 145,
+        "Roughness": 110,
+        "Alpha": 255
+      },
+      "Rigellian refined crown | aged conductor brass": {
+        "Base Color": {
+          "size": [
+            256,
+            256
+          ],
+          "colour_space": "sRGB",
+          "pixels": "3b08a050b00e971aa4c922d35990dbee9d6405afdf5a8c4ec298d6ee2fe127cc"
+        },
+        "Metallic": 194,
+        "Roughness": {
+          "size": [
+            256,
+            256
+          ],
+          "colour_space": "Non-Color",
+          "pixels": "e9f233cb6647f385880ddbe7a4e9ba634fc67d08c3c8b05ec0210a429bb3e4e5"
+        },
+        "Alpha": 255
+      }
+    },
+    "clean_body_and_existing_crown_finish_preserved": true,
+    "contact_scope": "Existing ray checks and sampled vertex/face nearest-surface contact graph, not exhaustive solid or continuous-state proof."
+  },
+  "source_uv_comparison": {
+    "maximum_uv_corner_error": 0.0,
+    "maximum_sampled_surface_distance": 0.0,
+    "matched_directed_corners": 704,
+    "position_tolerance": 1e-05,
+    "uv_tolerance": 1e-05,
+    "scope": "All unique material/UV corner samples projected bidirectionally onto corresponding triangles, with barycentric UV interpolation and repeat-wrap equivalence; not a continuous UV-field proof."
+  },
+  "exported_uv_comparison": {
+    "maximum_uv_corner_error": 4.577637824354497e-08,
+    "maximum_sampled_surface_distance": 0.0,
+    "matched_directed_corners": 704,
+    "position_tolerance": 1e-05,
+    "uv_tolerance": 1e-05,
+    "scope": "All unique material/UV corner samples projected bidirectionally onto corresponding triangles, with barycentric UV interpolation and repeat-wrap equivalence; not a continuous UV-field proof."
+  },
+  "maximum_bidirectional_surface_error": 4.915124804938387e-07,
+  "renders": {
+    "source-front-quarter.png": "0137e3b50b03ae7a7cb386c66d00f75f48aae7af67281e9b6a7f5b18728dcde8",
+    "source-front.png": "3cf4fbc0035760ab95109cf27fc411cf47c6b266a257563f8c0a771a23046a5a",
+    "source-rear-quarter.png": "3719704ed965c3058587ce91b444ca4c4d6ee66176498f3a168e775352690b7b",
+    "native-front-quarter.png": "0137e3b50b03ae7a7cb386c66d00f75f48aae7af67281e9b6a7f5b18728dcde8",
+    "native-front.png": "3cf4fbc0035760ab95109cf27fc411cf47c6b266a257563f8c0a771a23046a5a",
+    "native-rear-quarter.png": "3719704ed965c3058587ce91b444ca4c4d6ee66176498f3a168e775352690b7b",
+    "imported-front-quarter.png": "5b505c784e9752963b93b291eccbb0e10b1af4c056f5a16a4b8a8d6077d2cfb9",
+    "imported-front.png": "4388f7a650e1813f57faf7179547db47034dc18ccd93931a9848086b00e53e81",
+    "imported-rear-quarter.png": "8abefe04f24b2f4e91c40b06bf35e91ac8f835c539a63948e6cdb479b5f2e1cf"
+  },
+  "triangles": 40636,
+  "meshes": 75,
+  "protected_parts": [
+    "CPU broad upper saucer",
+    "CPU crown brass seating ring",
+    "CPU crown central conductor",
+    "CPU crown central terminal",
+    "CPU crown solid mounting socket",
+    "CPU exposed brass neck core",
+    "CPU flared waisted foundation",
+    "CPU foundation circular service cap",
+    "CPU foundation circular service cap.001",
+    "CPU foundation circular service cap.002",
+    "CPU foundation ground lip",
+    "CPU foundation panel joint",
+    "CPU foundation panel joint.001",
+    "CPU foundation panel joint.002",
+    "CPU foundation panel joint.003",
+    "CPU foundation panel joint.004",
+    "CPU foundation panel joint.005",
+    "CPU foundation panel joint.006",
+    "CPU foundation panel joint.007",
+    "CPU foundation panel joint.008",
+    "CPU foundation panel joint.009",
+    "CPU foundation panel joint.010",
+    "CPU foundation panel joint.011",
+    "CPU foundation panel joint.012",
+    "CPU foundation panel joint.013",
+    "CPU foundation panel joint.014",
+    "CPU foundation panel joint.015",
+    "CPU foundation panel joint.016",
+    "CPU foundation panel joint.017",
+    "CPU foundation panel joint.018",
+    "CPU foundation panel joint.019",
+    "CPU foundation panel joint.020",
+    "CPU foundation panel joint.021",
+    "CPU foundation panel joint.022",
+    "CPU foundation panel joint.023",
+    "CPU foundation panel joint.024",
+    "CPU foundation panel joint.025",
+    "CPU foundation panel joint.026",
+    "CPU foundation panel joint.027",
+    "CPU foundation panel joint.028",
+    "CPU foundation panel joint.029",
+    "CPU foundation panel joint.030",
+    "CPU foundation panel joint.031",
+    "CPU foundation upper seam",
+    "CPU grille horizontal structural fin",
+    "CPU grille horizontal structural fin.001",
+    "CPU grille horizontal structural fin.002",
+    "CPU grille horizontal structural fin.003",
+    "CPU grille horizontal structural fin.004",
+    "CPU grille side retaining rail",
+    "CPU grille side retaining rail.001",
+    "CPU lower neck collar",
+    "CPU neck with actual grille opening",
+    "CPU pale conformal roof service cap",
+    "CPU perimeter captive fastener",
+    "CPU perimeter captive fastener.001",
+    "CPU perimeter captive fastener.002",
+    "CPU perimeter captive fastener.003",
+    "CPU perimeter captive fastener.004",
+    "CPU perimeter captive fastener.005",
+    "CPU perimeter captive fastener.006",
+    "CPU perimeter captive fastener.007",
+    "CPU perimeter captive fastener.008",
+    "CPU perimeter captive fastener.009",
+    "CPU perimeter captive fastener.010",
+    "CPU perimeter captive fastener.011",
+    "CPU roof well inner sleeve",
+    "CPU roof well recessed floor",
+    "CPU saucer perimeter machined rim",
+    "CPU upper neck collar",
+    "CPU well interior cooling fin",
+    "CPU well interior cooling fin.001",
+    "CPU well interior cooling fin.002",
+    "RI01 refined crown arm left",
+    "RI01 refined crown arm right"
+  ],
+  "protected_surface_error": 0.0,
+  "native_world_bounds": [
+    -1.1829999685287476,
+    -1.183000087738037,
+    0.0,
+    1.1829999685287476,
+    1.182999849319458,
+    4.072499752044678
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "imported_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "material_count": 7,
+  "embedded_images": 2,
+  "clips": [],
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

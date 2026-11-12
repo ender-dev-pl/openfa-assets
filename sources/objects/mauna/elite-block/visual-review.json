@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/136",
+  "binaries": {
+    "blend": "819bbb63419f2cc4dcd47a2fffe05098e11bab63a4ef313eb943d2fe7fd84deb",
+    "glb": "bba1235035330000f029e280b3062763b690b99a7eb819abfffa31924ad8010a"
+  },
+  "runtime_report_sha256": "4cc00fe9553c48414d19091f31dd693869680a46cf27c139d6af531dd62ce21d",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0004268610098906819,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00017866959868059374,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00023381134764407233,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn07-review-1.png",
+      "sha256": "7f9ace5d502efdf0c1e7090d8e76ea9b7e578f5b44df296139f8496451772881",
+      "prompt": "sources/docs/reconstruction/models/mn07-concept-prompt-1.txt",
+      "feedback": "Selected tallsteppedconcreteblock,bluebrokenfrontstripe/rightLfield,two frontbrasspanels,smalltowermast/fivebrasspins. Ownsurfacepixelsgovern44smallpointreading/stackedpointlayout overelongatedconceptlights,andpoint-bearing tallerpale mast/shortercompanion. Angularpinchoice/hiddenwalls/depths authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "819bbb63419f2cc4dcd47a2fffe05098e11bab63a4ef313eb943d2fe7fd84deb",
+        "glb": "bba1235035330000f029e280b3062763b690b99a7eb819abfffa31924ad8010a"
+      },
+      "runtime_report_sha256": "4cc00fe9553c48414d19091f31dd693869680a46cf27c139d6af531dd62ce21d",
+      "status": "accepted_asset_only",
+      "finding": "Viewed actual source/concept and independent GLB whole/front/rear/both details. Tall stepped concrete silhouette, broken blue front stripe and right L, two brass dark-centred panels, five unequal roof pins and split mast remain legible. Actual source governs 44 small points across 18 fields instead of elongated concept bars. Three points are on the taller pale mast. Runtime passes 4038 triangles,12 closed positive meshes,6 materials,9 maps; real blind fields, seated backings/panes/panels, roof/pin/mast supports,L-profile negative control, shallow chips, decoded texture pixels and render pairs verified.",
+      "limitations": [
+        "Exact point grid is an authored reading of low-resolution fields; not a calibrated count of rooms. Hidden rear walls, blind depths, angular pins and cell-relative dimensions authored.",
+        "Steady low amber emission is a material choice, not a recovered lighting cycle. Generic PB16/PB24/ST12 presentations are function context, not Mauna anatomy or motion.",
+        "Camera approximately matches source. Final user acceptance and game integration remain separate."
+      ]
+    }
+  ],
+  "final_review": "Viewed actual source/concept and independent GLB whole/front/rear/both details. Tall stepped concrete silhouette, broken blue front stripe and right L, two brass dark-centred panels, five unequal roof pins and split mast remain legible. Actual source governs 44 small points across 18 fields instead of elongated concept bars. Three points are on the taller pale mast. Runtime passes 4038 triangles,12 closed positive meshes,6 materials,9 maps; real blind fields, seated backings/panes/panels, roof/pin/mast supports,L-profile negative control, shallow chips, decoded texture pixels and render pairs verified.",
+  "limitations": [
+    "Exact point grid is an authored reading of low-resolution fields; not a calibrated count of rooms. Hidden rear walls, blind depths, angular pins and cell-relative dimensions authored.",
+    "Steady low amber emission is a material choice, not a recovered lighting cycle. Generic PB16/PB24/ST12 presentations are function context, not Mauna anatomy or motion.",
+    "Camera approximately matches source. Final user acceptance and game integration remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

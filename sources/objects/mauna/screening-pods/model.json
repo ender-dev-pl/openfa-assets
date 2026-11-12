@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/145",
+  "key": "MN16",
+  "name": "Screening Pods",
+  "culture": "mauna",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 10,
+  "construction_updates": 34,
+  "triangles": 1788,
+  "triangle_budget": 30000,
+  "mesh_nodes": 7,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mauna_screening_pods.py",
+  "author_sha256": "c8751edde56c1366f157312d79ed136351f5e5ac6aebc5be678dc69e34f9feef",
+  "binaries": {
+    "blend": "77c45ba74624569c0482f0d7a686250b9fbab2296c64920defe35528304ce213",
+    "glb": "82fe54576aec50f0d8f6faaab0e96c21158b8f52231fe94d2bd766b4f16c6e48"
+  },
+  "textures": {
+    "cast-concrete-colour.png": "fd7d68279dec0601f4da7c4077171f7ff7f9957e880c2c9358e4464d1b11846c",
+    "cast-service-normal.png": "efa9f1d5b94deadb49f9c7617ea2a38f1106dbd649f2717e754b56d756ceffff",
+    "concrete-orm.png": "9fbcc18704d18d343fe10f513990089450be66d82e2c91cb60cf615386ce65d1",
+    "marking-red-colour.png": "c28258dd6b8e3cfe3aac4ca61e3c8033b087efed1a6a7de3f6114d2ff9b2f66b",
+    "metal-orm.png": "e0e48d36668fa49791496a22168d88e4c69864ddcdb0be6d7650addc2c851271",
+    "pale-alloy-colour.png": "f71a50f6c3342ccaf3b36fad0a506d895dfef4b62f354ec720211ab93f2b8b71"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Screening Pods dark front field 0",
+      "body": "Screening Pods lower projecting front",
+      "point": [
+        -0.30000001192092896,
+        -0.7599999904632568,
+        0.25
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.032
+    },
+    {
+      "object": "Screening Pods dark front field 1",
+      "body": "Screening Pods lower projecting front",
+      "point": [
+        0.30000001192092896,
+        -0.7599999904632568,
+        0.25
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.032
+    }
+  ],
+  "attachment_contacts": [
+    {
+      "object": "Screening Pods upper cast body",
+      "support": "Screening Pods grounded low foot",
+      "point": [
+        0.4,
+        0.3,
+        0.025
+      ]
+    },
+    {
+      "object": "Screening Pods lower projecting front",
+      "support": "Screening Pods grounded low foot",
+      "point": [
+        0.4,
+        -0.6,
+        0.025
+      ]
+    },
+    {
+      "object": "Screening Pods upper cast body",
+      "support": "Screening Pods lower projecting front",
+      "point": [
+        0.4,
+        -0.36,
+        0.25
+      ]
+    },
+    {
+      "object": "Screening Pods pale side flute 0",
+      "support": "Screening Pods upper cast body",
+      "point": [
+        0.645,
+        -0.29,
+        0.43
+      ]
+    },
+    {
+      "object": "Screening Pods pale side flute 1",
+      "support": "Screening Pods upper cast body",
+      "point": [
+        0.645,
+        0.12,
+        0.43
+      ]
+    },
+    {
+      "object": "Screening Pods pale side flute 2",
+      "support": "Screening Pods upper cast body",
+      "point": [
+        0.645,
+        0.49,
+        0.43
+      ]
+    },
+    {
+      "object": "Screening Pods broad red right stripe",
+      "support": "Screening Pods upper cast body",
+      "point": [
+        0.649,
+        -0.08,
+        0.43
+      ]
+    },
+    {
+      "object": "Screening Pods straight seated post 0",
+      "support": "Screening Pods upper cast body",
+      "point": [
+        -0.4,
+        -0.25,
+        0.855
+      ]
+    },
+    {
+      "object": "Screening Pods red emitter collar 0",
+      "support": "Screening Pods straight seated post 0",
+      "point": [
+        -0.4,
+        -0.25,
+        1.745
+      ]
+    },
+    {
+      "object": "Screening Pods opaque luminous core 0",
+      "support": "Screening Pods red emitter collar 0",
+      "point": [
+        -0.4,
+        -0.25,
+        1.765
+      ]
+    },
+    {
+      "object": "Screening Pods straight seated post 1",
+      "support": "Screening Pods upper cast body",
+      "point": [
+        0,
+        -0.25,
+        0.855
+      ]
+    },
+    {
+      "object": "Screening Pods red emitter collar 1",
+      "support": "Screening Pods straight seated post 1",
+      "point": [
+        0,
+        -0.25,
+        1.745
+      ]
+    },
+    {
+      "object": "Screening Pods opaque luminous core 1",
+      "support": "Screening Pods red emitter collar 1",
+      "point": [
+        0,
+        -0.25,
+        1.765
+      ]
+    },
+    {
+      "object": "Screening Pods straight seated post 2",
+      "support": "Screening Pods upper cast body",
+      "point": [
+        0.4,
+        -0.25,
+        0.855
+      ]
+    },
+    {
+      "object": "Screening Pods red emitter collar 2",
+      "support": "Screening Pods straight seated post 2",
+      "point": [
+        0.4,
+        -0.25,
+        1.745
+      ]
+    },
+    {
+      "object": "Screening Pods opaque luminous core 2",
+      "support": "Screening Pods red emitter collar 2",
+      "point": [
+        0.4,
+        -0.25,
+        1.765
+      ]
+    },
+    {
+      "object": "Screening Pods open triangular roof bracket 0",
+      "support": "Screening Pods upper cast body",
+      "point": [
+        0.23,
+        0.4,
+        0.852
+      ]
+    },
+    {
+      "object": "Screening Pods open triangular roof bracket 1",
+      "support": "Screening Pods upper cast body",
+      "point": [
+        0.48,
+        0.4,
+        0.852
+      ]
+    }
+  ],
+  "part_batches": {
+    "Screening Pods pale side flute 0": "Screening Pods eight supported steel parts",
+    "Screening Pods pale side flute 1": "Screening Pods eight supported steel parts",
+    "Screening Pods pale side flute 2": "Screening Pods eight supported steel parts",
+    "Screening Pods straight seated post 0": "Screening Pods eight supported steel parts",
+    "Screening Pods straight seated post 1": "Screening Pods eight supported steel parts",
+    "Screening Pods straight seated post 2": "Screening Pods eight supported steel parts",
+    "Screening Pods open triangular roof bracket 0": "Screening Pods eight supported steel parts",
+    "Screening Pods open triangular roof bracket 1": "Screening Pods eight supported steel parts",
+    "Screening Pods broad red right stripe": "Screening Pods source red stripe and three collars",
+    "Screening Pods red emitter collar 0": "Screening Pods source red stripe and three collars",
+    "Screening Pods red emitter collar 1": "Screening Pods source red stripe and three collars",
+    "Screening Pods red emitter collar 2": "Screening Pods source red stripe and three collars",
+    "Screening Pods opaque luminous core 0": "Screening Pods three steady opaque emitter cores",
+    "Screening Pods opaque luminous core 1": "Screening Pods three steady opaque emitter cores",
+    "Screening Pods opaque luminous core 2": "Screening Pods three steady opaque emitter cores",
+    "Screening Pods dark front field 0": "Screening Pods two blind front backings",
+    "Screening Pods dark front field 1": "Screening Pods two blind front backings"
+  },
+  "physical_chips": [
+    {
+      "body": "Screening Pods upper cast body",
+      "point": [
+        -0.550000011920929,
+        0.44999998807907104,
+        0.8600000143051147
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "body": "Screening Pods grounded low foot",
+      "point": [
+        0.5199999809265137,
+        -0.8299999833106995,
+        0.02500000037252903
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ],
+  "steady_tip_emission": {
+    "colour": [
+      0.9,
+      0.58,
+      0.16
+    ],
+    "strength": 3.5,
+    "opaque": true,
+    "core_count": 3,
+    "scope": "Authored steady preservation of warm bright own source caps; no recovered pulse timing or client bloom guarantee."
+  },
+  "interpretation": [
+    "Own stepped block, two broad front recesses, right red stripe/flutes, three straight equal-height roof posts with separated warm caps and two lower open brackets govern anatomy.",
+    "Cap construction, hidden walls, recess depths, bracket engineering and cell-relative dimensions are authored. Generic PB10/ST23 diamond-aerial motion and timings are not Mauna operation."
+  ],
+  "scale_contract": "2x2 placement footprint, ground0, +Z up/-Y front. Native dimensions are authored; no metric recovery or calibrated client scale.",
+  "concept_review": "sources/docs/reconstruction/models/mn16-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

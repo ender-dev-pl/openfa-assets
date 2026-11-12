@@ -1,0 +1,32 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/153",
+  "key": "AC03",
+  "name": "Environmental Control",
+  "culture": "achaean",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 35,
+  "construction_updates": 36,
+  "triangle_budget": 30000,
+  "materials": 5,
+  "structure_checks": "checks_achaean_environmental",
+  "state_contract": "Static environmental control and emergency reserves. All catalogue phases are reveal/highlight; no operational timing established. Construction/damage/activity mappings remain client integration.",
+  "scale_contract": "PlacementRoot at ground Z=0, local -Y front/+Z up; game tile/world scale requires calibration.",
+  "mesh_nodes": 37,
+  "triangles": 13820,
+  "author": "sources/tools/blender/remaster_achaean_environmental.py",
+  "author_sha256": "635888ece53607b67d99e150526a499fcc831d05fb6d3ecca3b12e82c6c62af7",
+  "helpers": {
+    "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+  },
+  "binaries": {
+    "blend": "e971dd078ef2ab0a0aaa4fa85ff6c86eb65bce429f13a31d103e4949700f674a",
+    "glb": "fc21a69a7fa5aa7f42d4af568ea1021e6c24b9a69efc868c9798fd68ec05edb8"
+  },
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

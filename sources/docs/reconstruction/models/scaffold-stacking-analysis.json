@@ -1,0 +1,200 @@
+{
+  "issue": 983,
+  "scope": "Analytical fresh descriptor-chain reconstruction from the current decompile; not an executed original binary or game-runtime implementation",
+  "source_sha256": {
+    "artifacts/fragile-le-decompilation/FRAGILE.LE.decompiled.c": "13a42be3d8f5f544903dc0d97994ca640a3c5f1228b9c13e37006e2446cc4911",
+    "src/OpenFA.Assets/FrontEnd/LegacySurfaceObjectRenderer.cs": "ae77e8bc9b6ac515f3e8a8595591ce214d41b6690a26976f07ed47c8ba245212",
+    "src/OpenFA.Core/Presentation/LegacyConstructionSpriteFrameSelector.cs": "c8ffe6ddad4782c21120e19f8efb04f4c73b773059f096a1544ebd3c022f954f",
+    "tools/blender/analyse_scaffold_stacking.py": "ce2601e0fcebfb1b065bfb3910e5e6f7611ffccfea83624268fdde811f3389e3",
+    "tools/blender/test_scaffold_stacking.py": "84c8fc076acf33b343baf94c13adbe758fd565beedc631cd918fc8f08d02561e"
+  },
+  "function_addresses": {
+    "construction_update": "0x449F0",
+    "ensure_child": "0x44990",
+    "create_pair": "0x3DB90",
+    "surface_update": "0x450F0"
+  },
+  "observed_operations": [
+    "Stage from constructionUpdates minus decompiled signed remaining counter plus one; clamp to at least one and resource byte at 0xE6276 + globalType*0x14",
+    "Per-tier frame capacity 32 >> BuildingDefinitionsByGlobalType[globalType*0x14] for globalType < 40, otherwise 2",
+    "Consume current descriptor frame; advance to capacity; allocate or reuse linked same-resource child at frame one for remainder",
+    "Child screen-Y field offset 0x10 subtracts capacity*4*256*effectiveScale; effectiveScale=((scaleByte-1)&255)+1",
+    "On completion the surface updater replaces the construction resource with the completed building resource and removes same-resource child descriptors"
+  ],
+  "cases": [
+    {
+      "label": "synthetic-alien-stage-1",
+      "inputs": {
+        "completed_updates": 0,
+        "remaining_updates": 0,
+        "resource_limit": 255,
+        "frames_per_tier": 2,
+        "scale_byte": 0
+      },
+      "chain": [
+        {
+          "frame": 1,
+          "screen_y_offset_fixed": 0,
+          "screen_y_offset_pixels": 0.0
+        }
+      ]
+    },
+    {
+      "label": "synthetic-alien-stage-2",
+      "inputs": {
+        "completed_updates": 1,
+        "remaining_updates": 0,
+        "resource_limit": 255,
+        "frames_per_tier": 2,
+        "scale_byte": 0
+      },
+      "chain": [
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": 0,
+          "screen_y_offset_pixels": 0.0
+        }
+      ]
+    },
+    {
+      "label": "synthetic-alien-stage-3",
+      "inputs": {
+        "completed_updates": 2,
+        "remaining_updates": 0,
+        "resource_limit": 255,
+        "frames_per_tier": 2,
+        "scale_byte": 0
+      },
+      "chain": [
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": 0,
+          "screen_y_offset_pixels": 0.0
+        },
+        {
+          "frame": 1,
+          "screen_y_offset_fixed": -524288,
+          "screen_y_offset_pixels": -8.0
+        }
+      ]
+    },
+    {
+      "label": "synthetic-alien-stage-4",
+      "inputs": {
+        "completed_updates": 3,
+        "remaining_updates": 0,
+        "resource_limit": 255,
+        "frames_per_tier": 2,
+        "scale_byte": 0
+      },
+      "chain": [
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": 0,
+          "screen_y_offset_pixels": 0.0
+        },
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": -524288,
+          "screen_y_offset_pixels": -8.0
+        }
+      ]
+    },
+    {
+      "label": "synthetic-alien-stage-5",
+      "inputs": {
+        "completed_updates": 4,
+        "remaining_updates": 0,
+        "resource_limit": 255,
+        "frames_per_tier": 2,
+        "scale_byte": 0
+      },
+      "chain": [
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": 0,
+          "screen_y_offset_pixels": 0.0
+        },
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": -524288,
+          "screen_y_offset_pixels": -8.0
+        },
+        {
+          "frame": 1,
+          "screen_y_offset_fixed": -1048576,
+          "screen_y_offset_pixels": -16.0
+        }
+      ]
+    },
+    {
+      "label": "synthetic-alien-stage-6",
+      "inputs": {
+        "completed_updates": 5,
+        "remaining_updates": 0,
+        "resource_limit": 255,
+        "frames_per_tier": 2,
+        "scale_byte": 0
+      },
+      "chain": [
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": 0,
+          "screen_y_offset_pixels": 0.0
+        },
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": -524288,
+          "screen_y_offset_pixels": -8.0
+        },
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": -1048576,
+          "screen_y_offset_pixels": -16.0
+        }
+      ]
+    },
+    {
+      "label": "synthetic-alien-stage-7",
+      "inputs": {
+        "completed_updates": 6,
+        "remaining_updates": 0,
+        "resource_limit": 255,
+        "frames_per_tier": 2,
+        "scale_byte": 0
+      },
+      "chain": [
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": 0,
+          "screen_y_offset_pixels": 0.0
+        },
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": -524288,
+          "screen_y_offset_pixels": -8.0
+        },
+        {
+          "frame": 2,
+          "screen_y_offset_fixed": -1048576,
+          "screen_y_offset_pixels": -16.0
+        },
+        {
+          "frame": 1,
+          "screen_y_offset_fixed": -1572864,
+          "screen_y_offset_pixels": -24.0
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    "Physical 3D repeat pitch and projection calibration",
+    "ARS2 frame-zero composition and original selection",
+    "Exact owner/culture resource selection beyond current OpenFA definition mapping",
+    "Corrupted/nonmonotonic-chain behavior and resource allocation exhaustion"
+  ],
+  "recommendation": "Author scaffold families as reusable base, repeatable tier and terminal pieces with discrete stage variants; represent stacking in model/presenter state, never by renderer-generated fake simulation or stretching whole geometry",
+  "runtime_changed": false,
+  "final_visual_acceptance": false,
+  "resolved_in": "docs/reconstruction/models/scaffold-stage-limits.json"
+}

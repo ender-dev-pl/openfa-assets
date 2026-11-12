@@ -1,0 +1,104 @@
+{
+  "issue": 969,
+  "id": "openfa:building/legacy/040",
+  "name": "Central Unit",
+  "culture": "rigellian",
+  "global_type": 40,
+  "footprint": [
+    3,
+    3
+  ],
+  "surface_source": {
+    "archive": "../legacy/_B/_B",
+    "archive_sha256": "9487bad1a98c10ca0d7118549fe00ffacf4db9c4f9d9a794f942ba6d83d7be7e",
+    "entry": "RI01.256",
+    "source_sha256": "d7e2a7e0e8934ecfa051a6062654ebaa70e3de80ca3476c519663472a9658138",
+    "palette": "embedded VGA, flags masked and 6-bit channels expanded",
+    "palette_rgb_sha256": "d411f00fdff9ee6b5b86e107e5ff0d3d58d804258d38084473c93fdf5700fdde",
+    "transparent_index": 0,
+    "frames": [
+      {
+        "index": 0,
+        "role": "ground/footprint layer",
+        "size": [
+          49,
+          30
+        ],
+        "crop": [
+          132,
+          83,
+          49,
+          30
+        ],
+        "indexed_sha256": "2fcf8ab282aa419b8950d1c076356122aacd1b7b44ad3d21dfe44e027fb16c54",
+        "png": "artifacts/rigellian-cpu-reference-study/surface-00.png",
+        "png_sha256": "2bcec13e65b5e333a17d1c02ff42fcb8d430c573d4a5035bbb79a424aa2d3813"
+      },
+      {
+        "index": 1,
+        "role": "complete surface body",
+        "size": [
+          34,
+          67
+        ],
+        "crop": [
+          143,
+          39,
+          34,
+          67
+        ],
+        "indexed_sha256": "b0ba257f5982f6214433f748395194201873c24541d8238f52526b63a4358059",
+        "png": "artifacts/rigellian-cpu-reference-study/surface-01.png",
+        "png_sha256": "bb26611b7de26b132d1ea26550156e75b8e912c6de77def445325558d5e5f558"
+      }
+    ]
+  },
+  "catalogue_source": {
+    "path": "../legacy/_ZOOM/RI01.VID",
+    "source_sha256": "93f8d14ff05cbbb8c2fe37e2fd04cb81ef9797cd45a8c00439da639182b359ca",
+    "frames": 41,
+    "selected": [
+      {
+        "index": 0,
+        "png": "artifacts/rigellian-cpu-reference-study/hologram/frames/000.png",
+        "png_sha256": "80dd46b0fc2c0099a12985ca5c4c96cd7fa4dbc1a07e174c9386dcf582e0f35e"
+      },
+      {
+        "index": 10,
+        "png": "artifacts/rigellian-cpu-reference-study/hologram/frames/010.png",
+        "png_sha256": "5e35f7fa822d089fca2d2d47c3cfe3c5f41bf666da6ad8bedea48203f0d46eae"
+      },
+      {
+        "index": 20,
+        "png": "artifacts/rigellian-cpu-reference-study/hologram/frames/020.png",
+        "png_sha256": "8ad33f90cf612dac2757ed03cbed6b6a975533888069d12ca05d3283aaef2eb3"
+      },
+      {
+        "index": 30,
+        "png": "artifacts/rigellian-cpu-reference-study/hologram/frames/030.png",
+        "png_sha256": "e81a0edf4de5a6b76f07dac1f43feff10aa6eb7835e5f8ffb08d69c667e06a05"
+      },
+      {
+        "index": 40,
+        "png": "artifacts/rigellian-cpu-reference-study/hologram/frames/040.png",
+        "png_sha256": "5b0a43242d24972b4f16d0da9b0187f5ed76d59d6a37c1fb783669dfb04eab79"
+      }
+    ],
+    "interpretation": "Hologram/presentation phases; not established as independent spatial rotations"
+  },
+  "source_sha256": {
+    "content/standard/catalogues/legacy-buildings.json": "a1dc323c0798e4ac5a863f21b4ba13fad821f5b6836cf60f32c728e75225b519",
+    "content/standard/presentation/legacy-domain.json": "bd9230f719807a117b66127cc5e9b00ff56977b5760cc523de53f4a1c3b798a2"
+  },
+  "decoder_sha256": {
+    "tools/fragile256.py": "91a73b25be4c60aad4f98b8de1d13a37240f7d6547c899cb1a56e98e7f9a0be3",
+    "tools/fragile_vid.py": "b5eb2bfd925778259aebc13314f392bcbe6f681cc5d0d10c564f77ee4bb6ccc0",
+    "FRAGILE.EXE": "f87ec69b4431f06c75f72f1496249981521adb1269a7aeeed032cf77d6d17852"
+  },
+  "unresolved": [
+    "Hidden sides and underside",
+    "Exact 3D dimensions/projection",
+    "Construction and damage states",
+    "Final visual acceptance"
+  ]
+}

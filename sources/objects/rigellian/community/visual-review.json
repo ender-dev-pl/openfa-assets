@@ -1,0 +1,70 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/043",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri04-review-1.png",
+    "sha256": "8740447ea7697e40de311a85e96b339823f30853064bdf7101cbbc129e6497fb",
+    "prompt": "sources/docs/reconstruction/models/ri04-concept-prompt-1.txt",
+    "verdict": "Retain two jade pods, six upper/two lower gold fittings, pale lower ribs/red core and open three-prong crown. Concept has a broader stepped foot and heavier side cheeks; exact thickness, seams and lower equipment are interpretations, not recovered dimensions."
+  },
+  "legacy": {
+    "body_sha256": "8dd0e645c0d32e7ac4426eba546657566bd8124b86d3b7a26ee98538a1a96fee",
+    "catalogue_colour_phase20_sha256": "587a1f353849c9bbe9b660a9a3bb7d2775c785d52f686a9766aa0dc932ba4f34",
+    "functional_record": 904,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "894f48068c70a3ffdddd99ec3a3b6d2f1dd1e44e7eaa706ad9cf688a2f23272d",
+    "glb": "410f73be8376a170961049ff1a1bb4601865b3685cb16bd9dc3509d1e5d48833"
+  },
+  "runtime_report_sha256": "9c9c525b43b39aa57288177e5408e9c4eda1042122e591f9a85278227c8a3de9",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0198516845703125,
+        0.018464830186631944,
+        0.021413167317708332,
+        1.3563368055555555e-05
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "margin": 57
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.017184787326388888,
+        0.015901353624131944,
+        0.017077975802951388,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 54
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.014711168077256944,
+        0.014567057291666666,
+        0.016847398546006944,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 59
+    }
+  },
+  "feedback": [
+    "Actual GLB preserves the original two-pod stack, staggered gold fittings, pale lower equipment/red core and stepped open gold crown.",
+    "The latest crown refinement is retained; protected body/waist/crown surfaces match the original evaluated geometry with measured error0.0. Existing body UVs and complete colour/roughness pixels are verified in native and imported GLB.",
+    "Concept uses broader, heavier crown shoulders and a wider pale lower insert than the legacy-guided established model. Those proportions are not adopted as new geometric authority.",
+    "Reduction is limited to ground rim, waist seam, gold foundation and mounting lip. It does not add emission, infer a crown function or invent a moving mechanism from catalogue highlighting."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

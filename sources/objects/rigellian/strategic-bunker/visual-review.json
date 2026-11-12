@@ -1,0 +1,70 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/045",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri06-review-1.png",
+    "sha256": "30e1b27fd22da52c2e0f8e8fb375975205e43fc9fb8827cf3847583b9a705d11",
+    "prompt": "sources/docs/reconstruction/models/ri06-concept-prompt-1.txt",
+    "verdict": "Three jade levels, narrow mast/brass neck and fork agree with legacy. Concept thickens disc rims, enlarges the gold crown and makes ambiguous roof features crescent-shaped; retain the established thinner levels, compact crown and modest round cuts instead."
+  },
+  "legacy": {
+    "body_sha256": "95c8bfbbed6063c7e2166a5f34b4584a92c796ef7cee6ecd9d5739ba47a623f5",
+    "catalogue_colour_phase20_sha256": "d21d86174fe22b99b2d9c43aecfd6711ee6f78fdac554fbff80890d68eda40f5",
+    "functional_record": 906,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "4d474feb44e8948a28a11fb57d307463ce53fb6a24bffbbe5b0bb27fff83c1eb",
+    "glb": "b6c5ea58874057ed7f47c1788dde68082c9ee523437ed9e424191adaadd6bc00"
+  },
+  "runtime_report_sha256": "f2524cefde177ae66cad5d0d27f5cb7bc4bfb212fc9b96daa1b4f47136acdbcc",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.05153062608506945,
+        0.040369669596354164,
+        0.041039360894097224,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 58
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.026112874348958332,
+        0.020867241753472224,
+        0.021058824327256944,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 58
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.039525349934895836,
+        0.03607008192274305,
+        0.040379842122395836,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 61
+    }
+  },
+  "feedback": [
+    "Actual independent GLB retains the three broad rounded levels, narrow connected central column, brass exposed neck/pale retainers, tapered mast and compact open crown visible in the legacy presentation.",
+    "All five mapped body solids and both refined crown arms retain original evaluated geometry; full colour/roughness pixels and ten planar caps/cylindrical side UV contracts pass in saved-native and imported GLB.",
+    "Concept thickens level rims and enlarges the crown; its crescent roof cuts are unsupported geometry. These are rejected in favor of the retained legacy-guided proportions. Existing round roof wells/sleeves/floors/fins are an authored interpretation of ambiguous dark source details, not recovered engineering.",
+    "Only seven rim/collar/groove seams are reduced. Command/research-coordination function is documented; no crown role or operating motion is invented from catalogue reveal/highlight. Fine surface contrast and wear are subtler in the established material maps than in the concept."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

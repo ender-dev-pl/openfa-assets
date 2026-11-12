@@ -1,0 +1,195 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/162",
+  "binaries": {
+    "blend": "4aaccdc9db5e2242345b9dd2338a1b98000f8f2e284ccb4bb2cf5c83d5342a04",
+    "glb": "57408e97812bd11bcdc655782b2e2d4f145f9fc698a7d4da4fc72fa569af41b7"
+  },
+  "runtime_report_sha256": "666e295989eba5dec3222f6abaf0e478ad616291b5cccbbb63f61f9da7c3c438",
+  "legacy": {
+    "surface_payload_sha256": "48cd9e46618541b9df51ba99a7a2b8e685532f3629138559ecf21c5fa4267d91",
+    "surface_layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "functional_record": 1023,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "e7deee8cb8d2794d377bdf6e43f77e5de8349bf2a82a0be831ba8fe15f115ac8",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All41 actual paletted catalogue phases and18 surface descriptors inspected. All catalogue roles map to AC12.VID, a progressive reveal/highlight of one view. Surface0 shadow,1 body,2 closed cover,3-5 progressively open paired transverse panels,6-16 empty,17 foreground rim/shadow rather than a lid pose. Actual body-plus-cover composites inspected. Single slate mast with blue/coral bands, two red longitudinal cover bands and low coral housing. Function1023 establishes landing-pad use, often near shipyards. Shared ACS2 scaffolding remains separate. _MA PB/PH/PM/PS/ST families considered; no AC-named family. Hidden stow mechanism, world orientation, original timing and foreground composition are not established.",
+    "additional_zoom_sprite_payload_sha256": "f7a382fdc9e97181238da91fb057d344df1e534f98857a2efa14ac83ea66add0",
+    "additional_zoom_sprite_layers_reviewed": [
+      0,
+      1
+    ]
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac12-review-1.png",
+      "sha256": "2b08c8d550564f4d69b0114b698a83b3c441d24e09d46f4b866fd8f262ecc59a",
+      "prompt": "sources/docs/reconstruction/models/ac12-concept-prompt-1.txt",
+      "feedback": "Accepted as interpreted concept using actual closed/open surface composites. Retains coral housing, worn green paired panels, two red bands and single straight slate mast. Hidden cavities and thickness are engineering interpretations. Existing useful telescoping-strip mechanism is retained in the model rather than invented exact timing from a still image."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Actual historical native inspection reveals an unrelated three-prong gold aerial, silver ring and three cover markings; open strips are overly thick relative to their retained stow offsets.",
+      "action": "Rebuilt source-led coral housing, single slate mast and two green-cover red bands. Preserved12 named moving controls, LaunchFacilityCycle name,61-frame closed/open/closed pattern and actual retained travel magnitudes. Aligned opening fore/aft to visible paired panel groups. Thin closed solids lower before sliding into a physical cavity, maintaining old travel and avoiding surface overlap."
+    },
+    {
+      "iteration": 2,
+      "observation": "Actual final native and independent GLB closed/half/open/rear renders agree; the paired opening reveals a continuous dark well. Four actual imported-clip video frames reviewed, including closing.",
+      "action": "Accept for integration review. Ten real renders have42-76pixel margins and sub-.001/255 channel mean differences. Verified61 discrete states in both representations, exact retained travel,12 linear translation channels, open-floor rays, texture pixels and PBR topology. Continuous collision sweep and recovered legacy timing are not claimed."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00026559543175857375,
+      "margin": 58
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.000253171303698966,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.000299031523710306,
+      "margin": 76
+    },
+    {
+      "view": "half-open-front-quarter",
+      "maximum_channel_mean_difference": 0.0003319942896982172,
+      "margin": 58
+    },
+    {
+      "view": "open-front-quarter",
+      "maximum_channel_mean_difference": 0.0003070947179708509,
+      "margin": 58
+    }
+  ],
+  "review": "One canonical editable Blend/GLB for gameplay/build/SciTek, with one2second LaunchFacilityCycle clip and actual48frame VP9 preview. Mesh budget5896 triangles/25nodes/6materials/8embedded images. Wear preserves silhouette; rear/support continuation interpreted. Approximate camera, no numerical legacy-fidelity score. Actual Blender target runtime verified; game-client tile/ship scale,state mapping,Android frame time and final user artistic acceptance remain separate.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false,
+  "final_reference_review": {
+    "scope": "Actual extra zoom layers0/1 and current imported front/quarter rendered views compared during final programme audit. No model,material,animation or runtime evidence regenerated for this reference-only review.",
+    "binary_inputs_unchanged": {
+      "blend": "4aaccdc9db5e2242345b9dd2338a1b98000f8f2e284ccb4bb2cf5c83d5342a04",
+      "glb": "57408e97812bd11bcdc655782b2e2d4f145f9fc698a7d4da4fc72fa569af41b7"
+    },
+    "source_layers_reviewed": [
+      0,
+      1
+    ],
+    "finding": "Major silhouette/material boundaries and source-visible assemblies agree with the current remaster at the intended non-pixel-exact level;retain current geometry. Hidden engineering and final user artistic acceptance remain separate.",
+    "frame0_note": "UI/background or progress artwork;not a separate inferred operating model.",
+    "catalogue_phases_reviewed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ]
+  }
+}

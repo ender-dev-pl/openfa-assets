@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/141",
+  "binaries": {
+    "blend": "f23937228aa00f0e6a32a269b0ba94190b5ee026cf2d9047ddff37a405b600fd",
+    "glb": "a972ea38c67441a8b73dace93e1a3628df82bc91753d1cecdfb4be69d59912ad"
+  },
+  "runtime_report_sha256": "7f50e166a5d951d1508248265d90ef89505e9fbef3139739bedaa8cb3be246df",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0021061134993220045,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 5.520794994479205e-05,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.000926279602750191,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn12-review-1.png",
+      "sha256": "4c6cac3cd48edcf2edb14f602305bcfaad8c55e016f4460281fb8864c2d6a1a7",
+      "prompt": "sources/docs/reconstruction/models/mn12-concept-prompt-1.txt",
+      "feedback": "Selected as a source-compatible exterior/workmanship guide after actual legacy comparison. Retains tall sloping emblem block with square tower andtwo unequal masts,connected lower service block,short roofpost/end ribs/projecting slopingfoot,abstract redthree-prongedpaintandwarmfields. Actualsource must govern precise warm-point counts/positions andredmark profile;concept adds smallrooffittings/hiddenrear engineering as interpretation. Do not infer moving turret,door,weapon orinterior fromfunction. Quietusedcast surfaces,nodensepanelgrid."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "status": "accepted_asset_only",
+      "binaries": {
+        "blend": "f23937228aa00f0e6a32a269b0ba94190b5ee026cf2d9047ddff37a405b600fd",
+        "glb": "a972ea38c67441a8b73dace93e1a3628df82bc91753d1cecdfb4be69d59912ad"
+      },
+      "runtime_report_sha256": "7f50e166a5d951d1508248265d90ef89505e9fbef3139739bedaa8cb3be246df",
+      "finding": "Inspected the actual own-source / selected-concept / independent GLB comparison board, final native hero, and tower/masts detail. The asymmetric inclined emblem body, two unequal masts, connected lower service block, end framing, sloping foot and roof post retain the source identity. All 22 visible warm clusters remain in groups 5/3/1/6/4/3. The connected red mark follows the continuous incline. Actual native/import checks passed for 2378 triangles, 10 positive closed mesh batches, 5 materials, 6 maps, eleven blind fields and their backings, part/pane contacts, component counts, slopes, heights, chips, root, decoded texture pixels and steady opaque emission. Maximum surface error: 3.769728778024728e-7. No significant discrepancy requiring a second model pass was identified.",
+      "limitations": [
+        "Hidden rear walls, roof fitting depths, paint outline, mounting engineering and cell-relative dimensions are authored. The camera approximates the source view; it is not a calibrated recovery.",
+        "The 22 visible source clusters establish the visible groups, not unseen rear illumination. Steady amber emission preserves source colour; timed light phases are not recovered.",
+        "PB07 factory and ST06 Building Armour presentations provide functional context, not direct Mauna anatomy or operation. No exposed weapons, turret, door or operating clip is inferred.",
+        "Final user artistic approval, client scale/state/lighting and Android performance remain separate."
+      ]
+    }
+  ],
+  "final_review": "Inspected the actual own-source / selected-concept / independent GLB comparison board, final native hero, and tower/masts detail. The asymmetric inclined emblem body, two unequal masts, connected lower service block, end framing, sloping foot and roof post retain the source identity. All 22 visible warm clusters remain in groups 5/3/1/6/4/3. The connected red mark follows the continuous incline. Actual native/import checks passed for 2378 triangles, 10 positive closed mesh batches, 5 materials, 6 maps, eleven blind fields and their backings, part/pane contacts, component counts, slopes, heights, chips, root, decoded texture pixels and steady opaque emission. Maximum surface error: 3.769728778024728e-7. No significant discrepancy requiring a second model pass was identified.",
+  "limitations": [
+    "Hidden rear walls, roof fitting depths, paint outline, mounting engineering and cell-relative dimensions are authored. The camera approximates the source view; it is not a calibrated recovery.",
+    "The 22 visible source clusters establish the visible groups, not unseen rear illumination. Steady amber emission preserves source colour; timed light phases are not recovered.",
+    "PB07 factory and ST06 Building Armour presentations provide functional context, not direct Mauna anatomy or operation. No exposed weapons, turret, door or operating clip is inferred.",
+    "Final user artistic approval, client scale/state/lighting and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false,
+  "source_citation_revalidation": {
+    "report": "sources/docs/reconstruction/models/mauna-source-citation-revalidation.json",
+    "model_binaries_and_renders_unchanged": true,
+    "scope": "Actual original-payload citation revalidation only; not a new render or artistic/client acceptance."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/042",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "image": "gallery/media/concepts/rigellian/ri03-review-1.png",
+    "sha256": "add7786fa55445a4a7c245698340a47be0337bbb98923ac1cb1eedfe02a54df3",
+    "prompt": "sources/docs/reconstruction/models/ri03-concept-prompt-1.txt",
+    "tool": "built-in ImageGen",
+    "verdict": "Accept broad jade stack/brass neck/pale spine direction; concept covers more of each vessel in pale alloy, exact sleeve section is interpretation and is not copied as recovered geometry."
+  },
+  "legacy": {
+    "body_sha256": "52cabbd589dc3b7eed0afdc10e8c53cb51d66982920c49189815fa9e0099b51f",
+    "catalogue_colour_phase20_sha256": "412934b7443cb333b8759ccff273ac6a9868089ff89c602ef651414236bc7d3b",
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "functional_record": 903,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "culture_record": 18,
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "ad4d328fda63d9efca0b1a60b68362a7883d681708254c3cff23d9e8c5e95afc",
+    "glb": "21a147d4da80be44c3a528b7671fb060995d28c0d74bcdf5adc6ad90c5be3bbd"
+  },
+  "runtime_report_sha256": "df8ae45b8443aa389c55a790b1d2a1328c1bc72da01517a3236a3cb5085596c7",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.011362711588541666,
+        0.010014851888020834,
+        0.009443495008680556,
+        0.0
+      ],
+      "alpha_equal": true,
+      "margin": 71
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.009039984809027778,
+        0.007998996310763888,
+        0.007787068684895833,
+        0.0
+      ],
+      "alpha_equal": true,
+      "margin": 58
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.019656711154513888,
+        0.019426133897569444,
+        0.019929673936631944,
+        0.0
+      ],
+      "alpha_equal": true,
+      "margin": 71
+    }
+  },
+  "feedback": [
+    "Actual GLB retains three rounded jade vessels, gold interstages, broad pale equipment face and continuous spine, flared foot and low brass closure from the original.",
+    "Concept uses broader wrapping pale sleeves; the current model keeps the established recess/backing/insert anatomy. Exact pale sleeve section, hidden rear closures and machinery are interpretations.",
+    "Game candidate retains used existing wear maps and geometric dents, source component identities and closed surfaces. It reduces evaluated tessellation 79668 to50018; maximum accepted vertex-to-surface deviation is below0.000619 source units.",
+    "Actual imported front/side views were inspected: silhouette and major equipment remain legible; no new process animation inferred from catalogue reveal/highlight phases."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

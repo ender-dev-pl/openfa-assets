@@ -1,0 +1,9 @@
+# MK06 Dream
+
+Canonical Mikotaj mind-treatment facility: `model.blend` and `model.glb`, identity `openfa:building/legacy/091`, openfa-assets #259. Original paletted _B/MK06.256 body1, _ZOOM/MK06.256 detail1 and all41 catalogue updates establish a broad mineral foundation, narrow vertical front split, central mineral spire, slender straight brass summit rod and one supported brass arch on the left. Pale spire regions are exposed mineral surfaces; no blue lens is identified. Red contours/interface are excluded.
+
+Original function describes a broad medical equivalent that is more temple-like because it treats minds, not bodies. No human medical apparatus or ornament is added. Indexed mining architecture is heavy metallic ore-like focusing equipment for abstract Mikotaj. All36 research identities were surveyed; none binds Dream treatment geometry. Catalogue information reveal is not an operating cycle.
+
+The actual built-in ImageGen concept and exact prompt are recorded in `mk06-concept-review.json`; its summit rod is too thick, so the model follows the thinner original. Three actual native/import GLB passes informed correction of regular planes and colour waves, sparse mineral relief, spire seating and overly strong foil-like broad normal noise. Authored portable nonperiodic weathering, narrow fracture detail and hidden geometry retain original major proportions rather than every concept crevice. Technical edges come from this same GLB.
+
+Placement:3x3 cells,+Z up/-Y front. Legacy class255,construction38updates. No source metric height or calibrated client scale is inferred. Counts/hashes in `model.json`, actual saved-native/import evidence in `runtime-review.json` and source/concept feedback in `visual-review.json`. Static body without operating clips. One current pair across gameplay/build/SciTek; previous source historical. Final user art acceptance, game integration, shader/scale/state and Android performance remain separate.

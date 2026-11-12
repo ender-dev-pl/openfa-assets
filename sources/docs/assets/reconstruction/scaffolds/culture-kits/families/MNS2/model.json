@@ -1,0 +1,760 @@
+{
+  "issue": 188,
+  "family": "MNS2",
+  "culture": "mauna",
+  "footprint": 2,
+  "capacity": 2,
+  "pitch": 0.6083300397315082,
+  "pitch_status": "Provisional source-repeat projection; not calibrated game-world height",
+  "pitch_derivation": "2*4/41*(2*.9*sqrt(2))/sqrt(2/3)",
+  "required_max_stage": 20,
+  "required_max_tiers": 10,
+  "style": {
+    "main": [
+      0.17,
+      0.21,
+      0.235
+    ],
+    "trim": [
+      0.45,
+      0.11,
+      0.035
+    ],
+    "kind": "utility box gantry",
+    "technique": "Straight bolted beams and lifting lugs"
+  },
+  "cdb_evidence": {
+    "culture": "mauna",
+    "heading": "The Mauna",
+    "section": "Architecture",
+    "record": 137,
+    "offset": 31722,
+    "offset_hex": "0x7bea",
+    "byte_length": 661,
+    "sha256": "37fa6fa1961892bc27ced43ecfc388229bc20b544e3787c881791ff4ef25ec76",
+    "source_summary": [
+      "Building design rejects aesthetics, decoration and most comfort.",
+      "Mining structures are described as angular concrete blocks, with immediate practical purpose taking precedence."
+    ],
+    "authoring_interpretation": [
+      "Keep architectural masses blunt, straight and strictly functional; detail should serve construction or maintenance.",
+      "Do not override an actual curved ship component merely because the building description rejects curves."
+    ],
+    "scope": "Direct evidence for architecture; vehicle/ship application is contextual extrapolation, never recovered geometry."
+  },
+  "authored_interpretation": "OpenFA3D removable perimeter kit; mechanisms, joints, hidden structure and materials are authored interpretations, not recovered CDB technology",
+  "source_reference": "MNS2",
+  "reference_descriptor_sha256": [
+    "d191cb9548fc199ec1a8035043e1d8ca8b7fe2797f9efefca37e8107527edf61",
+    "feb669558c16b85fbd4a9761a52b3ef58721b7b8b6d5a606498a4a2ebf978ba6",
+    "4a53eb5dca5bb8346ecf09b08a07b2d45f356e45e46cb2107faee558c361f736"
+  ],
+  "clear_volume": {
+    "half_extent_xy": 0.8,
+    "temporary_crown_removed_on_reveal": true,
+    "interior_shoring": false
+  },
+  "phases": [
+    {
+      "id": "erection",
+      "building_visible": false
+    },
+    {
+      "id": "reveal",
+      "building_visible": true
+    },
+    {
+      "id": "dismantling",
+      "building_visible": true
+    },
+    {
+      "id": "complete",
+      "building_visible": true,
+      "scaffold_visible": false
+    }
+  ],
+  "sequence_provenance": "User requirement: full height, insert building, reverse dismantling revealing from top; not a newly recovered legacy timing rule",
+  "definitions": [
+    {
+      "id": "openfa:building/legacy/133",
+      "name": "Off-duty Block",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/134",
+      "name": "Health Block",
+      "ceiling": 14,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "dismantling_stages": [
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/138",
+      "name": "Launch Area",
+      "ceiling": 7,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dismantling_stages": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/140",
+      "name": "Fast Breeder Reactor",
+      "ceiling": 20,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "dismantling_stages": [
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/142",
+      "name": "Defence Pods",
+      "ceiling": 10,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "dismantling_stages": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/143",
+      "name": "Attack Pods",
+      "ceiling": 9,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dismantling_stages": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/144",
+      "name": "Pulse Tower",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/145",
+      "name": "Screening Pods",
+      "ceiling": 8,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dismantling_stages": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/148",
+      "name": "Ores Block",
+      "ceiling": 14,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "dismantling_stages": [
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/149",
+      "name": "Motion Units",
+      "ceiling": 12,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "dismantling_stages": [
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/150",
+      "name": "Laser Boost",
+      "ceiling": 9,
+      "erection_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dismantling_stages": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "stage": 1,
+      "frames": [
+        1
+      ],
+      "mesh_objects": 108,
+      "unique_meshes": 8,
+      "blend_sha256": "29c75769cd43f63fdb77d2153f3c4d14d4382a383db76ea00e6727eeb7148f6f",
+      "glb_sha256": "52d6c0df9484a4b1cff42ecc21096af4a2daef6d5872d239b823d93d16aecfc7",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 2,
+      "frames": [
+        2
+      ],
+      "mesh_objects": 188,
+      "unique_meshes": 8,
+      "blend_sha256": "b894dcffec3d26902211008ac0530afffaeac7a396c0911ed9cb56fdf9054977",
+      "glb_sha256": "4a936d78a47c8379855c239bfaf9dffd49a8df3817378a006f3d626a3b1f8517",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 3,
+      "frames": [
+        2,
+        1
+      ],
+      "mesh_objects": 300,
+      "unique_meshes": 10,
+      "blend_sha256": "ef674f86444732cc117091a4e98c86d959979fb8f6d2c7b277ae747bce40b5ee",
+      "glb_sha256": "5a318d88ca032f9891459a76aea98cb15e05b40cf635695229cb8041bc749fd9",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 4,
+      "frames": [
+        2,
+        2
+      ],
+      "mesh_objects": 380,
+      "unique_meshes": 9,
+      "blend_sha256": "b7a2cf7b78b527376b1f8e49e14dd4b6848656e85bd57bc1d625dd6f15cce1f1",
+      "glb_sha256": "caf9bb894920f92040fa14b78ad222d4532b490c9a1ab605fa354818d4e682d5",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 5,
+      "frames": [
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 492,
+      "unique_meshes": 10,
+      "blend_sha256": "c50d07689770a711fc193a7ff995c44d7164da3005e7b13e25e98a954c34ce74",
+      "glb_sha256": "880524b7bd6083c1ce40069b7d86173751aa01ff8561dfa4d5d352bea187ea1a",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 6,
+      "frames": [
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 572,
+      "unique_meshes": 9,
+      "blend_sha256": "d25cffd14325ea7ed7167aae66978815bb7808cb7e41ce428268b3b678a89609",
+      "glb_sha256": "2a5755f10fb5028aa0e8dadc2deeb26df3c13e733d45ebcbb87ade68e4a17e13",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 7,
+      "frames": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 684,
+      "unique_meshes": 10,
+      "blend_sha256": "fa984ca46a2c86292f130d48ff6ee046914db72e07e1b42b346419ce116ffb40",
+      "glb_sha256": "ce3aa80f71767f2e33cbe0272087c2d299aeab8835e9eb4e6e87a99af22b174d",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 8,
+      "frames": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 764,
+      "unique_meshes": 9,
+      "blend_sha256": "1b46cfbfd0785a5a1b6c254b5b996f172a76daa21ca62ba1ca8fe612cd7b9ffa",
+      "glb_sha256": "bbd4a22d941bad81267b60f69edcb412920410866df4a2df09cf32751dde4fdc",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 9,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 876,
+      "unique_meshes": 10,
+      "blend_sha256": "0487fd02709e253d3f80739a60743e9ec30383dcae6ed17383b439dfa66fce1d",
+      "glb_sha256": "dcf77a00af803efaa8f108354212fa0527aae9c2fcf94cb2467a172d6c61c1d6",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 10,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 956,
+      "unique_meshes": 9,
+      "blend_sha256": "5c4874125b47f4268f92fc8ef9f60bbcfaf9b139795169ab33fbf5d1636d5894",
+      "glb_sha256": "5ffc323e33891fc3a31c6aaf86d6892aa064762eb0efe753da5c018570bfca73",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 11,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1068,
+      "unique_meshes": 10,
+      "blend_sha256": "a7b65e58b750ba0229c020e583ffcc909c5f278d044f21243d147bc9272b8a62",
+      "glb_sha256": "8c1dead13feef7c7d29a8d03facd85e0dda01d3233ee385899de81132f8216a8",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 12,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1148,
+      "unique_meshes": 9,
+      "blend_sha256": "c91c95efb02597c30eec9d007a06c833ac4cac8a88bf4547272c7f7e57be0fc3",
+      "glb_sha256": "e49ee0463e7c38cd956cc020a4c98cbab67060ecc116393faa030234b2528a43",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 13,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1260,
+      "unique_meshes": 10,
+      "blend_sha256": "3d3153e3e9559b8cb944daddc25cf05054d7bec7fbf6bd355ef5d96ed872a5f4",
+      "glb_sha256": "2d2360c5e4d2a81091e7eed1eb508e0dab66c66139618ed5640bd1dc94243d3b",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 14,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1340,
+      "unique_meshes": 9,
+      "blend_sha256": "086f538280370da23ddba0397efd61b42419c256e5aff441690764f7fe06f56a",
+      "glb_sha256": "314ebbaa7225abaea7a06b1bb4d8bd946dd985734012cb00c0ff24a6243982e6",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 15,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1452,
+      "unique_meshes": 10,
+      "blend_sha256": "153277af33acd4f3f1e5bfb14968b826a7996cb745b55af35c5bedffeae718de",
+      "glb_sha256": "ffce5cab0c81c6453496bef91928e5dd0c23a0575669cd5611927ce3c0980521",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 16,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1532,
+      "unique_meshes": 9,
+      "blend_sha256": "4964776713f506e9f81ad6d68e0f41f33c556ace9ecf40adab267cb8b4615777",
+      "glb_sha256": "fd7a3cf74f4d40115d25c99c14e6039ee1134c4c472b9f264362f8468ae6b69f",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 17,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1644,
+      "unique_meshes": 10,
+      "blend_sha256": "a146a97709e9ab561a9af159a35bfc5b66548e090d40c882844283ad8fac23c6",
+      "glb_sha256": "4ecd2dbfe1967ce81ec0d02eb202769c848c7c19923f3407e0a11cafd5d01589",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 18,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1724,
+      "unique_meshes": 9,
+      "blend_sha256": "1eeff72ac049788d71e7dd05ab8fec4b9c2606514976fe1c8652d9885cc91df8",
+      "glb_sha256": "e7c6c8d08e5274a5421a1e6e4626f1e7254ce20fe4df48294a02f0421969f205",
+      "rear_view": false,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 19,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mesh_objects": 1836,
+      "unique_meshes": 10,
+      "blend_sha256": "56fc4f5a1ccf380259d0598589c5020c83c3845f616b6bd4631a296eec8dbfc7",
+      "glb_sha256": "a7a063c5258b2d48ffeb11b1c4315a42a200d60af116e3bfffa56db76fe91a8b",
+      "rear_view": true,
+      "hide_on_reveal": []
+    },
+    {
+      "stage": 20,
+      "frames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mesh_objects": 1916,
+      "unique_meshes": 9,
+      "blend_sha256": "bcd4c92dc973ef2a3ba49fa65f8e07b5b1c675d78221944af1a495b30d934557",
+      "glb_sha256": "391d9a5730710446166253c51e8d3a9fa442c53f87fda1d6e3dd3d82d6972939",
+      "rear_view": true,
+      "hide_on_reveal": []
+    }
+  ],
+  "inputs": {
+    "docs/reconstruction/models/scaffold-stage-limits.json": "5a0fcc956670550a11dff3ea7e0258de745258397eac58f2b0739074746bd7d3",
+    "docs/reconstruction/models/shared-construction-references.json": "be5bbc948f86b0548bda10b6f63dba4e3b131a5175cdfa35f1e146890581d7a6",
+    "docs/reconstruction/models/cultural-architecture-index.json": "3ae667c89e1f2dc54fb27be717b75eb50e1ea14800a1ef02a1609adb7d78765e",
+    "docs/assets/reconstruction/scaffolds/culture-kits/authored-wear.json": "f1175ab496acaf5bec413ba92f1c3fec291ead980cba27816064b2c809521f52",
+    "tools/blender/build_culture_scaffolds.py": "171628100bc5a27d57ef4511888904e8e418b439553b4e510db28af8978249f5",
+    "tools/blender/culture_scaffold_parts.py": "f4bd5d31a159355277693218ff12f7514779aee634a2d9a703a875d42f45b36d",
+    "tools/blender/culture_scaffold_contract.py": "c71d3453ec38e1326c1bede0541ccc111b3f28507aea9ed150e73b69cd3be5d9"
+  },
+  "preview_only": false,
+  "exact_legacy_fidelity_accepted": false,
+  "game_integration_verified": false
+}

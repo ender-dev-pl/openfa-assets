@@ -1,0 +1,147 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/040",
+  "concept_requests_used": 2,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri01-review-2.png",
+    "sha256": "4e8ab726370cd3d55d4696fac230d3dd0a177a49db228ace571183dbc8ebabce",
+    "prompt": "sources/docs/reconstruction/models/ri01-concept-prompt-2.txt",
+    "verdict": "Second concept corrects invented central ring opening and crescent well. Broad saucer, waisted base, three-prong crown and green/brass palette agree. Altered grille division, neck proportions and feature sizes remain interpretation; assessed geometry retained."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "outcome": "Rejected: invented central roof opening and crescent side cutout.",
+      "prompt": "sources/docs/reconstruction/models/ri01-concept-prompt-1.txt",
+      "image": "gallery/media/concepts/rigellian/ri01-review-1.png",
+      "sha256": "349ccc3ed9de6d8a0598f1f11024f757b0783848be84d968eeca4263d5063ff8"
+    },
+    {
+      "attempt": 2,
+      "outcome": "Selected with explicit limitations: solid crown seating and small round side well restored.",
+      "prompt": "sources/docs/reconstruction/models/ri01-concept-prompt-2.txt",
+      "image": "gallery/media/concepts/rigellian/ri01-review-2.png",
+      "sha256": "4e8ab726370cd3d55d4696fac230d3dd0a177a49db228ace571183dbc8ebabce"
+    }
+  ],
+  "source_comparisons": {
+    "front-quarter": {
+      "foreground_mean_rgba_255": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "threshold_silhouette_disagreement_fraction": 0.0
+    },
+    "front": {
+      "foreground_mean_rgba_255": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "threshold_silhouette_disagreement_fraction": 0.0
+    },
+    "rear-quarter": {
+      "foreground_mean_rgba_255": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "threshold_silhouette_disagreement_fraction": 0.0
+    }
+  },
+  "legacy": {
+    "surface_payload_sha256": "d7e2a7e0e8934ecfa051a6062654ebaa70e3de80ca3476c519663472a9658138",
+    "ground_sha256": "2bcec13e65b5e333a17d1c02ff42fcb8d430c573d4a5035bbb79a424aa2d3813",
+    "complete_body_sha256": "bb26611b7de26b132d1ea26550156e75b8e912c6de77def445325558d5e5f558",
+    "reviewed_catalogue_phases": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "functional_record": 901,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "2327740c93e3390ee2493b22724224dbd688dc955f1e272ba136b9151210b17d",
+    "glb": "1acdc64d42c9de093d1afef274705b7f0c7b0e22a1aacc997e79941e3281db08"
+  },
+  "runtime_report_sha256": "469ba381dfb19ac0dfecc772399f01d674bbe8b7088975b71c82c1a0a86e109a",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.018429226345486112,
+        0.016542222764756944,
+        0.016888088650173612,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.08163026703456017,
+        0.07305647788741836,
+        0.07466211476406491,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 38
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.010782877604166666,
+        0.010548909505208334,
+        0.010833740234375,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.05310078859988932,
+        0.052071804095185394,
+        0.05362825124515772,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 41
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.022135416666666668,
+        0.020960489908854168,
+        0.0227508544921875,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.10222583265637693,
+        0.09667749796913079,
+        0.10520714865962633,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 42
+    }
+  },
+  "feedback": [
+    "Actual function901 defines essential colony supplies until dedicated facilities are constructed. CDB18 architecture context reviewed. RI01surface ground0 and complete body1 plus catalogue phases0/10/20/30/40 reviewed. The catalogue reveals/highlights a fixed object, not multiple headings or operating motion.",
+    "Two actual ImageGen attempts. First rejected for invented central crown opening and crescent well. Second corrects these, broadly preserving green/brass palette, broad saucer, waisted base and three-prong crown. Changed grille division/proportions and fitting sizes are not automatically transferred.",
+    "All75evaluated components,40,636triangles and seven authored materials retained. No tessellation reduction, new wear or body restyling. The pre-existing CPU body is exempt from later wear retrofit; existing crown finish also retained.",
+    "Actual saved-native and independent GLB checks cover roof well/sleeve/floor/fin seating, crown socket/rim clearance, conformal roof cap, open neck grille, broad tapered crown arms and sampled contact graph. UV corner projections and decoded used map channels plus scalar material properties compared. Scalar values quantized to8bits for source/export equivalence; not an exact float shader identity.",
+    "Nine actual renders include three source/native appearance comparisons and three native/import pairs. Full source geometry retained within measured tolerance; export pixel agreement is separate from legacy fidelity and final user artistic acceptance.",
+    "No moving mechanism, operational timing or special glow recovered. Static body1,ground0,RIS3construction separate. Client placement/scale/state/damage integration, continuous solid contacts and Android frame rate remain separate.",
+    "One canonical editable Blend and GLB serve gameplay, build menu and SciTek; technical diagrams derive from the same model. Earlier studies remain historical evidence, excluded from current payload selection."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

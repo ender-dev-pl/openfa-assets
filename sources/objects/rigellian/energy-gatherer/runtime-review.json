@@ -1,0 +1,346 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/053",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "240386ef69fdb1756db58140ccec496210d691349907856b4ff6923211b26a8b",
+    "glb": "2cc1f2395781cc51cbd65c12519210481f82e03ec448cc5f2b92aaa427c903ba"
+  },
+  "metadata_sha256": "ab095a61cbc078fb916515d134ae4debf41ec96877b3531bcb4b7e8b9c368050",
+  "verifier_sha256": "5704efe280a5e1e01b874562a49ef6ea70617a1f6d515840997a09f56719ee13",
+  "helpers": {
+    "sources/tools/blender/verify_remastered_rigellian_static.py": "5704efe280a5e1e01b874562a49ef6ea70617a1f6d515840997a09f56719ee13",
+    "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+    "sources/tools/blender/refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "sources/tools/blender/refine_rigellian_missiles.py": "93b0bd4881160f8d931f41b9ed26cb47bff1d457ccbd0754992ecd9567d31f67",
+    "sources/tools/blender/finish_rigellian_energy_uvs.py": "8c3cc60e9c7567c112e8cf71b70b508fab1673e6697e265db0c9fd0e7c9a27c9",
+    "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+    "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+    "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+    "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+    "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+    "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+    "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+    "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+    "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+    "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+    "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+    "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+    "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+    "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+    "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+    "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+    "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+    "sources/tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "sources/tools/blender/manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+    "sources/tools/blender/manufactured_surface_mounts.py": "dd05a5c80253bd6afcaeb4aa75f9d71e50ffaf54ef3c83221a59bd84b748346d",
+    "sources/tools/blender/rigellian_energy_gatherer_parts.py": "eabdd5f1dcb066cffc44e31e3cbcca79b314c3837ea73d110f16f9a9d83b98fc",
+    "sources/tools/blender/manufactured_roof_wells.py": "d9e7e148613d96e666a30b75f0de1382e9869e11c118ed5c4828b2b4fb75fceb",
+    "sources/tools/blender/build_rigellian_energy_gatherer.py": "948a893ff5cc0bc0d2344f1abf1851313a4a1789d21eb666854ffbf6dfbeb2a0",
+    "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+    "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+    "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+    "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+    "sources/tools/blender/verify_rigellian_energy_gatherer.py": "8746b1aebef46e87660af453d32dec9847417c7cb1d88043a438cae6294845d8",
+    "sources/tools/blender/refine_rigellian_energy_casings.py": "b43712089cc46cbc7fe1ac75b2d84c47a39c87d9a1be387e87b4bfd3ee319658",
+    "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "sources/tools/blender/verify_refined_rigellian_energy_casings.py": "b32b4b754729db156b6dad33260d5ec8b15296eb11f3d5fcfb6e3b5bdb97394d",
+    "sources/tools/blender/rigellian_energy_remaster_checks.py": "b03230dfeaed589904ecd593362fea76ec550bbb5534fd7ea5d8dd09a5c3c7ab"
+  },
+  "native": {
+    "positive_closed_meshes": 26,
+    "body_bounds": [
+      -0.599765419960022,
+      -0.599765419960022,
+      0.0,
+      0.599765419960022,
+      0.599765419960022,
+      3.4000000953674316
+    ],
+    "one_sampled_contact_component": true,
+    "casing": {
+      "positive_closed_meshes": 26,
+      "solid_casing_contacts": [
+        {
+          "name": "RI14 refined casing lower backing",
+          "point": [
+            -0.1364281972163984,
+            -0.3993386370040889,
+            0.32
+          ]
+        },
+        {
+          "name": "RI14 refined casing upper backing",
+          "point": [
+            -0.1364281972163984,
+            -0.3993386370040889,
+            1.17
+          ]
+        },
+        {
+          "name": "RI14 refined casing upper horizontal rib 0",
+          "point": [
+            -0.14289398855366847,
+            -0.4182646387578372,
+            1.05
+          ]
+        },
+        {
+          "name": "RI14 refined casing upper horizontal rib 1",
+          "point": [
+            -0.14289398855366847,
+            -0.4182646387578372,
+            1.23
+          ]
+        },
+        {
+          "name": "RI14 refined casing upper horizontal rib 2",
+          "point": [
+            -0.14289398855366847,
+            -0.4182646387578372,
+            1.41
+          ]
+        },
+        {
+          "name": "RI14 refined casing lower vertical rib 0",
+          "point": [
+            -0.30584734674040254,
+            -0.3190946575733539,
+            0.4
+          ]
+        },
+        {
+          "name": "RI14 refined casing lower vertical rib 1",
+          "point": [
+            -0.15744274861009827,
+            -0.4130082092526702,
+            0.4
+          ]
+        },
+        {
+          "name": "RI14 refined casing lower vertical rib 2",
+          "point": [
+            0.011400711910310474,
+            -0.4418529435999472,
+            0.4
+          ]
+        }
+      ],
+      "three_upper_horizontal_ribs": true,
+      "three_lower_vertical_ribs": true,
+      "pale_conduit_clear_of_new_casings": true,
+      "open_crown_retained": true,
+      "packed_authored_wear": true
+    },
+    "four_measured_dents_open_bowl_conduit_shoes_and_vessel_insets": true,
+    "texture_pixels_and_uvs": {
+      "materials": {
+        "RI14 | aged bronze housing": {
+          "colour": "1ef87e6dde6da5104c54e4481471c5f9b56f3173e8ba8430ed0a5d8eacd664f0",
+          "roughness": "59d034be8b1e8346b226c0d9de67ecc00104821abe7b3beeb14d1d4c00c33cbc"
+        },
+        "RI14 | weathered grey alloy": {
+          "colour": "0ed6a65c8ed04982992627f53dd93116c392d6592c0ca9284d3f9504fbf6ccea",
+          "roughness": "59d034be8b1e8346b226c0d9de67ecc00104821abe7b3beeb14d1d4c00c33cbc"
+        },
+        "RI14 | bronze planar caps": {
+          "colour": "6692b3228f402a5037b188815373205d53cfe1cfcb8806a585b1ff11f9375e4b",
+          "roughness": "851cceff5f5aa65d35f133497b64b73a0f63c2e923be4c516e5ba7e2ce3473ee"
+        },
+        "RI14 | grey planar caps": {
+          "colour": "6e2f0ecd2c6c2da315aec7be8eccf8554990f386503c2f3bc20991db5e8162c1",
+          "roughness": "851cceff5f5aa65d35f133497b64b73a0f63c2e923be4c516e5ba7e2ce3473ee"
+        },
+        "RI14 | worn recessed bronze casing": {
+          "colour": "fbca9ec5f76bf6c6258f1fc37a6908e28e3f918726feb642eee6051588b4d6a1",
+          "roughness": "59d034be8b1e8346b226c0d9de67ecc00104821abe7b3beeb14d1d4c00c33cbc"
+        }
+      },
+      "planar_cap_surfaces": 10
+    },
+    "contact_scope": "Retained body rays plus solid casing contacts and sampled contact graph; not exhaustive intersection proof."
+  },
+  "imported": {
+    "positive_closed_meshes": 26,
+    "body_bounds": [
+      -0.599765419960022,
+      -0.599765419960022,
+      0.0,
+      0.599765419960022,
+      0.599765419960022,
+      3.4000000953674316
+    ],
+    "one_sampled_contact_component": true,
+    "casing": {
+      "positive_closed_meshes": 26,
+      "solid_casing_contacts": [
+        {
+          "name": "RI14 refined casing lower backing",
+          "point": [
+            -0.1364281972163984,
+            -0.3993386370040889,
+            0.32
+          ]
+        },
+        {
+          "name": "RI14 refined casing upper backing",
+          "point": [
+            -0.1364281972163984,
+            -0.3993386370040889,
+            1.17
+          ]
+        },
+        {
+          "name": "RI14 refined casing upper horizontal rib 0",
+          "point": [
+            -0.14289398855366847,
+            -0.4182646387578372,
+            1.05
+          ]
+        },
+        {
+          "name": "RI14 refined casing upper horizontal rib 1",
+          "point": [
+            -0.14289398855366847,
+            -0.4182646387578372,
+            1.23
+          ]
+        },
+        {
+          "name": "RI14 refined casing upper horizontal rib 2",
+          "point": [
+            -0.14289398855366847,
+            -0.4182646387578372,
+            1.41
+          ]
+        },
+        {
+          "name": "RI14 refined casing lower vertical rib 0",
+          "point": [
+            -0.30584734674040254,
+            -0.3190946575733539,
+            0.4
+          ]
+        },
+        {
+          "name": "RI14 refined casing lower vertical rib 1",
+          "point": [
+            -0.15744274861009827,
+            -0.4130082092526702,
+            0.4
+          ]
+        },
+        {
+          "name": "RI14 refined casing lower vertical rib 2",
+          "point": [
+            0.011400711910310474,
+            -0.4418529435999472,
+            0.4
+          ]
+        }
+      ],
+      "three_upper_horizontal_ribs": true,
+      "three_lower_vertical_ribs": true,
+      "pale_conduit_clear_of_new_casings": true,
+      "open_crown_retained": true,
+      "packed_authored_wear": true
+    },
+    "four_measured_dents_open_bowl_conduit_shoes_and_vessel_insets": true,
+    "texture_pixels_and_uvs": {
+      "materials": {
+        "RI14 | aged bronze housing": {
+          "colour": "1ef87e6dde6da5104c54e4481471c5f9b56f3173e8ba8430ed0a5d8eacd664f0",
+          "roughness": "59d034be8b1e8346b226c0d9de67ecc00104821abe7b3beeb14d1d4c00c33cbc"
+        },
+        "RI14 | weathered grey alloy": {
+          "colour": "0ed6a65c8ed04982992627f53dd93116c392d6592c0ca9284d3f9504fbf6ccea",
+          "roughness": "59d034be8b1e8346b226c0d9de67ecc00104821abe7b3beeb14d1d4c00c33cbc"
+        },
+        "RI14 | bronze planar caps": {
+          "colour": "6692b3228f402a5037b188815373205d53cfe1cfcb8806a585b1ff11f9375e4b",
+          "roughness": "851cceff5f5aa65d35f133497b64b73a0f63c2e923be4c516e5ba7e2ce3473ee"
+        },
+        "RI14 | grey planar caps": {
+          "colour": "6e2f0ecd2c6c2da315aec7be8eccf8554990f386503c2f3bc20991db5e8162c1",
+          "roughness": "851cceff5f5aa65d35f133497b64b73a0f63c2e923be4c516e5ba7e2ce3473ee"
+        },
+        "RI14 | worn recessed bronze casing": {
+          "colour": "fbca9ec5f76bf6c6258f1fc37a6908e28e3f918726feb642eee6051588b4d6a1",
+          "roughness": "59d034be8b1e8346b226c0d9de67ecc00104821abe7b3beeb14d1d4c00c33cbc"
+        }
+      },
+      "planar_cap_surfaces": 10
+    },
+    "contact_scope": "Retained body rays plus solid casing contacts and sampled contact graph; not exhaustive intersection proof."
+  },
+  "maximum_bidirectional_surface_error": 3.0719530030864917e-08,
+  "renders": {
+    "native-front-quarter.png": "34e845ab9053480f8e477d023247a4162f534bd2888e4412f8d7d67e8156a56d",
+    "native-front.png": "30977dc663d0319eb55f3a3e42b28c5faf4cdb0844bfbb1682cebe8b4b56719c",
+    "native-rear-quarter.png": "4c98545ffd1ae3cc4134085d45872b453e6fea0ea05c8f5f5e719b297fb5e61e",
+    "imported-front-quarter.png": "59921a08830d4b2bb94f4857cb3dad76407814a82bce25549147c6e4ddd04c51",
+    "imported-front.png": "cf818847fff4fdcbb8d23fc2b159b3fbd93f37531173f19912af61f7029155d3",
+    "imported-rear-quarter.png": "706ee1c4b476c546a6347a8ae4e26505b42a98737ef6d81d4dfe7b4f8ccafdc2"
+  },
+  "triangles": 86060,
+  "meshes": 26,
+  "protected_parts": [
+    "RI14 twin chamber lower body",
+    "RI14 tapered grey connector",
+    "RI14 bronze upper vessel",
+    "RI14 central crown probe",
+    "RI14 open upturned crown"
+  ],
+  "protected_surface_error": 0.0,
+  "native_world_bounds": [
+    -0.599765419960022,
+    -0.599765419960022,
+    0.0,
+    0.599765419960022,
+    0.599765419960022,
+    3.4000000953674316
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "imported_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "material_count": 7,
+  "embedded_images": 9,
+  "clips": [],
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

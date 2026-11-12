@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/122",
+  "key": "AR16",
+  "name": "Missile Launcher",
+  "culture": "artemian",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 14,
+  "construction_updates": 30,
+  "triangles": 24328,
+  "triangle_budget": 30000,
+  "mesh_nodes": 16,
+  "materials": 4,
+  "author": "sources/tools/blender/remaster_artemian_missile_launcher.py",
+  "author_sha256": "3c5db4d2aabffc9c45aba818f6660c3c463e83200926b9cfb935bb12f226e8fc",
+  "binaries": {
+    "blend": "807c8e6b9aad858718fa9d9c6524860912822546a3402bcdfe7ac0c0b41236c9",
+    "glb": "6a4320794c51b609ed377224af7567fe615f97af7fe5464dcec3f433926dbf57"
+  },
+  "textures": {
+    "exposed-alloy-edge-colour.png": "4aa301633b24c92fd4b1c7e20e55489f66be5ed61b71ef01138fba13026db19d",
+    "muted-green-alloy-colour.png": "1a2ca47149b49b238749043577f62615c8c3980ec61f335a0cdddd080b6fe83d",
+    "occlusion-roughness-metallic.png": "8c6f27d3f8792f1bdcca6a7138c19a9d9e38b59f095ea4d3dd21ccebef8a0571",
+    "used-metal-normal.png": "4e5d8c84572e5ee83280f283baad500f56889544d6a3753439e847c2e83e12af",
+    "yellow-status-colour.png": "be8546ea50eb284dec8986f635b0f053615edae6f6852b767e16b5acd3ba6711"
+  },
+  "physical_dent": {
+    "point": [
+      -0.5626007318496704,
+      -0.4219505786895752,
+      0.38999998569488525
+    ],
+    "normal": [
+      -0.7479135990142822,
+      -0.5836775302886963,
+      0.3161417841911316
+    ]
+  },
+  "status": {
+    "point": [
+      0.37976861000061035,
+      -0.26591694355010986,
+      1.0499999523162842
+    ],
+    "normal": [
+      0.8112750053405762,
+      -0.5713645219802856,
+      0.12399765849113464
+    ]
+  },
+  "lower_port": {
+    "point": [
+      0.679649829864502,
+      -0.3169258236885071,
+      0.25
+    ],
+    "normal": [
+      0.8673215508460999,
+      -0.3844570815563202,
+      0.3161424696445465
+    ]
+  },
+  "hinge": {
+    "origin": [
+      -0.5199999809265137,
+      0.0,
+      1.440000057220459
+    ],
+    "axis": "+Y",
+    "open_angle_degrees": -110,
+    "aperture_radius": 0.32,
+    "shaft_floor": 0.12
+  },
+  "interpretation": [
+    "Own progressive overlays establish one mechanically attached cap above fixed green neck/slate-blue flared foot;two unequal rails,upper yellow square point and lower dark recess.",
+    "Preserves earlier single-lid mechanism;hidden hinge axis/angle,shaft sections/depth and2.5second timing authored. No generic iris or magazine loader."
+  ],
+  "scale_contract": "2x2 placement footprint,+Zup/-Yfront. Cell-relative authored proportions;no recovered metric height or calibrated client scale.",
+  "concept_review": "sources/docs/reconstruction/models/ar16-concept-review.json",
+  "animation_clips": [
+    "LaunchFacilityCycle"
+  ],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

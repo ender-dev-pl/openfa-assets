@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/100",
+  "binaries": {
+    "blend": "52c20904b926ea18750a977ffeb6272e0bf5af1bb74e4105377be22748087f53",
+    "glb": "2d818b1ea895a2f305ae2b919922866faeda62807b2e4107bafab469e61fd64b"
+  },
+  "runtime_report_sha256": "714885ee90db2bd4ffcafcc028cc25ebc41c1c87229d25d7f404ea20bc1e98c7",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.003735883696603548,
+      "margin": 87
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0031730885738519327,
+      "margin": 56
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0035824784237094938,
+      "margin": 88
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk15-review-1.png",
+      "sha256": "643b66625f1f0a9d04bc5d30154c21723ab6c22b7cd1d3970c6ba2cf6e228b2c",
+      "prompt": "sources/docs/reconstruction/models/mk15-concept-prompt-1.txt",
+      "feedback": "Selected with source correction: compact tapered knobbly green-grey mineral mound and two vertically stacked pale front lenses match actual source. Omit the extra lowest right slot invented by the concept; preserve only the two source-visible right recesses. Hidden section and surface wear remain authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "binaries": {
+        "blend": "3ee023037bf471a4e223e276f5814dc6c51f900943e12c28876d4bd43c82c37e",
+        "glb": "952053cf9a48803e1932ac709cb8b0ab8cea80f64372055ec7b1b6c30d9cef83"
+      },
+      "runtime_sha256": "5a2896234380f4c4b5a8fe5a9ef8118c1a3cf3ed29681e702ae098072ee213f3",
+      "finding": "First complete saved-native/imported pass technically agrees, but whole view is too smoothly inflated and summit shows polar UV convergence. Source/concept have stronger irregular upper mineral knuckles.",
+      "correction": "Broaden/flatten local mineral protrusions with shoulder transitions, improve small physical relief, use planar summit UVs and retain source two-lens/two-recess arrangement."
+    },
+    {
+      "iteration": 2,
+      "binaries": {
+        "blend": "bf8acca96958bbb55753e46636e135c3d4eabf3f747997f206a42d06386c4bfb",
+        "glb": "7dc85dcd2bdfa196ee8b0296a38cbdb46fbacc11a4a1d08ba08243d991d11d39"
+      },
+      "runtime_sha256": "df344f4dd3bb87292e2c69682563d5adff7d2baa8e77546d042c124ec415ec84",
+      "finding": "Second actual native/import render agrees but regular radial-shell construction remains too inflated; planar summit mapping has a visible transition band.",
+      "correction": "Rebuild whole body as one Boolean-unioned ore volume with irregular polyhedral knuckles; fine continuous surface relief and same source-specific recesses. Avoid polar mapping entirely with a continuous oblique projection."
+    },
+    {
+      "iteration": 3,
+      "binaries": {
+        "blend": "e1497e250595ab6692c478e7f1dd90ec1c1301c645395cf1b7dc84fe81884eec",
+        "glb": "7bb9127ea3892e29dbe8bf248d1046e32bb8f6dd1262c0b50df61e657fcb9539"
+      },
+      "runtime_sha256": "8e58a530d909d52bb27daada63dc7b97d1c7bc13f6f6cb7bd61a1ae64fa91631",
+      "finding": "Whole legacy/concept/GLB board and closeups expose too rounded upper knots and soft-looking mineral surface. Technical checks passed but do not establish the surface quality.",
+      "correction": "Irregular polyhedral lobes, stronger small physical mineral relief and fractured portable normals; preserve whole silhouette, paired insets and two right recesses."
+    }
+  ],
+  "final_review": "Actual imported GLB retains the compact tapered mineral mound, knobbly upper mass, paired pale front lenses and two small right recesses. Concept extra lowest slot omitted by source authority. Actual whole-silhouette comparison and closeups reviewed, native/imported surfaces and portable texture pixels agree.",
+  "limitations": [
+    "Exact mineral facets, hidden section and physical cloaking engineering remain authored or unknown.",
+    "Catalogue reveal is not a visible cloaking cycle. No operating clip or external cloaking bubble invented.",
+    "Final user artistic acceptance, client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

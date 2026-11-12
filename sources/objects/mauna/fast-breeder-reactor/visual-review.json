@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/140",
+  "binaries": {
+    "blend": "afe9a373963c138a893d7923a13dd88521e39b384ba4b8574ad5aa76826351f9",
+    "glb": "6e73adaa93da8c875adff96787d76eb57e799f59fac780644cc5852abf6125e9"
+  },
+  "runtime_report_sha256": "20a4e1784ff76b592d2f253e4e367dad6878f01ffc450cc1a433318439bfca86",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0006115272894052897,
+      "margin": 44
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0005111049159000093,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0009168704156479218,
+      "margin": 45
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn11-review-1.png",
+      "sha256": "c87085cf294cafa0f905e4a16b5b80ad893a264b301f2738115f5765db9cd505",
+      "prompt": "sources/docs/reconstruction/models/mn11-concept-prompt-1.txt",
+      "feedback": "Selected after actual own-source comparison. Three aligned vertically elongated chamfered modules,physically connected narrower waists,one short top stub,two small roof fields,one red left-face strip perblock/dark verticalrecesses,paired bright pale right-facefields and smaller opaque fields below agree with source. Quiet worn grey cast/alloy surfaces,no dense grid. Reardetails/hiddenengineering authored;do not turnservicefields into exposedcore or infer timedoperation. Preserve source two principal face placements and3modulecount;no generic solarwings/spheres transferred."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "status": "revision_required",
+      "binaries": {
+        "blend": "c51202d1db67b558340201c752aa1af12ac988950e377b5869034255bcc67483",
+        "glb": "efca05f7f71de3e22a827da57a221c37310b182bda50570904daef5dfc6b9ea6"
+      },
+      "finding": "Actual native/imported whole/front/rear/waist source-concept board viewed. Three connectedmodules andall26blindfields/contacts pass,butredstrips are too narrow,pale ribs in dark frontrecesses too bright,andtopcap too shallow versuslegacy/concept. Widenredstrips .065to.11,usededicateddarker servicemetal for6ribs,andraise onlytopchamfer .11while preservingfieldplacements and3modules. No sourcecounts orstrict guards relaxed.",
+      "limitations": [
+        "Hiddenengineering/metricdimensions authored. Steadyexternalopaque fieldemissionis authored source-colourpreservation,not recovered timing."
+      ]
+    },
+    {
+      "pass_number": 2,
+      "status": "accepted_asset_only",
+      "binaries": {
+        "blend": "afe9a373963c138a893d7923a13dd88521e39b384ba4b8574ad5aa76826351f9",
+        "glb": "6e73adaa93da8c875adff96787d76eb57e799f59fac780644cc5852abf6125e9"
+      },
+      "runtime_report_sha256": "20a4e1784ff76b592d2f253e4e367dad6878f01ffc450cc1a433318439bfca86",
+      "finding": "Actual final legacy/concept/independentGLB whole/front/rear/roof comparison board,native hero andconnected-waist detail viewed. Redstrips widened .065\u2192.11,darker6service ribs andtopcap+.11 restore source/concept prominence while retaining3connectedmodules andallfieldpositions.2282triangles/12closedpositivebatches/7materials/6maps. Actual26blindfields/seatedbackings/contacts/modulelevels/faceplacements/componentcounts/shoulders/chips/root/decodedpixels/opaque effectiveemission andindependent surfaces pass,maxerror5.20475168741541e-7. No foreignsolarwings/powerplantspheres,operatingclip orinternalcoreinferred.",
+      "limitations": [
+        "Hiddenrearwalls,waistengineering,fielddepths andcell-relativeproportions authored;camera approximate,not a recovered calibration.",
+        "Pale-blue-whiteopaque servicefields have authoredsteady .65emission as sourcecolourpreservation;no recoveredflashing/powerphasetiming.",
+        "Definitionclass28functionalcontextusesgenericSolarMatrix/PB28/ST27;ownMaunafunction1001FastBreederReactorgovernsidentity. GenericPowerplant/ST21also reviewedonlyascontext.",
+        "Finaluserartisticacceptance,clientscale/state/lighting andAndroidperformanceremainseparate."
+      ]
+    }
+  ],
+  "final_review": "Actual final legacy/concept/independentGLB whole/front/rear/roof comparison board,native hero andconnected-waist detail viewed. Redstrips widened .065\u2192.11,darker6service ribs andtopcap+.11 restore source/concept prominence while retaining3connectedmodules andallfieldpositions.2282triangles/12closedpositivebatches/7materials/6maps. Actual26blindfields/seatedbackings/contacts/modulelevels/faceplacements/componentcounts/shoulders/chips/root/decodedpixels/opaque effectiveemission andindependent surfaces pass,maxerror5.20475168741541e-7. No foreignsolarwings/powerplantspheres,operatingclip orinternalcoreinferred.",
+  "limitations": [
+    "Hiddenrearwalls,waistengineering,fielddepths andcell-relativeproportions authored;camera approximate,not a recovered calibration.",
+    "Pale-blue-whiteopaque servicefields have authoredsteady .65emission as sourcecolourpreservation;no recoveredflashing/powerphasetiming.",
+    "Definitionclass28functionalcontextusesgenericSolarMatrix/PB28/ST27;ownMaunafunction1001FastBreederReactorgovernsidentity. GenericPowerplant/ST21also reviewedonlyascontext.",
+    "Finaluserartisticacceptance,clientscale/state/lighting andAndroidperformanceremainseparate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false,
+  "source_citation_revalidation": {
+    "report": "sources/docs/reconstruction/models/mauna-source-citation-revalidation.json",
+    "model_binaries_and_renders_unchanged": true,
+    "scope": "Actual original-payload citation revalidation only; not a new render or artistic/client acceptance."
+  }
+}

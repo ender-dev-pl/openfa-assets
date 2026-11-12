@@ -1,0 +1,140 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/041",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri02-review-1.png",
+    "sha256": "fd2d168c69a8a00dcdee9f1581db738eb9161b6e26e30b47c6f47afddad67c09",
+    "prompt": "sources/docs/reconstruction/models/ri02-concept-prompt-1.txt",
+    "verdict": "Rounded body, narrowed capped tower, six gold front fittings, upper fitting and side recess agree broadly. Taller tower, fewer visible lower slots, different fitting rims and stronger mottling remain interpretation; assessed model retained."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "outcome": "Selected after inspection, with proportion/slot/rim/finish deviations recorded rather than transferred.",
+      "prompt": "sources/docs/reconstruction/models/ri02-concept-prompt-1.txt",
+      "image": "gallery/media/concepts/rigellian/ri02-review-1.png",
+      "sha256": "fd2d168c69a8a00dcdee9f1581db738eb9161b6e26e30b47c6f47afddad67c09"
+    }
+  ],
+  "source_comparisons": {
+    "front-quarter": {
+      "foreground_mean_rgba_255": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "threshold_silhouette_disagreement_fraction": 0.0
+    },
+    "front": {
+      "foreground_mean_rgba_255": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "threshold_silhouette_disagreement_fraction": 0.0
+    },
+    "rear-quarter": {
+      "foreground_mean_rgba_255": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "threshold_silhouette_disagreement_fraction": 0.0
+    }
+  },
+  "legacy": {
+    "surface_payload_sha256": "ef4abe01609771d9aad30b599a6dadb18b18ddb621e30bd192ae5293157ddcb9",
+    "ground_sha256": "6881ba22814273f920820cffc4e64fdffe603b0c464cea57a5240ec6b9eb6452",
+    "complete_body_sha256": "8fd86b5eb1112e4b4ae1e0d7ecce0d6943564982cd9c6727a58cdd8500d40e23",
+    "reviewed_catalogue_phases": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "functional_record": 902,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "81f07ae516f2be27adaa913c895d0a38fd002d112592b3e49e19f32afd4c7688",
+    "glb": "9d04713c2753cf581651454ef5800b9bb8cf859fad63ebb0aeaed2e465881136"
+  },
+  "runtime_report_sha256": "c6b21eb07bce0c112df6387d0f166f7fa1bfed55240621cf62196f8613d5b0a7",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0652804904513889,
+        0.06600104437934028,
+        0.06097242567274305,
+        1.3563368055555555e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.2435813034891376,
+        0.24625935560569356,
+        0.22733402787986476,
+        0.0
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 68
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.08159722222222222,
+        0.0871310763888889,
+        0.07799614800347222,
+        1.3563368055555555e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.2553738418910728,
+        0.2736492336998874,
+        0.24429604294744134,
+        4.329379167027448e-05
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 54
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.031684027777777776,
+        0.026357014973958332,
+        0.0309295654296875,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.11790421045198647,
+        0.09777954666546838,
+        0.11484859961869058,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 71
+    }
+  },
+  "feedback": [
+    "Actual function902 defines clean-water production and removal of excess atmospheric oxygen. CDB18 architecture context reviewed. Paletted surface ground0/completebody1 and catalogue0/10/20/30/40 reviewed. Reveal/highlight is a fixed view, not rotation or operating timing.",
+    "One actual ImageGen request used. Concept preserves broad rounded lower body, narrow capped tower, six brass front fittings, smaller upper fitting, lower slots and tall side recess. Concept tower height, lower-slot count, rim forms and mottled finish differ; retain assessed geometry and authored maps rather than adopting these deviations.",
+    "All83evaluated components and65,890triangles preserved without reduction or new wear. Existing recessed lower slots, side channel, two measurable dents, six face/body contacts and authored wear retained.",
+    "Actual saved-native and independent GLB checks cover every protected component, positive closed surfaces, one sampled contact component and prior anatomy ray checks. Complete decoded used texture channels and scalar material values compared at8-bit quantization. Known glTF material variants for different UV indices normalized only after shading equality checks; other material identity retained.",
+    "All used UV corners projected bidirectionally by material, retaining per-object shader-selected UV maps. Nine actual renders compare source/native/import at three corresponding angles. Pixel export equivalence does not establish a numerical legacy-fidelity percentage or final user artistic acceptance.",
+    "Static body1 overground0,RIS2construction separate; no invented mechanism, operating animation or glow. Client scale/placement/state/damage integration, exhaustive solid contacts and Android frame rate remain separate.",
+    "One canonical editable Blend/GLB selection for gameplay, build menu and SciTek. Technical diagrams derive from the same geometry. Earlier studies remain historical evidence, excluded from current payload selection. Programme248 remains unfinished."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

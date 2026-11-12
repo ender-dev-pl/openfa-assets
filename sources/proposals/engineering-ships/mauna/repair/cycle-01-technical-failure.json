@@ -1,0 +1,24 @@
+{
+  "culture": "mauna",
+  "role": "repair",
+  "cycle": 1,
+  "binaries": {
+    "blend": "95c01704ede7dd083dfe67f0f0b286cfac5a5a68e93b8e5642a7187c25bd85e4",
+    "glb": "6b83ad61d4b5846d5fa88fb31c58521183c55ae791da832831ff064004d1bea8"
+  },
+  "author_sha256": "339684936371be4ff3bde8c34d4ea6caab78907e317190b1e969b37a8686c498",
+  "verifier": "sources/tools/blender/proposals/verify_engineering_refinement.py",
+  "verifier_sha256": "6516a5fb1a146d08baf88fbfa5710f6d79279edeea5c99def5a26cfab081adbf",
+  "status": "technical-check-failed",
+  "failure": "Unsupported geometry: six tower recessed-slot backing inserts have no physical contact with the inset floor.",
+  "parts": [
+    "Mauna tower recessed slot -10.72",
+    "Mauna tower recessed slot -10.94",
+    "Mauna tower recessed slot -11.16",
+    "Mauna tower recessed slot 10.72",
+    "Mauna tower recessed slot 10.94",
+    "Mauna tower recessed slot 11.16"
+  ],
+  "next_correction": "Move the backing inserts into the actual inset floor. Do not weaken the support graph check.",
+  "diagnosis": "Actual saved native and independent GLB diagnostic renders inspected;these do not constitute runtime acceptance."
+}

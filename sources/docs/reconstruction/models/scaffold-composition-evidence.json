@@ -1,0 +1,264 @@
+{
+  "issue": 983,
+  "executable_sha256": "447c5893904e36fd1b0c48dfc17692db369ba8321443a6cc752a8c9c5582a3f0",
+  "memory_sha256": "3aa6bc162e0233933a16d0204e68ea333bbc044beb9924b9df3ecfd1f582e23b",
+  "generator_sha256": "29730f95731fba86d77588b5cfadbefb609454825f47e4120538fdc91c6e45b8",
+  "cases": [
+    {
+      "child_chain": {
+        "levels": 1,
+        "keys": [
+          100
+        ],
+        "allocator_calls": 0,
+        "existing_child_reused": false,
+        "executed_child_code_unchanged": true
+      },
+      "dispatch": {
+        "input_keys": [
+          100
+        ],
+        "prepared_keys": [
+          100
+        ],
+        "callback_keys": [
+          100
+        ],
+        "stubbed_helpers": [
+          "0x7fc5a"
+        ],
+        "executed_code_unchanged": true
+      }
+    },
+    {
+      "child_chain": {
+        "levels": 2,
+        "keys": [
+          100,
+          101
+        ],
+        "allocator_calls": 1,
+        "existing_child_reused": true,
+        "executed_child_code_unchanged": true
+      },
+      "dispatch": {
+        "input_keys": [
+          101,
+          100
+        ],
+        "prepared_keys": [
+          100,
+          101
+        ],
+        "callback_keys": [
+          100,
+          101
+        ],
+        "stubbed_helpers": [
+          "0x7fc5a"
+        ],
+        "executed_code_unchanged": true
+      }
+    },
+    {
+      "child_chain": {
+        "levels": 3,
+        "keys": [
+          100,
+          101,
+          102
+        ],
+        "allocator_calls": 2,
+        "existing_child_reused": true,
+        "executed_child_code_unchanged": true
+      },
+      "dispatch": {
+        "input_keys": [
+          102,
+          101,
+          100
+        ],
+        "prepared_keys": [
+          100,
+          101,
+          102
+        ],
+        "callback_keys": [
+          100,
+          101,
+          102
+        ],
+        "stubbed_helpers": [
+          "0x7fc5a"
+        ],
+        "executed_code_unchanged": true
+      }
+    },
+    {
+      "child_chain": {
+        "levels": 9,
+        "keys": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108
+        ],
+        "allocator_calls": 8,
+        "existing_child_reused": true,
+        "executed_child_code_unchanged": true
+      },
+      "dispatch": {
+        "input_keys": [
+          108,
+          107,
+          106,
+          105,
+          104,
+          103,
+          102,
+          101,
+          100
+        ],
+        "prepared_keys": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108
+        ],
+        "callback_keys": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108
+        ],
+        "stubbed_helpers": [
+          "0x7fc5a"
+        ],
+        "executed_code_unchanged": true
+      }
+    },
+    {
+      "child_chain": {
+        "levels": 11,
+        "keys": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110
+        ],
+        "allocator_calls": 10,
+        "existing_child_reused": true,
+        "executed_child_code_unchanged": true
+      },
+      "dispatch": {
+        "input_keys": [
+          110,
+          109,
+          108,
+          107,
+          106,
+          105,
+          104,
+          103,
+          102,
+          101,
+          100
+        ],
+        "prepared_keys": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110
+        ],
+        "callback_keys": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110
+        ],
+        "stubbed_helpers": [
+          "0x7fc5a"
+        ],
+        "executed_code_unchanged": true
+      }
+    },
+    {
+      "dispatch": {
+        "input_keys": [
+          103,
+          100,
+          102,
+          101
+        ],
+        "prepared_keys": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "callback_keys": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "stubbed_helpers": [
+          "0x7fc5a"
+        ],
+        "executed_code_unchanged": true
+      }
+    }
+  ],
+  "result": "Within nonwrapping positive priorities, scaffold parents precede their higher-level children in body callback dispatch: bottom-to-top/lower-first",
+  "scope": "Original unpatched instruction execution in isolated synthetic descriptor/global fixtures; not a running game or full sprite compositor",
+  "substitutions": {
+    "0x72393": "Allocator returns controlled empty descriptor; original child helper still writes fields",
+    "0x6A7FD": "Cache release stub if called",
+    "0x7FC5A": "Clipping/dirty-region helper returns without drawing",
+    "0x4ffe00": "Fixture sprite callback records prepared key; no original sprite rasterizer or palette effects executed"
+  },
+  "limitations": [
+    "Raw unrelocated data-relative globals deliberately bound to fixture memory; no full LE relocation/runtime claim",
+    "Positive distinct priorities without 32-bit wrap; ownership, visibility and arbitrary descriptor flags not covered",
+    "No pixel blending, shadow/palette ramps, source sprite ordering beyond these body descriptors, or game integration proof"
+  ],
+  "body_order_verified": true,
+  "full_pixel_composition_verified": false,
+  "final_visual_acceptance": false
+}

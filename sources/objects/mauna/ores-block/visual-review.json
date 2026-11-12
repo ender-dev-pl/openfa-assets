@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/148",
+  "binaries": {
+    "blend": "c6634a68a2cd58df075f5ddba203e644e45f7bd11b312005301834ac38dfe32a",
+    "glb": "2ce2c73aa59ea793ec43256e53b6944d622c75ec70da3770ffe6b5f0dac007da"
+  },
+  "runtime_report_sha256": "49fb9560e7ce3a09255538ce863bfaf6072c7934d3559295d25a88358284f5ac",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.000140619591554171,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00019704988177007094,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.000447127207690588,
+      "margin": 43
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn19-review-1.png",
+      "sha256": "4fba60617fb057f5292f854267b329534f9c9eb72d992398e06bce6881dacc88",
+      "prompt": "sources/docs/reconstruction/models/mn19-concept-prompt-1.txt",
+      "feedback": "Selected after actual comparison with own paletted body1, enlarged catalogue and all41 image updates. Retains the tall slender rectangular grey-blue tower, upper broad dark front field, three brass upper-right insets, three tall middle-right slots, four short faint front marks, red band above the lower third, two angular lower brass reinforcements per visible face and small square roof inspection socket. Own source governs exact strap thickness and sparse surface detail over heavier incidental concept fittings. Hidden engineering, field/roof depths, rear continuations and cell-relative proportions are authored. No emission, teleportation or operating cycle is established."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "binaries": {
+        "blend": "48c08258ee34a347ee93a84fd6c58881463529abacf0899e08075dfdd7fa2256",
+        "glb": "81d867006ce65fec7cfa6a9907b527d0fc2b4ad9ccc6d9ac48c5aef60be4cc0e"
+      },
+      "runtime_report_sha256": "eb38e1b73d6b2a7f8989dab199be24bbcb0165de17c28aae84f3a2809a767244",
+      "inspected": [
+        "Actual saved-native whole front-quarter view and actual independent-GLB upper/roof close-up against own legacy and selected ImageGen concept"
+      ],
+      "finding": "Characteristic stacked tower,field counts,red band,slender lower brass bends and blind roof well are present; all native/imported geometry/contact/material tests pass. The three upper brass insets are too dark/brown under the shared review light compared with the own source gold and reviewed concept.",
+      "action": "Brighten brass base reflectance to source gold and use a more oxidized/diffuse brass finish,without adding emission or altering geometry. Re-export and rerun exact native/imported verification and whole/detail visual review.",
+      "accepted": false
+    },
+    {
+      "iteration": 2,
+      "binaries": {
+        "blend": "c6634a68a2cd58df075f5ddba203e644e45f7bd11b312005301834ac38dfe32a",
+        "glb": "2ce2c73aa59ea793ec43256e53b6944d622c75ec70da3770ffe6b5f0dac007da"
+      },
+      "runtime_report_sha256": "49fb9560e7ce3a09255538ce863bfaf6072c7934d3559295d25a88358284f5ac",
+      "inspected": [
+        "Actual own-source and selected concept with all three saved-native and independently imported GLB whole views, upper inspection/inset detail, lower reinforcement detail and canonical technical wireframe on source-concept-native-glb-review-2.jpg"
+      ],
+      "finding": "Final source-led slender stacked tower preserves one dark cap-front field, three upper-right brass insets, three middle-right framed slots, four faint front marks, one red waist band, four continuous lower brass bends and sealed square roof inspection well. Revised oxidized brass is readable without emission. Native/imported views agree; wear remains subordinate to silhouette and sparse construction. Agent visual review accepted for asset delivery.",
+      "limitations": [
+        "Hidden depths, strap sections, rear band continuation and cell-relative dimensions are authored interpretations, not recovered metric dimensions.",
+        "Final user artistic approval, client world-scale/shader handling and Android performance remain separate integration checks."
+      ],
+      "accepted": true,
+      "final_user_artistic_acceptance": false,
+      "game_client_integration": false
+    }
+  ],
+  "final_review": "Final source-led slender stacked tower preserves one dark cap-front field, three upper-right brass insets, three middle-right framed slots, four faint front marks, one red waist band, four continuous lower brass bends and sealed square roof inspection well. Revised oxidized brass is readable without emission. Native/imported views agree; wear remains subordinate to silhouette and sparse construction. Agent visual review accepted for asset delivery.",
+  "limitations": [
+    "Hidden depths, strap sections, rear band continuation and cell-relative dimensions are authored interpretations, not recovered metric dimensions.",
+    "Final user artistic approval, client world-scale/shader handling and Android performance remain separate integration checks."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

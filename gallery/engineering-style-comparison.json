@@ -1,0 +1,371 @@
+{
+  "issue": 265,
+  "purpose": "Construction-style comparison;current engineering proposals against current small-craft catalogue models.",
+  "limits": "Actual model previews;canonical GLB references use the same review studio where a source-bound reference report is available. Other cameras and lighting vary between authoring passes. Image fitting normalizes display size independently and does not establish physical game scale. Scout/research craft are labelled separately from combat/craft references.",
+  "cultures": [
+    {
+      "culture": "terran",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/terran/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/terran/terraform/imported-front-quarter.png",
+          "model_sha256": "f9dd25a937b9153fc51b098cb653df7422f9fcb23bf602621894077fc9317146",
+          "image_sha256": "d915bc84d4722d2c9344b271514609653025ddc8e5139c2d800127e3f6054548"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/terran/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/terran/repair/imported-front-quarter.png",
+          "model_sha256": "12a4cd30acfde835d022a740183248c4b77e0e6d34dab14d0e28d169de4a9635",
+          "image_sha256": "05491b9679d633e992d88a9daac7e6288b88432ed2259aaded5f58e6e0031fad"
+        },
+        {
+          "name": "Assault Fighter",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:assault-fighter",
+          "stage": "layered-construction",
+          "model": "sources/objects/terran/assault-fighter/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/terran/canonical-references/assault-fighter-front-quarter.png",
+          "model_sha256": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+          "image_sha256": "68d3644b7d9a1d52be96826787ea773e31f2130b0fe7419d7e7413f9b8665d33",
+          "catalogue_image": "gallery/media/objects/terran/assault-fighter/construction/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Scoutship",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:scoutship",
+          "stage": "layered-construction",
+          "model": "sources/objects/terran/scoutship/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/terran/canonical-references/scoutship-front-quarter.png",
+          "model_sha256": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+          "image_sha256": "8c07bc43788a30d94dcbcb202f5bbb19d493fb7554801d27de606bbe3d0fcf0a",
+          "catalogue_image": "gallery/media/objects/terran/scoutship/construction/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "common_studio": true,
+      "assessment": "Canonical-style pass:two reviewed cycles introduced a tapered layered deck,swept faceted gondolas,quiet red fields and canonical violet-grey/brass PBR targets. Actual complete Hull GLBs are compared in the same studio with construction layers omitted. Terraform retains its rotor;repair has six channels including independently closing jaws. Utility bodies remain broader than the combat wedge;user artistic acceptance is pending.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "rigellian",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/rigellian/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/rigellian/terraform/imported-front-quarter.png",
+          "model_sha256": "50e63b1542cfc8553237641d8a4bebabb693ef920d1bced1c0b615e4f5e0e4e6",
+          "image_sha256": "113317ba3b919c1edcc50952d24303bbc50e10ff3789437e5b24b71acadb735c"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/rigellian/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/rigellian/repair/imported-front-quarter.png",
+          "model_sha256": "7ae89bd629fe6b8c4d690292b579200076f6b0aca346b7e48c61a16a98d19bc4",
+          "image_sha256": "eb474b7f33f04803a43bd19d32d234cb475aa6e9a2abedd15c1e969aa4331567"
+        },
+        {
+          "name": "Delphini Assault",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/rigellian/delphini-assault",
+          "stage": "hi-def-broad-skin-refinement",
+          "model": "sources/objects/rigellian/delphini-assault/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/rigellian/canonical-references/delphini-assault-front-quarter.png",
+          "model_sha256": "c53348af89975c6a16059cc3a1c46575754d94b932d3645f447147ad0fdec91c",
+          "image_sha256": "c4d5c373068f82d5cdb780f0816e95f877a2c5a00f4fd69eb1ad39a7aaf40be1",
+          "catalogue_image": "gallery/media/objects/rigellian/delphini-assault/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Lazzaro Research",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/rigellian/lazzaro-research",
+          "stage": "hi-def-broad-skin-refinement",
+          "model": "sources/objects/rigellian/lazzaro-research/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/rigellian/canonical-references/lazzaro-research-front-quarter.png",
+          "model_sha256": "d3c574f8aa3545f8e01bf35a9c2576d8aa4f1090aee7fd750ac1d02c2d6b65ab",
+          "image_sha256": "6e087d0094f67e773b1c9edad7432f2fcda7afe9b96927f508460702952874f2",
+          "catalogue_image": "gallery/media/objects/rigellian/lazzaro-research/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "common_studio": true,
+      "assessment": "Canonical hidef alignment:second reviewed cycle adopts slate-jade,pale alloy,ochre and copper colours,with seated service lids,cooling louvres and protected tool covers. Corrected hidef Delphini and Lazzaro replace the older reference models in this same-studio comparison. Repair retains six animation channels with separate jaws. User artistic acceptance is pending.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "braccatian",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/braccatian/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/braccatian/terraform/imported-front-quarter.png",
+          "model_sha256": "79bfcf19234dbbeddc808a5f4f518a9f81b5bc511aeaa2bc16687673dea3701d",
+          "image_sha256": "aaad14bee770f5b1df5d39a25f153d9ff28fbc3a2aea3f595920f9de4d811316"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/braccatian/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/braccatian/repair/imported-front-quarter.png",
+          "model_sha256": "23c1ddb7edc061a2c598a157bfc269a0b4903becb9aa80cfd9c003b90271bf68",
+          "image_sha256": "cc08ef5936572b5260159189f28a3f10106799ce8a7e38c83a6e119167b4da1d"
+        },
+        {
+          "name": "Morning Glory",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/morning-glory",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/morning-glory/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/braccatian/canonical-references/morning-glory-front-quarter.png",
+          "model_sha256": "b3e9ded923afcd331caa5c0671f3ba2f2766d32b9899797f904babc59acbc4df",
+          "image_sha256": "5e42f5f42790b128cf2d49941cf4b9ed68c752020e6c905be21ff566252a59cd",
+          "catalogue_image": "gallery/media/objects/braccatian/morning-glory/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Rattlesnake",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/rattlesnake",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/rattlesnake/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/braccatian/canonical-references/rattlesnake-front-quarter.png",
+          "model_sha256": "a1e9813632151814e7850892bb30c17e5c66db0d296d7fc589f2556c9e66921e",
+          "image_sha256": "43b49d9ec28f14f02ab9f6dca3e19ab028f0eb2f44b4727b6d42214e0cb6b35d",
+          "catalogue_image": "gallery/media/objects/braccatian/rattlesnake/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "common_studio": true,
+      "assessment": "Canonical-style pass:three reviewed cycles introduced rose-copper lobes and waist,pale ochre prow,narrow raised inlays and a surface-fitting repair strap. Five colour/ORM targets match current canonical atlas tiles;actual canonical GLBs are rendered in the same studio. Repair has a positioning yoke and independently closing fingers. Utility proportions remain distinct;user artistic acceptance is pending.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "mikotaj",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mikotaj/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mikotaj/terraform/imported-front-quarter.png",
+          "model_sha256": "2b1ff96f611372bbbe7475d64524d2386817c7565b607eadee2be205d1120932",
+          "image_sha256": "e6b1e1aef7936ced7012bd2ec4fe550c8ca391f79e8bee01328ef976bb6c8376"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mikotaj/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mikotaj/repair/imported-front-quarter.png",
+          "model_sha256": "686494d0107b14249c2ed0fe5c1c663d9c144166d467b258e61088a75313ec79",
+          "image_sha256": "d560378018169c63cb2103a96e81d7856f423452a81f24099ee7594f60acd6ad"
+        },
+        {
+          "name": "Ylikt-shan",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/ylikt-shan",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/ylikt-shan/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mikotaj/canonical-references/ylikt-shan-front-quarter.png",
+          "model_sha256": "52de04f4769a1f321ced5dd41d8c5a00e69f326e9de28be1828a60bf4c890b1c",
+          "image_sha256": "dfe9fe806e415def4a55e85f96d13aac7efaba680d56bd7614542becdfd77f30",
+          "catalogue_image": "gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Hiero",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/hiero",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/hiero/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mikotaj/canonical-references/hiero-front-quarter.png",
+          "model_sha256": "eeb25924535c4c059c130777922f79790beb18963f6debdb3749fb6635d9161a",
+          "image_sha256": "45a2ab1a6e000a358df8d650e5ad29fbff1c03e64d79b2af61a327c17f3f75de",
+          "catalogue_image": "gallery/media/objects/mikotaj/hiero/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "common_studio": true,
+      "assessment": "Canonical-style pass:three reviewed cycles introduced slate-blue/gunmetal structure,dulled-gold accents,tapered rail profiles and slimmer faceted pods related to Ylikt-shan and Hiero. Gold and primary paint map medians match the canonical authored palette. Utility frames and tools remain functionally distinct;user artistic acceptance is pending.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "artemian",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/artemian/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/artemian/terraform/imported-front-quarter.png",
+          "model_sha256": "48e0e8606ee318b15da72e2685c26041f6116239e76e6fc499177dde6949b37e",
+          "image_sha256": "5359c389b3e9c87061659343a02ff73c4178b85b3ad73bd01dcaba13e07e68a3"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/artemian/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/artemian/repair/imported-front-quarter.png",
+          "model_sha256": "6931c183a8874880f8f2dca62379b51673b4e1abec63bfeaebeff7cb52689672",
+          "image_sha256": "27fa8dea8062f0e368a07c5ce5b927d3502ff4f43ce90ceaddb2163a2ebe2567"
+        },
+        {
+          "name": "All-Purpose Assault",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/artemian/all-purpose-assault",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/artemian/all-purpose-assault/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/artemian/canonical-references/all-purpose-assault-front-quarter.png",
+          "model_sha256": "fd39236bf4aa9ee616adcb65c37dbcc24ae92b76b827e7c0fc7fcf0b61b73ee1",
+          "image_sha256": "050397ebe753e57f0b583c1aa349cba2267e5e800b1887c53f8066f54acd440c",
+          "catalogue_image": "gallery/media/objects/artemian/all-purpose-assault/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Gerla-Kans Explorer",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/artemian/gerla-kans-explorer",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/artemian/gerla-kans-explorer/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/artemian/canonical-references/gerla-kans-explorer-front-quarter.png",
+          "model_sha256": "68f44c6f41378cd423ad6e68d3a754f52429aa470ceef1a6b8056009c4e5b57c",
+          "image_sha256": "dc320a7c99a0fe11c05bd71c98c1be4553f3d40eed7164022f54631d0080c397",
+          "catalogue_image": "gallery/media/objects/artemian/gerla-kans-explorer/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "common_studio": true,
+      "assessment": "Canonical-style pass:two reviewed cycles introduced a pointed green deck,separated faceted silver fairings and canonical material medians. Current canonical GLB references are rendered in the same review studio. Repair has independent sliders,wrist and closing jaws;user artistic acceptance is pending.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "mauna",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mauna/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mauna/terraform/imported-front-quarter.png",
+          "model_sha256": "29b04e9dc0456535f4d43b6f0e89cb453e730c940757ce3d6e493fa92ae2cf93",
+          "image_sha256": "78513afeff87598f68337ecd1ad5dc00be7565653275164db8808d398fbff079"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mauna/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mauna/repair/imported-front-quarter.png",
+          "model_sha256": "c88e790c22b797ac113a8f2fdd65dd08f5c9383c7c0e1d9f9292a41cd49c3c63",
+          "image_sha256": "4807b902fa0673baa0c0a99b3489c63d6352f4c387a929f0f830b8da92bad7b4"
+        },
+        {
+          "name": "Combat Craft Type 1.5",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mauna/combat-craft-type-1-5",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mauna/combat-craft-type-1-5/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mauna/canonical-references/combat-craft-type-1-5-front-quarter.png",
+          "model_sha256": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
+          "image_sha256": "b2db76cffe85515da8bc5b3e7426d94b8fd3585fda6ba0fff210285cee20dee1",
+          "catalogue_image": "gallery/media/objects/mauna/combat-craft-type-1-5/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Surveillance Craft Type 5",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mauna/surveillance-craft-type-5",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mauna/surveillance-craft-type-5/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mauna/canonical-references/surveillance-craft-type-5-front-quarter.png",
+          "model_sha256": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
+          "image_sha256": "d664b7a55cc3617abbdb4295637aa8bbcfdd882a298e04e0d49d1913ebca18d4",
+          "catalogue_image": "gallery/media/objects/mauna/surveillance-craft-type-5/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "common_studio": true,
+      "assessment": "Canonical-style pass:Terraform used three actual attempts,Repair two (technical failures retained). Orthogonal slabs,stepped roofs,grey main bodies,blue-grey service insets and true recessed slots now follow the fleet. Five colour/ORM targets match canonical atlas tiles;actual GLB references use the same studio. Repair has five channels including independent jaws and a wrist. User artistic acceptance is pending.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "achaean",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/achaean/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/achaean/terraform/imported-front-quarter.png",
+          "model_sha256": "e69580866eeef04396a736ed3233e6f8fc7cb61041941d2640be1c4d2fe44856",
+          "image_sha256": "c63ebea8367e0ae19b16d128a28f8adf0dbf9e38defb20c20e013fdf9676525f"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/achaean/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/achaean/repair/imported-front-quarter.png",
+          "model_sha256": "63f1a86236f4bf460347572bfe94a6a71d1b0e69bd73fce4be24942fb0438b50",
+          "image_sha256": "316b12da4057a2f5065eac3307bc9efd47e366d58e1182e810f5999ae442a8c1"
+        },
+        {
+          "name": "Dedicated Fighter",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/achaean/dedicated-fighter",
+          "stage": "legacy-hi-def-remaster",
+          "model": "sources/objects/achaean/dedicated-fighter/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/achaean/canonical-references/dedicated-fighter-front-quarter.png",
+          "model_sha256": "78b8144db063fed2947dd075dc7691eeef584b91bccfd98684f3dc02cd6e47a9",
+          "image_sha256": "7e11ec734e79bea1c6ccd3cdc86bfc20daf18d78059bdbf84bcc82a01b300d7c",
+          "catalogue_image": "gallery/media/objects/achaean/dedicated-fighter/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        },
+        {
+          "name": "Hunter/Prospector",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/achaean/hunter-prospector",
+          "stage": "legacy-hi-def-remaster",
+          "model": "sources/objects/achaean/hunter-prospector/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/achaean/canonical-references/hunter-prospector-front-quarter.png",
+          "model_sha256": "a2f09789f56162e3570f6bc2dcc01fc837f1ad388ac65210c2d0efaeff00ef5c",
+          "image_sha256": "91458d3db612fdcd3d0e8068661a01fa8ebcf1dcba83fbd12ef426545b8bbb23",
+          "catalogue_image": "gallery/media/objects/achaean/hunter-prospector/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
+        }
+      ],
+      "common_studio": true,
+      "assessment": "Canonical-style pass:two reviewed cycles introduced a pointed copper forebody,continuous crimson fields following the full mirrored silver-wing spline,and four canonical colour/ORM targets. Actual canonical GLBs use the same review studio. Repair has support,wrist and independent claws (four channels);mirrored wing surfaces are verified despite benign imported corner splits. User artistic acceptance is pending.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/134",
+  "key": "MN05",
+  "name": "Health Block",
+  "culture": "mauna",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 34,
+  "construction_updates": 16,
+  "triangles": 2176,
+  "triangle_budget": 30000,
+  "mesh_nodes": 22,
+  "materials": 6,
+  "author": "sources/tools/blender/remaster_mauna_health_block.py",
+  "author_sha256": "6206594461c6c6257fa645e9edd22948ff4d1419295ad7bb5938f79c49df5108",
+  "binaries": {
+    "blend": "2bb071affea6a7f1d5c6fa26fd08f83f85a804125f2495045cea8d213951cc5f",
+    "glb": "9cfa529a7102ad96c7668da4f806f9e2a4e0149679785ec5c8a0ff1205d2f5e8"
+  },
+  "textures": {
+    "cast-concrete-colour.png": "a9d68cee954bfa22a90314aba17bbf7766da407b3796b5a26ef1dee38151f3f6",
+    "cast-service-normal.png": "d56d551a56b7b8bbcdaa0cc8884904b8c5d0f90bf76e6d7055d85203e648e2f9",
+    "concrete-orm.png": "30c3a2b30c60ba45c814427dd4560acb796dfe328f92464730fdb9aeceed8c00",
+    "metal-orm.png": "669b47dcab2fb86bfd5424d9a60dc4b207c89bcd1fc046c857221e9397820c6e",
+    "pale-alloy-colour.png": "1cee4d0d59b39e253405e4d23bced840e8ce3e23c52ed0554fe95281772fecab",
+    "recess-red-colour.png": "42b8b8abc80e55f8fb64216959cdc8c426e09dd6686130326be72e9d7bf0b28f",
+    "used-brass-colour.png": "a74553520c70cdc8c3c3f74dec0d537c4e9ee5a8ae7f5c5b7320e3f48dc5ec6a",
+    "window-amber-colour.png": "306483ebd8d3e019e2d045a96b225a18b2de12ebdfea2732d509fea0f1a1bff0",
+    "window-orm.png": "0d33bf9cb825b9ae38bf2f5c353d6eb4bc46facfc75569ac2492fa271efe52c5"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Health Block upper front backing",
+      "body": "Health Block smaller upper tower",
+      "point": [
+        -0.11999999731779099,
+        -0.34000009298324585,
+        2.049999952316284
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Health Block upper right backing",
+      "body": "Health Block smaller upper tower",
+      "point": [
+        0.29999983310699463,
+        0.07999999821186066,
+        2.049999952316284
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Health Block mid front left backing",
+      "body": "Health Block lower concrete body",
+      "point": [
+        -0.44999998807907104,
+        -0.7000000476837158,
+        1.2699999809265137
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Health Block mid front right backing",
+      "body": "Health Block lower concrete body",
+      "point": [
+        -0.20000000298023224,
+        -0.7000002861022949,
+        1.190000057220459
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Health Block lower front point backing",
+      "body": "Health Block lower concrete body",
+      "point": [
+        0.0,
+        -0.7000000476837158,
+        0.4300000071525574
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Health Block lower right 0 backing",
+      "body": "Health Block lower concrete body",
+      "point": [
+        0.7000000476837158,
+        -0.3199999928474426,
+        0.5099999904632568
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Health Block lower right 1 backing",
+      "body": "Health Block lower concrete body",
+      "point": [
+        0.7000000476837158,
+        0.0,
+        0.5099999904632568
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Health Block lower right 2 backing",
+      "body": "Health Block lower concrete body",
+      "point": [
+        0.6999998092651367,
+        0.3199999928474426,
+        0.5099999904632568
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Health Block lower brass panel 0",
+      "body": "Health Block lower concrete body",
+      "point": [
+        -0.44999998807907104,
+        -0.7000000476837158,
+        0.3700000047683716
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.012
+    },
+    {
+      "object": "Health Block lower brass panel 1",
+      "body": "Health Block lower concrete body",
+      "point": [
+        0.4000000059604645,
+        -0.7000000476837158,
+        0.3700000047683716
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.012
+    },
+    {
+      "object": "Health Block red corner strip 0",
+      "body": "Health Block lower concrete body",
+      "point": [
+        0.6100000143051147,
+        -0.7000000476837158,
+        0.36000001430511475
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Health Block red corner strip 1",
+      "body": "Health Block lower concrete body",
+      "point": [
+        0.6100000143051147,
+        -0.7000000476837158,
+        1.100000023841858
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.04
+    }
+  ],
+  "pane_banks": [
+    {
+      "key": "upper front",
+      "body": "Health Block smaller upper tower",
+      "backing": "Health Block upper front backing",
+      "cols": 2,
+      "rows": 2,
+      "contacts": [
+        [
+          -0.17999999225139618,
+          -0.2980000972747803,
+          1.9900000095367432
+        ],
+        [
+          -0.05999999865889549,
+          -0.2980000972747803,
+          1.9900000095367432
+        ],
+        [
+          -0.17999999225139618,
+          -0.2980000972747803,
+          2.109999895095825
+        ],
+        [
+          -0.05999999865889549,
+          -0.2980000972747803,
+          2.109999895095825
+        ]
+      ]
+    },
+    {
+      "key": "upper right",
+      "body": "Health Block smaller upper tower",
+      "backing": "Health Block upper right backing",
+      "cols": 2,
+      "rows": 2,
+      "contacts": [
+        [
+          0.25799983739852905,
+          0.019999999552965164,
+          1.9900000095367432
+        ],
+        [
+          0.25799983739852905,
+          0.14000000059604645,
+          1.9900000095367432
+        ],
+        [
+          0.25799983739852905,
+          0.019999999552965164,
+          2.109999895095825
+        ],
+        [
+          0.25799983739852905,
+          0.14000000059604645,
+          2.109999895095825
+        ]
+      ]
+    },
+    {
+      "key": "mid front left",
+      "body": "Health Block lower concrete body",
+      "backing": "Health Block mid front left backing",
+      "cols": 1,
+      "rows": 2,
+      "contacts": [
+        [
+          -0.44999998807907104,
+          -0.6580000519752502,
+          1.2074999809265137
+        ],
+        [
+          -0.44999998807907104,
+          -0.6580000519752502,
+          1.3324999809265137
+        ]
+      ]
+    },
+    {
+      "key": "mid front right",
+      "body": "Health Block lower concrete body",
+      "backing": "Health Block mid front right backing",
+      "cols": 1,
+      "rows": 2,
+      "contacts": [
+        [
+          -0.20000000298023224,
+          -0.6580002903938293,
+          1.127500057220459
+        ],
+        [
+          -0.20000000298023224,
+          -0.6580002903938293,
+          1.252500057220459
+        ]
+      ]
+    },
+    {
+      "key": "lower front point",
+      "body": "Health Block lower concrete body",
+      "backing": "Health Block lower front point backing",
+      "cols": 1,
+      "rows": 1,
+      "contacts": [
+        [
+          0.0,
+          -0.6580000519752502,
+          0.4300000071525574
+        ]
+      ]
+    },
+    {
+      "key": "lower right 0",
+      "body": "Health Block lower concrete body",
+      "backing": "Health Block lower right 0 backing",
+      "cols": 1,
+      "rows": 2,
+      "contacts": [
+        [
+          0.6580000519752502,
+          -0.3199999928474426,
+          0.44749999046325684
+        ],
+        [
+          0.6580000519752502,
+          -0.3199999928474426,
+          0.5724999904632568
+        ]
+      ]
+    },
+    {
+      "key": "lower right 1",
+      "body": "Health Block lower concrete body",
+      "backing": "Health Block lower right 1 backing",
+      "cols": 1,
+      "rows": 2,
+      "contacts": [
+        [
+          0.6580000519752502,
+          0.0,
+          0.44749999046325684
+        ],
+        [
+          0.6580000519752502,
+          0.0,
+          0.5724999904632568
+        ]
+      ]
+    },
+    {
+      "key": "lower right 2",
+      "body": "Health Block lower concrete body",
+      "backing": "Health Block lower right 2 backing",
+      "cols": 1,
+      "rows": 2,
+      "contacts": [
+        [
+          0.6579998135566711,
+          0.3199999928474426,
+          0.44749999046325684
+        ],
+        [
+          0.6579998135566711,
+          0.3199999928474426,
+          0.5724999904632568
+        ]
+      ]
+    }
+  ],
+  "conduit_contacts": [
+    {
+      "index": 0,
+      "upper_contact": [
+        0.29424017667770386,
+        -0.30000001192092896,
+        1.8461765050888062
+      ],
+      "mount_contact": [
+        0.7549999952316284,
+        -0.30000001192092896,
+        1.0419999361038208
+      ],
+      "wall_contact": [
+        0.685,
+        -0.3,
+        1.055
+      ],
+      "route": [
+        [
+          0.2849999964237213,
+          -0.30000001192092896,
+          1.850000023841858
+        ],
+        [
+          0.4300000071525574,
+          -0.30000001192092896,
+          1.7899999618530273
+        ],
+        [
+          0.6899999976158142,
+          -0.30000001192092896,
+          1.6699999570846558
+        ],
+        [
+          0.7549999952316284,
+          -0.30000001192092896,
+          1.600000023841858
+        ],
+        [
+          0.7549999952316284,
+          -0.30000001192092896,
+          1.0299999713897705
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "upper_contact": [
+        0.29424017667770386,
+        -0.03999999910593033,
+        1.8461765050888062
+      ],
+      "mount_contact": [
+        0.7549999952316284,
+        -0.03999999910593033,
+        1.0419999361038208
+      ],
+      "wall_contact": [
+        0.685,
+        -0.04,
+        1.055
+      ],
+      "route": [
+        [
+          0.2849999964237213,
+          -0.03999999910593033,
+          1.850000023841858
+        ],
+        [
+          0.4300000071525574,
+          -0.03999999910593033,
+          1.7899999618530273
+        ],
+        [
+          0.6899999976158142,
+          -0.03999999910593033,
+          1.6699999570846558
+        ],
+        [
+          0.7549999952316284,
+          -0.03999999910593033,
+          1.600000023841858
+        ],
+        [
+          0.7549999952316284,
+          -0.03999999910593033,
+          1.0299999713897705
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "upper_contact": [
+        0.29424017667770386,
+        0.2199999988079071,
+        1.8461765050888062
+      ],
+      "mount_contact": [
+        0.7549999952316284,
+        0.2199999988079071,
+        1.0419999361038208
+      ],
+      "wall_contact": [
+        0.685,
+        0.22,
+        1.055
+      ],
+      "route": [
+        [
+          0.2849999964237213,
+          0.2199999988079071,
+          1.850000023841858
+        ],
+        [
+          0.4300000071525574,
+          0.2199999988079071,
+          1.7899999618530273
+        ],
+        [
+          0.6899999976158142,
+          0.2199999988079071,
+          1.6699999570846558
+        ],
+        [
+          0.7549999952316284,
+          0.2199999988079071,
+          1.600000023841858
+        ],
+        [
+          0.7549999952316284,
+          0.2199999988079071,
+          1.0299999713897705
+        ]
+      ]
+    }
+  ],
+  "roof_elements": [
+    {
+      "object": "Health Block brass roof element 0",
+      "material": "brass",
+      "contact": [
+        -0.4,
+        -0.08,
+        2.43
+      ],
+      "top": 2.62
+    },
+    {
+      "object": "Health Block brass roof element 1",
+      "material": "brass",
+      "contact": [
+        -0.14,
+        0.04,
+        2.43
+      ],
+      "top": 2.9699999999999998
+    },
+    {
+      "object": "Health Block brass roof element 2",
+      "material": "brass",
+      "contact": [
+        0.17,
+        0.15,
+        2.43
+      ],
+      "top": 2.57
+    },
+    {
+      "object": "Health Block pale roof upright 0",
+      "material": "pale-alloy",
+      "contact": [
+        -0.28,
+        -0.03,
+        2.43
+      ],
+      "top": 2.86
+    },
+    {
+      "object": "Health Block pale roof upright 1",
+      "material": "pale-alloy",
+      "contact": [
+        -0.01,
+        0.24,
+        2.43
+      ],
+      "top": 3.1
+    }
+  ],
+  "physical_chips": [
+    {
+      "body": "Health Block smaller upper tower",
+      "point": [
+        -0.4000000059604645,
+        0.33000001311302185,
+        2.440000057220459
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "body": "Health Block lower concrete body",
+      "point": [
+        -0.5400000214576721,
+        -0.699999988079071,
+        0.75
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ],
+  "steady_pane_emission": {
+    "colour": [
+      0.3,
+      0.3,
+      0.065
+    ],
+    "strength": 0.25,
+    "scope": "Authored steady material preserving bright sourcepanes,not recovered timedlegacy lighting."
+  },
+  "interpretation": [
+    "Own steppedconcretebody,19smallamberpanes,two brasslowerpanels,redcornerstrips,three angular serviceconduits andfive roofelements(3brass/2pale) govern geometry.",
+    "Hiddenrearwalls,conduit/mountprofiles,blinddepths andcellrelative dimensions authored. PB34Terranopeningdome isnottransferred. No operatinganimation inferred."
+  ],
+  "scale_contract": "2x2 placement footprint,+Zup/-Yfront. Cell-relative proportions authored;no recovered metric dimensions.",
+  "concept_review": "sources/docs/reconstruction/models/mn05-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

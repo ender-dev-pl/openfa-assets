@@ -1,0 +1,90 @@
+{
+  "id": "terran:ship-yard",
+  "issue": 225,
+  "stage": "high-detail-refinement",
+  "source": "Independently authored geometry and PBR maps; legacy pixels are reference-only",
+  "footprint": [
+    3,
+    3
+  ],
+  "blend_sha256": "8d119e7fae6ff300f34643e28478bc6d1a0be724683ad3099f5baf050fe06da0",
+  "glb_sha256": "ac6b97852dff469d9dea1e3bca250f9975d6729dd81d71a1d0be469d8e83116f",
+  "generator_sha256": "a0ed4679d289cb69fe6ce378b62b8bde2a7b98ba18f7ca0c95772d7bc5d8484c",
+  "surface_generator_sha256": "49be6c62457c9e46235450b39f85de6e84cc0ea7a9c78e1452dc33e6028129cf",
+  "triangles": 53616,
+  "mesh_nodes": 32,
+  "materials": 1,
+  "texture_resolution": [
+    1024,
+    1024
+  ],
+  "texture_maps": [
+    "albedo",
+    "orm",
+    "emission"
+  ],
+  "rigid_animation": true,
+  "skeletal_meshes": false,
+  "frame_range": [
+    1,
+    300
+  ],
+  "fps": 30,
+  "components": {
+    "StaticBase": 1473,
+    "FabricationDeck": 115,
+    "CraneLift": 54,
+    "CraneSlew": 46,
+    "Antenna": 3,
+    "Trolley": 10,
+    "Hoist": 13,
+    "HoistCables": 4,
+    "Shutter_-1_0_-1": 7,
+    "Shutter_-1_0_+0": 7,
+    "Shutter_-1_0_+1": 7,
+    "Shutter_-1_1_-1": 7,
+    "Shutter_-1_1_+0": 7,
+    "Shutter_-1_1_+1": 7,
+    "Shutter_-1_2_-1": 7,
+    "Shutter_-1_2_+0": 7,
+    "Shutter_-1_2_+1": 7,
+    "Shutter_-1_3_-1": 7,
+    "Shutter_-1_3_+0": 7,
+    "Shutter_-1_3_+1": 7,
+    "Shutter_+1_0_-1": 7,
+    "Shutter_+1_0_+0": 7,
+    "Shutter_+1_0_+1": 7,
+    "Shutter_+1_1_-1": 7,
+    "Shutter_+1_1_+0": 7,
+    "Shutter_+1_1_+1": 7,
+    "Shutter_+1_2_-1": 7,
+    "Shutter_+1_2_+0": 7,
+    "Shutter_+1_2_+1": 7,
+    "Shutter_+1_3_-1": 7,
+    "Shutter_+1_3_+0": 7,
+    "Shutter_+1_3_+1": 7
+  },
+  "crane_rest": {
+    "frame": 120,
+    "beam_bottom_local_z": 0.905,
+    "support_top_local_z": 0.905
+  },
+  "source_reference": {
+    "building": "PB25.256",
+    "video": "PB25.VID",
+    "video_frames": 264
+  },
+  "limitations": [
+    "Telescopic shutter internals and mast retraction are authored interpretations; the lowered beam rests on the platform shoes, not below its deck.",
+    "No underground hangar volume or calibrated ship attachment sockets.",
+    "Client runtime integration and gameplay trigger binding require separate validation."
+  ],
+  "replaces_selection": "sources/docs/assets/bootstrap-3d/terran-refined/pb25/model.blend",
+  "preserved_previous_variants": true,
+  "metadata_normalization": {
+    "path_strings": 7,
+    "raw_before_sha256": "14cf9f81126856aa1c4315bd96bb264e773e3f580eed46803ce67f281e9adb3d",
+    "raw_after_sha256": "667431af5700caff124ecdf09a63d1d4afaeea4d8942563614f00c27dd5a563c",
+    "proof": "All decompressed bytes outside fixed-width absolute path strings unchanged; PNG non-image metadata stripped without re-encoding pixels"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/156",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "4c6fcbb7861134a6bb3455de9e77ec3920275a9dde337fd41589d35083b282cc",
+    "glb": "c0c2105076cc61d70ff9a699adca6b691277d6a3851c345fa32b42f4ad974283"
+  },
+  "metadata_sha256": "e6627945b7ec7e61d4c75d567b038f1d911c0c6c423e23858cc6588dd0a3f149",
+  "verifier": "sources/tools/blender/verify_achaean_building.py",
+  "helpers": {
+    "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f",
+    "sources/tools/blender/remaster_achaean_habitat.py": "466aef1d10502259a708a3707ec9f389bac602d1b9fb8abd9b8f750cf09a80d1",
+    "sources/tools/blender/verify_achaean_building.py": "cbeb66d67c81d145c97e0d1589bc8bbe1e0ea61265fae339655afee67c7680f0",
+    "sources/tools/blender/checks_achaean_habitat.py": "6d002ed57e0871f5f1e8f8faff77d3ad28cc9c2b670de73f91074cecef75b75e"
+  },
+  "triangles": 20112,
+  "meshes": 15,
+  "materials": 4,
+  "embedded_images": 3,
+  "maximum_bidirectional_surface_error": 1.884864389012364e-07,
+  "positive_closed_meshes": {
+    "native": 15,
+    "imported": 15
+  },
+  "native_world_bounds": [
+    -1.0505108833312988,
+    -1.072923183441162,
+    0.0,
+    1.0720109939575195,
+    1.0499850511550903,
+    1.809999942779541
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "texture_pixels_equal": true,
+  "native_anatomy": {
+    "one_low_surface_crown": true,
+    "roof_to_drum_width_ratio": 1.6153846189115173,
+    "roof_and_cap_seated": true,
+    "maximum_copper_casting_surface_distance": 0.029393762350082397,
+    "paired_warm_window_panes": 20,
+    "actual_window_ray_paths": 20,
+    "minimum_window_ray_depth": 0.5379998683929443,
+    "maximum_window_ray_depth": 0.5380001664161682,
+    "actual_dark_backed_top_ports": 4,
+    "minimum_top_port_ray_depth": 0.21799986064434052,
+    "maximum_top_port_ray_depth": 0.2179998755455017,
+    "underground_interior_not_invented": true,
+    "operational_timing_established": false
+  },
+  "imported_anatomy": {
+    "one_low_surface_crown": true,
+    "roof_to_drum_width_ratio": 1.6153846189115173,
+    "roof_and_cap_seated": true,
+    "maximum_copper_casting_surface_distance": 0.029393762350082397,
+    "paired_warm_window_panes": 20,
+    "actual_window_ray_paths": 20,
+    "minimum_window_ray_depth": 0.5379997491836548,
+    "maximum_window_ray_depth": 0.5380001068115234,
+    "actual_dark_backed_top_ports": 4,
+    "minimum_top_port_ray_depth": 0.2179998755455017,
+    "maximum_top_port_ray_depth": 0.2179998755455017,
+    "underground_interior_not_invented": true,
+    "operational_timing_established": false
+  },
+  "clips": [],
+  "renders": {
+    "native-front-quarter.png": "124acbe3188f80d1e17f970a2ce693f81a9b7a4cd72120a596207caadd325ba8",
+    "native-front.png": "56189a0472f0998609fb5484f7367e706bb7b53fd0982fcd5c02f4500ebf33a1",
+    "native-rear-quarter.png": "0fdaa939ea0049aee33ccf8e8de22367bfe5aa7f6ed6bfc21cc497b46a59ae0b",
+    "imported-front-quarter.png": "31da6960c89b677830224d9b6c56c09dd72c823bd5e6c9da938d76df7c7d2053",
+    "imported-front.png": "be9a12fc8f88e330cf8a3438a2dda02c4de9a8637c7eaf9d509bcc0dcba8bcf0",
+    "imported-rear-quarter.png": "ae462280f9d072da10dbaff28627dee64f738092f94375e81b90d5a4b4e4c332"
+  },
+  "scope": "Actual saved-native/independent GLB geometry, rooted anatomy, textures and renders. Source-specific checks run on both. Pixel review separate; client scale/state/FPS and final user artistic acceptance remain unverified.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

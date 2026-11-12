@@ -1,0 +1,148 @@
+{
+  "issue": 265,
+  "culture": "artemian",
+  "role": "terraform",
+  "max_cycles": 3,
+  "final_user_artistic_acceptance": false,
+  "cycles": [
+    {
+      "number": 1,
+      "status": "visually-reviewed",
+      "baseline_commit": "f36fc5686179876b4a7ddb28dc4a02366da54d27",
+      "baseline_binaries": {
+        "blend": "bdbc2780a08da929d82038c699be2b9903f6fae2d5e74b85e3adb9df78f49742",
+        "glb": "7bd02c98eae78a215b8edc3bca3547364534f7c7ee9ee85a1aa2d7fc8887edaf"
+      },
+      "baseline_author_sha256": "a97ba9ea91971fa7fc181b959b577e8b2353b04ee346f797aef50f52a5f6f7ed",
+      "canonical_references": [
+        {
+          "name": "All-Purpose Assault",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/artemian/all-purpose-assault",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/artemian/all-purpose-assault/model.glb",
+          "image": "gallery/media/objects/artemian/all-purpose-assault/front-quarter.png",
+          "model_sha256": "fd39236bf4aa9ee616adcb65c37dbcc24ae92b76b827e7c0fc7fcf0b61b73ee1",
+          "image_sha256": "791bffd385709b1f0d4ff2637d97cf2b4dd1488c39e1942bc4a112d32d4db641"
+        },
+        {
+          "name": "Gerla-Kans Explorer",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/artemian/gerla-kans-explorer",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/artemian/gerla-kans-explorer/model.glb",
+          "image": "gallery/media/objects/artemian/gerla-kans-explorer/front-quarter.png",
+          "model_sha256": "68f44c6f41378cd423ad6e68d3a754f52429aa470ceef1a6b8056009c4e5b57c",
+          "image_sha256": "25b666b67e7e320349eb3b6ee4b6d79fa336fc87147a77864561cb545647ec67"
+        }
+      ],
+      "intent": "Replace the oval silver-dominant shell with a triangular green wedge deck and distinct faceted silver fairings. Match measured canonical palette;preserve rooted direct sliders and introduce independent wrist/jaw operation on the repair gripper.",
+      "decision": "needs-next-cycle",
+      "author_sha256": "c325fe99695e5baa9951b1a35c42d9131fe6a00ac218e72fa860d8f5f32da683",
+      "binaries": {
+        "blend": "c05d3aa8526c7c8108f70db63abd0761384cbc967ab4ef667254a2b70f42d544",
+        "glb": "0574cfacef2ddf5e9ca528f58153c36eb7fd805eb50f0c96891ea99ca5766e43"
+      },
+      "runtime_review_sha256": "590758f8cf9e122116bdcdb5434d43d986caf935906ac02d20897f21cf92a3e8",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/artemian/terraform/canonical-style-cycle-01.png",
+        "sha256": "04edbe3dbc8eb9c1d9a602ac952f835d11f7df0a81df2f0560fc8a456969ff59"
+      },
+      "actual_glb_preview": {
+        "path": "gallery/media/proposals/engineering-ships/artemian/terraform/canonical-style-cycle-01-glb.png",
+        "sha256": "e1771ab476ace7d8e9482b6f2d37a3a27fb4b93a31d10e4eacca19803f3c85bb"
+      },
+      "observations": [
+        "Actual canonical comparison shows the new green wedge and faceted silver modules relate to the fleet more closely than the previous oval shell.",
+        "Silver modules still merge visually and cover too much green deck. Need larger green silhouette and distinct gaps between main/side fairings.",
+        "Actual working poses inspected:direct sliders,wrist and independently closing jaws remain physically supported. Native/imported runtime checks pass."
+      ],
+      "remaining": [
+        "Increase visible green deck;separate and slim the three silver fairings.",
+        "Add sparse green service hatches consistent with the established fleet;use matching review lighting for the canonical comparisons."
+      ]
+    },
+    {
+      "number": 2,
+      "status": "visually-reviewed",
+      "baseline_commit": "f36fc5686179876b4a7ddb28dc4a02366da54d27",
+      "baseline_binaries": {
+        "blend": "c05d3aa8526c7c8108f70db63abd0761384cbc967ab4ef667254a2b70f42d544",
+        "glb": "0574cfacef2ddf5e9ca528f58153c36eb7fd805eb50f0c96891ea99ca5766e43"
+      },
+      "baseline_author_sha256": "c325fe99695e5baa9951b1a35c42d9131fe6a00ac218e72fa860d8f5f32da683",
+      "baseline_preview": {
+        "path": "gallery/media/proposals/engineering-ships/artemian/terraform/canonical-style-cycle-01-glb.png",
+        "sha256": "e1771ab476ace7d8e9482b6f2d37a3a27fb4b93a31d10e4eacca19803f3c85bb"
+      },
+      "canonical_references": [
+        {
+          "name": "All-Purpose Assault",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/artemian/all-purpose-assault",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/artemian/all-purpose-assault/model.glb",
+          "image": "gallery/media/objects/artemian/all-purpose-assault/front-quarter.png",
+          "model_sha256": "fd39236bf4aa9ee616adcb65c37dbcc24ae92b76b827e7c0fc7fcf0b61b73ee1",
+          "image_sha256": "791bffd385709b1f0d4ff2637d97cf2b4dd1488c39e1942bc4a112d32d4db641",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/artemian/canonical-references/all-purpose-assault-front-quarter.png",
+            "sha256": "050397ebe753e57f0b583c1aa349cba2267e5e800b1887c53f8066f54acd440c"
+          }
+        },
+        {
+          "name": "Gerla-Kans Explorer",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/artemian/gerla-kans-explorer",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/artemian/gerla-kans-explorer/model.glb",
+          "image": "gallery/media/objects/artemian/gerla-kans-explorer/front-quarter.png",
+          "model_sha256": "68f44c6f41378cd423ad6e68d3a754f52429aa470ceef1a6b8056009c4e5b57c",
+          "image_sha256": "25b666b67e7e320349eb3b6ee4b6d79fa336fc87147a77864561cb545647ec67",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/artemian/canonical-references/gerla-kans-explorer-front-quarter.png",
+            "sha256": "dc320a7c99a0fe11c05bd71c98c1be4553f3d40eed7164022f54631d0080c397"
+          }
+        }
+      ],
+      "intent": "Expose a broader pointed green deck,slimmer separated silver fairings and sparse green service hatches. Preserve coordinated sliders,wrist and independently closing jaws. Compare canonical imports in the same review studio.",
+      "comparison_conditions": "Actual canonical and engineering GLB imports rendered by the same studio function;independent framing for style review,not game scale.",
+      "decision": "author-review-complete",
+      "author_sha256": "39ced493e5ab46eff449330ca2ed5acd31346f6aa88ba77bda789d2694e1dd7d",
+      "binaries": {
+        "blend": "b0142d24cce483b3ed12714da2883d9be081f16cdc6a0051da2d634bd686c273",
+        "glb": "48e0e8606ee318b15da72e2685c26041f6116239e76e6fc499177dde6949b37e"
+      },
+      "runtime_review_sha256": "003ff71cadb729d8602f8c5e31041dc91cca9cd03d9022c507bb355b8caddff5",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/artemian/terraform/canonical-style-cycle-02.png",
+        "sha256": "1c947fe5c8093edcd7d95112647c1a57abc9678377047e934c47961943b5cdbf"
+      },
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/artemian/canonical-reference-review.json",
+        "sha256": "3e8eb6578ea8f5c8ac5a4939dddec4858a302708d8d50be93f302993ed3ed379"
+      },
+      "observations": [
+        "Compared actual engineering and canonical GLB imports rendered by the same studio function. A broader pointed green deck,separated silver fairings and deliberate facet breaks now share the All-Purpose Assault/Gerla-Kans construction language.",
+        "Reviewed actual native/imported front,rear and top views. Green deck remains visible between the modules;side fairings form rooted tool receivers rather than merging into one oval shell. Sparse service hatches and actual cooling apertures retained.",
+        "Reviewed actual 0/1/2/3-second working poses. Repair has two independent sliders,a wrist and two separately closing fingers;the five channels coordinate extension,articulation,jaw closing and return. Tools and bearings remain supported.",
+        "Measured canonical green,grey alloy,silver edge and carbon map medians are used. Functional tool layout and utility proportions differ deliberately from combat/scout craft;display is independently fitted and game scale remains provisional. User artistic acceptance is pending."
+      ],
+      "remaining": [
+        "User artistic acceptance.",
+        "Game scale,platform profiling and continuous swept collision clearance remain outside this asset-proposal milestone."
+      ]
+    }
+  ],
+  "cycles_used": 2,
+  "cycles_remaining": 1,
+  "current_binaries": {
+    "blend": "b0142d24cce483b3ed12714da2883d9be081f16cdc6a0051da2d634bd686c273",
+    "glb": "48e0e8606ee318b15da72e2685c26041f6116239e76e6fc499177dde6949b37e"
+  },
+  "status": "author-style-review-complete-user-acceptance-pending"
+}

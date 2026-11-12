@@ -1,0 +1,32 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/152",
+  "key": "AC02",
+  "name": "Anti-Rad Screen",
+  "culture": "achaean",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 5,
+  "construction_updates": 32,
+  "triangle_budget": 30000,
+  "materials": 5,
+  "structure_checks": "checks_achaean_anti_rad",
+  "state_contract": "Static radiation-control facility. Actual AC02 catalogue reveal/highlight does not establish a mechanical operating cycle; construction/damage and shader activity require client integration.",
+  "scale_contract": "PlacementRoot at ground Z=0, local -Y front and +Z up; tile/world calibration remains separate.",
+  "mesh_nodes": 31,
+  "triangles": 15152,
+  "author": "sources/tools/blender/remaster_achaean_anti_rad.py",
+  "author_sha256": "b32fa12411a711151f77775394983aa8830b65ad3f6cb625883bebdeb759f79c",
+  "helpers": {
+    "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f"
+  },
+  "binaries": {
+    "blend": "246f878e4465d213472d6be942e436e0b48821909bd405595aaa64aafc22a091",
+    "glb": "fe9cb5c3178e51cf8a98a78dd13ff23d06f076bcc50916828d8feb88dcddbeaf"
+  },
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

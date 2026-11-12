@@ -1,0 +1,1224 @@
+{
+  "issue": 190,
+  "scope": "Full 38-definition Braccatian asset refining; final artistic/gameplay calibration separate",
+  "audit_tool_sha256": "2cdb6988f5b3024a969af761bb076d0dfe58cf8c652b52518ccdd5ad58d54a24",
+  "audit_dependencies_sha256": {
+    "register_braccatian_refinements.py": "4de2976e9877538102c631a7d4c9d887c62d7afb9bf269072d877a5a82ef2f92",
+    "register_braccatian_ship_refinements.py": "be7a6220d59f006cf9c3611e31cc681cac195eb7537453c4b67bed431c8b08cb",
+    "register_braccatian_missile_review.py": "dd12b2eed89bdb60831542c79159897b7a34c9cd28b8b634239a45667483c16b",
+    "gallery_animation_assets.py": "47e6b1ed89b1158c669b22f52757128224b36b6e1aa130fc61cb9e5a96407796"
+  },
+  "evidence_sha256": {
+    "braccatian-refining-baseline.json": "3670f26d4b8589476db0532b0929f09c106ffea91afdefa01182df4dafaaf031",
+    "braccatian-lore-evidence.json": "fa1f16371e6bccb2f6c5b5412a6bbb70af76e1319809c9bc606dcc7fec012aca",
+    "braccatian-scitek-evidence.json": "5989742887c99f4ac2a9918b36ff1dd672024ea638ecdc7e023053a8e5a29fcd",
+    "braccatian-ship-decisions.json": "e0333d669617e40a306e2f9cf77524722a8f9d995c9dbeaee90c3f7379b5fff4",
+    "braccatian-missile-evidence.json": "fcde7342620506c4f55420c77a786621b9db8caa1ec995f9dc169efa9c1e63e0",
+    "braccatian-missile-decisions.json": "a3a1a8938ea028e6e7e4443e00d3f0ac6418cc5320e279caa99419c26b5168f6",
+    "functional-text-index.json": "fcadf5ea6dc8d0e96180ff9922cef07bd32f264f52e0a684bf87dc4680a0b663"
+  },
+  "gallery_sha256": "ed0648fe3576add6fb84c557ddfa227c464c9a025489f3eb2b3d30e048cb2604",
+  "overview": {
+    "path": "gallery/sheets/braccatian-refining-completion.jpg",
+    "sha256": "87161d1191dae33f79448e1bedd8b61d64f3315162fd7268b3c8002fa84b3565"
+  },
+  "totals": {
+    "definitions": 38,
+    "buildings": 23,
+    "ships": 5,
+    "missiles": 10,
+    "refined_normal_studies": 26,
+    "retained_normal_models": 12,
+    "closed_normal_meshes": 1222,
+    "paired_normal_renders": 135,
+    "minimum_render_iou": 0.9999897318999066,
+    "maximum_position_error": 1.4757416693100822e-06
+  },
+  "preservation": {
+    "base": "cf2843c751be17d697d65e6b9e43136f9261354a",
+    "prior_studies_preserved": 406,
+    "prior_glb_files_preserved": 406,
+    "prior_posters_preserved": 406,
+    "prior_movies_preserved": 43
+  },
+  "source_review": {
+    "sprites": [
+      {
+        "key": "BR01",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "a5d4454ec653e7cf7e55298d9dfe0c847346a731520a37486aa7ccd26289c692"
+      },
+      {
+        "key": "BR02",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "62e3e2eb973a2ec6821f3cb560ee49cdf443aafbabf944164a76046cb8329a6d"
+      },
+      {
+        "key": "BR03",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "497e81ed04c7afebd8f1acb39f726d12d5bd16f666a5f6470f0c88257c35f28a"
+      },
+      {
+        "key": "BR04",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "000b77b6f396dce1d06e7513de7beaf99cd4c453242f32131d562897b035387e"
+      },
+      {
+        "key": "BR05",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "411577284fcc9313e67be8c8bfbb17af0c47d56d35386aa4cf01a8c4e30909ab"
+      },
+      {
+        "key": "BR06",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "d1375184c5ed17713619437d76fe8b6edc65ffe6192a04cce0bf5a7724be16ca"
+      },
+      {
+        "key": "BR07",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "9a7fc1f4771a67c38a6e181ae68c84370613c2c471ae87eb7e25165fd0ef394c"
+      },
+      {
+        "key": "BR08",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "cce547108b0104fd6f15344fbc27795da1be58c4775edf4a1b6544268d500ebb"
+      },
+      {
+        "key": "BR09",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "de4ab8e760fa35f9d4fc2736a053c0f4f639f2e5adcac280aadd5c2a9261fee3"
+      },
+      {
+        "key": "BR10",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "5cd260740c3ae97ffaba577b9a998656c2fe93c3218ec3b01c409ad847d6e30b"
+      },
+      {
+        "key": "BR11",
+        "descriptor_count": 18,
+        "populated_descriptors": 17,
+        "payload_sha256": "11a4113f3c3b51c88d187fae35bbfa8a2d65df731ab94b2b9a98ae5acbf28340"
+      },
+      {
+        "key": "BR12",
+        "descriptor_count": 18,
+        "populated_descriptors": 3,
+        "payload_sha256": "7841877a62c257dc285c1085a251357bb7096191e98d1a6ed4260247ef22e2ac"
+      },
+      {
+        "key": "BR13",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "55157b279b68d07bccf95e8926d33e7b2ae2c840ca6d37ee93967ccac1222c66"
+      },
+      {
+        "key": "BR14",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "2ab7b5212d2892f7ad808456898facb76b679335cb038964114e6f40c0f0622d"
+      },
+      {
+        "key": "BR15",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "fb252e9a6085f888e3dde15c5012f7c5392f072d7d5c9e17b79f0fa25c932e99"
+      },
+      {
+        "key": "BR16",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "0cbc83fbc50855cca95f968c89613760dea9814b773bf52c8bdeef0489d1a961"
+      },
+      {
+        "key": "BR17",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "be7514b86d86506addb1875811d99d45bbd60a67e1444b7fabe5561d0f8f639b"
+      },
+      {
+        "key": "BR18",
+        "descriptor_count": 18,
+        "populated_descriptors": 18,
+        "payload_sha256": "d309d9297b46a069aba8a1a8ac06452f03f7f3dedb97229ac202d11ff174bd89"
+      },
+      {
+        "key": "BR19",
+        "descriptor_count": 18,
+        "populated_descriptors": 3,
+        "payload_sha256": "0f6824078e0ac8ffcb7cec97b51cb4b220acec26517b026ac4781863536023b6"
+      },
+      {
+        "key": "BR20",
+        "descriptor_count": 18,
+        "populated_descriptors": 18,
+        "payload_sha256": "56bb6645c03770a3982412fe829580a98cc0c2ba65c494de7372e208d1cadd2a"
+      },
+      {
+        "key": "BR21",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "4086935173fa1906bc8b300ebdb918419679e010c0d12ed9ed579982133a7bec"
+      },
+      {
+        "key": "BR22",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "a52aa75b4725f4794ef6bcdb95bfbbb9a6e3e40d6e8fe77764bfc94a672e4ef0"
+      },
+      {
+        "key": "BR23",
+        "descriptor_count": 18,
+        "populated_descriptors": 18,
+        "payload_sha256": "1163e90f9c677d905b7663a2cff35db674f2300e68b44c075d764397b493f15d"
+      },
+      {
+        "key": "BR0A",
+        "descriptor_count": 32,
+        "populated_descriptors": 32,
+        "payload_sha256": "73b2442446f0d1534b42cf44634aea41926f9a5014d8af495583c93e33d57597"
+      },
+      {
+        "key": "BR1C",
+        "descriptor_count": 32,
+        "populated_descriptors": 32,
+        "payload_sha256": "f0ae3e64a4564abe3a85e95553cd7aba1d8e0e3212b2fa322dd878a5d7b8ab84"
+      },
+      {
+        "key": "BR2C",
+        "descriptor_count": 32,
+        "populated_descriptors": 16,
+        "payload_sha256": "0125a9b47826ac0a4a029993817d6d7e1254c7599a535cc183a63e270390eae9"
+      },
+      {
+        "key": "BR3A",
+        "descriptor_count": 32,
+        "populated_descriptors": 32,
+        "payload_sha256": "bb95fc46d5af8249ebb6fa093a028a83e25322c3c8ebfd8d7125a6ee78a0cdde"
+      },
+      {
+        "key": "BR4C",
+        "descriptor_count": 2,
+        "populated_descriptors": 2,
+        "payload_sha256": "0287f4e7761e2668f2f4853c74d4efaea2327e09ac454be643c1d6e63c125d93"
+      },
+      {
+        "key": "BRM1",
+        "descriptor_count": 14,
+        "populated_descriptors": 14,
+        "payload_sha256": "3a35060eabc133285ec5a1bb6d7238e06934ba972387415d38bf963a816e6766"
+      },
+      {
+        "key": "BRM2",
+        "descriptor_count": 14,
+        "populated_descriptors": 14,
+        "payload_sha256": "ffc037ce7a3d83b3f063dc358aa4ad3c139e977b93666d4ed854261eb83180e9"
+      },
+      {
+        "key": "BRM3",
+        "descriptor_count": 14,
+        "populated_descriptors": 14,
+        "payload_sha256": "22af5748358c8bddd0f761b5bf8166e557dc812e36c72cc605893ce9cf5c9719"
+      },
+      {
+        "key": "BRM4",
+        "descriptor_count": 14,
+        "populated_descriptors": 14,
+        "payload_sha256": "6c6a38cc55fe7f4bef3f37db7c22b5f86f78e4b62bed929322bd1a36ef41e0f7"
+      },
+      {
+        "key": "BRM5",
+        "descriptor_count": 14,
+        "populated_descriptors": 14,
+        "payload_sha256": "549e46e450adac901175c0e4eae7c6174814d13dc49c5182ae91716503123125"
+      },
+      {
+        "key": "BRM6",
+        "descriptor_count": 14,
+        "populated_descriptors": 14,
+        "payload_sha256": "5b6d657585bfb41128d663c31d86142c058850238e987feb9d1afc3aa4d4e4f4"
+      },
+      {
+        "key": "BRM7",
+        "descriptor_count": 14,
+        "populated_descriptors": 14,
+        "payload_sha256": "2ac0d94b82b705728029a3bb93da3641023aedc37305b64f98b0e0766946f16a"
+      },
+      {
+        "key": "BRM8",
+        "descriptor_count": 14,
+        "populated_descriptors": 14,
+        "payload_sha256": "c1d804fb1e5c1d6ab56c26a2f522ff5c1adbc9794bd57df343ea88f22965bf48"
+      },
+      {
+        "key": "BRM9",
+        "descriptor_count": 14,
+        "populated_descriptors": 14,
+        "payload_sha256": "7626c80ebd2562f9f723a3dc326218cb54ab6bb70ae475164dfb0c273a2366d9"
+      },
+      {
+        "key": "BRM10",
+        "descriptor_count": 14,
+        "populated_descriptors": 14,
+        "payload_sha256": "de48b2e504c3cf0cf7eeccc6d5180cd3aad5018ef0e80941607993147e52f64d"
+      }
+    ],
+    "full_cdb_records_revalidated": 33,
+    "functional_definitions": 38,
+    "functional_names_and_passages_revalidated": 61,
+    "building_films": [
+      {
+        "key": "BR01",
+        "source_sha256": "680715d8234d58a0de8df739ff1ae9fabd84226c4c25b82eec6aab934b8a03d0",
+        "decoded_frames_sha256": "73240d1566789cbc48a9b69cbb8c09ea08463a22a2ff742b1f33d39951fbfb06",
+        "frames": 41
+      },
+      {
+        "key": "BR02",
+        "source_sha256": "baeff5aefcff83ac2848e4395d05a0ebcd6cf132efd5750ed7673dde26541326",
+        "decoded_frames_sha256": "b0409bbf921482e936867a41580715263ecc36f7421acd7f2bb7b305e3bf727e",
+        "frames": 41
+      },
+      {
+        "key": "BR03",
+        "source_sha256": "d5c9cda0d98621cea06b5a191dd5e1affecd1c47a425761bfebe2d4b68068b70",
+        "decoded_frames_sha256": "4e77d0140ac5b3ef054588d70253933ff24ccf22aee6cde2323a653a91bc361a",
+        "frames": 41
+      },
+      {
+        "key": "BR04",
+        "source_sha256": "36258f571d5f4496ab333dc6e6a50064f90b7fa9aac62c3ca27cf858f5a1902b",
+        "decoded_frames_sha256": "116b660230518086f601a01611bb48bfe71e68387701089407a4807cfc535270",
+        "frames": 41
+      },
+      {
+        "key": "BR05",
+        "source_sha256": "ec8f15a59a1f2113d9ed41a574e3236d479fa225264925ba6c8f42e36b01350b",
+        "decoded_frames_sha256": "93fc188c863f7d159191ec5857c0c7a7a5e3a64e7c83d025e0db9a64d4c8ac4a",
+        "frames": 41
+      },
+      {
+        "key": "BR06",
+        "source_sha256": "fa038cac2fd9c39e06adfa9b20fac13ee8a1768bb65d4759327776df5202b74d",
+        "decoded_frames_sha256": "4ec2656236ec3101a24a98425afb6797c5e8c5500e9a0e0d6ac44d56b46349c1",
+        "frames": 41
+      },
+      {
+        "key": "BR07",
+        "source_sha256": "61db4aa4d65bdf30e6f90ba9b88e9333953b2df63c97c486c9ea0c06f1a562d1",
+        "decoded_frames_sha256": "7177f5f5408123c856aa1fc132343670ca5707c40a1f9802d5380c8f5674d1bf",
+        "frames": 41
+      },
+      {
+        "key": "BR08",
+        "source_sha256": "7f571dbe6e21f42569ffad1f0c3204a0a3ef853c7eb2190a6bb50d1f83a8341c",
+        "decoded_frames_sha256": "b21773795c279a8e49f23501af0e4979037d1b8dc225790f87391ddb9f1e80b5",
+        "frames": 41
+      },
+      {
+        "key": "BR09",
+        "source_sha256": "6818ef1d74b400891905a85586e1da857df799d5216a14ff3de64d5f412a66c4",
+        "decoded_frames_sha256": "51b626f459f9e096bd8ed5962975ec6d646022419c2cd8fc95dd458a3989bee8",
+        "frames": 41
+      },
+      {
+        "key": "BR10",
+        "source_sha256": "71a09b3c85860bbf542f7b57dad2665e169ff08080961bfce0585554b5d01ef6",
+        "decoded_frames_sha256": "5f089798d7861a8b5fb5579282c5006e7187b8280d65e47d3cc0ae1469e2bb82",
+        "frames": 41
+      },
+      {
+        "key": "BR11",
+        "source_sha256": "b3e0d3762de77fe6f7520f8926991de74140ab401a8c6efc47a8bfe4564b1719",
+        "decoded_frames_sha256": "50750095096be2a72eaf6b8c20d09a4a9a8c143c1f40bbc3e1c0166b3dc202e8",
+        "frames": 41
+      },
+      {
+        "key": "BR12",
+        "source_sha256": "5db750178ebcc2e209095b1d0da92ad6c9369bbedd2d80e6dc0d018b5306d491",
+        "decoded_frames_sha256": "3e6867e513fb5ceb0d9c9e62cf90c706e9cb2d0e9d671560cd58fbc3c95c0336",
+        "frames": 41
+      },
+      {
+        "key": "BR13",
+        "source_sha256": "f4e49d4d6485b12d9bcd3f05c3a3373d68523fae81aeadb65007d828de12ebd1",
+        "decoded_frames_sha256": "92a219ccb53f5ee63e2952bd05fff36cca1c537cb0b8f121c75ab2e74e657602",
+        "frames": 41
+      },
+      {
+        "key": "BR14",
+        "source_sha256": "7f58da9cff8f419af6414bc7c17fa46a3ca0db925de2690199062434c68257c9",
+        "decoded_frames_sha256": "7733bc1b5b679a0673980cce5a8f43e597fcda944e657427c8591907be8e30e0",
+        "frames": 41
+      },
+      {
+        "key": "BR15",
+        "source_sha256": "88907088c72469e0b41ec89866d95322646a85e7372ef0a859071e60d72183c3",
+        "decoded_frames_sha256": "1d83eae2212391e4a0c3dcd797e3d5df08bbed86d7ca8bd390025025b717c474",
+        "frames": 41
+      },
+      {
+        "key": "BR16",
+        "source_sha256": "c4119584164d41dcce8821d4cc3ca08cfff92e2bac9a0560c1d6f890969fc829",
+        "decoded_frames_sha256": "711a749700eec7eaafa328b86619ac3d5f1ba03a71c12bdab03014e50068bed8",
+        "frames": 41
+      },
+      {
+        "key": "BR17",
+        "source_sha256": "40e96d5a88b2828136db0130013d0e2d50fce1530ccd1a6683c795808ecd9b6f",
+        "decoded_frames_sha256": "79086bc4f7d59ae879ccdd6dd677d68a6679f28d1add9acf03eb00deca03a76f",
+        "frames": 41
+      },
+      {
+        "key": "BR18",
+        "source_sha256": "f6d92cb94ef8f80855ee480891890b6765beb3311ffba201ee03da60a52465f6",
+        "decoded_frames_sha256": "d3091d5c117ea40c2f27447e019cab6c46289f164a2fc6e1cf7b67dd2f51ab59",
+        "frames": 41
+      },
+      {
+        "key": "BR19",
+        "source_sha256": "fe7fb5806b256421e7a097868aea628a090eafd1215379aa3cf7a31dcc2a5c68",
+        "decoded_frames_sha256": "c5604d33b31f9e9f09a0c87c834b474909c81470969df71ae34c5e07330c9e52",
+        "frames": 41
+      },
+      {
+        "key": "BR20",
+        "source_sha256": "cdc6b8809ff0de5e0ddb813483be71e6bc33974c05e94292d6d76b3b985a10e9",
+        "decoded_frames_sha256": "e419e6f5ef1d1493ed53785e022d2d8baf5459762013713702b3bc8fb2b904d3",
+        "frames": 41
+      },
+      {
+        "key": "BR21",
+        "source_sha256": "89fb2576c7ad42e3cde491b78c38efa9d053e21df05506384a683e4c190eae63",
+        "decoded_frames_sha256": "e8223f11494cdd0e4e4b0be93a1b7d73f0d6d6cc2d14b9c2aa770b20c73780d4",
+        "frames": 41
+      },
+      {
+        "key": "BR22",
+        "source_sha256": "91162be7945278c81099e999645ad0f0fa54aff93b9e53c56cfbed287adca06f",
+        "decoded_frames_sha256": "be2082c3f8714a3b883c0b128df65ba4bdbcf8fe376b86d5bfcc1ae03f005b47",
+        "frames": 41
+      },
+      {
+        "key": "BR23",
+        "source_sha256": "130199b98e506e018b5e2371f79b6082c72af44806f8034302193644728647a7",
+        "decoded_frames_sha256": "324bff59d651888b38eb2e5ab87ea7c54062c3d4e6bcb566e792b637469b0d84",
+        "frames": 41
+      }
+    ]
+  },
+  "scitek": {
+    "subjects": 36,
+    "image_updates": 7282,
+    "timeline_frames": 15794,
+    "sampled_updates_visually_reviewed": 648,
+    "provenance": "Prior private original-codec decode cache from issue 185; current source/executable/decoder, container chunks, timeline, metadata and decoded frame files revalidated. Not a new decode."
+  },
+  "records": [
+    {
+      "id": "openfa:building/legacy/063",
+      "key": "BR01",
+      "name": "First Step",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Four joined gold/rose pyramidal bodies with blue collars and single gold tips, front face fittings and two bright triangular portal grilles",
+        "First-built CPU counterpart per original functional narrative",
+        "All 41 paletted catalogue phases, body and shadow inspected; complete CDB and functional narratives read"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br01/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br01/model.glb",
+      "blend_sha256": "4a67afb8f79388fc03904cdeef3532986f1a92247bf0664ab43d4ec3648dd921",
+      "glb_sha256": "34c437fbbb0065eafa2d4e07c18ca5b4383998843f51a99fa9b3dcb2e535c2b5",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br01/validation.json",
+      "validation_sha256": "60114a5b9f84dc06baf8050e6ce8c613cbbd15c91926f8f6dfec223d34779e84",
+      "closed_meshes": 74,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/064",
+      "key": "BR02",
+      "name": "Clan Heart",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Tall cylindrical central core with shoulder bands/pale vertical faces, steep square roof, open gold crown and three distinct peripheral pyramids",
+        "Command centre and Council of Elders seat with high security; no invented weapons or clan emblems",
+        "All 41 paletted catalogue phases, body and shadow inspected; complete CDB and functional narratives read"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br02/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br02/model.glb",
+      "blend_sha256": "2a26f5061e634ffb5b560ab50f520c5a2c65bc7707372dd2e0a0559582ae6640",
+      "glb_sha256": "3412351489205fe7f76dae97e943c9289d2b5cf61a76dae301be9b36c858d33c",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br02/validation.json",
+      "validation_sha256": "7035f7363191a58d62c2bd89c655b669e582f705eed3051799209fc23f22373f",
+      "closed_meshes": 47,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/065",
+      "key": "BR03",
+      "name": "Radiation Shield",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Three bell-shaped continuous gold casings with flared lower hems and slender gold/blue banded handles, red front and pale side fields",
+        "User clarified the handbell silhouette; no marshmallow cylinders, separate globular heads or invented acoustic/clapper mechanism",
+        "Original arrangement is three separate grounded units; no invented common platform",
+        "All 41 correctly paletted catalogue phases and surface parts inspected"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br03/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br03/model.glb",
+      "blend_sha256": "2f6a86c61fac92683c81f57dfc1aba62d672bb09b53f307d922fcdcb12df738a",
+      "glb_sha256": "1fe2d498ad20500994eeca8f4631805bf6f04481e17749ad0caf01a4f2b67a91",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br03/validation.json",
+      "validation_sha256": "51f48094a8928efb2d8c06f054975b83c3526f21c62b20fd6ca104adfe9a7212",
+      "closed_meshes": 24,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/066",
+      "key": "BR04",
+      "name": "Source",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Slender gold lower cylinder and rounded upper vessel joined by a narrow neck",
+        "Rose horizontal regions, front equipment, blue upper collar and single gold terminal",
+        "Functional narrative: nutrition provision with a secondary ceremonial role; no invented ritual apparatus"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br04/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br04/model.glb",
+      "blend_sha256": "c3c4e112cbb332f8ef80e98b5bbea51f305873ef36a0a74355592d5e45527f24",
+      "glb_sha256": "371e83d9fedc1c5ef61e11bc8d5dfe8d9d48d031f38f4545d7ee1ae2911d5ff7",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br04/validation.json",
+      "validation_sha256": "367f76f56b7931fa014f6d032a21e47ae04f924526d6edd26fd98560ac03704a",
+      "closed_meshes": 28,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/067",
+      "key": "BR05",
+      "name": "Aesir's Hall",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Stepped body, narrow neck, broad-foot upper spire/open gold crown, three low satellites and red/blue face fittings",
+        "Air circulation only: functional text explicitly states no ceremonial aspect despite the name",
+        "All 41 paletted catalogue phases, body and shadow inspected; complete CDB and functional narratives read"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br05/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br05/model.glb",
+      "blend_sha256": "9c36ece4358b15b53edd669e865b4bb762b82be0c0710e67b08c695c9da6175f",
+      "glb_sha256": "3706aa8efb7790f0b1a935d94e0c4462af68bd816f3fa6a93a4696870fd0d86d",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br05/validation.json",
+      "validation_sha256": "b191813b4c9333ed965c83aa8e67a4549edcafff112dbe3c0fef35e10dc5f0a6",
+      "closed_meshes": 37,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/068",
+      "key": "BR06",
+      "name": "Longhouse",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "All 41 paletted catalogue phases and both surface descriptors inspected",
+        "Three linked low halls with rose terraces and arched entrances; descending terraced towers with red upper collars and single gold tips",
+        "Numerous extended-family living quarters per original functional narrative"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br06/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br06/model.glb",
+      "blend_sha256": "8c97932c42257bc62f8051a15f5b56272fa65fa45769283655924a1c528466d2",
+      "glb_sha256": "0df9d3fc543bc7b4ac7c8ecb0d17ce2bfe22d502e3beb2f20126309682472071",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br06/validation.json",
+      "validation_sha256": "be29bb09b5ed5cff7a539311420c5635785d8c228f79d4d0fb0adfbaa258b9c9",
+      "closed_meshes": 61,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/069",
+      "key": "BR07",
+      "name": "Sports Hall",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Single broad domed hall, paired substantial front pillars with gold globes and red/pale foot fields, front circular fittings",
+        "Semi-ritualised communal exercise per functional narrative; no invented clan emblem or ritual machinery",
+        "All 41 correctly paletted catalogue phases and both surface descriptors inspected"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br07/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br07/model.glb",
+      "blend_sha256": "430acf5f91a6e0bcaaa15ec73b75478bc3435b014403e3c6368e7a9f065e710e",
+      "glb_sha256": "ecfea75d60a4f23d50fdb905306a7e23e77810a202c3bd3fe52035ec16f034d0",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br07/validation.json",
+      "validation_sha256": "edca7e7e92bf822349ca74ce1236f5b70832637dd3d047a604584fab6f3f6450",
+      "closed_meshes": 37,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/070",
+      "key": "BR08",
+      "name": "Field Hospital",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Six blue-collared slim towers over joined low wards with three open entrance arches and repeated edge faces; initial five-tower assumption corrected by focused body/phase review",
+        "Basic field hospital per functional narrative, without invented medical symbols/apparatus",
+        "All 41 paletted catalogue phases and body/shadow layers inspected; functional payload byte ranges/hashes checked and read"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br08/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br08/model.glb",
+      "blend_sha256": "06fe390fe7b8eae24a912d847055119ad0be30f4451177d1b52221c300bc5a9f",
+      "glb_sha256": "eccfd57b38a44738abc9aeeb67e2b0ccca1a5a5ac3f02645b9bd1f01424dad62",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br08/validation.json",
+      "validation_sha256": "31e23181d7367ee591e14d1b6a1ad4ababa34583013f3570bb168e92783d663d",
+      "closed_meshes": 67,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/071",
+      "key": "BR09",
+      "name": "Glasshouse",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Slotted upper cylinder, rounded rose cap/small tip, lower neck fields and three pyramidal supports with blue/gold fittings",
+        "Security practically non-existent per honour-culture narrative; cage divisions are visible structure, not invented defensive machinery",
+        "All 41 correctly paletted catalogue phases and both surface descriptors inspected"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br09/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br09/model.glb",
+      "blend_sha256": "436b7d4faa418752f793b51f3de72f29a0f2d8bd7589c11b6d732fefba9ca55a",
+      "glb_sha256": "cbe2915718ded552d1522521f5f76e944f53c63c05f859d7a50308fd57121523",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br09/validation.json",
+      "validation_sha256": "1edd0ee455165ec8d5c90eea73df6db8dca864c75e9552e8b1a3137902fb08b0",
+      "closed_meshes": 29,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/072",
+      "key": "BR10",
+      "name": "TechMech",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Practical cylindrical core with shoulder bands, access steps, side pyramidal modules, front fittings and upper service fields",
+        "Extensive practical ship construction yard with some heavy-metal-type decor per functional narrative; no invented exposed assembly animation",
+        "All 41 correctly paletted catalogue phases and both surface descriptors inspected"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br10/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br10/model.glb",
+      "blend_sha256": "7acfb45da4c2f0f46e4b80616433a8894e02755042a7d8267c0ecae33e35e2f7",
+      "glb_sha256": "c0a48cca732e799693f7bcfa861ae22af17aca4d9bf23ec9bbc5bdd3d0ea5d9e",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br10/validation.json",
+      "validation_sha256": "1c605b8e2d271f88dfdff7940a44ac6838572e597134f77ce3c8e178b271b436",
+      "closed_meshes": 37,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/073",
+      "key": "BR11",
+      "name": "Launch Site",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "All 41 paletted catalogue phases and all surface descriptors inspected; BR11 descriptors 2-15 show pink opening structure, descriptor 1 is a different green state",
+        "BR11 pink pyramid with large gold face fitting; BR12 tapered casing/front fitting; BR19 rounded tapered casing/square base/front foundation connection",
+        "Original functional payloads read/hash checked; no invented extra security or symbolic machinery"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br11/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br11/model.glb",
+      "blend_sha256": "d1cecbbf374206cfa02f7c51e6261481361b87958c5dd7d752b717bfac1ddc7f",
+      "glb_sha256": "6f19c6333a9503e032daed78c0192c8f7f1002f4de5402640f5dd4f33ed701d3",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br11/validation.json",
+      "validation_sha256": "5f92aa92afdaf2f30dd6e653dea4d4ed1bb8ed249d062226f8367920efec72bd",
+      "closed_meshes": 10,
+      "paired_renders": 4,
+      "animations": [
+        {
+          "index": 0,
+          "name": "LaunchFacilityCycle",
+          "start": 0.03333333333333333,
+          "end": 2.033333333333333,
+          "duration": 1.9999999999999998,
+          "video": "gallery/media/docs/assets/reconstruction/braccatian-refined/br11/animation-00.webm",
+          "sha256": "4fce5a52f0b8c6965807ac9b80a32fd05d4d0c9d6486b5615e4744f9e949e219",
+          "frames": 48,
+          "fps": 24.000000000000004,
+          "distinct_pose_count": 25
+        }
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/074",
+      "key": "BR12",
+      "name": "Eyes-in-the-Sky",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "All 41 paletted catalogue phases and all surface descriptors inspected; BR11 descriptors 2-15 show pink opening structure, descriptor 1 is a different green state",
+        "BR11 pink pyramid with large gold face fitting; BR12 tapered casing/front fitting; BR19 rounded tapered casing/square base/front foundation connection",
+        "Original functional payloads read/hash checked; no invented extra security or symbolic machinery"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br12/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br12/model.glb",
+      "blend_sha256": "ca15c42f7371b30b66964205c2d9d2f2e369877109e2740dec5a06ed82369c2f",
+      "glb_sha256": "70ace99689aa57b3244fd44cb53e43fb96035cb1ae603ff2cb6177d6dd33b065",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br12/validation.json",
+      "validation_sha256": "fc05a30abef8eb0c0632f688bb60223bdf584cee6be90b043c51ef05e60f5bc7",
+      "closed_meshes": 7,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/075",
+      "key": "BR13",
+      "name": "Eyes-and-Ears",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Tall tapered main body with upper gold capsule/blue collar and lower side cylinder/globe/cap",
+        "Visible upper link and separate front equipment fields; no generic free-standing sensor spindle",
+        "All 41 correctly paletted catalogue phases and surface parts inspected"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br13/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br13/model.glb",
+      "blend_sha256": "04742009b42c973dd784d8b4dc7563c370e6bc73d16c152d975f359b77346bd1",
+      "glb_sha256": "618c8d968b84f8084d471ca7c855ed2bba686e55dcbca1f991e763abadf827b8",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br13/validation.json",
+      "validation_sha256": "0507a7f1fb2731f403b96098e83bddb11127ee0d80bd98a4476dc1748f4e7f8f",
+      "closed_meshes": 25,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/076",
+      "key": "BR14",
+      "name": "Anchor",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Low rose double-shoulder housing over a ribbed gold cylinder; no separate mast/globe",
+        "Broad upper circular gold fitting, dark middle vertical fields, lower red service column",
+        "Functional narrative establishes gravity-nullifier role, not exposed internal machinery"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br14/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br14/model.glb",
+      "blend_sha256": "5b5e5ff430fd88225f33c35c331e02b593176655dcb0016043f1afc89b208152",
+      "glb_sha256": "b107a69ff66910a776c6efe8557f2ba2deaa0db3bcc115c3dede4d66d2ba87fd",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br14/validation.json",
+      "validation_sha256": "54905639f500efdf4dd652698c4f721ceac5138cdaa1c55c59cbe78930904170",
+      "closed_meshes": 30,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/077",
+      "key": "BR15",
+      "name": "Heart-of-the-Sun",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Two rounded rose chambers, narrow gold waist, blue collar and stepped single gold terminal",
+        "Broad gold upper face grille, circular lower fitting and two separate front upright fittings",
+        "Functional text explicitly states fusion power; no exposed reactor internals or operating loop established"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br15/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br15/model.glb",
+      "blend_sha256": "a97b6485457a4062b1998a7fe924d10c54be1671f95ec5e801c8a55d62d33551",
+      "glb_sha256": "f3874bca4a62add8b126d2e82f9dfd8cd35cc9baa9815749486765669addd631",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br15/validation.json",
+      "validation_sha256": "9391cea255a61c7e0defe7f00ad3d7b0af2ec4d996b1618bc69997afc8d27703",
+      "closed_meshes": 20,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/078",
+      "key": "BR16",
+      "name": "Aegis",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Rose dome foot, central gold column/red vertical fields and lobed gold upper globe",
+        "Two straight separated gold masts and lower crossarms, not kite-shaped wire loops",
+        "All 41 correctly paletted catalogue phases and surface parts inspected"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br16/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br16/model.glb",
+      "blend_sha256": "f868ac203dcc718e5cf1e636586c3e27c01f509e4df3296b6e7ae127628f9707",
+      "glb_sha256": "392ec249b18acf224eef46ad35e4320987530a3572f1a3390f3f9e8dfa6f40ef",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br16/validation.json",
+      "validation_sha256": "571381063d3a8f862e91d7194b6ca03879f5c5c6ba33dc87c7082fa0e8fa1483",
+      "closed_meshes": 22,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/079",
+      "key": "BR17",
+      "name": "Forge",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Tall core with long front slots/rounded upper faces, left red equipment column/external gold fitting, low layered side hall and tall gold service globe",
+        "Weapons factory, slightly smaller than TechMech and described as a temple to warfare; no invented clan emblems or exposed manufacturing process",
+        "All 41 paletted catalogue phases and body/shadow layers inspected; functional payload byte ranges/hashes checked and read"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br17/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br17/model.glb",
+      "blend_sha256": "2d7ebca23a4119e4ed914177319f8950b51054e2dc991807453d6b06076a9150",
+      "glb_sha256": "a6aaa93dad81a8b38124c40330583c625d2fcd4b963cf10c414279539ad91bb1",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br17/validation.json",
+      "validation_sha256": "cab17173912e409e6a79436c45dbabd2234a87be0f41238d3a9b97a4face8569",
+      "closed_meshes": 29,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/080",
+      "key": "BR18",
+      "name": "Anti-Battery",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "All surface descriptors, sixteen base/head composites using original offsets, and all 41 full catalogue phases inspected",
+        "Rose domed base with gold radial feet; blue caps BR20, red caps BR23; BR18 single rose emitter, BR20 three separate prongs, BR23 single gold emitter",
+        "Full culture/functional evidence reviewed; Sci-Tek audit has no direct BR-specific animation"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br18/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br18/model.glb",
+      "blend_sha256": "257a41d909eded485d1674ace63a0742e03b1432dfb8d7dac5d1b9fec20904a8",
+      "glb_sha256": "8cab5a2ccb99cd3d41adf63821f927856d120ce8dbead95c5bdad67917ad4d6d",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br18/validation.json",
+      "validation_sha256": "6fddaaa0c5054215f78225a9658731624f71255734c550e12e07eeb01e32bdfd",
+      "closed_meshes": 10,
+      "paired_renders": 4,
+      "animations": [
+        {
+          "index": 0,
+          "name": "Animation",
+          "start": 0.0625,
+          "end": 1.0625,
+          "duration": 1.0,
+          "video": "gallery/media/docs/assets/reconstruction/braccatian-refined/br18/animation-00.webm",
+          "sha256": "94d43471a012444edd003b39f7c37b98bfd6ae5e47f869c810823b8e3892d0fd",
+          "frames": 24,
+          "fps": 24.0,
+          "distinct_pose_count": 23
+        }
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/081",
+      "key": "BR19",
+      "name": "Battery",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "All 41 paletted catalogue phases and all surface descriptors inspected; BR11 descriptors 2-15 show pink opening structure, descriptor 1 is a different green state",
+        "BR11 pink pyramid with large gold face fitting; BR12 tapered casing/front fitting; BR19 rounded tapered casing/square base/front foundation connection",
+        "Original functional payloads read/hash checked; no invented extra security or symbolic machinery"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br19/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br19/model.glb",
+      "blend_sha256": "5f8dcf90c2316e3a4360dc4e93260631180fcc01a9a8feba83cdea02f6c9f66f",
+      "glb_sha256": "d6cf86406ce0d5cfd57f0df20fed8381c3137426b3e8cc2964b65fa7ce90bbc8",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br19/validation.json",
+      "validation_sha256": "27e868b2e53461733535f4232c11c2d6ddbcacb95199562cf02c7d629dd518ca",
+      "closed_meshes": 9,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/082",
+      "key": "BR20",
+      "name": "Turret",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "All surface descriptors, sixteen base/head composites using original offsets, and all 41 full catalogue phases inspected",
+        "Rose domed base with gold radial feet; blue caps BR20, red caps BR23; BR18 single rose emitter, BR20 three separate prongs, BR23 single gold emitter",
+        "Full culture/functional evidence reviewed; Sci-Tek audit has no direct BR-specific animation"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br20/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br20/model.glb",
+      "blend_sha256": "fc64653f16351e91431a91f8e6837f6040de280d78311d73bb387853a7ba80eb",
+      "glb_sha256": "360d33338a92360eb4b4678bf9a52e784a0a4d0f4957058352395863be952d46",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br20/validation.json",
+      "validation_sha256": "0f23d921dca37ab15a53792c07ffd4e678e38e15dbec897100dd5d0091f21470",
+      "closed_meshes": 17,
+      "paired_renders": 4,
+      "animations": [
+        {
+          "index": 0,
+          "name": "Animation",
+          "start": 0.0625,
+          "end": 1.0625,
+          "duration": 1.0,
+          "video": "gallery/media/docs/assets/reconstruction/braccatian-refined/br20/animation-00.webm",
+          "sha256": "14d7d5a3a955c488788630382aa4010b7b88cccc7d729bdb68e0e0430df934a9",
+          "frames": 24,
+          "fps": 24.0,
+          "distinct_pose_count": 23
+        }
+      ]
+    },
+    {
+      "id": "openfa:building/legacy/083",
+      "key": "BR21",
+      "name": "Subterranean Extractor",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Tiered cylindrical equipment, broad shoulder, flat upper rim/plate, gold vertical fittings, red lower fields and sloping side housing/slots",
+        "Efficient power-hungry combined mine per functional narrative; no exposed drill or unobserved underground animation",
+        "All 41 paletted catalogue phases and body/shadow layers inspected; functional payload byte ranges/hashes checked and read"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br21/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br21/model.glb",
+      "blend_sha256": "1cf5ba9f5ab79f8e1f8932d7c815f3a34f77021869c944ad138d2f0e721bd3e9",
+      "glb_sha256": "1cf07a5302ca48982a0e7abece07624a6c7f7fa8c338284a80a110e3fa1ac692",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br21/validation.json",
+      "validation_sha256": "2c79fded9eaef14b88d6206efbfa2be24b7617a2095ccf1e6c90c8e12a6b2023",
+      "closed_meshes": 20,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/084",
+      "key": "BR22",
+      "name": "Pithoi",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "Gold lower cylinder, two rose shoulder/bulb regions, gold upper neck and terminal globe",
+        "Large gold circular upper face fitting, middle dark vertical fields, lower pale-blue inset column and red upper-neck inset",
+        "Functional text explicitly describes highly decorated storage jars; all 41 catalogue phases and surface parts inspected"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br22/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br22/model.glb",
+      "blend_sha256": "cc3af55a7f25ac159e230a36103e579d881b5ca1e71b4d7c4db18d444f74ec2f",
+      "glb_sha256": "4a7dbed2efbcb54b1980689ac85439ea564843f4e19db55eb95126d994768975",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br22/validation.json",
+      "validation_sha256": "175d7067e32baa3cc80dbabce2dd017d943809498ff023561d782a776c27bee5",
+      "closed_meshes": 36,
+      "paired_renders": 3,
+      "animations": []
+    },
+    {
+      "id": "openfa:building/legacy/085",
+      "key": "BR23",
+      "name": "Fire Power",
+      "category": "buildings",
+      "decision": "refined",
+      "reason": [
+        "All surface descriptors, sixteen base/head composites using original offsets, and all 41 full catalogue phases inspected",
+        "Rose domed base with gold radial feet; blue caps BR20, red caps BR23; BR18 single rose emitter, BR20 three separate prongs, BR23 single gold emitter",
+        "Full culture/functional evidence reviewed; Sci-Tek audit has no direct BR-specific animation"
+      ],
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/br23/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/br23/model.glb",
+      "blend_sha256": "c175bca07dada1e5fc81a7b40d183417a50a60af7ac6e2843bb390c176794d90",
+      "glb_sha256": "d0c088b62cc34929a2014e672f3f5c4621a35daa7b40260a6aedbe87d66d5708",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/br23/validation.json",
+      "validation_sha256": "df4f9aeff6ab5c6f1f4d58be1eca94cc31c29ff84af96082e493ba852b58e53a",
+      "closed_meshes": 10,
+      "paired_renders": 4,
+      "animations": [
+        {
+          "index": 0,
+          "name": "Animation",
+          "start": 0.0625,
+          "end": 1.0625,
+          "duration": 1.0,
+          "video": "gallery/media/docs/assets/reconstruction/braccatian-refined/br23/animation-00.webm",
+          "sha256": "ad2c6040ea6b07f337b0ed9b7cc39a4382c78017d5807ca4a90a3b7f5c43bf2a",
+          "frames": 24,
+          "fps": 24.0,
+          "distinct_pose_count": 23
+        }
+      ]
+    },
+    {
+      "id": "openfa:ship/braccatian/rattlesnake",
+      "key": "BR0A",
+      "name": "Rattlesnake",
+      "category": "ships",
+      "decision": "retained-after-focused-review",
+      "reason": "All 32 populated tiny headings reviewed. The current curved rose body, pale-gold prow and broadened raised aft end already reproduce the visible form and major colour divisions. Existing fitted service fields are sufficient; no additional visible legacy component is established by these 5-19 pixel-wide views. Retain rather than invent machinery; fresh construction/material/UV/helper/GLB/render checks required.",
+      "model": "sources/docs/assets/reconstruction/ships/braccatian/rattlesnake/model.blend",
+      "glb": "sources/docs/assets/reconstruction/ships/braccatian/rattlesnake/model.glb",
+      "blend_sha256": "4162053450219686cd2404a20c8b55a160423f2061c6a9b3f585362d42a317ea",
+      "glb_sha256": "5602da2d9286f53105e072380f9d294bfc8f1046c65e0a92c134fe601feaca6a",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/ship-retention/rattlesnake/validation.json",
+      "validation_sha256": "6a802e92417dc6d02339a148ac7ef9d4e3e696f4f9603adfbe729390e86cc94c",
+      "closed_meshes": 33,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:ship/braccatian/widowmaker",
+      "key": "BR1C",
+      "name": "WidowMaker",
+      "category": "ships",
+      "decision": "refined",
+      "reason": "All 32 headings reviewed. Preserve tapered gold body, rose nose, four genuine aft openings and grey armour/strakes; replace eight hairline neck accents with broad source-visible rose fields. Exact field cross-sections remain authored.",
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/ships/widowmaker/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/ships/widowmaker/model.glb",
+      "blend_sha256": "810297a29c2e403d518725e7ae95c7cf4a149cb9da0344040768c893d66a382f",
+      "glb_sha256": "4e1105dea1e7bacd0a2e9b858eee54edf079e3130cc392cf5e84ee4891b70e4a",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/ships/widowmaker/validation.json",
+      "validation_sha256": "f88037346f806efc7450ab03c0654b0e89afbab6a34234276023db2e4e94bb3a",
+      "closed_meshes": 48,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:ship/braccatian/heartsblood",
+      "key": "BR2C",
+      "name": "HeartsBlood",
+      "category": "ships",
+      "decision": "refined",
+      "reason": "All sixteen populated even descriptors and empty odd descriptors reviewed. Preserve gold body, four rose radial pods with three bands each, nose and four aft openings; replace eight hairline forward accents with broad rose fields. Empty descriptors do not establish a second geometric state.",
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/ships/heartsblood/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/ships/heartsblood/model.glb",
+      "blend_sha256": "69fbad72c832cc935dd03c03cad85d75e14c98cba0b1fc1900b6a7e20f9dcaaa",
+      "glb_sha256": "6bf59dd72a5be733b5fc8be6e2dd146527d8acc63ad20ae907cc88d7a62ea651",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/ships/heartsblood/validation.json",
+      "validation_sha256": "77f3031df2bcb721a1bc492f2257b819e6792e1536e114a63a024c0ae61bd457",
+      "closed_meshes": 56,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:ship/braccatian/morning-glory",
+      "key": "BR3A",
+      "name": "Morning Glory",
+      "category": "ships",
+      "decision": "retained-after-focused-review",
+      "reason": "All 32 populated tiny headings reviewed. The current narrow gold spindle, broad rose terminal, short axial projection and grey opposite tip correspond to the visible shape/colour regions. Exact transverse shape and hidden surface details remain uncertain. Additional machinery is not established at 9-18 pixels across; retain with fresh construction/material/UV/helper/GLB/render checks.",
+      "model": "sources/docs/assets/reconstruction/ships/braccatian/morning-glory/model.blend",
+      "glb": "sources/docs/assets/reconstruction/ships/braccatian/morning-glory/model.glb",
+      "blend_sha256": "b6b8c35ad8dcc65a3e9b375a184cd0322b39500da014f6a49003cc969e1aa7be",
+      "glb_sha256": "3efd4a662222b6f719c2cd66529788ea504d4246b455122d41a8a0167754778c",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/ship-retention/morning-glory/validation.json",
+      "validation_sha256": "6c8e14036179554783697136830bd590440508d881ed91351c2bf85bf2ea0743",
+      "closed_meshes": 40,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:ship/braccatian/skymech",
+      "key": "BR4C",
+      "name": "SkyMech",
+      "category": "ships",
+      "decision": "refined",
+      "reason": "Both fixed states reviewed. User identifies an orbital station with a much broader central body reaching near the peripheral hemispheres. Replace the thin core/ribs/arm housings with a broad two-chamber core, large axial equipment and radial service casings; add dome fittings/window and concentric module faces. Preserve caps, peripheral modules and alignment axis. User subsequently identifies frame two as scaffolded construction: this finished variant is only phase zero; the separate animated construction variant is required by issue #192.",
+      "model": "sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.blend",
+      "glb": "sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.glb",
+      "blend_sha256": "420f883d8c1ccd7ed6aef8269b328d0e9cb94269656f490012dd54829c8836ad",
+      "glb_sha256": "d3ef64b31c6759b547df3725b08ab3a7ba60132caf1ff7d9dec185afa08cb5c0",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/ships/skymech/validation.json",
+      "validation_sha256": "680305cdebef9a8ad7fb8c3f57b5c24a7a4142eaefc8003aaeabf2ac0eb349e4",
+      "closed_meshes": 112,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:missile/braccatian/mega-blast",
+      "key": "BRM1",
+      "name": "Mega Blast",
+      "category": "missiles",
+      "decision": "retained-after-focused-review",
+      "reason": "Two broad gold expansions separated by a thin banded waist, copper forward neck and gold terminals. Existing source and current model views show these major forms and divisions. No additional resolved external component justifies a new study at this source resolution; preserve the detailed first model. Exact hidden sections, transverse shape and material identities remain authored.",
+      "model": "sources/docs/assets/reconstruction/missiles/braccatian/mega-blast/model.blend",
+      "glb": "sources/docs/assets/reconstruction/missiles/braccatian/mega-blast/model.glb",
+      "blend_sha256": "97dc04a461d30e65ce1f3e3d22fcfef96ce303aa13e6395046574e2ad704c8a5",
+      "glb_sha256": "b793ccaf2447c6a1d0ca760b4cd142c6ad361dbc19c4a28355dfb0eda493cc4e",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/missile-retention/mega-blast/validation.json",
+      "validation_sha256": "634846484a863f6b2d1543cbc24837d1c44e00985603567ceba430343df5d716",
+      "closed_meshes": 37,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:missile/braccatian/flaming-ruin",
+      "key": "BRM2",
+      "name": "Flaming Ruin",
+      "category": "missiles",
+      "decision": "retained-after-focused-review",
+      "reason": "A broad continuous gold body with longitudinal divisions, copper neck/coupling and gold terminals. Existing source and current model views show these major forms and divisions. No additional resolved external component justifies a new study at this source resolution; preserve the detailed first model. Exact hidden sections, transverse shape and material identities remain authored.",
+      "model": "sources/docs/assets/reconstruction/missiles/braccatian/flaming-ruin/model.blend",
+      "glb": "sources/docs/assets/reconstruction/missiles/braccatian/flaming-ruin/model.glb",
+      "blend_sha256": "4bb3ff7b1e3218bc0a3bebe9bd528b9d9b446044d7fc5122007ecc550d5a39e1",
+      "glb_sha256": "8685141bf39ec54762ec5b65499aee7febcb16d7dee3a68254c36d95185a0d88",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/missile-retention/flaming-ruin/validation.json",
+      "validation_sha256": "8fd05c52b1ef0fc090229d96f0094691297073dcc6962f19fc2247a85ff811ad",
+      "closed_meshes": 22,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:missile/braccatian/volcano",
+      "key": "BRM3",
+      "name": "Volcano",
+      "category": "missiles",
+      "decision": "retained-after-focused-review",
+      "reason": "A long narrow copper shaft between two broad gold collars, with gold terminals; the waist must remain exposed. Existing source and current model views show these major forms and divisions. No additional resolved external component justifies a new study at this source resolution; preserve the detailed first model. Exact hidden sections, transverse shape and material identities remain authored.",
+      "model": "sources/docs/assets/reconstruction/missiles/braccatian/volcano/model.blend",
+      "glb": "sources/docs/assets/reconstruction/missiles/braccatian/volcano/model.glb",
+      "blend_sha256": "bf89ab7d3c334b10408fe21c4a51c7ffc3ef610eeacc7d885a1613c55039b338",
+      "glb_sha256": "6d731a511ef9340de6cf3eb9f4430b7ab74d9a5412b27c27252ffec8d03a193f",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/missile-retention/volcano/validation.json",
+      "validation_sha256": "1b6bee20ea586eba2f563a4b5e52ff657881eaffe04ca814735d821153282c96",
+      "closed_meshes": 20,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:missile/braccatian/multi-blast",
+      "key": "BRM4",
+      "name": "Multi Blast",
+      "category": "missiles",
+      "decision": "retained-after-focused-review",
+      "reason": "One broad gold rear section, narrow banded connecting shaft and separate small gold terminal regions. Existing source and current model views show these major forms and divisions. No additional resolved external component justifies a new study at this source resolution; preserve the detailed first model. Exact hidden sections, transverse shape and material identities remain authored.",
+      "model": "sources/docs/assets/reconstruction/missiles/braccatian/multi-blast/model.blend",
+      "glb": "sources/docs/assets/reconstruction/missiles/braccatian/multi-blast/model.glb",
+      "blend_sha256": "fb39b3e945d824825cbec21bc54c2d8e33439df3b54e221e433128fd9884e220",
+      "glb_sha256": "cf0430b6bcf434a066dc195ebfa3eff360f473584e7c0732895fa13fde5ac7b9",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/missile-retention/multi-blast/validation.json",
+      "validation_sha256": "170c34d618263d0ece64403f90bb3241c6c56d21fb89891d0e861d6a0ce699aa",
+      "closed_meshes": 24,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:missile/braccatian/dancing-bolt",
+      "key": "BRM5",
+      "name": "Dancing Bolt",
+      "category": "missiles",
+      "decision": "retained-after-focused-review",
+      "reason": "Broad gold/yellow-green central body with visible bands and longitudinal divisions, red terminal pieces. Existing source and current model views show these major forms and divisions. No additional resolved external component justifies a new study at this source resolution; preserve the detailed first model. Exact hidden sections, transverse shape and material identities remain authored.",
+      "model": "sources/docs/assets/reconstruction/missiles/braccatian/dancing-bolt/model.blend",
+      "glb": "sources/docs/assets/reconstruction/missiles/braccatian/dancing-bolt/model.glb",
+      "blend_sha256": "3d7cbb0933d115a1ba3756f463fe4291f4080e5769a54cdcb3850ae8f234214c",
+      "glb_sha256": "d2c5d40153f4621589783ccc4a0cfc878877bb8e690e3d76d91d8e1ce963c18c",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/missile-retention/dancing-bolt/validation.json",
+      "validation_sha256": "e43dc7fc483b037d5cd12e0e2095efa9e985f8e1b4a60c22d62023990eaf8d96",
+      "closed_meshes": 25,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:missile/braccatian/hotbomb",
+      "key": "BRM6",
+      "name": "HotBomb",
+      "category": "missiles",
+      "decision": "retained-after-focused-review",
+      "reason": "Two expanded end regions with gold side castings/collars and a much narrower copper-coloured middle. Existing source and current model views show these major forms and divisions. No additional resolved external component justifies a new study at this source resolution; preserve the detailed first model. Exact hidden sections, transverse shape and material identities remain authored.",
+      "model": "sources/docs/assets/reconstruction/missiles/braccatian/hotbomb/model.blend",
+      "glb": "sources/docs/assets/reconstruction/missiles/braccatian/hotbomb/model.glb",
+      "blend_sha256": "3fb00e3f54919aa1e922786105fee54d781bed6e6b2497a9a7556c616b3b1445",
+      "glb_sha256": "c85495e725b675e337f5746c72c3a66d9cb01155b747824bb868e92124d2e054",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/missile-retention/hotbomb/validation.json",
+      "validation_sha256": "6931ff8ff18932b825334b4c0795c4a27f53e4da3784c99d7a113a5721fb94b8",
+      "closed_meshes": 24,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:missile/braccatian/outbreak",
+      "key": "BRM7",
+      "name": "Outbreak",
+      "category": "missiles",
+      "decision": "retained-after-focused-review",
+      "reason": "Two separated gold masses with conspicuous pink side castings, narrow copper connection and gold terminals. Existing source and current model views show these major forms and divisions. No additional resolved external component justifies a new study at this source resolution; preserve the detailed first model. Exact hidden sections, transverse shape and material identities remain authored.",
+      "model": "sources/docs/assets/reconstruction/missiles/braccatian/outbreak/model.blend",
+      "glb": "sources/docs/assets/reconstruction/missiles/braccatian/outbreak/model.glb",
+      "blend_sha256": "d294882facb854835868e38a97d01e064da6a6295c5b036462222b47e74cab03",
+      "glb_sha256": "8cb310b3bd66d49bdf456e5cf7df7c52637d6c62be4cdb33e077e58b2741a947",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/missile-retention/outbreak/validation.json",
+      "validation_sha256": "be8285e3df4c66436b03599fe6be0f959793b21cfc22fffeb5cef53ca048b76d",
+      "closed_meshes": 23,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:missile/braccatian/anti-outbreak",
+      "key": "BRM8",
+      "name": "Anti-Outbreak",
+      "category": "missiles",
+      "decision": "retained-after-focused-review",
+      "reason": "One broad continuous gold chamber with pink side fittings and exposed copper forward/aft regions. Existing source and current model views show these major forms and divisions. No additional resolved external component justifies a new study at this source resolution; preserve the detailed first model. Exact hidden sections, transverse shape and material identities remain authored.",
+      "model": "sources/docs/assets/reconstruction/missiles/braccatian/anti-outbreak/model.blend",
+      "glb": "sources/docs/assets/reconstruction/missiles/braccatian/anti-outbreak/model.glb",
+      "blend_sha256": "ccd0fe79ec34c7c6e649a3a8674bc5886705286328dc3132d3375d2445f2da58",
+      "glb_sha256": "4e5b7ee6a9afd2248dde0e2c4355c715cbe24f938cc185ba4e84698385834944",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/missile-retention/anti-outbreak/validation.json",
+      "validation_sha256": "44eb544f186a8cb5406b6b489d2fe9b76dca4004ed30f41bd61970b544072bc9",
+      "closed_meshes": 23,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:missile/braccatian/midwinter",
+      "key": "BRM9",
+      "name": "Midwinter",
+      "category": "missiles",
+      "decision": "retained-after-focused-review",
+      "reason": "Gold central body with yellow-green bands/longitudinal regions, copper neck and small gold terminal regions. Existing source and current model views show these major forms and divisions. No additional resolved external component justifies a new study at this source resolution; preserve the detailed first model. Exact hidden sections, transverse shape and material identities remain authored.",
+      "model": "sources/docs/assets/reconstruction/missiles/braccatian/midwinter/model.blend",
+      "glb": "sources/docs/assets/reconstruction/missiles/braccatian/midwinter/model.glb",
+      "blend_sha256": "38acec1ec1d523275a848a13cbc242c170a7ae628bdce62ca369fa773d1ccd5a",
+      "glb_sha256": "cc685fbc0c82369beaef5844326e06c1610fb67548058ab44c0858711ade5881",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/missile-retention/midwinter/validation.json",
+      "validation_sha256": "90edafc3c054dffaa0e0105346f7acbb901f9c34d4377618deee0ec25fb498d3",
+      "closed_meshes": 26,
+      "paired_renders": 4,
+      "animations": []
+    },
+    {
+      "id": "openfa:missile/braccatian/comms-killer",
+      "key": "BRM10",
+      "name": "Comms Killer",
+      "category": "missiles",
+      "decision": "retained-after-focused-review",
+      "reason": "Two substantial gold bodies around a narrow central join, with copper-coloured terminals and longitudinal highlight regions. Existing source and current model views show these major forms and divisions. No additional resolved external component justifies a new study at this source resolution; preserve the detailed first model. Exact hidden sections, transverse shape and material identities remain authored.",
+      "model": "sources/docs/assets/reconstruction/missiles/braccatian/comms-killer/model.blend",
+      "glb": "sources/docs/assets/reconstruction/missiles/braccatian/comms-killer/model.glb",
+      "blend_sha256": "852611cd67b9b97d0348a77ed10223ddad0538f52cbd3d548667e6d50e0cf08c",
+      "glb_sha256": "657645c305a51bf36d6dc8a84ff22d802bf33f319d0484cd97095fef6e912c76",
+      "validation": "gallery/media/docs/assets/reconstruction/braccatian-refined/missile-retention/comms-killer/validation.json",
+      "validation_sha256": "9c118d37af9ae9f87415aeacb48058ad18d5e292fedbcc4ce9819ce22790a3f8",
+      "closed_meshes": 23,
+      "paired_renders": 4,
+      "animations": []
+    }
+  ],
+  "limitations": [
+    "Exact alloys, hidden sections, transverse profiles and repeated hidden detail counts remain authored",
+    "Source projection, runtime scale/orientation and equipment mounts require game integration calibration",
+    "Sci-Tek visual review samples 648 updates and does not claim inspection of every decoded frame; no direct Braccatian subject binding"
+  ]
+}

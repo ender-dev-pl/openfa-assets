@@ -1,0 +1,56 @@
+{
+  "asset": "openfa:ship/braccatian/rattlesnake",
+  "review_type": "Retrospective review; the initial mobile pass skipped ImageGen",
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Use case: stylized-concept. OpenFA Braccatian Rattlesnake BR0A small scout. Required retrospective ImageGen concept review1 of max3. The contact sheet is actual paletted legacy in four headings and defines silhouette/colour. Reconstruct the same compact gently curved tapered copper/rose spindle, expanded but still compact end sections, pale gold/brass forward area and a narrow gold middle band, no broad wings. Legacy pixels are sparse: do not invent a humanoid cockpit, giant engines, glass domes, turrets, clan emblems or mechanisms. Keep the subtle irregular/curved spindle outline, small craft scale and warm rose/copper and muted pale-gold regions; a small silver-grey end fitting where visible. Restrained worn space metal, isolated scuffs, tiny dents, joint grime and sparse service seams, no dense tiled panels or excessive greebles. Show ONE consistent craft in large three-quarter view and smaller side view, neutral dark studio backdrop, no text or original pixel collage.",
+      "image": "gallery/media/concepts/braccatian/rattlesnake-01.png",
+      "verdict": "Rejected: too long/thin compared with actual legacy side silhouette; invented hollow fore terminal.",
+      "gallery_label": "Rejected concept 1",
+      "sha256": "3b9b6031f9908fee53e8d57e244a49955f1632136656d1e7902236a0102c6268",
+      "input_images": [
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "c805bff56ff6d41e821810cdc053de237e0b7b64dd6942971d7ab969dbec6244"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "prompt": "Precise geometry correction, OpenFA Braccatian Rattlesnake BR0A retrospective concept iteration2 of max3. Input1 is AUTHORITATIVE original paletted legacy headings; input2 is REJECTED first concept, too long/thin. Preserve warm worn rose copper and pale brass material language from input2, but REPLACE its proportions. Make a short, stout gently curved spacecraft with SIDE-VIEW total length only about 2.7 to 3 times maximum body HEIGHT, not the previous long rod with a pinched pencil waist. The whole rose body is full and thick, with a shallow banana-like longitudinal bend, a broadened closed pale-gold pointed forecap and a compact flared rose aft end. Retain the legacy small gold strip along the rose side and restrained gold fittings. Remove the invented hollow gun-muzzle-like fore opening and extra protruding tail nozzle: original does not prove them. Closed mechanical end caps, no inferred weapon or engine function. No wings, cockpit bubble, turrets, dense panel grid or large machinery. A few wear scratches, tiny recessed service features and grime in seams. One coherent compact scout in three-quarter view and side view, both with the SAME stout proportions and curvature. The ship is a compact curved body, not a long copper baton. Dark studio backdrop, no text, no source-pixel collage.",
+      "image": "gallery/media/concepts/braccatian/rattlesnake-02.png",
+      "verdict": "Retained broad form/material reference: stouter gently curved rose body, closed pale-gold forecap and compact flared aft section.",
+      "gallery_label": "Reviewed concept 2",
+      "sha256": "d9d5f515f92ea51660e89b7da2d795a6635dc024d0c0c3e7bae29b2216cc269e",
+      "input_images": [
+        {
+          "role": "actual paletted legacy reference",
+          "sha256": "c805bff56ff6d41e821810cdc053de237e0b7b64dd6942971d7ab969dbec6244"
+        },
+        {
+          "role": "rejected too-thin first concept",
+          "sha256": "3b9b6031f9908fee53e8d57e244a49955f1632136656d1e7902236a0102c6268"
+        }
+      ]
+    }
+  ],
+  "glb_visual_review": "The source/imported GLB retains the fuller curved body, closed gold forecap, warm side strip and compact aft section. First thin concept is rejected; second agrees on the broad proportions. Rougher used-alloy finish applied after concept/render feedback; no inferred weapon/engine openings added.",
+  "final_user_acceptance": "pending",
+  "legacy_identity": {
+    "entry": "BR0A.256",
+    "source_sha256": "73b2442446f0d1534b42cf44634aea41926f9a5014d8af495583c93e33d57597",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ]
+  },
+  "legacy_contact_sha256": "c805bff56ff6d41e821810cdc053de237e0b7b64dd6942971d7ab969dbec6244",
+  "reviewed_binary_hashes": {
+    "blend": "25a662c6f5a1df5c04c36009bf2c0146a82373067b25a600dabd7d324ef68462",
+    "glb": "a1e9813632151814e7850892bb30c17e5c66db0d296d7fc589f2556c9e66921e"
+  }
+}

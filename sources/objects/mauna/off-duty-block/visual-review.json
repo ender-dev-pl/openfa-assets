@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/133",
+  "binaries": {
+    "blend": "7d1d35d0fdd6e3b4933f5a41c1aaf52db0a59f2f81026ac03a3dfcca49ef41d5",
+    "glb": "8db21faa64b0feeda7ae61eef3fe2a374b6a93a6bd4c5f2f125547451e9b85e0"
+  },
+  "runtime_report_sha256": "38709f27624e1312c8c5dc02858e6616e8da0315d09dd2a505d01d3a2e1a81bb",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0005551218665972765,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00013743815283122595,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00010720058053237458,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn04-review-1.png",
+      "sha256": "e09971078cd7a561a3e261a3063a5c030edcc023f80139f53dd6cac7d144eebc",
+      "prompt": "sources/docs/reconstruction/models/mn04-concept-prompt-1.txt",
+      "feedback": "Selected uprightconcreteblock,four4x2yellowgreenwindowbanks,two lowerredinsets andthree rectangularbrassroofstacks withunequalclosepair. Ownsourcegoverns exactproportions/stackpositions andplainstacktops overaddedconceptcaps. Hiddenrearwalls remainplain;noextra floors/windowbanks."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "stage": "actual_native_render_and_saved_geometry_gate",
+      "binaries": {
+        "blend": "0bd07d6adbcdfec33311293c684e65ecde520fece6a993a093a00a21c25c867d",
+        "glb": "8fc1f0fb9117a8fbf070c03c033daab285dbf54607914cf1df340c8f6b316923"
+      },
+      "status": "revision_required",
+      "finding": "Nativequarterrender has separate thirdroofstack too nearimagecentre andpanes too mustard ratherthanyellowgreen. Move thirdstack(.28,-.16)to(.32,.18),updateactualgrooves,slightlygreeneryellowpane colour. Runtime1passednative/import snapshots/contacts/pixels butterminallyfailed declaredmaterialcount6:actualGLBcontains5roles(concrete,glass,dark,red,brass),becauseexposededge rolewasunused. Correctbudgettomeasured5andremoveunusededgecolourmap,retainingallusedroles andstrictgeometry/pixelguards. No successfulfullruntime/report claimed.",
+      "native_render_sha256": "deb7674258c12cd5844ce4c575aeb9cf10fe6feadeee5b23e4017cea162373fe"
+    },
+    {
+      "pass_number": 2,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "7d1d35d0fdd6e3b4933f5a41c1aaf52db0a59f2f81026ac03a3dfcca49ef41d5",
+        "glb": "8db21faa64b0feeda7ae61eef3fe2a374b6a93a6bd4c5f2f125547451e9b85e0"
+      },
+      "runtime_report_sha256": "38709f27624e1312c8c5dc02858e6616e8da0315d09dd2a505d01d3a2e1a81bb",
+      "status": "accepted_asset_only",
+      "finding": "Finalnativequarter/importwhole/front/rear/bothdetails andprivatelegacy/concept/GLBboardVIEWED. Separate roofstack nowrightofunequalpair;pane colouryellowgreen insteadofmustard. Uprightblock,four4x2banks/two lowerredpanels/three rectangularstacks retain ownsource anatomy. Runtime2PASS2148tri/15closedpositiveparts/5usedmaterialroles/8embeddedmaps/error1.3328e-07. Actualblindfields/backings/32panecontacts,three stackcontacts/distincttops,grooves/chips/root/texturepixels/lowsteadyemission andrenderpairs pass. Initialmaterialcountgate documentedwithoutfakefullruntime.",
+      "limitations": [
+        "Plainhiddenrearwalls,blindfielddepths,stackmount/groovepitch andcellrelative dimensions authored.",
+        "Lowsteadywindowemission chosen toretainbright sourcepanes,notrecovered timedlegacy lightphases.",
+        "PB00Terranroundlivingquarters isonlyfunctioncontext. No ownoperatinganimationinferred;approximatecamera andfinaluser/clientacceptance separate."
+      ]
+    }
+  ],
+  "final_review": "Own fourpalettedlayers/all41catalogueupdates,function994/culture137,one actualselectedImageGenconcept andactualsavednative/independentGLB whole/front/rear/details reviewed. Uprightconcreteblock,four4x2yellowgreenwindowbanks,two lowerredpanels andthree rectangularbrassroofstacks retain sourceanatomy. Firstnativefeedback corrected separate thirdstackplacement andmustardpanecolour. Measuredfiveusedmaterialroles replaceincorrectsixrole declaration;unusededgecolourmap removed withoutremovingany usedrole. Actualrecesses/panecontacts/stackcontacts/chips/textures andlowsteadyemission verified.",
+  "limitations": [
+    "Plainhiddenrearwalls,blindfielddepths,stackmounts/groovepitch andcellrelative dimensions authored.",
+    "PB00full60updates/archivepreview depictsTerranroundlivingquarters,notMauna geometry/operation. Full_MAindexes/all36researchsubjects surveyed;no directownoperatinganimation identified.",
+    "Lowsteadywindowemission isanauthoredmaterialchoice preservingbright sourcepanes,not recovered timedlegacy lighting. Approximatecamera;finaluser/clientacceptance separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

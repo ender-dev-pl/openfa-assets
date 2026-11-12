@@ -1,0 +1,43 @@
+{
+  "item_id": 66,
+  "legacy_stem": "TI067",
+  "baseline_native": "sources/docs/assets/reconstruction/trading-goods/TI067/TI067.blend",
+  "baseline_native_sha256": "1231fff09ac41059151e5b72ca17ef21da88c03ce32b5fb5b1658e699ea9d2da",
+  "builder_sha256": "755ceafa665ccc11ce979964f40102a4ab54367ab8827d889e95596529e36416",
+  "refined_native_sha256": "53b716469e386396b245828a0428002da51c4d76c6dcfdfc1bde868b6e673f60",
+  "glb_sha256": "d2f67e9614008f538e2f2934e216deb18696482ac0a4237a70cc0f1d6315a551",
+  "materials": [
+    {
+      "name": "TI067 / ceremonial gold",
+      "role": "metal",
+      "roughness": 0.36,
+      "base_colour": [
+        0.5600000023841858,
+        0.3199999928474426,
+        0.054999999701976776,
+        1.0
+      ],
+      "micro_relief_distance": 0.0009135000291280448
+    },
+    {
+      "name": "TI067 / red enamel inner bowl",
+      "role": "paint",
+      "roughness": 0.25,
+      "base_colour": [
+        0.44999998807907104,
+        0.004999999888241291,
+        0.003000000026077032,
+        1.0
+      ],
+      "micro_relief_distance": 0.00018,
+      "coat_weight": 0.3
+    }
+  ],
+  "glb_materials": "Scalar/base-colour fallback; procedural shader baking deferred",
+  "model_geometry": "Original parts retained with small manufactured edge radii; deterministic normal displacement on organic, horn, stone and fabric meshes; cask label placement corrected; cheese proxy holes replaced by actual cavities where applicable",
+  "geometry_builder": "sources/tools/trading-goods/refining/repair_cup.py",
+  "geometry_builder_sha256": "84fc5c563d73dd103af094411f96dc08f345d6567289ac9b3d79beedf5890a1e",
+  "prior_refined_native": "sources/docs/assets/reconstruction/trading-goods-refined/TI067/TI067.blend",
+  "prior_refined_native_sha256": "59ac3996fdbfe005ed2158d55a2e7edfe61ba3a27c39d048e9e472f9c0ec7084",
+  "bowl_repair": "Remove one unintended red-lining rim cap, orient coating towards the interior and retain thin enamel thickness; restore a reflective enamel surface and move intersecting handles outside the bowl wall. This follows the documented hollow-bowl construction, not a new claim about unseen legacy detail."
+}

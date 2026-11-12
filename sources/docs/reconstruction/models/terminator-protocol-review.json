@@ -1,0 +1,96 @@
+{
+  "issue": 248,
+  "id": "openfa:terminator",
+  "kind": "retrospective concept/render feedback; user-selected SciTek geometry preserved",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/terran/terminator-review-1.png",
+    "sha256": "b9c1aa59c7411105749183e176e2d6bfa03839489d8dc66ebb27ef3816c46135",
+    "prompt": "sources/docs/reconstruction/models/terminator-concept-prompt-1.txt",
+    "verdict": "Usable overall layout/colour study. Rounded wing tips, softened housings, grille glow and extra small under-wing attachments are not recovered geometric evidence."
+  },
+  "reference": {
+    "kind": "Actual original PS04.VID frames 0/15/30/45 cropped from existing private comparison; ST30 preview frames 0/15 also inspected",
+    "private_comparison_sha256": "c01bf66a3529c3964178ed10b8c14990a927a7dbe5d057cb73bdd4334891e7ef",
+    "private_reference_sheet_sha256": "adf529cb42c359df2fe257176d7b6074208609c3af56736ad62e63a02a217c75",
+    "additional_original_frame_hashes": [
+      "c0c56dc121cff2b7e392a9d38316e5c29555a178aa16b450e8a9f165bc558560",
+      "6529fb6337b2b2fe347d07bb32d6a3019638459c149dcdab5a76b97f79559ab0"
+    ],
+    "legacy_pixels_published": false
+  },
+  "model": {
+    "blend": "sources/objects/terran/terminator/refined/model.blend",
+    "glb": "sources/objects/terran/terminator/refined/model.glb",
+    "binaries": {
+      "blend": "07a05d0ffb2e71ce7be5231ad85f5675dda42df3994a9e696a12e38bb99f111a",
+      "glb": "ad8f9217645347aa7649a9b0aa77b46c86276088e8d650917d84425f79412fed"
+    },
+    "mesh_count": 71,
+    "triangles": 54076,
+    "model_bytes_unchanged": true
+  },
+  "runtime": {
+    "report": "gallery/media/docs/assets/reconstruction/evidence/terminator-protocol/runtime-review.json",
+    "sha256": "95fc57142ea60b02beada67540db23c31e57c1bedadf254ce961278bac96c0ac",
+    "native_import_pixel_comparisons": {
+      "front-quarter": {
+        "mean_absolute_rgba_255": [
+          0.23822021484375,
+          0.23822265625,
+          0.24673583984375,
+          0.0
+        ],
+        "binary_silhouette_equal": true,
+        "alpha_bounds_native_imported": [
+          [
+            152,
+            165,
+            612,
+            422
+          ],
+          [
+            152,
+            165,
+            612,
+            422
+          ]
+        ]
+      },
+      "rear-quarter": {
+        "mean_absolute_rgba_255": [
+          0.20008056640625,
+          0.19657470703125,
+          0.199833984375,
+          0.0
+        ],
+        "binary_silhouette_equal": true,
+        "alpha_bounds_native_imported": [
+          [
+            151,
+            221,
+            612,
+            487
+          ],
+          [
+            151,
+            221,
+            612,
+            487
+          ]
+        ]
+      }
+    }
+  },
+  "feedback": [
+    "Legacy, concept and canonical GLB agree on broad swept wings, paired red stripes, raised central body and twin bronze aft throats.",
+    "Concept rounds wing tips and inflates shoulder/forebody contours; use original sources for those shapes, not the concept alone.",
+    "Canonical GLB has sharper triangular wing tips, smoother continuous central body transitions and a smaller raised grille rather than the more recessed legacy structure.",
+    "Actual GLB surface detailing and wear contrast are less developed than the concept. These findings do not supersede the user-selected latest SciTek geometry or authorize an automatic redesign.",
+    "A first diagnostic compared raw native mesh bounds against modifier-evaluated GLB and failed at the small bevelled bow needles. Corrected evaluation checks the dependency graph on both sides without relaxing tolerance; fresh renders were rerun."
+  ],
+  "final_artistic_acceptance": false,
+  "client_integration_verified": false
+}

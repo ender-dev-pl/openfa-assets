@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/105",
+  "binaries": {
+    "blend": "b4882d8e3a6da96c1b7e49a12317ce2d9b7e689674370f0bce042d72635c071c",
+    "glb": "a67f52ae01ea4c839e36748eeedf7e3037d2186d4efd0730f3c7c1a7c8fa2888"
+  },
+  "runtime_report_sha256": "816a7d56d4437349dbdc891c4696d7253db5515abf0711d5d7eb94a7fa45280d",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0020148821992139964,
+      "margin": 82
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0017877893984088674,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0019763974729530578,
+      "margin": 92
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk20-review-1.png",
+      "sha256": "3d35d13a5b0cf14c8b2d6013df3b3c6ba4368addc4992baf8a604350cc4546d0",
+      "prompt": "sources/docs/reconstruction/models/mk20-concept-prompt-1.txt",
+      "feedback": "Selected:low asymmetric mineral mound,short narrow upright head,one pale blue front lens and two unequal fork prongs. Preserve compact source proportions;concept fracture anatomy and fine mineral engineering interpreted. Source operation overlays,not concept,govern gold pulse."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "07a0650d8251f818c25bd79d10b03cb2ff3c8e9897cf251ed9ea1e00ac177793",
+        "glb": "7dbc5eef1459ef649cf417c4457008496d20b4d09442cf9ccc67c27ccba2b5d4"
+      },
+      "runtime_report_sha256": "ae30e630dddfe0c74a677de940c8fbc290de0b4fe9e62f26b30f13842be55577",
+      "finding": "Actual front-quarter render compared with original enlargement and real selected concept:short forked head and pale blue lens retained,but lower mineral mound is too flat and lacks the source chunky raised front masses.",
+      "action": "Deepen continuous ore base and sculpt larger asymmetric mineral knuckles,retaining short head and the exact source-supported pulse-only animation.",
+      "status": "revision_required"
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "ee6b5c25ed5377c7b309cd1442c89362c9eebf6c315ddde7039cf3002553ea2b",
+        "glb": "9b0e1fef1cfd927984f1af22a822949bb4f5468fbb52efd2300931e927ac0c7a"
+      },
+      "runtime_report_sha256": "bc5b946c6ff265c1ccc32efcbe19895067e6b2882845683b99385cefe7e21e3c",
+      "finding": "Deeper mound and shared interior contact now match the compact silhouette better. Actual pulse-peak render shows patchy peach opaque-looking energetic blob rather than source golden light.",
+      "action": "Keep corrected geometry;make pulse emission dominant with low-blue golden gradient and continuous planar pulse UV. Add explicit preview-only compositor glow to show existing GLB emission;client must map its own bloom separately.",
+      "status": "revision_required"
+    },
+    {
+      "pass_number": 3,
+      "binaries": {
+        "blend": "b4882d8e3a6da96c1b7e49a12317ce2d9b7e689674370f0bce042d72635c071c",
+        "glb": "a67f52ae01ea4c839e36748eeedf7e3037d2186d4efd0730f3c7c1a7c8fa2888"
+      },
+      "runtime_report_sha256": "816a7d56d4437349dbdc891c4696d7253db5515abf0711d5d7eb94a7fa45280d",
+      "finding": "Final actual whole legacy/concept/GLB comparison,fork/lens detail and peak render reviewed. Broad asymmetric mineral mound,short forked head and pale blue front lens retained;dominant golden emission no longer has patchy peach facets. Preview compositor glow explicitly separate from portable emissive texture/strength3. Decoded video samples reviewed;source-supported pulse changes while head/base/lens remain fixed.",
+      "action": "Accept agent source/concept/native/imported GLB review. Final user/client performance,scale,states and bloom remain separate.",
+      "status": "agent_review_accepted",
+      "video_sha256": "04aa4fa3ba77071a8b9b8db7970458f033a4df0826dede7026c47a9aa4b3d840",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 384,
+            "height": 384,
+            "r_frame_rate": "24/1",
+            "nb_read_frames": "33"
+          }
+        ],
+        "format": {
+          "duration": "1.375000",
+          "size": "11345"
+        }
+      },
+      "decoded_video_contact_sheet_sha256": "61eb30d36dd441c245546f0f40a0633efee1c924b64f8281e103b417e22ce8f1"
+    }
+  ],
+  "final_review": "Actual original/concept/imported GLB comparison retains a broad irregular low mineral mound,right pointed flank,short compact forked head and one pale blue front lens. Feedback deepened the initially flat base and sculpted larger mineral knuckles. Source gold discharge rises between/above the two unequal prongs;the head,base and lens stay fixed. Actual native/import surfaces/textures and eight animation states compared;full video reviewed separately.",
+  "limitations": [
+    "Hidden mineral sections,exact energetic material and continuous timing are authored or unknown.",
+    "Generic plasma-turret research is functional context,not this Mikotaj ore geometry or a rotation requirement. Preview bloom is renderer-side;portable emission remains in the GLB.",
+    "Final user artistic acceptance,client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

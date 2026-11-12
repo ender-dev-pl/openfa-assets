@@ -1,0 +1,161 @@
+{
+  "id": "terran:missile-silo",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "974aef937d8de7c89b0bba6ab295e574cf53749699ab60e23c4f579358af0420",
+    "glb": "9b45f44bb87a47df85c0ed03a4a038e71f43cbaea5630351fdc588616cc0d147"
+  },
+  "patcher_sha256": "63a855c7f5d593f3d2eda82e4b342c2806731135fc98c24f73512a69c374cffe",
+  "drive_generator_sha256": "a1ab6e1796d0a5fa9dfc1f3b2e3c8ea570de704cd164d0d7ed84b414dd3b0797",
+  "verifier_sha256": "7136073995b852d62eef0a3b3da3cd6a9bf89d48ce0878c6dfcf814f226ca20d",
+  "position_errors": {
+    "1": 8.429369557916289e-08,
+    "5": 8.429369557916289e-08,
+    "9": 8.429369557916289e-08,
+    "13": 8.429369557916289e-08,
+    "17": 2.980232238769531e-07,
+    "25": 8.429369557916289e-08,
+    "33": 8.429369557916289e-08
+  },
+  "native_fixed_clearance": {
+    "frames": 33,
+    "moving_vs_fixed_tests": 15048,
+    "overlaps": 405,
+    "contacts_by_obstacle": {
+      "Launch well inner liner": 184,
+      "Launch guide rail": 6,
+      "Launch guide rail.001": 6,
+      "Launch guide rail.002": 6,
+      "Launch guide rail.003": 6,
+      "Silo bunker armour sectors": 100,
+      "Silo flared bunker": 88,
+      "Silo perimeter bolt.001": 3,
+      "Silo perimeter bolt.004": 3,
+      "Silo perimeter bolt.007": 1,
+      "Silo perimeter bolt.010": 1,
+      "Silo perimeter bolt.013": 1
+    },
+    "acceptance": "Original leaf/rim interference retained explicitly at user request; not a collision-free mechanism claim. Decoy passage checked separately.",
+    "leaf_laps": "Original overlapping seams and own hinge interfaces excluded"
+  },
+  "imported_fixed_clearance": {
+    "frames": 33,
+    "moving_vs_fixed_tests": 15048,
+    "overlaps": 405,
+    "contacts_by_obstacle": {
+      "Launch well inner liner": 184,
+      "Launch guide rail": 6,
+      "Launch guide rail.001": 6,
+      "Launch guide rail.002": 6,
+      "Launch guide rail.003": 6,
+      "Silo bunker armour sectors": 100,
+      "Silo flared bunker": 88,
+      "Silo perimeter bolt.001": 3,
+      "Silo perimeter bolt.004": 3,
+      "Silo perimeter bolt.007": 1,
+      "Silo perimeter bolt.010": 1,
+      "Silo perimeter bolt.013": 1
+    },
+    "acceptance": "Original leaf/rim interference retained explicitly at user request; not a collision-free mechanism claim. Decoy passage checked separately.",
+    "leaf_laps": "Original overlapping seams and own hinge interfaces excluded"
+  },
+  "native_bore": {
+    "open_mouth_radius_tested": 0.33,
+    "continuous_shaft_radius_tested": 0.33,
+    "nominal_mouth_radius": 0.87,
+    "shaft_z_tested": [
+      -3.05,
+      1.1
+    ],
+    "empty_ray_samples": 672,
+    "closed_cover_samples": 64
+  },
+  "imported_bore": {
+    "open_mouth_radius_tested": 0.33,
+    "continuous_shaft_radius_tested": 0.33,
+    "nominal_mouth_radius": 0.87,
+    "shaft_z_tested": [
+      -3.05,
+      1.1
+    ],
+    "empty_ray_samples": 672,
+    "closed_cover_samples": 64
+  },
+  "decoy_fixture": {
+    "decoy_glb_sha256": "6de8207c7d3175031ebd3d3fdcde1e2b05897c37e20a5651583839dcc97ec28a",
+    "world_size_proposal": 48,
+    "building_footprint": [
+      2,
+      2
+    ],
+    "surface_cell_world_units": 32,
+    "silo_world_fit_scale": 26.733722132792384,
+    "fit_datum": "Closed bind-pose footprint, never the extended moving leaves",
+    "relative_scale": 0.17116159659357344,
+    "required_projectile_radius": 0.22171158851225983,
+    "usable_shaft_radius": 0.33,
+    "radial_margin": 0.10828841148774018,
+    "launch_collision_tests": 2904,
+    "loaded_payload_collision_tests": 8712,
+    "loaded_payload_nose_z": -1.15,
+    "overlaps": 0,
+    "orientation": "Native-Y missile to native+Z launch axis by X-90deg; explicit proposed adapter",
+    "scope": "Asset fixture using current source fitting formulas; loaded payload held below the closed iris before lift. Not a game-client runtime test"
+  },
+  "clip": {
+    "index": 0,
+    "name": "Animation",
+    "start": 0,
+    "end": 2,
+    "duration": 2,
+    "video": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/animation-00.webm",
+    "sha256": "9be6f2f56f38eba600756604f6c7d0daa42368fe175586638148a9f9e49c4570",
+    "frames": 48,
+    "fps": 24,
+    "distinct_pose_count": 25
+  },
+  "lamp_views": [
+    "lamps-Hybrid.png",
+    "lamps-AttackOnly.png",
+    "lamps-DefenceOnly.png",
+    "lamps-off.png",
+    "lamps-left.png",
+    "lamps-right.png"
+  ],
+  "lamp_control": "Two channels, three fixed colour presets each, zero/unit node scales; no invented blink timeline",
+  "renders": {
+    "closed.png": "589edf5f712afe47da3590eec2114ad425cbc6666ea1e7861cb0a963482c0e35",
+    "decoy-clearance.png": "b67119aa05814b2fb8c5bae65fd0eab2fdb75578f77d7e7c9764b9c8ce1822ad",
+    "front-quarter.png": "4e49f972bc1ed58b148710df40d17c217e1697ceebfc453e12c9d3c23ad8b42f",
+    "lamps-AttackOnly.png": "dc30eaec7fae818e23607468308081c6a2b3acfb3d81195f8949e36badd4f14e",
+    "lamps-DefenceOnly.png": "4e2845e39e054e31f0b768ca1d2f0cbdee0877fc7e0d11bdeb489e0341c4e7d9",
+    "lamps-Hybrid.png": "4e49f972bc1ed58b148710df40d17c217e1697ceebfc453e12c9d3c23ad8b42f",
+    "lamps-left.png": "6600974c738960eab8113e6e14bd0a338c4c6bc7fa6ef443abd1f7bb0a2731ab",
+    "lamps-off.png": "4e794a7695cd6925555c87f6c1e6045cb2199cb14a556070e9916f51cbb642e9",
+    "lamps-right.png": "416857877563d587e8e2395951d5935c576f32d85e2e63a469978b40f881ba7e",
+    "mechanism-detail.png": "38a788a694e508c5760d660a0b8dc726e7bd071c914d02d98b93853789231cf5",
+    "rear-quarter.png": "3f8ebb9d7d501e261a43cd36a752ed29df6a4ef89b2d0edb8657e7dc2595b288",
+    "stored-payload-top.png": "4a3fdd6c28fd6b206dede58f9ec9651dc03c153735c2ff3e01645da41f5be587",
+    "top.png": "ff9b17f5664cf1db657424373dac27895478fb3f4230c7affaa0af1b8a4f72ea",
+    "verified-imported.png": "4e49f972bc1ed58b148710df40d17c217e1697ceebfc453e12c9d3c23ad8b42f",
+    "verified-native.png": "7b291b38c4abdb7158419f574ef66857b5673d0fb10c0455dfe8e750bc8d9b5c",
+    "iris/00.png": "589edf5f712afe47da3590eec2114ad425cbc6666ea1e7861cb0a963482c0e35",
+    "iris/01.png": "4936ce3cadf44cf9c840616f5cbbef7fcde27e604f96680a3e46c01028bc2dbe",
+    "iris/02.png": "5366a5aa6b468ef2d1bb3922d8ab52e6a3f8a3184024fcaa41874f224b4183cb",
+    "iris/03.png": "c4bcf192a67d1097beace4d65e7ba571a602104910d57888ba4b8dd895f922f6",
+    "iris/04.png": "ce8f2298822d7c6a7ee88ba8b7b52a9eb9f17439349e2abe688fbdcbaa04a12d",
+    "iris/05.png": "e88fa34d74ba9cae13b2e1adb3fcedaca58be95b707c3ddbd4a1f94d5871fe8d",
+    "iris/06.png": "445495fe5fb3964c73afec16a773ff569b5358e18986b6c2de91813469cf1874",
+    "iris/07.png": "a41d4273d93b470989619710fa1451421beb21fe9abc5d13f36683de6665724b",
+    "iris/08.png": "92b60d79e3087b4d4e96973970baae31c1f6f43ce4822cb2e8879f5442f3992c",
+    "iris/09.png": "bcc9ef60cceaf10df0d3578cc29a99672cdfbfa30f7b23c0b110d87d69ce0ea2",
+    "iris/10.png": "bdec45457141b4aaa5cee41e08e6ba7788c5a59cde6edf65b0f3b83dfb37a71a",
+    "iris/11.png": "1f76f567dea4f097014e0a957d6e2ebfd5b2422228a1e12e0d434ce7012881a9",
+    "iris/12.png": "e4a8ba88c57963544fa62c83db4c63476e5c37b5b0c842f99e4d122d7ddfac66",
+    "iris/13.png": "6dd9cf9afdd41fa25bb619c8a0a9f5ac1333d8b721696f73da72405f82eada0c",
+    "iris/14.png": "39fa0d53e994d8cda05ce5ccf5bc72931f3afe7092458b203d410c94243fee58",
+    "iris/15.png": "7e0377616f39bee98acd8b343d944f3ade34f07e327cffe514b6f18859b22c83",
+    "iris/16.png": "4e49f972bc1ed58b148710df40d17c217e1697ceebfc453e12c9d3c23ad8b42f"
+  },
+  "scope": "Saved-source and imported asset runtime. Original drop0.20/turn50 leaves restored; original wall interference retained. Tube and black floor corrected; actual game/Android acceptance separate"
+}

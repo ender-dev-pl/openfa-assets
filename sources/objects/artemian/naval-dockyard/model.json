@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/114",
+  "key": "AR08",
+  "name": "Naval Dockyard",
+  "culture": "artemian",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 25,
+  "construction_updates": 56,
+  "triangles": 22132,
+  "triangle_budget": 30000,
+  "mesh_nodes": 15,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_artemian_naval_dockyard.py",
+  "author_sha256": "ac862579ec35ab09eda9d54aa4cb053de00e84ee64b8cb945f004955d190c9fe",
+  "binaries": {
+    "blend": "96a826bd961a184e85aea0d903424dd591faf175841d3b16cc8aa206f501580b",
+    "glb": "2bdbb4f8d77b74b6cdb887d962272e3a05c872efa6bc696d91274a8fe370408b"
+  },
+  "textures": {
+    "amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+    "copper-fitting-colour.png": "f5bec5f91ece22d7e9c06834019f56d3fb8cffbecfd92582ccf1668095a4d442",
+    "exposed-alloy-edge-colour.png": "c600d0710df2d2299cda35b246f70241724423fe0f9753f7cd4a99d4c9e4596f",
+    "muted-green-alloy-colour.png": "531a4aedb35d1d99caa7cc15e0bdf44c1def8b884d2b16a0ee68e2cc40b1e74b",
+    "occlusion-roughness-metallic.png": "4370672480f2f4508fe86c23a37a469b2fb3f0d7055a071f56699bb5791ba325",
+    "used-metal-normal.png": "099f56bae0ee923afeb2d69068483f93a4a631ce7575819a742314654b8c83f6"
+  },
+  "interpretation": [
+    "Low green dock shell,four copper-base/brass-top front fittings in two pairs,central copper inset and two small dark roof points follow actual source and reviewed concept.",
+    "Hidden bunker/shipbuilding engineering,sections and metric dimensions remain authored or unknown. Generic PB25 crane/gates are not an AR08 operating cycle."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar08-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

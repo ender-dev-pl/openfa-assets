@@ -1,0 +1,1713 @@
+{
+  "issue": 192,
+  "id": "openfa:ship/rigellian/observatory",
+  "variant": "construction",
+  "legacy_sprite_frame": 1,
+  "decision": "new-construction-variant",
+  "blender": "4.5.15 LTS",
+  "source_blend_sha256": "2c6ae14287a23c4ca884d1c54bd6d6b5006f2599cfa1a3fbf419eee8fe6b02ba",
+  "blend_sha256": "862fee08cb831aef37d3a1c7c3a0a4c43debb506e617304fc0fa4176903bd976",
+  "glb_sha256": "f57eab711e2b4539999ed58b0375748dce011a58679ecb39efad259a05a0cc38",
+  "generator_sha256": "e89b9159103dd0dc0a44d34c9246954ef8e0c98e7b57cf0ee5af0591d954a03d",
+  "verifier_sha256": "501601295595c5feee36cbe8f495d141ee9c2b5d16d7c4742bbfbdc26c477166",
+  "verifier_dependencies_sha256": {
+    "build_observatory_construction.py": "e89b9159103dd0dc0a44d34c9246954ef8e0c98e7b57cf0ee5af0591d954a03d",
+    "verify_refined_rigellian_observatory.py": "039692059de4e14f88f96c7e73738495b0738e38a7bfa55ad939d47a999445ca",
+    "verify_skymech_construction.py": "c2bf72b96e97925a17dc1829cf3b731e682e271ef68e8d764291a73de6f056f5",
+    "verify_refined_braccatian_ships.py": "3e8ceab43794cf80bfaa0197e94b0280e4e43e93b3eef2ce78cdebd507f5ecbc",
+    "verify_refined_braccatian_pithoi.py": "5876dfe420fb17f6f809c211ba864468627440b5e10df2c541379975c67d06a1",
+    "verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c"
+  },
+  "native_mesh_count": 146,
+  "imported_mesh_count": 146,
+  "native_structure": {
+    "positive_closed_meshes": 146,
+    "closed_positive_components": 936,
+    "components_per_mesh": {
+      "RI4C construction elliptical hoops": 31,
+      "RI4C construction meridian ribs": 24,
+      "RI4C construction diagonal lattice": 720,
+      "RI4C construction axial body stays": 16,
+      "RI4C temporary conical shield 0": 1,
+      "RI4C temporary conical shield 1": 1,
+      "RI4C temporary conical shield 2": 1,
+      "RI4C temporary conical shield 3": 1,
+      "RI4C temporary conical shield 4": 1,
+      "RI4C temporary conical shield 5": 1,
+      "RI4C temporary conical shield 6": 1,
+      "RI4C temporary conical shield 7": 1,
+      "RI4C temporary conical shield 8": 1,
+      "RI4C temporary conical shield 9": 1,
+      "RI4C temporary conical shield 10": 1,
+      "RI4C temporary conical shield 11": 1,
+      "RI4C temporary outboard support booms": 4,
+      "RI4C outboard temporary service casing 0": 1,
+      "RI4C outboard pale work field 0": 1,
+      "RI4C outboard temporary service casing 1": 1,
+      "RI4C outboard pale work field 1": 1,
+      "RI4C outboard temporary service casing 2": 1,
+      "RI4C outboard pale work field 2": 1,
+      "RI4C outboard temporary service casing 3": 1,
+      "RI4C outboard pale work field 3": 1,
+      "RI4C construction carriage rail clamp": 1,
+      "RI4C construction carriage service case": 1,
+      "RI4C construction carriage pale marker": 1,
+      "RI4C equatorial equipment band 0": 1,
+      "RI4C equatorial equipment band 1": 1,
+      "RI4C equatorial equipment band 2": 1,
+      "RI4C bay 0 outer side frame -1": 1,
+      "RI4C bay 0 horizontal frame -1": 1,
+      "RI4C bay 0 outer side frame 1": 1,
+      "RI4C bay 0 horizontal frame 1": 1,
+      "RI4C bay 0 bright inset 0": 1,
+      "RI4C bay 0 bright inset 1": 1,
+      "RI4C bay 0 bright inset 2": 1,
+      "RI4C bay 0 bright inset 3": 1,
+      "RI4C bay 0 bright inset 4": 1,
+      "RI4C bay 1 outer side frame -1": 1,
+      "RI4C bay 1 horizontal frame -1": 1,
+      "RI4C bay 1 outer side frame 1": 1,
+      "RI4C bay 1 horizontal frame 1": 1,
+      "RI4C bay 1 bright inset 0": 1,
+      "RI4C bay 1 bright inset 1": 1,
+      "RI4C bay 1 bright inset 2": 1,
+      "RI4C bay 1 bright inset 3": 1,
+      "RI4C bay 1 bright inset 4": 1,
+      "RI4C bay 2 outer side frame -1": 1,
+      "RI4C bay 2 horizontal frame -1": 1,
+      "RI4C bay 2 outer side frame 1": 1,
+      "RI4C bay 2 horizontal frame 1": 1,
+      "RI4C bay 2 bright inset 0": 1,
+      "RI4C bay 2 bright inset 1": 1,
+      "RI4C bay 2 bright inset 2": 1,
+      "RI4C bay 2 bright inset 3": 1,
+      "RI4C bay 2 bright inset 4": 1,
+      "RI4C bay 3 outer side frame -1": 1,
+      "RI4C bay 3 horizontal frame -1": 1,
+      "RI4C bay 3 outer side frame 1": 1,
+      "RI4C bay 3 horizontal frame 1": 1,
+      "RI4C bay 3 bright inset 0": 1,
+      "RI4C bay 3 bright inset 1": 1,
+      "RI4C bay 3 bright inset 2": 1,
+      "RI4C bay 3 bright inset 3": 1,
+      "RI4C bay 3 bright inset 4": 1,
+      "RI4C copper terminal housing 0": 1,
+      "RI4C copper terminal housing 1": 1,
+      "RI4C chamber copper cheek 1 -3.141592653589793": 1,
+      "RI4C chamber copper cheek 1 0": 1,
+      "RI4C chamber copper cheek -1 -3.141592653589793": 1,
+      "RI4C chamber copper cheek -1 0": 1,
+      "Observatory saucer pressure hull": 1,
+      "Observatory axial green chambers": 1,
+      "Observatory axial copper collar 0": 1,
+      "Observatory axial copper collar 1": 1,
+      "Observatory axial copper collar 2": 1,
+      "Observatory axial copper collar 3": 1,
+      "Observatory axial copper collar 4": 1,
+      "Observatory axial copper collar 5": 1,
+      "Observatory axial copper collar 6": 1,
+      "Observatory axial aerial -1": 1,
+      "Observatory aerial collar -1": 1,
+      "Observatory pointed fin -1 0": 1,
+      "Observatory pointed fin -1 1": 1,
+      "Observatory pointed fin -1 2": 1,
+      "Observatory pointed fin -1 3": 1,
+      "Observatory axial copper rail -1 0": 1,
+      "Observatory axial copper rail -1 1": 1,
+      "Observatory axial copper rail -1 2": 1,
+      "Observatory axial copper rail -1 3": 1,
+      "Observatory aerial collar 1": 1,
+      "Observatory pointed fin 1 0": 1,
+      "Observatory pointed fin 1 1": 1,
+      "Observatory pointed fin 1 2": 1,
+      "Observatory pointed fin 1 3": 1,
+      "Observatory axial copper rail 1 0": 1,
+      "Observatory axial copper rail 1 1": 1,
+      "Observatory axial copper rail 1 2": 1,
+      "Observatory axial copper rail 1 3": 1,
+      "Observatory upper service plate 0": 1,
+      "Observatory lower service inset 0": 1,
+      "Observatory upper service plate 1": 1,
+      "Observatory lower service inset 1": 1,
+      "Observatory upper service plate 2": 1,
+      "Observatory lower service inset 2": 1,
+      "Observatory upper service plate 3": 1,
+      "Observatory lower service inset 3": 1,
+      "Observatory upper service plate 4": 1,
+      "Observatory lower service inset 4": 1,
+      "Observatory upper service plate 5": 1,
+      "Observatory lower service inset 5": 1,
+      "Observatory upper service plate 6": 1,
+      "Observatory lower service inset 6": 1,
+      "Observatory upper service plate 7": 1,
+      "Observatory lower service inset 7": 1,
+      "Observatory central oval bezel": 1,
+      "Observatory dark oval face": 1,
+      "Observatory lateral copper boss -1": 1,
+      "Observatory boss cap -1": 1,
+      "Observatory lateral copper boss 1": 1,
+      "Observatory boss cap 1": 1,
+      "RI4C central pale inset 0 0": 1,
+      "RI4C central pale inset 0 1": 1,
+      "RI4C central pale inset 0 2": 1,
+      "RI4C central pale inset 1 0": 1,
+      "RI4C central pale inset 1 1": 1,
+      "RI4C central pale inset 1 2": 1,
+      "RI4C chamber equipment face 1": 1,
+      "RI4C chamber pale bar 1 0": 1,
+      "RI4C chamber pale bar 1 1": 1,
+      "RI4C chamber pale bar 1 2": 1,
+      "RI4C chamber equipment face -1": 1,
+      "RI4C chamber pale bar -1 0": 1,
+      "RI4C chamber pale bar -1 1": 1,
+      "RI4C chamber pale bar -1 2": 1,
+      "RI4C fork central terminal": 1,
+      "RI4C fork lateral prong -1 0": 1,
+      "RI4C fork lateral prong -1 1": 1,
+      "RI4C fork lateral prong -1 2": 1,
+      "RI4C lower axial side terminal -1": 1,
+      "RI4C fork lateral prong 1 0": 1,
+      "RI4C fork lateral prong 1 1": 1,
+      "RI4C fork lateral prong 1 2": 1,
+      "RI4C lower axial side terminal 1": 1
+    },
+    "volumes": {
+      "RI4C construction elliptical hoops": 0.08568700203113623,
+      "RI4C construction meridian ribs": 0.09737500815878326,
+      "RI4C construction diagonal lattice": 0.06336458788086431,
+      "RI4C construction axial body stays": 0.0323024574079227,
+      "RI4C temporary conical shield 0": 0.02042773515171109,
+      "RI4C temporary conical shield 1": 0.020518367821792928,
+      "RI4C temporary conical shield 2": 0.020427593801919285,
+      "RI4C temporary conical shield 3": 0.020518195467769736,
+      "RI4C temporary conical shield 4": 0.020427646785083027,
+      "RI4C temporary conical shield 5": 0.020518057438181716,
+      "RI4C temporary conical shield 6": 0.020427735151711097,
+      "RI4C temporary conical shield 7": 0.02051836782179292,
+      "RI4C temporary conical shield 8": 0.020427593801919258,
+      "RI4C temporary conical shield 9": 0.020518195467769753,
+      "RI4C temporary conical shield 10": 0.020427646785083024,
+      "RI4C temporary conical shield 11": 0.020518057438181712,
+      "RI4C temporary outboard support booms": 0.005579920931874463,
+      "RI4C outboard temporary service casing 0": 0.01257414021188983,
+      "RI4C outboard pale work field 0": 0.00023188595975247016,
+      "RI4C outboard temporary service casing 1": 0.012574140211889835,
+      "RI4C outboard pale work field 1": 0.00023188595975247013,
+      "RI4C outboard temporary service casing 2": 0.01257414021188983,
+      "RI4C outboard pale work field 2": 0.00023188595975247024,
+      "RI4C outboard temporary service casing 3": 0.012574140211889831,
+      "RI4C outboard pale work field 3": 0.00023188595975247019,
+      "RI4C construction carriage rail clamp": 0.001344429117356109,
+      "RI4C construction carriage service case": 0.003592589078645388,
+      "RI4C construction carriage pale marker": 6.958095913371195e-05,
+      "RI4C equatorial equipment band 0": 0.10626516173636139,
+      "RI4C equatorial equipment band 1": 0.02321940918271134,
+      "RI4C equatorial equipment band 2": 0.02339492993457192,
+      "RI4C bay 0 outer side frame -1": 0.0008584799825712505,
+      "RI4C bay 0 horizontal frame -1": 0.0017628227825625669,
+      "RI4C bay 0 outer side frame 1": 0.0008584690503390402,
+      "RI4C bay 0 horizontal frame 1": 0.0017703911068771936,
+      "RI4C bay 0 bright inset 0": 0.00034702768841465836,
+      "RI4C bay 0 bright inset 1": 0.00034701367127350707,
+      "RI4C bay 0 bright inset 2": 0.0003470145764248684,
+      "RI4C bay 0 bright inset 3": 0.00034702184387928403,
+      "RI4C bay 0 bright inset 4": 0.0003470158880808744,
+      "RI4C bay 1 outer side frame -1": 0.0008584614595747257,
+      "RI4C bay 1 horizontal frame -1": 0.0017628351938038253,
+      "RI4C bay 1 outer side frame 1": 0.0008584781164093598,
+      "RI4C bay 1 horizontal frame 1": 0.0017704200462709638,
+      "RI4C bay 1 bright inset 0": 0.00034701587045356713,
+      "RI4C bay 1 bright inset 1": 0.00034702893909229393,
+      "RI4C bay 1 bright inset 2": 0.00034701741387336687,
+      "RI4C bay 1 bright inset 3": 0.0003470117936450839,
+      "RI4C bay 1 bright inset 4": 0.00034702210776823173,
+      "RI4C bay 2 outer side frame -1": 0.0008584799825712507,
+      "RI4C bay 2 horizontal frame -1": 0.001762822782562567,
+      "RI4C bay 2 outer side frame 1": 0.0008584690503390402,
+      "RI4C bay 2 horizontal frame 1": 0.0017703911068771927,
+      "RI4C bay 2 bright inset 0": 0.00034702768841465847,
+      "RI4C bay 2 bright inset 1": 0.0003470136712735069,
+      "RI4C bay 2 bright inset 2": 0.00034701457642486843,
+      "RI4C bay 2 bright inset 3": 0.00034702184387928414,
+      "RI4C bay 2 bright inset 4": 0.00034701588808087435,
+      "RI4C bay 3 outer side frame -1": 0.0008584603793376411,
+      "RI4C bay 3 horizontal frame -1": 0.0017628351938038256,
+      "RI4C bay 3 outer side frame 1": 0.0008584781164093599,
+      "RI4C bay 3 horizontal frame 1": 0.0017704223345305454,
+      "RI4C bay 3 bright inset 0": 0.00034701587045356713,
+      "RI4C bay 3 bright inset 1": 0.000347028939092294,
+      "RI4C bay 3 bright inset 2": 0.0003470174138733668,
+      "RI4C bay 3 bright inset 3": 0.00034701179364508405,
+      "RI4C bay 3 bright inset 4": 0.00034702210776823173,
+      "RI4C copper terminal housing 0": 0.005024680381324956,
+      "RI4C copper terminal housing 1": 0.005024680381324957,
+      "RI4C chamber copper cheek 1 -3.141592653589793": 0.0027992828035531088,
+      "RI4C chamber copper cheek 1 0": 0.002799282803553109,
+      "RI4C chamber copper cheek -1 -3.141592653589793": 0.002949708366933239,
+      "RI4C chamber copper cheek -1 0": 0.0029497083669332348,
+      "Observatory saucer pressure hull": 4.809271461960891,
+      "Observatory axial green chambers": 0.8265707571155447,
+      "Observatory axial copper collar 0": 0.0013505989506938988,
+      "Observatory axial copper collar 1": 0.00278158335307429,
+      "Observatory axial copper collar 2": 0.003360411218333602,
+      "Observatory axial copper collar 3": 0.0032472917825240592,
+      "Observatory axial copper collar 4": 0.002751846746832588,
+      "Observatory axial copper collar 5": 0.001657234522478278,
+      "Observatory axial copper collar 6": 0.00157454526273189,
+      "Observatory axial aerial -1": 0.00039291608720759563,
+      "Observatory aerial collar -1": 0.0018810605970641257,
+      "Observatory pointed fin -1 0": 0.020314591678281205,
+      "Observatory pointed fin -1 1": 0.0203145916782812,
+      "Observatory pointed fin -1 2": 0.020314591678281202,
+      "Observatory pointed fin -1 3": 0.020314591678281205,
+      "Observatory axial copper rail -1 0": 0.0012489275027292,
+      "Observatory axial copper rail -1 1": 0.0012489275027292015,
+      "Observatory axial copper rail -1 2": 0.0012489275027292024,
+      "Observatory axial copper rail -1 3": 0.0012489275027292024,
+      "Observatory aerial collar 1": 0.0018810605970641255,
+      "Observatory pointed fin 1 0": 0.0203145909849058,
+      "Observatory pointed fin 1 1": 0.020314590984905807,
+      "Observatory pointed fin 1 2": 0.02031459098490581,
+      "Observatory pointed fin 1 3": 0.020314590984905817,
+      "Observatory axial copper rail 1 0": 0.001248927502729199,
+      "Observatory axial copper rail 1 1": 0.0012489275027292004,
+      "Observatory axial copper rail 1 2": 0.0012489275027292017,
+      "Observatory axial copper rail 1 3": 0.0012489275027292024,
+      "Observatory upper service plate 0": 0.0011812377381835728,
+      "Observatory lower service inset 0": 0.0003800268352045127,
+      "Observatory upper service plate 1": 0.0011812454694868355,
+      "Observatory lower service inset 1": 0.0003799135633745601,
+      "Observatory upper service plate 2": 0.0011812269028964588,
+      "Observatory lower service inset 2": 0.00038002318714328937,
+      "Observatory upper service plate 3": 0.0011811860966407883,
+      "Observatory lower service inset 3": 0.0003800655008904625,
+      "Observatory upper service plate 4": 0.0011812377381835734,
+      "Observatory lower service inset 4": 0.00038002683520451286,
+      "Observatory upper service plate 5": 0.0011812454694868355,
+      "Observatory lower service inset 5": 0.00037991356337455974,
+      "Observatory upper service plate 6": 0.0011812269028964584,
+      "Observatory lower service inset 6": 0.00038002318714328937,
+      "Observatory upper service plate 7": 0.001181040449429165,
+      "Observatory lower service inset 7": 0.0003800655008904624,
+      "Observatory central oval bezel": 0.015883388373074497,
+      "Observatory dark oval face": 0.0014698453185878065,
+      "Observatory lateral copper boss -1": 0.0035336646994378364,
+      "Observatory boss cap -1": 0.00024325221886013133,
+      "Observatory lateral copper boss 1": 0.003533649294572146,
+      "Observatory boss cap 1": 0.00024325221886013141,
+      "RI4C central pale inset 0 0": 2.7244961911558583e-05,
+      "RI4C central pale inset 0 1": 2.724496191155858e-05,
+      "RI4C central pale inset 0 2": 2.724496191155857e-05,
+      "RI4C central pale inset 1 0": 2.7244961911558573e-05,
+      "RI4C central pale inset 1 1": 2.724496191155858e-05,
+      "RI4C central pale inset 1 2": 2.7244961911558583e-05,
+      "RI4C chamber equipment face 1": 0.020906748181611565,
+      "RI4C chamber pale bar 1 0": 0.0001003037420831512,
+      "RI4C chamber pale bar 1 1": 0.00010030374208315139,
+      "RI4C chamber pale bar 1 2": 0.00010030374208315134,
+      "RI4C chamber equipment face -1": 0.020906748181611572,
+      "RI4C chamber pale bar -1 0": 0.00010030374208315119,
+      "RI4C chamber pale bar -1 1": 0.00010030374208315121,
+      "RI4C chamber pale bar -1 2": 0.00010030374208315138,
+      "RI4C fork central terminal": 0.001394896941936471,
+      "RI4C fork lateral prong -1 0": 0.00039849265017248087,
+      "RI4C fork lateral prong -1 1": 0.00031872159071374046,
+      "RI4C fork lateral prong -1 2": 0.0006069471350447957,
+      "RI4C lower axial side terminal -1": 0.0007612287913995418,
+      "RI4C fork lateral prong 1 0": 0.00039849265017248076,
+      "RI4C fork lateral prong 1 1": 0.0003187215907137405,
+      "RI4C fork lateral prong 1 2": 0.0006069471350447961,
+      "RI4C lower axial side terminal 1": 0.0007612287913995402
+    },
+    "body_support_contacts": [
+      {
+        "body": [
+          0.21636921167373657,
+          0.0,
+          -0.6000000238418579
+        ],
+        "frame": [
+          1.8287385702133179,
+          0.0,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          0.15299615263938904,
+          0.11933698505163193,
+          -0.6000000238418579
+        ],
+        "frame": [
+          1.293113350868225,
+          1.008628487586975,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          1.3248793052584234e-17,
+          0.1687679886817932,
+          -0.6000000238418579
+        ],
+        "frame": [
+          1.1197794091547572e-16,
+          1.426416039466858,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.15299615263938904,
+          0.11933698505163193,
+          -0.6000000238418579
+        ],
+        "frame": [
+          -1.293113350868225,
+          1.008628487586975,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.21636921167373657,
+          2.0668118419345936e-17,
+          -0.6000000238418579
+        ],
+        "frame": [
+          -1.8287385702133179,
+          1.7468556347594488e-16,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.15299615263938904,
+          -0.11933698505163193,
+          -0.6000000238418579
+        ],
+        "frame": [
+          -1.293113350868225,
+          -1.008628487586975,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -3.974638246647515e-17,
+          -0.1687679886817932,
+          -0.6000000238418579
+        ],
+        "frame": [
+          -3.3593382274642715e-16,
+          -1.426416039466858,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          0.15299615263938904,
+          -0.11933698505163193,
+          -0.6000000238418579
+        ],
+        "frame": [
+          1.293113350868225,
+          -1.008628487586975,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          0.21664613485336304,
+          0.0,
+          0.6000000238418579
+        ],
+        "frame": [
+          1.8562923669815063,
+          0.0,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          0.1531919687986374,
+          0.11948971450328827,
+          0.6000000238418579
+        ],
+        "frame": [
+          1.3125969171524048,
+          1.0238256454467773,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          1.3265749427960959e-17,
+          0.16898398101329803,
+          0.6000000238418579
+        ],
+        "frame": [
+          1.1366512466728788e-16,
+          1.4479079246520996,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.1531919687986374,
+          0.11948971450328827,
+          0.6000000238418579
+        ],
+        "frame": [
+          -1.3125969171524048,
+          1.0238256454467773,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.21664613485336304,
+          2.0694571655335382e-17,
+          0.6000000238418579
+        ],
+        "frame": [
+          -1.8562923669815063,
+          1.7731758601063961e-16,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.1531919687986374,
+          -0.11948971450328827,
+          0.6000000238418579
+        ],
+        "frame": [
+          -1.3125969171524048,
+          -1.0238256454467773,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -3.9797250765424713e-17,
+          -0.16898398101329803,
+          0.6000000238418579
+        ],
+        "frame": [
+          -3.4099537400186363e-16,
+          -1.4479079246520996,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          0.1531919687986374,
+          -0.11948971450328827,
+          0.6000000238418579
+        ],
+        "frame": [
+          1.3125969171524048,
+          -1.0238256454467773,
+          0.6000000238418579
+        ]
+      }
+    ],
+    "bounds": [
+      -3.319999933242798,
+      -2.628000020980835,
+      -3.10754656791687,
+      3.319999933242798,
+      2.615999937057495,
+      3.10754656791687
+    ],
+    "physical_members": {
+      "RI4C construction elliptical hoops": 31,
+      "RI4C construction meridian ribs": 24,
+      "RI4C construction diagonal lattice": 720,
+      "RI4C construction axial body stays": 16,
+      "RI4C temporary outboard support booms": 4
+    }
+  },
+  "imported_structure": {
+    "positive_closed_meshes": 146,
+    "closed_positive_components": 936,
+    "components_per_mesh": {
+      "Observatory aerial collar -1": 1,
+      "Observatory aerial collar 1": 1,
+      "Observatory axial aerial -1": 1,
+      "Observatory axial copper collar 0": 1,
+      "Observatory axial copper collar 1": 1,
+      "Observatory axial copper collar 2": 1,
+      "Observatory axial copper collar 3": 1,
+      "Observatory axial copper collar 4": 1,
+      "Observatory axial copper collar 5": 1,
+      "Observatory axial copper collar 6": 1,
+      "Observatory axial copper rail -1 0": 1,
+      "Observatory axial copper rail -1 1": 1,
+      "Observatory axial copper rail -1 2": 1,
+      "Observatory axial copper rail -1 3": 1,
+      "Observatory axial copper rail 1 0": 1,
+      "Observatory axial copper rail 1 1": 1,
+      "Observatory axial copper rail 1 2": 1,
+      "Observatory axial copper rail 1 3": 1,
+      "Observatory axial green chambers": 1,
+      "Observatory boss cap -1": 1,
+      "Observatory boss cap 1": 1,
+      "Observatory central oval bezel": 1,
+      "Observatory dark oval face": 1,
+      "Observatory lateral copper boss -1": 1,
+      "Observatory lateral copper boss 1": 1,
+      "Observatory lower service inset 0": 1,
+      "Observatory lower service inset 1": 1,
+      "Observatory lower service inset 2": 1,
+      "Observatory lower service inset 3": 1,
+      "Observatory lower service inset 4": 1,
+      "Observatory lower service inset 5": 1,
+      "Observatory lower service inset 6": 1,
+      "Observatory lower service inset 7": 1,
+      "Observatory pointed fin -1 0": 1,
+      "Observatory pointed fin -1 1": 1,
+      "Observatory pointed fin -1 2": 1,
+      "Observatory pointed fin -1 3": 1,
+      "Observatory pointed fin 1 0": 1,
+      "Observatory pointed fin 1 1": 1,
+      "Observatory pointed fin 1 2": 1,
+      "Observatory pointed fin 1 3": 1,
+      "Observatory saucer pressure hull": 1,
+      "Observatory upper service plate 0": 1,
+      "Observatory upper service plate 1": 1,
+      "Observatory upper service plate 2": 1,
+      "Observatory upper service plate 3": 1,
+      "Observatory upper service plate 4": 1,
+      "Observatory upper service plate 5": 1,
+      "Observatory upper service plate 6": 1,
+      "Observatory upper service plate 7": 1,
+      "RI4C bay 0 bright inset 0": 1,
+      "RI4C bay 0 bright inset 1": 1,
+      "RI4C bay 0 bright inset 2": 1,
+      "RI4C bay 0 bright inset 3": 1,
+      "RI4C bay 0 bright inset 4": 1,
+      "RI4C bay 0 horizontal frame -1": 1,
+      "RI4C bay 0 horizontal frame 1": 1,
+      "RI4C bay 0 outer side frame -1": 1,
+      "RI4C bay 0 outer side frame 1": 1,
+      "RI4C bay 1 bright inset 0": 1,
+      "RI4C bay 1 bright inset 1": 1,
+      "RI4C bay 1 bright inset 2": 1,
+      "RI4C bay 1 bright inset 3": 1,
+      "RI4C bay 1 bright inset 4": 1,
+      "RI4C bay 1 horizontal frame -1": 1,
+      "RI4C bay 1 horizontal frame 1": 1,
+      "RI4C bay 1 outer side frame -1": 1,
+      "RI4C bay 1 outer side frame 1": 1,
+      "RI4C bay 2 bright inset 0": 1,
+      "RI4C bay 2 bright inset 1": 1,
+      "RI4C bay 2 bright inset 2": 1,
+      "RI4C bay 2 bright inset 3": 1,
+      "RI4C bay 2 bright inset 4": 1,
+      "RI4C bay 2 horizontal frame -1": 1,
+      "RI4C bay 2 horizontal frame 1": 1,
+      "RI4C bay 2 outer side frame -1": 1,
+      "RI4C bay 2 outer side frame 1": 1,
+      "RI4C bay 3 bright inset 0": 1,
+      "RI4C bay 3 bright inset 1": 1,
+      "RI4C bay 3 bright inset 2": 1,
+      "RI4C bay 3 bright inset 3": 1,
+      "RI4C bay 3 bright inset 4": 1,
+      "RI4C bay 3 horizontal frame -1": 1,
+      "RI4C bay 3 horizontal frame 1": 1,
+      "RI4C bay 3 outer side frame -1": 1,
+      "RI4C bay 3 outer side frame 1": 1,
+      "RI4C central pale inset 0 0": 1,
+      "RI4C central pale inset 0 1": 1,
+      "RI4C central pale inset 0 2": 1,
+      "RI4C central pale inset 1 0": 1,
+      "RI4C central pale inset 1 1": 1,
+      "RI4C central pale inset 1 2": 1,
+      "RI4C chamber copper cheek -1 -3.141592653589793": 1,
+      "RI4C chamber copper cheek -1 0": 1,
+      "RI4C chamber copper cheek 1 -3.141592653589793": 1,
+      "RI4C chamber copper cheek 1 0": 1,
+      "RI4C chamber equipment face -1": 1,
+      "RI4C chamber equipment face 1": 1,
+      "RI4C chamber pale bar -1 0": 1,
+      "RI4C chamber pale bar -1 1": 1,
+      "RI4C chamber pale bar -1 2": 1,
+      "RI4C chamber pale bar 1 0": 1,
+      "RI4C chamber pale bar 1 1": 1,
+      "RI4C chamber pale bar 1 2": 1,
+      "RI4C copper terminal housing 0": 1,
+      "RI4C copper terminal housing 1": 1,
+      "RI4C equatorial equipment band 0": 1,
+      "RI4C equatorial equipment band 1": 1,
+      "RI4C equatorial equipment band 2": 1,
+      "RI4C fork central terminal": 1,
+      "RI4C fork lateral prong -1 0": 1,
+      "RI4C fork lateral prong -1 1": 1,
+      "RI4C fork lateral prong -1 2": 1,
+      "RI4C fork lateral prong 1 0": 1,
+      "RI4C fork lateral prong 1 1": 1,
+      "RI4C fork lateral prong 1 2": 1,
+      "RI4C lower axial side terminal -1": 1,
+      "RI4C lower axial side terminal 1": 1,
+      "RI4C construction carriage pale marker": 1,
+      "RI4C construction carriage rail clamp": 1,
+      "RI4C construction carriage service case": 1,
+      "RI4C construction axial body stays": 16,
+      "RI4C construction diagonal lattice": 720,
+      "RI4C construction elliptical hoops": 31,
+      "RI4C construction meridian ribs": 24,
+      "RI4C outboard pale work field 0": 1,
+      "RI4C outboard pale work field 1": 1,
+      "RI4C outboard pale work field 2": 1,
+      "RI4C outboard pale work field 3": 1,
+      "RI4C outboard temporary service casing 0": 1,
+      "RI4C outboard temporary service casing 1": 1,
+      "RI4C outboard temporary service casing 2": 1,
+      "RI4C outboard temporary service casing 3": 1,
+      "RI4C temporary conical shield 0": 1,
+      "RI4C temporary conical shield 1": 1,
+      "RI4C temporary conical shield 10": 1,
+      "RI4C temporary conical shield 11": 1,
+      "RI4C temporary conical shield 2": 1,
+      "RI4C temporary conical shield 3": 1,
+      "RI4C temporary conical shield 4": 1,
+      "RI4C temporary conical shield 5": 1,
+      "RI4C temporary conical shield 6": 1,
+      "RI4C temporary conical shield 7": 1,
+      "RI4C temporary conical shield 8": 1,
+      "RI4C temporary conical shield 9": 1,
+      "RI4C temporary outboard support booms": 4
+    },
+    "volumes": {
+      "Observatory aerial collar -1": 0.001881060602577935,
+      "Observatory aerial collar 1": 0.0018810606025779343,
+      "Observatory axial aerial -1": 0.00039291609194454696,
+      "Observatory axial copper collar 0": 0.0013505989506938953,
+      "Observatory axial copper collar 1": 0.002781583353074185,
+      "Observatory axial copper collar 2": 0.003360411218333563,
+      "Observatory axial copper collar 3": 0.0032472917825240692,
+      "Observatory axial copper collar 4": 0.002751846746832598,
+      "Observatory axial copper collar 5": 0.0016572345224782768,
+      "Observatory axial copper collar 6": 0.0015745452627318713,
+      "Observatory axial copper rail -1 0": 0.0012489275022744553,
+      "Observatory axial copper rail -1 1": 0.0012489275022744548,
+      "Observatory axial copper rail -1 2": 0.001248927502274455,
+      "Observatory axial copper rail -1 3": 0.001248927502274455,
+      "Observatory axial copper rail 1 0": 0.0012489275022744548,
+      "Observatory axial copper rail 1 1": 0.0012489275022744553,
+      "Observatory axial copper rail 1 2": 0.0012489275022744548,
+      "Observatory axial copper rail 1 3": 0.0012489275022744548,
+      "Observatory axial green chambers": 0.8265707567672709,
+      "Observatory boss cap -1": 0.0002432522200254219,
+      "Observatory boss cap 1": 0.00024325222002542172,
+      "Observatory central oval bezel": 0.015883388373074462,
+      "Observatory dark oval face": 0.0014698453309497411,
+      "Observatory lateral copper boss -1": 0.0035336646994378433,
+      "Observatory lateral copper boss 1": 0.003533649294572146,
+      "Observatory lower service inset 0": 0.00038002683520451324,
+      "Observatory lower service inset 1": 0.0003799135633745602,
+      "Observatory lower service inset 2": 0.0003800231871432899,
+      "Observatory lower service inset 3": 0.0003800655008904622,
+      "Observatory lower service inset 4": 0.0003800268352045132,
+      "Observatory lower service inset 5": 0.0003799135633745604,
+      "Observatory lower service inset 6": 0.00038002318714328964,
+      "Observatory lower service inset 7": 0.00038006550089046215,
+      "Observatory pointed fin -1 0": 0.020314590970087996,
+      "Observatory pointed fin -1 1": 0.020314590970087993,
+      "Observatory pointed fin -1 2": 0.020314590970087993,
+      "Observatory pointed fin -1 3": 0.020314590970087996,
+      "Observatory pointed fin 1 0": 0.020314590344621544,
+      "Observatory pointed fin 1 1": 0.02031459034462154,
+      "Observatory pointed fin 1 2": 0.020314590344621537,
+      "Observatory pointed fin 1 3": 0.020314590344621537,
+      "Observatory saucer pressure hull": 4.809271464285984,
+      "Observatory upper service plate 0": 0.0011812377381835715,
+      "Observatory upper service plate 1": 0.0011812454694868377,
+      "Observatory upper service plate 2": 0.0011812269028964619,
+      "Observatory upper service plate 3": 0.001181186096640789,
+      "Observatory upper service plate 4": 0.0011812377381835717,
+      "Observatory upper service plate 5": 0.001181245469486837,
+      "Observatory upper service plate 6": 0.0011812269028964593,
+      "Observatory upper service plate 7": 0.001181040449429164,
+      "RI4C bay 0 bright inset 0": 0.00034702768841465826,
+      "RI4C bay 0 bright inset 1": 0.00034701367127350707,
+      "RI4C bay 0 bright inset 2": 0.00034701457642486805,
+      "RI4C bay 0 bright inset 3": 0.00034702184387928403,
+      "RI4C bay 0 bright inset 4": 0.0003470158880808743,
+      "RI4C bay 0 horizontal frame -1": 0.0017628227825625677,
+      "RI4C bay 0 horizontal frame 1": 0.0017703911068771931,
+      "RI4C bay 0 outer side frame -1": 0.0008584799825712517,
+      "RI4C bay 0 outer side frame 1": 0.0008584690503390397,
+      "RI4C bay 1 bright inset 0": 0.0003470158704535671,
+      "RI4C bay 1 bright inset 1": 0.0003470289390922939,
+      "RI4C bay 1 bright inset 2": 0.0003470174138733667,
+      "RI4C bay 1 bright inset 3": 0.0003470117936450839,
+      "RI4C bay 1 bright inset 4": 0.00034702210776823184,
+      "RI4C bay 1 horizontal frame -1": 0.001762835193803825,
+      "RI4C bay 1 horizontal frame 1": 0.0017704200462709634,
+      "RI4C bay 1 outer side frame -1": 0.0008584614595747254,
+      "RI4C bay 1 outer side frame 1": 0.0008584781164093586,
+      "RI4C bay 2 bright inset 0": 0.00034702768841465836,
+      "RI4C bay 2 bright inset 1": 0.00034701367127350734,
+      "RI4C bay 2 bright inset 2": 0.00034701457642486827,
+      "RI4C bay 2 bright inset 3": 0.00034702184387928425,
+      "RI4C bay 2 bright inset 4": 0.00034701588808087446,
+      "RI4C bay 2 horizontal frame -1": 0.001762822782562567,
+      "RI4C bay 2 horizontal frame 1": 0.0017703911068771936,
+      "RI4C bay 2 outer side frame -1": 0.0008584799825712521,
+      "RI4C bay 2 outer side frame 1": 0.0008584690503390388,
+      "RI4C bay 3 bright inset 0": 0.0003470158704535672,
+      "RI4C bay 3 bright inset 1": 0.0003470289390922939,
+      "RI4C bay 3 bright inset 2": 0.00034701741387336643,
+      "RI4C bay 3 bright inset 3": 0.00034701179364508345,
+      "RI4C bay 3 bright inset 4": 0.000347022107768232,
+      "RI4C bay 3 horizontal frame -1": 0.0017628351938038251,
+      "RI4C bay 3 horizontal frame 1": 0.0017704223345305454,
+      "RI4C bay 3 outer side frame -1": 0.000858460379337641,
+      "RI4C bay 3 outer side frame 1": 0.00085847811640936,
+      "RI4C central pale inset 0 0": 2.7244961911558583e-05,
+      "RI4C central pale inset 0 1": 2.7244961911558573e-05,
+      "RI4C central pale inset 0 2": 2.724496191155857e-05,
+      "RI4C central pale inset 1 0": 2.7244961911558573e-05,
+      "RI4C central pale inset 1 1": 2.724496191155858e-05,
+      "RI4C central pale inset 1 2": 2.724496191155858e-05,
+      "RI4C chamber copper cheek -1 -3.141592653589793": 0.0029497083669332317,
+      "RI4C chamber copper cheek -1 0": 0.00294970836693324,
+      "RI4C chamber copper cheek 1 -3.141592653589793": 0.00279928280355311,
+      "RI4C chamber copper cheek 1 0": 0.002799282803553109,
+      "RI4C chamber equipment face -1": 0.02090674818161157,
+      "RI4C chamber equipment face 1": 0.020906748181611572,
+      "RI4C chamber pale bar -1 0": 0.00010030374208315136,
+      "RI4C chamber pale bar -1 1": 0.00010030374208315132,
+      "RI4C chamber pale bar -1 2": 0.00010030374208315124,
+      "RI4C chamber pale bar 1 0": 0.00010030374208315121,
+      "RI4C chamber pale bar 1 1": 0.00010030374208315136,
+      "RI4C chamber pale bar 1 2": 0.00010030374208315135,
+      "RI4C copper terminal housing 0": 0.005024680381324954,
+      "RI4C copper terminal housing 1": 0.005024680381324954,
+      "RI4C equatorial equipment band 0": 0.10626516173636134,
+      "RI4C equatorial equipment band 1": 0.023219409182711315,
+      "RI4C equatorial equipment band 2": 0.023394929934571925,
+      "RI4C fork central terminal": 0.0013948969419364707,
+      "RI4C fork lateral prong -1 0": 0.00039849265017248065,
+      "RI4C fork lateral prong -1 1": 0.0003187215907137402,
+      "RI4C fork lateral prong -1 2": 0.0006069471350447961,
+      "RI4C fork lateral prong 1 0": 0.0003984926501724809,
+      "RI4C fork lateral prong 1 1": 0.00031872159071374067,
+      "RI4C fork lateral prong 1 2": 0.000606947135044797,
+      "RI4C lower axial side terminal -1": 0.0007612287913995421,
+      "RI4C lower axial side terminal 1": 0.0007612287913995416,
+      "RI4C construction carriage pale marker": 6.95809591337119e-05,
+      "RI4C construction carriage rail clamp": 0.0013444291173561093,
+      "RI4C construction carriage service case": 0.0035925890786453855,
+      "RI4C construction axial body stays": 0.032302457407922695,
+      "RI4C construction diagonal lattice": 0.0633645878808644,
+      "RI4C construction elliptical hoops": 0.08568700203113623,
+      "RI4C construction meridian ribs": 0.09737500815878325,
+      "RI4C outboard pale work field 0": 0.0002318859597524701,
+      "RI4C outboard pale work field 1": 0.00023188595975247027,
+      "RI4C outboard pale work field 2": 0.00023188595975247019,
+      "RI4C outboard pale work field 3": 0.0002318859597524702,
+      "RI4C outboard temporary service casing 0": 0.012574140211889837,
+      "RI4C outboard temporary service casing 1": 0.012574140211889831,
+      "RI4C outboard temporary service casing 2": 0.012574140211889828,
+      "RI4C outboard temporary service casing 3": 0.012574140211889835,
+      "RI4C temporary conical shield 0": 0.02042773515171106,
+      "RI4C temporary conical shield 1": 0.02051836782179291,
+      "RI4C temporary conical shield 10": 0.020427646785083003,
+      "RI4C temporary conical shield 11": 0.02051805743818174,
+      "RI4C temporary conical shield 2": 0.020427593801919296,
+      "RI4C temporary conical shield 3": 0.02051819546776975,
+      "RI4C temporary conical shield 4": 0.02042764678508301,
+      "RI4C temporary conical shield 5": 0.020518057438181685,
+      "RI4C temporary conical shield 6": 0.020427735151711094,
+      "RI4C temporary conical shield 7": 0.020518367821792914,
+      "RI4C temporary conical shield 8": 0.020427593801919285,
+      "RI4C temporary conical shield 9": 0.02051819546776976,
+      "RI4C temporary outboard support booms": 0.005579920931874463
+    },
+    "body_support_contacts": [
+      {
+        "body": [
+          0.21636921167373657,
+          0.0,
+          -0.6000000238418579
+        ],
+        "frame": [
+          1.8287385702133179,
+          0.0,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          0.15299615263938904,
+          0.11933698505163193,
+          -0.6000000238418579
+        ],
+        "frame": [
+          1.293113350868225,
+          1.008628487586975,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          1.3248793052584234e-17,
+          0.1687679886817932,
+          -0.6000000238418579
+        ],
+        "frame": [
+          1.1197794091547572e-16,
+          1.426416039466858,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.15299615263938904,
+          0.11933698505163193,
+          -0.6000000238418579
+        ],
+        "frame": [
+          -1.293113350868225,
+          1.008628487586975,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.21636921167373657,
+          2.0668118419345936e-17,
+          -0.6000000238418579
+        ],
+        "frame": [
+          -1.8287385702133179,
+          1.7468556347594488e-16,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.15299615263938904,
+          -0.11933698505163193,
+          -0.6000000238418579
+        ],
+        "frame": [
+          -1.293113350868225,
+          -1.008628487586975,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -3.974638246647515e-17,
+          -0.1687679886817932,
+          -0.6000000238418579
+        ],
+        "frame": [
+          -3.3593382274642715e-16,
+          -1.426416039466858,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          0.15299615263938904,
+          -0.11933698505163193,
+          -0.6000000238418579
+        ],
+        "frame": [
+          1.293113350868225,
+          -1.008628487586975,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          0.21664613485336304,
+          0.0,
+          0.6000000238418579
+        ],
+        "frame": [
+          1.8562923669815063,
+          0.0,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          0.1531919687986374,
+          0.11948971450328827,
+          0.6000000238418579
+        ],
+        "frame": [
+          1.3125969171524048,
+          1.0238256454467773,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          1.3265749427960959e-17,
+          0.16898398101329803,
+          0.6000000238418579
+        ],
+        "frame": [
+          1.1366512466728788e-16,
+          1.4479079246520996,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.1531919687986374,
+          0.11948971450328827,
+          0.6000000238418579
+        ],
+        "frame": [
+          -1.3125969171524048,
+          1.0238256454467773,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.21664613485336304,
+          2.0694571655335382e-17,
+          0.6000000238418579
+        ],
+        "frame": [
+          -1.8562923669815063,
+          1.7731758601063961e-16,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -0.1531919687986374,
+          -0.11948971450328827,
+          0.6000000238418579
+        ],
+        "frame": [
+          -1.3125969171524048,
+          -1.0238256454467773,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          -3.9797250765424713e-17,
+          -0.16898398101329803,
+          0.6000000238418579
+        ],
+        "frame": [
+          -3.4099537400186363e-16,
+          -1.4479079246520996,
+          0.6000000238418579
+        ]
+      },
+      {
+        "body": [
+          0.1531919687986374,
+          -0.11948971450328827,
+          0.6000000238418579
+        ],
+        "frame": [
+          1.3125969171524048,
+          -1.0238256454467773,
+          0.6000000238418579
+        ]
+      }
+    ],
+    "bounds": [
+      -3.319999933242798,
+      -2.628000020980835,
+      -3.10754656791687,
+      3.319999933242798,
+      2.615999937057495,
+      3.10754656791687
+    ],
+    "physical_members": {
+      "RI4C construction elliptical hoops": 31,
+      "RI4C construction meridian ribs": 24,
+      "RI4C construction diagonal lattice": 720,
+      "RI4C construction axial body stays": 16,
+      "RI4C temporary outboard support booms": 4
+    }
+  },
+  "original_finished_contract": {
+    "positive_closed_meshes": 118,
+    "belt_height": 0.3199999928474426,
+    "equipment_bays": 4,
+    "bright_bay_insets": 20,
+    "pale_central_insets": 6,
+    "chamber_bars": 6,
+    "three_prong_upper_terminal": true,
+    "two_lower_side_terminals": true,
+    "front_chamber_faces_clear_of_fins": [
+      0.96,
+      -1.2
+    ]
+  },
+  "maximum_native_imported_position_error": 1.0728836059570312e-06,
+  "maximum_imported_helper_matrix_error": 0,
+  "finished_body_geometry_uv_normals_preserved": true,
+  "finished_helpers_preserved": true,
+  "effective_emission_verified": true,
+  "native_materials": {
+    "Observatory construction | case": {
+      "colour": {
+        "size": [
+          256,
+          256
+        ],
+        "effective_pixel_sha256": "07ca6aefbd2619e22f924ab10608c0b2ece4ac3f8cd0266b099326945c0f5809"
+      },
+      "roughness": {
+        "size": [
+          256,
+          256
+        ],
+        "effective_pixel_sha256": "2a61ebd6f85059fcb57380644b91d802cf013251af62d50c1f669e7ace46ce81"
+      },
+      "metallic": 0.6000000238418579
+    },
+    "RI4C refined | blue equipment insets": {
+      "colour": {
+        "constant": [
+          0.07000000029802322,
+          0.20000000298023224,
+          0.47999998927116394,
+          1.0
+        ]
+      },
+      "roughness": {
+        "constant": 0.3400000035762787
+      },
+      "metallic": 0.20000000298023224
+    },
+    "Observatory | soot graphite": {
+      "colour": {
+        "constant": [
+          0.012000000104308128,
+          0.013000000268220901,
+          0.017000000923871994,
+          1.0
+        ]
+      },
+      "roughness": {
+        "constant": 0.7599999904632568
+      },
+      "metallic": 0.44999998807907104
+    },
+    "RI4C refined | pale green equipment insets": {
+      "colour": {
+        "constant": [
+          0.3799999952316284,
+          0.6299999952316284,
+          0.4300000071525574,
+          1.0
+        ]
+      },
+      "roughness": {
+        "constant": 0.3799999952316284
+      },
+      "metallic": 0.20000000298023224
+    },
+    "Observatory | worn slate hull": {
+      "colour": {
+        "size": [
+          1024,
+          1024
+        ],
+        "effective_pixel_sha256": "c6e1731475b7ecc8ca8dec7c6f4a8381bf070f238acd4551dafd04707357c081"
+      },
+      "roughness": {
+        "size": [
+          1024,
+          1024
+        ],
+        "effective_pixel_sha256": "51f406bde9ecc5684cbde378658ed38c8a948ded50262ac27d6c932d672dad7c"
+      },
+      "metallic": 0.6499999761581421
+    },
+    "Observatory | dull gold fittings": {
+      "colour": {
+        "constant": [
+          0.4000000059604645,
+          0.30000001192092896,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "roughness": {
+        "constant": 0.6600000262260437
+      },
+      "metallic": 0.7799999713897705
+    },
+    "RI4C refined | amber equipment insets": {
+      "colour": {
+        "constant": [
+          0.6499999761581421,
+          0.1599999964237213,
+          0.03500000014901161,
+          1.0
+        ]
+      },
+      "roughness": {
+        "constant": 0.3700000047683716
+      },
+      "metallic": 0.20000000298023224
+    },
+    "Observatory | worn green chambers": {
+      "colour": {
+        "size": [
+          1024,
+          1024
+        ],
+        "effective_pixel_sha256": "0ea2d1bdc31956747e5ad23facc3c97b4b73a793c0877a9df2dc86e32083484b"
+      },
+      "roughness": {
+        "size": [
+          1024,
+          1024
+        ],
+        "effective_pixel_sha256": "51f406bde9ecc5684cbde378658ed38c8a948ded50262ac27d6c932d672dad7c"
+      },
+      "metallic": 0.6499999761581421
+    },
+    "RI4C refined | recessed equipment belt": {
+      "colour": {
+        "constant": [
+          0.01600000075995922,
+          0.02500000037252903,
+          0.03500000014901161,
+          1.0
+        ]
+      },
+      "roughness": {
+        "constant": 0.6899999976158142
+      },
+      "metallic": 0.44999998807907104
+    },
+    "Observatory construction | frame": {
+      "colour": {
+        "size": [
+          256,
+          256
+        ],
+        "effective_pixel_sha256": "2ac2570fe40599e4917b11469532da0f50ba76f000de876d65f16530e9709a36"
+      },
+      "roughness": {
+        "size": [
+          256,
+          256
+        ],
+        "effective_pixel_sha256": "2a61ebd6f85059fcb57380644b91d802cf013251af62d50c1f669e7ace46ce81"
+      },
+      "metallic": 0.6499999761581421
+    },
+    "Observatory | aged copper details": {
+      "colour": {
+        "size": [
+          1024,
+          1024
+        ],
+        "effective_pixel_sha256": "ca9b1579fe909bab74c63f7e3162026cb4cf729868b15a548cce4946503823e9"
+      },
+      "roughness": {
+        "size": [
+          1024,
+          1024
+        ],
+        "effective_pixel_sha256": "51f406bde9ecc5684cbde378658ed38c8a948ded50262ac27d6c932d672dad7c"
+      },
+      "metallic": 0.7400000095367432
+    },
+    "Observatory | exposed titanium": {
+      "colour": {
+        "constant": [
+          0.28999999165534973,
+          0.2800000011920929,
+          0.3199999928474426,
+          1.0
+        ]
+      },
+      "roughness": {
+        "constant": 0.49000000953674316
+      },
+      "metallic": 0.7799999713897705
+    },
+    "Observatory construction | cover": {
+      "colour": {
+        "size": [
+          256,
+          256
+        ],
+        "effective_pixel_sha256": "d2473173568232317bd4bf3991c25851aec0e6a32929ad294e84ad846793c752"
+      },
+      "roughness": {
+        "size": [
+          256,
+          256
+        ],
+        "effective_pixel_sha256": "2a61ebd6f85059fcb57380644b91d802cf013251af62d50c1f669e7ace46ce81"
+      },
+      "metallic": 0.30000001192092896
+    },
+    "Observatory construction | marker": {
+      "colour": {
+        "size": [
+          256,
+          256
+        ],
+        "effective_pixel_sha256": "71845e1057c288d44c0f08f6ea12886051d9eaa78ef21d7dfc44dc20775c5f45"
+      },
+      "roughness": {
+        "size": [
+          256,
+          256
+        ],
+        "effective_pixel_sha256": "2a61ebd6f85059fcb57380644b91d802cf013251af62d50c1f669e7ace46ce81"
+      },
+      "metallic": 0.30000001192092896
+    },
+    "RI4C refined | worn pale alloy frames": {
+      "colour": {
+        "constant": [
+          0.28999999165534973,
+          0.3100000023841858,
+          0.3400000035762787,
+          1.0
+        ]
+      },
+      "roughness": {
+        "constant": 0.5699999928474426
+      },
+      "metallic": 0.75
+    }
+  },
+  "native_emission": {
+    "Observatory construction | case": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RI4C refined | blue equipment insets": [
+      0.045499998524785035,
+      0.1299999971687793,
+      0.311999981582165
+    ],
+    "Observatory | soot graphite": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RI4C refined | pale green equipment insets": [
+      0.1899999976158142,
+      0.3149999976158142,
+      0.2150000035762787
+    ],
+    "Observatory | worn slate hull": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Observatory | dull gold fittings": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RI4C refined | amber equipment insets": [
+      0.4224999690055853,
+      0.10399999386072167,
+      0.022749999262392517
+    ],
+    "Observatory | worn green chambers": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RI4C refined | recessed equipment belt": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Observatory construction | frame": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Observatory | aged copper details": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Observatory | exposed titanium": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Observatory construction | cover": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Observatory construction | marker": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RI4C refined | worn pale alloy frames": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "sampled_frames": [
+    1,
+    16,
+    31,
+    46,
+    61,
+    76,
+    91,
+    106,
+    121,
+    136,
+    151,
+    166,
+    181
+  ],
+  "native_carriage_positions": {
+    "1": [
+      1.396097306067973e-16,
+      -1.77839994430542,
+      0.0
+    ],
+    "16": [
+      0.02846960909664631,
+      -1.7775112390518188,
+      0.0
+    ],
+    "31": [
+      0.09110274910926819,
+      -1.775555968284607,
+      0.0
+    ],
+    "46": [
+      0.15373589098453522,
+      -1.7736008167266846,
+      0.0
+    ],
+    "61": [
+      0.18220549821853638,
+      -1.7727121114730835,
+      0.0
+    ],
+    "76": [
+      0.12526628375053406,
+      -1.7727121114730835,
+      0.0
+    ],
+    "91": [
+      0.0,
+      -1.7727121114730835,
+      0.0
+    ],
+    "106": [
+      -0.12526628375053406,
+      -1.7727121114730835,
+      0.0
+    ],
+    "121": [
+      -0.18220549821853638,
+      -1.7727121114730835,
+      0.0
+    ],
+    "136": [
+      -0.15373589098453522,
+      -1.7736008167266846,
+      0.0
+    ],
+    "151": [
+      -0.09110274910926819,
+      -1.7755560874938965,
+      0.0
+    ],
+    "166": [
+      -0.02846960723400116,
+      -1.7775112390518188,
+      0.0
+    ],
+    "181": [
+      1.396097306067973e-16,
+      -1.77839994430542,
+      0.0
+    ]
+  },
+  "imported_carriage_positions": {
+    "1": [
+      1.396097306067973e-16,
+      -1.77839994430542,
+      0.0
+    ],
+    "16": [
+      0.02846960909664631,
+      -1.7775112390518188,
+      0.0
+    ],
+    "31": [
+      0.09110274910926819,
+      -1.775555968284607,
+      0.0
+    ],
+    "46": [
+      0.15373589098453522,
+      -1.7736008167266846,
+      0.0
+    ],
+    "61": [
+      0.18220549821853638,
+      -1.7727121114730835,
+      0.0
+    ],
+    "76": [
+      0.12526628375053406,
+      -1.7727121114730835,
+      0.0
+    ],
+    "91": [
+      0.0,
+      -1.7727121114730835,
+      0.0
+    ],
+    "106": [
+      -0.12526628375053406,
+      -1.7727121114730835,
+      0.0
+    ],
+    "121": [
+      -0.18220549821853638,
+      -1.7727121114730835,
+      0.0
+    ],
+    "136": [
+      -0.15373589098453522,
+      -1.7736008167266846,
+      0.0
+    ],
+    "151": [
+      -0.09110274910926819,
+      -1.7755560874938965,
+      0.0
+    ],
+    "166": [
+      -0.02846960723400116,
+      -1.7775112390518188,
+      0.0
+    ],
+    "181": [
+      1.396097306067973e-16,
+      -1.77839994430542,
+      0.0
+    ]
+  },
+  "static_mesh_names": [
+    "Observatory aerial collar -1",
+    "Observatory aerial collar 1",
+    "Observatory axial aerial -1",
+    "Observatory axial copper collar 0",
+    "Observatory axial copper collar 1",
+    "Observatory axial copper collar 2",
+    "Observatory axial copper collar 3",
+    "Observatory axial copper collar 4",
+    "Observatory axial copper collar 5",
+    "Observatory axial copper collar 6",
+    "Observatory axial copper rail -1 0",
+    "Observatory axial copper rail -1 1",
+    "Observatory axial copper rail -1 2",
+    "Observatory axial copper rail -1 3",
+    "Observatory axial copper rail 1 0",
+    "Observatory axial copper rail 1 1",
+    "Observatory axial copper rail 1 2",
+    "Observatory axial copper rail 1 3",
+    "Observatory axial green chambers",
+    "Observatory boss cap -1",
+    "Observatory boss cap 1",
+    "Observatory central oval bezel",
+    "Observatory dark oval face",
+    "Observatory lateral copper boss -1",
+    "Observatory lateral copper boss 1",
+    "Observatory lower service inset 0",
+    "Observatory lower service inset 1",
+    "Observatory lower service inset 2",
+    "Observatory lower service inset 3",
+    "Observatory lower service inset 4",
+    "Observatory lower service inset 5",
+    "Observatory lower service inset 6",
+    "Observatory lower service inset 7",
+    "Observatory pointed fin -1 0",
+    "Observatory pointed fin -1 1",
+    "Observatory pointed fin -1 2",
+    "Observatory pointed fin -1 3",
+    "Observatory pointed fin 1 0",
+    "Observatory pointed fin 1 1",
+    "Observatory pointed fin 1 2",
+    "Observatory pointed fin 1 3",
+    "Observatory saucer pressure hull",
+    "Observatory upper service plate 0",
+    "Observatory upper service plate 1",
+    "Observatory upper service plate 2",
+    "Observatory upper service plate 3",
+    "Observatory upper service plate 4",
+    "Observatory upper service plate 5",
+    "Observatory upper service plate 6",
+    "Observatory upper service plate 7",
+    "RI4C bay 0 bright inset 0",
+    "RI4C bay 0 bright inset 1",
+    "RI4C bay 0 bright inset 2",
+    "RI4C bay 0 bright inset 3",
+    "RI4C bay 0 bright inset 4",
+    "RI4C bay 0 horizontal frame -1",
+    "RI4C bay 0 horizontal frame 1",
+    "RI4C bay 0 outer side frame -1",
+    "RI4C bay 0 outer side frame 1",
+    "RI4C bay 1 bright inset 0",
+    "RI4C bay 1 bright inset 1",
+    "RI4C bay 1 bright inset 2",
+    "RI4C bay 1 bright inset 3",
+    "RI4C bay 1 bright inset 4",
+    "RI4C bay 1 horizontal frame -1",
+    "RI4C bay 1 horizontal frame 1",
+    "RI4C bay 1 outer side frame -1",
+    "RI4C bay 1 outer side frame 1",
+    "RI4C bay 2 bright inset 0",
+    "RI4C bay 2 bright inset 1",
+    "RI4C bay 2 bright inset 2",
+    "RI4C bay 2 bright inset 3",
+    "RI4C bay 2 bright inset 4",
+    "RI4C bay 2 horizontal frame -1",
+    "RI4C bay 2 horizontal frame 1",
+    "RI4C bay 2 outer side frame -1",
+    "RI4C bay 2 outer side frame 1",
+    "RI4C bay 3 bright inset 0",
+    "RI4C bay 3 bright inset 1",
+    "RI4C bay 3 bright inset 2",
+    "RI4C bay 3 bright inset 3",
+    "RI4C bay 3 bright inset 4",
+    "RI4C bay 3 horizontal frame -1",
+    "RI4C bay 3 horizontal frame 1",
+    "RI4C bay 3 outer side frame -1",
+    "RI4C bay 3 outer side frame 1",
+    "RI4C central pale inset 0 0",
+    "RI4C central pale inset 0 1",
+    "RI4C central pale inset 0 2",
+    "RI4C central pale inset 1 0",
+    "RI4C central pale inset 1 1",
+    "RI4C central pale inset 1 2",
+    "RI4C chamber copper cheek -1 -3.141592653589793",
+    "RI4C chamber copper cheek -1 0",
+    "RI4C chamber copper cheek 1 -3.141592653589793",
+    "RI4C chamber copper cheek 1 0",
+    "RI4C chamber equipment face -1",
+    "RI4C chamber equipment face 1",
+    "RI4C chamber pale bar -1 0",
+    "RI4C chamber pale bar -1 1",
+    "RI4C chamber pale bar -1 2",
+    "RI4C chamber pale bar 1 0",
+    "RI4C chamber pale bar 1 1",
+    "RI4C chamber pale bar 1 2",
+    "RI4C construction axial body stays",
+    "RI4C construction diagonal lattice",
+    "RI4C construction elliptical hoops",
+    "RI4C construction meridian ribs",
+    "RI4C copper terminal housing 0",
+    "RI4C copper terminal housing 1",
+    "RI4C equatorial equipment band 0",
+    "RI4C equatorial equipment band 1",
+    "RI4C equatorial equipment band 2",
+    "RI4C fork central terminal",
+    "RI4C fork lateral prong -1 0",
+    "RI4C fork lateral prong -1 1",
+    "RI4C fork lateral prong -1 2",
+    "RI4C fork lateral prong 1 0",
+    "RI4C fork lateral prong 1 1",
+    "RI4C fork lateral prong 1 2",
+    "RI4C lower axial side terminal -1",
+    "RI4C lower axial side terminal 1",
+    "RI4C outboard pale work field 0",
+    "RI4C outboard pale work field 1",
+    "RI4C outboard pale work field 2",
+    "RI4C outboard pale work field 3",
+    "RI4C outboard temporary service casing 0",
+    "RI4C outboard temporary service casing 1",
+    "RI4C outboard temporary service casing 2",
+    "RI4C outboard temporary service casing 3",
+    "RI4C temporary conical shield 0",
+    "RI4C temporary conical shield 1",
+    "RI4C temporary conical shield 10",
+    "RI4C temporary conical shield 11",
+    "RI4C temporary conical shield 2",
+    "RI4C temporary conical shield 3",
+    "RI4C temporary conical shield 4",
+    "RI4C temporary conical shield 5",
+    "RI4C temporary conical shield 6",
+    "RI4C temporary conical shield 7",
+    "RI4C temporary conical shield 8",
+    "RI4C temporary conical shield 9",
+    "RI4C temporary outboard support booms"
+  ],
+  "moving_mesh_names": [
+    "RI4C construction carriage pale marker",
+    "RI4C construction carriage rail clamp",
+    "RI4C construction carriage service case"
+  ],
+  "authored_clips": [
+    {
+      "index": 0,
+      "name": "ConstructionActivity",
+      "start": 0.03333333333333333,
+      "end": 6.033333333333333,
+      "duration": 6.0
+    }
+  ],
+  "renders": {
+    "front-quarter": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.021757467366114724,
+      "native_sha256": "95f94eba4d3e91ee79819b29ec4329e1d94c9ccb59da1eec4ca298dd255eb866",
+      "imported_sha256": "e9f133bfc870f09a8c679717bfefa588cb57dfb567bd6cf68b0a790e2ed56d39"
+    },
+    "front": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.025044090616574977,
+      "native_sha256": "d61669c13b4cd473f73a6f5b025d04fa811c0298b12732399cb7ae74c21e131c",
+      "imported_sha256": "45ea9d0fa9df300eaf68f8e46a55ae7bec6e095b337400b0436716141ec00cb7"
+    },
+    "rear-quarter": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.022738139450666495,
+      "native_sha256": "76a1272884feb6b323461154a314cfebd7843f511227117a20d1bfb3322d6470",
+      "imported_sha256": "bfd626c62a850c8ca19714b908cca00930a511b1c263d72ad81147f334f5397b"
+    },
+    "work-detail": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.009678596470621414,
+      "native_sha256": "e83bcf2cb3f99008e8284375515d8838f6e82570a113d873eca3bc3fd59ddff6",
+      "imported_sha256": "f0fffdf93e8bbabac39a38641e3d581d7d8a77766acaac77e242f347b804289b"
+    },
+    "work-detail-moved": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.009893348960758885,
+      "native_sha256": "8b1452bc5c5166ab2d07010df668508ef56b99597b9d6efc4b7eeaea5c7ae360",
+      "imported_sha256": "5909db40e02b5d126d7e9ce3db237485c29bfcb2142c04416332010cb6a416dd"
+    }
+  },
+  "evidence_sha256": "475a69b6a66ba13cb33cb24d47aabb88bc0a76b14cc68d6dc7658b6158cc290a",
+  "acceptance": "Actual asset runtime validation; hidden construction and final game calibration remain authored/open"
+}

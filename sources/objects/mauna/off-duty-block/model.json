@@ -1,0 +1,502 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/133",
+  "key": "MN04",
+  "name": "Off-duty Block",
+  "culture": "mauna",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 0,
+  "construction_updates": 24,
+  "triangles": 2148,
+  "triangle_budget": 30000,
+  "mesh_nodes": 15,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mauna_off_duty_block.py",
+  "author_sha256": "ada3c641039c17fdc1aeb088fba63c11221faf4012f7da06d8ea2f67abde51c3",
+  "binaries": {
+    "blend": "7d1d35d0fdd6e3b4933f5a41c1aaf52db0a59f2f81026ac03a3dfcca49ef41d5",
+    "glb": "8db21faa64b0feeda7ae61eef3fe2a374b6a93a6bd4c5f2f125547451e9b85e0"
+  },
+  "textures": {
+    "cast-concrete-colour.png": "b9faa0343ce97c423156d4698ae08a079e99b26722282370e67e9345ac83020f",
+    "cast-service-normal.png": "99ada855d1c8678aeb93bb5ba2fbc94e898bf4175a6472892f94f7cfe74450b0",
+    "concrete-orm.png": "e5b7f35769f5445f3622b910fa7e71c7ec30fe4f38cb49258fe98731f05d155b",
+    "metal-orm.png": "d476678f348b7ae40a4907f78f5b18fbb7a1035bd30968fa5eefc358c9dd518a",
+    "recess-red-colour.png": "0eacdff6503fdac0716ce781617c0d6ca932ad9ee1a8078fb487d6a2ab406b49",
+    "used-brass-colour.png": "277ebe162fc71a103262d4ed5bf3710438aa12e725a8dabdcd9e37ecc3df5632",
+    "window-amber-colour.png": "6751983a47cb395ed8269eb7a0345a697a3e23e78657cd7e3536211aa72d79c8",
+    "window-orm.png": "0d33bf9cb825b9ae38bf2f5c353d6eb4bc46facfc75569ac2492fa271efe52c5"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Off-duty Block front bank 0 backing",
+      "point": [
+        0.0,
+        -0.6600000858306885,
+        0.9100000262260437
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Off-duty Block front bank 1 backing",
+      "point": [
+        0.0,
+        -0.6600000858306885,
+        1.5099999904632568
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Off-duty Block right bank 0 backing",
+      "point": [
+        0.6600000858306885,
+        0.0,
+        0.9100000262260437
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Off-duty Block right bank 1 backing",
+      "point": [
+        0.6600000858306885,
+        0.0,
+        1.5099999904632568
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Off-duty Block lower red panel 0",
+      "point": [
+        0.6600000858306885,
+        -0.2199999988079071,
+        0.30000001192092896
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.04
+    },
+    {
+      "object": "Off-duty Block lower red panel 1",
+      "point": [
+        0.6600003242492676,
+        0.23000000417232513,
+        0.30000001192092896
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.04
+    }
+  ],
+  "window_banks": [
+    {
+      "face": "front",
+      "floor": 0,
+      "object": "Off-duty Block eight panes front bank 0",
+      "backing": "Off-duty Block front bank 0 backing",
+      "contacts": [
+        [
+          -0.36000001430511475,
+          -0.6180000901222229,
+          0.8050000071525574
+        ],
+        [
+          -0.11999999731779099,
+          -0.6180000901222229,
+          0.8050000071525574
+        ],
+        [
+          0.11999999731779099,
+          -0.6180000901222229,
+          0.8050000071525574
+        ],
+        [
+          0.36000001430511475,
+          -0.6180000901222229,
+          0.8050000071525574
+        ],
+        [
+          -0.36000001430511475,
+          -0.6180000901222229,
+          1.0149999856948853
+        ],
+        [
+          -0.11999999731779099,
+          -0.6180000901222229,
+          1.0149999856948853
+        ],
+        [
+          0.11999999731779099,
+          -0.6180000901222229,
+          1.0149999856948853
+        ],
+        [
+          0.36000001430511475,
+          -0.6180000901222229,
+          1.0149999856948853
+        ]
+      ],
+      "centre": [
+        0.0,
+        -0.6600000858306885,
+        0.9100000262260437
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "face": "front",
+      "floor": 1,
+      "object": "Off-duty Block eight panes front bank 1",
+      "backing": "Off-duty Block front bank 1 backing",
+      "contacts": [
+        [
+          -0.36000001430511475,
+          -0.6180000901222229,
+          1.4049999713897705
+        ],
+        [
+          -0.11999999731779099,
+          -0.6180000901222229,
+          1.4049999713897705
+        ],
+        [
+          0.11999999731779099,
+          -0.6180000901222229,
+          1.4049999713897705
+        ],
+        [
+          0.36000001430511475,
+          -0.6180000901222229,
+          1.4049999713897705
+        ],
+        [
+          -0.36000001430511475,
+          -0.6180000901222229,
+          1.6150000095367432
+        ],
+        [
+          -0.11999999731779099,
+          -0.6180000901222229,
+          1.6150000095367432
+        ],
+        [
+          0.11999999731779099,
+          -0.6180000901222229,
+          1.6150000095367432
+        ],
+        [
+          0.36000001430511475,
+          -0.6180000901222229,
+          1.6150000095367432
+        ]
+      ],
+      "centre": [
+        0.0,
+        -0.6600000858306885,
+        1.5099999904632568
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "face": "right",
+      "floor": 0,
+      "object": "Off-duty Block eight panes right bank 0",
+      "backing": "Off-duty Block right bank 0 backing",
+      "contacts": [
+        [
+          0.6180000901222229,
+          -0.36000001430511475,
+          0.8050000071525574
+        ],
+        [
+          0.6180000901222229,
+          -0.11999999731779099,
+          0.8050000071525574
+        ],
+        [
+          0.6180000901222229,
+          0.11999999731779099,
+          0.8050000071525574
+        ],
+        [
+          0.6180000901222229,
+          0.36000001430511475,
+          0.8050000071525574
+        ],
+        [
+          0.6180000901222229,
+          -0.36000001430511475,
+          1.0149999856948853
+        ],
+        [
+          0.6180000901222229,
+          -0.11999999731779099,
+          1.0149999856948853
+        ],
+        [
+          0.6180000901222229,
+          0.11999999731779099,
+          1.0149999856948853
+        ],
+        [
+          0.6180000901222229,
+          0.36000001430511475,
+          1.0149999856948853
+        ]
+      ],
+      "centre": [
+        0.6600000858306885,
+        0.0,
+        0.9100000262260437
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "face": "right",
+      "floor": 1,
+      "object": "Off-duty Block eight panes right bank 1",
+      "backing": "Off-duty Block right bank 1 backing",
+      "contacts": [
+        [
+          0.6180000901222229,
+          -0.36000001430511475,
+          1.4049999713897705
+        ],
+        [
+          0.6180000901222229,
+          -0.11999999731779099,
+          1.4049999713897705
+        ],
+        [
+          0.6180000901222229,
+          0.11999999731779099,
+          1.4049999713897705
+        ],
+        [
+          0.6180000901222229,
+          0.36000001430511475,
+          1.4049999713897705
+        ],
+        [
+          0.6180000901222229,
+          -0.36000001430511475,
+          1.6150000095367432
+        ],
+        [
+          0.6180000901222229,
+          -0.11999999731779099,
+          1.6150000095367432
+        ],
+        [
+          0.6180000901222229,
+          0.11999999731779099,
+          1.6150000095367432
+        ],
+        [
+          0.6180000901222229,
+          0.36000001430511475,
+          1.6150000095367432
+        ]
+      ],
+      "centre": [
+        0.6600000858306885,
+        0.0,
+        1.5099999904632568
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "roof_stacks": [
+    {
+      "index": 0,
+      "object": "Off-duty Block rectangular brass stack 0",
+      "centre": [
+        -0.12,
+        0.22
+      ],
+      "bottom": 2.07,
+      "top": 2.76,
+      "contact": [
+        -0.12,
+        0.22,
+        2.078
+      ],
+      "support": "Off-duty Block small paired-stack plinth"
+    },
+    {
+      "index": 1,
+      "object": "Off-duty Block rectangular brass stack 1",
+      "centre": [
+        -0.29,
+        0.11
+      ],
+      "bottom": 2.07,
+      "top": 2.5999999999999996,
+      "contact": [
+        -0.29,
+        0.11,
+        2.078
+      ],
+      "support": "Off-duty Block small paired-stack plinth"
+    },
+    {
+      "index": 2,
+      "object": "Off-duty Block rectangular brass stack 2",
+      "centre": [
+        0.32,
+        0.18
+      ],
+      "bottom": 1.98,
+      "top": 2.48,
+      "contact": [
+        0.32,
+        0.18,
+        1.988
+      ],
+      "support": "Off-duty Block concrete residential shell"
+    }
+  ],
+  "stack_grooves": [
+    {
+      "point": [
+        0.3199999928474426,
+        0.11500000208616257,
+        2.0999999046325684
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.006
+    },
+    {
+      "point": [
+        0.3199999928474426,
+        0.11500000208616257,
+        2.200000047683716
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.006
+    },
+    {
+      "point": [
+        0.3199999928474426,
+        0.11500000208616257,
+        2.299999952316284
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.006
+    },
+    {
+      "point": [
+        0.3199999928474426,
+        0.11500000208616257,
+        2.4000000953674316
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.006
+    }
+  ],
+  "physical_chips": [
+    {
+      "point": [
+        0.47999998927116394,
+        0.38999998569488525,
+        2.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "point": [
+        -0.41999998688697815,
+        -0.6600000262260437,
+        0.4000000059604645
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ],
+  "steady_window_emission": {
+    "colour": [
+      0.3,
+      0.3,
+      0.065
+    ],
+    "strength": 0.25,
+    "scope": "Authored steady material choice preserving brightyellowgreen sourcepanes;not recovered timedlegacy lighting."
+  },
+  "interpretation": [
+    "Own uprightconcreteblock,fourvisible4x2windowbanks,two lowerredpanels andthree unequal rectangularbrassroofstacks govern geometry.",
+    "Plainhiddenrearwalls,blindfielddepths/stackmounts/groovepitch andcellrelative dimensions authored. PB00isTerran functioncontext,notMauna geometry/operation. No operatinganimation inferred."
+  ],
+  "scale_contract": "2x2 placement footprint,+Zup/-Yfront. Cell-relative proportions authored;no recovered metric dimensions.",
+  "concept_review": "sources/docs/reconstruction/models/mn04-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

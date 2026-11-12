@@ -1,0 +1,411 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/058",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri19-review-1.png",
+    "sha256": "2fc44498fd3a4a587afbacb7f65f90df2a4c2b9eb25b13cca0da797d53f16ef1",
+    "prompt": "sources/docs/reconstruction/models/ri19-concept-prompt-1.txt",
+    "verdict": "Bell pedestal, lower slots, bronze front strip/base fitting, single green tapered lance and small upper fitting agree. Concept enlarges head/fuses lance root; source-derived proportions and independent yaw rig retained."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "outcome": "Image returned and inspected."
+    }
+  ],
+  "legacy": {
+    "body_sha256": "0a97e13e7430e70e333f70595d8d04a44b61b6f7f42c508cd0b4a2da02e81f68",
+    "assembled_descriptor_sha256": {
+      "2": "9c64377288952f3c8a9365c0a2e65b9a6f8ce82940d755239e8debea3105320a",
+      "3": "3b53660d905255e81b26c2b2704950b8be0fdfb267fb8fee2423b295931c7608",
+      "4": "9f4e4b2016ccee7eee814d681e57f659e9a06e93962484eb4209f3c7adf2011e",
+      "5": "c2945906aea3aeadc60f2b4b754aff5672137c6970714601103ba32c12d29359",
+      "6": "acaa68eb93592a45c101b81d268372515936c39213bb8636c8fbf807f0b270fe",
+      "7": "51e46532be0f73e6066b63984e6ce03126a962068657b12f95b2d47703d40a96",
+      "8": "00b873075fbf1eef1329e4a8e646c7654c2d851e44f735ca09dcaa3ed080e350",
+      "9": "c5ccb45fb36b500bdef49390657aa8a86960098fc86bbeed6840eb4957a8e581",
+      "10": "e6ef90fd5b75f5f98d5a27c5e95c0d7d93a8ce136195d8406bcd280333bc57bb",
+      "11": "b9803a0a2ab64f09d6167c7f3f66d28f9b04892c6385811287e9f761403ea35a",
+      "12": "28e4cc5834b332d6aa7c77fa0429aa8b115fba869cc4eb4daf2a2cc47c286153",
+      "13": "b6b08eb0f5df4c5403b1c9c1dba4a7ba4be73001a5f59fee87b61a2b48bedc64",
+      "14": "30cc904d63d7496f22e5fb8bf579f69f0d50e94f1ae3e1a17a2a1e88d4957e1d",
+      "15": "2e06e4a28f6ca7e9d6ada5bcb2f91aba107e5c90f5d922b063ea17f38074c859",
+      "16": "0b84b01dc6983e6074377952477f997fce9d205c6141ce8b30b325695af7d5d6",
+      "17": "eff02f1dbcc837a8db5a822e2c56d1e58c448fc6b2ca0d0c744da2a29a434a8e"
+    },
+    "reviewed_catalogue_phases": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "functional_record": 919,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "418454cac84f887735af96f62016886dccf65ec8abdbf693382b9818194ae2cc",
+    "glb": "19d5bd1723f4a1b041ce6ee8b6ee8d12e6cee812db3149c653f727fe8f454537"
+  },
+  "runtime_report_sha256": "9e47601c696431b1846d53ba56c8497e0678af8cf5f618d1e622ca75130ef303",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0008358425564236111,
+        0.0008782280815972222,
+        0.0007375081380208334,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.0049271031056904,
+        0.005078550947053835,
+        0.004230443035418602,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 82
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.0008392333984375,
+        0.0007714165581597222,
+        0.0007358127170138889,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.005065338611501298,
+        0.004650321372323671,
+        0.004405567615885583,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 82
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0008273654513888889,
+        0.0008426242404513889,
+        0.0008392333984375,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.005496312303283694,
+        0.005578522102691784,
+        0.005566777845633485,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 84
+    },
+    "yaw-00": {
+      "mean_absolute_rgba_255": [
+        0.0008358425564236111,
+        0.0008782280815972222,
+        0.0007375081380208334,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.0049271031056904,
+        0.005078550947053835,
+        0.004230443035418602,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 82
+    },
+    "yaw-01": {
+      "mean_absolute_rgba_255": [
+        0.0008629692925347222,
+        0.0007358127170138889,
+        0.0007002088758680555,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.00569032302295554,
+        0.0047990676097215395,
+        0.004593393283590617,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 95
+    },
+    "yaw-02": {
+      "mean_absolute_rgba_255": [
+        0.0007375081380208334,
+        0.0006663004557291666,
+        0.0005967881944444445,
+        2.712673611111111e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0052835281236472895,
+        0.004799735187024164,
+        0.00427774807119395,
+        0.0002037022891044738
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 93
+    },
+    "yaw-03": {
+      "mean_absolute_rgba_255": [
+        0.0006290011935763889,
+        0.0006290011935763889,
+        0.0005391438802083334,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.00496918283023789,
+        0.004886820683880355,
+        0.004104380293483782,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 99
+    },
+    "yaw-04": {
+      "mean_absolute_rgba_255": [
+        0.0007120768229166666,
+        0.0006815592447916666,
+        0.0006544325086805555,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.00556544339915812,
+        0.005325310054524394,
+        0.005184055145916321,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 103
+    },
+    "yaw-05": {
+      "mean_absolute_rgba_255": [
+        0.0006256103515625,
+        0.0006188286675347222,
+        0.0005950927734375,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.00516358403521395,
+        0.005050718810400531,
+        0.004782663901468659,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 103
+    },
+    "yaw-06": {
+      "mean_absolute_rgba_255": [
+        0.0006951226128472222,
+        0.0005883110894097222,
+        0.0006205240885416666,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.005197391755108722,
+        0.004365263416364281,
+        0.004556243690830218,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 106
+    },
+    "yaw-07": {
+      "mean_absolute_rgba_255": [
+        0.0006866455078125,
+        0.0006866455078125,
+        0.0006340874565972222,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.004911392405063291,
+        0.005,
+        0.004544303797468355,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 98
+    },
+    "yaw-08": {
+      "mean_absolute_rgba_255": [
+        0.0008494059244791666,
+        0.0007798936631944445,
+        0.0007510715060763889,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.005345033905065816,
+        0.004797994187703003,
+        0.004695424240697476,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 82
+    },
+    "yaw-09": {
+      "mean_absolute_rgba_255": [
+        0.0011155870225694445,
+        0.001064724392361111,
+        0.001010470920138889,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.006465995521213711,
+        0.006092763330441625,
+        0.005790142635221014,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 67
+    },
+    "yaw-10": {
+      "mean_absolute_rgba_255": [
+        0.0012834337022569445,
+        0.0011393229166666667,
+        0.0011444091796875,
+        6.781684027777778e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0062957762853131346,
+        0.005553518569857183,
+        0.005508804249648992,
+        0.0002146287369993114
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 66
+    },
+    "yaw-11": {
+      "mean_absolute_rgba_255": [
+        0.0011054144965277778,
+        0.0010308159722222222,
+        0.0009816487630208333,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.00514381521332183,
+        0.004785701495938665,
+        0.0045578109485130145,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 52
+    },
+    "yaw-12": {
+      "mean_absolute_rgba_255": [
+        0.0011545817057291667,
+        0.0010528564453125,
+        0.001034206814236111,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.005191383852471718,
+        0.004726483805981714,
+        0.0046180071284673795,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 40
+    },
+    "yaw-13": {
+      "mean_absolute_rgba_255": [
+        0.0010816786024305555,
+        0.0011138916015625,
+        0.001110500759548611,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.004763213336997344,
+        0.004900613721718421,
+        0.004892980367011694,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 32
+    },
+    "yaw-14": {
+      "mean_absolute_rgba_255": [
+        0.001068115234375,
+        0.0010816786024305555,
+        0.000988430447048611,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.0049445755098083575,
+        0.00500921048379278,
+        0.004597162524642084,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 37
+    },
+    "yaw-15": {
+      "mean_absolute_rgba_255": [
+        0.0010002983940972222,
+        0.0009714762369791666,
+        0.0009782579210069445,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.00515109583537919,
+        0.004892201937240548,
+        0.004910056688836316,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 60
+    }
+  },
+  "feedback": [
+    "Original function record919 identifies the least effective anti-ship weapon. Paletted fixed body and all16 assembled head directions reviewed; current selector and rules preserve frame1 plus2+(((heading+8)>>4)&15). Catalogue reveal/highlight is not operating motion.",
+    "Concept broadly preserves the original green bell pedestal, short rounded head, upward-diagonal single tapered lance, lower dark slots and bronze strip/fittings. Enlarged head/fused lance root, stronger floor lip, thickened strip and stronger wear are artistic interpretations and not transferred automatically.",
+    "All12 evaluated source components are retained geometrically with no reduction or restyling; three existing geometric dents, full authored green colour/roughness maps and six local planar caps plus cylindrical UVs are preserved. Existing wear is subtler than concept.",
+    "Only four upper meshes plus LanceTipSocket inherit YawPivot; fixed pedestal/bearing/lower fittings remain under PlacementRoot. Actual socket endpoint/forward axis and all moving matrices agree in16native and16imported yaw samples. Legacy-to-model yaw phase/sign remains uncalibrated.",
+    "Nineteen paired actual renders cover three whole-body views and all16authored yaw samples. Their close pixel agreement verifies export equivalence, not a numerical percentage of legacy likeness. Same canonical geometry supports technical diagrams rather than a separately remodelled diagram mesh.",
+    "No timed operating/firing/pitch clip or invented glow. Fixed lance elevation/socket axis/pivot sections remain authored interpretation. Shared RIS3 construction separate. Continuous collision sweep, game scale/state effects, Android performance and final user artistic acceptance remain unproved."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

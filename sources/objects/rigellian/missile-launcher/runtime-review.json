@@ -1,0 +1,4775 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/057",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "4d9837de686fcb4631725b44280a0007e8d03d3b92ed91784dcec1ffcdc0a13e",
+    "glb": "ff1b899465c6b334b52b540dce124ecd6fe3b75c859746ce9d1748c7a32f8679"
+  },
+  "metadata_sha256": "1893a97a318fbc268f7ead915c6580ad0fbb32980f690dfb1de0ec16737da41e",
+  "verifier_sha256": "1bd5ac0b325c6cd41d59f2a9975f0c752bf95b59339ab84ae2f9ccb639ba9dc3",
+  "helpers": {
+    "sources/tools/blender/verify_remastered_rigellian_launcher.py": "1bd5ac0b325c6cd41d59f2a9975f0c752bf95b59339ab84ae2f9ccb639ba9dc3",
+    "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+    "sources/tools/blender/remaster_rigellian_launcher.py": "b2da551f3e12d53fe1b76a269406e9d9944a7cdadaedabc5b39925f7c74ea058",
+    "sources/tools/blender/audit_rigellian_launcher_source.py": "b135e6278b76d610bf69442e11ff5780651a7f2997b26f947cb50f0923e8265b",
+    "sources/tools/blender/verify_rigellian_launcher_candidate.py": "cf605e607c8e7ff0974990030ce115b95d4aa84aebb623ac3e91bdf836caff9e",
+    "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+    "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+    "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+    "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+    "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+    "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+    "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+    "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+    "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+    "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+    "sources/tools/blender/fighter_plate_topology.py": "36b872b0d36bba49ce5b10f0ddd8d26d20ad5919371f66a55c73a23ec099b110",
+    "sources/tools/blender/build_assault_fighter.py": "870a192b1bfc20c1603944e42b5b5d8bfe1bf1c3910f77c76c2014765addbaf9",
+    "sources/tools/blender/terran_light_ship_parts.py": "c64b7304f42c2b2c37a34f45a6c917ee1f6809028c3709892f415f236ce6d82e",
+    "sources/tools/blender/build_shield_equipment.py": "d41f42f9c2126f6a227caba23f84be57eea70ac92065e4255b0551801ae47bc8",
+    "sources/tools/blender/cannon_equipment_parts.py": "f1f66d8e1661b7f56d54443c29a086524dfeb9f16ace847907c85db9adaf51bf",
+    "sources/tools/blender/terran_missile_parts.py": "94566456368f50847febf64c17afe1b7ca48a18c9ccd42915b0c6c5def6a3db1",
+    "sources/tools/blender/build_terran_missiles.py": "f0c6645ffbbece14d42c353df8d2a697a7d11d170ef5f8713de7d40a9613a1bc",
+    "sources/tools/blender/manufactured_vessels.py": "4404bda9c3f1ebb9243ccee5755e846b954884555d5c026c0c75073e6b397db9",
+    "sources/tools/blender/manufactured_annuli.py": "edd95ddb633dfd794b0af1dbafa1551f14276f07d172fbd92d8663c07704cde2",
+    "sources/tools/blender/rigellian_missile_launcher_parts.py": "21d62f9c2cde35810ed585bb9a8f25874ab25ff0630cd578031a25fdeb50a7bb",
+    "sources/tools/blender/manufactured_roof_wells.py": "d9e7e148613d96e666a30b75f0de1382e9869e11c118ed5c4828b2b4fb75fceb",
+    "sources/tools/blender/build_rigellian_missile_launcher.py": "71416eb75445f34756ce4e379338985f6209f2f7758457d66126694cb9a7a8be",
+    "sources/tools/blender/rigellian_filtration_parts.py": "b79ad9bb3259ecb184877845bf2a668fee8580b75be43bee2e6f5217d3cfee99",
+    "sources/tools/blender/filtration_wear_material.py": "39f12c9efe559471f6bb39e6a4079adf8f7d3c921c6ac582dcd7349be49ba2d5",
+    "sources/tools/blender/build_rigellian_filtration.py": "aa24fcabd41a422938bd0e9fea1ce3c576f98b9925d472d62f69e08566b5424e",
+    "sources/tools/blender/verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+    "sources/tools/blender/verify_rigellian_missile_launcher.py": "c0017408be9838465b2ba7e73d52d3525ee1632b05b56033380c125ec6eaacf9",
+    "sources/tools/blender/rigellian_launcher_remaster_checks.py": "ecca7bc1b6f1b3fff0e12c3a719dd840846ec290a796644bb59247848403ce80"
+  },
+  "native": {
+    "positive_closed_meshes": 38,
+    "body_bounds": [
+      -0.8600000143051147,
+      -0.8600000143051147,
+      0.0,
+      0.9420199394226074,
+      0.8600000143051147,
+      1.9747313261032104
+    ],
+    "retained_fixed_dents_and_attachment_checks": true,
+    "low_floor_seated_in_original_ring": true,
+    "supported_hardware_contact_points": 24,
+    "texture_pixels_and_uvs": {
+      "materials": {
+        "RI18 | aged bronze foundation": {
+          "colour": "645ebfce219163ea9b452599e3218820020ddda505f52265c1d3feafe562a472",
+          "roughness": "30c0d234689535daef175a334dc761ab65302f64c0804540ed35b41203fdb60c"
+        },
+        "RI18 | weathered green casing": {
+          "colour": "d9ceff020058f91f2a6533c74bc4b54904241f3b638c8a804b21929d7366fb3f",
+          "roughness": "30c0d234689535daef175a334dc761ab65302f64c0804540ed35b41203fdb60c"
+        },
+        "RI18 | bronze planar caps": {
+          "colour": "deb83f20c31cb7502f5904fd121862025ae2b8a6ea9621fafa4b34a88228a2c8",
+          "roughness": "8ebe239f5f0935492b3ec91fa1f4985b9f93e8fc5eb0f7a4d7096c0657773b70"
+        },
+        "RI18 | green planar caps": {
+          "colour": "f6deced1a489aa5a1de3a5e2c5ba7aec1b6c8da33fc2b6f43ba8762f16e3b166",
+          "roughness": "8ebe239f5f0935492b3ec91fa1f4985b9f93e8fc5eb0f7a4d7096c0657773b70"
+        }
+      },
+      "planar_cap_surfaces": 4
+    }
+  },
+  "imported": {
+    "positive_closed_meshes": 38,
+    "body_bounds": [
+      -0.8600000143051147,
+      -0.8600000143051147,
+      0.0,
+      0.9420199394226074,
+      0.8600000143051147,
+      1.9747313261032104
+    ],
+    "retained_fixed_dents_and_attachment_checks": true,
+    "low_floor_seated_in_original_ring": true,
+    "supported_hardware_contact_points": 24,
+    "texture_pixels_and_uvs": {
+      "materials": {
+        "RI18 | aged bronze foundation": {
+          "colour": "645ebfce219163ea9b452599e3218820020ddda505f52265c1d3feafe562a472",
+          "roughness": "30c0d234689535daef175a334dc761ab65302f64c0804540ed35b41203fdb60c"
+        },
+        "RI18 | weathered green casing": {
+          "colour": "d9ceff020058f91f2a6533c74bc4b54904241f3b638c8a804b21929d7366fb3f",
+          "roughness": "30c0d234689535daef175a334dc761ab65302f64c0804540ed35b41203fdb60c"
+        },
+        "RI18 | bronze planar caps": {
+          "colour": "deb83f20c31cb7502f5904fd121862025ae2b8a6ea9621fafa4b34a88228a2c8",
+          "roughness": "8ebe239f5f0935492b3ec91fa1f4985b9f93e8fc5eb0f7a4d7096c0657773b70"
+        },
+        "RI18 | green planar caps": {
+          "colour": "f6deced1a489aa5a1de3a5e2c5ba7aec1b6c8da33fc2b6f43ba8762f16e3b166",
+          "roughness": "8ebe239f5f0935492b3ec91fa1f4985b9f93e8fc5eb0f7a4d7096c0657773b70"
+        }
+      },
+      "planar_cap_surfaces": 4
+    }
+  },
+  "supported_hardware_sweep": {
+    "native": {
+      "samples": [
+        {
+          "frame": 1,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 30
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge root bracket -1 -1",
+              "triangle_pairs": 6
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 30
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge root bracket -1 1",
+              "triangle_pairs": 6
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 30
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge root bracket 1 -1",
+              "triangle_pairs": 6
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 30
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge root bracket 1 1",
+              "triangle_pairs": 6
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 2,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 3,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 4,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 5,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 6,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 7,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 8,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 9,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 10,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 11,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 12,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 13,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 14,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 15,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 16,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 17,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 18,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 19,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 20,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 21,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 22,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 23,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 24,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 25,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 26,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 27,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 28,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 29,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 30,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 31,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 32,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 33,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 34,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 35,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 36,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 37,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 38,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 39,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 40,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 41,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 42,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 43,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 44,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 45,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 46,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 47,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 48,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 49,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 50,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 51,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 52,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 53,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 54,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 55,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 56,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 23
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 23
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 57,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 58,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 27
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 59,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 25
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 60,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 25
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 24
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 61,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 30
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge root bracket -1 -1",
+              "triangle_pairs": 6
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 30
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge root bracket -1 1",
+              "triangle_pairs": 6
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 24
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 30
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge root bracket 1 -1",
+              "triangle_pairs": 6
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 30
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge root bracket 1 1",
+              "triangle_pairs": 6
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        }
+      ],
+      "maximum_contact_envelope_radius": 0.030510085935361864,
+      "allowed_axis_seat_radius": 0.065,
+      "allowed_axis_half_length": 0.096,
+      "scope": "Integer cycle-frame triangle surface contacts within compact own-axis hardware seats; no continuous-time or contact-volume proof."
+    },
+    "imported": {
+      "samples": [
+        {
+          "frame": 1,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 47
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 63
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 65
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge root bracket -1 -1",
+              "triangle_pairs": 8
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge root bracket -1 1",
+              "triangle_pairs": 8
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 47
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 65
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 63
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge root bracket 1 -1",
+              "triangle_pairs": 8
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge root bracket 1 1",
+              "triangle_pairs": 8
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 2,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 3,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 54
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 4,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 5,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 6,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 7,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 8,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 9,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 10,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 50
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 11,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 50
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 12,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 50
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 13,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 50
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 50
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 14,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 50
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 50
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 15,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 50
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 16,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 50
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 17,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 50
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 18,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 19,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 20,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 21,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 22,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 58
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 23,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 24,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 25,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 58
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 55
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 26,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 27,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 28,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 55
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 29,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 30,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 31,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 58
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 55
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 32,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 33,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 34,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 55
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 35,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 36,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 37,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 58
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 55
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 38,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 39,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 40,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 58
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 41,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 42,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 43,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 44,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 53
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 45,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 50
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 46,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 50
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 47,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 53
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 50
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 48,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 50
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 50
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 49,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 50
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 50
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 50,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 50
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 51,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 50
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 52,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 50
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 53,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 54,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 55,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 56,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 55
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 57,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 58,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 56
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 59,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 59
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 54
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 60,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 52
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 57
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 54
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 52
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        },
+        {
+          "frame": 61,
+          "own_axis_seat_contacts": [
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge axle -1",
+              "triangle_pairs": 47
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 -1",
+              "triangle_pairs": 63
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge bearing -1 1",
+              "triangle_pairs": 65
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge root bracket -1 -1",
+              "triangle_pairs": 8
+            },
+            {
+              "leaf": "Split pointed cap -1",
+              "hardware": "RI18 hinge root bracket -1 1",
+              "triangle_pairs": 8
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge axle 1",
+              "triangle_pairs": 47
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 -1",
+              "triangle_pairs": 65
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge bearing 1 1",
+              "triangle_pairs": 63
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge root bracket 1 -1",
+              "triangle_pairs": 8
+            },
+            {
+              "leaf": "Split pointed cap 1",
+              "hardware": "RI18 hinge root bracket 1 1",
+              "triangle_pairs": 8
+            }
+          ],
+          "opposite_hardware_contacts": 0
+        }
+      ],
+      "maximum_contact_envelope_radius": 0.02992379166246607,
+      "allowed_axis_seat_radius": 0.065,
+      "allowed_axis_half_length": 0.096,
+      "scope": "Integer cycle-frame triangle surface contacts within compact own-axis hardware seats; no continuous-time or contact-volume proof."
+    }
+  },
+  "maximum_bidirectional_surface_error": 1.1944189282075968e-07,
+  "protected_surface_error": 2.9802322387695312e-08,
+  "preserved_lower_casing_surface_error": 0.0,
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "imported_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "native_world_bounds": [
+    -0.8600000143051147,
+    -0.8600000143051147,
+    0.0,
+    0.9420199394226074,
+    0.8600000143051147,
+    1.9747313261032104
+  ],
+  "triangles": 54796,
+  "meshes": 38,
+  "material_count": 11,
+  "embedded_images": 8,
+  "clips": [
+    "MissileDomeCycle",
+    "MissileDomeDescriptorStates"
+  ],
+  "renders": {
+    "native-front-quarter.png": "92d3b702153b0e72fef5805cc2f9baebb87d1d4540bdc4136898166205132d50",
+    "native-front.png": "3557801b1a1843eecb6de324a87fb15074e32cfcf209c06b7d72b5a1afcb2070",
+    "native-rear-quarter.png": "abcf5b5a54cf8410f14aaa59e7eff385e10d7118e58066dd87991ea648c9f280",
+    "native-half-open.png": "3ab379d2dc9d17d5fd377b56f0e099a0c7693a3772586997163ff2e3e67b8496",
+    "native-open.png": "541415fcb8c1e5b7b8777f596c47b0a768a8d7423c239a44e9d9233a4ec6d713",
+    "native-open-top.png": "45a458e2e6dbfec0a077b5377445360322e8c1dc58297c5908e7e5e420371b1a",
+    "native-descriptor09.png": "3ab379d2dc9d17d5fd377b56f0e099a0c7693a3772586997163ff2e3e67b8496",
+    "native-descriptor16.png": "541415fcb8c1e5b7b8777f596c47b0a768a8d7423c239a44e9d9233a4ec6d713",
+    "imported-front-quarter.png": "622df45c43cd805949249064fd4d917413fcf7b59457ca2278fed455f5d1f75a",
+    "imported-front.png": "b851489140365c304dd688173efb79f311e03dc117eb5fac6c812650bffdda1c",
+    "imported-rear-quarter.png": "60873a0e3c5b6333853cbec5ee9f86e8c6c86e9c69c00cde79575499d17d3871",
+    "imported-half-open.png": "4e36720ec3254dc7e1764071bc69dab8e4dc39fe8e0e91406da37f377fbf3eaf",
+    "imported-open.png": "bddfeea6429728650b3f74ee173722e59636531075cec6d6df77c4fc2bb8841f",
+    "imported-open-top.png": "1c7db0ef842060888a59bef30c9bed1319ef802d9b6a02f1a57ac4d388e620a0",
+    "imported-descriptor09.png": "4e36720ec3254dc7e1764071bc69dab8e4dc39fe8e0e91406da37f377fbf3eaf",
+    "imported-descriptor16.png": "bddfeea6429728650b3f74ee173722e59636531075cec6d6df77c4fc2bb8841f"
+  },
+  "sampled_motion": {
+    "cycle_frames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "descriptor_domain": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "leaf_old_body_surface_intersections": false,
+    "maximum_axle_leaf_distance": 0.009805981069803238,
+    "maximum_cycle_matrix_error": 5.960464477539062e-07,
+    "maximum_descriptor_matrix_error": 3.762543201446533e-07,
+    "native_descriptor_offset": 0.0,
+    "imported_descriptor_offset": 1.0,
+    "continuous_sweep_proven": false,
+    "descriptor17_composition_verified": false
+  },
+  "final_artistic_acceptance": false,
+  "game_client_integration": false,
+  "scope": "Full bind-geometry/maps and sampled rigid transforms; own-axis hardware seat contacts classified in integer cycle frames; continuous-time sweep and final gallery delivery remain separate."
+}

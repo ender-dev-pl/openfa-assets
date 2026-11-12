@@ -1,0 +1,176 @@
+{
+  "issue": 265,
+  "revision": 2,
+  "culture": "rigellian",
+  "role": "terraform",
+  "status": "proposed-assets-awaiting-mechanics",
+  "legacy_unit": false,
+  "runtime_integration": false,
+  "mechanics_available": false,
+  "blueprint_registered": false,
+  "package_registered": false,
+  "binaries": {
+    "blend": "9798a55d80d3742c6600c19728c66d5045d60be3afd95a4900d83ded3f10e2d3",
+    "glb": "50e63b1542cfc8553237641d8a4bebabb693ef920d1bced1c0b615e4f5e0e4e6"
+  },
+  "author": "sources/tools/blender/proposals/author_rigellian_engineering.py",
+  "author_sha256": "8da636737af6866c1bc43b0c3f95d10745abdd20800a0af3b360b7152bd82b57",
+  "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
+  "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "refinement_helper": "sources/tools/blender/proposals/engineering_ship_refinement.py",
+  "refinement_helper_sha256": "1870515d9d565159d9162dd363be97510f69a65d429fec9d8b0af69e8704842c",
+  "concept": {
+    "culture": "rigellian",
+    "role": "terraform",
+    "concept_version": "v1",
+    "image": "sources/artwork/proposals/engineering-ships/rigellian/terraforming-ship.png",
+    "sha256": "68f774390225a65c2f7994a0175fd2d737db044e70ec984ccd271f817fa333af",
+    "prompt": "Use case: stylized-concept. A NEW utility SPACECRAFT for OpenFA, an isometric real-time strategy game, concept reference for an economical 3D game model. Strict complexity target: match the accepted simple Terran v3 reference, only 4\u00e2\u20ac\u201c6 large visual masses, a compact silhouette, a few broad colour areas, almost no small detail. Must remain recognizable at 64\u00e2\u20ac\u201c96 pixels wide. Clean solid beveled manufactured shapes, restrained late-1990s pre-rendered RTS sensibility, subtle material wear, legible soft studio highlights. Do not add complexity to make it look sophisticated.\nInput reference roles: image 1 is the ORIGINAL game's units of THIS culture: PRIMARY reference for palette, material character and broad cultural form language. It is not a literal geometry template. Image 2 is the accepted simplified TERRAN reference: ONLY a limit on complexity, framing and surface-detail density, never a palette or faction identity reference. Do not recolour a Terran model. Design a new industrial silhouette fitting this culture and the role.\nExactly ONE complete spacecraft, elevated front three-quarter view, centered with generous margins, all parts visible. Uniform pure black backdrop without ground, environment, people, extra craft or cast floor shadow. No text, labels, logos, watermark, contact sheet, weapons, wheels, tracks or walking legs. Clearly space/hover capable. Minimal functional moving parts and large uninterrupted panels; idle tools. Subtle seam dirt, contact scuffing, a few worn paint edges, small dents suited to material. NO exposed cable bundles, pipes, rivet fields, fine greebles, decorative antennas, rails, shelves, cargo clutter, cockpit interior, myriad lights, intricate engraving, cinematic photoreal mechanical complexity or glowing magical effects.\nCulture: rigellian. Elegant satin silver/pale blue-green alloy, muted green broad panels, small warm yellow-gold caps and copper connection rims, following the actual reference ships. Smooth balanced ergonomic shapes; advanced precision expressed through simplicity. No Terran red stripes, no crystals.\nSubject: TERRAFORMING SHIP. A heavy low broad OVAL engineering vessel with a single smoothly curved central hull and two small flush side propulsion lobes. One low gold sensing cap on top. ONE large U-shaped silver-and-copper field-grading emitter under the front edge, its two thick tips enclosing the terrain-working gap. This simple ventral industrial tool is a new OpenFA interpretation of precise gravitic surface leveling. The one emitter, not a bulldozer attachment, is its distinguishing feature. 5 large masses maximum; no multiple rings or strut frameworks.",
+    "references": [
+      {
+        "identity": "rigellian-00.png",
+        "sha256": "36c3465a6fb12b8b053a912e551848ce4192c541dbdb6c8b0e7a522c846a45bf",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      },
+      {
+        "identity": "terraforming-ship.png",
+        "sha256": "1acbfc30f208bded5148fd6cd47333c67e6f7e7e9671c5256ddda9b3643905e0",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      }
+    ],
+    "origin": "Supplied and selected ImageGen concept;no new generation performed by this modeling task",
+    "legacy_unit": false,
+    "runtime_integration": false,
+    "mechanics_available": false
+  },
+  "triangles": 25696,
+  "triangle_budget": 40000,
+  "meshes": 73,
+  "materials": 13,
+  "maps": {
+    "sources/materials/proposals/engineering-ships/rigellian/abraded-tool-steel-normal.png": "6d8bd64a1a502e2178ea472f63e79e54557cc4c784f9cd25b0b5b92e1eb694bb",
+    "sources/materials/proposals/engineering-ships/rigellian/abraded-tool-steel-orm.png": "11794cf55c46a5d3fcb36805752c3bff29c0fd965bf285ba9c202671224eed18",
+    "sources/materials/proposals/engineering-ships/rigellian/abraded-tool-steel.png": "94e72fcfcfbdb4c644939dc3440ac7f96b7c71750cd2b117f1f47c0bfb9acced",
+    "sources/materials/proposals/engineering-ships/rigellian/copper-normal.png": "9fc2f23e366ee9ae8cd0bb5d1d19792672c6f651f4915b2d39f3aee52b08b635",
+    "sources/materials/proposals/engineering-ships/rigellian/copper-orm.png": "b7b6904282935b368747c1aae0194fdcab4e06aa1d99c98fc2b58e21df506fef",
+    "sources/materials/proposals/engineering-ships/rigellian/copper.png": "4ee521cf9bbaf2f36d804b38d7e3268d3fec3c6999fa59f1acbb0af6e822f8d0",
+    "sources/materials/proposals/engineering-ships/rigellian/crew-visor-normal.png": "d13cda05646c57100b9149826335d5940cb31e6878f947a9b729a24509823f26",
+    "sources/materials/proposals/engineering-ships/rigellian/crew-visor-orm.png": "ef49184fcfc5ca2244ddd7be33c1e94a152026c459e98edc575403bb7ff1de21",
+    "sources/materials/proposals/engineering-ships/rigellian/crew-visor.png": "5f1ae584d209f56e1de2aa596beca5febd3b77bc0a6f76021a101ba2c4d39ccd",
+    "sources/materials/proposals/engineering-ships/rigellian/crown-gold-normal.png": "6db183dcee546f61c0a8b57d55be7af7b936f5e73cfcbc4282ed85e8c548346f",
+    "sources/materials/proposals/engineering-ships/rigellian/crown-gold-orm.png": "1fe3fc5b991f134df9e9e195cdd80925e35e8c999c6b058625be275610f1b129",
+    "sources/materials/proposals/engineering-ships/rigellian/crown-gold.png": "314b0371997739fcfd99898d4145c05637117afad9814ce657142eebc3b8fa85",
+    "sources/materials/proposals/engineering-ships/rigellian/gold-normal.png": "8370c15f4a4d01b7d659ff916fd58bb4c340dcf194fbe4f2691ff8bd64ee3c1e",
+    "sources/materials/proposals/engineering-ships/rigellian/gold-orm.png": "7ac877b79e19f43ae81778f23c4c1b5e8e58e791606138562c4131ec22aad5b6",
+    "sources/materials/proposals/engineering-ships/rigellian/gold.png": "cec8b29e4983306285b268b8d5574d160ca677557061b2916ff046912c53ae7d",
+    "sources/materials/proposals/engineering-ships/rigellian/lower-slate-normal.png": "2e29eefa832f8a95aaecaa899fb86dd4b5912e3bcd88d9579ee66e2f1b1a56bc",
+    "sources/materials/proposals/engineering-ships/rigellian/lower-slate-orm.png": "d3d4e74bca80074a3002c4c127997beb73e12753b0d57e73dc669bb1063cf302",
+    "sources/materials/proposals/engineering-ships/rigellian/lower-slate.png": "64c8dc0979fbc32eb39ec7446269922eea1576fb315ca1c43d82ec94bea61ead",
+    "sources/materials/proposals/engineering-ships/rigellian/machined-alloy-normal.png": "1258ff70677074d1da860f4f1dd2a5d4cb858869630260b21ea74f81adf46e2a",
+    "sources/materials/proposals/engineering-ships/rigellian/machined-alloy-orm.png": "70e5254364d516711c2b7f4bfe4a55799a53f8e097b4ef9a3b91d857ff92052c",
+    "sources/materials/proposals/engineering-ships/rigellian/machined-alloy.png": "2733d3d472aa43c8fb935eab3b6d06a9d44515aff0d2b0cbf05158cc5516c058",
+    "sources/materials/proposals/engineering-ships/rigellian/recess-normal.png": "d0113ed231f8f848ca403a10af7b1d93630513124feca300cfd3459c8607aff5",
+    "sources/materials/proposals/engineering-ships/rigellian/recess-orm.png": "c10c0a82439aea6f2544c980c1affa1e81c2e8db26dcb4d6ebdc4c0974ab1353",
+    "sources/materials/proposals/engineering-ships/rigellian/recess-seal-normal.png": "4e692fa0473a933615bbda9a3104aae9f3cfc6086a82a0ed4e6a43e5f1fb880c",
+    "sources/materials/proposals/engineering-ships/rigellian/recess-seal-orm.png": "f0719e16b89a6c7b31f8b26df0dbac4d3fffa6eb2b8866309f6e33dd47da2d49",
+    "sources/materials/proposals/engineering-ships/rigellian/recess-seal.png": "5cb95391956183f9fdeb3a3a9705346639bb2025feaee9221fc7914387b6a9f0",
+    "sources/materials/proposals/engineering-ships/rigellian/recess.png": "83d7781c4595fd00bef6ce824afa08d4bfbbad9bff9e3e8c02162f6a9b425da4",
+    "sources/materials/proposals/engineering-ships/rigellian/sage-normal.png": "eb6e9d57f49e1cd3e1b6b9bce71747d6d99194e99b7a53277ab693eaff79b5b7",
+    "sources/materials/proposals/engineering-ships/rigellian/sage-orm.png": "acb8b766955542839e91a1f3871eb5352924e306cad6f234e7f1d87de4057aea",
+    "sources/materials/proposals/engineering-ships/rigellian/sage.png": "e6ec50adf2d3ae6bb51d5e0a91f7638fb896cfa90a6033abc0c41b0d2740e13f",
+    "sources/materials/proposals/engineering-ships/rigellian/silver-normal.png": "1309cd6bddca01aaf8e65dc71dc3e2614c87dd0b027d14f9ef0fa2461ecb15d2",
+    "sources/materials/proposals/engineering-ships/rigellian/silver-orm.png": "d978f1f3cee9deb9916a33684370b17dfdc0710b4e89dd796adc0e0a3a718b6c",
+    "sources/materials/proposals/engineering-ships/rigellian/silver.png": "6ff7add98c4aba52eba231286221c5f59270705e8a85a297fe38a02c3b406d3b",
+    "sources/materials/proposals/engineering-ships/rigellian/slate-shell-normal.png": "1b174e2e8c2213c61735027534959e4698c0893e1e1e6b6fbe631947fb51d71b",
+    "sources/materials/proposals/engineering-ships/rigellian/slate-shell-orm.png": "2e341e2294e7dd337eee62038a0f1882d3fb915ec192e8e7ac0656db85f76a55",
+    "sources/materials/proposals/engineering-ships/rigellian/slate-shell.png": "ad691b9ddd66d5d587c0f9d0241706a7a15238aa0c0dd0d68c14895427c53075",
+    "sources/materials/proposals/engineering-ships/rigellian/ventral-copper-normal.png": "e0d638eb24157a0875c601c4d5735a123b6261fffc632c452316681f9b636358",
+    "sources/materials/proposals/engineering-ships/rigellian/ventral-copper-orm.png": "edc5e7b37a302ad90911e7ad85bae8c44f12e1f834398e484ed09137ca743f06",
+    "sources/materials/proposals/engineering-ships/rigellian/ventral-copper.png": "6123b64a714b0bc8d21783ea2f19d586e0abe6ac4ba3e893c3d6b5a309a76757"
+  },
+  "bounds": [
+    -1.4600001573562622,
+    -1.9200000762939453,
+    -0.20499999821186066,
+    1.4600000381469727,
+    1.5478750467300415,
+    0.9399999976158142
+  ],
+  "joints": [
+    "PrecisionHornPivot-1",
+    "PrecisionHornPivot1"
+  ],
+  "clips": [
+    {
+      "name": "ToolOperation",
+      "fps": 24,
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 4,
+      "motion": [
+        {
+          "joint": "PrecisionHornPivot-1",
+          "path": "rotation_euler",
+          "axis": 2,
+          "keys": [
+            [
+              1,
+              0.0
+            ],
+            [
+              25,
+              -0.12
+            ],
+            [
+              49,
+              0.0
+            ],
+            [
+              73,
+              0.041999999999999996
+            ],
+            [
+              97,
+              0.0
+            ]
+          ]
+        },
+        {
+          "joint": "PrecisionHornPivot1",
+          "path": "rotation_euler",
+          "axis": 2,
+          "keys": [
+            [
+              1,
+              0.0
+            ],
+            [
+              25,
+              0.12
+            ],
+            [
+              49,
+              0.0
+            ],
+            [
+              73,
+              -0.041999999999999996
+            ],
+            [
+              97,
+              0.0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scale": "Authored proposal units;not calibrated meters/cells or production/hangar clearance",
+  "notes": [
+    "Canonical-style cycle 3:formed pressure-skin sections,panoramic crew visor and shoulder seal complement canonical hidef slate-jade,pale alloy,ochre and copper palette;seated service hatches,cooling louvres and tool covers match functional detail level while preserving quiet formed skins and articulated tools.",
+    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.",
+    "Revision 2: defined hull planes,controlled edge radii,weighted surface normals,portable colour/ORM/tangent normal maps,material wear and attached mechanical detail."
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "issue": 1115,
+  "id": "openfa:ship/braccatian/widowmaker",
+  "category": "ships",
+  "culture": "braccatian",
+  "blend": "docs/assets/reconstruction/ships/braccatian/widowmaker/model.blend",
+  "source_files_sha256": {
+    "authored-gold-colour.png": "54e6eff4a73f4ae72bd525445d77ae14970217e18c694263882e0cdb0a56b45f",
+    "authored-gold-roughness.png": "cd4bd4bd14cbb4ce844bb7df76bb9a77b4eb9ca8477295547c82ba056b57cd2c",
+    "authored-hull-colour.png": "ee87e9da04590bea4a529b87da155fd625a2398eaa968be9ae268ce86bbecc3f",
+    "authored-hull-roughness.png": "cd4bd4bd14cbb4ce844bb7df76bb9a77b4eb9ca8477295547c82ba056b57cd2c",
+    "authored-slate-colour.png": "6f58163605e6734e3c62478e4320dca3402e5db2e5b24097ec29bf8368495031",
+    "authored-slate-roughness.png": "cd4bd4bd14cbb4ce844bb7df76bb9a77b4eb9ca8477295547c82ba056b57cd2c",
+    "authored-wear.json": "2fee57cb05203f1229a95b966b04d36650acf6d6ba40edc1514a946bbab5b237",
+    "front-quarter.png": "92afd9f4010b8b6cccf5212126da9ae4665087997e2b753f57e61f3072189ee5",
+    "front.png": "13bf07934bf3520fd6c53cd7ba40b5dd143a09682867ba5874060c5a3de73a9c",
+    "gallery.png": "00cd4e497424c95cbbdb9e7c07dcc9ac1936fa83224816aeda41a3a32a89baf3",
+    "hull-detail.png": "920a797a487da5144cfc51d4c85c930e22eefe8f54df013a460d2037c6d05456",
+    "imported-glb-front-quarter.png": "c616328b73f8f73798c08db2fceb85cf79971c7acce5f60880f908886263b663",
+    "imported-glb-hull-detail.png": "e85f19b52b6405ff079258a624a078cc38d231ad8fdb8ee5bb7d94d1a04505f7",
+    "model.blend": "7f29a9565811e7b739efec0e3ce44b39842889b60409dbeb9cbd9e21add9bad8",
+    "model.glb": "2379bcc3b60f8ec987628bf311f1a8aeff2455734938343f5da13d1b736b46a1",
+    "model.json": "fa68d146c181c3a2f6f77490436bae8fcd3b5865d59fccdb0144cdfe02232fd6",
+    "rear-quarter.png": "82e985d72573389061e4187033a7c395bf7b3d48e0af24cfa9c768f531a8840d",
+    "render-review.json": "36c9b08411fe3e962567ff856138ab4ef701cbb1bb97ee4877d02d3e421bcf92",
+    "side.png": "a518d97924b20b663fa840cdb52b537aa2ff347d3265232e91ca368c4099052b",
+    "technical-review.json": "d952b121b447d520325584b8edb3468cd7337e2e4aec3089ed51fca02c3e452d",
+    "top.png": "5839ceee5367a87d2d9edd05641b93d8d6c71fd349a5c93295f146906b94b68b",
+    "underside.png": "20197463e9ecc4be0959efaeb90b56c6c894271412071970377caefd03838fc4"
+  },
+  "metadata": "model.json",
+  "catalogue": {
+    "hardpointSlots": 4,
+    "defaultHardpointIds": []
+  },
+  "declared_sockets": {
+    "AlignmentForward": {
+      "position": [
+        0,
+        -2.14,
+        0
+      ],
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "status": "authored-uncalibrated"
+    }
+  },
+  "unresolved_metadata": [
+    "Final artistic acceptance",
+    "Runtime scale/orientation and 3D hardpoint calibration",
+    "Damage/operational variants; no mechanisms/timing established"
+  ],
+  "native": {
+    "root_present": true,
+    "meshes": 48,
+    "helpers": {
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6292068494294654e-07,
+              -1.0,
+              -2.140000104904175
+            ],
+            [
+              0.0,
+              1.0,
+              -1.6292068494294654e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -2.140000104904175,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -1.6292068494294654e-07
+          ]
+        }
+      },
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/braccatian/widowmaker",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "imported": {
+    "root_present": true,
+    "meshes": 48,
+    "helpers": {
+      "PlacementRoot": {
+        "parent": null,
+        "properties": {
+          "catalogue_id": "openfa:ship/braccatian/widowmaker",
+          "forward_axis": "local -Y"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "AlignmentForward": {
+        "parent": "PlacementRoot",
+        "properties": {
+          "forward_axis": "local +Z",
+          "calibration": "authored interpretation; not recovered 3D mount"
+        },
+        "root_frame": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -3.029462618542311e-07,
+              -0.9999999403953552,
+              -2.140000104904175
+            ],
+            [
+              0.0,
+              0.9999999403953552,
+              -3.029462618542311e-07,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "position": [
+            0.0,
+            -2.140000104904175,
+            0.0
+          ],
+          "forward": [
+            0.0,
+            -1.0,
+            -3.0294629027594056e-07
+          ]
+        }
+      }
+    }
+  },
+  "export_comparison": {
+    "missing": [],
+    "extra": [],
+    "common": {
+      "AlignmentForward": {
+        "matrix_error": 1.400255769112846e-07,
+        "parent_equal": true,
+        "properties_equal": true
+      },
+      "PlacementRoot": {
+        "matrix_error": 0.0,
+        "parent_equal": true,
+        "properties_equal": true
+      }
+    }
+  },
+  "native_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -2.14,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 1.0490417468034252e-07,
+      "forward_error": 1.6292068494294654e-07
+    }
+  ],
+  "imported_declared_socket_checks": [
+    {
+      "name": "AlignmentForward",
+      "declaration": {
+        "position": [
+          0,
+          -2.14,
+          0
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "status": "authored-uncalibrated"
+      },
+      "present": true,
+      "position_error": 1.0490417468034252e-07,
+      "forward_error": 3.0294629027594056e-07
+    }
+  ],
+  "source_files_unchanged": true,
+  "final_visual_acceptance": false,
+  "scope": "Helper transforms at frame 1 and authored declarations only. Names, counts and 2D UI coordinates do not establish calibrated slot assignments or a mating interface."
+}

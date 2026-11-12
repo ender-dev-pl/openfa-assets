@@ -1,0 +1,101 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/051",
+  "concept_requests_used": 2,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri12-review-2.png",
+    "sha256": "98c95a46fa8dae2da67fd09dadd46b3612d6dc6f4040d237cd8838cc1ad9fa03",
+    "prompt": "sources/docs/reconstruction/models/ri12-concept-prompt-2.txt",
+    "verdict": "Slender stepped mast, copper neck, red side housing and jade palette agree with legacy. Concept thickens pad/rim and changes round brass fitting to an oblong plate; reject these anatomy changes and retain established profiles."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "prompt": "sources/docs/reconstruction/models/ri12-concept-prompt-1.txt",
+      "outcome": "No image returned; built-in output moderation rejected the request.",
+      "request_id": "3d1d9275-fe39-45e8-b3af-f48371d525a9"
+    },
+    {
+      "attempt": 2,
+      "outcome": "Image returned and reviewed."
+    }
+  ],
+  "legacy": {
+    "body_sha256": "f4a472e94c9063ae3ebb0bee1fcca78cfc09eb73319e7fd9f1f871e92350a72e",
+    "catalogue_colour_phase20_sha256": "0a31fb0a987b7b517a1088318f3307727130ed6488d43ed23fd18a87e750be8a",
+    "functional_record": 912,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "33d7d56d697ccbca932a6713c2751cbcdc9824164b8fa24f153278ef20346f98",
+    "glb": "0f72af1a986ea5582ce8cfec50badf614ffbd4376c8d37dcd01bd1252c033307"
+  },
+  "runtime_report_sha256": "21e157e8d3b157a956fd37e58e59362f89992d04bae9bbc27922d306fa268d71",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.00048149956597222225,
+        0.0004323323567708333,
+        0.00045945909288194444,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.005307617552515511,
+        0.004765642520744562,
+        0.005045974433729536,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 48
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.0004933675130208334,
+        0.00039503309461805556,
+        0.0005103217230902778,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.00639813552614221,
+        0.005100919044896882,
+        0.006618002726353283,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 47
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.00047980414496527775,
+        0.0004899766710069445,
+        0.0005137125651041666,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.005516354138240224,
+        0.005613816225488285,
+        0.005886710069782855,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 51
+    }
+  },
+  "feedback": [
+    "Actual independent GLB retains the low stepped circular pad, narrow pedestal/mast, copper spindle with dark/red module, enlarged head and straight segmented terminal seen in legacy.",
+    "Six protected profile/spindle components retain exact evaluated geometry, five measured dents, all colour/roughness pixels and twelve planar cap UV surfaces. Reduction affects only the small cast fitting bezel; all thirty-two flange-root attachment samples remain valid.",
+    "Concept has a thicker base rim and oblong fitting absent from the established source-guided model. These changes are rejected. Existing wear is subtler than the concept and remains readable in close views.",
+    "Catalogue phases reveal/highlight the same static tower. No mechanical cycle is established; shared RIS2 construction remains separate. Exact hidden sections, underside and ambiguous pedestal shadow remain inferred rather than recovered.",
+    "Saved-native and independent GLB views have exact alpha and threshold silhouettes. Recorded RGB differences are measured below; game scale, Android performance and final artistic acceptance remain unproved."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

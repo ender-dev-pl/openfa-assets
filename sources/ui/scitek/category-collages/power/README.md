@@ -1,0 +1,7 @@
+# Sci-Tek power category (SCITEKC frame4)
+
+Actual legacy subjects: Hi-Energy Power Stores (research11, left) and Powerplant (research21, right). Canvas80x64; occupied rectangle(9,5)..(73,55), subject rectangles recorded in layout.json. Sources are frozen at frame1 with uniform placement, retained geometry/UV data and neutral presentation materials. The Powerplant input is the authoritative shared refined object, not a separate research-only solid. The result contains131meshes.
+
+Use category-native.png and category-4x.png as the static runtime category icon. The editable collage and its GLB are authoring/interactive-gallery presentations; do not package this full geometry as another gameplay Powerplant or energy-store model. Gameplay, building catalogue and research21 share the canonical Powerplant GLB in sources/objects/terran/powerplant/refined. Energy stores are a research-specific device without an established standalone gameplay counterpart in the current legacy mapping.
+
+Approximately80% visual correspondence is targeted, not pixel fidelity. The source-bound provenance records model, manifest and builder hashes. Native/reload, independent full/isolated GLB imports, matrix comparisons and raster tests passed. Final PNGs are exact grayscale with alpha. Client/GPU acceptance remains pending. See ../README.md for build/verification commands. Original reference pixels remain private.

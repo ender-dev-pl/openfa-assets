@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/114",
+  "binaries": {
+    "blend": "96a826bd961a184e85aea0d903424dd591faf175841d3b16cc8aa206f501580b",
+    "glb": "2bdbb4f8d77b74b6cdb887d962272e3a05c872efa6bc696d91274a8fe370408b"
+  },
+  "runtime_report_sha256": "b5be2f95d6100cc2d3ee05c3a0952d4bfbe593cd51558f56976e02065f094e63",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00011923498831497114,
+      "margin": 79
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00018716077110237696,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 7.88295390048559e-05,
+      "margin": 95
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar08-review-1.png",
+      "sha256": "b3bc61a4aadc3da107bead4c04dc4d3c4585521ef82df9d1ba433e5deb314ec3",
+      "prompt": "sources/docs/reconstruction/models/ar08-concept-prompt-1.txt",
+      "feedback": "Selected low green metal dockyard shell with broad shallow contour tiers,four copper-base/amber-top front fittings in two pairs,one central copper front inset and two small dark roof points. Source controls counts/arrangement;hidden bunker/shipbuilding spaces and hardware sections interpreted."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "f5d9c9a32fab7c9dd7de5fda6561534fc80ad84075eee74de112e1d31d8fe55c",
+        "glb": "f601eb5a1ceade96d0e0077354ef44ceae8d5b276d7b05769ca244e3ca7536b7"
+      },
+      "runtime_report_sha256": "9d5211ab503d6e423cee5a509444e73102d0288286b62845e401894a07c22b49",
+      "status": "revision_required",
+      "finding": "Actual whole legacy/concept/GLB and front/rear/detail review preserves source fitting counts/arrangement,but upper shell has radial fan-shaped reflection patches. Need actual diagnostic separating normal-map tangent distortion from mesh/custom-normal geometry before acceptance.",
+      "action": "Render one read-only diagnostic with shell material normal-map strength zero using same actual Blend/camera. Preserve geometry/maps and compare the real image before choosing source correction."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "96a826bd961a184e85aea0d903424dd591faf175841d3b16cc8aa206f501580b",
+        "glb": "2bdbb4f8d77b74b6cdb887d962272e3a05c872efa6bc696d91274a8fe370408b"
+      },
+      "runtime_report_sha256": "b5be2f95d6100cc2d3ee05c3a0952d4bfbe593cd51558f56976e02065f094e63",
+      "status": "agent_review_accepted",
+      "finding": "Actual final whole legacy/concept/imported GLB and front/rear,both fitting/roof detail views reviewed. Four copper-base/brass-top fittings remain fully readable around central copper point;two small dark roof points and broad low green contour shell retain source arrangement. First pass upper radial fan shading diagnosed by two actual read-only renders:normal disabled unchanged,uniform material removes fans. Second source revision attenuates broad U-dependent paint/roughness variation near upper cylindrical V and uses periodic U cloud/stain terms;actual final renders show fan removal without geometry change. Three small physical chips,two shallow dents,fine paint scratches/tarnish retained. All15native/import meshes closed positive,all6decodedmaps equal,maxsurfaceerror6.006850128414953e-8. Actual four sleeve/body and four brass/copper overlaps,three inset/body/clear rim checks pass. Frozen old pair unchanged.",
+      "action": "Accept agent source/concept/native/import GLB asset review. Hidden bunker/shipbuilding engineering,sections and metric dimensions remain interpreted. PB25 Terran crane/gates do not establish an AR08 operating cycle;static source. Client scale/state/shaders,Android performance and final user artistic acceptance separate.",
+      "diagnostic_report_sha256": "a063cd09f5f609cc503bc0aa13947fa37dc9faca448b534334c11ddf515931a0"
+    }
+  ],
+  "final_review": "Actual source/concept/imported GLB comparison retains low green dock shell with broad shallow contour levels,four copper-base/brass-top front fittings in two pairs,one copper inset between pairs and two small dark roof points aligned fore/aft. Actual fitting/body and top/sleeve overlap,inset/body and clear annular centre checks pass;native/imported positive closed surfaces and decoded textures agree;whole/front/rear/detail renders inspected.",
+  "limitations": [
+    "Exact hidden bunker/shipbuilding spaces,hardware sections and metric dimensions remain authored or unknown.",
+    "Generic PB25 crane/gates are Terran function context,not evidence for an AR08 operating cycle. Narrative command bunker alone does not prove another runtime capability.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

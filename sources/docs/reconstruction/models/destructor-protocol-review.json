@@ -1,0 +1,63 @@
+{
+  "issue": 248,
+  "id": "openfa:destructor",
+  "kind": "retrospective protocol completion, no geometry replacement",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/terran/destructor-review-1.png",
+    "sha256": "f5c49b204df4c362a8b0bac69795babdad027f1eee88ff9271d688db139d554b",
+    "prompt": "sources/docs/reconstruction/models/destructor-concept-prompt-1.txt",
+    "verdict": "Usable broad-form/material interpretation; not exact geometry authority. Exclude extra bow projections, small under-tab pods and merged aft shoulder interpretation."
+  },
+  "reference": {
+    "kind": "Actual original PS03.VID frames 0/15/30/45 cropped from existing private comparison; not generated reference",
+    "private_comparison_sha256": "014208a46b663b09c343d14d6ee96e0fa2366723bfda85dd5582b38dcafd8944",
+    "private_reference_sheet_sha256": "98910985a1985686865d7d85080582da4a64d3e8074bf3e1b9d05c5ac5b97dfb",
+    "legacy_pixels_published": false
+  },
+  "model": {
+    "blend": "sources/docs/assets/reconstruction/ships/terran/destructor/model.blend",
+    "glb": "sources/docs/assets/reconstruction/ships/terran/destructor/model.glb",
+    "binaries": {
+      "blend": "55409a2c0fb93eb0bf886fb4b116d24a5c5f05f336cbd5a68a0a3a7c6d53bbe9",
+      "glb": "72b507f43409883797fc4ace51032b064fc54f590ba87ba8719488b8d709f847"
+    },
+    "model_bytes_unchanged": true,
+    "triangles": 38424,
+    "mesh_count": 57
+  },
+  "runtime": {
+    "report": "gallery/media/docs/assets/reconstruction/evidence/destructor-protocol/runtime-review.json",
+    "sha256": "8c29658b15a50bdf75442cf913ad43013a53d0e7ca8f1c939c1850204271400d",
+    "native_import_pixel_comparisons": {
+      "front-quarter": {
+        "mean_absolute_rgba_255": [
+          0.0392626953125,
+          0.0385888671875,
+          0.0437744140625,
+          0.0
+        ],
+        "binary_silhouette_equal": true
+      },
+      "rear-quarter": {
+        "mean_absolute_rgba_255": [
+          0.08194580078125,
+          0.09627197265625,
+          0.12310791015625,
+          0.0
+        ],
+        "binary_silhouette_equal": true
+      }
+    }
+  },
+  "feedback": [
+    "Legacy and concept agree on short broad wedge, paired rounded aft structures, red side strips and aft patches, grey-violet finish and small outboard tabs.",
+    "Existing canonical GLB preserves these principal elements; its aft shoulders are flatter/narrower, red aft patches smaller, and raised dorsal grille differs from the reference recess.",
+    "Existing low-detail surfaces remain less developed than the concept. User canonical Terran decision is preserved; this review does not authorize a replacement or claim final artistic parity.",
+    "Concept adds non-authoritative extra bow projections and small under-tab pods; these must not become recovered-legacy claims."
+  ],
+  "final_artistic_acceptance": false,
+  "client_integration_verified": false
+}

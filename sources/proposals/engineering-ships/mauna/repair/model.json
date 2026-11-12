@@ -1,0 +1,245 @@
+{
+  "issue": 265,
+  "revision": 2,
+  "culture": "mauna",
+  "role": "repair",
+  "status": "proposed-assets-awaiting-mechanics",
+  "legacy_unit": false,
+  "runtime_integration": false,
+  "mechanics_available": false,
+  "blueprint_registered": false,
+  "package_registered": false,
+  "binaries": {
+    "blend": "fda0d0f16d1a0c3dadda3f483f7b9d5b158c6f50c251d43e835f810f38108641",
+    "glb": "c88e790c22b797ac113a8f2fdd65dd08f5c9383c7c0e1d9f9292a41cd49c3c63"
+  },
+  "author": "sources/tools/blender/proposals/author_mauna_engineering.py",
+  "author_sha256": "5c0ff51ebbba6815792779105011fd83b19de03be0eff41abecd451b00fef5f2",
+  "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
+  "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "refinement_helper": "sources/tools/blender/proposals/engineering_ship_refinement.py",
+  "refinement_helper_sha256": "1870515d9d565159d9162dd363be97510f69a65d429fec9d8b0af69e8704842c",
+  "concept": {
+    "culture": "mauna",
+    "role": "repair",
+    "concept_version": "v2",
+    "image": "sources/artwork/proposals/engineering-ships/mauna/repair-ship.png",
+    "sha256": "fd3aa41b3e473f860116ca7f010d29e2a39c7511e8fc92490d503f9d51c8fc06",
+    "prompt": "Use case: stylized-concept. Create ONE NEW utility spacecraft for the OpenFA isometric RTS, as a simple practical reference for a 3D GAME UNIT. Both supplied images are actual existing 3D SHIPS OF THIS CULTURE from the gallery. Use their characteristic material finish, colour distribution, structural vocabulary and component integration. This should belong naturally beside them. Do not copy weapons or recreate either reference unit. Mechanisms for the new engineering role are authored OpenFA extensions.\nCritical design target: a clear compact game silhouette at 64-96 pixels wide; roughly 4-7 major masses, only a few moving parts and large quiet surfaces. Simple does not mean rounded toy. Keep the structural character of the supplied culture. Do not add miniature machinery, cabling, greebles, rivet fields, small vents everywhere, rails, ladders, antennas, cargo racks, light arrays, cockpit interiors or intricate ornament. Restrained game-render shading, big readable highlights; not a cinematic machinery illustration. No universal human construction-vehicle chassis, no compulsory twin side engine pods, no bronze nozzle rims unless present in the supplied faction references, no generic two front elbow-arms layout. Propulsion may be flush with the hull or integrated into supports.\nOne complete SPACECRAFT, isolated on perfectly pure black, elevated front three-quarter view showing its tool, all silhouette and tool extremities comfortably inside frame. Entire image is one individual deliverable, not a contact sheet. No terrain, floor, scenery, people, text, labels, logos, watermark, weapons, wheels, tracks, walking legs, smoke, sparks or fantastical floating parts. Subtle material-specific seam dirt, tool abrasion, a few edge scratches or small dents; preserve the faction's actual paint/alloy surface rather than applying uniform scratched grey metal to everything.\nMAUNA family from the supplied 3D ships: plain matte ash-grey slabs, layered straight rectangular masses, dark recessed slots, rare small muted rust-orange fittings. Stark unornamented manufactured metal surfaces with broad bevels, lower gloss and slightly rougher finish. Not uniformly shiny bare alloy. No red racing stripes, no bronze nozzle rings, no raised human vehicle cabin, no rounded external engine pods.\nSubject: REPAIR AND CONSTRUCTION-ASSIST SHIP. A small thick rectangular hovering base with TWO short vertical rectangular service columns rising at its rear, like simplified load-bearing modules of the referenced Mauna transport, but only two squat columns, not towers or buildings. A plain horizontal square crossrail joins them. One square sliding lifting clamp hangs at the front of the base, and one short welding head sits directly alongside it. Propulsion is a single dark slot across the rear face of the base with inset downward maneuver ports, not side engines. All plain matte grey with dark steel tool faces and one tiny rust-orange fitting. No glazed cab, no human robotic elbow arms. Compact blunt spacecraft, 5 major structural masses.",
+    "references": [
+      {
+        "identity": "gallery/media/objects/mauna/max-combat-craft-type-6/front-quarter.png",
+        "sha256": "2f2094dfc72566376c12259b7e9b02b1d7d5bc68ab64a94553e630c90b0cf28c",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      },
+      {
+        "identity": "gallery/media/objects/mauna/transportation-craft-type-3/front-quarter.png",
+        "sha256": "f12ad772154c0b157615ece34167bac305cc7c3d6f8b0c99ae8033f4d88da08b",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      }
+    ],
+    "origin": "Supplied and selected ImageGen concept;no new generation performed by this modeling task",
+    "legacy_unit": false,
+    "runtime_integration": false,
+    "mechanics_available": false
+  },
+  "triangles": 15340,
+  "triangle_budget": 40000,
+  "meshes": 87,
+  "materials": 8,
+  "maps": {
+    "sources/materials/proposals/engineering-ships/mauna/abraded-tool-steel-normal.png": "2a303d39ea533ba0d2bf292d74f851519f27e751e806aedf5014ac2e800cf755",
+    "sources/materials/proposals/engineering-ships/mauna/abraded-tool-steel-orm.png": "5e33208e7a00782d9dc1a82e962e5439cc2e96b51bee00bc4fbe997d2d3110ed",
+    "sources/materials/proposals/engineering-ships/mauna/abraded-tool-steel.png": "503be20add52875240e05def71ee7de218560e9f641fe89bf6ce34c15f67f9b4",
+    "sources/materials/proposals/engineering-ships/mauna/blue-grey-normal.png": "6b9ee9f680430eb6d706606b47edb87bd1a76e7a58e57140478ffe1aca204d39",
+    "sources/materials/proposals/engineering-ships/mauna/blue-grey-orm.png": "f04153b0dee00f6c509b2feba6d3e4d604f6fe1fa2c2437877974d8141f76d60",
+    "sources/materials/proposals/engineering-ships/mauna/blue-grey.png": "19c87761510ca4a77579a186d4da0c78e3e79c33509817294a1b34fb1beab5ee",
+    "sources/materials/proposals/engineering-ships/mauna/dark-recess-normal.png": "b8b2bd0ca512b6463674dccd6e2a70a28d754ced9e830b0f087549857ce0d9df",
+    "sources/materials/proposals/engineering-ships/mauna/dark-recess-orm.png": "001b6c301c388c4e33c9b1e881225ee77a130431242c880ff93b47e796299fa5",
+    "sources/materials/proposals/engineering-ships/mauna/dark-recess.png": "6029556d2d50d0f0ccdf91e536cc9f157441ee8e6dc392af7465240e0c5ddf52",
+    "sources/materials/proposals/engineering-ships/mauna/machined-alloy-normal.png": "75b4f517faff65399cd5dc912d0641321fb0f5bc4542e211e4d31dc6682a6f23",
+    "sources/materials/proposals/engineering-ships/mauna/machined-alloy-orm.png": "35b355e3f12cf77a0e118dcd565458bb86244b095035201ee8127252ff9f9f38",
+    "sources/materials/proposals/engineering-ships/mauna/machined-alloy.png": "64a21f635831ae5536f816d8bb0125c40a60212db5ab81ccda678db99fe2593f",
+    "sources/materials/proposals/engineering-ships/mauna/matte-grey-normal.png": "e7f8dc84b6b9c81dbd4524741b2547d3ba2f62f270c464ac08e1e102be8cca75",
+    "sources/materials/proposals/engineering-ships/mauna/matte-grey-orm.png": "85cb475ea8788f02ed213ef8693870f4375ec845acfb2c56112dadc9153e03a7",
+    "sources/materials/proposals/engineering-ships/mauna/matte-grey.png": "20516ffeb7b5ffb171fc9935d58ff847b4baa2a229b2b773686497c6274d263d",
+    "sources/materials/proposals/engineering-ships/mauna/orange-mark-normal.png": "a931c1afc5c9a412c5da6a543f1987781a18ebb4b7fc11eb32c49709bd0e2630",
+    "sources/materials/proposals/engineering-ships/mauna/orange-mark-orm.png": "0740f0a701ba1af8ac2cc2ebfe0c3e7eb24475e49935f182bc3ecee916543937",
+    "sources/materials/proposals/engineering-ships/mauna/orange-mark.png": "dc3d9d1b72a13b531a47d61665b10485b22d28392716e10c3da5b41e190d3f28",
+    "sources/materials/proposals/engineering-ships/mauna/pale-service-alloy-normal.png": "c445637bd23af95eaea4d368f171e18e26ff038aca46a51282d6c9da7e90b58f",
+    "sources/materials/proposals/engineering-ships/mauna/pale-service-alloy-orm.png": "53c6b25709074482760ba1ccfa6c872529709ffc430dc5bc936198101074ed80",
+    "sources/materials/proposals/engineering-ships/mauna/pale-service-alloy.png": "ae4b96e44549c8af4101b2415ba9c391a4d6e30c8d98924e60fe44608d2fb1d8",
+    "sources/materials/proposals/engineering-ships/mauna/recess-seal-normal.png": "fa2ff4441d38042354e5a738af9475264ec5146d79eb1c2b36b2205455474953",
+    "sources/materials/proposals/engineering-ships/mauna/recess-seal-orm.png": "a1350f3db30aa92e38df47fa4796b59a2768b5759ad42fa2968d44fc6e3f9a21",
+    "sources/materials/proposals/engineering-ships/mauna/recess-seal.png": "dec948c18499ba3d5c1a9ee80d7ef32aff71bf0119463772384d07d1a51311bd"
+  },
+  "bounds": [
+    -1.0390000343322754,
+    -1.658500075340271,
+    -0.08499997854232788,
+    1.0390000343322754,
+    1.274999976158142,
+    1.7549999952316284
+  ],
+  "joints": [
+    "MaunaServiceSlide-1",
+    "MaunaClampJaw-1",
+    "MaunaClampJaw1",
+    "MaunaServiceSlide1",
+    "MaunaServiceWrist"
+  ],
+  "clips": [
+    {
+      "name": "ToolOperation",
+      "fps": 24,
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 4,
+      "motion": [
+        {
+          "joint": "MaunaClampJaw-1",
+          "path": "rotation_euler",
+          "axis": 2,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              49,
+              0.26
+            ],
+            [
+              73,
+              0
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "MaunaClampJaw1",
+          "path": "rotation_euler",
+          "axis": 2,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              49,
+              -0.26
+            ],
+            [
+              73,
+              0
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "MaunaServiceSlide-1",
+          "path": "location",
+          "axis": 1,
+          "keys": [
+            [
+              1,
+              -0.7200000286102295
+            ],
+            [
+              25,
+              -0.8500000286102295
+            ],
+            [
+              49,
+              -0.8500000286102295
+            ],
+            [
+              73,
+              -0.7500000286102295
+            ],
+            [
+              97,
+              -0.7200000286102295
+            ]
+          ]
+        },
+        {
+          "joint": "MaunaServiceWrist",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0.12
+            ],
+            [
+              49,
+              0.12
+            ],
+            [
+              73,
+              0.03
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "MaunaServiceSlide1",
+          "path": "location",
+          "axis": 1,
+          "keys": [
+            [
+              1,
+              -0.7200000286102295
+            ],
+            [
+              25,
+              -0.8500000286102295
+            ],
+            [
+              49,
+              -0.8500000286102295
+            ],
+            [
+              73,
+              -0.7500000286102295
+            ],
+            [
+              97,
+              -0.7200000286102295
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scale": "Authored proposal units;not calibrated meters/cells or production/hangar clearance",
+  "notes": [
+    "Based on the selected supplied mauna concept;canonical-style correction with straight slab sides,grey top faces,stepped roof volumes and true recessed service slots. Tools retained;repair sliders position before independent jaws close,with a separate square-head wrist.",
+    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.",
+    "Revision 2: defined hull planes,controlled edge radii,weighted surface normals,portable colour/ORM/tangent normal maps,material wear and attached mechanical detail."
+  ]
+}

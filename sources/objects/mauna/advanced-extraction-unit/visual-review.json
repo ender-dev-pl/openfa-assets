@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/146",
+  "binaries": {
+    "blend": "f79ffe5494c010bbcadde62eab6ec77ed44a1024b39429a91117922a9a7be71a",
+    "glb": "1b2853898fb7b2d4036a544e98aaffb686b130459e3e0a5876f87aac068869bc"
+  },
+  "runtime_report_sha256": "e753dfa6968b14cf666de83e86513e034f7a9bc59a46a461746c4c4b024b3351",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 6.148548942449582e-05,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00012857781753130592,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 5.745365405239773e-05,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn17-review-1.png",
+      "sha256": "c3298299ade8d9b10717042688631b70eb6d5df6b8a36686b27c5e95c4c89cac",
+      "prompt": "sources/docs/reconstruction/models/mn17-concept-prompt-1.txt",
+      "feedback": "Selected after direct actual comparison with correctly paletted own B body1 and catalogue. Retains high rear-left inclined angular block, broad hooked red band, exactly two unequal brass posts, connected lower projecting body, exactly two low long parallel roof ducts with separate warm ends, four warm tall-front points, three low-front points, and two stacked pale end fields. No drill or generic Terran lattice foundation transferred. Source proportions and point placement govern; hidden walls, roof planes, socket depths, brass cross-sections and incidental chips are authored. No significant concept discrepancy currently requires a second generation."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "binaries": {
+        "blend": "91670dd65ff74ddc83b28c5ab8d0481bc0328e946776695e9d431c14085b8132",
+        "glb": "92bdca635e6ad368a99addb1f198fff9e126f95e41b8c9fb21ef4f18f3a99967"
+      },
+      "runtime_report_sha256": "d3dceeb78906e19d298b2788faba3335ab09707c2db2a3be9bc990e83dc1525e",
+      "finding": "Actual saved-native first whole render retains the source-led silhouette, red hook, two unequal brass posts, two ducts and all warm point groups, but the broad cast edges appear sharper and use marks weaker than in the reviewed concept. Technical tests passed after fixing the initial extrusion-axis defect; that earlier failed run is not a completed visual review.",
+      "action": "Soften the high cast block, duct and foot edges by 0.008 local units. Increase irregular cast stains and add sparse worn-through red paint pixels, retaining all source counts, proportions and quiet broad surfaces. Repeat full native/independent GLB checks and visual review.",
+      "accepted": false
+    },
+    {
+      "iteration": 2,
+      "binaries": {
+        "blend": "0821c71cb8df09721b62245872778864ef1915482c4b33b7a44168460fc6d72d",
+        "glb": "2326215302502702786fe73af5416829f1c23f08c81d059b954bac12cd4d0f6c"
+      },
+      "runtime_report_sha256": "680c269cccc78dacd54beedbd61207c5ad9fcc4480466801569cd317e595f33f",
+      "finding": "Actual independent-GLB duct/front/end-field close-up shows improved cast chamfers and used surface contrast, with all geometry tests passing. However, the two source-pale square end fields render too dark with the metallic material under the same review lighting.",
+      "action": "Use an opaque nonmetal pale-alloy surface for the end fields and their structural rib. Preserve the two real recesses, brass metal posts and all geometry. Verify the material property after native reopen and independent import and inspect all final views.",
+      "accepted": false
+    },
+    {
+      "iteration": 3,
+      "binaries": {
+        "blend": "0703bac3d6e65c141cc817e1ef388cd556adb91fe5b92c8c54417397a0b72e09",
+        "glb": "a6555993c7995722c631c17072e847a8d0aed87682393e637397eccc6793d299"
+      },
+      "runtime_report_sha256": "b173e2d6476e79d29be2ce6b11e46d6c4f8445ef2915f66f844bbbc95287a8ea",
+      "inspected": [
+        "All three native and independent imported whole views",
+        "Both close-ups",
+        "Actual technical edges",
+        "Combined source/concept/native/imported contact board"
+      ],
+      "finding": "The full source/concept/native/GLB board reveals that the red crown hook is still reduced to a straight roof strip and front frame. The corresponding source/concept shows an offset cross-stroke on the inclined roof and a short return into the right front stripe. The concept also resolves a small practical seating plinth under the two brass posts. Counts, maps, true recesses, emission, contacts and pale end fields otherwise pass.",
+      "action": "Replace the front red crossbar with actual offset cross-stroke and return on the inclined crown, retaining the two front downstrokes and foot stripe. Add a small grounded-in-roof seating plinth under the unchanged two unequal brass posts, deepen the high cast edge softening modestly, and rerun exact native/imported geometry and all renders. The plinth and exact hook depths are authored engineering resolved by the concept, not recovered measurements.",
+      "accepted": false
+    },
+    {
+      "iteration": 4,
+      "binaries": {
+        "blend": "bf20febedde0a9bad076410930aee64841658f5530e9fd7d10fd9e17bc835972",
+        "glb": "59fa661c51e05043dec807393455660e4a9349156f1b2034d3d512c8814b550e"
+      },
+      "runtime_report_sha256": "eb58aafa4c93f1e37ce8434bd08b328fabf2ddc8e943694383d2accda17bb8f6",
+      "finding": "The corrected roof hook and seating plinth match the distinguishing reference arrangement, but the actual independent GLB front-quarter render shows dark coplanar overlap patches at the separate red roof strips. Geometry counts and contacts alone do not establish a clean painted surface.",
+      "action": "Replace the three overlapping roof strips with one positive closed concave extrusion following the same inclined roof hook footprint. Retain three separate tower support witnesses on the single physical hook. Verify four actual red assemblies overall, unchanged point groups and all exact geometry/material/render checks.",
+      "accepted": false
+    },
+    {
+      "iteration": 5,
+      "binaries": {
+        "blend": "f79ffe5494c010bbcadde62eab6ec77ed44a1024b39429a91117922a9a7be71a",
+        "glb": "1b2853898fb7b2d4036a544e98aaffb686b130459e3e0a5876f87aac068869bc"
+      },
+      "runtime_report_sha256": "e753dfa6968b14cf666de83e86513e034f7a9bc59a46a461746c4c4b024b3351",
+      "inspected": [
+        "Own paletted surface body and enlarged catalogue",
+        "Selected actual ImageGen concept",
+        "All three saved-native and all three independent-GLB whole views",
+        "Both final close-ups and technical edges",
+        "Full source/concept/native/GLB contact board"
+      ],
+      "finding": "Accepted for agent source/concept review. The final roof hook is one continuous clean red surface with the source-specific offset cross-stroke and return, connected visually to the two downstrokes and foot stripe. High inclined grey-blue body, low projecting body, two parallel elongated roof ducts, two unequal brass posts on an authored low seating plinth, four tall-front/three low-front/two duct-end warm points, two stacked pale end fields and structural rib retain the characteristic source arrangement. Native and independent import whole/detail views agree; the pale fields remain readable and nonmetallic. Cast staining/pores, subtle spalls, worn-through red paint and tarnished brass remain restrained and legible at gameplay-sized presentation, without a dense panel grid. Technical edge views use this exact geometry.",
+      "runtime": {
+        "triangles": 1536,
+        "meshes": 12,
+        "materials": 6,
+        "embedded_images": 7,
+        "attachment_witnesses": 28,
+        "real_blind_fields": 6,
+        "maximum_bidirectional_surface_error": 1.6858739115832577e-07
+      },
+      "limitations": [
+        "Exact roof depths, hidden walls, cap/post cross-sections, seating plinth and cell-relative dimensions develop the concept as authored engineering, not recovered metrics.",
+        "The concept retains richer incidental rough damage; final geometry keeps broad practical Mauna surfaces and moderate texture costs. No numerical fidelity score or final user approval is claimed.",
+        "Own source has no operation overlays. Modest steady opaque point emission preserves source appearance, not recovered pulse/drill timing or client bloom.",
+        "Game scale/state mapping, shader appearance and Android performance require separate integration."
+      ],
+      "accepted": true,
+      "final_user_artistic_acceptance": false,
+      "game_client_integration": false
+    }
+  ],
+  "final_review": "Accepted for agent source/concept review. The final roof hook is one continuous clean red surface with the source-specific offset cross-stroke and return, connected visually to the two downstrokes and foot stripe. High inclined grey-blue body, low projecting body, two parallel elongated roof ducts, two unequal brass posts on an authored low seating plinth, four tall-front/three low-front/two duct-end warm points, two stacked pale end fields and structural rib retain the characteristic source arrangement. Native and independent import whole/detail views agree; the pale fields remain readable and nonmetallic. Cast staining/pores, subtle spalls, worn-through red paint and tarnished brass remain restrained and legible at gameplay-sized presentation, without a dense panel grid. Technical edge views use this exact geometry.",
+  "limitations": [
+    "Exact roof depths, hidden walls, cap/post cross-sections, seating plinth and cell-relative dimensions develop the concept as authored engineering, not recovered metrics.",
+    "The concept retains richer incidental rough damage; final geometry keeps broad practical Mauna surfaces and moderate texture costs. No numerical fidelity score or final user approval is claimed.",
+    "Own source has no operation overlays. Modest steady opaque point emission preserves source appearance, not recovered pulse/drill timing or client bloom.",
+    "Game scale/state mapping, shader appearance and Android performance require separate integration."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false,
+  "source_citation_revalidation": {
+    "report": "sources/docs/reconstruction/models/mauna-source-citation-revalidation.json",
+    "model_binaries_and_renders_unchanged": true,
+    "scope": "Actual original-payload citation revalidation only; not a new render or artistic/client acceptance."
+  }
+}

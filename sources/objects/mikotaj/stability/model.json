@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/087",
+  "key": "MK02",
+  "name": "Stability",
+  "culture": "mikotaj",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 24,
+  "construction_updates": 78,
+  "triangles": 14028,
+  "triangle_budget": 30000,
+  "mesh_nodes": 19,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mikotaj_stability.py",
+  "author_sha256": "06f01fead95e5e2652e325becd14d3b6b70cb04281e9694b8b4443d673186522",
+  "binaries": {
+    "blend": "2311af635dde301dd69f77d752d4a595773e334bed488c9b9a11eefb923fb31e",
+    "glb": "4d8163af7f7cba93c15c677969799c4e9527f9a8566c895b0aec0856b6839c44"
+  },
+  "textures": {
+    "exposed-ridge-base-colour.png": "b7db8330068b44ffe2d56a01e59ed107bc8487e2fc4d225c69884e3127a85a6c",
+    "mineral-base-colour.png": "99cba03bf279c39ca171e9f1b58e4f06f9747535d667d33035aa6ab6e99cc782",
+    "mineral-fracture-normal.png": "274f75a9bf11397012f92d892a437fb4bdc74e0ca3fe060c1f79640c68e817f8",
+    "occlusion-roughness-metallic.png": "e50401f9666aaac933148583c8cd813d21aa8ef74d8b799c181b30ea31ce8144"
+  },
+  "interpretation": [
+    "Opaque pointed mineral-alloy wedge, two lower buttresses, blue upper lens and red vertical marker from legacy; rear field closure and exact cross-sections authored.",
+    "No operational motion inferred from catalogue information reveal. Blue emitters are material emission, not an invented gameplay effect."
+  ],
+  "scale_contract": "3x3 placement footprint, local +Z up/-Y front. Native dimensions are authored cell-relative proportions; no metric legacy height or calibrated game scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/mk02-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

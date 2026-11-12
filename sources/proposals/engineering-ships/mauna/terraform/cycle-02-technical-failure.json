@@ -1,0 +1,51 @@
+{
+  "culture": "mauna",
+  "role": "terraform",
+  "cycle": 2,
+  "binaries": {
+    "blend": "d67a92fece547f637943c3c31b11ac20524904c84560c00c227108e7fed15097",
+    "glb": "667f914f8dcebf344eecab5bbcce13168fb5a8939638aad860a5799edd7f32a9"
+  },
+  "author_sha256": "22be2eb53288f205e8a0dc4cbe705f609c41795200ff98959fac43a260fcfd19",
+  "verifier": "sources/tools/blender/proposals/verify_engineering_refinement.py",
+  "verifier_sha256": "6516a5fb1a146d08baf88fbfa5710f6d79279edeea5c99def5a26cfab081adbf",
+  "status": "technical-check-failed",
+  "failure": "Native/import per-mesh material-slot identity differs: duplicate identical grey slots are consolidated by glTF import.",
+  "differences": {
+    "Mauna long monolithic hull": {
+      "native_materials": [
+        "matte-grey",
+        "matte-grey"
+      ],
+      "imported_materials": [
+        "matte-grey"
+      ],
+      "native_triangles": 830,
+      "imported_triangles": 830
+    },
+    "Mauna sloping central housing": {
+      "native_materials": [
+        "matte-grey",
+        "matte-grey"
+      ],
+      "imported_materials": [
+        "matte-grey"
+      ],
+      "native_triangles": 592,
+      "imported_triangles": 592
+    },
+    "Mauna low forward roof step": {
+      "native_materials": [
+        "matte-grey",
+        "matte-grey"
+      ],
+      "imported_materials": [
+        "matte-grey"
+      ],
+      "native_triangles": 108,
+      "imported_triangles": 108
+    }
+  },
+  "next_correction": "Avoid appending a second grey material slot to already-grey meshes. Preserve strict native/import equality checks.",
+  "diagnosis": "Actual strict-verifier native renders and separate independent import diagnostic views were inspected;not runtime acceptance."
+}

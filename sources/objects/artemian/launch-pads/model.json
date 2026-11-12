@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/115",
+  "key": "AR09",
+  "name": "Launch Pads",
+  "culture": "artemian",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 26,
+  "construction_updates": 18,
+  "triangles": 28204,
+  "triangle_budget": 30000,
+  "mesh_nodes": 43,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_artemian_launch_pads.py",
+  "author_sha256": "702a68e7c55a9742bf0c97d5336bef050d456a5d4bba649a94a417e430f1e99f",
+  "binaries": {
+    "blend": "fb9784fcc90aaa19266d02b4a4a7fc2b0139b37883b1f11a21a1db77284e9d2a",
+    "glb": "da6a79b1dfdb2096efd36ae12ae2739ad210c2d880b583a9794afeae2e143708"
+  },
+  "textures": {
+    "amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+    "copper-fitting-colour.png": "f5bec5f91ece22d7e9c06834019f56d3fb8cffbecfd92582ccf1668095a4d442",
+    "exposed-alloy-edge-colour.png": "6c194e943ac17d76db4c069e212c4e26543027bfe26584599ce577cd17a3a5f7",
+    "muted-green-alloy-colour.png": "5dbd94802bb97e2e991c56636693ed565bb1fb03fe962634d1d0171e6aba804f",
+    "occlusion-roughness-metallic.png": "3354f057a7d54d60b94d039162d2924577720a6a7e176463b9884905c560f8a9",
+    "used-metal-normal.png": "fcad4ea32f35de192931f82605b7fa663ffbabd0f842502a048fe721e3b92b40"
+  },
+  "interpretation": [
+    "Low green shell,real dark recessed roof well with four grey baffles,two tall brass rails/crosspiece/copper sleeves and couplings,two copper front insets follow actual source and reviewed concept.",
+    "Hidden engineering and metric dimensions remain authored. Hinged roof opening is an explicit functional extension,not recovered AR09 animation. Preserve ground origin0 for underground shaft;use closed-pose horizontal bounds for placement."
+  ],
+  "scale_contract": "2x2 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar09-concept-review.json",
+  "animation_clips": [
+    "HangarExitCycle"
+  ],
+  "hangar": {
+    "aperture_radius": 0.78,
+    "shaft_floor": -1.5,
+    "transit_min_z": -1.25,
+    "ground_level": 0,
+    "preserve_ground_origin": true,
+    "hinge_x": 0.815,
+    "hinge_z": 0.17,
+    "lift_height": 0.34,
+    "fully_lifted_frame": 9,
+    "fully_closed_lifted_frame": 89,
+    "hinge_azimuth_degrees": -35,
+    "open_angle_degrees": 110,
+    "closed_frame": 1,
+    "open_first_frame": 25,
+    "open_last_frame": 73,
+    "cycle_end_frame": 97
+  },
+  "functional_extension": "User-requested opening hangar exit. Own AR09 sprites do not recover an operating mechanism;two attached hinged roof halves and4second cycle are authored. Closed source contour and small ribbed recess retained;fixed shaft is genuinely open beneath them. Ship clearance uses independent canonical GLB geometry and explicit game/proposed world scales.",
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

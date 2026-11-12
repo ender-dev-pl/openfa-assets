@@ -1,0 +1,56 @@
+{
+  "asset": "openfa:ship/mauna/transportation-craft-type-3",
+  "issue": 251,
+  "tool": "Built-in image_gen",
+  "stage": "Canonical remaster, actual ImageGen concept and independent imported GLB feedback reviewed",
+  "legacy_identity": {
+    "entry": "MN4C.256",
+    "source_sha256": "8af11d81090386afe93a01770df9ad92126d98f40a91f622015c08608c2a0e7f",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ],
+    "all_16_populated_even_headings_inspected": true
+  },
+  "iterations": [
+    {
+      "number": 1,
+      "prompt": "Create a high-quality 3D game-asset concept of the Mauna Type3 cargo transport in the attached archival pixel-art reference. The reference determines the silhouette and grey/pale-blue material pattern. A broad chamfered horizontal lower housing carries THREE tall thin vertical rectangular sections, arranged along its length with large open gaps between sections. Each section has three deep rectangular notches opening out of the same edge, like a thick comb; notches are real open recesses rather than dark painted squares. Three sections have approximately equal manufactured height; small apparent differences in the tiny oblique reference may be perspective. Pale blue-grey opaque metal bands across their grey faces and across the lower housing. A few warm brown metal feet under the base, two small grey underside blocks, restrained brown end fittings. End view is narrow, with one tall section hiding the other two; broadside view shows all three spaced sections. Use the distinctive unusual reference shape, not a conventional streamlined ship. Hidden geometry and recess depth remain interpretation, not exact recovered engineering. Sparse fitted service panels, small fasteners and shallow maintenance seams; broad quiet surfaces without dense grid subdivisions. Used utilitarian metal with restrained grime at joins, stains, scratches, scuffs and small dents, retaining clear edges. No added glass, glowing parts, text, logo, extra appendages or equipment. One large elevated three-quarter view and smaller consistent broadside/end views of exactly the same assembly. Charcoal studio background, no captions.",
+      "input_images": [
+        {
+          "role": "Actual paletted legacy primary shape and colour evidence",
+          "sha256": "b1e6bc79e0f6bbd0e7a98430fc7a6f34d6d4c0b6468e7346c043f830aad4e05d"
+        }
+      ],
+      "generated_original_sha256": "a278eae39fef30af0b80b1b714a32250088c5d25f7045603baf819e787274b97",
+      "verdict": "Useful coherent three-section notched assembly, pale band continuation, broad lower casing and warm feet. Equal section heights and exact full-width recesses remain interpretation; do not infer unequal towers from perspective. Concept panels/hidden connections are artistic guidance, not exact source geometry.",
+      "image": "gallery/media/concepts/mauna/transportation-craft-type-3-01.png",
+      "sha256": "a278eae39fef30af0b80b1b714a32250088c5d25f7045603baf819e787274b97",
+      "gallery_label": "Reviewed three-section cargo assembly concept1"
+    }
+  ],
+  "final_user_acceptance": "pending",
+  "reviewed_binary_hashes": {
+    "blend": "76e4853e7004780a9b6cda50fc9ff0787fccc63262baa8913931eedc1117c7a6",
+    "glb": "77ca96b85cc8b3654a1fa41820dc8f06257482ff1ea16a383ed90bdc75f2929a"
+  },
+  "glb_feedback": [
+    {
+      "round": 1,
+      "verdict": "Actual corresponding imported GLB0/4/12/28 comparison rejected the first-study notch orientation: a broadside view shows plain columns because the comb profiles are90degrees across the lower casing. Thin pale bands also fail to carry the source colour fields across the sections."
+    },
+    {
+      "round": 2,
+      "verdict": "Rotate all three complete fitted tower assemblies90degrees around their own centres, including panels, fasteners and band attachments. Actual independently imported views now show three comb profiles opening consistently to the same side.29 open-notch/separation rays and12 occupied-tooth rays pass in native and import;82 seated contacts and three physical dents retained."
+    },
+    {
+      "round": 3,
+      "verdict": "Broaden each comb profile from0.56 to0.64 authored units using a declared pre-rotation axial transform; preserve assembly contacts and centres. Broaden opaque pale bands, especially upper fields, with actual bisected material boundaries and planar UVs. Reopen saved source, independently import and render again; inspect actual0/4/12/28 with legacy and concept1. Exact notch depth/band continuation remain interpretation, no hidden function inferred."
+    }
+  ],
+  "glb_visual_review": "All16 populated even legacy headings inspected. Actual final imported0/4/12/28 views compared against paletted originals and concept1: three tall spaced sections, common comb opening direction, substantial grey lower casing, opaque pale blue-grey bands and warm underside/end details retained. All83 source part identities remain editable; no dense hull grid, emission or glass added. Equal manufactured section heights are an interpretation; source oblique height differences alone do not prove unequal geometry. Hidden sections, exact notch depth/width and band continuation are authored. Comparative azimuth-minus90degrees/elevation0.18 are estimates, not recovered client orientation/projection.",
+  "next_step": "Use the canonical source/export in gameplay and all menus. WorldSize180 is a transporter proposal; four equipment mounts and client scale/orientation/materials remain uncalibrated. Final user artistic acceptance separate."
+}

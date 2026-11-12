@@ -1,0 +1,357 @@
+{
+  "id": "openfa:ship/mauna/combat-craft-type-1-5",
+  "issue": 251,
+  "name": "Combat Craft Type 1.5",
+  "key": "MN1A",
+  "source": "docs/assets/reconstruction/ships/mauna/combat-craft-type-1-5",
+  "size_class": "small/medium combat craft",
+  "world_size_proposal": 56,
+  "equipment_slots": 4,
+  "material_tiles": {
+    "Type 1.5 | carbon dark strips": 4,
+    "Type 1.5 | dull pale blue grey end": 3,
+    "Type 1.5 | oxidized service alloy": 1,
+    "Type 1.5 | worn grey low hull": 0
+  },
+  "part_face_budget": {
+    "low body": 9000,
+    "raised deck": 5000,
+    "service frame": 400,
+    "inset": 350,
+    "dark service strip": 120,
+    "deck hatch": 500,
+    "deck dark strip": 120,
+    "fastener": 150,
+    "default": 250
+  },
+  "edge_finish": {
+    "part_keywords": [
+      "service frame",
+      "deck hatch"
+    ],
+    "width": 0.003,
+    "segments": 2,
+    "angle_limit": 0.52
+  },
+  "max_triangles": 55000,
+  "max_primitives": 6,
+  "comparison_elevation": 0.95,
+  "comparison_azimuth": 0,
+  "reference_side_bounds": [
+    16,
+    6
+  ],
+  "protected_dents": [
+    {
+      "part": "Type 1.5 chamfered low body",
+      "undented_point": [
+        -0.32,
+        0,
+        0
+      ],
+      "outward": [
+        -1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0025
+    },
+    {
+      "part": "Type 1.5 chamfered low body",
+      "undented_point": [
+        0.32,
+        0,
+        0
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0025
+    },
+    {
+      "part": "Type 1.5 aft raised deck",
+      "x": 0,
+      "y": 0.18,
+      "undented_z": 0.23,
+      "minimum_depth": 0.0025
+    }
+  ],
+  "attachment_pairs": [
+    {
+      "part": "Type 1.5 service frame -1 0",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 grey inset -1 0",
+      "support": "Type 1.5 service frame -1 0"
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 0 0",
+      "support": "Type 1.5 grey inset -1 0"
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 0 1",
+      "support": "Type 1.5 grey inset -1 0"
+    },
+    {
+      "part": "Type 1.5 service frame -1 1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 grey inset -1 1",
+      "support": "Type 1.5 service frame -1 1"
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 1 0",
+      "support": "Type 1.5 grey inset -1 1"
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 1 1",
+      "support": "Type 1.5 grey inset -1 1"
+    },
+    {
+      "part": "Type 1.5 service frame 1 0",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 grey inset 1 0",
+      "support": "Type 1.5 service frame 1 0"
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 0 0",
+      "support": "Type 1.5 grey inset 1 0"
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 0 1",
+      "support": "Type 1.5 grey inset 1 0"
+    },
+    {
+      "part": "Type 1.5 service frame 1 1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 grey inset 1 1",
+      "support": "Type 1.5 service frame 1 1"
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 1 0",
+      "support": "Type 1.5 grey inset 1 1"
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 1 1",
+      "support": "Type 1.5 grey inset 1 1"
+    },
+    {
+      "part": "Type 1.5 deck hatch",
+      "support": "Type 1.5 aft raised deck"
+    },
+    {
+      "part": "Type 1.5 deck dark strip 0",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 deck dark strip 1",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 deck dark strip 2",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 side seam strip -1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 end seam strip -1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 end interface -1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 0 0",
+      "support": "Type 1.5 service frame -1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 0 1",
+      "support": "Type 1.5 service frame -1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 1 0",
+      "support": "Type 1.5 service frame -1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 1 1",
+      "support": "Type 1.5 service frame -1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 0 0",
+      "support": "Type 1.5 service frame -1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 0 1",
+      "support": "Type 1.5 service frame -1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 1 0",
+      "support": "Type 1.5 service frame -1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 1 1",
+      "support": "Type 1.5 service frame -1 1"
+    },
+    {
+      "part": "Type 1.5 side seam strip 1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 end seam strip 1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 end interface 1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 0 0",
+      "support": "Type 1.5 service frame 1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 0 1",
+      "support": "Type 1.5 service frame 1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 1 0",
+      "support": "Type 1.5 service frame 1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 1 1",
+      "support": "Type 1.5 service frame 1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 0 0",
+      "support": "Type 1.5 service frame 1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 0 1",
+      "support": "Type 1.5 service frame 1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 1 0",
+      "support": "Type 1.5 service frame 1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 1 1",
+      "support": "Type 1.5 service frame 1 1"
+    },
+    {
+      "part": "Type 1.5 deck fastener 0 0",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 deck fastener 0 1",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 deck fastener 1 0",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 deck fastener 1 1",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 fore raised deck",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 aft raised deck",
+      "support": "Type 1.5 chamfered low body"
+    }
+  ],
+  "void_rays": [
+    {
+      "origin": [
+        -2,
+        -0.62,
+        0.18
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        -0.585,
+        0.18
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        -0.55,
+        0.18
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    }
+  ],
+  "solid_rays": [
+    {
+      "origin": [
+        -2,
+        -0.8,
+        0.18
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        -0.3,
+        0.18
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    }
+  ],
+  "interpretation": "Low chamfered grey beam with two unequal raised decks, a shallow open gap and small opaque pale blue-grey fore service field. Deck engineering and hidden surfaces are interpretation, not recovered exact geometry. Four equipment slots uncalibrated; no glazing, emission, weapons or engines inferred. WorldSize56 is a client proposal.",
+  "comparison_heading_directions": {
+    "12": [
+      0,
+      -1,
+      0.95
+    ],
+    "28": [
+      0,
+      1,
+      0.95
+    ]
+  }
+}

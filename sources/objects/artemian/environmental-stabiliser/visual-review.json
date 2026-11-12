@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/108",
+  "binaries": {
+    "blend": "7296fbfac5f5f92410baca823971a70cd0bb077c7d7ea6543c90bed80fdba60d",
+    "glb": "58fbaed5e60c1e574812bcfc4e250ec7f1126f4246cca0e8aa5339880ed81e4d"
+  },
+  "runtime_report_sha256": "cf8f2e081aad79176ff3568de9b0e041a18abb122a806d9b26ab212de5c2f365",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00010029922602430585,
+      "margin": 54
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00016934632319247703,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 5.5585818945870526e-05,
+      "margin": 62
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar02-review-1.png",
+      "sha256": "2e1764c8b5aee318155c1fcc6a7a97421387cb926e7c71b6a5aa1419b4d433ee",
+      "prompt": "sources/docs/reconstruction/models/ar02-concept-prompt-1.txt",
+      "feedback": "Selected tapered green metal shell,three silver arches,two dark front spots,one orange rear-side inset and physically connected rear standpipe with amber cap/return bend. Exact hardware sections and hidden engineering remain interpreted;actual source controls feature count and size."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "5ce03b69fd10e3e4674724a061dc65223969c04c91b0b626b9fcee4142cbee71",
+        "glb": "06268eb7f1050ebc6b3f1defda9f6744c552f8588a711a3078995eb9922a6dc3"
+      },
+      "runtime_report_sha256": "97bd647410f12ce5b542c1db4788e7df07757a9d31d83d6af5c6c2305b7bd0bd",
+      "finding": "Actual native/imported front-quarter render retains tapered green shell,three arches,two dark front spots and orange flank inset. Rear capped pipe is too tall relative to source body silhouette;paint is too glossy for the selected used-metal concept.",
+      "action": "Shorten main pipe/cap and connected return bend together,retain actual body roots and joint volume. Increase portable roughness moderately without adding panels or operating animation.",
+      "status": "revision_required"
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "7296fbfac5f5f92410baca823971a70cd0bb077c7d7ea6543c90bed80fdba60d",
+        "glb": "58fbaed5e60c1e574812bcfc4e250ec7f1126f4246cca0e8aa5339880ed81e4d"
+      },
+      "runtime_report_sha256": "cf8f2e081aad79176ff3568de9b0e041a18abb122a806d9b26ab212de5c2f365",
+      "finding": "Final actual whole legacy/concept/imported GLB comparison and shell/pipe/rear detail renders reviewed. Shorter rear capped upright/return branch now follows source relative height more closely;muted green rougher used paint retains three silver arches,two dark front spots and orange flank inset. Actual BVH interior samples establish arch seating,pipe roots and connected bend. All native/imported surfaces and decoded textures agree;original source pair hashes remain unchanged.",
+      "action": "Accept agent source/concept/native/imported GLB review. Exact hidden production/monitoring engineering,sections and metric dimensions remain interpreted;client scale/state/shaders,Android performance and final user artistic acceptance stay separate.",
+      "status": "agent_review_accepted"
+    }
+  ],
+  "final_review": "Actual whole source/concept/imported GLB comparison retains tapered green metal shell,three seated silver arches,two small dark front spots,one larger orange rear-side inset and capped rear upright with a continuous return bend. Source-based feedback shortened the initial tall pipe/bend and increased finish roughness. Actual body/arch interior samples,pipe root and joint overlap,cap contact,feature counts/placement and native/import texture/surface equality verified. Detail and rear views reviewed.",
+  "limitations": [
+    "Exact shell/pipe sections,hidden oxygen-production/filtration-monitoring engineering and metric dimensions remain authored or unknown.",
+    "Generic _MA/PB35 is function context,not this Artemian geometry or an operating clip. Same-index ST35 belongs to command-cruiser research.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/125",
+  "key": "AR19",
+  "name": "Force Fields",
+  "culture": "artemian",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 10,
+  "construction_updates": 30,
+  "triangles": 24174,
+  "triangle_budget": 30000,
+  "mesh_nodes": 25,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_artemian_force_fields.py",
+  "author_sha256": "5c1789397fb3c3c0db39e62807d49cadc02ac2159b413885b2fb8bb6f17e3f62",
+  "binaries": {
+    "blend": "4dd4f5d63017732b0a4c73c9f9dcd5b3a4d4f00cdf8164e72f0fff69b267a496",
+    "glb": "720ef20e75fe55330b9e00080eaa2135e97125523c0633b60c4e4e77854a522c"
+  },
+  "textures": {
+    "amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+    "copper-fitting-colour.png": "f5bec5f91ece22d7e9c06834019f56d3fb8cffbecfd92582ccf1668095a4d442",
+    "exposed-alloy-edge-colour.png": "dea83a72c3a25d0d85f3b1e47d7c6d05ef61362c68b101d010e8213a4cf4634b",
+    "muted-green-alloy-colour.png": "964111f18bace215811e3676b1ee22ddcaa895a063cf10cb0233a174bd6d0029",
+    "occlusion-roughness-metallic.png": "a4afd72746882546b0e4505978b72ff9970779424a47b5e7dbb55f50d335a95e",
+    "oxidized-alloy-orm.png": "042116cb470332be148b4963824e6e76c245b4929db3f741b7c38cefd4301766",
+    "used-metal-normal.png": "2c4a6bf9523be5759882228489fcf84be32cd1a1408e165250cf9ce07a8f3ca3"
+  },
+  "pillars": [
+    {
+      "x": -0.52,
+      "y": -0.22,
+      "roof": [
+        -0.5199999809265137,
+        -0.2199999988079071,
+        0.5010587573051453
+      ]
+    },
+    {
+      "x": -0.28,
+      "y": 0.2,
+      "roof": [
+        -0.2800000011920929,
+        0.20000000298023224,
+        0.5542370676994324
+      ]
+    }
+  ],
+  "large_port": {
+    "point": [
+      0.5499997138977051,
+      0.0,
+      0.3149999976158142
+    ],
+    "normal": [
+      1.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "small_ports": [
+    {
+      "point": [
+        -0.2800000011920929,
+        -0.37024497985839844,
+        0.44999998807907104
+      ],
+      "normal": [
+        -0.13844330608844757,
+        -0.735668420791626,
+        0.6630424857139587
+      ]
+    },
+    {
+      "point": [
+        -0.2800000011920929,
+        -0.41866159439086914,
+        0.25999999046325684
+      ],
+      "normal": [
+        -0.14480333030223846,
+        -0.9547073841094971,
+        -0.25993403792381287
+      ]
+    }
+  ],
+  "front_rail": {
+    "centre": [
+      -0.5,
+      -0.3836952745914459,
+      0.29499998688697815
+    ],
+    "brackets": [
+      {
+        "body_point": [
+          -0.5,
+          -0.3268272876739502,
+          0.20000000298023224
+        ],
+        "rail_point": [
+          -0.5,
+          -0.37869527816772464,
+          0.20000000298023224
+        ]
+      },
+      {
+        "body_point": [
+          -0.5,
+          -0.3486952781677246,
+          0.4000000059604645
+        ],
+        "rail_point": [
+          -0.5,
+          -0.37869527816772464,
+          0.4000000059604645
+        ]
+      }
+    ]
+  },
+  "toe": [
+    -0.25,
+    -0.3441275656223297,
+    0.1274999976158142
+  ],
+  "physical_dent": {
+    "point": [
+      0.11999999731779099,
+      -0.20000000298023224,
+      0.5672621130943298
+    ],
+    "normal": [
+      0.04671436920762062,
+      -0.30799391865730286,
+      0.9502407312393188
+    ]
+  },
+  "optical_interpretation": {
+    "emission_material": "Amber cores and tip caps - steady authored emission",
+    "strength": 0.8,
+    "scope": "Steady authored optical treatment of bright amber source cores/caps;no recovered Artemian pulse or gameplay state calibration."
+  },
+  "interpretation": [
+    "Own source has2upright open green bottle capsules with3amber segments each and2gold caps,low rounded green housing,broad pale face/copper centre,front rail/two small points/lower toe.",
+    "No own operating overlays;generic PB10/ST23 glow/rotation does not establish Artemian movement or pulse. Hidden engineering and metric dimensions authored;steady warm emission is explicitly an optical interpretation."
+  ],
+  "scale_contract": "2x2 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar19-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

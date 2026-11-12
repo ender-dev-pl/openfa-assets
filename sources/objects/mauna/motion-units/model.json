@@ -1,0 +1,545 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/149",
+  "key": "MN20",
+  "name": "Motion Units",
+  "culture": "mauna",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 22,
+  "construction_updates": 66,
+  "triangles": 1428,
+  "triangle_budget": 30000,
+  "mesh_nodes": 10,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mauna_motion_units.py",
+  "author_sha256": "87d2c71fbe81992a8caa17ddd432ed497154d995258352eaf87fe73f6841667c",
+  "binaries": {
+    "blend": "9975e229f0b4a8998a3bc767f30ff91f0a418d44471aab78fec7b1bd85f1b606",
+    "glb": "bca6f0758dc87aaafd07a5fa3494d78b587939d6758c7b835c4e86e6c64a5658"
+  },
+  "textures": {
+    "brass-colour.png": "08e4ffafbc6a478cdd60ead2e51d38e6aea232f65055d498bbc996ed59efdbce",
+    "cast-concrete-colour.png": "f95423ad13460402449eb6b70a5aacc9c63f10b3c794c336186e0589e3c408cf",
+    "cast-service-normal.png": "793a4fc8cf63e0152ce49a3b4e7df90a61f4f9acc86cd1186100e40e2793067c",
+    "concrete-orm.png": "c613971d449d952e20f562c89a3a8efd96e2128ba77d81b503ab0dc5302c7e96",
+    "marking-red-colour.png": "7b52be3261c8a8dd0c5220d99943804210e852da811e3f6818b53d24812ac944",
+    "metal-orm.png": "2f794cc8ce0feb72d33131ec4c163fe519d099e2019479d30765cf0fcdd5c31a",
+    "pale-module-colour.png": "041a758e4dae3061e893f95e5aec15bbc3d7ba7dc95bc84b94228dfd9a0f99a3"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Motion Units upper front brass field",
+      "body": "Motion Units upper storey",
+      "point": [
+        0.0,
+        -0.5299999713897705,
+        1.5700000524520874
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.033
+    },
+    {
+      "object": "Motion Units right brass field 0.79 0",
+      "body": "Motion Units lower storey",
+      "point": [
+        0.5299999713897705,
+        -0.25999999046325684,
+        0.7900000214576721
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.033
+    },
+    {
+      "object": "Motion Units right brass field 0.79 1",
+      "body": "Motion Units lower storey",
+      "point": [
+        0.5299999713897705,
+        0.25999999046325684,
+        0.7900000214576721
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.033
+    },
+    {
+      "object": "Motion Units right brass field 1.57 0",
+      "body": "Motion Units upper storey",
+      "point": [
+        0.5299999713897705,
+        -0.25999999046325684,
+        1.5700000524520874
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.033
+    },
+    {
+      "object": "Motion Units right brass field 1.57 1",
+      "body": "Motion Units upper storey",
+      "point": [
+        0.5299999713897705,
+        0.25999999046325684,
+        1.5700000524520874
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.025,
+      "contact_depth": 0.033
+    },
+    {
+      "object": "Motion Units lower front dark channel 0",
+      "body": "Motion Units lower storey",
+      "point": [
+        -0.25,
+        -0.5299999713897705,
+        0.7599999904632568
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.03,
+      "contact_depth": 0.038
+    },
+    {
+      "object": "Motion Units lower front dark channel 1",
+      "body": "Motion Units lower storey",
+      "point": [
+        0.25,
+        -0.5299999713897705,
+        0.7599999904632568
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.03,
+      "contact_depth": 0.038
+    },
+    {
+      "object": "Motion Units mast brass marker 0",
+      "body": "Motion Units supported lower mast",
+      "point": [
+        0.0,
+        -0.07000000029802322,
+        2.1500000953674316
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.01,
+      "contact_depth": 0.018000000000000002
+    },
+    {
+      "object": "Motion Units mast brass marker 1",
+      "body": "Motion Units supported lower mast",
+      "point": [
+        0.0,
+        -0.07000000029802322,
+        2.25
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.01,
+      "contact_depth": 0.018000000000000002
+    },
+    {
+      "object": "Motion Units mast brass marker 2",
+      "body": "Motion Units supported lower mast",
+      "point": [
+        0.0,
+        -0.07000000029802322,
+        2.3499999046325684
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.01,
+      "contact_depth": 0.018000000000000002
+    }
+  ],
+  "attachment_contacts": [
+    {
+      "object": "Motion Units flared upper plinth",
+      "support": "Motion Units grounded flared lower plinth",
+      "point": [
+        0.3,
+        0.3,
+        0.15
+      ]
+    },
+    {
+      "object": "Motion Units lower storey",
+      "support": "Motion Units flared upper plinth",
+      "point": [
+        0.2,
+        0.2,
+        0.37
+      ]
+    },
+    {
+      "object": "Motion Units upper storey",
+      "support": "Motion Units lower storey",
+      "point": [
+        0.3,
+        0.3,
+        1.16
+      ]
+    },
+    {
+      "object": "Motion Units channel brass marker 0 0",
+      "support": "Motion Units lower front dark channel 0",
+      "point": [
+        -0.25,
+        -0.5,
+        0.74
+      ]
+    },
+    {
+      "object": "Motion Units channel brass marker 0 1",
+      "support": "Motion Units lower front dark channel 0",
+      "point": [
+        -0.25,
+        -0.5,
+        0.86
+      ]
+    },
+    {
+      "object": "Motion Units channel brass marker 1 0",
+      "support": "Motion Units lower front dark channel 1",
+      "point": [
+        0.25,
+        -0.5,
+        0.74
+      ]
+    },
+    {
+      "object": "Motion Units channel brass marker 1 1",
+      "support": "Motion Units lower front dark channel 1",
+      "point": [
+        0.25,
+        -0.5,
+        0.86
+      ]
+    },
+    {
+      "object": "Motion Units structural corner -0.503 -0.503",
+      "support": "Motion Units lower storey",
+      "point": [
+        -0.503,
+        -0.503,
+        0.8
+      ]
+    },
+    {
+      "object": "Motion Units structural corner -0.503 0.503",
+      "support": "Motion Units lower storey",
+      "point": [
+        -0.503,
+        0.503,
+        0.8
+      ]
+    },
+    {
+      "object": "Motion Units structural corner 0.503 -0.503",
+      "support": "Motion Units lower storey",
+      "point": [
+        0.503,
+        -0.503,
+        0.8
+      ]
+    },
+    {
+      "object": "Motion Units structural corner 0.503 0.503",
+      "support": "Motion Units lower storey",
+      "point": [
+        0.503,
+        0.503,
+        0.8
+      ]
+    },
+    {
+      "object": "Motion Units continuous middle ledge",
+      "support": "Motion Units upper storey",
+      "point": [
+        0.525,
+        0,
+        1.17
+      ]
+    },
+    {
+      "object": "Motion Units continuous middle ledge",
+      "support": "Motion Units upper storey",
+      "point": [
+        -0.525,
+        0,
+        1.17
+      ]
+    },
+    {
+      "object": "Motion Units continuous middle ledge",
+      "support": "Motion Units upper storey",
+      "point": [
+        0,
+        0.525,
+        1.17
+      ]
+    },
+    {
+      "object": "Motion Units continuous middle ledge",
+      "support": "Motion Units upper storey",
+      "point": [
+        0,
+        -0.525,
+        1.17
+      ]
+    },
+    {
+      "object": "Motion Units shallow roof cap",
+      "support": "Motion Units upper storey",
+      "point": [
+        0.3,
+        0.3,
+        1.94
+      ]
+    },
+    {
+      "object": "Motion Units shallow roof cap",
+      "support": "Motion Units upper storey",
+      "point": [
+        -0.3,
+        0.3,
+        1.94
+      ]
+    },
+    {
+      "object": "Motion Units shallow roof cap",
+      "support": "Motion Units upper storey",
+      "point": [
+        0.3,
+        -0.3,
+        1.94
+      ]
+    },
+    {
+      "object": "Motion Units shallow roof cap",
+      "support": "Motion Units upper storey",
+      "point": [
+        -0.3,
+        -0.3,
+        1.94
+      ]
+    },
+    {
+      "object": "Motion Units low square mast seat",
+      "support": "Motion Units shallow roof cap",
+      "point": [
+        0.15,
+        0.15,
+        1.965
+      ]
+    },
+    {
+      "object": "Motion Units supported lower mast",
+      "support": "Motion Units low square mast seat",
+      "point": [
+        0,
+        0,
+        2.035
+      ]
+    },
+    {
+      "object": "Motion Units tapered upper mast",
+      "support": "Motion Units supported lower mast",
+      "point": [
+        0,
+        0,
+        2.615
+      ]
+    },
+    {
+      "object": "Motion Units same-side brass prong 0",
+      "support": "Motion Units supported lower mast",
+      "point": [
+        0.0,
+        0.044436052441596985,
+        2.5440399646759033
+      ]
+    },
+    {
+      "object": "Motion Units same-side brass prong 1",
+      "support": "Motion Units tapered upper mast",
+      "point": [
+        0.0,
+        0.04450215399265289,
+        2.843966007232666
+      ]
+    },
+    {
+      "object": "Motion Units continuous sloping red base band",
+      "support": "Motion Units flared upper plinth",
+      "point": [
+        0.64,
+        0,
+        0.235
+      ]
+    },
+    {
+      "object": "Motion Units continuous sloping red base band",
+      "support": "Motion Units flared upper plinth",
+      "point": [
+        -0.64,
+        0,
+        0.235
+      ]
+    },
+    {
+      "object": "Motion Units continuous sloping red base band",
+      "support": "Motion Units flared upper plinth",
+      "point": [
+        0,
+        0.64,
+        0.235
+      ]
+    },
+    {
+      "object": "Motion Units continuous sloping red base band",
+      "support": "Motion Units flared upper plinth",
+      "point": [
+        0,
+        -0.64,
+        0.235
+      ]
+    }
+  ],
+  "part_batches": {
+    "Motion Units structural corner -0.503 -0.503": "Motion Units four corners middle ledge roof cap and seat",
+    "Motion Units structural corner -0.503 0.503": "Motion Units four corners middle ledge roof cap and seat",
+    "Motion Units structural corner 0.503 -0.503": "Motion Units four corners middle ledge roof cap and seat",
+    "Motion Units structural corner 0.503 0.503": "Motion Units four corners middle ledge roof cap and seat",
+    "Motion Units continuous middle ledge": "Motion Units four corners middle ledge roof cap and seat",
+    "Motion Units shallow roof cap": "Motion Units four corners middle ledge roof cap and seat",
+    "Motion Units low square mast seat": "Motion Units four corners middle ledge roof cap and seat",
+    "Motion Units upper front brass field": "Motion Units five fields seven markers and two prongs",
+    "Motion Units right brass field 0.79 0": "Motion Units five fields seven markers and two prongs",
+    "Motion Units right brass field 0.79 1": "Motion Units five fields seven markers and two prongs",
+    "Motion Units right brass field 1.57 0": "Motion Units five fields seven markers and two prongs",
+    "Motion Units right brass field 1.57 1": "Motion Units five fields seven markers and two prongs",
+    "Motion Units channel brass marker 0 0": "Motion Units five fields seven markers and two prongs",
+    "Motion Units channel brass marker 0 1": "Motion Units five fields seven markers and two prongs",
+    "Motion Units channel brass marker 1 0": "Motion Units five fields seven markers and two prongs",
+    "Motion Units channel brass marker 1 1": "Motion Units five fields seven markers and two prongs",
+    "Motion Units mast brass marker 0": "Motion Units five fields seven markers and two prongs",
+    "Motion Units mast brass marker 1": "Motion Units five fields seven markers and two prongs",
+    "Motion Units mast brass marker 2": "Motion Units five fields seven markers and two prongs",
+    "Motion Units same-side brass prong 0": "Motion Units five fields seven markers and two prongs",
+    "Motion Units same-side brass prong 1": "Motion Units five fields seven markers and two prongs",
+    "Motion Units continuous sloping red base band": "Motion Units one continuous sloping base band",
+    "Motion Units lower front dark channel 0": "Motion Units two seated dark front channels",
+    "Motion Units lower front dark channel 1": "Motion Units two seated dark front channels"
+  },
+  "physical_chips": [
+    {
+      "body": "Motion Units upper storey",
+      "point": [
+        -0.3499999940395355,
+        -0.5299999713897705,
+        1.7300000190734863
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "body": "Motion Units lower storey",
+      "point": [
+        0.5299999713897705,
+        0.05000000074505806,
+        0.6600000262260437
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "roof_prongs": [
+    {
+      "object": "Motion Units same-side brass prong 0",
+      "start": [
+        0.0,
+        0.03999999910593033,
+        2.5399999618530273
+      ],
+      "end": [
+        0.0,
+        0.6000000238418579,
+        3.049999952316284
+      ],
+      "width": 0.04,
+      "thickness": 0.045
+    },
+    {
+      "object": "Motion Units same-side brass prong 1",
+      "start": [
+        0.0,
+        0.03999999910593033,
+        2.8399999141693115
+      ],
+      "end": [
+        0.0,
+        0.46000000834465027,
+        3.2100000381469727
+      ],
+      "width": 0.04,
+      "thickness": 0.045
+    }
+  ],
+  "nonemissive": true,
+  "interpretation": [
+    "Own two-storey angular tower,two flared square plinths,red band,front and four right fields,roof mast and two same-side brass prongs govern anatomy.",
+    "Exact recess depths,hidden engineering,mast sections,short mark segmentation and cell-relative proportions are authored;generic PB22 spherical modules and ST04 presentation are not Mauna anatomy or operation."
+  ],
+  "scale_contract": "2x2 placement,ground0,+Z up/-Y front. Authored cell-relative dimensions,no recovered metric or calibrated client scale.",
+  "concept_review": "sources/docs/reconstruction/models/mn20-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

@@ -1,0 +1,122 @@
+{
+  "historical_metadata": {
+    "global_type": 14,
+    "building_id": "terran:missile-silo",
+    "name": "Missile Silo",
+    "culture": "terran",
+    "preview": "PB14",
+    "footprint": [
+      2,
+      2
+    ],
+    "generator_sha256": "b6bba7ec3e5a69f42aac3625de2f5418f49270fa5245e872ce2f6ce441790a91",
+    "source_blend_sha256": "40f5d0c62fdd1f96d3036e01f2ddaf6a8ac09cd023f7b36de9532cc79354af7b",
+    "source_meshes": 7,
+    "mesh_objects": 63,
+    "source_faces": 764,
+    "removed_proxy_windows": 4,
+    "mesh_faces": 5195,
+    "detail_objects": 61,
+    "detail_features": [
+      "Articulated overlapping curved iris leaves, rim pivots, guide race and open launch well",
+      "Segmented bunker and lid armour, hinge blocks, pressure seal and maintenance hatch"
+    ],
+    "bounds_min": [
+      -1.192980170249939,
+      -1.192980170249939,
+      0.0
+    ],
+    "bounds_max": [
+      1.192980170249939,
+      1.192980170249939,
+      0.8704987168312073
+    ],
+    "resolution": 768,
+    "samples": 48,
+    "views": [
+      "front-quarter",
+      "rear-quarter",
+      "top"
+    ],
+    "imported_geometry_or_textures": [],
+    "source": "independently authored catalogue geometry",
+    "blender": "4.5.15 LTS",
+    "iris_rig": {
+      "leaves": [
+        "Iris curved leaf 01",
+        "Iris curved leaf 02",
+        "Iris curved leaf 03",
+        "Iris curved leaf 04",
+        "Iris curved leaf 05",
+        "Iris curved leaf 06",
+        "Iris curved leaf 07",
+        "Iris curved leaf 08"
+      ],
+      "leaf_count": 8,
+      "closed_frame": 1,
+      "open_frame": 17,
+      "loop_end_frame": 33,
+      "preview_frames": 17,
+      "mechanism": "rim-pivoted overlapping curved leaves with vertical retraction",
+      "reference": "PB14 surface overlay frames 2..14; leaf count and hidden mechanism authored"
+    }
+  },
+  "building_id": "terran:missile-silo",
+  "name": "Missile Silo",
+  "culture": "terran",
+  "footprint": [
+    2,
+    2
+  ],
+  "binaries": {
+    "blend": "974aef937d8de7c89b0bba6ab295e574cf53749699ab60e23c4f579358af0420",
+    "glb": "9b45f44bb87a47df85c0ed03a4a038e71f43cbaea5630351fdc588616cc0d147"
+  },
+  "ground_level": 0,
+  "preserve_ground_origin": true,
+  "animation": {
+    "name": "Animation",
+    "duration_seconds": 2,
+    "closed_seconds": 0,
+    "fully_open_seconds": 1,
+    "closed_again_seconds": 2
+  },
+  "status_lamps": {
+    "channels": [
+      "StatusLampLeft",
+      "StatusLampRight"
+    ],
+    "presets": {
+      "Hybrid": [
+        255,
+        210,
+        138
+      ],
+      "AttackOnly": [
+        194,
+        93,
+        93
+      ],
+      "DefenceOnly": [
+        150,
+        170,
+        210
+      ]
+    },
+    "control": "Exactly one preset mesh at unit scale per lit channel; all presets zero scale when off; no lamp animation"
+  },
+  "integration": "Preserve grade Z=0 native / Y=0 glTF. Original curved leaves drop0.20 and turn50degrees, without radial travel. Original leaf/rim interference retained; continuous tube with black floor at-3.2. Fit building using closed bind pose. Hold payload below closed iris until open, then lift. Explicit client state/node binding required.",
+  "verification": "correction-runtime-verification.json",
+  "iris_mechanism": {
+    "blades": 8,
+    "original_mesh_preserved": true,
+    "lift": 0,
+    "drop": 0.2,
+    "radial_travel": 0,
+    "turn_degrees": 50,
+    "verified_passage_radius": 0.33,
+    "nominal_tube_radius": 0.87,
+    "motion": "Original drop and50-degree turn restored; no new actuators; original leaf/rim interference retained",
+    "proof": "diaphragm-verification.json"
+  }
+}

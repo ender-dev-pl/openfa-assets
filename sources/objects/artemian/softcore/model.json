@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/107",
+  "key": "AR01",
+  "name": "SoftCore",
+  "culture": "artemian",
+  "footprint": [
+    4,
+    4
+  ],
+  "definition_class": 20,
+  "construction_updates": 40,
+  "triangles": 22952,
+  "triangle_budget": 30000,
+  "mesh_nodes": 9,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_artemian_softcore.py",
+  "author_sha256": "92eda1849e827079cb1c582091bcff8435c6f762d9f4de8801c1057a3487cca4",
+  "binaries": {
+    "blend": "c654f578b8c39e7ffe0057773c61c88ff5b567f56aae5b11e071fa61af0ef5ba",
+    "glb": "46d377dca320ea328b70c82b0ebdbe74eea8707871857faa4e48888731959850"
+  },
+  "textures": {
+    "amber-fitting-colour.png": "99716edd20534fcbab7e211a1c751dcbd92d59168b8f308a280d8b502f16796c",
+    "blue-grey-alloy-colour.png": "e9192e89ee4958355e880c708b6501a3a06da7d813c95b4dafda85d06c05bd03",
+    "exposed-alloy-edge-colour.png": "1b8a6f1eea93157d82679b43b9739a567aaa77a09359ff25544c6b4757c2c05f",
+    "occlusion-roughness-metallic.png": "124b130a761b67d7e4710dce48732cace8ec5e2aa5a63165518716a1c9de3680",
+    "red-nose-inset-colour.png": "92d515fe875b71ba3ffeb6d1a6733d1591e1566f45f1a2478b773fc9029d6c63",
+    "used-metal-normal.png": "d092683a0dc3e2dc5fd65ab5b9db52cae143e319d74c9b699295c1c0c8c91e3b"
+  },
+  "interpretation": [
+    "Low elongated stepped rear/flanks with smooth unbroken front cap,two unequal pale amber-capped front fittings,tiny red/dark nose details and two dark roof features follow actual source and reviewed concept.",
+    "User correction removes front terraces while preserving rear/flank shoulders. Sparse front-cap seam,metal wear,hidden sections and engineering interpreted. No operation/opening clip inferred from catalogue reveal."
+  ],
+  "scale_contract": "4x4 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar01-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

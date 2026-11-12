@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/139",
+  "key": "MN10",
+  "name": "Satellite Pad",
+  "culture": "mauna",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 9,
+  "construction_updates": 24,
+  "triangles": 3324,
+  "triangle_budget": 30000,
+  "mesh_nodes": 9,
+  "materials": 8,
+  "author": "sources/tools/blender/remaster_mauna_satellite_pad.py",
+  "author_sha256": "2266aa1a9c8142669bdc8e4860837ac0084bc7d5dc01b173bcd3ef62cf3f76e8",
+  "binaries": {
+    "blend": "156c3619abef92e418f4e09f6c679acfb3396f3ec55a229aaee282e58b45986e",
+    "glb": "40b216cc27ed793010fbbc3e133660b1d3c3ce68aeb498192e91fbb6f09ca0ae"
+  },
+  "textures": {
+    "cast-concrete-colour.png": "b7d5099a06d349652ce07374d2210ba13092d9c60564be5db01e419dfcb10c89",
+    "cast-service-normal.png": "8fd731735ad87e41eb3f3d87c000b8ad7c060c7dd20ddc8df8c079b332334630",
+    "concrete-orm.png": "dcf42715b5f2a62623146d52930aa8bfd3d8aded5edd7c5952b20c300fc66a0d",
+    "marking-red-colour.png": "e3bae8681b29753480058aa6def6da392030e8e67f6e52cf01d3a368d268763f",
+    "metal-orm.png": "e5a24ede5463b28487ace815f38181846892d154ca53de04c14b9956d07b9420",
+    "pale-alloy-colour.png": "c7cb555cf5b9aa7adaccd1e0a9fa320cf5872ca9b6b9e438e58ec63be3f05386",
+    "used-brass-colour.png": "7b6bd01142f4ecaabc36eb782b7c073969f1329bf54da01a9920c3cc63a18adc"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "Satellite Pad front recessed vent",
+      "body": "Satellite Pad sloping cast concrete body",
+      "point": [
+        -0.11999999731779099,
+        -0.8268656730651855,
+        0.41999998688697815
+      ],
+      "normal": [
+        0.0,
+        -0.9788587093353271,
+        0.20453763008117676
+      ],
+      "depth": 0.045,
+      "contact_depth": 0.052
+    },
+    {
+      "object": "Satellite Pad front right narrow vertical field",
+      "body": "Satellite Pad sloping cast concrete body",
+      "point": [
+        0.6150000095367432,
+        -0.8373134136199951,
+        0.3700000047683716
+      ],
+      "normal": [
+        5.408159253761369e-08,
+        -0.9788587689399719,
+        0.20453764498233795
+      ],
+      "depth": 0.02,
+      "contact_depth": 0.027
+    },
+    {
+      "object": "Satellite Pad mast small green field 0",
+      "body": "Satellite Pad single unbraced pale mast",
+      "point": [
+        0.6710000038146973,
+        0.692500114440918,
+        1.5
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.012,
+      "contact_depth": 0.019
+    },
+    {
+      "object": "Satellite Pad mast small green field 1",
+      "body": "Satellite Pad single unbraced pale mast",
+      "point": [
+        0.6710000038146973,
+        0.692500114440918,
+        1.6200000047683716
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.012,
+      "contact_depth": 0.019
+    },
+    {
+      "object": "Satellite Pad mast small green field 2",
+      "body": "Satellite Pad single unbraced pale mast",
+      "point": [
+        0.6710000038146973,
+        0.692500114440918,
+        1.7400000095367432
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.012,
+      "contact_depth": 0.019
+    }
+  ],
+  "attachment_contacts": [
+    {
+      "object": "Satellite Pad brass top post 0",
+      "support": "Satellite Pad sloping cast concrete body",
+      "point": [
+        -0.66,
+        -0.66,
+        0.733
+      ]
+    },
+    {
+      "object": "Satellite Pad brass top post 1",
+      "support": "Satellite Pad sloping cast concrete body",
+      "point": [
+        0.66,
+        -0.66,
+        0.733
+      ]
+    },
+    {
+      "object": "Satellite Pad brass top post 2",
+      "support": "Satellite Pad sloping cast concrete body",
+      "point": [
+        0.66,
+        0.66,
+        0.733
+      ]
+    },
+    {
+      "object": "Satellite Pad brass top post 3",
+      "support": "Satellite Pad sloping cast concrete body",
+      "point": [
+        -0.66,
+        0.66,
+        0.733
+      ]
+    },
+    {
+      "object": "Satellite Pad single unbraced pale mast",
+      "support": "Satellite Pad sloping cast concrete body",
+      "point": [
+        0.675,
+        0.72,
+        0.733
+      ]
+    },
+    {
+      "object": "Satellite Pad narrow functional well rim",
+      "support": "Satellite Pad sloping cast concrete body",
+      "point": [
+        0.602,
+        0,
+        0.738
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 0",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        0.5740000009536743,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 1",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        0.5303068161010742,
+        0.21966028213500977,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 2",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        0.40587928891181946,
+        0.40587928891181946,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 3",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        0.21966028213500977,
+        0.5303068161010742,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 4",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        3.5147364139798725e-17,
+        0.5740000009536743,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 5",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        -0.21966028213500977,
+        0.5303068161010742,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 6",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        -0.40587928891181946,
+        0.40587928891181946,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 7",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        -0.5303068161010742,
+        0.21966028213500977,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 8",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        -0.5740000009536743,
+        7.029472827959745e-17,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 9",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        -0.5303068161010742,
+        -0.21966028213500977,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 10",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        -0.40587928891181946,
+        -0.40587928891181946,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 11",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        -0.21966028213500977,
+        -0.5303068161010742,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 12",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        -1.0544208911067373e-16,
+        -0.5740000009536743,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 13",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        0.21966028213500977,
+        -0.5303068161010742,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 14",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        0.40587928891181946,
+        -0.40587928891181946,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad vertical inner flute 15",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        0.5303068161010742,
+        -0.21966028213500977,
+        0.5
+      ]
+    },
+    {
+      "object": "Satellite Pad sloping cast concrete body",
+      "support": "Satellite Pad low cast foot",
+      "point": [
+        0.8,
+        0,
+        0.085
+      ]
+    },
+    {
+      "object": "Satellite Pad underground slate lining",
+      "support": "Satellite Pad sloping cast concrete body",
+      "point": [
+        0.577,
+        0,
+        0.2
+      ]
+    },
+    {
+      "object": "Satellite Pad deep black floor",
+      "support": "Satellite Pad underground slate lining",
+      "point": [
+        0.58,
+        0,
+        -1.235
+      ]
+    },
+    {
+      "object": "Satellite Pad front vent ledge 0",
+      "support": "Satellite Pad front recessed vent",
+      "point": [
+        -0.11999999731779099,
+        -0.8003342151641846,
+        0.3122963011264801
+      ]
+    },
+    {
+      "object": "Satellite Pad front vent ledge 1",
+      "support": "Satellite Pad front recessed vent",
+      "point": [
+        -0.11999999731779099,
+        -0.7798804640769958,
+        0.4101821780204773
+      ]
+    },
+    {
+      "object": "Satellite Pad front vent ledge 2",
+      "support": "Satellite Pad front recessed vent",
+      "point": [
+        -0.11999999731779099,
+        -0.7594267129898071,
+        0.5080680847167969
+      ]
+    },
+    {
+      "object": "Satellite Pad red source zigzag 0",
+      "support": "Satellite Pad sloping cast concrete body",
+      "point": [
+        0.796052098274231,
+        -0.30000001192092896,
+        0.5625755786895752
+      ]
+    },
+    {
+      "object": "Satellite Pad red source zigzag 1",
+      "support": "Satellite Pad sloping cast concrete body",
+      "point": [
+        0.7960523366928101,
+        0.28999999165534973,
+        0.56257563829422
+      ]
+    }
+  ],
+  "part_batches": {
+    "Satellite Pad single unbraced pale mast": "Satellite Pad pale functional fittings",
+    "Satellite Pad narrow functional well rim": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 0": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 1": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 2": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 3": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 4": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 5": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 6": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 7": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 8": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 9": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 10": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 11": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 12": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 13": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 14": "Satellite Pad pale functional fittings",
+    "Satellite Pad vertical inner flute 15": "Satellite Pad pale functional fittings",
+    "Satellite Pad front vent ledge 0": "Satellite Pad pale functional fittings",
+    "Satellite Pad front vent ledge 1": "Satellite Pad pale functional fittings",
+    "Satellite Pad front vent ledge 2": "Satellite Pad pale functional fittings",
+    "Satellite Pad brass top post 0": "Satellite Pad four brass posts",
+    "Satellite Pad brass top post 1": "Satellite Pad four brass posts",
+    "Satellite Pad brass top post 2": "Satellite Pad four brass posts",
+    "Satellite Pad brass top post 3": "Satellite Pad four brass posts",
+    "Satellite Pad front recessed vent": "Satellite Pad dark blind fields",
+    "Satellite Pad front right narrow vertical field": "Satellite Pad dark blind fields",
+    "Satellite Pad red source zigzag 0": "Satellite Pad two red source markings",
+    "Satellite Pad red source zigzag 1": "Satellite Pad two red source markings",
+    "Satellite Pad mast small green field 0": "Satellite Pad three dark green mast fields",
+    "Satellite Pad mast small green field 1": "Satellite Pad three dark green mast fields",
+    "Satellite Pad mast small green field 2": "Satellite Pad three dark green mast fields"
+  },
+  "physical_chips": [
+    {
+      "body": "Satellite Pad sloping cast concrete body",
+      "point": [
+        0.699999988079071,
+        0.05000000074505806,
+        0.7400000095367432
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "body": "Satellite Pad low cast foot",
+      "point": [
+        0.6499999761581421,
+        -0.9200000166893005,
+        0.054999999701976776
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ],
+  "interpretation": [
+    "Own static open well,sloping square body,straight unbraced rear-right mast,four brass posts,front vent/narrow front field andtwo red right zigzags govern geometry.",
+    "Sixteen inner flutes,well depth,hidden mount engineering,recess dimensions andcell-relative proportions authored. GenericTerranPB09iris is not transferred. Extra lower-right slot/base artifact in concept omitted."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront;preserve ground0 andclosed horizontal span;underground well must not lift building. No recovered metric/payload dimensions.",
+  "concept_review": "sources/docs/reconstruction/models/mn10-concept-review.json",
+  "animation_clips": [],
+  "well": {
+    "open_radius": 0.56,
+    "conservative_clear_radius": 0.54,
+    "floor_top": -1.23,
+    "ground_level": 0,
+    "preserve_ground_origin": true,
+    "terrain_cutout_required": true
+  },
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

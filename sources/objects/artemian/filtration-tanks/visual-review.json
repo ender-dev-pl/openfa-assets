@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/109",
+  "binaries": {
+    "blend": "e05231cd498f9fc887718285a5c6ca9bc428893a6306df24958fa3090560bdd1",
+    "glb": "943cca490fca7b81cf960a5ead7600acf0b779eb2b33068659bfaf82da29132f"
+  },
+  "runtime_report_sha256": "607fee3e435b48ac1492878203494479045014ea6aa0d553373c4ceac1214dbe",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 9.282896263634253e-05,
+      "margin": 98
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00011306198457036445,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 6.94637399277577e-05,
+      "margin": 103
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar03-review-1.png",
+      "sha256": "e29797a1d26815f08119dea65d165fa35137c67bed0915cd70f450c1616e6ac6",
+      "prompt": "sources/docs/reconstruction/models/ar03-concept-prompt-1.txt",
+      "feedback": "Selected broad low green metal shell,three pale side fittings,four amber roof modules,two unequal red front insets,connected silver rear pipe and one separate short upright. Actual source controls counts and positions;fine fitting engineering and sections remain interpreted."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "e05231cd498f9fc887718285a5c6ca9bc428893a6306df24958fa3090560bdd1",
+        "glb": "943cca490fca7b81cf960a5ead7600acf0b779eb2b33068659bfaf82da29132f"
+      },
+      "runtime_report_sha256": "607fee3e435b48ac1492878203494479045014ea6aa0d553373c4ceac1214dbe",
+      "finding": "Reviewed actual whole legacy/concept/imported GLB comparison and both fitting/module and pipe/front-marker detail renders. Broad low green shell, three pale capped side fittings, four amber modules, two unequal red front points and tall silver upright with connected return remain recognizable. The concept has more rounded amber fittings and richer material detail; canonical geometry keeps small low roof modules and sparse shell supported by source. Wear and shallow dents remain visible. Actual runtime proves all24 closed positive meshes, contact/interior samples and all6 decoded texture images; maximum surface error1.2288420236927777e-7. Frozen historical pair unchanged.",
+      "action": "Accept agent source/concept/GLB review for this asset milestone. Hidden filtration engineering and metric sections remain interpreted; no invented operation cycle. Client scale/state/shaders, Android performance and final user artistic acceptance separate.",
+      "status": "agent_review_accepted"
+    }
+  ],
+  "final_review": "Actual whole source/concept/imported GLB comparison retains a broad low green hard-metal shell,three pale capped side fittings,four amber roof modules,two unequal red front points,one tiny dark roof point and connected rear silver pipe beside a separate short upright. Actual fitting/body,module/seat/roof and pipe root/joint/cap volume/contact samples verified. Native/imported closed surfaces and decoded texture pixels agree;detail and rear views reviewed.",
+  "limitations": [
+    "Exact internal filtration/tanks,pipe routing,sections and metric dimensions remain authored or unknown.",
+    "Generic _MA/PB37 hydroponics is class37 function context,not this Artemian geometry or an operating cycle. Narrative water and database food-production fields remain distinct evidence.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

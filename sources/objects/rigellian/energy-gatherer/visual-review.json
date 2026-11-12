@@ -1,0 +1,90 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/053",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri14-review-1.png",
+    "sha256": "b6c41fa144e957dd8805e26b681b79f83527b2d7406e4198ceb67979508e4e5d",
+    "prompt": "sources/docs/reconstruction/models/ri14-concept-prompt-1.txt",
+    "verdict": "Two bronze lower chambers, pale conduit, grey connector, upper vessel and open crown agree with legacy. Concept thickens conduit and rim uprights, exaggerates side fixtures and changes casing divisions to grooves. Reject those anatomy changes; retain latest source-guided broad ribs and slender conduit."
+  },
+  "legacy": {
+    "body_sha256": "fa5ae7f212fa881043a8eb15b0ae45379169fec7cc101f9683547c529d009ba3",
+    "catalogue_colour_phase20_sha256": "e2573441965400fd50ff485bdcc21bc0b0f8aded57d98d654c0ce5bfca352592",
+    "functional_record": 914,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "240386ef69fdb1756db58140ccec496210d691349907856b4ff6923211b26a8b",
+    "glb": "2cc1f2395781cc51cbd65c12519210481f82e03ec448cc5f2b92aaa427c903ba"
+  },
+  "runtime_report_sha256": "8f5f0db0e7f690b7d83902fb9d890546395e0c003a323053b346f035edeb6fa7",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0647091335720486,
+        0.0587158203125,
+        0.05621507432725695,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.4319685503240132,
+        0.3919880364344949,
+        0.37524357638102146,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 55
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.049580891927083336,
+        0.046485053168402776,
+        0.04507276746961805,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.3492308613156162,
+        0.3274794996109415,
+        0.3176273418327647,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 53
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.06787618001302083,
+        0.0642734103732639,
+        0.06269666883680555,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.45641581559879046,
+        0.4321218691162207,
+        0.42139556113425003,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 62
+    }
+  },
+  "feedback": [
+    "Actual independent GLB retains latest visible-casing refinement: broad upper horizontal ribs and long lower vertical ribs beside slender front conduit, grey connector, bronze vessel and genuinely open silver crown with internal floor and central tip.",
+    "Five protected mapped radial/crown surfaces retain exact evaluated geometry and four measurable dents. Reduction affects eight casing pieces only, preserving solid backing/rib contacts and keeping the pale conduit unobscured.",
+    "An additional local-planar UV assertion found that decimation did not retain the established projection on casing faces. finish_rigellian_energy_uvs.py reapplies the same authored dominant-axis projection on all eight pieces without changing source maps or geometry. Actual saved-native and independent GLB verification was rerun and passes the strengthened per-corner UV assertion; failed private run is not acceptance evidence.",
+    "Concept thickens conduit/uprights, exaggerates fixtures and changes ribbed divisions to grooves. Reject these source departures. Exact crown upright count, depth, unseen rear and hidden function remain authored interpretation; source deliberately leaves generation method unknown.",
+    "Catalogue phases reveal/highlight, not a mechanical cycle; current directional selector excludes ID053. No emission, reactor mechanism or motion is invented. Shared RIS2 construction remains separate.",
+    "Asset budget is substantial; actual client cost, scale/state/damage integration and final user artistic acceptance remain unproved."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

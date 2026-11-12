@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/135",
+  "key": "MN06",
+  "name": "The Cube",
+  "culture": "mauna",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 255,
+  "construction_updates": 30,
+  "triangles": 1716,
+  "triangle_budget": 30000,
+  "mesh_nodes": 16,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_mauna_the_cube.py",
+  "author_sha256": "a2573425c3a53aab7de4bed52279ec0ccf047d947c4085896597cc5e5e381572",
+  "binaries": {
+    "blend": "5c249c8ba2aa83846c18a008ac5893477bf372fcf82e1d61757cd362ef90574c",
+    "glb": "9a0a7560c26a83f64330ae6b4512d9463e3bf78462e764033c88ea2491d31f9d"
+  },
+  "textures": {
+    "cast-concrete-colour.png": "4e4f32031c7fb20f6335c2bd7f3a0bc79c79877a0aa420dc5eed5f2c526cc924",
+    "cast-service-normal.png": "3bd8efa5590cacae2283fa3a661dbc77c2eaa71f31df1a35fe307c578102d4a1",
+    "concrete-orm.png": "4e87c655c68f859c495d02eed353e093b9205dbe75232d719bc1aff92045d650",
+    "metal-orm.png": "44c3d83b04521810322375c7437a6a47bb0f76c6511e450ddb4d2131fca6ef38",
+    "pale-alloy-colour.png": "34c54b31213fc26d60d51f006c1bac6e4ff1eec839272a16879b53085f281fda",
+    "recess-red-colour.png": "edb81fb1878e23b445e9045f5ca3711f68233d8859a32c2bcd61c71ca05dec44",
+    "used-brass-colour.png": "5f906b9b6ba72d3c176e8306d6c73d811ef17301103e3f1836763ddf8c2baf8d"
+  },
+  "rectangular_recesses": [
+    {
+      "object": "The Cube upper front red band",
+      "point": [
+        0.0,
+        -0.7800002098083496,
+        1.6200000047683716
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.028
+    },
+    {
+      "object": "The Cube upper corner red return",
+      "point": [
+        0.7799999713897705,
+        -0.5699999928474426,
+        1.6200000047683716
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.028
+    },
+    {
+      "object": "The Cube lower right red band 0",
+      "point": [
+        0.7799999713897705,
+        -0.44999998807907104,
+        0.30000001192092896
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.028
+    },
+    {
+      "object": "The Cube lower front red return 0",
+      "point": [
+        0.6000000238418579,
+        -0.7799997329711914,
+        0.30000001192092896
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.028
+    },
+    {
+      "object": "The Cube lower right red band 1",
+      "point": [
+        0.7799999713897705,
+        -0.44999998807907104,
+        0.6000000238418579
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.028
+    },
+    {
+      "object": "The Cube lower front red return 1",
+      "point": [
+        0.6000000238418579,
+        -0.7800002098083496,
+        0.6000000238418579
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "depth": 0.028
+    },
+    {
+      "object": "The Cube three pale side slits",
+      "point": [
+        0.7799999713897705,
+        0.0,
+        1.4299999475479126
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.012
+    },
+    {
+      "object": "The Cube three pale side slits",
+      "point": [
+        0.7799999713897705,
+        0.2800000011920929,
+        1.4299999475479126
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.012
+    },
+    {
+      "object": "The Cube three pale side slits",
+      "point": [
+        0.7799997329711914,
+        0.49000000953674316,
+        1.4299999475479126
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "depth": 0.012
+    }
+  ],
+  "front_slit_contacts": [
+    [
+      -0.5799999833106995,
+      -0.7530001997947693,
+      1.6200000047683716
+    ],
+    [
+      -0.28999999165534973,
+      -0.7530001997947693,
+      1.6200000047683716
+    ],
+    [
+      0.0,
+      -0.7530001997947693,
+      1.6200000047683716
+    ],
+    [
+      0.28999999165534973,
+      -0.7530001997947693,
+      1.6200000047683716
+    ],
+    [
+      0.5799999833106995,
+      -0.7530001997947693,
+      1.6200000047683716
+    ]
+  ],
+  "front_post_contacts": [
+    {
+      "index": 0,
+      "body_contact": [
+        -0.58,
+        -0.765,
+        0.43
+      ],
+      "cap_contact": [
+        -0.58,
+        -0.81,
+        0.645
+      ]
+    },
+    {
+      "index": 1,
+      "body_contact": [
+        -0.02,
+        -0.765,
+        0.43
+      ],
+      "cap_contact": [
+        -0.02,
+        -0.81,
+        0.645
+      ]
+    },
+    {
+      "index": 2,
+      "body_contact": [
+        0.54,
+        -0.765,
+        0.43
+      ],
+      "cap_contact": [
+        0.54,
+        -0.81,
+        0.645
+      ]
+    }
+  ],
+  "right_staves": [
+    {
+      "index": 0,
+      "u": -0.66,
+      "bottom": 0.02,
+      "top": 1.65,
+      "body_contact": [
+        0.765,
+        -0.66,
+        0.43
+      ]
+    },
+    {
+      "index": 1,
+      "u": -0.49,
+      "bottom": 0.04,
+      "top": 1.7,
+      "body_contact": [
+        0.765,
+        -0.49,
+        0.43
+      ]
+    },
+    {
+      "index": 2,
+      "u": -0.18,
+      "bottom": 0.02,
+      "top": 0.78,
+      "body_contact": [
+        0.765,
+        -0.18,
+        0.43
+      ]
+    },
+    {
+      "index": 3,
+      "u": 0.18,
+      "bottom": 0.04,
+      "top": 1.32,
+      "body_contact": [
+        0.765,
+        0.18,
+        0.43
+      ]
+    },
+    {
+      "index": 4,
+      "u": 0.64,
+      "bottom": 0.06,
+      "top": 1.88,
+      "body_contact": [
+        0.765,
+        0.64,
+        0.43
+      ]
+    }
+  ],
+  "roof_pins": [
+    {
+      "index": 0,
+      "contact": [
+        -0.14,
+        0.56,
+        1.943
+      ],
+      "top": 2.105
+    },
+    {
+      "index": 1,
+      "contact": [
+        0.25,
+        0.06,
+        1.943
+      ],
+      "top": 2.055
+    },
+    {
+      "index": 2,
+      "contact": [
+        0.42,
+        0.06,
+        1.943
+      ],
+      "top": 2.085
+    }
+  ],
+  "roof_cells": [
+    {
+      "index": 0,
+      "centre": [
+        -0.32,
+        -0.18
+      ],
+      "floor": 2.0,
+      "contact": [
+        -0.32,
+        -0.18,
+        1.995
+      ]
+    },
+    {
+      "index": 1,
+      "centre": [
+        -0.16,
+        -0.18
+      ],
+      "floor": 2.0,
+      "contact": [
+        -0.16,
+        -0.18,
+        1.995
+      ]
+    }
+  ],
+  "physical_chips": [
+    {
+      "body": "The Cube concrete core",
+      "point": [
+        -0.3799999952316284,
+        -0.7799999713897705,
+        0.9700000286102295
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "body": "The Cube shallow overhanging roof lip",
+      "point": [
+        0.5,
+        0.4000000059604645,
+        1.9500000476837158
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "interpretation": [
+    "Own greybluecube/rooflip,redbands,5front/3rightpaleslits,3cappedfrontbrassposts/5unequalrightstaves,lowroofvent/3pins govern geometry.",
+    "Nearcornerbandextent,angularpins,two-cellroofventreading,hiddenrearwalls/attachmentdepths/cellrelative dimensions authored. Uniqueclass255hasno genericPB/STbinding;no operatinganimation/emission/symbols inferred."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront. Cell-relative proportions authored;no recovered metric dimensions.",
+  "concept_review": "sources/docs/reconstruction/models/mn06-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

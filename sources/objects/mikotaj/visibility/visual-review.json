@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/097",
+  "binaries": {
+    "blend": "605ce0c02749c0c4a0080ea9075b624967b0c712d84a78555321df7014b36df1",
+    "glb": "fe1b620dd0a2e64b3b32cf5e923a8d09230c90f98a98b8f8c2675b3b69fcfdd3"
+  },
+  "runtime_report_sha256": "ae3ea3da3d132d331115961c63c1c787868ba8f04c8492ef8659d3cbd09a3667",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0024778720265535683,
+      "margin": 55
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0038193808389814982,
+      "margin": 43
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0030397663179643065,
+      "margin": 56
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk12-review-1.png",
+      "sha256": "91623cc74a0533859d621169afcf184dac1857a7396e929b3fa97ad85c980699",
+      "prompt": "sources/docs/reconstruction/models/mk12-concept-prompt-1.txt",
+      "feedback": "Selected: tall asymmetric mineral silo, dark vertical clefts, lower single blue status lens, two upper-right cross-ribs and small energetic gold spiral. The concept has more fine fractures and a larger throat opening than source pixels establish; exact inner sections/wear remain authored, restrained in GLB."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "stage": "Complete native/import geometry and seven-state pass.",
+      "discrepancies": [
+        "Straight clefts give regular vase-like body rather than the wavy/asymmetric original.",
+        "Golden band flat and too uniform for source energetic ribbon."
+      ],
+      "corrections": [
+        "Wavy cleft courses and a broader right foot; source-derived paired ribs seated against actual casing endpoints.",
+        "Authored continuous wisps in emissive gold map and physical wear chips."
+      ]
+    },
+    {
+      "stage": "Revised native render; independent import texture equality rejected a synthesized ORM variant, not a completed import pass.",
+      "finding": "Unlinking the gold metallic channel made glTF bake a second ORM image. All original images match, but that synthesized ninth image has no explicit native counterpart. Coarse inherited material regions also leave rectangular boundaries at the wavy cleft.",
+      "correction": "Author and pack explicit low-metallic energy ORM map, connect both PBR channels; assign cleft material after subdivision at actual coordinates and keep Boolean chips exposed."
+    }
+  ],
+  "final_review": "Actual saved-native and independent GLB keep the tall flared mineral casing, wavy dark clefts, single low red/blue status port, two seated upper-right ribs and energetic gold spiral. Feedback replaces straight vase-like grooves with source-specific undulation/asymmetry, adds physical wear chips and continuous emissive wisps and explicit portable energy ORM. Seven actual animated states verify winding/disappearance and both colours of the same port.",
+  "limitations": [
+    "Exact hidden sections, winding representation, energetic material and continuous timing are authored from limited original views.",
+    "A single skinned ribbon mesh uses96bones; tiny hidden pieces/alternate lens surface stow inside opaque footing. Colour swap is visibility encoding, not a claimed mechanical lamp motion.",
+    "Final user artistic acceptance, client state/scale/skin/shaders, satellite fit and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

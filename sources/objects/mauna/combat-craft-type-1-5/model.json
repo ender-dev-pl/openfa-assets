@@ -1,0 +1,755 @@
+{
+  "id": "openfa:ship/mauna/combat-craft-type-1-5",
+  "issue": 251,
+  "name": "Combat Craft Type 1.5",
+  "key": "MN1A",
+  "source": "docs/assets/reconstruction/ships/mauna/combat-craft-type-1-5",
+  "size_class": "small/medium combat craft",
+  "world_size_proposal": 56,
+  "equipment_slots": 4,
+  "material_tiles": {
+    "Type 1.5 | carbon dark strips": 4,
+    "Type 1.5 | dull pale blue grey end": 3,
+    "Type 1.5 | oxidized service alloy": 1,
+    "Type 1.5 | worn grey low hull": 0
+  },
+  "part_face_budget": {
+    "low body": 9000,
+    "raised deck": 5000,
+    "service frame": 400,
+    "inset": 350,
+    "dark service strip": 120,
+    "deck hatch": 500,
+    "deck dark strip": 120,
+    "fastener": 150,
+    "default": 250
+  },
+  "edge_finish": {
+    "part_keywords": [
+      "service frame",
+      "deck hatch"
+    ],
+    "width": 0.003,
+    "segments": 2,
+    "angle_limit": 0.52
+  },
+  "max_triangles": 55000,
+  "max_primitives": 6,
+  "comparison_elevation": 0.95,
+  "comparison_azimuth": 0,
+  "reference_side_bounds": [
+    16,
+    6
+  ],
+  "protected_dents": [
+    {
+      "part": "Type 1.5 chamfered low body",
+      "undented_point": [
+        -0.32,
+        0,
+        0
+      ],
+      "outward": [
+        -1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0025
+    },
+    {
+      "part": "Type 1.5 chamfered low body",
+      "undented_point": [
+        0.32,
+        0,
+        0
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "minimum_depth": 0.0025
+    },
+    {
+      "part": "Type 1.5 aft raised deck",
+      "x": 0,
+      "y": 0.18,
+      "undented_z": 0.23,
+      "minimum_depth": 0.0025
+    }
+  ],
+  "attachment_pairs": [
+    {
+      "part": "Type 1.5 service frame -1 0",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 grey inset -1 0",
+      "support": "Type 1.5 service frame -1 0"
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 0 0",
+      "support": "Type 1.5 grey inset -1 0"
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 0 1",
+      "support": "Type 1.5 grey inset -1 0"
+    },
+    {
+      "part": "Type 1.5 service frame -1 1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 grey inset -1 1",
+      "support": "Type 1.5 service frame -1 1"
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 1 0",
+      "support": "Type 1.5 grey inset -1 1"
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 1 1",
+      "support": "Type 1.5 grey inset -1 1"
+    },
+    {
+      "part": "Type 1.5 service frame 1 0",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 grey inset 1 0",
+      "support": "Type 1.5 service frame 1 0"
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 0 0",
+      "support": "Type 1.5 grey inset 1 0"
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 0 1",
+      "support": "Type 1.5 grey inset 1 0"
+    },
+    {
+      "part": "Type 1.5 service frame 1 1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 grey inset 1 1",
+      "support": "Type 1.5 service frame 1 1"
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 1 0",
+      "support": "Type 1.5 grey inset 1 1"
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 1 1",
+      "support": "Type 1.5 grey inset 1 1"
+    },
+    {
+      "part": "Type 1.5 deck hatch",
+      "support": "Type 1.5 aft raised deck"
+    },
+    {
+      "part": "Type 1.5 deck dark strip 0",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 deck dark strip 1",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 deck dark strip 2",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 side seam strip -1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 end seam strip -1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 end interface -1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 0 0",
+      "support": "Type 1.5 service frame -1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 0 1",
+      "support": "Type 1.5 service frame -1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 1 0",
+      "support": "Type 1.5 service frame -1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 1 1",
+      "support": "Type 1.5 service frame -1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 0 0",
+      "support": "Type 1.5 service frame -1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 0 1",
+      "support": "Type 1.5 service frame -1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 1 0",
+      "support": "Type 1.5 service frame -1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 1 1",
+      "support": "Type 1.5 service frame -1 1"
+    },
+    {
+      "part": "Type 1.5 side seam strip 1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 end seam strip 1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 end interface 1",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 0 0",
+      "support": "Type 1.5 service frame 1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 0 1",
+      "support": "Type 1.5 service frame 1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 1 0",
+      "support": "Type 1.5 service frame 1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 1 1",
+      "support": "Type 1.5 service frame 1 0"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 0 0",
+      "support": "Type 1.5 service frame 1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 0 1",
+      "support": "Type 1.5 service frame 1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 1 0",
+      "support": "Type 1.5 service frame 1 1"
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 1 1",
+      "support": "Type 1.5 service frame 1 1"
+    },
+    {
+      "part": "Type 1.5 deck fastener 0 0",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 deck fastener 0 1",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 deck fastener 1 0",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 deck fastener 1 1",
+      "support": "Type 1.5 deck hatch"
+    },
+    {
+      "part": "Type 1.5 fore raised deck",
+      "support": "Type 1.5 chamfered low body"
+    },
+    {
+      "part": "Type 1.5 aft raised deck",
+      "support": "Type 1.5 chamfered low body"
+    }
+  ],
+  "void_rays": [
+    {
+      "origin": [
+        -2,
+        -0.62,
+        0.18
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        -0.585,
+        0.18
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        -0.55,
+        0.18
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    }
+  ],
+  "solid_rays": [
+    {
+      "origin": [
+        -2,
+        -0.8,
+        0.18
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    },
+    {
+      "origin": [
+        -2,
+        -0.3,
+        0.18
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 4
+    }
+  ],
+  "interpretation": "Low chamfered grey beam with two unequal raised decks, a shallow open gap and small opaque pale blue-grey fore service field. Deck engineering and hidden surfaces are interpretation, not recovered exact geometry. Four equipment slots uncalibrated; no glazing, emission, weapons or engines inferred. WorldSize56 is a client proposal.",
+  "comparison_heading_directions": {
+    "12": [
+      0,
+      -1,
+      0.95
+    ],
+    "28": [
+      0,
+      1,
+      0.95
+    ]
+  },
+  "stage": "mobile-ship-remaster",
+  "baseline_sha256": "73b36ffe2ec8ecdd3d754ca24871f1af9d1bdc08d73884febf317c8a05798c9c",
+  "baseline_bounds": [
+    [
+      -0.34200000762939453,
+      -1.120500087738037,
+      -0.17000000178813934
+    ],
+    [
+      0.34200000762939453,
+      1.120500087738037,
+      0.25200000405311584
+    ]
+  ],
+  "final_bounds": [
+    [
+      -0.34200000762939453,
+      -1.120500087738037,
+      -0.17000000178813934
+    ],
+    [
+      0.34200000762939453,
+      1.120500087738037,
+      0.25200000405311584
+    ]
+  ],
+  "triangles": 34456,
+  "mesh_batches": 4,
+  "material_count": 1,
+  "packed_maps": 3,
+  "editable_part_vertex_groups": {
+    "PrimaryHullAndArmour": [
+      "Type 1.5 chamfered low body",
+      "Type 1.5 fore raised deck",
+      "Type 1.5 aft raised deck",
+      "Type 1.5 deck hatch"
+    ],
+    "RecessedMachinery": [
+      "Type 1.5 end interface -1",
+      "Type 1.5 end interface 1",
+      "Type 1.5 grey inset -1 0",
+      "Type 1.5 dark service strip -1 0 0",
+      "Type 1.5 dark service strip -1 0 1",
+      "Type 1.5 grey inset -1 1",
+      "Type 1.5 dark service strip -1 1 0",
+      "Type 1.5 dark service strip -1 1 1",
+      "Type 1.5 grey inset 1 0",
+      "Type 1.5 dark service strip 1 0 0",
+      "Type 1.5 dark service strip 1 0 1",
+      "Type 1.5 grey inset 1 1",
+      "Type 1.5 dark service strip 1 1 0",
+      "Type 1.5 dark service strip 1 1 1",
+      "Type 1.5 deck dark strip 0",
+      "Type 1.5 deck dark strip 1",
+      "Type 1.5 deck dark strip 2"
+    ],
+    "TrimAndFasteners": [
+      "Type 1.5 side seam strip -1",
+      "Type 1.5 end seam strip -1",
+      "Type 1.5 side seam strip 1",
+      "Type 1.5 end seam strip 1",
+      "Type 1.5 frame fastener -1 0 0 0",
+      "Type 1.5 frame fastener -1 0 0 1",
+      "Type 1.5 frame fastener -1 0 1 0",
+      "Type 1.5 frame fastener -1 0 1 1",
+      "Type 1.5 frame fastener -1 1 0 0",
+      "Type 1.5 frame fastener -1 1 0 1",
+      "Type 1.5 frame fastener -1 1 1 0",
+      "Type 1.5 frame fastener -1 1 1 1",
+      "Type 1.5 frame fastener 1 0 0 0",
+      "Type 1.5 frame fastener 1 0 0 1",
+      "Type 1.5 frame fastener 1 0 1 0",
+      "Type 1.5 frame fastener 1 0 1 1",
+      "Type 1.5 frame fastener 1 1 0 0",
+      "Type 1.5 frame fastener 1 1 0 1",
+      "Type 1.5 frame fastener 1 1 1 0",
+      "Type 1.5 frame fastener 1 1 1 1",
+      "Type 1.5 deck fastener 0 0",
+      "Type 1.5 deck fastener 0 1",
+      "Type 1.5 deck fastener 1 0",
+      "Type 1.5 deck fastener 1 1"
+    ],
+    "ServiceAssemblies": [
+      "Type 1.5 service frame -1 0",
+      "Type 1.5 service frame -1 1",
+      "Type 1.5 service frame 1 0",
+      "Type 1.5 service frame 1 1"
+    ]
+  },
+  "reductions": [
+    {
+      "part": "Type 1.5 chamfered low body",
+      "source_faces": 11904,
+      "final_faces": 9000,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 1.5 fore raised deck",
+      "source_faces": 2240,
+      "final_faces": 2240,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 1.5 aft raised deck",
+      "source_faces": 9632,
+      "final_faces": 5000,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 1.5 end interface -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 3
+    },
+    {
+      "part": "Type 1.5 side seam strip -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 end seam strip -1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 end interface 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 1.5 side seam strip 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 end seam strip 1",
+      "source_faces": 98,
+      "final_faces": 98,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 service frame -1 0",
+      "source_faces": 440,
+      "final_faces": 1046,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 1.5 grey inset -1 0",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 0 0",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 0 1",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 0 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 service frame -1 1",
+      "source_faces": 440,
+      "final_faces": 1044,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 1.5 grey inset -1 1",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 1 0",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 dark service strip -1 1 1",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener -1 1 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 service frame 1 0",
+      "source_faces": 440,
+      "final_faces": 1044,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 1.5 grey inset 1 0",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 0 0",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 0 1",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 0 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 service frame 1 1",
+      "source_faces": 440,
+      "final_faces": 1040,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 1.5 grey inset 1 1",
+      "source_faces": 440,
+      "final_faces": 700,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 1 0",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 dark service strip 1 1 1",
+      "source_faces": 440,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 frame fastener 1 1 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 deck hatch",
+      "source_faces": 1384,
+      "final_faces": 1230,
+      "atlas_tile": 0
+    },
+    {
+      "part": "Type 1.5 deck dark strip 0",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 deck dark strip 1",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 deck dark strip 2",
+      "source_faces": 1120,
+      "final_faces": 240,
+      "atlas_tile": 4
+    },
+    {
+      "part": "Type 1.5 deck fastener 0 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 deck fastener 0 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 deck fastener 1 0",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    },
+    {
+      "part": "Type 1.5 deck fastener 1 1",
+      "source_faces": 114,
+      "final_faces": 114,
+      "atlas_tile": 1
+    }
+  ],
+  "generator_sha256": "867880874549de38529bd10b81416f4718c4a6f95b17b0498efd78848915f39e",
+  "recipe_sha256": "b85155e1a26899a251b38c0bba7c35b0e88b2b40347514a1e693b1286912fa94",
+  "shared_primitives_sha256": "1469b823c8eb59eeca4372d8f5b4059f9ab1de5a1d02e4ddcf3ae9a650cbffa1",
+  "shared_recipe_helpers_sha256": "7c152a5afe634f62d26a8666787d99944caa5000110239bb54f59db5e9f61d1b",
+  "maps_generator_sha256": "214e5905f8120d78085a7c4985a20447e595d7a29eb129cc50be5609a0d209e0",
+  "map_sha256": {
+    "colour.png": "97cf240ad0545c4d5466a68bedaf6c791ce2bf42214e3423cf2c09034fd2640d",
+    "normal.png": "e6960df773dd4f734a84bf0f9cc0b7919c62d43f642bb343ac084010997c8119",
+    "orm.png": "b73e975099985d68baab3e196f575c2ca58d15df0132175b8d2d1ee3e9a44087"
+  },
+  "blend_sha256": "6534de549ac16a574e26e86b7aeb3fee59adf8cd5737fb65af275ffb89a573cd",
+  "glb_sha256": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
+  "visual_acceptance": "Agent actual legacy/concept/imported GLB review complete; final user acceptance and client calibration separate"
+}

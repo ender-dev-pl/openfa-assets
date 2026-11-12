@@ -1,0 +1,159 @@
+{
+  "issue": 265,
+  "culture": "achaean",
+  "role": "repair",
+  "max_cycles": 3,
+  "final_user_artistic_acceptance": false,
+  "cycles": [
+    {
+      "number": 1,
+      "status": "visually-reviewed",
+      "baseline_commit": "007251cd5d65473d32f300ba55679e97ac5669d2",
+      "baseline_binaries": {
+        "blend": "789fa6928f7c7d76c977fff3e18dc5cd68456dbd940893bdd454483f2930e9b3",
+        "glb": "0e4a987407938e7bf079e336a060a32949b4a3f4fde4ee41aadf9002e0c0be18"
+      },
+      "baseline_author_sha256": "f2e901ec2788cd97c5ab2e568d8515a8b920848ba47e5011fd71267d1266a724",
+      "canonical_references": [
+        {
+          "name": "Dedicated Fighter",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/achaean/dedicated-fighter",
+          "stage": "legacy-hi-def-remaster",
+          "model": "sources/objects/achaean/dedicated-fighter/model.glb",
+          "image": "gallery/media/objects/achaean/dedicated-fighter/front-quarter.png",
+          "model_sha256": "78b8144db063fed2947dd075dc7691eeef584b91bccfd98684f3dc02cd6e47a9",
+          "image_sha256": "ef0f33f0f2493d5c64ccf43958514fed893296d1abfb580835dddd3a4ec0764f",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/achaean/canonical-references/dedicated-fighter-front-quarter.png",
+            "sha256": "7e11ec734e79bea1c6ccd3cdc86bfc20daf18d78059bdbf84bcc82a01b300d7c"
+          }
+        },
+        {
+          "name": "Hunter/Prospector",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/achaean/hunter-prospector",
+          "stage": "legacy-hi-def-remaster",
+          "model": "sources/objects/achaean/hunter-prospector/model.glb",
+          "image": "gallery/media/objects/achaean/hunter-prospector/front-quarter.png",
+          "model_sha256": "a2f09789f56162e3570f6bc2dcc01fc837f1ad388ac65210c2d0efaeff00ef5c",
+          "image_sha256": "3e13d83b0a70124102f64e3c89610c13bc672e5246231e132c21fa7960343ed5",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/achaean/canonical-references/hunter-prospector-front-quarter.png",
+            "sha256": "91458d3db612fdcd3d0e8068661a01fa8ebcf1dcba83fbd12ef426545b8bbb23"
+          }
+        }
+      ],
+      "intent": "Match current canonical copper/dark-red/silver region colours and spindle construction while retaining exactly mirrored repair wings. Preserve rooted working tools and add wrist alignment plus independently closing repair claws after support positioning.",
+      "decision": "continue-to-cycle-2",
+      "author_sha256": "2e56c6bbb8904bee52abbdb21e675d56697c9cd8f626b060abb7565b22563792",
+      "binaries": {
+        "blend": "3bd7c60651820d093149f30c20d41c9e268f6cf0af7ba5a04765b2b04248c51c",
+        "glb": "35b05d2a2eea5cd479ff2b6310cf109a3293a85e81c63e81c484d19b9c9b5160"
+      },
+      "runtime_review_sha256": "7848a54b0f953e84507e15923c162444439f4af94633e1038866bd5bb00f8d18",
+      "comparison_conditions": "Actual current canonical and engineering GLB imports rendered in the same studio;independent display fit,not physical scale.",
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/achaean/canonical-reference-review.json",
+        "sha256": "2cbc7d679804e7639d57f17816d221514375b02f6cf8b5abb7c61a1481416bc8"
+      },
+      "observations": [
+        "Actual native/GLB views show a more pointed forebody,canonical copper/crimson/silver targets and retained mirrored repair wing structure. Supported shoulder/wrist/claw articulation passes native/import geometry checks.",
+        "Red wing fields use a truncated spline with different endpoint tangents from the full silver wing. They visibly dip into the silver surface and produce rectangular paint breaks. Use cycle2 to follow the exact full wing spline and retain narrow edge margins.",
+        "The small dark sensor inherits the shared visor gloss override;cycle2 will explicitly fit roughness as well as metalness to the canonical tile target."
+      ],
+      "remaining": [
+        "Paint-field/wing spline alignment and sensor roughness correction in cycle2.",
+        "User artistic acceptance,physical scale and continuous swept clearance pending."
+      ],
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/achaean/repair/canonical-style-cycle-01.png",
+        "sha256": "7862866a8034f1e4d4bbcf0965f4275f6d2aa0cbb4db53ba4445caed0018c28d"
+      }
+    },
+    {
+      "number": 2,
+      "status": "visually-reviewed",
+      "baseline_commit": "007251cd5d65473d32f300ba55679e97ac5669d2",
+      "baseline_binaries": {
+        "blend": "3bd7c60651820d093149f30c20d41c9e268f6cf0af7ba5a04765b2b04248c51c",
+        "glb": "35b05d2a2eea5cd479ff2b6310cf109a3293a85e81c63e81c484d19b9c9b5160"
+      },
+      "baseline_author_sha256": "2e56c6bbb8904bee52abbdb21e675d56697c9cd8f626b060abb7565b22563792",
+      "baseline_preview": {
+        "path": "gallery/media/proposals/engineering-ships/achaean/repair/cycle-01-front-quarter.png",
+        "sha256": "bdfc923f078a4f91ad107c85212269c464c0a8212679ffd917506db11c3d3f33"
+      },
+      "canonical_references": [
+        {
+          "name": "Dedicated Fighter",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/achaean/dedicated-fighter",
+          "stage": "legacy-hi-def-remaster",
+          "model": "sources/objects/achaean/dedicated-fighter/model.glb",
+          "image": "gallery/media/objects/achaean/dedicated-fighter/front-quarter.png",
+          "model_sha256": "78b8144db063fed2947dd075dc7691eeef584b91bccfd98684f3dc02cd6e47a9",
+          "image_sha256": "ef0f33f0f2493d5c64ccf43958514fed893296d1abfb580835dddd3a4ec0764f",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/achaean/canonical-references/dedicated-fighter-front-quarter.png",
+            "sha256": "7e11ec734e79bea1c6ccd3cdc86bfc20daf18d78059bdbf84bcc82a01b300d7c"
+          }
+        },
+        {
+          "name": "Hunter/Prospector",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/achaean/hunter-prospector",
+          "stage": "legacy-hi-def-remaster",
+          "model": "sources/objects/achaean/hunter-prospector/model.glb",
+          "image": "gallery/media/objects/achaean/hunter-prospector/front-quarter.png",
+          "model_sha256": "a2f09789f56162e3570f6bc2dcc01fc837f1ad388ac65210c2d0efaeff00ef5c",
+          "image_sha256": "3e13d83b0a70124102f64e3c89610c13bc672e5246231e132c21fa7960343ed5",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/achaean/canonical-references/hunter-prospector-front-quarter.png",
+            "sha256": "91458d3db612fdcd3d0e8068661a01fa8ebcf1dcba83fbd12ef426545b8bbb23"
+          }
+        }
+      ],
+      "comparison_conditions": "Actual current canonical and engineering GLB imports rendered in the same studio;independent display fit,not physical scale.",
+      "intent": "Follow the exact full silver-wing spline for red fields with adaptive narrow margins;preserve mirrored fixed wing geometry. Explicitly fit ORM roughness and metalness for all four canonical target materials.",
+      "decision": "author-review-complete",
+      "author_sha256": "f71c0a6e49a17b55e871c5244cd33f4450b1c2bc5e2c09eae3a94e8dfdf229b0",
+      "binaries": {
+        "blend": "aeb524def87c654a8933567a623099cad9a267ed0ec86c2c38fea012a62df735",
+        "glb": "63f1a86236f4bf460347572bfe94a6a71d1b0e69bd73fce4be24942fb0438b50"
+      },
+      "runtime_review_sha256": "31d968384e39670dfa46544052cb05e42638cc33fa4929210618371d8fb52cb3",
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/achaean/canonical-reference-review.json",
+        "sha256": "2cbc7d679804e7639d57f17816d221514375b02f6cf8b5abb7c61a1481416bc8"
+      },
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/achaean/repair/canonical-style-cycle-02.png",
+        "sha256": "9cc371b933fc068f6adcc0cf07fe92f71674d7e5eee1e0491e02ac1decc80df9"
+      },
+      "observations": [
+        "Actual native and independently imported front/rear/top renders were inspected against current Dedicated Fighter and Hunter/Prospector GLBs in the same studio. The pointed copper spindle,thin silver/crimson crescents and sparse hatches retain the cultural family;the utility wing/grader layout is deliberately distinct from combat/scout proportions.",
+        "Cycle1 replaced the rounded forebody and matched colour/metal targets,then exposed red-field breaks caused by truncated spline endpoint tangents. Cycle2 follows the full silver-wing spline for both mirrored red fields and explicitly fits roughness as well as metalness. Four colour/full ORM medians now match actual shared canonical atlas tile interiors within one byte;wear remains independently authored without a dense panel grid.",
+        "Actual working poses at0/1/2/3seconds were inspected. The crescent grader keeps its rooted pivot. Repair support positioning and wrist alignment precede two independent claws closing/releasing and returning. Six sampled native/import support and animated-surface checks pass;fixed wings do not move with the intentionally asymmetric ventral tool.",
+        "Native repair wing vertices/counts remain mirrored. Imported red-field pairs can have different UV/normal corner splits (589 versus584) while triangle counts and actual mirrored surfaces agree below1e-5. The specialized verifier now preserves strict native counts and verifies equal imported triangles plus bidirectional mirrored surfaces. Its actual displaced-vertex negative control still rejects distorted wings in both representations.",
+        "User artistic acceptance,physical game scale,platform profiling and continuous swept clearance remain pending. These are authored proposal units awaiting mechanics;canonical models and gameplay/runtime catalogues are unchanged."
+      ],
+      "remaining": [
+        "User artistic acceptance.",
+        "Function-specific compact crescents,grader and ventral tools remain distinct from combat/scout forms.",
+        "Physical game scale,profiling and continuous swept clearance outside proposal review."
+      ]
+    }
+  ],
+  "cycles_used": 2,
+  "cycles_remaining": 1,
+  "current_binaries": {
+    "blend": "aeb524def87c654a8933567a623099cad9a267ed0ec86c2c38fea012a62df735",
+    "glb": "63f1a86236f4bf460347572bfe94a6a71d1b0e69bd73fce4be24942fb0438b50"
+  },
+  "status": "author-style-review-complete-user-acceptance-pending"
+}

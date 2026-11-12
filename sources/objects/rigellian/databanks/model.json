@@ -1,0 +1,57 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/047",
+  "name": "Databanks",
+  "author_sha256": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+  "recipe": "sources/objects/rigellian/databanks/recipe.json",
+  "recipe_sha256": "62b1f772fac0f25efa52662ba72b72df9c74fa138919aa0adf0a8523d8b1f9f8",
+  "camera_helper_sha256": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+  "source": "sources/docs/assets/reconstruction/rigellian-refined/ri08/model.blend",
+  "source_sha256": "6c31e174e16cceba7c7e8716d961604b23dfbb86d92c677a364c50433c5c4d8b",
+  "binaries": {
+    "blend": "6811da5ca5d1b9f036ca5d85e046b8287886912572abc3c7be0418e255b57a8f",
+    "glb": "1fc633638c2622bdea75421ed1996648d31612111c69c2636b30d379d9690e68"
+  },
+  "original_triangles": 82360,
+  "triangles": 77840,
+  "mesh_nodes": 50,
+  "changes": [
+    {
+      "name": "RI08 ground machined rim",
+      "original_triangles": 2560,
+      "triangles": 1484,
+      "bidirectional_vertex_surface_error": 0.0006656725890934467,
+      "accepted": true
+    },
+    {
+      "name": "RI08 neck contaminated gasket",
+      "original_triangles": 2560,
+      "triangles": 1484,
+      "bidirectional_vertex_surface_error": 0.0003934665000997484,
+      "accepted": true
+    },
+    {
+      "name": "RI08 middle perimeter seam",
+      "original_triangles": 2560,
+      "triangles": 1484,
+      "bidirectional_vertex_surface_error": 0.0006048719515092671,
+      "accepted": true
+    },
+    {
+      "name": "RI08 head lower machined joint",
+      "original_triangles": 3072,
+      "triangles": 1780,
+      "bidirectional_vertex_surface_error": 0.0004915410536341369,
+      "accepted": true
+    }
+  ],
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 255,
+  "construction_updates": 44,
+  "scope": "Measured candidate tessellation reduction, existing anatomy/materials/components retained. Requires saved-native and independent GLB verification and actual visual feedback before delivery.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

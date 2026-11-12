@@ -1,0 +1,137 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/175",
+  "key": "AC25",
+  "name": "Stun Tower",
+  "culture": "achaean",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 27,
+  "construction_updates": 26,
+  "triangle_budget": 30000,
+  "materials": 6,
+  "mesh_nodes": 23,
+  "triangles": 12248,
+  "author": "sources/tools/blender/remaster_achaean_stun_tower.py",
+  "author_sha256": "1ae06bb4741467c329329e8f7a01786f03ada550d78c231bc09bb4d2ae06c67f",
+  "helpers": {
+    "sources/tools/blender/achaean_remaster_geometry.py": "5866833f81934d4b6a56cc927c7d7acf83640d6ec17652c8836ce2ae59b06621",
+    "sources/tools/blender/remaster_achaean_shipyard.py": "48458c78408d329f83dc1f413af5d3f2ae685358dd28fb33c3aef46e25b3f0a5",
+    "sources/tools/blender/remaster_achaean_manoeuvring_device.py": "d059d083422720513ac2ca8f7cca1703bee299aae57495acd9f5b80c0439c3f4",
+    "sources/tools/blender/remaster_achaean_missile_launcher.py": "8a24bce326873bed11be0ee8f021acc3c8990440eb6a4d7291e4bab02fa54c3d",
+    "sources/tools/blender/checks_achaean_shipyard.py": "11a1a192cb115676d686c0cbbe764e1fac8080648dd00eaf7e8d15a143fcf012",
+    "tools/publication_support.py": "1ca33a96160e3d812a7344a3e63b48f871147cf3a5cf046e307de038c0b2656f",
+    "sources/docs/assets/bootstrap-3d/full-catalogue/achaean/ac25/model.blend": "bf60a7e485058dbed2651e9912ea18c25448c5d8c86cbab3ac9b996f127c65f8"
+  },
+  "binaries": {
+    "blend": "e496841ad3cd88914dc256584403981d4c78211665b0f3c86c6333555f9c3273",
+    "glb": "814dc694abe1bad49deefc62dd28eef3ab459f734bc5f2e612a4aa404ad573bb"
+  },
+  "animation": {
+    "retained_controller_signature": {
+      "location": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "rotation_mode": "XYZ",
+      "action": "HeadingPreview_360",
+      "curves": [
+        {
+          "path": "rotation_euler",
+          "index": 2,
+          "keys": [
+            {
+              "co": [
+                1.0,
+                0.0
+              ],
+              "interpolation": "LINEAR",
+              "left": [
+                -4.333333492279053,
+                0.0
+              ],
+              "right": [
+                6.333333492279053,
+                0.0
+              ]
+            },
+            {
+              "co": [
+                17.0,
+                6.2831854820251465
+              ],
+              "interpolation": "LINEAR",
+              "left": [
+                11.666666030883789,
+                6.2831854820251465
+              ],
+              "right": [
+                22.33333396911621,
+                6.2831854820251465
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "head": "DirectionalHead",
+    "base": "StaticBase",
+    "clip": "Animation",
+    "export_bake_fps": 64,
+    "fps": 16,
+    "frames": [
+      1,
+      17
+    ],
+    "direction_count": 16,
+    "moving_meshes": [
+      "AC25 moving bearing spindle",
+      "AC25 spherical directional head",
+      "AC25 tapered raised nozzle",
+      "AC25 recessed muzzle face"
+    ],
+    "static_meshes": [
+      "AC25 grounded buttress -1",
+      "AC25 grounded buttress 1",
+      "AC25 grounded flared casing",
+      "AC25 red narrow neck",
+      "AC25 stationary rounded collar",
+      "AC25 left slate service fitting",
+      "AC25 left ochre coupling",
+      "AC25 blue status field 0 dark back",
+      "AC25 blue status field 0",
+      "AC25 blue status field 1 dark back",
+      "AC25 blue status field 1",
+      "AC25 blue status field 2 dark back",
+      "AC25 blue status field 2",
+      "AC25 blue status field 3 dark back",
+      "AC25 blue status field 3",
+      "AC25 blue status field 4 dark back",
+      "AC25 blue status field 4",
+      "AC25 blue status field 5 dark back",
+      "AC25 blue status field 5"
+    ],
+    "timing_recovered": false
+  },
+  "nozzle": {
+    "centre": [
+      0.0,
+      0.0,
+      1.7799999713897705
+    ],
+    "axis": [
+      0.0,
+      0.9004471302032471,
+      0.4349655210971832
+    ],
+    "muzzle_depth": 0.113,
+    "head_sphere_radius": 0.34
+  },
+  "state_contract": "Directional Stun Tower with one spherical head,short raised tapered nozzle and actual recessed muzzle over a stationary rounded collar,red neck,flared casing/two grounded buttresses,left ochre/slate fitting and six blue source fields. All16 original headings reviewed;original native heading controller/action retained exactly. Dense GLB sampling preserves original clip name/timing. No firing/recoil/continuous idle timing recovered. Shared ACS2,client heading/muzzle/state mapping separate;hidden nozzle/engineering interpreted.",
+  "scale_contract": "Identity PlacementRoot groundZ0;Blender-Yfront/+Zup;2x2footprint. Source anatomical proportions retained;exact heading index/world/camera/impact calibration and Android frame time separate.",
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

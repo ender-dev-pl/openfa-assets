@@ -1,0 +1,90 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/050",
+  "concept_requests_used": 1,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri11-review-1.png",
+    "sha256": "786d9a52f41a7b6b751e5d86a08ab0c74f07da3647ae23de0251db995726e570",
+    "prompt": "sources/docs/reconstruction/models/ri11-concept-prompt-1.txt",
+    "verdict": "Low stepped jade housing/open collar and front brass fitting agree with legacy. Concept enlarges the bore and spreads guides around more of the circumference; retain established narrower opening and far-wall flat guides. No closing lid is supported."
+  },
+  "legacy": {
+    "body_sha256": "6e74f6e9f6c2461f08596d30c683106f0ac6488622016374825e99461141c835",
+    "catalogue_colour_phase20_sha256": "c78a2f1c8c41457f81c90fb690eb62c27810e02284c19e6cf4d3a72e3688980b",
+    "state_evidence": "sources/docs/reconstruction/models/launch-facility-animation-audit.json",
+    "functional_record": 911,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "990188442e525acc3b7c71207261e656ed1d118f5c18bb8c5d77546c0b4f1091",
+    "glb": "8fe9e8bd8c0ec727b10fe399e6fff434f7ba3fcdecf717ba43aae7a31a155fa4"
+  },
+  "runtime_report_sha256": "1005cbaeb77182863a79fd2662ab037cbcc3177dae1b189344c0ed086b6ca72f",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.052132500542534724,
+        0.05005052354600695,
+        0.052254570855034724,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.2813311239988953,
+        0.2702660406885759,
+        0.2821504188529872,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 138
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.1015167236328125,
+        0.09498087565104167,
+        0.1003841824001736,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.42203977634652134,
+        0.3949394861632104,
+        0.41743930922216715,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 59
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.05339389377170139,
+        0.052012125651041664,
+        0.05038621690538195,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.31716712162572036,
+        0.3088868668486503,
+        0.2989182084723486,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 146
+    }
+  },
+  "feedback": [
+    "Actual independent GLB preserves the stepped shoulder/raised collar, genuinely open bore, three flat far-wall guides with recessed tracks/wear strips and seated small front brass fitting.",
+    "Fifteen protected body/liner/floor/guide components retain exact evaluated geometry, full colour/roughness pixels and existing planar/cylindrical shell UVs. Reduction affects only the cast bezel, with sampled old/new deviation below 0.000321; all32 perimeter-root contacts still pass.",
+    "Concept bore is substantially broader and guide arrangement more dispersed than the source-guided model. These changes are rejected. The ambiguous left dark region remains a plausible collar cast shadow, not a confirmed extra vent. Exact guide count/depth and hidden engineering remain interpretation.",
+    "The bound legacy audit contains only shadow0 and permanent open body1, with no source lid actions. Static export is deliberate; satellite launch entities and shared RIS2 construction are separate. Existing wear/contrast are subtler than the concept.",
+    "Actual whole-image mean reaches0.102/255 in front view; foreground mean remains below0.423/255, within the existing RI11 <1.5/255 foreground contract. All alpha and threshold silhouettes are exact; do not claim numerically identical RGB."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

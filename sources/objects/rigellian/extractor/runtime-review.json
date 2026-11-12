@@ -1,0 +1,933 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/059",
+  "blender": "4.5.15 LTS",
+  "binaries": {
+    "blend": "d3190b4e5ae6c5ae0ab9cbcd32c24a81c733666a22688fd5ae2541149eda5a4b",
+    "glb": "7c0e56b8dc90391e4e08764d3900b117e5f61bc0c4f05b361c9b951b4da9c8f9"
+  },
+  "metadata_sha256": "a3edc4da21e65532af9d7de7dc99f3e22e0a6f09b7cb3819f03b22c0d87a3523",
+  "verifier_sha256": "c1cb5a3064a4d8df74b397e4ecbd17f9c436affb57e978398fc9c8721f059943",
+  "helpers": {
+    "sources/tools/blender/verify_remastered_rigellian_extractor.py": "c1cb5a3064a4d8df74b397e4ecbd17f9c436affb57e978398fc9c8721f059943",
+    "sources/tools/blender/refine_rigellian_crowns.py": "60768ad5f5946c625efa2325e0e6d187d2693e8c8c1d6d764870bb15b99ad735",
+    "sources/tools/blender/remaster_rigellian_static.py": "f3271c215c01f50d543d8310cf519c34c24ca91f8505be538ee9445e80577bec",
+    "sources/tools/blender/refine_rigellian_extractor.py": "487ad7078c14b66b85b5de2731e19d1c43f186ec71482ab486cf007630722dde",
+    "sources/tools/blender/verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "sources/tools/blender/verify_refined_rigellian_extractor.py": "d8a090cc290d0b5ebe800c93a1dc70446e02c1e1697e909bd039073a9d6ef84f",
+    "sources/tools/blender/verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+    "sources/tools/blender/verify_cannon_equipment.py": "2c13059f53809f512d8ae164dd77e83c28ba81e26130ff2186464af3d7fa005e",
+    "sources/tools/blender/verify_nuclear_missile.py": "f97143f9c07b81e0173cde0d58adf6637e2b6541cacdc22717c29279d9d5fbb6",
+    "sources/tools/blender/build_openfa_assets.py": "2809126fe6f1b257a25a686e27316a64a3486fbb95b9a5762d6c5716517d2e73",
+    "sources/tools/blender/build_legacy_buildings.py": "3a3e99f6b4dd69b072415371b07ecd4bab532cd455a6bf611b4f318278d793d3",
+    "sources/tools/blender/catalogue_rendering.py": "4c43d21c8f9f4cee89c9b70042d5eafb8a761c67cafb620b85d22430e332ad4d",
+    "sources/tools/blender/refined_terran_parts.py": "55e1c46a67ec8b3b42ba88c0763d6d6d52342cb139311fa87e7f77ec1202c896",
+    "sources/tools/blender/refine_terran_models.py": "6800c71f8fa3ecdb8a326548c1c352ebf852109dfc2569683b181cda71f83bd1",
+    "sources/tools/blender/build_refined_terran.py": "5934b910649461aa3b78faf96fd6e922fc52047c7154c274fa5a2e7c165d773b",
+    "sources/tools/blender/verify_rigellian_cpu.py": "46343ab6d5729b11eda50f68cb2da636aec497ccca79434b742b34a6b2153cc9",
+    "sources/tools/blender/audit_rigellian_cpu_contacts.py": "c525df3db8159f1d947f11f595c4eaf1312aed12c8b4d73c3c4317f4616639ca",
+    "sources/tools/blender/rigellian_extractor_remaster_checks.py": "f2024418942b8111f93f71a61160dec511ac0c91ce9f1b28a33f9959a53e70a3"
+  },
+  "native": {
+    "lower_to_upper_radius_ratio": 1.310278757227001,
+    "lower_ribs": [
+      {
+        "height": 0.095,
+        "outer_radius": 0.3450000315818219,
+        "core_radius": 0.2899998468160225
+      },
+      {
+        "height": 0.225,
+        "outer_radius": 0.3450000315818219,
+        "core_radius": 0.2899998468160225
+      },
+      {
+        "height": 0.355,
+        "outer_radius": 0.34499991280444053,
+        "core_radius": 0.2900000780409675
+      }
+    ],
+    "recessed_slots": [
+      {
+        "shoulder": 0.5948261074323642,
+        "cavity_floor": 0.4849998765753559,
+        "backing_face": 0.5104999606052396,
+        "backing_root": 0.4655000257308955
+      },
+      {
+        "shoulder": 0.5950255621099375,
+        "cavity_floor": 0.4850000301955892,
+        "backing_face": 0.5105001047276269,
+        "backing_root": 0.46549999972188766
+      }
+    ],
+    "side_pod_min_x": -0.7200000286102295,
+    "positive_closed_meshes": 39,
+    "three_green_lower_blocks": true,
+    "three_front_gold_fittings": true,
+    "four_exposed_drum_contacts": true,
+    "body_bounds": [
+      -0.7200000286102295,
+      -0.599544107913971,
+      0.019999995827674866,
+      0.6000000238418579,
+      0.6000000238418579,
+      1.940000057220459
+    ],
+    "retained_two_casing_dents": [
+      {
+        "name": "RI20 stepped main casing",
+        "depth": 0.0011866250956357183
+      },
+      {
+        "name": "RI20 pronounced side equipment pod",
+        "depth": 0.0010118983619299415
+      }
+    ],
+    "sampled_contact_graph": {
+      "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+      "tolerance": 0.0001,
+      "links": [
+        [
+          "RI20 stepped main casing",
+          "RI20 exposed lower mechanism core"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 pronounced side equipment pod"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 slot 0 cast side rim -1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 slot 0 cast side rim 1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 slot 0 cast end rim 0.595"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 slot 0 cast end rim 1.025"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 slot 1 cast side rim -1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 slot 1 cast side rim 1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 slot 1 cast end rim 0.595"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 slot 1 cast end rim 1.025"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 upper dark inset 0"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 upper dark inset 1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 exposed upper drum contact 0"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 exposed upper drum contact 1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 exposed upper drum contact 2"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 exposed upper drum contact 3"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 lower fitting retainer 0"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 side pod dark seat 0"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 side pod gold fitting 0"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 side pod dark seat 1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 side pod gold fitting 1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 slot 0 recessed backing"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 slot 1 recessed backing"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 forward gold boss 0"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 forward boss dark seat 0"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 forward gold boss 1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 forward boss dark seat 1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 forward gold boss 2"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 forward boss dark seat 2"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 upper inspection bezel"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 upper gold inspection face"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower mechanism broad rib 0"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower mechanism broad rib 1"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower mechanism broad rib 2"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 exposed upper drum contact 0"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 exposed upper drum contact 1"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 exposed upper drum contact 2"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 exposed upper drum contact 3"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower green inset 2"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower fitting retainer 0"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower fitting retainer 1"
+        ],
+        [
+          "RI20 lower mechanism broad rib 0",
+          "RI20 lower green inset 0"
+        ],
+        [
+          "RI20 lower mechanism broad rib 0",
+          "RI20 lower fitting retainer 0"
+        ],
+        [
+          "RI20 lower mechanism broad rib 1",
+          "RI20 lower green inset 1"
+        ],
+        [
+          "RI20 lower mechanism broad rib 1",
+          "RI20 lower fitting retainer 0"
+        ],
+        [
+          "RI20 lower mechanism broad rib 2",
+          "RI20 exposed upper drum contact 0"
+        ],
+        [
+          "RI20 lower mechanism broad rib 2",
+          "RI20 exposed upper drum contact 1"
+        ],
+        [
+          "RI20 lower mechanism broad rib 2",
+          "RI20 exposed upper drum contact 2"
+        ],
+        [
+          "RI20 lower mechanism broad rib 2",
+          "RI20 exposed upper drum contact 3"
+        ],
+        [
+          "RI20 lower mechanism broad rib 2",
+          "RI20 lower green inset 2"
+        ],
+        [
+          "RI20 lower mechanism broad rib 2",
+          "RI20 lower fitting retainer 0"
+        ],
+        [
+          "RI20 pronounced side equipment pod",
+          "RI20 side pod dark seat 0"
+        ],
+        [
+          "RI20 pronounced side equipment pod",
+          "RI20 side pod dark seat 1"
+        ],
+        [
+          "RI20 slot 0 cast side rim -1",
+          "RI20 slot 0 cast end rim 0.595"
+        ],
+        [
+          "RI20 slot 0 cast side rim -1",
+          "RI20 slot 0 cast end rim 1.025"
+        ],
+        [
+          "RI20 slot 0 cast side rim 1",
+          "RI20 slot 0 cast end rim 0.595"
+        ],
+        [
+          "RI20 slot 0 cast side rim 1",
+          "RI20 slot 0 cast end rim 1.025"
+        ],
+        [
+          "RI20 slot 1 cast side rim -1",
+          "RI20 slot 1 cast end rim 0.595"
+        ],
+        [
+          "RI20 slot 1 cast side rim -1",
+          "RI20 slot 1 cast end rim 1.025"
+        ],
+        [
+          "RI20 slot 1 cast side rim 1",
+          "RI20 slot 1 cast end rim 0.595"
+        ],
+        [
+          "RI20 slot 1 cast side rim 1",
+          "RI20 slot 1 cast end rim 1.025"
+        ],
+        [
+          "RI20 exposed upper drum contact 3",
+          "RI20 lower green inset 2"
+        ],
+        [
+          "RI20 exposed upper drum contact 3",
+          "RI20 lower fitting retainer 0"
+        ],
+        [
+          "RI20 side pod dark seat 0",
+          "RI20 side pod gold fitting 0"
+        ],
+        [
+          "RI20 side pod dark seat 1",
+          "RI20 side pod gold fitting 1"
+        ],
+        [
+          "RI20 forward gold boss 0",
+          "RI20 forward boss dark seat 0"
+        ],
+        [
+          "RI20 forward gold boss 1",
+          "RI20 forward boss dark seat 1"
+        ],
+        [
+          "RI20 forward gold boss 2",
+          "RI20 forward boss dark seat 2"
+        ],
+        [
+          "RI20 upper inspection bezel",
+          "RI20 upper gold inspection face"
+        ]
+      ],
+      "components": [
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 exposed upper drum contact 0",
+          "RI20 exposed upper drum contact 1",
+          "RI20 exposed upper drum contact 2",
+          "RI20 exposed upper drum contact 3",
+          "RI20 forward boss dark seat 0",
+          "RI20 forward boss dark seat 1",
+          "RI20 forward boss dark seat 2",
+          "RI20 forward gold boss 0",
+          "RI20 forward gold boss 1",
+          "RI20 forward gold boss 2",
+          "RI20 lower fitting retainer 0",
+          "RI20 lower fitting retainer 1",
+          "RI20 lower green inset 0",
+          "RI20 lower green inset 1",
+          "RI20 lower green inset 2",
+          "RI20 lower mechanism broad rib 0",
+          "RI20 lower mechanism broad rib 1",
+          "RI20 lower mechanism broad rib 2",
+          "RI20 pronounced side equipment pod",
+          "RI20 side pod dark seat 0",
+          "RI20 side pod dark seat 1",
+          "RI20 side pod gold fitting 0",
+          "RI20 side pod gold fitting 1",
+          "RI20 slot 0 cast end rim 0.595",
+          "RI20 slot 0 cast end rim 1.025",
+          "RI20 slot 0 cast side rim -1",
+          "RI20 slot 0 cast side rim 1",
+          "RI20 slot 0 recessed backing",
+          "RI20 slot 1 cast end rim 0.595",
+          "RI20 slot 1 cast end rim 1.025",
+          "RI20 slot 1 cast side rim -1",
+          "RI20 slot 1 cast side rim 1",
+          "RI20 slot 1 recessed backing",
+          "RI20 stepped main casing",
+          "RI20 upper dark inset 0",
+          "RI20 upper dark inset 1",
+          "RI20 upper gold inspection face",
+          "RI20 upper inspection bezel"
+        ]
+      ],
+      "isolated": []
+    },
+    "texture_pixels_and_uvs": {
+      "RI20 refined | bronze and green surface finish": {
+        "colour": "594b6f8a70fb39c1233622c22f19d9144b1df7d17aadeecc1fc949ab413ed689",
+        "roughness": "773f6a0ffdc59950d004ef56ddc922b83299946497068f7c71b00b0068c1ef14"
+      },
+      "RI20 | aged green lower alloy": {
+        "colour": "b3f06a7f7094e1e8c0811ee68221dd680a5724c0cf723f44d624c18adea19ff3",
+        "roughness": "751a396953dba83da0f2882f58537b659616d1d7fc9a0ab27bb17f77423f4259"
+      }
+    },
+    "contact_scope": "Retained shoulder/rib/slot rays plus one sampled contact component; not exhaustive solid intersection proof."
+  },
+  "imported": {
+    "lower_to_upper_radius_ratio": 1.310278757227001,
+    "lower_ribs": [
+      {
+        "height": 0.095,
+        "outer_radius": 0.3450000315818219,
+        "core_radius": 0.2899998468160225
+      },
+      {
+        "height": 0.225,
+        "outer_radius": 0.3450000315818219,
+        "core_radius": 0.2899998468160225
+      },
+      {
+        "height": 0.355,
+        "outer_radius": 0.34499991280444053,
+        "core_radius": 0.2900000780409675
+      }
+    ],
+    "recessed_slots": [
+      {
+        "shoulder": 0.5948261074323642,
+        "cavity_floor": 0.4849998765753559,
+        "backing_face": 0.5104999606052396,
+        "backing_root": 0.4655000257308955
+      },
+      {
+        "shoulder": 0.5950255621099375,
+        "cavity_floor": 0.4850000301955892,
+        "backing_face": 0.5105001047276269,
+        "backing_root": 0.46549996771079916
+      }
+    ],
+    "side_pod_min_x": -0.7200000286102295,
+    "positive_closed_meshes": 39,
+    "three_green_lower_blocks": true,
+    "three_front_gold_fittings": true,
+    "four_exposed_drum_contacts": true,
+    "body_bounds": [
+      -0.7200000286102295,
+      -0.599544107913971,
+      0.019999995827674866,
+      0.6000000238418579,
+      0.6000000238418579,
+      1.940000057220459
+    ],
+    "retained_two_casing_dents": [
+      {
+        "name": "RI20 stepped main casing",
+        "depth": 0.0011866250956357183
+      },
+      {
+        "name": "RI20 pronounced side equipment pod",
+        "depth": 0.0010118983619299415
+      }
+    ],
+    "sampled_contact_graph": {
+      "method": "Evaluated vertex/face-centre nearest-surface signed-distance diagnostic; not exhaustive solid intersection proof",
+      "tolerance": 0.0001,
+      "links": [
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 exposed upper drum contact 0"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 exposed upper drum contact 1"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 exposed upper drum contact 2"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 exposed upper drum contact 3"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower fitting retainer 0"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower fitting retainer 1"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower green inset 2"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower mechanism broad rib 0"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower mechanism broad rib 1"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 lower mechanism broad rib 2"
+        ],
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 exposed upper drum contact 0",
+          "RI20 lower mechanism broad rib 2"
+        ],
+        [
+          "RI20 exposed upper drum contact 0",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 exposed upper drum contact 1",
+          "RI20 lower mechanism broad rib 2"
+        ],
+        [
+          "RI20 exposed upper drum contact 1",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 exposed upper drum contact 2",
+          "RI20 lower mechanism broad rib 2"
+        ],
+        [
+          "RI20 exposed upper drum contact 2",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 exposed upper drum contact 3",
+          "RI20 lower fitting retainer 0"
+        ],
+        [
+          "RI20 exposed upper drum contact 3",
+          "RI20 lower green inset 2"
+        ],
+        [
+          "RI20 exposed upper drum contact 3",
+          "RI20 lower mechanism broad rib 2"
+        ],
+        [
+          "RI20 exposed upper drum contact 3",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 forward boss dark seat 0",
+          "RI20 forward gold boss 0"
+        ],
+        [
+          "RI20 forward boss dark seat 0",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 forward boss dark seat 1",
+          "RI20 forward gold boss 1"
+        ],
+        [
+          "RI20 forward boss dark seat 1",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 forward boss dark seat 2",
+          "RI20 forward gold boss 2"
+        ],
+        [
+          "RI20 forward boss dark seat 2",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 forward gold boss 0",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 forward gold boss 1",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 forward gold boss 2",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 lower fitting retainer 0",
+          "RI20 lower mechanism broad rib 0"
+        ],
+        [
+          "RI20 lower fitting retainer 0",
+          "RI20 lower mechanism broad rib 1"
+        ],
+        [
+          "RI20 lower fitting retainer 0",
+          "RI20 lower mechanism broad rib 2"
+        ],
+        [
+          "RI20 lower fitting retainer 0",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 lower green inset 0",
+          "RI20 lower mechanism broad rib 0"
+        ],
+        [
+          "RI20 lower green inset 1",
+          "RI20 lower mechanism broad rib 1"
+        ],
+        [
+          "RI20 lower green inset 2",
+          "RI20 lower mechanism broad rib 2"
+        ],
+        [
+          "RI20 pronounced side equipment pod",
+          "RI20 side pod dark seat 0"
+        ],
+        [
+          "RI20 pronounced side equipment pod",
+          "RI20 side pod dark seat 1"
+        ],
+        [
+          "RI20 pronounced side equipment pod",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 side pod dark seat 0",
+          "RI20 side pod gold fitting 0"
+        ],
+        [
+          "RI20 side pod dark seat 0",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 side pod dark seat 1",
+          "RI20 side pod gold fitting 1"
+        ],
+        [
+          "RI20 side pod dark seat 1",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 side pod gold fitting 0",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 side pod gold fitting 1",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 slot 0 cast end rim 0.595",
+          "RI20 slot 0 cast side rim -1"
+        ],
+        [
+          "RI20 slot 0 cast end rim 0.595",
+          "RI20 slot 0 cast side rim 1"
+        ],
+        [
+          "RI20 slot 0 cast end rim 0.595",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 slot 0 cast end rim 1.025",
+          "RI20 slot 0 cast side rim -1"
+        ],
+        [
+          "RI20 slot 0 cast end rim 1.025",
+          "RI20 slot 0 cast side rim 1"
+        ],
+        [
+          "RI20 slot 0 cast end rim 1.025",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 slot 0 cast side rim -1",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 slot 0 cast side rim 1",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 slot 0 recessed backing",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 slot 1 cast end rim 0.595",
+          "RI20 slot 1 cast side rim -1"
+        ],
+        [
+          "RI20 slot 1 cast end rim 0.595",
+          "RI20 slot 1 cast side rim 1"
+        ],
+        [
+          "RI20 slot 1 cast end rim 0.595",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 slot 1 cast end rim 1.025",
+          "RI20 slot 1 cast side rim -1"
+        ],
+        [
+          "RI20 slot 1 cast end rim 1.025",
+          "RI20 slot 1 cast side rim 1"
+        ],
+        [
+          "RI20 slot 1 cast end rim 1.025",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 slot 1 cast side rim -1",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 slot 1 cast side rim 1",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 slot 1 recessed backing",
+          "RI20 stepped main casing"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 upper dark inset 0"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 upper dark inset 1"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 upper gold inspection face"
+        ],
+        [
+          "RI20 stepped main casing",
+          "RI20 upper inspection bezel"
+        ],
+        [
+          "RI20 upper gold inspection face",
+          "RI20 upper inspection bezel"
+        ]
+      ],
+      "components": [
+        [
+          "RI20 exposed lower mechanism core",
+          "RI20 exposed upper drum contact 0",
+          "RI20 exposed upper drum contact 1",
+          "RI20 exposed upper drum contact 2",
+          "RI20 exposed upper drum contact 3",
+          "RI20 forward boss dark seat 0",
+          "RI20 forward boss dark seat 1",
+          "RI20 forward boss dark seat 2",
+          "RI20 forward gold boss 0",
+          "RI20 forward gold boss 1",
+          "RI20 forward gold boss 2",
+          "RI20 lower fitting retainer 0",
+          "RI20 lower fitting retainer 1",
+          "RI20 lower green inset 0",
+          "RI20 lower green inset 1",
+          "RI20 lower green inset 2",
+          "RI20 lower mechanism broad rib 0",
+          "RI20 lower mechanism broad rib 1",
+          "RI20 lower mechanism broad rib 2",
+          "RI20 pronounced side equipment pod",
+          "RI20 side pod dark seat 0",
+          "RI20 side pod dark seat 1",
+          "RI20 side pod gold fitting 0",
+          "RI20 side pod gold fitting 1",
+          "RI20 slot 0 cast end rim 0.595",
+          "RI20 slot 0 cast end rim 1.025",
+          "RI20 slot 0 cast side rim -1",
+          "RI20 slot 0 cast side rim 1",
+          "RI20 slot 0 recessed backing",
+          "RI20 slot 1 cast end rim 0.595",
+          "RI20 slot 1 cast end rim 1.025",
+          "RI20 slot 1 cast side rim -1",
+          "RI20 slot 1 cast side rim 1",
+          "RI20 slot 1 recessed backing",
+          "RI20 stepped main casing",
+          "RI20 upper dark inset 0",
+          "RI20 upper dark inset 1",
+          "RI20 upper gold inspection face",
+          "RI20 upper inspection bezel"
+        ]
+      ],
+      "isolated": []
+    },
+    "texture_pixels_and_uvs": {
+      "RI20 refined | bronze and green surface finish": {
+        "colour": "594b6f8a70fb39c1233622c22f19d9144b1df7d17aadeecc1fc949ab413ed689",
+        "roughness": "773f6a0ffdc59950d004ef56ddc922b83299946497068f7c71b00b0068c1ef14"
+      },
+      "RI20 | aged green lower alloy": {
+        "colour": "b3f06a7f7094e1e8c0811ee68221dd680a5724c0cf723f44d624c18adea19ff3",
+        "roughness": "751a396953dba83da0f2882f58537b659616d1d7fc9a0ab27bb17f77423f4259"
+      }
+    },
+    "contact_scope": "Retained shoulder/rib/slot rays plus one sampled contact component; not exhaustive solid intersection proof."
+  },
+  "source_uv_comparison": {
+    "maximum_uv_corner_error": 0.0,
+    "matched_directed_corners": 40620,
+    "position_tolerance": 1e-05,
+    "scope": "All used colour/roughness material corners matched bidirectionally by world position and UV, including split seams."
+  },
+  "exported_uv_comparison": {
+    "maximum_uv_corner_error": 2.9802322387695312e-08,
+    "matched_directed_corners": 40620,
+    "position_tolerance": 1e-05,
+    "scope": "All used colour/roughness material corners matched bidirectionally by world position and UV, including split seams."
+  },
+  "maximum_bidirectional_surface_error": 1.1920928955078125e-07,
+  "renders": {
+    "native-front-quarter.png": "62b160df718bcf2a2d4dc8edf790245a1ed40be39d7a74ad4dcebd07f4710ae9",
+    "native-front.png": "fc3bcfd4a34969a3ddb6a608c2fb5e640cf9abfb23c8d19f5c171e272806bfb1",
+    "native-rear-quarter.png": "67baf84d457272f9a21ba9dfde84941af91f8e0bd4f035d7c4c3f880d25d5a08",
+    "imported-front-quarter.png": "479dc70fd7df2e48ffc5251d5a12604f9d1feb3fbb8a3a07850ce901a3e809ba",
+    "imported-front.png": "62651751bd621629e9f2a5db3895c149b4b0f7df4e8ecd61cbd3ab38b6fcfd1b",
+    "imported-rear-quarter.png": "265eb60bd658538359717fa36c74cb6e24682924901902fed4c0b65d351cecaf"
+  },
+  "triangles": 13774,
+  "meshes": 39,
+  "protected_parts": [
+    "RI20 exposed lower mechanism core",
+    "RI20 exposed upper drum contact 0",
+    "RI20 exposed upper drum contact 1",
+    "RI20 exposed upper drum contact 2",
+    "RI20 exposed upper drum contact 3",
+    "RI20 forward boss dark seat 0",
+    "RI20 forward boss dark seat 1",
+    "RI20 forward boss dark seat 2",
+    "RI20 forward gold boss 0",
+    "RI20 forward gold boss 1",
+    "RI20 forward gold boss 2",
+    "RI20 lower fitting retainer 0",
+    "RI20 lower fitting retainer 1",
+    "RI20 lower green inset 0",
+    "RI20 lower green inset 1",
+    "RI20 lower green inset 2",
+    "RI20 lower mechanism broad rib 0",
+    "RI20 lower mechanism broad rib 1",
+    "RI20 lower mechanism broad rib 2",
+    "RI20 pronounced side equipment pod",
+    "RI20 side pod dark seat 0",
+    "RI20 side pod dark seat 1",
+    "RI20 side pod gold fitting 0",
+    "RI20 side pod gold fitting 1",
+    "RI20 slot 0 cast end rim 0.595",
+    "RI20 slot 0 cast end rim 1.025",
+    "RI20 slot 0 cast side rim -1",
+    "RI20 slot 0 cast side rim 1",
+    "RI20 slot 0 recessed backing",
+    "RI20 slot 1 cast end rim 0.595",
+    "RI20 slot 1 cast end rim 1.025",
+    "RI20 slot 1 cast side rim -1",
+    "RI20 slot 1 cast side rim 1",
+    "RI20 slot 1 recessed backing",
+    "RI20 stepped main casing",
+    "RI20 upper dark inset 0",
+    "RI20 upper dark inset 1",
+    "RI20 upper gold inspection face",
+    "RI20 upper inspection bezel"
+  ],
+  "protected_surface_error": 0.0,
+  "native_world_bounds": [
+    -0.7200000286102295,
+    -0.599544107913971,
+    0.019999995827674866,
+    0.6000000238418579,
+    0.6000000238418579,
+    1.940000057220459
+  ],
+  "native_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "imported_root_matrix": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "material_count": 5,
+  "embedded_images": 4,
+  "clips": [],
+  "final_artistic_acceptance": false,
+  "game_client_integration": false
+}

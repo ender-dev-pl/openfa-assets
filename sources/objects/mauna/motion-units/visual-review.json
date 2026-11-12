@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/149",
+  "binaries": {
+    "blend": "9975e229f0b4a8998a3bc767f30ff91f0a418d44471aab78fec7b1bd85f1b606",
+    "glb": "bca6f0758dc87aaafd07a5fa3494d78b587939d6758c7b835c4e86e6c64a5658"
+  },
+  "runtime_report_sha256": "0b3b935b6c1d6379f9d1de81493769a3583327ce1f191f6ba84d8d752ede4a18",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0006435006435006435,
+      "margin": 41
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0017100115641069803,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 5.1666770000206665e-05,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn20-review-1.png",
+      "sha256": "db32c9b3d25981828c4f4a2a1f7d1e2699e1b9c7145206a4c548bbe1f6d5a614",
+      "prompt": "sources/docs/reconstruction/models/mn20-concept-prompt-1.txt",
+      "feedback": "Selected after actual comparison with own paletted body1, overview/detail and all41 catalogue updates. Keeps two-storey grey-blue angular tower, two-tier flared square base with red upper band, upper-front brass field, lower-front dark channels/short brass marks, four right brass fields2x2 and roof mast with two parallel same-side rising prongs at different attachment heights. Used cast/brass/paint matches practical Mauna lore. Source governs exact mast/prong slenderness and body proportions over incidental concept ribs,mark segmentation and edge chips. Recess depths,hidden structure,sections and cell-relative dimensions are authored;no operation or emission timing is established."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "binaries": {
+        "blend": "9975e229f0b4a8998a3bc767f30ff91f0a418d44471aab78fec7b1bd85f1b606",
+        "glb": "bca6f0758dc87aaafd07a5fa3494d78b587939d6758c7b835c4e86e6c64a5658"
+      },
+      "runtime_report_sha256": "0b3b935b6c1d6379f9d1de81493769a3583327ce1f191f6ba84d8d752ede4a18",
+      "inspected": [
+        "Actual own legacy/reference and selected ImageGen alongside all three saved-native and independent-GLB whole views, mast/prong close-up, body/base close-up and exact canonical technical wireframe on source-concept-native-glb-review-2.jpg"
+      ],
+      "finding": "Source-led two-storey tower, two-tier square base/red band, one upper-front field, two lower dark channels with short brass marks, four right fields2x2 and roof mast with two same-side rising prongs preserved. Actual GLB and native agree. Source slenderness governs over heavier concept fittings; material-specific wear remains subordinate to silhouette. Agent asset visual review accepted without another model change.",
+      "limitations": [
+        "Hidden depths,sections,short mark segmentation and cell-relative dimensions are authored interpretations.",
+        "No own operating layers or timed emission recovered;generic Terran PB22/ST04 structure and motion are context only.",
+        "Final user artistic acceptance,actual client metric scale/state/shader handling and Android performance require separate integration checks."
+      ],
+      "accepted": true,
+      "final_user_artistic_acceptance": false,
+      "game_client_integration": false
+    }
+  ],
+  "final_review": "Source-led two-storey tower, two-tier square base/red band, one upper-front field, two lower dark channels with short brass marks, four right fields2x2 and roof mast with two same-side rising prongs preserved. Actual GLB and native agree. Source slenderness governs over heavier concept fittings; material-specific wear remains subordinate to silhouette. Agent asset visual review accepted without another model change.",
+  "limitations": [
+    "Hidden depths,sections,short mark segmentation and cell-relative dimensions are authored interpretations.",
+    "No own operating layers or timed emission recovered;generic Terran PB22/ST04 structure and motion are context only.",
+    "Final user artistic acceptance,actual client metric scale/state/shader handling and Android performance require separate integration checks."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

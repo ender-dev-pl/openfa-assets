@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/112",
+  "binaries": {
+    "blend": "9f052d9ce220130df93dc43c062b11a3c322a009f153d1e3a8fb7e743dc3430b",
+    "glb": "e8a3472d63f5a14a7e8d3d28fea322633a0d87c488d56e0845051dceefecfaab"
+  },
+  "runtime_report_sha256": "748ac6390d6c1c2d8fb7176e571fc77036e8e5a43c30d74b65a7eb2dfe84559b",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0002044043764052801,
+      "margin": 84
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00019713785046728973,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.00020212520212520212,
+      "margin": 99
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar06-review-1.png",
+      "sha256": "68acf26396518b3fb5c8cc8fe58ca43e6e6f031d5f3cd8888f9971816bc6d98c",
+      "prompt": "sources/docs/reconstruction/models/ar06-concept-prompt-1.txt",
+      "feedback": "Selected low green metal clinical shell,one narrow silver rib and two parallel raised green ribs on its right,one larger copper front inset and one much smaller dark point above on the left. Source governs arrangement;exact rib sections and hidden isolation engineering remain interpreted."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "8bbf99fd3cb096e97301a2907f2c248cb0e57c8eed2a39b205fe00666c257f9f",
+        "glb": "ce38988f5b10e789f3f769e231c2f85dbef62454b8bc5150563fc820c7e45e70"
+      },
+      "runtime_report_sha256": "00e64c64f49ce912142950ef4274e9322f59f5555531196a65d75ba7ce00e5c1",
+      "status": "revision_required",
+      "finding": "Actual first front-quarter render retains major source features,but roof-ray ribbon endpoints create pointed/stepped feet at base. Technical native/import equality and contact checks alone do not certify visible end geometry.",
+      "action": "Resample each actual shell meridian with radial rays in its plane;offset actual surface normals for inner/outer ribbon rather than overriding end z,and round tiny edge corners. Repeat native/import runtime and render review."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "9f052d9ce220130df93dc43c062b11a3c322a009f153d1e3a8fb7e743dc3430b",
+        "glb": "e8a3472d63f5a14a7e8d3d28fea322633a0d87c488d56e0845051dceefecfaab"
+      },
+      "runtime_report_sha256": "748ac6390d6c1c2d8fb7176e571fc77036e8e5a43c30d74b65a7eb2dfe84559b",
+      "status": "agent_review_accepted",
+      "finding": "Actual final whole legacy/concept/imported GLB board and copper-point,rib,front/rear views reviewed. Revised actual-meridian radial ray sampling and small rib bevel eliminate prior endpoint spikes/stepped feet. One narrow silver rib and two parallel raised green ribs follow actual shell and meet it at three separated samples each. Low green clinical shell,large copper inset and much smaller dark point retain source major arrangement. Concept has richer shallow contour/fine engineering;canonical sparse shell remains source recognizable without dense grids. All8native/import closed positive meshes and5decodedtextureimages agree;surfaceerror6.828570064953965e-8. Scratches/tarnish,three small chips and two shallow dents retained. Frozen original pair unchanged.",
+      "action": "Accept agent source/concept/native/imported GLB asset review. Exact internal isolation spaces,rib sections and metric dimensions remain interpreted. Generic PB34 petals are not an AR06 operating cycle;static source. Client scale/state/shaders,Android performance and final user artistic acceptance remain separate."
+    }
+  ],
+  "final_review": "Actual source/concept/imported GLB comparison retains a broad low green isolation shell,continuous narrow silver rib,two parallel raised green ribs to its right,one larger copper inset and one much smaller dark point above to its left. Three actual contact samples per rib,inset/body overlap and open rim centres checked;native/imported positive closed surfaces and decoded textures agree;whole/front/rear/detail renders inspected.",
+  "limitations": [
+    "Exact internal clinical isolation spaces,rib sections and metric dimensions remain authored or unknown.",
+    "Generic class34 PB34 opening petals and rotation are function context,not evidence for an AR06 operating cycle.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

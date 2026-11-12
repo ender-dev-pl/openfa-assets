@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "issue": 259,
+  "id": "openfa:building/legacy/087",
+  "binaries": {
+    "blend": "2311af635dde301dd69f77d752d4a595773e334bed488c9b9a11eefb923fb31e",
+    "glb": "4d8163af7f7cba93c15c677969799c4e9527f9a8566c895b0aec0856b6839c44"
+  },
+  "runtime_report_sha256": "3382da1b05d597a8fe5b8390eaed76fc062f8be18bd3c2f76744887851e42053",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.001701355413145806,
+      "margin": 53
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0018479699911738746,
+      "margin": 49
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.001052555168408827,
+      "margin": 50
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mikotaj/mk02-review-1.png",
+      "sha256": "7c1a43f988fd88eff817e890a141deb0bd274c7de2a993ddc2cf777e359fc010",
+      "prompt": "sources/docs/reconstruction/models/mk02-concept-prompt-1.txt",
+      "feedback": "Selected. Keeps the tall single pointed crown, lower supporting ridges, upper blue emitter, vertical red capsule and exactly three lower-right blue lenses. Hidden sections and fine mineral relief remain authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "verdict": "refine-before-delivery",
+      "source_model_sha256": "59da1319a62a523326d48d166919dcac615e6ce8130b9c506975a4ee8a98128b",
+      "issues": [
+        "First wedge has overly plain planes compared to original and concept: add restrained physical mineral relief and worn exposed ridges, without a regular panel grid.",
+        "Third lower blue lens is partly occluded: move all three onto the readable front face of the right buttress.",
+        "Move the left supporting ridge slightly forward to retain its distinct point in the reference view."
+      ]
+    },
+    {
+      "iteration": 2,
+      "verdict": "correct-undercut-lens",
+      "source_model_sha256": "a7411602766b2391b83b6d321b9344501ad319118be9e0e70962a094032f2649",
+      "issues": [
+        "The lowest blue node faces downward on the buttress undercut. Move the complete triangle onto the upward/front-facing plane so all three remain visible in the reference camera."
+      ]
+    },
+    {
+      "iteration": 3,
+      "verdict": "refine-material-reading",
+      "source_model_sha256": "075587d819873a180bc072664d39bd613a7692ceae93fca170faeb65cb6719d7",
+      "issues": [
+        "All three lower lenses are now readable; retain the corrected triangle.",
+        "Mineral planes remain too plain compared with concept/source ridges. Add authored tangent-space fracture/grain detail and improve the exposed alloy/marker rim, avoiding panel grids or extra geometry unrelated to the reference."
+      ]
+    },
+    {
+      "iteration": 4,
+      "verdict": "remove-regular-normal-pattern",
+      "source_model_sha256": "28fa7aa600cda5580b2d27e6bfb2cb6e712c384ffc8b6513bec9873d79327c24",
+      "issues": [
+        "Periodic sine normal pattern produces visible regular stripes/checker relief, contrary to the calm mineral reference. Replace with deterministic nonperiodic smooth noise and sparse irregular stress creases; keep existing geometry and readable optics."
+      ]
+    }
+  ],
+  "final_review": "Final independent GLB retains the single tall pointed wedge, lower supporting ridges, blue upper optic, red vertical marker/dark slot, small red node and three readable lower-right blue lenses. Actual feedback corrected plain mineral planes and occluded/undercut optics. Authored portable fracture/grain normals and exposed worn alloy clarify material without a panel grid.",
+  "limitations": [
+    "Exact sections, backside closure and detailed mineral relief are authored from limited original views.",
+    "The model keeps broad simple planes rather than every generated concept crevice. Generic spherical Terran gravity research is function context, not Mikotaj shape authority.",
+    "No source metric height, calibrated client state/scale, performance or final user acceptance is claimed."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

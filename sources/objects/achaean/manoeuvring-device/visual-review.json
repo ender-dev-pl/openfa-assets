@@ -1,0 +1,174 @@
+{
+  "issue": 256,
+  "id": "openfa:building/legacy/166",
+  "binaries": {
+    "blend": "08a22362442cb8cf9f373a4e8fe96b837d9dc4a122d68415b6bceb1976e8b740",
+    "glb": "b83c2142431946670b4402987334e4f081ccc704724996db87fa8e0444a670c3"
+  },
+  "runtime_report_sha256": "a2dd57f33c8d179139bf74bd27bd3ad83fedbaf81f431a8845a96f1264f48d6d",
+  "legacy": {
+    "surface_payload_sha256": "ccd40671a2f94fda97013b78b871af4c3f44fab9acfedaeedc00f5a386130617",
+    "surface_layers": [
+      0,
+      1
+    ],
+    "functional_record": 1027,
+    "functional_text_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 166,
+    "culture_record_sha256": "ab63915d5c16df27af42f5cc269679012c24621fa83f5a7206ca66426f08aa4c",
+    "catalogue_sha256": "b932ddaffc77b5bc3cc147e0300cd8ce112ec570c9750b10f88bb75ffe4e0f39",
+    "catalogue_frames": 41,
+    "inspected_catalogue_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "interpretation": "All41 actual paletted catalogue phases and both surface shadow/body layers reviewed. All catalogue roles map to AC16.VID,a fixed-view reveal/highlight rather than operating motion. Direct archive-table audit finds AC16.256 only for this prefix. Source depicts two-tier coral body with three ochre raised upper details,one lower ochre field,pale horizontal lower slot,three dark-red fields and four slate/red pods along visible left/front edges. Function1027 establishes asteroid-engine equivalent distinct from Destination Beam. Shared ACS2 separate. _MA PB/PH/PM/PS/ST families considered,no AC-named family. Exact fitting function,hidden rear and thrust effect not established.",
+    "additional_zoom_sprite_payload_sha256": "8d3bf32a9ce8698be88945f3e842e0e75ac4c7aadb4f3839c521f9b75c0252b0",
+    "additional_zoom_sprite_layers_reviewed": [
+      0,
+      1
+    ]
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "image": "gallery/media/concepts/achaean/ac16-review-1.png",
+      "sha256": "4fba30a82df82d588c286b96022850073ebd5dabcc09cbc7526ea7ca8d7b63af",
+      "prompt": "sources/docs/reconstruction/models/ac16-concept-prompt-1.txt",
+      "feedback": "Accepted as interpreted guide to the two-tier curved casing,three upper ochre castings,four grounded left/front pods with red stems,source fields and short slate tip. Retain source-visible count rather than inventing rear pods. Raised casting functions are unknown,not asserted as nozzles/dishes. Sparse restrained wear,no new machinery or thrust effects."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "iteration": 1,
+      "observation": "Historical coarse native has generic extra domes/gold caps/white grids,missing actual pod and field arrangement. First candidate native restores the source anatomy but raised ochre details are too faceted. Its export has five materials instead of the declared six: dark recess material was unused.",
+      "action": "Replaced polygonal patches with smooth sampled outlines and rounded five-ring reliefs projected onto the actual casing. Source and export genuinely regenerated. Preserve the unchanged maximum surface-distance gate."
+    },
+    {
+      "iteration": 2,
+      "observation": "The next real check still finds unused dark material/image parity mismatch. Actual native render also shows a pale slot looking like an unsupported slab because a vertical pane does not follow the sloping casing.",
+      "action": "Aligned each actual Boolean pocket,pane and new dark back to the measured casing normal. Dark material is now visibly used by four physical backplates and exported,not accepted through a lower declared material count. Rechecked source/import geometry,material/image parity and owner-specific rays along actual field normals."
+    },
+    {
+      "iteration": 3,
+      "observation": "Final native/import left-quarter,front and rear renders show rounded seated ochre details,properly seated source fields and all four grounded attached pods. Import keeps geometry,transforms and texture pixels.",
+      "action": "Accept for integration review after six-render pixel parity. Actual four pod/body contacts,four source-field normal rays,four fitting visibility rays and maximum fitting surface distance pass in both representations. A new verifier copy changes only the quarter camera to expose the source-visible left pods; historical verifiers remain immutable. No operating animation/thrust inferred. Client scale/state/FPS,hidden rear and final user artistic acceptance separate."
+    }
+  ],
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 9.09090909090909e-05,
+      "margin": 52
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 5.652911249293386e-05,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 4.771538725808299e-05,
+      "margin": 60
+    }
+  ],
+  "review": "Static legacy-led asteroid Manoeuvring Device with two-tier supported body,source-visible asymmetry and restrained wear. One canonical editable payload for gameplay/build/SciTek. Left-quarter camera chosen for reference readability; exact camera and numerical fidelity score not claimed. Actual Blender runtime verified; propulsion-state/client and final user acceptance separate.",
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false,
+  "final_reference_review": {
+    "scope": "Actual extra zoom layers0/1 and current imported front/quarter rendered views compared during final programme audit. No model,material,animation or runtime evidence regenerated for this reference-only review.",
+    "binary_inputs_unchanged": {
+      "blend": "08a22362442cb8cf9f373a4e8fe96b837d9dc4a122d68415b6bceb1976e8b740",
+      "glb": "b83c2142431946670b4402987334e4f081ccc704724996db87fa8e0444a670c3"
+    },
+    "source_layers_reviewed": [
+      0,
+      1
+    ],
+    "finding": "Major silhouette/material boundaries and source-visible assemblies agree with the current remaster at the intended non-pixel-exact level;retain current geometry. Hidden engineering and final user artistic acceptance remain separate.",
+    "frame0_note": "UI/background or progress artwork;not a separate inferred operating model.",
+    "catalogue_phases_reviewed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ]
+  }
+}

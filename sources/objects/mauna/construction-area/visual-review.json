@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/137",
+  "binaries": {
+    "blend": "d4fde3762572335cb8876075c61fa6941a8fa6b578ea5b04a434a201b1e09469",
+    "glb": "3f98f80c4bf987ec67f0a6052eb9cf0c446d6bf26e3c2fbd1fa89babab36ead1"
+  },
+  "runtime_report_sha256": "191ff29b232f01615c7e080766918b0eb6e3740f41a5351213cb8d3c8f3465d0",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 6.858710562414266e-05,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.0001382510639321007,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 8.186913533597833e-05,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn08-review-1.png",
+      "sha256": "df9e4be3fbb40a5b54f7c4a6e1ca18e18fd3cdf4798aaed4df041e5a28c1dc0e",
+      "prompt": "sources/docs/reconstruction/models/mn08-concept-prompt-1.txt",
+      "feedback": "Selected source-compatible inclined concrete block,projecting plinth,staggered uprights,roof pair,source red emblem/end stripe and two short feet. Actual source governs exact point reading/upright proportions;angular attachments,bridges and hidden engineering authored."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "ac55f68c1ab14c7bcba9b6e1c823f45c530b73c2e042c268e1959ba4b036ceb7",
+        "glb": "81d03c6a3393d15e575dad996e38ff05ab2772bc888088760fd6bfba91e7101a"
+      },
+      "runtime_report_sha256": "96f1297368c15a36b04b5aaa8867af3065278c0513a7d56a6485de1b5336e788",
+      "status": "rejected_visual_refinement_required",
+      "finding": "Actual native quarter render shows unsupported black top strip on projecting low nose. The source/concept require continuous concrete there. Native/imported technical geometry passes, but visual output is not accepted. Remove coplanar overlap between low plinth and nose,retain attached posts and re-render actual GLB.",
+      "limitations": [
+        "No final visual or client acceptance."
+      ]
+    },
+    {
+      "pass_number": 2,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "883050a0c4f9c2c17b55c9ce35e854f0113e9e7e18888966474e6ab34d4562f1",
+        "glb": "b8eca0b4a05a0afd6b4194f851b46b097c4d1765e8c7006c6e9430d38a7a1f8e"
+      },
+      "runtime_report_sha256": "a5c93ddf66586a4ba98ff0c599f1d91694089e137a5fa86ab7aff49c84f10a6a",
+      "status": "rejected_visual_refinement_required",
+      "finding": "Actual imported whole/front/detail views resolve the nose top strip, but imported rear quarter exposes a second coplanar strip at the base/main-body side overlap. Inset the plinth side edges beneath the main body, keep structural overlap, update actual chip surface coordinate, and repeat renders. Geometry guards remain strict.",
+      "limitations": [
+        "No final visual or client acceptance."
+      ]
+    },
+    {
+      "pass_number": 3,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "04828ba820c788b3dbed969dac42ed1bb29de94931fcb49e1c5a1727d90ef30d",
+        "glb": "b2648ccc9b5b9d879027fe60e3bdfe598ff9391f6bbca9c3641a4d1a1aacbd82"
+      },
+      "runtime_report_sha256": "a6f8f1969a895816d3e80931921c1f3099d46b60d691fae2bb3b14c5c4d44c65",
+      "status": "rejected_source_visibility_refinement_required",
+      "finding": "Both coplanar strips are resolved in actual native rear/whole renders. The two lowest front-wall amber points remain partly or completely masked by the raised plinth,whereas source shows them. Move only these points and their actual blind backings slightly above the plinth and guard this clearance;retain source lower-corner reading. No other silhouette change.",
+      "limitations": [
+        "No final visual or client acceptance."
+      ]
+    },
+    {
+      "pass_number": 4,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "8e6a3ea80239b2fc801f7be4fbc03b47287716095a405703c0e8b40c25739409",
+        "glb": "5a9ffc9c0f2205b302b3aeb4036bed5652af702ccb0887050b1ec383dc79232b"
+      },
+      "runtime_report_sha256": "bd172636d70389142d83e041247ba7d58fbbbce2eee6ab48011ce7a64e040149",
+      "status": "rejected_source_mark_refinement_required",
+      "finding": "Final native quarter and independent GLB whole/front/rear/both details viewed. Both unsupported black coplanar strips are resolved. Four small front points and fifth plinth point remain legible;low pair now clears plinth. Inclined main wall,paired roof uprights,staggered attached service members,U-handles,red emblem/end stripe,slatted nose and two end feet retain source/concept identity. Actual native part-level18blind-field/backing checks,panes/slats,all declared part contacts,three double-ended bridges,cast-body overlaps,continuous wall slope,low-point clearance,chips and independent import surface/transform/material/pixel/render equivalence pass. Final2528tri/8closedpositivebatches/6materials/9maps. The final assembled comparison additionally exposes the simplified plain T: own sprite and concept show a squared lower hook/return. Restore that source mark before final acceptance.",
+      "limitations": [
+        "Five point/port/slat layout and angular service engineering are authored readings of small source pixels. Hidden rear walls,attachment profiles,recess depths and cell-relative dimensions authored.",
+        "Generic round Terran PB25 crane/deck animation is function context only,not Mauna geometry or motion. No own operating cycle inferred.",
+        "Steady amber light is authored;approximate camera,not recovered calibrated projection. Final user artistic acceptance/client scale,state,lighting and performance separate."
+      ]
+    },
+    {
+      "pass_number": 5,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "9d6714b5d0f4d269ecbae6f589dfaaef27fd5fd73b34dc965aac3980419163ba",
+        "glb": "b7bc0dbd3e2bfa0404e093fc2e067b7842f3eb5092a3e78e5110ce313b5c0258"
+      },
+      "runtime_report_sha256": "5c84c4e44c387afcd293f978fb0826522e3c0d4f9c6b78e289169365c9708404",
+      "status": "rejected_paint_overlap_refinement_required",
+      "finding": "Final native quarter,independent GLB whole/front/rear/both details and assembled source/concept/GLB board viewed. Both coplanar strips resolved;four front points plus plinth point visible;source red emblem lower hook/return restored. Inclined cast block,roof pair/three bridges,staggered attached rails/brass members,handles,red nose stripe/slatted inset and two feet retain source/concept identity. Actual native per-part18blind fields/backings,all declared contacts,three double-ended bridges,cast-body overlap,slope,low-point clearance,chips pass. Independent GLB surfaces,transforms,materials,decoded texture pixels/render pairs agree. Final2552tri/8closedpositivebatches/6materials/9maps. No own animation inferred. Detail render additionally exposes a small dark overlap patch where coplanar red glyph pieces intersect. Union only the touching glyph pieces to remove duplicate paint faces;retain separate top mark and source silhouette.",
+      "limitations": [
+        "Five point/port/slat layout and angular service engineering are authored readings of small source pixels. Hidden rear walls,attachment profiles,recess depths and cell-relative dimensions authored.",
+        "Generic round Terran PB25 crane/deck animation is function context only,not Mauna geometry or motion. No own operating cycle inferred.",
+        "Steady amber light is authored;approximate camera,not recovered calibrated projection. Final user artistic acceptance/client scale,state,lighting and performance separate."
+      ]
+    },
+    {
+      "pass_number": 6,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "d4fde3762572335cb8876075c61fa6941a8fa6b578ea5b04a434a201b1e09469",
+        "glb": "3f98f80c4bf987ec67f0a6052eb9cf0c446d6bf26e3c2fbd1fa89babab36ead1"
+      },
+      "runtime_report_sha256": "191ff29b232f01615c7e080766918b0eb6e3740f41a5351213cb8d3c8f3465d0",
+      "status": "accepted_asset_only",
+      "finding": "Final native quarter,independent GLB whole/front/rear/both details viewed after uniting contiguous red glyph paint. The overlap patch is removed and hooked source mark remains. Both cast-body coplanar strips are resolved;all four front points and fifth plinth point visible. Source/concept inclined body,roof pair/bridges,staggered service members,handles,slatted nose,red stripe and two feet retained. Strict native per-part18blind fields/backings,contacts,three double-ended bridges,cast-body overlaps,slope,low-point clearance,chips and independent GLB surface/transform/material/decoded-pixel/render equivalence pass. Final2600tri/8closedpositivebatches/6materials/9maps. No own animation inferred.",
+      "limitations": [
+        "Five point/port/slat layout and angular service engineering are authored readings of small source pixels. Hidden rear walls,attachment profiles,recess depths and cell-relative dimensions authored.",
+        "Generic round Terran PB25 crane/deck animation is function context only,not Mauna geometry or motion. No own operating cycle inferred.",
+        "Steady amber light is authored;approximate camera,not recovered calibrated projection. Final user artistic acceptance/client scale,state,lighting and performance separate."
+      ]
+    }
+  ],
+  "final_review": "Final native quarter,independent GLB whole/front/rear/both details viewed after uniting contiguous red glyph paint. The overlap patch is removed and hooked source mark remains. Both cast-body coplanar strips are resolved;all four front points and fifth plinth point visible. Source/concept inclined body,roof pair/bridges,staggered service members,handles,slatted nose,red stripe and two feet retained. Strict native per-part18blind fields/backings,contacts,three double-ended bridges,cast-body overlaps,slope,low-point clearance,chips and independent GLB surface/transform/material/decoded-pixel/render equivalence pass. Final2600tri/8closedpositivebatches/6materials/9maps. No own animation inferred.",
+  "limitations": [
+    "Five point/port/slat layout and angular service engineering are authored readings of small source pixels. Hidden rear walls,attachment profiles,recess depths and cell-relative dimensions authored.",
+    "Generic round Terran PB25 crane/deck animation is function context only,not Mauna geometry or motion. No own operating cycle inferred.",
+    "Steady amber light is authored;approximate camera,not recovered calibrated projection. Final user artistic acceptance/client scale,state,lighting and performance separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false,
+  "source_citation_revalidation": {
+    "report": "sources/docs/reconstruction/models/mauna-source-citation-revalidation.json",
+    "model_binaries_and_renders_unchanged": true,
+    "scope": "Actual original-payload citation revalidation only; not a new render or artistic/client acceptance."
+  }
+}

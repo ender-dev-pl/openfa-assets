@@ -1,0 +1,53 @@
+{
+  "issue": 230,
+  "id": "openfa:camera-mode-icon",
+  "native_size": [
+    48,
+    40
+  ],
+  "hires_size": [
+    384,
+    320
+  ],
+  "transparent": true,
+  "button_chrome": false,
+  "text": false,
+  "semantics": "Toggle camera orbit/yaw and pitch interaction mode. Not camera reset, zoom, pan, or a recovered legacy command.",
+  "style_reference": {
+    "set": "sources/ui/legacy-icon-set",
+    "legacy_frames": [
+      "ICONS.256/006",
+      "ICONS.256/019",
+      "ICONS.256/059"
+    ],
+    "palette": "BLUE.256",
+    "interpretation": "Palette/material/raised-sign language only; new camera motif authored from geometry. No legacy pixels or contours used."
+  },
+  "inputs": {
+    "sources/ui/camera-mode-icon/build_camera_mode_icon.py": "7090e153c9a3ea5e984b62446359cf29cc5a40b40127704c5b29ddb456ba7948",
+    "sources/ui/legacy-icon-set/legacy_shapes.py": "98bbc3fc92bffd6a8854d9a56c4dd9f1b38fec992b8ca034219a4fa8b3741167",
+    "sources/ui/legacy-icon-set/icon_recipes.py": "956a6bd3f45868c367cf9dc5efffd965474441d84fbec1fd13bb8eb7d84866a6",
+    "sources/ui/legacy-icon-set/assemble_icon_set.py": "5d08d979f9a5ee9872473c0cc7c4819b282723c01ec93bff90d2f1632ae9ffa5"
+  },
+  "blend": {
+    "path": "sources/ui/camera-mode-icon/camera-mode-icon.blend",
+    "sha256": "ba7739cb8a0504a04f3736f5ab2bda700505c69b1becf0d63ff723a9a6dc0e09"
+  },
+  "glb": {
+    "path": "sources/ui/camera-mode-icon/camera-mode-icon.glb",
+    "sha256": "9a2a38b27128e9a7eb1cd8548fd996c09a8b3d8704d129b1bb4d14ee2380b459"
+  },
+  "renders": {
+    "native-render.png": "60a87ef57c38b1044faae566997cf65753418e168bc7518eb9e188befed43740",
+    "imported-glb.png": "4faf874c99cc48f8fb1414ca0a845701d1fca5b7fac530b5b7ad21b4d94f10e7",
+    "reopened-blend.png": "60a87ef57c38b1044faae566997cf65753418e168bc7518eb9e188befed43740"
+  },
+  "runtime": {
+    "blender": "4.5.15 LTS",
+    "engine": "Cycles",
+    "samples": 64,
+    "source_objects": 14,
+    "imported_objects": 14,
+    "glb_materials": "Portable constant PBR approximation; procedural wear is in the native model and PNGs."
+  }
+}

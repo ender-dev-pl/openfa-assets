@@ -1,0 +1,159 @@
+{
+  "id": "openfa:building/legacy/138",
+  "binaries": {
+    "blend": "d86c8f8bc53ec6584b057fbaedeff2eb1cb864f2ddc7a73102f023b988f6d653",
+    "glb": "a56401153523cc7d31cb5abf32b2001ba654d6c76010c997b32f0a26bf38476b"
+  },
+  "clip": "LaunchFacilityCycle",
+  "kind": "deck",
+  "fps": 24,
+  "time_basis": "Use actual GLB clip start1/24sec plus offsets",
+  "phases": {
+    "closed": 0,
+    "opening_end": 1,
+    "open_hold_end": 3,
+    "cycle_end": 4
+  },
+  "authoritative_game_timing": false,
+  "autonomous_game_loop": false,
+  "root": "PlacementRoot",
+  "ground_level": 0,
+  "preserve_ground_origin": true,
+  "placement_bounds": "Closed bind horizontal extent;underground shaft must not lift building",
+  "closed_bind_horizontal_span": 1.840000033378601,
+  "aperture_polygon_local_xy": [
+    [
+      -0.805,
+      -0.805
+    ],
+    [
+      0.805,
+      -0.805
+    ],
+    [
+      0.805,
+      0.805
+    ],
+    [
+      -0.805,
+      0.805
+    ]
+  ],
+  "vertical_transit_corridor": [
+    -1.25,
+    2.0
+  ],
+  "hold_open_until_ship_clear": true,
+  "mechanism": "Two attached halves fold DOWN90degrees;no lift or sliding",
+  "source_state": "Own descriptors2closed,3..5folding,6..16emptyopen,17foregroundbodymask. Altitude-driven legacy0x44BE0,not elapsed gameplay time.",
+  "authored_normalized_phase_suggestion": {
+    "2": 0,
+    "3": 0.25,
+    "4": 0.5,
+    "5": 0.75,
+    "6..17": 1
+  },
+  "phase_limit": "Normalized3D interpolation/angles authored,not a recovered metric motion curve",
+  "ships": [
+    {
+      "model": "sources/objects/mauna/surveillance-craft-type-5/model.glb",
+      "sha256": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
+      "world_size": 40,
+      "scale_source": "Authored asset proposal;not installed game scale",
+      "same_culture_authoritative": true,
+      "maximum_horizontal_radius_local": 0.6169422312489248,
+      "maximum_required_square_extent_local": 0.6169375193205954,
+      "minimum_radial_margin_local": 0.15705786684398848,
+      "minimum_square_margin_local": 0.15056252359474886,
+      "minimum_square_margin_world_units": 5.236957247424793,
+      "headings": 256,
+      "required_yaw_degrees": null,
+      "all_headings": true,
+      "maximum_world_size_with_safety_margin": 47.49265654791185,
+      "unconfigured_game_fallback_world_size": 96,
+      "unconfigured_fallback_fits": false
+    },
+    {
+      "model": "sources/objects/mauna/combat-craft-type-1-5/model.glb",
+      "sha256": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
+      "world_size": 56,
+      "scale_source": "Authored asset proposal;not installed game scale",
+      "same_culture_authoritative": true,
+      "maximum_horizontal_radius_local": 0.8263989062067552,
+      "maximum_required_square_extent_local": 0.7270744613967136,
+      "minimum_radial_margin_local": -0.0523988081138419,
+      "minimum_square_margin_local": 0.04042558151863063,
+      "minimum_square_margin_world_units": 1.4061071577491684,
+      "headings": 1,
+      "required_yaw_degrees": 45,
+      "all_headings": false,
+      "maximum_world_size_with_safety_margin": 56.4178836985412,
+      "unconfigured_game_fallback_world_size": 96,
+      "unconfigured_fallback_fits": false
+    },
+    {
+      "model": "sources/objects/terran/assault-fighter/model.glb",
+      "sha256": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+      "world_size": 30,
+      "scale_source": "Supplementary Terran package scale",
+      "same_culture_authoritative": false,
+      "maximum_horizontal_radius_local": 0.5489662546181254,
+      "maximum_required_square_extent_local": 0.5489530351446524,
+      "minimum_radial_margin_local": 0.22503384347478783,
+      "minimum_square_margin_local": 0.2185470077706918,
+      "minimum_square_margin_world_units": 7.601634914995834,
+      "headings": 256,
+      "required_yaw_degrees": null,
+      "all_headings": true,
+      "maximum_world_size_with_safety_margin": 40.0307492273356,
+      "unconfigured_game_fallback_world_size": null,
+      "unconfigured_fallback_fits": null
+    },
+    {
+      "model": "sources/objects/terran/combat-eagle/model.glb",
+      "sha256": "29bef70eaeb3f5f0845780c3ad0d090147e19a2b58c6e945f1e586ccce964677",
+      "world_size": 32,
+      "scale_source": "Supplementary Terran package scale",
+      "same_culture_authoritative": false,
+      "maximum_horizontal_radius_local": 0.6240325511759469,
+      "maximum_required_square_extent_local": 0.6240064730633734,
+      "minimum_radial_margin_local": 0.14996754691696634,
+      "minimum_square_margin_local": 0.14349356985197081,
+      "minimum_square_margin_world_units": 4.991080599962415,
+      "headings": 256,
+      "required_yaw_degrees": null,
+      "all_headings": true,
+      "maximum_world_size_with_safety_margin": 37.5637150977286,
+      "unconfigured_game_fallback_world_size": null,
+      "unconfigured_fallback_fits": null
+    },
+    {
+      "model": "sources/objects/terran/scoutship/model.glb",
+      "sha256": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+      "world_size": 28,
+      "scale_source": "Supplementary Terran package scale",
+      "same_culture_authoritative": false,
+      "maximum_horizontal_radius_local": 0.45823875676568665,
+      "maximum_required_square_extent_local": 0.45821450693271437,
+      "minimum_radial_margin_local": 0.3157613413272266,
+      "minimum_square_margin_local": 0.30928553598262987,
+      "minimum_square_margin_world_units": 10.757757578157289,
+      "headings": 256,
+      "required_yaw_degrees": null,
+      "all_headings": true,
+      "maximum_world_size_with_safety_margin": 44.760698082047824,
+      "unconfigured_game_fallback_world_size": null,
+      "unconfigured_fallback_fits": null
+    }
+  ],
+  "maximum_safe_envelope_radius": 0.7740000980929133,
+  "minimum_safe_square_half_extent": 0.7675000429153442,
+  "same_culture_clearance_required": true,
+  "game_production_roster_verified": false,
+  "game_scale_overrides_installed": false,
+  "game_fallback96_fits": false,
+  "scale_contract_limit": "Same-culture geometry at explicit asset proposals only. Game currently lacks Mauna size overrides and confirmed production recipes;fallback96 fails. Type1.5 requires45degree alignment before vertical transit.",
+  "minimum_required_radial_margin": 0.035,
+  "terrain_cutout_required": true,
+  "game_client_integration": false
+}

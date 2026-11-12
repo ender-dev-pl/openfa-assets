@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/116",
+  "binaries": {
+    "blend": "f675f76f487bb12a93f35b05c5f1c55af347364b0e1998c6e0b6a40e0ac5288a",
+    "glb": "008f00f7ae9bafcdf51ad8c0e2859804f90717d374e79fc014adaca2ed6f5b6d"
+  },
+  "runtime_report_sha256": "64785671e92ea45929ebc5f4459d16bf6e1285db51101ffbbb848ad8d1d34723",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.0006067540392483184,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.00020412329046744235,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 7.337295472888693e-05,
+      "margin": 43
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/artemian/ar10-review-1.png",
+      "sha256": "957dabb85f8ca27f417392e136be08e83139d516921b566ed00d7f3675ea6996",
+      "prompt": "sources/docs/reconstruction/models/ar10-concept-prompt-1.txt",
+      "feedback": "Selected very slender teal mast/open brass capsule frame,two long actual slots,one short brass rod,two squat red housings on low oval green plinth. Actual source proportions govern;fine housing/frame sections and hidden sensor engineering interpreted."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "binaries": {
+        "blend": "eb08a749c9aacd623ae0ec5bf79d4b612233ce17189f016eb4955479a3972152",
+        "glb": "c28de9cfe5c2ee6ab7a2e723ae743c97785c915c8c58cdbbb7b867e115d57b68"
+      },
+      "runtime_report_sha256": "c514e72b0907f6c843e5c86a0d3d9f5c518febff82b94a3148eaf87b7dcf271e",
+      "status": "revision_required",
+      "finding": "Actual whole legacy/concept/imported GLB and head/base/front/rear render review preserves slender geometry/open slots/counts,with technical contacts/equality passing,but central mast is much too dark forest-green against actual pale teal/silver-green source and concept.",
+      "action": "Assign main mast the exposed-metal material with a pale teal authored colour map,retaining six maps and all geometry/source/contact guards. Rerun full saved-native/imported GLB and actual render review."
+    },
+    {
+      "pass_number": 2,
+      "binaries": {
+        "blend": "f675f76f487bb12a93f35b05c5f1c55af347364b0e1998c6e0b6a40e0ac5288a",
+        "glb": "008f00f7ae9bafcdf51ad8c0e2859804f90717d374e79fc014adaca2ed6f5b6d"
+      },
+      "runtime_report_sha256": "64785671e92ea45929ebc5f4459d16bf6e1285db51101ffbbb848ad8d1d34723",
+      "status": "agent_review_accepted",
+      "finding": "Actual final whole source/concept/imported GLB,front/rear and frame/base details reviewed. Slender source silhouette,small oval foot,open brass capsule around upper mast,two long slots,short brass rod and two squat red housings remain readable. Second source revision assigns central mast a paler teal exposed-metal map/material;actual renders bring it closer to source silver-green colour rather than first dark green. Geometry/counts unchanged. Actual frame/mast end joins,rod/plinth and housing/support/plinth samples pass;both long slots genuinely open. All8native/import meshes closed positive,all6decodedmaps equal,bidirectional surfaceerror0. Fine map scratches/tarnish,three small physical chips and shallow plinth dent retained;concept finer sections remain interpreted. Frozen old pair unchanged.",
+      "action": "Accept asset-only agent source/concept/native/imported GLB review. Hidden sensor engineering,frame/housing sections and metric dimensions remain unknown/authored. Generic PB16 tower and different ST12 upgraded housing do not establish AR10 anatomy or working animation. Client scale/state/shaders,Android performance and final user artistic acceptance separate."
+    }
+  ],
+  "final_review": "Actual source/concept/imported GLB comparison retains small low oval green foot,very slender tall teal mast,open brass capsule frame around upper half with two long actual slots,short brass rod and two squat red housings. Actual mast/frame end joints,rod/plinth and housing/support/plinth contacts checked;native/imported closed positive surfaces and decoded textures agree;whole/front/rear/detail renders inspected.",
+  "limitations": [
+    "Exact hidden sensor engineering,frame/housing sections and metric dimensions remain authored or unknown.",
+    "Generic PB16 sensor tower and ST12 upgraded enclosed housing do not establish AR10 anatomy or working animation.",
+    "Final user artistic acceptance,calibrated client scale/state/shaders and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

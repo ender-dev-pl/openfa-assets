@@ -1,0 +1,28 @@
+{
+  "issue": 265,
+  "revision": 2,
+  "binaries": {
+    "blend": "6728dbf6b1c8e0d2b526c68712f66a22a98a08a39b7516b604d9eb968bb21ceb",
+    "glb": "e69580866eeef04396a736ed3233e6f8fc7cb61041941d2640be1c4d2fe44856"
+  },
+  "comparison": {
+    "path": "gallery/media/proposals/engineering-ships/achaean/terraform/refinement-comparison.png",
+    "sha256": "f19d077b5cdfbddae4385397d8591e1970e7819f11fd68feeb27b15c8ca65346",
+    "baseline_commit": "007251cd5d65473d32f300ba55679e97ac5669d2",
+    "baseline_binary_sha256": "07e1ae7de9b59ffc0c7db3ecd58dc7190a46cb4d5f7a15148f8904a297226977",
+    "refined_binary_sha256": "e69580866eeef04396a736ed3233e6f8fc7cb61041941d2640be1c4d2fe44856"
+  },
+  "review": "Author visual comparison;user artistic acceptance pending",
+  "observations": [
+    "Actual native and independently imported front/rear/top renders were inspected against current Dedicated Fighter and Hunter/Prospector GLBs in the same studio. The pointed copper spindle,thin silver/crimson crescents and sparse hatches retain the cultural family;the utility wing/grader layout is deliberately distinct from combat/scout proportions.",
+    "Cycle1 replaced the rounded forebody and matched colour/metal targets,then exposed red-field breaks caused by truncated spline endpoint tangents. Cycle2 follows the full silver-wing spline for both mirrored red fields and explicitly fits roughness as well as metalness. Four colour/full ORM medians now match actual shared canonical atlas tile interiors within one byte;wear remains independently authored without a dense panel grid.",
+    "Actual working poses at0/1/2/3seconds were inspected. The crescent grader keeps its rooted pivot. Repair support positioning and wrist alignment precede two independent claws closing/releasing and returning. Six sampled native/import support and animated-surface checks pass;fixed wings do not move with the intentionally asymmetric ventral tool.",
+    "Native repair wing vertices/counts remain mirrored. Imported red-field pairs can have different UV/normal corner splits (589 versus584) while triangle counts and actual mirrored surfaces agree below1e-5. The specialized verifier now preserves strict native counts and verifies equal imported triangles plus bidirectional mirrored surfaces. Its actual displaced-vertex negative control still rejects distorted wings in both representations.",
+    "User artistic acceptance,physical game scale,platform profiling and continuous swept clearance remain pending. These are authored proposal units awaiting mechanics;canonical models and gameplay/runtime catalogues are unchanged."
+  ],
+  "limits": [
+    "Authored rear/hidden engineering and provisional scale.",
+    "These are new proposals,not recovered legacy units. No gameplay mechanics or integration.",
+    "Six sampled physical attachment states do not certify continuous swept collision clearance."
+  ]
+}

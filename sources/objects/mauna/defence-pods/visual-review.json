@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/142",
+  "binaries": {
+    "blend": "94fdf771c4f7b7d3deba43690871977748b433ed97a63318b46044ddeac4f198",
+    "glb": "a81b66ea337b450056623a59deba19dc9585213936c4486fc0f18dfd47a6fe6b"
+  },
+  "runtime_report_sha256": "edf85a3d65a229c086412460fbeacac70fbefb431ba49d13e01dbafc61e4a4d9",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.012181106339984845,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 0.004655146730224937,
+      "margin": 42
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 0.0036689930209371883,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn13-review-1.png",
+      "sha256": "52906bb8ff904089fc169fc68420ca90a82139dad3b20141a059ac2bd4e723c6",
+      "prompt": "sources/docs/reconstruction/models/mn13-concept-prompt-1.txt",
+      "feedback": "Selected after direct comparison with own catalogue detail and all sixteen correctly composed directional layers. Retains squat truncated-square concrete base, broad red strip on one sloping face, framed two-column/four-row vent on adjacent face, small rounded/chamfered head and single long inclined barrel. Wear is appropriate and broad surfaces remain readable. Fine bearing, service plate, muzzle bore, hidden rear walls and dimensions are interpreted. Own MN13 directs geometry over generic Terran PB03/ST02."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "status": "revision_required",
+      "binaries": {
+        "blend": "91444366c9ea0a239186cd4af38fc40e50071612cb7638695cf5261343fb2110",
+        "glb": "c884378d2cc43f7dd0567313c0ced572bdfc6a158be72de53ac4621d99b769fe"
+      },
+      "finding": "Actual native hero inspected after native/import geometry parity passed. Head edges look too box-like and the bearing is too tall relative to own source and selected concept. Lower the moving assembly by .10, shorten the fixed bearing by .10, round head edges, retaining one barrel and fixed pedestal. Exported clip is Animation, same as the historical GLB; correct metadata naming without changing native HeadingPreview_360 controller.",
+      "pass_number": 1,
+      "limitations": [
+        "First inspection used the actual native hero after native/import geometry parity. The verifier stopped on an incorrect expected exported clip name before final independent GLB renders. This is not a completed final runtime pass."
+      ]
+    },
+    {
+      "pass_number": 2,
+      "status": "accepted_asset_only",
+      "binaries": {
+        "blend": "94fdf771c4f7b7d3deba43690871977748b433ed97a63318b46044ddeac4f198",
+        "glb": "a81b66ea337b450056623a59deba19dc9585213936c4486fc0f18dfd47a6fe6b"
+      },
+      "runtime_report_sha256": "edf85a3d65a229c086412460fbeacac70fbefb431ba49d13e01dbafc61e4a4d9",
+      "finding": "Inspected the actual own-source / selected-concept / independent GLB whole/front/rear/head comparison board and a separate imported frame9 render with source-like barrel heading. The shortened bearing and lowered, rounded head improve the source silhouette. Broad quiet sloping concrete walls, one red strip, two-column/four-row framed vent and ONE slim barrel remain. Native and independent GLB65pose checks pass for actual attachments, fixed base, unintended moving/fixed surface intersections, eight blind vent cells/backings, recessed muzzle/bore backing, chips, slope, UVs, decoded texture pixels, retained native controller and export animation parity. Geometry1930triangles/22meshes/4materials/6maps. Surface error6.423506988539884e-7 and matrix error5.364418029785156e-7. No significant further source/concept discrepancy requiring another model revision identified.",
+      "limitations": [
+        "Exact hidden rear, head service plate, bearings, muzzle bore, wall depths, elevation and cell-relative dimensions are authored. Source-like frame9 camera is approximate, not calibrated source-index recovery.",
+        "Own16headings establish directional movement, not an autonomous scan, firing or recoil timing. Native HeadingPreview_360 and exported Animation preserve the existing controller/clip naming; gallery playback is an authored inspection aid.",
+        "65sampled poses verify the inspected sweep, not every continuous point. Muzzle socket, client heading registration, actual scale/state/shader and Android performance remain separate integration work.",
+        "Final user artistic approval is not inferred from agent visual review. Generic Terran PB03/ST02 is functional context only."
+      ]
+    }
+  ],
+  "final_review": "Inspected the actual own-source / selected-concept / independent GLB whole/front/rear/head comparison board and a separate imported frame9 render with source-like barrel heading. The shortened bearing and lowered, rounded head improve the source silhouette. Broad quiet sloping concrete walls, one red strip, two-column/four-row framed vent and ONE slim barrel remain. Native and independent GLB65pose checks pass for actual attachments, fixed base, unintended moving/fixed surface intersections, eight blind vent cells/backings, recessed muzzle/bore backing, chips, slope, UVs, decoded texture pixels, retained native controller and export animation parity. Geometry1930triangles/22meshes/4materials/6maps. Surface error6.423506988539884e-7 and matrix error5.364418029785156e-7. No significant further source/concept discrepancy requiring another model revision identified.",
+  "limitations": [
+    "Exact hidden rear, head service plate, bearings, muzzle bore, wall depths, elevation and cell-relative dimensions are authored. Source-like frame9 camera is approximate, not calibrated source-index recovery.",
+    "Own16headings establish directional movement, not an autonomous scan, firing or recoil timing. Native HeadingPreview_360 and exported Animation preserve the existing controller/clip naming; gallery playback is an authored inspection aid.",
+    "65sampled poses verify the inspected sweep, not every continuous point. Muzzle socket, client heading registration, actual scale/state/shader and Android performance remain separate integration work.",
+    "Final user artistic approval is not inferred from agent visual review. Generic Terran PB03/ST02 is functional context only."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false,
+  "source_citation_revalidation": {
+    "report": "sources/docs/reconstruction/models/mauna-source-citation-revalidation.json",
+    "model_binaries_and_renders_unchanged": true,
+    "scope": "Actual original-payload citation revalidation only; not a new render or artistic/client acceptance."
+  }
+}

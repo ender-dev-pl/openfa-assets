@@ -1,0 +1,275 @@
+{
+  "issue": 265,
+  "revision": 2,
+  "culture": "terran",
+  "role": "repair",
+  "status": "proposed-assets-awaiting-mechanics",
+  "legacy_unit": false,
+  "runtime_integration": false,
+  "mechanics_available": false,
+  "blueprint_registered": false,
+  "package_registered": false,
+  "binaries": {
+    "blend": "9121f749d6cbb633afa2b963412411bf07cdbf60aded2a56c79164988469bb9f",
+    "glb": "12a4cd30acfde835d022a740183248c4b77e0e6d34dab14d0e28d169de4a9635"
+  },
+  "author": "sources/tools/blender/proposals/author_terran_engineering.py",
+  "author_sha256": "c4963de64d9b43592510bfce4bde9e989ceefcb37a2eaf23b5d40d672bc8c1d1",
+  "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
+  "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "refinement_helper": "sources/tools/blender/proposals/engineering_ship_refinement.py",
+  "refinement_helper_sha256": "1870515d9d565159d9162dd363be97510f69a65d429fec9d8b0af69e8704842c",
+  "concept": {
+    "culture": "terran",
+    "role": "repair",
+    "concept_version": "v3",
+    "image": "sources/artwork/proposals/engineering-ships/terran/repair-ship.png",
+    "sha256": "d37057df0b86f6f402428b492d64071d5de748448813420dc2d4aa43198ce104",
+    "prompt": "Use case: stylized-concept. A simple production-minded spacecraft design for an isometric real-time strategy GAME, a new OpenFA Terran utility unit. The user rejected previous versions as much too complicated. Prioritize immediate recognition at ONLY 64\u00e2\u20ac\u201c96 pixels wide in gameplay: one bold silhouette, 4\u00e2\u20ac\u201c6 major visual masses, large unbroken panels, minimal surface detail. Design something feasible and economical to model, animate, and draw many times on screen. Restrained late-1990s pre-rendered RTS art sensibility with clean solid 3D forms and soft bevels. NOT a detailed cinematic spaceship, NOT an industrial kitbash, NOT a photorealistic machinery showcase. Reference images are ONLY for Terran palette and material character: muted slate blue-grey metal, a few broad vermilion red painted panels, silver engine shrouds and bronze exhaust rims. Hull shape is determined by utility function; do not copy a triangular fighter silhouette.\nOne complete small spacecraft isolated on uniform pure black. Centered elevated front three-quarter view, whole silhouette with margin. Broad legible highlights, a few dark recesses, subtle understated paint edge scuffs and grime only. No fine plating, rivet fields, exposed wiring, hydraulic hoses, railings, aerials, dishes, scattered lamps, hazard stripes, ladders, cargo clutter, cockpit interior or busy greebles. No text, logos, watermark, scene, floor, people, second ship or weapons. No wheels or tracks. Work equipment idle.\nSubject: TERRAN REPAIR AND CONSTRUCTION-ASSIST SHIP. A simple compact rounded rectangular service spacecraft, a short solid shallow hull with blunt front and sloped shoulders, two stubby integrated engine pods, a low dark control visor on the hull, and ONLY TWO simple articulated tool arms below the front corners. One arm ends in a broad obvious two-finger lifting claw; the other in a short thick welding nozzle with a bronze tip, not a drill. Each arm has just two chunky segments and readable round joints. Arms folded close enough to keep a compact silhouette, slightly deployed so the tips are legible. No third arm, shelves, spare component boxes, cargo decks or external sensors. Main shapes: hull + two pods + two arms. Two broad red patches on the slate grey upper hull, silver pod caps and bronze thruster rims. Smaller and lighter-looking than the heavy terraforming ship. Intentionally simple 3D GAME ASSET design with almost no small surface detail.",
+    "references": [
+      {
+        "identity": "terran-00.png",
+        "scope": "Private palette reference;original pixels are not published"
+      },
+      {
+        "identity": "rotation-00.png",
+        "scope": "Private palette reference;original pixels are not published"
+      }
+    ],
+    "origin": "Supplied and selected ImageGen concept;no new generation performed by this modeling task",
+    "legacy_unit": false,
+    "runtime_integration": false,
+    "mechanics_available": false
+  },
+  "triangles": 31376,
+  "triangle_budget": 40000,
+  "meshes": 114,
+  "materials": 9,
+  "maps": {
+    "sources/materials/proposals/engineering-ships/terran/abraded-tool-steel-normal.png": "052e7414d3baab1e792ccba7c7b5ad491a8f6b5006c9752224343d87b259dec5",
+    "sources/materials/proposals/engineering-ships/terran/abraded-tool-steel-orm.png": "79dd77625142f5c88841ac86e5e7d191da3119086e55797f41aa250b4c7c3bd8",
+    "sources/materials/proposals/engineering-ships/terran/abraded-tool-steel.png": "18412cf9bc73a1eb3b2745ede4d2c5114ab458b72747ffb6e8d8c571ff1ed884",
+    "sources/materials/proposals/engineering-ships/terran/bronze-normal.png": "36304fed5d0e3315b2d96d79376e5959690db1fb0b5d5051d3211534028d902d",
+    "sources/materials/proposals/engineering-ships/terran/bronze-orm.png": "e1461fd4f9b9fb3e91a5c0c00be1cc59764b524698d490a4444a0166296b6409",
+    "sources/materials/proposals/engineering-ships/terran/bronze.png": "77d2bc87aeda0a405d7c3760f2a6ba2898b731690ed83d7d29009a97a8151c73",
+    "sources/materials/proposals/engineering-ships/terran/dark-visor-normal.png": "e69d537d3e31fcff01221c5ffc95215e5461762bb9e8345f7023fb04bb743509",
+    "sources/materials/proposals/engineering-ships/terran/dark-visor-orm.png": "4215b6ec5441e36e95cb937e9b8f5e409c181de74e3f7441460e5f8f18b6910e",
+    "sources/materials/proposals/engineering-ships/terran/dark-visor.png": "7439d7729c05d55493d9f5c77efd9fb9f706e52b3e74908999fd798a3df1b86d",
+    "sources/materials/proposals/engineering-ships/terran/machined-alloy-normal.png": "fbfef9a536154aa0a25f557806c41b6900bf3ad66a93b849a1fc830ec9cf58bc",
+    "sources/materials/proposals/engineering-ships/terran/machined-alloy-orm.png": "b2949b45566da73b607081a92ecc172ff63d84e9f0b0813512cf68b052ed7ba9",
+    "sources/materials/proposals/engineering-ships/terran/machined-alloy.png": "5541aff56c8f0940d84369d85c3292d59bc8fc7c379b408f63865af2835d8a06",
+    "sources/materials/proposals/engineering-ships/terran/recess-seal-normal.png": "bc66421e58b537ffb79a76d8f194ac6f7ccddb202c4976bbfd853aa459a16986",
+    "sources/materials/proposals/engineering-ships/terran/recess-seal-orm.png": "60bdb706629f50386945570171baedb3d7e9f704ed4d4751fe92a9bdad3e59dd",
+    "sources/materials/proposals/engineering-ships/terran/recess-seal.png": "e594c58b04ad9084af439c1235b90e8cfb643465a767e393098b9367e3110309",
+    "sources/materials/proposals/engineering-ships/terran/silver-steel-normal.png": "82a60e1bd20e4aadacb789d6e28de85ea920ba3c04ecd7670a84366d7c2b419d",
+    "sources/materials/proposals/engineering-ships/terran/silver-steel-orm.png": "fcf9f4d82a389cdf874efbd07759a39cdc36caf6f17f28e47f34eec569b65588",
+    "sources/materials/proposals/engineering-ships/terran/silver-steel.png": "7e4fc58be1583c2c819d0cddd1e8efaaf4152f0d7d08b35e59adee767bd7b84f",
+    "sources/materials/proposals/engineering-ships/terran/slate-blue-normal.png": "c1ae4e7dd15cfcd4ca9bfb22aa7b1238c7accbd3a639b9dc77425319a2879c64",
+    "sources/materials/proposals/engineering-ships/terran/slate-blue-orm.png": "1ef015e6ba42fe134f1378bbea8f706b08805508b1ffacff03ae20c67bdf33cb",
+    "sources/materials/proposals/engineering-ships/terran/slate-blue.png": "3daa694790dd82a193bb15c08e25f5dc2b22d7114481300a647a71e254a678c5",
+    "sources/materials/proposals/engineering-ships/terran/vermilion-normal.png": "1e350aceb7feb11de4daf07fef702841cbf410e3d62f91c1c72d1646bec9f94d",
+    "sources/materials/proposals/engineering-ships/terran/vermilion-orm.png": "103c62989f4fd1b7fb962f4d17f384a58f64eca396801c3c89c69dcf67a0e26b",
+    "sources/materials/proposals/engineering-ships/terran/vermilion.png": "e626e4a7c2d5f736c468b5c3223b78f9fa8e276ff023ef4acfd096c509eda0d3",
+    "sources/materials/proposals/engineering-ships/terran/working-steel-normal.png": "71aa110cb59a1e1daabcb3f25c37107328e811905f28056b1bc147e0ac05c26e",
+    "sources/materials/proposals/engineering-ships/terran/working-steel-orm.png": "d1176803aa0c6a1b86222f8671e4586bfabbf484bfa5f97a73c0c4189788e264",
+    "sources/materials/proposals/engineering-ships/terran/working-steel.png": "aa919c4c684fe46b75398e66391e2cc429c23c67d0c719dfb4d2988e201712b1"
+  },
+  "bounds": [
+    -1.2599999904632568,
+    -1.8548001050949097,
+    -0.23200002312660217,
+    1.2599999904632568,
+    0.9800000190734863,
+    0.5699117183685303
+  ],
+  "joints": [
+    "GripShoulderPivot",
+    "GripElbowPivot",
+    "GripJawPivot -1",
+    "GripJawPivot 1",
+    "WelderShoulderPivot",
+    "WelderElbowPivot"
+  ],
+  "clips": [
+    {
+      "name": "ToolOperation",
+      "fps": 24,
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 4,
+      "motion": [
+        {
+          "joint": "GripShoulderPivot",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0.2
+            ],
+            [
+              49,
+              0.2
+            ],
+            [
+              73,
+              0.05
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "GripElbowPivot",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              -0.32
+            ],
+            [
+              49,
+              -0.32
+            ],
+            [
+              73,
+              -0.08
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "GripJawPivot -1",
+          "path": "rotation_euler",
+          "axis": 2,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              49,
+              0.24
+            ],
+            [
+              73,
+              0
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "GripJawPivot 1",
+          "path": "rotation_euler",
+          "axis": 2,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              49,
+              -0.24
+            ],
+            [
+              73,
+              0
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "WelderShoulderPivot",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              -0.13
+            ],
+            [
+              49,
+              -0.13
+            ],
+            [
+              73,
+              -0.0325
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "WelderElbowPivot",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0.20800000000000002
+            ],
+            [
+              49,
+              0.20800000000000002
+            ],
+            [
+              73,
+              0.052000000000000005
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scale": "Authored proposal units;not calibrated meters/cells or production/hangar clearance",
+  "notes": [
+    "Based on selected supplied Terran v3 concept. Canonical-fleet style correction: swept layered deck,tapered faceted hull,circular thermal casings and quiet red fields. Linear canonical material factors converted to sRGB map targets. Role-specific tools retained;repair jaw operation follows arm positioning.",
+    "Hidden/rear surfaces,pivot engineering and arbitrary proposal units are authored. No legacy definition,blueprint,production route or game mechanic is supplied.",
+    "Repair role supports both repair and new construction in its design intent only.",
+    "Revision 2: defined hull planes,controlled edge radii,weighted surface normals,portable colour/ORM/tangent normal maps,material wear and attached mechanical detail."
+  ]
+}

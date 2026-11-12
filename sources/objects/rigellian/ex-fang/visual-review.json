@@ -1,0 +1,424 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/061",
+  "concept_requests_used": 2,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri22-review-2.png",
+    "sha256": "0f1bf6fb61a8d65409ad6b7a7df3673cdc54fd171b53e33c714af87de6d21cac",
+    "prompt": "sources/docs/reconstruction/models/ri22-concept-prompt-2.txt",
+    "verdict": "Second iteration preserves a single shallow green collector, central copper projection, four bronze fittings and narrow inclined support. Extra linkages/collars and changed base proportions remain artistic interpretation; retain simpler source geometry."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "outcome": "Image returned and rejected: invented extra green plate behind collector.",
+      "prompt": "sources/docs/reconstruction/models/ri22-concept-prompt-1.txt",
+      "image": "gallery/media/concepts/rigellian/ri22-review-1.png",
+      "sha256": "4a0fa1639b756d1b831d6aae41c6b61f3a00ebe339429a98e9e38e8dfc3a64b8"
+    },
+    {
+      "attempt": 2,
+      "outcome": "Image returned and inspected: one-dish silhouette corrected; selected.",
+      "prompt": "sources/docs/reconstruction/models/ri22-concept-prompt-2.txt"
+    }
+  ],
+  "legacy": {
+    "surface_payload_sha256": "1ad78338e69fa532941cf0d88088f37060573f2661455201426fbfeb6d72ea4d",
+    "static_base_descriptor_empty": true,
+    "complete_directional_building_frames": true,
+    "shadow_sha256": "def767c9ef22ee47c2592473471e6ccdbc1af883e79643d050594713a303801a",
+    "assembled_descriptor_sha256": {
+      "2": "daf1aad4df75706919286b8688e9af377a8c3288ca3866a39064258692b31fde",
+      "3": "f95cd5a0b2e58bcfc0e327a5de62fa78f0aff310e2957dea8560752e3de86571",
+      "4": "29080e009acec254c21022eb2dc642d85ba6a0299ecfb3726bba66882ba5b182",
+      "5": "d7909a1ba5865d4d4de83c74e16431b74e03346b9b951e3a0d3369ed93e9166f",
+      "6": "12d99c206f2c6b7eeb04c04c0d862f6f6fe672b2cc076aa004f0bdb8d0a07f05",
+      "7": "bcc6200c7f133dbb7567a6da40fef42a70c31fa2a2a764f592354666923f1947",
+      "8": "8e7394987360868f93d835e3582eadd82962f0475021d5849fb0775da7c25084",
+      "9": "7245167c6c4e24ffc2287de1519ef003d5d1544403fbe5c52e7975ccfd4f2bde",
+      "10": "f3a9be0e38052c656686320c52171f819c4e0170afce6f2c3c7e69ea6e88b85d",
+      "11": "52525de463edb1796b42dbed63857bcf40493f36ff392220a979f27d2801dc17",
+      "12": "716d8ba4c7e99b5bb6f713a94da50daf70cca30e197033c66f4f75d540e3e254",
+      "13": "e93d86b0c7b4cd1750bcdfeed367e9ef14421f010814aab293d605fc0af552c2",
+      "14": "acee06a21db2ffd7d3e8a0b8778e792ee5a63594015f5207e876a1e4eae78b77",
+      "15": "f3d03fe6b9f6a3cb9096accac15a97cd1b6c51a3e3785c965ac322121397c98f",
+      "16": "498a6bf2e6d76e1aa32dd01462aa55b362601d7176badff03b7d09574a37e5d8",
+      "17": "e09e84cb5dfdecdb165d8e5d8df24b4b051f334ae3fac32bc8576099ff779b6e"
+    },
+    "reviewed_catalogue_phases": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "functional_record": 922,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "f63ba527395322e59c8fcd2b3e255478eb25e85eef1c4e985e52515267a25072",
+    "glb": "5ddcf26ad1ff3bf5467718526c6c725359a0334e81b30b4821f7bc603530e593"
+  },
+  "runtime_report_sha256": "771da428e05cc4573d6076bc5f7633251cd2691e9fa71e7eaa89475ec8e60019",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0003255208333333333,
+        0.0003611246744791667,
+        0.00034247504340277775,
+        1.3563368055555555e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0023893746245745176,
+        0.002616298471601148,
+        0.002496162317292932,
+        0.0001067876927184142
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 120
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.00022210015190972222,
+        0.0003085666232638889,
+        0.00028313530815972225,
+        1.3563368055555555e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0017364657814096017,
+        0.0024368889537428862,
+        0.002101269516999854,
+        0.0
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 94
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0005069308810763889,
+        0.0005560980902777778,
+        0.0004967583550347222,
+        4.0690104166666664e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0045122327831726315,
+        0.00502693614246989,
+        0.004460762447242906,
+        0.0002745084582918711
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": false,
+      "threshold_silhouette_disagreement_fraction": 1.7156778643241944e-05,
+      "margin": 130
+    },
+    "yaw-00": {
+      "mean_absolute_rgba_255": [
+        0.0003255208333333333,
+        0.0003611246744791667,
+        0.00034247504340277775,
+        1.3563368055555555e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0023893746245745176,
+        0.002616298471601148,
+        0.002496162317292932,
+        0.0001067876927184142
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 120
+    },
+    "yaw-01": {
+      "mean_absolute_rgba_255": [
+        0.00023227267795138888,
+        0.00026109483506944444,
+        0.00023396809895833334,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.002366645095682722,
+        0.002680965147453083,
+        0.0024406027549228066,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 111
+    },
+    "yaw-02": {
+      "mean_absolute_rgba_255": [
+        0.0005510118272569445,
+        0.0006188286675347222,
+        0.0006035698784722222,
+        2.712673611111111e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0032837884548911167,
+        0.0035097981866042704,
+        0.003469914116301949,
+        0.00010635752080619
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 97
+    },
+    "yaw-03": {
+      "mean_absolute_rgba_255": [
+        0.0005967881944444445,
+        0.0005832248263888889,
+        0.0005764431423611111,
+        5.425347222222222e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.002634134062140391,
+        0.002589182968929804,
+        0.0025442318757192173,
+        0.0
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 80
+    },
+    "yaw-04": {
+      "mean_absolute_rgba_255": [
+        0.0005849202473958334,
+        0.0006595187717013889,
+        0.0005967881944444445,
+        2.712673611111111e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0022014124046559535,
+        0.002477430473741257,
+        0.002248537440841249,
+        5.385718421176645e-05
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 59
+    },
+    "yaw-05": {
+      "mean_absolute_rgba_255": [
+        0.0005001491970486111,
+        0.0005289713541666666,
+        0.00047471788194444444,
+        2.712673611111111e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0019489405227583727,
+        0.002052607571841265,
+        0.0018383623370699545,
+        0.00011057818568841832
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 69
+    },
+    "yaw-06": {
+      "mean_absolute_rgba_255": [
+        0.0004085964626736111,
+        0.0004323323567708333,
+        0.0004323323567708333,
+        2.712673611111111e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.001924620548744892,
+        0.002125291885580852,
+        0.0020523204903677757,
+        7.297139521307647e-05
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 97
+    },
+    "yaw-07": {
+      "mean_absolute_rgba_255": [
+        0.0003085666232638889,
+        0.00040520562065972225,
+        0.0003407796223958333,
+        1.3563368055555555e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0023129987826322196,
+        0.0030975246855133236,
+        0.002542946030028405,
+        0.00010821046936291087
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 120
+    },
+    "yaw-08": {
+      "mean_absolute_rgba_255": [
+        0.00046624077690972225,
+        0.0005764431423611111,
+        0.000457763671875,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.003975278735364452,
+        0.004813814093605391,
+        0.003913165005124382,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 128
+    },
+    "yaw-09": {
+      "mean_absolute_rgba_255": [
+        0.00029669867621527775,
+        0.0003255208333333333,
+        0.0003102620442708333,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.002002538100615897,
+        0.0021538927244996566,
+        0.0020956794076212874,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 121
+    },
+    "yaw-10": {
+      "mean_absolute_rgba_255": [
+        0.0002712673611111111,
+        0.0002848307291666667,
+        0.0002933078342013889,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.0013595060169105007,
+        0.001412132056274778,
+        0.001420903062835491,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 115
+    },
+    "yaw-11": {
+      "mean_absolute_rgba_255": [
+        0.0002712673611111111,
+        0.00030348036024305556,
+        0.0002933078342013889,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.001082710888782293,
+        0.0011923524977729047,
+        0.001144384293839512,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 108
+    },
+    "yaw-12": {
+      "mean_absolute_rgba_255": [
+        0.0005120171440972222,
+        0.0004475911458333333,
+        0.0005204942491319445,
+        4.0690104166666664e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.001538848780934293,
+        0.0013329061931512648,
+        0.0015846138004416324,
+        9.153003901467913e-05
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 97
+    },
+    "yaw-13": {
+      "mean_absolute_rgba_255": [
+        0.0008426242404513889,
+        0.0007561577690972222,
+        0.0006866455078125,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.002821274950461553,
+        0.0025675414431395294,
+        0.002289642839882074,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 105
+    },
+    "yaw-14": {
+      "mean_absolute_rgba_255": [
+        0.0005544026692708334,
+        0.0005221896701388889,
+        0.0004781087239583333,
+        2.712673611111111e-05
+      ],
+      "foreground_mean_rgba_255": [
+        0.0021527077026572486,
+        0.0020256381507642858,
+        0.0017341256493627836,
+        5.979743618492357e-05
+      ],
+      "alpha_equal": false,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 121
+    },
+    "yaw-15": {
+      "mean_absolute_rgba_255": [
+        0.0003611246744791667,
+        0.0003780788845486111,
+        0.00037977430555555556,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.0020435569568517547,
+        0.002140869192892314,
+        0.002131137969288258,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "threshold_silhouette_disagreement_fraction": 0.0,
+      "margin": 124
+    }
+  },
+  "feedback": [
+    "Actual function record922 describes energy draining with uncertain operating means. Correctly paletted all16complete directional building frames, empty descriptor1, shadow and catalogue phases reviewed. Current selector/rules use2+(((heading+8)>>4)&15); do not treat these as separate base-plus-turret layers.",
+    "First actual ImageGen attempt invented a second plate and was rejected. Second attempt used a single actual legacy heading and corrected the one-dish silhouette. Exact prompts, both outputs and explicit feedback retained; two of at most three requests used.",
+    "Selected concept agrees with the shallow round green collector, central copper projection, four bronze fittings and inclined support. Elaborate new linkages/collars, deeper rim and altered base proportions are not recovered details and are not transferred automatically.",
+    "All16 evaluated source components protected exactly, including shallow concavity, shell thickness, three profile dents and one collector dent, full authored maps and UVs. Source-derived11-part yaw assembly and physical supports retained; no reduction or unrelated restyling claimed.",
+    "Actual native and independent GLB checks cover collector profile/thickness, feed embedment, support/head/shell/yoke/fitting/inset contacts, one sampled contact graph, all16authored yaw poses, collector-axis socket position/forward and fixed-base invariance. Contact samples are not exhaustive solid or continuous-sweep proof.",
+    "Nineteen paired actual renders cover three whole-object views and16authored yaw poses. Full shader-bound UV corners and decoded colour/roughness maps match source/native/import. Export pixel equivalence is distinct from a numerical legacy-fidelity percentage.",
+    "Exact fixed/moving division, pivot/elevation sections and concavity are authored interpretation. Model yaw phase/sign relative to game heading remains uncalibrated. CollectorAxisSocket is an axis reference, not proof of a firing origin. No pitch/firing/glow/operating clip invented; RIS4 construction separate.",
+    "One current model supports gameplay, build menu, SciTek and derived technical views. Client placement/scale/damage/state integration, Android performance and final user artistic acceptance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

@@ -1,0 +1,385 @@
+{
+  "issue": 190,
+  "id": "openfa:missile/braccatian/volcano",
+  "key": "BRM3",
+  "name": "Volcano",
+  "decision": "retained-after-focused-review",
+  "model": "sources/docs/assets/reconstruction/missiles/braccatian/volcano/model.blend",
+  "blend_sha256": "bf89ab7d3c334b10408fe21c4a51c7ffc3ef610eeacc7d885a1613c55039b338",
+  "glb_sha256": "6d731a511ef9340de6cf3eb9f4430b7ab74d9a5412b27c27252ffec8d03a193f",
+  "generator_sha256": "9e73592154db3d115b46d228551f7562d5771f55cc9e6b6ebcbcb499d140c9a5",
+  "verifier_sha256": "ad8c5f1c91dcdbf457c125c346b6c932119ebd952135dd9965aa5b1a4a066fe0",
+  "verifier_dependencies_sha256": {
+    "verify_refined_braccatian_ships.py": "3e8ceab43794cf80bfaa0197e94b0280e4e43e93b3eef2ce78cdebd507f5ecbc",
+    "verify_rigellian_crowns.py": "0105a9c918375a69cadac39909f360d087c081f4bf848dbe609825ae495d5106",
+    "mesh_component_volumes.py": "7bd58b679a1a3c91fef923bd7c1655007a4a318f3bdb6dae81f16151e82a7fae",
+    "verify_assault_fighter.py": "9a017769370eedb14953e852d3e636a9493790340b1a9aef95a6711c80e61e35",
+    "verify_rigellian_filtration.py": "29cd80c18ad0ffb7c7b1fc9136bb630601f4264ef19bc08a3bfd1bff2e74386c",
+    "verify_braccatian_volcano.py": "8fc899080cbea0a17a1f28c81f3f5f86e45957902461b736e73993634387778c"
+  },
+  "evidence_sha256": "fcde7342620506c4f55420c77a786621b9db8caa1ec995f9dc169efa9c1e63e0",
+  "blender": "4.5.15 LTS",
+  "native_mesh_count": 20,
+  "imported_mesh_count": 20,
+  "native_contract": {
+    "construction": {
+      "bounds": [
+        -0.14000000059604645,
+        -1.125,
+        -0.14000000059604645,
+        0.14000000059604645,
+        0.9375,
+        0.14000000059604645
+      ],
+      "dent_depths": [
+        0.00238095223903656,
+        0.0015000179409980774,
+        0.0023787617683410645,
+        0.0019412487745285034
+      ],
+      "sockets": {
+        "AlignmentForward": {
+          "position": [
+            0,
+            -1.22,
+            0
+          ],
+          "forward": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      "seam_vertices_welded": {
+        "Braccatian Volcano copper main shaft": 0,
+        "Braccatian Volcano forward gold end": 0,
+        "Braccatian Volcano copper neck": 0,
+        "Braccatian Volcano rear gold end": 0,
+        "Braccatian Volcano gold collar 0": 0,
+        "Braccatian Volcano gold collar 1": 0,
+        "Braccatian Volcano service cover 0": 0,
+        "Braccatian Volcano service slot 0 0": 0,
+        "Braccatian Volcano service slot 0 1": 0,
+        "Braccatian Volcano fastener 0 0 0": 0,
+        "Braccatian Volcano fastener 0 0 1": 0,
+        "Braccatian Volcano fastener 0 1 0": 0,
+        "Braccatian Volcano fastener 0 1 1": 0,
+        "Braccatian Volcano service cover 1": 0,
+        "Braccatian Volcano service slot 1 0": 0,
+        "Braccatian Volcano service slot 1 1": 0,
+        "Braccatian Volcano fastener 1 0 0": 0,
+        "Braccatian Volcano fastener 1 0 1": 0,
+        "Braccatian Volcano fastener 1 1 0": 0,
+        "Braccatian Volcano fastener 1 1 1": 0
+      },
+      "geometric_vertices": {
+        "Braccatian Volcano copper main shaft": 5888,
+        "Braccatian Volcano forward gold end": 1536,
+        "Braccatian Volcano copper neck": 2304,
+        "Braccatian Volcano rear gold end": 1408,
+        "Braccatian Volcano gold collar 0": 2560,
+        "Braccatian Volcano gold collar 1": 2816,
+        "Braccatian Volcano service cover 0": 680,
+        "Braccatian Volcano service slot 0 0": 306,
+        "Braccatian Volcano service slot 0 1": 306,
+        "Braccatian Volcano fastener 0 0 0": 128,
+        "Braccatian Volcano fastener 0 0 1": 128,
+        "Braccatian Volcano fastener 0 1 0": 128,
+        "Braccatian Volcano fastener 0 1 1": 128,
+        "Braccatian Volcano service cover 1": 680,
+        "Braccatian Volcano service slot 1 0": 306,
+        "Braccatian Volcano service slot 1 1": 306,
+        "Braccatian Volcano fastener 1 0 0": 128,
+        "Braccatian Volcano fastener 1 0 1": 128,
+        "Braccatian Volcano fastener 1 1 0": 128,
+        "Braccatian Volcano fastener 1 1 1": 128
+      },
+      "closure_weld_tolerance": 0,
+      "assembly_contacts": 21,
+      "fitted_patch_samples": 54,
+      "service_fasteners": 8,
+      "thin_shaft_clearance_samples": 12,
+      "occupied_shaft_samples": 3,
+      "exposed_band_samples": 4
+    },
+    "textures": {
+      "materials": {
+        "Braccatian Volcano | worn dark waist alloy": {
+          "colour": "80adf13a18a5ecf06ad550f86524032784e122a623df19ef859e05e0c5ef6154",
+          "roughness": "37871cc42f4e9f472feb4a5386098136a9c5d3105363b3e2106971554817d75a"
+        },
+        "Braccatian Volcano | worn gold body alloy": {
+          "colour": "4c7b4b369f6adfdaa3910d1db6e829dffdfa6210cfc6f8d102a59a2fa6c47eb2",
+          "roughness": "37871cc42f4e9f472feb4a5386098136a9c5d3105363b3e2106971554817d75a"
+        },
+        "Braccatian Volcano | worn copper neck alloy": {
+          "colour": "615b656bf23a1de3f635f0209b4aac9ac388a867f34ab5ee5a27a40f30b51eaa",
+          "roughness": "37871cc42f4e9f472feb4a5386098136a9c5d3105363b3e2106971554817d75a"
+        }
+      },
+      "mapped_meshes": 12
+    },
+    "closed_positive_meshes": 20,
+    "component_volumes": {
+      "Braccatian Volcano copper main shaft": [
+        0.02063406539902269
+      ],
+      "Braccatian Volcano forward gold end": [
+        0.003131473527642757
+      ],
+      "Braccatian Volcano copper neck": [
+        0.00539926679477924
+      ],
+      "Braccatian Volcano rear gold end": [
+        0.0034620566244341257
+      ],
+      "Braccatian Volcano gold collar 0": [
+        0.008104409043845849
+      ],
+      "Braccatian Volcano gold collar 1": [
+        0.009256127078491036
+      ],
+      "Braccatian Volcano service cover 0": [
+        0.0002911696452712007
+      ],
+      "Braccatian Volcano service slot 0 0": [
+        2.2847784853184203e-06
+      ],
+      "Braccatian Volcano service slot 0 1": [
+        2.284776649115935e-06
+      ],
+      "Braccatian Volcano fastener 0 0 0": [
+        6.029065264162708e-07
+      ],
+      "Braccatian Volcano fastener 0 0 1": [
+        6.029065264162705e-07
+      ],
+      "Braccatian Volcano fastener 0 1 0": [
+        6.029065264162705e-07
+      ],
+      "Braccatian Volcano fastener 0 1 1": [
+        6.029065264162704e-07
+      ],
+      "Braccatian Volcano service cover 1": [
+        0.0002901593867589601
+      ],
+      "Braccatian Volcano service slot 1 0": [
+        2.274981561800417e-06
+      ],
+      "Braccatian Volcano service slot 1 1": [
+        2.2749945211898893e-06
+      ],
+      "Braccatian Volcano fastener 1 0 0": [
+        6.029065264162636e-07
+      ],
+      "Braccatian Volcano fastener 1 0 1": [
+        6.029065264162704e-07
+      ],
+      "Braccatian Volcano fastener 1 1 0": [
+        6.029065264162701e-07
+      ],
+      "Braccatian Volcano fastener 1 1 1": [
+        6.029065264162722e-07
+      ]
+    }
+  },
+  "imported_contract": {
+    "construction": {
+      "bounds": [
+        -0.14000000059604645,
+        -1.125,
+        -0.14000000059604645,
+        0.14000000059604645,
+        0.9375,
+        0.14000000059604645
+      ],
+      "dent_depths": [
+        0.00238095223903656,
+        0.0015000179409980774,
+        0.0023787617683410645,
+        0.0019412487745285034
+      ],
+      "sockets": {
+        "AlignmentForward": {
+          "position": [
+            0,
+            -1.22,
+            0
+          ],
+          "forward": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      "seam_vertices_welded": {
+        "Braccatian Volcano copper main shaft": 309,
+        "Braccatian Volcano copper neck": 282,
+        "Braccatian Volcano fastener 0 0 0": 36,
+        "Braccatian Volcano fastener 0 0 1": 36,
+        "Braccatian Volcano fastener 0 1 0": 36,
+        "Braccatian Volcano fastener 0 1 1": 36,
+        "Braccatian Volcano fastener 1 0 0": 36,
+        "Braccatian Volcano fastener 1 0 1": 36,
+        "Braccatian Volcano fastener 1 1 0": 36,
+        "Braccatian Volcano fastener 1 1 1": 36,
+        "Braccatian Volcano forward gold end": 273,
+        "Braccatian Volcano gold collar 0": 612,
+        "Braccatian Volcano gold collar 1": 620,
+        "Braccatian Volcano rear gold end": 270,
+        "Braccatian Volcano service cover 0": 148,
+        "Braccatian Volcano service cover 1": 148,
+        "Braccatian Volcano service slot 0 0": 104,
+        "Braccatian Volcano service slot 0 1": 104,
+        "Braccatian Volcano service slot 1 0": 104,
+        "Braccatian Volcano service slot 1 1": 104
+      },
+      "geometric_vertices": {
+        "Braccatian Volcano copper main shaft": 5888,
+        "Braccatian Volcano copper neck": 2304,
+        "Braccatian Volcano fastener 0 0 0": 128,
+        "Braccatian Volcano fastener 0 0 1": 128,
+        "Braccatian Volcano fastener 0 1 0": 128,
+        "Braccatian Volcano fastener 0 1 1": 128,
+        "Braccatian Volcano fastener 1 0 0": 128,
+        "Braccatian Volcano fastener 1 0 1": 128,
+        "Braccatian Volcano fastener 1 1 0": 128,
+        "Braccatian Volcano fastener 1 1 1": 128,
+        "Braccatian Volcano forward gold end": 1536,
+        "Braccatian Volcano gold collar 0": 2560,
+        "Braccatian Volcano gold collar 1": 2816,
+        "Braccatian Volcano rear gold end": 1408,
+        "Braccatian Volcano service cover 0": 680,
+        "Braccatian Volcano service cover 1": 680,
+        "Braccatian Volcano service slot 0 0": 306,
+        "Braccatian Volcano service slot 0 1": 306,
+        "Braccatian Volcano service slot 1 0": 306,
+        "Braccatian Volcano service slot 1 1": 306
+      },
+      "closure_weld_tolerance": 1e-06,
+      "assembly_contacts": 21,
+      "fitted_patch_samples": 54,
+      "service_fasteners": 8,
+      "thin_shaft_clearance_samples": 12,
+      "occupied_shaft_samples": 3,
+      "exposed_band_samples": 4
+    },
+    "textures": {
+      "materials": {
+        "Braccatian Volcano | worn dark waist alloy": {
+          "colour": "80adf13a18a5ecf06ad550f86524032784e122a623df19ef859e05e0c5ef6154",
+          "roughness": "37871cc42f4e9f472feb4a5386098136a9c5d3105363b3e2106971554817d75a"
+        },
+        "Braccatian Volcano | worn gold body alloy": {
+          "colour": "4c7b4b369f6adfdaa3910d1db6e829dffdfa6210cfc6f8d102a59a2fa6c47eb2",
+          "roughness": "37871cc42f4e9f472feb4a5386098136a9c5d3105363b3e2106971554817d75a"
+        },
+        "Braccatian Volcano | worn copper neck alloy": {
+          "colour": "615b656bf23a1de3f635f0209b4aac9ac388a867f34ab5ee5a27a40f30b51eaa",
+          "roughness": "37871cc42f4e9f472feb4a5386098136a9c5d3105363b3e2106971554817d75a"
+        }
+      },
+      "mapped_meshes": 12
+    },
+    "closed_positive_meshes": 20,
+    "component_volumes": {
+      "Braccatian Volcano copper main shaft": [
+        0.020634065399022454
+      ],
+      "Braccatian Volcano copper neck": [
+        0.0053992667947792535
+      ],
+      "Braccatian Volcano fastener 0 0 0": [
+        6.029065266938259e-07
+      ],
+      "Braccatian Volcano fastener 0 0 1": [
+        6.02906526693827e-07
+      ],
+      "Braccatian Volcano fastener 0 1 0": [
+        6.029065266938262e-07
+      ],
+      "Braccatian Volcano fastener 0 1 1": [
+        6.02906526693826e-07
+      ],
+      "Braccatian Volcano fastener 1 0 0": [
+        6.029065266938188e-07
+      ],
+      "Braccatian Volcano fastener 1 0 1": [
+        6.029065266938265e-07
+      ],
+      "Braccatian Volcano fastener 1 1 0": [
+        6.029065266938261e-07
+      ],
+      "Braccatian Volcano fastener 1 1 1": [
+        6.029065266938281e-07
+      ],
+      "Braccatian Volcano forward gold end": [
+        0.003131473527642757
+      ],
+      "Braccatian Volcano gold collar 0": [
+        0.008104409043845835
+      ],
+      "Braccatian Volcano gold collar 1": [
+        0.009256127078490998
+      ],
+      "Braccatian Volcano rear gold end": [
+        0.0034620566244341292
+      ],
+      "Braccatian Volcano service cover 0": [
+        0.0002911696452712015
+      ],
+      "Braccatian Volcano service cover 1": [
+        0.0002901593867589597
+      ],
+      "Braccatian Volcano service slot 0 0": [
+        2.284778485318421e-06
+      ],
+      "Braccatian Volcano service slot 0 1": [
+        2.284776649115934e-06
+      ],
+      "Braccatian Volcano service slot 1 0": [
+        2.274981561800421e-06
+      ],
+      "Braccatian Volcano service slot 1 1": [
+        2.2749945211898927e-06
+      ]
+    }
+  },
+  "maximum_native_imported_position_error": 9.993091225624084e-07,
+  "maximum_imported_helper_matrix_error": 1.400255769112846e-07,
+  "maximum_corner_normal_error": 0.0005991713061038207,
+  "retained_native_geometry_uv_normals_preserved": true,
+  "alignment_helpers_preserved": true,
+  "effective_pbr_channels_preserved": true,
+  "legacy_descriptors_reviewed": 14,
+  "authored_clips": [],
+  "renders": {
+    "front-quarter": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.0010236811658614897,
+      "native_sha256": "fb189cf09692f28f1bbf6ed13b8eddc0872756d8a1b413a99e493e5b14986f5d",
+      "imported_sha256": "cc0ca7a8e73e2cc3b21e0737f12d29e2ba405c02fac3667544742464ca3b8ebb"
+    },
+    "rear-quarter": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.0005607607545243809,
+      "native_sha256": "463adafd6c6b93ed3ce4d8517401e0b45dedd281901fc79ae4eff9b306290fc5",
+      "imported_sha256": "dea013c57a11a9f120edc8d961c2aca1b70cf51d5e2a4e8be3425a0ae998d17d"
+    },
+    "plan": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.00017047219103005773,
+      "native_sha256": "6b4631e9170cfd8676878c815317a449c6d89498314905b788c333aebde57425",
+      "imported_sha256": "d68a09cc72365a4b128b8e572217b072d906df77a5643fcfc6e74c8f76e6d7b0"
+    },
+    "equipment-detail": {
+      "silhouette_iou": 1.0,
+      "foreground_rgb_mean_difference_255": 0.0006107235276431311,
+      "native_sha256": "2bf73886df4f4fcc425670483e216879432635bf8b7dfe5b83d540a74f1b6940",
+      "imported_sha256": "fd5734233ac0c889636dd5b2aba28ff3fbc813c038231a4da477ad457aac4198"
+    }
+  },
+  "acceptance": "Fresh actual runtime review; source silhouette comparison and reasoned final retention decision remain separate; hidden sections/alloys and game calibration remain authored/open"
+}

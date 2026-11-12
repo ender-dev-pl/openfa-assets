@@ -1,0 +1,101 @@
+{
+  "issue": 253,
+  "id": "openfa:building/legacy/055",
+  "concept_requests_used": 2,
+  "concept_request_limit": 3,
+  "concept": {
+    "tool": "built-in ImageGen",
+    "image": "gallery/media/concepts/rigellian/ri16-review-2.png",
+    "sha256": "dd8f6105994ed014235d3ba09945dfff8eb8e3ce9f0400a6b19a8241a2507d13",
+    "prompt": "sources/docs/reconstruction/models/ri16-concept-prompt-2.txt",
+    "verdict": "Three green lower housings, grey support bundle/feet and bronze divided head agree with legacy. Concept makes the housings more spherical, thickens rods/feet and enlarges the head. Retain current source-guided proportions, assembly grooves and bracketed interfaces; exact hidden cross-sections remain uncertain."
+  },
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "prompt": "sources/docs/reconstruction/models/ri16-concept-prompt-1.txt",
+      "outcome": "No image returned; built-in output moderation rejected the request.",
+      "request_id": "f618e3bf-5ae8-442d-b59c-36637144bcc5"
+    },
+    {
+      "attempt": 2,
+      "outcome": "Image returned and reviewed."
+    }
+  ],
+  "legacy": {
+    "body_sha256": "b3d9e9484de2e71468155a5e161a421986ceb1145e688e24295d4908157a5ce7",
+    "catalogue_colour_phase20_sha256": "dd2d658416995a83af8fefc72d3f4c4d44f0858266e04044fc4f06624ca4beb5",
+    "functional_record": 916,
+    "functional_source_sha256": "559e835dbd4fd058310fed6ef643600a09b95e5a7c6d86f0dc153c96b9e0a449",
+    "culture_record": 18,
+    "culture_source_sha256": "767991db2dd69ffc182b80ea7f4a1a872935fbaa308f8778244a6b0e5fb3b4e4",
+    "original_pixels_published": false
+  },
+  "binaries": {
+    "blend": "e79cea191577227fe7c59f3041c9cdb7bbdd58560de3779c2a93946a04417bb5",
+    "glb": "be8f7251f8d6d298bb808b0d4692d4ab677964ce0bf733280ecfa214487f9f27"
+  },
+  "runtime_report_sha256": "6b494862cf5c94c83a0552cb365aa2fcc89e182314f8834e90946fcb5b7beca9",
+  "comparisons": {
+    "front-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0008833143446180555,
+        0.0008460150824652778,
+        0.0007578531901041666,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.0062889271259966555,
+        0.006034461866563265,
+        0.005416474807939316,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 62
+    },
+    "front": {
+      "mean_absolute_rgba_255": [
+        0.0010460747612847222,
+        0.0010308159722222222,
+        0.001056247287326389,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.007446294955346367,
+        0.0073135409123823315,
+        0.007494569152787835,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 55
+    },
+    "rear-quarter": {
+      "mean_absolute_rgba_255": [
+        0.0008154975043402778,
+        0.0008561876085069445,
+        0.0007697211371527778,
+        0.0
+      ],
+      "foreground_mean_rgba_255": [
+        0.0059959527319059635,
+        0.006308241936692732,
+        0.005671171958927724,
+        0.0
+      ],
+      "alpha_equal": true,
+      "threshold_silhouette_equal": true,
+      "margin": 44
+    }
+  },
+  "feedback": [
+    "Actual independent GLB retains three full green housings on grey feet, slender central support bundle and bronze head with broad flange, narrow waist and divided upper section.",
+    "Ten mapped radial components retain exact evaluated geometry, ten measurable dents, physical head/housing grooves and complete authored maps/UVs. No geometry reduction or new mechanical motion is claimed for this milestone.",
+    "Concept has more spherical housings and heavier rods/feet/head. Keep the established source-guided profiles and assembly grooves; exact hidden threefold placement, support interfaces and unseen rear remain authored interpretation. Existing wear is subtler than concept.",
+    "Actual native/imported shader checks show opaque non-transmissive materials with zero effective emission. Functional analogy to Terran Screen Generator does not establish crystals or lighting. Catalogue reveal/highlight is not motion, current directional selector excludes ID055, and RIS2 construction remains separate.",
+    "Numeric native/import comparisons are recorded below; alpha and threshold silhouettes match. Final user artistic approval, client scale/state/damage integration, batching and Android performance remain separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

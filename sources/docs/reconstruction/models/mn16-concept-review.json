@@ -1,0 +1,121 @@
+{
+  "id": "openfa:building/legacy/145",
+  "key": "MN16",
+  "attempt_limit": 3,
+  "selected_attempt": 1,
+  "iterations": [
+    {
+      "attempt": 1,
+      "tool": "built-in image_gen",
+      "original": "exec-9dd03c7b-3c5c-4b63-8891-401c09f29329.png",
+      "image": "gallery/media/concepts/mauna/mn16-review-1.png",
+      "sha256": "82f5209a07627b8da7207ba3a087aa6bac452e0f9901f9e06a1df225940e6f13",
+      "prompt": "sources/docs/reconstruction/models/mn16-concept-prompt-1.txt",
+      "prompt_sha256": "be1d63bd6134ddac6e37cd8f969e433f6861411da303d26ea82d9bb7b1a8f991",
+      "verdict": "Selected after direct comparison with own paletted body1 and all41 catalogue updates. Retains stepped grey-blue block, two dark front service fields, right red strip/pale flutes, THREE comparable-height straight roof posts in one row with separated warm bright caps, and TWO lower angular open roof brackets. Source governs final cap scale, post spacing and sparse detail placement. Small cap housings, hidden walls, recess depths and exact bracket construction are interpreted. Extra tiny lower concept recesses must not override own source. Steady tip emission can preserve source appearance; no recovered pulse or moving phase claimed."
+    }
+  ],
+  "function_record": 1006,
+  "culture_record": 137,
+  "own_source_review": {
+    "nonempty_layers": 4,
+    "catalogue_updates": 41,
+    "static_body": 1,
+    "own_operating_overlays": false,
+    "warm_caps": 3,
+    "low_open_brackets": 2
+  },
+  "final_user_artistic_acceptance": false,
+  "original_references": {
+    "sprites": [
+      {
+        "directory": "_B",
+        "entry": "MN16.256",
+        "payload_sha256": "e1c3d2b5d5b16a201a5ffec00851ed75423a119b4a8c4446d568b782faa3a111",
+        "frame": 0,
+        "size": [
+          40,
+          28
+        ],
+        "offset": [
+          139,
+          86
+        ],
+        "indexed_sha256": "66623bf7938dc9dbf5d130ad93a5adc511e84d5b09d5380889a362c2ca99abe4"
+      },
+      {
+        "directory": "_B",
+        "entry": "MN16.256",
+        "payload_sha256": "e1c3d2b5d5b16a201a5ffec00851ed75423a119b4a8c4446d568b782faa3a111",
+        "frame": 1,
+        "size": [
+          30,
+          38
+        ],
+        "offset": [
+          145,
+          72
+        ],
+        "indexed_sha256": "b7341c2eed97bcf5e0de7d1583843cc9e7b4485ad579ea43b123e603a26a1b87"
+      },
+      {
+        "directory": "_ZOOM",
+        "entry": "MN16.256",
+        "payload_sha256": "dac01cd672e4c782316ab29dcbaee837fb83484261a22307d91d21daf640a809",
+        "frame": 0,
+        "size": [
+          144,
+          160
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "indexed_sha256": "56add862a31f91298022de53827a92f65d9f14220f94ec9d4bb9d7eb80c64027"
+      },
+      {
+        "directory": "_ZOOM",
+        "entry": "MN16.256",
+        "payload_sha256": "dac01cd672e4c782316ab29dcbaee837fb83484261a22307d91d21daf640a809",
+        "frame": 1,
+        "size": [
+          144,
+          160
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "indexed_sha256": "441d26241f12250c0b5e550a39e881a303aeafca84812656dc9ea6f7c948803a"
+      }
+    ],
+    "catalogue": {
+      "source": "_ZOOM/MN16.VID",
+      "sha256": "f9edcb101dd2df02b9dd73589ea1b9ff6b53ff48fa4405225ae353f6042bb3ef",
+      "image_updates": 41,
+      "timeline_frames": 41
+    }
+  },
+  "functional_source": {
+    "index": "sources/docs/reconstruction/models/functional-text-index.json",
+    "id": "openfa:building/legacy/145",
+    "descriptions": [
+      {
+        "record": 1006,
+        "offset": 87496,
+        "offset_hex": "0x155c8",
+        "byte_length": 150,
+        "sha256": "7d2e77d91c9c4beba64868406681c4f1547e2ad29fd98e11ef0986484a429966",
+        "kind": "building-long"
+      }
+    ],
+    "summary": "Original English function records revalidated against indexed offsets and exact source payloads; the canonical README preserves the source-led functional interpretation."
+  },
+  "cultural_source": {
+    "index": "sources/docs/reconstruction/models/cultural-architecture-index.json",
+    "culture": "mauna",
+    "record": 137,
+    "sha256": "37fa6fa1961892bc27ced43ecfc388229bc20b544e3787c881791ff4ef25ec76",
+    "note": "Practical angular cast architecture; cultural prose does not establish specific geometry, mechanisms, metric dimensions or animation timing."
+  }
+}

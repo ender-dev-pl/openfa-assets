@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/123",
+  "key": "AR17",
+  "name": "Auto-deterrent",
+  "culture": "artemian",
+  "footprint": [
+    2,
+    2
+  ],
+  "definition_class": 17,
+  "construction_updates": 28,
+  "triangles": 25556,
+  "triangle_budget": 30000,
+  "mesh_nodes": 7,
+  "materials": 3,
+  "author": "sources/tools/blender/remaster_artemian_auto_deterrent.py",
+  "author_sha256": "f3d841f01d318bd3f6ec095ea733bc2465c0a57392d4a7e0b95e2c0457917051",
+  "binaries": {
+    "blend": "aeccfeeaf9d8a340117d21fcc57a79c19994ca6459ccd4d9719128d5cbe9ea59",
+    "glb": "afb880854d1c53b6769ecf3a182d2391bbcb8bd0cd3ac54e93d6e3d6f677fada"
+  },
+  "textures": {
+    "exposed-alloy-edge-colour.png": "e343658d8fdb303e5c9af651672d7facfd2fc4706e25e0b05393f9f182fb2403",
+    "muted-green-alloy-colour.png": "568234c474663e45499a325caf42be9a2a44ce7bdeb21db232c5389b9d6440a5",
+    "occlusion-roughness-metallic.png": "0e2f041399629d340e71a1d5a34bb8e2a389e800fcfd406a1bff22c5c3d8bf5d",
+    "used-metal-normal.png": "eb53457b8d394a1588449fe05da9849dc085987b4fd5a3a052be651026938a92"
+  },
+  "physical_dent": {
+    "point": [
+      -0.6364052295684814,
+      -0.4773038625717163,
+      0.33000001311302185
+    ],
+    "normal": [
+      -0.7858365774154663,
+      -0.613274335861206,
+      0.07972075045108795
+    ]
+  },
+  "fixed_ports": [
+    {
+      "angle_deg": -45,
+      "point": [
+        0.5395532846450806,
+        -0.5395532846450806,
+        0.5299999713897705
+      ],
+      "normal": [
+        0.7008069753646851,
+        -0.6672245264053345,
+        0.25235089659690857
+      ]
+    },
+    {
+      "angle_deg": -15,
+      "point": [
+        0.7368462085723877,
+        -0.1974373459815979,
+        0.5299999713897705
+      ],
+      "normal": [
+        0.9325844049453735,
+        -0.2580806016921997,
+        0.25235021114349365
+      ]
+    }
+  ],
+  "emitter": {
+    "origin": [
+      0.18000000715255737,
+      0.11999999731779099,
+      1.2000000476837158
+    ],
+    "direction": [
+      0.6396021842956543,
+      0.42640143632888794,
+      0.6396021842956543
+    ],
+    "length": 0.95,
+    "bore_floor": 0.8655555555555554
+  },
+  "interpretation": [
+    "Own16sprite headings establish a small rotating bulb head/single emitter above fixed green two-hoop base/pale shoulder/two dark points. GenericPB17/ST19Terran counterpart does not override Artemian geometry.",
+    "Blind emitter bore,sections,bearing and metric dimensions are authored. Four-second azimuth preview is not recovered game timing or client aiming logic."
+  ],
+  "scale_contract": "2x2 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar17-concept-review.json",
+  "animation_clips": [
+    "AutoDeterrentAzimuth"
+  ],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}

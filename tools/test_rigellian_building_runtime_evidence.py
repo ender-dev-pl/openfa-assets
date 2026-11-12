@@ -1,0 +1,289 @@
+"""Exercise current proof and reject misbound canonical building evidence."""
+from copy import deepcopy
+import json
+from pathlib import Path
+import sys
+import unittest
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'sources/tools/blender'))
+from model_runtime_evidence import verify_runtime_evidence
+
+
+class Evidence(unittest.TestCase):
+    def setUp(self):
+        data = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_bytes())
+        self.record = next(row for row in data['records'] if row['id'] == 'openfa:building/legacy/042')
+
+    def test_current_runtime_and_canonical_selection(self):
+        data = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_bytes())
+        checked = []
+        for record in data['records']:
+            reviewed = record.get('reviewed_model')
+            proof = reviewed.get('runtime_evidence') if isinstance(reviewed, dict) else None
+            if isinstance(proof, dict) and proof.get('format') == 'rigellian-building-remaster-v1':
+                result = verify_runtime_evidence(ROOT / 'sources', record)
+                folder = ROOT / 'sources' / Path(record['reviewed_model']['blend']).parent
+                metadata = json.loads((folder / 'model.json').read_bytes())
+                expected_views = 16 if metadata.get('animation',{}).get('mechanism_kind') == 'ri18-supported-dome-v1' else (40 if metadata.get('animation') else 6)
+                if metadata['id'] in {'openfa:building/legacy/040','openfa:building/legacy/041'}:
+                    expected_views = 9
+                if metadata.get('articulation'):
+                    expected_views = 41 if metadata['articulation']['kind']=='ri23-dual-lance-yaw-v1' else 38
+                self.assertEqual(result['views'], expected_views)
+                self.assertFalse(result['game_client_integration'])
+                checked.append(record['id'])
+        self.assertIn('openfa:building/legacy/042', checked)
+
+    def test_reject_changed_imported_render_identity(self):
+        proof = self.record['reviewed_model']['runtime_evidence']
+        key = next(key for key in proof['files'] if key.endswith('imported-front-quarter.png'))
+        proof['files'][key] = '0' * 64
+        with self.assertRaises(AssertionError):
+            verify_runtime_evidence(ROOT / 'sources', self.record)
+
+    def test_reject_duplicate_current_payload(self):
+        self.record['available_studies'].append(deepcopy(self.record['available_studies'][0]))
+        with self.assertRaises(ValueError):
+            verify_runtime_evidence(ROOT / 'sources', self.record)
+
+    def test_reject_unproven_game_client_promotion(self):
+        self.record['reviewed_model']['runtime_evidence']['game_client_integration'] = True
+        with self.assertRaises(AssertionError):
+            verify_runtime_evidence(ROOT / 'sources', self.record)
+
+    def test_animated_contract_rejects_missing_state_or_weakened_sweep(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_animation_contract
+        folder = ROOT / 'sources/objects/rigellian/ground-deck'
+        metadata = json.loads((folder / 'model.json').read_bytes())
+        report = json.loads((folder / 'runtime-review.json').read_bytes())
+        raw = (folder / 'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I', raw, 12)[0]])
+        verify_animation_contract(metadata, report, document)
+        wrong = deepcopy(metadata)
+        wrong['states'].pop()
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(wrong, report, document)
+        wrong = deepcopy(report)
+        wrong['animation_validation']['cycle_integer_frames'] = 60
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(metadata, wrong, document)
+        wrong = deepcopy(document)
+        for clip in wrong['animations']:
+            if clip['name'] == metadata['animation']['descriptor_clip']:
+                clip['samplers'][0]['interpolation'] = 'LINEAR'
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(metadata, report, wrong)
+
+    def test_supported_dome_contract_rejects_weakened_hardware_or_wrong_motion(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_animation_contract
+        folder = ROOT / 'sources/objects/rigellian/missile-launcher'
+        metadata = json.loads((folder / 'model.json').read_bytes())
+        report = json.loads((folder / 'runtime-review.json').read_bytes())
+        raw = (folder / 'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_animation_contract(metadata,report,document)
+        wrong = deepcopy(report)
+        wrong['supported_hardware_sweep']['imported']['samples'][20]['opposite_hardware_contacts'] = 1
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(metadata,wrong,document)
+        wrong = deepcopy(report)
+        wrong['sampled_motion']['cycle_frames'].pop()
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(metadata,wrong,document)
+        wrong = deepcopy(metadata)
+        wrong['states'][5]['angle_degrees'] += 5
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(wrong,report,document)
+        wrong = deepcopy(document)
+        wrong['animations'][0]['channels'][0]['target']['path'] = 'translation'
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(metadata,report,wrong)
+
+    def test_manual_yaw_contract_rejects_wrong_hierarchy_or_incomplete_poses(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_manual_yaw_contract
+        folder = ROOT/'sources/objects/rigellian/thermal-lance'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        raw = (folder/'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_manual_yaw_contract(metadata,report,document)
+        wrong = deepcopy(report)
+        wrong['imported']['yaw_validation']['poses'].pop()
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(metadata,wrong,document)
+        wrong = deepcopy(report)
+        wrong['native']['yaw_validation']['poses'][4]['fixed_base_unchanged'] = False
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(metadata,wrong,document)
+        wrong = deepcopy(document)
+        pivot = next(n for n in wrong['nodes'] if n['name']=='YawPivot')
+        pivot['children'].pop()
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(metadata,report,wrong)
+        wrong = deepcopy(metadata)
+        wrong['articulation']['model_yaw_phase_sign_calibrated'] = True
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(wrong,report,document)
+
+    def test_retained_extractor_rejects_missing_or_changed_uv_evidence(self):
+        from rigellian_building_runtime_evidence import verify_retained_extractor_contract
+        folder = ROOT/'sources/objects/rigellian/extractor'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        verify_retained_extractor_contract(metadata,report)
+        wrong = deepcopy(report)
+        wrong['exported_uv_comparison']['maximum_uv_corner_error'] = .01
+        with self.assertRaises(AssertionError):
+            verify_retained_extractor_contract(metadata,wrong)
+        wrong = deepcopy(report)
+        wrong['source_uv_comparison']['matched_directed_corners'] = 0
+        with self.assertRaises(AssertionError):
+            verify_retained_extractor_contract(metadata,wrong)
+        wrong = deepcopy(report)
+        wrong['protected_parts'].pop()
+        with self.assertRaises(AssertionError):
+            verify_retained_extractor_contract(metadata,wrong)
+
+    def test_collector_yaw_preserves_complete_frame_and_eleven_part_contract(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_manual_yaw_contract
+        folder = ROOT/'sources/objects/rigellian/ex-fang'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        raw = (folder/'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_manual_yaw_contract(metadata,report,document)
+        wrong = deepcopy(metadata)
+        wrong['articulation']['moving_meshes'].pop()
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(wrong,report,document)
+        wrong = deepcopy(metadata)
+        wrong['articulation']['legacy_static_base_descriptor_empty'] = False
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(wrong,report,document)
+        wrong = deepcopy(report)
+        wrong['exported_uv_comparison']['maximum_uv_corner_error'] = .01
+        with self.assertRaises(AssertionError):
+            verify_manual_yaw_contract(metadata,wrong,document)
+
+    def test_rejected_collector_concept_remains_bound_to_review(self):
+        inventory = json.loads((ROOT/'sources/docs/reconstruction/models/inventory.json').read_bytes())
+        record = next(row for row in inventory['records'] if row['id']=='openfa:building/legacy/061')
+        proof = record['reviewed_model']['runtime_evidence']
+        first = 'gallery/media/concepts/rigellian/ri22-review-1.png'
+        self.assertIn(first,proof['files'])
+        proof['files'][first] = '0'*64
+        with self.assertRaises(AssertionError):
+            verify_runtime_evidence(ROOT/'sources',record)
+
+    def test_static_open_port_evidence_cannot_be_omitted(self):
+        data = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_bytes())
+        record = next(row for row in data['records'] if row['id'] == 'openfa:building/legacy/050')
+        proof = record['reviewed_model']['runtime_evidence']
+        del proof['files']['sources/docs/reconstruction/models/launch-facility-animation-audit.json']
+        with self.assertRaises(AssertionError):
+            verify_runtime_evidence(ROOT / 'sources', record)
+
+
+    def test_dual_lance_contract_rejects_lost_tip_pose_and_foot_detail(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_dual_lance_yaw_contract
+        folder = ROOT/'sources/objects/rigellian/ultrathermal-lance'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        raw = (folder/'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_dual_lance_yaw_contract(metadata,report,document)
+        wrong = deepcopy(metadata)
+        wrong['articulation']['tip_sockets'].pop()
+        with self.assertRaises(AssertionError):
+            verify_dual_lance_yaw_contract(wrong,report,document)
+        wrong = deepcopy(report)
+        wrong['imported']['yaw_validation']['poses'][5]['tip_sockets']['1']['position'][0]+=.1
+        with self.assertRaises(AssertionError):
+            verify_dual_lance_yaw_contract(metadata,wrong,document)
+        wrong = deepcopy(report)
+        wrong['native']['retained_refined_foot']['horizontal_segment_relief'] = False
+        with self.assertRaises(AssertionError):
+            verify_dual_lance_yaw_contract(metadata,wrong,document)
+        wrong = deepcopy(report)
+        wrong['source_uv_comparison']['maximum_uv_corner_error'] = .1
+        with self.assertRaises(AssertionError):
+            verify_dual_lance_yaw_contract(metadata,wrong,document)
+
+
+    def test_preserved_cpu_rejects_reduced_geometry_missing_roof_or_crown(self):
+        from rigellian_building_runtime_evidence import verify_preserved_cpu_contract
+        folder = ROOT/'sources/objects/rigellian/central-unit'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        verify_preserved_cpu_contract(metadata,report)
+        wrong = deepcopy(metadata)
+        wrong['triangles']-=1
+        with self.assertRaises(AssertionError):
+            verify_preserved_cpu_contract(wrong,report)
+        for key in ['retained_cut_roof_well_and_seated_cooling_fins','clean_body_and_existing_crown_finish_preserved']:
+            wrong = deepcopy(report)
+            wrong['imported'][key] = False
+            with self.assertRaises(AssertionError):
+                verify_preserved_cpu_contract(metadata,wrong)
+        wrong = deepcopy(report)
+        wrong['native']['crown']['left']['taper_ratio'] = 1
+        with self.assertRaises(AssertionError):
+            verify_preserved_cpu_contract(metadata,wrong)
+
+
+    def test_preserved_filtration_rejects_geometry_wear_and_opening_regressions(self):
+        from rigellian_building_runtime_evidence import verify_preserved_filtration_contract
+        folder = ROOT/'sources/objects/rigellian/filtration-plant'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        verify_preserved_filtration_contract(metadata,report)
+        wrong = deepcopy(metadata)
+        wrong['triangles']-=1
+        with self.assertRaises(AssertionError):
+            verify_preserved_filtration_contract(wrong,report)
+        for key in ['eight_cut_lower_slots','six_embedded_front_pressure_faces']:
+            wrong = deepcopy(report)
+            wrong['imported'][key] = False
+            with self.assertRaises(AssertionError):
+                verify_preserved_filtration_contract(metadata,wrong)
+        wrong = deepcopy(report)
+        wrong['imported']['retained_authored_wear']['roughness_pixels_sha256'] = 'changed'
+        with self.assertRaises(AssertionError):
+            verify_preserved_filtration_contract(metadata,wrong)
+
+
+    def test_all_canonical_budgets_match_actual_export_indices(self):
+        import struct
+        delivery = json.loads((ROOT/'sources/docs/reconstruction/models/rigellian-building-remaster-delivery.json').read_bytes())
+        for model in delivery['models']:
+            raw = (ROOT/model['glb']).read_bytes()
+            document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+            triangles = sum(document['accessors'][p['indices']]['count']//3
+                for mesh in document['meshes'] for p in mesh['primitives'])
+            self.assertEqual(triangles,model['triangles'],model['key'])
+
+    def test_ground_deck_rejects_raw_mesh_budget_as_runtime_budget(self):
+        import struct
+        from rigellian_building_runtime_evidence import verify_animation_contract
+        folder = ROOT/'sources/objects/rigellian/ground-deck'
+        metadata = json.loads((folder/'model.json').read_bytes())
+        report = json.loads((folder/'runtime-review.json').read_bytes())
+        raw = (folder/'model.glb').read_bytes()
+        document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
+        verify_animation_contract(metadata,report,document)
+        wrong = deepcopy(metadata)
+        wrong['triangles'] = wrong['original_triangles'] = 13170
+        wrong_report = deepcopy(report)
+        wrong_report['triangles'] = 13170
+        with self.assertRaises(AssertionError):
+            verify_animation_contract(wrong,wrong_report,document)
+
+
+if __name__ == '__main__':
+    unittest.main()

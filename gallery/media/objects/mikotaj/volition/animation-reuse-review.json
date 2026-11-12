@@ -1,0 +1,13 @@
+{
+  "scope": "Reuse existing full61frame animation after technical-diagram-only verifier correction.",
+  "actual_video_verifier_sha256": "deeb8858efae046bb5922c6b4140723e1d585d623673cdcb44de4bf08788a729",
+  "current_verifier_sha256": "a0ca62ccde315dd4af311013c2910531320d2c63c86eef384e6e4bd8d106178b",
+  "used_functions": [
+    "setup"
+  ],
+  "setup_source_sha256": "605a5cf8c88eeca1bb94d03f64e6892630749f4406735097958f4056d5ab06ef",
+  "setup_unchanged": true,
+  "glb_sha256": "b5ee366ea8d15a14b954b7144c4fdb27017452efd27c024e4aa9500ac1595276",
+  "video_sha256": "e8a31cbb2d9f9a77271dfb8cd01d71d700b3fcc5b4799f5477489e7d290c723b",
+  "reason": "Animation renderer imports this module but invokes only setup; that function and model/renderer inputs are byte-identical. Corrected main technical edge extraction is not called by the video renderer. No video/evidence digest is replaced to pretend another render ran."
+}

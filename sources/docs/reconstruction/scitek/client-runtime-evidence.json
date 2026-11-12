@@ -1,0 +1,71 @@
+{
+  "scope": "Confirmed actual target-client execution for the latest four authored tile registrations. This satisfies the minimum actual-runtime-execution gate; it does not claim full integration of every source delivery.",
+  "game_commit": "3b84a090307d39dbe1b9108e5faea68ac116f83d",
+  "asset_commit": "0b6306f2910683abb14a4e748469677295d6a186",
+  "source_owner": "Main integration thread01a1929a-a5ec-75c0-bae9-ce4496f03cac",
+  "runs": [
+    {
+      "subject": "solar-matrix",
+      "log": "artifacts/issue-1233-tile-registration/solar-matrix.log",
+      "log_sha256": "20938fb248da116044a5276330ced648736bdb5e43679be9376a3d5ff452f9b5",
+      "stderr": "artifacts/issue-1233-tile-registration/solar-matrix.err",
+      "stderr_bytes": 0,
+      "scenario_completed": true
+    },
+    {
+      "subject": "stasis-missile",
+      "log": "artifacts/issue-1233-tile-registration/stasis-missile.log",
+      "log_sha256": "129a872844145e5c5bb90647a4280fd66597a3ccf2ad08c97c39eb74805b97d2",
+      "stderr": "artifacts/issue-1233-tile-registration/stasis-missile.err",
+      "stderr_bytes": 0,
+      "scenario_completed": true
+    },
+    {
+      "subject": "virus-missile",
+      "log": "artifacts/issue-1233-tile-registration/virus-missile.log",
+      "log_sha256": "5487250c9b53f6cd54e4043a3551875367536c6a14c195086ea21ae6d56ce3fa",
+      "stderr": "artifacts/issue-1233-tile-registration/virus-missile.err",
+      "stderr_bytes": 0,
+      "scenario_completed": true
+    },
+    {
+      "subject": "command-cruiser",
+      "log": "artifacts/issue-1233-tile-registration/command-cruiser.log",
+      "log_sha256": "fe71c6636a22e71adceec3470984ee54db4ed11e0e503b54a723c50613405c07",
+      "stderr": "artifacts/issue-1233-tile-registration/command-cruiser.err",
+      "stderr_bytes": 0,
+      "scenario_completed": true
+    }
+  ],
+  "tests": {
+    "passed": 438,
+    "failed": 0,
+    "skipped": 0,
+    "log_sha256": "efee10c7a4c229015f992b6ce7da5c22993144c97ebc10427caecb972d626d21"
+  },
+  "quality": {
+    "passed": true,
+    "log_sha256": "7492a4e4482d2148df24db947bdfe12a6176fea0c9034417b1919124f6c34e78"
+  },
+  "package_verification": {
+    "identical_source_tiles_in_archives": [
+      "tools/OpenFA.Content/obj/net8.0/packages/openfa3d.ofapkg",
+      "src/OpenFA.Client/bin/Debug/net8.0/openfa3d.ofapkg",
+      "src/OpenFA.Tests/bin/Debug/net8.0/openfa3d.ofapkg"
+    ],
+    "physical_png_count": 8,
+    "new_model_files": 0
+  },
+  "visual_review": {
+    "path": "artifacts/issue-1233-tile-registration/research-tile-ui-contact-sheet.jpg",
+    "sha256": "b006ef59892940bbd18eb34c1c70aaf320ea5dca2f674035fcc97243eeca9603",
+    "inspected": true,
+    "observations": "All four real Sci-Tek selections render with proportional tall missile/tower tiles and registered ship tile; no stretched landscape canvases."
+  },
+  "documentation": "openFA-game/docs/verification/native-scitek-tile-registration.md",
+  "limitations": [
+    "Initial combined-category runtime.log failed navigation; it is not accepted evidence. The four successful per-category logs above replace it.",
+    "Latest Screen Generator emission and ST14 client binding remain separately owned integration work; source assets and native/independent GLB proofs are already delivered.",
+    "Issue208 explicitly separates source asset preparation from client integration."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "asset": "openfa:ship/mauna/max-combat-craft-type-6",
+  "issue": 251,
+  "tool": "Built-in image_gen plus user-supplied artistic reference",
+  "stage": "Actual asset runtime and legacy/user-concept/imported feedback reviewed; final artistic acceptance separate",
+  "attempts_used": 3,
+  "maximum_attempts": 3,
+  "failed_attempts": [
+    {
+      "type": "Output moderation rejected the benign vehicle-asset request; generated pixels were not returned and cannot be inspected",
+      "category": "violence",
+      "request_id": "0a08993d-5efd-47d7-89c4-bd3c1ef7dabf",
+      "image_returned": false
+    },
+    {
+      "type": "output moderation rejection",
+      "category": "violence",
+      "request_id": "783e8221-6beb-4822-8da3-a6c959ea7ba4",
+      "image_returned": false
+    }
+  ],
+  "legacy_identity": {
+    "entry": "MN2C.256",
+    "source_sha256": "93cedc64ca3bf51fefbbdff5fc90c031b249ab24a074ece016fce97a4544833e",
+    "palette_sha256": "4b56e9e3cc6f5a5e82f8b8d04c30dab76be4614bc61161a4d2c3f5d9a6c87336",
+    "frames": [
+      0,
+      4,
+      12,
+      28
+    ],
+    "all_32_populated_headings_inspected": true
+  },
+  "iterations": [
+    {
+      "number": 3,
+      "image": "gallery/media/concepts/mauna/max-combat-craft-type-6-03.png",
+      "sha256": "79810ac6322b38f53a193eeef1afa0a74e4bda7715f133e143f36b1692761c25",
+      "prompt": "Use case: stylized-concept. A studio concept sheet for a fictional 3D spacecraft game model. Image 1 is the original pixel-art shape and color reference; preserve its geometry. A low elongated rectangular grey metal body, about three times as long as wide, on a shallow chamfered base. A low sloping roof covers the rear half. Two separate small brick-red rectangular pieces sit side by side across the front deck with a gap between them. Slim bronze-brown strips are seated along the two long sides. Small opaque pale grey-blue inset on the front end and a brown rear face. Both red pieces face the same direction. Broad quiet steel surfaces, a few fitted maintenance covers and fasteners, restrained seam grime, scratches and small dents. One large elevated three-quarter view with a smaller consistent side view and top view of the exact same object. Charcoal background, neutral lighting, no lettering. Keep the simple original proportions and color placement; avoid extra appendages or dense panel grids.",
+      "input_images": [
+        {
+          "role": "Actual paletted legacy shape/colour reference",
+          "sha256": "6578d85fb47af107b16e410237eab8f78cfc49e3dd8d9795d167fbb32ae316f8"
+        }
+      ],
+      "generated_original_sha256": "79810ac6322b38f53a193eeef1afa0a74e4bda7715f133e143f36b1692761c25",
+      "verdict": "Useful primitive/material study but insufficient construction detail; red blocks incorrectly longitudinal in plan. Legacy controls transverse pair, user concept supersedes detail direction.",
+      "gallery_label": "Primitive concept3: limitations documented"
+    }
+  ],
+  "user_references": [
+    {
+      "image": "gallery/media/concepts/mauna/max-combat-craft-type-6-user.png",
+      "sha256": "43cad1c5b6e6abdb17175899bf75bfbc9fd9c4a1d82bed5e0573ff97d7d5e749",
+      "original_sha256": "0949a9862bae24e561a9ff6b417e21eb8bd1c0f404bc7651127f30672ec59e2a",
+      "original_format": "JPEG",
+      "provenance": "User-supplied ImageGen concept in this task",
+      "verdict": "Preferred fitted construction and depth. Keep legacy low layered hull/transverse red pair instead of tandem bridges; no new emission/glazing or dense plate grid."
+    }
+  ],
+  "reviewed_binary_hashes": {
+    "blend": "238b44a9283ed46e358cb21c0c39997e5a1c0865d99e7edf39452a66811773d4",
+    "glb": "073a0bd2f149b5cff96b59090abcd61f33afb27c7d589a38c64c08e2693381c1"
+  },
+  "glb_feedback": [
+    {
+      "round": 1,
+      "verdict": "Actual GLB retained low body, aft roof and transverse red pair, but upper side walls were bare with inherited cap-normal waves. Add four conformal shoulder covers and physical planar side-wall normals."
+    },
+    {
+      "round": 2,
+      "verdict": "Expanded fittings exceeded65000 triangles. Reduce planar added-cover/rib tessellation, preserving original body/dent density. Final61322triangles/four batches/one material."
+    },
+    {
+      "round": 3,
+      "verdict": "Actual comparison found reversed0/4 side/rear cameras and excessive top visibility in12/28. Use estimated azimuth180degrees and end elevation0.12. Saved native and independent GLB were genuinely regenerated/verified afterward; client heading mapping remains uncalibrated."
+    }
+  ],
+  "glb_visual_review": "Actual32 paletted headings, user concept, generated concept3 and final imported renders reviewed. Low grey layered hull, bronze side strips, transverse red pair and sloped aft roof retained. Six framed side banks, four conformal shoulder covers, roof/foredeck louvers and cover bands add real depth.197 editable identities and196 contacts retained. Hidden joints and small fittings remain interpretations; preview is darker/cooler, and user concept is richer than this game-budget translation.",
+  "next_step": "One canonical model for gameplay/all menus; WorldSize128 and six mounts require client calibration. Final user artistic acceptance pending; MN3C detail follow-up remains open.",
+  "final_user_acceptance": "pending"
+}

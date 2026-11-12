@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "issue": 261,
+  "id": "openfa:building/legacy/135",
+  "binaries": {
+    "blend": "5c249c8ba2aa83846c18a008ac5893477bf372fcf82e1d61757cd362ef90574c",
+    "glb": "9a0a7560c26a83f64330ae6b4512d9463e3bf78462e764033c88ea2491d31f9d"
+  },
+  "runtime_report_sha256": "7390f0046759ce28848315dcd5bdcd149a0bd7f1debe3f33f702122ab425afd9",
+  "pixel_pairs": [
+    {
+      "view": "front-quarter",
+      "maximum_channel_mean_difference": 0.00023880828212939536,
+      "margin": 42
+    },
+    {
+      "view": "front",
+      "maximum_channel_mean_difference": 8.093758093758093e-05,
+      "margin": 41
+    },
+    {
+      "view": "rear-quarter",
+      "maximum_channel_mean_difference": 6.872285447248337e-05,
+      "margin": 42
+    }
+  ],
+  "concept_attempts": [
+    {
+      "attempt": 1,
+      "image": "gallery/media/concepts/mauna/mn06-review-1.png",
+      "sha256": "e90f6ac317980e79a8199202b42fc0ae159418a1dc4e4e5ecf9d1db01bfbadd5",
+      "prompt": "sources/docs/reconstruction/models/mn06-concept-prompt-1.txt",
+      "feedback": "Selected greybluecube/rooflip,5frontpaleslits/3rightslits,3cappedfrontbrassposts/5unequalrightstaves,redbands andlowroofvent/3pins. Ownsourcegoverns nearcornerextentoflowerbands andangularpinchoice overroundconceptpins. Two-cellventreading/hiddenwalls/attachmentdepths authored. No symbols/mechanism inferred fromritualtext."
+    }
+  ],
+  "glb_feedback": [
+    {
+      "pass_number": 1,
+      "stage": "actual_saved_native_and_independent_glb_runtime_with_native_quarter_review",
+      "binaries": {
+        "blend": "980b2a6822475a05b8681e509d4f70e06b550bfc6771fe87fd212948d79dfcbe",
+        "glb": "7806d72cbaf91345577862292f22c213cb7caad53392f377d3b52620dd3237e0"
+      },
+      "runtime_report_sha256": "6b5a5b01753af679d1324b880a0f0ac95f2d879d36ba979dce702e149a3be072",
+      "status": "revision_required",
+      "finding": "Runtime1PASS1716tri/16closedparts/error1.3328e-07. Nativequarterview retains sourcecube/redbands/stavecounts,butthree sidepaleslits too dark in deep metallicrecesses andthree frontbrassposts narrowerthan characteristically broadsourceposts. Shallowonlysidepaleslitdepths.025to.012,andfrontpost/capwidths.13/.14to.18/.19. Keepallcounts,contacts,staveheightpattern,roofgeometry,materials andstrictguards."
+    },
+    {
+      "pass_number": 2,
+      "stage": "actual_saved_native_and_independent_glb_runtime_with_native_quarter_review",
+      "binaries": {
+        "blend": "d51ef4c461b3e5acbc7508b3bea8cf84570a77349e98e029131468fc572235f5",
+        "glb": "6d83130aff01c14f6a06fbb8464f7d720487c30560cbe84830d249d6c2dc96c6"
+      },
+      "runtime_report_sha256": "22f382127432975c021af94cb95beb7114d21bc1369e3b91422973eb23f8ed22",
+      "status": "revision_required",
+      "finding": "Runtime2PASS1716tri/16/error1.3328e-07. Broaderfrontposts nowreadcorrectly;shallower sidepale recesses alone didnotcorrectdarkmetalreflection. Three sideinsertsstillreadasdarkslots ratherthansourcepaleelements. Changeonlypale service surface to matte dielectric protectivecoating whilekeepingbrassmetallic;retain colourmap,counts,geometry,contacts andallstrictguards."
+    },
+    {
+      "pass_number": 3,
+      "stage": "actual_saved_native_and_independent_glb_render_review",
+      "binaries": {
+        "blend": "5c249c8ba2aa83846c18a008ac5893477bf372fcf82e1d61757cd362ef90574c",
+        "glb": "9a0a7560c26a83f64330ae6b4512d9463e3bf78462e764033c88ea2491d31f9d"
+      },
+      "runtime_report_sha256": "7390f0046759ce28848315dcd5bdcd149a0bd7f1debe3f33f702122ab425afd9",
+      "status": "accepted_asset_only",
+      "finding": "Finalnativequarter/importwhole/front/rear/bothdetails andprivatelegacy/concept/GLBboardVIEWED. Mattepalecoating makes3sideinserts visiblylight,5frontslits remainpale,broader3cappedfrontposts retain sourcecharacter. Cube/redbands/5unequalrightstaves/lowvent/3pins remain coherent. Runtime3PASS1716tri/16closedpositiveparts/5materials/7portablemaps/error1.3328e-07;all9blindfields/backings,post/cap/stave/roofcontacts,irregularstaveheights,sidevisibility,roofcellfloors/backings,chips,root,decodedpixels/noemission/renderpairs pass.",
+      "limitations": [
+        "Nearcornerbandextent,angularpins,two-cellventreading,mattepalecoating,plainhiddenrearwalls/attachmentdepths/cellrelative proportions authored.",
+        "Class255hasnoboundgenericPB/ST;no ritualsymbol/mechanism oroperatinganimation/emission inferred.",
+        "Approximatecamera,not recoveredprojection. Finaluser/clientacceptance separate."
+      ]
+    }
+  ],
+  "final_review": "Own fourpalettedlayers/all41catalogueupdates,function996/culture137,one selectedactualImageGenconcept andactualsavednative/independentGLB whole/front/rear/details reviewed. Cube/rooflip,redbands,5front/3sidepaleslits,3cappedfrontbrassposts/5unequalrightstaves,lowvent/3pins retain sourceanatomy. Feedback broadensfrontposts andshallows sidefields;thirdrevision usesmattepalecoating so sideinserts readlight ratherthandarkmetalreflections. Allactualfield/post/cap/stave/roofcontacts,heights,texturepixels andrenderpairs pass.",
+  "limitations": [
+    "Nearcornerbandextent,angularpinprofiles,two-cellventreading,plainhiddenrearwalls,attachmentdepths/cellrelative dimensions authored.",
+    "Uniqueclass255hasnogenericbuildingpresentation;full_MAindexes/all36researchsubjects surveyed,no unrelatedPB/ST borrowed. No ritualsymbol/mechanism oroperatinganimation/emission inferred.",
+    "Mattepalecoating isauthoredreadability choice. Approximatecamera;finaluser/clientacceptance separate."
+  ],
+  "final_user_artistic_acceptance": false,
+  "game_client_integration": false
+}

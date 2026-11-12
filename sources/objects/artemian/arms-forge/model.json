@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "issue": 260,
+  "id": "openfa:building/legacy/120",
+  "key": "AR14",
+  "name": "Arms Forge",
+  "culture": "artemian",
+  "footprint": [
+    3,
+    3
+  ],
+  "definition_class": 7,
+  "construction_updates": 36,
+  "triangles": 22470,
+  "triangle_budget": 30000,
+  "mesh_nodes": 17,
+  "materials": 5,
+  "author": "sources/tools/blender/remaster_artemian_arms_forge.py",
+  "author_sha256": "77f452aefb9d2dae9f3445e36b3aa88c6659f8c3599cbc7a566d8ba604d0cccd",
+  "binaries": {
+    "blend": "1ac39a7bd2de9b7d183e0a3412c404a8491b1e9de77eacebfb20e274a1e80981",
+    "glb": "6a0d74bd1179dbc8e92c927cb482a700d672339525d1bcc42001033f48b24667"
+  },
+  "textures": {
+    "amber-fitting-colour.png": "ab658532556aca9e078923688b37f41cf3071371019b1a8a5a1cbc0fa5eeba92",
+    "copper-fitting-colour.png": "f5bec5f91ece22d7e9c06834019f56d3fb8cffbecfd92582ccf1668095a4d442",
+    "exposed-alloy-edge-colour.png": "4838b2c0c6f80dbc379bc45e00f6969244de53293a7a8c690a80a3326707b840",
+    "muted-green-alloy-colour.png": "99fce0407edb575abdbb8ac738afd48cc1ab055517f19d085ccfd43ab3382407",
+    "occlusion-roughness-metallic.png": "f4231a34243387c52ba5e0971a28892f25486a1b82184f5745f4e5eab6fa79bb",
+    "used-metal-normal.png": "4a8a92dae6bd01edeb0a132ecb9b22cae1a8ded551b12d2b395c82da18056c67"
+  },
+  "physical_dent": {
+    "point": [
+      -0.25,
+      0.11999999731779099,
+      1.198000192642212
+    ],
+    "normal": [
+      0.19435946643352509,
+      0.8429310321807861,
+      0.5016888380050659
+    ]
+  },
+  "shoulder_ports": [
+    {
+      "level": 0,
+      "index": 0,
+      "angle_deg": -56,
+      "point": [
+        0.07568860054016113,
+        -0.5381839275360107,
+        0.8299999833106995
+      ],
+      "normal": [
+        0.37986767292022705,
+        -0.7924783825874329,
+        0.4771568477153778
+      ]
+    },
+    {
+      "level": 0,
+      "index": 1,
+      "angle_deg": -38,
+      "point": [
+        0.22182905673980713,
+        -0.4401590824127197,
+        0.8299999833106995
+      ],
+      "normal": [
+        0.5492029190063477,
+        -0.6179549694061279,
+        0.5625903606414795
+      ]
+    },
+    {
+      "level": 1,
+      "index": 0,
+      "angle_deg": -41,
+      "point": [
+        0.46904444694519043,
+        -0.5770587921142578,
+        0.49000000953674316
+      ],
+      "normal": [
+        0.5263674855232239,
+        -0.6629324555397034,
+        0.5324075818061829
+      ]
+    },
+    {
+      "level": 1,
+      "index": 1,
+      "angle_deg": -23,
+      "point": [
+        0.642001748085022,
+        -0.38225257396698,
+        0.49000000953674316
+      ],
+      "normal": [
+        0.6777017712593079,
+        -0.40904271602630615,
+        0.6110681891441345
+      ]
+    }
+  ],
+  "interpretation": [
+    "Green tiered shell/upper boss,pale shoulder accents,open silver capsule frame/gold bar and crosspiece,rooted prong support,four small dark points and two copper front insets follow actual source/concept.",
+    "Hidden factory engineering,frame/tier/hardware sections and metric dimensions remain authored or unknown;PB07 generic turntable not Artemian operation."
+  ],
+  "scale_contract": "3x3 placement footprint,+Zup/-Yfront. Native dimensions are authored cell-relative proportions;no recovered metric height or calibrated client scale claimed.",
+  "concept_review": "sources/docs/reconstruction/models/ar14-concept-review.json",
+  "animation_clips": [],
+  "game_client_integration": false,
+  "final_user_artistic_acceptance": false
+}
