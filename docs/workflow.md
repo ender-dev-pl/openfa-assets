@@ -100,6 +100,17 @@ For this refinement,use **at most three correction/render/review cycles per mode
    iteration number,generator and GLB hashes,comparison previews,observations,
    remaining discrepancies and the decision to accept or use the next cycle.
 
+For mechanisms whose construction supports it,prefer more than one meaningful
+independent degree of freedom:for example,a rooted arm joint plus separately
+opening/closing jaws,or shoulder and elbow articulation plus an end effector.
+Use distinct editable nodes and physically supported pivots. The working clip
+should coordinate positioning,tool operation and return rather than merely
+rocking a rigid tool assembly. Do not add arbitrary motion to fixed hull parts
+or force extra joints into tools that naturally use a single rotor or slider.
+Review attachment and useful motion across the combined articulated poses in
+both native and imported models. This animation refinement belongs to the same
+maximum-three-cycle budget per model,not a separate allowance.
+
 Start with Mikotaj,Artemian and Rigellian,then review the remaining cultures.
 Count generator correction attempts in the same per-model record;technical
 failures must be logged and do not reset the cycle counter. Do not start a fourth

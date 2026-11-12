@@ -42,4 +42,4 @@ The repair ship uses two mirrored longitudinal red/silver wings with matching ro
 
 ## Canonical-fleet style refinement
 
-The next refinement uses at most three generator-correction / actual GLB render / visual comparison cycles per model. Follow the [canonical-fleet refinement protocol](../../../../docs/workflow.md#engineering-ship-refinement-against-the-canonical-fleet); the current comparison is `gallery/engineering-style-comparison.json`. Preserve the actual cycle history and unresolved findings. A fourth cycle requires a new user decision; technical checks alone do not establish style agreement.
+The next refinement uses at most three generator-correction / actual GLB render / visual comparison cycles per model. Follow the [canonical-fleet refinement protocol](../../../docs/workflow.md#engineering-ship-refinement-against-the-canonical-fleet); the current comparison is `gallery/engineering-style-comparison.json`. Preserve the actual cycle history and unresolved findings. A fourth cycle requires a new user decision; technical checks alone do not establish style agreement.
