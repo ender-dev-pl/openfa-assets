@@ -1,0 +1,23 @@
+# MN19 Ores Block
+
+Canonical protected Mauna ore-storage building, `openfa:building/legacy/148`, openfa-assets #261. Indexed identity: 2x2 footprint, class 30, 32 construction updates and durability 50. Actual English function record 1009 identifies fairly well protected ore storage; its runtime role records OreStorageCapacity 600. This does not establish a metric volume or physical dimensions. Culture record 137 establishes strictly practical angular cast architecture.
+
+## Own source and interpretation
+
+Both own `_B/MN19.256` descriptors were read: nonempty shadow 0 and fixed body 1. `_ZOOM/MN19.256` supplies overview 0/detail 1. All four own images and all 41 catalogue updates were inspected. There are no own operating overlays. Actual paletted source-pixel inspection resolves four faint front marks, rather than three. The own source governs the slender rectangular tower, low reinforced section/tall middle/shallow projecting cap, broad dark upper-front field, three brass upper-right insets, three taller middle-right slots, four short faint front marks, red band above the lower third, two angular brass reinforcements per visible lower face and small square roof inspection socket.
+
+One actual built-in ImageGen concept was selected against those sources within the maximum three attempts. First native/independent GLB render feedback brightened the overly dark brass with a more oxidized/diffuse gold finish while retaining zero emission. Source proportions and strap slenderness govern over heavier incidental concept fittings. The exact hidden structure, recess depths, strap sections, roof-socket floor and rear continuation of the waist band are authored interpretations. Used cast stains/pores, grime, scuffed brass, sparse worn paint and two actual shallow cast chips preserve quiet readable surfaces without a dense panel grid.
+
+Full `_MA` loose/archive inventories and all 36 semantic research identities/bindings were surveyed. Class 30 storage tower binds `_MA/PB30.VID` and its archive preview; all 60 colour updates and the preview were inspected. Related ore-teleporter research 17 explicitly binds `_MA/PB11.VID` and its archive preview plus `_SCITEK/ST17.VID`; all 60 PB11 colour updates, the preview and all 195 technical updates/423 timeline frames were inspected. Those Terran rounded stores and dish/teleport presentations provide context, not Mauna geometry or observed Ores Block operation. Original-game pixels remain private. The concept review includes original-reference, functional and cultural citation blocks.
+
+## Canonical geometry and verification
+
+One current editable Blend/portable GLB serves gameplay, construction/build menus and SciTek. The prior pair remains unchanged and historical. This static source-led structure has no inferred scan, opening, loading, pulse or teleport clip. All five material roles are opaque and nonemissive; brass is aged metal rather than a light.
+
+The three core sections overlap physically. One closed hollow red ring forms the continuous waist band, avoiding coplanar panel joins. Four lower brass reinforcements each use one continuous closed bent extrusion, with actual attachment witnesses along every segment and internal bend. Three pale slot frames are genuinely open, and all twelve front/right/roof fields are true blind recesses with seated backings. The square roof rim surrounds a visible dark floor sealing the vault below; its depth is authored inspection geometry, not an open path into the stored contents.
+
+Actual saved-native and independent GLB checks cover positive closed meshes, source component counts, twelve recess depths/backings, 41 physical attachment witnesses, continuous reinforcement profiles/ground clearance, open waist-ring and roof-rim interiors, nine global visible-roof-floor rays, two actual chips, opaque/nonemissive material roles, decoded texture pixels, placement roots and bidirectional surface parity. Whole/detail and exact canonical-edge renders were compared against own legacy and the selected concept after export. Budgets, exact hashes and errors are recorded in `model.json` and `runtime-review.json`. Agent review is separate from final user artistic approval.
+
+## Integration
+
+Preserve `PlacementRoot`, 2x2 footprint, ground 0, +Z up and -Y forward. Use this canonical pair on all presentation paths. World scale, gameplay state mapping, shader appearance and Android performance require separate client verification. Both galleries select the final pair and its current whole/detail, technical-edge and concept-comparison views. See `integration-contract.json`.

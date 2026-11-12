@@ -31783,7 +31783,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/148",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           1009
         ]
@@ -31857,21 +31857,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn19/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/ores-block/model.blend",
           "present": true,
-          "sha256": "cb23a6930fa7c4c937713ba0a6b9ff6920578c8aec5795581685a2497acd0d63",
-          "final_visual_acceptance": "not-established"
+          "sha256": "c6634a68a2cd58df075f5ddba203e644e45f7bd11b312005301834ac38dfe32a",
+          "media": "gallery/media/objects/mauna/ores-block",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/ores-block/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/ores-block/rear-quarter.png"
+            },
+            {
+              "label": "Roof inspection, upper field and three brass insets",
+              "image": "gallery/media/objects/mauna/ores-block/roof-inspection-upper-field-and-three-brass-insets-detail.png"
+            },
+            {
+              "label": "Red band and four continuous lower reinforcements",
+              "image": "gallery/media/objects/mauna/ores-block/red-band-and-four-continuous-lower-brass-reinforcements-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/ores-block/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/ores-block/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -31901,6 +31928,89 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 148
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn19/model.blend",
+          "present": true,
+          "sha256": "cb23a6930fa7c4c937713ba0a6b9ff6920578c8aec5795581685a2497acd0d63",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/ores-block/model.blend",
+        "sha256": "c6634a68a2cd58df075f5ddba203e644e45f7bd11b312005301834ac38dfe32a",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/ores-block",
+          "verifier": "sources/tools/blender/verify_mauna_ores_block.py",
+          "files": {
+            "sources/objects/mauna/ores-block/integration-contract.json": "d9c1f2420fc89674717dfdce091af65f41f1a909ed5168606e411771cc86995c",
+            "sources/objects/mauna/ores-block/model.blend": "c6634a68a2cd58df075f5ddba203e644e45f7bd11b312005301834ac38dfe32a",
+            "sources/objects/mauna/ores-block/model.glb": "2ce2c73aa59ea793ec43256e53b6944d622c75ec70da3770ffe6b5f0dac007da",
+            "sources/objects/mauna/ores-block/model.json": "d193114d91f26f2ec565a3e2d1aef4bee6f4280ddeaa39956ae1aa4d63486b52",
+            "sources/objects/mauna/ores-block/README.md": "636727809e303e7d4cf935b508dde1a84f4fd11d471c17471bbb70a97cc7fdd1",
+            "sources/objects/mauna/ores-block/runtime-review.json": "49fb9560e7ce3a09255538ce863bfaf6072c7934d3559295d25a88358284f5ac",
+            "sources/objects/mauna/ores-block/visual-review.json": "b68d2aa0f2286578b0f457b232b87c3e56b3bfb9714a8438deae1cb9c92ebbb4",
+            "gallery/media/objects/mauna/ores-block/concept-glb-comparison.jpg": "dd7c02566b0b268016039644b646702b22abbf2c0960b54644c80d14fa4c18d0",
+            "gallery/media/objects/mauna/ores-block/front-quarter.png": "776ea8d450d1c10efb335a0c20fc15a6279368325fb54dc72e13279d768cba33",
+            "gallery/media/objects/mauna/ores-block/front.png": "acc170e1e0f2f2211f7b6ca0408a8a9ead193c34903978ff8d45d3f2dc5e13eb",
+            "gallery/media/objects/mauna/ores-block/imported-front-quarter.png": "776ea8d450d1c10efb335a0c20fc15a6279368325fb54dc72e13279d768cba33",
+            "gallery/media/objects/mauna/ores-block/imported-front.png": "acc170e1e0f2f2211f7b6ca0408a8a9ead193c34903978ff8d45d3f2dc5e13eb",
+            "gallery/media/objects/mauna/ores-block/imported-rear-quarter.png": "34596b9dc9a98e17fb490d16c9649f09ff08f804169f5d409b4fe62851277643",
+            "gallery/media/objects/mauna/ores-block/native-front-quarter.png": "6892e3cff5a5fd3d6fe53e9c1f01982f4f84fe81af81bee865963f33c40354b2",
+            "gallery/media/objects/mauna/ores-block/native-front.png": "0a9f5d597a9bff97ef7f6e5a19df543e478fdde34bbc409da1c96562ef1b71e7",
+            "gallery/media/objects/mauna/ores-block/native-rear-quarter.png": "6a7706feffbffa5ed4a2b823953510f72d3e33c381e32750b6cf59ea24229741",
+            "gallery/media/objects/mauna/ores-block/rear-quarter.png": "34596b9dc9a98e17fb490d16c9649f09ff08f804169f5d409b4fe62851277643",
+            "gallery/media/objects/mauna/ores-block/red-band-and-four-continuous-lower-brass-reinforcements-detail.png": "e1ac05f283d6aed51e55cd672b9eec1be724f953a5d9f5dcb95ed9b3938fe1e4",
+            "gallery/media/objects/mauna/ores-block/roof-inspection-upper-field-and-three-brass-insets-detail.png": "daf94cb734d378272232f4989a606406cb2fed2147ae60d732351d0adbb8ecce",
+            "gallery/media/objects/mauna/ores-block/technical-wireframe.png": "843d78f7559a03aaaae2e93eafbfb2a7b7ffab242a995180c1e05b97c7b33212",
+            "sources/materials/mauna/ores-block/brass-colour.png": "2030a8dbd02bff306573f017d9920df9087e891df8c8bc0130d688e873b4ebc7",
+            "sources/materials/mauna/ores-block/cast-concrete-colour.png": "f27e0413d3f14b3b980bf0f48a91e208237fea842bdbdbe3ff75290fc17f7c27",
+            "sources/materials/mauna/ores-block/cast-service-normal.png": "fffff2cebaacecefb5e606979abd3816fda1f6f478ebf9846c3b7eed91b905fc",
+            "sources/materials/mauna/ores-block/concrete-orm.png": "1dd51424d4aed493ed645745201f12e6107c5ebf3a4eb366c40b008faa4e81bf",
+            "sources/materials/mauna/ores-block/marking-red-colour.png": "81bb1be9bd08c50338c77461520947dde42224d7b958dbe511a6e08e15f635c1",
+            "sources/materials/mauna/ores-block/metal-orm.png": "8a50625dcee9cc3c521fb7eb0e6a97d77a7126f315115ae455a3682d9857e6eb",
+            "sources/materials/mauna/ores-block/pale-module-colour.png": "92c1fe5970b7ea6d166bdc362c6d6e200bc25347ea9e452390a2915e1f44cba4",
+            "sources/tools/blender/remaster_mauna_ores_block.py": "de2a1afe0b5c47b591dcb0b4c267141b592d65b0c304a3bbad00893b54f51c37",
+            "sources/tools/blender/verify_mauna_ores_block.py": "2d20ab212d9d8aba6f8ab5ff9fb6980c94cccb468190113df1211947e729a2a0",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn19-concept-review.json": "8a18ff450410ed3f107fe518db3045cc71b6c7ad409711993074c1ff6528cf46",
+            "sources/docs/reconstruction/models/mn19-concept-prompt-1.txt": "56b7a5a0cf71b889e88ec8a5b51d6876c2609b5e71535b25c22d1f1f6f6e7d4c",
+            "gallery/media/concepts/mauna/mn19-review-1.png": "4fba60617fb057f5292f854267b329534f9c9eb72d992398e06bce6881dacc88"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/ores-block/visual-review.json",
+          "sha256": "b68d2aa0f2286578b0f457b232b87c3e56b3bfb9714a8438deae1cb9c92ebbb4",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/ores-block/visual-review.json",
+          "sha256": "b68d2aa0f2286578b0f457b232b87c3e56b3bfb9714a8438deae1cb9c92ebbb4",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/ores-block/visual-review.json",
+          "sha256": "b68d2aa0f2286578b0f457b232b87c3e56b3bfb9714a8438deae1cb9c92ebbb4",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/ores-block/visual-review.json",
+          "sha256": "b68d2aa0f2286578b0f457b232b87c3e56b3bfb9714a8438deae1cb9c92ebbb4",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/ores-block/runtime-review.json",
+          "sha256": "49fb9560e7ce3a09255538ce863bfaf6072c7934d3559295d25a88358284f5ac",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

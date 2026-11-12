@@ -228,11 +228,13 @@ Additional views: [Front](../gallery/media/objects/mauna/superior-extraction-uni
 
 `openfa:building/legacy/148`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Ores Block](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn19/front-quarter.png)
+![Ores Block](../gallery/media/objects/mauna/ores-block/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn19/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn19/model.glb)
+[Blend](../sources/objects/mauna/ores-block/model.blend) · [GLB](../sources/objects/mauna/ores-block/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/ores-block/front.png) · [Rear quarter](../gallery/media/objects/mauna/ores-block/rear-quarter.png) · [Roof inspection, upper field and three brass insets](../gallery/media/objects/mauna/ores-block/roof-inspection-upper-field-and-three-brass-insets-detail.png) · [Red band and four continuous lower reinforcements](../gallery/media/objects/mauna/ores-block/red-band-and-four-continuous-lower-brass-reinforcements-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/ores-block/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/ores-block/concept-glb-comparison.jpg)
 
 ## Motion Units
 
