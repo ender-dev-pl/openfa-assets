@@ -2,21 +2,23 @@
   "issue": 265,
   "revision": 2,
   "binaries": {
-    "blend": "789fa6928f7c7d76c977fff3e18dc5cd68456dbd940893bdd454483f2930e9b3",
-    "glb": "0e4a987407938e7bf079e336a060a32949b4a3f4fde4ee41aadf9002e0c0be18"
+    "blend": "aeb524def87c654a8933567a623099cad9a267ed0ec86c2c38fea012a62df735",
+    "glb": "63f1a86236f4bf460347572bfe94a6a71d1b0e69bd73fce4be24942fb0438b50"
   },
   "comparison": {
     "path": "gallery/media/proposals/engineering-ships/achaean/repair/refinement-comparison.png",
-    "sha256": "b2e45b2982b3e3140e030fb26d857743d55b78a6f00628c774e9406a646ba640",
-    "baseline_commit": "cd38d4948e58e87ba1b716deb3d797b9c4e9b832",
-    "baseline_binary_sha256": "9eec834a1e9f71488aa40a21a3a3770325246c5bfd7c7a3aed26bb74e7746075",
-    "refined_binary_sha256": "0e4a987407938e7bf079e336a060a32949b4a3f4fde4ee41aadf9002e0c0be18"
+    "sha256": "d833b92760e18e96ca1cc85e32a1d77ed9205f4eddc9e42337afedd39390a94d",
+    "baseline_commit": "007251cd5d65473d32f300ba55679e97ac5669d2",
+    "baseline_binary_sha256": "0e4a987407938e7bf079e336a060a32949b4a3f4fde4ee41aadf9002e0c0be18",
+    "refined_binary_sha256": "63f1a86236f4bf460347572bfe94a6a71d1b0e69bd73fce4be24942fb0438b50"
   },
   "review": "Author visual comparison;user artistic acceptance pending",
   "observations": [
-    "User-requested silhouette correction supersedes asymmetric concept arches:two mirrored longitudinal red/silver wings replace the centre overhead arch and hooked side crescent. Matching wing roots,bosses and red inserts;no inward-folded wing tip.",
-    "Inspected actual native/imported front,rear and top renders and four imported playback poses. Both wings have equal outlines and clear hull separation. The lower service support,claw and open nozzle retain their existing articulation;this functional tool is intentionally asymmetric.",
-    "Dedicated actual-Blender check confirms reflected wing,root,boss and inset surfaces match within 1e-5 in native and independent GLB at five animation poses. Deliberately displacing a wing vertex is rejected in both loads. Original selected concept retained with explicit user override rather than altered provenance."
+    "Actual native and independently imported front/rear/top renders were inspected against current Dedicated Fighter and Hunter/Prospector GLBs in the same studio. The pointed copper spindle,thin silver/crimson crescents and sparse hatches retain the cultural family;the utility wing/grader layout is deliberately distinct from combat/scout proportions.",
+    "Cycle1 replaced the rounded forebody and matched colour/metal targets,then exposed red-field breaks caused by truncated spline endpoint tangents. Cycle2 follows the full silver-wing spline for both mirrored red fields and explicitly fits roughness as well as metalness. Four colour/full ORM medians now match actual shared canonical atlas tile interiors within one byte;wear remains independently authored without a dense panel grid.",
+    "Actual working poses at0/1/2/3seconds were inspected. The crescent grader keeps its rooted pivot. Repair support positioning and wrist alignment precede two independent claws closing/releasing and returning. Six sampled native/import support and animated-surface checks pass;fixed wings do not move with the intentionally asymmetric ventral tool.",
+    "Native repair wing vertices/counts remain mirrored. Imported red-field pairs can have different UV/normal corner splits (589 versus584) while triangle counts and actual mirrored surfaces agree below1e-5. The specialized verifier now preserves strict native counts and verifies equal imported triangles plus bidirectional mirrored surfaces. Its actual displaced-vertex negative control still rejects distorted wings in both representations.",
+    "User artistic acceptance,physical game scale,platform profiling and continuous swept clearance remain pending. These are authored proposal units awaiting mechanics;canonical models and gameplay/runtime catalogues are unchanged."
   ],
   "limits": [
     "Authored rear/hidden engineering and provisional scale.",

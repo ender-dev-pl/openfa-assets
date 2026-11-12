@@ -320,8 +320,8 @@
           "status": "engineering proposal",
           "model": "sources/proposals/engineering-ships/achaean/terraform/model.glb",
           "image": "gallery/media/proposals/engineering-ships/achaean/terraform/imported-front-quarter.png",
-          "model_sha256": "07e1ae7de9b59ffc0c7db3ecd58dc7190a46cb4d5f7a15148f8904a297226977",
-          "image_sha256": "8b053a3a07dd26d9d0e50a8f23e52dab388327bfbedc18cebe94ca101303ce7c"
+          "model_sha256": "e69580866eeef04396a736ed3233e6f8fc7cb61041941d2640be1c4d2fe44856",
+          "image_sha256": "c63ebea8367e0ae19b16d128a28f8adf0dbf9e38defb20c20e013fdf9676525f"
         },
         {
           "name": "Repair Ship",
@@ -329,8 +329,8 @@
           "status": "engineering proposal",
           "model": "sources/proposals/engineering-ships/achaean/repair/model.glb",
           "image": "gallery/media/proposals/engineering-ships/achaean/repair/imported-front-quarter.png",
-          "model_sha256": "0e4a987407938e7bf079e336a060a32949b4a3f4fde4ee41aadf9002e0c0be18",
-          "image_sha256": "0970cedf5f396c8e7c819074ed85a03f479981595e4bb3b20f79a54c17c72d6b"
+          "model_sha256": "63f1a86236f4bf460347572bfe94a6a71d1b0e69bd73fce4be24942fb0438b50",
+          "image_sha256": "316b12da4057a2f5065eac3307bc9efd47e366d58e1182e810f5999ae442a8c1"
         },
         {
           "name": "Dedicated Fighter",
@@ -339,9 +339,11 @@
           "catalogue_id": "openfa:ship/achaean/dedicated-fighter",
           "stage": "legacy-hi-def-remaster",
           "model": "sources/objects/achaean/dedicated-fighter/model.glb",
-          "image": "gallery/media/objects/achaean/dedicated-fighter/front-quarter.png",
+          "image": "gallery/media/proposals/engineering-ships/achaean/canonical-references/dedicated-fighter-front-quarter.png",
           "model_sha256": "78b8144db063fed2947dd075dc7691eeef584b91bccfd98684f3dc02cd6e47a9",
-          "image_sha256": "ef0f33f0f2493d5c64ccf43958514fed893296d1abfb580835dddd3a4ec0764f"
+          "image_sha256": "7e11ec734e79bea1c6ccd3cdc86bfc20daf18d78059bdbf84bcc82a01b300d7c",
+          "catalogue_image": "gallery/media/objects/achaean/dedicated-fighter/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
         },
         {
           "name": "Hunter/Prospector",
@@ -350,13 +352,15 @@
           "catalogue_id": "openfa:ship/achaean/hunter-prospector",
           "stage": "legacy-hi-def-remaster",
           "model": "sources/objects/achaean/hunter-prospector/model.glb",
-          "image": "gallery/media/objects/achaean/hunter-prospector/front-quarter.png",
+          "image": "gallery/media/proposals/engineering-ships/achaean/canonical-references/hunter-prospector-front-quarter.png",
           "model_sha256": "a2f09789f56162e3570f6bc2dcc01fc837f1ad388ac65210c2d0efaeff00ef5c",
-          "image_sha256": "3e13d83b0a70124102f64e3c89610c13bc672e5246231e132c21fa7960343ed5"
+          "image_sha256": "91458d3db612fdcd3d0e8068661a01fa8ebcf1dcba83fbd12ef426545b8bbb23",
+          "catalogue_image": "gallery/media/objects/achaean/hunter-prospector/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
         }
       ],
-      "common_studio": false,
-      "assessment": "Close match: copper spindle hulls,thin red/silver crescents and sparse hatches repeat the fleet language. The repaired ship now has mirrored wings;small functional tooling remains distinct.",
+      "common_studio": true,
+      "assessment": "Canonical-style pass:two reviewed cycles introduced a pointed copper forebody,continuous crimson fields following the full mirrored silver-wing spline,and four canonical colour/ORM targets. Actual canonical GLBs use the same review studio. Repair has support,wrist and independent claws (four channels);mirrored wing surfaces are verified despite benign imported corner splits. User artistic acceptance is pending.",
       "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
     }
   ]
