@@ -1,0 +1,87 @@
+{
+  "issue": 265,
+  "culture": "rigellian",
+  "role": "terraform",
+  "max_cycles": 3,
+  "final_user_artistic_acceptance": false,
+  "cycles": [
+    {
+      "number": 1,
+      "status": "visually-reviewed",
+      "baseline_commit": "ffa41a14d9ee2cd9189174b30b8d2790fd59d625",
+      "baseline_binaries": {
+        "blend": "4965c5908d03d8855a917c0ff7681bdd963ec8c5627ef81a2fcea3c936e19922",
+        "glb": "213cc449c901398effacd0b1f8de8fd8d68ad2332aa0163a47b79d42e83480c2"
+      },
+      "baseline_author_sha256": "3ba9df25288d005f7d3d99355f2e8dac50e4a7ee2158e3976eb20941daaa7286",
+      "canonical_references": [
+        {
+          "name": "Delphini Assault",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/rigellian/delphini-assault",
+          "stage": "visible-section-refinement",
+          "model": "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
+          "image": "gallery/media/docs/assets/reconstruction/rigellian-refined/delphini-assault/front-quarter.png",
+          "model_sha256": "893489b3ff5b6a22ecf45ff059ffa63c3ef5700f91511bea0bd91069606bed24",
+          "image_sha256": "fb504fdc5f519ae57307aa0e3eaee28f34f4e003d28a786b12fcf93873d0eb06",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/rigellian/canonical-references/delphini-assault-front-quarter.png",
+            "sha256": "9922dc55b3cc1a1af168074e0f8c38cc86f09a1e1c7918bc5ca48def16f7a7c4"
+          }
+        },
+        {
+          "name": "Lazzaro Research",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/rigellian/lazzaro-research",
+          "stage": "visible-form-refinement",
+          "model": "sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.glb",
+          "image": "gallery/media/docs/assets/reconstruction/rigellian-refined/lazzaro-research/front-quarter.png",
+          "model_sha256": "49966492503271a0aa839959b96d99f8dd79fe69335ea88bdd48cbfe0e5b518b",
+          "image_sha256": "d6a2449b63ef4616d9a6abca977c0906f9135678518e8aac61c85c9b064aa02e",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/rigellian/canonical-references/lazzaro-research-front-quarter.png",
+            "sha256": "67d64907dd4e5f4684e8eeb12957cb0153b206e2e2fca4d91a6f9dc11a2c3f33"
+          }
+        }
+      ],
+      "intent": "Canonical green-dominant elongated oval hull,gold side fields and crown,slate gondolas and darker ventral casings. Derive colours/PBR from current canonical GLBs;preserve precision horns and articulated repair chains,and add separately closing jaws.",
+      "comparison_conditions": "Actual canonical and engineering GLB imports rendered by the same studio function;independent framing for style review,not game scale.",
+      "decision": "author-review-complete",
+      "author_sha256": "1cefd3277449e2f1772d31af6bd8b14a506aeccdc52bbc0c63163741d652daf6",
+      "binaries": {
+        "blend": "d06d078540880a91feb0a9dfe59576ab4ebc8d0808254d57a7e28da66b05e6da",
+        "glb": "9abac90f7cdf168ca3339c2f600101b1132b95e66fce13de52982c3e9b55d6db"
+      },
+      "runtime_review_sha256": "3dbb6643058490afb3faff2be6d3c7609efcd17afb1e95fdec6912d6a8667308",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/rigellian/terraform/canonical-style-cycle-01.png",
+        "sha256": "12420f6b95517b5380fe04bf3fcd73f7128e97893629543c775398aadaf12850"
+      },
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/rigellian/canonical-reference-review.json",
+        "sha256": "1fcad7c6dc1aa6f5b1fd24da46fe36eb93b64fc8ab35dea5336ca975c2a3884b"
+      },
+      "observations": [
+        "Reviewed actual engineering and canonical GLB imports in the same studio. Green-dominant elongated oval hull,gold fields/crown,slate gondolas and bronze/ventral casings share the Delphini Assault/Lazzaro family.",
+        "The rounded hull form is culturally supported by both canonical references;defined metal tool links remain separate from the curved body. No dense decorative panel grid.",
+        "Actual native/imported front,rear and top views plus 0/1/2/3-second working poses inspected. Precision horns retain rooted motion;repair shoulder/elbow positioning precedes independent jaw closure while the welding arm remains articulated.",
+        "Palette and effective PBR values are measured from current canonical GLB textures/factors. Untextured titanium/graphite factors are converted from linear RGB to sRGB map values. Graphite metalness/roughness are approximate within the shared material helper bounds;source hue is retained.",
+        "Function-specific tools and carrier proportions remain distinct from combat/research ships. Display is independently fitted;game scale and continuous swept clearance remain provisional. User artistic acceptance remains pending."
+      ],
+      "remaining": [
+        "User artistic acceptance.",
+        "Graphite PBR approximation and deliberately different utility tooling.",
+        "Game scale,platform profiling and continuous swept clearance remain outside asset-proposal verification."
+      ]
+    }
+  ],
+  "cycles_used": 1,
+  "cycles_remaining": 2,
+  "current_binaries": {
+    "blend": "d06d078540880a91feb0a9dfe59576ab4ebc8d0808254d57a7e28da66b05e6da",
+    "glb": "9abac90f7cdf168ca3339c2f600101b1132b95e66fce13de52982c3e9b55d6db"
+  },
+  "status": "author-style-review-complete-user-acceptance-pending"
+}

@@ -10,11 +10,11 @@
   "blueprint_registered": false,
   "package_registered": false,
   "binaries": {
-    "blend": "9b62cd31e759229339df8f2d1f9c62f7cf53c81b64278f8a27aaa1071f285451",
-    "glb": "4932a17836eaccd2ccd5ef0d5638324d3bec3348433a73624b58b402937a9f4a"
+    "blend": "565596fe779553000b10a24f0868d7e7dbdb4b9fc72d0061c1e9685d8487a27e",
+    "glb": "9362d783eb2fa8a9ce94254349c762991ced99f9370d2f928310a10a55ae8591"
   },
   "author": "sources/tools/blender/proposals/author_rigellian_engineering.py",
-  "author_sha256": "3ba9df25288d005f7d3d99355f2e8dac50e4a7ee2158e3976eb20941daaa7286",
+  "author_sha256": "1cefd3277449e2f1772d31af6bd8b14a506aeccdc52bbc0c63163741d652daf6",
   "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
   "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
   "refinement_helper": "sources/tools/blender/proposals/engineering_ship_refinement.py",
@@ -43,47 +43,61 @@
     "runtime_integration": false,
     "mechanics_available": false
   },
-  "triangles": 26452,
+  "triangles": 37804,
   "triangle_budget": 40000,
-  "meshes": 72,
-  "materials": 8,
+  "meshes": 97,
+  "materials": 12,
   "maps": {
     "sources/materials/proposals/engineering-ships/rigellian/abraded-tool-steel-normal.png": "6d8bd64a1a502e2178ea472f63e79e54557cc4c784f9cd25b0b5b92e1eb694bb",
     "sources/materials/proposals/engineering-ships/rigellian/abraded-tool-steel-orm.png": "11794cf55c46a5d3fcb36805752c3bff29c0fd965bf285ba9c202671224eed18",
     "sources/materials/proposals/engineering-ships/rigellian/abraded-tool-steel.png": "94e72fcfcfbdb4c644939dc3440ac7f96b7c71750cd2b117f1f47c0bfb9acced",
     "sources/materials/proposals/engineering-ships/rigellian/copper-normal.png": "9fc2f23e366ee9ae8cd0bb5d1d19792672c6f651f4915b2d39f3aee52b08b635",
-    "sources/materials/proposals/engineering-ships/rigellian/copper-orm.png": "46657cb3e3f206e3c155bd1719287741fca5ed2fead965111fe551f0ac5e518f",
-    "sources/materials/proposals/engineering-ships/rigellian/copper.png": "93ef519055d0dc35d76ee3878c7a30bdf83492b145f896bcff187752f80bdb7c",
+    "sources/materials/proposals/engineering-ships/rigellian/copper-orm.png": "141766f46b40c7541897f51eb555ebd9d91a4bd04e2f463890030da980ceda9c",
+    "sources/materials/proposals/engineering-ships/rigellian/copper.png": "5c1a2370494f0eece6078c6588fbb4c8b4584f6b7635378ac9133324f014781b",
+    "sources/materials/proposals/engineering-ships/rigellian/crown-gold-normal.png": "6db183dcee546f61c0a8b57d55be7af7b936f5e73cfcbc4282ed85e8c548346f",
+    "sources/materials/proposals/engineering-ships/rigellian/crown-gold-orm.png": "af759c9cf082333a1abcbf386229cc7e3ffdfa890e98ea2706acbc086de52f3a",
+    "sources/materials/proposals/engineering-ships/rigellian/crown-gold.png": "836b7adbc38d1a7103439d7476ed98941f22768b744971351eb95a9742c45485",
     "sources/materials/proposals/engineering-ships/rigellian/gold-normal.png": "8370c15f4a4d01b7d659ff916fd58bb4c340dcf194fbe4f2691ff8bd64ee3c1e",
-    "sources/materials/proposals/engineering-ships/rigellian/gold-orm.png": "ab30e2db17efc60ac15f1ccfaca35b984cdd7f4b1492dd68d4bd71677c01fb7a",
-    "sources/materials/proposals/engineering-ships/rigellian/gold.png": "2c604c0597504d6344f072daa8fd6302975ed41cf614d885082d0ac39d232cc6",
+    "sources/materials/proposals/engineering-ships/rigellian/gold-orm.png": "e0e3bbb705c7ba78a1176b32edf2f98f18544831bdbfaa1de086db4e6b0acbf0",
+    "sources/materials/proposals/engineering-ships/rigellian/gold.png": "ce9fc3e57fb2927dff0ad574283ca73e95d624eed08f9d839b5a2a282aa49b1f",
+    "sources/materials/proposals/engineering-ships/rigellian/lower-slate-normal.png": "2e29eefa832f8a95aaecaa899fb86dd4b5912e3bcd88d9579ee66e2f1b1a56bc",
+    "sources/materials/proposals/engineering-ships/rigellian/lower-slate-orm.png": "a58d23eb2bf28c317e2eb80b8ad8e1c61db4f45b8fb04283926b69378662f7d6",
+    "sources/materials/proposals/engineering-ships/rigellian/lower-slate.png": "9b9a67aa653a4e77450467001bf326b9e5b46cb9f11396d24c5684bf7585a870",
     "sources/materials/proposals/engineering-ships/rigellian/machined-alloy-normal.png": "1258ff70677074d1da860f4f1dd2a5d4cb858869630260b21ea74f81adf46e2a",
     "sources/materials/proposals/engineering-ships/rigellian/machined-alloy-orm.png": "70e5254364d516711c2b7f4bfe4a55799a53f8e097b4ef9a3b91d857ff92052c",
     "sources/materials/proposals/engineering-ships/rigellian/machined-alloy.png": "2733d3d472aa43c8fb935eab3b6d06a9d44515aff0d2b0cbf05158cc5516c058",
     "sources/materials/proposals/engineering-ships/rigellian/recess-normal.png": "d0113ed231f8f848ca403a10af7b1d93630513124feca300cfd3459c8607aff5",
-    "sources/materials/proposals/engineering-ships/rigellian/recess-orm.png": "9f1d0f642567f3f0048490b4ab949b92777c8de3b916df764257946151a25a59",
+    "sources/materials/proposals/engineering-ships/rigellian/recess-orm.png": "c10c0a82439aea6f2544c980c1affa1e81c2e8db26dcb4d6ebdc4c0974ab1353",
     "sources/materials/proposals/engineering-ships/rigellian/recess-seal-normal.png": "4e692fa0473a933615bbda9a3104aae9f3cfc6086a82a0ed4e6a43e5f1fb880c",
     "sources/materials/proposals/engineering-ships/rigellian/recess-seal-orm.png": "f0719e16b89a6c7b31f8b26df0dbac4d3fffa6eb2b8866309f6e33dd47da2d49",
     "sources/materials/proposals/engineering-ships/rigellian/recess-seal.png": "5cb95391956183f9fdeb3a3a9705346639bb2025feaee9221fc7914387b6a9f0",
-    "sources/materials/proposals/engineering-ships/rigellian/recess.png": "cfae7be8636d7293fabac3e3edd17d446c76d9455ff8e95eb99aa887f11ce5be",
+    "sources/materials/proposals/engineering-ships/rigellian/recess.png": "5caa0ac4f1efd9ecfe1b38639d86638fe33185c6a6801ef9178869de457e15fb",
     "sources/materials/proposals/engineering-ships/rigellian/sage-normal.png": "eb6e9d57f49e1cd3e1b6b9bce71747d6d99194e99b7a53277ab693eaff79b5b7",
-    "sources/materials/proposals/engineering-ships/rigellian/sage-orm.png": "c830d4c4abaf10d67022166aa5b1a0d996bcaea9530f2b9ad713afced21f4731",
-    "sources/materials/proposals/engineering-ships/rigellian/sage.png": "7bc2281c3f0c3039d6857a0666acc22f2ff9e5ff9ce1bc13e4f2980ccf7cb535",
+    "sources/materials/proposals/engineering-ships/rigellian/sage-orm.png": "1fb41d8af7f478db1f2be54060dbc483008cf80ffda2f64e255fc711166843d2",
+    "sources/materials/proposals/engineering-ships/rigellian/sage.png": "578bed04f7be9132cb0ab0ac2691e7c8c6b88012f8f0e5f7016682252e235b7b",
     "sources/materials/proposals/engineering-ships/rigellian/silver-normal.png": "1309cd6bddca01aaf8e65dc71dc3e2614c87dd0b027d14f9ef0fa2461ecb15d2",
-    "sources/materials/proposals/engineering-ships/rigellian/silver-orm.png": "3cdad943bc065c849f77da9de2a7a4206a82d1ff18c567a208fca05955c98b3d",
-    "sources/materials/proposals/engineering-ships/rigellian/silver.png": "79dc6c788f7e197182a3c9c230a90526315db46a441738b6778697523dfa94d0"
+    "sources/materials/proposals/engineering-ships/rigellian/silver-orm.png": "a7ae4626c330667332404a33f68fc10abc1bc111b989d58e4d73a1eb9c3df264",
+    "sources/materials/proposals/engineering-ships/rigellian/silver.png": "45881c70bbb77d5a557e9f7833c79e0a6e1be92022b68873f7fe33697a20c05c",
+    "sources/materials/proposals/engineering-ships/rigellian/slate-shell-normal.png": "1b174e2e8c2213c61735027534959e4698c0893e1e1e6b6fbe631947fb51d71b",
+    "sources/materials/proposals/engineering-ships/rigellian/slate-shell-orm.png": "5c5b91192609d576e61a73987fab9742b9b28e0ace9fbf6837042c023a11f47a",
+    "sources/materials/proposals/engineering-ships/rigellian/slate-shell.png": "40c1692462631c0c63d32e3265e287e7c1410f6e8284d9c7748c7d67e534c0cc",
+    "sources/materials/proposals/engineering-ships/rigellian/ventral-copper-normal.png": "e0d638eb24157a0875c601c4d5735a123b6261fffc632c452316681f9b636358",
+    "sources/materials/proposals/engineering-ships/rigellian/ventral-copper-orm.png": "097cce3aacdaec794a6811aa2fb83f910ccb222347876a294c3e2c453738888a",
+    "sources/materials/proposals/engineering-ships/rigellian/ventral-copper.png": "d8191ef10097b00faee61964aeb35364df211be8a16e55d45e5690ef84f15df2"
   },
   "bounds": [
     -1.2118003368377686,
-    -1.8911548852920532,
-    -0.16600000858306885,
+    -1.8911550045013428,
+    -0.1701499968767166,
     1.2118000984191895,
-    1.1827515363693237,
+    1.265751600265503,
     0.7884999513626099
   ],
   "joints": [
     "Rigellian gripShoulder",
     "Rigellian gripElbow",
+    "Rigellian gripJaw-1",
+    "Rigellian gripJaw1",
     "Rigellian weldShoulder",
     "Rigellian weldElbow"
   ],
@@ -98,29 +112,83 @@
       "seconds": 4,
       "motion": [
         {
+          "joint": "Rigellian gripJaw-1",
+          "path": "rotation_euler",
+          "axis": 2,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              49,
+              0.22
+            ],
+            [
+              73,
+              0
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "Rigellian gripJaw1",
+          "path": "rotation_euler",
+          "axis": 2,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              49,
+              -0.22
+            ],
+            [
+              73,
+              0
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
           "joint": "Rigellian gripShoulder",
           "path": "rotation_euler",
           "axis": 0,
           "keys": [
             [
               1,
-              0.0
+              0
             ],
             [
               25,
-              0.16
+              0.12
             ],
             [
               49,
-              0.0
+              0.12
             ],
             [
               73,
-              -0.055999999999999994
+              0
             ],
             [
               97,
-              0.0
+              0
             ]
           ]
         },
@@ -131,23 +199,23 @@
           "keys": [
             [
               1,
-              0.0
+              0
             ],
             [
               25,
-              -0.28
+              -0.24
             ],
             [
               49,
-              0.0
+              -0.24
             ],
             [
               73,
-              0.098
+              0
             ],
             [
               97,
-              0.0
+              0
             ]
           ]
         },
@@ -158,23 +226,23 @@
           "keys": [
             [
               1,
-              0.0
+              0
             ],
             [
               25,
-              -0.12
+              -0.1
             ],
             [
               49,
-              0.0
+              -0.1
             ],
             [
               73,
-              0.041999999999999996
+              0
             ],
             [
               97,
-              0.0
+              0
             ]
           ]
         },
@@ -185,23 +253,23 @@
           "keys": [
             [
               1,
-              0.0
+              0
             ],
             [
               25,
-              0.22
+              0.2
             ],
             [
               49,
-              0.0
+              0.2
             ],
             [
               73,
-              -0.077
+              0
             ],
             [
               97,
-              0.0
+              0
             ]
           ]
         }
@@ -210,7 +278,7 @@
   ],
   "scale": "Authored proposal units;not calibrated meters/cells or production/hangar clearance",
   "notes": [
-    "Based on the selected supplied rigellian concept;culture-specific hull,working tool and articulation.",
+    "Canonical-style cycle 1:green-dominant oval construction,gold fields/crown and slate/bronze casings derived from current Delphini Assault and Lazzaro Research;supersedes silver-dominant concept colours.",
     "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.",
     "Revision 2: defined hull planes,controlled edge radii,weighted surface normals,portable colour/ORM/tangent normal maps,material wear and attached mechanical detail."
   ]
