@@ -1,0 +1,171 @@
+{
+  "issue": 230,
+  "id": "openfa:camera-mode-icon",
+  "native_size": [
+    48,
+    40
+  ],
+  "hires_size": [
+    384,
+    320
+  ],
+  "transparent": true,
+  "button_chrome": false,
+  "text": false,
+  "semantics": "Toggle camera orbit/yaw and pitch interaction mode. Not camera reset, zoom, pan, or a recovered legacy command.",
+  "style_reference": {
+    "set": "sources/ui/legacy-icon-set",
+    "legacy_frames": [
+      "ICONS.256/006",
+      "ICONS.256/019",
+      "ICONS.256/059"
+    ],
+    "palette": "BLUE.256",
+    "interpretation": "Palette/material/raised-sign language only; new camera motif authored from geometry. No legacy pixels or contours used.",
+    "original_source_sha256": {
+      "ICONS": "85cb657894e6849df52adc35e255f8f6f3e074da9637e7a72a056bcbdb582ee1",
+      "BLUE": "1c12ef233d0c7d0c22c56bc005d4e4e1bc59168e9b16aec6324ac56a59fb3883"
+    }
+  },
+  "inputs": {
+    "sources/ui/camera-mode-icon/build_camera_mode_icon.py": "7090e153c9a3ea5e984b62446359cf29cc5a40b40127704c5b29ddb456ba7948",
+    "sources/ui/legacy-icon-set/legacy_shapes.py": "98bbc3fc92bffd6a8854d9a56c4dd9f1b38fec992b8ca034219a4fa8b3741167",
+    "sources/ui/legacy-icon-set/icon_recipes.py": "956a6bd3f45868c367cf9dc5efffd965474441d84fbec1fd13bb8eb7d84866a6",
+    "sources/ui/legacy-icon-set/assemble_icon_set.py": "5d08d979f9a5ee9872473c0cc7c4819b282723c01ec93bff90d2f1632ae9ffa5",
+    "sources/ui/camera-mode-icon/assemble_camera_mode_icon.py": "5a215ed8e5e6353bb0635eac4a3631efd50d56a014818278857e304971af2200",
+    "gallery/media/ui/legacy-icon-set/verification.json": "52a83aa23b10418abd95c4f3ca0eab5d35c352ac845cb43776e08204146dcfe7"
+  },
+  "blend": {
+    "path": "sources/ui/camera-mode-icon/camera-mode-icon.blend",
+    "sha256": "ba7739cb8a0504a04f3736f5ab2bda700505c69b1becf0d63ff723a9a6dc0e09"
+  },
+  "glb": {
+    "path": "sources/ui/camera-mode-icon/camera-mode-icon.glb",
+    "sha256": "9a2a38b27128e9a7eb1cd8548fd996c09a8b3d8704d129b1bb4d14ee2380b459"
+  },
+  "renders": {
+    "native-render.png": "60a87ef57c38b1044faae566997cf65753418e168bc7518eb9e188befed43740",
+    "imported-glb.png": "4faf874c99cc48f8fb1414ca0a845701d1fca5b7fac530b5b7ad21b4d94f10e7",
+    "reopened-blend.png": "60a87ef57c38b1044faae566997cf65753418e168bc7518eb9e188befed43740"
+  },
+  "runtime": {
+    "blender": "4.5.15 LTS",
+    "engine": "Cycles",
+    "samples": 64,
+    "source_objects": 14,
+    "imported_objects": 14,
+    "glb_materials": "Portable constant PBR approximation; procedural wear is in the native model and PNGs.",
+    "imported-glb.png_alpha_iou": 1.0,
+    "reopened-blend.png_alpha_iou": 1.0
+  },
+  "files": {
+    "native": {
+      "normal": {
+        "path": "gallery/media/ui/camera-mode-icon/icons/native/camera-mode-icon.png",
+        "sha256": "79707dfa501cb5f55c5ede9a7b49df0ade8cd3fac8b6ec404e005036bb44c6c2",
+        "alpha_bounds": [
+          8,
+          8,
+          40,
+          30
+        ]
+      },
+      "hover": {
+        "path": "gallery/media/ui/camera-mode-icon/icons/native/camera-mode-icon-hover.png",
+        "sha256": "8c52bbe65048126e8300c2d418dd878ec018f80316bd0154e1b679945e6ce211",
+        "alpha_bounds": [
+          8,
+          8,
+          40,
+          30
+        ]
+      },
+      "selected": {
+        "path": "gallery/media/ui/camera-mode-icon/icons/native/camera-mode-icon-selected.png",
+        "sha256": "8dbf97e32bdfdc792ba35250a163d60936cfef8b47fb6d2115aaff242259683d",
+        "alpha_bounds": [
+          8,
+          8,
+          40,
+          30
+        ]
+      },
+      "pressed": {
+        "path": "gallery/media/ui/camera-mode-icon/icons/native/camera-mode-icon-pressed.png",
+        "sha256": "ae7c8a5f63d1c9dc2ff9782a09a6dc95e4ded0a695e091e16343f3f73e538bcf",
+        "alpha_bounds": [
+          9,
+          9,
+          41,
+          31
+        ]
+      },
+      "disabled": {
+        "path": "gallery/media/ui/camera-mode-icon/icons/native/camera-mode-icon-disabled.png",
+        "sha256": "3c4e758489a9a7cd9a767eca4900999014cfedce3cae88d4cd812333cdb4d4ba",
+        "alpha_bounds": [
+          8,
+          8,
+          40,
+          30
+        ]
+      }
+    },
+    "hires": {
+      "normal": {
+        "path": "gallery/media/ui/camera-mode-icon/icons/hires/camera-mode-icon.png",
+        "sha256": "6e2ba003402b134e95220b16c0b9a0af45cdb224fab7ab3b1bb20108a17c4fe2",
+        "alpha_bounds": [
+          61,
+          67,
+          318,
+          236
+        ]
+      },
+      "hover": {
+        "path": "gallery/media/ui/camera-mode-icon/icons/hires/camera-mode-icon-hover.png",
+        "sha256": "8646310b8ee67d3912350acc3f56d693a27b79218b96a950cc5c3575bad5967b",
+        "alpha_bounds": [
+          61,
+          67,
+          318,
+          236
+        ]
+      },
+      "selected": {
+        "path": "gallery/media/ui/camera-mode-icon/icons/hires/camera-mode-icon-selected.png",
+        "sha256": "da5b7d88b169721ce44672dc82b6fa18a9dbab0102c866d4468c5df0606b4a40",
+        "alpha_bounds": [
+          61,
+          67,
+          318,
+          236
+        ]
+      },
+      "pressed": {
+        "path": "gallery/media/ui/camera-mode-icon/icons/hires/camera-mode-icon-pressed.png",
+        "sha256": "24f1e4ab9a2a92d7ced60a2b696a390545deb1ac706e0d3b7e005467865b792a",
+        "alpha_bounds": [
+          69,
+          75,
+          326,
+          244
+        ]
+      },
+      "disabled": {
+        "path": "gallery/media/ui/camera-mode-icon/icons/hires/camera-mode-icon-disabled.png",
+        "sha256": "34b9d126b6982295b970e7d9404acdb1c64ee999b29d9810c768de7435178245",
+        "alpha_bounds": [
+          61,
+          67,
+          318,
+          236
+        ]
+      }
+    }
+  },
+  "preview": {
+    "path": "gallery/media/ui/camera-mode-icon/preview.png",
+    "sha256": "a23057308419cd9859f17443ef983a7437c0fb798460b8c8f8f06196980d5c0c"
+  }
+}
