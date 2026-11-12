@@ -1,5 +1,6 @@
 {
   "issue": 265,
+  "revision": 2,
   "culture": "artemian",
   "role": "terraform",
   "status": "proposed-assets-awaiting-mechanics",
@@ -9,13 +10,15 @@
   "blueprint_registered": false,
   "package_registered": false,
   "binaries": {
-    "blend": "6d1ee1bd14241bbf8d23f80c96b8256c21227c6599071eb12a62f76481b9569f",
-    "glb": "76a1065eec5e0705deb5e9b76e93bfb8a2e120a983084576bc4fe62827072853"
+    "blend": "bdbc2780a08da929d82038c699be2b9903f6fae2d5e74b85e3adb9df78f49742",
+    "glb": "7bd02c98eae78a215b8edc3bca3547364534f7c7ee9ee85a1aa2d7fc8887edaf"
   },
   "author": "sources/tools/blender/proposals/author_artemian_engineering.py",
-  "author_sha256": "f70f6f86beb552f724e2f30ce978503ae39fa5c70a93355c6097b61068b89280",
+  "author_sha256": "a97ba9ea91971fa7fc181b959b577e8b2353b04ee346f797aef50f52a5f6f7ed",
   "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
   "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "refinement_helper": "sources/tools/blender/proposals/engineering_ship_refinement.py",
+  "refinement_helper_sha256": "1870515d9d565159d9162dd363be97510f69a65d429fec9d8b0af69e8704842c",
   "concept": {
     "culture": "artemian",
     "role": "terraform",
@@ -40,20 +43,36 @@
     "runtime_integration": false,
     "mechanics_available": false
   },
-  "triangles": 4700,
+  "triangles": 6944,
+  "triangle_budget": 40000,
   "meshes": 17,
   "materials": 3,
   "maps": {
-    "sources/materials/proposals/engineering-ships/artemian/dark-slots.png": "29212ccbd7e62ed8f10ccac2b896de42a2dae227311d8bb17e2f84404c74955e",
-    "sources/materials/proposals/engineering-ships/artemian/deep-green.png": "8cd950b985ad7357b820b0c6a6a32b513b4d06c21530454d029df401d9f774f8",
-    "sources/materials/proposals/engineering-ships/artemian/silver-shell.png": "2f360824a4d241aa51bf719476b5f3af5af17dfb2fd75c5a8c0535b937a2ef36"
+    "sources/materials/proposals/engineering-ships/artemian/abraded-tool-steel-normal.png": "a4bb98eac436773b37240afe18536bbe754dbc1c5c6e14a1219b26f482a73e35",
+    "sources/materials/proposals/engineering-ships/artemian/abraded-tool-steel-orm.png": "15b8e36a2bab39b078b7763b069f68183f2b7c8ef2f06952f193532a99ffb64f",
+    "sources/materials/proposals/engineering-ships/artemian/abraded-tool-steel.png": "47e2d2ea154374ccdcf1e78221bb4bfe5ee3e9055e3a2fa3420c9c895e391db4",
+    "sources/materials/proposals/engineering-ships/artemian/dark-slots-normal.png": "db894a185894f5389900a4177a42541cf76e79884747c839ccaf09467617ff07",
+    "sources/materials/proposals/engineering-ships/artemian/dark-slots-orm.png": "708e651862c1abf529d3515e621ffb6dfac2c0be9f9322d3395023ada4ab0919",
+    "sources/materials/proposals/engineering-ships/artemian/dark-slots.png": "a43d9ae3db61f303a44f381d4115811c492b212b42eb4cb8c909cb5f378d8b9d",
+    "sources/materials/proposals/engineering-ships/artemian/deep-green-normal.png": "6e291251ace22859c5516d4811929778af27d467eda31062e0c8ec887d9b4448",
+    "sources/materials/proposals/engineering-ships/artemian/deep-green-orm.png": "01578733590129c805c155627045849e5eaf943196fbf0b3fe719abee0b28400",
+    "sources/materials/proposals/engineering-ships/artemian/deep-green.png": "b55abf1096986728690d54cf9b6e2e6147c0b4d48864b50a3bdb3080b7c39bdb",
+    "sources/materials/proposals/engineering-ships/artemian/machined-alloy-normal.png": "787909fb36e44521a784a1a22cd8d5d8b619cb71ec0def93d57aa42d26d3ac5a",
+    "sources/materials/proposals/engineering-ships/artemian/machined-alloy-orm.png": "f4b81a9b2f66244eb90c931f7e962706eba0a423bf770f3682da3b868437af0b",
+    "sources/materials/proposals/engineering-ships/artemian/machined-alloy.png": "454225ac0b422f598be283c5c8a259ef3507e4455338df0d05afd3e57a3ce1df",
+    "sources/materials/proposals/engineering-ships/artemian/recess-seal-normal.png": "b1e35f9ca2fa28f909ee214415b73edda72ffef64663fb212ac689c54b4f09c6",
+    "sources/materials/proposals/engineering-ships/artemian/recess-seal-orm.png": "30df93a17a93ce1624fbbf249fbaa164546992d01edb4dad8fff9800250462ae",
+    "sources/materials/proposals/engineering-ships/artemian/recess-seal.png": "f89abb2337b0a3509f8a18250e9870f7a052c982cf6b1840e963ba58759a4fcf",
+    "sources/materials/proposals/engineering-ships/artemian/silver-shell-normal.png": "8e51d3c2da9655a2745e9fe700fd8c5c80eef89b1294c89bb11d1a9b46538b45",
+    "sources/materials/proposals/engineering-ships/artemian/silver-shell-orm.png": "e616fd77e0c0697ce812be87a69c02b0abf5184d7d3d27ec228722c9850aa579",
+    "sources/materials/proposals/engineering-ships/artemian/silver-shell.png": "cb01c88428946af5df379836459b3161bb83599d3b04446202c4d2692e0d647f"
   },
   "bounds": [
-    -1.0899989604949951,
+    -1.0900012254714966,
     -2.173164129257202,
     -0.0949999988079071,
-    1.0899996757507324,
-    1.6100000143051147,
+    1.0900003910064697,
+    1.6100021600723267,
     0.809999942779541
   ],
   "joints": [
@@ -127,9 +146,10 @@
       ]
     }
   ],
-  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "scale": "Authored proposal units;not calibrated meters/cells or production/hangar clearance",
   "notes": [
     "Based on the selected supplied artemian concept;culture-specific hull,working tool and articulation.",
-    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added."
+    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.",
+    "Revision 2: defined hull planes,controlled edge radii,weighted surface normals,portable colour/ORM/tangent normal maps,material wear and attached mechanical detail."
   ]
 }

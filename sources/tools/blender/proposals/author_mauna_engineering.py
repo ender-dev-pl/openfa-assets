@@ -3,7 +3,7 @@ import argparse,math,sys
 from pathlib import Path
 from mathutils import Vector
 sys.path.insert(0,str(Path(__file__).parent))
-from engineering_ship_common import Ship
+from engineering_ship_refinement import RefinedShip as Ship
 
 
 
@@ -17,6 +17,13 @@ def plate(s,name,polygon,z,depth,mat,parent=None):
 
 def curved_bar(s,name,points,width,depth,mat,parent=None):
     # Solid quadrilateral-section continuous curved tool, rather than loose rods.
+    if len(points)>3:
+        raw=[Vector(p) for p in points];dense=[]
+        for i in range(len(raw)-1):
+            a=raw[max(0,i-1)];b=raw[i];c=raw[i+1];d=raw[min(len(raw)-1,i+2)]
+            for step in range(5):
+                t=step/5;dense.append(tuple(.5*((2*b)+(-a+c)*t+(2*a-5*b+4*c-d)*t*t+(-a+3*b-3*c+d)*t*t*t)))
+        points=dense+[tuple(raw[-1])]
     verts=[]
     for i,p in enumerate(points):
         prev=Vector(points[max(0,i-1)]);nxt=Vector(points[min(len(points)-1,i+1)]);t=(nxt-prev).normalized();normal=Vector((-t.y,t.x,0)).normalized()

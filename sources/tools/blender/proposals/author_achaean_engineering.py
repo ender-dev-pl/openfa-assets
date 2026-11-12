@@ -3,7 +3,7 @@ import argparse,math,sys
 from pathlib import Path
 from mathutils import Vector
 sys.path.insert(0,str(Path(__file__).parent))
-from engineering_ship_common import Ship
+from engineering_ship_refinement import RefinedShip as Ship
 
 
 
@@ -17,6 +17,13 @@ def plate(s,name,polygon,z,depth,mat,parent=None):
 
 def curved_bar(s,name,points,width,depth,mat,parent=None):
     # Solid quadrilateral-section continuous curved tool, rather than loose rods.
+    if len(points)>3:
+        raw=[Vector(p) for p in points];dense=[]
+        for i in range(len(raw)-1):
+            a=raw[max(0,i-1)];b=raw[i];c=raw[i+1];d=raw[min(len(raw)-1,i+2)]
+            for step in range(5):
+                t=step/5;dense.append(tuple(.5*((2*b)+(-a+c)*t+(2*a-5*b+4*c-d)*t*t+(-a+3*b-3*c+d)*t*t*t)))
+        points=dense+[tuple(raw[-1])]
     verts=[]
     for i,p in enumerate(points):
         prev=Vector(points[max(0,i-1)]);nxt=Vector(points[min(len(points)-1,i+1)]);t=(nxt-prev).normalized();normal=Vector((-t.y,t.x,0)).normalized()
@@ -37,6 +44,13 @@ def repair_tool(s,prefix,a,b,c,steel,copper,gold,left=True,parent=None):
     cycle(s,j,0,.16 if left else -.12);cycle(s,k,0,-.28 if left else .22)
 
 def ribbon(s,name,stations,thick,mat,parent=None):
+    raw=[Vector(p) for p in stations];dense=[]
+    for i in range(len(raw)-1):
+        a=raw[max(0,i-1)];b=raw[i];c=raw[i+1];d=raw[min(len(raw)-1,i+2)]
+        for step in range(6):
+            t=step/6;p=.5*((2*b)+(-a+c)*t+(2*a-5*b+4*c-d)*t*t+(-a+3*b-3*c+d)*t*t*t)
+            p[3]=max(p[3],p[2]+.012);dense.append(tuple(p))
+    stations=dense+[tuple(raw[-1])]
     verts=[(x+dx,y,z) for y,x,lo,hi in stations for dx,z in [(-thick/2,lo),(thick/2,lo),(thick/2,hi),(-thick/2,hi)]]
     n=len(stations);faces=[(3,2,1,0),tuple(range(4*n-4,4*n))]+[(4*i+j,4*i+(j+1)%4,4*(i+1)+(j+1)%4,4*(i+1)+j) for i in range(n-1) for j in range(4)]
     return s.solid(name,verts,faces,mat,.006,parent)
@@ -69,7 +83,7 @@ def achaean(s,role):
         curved_bar(s,'Achaean silver curved service spine',pts,.19,.25,silver,j);curved_bar(s,'Achaean red service spine inset',[(x,y,z+.11) for x,y,z in pts],.12,.04,red,j)
         s.box('Achaean copper tool housing',(0,-1.60,-.48),(.65,.35,.28),copper,.09,j)
         for x in [-.20,.12]:s.box('Achaean silver lifting claw '+str(x),(x,-1.91,-.48),(.11,.42,.21),silver,.035,j)
-        s.cyl('Achaean adjacent silver service nozzle',(.31,-1.75,-.48),.11,.36,silver,(0,1,0),j);s.beam('Achaean nozzle root',(.25,-1.60,-.48),(.31,-1.69,-.48),.17,.18,copper,j);cycle(s,j,0,.14)
+        nozzle=s.cyl('Achaean adjacent silver service nozzle',(.31,-1.75,-.48),.11,.36,silver,(0,1,0),j);bore=s.cyl('Temporary service nozzle bore',(.31,-1.91,-.48),.055,.24,silver,(0,1,0),j);s.cut(nozzle,bore);s.ring('Achaean service nozzle rim',(.31,-1.94,-.48),.105,.055,.045,silver,(0,1,0),j);s.beam('Achaean nozzle root',(.25,-1.60,-.48),(.31,-1.69,-.48),.17,.18,copper,j);cycle(s,j,0,.14)
         s.placement.scale=(.88,.88,.88)
 
 if __name__=='__main__':

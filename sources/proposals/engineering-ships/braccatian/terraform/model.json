@@ -1,5 +1,6 @@
 {
   "issue": 265,
+  "revision": 2,
   "culture": "braccatian",
   "role": "terraform",
   "status": "proposed-assets-awaiting-mechanics",
@@ -9,13 +10,15 @@
   "blueprint_registered": false,
   "package_registered": false,
   "binaries": {
-    "blend": "be909c3555536110d16335b414dc30fe9b2567acd4f91dc8b7ca2a5a1f02a49b",
-    "glb": "58f9b0df2d87264920b5a2f0ce196694d5b92740c41cfcb6e8cc9f37a8834ddb"
+    "blend": "5e8729083c2413e0e8732618a9e9e72421c8b0c6ba06bed0efac1402d50cc520",
+    "glb": "e8e13d6cae6f886b2d73a1728605fb38e9af74b54a208c2d0242b1d8b634f0da"
   },
   "author": "sources/tools/blender/proposals/author_braccatian_engineering.py",
-  "author_sha256": "28d44de63a6e44a8c67066ad55d01bbccb2f0a7dcf0f57cbdee21322e4eeaaa8",
+  "author_sha256": "945ab170e047520f6e2b6c81d1cc5f3e6f4281f7ee9ee3996b6873d667599deb",
   "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
   "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "refinement_helper": "sources/tools/blender/proposals/engineering_ship_refinement.py",
+  "refinement_helper_sha256": "1870515d9d565159d9162dd363be97510f69a65d429fec9d8b0af69e8704842c",
   "concept": {
     "culture": "braccatian",
     "role": "terraform",
@@ -40,23 +43,43 @@
     "runtime_integration": false,
     "mechanics_available": false
   },
-  "triangles": 4376,
-  "meshes": 26,
-  "materials": 5,
+  "triangles": 12760,
+  "triangle_budget": 40000,
+  "meshes": 56,
+  "materials": 8,
   "maps": {
-    "sources/materials/proposals/engineering-ships/braccatian/bronze.png": "4d929e3d452548affbf8947dc0361fe163ebb96668f72d126ce4c38d3f650fff",
-    "sources/materials/proposals/engineering-ships/braccatian/coral.png": "f45622cf8dba340b5beaa9f0289a6079a6c00703de3b9a9e4f9668f412aed053",
-    "sources/materials/proposals/engineering-ships/braccatian/dark-inset.png": "ad6a53b5620b10c2b8b75d01b43c0420216cb628ca5a1cc189ff2ce2202e79b3",
-    "sources/materials/proposals/engineering-ships/braccatian/dark-structure.png": "a4ad2db21069bfd8c73f1eb17fa70bf1a9b913a1c87466c9467c93596e3b9852",
-    "sources/materials/proposals/engineering-ships/braccatian/ochre.png": "2e9932d92eb9436a1430134e642346c1596fb94de1c8e395a65cf4719f5cce6e"
+    "sources/materials/proposals/engineering-ships/braccatian/abraded-tool-steel-normal.png": "e2a65899ed480b49b902bd437b50392c490f0844770f15bb31cb22c398154f50",
+    "sources/materials/proposals/engineering-ships/braccatian/abraded-tool-steel-orm.png": "8291b6b7a3c296ec53eb0ed833416b9eb0ceda5341eb01de54dd870536a34721",
+    "sources/materials/proposals/engineering-ships/braccatian/abraded-tool-steel.png": "8b996adfb91cbc0366c1d9e41e49a1d809de395cc0c4e0c3d2e045673f9741ce",
+    "sources/materials/proposals/engineering-ships/braccatian/bronze-normal.png": "523aa046742cc3a05f76722e2e9c4230374e9c45b4018fea271408f9264c038d",
+    "sources/materials/proposals/engineering-ships/braccatian/bronze-orm.png": "9116ec1b1018e168577fbaae8111f5254b71ba53c68ad23c19fc5f7b285f23ef",
+    "sources/materials/proposals/engineering-ships/braccatian/bronze.png": "e0c57544891366da443999430dd098263e716a3bb7ee554114e2517bbb85d911",
+    "sources/materials/proposals/engineering-ships/braccatian/coral-normal.png": "dd4229e3e5a87cadd093b93b81d00be14f21a081ac81ab6b9dce3d257fdc74fe",
+    "sources/materials/proposals/engineering-ships/braccatian/coral-orm.png": "a66a820af174d57164ca7d22d156eb9211e8c2b055049b1f21ac122ed2b495c7",
+    "sources/materials/proposals/engineering-ships/braccatian/coral.png": "5fe1836349379e12c0b9a15f0ff9a66b729e3a52c0de56a7f581c47554db39b7",
+    "sources/materials/proposals/engineering-ships/braccatian/dark-inset-normal.png": "2c82f658d735072131df2161fa3768483588abe72cf83b0c2b61d43dfa724684",
+    "sources/materials/proposals/engineering-ships/braccatian/dark-inset-orm.png": "167f839db8e0735367829417ecd867e5d873d465661a5a127bcfdc951e601a9b",
+    "sources/materials/proposals/engineering-ships/braccatian/dark-inset.png": "518233317a6486757a96c3c058c8d66aae812bde14f5319f8c3e4487e95f9abe",
+    "sources/materials/proposals/engineering-ships/braccatian/dark-structure-normal.png": "53aaf564c43c7ac774163047efd6d69f37ef71ab4d7b274555dee2e33d67d9ac",
+    "sources/materials/proposals/engineering-ships/braccatian/dark-structure-orm.png": "1e8f0989ae51b1e024216b056ffe798aa49b4dd54a5df65d3b56bfe6125ac4ef",
+    "sources/materials/proposals/engineering-ships/braccatian/dark-structure.png": "42e2141cef870f54bb996719c1361f352053c6d8e4dccb4fc033f49e1adfa617",
+    "sources/materials/proposals/engineering-ships/braccatian/machined-alloy-normal.png": "1e491c3e96ffaed144241bc9eb7d2a95d482e5cca7adb64c521316ff9a473365",
+    "sources/materials/proposals/engineering-ships/braccatian/machined-alloy-orm.png": "dc639109777a0480f90cc208e528f6a7547ecb7194ed128c3f4d046afb73108f",
+    "sources/materials/proposals/engineering-ships/braccatian/machined-alloy.png": "2ce5e2ffa6f445800eae88d71b5a06028dae1338b2eb6f70321ead1c8de1cf41",
+    "sources/materials/proposals/engineering-ships/braccatian/ochre-normal.png": "4fac47b05bef440a384bc18b25210bdcef85a7e9fbd7a8d2718f40f5c25daf26",
+    "sources/materials/proposals/engineering-ships/braccatian/ochre-orm.png": "5dcaaac1c972605c81a5b7d45b19b8909bfca1bc77147724dbd316f3583b021a",
+    "sources/materials/proposals/engineering-ships/braccatian/ochre.png": "22129a84c738459e590b4602e8ab8b6d3be43a23cc87b62cedd870114c517f17",
+    "sources/materials/proposals/engineering-ships/braccatian/recess-seal-normal.png": "2f84a107014b59a2626442bb5381b398d979934e211c276c7f833fda4efcc972",
+    "sources/materials/proposals/engineering-ships/braccatian/recess-seal-orm.png": "35d17a8f8a93e8ada503c872adef7e93c0a3452e494dcbba63b9c01a222ad29b",
+    "sources/materials/proposals/engineering-ships/braccatian/recess-seal.png": "7084cc95381a18aa0c551965e32ffbed9c8abc5a75dc84dd456838a8dad74d09"
   },
   "bounds": [
     -0.8050000071525574,
-    -2.184999942779541,
+    -2.188499927520752,
     -0.5300000309944153,
     0.8050000071525574,
     1.7750000953674316,
-    1.0199999809265137
+    1.0433000326156616
   ],
   "joints": [
     "CrusherLower",
@@ -129,9 +152,10 @@
       ]
     }
   ],
-  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "scale": "Authored proposal units;not calibrated meters/cells or production/hangar clearance",
   "notes": [
     "Based on the selected supplied braccatian concept;culture-specific hull,working tool and articulation.",
-    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added."
+    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.",
+    "Revision 2: defined hull planes,controlled edge radii,weighted surface normals,portable colour/ORM/tangent normal maps,material wear and attached mechanical detail."
   ]
 }

@@ -1,13 +1,21 @@
 {
   "issue": 265,
+  "revision": 2,
   "binaries": {
-    "blend": "bd3116f40a876373a00cc2b8cd5f943f51ee3fdd129463a2b61a822c9112afb8",
-    "glb": "f5c4f547784aed33e1b9aff12d7bbe501c23d3fe94ad8f1e422e3c6494bc78d6"
+    "blend": "4e00a8065ea9cf7dfc4d80d620139d5d1fe1970c1e57aa276f432f0d2e2502ff",
+    "glb": "67eebb8045e5791e71023f5681f862ec2abdf79ae98572d18d86d6552d9cca69"
+  },
+  "comparison": {
+    "path": "gallery/media/proposals/engineering-ships/mikotaj/terraform/refinement-comparison.png",
+    "sha256": "8df5d4fe283fa5ddec15f0b98ad16fe716255ab8ef475f407cbc0783e2bc2a6e",
+    "baseline_commit": "af7f26a23713483342b59283ac72e59a15b42ae4",
+    "baseline_binary_sha256": "f5c4f547784aed33e1b9aff12d7bbe501c23d3fe94ad8f1e422e3c6494bc78d6",
+    "refined_binary_sha256": "67eebb8045e5791e71023f5681f862ec2abdf79ae98572d18d86d6552d9cca69"
   },
   "review": "Author visual comparison;user artistic acceptance pending",
   "observations": [
-    "Compared selected Mikotaj concept with actual import renders: open long green twin rail frame,copper end beams,blue faceted core,gold connectors and two frame-mounted working plates retained.",
-    "Reviewed actual playback poses: separate plate hinges cycle with the frame and core stationary. The open gaps remain geometry,not black textures."
+    "Compared actual GLB,baseline and selected concept. Open rail frame,clipped blue central module and planar working plates retain explicit edges;no rounded capsule replacement.",
+    "Reviewed four imported animation poses. Both hinged working plates remain rooted to the copper end beam and move independently of the stationary hull. Added flush core slots,connector insets,tool wear and portable PBR maps."
   ],
   "limits": [
     "Authored rear/hidden engineering and provisional scale.",

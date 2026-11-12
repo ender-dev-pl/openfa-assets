@@ -3,7 +3,7 @@ import argparse,math,sys
 from pathlib import Path
 from mathutils import Vector
 sys.path.insert(0,str(Path(__file__).parent))
-from engineering_ship_common import Ship
+from engineering_ship_refinement import RefinedShip as Ship
 
 
 
@@ -17,6 +17,13 @@ def plate(s,name,polygon,z,depth,mat,parent=None):
 
 def curved_bar(s,name,points,width,depth,mat,parent=None):
     # Solid quadrilateral-section continuous curved tool, rather than loose rods.
+    if len(points)>3:
+        raw=[Vector(p) for p in points];dense=[]
+        for i in range(len(raw)-1):
+            a=raw[max(0,i-1)];b=raw[i];c=raw[i+1];d=raw[min(len(raw)-1,i+2)]
+            for step in range(5):
+                t=step/5;dense.append(tuple(.5*((2*b)+(-a+c)*t+(2*a-5*b+4*c-d)*t*t+(-a+3*b-3*c+d)*t*t*t)))
+        points=dense+[tuple(raw[-1])]
     verts=[]
     for i,p in enumerate(points):
         prev=Vector(points[max(0,i-1)]);nxt=Vector(points[min(len(points)-1,i+1)]);t=(nxt-prev).normalized();normal=Vector((-t.y,t.x,0)).normalized()
@@ -39,7 +46,7 @@ def repair_tool(s,prefix,a,b,c,steel,copper,gold,left=True,parent=None):
 def braccatian(s,role):
     ochre=s.mat('ochre',(.53,.33,.07),.25,.70);coral=s.mat('coral',(.56,.15,.105),.20,.65);grey=s.mat('dark-structure',(.12,.13,.14),.60,.60);bronze=s.mat('bronze',(.50,.27,.10),.65,.57);dark=s.mat('dark-inset',(.025,.026,.025),.3,.80)
     length=3.35 if role=='terraform' else 2.72
-    stations=[(-length*.50,.12),(-length*.46,.65),(-length*.36,1),(length*.36,1),(length*.46,.65),(length*.50,.12)];n=32
+    stations=[(-length*.50,.12),(-length*.46,.65),(-length*.36,1),(length*.36,1),(length*.46,.65),(length*.50,.12)];n=64
     verts=[(.76*r*math.cos(i*2*math.pi/n),y,.40+.575*r*math.sin(i*2*math.pi/n)) for y,r in stations for i in range(n)]
     faces=[tuple(reversed(range(n))),tuple(range(5*n,6*n))]+[(j*n+i,j*n+(i+1)%n,(j+1)*n+(i+1)%n,(j+1)*n+i) for j in range(5) for i in range(n)]
     body=s.solid('Braccatian ochre barrel hull',verts,faces,ochre)
@@ -67,7 +74,7 @@ def braccatian(s,role):
         j=s.joint('VentralServiceYoke',(0,-.05,-.10));s.cyl('Braccatian ventral pivot bearing',(0,-.05,-.10),.18,.40,grey,(1,0,0));s.beam('Braccatian short ventral yoke',(0,-.05,-.10),(0,-1.24,-.42),.22,.25,bronze,j)
         s.box('Braccatian clamp crosspiece',(0,-1.28,-.42),(.85,.22,.24),bronze,.04,j)
         for x in [-.32,.32]:s.box('Braccatian lifting prong '+str(x),(x,-1.60,-.42),(.17,.60,.24),bronze,.04,j)
-        s.cyl('Braccatian adjacent steel welding head',(.54,-1.30,-.32),.17,.50,grey,(0,1,0),j);s.beam('Braccatian welded head bracket',(.40,-1.28,-.42),(.54,-1.28,-.32),.18,.20,bronze,j);cycle(s,j,0,.14)
+        head=s.cyl('Braccatian adjacent steel welding head',(.54,-1.30,-.32),.17,.50,grey,(0,1,0),j);bore=s.cyl('Temporary welding bore',(.54,-1.50,-.32),.075,.40,grey,(0,1,0),j);s.cut(head,bore);s.ring('Braccatian welding nozzle rim',(.54,-1.57,-.32),.16,.075,.06,grey,(0,1,0),j);s.cyl('Braccatian recessed nozzle back',(.54,-1.285,-.32),.073,.03,grey,(0,1,0),j);s.beam('Braccatian welded head bracket',(.40,-1.28,-.42),(.54,-1.28,-.32),.18,.20,bronze,j);cycle(s,j,0,.14)
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--role',choices=['terraform','repair'],required=True);a=p.parse_args(sys.argv[sys.argv.index('--')+1:]);s=Ship(a.root.resolve(),'braccatian',a.role);braccatian(s,a.role)

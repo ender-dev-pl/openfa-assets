@@ -1,5 +1,6 @@
 {
   "issue": 265,
+  "revision": 2,
   "culture": "mauna",
   "role": "repair",
   "status": "proposed-assets-awaiting-mechanics",
@@ -9,13 +10,15 @@
   "blueprint_registered": false,
   "package_registered": false,
   "binaries": {
-    "blend": "1c2428e89f99b79c941fb2f87f0194542290c73a5c3bac4f888dbaf09fa3072b",
-    "glb": "eb170072731467c0d9cf16487d958b38f0b9700e434a4c7610ff01c4ff032fb5"
+    "blend": "869985a7d7d4eeb549d5626c68b1cc4aa45edcc03943f8f55d434ef21a2ec492",
+    "glb": "1cd6a1dd72312fa81a7c58073230221d50e137b8bc5ea73e2f89d2b699f6f9e3"
   },
   "author": "sources/tools/blender/proposals/author_mauna_engineering.py",
-  "author_sha256": "67647d8b711097c4466d6b0741b22312b11ccb7136312d02f3cf9263b376b465",
+  "author_sha256": "0363105613f679b53c2ecc7041f46ec48cd8dcb0430803069c757bee2ab1da9e",
   "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
   "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "refinement_helper": "sources/tools/blender/proposals/engineering_ship_refinement.py",
+  "refinement_helper_sha256": "1870515d9d565159d9162dd363be97510f69a65d429fec9d8b0af69e8704842c",
   "concept": {
     "culture": "mauna",
     "role": "repair",
@@ -40,22 +43,40 @@
     "runtime_integration": false,
     "mechanics_available": false
   },
-  "triangles": 5764,
-  "meshes": 31,
-  "materials": 4,
+  "triangles": 6048,
+  "triangle_budget": 40000,
+  "meshes": 42,
+  "materials": 7,
   "maps": {
-    "sources/materials/proposals/engineering-ships/mauna/blue-grey.png": "fdd9f816c3fdcd52df43bf8137e1a1e57531c2bc7e03754405707554632a00ab",
-    "sources/materials/proposals/engineering-ships/mauna/dark-recess.png": "0afe7bd94caff80cfac74c7f4ef46018537fa5a61cb4b9a3364d8c0af289b217",
-    "sources/materials/proposals/engineering-ships/mauna/matte-grey.png": "03b2304215d8b2d345896ab15327c030d5504703cce3d0e62dc7be0919a39032",
-    "sources/materials/proposals/engineering-ships/mauna/orange-mark.png": "b60e5049385299f9dcfe051c7fdfb90b080ef4a153d5af1cd101346fa0203aef"
+    "sources/materials/proposals/engineering-ships/mauna/abraded-tool-steel-normal.png": "2a303d39ea533ba0d2bf292d74f851519f27e751e806aedf5014ac2e800cf755",
+    "sources/materials/proposals/engineering-ships/mauna/abraded-tool-steel-orm.png": "5e33208e7a00782d9dc1a82e962e5439cc2e96b51bee00bc4fbe997d2d3110ed",
+    "sources/materials/proposals/engineering-ships/mauna/abraded-tool-steel.png": "503be20add52875240e05def71ee7de218560e9f641fe89bf6ce34c15f67f9b4",
+    "sources/materials/proposals/engineering-ships/mauna/blue-grey-normal.png": "6b9ee9f680430eb6d706606b47edb87bd1a76e7a58e57140478ffe1aca204d39",
+    "sources/materials/proposals/engineering-ships/mauna/blue-grey-orm.png": "911c938c243d64ede33c3a2e11fae095a9ed435f55a6e2bfa86dddb1d2e36326",
+    "sources/materials/proposals/engineering-ships/mauna/blue-grey.png": "9b40ce4af974cf60e7478f3a5730d5c66a5a264de5e57d2d5343fa85dc975fe2",
+    "sources/materials/proposals/engineering-ships/mauna/dark-recess-normal.png": "b8b2bd0ca512b6463674dccd6e2a70a28d754ced9e830b0f087549857ce0d9df",
+    "sources/materials/proposals/engineering-ships/mauna/dark-recess-orm.png": "b4ab192455d1ee89f94c7ef8c1acb40739c257940cfe8c7d153ab7eb8e583480",
+    "sources/materials/proposals/engineering-ships/mauna/dark-recess.png": "e17d6017540271571c676925647e9ad92be9c61b96232fd88af3eac3062db49e",
+    "sources/materials/proposals/engineering-ships/mauna/machined-alloy-normal.png": "75b4f517faff65399cd5dc912d0641321fb0f5bc4542e211e4d31dc6682a6f23",
+    "sources/materials/proposals/engineering-ships/mauna/machined-alloy-orm.png": "35b355e3f12cf77a0e118dcd565458bb86244b095035201ee8127252ff9f9f38",
+    "sources/materials/proposals/engineering-ships/mauna/machined-alloy.png": "64a21f635831ae5536f816d8bb0125c40a60212db5ab81ccda678db99fe2593f",
+    "sources/materials/proposals/engineering-ships/mauna/matte-grey-normal.png": "e7f8dc84b6b9c81dbd4524741b2547d3ba2f62f270c464ac08e1e102be8cca75",
+    "sources/materials/proposals/engineering-ships/mauna/matte-grey-orm.png": "4bbb6612e7e8bc2068d0632e50bc6de54485575cf93e111a0aa9136695e99cda",
+    "sources/materials/proposals/engineering-ships/mauna/matte-grey.png": "81ec0c6c9a59a9dc93ad15a9760b088551e81205606d1810185deb77964bb1bb",
+    "sources/materials/proposals/engineering-ships/mauna/orange-mark-normal.png": "a931c1afc5c9a412c5da6a543f1987781a18ebb4b7fc11eb32c49709bd0e2630",
+    "sources/materials/proposals/engineering-ships/mauna/orange-mark-orm.png": "33ad0e24257faef3b38f2462fce6ffb9d593ac3c4962cff96854e7df2ae933a3",
+    "sources/materials/proposals/engineering-ships/mauna/orange-mark.png": "13bc8bf0eabbbc28040a8c1cc66ec62e373bff5da6f0c53c8c28232b4c8b5563",
+    "sources/materials/proposals/engineering-ships/mauna/recess-seal-normal.png": "fa2ff4441d38042354e5a738af9475264ec5146d79eb1c2b36b2205455474953",
+    "sources/materials/proposals/engineering-ships/mauna/recess-seal-orm.png": "a1350f3db30aa92e38df47fa4796b59a2768b5759ad42fa2968d44fc6e3f9a21",
+    "sources/materials/proposals/engineering-ships/mauna/recess-seal.png": "dec948c18499ba3d5c1a9ee80d7ef32aff71bf0119463772384d07d1a51311bd"
   },
   "bounds": [
     -1.0390000343322754,
-    -1.649999976158142,
+    -1.658500075340271,
     -0.08499997854232788,
     1.0390000343322754,
     1.274999976158142,
-    1.5099999904632568
+    1.5190999507904053
   ],
   "joints": [
     "MaunaServiceSlide-1",
@@ -128,9 +149,10 @@
       ]
     }
   ],
-  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "scale": "Authored proposal units;not calibrated meters/cells or production/hangar clearance",
   "notes": [
     "Based on the selected supplied mauna concept;culture-specific hull,working tool and articulation.",
-    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added."
+    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.",
+    "Revision 2: defined hull planes,controlled edge radii,weighted surface normals,portable colour/ORM/tangent normal maps,material wear and attached mechanical detail."
   ]
 }

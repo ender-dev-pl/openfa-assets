@@ -1,5 +1,6 @@
 {
   "issue": 265,
+  "revision": 2,
   "culture": "achaean",
   "role": "repair",
   "status": "proposed-assets-awaiting-mechanics",
@@ -9,13 +10,15 @@
   "blueprint_registered": false,
   "package_registered": false,
   "binaries": {
-    "blend": "19f20130a3403dbc8329c9e57f60b49ef51d98d52105d39ddb17d89829928d8b",
-    "glb": "c277e018cb0be32766b1c0822acf9d8d0c42999f0301262d61aec25f6e5ca980"
+    "blend": "b4e437dcd021a74b37d39d779507eaa92f5ebd863efff978cb16ae6f5e05a073",
+    "glb": "9eec834a1e9f71488aa40a21a3a3770325246c5bfd7c7a3aed26bb74e7746075"
   },
   "author": "sources/tools/blender/proposals/author_achaean_engineering.py",
-  "author_sha256": "fce78ad92eb0c886ca87f9af05398aa79e99a965fde7ddc5f3b8f4650441eaff",
+  "author_sha256": "528f7db80e5619debe4552b1bca03c52d2a6e521bcfc91419734265a490f02d2",
   "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
   "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "refinement_helper": "sources/tools/blender/proposals/engineering_ship_refinement.py",
+  "refinement_helper_sha256": "1870515d9d565159d9162dd363be97510f69a65d429fec9d8b0af69e8704842c",
   "concept": {
     "culture": "achaean",
     "role": "repair",
@@ -40,22 +43,40 @@
     "runtime_integration": false,
     "mechanics_available": false
   },
-  "triangles": 5044,
-  "meshes": 19,
-  "materials": 4,
+  "triangles": 11184,
+  "triangle_budget": 40000,
+  "meshes": 27,
+  "materials": 7,
   "maps": {
-    "sources/materials/proposals/engineering-ships/achaean/copper-hull.png": "4fabbd69b725aaad1311e8d1633707e88e4dc9cb0173029597d184bb8e0d65ad",
-    "sources/materials/proposals/engineering-ships/achaean/dark-visor.png": "5f52dcbd0790ec9873ae9bdf60bd57098e8c0b61ffa822326c2dc90f2bd42cb6",
-    "sources/materials/proposals/engineering-ships/achaean/red-crescent.png": "f7220980107ebf5f76f668c1851ee8d7d2ec4b3ef0538f662d2e2a6fb8989d2d",
-    "sources/materials/proposals/engineering-ships/achaean/silver-rim.png": "d90ce301c6c6ad247c85241a8d3facb198db567f64dbd242dd87cebc50d29abe"
+    "sources/materials/proposals/engineering-ships/achaean/abraded-tool-steel-normal.png": "72c7482c0893d694126ec2ad51417e8cbd90b4e544e5d7dff442242421528058",
+    "sources/materials/proposals/engineering-ships/achaean/abraded-tool-steel-orm.png": "98b6d59589f86c5c4680fad5663f1ab2947cc89eeba267b9324bbec6e215cefd",
+    "sources/materials/proposals/engineering-ships/achaean/abraded-tool-steel.png": "332d1ce16b614bd89622a945c826a888900530379241756e7fa98ccf51ed962c",
+    "sources/materials/proposals/engineering-ships/achaean/copper-hull-normal.png": "847fac1d7c5228d741aa59e2911ee722b9db00b14346d4dfdc8fea7e4b1ea0e9",
+    "sources/materials/proposals/engineering-ships/achaean/copper-hull-orm.png": "55916b19d5299edec43dfcb6d9756af1011c6cbf805230d11dd9ee9e6d9446d2",
+    "sources/materials/proposals/engineering-ships/achaean/copper-hull.png": "41a17c32545c0d636614591b7f3331fb5c92083cd918a5bf7259b35033285a18",
+    "sources/materials/proposals/engineering-ships/achaean/dark-visor-normal.png": "114a2fa8ec0ac70cd7a34e4939573a751b7093c37ccca8b45b1c392e0bfa1d2a",
+    "sources/materials/proposals/engineering-ships/achaean/dark-visor-orm.png": "c776025c071de30493f88f8464d09063e5164114a9d69f2f8b46ab3354901de0",
+    "sources/materials/proposals/engineering-ships/achaean/dark-visor.png": "a81fd82aa1c7d820c8db7540881a67d4b1f66ddd8a35b17cea8f1a5038de82a0",
+    "sources/materials/proposals/engineering-ships/achaean/machined-alloy-normal.png": "5a06de32673da386508a5e9b07018754396baab5709d848c4cb271ac89cd2b95",
+    "sources/materials/proposals/engineering-ships/achaean/machined-alloy-orm.png": "25b8db45460c4e18e8737a134f9d2b90e61077d9b69442c57d56e12d0c1db856",
+    "sources/materials/proposals/engineering-ships/achaean/machined-alloy.png": "e124ee50377fe7b55344798cb13fe8abefbd66782eec12f39cf1b5ebbb1f7b7b",
+    "sources/materials/proposals/engineering-ships/achaean/recess-seal-normal.png": "9e34711cd93490611964e01a4bfaf8b4809a12154d614c756e20753190afee16",
+    "sources/materials/proposals/engineering-ships/achaean/recess-seal-orm.png": "f2c213a242312584677d34c0659ffb94965a5e5ad75e4070846fc77adf36379c",
+    "sources/materials/proposals/engineering-ships/achaean/recess-seal.png": "d1964b1ca4c612d19162553c425e9086082ed0b816cc8e6ce464686bfc68d20b",
+    "sources/materials/proposals/engineering-ships/achaean/red-crescent-normal.png": "9c731a81f0f340c0f27c451e4db4cd8c3c3f27e7b626ee7e914858a103e19e6f",
+    "sources/materials/proposals/engineering-ships/achaean/red-crescent-orm.png": "4a4402718293420578b3daf394dfbde91f8260b06976a8f876fe37f2402e1378",
+    "sources/materials/proposals/engineering-ships/achaean/red-crescent.png": "36d1ea4566fb153b7157d1b66019159e163e452f279eba8097c30e9e1c513156",
+    "sources/materials/proposals/engineering-ships/achaean/silver-rim-normal.png": "d1a508e8c7134bfa92acf8d5d05c65cc09a6fb8800ed73e83c8c4a6086fb8192",
+    "sources/materials/proposals/engineering-ships/achaean/silver-rim-orm.png": "d9c3115b63358d65ec4a83f49dfd392a327138a3c4cd4003906636fa2c200462",
+    "sources/materials/proposals/engineering-ships/achaean/silver-rim.png": "b62d7a0adec51144449ac825cdebf4681c808278f471dcdf24306346879380f4"
   },
   "bounds": [
-    -0.49719953536987305,
-    -1.8655998706817627,
+    -0.49720051884651184,
+    -1.8730798959732056,
     -0.5529532432556152,
-    0.5408405065536499,
-    1.628000020980835,
-    1.1175999641418457
+    0.5424348711967468,
+    1.6280021667480469,
+    1.1267259120941162
   ],
   "joints": [
     "CurvedServiceSupport"
@@ -100,9 +121,10 @@
       ]
     }
   ],
-  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "scale": "Authored proposal units;not calibrated meters/cells or production/hangar clearance",
   "notes": [
     "Based on selected supplied Achaean concepts;slender red/silver arches around a copper spindle.",
-    "Working crescent grader or rooted curved service support is animated. Rear/hidden engineering and scale are authored;no game mechanics,unit registration or integration."
+    "Working crescent grader or rooted curved service support is animated. Rear/hidden engineering and scale are authored;no game mechanics,unit registration or integration.",
+    "Revision 2: defined hull planes,controlled edge radii,weighted surface normals,portable colour/ORM/tangent normal maps,material wear and attached mechanical detail."
   ]
 }
