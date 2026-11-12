@@ -10,7 +10,7 @@ from urllib.parse import quote, unquote, urlsplit
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = ('index.html', 'ui.html', 'construction-animations.html')
+PAGES = ('index.html', 'ui.html', 'construction-animations.html', 'engineering-proposals.html')
 MAX_BYTES = 900 * 1024 * 1024
 
 

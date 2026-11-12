@@ -1,0 +1,135 @@
+{
+  "issue": 265,
+  "culture": "artemian",
+  "role": "repair",
+  "status": "proposed-assets-awaiting-mechanics",
+  "legacy_unit": false,
+  "runtime_integration": false,
+  "mechanics_available": false,
+  "blueprint_registered": false,
+  "package_registered": false,
+  "binaries": {
+    "blend": "dcba2475e9ea533d181b5f29a7a5e48f1c0d9c742e765c7b602e7a6033c2a71c",
+    "glb": "fa46f8ca28b43fa20f93cce71f99a25e53f71d1329f837dc2da98223c3b5de84"
+  },
+  "author": "sources/tools/blender/proposals/author_artemian_engineering.py",
+  "author_sha256": "f70f6f86beb552f724e2f30ce978503ae39fa5c70a93355c6097b61068b89280",
+  "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
+  "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "concept": {
+    "culture": "artemian",
+    "role": "repair",
+    "concept_version": "v2",
+    "image": "sources/artwork/proposals/engineering-ships/artemian/repair-ship.png",
+    "sha256": "863f528debf0e221c80c9ffe7d1cf2e1674a5c85b1440f3ed15f54386e877832",
+    "prompt": "Use case: stylized-concept. Create ONE NEW utility spacecraft for the OpenFA isometric RTS, as a simple practical reference for a 3D GAME UNIT. Both supplied images are actual existing 3D SHIPS OF THIS CULTURE from the gallery. Use their characteristic material finish, colour distribution, structural vocabulary and component integration. This should belong naturally beside them. Do not copy weapons or recreate either reference unit. Mechanisms for the new engineering role are authored OpenFA extensions.\nCritical design target: a clear compact game silhouette at 64-96 pixels wide; roughly 4-7 major masses, only a few moving parts and large quiet surfaces. Simple does not mean rounded toy. Keep the structural character of the supplied culture. Do not add miniature machinery, cabling, greebles, rivet fields, small vents everywhere, rails, ladders, antennas, cargo racks, light arrays, cockpit interiors or intricate ornament. Restrained game-render shading, big readable highlights; not a cinematic machinery illustration. No universal human construction-vehicle chassis, no compulsory twin side engine pods, no bronze nozzle rims unless present in the supplied faction references, no generic two front elbow-arms layout. Propulsion may be flush with the hull or integrated into supports.\nOne complete SPACECRAFT, isolated on perfectly pure black, elevated front three-quarter view showing its tool, all silhouette and tool extremities comfortably inside frame. Entire image is one individual deliverable, not a contact sheet. No terrain, floor, scenery, people, text, labels, logos, watermark, weapons, wheels, tracks, walking legs, smoke, sparks or fantastical floating parts. Subtle material-specific seam dirt, tool abrasion, a few edge scratches or small dents; preserve the faction's actual paint/alloy surface rather than applying uniform scratched grey metal to everything.\nARTEMIAN family: a very low continuous protected hull, broad SATIN SILVER ALLOY upper shell and green lower perimeter, minimal dark vent slots, as in the references. Metal reads as advanced alloy rather than random scratched grey paint; use broad calm satin reflections and slight seam wear. Eliminate separate cylindrical thruster gondoles, bronze pipes, little gold fittings and tractor cabs. No insect animal face, legs or organic shell. The outer shell is ONE dominant uninterrupted mass.\nSubject: REPAIR AND CONSTRUCTION-ASSIST SHIP. A smaller smooth flattened shield/oval hull in satin silver, with a muted green perimeter underframe and rear flush thrust slots. Two SHORT service tool tongues deploy directly from different sections of the forward rim, on flat recessed guides: one broad alignment pincer for holding building panels, one compact welding/fabrication head. Tools stay close to the body. No articulated elbow arms, no separate bronze hinges, no side thruster pods, no cockpit dome. A tiny dark sensor slit is part of the continuous shell. Simple protected integrated service craft.",
+    "references": [
+      {
+        "identity": "gallery/media/objects/artemian/gerla-kans-explorer/front-quarter.png",
+        "sha256": "25b666b67e7e320349eb3b6ee4b6d79fa336fc87147a77864561cb545647ec67",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      },
+      {
+        "identity": "gallery/media/objects/artemian/ultimate-mk-ii/front-quarter.png",
+        "sha256": "f5dbb86c96ca04c3611419a3779275fd63827afd9da31ed651395485db7ddc08",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      }
+    ],
+    "origin": "Supplied and selected ImageGen concept;no new generation performed by this modeling task",
+    "legacy_unit": false,
+    "runtime_integration": false,
+    "mechanics_available": false
+  },
+  "triangles": 5640,
+  "meshes": 22,
+  "materials": 3,
+  "maps": {
+    "sources/materials/proposals/engineering-ships/artemian/dark-slots.png": "29212ccbd7e62ed8f10ccac2b896de42a2dae227311d8bb17e2f84404c74955e",
+    "sources/materials/proposals/engineering-ships/artemian/deep-green.png": "8cd950b985ad7357b820b0c6a6a32b513b4d06c21530454d029df401d9f774f8",
+    "sources/materials/proposals/engineering-ships/artemian/silver-shell.png": "2f360824a4d241aa51bf719476b5f3af5af17dfb2fd75c5a8c0535b937a2ef36"
+  },
+  "bounds": [
+    -0.9155991077423096,
+    -1.7639998197555542,
+    -0.07979999482631683,
+    0.9155997037887573,
+    1.3523999452590942,
+    0.6803999543190002
+  ],
+  "joints": [
+    "DirectToolSlide-1",
+    "DirectToolSlide1"
+  ],
+  "clips": [
+    {
+      "name": "ToolOperation",
+      "fps": 24,
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 4,
+      "motion": [
+        {
+          "joint": "DirectToolSlide-1",
+          "path": "location",
+          "axis": 1,
+          "keys": [
+            [
+              1,
+              -1.2200000286102295
+            ],
+            [
+              25,
+              -1.1000000286102294
+            ],
+            [
+              49,
+              -1.2200000286102295
+            ],
+            [
+              73,
+              -1.2620000286102295
+            ],
+            [
+              97,
+              -1.2200000286102295
+            ]
+          ]
+        },
+        {
+          "joint": "DirectToolSlide1",
+          "path": "location",
+          "axis": 1,
+          "keys": [
+            [
+              1,
+              -1.2200000286102295
+            ],
+            [
+              25,
+              -1.1300000286102294
+            ],
+            [
+              49,
+              -1.2200000286102295
+            ],
+            [
+              73,
+              -1.2515000286102296
+            ],
+            [
+              97,
+              -1.2200000286102295
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "notes": [
+    "Based on the selected supplied artemian concept;culture-specific hull,working tool and articulation.",
+    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added."
+  ]
+}

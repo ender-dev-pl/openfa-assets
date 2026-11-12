@@ -1,0 +1,137 @@
+{
+  "issue": 265,
+  "culture": "mikotaj",
+  "role": "terraform",
+  "status": "proposed-assets-awaiting-mechanics",
+  "legacy_unit": false,
+  "runtime_integration": false,
+  "mechanics_available": false,
+  "blueprint_registered": false,
+  "package_registered": false,
+  "binaries": {
+    "blend": "bd3116f40a876373a00cc2b8cd5f943f51ee3fdd129463a2b61a822c9112afb8",
+    "glb": "f5c4f547784aed33e1b9aff12d7bbe501c23d3fe94ad8f1e422e3c6494bc78d6"
+  },
+  "author": "sources/tools/blender/proposals/author_mikotaj_engineering.py",
+  "author_sha256": "ab161f0e5d2bbb612a756da153616bfb14bfaa6cca5c7e305b4b26b9a68b3ea4",
+  "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
+  "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "concept": {
+    "culture": "mikotaj",
+    "role": "terraform",
+    "concept_version": "v2",
+    "image": "sources/artwork/proposals/engineering-ships/mikotaj/terraforming-ship.png",
+    "sha256": "e50eec2bd93aaa5a919e73ce71725776c9739b9ded6a8c94dbddb4184ebe23bc",
+    "prompt": "Use case: stylized-concept. Create ONE NEW utility spacecraft for the OpenFA isometric RTS, as a simple practical reference for a 3D GAME UNIT. Both supplied images are actual existing 3D SHIPS OF THIS CULTURE from the gallery. Use their characteristic material finish, colour distribution, structural vocabulary and component integration. This should belong naturally beside them. Do not copy weapons or recreate either reference unit. Mechanisms for the new engineering role are authored OpenFA extensions.\nCritical design target: a clear compact game silhouette at 64-96 pixels wide; roughly 4-7 major masses, only a few moving parts and large quiet surfaces. Simple does not mean rounded toy. Keep the structural character of the supplied culture. Do not add miniature machinery, cabling, greebles, rivet fields, small vents everywhere, rails, ladders, antennas, cargo racks, light arrays, cockpit interiors or intricate ornament. Restrained game-render shading, big readable highlights; not a cinematic machinery illustration. No universal human construction-vehicle chassis, no compulsory twin side engine pods, no bronze nozzle rims unless present in the supplied faction references, no generic two front elbow-arms layout. Propulsion may be flush with the hull or integrated into supports.\nOne complete SPACECRAFT, isolated on perfectly pure black, elevated front three-quarter view showing its tool, all silhouette and tool extremities comfortably inside frame. Entire image is one individual deliverable, not a contact sheet. No terrain, floor, scenery, people, text, labels, logos, watermark, weapons, wheels, tracks, walking legs, smoke, sparks or fantastical floating parts. Subtle material-specific seam dirt, tool abrasion, a few edge scratches or small dents; preserve the faction's actual paint/alloy surface rather than applying uniform scratched grey metal to everything.\nMIKOTAJ family from these SHIP references: blue/slate dense lenticular metallic nodes, slender muted green/teal structural rails and copper transverse connectors, small pale yellow focusing fittings; conspicuous open space between distributed masses. Use a sparse engineered structure, not a closed rounded service pod, not Terran engine pods, not biological flesh or crystalline fantasy. No human cockpit or windshield. The overall craft stays compact enough for gameplay; structural spans are stout enough to read at game size, with no fine lattice meshes.\nSubject: TERRAFORMING SHIP. A blue-metal flattened central focusing node supported BETWEEN TWO straight parallel green metallic rails. The rails extend a little forward and backward, with blunt ends, not pointed fighter blades. A single stout copper rear crossmember closes the back. Under the front half, one broad flat copper-and-dark-metal resonance grading plate bridges the rails and hangs just below them, with two broad downward work faces. This ONE obvious tool manipulates and levels asteroid rock; no cutting drums or construction-vehicle cab. Three small thrust recesses are integrated into the node and crossmember. Silhouette visibly has open gaps between node and rails. 5 major parts; no extra spheres or tentacles.",
+    "references": [
+      {
+        "identity": "gallery/media/objects/mikotaj/falari-lourn/front-quarter.png",
+        "sha256": "ad5c83d253fed6d468b0386810f121785d7ac0e04278afbdb456ff14dc3ee61f",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      },
+      {
+        "identity": "gallery/media/objects/mikotaj/ruth-strivakh/front-quarter.png",
+        "sha256": "655142f6884da12ce70b6c065710969d84d14fb6f8b9504916c33eedcd8d0303",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      }
+    ],
+    "origin": "Supplied and selected ImageGen concept;no new generation performed by this modeling task",
+    "legacy_unit": false,
+    "runtime_integration": false,
+    "mechanics_available": false
+  },
+  "triangles": 2388,
+  "meshes": 11,
+  "materials": 5,
+  "maps": {
+    "sources/materials/proposals/engineering-ships/mikotaj/blue-faceted-module.png": "1f0043e14e557cfaf1f662ace6fbce3a0d3cee682f245e3e66d9429f2e45371a",
+    "sources/materials/proposals/engineering-ships/mikotaj/copper-frame.png": "42b66114e5e297828e0e722b7a70d35d3361c6f6fb42e0ae3e7b09718c13b4c9",
+    "sources/materials/proposals/engineering-ships/mikotaj/dark-working-plate.png": "5b1d9f2d4d602af441de3f9d3d17315f4949387a42b2c51d28beae99fd346fd2",
+    "sources/materials/proposals/engineering-ships/mikotaj/gold-connector.png": "2ad1cdadadb7debaa51336367c98bd405f3c714064d00535ff8d5284ce669a53",
+    "sources/materials/proposals/engineering-ships/mikotaj/green-structure.png": "1256cb9592854c248e5bc492063eb63ac87ea98c968eea31d058a02e68ec7034"
+  },
+  "bounds": [
+    -0.949999988079071,
+    -2.1940245628356934,
+    -0.1599999964237213,
+    0.949999988079071,
+    1.625,
+    0.5
+  ],
+  "joints": [
+    "FrameWorkingPlate-1",
+    "FrameWorkingPlate1"
+  ],
+  "clips": [
+    {
+      "name": "ToolOperation",
+      "fps": 24,
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 4,
+      "motion": [
+        {
+          "joint": "FrameWorkingPlate-1",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0.0
+            ],
+            [
+              25,
+              0.18
+            ],
+            [
+              49,
+              0.0
+            ],
+            [
+              73,
+              -0.063
+            ],
+            [
+              97,
+              0.0
+            ]
+          ]
+        },
+        {
+          "joint": "FrameWorkingPlate1",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0.0
+            ],
+            [
+              25,
+              0.18
+            ],
+            [
+              49,
+              0.0
+            ],
+            [
+              73,
+              -0.063
+            ],
+            [
+              97,
+              0.0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "notes": [
+    "Based on the selected supplied mikotaj concept;culture-specific hull,working tool and articulation.",
+    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added."
+  ]
+}
