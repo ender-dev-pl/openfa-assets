@@ -1,0 +1,131 @@
+{
+  "issue": 232,
+  "scope": "Four mobile Rigellian ships only; Observatory excluded",
+  "reference_policy": "User hi-def images define target visible detail; original correctly paletted sprites constrain silhouette, colour-family recognition and heading. Hidden structures and materials remain authored interpretation. Reference pixels are never used as textures.",
+  "palette": [
+    {
+      "name": "slate-jade",
+      "srgb_hex": "#647F78",
+      "usage": "Main pressure hull and integrated plates"
+    },
+    {
+      "name": "pale-alloy",
+      "srgb_hex": "#9AACAB",
+      "usage": "Shoulders, frame edges and cockpit ribs"
+    },
+    {
+      "name": "copper",
+      "srgb_hex": "#A86543",
+      "usage": "Pods, heat shields and selected terminations"
+    },
+    {
+      "name": "ochre-gold",
+      "srgb_hex": "#B99B43",
+      "usage": "Research caps, restrained identity fields and trim"
+    },
+    {
+      "name": "graphite",
+      "srgb_hex": "#1F2A2B",
+      "usage": "Joints, deep equipment bays and recesses"
+    },
+    {
+      "name": "warm-light",
+      "srgb_hex": "#FFBF68",
+      "usage": "Small warm windows and service lamps"
+    },
+    {
+      "name": "drive-blue",
+      "srgb_hex": "#71BDD2",
+      "usage": "Restrained engine and optical accents"
+    }
+  ],
+  "ships": [
+    {
+      "slug": "lazzaro-research",
+      "id": "openfa:ship/rigellian/lazzaro-research",
+      "name": "Lazzaro Research",
+      "legacy_entry": "RI0A.256",
+      "legacy_source_sha256": "76c5978ea3f1b57d17a65bbcceb955fc931ae60f888f25110aabf322cd98dc39",
+      "legacy_role_class": 2,
+      "hi_def_reference": {
+        "user_attachment_order": 1,
+        "filename": "1000057611.png",
+        "sha256": "9ff827830385561e63a3425d6aac65200a1d3d81d5b28bba98b217ecf74e64b4"
+      },
+      "proposed_world_size": 28,
+      "authoring_length_units": 2.8,
+      "size_class": "small scout/research",
+      "current_game_size": 96,
+      "current_game_size_source": "ModelSceneResolver.ShipWorldSize fallback; no explicit override for these four ids",
+      "canonical_directory": "sources/objects/rigellian/lazzaro-research"
+    },
+    {
+      "slug": "delphini-assault",
+      "id": "openfa:ship/rigellian/delphini-assault",
+      "name": "Delphini Assault",
+      "legacy_entry": "RI1C.256",
+      "legacy_source_sha256": "b669740561e506e75e184af1d5c30a1a08908d22c5de213d75ba1a3b32398d1b",
+      "legacy_role_class": 3,
+      "hi_def_reference": {
+        "user_attachment_order": 2,
+        "filename": "1000057609.png",
+        "sha256": "7c77fc48a154908edc1e01b9c29233ef13f89fabd8550fd23146054f0efab166"
+      },
+      "proposed_world_size": 64,
+      "authoring_length_units": 6.4,
+      "size_class": "medium assault, Destructor role",
+      "current_game_size": 96,
+      "current_game_size_source": "ModelSceneResolver.ShipWorldSize fallback; no explicit override for these four ids",
+      "canonical_directory": "sources/objects/rigellian/delphini-assault"
+    },
+    {
+      "slug": "messier-lukannon",
+      "id": "openfa:ship/rigellian/messier-lukannon",
+      "name": "Messier-Lukannon",
+      "legacy_entry": "RI2C.256",
+      "legacy_source_sha256": "c568719331f1686f30f9be191b09dab0146d29b6501971f888049d031e27426a",
+      "legacy_role_class": 4,
+      "hi_def_reference": {
+        "user_attachment_order": 3,
+        "filename": "1000057608.png",
+        "sha256": "71ed52fb27ad089178621157d9483717f09056b1af735a05959f967334be3cbf"
+      },
+      "proposed_world_size": 96,
+      "authoring_length_units": 9.6,
+      "size_class": "heavier medium, Terminator role",
+      "current_game_size": 96,
+      "current_game_size_source": "ModelSceneResolver.ShipWorldSize fallback; no explicit override for these four ids",
+      "canonical_directory": "sources/objects/rigellian/messier-lukannon"
+    },
+    {
+      "slug": "transportation",
+      "id": "openfa:ship/rigellian/transportation",
+      "name": "Transportation",
+      "legacy_entry": "RI3C.256",
+      "legacy_source_sha256": "7bffcea7e9af1d5592e8652998ebb11401a252c9e715725008fc942c024dfe7b",
+      "legacy_role_class": 5,
+      "hi_def_reference": {
+        "user_attachment_order": 4,
+        "filename": "1000057607.png",
+        "sha256": "fa1edcd6d0202d60e49818811cd5f0db852a319ce05ecba8f265ab3435b1ea88"
+      },
+      "proposed_world_size": 180,
+      "authoring_length_units": 18.0,
+      "size_class": "large twin-module transport",
+      "current_game_size": 96,
+      "current_game_size_source": "ModelSceneResolver.ShipWorldSize fallback; no explicit override for these four ids",
+      "canonical_directory": "sources/objects/rigellian/transportation"
+    }
+  ],
+  "scale_policy": "One authoring unit represents ten proposed game world units for consistent cross-ship detailing. Proposed lengths are explicit authoring recommendations, not recovered metres or existing game overrides. Final comparison uses a single shared camera/scale. Keep actual bounding-box and normalization metadata.",
+  "detail_policy": "Lazzaro: readable cockpit, research equipment and four small pods. Delphini: reinforced hull, three visual weapon stations with uncalibrated attachment semantics. Messier: layered capsule, copper housings, distributed windows and four potential stations. Transportation: two substantial linked modules, cargo/service infrastructure and two possible stations. Window/maintenance feature size reflects unit class; avoid using the same enlarged cockpit on every hull.",
+  "quality_benchmark": "Refined IS0C Federal Transporter: workmanship, formed surfaces, readable service structures and portable worn materials. Do not copy its architecture or sphere segmentation.",
+  "user_refinement_correction": "Dense regular hull subdivision was explicitly rejected: neither legacy nor supplied hi-def references supports that grid. Use broad quiet skins; concentrate detailed geometry at functional interfaces, machinery and structural joins.",
+  "budgets": {
+    "max_triangles_per_ship": 110000,
+    "max_meshes_per_ship": 24,
+    "material_strategy": "One shared worn PBR atlas; distinct body panels and readable recesses, geometry batched by functional assembly.",
+    "maximum_atlas_dimension": 2048
+  },
+  "integration": "Exactly one canonical Blend/GLB per ship; replace superseded source/catalogue selections before PR completion; preserve historical evidence without distributing old model copies. Game progress/attachments/scale overrides require explicit main-thread integration and client acceptance."
+}

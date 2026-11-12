@@ -1,0 +1,35 @@
+{
+  "binaries": {
+    "blend": "eb94b918ff8248f60c8f7a4f84cdb592bc85ae7476b2dedfa75d70747c33068d",
+    "glb": "7ae89bd629fe6b8c4d690292b579200076f6b0aca346b7e48c61a16a98d19bc4"
+  },
+  "verifier": "sources/tools/blender/proposals/verify_rigellian_engineering_attachment.py",
+  "verifier_sha256": "83ed8bac554e9a35befcaeeaa6f0ca5d92fc0f90d49bcffc4feceab48e39390c",
+  "results": {
+    "blend": {
+      "maximum_surface_distance": 0.019920077174901962,
+      "frames": [
+        1,
+        13,
+        25,
+        49,
+        73,
+        97
+      ],
+      "lifted_panel_negative_control_rejected": true
+    },
+    "glb": {
+      "maximum_surface_distance": 0.019920077174901962,
+      "frames": [
+        1,
+        13,
+        25,
+        49,
+        73,
+        97
+      ],
+      "lifted_panel_negative_control_rejected": true
+    }
+  },
+  "scope": "Stationary broad skins inherit the actual hull transform and remain near the hull surface in native/imported models. This does not certify swept mechanism clearance."
+}

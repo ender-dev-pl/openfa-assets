@@ -1,299 +1,151 @@
 {
-  "issue": 265,
-  "canonical_models": [
-    "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
-    "sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.glb"
-  ],
+  "canonical_atlas": "sources/materials/rigellian-mobile-fleet/base-colour.png",
+  "canonical_atlas_sha256": "e337fec1b574b1393fcea26cf53a5d8456f83b7573043f6458b6f035bfa53f12",
+  "review": "Same authored hidef colour families;procedural wear differs. Per-role opaque/non-emissive PBR maps remain independently verified. This is measured pixel evidence,not a claim of identical texture treatment.",
   "materials": [
     {
       "material": "sage",
-      "canonical_model": "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
-      "canonical_model_sha256": "893489b3ff5b6a22ecf45ff059ffa63c3ef5700f91511bea0bd91069606bed24",
-      "canonical_material": "Delphini Assault | worn green hull",
-      "canonical_srgb_median_or_factor_converted": [
-        86.0,
-        132.0,
-        107.0
+      "engineering_map": "sources/materials/proposals/engineering-ships/rigellian/sage.png",
+      "sha256": "e6ec50adf2d3ae6bb51d5e0a91f7638fb896cfa90a6033abc0c41b0d2740e13f",
+      "engineering_median_srgb": [
+        100.0,
+        127.0,
+        120.0
       ],
-      "proposal_srgb_median": [
-        86.0,
-        132.0,
-        107.0
-      ],
-      "canonical_effective_orm": [
-        255.0,
-        136.0,
-        165.74999392032623
-      ],
-      "proposal_orm_median": [
-        255.0,
-        136.0,
-        166.0
-      ],
-      "path": "sources/materials/proposals/engineering-ships/rigellian/sage.png",
-      "sha256": "578bed04f7be9132cb0ab0ac2691e7c8c6b88012f8f0e5f7016682252e235b7b",
-      "orm_path": "sources/materials/proposals/engineering-ships/rigellian/sage-orm.png",
-      "orm_sha256": "1fb41d8af7f478db1f2be54060dbc483008cf80ffda2f64e255fc711166843d2",
-      "pbr_exact_within_quantization": true
-    },
-    {
-      "material": "gold",
-      "canonical_model": "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
-      "canonical_model_sha256": "893489b3ff5b6a22ecf45ff059ffa63c3ef5700f91511bea0bd91069606bed24",
-      "canonical_material": "RI1C | worn gold side fields",
-      "canonical_srgb_median_or_factor_converted": [
-        115.0,
-        87.0,
-        24.0
-      ],
-      "proposal_srgb_median": [
-        115.0,
-        87.0,
-        24.0
-      ],
-      "canonical_effective_orm": [
-        255.0,
-        136.0,
-        188.7000024318695
-      ],
-      "proposal_orm_median": [
-        255.0,
-        136.0,
-        189.0
-      ],
-      "path": "sources/materials/proposals/engineering-ships/rigellian/gold.png",
-      "sha256": "ce9fc3e57fb2927dff0ad574283ca73e95d624eed08f9d839b5a2a282aa49b1f",
-      "orm_path": "sources/materials/proposals/engineering-ships/rigellian/gold-orm.png",
-      "orm_sha256": "e0e3bbb705c7ba78a1176b32edf2f98f18544831bdbfaa1de086db4e6b0acbf0",
-      "pbr_exact_within_quantization": true
-    },
-    {
-      "material": "crown-gold",
-      "canonical_model": "sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.glb",
-      "canonical_model_sha256": "49966492503271a0aa839959b96d99f8dd79fe69335ea88bdd48cbfe0e5b518b",
-      "canonical_material": "RI0A | worn gold crown finish",
-      "canonical_srgb_median_or_factor_converted": [
-        122.0,
-        89.0,
-        27.0
-      ],
-      "proposal_srgb_median": [
-        122.0,
-        89.0,
-        27.0
-      ],
-      "canonical_effective_orm": [
-        255.0,
-        136.0,
-        188.7000024318695
-      ],
-      "proposal_orm_median": [
-        255.0,
-        136.0,
-        189.0
-      ],
-      "path": "sources/materials/proposals/engineering-ships/rigellian/crown-gold.png",
-      "sha256": "836b7adbc38d1a7103439d7476ed98941f22768b744971351eb95a9742c45485",
-      "orm_path": "sources/materials/proposals/engineering-ships/rigellian/crown-gold-orm.png",
-      "orm_sha256": "af759c9cf082333a1abcbf386229cc7e3ffdfa890e98ea2706acbc086de52f3a",
-      "pbr_exact_within_quantization": true
-    },
-    {
-      "material": "copper",
-      "canonical_model": "sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.glb",
-      "canonical_model_sha256": "49966492503271a0aa839959b96d99f8dd79fe69335ea88bdd48cbfe0e5b518b",
-      "canonical_material": "Lazzaro Research | aged bronze bands",
-      "canonical_srgb_median_or_factor_converted": [
-        146.0,
-        119.0,
-        77.0
-      ],
-      "proposal_srgb_median": [
-        146.0,
-        119.0,
-        77.0
-      ],
-      "canonical_effective_orm": [
-        255.0,
-        136.0,
-        188.7000024318695
-      ],
-      "proposal_orm_median": [
-        255.0,
-        136.0,
-        189.0
-      ],
-      "path": "sources/materials/proposals/engineering-ships/rigellian/copper.png",
-      "sha256": "5c1a2370494f0eece6078c6588fbb4c8b4584f6b7635378ac9133324f014781b",
-      "orm_path": "sources/materials/proposals/engineering-ships/rigellian/copper-orm.png",
-      "orm_sha256": "141766f46b40c7541897f51eb555ebd9d91a4bd04e2f463890030da980ceda9c",
-      "pbr_exact_within_quantization": true
-    },
-    {
-      "material": "slate-shell",
-      "canonical_model": "sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.glb",
-      "canonical_model_sha256": "49966492503271a0aa839959b96d99f8dd79fe69335ea88bdd48cbfe0e5b518b",
-      "canonical_material": "RI0A | worn slate lateral shells",
-      "canonical_srgb_median_or_factor_converted": [
-        69.0,
-        77.0,
-        87.0
-      ],
-      "proposal_srgb_median": [
-        69.0,
-        77.0,
-        87.0
-      ],
-      "canonical_effective_orm": [
-        255.0,
-        136.0,
-        165.74999392032623
-      ],
-      "proposal_orm_median": [
-        255.0,
-        136.0,
-        166.0
-      ],
-      "path": "sources/materials/proposals/engineering-ships/rigellian/slate-shell.png",
-      "sha256": "40c1692462631c0c63d32e3265e287e7c1410f6e8284d9c7748c7d67e534c0cc",
-      "orm_path": "sources/materials/proposals/engineering-ships/rigellian/slate-shell-orm.png",
-      "orm_sha256": "5c5b91192609d576e61a73987fab9742b9b28e0ace9fbf6837042c023a11f47a",
-      "pbr_exact_within_quantization": true
-    },
-    {
-      "material": "lower-slate",
-      "canonical_model": "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
-      "canonical_model_sha256": "893489b3ff5b6a22ecf45ff059ffa63c3ef5700f91511bea0bd91069606bed24",
-      "canonical_material": "RI1C | worn slate lower skin",
-      "canonical_srgb_median_or_factor_converted": [
-        31.0,
-        41.0,
-        52.0
-      ],
-      "proposal_srgb_median": [
-        31.0,
-        41.0,
-        52.0
-      ],
-      "canonical_effective_orm": [
-        255.0,
-        136.0,
-        165.74999392032623
-      ],
-      "proposal_orm_median": [
-        255.0,
-        136.0,
-        166.0
-      ],
-      "path": "sources/materials/proposals/engineering-ships/rigellian/lower-slate.png",
-      "sha256": "9b9a67aa653a4e77450467001bf326b9e5b46cb9f11396d24c5684bf7585a870",
-      "orm_path": "sources/materials/proposals/engineering-ships/rigellian/lower-slate-orm.png",
-      "orm_sha256": "a58d23eb2bf28c317e2eb80b8ad8e1c61db4f45b8fb04283926b69378662f7d6",
-      "pbr_exact_within_quantization": true
-    },
-    {
-      "material": "ventral-copper",
-      "canonical_model": "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
-      "canonical_model_sha256": "893489b3ff5b6a22ecf45ff059ffa63c3ef5700f91511bea0bd91069606bed24",
-      "canonical_material": "RI1C | aged copper lower casings",
-      "canonical_srgb_median_or_factor_converted": [
-        77.0,
-        37.0,
-        22.0
-      ],
-      "proposal_srgb_median": [
-        77.0,
-        37.0,
-        22.0
-      ],
-      "canonical_effective_orm": [
-        255.0,
-        136.0,
-        188.7000024318695
-      ],
-      "proposal_orm_median": [
-        255.0,
-        136.0,
-        189.0
-      ],
-      "path": "sources/materials/proposals/engineering-ships/rigellian/ventral-copper.png",
-      "sha256": "d8191ef10097b00faee61964aeb35364df211be8a16e55d45e5690ef84f15df2",
-      "orm_path": "sources/materials/proposals/engineering-ships/rigellian/ventral-copper-orm.png",
-      "orm_sha256": "097cce3aacdaec794a6811aa2fb83f910ccb222347876a294c3e2c453738888a",
-      "pbr_exact_within_quantization": true
+      "canonical_atlas_tile": 0,
+      "canonical_inner_tile_median_srgb": [
+        99.0,
+        126.0,
+        119.0
+      ]
     },
     {
       "material": "silver",
-      "canonical_model": "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
-      "canonical_model_sha256": "893489b3ff5b6a22ecf45ff059ffa63c3ef5700f91511bea0bd91069606bed24",
-      "canonical_material": "Delphini Assault | exposed titanium",
-      "canonical_srgb_median_or_factor_converted": [
-        146.5921075279768,
-        144.2607508000882,
-        153.31706620055996
+      "engineering_map": "sources/materials/proposals/engineering-ships/rigellian/silver.png",
+      "sha256": "6ff7add98c4aba52eba231286221c5f59270705e8a85a297fe38a02c3b406d3b",
+      "engineering_median_srgb": [
+        154.0,
+        172.0,
+        171.0
       ],
-      "proposal_srgb_median": [
-        146.0,
-        144.0,
-        153.0
+      "canonical_atlas_tile": 1,
+      "canonical_inner_tile_median_srgb": [
+        152.0,
+        170.0,
+        169.0
+      ]
+    },
+    {
+      "material": "copper",
+      "engineering_map": "sources/materials/proposals/engineering-ships/rigellian/copper.png",
+      "sha256": "4ee521cf9bbaf2f36d804b38d7e3268d3fec3c6999fa59f1acbb0af6e822f8d0",
+      "engineering_median_srgb": [
+        168.0,
+        101.0,
+        67.0
       ],
-      "canonical_effective_orm": [
-        255.0,
-        124.9500024318695,
-        198.89999270439148
+      "canonical_atlas_tile": 2,
+      "canonical_inner_tile_median_srgb": [
+        167.0,
+        100.0,
+        67.0
+      ]
+    },
+    {
+      "material": "gold",
+      "engineering_map": "sources/materials/proposals/engineering-ships/rigellian/gold.png",
+      "sha256": "cec8b29e4983306285b268b8d5574d160ca677557061b2916ff046912c53ae7d",
+      "engineering_median_srgb": [
+        185.0,
+        155.0,
+        67.0
       ],
-      "proposal_orm_median": [
-        255.0,
-        125.0,
-        199.0
+      "canonical_atlas_tile": 3,
+      "canonical_inner_tile_median_srgb": [
+        183.0,
+        154.0,
+        66.0
+      ]
+    },
+    {
+      "material": "crown-gold",
+      "engineering_map": "sources/materials/proposals/engineering-ships/rigellian/crown-gold.png",
+      "sha256": "314b0371997739fcfd99898d4145c05637117afad9814ce657142eebc3b8fa85",
+      "engineering_median_srgb": [
+        185.0,
+        155.0,
+        67.0
       ],
-      "path": "sources/materials/proposals/engineering-ships/rigellian/silver.png",
-      "sha256": "45881c70bbb77d5a557e9f7833c79e0a6e1be92022b68873f7fe33697a20c05c",
-      "orm_path": "sources/materials/proposals/engineering-ships/rigellian/silver-orm.png",
-      "orm_sha256": "a7ae4626c330667332404a33f68fc10abc1bc111b989d58e4d73a1eb9c3df264",
-      "pbr_exact_within_quantization": true
+      "canonical_atlas_tile": 3,
+      "canonical_inner_tile_median_srgb": [
+        183.0,
+        154.0,
+        66.0
+      ]
+    },
+    {
+      "material": "slate-shell",
+      "engineering_map": "sources/materials/proposals/engineering-ships/rigellian/slate-shell.png",
+      "sha256": "ad691b9ddd66d5d587c0f9d0241706a7a15238aa0c0dd0d68c14895427c53075",
+      "engineering_median_srgb": [
+        100.0,
+        127.0,
+        120.0
+      ],
+      "canonical_atlas_tile": 0,
+      "canonical_inner_tile_median_srgb": [
+        99.0,
+        126.0,
+        119.0
+      ]
     },
     {
       "material": "recess",
-      "canonical_model": "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
-      "canonical_model_sha256": "893489b3ff5b6a22ecf45ff059ffa63c3ef5700f91511bea0bd91069606bed24",
-      "canonical_material": "Delphini Assault | soot graphite",
-      "canonical_srgb_median_or_factor_converted": [
-        28.57910968966877,
-        30.02396488124922,
-        35.23333187868154
+      "engineering_map": "sources/materials/proposals/engineering-ships/rigellian/recess.png",
+      "sha256": "83d7781c4595fd00bef6ce824afa08d4bfbbad9bff9e3e8c02162f6a9b425da4",
+      "engineering_median_srgb": [
+        31.0,
+        42.0,
+        43.0
       ],
-      "proposal_srgb_median": [
-        29.0,
-        30.0,
-        35.0
-      ],
-      "canonical_effective_orm": [
-        255.0,
-        193.7999975681305,
-        114.74999696016312
-      ],
-      "proposal_orm_median": [
-        255.0,
-        179.0,
-        102.0
-      ],
-      "path": "sources/materials/proposals/engineering-ships/rigellian/recess.png",
-      "sha256": "5caa0ac4f1efd9ecfe1b38639d86638fe33185c6a6801ef9178869de457e15fb",
-      "orm_path": "sources/materials/proposals/engineering-ships/rigellian/recess-orm.png",
-      "orm_sha256": "c10c0a82439aea6f2544c980c1affa1e81c2e8db26dcb4d6ebdc4c0974ab1353",
-      "pbr_exact_within_quantization": false
-    }
-  ],
-  "binaries": {
-    "terraform": {
-      "blend": "d06d078540880a91feb0a9dfe59576ab4ebc8d0808254d57a7e28da66b05e6da",
-      "glb": "9abac90f7cdf168ca3339c2f600101b1132b95e66fce13de52982c3e9b55d6db"
+      "canonical_atlas_tile": 4,
+      "canonical_inner_tile_median_srgb": [
+        31.0,
+        41.0,
+        42.0
+      ]
     },
-    "repair": {
-      "blend": "565596fe779553000b10a24f0868d7e7dbdb4b9fc72d0061c1e9685d8487a27e",
-      "glb": "9362d783eb2fa8a9ce94254349c762991ced99f9370d2f928310a10a55ae8591"
+    {
+      "material": "lower-slate",
+      "engineering_map": "sources/materials/proposals/engineering-ships/rigellian/lower-slate.png",
+      "sha256": "64c8dc0979fbc32eb39ec7446269922eea1576fb315ca1c43d82ec94bea61ead",
+      "engineering_median_srgb": [
+        54.0,
+        69.0,
+        72.0
+      ],
+      "canonical_atlas_tile": 14,
+      "canonical_inner_tile_median_srgb": [
+        54.0,
+        68.0,
+        71.0
+      ]
+    },
+    {
+      "material": "ventral-copper",
+      "engineering_map": "sources/materials/proposals/engineering-ships/rigellian/ventral-copper.png",
+      "sha256": "6123b64a714b0bc8d21783ea2f19d586e0abe6ac4ba3e893c3d6b5a309a76757",
+      "engineering_median_srgb": [
+        141.0,
+        86.0,
+        59.0
+      ],
+      "canonical_atlas_tile": 12,
+      "canonical_inner_tile_median_srgb": [
+        140.0,
+        85.0,
+        58.0
+      ]
     }
-  },
-  "limits": "Measured colour/effective PBR medians;wear is authored separately. Graphite PBR remains approximate;user artistic acceptance pending."
+  ]
 }

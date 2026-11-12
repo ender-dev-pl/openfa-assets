@@ -130,7 +130,7 @@
       "culture": "rigellian",
       "comparison": {
         "path": "gallery/media/proposals/engineering-ships/rigellian/final-fleet-comparison.png",
-        "sha256": "5cbc1bb1935a044025197f274dbb38cb2c910a6461579261067322184576400a"
+        "sha256": "7a260e50fe520da178c559259a5ccab35700519b092413aa718748074d521d3a"
       },
       "units": [
         {
@@ -139,8 +139,8 @@
           "status": "engineering proposal",
           "model": "sources/proposals/engineering-ships/rigellian/terraform/model.glb",
           "image": "gallery/media/proposals/engineering-ships/rigellian/terraform/imported-front-quarter.png",
-          "model_sha256": "9abac90f7cdf168ca3339c2f600101b1132b95e66fce13de52982c3e9b55d6db",
-          "image_sha256": "dfdd09d7a1e6b364a809e41f772a0ae179b66b5f3d27aef049d4182fbb5a426c"
+          "model_sha256": "50e63b1542cfc8553237641d8a4bebabb693ef920d1bced1c0b615e4f5e0e4e6",
+          "image_sha256": "113317ba3b919c1edcc50952d24303bbc50e10ff3789437e5b24b71acadb735c"
         },
         {
           "name": "Repair Ship",
@@ -148,20 +148,20 @@
           "status": "engineering proposal",
           "model": "sources/proposals/engineering-ships/rigellian/repair/model.glb",
           "image": "gallery/media/proposals/engineering-ships/rigellian/repair/imported-front-quarter.png",
-          "model_sha256": "9362d783eb2fa8a9ce94254349c762991ced99f9370d2f928310a10a55ae8591",
-          "image_sha256": "9c8226f9ee1d4350cf6f20de6f316a734a9836795f3ce2f2184ddacccd9d9bb6"
+          "model_sha256": "7ae89bd629fe6b8c4d690292b579200076f6b0aca346b7e48c61a16a98d19bc4",
+          "image_sha256": "eb474b7f33f04803a43bd19d32d234cb475aa6e9a2abedd15c1e969aa4331567"
         },
         {
           "name": "Delphini Assault",
           "role": "small combat/craft reference",
           "status": "current catalogue",
           "catalogue_id": "openfa:ship/rigellian/delphini-assault",
-          "stage": "visible-section-refinement",
-          "model": "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
+          "stage": "hi-def-broad-skin-refinement",
+          "model": "sources/objects/rigellian/delphini-assault/model.glb",
           "image": "gallery/media/proposals/engineering-ships/rigellian/canonical-references/delphini-assault-front-quarter.png",
-          "model_sha256": "893489b3ff5b6a22ecf45ff059ffa63c3ef5700f91511bea0bd91069606bed24",
-          "image_sha256": "9922dc55b3cc1a1af168074e0f8c38cc86f09a1e1c7918bc5ca48def16f7a7c4",
-          "catalogue_image": "gallery/media/docs/assets/reconstruction/rigellian-refined/delphini-assault/front-quarter.png",
+          "model_sha256": "c53348af89975c6a16059cc3a1c46575754d94b932d3645f447147ad0fdec91c",
+          "image_sha256": "c4d5c373068f82d5cdb780f0816e95f877a2c5a00f4fd69eb1ad39a7aaf40be1",
+          "catalogue_image": "gallery/media/objects/rigellian/delphini-assault/front-quarter.png",
           "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
         },
         {
@@ -169,12 +169,12 @@
           "role": "small scout/research reference",
           "status": "current catalogue",
           "catalogue_id": "openfa:ship/rigellian/lazzaro-research",
-          "stage": "visible-form-refinement",
-          "model": "sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.glb",
+          "stage": "hi-def-broad-skin-refinement",
+          "model": "sources/objects/rigellian/lazzaro-research/model.glb",
           "image": "gallery/media/proposals/engineering-ships/rigellian/canonical-references/lazzaro-research-front-quarter.png",
-          "model_sha256": "49966492503271a0aa839959b96d99f8dd79fe69335ea88bdd48cbfe0e5b518b",
-          "image_sha256": "67d64907dd4e5f4684e8eeb12957cb0153b206e2e2fca4d91a6f9dc11a2c3f33",
-          "catalogue_image": "gallery/media/docs/assets/reconstruction/rigellian-refined/lazzaro-research/front-quarter.png",
+          "model_sha256": "d3c574f8aa3545f8e01bf35a9c2576d8aa4f1090aee7fd750ac1d02c2d6b65ab",
+          "image_sha256": "6e087d0094f67e773b1c9edad7432f2fcda7afe9b96927f508460702952874f2",
+          "catalogue_image": "gallery/media/objects/rigellian/lazzaro-research/front-quarter.png",
           "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
         }
       ],
@@ -183,67 +183,79 @@
           "role": "terraform",
           "model": "sources/proposals/engineering-ships/rigellian/terraform/model.glb",
           "binaries": {
-            "blend": "d06d078540880a91feb0a9dfe59576ab4ebc8d0808254d57a7e28da66b05e6da",
-            "glb": "9abac90f7cdf168ca3339c2f600101b1132b95e66fce13de52982c3e9b55d6db"
+            "blend": "9798a55d80d3742c6600c19728c66d5045d60be3afd95a4900d83ded3f10e2d3",
+            "glb": "50e63b1542cfc8553237641d8a4bebabb693ef920d1bced1c0b615e4f5e0e4e6"
           },
-          "triangles": 26140,
+          "triangles": 25696,
           "channels": 2,
-          "cycles_used": 1,
-          "cycles_remaining": 2,
+          "cycles_used": 3,
+          "cycles_remaining": 0,
           "history": {
             "path": "sources/proposals/engineering-ships/rigellian/terraform/style-refinement.json",
-            "sha256": "d520745f461cfb24da7511d87678fa7aa949448d03f4f2d3a3b4302e1873f12c"
+            "sha256": "05d3715be4ec5843ec9149f4a9fba18f0e3c0b9bf65ea944876f72104ef1a01e"
           },
           "runtime": {
             "path": "sources/proposals/engineering-ships/rigellian/terraform/runtime-review.json",
-            "sha256": "3dbb6643058490afb3faff2be6d3c7609efcd17afb1e95fdec6912d6a8667308"
+            "sha256": "9cae2224d3ae1cb74a9214364430233eeb67ff281c71f4ec5373c4f1114215cf"
           },
           "visual": {
             "path": "sources/proposals/engineering-ships/rigellian/terraform/visual-review.json",
-            "sha256": "52dfde5181e68923ef96404ecf4a152ccfad8c05bbd29b13a3bfc26963566345"
+            "sha256": "e53e606886aef12fc1f3e29e718ec3b42c4ef2104f4598488456a885547f97f4"
           },
           "video": {
             "path": "sources/proposals/engineering-ships/rigellian/terraform/video-review.json",
-            "sha256": "b83c68cd4ecebe9b9a430646d764472df9375d42cce410f27ee007d7f07c338c"
-          }
+            "sha256": "ddad7822d731509d2b0c2bea0c9d6c7dbbacaab7986f9f2cbba68f52e7dca034"
+          },
+          "additional_user_requested_defect_repair_exports": 1,
+          "attachment": {
+            "path": "sources/proposals/engineering-ships/rigellian/terraform/attachment-review.json",
+            "sha256": "7835ec50d2477afc8caf1d83ed612b6ffbd2919894adf81d53026026377dd0d9"
+          },
+          "additional_user_requested_correction_exports": 2
         },
         {
           "role": "repair",
           "model": "sources/proposals/engineering-ships/rigellian/repair/model.glb",
           "binaries": {
-            "blend": "565596fe779553000b10a24f0868d7e7dbdb4b9fc72d0061c1e9685d8487a27e",
-            "glb": "9362d783eb2fa8a9ce94254349c762991ced99f9370d2f928310a10a55ae8591"
+            "blend": "eb94b918ff8248f60c8f7a4f84cdb592bc85ae7476b2dedfa75d70747c33068d",
+            "glb": "7ae89bd629fe6b8c4d690292b579200076f6b0aca346b7e48c61a16a98d19bc4"
           },
-          "triangles": 37804,
+          "triangles": 37840,
           "channels": 6,
-          "cycles_used": 1,
-          "cycles_remaining": 2,
+          "cycles_used": 3,
+          "cycles_remaining": 0,
           "history": {
             "path": "sources/proposals/engineering-ships/rigellian/repair/style-refinement.json",
-            "sha256": "d99723c82bac5f20f3e41869e13b898b2b064e3b85252713f7b58b141e8b9158"
+            "sha256": "dd11d596c49092b3728135b502d986426beb0c5a4eba7154288d5e092409de7b"
           },
           "runtime": {
             "path": "sources/proposals/engineering-ships/rigellian/repair/runtime-review.json",
-            "sha256": "b74751607d2f8d50d48245374620e612ec3bc9b9fb709fd8f8ac7d4ec945dca9"
+            "sha256": "e345bef50c8dbd13fe0cf9f926e47756869f68f50b209e706419bc60c04e64b2"
           },
           "visual": {
             "path": "sources/proposals/engineering-ships/rigellian/repair/visual-review.json",
-            "sha256": "3a984960ee2dbb5e235d68185e13fc68bbae37385b45a8ec7c939eaeadf0d468"
+            "sha256": "f51f4029f8f6bfb5a260f05a4fbd6d92076ebbe00f17a0d145d9a95deb02beac"
           },
           "video": {
             "path": "sources/proposals/engineering-ships/rigellian/repair/video-review.json",
-            "sha256": "caeaad76988140517763ba8336a5a7b195431fbaad628ac8e14304e60ea580ce"
-          }
+            "sha256": "eeb88acd7b7f0a1b651086087956fed203ab430785ff9b3c5edbbb82d89596f5"
+          },
+          "additional_user_requested_defect_repair_exports": 1,
+          "attachment": {
+            "path": "sources/proposals/engineering-ships/rigellian/repair/attachment-review.json",
+            "sha256": "1878b87c898af404530ef3f0ce68db614762e1abbd6140ee7a69271fd9636381"
+          },
+          "additional_user_requested_correction_exports": 2
         }
       ],
       "visual_status": "author-reviewed",
       "visual_observations": [
-        "Green oval shells,gold upper fields/crowns and slate/bronze gondolas repeat the current Delphini/Lazzaro rounded family. Metal tool chains remain visually distinct."
+        "Corrected hidef slate-jade,pale alloy,ochre and copper finishes replace the previous reference selection. Service hatches,louvres,quiet formed skins and supported manipulators form one construction family.",
+        "The user-reported displaced panels are repaired in body-local coordinates. Actual native/imported surface checks and deliberate lifted-panel negative controls pass."
       ],
       "remaining_characteristics": [
-        "The utility carriers are wider than Delphini and add working pads/arms. Graphite roughness/metalness remain the documented small approximation.",
-        "Independent fitting does not establish physical game scale.",
-        "User artistic acceptance remains separate."
+        "Utility hull proportions and tools remain function-specific;independent framing is not game scale.",
+        "Game integration and user artistic acceptance remain separate."
       ]
     },
     {
@@ -849,11 +861,11 @@
   ],
   "overview": {
     "path": "gallery/media/proposals/engineering-ships/canonical-style-overview.png",
-    "sha256": "c1fb29a492ddeb145176d646d9b28b76d99d49566c54eb61eeb2b47cab491d09"
+    "sha256": "8804818a0c62304d51e059f1607c4bfb74333c80347082aa0c6fb59ba194f639"
   },
   "comparison_manifest": {
     "path": "gallery/engineering-style-comparison.json",
-    "sha256": "fb1fe8df4f93770f8df3a0322a43622d70a1bf5ec3b8d31f2189dd29b34bf2f2"
+    "sha256": "bdd5e828e0edd1aac228bc44eb9b021f463116b19cc5c653ea75fb8274540499"
   },
   "models_reviewed": 14,
   "final_user_artistic_acceptance": false,
@@ -861,16 +873,21 @@
   "limits": [
     "These are new engineering proposals,not recovered legacy units.",
     "User artistic acceptance,physical game scale,platform profiling,continuous swept clearance and gameplay integration are separate.",
-    "Every actual generator attempt is retained,including failed checks. No fourth attempt was run."
+    "Three planned Rigellian style cycles plus user-requested attachment repair and curved copper-patch correction are explicitly recorded. Other culture histories are unchanged."
   ],
   "triangle_range": [
     3830,
-    37804
+    37840
   ],
   "repair_wing_symmetry": {
     "path": "sources/proposals/engineering-ships/achaean/repair/wing-symmetry-review.json",
     "sha256": "641d6d3c34491c1ba8557bd004a8e0f547363a51db2935bd62f45d6054351761"
   },
-  "canonical_models_and_runtime_catalogues_unchanged_from": "af7c385de5b1ddb599d1212ee8ce234660ad2690",
-  "mikotaj_final_reference_update": "Canonical references only;both engineering GLBs and generators are unchanged from the three-cycle milestone."
+  "mikotaj_final_reference_update": "Canonical references only;both engineering GLBs and generators are unchanged from the three-cycle milestone.",
+  "previous_engineering_only_pass_canonical_baseline": "af7c385de5b1ddb599d1212ee8ce234660ad2690",
+  "authorized_rigellian_canonical_followup": {
+    "branch": "feat/rigellian-mobile-ships-hidef",
+    "issue": 232,
+    "scope": "User-authorized merge and legacy alignment of four canonical Rigellian hulls;engineering proposals aligned in the shared worktree."
+  }
 }

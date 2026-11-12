@@ -6,65 +6,49 @@
 
 `openfa:ship/rigellian/lazzaro-research`
 
-**First available iteration — initial-reference-study**
+**First available iteration — hi-def-broad-skin-refinement**
 
-![Lazzaro Research](../gallery/media/docs/assets/reconstruction/ships/rigellian/lazzaro-research/front-quarter.png)
+![Lazzaro Research](../gallery/media/objects/rigellian/lazzaro-research/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/rigellian/lazzaro-research/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/lazzaro-research/model.glb)
+[Blend](../sources/objects/rigellian/lazzaro-research/model.blend) · [GLB](../sources/objects/rigellian/lazzaro-research/model.glb)
 
-**Additional iteration — visible-form-refinement**
-
-![Lazzaro Research](../gallery/media/docs/assets/reconstruction/rigellian-refined/lazzaro-research/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.glb)
+Additional views: [Front quarter](../gallery/media/objects/rigellian/lazzaro-research/front-quarter.png) · [Rear quarter](../gallery/media/objects/rigellian/lazzaro-research/rear-quarter.png) · [Top](../gallery/media/objects/rigellian/lazzaro-research/top.png) · [Underside](../gallery/media/objects/rigellian/lazzaro-research/underside.png) · [Saved native reopen](../gallery/media/objects/rigellian/lazzaro-research/verified-native.png) · [Independent GLB import](../gallery/media/objects/rigellian/lazzaro-research/verified-imported.png) · [Fleet: proposed sizes, common top camera](../gallery/media/objects/rigellian/fleet/shared-scale-top.png) · [Fleet: proposed sizes, common oblique camera](../gallery/media/objects/rigellian/fleet/shared-scale-oblique.png)
 
 ## Delphini Assault
 
 `openfa:ship/rigellian/delphini-assault`
 
-**First available iteration — initial-reference-study**
+**First available iteration — hi-def-broad-skin-refinement**
 
-![Delphini Assault](../gallery/media/docs/assets/reconstruction/ships/rigellian/delphini-assault/front-quarter.png)
+![Delphini Assault](../gallery/media/objects/rigellian/delphini-assault/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/rigellian/delphini-assault/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/delphini-assault/model.glb)
+[Blend](../sources/objects/rigellian/delphini-assault/model.blend) · [GLB](../sources/objects/rigellian/delphini-assault/model.glb)
 
-**Additional iteration — visible-section-refinement**
-
-![Delphini Assault](../gallery/media/docs/assets/reconstruction/rigellian-refined/delphini-assault/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb)
+Additional views: [Front quarter](../gallery/media/objects/rigellian/delphini-assault/front-quarter.png) · [Rear quarter](../gallery/media/objects/rigellian/delphini-assault/rear-quarter.png) · [Top](../gallery/media/objects/rigellian/delphini-assault/top.png) · [Underside](../gallery/media/objects/rigellian/delphini-assault/underside.png) · [Saved native reopen](../gallery/media/objects/rigellian/delphini-assault/verified-native.png) · [Independent GLB import](../gallery/media/objects/rigellian/delphini-assault/verified-imported.png) · [Fleet: proposed sizes, common top camera](../gallery/media/objects/rigellian/fleet/shared-scale-top.png) · [Fleet: proposed sizes, common oblique camera](../gallery/media/objects/rigellian/fleet/shared-scale-oblique.png)
 
 ## Messier-Lukannon
 
 `openfa:ship/rigellian/messier-lukannon`
 
-**First available iteration — initial-reference-study**
+**First available iteration — hi-def-broad-skin-refinement**
 
-![Messier-Lukannon](../gallery/media/docs/assets/reconstruction/ships/rigellian/messier-lukannon/front-quarter.png)
+![Messier-Lukannon](../gallery/media/objects/rigellian/messier-lukannon/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/rigellian/messier-lukannon/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/messier-lukannon/model.glb)
+[Blend](../sources/objects/rigellian/messier-lukannon/model.blend) · [GLB](../sources/objects/rigellian/messier-lukannon/model.glb)
 
-**Additional iteration — visible-section-refinement**
-
-![Messier-Lukannon](../gallery/media/docs/assets/reconstruction/rigellian-refined/messier-lukannon/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/messier-lukannon/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/messier-lukannon/model.glb)
+Additional views: [Front quarter](../gallery/media/objects/rigellian/messier-lukannon/front-quarter.png) · [Rear quarter](../gallery/media/objects/rigellian/messier-lukannon/rear-quarter.png) · [Top](../gallery/media/objects/rigellian/messier-lukannon/top.png) · [Underside](../gallery/media/objects/rigellian/messier-lukannon/underside.png) · [Saved native reopen](../gallery/media/objects/rigellian/messier-lukannon/verified-native.png) · [Independent GLB import](../gallery/media/objects/rigellian/messier-lukannon/verified-imported.png) · [Fleet: proposed sizes, common top camera](../gallery/media/objects/rigellian/fleet/shared-scale-top.png) · [Fleet: proposed sizes, common oblique camera](../gallery/media/objects/rigellian/fleet/shared-scale-oblique.png)
 
 ## Transportation
 
 `openfa:ship/rigellian/transportation`
 
-**First available iteration — initial-reference-study**
+**First available iteration — hi-def-broad-skin-refinement**
 
-![Transportation](../gallery/media/docs/assets/reconstruction/ships/rigellian/transportation/front-quarter.png)
+![Transportation](../gallery/media/objects/rigellian/transportation/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/ships/rigellian/transportation/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/transportation/model.glb)
+[Blend](../sources/objects/rigellian/transportation/model.blend) · [GLB](../sources/objects/rigellian/transportation/model.glb)
 
-**Additional iteration — body-section-refinement**
-
-![Transportation](../gallery/media/docs/assets/reconstruction/rigellian-refined/transportation/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/transportation/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/transportation/model.glb)
+Additional views: [Front quarter](../gallery/media/objects/rigellian/transportation/front-quarter.png) · [Rear quarter](../gallery/media/objects/rigellian/transportation/rear-quarter.png) · [Top](../gallery/media/objects/rigellian/transportation/top.png) · [Underside](../gallery/media/objects/rigellian/transportation/underside.png) · [Saved native reopen](../gallery/media/objects/rigellian/transportation/verified-native.png) · [Independent GLB import](../gallery/media/objects/rigellian/transportation/verified-imported.png) · [Fleet: proposed sizes, common top camera](../gallery/media/objects/rigellian/fleet/shared-scale-top.png) · [Fleet: proposed sizes, common oblique camera](../gallery/media/objects/rigellian/fleet/shared-scale-oblique.png)
 
 ## Observatory
 

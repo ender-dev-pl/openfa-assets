@@ -40557,28 +40557,56 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/rigellian/lazzaro-research/model.blend",
+          "stage": "hi-def-broad-skin-refinement",
+          "blend": "objects/rigellian/lazzaro-research/model.blend",
           "present": true,
-          "sha256": "e5c8e40c9d15a0c0f48786418647e52d7072b844b43b0f267a43e905d43eb54b",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "visible-form-refinement",
-          "blend": "docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.blend",
-          "present": true,
-          "sha256": "22321941f9e85cb16f66a5826d092dff196b5ab697d59b3500c24d3326c9b659",
-          "final_visual_acceptance": "not-established"
+          "sha256": "48f85865580066ae0a6909fb5c976679dcf02cd37db015d0388a5c7da05364db",
+          "media": "gallery/media/objects/rigellian/lazzaro-research",
+          "views": [
+            {
+              "label": "Front quarter",
+              "image": "gallery/media/objects/rigellian/lazzaro-research/front-quarter.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/rigellian/lazzaro-research/rear-quarter.png"
+            },
+            {
+              "label": "Top",
+              "image": "gallery/media/objects/rigellian/lazzaro-research/top.png"
+            },
+            {
+              "label": "Underside",
+              "image": "gallery/media/objects/rigellian/lazzaro-research/underside.png"
+            },
+            {
+              "label": "Saved native reopen",
+              "image": "gallery/media/objects/rigellian/lazzaro-research/verified-native.png"
+            },
+            {
+              "label": "Independent GLB import",
+              "image": "gallery/media/objects/rigellian/lazzaro-research/verified-imported.png"
+            },
+            {
+              "label": "Fleet: proposed sizes, common top camera",
+              "image": "gallery/media/objects/rigellian/fleet/shared-scale-top.png"
+            },
+            {
+              "label": "Fleet: proposed sizes, common oblique camera",
+              "image": "gallery/media/objects/rigellian/fleet/shared-scale-oblique.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent-reviewed authored reconstruction; user and game acceptance pending"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -40622,6 +40650,120 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/rigellian/lazzaro-research/model.blend",
+          "present": false,
+          "sha256": "e5c8e40c9d15a0c0f48786418647e52d7072b844b43b0f267a43e905d43eb54b",
+          "final_visual_acceptance": "not-established",
+          "superseded_by": "objects/rigellian/lazzaro-research/model.blend",
+          "retirement_issue": 232
+        },
+        {
+          "stage": "visible-form-refinement",
+          "blend": "docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.blend",
+          "present": false,
+          "sha256": "22321941f9e85cb16f66a5826d092dff196b5ab697d59b3500c24d3326c9b659",
+          "final_visual_acceptance": "not-established",
+          "superseded_by": "objects/rigellian/lazzaro-research/model.blend",
+          "retirement_issue": 232
+        }
+      ],
+      "selected_refinement": {
+        "stage": "hi-def-broad-skin-refinement",
+        "blend": "objects/rigellian/lazzaro-research/model.blend",
+        "glb": "objects/rigellian/lazzaro-research/model.glb",
+        "issue": 232,
+        "integration": "Single canonical hull for flight, build previews and SciTek. Apply proposed scale explicitly; no calibrated sockets or game acceptance supplied."
+      },
+      "reviewed_model": {
+        "blend": "objects/rigellian/lazzaro-research/model.blend",
+        "sha256": "48f85865580066ae0a6909fb5c976679dcf02cd37db015d0388a5c7da05364db",
+        "runtime_evidence": {
+          "format": "rigellian-mobile-hidef-v1",
+          "report": "objects/rigellian/lazzaro-research/runtime-verification.json",
+          "visual_report": "objects/rigellian/lazzaro-research/legacy-visual-review.json",
+          "game_client_integration": false,
+          "files": {
+            "objects/rigellian/lazzaro-research/model.blend": "48f85865580066ae0a6909fb5c976679dcf02cd37db015d0388a5c7da05364db",
+            "objects/rigellian/lazzaro-research/model.glb": "d3c574f8aa3545f8e01bf35a9c2576d8aa4f1090aee7fd750ac1d02c2d6b65ab",
+            "objects/rigellian/lazzaro-research/model.json": "da039beb4857c95b552b93224c3a5bc3f7eb808fa9cb7dc724338f70a0564c6e",
+            "objects/rigellian/lazzaro-research/runtime-verification.json": "349464beefa191fdd3d19930e2b7825d495eca3af0e8385c3daeab6dddad27b8",
+            "objects/rigellian/lazzaro-research/legacy-visual-review.json": "1149d5b086acfb520b53616f6a55442e6148926c6106ad7ecc383eb3178a3318",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "files": {
+            "objects/rigellian/lazzaro-research/model.blend": "48f85865580066ae0a6909fb5c976679dcf02cd37db015d0388a5c7da05364db",
+            "objects/rigellian/lazzaro-research/model.glb": "d3c574f8aa3545f8e01bf35a9c2576d8aa4f1090aee7fd750ac1d02c2d6b65ab",
+            "objects/rigellian/lazzaro-research/model.json": "da039beb4857c95b552b93224c3a5bc3f7eb808fa9cb7dc724338f70a0564c6e",
+            "objects/rigellian/lazzaro-research/runtime-verification.json": "349464beefa191fdd3d19930e2b7825d495eca3af0e8385c3daeab6dddad27b8",
+            "objects/rigellian/lazzaro-research/legacy-visual-review.json": "1149d5b086acfb520b53616f6a55442e6148926c6106ad7ecc383eb3178a3318",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "silhouette_and_proportions": {
+          "files": {
+            "objects/rigellian/lazzaro-research/model.blend": "48f85865580066ae0a6909fb5c976679dcf02cd37db015d0388a5c7da05364db",
+            "objects/rigellian/lazzaro-research/model.glb": "d3c574f8aa3545f8e01bf35a9c2576d8aa4f1090aee7fd750ac1d02c2d6b65ab",
+            "objects/rigellian/lazzaro-research/model.json": "da039beb4857c95b552b93224c3a5bc3f7eb808fa9cb7dc724338f70a0564c6e",
+            "objects/rigellian/lazzaro-research/runtime-verification.json": "349464beefa191fdd3d19930e2b7825d495eca3af0e8385c3daeab6dddad27b8",
+            "objects/rigellian/lazzaro-research/legacy-visual-review.json": "1149d5b086acfb520b53616f6a55442e6148926c6106ad7ecc383eb3178a3318",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "high_detail_structure": {
+          "files": {
+            "objects/rigellian/lazzaro-research/model.blend": "48f85865580066ae0a6909fb5c976679dcf02cd37db015d0388a5c7da05364db",
+            "objects/rigellian/lazzaro-research/model.glb": "d3c574f8aa3545f8e01bf35a9c2576d8aa4f1090aee7fd750ac1d02c2d6b65ab",
+            "objects/rigellian/lazzaro-research/model.json": "da039beb4857c95b552b93224c3a5bc3f7eb808fa9cb7dc724338f70a0564c6e",
+            "objects/rigellian/lazzaro-research/runtime-verification.json": "349464beefa191fdd3d19930e2b7825d495eca3af0e8385c3daeab6dddad27b8",
+            "objects/rigellian/lazzaro-research/legacy-visual-review.json": "1149d5b086acfb520b53616f6a55442e6148926c6106ad7ecc383eb3178a3318",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "materials": {
+          "files": {
+            "objects/rigellian/lazzaro-research/model.blend": "48f85865580066ae0a6909fb5c976679dcf02cd37db015d0388a5c7da05364db",
+            "objects/rigellian/lazzaro-research/model.glb": "d3c574f8aa3545f8e01bf35a9c2576d8aa4f1090aee7fd750ac1d02c2d6b65ab",
+            "objects/rigellian/lazzaro-research/model.json": "da039beb4857c95b552b93224c3a5bc3f7eb808fa9cb7dc724338f70a0564c6e",
+            "objects/rigellian/lazzaro-research/runtime-verification.json": "349464beefa191fdd3d19930e2b7825d495eca3af0e8385c3daeab6dddad27b8",
+            "objects/rigellian/lazzaro-research/legacy-visual-review.json": "1149d5b086acfb520b53616f6a55442e6148926c6106ad7ecc383eb3178a3318",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "native_and_glb_runtime": {
+          "files": {
+            "objects/rigellian/lazzaro-research/model.blend": "48f85865580066ae0a6909fb5c976679dcf02cd37db015d0388a5c7da05364db",
+            "objects/rigellian/lazzaro-research/model.glb": "d3c574f8aa3545f8e01bf35a9c2576d8aa4f1090aee7fd750ac1d02c2d6b65ab",
+            "objects/rigellian/lazzaro-research/model.json": "da039beb4857c95b552b93224c3a5bc3f7eb808fa9cb7dc724338f70a0564c6e",
+            "objects/rigellian/lazzaro-research/runtime-verification.json": "349464beefa191fdd3d19930e2b7825d495eca3af0e8385c3daeab6dddad27b8",
+            "objects/rigellian/lazzaro-research/legacy-visual-review.json": "1149d5b086acfb520b53616f6a55442e6148926c6106ad7ecc383eb3178a3318",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        }
       }
     },
     {
@@ -40649,28 +40791,56 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/rigellian/delphini-assault/model.blend",
+          "stage": "hi-def-broad-skin-refinement",
+          "blend": "objects/rigellian/delphini-assault/model.blend",
           "present": true,
-          "sha256": "bcb25e7590277fb45c32b15810fc87e6acf5aa2d8a28e865ed14d5b038c8c177",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "visible-section-refinement",
-          "blend": "docs/assets/reconstruction/rigellian-refined/delphini-assault/model.blend",
-          "present": true,
-          "sha256": "678d75fac1c813ac4919d3379d7c7154cd1eff0d7b0107b3a36afea116aff94f",
-          "final_visual_acceptance": "not-established"
+          "sha256": "e3e0d7ce8f5f7a8131a69446b1e3659b1c2b60510fbd10eb50c25c699551dabc",
+          "media": "gallery/media/objects/rigellian/delphini-assault",
+          "views": [
+            {
+              "label": "Front quarter",
+              "image": "gallery/media/objects/rigellian/delphini-assault/front-quarter.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/rigellian/delphini-assault/rear-quarter.png"
+            },
+            {
+              "label": "Top",
+              "image": "gallery/media/objects/rigellian/delphini-assault/top.png"
+            },
+            {
+              "label": "Underside",
+              "image": "gallery/media/objects/rigellian/delphini-assault/underside.png"
+            },
+            {
+              "label": "Saved native reopen",
+              "image": "gallery/media/objects/rigellian/delphini-assault/verified-native.png"
+            },
+            {
+              "label": "Independent GLB import",
+              "image": "gallery/media/objects/rigellian/delphini-assault/verified-imported.png"
+            },
+            {
+              "label": "Fleet: proposed sizes, common top camera",
+              "image": "gallery/media/objects/rigellian/fleet/shared-scale-top.png"
+            },
+            {
+              "label": "Fleet: proposed sizes, common oblique camera",
+              "image": "gallery/media/objects/rigellian/fleet/shared-scale-oblique.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent-reviewed authored reconstruction; user and game acceptance pending"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -40714,6 +40884,120 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/rigellian/delphini-assault/model.blend",
+          "present": false,
+          "sha256": "bcb25e7590277fb45c32b15810fc87e6acf5aa2d8a28e865ed14d5b038c8c177",
+          "final_visual_acceptance": "not-established",
+          "superseded_by": "objects/rigellian/delphini-assault/model.blend",
+          "retirement_issue": 232
+        },
+        {
+          "stage": "visible-section-refinement",
+          "blend": "docs/assets/reconstruction/rigellian-refined/delphini-assault/model.blend",
+          "present": false,
+          "sha256": "678d75fac1c813ac4919d3379d7c7154cd1eff0d7b0107b3a36afea116aff94f",
+          "final_visual_acceptance": "not-established",
+          "superseded_by": "objects/rigellian/delphini-assault/model.blend",
+          "retirement_issue": 232
+        }
+      ],
+      "selected_refinement": {
+        "stage": "hi-def-broad-skin-refinement",
+        "blend": "objects/rigellian/delphini-assault/model.blend",
+        "glb": "objects/rigellian/delphini-assault/model.glb",
+        "issue": 232,
+        "integration": "Single canonical hull for flight, build previews and SciTek. Apply proposed scale explicitly; no calibrated sockets or game acceptance supplied."
+      },
+      "reviewed_model": {
+        "blend": "objects/rigellian/delphini-assault/model.blend",
+        "sha256": "e3e0d7ce8f5f7a8131a69446b1e3659b1c2b60510fbd10eb50c25c699551dabc",
+        "runtime_evidence": {
+          "format": "rigellian-mobile-hidef-v1",
+          "report": "objects/rigellian/delphini-assault/runtime-verification.json",
+          "visual_report": "objects/rigellian/delphini-assault/legacy-visual-review.json",
+          "game_client_integration": false,
+          "files": {
+            "objects/rigellian/delphini-assault/model.blend": "e3e0d7ce8f5f7a8131a69446b1e3659b1c2b60510fbd10eb50c25c699551dabc",
+            "objects/rigellian/delphini-assault/model.glb": "c53348af89975c6a16059cc3a1c46575754d94b932d3645f447147ad0fdec91c",
+            "objects/rigellian/delphini-assault/model.json": "07260dc41b5be941094a256184cafa998d6c758e35192f4a28e9bfc9f2dc2970",
+            "objects/rigellian/delphini-assault/runtime-verification.json": "3ad3e9d1d3f4e67d519c85bade7913f68f0deb91011781fbc6bfe0abe596888e",
+            "objects/rigellian/delphini-assault/legacy-visual-review.json": "03acdada660e8ce269c420e47ef44d85d0bd5897a2c0a35ff43c9cb3101a9bd7",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "files": {
+            "objects/rigellian/delphini-assault/model.blend": "e3e0d7ce8f5f7a8131a69446b1e3659b1c2b60510fbd10eb50c25c699551dabc",
+            "objects/rigellian/delphini-assault/model.glb": "c53348af89975c6a16059cc3a1c46575754d94b932d3645f447147ad0fdec91c",
+            "objects/rigellian/delphini-assault/model.json": "07260dc41b5be941094a256184cafa998d6c758e35192f4a28e9bfc9f2dc2970",
+            "objects/rigellian/delphini-assault/runtime-verification.json": "3ad3e9d1d3f4e67d519c85bade7913f68f0deb91011781fbc6bfe0abe596888e",
+            "objects/rigellian/delphini-assault/legacy-visual-review.json": "03acdada660e8ce269c420e47ef44d85d0bd5897a2c0a35ff43c9cb3101a9bd7",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "silhouette_and_proportions": {
+          "files": {
+            "objects/rigellian/delphini-assault/model.blend": "e3e0d7ce8f5f7a8131a69446b1e3659b1c2b60510fbd10eb50c25c699551dabc",
+            "objects/rigellian/delphini-assault/model.glb": "c53348af89975c6a16059cc3a1c46575754d94b932d3645f447147ad0fdec91c",
+            "objects/rigellian/delphini-assault/model.json": "07260dc41b5be941094a256184cafa998d6c758e35192f4a28e9bfc9f2dc2970",
+            "objects/rigellian/delphini-assault/runtime-verification.json": "3ad3e9d1d3f4e67d519c85bade7913f68f0deb91011781fbc6bfe0abe596888e",
+            "objects/rigellian/delphini-assault/legacy-visual-review.json": "03acdada660e8ce269c420e47ef44d85d0bd5897a2c0a35ff43c9cb3101a9bd7",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "high_detail_structure": {
+          "files": {
+            "objects/rigellian/delphini-assault/model.blend": "e3e0d7ce8f5f7a8131a69446b1e3659b1c2b60510fbd10eb50c25c699551dabc",
+            "objects/rigellian/delphini-assault/model.glb": "c53348af89975c6a16059cc3a1c46575754d94b932d3645f447147ad0fdec91c",
+            "objects/rigellian/delphini-assault/model.json": "07260dc41b5be941094a256184cafa998d6c758e35192f4a28e9bfc9f2dc2970",
+            "objects/rigellian/delphini-assault/runtime-verification.json": "3ad3e9d1d3f4e67d519c85bade7913f68f0deb91011781fbc6bfe0abe596888e",
+            "objects/rigellian/delphini-assault/legacy-visual-review.json": "03acdada660e8ce269c420e47ef44d85d0bd5897a2c0a35ff43c9cb3101a9bd7",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "materials": {
+          "files": {
+            "objects/rigellian/delphini-assault/model.blend": "e3e0d7ce8f5f7a8131a69446b1e3659b1c2b60510fbd10eb50c25c699551dabc",
+            "objects/rigellian/delphini-assault/model.glb": "c53348af89975c6a16059cc3a1c46575754d94b932d3645f447147ad0fdec91c",
+            "objects/rigellian/delphini-assault/model.json": "07260dc41b5be941094a256184cafa998d6c758e35192f4a28e9bfc9f2dc2970",
+            "objects/rigellian/delphini-assault/runtime-verification.json": "3ad3e9d1d3f4e67d519c85bade7913f68f0deb91011781fbc6bfe0abe596888e",
+            "objects/rigellian/delphini-assault/legacy-visual-review.json": "03acdada660e8ce269c420e47ef44d85d0bd5897a2c0a35ff43c9cb3101a9bd7",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "native_and_glb_runtime": {
+          "files": {
+            "objects/rigellian/delphini-assault/model.blend": "e3e0d7ce8f5f7a8131a69446b1e3659b1c2b60510fbd10eb50c25c699551dabc",
+            "objects/rigellian/delphini-assault/model.glb": "c53348af89975c6a16059cc3a1c46575754d94b932d3645f447147ad0fdec91c",
+            "objects/rigellian/delphini-assault/model.json": "07260dc41b5be941094a256184cafa998d6c758e35192f4a28e9bfc9f2dc2970",
+            "objects/rigellian/delphini-assault/runtime-verification.json": "3ad3e9d1d3f4e67d519c85bade7913f68f0deb91011781fbc6bfe0abe596888e",
+            "objects/rigellian/delphini-assault/legacy-visual-review.json": "03acdada660e8ce269c420e47ef44d85d0bd5897a2c0a35ff43c9cb3101a9bd7",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        }
       }
     },
     {
@@ -40741,28 +41025,56 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/rigellian/messier-lukannon/model.blend",
+          "stage": "hi-def-broad-skin-refinement",
+          "blend": "objects/rigellian/messier-lukannon/model.blend",
           "present": true,
-          "sha256": "3c0e33cf9330675304aa57291a233d6940c73bf59460ca226a04d0ed3d226180",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "visible-section-refinement",
-          "blend": "docs/assets/reconstruction/rigellian-refined/messier-lukannon/model.blend",
-          "present": true,
-          "sha256": "c522ca34dcff0c4be3b4927d7974ae5154f56ac8c5620fa93847873932c3d267",
-          "final_visual_acceptance": "not-established"
+          "sha256": "1b0e9bde882377d553f53bd3f0fdc2bd9ded39ce01285e6d2c320738f18313d1",
+          "media": "gallery/media/objects/rigellian/messier-lukannon",
+          "views": [
+            {
+              "label": "Front quarter",
+              "image": "gallery/media/objects/rigellian/messier-lukannon/front-quarter.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/rigellian/messier-lukannon/rear-quarter.png"
+            },
+            {
+              "label": "Top",
+              "image": "gallery/media/objects/rigellian/messier-lukannon/top.png"
+            },
+            {
+              "label": "Underside",
+              "image": "gallery/media/objects/rigellian/messier-lukannon/underside.png"
+            },
+            {
+              "label": "Saved native reopen",
+              "image": "gallery/media/objects/rigellian/messier-lukannon/verified-native.png"
+            },
+            {
+              "label": "Independent GLB import",
+              "image": "gallery/media/objects/rigellian/messier-lukannon/verified-imported.png"
+            },
+            {
+              "label": "Fleet: proposed sizes, common top camera",
+              "image": "gallery/media/objects/rigellian/fleet/shared-scale-top.png"
+            },
+            {
+              "label": "Fleet: proposed sizes, common oblique camera",
+              "image": "gallery/media/objects/rigellian/fleet/shared-scale-oblique.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent-reviewed authored reconstruction; user and game acceptance pending"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -40806,6 +41118,120 @@
           "ordered_candidates": [],
           "selected_first_available": null
         }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/rigellian/messier-lukannon/model.blend",
+          "present": false,
+          "sha256": "3c0e33cf9330675304aa57291a233d6940c73bf59460ca226a04d0ed3d226180",
+          "final_visual_acceptance": "not-established",
+          "superseded_by": "objects/rigellian/messier-lukannon/model.blend",
+          "retirement_issue": 232
+        },
+        {
+          "stage": "visible-section-refinement",
+          "blend": "docs/assets/reconstruction/rigellian-refined/messier-lukannon/model.blend",
+          "present": false,
+          "sha256": "c522ca34dcff0c4be3b4927d7974ae5154f56ac8c5620fa93847873932c3d267",
+          "final_visual_acceptance": "not-established",
+          "superseded_by": "objects/rigellian/messier-lukannon/model.blend",
+          "retirement_issue": 232
+        }
+      ],
+      "selected_refinement": {
+        "stage": "hi-def-broad-skin-refinement",
+        "blend": "objects/rigellian/messier-lukannon/model.blend",
+        "glb": "objects/rigellian/messier-lukannon/model.glb",
+        "issue": 232,
+        "integration": "Single canonical hull for flight, build previews and SciTek. Apply proposed scale explicitly; no calibrated sockets or game acceptance supplied."
+      },
+      "reviewed_model": {
+        "blend": "objects/rigellian/messier-lukannon/model.blend",
+        "sha256": "1b0e9bde882377d553f53bd3f0fdc2bd9ded39ce01285e6d2c320738f18313d1",
+        "runtime_evidence": {
+          "format": "rigellian-mobile-hidef-v1",
+          "report": "objects/rigellian/messier-lukannon/runtime-verification.json",
+          "visual_report": "objects/rigellian/messier-lukannon/legacy-visual-review.json",
+          "game_client_integration": false,
+          "files": {
+            "objects/rigellian/messier-lukannon/model.blend": "1b0e9bde882377d553f53bd3f0fdc2bd9ded39ce01285e6d2c320738f18313d1",
+            "objects/rigellian/messier-lukannon/model.glb": "4ae61215fd209cf526b2406b72a7cee97f1598fd0fd139994b38acdf3243df61",
+            "objects/rigellian/messier-lukannon/model.json": "70fad4142729451bb51d126be40c9094d5ac9ad37c941e17297878531c6229ba",
+            "objects/rigellian/messier-lukannon/runtime-verification.json": "6b5456fddbcddd6d80aae2871c4b9cb71346a42e88f8103606409328b0c73a12",
+            "objects/rigellian/messier-lukannon/legacy-visual-review.json": "4eba280421bfb7dce752f0cc0a1f37691c1c2e44cf3d92e9d90e441634d0a7f4",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "files": {
+            "objects/rigellian/messier-lukannon/model.blend": "1b0e9bde882377d553f53bd3f0fdc2bd9ded39ce01285e6d2c320738f18313d1",
+            "objects/rigellian/messier-lukannon/model.glb": "4ae61215fd209cf526b2406b72a7cee97f1598fd0fd139994b38acdf3243df61",
+            "objects/rigellian/messier-lukannon/model.json": "70fad4142729451bb51d126be40c9094d5ac9ad37c941e17297878531c6229ba",
+            "objects/rigellian/messier-lukannon/runtime-verification.json": "6b5456fddbcddd6d80aae2871c4b9cb71346a42e88f8103606409328b0c73a12",
+            "objects/rigellian/messier-lukannon/legacy-visual-review.json": "4eba280421bfb7dce752f0cc0a1f37691c1c2e44cf3d92e9d90e441634d0a7f4",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "silhouette_and_proportions": {
+          "files": {
+            "objects/rigellian/messier-lukannon/model.blend": "1b0e9bde882377d553f53bd3f0fdc2bd9ded39ce01285e6d2c320738f18313d1",
+            "objects/rigellian/messier-lukannon/model.glb": "4ae61215fd209cf526b2406b72a7cee97f1598fd0fd139994b38acdf3243df61",
+            "objects/rigellian/messier-lukannon/model.json": "70fad4142729451bb51d126be40c9094d5ac9ad37c941e17297878531c6229ba",
+            "objects/rigellian/messier-lukannon/runtime-verification.json": "6b5456fddbcddd6d80aae2871c4b9cb71346a42e88f8103606409328b0c73a12",
+            "objects/rigellian/messier-lukannon/legacy-visual-review.json": "4eba280421bfb7dce752f0cc0a1f37691c1c2e44cf3d92e9d90e441634d0a7f4",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "high_detail_structure": {
+          "files": {
+            "objects/rigellian/messier-lukannon/model.blend": "1b0e9bde882377d553f53bd3f0fdc2bd9ded39ce01285e6d2c320738f18313d1",
+            "objects/rigellian/messier-lukannon/model.glb": "4ae61215fd209cf526b2406b72a7cee97f1598fd0fd139994b38acdf3243df61",
+            "objects/rigellian/messier-lukannon/model.json": "70fad4142729451bb51d126be40c9094d5ac9ad37c941e17297878531c6229ba",
+            "objects/rigellian/messier-lukannon/runtime-verification.json": "6b5456fddbcddd6d80aae2871c4b9cb71346a42e88f8103606409328b0c73a12",
+            "objects/rigellian/messier-lukannon/legacy-visual-review.json": "4eba280421bfb7dce752f0cc0a1f37691c1c2e44cf3d92e9d90e441634d0a7f4",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "materials": {
+          "files": {
+            "objects/rigellian/messier-lukannon/model.blend": "1b0e9bde882377d553f53bd3f0fdc2bd9ded39ce01285e6d2c320738f18313d1",
+            "objects/rigellian/messier-lukannon/model.glb": "4ae61215fd209cf526b2406b72a7cee97f1598fd0fd139994b38acdf3243df61",
+            "objects/rigellian/messier-lukannon/model.json": "70fad4142729451bb51d126be40c9094d5ac9ad37c941e17297878531c6229ba",
+            "objects/rigellian/messier-lukannon/runtime-verification.json": "6b5456fddbcddd6d80aae2871c4b9cb71346a42e88f8103606409328b0c73a12",
+            "objects/rigellian/messier-lukannon/legacy-visual-review.json": "4eba280421bfb7dce752f0cc0a1f37691c1c2e44cf3d92e9d90e441634d0a7f4",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "native_and_glb_runtime": {
+          "files": {
+            "objects/rigellian/messier-lukannon/model.blend": "1b0e9bde882377d553f53bd3f0fdc2bd9ded39ce01285e6d2c320738f18313d1",
+            "objects/rigellian/messier-lukannon/model.glb": "4ae61215fd209cf526b2406b72a7cee97f1598fd0fd139994b38acdf3243df61",
+            "objects/rigellian/messier-lukannon/model.json": "70fad4142729451bb51d126be40c9094d5ac9ad37c941e17297878531c6229ba",
+            "objects/rigellian/messier-lukannon/runtime-verification.json": "6b5456fddbcddd6d80aae2871c4b9cb71346a42e88f8103606409328b0c73a12",
+            "objects/rigellian/messier-lukannon/legacy-visual-review.json": "4eba280421bfb7dce752f0cc0a1f37691c1c2e44cf3d92e9d90e441634d0a7f4",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        }
       }
     },
     {
@@ -40833,28 +41259,56 @@
       "references": [],
       "available_studies": [
         {
-          "stage": "initial-reference-study",
-          "blend": "docs/assets/reconstruction/ships/rigellian/transportation/model.blend",
+          "stage": "hi-def-broad-skin-refinement",
+          "blend": "objects/rigellian/transportation/model.blend",
           "present": true,
-          "sha256": "e14fa591304aff93c446a2eca4f3b141d664dc34b4748041b3deb042e579a680",
-          "final_visual_acceptance": "not-established"
-        },
-        {
-          "stage": "body-section-refinement",
-          "blend": "docs/assets/reconstruction/rigellian-refined/transportation/model.blend",
-          "present": true,
-          "sha256": "760213999febf4199fb618a9c5fbff0ad98e2f3b71667fec5ebcd72bde9609a1",
-          "final_visual_acceptance": "not-established"
+          "sha256": "f414f72d4607b2a6c9a56f324656d442ec5fbdc47424e0710a91c99080394540",
+          "media": "gallery/media/objects/rigellian/transportation",
+          "views": [
+            {
+              "label": "Front quarter",
+              "image": "gallery/media/objects/rigellian/transportation/front-quarter.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/rigellian/transportation/rear-quarter.png"
+            },
+            {
+              "label": "Top",
+              "image": "gallery/media/objects/rigellian/transportation/top.png"
+            },
+            {
+              "label": "Underside",
+              "image": "gallery/media/objects/rigellian/transportation/underside.png"
+            },
+            {
+              "label": "Saved native reopen",
+              "image": "gallery/media/objects/rigellian/transportation/verified-native.png"
+            },
+            {
+              "label": "Independent GLB import",
+              "image": "gallery/media/objects/rigellian/transportation/verified-imported.png"
+            },
+            {
+              "label": "Fleet: proposed sizes, common top camera",
+              "image": "gallery/media/objects/rigellian/fleet/shared-scale-top.png"
+            },
+            {
+              "label": "Fleet: proposed sizes, common oblique camera",
+              "image": "gallery/media/objects/rigellian/fleet/shared-scale-oblique.png"
+            }
+          ],
+          "final_visual_acceptance": "Agent-reviewed authored reconstruction; user and game acceptance pending"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [
@@ -40897,6 +41351,120 @@
         "atmospheric": {
           "ordered_candidates": [],
           "selected_first_available": null
+        }
+      },
+      "superseded_studies": [
+        {
+          "stage": "initial-reference-study",
+          "blend": "docs/assets/reconstruction/ships/rigellian/transportation/model.blend",
+          "present": false,
+          "sha256": "e14fa591304aff93c446a2eca4f3b141d664dc34b4748041b3deb042e579a680",
+          "final_visual_acceptance": "not-established",
+          "superseded_by": "objects/rigellian/transportation/model.blend",
+          "retirement_issue": 232
+        },
+        {
+          "stage": "body-section-refinement",
+          "blend": "docs/assets/reconstruction/rigellian-refined/transportation/model.blend",
+          "present": false,
+          "sha256": "760213999febf4199fb618a9c5fbff0ad98e2f3b71667fec5ebcd72bde9609a1",
+          "final_visual_acceptance": "not-established",
+          "superseded_by": "objects/rigellian/transportation/model.blend",
+          "retirement_issue": 232
+        }
+      ],
+      "selected_refinement": {
+        "stage": "hi-def-broad-skin-refinement",
+        "blend": "objects/rigellian/transportation/model.blend",
+        "glb": "objects/rigellian/transportation/model.glb",
+        "issue": 232,
+        "integration": "Single canonical hull for flight, build previews and SciTek. Apply proposed scale explicitly; no calibrated sockets or game acceptance supplied."
+      },
+      "reviewed_model": {
+        "blend": "objects/rigellian/transportation/model.blend",
+        "sha256": "f414f72d4607b2a6c9a56f324656d442ec5fbdc47424e0710a91c99080394540",
+        "runtime_evidence": {
+          "format": "rigellian-mobile-hidef-v1",
+          "report": "objects/rigellian/transportation/runtime-verification.json",
+          "visual_report": "objects/rigellian/transportation/legacy-visual-review.json",
+          "game_client_integration": false,
+          "files": {
+            "objects/rigellian/transportation/model.blend": "f414f72d4607b2a6c9a56f324656d442ec5fbdc47424e0710a91c99080394540",
+            "objects/rigellian/transportation/model.glb": "dcfeae2627278962526a162f1ea160afdb9e8d4b53e65d243080079360734d78",
+            "objects/rigellian/transportation/model.json": "33f78b9c62b7ceeb012573a0ba7dbb9e81bcc27fa8b03b40ba8dd6f433e393a8",
+            "objects/rigellian/transportation/runtime-verification.json": "8143bf1e3ede0177e6f8e2ecb4edf2f49a7f38dfb360a8d7fd33d08291e75dc1",
+            "objects/rigellian/transportation/legacy-visual-review.json": "84ef1f85be5bd24d156dde4bcc59d4bf9661a4a3666b035e62084e656759f1e5",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "files": {
+            "objects/rigellian/transportation/model.blend": "f414f72d4607b2a6c9a56f324656d442ec5fbdc47424e0710a91c99080394540",
+            "objects/rigellian/transportation/model.glb": "dcfeae2627278962526a162f1ea160afdb9e8d4b53e65d243080079360734d78",
+            "objects/rigellian/transportation/model.json": "33f78b9c62b7ceeb012573a0ba7dbb9e81bcc27fa8b03b40ba8dd6f433e393a8",
+            "objects/rigellian/transportation/runtime-verification.json": "8143bf1e3ede0177e6f8e2ecb4edf2f49a7f38dfb360a8d7fd33d08291e75dc1",
+            "objects/rigellian/transportation/legacy-visual-review.json": "84ef1f85be5bd24d156dde4bcc59d4bf9661a4a3666b035e62084e656759f1e5",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "silhouette_and_proportions": {
+          "files": {
+            "objects/rigellian/transportation/model.blend": "f414f72d4607b2a6c9a56f324656d442ec5fbdc47424e0710a91c99080394540",
+            "objects/rigellian/transportation/model.glb": "dcfeae2627278962526a162f1ea160afdb9e8d4b53e65d243080079360734d78",
+            "objects/rigellian/transportation/model.json": "33f78b9c62b7ceeb012573a0ba7dbb9e81bcc27fa8b03b40ba8dd6f433e393a8",
+            "objects/rigellian/transportation/runtime-verification.json": "8143bf1e3ede0177e6f8e2ecb4edf2f49a7f38dfb360a8d7fd33d08291e75dc1",
+            "objects/rigellian/transportation/legacy-visual-review.json": "84ef1f85be5bd24d156dde4bcc59d4bf9661a4a3666b035e62084e656759f1e5",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "high_detail_structure": {
+          "files": {
+            "objects/rigellian/transportation/model.blend": "f414f72d4607b2a6c9a56f324656d442ec5fbdc47424e0710a91c99080394540",
+            "objects/rigellian/transportation/model.glb": "dcfeae2627278962526a162f1ea160afdb9e8d4b53e65d243080079360734d78",
+            "objects/rigellian/transportation/model.json": "33f78b9c62b7ceeb012573a0ba7dbb9e81bcc27fa8b03b40ba8dd6f433e393a8",
+            "objects/rigellian/transportation/runtime-verification.json": "8143bf1e3ede0177e6f8e2ecb4edf2f49a7f38dfb360a8d7fd33d08291e75dc1",
+            "objects/rigellian/transportation/legacy-visual-review.json": "84ef1f85be5bd24d156dde4bcc59d4bf9661a4a3666b035e62084e656759f1e5",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "materials": {
+          "files": {
+            "objects/rigellian/transportation/model.blend": "f414f72d4607b2a6c9a56f324656d442ec5fbdc47424e0710a91c99080394540",
+            "objects/rigellian/transportation/model.glb": "dcfeae2627278962526a162f1ea160afdb9e8d4b53e65d243080079360734d78",
+            "objects/rigellian/transportation/model.json": "33f78b9c62b7ceeb012573a0ba7dbb9e81bcc27fa8b03b40ba8dd6f433e393a8",
+            "objects/rigellian/transportation/runtime-verification.json": "8143bf1e3ede0177e6f8e2ecb4edf2f49a7f38dfb360a8d7fd33d08291e75dc1",
+            "objects/rigellian/transportation/legacy-visual-review.json": "84ef1f85be5bd24d156dde4bcc59d4bf9661a4a3666b035e62084e656759f1e5",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
+        },
+        "native_and_glb_runtime": {
+          "files": {
+            "objects/rigellian/transportation/model.blend": "f414f72d4607b2a6c9a56f324656d442ec5fbdc47424e0710a91c99080394540",
+            "objects/rigellian/transportation/model.glb": "dcfeae2627278962526a162f1ea160afdb9e8d4b53e65d243080079360734d78",
+            "objects/rigellian/transportation/model.json": "33f78b9c62b7ceeb012573a0ba7dbb9e81bcc27fa8b03b40ba8dd6f433e393a8",
+            "objects/rigellian/transportation/runtime-verification.json": "8143bf1e3ede0177e6f8e2ecb4edf2f49a7f38dfb360a8d7fd33d08291e75dc1",
+            "objects/rigellian/transportation/legacy-visual-review.json": "84ef1f85be5bd24d156dde4bcc59d4bf9661a4a3666b035e62084e656759f1e5",
+            "tools/blender/build_rigellian_mobile_fleet.py": "b0af3849a94a2243430a4f12e34f910f0710a65f4ab29790c82d9abd8c8bf1bc",
+            "tools/blender/verify_rigellian_mobile_fleet.py": "22a4722ceda60b300078855eb764948b5bb591644472c47ac2199c908174adb6",
+            "tools/blender/rigellian_mobile_runtime_evidence.py": "873bab94bbe93488610926137284fdf2bf275b50db625d2393e87e1f8aec6892"
+          },
+          "scope": "Agent legacy/concept review and Blender native/import evidence;user artistic and game acceptance pending"
         }
       }
     },
@@ -42338,7 +42906,7 @@
               "image": "gallery/media/concepts/mikotaj/falari-lourn-03.png"
             },
             {
-              "label": "Four parallel modules \u2014 axial GLB",
+              "label": "Four parallel modules — axial GLB",
               "image": "gallery/media/objects/mikotaj/falari-lourn/axial-front.png"
             }
           ],

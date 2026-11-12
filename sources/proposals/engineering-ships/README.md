@@ -53,7 +53,7 @@ studio. Display fitting is independent and does not establish game scale.
 | Culture | Terraforming attempts | Repair attempts |
 | --- | ---: | ---: |
 | Terran | 2 | 2 |
-| Rigellian | 1 | 1 |
+| Rigellian | 3 + 2 requested corrections | 3 + 2 requested corrections |
 | Braccatian | 3 | 3 |
 | Mikotaj | 3 | 3 |
 | Artemian | 2 | 2 |
@@ -69,3 +69,19 @@ Follow the [refinement protocol](../../../docs/workflow.md#engineering-ship-refi
 for subsequent work. A fourth generator cycle requires a new user decision.
 Artistic user acceptance, physical game scale, platform profiling, continuous swept
 clearance and gameplay integration remain separate from this asset review.
+
+
+### Rigellian hidef alignment and attachment repair
+
+The current comparison uses the canonical hidef Delphini and Lazzaro from issue
+#232,not the older #185 reconstructions. Three planned style cycles are recorded;
+after the third render the user reported displaced panels on the repair ship.
+That user-requested technical repair reran both roles after fixing world-space
+skins to inherit the body transform. A further explicit user correction bends
+the copper nacelle patches and dark insets to actual housing surfaces. Both
+additional exports are recorded in `style-refinement.json`;they are not presented
+as an unfailed third run.
+`verify_rigellian_engineering_attachment.py` checks actual native/imported surface
+proximity in six poses and rejects an intentionally lifted panel. This closes the
+gap left by the broader connected-support graph. The shared helpers and all other
+culture model binaries are unchanged by this follow-up.

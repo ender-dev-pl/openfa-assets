@@ -1,10 +1,105 @@
 """Culture-specific engineering proposals from the supplied selected concepts."""
 import argparse,math,sys
+import bpy
 from pathlib import Path
 from mathutils import Vector
 sys.path.insert(0,str(Path(__file__).parent))
 from engineering_ship_refinement import RefinedShip as Ship
 
+
+
+class HiDefRigellianShip(Ship):
+    """Keep smooth formed envelopes; spend geometry at functional interfaces."""
+    def ellipsoid(self,name,p,size,mat,parent=None):
+        bpy.ops.mesh.primitive_uv_sphere_add(segments=40,ring_count=20,radius=1,location=p)
+        o=bpy.context.object
+        for v in o.data.vertices:v.co=(v.co.x*size[0]/2,v.co.y*size[1]/2,v.co.z*size[2]/2)
+        return self.finish(o,name,mat,parent,0,True)
+
+    def cyl(self,name,p,r,depth,mat,axis=(0,0,1),parent=None,vertices=32):
+        return super().cyl(name,p,r,depth,mat,axis,parent,vertices)
+
+    def conformal_patch(self,parent,name,width,length,mat,offsets=(-.008,.012)):
+        # Sample the actual mesh,not an approximate sphere or a tangent plane.
+        nx,ny=7,9;vertices=[];top=max(v.co.z for v in parent.data.vertices)+.3
+        for offset in offsets:
+            for j in range(ny):
+                y=-length/2+length*j/(ny-1)
+                for i in range(nx):
+                    x=-width/2+width*i/(nx-1)
+                    hit,point,normal,index=parent.ray_cast(Vector((x,y,top)),Vector((0,0,-1)))
+                    assert hit,('Missing curved housing surface',name,x,y)
+                    vertices.append(tuple(point+normal*offset))
+        n=nx*ny;faces=[]
+        for j in range(ny-1):
+            for i in range(nx-1):
+                q=j*nx+i;faces.extend([(q,q+1,q+nx+1,q+nx),(n+q+nx,n+q+nx+1,n+q+1,n+q)])
+        edge=list(range(nx))+[j*nx+nx-1 for j in range(1,ny)]+list(range(n-2,n-nx-1,-1))+[j*nx for j in range(ny-2,0,-1)]
+        faces.extend((a,b,b+n,a+n) for a,b in zip(edge,edge[1:]+edge[:1]))
+        return self.local(self.solid(name,vertices,faces,mat),parent,(0,0,0))
+
+    def enrich(self):
+        super().enrich()
+        body=next(o for o in self.parts if 'smooth oval hull' in o.name)
+        alloy=self.materials['silver'];seal=self.materials['recess'];copper=self.materials['copper']
+        # Gasket, seated lid and captive fasteners; broad skins stay quiet.
+        for side in [-1,1]:
+            hatch=self.roof(body,'Rigellian seated service gasket '+str(side),side*.42,.74,(.36,.46),seal,.025)
+            self.local_box(hatch,'Rigellian pale alloy service lid '+str(side),(0,0,.016),(.31,.41,.022),alloy,.012)
+            for x in [-.115,.115]:
+                self.local_cyl(hatch,'Rigellian captive lid bolt '+str(side)+str(x),(x,.14,.032),.018,.018,copper,vertices=8)
+            # Actual cooling grille base follows the curved pressure skin.
+            grille=self.roof(body,'Rigellian cooling recess '+str(side),side*.46,-.57,(.26,.35),seal,.028)
+            for j in range(5):
+                self.local_box(grille,'Rigellian cooling louvre '+str(side)+str(j),(0,-.125+j*.062,.022),(.22,.025,.022),alloy,.003)
+            # Small copper service hatches on the engine fairings.
+            pod=next(o for o in self.parts if 'smooth side nacelle '+str(side) in o.name)
+            self.conformal_patch(pod,'Rigellian copper nacelle service collar '+str(side),.26,.43,copper)
+            self.conformal_patch(pod,'Rigellian nacelle inspection slot '+str(side),.15,.24,seal,(.007,.024))
+        # Broad formed seams and a recessed crew visor echo the hidef fleet,
+        # while leaving most pressure skin quiet rather than gridded.
+        def skin(name,x0,x1,y0,y1,mat):
+            nx,ny=7,7;v=[]
+            for depth in [-.018,.016]:
+                for j in range(ny):
+                    y=y0+(y1-y0)*j/(ny-1)
+                    for i in range(nx):
+                        x=x0+(x1-x0)*i/(nx-1)
+                        z=.35+.50*math.sqrt(max(.01,1-(x/1.10)**2-(y/1.525)**2))
+                        v.append((x,y,z-.35+depth))
+            n=nx*ny;f=[]
+            for j in range(ny-1):
+                for i in range(nx-1):
+                    q=j*nx+i;f.extend([(q,q+1,q+nx+1,q+nx),(n+q+nx,n+q+nx+1,n+q+1,n+q)])
+            edge=list(range(nx))+[j*nx+nx-1 for j in range(1,ny)]+list(range(n-2,n-nx-1,-1))+[j*nx for j in range(ny-2,0,-1)]
+            f.extend((a,b,b+n,a+n) for a,b in zip(edge,edge[1:]+edge[:1]))
+            return self.local(self.solid(name,v,f,mat),body,(0,0,0))
+        skin('Rigellian broad fore formed skin',-.68,.68,-.86,-.27,self.materials['sage'])
+        skin('Rigellian broad aft formed skin',-.29,.29,.87,1.20,self.materials['sage'])
+        glass=self.mat('crew-visor',(21/255,40/255,46/255),.08,.24)
+        skin('Rigellian recessed panoramic crew visor',-.48,.48,-1.12,-.91,glass)
+        for x in [-.26,0,.26]:
+            self.roof(body,'Rigellian pale visor mullion '+str(x),x,-1.015,(.018,.245),alloy,.018)
+        # Elliptical shoulder seal intersects the underlying continuous envelope.
+        n=48;v=[(1.1*r*math.cos(i*math.tau/n),1.525*r*math.sin(i*math.tau/n),z-.35) for z in [.225,.265] for r in [.89,1.015] for i in range(n)];f=[]
+        for i in range(n):
+            j=(i+1)%n;f.extend([(i,j,n+j,n+i),(2*n+i,3*n+i,3*n+j,2*n+j),(i,2*n+i,2*n+j,j),(n+j,3*n+j,3*n+i,n+i)])
+        self.local(self.solid('Rigellian formed shoulder gasket',v,f,seal),body,(0,0,0))
+        bpy.context.view_layer.update()
+        for obj in self.parts:
+            if any(t in obj.name for t in ['broad fore formed skin','broad aft formed skin','panoramic crew visor','formed shoulder gasket']):
+                assert obj.parent==body,('Skin must inherit the hull transform',obj.name)
+                assert all(abs(a-b)<1e-6 for a,b in zip(obj.matrix_world.to_scale(),body.matrix_world.to_scale())),obj.name
+                if 'shoulder gasket' not in obj.name:
+                    distances=[]
+                    for v in obj.data.vertices:
+                        hit,point,normal,index=body.closest_point_on_mesh(v.co)
+                        assert hit,obj.name
+                        distances.append((point-v.co).length)
+                    assert max(distances)<.045,('Lifted skin',obj.name,max(distances))
+        for o in list(self.parts):
+            if 'upper link' in o.name:
+                self.local_box(o,'Rigellian protected manipulator service cover '+o.name,(0,-.105,0),(.13,.038,.21),copper,.009)
 
 
 def cycle(s,j,axis,amount,kind='rotation_euler'):
@@ -49,16 +144,16 @@ def repair_tool(s,prefix,a,b,c,steel,copper,gold,left=True,parent=None):
     s.animate(j,0,[(1,0),(25,a),(49,a),(73,0),(97,0)],'rotation_euler');s.animate(k,0,[(1,0),(25,b),(49,b),(73,0),(97,0)],'rotation_euler')
 
 def rigellian(s,role):
-    def srgb(v):return 12.92*v if v<=.0031308 else 1.055*v**(1/2.4)-.055
-    silver=s.mat('silver',tuple(srgb(v) for v in [.29,.28,.32]),.66,.57)
-    green=s.mat('sage',(86/255,132/255,107/255),.53,136/255+.08)
-    gold=s.mat('gold',(115/255,87/255,24/255),.62,136/255+.08)
-    crown=s.mat('crown-gold',(122/255,89/255,27/255),.62,136/255+.08)
-    copper=s.mat('copper',(146/255,119/255,77/255),.62,136/255+.08)
-    dark=s.mat('recess',tuple(srgb(v) for v in [.012,.013,.017]),.40,.84)
-    slate=s.mat('slate-shell',(69/255,77/255,87/255),.53,136/255+.08)
-    lower=s.mat('lower-slate',(31/255,41/255,52/255),.53,136/255+.08)
-    ventral=s.mat('ventral-copper',(77/255,37/255,22/255),.62,136/255+.08)
+    # Same authored palette as the canonical hidef fleet; portable worn maps.
+    silver=s.mat('silver',(154/255,172/255,171/255),.62,.62)
+    green=s.mat('sage',(100/255,127/255,120/255),.53,.62)
+    gold=s.mat('gold',(185/255,155/255,67/255),.62,.62)
+    crown=s.mat('crown-gold',(185/255,155/255,67/255),.62,.62)
+    copper=s.mat('copper',(168/255,101/255,67/255),.62,.62)
+    dark=s.mat('recess',(31/255,42/255,43/255),.40,.78)
+    slate=s.mat('slate-shell',(100/255,127/255,120/255),.53,.62)
+    lower=s.mat('lower-slate',(54/255,69/255,72/255),.53,.68)
+    ventral=s.mat('ventral-copper',(141/255,86/255,59/255),.62,.62)
     s.ellipsoid('Rigellian smooth oval hull',(0,0,.35),(2.20,3.05,1.00),green)
     s.ellipsoid('Rigellian slate ventral skin',(0,.03,.10),(2.12,2.98,.52),lower)
     for side in [-1,1]:s.ellipsoid('Rigellian copper ventral casing '+str(side),(side*.55,.18,-.03),(.60,2.05,.35),ventral)
@@ -92,5 +187,5 @@ def rigellian(s,role):
         s.placement.scale=(.83,.83,.83)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--role',choices=['terraform','repair'],required=True);a=p.parse_args(sys.argv[sys.argv.index('--')+1:]);s=Ship(a.root.resolve(),'rigellian',a.role);rigellian(s,a.role)
-    s.export(__file__,['Canonical-style cycle 1:green-dominant oval construction,gold fields/crown and slate/bronze casings derived from current Delphini Assault and Lazzaro Research;supersedes silver-dominant concept colours.','Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.'])
+    p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--role',choices=['terraform','repair'],required=True);a=p.parse_args(sys.argv[sys.argv.index('--')+1:]);s=HiDefRigellianShip(a.root.resolve(),'rigellian',a.role);rigellian(s,a.role)
+    s.export(__file__,['Canonical-style cycle 3:formed pressure-skin sections,panoramic crew visor and shoulder seal complement canonical hidef slate-jade,pale alloy,ochre and copper palette;seated service hatches,cooling louvres and tool covers match functional detail level while preserving quiet formed skins and articulated tools.','Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.'])

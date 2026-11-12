@@ -2,23 +2,23 @@
   "issue": 265,
   "revision": 2,
   "binaries": {
-    "blend": "565596fe779553000b10a24f0868d7e7dbdb4b9fc72d0061c1e9685d8487a27e",
-    "glb": "9362d783eb2fa8a9ce94254349c762991ced99f9370d2f928310a10a55ae8591"
+    "blend": "eb94b918ff8248f60c8f7a4f84cdb592bc85ae7476b2dedfa75d70747c33068d",
+    "glb": "7ae89bd629fe6b8c4d690292b579200076f6b0aca346b7e48c61a16a98d19bc4"
   },
   "comparison": {
-    "path": "gallery/media/proposals/engineering-ships/rigellian/repair/refinement-comparison.png",
-    "sha256": "14bed3922a7fd19cb7bea44ca1ff2276a2022a35b606d5d4681cec5da1be6023",
-    "baseline_commit": "ffa41a14d9ee2cd9189174b30b8d2790fd59d625",
-    "baseline_binary_sha256": "4932a17836eaccd2ccd5ef0d5638324d3bec3348433a73624b58b402937a9f4a",
-    "refined_binary_sha256": "9362d783eb2fa8a9ce94254349c762991ced99f9370d2f928310a10a55ae8591"
+    "path": "gallery/media/proposals/engineering-ships/rigellian/repair/canonical-style-cycle-03.png",
+    "sha256": "b7955e7abc18bb6995108e1d7113b12e4458a361fdb514ae2bb7cccbf98c373f",
+    "baseline_commit": "78ed60e8ea25bafd57c5d478cf95eab3b314ee72",
+    "baseline_binary_sha256": "f995f4d516bb85a2e643da3e237d857390b4db3b4762d25b681ab1b270a5e075",
+    "refined_binary_sha256": "7ae89bd629fe6b8c4d690292b579200076f6b0aca346b7e48c61a16a98d19bc4"
   },
   "review": "Author visual comparison;user artistic acceptance pending",
   "observations": [
-    "Reviewed actual engineering and canonical GLB imports in the same studio. Green-dominant elongated oval hull,gold fields/crown,slate gondolas and bronze/ventral casings share the Delphini Assault/Lazzaro family.",
-    "The rounded hull form is culturally supported by both canonical references;defined metal tool links remain separate from the curved body. No dense decorative panel grid.",
-    "Actual native/imported front,rear and top views plus 0/1/2/3-second working poses inspected. Precision horns retain rooted motion;repair shoulder/elbow positioning precedes independent jaw closure while the welding arm remains articulated.",
-    "Palette and effective PBR values are measured from current canonical GLB textures/factors. Untextured titanium/graphite factors are converted from linear RGB to sRGB map values. Graphite metalness/roughness are approximate within the shared material helper bounds;source hue is retained.",
-    "Function-specific tools and carrier proportions remain distinct from combat/research ships. Display is independently fitted;game scale and continuous swept clearance remain provisional. User artistic acceptance remains pending."
+    "Actual native and imported front,rear,top views show seated broad skins,flush visor and shoulder seal,not the displaced third-cycle panels.",
+    "Slate-jade,pale-alloy,ochre and copper surfaces,seated cooling louvres and captive service lids share the corrected hidef family. Copper nacelle patches and their dark inspection fields conform to the actual nacelle mesh rather than a tangent plane;the independent verifier rejects flat or lifted patches. Functional tools and broad utility proportions remain distinct.",
+    "Six sampled native/import animation poses have connected support;repair retains shoulder/elbow positioning and independently moving jaws.",
+    "Independent attachment regression checks actual broad-skin distance to the body surface in all six poses and rejects a deliberately lifted panel in native and imported models.",
+    "The initial third-cycle repair render exposed a scaled-root inheritance defect despite passing the connected-support graph. The user-requested defect repair makes all added skins hull-local;the additional technical export is recorded,not hidden as a successful first attempt."
   ],
   "limits": [
     "Authored rear/hidden engineering and provisional scale.",
