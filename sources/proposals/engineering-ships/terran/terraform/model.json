@@ -1,0 +1,97 @@
+{
+  "issue": 265,
+  "culture": "terran",
+  "role": "terraform",
+  "status": "proposed-assets-awaiting-mechanics",
+  "legacy_unit": false,
+  "runtime_integration": false,
+  "mechanics_available": false,
+  "blueprint_registered": false,
+  "package_registered": false,
+  "binaries": {
+    "blend": "6963e035adc068ae4e575b63e43c42a0679ab9bab6d80308d4964e5cbafb8885",
+    "glb": "f516f35f289f26b13b06be1a0132c45ab81f0b4c368ddf5df9eaeec58da11f2c"
+  },
+  "author": "sources/tools/blender/proposals/author_terran_engineering.py",
+  "author_sha256": "39e8d10a27104fab65da160c00d0d65a4ca9a42da6be18e97a47bc650bf87597",
+  "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
+  "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "concept": {
+    "culture": "terran",
+    "role": "terraform",
+    "concept_version": "v3",
+    "image": "sources/artwork/proposals/engineering-ships/terran/terraforming-ship.png",
+    "sha256": "1acbfc30f208bded5148fd6cd47333c67e6f7e7e9671c5256ddda9b3643905e0",
+    "prompt": "Use case: stylized-concept. A simple production-minded spacecraft design for an isometric real-time strategy GAME, a new OpenFA Terran utility unit. The user rejected previous versions as much too complicated. Prioritize immediate recognition at ONLY 64\u00e2\u20ac\u201c96 pixels wide in gameplay: one bold silhouette, 4\u00e2\u20ac\u201c6 major visual masses, large unbroken panels, minimal surface detail. Design something feasible and economical to model, animate, and draw many times on screen. Restrained late-1990s pre-rendered RTS art sensibility with clean solid 3D forms and soft bevels. NOT a detailed cinematic spaceship, NOT an industrial kitbash, NOT a photorealistic machinery showcase. Reference images are ONLY for Terran palette and material character: muted slate blue-grey metal, a few broad vermilion red painted panels, silver engine shrouds and bronze exhaust rims. Hull shape is determined by utility function; do not copy a triangular fighter silhouette.\nOne complete small spacecraft isolated on uniform pure black. Centered elevated front three-quarter view, whole silhouette with margin. Broad legible highlights, a few dark recesses, subtle understated paint edge scuffs and grime only. No fine plating, rivet fields, exposed wiring, hydraulic hoses, railings, aerials, dishes, scattered lamps, hazard stripes, ladders, cargo clutter, cockpit interior or busy greebles. No text, logos, watermark, scene, floor, people, second ship or weapons. No wheels or tracks. Work equipment idle.\nSubject: TERRAN TERRAFORMING SHIP. A simple heavy hovercraft-like spacecraft with a short broad rounded-rectangular hull, blunt nose, two chunky integrated side engine pods, one low solid control blister (single dark visor), and ONE big horizontal toothed milling cylinder below the front edge. The milling cylinder is the entire signature tool: few large teeth, clear drum and two simple supporting brackets. No other arms or tools, no conveyors, no cargo, no bridgework, no twin-pontoon open channel. Body almost as wide as long; compact and substantial rather than huge sprawling machine. Main shapes: solid hull + two engine pods + control blister + milling drum. One broad red panel on each side of the upper grey hull. Show the big front drum clearly below the hull. It must look like a useful flying terrain grader, distinctly heavier than a repair launch, while being extremely easy to recognize as a GAME UNIT.",
+    "references": [
+      {
+        "identity": "terran-00.png",
+        "scope": "Private palette reference;original pixels are not published"
+      },
+      {
+        "identity": "rotation-00.png",
+        "scope": "Private palette reference;original pixels are not published"
+      }
+    ],
+    "origin": "Supplied and selected ImageGen concept;no new generation performed by this modeling task",
+    "legacy_unit": false,
+    "runtime_integration": false,
+    "mechanics_available": false
+  },
+  "triangles": 5784,
+  "meshes": 30,
+  "materials": 6,
+  "maps": {
+    "sources/materials/proposals/engineering-ships/terran/bronze.png": "7cdb54fb7ce3d4f986d034f153146edce3a51d14678bffb27516fe851720a944",
+    "sources/materials/proposals/engineering-ships/terran/dark-visor.png": "9f3c418fc72e888be72b9e24dd02f197401fefd04aea35bf6ecbdcfb877bb481",
+    "sources/materials/proposals/engineering-ships/terran/silver-steel.png": "a30dc70af554ed510f598fbecb9408762849233786aff7eeaceb4e3a571c0f81",
+    "sources/materials/proposals/engineering-ships/terran/slate-blue.png": "9a00039267c0cfd357bcd91322bddb9689f3263635ab59ceee41cfa2ffe0aae8",
+    "sources/materials/proposals/engineering-ships/terran/vermilion.png": "370e5c8dd3139c7b542840a527bc09a81e7dd8d3ac8e82d0fd8c09029b761aa7",
+    "sources/materials/proposals/engineering-ships/terran/working-steel.png": "4064a223b6a8a5a41fe3943c5e2e47a6607faf20fe06b736b1c1d050a9380c81"
+  },
+  "bounds": [
+    -1.5350000858306885,
+    -1.7599999904632568,
+    -0.4699999690055847,
+    1.5350000858306885,
+    1.1699999570846558,
+    0.9649999737739563
+  ],
+  "joints": [
+    "MillingDrumPivot"
+  ],
+  "clips": [
+    {
+      "name": "ToolOperation",
+      "fps": 24,
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 4,
+      "motion": [
+        {
+          "joint": "MillingDrumPivot",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              97,
+              6.283185307179586
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "notes": [
+    "Based on selected supplied Terran v3 concept. Broad hull,two shrouds,quiet red fields and one role-specific tool set.",
+    "Hidden/rear surfaces,pivot engineering and arbitrary proposal units are authored. No legacy definition,blueprint,production route or game mechanic is supplied.",
+    "Repair role supports both repair and new construction in its design intent only."
+  ]
+}

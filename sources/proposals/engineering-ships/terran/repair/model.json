@@ -1,0 +1,193 @@
+{
+  "issue": 265,
+  "culture": "terran",
+  "role": "repair",
+  "status": "proposed-assets-awaiting-mechanics",
+  "legacy_unit": false,
+  "runtime_integration": false,
+  "mechanics_available": false,
+  "blueprint_registered": false,
+  "package_registered": false,
+  "binaries": {
+    "blend": "78caa1cbb7db22be4642530f611006a78eb7782aaeb0753f166c24bb812ea084",
+    "glb": "6c2bac76d8ee0ec5ea1a9d2656756e0791f6e2b92fe3cdc0e2f819010a81a7a6"
+  },
+  "author": "sources/tools/blender/proposals/author_terran_engineering.py",
+  "author_sha256": "39e8d10a27104fab65da160c00d0d65a4ca9a42da6be18e97a47bc650bf87597",
+  "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
+  "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "concept": {
+    "culture": "terran",
+    "role": "repair",
+    "concept_version": "v3",
+    "image": "sources/artwork/proposals/engineering-ships/terran/repair-ship.png",
+    "sha256": "d37057df0b86f6f402428b492d64071d5de748448813420dc2d4aa43198ce104",
+    "prompt": "Use case: stylized-concept. A simple production-minded spacecraft design for an isometric real-time strategy GAME, a new OpenFA Terran utility unit. The user rejected previous versions as much too complicated. Prioritize immediate recognition at ONLY 64\u00e2\u20ac\u201c96 pixels wide in gameplay: one bold silhouette, 4\u00e2\u20ac\u201c6 major visual masses, large unbroken panels, minimal surface detail. Design something feasible and economical to model, animate, and draw many times on screen. Restrained late-1990s pre-rendered RTS art sensibility with clean solid 3D forms and soft bevels. NOT a detailed cinematic spaceship, NOT an industrial kitbash, NOT a photorealistic machinery showcase. Reference images are ONLY for Terran palette and material character: muted slate blue-grey metal, a few broad vermilion red painted panels, silver engine shrouds and bronze exhaust rims. Hull shape is determined by utility function; do not copy a triangular fighter silhouette.\nOne complete small spacecraft isolated on uniform pure black. Centered elevated front three-quarter view, whole silhouette with margin. Broad legible highlights, a few dark recesses, subtle understated paint edge scuffs and grime only. No fine plating, rivet fields, exposed wiring, hydraulic hoses, railings, aerials, dishes, scattered lamps, hazard stripes, ladders, cargo clutter, cockpit interior or busy greebles. No text, logos, watermark, scene, floor, people, second ship or weapons. No wheels or tracks. Work equipment idle.\nSubject: TERRAN REPAIR AND CONSTRUCTION-ASSIST SHIP. A simple compact rounded rectangular service spacecraft, a short solid shallow hull with blunt front and sloped shoulders, two stubby integrated engine pods, a low dark control visor on the hull, and ONLY TWO simple articulated tool arms below the front corners. One arm ends in a broad obvious two-finger lifting claw; the other in a short thick welding nozzle with a bronze tip, not a drill. Each arm has just two chunky segments and readable round joints. Arms folded close enough to keep a compact silhouette, slightly deployed so the tips are legible. No third arm, shelves, spare component boxes, cargo decks or external sensors. Main shapes: hull + two pods + two arms. Two broad red patches on the slate grey upper hull, silver pod caps and bronze thruster rims. Smaller and lighter-looking than the heavy terraforming ship. Intentionally simple 3D GAME ASSET design with almost no small surface detail.",
+    "references": [
+      {
+        "identity": "terran-00.png",
+        "scope": "Private palette reference;original pixels are not published"
+      },
+      {
+        "identity": "rotation-00.png",
+        "scope": "Private palette reference;original pixels are not published"
+      }
+    ],
+    "origin": "Supplied and selected ImageGen concept;no new generation performed by this modeling task",
+    "legacy_unit": false,
+    "runtime_integration": false,
+    "mechanics_available": false
+  },
+  "triangles": 4908,
+  "meshes": 26,
+  "materials": 6,
+  "maps": {
+    "sources/materials/proposals/engineering-ships/terran/bronze.png": "7cdb54fb7ce3d4f986d034f153146edce3a51d14678bffb27516fe851720a944",
+    "sources/materials/proposals/engineering-ships/terran/dark-visor.png": "9f3c418fc72e888be72b9e24dd02f197401fefd04aea35bf6ecbdcfb877bb481",
+    "sources/materials/proposals/engineering-ships/terran/silver-steel.png": "a30dc70af554ed510f598fbecb9408762849233786aff7eeaceb4e3a571c0f81",
+    "sources/materials/proposals/engineering-ships/terran/slate-blue.png": "9a00039267c0cfd357bcd91322bddb9689f3263635ab59ceee41cfa2ffe0aae8",
+    "sources/materials/proposals/engineering-ships/terran/vermilion.png": "370e5c8dd3139c7b542840a527bc09a81e7dd8d3ac8e82d0fd8c09029b761aa7",
+    "sources/materials/proposals/engineering-ships/terran/working-steel.png": "4064a223b6a8a5a41fe3943c5e2e47a6607faf20fe06b736b1c1d050a9380c81"
+  },
+  "bounds": [
+    -1.2280000448226929,
+    -1.8280001878738403,
+    -0.23200002312660217,
+    1.2280000448226929,
+    0.9800000190734863,
+    0.5920000076293945
+  ],
+  "joints": [
+    "GripShoulderPivot",
+    "GripElbowPivot",
+    "WelderShoulderPivot",
+    "WelderElbowPivot"
+  ],
+  "clips": [
+    {
+      "name": "ToolOperation",
+      "fps": 24,
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 4,
+      "motion": [
+        {
+          "joint": "GripShoulderPivot",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0.2
+            ],
+            [
+              49,
+              0
+            ],
+            [
+              73,
+              -0.09000000000000001
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "GripElbowPivot",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              -0.32
+            ],
+            [
+              49,
+              0
+            ],
+            [
+              73,
+              0.14400000000000002
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "WelderShoulderPivot",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              -0.13
+            ],
+            [
+              49,
+              0
+            ],
+            [
+              73,
+              0.0585
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "joint": "WelderElbowPivot",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0
+            ],
+            [
+              25,
+              0.20800000000000002
+            ],
+            [
+              49,
+              0
+            ],
+            [
+              73,
+              -0.09360000000000002
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "notes": [
+    "Based on selected supplied Terran v3 concept. Broad hull,two shrouds,quiet red fields and one role-specific tool set.",
+    "Hidden/rear surfaces,pivot engineering and arbitrary proposal units are authored. No legacy definition,blueprint,production route or game mechanic is supplied.",
+    "Repair role supports both repair and new construction in its design intent only."
+  ]
+}
