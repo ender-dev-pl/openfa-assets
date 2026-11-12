@@ -18,6 +18,25 @@ class CultureBuildingEvidenceTests(unittest.TestCase):
     def test_all_current_exact_bundles(self):
         for row in self.records:
             with self.subTest(asset=row['id']):self.assertFalse(self.check(row)['game_client_integration'])
+    def test_all_current_source_citations(self):
+        # A partial culture must satisfy the same per-model citation contract
+        # as the completed-culture audit; missing metadata cannot wait until
+        # the final model reveals it.
+        docs=ROOT/'sources/docs/reconstruction/models'
+        functional={row['id']:row for row in json.loads((docs/'functional-text-index.json').read_bytes())['records']}
+        for record in self.records:
+            with self.subTest(asset=record['id']):
+                folder=ROOT/'sources'/Path(record['reviewed_model']['blend']).parent
+                meta=json.loads((folder/'model.json').read_bytes())
+                concept=json.loads((ROOT/meta['concept_review']).read_bytes())
+                refs=concept['original_references']
+                self.assertEqual(refs['catalogue']['image_updates'],41)
+                for directory in ['_B','_ZOOM']:
+                    self.assertTrue(any(row['directory']==directory and row['frame']==1 for row in refs['sprites']))
+                source=concept['functional_source'];self.assertEqual(source['id'],record['id'])
+                cited=[row['record'] for row in source['descriptions']] if source.get('descriptions') else source.get('records',[])
+                self.assertEqual(set(cited),{row['record'] for row in functional[record['id']]['descriptions']})
+                self.assertTrue(concept['cultural_source'])
     def test_changed_binary(self):
         row=copy.deepcopy(self.record);files=row['reviewed_model']['runtime_evidence']['files'];name=next(p for p in files if p.endswith('/model.glb'));files[name]='0'*64
         with self.assertRaisesRegex(AssertionError,'Changed runtime evidence'):self.check(row)

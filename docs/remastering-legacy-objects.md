@@ -68,6 +68,8 @@ Preserve earlier accepted editable iterations and useful verification evidence. 
 - Require the model gallery finalization step before marking a remaster complete. Identify the current canonical asset clearly; do not present obsolete renders or reports as verification of a changed model.
 - Distinguish technical source/export verification, artistic review, and game integration acceptance. Record user approval when it exists; do not infer it from passing tests or inclusion in the gallery. Game integration must verify actual client scale, orientation, lighting, animation handling, attachments, and performance as applicable, using the same canonical asset across its presentation paths.
 
+For every current culture-building concept review, retain the public citation blocks `original_references` (sprite identities, selected frames, source hashes and catalogue update evidence), `functional_source` (matching model identity and cited functional-index records), and `cultural_source`. Original-game pixels remain in the private evidence workspace. Check these blocks per delivered model, including when its culture is still incomplete; `tools/test_culture_building_evidence.py` enforces the same citation contract as the completed-culture auditor. A documentation-only citation correction must revalidate the actual original payloads and unchanged model/render bindings, and must not be reported as a new ImageGen, Blender or artistic review.
+
 ## Reference examples
 
 The [Federal Transporter IS0C](../gallery/ships-shared.md#federal-transporter-is0c) is a user-identified quality benchmark for workmanship, functional detail, materials, and presentation. Its architecture and segmentation are not templates for other cultures or objects.
