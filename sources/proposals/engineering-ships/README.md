@@ -11,3 +11,19 @@ The runtime verifier opens the saved Blend and independently imports GLB, checks
 Run author scripts with Blender and `--root` pointing to this asset repository. Run `verify_engineering_proposal.py -- --culture <culture> --role terraform|repair`. Publish encoded previews with `publish_engineering_proposals.py`; it requires FFmpeg and FFprobe. These asset-specific scripts and resulting assets have the asset license specified by the repository licensing policy.
 
 The dedicated [proposal gallery](../../../gallery/engineering-proposals.html) shows only models with current runtime evidence. Concepts without a finished model remain proposals, not completed assets. Older concept iterations remain in the private evidence workspace.
+
+## Delivered tool articulation
+
+All fourteen proposals contain one looping `ToolOperation` clip, authored at 24 fps over frames 1–97 (four seconds). The lightweight gallery videos sample playback at 6 fps; the GLB contains continuously interpolated animation. First/last poses match. Tool pivots are named editable nodes; engines and hulls remain stationary.
+
+| Culture | Terraforming Ship | Repair / Construction Assist Ship |
+| --- | --- | --- |
+| Terran | Continuous horizontal milling drum rotation | Independent shoulder/elbow motion on both arms |
+| Rigellian | Two pivoted copper-ended precision horns | Separate shoulder/elbow tool chains |
+| Braccatian | Opposing hinged crusher jaws | Single rooted ventral service yoke |
+| Mikotaj | Hinged working plates on the open frame | Tilting clamp support and two closing fingers |
+| Artemian | Two direct sliding wedge tools | Separate sliding gripper and service blade |
+| Mauna | Pivoted grading blade with mounting blocks | Separate short clamp and service-head slides |
+| Achaean | Ventral silver-edged crescent grading tool | Curved lower support about the side bearing |
+
+`verify_engineering_delivery.py` validates all fourteen source/export hashes, selected concepts, material maps, runtime and visual reviews, clip channels, preview hashes and gallery links. Pass `--base <commit>` to additionally check that canonical/runtime catalogues have not changed from that revision. Artistic user acceptance and future gameplay integration remain separate decisions.

@@ -1,0 +1,108 @@
+{
+  "issue": 265,
+  "culture": "mauna",
+  "role": "terraform",
+  "status": "proposed-assets-awaiting-mechanics",
+  "legacy_unit": false,
+  "runtime_integration": false,
+  "mechanics_available": false,
+  "blueprint_registered": false,
+  "package_registered": false,
+  "binaries": {
+    "blend": "931e40e1d8dc88903061d88e0ce13c1deb79bceb7f4e257367d5a131dfadcaa5",
+    "glb": "6bfdecfb85499f2e062c0f682c5fd45a629307c1acf597a69c5f7c6f68ff0e24"
+  },
+  "author": "sources/tools/blender/proposals/author_mauna_engineering.py",
+  "author_sha256": "67647d8b711097c4466d6b0741b22312b11ccb7136312d02f3cf9263b376b465",
+  "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
+  "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "concept": {
+    "culture": "mauna",
+    "role": "terraform",
+    "concept_version": "v2",
+    "image": "sources/artwork/proposals/engineering-ships/mauna/terraforming-ship.png",
+    "sha256": "495ac756d93443a378e4821d36cf75c5b86b7ff07862362437f5092cf9b9841b",
+    "prompt": "Use case: stylized-concept. Create ONE NEW utility spacecraft for the OpenFA isometric RTS, as a simple practical reference for a 3D GAME UNIT. Both supplied images are actual existing 3D SHIPS OF THIS CULTURE from the gallery. Use their characteristic material finish, colour distribution, structural vocabulary and component integration. This should belong naturally beside them. Do not copy weapons or recreate either reference unit. Mechanisms for the new engineering role are authored OpenFA extensions.\nCritical design target: a clear compact game silhouette at 64-96 pixels wide; roughly 4-7 major masses, only a few moving parts and large quiet surfaces. Simple does not mean rounded toy. Keep the structural character of the supplied culture. Do not add miniature machinery, cabling, greebles, rivet fields, small vents everywhere, rails, ladders, antennas, cargo racks, light arrays, cockpit interiors or intricate ornament. Restrained game-render shading, big readable highlights; not a cinematic machinery illustration. No universal human construction-vehicle chassis, no compulsory twin side engine pods, no bronze nozzle rims unless present in the supplied faction references, no generic two front elbow-arms layout. Propulsion may be flush with the hull or integrated into supports.\nOne complete SPACECRAFT, isolated on perfectly pure black, elevated front three-quarter view showing its tool, all silhouette and tool extremities comfortably inside frame. Entire image is one individual deliverable, not a contact sheet. No terrain, floor, scenery, people, text, labels, logos, watermark, weapons, wheels, tracks, walking legs, smoke, sparks or fantastical floating parts. Subtle material-specific seam dirt, tool abrasion, a few edge scratches or small dents; preserve the faction's actual paint/alloy surface rather than applying uniform scratched grey metal to everything.\nMAUNA family from the supplied 3D ships: plain matte ash-grey slabs, layered straight rectangular masses, dark recessed slots, rare small muted rust-orange fittings. Stark unornamented manufactured metal surfaces with broad bevels, lower gloss and slightly rougher finish. Not uniformly shiny bare alloy. No red racing stripes, no bronze nozzle rings, no raised human vehicle cabin, no rounded external engine pods.\nSubject: TERRAFORMING SHIP. A long low rectangular grey spacecraft, made from three simple stacked horizontal slabs, its top stepped toward the rear. One full-width black recessed propulsion slot at the stern, with two small square downward maneuver ports integrated into its underside. At the front underside ONE broad dark-steel grading blade with four large blunt cutting teeth, on two very short rectangular slider supports. One small rust-orange maintenance block flush with the back of the upper slab; no other coloured decoration. A dark sensor slit is recessed into the front slab itself. Structure should look like the simple slablike Mauna spacecraft family, not a two-engine bulldozer. 5 main masses.",
+    "references": [
+      {
+        "identity": "gallery/media/objects/mauna/max-combat-craft-type-6/front-quarter.png",
+        "sha256": "2f2094dfc72566376c12259b7e9b02b1d7d5bc68ab64a94553e630c90b0cf28c",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      },
+      {
+        "identity": "gallery/media/objects/mauna/transportation-craft-type-3/front-quarter.png",
+        "sha256": "f12ad772154c0b157615ece34167bac305cc7c3d6f8b0c99ae8033f4d88da08b",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      }
+    ],
+    "origin": "Supplied and selected ImageGen concept;no new generation performed by this modeling task",
+    "legacy_unit": false,
+    "runtime_integration": false,
+    "mechanics_available": false
+  },
+  "triangles": 3444,
+  "meshes": 19,
+  "materials": 3,
+  "maps": {
+    "sources/materials/proposals/engineering-ships/mauna/blue-grey.png": "fdd9f816c3fdcd52df43bf8137e1a1e57531c2bc7e03754405707554632a00ab",
+    "sources/materials/proposals/engineering-ships/mauna/dark-recess.png": "0afe7bd94caff80cfac74c7f4ef46018537fa5a61cb4b9a3364d8c0af289b217",
+    "sources/materials/proposals/engineering-ships/mauna/matte-grey.png": "03b2304215d8b2d345896ab15327c030d5504703cce3d0e62dc7be0919a39032",
+    "sources/materials/proposals/engineering-ships/mauna/orange-mark.png": "b60e5049385299f9dcfe051c7fdfb90b080ef4a153d5af1cd101346fa0203aef"
+  },
+  "bounds": [
+    -0.8174999952316284,
+    -2.434999942779541,
+    -0.375,
+    0.8174999952316284,
+    1.899999976158142,
+    1.0800000429153442
+  ],
+  "joints": [
+    "GradingBladePivot"
+  ],
+  "clips": [
+    {
+      "name": "ToolOperation",
+      "fps": 24,
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 4,
+      "motion": [
+        {
+          "joint": "GradingBladePivot",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0.0
+            ],
+            [
+              25,
+              0.16
+            ],
+            [
+              49,
+              0.0
+            ],
+            [
+              73,
+              -0.055999999999999994
+            ],
+            [
+              97,
+              0.0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "notes": [
+    "Based on the selected supplied mauna concept;culture-specific hull,working tool and articulation.",
+    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added."
+  ]
+}
