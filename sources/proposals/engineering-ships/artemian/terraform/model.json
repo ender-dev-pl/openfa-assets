@@ -10,11 +10,11 @@
   "blueprint_registered": false,
   "package_registered": false,
   "binaries": {
-    "blend": "bdbc2780a08da929d82038c699be2b9903f6fae2d5e74b85e3adb9df78f49742",
-    "glb": "7bd02c98eae78a215b8edc3bca3547364534f7c7ee9ee85a1aa2d7fc8887edaf"
+    "blend": "b0142d24cce483b3ed12714da2883d9be081f16cdc6a0051da2d634bd686c273",
+    "glb": "48e0e8606ee318b15da72e2685c26041f6116239e76e6fc499177dde6949b37e"
   },
   "author": "sources/tools/blender/proposals/author_artemian_engineering.py",
-  "author_sha256": "a97ba9ea91971fa7fc181b959b577e8b2353b04ee346f797aef50f52a5f6f7ed",
+  "author_sha256": "39ced493e5ab46eff449330ca2ed5acd31346f6aa88ba77bda789d2694e1dd7d",
   "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
   "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
   "refinement_helper": "sources/tools/blender/proposals/engineering_ship_refinement.py",
@@ -43,20 +43,23 @@
     "runtime_integration": false,
     "mechanics_available": false
   },
-  "triangles": 6944,
+  "triangles": 3830,
   "triangle_budget": 40000,
-  "meshes": 17,
-  "materials": 3,
+  "meshes": 24,
+  "materials": 4,
   "maps": {
     "sources/materials/proposals/engineering-ships/artemian/abraded-tool-steel-normal.png": "a4bb98eac436773b37240afe18536bbe754dbc1c5c6e14a1219b26f482a73e35",
     "sources/materials/proposals/engineering-ships/artemian/abraded-tool-steel-orm.png": "15b8e36a2bab39b078b7763b069f68183f2b7c8ef2f06952f193532a99ffb64f",
     "sources/materials/proposals/engineering-ships/artemian/abraded-tool-steel.png": "47e2d2ea154374ccdcf1e78221bb4bfe5ee3e9055e3a2fa3420c9c895e391db4",
+    "sources/materials/proposals/engineering-ships/artemian/canonical-silver-edge-normal.png": "5c1e25cb169044ebf29f38fe74cfddd8a4815e96134049f3f0f83cd382152e5b",
+    "sources/materials/proposals/engineering-ships/artemian/canonical-silver-edge-orm.png": "0418889cb968ba9e0026afdff76514a85042fe692cc660fb023e40929328b842",
+    "sources/materials/proposals/engineering-ships/artemian/canonical-silver-edge.png": "c943871b5f6828c54409239d13c332cd7897f6dfa35eb138d9a1da17e91d7e80",
     "sources/materials/proposals/engineering-ships/artemian/dark-slots-normal.png": "db894a185894f5389900a4177a42541cf76e79884747c839ccaf09467617ff07",
-    "sources/materials/proposals/engineering-ships/artemian/dark-slots-orm.png": "708e651862c1abf529d3515e621ffb6dfac2c0be9f9322d3395023ada4ab0919",
-    "sources/materials/proposals/engineering-ships/artemian/dark-slots.png": "a43d9ae3db61f303a44f381d4115811c492b212b42eb4cb8c909cb5f378d8b9d",
+    "sources/materials/proposals/engineering-ships/artemian/dark-slots-orm.png": "7a698b41ea1657b0d18bc9cdc67c3f06c4d72c5b8499624f0a4431a12cb4581d",
+    "sources/materials/proposals/engineering-ships/artemian/dark-slots.png": "6f59f9a93e4f9e06ad145dfef0a5328152d37a67d9ad6d65bb41eabbf9d696b3",
     "sources/materials/proposals/engineering-ships/artemian/deep-green-normal.png": "6e291251ace22859c5516d4811929778af27d467eda31062e0c8ec887d9b4448",
-    "sources/materials/proposals/engineering-ships/artemian/deep-green-orm.png": "01578733590129c805c155627045849e5eaf943196fbf0b3fe719abee0b28400",
-    "sources/materials/proposals/engineering-ships/artemian/deep-green.png": "b55abf1096986728690d54cf9b6e2e6147c0b4d48864b50a3bdb3080b7c39bdb",
+    "sources/materials/proposals/engineering-ships/artemian/deep-green-orm.png": "46c17bd9447006887bd1864f5c25f904684aacbe27bc21379cb05493f614ebc0",
+    "sources/materials/proposals/engineering-ships/artemian/deep-green.png": "792bd051487cd19094ce04724a1b5eec7ed88bfa2dabe4a503dcfe5a6f76dd13",
     "sources/materials/proposals/engineering-ships/artemian/machined-alloy-normal.png": "787909fb36e44521a784a1a22cd8d5d8b619cb71ec0def93d57aa42d26d3ac5a",
     "sources/materials/proposals/engineering-ships/artemian/machined-alloy-orm.png": "f4b81a9b2f66244eb90c931f7e962706eba0a423bf770f3682da3b868437af0b",
     "sources/materials/proposals/engineering-ships/artemian/machined-alloy.png": "454225ac0b422f598be283c5c8a259ef3507e4455338df0d05afd3e57a3ce1df",
@@ -64,16 +67,16 @@
     "sources/materials/proposals/engineering-ships/artemian/recess-seal-orm.png": "30df93a17a93ce1624fbbf249fbaa164546992d01edb4dad8fff9800250462ae",
     "sources/materials/proposals/engineering-ships/artemian/recess-seal.png": "f89abb2337b0a3509f8a18250e9870f7a052c982cf6b1840e963ba58759a4fcf",
     "sources/materials/proposals/engineering-ships/artemian/silver-shell-normal.png": "8e51d3c2da9655a2745e9fe700fd8c5c80eef89b1294c89bb11d1a9b46538b45",
-    "sources/materials/proposals/engineering-ships/artemian/silver-shell-orm.png": "e616fd77e0c0697ce812be87a69c02b0abf5184d7d3d27ec228722c9850aa579",
-    "sources/materials/proposals/engineering-ships/artemian/silver-shell.png": "cb01c88428946af5df379836459b3161bb83599d3b04446202c4d2692e0d647f"
+    "sources/materials/proposals/engineering-ships/artemian/silver-shell-orm.png": "299a08bae512b6377b9b730c4a21251e9032e13dfd925e6d11c76e37a5beb20b",
+    "sources/materials/proposals/engineering-ships/artemian/silver-shell.png": "94e1df4460c904a5e863907b63fc4307263eeae71616d946f890ef95a3af18e7"
   },
   "bounds": [
-    -1.0900012254714966,
-    -2.173164129257202,
-    -0.0949999988079071,
-    1.0900003910064697,
-    1.6100021600723267,
-    0.809999942779541
+    -1.4146100282669067,
+    -2.1755728721618652,
+    -0.009999999776482582,
+    1.4146100282669067,
+    1.4199999570846558,
+    0.699999988079071
   ],
   "joints": [
     "DirectToolSlide-1",
@@ -100,15 +103,15 @@
             ],
             [
               25,
-              -1.1000000286102294
+              -1.3300000286102296
             ],
             [
               49,
-              -1.2200000286102295
+              -1.3300000286102296
             ],
             [
               73,
-              -1.2620000286102295
+              -1.2200000286102295
             ],
             [
               97,
@@ -127,15 +130,15 @@
             ],
             [
               25,
-              -1.1300000286102294
+              -1.3300000286102296
             ],
             [
               49,
-              -1.2200000286102295
+              -1.3300000286102296
             ],
             [
               73,
-              -1.2515000286102296
+              -1.2200000286102295
             ],
             [
               97,
@@ -148,7 +151,7 @@
   ],
   "scale": "Authored proposal units;not calibrated meters/cells or production/hangar clearance",
   "notes": [
-    "Based on the selected supplied artemian concept;culture-specific hull,working tool and articulation.",
+    "Canonical-style cycle 2:user-directed green wedge deck and separate silver fairings based on current All-Purpose Assault and Gerla-Kans Explorer;supersedes the oval concept silhouette.",
     "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.",
     "Revision 2: defined hull planes,controlled edge radii,weighted surface normals,portable colour/ORM/tangent normal maps,material wear and attached mechanical detail."
   ]

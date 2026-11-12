@@ -1,7 +1,7 @@
 {
   "issue": 265,
   "purpose": "Construction-style comparison;current engineering proposals against current small-craft catalogue models.",
-  "limits": "Existing actual model previews;camera and lighting vary between authoring passes. Image fitting normalizes display size independently and does not establish physical game scale. Scout/research craft are labelled separately from combat/craft references.",
+  "limits": "Actual model previews;canonical GLB references use the same review studio where a source-bound reference report is available. Other cameras and lighting vary between authoring passes. Image fitting normalizes display size independently and does not establish physical game scale. Scout/research craft are labelled separately from combat/craft references.",
   "cultures": [
     {
       "culture": "terran",
@@ -47,6 +47,7 @@
           "image_sha256": "ad15467e809c17a6dfd77768e094445abc009e52838536aff3d0209064873606"
         }
       ],
+      "common_studio": false,
       "assessment": "Partial match: red fields and cool hull colours connect the designs,but the engineering ships have broad box-like bodies while the small fleet uses wedges,layered plates and round engine details.",
       "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
     },
@@ -94,6 +95,7 @@
           "image_sha256": "d6a2449b63ef4616d9a6abca977c0906f9135678518e8aac61c85c9b064aa02e"
         }
       ],
+      "common_studio": false,
       "assessment": "Partial match: low rounded shells,gold caps and copper engines agree. The engineering ships are silver-dominant with green strips;the established small fleet is green-dominant. Material-region balance needs review.",
       "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
     },
@@ -141,6 +143,7 @@
           "image_sha256": "ba2d564c17308da18578a9d705a0fdb1ba951d4fb78f86cdacffdc369d77d3eb"
         }
       ],
+      "common_studio": false,
       "assessment": "Partial match: coral,ochre and brass belong together,but the engineering barrels and broad black reinforcement strips read more industrial than the tapered,lobed small craft.",
       "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
     },
@@ -188,6 +191,7 @@
           "image_sha256": "44d7d1006a6299a1dbc4fc01e97d5cc7279e3faa641e2bbd99a22970e7390a79"
         }
       ],
+      "common_studio": false,
       "assessment": "Canonical-style pass:three reviewed cycles introduced slate-blue/gunmetal structure,dulled-gold accents,tapered rail profiles and slimmer faceted pods related to Ylikt-shan and Hiero. Gold and primary paint map medians match the canonical authored palette. Utility frames and tools remain functionally distinct;user artistic acceptance is pending.",
       "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
     },
@@ -200,8 +204,8 @@
           "status": "engineering proposal",
           "model": "sources/proposals/engineering-ships/artemian/terraform/model.glb",
           "image": "gallery/media/proposals/engineering-ships/artemian/terraform/imported-front-quarter.png",
-          "model_sha256": "7bd02c98eae78a215b8edc3bca3547364534f7c7ee9ee85a1aa2d7fc8887edaf",
-          "image_sha256": "66bc9ebfdacd20860afdd43239fba117811d827e0f16ab4b3c7296f1f27c7ba2"
+          "model_sha256": "48e0e8606ee318b15da72e2685c26041f6116239e76e6fc499177dde6949b37e",
+          "image_sha256": "5359c389b3e9c87061659343a02ff73c4178b85b3ad73bd01dcaba13e07e68a3"
         },
         {
           "name": "Repair Ship",
@@ -209,8 +213,8 @@
           "status": "engineering proposal",
           "model": "sources/proposals/engineering-ships/artemian/repair/model.glb",
           "image": "gallery/media/proposals/engineering-ships/artemian/repair/imported-front-quarter.png",
-          "model_sha256": "795de23c174c258b335d3e1ec54a93005780625e18407800b2251a43d428a077",
-          "image_sha256": "1607f92da197ddce3011e0959d84073bbb3ed10e44872ffcb8fd7f5ce09c00d7"
+          "model_sha256": "6931c183a8874880f8f2dca62379b51673b4e1abec63bfeaebeff7cb52689672",
+          "image_sha256": "27fa8dea8062f0e368a07c5ce5b927d3502ff4f43ce90ceaddb2163a2ebe2567"
         },
         {
           "name": "All-Purpose Assault",
@@ -219,9 +223,11 @@
           "catalogue_id": "openfa:ship/artemian/all-purpose-assault",
           "stage": "mobile-ship-remaster",
           "model": "sources/objects/artemian/all-purpose-assault/model.glb",
-          "image": "gallery/media/objects/artemian/all-purpose-assault/front-quarter.png",
+          "image": "gallery/media/proposals/engineering-ships/artemian/canonical-references/all-purpose-assault-front-quarter.png",
           "model_sha256": "fd39236bf4aa9ee616adcb65c37dbcc24ae92b76b827e7c0fc7fcf0b61b73ee1",
-          "image_sha256": "791bffd385709b1f0d4ff2637d97cf2b4dd1488c39e1942bc4a112d32d4db641"
+          "image_sha256": "050397ebe753e57f0b583c1aa349cba2267e5e800b1887c53f8066f54acd440c",
+          "catalogue_image": "gallery/media/objects/artemian/all-purpose-assault/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
         },
         {
           "name": "Gerla-Kans Explorer",
@@ -230,12 +236,15 @@
           "catalogue_id": "openfa:ship/artemian/gerla-kans-explorer",
           "stage": "mobile-ship-remaster",
           "model": "sources/objects/artemian/gerla-kans-explorer/model.glb",
-          "image": "gallery/media/objects/artemian/gerla-kans-explorer/front-quarter.png",
+          "image": "gallery/media/proposals/engineering-ships/artemian/canonical-references/gerla-kans-explorer-front-quarter.png",
           "model_sha256": "68f44c6f41378cd423ad6e68d3a754f52429aa470ceef1a6b8056009c4e5b57c",
-          "image_sha256": "25b666b67e7e320349eb3b6ee4b6d79fa336fc87147a77864561cb545647ec67"
+          "image_sha256": "dc320a7c99a0fe11c05bd71c98c1be4553f3d40eed7164022f54631d0080c397",
+          "catalogue_image": "gallery/media/objects/artemian/gerla-kans-explorer/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
         }
       ],
-      "assessment": "Partial match: silver and green remain recognisable. Smooth oval engineering shells lose the wedge-shaped green base and separate silver fairings of the small fleet;material distribution and section breaks need review.",
+      "common_studio": true,
+      "assessment": "Canonical-style pass:two reviewed cycles introduced a pointed green deck,separated faceted silver fairings and canonical material medians. Current canonical GLB references are rendered in the same review studio. Repair has independent sliders,wrist and closing jaws;user artistic acceptance is pending.",
       "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
     },
     {
@@ -282,6 +291,7 @@
           "image_sha256": "48e62e2a388dc600439a279686e9adb0f3e016898689b92b62a492c947478eda"
         }
       ],
+      "common_studio": false,
       "assessment": "Close structural match: rectangular volumes,stepped sections,slots and grey/blue-grey materials connect the ships. Surface finish differs;lighting and separate rendering passes limit exact colour judgement.",
       "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
     },
@@ -329,6 +339,7 @@
           "image_sha256": "3e13d83b0a70124102f64e3c89610c13bc672e5246231e132c21fa7960343ed5"
         }
       ],
+      "common_studio": false,
       "assessment": "Close match: copper spindle hulls,thin red/silver crescents and sparse hatches repeat the fleet language. The repaired ship now has mirrored wings;small functional tooling remains distinct.",
       "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
     }

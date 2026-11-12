@@ -43,28 +43,56 @@ def repair_tool(s,prefix,a,b,c,steel,copper,gold,left=True,parent=None):
         s.cyl(prefix+' nozzle housing',(c[0],c[1]-.1,c[2]),.14,.27,steel,(0,1,0),k);s.ring(prefix+' gold nozzle',(c[0],c[1]-.29,c[2]),.12,.06,.22,gold,(0,1,0),k)
     cycle(s,j,0,.16 if left else -.12);cycle(s,k,0,-.28 if left else .22)
 
+def fairing(s,name,p,size,mat,port=False):
+    outline=([(-.44,-.50),(.44,-.50),(.50,-.18),(.44,.30),(.20,.50),(-.20,.50),(-.44,.30),(-.50,-.18)] if port else [(-.10,-.58),(.10,-.58),(.50,-.15),(.44,.34),(.20,.50),(-.20,.50),(-.44,.34),(-.50,-.15)])
+    w,l,h=size;n=len(outline)
+    v=[(p[0]+x*w*scale,p[1]+y*l*scale,p[2]+z*h) for scale,z in [(.90,-.50),(1,-.10),(.62,.50)] for x,y in outline]
+    f=[tuple(reversed(range(n))),tuple(range(2*n,3*n))]+[(j*n+i,j*n+(i+1)%n,(j+1)*n+(i+1)%n,(j+1)*n+i) for j in range(2) for i in range(n)]
+    return s.solid(name,v,f,mat,.014)
+
+
 def artemian(s,role):
-    silver=s.mat('silver-shell',(.53,.58,.57),.65,.50);green=s.mat('deep-green',(.075,.23,.13),.35,.60);dark=s.mat('dark-slots',(.025,.035,.03),.4,.70)
-    rim=s.ellipsoid('Artemian green lower rim',(0,0,.18),(2.18,3.22,.55),green);shell=s.ellipsoid('Artemian single silver shell',(0,.05,.39),(2.16,3.12,.84),silver)
-    for part in [rim,shell]:
-        cutter=s.box('Temporary blunt nose cut',(0,-2.20,.40),(4,2,3),dark,0);s.cut(part,cutter)
-        for x in [-.47,.47]:
-            cutter=s.box('Temporary actual sliding tool aperture',(x,-1.30,.23),(.56,.65,.32),dark,0);s.cut(part,cutter)
-    for cx,y in [(-.60,-.45),(.60,-.45),(0,.95)]:
-        for offset in [-.12,0,.12]:
-            x=cx+offset;z=.39+.42*math.sqrt(max(.01,1-(x/1.08)**2-((y-.05)/1.56)**2));s.box('Artemian sparse dorsal vent '+str(cx)+str(offset),(x,y,z),(.055,.24,.035),dark,.01)
+    # Current canonical atlas medians,not colours guessed from the lit concept.
+    silver=s.mat('silver-shell',(136/255,144/255,147/255),198/255-.12,139/255+.08)
+    green=s.mat('deep-green',(61/255,128/255,71/255),198/255-.12,140/255+.08)
+    dark=s.mat('dark-slots',(16/255,21/255,25/255),30/255,140/255+.08)
+    edge=s.mat('canonical-silver-edge',(170/255,180/255,184/255),198/255-.12,140/255+.08)
+    plate(s,'Artemian green wedge hull',[(-.12,-2.05),(.12,-2.05),(1.42,.87),(1.15,1.42),(-1.15,1.42),(-1.42,.87)],.11,.24,green)
+    fairing(s,'Artemian single silver shell main fairing',(0,.12,.42),(.76,2.30,.56),silver)
     for side in [-1,1]:
-        x=side*.47;s.box('Artemian front recessed tool slot '+str(side),(x,-.965,.23),(.54,.025,.30),dark,.045);j=s.joint('DirectToolSlide'+str(side),(x,-1.22,.23));s.box('Artemian inner sliding tool rail '+str(side),(x,-1.05,.23),(.28,.55,.18),green,.02,j)
-        if role=='terraform':plate(s,'Artemian stout green wedge '+str(side),[(x-.24,-1.19),(x+.24,-1.19),(x+.25,-2.02),(x-.25,-2.18)],.22,.24,green,j)
+        x=side*.96;pod=fairing(s,'Artemian silver tool fairing '+str(side),(x,-.12,.35),(.58,1.72,.44),silver,True)
+        cutter=s.box('Temporary actual sliding tool aperture',(x,-1.14,.24),(.44,.52,.29),dark,.008);s.cut(pod,cutter)
+    for y in [.30,.66]:
+        for x in [-.12,0,.12]:s.box('Artemian sparse dorsal vent '+str(y)+str(x),(x,y,.705),(.055,.24,.035),dark,.008)
+    for side in [-1,1]:
+        x=side*.66;s.box('Artemian green service hatch '+str(side),(x,.94,.242),(.34,.38,.025),green,.012)
+        for y in [.87,1.00]:s.box('Artemian green hatch inset '+str(side)+str(y),(x,y,.255),(.20,.045,.018),dark,.004)
+    for side in [-1,1]:
+        x=side*.96;s.box('Artemian front recessed tool slot '+str(side),(x,-.88,.24),(.40,.025,.27),dark,.018)
+        j=s.joint('DirectToolSlide'+str(side),(x,-1.22,.23));s.box('Artemian inner sliding tool rail '+str(side),(x,-1.05,.23),(.28,.55,.18),green,.02,j)
+        if role=='terraform':
+            polygon=[(x-.23,-1.19),(x+.23,-1.19),(x+.24,-2.02),(x-.24,-2.18)]
+            v=[(px,py,.10) for px,py in polygon]+[(px,py,.34 if py>-1.5 else .19) for px,py in polygon]
+            f=[(3,2,1,0),(4,5,6,7)]+[(i,(i+1)%4,(i+1)%4+4,i+4) for i in range(4)]
+            s.solid('Artemian stout green wedge '+str(side),v,f,green,.014,j)
+            s.box('Artemian replaceable wedge edge '+str(side),(x,-2.09,.16),(.43,.10,.055),edge,.006,j)
         elif side<0:
-            s.box('Artemian short gripper bridge',(x,-1.46,.23),(.47,.40,.20),silver,.045,j)
-            for offset in [-.17,.17]:s.box('Artemian short gripper tine '+str(offset),(x+offset,-1.80,.23),(.13,.45,.20),silver,.035,j)
+            wrist=s.joint('ArtemianGripperWrist',(x,-1.46,.23),j)
+            s.box('Artemian short gripper bridge',(x,-1.46,.23),(.47,.40,.20),silver,.025,wrist)
+            for sign in [-1,1]:
+                finger=s.joint('ArtemianGripperFinger'+str(sign),(x+sign*.17,-1.60,.23),wrist)
+                s.cyl('Artemian gripper finger bearing '+str(sign),(x+sign*.17,-1.60,.23),.065,.23,edge,parent=finger)
+                s.box('Artemian short gripper tine '+str(sign),(x+sign*.17,-1.82,.23),(.13,.45,.20),silver,.018,finger)
+                s.animate(finger,2,[(1,0),(25,0),(49,-sign*.20),(73,0),(97,0)],'rotation_euler')
+            s.animate(wrist,0,[(1,0),(25,.12),(49,.12),(73,0),(97,0)],'rotation_euler')
         else:
-            s.box('Artemian broad service blade',(x,-1.63,.23),(.39,.94,.19),silver,.04,j)
-            for y in [-1.56,-1.75,-1.94]:s.box('Artemian service blade slot '+str(y),(x,y,.33),(.28,.07,.035),dark,.01,j)
-        cycle(s,j,1,.12 if side<0 else .09,'location')
+            blade=s.box('Artemian broad service blade',(x,-1.63,.23),(.39,.94,.19),silver,.025,j)
+            for y in [-1.56,-1.75,-1.94]:
+                cutter=s.box('Temporary service blade recess',(x,y,.335),(.28,.07,.08),dark,.006,j);s.cut(blade,cutter)
+                s.box('Artemian service blade slot '+str(y),(x,y,.302),(.27,.06,.025),dark,.004,j)
+        start=j.location.y;s.animate(j,1,[(1,start),(25,start-.11),(49,start-.11),(73,start),(97,start)],'location')
     if role=='repair':s.placement.scale=(.84,.84,.84)
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--role',choices=['terraform','repair'],required=True);a=p.parse_args(sys.argv[sys.argv.index('--')+1:]);s=Ship(a.root.resolve(),'artemian',a.role);artemian(s,a.role)
-    s.export(__file__,['Based on the selected supplied artemian concept;culture-specific hull,working tool and articulation.','Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.'])
+    s.export(__file__,['Canonical-style cycle 2:user-directed green wedge deck and separate silver fairings based on current All-Purpose Assault and Gerla-Kans Explorer;supersedes the oval concept silhouette.','Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.'])
