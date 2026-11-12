@@ -1,0 +1,219 @@
+{
+  "issue": 265,
+  "culture": "mikotaj",
+  "role": "terraform",
+  "max_cycles": 3,
+  "final_user_artistic_acceptance": false,
+  "cycles": [
+    {
+      "number": 1,
+      "status": "visually-reviewed",
+      "baseline_commit": "af7c385de5b1ddb599d1212ee8ce234660ad2690",
+      "baseline_binaries": {
+        "blend": "4e00a8065ea9cf7dfc4d80d620139d5d1fe1970c1e57aa276f432f0d2e2502ff",
+        "glb": "67eebb8045e5791e71023f5681f862ec2abdf79ae98572d18d86d6552d9cca69"
+      },
+      "baseline_author_sha256": "d339da5b72754cea5741048169eb58491f0f5e9c19384a2b3191a67a5db03247",
+      "canonical_references": [
+        {
+          "name": "Ylikt-shan",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/ylikt-shan",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/ylikt-shan/model.glb",
+          "image": "gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png",
+          "model_sha256": "52de04f4769a1f321ced5dd41d8c5a00e69f326e9de28be1828a60bf4c890b1c",
+          "image_sha256": "7a2daf457221cb69b3ec0c6db1d50a58f3e33c99b3208e2ea03c949dc3bba5ef"
+        },
+        {
+          "name": "Hiero",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/hiero",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/hiero/model.glb",
+          "image": "gallery/media/objects/mikotaj/hiero/front-quarter.png",
+          "model_sha256": "eeb25924535c4c059c130777922f79790beb18963f6debdb3749fb6635d9161a",
+          "image_sha256": "44d7d1006a6299a1dbc4fc01e97d5cc7279e3faa641e2bbd99a22970e7390a79"
+        }
+      ],
+      "intent": "Blue-grey faceted construction with gold connectors,tapered longitudinal profiles,lower angular modules. Preserve tools and add coordinated independent arm/jaw motion where appropriate.",
+      "decision": "needs-next-cycle",
+      "author_sha256": "a25ddf59537f32b7dd6a47447032c4d770ba0b2b37daa467430eca210ea75ccf",
+      "binaries": {
+        "blend": "c09bf346f24c3b2b225022a0d2dc16279bb7873939232230619a3ffb2fe42616",
+        "glb": "dbe4185d297a28cee3751f3520b5e56820d4d0d0d09a624863907896cb748796"
+      },
+      "runtime_review_sha256": "a9aceea10861a9c11c7449ce1850619d80312e10baaad37e1b9ac8e617432bff",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/terraform/canonical-style-cycle-01.png",
+        "sha256": "e109b1b9c291b63cb703e5ad7e372dd3527e36d01bbebb766cd23546ac44b9bc"
+      },
+      "observations": [
+        "Blue-grey/gold material distribution now relates to Ylikt-shan and Hiero;green/copper mismatch removed.",
+        "Defined planes and clipped module edges retained. Terraform frame still reads rectangular and repair side modules remain too short relative to canonical longitudinal profiles.",
+        "Native/imported runtime checks pass. Repair support positioning and independent closing fingers were inspected in actual rendered working poses."
+      ],
+      "remaining": [
+        "More tapered rails with deliberate inset service channels.",
+        "Thinner true wedge working plates and longer side modules;closer-fitting faceted core straps."
+      ],
+      "actual_glb_preview": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/terraform/canonical-style-cycle-01-glb.png",
+        "sha256": "28817f855df2e7cb7b6764525b6a1ff643229962b055a7cd69b8977c4386e00a",
+        "description": "Actual cycle-1 GLB panel extracted from the retained comparison;display-normalized"
+      }
+    },
+    {
+      "number": 2,
+      "status": "visually-reviewed",
+      "baseline_commit": "af7c385de5b1ddb599d1212ee8ce234660ad2690",
+      "baseline_binaries": {
+        "blend": "c09bf346f24c3b2b225022a0d2dc16279bb7873939232230619a3ffb2fe42616",
+        "glb": "dbe4185d297a28cee3751f3520b5e56820d4d0d0d09a624863907896cb748796"
+      },
+      "baseline_author_sha256": "a25ddf59537f32b7dd6a47447032c4d770ba0b2b37daa467430eca210ea75ccf",
+      "canonical_references": [
+        {
+          "name": "Ylikt-shan",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/ylikt-shan",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/ylikt-shan/model.glb",
+          "image": "gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png",
+          "model_sha256": "52de04f4769a1f321ced5dd41d8c5a00e69f326e9de28be1828a60bf4c890b1c",
+          "image_sha256": "7a2daf457221cb69b3ec0c6db1d50a58f3e33c99b3208e2ea03c949dc3bba5ef"
+        },
+        {
+          "name": "Hiero",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/hiero",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/hiero/model.glb",
+          "image": "gallery/media/objects/mikotaj/hiero/front-quarter.png",
+          "model_sha256": "eeb25924535c4c059c130777922f79790beb18963f6debdb3749fb6635d9161a",
+          "image_sha256": "44d7d1006a6299a1dbc4fc01e97d5cc7279e3faa641e2bbd99a22970e7390a79"
+        }
+      ],
+      "intent": "Address reviewed cycle-1 residuals with tapered hull-like rails,real service recesses,true wedge tools,longer slimmer side modules and faceted close-fitting straps. Preserve existing coordinated arm/jaw animation.",
+      "baseline_preview": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/terraform/canonical-style-cycle-01-glb.png",
+        "sha256": "28817f855df2e7cb7b6764525b6a1ff643229962b055a7cd69b8977c4386e00a",
+        "description": "Actual cycle-1 GLB panel extracted from the retained comparison;display-normalized"
+      },
+      "decision": "needs-next-cycle",
+      "author_sha256": "ce080cde9f0a861a4cd5f6752c66a035663b1189d21382ce8324459c6ff0ff5c",
+      "binaries": {
+        "blend": "b662bd0886805917715deba74398eae4b60917b8aa15567906b2c1fa338129fc",
+        "glb": "ebe7fdc99b0316a688287e22c203a5ac30352e6dbe12b696b5ceed1419d9bd4f"
+      },
+      "runtime_review_sha256": "52647c56079eae7bfb2054aca1bdf7b775f7c9135fc3709bd650824bb9231797",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/terraform/canonical-style-cycle-02.png",
+        "sha256": "f65dc6d464eff42664c177c36eff61fb45d2c26cfd17df2a435883b7e1595588"
+      },
+      "actual_glb_preview": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/terraform/canonical-style-cycle-02-glb.png",
+        "sha256": "8967583a38b28c3d3e732feb2211ae3cf87746b9fb8ee13106d41a8ed7a3aa3e"
+      },
+      "observations": [
+        "Actual canonical comparison reviewed: tapered hull-like rails and slimmer side modules now relate more closely to Ylikt-shan;defined facet breaks preserved.",
+        "Terraform working plates are true wedges with replaceable metal edges;repair has close-fitting folded straps and independently articulated jaws. Actual closing pose inspected.",
+        "User identified remaining gold mismatch. Canonical map median is RGB 175/157/76;engineering gold median is RGB 158/105/28."
+      ],
+      "remaining": [
+        "Final material-only correction to canonical slate-blue,gunmetal and dulled-gold palette with comparable roughness/metalness. No further geometry change planned."
+      ]
+    },
+    {
+      "number": 3,
+      "status": "visually-reviewed",
+      "baseline_commit": "af7c385de5b1ddb599d1212ee8ce234660ad2690",
+      "baseline_binaries": {
+        "blend": "b662bd0886805917715deba74398eae4b60917b8aa15567906b2c1fa338129fc",
+        "glb": "ebe7fdc99b0316a688287e22c203a5ac30352e6dbe12b696b5ceed1419d9bd4f"
+      },
+      "baseline_author_sha256": "ce080cde9f0a861a4cd5f6752c66a035663b1189d21382ce8324459c6ff0ff5c",
+      "baseline_preview": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/terraform/canonical-style-cycle-02-glb.png",
+        "sha256": "8967583a38b28c3d3e732feb2211ae3cf87746b9fb8ee13106d41a8ed7a3aa3e"
+      },
+      "canonical_references": [
+        {
+          "name": "Ylikt-shan",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/ylikt-shan",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/ylikt-shan/model.glb",
+          "image": "gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png",
+          "model_sha256": "52de04f4769a1f321ced5dd41d8c5a00e69f326e9de28be1828a60bf4c890b1c",
+          "image_sha256": "7a2daf457221cb69b3ec0c6db1d50a58f3e33c99b3208e2ea03c949dc3bba5ef"
+        },
+        {
+          "name": "Hiero",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/hiero",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/hiero/model.glb",
+          "image": "gallery/media/objects/mikotaj/hiero/front-quarter.png",
+          "model_sha256": "eeb25924535c4c059c130777922f79790beb18963f6debdb3749fb6635d9161a",
+          "image_sha256": "44d7d1006a6299a1dbc4fc01e97d5cc7279e3faa641e2bbd99a22970e7390a79"
+        }
+      ],
+      "canonical_palette_source": {
+        "path": "sources/materials/mikotaj/mobile-ships/colour.png",
+        "sha256": "47f041f774e57d298511c3e17caac1bb9dad3658b0d474d64f017786d39fd87b",
+        "gold_srgb": [
+          175,
+          157,
+          76
+        ],
+        "slate_blue_srgb": [
+          82,
+          105,
+          147
+        ],
+        "gunmetal_srgb": [
+          72,
+          83,
+          100
+        ]
+      },
+      "intent": "User correction:match measured canonical dulled gold and main slate-blue/gunmetal material palette;align roughness/metalness. Material-only final third cycle;geometry and coordinated animation retained.",
+      "decision": "author-review-complete",
+      "author_sha256": "562d52087ef691e95aefdaffe3bc3ca208a7b5179065b1ba0e6571fc282fe4d7",
+      "binaries": {
+        "blend": "3dd627b8ecc6ad64aafc76a4cc5a79f18d158b9c7a3c0bcd9a56e63a6f6a0f0b",
+        "glb": "2b1ff96f611372bbbe7475d64524d2386817c7565b607eadee2be205d1120932"
+      },
+      "runtime_review_sha256": "e8f63c23b1aaedf9d6f4112189e7332966edfe35c5becda762ecc2adf296e21c",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/terraform/canonical-style-cycle-03.png",
+        "sha256": "d24e93f5316ce7376663c64bf2934d8a675056711b1edf900180f0626d4de780"
+      },
+      "observations": [
+        "Compared actual imported GLB against Ylikt-shan and Hiero:slate-blue/gunmetal structure,dulled-gold fittings,clipped modules and tapered profiles now share the established fleet language.",
+        "Final material pass corrects the user-identified orange gold. Actual colour-map medians match canonical gold RGB 175/157/76 and slate-blue RGB 82/105/147.",
+        "Reviewed native/imported front,rear and top views and actual 0/1/2/3-second working poses. Repair has coordinated support positioning and independently closing fingers;no hull motion or detached tools.",
+        "Geometry and authored articulation are unchanged from reviewed cycle 2. Utility frame layout remains functionally distinct from combat ships;comparison display is independently fitted and canonical camera/lighting differ. User artistic acceptance remains pending."
+      ],
+      "remaining": [
+        "User artistic acceptance.",
+        "Provisional game scale,platform profiling and continuous swept collision clearance are outside asset-proposal verification."
+      ],
+      "no_automatic_further_cycle": true
+    }
+  ],
+  "cycles_used": 3,
+  "cycles_remaining": 0,
+  "current_binaries": {
+    "blend": "3dd627b8ecc6ad64aafc76a4cc5a79f18d158b9c7a3c0bcd9a56e63a6f6a0f0b",
+    "glb": "2b1ff96f611372bbbe7475d64524d2386817c7565b607eadee2be205d1120932"
+  },
+  "status": "author-style-review-complete-user-acceptance-pending"
+}

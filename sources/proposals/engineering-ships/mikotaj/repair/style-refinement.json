@@ -1,0 +1,219 @@
+{
+  "issue": 265,
+  "culture": "mikotaj",
+  "role": "repair",
+  "max_cycles": 3,
+  "final_user_artistic_acceptance": false,
+  "cycles": [
+    {
+      "number": 1,
+      "status": "visually-reviewed",
+      "baseline_commit": "af7c385de5b1ddb599d1212ee8ce234660ad2690",
+      "baseline_binaries": {
+        "blend": "177426e44ec26ccd4958534df79a4279ec828a0b42e43e51c48340051f0756f3",
+        "glb": "fd8bf1df4a452023df82c0c14e67f5dbe4ea6564828ff43e320586409dbfbc77"
+      },
+      "baseline_author_sha256": "d339da5b72754cea5741048169eb58491f0f5e9c19384a2b3191a67a5db03247",
+      "canonical_references": [
+        {
+          "name": "Ylikt-shan",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/ylikt-shan",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/ylikt-shan/model.glb",
+          "image": "gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png",
+          "model_sha256": "52de04f4769a1f321ced5dd41d8c5a00e69f326e9de28be1828a60bf4c890b1c",
+          "image_sha256": "7a2daf457221cb69b3ec0c6db1d50a58f3e33c99b3208e2ea03c949dc3bba5ef"
+        },
+        {
+          "name": "Hiero",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/hiero",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/hiero/model.glb",
+          "image": "gallery/media/objects/mikotaj/hiero/front-quarter.png",
+          "model_sha256": "eeb25924535c4c059c130777922f79790beb18963f6debdb3749fb6635d9161a",
+          "image_sha256": "44d7d1006a6299a1dbc4fc01e97d5cc7279e3faa641e2bbd99a22970e7390a79"
+        }
+      ],
+      "intent": "Blue-grey faceted construction with gold connectors,tapered longitudinal profiles,lower angular modules. Preserve tools and add coordinated independent arm/jaw motion where appropriate.",
+      "decision": "needs-next-cycle",
+      "author_sha256": "a25ddf59537f32b7dd6a47447032c4d770ba0b2b37daa467430eca210ea75ccf",
+      "binaries": {
+        "blend": "ffd5ece09f84c2357f7c7dc6f66aa119a7e665e7dacbe1175801890936f27fa2",
+        "glb": "27640258f615c736ae9c0a7137f41c3375f509dfa9894d35700caed79ffe5a23"
+      },
+      "runtime_review_sha256": "964e8369797d9fe1d8ead1b3b890e4948fc2845bd604b1aca26fed949e1d26b0",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/repair/canonical-style-cycle-01.png",
+        "sha256": "8f0b9fd0d3564c44b88024696b58423ab262bb2e9cc31d9eaa821d1c89b584f2"
+      },
+      "observations": [
+        "Blue-grey/gold material distribution now relates to Ylikt-shan and Hiero;green/copper mismatch removed.",
+        "Defined planes and clipped module edges retained. Terraform frame still reads rectangular and repair side modules remain too short relative to canonical longitudinal profiles.",
+        "Native/imported runtime checks pass. Repair support positioning and independent closing fingers were inspected in actual rendered working poses."
+      ],
+      "remaining": [
+        "More tapered rails with deliberate inset service channels.",
+        "Thinner true wedge working plates and longer side modules;closer-fitting faceted core straps."
+      ],
+      "actual_glb_preview": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/repair/canonical-style-cycle-01-glb.png",
+        "sha256": "eb37798c20d686ef7730ba5fb5a20b0aee83f91e437c81382ed85dd9e3ddb675",
+        "description": "Actual cycle-1 GLB panel extracted from the retained comparison;display-normalized"
+      }
+    },
+    {
+      "number": 2,
+      "status": "visually-reviewed",
+      "baseline_commit": "af7c385de5b1ddb599d1212ee8ce234660ad2690",
+      "baseline_binaries": {
+        "blend": "ffd5ece09f84c2357f7c7dc6f66aa119a7e665e7dacbe1175801890936f27fa2",
+        "glb": "27640258f615c736ae9c0a7137f41c3375f509dfa9894d35700caed79ffe5a23"
+      },
+      "baseline_author_sha256": "a25ddf59537f32b7dd6a47447032c4d770ba0b2b37daa467430eca210ea75ccf",
+      "canonical_references": [
+        {
+          "name": "Ylikt-shan",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/ylikt-shan",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/ylikt-shan/model.glb",
+          "image": "gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png",
+          "model_sha256": "52de04f4769a1f321ced5dd41d8c5a00e69f326e9de28be1828a60bf4c890b1c",
+          "image_sha256": "7a2daf457221cb69b3ec0c6db1d50a58f3e33c99b3208e2ea03c949dc3bba5ef"
+        },
+        {
+          "name": "Hiero",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/hiero",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/hiero/model.glb",
+          "image": "gallery/media/objects/mikotaj/hiero/front-quarter.png",
+          "model_sha256": "eeb25924535c4c059c130777922f79790beb18963f6debdb3749fb6635d9161a",
+          "image_sha256": "44d7d1006a6299a1dbc4fc01e97d5cc7279e3faa641e2bbd99a22970e7390a79"
+        }
+      ],
+      "intent": "Address reviewed cycle-1 residuals with tapered hull-like rails,real service recesses,true wedge tools,longer slimmer side modules and faceted close-fitting straps. Preserve existing coordinated arm/jaw animation.",
+      "baseline_preview": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/repair/canonical-style-cycle-01-glb.png",
+        "sha256": "eb37798c20d686ef7730ba5fb5a20b0aee83f91e437c81382ed85dd9e3ddb675",
+        "description": "Actual cycle-1 GLB panel extracted from the retained comparison;display-normalized"
+      },
+      "decision": "needs-next-cycle",
+      "author_sha256": "ce080cde9f0a861a4cd5f6752c66a035663b1189d21382ce8324459c6ff0ff5c",
+      "binaries": {
+        "blend": "b459e64768ca78084f6155aed300b99da6f327453b00c5c0fb26a17e8cccaed8",
+        "glb": "0abf7f3108e6a12051cd1d90d4f6c00448d415bc2da18d9f59c06bf93ccf1f36"
+      },
+      "runtime_review_sha256": "3cad7f71ed1f756a8717adb96e91d6c2e91df4c77786b6881757907cd4ce48ae",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/repair/canonical-style-cycle-02.png",
+        "sha256": "3867fd505e3e8a3c7088d7e420544eaef0b5be85b0e6d9def0ef8a07323329c5"
+      },
+      "actual_glb_preview": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/repair/canonical-style-cycle-02-glb.png",
+        "sha256": "6717ef121ba8b01545cf3a7f4536fb57a7ae0007038a97df9709dbb7bc49811c"
+      },
+      "observations": [
+        "Actual canonical comparison reviewed: tapered hull-like rails and slimmer side modules now relate more closely to Ylikt-shan;defined facet breaks preserved.",
+        "Terraform working plates are true wedges with replaceable metal edges;repair has close-fitting folded straps and independently articulated jaws. Actual closing pose inspected.",
+        "User identified remaining gold mismatch. Canonical map median is RGB 175/157/76;engineering gold median is RGB 158/105/28."
+      ],
+      "remaining": [
+        "Final material-only correction to canonical slate-blue,gunmetal and dulled-gold palette with comparable roughness/metalness. No further geometry change planned."
+      ]
+    },
+    {
+      "number": 3,
+      "status": "visually-reviewed",
+      "baseline_commit": "af7c385de5b1ddb599d1212ee8ce234660ad2690",
+      "baseline_binaries": {
+        "blend": "b459e64768ca78084f6155aed300b99da6f327453b00c5c0fb26a17e8cccaed8",
+        "glb": "0abf7f3108e6a12051cd1d90d4f6c00448d415bc2da18d9f59c06bf93ccf1f36"
+      },
+      "baseline_author_sha256": "ce080cde9f0a861a4cd5f6752c66a035663b1189d21382ce8324459c6ff0ff5c",
+      "baseline_preview": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/repair/canonical-style-cycle-02-glb.png",
+        "sha256": "6717ef121ba8b01545cf3a7f4536fb57a7ae0007038a97df9709dbb7bc49811c"
+      },
+      "canonical_references": [
+        {
+          "name": "Ylikt-shan",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/ylikt-shan",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/ylikt-shan/model.glb",
+          "image": "gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png",
+          "model_sha256": "52de04f4769a1f321ced5dd41d8c5a00e69f326e9de28be1828a60bf4c890b1c",
+          "image_sha256": "7a2daf457221cb69b3ec0c6db1d50a58f3e33c99b3208e2ea03c949dc3bba5ef"
+        },
+        {
+          "name": "Hiero",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/hiero",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/hiero/model.glb",
+          "image": "gallery/media/objects/mikotaj/hiero/front-quarter.png",
+          "model_sha256": "eeb25924535c4c059c130777922f79790beb18963f6debdb3749fb6635d9161a",
+          "image_sha256": "44d7d1006a6299a1dbc4fc01e97d5cc7279e3faa641e2bbd99a22970e7390a79"
+        }
+      ],
+      "canonical_palette_source": {
+        "path": "sources/materials/mikotaj/mobile-ships/colour.png",
+        "sha256": "47f041f774e57d298511c3e17caac1bb9dad3658b0d474d64f017786d39fd87b",
+        "gold_srgb": [
+          175,
+          157,
+          76
+        ],
+        "slate_blue_srgb": [
+          82,
+          105,
+          147
+        ],
+        "gunmetal_srgb": [
+          72,
+          83,
+          100
+        ]
+      },
+      "intent": "User correction:match measured canonical dulled gold and main slate-blue/gunmetal material palette;align roughness/metalness. Material-only final third cycle;geometry and coordinated animation retained.",
+      "decision": "author-review-complete",
+      "author_sha256": "562d52087ef691e95aefdaffe3bc3ca208a7b5179065b1ba0e6571fc282fe4d7",
+      "binaries": {
+        "blend": "378049f97aef7095f53037a19baa2db898abf392e18efab2baf7bd04e1badd29",
+        "glb": "686494d0107b14249c2ed0fe5c1c663d9c144166d467b258e61088a75313ec79"
+      },
+      "runtime_review_sha256": "13bfaf5e72faf6d63df4a0194c74c61db56f8b9ac661b4fee134e64ae03ad9cd",
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/mikotaj/repair/canonical-style-cycle-03.png",
+        "sha256": "ae636c0527ec3b92dc9108a076755fb4aae768e9dfd9938cc5a5cfecc7c0595b"
+      },
+      "observations": [
+        "Compared actual imported GLB against Ylikt-shan and Hiero:slate-blue/gunmetal structure,dulled-gold fittings,clipped modules and tapered profiles now share the established fleet language.",
+        "Final material pass corrects the user-identified orange gold. Actual colour-map medians match canonical gold RGB 175/157/76 and slate-blue RGB 82/105/147.",
+        "Reviewed native/imported front,rear and top views and actual 0/1/2/3-second working poses. Repair has coordinated support positioning and independently closing fingers;no hull motion or detached tools.",
+        "Geometry and authored articulation are unchanged from reviewed cycle 2. Utility frame layout remains functionally distinct from combat ships;comparison display is independently fitted and canonical camera/lighting differ. User artistic acceptance remains pending."
+      ],
+      "remaining": [
+        "User artistic acceptance.",
+        "Provisional game scale,platform profiling and continuous swept collision clearance are outside asset-proposal verification."
+      ],
+      "no_automatic_further_cycle": true
+    }
+  ],
+  "cycles_used": 3,
+  "cycles_remaining": 0,
+  "current_binaries": {
+    "blend": "378049f97aef7095f53037a19baa2db898abf392e18efab2baf7bd04e1badd29",
+    "glb": "686494d0107b14249c2ed0fe5c1c663d9c144166d467b258e61088a75313ec79"
+  },
+  "status": "author-style-review-complete-user-acceptance-pending"
+}
