@@ -8,7 +8,7 @@ Each completed model has editable named tool pivots, authored material maps, a l
 
 The runtime verifier opens the saved Blend and independently imports GLB, checks closed geometry and a physical support graph at six animation poses, compares animated surfaces and texture pixels, verifies a single exported clip, and renders both playback paths. This does not certify swept collision avoidance between every pair of intermediate frames or establish gameplay acceptance.
 
-Run author scripts with Blender and `--root` pointing to this asset repository. Run `verify_engineering_proposal.py -- --culture <culture> --role terraform|repair`. Publish encoded previews with `publish_engineering_proposals.py`; it requires FFmpeg and FFprobe. These asset-specific scripts and resulting assets have the asset license specified by the repository licensing policy.
+Run author scripts with Blender and `--root` pointing to this asset repository. Run `verify_engineering_refinement.py -- --culture <culture> --role terraform|repair`. Publish encoded previews with `publish_engineering_proposals.py`; it requires FFmpeg and FFprobe. These asset-specific scripts and resulting assets have the asset license specified by the repository licensing policy.
 
 The dedicated [proposal gallery](../../../gallery/engineering-proposals.html) shows only models with current runtime evidence. Concepts without a finished model remain proposals, not completed assets. Older concept iterations remain in the private evidence workspace.
 
@@ -27,3 +27,11 @@ All fourteen proposals contain one looping `ToolOperation` clip, authored at 24 
 | Achaean | Ventral silver-edged crescent grading tool | Curved lower support about the side bearing |
 
 `verify_engineering_delivery.py` validates all fourteen source/export hashes, selected concepts, material maps, runtime and visual reviews, clip channels, preview hashes and gallery links. Pass `--base <commit>` to additionally check that canonical/runtime catalogues have not changed from that revision. Artistic user acceptance and future gameplay integration remain separate decisions.
+
+## Revision 2 refinement
+
+Refinement retains defined hull planes, clipped corners and structural breaks. Curved surfaces are reserved for the culturally established shell forms, bearings, nozzles and genuinely curved tools. Material definition and mechanical detail must not turn angular housings into pill-shaped shells or add dense decorative panel grids.
+
+The current refinement uses authored colour, packed roughness/metallic and tangent-space normal maps, including sparse scuffs and shallow dent shading. Maps are embedded in GLB. Named joints, tool motions and proposal-only integration status are preserved. Geometry has a 40,000-triangle guard per ship; this is an authoring bound, not a measured game performance guarantee. Runtime draw calls, texture sharing and platform profiling remain future integration work.
+
+The delivery audit additionally pins the refinement helper, verifies GLB PBR channels and actual native/imported per-material image assignments, and binds the before/refined/concept comparison to the current GLB. During refinement, pass `--cultures <name> ...` to verify a completed subset; the default requires all fourteen revision-2 models. Original revision-1 sources and exports remain in Git history, without duplicate model payloads in the catalogue.

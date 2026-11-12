@@ -1,18 +1,26 @@
 {
   "issue": 265,
+  "revision": 2,
   "binaries": {
-    "blend": "78caa1cbb7db22be4642530f611006a78eb7782aaeb0753f166c24bb812ea084",
-    "glb": "6c2bac76d8ee0ec5ea1a9d2656756e0791f6e2b92fe3cdc0e2f819010a81a7a6"
+    "blend": "fc54612745b6237aaf5fbd324e1d0943a33017c4383f08c24a0abbb98e3dbf18",
+    "glb": "004745b3076e3bc5afde18ccd561094ff97e5dd7a9feb7923feec3126942f89d"
   },
-  "review": "Author visual comparison;user acceptance pending",
+  "comparison": {
+    "path": "gallery/media/proposals/engineering-ships/terran/repair/refinement-comparison.png",
+    "sha256": "396f5f851d2c3fdd73e45c8d317d49e93a765cd8f3a0660bf107499f2781c6e8",
+    "baseline_commit": "af7f26a23713483342b59283ac72e59a15b42ae4",
+    "baseline_binary_sha256": "6c2bac76d8ee0ec5ea1a9d2656756e0791f6e2b92fe3cdc0e2f819010a81a7a6",
+    "refined_binary_sha256": "004745b3076e3bc5afde18ccd561094ff97e5dd7a9feb7923feec3126942f89d"
+  },
+  "review": "Author visual comparison;user artistic acceptance pending",
   "observations": [
-    "Compared selected Terran v3 concept with actual native/import render. Twin shrouds, quiet red fields, one front visor, two jointed arms, U clamp and adjacent welding nozzle retained.",
-    "Initial visor was obscured by hull; moved to the front surface and rerendered. Model remains deliberately simplified for small display sizes.",
-    "Reviewed actual animated import frames at 0, 0.50, 1.17 and 2.67 seconds. Both articulated arm chains move with tools attached; hull remains fixed."
+    "Compared actual refined imported render with revision 1 and the selected concept. Hard-edged gondola panels and clear hull planes retained;rounding is confined to bearings,nozzles and small edge radii.",
+    "Refinement adds machined joint retainers,captive fasteners,protected service conduits,worn grip inserts and a gasketed maintenance hatch,with three portable PBR maps per material.",
+    "Reviewed actual playback poses: both shoulder/elbow chains carry the extra hardware and tools without detachment;hull stays fixed. Original four animation channels are preserved."
   ],
   "limits": [
-    "Not pixel-identical to concept;rear/hidden engineering and scale are authored.",
-    "No recovered legacy unit exists for these new proposal designs.",
-    "No runtime mechanics or production integration."
+    "Authored rear/hidden engineering and provisional scale.",
+    "These are new proposals,not recovered legacy units. No gameplay mechanics or integration.",
+    "Six sampled physical attachment states do not certify continuous swept collision clearance."
   ]
 }

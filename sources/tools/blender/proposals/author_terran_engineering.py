@@ -3,7 +3,7 @@ import argparse,math,sys
 from pathlib import Path
 from mathutils import Vector
 sys.path.insert(0,str(Path(__file__).parent))
-from engineering_ship_common import Ship
+from engineering_ship_refinement import RefinedShip as Ship
 
 def build(root,role):
     s=Ship(root,'terran',role)
@@ -25,8 +25,7 @@ def build(root,role):
         hole=s.cyl('Temporary engine bore',(x,-.92 if role=='terraform' else 1.30,.38),.25,.60,dark,(0,1,0));s.cut(pod,hole)
         s.cyl('Terran sealed dark engine throat '+str(side),(x,-.615 if role=='terraform' else 1.005,.38),.249,.03,dark,(0,1,0))
     if role=='terraform':
-        s.box('Terran low control blister',(0,.15,.78),(.80,.70,.37),steel,.15)
-        s.box('Terran single front visor',(0,-.19,.78),(.65,.055,.20),glass,.055)
+        s.cockpit((0,.15,.78),steel,glass)
         pivot=s.joint('MillingDrumPivot',(0,-1.43,-.14))
         s.cyl('Terran one horizontal milling drum',(0,-1.43,-.14),.27,1.72,dark,(1,0,0),pivot)
         for side in [-1,1]:
