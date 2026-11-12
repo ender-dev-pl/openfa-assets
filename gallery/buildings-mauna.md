@@ -216,11 +216,13 @@ Additional views: [Front](../gallery/media/objects/mauna/advanced-extraction-uni
 
 `openfa:building/legacy/147`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Superior Extraction Unit](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn18/front-quarter.png)
+![Superior Extraction Unit](../gallery/media/objects/mauna/superior-extraction-unit/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn18/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn18/model.glb)
+[Blend](../sources/objects/mauna/superior-extraction-unit/model.blend) · [GLB](../sources/objects/mauna/superior-extraction-unit/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/superior-extraction-unit/front.png) · [Rear quarter](../gallery/media/objects/mauna/superior-extraction-unit/rear-quarter.png) · [Paired guides, brass bar and split red fields](../gallery/media/objects/mauna/superior-extraction-unit/paired-guides-brass-bar-and-split-red-fields-detail.png) · [Four channel ends and seated corner rails](../gallery/media/objects/mauna/superior-extraction-unit/four-channel-ends-and-seated-corner-rails-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/superior-extraction-unit/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/superior-extraction-unit/concept-glb-comparison.jpg)
 
 ## Ores Block
 

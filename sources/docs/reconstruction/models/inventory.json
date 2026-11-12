@@ -31525,7 +31525,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/147",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           1008
         ]
@@ -31599,21 +31599,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn18/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/superior-extraction-unit/model.blend",
           "present": true,
-          "sha256": "fd4af7afada20fb8f24bca0cb0f2bfa57cf9eb27040f5469a84c4b28cc59e56b",
-          "final_visual_acceptance": "not-established"
+          "sha256": "b73205972d795a227280de26d5aaf464f92e05366b1a70964d846e897e96f819",
+          "media": "gallery/media/objects/mauna/superior-extraction-unit",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/superior-extraction-unit/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/superior-extraction-unit/rear-quarter.png"
+            },
+            {
+              "label": "Paired guides, brass bar and split red fields",
+              "image": "gallery/media/objects/mauna/superior-extraction-unit/paired-guides-brass-bar-and-split-red-fields-detail.png"
+            },
+            {
+              "label": "Four channel ends and seated corner rails",
+              "image": "gallery/media/objects/mauna/superior-extraction-unit/four-channel-ends-and-seated-corner-rails-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/superior-extraction-unit/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/superior-extraction-unit/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -31643,6 +31670,89 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 147
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn18/model.blend",
+          "present": true,
+          "sha256": "fd4af7afada20fb8f24bca0cb0f2bfa57cf9eb27040f5469a84c4b28cc59e56b",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/superior-extraction-unit/model.blend",
+        "sha256": "b73205972d795a227280de26d5aaf464f92e05366b1a70964d846e897e96f819",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/superior-extraction-unit",
+          "verifier": "sources/tools/blender/verify_mauna_superior_extraction_unit.py",
+          "files": {
+            "sources/objects/mauna/superior-extraction-unit/integration-contract.json": "6c5d0a72317e44352ca44367b092898db8341b28beed46a962700d53f2dfef91",
+            "sources/objects/mauna/superior-extraction-unit/model.blend": "b73205972d795a227280de26d5aaf464f92e05366b1a70964d846e897e96f819",
+            "sources/objects/mauna/superior-extraction-unit/model.glb": "17934238910d2558e729b4a2a17c1a2bdb091ab45492e3cd3e354c86dc13d1c7",
+            "sources/objects/mauna/superior-extraction-unit/model.json": "b1cd718b3d810fc89dfcfb191229889d3807f37093cb1aea766b62012388e4ec",
+            "sources/objects/mauna/superior-extraction-unit/README.md": "5e141e4ddd8bbae9d6fbc29a9bfe4c7429b1b9f97db94392d7f7ee26b93c14ab",
+            "sources/objects/mauna/superior-extraction-unit/runtime-review.json": "aca4d6ce5ea561b9b62d9e55608567fcd77411a53b8f85082209ef0e34cd1074",
+            "sources/objects/mauna/superior-extraction-unit/visual-review.json": "1923c8000e9f191c7f04afd1aa8ad194f1c2f13a9d2de1684b4c60f6af67ff70",
+            "gallery/media/objects/mauna/superior-extraction-unit/concept-glb-comparison.jpg": "697b1828259f3375a4ee7090fb4ad73ed7ea42946ffac9a628f10480f6ba3bdd",
+            "gallery/media/objects/mauna/superior-extraction-unit/four-channel-ends-and-seated-corner-rails-detail.png": "dced4984720d0de04f9ddb4bdbc5a12c41aa5a164764baa498b5112f77b5ba2f",
+            "gallery/media/objects/mauna/superior-extraction-unit/front-quarter.png": "0c12a630086b1c69b5f75edd692ae1f5971cf42939322f22f2968f719982dd83",
+            "gallery/media/objects/mauna/superior-extraction-unit/front.png": "2cb7ab1550e17e28d239d40ad3dc70c810b532b6b1cb22bbdaa4b4946e712481",
+            "gallery/media/objects/mauna/superior-extraction-unit/imported-front-quarter.png": "0c12a630086b1c69b5f75edd692ae1f5971cf42939322f22f2968f719982dd83",
+            "gallery/media/objects/mauna/superior-extraction-unit/imported-front.png": "2cb7ab1550e17e28d239d40ad3dc70c810b532b6b1cb22bbdaa4b4946e712481",
+            "gallery/media/objects/mauna/superior-extraction-unit/imported-rear-quarter.png": "53f694d85f4f4159e62e050aa3fbf0396b80665d5e5d25fa1ba78aa0db80b03e",
+            "gallery/media/objects/mauna/superior-extraction-unit/native-front-quarter.png": "1dd1245f6bb0ca91c28b3eff48e74ef843c6d8974579ab419db927aeb8013c9e",
+            "gallery/media/objects/mauna/superior-extraction-unit/native-front.png": "8edb3ade994fd3477477ea5f0d9340a7f01bf624096c5f667ff2539eb765dcd5",
+            "gallery/media/objects/mauna/superior-extraction-unit/native-rear-quarter.png": "51d097d2d0f0ffc4455388a8eed9cedda6e88c5403f031c48e082ae060f8d055",
+            "gallery/media/objects/mauna/superior-extraction-unit/paired-guides-brass-bar-and-split-red-fields-detail.png": "9258133eb83fa4834fe6f5c6ec81b661468b827258563ad88f3b326787895473",
+            "gallery/media/objects/mauna/superior-extraction-unit/rear-quarter.png": "53f694d85f4f4159e62e050aa3fbf0396b80665d5e5d25fa1ba78aa0db80b03e",
+            "gallery/media/objects/mauna/superior-extraction-unit/technical-wireframe.png": "b78950f5650c852e75cda3c00c9f534a296f6da933f2441b91741661d9c2e2cb",
+            "sources/materials/mauna/superior-extraction-unit/brass-colour.png": "e8eb98204d2685a3ba948f50b05cf87bc295e9044788159b452de8f79121a4da",
+            "sources/materials/mauna/superior-extraction-unit/cast-concrete-colour.png": "410ce39866ccc3de95247637d2fcb48f28bd9ca04938bcb9c36544ecaf3924cd",
+            "sources/materials/mauna/superior-extraction-unit/cast-service-normal.png": "763d53009e181efa8045e7771d8e1cf41c0c4b4b6376cd620aa217b38428f555",
+            "sources/materials/mauna/superior-extraction-unit/concrete-orm.png": "aba6ae1f397fcb86794f2aee8a09dffb6cf0ba3e0a5edc8b7555bb33d4cdcf30",
+            "sources/materials/mauna/superior-extraction-unit/marking-red-colour.png": "59a268c3169d34d04276105cfa5df9a3f7812237acb55ea9087076df26fe8b47",
+            "sources/materials/mauna/superior-extraction-unit/metal-orm.png": "17548ae1574415cadbee23bf32d563fcb7e796ec9e135ac96705bb4f4556e79a",
+            "sources/materials/mauna/superior-extraction-unit/pale-module-colour.png": "db2b4e7821d119c24499950f94537aa93b363bb4fd3fe498fc4202bbec1c879e",
+            "sources/tools/blender/remaster_mauna_superior_extraction_unit.py": "b85c4b340f448153dc672c23fb9baeaa4efff07994f0eae0927174e27156ba74",
+            "sources/tools/blender/verify_mauna_superior_extraction_unit.py": "238ca7bf96a3a41a639e7728d8967a98b12f5fde8cf85ff6698a80bf27d40a85",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn18-concept-review.json": "150ce0e5f257571fb1a3432ad4cf9b7518951f84b458f2d8f4a4834ad650498a",
+            "sources/docs/reconstruction/models/mn18-concept-prompt-1.txt": "e5c3f54e03970ae227bbb9a12b6c21b67050a22cea1396cefb721d89795b7206",
+            "gallery/media/concepts/mauna/mn18-review-1.png": "efbff86137fcb5f6e980205a691d74d99b445397441414bc1ce7a213569a38b6"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/superior-extraction-unit/visual-review.json",
+          "sha256": "1923c8000e9f191c7f04afd1aa8ad194f1c2f13a9d2de1684b4c60f6af67ff70",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/superior-extraction-unit/visual-review.json",
+          "sha256": "1923c8000e9f191c7f04afd1aa8ad194f1c2f13a9d2de1684b4c60f6af67ff70",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/superior-extraction-unit/visual-review.json",
+          "sha256": "1923c8000e9f191c7f04afd1aa8ad194f1c2f13a9d2de1684b4c60f6af67ff70",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/superior-extraction-unit/visual-review.json",
+          "sha256": "1923c8000e9f191c7f04afd1aa8ad194f1c2f13a9d2de1684b4c60f6af67ff70",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/superior-extraction-unit/runtime-review.json",
+          "sha256": "aca4d6ce5ea561b9b62d9e55608567fcd77411a53b8f85082209ef0e34cd1074",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {
