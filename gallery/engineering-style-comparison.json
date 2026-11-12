@@ -1,0 +1,336 @@
+{
+  "issue": 265,
+  "purpose": "Construction-style comparison;current engineering proposals against current small-craft catalogue models.",
+  "limits": "Existing actual model previews;camera and lighting vary between authoring passes. Image fitting normalizes display size independently and does not establish physical game scale. Scout/research craft are labelled separately from combat/craft references.",
+  "cultures": [
+    {
+      "culture": "terran",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/terran/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/terran/terraform/imported-front-quarter.png",
+          "model_sha256": "a0d75c02b2505c4ae42cac4e945cca45e060e38286e69bda51e39c34057e049e",
+          "image_sha256": "3bd4ea4abfc2f0415b83b27e53e78000e6ec89d129a336927657e63ae0a781a9"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/terran/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/terran/repair/imported-front-quarter.png",
+          "model_sha256": "004745b3076e3bc5afde18ccd561094ff97e5dd7a9feb7923feec3126942f89d",
+          "image_sha256": "9652062f32625e16b9d9bf41df8a36bd37a53e807277e4161402196308a5a969"
+        },
+        {
+          "name": "Assault Fighter",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:assault-fighter",
+          "stage": "layered-construction",
+          "model": "sources/objects/terran/assault-fighter/model.glb",
+          "image": "gallery/media/objects/terran/assault-fighter/construction/front-quarter.png",
+          "model_sha256": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+          "image_sha256": "f02dffba3a4304dd441497e799214eff75556b089dd352e72d9ec22dfa73cf70"
+        },
+        {
+          "name": "Scoutship",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:scoutship",
+          "stage": "layered-construction",
+          "model": "sources/objects/terran/scoutship/model.glb",
+          "image": "gallery/media/objects/terran/scoutship/construction/front-quarter.png",
+          "model_sha256": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+          "image_sha256": "ad15467e809c17a6dfd77768e094445abc009e52838536aff3d0209064873606"
+        }
+      ],
+      "assessment": "Partial match: red fields and cool hull colours connect the designs,but the engineering ships have broad box-like bodies while the small fleet uses wedges,layered plates and round engine details.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "rigellian",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/rigellian/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/rigellian/terraform/imported-front-quarter.png",
+          "model_sha256": "213cc449c901398effacd0b1f8de8fd8d68ad2332aa0163a47b79d42e83480c2",
+          "image_sha256": "7378070522faf1c5fa2c31f852dc00de3af5ab7185be082739b9f61c62bba22e"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/rigellian/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/rigellian/repair/imported-front-quarter.png",
+          "model_sha256": "4932a17836eaccd2ccd5ef0d5638324d3bec3348433a73624b58b402937a9f4a",
+          "image_sha256": "bc933ecd39b125bd6a99432104d3f623a2607578cca36f606fdeb94d0956e927"
+        },
+        {
+          "name": "Delphini Assault",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/rigellian/delphini-assault",
+          "stage": "visible-section-refinement",
+          "model": "sources/docs/assets/reconstruction/rigellian-refined/delphini-assault/model.glb",
+          "image": "gallery/media/docs/assets/reconstruction/rigellian-refined/delphini-assault/front-quarter.png",
+          "model_sha256": "893489b3ff5b6a22ecf45ff059ffa63c3ef5700f91511bea0bd91069606bed24",
+          "image_sha256": "fb504fdc5f519ae57307aa0e3eaee28f34f4e003d28a786b12fcf93873d0eb06"
+        },
+        {
+          "name": "Lazzaro Research",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/rigellian/lazzaro-research",
+          "stage": "visible-form-refinement",
+          "model": "sources/docs/assets/reconstruction/rigellian-refined/lazzaro-research/model.glb",
+          "image": "gallery/media/docs/assets/reconstruction/rigellian-refined/lazzaro-research/front-quarter.png",
+          "model_sha256": "49966492503271a0aa839959b96d99f8dd79fe69335ea88bdd48cbfe0e5b518b",
+          "image_sha256": "d6a2449b63ef4616d9a6abca977c0906f9135678518e8aac61c85c9b064aa02e"
+        }
+      ],
+      "assessment": "Partial match: low rounded shells,gold caps and copper engines agree. The engineering ships are silver-dominant with green strips;the established small fleet is green-dominant. Material-region balance needs review.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "braccatian",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/braccatian/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/braccatian/terraform/imported-front-quarter.png",
+          "model_sha256": "e8e13d6cae6f886b2d73a1728605fb38e9af74b54a208c2d0242b1d8b634f0da",
+          "image_sha256": "af0c6a2ecffef77049e70dfc9b8bc523cb9df2ac133ec052557164f082149278"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/braccatian/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/braccatian/repair/imported-front-quarter.png",
+          "model_sha256": "21feab0eae596f81a1a96b912422f0f297630b3572ee8bbee603537d4378e69e",
+          "image_sha256": "17aef5921feea6893f26e2aa40d14a82fce3567d9fc8389a4515d8ba45b45c2b"
+        },
+        {
+          "name": "Morning Glory",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/morning-glory",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/morning-glory/model.glb",
+          "image": "gallery/media/objects/braccatian/morning-glory/front-quarter.png",
+          "model_sha256": "b3e9ded923afcd331caa5c0671f3ba2f2766d32b9899797f904babc59acbc4df",
+          "image_sha256": "c876093b58fa552c09efcfc90f17877d007df7d8b0d5bcb489207b502a5fd692"
+        },
+        {
+          "name": "Rattlesnake",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/rattlesnake",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/rattlesnake/model.glb",
+          "image": "gallery/media/objects/braccatian/rattlesnake/front-quarter.png",
+          "model_sha256": "a1e9813632151814e7850892bb30c17e5c66db0d296d7fc589f2556c9e66921e",
+          "image_sha256": "ba2d564c17308da18578a9d705a0fdb1ba951d4fb78f86cdacffdc369d77d3eb"
+        }
+      ],
+      "assessment": "Partial match: coral,ochre and brass belong together,but the engineering barrels and broad black reinforcement strips read more industrial than the tapered,lobed small craft.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "mikotaj",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mikotaj/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mikotaj/terraform/imported-front-quarter.png",
+          "model_sha256": "67eebb8045e5791e71023f5681f862ec2abdf79ae98572d18d86d6552d9cca69",
+          "image_sha256": "ae876ad1c664d4d64e7b7e5bbe7c8c544dfe796092caeb857b729b9757aba470"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mikotaj/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mikotaj/repair/imported-front-quarter.png",
+          "model_sha256": "fd8bf1df4a452023df82c0c14e67f5dbe4ea6564828ff43e320586409dbfbc77",
+          "image_sha256": "0c4de26a4526e753870298181fbfb84e564bbed782980f1a153c2ec3ff8f32b8"
+        },
+        {
+          "name": "Ylikt-shan",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/ylikt-shan",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/ylikt-shan/model.glb",
+          "image": "gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png",
+          "model_sha256": "52de04f4769a1f321ced5dd41d8c5a00e69f326e9de28be1828a60bf4c890b1c",
+          "image_sha256": "7a2daf457221cb69b3ec0c6db1d50a58f3e33c99b3208e2ea03c949dc3bba5ef"
+        },
+        {
+          "name": "Hiero",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mikotaj/hiero",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mikotaj/hiero/model.glb",
+          "image": "gallery/media/objects/mikotaj/hiero/front-quarter.png",
+          "model_sha256": "eeb25924535c4c059c130777922f79790beb18963f6debdb3749fb6635d9161a",
+          "image_sha256": "44d7d1006a6299a1dbc4fc01e97d5cc7279e3faa641e2bbd99a22970e7390a79"
+        }
+      ],
+      "assessment": "Weak match: clipped blue cores relate to the fleet,but prominent green rails and copper trusses depart from the blue-grey hulls and gold accents of the small ships. Structural language also needs closer alignment.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "artemian",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/artemian/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/artemian/terraform/imported-front-quarter.png",
+          "model_sha256": "7bd02c98eae78a215b8edc3bca3547364534f7c7ee9ee85a1aa2d7fc8887edaf",
+          "image_sha256": "66bc9ebfdacd20860afdd43239fba117811d827e0f16ab4b3c7296f1f27c7ba2"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/artemian/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/artemian/repair/imported-front-quarter.png",
+          "model_sha256": "795de23c174c258b335d3e1ec54a93005780625e18407800b2251a43d428a077",
+          "image_sha256": "1607f92da197ddce3011e0959d84073bbb3ed10e44872ffcb8fd7f5ce09c00d7"
+        },
+        {
+          "name": "All-Purpose Assault",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/artemian/all-purpose-assault",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/artemian/all-purpose-assault/model.glb",
+          "image": "gallery/media/objects/artemian/all-purpose-assault/front-quarter.png",
+          "model_sha256": "fd39236bf4aa9ee616adcb65c37dbcc24ae92b76b827e7c0fc7fcf0b61b73ee1",
+          "image_sha256": "791bffd385709b1f0d4ff2637d97cf2b4dd1488c39e1942bc4a112d32d4db641"
+        },
+        {
+          "name": "Gerla-Kans Explorer",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/artemian/gerla-kans-explorer",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/artemian/gerla-kans-explorer/model.glb",
+          "image": "gallery/media/objects/artemian/gerla-kans-explorer/front-quarter.png",
+          "model_sha256": "68f44c6f41378cd423ad6e68d3a754f52429aa470ceef1a6b8056009c4e5b57c",
+          "image_sha256": "25b666b67e7e320349eb3b6ee4b6d79fa336fc87147a77864561cb545647ec67"
+        }
+      ],
+      "assessment": "Partial match: silver and green remain recognisable. Smooth oval engineering shells lose the wedge-shaped green base and separate silver fairings of the small fleet;material distribution and section breaks need review.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "mauna",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mauna/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mauna/terraform/imported-front-quarter.png",
+          "model_sha256": "79be6d229ce36621350c6ccd1a36e1711c98f9150114dc78e213c260cea89eee",
+          "image_sha256": "70ce11fa3ee8752c0e8a15dbe52336fad64f4b30c258715521a17ad25ff0dd10"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/mauna/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/mauna/repair/imported-front-quarter.png",
+          "model_sha256": "1cd6a1dd72312fa81a7c58073230221d50e137b8bc5ea73e2f89d2b699f6f9e3",
+          "image_sha256": "d327eeb83a136fc1a7dc0d03375d15cfae8ecb3ddf65f51a1593525a292bf7c6"
+        },
+        {
+          "name": "Combat Craft Type 1.5",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mauna/combat-craft-type-1-5",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mauna/combat-craft-type-1-5/model.glb",
+          "image": "gallery/media/objects/mauna/combat-craft-type-1-5/front-quarter.png",
+          "model_sha256": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
+          "image_sha256": "2b83b3175ea9c9c4d4179a924d6ab84230bbdfbef1ea81f16e69fed65d8a37ab"
+        },
+        {
+          "name": "Surveillance Craft Type 5",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mauna/surveillance-craft-type-5",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mauna/surveillance-craft-type-5/model.glb",
+          "image": "gallery/media/objects/mauna/surveillance-craft-type-5/front-quarter.png",
+          "model_sha256": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
+          "image_sha256": "48e62e2a388dc600439a279686e9adb0f3e016898689b92b62a492c947478eda"
+        }
+      ],
+      "assessment": "Close structural match: rectangular volumes,stepped sections,slots and grey/blue-grey materials connect the ships. Surface finish differs;lighting and separate rendering passes limit exact colour judgement.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    },
+    {
+      "culture": "achaean",
+      "units": [
+        {
+          "name": "Terraforming Ship",
+          "role": "terraform",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/achaean/terraform/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/achaean/terraform/imported-front-quarter.png",
+          "model_sha256": "07e1ae7de9b59ffc0c7db3ecd58dc7190a46cb4d5f7a15148f8904a297226977",
+          "image_sha256": "8b053a3a07dd26d9d0e50a8f23e52dab388327bfbedc18cebe94ca101303ce7c"
+        },
+        {
+          "name": "Repair Ship",
+          "role": "repair",
+          "status": "engineering proposal",
+          "model": "sources/proposals/engineering-ships/achaean/repair/model.glb",
+          "image": "gallery/media/proposals/engineering-ships/achaean/repair/imported-front-quarter.png",
+          "model_sha256": "0e4a987407938e7bf079e336a060a32949b4a3f4fde4ee41aadf9002e0c0be18",
+          "image_sha256": "0970cedf5f396c8e7c819074ed85a03f479981595e4bb3b20f79a54c17c72d6b"
+        },
+        {
+          "name": "Dedicated Fighter",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/achaean/dedicated-fighter",
+          "stage": "legacy-hi-def-remaster",
+          "model": "sources/objects/achaean/dedicated-fighter/model.glb",
+          "image": "gallery/media/objects/achaean/dedicated-fighter/front-quarter.png",
+          "model_sha256": "78b8144db063fed2947dd075dc7691eeef584b91bccfd98684f3dc02cd6e47a9",
+          "image_sha256": "ef0f33f0f2493d5c64ccf43958514fed893296d1abfb580835dddd3a4ec0764f"
+        },
+        {
+          "name": "Hunter/Prospector",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/achaean/hunter-prospector",
+          "stage": "legacy-hi-def-remaster",
+          "model": "sources/objects/achaean/hunter-prospector/model.glb",
+          "image": "gallery/media/objects/achaean/hunter-prospector/front-quarter.png",
+          "model_sha256": "a2f09789f56162e3570f6bc2dcc01fc837f1ad388ac65210c2d0efaeff00ef5c",
+          "image_sha256": "3e13d83b0a70124102f64e3c89610c13bc672e5246231e132c21fa7960343ed5"
+        }
+      ],
+      "assessment": "Close match: copper spindle hulls,thin red/silver crescents and sparse hatches repeat the fleet language. The repaired ship now has mirrored wings;small functional tooling remains distinct.",
+      "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
+    }
+  ]
+}
