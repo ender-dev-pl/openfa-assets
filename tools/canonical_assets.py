@@ -37,8 +37,33 @@ if __name__=='__main__':verify()
 
 def study_animation_previews(blend,glb,folder,study):
     """Expose a selected model's functional construction animation in the same card."""
-    from gallery_animation_assets import animation_previews
-    clips=animation_previews(blend,glb,folder)
+    clips=selected_animation_previews(blend,glb,folder)
     for source in study.get('animation_sources',[]):
-        clips+=animation_previews(source['blend'],source['glb'],ROOT/source['media'])
+        clips+=selected_animation_previews(source['blend'],source['glb'],ROOT/source['media'])
     return clips
+
+
+def preview_renderer(manifest):
+    relative=Path(manifest.get('renderer_path',manifest.get('renderer','sources/tools/blender/render_gallery_animations.py')))
+    assert not relative.is_absolute() and '..' not in relative.parts,'Expected repository-relative preview renderer'
+    renderer=(ROOT/relative).resolve()
+    assert renderer.is_relative_to((ROOT/'sources/tools/blender').resolve()) and renderer.suffix=='.py' and renderer.is_file(),'Invalid preview renderer'
+    return renderer
+
+def selected_animation_previews(blend,glb,media):
+    from gallery_animation_assets import animation_previews,glb_clips
+    manifest_path=Path(media)/'animation-previews.json'
+    if not manifest_path.is_file():return animation_previews(blend,glb,media)
+    manifest=json.loads(manifest_path.read_text(encoding='utf-8'))
+    if 'renderer_path' not in manifest:return animation_previews(blend,glb,media)
+    sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+    clips=glb_clips(ROOT/glb)
+    assert manifest['blend_sha256']==sha(ROOT/blend) and manifest['glb_sha256']==sha(ROOT/glb)
+    assert manifest['renderer_sha256']==sha(preview_renderer(manifest))
+    assert len(manifest['clips'])==len(clips)
+    for actual,preview in zip(clips,manifest['clips']):
+        assert all(actual[key]==preview[key] for key in actual)
+        video=(ROOT/preview['video']).resolve()
+        assert video.is_relative_to((ROOT/'gallery/media').resolve()) and sha(video)==preview['sha256']
+        assert preview['distinct_pose_count']>1
+    return manifest['clips']

@@ -105,6 +105,8 @@ def main():
              '[Interactive catalogue](index.html) · [Machine-readable index](catalogue.json) · '
                '[RIS2 scaffold refinement](scaffolds-ris2.md) · [Culture scaffold kits](scaffolds-cultures.md) · '
                '[Game-rendered construction videos](construction-animations.html)', '']
+    if (ROOT/'gallery/extension-missiles.md').is_file():
+        lines += ['[Interceptor and Decoy extension models / separation animation](extension-missiles.md)', '']
     categories = [c for c in CATEGORY_LABELS if any(key[0] == c for key in sheets)]
     cultures = sorted({r['culture'] for r in rows}, key=lambda c:(c == 'shared', c))
     lines += index_table(sheets, cultures, categories)

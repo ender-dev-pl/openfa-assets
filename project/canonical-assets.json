@@ -96,12 +96,12 @@
     },
     {
       "path": "sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.blend",
-      "sha256": "c48c5934e59e71f763c375641afe983d09181f984d7f765460b410f468a403cc",
+      "sha256": "974aef937d8de7c89b0bba6ab295e574cf53749699ab60e23c4f579358af0420",
       "purpose": "canonical-definition"
     },
     {
       "path": "sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.glb",
-      "sha256": "e3dec3cb8b4bb01d227dd0e7d003e82650d3f55b8a970b3ecbee85265f5f1d88",
+      "sha256": "9b45f44bb87a47df85c0ed03a4a038e71f43cbaea5630351fdc588616cc0d147",
       "purpose": "canonical-definition"
     },
     {
@@ -8358,6 +8358,31 @@
       "path": "sources/ui/scitek/warp-generator/warp-generator-wireframe.glb",
       "sha256": "36afef51953e511b4c1fedeea76b23aa9a49546e2b1c4a0331f510ee6827ea0f",
       "purpose": "scitek-animation-or-technical-presentation"
+    },
+    {
+      "path": "sources/objects/extensions/munitions/decoy/model.blend",
+      "sha256": "e791f6b70746db196f210f146b1864c52cc8cd9e5391d8c837f7736fe32d71fb",
+      "purpose": "canonical-extension-missile-or-segment"
+    },
+    {
+      "path": "sources/objects/extensions/munitions/decoy/model.glb",
+      "sha256": "6de8207c7d3175031ebd3d3fdcde1e2b05897c37e20a5651583839dcc97ec28a",
+      "purpose": "canonical-extension-missile-or-segment"
+    },
+    {
+      "path": "sources/objects/extensions/munitions/decoy/segment.glb",
+      "sha256": "0e74d869904f4fe67d5552b44dd0469ebec355e35115a760b7697aef971a9d77",
+      "purpose": "canonical-extension-missile-or-segment"
+    },
+    {
+      "path": "sources/objects/extensions/munitions/interceptor/model.blend",
+      "sha256": "b3f805381bceef29058e24760033833ab679ac47aa4fef81cd4b0158efe645ed",
+      "purpose": "canonical-extension-missile-or-segment"
+    },
+    {
+      "path": "sources/objects/extensions/munitions/interceptor/model.glb",
+      "sha256": "f1a910d0513e8085fc3879a3d7f975860e5d9fc6e87342bfc66a50571f38354c",
+      "purpose": "canonical-extension-missile-or-segment"
     }
   ],
   "catalogue": [
@@ -8661,19 +8686,61 @@
           "blend": "sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.blend",
           "glb": "sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.glb",
           "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/front-quarter.png",
-          "sha256": "c48c5934e59e71f763c375641afe983d09181f984d7f765460b410f468a403cc",
+          "sha256": "974aef937d8de7c89b0bba6ab295e574cf53749699ab60e23c4f579358af0420",
           "animations": [
             {
               "index": 0,
               "name": "Animation",
-              "start": 0.0625,
-              "end": 2.0625,
-              "duration": 2.0,
+              "start": 0,
+              "end": 2,
+              "duration": 2,
               "video": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/animation-00.webm",
-              "sha256": "b25ec73689c69538d0149b8aeb395b3adee822c0ed89af0c4135cd3182f1f359",
+              "sha256": "9be6f2f56f38eba600756604f6c7d0daa42368fe175586638148a9f9e49c4570",
               "frames": 48,
-              "fps": 24.0,
-              "distinct_pose_count": 24
+              "fps": 24,
+              "distinct_pose_count": 25
+            }
+          ],
+          "views": [
+            {
+              "label": "Original curved iris leaves",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/mechanism-detail.png"
+            },
+            {
+              "label": "Stored Decoy above black shaft floor",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/stored-payload-top.png"
+            },
+            {
+              "label": "Closed iris",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/closed.png"
+            },
+            {
+              "label": "Decoy clearance fixture",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/decoy-clearance.png"
+            },
+            {
+              "label": "Attack: red",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-AttackOnly.png"
+            },
+            {
+              "label": "Defence: blue",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-DefenceOnly.png"
+            },
+            {
+              "label": "Hybrid: base colour",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-Hybrid.png"
+            },
+            {
+              "label": "Both lamps off",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-off.png"
+            },
+            {
+              "label": "Left lamp only",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-left.png"
+            },
+            {
+              "label": "Right lamp only",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-refined/pb14/lamps-right.png"
             }
           ]
         }
@@ -46798,5 +46865,21 @@
         "source_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
       }
     ]
-  }
+  },
+  "replaced_versions": [
+    {
+      "path": "sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.blend",
+      "sha256": "c48c5934e59e71f763c375641afe983d09181f984d7f765460b410f468a403cc",
+      "recovery_repository": "ender-dev-pl/openfa-assets-archive",
+      "recovery_ref": "history/2026-11-12/origin/chore/canonical-assets-archive",
+      "source_commit": "4f659f4b65a67cb5f6b4c38fc28f01867465d9bc"
+    },
+    {
+      "path": "sources/docs/assets/bootstrap-3d/terran-refined/pb14/model.glb",
+      "sha256": "e3dec3cb8b4bb01d227dd0e7d003e82650d3f55b8a970b3ecbee85265f5f1d88",
+      "recovery_repository": "ender-dev-pl/openfa-assets-archive",
+      "recovery_ref": "history/2026-11-12/origin/chore/canonical-assets-archive",
+      "source_commit": "4f659f4b65a67cb5f6b4c38fc28f01867465d9bc"
+    }
+  ]
 }
