@@ -10,11 +10,11 @@
   "blueprint_registered": false,
   "package_registered": false,
   "binaries": {
-    "blend": "a909e53844a1275fd4c9b67e3d9030bd0a9d0a9fd8070534e2f88be676139900",
-    "glb": "79be6d229ce36621350c6ccd1a36e1711c98f9150114dc78e213c260cea89eee"
+    "blend": "2b84b666902bece97faa709e8e35a4c7f5d9a1f9091c05dbdca6deb77c276b8a",
+    "glb": "29b04e9dc0456535f4d43b6f0e89cb453e730c940757ce3d6e493fa92ae2cf93"
   },
   "author": "sources/tools/blender/proposals/author_mauna_engineering.py",
-  "author_sha256": "0363105613f679b53c2ecc7041f46ec48cd8dcb0430803069c757bee2ab1da9e",
+  "author_sha256": "5c0ff51ebbba6815792779105011fd83b19de03be0eff41abecd451b00fef5f2",
   "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
   "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
   "refinement_helper": "sources/tools/blender/proposals/engineering_ship_refinement.py",
@@ -43,40 +43,43 @@
     "runtime_integration": false,
     "mechanics_available": false
   },
-  "triangles": 3984,
+  "triangles": 6210,
   "triangle_budget": 40000,
-  "meshes": 28,
-  "materials": 6,
+  "meshes": 39,
+  "materials": 7,
   "maps": {
     "sources/materials/proposals/engineering-ships/mauna/abraded-tool-steel-normal.png": "2a303d39ea533ba0d2bf292d74f851519f27e751e806aedf5014ac2e800cf755",
     "sources/materials/proposals/engineering-ships/mauna/abraded-tool-steel-orm.png": "5e33208e7a00782d9dc1a82e962e5439cc2e96b51bee00bc4fbe997d2d3110ed",
     "sources/materials/proposals/engineering-ships/mauna/abraded-tool-steel.png": "503be20add52875240e05def71ee7de218560e9f641fe89bf6ce34c15f67f9b4",
     "sources/materials/proposals/engineering-ships/mauna/blue-grey-normal.png": "6b9ee9f680430eb6d706606b47edb87bd1a76e7a58e57140478ffe1aca204d39",
-    "sources/materials/proposals/engineering-ships/mauna/blue-grey-orm.png": "911c938c243d64ede33c3a2e11fae095a9ed435f55a6e2bfa86dddb1d2e36326",
-    "sources/materials/proposals/engineering-ships/mauna/blue-grey.png": "9b40ce4af974cf60e7478f3a5730d5c66a5a264de5e57d2d5343fa85dc975fe2",
+    "sources/materials/proposals/engineering-ships/mauna/blue-grey-orm.png": "f04153b0dee00f6c509b2feba6d3e4d604f6fe1fa2c2437877974d8141f76d60",
+    "sources/materials/proposals/engineering-ships/mauna/blue-grey.png": "19c87761510ca4a77579a186d4da0c78e3e79c33509817294a1b34fb1beab5ee",
     "sources/materials/proposals/engineering-ships/mauna/dark-recess-normal.png": "b8b2bd0ca512b6463674dccd6e2a70a28d754ced9e830b0f087549857ce0d9df",
-    "sources/materials/proposals/engineering-ships/mauna/dark-recess-orm.png": "b4ab192455d1ee89f94c7ef8c1acb40739c257940cfe8c7d153ab7eb8e583480",
-    "sources/materials/proposals/engineering-ships/mauna/dark-recess.png": "e17d6017540271571c676925647e9ad92be9c61b96232fd88af3eac3062db49e",
+    "sources/materials/proposals/engineering-ships/mauna/dark-recess-orm.png": "001b6c301c388c4e33c9b1e881225ee77a130431242c880ff93b47e796299fa5",
+    "sources/materials/proposals/engineering-ships/mauna/dark-recess.png": "6029556d2d50d0f0ccdf91e536cc9f157441ee8e6dc392af7465240e0c5ddf52",
     "sources/materials/proposals/engineering-ships/mauna/machined-alloy-normal.png": "75b4f517faff65399cd5dc912d0641321fb0f5bc4542e211e4d31dc6682a6f23",
     "sources/materials/proposals/engineering-ships/mauna/machined-alloy-orm.png": "35b355e3f12cf77a0e118dcd565458bb86244b095035201ee8127252ff9f9f38",
     "sources/materials/proposals/engineering-ships/mauna/machined-alloy.png": "64a21f635831ae5536f816d8bb0125c40a60212db5ab81ccda678db99fe2593f",
     "sources/materials/proposals/engineering-ships/mauna/matte-grey-normal.png": "e7f8dc84b6b9c81dbd4524741b2547d3ba2f62f270c464ac08e1e102be8cca75",
-    "sources/materials/proposals/engineering-ships/mauna/matte-grey-orm.png": "4bbb6612e7e8bc2068d0632e50bc6de54485575cf93e111a0aa9136695e99cda",
-    "sources/materials/proposals/engineering-ships/mauna/matte-grey.png": "81ec0c6c9a59a9dc93ad15a9760b088551e81205606d1810185deb77964bb1bb",
+    "sources/materials/proposals/engineering-ships/mauna/matte-grey-orm.png": "85cb475ea8788f02ed213ef8693870f4375ec845acfb2c56112dadc9153e03a7",
+    "sources/materials/proposals/engineering-ships/mauna/matte-grey.png": "20516ffeb7b5ffb171fc9935d58ff847b4baa2a229b2b773686497c6274d263d",
     "sources/materials/proposals/engineering-ships/mauna/orange-mark-normal.png": "a931c1afc5c9a412c5da6a543f1987781a18ebb4b7fc11eb32c49709bd0e2630",
-    "sources/materials/proposals/engineering-ships/mauna/orange-mark-orm.png": "33ad0e24257faef3b38f2462fce6ffb9d593ac3c4962cff96854e7df2ae933a3",
-    "sources/materials/proposals/engineering-ships/mauna/orange-mark.png": "13bc8bf0eabbbc28040a8c1cc66ec62e373bff5da6f0c53c8c28232b4c8b5563",
+    "sources/materials/proposals/engineering-ships/mauna/orange-mark-orm.png": "0740f0a701ba1af8ac2cc2ebfe0c3e7eb24475e49935f182bc3ecee916543937",
+    "sources/materials/proposals/engineering-ships/mauna/orange-mark.png": "dc3d9d1b72a13b531a47d61665b10485b22d28392716e10c3da5b41e190d3f28",
+    "sources/materials/proposals/engineering-ships/mauna/pale-service-alloy-normal.png": "c445637bd23af95eaea4d368f171e18e26ff038aca46a51282d6c9da7e90b58f",
+    "sources/materials/proposals/engineering-ships/mauna/pale-service-alloy-orm.png": "53c6b25709074482760ba1ccfa6c872529709ffc430dc5bc936198101074ed80",
+    "sources/materials/proposals/engineering-ships/mauna/pale-service-alloy.png": "ae4b96e44549c8af4101b2415ba9c391a4d6e30c8d98924e60fe44608d2fb1d8",
     "sources/materials/proposals/engineering-ships/mauna/recess-seal-normal.png": "fa2ff4441d38042354e5a738af9475264ec5146d79eb1c2b36b2205455474953",
     "sources/materials/proposals/engineering-ships/mauna/recess-seal-orm.png": "a1350f3db30aa92e38df47fa4796b59a2768b5759ad42fa2968d44fc6e3f9a21",
     "sources/materials/proposals/engineering-ships/mauna/recess-seal.png": "dec948c18499ba3d5c1a9ee80d7ef32aff71bf0119463772384d07d1a51311bd"
   },
   "bounds": [
-    -0.8174999952316284,
+    -0.8234999775886536,
     -2.44350004196167,
     -0.375,
-    0.8174999952316284,
+    0.8234999775886536,
     1.899999976158142,
-    1.1042999029159546
+    1.2242999076843262
   ],
   "joints": [
     "GradingBladePivot"
@@ -123,7 +126,7 @@
   ],
   "scale": "Authored proposal units;not calibrated meters/cells or production/hangar clearance",
   "notes": [
-    "Based on the selected supplied mauna concept;culture-specific hull,working tool and articulation.",
+    "Based on the selected supplied mauna concept;canonical-style correction with straight slab sides,grey top faces,stepped roof volumes and true recessed service slots. Tools retained;repair sliders position before independent jaws close,with a separate square-head wrist.",
     "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added.",
     "Revision 2: defined hull planes,controlled edge radii,weighted surface normals,portable colour/ORM/tangent normal maps,material wear and attached mechanical detail."
   ]

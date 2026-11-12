@@ -1,0 +1,205 @@
+{
+  "culture": "mauna",
+  "references": [
+    {
+      "model": "sources/objects/mauna/combat-craft-type-1-5/model.glb",
+      "sha256": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
+      "region_metadata": {
+        "path": "sources/objects/mauna/combat-craft-type-1-5/model.json",
+        "sha256": "292e5e5311ed916e2a0fe4fa7e46f8584b95d2cb02d4dbceb3a40be07a1c4368",
+        "material_tiles": {
+          "Type 1.5 | carbon dark strips": 4,
+          "Type 1.5 | dull pale blue grey end": 3,
+          "Type 1.5 | oxidized service alloy": 1,
+          "Type 1.5 | worn grey low hull": 0
+        }
+      }
+    },
+    {
+      "model": "sources/objects/mauna/surveillance-craft-type-5/model.glb",
+      "sha256": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
+      "region_metadata": {
+        "path": "sources/objects/mauna/surveillance-craft-type-5/model.json",
+        "sha256": "d95312b47cbe715de46a55774fd14acfa1531590b67cde1b3488ac48ff78d199",
+        "material_tiles": {
+          "Type 5 | worn grey metal slab": 0,
+          "Type 5 | worn warm lower tabs": 5,
+          "Type 5 | dull blue grey insets": 2,
+          "Type 5 | oxidized service alloy": 1,
+          "Type 5 | carbon dark strips": 4
+        }
+      }
+    }
+  ],
+  "source_colour": {
+    "path": "sources/materials/mauna/mobile-ships/colour.png",
+    "sha256": "97cf240ad0545c4d5466a68bedaf6c791ce2bf42214e3423cf2c09034fd2640d"
+  },
+  "source_orm": {
+    "path": "sources/materials/mauna/mobile-ships/orm.png",
+    "sha256": "b73e975099985d68baab3e196f575c2ca58d15df0132175b8d2d1ee3e9a44087"
+  },
+  "method": "Confirmed both current canonical GLB embedded colour and ORM pixels equal the source atlas. Compare individual 4x2 atlas tile interior medians,not the mixed whole-atlas median. Five proposal colour/ORM targets checked within one byte. Surface wear is independently authored.",
+  "maps": [
+    {
+      "material": "matte-grey",
+      "canonical_tile": 0,
+      "canonical_srgb_median": [
+        118.0,
+        125.0,
+        131.0
+      ],
+      "proposal_srgb_median": [
+        118.0,
+        125.0,
+        131.0
+      ],
+      "canonical_orm_median": [
+        255.0,
+        152.0,
+        188.0
+      ],
+      "proposal_orm_median": [
+        255.0,
+        152.0,
+        188.0
+      ],
+      "colour": {
+        "path": "sources/materials/proposals/engineering-ships/mauna/matte-grey.png",
+        "sha256": "20516ffeb7b5ffb171fc9935d58ff847b4baa2a229b2b773686497c6274d263d"
+      },
+      "orm": {
+        "path": "sources/materials/proposals/engineering-ships/mauna/matte-grey-orm.png",
+        "sha256": "85cb475ea8788f02ed213ef8693870f4375ec845acfb2c56112dadc9153e03a7"
+      }
+    },
+    {
+      "material": "blue-grey",
+      "canonical_tile": 2,
+      "canonical_srgb_median": [
+        102.0,
+        131.0,
+        148.0
+      ],
+      "proposal_srgb_median": [
+        102.0,
+        131.0,
+        148.0
+      ],
+      "canonical_orm_median": [
+        255.0,
+        154.0,
+        140.0
+      ],
+      "proposal_orm_median": [
+        255.0,
+        154.0,
+        140.0
+      ],
+      "colour": {
+        "path": "sources/materials/proposals/engineering-ships/mauna/blue-grey.png",
+        "sha256": "19c87761510ca4a77579a186d4da0c78e3e79c33509817294a1b34fb1beab5ee"
+      },
+      "orm": {
+        "path": "sources/materials/proposals/engineering-ships/mauna/blue-grey-orm.png",
+        "sha256": "f04153b0dee00f6c509b2feba6d3e4d604f6fe1fa2c2437877974d8141f76d60"
+      }
+    },
+    {
+      "material": "pale-service-alloy",
+      "canonical_tile": 3,
+      "canonical_srgb_median": [
+        148.0,
+        178.0,
+        190.0
+      ],
+      "proposal_srgb_median": [
+        148.0,
+        178.0,
+        190.0
+      ],
+      "canonical_orm_median": [
+        255.0,
+        152.0,
+        140.0
+      ],
+      "proposal_orm_median": [
+        255.0,
+        152.0,
+        140.0
+      ],
+      "colour": {
+        "path": "sources/materials/proposals/engineering-ships/mauna/pale-service-alloy.png",
+        "sha256": "ae4b96e44549c8af4101b2415ba9c391a4d6e30c8d98924e60fe44608d2fb1d8"
+      },
+      "orm": {
+        "path": "sources/materials/proposals/engineering-ships/mauna/pale-service-alloy-orm.png",
+        "sha256": "53c6b25709074482760ba1ccfa6c872529709ffc430dc5bc936198101074ed80"
+      }
+    },
+    {
+      "material": "orange-mark",
+      "canonical_tile": 5,
+      "canonical_srgb_median": [
+        142.0,
+        88.0,
+        66.0
+      ],
+      "proposal_srgb_median": [
+        142.0,
+        88.0,
+        66.0
+      ],
+      "canonical_orm_median": [
+        255.0,
+        154.0,
+        188.0
+      ],
+      "proposal_orm_median": [
+        255.0,
+        154.0,
+        188.0
+      ],
+      "colour": {
+        "path": "sources/materials/proposals/engineering-ships/mauna/orange-mark.png",
+        "sha256": "dc3d9d1b72a13b531a47d61665b10485b22d28392716e10c3da5b41e190d3f28"
+      },
+      "orm": {
+        "path": "sources/materials/proposals/engineering-ships/mauna/orange-mark-orm.png",
+        "sha256": "0740f0a701ba1af8ac2cc2ebfe0c3e7eb24475e49935f182bc3ecee916543937"
+      }
+    },
+    {
+      "material": "dark-recess",
+      "canonical_tile": 4,
+      "canonical_srgb_median": [
+        17.0,
+        22.0,
+        27.0
+      ],
+      "proposal_srgb_median": [
+        17.0,
+        22.0,
+        27.0
+      ],
+      "canonical_orm_median": [
+        255.0,
+        153.0,
+        25.0
+      ],
+      "proposal_orm_median": [
+        255.0,
+        153.0,
+        25.0
+      ],
+      "colour": {
+        "path": "sources/materials/proposals/engineering-ships/mauna/dark-recess.png",
+        "sha256": "6029556d2d50d0f0ccdf91e536cc9f157441ee8e6dc392af7465240e0c5ddf52"
+      },
+      "orm": {
+        "path": "sources/materials/proposals/engineering-ships/mauna/dark-recess-orm.png",
+        "sha256": "001b6c301c388c4e33c9b1e881225ee77a130431242c880ff93b47e796299fa5"
+      }
+    }
+  ]
+}

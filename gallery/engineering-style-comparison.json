@@ -268,8 +268,8 @@
           "status": "engineering proposal",
           "model": "sources/proposals/engineering-ships/mauna/terraform/model.glb",
           "image": "gallery/media/proposals/engineering-ships/mauna/terraform/imported-front-quarter.png",
-          "model_sha256": "79be6d229ce36621350c6ccd1a36e1711c98f9150114dc78e213c260cea89eee",
-          "image_sha256": "70ce11fa3ee8752c0e8a15dbe52336fad64f4b30c258715521a17ad25ff0dd10"
+          "model_sha256": "29b04e9dc0456535f4d43b6f0e89cb453e730c940757ce3d6e493fa92ae2cf93",
+          "image_sha256": "78513afeff87598f68337ecd1ad5dc00be7565653275164db8808d398fbff079"
         },
         {
           "name": "Repair Ship",
@@ -277,8 +277,8 @@
           "status": "engineering proposal",
           "model": "sources/proposals/engineering-ships/mauna/repair/model.glb",
           "image": "gallery/media/proposals/engineering-ships/mauna/repair/imported-front-quarter.png",
-          "model_sha256": "1cd6a1dd72312fa81a7c58073230221d50e137b8bc5ea73e2f89d2b699f6f9e3",
-          "image_sha256": "d327eeb83a136fc1a7dc0d03375d15cfae8ecb3ddf65f51a1593525a292bf7c6"
+          "model_sha256": "c88e790c22b797ac113a8f2fdd65dd08f5c9383c7c0e1d9f9292a41cd49c3c63",
+          "image_sha256": "4807b902fa0673baa0c0a99b3489c63d6352f4c387a929f0f830b8da92bad7b4"
         },
         {
           "name": "Combat Craft Type 1.5",
@@ -287,9 +287,11 @@
           "catalogue_id": "openfa:ship/mauna/combat-craft-type-1-5",
           "stage": "mobile-ship-remaster",
           "model": "sources/objects/mauna/combat-craft-type-1-5/model.glb",
-          "image": "gallery/media/objects/mauna/combat-craft-type-1-5/front-quarter.png",
+          "image": "gallery/media/proposals/engineering-ships/mauna/canonical-references/combat-craft-type-1-5-front-quarter.png",
           "model_sha256": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
-          "image_sha256": "2b83b3175ea9c9c4d4179a924d6ab84230bbdfbef1ea81f16e69fed65d8a37ab"
+          "image_sha256": "b2db76cffe85515da8bc5b3e7426d94b8fd3585fda6ba0fff210285cee20dee1",
+          "catalogue_image": "gallery/media/objects/mauna/combat-craft-type-1-5/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
         },
         {
           "name": "Surveillance Craft Type 5",
@@ -298,13 +300,15 @@
           "catalogue_id": "openfa:ship/mauna/surveillance-craft-type-5",
           "stage": "mobile-ship-remaster",
           "model": "sources/objects/mauna/surveillance-craft-type-5/model.glb",
-          "image": "gallery/media/objects/mauna/surveillance-craft-type-5/front-quarter.png",
+          "image": "gallery/media/proposals/engineering-ships/mauna/canonical-references/surveillance-craft-type-5-front-quarter.png",
           "model_sha256": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
-          "image_sha256": "48e62e2a388dc600439a279686e9adb0f3e016898689b92b62a492c947478eda"
+          "image_sha256": "d664b7a55cc3617abbdb4295637aa8bbcfdd882a298e04e0d49d1913ebca18d4",
+          "catalogue_image": "gallery/media/objects/mauna/surveillance-craft-type-5/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
         }
       ],
-      "common_studio": false,
-      "assessment": "Close structural match: rectangular volumes,stepped sections,slots and grey/blue-grey materials connect the ships. Surface finish differs;lighting and separate rendering passes limit exact colour judgement.",
+      "common_studio": true,
+      "assessment": "Canonical-style pass:Terraform used three actual attempts,Repair two (technical failures retained). Orthogonal slabs,stepped roofs,grey main bodies,blue-grey service insets and true recessed slots now follow the fleet. Five colour/ORM targets match canonical atlas tiles;actual GLB references use the same studio. Repair has five channels including independent jaws and a wrist. User artistic acceptance is pending.",
       "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
     },
     {

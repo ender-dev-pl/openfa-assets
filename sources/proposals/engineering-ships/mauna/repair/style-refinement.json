@@ -1,0 +1,170 @@
+{
+  "issue": 265,
+  "culture": "mauna",
+  "role": "repair",
+  "max_cycles": 3,
+  "final_user_artistic_acceptance": false,
+  "cycles": [
+    {
+      "number": 1,
+      "status": "visually-reviewed",
+      "baseline_commit": "ba732fc92aaedd1c793ec90efbef9212797c5f71",
+      "baseline_binaries": {
+        "blend": "869985a7d7d4eeb549d5626c68b1cc4aa45edcc03943f8f55d434ef21a2ec492",
+        "glb": "1cd6a1dd72312fa81a7c58073230221d50e137b8bc5ea73e2f89d2b699f6f9e3"
+      },
+      "baseline_author_sha256": "0363105613f679b53c2ecc7041f46ec48cd8dcb0430803069c757bee2ab1da9e",
+      "canonical_references": [
+        {
+          "name": "Combat Craft Type 1.5",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mauna/combat-craft-type-1-5",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mauna/combat-craft-type-1-5/model.glb",
+          "image": "gallery/media/objects/mauna/combat-craft-type-1-5/front-quarter.png",
+          "model_sha256": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
+          "image_sha256": "2b83b3175ea9c9c4d4179a924d6ab84230bbdfbef1ea81f16e69fed65d8a37ab",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/mauna/canonical-references/combat-craft-type-1-5-front-quarter.png",
+            "sha256": "b2db76cffe85515da8bc5b3e7426d94b8fd3585fda6ba0fff210285cee20dee1"
+          }
+        },
+        {
+          "name": "Surveillance Craft Type 5",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mauna/surveillance-craft-type-5",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mauna/surveillance-craft-type-5/model.glb",
+          "image": "gallery/media/objects/mauna/surveillance-craft-type-5/front-quarter.png",
+          "model_sha256": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
+          "image_sha256": "48e62e2a388dc600439a279686e9adb0f3e016898689b92b62a492c947478eda",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/mauna/canonical-references/surveillance-craft-type-5-front-quarter.png",
+            "sha256": "d664b7a55cc3617abbdb4295637aa8bbcfdd882a298e04e0d49d1913ebca18d4"
+          }
+        }
+      ],
+      "intent": "Match canonical slab/stepped construction and measured grey/blue-grey material targets with true inset service features. Preserve grading blade and add meaningful independently articulated repair end effectors coordinated with rooted slides.",
+      "decision": "continue-to-cycle-2",
+      "author_sha256": "339684936371be4ff3bde8c34d4ea6caab78907e317190b1e969b37a8686c498",
+      "binaries": {
+        "blend": "95c01704ede7dd083dfe67f0f0b286cfac5a5a68e93b8e5642a7187c25bd85e4",
+        "glb": "6b83ad61d4b5846d5fa88fb31c58521183c55ae791da832831ff064004d1bea8"
+      },
+      "comparison_conditions": "Actual current canonical and engineering GLB imports in the same review studio;independent display fit,not game scale.",
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/mauna/canonical-reference-review.json",
+        "sha256": "0d84e5157fd0dc7ded8f87e0bdcccdac30e98cbbe01a0638eb0c26e2911ab5da"
+      },
+      "observations": [
+        "Actual GLB renders show stepped straight volumes,smaller edge radii and real inset service slots related to the current Mauna small fleet. Utility towers and grading/clamp tools remain distinct.",
+        "The blue body material occupies too much surface. Current canonical model material_tiles confirm grey main slabs with blue-grey confined to insets. Use cycle2 to restore that material-region distribution.",
+        "Strict native support-graph validation failed on six recessed-slot backing inserts before runtime rendering. Separate actual native/import diagnostic renders were generated without acceptance to inspect the failure. This attempt consumes cycle1;cycle2 must correct physical support."
+      ],
+      "remaining": [
+        "Grey-main-body material redistribution in cycle2.",
+        "User artistic acceptance,physical scale and continuous swept clearance pending."
+      ],
+      "technical_result": "failed",
+      "technical_failure": {
+        "path": "sources/proposals/engineering-ships/mauna/repair/cycle-01-technical-failure.json",
+        "sha256": "69e16385a7fa186a6b7fc102b779389890c5a25b4e9dda4c6340f66cae265a0b"
+      },
+      "current_preview": {
+        "path": "gallery/media/proposals/engineering-ships/mauna/repair/cycle-01-front-quarter.png",
+        "sha256": "0dd7e8442aeecdb2a3896ac72a585b566dc5cebad1c61381ffd8ccfc2665580a"
+      },
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/mauna/repair/canonical-style-cycle-01.png",
+        "sha256": "601db1c4877fc517137a310c90c29e4a7d046018fc4b23db284caf2f1459febc"
+      }
+    },
+    {
+      "number": 2,
+      "status": "visually-reviewed",
+      "baseline_commit": "ba732fc92aaedd1c793ec90efbef9212797c5f71",
+      "baseline_binaries": {
+        "blend": "95c01704ede7dd083dfe67f0f0b286cfac5a5a68e93b8e5642a7187c25bd85e4",
+        "glb": "6b83ad61d4b5846d5fa88fb31c58521183c55ae791da832831ff064004d1bea8"
+      },
+      "baseline_author_sha256": "339684936371be4ff3bde8c34d4ea6caab78907e317190b1e969b37a8686c498",
+      "baseline_preview": {
+        "path": "gallery/media/proposals/engineering-ships/mauna/repair/cycle-01-front-quarter.png",
+        "sha256": "0dd7e8442aeecdb2a3896ac72a585b566dc5cebad1c61381ffd8ccfc2665580a"
+      },
+      "canonical_references": [
+        {
+          "name": "Combat Craft Type 1.5",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mauna/combat-craft-type-1-5",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mauna/combat-craft-type-1-5/model.glb",
+          "image": "gallery/media/objects/mauna/combat-craft-type-1-5/front-quarter.png",
+          "model_sha256": "c02cbbcc1ff2917aef9f0437cf22bf6de71743980cca87c29a45e1c3c7bba1af",
+          "image_sha256": "2b83b3175ea9c9c4d4179a924d6ab84230bbdfbef1ea81f16e69fed65d8a37ab",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/mauna/canonical-references/combat-craft-type-1-5-front-quarter.png",
+            "sha256": "b2db76cffe85515da8bc5b3e7426d94b8fd3585fda6ba0fff210285cee20dee1"
+          }
+        },
+        {
+          "name": "Surveillance Craft Type 5",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/mauna/surveillance-craft-type-5",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/mauna/surveillance-craft-type-5/model.glb",
+          "image": "gallery/media/objects/mauna/surveillance-craft-type-5/front-quarter.png",
+          "model_sha256": "eefd05809245bf699d1f2e9c98362b78612d77b31ec6ca13be8e29cd04dbaa3b",
+          "image_sha256": "48e62e2a388dc600439a279686e9adb0f3e016898689b92b62a492c947478eda",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/mauna/canonical-references/surveillance-craft-type-5-front-quarter.png",
+            "sha256": "d664b7a55cc3617abbdb4295637aa8bbcfdd882a298e04e0d49d1913ebca18d4"
+          }
+        }
+      ],
+      "comparison_conditions": "Actual current canonical and engineering GLB imports in the same review studio;independent display fit,not game scale.",
+      "intent": "Second actual repair export:embed the six tower slot backings into the inset floors,use grey main slabs and blue-grey insets,and avoid duplicate material slots identified before this export. Maintain strict native/import checks.",
+      "author_iteration": 3,
+      "pipeline_note": "Shared author revision2 stopped after Terraforming Ship export failed;Repair Ship was not exported or rendered with revision2. Its second actual export uses corrected author revision3. No cycle was reset.",
+      "decision": "author-review-complete",
+      "technical_result": "passed",
+      "author_sha256": "5c0ff51ebbba6815792779105011fd83b19de03be0eff41abecd451b00fef5f2",
+      "binaries": {
+        "blend": "fda0d0f16d1a0c3dadda3f483f7b9d5b158c6f50c251d43e835f810f38108641",
+        "glb": "c88e790c22b797ac113a8f2fdd65dd08f5c9383c7c0e1d9f9292a41cd49c3c63"
+      },
+      "runtime_review_sha256": "7f6f922ccfba282b7d5ee8833faad38aabcd95218c73751b721fb762286ce194",
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/mauna/canonical-reference-review.json",
+        "sha256": "0d84e5157fd0dc7ded8f87e0bdcccdac30e98cbbe01a0638eb0c26e2911ab5da"
+      },
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/mauna/repair/canonical-style-cycle-02.png",
+        "sha256": "1e302f6cda9809147afdcd8144306a05192649f9ce48fd92b07cbd7ab523ae7e"
+      },
+      "observations": [
+        "Actual native and independently imported front/rear/top renders were inspected against the current Combat Craft Type1.5 and Surveillance Craft Type5 GLBs in the same studio. Slab sides,smaller edge radii and stepped roof blocks now repeat their orthogonal construction language;grading blade and twin-tower working layout remain functional proposal distinctions.",
+        "The main slabs,towers and roof steps are grey. Blue-grey and pale alloy are confined to service insets,fascia and tool details,with a small warm-oxide marker. Five colour/ORM map medians match actual canonical atlas tile interiors within one byte. Both embedded canonical map arrays equal the atlas;current canonical material_tiles metadata supports the region assignments.",
+        "Technical failures were counted and retained:Repair attempt1 had six unsupported slot-back inserts;Terraform attempt2 had duplicate grey material slots consolidated by glTF. Actual diagnostic GLB views and sanitized failure records remain linked. Terraform attempt3 passes after slot deduplication. Repair's second actual export uses shared author revision3 with embedded backings and deduplicated materials;revision2 was never exported for Repair after the earlier Terraform failure stopped that queue.",
+        "Actual working poses at0/1/2/3seconds were inspected. The grading blade uses its rooted tilt pivot. Repair sliders extend before two separate clamp jaws close/release;the square service head has its own wrist. Native/import checks pass for physical support and matching animated surfaces at six sampled poses. No extra arbitrary articulation is added to fixed hulls.",
+        "Wear remains sparse and materials remain opaque. User artistic acceptance,physical game scale,platform profiling and continuous swept clearance are pending. These are new proposal units awaiting mechanics;canonical models and gameplay/runtime catalogues are unchanged."
+      ],
+      "remaining": [
+        "User artistic acceptance.",
+        "Function-specific grading blade/twin-tower working layout remains distinct from combat/scout forms.",
+        "Physical game scale,profiling and continuous swept clearance outside proposal review."
+      ]
+    }
+  ],
+  "cycles_used": 2,
+  "cycles_remaining": 1,
+  "current_binaries": {
+    "blend": "fda0d0f16d1a0c3dadda3f483f7b9d5b158c6f50c251d43e835f810f38108641",
+    "glb": "c88e790c22b797ac113a8f2fdd65dd08f5c9383c7c0e1d9f9292a41cd49c3c63"
+  },
+  "status": "author-style-review-complete-user-acceptance-pending"
+}
