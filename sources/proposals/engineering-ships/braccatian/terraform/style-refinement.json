@@ -1,0 +1,230 @@
+{
+  "issue": 265,
+  "culture": "braccatian",
+  "role": "terraform",
+  "max_cycles": 3,
+  "final_user_artistic_acceptance": false,
+  "cycles": [
+    {
+      "number": 1,
+      "status": "visually-reviewed",
+      "baseline_commit": "f171b0fd0088a75f25d7b2cf57dee85cf5b0c497",
+      "baseline_binaries": {
+        "blend": "5e8729083c2413e0e8732618a9e9e72421c8b0c6ba06bed0efac1402d50cc520",
+        "glb": "e8e13d6cae6f886b2d73a1728605fb38e9af74b54a208c2d0242b1d8b634f0da"
+      },
+      "baseline_author_sha256": "945ab170e047520f6e2b6c81d1cc5f3e6f4281f7ee9ee3996b6873d667599deb",
+      "canonical_references": [
+        {
+          "name": "Morning Glory",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/morning-glory",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/morning-glory/model.glb",
+          "image": "gallery/media/objects/braccatian/morning-glory/front-quarter.png",
+          "model_sha256": "b3e9ded923afcd331caa5c0671f3ba2f2766d32b9899797f904babc59acbc4df",
+          "image_sha256": "c876093b58fa552c09efcfc90f17877d007df7d8b0d5bcb489207b502a5fd692",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/braccatian/canonical-references/morning-glory-front-quarter.png",
+            "sha256": "5e42f5f42790b128cf2d49941cf4b9ed68c752020e6c905be21ff566252a59cd"
+          }
+        },
+        {
+          "name": "Rattlesnake",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/rattlesnake",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/rattlesnake/model.glb",
+          "image": "gallery/media/objects/braccatian/rattlesnake/front-quarter.png",
+          "model_sha256": "a1e9813632151814e7850892bb30c17e5c66db0d296d7fc589f2556c9e66921e",
+          "image_sha256": "ba2d564c17308da18578a9d705a0fdb1ba951d4fb78f86cdacffdc369d77d3eb",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/braccatian/canonical-references/rattlesnake-front-quarter.png",
+            "sha256": "43b49d9ec28f14f02ab9f6dca3e19ab028f0eb2f44b4727b6d42214e0cb6b35d"
+          }
+        }
+      ],
+      "intent": "Use canonical coral/ochre/brass palette and shaped lobe/taper hull instead of uniform barrel with broad black reinforcements. Preserve crusher/ventral tools and add rooted positioning plus independently articulated repair fingers.",
+      "decision": "continue-to-cycle-2",
+      "author_sha256": "fd4308ee5bf7ad6e9624baf70f9023a8778e16e2115fc0911a31431278349b19",
+      "binaries": {
+        "blend": "15360c3e749ed63042291b9dd2073d3814a177427a8f2567a8d94dda0987cd7e",
+        "glb": "bbf5ca78097f48f1f484fc49fbbc556eedb2b69398f8584f1b05a790b6436e1f"
+      },
+      "runtime_review_sha256": "f6efe3af52d81a27a2ad0030956b525dcff16e0646e8a95a7d4ffc7a041d1ae7",
+      "comparison_conditions": "Actual canonical and engineering GLB imports rendered by the same studio function;independent framing for style review,not game scale.",
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/braccatian/canonical-reference-review.json",
+        "sha256": "22b3386007417fe5f482ae36d9972ebcc9727faf7206de7582152bdd7431852e"
+      },
+      "observations": [
+        "Actual native and imported GLB front views and native top view show a related rose-copper lobe/waist hull,ochre prow and narrow bands instead of the former black industrial rails.",
+        "Visible longitudinal profile breaks are too abrupt,and the rectangular front slot leaves two triangular ends on the curved prow. Repair strap bridges the waist with a visible roof gap. Use cycle2 for smoother sampled profile,a small circular end-face sensor and a surface-fitting waist strap."
+      ],
+      "remaining": [
+        "Profile,prow sensor and waist strap corrections in cycle2.",
+        "User artistic acceptance,game scale and continuous swept clearance pending."
+      ],
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/braccatian/terraform/canonical-style-cycle-01.png",
+        "sha256": "5bd1f530daa6cea8c1a5987b1c3c16488d830b7c7526d51a18632dd5989f6235"
+      }
+    },
+    {
+      "number": 2,
+      "status": "visually-reviewed",
+      "baseline_commit": "f171b0fd0088a75f25d7b2cf57dee85cf5b0c497",
+      "baseline_binaries": {
+        "blend": "15360c3e749ed63042291b9dd2073d3814a177427a8f2567a8d94dda0987cd7e",
+        "glb": "bbf5ca78097f48f1f484fc49fbbc556eedb2b69398f8584f1b05a790b6436e1f"
+      },
+      "baseline_author_sha256": "fd4308ee5bf7ad6e9624baf70f9023a8778e16e2115fc0911a31431278349b19",
+      "baseline_preview": {
+        "path": "gallery/media/proposals/engineering-ships/braccatian/terraform/cycle-01-front-quarter.png",
+        "sha256": "c984ed8ae63e9585d62ce5a5752ac6dfc569d16af24efebca177c799c02b772c"
+      },
+      "canonical_references": [
+        {
+          "name": "Morning Glory",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/morning-glory",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/morning-glory/model.glb",
+          "image": "gallery/media/objects/braccatian/morning-glory/front-quarter.png",
+          "model_sha256": "b3e9ded923afcd331caa5c0671f3ba2f2766d32b9899797f904babc59acbc4df",
+          "image_sha256": "c876093b58fa552c09efcfc90f17877d007df7d8b0d5bcb489207b502a5fd692",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/braccatian/canonical-references/morning-glory-front-quarter.png",
+            "sha256": "5e42f5f42790b128cf2d49941cf4b9ed68c752020e6c905be21ff566252a59cd"
+          }
+        },
+        {
+          "name": "Rattlesnake",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/rattlesnake",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/rattlesnake/model.glb",
+          "image": "gallery/media/objects/braccatian/rattlesnake/front-quarter.png",
+          "model_sha256": "a1e9813632151814e7850892bb30c17e5c66db0d296d7fc589f2556c9e66921e",
+          "image_sha256": "ba2d564c17308da18578a9d705a0fdb1ba951d4fb78f86cdacffdc369d77d3eb",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/braccatian/canonical-references/rattlesnake-front-quarter.png",
+            "sha256": "43b49d9ec28f14f02ab9f6dca3e19ab028f0eb2f44b4727b6d42214e0cb6b35d"
+          }
+        }
+      ],
+      "comparison_conditions": "Actual canonical and engineering GLB imports rendered by the same studio function;independent framing for style review,not game scale.",
+      "intent": "Smooth sampled longitudinal profiles while preserving lobe/waist silhouette,replace broken front slot with a circular end-face sensor and conform repair waist strap to actual body section.",
+      "decision": "continue-to-cycle-3",
+      "author_sha256": "71d2344e017e95bc55fa3d18207e39b69625cf52b50c46adda2f9e2af3e1d3a6",
+      "binaries": {
+        "blend": "17f6e59e77bf1b04a62f5aa42351041c99dd69248939a94e42c888c78bdd9748",
+        "glb": "90fc9420aa4969a4efc768b0e6cee0894d8f11b18269d92acbb45d56f3704372"
+      },
+      "runtime_review_sha256": "500fd86ddc7f50baa6780703923daec8aa30b713f05684ecf7b9cdd180b59045",
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/braccatian/canonical-reference-review.json",
+        "sha256": "22b3386007417fe5f482ae36d9972ebcc9727faf7206de7582152bdd7431852e"
+      },
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/braccatian/terraform/canonical-style-cycle-02.png",
+        "sha256": "72251758a7361f12236345e5fd3366a8f0810044b2ff3d640aa862e3c2e81c67"
+      },
+      "observations": [
+        "Actual native front/rear/top and independent GLB renders show smoother lobe/waist profiles and a readable single circular prow sensor. The repair waist strap now follows the actual body section without its earlier arch gap.",
+        "In top views transverse ochre inlays overlap the dorsal cover at the same surface depth,causing broken visible bands. Use the last permitted cycle to raise these bands and deepen their embedded backs;retain all other geometry and motion."
+      ],
+      "remaining": [
+        "Transverse inlay/cover coplanarity correction in cycle3.",
+        "User artistic acceptance,physical scale and continuous swept clearance pending."
+      ]
+    },
+    {
+      "number": 3,
+      "status": "visually-reviewed",
+      "baseline_commit": "f171b0fd0088a75f25d7b2cf57dee85cf5b0c497",
+      "baseline_binaries": {
+        "blend": "17f6e59e77bf1b04a62f5aa42351041c99dd69248939a94e42c888c78bdd9748",
+        "glb": "90fc9420aa4969a4efc768b0e6cee0894d8f11b18269d92acbb45d56f3704372"
+      },
+      "baseline_author_sha256": "71d2344e017e95bc55fa3d18207e39b69625cf52b50c46adda2f9e2af3e1d3a6",
+      "baseline_preview": {
+        "path": "gallery/media/proposals/engineering-ships/braccatian/terraform/cycle-02-front-quarter.png",
+        "sha256": "373d5304fde1c56ec42be05676241b082560365d1edebdb9e969cb7ef5750536"
+      },
+      "canonical_references": [
+        {
+          "name": "Morning Glory",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/morning-glory",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/morning-glory/model.glb",
+          "image": "gallery/media/objects/braccatian/morning-glory/front-quarter.png",
+          "model_sha256": "b3e9ded923afcd331caa5c0671f3ba2f2766d32b9899797f904babc59acbc4df",
+          "image_sha256": "c876093b58fa552c09efcfc90f17877d007df7d8b0d5bcb489207b502a5fd692",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/braccatian/canonical-references/morning-glory-front-quarter.png",
+            "sha256": "5e42f5f42790b128cf2d49941cf4b9ed68c752020e6c905be21ff566252a59cd"
+          }
+        },
+        {
+          "name": "Rattlesnake",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:ship/braccatian/rattlesnake",
+          "stage": "mobile-ship-remaster",
+          "model": "sources/objects/braccatian/rattlesnake/model.glb",
+          "image": "gallery/media/objects/braccatian/rattlesnake/front-quarter.png",
+          "model_sha256": "a1e9813632151814e7850892bb30c17e5c66db0d296d7fc589f2556c9e66921e",
+          "image_sha256": "ba2d564c17308da18578a9d705a0fdb1ba951d4fb78f86cdacffdc369d77d3eb",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/braccatian/canonical-references/rattlesnake-front-quarter.png",
+            "sha256": "43b49d9ec28f14f02ab9f6dca3e19ab028f0eb2f44b4727b6d42214e0cb6b35d"
+          }
+        }
+      ],
+      "comparison_conditions": "Actual canonical and engineering GLB imports rendered by the same studio function;independent framing for style review,not game scale.",
+      "intent": "Last permitted cycle:raise transverse ochre inlays above the dorsal cover and deepen their embedded backs to remove coplanar visibility breaks while keeping physical support.",
+      "decision": "author-review-complete",
+      "author_sha256": "7f7e948fd0f552d93a91e181d176439549e176f32bdee1c624ac6dd4bb971825",
+      "binaries": {
+        "blend": "754c0ce741b982142824f39b23bf1b86b9243dac97707b69f4d6806a3caffd80",
+        "glb": "79bfcf19234dbbeddc808a5f4f518a9f81b5bc511aeaa2bc16687673dea3701d"
+      },
+      "runtime_review_sha256": "b98d8bdac32225cf6e072961a872ce1a9da5148da0df968274bbe2a9df243db3",
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/braccatian/canonical-reference-review.json",
+        "sha256": "22b3386007417fe5f482ae36d9972ebcc9727faf7206de7582152bdd7431852e"
+      },
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/braccatian/terraform/canonical-style-cycle-03.png",
+        "sha256": "721977c311bacc089325d0ec1eab29dfdbcf376a91becefdcf9ff7497d21f0f0"
+      },
+      "observations": [
+        "Actual native and independently imported GLB front/rear/top views were reviewed against current Morning Glory and Rattlesnake GLBs rendered by the same studio. Display fit is independent and does not establish physical game scale.",
+        "The rose-copper fore/aft lobes,waist,pale ochre prow and narrow inlays repeat the small fleet's construction language. The former broad black rails and uniform ochre barrel were removed. Utility bodies remain wider than the slim scout and retain their own rooted working tools.",
+        "Cycle1 established the family shape/palette but showed abrupt longitudinal profile breaks,a partially buried front slot and a repair strap arch gap. Cycle2 smoothed the sampled profiles,replaced the slot with one circular end-face sensor and fitted the strap to the waist. Cycle3 raised transverse inlays above the dorsal cover with embedded backs,removing their coplanar visibility breaks. All three permitted cycles are consumed;no fourth is authorized automatically.",
+        "Five generated colour/ORM medians match current canonical atlas tile interiors within one byte. Both canonical GLB embedded colour/ORM pixel arrays were confirmed equal to the source atlas. Sparse authored wear preserves lobe geometry and narrow fittings without a decorative panel grid.",
+        "Actual working poses at 0,1,2 and3seconds were inspected. Crusher jaws open/close on supported opposing hinges. Repair yoke positions before separately animated fingers close,release and return. Six sampled native/import attachment and animated-surface checks passed;continuous swept clearance is not certified.",
+        "User artistic acceptance remains pending. Physical game scale,platform profiling and gameplay mechanics/integration remain outside this proposal-only delivery. Canonical models and runtime catalogues are unchanged."
+      ],
+      "remaining": [
+        "User artistic acceptance.",
+        "Function-specific hull width and utility tooling differ deliberately from combat/scout proportions.",
+        "Physical game scale,profiling and continuous swept clearance outside proposal review."
+      ]
+    }
+  ],
+  "cycles_used": 3,
+  "cycles_remaining": 0,
+  "current_binaries": {
+    "blend": "754c0ce741b982142824f39b23bf1b86b9243dac97707b69f4d6806a3caffd80",
+    "glb": "79bfcf19234dbbeddc808a5f4f518a9f81b5bc511aeaa2bc16687673dea3701d"
+  },
+  "status": "author-style-review-complete-user-acceptance-pending"
+}
