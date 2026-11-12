@@ -2,22 +2,23 @@
   "issue": 265,
   "revision": 2,
   "binaries": {
-    "blend": "43fcbfa63908e016248b54b3c3306d3d1708054e2bdcc081fd3229ac7a63ebae",
-    "glb": "a0d75c02b2505c4ae42cac4e945cca45e060e38286e69bda51e39c34057e049e"
+    "blend": "8444a3cefa6d88cc10da2d451b8dc6d8a689ddb4d5e2609e65c64001cdf7f0ef",
+    "glb": "f9dd25a937b9153fc51b098cb653df7422f9fcb23bf602621894077fc9317146"
   },
   "comparison": {
     "path": "gallery/media/proposals/engineering-ships/terran/terraform/refinement-comparison.png",
-    "sha256": "376b949598f0275e3f66a4967a96f94a9fe6a94522817efaaf6d6172594c4818",
-    "baseline_commit": "af7f26a23713483342b59283ac72e59a15b42ae4",
-    "baseline_binary_sha256": "f516f35f289f26b13b06be1a0132c45ab81f0b4c368ddf5df9eaeec58da11f2c",
-    "refined_binary_sha256": "a0d75c02b2505c4ae42cac4e945cca45e060e38286e69bda51e39c34057e049e"
+    "sha256": "d22972d2f5f6dd57cd5c2a79b1cf955dd9bc0b9bee81e3e2426a5cc9346e5a21",
+    "baseline_commit": "2239b1033a879af3049c7c227d9fccd49183fbe3",
+    "baseline_binary_sha256": "a0d75c02b2505c4ae42cac4e945cca45e060e38286e69bda51e39c34057e049e",
+    "refined_binary_sha256": "f9dd25a937b9153fc51b098cb653df7422f9fcb23bf602621894077fc9317146"
   },
   "review": "Author visual comparison;user artistic acceptance pending",
   "observations": [
-    "Compared actual refined native/imported renders with the selected concept and the revision-1 model. Gondolas and cabin retain explicit planes and clipped corners following user feedback;continuous pill-like gondolas were rejected.",
-    "Refinement adds controlled edge radii,weighted normals,portable colour/roughness-metallic/tangent-normal maps,material scuffs and shallow dent shading,hub washers/fasteners,rotor seals and replaceable cutting inserts.",
-    "Reviewed actual imported playback at four times. Drum turns with inserts attached;fixed brackets and hull stay stationary. Six-pose native/import geometry and per-material PBR image binding checks pass.",
-    "The faceted cabin is a deliberate style adjustment toward the established fleet;concept rear and hidden engineering remain authored extrapolations."
+    "Actual native and independently imported front,rear and top renders were inspected against the current canonical Assault Fighter and Scoutship in the same review studio. Complete Hull children are shown;Build* batches are excluded as required by the model client_binding.",
+    "Cycle1 corrected violet-grey/red/brass material targets and introduced tapered layered deck,faceted shrouds and real inset louvres. Its planform remained rectangular. Cycle2 swept the gondolas outward toward the rear and tapered the deck;the utility silhouette remains broader than the pointed combat hull by functional design.",
+    "Five colour and effective ORM targets match the current Fighter's actual glTF material factors within byte quantization. Linear source RGB factors were converted to sRGB map inputs. Sparse material wear and edge definition remain visible without a decorative hull grid.",
+    "Working GLB poses inspected at 0,0.5,2 and3seconds. Terraforming drum rotates on rooted bearings (quarter-period pictures alias its repeated teeth);repair arms position before two separately articulated jaws close and reopen. Six sampled native/import attachment and geometry checks passed.",
+    "User artistic acceptance,physical game scale,platform profiling and continuous swept clearance remain pending. These are proposal assets awaiting mechanics;canonical models and gameplay catalogues are unchanged."
   ],
   "limits": [
     "Authored rear/hidden engineering and provisional scale.",

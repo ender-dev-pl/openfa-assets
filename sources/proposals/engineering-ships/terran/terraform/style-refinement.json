@@ -1,0 +1,158 @@
+{
+  "issue": 265,
+  "culture": "terran",
+  "role": "terraform",
+  "max_cycles": 3,
+  "final_user_artistic_acceptance": false,
+  "cycles": [
+    {
+      "number": 1,
+      "status": "visually-reviewed",
+      "baseline_commit": "2239b1033a879af3049c7c227d9fccd49183fbe3",
+      "baseline_binaries": {
+        "blend": "43fcbfa63908e016248b54b3c3306d3d1708054e2bdcc081fd3229ac7a63ebae",
+        "glb": "a0d75c02b2505c4ae42cac4e945cca45e060e38286e69bda51e39c34057e049e"
+      },
+      "baseline_author_sha256": "5d9c06ee743e75be3a09205f13928574a303bb05083ac05a63bbb366b4062a7c",
+      "canonical_references": [
+        {
+          "name": "Assault Fighter",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:assault-fighter",
+          "stage": "layered-construction",
+          "model": "sources/objects/terran/assault-fighter/model.glb",
+          "image": "gallery/media/objects/terran/assault-fighter/construction/front-quarter.png",
+          "model_sha256": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+          "image_sha256": "f02dffba3a4304dd441497e799214eff75556b089dd352e72d9ec22dfa73cf70",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/terran/canonical-references/assault-fighter-front-quarter.png",
+            "sha256": "68d3644b7d9a1d52be96826787ea773e31f2130b0fe7419d7e7413f9b8665d33"
+          }
+        },
+        {
+          "name": "Scoutship",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:scoutship",
+          "stage": "layered-construction",
+          "model": "sources/objects/terran/scoutship/model.glb",
+          "image": "gallery/media/objects/terran/scoutship/construction/front-quarter.png",
+          "model_sha256": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+          "image_sha256": "ad15467e809c17a6dfd77768e094445abc009e52838536aff3d0209064873606",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/terran/canonical-references/scoutship-front-quarter.png",
+            "sha256": "8c07bc43788a30d94dcbcb202f5bbb19d493fb7554801d27de606bbe3d0fcf0a"
+          }
+        }
+      ],
+      "intent": "Match canonical violet-grey wedge/plate hull and red fields with brass engine details;retain faceted cabin and rooted utility tools;add independent jaws coordinated after arm positioning.",
+      "decision": "continue-to-cycle-2",
+      "author_sha256": "8f0e37bcfacd39fae4d085d135a854042dd81517ba2530ef0c9a2001bfe516d7",
+      "binaries": {
+        "blend": "83c2117d35d79d9a1c9f7f57b4a54bdf24960373ec4a274ff74c0ce994075f9e",
+        "glb": "a42871b64f1185f2927942d110d3454540f050b2b51de095d301319ffe2a4239"
+      },
+      "runtime_review_sha256": "20b56acd6f1fd5280dc98f5d37982e90ba49f577a2faf2094df2e78f710dc44f",
+      "comparison_conditions": "Actual engineering and canonical GLB imports in the same studio;canonical complete Hull children visible,Build* layers omitted per client_binding. Independent fit,not game scale.",
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/terran/canonical-reference-review.json",
+        "sha256": "de0cb4254e4c514d30c6bba72bae501ed007736d47cc5da56ac852c13ed68423"
+      },
+      "observations": [
+        "Actual GLB front and top views retain functional rooted tools and show canonical violet-grey/red/brass materials with sparse wear.",
+        "Parallel full-length gondolas still give a rectangular planform unlike the canonical small-fleet wedge. Use cycle2 to sweep the gondolas outward toward the rear and taper the deck outline."
+      ],
+      "remaining": [
+        "Swept planform correction in cycle2.",
+        "User artistic acceptance,game scale and continuous swept clearance pending."
+      ],
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/terran/terraform/canonical-style-cycle-01.png",
+        "sha256": "caa9d5300574fc39858d2bb2714ea0bc32af38682c80285d60203baff2b6e842"
+      }
+    },
+    {
+      "number": 2,
+      "status": "visually-reviewed",
+      "baseline_commit": "2239b1033a879af3049c7c227d9fccd49183fbe3",
+      "baseline_binaries": {
+        "blend": "83c2117d35d79d9a1c9f7f57b4a54bdf24960373ec4a274ff74c0ce994075f9e",
+        "glb": "a42871b64f1185f2927942d110d3454540f050b2b51de095d301319ffe2a4239"
+      },
+      "baseline_author_sha256": "8f0e37bcfacd39fae4d085d135a854042dd81517ba2530ef0c9a2001bfe516d7",
+      "baseline_preview": {
+        "path": "gallery/media/proposals/engineering-ships/terran/terraform/cycle-01-front-quarter.png",
+        "sha256": "af7eff1a2966279190a74f4889219e7080a1f88027d7860883a05d8f1c351a70"
+      },
+      "canonical_references": [
+        {
+          "name": "Assault Fighter",
+          "role": "small combat/craft reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:assault-fighter",
+          "stage": "layered-construction",
+          "model": "sources/objects/terran/assault-fighter/model.glb",
+          "image": "gallery/media/objects/terran/assault-fighter/construction/front-quarter.png",
+          "model_sha256": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
+          "image_sha256": "f02dffba3a4304dd441497e799214eff75556b089dd352e72d9ec22dfa73cf70",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/terran/canonical-references/assault-fighter-front-quarter.png",
+            "sha256": "68d3644b7d9a1d52be96826787ea773e31f2130b0fe7419d7e7413f9b8665d33"
+          }
+        },
+        {
+          "name": "Scoutship",
+          "role": "small scout/research reference",
+          "status": "current catalogue",
+          "catalogue_id": "openfa:scoutship",
+          "stage": "layered-construction",
+          "model": "sources/objects/terran/scoutship/model.glb",
+          "image": "gallery/media/objects/terran/scoutship/construction/front-quarter.png",
+          "model_sha256": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
+          "image_sha256": "ad15467e809c17a6dfd77768e094445abc009e52838536aff3d0209064873606",
+          "comparison_preview": {
+            "path": "gallery/media/proposals/engineering-ships/terran/canonical-references/scoutship-front-quarter.png",
+            "sha256": "8c07bc43788a30d94dcbcb202f5bbb19d493fb7554801d27de606bbe3d0fcf0a"
+          }
+        }
+      ],
+      "comparison_conditions": "Actual engineering and canonical GLB imports in the same studio;canonical complete Hull children visible,Build* layers omitted per client_binding. Independent fit,not game scale.",
+      "intent": "Sweep faceted gondolas outward toward the rear and narrow front deck silhouette,retaining canonical palette and utility mechanics.",
+      "decision": "author-review-complete",
+      "author_sha256": "c4963de64d9b43592510bfce4bde9e989ceefcb37a2eaf23b5d40d672bc8c1d1",
+      "binaries": {
+        "blend": "8444a3cefa6d88cc10da2d451b8dc6d8a689ddb4d5e2609e65c64001cdf7f0ef",
+        "glb": "f9dd25a937b9153fc51b098cb653df7422f9fcb23bf602621894077fc9317146"
+      },
+      "runtime_review_sha256": "c361c98113feeb3caff2b4d92e8f82d9d670a9861c8761bc1fde9d99416fea75",
+      "canonical_reference_review": {
+        "path": "sources/proposals/engineering-ships/terran/canonical-reference-review.json",
+        "sha256": "de0cb4254e4c514d30c6bba72bae501ed007736d47cc5da56ac852c13ed68423"
+      },
+      "comparison": {
+        "path": "gallery/media/proposals/engineering-ships/terran/terraform/canonical-style-cycle-02.png",
+        "sha256": "9c4bbc7798a6e2681f2b2c58717f7acf96eba56070452559c041ad84fe6837c1"
+      },
+      "observations": [
+        "Actual native and independently imported front,rear and top renders were inspected against the current canonical Assault Fighter and Scoutship in the same review studio. Complete Hull children are shown;Build* batches are excluded as required by the model client_binding.",
+        "Cycle1 corrected violet-grey/red/brass material targets and introduced tapered layered deck,faceted shrouds and real inset louvres. Its planform remained rectangular. Cycle2 swept the gondolas outward toward the rear and tapered the deck;the utility silhouette remains broader than the pointed combat hull by functional design.",
+        "Five colour and effective ORM targets match the current Fighter's actual glTF material factors within byte quantization. Linear source RGB factors were converted to sRGB map inputs. Sparse material wear and edge definition remain visible without a decorative hull grid.",
+        "Working GLB poses inspected at 0,0.5,2 and3seconds. Terraforming drum rotates on rooted bearings (quarter-period pictures alias its repeated teeth);repair arms position before two separately articulated jaws close and reopen. Six sampled native/import attachment and geometry checks passed.",
+        "User artistic acceptance,physical game scale,platform profiling and continuous swept clearance remain pending. These are proposal assets awaiting mechanics;canonical models and gameplay catalogues are unchanged."
+      ],
+      "remaining": [
+        "User artistic acceptance.",
+        "Utility carrier remains wider and more truncated at the tool mounting edge than canonical combat ships.",
+        "Physical game scale,profiling and continuous swept clearance outside proposal review."
+      ]
+    }
+  ],
+  "cycles_used": 2,
+  "cycles_remaining": 1,
+  "current_binaries": {
+    "blend": "8444a3cefa6d88cc10da2d451b8dc6d8a689ddb4d5e2609e65c64001cdf7f0ef",
+    "glb": "f9dd25a937b9153fc51b098cb653df7422f9fcb23bf602621894077fc9317146"
+  },
+  "status": "author-style-review-complete-user-acceptance-pending"
+}

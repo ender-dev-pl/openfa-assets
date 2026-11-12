@@ -12,8 +12,8 @@
           "status": "engineering proposal",
           "model": "sources/proposals/engineering-ships/terran/terraform/model.glb",
           "image": "gallery/media/proposals/engineering-ships/terran/terraform/imported-front-quarter.png",
-          "model_sha256": "a0d75c02b2505c4ae42cac4e945cca45e060e38286e69bda51e39c34057e049e",
-          "image_sha256": "3bd4ea4abfc2f0415b83b27e53e78000e6ec89d129a336927657e63ae0a781a9"
+          "model_sha256": "f9dd25a937b9153fc51b098cb653df7422f9fcb23bf602621894077fc9317146",
+          "image_sha256": "d915bc84d4722d2c9344b271514609653025ddc8e5139c2d800127e3f6054548"
         },
         {
           "name": "Repair Ship",
@@ -21,8 +21,8 @@
           "status": "engineering proposal",
           "model": "sources/proposals/engineering-ships/terran/repair/model.glb",
           "image": "gallery/media/proposals/engineering-ships/terran/repair/imported-front-quarter.png",
-          "model_sha256": "004745b3076e3bc5afde18ccd561094ff97e5dd7a9feb7923feec3126942f89d",
-          "image_sha256": "9652062f32625e16b9d9bf41df8a36bd37a53e807277e4161402196308a5a969"
+          "model_sha256": "12a4cd30acfde835d022a740183248c4b77e0e6d34dab14d0e28d169de4a9635",
+          "image_sha256": "05491b9679d633e992d88a9daac7e6288b88432ed2259aaded5f58e6e0031fad"
         },
         {
           "name": "Assault Fighter",
@@ -31,9 +31,11 @@
           "catalogue_id": "openfa:assault-fighter",
           "stage": "layered-construction",
           "model": "sources/objects/terran/assault-fighter/model.glb",
-          "image": "gallery/media/objects/terran/assault-fighter/construction/front-quarter.png",
+          "image": "gallery/media/proposals/engineering-ships/terran/canonical-references/assault-fighter-front-quarter.png",
           "model_sha256": "dc791df3c7ec4402ff111167f603d8d5b23d3eedb91e586c3e5cc505bbe6b087",
-          "image_sha256": "f02dffba3a4304dd441497e799214eff75556b089dd352e72d9ec22dfa73cf70"
+          "image_sha256": "68d3644b7d9a1d52be96826787ea773e31f2130b0fe7419d7e7413f9b8665d33",
+          "catalogue_image": "gallery/media/objects/terran/assault-fighter/construction/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
         },
         {
           "name": "Scoutship",
@@ -42,13 +44,15 @@
           "catalogue_id": "openfa:scoutship",
           "stage": "layered-construction",
           "model": "sources/objects/terran/scoutship/model.glb",
-          "image": "gallery/media/objects/terran/scoutship/construction/front-quarter.png",
+          "image": "gallery/media/proposals/engineering-ships/terran/canonical-references/scoutship-front-quarter.png",
           "model_sha256": "5db2a9ba92f4785bb4d183058d59aec990aa630fd6ad4df81877dd78e32576a3",
-          "image_sha256": "ad15467e809c17a6dfd77768e094445abc009e52838536aff3d0209064873606"
+          "image_sha256": "8c07bc43788a30d94dcbcb202f5bbb19d493fb7554801d27de606bbe3d0fcf0a",
+          "catalogue_image": "gallery/media/objects/terran/scoutship/construction/front-quarter.png",
+          "preview_conditions": "Independent canonical GLB import in the same review studio as engineering ships"
         }
       ],
-      "common_studio": false,
-      "assessment": "Partial match: red fields and cool hull colours connect the designs,but the engineering ships have broad box-like bodies while the small fleet uses wedges,layered plates and round engine details.",
+      "common_studio": true,
+      "assessment": "Canonical-style pass:two reviewed cycles introduced a tapered layered deck,swept faceted gondolas,quiet red fields and canonical violet-grey/brass PBR targets. Actual complete Hull GLBs are compared in the same studio with construction layers omitted. Terraform retains its rotor;repair has six channels including independently closing jaws. Utility bodies remain broader than the combat wedge;user artistic acceptance is pending.",
       "assessment_scope": "Author visual review of current catalogue previews;not user artistic acceptance."
     },
     {
