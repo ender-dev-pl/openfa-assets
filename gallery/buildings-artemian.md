@@ -6,7 +6,7 @@
 
 `openfa:building/legacy/107`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![SoftCore](../gallery/media/objects/artemian/softcore/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Front](../gallery/media/objects/artemian/softcore/front.png) 
 
 `openfa:building/legacy/108`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Environmental Stabiliser](../gallery/media/objects/artemian/environmental-stabiliser/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Front](../gallery/media/objects/artemian/environmental-stabil
 
 `openfa:building/legacy/109`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Filtration Tanks](../gallery/media/objects/artemian/filtration-tanks/front-quarter.png)
 
@@ -42,7 +42,7 @@ Additional views: [Front](../gallery/media/objects/artemian/filtration-tanks/fro
 
 `openfa:building/legacy/110`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Canisters](../gallery/media/objects/artemian/canisters/front-quarter.png)
 
@@ -54,7 +54,7 @@ Additional views: [Front](../gallery/media/objects/artemian/canisters/front.png)
 
 `openfa:building/legacy/111`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Nurseries](../gallery/media/objects/artemian/nurseries/front-quarter.png)
 
@@ -66,7 +66,7 @@ Additional views: [Front](../gallery/media/objects/artemian/nurseries/front.png)
 
 `openfa:building/legacy/112`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Healing Quarters](../gallery/media/objects/artemian/healing-quarters/front-quarter.png)
 
@@ -78,7 +78,7 @@ Additional views: [Front](../gallery/media/objects/artemian/healing-quarters/fro
 
 `openfa:building/legacy/113`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![House of the Axe](../gallery/media/objects/artemian/house-of-the-axe/front-quarter.png)
 
@@ -90,7 +90,7 @@ Additional views: [Front](../gallery/media/objects/artemian/house-of-the-axe/fro
 
 `openfa:building/legacy/114`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Naval Dockyard](../gallery/media/objects/artemian/naval-dockyard/front-quarter.png)
 
@@ -102,7 +102,7 @@ Additional views: [Front](../gallery/media/objects/artemian/naval-dockyard/front
 
 `openfa:building/legacy/115`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Launch Pads](../gallery/media/objects/artemian/launch-pads/front-quarter.png)
 
@@ -116,7 +116,7 @@ Additional views: [Front](../gallery/media/objects/artemian/launch-pads/front.pn
 
 `openfa:building/legacy/116`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Deep Probes](../gallery/media/objects/artemian/deep-probes/front-quarter.png)
 
@@ -128,7 +128,7 @@ Additional views: [Front](../gallery/media/objects/artemian/deep-probes/front.pn
 
 `openfa:building/legacy/117`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Gravitic Converter](../gallery/media/objects/artemian/gravitic-converter/front-quarter.png)
 
@@ -140,7 +140,7 @@ Additional views: [Front](../gallery/media/objects/artemian/gravitic-converter/f
 
 `openfa:building/legacy/118`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Shielded Solars](../gallery/media/objects/artemian/shielded-solars/front-quarter.png)
 
@@ -152,7 +152,7 @@ Additional views: [Front](../gallery/media/objects/artemian/shielded-solars/fron
 
 `openfa:building/legacy/119`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Shell](../gallery/media/objects/artemian/shell/front-quarter.png)
 
@@ -164,7 +164,7 @@ Additional views: [Front](../gallery/media/objects/artemian/shell/front.png) · 
 
 `openfa:building/legacy/120`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Arms Forge](../gallery/media/objects/artemian/arms-forge/front-quarter.png)
 
@@ -176,7 +176,7 @@ Additional views: [Front](../gallery/media/objects/artemian/arms-forge/front.png
 
 `openfa:building/legacy/121`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Star Bars](../gallery/media/objects/artemian/star-bars/front-quarter.png)
 
@@ -190,7 +190,7 @@ Additional views: [Front](../gallery/media/objects/artemian/star-bars/front.png)
 
 `openfa:building/legacy/122`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Missile Launcher](../gallery/media/objects/artemian/missile-launcher/front-quarter.png)
 
@@ -204,7 +204,7 @@ Additional views: [Front](../gallery/media/objects/artemian/missile-launcher/fro
 
 `openfa:building/legacy/123`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Auto-deterrent](../gallery/media/objects/artemian/auto-deterrent/front-quarter.png)
 
@@ -218,7 +218,7 @@ Additional views: [Front](../gallery/media/objects/artemian/auto-deterrent/front
 
 `openfa:building/legacy/124`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Super-deterrent](../gallery/media/objects/artemian/super-deterrent/front-quarter.png)
 
@@ -232,7 +232,7 @@ Additional views: [Front](../gallery/media/objects/artemian/super-deterrent/fron
 
 `openfa:building/legacy/125`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Force Fields](../gallery/media/objects/artemian/force-fields/front-quarter.png)
 
@@ -244,7 +244,7 @@ Additional views: [Front](../gallery/media/objects/artemian/force-fields/front.p
 
 `openfa:building/legacy/126`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Advanced Ore Extractor](../gallery/media/objects/artemian/advanced-ore-extractor/front-quarter.png)
 
@@ -256,7 +256,7 @@ Additional views: [Front](../gallery/media/objects/artemian/advanced-ore-extract
 
 `openfa:building/legacy/127`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Rare Ore Extractor](../gallery/media/objects/artemian/rare-ore-extractor/front-quarter.png)
 
@@ -268,7 +268,7 @@ Additional views: [Front](../gallery/media/objects/artemian/rare-ore-extractor/f
 
 `openfa:building/legacy/128`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Ore Depot](../gallery/media/objects/artemian/ore-depot/front-quarter.png)
 
@@ -280,7 +280,7 @@ Additional views: [Front](../gallery/media/objects/artemian/ore-depot/front.png)
 
 `openfa:building/legacy/129`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Refining Forge](../gallery/media/objects/artemian/refining-forge/front-quarter.png)
 

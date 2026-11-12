@@ -6,13 +6,7 @@
 
 `openfa:missile/rigellian/detonator`
 
-**First available iteration — initial-low-resolution-interpretation**
-
-![Detonator](../gallery/media/docs/assets/reconstruction/missiles/rigellian/detonator/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/missiles/rigellian/detonator/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/rigellian/detonator/model.glb)
-
-**Additional iteration — visible-section-refinement**
+**Canonical version — visible-section-refinement**
 
 ![Detonator](../gallery/media/docs/assets/reconstruction/rigellian-refined/missiles/detonator/front-quarter.png)
 
@@ -22,13 +16,7 @@
 
 `openfa:missile/rigellian/multi-det`
 
-**First available iteration — initial-low-resolution-interpretation**
-
-![Multi-det](../gallery/media/docs/assets/reconstruction/missiles/rigellian/multi-det/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/missiles/rigellian/multi-det/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/rigellian/multi-det/model.glb)
-
-**Additional iteration — visible-section-refinement**
+**Canonical version — visible-section-refinement**
 
 ![Multi-det](../gallery/media/docs/assets/reconstruction/rigellian-refined/missiles/multi-det/front-quarter.png)
 
@@ -38,13 +26,7 @@
 
 `openfa:missile/rigellian/flamejell`
 
-**First available iteration — initial-low-resolution-interpretation**
-
-![Flamejell](../gallery/media/docs/assets/reconstruction/missiles/rigellian/flamejell/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/missiles/rigellian/flamejell/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/rigellian/flamejell/model.glb)
-
-**Additional iteration — visible-section-refinement**
+**Canonical version — visible-section-refinement**
 
 ![Flamejell](../gallery/media/docs/assets/reconstruction/rigellian-refined/missiles/flamejell/front-quarter.png)
 
@@ -54,13 +36,7 @@
 
 `openfa:missile/rigellian/maxi-det`
 
-**First available iteration — initial-low-resolution-interpretation**
-
-![Maxi-det](../gallery/media/docs/assets/reconstruction/missiles/rigellian/maxi-det/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/missiles/rigellian/maxi-det/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/rigellian/maxi-det/model.glb)
-
-**Additional iteration — visible-section-refinement**
+**Canonical version — visible-section-refinement**
 
 ![Maxi-det](../gallery/media/docs/assets/reconstruction/rigellian-refined/missiles/maxi-det/front-quarter.png)
 
@@ -70,13 +46,7 @@
 
 `openfa:missile/rigellian/flare`
 
-**First available iteration — initial-low-resolution-interpretation**
-
-![Flare](../gallery/media/docs/assets/reconstruction/missiles/rigellian/flare/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/missiles/rigellian/flare/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/rigellian/flare/model.glb)
-
-**Additional iteration — visible-section-refinement**
+**Canonical version — visible-section-refinement**
 
 ![Flare](../gallery/media/docs/assets/reconstruction/rigellian-refined/missiles/flare/front-quarter.png)
 
@@ -86,13 +56,7 @@
 
 `openfa:missile/rigellian/viral-repair`
 
-**First available iteration — initial-low-resolution-interpretation**
-
-![Viral Repair](../gallery/media/docs/assets/reconstruction/missiles/rigellian/viral-repair/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/missiles/rigellian/viral-repair/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/rigellian/viral-repair/model.glb)
-
-**Additional iteration — visible-section-refinement**
+**Canonical version — visible-section-refinement**
 
 ![Viral Repair](../gallery/media/docs/assets/reconstruction/rigellian-refined/missiles/viral-repair/front-quarter.png)
 
@@ -102,13 +66,7 @@
 
 `openfa:missile/rigellian/temporal-stasis`
 
-**First available iteration — initial-low-resolution-interpretation**
-
-![Temporal Stasis](../gallery/media/docs/assets/reconstruction/missiles/rigellian/temporal-stasis/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/missiles/rigellian/temporal-stasis/model.blend) · [GLB](../sources/docs/assets/reconstruction/missiles/rigellian/temporal-stasis/model.glb)
-
-**Additional iteration — visible-section-refinement**
+**Canonical version — visible-section-refinement**
 
 ![Temporal Stasis](../gallery/media/docs/assets/reconstruction/rigellian-refined/missiles/temporal-stasis/front-quarter.png)
 

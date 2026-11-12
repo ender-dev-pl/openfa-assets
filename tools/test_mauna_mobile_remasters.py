@@ -1,6 +1,8 @@
 """Source-bound Mauna form, UV projection, voids, materials and canonical selection."""
 from pathlib import Path
-import hashlib,io,json,struct
+import hashlib,io,json,struct,sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'sources/tools/blender'))
+from archive_evidence import verify_bound_input
 import numpy as np
 from PIL import Image
 from test_artemian_mobile_remasters import atlas_areas
@@ -53,7 +55,9 @@ def main():
         assert meta['shared_primitives_sha256']==sha(ROOT/'sources/tools/blender/remaster_braccatian_mobile_ships.py')
         assert meta['maps_generator_sha256']==sha(ROOT/'tools/author_mauna_mobile_maps.py')
         assert proof['recipe_sha256']==meta['recipe_sha256']==sha(folder/'recipe.json')
-        assert proof['baseline_sha256']==meta['baseline_sha256']==sha(ROOT/'sources'/meta['source']/'model.blend')
+        assert proof['baseline_sha256']==meta['baseline_sha256']
+        bound=next(r for r in inventory['records'] if r['id']==row['id'])['reviewed_model']['runtime_evidence']
+        verify_bound_input(ROOT,bound,'sources/'+meta['source']+'/model.blend',meta['baseline_sha256'])
         for kind in ['blend','glb']:assert sha(folder/('model.'+kind))==proof['binaries'][kind]==row[kind+'_sha256']
         assert review['reviewed_binary_hashes']==proof['binaries'] and 1<=len(review['iterations'])<=3
         ref=next(r for r in refs if r['id']==row['id']);assert review['legacy_identity']['source_sha256']==ref['source_sha256']

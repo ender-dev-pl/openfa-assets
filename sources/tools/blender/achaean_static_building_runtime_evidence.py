@@ -1,6 +1,7 @@
 """Source-bound acceptance for static Achaean remasters with per-model Blender checks."""
 import hashlib,json,struct
 from pathlib import Path
+from archive_evidence import verify_bound_input
 from achaean_building_runtime_evidence import digest,pixel_pairs
 
 def exported_triangles(document):
@@ -20,7 +21,7 @@ def verify(root,record):
     assert study['sha256']==record['reviewed_model']['sha256']==meta['binaries']['blend'];assert hashlib.sha256(path(folder+'/model.json').read_bytes()).hexdigest()==report['metadata_sha256']
     author=path(meta['author']);assert author.is_relative_to(project/'sources/tools/blender') and author.suffix=='.py';assert hashlib.sha256(author.read_bytes()).hexdigest()==meta['author_sha256']
     assert meta['author'] in report['helpers'] and report['verifier'] in report['helpers']
-    for rel,h in report['helpers'].items():assert rel in files and hashlib.sha256(path(rel).read_bytes()).hexdigest()==h
+    for rel,h in report['helpers'].items():verify_bound_input(project,proof,rel,h)
     assert report['maximum_bidirectional_surface_error']<1e-5 and report['texture_pixels_equal'] is True;assert report['positive_closed_meshes']['native']==report['positive_closed_meshes']['imported']==report['meshes']==meta['mesh_nodes'];assert report['game_client_integration'] is report['final_artistic_acceptance'] is visual['final_user_artistic_acceptance'] is False
     assert report['native_anatomy'] and report['native_anatomy'].keys()==report['imported_anatomy'].keys()
     for k,a in report['native_anatomy'].items():

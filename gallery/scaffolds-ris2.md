@@ -1,6 +1,6 @@
 # Refined RIS2 modular scaffolding
 
-Rigellian 2×2, stages 1–17. The original prototype is preserved. [Authoring and integration contract](../sources/docs/reconstruction/models/refined-rigellian-scaffold.md).
+Rigellian 2Ã—2, stages 1â€“17. The original prototype is preserved. [Authoring and integration contract](../sources/docs/reconstruction/models/refined-rigellian-scaffold.md).
 
 Construction: raise scaffolding, insert the target building, then dismantle stages in reverse order to reveal it from the top. Timing and game integration belong to the simulation/presenter.
 
@@ -26,6 +26,6 @@ Construction: raise scaffolding, insert the target building, then dismantle stag
 | 16 | [Preview](media/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/stage-16/front-quarter.png) | [Blend](../sources/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/stage-16/model.blend) | [GLB](../sources/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/stage-16/model.glb) |
 | 17 | [Preview](media/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/stage-17/front-quarter.png) | [Blend](../sources/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/stage-17/model.blend) | [GLB](../sources/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/stage-17/model.glb) |
 
-[Construction sequence](../sources/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/construction-sequence.json) · [Technical checks](../sources/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/technical-review.json) · [Render comparison](../sources/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/render-review.json)
+[Construction sequence](../sources/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/construction-sequence.json) Â· [Technical checks](../sources/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/technical-review.json) Â· [Render comparison](../sources/docs/assets/reconstruction/scaffolds/rigellian/size-2-refined/render-review.json)
 
 The physical repeat pitch is provisional. This is one scaffold family, not complete culture/footprint coverage or game integration.

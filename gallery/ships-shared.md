@@ -6,7 +6,7 @@
 
 `openfa:federal-transporter`
 
-**First available iteration — detailed-refined**
+**Canonical version — detailed-refined**
 
 ![Federal Transporter (IS0C)](../gallery/media/objects/shared/federal-transporter/refined/front-quarter.png)
 

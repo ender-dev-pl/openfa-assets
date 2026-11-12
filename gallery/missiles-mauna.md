@@ -6,7 +6,7 @@
 
 `openfa:missile/mauna/minor-hurt-unit`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Minor Hurt Unit](../gallery/media/docs/assets/reconstruction/missiles/mauna/minor-hurt-unit/front-quarter.png)
 
@@ -16,7 +16,7 @@
 
 `openfa:missile/mauna/major-hurt-unit`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Major Hurt Unit](../gallery/media/docs/assets/reconstruction/missiles/mauna/major-hurt-unit/front-quarter.png)
 
@@ -26,7 +26,7 @@
 
 `openfa:missile/mauna/burns-unit`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Burns Unit](../gallery/media/docs/assets/reconstruction/missiles/mauna/burns-unit/front-quarter.png)
 
@@ -36,7 +36,7 @@
 
 `openfa:missile/mauna/multiple-burns-unit`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Multiple Burns Unit](../gallery/media/docs/assets/reconstruction/missiles/mauna/multiple-burns-unit/front-quarter.png)
 
@@ -46,7 +46,7 @@
 
 `openfa:missile/mauna/multiple-hurt-unit`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Multiple Hurt Unit](../gallery/media/docs/assets/reconstruction/missiles/mauna/multiple-hurt-unit/front-quarter.png)
 
@@ -56,7 +56,7 @@
 
 `openfa:missile/mauna/lightning-destruction-unit`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Lightning Destruction Unit](../gallery/media/docs/assets/reconstruction/missiles/mauna/lightning-destruction-unit/front-quarter.png)
 
@@ -66,7 +66,7 @@
 
 `openfa:missile/mauna/radiation-sickness-unit`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Radiation Sickness Unit](../gallery/media/docs/assets/reconstruction/missiles/mauna/radiation-sickness-unit/front-quarter.png)
 
@@ -76,7 +76,7 @@
 
 `openfa:missile/mauna/ground-breaking-unit`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Ground Breaking Unit](../gallery/media/docs/assets/reconstruction/missiles/mauna/ground-breaking-unit/front-quarter.png)
 
@@ -86,7 +86,7 @@
 
 `openfa:missile/mauna/anti-ground-breaking-unit`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Anti-Ground Breaking Unit](../gallery/media/docs/assets/reconstruction/missiles/mauna/anti-ground-breaking-unit/front-quarter.png)
 
@@ -96,7 +96,7 @@
 
 `openfa:missile/mauna/ore-dissolver`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Ore Dissolver](../gallery/media/docs/assets/reconstruction/missiles/mauna/ore-dissolver/front-quarter.png)
 

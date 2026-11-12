@@ -6,7 +6,7 @@
 
 `openfa:building/legacy/130`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Base Block](../gallery/media/objects/mauna/base-block/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Front](../gallery/media/objects/mauna/base-block/front.png) �
 
 `openfa:building/legacy/131`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Shielding Block](../gallery/media/objects/mauna/shielding-block/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Front](../gallery/media/objects/mauna/shielding-block/front.p
 
 `openfa:building/legacy/132`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Nutrition Block](../gallery/media/objects/mauna/nutrition-block/front-quarter.png)
 
@@ -42,7 +42,7 @@ Additional views: [Front](../gallery/media/objects/mauna/nutrition-block/front.p
 
 `openfa:building/legacy/133`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Off-duty Block](../gallery/media/objects/mauna/off-duty-block/front-quarter.png)
 
@@ -54,7 +54,7 @@ Additional views: [Front](../gallery/media/objects/mauna/off-duty-block/front.pn
 
 `openfa:building/legacy/134`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Health Block](../gallery/media/objects/mauna/health-block/front-quarter.png)
 
@@ -66,7 +66,7 @@ Additional views: [Front](../gallery/media/objects/mauna/health-block/front.png)
 
 `openfa:building/legacy/135`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![The Cube](../gallery/media/objects/mauna/the-cube/front-quarter.png)
 
@@ -78,7 +78,7 @@ Additional views: [Front](../gallery/media/objects/mauna/the-cube/front.png) · 
 
 `openfa:building/legacy/136`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Elite Block](../gallery/media/objects/mauna/elite-block/front-quarter.png)
 
@@ -90,7 +90,7 @@ Additional views: [Front](../gallery/media/objects/mauna/elite-block/front.png) 
 
 `openfa:building/legacy/137`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Construction Area](../gallery/media/objects/mauna/construction-area/front-quarter.png)
 
@@ -102,7 +102,7 @@ Additional views: [Front](../gallery/media/objects/mauna/construction-area/front
 
 `openfa:building/legacy/138`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Launch Area](../gallery/media/objects/mauna/launch-area/front-quarter.png)
 
@@ -116,7 +116,7 @@ Additional views: [Front](../gallery/media/objects/mauna/launch-area/front.png) 
 
 `openfa:building/legacy/139`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Satellite Pad](../gallery/media/objects/mauna/satellite-pad/front-quarter.png)
 
@@ -128,7 +128,7 @@ Additional views: [Front](../gallery/media/objects/mauna/satellite-pad/front.png
 
 `openfa:building/legacy/140`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Fast Breeder Reactor](../gallery/media/objects/mauna/fast-breeder-reactor/front-quarter.png)
 
@@ -140,7 +140,7 @@ Additional views: [Front](../gallery/media/objects/mauna/fast-breeder-reactor/fr
 
 `openfa:building/legacy/141`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Arms Block](../gallery/media/objects/mauna/arms-block/front-quarter.png)
 
@@ -152,7 +152,7 @@ Additional views: [Front](../gallery/media/objects/mauna/arms-block/front.png) �
 
 `openfa:building/legacy/142`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Defence Pods](../gallery/media/objects/mauna/defence-pods/front-quarter.png)
 
@@ -166,7 +166,7 @@ Additional views: [Front](../gallery/media/objects/mauna/defence-pods/front.png)
 
 `openfa:building/legacy/143`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Attack Pods](../gallery/media/objects/mauna/attack-pods/front-quarter.png)
 
@@ -178,7 +178,7 @@ Additional views: [Front](../gallery/media/objects/mauna/attack-pods/front.png) 
 
 `openfa:building/legacy/144`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Pulse Tower](../gallery/media/objects/mauna/pulse-tower/front-quarter.png)
 
@@ -192,7 +192,7 @@ Additional views: [Front](../gallery/media/objects/mauna/pulse-tower/front.png) 
 
 `openfa:building/legacy/145`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Screening Pods](../gallery/media/objects/mauna/screening-pods/front-quarter.png)
 
@@ -204,7 +204,7 @@ Additional views: [Front](../gallery/media/objects/mauna/screening-pods/front.pn
 
 `openfa:building/legacy/146`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Advanced Extraction Unit](../gallery/media/objects/mauna/advanced-extraction-unit/front-quarter.png)
 
@@ -216,7 +216,7 @@ Additional views: [Front](../gallery/media/objects/mauna/advanced-extraction-uni
 
 `openfa:building/legacy/147`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Superior Extraction Unit](../gallery/media/objects/mauna/superior-extraction-unit/front-quarter.png)
 
@@ -228,7 +228,7 @@ Additional views: [Front](../gallery/media/objects/mauna/superior-extraction-uni
 
 `openfa:building/legacy/148`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Ores Block](../gallery/media/objects/mauna/ores-block/front-quarter.png)
 
@@ -240,7 +240,7 @@ Additional views: [Front](../gallery/media/objects/mauna/ores-block/front.png) �
 
 `openfa:building/legacy/149`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Motion Units](../gallery/media/objects/mauna/motion-units/front-quarter.png)
 
@@ -252,7 +252,7 @@ Additional views: [Front](../gallery/media/objects/mauna/motion-units/front.png)
 
 `openfa:building/legacy/150`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Laser Boost](../gallery/media/objects/mauna/laser-boost/front-quarter.png)
 

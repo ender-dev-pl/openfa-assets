@@ -6,7 +6,7 @@
 
 `openfa:ship/braccatian/rattlesnake`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Rattlesnake](../gallery/media/objects/braccatian/rattlesnake/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Rear machinery](../gallery/media/objects/braccatian/rattlesna
 
 `openfa:ship/braccatian/widowmaker`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![WidowMaker](../gallery/media/objects/braccatian/widowmaker/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Rear machinery](../gallery/media/objects/braccatian/widowmake
 
 `openfa:ship/braccatian/heartsblood`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![HeartsBlood](../gallery/media/objects/braccatian/heartsblood/front-quarter.png)
 
@@ -42,7 +42,7 @@ Additional views: [Rear machinery](../gallery/media/objects/braccatian/heartsblo
 
 `openfa:ship/braccatian/morning-glory`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Morning Glory](../gallery/media/objects/braccatian/morning-glory/front-quarter.png)
 
@@ -54,19 +54,7 @@ Additional views: [Rear machinery](../gallery/media/objects/braccatian/morning-g
 
 `openfa:ship/braccatian/skymech`
 
-**First available iteration — initial-reference-study**
-
-![SkyMech](../gallery/media/docs/assets/reconstruction/ships/braccatian/skymech/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/braccatian/skymech/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/braccatian/skymech/model.glb)
-
-**Additional iteration — ship-visible-equipment-refinement**
-
-![SkyMech](../gallery/media/docs/assets/reconstruction/braccatian-refined/ships/skymech/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.glb)
-
-**Additional iteration — orbital-station-construction-refinement**
+**Canonical version — orbital-station-construction-refinement**
 
 ![SkyMech](../gallery/media/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/front-quarter.png)
 

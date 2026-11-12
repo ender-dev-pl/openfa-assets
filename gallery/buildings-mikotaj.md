@@ -6,7 +6,7 @@
 
 `openfa:building/legacy/086`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Base Crystal](../gallery/media/objects/mikotaj/base-crystal/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/base-crystal/front.pn
 
 `openfa:building/legacy/087`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Stability](../gallery/media/objects/mikotaj/stability/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/stability/front.png) 
 
 `openfa:building/legacy/088`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Purity](../gallery/media/objects/mikotaj/purity/front-quarter.png)
 
@@ -42,7 +42,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/purity/front.png) · 
 
 `openfa:building/legacy/089`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Fulfilment](../gallery/media/objects/mikotaj/fulfilment/front-quarter.png)
 
@@ -54,7 +54,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/fulfilment/front.png)
 
 `openfa:building/legacy/090`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Internal](../gallery/media/objects/mikotaj/internal/front-quarter.png)
 
@@ -66,7 +66,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/internal/front.png) �
 
 `openfa:building/legacy/091`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Dream](../gallery/media/objects/mikotaj/dream/front-quarter.png)
 
@@ -78,7 +78,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/dream/front.png) · [
 
 `openfa:building/legacy/092`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Resonance](../gallery/media/objects/mikotaj/resonance/front-quarter.png)
 
@@ -90,7 +90,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/resonance/front.png) 
 
 `openfa:building/legacy/093`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Fa-lanth](../gallery/media/objects/mikotaj/fa-lanth/front-quarter.png)
 
@@ -102,7 +102,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/fa-lanth/front.png) �
 
 `openfa:building/legacy/094`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Mask](../gallery/media/objects/mikotaj/mask/front-quarter.png)
 
@@ -114,7 +114,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/mask/front.png) · [R
 
 `openfa:building/legacy/095`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Structures Matrix](../gallery/media/objects/mikotaj/structures-matrix/front-quarter.png)
 
@@ -126,7 +126,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/structures-matrix/fro
 
 `openfa:building/legacy/096`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Volition](../gallery/media/objects/mikotaj/volition/front-quarter.png)
 
@@ -140,7 +140,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/volition/front.png) �
 
 `openfa:building/legacy/097`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Visibility](../gallery/media/objects/mikotaj/visibility/front-quarter.png)
 
@@ -154,7 +154,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/visibility/front.png)
 
 `openfa:building/legacy/098`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Perception](../gallery/media/objects/mikotaj/perception/front-quarter.png)
 
@@ -166,7 +166,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/perception/front.png)
 
 `openfa:building/legacy/099`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Capacitors](../gallery/media/objects/mikotaj/capacitors/front-quarter.png)
 
@@ -178,7 +178,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/capacitors/front.png)
 
 `openfa:building/legacy/100`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Lanth](../gallery/media/objects/mikotaj/lanth/front-quarter.png)
 
@@ -190,7 +190,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/lanth/front.png) · [
 
 `openfa:building/legacy/101`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Sharir](../gallery/media/objects/mikotaj/sharir/front-quarter.png)
 
@@ -202,7 +202,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/sharir/front.png) · 
 
 `openfa:building/legacy/102`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Shrekn](../gallery/media/objects/mikotaj/shrekn/front-quarter.png)
 
@@ -216,7 +216,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/shrekn/front.png) · 
 
 `openfa:building/legacy/103`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Ruth-feror](../gallery/media/objects/mikotaj/ruth-feror/front-quarter.png)
 
@@ -228,7 +228,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/ruth-feror/front.png)
 
 `openfa:building/legacy/104`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Ruth-fett](../gallery/media/objects/mikotaj/ruth-fett/front-quarter.png)
 
@@ -240,7 +240,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/ruth-fett/front.png) 
 
 `openfa:building/legacy/105`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Merl](../gallery/media/objects/mikotaj/merl/front-quarter.png)
 
@@ -254,7 +254,7 @@ Additional views: [Front](../gallery/media/objects/mikotaj/merl/front.png) · [R
 
 `openfa:building/legacy/106`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Na-Shrekn](../gallery/media/objects/mikotaj/na-shrekn/front-quarter.png)
 

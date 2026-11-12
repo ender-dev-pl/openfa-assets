@@ -6,9 +6,9 @@ Editable artwork, procedural generators and verification tools for the alternati
 
 **[Browse the model gallery](gallery/README.md)** · **[Interactive catalogue](gallery/index.html)** · **[Construction videos](gallery/construction-animations.html)** · [Workflow](docs/workflow.md) · [Legacy object remastering](docs/remastering-legacy-objects.md) · [Project structure](docs/structure.md) · [Verification](docs/verification.md) · [Provenance](docs/provenance.md)
 
-The imported inventory covers **303 definitions**: 177 buildings, 41 ships/vehicles, 16 hardpoints and 69 missiles across seven cultures. It registers **366 existing study entries**, including available refined studies. The source archive contains **396 Blend files and 405 GLB files**, including earlier variants, reusable rigs and effects. Definition counts, file counts and unique geometry counts are different measures.
+The active catalogue selects one canonical model pair per definition, with the functional animation, construction and SciTek presentation assets needed by that version. The 14 engineering ships remain in this repository with editable sources, GLB exports and animation evidence.
 
-The gallery uses existing renders only. It shows each registered iteration with its original stage label, editable source and available GLB. No model or refined variant was generated for this migration. First-source coverage does not mean final artistic acceptance, complete animation, calibrated attachments or game integration.
+Superseded editable models and their historical gallery are preserved in the private [openfa-assets-archive](https://github.com/ender-dev-pl/openfa-assets-archive). The [canonical selection manifest](project/canonical-assets.json) records active payloads and immutable archive provenance. Read [the archive policy](docs/canonical-assets.md) before adding or replacing a model.
 
 [New main-menu labels](gallery/menu-labels.md) provide shade-only fields and separate EN/PL lettering aligned with the original menu reference.
 
@@ -41,7 +41,7 @@ Preparation works without a game checkout or original installation. Enable `evid
 
 ## Current scope
 
-Preserve completed reconstructions and existing refinements. The user-requested [RIS2 scaffold refinement](gallery/scaffolds-ris2.md) is available separately from the preserved prototype. The [culture scaffold kits](gallery/scaffolds-cultures.md) extend this construction/reveal approach to all remaining used families, respecting CDB material lore. Other artistic refining remains deferred. Obvious technical defects may be repaired with focused verification. New objects receive function-appropriate wear; existing models are not retrofitted merely because they are regenerated.
+Keep the current canonical reconstructions and functional variants in this tree. Preserve superseded versions in the private archive before replacing them. The user-requested [RIS2 scaffold refinement](gallery/scaffolds-ris2.md) is available separately from the preserved prototype. The [culture scaffold kits](gallery/scaffolds-cultures.md) extend this construction/reveal approach to all remaining used families, respecting CDB material lore. Other artistic refining remains deferred. Obvious technical defects may be repaired with focused verification. New objects receive function-appropriate wear; existing models are not retrofitted merely because they are regenerated.
 
 The [import baseline](project/import-baseline.json) records original input paths and checksums required by the optional evidence tools. Historical documentation is retained under `sources/docs/reconstruction/models/`; its paths refer to the assembled workspace and its bare issue numbers use the original game-repository numbering.
 

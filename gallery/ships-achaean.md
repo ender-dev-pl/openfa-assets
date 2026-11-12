@@ -6,7 +6,7 @@
 
 `openfa:ship/achaean/hunter-prospector`
 
-**First available iteration — legacy-hi-def-remaster**
+**Canonical version — legacy-hi-def-remaster**
 
 ![Hunter/Prospector](../gallery/media/objects/achaean/hunter-prospector/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Front Quarter](../gallery/media/objects/achaean/hunter-prospe
 
 `openfa:ship/achaean/dedicated-fighter`
 
-**First available iteration — legacy-hi-def-remaster**
+**Canonical version — legacy-hi-def-remaster**
 
 ![Dedicated Fighter](../gallery/media/objects/achaean/dedicated-fighter/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Front Quarter](../gallery/media/objects/achaean/dedicated-fig
 
 `openfa:ship/achaean/dedicated-ore-transporter`
 
-**First available iteration — legacy-hi-def-remaster**
+**Canonical version — legacy-hi-def-remaster**
 
 ![Dedicated Ore Transporter](../gallery/media/objects/achaean/dedicated-ore-transporter/front-quarter.png)
 
@@ -42,19 +42,7 @@ Additional views: [Front Quarter](../gallery/media/objects/achaean/dedicated-ore
 
 `openfa:ship/achaean/orbital-shipyard`
 
-**First available iteration — initial-reference-study**
-
-![Orbital Shipyard](../gallery/media/docs/assets/reconstruction/ships/achaean/orbital-shipyard/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/achaean/orbital-shipyard/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/achaean/orbital-shipyard/model.glb)
-
-**Additional iteration — orbital-station-structural-refinement**
-
-![Orbital Shipyard](../gallery/media/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/model.glb)
-
-**Additional iteration — orbital-station-construction-refinement**
+**Canonical version — orbital-station-construction-refinement**
 
 ![Orbital Shipyard](../gallery/media/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/front-quarter.png)
 

@@ -1,6 +1,7 @@
 """Exact-byte evidence bundles for published mobile remaster inventory gates."""
 from functools import lru_cache
 from pathlib import Path
+from archive_evidence import verify_bound_input
 import hashlib,json
 
 FORMAT='mobile-remaster-runtime-v1'
@@ -76,7 +77,7 @@ def verify_record(source_root,record):
     if metadata.get('recipe_sha256'):
         recipe=(folder/'recipe.json').as_posix();assert recipe in files and files[recipe]==metadata['recipe_sha256']==runtime['recipe_sha256']
     if metadata.get('baseline_sha256'):
-        baseline='sources/'+metadata['source']+'/model.blend';assert baseline in files and files[baseline]==metadata['baseline_sha256']
+        baseline='sources/'+metadata['source']+'/model.blend';verify_bound_input(root,proof,baseline,metadata['baseline_sha256'])
     assert metadata['triangles']==runtime['triangles'] and metadata['mesh_batches']==runtime['mesh_batches']
     error=next((runtime[k] for k in ['source_import_position_error','maximum_bidirectional_world_position_error','maximum_bidirectional_position_error'] if k in runtime),None)
     assert isinstance(error,(int,float)) and 0<=error<1e-4,'Missing/failed independent import position evidence'

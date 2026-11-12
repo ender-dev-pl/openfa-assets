@@ -24,13 +24,13 @@ def verify_runtime_evidence(root,record):
         from culture_building_remaster_runtime_evidence import verify
         return verify(root, record)
     if proof.get('format') == 'achaean-power-tower-remaster-v1':
-        from achaean_power_tower_runtime_evidence import verify
+        from archive_aware_achaean_power_tower_runtime_evidence import verify
         return verify(root, record)
     if proof.get('format') == 'achaean-stun-tower-remaster-v1':
-        from achaean_stun_tower_runtime_evidence import verify
+        from archive_aware_achaean_stun_tower_runtime_evidence import verify
         return verify(root, record)
     if proof.get('format') == 'achaean-directional-building-remaster-v1':
-        from achaean_directional_building_runtime_evidence import verify
+        from archive_aware_achaean_directional_building_runtime_evidence import verify
         return verify(root, record)
     if proof.get('format') == 'achaean-animated-building-remaster-v1':
         from achaean_animated_building_runtime_evidence import verify

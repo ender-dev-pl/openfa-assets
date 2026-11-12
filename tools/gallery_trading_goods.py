@@ -3,6 +3,16 @@ import hashlib,json
 from pathlib import Path
 
 def trading_records(root):
+    policy=root/'project/canonical-assets.json'
+    if policy.is_file():
+        rows=[r for r in json.loads(policy.read_text(encoding='utf-8'))['catalogue'] if r['category']=='trading-goods']
+        for row in rows:
+            assert len(row['studies'])==1,row['id']
+            study=row['studies'][0]
+            for key in ['blend','glb','image']:assert (root/study[key]).is_file(),study[key]
+            assert hashlib.sha256((root/study['blend']).read_bytes()).hexdigest()==study['sha256'],row['id']
+        assert len(rows)==101 and len({r['id'] for r in rows})==101
+        return rows
     coverage=root/'docs/trading-goods/coverage.json'
     if not coverage.is_file():return []
     report=root/'docs/trading-goods/gallery-validation.json'

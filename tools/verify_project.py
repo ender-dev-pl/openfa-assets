@@ -8,7 +8,7 @@ from urllib.parse import unquote, urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from asset_workspace import ROOT, sha, verify
-from gallery_animation_assets import animation_previews
+from canonical_assets import study_animation_previews
 
 
 class LocalLinks(HTMLParser):
@@ -23,6 +23,8 @@ class LocalLinks(HTMLParser):
 
 def main():
     verify()
+    from canonical_assets import verify as verify_canonical
+    verify_canonical()
     assert not list((ROOT / 'sources').rglob('*.java')), 'Game decompiler code is external evidence'
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text())
     sys.path.insert(0, str(ROOT / 'sources/tools/blender'))
@@ -78,7 +80,7 @@ def main():
             assert sha(ROOT / study['blend']) == study['sha256'] == original['sha256']
             assert (ROOT / study['image']).is_file() and study['image'].startswith('gallery/media/')
             assert study['glb'] and (ROOT / study['glb']).is_file(), row['id']
-            assert study['animations']==animation_previews(study['blend'],study['glb'],(ROOT/study['image']).parent)
+            assert study['animations']==study_animation_previews(study['blend'],study['glb'],(ROOT/study['image']).parent,original)
             from gallery_showcase_assets import showcase_previews
             assert study.get('showcases',[])==showcase_previews(original)
             assert study.get('views',[])==original.get('views',[])

@@ -6,7 +6,7 @@
 
 `openfa:missile/artemian/standard-warhead`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Standard Warhead](../gallery/media/docs/assets/reconstruction/missiles/artemian/standard-warhead/front-quarter.png)
 
@@ -16,7 +16,7 @@
 
 `openfa:missile/artemian/advanced-warhead`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Advanced Warhead](../gallery/media/docs/assets/reconstruction/missiles/artemian/advanced-warhead/front-quarter.png)
 
@@ -26,7 +26,7 @@
 
 `openfa:missile/artemian/liquid-flame`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Liquid Flame](../gallery/media/docs/assets/reconstruction/missiles/artemian/liquid-flame/front-quarter.png)
 
@@ -36,7 +36,7 @@
 
 `openfa:missile/artemian/coagulant-flame`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Coagulant Flame](../gallery/media/docs/assets/reconstruction/missiles/artemian/coagulant-flame/front-quarter.png)
 
@@ -46,7 +46,7 @@
 
 `openfa:missile/artemian/multiple-warhead`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Multiple Warhead](../gallery/media/docs/assets/reconstruction/missiles/artemian/multiple-warhead/front-quarter.png)
 
@@ -56,7 +56,7 @@
 
 `openfa:missile/artemian/spiral`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Spiral](../gallery/media/docs/assets/reconstruction/missiles/artemian/spiral/front-quarter.png)
 
@@ -66,7 +66,7 @@
 
 `openfa:missile/artemian/nova`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Nova](../gallery/media/docs/assets/reconstruction/missiles/artemian/nova/front-quarter.png)
 
@@ -76,7 +76,7 @@
 
 `openfa:missile/artemian/demon`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Demon](../gallery/media/docs/assets/reconstruction/missiles/artemian/demon/front-quarter.png)
 
@@ -86,7 +86,7 @@
 
 `openfa:missile/artemian/saviour`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Saviour](../gallery/media/docs/assets/reconstruction/missiles/artemian/saviour/front-quarter.png)
 
@@ -96,7 +96,7 @@
 
 `openfa:missile/artemian/star-shatterer`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Star-Shatterer](../gallery/media/docs/assets/reconstruction/missiles/artemian/star-shatterer/front-quarter.png)
 
@@ -106,7 +106,7 @@
 
 `openfa:missile/artemian/freezer`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Freezer](../gallery/media/docs/assets/reconstruction/missiles/artemian/freezer/front-quarter.png)
 
@@ -116,7 +116,7 @@
 
 `openfa:missile/artemian/space-hunger`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Space Hunger](../gallery/media/docs/assets/reconstruction/missiles/artemian/space-hunger/front-quarter.png)
 

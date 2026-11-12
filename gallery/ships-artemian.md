@@ -6,7 +6,7 @@
 
 `openfa:ship/artemian/gerla-kans-explorer`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Gerla-Kans Explorer](../gallery/media/objects/artemian/gerla-kans-explorer/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Rear fittings](../gallery/media/objects/artemian/gerla-kans-e
 
 `openfa:ship/artemian/all-purpose-assault`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![All-Purpose Assault](../gallery/media/objects/artemian/all-purpose-assault/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Rear fittings](../gallery/media/objects/artemian/all-purpose-
 
 `openfa:ship/artemian/shielded-multi-assault`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Shielded Multi-Assault](../gallery/media/objects/artemian/shielded-multi-assault/front-quarter.png)
 
@@ -42,7 +42,7 @@ Additional views: [Rear fittings](../gallery/media/objects/artemian/shielded-mul
 
 `openfa:ship/artemian/ultimate-mk-ii`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Ultimate Mk II](../gallery/media/objects/artemian/ultimate-mk-ii/front-quarter.png)
 
@@ -54,7 +54,7 @@ Additional views: [Rear fittings](../gallery/media/objects/artemian/ultimate-mk-
 
 `openfa:ship/artemian/hardcore`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Hardcore](../gallery/media/objects/artemian/hardcore/front-quarter.png)
 
@@ -66,19 +66,7 @@ Additional views: [Rear fittings](../gallery/media/objects/artemian/hardcore/rea
 
 `openfa:ship/artemian/geostationary-construction`
 
-**First available iteration — initial-reference-study**
-
-![Geostationary Construction](../gallery/media/docs/assets/reconstruction/ships/artemian/geostationary-construction/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/artemian/geostationary-construction/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/artemian/geostationary-construction/model.glb)
-
-**Additional iteration — orbital-station-structural-refinement**
-
-![Geostationary Construction](../gallery/media/docs/assets/reconstruction/orbital-station-refined/artemian/geostationary-construction/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/artemian/geostationary-construction/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/artemian/geostationary-construction/model.glb)
-
-**Additional iteration — orbital-station-construction-refinement**
+**Canonical version — orbital-station-construction-refinement**
 
 ![Geostationary Construction](../gallery/media/docs/assets/reconstruction/orbital-station-construction/artemian/geostationary-construction/front-quarter.png)
 

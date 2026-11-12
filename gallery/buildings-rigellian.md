@@ -6,7 +6,7 @@
 
 `openfa:building/legacy/040`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Central Unit](../gallery/media/objects/rigellian/central-unit/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/041`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Filtration Plant](../gallery/media/objects/rigellian/filtration-plant/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/042`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Nourishment Bank](../gallery/media/objects/rigellian/nourishment-bank/front-quarter.png)
 
@@ -42,7 +42,7 @@ Additional views: [Concept review (legacy-based; interpreted sleeves)](../galler
 
 `openfa:building/legacy/043`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Community](../gallery/media/objects/rigellian/community/front-quarter.png)
 
@@ -54,7 +54,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/044`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Health Unit](../gallery/media/objects/rigellian/health-unit/front-quarter.png)
 
@@ -66,7 +66,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/045`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Strategic Bunker](../gallery/media/objects/rigellian/strategic-bunker/front-quarter.png)
 
@@ -78,7 +78,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/046`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Science Labs](../gallery/media/objects/rigellian/science-labs/front-quarter.png)
 
@@ -90,7 +90,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/047`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Databanks](../gallery/media/objects/rigellian/databanks/front-quarter.png)
 
@@ -102,7 +102,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/048`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Construction Unit](../gallery/media/objects/rigellian/construction-unit/front-quarter.png)
 
@@ -114,7 +114,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/049`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Ground Deck](../gallery/media/objects/rigellian/ground-deck/front-quarter.png)
 
@@ -130,7 +130,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/050`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Probe Launch](../gallery/media/objects/rigellian/probe-launch/front-quarter.png)
 
@@ -142,7 +142,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/051`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Deep Space Probes](../gallery/media/objects/rigellian/deep-space-probes/front-quarter.png)
 
@@ -154,7 +154,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/052`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Gravitic Converter](../gallery/media/objects/rigellian/gravitic-converter/front-quarter.png)
 
@@ -166,7 +166,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/053`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Energy Gatherer](../gallery/media/objects/rigellian/energy-gatherer/front-quarter.png)
 
@@ -178,7 +178,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/054`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Energy Globe](../gallery/media/objects/rigellian/energy-globe/front-quarter.png)
 
@@ -190,7 +190,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/055`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Shield Generator](../gallery/media/objects/rigellian/shield-generator/front-quarter.png)
 
@@ -202,7 +202,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/056`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Arms Unit](../gallery/media/objects/rigellian/arms-unit/front-quarter.png)
 
@@ -214,7 +214,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/057`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Missile Launcher](../gallery/media/objects/rigellian/missile-launcher/front-quarter.png)
 
@@ -230,7 +230,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/058`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Thermal Lance](../gallery/media/objects/rigellian/thermal-lance/front-quarter.png)
 
@@ -242,7 +242,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/059`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Extractor](../gallery/media/objects/rigellian/extractor/front-quarter.png)
 
@@ -254,7 +254,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/060`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Storage racks](../gallery/media/objects/rigellian/storage-racks/front-quarter.png)
 
@@ -266,7 +266,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/061`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Ex-Fang](../gallery/media/objects/rigellian/ex-fang/front-quarter.png)
 
@@ -278,7 +278,7 @@ Additional views: [Legacy-based concept (interpreted details)](../gallery/media/
 
 `openfa:building/legacy/062`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Ultrathermal Lance](../gallery/media/objects/rigellian/ultrathermal-lance/front-quarter.png)
 

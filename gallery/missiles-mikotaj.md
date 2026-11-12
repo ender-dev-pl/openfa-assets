@@ -6,7 +6,7 @@
 
 `openfa:missile/mikotaj/shri-merl`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Shri-Merl](../gallery/media/docs/assets/reconstruction/missiles/mikotaj/shri-merl/front-quarter.png)
 
@@ -16,7 +16,7 @@
 
 `openfa:missile/mikotaj/shri-jaar`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Shri-Jaar](../gallery/media/docs/assets/reconstruction/missiles/mikotaj/shri-jaar/front-quarter.png)
 
@@ -26,7 +26,7 @@
 
 `openfa:missile/mikotaj/greek-fire`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Greek Fire](../gallery/media/docs/assets/reconstruction/missiles/mikotaj/greek-fire/front-quarter.png)
 
@@ -36,7 +36,7 @@
 
 `openfa:missile/mikotaj/shri-sharir`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Shri-Sharir](../gallery/media/docs/assets/reconstruction/missiles/mikotaj/shri-sharir/front-quarter.png)
 
@@ -46,7 +46,7 @@
 
 `openfa:missile/mikotaj/bruj-mahal`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Bruj-Mahal](../gallery/media/docs/assets/reconstruction/missiles/mikotaj/bruj-mahal/front-quarter.png)
 
@@ -56,7 +56,7 @@
 
 `openfa:missile/mikotaj/convulsion`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Convulsion](../gallery/media/docs/assets/reconstruction/missiles/mikotaj/convulsion/front-quarter.png)
 
@@ -66,7 +66,7 @@
 
 `openfa:missile/mikotaj/stabiliser`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Stabiliser](../gallery/media/docs/assets/reconstruction/missiles/mikotaj/stabiliser/front-quarter.png)
 
@@ -76,7 +76,7 @@
 
 `openfa:missile/mikotaj/kal-na-xanth`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Kal-Na-Xanth](../gallery/media/docs/assets/reconstruction/missiles/mikotaj/kal-na-xanth/front-quarter.png)
 
@@ -86,7 +86,7 @@
 
 `openfa:missile/mikotaj/bruj-garor`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Bruj-Garor](../gallery/media/docs/assets/reconstruction/missiles/mikotaj/bruj-garor/front-quarter.png)
 

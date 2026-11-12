@@ -2,7 +2,7 @@
 import copy,json,struct,sys,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'sources/tools/blender'))
-from achaean_stun_tower_runtime_evidence import verify,verify_animation_document
+from archive_aware_achaean_stun_tower_runtime_evidence import verify,verify_animation_document
 
 class DirectionalEvidenceTests(unittest.TestCase):
     @classmethod

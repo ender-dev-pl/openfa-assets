@@ -6,7 +6,7 @@
 
 `openfa:missile/braccatian/mega-blast`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Mega Blast](../gallery/media/docs/assets/reconstruction/missiles/braccatian/mega-blast/front-quarter.png)
 
@@ -16,7 +16,7 @@
 
 `openfa:missile/braccatian/flaming-ruin`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Flaming Ruin](../gallery/media/docs/assets/reconstruction/missiles/braccatian/flaming-ruin/front-quarter.png)
 
@@ -26,7 +26,7 @@
 
 `openfa:missile/braccatian/volcano`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Volcano](../gallery/media/docs/assets/reconstruction/missiles/braccatian/volcano/front-quarter.png)
 
@@ -36,7 +36,7 @@
 
 `openfa:missile/braccatian/multi-blast`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Multi Blast](../gallery/media/docs/assets/reconstruction/missiles/braccatian/multi-blast/front-quarter.png)
 
@@ -46,7 +46,7 @@
 
 `openfa:missile/braccatian/dancing-bolt`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Dancing Bolt](../gallery/media/docs/assets/reconstruction/missiles/braccatian/dancing-bolt/front-quarter.png)
 
@@ -56,7 +56,7 @@
 
 `openfa:missile/braccatian/hotbomb`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![HotBomb](../gallery/media/docs/assets/reconstruction/missiles/braccatian/hotbomb/front-quarter.png)
 
@@ -66,7 +66,7 @@
 
 `openfa:missile/braccatian/outbreak`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Outbreak](../gallery/media/docs/assets/reconstruction/missiles/braccatian/outbreak/front-quarter.png)
 
@@ -76,7 +76,7 @@
 
 `openfa:missile/braccatian/anti-outbreak`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Anti-Outbreak](../gallery/media/docs/assets/reconstruction/missiles/braccatian/anti-outbreak/front-quarter.png)
 
@@ -86,7 +86,7 @@
 
 `openfa:missile/braccatian/midwinter`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Midwinter](../gallery/media/docs/assets/reconstruction/missiles/braccatian/midwinter/front-quarter.png)
 
@@ -96,7 +96,7 @@
 
 `openfa:missile/braccatian/comms-killer`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Comms Killer](../gallery/media/docs/assets/reconstruction/missiles/braccatian/comms-killer/front-quarter.png)
 

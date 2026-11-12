@@ -3,6 +3,7 @@ import hashlib
 import json
 import struct
 from pathlib import Path
+from archive_evidence import verify_bound_input
 
 
 def digest(path):
@@ -330,8 +331,7 @@ def verify(root, record):
         document = json.loads(raw[20:20+struct.unpack_from('<I',raw,12)[0]])
         verify_manual_yaw_contract(metadata,report,document)
     for helper, expected in report['helpers'].items():
-        assert helper in files
-        assert hashlib.sha256(path(helper).read_bytes()).hexdigest() == expected
+        verify_bound_input(project,proof,helper,expected)
     for image, expected in report['renders'].items():
         relative = proof['render_directory'] + '/' + image
         assert relative in files and files[relative] == expected

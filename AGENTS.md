@@ -4,7 +4,7 @@
 - Use branches prefixed by `feat/`, `fix/`, `docs/` or `chore/`, not `codex/`.
 - Do not start another feature before committing the current milestone. Preserve user files and existing models.
 - Keep finished renders, reference media and contact sheets outside `sources/`. Run historical generators in the isolated workspace described in `docs/workflow.md`.
-- Preserve completed first iterations/refinements. Refining and scaffolding remain deferred unless requested. Obvious technical defects may be corrected with focused evidence.
+- Keep one selected canonical model pair per catalogue identity in the active tree. Preserve superseded editable iterations and their gallery in the private openfa-assets-archive repository before retirement; follow docs/canonical-assets.md. Keep all 14 engineering ships and required animation/construction/SciTek derivatives in the main repository. Obvious technical defects may be corrected with focused evidence.
 - When the user explicitly requests one canonical payload instead of duplicate variants, preserve completed editable variants in recoverable Git history before retiring their working-tree copies. Verify the original committed bytes, record the immutable commit, path and blob id, and retain historical evidence. Hashes or renders alone are insufficient. Never retire uncommitted or modified variants under this exception.
 - New objects need material/function-appropriate grime, scratches, stains and minor dents while keeping their silhouettes readable. Do not retrofit existing models, including RI01, without explicit scope.
 - Read original function and culture evidence and inspect correctly paletted legacy frames before modelling. Treat reference pixels as evidence, not replacement textures. Do not use DOSBox.

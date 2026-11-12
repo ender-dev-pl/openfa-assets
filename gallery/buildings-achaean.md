@@ -6,7 +6,7 @@
 
 `openfa:building/legacy/151`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Footprint](../gallery/media/objects/achaean/footprint/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/152`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Anti-Rad Screen](../gallery/media/objects/achaean/anti-rad-screen/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/153`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Environmental Control](../gallery/media/objects/achaean/environmental-control/front-quarter.png)
 
@@ -42,7 +42,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/154`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Filtration Vats](../gallery/media/objects/achaean/filtration-vats/front-quarter.png)
 
@@ -54,7 +54,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/155`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Nutrient Vats](../gallery/media/objects/achaean/nutrient-vats/front-quarter.png)
 
@@ -66,7 +66,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/156`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Habitat](../gallery/media/objects/achaean/habitat/front-quarter.png)
 
@@ -78,7 +78,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/157`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Pharmacopeion](../gallery/media/objects/achaean/pharmacopeion/front-quarter.png)
 
@@ -90,7 +90,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/158`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Gathering Ground](../gallery/media/objects/achaean/gathering-ground/front-quarter.png)
 
@@ -102,7 +102,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/159`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Market](../gallery/media/objects/achaean/market/front-quarter.png)
 
@@ -114,7 +114,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/160`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Communications Central](../gallery/media/objects/achaean/communications-central/front-quarter.png)
 
@@ -126,7 +126,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/161`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Shipyard](../gallery/media/objects/achaean/shipyard/front-quarter.png)
 
@@ -138,7 +138,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/162`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Landing Pad](../gallery/media/objects/achaean/landing-pad/front-quarter.png)
 
@@ -152,7 +152,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/163`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Missile Launcher](../gallery/media/objects/achaean/missile-launcher/front-quarter.png)
 
@@ -164,7 +164,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/164`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Data Gatherer](../gallery/media/objects/achaean/data-gatherer/front-quarter.png)
 
@@ -176,7 +176,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/165`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Listening Device](../gallery/media/objects/achaean/listening-device/front-quarter.png)
 
@@ -188,7 +188,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/166`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Manoeuvring Device](../gallery/media/objects/achaean/manoeuvring-device/front-quarter.png)
 
@@ -200,7 +200,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/167`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Destination Beam](../gallery/media/objects/achaean/destination-beam/front-quarter.png)
 
@@ -212,7 +212,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/168`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Reactor Cores](../gallery/media/objects/achaean/reactor-cores/front-quarter.png)
 
@@ -224,7 +224,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/169`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Asteroid Shield](../gallery/media/objects/achaean/asteroid-shield/front-quarter.png)
 
@@ -236,7 +236,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/170`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Defence Battery](../gallery/media/objects/achaean/defence-battery/front-quarter.png)
 
@@ -250,7 +250,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/171`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Commonbore](../gallery/media/objects/achaean/commonbore/front-quarter.png)
 
@@ -262,7 +262,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/172`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Deepbore](../gallery/media/objects/achaean/deepbore/front-quarter.png)
 
@@ -274,7 +274,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/173`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Ore Yard](../gallery/media/objects/achaean/ore-yard/front-quarter.png)
 
@@ -286,7 +286,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/174`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Goods Yard](../gallery/media/objects/achaean/goods-yard/front-quarter.png)
 
@@ -298,7 +298,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/175`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Stun Tower](../gallery/media/objects/achaean/stun-tower/front-quarter.png)
 
@@ -312,7 +312,7 @@ Additional views: [Legacy-based ImageGen concept (interpreted details)](../galle
 
 `openfa:building/legacy/176`
 
-**First available iteration — canonical-game-remaster**
+**Canonical version — canonical-game-remaster**
 
 ![Power Tower](../gallery/media/objects/achaean/power-tower/front-quarter.png)
 

@@ -6,7 +6,7 @@
 
 `openfa:missile/achaean/frighteners`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Frighteners](../gallery/media/docs/assets/reconstruction/missiles/achaean/frighteners/front-quarter.png)
 
@@ -16,7 +16,7 @@
 
 `openfa:missile/achaean/harmers`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Harmers](../gallery/media/docs/assets/reconstruction/missiles/achaean/harmers/front-quarter.png)
 
@@ -26,7 +26,7 @@
 
 `openfa:missile/achaean/dripfire`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![DripFire](../gallery/media/docs/assets/reconstruction/missiles/achaean/dripfire/front-quarter.png)
 
@@ -36,7 +36,7 @@
 
 `openfa:missile/achaean/seizure`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Seizure](../gallery/media/docs/assets/reconstruction/missiles/achaean/seizure/front-quarter.png)
 
@@ -46,7 +46,7 @@
 
 `openfa:missile/achaean/ground-breaker`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Ground Breaker](../gallery/media/docs/assets/reconstruction/missiles/achaean/ground-breaker/front-quarter.png)
 
@@ -56,7 +56,7 @@
 
 `openfa:missile/achaean/ground-maker`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Ground Maker](../gallery/media/docs/assets/reconstruction/missiles/achaean/ground-maker/front-quarter.png)
 
@@ -66,7 +66,7 @@
 
 `openfa:missile/achaean/hold-it-there`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Hold It There](../gallery/media/docs/assets/reconstruction/missiles/achaean/hold-it-there/front-quarter.png)
 
@@ -76,7 +76,7 @@
 
 `openfa:missile/achaean/thief-in-the-night`
 
-**First available iteration — initial-low-resolution-interpretation**
+**Canonical version — initial-low-resolution-interpretation**
 
 ![Thief-in-the-Night](../gallery/media/docs/assets/reconstruction/missiles/achaean/thief-in-the-night/front-quarter.png)
 

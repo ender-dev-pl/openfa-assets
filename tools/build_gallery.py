@@ -52,7 +52,7 @@ def index_table(groups, cultures, categories, interactive=False):
 
 
 def inventory_records():
-    from gallery_animation_assets import animation_previews
+    from canonical_assets import study_animation_previews
     from gallery_showcase_assets import showcase_previews
     inventory = json.loads((ROOT / 'sources/docs/reconstruction/models/inventory.json').read_text(encoding='utf-8'))
     rows = []
@@ -73,10 +73,11 @@ def inventory_records():
             glb = ROOT / 'sources' / blend.with_suffix('.glb')
             if not glb.is_file():
                 glb = ROOT / 'sources/docs/assets/bootstrap-3d/exports' / (blend.stem+'.glb')
-            previews=animation_previews('sources/'+study['blend'],glb.relative_to(ROOT).as_posix(),folder)
+            previews=study_animation_previews('sources/'+study['blend'],glb.relative_to(ROOT).as_posix(),folder,study)
             studies.append(dict(stage=study['stage'], blend='sources/'+study['blend'],
                 glb=glb.relative_to(ROOT).as_posix() if glb.is_file() else None,
                 image=image.relative_to(ROOT).as_posix(), sha256=study['sha256'],animations=previews))
+            if study.get('animation_sources'):studies[-1]['animation_sources']=study['animation_sources']
             if study.get('views'):studies[-1]['views']=study['views']
             if study.get('showcase'):studies[-1]['showcases']=showcase_previews(study)
         assert studies, record['id']
@@ -99,7 +100,7 @@ def main():
     out = ROOT / 'gallery'
     (out / 'sheets').mkdir(exist_ok=True)
     write_page(out / 'catalogue.json',json.dumps(rows, indent=2)+'\n')
-    lines = ['# Model gallery', '', 'Existing authored studies only. First run and available refined stages are shown separately. '
+    lines = ['# Model gallery', '', 'One selected canonical version per asset. Historical iterations are preserved in the private archive. '
              'A technical study is not final artistic acceptance.', '',
              '[Interactive catalogue](index.html) · [Machine-readable index](catalogue.json) · '
                '[RIS2 scaffold refinement](scaffolds-ris2.md) · [Culture scaffold kits](scaffolds-cultures.md) · '
@@ -119,14 +120,16 @@ def main():
         for row in group:
             page += ['## '+row['name'], '', '`'+row['id']+'`', '']
             for n, study in enumerate(row['studies']):
-                label = ('First available iteration' if n == 0 else 'Additional iteration')+' — '+study['stage']
-                if row['category']=='trading-goods':label=('Preserved first pass' if n==0 else 'Current refinement')+' — '+study['stage']
+                label = 'Canonical version — '+study['stage']
+                if row['category']=='trading-goods':label='Canonical version — '+study['stage']
                 img = '../'+quote(study['image'])
                 page += ['**'+label+'**', '', '!['+row['name']+']('+img+')', '',
                          '[Blend](../'+quote(study['blend'])+')'+
                          (' · [GLB](../'+quote(study['glb'])+')' if study['glb'] else ''), '']
                 if row['category']=='trading-goods' and study['stage']=='material-refined':
                     page += ['Full procedural materials are in Blend; GLB textures are not baked.', '']
+                for source in study.get('animation_sources',[]):
+                    page += ['Construction animation source: [Blend](../'+quote(source['blend'])+') · [GLB](../'+quote(source['glb'])+')', '']
                 if study.get('views'):
                     page += ['Additional views: '+' · '.join('['+v['label']+'](../'+quote(v['image'])+')' for v in study['views']), '']
                 for clip in study.get('showcases',[])+study['animations']:
@@ -156,8 +159,8 @@ def main():
     for row in rows:
         images = []
         for n, study in enumerate(row['studies']):
-            label = ('First available' if n == 0 else 'Additional')+' / '+study['stage']
-            if row['category']=='trading-goods':label=('Preserved first pass' if n==0 else 'Current refinement')+' / '+study['stage']
+            label = 'Canonical / '+study['stage']
+            if row['category']=='trading-goods':label='Canonical / '+study['stage']
             if study['animations'] or study.get('showcases'):
                 clips=study.get('showcases',[])+study['animations']
                 preview='<video controls loop muted playsinline preload="none" poster="../'+quote(study['image'])+'" aria-label="'+html.escape(row['name']+' — '+study['stage']+' animation',quote=True)+'"><source src="../'+quote(clips[0]['video'])+'" type="video/webm">Your browser does not support WebM video.</video>'
@@ -174,6 +177,8 @@ def main():
             extra_views=''
             if study.get('views'):
                 extra_views='<br>Additional views: '+' · '.join('<a href="../'+quote(v['image'])+'">'+html.escape(v['label'])+'</a>' for v in study['views'])
+            for source in study.get('animation_sources',[]):
+                extra_views+='<br>Construction animation source: <a href="../'+quote(source['blend'])+'">Blend</a> · <a href="../'+quote(source['glb'])+'">GLB</a>'
             images.append('<figure>'+preview+'<figcaption>'+html.escape(label)+
                 '<br><a href="../'+quote(study['blend'])+'">Blend</a>'+
                 (' · <a href="../'+quote(study['glb'])+'">GLB</a>' if study['glb'] else '')+extra_views+'</figcaption></figure>')

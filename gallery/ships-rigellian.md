@@ -6,7 +6,7 @@
 
 `openfa:ship/rigellian/lazzaro-research`
 
-**First available iteration — hi-def-broad-skin-refinement**
+**Canonical version — hi-def-broad-skin-refinement**
 
 ![Lazzaro Research](../gallery/media/objects/rigellian/lazzaro-research/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Front quarter](../gallery/media/objects/rigellian/lazzaro-res
 
 `openfa:ship/rigellian/delphini-assault`
 
-**First available iteration — hi-def-broad-skin-refinement**
+**Canonical version — hi-def-broad-skin-refinement**
 
 ![Delphini Assault](../gallery/media/objects/rigellian/delphini-assault/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Front quarter](../gallery/media/objects/rigellian/delphini-as
 
 `openfa:ship/rigellian/messier-lukannon`
 
-**First available iteration — hi-def-broad-skin-refinement**
+**Canonical version — hi-def-broad-skin-refinement**
 
 ![Messier-Lukannon](../gallery/media/objects/rigellian/messier-lukannon/front-quarter.png)
 
@@ -42,7 +42,7 @@ Additional views: [Front quarter](../gallery/media/objects/rigellian/messier-luk
 
 `openfa:ship/rigellian/transportation`
 
-**First available iteration — hi-def-broad-skin-refinement**
+**Canonical version — hi-def-broad-skin-refinement**
 
 ![Transportation](../gallery/media/objects/rigellian/transportation/front-quarter.png)
 
@@ -54,19 +54,7 @@ Additional views: [Front quarter](../gallery/media/objects/rigellian/transportat
 
 `openfa:ship/rigellian/observatory`
 
-**First available iteration — initial-reference-study**
-
-![Observatory](../gallery/media/docs/assets/reconstruction/ships/rigellian/observatory/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/rigellian/observatory/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/rigellian/observatory/model.glb)
-
-**Additional iteration — structural-detail-refinement**
-
-![Observatory](../gallery/media/docs/assets/reconstruction/rigellian-refined/observatory/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/rigellian-refined/observatory/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/observatory/model.glb)
-
-**Additional iteration — orbital-station-construction-refinement**
+**Canonical version — orbital-station-construction-refinement**
 
 ![Observatory](../gallery/media/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/front-quarter.png)
 

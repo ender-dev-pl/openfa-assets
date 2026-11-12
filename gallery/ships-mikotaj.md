@@ -6,7 +6,7 @@
 
 `openfa:ship/mikotaj/hiero`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Hiero](../gallery/media/objects/mikotaj/hiero/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Rear machinery](../gallery/media/objects/mikotaj/hiero/rear-q
 
 `openfa:ship/mikotaj/ylikt-shan`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Ylikt-shan](../gallery/media/objects/mikotaj/ylikt-shan/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Rear machinery](../gallery/media/objects/mikotaj/ylikt-shan/r
 
 `openfa:ship/mikotaj/falari-lourn`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Falari-Lourn](../gallery/media/objects/mikotaj/falari-lourn/front-quarter.png)
 
@@ -42,7 +42,7 @@ Additional views: [Rear machinery](../gallery/media/objects/mikotaj/falari-lourn
 
 `openfa:ship/mikotaj/ruth-strivakh`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Ruth-Strivakh](../gallery/media/objects/mikotaj/ruth-strivakh/front-quarter.png)
 
@@ -54,19 +54,7 @@ Additional views: [Rear machinery](../gallery/media/objects/mikotaj/ruth-strivak
 
 `openfa:ship/mikotaj/na-xanth`
 
-**First available iteration — initial-reference-study**
-
-![Na-Xanth](../gallery/media/docs/assets/reconstruction/ships/mikotaj/na-xanth/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/mikotaj/na-xanth/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mikotaj/na-xanth/model.glb)
-
-**Additional iteration — orbital-station-structural-refinement**
-
-![Na-Xanth](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/model.glb)
-
-**Additional iteration — orbital-station-construction-refinement**
+**Canonical version — orbital-station-construction-refinement**
 
 ![Na-Xanth](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/front-quarter.png)
 

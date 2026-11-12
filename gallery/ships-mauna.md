@@ -6,7 +6,7 @@
 
 `openfa:ship/mauna/surveillance-craft-type-5`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Surveillance Craft Type 5](../gallery/media/objects/mauna/surveillance-craft-type-5/front-quarter.png)
 
@@ -18,7 +18,7 @@ Additional views: [Rear fittings](../gallery/media/objects/mauna/surveillance-cr
 
 `openfa:ship/mauna/combat-craft-type-1-5`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Combat Craft Type 1.5](../gallery/media/objects/mauna/combat-craft-type-1-5/front-quarter.png)
 
@@ -30,7 +30,7 @@ Additional views: [Rear fittings](../gallery/media/objects/mauna/combat-craft-ty
 
 `openfa:ship/mauna/max-combat-craft-type-6`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Max Combat Craft Type 6](../gallery/media/objects/mauna/max-combat-craft-type-6/front-quarter.png)
 
@@ -42,7 +42,7 @@ Additional views: [Rear fittings](../gallery/media/objects/mauna/max-combat-craf
 
 `openfa:ship/mauna/elite-command-craft`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Elite Command Craft](../gallery/media/objects/mauna/elite-command-craft/front-quarter.png)
 
@@ -54,7 +54,7 @@ Additional views: [Rear fittings](../gallery/media/objects/mauna/elite-command-c
 
 `openfa:ship/mauna/transportation-craft-type-3`
 
-**First available iteration — mobile-ship-remaster**
+**Canonical version — mobile-ship-remaster**
 
 ![Transportation Craft Type 3](../gallery/media/objects/mauna/transportation-craft-type-3/front-quarter.png)
 
@@ -66,19 +66,7 @@ Additional views: [Rear fittings](../gallery/media/objects/mauna/transportation-
 
 `openfa:ship/mauna/orbital-construction-area`
 
-**First available iteration — initial-reference-study**
-
-![Orbital Construction Area](../gallery/media/docs/assets/reconstruction/ships/mauna/orbital-construction-area/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/ships/mauna/orbital-construction-area/model.blend) · [GLB](../sources/docs/assets/reconstruction/ships/mauna/orbital-construction-area/model.glb)
-
-**Additional iteration — orbital-station-structural-refinement**
-
-![Orbital Construction Area](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/front-quarter.png)
-
-[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/model.glb)
-
-**Additional iteration — orbital-station-construction-refinement**
+**Canonical version — orbital-station-construction-refinement**
 
 ![Orbital Construction Area](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/front-quarter.png)
 

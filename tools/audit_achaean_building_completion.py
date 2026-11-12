@@ -136,13 +136,16 @@ def audit():
     selected = {x['blend'] for x in output}; preserved = []
     for old in baseline['records']:
         assert old['blend'] not in selected
-        for ext in ['blend', 'glb']: assert sha(ROOT / old[ext]) == old[ext + '_sha256'], old[ext]
+        policy=read(ROOT/'project/canonical-assets.json');archived={x['path']:x for x in policy['archive']['files']}
+        for ext in ['blend','glb']:
+            assert old[ext] in archived and archived[old[ext]]['sha256']==old[ext+'_sha256'],old[ext]
+            assert not (ROOT/old[ext]).exists(),old[ext]
         record = next(x for x in inventory['records'] if x['id'] == old['id'])
         assert any('sources/' + s['blend'] == old['blend'] for s in record['historical_studies'])
         preserved.append(dict(id=old['id'], stage=old['stage'], blend=old['blend'], glb=old['glb'], blend_sha256=old['blend_sha256'], glb_sha256=old['glb_sha256']))
     assert len(output) == 26 and render_pairs == 80
     return dict(schema_version=1, issue=256, scope='Current asset-only completion integrity audit backed by actual per-model Blender and reference reviews;not a new Blender run or client/artist acceptance.',
-                auditor_sha256=sha(Path(__file__)), model_count=26, preserved_original_pairs=29, render_pairs=render_pairs,
+                auditor_sha256=sha(Path(__file__)), model_count=26, preserved_original_pairs=29, preserved_pair_storage=dict(repository=policy['archive']['repository'],commit=policy['archive']['commit'],verification='Immutable transfer provenance; actual bytes verified in the private archive'), render_pairs=render_pairs,
                 catalogue_updates_reviewed=26 * 41, extra_zoom_layers_reviewed=26 * 2, research_video_subject_reviews=72,
                 concept_attempts=concepts, animated_models=4, total_triangles=sum(x['triangles'] for x in output),
                 maximum_model_triangles=max(x['triangles'] for x in output), maximum_model_meshes=max(x['meshes'] for x in output),
@@ -152,7 +155,7 @@ def audit():
 
 
 def main():
-    result = audit(); (DOCS / 'achaean-building-completion-audit.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8')
+    result = audit(); (DOCS / 'achaean-building-completion-audit.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8', newline='\n')
     print('ACHAEAN_BUILDING_COMPLETION_AUDIT_OK', result['model_count'], 'models;', result['preserved_original_pairs'], 'preserved pairs;', result['render_pairs'], 'render pairs')
 
 

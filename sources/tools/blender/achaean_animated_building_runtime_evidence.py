@@ -1,6 +1,7 @@
 """Source-bound acceptance for the animated AC12 remaster; client acceptance is separate."""
 import hashlib,json,struct
 from pathlib import Path
+from archive_evidence import verify_bound_input
 from PIL import Image,ImageChops,ImageStat
 from achaean_building_runtime_evidence import digest
 from achaean_static_building_runtime_evidence import exported_triangles
@@ -63,7 +64,7 @@ def verify(root,record):
     assert meta['author'] in report['helpers'] and report['verifier'] in report['helpers']
     assert path(meta['author']).is_relative_to(project/'sources/tools/blender') and path(meta['author']).suffix=='.py'
     assert hashlib.sha256(path(meta['author']).read_bytes()).hexdigest()==meta['author_sha256']
-    for rel,h in report['helpers'].items():assert rel in files and hashlib.sha256(path(rel).read_bytes()).hexdigest()==h
+    for rel,h in report['helpers'].items():verify_bound_input(project,proof,rel,h)
     assert report['maximum_bidirectional_surface_error']<1e-5 and report['texture_pixels_equal'] is True
     assert report['positive_closed_meshes']['native']==report['positive_closed_meshes']['imported']==report['meshes']==meta['mesh_nodes']
     assert report['game_client_integration'] is report['final_artistic_acceptance'] is visual['final_user_artistic_acceptance'] is False
