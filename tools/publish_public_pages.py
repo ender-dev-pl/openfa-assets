@@ -1,8 +1,6 @@
-"""Push only reviewed static content to gh-pages, without Actions artifact storage."""
+"""Validate local gallery artifacts; branch publication is retired."""
 import argparse
-import json
 from pathlib import Path
-import re
 import subprocess
 from build_public_pages import ROOT, verify
 from verify_publication import problems
@@ -37,28 +35,7 @@ def prepare(site):
 
 
 def publish(site, repository, request_build=False):
-    if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repository):
-        raise ValueError('Expected owner/repository')
-    if request_build:
-        settings = json.loads(command(['gh', 'api', 'repos/' + repository + '/pages']))
-        if settings.get('build_type') != 'legacy' or settings.get('source') != {'branch': 'gh-pages', 'path': '/'}:
-            raise ValueError('Configure Pages: Deploy from a branch > gh-pages > /(root) first')
-    url = 'https://github.com/' + repository + '.git'
-    remote = command(['git', 'ls-remote', '--heads', url, 'refs/heads/gh-pages'])
-    expected = remote.split()[0] if remote else ''
-    commit = prepare(site)
-    subprocess.run(['git', '-C', str(site), 'push',
-                    '--force-with-lease=refs/heads/gh-pages:' + expected,
-                    url, 'HEAD:refs/heads/gh-pages'], check=True)
-    result = {'branch': 'gh-pages', 'commit': commit, 'repository': repository,
-              'pages_build_requested': request_build}
-    if request_build:
-        # GITHUB_TOKEN pushes do not trigger native Pages builds automatically.
-        build = json.loads(command(['gh', 'api', '--method', 'POST', 'repos/' + repository + '/pages/builds']))
-        result['build_status'] = build.get('status')
-        result['build_url'] = build.get('url')
-    print('PAGES_CONTENT_PUSHED', json.dumps(result))
-    return result
+    raise RuntimeError('Branch publication is retired; publish the committed docs/ gallery from main in GitHub Pages.')
 
 
 if __name__ == '__main__':

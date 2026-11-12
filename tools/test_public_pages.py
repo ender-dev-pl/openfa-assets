@@ -49,6 +49,23 @@ class PagesTests(unittest.TestCase):
             self.assertEqual(len(list((root/'site/media').glob('*.webp'))),1)
             self.assertFalse(list((root/'site').rglob('*.glb')))
 
+    def test_publication_cannot_recreate_gh_pages_branch(self):
+        from publish_public_pages import publish
+        with patch('publish_public_pages.subprocess.run',side_effect=AssertionError('No Git push allowed')):
+            with self.assertRaisesRegex(RuntimeError,'Branch publication is retired'):
+                publish(Path('unused'),'ender-dev-pl/openfa-assets')
+
+    def test_source_change_invalidates_committed_site(self):
+        parent=Path(__file__).resolve().parents[1]/'artifacts';parent.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=parent,prefix='pages-freshness-') as temp:
+            root=Path(temp).resolve();(root/'gallery').mkdir()
+            for name in PAGES:(root/'gallery'/name).write_text('<!doctype html><title>Current</title>')
+            with patch.object(build_public_pages,'ROOT',root):
+                build_public_pages.build(root/'site')
+                (root/'gallery/index.html').write_text('<!doctype html><title>Changed</title>')
+                with self.assertRaisesRegex(ValueError,'Stale Pages source'):
+                    build_public_pages.verify(root/'site')
+
     def test_content_commit_is_a_root_without_source_history(self):
         # Git data is kept under the ignored evidence directory, never the source index.
         import uuid

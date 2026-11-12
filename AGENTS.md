@@ -23,3 +23,8 @@ Trading goods TI001–TI101 are available as editable models, GLB exports and ga
 - Completed scope and separate legacy UI image targets: [COMPLETION.md](docs/trading-goods/COMPLETION.md).
 
 Consult these records before requested changes and preserve completed variants.
+
+## Canonical public snapshot
+
+- Base new work on the current signed main root. Do not merge pre-snapshot histories into it; port reviewed file changes instead. Historical origin branches and unfinished intro work are recoverable from the private archive.
+- GitHub Pages is served from main:/docs. Reuse the current committed docs/pages bundle for checks and deployment; rebuild it only after its inputs change. Do not recreate gh-pages or publish via the retired branch publisher.

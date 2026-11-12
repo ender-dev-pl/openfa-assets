@@ -24,12 +24,14 @@ def build(output, repository='ender-dev-pl/openfa-assets', ref='main'):
     (output / 'media').mkdir()
     (output / '.nojekyll').write_text('')
     assets = {}
+    source_inputs = {}
 
     def asset(path):
         relative = path.relative_to(ROOT).as_posix()
         if relative in assets:
             return assets[relative]
         data = path.read_bytes()
+        source_inputs[relative] = hashlib.sha256(data).hexdigest()
         key = hashlib.sha256(data).hexdigest()[:24]
         if path.suffix.lower() in {'.png', '.jpg', '.jpeg'}:
             target = 'media/' + key + '.webp'
@@ -72,17 +74,21 @@ def build(output, repository='ender-dev-pl/openfa-assets', ref='main'):
 
     pattern = re.compile(r'\b(src|href|poster|value)=([' + "\"'" + r'])(.*?)\2')
     for name in PAGES:
-        page = (ROOT / 'gallery' / name).read_text(encoding='utf-8')
+        source = ROOT / 'gallery' / name
+        source_inputs[source.relative_to(ROOT).as_posix()] = hashlib.sha256(source.read_bytes()).hexdigest()
+        page = source.read_text(encoding='utf-8')
         (output / name).write_text(pattern.sub(rewrite, page), encoding='utf-8')
     report = {'pages': list(PAGES), 'embedded_assets': len(assets),
               'bytes': sum(p.stat().st_size for p in output.rglob('*') if p.is_file()),
               'maximum_bytes': MAX_BYTES,
               'policy': 'Only generated HTML, metadata-free previews and explicitly referenced videos are deployed.'}
+    report['source_inputs'] = source_inputs
+    report['output_sha256'] = {path.relative_to(output).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest() for path in output.rglob('*') if path.is_file()}
     if report['bytes'] > MAX_BYTES:
         raise ValueError('Pages artifact exceeds the publication budget')
     (output / 'build-manifest.json').write_text(json.dumps(report, indent=2) + '\n')
     verify(output)
-    print('PAGES_BUILT', json.dumps(report))
+    print('PAGES_BUILT',json.dumps({k:v for k,v in report.items() if k not in {'source_inputs','output_sha256'}}),len(report['source_inputs']),'bound sources')
 
 
 def verify(output):
@@ -90,6 +96,18 @@ def verify(output):
     for path in output.rglob('*'):
         if path.is_file() and path.name not in {'.nojekyll', 'build-manifest.json'}:
             assert path.suffix in allowed, path.relative_to(output)
+
+    manifest=output/'build-manifest.json'
+    if manifest.is_file():
+        metadata=json.loads(manifest.read_text(encoding='utf-8'))
+        for name,expected in metadata.get('source_inputs',{}).items():
+            source=(ROOT/name).resolve()
+            if not source.is_relative_to(ROOT.resolve()) or not source.is_file() or hashlib.sha256(source.read_bytes()).hexdigest()!=expected:
+                raise ValueError('Stale Pages source: '+name)
+        for name,expected in metadata.get('output_sha256',{}).items():
+            target=(output/name).resolve()
+            if not target.is_relative_to(output.resolve()) or not target.is_file() or hashlib.sha256(target.read_bytes()).hexdigest()!=expected:
+                raise ValueError('Changed Pages output: '+name)
 
     class Links(HTMLParser):
         def handle_starttag(self, tag, attributes):
@@ -110,5 +128,12 @@ if __name__ == '__main__':
     parser.add_argument('--output', type=Path, default=ROOT / '_site')
     parser.add_argument('--repository', default='ender-dev-pl/openfa-assets')
     parser.add_argument('--ref', default='main')
+    parser.add_argument('--check-existing',action='store_true',help='Verify the committed site against current source and output hashes; do not rebuild')
     args = parser.parse_args()
-    build(args.output, args.repository, args.ref)
+    if args.check_existing:
+        metadata=json.loads((args.output/'build-manifest.json').read_text(encoding='utf-8'))
+        assert metadata.get('source_inputs') and metadata.get('output_sha256'),'Pages freshness manifest required'
+        verify(args.output.resolve())
+        print('COMMITTED_PAGES_VERIFIED',len(metadata['source_inputs']),'source inputs')
+    else:
+        build(args.output, args.repository, args.ref)

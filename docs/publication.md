@@ -54,50 +54,24 @@ To repeat native runtime checks with Blender 4.5 LTS:
 blender --background --factory-startup --disable-autoexec --python-exit-code 1 --python tools/verify_public_models.py
 ```
 
-## GitHub Pages
+## GitHub Pages from main
 
-The prepared site lives on the dedicated `gh-pages` branch, at its root. This
-branch contains only generated HTML, metadata-free WebP previews, `.nojekyll`,
-referenced animation media and the build manifest. It has its own publication
-history; authoring files, logs and private working directories are not copied.
+The repository has one public branch, `main`, published as a signed parentless snapshot. Historical source branches, including unfinished intro work, are preserved privately in `openfa-assets-archive` under `history/2026-11-12/`. Do not merge pre-snapshot histories back into the public root.
 
-The current GitHub plan does not support Pages while this repository is private.
-Content can be prepared and pushed beforehand, without changing visibility or
-requesting a Pages build. After making the repository public:
+GitHub Pages uses **Deploy from a branch → main → /docs**. `docs/index.html` redirects to the optimized current gallery in `docs/pages/`, preserving catalogue filters. There is no `gh-pages` branch. Source downloads point to current `main`; editable models and the large authoring gallery remain outside the Pages source folder.
 
-1. Open Settings > Pages.
-2. Set Source to **Deploy from a branch**.
-3. Select **gh-pages** and **/(root)**, then Save.
-4. Wait for GitHub's Pages deployment. The expected address is
-   `https://ender-dev-pl.github.io/openfa-assets/`.
-
-`public-pages.yml` verifies pull requests and pushes to main without uploading
-Actions artifacts. This avoids the organization's exhausted artifact-storage
-quota during verification. For later content updates, manually run the workflow
-with `deploy` enabled. Only that job gets contents/Pages write permissions. It
-rebuilds the site, replaces gh-pages with a clean content commit using an exact
-SHA lease, and explicitly requests the native Pages build. Pages must already be
-configured to the gh-pages branch; no token with administration privileges and no
-extra repository secret are required for routine updates.
-
-For local preparation, choose a new output directory and use authenticated Git:
+Build the deployable gallery once after changing its inputs:
 
 ```sh
-python tools/build_public_pages.py --output artifacts/public-pages-content --repository ender-dev-pl/openfa-assets --ref main
-python tools/publish_public_pages.py --site artifacts/public-pages-content --repository ender-dev-pl/openfa-assets
+python tools/build_public_pages.py --output docs/pages --repository ender-dev-pl/openfa-assets --ref main
 ```
 
-The second command updates only gh-pages. It does not change repository visibility,
-configure Pages, or request a build unless `--request-build` is explicitly supplied.
-The publisher checks allowed file types, all local page links and private metadata
-before creating a content-only root commit; it refuses source directories,
-symlinks and previously initialized output repositories.
+The output folder must be empty or absent; do not create another copy as a substitute for checking an existing result. Reuse the committed result for verification and publication:
 
-The builder keeps a 900 MiB output budget. Full images and editable source/model
-links point to the public source repository rather than embedding the authoring
-archive. The full gallery source exceeds the
-[1 GB Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
-The native Pages deployment is managed by GitHub; this repository's workflow does
-not upload build artifacts or delete existing organization artifacts.
+```sh
+python tools/build_public_pages.py --output docs/pages --check-existing
+```
 
-Publication metadata equivalence evidence is retained in `project/scitek-publication-normalization.json`, with the subsequent native reopen results in `project/scitek-normalized-native-runtime.json`. These are historical verification records; moving them does not constitute a new validation run. One-off merge review reports have been removed.
+The manifest binds every embedded source and emitted file by SHA-256. CI rejects stale source pages/media or modified output without rebuilding the site. A push to main updates native Pages from the same committed bytes. This does not depend on Actions artifact storage or recreate a publication branch. The old branch publisher fails closed.
+
+The optimized site has a 900 MiB budget. Full-resolution source images and model downloads are linked to GitHub rather than embedded in the published site. Historical metadata-normalization evidence remains provenance of unchanged geometry and pixels, not a claim of a new model-rendering run.

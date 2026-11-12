@@ -15,7 +15,7 @@ Historical model payloads and their previews live in the private repository [ope
 
 Historical generators may depend on retired source checkpoints. Run such a historical workflow in an ignored authoring workspace assembled with the required sources from the matching archive commit; do not restore those old models to the public source tree or canonical gallery. The archive preserves the original layout and source registries for this purpose.
 
-This migration changes current trees and catalogues. It does not rewrite existing public Git history or remove earlier blobs from past public commits.
+The public main is published as a signed parentless snapshot. Prior source history is preserved in the private archive under history/2026-11-12/. GitHub-managed pull-request references and caches are separate from ordinary branch/tag refs.
 
 ## Runtime evidence boundary
 

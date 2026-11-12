@@ -1,15 +1,9 @@
-name: Verify public assets and prepare Pages content
+name: Verify canonical assets and main-branch Pages content
 on:
   push:
     branches: [main]
   pull_request:
   workflow_dispatch:
-    inputs:
-      deploy:
-        description: Update gh-pages content and request a configured Pages build
-        required: false
-        type: boolean
-        default: false
 permissions:
   contents: read
 concurrency:
@@ -25,8 +19,17 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r requirements.txt -r requirements-publication.txt
       - run: python tools/verify_publication.py
+      - name: Ensure media verification tools
+        run: |
+          if ! command -v ffprobe >/dev/null || ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
       - run: python tools/test_publication.py
       - run: python tools/test_public_pages.py
+      - run: python tools/test_extension_missiles.py
+      - run: python tools/test_missile_silo_correction.py
+      - run: python sources/ui/camera-mode-icon/verify_camera_mode_icon.py
       - run: python tools/verify_project.py
       - run: python tools/test_canonical_assets.py
       - run: python tools/test_archive_evidence.py
@@ -39,26 +42,4 @@ jobs:
       - run: python tools/test_licensing.py
       - run: node tools/test_gallery_filters.cjs
       - run: node tools/test_catalogue_filters.cjs
-      - run: python tools/build_public_pages.py --repository "${{ github.repository }}"
-  deploy:
-    if: github.event_name == 'workflow_dispatch' && inputs.deploy && github.ref == 'refs/heads/main'
-    needs: verify
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: python -m pip install -r requirements.txt
-      - run: python tools/build_public_pages.py --repository "${{ github.repository }}" --ref "${{ github.sha }}"
-      - name: Authenticate Git for the content branch
-        run: gh auth setup-git
-        env:
-          GH_TOKEN: ${{ github.token }}
-      - name: Update content and request Pages build
-        run: python tools/publish_public_pages.py --repository "${{ github.repository }}" --request-build
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - run: python tools/build_public_pages.py --output docs/pages --check-existing
