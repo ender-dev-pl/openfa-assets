@@ -32030,7 +32030,7 @@
       "functional_reference": {
         "index": "docs/reconstruction/models/functional-text-index.json",
         "id": "openfa:building/legacy/149",
-        "review_status": "not-reviewed",
+        "review_status": "reviewed-original-building-long-and-indexed-culture",
         "description_records": [
           1010
         ]
@@ -32104,21 +32104,48 @@
       ],
       "available_studies": [
         {
-          "stage": "silhouette-study",
-          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn20/model.blend",
+          "stage": "canonical-game-remaster",
+          "blend": "objects/mauna/motion-units/model.blend",
           "present": true,
-          "sha256": "a53e0cf9819bdd3d3115807671c6e3a96332218045d6931b9d49bead378e624a",
-          "final_visual_acceptance": "not-established"
+          "sha256": "9975e229f0b4a8998a3bc767f30ff91f0a418d44471aab78fec7b1bd85f1b606",
+          "media": "gallery/media/objects/mauna/motion-units",
+          "views": [
+            {
+              "label": "Front",
+              "image": "gallery/media/objects/mauna/motion-units/front.png"
+            },
+            {
+              "label": "Rear quarter",
+              "image": "gallery/media/objects/mauna/motion-units/rear-quarter.png"
+            },
+            {
+              "label": "Supported mast and two clear brass prongs",
+              "image": "gallery/media/objects/mauna/motion-units/supported-mast-and-two-clear-brass-prongs-detail.png"
+            },
+            {
+              "label": "Two storeys, recesses and sloping red base",
+              "image": "gallery/media/objects/mauna/motion-units/two-storeys-recesses-and-sloping-red-base-detail.png"
+            },
+            {
+              "label": "Canonical technical wireframe",
+              "image": "gallery/media/objects/mauna/motion-units/technical-wireframe.png"
+            },
+            {
+              "label": "Concept and actual GLB",
+              "image": "gallery/media/objects/mauna/motion-units/concept-glb-comparison.jpg"
+            }
+          ],
+          "final_visual_acceptance": "Agent source/concept/runtime review; final user/client acceptance separate"
         }
       ],
       "acceptance": {
-        "reference_views_reviewed": false,
-        "silhouette_and_proportions": false,
-        "high_detail_structure": false,
-        "materials": false,
+        "reference_views_reviewed": true,
+        "silhouette_and_proportions": true,
+        "high_detail_structure": true,
+        "materials": true,
         "moving_assemblies": false,
         "attachment_transforms": false,
-        "native_and_glb_runtime": false,
+        "native_and_glb_runtime": true,
         "final_visual_acceptance": false
       },
       "open_evidence_questions": [],
@@ -32148,6 +32175,89 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 149
+      },
+      "historical_studies": [
+        {
+          "stage": "silhouette-study",
+          "blend": "docs/assets/bootstrap-3d/full-catalogue/mauna/mn20/model.blend",
+          "present": true,
+          "sha256": "a53e0cf9819bdd3d3115807671c6e3a96332218045d6931b9d49bead378e624a",
+          "final_visual_acceptance": "not-established"
+        }
+      ],
+      "reviewed_model": {
+        "blend": "objects/mauna/motion-units/model.blend",
+        "sha256": "9975e229f0b4a8998a3bc767f30ff91f0a418d44471aab78fec7b1bd85f1b606",
+        "runtime_evidence": {
+          "format": "culture-building-remaster-v1",
+          "scope": "blender-native-and-imported-glb",
+          "text_hash_policy": "exact-bytes",
+          "game_client_integration": false,
+          "render_directory": "gallery/media/objects/mauna/motion-units",
+          "verifier": "sources/tools/blender/verify_mauna_motion_units.py",
+          "files": {
+            "sources/objects/mauna/motion-units/integration-contract.json": "9ca72cbd45e21eb32148747418069ae9296f032796e0978d2e52b08aaaff0005",
+            "sources/objects/mauna/motion-units/model.blend": "9975e229f0b4a8998a3bc767f30ff91f0a418d44471aab78fec7b1bd85f1b606",
+            "sources/objects/mauna/motion-units/model.glb": "bca6f0758dc87aaafd07a5fa3494d78b587939d6758c7b835c4e86e6c64a5658",
+            "sources/objects/mauna/motion-units/model.json": "9e23a9f6caec462fd960174b5f19628e9bf3925b02d641896a71a441c16aa6fb",
+            "sources/objects/mauna/motion-units/README.md": "39d78028e6837c272668f4ddb94737f07b5364ff49075df67021696fd1b56348",
+            "sources/objects/mauna/motion-units/runtime-review.json": "0b3b935b6c1d6379f9d1de81493769a3583327ce1f191f6ba84d8d752ede4a18",
+            "sources/objects/mauna/motion-units/visual-review.json": "71e73ec7fc7775c9896a46fb647ca3ac1064066df1cce31c9e96f125425a2c7f",
+            "gallery/media/objects/mauna/motion-units/concept-glb-comparison.jpg": "9097797e0b7c24ddd23b9a9a99e33e4ebe5a69b752f5ee73b4e1a527f668360c",
+            "gallery/media/objects/mauna/motion-units/front-quarter.png": "3d4d1cdc274c17ea8ddfbca246506528a807e5eeda516aa8df889e11ec25867f",
+            "gallery/media/objects/mauna/motion-units/front.png": "bb43e220bd0af0d3c0cd23956453e41289713c164074ddcfa4a008ad4004f763",
+            "gallery/media/objects/mauna/motion-units/imported-front-quarter.png": "3d4d1cdc274c17ea8ddfbca246506528a807e5eeda516aa8df889e11ec25867f",
+            "gallery/media/objects/mauna/motion-units/imported-front.png": "bb43e220bd0af0d3c0cd23956453e41289713c164074ddcfa4a008ad4004f763",
+            "gallery/media/objects/mauna/motion-units/imported-rear-quarter.png": "a0eeab5af6551a7627d20d693879d4c68c250c790b49dc405ed196c1e66c2dea",
+            "gallery/media/objects/mauna/motion-units/native-front-quarter.png": "112617b658ad1d94da94f13314b64a84a2a0320042840b49e46ae94024c56f21",
+            "gallery/media/objects/mauna/motion-units/native-front.png": "c456caab3dfaae61bab701bafca16c23bd2173c32dd587e8fe36c67f2c0369c3",
+            "gallery/media/objects/mauna/motion-units/native-rear-quarter.png": "47ad6e4e703dca8d318e0e4c0d74901534fdfd92d9ac50881ef663c73b00a7ba",
+            "gallery/media/objects/mauna/motion-units/rear-quarter.png": "a0eeab5af6551a7627d20d693879d4c68c250c790b49dc405ed196c1e66c2dea",
+            "gallery/media/objects/mauna/motion-units/supported-mast-and-two-clear-brass-prongs-detail.png": "dd45aa104572a2a2c867c85165bb11f742b396f59edcea2daaafd78e22f3a2a7",
+            "gallery/media/objects/mauna/motion-units/technical-wireframe.png": "49308e4ed355c08db082d5763e1301ca6245619b3b7fafdfb499103aa657bcd4",
+            "gallery/media/objects/mauna/motion-units/two-storeys-recesses-and-sloping-red-base-detail.png": "02432cfed0f9957dadba517d6fc7f297994b16cdc11f89c9f312baebd0125cea",
+            "sources/materials/mauna/motion-units/brass-colour.png": "08e4ffafbc6a478cdd60ead2e51d38e6aea232f65055d498bbc996ed59efdbce",
+            "sources/materials/mauna/motion-units/cast-concrete-colour.png": "f95423ad13460402449eb6b70a5aacc9c63f10b3c794c336186e0589e3c408cf",
+            "sources/materials/mauna/motion-units/cast-service-normal.png": "793a4fc8cf63e0152ce49a3b4e7df90a61f4f9acc86cd1186100e40e2793067c",
+            "sources/materials/mauna/motion-units/concrete-orm.png": "c613971d449d952e20f562c89a3a8efd96e2128ba77d81b503ab0dc5302c7e96",
+            "sources/materials/mauna/motion-units/marking-red-colour.png": "7b52be3261c8a8dd0c5220d99943804210e852da811e3f6818b53d24812ac944",
+            "sources/materials/mauna/motion-units/metal-orm.png": "2f794cc8ce0feb72d33131ec4c163fe519d099e2019479d30765cf0fcdd5c31a",
+            "sources/materials/mauna/motion-units/pale-module-colour.png": "041a758e4dae3061e893f95e5aec15bbc3d7ba7dc95bc84b94228dfd9a0f99a3",
+            "sources/tools/blender/remaster_mauna_motion_units.py": "87d2c71fbe81992a8caa17ddd432ed497154d995258352eaf87fe73f6841667c",
+            "sources/tools/blender/verify_mauna_motion_units.py": "34d4e4c76452d6b34535cd0ba5a98d840d2c7e807106178d043ee83750cfc253",
+            "sources/tools/blender/culture_building_remaster_runtime_evidence.py": "74ce315df82dd66117b9c380233144be409d04c98a793f3ae44d8dec81003826",
+            "sources/docs/reconstruction/models/mn20-concept-review.json": "fbcecf968a07ad72a1041a0d0e5693b24fb4a60f5703e1464b630682df070cda",
+            "sources/docs/reconstruction/models/mn20-concept-prompt-1.txt": "b4305d13349a74ba7ed7153b80eadd33073fbdba34051f2c2821c74dbae2d120",
+            "gallery/media/concepts/mauna/mn20-review-1.png": "db32c9b3d25981828c4f4a2a1f7d1e2699e1b9c7145206a4c548bbe1f6d5a614"
+          }
+        }
+      },
+      "acceptance_evidence": {
+        "reference_views_reviewed": {
+          "report": "sources/objects/mauna/motion-units/visual-review.json",
+          "sha256": "71e73ec7fc7775c9896a46fb647ca3ac1064066df1cce31c9e96f125425a2c7f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "silhouette_and_proportions": {
+          "report": "sources/objects/mauna/motion-units/visual-review.json",
+          "sha256": "71e73ec7fc7775c9896a46fb647ca3ac1064066df1cce31c9e96f125425a2c7f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "high_detail_structure": {
+          "report": "sources/objects/mauna/motion-units/visual-review.json",
+          "sha256": "71e73ec7fc7775c9896a46fb647ca3ac1064066df1cce31c9e96f125425a2c7f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "materials": {
+          "report": "sources/objects/mauna/motion-units/visual-review.json",
+          "sha256": "71e73ec7fc7775c9896a46fb647ca3ac1064066df1cce31c9e96f125425a2c7f",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        },
+        "native_and_glb_runtime": {
+          "report": "sources/objects/mauna/motion-units/runtime-review.json",
+          "sha256": "0b3b935b6c1d6379f9d1de81493769a3583327ce1f191f6ba84d8d752ede4a18",
+          "scope": "Asset-only bound source evidence; no user/client acceptance"
+        }
       }
     },
     {

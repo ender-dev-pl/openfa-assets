@@ -240,11 +240,13 @@ Additional views: [Front](../gallery/media/objects/mauna/ores-block/front.png) �
 
 `openfa:building/legacy/149`
 
-**First available iteration — silhouette-study**
+**First available iteration — canonical-game-remaster**
 
-![Motion Units](../gallery/media/docs/assets/bootstrap-3d/full-catalogue/mauna/mn20/front-quarter.png)
+![Motion Units](../gallery/media/objects/mauna/motion-units/front-quarter.png)
 
-[Blend](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn20/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/full-catalogue/mauna/mn20/model.glb)
+[Blend](../sources/objects/mauna/motion-units/model.blend) · [GLB](../sources/objects/mauna/motion-units/model.glb)
+
+Additional views: [Front](../gallery/media/objects/mauna/motion-units/front.png) · [Rear quarter](../gallery/media/objects/mauna/motion-units/rear-quarter.png) · [Supported mast and two clear brass prongs](../gallery/media/objects/mauna/motion-units/supported-mast-and-two-clear-brass-prongs-detail.png) · [Two storeys, recesses and sloping red base](../gallery/media/objects/mauna/motion-units/two-storeys-recesses-and-sloping-red-base-detail.png) · [Canonical technical wireframe](../gallery/media/objects/mauna/motion-units/technical-wireframe.png) · [Concept and actual GLB](../gallery/media/objects/mauna/motion-units/concept-glb-comparison.jpg)
 
 ## Laser Boost
 
