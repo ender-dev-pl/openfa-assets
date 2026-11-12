@@ -1,0 +1,137 @@
+{
+  "issue": 265,
+  "culture": "braccatian",
+  "role": "terraform",
+  "status": "proposed-assets-awaiting-mechanics",
+  "legacy_unit": false,
+  "runtime_integration": false,
+  "mechanics_available": false,
+  "blueprint_registered": false,
+  "package_registered": false,
+  "binaries": {
+    "blend": "be909c3555536110d16335b414dc30fe9b2567acd4f91dc8b7ca2a5a1f02a49b",
+    "glb": "58f9b0df2d87264920b5a2f0ce196694d5b92740c41cfcb6e8cc9f37a8834ddb"
+  },
+  "author": "sources/tools/blender/proposals/author_braccatian_engineering.py",
+  "author_sha256": "28d44de63a6e44a8c67066ad55d01bbccb2f0a7dcf0f57cbdee21322e4eeaaa8",
+  "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
+  "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "concept": {
+    "culture": "braccatian",
+    "role": "terraform",
+    "concept_version": "v2",
+    "image": "sources/artwork/proposals/engineering-ships/braccatian/terraforming-ship.png",
+    "sha256": "2613ccdcab5232f5a121837ac155b658195acf6ccf8944d2a1027b37cdcf87cc",
+    "prompt": "Use case: stylized-concept. Create ONE NEW utility spacecraft for the OpenFA isometric RTS, as a simple practical reference for a 3D GAME UNIT. Both supplied images are actual existing 3D SHIPS OF THIS CULTURE from the gallery. Use their characteristic material finish, colour distribution, structural vocabulary and component integration. This should belong naturally beside them. Do not copy weapons or recreate either reference unit. Mechanisms for the new engineering role are authored OpenFA extensions.\nCritical design target: a clear compact game silhouette at 64-96 pixels wide; roughly 4-7 major masses, only a few moving parts and large quiet surfaces. Simple does not mean rounded toy. Keep the structural character of the supplied culture. Do not add miniature machinery, cabling, greebles, rivet fields, small vents everywhere, rails, ladders, antennas, cargo racks, light arrays, cockpit interiors or intricate ornament. Restrained game-render shading, big readable highlights; not a cinematic machinery illustration. No universal human construction-vehicle chassis, no compulsory twin side engine pods, no bronze nozzle rims unless present in the supplied faction references, no generic two front elbow-arms layout. Propulsion may be flush with the hull or integrated into supports.\nOne complete SPACECRAFT, isolated on perfectly pure black, elevated front three-quarter view showing its tool, all silhouette and tool extremities comfortably inside frame. Entire image is one individual deliverable, not a contact sheet. No terrain, floor, scenery, people, text, labels, logos, watermark, weapons, wheels, tracks, walking legs, smoke, sparks or fantastical floating parts. Subtle material-specific seam dirt, tool abrasion, a few edge scratches or small dents; preserve the faction's actual paint/alloy surface rather than applying uniform scratched grey metal to everything.\nBRACCATIAN family: ochre/tan continuous barrel-like body, coral/russet rounded end caps, longitudinal grey/dark steel reinforcement strips, rounded attached modules, as in the references. Longitudinal cylindrical volume rather than squat flat terrain vehicle. Warm mainly matte painted shell with plain metal only on structural edges and tools. No top tractor cab, no red racing stripes, no overly shiny grey framing, no heavy ornamental knot patterns.\nSubject: Heavy TERRAFORMING SHIP. A single thick horizontal elongated ochre barrel-shaped space hull with coral rounded forward cap and rear end ring. Two broad longitudinal grey reinforcement strips follow its sides and wrap to the underside; propulsion is three dark flush openings in the rear cap. A SINGLE broad crushing/compaction tool beneath the forward half: two opposing thick black-steel ribbed jaws in a short stout central hinge housing. Show one jaw open slightly so it reads as a working rock crusher. A shallow dark sensor slot is inset in the upper coral cap, no separate cockpit. Hull+end caps+reinforcements+one jaw module; compact useful engineering ship, not a bulldozer.",
+    "references": [
+      {
+        "identity": "gallery/media/objects/braccatian/widowmaker/front-quarter.png",
+        "sha256": "7b1633084dce245921d0f31ebfcac286536662988aea56fe97812a1ebc8b14d2",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      },
+      {
+        "identity": "gallery/media/objects/braccatian/heartsblood/front-quarter.png",
+        "sha256": "98494bdc1b19fc8212a40bdd3207d7393c811ceb2543d73077ca8db5310647f5",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      }
+    ],
+    "origin": "Supplied and selected ImageGen concept;no new generation performed by this modeling task",
+    "legacy_unit": false,
+    "runtime_integration": false,
+    "mechanics_available": false
+  },
+  "triangles": 4376,
+  "meshes": 26,
+  "materials": 5,
+  "maps": {
+    "sources/materials/proposals/engineering-ships/braccatian/bronze.png": "4d929e3d452548affbf8947dc0361fe163ebb96668f72d126ce4c38d3f650fff",
+    "sources/materials/proposals/engineering-ships/braccatian/coral.png": "f45622cf8dba340b5beaa9f0289a6079a6c00703de3b9a9e4f9668f412aed053",
+    "sources/materials/proposals/engineering-ships/braccatian/dark-inset.png": "ad6a53b5620b10c2b8b75d01b43c0420216cb628ca5a1cc189ff2ce2202e79b3",
+    "sources/materials/proposals/engineering-ships/braccatian/dark-structure.png": "a4ad2db21069bfd8c73f1eb17fa70bf1a9b913a1c87466c9467c93596e3b9852",
+    "sources/materials/proposals/engineering-ships/braccatian/ochre.png": "2e9932d92eb9436a1430134e642346c1596fb94de1c8e395a65cf4719f5cce6e"
+  },
+  "bounds": [
+    -0.8050000071525574,
+    -2.184999942779541,
+    -0.5300000309944153,
+    0.8050000071525574,
+    1.7750000953674316,
+    1.0199999809265137
+  ],
+  "joints": [
+    "CrusherLower",
+    "CrusherUpper"
+  ],
+  "clips": [
+    {
+      "name": "ToolOperation",
+      "fps": 24,
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 4,
+      "motion": [
+        {
+          "joint": "CrusherLower",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0.0
+            ],
+            [
+              25,
+              0.16
+            ],
+            [
+              49,
+              0.0
+            ],
+            [
+              73,
+              -0.055999999999999994
+            ],
+            [
+              97,
+              0.0
+            ]
+          ]
+        },
+        {
+          "joint": "CrusherUpper",
+          "path": "rotation_euler",
+          "axis": 0,
+          "keys": [
+            [
+              1,
+              0.0
+            ],
+            [
+              25,
+              -0.16
+            ],
+            [
+              49,
+              0.0
+            ],
+            [
+              73,
+              0.055999999999999994
+            ],
+            [
+              97,
+              0.0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "notes": [
+    "Based on the selected supplied braccatian concept;culture-specific hull,working tool and articulation.",
+    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added."
+  ]
+}

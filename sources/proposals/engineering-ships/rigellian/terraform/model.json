@@ -1,0 +1,137 @@
+{
+  "issue": 265,
+  "culture": "rigellian",
+  "role": "terraform",
+  "status": "proposed-assets-awaiting-mechanics",
+  "legacy_unit": false,
+  "runtime_integration": false,
+  "mechanics_available": false,
+  "blueprint_registered": false,
+  "package_registered": false,
+  "binaries": {
+    "blend": "0dfaf2567f10539ffaaf68370ff7beb0283e89fda32bef50b6fe03351fb27ea7",
+    "glb": "b30a19b3dfa4315c2cbceac189ddaefd1a195b3abedd5e3f76d11b8ca2a18ce7"
+  },
+  "author": "sources/tools/blender/proposals/author_rigellian_engineering.py",
+  "author_sha256": "7e775e2ac72c333094dd5cd418f813b42e79b83d4005e343563d927aad31e943",
+  "helper": "sources/tools/blender/proposals/engineering_ship_common.py",
+  "helper_sha256": "18d993e0ac12010aa8faaceb6e10f623234534f6ba639d1d1641f7ad3eed45cb",
+  "concept": {
+    "culture": "rigellian",
+    "role": "terraform",
+    "concept_version": "v1",
+    "image": "sources/artwork/proposals/engineering-ships/rigellian/terraforming-ship.png",
+    "sha256": "68f774390225a65c2f7994a0175fd2d737db044e70ec984ccd271f817fa333af",
+    "prompt": "Use case: stylized-concept. A NEW utility SPACECRAFT for OpenFA, an isometric real-time strategy game, concept reference for an economical 3D game model. Strict complexity target: match the accepted simple Terran v3 reference, only 4\u00e2\u20ac\u201c6 large visual masses, a compact silhouette, a few broad colour areas, almost no small detail. Must remain recognizable at 64\u00e2\u20ac\u201c96 pixels wide. Clean solid beveled manufactured shapes, restrained late-1990s pre-rendered RTS sensibility, subtle material wear, legible soft studio highlights. Do not add complexity to make it look sophisticated.\nInput reference roles: image 1 is the ORIGINAL game's units of THIS culture: PRIMARY reference for palette, material character and broad cultural form language. It is not a literal geometry template. Image 2 is the accepted simplified TERRAN reference: ONLY a limit on complexity, framing and surface-detail density, never a palette or faction identity reference. Do not recolour a Terran model. Design a new industrial silhouette fitting this culture and the role.\nExactly ONE complete spacecraft, elevated front three-quarter view, centered with generous margins, all parts visible. Uniform pure black backdrop without ground, environment, people, extra craft or cast floor shadow. No text, labels, logos, watermark, contact sheet, weapons, wheels, tracks or walking legs. Clearly space/hover capable. Minimal functional moving parts and large uninterrupted panels; idle tools. Subtle seam dirt, contact scuffing, a few worn paint edges, small dents suited to material. NO exposed cable bundles, pipes, rivet fields, fine greebles, decorative antennas, rails, shelves, cargo clutter, cockpit interior, myriad lights, intricate engraving, cinematic photoreal mechanical complexity or glowing magical effects.\nCulture: rigellian. Elegant satin silver/pale blue-green alloy, muted green broad panels, small warm yellow-gold caps and copper connection rims, following the actual reference ships. Smooth balanced ergonomic shapes; advanced precision expressed through simplicity. No Terran red stripes, no crystals.\nSubject: TERRAFORMING SHIP. A heavy low broad OVAL engineering vessel with a single smoothly curved central hull and two small flush side propulsion lobes. One low gold sensing cap on top. ONE large U-shaped silver-and-copper field-grading emitter under the front edge, its two thick tips enclosing the terrain-working gap. This simple ventral industrial tool is a new OpenFA interpretation of precise gravitic surface leveling. The one emitter, not a bulldozer attachment, is its distinguishing feature. 5 large masses maximum; no multiple rings or strut frameworks.",
+    "references": [
+      {
+        "identity": "rigellian-00.png",
+        "sha256": "36c3465a6fb12b8b053a912e551848ce4192c541dbdb6c8b0e7a522c846a45bf",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      },
+      {
+        "identity": "terraforming-ship.png",
+        "sha256": "1acbfc30f208bded5148fd6cd47333c67e6f7e7e9671c5256ddda9b3643905e0",
+        "scope": "Cultural visual reference,not a recovered definition for the new proposal"
+      }
+    ],
+    "origin": "Supplied and selected ImageGen concept;no new generation performed by this modeling task",
+    "legacy_unit": false,
+    "runtime_integration": false,
+    "mechanics_available": false
+  },
+  "triangles": 5528,
+  "meshes": 16,
+  "materials": 5,
+  "maps": {
+    "sources/materials/proposals/engineering-ships/rigellian/copper.png": "208f159f442ebd0f205a33102f5018bb102d78a985439a212dcb5657aff32e21",
+    "sources/materials/proposals/engineering-ships/rigellian/gold.png": "4af22c1765e9fa4046ce7246490f90df0ac4c8c6386a56cdc2654756b5d5ecbb",
+    "sources/materials/proposals/engineering-ships/rigellian/recess.png": "66acb2d6e27db3a4c73f38de4ab0693dbc6a81db38c0fee006f73477d7f7a3f5",
+    "sources/materials/proposals/engineering-ships/rigellian/sage.png": "463abfd1ee78365ffdf1671af020a986fb15c9fe9960aab1d8787e3985cb20c5",
+    "sources/materials/proposals/engineering-ships/rigellian/silver.png": "ccdc9829a429d6199fa769de6460cd998fb3b5e4a8be37a61b60107c1ea54d8f"
+  },
+  "bounds": [
+    -1.459999680519104,
+    -1.9200000762939453,
+    -0.20000001788139343,
+    1.459999918937683,
+    1.4249999523162842,
+    0.9399999976158142
+  ],
+  "joints": [
+    "PrecisionHornPivot-1",
+    "PrecisionHornPivot1"
+  ],
+  "clips": [
+    {
+      "name": "ToolOperation",
+      "fps": 24,
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 4,
+      "motion": [
+        {
+          "joint": "PrecisionHornPivot-1",
+          "path": "rotation_euler",
+          "axis": 2,
+          "keys": [
+            [
+              1,
+              0.0
+            ],
+            [
+              25,
+              -0.12
+            ],
+            [
+              49,
+              0.0
+            ],
+            [
+              73,
+              0.041999999999999996
+            ],
+            [
+              97,
+              0.0
+            ]
+          ]
+        },
+        {
+          "joint": "PrecisionHornPivot1",
+          "path": "rotation_euler",
+          "axis": 2,
+          "keys": [
+            [
+              1,
+              0.0
+            ],
+            [
+              25,
+              0.12
+            ],
+            [
+              49,
+              0.0
+            ],
+            [
+              73,
+              -0.041999999999999996
+            ],
+            [
+              97,
+              0.0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scale": "Authored proposal units,not calibrated meters/cells or a production/hangar clearance contract",
+  "notes": [
+    "Based on the selected supplied rigellian concept;culture-specific hull,working tool and articulation.",
+    "Underside,rear engineering and hidden joints are authored extrapolations. ToolOperation is an asset preview;no runtime definition,mechanic,blueprint,production route or package is added."
+  ]
+}
