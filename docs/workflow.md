@@ -78,6 +78,46 @@ record subsequent concepts as retrospective reviews. Do not rewrite their histor
 to imply the missing stage occurred before those first models. A remaster is not
 artistically complete until the missing concept and GLB feedback stages are done.
 
+## Engineering ship refinement against the canonical fleet
+
+The engineering proposal refinement covers both Terraforming Ship and Repair Ship
+for all seven cultures. Compare against the current canonical small-craft models
+selected in `gallery/engineering-style-comparison.json`; the selected artistic
+concepts remain provenance,but user corrections and the established fleet guide
+construction style. These new proposals have no original legacy unit equivalent.
+
+For this refinement,use **at most three correction/render/review cycles per model**:
+
+1. Record the current discrepancy and the intended generator correction. Preserve
+   characteristic functional tools,named joints and animation,as well as the
+   mirrored Achaean repair wings. Do not substitute dense decorative panel grids
+   or excessive rounding for cultural construction detail.
+2. Correct the generator and export the actual model. Render an independent GLB
+   import;use a comparable view alongside the canonical ships. Identify display
+   normalization,camera/lighting differences and provisional game scale explicitly.
+3. Visually assess silhouette,cross sections,structural breaks,material-region
+   distribution and detail against those canonical references. Record the actual
+   iteration number,generator and GLB hashes,comparison previews,observations,
+   remaining discrepancies and the decision to accept or use the next cycle.
+
+Start with Mikotaj,Artemian and Rigellian,then review the remaining cultures.
+Count generator correction attempts in the same per-model record;technical
+failures must be logged and do not reset the cycle counter. Do not start a fourth
+cycle automatically. If the third cycle still differs materially,preserve its
+verified result and the unresolved findings for user review. Technical validity
+and polygon counts do not establish stylistic acceptance.
+
+After a model's final cycle,verify the saved native Blend and independent GLB in
+Blender,including articulation,physical attachment and embedded material bindings.
+Update the proposal gallery and fleet comparison with current renders and
+source-bound evidence. Commit verified milestones with the user's GPG identity
+and document them in the asset issue. Keep these assets as proposals awaiting
+mechanics;this work does not authorize gameplay integration.
+
+Reuse the existing checkout and output locations. Remove only this task's working
+frames after their finished previews are verified. Report task-owned disk growth
+and retained cleanup candidates;preserve previous evidence and user files.
+
 ## Historical repairs
 
 See `project/README.md`. `prepare --include-history` restores archived support files without requiring a game checkout. Reading those files for evidence is different from rerunning them. Direct execution through the launcher requires `--allow-history`, a matching historical workspace and the original game repository's Git history. Already-applied migrations must not be run on current corrected models.
