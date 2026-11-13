@@ -54,10 +54,14 @@ Additional views: [Rear machinery](../gallery/media/objects/braccatian/morning-g
 
 `openfa:ship/braccatian/skymech`
 
-**Canonical version — orbital-station-construction-refinement**
+**Canonical version — ship-visible-equipment-refinement**
 
-![SkyMech](../gallery/media/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/front-quarter.png)
+![SkyMech](../gallery/media/docs/assets/reconstruction/braccatian-refined/ships/skymech/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/model.glb)
+[Blend](../sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.blend) · [GLB](../sources/docs/assets/reconstruction/braccatian-refined/ships/skymech/model.glb)
+
+Construction animation source: [Blend](../sources/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/model.glb)
+
+Additional views: [Finished station (legacy frame 0)](../gallery/media/docs/assets/reconstruction/braccatian-refined/ships/skymech/front-quarter.png) · [Station under construction (legacy frame 1)](../gallery/media/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/front-quarter.png) · [Restoration runtime native BLEND](../gallery/media/docs/assets/reconstruction/braccatian-refined/ships/skymech/restoration-native.png) · [Restoration runtime independent GLB](../gallery/media/docs/assets/reconstruction/braccatian-refined/ships/skymech/restoration-glb.png)
 
 [Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/braccatian/skymech/animation-00.webm)

@@ -54,10 +54,14 @@ Additional views: [Rear machinery](../gallery/media/objects/mikotaj/ruth-strivak
 
 `openfa:ship/mikotaj/na-xanth`
 
-**Canonical version — orbital-station-construction-refinement**
+**Canonical version — orbital-station-structural-refinement**
 
-![Na-Xanth](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/front-quarter.png)
+![Na-Xanth](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/model.glb)
+[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/model.glb)
+
+Construction animation source: [Blend](../sources/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/model.glb)
+
+Additional views: [Finished station (legacy frame 0)](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/front-quarter.png) · [Station under construction (legacy frame 1)](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/front-quarter.png) · [Restoration runtime native BLEND](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/restoration-native.png) · [Restoration runtime independent GLB](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mikotaj/na-xanth/restoration-glb.png)
 
 [Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mikotaj/na-xanth/animation-00.webm)

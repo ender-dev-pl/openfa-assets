@@ -54,10 +54,14 @@ Additional views: [Front quarter](../gallery/media/objects/rigellian/transportat
 
 `openfa:ship/rigellian/observatory`
 
-**Canonical version — orbital-station-construction-refinement**
+**Canonical version — structural-detail-refinement**
 
-![Observatory](../gallery/media/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/front-quarter.png)
+![Observatory](../gallery/media/docs/assets/reconstruction/rigellian-refined/observatory/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/model.glb)
+[Blend](../sources/docs/assets/reconstruction/rigellian-refined/observatory/model.blend) · [GLB](../sources/docs/assets/reconstruction/rigellian-refined/observatory/model.glb)
+
+Construction animation source: [Blend](../sources/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/model.glb)
+
+Additional views: [Finished station (legacy frame 0)](../gallery/media/docs/assets/reconstruction/rigellian-refined/observatory/front-quarter.png) · [Station under construction (legacy frame 1)](../gallery/media/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/front-quarter.png) · [Restoration runtime native BLEND](../gallery/media/docs/assets/reconstruction/rigellian-refined/observatory/restoration-native.png) · [Restoration runtime independent GLB](../gallery/media/docs/assets/reconstruction/rigellian-refined/observatory/restoration-glb.png)
 
 [Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/rigellian/observatory/animation-00.webm)

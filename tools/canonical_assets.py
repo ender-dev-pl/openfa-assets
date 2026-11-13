@@ -19,6 +19,8 @@ def verify(root=ROOT):
    for ext in ['blend','glb']:
     path=f'sources/proposals/engineering-ships/{culture}/{role}/model.{ext}'
     if path not in expected:raise ValueError(('Engineering ships must remain in main',path))
+ from verify_orbital_station_variants import verify as verify_station_states
+ verify_station_states(root,data)
  for item in data['archive']['files']:
   if (root/item['path']).exists():raise ValueError(('Archived file restored to main',item['path']))
  inventory=root/'sources/docs/reconstruction/models/inventory.json'

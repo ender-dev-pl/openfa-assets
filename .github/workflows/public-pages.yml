@@ -32,6 +32,7 @@ jobs:
       - run: python sources/ui/camera-mode-icon/verify_camera_mode_icon.py
       - run: python tools/verify_project.py
       - run: python tools/test_canonical_assets.py
+      - run: python tools/test_orbital_station_variants.py
       - run: python tools/test_archive_evidence.py
       - run: python -m unittest discover -s tools -p 'test_achaean*evidence.py'
       - run: python tools/test_mobile_remaster_evidence.py

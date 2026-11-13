@@ -66,10 +66,14 @@ Additional views: [Rear fittings](../gallery/media/objects/mauna/transportation-
 
 `openfa:ship/mauna/orbital-construction-area`
 
-**Canonical version — orbital-station-construction-refinement**
+**Canonical version — orbital-station-structural-refinement**
 
-![Orbital Construction Area](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/front-quarter.png)
+![Orbital Construction Area](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/model.glb)
+[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/model.glb)
+
+Construction animation source: [Blend](../sources/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/model.glb)
+
+Additional views: [Finished station (legacy frame 0)](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/front-quarter.png) · [Station under construction (legacy frame 1)](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/front-quarter.png) · [Restoration runtime native BLEND](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/restoration-native.png) · [Restoration runtime independent GLB](../gallery/media/docs/assets/reconstruction/orbital-station-refined/mauna/orbital-construction-area/restoration-glb.png)
 
 [Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/mauna/orbital-construction-area/animation-00.webm)

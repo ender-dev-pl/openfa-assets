@@ -42,10 +42,14 @@ Additional views: [Front Quarter](../gallery/media/objects/achaean/dedicated-ore
 
 `openfa:ship/achaean/orbital-shipyard`
 
-**Canonical version — orbital-station-construction-refinement**
+**Canonical version — orbital-station-structural-refinement**
 
-![Orbital Shipyard](../gallery/media/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/front-quarter.png)
+![Orbital Shipyard](../gallery/media/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/front-quarter.png)
 
-[Blend](../sources/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/model.glb)
+[Blend](../sources/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/model.glb)
+
+Construction animation source: [Blend](../sources/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/model.blend) · [GLB](../sources/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/model.glb)
+
+Additional views: [Finished station (legacy frame 0)](../gallery/media/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/front-quarter.png) · [Station under construction (legacy frame 1)](../gallery/media/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/front-quarter.png) · [Restoration runtime native BLEND](../gallery/media/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/restoration-native.png) · [Restoration runtime independent GLB](../gallery/media/docs/assets/reconstruction/orbital-station-refined/achaean/orbital-shipyard/restoration-glb.png)
 
 [Play animation: ConstructionActivity](../gallery/media/docs/assets/reconstruction/orbital-station-construction/achaean/orbital-shipyard/animation-00.webm)
