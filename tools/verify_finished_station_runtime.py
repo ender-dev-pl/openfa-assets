@@ -1,4 +1,3 @@
-# SPDX-License-Identifier: MIT
 """Blender smoke proof for unchanged restored finished native/GLB station pairs."""
 import hashlib,json,struct,sys
 from pathlib import Path
