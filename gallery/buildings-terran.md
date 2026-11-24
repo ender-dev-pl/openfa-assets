@@ -94,8 +94,6 @@
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb08/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb08/model.glb)
 
-Additional views: [Independent GLB import](../gallery/media/docs/assets/bootstrap-3d/terran-mine-correction/pb08-imported-front-quarter.png) · [Same 2×2 fit: Mine left / Deep Bore right](../gallery/media/docs/assets/bootstrap-3d/terran-mine-correction/paired-footprint-fit.png)
-
 ## Satellite Silo
 
 `terran:satellite-silo`
@@ -153,8 +151,6 @@ Additional views: [Independent GLB import](../gallery/media/docs/assets/bootstra
 ![Deep Bore Mine](../gallery/media/docs/assets/bootstrap-3d/terran-refined/pb13/front-quarter.png)
 
 [Blend](../sources/docs/assets/bootstrap-3d/terran-refined/pb13/model.blend) · [GLB](../sources/docs/assets/bootstrap-3d/terran-refined/pb13/model.glb)
-
-Additional views: [Independent GLB import](../gallery/media/docs/assets/bootstrap-3d/terran-mine-correction/pb13-imported-front-quarter.png) · [Same 2×2 fit: Mine left / Deep Bore right](../gallery/media/docs/assets/bootstrap-3d/terran-mine-correction/paired-footprint-fit.png)
 
 ## Missile Silo
 
