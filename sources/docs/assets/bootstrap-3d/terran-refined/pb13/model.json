@@ -11,13 +11,14 @@
   "generator_sha256": "b6bba7ec3e5a69f42aac3625de2f5418f49270fa5245e872ce2f6ce441790a91",
   "source_blend_sha256": "e5dbb3160a0f47ef875fa3d27bcf9242f3ceb67e4ac404e02f1694ca87c3b2fb",
   "source_meshes": 27,
-  "mesh_objects": 125,
+  "mesh_objects": 164,
   "source_faces": 646,
   "removed_proxy_windows": 3,
   "mesh_faces": 4832,
   "detail_objects": 101,
   "detail_features": [
-    "Four-sided lattice trestles, gussets, deck plating, guardrails and drill hydraulics"
+    "Four-sided lattice trestles, gussets, deck plating, guardrails and drill hydraulics",
+    "Continuous bore pipe, rotary chuck, worn cutting crown and carbide teeth"
   ],
   "bounds_min": [
     -1.0750000476837158,
@@ -38,5 +39,11 @@
   ],
   "imported_geometry_or_textures": [],
   "source": "independently authored catalogue geometry",
-  "blender": "4.5.15 LTS"
+  "blender": "4.5.15 LTS",
+  "evaluated_triangles": 28504,
+  "correction_issue": "ender-dev-pl/openfa-assets#271",
+  "correction_generator_sha256": "48751b80815f7d9f88ce77d35562a91206ad4c337db502605cd7598d0bbe4705",
+  "current_blend_sha256": "8034d788cac05a84b6256c5c31510764ba04aee8917b0ac1975c78c1bf0515c2",
+  "current_glb_sha256": "88d711e74960adfc69875e34ddd1d94d68a9f525c7607fd01afe7d17c32bd1de",
+  "correction_note": "Targeted model correction. Original deck/trestle geometry retained; both simulation footprints remain 2x2. The PB08 original structure fits at 75% of PB13 through the existing bounding-box fit. Actual game integration acceptance is separate."
 }

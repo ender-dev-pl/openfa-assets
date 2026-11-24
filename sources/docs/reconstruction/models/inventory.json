@@ -1421,8 +1421,18 @@
           "stage": "refined-study",
           "blend": "docs/assets/bootstrap-3d/terran-refined/pb08/model.blend",
           "present": true,
-          "sha256": "91e5751977a2cdf09e29097b253040072a176bb3a49ba331e8af02da3f519dc2",
-          "final_visual_acceptance": "not-established"
+          "sha256": "09ecb8353b5bb6d6546e93de70ca0cf6f2f26b534dcc559733b23c1d0341aa7e",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Independent GLB import",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-mine-correction/pb08-imported-front-quarter.png"
+            },
+            {
+              "label": "Same 2×2 fit: Mine left / Deep Bore right",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-mine-correction/paired-footprint-fit.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -1464,7 +1474,16 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 8
-      }
+      },
+      "targeted_corrections": [
+        {
+          "issue": "ender-dev-pl/openfa-assets#271",
+          "scope": "Drill assembly and visible PB08 utility envelope",
+          "runtime_evidence": "gallery/media/docs/assets/bootstrap-3d/terran-mine-correction/runtime-verification.json",
+          "game_integration_issue": "ender-dev-pl/ed-openfa-game#1271",
+          "game_integration_status": "pending"
+        }
+      ]
     },
     {
       "category": "buildings",
@@ -2244,8 +2263,18 @@
           "stage": "refined-study",
           "blend": "docs/assets/bootstrap-3d/terran-refined/pb13/model.blend",
           "present": true,
-          "sha256": "adc3cc16c915c95bfcfd8ec634575677941dcde691226590540bf6b83bec1b79",
-          "final_visual_acceptance": "not-established"
+          "sha256": "8034d788cac05a84b6256c5c31510764ba04aee8917b0ac1975c78c1bf0515c2",
+          "final_visual_acceptance": "not-established",
+          "views": [
+            {
+              "label": "Independent GLB import",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-mine-correction/pb13-imported-front-quarter.png"
+            },
+            {
+              "label": "Same 2×2 fit: Mine left / Deep Bore right",
+              "image": "gallery/media/docs/assets/bootstrap-3d/terran-mine-correction/paired-footprint-fit.png"
+            }
+          ]
         }
       ],
       "acceptance": {
@@ -2287,7 +2316,16 @@
       "reference_recipe": {
         "path": "docs/assets/bootstrap-3d/full-catalogue/recipes.json",
         "global_type": 13
-      }
+      },
+      "targeted_corrections": [
+        {
+          "issue": "ender-dev-pl/openfa-assets#271",
+          "scope": "Drill assembly and visible PB08 utility envelope",
+          "runtime_evidence": "gallery/media/docs/assets/bootstrap-3d/terran-mine-correction/runtime-verification.json",
+          "game_integration_issue": "ender-dev-pl/ed-openfa-game#1271",
+          "game_integration_status": "pending"
+        }
+      ]
     },
     {
       "category": "buildings",
@@ -42727,7 +42765,7 @@
               "image": "gallery/media/concepts/mikotaj/falari-lourn-03.png"
             },
             {
-              "label": "Four parallel modules \u2014 axial GLB",
+              "label": "Four parallel modules — axial GLB",
               "image": "gallery/media/objects/mikotaj/falari-lourn/axial-front.png"
             }
           ],
