@@ -37,6 +37,18 @@ def main():
         assert sha(folder/'model.glb')==record['glb_sha256']
         bpy.ops.wm.open_mainfile(filepath=str(folder/'model.blend'))
         native=inventory(meshes());close(native['bounds'],record['bounds'])
+        if record.get('utility_contract'):
+            assert sha(Path(__file__).with_name('soften_mine_utilities.py'))==record['generator_sha256']
+            assert not any('fence' in o.name.lower() for o in meshes())
+            housings=[o for o in meshes() if 'point service' in o.name and o.name.endswith('housing')]
+            assert len(housings)==4,'Expected four separate point installations'
+            utilities=[o for o in meshes() if o.get('mine_correction_role')=='utility']
+            assert bounds(utilities)[1][2]<=.14
+            area=sum(o.dimensions.x*o.dimensions.y for o in housings)
+            overall=(record['bounds'][1][0]-record['bounds'][0][0])*(record['bounds'][1][1]-record['bounds'][0][1])
+            assert area/overall<.03,'Utility islands must remain sparse'
+        else:
+            assert sha(Path(__file__).with_name('correct_terran_mines.py'))==record['generator_sha256']
         for name,expected in record['unchanged_original_meshes'].items():
             assert signature(bpy.data.objects[name])==expected,name
         for key in ['continuous bore pipe','downward cutting crown','deck rotary chuck']:
@@ -86,7 +98,7 @@ def main():
     ratio=results['pb08']['footprint_fit_scale']/results['pb13']['footprint_fit_scale']
     assert abs(ratio-.75)<.0001,ratio
     report=dict(format='terran-mine-runtime-correction-v1',issue=271,verifier_sha256=sha(__file__),generator_sha256=sha(Path(__file__).with_name('correct_terran_mines.py')),
-                models=results,small_to_deep_structure_scale=ratio,paired_render_sha256=sha(path),
+                models=results,small_to_deep_structure_scale=ratio,paired_render_sha256=sha(path),point_utility_generator_sha256=sha(Path(__file__).with_name('soften_mine_utilities.py')),
                 note='Actual native BLEND and independent GLB imports rendered in Blender. Paired image emulates game footprint fit; real gameplay/construction/ghost/picking/shadow integration acceptance is not claimed.')
     (args.proof/'runtime-verification.json').write_text(json.dumps(report,indent=2)+'\n')
     print('MINE_RUNTIME_VERIFIED',ratio,{key:value['native']['triangles'] for key,value in results.items()},flush=True)

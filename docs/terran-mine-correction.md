@@ -2,7 +2,7 @@
 
 Asset issue [#271](https://github.com/ender-dev-pl/openfa-assets/issues/271), game integration [ed-openfa-game#1271](https://github.com/ender-dev-pl/ed-openfa-game/issues/1271).
 
-PB08 keeps its existing deck, dome, hatch, trestles and ladder. A low safety fence, two worn coolant/power cabinets and connected conduits extend its horizontal bounds symmetrically by 4/3. Normal bounding-box fitting into the unchanged 2×2 construction footprint therefore displays its retained drilling structure at 75% of PB13's size. The original vertical bounds, horizontal centre and ground anchor are preserved. PB13's overall bounds remain unchanged.
+PB08 keeps its existing deck, dome, hatch, trestles and ladder. Four small, low service-access covers, separated from the structure, extend its horizontal bounds symmetrically by 4/3. They occupy less than 3% of the envelope area; no perimeter fence or continuous outline remains. Normal bounding-box fitting into the unchanged 2×2 construction footprint therefore displays its retained drilling structure at 75% of PB13's size. The original vertical bounds, horizontal centre and ground anchor are preserved. PB13's overall bounds remain unchanged.
 
 Both mines have a continuous bore pipe connected to a deck chuck and downward cutting crown, with coupling shoulders, worn teeth and joint grime. PB08 previously lacked a central shaft. PB13's previous shaft/coupler proxies were replaced. These are static assets; no pre-existing animation clips were removed and no gameplay mechanics were added.
 
@@ -22,4 +22,6 @@ Validate the current canonical delivery without regenerating it:
 blender -b --python-exit-code 1 --python sources/tools/blender/verify_terran_mines.py -- --models sources/docs/assets/bootstrap-3d/terran-refined --generation-proofs gallery/media/docs/assets/bootstrap-3d/terran-mine-correction --proof artifacts/mine-verification
 ```
 
-The verifier opens the actual BLENDs and independent GLB imports, checks unchanged structural meshes, dimensions and drilling parts, and renders both at matching angles. Runtime triangle counts include existing evaluated bevel modifiers: PB08 29,504 and PB13 28,504. The correction does not introduce textures, skinning, morph targets or animation clips.
+The verifier opens the actual BLENDs and independent GLB imports, checks unchanged structural meshes, dimensions and drilling parts, and renders both at matching angles. Runtime triangle counts include existing evaluated bevel modifiers: PB08 28,968 and PB13 28,504. The correction does not introduce textures, skinning, morph targets or animation clips.
+
+The continuous-fence iteration is retained in the private archive at commit `144cc58644a45c9c6ad1048f020ac4de78328eea`. Reproduce the current PB08 by applying `sources/tools/blender/soften_mine_utilities.py -- --input FENCED_MODEL --output OUTPUT` in Blender after the original correction step. The pipe, chuck, cutting crown and all retained structural meshes are signature-verified unchanged.
